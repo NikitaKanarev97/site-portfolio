@@ -1,0 +1,193 @@
+---
+/**
+ * CopyEmail — ds/components.md
+ *
+ * Единственный настоящий контрол продукта (SCR-07). Состояния: default
+ * и copied с автовозвратом через ~2 с.
+ *
+ * Варианты по носителям, пересобраны при расширении каталога 2026-08-24:
+ *
+ *   appearance=address  ContactBlock на всех трёх маршрутах. Кнопка —
+ *                       сам email крупно (ds-heading-3xl), подпись
+ *                       действия строкой рядом. Ровно то, что описывает
+ *                       ia/wireframes/home.md §ContactBlock
+ *   appearance=action   ряд действий в Hero: компактная кнопка рядом с
+ *                       «Download CV (PDF)» и входом в кейс. Адрес
+ *                       продублирован подписью — Clipboard API может
+ *                       быть недоступен, и тогда адрес всё равно виден
+ *
+ * Залитая тёмная кнопка, стоявшая здесь до расширения, снята: ни один
+ * из двух носителей её не требует — Hero называет действие вторичным,
+ * ContactBlock показывает сам адрес. Каталог не держит вариантов без
+ * носителя; вернуть её — одна строка, когда носитель появится.
+ *
+ * Доступность: button, не ссылка. Подтверждение уходит в aria-live="polite"
+ * (TECH-12), отдельно от видимой подписи. Подпись всегда занимает строку —
+ * при смене состояния блок не прыгает.
+ *
+ * Движение: Состояние (motion-state, 120 мс, ds/motion-concept.md §3.4).
+ * Меняются только текст и цвет. Никакого перемещения, тоста и вылетающей
+ * галочки.
+ */
+interface Props {
+  email: string;
+  appearance?: 'address' | 'action';
+  /** Текст кнопки в appearance=action. В address кнопка — сам адрес. */
+  label?: string;
+  /** Подпись в состоянии default. Умолчание зависит от варианта. */
+  hint?: string;
+  copiedLabel?: string;
+  /** Что уходит в aria-live при успехе. */
+  announce?: string;
+  /** Что уходит в aria-live, когда Clipboard API недоступен. */
+  fallbackAnnounce?: string;
+  class?: string;
+}
+
+const {
+  email,
+  appearance = 'address',
+  label = 'Copy email',
+  copiedLabel = 'Copied',
+  announce = 'Email address copied to clipboard',
+  fallbackAnnounce = 'Could not copy — the address is shown next to the button and can be selected',
+  class: className,
+} = Astro.props;
+
+const isAddress = appearance === 'address';
+
+/** В address подпись зовёт к действию, в action — держит сам адрес. */
+const hint = Astro.props.hint ?? (isAddress ? 'Copy in one click' : email);
+
+const buttonText = isAddress ? email : label;
+const buttonClass = isAddress ? 'ds-heading-3xl' : 'ds-body-base';
+---
+
+<div class:list={['copy-email', `copy-email--${appearance}`, className]} data-copy-email>
+  <button
+    class:list={['copy-email__button', buttonClass]}
+    type="button"
+    data-copy-trigger
+    data-email={email}
+    data-state="default"
+    data-hint-default={hint}
+    data-hint-copied={copiedLabel}
+    data-announce={announce}
+    data-announce-fallback={fallbackAnnounce}
+  >
+    {buttonText}
+  </button>
+
+  <p class="copy-email__hint ds-meta-sm" data-copy-hint>{hint}</p>
+
+  <p class="ds-visually-hidden" aria-live="polite" data-copy-status></p>
+</div>
+
+<style>
+  .copy-email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .copy-email--action {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  /* Цель нажатия на мобильном — не ниже space-12 (ds/screens/home.md,
+     ряд действий Hero: три цели в столбик, каждая не ниже 48 px).
+     Кнопка, а не обёртка: нажимают на неё. */
+  .copy-email--action .copy-email__button {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--space-12);
+  }
+
+  @media (min-width: 768px) {
+    .copy-email--action {
+      align-items: baseline;
+    }
+
+    .copy-email--action .copy-email__button {
+      display: inline;
+      min-height: 0;
+    }
+  }
+
+  .copy-email__button {
+    padding: 0;
+    color: var(--text-default);
+    text-align: start;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: var(--space-1);
+    transition: color var(--motion-state-duration) var(--motion-state-ease);
+  }
+
+  .copy-email__button:hover {
+    color: var(--text-link-hover);
+  }
+
+  .copy-email__hint {
+    color: var(--text-meta);
+    transition: color var(--motion-state-duration) var(--motion-state-ease);
+  }
+
+  /* Адрес в подписи выделяется целиком: если Clipboard API отказал,
+     его берут мышью. */
+  .copy-email--action .copy-email__hint {
+    user-select: all;
+  }
+
+  /* Подтверждение — цвет и текст подписи. Адрес и кнопка не двигаются. */
+  .copy-email:has([data-state='copied']) .copy-email__hint {
+    color: var(--text-success);
+  }
+</style>
+
+<script>
+  const RESET_DELAY = 2000;
+
+  function initCopyEmail() {
+    document.querySelectorAll<HTMLElement>('[data-copy-email]').forEach((root) => {
+      const button = root.querySelector<HTMLButtonElement>('[data-copy-trigger]');
+      const hint = root.querySelector<HTMLElement>('[data-copy-hint]');
+      const status = root.querySelector<HTMLElement>('[data-copy-status]');
+      if (!button || !hint || !status) return;
+
+      let timer: number | undefined;
+
+      const setState = (state: 'default' | 'copied') => {
+        button.dataset.state = state;
+        hint.textContent =
+          state === 'copied'
+            ? (button.dataset.hintCopied ?? '')
+            : (button.dataset.hintDefault ?? '');
+      };
+
+      button.addEventListener('click', async () => {
+        const email = button.dataset.email ?? '';
+        try {
+          await navigator.clipboard.writeText(email);
+          setState('copied');
+          status.textContent = button.dataset.announce ?? '';
+        } catch {
+          // Адрес виден в самой кнопке или в подписи — терять нечего.
+          status.textContent = button.dataset.announceFallback ?? '';
+          return;
+        }
+
+        window.clearTimeout(timer);
+        timer = window.setTimeout(() => {
+          setState('default');
+          status.textContent = '';
+        }, RESET_DELAY);
+      });
+    });
+  }
+
+  document.addEventListener('astro:page-load', initCopyEmail);
+</script>

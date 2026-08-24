@@ -1,0 +1,127 @@
+---
+/**
+ * TextLink — ds/components.md
+ *
+ * Варианты: type=inline | arrow | nav.
+ *
+ * Доступность: цвет не единственный различитель — у inline постоянное
+ * подчёркивание, у arrow стрелка, у nav подчёркивание по hover и постоянное
+ * у активного пункта.
+ *
+ * Движение: Строка (motion-hover, ds/motion-concept.md §3.3). Подчёркивание
+ * приходит слева (transform-origin: left), уходит вправо (origin: right) —
+ * иначе движение выглядит отменённым, а не завершённым. У arrow сдвигается
+ * только стрелка: размер текста не меняется, иначе строка дёргается.
+ *
+ * Внешние ссылки помечаются в тексте — маркер и скрытая подсказка здесь
+ * дополняют формулировку, а не заменяют её.
+ */
+interface Props {
+  href: string;
+  type?: 'inline' | 'arrow' | 'nav';
+  external?: boolean;
+  /** Активный пункт навигации: подчёркивание постоянно, на hover не двигается. */
+  active?: boolean;
+  /** Ссылка на тёмной поверхности — text-link-on-inverse. */
+  onInverse?: boolean;
+  class?: string;
+}
+
+const {
+  href,
+  type = 'inline',
+  external = false,
+  active = false,
+  onInverse = false,
+  class: className,
+} = Astro.props;
+---
+
+<a
+  class:list={[
+    'ds-link',
+    `ds-link--${type}`,
+    { 'is-active': active, 'is-inverse': onInverse },
+    className,
+  ]}
+  href={href}
+  target={external ? '_blank' : undefined}
+  rel={external ? 'noopener noreferrer' : undefined}
+  aria-current={active && type === 'nav' ? 'page' : undefined}
+>
+  <span class="ds-link__label"><slot /></span>
+  {external && <span class="ds-link__external" aria-hidden="true">↗</span>}
+  {external && <span class="ds-visually-hidden">(external link, opens in a new tab)</span>}
+  {type === 'arrow' && <span class="ds-link__arrow" aria-hidden="true">→</span>}
+  {(type === 'nav' || type === 'arrow') && <span class="ds-link__rule" aria-hidden="true"></span>}
+</a>
+
+<style>
+  .ds-link {
+    position: relative;
+    display: inline-flex;
+    align-items: baseline;
+    gap: var(--space-2);
+    color: var(--text-link);
+    text-decoration: none;
+    transition: color var(--motion-hover-duration) var(--motion-hover-ease);
+  }
+
+  .ds-link:hover {
+    color: var(--text-link-hover);
+  }
+
+  .ds-link.is-inverse {
+    color: var(--text-link-on-inverse);
+  }
+
+  .ds-link--inline .ds-link__label {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  .ds-link--nav {
+    color: var(--text-default);
+  }
+
+  .ds-link--nav:hover {
+    color: var(--text-link-hover);
+  }
+
+  /* Подчёркивание Строки. Приходит слева, уходит вправо. */
+  .ds-link__rule {
+    position: absolute;
+    inset-inline: 0;
+    bottom: calc(var(--space-1) * -1);
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
+  }
+
+  .ds-link:hover .ds-link__rule,
+  .ds-link:focus-visible .ds-link__rule,
+  .ds-link.is-active .ds-link__rule {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  /* Активный пункт держит подчёркивание постоянно и на hover не двигается. */
+  .ds-link.is-active .ds-link__rule {
+    transition: none;
+  }
+
+  .ds-link__arrow {
+    display: inline-block;
+    transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
+  }
+
+  .ds-link:hover .ds-link__arrow {
+    transform: translateX(var(--space-1));
+  }
+
+  .ds-link__external {
+    font-size: var(--size-sm);
+  }
+</style>

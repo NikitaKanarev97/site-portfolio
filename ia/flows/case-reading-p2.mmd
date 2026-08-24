@@ -1,0 +1,20 @@
+%% Путь Б — П2, оценщик мышления. PRD §6, Путь Б
+%% Бюджет: 5–15 минут, десктоп, из них 2–3 минуты фактического чтения кейса
+%% Точка входа 50/50: главная или прямая ссылка от рекрутера
+%% Результат успеха: П2 может пересказать логику кандидата своими словами
+
+flowchart TD
+    EntryDirect[Прямая ссылка от рекрутера] -->|DirectEntryState: конечное состояние немедленно| CaseHeader
+    EntryHome[Home: выбор точки входа, ~10 сек] --> FeaturedCase[FeaturedCase: явное 'начните отсюда']
+    FeaturedCase --> CaseHeader[CaseHeader: тип, роль, год, команда, оговорка о переработке]
+    CaseHeader --> Outcome{CaseOutcomeLine: исход назван в шапке?}
+    Outcome -->|исхода нет| Exit[Отказ: процессный нарратив без результата]
+    Outcome -->|исход есть| CaseResult[CaseResult: прыжок в конец через End и полосу]
+    CaseResult -->|четыре строки компромисса + CaseNDALine| CaseScan[Сканирование по заголовкам-утверждениям, 2-3 мин]
+    CaseScan --> CaseFailure[CaseFailure: что не получилось]
+    CaseFailure --> CaseSystem[CaseSystem: ДС, компоненты, состояния]
+    CaseSystem --> Pause[Перерыв 40 мин, вкладка выгружена]
+    Pause -->|возврат: скролл восстановлен, reveal не играет| DevelopmentStrip[DevelopmentStrip: четыре сборки, легче кейса и ниже него]
+    DevelopmentStrip --> OGPreview[OGPreview: пересылка ссылки в Slack, превью с названием кейса]
+    OGPreview --> CaseOutro[CaseOutro: переход к контакту, не тупик]
+    CaseOutro --> Invite[Приглашение на разговор]

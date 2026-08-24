@@ -1,0 +1,412 @@
+---
+/**
+ * Home — Site-portfolio, маршрут /
+ *
+ * Composition map: ds/screens/home.md. Вайрфреймы: ia/wireframes/home.md
+ * (десктоп) и ia/wireframes/mobile-home.md (самостоятельный носитель, не
+ * сжатие десктопа — SCR-09, TECH-08).
+ *
+ * Экран не изобретает сущностей: всё собрано из каталога ds/components.md
+ * и паттернов ds/patterns.md. Тексты — src/copy/home.ts, сквозные —
+ * src/copy/site.ts. Оболочка, ContactBlock и Footer — PageShell.
+ *
+ * Порядок блоков — это и есть предмет проектирования. Скрининговый пакет
+ * (роль, специализация, право на работу, CV, email, вход в кейс) обязан
+ * закрыться в первых 2160 px на десктопе и 1624 px на мобильном
+ * (SCR-02, SCR-06): его закрывает Hero, вход в кейс повторяется обложкой
+ * следом. DevelopmentStrip стоит ниже всех продуктовых блоков (DEV-03).
+ *
+ * Движение — карта ds/motion-concept.md §7, один в один. Hero играет
+ * вступительным тактом по fonts.ready, всё остальное — по ScrollTrigger.
+ * Анимаций здесь нет: экран объявляет движение атрибутами.
+ */
+import PageShell from '../layouts/PageShell.astro';
+import MediaFrame from '../components/MediaFrame.astro';
+import MetaList from '../components/MetaList.astro';
+import ProseBlock from '../components/ProseBlock.astro';
+import SectionHead from '../components/SectionHead.astro';
+import TextLink from '../components/TextLink.astro';
+import WorkRow from '../components/WorkRow.astro';
+import CopyEmail from '../components/CopyEmail.astro';
+import { home } from '../copy/home.ts';
+import { site } from '../copy/site.ts';
+---
+
+<PageShell title={home.meta.title} description={home.meta.description}>
+  {/*
+    Hero. Вступительный такт: имя, роль, специализация и авторизация идут
+    автоматическим шагом каскада, ряд действий — явной позицией 0.4.
+  */}
+  <section class="ds-container ds-section hero" data-motion-intro>
+    <h1 class="ds-display-5xl hero__name" data-motion="reveal-text">{home.hero.name}</h1>
+
+    <p class="ds-heading-2xl hero__role" data-motion="reveal-text">{home.hero.role}</p>
+
+    <ProseBlock motion={false} class="hero__spec">
+      <p data-motion="reveal-text">{home.hero.specialization}</p>
+    </ProseBlock>
+
+    {/*
+      Право на работу. Максимум две строки на 360 px — единственная строка
+      сайта с жёстким лимитом по числу строк (ia/wireframes/mobile-home.md).
+    */}
+    <p class="ds-body-base hero__authorization" data-motion="reveal-text">
+      {home.hero.authorization}
+    </p>
+
+    <div class="hero__actions" data-motion="fade" data-motion-at="0.4">
+      <TextLink href={home.featured.href} type="arrow">{home.hero.caseEntry}</TextLink>
+      <TextLink href="/cv.pdf">{home.hero.cv}</TextLink>
+      <CopyEmail email={site.contact.email} appearance="action" />
+    </div>
+  </section>
+
+  {/*
+    FeaturedCase — паттерн FeaturedCaseCover. Кликабелен блок целиком:
+    один <a> вокруг обложки, заголовка, строки исхода, меты и CTA.
+    Вложенных ссылок внутри нет — иначе фокус ловит две цели подряд.
+  */}
+  <section class="ds-container ds-section featured" id="work">
+    <p class="ds-meta-xs featured__eyebrow">{home.featured.eyebrow}</p>
+
+    <a class="featured__link" href={home.featured.href} data-motion-group>
+      <MediaFrame
+        src={home.featured.cover}
+        srcMobile={home.featured.coverMobile}
+        ratio="wide"
+        ratioMobile="portrait"
+        alt={home.featured.coverAlt}
+        loading="eager"
+        class="featured__cover"
+      />
+
+      <h2 class="ds-heading-3xl featured__title" data-motion="reveal-text">
+        {home.featured.title}
+      </h2>
+
+      <ProseBlock variant="lead" class="featured__outcome">
+        <p>{home.featured.outcome}</p>
+      </ProseBlock>
+
+      <MetaList items={home.featured.meta} layout="inline" class="featured__meta" />
+
+      <span class="featured__cta ds-body-base">{home.featured.cta}<span aria-hidden="true"> →</span></span>
+    </a>
+  </section>
+
+  {/*
+    WorksList. Строки некликабельны, и это требование (WRK-02, WRK-05):
+    внутри нет ничего интерактивного, hover меняет только фон.
+  */}
+  <section class="ds-container ds-section works">
+    <div class="works__head" data-motion-group data-motion-stagger="tight">
+      <SectionHead size="lg">{home.works.heading}</SectionHead>
+      <ProseBlock class="works__lead">
+        <p>{home.works.lead}</p>
+      </ProseBlock>
+    </div>
+
+    <ul class="works__list" data-motion-group data-motion-stagger="base">
+      {home.works.items.map((item) => <WorkRow {...item} />)}
+    </ul>
+  </section>
+
+  {/*
+    DevelopmentStrip. Ниже всех продуктовых блоков, заголовок заметно мельче
+    заголовка WorksList — это вес блока, а не оформление (DEV-03).
+    Мобильная форма — не та же карточка в другом размере, а горизонтальная
+    строка с миниатюрой: перенос десктопной сетки даёт 168% от лимита веса
+    (арифметика в ds/patterns.md §DevelopmentCard).
+  */}
+  <section class="ds-container ds-section dev">
+    <div class="dev__head" data-motion-group data-motion-stagger="tight">
+      <SectionHead size="sm">{home.development.heading}</SectionHead>
+      <ProseBlock class="dev__lead">
+        <p>{home.development.lead}</p>
+      </ProseBlock>
+    </div>
+
+    <ul class="dev__list" data-motion-group data-motion-stagger="tight">
+      {
+        home.development.items.map((item) => (
+          <li>
+            <a class="dev__link" href={item.href} target="_blank" rel="noopener noreferrer">
+              <MediaFrame
+                src={home.development.preview}
+                ratio="wide"
+                alt={`${item.name} — ${home.development.previewAlt}`}
+                counterScale={false}
+                class="dev__preview"
+              />
+
+              <div class="dev__body">
+                <h3 class="ds-heading-xl dev__name">{item.name}</h3>
+
+                <MetaList
+                  items={[
+                    {
+                      term: home.development.roleLabel,
+                      value: home.development.roleValue,
+                      tone: 'strong',
+                    },
+                  ]}
+                  layout="stacked"
+                  class="dev__role"
+                />
+              </div>
+
+              <span class="dev__cta ds-meta-xs">
+                Live site<span aria-hidden="true"> ↗</span>
+                <span class="ds-visually-hidden">, opens in a new tab</span>
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  {/* AboutShort. Портрета здесь нет: он живёт на /about и не на первом экране. */}
+  <section class="ds-container ds-section about" data-motion="fade">
+    <SectionHead size="lg" reveal={false}>{home.about.heading}</SectionHead>
+
+    <ProseBlock motion={false} class="about__body">
+      <p>{home.about.body}</p>
+    </ProseBlock>
+
+    <TextLink href={home.about.href} type="arrow">{home.about.link}</TextLink>
+  </section>
+</PageShell>
+
+<style>
+  /* ---------------------------------------------------------------- *
+   * Hero                                                              *
+   * ---------------------------------------------------------------- */
+
+  .hero__name {
+    color: var(--text-default);
+    margin-bottom: var(--space-4);
+  }
+
+  .hero__role {
+    color: var(--text-subtle);
+    margin-bottom: var(--space-8);
+  }
+
+  .hero__spec {
+    margin-bottom: var(--space-6);
+  }
+
+  .hero__authorization {
+    color: var(--text-subtle);
+    max-width: var(--measure-text);
+    margin-bottom: var(--space-16);
+  }
+
+  /* Мобильная раскладка базовая: три цели в столбик, каждая во всю ширину.
+     В ряд на 327 px они дают по 101 px — надписи ломаются. */
+  .hero__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-3);
+  }
+
+  /* :global обязателен: корни TextLink и CopyEmail несут собственный
+     data-astro-cid, скоуп страницы до них не достаёт, и правило без
+     :global молча не применяется — цель нажатия остаётся 26 px. */
+  .hero__actions > :global(*) {
+    display: flex;
+    align-items: center;
+    min-height: var(--space-12);
+  }
+
+  @media (min-width: 768px) {
+    .hero__actions {
+      flex-direction: row;
+      align-items: baseline;
+      gap: var(--space-8);
+    }
+
+    .hero__actions > :global(*) {
+      min-height: 0;
+    }
+
+    .hero__authorization {
+      margin-bottom: var(--space-24);
+    }
+  }
+
+  /* ---------------------------------------------------------------- *
+   * FeaturedCase                                                      *
+   * ---------------------------------------------------------------- */
+
+  .featured__eyebrow {
+    color: var(--text-meta);
+    margin-bottom: var(--space-6);
+  }
+
+  .featured__link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* Фокус-кольцо на обёртке, не на картинке. */
+  .featured__link:focus-visible {
+    outline: var(--focus-ring-width) solid var(--focus-ring-color);
+    outline-offset: var(--space-2);
+  }
+
+  .featured__cover {
+    margin-bottom: var(--space-8);
+  }
+
+  .featured__title {
+    color: var(--text-default);
+    margin-bottom: var(--space-4);
+  }
+
+  .featured__outcome {
+    margin-bottom: var(--space-6);
+  }
+
+  .featured__meta {
+    margin-bottom: var(--space-6);
+  }
+
+  /* CTA — часть той же ссылки, не вторая ссылка рядом. Подчёркивание ведёт
+     себя как у TextLink: приходит слева, уходит вправо. */
+  .featured__cta {
+    display: inline-block;
+    position: relative;
+    color: var(--text-link);
+  }
+
+  .featured__cta::after {
+    content: '';
+    position: absolute;
+    inset-inline: 0;
+    bottom: -0.15em;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:
+      transform var(--motion-hover-duration) var(--motion-hover-ease);
+  }
+
+  .featured__link:hover .featured__cta::after,
+  .featured__link:focus-visible .featured__cta::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  /* ---------------------------------------------------------------- *
+   * WorksList                                                         *
+   * ---------------------------------------------------------------- */
+
+  .works__lead {
+    margin-top: var(--space-4);
+  }
+
+  .works__list {
+    margin-top: var(--space-12);
+  }
+
+  /* ---------------------------------------------------------------- *
+   * DevelopmentStrip                                                  *
+   * ---------------------------------------------------------------- */
+
+  .dev__lead {
+    margin-top: var(--space-4);
+  }
+
+  /* Мобильная форма — четыре строки с миниатюрой. */
+  .dev__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--space-8);
+  }
+
+  .dev__link {
+    display: grid;
+    grid-template-columns: var(--space-16) 1fr auto;
+    align-items: center;
+    gap: var(--space-3);
+    padding-block: var(--space-2);
+    min-height: var(--space-12);
+    color: inherit;
+    text-decoration: none;
+    transition: background var(--motion-hover-duration) var(--motion-hover-ease);
+  }
+
+  .dev__link:hover {
+    background: var(--surface-subtle);
+  }
+
+  .dev__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    min-width: 0;
+  }
+
+  .dev__name {
+    color: var(--text-default);
+  }
+
+  .dev__cta {
+    color: var(--text-meta);
+    white-space: nowrap;
+  }
+
+  /* Десктоп: четыре карточки в ряд, превью сверху. */
+  @media (min-width: 768px) {
+    .dev__list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-6);
+      margin-top: var(--space-12);
+    }
+
+    .dev__link {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: var(--space-4);
+      padding-block: 0;
+      min-height: 0;
+    }
+
+    .dev__link:hover {
+      background: none;
+    }
+
+    .dev__link:hover .dev__name {
+      color: var(--text-link-hover);
+    }
+  }
+
+  /* ---------------------------------------------------------------- *
+   * AboutShort                                                        *
+   * ---------------------------------------------------------------- */
+
+  .about__body {
+    margin-bottom: var(--space-6);
+  }
+
+  /* Та же цель нажатия, что в ряду Hero, и тот же :global по той же
+     причине: ссылка — корень TextLink. */
+  .about > :global(.ds-link) {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--space-12);
+  }
+
+  @media (min-width: 768px) {
+    .about > :global(.ds-link) {
+      min-height: 0;
+    }
+  }
+</style>

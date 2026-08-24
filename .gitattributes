@@ -1,0 +1,12 @@
+# LF в репозитории и в рабочей копии.
+# Причина не в стиле: ds/tokens.css → src/styles/tokens.css и ds/motion.js →
+# src/scripts/motion.js обязаны совпадать побайтово (CLAUDE.md), а autocrlf
+# на Windows переписывает окончания строк и ломает эту сверку.
+* text=auto eol=lf
+
+*.woff2 binary
+*.webp  binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.pdf   binary

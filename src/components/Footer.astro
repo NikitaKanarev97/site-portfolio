@@ -1,0 +1,117 @@
+---
+/**
+ * Footer — ds/components.md
+ *
+ * Локация, смещение UTC и локальное время (SCR-03). Присутствует на всех
+ * трёх маршрутах.
+ *
+ * Почему компонент, а не композиция: время считается на клиенте, и без
+ * JS блок обязан оставаться осмысленным. Разметка приходит с сервера как
+ * «Kazakhstan · UTC+5», скрипт дописывает время — не наоборот. Пустое
+ * место под время не резервируется: строка растёт вправо, ничего не
+ * перекладывая (ia/wireframes/home.md §Footer).
+ *
+ * Расхождение с PRD зафиксировано и разрешено: SCR-03 называет
+ * «Москва, MSK / UTC+3», факт — Казахстан, UTC+5, решение владельца №1
+ * от 24.08.2026. Значения приходят пропами, прибитых строк нет.
+ *
+ * Движение: без движения (ds/motion-concept.md §7, карта Home).
+ */
+interface Props {
+  location: string;
+  utcLabel: string;
+  /** IANA-зона для Intl. Без неё время считалось бы по зоне читателя. */
+  timeZone: string;
+  timeLabel?: string;
+  copyright: string;
+  class?: string;
+}
+
+const {
+  location,
+  utcLabel,
+  timeZone,
+  timeLabel = 'local time',
+  copyright,
+  class: className,
+} = Astro.props;
+---
+
+<footer class:list={['footer', className]}>
+  <div class="ds-container footer__inner">
+    <p class="footer__place ds-meta-sm">
+      <span>{location} · {utcLabel}</span>
+      <span class="footer__time" data-local-time data-time-zone={timeZone} hidden>
+        {' · '}<time data-local-time-value></time>{' '}{timeLabel}
+      </span>
+    </p>
+
+    <p class="footer__copyright ds-meta-sm">{copyright}</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    border-top: 1px solid var(--border-default);
+    padding-block: var(--space-8);
+    color: var(--text-meta);
+  }
+
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  @media (min-width: 768px) {
+    .footer__inner {
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+  }
+</style>
+
+<script>
+  /** Минута — мельче незачем, часы в футере не секундомер. */
+  const TICK = 60_000;
+
+  let timer: number | undefined;
+
+  function renderLocalTime() {
+    window.clearInterval(timer);
+
+    const nodes = document.querySelectorAll<HTMLElement>('[data-local-time]');
+    if (nodes.length === 0) return;
+
+    const paint = () => {
+      nodes.forEach((node) => {
+        const zone = node.dataset.timeZone;
+        const value = node.querySelector<HTMLTimeElement>('[data-local-time-value]');
+        if (!zone || !value) return;
+
+        try {
+          const now = new Date();
+          value.textContent = new Intl.DateTimeFormat(document.documentElement.lang || 'ru-RU', {
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false,
+            timeZone: zone,
+          }).format(now);
+          value.dateTime = now.toISOString();
+          node.hidden = false;
+        } catch {
+          // Зона не распознана рантаймом — строка остаётся без времени,
+          // «Kazakhstan · UTC+5» уже стоит в разметке и ничего не теряет.
+          node.hidden = true;
+        }
+      });
+    };
+
+    paint();
+    timer = window.setInterval(paint, TICK);
+  }
+
+  document.addEventListener('astro:page-load', renderLocalTime);
+  document.addEventListener('astro:before-swap', () => window.clearInterval(timer));
+</script>

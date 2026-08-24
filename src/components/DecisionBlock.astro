@@ -1,0 +1,117 @@
+---
+/**
+ * DecisionBlock — ds/components.md
+ *
+ * Одно решение кейса тройкой «решение — обоснование — цена». Четыре
+ * носителя на /work/partner-portal, и шаблон повторится в каждом
+ * следующем кейсе.
+ *
+ * Структура жёсткая, и это требование, а не удобство: CASE-09 требует
+ * названного обоснования у каждого решения. Компонент не даёт собрать
+ * решение без обоснования — поля why и cost обязательные, пропустить
+ * их молча нельзя.
+ *
+ * Артефакт справа от текста — необязательный слот (плейсхолдер 480×280
+ * в вайрфрейме). Пустой слот раскладку не ломает: без него текст идёт
+ * на полную меру колонки.
+ *
+ * Движение: тело блока — opacity (ds/motion-concept.md §7). Каскад
+ * четырёх решений ставит экран через data-motion-group, не компонент.
+ */
+interface Props {
+  decision: string;
+  why: string;
+  cost: string;
+  whyLabel?: string;
+  costLabel?: string;
+  motion?: boolean;
+  class?: string;
+}
+
+const {
+  decision,
+  why,
+  cost,
+  whyLabel = 'Why',
+  costLabel = 'Cost',
+  motion = true,
+  class: className,
+} = Astro.props;
+
+const hasArtifact = Astro.slots.has('artifact');
+---
+
+<article
+  class:list={['decision', { 'decision--with-artifact': hasArtifact }, className]}
+  data-motion={motion ? 'fade' : undefined}
+>
+  <div class="decision__body">
+    <h3 class="decision__statement ds-heading-2xl">{decision}</h3>
+
+    <dl class="decision__reasons">
+      <dt class="decision__label ds-meta-xs">{whyLabel}</dt>
+      <dd class="decision__why ds-body-lg">{why}</dd>
+      <dt class="decision__label ds-meta-xs">{costLabel}</dt>
+      <dd class="decision__cost ds-body-base">{cost}</dd>
+    </dl>
+  </div>
+
+  {
+    hasArtifact && (
+      <div class="decision__artifact">
+        <slot name="artifact" />
+      </div>
+    )
+  }
+</article>
+
+<style>
+  .decision {
+    display: grid;
+    gap: var(--space-8);
+  }
+
+  .decision__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    max-width: var(--measure-text);
+  }
+
+  .decision__statement {
+    color: var(--text-default);
+  }
+
+  .decision__reasons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .decision__label {
+    color: var(--text-meta);
+  }
+
+  .decision__why {
+    color: var(--text-subtle);
+  }
+
+  /* Цена решения — приглушённая строка, но не служебная: она несёт
+     половину смысла блока. text-muted, не text-meta. */
+  .decision__cost {
+    color: var(--text-muted);
+  }
+
+  /* Пара «метка — текст» держится вместе, между парами — воздух. */
+  .decision__reasons dd + dt {
+    margin-top: var(--space-4);
+  }
+
+  @media (min-width: 1024px) {
+    .decision--with-artifact {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 0.6fr);
+      gap: var(--gutter);
+      align-items: start;
+    }
+  }
+</style>

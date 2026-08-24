@@ -1,0 +1,130 @@
+---
+/**
+ * Базовый layout — Site-portfolio
+ *
+ * Держит три вещи, которые не принадлежат ни одному компоненту:
+ *   1. глобальный слой ДС — tokens.css, шрифты, global.css;
+ *   2. единственный JS-бандл продукта — GSAP одним общим скриптом;
+ *   3. SkipLink и точку монтирования фокуса (TECH-12);
+ *   4. именованный слот footer — место под <main> (ds/patterns.md).
+ *
+ * Нативная анимация View Transitions выключена на <html>: хореографию
+ * переходов ведёт GSAP через astro:before-preparation и astro:after-swap
+ * (ds/motion-concept.md §2).
+ */
+import { ClientRouter } from 'astro:transitions';
+import Navbar from '../components/Navbar.astro';
+import { PREVIEW_NOINDEX } from '../copy/site';
+
+import '../styles/tokens.css';
+import '../styles/fonts.css';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  lang?: string;
+  ogImage?: string;
+  /** Маршрут текущей страницы — Navbar подсвечивает активный пункт. */
+  current?: string;
+  /** Показывать навигацию. 404 обходится без неё. */
+  nav?: boolean;
+}
+
+const {
+  title,
+  description,
+  lang = 'en',
+  ogImage = '/og/default.png',
+  current,
+  nav = true,
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<html lang={lang} transition:animate="none">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    {/* Preview-деплой закрыт от поиска до боевого запуска (src/copy/site.ts). */}
+    {PREVIEW_NOINDEX && <meta name="robots" content="noindex, nofollow" />}
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL(ogImage, Astro.site)} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    {/* Два критических woff2 — набор идёт по fonts.ready (motion-concept §4.1). */}
+    <link
+      rel="preload"
+      href="/fonts/manrope-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/manrope-cyrillic-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    {/*
+      Блокирующий инлайн-скрипт. Начальные состояния движения скоупятся
+      под .js — без него текст виден всегда (motion-concept §8).
+      Страховка на TECH-15: бандл не дошёл за 2 с (прокси, блокировка
+      скриптов) — .js снимается, страница возвращается в читаемый вид.
+    */}
+    <script is:inline>
+      (function () {
+        var root = document.documentElement;
+        root.classList.add('js');
+        setTimeout(function () {
+          if (!window.__dsMotionBooted) root.classList.remove('js');
+        }, 2000);
+      })();
+    </script>
+
+    <ClientRouter />
+  </head>
+
+  <body>
+    <a class="ds-skip-link" href="#main">Skip to content</a>
+    {nav && <Navbar current={current} />}
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+
+    {/*
+      Footer стоит под <main>, а не внутри него (ds/patterns.md, PageShell).
+      Слот именованный: содержимое подаёт PageShell, витрина /kit — нет.
+    */}
+    <slot name="footer" />
+
+    <noscript>
+      <p class="ds-container ds-body-sm">
+        This site works without JavaScript: every piece of text and every
+        link is available. The script only drives motion.
+      </p>
+    </noscript>
+
+    {/* Единственная JS-зависимость продукта (ds/CONTRACT.md, §Стек). */}
+    <script>
+      import '../scripts/animations.js';
+    </script>
+  </body>
+</html>
+
+<style>
+  main:focus-visible {
+    outline: none;
+  }
+</style>

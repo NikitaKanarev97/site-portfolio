@@ -1,0 +1,17 @@
+%% Путь В — П3, проверяющий реализацию. PRD §6, Путь В
+%% Бюджет: 1–5 минут, 1–3 захода, десктоп с открытым DevTools
+%% Единственная персона, которая возвращается, и единственная, кто входит не через главную
+%% Результат успеха: три конкретных вопроса к разговору вместо отказа
+
+flowchart TD
+    DeepLink[Прямая ссылка на кейс или на сборку] --> DirectEntry{DirectEntryState: конечное состояние сразу?}
+    DirectEntry -->|прелоадер, анти-форк, экран отказа| Reject[Отказ: заявленное не сходится со сделанным]
+    DirectEntry -->|контент немедленно| CaseSystem[CaseSystem: ДС, компоненты, состояния]
+    CaseSystem --> DevelopmentStrip[DevelopmentStrip: подпись Role Webflow development у каждой карточки]
+    DevelopmentStrip -->|авторство чужого дизайна не присвоено| ReducedMotionState[ReducedMotionState: эмуляция prefers-reduced-motion в DevTools]
+    ReducedMotionState -->|анимации отключены, включая переходы| Assets[Вес шрифтов и ассетов: woff2, ленивое видео]
+    Assets --> NotFound[NotFound: настоящий HTTP 404 по curl -I]
+    NotFound --> NoScriptView[NoScriptView: текст в DOM без JS]
+    NoScriptView --> Return[Возврат вторым заходом, 1-3 раза]
+    Return --> Questions[Три конкретных вопроса к разговору]
+    Return -->|найдено расхождение заявленного и сделанного| Reject

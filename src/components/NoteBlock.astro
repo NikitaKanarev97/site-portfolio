@@ -1,0 +1,93 @@
+---
+/**
+ * NoteBlock — ds/components.md
+ *
+ * Строка или абзац, вынутый из потока чтения. Четыре носителя, все на
+ * кейсе: CaseOutcomeLine (строка исхода в шапке), CaseRework (блок
+ * переработки под плашкой «Not shipped»), CaseNDALine, CaseReworkNote.
+ *
+ * Варианты — по силе выделения, а не по декору:
+ *
+ *   emphasis  строка исхода: линия слева, мера measure-lead, кегль
+ *             ds-heading-xl. Выделение без заливки — заливка спорит
+ *             с обложкой кейса ниже
+ *   flagged   блок с рамкой, заливкой surface-subtle и меткой сверху.
+ *             Единственный носитель — CaseRework, и требование к нему
+ *             жёсткое (CASE-18): читатель ни на секунду не должен
+ *             решить, что это часть реализованного
+ *   muted     приглушённая строка без фона: NDA и оговорка о переработке
+ *
+ * Движение: Набор (ds/motion-concept.md §7). Строка NDA получает
+ * построчный набор намеренно — без неё отсутствие цифр читается как
+ * отсутствие результата. Вариант flagged идёт opacity целым блоком:
+ * это тело блока, а не строка.
+ *
+ * Доступность: метка варианта flagged — часть текста, а не только
+ * рамка и фон. Выделение цветом и рамкой ничего не сообщает
+ * скринридеру, метка сообщает.
+ */
+interface Props {
+  variant?: 'emphasis' | 'flagged' | 'muted';
+  /** Метка над блоком. Обязательна для flagged, у прочих носителя нет. */
+  label?: string;
+  as?: 'p' | 'div' | 'aside';
+  motion?: boolean;
+  class?: string;
+}
+
+const { variant = 'emphasis', label, motion = true, class: className } = Astro.props;
+
+/* Блок переработки — aside: он вынут из повествования кейса целиком.
+   Строка исхода и оговорка остаются абзацами. */
+const Tag = Astro.props.as ?? (variant === 'flagged' ? 'aside' : 'p');
+
+const typeClass =
+  variant === 'emphasis' ? 'ds-heading-xl' : variant === 'flagged' ? 'ds-body-lg' : 'ds-body-base';
+
+const motionName = variant === 'flagged' ? 'fade' : 'reveal-text';
+---
+
+<Tag
+  class:list={['note', `note--${variant}`, typeClass, className]}
+  data-motion={motion ? motionName : undefined}
+>
+  {label && <span class="note__label ds-meta-xs">{label}</span>}
+  <slot />
+</Tag>
+
+<style>
+  .note {
+    display: block;
+  }
+
+  .note__label {
+    display: block;
+    margin-bottom: var(--space-4);
+    color: var(--text-meta);
+  }
+
+  .note--emphasis {
+    max-width: var(--measure-lead);
+    padding-inline-start: var(--space-6);
+    border-inline-start: 1px solid var(--border-strong);
+    color: var(--text-default);
+  }
+
+  .note--flagged {
+    max-width: var(--measure-text);
+    padding: var(--space-8);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-none);
+    background: var(--surface-subtle);
+    color: var(--text-default);
+  }
+
+  .note--muted {
+    max-width: var(--measure-text);
+    color: var(--text-muted);
+  }
+
+  .note--flagged :global(p + p) {
+    margin-block-start: var(--space-6);
+  }
+</style>

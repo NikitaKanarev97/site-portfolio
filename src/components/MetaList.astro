@@ -1,0 +1,126 @@
+---
+/**
+ * MetaList — ds/components.md
+ *
+ * Пары «ключ — значение»: роль, год, платформа, тип продукта.
+ * Варианты: layout=inline (шапка кейса), layout=stacked (узкий экран,
+ * подпись роли у Webflow-сборок) и layout=statements (четыре строки
+ * компромисса в CaseResult).
+ *
+ * Доступность: dl / dt / dd — связь ключа и значения машиночитаема.
+ *
+ * Особый случай DEV-02: подпись «Role: Webflow development» у каждой из
+ * четырёх сборок стоит на уровне карточки. У такой пары tone="strong":
+ * ключ уходит из text-meta в text-subtle, потому что подпись несёт
+ * репутационный смысл и не должна выглядеть служебной.
+ *
+ * layout=statements добавлен при расширении каталога 2026-08-24.
+ * Носитель один — CaseResult (CASE-11): «Solved», «Sacrificed», «Why the
+ * price was right», «What changed in how I work». Это те же dt/dd, но
+ * значение здесь — утверждение на две-три строки, а не год и платформа,
+ * поэтому кегль значения растёт до ds-body-lg, а ключ становится
+ * ds-meta-sm. Типографика едет вместе с раскладкой намеренно: развести
+ * их на два пропа значило бы завести четыре комбинации, из которых
+ * носителя нет ни у одной лишней.
+ *
+ * Движение: в statements каждое значение объявляет Набор — четыре строки
+ * компромисса идут построчным каскадом (ds/motion-concept.md §7).
+ * Группу и строку NDA следом ставит экран, не компонент.
+ */
+interface MetaItem {
+  term: string;
+  value: string;
+  tone?: 'default' | 'strong';
+}
+
+interface Props {
+  items: MetaItem[];
+  layout?: 'inline' | 'stacked' | 'statements';
+  /** Снять Набор в statements: блок идёт частью чужого такта. */
+  motion?: boolean;
+  class?: string;
+}
+
+const { items, layout = 'inline', motion = true, class: className } = Astro.props;
+
+const isStatements = layout === 'statements';
+const termClass = isStatements ? 'ds-meta-sm' : 'ds-meta-xs';
+const valueClass = isStatements ? 'ds-body-lg' : 'ds-meta-sm';
+---
+
+<dl class:list={['meta-list', `meta-list--${layout}`, className]}>
+  {
+    items.map((item) => (
+      <div class:list={['meta-list__pair', { 'is-strong': item.tone === 'strong' }]}>
+        <dt class:list={['meta-list__term', termClass]}>{item.term}</dt>
+        <dd
+          class:list={['meta-list__value', valueClass]}
+          data-motion={isStatements && motion ? 'reveal-text' : undefined}
+        >
+          {item.value}
+        </dd>
+      </div>
+    ))
+  }
+</dl>
+
+<style>
+  .meta-list {
+    display: flex;
+    gap: var(--space-4);
+  }
+
+  .meta-list--inline {
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: var(--space-6);
+  }
+
+  .meta-list--stacked {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .meta-list--statements {
+    flex-direction: column;
+    gap: var(--space-8);
+    max-width: var(--measure-lead);
+  }
+
+  .meta-list__pair {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .meta-list--stacked .meta-list__pair {
+    flex-direction: row;
+    align-items: baseline;
+    gap: var(--space-2);
+  }
+
+  .meta-list--statements .meta-list__pair {
+    gap: var(--space-2);
+  }
+
+  .meta-list__term {
+    color: var(--text-meta);
+  }
+
+  .meta-list__pair.is-strong .meta-list__term {
+    color: var(--text-subtle);
+  }
+
+  .meta-list__value {
+    color: var(--text-default);
+  }
+
+  /* Разделитель между парами в строку: только на широком экране,
+     на узком пары и так стоят друг под другом. */
+  @media (min-width: 768px) {
+    .meta-list--inline .meta-list__pair:not(:last-child) {
+      padding-inline-end: var(--space-6);
+      border-inline-end: 1px solid var(--border-default);
+    }
+  }
+</style>

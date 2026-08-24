@@ -1,0 +1,123 @@
+/* ============================================================
+   Глобальный слой — Site-portfolio
+
+   Только сброс, контейнер, служебные утилиты и начальные состояния
+   движения. Ни одного прибитого значения: всё через смысловые токены
+   из tokens.css (ds/CONTRACT.md, правила 2–4).
+   ============================================================ */
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--surface-default);
+  color: var(--text-default);
+  font-family: var(--font-body);
+  font-size: var(--size-base);
+  line-height: var(--lh-base);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, p, figure, dl, dd, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol { list-style: none; }
+
+img, video, svg { display: block; max-width: 100%; }
+
+a { color: inherit; }
+
+button {
+  font: inherit;
+  color: inherit;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+/* ---------- Сетка и контейнер (foundation.md §Сетка) ---------- */
+
+.ds-container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--margin-sm);
+}
+
+@media (min-width: 768px) {
+  .ds-container { padding-inline: var(--margin-md); }
+}
+
+@media (min-width: 1024px) {
+  .ds-container { padding-inline: var(--margin-lg); }
+}
+
+.ds-section { padding-block: var(--space-24); }
+
+@media (min-width: 1024px) {
+  .ds-section { padding-block: var(--space-32); }
+}
+
+/* ---------- Служебное ---------- */
+
+.ds-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* SkipLink — глобальный слой, не компонент (TECH-12, ds/components.md). */
+.ds-skip-link {
+  position: absolute;
+  top: var(--space-2);
+  left: var(--space-2);
+  z-index: 100;
+  padding: var(--space-2) var(--space-4);
+  background: var(--surface-action-primary);
+  color: var(--text-on-action);
+  font-family: var(--font-meta);
+  font-size: var(--size-sm);
+  transform: translateY(-200%);
+  transition: transform var(--motion-state-duration) var(--motion-state-ease);
+}
+
+.ds-skip-link:focus-visible { transform: translateY(0); }
+
+body.ds-scroll-locked { overflow: hidden; }
+
+/* ============================================================
+   Начальные состояния движения.
+
+   Условие ds/motion-concept.md §8: начальные состояния не имеют права
+   жить в CSS безусловно. Скоупятся сразу под .js И под no-preference.
+   JS заблокирован → текст виден. Покой запрошен → текст виден.
+   Обе страховки независимы.
+
+   Класс .js ставится блокирующим инлайн-скриптом в <head>; тот же скрипт
+   снимает его, если motion-бандл не загрузился за 2 с (TECH-15).
+   ============================================================ */
+
+@media (prefers-reduced-motion: no-preference) {
+  .js [data-motion='reveal-text'],
+  .js [data-motion='fade'],
+  .js [data-motion='rise'] { opacity: 0; }
+
+  .js [data-motion='reveal-media'] .ds-media-mask { clip-path: inset(100% 0 0 0); }
+}
+
+/* Маска строки для набора. Класс вешает SplitText, размеры не задаются:
+   строка сама держит высоту. */
+.ds-split-mask { overflow: hidden; }

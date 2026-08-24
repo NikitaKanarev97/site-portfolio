@@ -1,0 +1,68 @@
+---
+/**
+ * SectionHead — ds/components.md
+ *
+ * Опциональный eyebrow + заголовок. Варианты: size=lg (ds-heading-3xl,
+ * секции главной) и size=sm (ds-heading-2xl, блоки внутри кейса).
+ *
+ * Движение: Набор (motion-reveal-text) на заголовке. Eyebrow идёт вместе
+ * с блоком, отдельного такта не получает — иначе два каскада на одном
+ * пороге (ds/motion-concept.md §9).
+ *
+ * Содержательное правило, которое компонент не проверит: заголовки блоков
+ * кейса — утверждения, а не ярлыки. CASE-14 прямо запрещает слово «Процесс»
+ * в качестве заголовка. Правило живёт в ds/components.md и в контракте.
+ */
+interface Props {
+  eyebrow?: string;
+  size?: 'lg' | 'sm';
+  as?: 'h1' | 'h2' | 'h3';
+  /** Отключить Набор: заголовок над сгибом ведёт вступительный такт сам. */
+  reveal?: boolean;
+  class?: string;
+}
+
+const {
+  eyebrow,
+  size = 'lg',
+  as: Heading = 'h2',
+  reveal = true,
+  class: className,
+} = Astro.props;
+
+const headingClass = size === 'lg' ? 'ds-heading-3xl' : 'ds-heading-2xl';
+---
+
+<header class:list={['section-head', `section-head--${size}`, className]}>
+  {eyebrow && <p class="section-head__eyebrow ds-meta-xs">{eyebrow}</p>}
+  <Heading
+    class:list={['section-head__title', headingClass]}
+    data-motion={reveal ? 'reveal-text' : undefined}
+  >
+    <slot />
+  </Heading>
+</header>
+
+<style>
+  .section-head {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .section-head--lg {
+    margin-bottom: var(--space-12);
+  }
+
+  .section-head--sm {
+    margin-bottom: var(--space-8);
+  }
+
+  .section-head__eyebrow {
+    color: var(--text-meta);
+  }
+
+  .section-head__title {
+    color: var(--text-default);
+  }
+</style>

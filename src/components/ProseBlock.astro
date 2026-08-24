@@ -1,0 +1,69 @@
+---
+/**
+ * ProseBlock — ds/components.md
+ *
+ * Колонка связного текста: тела блоков кейса, абзацы About, короткий
+ * About на главной. Десять носителей в ia/wireframes — самый частый
+ * узел продукта после Nav.
+ *
+ * Единственное, за что компонент отвечает, — мера строки и ритм абзацев.
+ * Без него потолок колонки (720 / 800) разъехался бы прибитыми числами
+ * по десяти секциям, а это прямой запрет ds/CONTRACT.md §4.
+ *
+ * Варианты: variant=body (мера measure-text, ds-body-lg — тела блоков)
+ * и variant=lead (мера measure-lead, ds-heading-2xl — ведущий абзац
+ * About, строка сути в шапке кейса). Мера и кегль связаны намеренно:
+ * носителя у пары «широкая мера + мелкий кегль» в инвентаре нет, а
+ * четыре комбинации из двух пропов дали бы две мёртвых.
+ *
+ * Кегли: вайрфреймы называют 20 px для тела и 24 px для ведущего.
+ * Ступени 20 px в body-ролях нет — берём ds-body-lg (18) и ds-heading-2xl
+ * (24). Роль важнее числа из макета, ds/CONTRACT.md §3.
+ *
+ * Движение: тела блоков — opacity целым блоком, ведущий абзац и строка
+ * сути — Набор (ds/motion-concept.md §7). Компонент не анимирует, а
+ * объявляет: variant решает, какой атрибут встанет.
+ */
+interface Props {
+  variant?: 'body' | 'lead';
+  /** Снять движение: блок идёт частью чужого каскада. */
+  motion?: boolean;
+  class?: string;
+}
+
+const { variant = 'body', motion = true, class: className } = Astro.props;
+
+const typeClass = variant === 'lead' ? 'ds-heading-2xl' : 'ds-body-lg';
+const motionName = variant === 'lead' ? 'reveal-text' : 'fade';
+---
+
+<div
+  class:list={['prose', `prose--${variant}`, typeClass, className]}
+  data-motion={motion ? motionName : undefined}
+>
+  <slot />
+</div>
+
+<style>
+  .prose {
+    color: var(--text-default);
+  }
+
+  .prose--body {
+    max-width: var(--measure-text);
+  }
+
+  .prose--lead {
+    max-width: var(--measure-lead);
+  }
+
+  /* Ритм абзацев. Контент приходит слотом, поэтому :global —
+     иначе scoped-стиль до него не дотянется. */
+  .prose :global(p + p) {
+    margin-block-start: var(--space-6);
+  }
+
+  .prose--lead :global(p + p) {
+    margin-block-start: var(--space-8);
+  }
+</style>

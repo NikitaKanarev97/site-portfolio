@@ -1,0 +1,298 @@
+---
+/**
+ * Navbar — ds/components.md
+ *
+ * Варианты: breakpoint=desktop (пункты в строку) и breakpoint=mobile
+ * (имя + триггер раскрытия, панель поверх контента, №33). Вариант здесь —
+ * не проп, а брейкпоинт: одна разметка, две раскладки.
+ *
+ * Состав пунктов задаётся пропом. По ia/sitemap.md в v1.0 их три:
+ * Work · About · Contact. Development появляется вместе с маршрутом
+ * /development, не раньше — в ds/components.md он назван четвёртым авансом.
+ *
+ * Доступность: триггер — button с aria-expanded и aria-controls, панель
+ * ловит фокус, закрывается по Escape, возвращает фокус на триггер, скролл
+ * под панелью блокируется.
+ *
+ * Отступление от ds/components.md: фокус-ловушка написана руками, а не взята
+ * из Radix Dialog. Причина — §Стек контракта: GSAP остаётся единственной
+ * JS-зависимостью продукта, а Radix потянул бы React в сборку ради одного
+ * компонента. Поведение реализовано полностью, включая возврат фокуса и
+ * блокировку скролла.
+ */
+import TextLink from './TextLink.astro';
+
+interface NavItem {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  brand?: string;
+  brandHref?: string;
+  items?: NavItem[];
+  /** Текущий маршрут — подсветка активного пункта. */
+  current?: string;
+  label?: string;
+  triggerLabel?: string;
+  closeLabel?: string;
+}
+
+const {
+  brand = 'Portfolio',
+  brandHref = '/',
+  items = [
+    { label: 'Work', href: '/#work' },
+    { label: 'About', href: '/about' },
+    { label: 'Contact', href: '/#contact' },
+  ],
+  current,
+  label = 'Main navigation',
+  triggerLabel = 'Menu',
+  closeLabel = 'Close menu',
+} = Astro.props;
+
+const isActive = (href: string) => current !== undefined && href === current;
+---
+
+<header class="navbar" data-navbar>
+  <div class="ds-container navbar__bar">
+    <a class="navbar__brand ds-heading-xl" href={brandHref}>{brand}</a>
+
+    <nav class="navbar__desktop" aria-label={label}>
+      <ul class="navbar__list">
+        {
+          items.map((item) => (
+            <li>
+              <TextLink href={item.href} type="nav" active={isActive(item.href)}>
+                {item.label}
+              </TextLink>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <button
+      class="navbar__trigger ds-meta-xs"
+      type="button"
+      aria-expanded="false"
+      aria-controls="navbar-panel"
+      data-navbar-trigger
+      data-label-open={triggerLabel}
+      data-label-close={closeLabel}
+    >
+      {triggerLabel}
+    </button>
+  </div>
+
+  <div class="navbar__panel" id="navbar-panel" data-navbar-panel hidden>
+    <nav class="ds-container navbar__panel-inner" aria-label={label}>
+      <ul class="navbar__panel-list">
+        {
+          items.map((item) => (
+            <li>
+              <TextLink href={item.href} type="nav" active={isActive(item.href)}>
+                <span class="ds-heading-3xl">{item.label}</span>
+              </TextLink>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .navbar {
+    position: relative;
+    z-index: 10;
+    background: var(--surface-default);
+    border-bottom: 1px solid var(--border-default);
+  }
+
+  .navbar__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-6);
+    padding-block: var(--space-6);
+  }
+
+  .navbar__brand {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--space-12);
+    color: var(--text-default);
+    text-decoration: none;
+  }
+
+  .navbar__list {
+    display: flex;
+    gap: var(--space-8);
+  }
+
+  .navbar__desktop {
+    display: none;
+  }
+
+  .navbar__trigger {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--space-12);
+    color: var(--text-default);
+    padding: var(--space-2);
+    margin-inline-end: calc(var(--space-2) * -1);
+    transition: color var(--motion-hover-duration) var(--motion-hover-ease);
+  }
+
+  .navbar__trigger:hover {
+    color: var(--text-link-hover);
+  }
+
+  /* Панель поверх контента: собственный слой, не выталкивает раскладку. */
+  .navbar__panel {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    background: var(--surface-default);
+    overflow-y: auto;
+  }
+
+  /* Пока панель открыта, строка с триггером поднимается над ней и
+     прибивается к верху окна. Без этого триггер, уже сменивший надпись
+     на «закрыть», лежит под панелью — а если панель открыли после
+     прокрутки, он ещё и вне экрана. Закрыть меню касанием нечем:
+     остаётся Escape, которого на телефоне нет. */
+  .navbar:has([aria-expanded='true']) .navbar__bar {
+    position: fixed;
+    inset-inline: 0;
+    top: 0;
+    z-index: 21;
+  }
+
+  .navbar__panel[hidden] {
+    display: none;
+  }
+
+  /* Верхний отступ разведён с нижним: строка с триггером на время
+     открытия прибита к верху окна и занимает ровно space-24 по высоте
+     (space-6 сверху и снизу + цель нажатия space-12). Список начинается
+     под ней, а не впритык к её нижнему краю. */
+  .navbar__panel-inner {
+    padding-block-start: calc(var(--space-24) + var(--space-6));
+    padding-block-end: var(--space-24);
+  }
+
+  .navbar__panel-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  /* Цель нажатия пункта — не ниже space-12, как в остальных мобильных
+     раскладках. :global обязателен: корень TextLink несёт собственный
+     data-astro-cid, скоуп компонента до него не достаёт. */
+  .navbar__panel-list li :global(.ds-link) {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--space-12);
+  }
+
+  @media (min-width: 768px) {
+    .navbar__desktop {
+      display: block;
+    }
+
+    .navbar__trigger,
+    .navbar__panel {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
+  function initNavbar() {
+    const root = document.querySelector<HTMLElement>('[data-navbar]');
+    if (!root) return;
+
+    const trigger = root.querySelector<HTMLButtonElement>('[data-navbar-trigger]');
+    const panel = root.querySelector<HTMLElement>('[data-navbar-panel]');
+    if (!trigger || !panel) return;
+
+    let open = false;
+    /** Позиция страницы на момент открытия панели — см. setOpen. */
+    let lockedScrollY = 0;
+
+    const focusables = () => Array.from(panel.querySelectorAll<HTMLElement>(FOCUSABLE));
+
+    const setOpen = (next: boolean) => {
+      // overflow: hidden на body схлопывает область прокрутки, и позиция
+      // обнуляется: открыл меню в середине страницы, закрыл — оказался
+      // на самом верху. Запоминаем на открытии, возвращаем на закрытии.
+      if (next) lockedScrollY = window.scrollY;
+      open = next;
+      panel.hidden = !next;
+      trigger.setAttribute('aria-expanded', String(next));
+      trigger.textContent = next
+        ? (trigger.dataset.labelClose ?? '')
+        : (trigger.dataset.labelOpen ?? '');
+      document.body.classList.toggle('ds-scroll-locked', next);
+
+      if (next) {
+        focusables()[0]?.focus();
+      } else {
+        // preventScroll обязателен: шапка не липкая, и фокус на триггере
+        // утащил бы страницу обратно наверх мимо восстановленной позиции.
+        trigger.focus({ preventScroll: true });
+        window.scrollTo(0, lockedScrollY);
+      }
+    };
+
+    trigger.addEventListener('click', () => setOpen(!open));
+
+    // Фокус-ловушка, Escape и возврат фокуса на триггер.
+    panel.addEventListener('keydown', (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        setOpen(false);
+        return;
+      }
+      if (event.key !== 'Tab') return;
+
+      const items = focusables();
+      if (items.length === 0) return;
+
+      const first = items[0];
+      const last = items[items.length - 1];
+      const active = document.activeElement;
+
+      if (event.shiftKey && active === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && active === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+
+    // Переход по пункту закрывает панель: ClientRouter меняет содержимое,
+    // а зафиксированный скролл пережил бы навигацию.
+    panel.addEventListener('click', (event) => {
+      if ((event.target as HTMLElement).closest('a[href]')) setOpen(false);
+    });
+
+    // Уход на десктопную раскладку не должен оставлять открытую панель.
+    const desktop = window.matchMedia('(min-width: 768px)');
+    desktop.addEventListener('change', (event) => {
+      if (event.matches && open) setOpen(false);
+    });
+  }
+
+  document.addEventListener('astro:page-load', initNavbar);
+  document.addEventListener('astro:before-swap', () =>
+    document.body.classList.remove('ds-scroll-locked'),
+  );
+</script>

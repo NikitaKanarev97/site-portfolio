@@ -1,0 +1,167 @@
+---
+/**
+ * MediaFrame — ds/components.md
+ *
+ * Варианты: ratio=wide (обложка featured-кейса, Webflow-сборки) и
+ * ratio=portrait (медиа внутри кейса, портрет в About).
+ *
+ * Соотношение резервируется до загрузки, фон до этого — surface-media.
+ * Без этого раскрытие дёргает вёрстку и рушит CLS. Видео ленивые, без
+ * автоплея (prd.md §504); первый экран без видео.
+ *
+ * Art direction (srcMobile / ratioMobile), добавлен 2026-08-24 при сборке
+ * Home. Носитель один: обложка кейса на мобильном — вертикальный кроп, а
+ * не сжатый горизонтальный. wide на 375 даёт полоску 327×153. Это разные
+ * изображения, поэтому <picture> с одним <source media>: один файл в
+ * загрузке, один alt, один узел в DOM. Пропы независимы — ratioMobile без
+ * srcMobile перекадрирует тот же файл. Видео art direction не получает:
+ * носителя нет.
+ *
+ * Движение: Раскрытие (motion-reveal-media, ds/motion-concept.md §3.2).
+ * Маска идёт снизу вверх, внутри изображение — встречным ходом
+ * scale 1.06 → 1.0. Контр-масштаб отключается пропом counterScale:
+ * медиа внутри кейса и карточки DevelopmentStrip идут без него.
+ */
+interface Props {
+  src: string;
+  alt: string;
+  ratio?: 'wide' | 'portrait';
+  /** Файл под bp-md: другой кроп, не другой размер. Только для изображений. */
+  srcMobile?: string;
+  /** Соотношение под bp-md. Без srcMobile перекадрирует тот же файл. */
+  ratioMobile?: 'wide' | 'portrait';
+  /** Видео вместо изображения: без звука, без автозапуска. */
+  video?: boolean;
+  poster?: string;
+  loading?: 'lazy' | 'eager';
+  /** Контр-масштаб внутри маски. Полный такт — только у обложки DSSL. */
+  counterScale?: boolean;
+  /** Отключить Раскрытие: медиа появляется вместе с блоком. */
+  reveal?: boolean;
+  class?: string;
+}
+
+const {
+  src,
+  alt,
+  ratio = 'wide',
+  srcMobile,
+  ratioMobile,
+  video = false,
+  poster,
+  loading = 'lazy',
+  counterScale = true,
+  reveal = true,
+  class: className,
+} = Astro.props;
+
+const hasCaption = Astro.slots.has('caption');
+
+/** Медиазапрос art direction — тот же bp-md, что у ступеней типографики. */
+const MOBILE_MEDIA = '(max-width: 767px)';
+---
+
+<figure
+  class:list={[
+    'media-frame',
+    `media-frame--${ratio}`,
+    ratioMobile && `media-frame--mobile-${ratioMobile}`,
+    className,
+  ]}
+  data-motion={reveal ? 'reveal-media' : undefined}
+  data-motion-counter={counterScale ? undefined : 'none'}
+>
+  <div class="media-frame__mask ds-media-mask">
+    {
+      video ? (
+        <video
+          class="media-frame__media ds-media-inner"
+          src={src}
+          poster={poster}
+          preload="none"
+          muted
+          playsinline
+          loop
+          aria-label={alt}
+        />
+      ) : srcMobile ? (
+        <picture>
+          <source media={MOBILE_MEDIA} srcset={srcMobile} />
+          <img
+            class="media-frame__media ds-media-inner"
+            src={src}
+            alt={alt}
+            loading={loading}
+            decoding="async"
+          />
+        </picture>
+      ) : (
+        <img
+          class="media-frame__media ds-media-inner"
+          src={src}
+          alt={alt}
+          loading={loading}
+          decoding="async"
+        />
+      )
+    }
+  </div>
+
+  {
+    hasCaption && (
+      <figcaption class="media-frame__caption ds-meta-sm">
+        <slot name="caption" />
+      </figcaption>
+    )
+  }
+</figure>
+
+<style>
+  .media-frame {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .media-frame__mask {
+    overflow: hidden;
+    background: var(--surface-media);
+    border-radius: var(--radius-none);
+  }
+
+  /* Соотношение держит рамка, а не содержимое: пустого места
+     в раскладке не возникает ни в какой момент. */
+  .media-frame--wide .media-frame__mask {
+    aspect-ratio: 16 / 9;
+  }
+
+  .media-frame--portrait .media-frame__mask {
+    aspect-ratio: 3 / 4;
+  }
+
+  /* Art direction: соотношение под bp-md перебивает основное. */
+  @media (max-width: 767px) {
+    .media-frame--mobile-wide .media-frame__mask {
+      aspect-ratio: 16 / 9;
+    }
+
+    .media-frame--mobile-portrait .media-frame__mask {
+      aspect-ratio: 3 / 4;
+    }
+  }
+
+  /* <picture> — не бокс раскладки: маску держит .media-frame__mask. */
+  .media-frame__mask picture {
+    display: contents;
+  }
+
+  .media-frame__media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .media-frame__caption {
+    color: var(--text-meta);
+  }
+</style>

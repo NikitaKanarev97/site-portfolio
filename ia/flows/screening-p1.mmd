@@ -1,0 +1,18 @@
+%% Путь А — П1, скринер. PRD §6, Фильтр 0 + Путь А
+%% Бюджет: 10–30 секунд, чаще с телефона, корпоративный контур
+%% Результат успеха: ссылка передана дизайн-лиду
+%% 24.08.2026: узел IntroOverlay убран — гейта между MobileHome и Hero больше нет (ds/motion-concept.md §5)
+
+flowchart TD
+    Link[Ссылка из отклика в ATS] --> Parser{Парсер: 10-200 мс}
+    Parser -->|SSR HTML| NoScriptView[NoScriptView: 1500+ символов в DOM до JS]
+    Parser -->|пустой div id=root| Reject[Молчаливый отсев: кандидат не обогащён]
+    NoScriptView --> MobileHome[MobileHome: главная на 360 px]
+    MobileHome --> Hero[Hero: имя, роль, специализация]
+    Hero --- HeroReveal[/HeroReveal: 900 мс поверх уже отрисованного контента.<br/>Ничего не гейтит, пропускается любым вводом/]
+    Hero --> HeroAuthorization{HeroAuthorization: право на работу заявлено?}
+    HeroAuthorization -->|не заявлено| Exit[Отказ: вкладка закрыта, отклик не передан]
+    HeroAuthorization -->|заявлено| HeroCaseEntry[HeroCaseEntry: вход в кейс DSSL в первых 2160 px]
+    HeroCaseEntry --> CV[CV: /cv.pdf в один клик, событие 'скачан CV']
+    CV --> ContactBlock[ContactBlock: копирование email, aria-live, LinkedIn]
+    ContactBlock --> Handoff[Ссылка передана дизайн-лиду]

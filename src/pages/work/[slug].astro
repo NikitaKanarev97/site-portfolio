@@ -1,0 +1,315 @@
+---
+/**
+ * Страница кейса — маршрут /work/<slug>
+ *
+ * Composition map: ds/screens/case-dssl.md. Вайрфрейм: ia/wireframes/case-dssl.md.
+ * Тексты — src/copy/cases/<slug>.ts, реестр — src/copy/cases/index.ts.
+ *
+ * Шаблон с первого кейса, а не после второго (US-20, IA-02): новый кейс
+ * добавляется файлом и строкой в реестре, эта страница не меняется.
+ *
+ * Три ограничения, которые держат экран:
+ *   1. Самодостаточен как точка входа (CASE-17). Половина читателей
+ *      приходит прямой ссылкой и главную не видит. Хлебной крошки
+ *      «назад на главную» нет — назад им некуда.
+ *   2. Шапка читается за 5 секунд (US-07): исход стоит в ней, не в конце.
+ *   3. Заголовки — утверждения (CASE-14). Пересказ по заголовкам и
+ *      подписям обязан собираться без чтения тел.
+ *
+ * Блок CaseRework отсутствует: решение владельца №2 (CASE-18), вариант
+ * (в) — страница целиком есть пересборка, и оговорка о ней стоит в
+ * шапке помеченным блоком. Обоснование — ds/screens/case-dssl.md §1–2.
+ *
+ * Движение — карта ds/motion-concept.md §7. Анимаций здесь нет: экран
+ * объявляет движение атрибутами, хореография в src/scripts/animations.js.
+ */
+import PageShell from '../../layouts/PageShell.astro';
+import SectionHead from '../../components/SectionHead.astro';
+import ProseBlock from '../../components/ProseBlock.astro';
+import MetaList from '../../components/MetaList.astro';
+import MediaFrame from '../../components/MediaFrame.astro';
+import NoteBlock from '../../components/NoteBlock.astro';
+import DecisionBlock from '../../components/DecisionBlock.astro';
+import TextLink from '../../components/TextLink.astro';
+import { cases } from '../../copy/cases/index.ts';
+
+export function getStaticPaths() {
+  return cases.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { header, cover, context, reframe, process, failure, decisions, system, result, outro } =
+  entry;
+---
+
+<PageShell
+  title={entry.meta.title}
+  description={entry.meta.description}
+  ogImage={entry.meta.ogImage}
+  current="/work"
+>
+  {/*
+    CaseHeader (ds/patterns.md). Порядок не переставляется: суть → мета →
+    исход → команда → оговорка. Весь блок — Набор одним каскадом, поэтому
+    части своих тактов не объявляют.
+  */}
+  <header class="ds-container ds-section case-header" data-motion-intro>
+    <SectionHead as="h1" size="lg" reveal={false} class="case-header__title">
+      {header.title}
+    </SectionHead>
+
+    <ProseBlock variant="lead" motion={false} class="case-header__lead">
+      <p data-motion="reveal-text">{header.lead}</p>
+    </ProseBlock>
+
+    <MetaList items={header.meta} layout="inline" class="case-header__meta" />
+
+    <NoteBlock variant="emphasis" motion={false} class="case-header__outcome">
+      <p data-motion="reveal-text">{header.outcome}</p>
+    </NoteBlock>
+
+    <MetaList items={header.team} layout="stacked" class="case-header__team" />
+
+    {/*
+      Оговорка о пересборке (CASE-04). Вариант flagged, не muted: в схеме
+      без отдельного блока переработки она осталась единственным, что
+      отделяет пересборку от отгруженного продукта. Место прежнее —
+      последней в шапке.
+    */}
+    <NoteBlock
+      variant="flagged"
+      label={header.rework.label}
+      as="aside"
+      class="case-header__rework"
+    >
+      <p>{header.rework.text}</p>
+    </NoteBlock>
+  </header>
+
+  {/* CaseCover. Экран показывается как экран: без рамок и перспективы (CASE-20). */}
+  <figure class="case-cover">
+    <MediaFrame src={cover.src} alt={cover.alt} ratio="wide" loading="eager" counterScale />
+    <figcaption class="ds-container ds-meta-sm case-caption">{cover.caption}</figcaption>
+  </figure>
+
+  {/*
+    CaseContext. Поле под артефакт пусто намеренно: единственное «до» —
+    экраны реального портала заказчика, они под NDA. CASE-13 разрешает
+    пустое поле, TECH-15 запрещает серую заглушку вместо него.
+  */}
+  <section class="ds-container ds-section case-block">
+    <SectionHead size="sm">{context.heading}</SectionHead>
+    <ProseBlock>
+      {context.body.map((paragraph) => <p>{paragraph}</p>)}
+    </ProseBlock>
+  </section>
+
+  {/* CaseReframe — отдельный блок, не абзац внутри контекста (CASE-06). */}
+  <section class="ds-container ds-section case-block">
+    <SectionHead size="sm">{reframe.heading}</SectionHead>
+    <ProseBlock>
+      {reframe.body.map((paragraph) => <p>{paragraph}</p>)}
+    </ProseBlock>
+    <NoteBlock variant="emphasis">{reframe.statement}</NoteBlock>
+  </section>
+
+  <section class="ds-container ds-section case-block">
+    <SectionHead size="sm">{process.heading}</SectionHead>
+    <ProseBlock>
+      {process.body.map((paragraph) => <p>{paragraph}</p>)}
+    </ProseBlock>
+
+    <div class="case-artifacts" data-motion-group data-motion-stagger="tight">
+      {
+        process.artifacts.map((artifact) => (
+          <figure class="case-artifact">
+            <MediaFrame src={artifact.src} alt={artifact.alt} ratio="wide" />
+            <figcaption class="ds-meta-sm case-caption">{artifact.caption}</figcaption>
+          </figure>
+        ))
+      }
+    </div>
+  </section>
+
+  {/*
+    CaseFailure. Самостоятельный блок со своим заголовком и тем же кеглем,
+    что у остальных (CASE-08): приглушённый блок «что не получилось»
+    читается как отписка.
+  */}
+  <section class="ds-container ds-section case-block">
+    <SectionHead size="sm">{failure.heading}</SectionHead>
+    <ProseBlock>
+      {failure.body.map((paragraph) => <p>{paragraph}</p>)}
+    </ProseBlock>
+  </section>
+
+  {/* CaseDecisions. Каскад ставит экран, не компонент. */}
+  <section class="ds-container ds-section case-block">
+    <SectionHead size="sm">{decisions.heading}</SectionHead>
+
+    <div class="case-decisions" data-motion-group data-motion-stagger="base">
+      {
+        decisions.items.map((item) => (
+          <DecisionBlock
+            decision={item.decision}
+            why={item.why}
+            cost={item.cost}
+            whyLabel="Why"
+            costLabel="Cost"
+          >
+            {item.artifact && (
+              <figure slot="artifact" class="case-artifact">
+                <MediaFrame src={item.artifact.src} alt={item.artifact.alt} ratio="wide" />
+                <figcaption class="ds-meta-sm case-caption">{item.artifact.caption}</figcaption>
+              </figure>
+            )}
+          </DecisionBlock>
+        ))
+      }
+    </div>
+  </section>
+
+  {/*
+    CaseSystem (паттерн CaseSystemGrid). В подписи — имя компонента и
+    перечень показанных состояний: компонент без состояний доказывает
+    вкус, а не системную работу (CASE-10, US-18).
+  */}
+  <section class="ds-container ds-section case-block">
+    <SectionHead size="sm">{system.heading}</SectionHead>
+    <ProseBlock>
+      {system.body.map((paragraph) => <p>{paragraph}</p>)}
+    </ProseBlock>
+
+    <div class="case-system" data-motion-group data-motion-stagger="tight">
+      {
+        system.grid.map((cell) => (
+          <figure class="case-artifact">
+            <MediaFrame src={cell.src} alt={cell.alt} ratio="wide" />
+            <figcaption class="ds-meta-sm case-caption">
+              <span class="case-system__name">{cell.component}</span>
+              {' — '}
+              {cell.states}
+            </figcaption>
+          </figure>
+        ))
+      }
+    </div>
+  </section>
+
+  {/*
+    CaseResult. Четыре строки компромисса занимают место метрики, которой
+    нет (CASE-11), строка NDA закрывает их последней строкой того же
+    каскада (CASE-12) — не в шапке и не в подвале.
+  */}
+  <section class="ds-container ds-section case-block">
+    <SectionHead size="sm">{result.heading}</SectionHead>
+
+    <div data-motion-group data-motion-stagger="base">
+      <MetaList items={result.statements} layout="statements" motion={false} />
+      <NoteBlock variant="muted" class="case-nda">{result.nda}</NoteBlock>
+    </div>
+  </section>
+
+  {/* CaseOutro — переход к контакту, не тупик (CASE-16). */}
+  <section class="ds-container ds-section case-outro">
+    <SectionHead size="sm">{outro.heading}</SectionHead>
+    <ProseBlock motion={false}>
+      <p data-motion="reveal-text">{outro.lead}</p>
+    </ProseBlock>
+    <TextLink href={outro.href} type="arrow">{outro.cta}</TextLink>
+  </section>
+</PageShell>
+
+<style>
+  /* Шапка: вертикаль на ритме ДС, без прибитых чисел. */
+  .case-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+
+  .case-header__meta,
+  .case-header__team {
+    margin-block-start: var(--space-2);
+  }
+
+  .case-header__rework {
+    margin-block-start: var(--space-4);
+  }
+
+  /* Обложка идёт full-bleed: боковых полей у неё нет, подпись остаётся
+     в колонке контейнера. */
+  .case-cover {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .case-caption {
+    color: var(--text-meta);
+  }
+
+  .case-system__name {
+    color: var(--text-default);
+  }
+
+  .case-block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+
+  .case-decisions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+
+  .case-artifact {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  /* Мобильная раскладка базовая, десктопная надстраивается: на 360 px
+     два артефакта в ряд дают по 160 px, на них ничего не видно. */
+  .case-artifacts,
+  .case-system {
+    display: grid;
+    gap: var(--space-8);
+  }
+
+  .case-outro {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    align-items: flex-start;
+  }
+
+  /* Выход к контакту — цель нажатия не ниже space-12 на мобильном, как
+     в ряду действий Hero. :global обязателен: ссылка — корень TextLink
+     со своим data-astro-cid, скоуп страницы до него не достаёт. */
+  .case-outro > :global(.ds-link) {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--space-12);
+  }
+
+  @media (min-width: 768px) {
+    .case-outro > :global(.ds-link) {
+      min-height: 0;
+    }
+
+    .case-artifacts {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--gutter);
+    }
+
+    .case-system {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--gutter);
+    }
+  }
+</style>

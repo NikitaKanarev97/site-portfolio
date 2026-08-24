@@ -1,0 +1,119 @@
+---
+/**
+ * WorkRow — ds/components.md
+ *
+ * Строка перечня проектов. Некликабельная — это требование, а не упущение
+ * (WRK-02…05). Внутри нет ничего интерактивного: hover меняет только фон,
+ * курсор не меняется, подъёма, стрелки и подчёркивания нет. Иначе строка
+ * обещает клик, которого нет.
+ *
+ * Разметка — список, а не таблица данных: это перечень, а не набор данных.
+ * Ставится внутрь <ul>; в v1.1, когда строки станут ссылками, меняется
+ * содержимое строки, а не её место в раскладке.
+ *
+ * Варианты: layout=desktop (табличная раскладка) и layout=mobile (стопка
+ * с сохранением порядка). Вариант здесь — брейкпоинт, не проп.
+ *
+ * Движение: появление каскадом (rise + stagger-base) — задаёт контейнер
+ * перечня через data-motion-group. Разделитель не анимируется никогда.
+ */
+interface Props {
+  title: string;
+  /** Тип продукта словами — не аббревиатурой. */
+  type: string;
+  year: string;
+  role: string;
+  /** Описание в две строки. */
+  description: string | string[];
+  /** Причина умолчания: почему проект не раскрыт кейсом. */
+  reason?: string;
+  headingLevel?: 'h2' | 'h3' | 'h4';
+  class?: string;
+}
+
+const {
+  title,
+  type,
+  year,
+  role,
+  description,
+  reason,
+  headingLevel: Heading = 'h3',
+  class: className,
+} = Astro.props;
+
+const lines = Array.isArray(description) ? description : [description];
+---
+
+<li class:list={['work-row', className]} data-motion="rise">
+  <div class="work-row__cell work-row__title">
+    <Heading class="ds-heading-2xl">{title}</Heading>
+  </div>
+
+  <p class="work-row__cell work-row__meta ds-meta-sm">
+    <span>{type}</span>
+    <span aria-hidden="true">·</span>
+    <span>{year}</span>
+  </p>
+
+  <p class="work-row__cell work-row__role ds-meta-sm">{role}</p>
+
+  <div class="work-row__cell work-row__body">
+    {lines.map((line) => <p class="ds-body-base work-row__line">{line}</p>)}
+    {reason && <p class="ds-body-sm work-row__reason">{reason}</p>}
+  </div>
+</li>
+
+<style>
+  .work-row {
+    display: grid;
+    gap: var(--space-3);
+    padding-block: var(--space-6);
+    border-top: 1px solid var(--border-default);
+    /* Строка не ссылка: фон — единственное, что меняется на hover. */
+    transition: background-color var(--motion-hover-duration) var(--motion-hover-ease);
+  }
+
+  .work-row:last-child {
+    border-bottom: 1px solid var(--border-default);
+  }
+
+  .work-row:hover {
+    background: var(--surface-subtle);
+  }
+
+  .work-row__title {
+    color: var(--text-default);
+  }
+
+  .work-row__meta {
+    display: flex;
+    gap: var(--space-2);
+    color: var(--text-meta);
+  }
+
+  .work-row__role {
+    color: var(--text-meta);
+  }
+
+  .work-row__line {
+    color: var(--text-subtle);
+  }
+
+  .work-row__reason {
+    margin-top: var(--space-2);
+    color: var(--text-muted);
+  }
+
+  /* Табличная раскладка приходит на широком экране; на узком колонки
+     схлопываются в стопку, порядок сохраняется. */
+  @media (min-width: 1024px) {
+    .work-row {
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr) minmax(0, 2fr) minmax(0, 5fr);
+      align-items: start;
+      gap: var(--gutter);
+      padding-inline: var(--space-4);
+      margin-inline: calc(var(--space-4) * -1);
+    }
+  }
+</style>

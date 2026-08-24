@@ -1,0 +1,381 @@
+---
+/**
+ * Витрина компонентов — Site-portfolio, маршрут /kit
+ *
+ * Это НЕ главная страница продукта: маршрут / занят Home. Витрина съехала
+ * с корня 2026-08-24, при переходе к сборке финальных экранов — экраны
+ * собираются боевыми маршрутами, а не песочницей, и корень принадлежит
+ * продукту. Здесь каждый из одиннадцати компонентов
+ * каталога показан во всех вариантах — поверхность визуального QA
+ * после переноса ДС в код, замена Storybook, который на статичном
+ * каталоге не окупается (ds/motion-concept.md §2).
+ *
+ * Четыре компонента и два варианта добавлены расширением каталога
+ * 2026-08-24: ProseBlock, NoteBlock, DecisionBlock, Footer,
+ * MetaList layout=statements, CopyEmail appearance.
+ *
+ * Содержимое — заглушки. Ни одна строка отсюда в продукт не переносится.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CopyEmail from '../components/CopyEmail.astro';
+import MediaFrame from '../components/MediaFrame.astro';
+import MetaList from '../components/MetaList.astro';
+import SectionHead from '../components/SectionHead.astro';
+import TextLink from '../components/TextLink.astro';
+import WorkRow from '../components/WorkRow.astro';
+import ProseBlock from '../components/ProseBlock.astro';
+import NoteBlock from '../components/NoteBlock.astro';
+import DecisionBlock from '../components/DecisionBlock.astro';
+import Footer from '../components/Footer.astro';
+
+const works = [
+  {
+    title: 'Vet Clinic OS',
+    type: 'Внутренний продукт',
+    year: '2024',
+    role: 'Product designer',
+    description: ['Первая строка описания проекта.', 'Вторая строка описания проекта.'],
+    reason: 'Кейс не раскрыт: результаты закрыты соглашением.',
+  },
+  {
+    title: 'Pawly',
+    type: 'Мобильное приложение',
+    year: '2023',
+    role: 'Product designer',
+    description: ['Первая строка описания проекта.', 'Вторая строка описания проекта.'],
+    reason: 'Кейс не раскрыт: продукт не дошёл до релиза.',
+  },
+  {
+    title: 'Ruun',
+    type: 'Веб-сервис',
+    year: '2023',
+    role: 'Product designer',
+    description: ['Первая строка описания проекта.', 'Вторая строка описания проекта.'],
+    reason: 'Кейс не раскрыт: роль ограничена одним этапом.',
+  },
+];
+
+const compromise = [
+  {
+    term: 'Solved',
+    value:
+      'Повторные заказы проходят без менеджера. Коммерческий отдел перестал быть узким местом рутинных закупок.',
+  },
+  {
+    term: 'Sacrificed',
+    value:
+      'Возвраты остались частично ручными, а публичный каталог потерял цены и поисковый трафик вместе с ними.',
+  },
+  {
+    term: 'Почему цена правильная',
+    value:
+      'Оба отреза защищают то, что интерфейс не гарантирует сам: условие договора и складскую проверку, которой не существует.',
+  },
+  {
+    term: 'Что изменилось в подходе',
+    value:
+      'Сначала читаю данные, которые система уже производит, и только потом бриф. Журнал заказов сказал о задаче больше, чем кикофф.',
+  },
+];
+
+const decisions = [
+  {
+    decision: 'Персональные цены видны только после входа, в публичном каталоге — никогда.',
+    why: 'Контрактное условие: цена партнёра — часть его договора, публичный показ ломает договорённости самого клиента.',
+    cost: 'Публичный каталог перестал быть точкой входа, SEO-трафик на него потерян сознательно.',
+  },
+  {
+    decision: 'Легаси-артикулы остались на экране рядом с человеческими названиями.',
+    why: 'Партнёры ищут по кодам: в журнале заказов поиск по артикулу встречался чаще, чем по названию. Это их рабочий язык, а не наследие системы.',
+    cost: 'Интерфейс выглядит плотнее и техничнее, чем хотел клиент.',
+  },
+];
+
+const caseMeta = [
+  { term: 'Role', value: 'Product designer' },
+  { term: 'Year', value: '2024' },
+  { term: 'Platform', value: 'Web' },
+  { term: 'Type', value: 'B2B-портал' },
+];
+---
+
+<BaseLayout
+  title="Витрина компонентов — Site-portfolio"
+  description="Семь компонентов дизайн-системы во всех вариантах: поверхность визуального QA."
+  lang="ru"
+  current="/"
+>
+  <section class="ds-container ds-section" data-motion-intro>
+    <p class="ds-meta-xs kit__eyebrow" data-motion="fade" data-motion-at="0">Витрина компонентов</p>
+    <h1 class="ds-display-6xl kit__h1" data-motion="reveal-text">Набор, раскрытие, строка</h1>
+    <p class="ds-body-lg kit__lead" data-motion="reveal-text">
+      Вступительный такт: заголовок идёт первым, следующие строки подхватывают каскад с шагом
+      stagger-base.
+    </p>
+    <p class="ds-body-base kit__lead" data-motion="reveal-text">
+      Третья строка того же каскада — проверка того, что порядок читается сверху вниз.
+    </p>
+    <p class="ds-body-base kit__row" data-motion="fade" data-motion-at="0.4">
+      Ряд действий приходит одной opacity на +400 мс: <TextLink href="/#work" type="arrow"
+        >К перечню работ</TextLink
+      >
+    </p>
+  </section>
+
+  <section class="ds-container ds-section" id="work">
+    <SectionHead eyebrow="SectionHead · size=lg" size="lg">Перечень работ</SectionHead>
+    <ul class="kit__works" data-motion-group data-motion-stagger="base">
+      {works.map((work) => <WorkRow {...work} />)}
+    </ul>
+  </section>
+
+  <section class="ds-container ds-section">
+    <SectionHead eyebrow="MediaFrame · ratio=wide" size="lg">Раскрытие с контр-масштабом</SectionHead>
+    <MediaFrame src="/media/placeholder-wide.svg" alt="" ratio="wide">
+      <Fragment slot="caption">Полный такт 700 мс: обложка featured-кейса</Fragment>
+    </MediaFrame>
+  </section>
+
+  <section class="ds-container ds-section">
+    <SectionHead eyebrow="MediaFrame · ratio=portrait" size="sm">Раскрытие без контр-масштаба</SectionHead>
+    <div class="kit__portrait">
+      <MediaFrame
+        src="/media/placeholder-portrait.svg"
+        alt=""
+        ratio="portrait"
+        counterScale={false}
+      >
+        <Fragment slot="caption">Медиа внутри кейса: тот же токен, без контр-масштаба</Fragment>
+      </MediaFrame>
+    </div>
+  </section>
+
+  <section class="ds-container ds-section">
+    <SectionHead eyebrow="MediaFrame · каскад" size="sm">Четыре сборки, stagger-tight</SectionHead>
+    <div class="kit__strip" data-motion-group data-motion-stagger="tight">
+      {
+        ['Common', 'Synk', 'Scrib3', 'Bloomblex'].map((name) => (
+          <article class="kit__card">
+            <MediaFrame
+              src="/media/placeholder-wide.svg"
+              alt=""
+              ratio="wide"
+              counterScale={false}
+            />
+            <h3 class="ds-heading-xl kit__card-title">{name}</h3>
+            <MetaList
+              layout="stacked"
+              items={[{ term: 'Role', value: 'Webflow development', tone: 'strong' }]}
+            />
+            <TextLink href="https://example.com" type="arrow" external>
+              Открыть сайт
+            </TextLink>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="ds-container ds-section">
+    <SectionHead eyebrow="MetaList · layout=inline" size="sm">Шапка кейса</SectionHead>
+    <MetaList items={caseMeta} layout="inline" />
+  </section>
+
+  <section class="ds-container ds-section">
+    <SectionHead eyebrow="TextLink · три типа" size="sm">Строка</SectionHead>
+    <div class="kit__links" data-motion="fade">
+      <p class="ds-body-base">
+        Ссылка <TextLink href="/about">внутри текста</TextLink> — постоянное подчёркивание, цвет
+        не единственный различитель.
+      </p>
+      <p class="ds-body-base">
+        <TextLink href="/about" type="arrow">Переход к кейсу</TextLink>
+      </p>
+      <p class="ds-body-base">
+        <TextLink href="https://example.com" type="nav" external>Внешняя ссылка</TextLink>
+      </p>
+    </div>
+  </section>
+
+  <section class="ds-container ds-section">
+    <SectionHead eyebrow="ProseBlock · variant=lead" size="sm">Ведущий абзац</SectionHead>
+    <ProseBlock variant="lead">
+      <p>
+        Одна мысль о подходе на ведущей мере: колонка ограничена measure-lead, кегль —
+        ds-heading-2xl. Ниже 1024 px ступень едет сама, правило живёт в tokens.css.
+      </p>
+    </ProseBlock>
+  </section>
+
+  <section class="ds-container ds-section">
+    <SectionHead eyebrow="ProseBlock · variant=body" size="sm">Тело блока</SectionHead>
+    <ProseBlock>
+      <p>
+        Основная колонка чтения: measure-text, ds-body-lg. Мера ставится на колонку, а не на
+        секцию — секция держит контейнер и поля, мера отвечает только за длину строки.
+      </p>
+      <p>
+        Второй абзац проверяет ритм: между абзацами space-6, и это единственное, за что
+        компонент отвечает помимо меры. Всё остальное — роли из tokens.css.
+      </p>
+    </ProseBlock>
+  </section>
+
+  <section class="ds-container ds-section">
+    <SectionHead eyebrow="NoteBlock · три варианта" size="sm">Вынутое из потока</SectionHead>
+    <div class="kit__notes">
+      <NoteBlock variant="emphasis">
+        Партнёры заказывают сами — поверх легаси-системы, которую нельзя было заменить.
+      </NoteBlock>
+
+      <NoteBlock variant="flagged" label="Не в продакшене — как я собрал бы это сейчас">
+        <p>
+          Блок переработки: рамка, заливка surface-subtle и метка сверху. Метка — часть текста,
+          а не только рамка: выделение цветом ничего не сообщает скринридеру.
+        </p>
+      </NoteBlock>
+
+      <NoteBlock variant="muted">
+        Цифры проекта закрыты NDA и не публикуются. Выше — компромисс целиком, и это та часть,
+        которую можно показать.
+      </NoteBlock>
+    </div>
+  </section>
+
+  <section class="ds-container ds-section">
+    <SectionHead eyebrow="DecisionBlock · со слотом и без" size="sm">Решения и их цена</SectionHead>
+    <div class="kit__decisions" data-motion-group data-motion-stagger="base">
+      <DecisionBlock {...decisions[0]}>
+        <MediaFrame slot="artifact" src="/media/placeholder-wide.svg" alt="" ratio="wide" counterScale={false} />
+      </DecisionBlock>
+      <DecisionBlock {...decisions[1]} />
+    </div>
+  </section>
+
+  <section class="ds-container ds-section">
+    <SectionHead eyebrow="MetaList · layout=statements" size="sm">Четыре строки компромисса</SectionHead>
+    <div class="kit__compromise" data-motion-group data-motion-stagger="base">
+      <MetaList items={compromise} layout="statements" />
+      <NoteBlock variant="muted">
+        Строка NDA идёт последней строкой того же каскада — ds/motion-concept.md §7.
+      </NoteBlock>
+    </div>
+  </section>
+
+  <section class="ds-container ds-section" id="contact">
+    <SectionHead eyebrow="CopyEmail · appearance=address" size="sm">Контакт</SectionHead>
+    <div data-motion="fade">
+      <CopyEmail email="hello@example.com" />
+    </div>
+  </section>
+
+  <section class="ds-container ds-section">
+    <SectionHead eyebrow="CopyEmail · appearance=action" size="sm">Ряд действий</SectionHead>
+    <div class="kit__actions" data-motion="fade">
+      <TextLink href="/work/partner-portal" type="arrow">Читать кейс: B2B Partner Portal</TextLink>
+      <TextLink href="/cv.pdf">Скачать CV (PDF)</TextLink>
+      <CopyEmail email="hello@example.com" appearance="action" />
+    </div>
+  </section>
+
+  {/* Footer стоит внутри main только здесь: витрина показывает компонент,
+      на экранах продукта он живёт под main. */}
+  <section class="ds-container ds-section">
+    <SectionHead eyebrow="Footer · локальное время" size="sm">Подвал</SectionHead>
+  </section>
+  <Footer location="Kazakhstan" utcLabel="UTC+5" timeZone="Asia/Almaty" copyright="© 2026" />
+</BaseLayout>
+
+<style>
+  .kit__eyebrow {
+    color: var(--text-meta);
+    margin-bottom: var(--space-6);
+  }
+
+  .kit__h1 {
+    color: var(--text-default);
+    margin-bottom: var(--space-8);
+  }
+
+  .kit__lead {
+    color: var(--text-subtle);
+    max-width: 60ch;
+    margin-bottom: var(--space-4);
+  }
+
+  .kit__row {
+    margin-top: var(--space-8);
+    color: var(--text-subtle);
+  }
+
+  .kit__works {
+    display: block;
+  }
+
+  .kit__portrait {
+    max-width: 480px;
+  }
+
+  .kit__strip {
+    display: grid;
+    gap: var(--space-8);
+  }
+
+  .kit__card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: flex-start;
+  }
+
+  .kit__card-title {
+    color: var(--text-default);
+  }
+
+  .kit__notes,
+  .kit__decisions,
+  .kit__compromise {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+
+  .kit__compromise {
+    gap: var(--space-8);
+  }
+
+  .kit__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-4);
+  }
+
+  @media (min-width: 768px) {
+    .kit__actions {
+      flex-direction: row;
+      align-items: baseline;
+      gap: var(--space-8);
+    }
+  }
+
+  .kit__links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    color: var(--text-subtle);
+  }
+
+  @media (min-width: 768px) {
+    .kit__strip {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .kit__strip {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: var(--gutter);
+    }
+  }
+</style>

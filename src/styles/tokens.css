@@ -1,0 +1,265 @@
+/* ============================================================
+   Foundation tokens — Site-portfolio
+   Источник правды. Соответствует ds/foundation.md один в один.
+   Правится здесь и в foundation.md одновременно, иначе индекс врёт.
+
+   Слой 1 — примитивы: сырые значения, имён смысла не несут.
+   Слой 2 — смыслы: ТОЛЬКО var(--примитив). Прибитых значений нет.
+              Это инвариант, на нём держится ребрендинг.
+   ============================================================ */
+
+:root {
+  /* ---------- Слой 1 — примитивы ---------- */
+
+  /* Нейтралы — тёплые, ink не чёрный */
+  --gray-00:   #FFFFFF;
+  --gray-50:   #F7F7F5;
+  --gray-100:  #EFEFEC;
+  --gray-200:  #E1E1DC;
+  --gray-300:  #C7C7C0;
+  --gray-500:  #6E6E67;  /* AA 5.14:1 на белом — потолок для mono 12px */
+  --gray-700:  #53534C;  /* 7.75:1 */
+  --gray-900:  #1B1B18;  /* 17.26:1 */
+  --gray-950:  #0D0D0B;
+
+  /* Акцент — приглушённый рыжий, только интерактив */
+  --accent-300: #E8845C;  /* 7.31:1 на gray-950 */
+  --accent-500: #C1440E;  /* 5.12:1 на белом, 4.77:1 на gray-50 */
+  --accent-700: #94330A;  /* 7.67:1 на белом */
+  --accent-900: #5E2006;  /* резерв под pressed */
+
+  /* Функциональные — заведён один, носителя для остальных нет */
+  --success-500: #2F7D4F;  /* 5.04:1 на белом */
+
+  /* Семейства */
+  --font-sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Consolas, monospace;
+
+  /* Кегли — 11 ступеней, верхние три display-only */
+  --size-xs:   12px;
+  --size-sm:   14px;
+  --size-base: 16px;
+  --size-lg:   18px;
+  --size-xl:   20px;
+  --size-2xl:  24px;
+  --size-3xl:  32px;
+  --size-4xl:  48px;
+  --size-5xl:  64px;
+  --size-6xl:  96px;
+  --size-7xl:  128px;
+
+  /* Веса */
+  --weight-regular:    400;
+  --weight-medium:     500;
+  --weight-semibold:   600;
+  --weight-bold:       700;
+  --weight-extrabold:  800;
+
+  /* Межстрочный — база 1.6, +5% под кириллицу заложены сразу */
+  --lh-display: 1.02;
+  --lh-tight:   1.15;
+  --lh-snug:    1.30;
+  --lh-base:    1.60;
+  --lh-relaxed: 1.75;
+
+  /* Межбуквенный */
+  --tracking-display: -0.015em;
+  --tracking-tight:   -0.010em;
+  --tracking-snug:    -0.005em;
+  --tracking-none:     0em;
+  --tracking-wide:     0.05em;
+
+  /* Радиусы — проект по умолчанию на radius-none */
+  --radius-none: 0px;
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+
+  /* Отступы — имя = значение / 4 */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+  --space-48: 192px;
+
+  /* Обводка фокуса */
+  --focus-width: 2px;
+
+  /* Тени — в продукте не применяются, резерв */
+  --shadow-sm: 0 1px 2px rgba(27, 27, 24, 0.06);
+  --shadow-md: 0 4px 12px rgba(27, 27, 24, 0.08);
+  --shadow-lg: 0 12px 32px rgba(27, 27, 24, 0.10);
+
+  /* Сетка */
+  --container-max: 1440px;
+  --margin-sm: 24px;
+  --margin-md: 48px;
+  --margin-lg: 80px;
+  --gutter:    24px;
+
+  /* Меры колонки — потолок длины строки. Носители в ia/wireframes:
+     720 — тело кейса и About, 800 — ведущий абзац и строка исхода */
+  --measure-720: 720px;
+  --measure-800: 800px;
+
+  /* Motion — длительности */
+  --duration-instant: 120ms;
+  --duration-fast:    240ms;
+  --duration-base:    400ms;
+  --duration-page:    600ms;
+  --duration-slow:    700ms;
+  --duration-reveal:  900ms;
+
+  /* Motion — кривые. CSS-эквиваленты имён GSAP из foundation.md,
+     чтобы CSS-переходы и GSAP-твины не расходились на глаз. */
+  --ease-standard:   cubic-bezier(0.25, 0.46, 0.45, 0.94);  /* power2.out */
+  --ease-entrance:   cubic-bezier(0.215, 0.61, 0.355, 1);   /* power3.out */
+  --ease-exit:       cubic-bezier(0.55, 0.085, 0.68, 0.53); /* power2.in  */
+  --ease-expressive: cubic-bezier(0.19, 1, 0.22, 1);        /* expo.out   */
+
+  /* Motion — каскады */
+  --stagger-tight: 40ms;
+  --stagger-base:  80ms;
+  --stagger-loose: 120ms;
+
+  /* ---------- Слой 2 — смыслы ---------- */
+
+  /* Поверхности. Кнопка — ink, не акцент: акцент отдан ссылкам и фокусу. */
+  --surface-default:              var(--gray-00);
+  --surface-subtle:               var(--gray-50);
+  --surface-inverse:              var(--gray-950);
+  --surface-media:                var(--gray-100);
+  --surface-action-primary:       var(--gray-900);
+  --surface-action-primary-hover: var(--gray-700);
+
+  /* Текст */
+  --text-default:         var(--gray-900);
+  --text-subtle:          var(--gray-700);
+  --text-muted:           var(--gray-500);
+  --text-meta:            var(--gray-500);
+  --text-on-inverse:      var(--gray-00);
+  --text-on-action:       var(--gray-00);
+  --text-link:            var(--accent-500);
+  --text-link-hover:      var(--accent-700);
+  --text-link-on-inverse: var(--accent-300);
+  --text-success:         var(--success-500);
+
+  /* Обводки. border-strong уведён в gray-500, а не gray-300:
+     граница, несущая смысл, обязана давать 3:1 по WCAG 1.4.11. */
+  --border-default: var(--gray-200);
+  --border-strong:  var(--gray-500);
+  --border-inverse: var(--gray-700);
+  --border-focus:   var(--accent-500);
+
+  /* Фокус */
+  --focus-ring-color: var(--accent-500);
+  --focus-ring-width: var(--focus-width);
+
+  /* Меры колонки. Компонент берёт смысл, не число: ProseBlock и NoteBlock
+     не знают, что 720 — это 720. */
+  --measure-text: var(--measure-720);
+  --measure-lead: var(--measure-800);
+
+  /* Типографические роли */
+  --font-body:    var(--font-sans);
+  --font-display: var(--font-sans);
+  --font-meta:    var(--font-mono);
+
+  /* Motion. В CSS живут только те два смысла, которые CSS реально исполняет:
+     hover и смена состояния. Reveal и переходы между страницами — GSAP,
+     их смысловой слой в ds/motion.js. Контракт запрещает компоненту
+     обращаться к --duration-* и --ease-* напрямую: только через эти. */
+  --motion-hover-duration: var(--duration-fast);
+  --motion-hover-ease:     var(--ease-standard);
+  --motion-state-duration: var(--duration-instant);
+  --motion-state-ease:     var(--ease-standard);
+}
+
+/* ============================================================
+   Типографические роли — эквивалент TextStyles из foundation.md.
+   Цвет здесь не задаётся: приходит отдельно, смысловым токеном.
+   ============================================================ */
+
+.ds-display-7xl,
+.ds-display-6xl,
+.ds-display-5xl,
+.ds-heading-4xl,
+.ds-heading-3xl,
+.ds-heading-2xl,
+.ds-heading-xl { font-family: var(--font-display); }
+
+.ds-body-lg,
+.ds-body-base,
+.ds-body-sm { font-family: var(--font-body); font-weight: var(--weight-regular); }
+
+.ds-meta-sm,
+.ds-meta-xs { font-family: var(--font-meta); }
+
+.ds-display-7xl { font-size: var(--size-7xl); font-weight: var(--weight-extrabold); line-height: var(--lh-display); letter-spacing: var(--tracking-display); }
+.ds-display-6xl { font-size: var(--size-6xl); font-weight: var(--weight-extrabold); line-height: var(--lh-display); letter-spacing: var(--tracking-display); }
+.ds-display-5xl { font-size: var(--size-5xl); font-weight: var(--weight-bold);      line-height: var(--lh-display); letter-spacing: var(--tracking-tight); }
+.ds-heading-4xl { font-size: var(--size-4xl); font-weight: var(--weight-bold);      line-height: var(--lh-tight);   letter-spacing: var(--tracking-tight); }
+.ds-heading-3xl { font-size: var(--size-3xl); font-weight: var(--weight-semibold);  line-height: var(--lh-tight);   letter-spacing: var(--tracking-snug); }
+.ds-heading-2xl { font-size: var(--size-2xl); font-weight: var(--weight-semibold);  line-height: var(--lh-snug);    letter-spacing: var(--tracking-snug); }
+.ds-heading-xl  { font-size: var(--size-xl);  font-weight: var(--weight-medium);    line-height: var(--lh-snug);    letter-spacing: var(--tracking-none); }
+.ds-body-lg     { font-size: var(--size-lg);   line-height: var(--lh-relaxed); letter-spacing: var(--tracking-none); }
+.ds-body-base   { font-size: var(--size-base); line-height: var(--lh-base);    letter-spacing: var(--tracking-none); }
+.ds-body-sm     { font-size: var(--size-sm);   line-height: var(--lh-base);    letter-spacing: var(--tracking-none); }
+.ds-meta-sm     { font-size: var(--size-sm); font-weight: var(--weight-regular); line-height: var(--lh-base); letter-spacing: var(--tracking-none); }
+.ds-meta-xs     { font-size: var(--size-xs); font-weight: var(--weight-medium);  line-height: var(--lh-base); letter-spacing: var(--tracking-wide); text-transform: uppercase; }
+
+/* Display-ступени — desktop-only, ниже bp-lg съезжают на ступень вниз.
+   Правило живёт здесь, а не в компонентах, иначе 128px порвёт 360px. */
+@media (max-width: 1023px) {
+  .ds-display-7xl { font-size: var(--size-5xl); }
+  .ds-display-6xl { font-size: var(--size-4xl); }
+  .ds-display-5xl { font-size: var(--size-4xl); }
+}
+
+@media (max-width: 767px) {
+  .ds-display-7xl { font-size: var(--size-4xl); }
+  .ds-display-6xl { font-size: var(--size-3xl); }
+  .ds-display-5xl { font-size: var(--size-3xl); }
+}
+
+/* Heading-ступени — ниже bp-md на ступень вниз. Заведены 2026-08-24,
+   при сборке Home: мобильные вайрфреймы просят мельче в трёх местах
+   (заголовок WorksList, заголовок ContactBlock, адрес email), и без
+   правила здесь кегль расползся бы по компонентам прибитыми числами
+   в обход ролей (ds/CONTRACT.md §3).
+   heading-xl не съезжает: 20px — уже нижняя граница заголовка. */
+@media (max-width: 767px) {
+  .ds-heading-4xl { font-size: var(--size-3xl); }
+  .ds-heading-3xl { font-size: var(--size-2xl); }
+  .ds-heading-2xl { font-size: var(--size-xl); }
+}
+
+/* ============================================================
+   Глобальные правила доступности.
+   SkipLink и видимый фокус — не компоненты, а этот слой (TECH-12).
+   ============================================================ */
+
+:focus-visible {
+  outline: var(--focus-ring-width) solid var(--focus-ring-color);
+  outline-offset: var(--space-1);
+}
+
+/* Единая точка отключения движения. Дублирует то, что GSAP делает
+   через matchMedia — но покрывает и CSS-переходы, которые GSAP не видит.
+   Переходы между страницами тоже обязаны отключаться (MOT-01). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

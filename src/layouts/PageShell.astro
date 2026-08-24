@@ -1,0 +1,174 @@
+---
+/**
+ * PageShell — оболочка любого маршрута (ds/patterns.md §PageShell)
+ *
+ * Реализация записанного паттерна, а не новый компонент ДС: собирается
+ * из BaseLayout + Navbar + содержимое + ContactBlock + Footer, своей
+ * сущности в каталог не добавляет. Файл заведён потому, что три маршрута
+ * держат одинаковую обёртку, и копия в каждой странице разошлась бы
+ * (ds/CONTRACT.md §Что запрещено).
+ *
+ * ContactBlock тоже остаётся паттерном без своего файла: он собран здесь
+ * из SectionHead + ProseBlock + CopyEmail appearance=address + ряда
+ * TextLink. Отдельного компонента не заводим — в продукте он существует
+ * ровно в одном экземпляре, в этом файле.
+ *
+ * Footer уходит в именованный слот BaseLayout: его место под <main>,
+ * а не внутри (ds/patterns.md).
+ *
+ * Движение: ContactBlock — opacity целым блоком (ds/motion-concept.md §7),
+ * поэтому SectionHead и ProseBlock внутри своих тактов не получают.
+ * Footer без движения. 404 идёт с motion={false} и nav={false} — без
+ * движения вовсе.
+ *
+ * Две раскладки блока, не одна ужатая (ia/wireframes/mobile-home.md):
+ * десктоп — по центру, ссылки в ряд; мобильный — по левому краю, ссылки
+ * двумя строками с целью нажатия в space-12. Центрированный текст на
+ * 327 px даёт рваный левый край на каждой строке, а две цели в ряд —
+ * маленькие зоны нажатия рядом, где промах ведёт не туда, куда целился.
+ *
+ * Тексты приходят из src/copy/site.ts, композиция их не держит.
+ */
+import BaseLayout from './BaseLayout.astro';
+import SectionHead from '../components/SectionHead.astro';
+import ProseBlock from '../components/ProseBlock.astro';
+import CopyEmail from '../components/CopyEmail.astro';
+import TextLink from '../components/TextLink.astro';
+import Footer from '../components/Footer.astro';
+import { site } from '../copy/site.ts';
+
+interface Props {
+  title: string;
+  description: string;
+  lang?: string;
+  ogImage?: string;
+  /** Маршрут для подсветки активного пункта навигации. */
+  current?: string;
+  /** Навигация. 404 обходится без неё. */
+  nav?: boolean;
+  /** ContactBlock. Стоит на всех трёх маршрутах продукта (IA-06). */
+  contact?: boolean;
+  /** Движение. 404 идёт без него вовсе (ds/motion-concept.md §7). */
+  motion?: boolean;
+}
+
+const {
+  title,
+  description,
+  lang = 'en',
+  ogImage,
+  current,
+  nav = true,
+  contact = true,
+  motion = true,
+} = Astro.props;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  lang={lang}
+  ogImage={ogImage}
+  current={current}
+  nav={nav}
+>
+  <slot />
+
+  {
+    contact && (
+      <section
+        class="ds-container ds-section contact"
+        id="contact"
+        data-motion={motion ? 'fade' : undefined}
+      >
+        <SectionHead size="lg" reveal={false}>
+          {site.contact.heading}
+        </SectionHead>
+
+        <ProseBlock motion={false} class="contact__lead">
+          <p>{site.contact.lead}</p>
+        </ProseBlock>
+
+        <CopyEmail email={site.contact.email} appearance="address" class="contact__email" />
+
+        <ul class="contact__links">
+          {site.contact.links.map((link) => (
+            <li>
+              <TextLink href={link.href} external={link.external}>
+                {link.label}
+              </TextLink>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  <Fragment slot="footer">
+    <Footer
+      location={site.footer.location}
+      utcLabel={site.footer.utcLabel}
+      timeZone={site.footer.timeZone}
+      timeLabel={site.footer.timeLabel}
+      copyright={site.footer.copyright}
+    />
+  </Fragment>
+</BaseLayout>
+
+<style>
+  .contact__lead {
+    margin-bottom: var(--space-12);
+  }
+
+  .contact__email {
+    margin-bottom: var(--space-8);
+  }
+
+  /* Мобильная раскладка — базовая, десктопная надстраивается медиазапросом. */
+  .contact__links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .contact__links li {
+    display: flex;
+    align-items: stretch;
+    min-height: var(--space-12);
+  }
+
+  /* Цель нажатия — сама ссылка, а не строка вокруг неё: li тянется на
+     space-12, ссылка внутри оставалась 26 px. :global обязателен —
+     корень TextLink несёт собственный data-astro-cid. */
+  .contact__links li :global(.ds-link) {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .contact {
+      text-align: center;
+    }
+
+    /* Мера колонки остаётся, центрируется сам блок. */
+    .contact .contact__lead {
+      margin-inline: auto;
+    }
+
+    /* Перебивает align-items: flex-start из самого CopyEmail. */
+    .contact .contact__email {
+      align-items: center;
+    }
+
+    .contact__links {
+      flex-direction: row;
+      justify-content: center;
+      gap: var(--space-8);
+    }
+
+    .contact__links li {
+      align-items: center;
+      min-height: 0;
+    }
+  }
+</style>
