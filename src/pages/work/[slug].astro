@@ -64,8 +64,16 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
 
     <MetaList items={header.meta} layout="inline" class="case-header__meta" />
 
-    <NoteBlock variant="emphasis" motion={false} class="case-header__outcome">
-      <p data-motion="reveal-text">{header.outcome}</p>
+    {/*
+      Строка исхода объявляет Набор сама, корнем. Обёртка с внутренним
+      <p data-motion> стояла здесь до 2026-08-24 и была невалидной: корень
+      NoteBlock варианта emphasis — тоже <p>, и парсер разрывал абзац в
+      абзаце на три узла. Оговорка получала рамку emphasis пустой, текст
+      исхода терял и кегль, и меру, а поток секции считал обломки
+      отдельными узлами и разводил их шагом. Как в CaseReframe ниже.
+    */}
+    <NoteBlock variant="emphasis" class="case-header__outcome">
+      {header.outcome}
     </NoteBlock>
 
     <MetaList items={header.team} layout="stacked" class="case-header__team" />
@@ -204,7 +212,7 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
   <section class="ds-container ds-section case-block">
     <SectionHead size="sm">{result.heading}</SectionHead>
 
-    <div data-motion-group data-motion-stagger="base">
+    <div class="case-result" data-motion-group data-motion-stagger="base">
       <MetaList items={result.statements} layout="statements" motion={false} />
       <NoteBlock variant="muted" class="case-nda">{result.nda}</NoteBlock>
     </div>
@@ -221,35 +229,31 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
 </PageShell>
 
 <style>
-  /* Шапка: вертикаль на ритме ДС, без прибитых чисел. */
-  .case-header {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-8);
-  }
+  /* Шапка идёт потоком секции, а не своим flex-gap. Gap складывался с
+     margin компонентов: SectionHead приносил 48, gap добавлял 32, и под
+     заголовком шапки стояло 80 — против 48 на /about у той же пары.
+     Теперь пять узлов шапки идут шкалой, а две меты перебиты ниже.
 
-  /* Отступы на корнях компонентов пишутся через родителя и :global().
+     Отступы на корнях компонентов пишутся через родителя и :global().
      Класс, переданный пропом, приземляется на корень компонента, а тот несёт
      свой data-astro-cid: правило `.класс { … }` компилируется в
      `.класс[cid-страницы]` и не совпадает ни с чем. Ошибки нет — отступ молча
      пропадает. **Найдено аудитом экранов 2026-08-24**, проверяется
      `npm run check:css`. */
+
+  /* Мета идёт строкой под тем, к чему относится: пара, не узел. */
   .case-header > :global(.case-header__meta),
   .case-header > :global(.case-header__team) {
-    margin-block-start: var(--space-2);
-  }
-
-  .case-header > :global(.case-header__rework) {
-    margin-block-start: var(--space-4);
+    margin-block-start: var(--flow-pair);
   }
 
   /* Обложка идёт full-bleed: боковых полей у неё нет, подпись остаётся
-     в колонке контейнера. */
+     в колонке контейнера. Кадр и подпись — пара. */
   .case-cover {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: var(--space-4);
+    gap: var(--flow-pair);
   }
 
   .case-caption {
@@ -260,23 +264,29 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
     color: var(--text-default);
   }
 
-  .case-block {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-8);
-  }
+  /* Блоки кейса своей вертикали не держат вовсе: заголовок → тело даёт
+     ds-flow-heading, тело → врезка и тело → сетка артефактов — умолчание
+     секции. Девять секций страницы шли на одном flex-gap, который у
+     каждой складывался с margin SectionHead по-своему. */
 
   .case-decisions {
     display: flex;
     flex-direction: column;
-    gap: var(--space-12);
+    gap: var(--flow-group);
+  }
+
+  /* Строка NDA закрывает компромиссы последней строкой того же каскада,
+     но не впритык к ним: до 2026-08-24 отступа между ними не было вовсе —
+     обёртка каскада не участвовала ни в одном правиле вертикали. */
+  .case-result > :global(.case-nda) {
+    margin-block-start: var(--flow-group);
   }
 
   .case-artifact {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: var(--space-3);
+    gap: var(--flow-pair);
   }
 
   /* Мобильная раскладка базовая, десктопная надстраивается: на 360 px
@@ -284,20 +294,16 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
   .case-artifacts,
   .case-system {
     display: grid;
-    gap: var(--space-8);
+    gap: var(--flow-node);
   }
 
-  .case-outro {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-6);
-    align-items: flex-start;
-  }
-
-  /* Выход к контакту — цель нажатия не ниже space-12 на мобильном, как
-     в ряду действий Hero. :global обязателен: ссылка — корень TextLink
-     со своим data-astro-cid, скоуп страницы до него не достаёт. */
+  /* Выход к контакту: ссылка принадлежит абзацу над ней — текстовый шаг
+     вместо умолчания секции, как в AboutShort на главной. Цель нажатия
+     не ниже space-12 на мобильном, как в ряду действий Hero. :global
+     обязателен: ссылка — корень TextLink со своим data-astro-cid, скоуп
+     страницы до него не достаёт. */
   .case-outro > :global(.ds-link) {
+    margin-block-start: var(--flow-text);
     display: inline-flex;
     align-items: center;
     min-height: var(--space-12);

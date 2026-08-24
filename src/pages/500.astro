@@ -27,7 +27,7 @@ import { serverError, serviceRoutes } from '../copy/service.ts';
   canonical={false}
 >
   <section class="ds-container ds-section">
-    <p class="ds-meta-xs code">{serverError.code}</p>
+    <p class="ds-meta-xs code ds-flow-eyebrow">{serverError.code}</p>
 
     <SectionHead as="h1" size="lg" reveal={false} class="heading">
       {serverError.heading}
@@ -37,28 +37,19 @@ import { serverError, serviceRoutes } from '../copy/service.ts';
       {serverError.lead.map((paragraph) => <p>{paragraph}</p>)}
     </ProseBlock>
 
-    <h2 class="ds-heading-3xl routes-heading">{serverError.routesHeading}</h2>
+    <h2 class="ds-heading-3xl routes-heading ds-flow-heading">{serverError.routesHeading}</h2>
     <ServiceRoutes items={serviceRoutes} />
   </section>
 </PageShell>
 
 <style>
+  /* Вертикали на служебных маршрутах не осталось ни одной строки: код
+     ответа — eyebrow над заголовком (ds-flow-eyebrow), «заголовок → лид»
+     и «заголовок → перечень маршрутов» идут той же шкалой ДС, что на
+     продуктовых экранах, лид → перечень — ступенью ds-flow-lead.
+     Четыре правила, стоявшие здесь до 2026-08-24, держали свои числа —
+     16, 32, 64 и 32 — и совпадали с продуктовыми только случайно. */
   .code {
     color: var(--text-meta);
-    margin-bottom: var(--space-4);
-  }
-
-  /* :global обязателен: корни SectionHead и ProseBlock несут собственный
-     data-astro-cid (ds/components.md §Реализация). */
-  .ds-section > :global(.heading) {
-    margin-bottom: var(--space-8);
-  }
-
-  .ds-section > :global(.lead) {
-    margin-bottom: var(--space-16);
-  }
-
-  .routes-heading {
-    margin-bottom: var(--space-8);
   }
 </style>

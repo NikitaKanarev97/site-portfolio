@@ -60,9 +60,10 @@ const motionName = variant === 'flagged' ? 'fade' : 'reveal-text';
     display: block;
   }
 
+  /* Метка и текст под ней — пара. */
   .note__label {
     display: block;
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--flow-pair);
     color: var(--text-meta);
   }
 
@@ -88,6 +89,6 @@ const motionName = variant === 'flagged' ? 'fade' : 'reveal-text';
   }
 
   .note--flagged :global(p + p) {
-    margin-block-start: var(--space-6);
+    margin-block-start: var(--flow-text);
   }
 </style>

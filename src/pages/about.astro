@@ -40,7 +40,9 @@ import { about } from '../copy/about.ts';
     отдельных ProseBlock дали бы три меры и три такта на одном пороге.
   */}
   <section class="ds-container ds-section intro" data-motion-group data-motion-stagger="tight">
-    <h1 class="ds-heading-4xl intro__heading" data-motion="reveal-text">{about.intro.heading}</h1>
+    <h1 class="ds-heading-4xl intro__heading ds-flow-heading" data-motion="reveal-text">
+      {about.intro.heading}
+    </h1>
 
     <ProseBlock variant="lead" class="intro__lead">
       <p>{about.intro.lead}</p>
@@ -56,7 +58,7 @@ import { about } from '../copy/about.ts';
     за текстом человек, а не несёт смысл. Подписи нет — решение владельца.
     Ширина выведена из токена меры, а не прибита числом.
   */}
-  <section class="ds-container portrait">
+  <section class="ds-container ds-section-tight portrait">
     <MediaFrame
       src={about.portrait.src}
       alt={about.portrait.alt}
@@ -111,36 +113,26 @@ import { about } from '../copy/about.ts';
 
   .intro__heading {
     color: var(--text-default);
-    margin-bottom: var(--space-8);
   }
 
-  /* :global обязателен: корень ProseBlock несёт собственный data-astro-cid,
-     скоуп страницы до него не достаёт, и правило молча не применяется.
-     Та же ловушка, что найдена живым прогоном Home на TextLink и CopyEmail
-     (ds/components.md §TextLink) — она свойство любого корня компонента,
-     не только ссылки. */
-  .intro > :global(.intro__lead) {
-    margin-bottom: var(--space-12);
-  }
+  /* Вертикали здесь больше нет: заголовок → лид даёт ds-flow-heading,
+     лид → тело — ds-flow-lead на ProseBlock. Два правила с margin-bottom
+     и :global(), стоявшие тут до 2026-08-24, были единственным местом,
+     где цепочка «заголовок → лид → тело» вообще существовала — на других
+     маршрутах те же три узла стояли на других числах. */
 
   /* ---------------------------------------------------------------- *
    * AboutIntro — портрет                                              *
    * ---------------------------------------------------------------- */
 
-  /* Своя вертикаль вместо ds-section: сверху отступ меньше, чем между
-     секциями, — портрет принадлежит блоку выше, а не стоит отдельно.
-     Снизу полный шаг, потому что дальше начинается другой разговор. */
-  .portrait {
-    padding-block-end: var(--space-24);
-  }
+  /* Портрет принадлежит блоку выше, а не стоит отдельно: сверху узловой
+     шаг вместо секционного — класс ds-section-tight. Снизу полный шаг
+     секции, его приносит следующая секция, потому что дальше начинается
+     другой разговор. */
 
   /* Мобильная раскладка базовая: кадр во всю ширину контейнера, никаких
      ограничений. Десктопное надстраивается. */
   @media (--bp-md) {
-    .portrait {
-      padding-block-end: var(--space-32);
-    }
-
     /* Не на всю ширину и не по центру: половина колонки чтения, по левому
        краю. Число не прибито — ширина выведена из токена меры и поедет
        вместе с ним. :global по той же причине: корень MediaFrame — figure
@@ -154,6 +146,8 @@ import { about } from '../copy/about.ts';
    * AboutAuthorization и AboutAI                                      *
    * ---------------------------------------------------------------- */
 
-  /* Оба блока — заголовок и колонка текста, одинаковая пара. SectionHead
-     size=lg несёт собственный нижний отступ, добавлять свой нечего. */
+  /* Оба блока — заголовок и колонка текста, одинаковая пара. Шаг между
+     ними задаёт ds-flow-heading, и он тот же, что в шапке кейса и на
+     главной: с 2026-08-24 у пары «заголовок → тело» одно значение на
+     весь продукт. */
 </style>

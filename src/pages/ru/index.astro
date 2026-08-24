@@ -72,27 +72,19 @@ import { ru } from '../../copy/service.ts';
     сначала ответы, потом выбор. Первой строкой она читалась бы как
     «вам сюда нельзя».
   */}
-  <section class="ds-container english">
+  <section class="ds-container ds-section-tight english">
     <TextLink href={ru.toEnglish.href} type="arrow">{ru.toEnglish.label}</TextLink>
   </section>
 </PageShell>
 
 <style>
-  /* :global обязателен: корни SectionHead и ProseBlock несут собственный
-     data-astro-cid (ds/components.md §Реализация). */
-  .intro > :global(.intro__heading) {
-    margin-bottom: var(--space-8);
-  }
+  /* Вертикали на этом маршруте не осталось ни одной строки: цепочка
+     «заголовок → лид → тело» идёт шкалой ДС (ds-flow-heading и
+     ds-flow-lead), блок права на работу — той же парой «заголовок →
+     тело», что на /about. Три правила, стоявшие здесь до 2026-08-24,
+     держали свои числа — 32, 48 и 24 — и русский каркас расходился с
+     английскими маршрутами на тех же узлах.
 
-  .intro > :global(.intro__lead) {
-    margin-bottom: var(--space-12);
-  }
-
-  .authorization > :global(.authorization__heading) {
-    margin-bottom: var(--space-6);
-  }
-
-  .english {
-    padding-block: var(--space-8);
-  }
+     Ссылка на английскую версию принадлежит тексту выше, поэтому идёт
+     узловым шагом, а не секционным: класс ds-section-tight в разметке. */
 </style>

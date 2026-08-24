@@ -38,7 +38,13 @@ const motionName = variant === 'lead' ? 'reveal-text' : 'fade';
 ---
 
 <div
-  class:list={['prose', `prose--${variant}`, typeClass, className]}
+  class:list={[
+    'prose',
+    `prose--${variant}`,
+    typeClass,
+    variant === 'lead' && 'ds-flow-lead',
+    className,
+  ]}
   data-motion={motion ? motionName : undefined}
 >
   <slot />
@@ -57,13 +63,15 @@ const motionName = variant === 'lead' ? 'reveal-text' : 'fade';
     max-width: var(--measure-lead);
   }
 
-  /* Ритм абзацев. Контент приходит слотом, поэтому :global —
-     иначе scoped-стиль до него не дотянется. */
+  /* Ритм абзацев — ступени общей шкалы, а не свои числа. Контент приходит
+     слотом, поэтому :global — иначе scoped-стиль до него не дотянется.
+     Ведущий кегль крупнее, поэтому и шаг между его абзацами на ступень
+     выше. Отступ ПОСЛЕ ведущего блока задаёт поток по ds-flow-lead. */
   .prose :global(p + p) {
-    margin-block-start: var(--space-6);
+    margin-block-start: var(--flow-text);
   }
 
   .prose--lead :global(p + p) {
-    margin-block-start: var(--space-8);
+    margin-block-start: var(--flow-node);
   }
 </style>

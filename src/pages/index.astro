@@ -40,7 +40,9 @@ import { site } from '../copy/site.ts';
   <section class="ds-container ds-section hero" data-motion-intro>
     <h1 class="ds-display-5xl hero__name" data-motion="reveal-text">{home.hero.name}</h1>
 
-    <p class="ds-heading-2xl hero__role" data-motion="reveal-text">{home.hero.role}</p>
+    <p class="ds-heading-2xl hero__role ds-flow-heading" data-motion="reveal-text">
+      {home.hero.role}
+    </p>
 
     <ProseBlock motion={false} class="hero__spec">
       <p data-motion="reveal-text">{home.hero.specialization}</p>
@@ -67,7 +69,7 @@ import { site } from '../copy/site.ts';
     Вложенных ссылок внутри нет — иначе фокус ловит две цели подряд.
   */}
   <section class="ds-container ds-section featured" id="work">
-    <p class="ds-meta-xs featured__eyebrow">{home.featured.eyebrow}</p>
+    <p class="ds-meta-xs featured__eyebrow ds-flow-eyebrow">{home.featured.eyebrow}</p>
 
     <a class="featured__link" href={home.featured.href} data-motion-group>
       <MediaFrame
@@ -183,30 +185,31 @@ import { site } from '../copy/site.ts';
    * Hero                                                              *
    * ---------------------------------------------------------------- */
 
+  /* Вертикаль экрана идёт шкалой ДС и пишется одним направлением —
+     margin-block-start на нижнем узле. Шаг принадлежит промежутку, и
+     смешение направлений (margin-bottom у одного, margin-top у соседа)
+     складывало бы их. Умолчание секции — flow-block; здесь перебиты три
+     пары, у которых связь теснее. */
+
   .hero__name {
     color: var(--text-default);
-    margin-bottom: var(--space-4);
   }
 
-  .hero__role {
+  /* Имя и роль — одна пара, а не два узла. */
+  .hero > .hero__role {
+    margin-block-start: var(--flow-pair);
     color: var(--text-subtle);
-    margin-bottom: var(--space-8);
   }
 
-  /* Отступы на корнях компонентов пишутся через родителя и :global().
-     Класс, переданный пропом, приземляется на корень компонента, а тот несёт
-     свой data-astro-cid: правило `.класс { … }` компилируется в
-     `.класс[cid-страницы]` и не совпадает ни с чем. Ошибки нет — отступ молча
-     пропадает. **Найдено аудитом экранов 2026-08-24**, проверяется
-     `npm run check:css`. */
-  .hero > :global(.hero__spec) {
-    margin-bottom: var(--space-6);
-  }
+  /* Роль → специализация: шаг задаёт ds-flow-heading на роли. Правила
+     здесь нет намеренно — до 2026-08-24 на этом месте стоял
+     `.hero > :global(.hero__spec)`, ровно тот случай, ради которого
+     :global() и заводился. */
 
-  .hero__authorization {
+  .hero > .hero__authorization {
+    margin-block-start: var(--flow-text);
     color: var(--text-subtle);
     max-width: var(--measure-text);
-    margin-bottom: var(--space-16);
   }
 
   /* Мобильная раскладка базовая: три цели в столбик, каждая во всю ширину.
@@ -237,19 +240,15 @@ import { site } from '../copy/site.ts';
     .hero__actions > :global(*) {
       min-height: 0;
     }
-
-    .hero__authorization {
-      margin-bottom: var(--space-24);
-    }
   }
 
   /* ---------------------------------------------------------------- *
    * FeaturedCase                                                      *
    * ---------------------------------------------------------------- */
 
+  /* Отступ под eyebrow задаёт ds-flow-eyebrow на нём самом. */
   .featured__eyebrow {
     color: var(--text-meta);
-    margin-bottom: var(--space-6);
   }
 
   .featured__link {
@@ -264,18 +263,25 @@ import { site } from '../copy/site.ts';
     outline-offset: var(--space-2);
   }
 
-  .featured__link > :global(.featured__cover) {
-    margin-bottom: var(--space-8);
+  /* Обложка → заголовок: узловой шаг. Ниже карточка идёт теснее шкалы
+     по умолчанию — это одна композиция, а не перечень узлов, и её
+     собственная плотность держит вход в кейс в первом экране (SCR-02). */
+  .featured__link > :global(.featured__title) {
+    margin-block-start: var(--flow-node);
   }
 
   .featured__title {
     color: var(--text-default);
-    margin-bottom: var(--space-4);
   }
 
-  .featured__link > :global(.featured__outcome),
+  /* Заголовок и строка исхода — пара. */
+  .featured__link > :global(.featured__outcome) {
+    margin-block-start: var(--flow-pair);
+  }
+
+  /* Перебивает ds-flow-lead на строке исхода: в карточке шаг текстовый. */
   .featured__link > :global(.featured__meta) {
-    margin-bottom: var(--space-6);
+    margin-block-start: var(--flow-text);
   }
 
   /* CTA — часть той же ссылки, не вторая ссылка рядом. Подчёркивание ведёт
@@ -283,6 +289,7 @@ import { site } from '../copy/site.ts';
   .featured__cta {
     display: inline-block;
     position: relative;
+    margin-block-start: var(--flow-text);
     color: var(--text-link);
   }
 
@@ -309,27 +316,19 @@ import { site } from '../copy/site.ts';
    * WorksList                                                         *
    * ---------------------------------------------------------------- */
 
-  .works__head > :global(.works__lead) {
-    margin-top: var(--space-4);
-  }
-
-  .works__list {
-    margin-top: var(--space-12);
-  }
+  /* Заголовок → лид внутри обёртки каскада и обёртка → перечень идут
+     шкалой: ds-flow-heading на SectionHead и умолчание секции. Двух
+     правил, стоявших здесь до 2026-08-24, не осталось — они и давали
+     на главной 64 там, где на /about выходило 48. */
 
   /* ---------------------------------------------------------------- *
    * DevelopmentStrip                                                  *
    * ---------------------------------------------------------------- */
 
-  .dev__head > :global(.dev__lead) {
-    margin-top: var(--space-4);
-  }
-
   /* Мобильная форма — четыре строки с миниатюрой. */
   .dev__list {
     display: flex;
     flex-direction: column;
-    margin-top: var(--space-8);
   }
 
   .dev__link {
@@ -370,7 +369,6 @@ import { site } from '../copy/site.ts';
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: var(--space-6);
-      margin-top: var(--space-12);
     }
 
     .dev__link {
@@ -395,13 +393,12 @@ import { site } from '../copy/site.ts';
    * AboutShort                                                        *
    * ---------------------------------------------------------------- */
 
-  .about > :global(.about__body) {
-    margin-bottom: var(--space-6);
-  }
-
-  /* Та же цель нажатия, что в ряду Hero, и тот же :global по той же
-     причине: ссылка — корень TextLink. */
+  /* Ссылка принадлежит абзацу над ней, а не стоит отдельным узлом:
+     текстовый шаг вместо умолчания секции. Та же цель нажатия, что в
+     ряду Hero, и тот же :global по той же причине — ссылка это корень
+     TextLink. */
   .about > :global(.ds-link) {
+    margin-block-start: var(--flow-text);
     display: inline-flex;
     align-items: center;
     min-height: var(--space-12);

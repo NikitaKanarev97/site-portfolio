@@ -33,7 +33,7 @@ const {
 const headingClass = size === 'lg' ? 'ds-heading-3xl' : 'ds-heading-2xl';
 ---
 
-<header class:list={['section-head', `section-head--${size}`, className]}>
+<header class:list={['section-head', `section-head--${size}`, 'ds-flow-heading', className]}>
   {eyebrow && <p class="section-head__eyebrow ds-meta-xs">{eyebrow}</p>}
   <Heading
     class:list={['section-head__title', headingClass]}
@@ -44,19 +44,22 @@ const headingClass = size === 'lg' ? 'ds-heading-3xl' : 'ds-heading-2xl';
 </header>
 
 <style>
+  /* Eyebrow и заголовок — пара, не два узла. */
   .section-head {
     display: flex;
     flex-direction: column;
-    gap: var(--space-3);
+    gap: var(--flow-pair);
   }
 
-  .section-head--lg {
-    margin-bottom: var(--space-12);
-  }
+  /* Собственной внешней вертикали у компонента нет: отступ до того, что
+     идёт под заголовком, задаёт поток по классу ds-flow-heading
+     (src/styles/global.css §Вертикальный ритм). До 2026-08-24 margin
+     стоял здесь, размерами lg и sm — 48 и 32, — и складывался с gap
+     контейнера: в шапке кейса выходило 80, на главной 64, на /about 48.
+     Пять из семи мест на экранах его перебивали своим числом.
 
-  .section-head--sm {
-    margin-bottom: var(--space-8);
-  }
+     Модификатор size остаётся в разметке без объявлений: по нему
+     вариант виден в DOM при визуальном QA. */
 
   .section-head__eyebrow {
     color: var(--text-meta);
