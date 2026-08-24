@@ -31,7 +31,7 @@
  */
 export const NAME = 'Nikita Kanarev';
 export const EMAIL = 'nikita.kanarev.dev@outlook.com';
-export const LINKEDIN = 'https://www.linkedin.com/in/nikita-kanarev-92b34a34b/';
+export const LINKEDIN = 'https://www.linkedin.com/in/nikita-kanarev/';
 
 export const site = {
   brand: NAME,

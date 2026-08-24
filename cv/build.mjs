@@ -26,8 +26,8 @@ const root = join(here, '..');
 /** Контакты — единственное место, где они заданы. */
 const CONTACTS = {
   __EMAIL__: 'nikita.kanarev.dev@outlook.com',
-  __LINKEDIN__: 'linkedin.com/in/nikita-kanarev-92b34a34b',
-  __LINKEDIN_URL__: 'https://www.linkedin.com/in/nikita-kanarev-92b34a34b/',
+  __LINKEDIN__: 'linkedin.com/in/nikita-kanarev',
+  __LINKEDIN_URL__: 'https://www.linkedin.com/in/nikita-kanarev/',
   __TELEGRAM__: 't.me/nikitaknrv',
   __TELEGRAM_URL__: 'https://t.me/nikitaknrv',
 };
