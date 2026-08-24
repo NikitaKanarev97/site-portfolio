@@ -130,12 +130,21 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
     padding-block: var(--space-6);
   }
 
+  /* Наведения у имени нет намеренно: подчёркивание Строки принадлежит
+     пунктам навигации, а имя — не пункт. Нажатие есть у всех целей без
+     исключения — оно подтверждает приём тапа, а не обещает переход. */
   .navbar__brand {
     display: inline-flex;
     align-items: center;
     min-height: var(--space-12);
     color: var(--text-default);
     text-decoration: none;
+    transition: color var(--motion-hover-duration) var(--motion-hover-ease);
+  }
+
+  .navbar__brand:active {
+    color: var(--text-link-pressed);
+    transition-duration: var(--motion-press-duration);
   }
 
   .navbar__list {
@@ -157,8 +166,15 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
     transition: color var(--motion-hover-duration) var(--motion-hover-ease);
   }
 
-  .navbar__trigger:hover {
-    color: var(--text-link-hover);
+  .navbar__trigger:active {
+    color: var(--text-link-pressed);
+    transition-duration: var(--motion-press-duration);
+  }
+
+  @media (--can-hover) {
+    .navbar__trigger:hover {
+      color: var(--text-link-hover);
+    }
   }
 
   /* Панель поверх контента: собственный слой, не выталкивает раскладку. */

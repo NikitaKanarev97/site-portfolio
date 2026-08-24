@@ -13,6 +13,12 @@
  * иначе движение выглядит отменённым, а не завершённым. У arrow сдвигается
  * только стрелка: размер текста не меняется, иначе строка дёргается.
  *
+ * Наведение живёт под @media (--can-hover): на тач-устройстве :hover
+ * залипает после тапа. Отклик там даёт нажатие — строчная форма Состояния
+ * (§3.4): цвет уходит в text-link-pressed, подчёркивание встаёт целиком.
+ * Масштаба у строчной цели нет: буква, меняющая кегль под пальцем, дёргает
+ * строку.
+ *
  * Внешние ссылки помечаются в тексте — маркер и скрытая подсказка здесь
  * дополняют формулировку, а не заменяют её.
  */
@@ -67,12 +73,21 @@ const {
     transition: color var(--motion-hover-duration) var(--motion-hover-ease);
   }
 
-  .ds-link:hover {
-    color: var(--text-link-hover);
-  }
-
   .ds-link.is-inverse {
     color: var(--text-link-on-inverse);
+  }
+
+  /* Нажатие. Ступень ниже hover — иначе на десктопе, где ссылка под курсором
+     уже держит hover-цвет, нажатие не видно вовсе. Быстрее наведения:
+     motion-press перебивает длительность только на время приёма. */
+  .ds-link:active {
+    color: var(--text-link-pressed);
+    transition-duration: var(--motion-press-duration);
+    transition-timing-function: var(--motion-press-ease);
+  }
+
+  .ds-link.is-inverse:active {
+    color: var(--text-link-pressed-on-inverse);
   }
 
   /* Отступ подчёркивания — тот же space-1, что у подчёркивания Строки ниже
@@ -88,10 +103,6 @@ const {
     color: var(--text-default);
   }
 
-  .ds-link--nav:hover {
-    color: var(--text-link-hover);
-  }
-
   /* Подчёркивание Строки. Приходит слева, уходит вправо. */
   .ds-link__rule {
     position: absolute;
@@ -104,11 +115,19 @@ const {
     transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
   }
 
-  .ds-link:hover .ds-link__rule,
   .ds-link:focus-visible .ds-link__rule,
   .ds-link.is-active .ds-link__rule {
     transform: scaleX(1);
     transform-origin: left;
+  }
+
+  /* Нажатие ставит подчёркивание целиком и сразу: на тач-устройстве это
+     единственный отклик до того, как страница начнёт уходить. */
+  .ds-link:active .ds-link__rule {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition-duration: var(--motion-press-duration);
+    transition-timing-function: var(--motion-press-ease);
   }
 
   /* Активный пункт держит подчёркивание постоянно и на hover не двигается. */
@@ -121,11 +140,29 @@ const {
     transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
   }
 
-  .ds-link:hover .ds-link__arrow {
-    transform: translateX(var(--space-1));
-  }
-
   .ds-link__external {
     font-size: var(--size-link-marker);
+  }
+
+  /* Наведение — только там, где курсор действительно есть. Тач-устройство
+     эмулирует :hover на тапе и держит его до следующего касания в стороне:
+     подчёркивание залипает на уже покинутой ссылке. */
+  @media (--can-hover) {
+    .ds-link:hover {
+      color: var(--text-link-hover);
+    }
+
+    .ds-link--nav:hover {
+      color: var(--text-link-hover);
+    }
+
+    .ds-link:hover .ds-link__rule {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .ds-link:hover .ds-link__arrow {
+      transform: translateX(var(--space-1));
+    }
   }
 </style>

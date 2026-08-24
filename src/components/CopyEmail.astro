@@ -127,8 +127,17 @@ const buttonClass = isAddress ? 'ds-heading-3xl' : 'ds-body-base';
     transition: color var(--motion-state-duration) var(--motion-state-ease);
   }
 
-  .copy-email__button:hover {
-    color: var(--text-link-hover);
+  /* Нажатие — строчная форма Состояния (ds/motion-concept.md §3.4).
+     На тач-устройстве это единственный отклик между тапом и появлением
+     подтверждения: hover там не существует. */
+  .copy-email__button:active {
+    color: var(--text-link-pressed);
+  }
+
+  @media (--can-hover) {
+    .copy-email__button:hover {
+      color: var(--text-link-hover);
+    }
   }
 
   .copy-email__hint {

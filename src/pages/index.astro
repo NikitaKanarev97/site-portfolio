@@ -67,11 +67,15 @@ import { site } from '../copy/site.ts';
     FeaturedCase — паттерн FeaturedCaseCover. Кликабелен блок целиком:
     один <a> вокруг обложки, заголовка, строки исхода, меты и CTA.
     Вложенных ссылок внутри нет — иначе фокус ловит две цели подряд.
+
+    ds-pressable — плоскостная форма нажатия (ds/motion-concept.md §3.4).
+    Главная цель продукта, и на телефоне единственный отклик на тап: hover
+    там не существует, а до начала перехода проходит сетевой запрос.
   */}
   <section class="ds-container ds-section featured" id="work">
     <p class="ds-meta-xs featured__eyebrow ds-flow-eyebrow">{home.featured.eyebrow}</p>
 
-    <a class="featured__link" href={home.featured.href} data-motion-group>
+    <a class="featured__link ds-pressable" href={home.featured.href} data-motion-group>
       <MediaFrame
         src={home.featured.cover}
         srcMobile={home.featured.coverMobile}
@@ -132,7 +136,12 @@ import { site } from '../copy/site.ts';
       {
         home.development.items.map((item) => (
           <li>
-            <a class="dev__link" href={item.href} target="_blank" rel="noopener noreferrer">
+            <a
+              class="dev__link ds-pressable"
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <MediaFrame
                 src={home.development.preview}
                 ratio="wide"
@@ -306,10 +315,17 @@ import { site } from '../copy/site.ts';
       transform var(--motion-hover-duration) var(--motion-hover-ease);
   }
 
-  .featured__link:hover .featured__cta::after,
-  .featured__link:focus-visible .featured__cta::after {
+  .featured__link:focus-visible .featured__cta::after,
+  .featured__link:active .featured__cta::after {
     transform: scaleX(1);
     transform-origin: left;
+  }
+
+  @media (--can-hover) {
+    .featured__link:hover .featured__cta::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
   }
 
   /* ---------------------------------------------------------------- *
@@ -340,11 +356,6 @@ import { site } from '../copy/site.ts';
     min-height: var(--space-12);
     color: inherit;
     text-decoration: none;
-    transition: background var(--motion-hover-duration) var(--motion-hover-ease);
-  }
-
-  .dev__link:hover {
-    background: var(--surface-subtle);
   }
 
   .dev__body {
@@ -379,11 +390,13 @@ import { site } from '../copy/site.ts';
       padding-block: 0;
       min-height: 0;
     }
+  }
 
-    .dev__link:hover {
-      background: none;
-    }
-
+  /* Наведение на карточку — только цвет имени. Фона под курсором у мобильной
+     строки больше нет: подсветка ряда целиком читается как выделение в списке,
+     а не как переход, и на десктопе четыре карточки её всё равно не получали.
+     Отклик на тап даёт ds-pressable. */
+  @media (--can-hover) {
     .dev__link:hover .dev__name {
       color: var(--text-link-hover);
     }

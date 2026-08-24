@@ -42,6 +42,13 @@ button {
   cursor: pointer;
 }
 
+/* Серый прямоугольник, который мобильный WebKit рисует поверх нажатой цели,
+   снимается: у каждой нажимаемой цели продукта есть собственное :active —
+   строчной цели меняется цвет, плоскостной приходит motion-press. Снимать
+   подсветку, не дав замены, нельзя: на тач-устройстве она единственный
+   отклик, hover там не существует. */
+:where(a, button) { -webkit-tap-highlight-color: transparent; }
+
 /* ---------- Сетка и контейнер (foundation.md §Сетка) ---------- */
 
 .ds-container {
@@ -137,6 +144,35 @@ main > * + .ds-section-tight {
 }
 
 .ds-skip-link:focus-visible { transform: translateY(0); }
+
+/* Ссылка приходит только с клавиатуры, но нажимается и мышью — отклик
+   плоскостной цели ей даёт поверхность, а не масштаб: она уже приехала
+   трансформом, и второй transform на том же свойстве отменил бы первый. */
+.ds-skip-link:active { background: var(--surface-action-primary-hover); }
+
+/* ---------- Нажатие (ds/motion-concept.md §3.4) ---------- */
+
+/* Плоскостная форма нажатия: цель размером с карточку принимает палец
+   масштабом. Строчная форма — цвет и подчёркивание — живёт в компонентах
+   ссылок, отдельного класса не имеет: там нажимают букву, а буква, меняющая
+   кегль под пальцем, дёргает строку.
+
+   Класс глобальный, а не компонентный, потому что плоскостные цели продукта
+   собраны композицией (обложка кейса, карточка Webflow-сборки), компонентом
+   ни одна из них не является — ровно та же причина, по которой здесь лежат
+   ds-flow-* и ds-skip-link.
+
+   Возврат идёт медленнее нажатия: базовое правило держит hover-длительность,
+   :active перебивает её на время приёма. Быстро принял, спокойно отпустил. */
+.ds-pressable {
+  transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
+}
+
+.ds-pressable:active {
+  transform: scale(var(--motion-press-scale));
+  transition-duration: var(--motion-press-duration);
+  transition-timing-function: var(--motion-press-ease);
+}
 
 body.ds-scroll-locked { overflow: hidden; }
 

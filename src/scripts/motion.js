@@ -11,11 +11,11 @@
 /** Длительности в секундах — GSAP не понимает миллисекунды. */
 export const duration = {
   instant: 0.12,
-  fast:    0.24,
+  fast:    0.16,
+  page:    0.3,
   base:    0.4,
-  page:    0.6,
+  reveal:  0.6,
   slow:    0.7,
-  reveal:  0.9,
 };
 
 /** Кривые. Имена GSAP; CSS-эквиваленты лежат в tokens.css. */
@@ -36,9 +36,13 @@ export const stagger = {
 /**
  * Смысловой слой. Компоненты обращаются только сюда — не к duration/ease
  * напрямую. Это тот же инвариант, что и в CSS: смыслы ссылаются на примитивы.
+ *
+ * Нажатия здесь нет намеренно: motion-press исполняет только CSS, и его
+ * смысловой слой целиком лежит в tokens.css. Дублируются лишь те смыслы,
+ * которые действительно играют в обоих носителях.
  */
 export const motion = {
-  hover:       { duration: duration.fast,    ease: ease.standard },
+  hover:       { duration: duration.fast,    ease: ease.entrance },
   state:       { duration: duration.instant, ease: ease.standard },
   revealText:  { duration: duration.reveal,  ease: ease.entrance, stagger: stagger.base },
   revealMedia: { duration: duration.slow,    ease: ease.expressive },

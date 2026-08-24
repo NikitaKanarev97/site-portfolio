@@ -17,9 +17,9 @@ export default defineConfig({
     defaultStrategy: 'hover',
   },
 
-  // Брейкпоинты одним источником. @media не читает var(), поэтому условия
-  // запросов живут в ds/tokens.css блоком @custom-media, а сюда приходят
-  // через зеркало src/styles/tokens.css — тем же путём и по той же причине,
+  // Условия медиазапросов одним источником — брейкпоинты и --can-hover.
+  // @media не читает var(), поэтому условия запросов живут в ds/tokens.css
+  // блоком @custom-media, а сюда приходят через зеркало src/styles/tokens.css — тем же путём и по той же причине,
   // что и в src/lib/tokens.ts: в бандле исходников ds/ нет.
   //
   // breakpoints раздаёт объявления во все файлы, включая scoped <style>
