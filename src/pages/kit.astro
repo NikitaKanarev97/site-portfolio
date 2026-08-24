@@ -19,6 +19,9 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CopyEmail from '../components/CopyEmail.astro';
 import MediaFrame from '../components/MediaFrame.astro';
+import ScreenStack from '../components/ScreenStack.astro';
+import MediaZoom from '../components/MediaZoom.astro';
+import ProjectDialog from '../components/ProjectDialog.astro';
 import MetaList from '../components/MetaList.astro';
 import SectionHead from '../components/SectionHead.astro';
 import TextLink from '../components/TextLink.astro';
@@ -27,6 +30,10 @@ import ProseBlock from '../components/ProseBlock.astro';
 import NoteBlock from '../components/NoteBlock.astro';
 import DecisionBlock from '../components/DecisionBlock.astro';
 import Footer from '../components/Footer.astro';
+/* Кадры стопки берутся из продуктового слоя текстов, а не копируются сюда
+   третьим списком: витрина обязана показывать ровно то, что стоит на
+   главной, иначе она перестаёт быть поверхностью QA. */
+import { home } from '../copy/home.ts';
 
 const works = [
   {
@@ -135,6 +142,44 @@ const caseMeta = [
     <MediaFrame src="/media/placeholder-wide.svg" alt="" ratio="wide">
       <Fragment slot="caption">Полный такт 700 мс: обложка featured-кейса</Fragment>
     </MediaFrame>
+  </section>
+
+  <section class="ds-container ds-section">
+    <SectionHead eyebrow="MediaFrame · framed" size="sm">Подложка вокруг реального скриншота</SectionHead>
+    <MediaFrame src="/media/placeholder-wide.svg" alt="" framed>
+      <Fragment slot="caption">
+        16/10 держит рамка: поля space-8 / space-12, обводка border-default, тень shadow-md
+      </Fragment>
+    </MediaFrame>
+  </section>
+
+  <section class="ds-container ds-section">
+    <SectionHead eyebrow="MediaFrame · ratio=natural + zoom" size="sm">Кадр в собственном соотношении</SectionHead>
+    <MediaFrame src={home.featured.cover[0]} alt="Кадр экрана в собственном соотношении" ratio="natural" zoom />
+    <p class="ds-meta-sm kit__note">
+      Соотношение читается из файла на сборке, кадр не режется и не растягивается крупнее
+      исходника. Нажатие открывает его в полный размер — MediaZoom, один диалог на маршрут.
+    </p>
+  </section>
+
+  <section class="ds-container ds-section">
+    <SectionHead eyebrow="ProjectDialog" size="sm">Разбор работы в модальном окне</SectionHead>
+    <button class="ds-pressable kit__dialog-trigger" type="button" data-dialog-open="kit-project">
+      Открыть разбор
+    </button>
+    <p class="ds-meta-sm kit__note">
+      Нативный dialog с showModal(): ловушка фокуса, Escape, возврат фокуса на кнопку и inert
+      на остальной странице приходят от платформы. Ниже bp-md одна колонка, кадр первым.
+    </p>
+  </section>
+
+  <section class="ds-container ds-section">
+    <SectionHead eyebrow="ScreenStack · паттерн" size="sm">Обложка-стопка из трёх кадров</SectionHead>
+    <ScreenStack screens={home.featured.cover} alt="" />
+    <p class="ds-meta-sm kit__note">
+      Сдвиг вправо-вниз на шаг и два шага, каждый следующий слой у́же и приглушённее.
+      Ни поворота, ни перспективы, ни тени — глубину держат сдвиг, обводка и opacity.
+    </p>
   </section>
 
   <section class="ds-container ds-section">
@@ -285,6 +330,23 @@ const caseMeta = [
     <SectionHead eyebrow="Footer · локальное время" size="sm">Подвал</SectionHead>
   </section>
   <Footer location="Kazakhstan" utcLabel="UTC+5" timeZone="Asia/Almaty" copyright="© 2026" />
+
+  {/* MediaZoom — один узел на маршрут, здесь он обслуживает кадр выше. */}
+  <ProjectDialog
+    id="kit-project"
+    title="Заглушка"
+    lead="Одна строка сути: что это за работа и для кого."
+    body="Два-три предложения о том, в чём была работа. Ни одна строка витрины в продукт не переносится — содержимое здесь заглушечное."
+    meta={[
+      { term: 'Role', value: 'Design and build', tone: 'strong' },
+      { term: 'Stack', value: 'Webflow · GSAP · Client-First' },
+    ]}
+    media={{ src: home.featured.cover[0], alt: 'Кадр заглушки' }}
+    action={{ href: 'https://example.com', label: 'Live site' }}
+    closeLabel="Закрыть"
+  />
+
+  <MediaZoom />
 </BaseLayout>
 
 <style>
@@ -340,6 +402,25 @@ const caseMeta = [
 
   .kit__card-title {
     color: var(--text-default);
+  }
+
+  .kit__note {
+    color: var(--text-meta);
+    margin-block-start: var(--flow-text);
+  }
+
+  /* Кнопка витрины: в продукте разбор открывает карточка DevelopmentStrip,
+     здесь носителя нет — нужна отдельная цель. Вид у неё служебный. */
+  .kit__dialog-trigger {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--space-12);
+    padding-inline: var(--space-4);
+    border: var(--border-width) solid var(--border-default);
+    background: var(--surface-subtle);
+    font: inherit;
+    color: var(--text-default);
+    cursor: pointer;
   }
 
   .kit__notes,

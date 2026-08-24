@@ -64,12 +64,19 @@ export const home = {
       { term: 'Platform', value: 'Web, desktop-first' },
     ],
     cta: 'Read the case',
-    /** Кадр снят с живой сборки прототипа, данные synthetic (D013 проекта b2b-dssl). */
-    cover: '/media/case-dssl/resolution-center.webp',
-    /** Вертикальный кроп под bp-md: горизонталь на 375 даёт полоску 327×153. */
-    coverMobile: '/media/case-dssl/resolution-center-portrait.webp',
+    /**
+     * Обложка-стопка: три кадра живой сборки прототипа, данные synthetic
+     * (D013 проекта b2b-dssl). Порядок — от переднего к дальнему. Тот же
+     * набор стоит на CaseCover: обложка кейса на главной и на самой
+     * странице кейса — один объект, а не два разных снимка.
+     */
+    cover: [
+      '/media/case-dssl/cover/resolution-center.webp',
+      '/media/case-dssl/cover/fulfillment.webp',
+      '/media/case-dssl/cover/dashboard.webp',
+    ],
     coverAlt:
-      'B2B Partner Portal: specification review screen with forty-eight imported lines and their resolution status',
+      'B2B Partner Portal: specification review screen with forty-eight imported lines and their resolution status, with two more screens of the portal behind it',
   },
 
   works: {
@@ -113,23 +120,103 @@ export const home = {
     ],
   },
 
+  /**
+   * Webflow-сборки. Роль поменялась 2026-08-25 решением владельца: дизайн
+   * на всех четырёх был его, а не заказчика. Прежняя строка секции — «to
+   * someone else's design» — снята, `roleValue` стал «Design and Webflow
+   * build». Отстройка `DEV-02` при этом остаётся: подпись роли по-прежнему
+   * стоит у каждой сборки, просто теперь она называет полный цикл.
+   *
+   * Часы на сайте не показываются. На бирже те же сборки подписаны в часах
+   * (64 на каждую), но «96 working hours» — язык биржи фриланса, и на
+   * портфолио под найм он работает против product-first позиционирования.
+   *
+   * Описания сняты с живых сборок, а не переписаны с биржевых карточек.
+   * Карточка Synk обещает «CMS setup», а в проде коллекций нет; CMS есть
+   * только у Bloomlex — пятнадцать узлов и отдельная страница статьи.
+   * Проверено 2026-08-25, `scripts/shoot-webflow-frames.mjs` ходит по тем
+   * же адресам.
+   *
+   * Имя `Bloomlex` — то, что стоит в логотипе на самом сайте. Ключ и адрес
+   * остались `bloomblex`: это домен, а не название.
+   *
+   * Года у сборок нет намеренно (решение владельца 2026-08-25). Даты на
+   * бирже — даты публикации карточки, а не работы, и выдавать одно за
+   * другое на портфолио нельзя.
+   */
   development: {
-    heading: 'Webflow development',
-    lead: "Sites built in Webflow to someone else's design. Listed for completeness — this is not product work.",
+    heading: 'Webflow sites',
+    lead: 'Four marketing sites, designed and built end to end in Webflow. Listed for completeness — this is presentation work, not product work.',
     /** DEV-02: подпись роли стоит у каждой сборки, не одной строкой на секцию. */
     roleLabel: 'Role',
-    roleValue: 'Webflow development',
-    previewAlt: 'site preview',
-    /** Внешний характер ссылки помечен текстом, не только иконкой (ds/patterns.md §DevelopmentCard). */
+    roleValue: 'Design and Webflow build',
+    /**
+     * Одно слово, не «Built with»: в stacked-раскладке MetaList термин и
+     * значение стоят в строку, и на 375 px двусловный термин переносился
+     * сам в себе — «BUILT / WITH» двумя строками против одной строки
+     * значения рядом.
+     */
+    builtLabel: 'Stack',
+    /**
+     * Надпись на карточке. Не «Live site» и без стрелки: карточка открывает
+     * разбор, а не уводит на сайт, а стрелка ↗ в этом продукте значит ровно
+     * «внешняя ссылка». Живая ссылка стоит внутри диалога.
+     */
+    openLabel: 'Details',
+    /** Скрытая часть надписи: имя сборки в названии кнопки, а не одно «Details» на четыре. */
+    openHint: 'about',
     liveLabel: 'Live site',
-    liveHint: ', opens in a new tab',
+    closeLabel: 'Close',
     items: [
-      { name: 'Common', href: TODO_WEBFLOW.common },
-      { name: 'Synk', href: TODO_WEBFLOW.synk },
-      { name: 'Scrib3', href: TODO_WEBFLOW.scrib3 },
-      { name: 'Bloomblex', href: TODO_WEBFLOW.bloomblex },
+      {
+        slug: 'common',
+        name: 'Common',
+        href: TODO_WEBFLOW.common,
+        summary:
+          'One-page site for a design studio that sells research and strategy, not decoration.',
+        body: 'The whole page is a single argument in order: what we do, who we are, how we work, what came out of it. Motion carries the order — sections hand off to each other on scroll instead of stacking up.',
+        stack: 'Webflow · GSAP · Client-First · custom code',
+        preview: '/media/development/common.webp',
+        previewAlt:
+          'Common — studio home page: the headline “A digital design studio driven by research & strategy” above a row of service labels and two project frames',
+      },
+      {
+        slug: 'synk',
+        name: 'Synk',
+        href: TODO_WEBFLOW.synk,
+        summary:
+          'Catalog and pre-order flow for a studio selling postmodern furniture and lamps.',
+        body: 'The object does the talking, so the layout gets out of its way: one piece per screen, its provenance in the caption underneath. Orders are captured before the collection ships — a pre-order form, not a checkout.',
+        stack: 'Webflow · GSAP · Client-First · pre-order form',
+        preview: '/media/development/synk.webp',
+        previewAlt:
+          'Synk — catalog home page: the wordmark with a green cactus lamp standing inside it, the piece named in the caption below, a running line under that',
+      },
+      {
+        slug: 'scrib3',
+        name: 'Scrib3',
+        href: TODO_WEBFLOW.scrib3,
+        summary:
+          'Presentation site for a crypto-native marketing studio working with web3 builders.',
+        body: 'Loud by brief: display type at full width, marquees, outlined and filled headlines inside one line. The work was keeping it loud and still readable at every width — services, work, team and careers all live on one scroll.',
+        stack: 'Webflow · GSAP · Client-First · custom code',
+        preview: '/media/development/scrib3.webp',
+        previewAlt:
+          'Scrib3 — home page of the marketing studio: the headline “Web3 marketing for web3 builders” set in outlined and filled display type on black',
+      },
+      {
+        slug: 'bloomlex',
+        name: 'Bloomlex',
+        href: TODO_WEBFLOW.bloomblex,
+        summary:
+          'Marketing site for a service that generates claims, complaints and lawsuits without a lawyer.',
+        body: 'Every block on the page answers one doubt: can a document made in five minutes hold up. What it generates, who it already worked for, what people ask before they trust it — and a CMS blog that keeps answering after launch.',
+        stack: 'Webflow · GSAP · CMS · Client-First · forms',
+        preview: '/media/development/bloomlex.webp',
+        previewAlt:
+          'Bloomlex — home page: the headline “Legal made simple 5 minutes, no lawyers” beside a rendered flower, with a start-for-free action under it',
+      },
     ],
-    preview: '/media/placeholder-wide.svg',
   },
 
   about: {

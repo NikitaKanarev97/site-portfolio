@@ -61,6 +61,19 @@ const hint = Astro.props.hint ?? (isAddress ? 'Copy in one click' : email);
 
 const buttonText = isAddress ? email : label;
 const buttonClass = isAddress ? 'ds-heading-3xl' : 'ds-body-base';
+
+/**
+ * Место переноса адреса назначается явно, а не отдаётся браузеру.
+ *
+ * Адрес — один токен без пробелов, и в appearance=address он идёт ролью
+ * ds-heading-3xl: на 360 px это 369 px в колонке 312, то есть страница
+ * получала горизонтальную прокрутку целиком. Разрыв ставится перед @ —
+ * единственное место, где адрес читается разорванным. <wbr> — законная
+ * возможность переноса, и она разбирается раньше аварийной; символа в
+ * текст он не добавляет, поэтому ни озвучивание, ни data-email для
+ * буфера не меняются.
+ */
+const [addressLocal, addressDomain] = email.split('@');
 ---
 
 <div class:list={['copy-email', `copy-email--${appearance}`, className]} data-copy-email>
@@ -75,7 +88,17 @@ const buttonClass = isAddress ? 'ds-heading-3xl' : 'ds-body-base';
     data-announce={announce}
     data-announce-fallback={fallbackAnnounce}
   >
-    {buttonText}
+    {
+      isAddress && addressDomain ? (
+        <Fragment>
+          {addressLocal}
+          <wbr />
+          {`@${addressDomain}`}
+        </Fragment>
+      ) : (
+        buttonText
+      )
+    }
   </button>
 
   <p class="copy-email__hint ds-meta-sm" data-copy-hint>{hint}</p>
@@ -119,6 +142,10 @@ const buttonClass = isAddress ? 'ds-heading-3xl' : 'ds-body-base';
 
   .copy-email__button {
     padding: 0;
+    /* Страховка на случай, если локальная часть адреса когда-нибудь
+       перестанет помещаться сама по себе: разрыв перед @ выше её не
+       спасёт. Аварийный перенос разбирается только после законного. */
+    overflow-wrap: anywhere;
     color: var(--text-default);
     text-align: start;
     text-decoration: underline;

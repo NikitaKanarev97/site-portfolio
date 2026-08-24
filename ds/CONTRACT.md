@@ -13,7 +13,7 @@
 
 ## Что значит «через ДС»
 
-1. **Компоненты — только из каталога.** Список в `ds/components.md`: `Navbar`, `TextLink`, `CopyEmail`, `MediaFrame`, `WorkRow`, `MetaList`, `SectionHead`, `ProseBlock`, `NoteBlock`, `DecisionBlock`, `Footer`. Новые под конкретный экран с нуля не рисуются. Композиции, не ставшие компонентами, — в `ds/patterns.md`: обложка `FeaturedCase`, карточка Webflow-сборки, `CaseHeader`, сетка `CaseSystem`, оболочка страницы.
+1. **Компоненты — только из каталога.** Список в `ds/components.md`: `Navbar`, `TextLink`, `CopyEmail`, `MediaFrame`, `MediaZoom`, `ProjectDialog`, `WorkRow`, `MetaList`, `SectionHead`, `ProseBlock`, `NoteBlock`, `DecisionBlock`, `Footer`. Новые под конкретный экран с нуля не рисуются. Композиции, не ставшие компонентами, — в `ds/patterns.md`: обложка `FeaturedCase`, карточка Webflow-сборки, `CaseHeader`, сетка `CaseSystem`, оболочка страницы.
 2. **Цвет — только смысловым токеном.** `var(--text-default)`, не `#1B1B18`. Обращаться к примитиву (`var(--gray-900)`) прямо из компонента тоже нельзя: примитивы существуют только для того, чтобы на них ссылался смысловой слой.
 3. **Типографика — ролью, не числами.** Классы `ds-display-*`, `ds-heading-*`, `ds-body-*`, `ds-meta-*`. Прибитый `font-size` в компоненте — баг.
 4. **Отступы и радиусы — токеном.** `var(--space-12)`, не `48px`. **Вертикаль — шкалой ритма, а не примитивом `space-*`:** `var(--flow-node)`, `var(--section-gap)`. Шкала и её механика — `ds/foundation.md` §«Вертикальный ритм». Компонент собственной внешней вертикали не несёт вовсе: отступ принадлежит промежутку, а не узлу, и пишется одним направлением — `margin-block-start` на нижнем.

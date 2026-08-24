@@ -78,8 +78,18 @@ export const partnerPortal = {
   },
 
   cover: {
-    src: `${media}/resolution-center.webp`,
-    alt: 'Specification review screen: forty-eight imported lines with their resolution status',
+    /**
+     * Обложка-стопка: три кадра одного продукта, от переднего к дальнему.
+     * Сняты одним прогоном scripts/shoot-case-frames.mjs — один viewport,
+     * один фон, одна обработка. Пересъёмка идёт всей тройкой сразу: слои
+     * стоят рядом, и разошедшийся кадр видно на обложке немедленно.
+     */
+    screens: [
+      `${media}/cover/resolution-center.webp`,
+      `${media}/cover/fulfillment.webp`,
+      `${media}/cover/dashboard.webp`,
+    ],
+    alt: 'Specification review screen: forty-eight imported lines with their resolution status, with two more screens of the portal behind it',
     caption:
       'Specification review — the queue where a line’s identity is settled. Data is synthetic.',
   },
@@ -111,6 +121,24 @@ export const partnerPortal = {
       'From there: a brief that keeps what is known about the old product separate from what is a target assumption, and never lets the second quietly become the first. Scenario work across the real buying shapes — a five-line reorder, a fifty-line project, a two-hundred-line import. A market pass over sixteen comparable screens, each recorded as adopt, adapt or reject with its reason, so a pattern rejected once does not come back merely because it surfaced in search again.',
       'Then the design system, then twenty screens, then the implementation in React with a component catalogue on top of it. The last step was a synthetic run: an agent walking nine scenarios through the built prototype, thirty-five runs across three rounds, recorded as real test runs with their own events. That step is what found the things the screens were still missing.',
     ],
+    /**
+     * Живой прототип — решение владельца 2026-08-25. До этого адрес не
+     * стоял в кейсе нигде, и абзац выше ссылался на «the built prototype»,
+     * которого читателю негде было увидеть.
+     *
+     * Стоит здесь, а не в шапке и не рядом с CTA. В шапке он обещал бы
+     * продукт: это прототип на синтетических данных, а не портал заказчика,
+     * и подпись говорит это прямо. Рядом с CTA он спорил бы с ним за одну
+     * цель — `ds/patterns.md` §`FeaturedCaseCover` запрещает две цели
+     * фокуса подряд по той же причине.
+     *
+     * `external`: маркер ↗ в этом продукте значит ровно «внешняя ссылка».
+     */
+    prototype: {
+      href: 'https://b2b-partner-portal-five.vercel.app/',
+      label: 'Open the prototype',
+      note: 'The built prototype, on synthetic data — the same one the agent run walked through.',
+    },
     artifacts: [
       {
         src: `${media}/screen-index.webp`,
@@ -262,6 +290,18 @@ export const partnerPortal = {
     heading: 'This case probably raised a question.',
     lead: 'Most of it is a compromise, and compromises are worth arguing about.',
     cta: 'Get in touch',
+    /**
+     * Якорь на своей же странице, не `mailto:` и не адрес главной.
+     * `ContactBlock` печатает `PageShell` на всех маршрутах (`IA-06`), и
+     * на кейсе он стоит сразу за этим блоком: ссылка ведёт на соседнюю
+     * секцию — «Let's talk», почта, LinkedIn, CV. Это и есть переход к
+     * контакту, которого требует `CASE-16`.
+     *
+     * Проверено 2026-08-25 по собранной странице после вопроса, что эта
+     * кнопка делает: узел `id="contact"` в `dist/work/partner-portal`
+     * присутствует, ссылка рабочая. `mailto:` здесь был бы хуже — он
+     * увёл бы мимо блока, где стоят ещё три способа связи.
+     */
     href: '#contact',
   },
 };

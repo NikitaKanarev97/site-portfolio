@@ -51,6 +51,16 @@ export const site = {
       { label: 'CV (PDF)', href: '/cv.pdf', external: false },
     ],
   },
+  /**
+   * Строки увеличения кадра (MediaZoom). Подпись кнопки-источника читает
+   * только скринридер: видимая подсказка на кадре закрывала бы сам кадр,
+   * а курсор zoom-in говорит то же самое зрячему пользователю.
+   */
+  zoom: {
+    label: 'Enlarged screenshot',
+    open: 'Open full size',
+    close: 'Close',
+  },
   footer: {
     /** Факт, решение владельца №1 от 24.08.2026. PRD SCR-03 расходится — см. ia/open-questions.md №9. */
     location: 'Kazakhstan',

@@ -1,0 +1,198 @@
+---
+/**
+ * MediaZoom — ds/components.md
+ *
+ * Увеличение кадра по клику. Ставится один раз на маршрут; открывают его
+ * кнопки `data-zoom-trigger`, которые рисует MediaFrame при `zoom`.
+ *
+ * Зачем. Кадры кейса — рабочие экраны с реальной плотностью: очередь разбора
+ * на сорок восемь строк, матрица состояний компонента, индекс двадцати
+ * экранов. В колонке страницы это 411–628 px по ширине, то есть треть
+ * исходного кадра, и прочитать на них ничего нельзя. Зумить страницу
+ * колесом никто не станет — П2 просто пойдёт дальше, решив, что смотреть
+ * нечего. Кадр обязан открываться в полный размер по одному нажатию.
+ *
+ * **Носитель — нативный `<dialog>` с showModal().** Модальность, ловушка
+ * фокуса, закрытие по Escape, возврат фокуса на кнопку-источник и `inert`
+ * на остальной странице приходят от платформы. Это второе место в продукте,
+ * где нужна ловушка фокуса, и в отличие от MobileNav (ds/components.md
+ * §Navbar) здесь её не приходится писать руками: у панели навигации носитель
+ * не `<dialog>`, у этого — `<dialog>`.
+ *
+ * **Один узел на маршрут, а не по узлу на кадр.** Четырнадцать кадров кейса
+ * дали бы четырнадцать диалогов с четырнадцатью копиями разметки; открытый
+ * из них всегда один. Кнопка приносит адрес и подпись атрибутами, диалог
+ * подставляет их в свой единственный `<img>`.
+ *
+ * **Кадр в диалоге грузится по требованию.** `src` проставляется на
+ * открытии и снимается на закрытии: иначе каждая страница тянула бы полный
+ * кадр вдобавок к тому, что уже показан в колонке.
+ *
+ * Движение: Состояние (motion-state, ds/motion-concept.md §3.4) — opacity
+ * на подложке и на кадре. Нового движения словарь не получает: открытие
+ * диалога — смена состояния страницы, а не появление содержимого.
+ */
+import { site } from '../copy/site.ts';
+
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+const { zoom } = site;
+---
+
+<dialog class:list={['media-zoom', className]} data-media-zoom aria-label={zoom.label}>
+  {/*
+    Кнопка закрытия идёт первой в DOM: showModal() ставит фокус на первый
+    интерактивный узел, и это должен быть выход, а не подпись под кадром.
+  */}
+  <button class="media-zoom__close" type="button" data-media-zoom-close>
+    <span aria-hidden="true">×</span>
+    <span class="ds-visually-hidden">{zoom.close}</span>
+  </button>
+
+  <figure class="media-zoom__figure">
+    <img class="media-zoom__media" data-media-zoom-image src="" alt="" decoding="async" />
+    <figcaption class="media-zoom__caption ds-meta-sm" data-media-zoom-caption></figcaption>
+  </figure>
+</dialog>
+
+<style>
+  /* Диалог заполняет окно: умолчания `<dialog>` — авторазмер по содержимому
+     и поля от UA, и то и другое здесь мешает. */
+  .media-zoom {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: var(--space-4);
+    border: 0;
+    background: transparent;
+    color: var(--text-on-inverse);
+    overflow: hidden;
+  }
+
+  @media (--bp-md) {
+    .media-zoom {
+      padding: var(--space-8);
+    }
+  }
+
+  .media-zoom::backdrop {
+    background: var(--surface-inverse);
+    opacity: 0;
+    transition: opacity var(--motion-state-duration) var(--motion-state-ease);
+  }
+
+  .media-zoom[open]::backdrop {
+    opacity: var(--scrim-opacity);
+  }
+
+  .media-zoom__figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  /* Кадр вписывается в окно целиком и не растягивается выше своего размера:
+     скриншот, увеличенный сверх исходника, читается хуже, а не лучше. */
+  .media-zoom__media {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 0;
+    object-fit: contain;
+    background: var(--surface-media);
+  }
+
+  .media-zoom__caption {
+    flex-shrink: 0;
+    max-width: var(--measure-text);
+    text-align: center;
+    color: var(--text-on-inverse);
+  }
+
+  .media-zoom__close {
+    position: absolute;
+    inset-block-start: var(--space-4);
+    inset-inline-end: var(--space-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Цель нажатия не ниже space-12 — та же норма, что у ряда действий Hero. */
+    width: var(--space-12);
+    height: var(--space-12);
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--text-on-inverse);
+    font-family: var(--font-body);
+    font-size: var(--size-2xl);
+    line-height: 1;
+    cursor: pointer;
+    transition: color var(--motion-state-duration) var(--motion-state-ease);
+  }
+
+  @media (--can-hover) {
+    .media-zoom__close:hover {
+      color: var(--text-link-on-inverse);
+    }
+  }
+
+  .media-zoom__close:active {
+    color: var(--text-link-pressed-on-inverse);
+  }
+</style>
+
+<script>
+  /**
+   * Открытие и закрытие. Ловушка фокуса, Escape и возврат фокуса на кнопку
+   * приходят от showModal() — здесь только адрес кадра, подпись, подложка
+   * и блокировка прокрутки под диалогом.
+   */
+  function initMediaZoom() {
+    const dialog = document.querySelector<HTMLDialogElement>('[data-media-zoom]');
+    if (!dialog) return;
+
+    const image = dialog.querySelector<HTMLImageElement>('[data-media-zoom-image]');
+    const caption = dialog.querySelector<HTMLElement>('[data-media-zoom-caption]');
+    const close = dialog.querySelector<HTMLButtonElement>('[data-media-zoom-close]');
+    if (!image || !caption || !close) return;
+
+    document.querySelectorAll<HTMLElement>('[data-zoom-trigger]').forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        image.src = trigger.dataset.zoomSrc ?? '';
+        image.alt = trigger.dataset.zoomAlt ?? '';
+        caption.textContent = trigger.dataset.zoomAlt ?? '';
+        document.body.classList.add('ds-scroll-locked');
+        dialog.showModal();
+      });
+    });
+
+    close.addEventListener('click', () => dialog.close());
+
+    /* Нажатие мимо кадра закрывает. Цель события — сам диалог только тогда,
+       когда клик пришёлся на подложку: фигура и кнопка ловят свои. */
+    dialog.addEventListener('click', (event) => {
+      if (event.target === dialog) dialog.close();
+    });
+
+    /* Событие close приходит и от Escape, и от кнопки — снимаем состояние
+       в одном месте. Адрес кадра сбрасывается, чтобы вкладка не держала
+       полноразмерный кадр после закрытия. */
+    dialog.addEventListener('close', () => {
+      document.body.classList.remove('ds-scroll-locked');
+      image.removeAttribute('src');
+      image.alt = '';
+      caption.textContent = '';
+    });
+  }
+
+  document.addEventListener('astro:page-load', initMediaZoom);
+</script>

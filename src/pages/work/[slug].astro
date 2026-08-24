@@ -28,6 +28,8 @@ import SectionHead from '../../components/SectionHead.astro';
 import ProseBlock from '../../components/ProseBlock.astro';
 import MetaList from '../../components/MetaList.astro';
 import MediaFrame from '../../components/MediaFrame.astro';
+import ScreenStack from '../../components/ScreenStack.astro';
+import MediaZoom from '../../components/MediaZoom.astro';
 import NoteBlock from '../../components/NoteBlock.astro';
 import DecisionBlock from '../../components/DecisionBlock.astro';
 import TextLink from '../../components/TextLink.astro';
@@ -94,10 +96,23 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
     </NoteBlock>
   </header>
 
-  {/* CaseCover. Экран показывается как экран: без рамок и перспективы (CASE-20). */}
-  <figure class="case-cover">
-    <MediaFrame src={cover.src} alt={cover.alt} ratio="wide" loading="eager" counterScale />
-    <figcaption class="ds-container ds-meta-sm case-caption">{cover.caption}</figcaption>
+  {/*
+    CaseCover — обложка-стопка ScreenStack, тот же набор кадров, что на
+    главной. Экран показывается как экран: ни рамки устройства, ни
+    перспективы, ни наклона (CASE-20). Три кадра вместо одного отвечают на
+    первый вопрос страницы — что это за продукт целиком, а не какой у него
+    один экран.
+
+    Full-bleed снят 2026-08-24 вместе с переходом на стопку. Он работал,
+    пока обложка была одним снимком: изображение без краёв читается как
+    продолжающееся за экран. У стопки края — это и есть содержание,
+    правый нижний угол несёт всё сообщение, и full-bleed резал левый край
+    объекта, чтобы показать правый. Обложка встаёт в ту же колонку, что и
+    на главной: один объект в двух местах, а не два разных кадрирования.
+  */}
+  <figure class="ds-container case-cover">
+    <ScreenStack screens={cover.screens} alt={cover.alt} loading="eager" counterScale />
+    <figcaption class="ds-meta-sm case-caption">{cover.caption}</figcaption>
   </figure>
 
   {/*
@@ -127,11 +142,30 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
       {process.body.map((paragraph) => <p>{paragraph}</p>)}
     </ProseBlock>
 
+    {/*
+      Ссылка на живой прототип. Стоит сразу за абзацем, который его
+      называет, и перед артефактами: подпись объясняет, что откроется, —
+      без неё ↗ обещал бы продукт заказчика, а не прототип на синтетике.
+      Подпись стоит над ссылкой, потому что читается раньше неё.
+    */}
+    <div class="case-prototype" data-motion-group data-motion-stagger="tight">
+      <p class="ds-meta-sm case-prototype__note">{process.prototype.note}</p>
+      {/*
+        type=inline, а не arrow: у arrow своя стрелка →, и рядом с
+        маркером внешней ссылки ↗ на одной строке вставали два разных
+        указателя. → в этом продукте значит движение вперёд по сайту,
+        ↗ — уход с него; здесь верен второй.
+      */}
+      <TextLink href={process.prototype.href} external>
+        {process.prototype.label}
+      </TextLink>
+    </div>
+
     <div class="case-artifacts" data-motion-group data-motion-stagger="tight">
       {
         process.artifacts.map((artifact) => (
           <figure class="case-artifact">
-            <MediaFrame src={artifact.src} alt={artifact.alt} ratio="wide" />
+            <MediaFrame src={artifact.src} alt={artifact.alt} ratio="natural" zoom />
             <figcaption class="ds-meta-sm case-caption">{artifact.caption}</figcaption>
           </figure>
         ))
@@ -167,7 +201,7 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
           >
             {item.artifact && (
               <figure slot="artifact" class="case-artifact">
-                <MediaFrame src={item.artifact.src} alt={item.artifact.alt} ratio="wide" />
+                <MediaFrame src={item.artifact.src} alt={item.artifact.alt} ratio="natural" zoom />
                 <figcaption class="ds-meta-sm case-caption">{item.artifact.caption}</figcaption>
               </figure>
             )}
@@ -192,7 +226,7 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
       {
         system.grid.map((cell) => (
           <figure class="case-artifact">
-            <MediaFrame src={cell.src} alt={cell.alt} ratio="wide" />
+            <MediaFrame src={cell.src} alt={cell.alt} ratio="natural" zoom />
             <figcaption class="ds-meta-sm case-caption">
               <span class="case-system__name">{cell.component}</span>
               {' — '}
@@ -226,6 +260,14 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
     </ProseBlock>
     <TextLink href={outro.href} type="arrow">{outro.cta}</TextLink>
   </section>
+
+  {/*
+    MediaZoom — один диалог на маршрут. Кадры кейса плотные: очередь разбора
+    на сорок восемь строк и матрица состояний в колонке 411–628 px не
+    читаются, а зумить страницу колесом никто не станет. Открывают его
+    кнопки, которые рисует MediaFrame при zoom.
+  */}
+  <MediaZoom />
 </PageShell>
 
 <style>
@@ -247,10 +289,20 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
     margin-block-start: var(--flow-pair);
   }
 
-  /* Обложка идёт full-bleed: боковых полей у неё нет, подпись остаётся
-     в колонке контейнера. Кадр и подпись — пара. */
+  /* Обложка встаёт в колонку контейнера, кадр и подпись — пара.
+
+     Собственные поля <figure> снимаются по отдельности, а не шорткатом
+     `margin: 0`. Шорткат обнулял и margin-block-start, которым главный
+     ритм разводит секции (`main > * + *`), и скоупленный селектор
+     страницы перебивал его по весу: обложка вставала вплотную к рамке
+     оговорки о пересборке — кромка серой подложки продолжалась обводкой
+     скриншота, и стопка читалась частью помеченного блока.
+     **Найдено 2026-08-25.** Шаг между шапкой и обложкой принадлежит
+     промежутку и приходит сверху; здесь снимаются только боковые поля
+     UA и нижнее. */
   .case-cover {
-    margin: 0;
+    margin-inline: 0;
+    margin-block-end: 0;
     display: flex;
     flex-direction: column;
     gap: var(--flow-pair);
@@ -295,6 +347,23 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
   .case-system {
     display: grid;
     gap: var(--flow-node);
+  }
+
+  /* Ссылка на прототип и её подпись — одна пара, а не два узла, и вся
+     пара принадлежит абзацу процесса над ней: текстовый шаг вместо
+     умолчания секции. :global по той же причине, что у выхода к контакту
+     ниже — ссылка это корень TextLink со своим data-astro-cid. */
+  .case-prototype {
+    margin-block-start: var(--flow-text);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--flow-pair);
+    max-width: var(--measure-text);
+  }
+
+  .case-prototype__note {
+    color: var(--text-meta);
   }
 
   /* Выход к контакту: ссылка принадлежит абзацу над ней — текстовый шаг

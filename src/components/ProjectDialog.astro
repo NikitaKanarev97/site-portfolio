@@ -1,0 +1,340 @@
+---
+/**
+ * ProjectDialog — ds/components.md
+ *
+ * Разбор одной работы в модальном окне: имя, строка сути, два предложения,
+ * мета, кадр и одна живая ссылка. Ставится по узлу на работу; открывает его
+ * кнопка с `data-dialog-open="<id>"` — в v1.0 это карточка DevelopmentStrip.
+ *
+ * **Зачем окно, а не текст в полосе.** DEV-03 держит вес секции
+ * Development: превью не больше четверти обложки кейса, замерено 19,6% на
+ * 1440. Четыре описания, выложенные в полосу, этот лимит ломают —
+ * подчинённый слой начинает весить как продуктовый. В окне содержания
+ * сколько угодно, а вес страницы не меняется ни на пиксель. Окно здесь —
+ * не украшение, а то, чем требование держится.
+ *
+ * **Носитель — нативный <dialog> с showModal(),** как у MediaZoom.
+ * Модальность, ловушка фокуса, Escape, возврат фокуса на кнопку-источник и
+ * inert на остальной странице приходят от платформы. Появится третий
+ * диалог — оболочка выносится общей; на двух это была бы абстракция раньше
+ * второго носителя.
+ *
+ * **Узел на работу, а не один узел с подстановкой из JS.** У MediaZoom
+ * четырнадцать кадров и полноразмерные картинки — там подстановка
+ * обязательна, иначе страница тянет всё сразу. Здесь четыре блока текста:
+ * статичная разметка читается без JS, а кадр внутри закрытого <dialog>
+ * браузер и так не грузит — display: none отменяет loading="lazy".
+ *
+ * **Живая ссылка стоит здесь, а не на карточке.** Карточка целиком — одна
+ * кнопка; вложить в неё ещё и ссылку нельзя, это две цели фокуса подряд
+ * (запрет ds/patterns.md §FeaturedCaseCover). Разбор отвечает на «что это
+ * было», ссылка на прод — следующий шаг внутри него.
+ *
+ * Движение: Состояние (motion-state, ds/motion-concept.md §3.4) — opacity
+ * на окне и на подложке, ни перемещения, ни масштаба. Такт держится
+ * @starting-style и transition-behavior: allow-discrete: без них [open]
+ * включает display и конечное значение одним кадром, и переход не
+ * запускается вовсе. Нового движения словарь не получает.
+ */
+import MediaFrame from './MediaFrame.astro';
+import MetaList from './MetaList.astro';
+import TextLink from './TextLink.astro';
+
+interface MetaPair {
+  term: string;
+  value: string;
+  tone?: 'default' | 'strong';
+}
+
+interface Props {
+  /** Адрес окна: кнопка ссылается на него через data-dialog-open. */
+  id: string;
+  title: string;
+  /** Одна строка сути. */
+  lead: string;
+  /** Два-три предложения: что за работа и в чём она была. */
+  body: string;
+  meta: MetaPair[];
+  media: { src: string; alt: string };
+  /** Единственное действие окна. Внешняя ссылка. */
+  action: { href: string; label: string };
+  closeLabel: string;
+  class?: string;
+}
+
+const { id, title, lead, body, meta, media, action, closeLabel, class: className } = Astro.props;
+
+const titleId = `${id}-title`;
+---
+
+<dialog
+  class:list={['project-dialog', className]}
+  id={id}
+  data-project-dialog
+  aria-labelledby={titleId}
+>
+  {/*
+    Обёртка держит крестик и панель на одной ширине: без неё на 2560 px
+    крестик уезжает к краю окна, а панель остаётся в середине, и связь
+    между ними теряется. Обёртка же — вторая цель закрытия по нажатию мимо:
+    поля вокруг панели внутри неё принадлежат ей, а не диалогу.
+  */}
+  <div class="project-dialog__inner" data-project-dialog-surface>
+    {/*
+      Кнопка закрытия идёт первой в DOM: showModal() ставит фокус на первый
+      интерактивный узел, и это должен быть выход, а не живая ссылка наружу.
+    */}
+    <button class="project-dialog__close" type="button" data-project-dialog-close>
+      <span aria-hidden="true">×</span>
+      <span class="ds-visually-hidden">{closeLabel}</span>
+    </button>
+
+    <div class="project-dialog__panel">
+    {/*
+      Кадр стоит первым в DOM и первым на мобильном: на 360 px «что это»
+      отвечает картинка, а не заголовок. Выше bp-md сетка переставляет его
+      во вторую колонку — порядок чтения на десктопе идёт слева направо.
+      Раскрытия у кадра нет: окно появляется целиком, и второй такт внутри
+      первого читался бы как задержка.
+    */}
+      <div class="project-dialog__media">
+        <MediaFrame src={media.src} alt={media.alt} ratio="natural" reveal={false} />
+      </div>
+
+      <div class="project-dialog__text">
+        <h2 class="ds-heading-2xl project-dialog__title ds-flow-heading" id={titleId}>{title}</h2>
+
+        <p class="ds-body-lg project-dialog__lead">{lead}</p>
+        <p class="ds-body-base project-dialog__body">{body}</p>
+
+        <MetaList items={meta} layout="stacked" motion={false} class="project-dialog__meta" />
+
+        {/*
+          type=inline, а не arrow: external уже приносит маркер ↗ и скрытую
+          подсказку про новую вкладку, а arrow добавил бы к ним ещё →.
+          Два глифа подряд на одной ссылке — шум, и они говорят разное:
+          стрелка вправо значит «дальше по продукту», ↗ — «наружу».
+        */}
+        <TextLink href={action.href} external class="project-dialog__action">
+          {action.label}
+        </TextLink>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<style>
+  /* Окно заполняет вьюпорт: умолчания <dialog> — авторазмер по содержимому
+     и поля от UA, и то и другое здесь мешает. Прокрутка идёт внутри окна,
+     тело под ним заперто ds-scroll-locked. */
+  .project-dialog {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: var(--space-4);
+    border: 0;
+    background: transparent;
+    color: var(--text-default);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+
+    opacity: 0;
+    transition:
+      opacity var(--motion-state-duration) var(--motion-state-ease),
+      overlay var(--motion-state-duration) allow-discrete,
+      display var(--motion-state-duration) allow-discrete;
+  }
+
+  .project-dialog[open] {
+    opacity: 1;
+  }
+
+  @starting-style {
+    .project-dialog[open] {
+      opacity: 0;
+    }
+  }
+
+  .project-dialog::backdrop {
+    background: var(--surface-inverse);
+    opacity: 0;
+    transition:
+      opacity var(--motion-state-duration) var(--motion-state-ease),
+      overlay var(--motion-state-duration) allow-discrete,
+      display var(--motion-state-duration) allow-discrete;
+  }
+
+  .project-dialog[open]::backdrop {
+    opacity: var(--scrim-opacity);
+  }
+
+  @starting-style {
+    .project-dialog[open]::backdrop {
+      opacity: 0;
+    }
+  }
+
+  /* Ширина разбора ограничена контейнером продукта: панель, растянутая на
+     2560 px, даёт строку в двести знаков. */
+  .project-dialog__inner {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+  }
+
+  /* Панель — единственная непрозрачная поверхность окна. Нажатие мимо неё
+     ловят <dialog> и обёртка. */
+  .project-dialog__panel {
+    display: flex;
+    flex-direction: column;
+    gap: var(--flow-group);
+    padding: var(--space-6);
+    background: var(--surface-default);
+    border: var(--border-width) solid var(--border-default);
+    border-radius: var(--radius-none);
+  }
+
+  .project-dialog__text {
+    min-width: 0;
+  }
+
+  /* Вертикаль внутри колонки идёт шкалой ритма, а не gap: у заголовка своя
+     роль в цепочке (ds-flow-heading), у остальных — своя пара. */
+  .project-dialog__lead {
+    max-width: var(--measure-text);
+    color: var(--text-default);
+  }
+
+  .project-dialog__body {
+    margin-block-start: var(--flow-text);
+    max-width: var(--measure-text);
+    color: var(--text-subtle);
+  }
+
+  /* :global обязателен: класс, переданный пропом, приземляется на корень
+     чужого компонента с его собственным data-astro-cid. */
+  .project-dialog__text > :global(.project-dialog__meta) {
+    margin-block-start: var(--flow-node);
+  }
+
+  /* Ссылка принадлежит мете над ней. Цель нажатия не ниже space-12 на
+     мобильном — та же норма, что в ряду действий Hero. */
+  .project-dialog__text > :global(.project-dialog__action) {
+    margin-block-start: var(--flow-node);
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--space-12);
+  }
+
+  /* Крестик прижат к правому краю поля вокруг панели и не уезжает при
+     прокрутке длинного разбора. */
+  .project-dialog__close {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Цель нажатия не ниже space-12 — та же норма, что у MediaZoom. */
+    width: var(--space-12);
+    height: var(--space-12);
+    margin-inline-start: auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--text-on-inverse);
+    font-family: var(--font-body);
+    font-size: var(--size-2xl);
+    line-height: 1;
+    cursor: pointer;
+    transition: color var(--motion-state-duration) var(--motion-state-ease);
+  }
+
+  @media (--can-hover) {
+    .project-dialog__close:hover {
+      color: var(--text-link-on-inverse);
+    }
+  }
+
+  .project-dialog__close:active {
+    color: var(--text-link-pressed-on-inverse);
+  }
+
+  /* Десктоп: две колонки, текст слева, кадр справа. В DOM кадр стоит
+     первым — порядок задаёт сетка, а не разметка, поэтому на мобильном он
+     остаётся сверху без дубля узлов. */
+  @media (--bp-md) {
+    .project-dialog {
+      padding: var(--space-8);
+    }
+
+    .project-dialog__panel {
+      display: grid;
+      grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+      align-items: start;
+      gap: var(--gutter);
+      padding: var(--space-12);
+    }
+
+    .project-dialog__media {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    .project-dialog__text {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .project-dialog__text > :global(.project-dialog__action) {
+      min-height: 0;
+    }
+  }
+</style>
+
+<script>
+  /**
+   * Открытие и закрытие. Ловушка фокуса, Escape и возврат фокуса на кнопку
+   * приходят от showModal() — здесь только запуск, подложка и блокировка
+   * прокрутки под окном.
+   *
+   * Скрипт один на все окна маршрута: Astro поднимает и склеивает
+   * одинаковые script компонента, сколько бы раз он ни встретился.
+   */
+  function initProjectDialogs() {
+    document.querySelectorAll<HTMLElement>('[data-dialog-open]').forEach((trigger) => {
+      const id = trigger.dataset.dialogOpen;
+      if (!id) return;
+
+      const dialog = document.getElementById(id);
+      if (!(dialog instanceof HTMLDialogElement)) return;
+
+      trigger.addEventListener('click', () => {
+        document.body.classList.add('ds-scroll-locked');
+        dialog.showModal();
+      });
+    });
+
+    document.querySelectorAll<HTMLDialogElement>('dialog[data-project-dialog]').forEach((dialog) => {
+      const close = dialog.querySelector<HTMLButtonElement>('[data-project-dialog-close]');
+      close?.addEventListener('click', () => dialog.close());
+
+      /* Нажатие мимо панели закрывает. Целей две: сам диалог и обёртка —
+         поле вокруг панели поделено между ними, и панель ловит своё. */
+      const surface = dialog.querySelector('[data-project-dialog-surface]');
+      dialog.addEventListener('click', (event) => {
+        if (event.target === dialog || event.target === surface) dialog.close();
+      });
+
+      /* Событие close приходит и от Escape, и от кнопки — состояние
+         снимается в одном месте. */
+      dialog.addEventListener('close', () => {
+        document.body.classList.remove('ds-scroll-locked');
+      });
+    });
+  }
+
+  document.addEventListener('astro:page-load', initProjectDialogs);
+</script>

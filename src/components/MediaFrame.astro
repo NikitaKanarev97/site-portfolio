@@ -2,8 +2,16 @@
 /**
  * MediaFrame — ds/components.md
  *
- * Варианты: ratio=wide (обложка featured-кейса, Webflow-сборки) и
- * ratio=portrait (медиа внутри кейса, портрет в About).
+ * Варианты: ratio=wide (Webflow-сборки), ratio=portrait (портрет в About)
+ * и ratio=natural (кадры кейса).
+ *
+ * natural добавлен 2026-08-25. Рамка берёт соотношение из самого файла и
+ * не режет ничего. До него выбор был из двух чисел, не совпадавших ни с
+ * одним реальным кадром: индекс двадцати экранов показывался на треть,
+ * рельс навигации — на три четверти по ширине, снимок экрана терял
+ * десятую часть. Резервирование места сохраняется: числа читаются на
+ * сборке (src/lib/media.ts), а не в браузере, и уходят и в aspect-ratio,
+ * и в атрибуты width/height.
  *
  * Соотношение резервируется до загрузки, фон до этого — surface-media.
  * Без этого раскрытие дёргает вёрстку и рушит CLS. Видео ленивые, без
@@ -17,17 +25,40 @@
  * srcMobile перекадрирует тот же файл. Видео art direction не получает:
  * носителя нет.
  *
+ * Вариант framed, добавлен 2026-08-24. Подложка --surface-subtle с полями,
+ * волосяная обводка и тень вокруг реального скриншота: object-fit меняется
+ * с cover на contain, соотношение фиксируется рамкой — ratio-screen, тот же
+ * токен, на котором стоят слои ScreenStack и норма съёмки кадров. Единая
+ * высота и ширина обложек приходит отсюда — форму задаёт рамка, а не
+ * пропорции исходника. Правка CASE-20 записана в outputs/features_list.md:
+ * подложка — не mockup-подставка, экран остаётся экраном.
+ *
+ * Рамка — отдельный узел .media-frame__frame, а не стили на маске.
+ * Раскрытие оставляет на маске clip-path: inset(0%) навсегда (animations.js
+ * не чистит свойство), а clip-path режет и box-shadow. Тень на маске
+ * пропала бы после первого же проигрывания. Вне framed узел display: contents
+ * и на раскладку не влияет.
+ *
+ * Проп zoom, добавлен 2026-08-25. Кадр оборачивается кнопкой, и нажатие
+ * открывает его в полный размер через MediaZoom. Кнопка, а не ссылка и не
+ * обработчик на самой картинке: это действие на странице, а не переход, и
+ * клавиатуре нужна настоящая цель. Внутрь кликабельных обёрток такой кадр
+ * ставить нельзя — вложенная кнопка внутри ссылки даёт две цели фокуса
+ * подряд, ровно как запрещено в ds/patterns.md §FeaturedCaseCover.
+ *
  * Движение: Раскрытие (motion-reveal-media, ds/motion-concept.md §3.2).
  * Маска идёт снизу вверх, внутри изображение — встречным ходом
  * scale 1.06 → 1.0. Контр-масштаб отключается пропом counterScale:
  * медиа внутри кейса и карточки DevelopmentStrip идут без него.
  */
 import { px } from '../lib/tokens.ts';
+import { frameSize } from '../lib/media.ts';
+import { site } from '../copy/site.ts';
 
 interface Props {
   src: string;
   alt: string;
-  ratio?: 'wide' | 'portrait';
+  ratio?: 'wide' | 'portrait' | 'natural';
   /** Файл под bp-md: другой кроп, не другой размер. Только для изображений. */
   srcMobile?: string;
   /** Соотношение под bp-md. Без srcMobile перекадрирует тот же файл. */
@@ -40,6 +71,10 @@ interface Props {
   counterScale?: boolean;
   /** Отключить Раскрытие: медиа появляется вместе с блоком. */
   reveal?: boolean;
+  /** Подложка с полями, обводкой и тенью. Соотношение — 16/10, контейн вместо кропа. */
+  framed?: boolean;
+  /** Открывать кадр в полный размер по нажатию. Требует MediaZoom на маршруте. */
+  zoom?: boolean;
   class?: string;
 }
 
@@ -54,10 +89,38 @@ const {
   loading = 'lazy',
   counterScale = true,
   reveal = true,
+  framed = false,
+  zoom = false,
   class: className,
 } = Astro.props;
 
 const hasCaption = Astro.slots.has('caption');
+const zoomLabel = site.zoom.open;
+
+/**
+ * Собственные размеры кадра нужны только варианту natural. Видео своих
+ * размеров этим путём не отдаёт, и art direction их не имеет смысла читать:
+ * ниже bp-md показывается другой файл.
+ */
+const natural = ratio === 'natural' && !video ? await frameSize(src) : null;
+
+/**
+ * Обёртка кадра. Без zoom это `<div>` — нейтральный узел, который ничего не
+ * добавляет ни в дерево доступности, ни в порядок фокуса. С zoom это кнопка,
+ * приносящая диалогу адрес кадра и его описание.
+ */
+const zoomable = zoom && !video;
+const Wrapper = zoomable ? 'button' : 'div';
+const wrapperProps = zoomable
+  ? {
+      class: 'media-frame__zoom',
+      type: 'button' as const,
+      'data-zoom-trigger': true,
+      'data-zoom-src': src,
+      'data-zoom-alt': alt,
+      'aria-label': `${zoomLabel}: ${alt}`,
+    }
+  : { class: 'media-frame__zoom' };
 
 /**
  * Медиазапрос art direction — тот же bp-md, что у ступеней типографики.
@@ -75,45 +138,53 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
     'media-frame',
     `media-frame--${ratio}`,
     ratioMobile && `media-frame--mobile-${ratioMobile}`,
+    framed && 'media-frame--framed',
     className,
   ]}
   data-motion={reveal ? 'reveal-media' : undefined}
   data-motion-counter={counterScale ? undefined : 'none'}
+  style={natural ? `--media-ratio: ${natural.ratio}; --media-max: ${natural.maxWidth}` : undefined}
 >
-  <div class="media-frame__mask ds-media-mask">
-    {
-      video ? (
-        <video
-          class="media-frame__media ds-media-inner"
-          src={src}
-          poster={poster}
-          preload="none"
-          muted
-          playsinline
-          loop
-          aria-label={alt}
-        />
-      ) : srcMobile ? (
-        <picture>
-          <source media={MOBILE_MEDIA} srcset={srcMobile} />
+  <div class="media-frame__frame">
+    <Wrapper {...wrapperProps}>
+    <div class="media-frame__mask ds-media-mask">
+      {
+        video ? (
+          <video
+            class="media-frame__media ds-media-inner"
+            src={src}
+            poster={poster}
+            preload="none"
+            muted
+            playsinline
+            loop
+            aria-label={alt}
+          />
+        ) : srcMobile ? (
+          <picture>
+            <source media={MOBILE_MEDIA} srcset={srcMobile} />
+            <img
+              class="media-frame__media ds-media-inner"
+              src={src}
+              alt={alt}
+              loading={loading}
+              decoding="async"
+            />
+          </picture>
+        ) : (
           <img
             class="media-frame__media ds-media-inner"
             src={src}
             alt={alt}
+            width={natural?.width}
+            height={natural?.height}
             loading={loading}
             decoding="async"
           />
-        </picture>
-      ) : (
-        <img
-          class="media-frame__media ds-media-inner"
-          src={src}
-          alt={alt}
-          loading={loading}
-          decoding="async"
-        />
-      )
-    }
+        )
+      }
+    </div>
+    </Wrapper>
   </div>
 
   {
@@ -132,6 +203,11 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
     gap: var(--space-3);
   }
 
+  /* Вне framed узел рамки в раскладке не участвует. */
+  .media-frame__frame {
+    display: contents;
+  }
+
   .media-frame__mask {
     overflow: hidden;
     background: var(--surface-media);
@@ -146,6 +222,33 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
 
   .media-frame--portrait .media-frame__mask {
     aspect-ratio: 3 / 4;
+  }
+
+  /* Соотношение приходит из файла. Умолчание на случай, если размеры прочитать
+     не удалось: место всё равно резервируется, просто по общей пропорции. */
+  .media-frame--natural .media-frame__mask {
+    aspect-ratio: var(--media-ratio, var(--ratio-screen));
+  }
+
+  /* Кадр не растягивается крупнее, чем позволяет исходник. Фрагмент
+     интерфейса, растянутый на всю колонку, мылит и выходит крупнее по
+     масштабу, чем снимок целого экрана рядом — на одной странице получаются
+     два разных зума одного продукта. Выравнивание по левому краю: кадр,
+     который у́же колонки, встаёт в её начало, а не повисает в середине. */
+  .media-frame--natural {
+    align-items: flex-start;
+  }
+
+  .media-frame--natural .media-frame__mask {
+    inline-size: 100%;
+    max-inline-size: var(--media-max, 100%);
+  }
+
+  /* Кадр показывается целиком: бокс уже равен его пропорции, и cover срезал бы
+     разве что доли пикселя — но именно на них живут волосяные обводки
+     интерфейса, ради которых кадр и снимался. */
+  .media-frame--natural .media-frame__media {
+    object-fit: contain;
   }
 
   /* Art direction: соотношение под bp-md перебивает основное. */
@@ -170,7 +273,63 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
     object-fit: cover;
   }
 
+  /* Вне zoom обёртка в раскладке не участвует — как и узел рамки. */
+  .media-frame__zoom {
+    display: contents;
+  }
+
+  /* Кнопка сбрасывает вид контрола целиком: увеличиваемый кадр обязан
+     выглядеть кадром, а не кнопкой с картинкой внутри. Что он нажимается,
+     говорит курсор, а клавиатуре — фокус-кольцо глобального слоя. */
+  button.media-frame__zoom {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    cursor: zoom-in;
+  }
+
   .media-frame__caption {
     color: var(--text-meta);
+  }
+
+  /* ---------- Вариант framed ---------- */
+
+  /* Идёт последним намеренно: селекторы веса `.media-frame--framed
+     .media-frame__mask` и `.media-frame--wide .media-frame__mask` равны,
+     решает порядок. Соотношение рамки обязано перебивать и основное,
+     и мобильное. */
+  .media-frame--framed .media-frame__frame {
+    display: block;
+    aspect-ratio: var(--ratio-screen);
+    padding: var(--space-8);
+    background: var(--surface-subtle);
+    border: var(--border-width) solid var(--border-default);
+    border-radius: var(--radius-none);
+    box-shadow: var(--shadow-md);
+  }
+
+  @media (--bp-md) {
+    .media-frame--framed .media-frame__frame {
+      padding: var(--space-12);
+    }
+  }
+
+  /* Соотношение ушло на рамку, маска берёт остаток бокса. Место под
+     изображение резервирует подложка, поэтому свой фон маске не нужен:
+     при contain он лёг бы прямоугольником не по форме кадра. */
+  .media-frame--framed .media-frame__mask {
+    aspect-ratio: auto;
+    height: 100%;
+    background: transparent;
+  }
+
+  /* Скриншот показывается целиком: кроп срезал бы интерфейс по краям. */
+  .media-frame--framed .media-frame__media {
+    object-fit: contain;
   }
 </style>

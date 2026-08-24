@@ -22,7 +22,9 @@
  */
 import PageShell from '../layouts/PageShell.astro';
 import MediaFrame from '../components/MediaFrame.astro';
+import ScreenStack from '../components/ScreenStack.astro';
 import MetaList from '../components/MetaList.astro';
+import ProjectDialog from '../components/ProjectDialog.astro';
 import ProseBlock from '../components/ProseBlock.astro';
 import SectionHead from '../components/SectionHead.astro';
 import TextLink from '../components/TextLink.astro';
@@ -76,11 +78,8 @@ import { site } from '../copy/site.ts';
     <p class="ds-meta-xs featured__eyebrow ds-flow-eyebrow">{home.featured.eyebrow}</p>
 
     <a class="featured__link ds-pressable" href={home.featured.href} data-motion-group>
-      <MediaFrame
-        src={home.featured.cover}
-        srcMobile={home.featured.coverMobile}
-        ratio="wide"
-        ratioMobile="portrait"
+      <ScreenStack
+        screens={home.featured.cover}
         alt={home.featured.coverAlt}
         loading="eager"
         class="featured__cover"
@@ -121,8 +120,13 @@ import { site } from '../copy/site.ts';
     DevelopmentStrip. Ниже всех продуктовых блоков, заголовок заметно мельче
     заголовка WorksList — это вес блока, а не оформление (DEV-03).
     Мобильная форма — не та же карточка в другом размере, а горизонтальная
-    строка с миниатюрой: перенос десктопной сетки даёт 168% от лимита веса
-    (арифметика в ds/patterns.md §DevelopmentCard).
+    строка с миниатюрой: перенос десктопной сетки даёт 87% площади обложки
+    против лимита в четверть (арифметика в ds/patterns.md §DevelopmentCard).
+
+    Описания сборок в полосу не выложены, и это не экономия места: четыре
+    описания здесь ломают DEV-03. Они живут в ProjectDialog ниже — вес
+    страницы от них не меняется ни на пиксель. Замерено после сборки:
+    21,8% на 1440, 14,7% на 375, 16,1% на 360.
   */}
   <section class="ds-container ds-section dev">
     <div class="dev__head" data-motion-group data-motion-stagger="tight">
@@ -136,16 +140,33 @@ import { site } from '../copy/site.ts';
       {
         home.development.items.map((item) => (
           <li>
-            <a
+            {/*
+              Карточка — кнопка, а не ссылка: она открывает разбор, а не
+              уводит на сайт. Живая ссылка стоит внутри ProjectDialog —
+              вложить её сюда нельзя, это две цели фокуса подряд (запрет
+              ds/patterns.md §FeaturedCaseCover). Название кнопки собрано
+              из надписи и имени сборки: четыре «Details» подряд в списке
+              ссылок скринридера не различаются между собой.
+            */}
+            <button
               class="dev__link ds-pressable"
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              type="button"
+              data-dialog-open={`dev-${item.slug}`}
+              aria-label={`${home.development.openLabel} ${home.development.openHint} ${item.name}`}
             >
+              {/*
+                ratio=wide — вариант ДС под Webflow-сборки. Кадры сняты в
+                16:9 нормой scripts/shoot-webflow-frames.mjs: рамка ничего
+                не режет, потому что режет уже съёмка — по границе первого
+                экрана сборки, а не по краю окна. До 2026-08-25 здесь стоял
+                natural под кадры 16:10, и он прятал ошибку съёмки, а не
+                решал её. Alt пустой намеренно: описание кадра живёт в
+                разборе, а сама карточка названа целиком.
+              */}
               <MediaFrame
-                src={home.development.preview}
+                src={item.preview}
                 ratio="wide"
-                alt={`${item.name} — ${home.development.previewAlt}`}
+                alt=""
                 counterScale={false}
                 class="dev__preview"
               />
@@ -166,16 +187,39 @@ import { site } from '../copy/site.ts';
                 />
               </div>
 
-              <span class="dev__cta ds-meta-xs">
-                {home.development.liveLabel}<span aria-hidden="true"> ↗</span>
-                <span class="ds-visually-hidden">{home.development.liveHint}</span>
+              <span class="dev__cta ds-meta-xs" aria-hidden="true">
+                {home.development.openLabel}
               </span>
-            </a>
+            </button>
           </li>
         ))
       }
     </ul>
   </section>
+
+  {/*
+    Разборы сборок — по узлу на сборку, вне полосы. Стоят после секции, а не
+    внутри <ul>: showModal() уводит окно в top layer независимо от места в
+    DOM, а список из четырёх строк остаётся списком из четырёх строк.
+    Обоснование самого окна — ds/components.md §ProjectDialog.
+  */}
+  {
+    home.development.items.map((item) => (
+      <ProjectDialog
+        id={`dev-${item.slug}`}
+        title={item.name}
+        lead={item.summary}
+        body={item.body}
+        meta={[
+          { term: home.development.roleLabel, value: home.development.roleValue, tone: 'strong' },
+          { term: home.development.builtLabel, value: item.stack },
+        ]}
+        media={{ src: item.preview, alt: item.previewAlt }}
+        action={{ href: item.href, label: home.development.liveLabel }}
+        closeLabel={home.development.closeLabel}
+      />
+    ))
+  }
 
   {/* AboutShort. Портрета здесь нет: он живёт на /about и не на первом экране. */}
   <section class="ds-container ds-section about" data-motion="fade">
@@ -347,15 +391,27 @@ import { site } from '../copy/site.ts';
     flex-direction: column;
   }
 
+  /* Карточка — кнопка, и вид контрола с неё снимается целиком: она обязана
+     выглядеть карточкой, а не кнопкой с картинкой внутри. Что она
+     нажимается, говорят курсор и ds-pressable, клавиатуре — фокус-кольцо
+     глобального слоя. Ширина 100% и выравнивание влево нужны потому, что
+     кнопка по умолчанию сжимается по содержимому и центрует его. */
   .dev__link {
     display: grid;
     grid-template-columns: var(--space-16) 1fr auto;
     align-items: center;
     gap: var(--space-3);
+    width: 100%;
+    padding-inline: 0;
     padding-block: var(--space-2);
     min-height: var(--space-12);
+    border: 0;
+    background: none;
+    font: inherit;
     color: inherit;
+    text-align: start;
     text-decoration: none;
+    cursor: pointer;
   }
 
   .dev__body {

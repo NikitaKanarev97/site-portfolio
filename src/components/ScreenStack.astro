@@ -1,0 +1,177 @@
+---
+/**
+ * ScreenStack — паттерн, ds/patterns.md §ScreenStack
+ *
+ * Обложка-стопка: три кадра одного продукта друг за другом. Передний экран
+ * впереди целиком, два дальних сдвинуты вправо-вниз и приглушены — видно,
+ * что под обложкой есть ещё экраны, а не один снимок.
+ *
+ * Файл у паттерна есть по той же причине, что у ServiceRoutes и PageShell:
+ * носителей два — featured главной и CaseCover, — и геометрия у них обязана
+ * быть одна. Скопированная в два маршрута, она разошлась бы на первой правке.
+ * Сущности в каталог компонентов паттерн не добавляет.
+ *
+ * **Ни поворота, ни перспективы, ни тени.** CASE-20 запрещает подставки и
+ * наклон: экран показывается как экран. Глубину держат три вещи — сдвиг,
+ * волосяная обводка и приглушение. Тени нет и по второй причине: Раскрытие
+ * оставляет на маске clip-path: inset(0%) навсегда, а clip-path режет
+ * box-shadow — тень внутри маски пропала бы после первого проигрывания
+ * (тот же баг, из-за которого рамка framed в MediaFrame вынесена отдельным
+ * узлом).
+ *
+ * **Геометрия выведена, а не подобрана.** Сдвиг задан одной ступенью
+ * шкалы: ближний слой выступает на шаг, дальний — на два. Каждый следующий
+ * слой на тот же шаг у́же переднего, поэтому его вертикальная кромка
+ * начинается ниже верхнего края обложки — так «чуть меньше» становится
+ * видимым, хотя сам слой закрыт передним. Полем маски шаг×2 стопка
+ * укладывается в свой бокс: за пределы обложки не выходит ничего.
+ *
+ * Ниже bp-md шаг вдвое меньше. Причина арифметическая, не стилистическая:
+ * на 327 px сдвиг 24/48 съел бы 15% ширины переднего кадра, и главный
+ * экран стал бы мельче двух декоративных кромок. Та же логика, по которой
+ * DevelopmentCard меняет на мобильном структуру, а не размер.
+ *
+ * MediaFrame здесь не используется, и это не обход каталога. Раскрытие
+ * ищет маску первым .ds-media-mask внутри узла: вложенный MediaFrame отдал
+ * бы свою собственную маску, и раскрывался бы один передний кадр вместо
+ * стопки. Дальние кадры при этом декоративны — им не нужны ни figure, ни
+ * alt, ни подпись, ни art direction, то есть почти ничего из того, что
+ * MediaFrame даёт.
+ *
+ * Движение: Раскрытие (motion-reveal-media, ds/motion-concept.md §3.2)
+ * маской по всей стопке, внутри передний кадр идёт встречным ходом
+ * scale 1.06 → 1.0.
+ */
+interface Props {
+  /** Ровно три кадра одного продукта, от переднего к дальнему. */
+  screens: string[];
+  /** Осмысленный alt переднего кадра. Два дальних декоративны. */
+  alt: string;
+  /** Загрузка переднего кадра. Дальние всегда ленивые — они декоративны. */
+  loading?: 'lazy' | 'eager';
+  /** Контр-масштаб внутри маски. Полный такт — у обложки DSSL. */
+  counterScale?: boolean;
+  /** Отключить Раскрытие: стопка появляется вместе с блоком. */
+  reveal?: boolean;
+  class?: string;
+}
+
+const {
+  screens,
+  alt,
+  loading = 'lazy',
+  counterScale = true,
+  reveal = true,
+  class: className,
+} = Astro.props;
+
+/**
+ * Число слоёв — часть геометрии, а не свободный параметр: поле маски,
+ * ширины дальних слоёв и две ступени приглушения выведены из трёх.
+ * Молча собрать стопку из двух или четырёх кадров нельзя, поэтому
+ * несоответствие ломает сборку, а не вёрстку.
+ */
+if (screens.length !== 3) {
+  throw new Error(
+    `ScreenStack: ожидается ровно три кадра, получено ${screens.length}. ` +
+      'Состав стопки — ds/patterns.md §ScreenStack.',
+  );
+}
+
+const [front, near, far] = screens;
+---
+
+<div
+  class:list={['screen-stack', className]}
+  data-motion={reveal ? 'reveal-media' : undefined}
+  data-motion-counter={counterScale ? undefined : 'none'}
+>
+  {/* Порядок узлов — порядок глубины: передний кадр идёт последним и ложится
+      поверх без z-index. */}
+  <div class="screen-stack__mask ds-media-mask">
+    <div class="screen-stack__layer screen-stack__layer--far" aria-hidden="true">
+      <img class="screen-stack__media" src={far} alt="" loading="lazy" decoding="async" />
+    </div>
+
+    <div class="screen-stack__layer screen-stack__layer--near" aria-hidden="true">
+      <img class="screen-stack__media" src={near} alt="" loading="lazy" decoding="async" />
+    </div>
+
+    <div class="screen-stack__layer screen-stack__layer--front">
+      <img
+        class="screen-stack__media ds-media-inner"
+        src={front}
+        alt={alt}
+        loading={loading}
+        decoding="async"
+      />
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Один шаг на всю стопку: ближний слой выступает на шаг, дальний на два.
+     Держать два независимых числа значило бы разрешить им разойтись. */
+  .screen-stack {
+    --stack-step: var(--space-3);
+  }
+
+  @media (--bp-md) {
+    .screen-stack {
+      --stack-step: var(--space-6);
+    }
+  }
+
+  /* Поле маски держит вынос дальнего слоя: стопка не выходит за свой бокс,
+     и соседям по потоку не приходится знать, что внутри три кадра. */
+  .screen-stack__mask {
+    position: relative;
+    padding-inline-end: calc(var(--stack-step) * 2);
+    padding-block-end: calc(var(--stack-step) * 2);
+  }
+
+  /* Соотношение задаёт сам слой, поэтому место под кадр занято до загрузки:
+     раскрытие не дёргает вёрстку и не рушит CLS. Обводка волосяная, одна на
+     все три слоя — она и есть граница между экранами. */
+  .screen-stack__layer {
+    overflow: hidden;
+    aspect-ratio: var(--ratio-screen);
+    background: var(--surface-media);
+    border: var(--border-width) solid var(--border-default);
+    border-radius: var(--radius-none);
+  }
+
+  /* Передний кадр — в потоке: он задаёт размер всей стопки. */
+  .screen-stack__layer--front {
+    position: relative;
+  }
+
+  /* Дальние слои привязаны правым нижним углом: выступ равен сдвигу ровно,
+     без зависимости от ширины обложки. Ширина каждого меньше переднего на
+     тот же шаг — отсюда «чуть меньше», видимое по верхнему концу кромки. */
+  .screen-stack__layer--near,
+  .screen-stack__layer--far {
+    position: absolute;
+  }
+
+  .screen-stack__layer--near {
+    inset-inline-end: var(--stack-step);
+    inset-block-end: var(--stack-step);
+    width: calc(100% - var(--stack-step) * 5);
+    opacity: var(--stack-dim-near);
+  }
+
+  .screen-stack__layer--far {
+    inset-inline-end: 0;
+    inset-block-end: 0;
+    width: calc(100% - var(--stack-step) * 8);
+    opacity: var(--stack-dim-far);
+  }
+
+  .screen-stack__media {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
