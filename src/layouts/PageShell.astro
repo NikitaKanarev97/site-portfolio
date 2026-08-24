@@ -27,7 +27,9 @@
  * 327 px даёт рваный левый край на каждой строке, а две цели в ряд —
  * маленькие зоны нажатия рядом, где промах ведёт не туда, куда целился.
  *
- * Тексты приходят из src/copy/site.ts, композиция их не держит.
+ * Тексты приходят из src/copy/site.ts, композиция их не держит. Ведущая
+ * строка ContactBlock — проп со сквозным умолчанием: маршрут передаёт свою,
+ * когда сквозная на нём неверна (ds/screens/about.md §ContactBlock).
  */
 import BaseLayout from './BaseLayout.astro';
 import SectionHead from '../components/SectionHead.astro';
@@ -48,6 +50,14 @@ interface Props {
   nav?: boolean;
   /** ContactBlock. Стоит на всех трёх маршрутах продукта (IA-06). */
   contact?: boolean;
+  /**
+   * Ведущая строка ContactBlock. Умолчание сквозное; маршрут передаёт свою,
+   * когда сквозная на нём неверна — на /about это «if the case above
+   * answered your question», а кейса выше там нет. IA-06 требует, чтобы
+   * блок стоял на всех маршрутах в одинаковом ВИДЕ: состав, порядок и вес
+   * от пропа не меняются, меняется одно предложение.
+   */
+  contactLead?: string;
   /** Движение. 404 идёт без него вовсе (ds/motion-concept.md §7). */
   motion?: boolean;
 }
@@ -60,6 +70,7 @@ const {
   current,
   nav = true,
   contact = true,
+  contactLead = site.contact.lead,
   motion = true,
 } = Astro.props;
 ---
@@ -86,7 +97,7 @@ const {
         </SectionHead>
 
         <ProseBlock motion={false} class="contact__lead">
-          <p>{site.contact.lead}</p>
+          <p>{contactLead}</p>
         </ProseBlock>
 
         <CopyEmail email={site.contact.email} appearance="address" class="contact__email" />
@@ -116,11 +127,16 @@ const {
 </BaseLayout>
 
 <style>
-  .contact__lead {
+  /* :global обязателен: корни ProseBlock и CopyEmail несут собственный
+     data-astro-cid, скоуп оболочки до них не достаёт, и правило молча не
+     применяется. Найдено при сборке About 2026-08-24 — правило общее для
+     любого корня компонента, не только для ссылок (ds/components.md
+     §Реализация). Без него блок шёл без обоих отступов на всех маршрутах. */
+  .contact > :global(.contact__lead) {
     margin-bottom: var(--space-12);
   }
 
-  .contact__email {
+  .contact > :global(.contact__email) {
     margin-bottom: var(--space-8);
   }
 
@@ -151,12 +167,12 @@ const {
     }
 
     /* Мера колонки остаётся, центрируется сам блок. */
-    .contact .contact__lead {
+    .contact > :global(.contact__lead) {
       margin-inline: auto;
     }
 
     /* Перебивает align-items: flex-start из самого CopyEmail. */
-    .contact .contact__email {
+    .contact > :global(.contact__email) {
       align-items: center;
     }
 

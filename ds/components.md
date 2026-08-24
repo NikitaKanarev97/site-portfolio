@@ -212,15 +212,15 @@
 
 | Компонент | Экраны |
 |---|---|
-| `Navbar` | `screens/home` · `screens/case-dssl` |
-| `TextLink` | `screens/home` · `screens/case-dssl` |
-| `CopyEmail` | `screens/home` · `screens/case-dssl` |
-| `MediaFrame` | `screens/home` · `screens/case-dssl` |
+| `Navbar` | `screens/home` · `screens/case-dssl` · `screens/about` |
+| `TextLink` | `screens/home` · `screens/case-dssl` · `screens/about` — оболочечное |
+| `CopyEmail` | `screens/home` · `screens/case-dssl` · `screens/about` — оболочечное |
+| `MediaFrame` | `screens/home` · `screens/case-dssl` · `screens/about` — портрет |
 | `WorkRow` | `screens/home` |
 | `MetaList` | `screens/home` · `screens/case-dssl` |
-| `SectionHead` | `screens/home` · `screens/case-dssl` |
-| `ProseBlock` | `screens/home` · `screens/case-dssl` |
-| `Footer` | `screens/home` · `screens/case-dssl` |
+| `SectionHead` | `screens/home` · `screens/case-dssl` · `screens/about` |
+| `ProseBlock` | `screens/home` · `screens/case-dssl` · `screens/about` — четыре носителя |
+| `Footer` | `screens/home` · `screens/case-dssl` · `screens/about` |
 | `NoteBlock` | `screens/case-dssl` — все три варианта |
 | `DecisionBlock` | `screens/case-dssl` — четыре носителя |
 
@@ -248,5 +248,15 @@
 | Экраны | `src/pages/` — боевые маршруты. Composition map каждого — `ds/screens/<name>.md` |
 
 **Зеркала обязаны совпадать побайтово.** `ds/tokens.css` → `src/styles/tokens.css`, `ds/motion.js` → `src/scripts/motion.js`. Правка идёт в `ds/`, копия обновляется тем же коммитом. Расхождение — баг, проверяется `diff`.
+
+**Экран не достаёт до корня компонента без `:global()`. Правило общее, найдено расширенным при сборке About 2026-08-24.**
+
+Astro скоупит стили страницы атрибутом `data-astro-cid-<хеш>` и ставит его только на элементы **её собственного** шаблона. Корень любого компонента несёт хеш **своего** файла, поэтому правило страницы вида `.мой-класс { … }` компилируется в `.мой-класс[data-astro-cid-страницы]` и не совпадает ни с чем. Оно не падает и не предупреждает — оно молча не применяется.
+
+Это свойство **любого** компонента с пропом `class`, а не только `TextLink` и `CopyEmail`, как было записано после прогона Home. Носители те же самые: `MediaFrame`, `ProseBlock`, `MetaList`, `SectionHead`, `NoteBlock`, `DecisionBlock`.
+
+- Пишется через родителя из шаблона страницы: `.секция > :global(.мой-класс) { … }`. Родитель несёт хеш страницы, потомок берётся глобально.
+- Проверяется в собранном HTML, а не на глаз: селектор в CSS и атрибут на элементе должны сойтись.
+- **Открытый долг:** на `Home` и в `PageShell` этим правилом задеты семь отступов — они не применяются с первой сборки. Разбор и решение — `ds/screens/about.md` §«Найдено при сборке».
 
 **Как компонент объявляет движение.** Компоненты анимаций не пишут: они ставят атрибут, хореографию ведёт `animations.js`. Словарь атрибутов — в шапке того же файла: `data-motion` (`reveal-text` · `reveal-media` · `fade` · `rise`), `data-motion-intro`, `data-motion-at`, `data-motion-group`, `data-motion-stagger`, `data-motion-counter`. Строка и Состояние (`motion-hover`, `motion-state`) исполняются CSS-переходами внутри компонентов — это ровно те два смысла, которые CSS умеет сам.

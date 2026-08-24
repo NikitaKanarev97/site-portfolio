@@ -1,0 +1,158 @@
+---
+/**
+ * About — Site-portfolio, маршрут /about
+ *
+ * Composition map: ds/screens/about.md, редакция 2, апрувнута 2026-08-24.
+ * Вайрфрейм: ia/wireframes/about.md. Блок авторизации — дословно из
+ * ia/authorization-copy.md, решение владельца №1.
+ *
+ * Экран не изобретает сущностей: всё из каталога ds/components.md и
+ * паттернов ds/patterns.md. Тексты — src/copy/about.ts, сквозные —
+ * src/copy/site.ts. Оболочка, ContactBlock и Footer — PageShell.
+ *
+ * Порядок блоков — предмет проектирования, а не вкуса. Портрет стоит НИЖЕ
+ * линии сгиба: первый экран несёт текст, и текст обязан работать сам, а не
+ * как подпись к фотографии. Право на работу идёт сразу за портретом — за
+ * развёрнутым ответом на формальный фильтр сюда и приходят.
+ *
+ * Движение — карта ds/motion-concept.md §7. Вступительного такта на этом
+ * маршруте нет вовсе: он живёт только на Hero главной (§5, §7), прямой
+ * вход отдаёт конечное состояние. Анимаций здесь нет — экран объявляет
+ * движение атрибутами.
+ */
+import PageShell from '../layouts/PageShell.astro';
+import MediaFrame from '../components/MediaFrame.astro';
+import ProseBlock from '../components/ProseBlock.astro';
+import SectionHead from '../components/SectionHead.astro';
+import { about } from '../copy/about.ts';
+---
+
+<PageShell
+  title={about.meta.title}
+  description={about.meta.description}
+  current="/about"
+  contactLead={about.contactLead}
+>
+  {/*
+    AboutIntro, текстовая часть. Один каскад из трёх участников: заголовок
+    и ведущий абзац — Набор, три абзаца — opacity целым блоком. Три
+    отдельных ProseBlock дали бы три меры и три такта на одном пороге.
+  */}
+  <section class="ds-container ds-section intro" data-motion-group data-motion-stagger="tight">
+    <h1 class="ds-heading-4xl intro__heading" data-motion="reveal-text">{about.intro.heading}</h1>
+
+    <ProseBlock variant="lead" class="intro__lead">
+      <p>{about.intro.lead}</p>
+    </ProseBlock>
+
+    <ProseBlock class="intro__body">
+      {about.intro.body.map((paragraph) => <p>{paragraph}</p>)}
+    </ProseBlock>
+  </section>
+
+  {/*
+    AboutIntro, портрет. Одна фотография, не галерея: она подтверждает, что
+    за текстом человек, а не несёт смысл. Подписи нет — решение владельца.
+    Ширина выведена из токена меры, а не прибита числом.
+  */}
+  <section class="ds-container portrait">
+    <MediaFrame
+      src={about.portrait.src}
+      alt={about.portrait.alt}
+      ratio="portrait"
+      counterScale={false}
+      class="portrait__frame"
+    />
+  </section>
+
+  {/*
+    Здесь место AboutExperience — годы практики и тип опыта (SCR-05).
+    Блок ждёт решения владельца №3 (ia/open-questions.md §3) и в v1 не
+    рисуется, а не рисуется пустым. Место именно тут, а не ниже: годы
+    практики отвечают на тот же формальный фильтр, что и право на работу,
+    и читаются одним заходом. Когда решение будет «указывать» — сюда
+    встаёт SectionHead size="sm" + ProseBlock, всё ниже сдвигается,
+    порядок блоков не меняется.
+  */}
+
+  {/*
+    AboutAuthorization. Текст дословно из ia/authorization-copy.md: порядок
+    фактов внутри абзаца зафиксирован, подача — одна траектория, а не
+    перечисление вариантов через «или». NoteBlock здесь не стоит намеренно:
+    рамка и метка читаются как оговорка, а это не оговорка, а факт.
+  */}
+  <section class="ds-container ds-section authorization" data-motion-group data-motion-stagger="tight">
+    <SectionHead size="lg">{about.authorization.heading}</SectionHead>
+
+    <ProseBlock>
+      <p>{about.authorization.body}</p>
+    </ProseBlock>
+  </section>
+
+  {/*
+    AboutAI. Блок фактический, а не декларативный: названные этапы
+    проверяемы, «использую ИИ как инструмент» — заполнитель. Позиции «за»
+    или «против» нет ни в одном абзаце.
+  */}
+  <section class="ds-container ds-section ai" data-motion-group data-motion-stagger="tight">
+    <SectionHead size="lg">{about.ai.heading}</SectionHead>
+
+    <ProseBlock>
+      {about.ai.body.map((paragraph) => <p>{paragraph}</p>)}
+    </ProseBlock>
+  </section>
+</PageShell>
+
+<style>
+  /* ---------------------------------------------------------------- *
+   * AboutIntro — текст                                                *
+   * ---------------------------------------------------------------- */
+
+  .intro__heading {
+    color: var(--text-default);
+    margin-bottom: var(--space-8);
+  }
+
+  /* :global обязателен: корень ProseBlock несёт собственный data-astro-cid,
+     скоуп страницы до него не достаёт, и правило молча не применяется.
+     Та же ловушка, что найдена живым прогоном Home на TextLink и CopyEmail
+     (ds/components.md §TextLink) — она свойство любого корня компонента,
+     не только ссылки. */
+  .intro > :global(.intro__lead) {
+    margin-bottom: var(--space-12);
+  }
+
+  /* ---------------------------------------------------------------- *
+   * AboutIntro — портрет                                              *
+   * ---------------------------------------------------------------- */
+
+  /* Своя вертикаль вместо ds-section: сверху отступ меньше, чем между
+     секциями, — портрет принадлежит блоку выше, а не стоит отдельно.
+     Снизу полный шаг, потому что дальше начинается другой разговор. */
+  .portrait {
+    padding-block-end: var(--space-24);
+  }
+
+  /* Мобильная раскладка базовая: кадр во всю ширину контейнера, никаких
+     ограничений. Десктопное надстраивается. */
+  @media (min-width: 768px) {
+    .portrait {
+      padding-block-end: var(--space-32);
+    }
+
+    /* Не на всю ширину и не по центру: половина колонки чтения, по левому
+       краю. Число не прибито — ширина выведена из токена меры и поедет
+       вместе с ним. :global по той же причине: корень MediaFrame — figure
+       с собственным data-astro-cid. */
+    .portrait > :global(.portrait__frame) {
+      max-width: calc(var(--measure-text) / 2);
+    }
+  }
+
+  /* ---------------------------------------------------------------- *
+   * AboutAuthorization и AboutAI                                      *
+   * ---------------------------------------------------------------- */
+
+  /* Оба блока — заголовок и колонка текста, одинаковая пара. SectionHead
+     size=lg несёт собственный нижний отступ, добавлять свой нечего. */
+</style>
