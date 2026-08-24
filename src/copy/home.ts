@@ -17,7 +17,7 @@
  * не присваивается изменяемому типу. Точечно менять сигнатуры компонентов
  * ради формы файла текстов не стоит.
  */
-import { TODO_NAME } from './site.ts';
+import { NAME } from './site.ts';
 
 /**
  * Не подтверждено владельцем: URL взяты из PROJECT.md §Референсы, где те же
@@ -33,13 +33,13 @@ const TODO_WEBFLOW = {
 
 export const home = {
   meta: {
-    title: `${TODO_NAME} — Product Designer`,
+    title: `${NAME} — Product Designer`,
     description:
       'Product designer working on B2B products where the hard part is the constraint, not the canvas. Based in Kazakhstan, open to relocation.',
   },
 
   hero: {
-    name: TODO_NAME,
+    name: NAME,
     role: 'Product Designer',
     specialization:
       'I design B2B products where the hard part is the constraint, not the canvas — legacy systems, several roles on one dataset, decisions with a real price.',

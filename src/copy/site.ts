@@ -21,15 +21,20 @@
  * не умолчаниями.
  */
 
-/** Не подтверждено владельцем: в артефактах проекта имя не зафиксировано. */
-export const TODO_NAME = '[Имя Фамилия]';
-/** Не подтверждено владельцем: email в артефактах отсутствует. */
-export const TODO_EMAIL = 'hello@example.com';
-/** Не подтверждено владельцем: URL LinkedIn в артефактах отсутствует. */
-export const TODO_LINKEDIN = 'https://www.linkedin.com/in/example';
+/**
+ * Личные данные владельца. Подтверждены им 24.08.2026 — до этого стояли
+ * заглушками `TODO_*`. В артефактах проекта их нет, источник только
+ * владелец, поэтому правка идёт здесь и нигде больше.
+ *
+ * EMAIL — отдельный рабочий адрес для найма, не адрес личного аккаунта.
+ * Он же стоит в шапке CV: cv/build.mjs §CONTACTS. Правятся оба места.
+ */
+export const NAME = 'Nikita Kanarev';
+export const EMAIL = 'nikita.kanarev.dev@outlook.com';
+export const LINKEDIN = 'https://www.linkedin.com/in/nikita-kanarev-92b34a34b/';
 
 export const site = {
-  brand: TODO_NAME,
+  brand: NAME,
   /** Три пункта, не четыре: Development появляется вместе с /development в v1.1. */
   nav: [
     { label: 'Work', href: '/#work' },
@@ -40,9 +45,9 @@ export const site = {
     /** ia/wireframes/home.md §ContactBlock */
     heading: "Let's talk",
     lead: 'If the case above answered your question — or raised one.',
-    email: TODO_EMAIL,
+    email: EMAIL,
     links: [
-      { label: 'LinkedIn', href: TODO_LINKEDIN, external: true },
+      { label: 'LinkedIn', href: LINKEDIN, external: true },
       { label: 'CV (PDF)', href: '/cv.pdf', external: false },
     ],
   },

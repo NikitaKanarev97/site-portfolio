@@ -36,11 +36,11 @@
  *
  * v1.0 выходит на английском. Сквозные строки — в site.ts.
  */
-import { TODO_NAME } from './site.ts';
+import { NAME } from './site.ts';
 
 export const about = {
   meta: {
-    title: `${TODO_NAME} — How I work`,
+    title: `${NAME} — How I work`,
     description:
       'How I work inside constraints I did not set, what I do with the parts that did not work, and where AI sits in the process. Work authorization in full.',
   },
@@ -73,7 +73,7 @@ export const about = {
    */
   portrait: {
     src: '/media/about/portrait.webp',
-    alt: `${TODO_NAME} — head-and-shoulders portrait against a plain background`,
+    alt: `${NAME} — head-and-shoulders portrait against a plain background`,
   },
 
   /**

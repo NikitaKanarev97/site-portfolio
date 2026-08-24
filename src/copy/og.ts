@@ -16,7 +16,7 @@
  * og:image не разворачивают. 1200×630 — размер, который все три сети
  * (LinkedIn, X, Telegram) кропают одинаково.
  */
-import { site, TODO_NAME } from './site.ts';
+import { site, NAME } from './site.ts';
 import { home } from './home.ts';
 import { about } from './about.ts';
 import { cases } from './cases/index.ts';
@@ -36,13 +36,13 @@ export interface OgCard {
 }
 
 /** Подпись автора, общая для всех карточек, кроме главной. */
-const BYLINE = `${TODO_NAME} — Product Designer`;
+const BYLINE = `${NAME} — Product Designer`;
 
 export const OG_CARDS: readonly OgCard[] = [
   {
     id: 'default',
     eyebrow: 'Portfolio',
-    title: TODO_NAME,
+    title: NAME,
     footnote: `${home.hero.role} · ${site.footer.location}, open to relocation`,
   },
   {

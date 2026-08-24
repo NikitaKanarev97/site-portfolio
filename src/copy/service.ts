@@ -15,7 +15,7 @@
  * (`ia/screens-inventory.md` №31, №34), и расходиться им не в чем: разное
  * у них только объяснение, что произошло.
  */
-import { TODO_NAME } from './site.ts';
+import { NAME } from './site.ts';
 
 export interface ServiceRoute {
   label: string;
@@ -46,7 +46,7 @@ export const serviceRoutes: readonly ServiceRoute[] = [
 
 export const notFound = {
   meta: {
-    title: `Page not found — ${TODO_NAME}`,
+    title: `Page not found — ${NAME}`,
     description:
       'This address does not exist on the site. The four pages that do are listed here: home, the case, about, and the CV.',
   },
@@ -67,7 +67,7 @@ export const notFound = {
 
 export const serverError = {
   meta: {
-    title: `Server error — ${TODO_NAME}`,
+    title: `Server error — ${NAME}`,
     description:
       'The page did not load — that is the server, not you. The four pages of the site are listed here.',
   },
@@ -107,7 +107,7 @@ export const serverError = {
  */
 export const ru = {
   meta: {
-    title: `${TODO_NAME} — продуктовый дизайнер`,
+    title: `${NAME} — продуктовый дизайнер`,
     description:
       'Продуктовый дизайнер B2B-продуктов: легаси-системы, несколько ролей на одних данных, решения с реальной ценой. Казахстан, готов к релокации. Полная версия сайта — на английском.',
   },

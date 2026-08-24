@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nikita Kanarev — Product Designer — CV</title>
+<style>
+@font-face{font-family:"Manrope";src:url(__FONT_SANS__) format("woff2");font-weight:200 800;font-style:normal;font-display:block}
+@font-face{font-family:"JetBrains Mono";src:url(__FONT_MONO__) format("woff2");font-weight:100 800;font-style:normal;font-display:block}
+
+:root{
+  --ink:#1B1B18; --subtle:#53534C; --muted:#6E6E67;
+  --rule:#E1E1DC; --rule-soft:#EFEFEC; --paper:#FFFFFF; --wash:#F7F7F5;
+  --accent:#C1440E;
+  --sans:"Manrope",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:var(--sans);color:var(--ink);background:var(--wash);font-weight:400;
+     -webkit-font-smoothing:antialiased}
+
+@page{size:A4;margin:0}
+
+.sheet{
+  width:210mm;height:297mm;background:var(--paper);
+  padding:14mm 16mm 11mm;position:relative;overflow:hidden;
+  display:flex;flex-direction:column;
+}
+.sheet + .sheet{page-break-before:always}
+
+/* ---------- header ---------- */
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:10mm}
+.name{font-size:29pt;font-weight:800;letter-spacing:-0.022em;line-height:1.0}
+.role{margin-top:2.6mm;font-size:11.5pt;font-weight:500;color:var(--subtle);letter-spacing:-0.005em}
+.role b{color:var(--ink);font-weight:700}
+
+.contacts{font-family:var(--mono);font-size:7.6pt;line-height:1.9;text-align:right;
+          color:var(--subtle);white-space:nowrap}
+.contacts a{color:var(--ink);text-decoration:none;border-bottom:.4pt solid var(--rule)}
+.contacts .k{color:var(--muted);letter-spacing:.04em}
+
+.rule{height:.7pt;background:var(--ink);margin-top:5.5mm}
+
+/* ---------- summary ---------- */
+.summary{margin-top:4.4mm;font-size:9.9pt;line-height:1.55;color:var(--subtle)}
+.summary strong{color:var(--ink);font-weight:600}
+
+/* ---------- sections ---------- */
+.sec{display:grid;grid-template-columns:26mm 1fr;gap:0 7mm;
+     border-top:.4pt solid var(--rule);padding-top:3.4mm;margin-top:4.2mm}
+.sec--open{border-top:0;margin-top:0;padding-top:0}
+.sec h2{font-family:var(--mono);font-size:7.6pt;font-weight:500;letter-spacing:.09em;
+        line-height:1.5;text-transform:uppercase;color:var(--muted);padding-top:.6mm}
+
+.entry{break-inside:avoid}
+.entry + .entry{margin-top:3.2mm;padding-top:3.2mm;border-top:.4pt solid var(--rule-soft)}
+.entry-head{display:flex;justify-content:space-between;align-items:baseline;gap:6mm}
+.entry-title{font-size:10.6pt;font-weight:700;letter-spacing:-0.008em;line-height:1.25}
+.entry-title span{font-weight:500;color:var(--subtle)}
+.entry-when{font-family:var(--mono);font-size:7.6pt;color:var(--muted);white-space:nowrap;letter-spacing:.01em}
+.entry-sub{margin-top:1.2mm;font-size:8.9pt;color:var(--muted);line-height:1.48}
+
+ul{list-style:none;margin-top:2.2mm}
+li{position:relative;padding-left:4.4mm;font-size:9.4pt;line-height:1.52;color:var(--subtle);
+   margin-top:1.6mm;break-inside:avoid}
+li::before{content:"";position:absolute;left:0;top:1.6mm;width:2mm;height:.6mm;background:var(--accent)}
+li strong{color:var(--ink);font-weight:600}
+
+.note{margin-top:2.4mm;font-family:var(--mono);font-size:7.4pt;line-height:1.62;color:var(--muted);
+      border-left:.5pt solid var(--rule);padding-left:3mm}
+
+/* method */
+.method{display:grid;grid-template-columns:1fr 1fr;gap:4.4mm 7mm}
+.m-item{break-inside:avoid}
+.m-k{font-size:9.6pt;font-weight:700;letter-spacing:-0.006em}
+.m-v{margin-top:1mm;font-size:9.1pt;line-height:1.5;color:var(--subtle)}
+
+/* skills */
+.skill{display:grid;grid-template-columns:20mm 1fr;gap:0 5mm;font-size:9.3pt;line-height:1.5}
+.skill + .skill{margin-top:2.6mm}
+.skill dt{font-family:var(--mono);font-size:7.5pt;letter-spacing:.05em;text-transform:uppercase;
+          color:var(--muted);padding-top:.9mm}
+.skill dd{color:var(--subtle)}
+
+/* education */
+.edu{display:flex;justify-content:space-between;align-items:baseline;gap:6mm;font-size:9.4pt;line-height:1.45}
+.edu + .edu{margin-top:2.4mm;padding-top:2.4mm;border-top:.4pt solid var(--rule-soft)}
+.edu-k{font-weight:600;color:var(--ink)}
+.edu-k span{font-weight:400;color:var(--subtle)}
+.edu-w{font-family:var(--mono);font-size:7.6pt;color:var(--muted);white-space:nowrap}
+
+/* availability */
+.push{margin-top:auto}
+.auth{background:var(--wash);padding:4.6mm 5mm;break-inside:avoid}
+.auth p{font-size:9.3pt;line-height:1.55;color:var(--subtle)}
+.auth p strong{color:var(--ink);font-weight:600}
+.auth p + p{margin-top:2.2mm}
+.auth .lang{margin-top:2.8mm;font-family:var(--mono);font-size:7.6pt;color:var(--muted);letter-spacing:.02em}
+
+/* footer */
+.foot{padding-top:3mm;border-top:.4pt solid var(--rule);
+      display:flex;justify-content:space-between;
+      font-family:var(--mono);font-size:7.2pt;color:var(--muted);letter-spacing:.03em}
+.foot--anchor{margin-top:auto}
+.accent{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1 ================= -->
+<section class="sheet">
+
+  <header class="head">
+    <div>
+      <h1 class="name">Nikita Kanarev</h1>
+      <p class="role"><b>Product Designer</b> — B2B products, complex workflows, design systems</p>
+    </div>
+    <div class="contacts">
+      <div><span class="k">E</span>&nbsp;&nbsp;<a href="mailto:__EMAIL__">__EMAIL__</a></div>
+      <div><span class="k">in</span>&nbsp;&nbsp;<a href="__LINKEDIN_URL__">__LINKEDIN__</a></div>
+      <div><span class="k">TG</span>&nbsp;&nbsp;<a href="__TELEGRAM_URL__">__TELEGRAM__</a></div>
+      <div><span class="k">@</span>&nbsp;&nbsp;Kazakhstan · UTC+5 · open to relocation</div>
+    </div>
+  </header>
+
+  <div class="rule"></div>
+
+  <p class="summary">
+    I design <strong>B2B products where the hard part is the constraint, not the canvas</strong> — legacy systems
+    nobody is going to replace, several roles working on one dataset, decisions that carry a real price. For nearly
+    three years I was <strong>the only designer in a product team of six to ten</strong>, holding three products at
+    once: a partner portal for professional integrators, an internal video learning platform, and the corporate site.
+    I reframe the task before designing it, run my own research, and take the work through to a design system and
+    shipped code.
+  </p>
+
+  <section class="sec">
+    <h2>Experience</h2>
+    <div>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title">Product Designer <span>— DSSL</span></h3>
+          <span class="entry-when">Sep 2023 — Mar 2026 · Remote</span>
+        </div>
+        <p class="entry-sub">Distributor of professional video-surveillance equipment. Sole designer in a product team
+          of six to ten — frontend, backend, a product manager, QA and the team lead — across three products, and
+          present at every stage of each: research, information architecture, flows, prototypes, design system, handoff
+          and QA. One designer on three products mostly meant deciding, every week, what would not get designed.</p>
+        <ul>
+          <li><strong>B2B partner portal — reframed around the specification, not the catalogue.</strong> The brief
+            asked for a modern interface; the unit of work behind it was a shop's, not a buyer's. An imported purchase
+            line now keeps its provenance — source file, row number, original text, original quantity — from
+            spreadsheet to placed order, so a disputed delivery six weeks later can still point back at it. Redesigned
+            end to end, every page shipped, on top of a pricing and stock system that was never going to be
+            replaced.</li>
+          <li><strong>Owned the design system behind it</strong> — a generic layer plus the domain components the
+            product's argument lives in: procurement tables, resolution rows, price and availability blocks,
+            fulfillment plans. Variant coverage checked by script, not by eye — and nothing was drawn before an audit
+            of the old portal, one cognitive walkthrough per screen.</li>
+          <li><strong>Internal learning platform — both sides of it.</strong> The company records video courses about
+            its own equipment and trains its staff on them. I designed the learner's side — course catalogue, lesson
+            page with the video player, progress, tests and certificates — and the authoring side, where the team
+            uploads footage and assembles a course, plus the responsive version people actually watch on.</li>
+          <li><strong>Corporate site — new sections and product landings</strong> for equipment launches, designed to
+            hold together with the rest of the site instead of accumulating as one-off pages.</li>
+          <li><strong>Said no to automation the data could not back.</strong> An ambiguous purchase line is never
+            resolved on the buyer's behalf, however confident the match: compatibility rules for this equipment are not
+            formalised anywhere I could verify, and automating a check that does not exist moves the risk of a wrong
+            delivery onto the buyer — on site, with a crew already there.</li>
+        </ul>
+        <p class="note">Business results are covered by an NDA and are not published. What I bring to the conversation
+          instead is the compromise stated in full: what the design achieved, what it cost, and who now does more
+          work than before.</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title">Product &amp; web design <span>— independent projects</span></h3>
+          <span class="entry-when">Jan 2023 — 2026</span>
+        </div>
+        <p class="entry-sub">Client and self-directed work — full-time until autumn 2023, alongside the role above after that.</p>
+        <ul>
+          <li>Products taken end to end on my own — a DTC e-commerce brand with a product configurator, a mobile
+            marketplace, a desktop B2B SaaS: research, PRD, information architecture, design system, screens, code.</li>
+          <li>Four production Webflow builds to designs supplied by others — build only, not my design authorship.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <footer class="foot foot--anchor">
+    <span>Nikita Kanarev — Product Designer</span>
+    <span><span class="accent">·</span>&nbsp; 1 / 2</span>
+  </footer>
+</section>
+
+<!-- ================= PAGE 2 ================= -->
+<section class="sheet">
+
+  <section class="sec sec--open">
+    <h2>How I work</h2>
+    <div class="method">
+      <div class="m-item">
+        <p class="m-k">Reframe before designing</p>
+        <p class="m-v">Most briefs describe a solution someone already picked. The useful work starts when we go back
+          to what the actual problem was.</p>
+      </div>
+      <div class="m-item">
+        <p class="m-k">Constraints are the material</p>
+        <p class="m-v">A limit that has survived for years is usually load-bearing. I find out what it holds up before
+          asking for it to be lifted.</p>
+      </div>
+      <div class="m-item">
+        <p class="m-k">Evidence before opinion</p>
+        <p class="m-v">There was no researcher on the team, so the research was mine. What a screen cannot prove gets
+          recorded as unconfirmed, not counted as a defect.</p>
+      </div>
+      <div class="m-item">
+        <p class="m-k">Name the trade-off</p>
+        <p class="m-v">Every decision I ship carries its cost stated out loud — who now does more work, and what would
+          have to change to remove it.</p>
+      </div>
+      <div class="m-item">
+        <p class="m-k">Write down what did not work</p>
+        <p class="m-v">The order a project runs in is a design decision like any other. Where I got that order wrong is
+          the part of a write-up that is hard to fake.</p>
+      </div>
+      <div class="m-item">
+        <p class="m-k">AI across the pipeline</p>
+        <p class="m-v">Several models, picked per step, from the first interview to QA on a built prototype. It drafts
+          and it finds; it does not decide.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>Skills</h2>
+    <dl>
+      <div class="skill"><dt>Product</dt><dd>Discovery and problem reframing · PRD · information architecture and user
+        flows · scenarios · scope prioritisation (MoSCoW) · design systems and tokens · component matrices and variant
+        coverage · accessibility to WCAG&nbsp;2.2&nbsp;AA</dd></div>
+      <div class="skill"><dt>Research</dt><dd>Competitive and market analysis · personas · usability audit (Nielsen
+        heuristics, cognitive walkthrough) · scenario testing on built prototypes</dd></div>
+      <div class="skill"><dt>Craft</dt><dd>Figma · Storybook · motion design and choreography (GSAP) · desktop-first
+        B2B interfaces, data-dense tables, empty and error states · responsive and mobile web</dd></div>
+      <div class="skill"><dt>Code</dt><dd>HTML · CSS · TypeScript · React · Astro · Webflow · Git · Vercel — enough to
+        ship the design myself, and to hand over a spec a frontend team does not have to translate</dd></div>
+      <div class="skill"><dt>AI</dt><dd>Claude and Claude Code · multi-model pipelines across a forty-step product
+        playbook · agent-driven QA runs against live prototypes · AI-assisted research and synthesis</dd></div>
+    </dl>
+  </section>
+
+  <section class="sec">
+    <h2>Education</h2>
+    <div>
+      <div class="edu"><span class="edu-k">Google UX Design Professional Certificate <span>— Coursera</span></span><span class="edu-w">2025</span></div>
+      <div class="edu"><span class="edu-k">UX/UI Design, advanced <span>— Yandex Practicum</span></span><span class="edu-w">2024</span></div>
+      <div class="edu"><span class="edu-k">Web Design, professional retraining, 530 h <span>— Pentaschool, Moscow</span></span><span class="edu-w">2022 — 2023</span></div>
+      <div class="edu"><span class="edu-k">BSc <span>— Russian State Agrarian University, Moscow</span></span><span class="edu-w">2020</span></div>
+    </div>
+  </section>
+
+  <section class="sec push">
+    <h2>Availability</h2>
+    <div class="auth">
+      <p><strong>Looking for an in-house product team</strong> where design owns the problem and not only the screens —
+        B2B, complex domains, a product with real constraints in it.</p>
+      <p>Russian citizen, currently based in <strong>Kazakhstan (UTC+5)</strong>. I am <strong>open to relocation —
+        visa sponsorship required</strong>. Remote until then, and flexible about the contracting arrangement — happy
+        to work through whatever setup your company uses. My afternoons overlap with the European morning: four to
+        five hours of shared working time, more if the team is flexible.</p>
+      <p class="lang">English B2 · Russian native</p>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span>__EMAIL__</span>
+    <span><span class="accent">·</span>&nbsp; 2 / 2</span>
+  </footer>
+</section>
+
+</body>
+</html>
