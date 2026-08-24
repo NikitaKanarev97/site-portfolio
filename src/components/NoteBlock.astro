@@ -69,14 +69,14 @@ const motionName = variant === 'flagged' ? 'fade' : 'reveal-text';
   .note--emphasis {
     max-width: var(--measure-lead);
     padding-inline-start: var(--space-6);
-    border-inline-start: 1px solid var(--border-strong);
+    border-inline-start: var(--border-width) solid var(--border-strong);
     color: var(--text-default);
   }
 
   .note--flagged {
     max-width: var(--measure-text);
     padding: var(--space-8);
-    border: 1px solid var(--border-default);
+    border: var(--border-width) solid var(--border-default);
     border-radius: var(--radius-none);
     background: var(--surface-subtle);
     color: var(--text-default);

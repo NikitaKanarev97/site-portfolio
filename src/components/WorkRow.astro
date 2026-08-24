@@ -69,13 +69,13 @@ const lines = Array.isArray(description) ? description : [description];
     display: grid;
     gap: var(--space-3);
     padding-block: var(--space-6);
-    border-top: 1px solid var(--border-default);
+    border-top: var(--border-width) solid var(--border-default);
     /* Строка не ссылка: фон — единственное, что меняется на hover. */
     transition: background-color var(--motion-hover-duration) var(--motion-hover-ease);
   }
 
   .work-row:last-child {
-    border-bottom: 1px solid var(--border-default);
+    border-bottom: var(--border-width) solid var(--border-default);
   }
 
   .work-row:hover {
@@ -107,7 +107,7 @@ const lines = Array.isArray(description) ? description : [description];
 
   /* Табличная раскладка приходит на широком экране; на узком колонки
      схлопываются в стопку, порядок сохраняется. */
-  @media (min-width: 1024px) {
+  @media (--bp-lg) {
     .work-row {
       grid-template-columns: minmax(0, 3fr) minmax(0, 2fr) minmax(0, 2fr) minmax(0, 5fr);
       align-items: start;

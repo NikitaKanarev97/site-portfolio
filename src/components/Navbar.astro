@@ -21,6 +21,7 @@
  * блокировку скролла.
  */
 import TextLink from './TextLink.astro';
+import { token } from '../lib/tokens.ts';
 
 interface NavItem {
   label: string;
@@ -53,9 +54,19 @@ const {
 } = Astro.props;
 
 const isActive = (href: string) => current !== undefined && href === current;
+
+/**
+ * Запрос десктопной раскладки для клиентского скрипта.
+ *
+ * `src/lib/tokens.ts` — билдовый модуль и в браузер не уходит, поэтому
+ * значение считается здесь, во фронтматтере, и передаётся в скрипт
+ * атрибутом. Так число живёт в одном месте с CSS-медиазапросами
+ * компонента, а не вторым прибитым `768` в обработчике.
+ */
+const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
 ---
 
-<header class="navbar" data-navbar>
+<header class="navbar" data-navbar data-navbar-desktop={DESKTOP_MEDIA}>
   <div class="ds-container navbar__bar">
     <a class="navbar__brand ds-heading-xl" href={brandHref}>{brand}</a>
 
@@ -108,7 +119,7 @@ const isActive = (href: string) => current !== undefined && href === current;
     position: relative;
     z-index: 10;
     background: var(--surface-default);
-    border-bottom: 1px solid var(--border-default);
+    border-bottom: var(--border-width) solid var(--border-default);
   }
 
   .navbar__bar {
@@ -199,7 +210,7 @@ const isActive = (href: string) => current !== undefined && href === current;
     min-height: var(--space-12);
   }
 
-  @media (min-width: 768px) {
+  @media (--bp-md) {
     .navbar__desktop {
       display: block;
     }
@@ -285,7 +296,11 @@ const isActive = (href: string) => current !== undefined && href === current;
     });
 
     // Уход на десктопную раскладку не должен оставлять открытую панель.
-    const desktop = window.matchMedia('(min-width: 768px)');
+    // Запрос приходит атрибутом из фронтматтера: он собран из токена bp-md.
+    const query = root.dataset.navbarDesktop;
+    if (!query) return;
+
+    const desktop = window.matchMedia(query);
     desktop.addEventListener('change', (event) => {
       if (event.matches && open) setOpen(false);
     });

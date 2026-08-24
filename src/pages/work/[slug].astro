@@ -228,12 +228,18 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
     gap: var(--space-8);
   }
 
-  .case-header__meta,
-  .case-header__team {
+  /* Отступы на корнях компонентов пишутся через родителя и :global().
+     Класс, переданный пропом, приземляется на корень компонента, а тот несёт
+     свой data-astro-cid: правило `.класс { … }` компилируется в
+     `.класс[cid-страницы]` и не совпадает ни с чем. Ошибки нет — отступ молча
+     пропадает. **Найдено аудитом экранов 2026-08-24**, проверяется
+     `npm run check:css`. */
+  .case-header > :global(.case-header__meta),
+  .case-header > :global(.case-header__team) {
     margin-block-start: var(--space-2);
   }
 
-  .case-header__rework {
+  .case-header > :global(.case-header__rework) {
     margin-block-start: var(--space-4);
   }
 
@@ -297,7 +303,7 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
     min-height: var(--space-12);
   }
 
-  @media (min-width: 768px) {
+  @media (--bp-md) {
     .case-outro > :global(.ds-link) {
       min-height: 0;
     }

@@ -156,8 +156,8 @@ import { site } from '../copy/site.ts';
               </div>
 
               <span class="dev__cta ds-meta-xs">
-                Live site<span aria-hidden="true"> ↗</span>
-                <span class="ds-visually-hidden">, opens in a new tab</span>
+                {home.development.liveLabel}<span aria-hidden="true"> ↗</span>
+                <span class="ds-visually-hidden">{home.development.liveHint}</span>
               </span>
             </a>
           </li>
@@ -193,7 +193,13 @@ import { site } from '../copy/site.ts';
     margin-bottom: var(--space-8);
   }
 
-  .hero__spec {
+  /* Отступы на корнях компонентов пишутся через родителя и :global().
+     Класс, переданный пропом, приземляется на корень компонента, а тот несёт
+     свой data-astro-cid: правило `.класс { … }` компилируется в
+     `.класс[cid-страницы]` и не совпадает ни с чем. Ошибки нет — отступ молча
+     пропадает. **Найдено аудитом экранов 2026-08-24**, проверяется
+     `npm run check:css`. */
+  .hero > :global(.hero__spec) {
     margin-bottom: var(--space-6);
   }
 
@@ -221,7 +227,7 @@ import { site } from '../copy/site.ts';
     min-height: var(--space-12);
   }
 
-  @media (min-width: 768px) {
+  @media (--bp-md) {
     .hero__actions {
       flex-direction: row;
       align-items: baseline;
@@ -258,7 +264,7 @@ import { site } from '../copy/site.ts';
     outline-offset: var(--space-2);
   }
 
-  .featured__cover {
+  .featured__link > :global(.featured__cover) {
     margin-bottom: var(--space-8);
   }
 
@@ -267,11 +273,8 @@ import { site } from '../copy/site.ts';
     margin-bottom: var(--space-4);
   }
 
-  .featured__outcome {
-    margin-bottom: var(--space-6);
-  }
-
-  .featured__meta {
+  .featured__link > :global(.featured__outcome),
+  .featured__link > :global(.featured__meta) {
     margin-bottom: var(--space-6);
   }
 
@@ -287,8 +290,8 @@ import { site } from '../copy/site.ts';
     content: '';
     position: absolute;
     inset-inline: 0;
-    bottom: -0.15em;
-    height: 1px;
+    bottom: calc(var(--space-1) * -1);
+    height: var(--border-width);
     background: currentColor;
     transform: scaleX(0);
     transform-origin: right;
@@ -306,7 +309,7 @@ import { site } from '../copy/site.ts';
    * WorksList                                                         *
    * ---------------------------------------------------------------- */
 
-  .works__lead {
+  .works__head > :global(.works__lead) {
     margin-top: var(--space-4);
   }
 
@@ -318,7 +321,7 @@ import { site } from '../copy/site.ts';
    * DevelopmentStrip                                                  *
    * ---------------------------------------------------------------- */
 
-  .dev__lead {
+  .dev__head > :global(.dev__lead) {
     margin-top: var(--space-4);
   }
 
@@ -362,7 +365,7 @@ import { site } from '../copy/site.ts';
   }
 
   /* Десктоп: четыре карточки в ряд, превью сверху. */
-  @media (min-width: 768px) {
+  @media (--bp-md) {
     .dev__list {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -392,7 +395,7 @@ import { site } from '../copy/site.ts';
    * AboutShort                                                        *
    * ---------------------------------------------------------------- */
 
-  .about__body {
+  .about > :global(.about__body) {
     margin-bottom: var(--space-6);
   }
 
@@ -404,7 +407,7 @@ import { site } from '../copy/site.ts';
     min-height: var(--space-12);
   }
 
-  @media (min-width: 768px) {
+  @media (--bp-md) {
     .about > :global(.ds-link) {
       min-height: 0;
     }

@@ -106,7 +106,7 @@ const buttonClass = isAddress ? 'ds-heading-3xl' : 'ds-body-base';
     min-height: var(--space-12);
   }
 
-  @media (min-width: 768px) {
+  @media (--bp-md) {
     .copy-email--action {
       align-items: baseline;
     }
@@ -122,7 +122,7 @@ const buttonClass = isAddress ? 'ds-heading-3xl' : 'ds-body-base';
     color: var(--text-default);
     text-align: start;
     text-decoration: underline;
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: var(--border-width);
     text-underline-offset: var(--space-1);
     transition: color var(--motion-state-duration) var(--motion-state-ease);
   }

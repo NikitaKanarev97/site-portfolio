@@ -22,6 +22,8 @@
  * scale 1.06 → 1.0. Контр-масштаб отключается пропом counterScale:
  * медиа внутри кейса и карточки DevelopmentStrip идут без него.
  */
+import { px } from '../lib/tokens.ts';
+
 interface Props {
   src: string;
   alt: string;
@@ -57,8 +59,15 @@ const {
 
 const hasCaption = Astro.slots.has('caption');
 
-/** Медиазапрос art direction — тот же bp-md, что у ступеней типографики. */
-const MOBILE_MEDIA = '(max-width: 767px)';
+/**
+ * Медиазапрос art direction — тот же bp-md, что у ступеней типографики.
+ *
+ * Атрибут `media` у `<source>` — разметка, а не CSS: `@custom-media` до него
+ * не достаёт, и число приходится собирать строкой. Берётся из токена на
+ * сборке, чтобы не разойтись с CSS-медиазапросами компонента ниже.
+ * Граница на единицу меньше bp-md: диапазоны не пересекаются.
+ */
+const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
 ---
 
 <figure
@@ -140,7 +149,7 @@ const MOBILE_MEDIA = '(max-width: 767px)';
   }
 
   /* Art direction: соотношение под bp-md перебивает основное. */
-  @media (max-width: 767px) {
+  @media (--below-bp-md) {
     .media-frame--mobile-wide .media-frame__mask {
       aspect-ratio: 16 / 9;
     }

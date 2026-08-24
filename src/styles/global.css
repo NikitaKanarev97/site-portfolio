@@ -51,17 +51,17 @@ button {
   padding-inline: var(--margin-sm);
 }
 
-@media (min-width: 768px) {
+@media (--bp-md) {
   .ds-container { padding-inline: var(--margin-md); }
 }
 
-@media (min-width: 1024px) {
+@media (--bp-lg) {
   .ds-container { padding-inline: var(--margin-lg); }
 }
 
 .ds-section { padding-block: var(--space-24); }
 
-@media (min-width: 1024px) {
+@media (--bp-lg) {
   .ds-section { padding-block: var(--space-32); }
 }
 

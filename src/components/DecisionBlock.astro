@@ -107,7 +107,7 @@ const hasArtifact = Astro.slots.has('artifact');
     margin-top: var(--space-4);
   }
 
-  @media (min-width: 1024px) {
+  @media (--bp-lg) {
     .decision--with-artifact {
       grid-template-columns: minmax(0, 1fr) minmax(0, 0.6fr);
       gap: var(--gutter);

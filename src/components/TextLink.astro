@@ -75,9 +75,13 @@ const {
     color: var(--text-link-on-inverse);
   }
 
+  /* Отступ подчёркивания — тот же space-1, что у подчёркивания Строки ниже
+     и у CopyEmail. До аудита здесь стояло 0.2em: три одинаковых по смыслу
+     подчёркивания продукта сидели на трёх разных отступах. */
   .ds-link--inline .ds-link__label {
     text-decoration: underline;
-    text-underline-offset: 0.2em;
+    text-decoration-thickness: var(--border-width);
+    text-underline-offset: var(--space-1);
   }
 
   .ds-link--nav {
@@ -93,7 +97,7 @@ const {
     position: absolute;
     inset-inline: 0;
     bottom: calc(var(--space-1) * -1);
-    height: 1px;
+    height: var(--border-width);
     background: currentColor;
     transform: scaleX(0);
     transform-origin: right;
@@ -122,6 +126,6 @@ const {
   }
 
   .ds-link__external {
-    font-size: var(--size-sm);
+    font-size: var(--size-link-marker);
   }
 </style>

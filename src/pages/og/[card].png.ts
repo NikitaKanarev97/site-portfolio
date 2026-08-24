@@ -139,7 +139,7 @@ export const GET: APIRoute = async ({ params }) => {
               style: {
                 display: 'flex',
                 paddingTop: px('space-6'),
-                borderTop: `1px solid ${token('border-default')}`,
+                borderTop: `${token('border-width')} solid ${token('border-default')}`,
                 ...role('ds-body-lg', px('size-2xl')),
                 color: token('text-subtle'),
               },

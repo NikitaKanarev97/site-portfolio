@@ -52,7 +52,7 @@ const {
 
 <style>
   .footer {
-    border-top: 1px solid var(--border-default);
+    border-top: var(--border-width) solid var(--border-default);
     padding-block: var(--space-8);
     color: var(--text-meta);
   }
@@ -63,7 +63,7 @@ const {
     gap: var(--space-2);
   }
 
-  @media (min-width: 768px) {
+  @media (--bp-md) {
     .footer__inner {
       flex-direction: row;
       align-items: baseline;

@@ -120,6 +120,9 @@ export const home = {
     roleLabel: 'Role',
     roleValue: 'Webflow development',
     previewAlt: 'site preview',
+    /** Внешний характер ссылки помечен текстом, не только иконкой (ds/patterns.md §DevelopmentCard). */
+    liveLabel: 'Live site',
+    liveHint: ', opens in a new tab',
     items: [
       { name: 'Common', href: TODO_WEBFLOW.common },
       { name: 'Synk', href: TODO_WEBFLOW.synk },

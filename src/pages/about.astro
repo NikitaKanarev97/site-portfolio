@@ -136,7 +136,7 @@ import { about } from '../copy/about.ts';
 
   /* Мобильная раскладка базовая: кадр во всю ширину контейнера, никаких
      ограничений. Десктопное надстраивается. */
-  @media (min-width: 768px) {
+  @media (--bp-md) {
     .portrait {
       padding-block-end: var(--space-32);
     }

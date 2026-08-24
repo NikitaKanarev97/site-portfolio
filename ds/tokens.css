@@ -88,13 +88,29 @@
   --space-32: 128px;
   --space-48: 192px;
 
-  /* Обводка фокуса */
+  /* Толщина линий */
+  --rule-width:  1px;
   --focus-width: 2px;
 
   /* Тени — в продукте не применяются, резерв */
   --shadow-sm: 0 1px 2px rgba(27, 27, 24, 0.06);
   --shadow-md: 0 4px 12px rgba(27, 27, 24, 0.08);
   --shadow-lg: 0 12px 32px rgba(27, 27, 24, 0.10);
+
+  /* Брейкпоинты. Заведены 2026-08-24 аудитом экранов: foundation.md держал
+     их таблицей с самой постановки ДС, а объявления здесь не было — и 768
+     с 1024 стояли прибитыми в пятнадцати местах.
+     Числа читает JS через src/lib/tokens.ts; CSS-медиазапросы берут их
+     из блока @custom-media ниже. */
+  --bp-sm: 360px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1440px;
+
+  /* Колонки сетки — счётчики, не размеры */
+  --columns-sm: 4;
+  --columns-md: 6;
+  --columns-lg: 12;
 
   /* Сетка */
   --container-max: 1440px;
@@ -157,6 +173,11 @@
   --border-inverse: var(--gray-700);
   --border-focus:   var(--accent-500);
 
+  /* Толщина обводки и подчёркивания Строки. Волосяная линия — единственная
+     в продукте: рамки WorkRow, Footer, MetaList, NoteBlock и подчёркивание
+     TextLink держат одно значение, а не четыре одинаковых числа. */
+  --border-width: var(--rule-width);
+
   /* Фокус */
   --focus-ring-color: var(--accent-500);
   --focus-ring-width: var(--focus-width);
@@ -171,6 +192,12 @@
   --font-display: var(--font-sans);
   --font-meta:    var(--font-mono);
 
+  /* Кегль маркера внешней ссылки — единственный кегль вне ролей. Роль здесь
+     не подходит: маркер ↗ обязан наследовать семейство окружающей роли и
+     менять только размер. Контракт §3 запрещает компоненту брать примитив,
+     поэтому смысл заведён здесь. */
+  --size-link-marker: var(--size-sm);
+
   /* Motion. В CSS живут только те два смысла, которые CSS реально исполняет:
      hover и смена состояния. Reveal и переходы между страницами — GSAP,
      их смысловой слой в ds/motion.js. Контракт запрещает компоненту
@@ -180,6 +207,30 @@
   --motion-state-duration: var(--duration-instant);
   --motion-state-ease:     var(--ease-standard);
 }
+
+/* ============================================================
+   Брейкпоинты для медиазапросов.
+
+   Число повторяет примитив --bp-* выше, и это единственное намеренное
+   дублирование в файле. Причина в спецификации, а не в лени: @media не
+   читает var(), и вывести условие запроса из кастомного свойства нельзя
+   ничем. Обе записи стоят в одном файле — правятся вместе или не правятся.
+
+   Разворачивает postcss-custom-media на сборке; в выходной CSS сами
+   объявления не попадают. Определения раздаются во все файлы проекта
+   через @csstools/postcss-global-data (astro.config.mjs).
+
+   mobile-only читает bp-md на единицу меньше: диапазоны обязаны не
+   пересекаться, иначе на ровно 768 сработают оба.
+   ============================================================ */
+
+@custom-media --bp-sm (min-width: 360px);
+@custom-media --bp-md (min-width: 768px);
+@custom-media --bp-lg (min-width: 1024px);
+@custom-media --bp-xl (min-width: 1440px);
+
+@custom-media --below-bp-md (max-width: 767px);
+@custom-media --below-bp-lg (max-width: 1023px);
 
 /* ============================================================
    Типографические роли — эквивалент TextStyles из foundation.md.
@@ -216,13 +267,13 @@
 
 /* Display-ступени — desktop-only, ниже bp-lg съезжают на ступень вниз.
    Правило живёт здесь, а не в компонентах, иначе 128px порвёт 360px. */
-@media (max-width: 1023px) {
+@media (--below-bp-lg) {
   .ds-display-7xl { font-size: var(--size-5xl); }
   .ds-display-6xl { font-size: var(--size-4xl); }
   .ds-display-5xl { font-size: var(--size-4xl); }
 }
 
-@media (max-width: 767px) {
+@media (--below-bp-md) {
   .ds-display-7xl { font-size: var(--size-4xl); }
   .ds-display-6xl { font-size: var(--size-3xl); }
   .ds-display-5xl { font-size: var(--size-3xl); }
@@ -234,7 +285,7 @@
    правила здесь кегль расползся бы по компонентам прибитыми числами
    в обход ролей (ds/CONTRACT.md §3).
    heading-xl не съезжает: 20px — уже нижняя граница заголовка. */
-@media (max-width: 767px) {
+@media (--below-bp-md) {
   .ds-heading-4xl { font-size: var(--size-3xl); }
   .ds-heading-3xl { font-size: var(--size-2xl); }
   .ds-heading-2xl { font-size: var(--size-xl); }

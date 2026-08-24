@@ -117,10 +117,10 @@ const valueClass = isStatements ? 'ds-body-lg' : 'ds-meta-sm';
 
   /* Разделитель между парами в строку: только на широком экране,
      на узком пары и так стоят друг под другом. */
-  @media (min-width: 768px) {
+  @media (--bp-md) {
     .meta-list--inline .meta-list__pair:not(:last-child) {
       padding-inline-end: var(--space-6);
-      border-inline-end: 1px solid var(--border-default);
+      border-inline-end: var(--border-width) solid var(--border-default);
     }
   }
 </style>
