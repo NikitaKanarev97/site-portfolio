@@ -14,7 +14,9 @@
  */
 import { ClientRouter } from 'astro:transitions';
 import Navbar from '../components/Navbar.astro';
-import { PREVIEW_NOINDEX } from '../copy/site';
+import { PREVIEW_NOINDEX, site } from '../copy/site';
+import { OG_HEIGHT, OG_WIDTH, ogImage as ogImageFor, ogImageAlt } from '../copy/og.ts';
+import { alternatesFor, canonicalPath } from '../copy/routes.ts';
 
 import '../styles/tokens.css';
 import '../styles/fonts.css';
@@ -24,23 +26,51 @@ interface Props {
   title: string;
   description: string;
   lang?: string;
-  ogImage?: string;
+  /**
+   * Идентификатор OG-карточки из src/copy/og.ts — `default`, `about`,
+   * `work-<slug>`. Не путь к файлу: путь строит реестр, и опечатка в нём
+   * дала бы битую картинку молча, без ошибки сборки (TECH-04).
+   */
+  ogCard?: string;
   /** Маршрут текущей страницы — Navbar подсвечивает активный пункт. */
   current?: string;
   /** Показывать навигацию. 404 обходится без неё. */
   nav?: boolean;
+  /**
+   * Закрыть страницу от индексации независимо от превью-режима.
+   * Витрина /kit и непереведённый каркас /ru/ остаются noindex и после
+   * боевого запуска (src/copy/routes.ts).
+   */
+  noindex?: boolean;
+  /**
+   * Канонический адрес. Снимается на 404 и 500: страница ошибки
+   * отдаётся хостингом по ЧУЖОМУ адресу — тому, который человек набрал, —
+   * и canonical на /404/ объявил бы этот чужой адрес копией служебной
+   * страницы. У страницы ошибки канонического адреса нет.
+   */
+  canonical?: boolean;
 }
 
 const {
   title,
   description,
   lang = 'en',
-  ogImage = '/og/default.png',
+  ogCard = 'default',
   current,
   nav = true,
+  noindex = false,
+  canonical = true,
 } = Astro.props;
 
-const canonical = new URL(Astro.url.pathname, Astro.site);
+/**
+ * Канонический URL и hreflang считаются из одного источника — реестра
+ * маршрутов. Расхождение в один символ (слеш на конце) обнуляет обе
+ * аннотации сразу, поэтому форму пути задаёт canonicalPath(), а не
+ * страница.
+ */
+const canonicalUrl = new URL(canonicalPath(Astro.url.pathname), Astro.site);
+const alternates = canonical ? alternatesFor(Astro.url.pathname) : [];
+const image = new URL(ogImageFor(ogCard), Astro.site);
 ---
 
 <html lang={lang} transition:animate="none">
@@ -49,16 +79,39 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonical} />
+    {canonical && <link rel="canonical" href={canonicalUrl} />}
 
-    {/* Preview-деплой закрыт от поиска до боевого запуска (src/copy/site.ts). */}
-    {PREVIEW_NOINDEX && <meta name="robots" content="noindex, nofollow" />}
+    {/*
+      Аннотации локалей. Пусты, пока у маршрута одна локаль: hreflang на
+      самого себя без пары смысла не несёт (src/copy/routes.ts).
+    */}
+    {
+      alternates.map((alternate) => (
+        <link
+          rel="alternate"
+          hreflang={alternate.hreflang}
+          href={new URL(alternate.path, Astro.site)}
+        />
+      ))
+    }
+
+    {/*
+      Preview-деплой закрыт от поиска до боевого запуска (src/copy/site.ts).
+      Проп noindex закрывает страницу и после запуска — /kit и каркас /ru/.
+    */}
+    {(PREVIEW_NOINDEX || noindex) && <meta name="robots" content="noindex, nofollow" />}
 
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.brand} />
+    <meta property="og:locale" content={lang} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={new URL(ogImage, Astro.site)} />
+    {canonical && <meta property="og:url" content={canonicalUrl} />}
+    <meta property="og:image" content={image} />
+    <meta property="og:image:width" content={String(OG_WIDTH)} />
+    <meta property="og:image:height" content={String(OG_HEIGHT)} />
+    {/* Альтернатива обязательна: карточка типографская, и текст на ней — весь её смысл. */}
+    <meta property="og:image:alt" content={ogImageAlt(ogCard)} />
     <meta name="twitter:card" content="summary_large_image" />
 
     {/* Два критических woff2 — набор идёт по fonts.ready (motion-concept §4.1). */}

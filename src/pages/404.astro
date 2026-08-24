@@ -1,0 +1,70 @@
+---
+/**
+ * NotFound — Site-portfolio, маршрут /404
+ *
+ * Composition map: ds/screens/service.md. Инвентарь: ia/screens-inventory.md
+ * №31, TECH-06. Тексты — src/copy/service.ts.
+ *
+ * Настоящий HTTP 404 отдаёт хостинг: статическая сборка кладёт в dist
+ * файл 404.html, Vercel отвечает им с кодом 404. Клиентского редиректа
+ * нет и быть не должно — редирект теряет и код ответа, и адрес, по
+ * которому человек пришёл.
+ *
+ * Оболочка без навигации и без движения вовсе (ds/patterns.md §PageShell,
+ * ds/motion-concept.md §7). ContactBlock остаётся: у пришедшего сюда
+ * сломалась ссылка, а email и CV — то, за чем он шёл (IA-06, US-03).
+ */
+import PageShell from '../layouts/PageShell.astro';
+import SectionHead from '../components/SectionHead.astro';
+import ProseBlock from '../components/ProseBlock.astro';
+import ServiceRoutes from '../components/ServiceRoutes.astro';
+import { notFound, serviceRoutes } from '../copy/service.ts';
+---
+
+<PageShell
+  title={notFound.meta.title}
+  description={notFound.meta.description}
+  nav={false}
+  motion={false}
+  noindex
+  canonical={false}
+>
+  <section class="ds-container ds-section">
+    {/* Код ответа стоит текстом: по нему видно, что ошибся адрес, а не
+        наткнулся на пустую страницу. */}
+    <p class="ds-meta-xs code">{notFound.code}</p>
+
+    <SectionHead as="h1" size="lg" reveal={false} class="heading">
+      {notFound.heading}
+    </SectionHead>
+
+    <ProseBlock variant="lead" motion={false} class="lead">
+      {notFound.lead.map((paragraph) => <p>{paragraph}</p>)}
+    </ProseBlock>
+
+    <h2 class="ds-heading-3xl routes-heading">{notFound.routesHeading}</h2>
+    <ServiceRoutes items={serviceRoutes} />
+  </section>
+</PageShell>
+
+<style>
+  .code {
+    color: var(--text-meta);
+    margin-bottom: var(--space-4);
+  }
+
+  /* :global обязателен: корни SectionHead и ProseBlock несут собственный
+     data-astro-cid, скоуп страницы до них не достаёт (ds/components.md
+     §Реализация). */
+  .ds-section > :global(.heading) {
+    margin-bottom: var(--space-8);
+  }
+
+  .ds-section > :global(.lead) {
+    margin-bottom: var(--space-16);
+  }
+
+  .routes-heading {
+    margin-bottom: var(--space-8);
+  }
+</style>

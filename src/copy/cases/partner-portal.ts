@@ -50,7 +50,6 @@ export const partnerPortal = {
     title: 'B2B Partner Portal — DSSL',
     description:
       'A distributor’s partner portal rebuilt around the specification: a purchase list keeps its source row from the imported file all the way to the placed order.',
-    ogImage: `${media}/resolution-center.webp`,
   },
 
   header: {

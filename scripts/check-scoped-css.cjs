@@ -19,7 +19,14 @@
  * ds/screens/about.md §«Найдено при сборке».
  */
 const fs = require('fs');
-const pages = { '/': 'dist/index.html', '/about': 'dist/about/index.html', '/work/partner-portal': 'dist/work/partner-portal/index.html' };
+const pages = {
+  '/': 'dist/index.html',
+  '/about': 'dist/about/index.html',
+  '/work/partner-portal': 'dist/work/partner-portal/index.html',
+  '/ru/': 'dist/ru/index.html',
+  '/404': 'dist/404.html',
+  '/500': 'dist/500.html',
+};
 const cssFiles = fs.readdirSync('dist/_astro').filter(f => f.endsWith('.css'));
 const css = cssFiles.map(f => fs.readFileSync('dist/_astro/' + f, 'utf8')).join('\n');
 

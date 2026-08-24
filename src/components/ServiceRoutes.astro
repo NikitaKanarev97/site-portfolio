@@ -1,0 +1,66 @@
+---
+/**
+ * ServiceRoutes — список адресов сайта на служебной странице
+ *
+ * Не компонент каталога, а реализация паттерна `ServiceRoutes`
+ * (`ds/patterns.md`): `TextLink type=arrow` плюс строка ответа под каждой
+ * ссылкой. Файл заведён по той же причине, что и `PageShell`, — два
+ * маршрута держат один и тот же список, и копия в каждом разошлась бы
+ * (`ds/CONTRACT.md` §Что запрещено).
+ *
+ * Строка под ссылкой — не подпись, а ответ на вопрос «что там». Человек
+ * попал сюда по сломанному адресу и выбирает вслепую; список из четырёх
+ * голых ссылок заставил бы его угадывать.
+ *
+ * Движения нет: обе служебные страницы идут без него вовсе
+ * (`ds/motion-concept.md` §7).
+ */
+import TextLink from './TextLink.astro';
+import type { ServiceRoute } from '../copy/service.ts';
+
+interface Props {
+  items: readonly ServiceRoute[];
+  class?: string;
+}
+
+const { items, class: className } = Astro.props;
+---
+
+<ul class:list={['routes', className]}>
+  {
+    items.map((item) => (
+      <li class="routes__item">
+        <TextLink href={item.href} type="arrow" external={item.external}>
+          {item.label}
+        </TextLink>
+        <p class="ds-body-base routes__note">{item.note}</p>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .routes {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    max-width: var(--measure-text);
+  }
+
+  .routes__item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  /* Цель нажатия набирается интервалом, а не высотой ссылки, и это
+     вынужденно: у arrow подчёркивание Строки — абсолютный элемент на
+     space-1 ниже бокса ссылки. Растянутая до space-12 ссылка увела бы
+     подчёркивание на два сантиметра от текста. Интервал space-8 между
+     соседними целями даёт то же — промах на телефоне не уводит не туда
+     (WCAG 2.5.8: 24 px цель плюс разрежение). */
+
+  .routes__note {
+    color: var(--text-subtle);
+  }
+</style>

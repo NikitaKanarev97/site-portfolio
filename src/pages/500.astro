@@ -1,0 +1,64 @@
+---
+/**
+ * ServerError — Site-portfolio, маршрут /500
+ *
+ * Composition map: ds/screens/service.md. Инвентарь: ia/screens-inventory.md
+ * №34. Парная к /404: скелет тот же, различаются код и объяснение, список
+ * адресов общий (src/copy/service.ts).
+ *
+ * Кода 500 у статической сборки не бывает — страница существует как цель
+ * для конфигурации хостинга и как парная к 404. TECH-15 запрещает экраны
+ * отказа для рантайм-механизмов; серверная ошибка под запрет не подпадает
+ * (ia/screens-inventory.md №34).
+ */
+import PageShell from '../layouts/PageShell.astro';
+import SectionHead from '../components/SectionHead.astro';
+import ProseBlock from '../components/ProseBlock.astro';
+import ServiceRoutes from '../components/ServiceRoutes.astro';
+import { serverError, serviceRoutes } from '../copy/service.ts';
+---
+
+<PageShell
+  title={serverError.meta.title}
+  description={serverError.meta.description}
+  nav={false}
+  motion={false}
+  noindex
+  canonical={false}
+>
+  <section class="ds-container ds-section">
+    <p class="ds-meta-xs code">{serverError.code}</p>
+
+    <SectionHead as="h1" size="lg" reveal={false} class="heading">
+      {serverError.heading}
+    </SectionHead>
+
+    <ProseBlock variant="lead" motion={false} class="lead">
+      {serverError.lead.map((paragraph) => <p>{paragraph}</p>)}
+    </ProseBlock>
+
+    <h2 class="ds-heading-3xl routes-heading">{serverError.routesHeading}</h2>
+    <ServiceRoutes items={serviceRoutes} />
+  </section>
+</PageShell>
+
+<style>
+  .code {
+    color: var(--text-meta);
+    margin-bottom: var(--space-4);
+  }
+
+  /* :global обязателен: корни SectionHead и ProseBlock несут собственный
+     data-astro-cid (ds/components.md §Реализация). */
+  .ds-section > :global(.heading) {
+    margin-bottom: var(--space-8);
+  }
+
+  .ds-section > :global(.lead) {
+    margin-bottom: var(--space-16);
+  }
+
+  .routes-heading {
+    margin-bottom: var(--space-8);
+  }
+</style>

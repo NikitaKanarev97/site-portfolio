@@ -43,7 +43,12 @@ interface Props {
   title: string;
   description: string;
   lang?: string;
-  ogImage?: string;
+  /** Идентификатор OG-карточки из src/copy/og.ts (BaseLayout). */
+  ogCard?: string;
+  /** Закрыть страницу от индексации независимо от превью-режима. */
+  noindex?: boolean;
+  /** Канонический адрес. Снимается на страницах ошибок (BaseLayout). */
+  canonical?: boolean;
   /** Маршрут для подсветки активного пункта навигации. */
   current?: string;
   /** Навигация. 404 обходится без неё. */
@@ -58,6 +63,18 @@ interface Props {
    * от пропа не меняются, меняется одно предложение.
    */
   contactLead?: string;
+  /**
+   * Заголовок ContactBlock и подписи CopyEmail. Умолчания английские;
+   * маршрут /ru/ передаёт русские (src/copy/site.ts: русские строки
+   * приходят пропами, а не умолчаниями компонентов).
+   */
+  contactHeading?: string;
+  contactCopy?: {
+    copyHint?: string;
+    copiedLabel?: string;
+    announce?: string;
+    fallbackAnnounce?: string;
+  };
   /** Движение. 404 идёт без него вовсе (ds/motion-concept.md §7). */
   motion?: boolean;
 }
@@ -66,11 +83,15 @@ const {
   title,
   description,
   lang = 'en',
-  ogImage,
+  ogCard,
+  noindex,
+  canonical,
   current,
   nav = true,
   contact = true,
   contactLead = site.contact.lead,
+  contactHeading = site.contact.heading,
+  contactCopy,
   motion = true,
 } = Astro.props;
 ---
@@ -79,7 +100,9 @@ const {
   title={title}
   description={description}
   lang={lang}
-  ogImage={ogImage}
+  ogCard={ogCard}
+  noindex={noindex}
+  canonical={canonical}
   current={current}
   nav={nav}
 >
@@ -93,14 +116,22 @@ const {
         data-motion={motion ? 'fade' : undefined}
       >
         <SectionHead size="lg" reveal={false}>
-          {site.contact.heading}
+          {contactHeading}
         </SectionHead>
 
         <ProseBlock motion={false} class="contact__lead">
           <p>{contactLead}</p>
         </ProseBlock>
 
-        <CopyEmail email={site.contact.email} appearance="address" class="contact__email" />
+        <CopyEmail
+          email={site.contact.email}
+          appearance="address"
+          hint={contactCopy?.copyHint}
+          copiedLabel={contactCopy?.copiedLabel}
+          announce={contactCopy?.announce}
+          fallbackAnnounce={contactCopy?.fallbackAnnounce}
+          class="contact__email"
+        />
 
         <ul class="contact__links">
           {site.contact.links.map((link) => (
