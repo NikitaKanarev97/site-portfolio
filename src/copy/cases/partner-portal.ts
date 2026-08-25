@@ -239,9 +239,9 @@ export const partnerPortal = {
       },
       {
         src: `${media}/system-resolution-row.webp`,
-        alt: 'Resolution row in its four identity states',
+        alt: 'Resolution row in its four identity states and its separate parse-error state',
         component: 'ResolutionRow',
-        states: 'exact · ambiguous · missing · changed',
+        states: 'exact · ambiguous · missing · changed + parse error',
       },
       {
         src: `${media}/system-fulfillment-plan.webp`,
