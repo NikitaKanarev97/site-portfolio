@@ -275,17 +275,17 @@
 
 | Компонент | Экраны |
 |---|---|
-| `Navbar` | `screens/home` · `screens/case-dssl` · `screens/about` |
-| `TextLink` | `screens/home` · `screens/case-dssl` · `screens/about` — оболочечное |
-| `CopyEmail` | `screens/home` · `screens/case-dssl` · `screens/about` — оболочечное |
-| `MediaFrame` | `screens/home` · `screens/case-dssl` · `screens/about` — портрет |
+| `Navbar` | `screens/home` · `screens/case-dssl` · `screens/case-vet` · `screens/case-pawly` · `screens/about` |
+| `TextLink` | `screens/home` · `screens/case-dssl` · `screens/case-vet` · `screens/case-pawly` · `screens/about` — оболочечное |
+| `CopyEmail` | `screens/home` · `screens/case-dssl` · `screens/case-vet` · `screens/case-pawly` · `screens/about` — оболочечное |
+| `MediaFrame` | `screens/home` · `screens/case-dssl` · `screens/case-vet` · `screens/case-pawly` · `screens/about` — портрет |
 | `WorkRow` | `screens/home` |
-| `MetaList` | `screens/home` · `screens/case-dssl` |
-| `SectionHead` | `screens/home` · `screens/case-dssl` · `screens/about` |
-| `ProseBlock` | `screens/home` · `screens/case-dssl` · `screens/about` — пять носителей после выделения `AboutEvidence` |
-| `Footer` | `screens/home` · `screens/case-dssl` · `screens/about` |
-| `NoteBlock` | `screens/case-dssl` — все три варианта |
-| `DecisionBlock` | `screens/case-dssl` — четыре носителя |
+| `MetaList` | `screens/home` · `screens/case-dssl` · `screens/case-vet` · `screens/case-pawly` |
+| `SectionHead` | `screens/home` · `screens/case-dssl` · `screens/case-vet` · `screens/case-pawly` · `screens/about` |
+| `ProseBlock` | `screens/home` · `screens/case-dssl` · `screens/case-vet` · `screens/case-pawly` · `screens/about` — пять носителей после выделения `AboutEvidence` |
+| `Footer` | `screens/home` · `screens/case-dssl` · `screens/case-vet` · `screens/case-pawly` · `screens/about` |
+| `NoteBlock` | `screens/case-dssl` · `screens/case-vet` · `screens/case-pawly` — все три варианта |
+| `DecisionBlock` | `screens/case-dssl` · `screens/case-vet` · `screens/case-pawly` — четыре носителя на кейс |
 
 `ContactBlock` и `Footer` приходят на каждый маршрут из `PageShell`, поэтому у `CopyEmail`, `TextLink`, `SectionHead`, `ProseBlock` и `Footer` присутствие на `Home` частично оболочечное, а не только собственное.
 

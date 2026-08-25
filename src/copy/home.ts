@@ -47,7 +47,7 @@ export const home = {
     authorization:
       'Kazakhstan · open to relocation with visa sponsorship, remote until then.',
     /**
-     * С 2026-08-25 открытых кейсов два, и прежняя строка «Read the case:
+     * С 2026-08-25 открытых кейсов больше одного, и прежняя строка «Read the case:
      * B2B Partner Portal» называла один из них. Ведёт якорем в секцию
      * Selected work: выбор между двумя делает читатель, а не шапка.
      */
@@ -56,13 +56,13 @@ export const home = {
   },
 
   /**
-   * Открытые кейсы. С 2026-08-25 их два, и секция стала списком: разметка
+   * Открытые кейсы. С 2026-08-25 их три, и секция стала списком: разметка
    * index.astro повторяет паттерн FeaturedCaseCover по числу записей, новых
    * компонентов не заводится (ds/screens/case-vet.md §Что этот экран меняет
    * на главной).
    *
-   * Порядок — решение владельца 2026-08-25: DSSL первым. Он единственный
-   * дошёл до прода целиком, и это самое сильное, что есть в портфолио.
+   * Порядок — решение владельца 2026-08-25: DSSL первым, затем Vet Clinic
+   * OS, затем Pawly. Новые кейсы добавляются ниже уже открытых.
    */
   featured: {
     eyebrow: 'Selected work',
@@ -115,30 +115,40 @@ export const home = {
         coverAlt:
           'Vet Clinic OS: the veterinarian’s queue for the day with three visits still unfinished, with the patient card and the schedule behind it',
       },
+      {
+        href: '/work/pawly',
+        title: 'Pawly',
+        outcome:
+          'Trust is evidence, not a badge — from verification to the moment the pet is home.',
+        meta: [
+          { term: 'Product', value: 'Dog walking and pet sitting marketplace' },
+          { term: 'Year', value: '2026' },
+          { term: 'Role', value: 'Lead Product Designer' },
+          { term: 'Platform', value: 'Mobile, iOS first and Android next' },
+        ],
+        cta: 'Read the case',
+        /** Тот же набор, что на CaseCover кейса. Данные на кадрах выдуманы. */
+        cover: [
+          '/media/case-pawly/cover/screen-gallery.webp',
+          '/media/case-pawly/cover/owner-home.webp',
+          '/media/case-pawly/cover/handover-photo-review.webp',
+        ],
+        coverAlt:
+          'Pawly product screen index: the owner home, a walker profile, the pet address check and the safety profile, with the active owner screen and the drop-off proof behind it',
+      },
     ],
   },
 
   /**
-   * Список закрытых кейсов. Vet Clinic OS ушёл отсюда 2026-08-25: он
-   * открыт и стоит выше второй обложкой. Заголовок и подводка правятся
-   * вместе с составом — «Three more» при двух записях было бы враньём в
-   * первом же слове секции.
+   * Список закрытых кейсов. Vet Clinic OS и Pawly ушли отсюда 2026-08-25:
+   * их кейсы открыты и стоят выше обложками. Заголовок и подводка правятся
+   * вместе с составом — множественное число при одной записи было бы
+   * враньём в первом же слове секции.
    */
   works: {
-    heading: 'Two more projects. Their cases are not written yet.',
-    lead: 'Listed with what they were and why they are not open. The full cases are above.',
+    heading: 'One more project. Its case is not written yet.',
+    lead: 'Listed with what it was and why it is not open. The full cases are above.',
     items: [
-      {
-        title: 'Pawly',
-        type: 'Mobile marketplace for dog walking, iOS / Android',
-        year: '2024',
-        role: 'Product Designer',
-        description: [
-          'End-to-end: brief, research, personas, PRD, design system.',
-          '33 React components in Storybook.',
-        ],
-        reason: 'Not open yet: same reason — the visual pass is behind the rest of the work.',
-      },
       {
         title: 'RUUN',
         type: 'DTC e-commerce, handmade brand, product configurator',

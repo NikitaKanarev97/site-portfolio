@@ -12,7 +12,8 @@
  */
 import { partnerPortal } from './partner-portal.ts';
 import { vetClinic } from './vet-clinic.ts';
+import { pawly } from './pawly.ts';
 
-export const cases = [partnerPortal, vetClinic];
+export const cases = [partnerPortal, vetClinic, pawly];
 
 export type Case = (typeof cases)[number];

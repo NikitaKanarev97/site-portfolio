@@ -24,6 +24,7 @@ const pages = {
   '/about': 'dist/about/index.html',
   '/work/partner-portal': 'dist/work/partner-portal/index.html',
   '/work/vet-clinic': 'dist/work/vet-clinic/index.html',
+  '/work/pawly': 'dist/work/pawly/index.html',
   '/ru/': 'dist/ru/index.html',
   '/404': 'dist/404.html',
   '/500': 'dist/500.html',
