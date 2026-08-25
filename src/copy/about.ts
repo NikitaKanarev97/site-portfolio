@@ -15,9 +15,10 @@
  *   - строка UTC+5 обязана совпадать со строкой Footer в site.ts.
  *
  * Что здесь ЧЕРНОВИК и ждёт владельца:
- *   - intro.lead и три абзаца intro.body. Вайрфрейм задаёт содержание
- *     каждого абзаца, готовой формулировки не даёт. Написано по фактам
- *     кейса /work/partner-portal — src/copy/cases/partner-portal.ts.
+ *   - intro.lead, intro.principle и два абзаца evidence.body. Вайрфрейм
+ *     задаёт содержание каждого абзаца, готовой формулировки не даёт.
+ *     Написано по фактам кейса /work/partner-portal —
+ *     src/copy/cases/partner-portal.ts.
  *   - весь блок ai. В артефактах зафиксирован ровно один факт
  *     (outputs/brief.md §60: ИИ на всех этапах ~40-шагового playbook,
  *     несколько моделей и инструментов). Решение владельца от 24.08.2026:
@@ -53,13 +54,18 @@ export const about = {
     heading: 'How I work',
     lead:
       'I reformulate the task before I design it. Most of the briefs I’ve worked from described a solution someone had already chosen — the useful work started when we went back to what the actual problem was.',
+    /* Как работаю в чужих ограничениях. */
+    principle:
+      'Most of my work happens inside limits I did not set: a system of record the business runs on, a pricing model that lives in contracts rather than in the product, an agreement between departments that predates the brief. I start by finding out what the limit is holding up, because a constraint that has survived that long is usually load-bearing. On the partner portal the legacy system could not be touched, so the question changed from what the new portal should look like to what the new surface could own that the old one did not. The answer — the specification line and where it came from — came out of the constraint.',
+  },
+
+  evidence: {
+    heading: 'What I can stand behind',
     body: [
-      /* 1. Как работаю в чужих ограничениях. */
-      'Most of my work happens inside limits I did not set and cannot remove: a system of record the business runs on and nobody is going to replace, a pricing model that lives in contracts rather than in the product, an agreement between two departments that predates the brief. My first move is not to ask for the limit to be lifted. It is to find out what the limit is holding up, because a constraint that has survived that long is usually load-bearing. On the partner portal the legacy system could not be touched, so the question stopped being what the new portal should look like and became what the new surface can own that the old one does not. The answer — the specification line and where it came from — came out of the constraint, not despite it.',
-      /* 2. Что делаю с тем, что не получается. */
-      'Every case I write has a section about what did not work, and it is not there for modesty. The order in which a project is run is a design decision like any other, and the places where I got that order wrong are the part of a write-up that is hard to fake. On DSSL I finished six screens before checking their structure against comparable products, which is backwards: a structural finding costs a paragraph before the screen exists and a rebuild afterwards. Two of the defects found later I also wrote up wrong the first time, and fixing either first diagnosis would have fixed nothing. You find out how someone works when something breaks either way — the only question is whether you find out before hiring them or after.',
-      /* 3. Чем меряю результат, когда цифры закрыты. */
-      'Most of what I have shipped is under NDA, and some of it has no baseline to be measured against: the metrics defined for it were a plan for measurement, not a claim of results. So I do not publish numbers I cannot stand behind, and I do not let a plan pass for an outcome. What goes in their place is the compromise, stated in full — what the design achieved, what it cost, who now does more work than before, and what would have to change to remove that cost. A named trade-off can be checked in a conversation: you can ask what I considered instead and why I rejected it. A number without a baseline cannot.',
+      /* Что делаю с тем, что не получается. */
+      'Every case I write has a section about what did not work, and it is not there for modesty. The order in which a project is run is a design decision, and the places where I got that order wrong are hard to fake. On DSSL I finished six screens before checking their structure against comparable products. A structural finding costs a paragraph before the screen exists and a rebuild afterwards. Two defects found later were also diagnosed incorrectly the first time; fixing either diagnosis would have fixed nothing.',
+      /* Чем меряю результат, когда цифры закрыты. */
+      'Most of what I have shipped is under NDA, and some of it has no baseline to measure against: its metrics were a plan for measurement, not a claim of results. I do not publish numbers I cannot stand behind or let a plan pass for an outcome. I publish the compromise instead — what the design achieved, what it cost, who now does more work, and what would have to change to remove that cost. A named trade-off can be checked in conversation; a number without a baseline cannot.',
     ],
   },
 
@@ -106,8 +112,8 @@ export const about = {
     heading: 'Where AI sits in how I work',
     body: [
       'I use AI at every stage of a project rather than at one step of it — from the first interview and the brief, through research, personas and scenarios, the PRD, the information architecture and the design system, into code, testing and deploy. Several models and tools, picked per step, not one assistant for everything.',
-      'What it is good at in my process is volume and first drafts: reading more comparable products than I would get through by hand, restating a requirement several ways until the weak version becomes visible, walking a finished flow and reporting where it breaks. The last one has repeatedly found defects on screens I had already called done — which is the reason it runs at all.',
-      'What it does not do is decide. It does not pick the object the system is built around, it does not choose which constraint to accept, and it does not name the trade-off in a case — those are the parts you would be hiring me for. It also does not get to invent evidence: anything it produces about users or the market stays marked as an assumption until something outside it confirms it.',
+      'In my process, it earns its place through volume and first drafts: reading more comparable products than I can cover by hand, restating a requirement until the weak version becomes visible, walking a finished flow and reporting where it breaks. That last pass has repeatedly found defects on screens I had already called done.',
+      'The boundary is judgment and evidence. AI can surface options and failure points; it does not choose the object the system is built around, decide which constraint to accept, or turn an assumption into a user finding. Those decisions — and the trade-off I publish — remain mine.',
     ],
   },
 };

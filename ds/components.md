@@ -182,7 +182,7 @@
 
 ## `ProseBlock`
 
-Колонка связного текста. Десять носителей: тела блоков кейса (`CaseContext`, `CaseReframe`, `CaseProcess`, `CaseFailure`, `CaseSystem`, `CaseRework`), абзацы `/about`, короткий About на главной.
+Колонка связного текста. Носители: тела блоков кейса (`CaseContext`, `CaseReframe`, `CaseProcess`, `CaseFailure`, `CaseSystem`, `CaseRework`), группы абзацев `/about`, короткий About на главной и служебные страницы.
 
 | Вариант | Мера и кегль |
 |---|---|
@@ -191,7 +191,7 @@
 
 - **Токены:** `measure-text` / `measure-lead` · `text-default` · `flow-text` / `flow-node` между абзацами
 - **Внешней вертикали не несёт.** Ритм абзацев — внутри блока; отступ ПОСЛЕ блока задаёт поток. `variant=lead` ставит на корень класс-метку `ds-flow-lead`, и то, что идёт под ведущим абзацем, отходит на `flow-group`.
-- **Зачем компонент:** он отвечает ровно за две вещи — меру строки и ритм абзацев. Без него потолок колонки разъехался бы прибитыми числами по десяти секциям, а это прямой запрет контракта §4.
+- **Зачем компонент:** он отвечает ровно за две вещи — меру строки и ритм абзацев. Без него потолок колонки разъехался бы прибитыми числами по экранам, а это прямой запрет контракта §4.
 - **Мера и кегль связаны одним пропом намеренно:** носителя у пары «широкая мера + мелкий кегль» в инвентаре нет.
 - **Кегли:** вайрфреймы называют 20 px для тела и 24 px для ведущего абзаца. Ступени 20 px в body-ролях нет — берём `ds-body-lg` (18) и `ds-heading-2xl` (24). Роль важнее числа из макета (контракт §3).
 - **Движение:** `body` — opacity целым блоком, `lead` — Набор. Ровно карта `ds/motion-concept.md` §7: тела блоков — opacity, `CaseHeader` — Набор.
@@ -282,7 +282,7 @@
 | `WorkRow` | `screens/home` |
 | `MetaList` | `screens/home` · `screens/case-dssl` |
 | `SectionHead` | `screens/home` · `screens/case-dssl` · `screens/about` |
-| `ProseBlock` | `screens/home` · `screens/case-dssl` · `screens/about` — четыре носителя |
+| `ProseBlock` | `screens/home` · `screens/case-dssl` · `screens/about` — пять носителей после выделения `AboutEvidence` |
 | `Footer` | `screens/home` · `screens/case-dssl` · `screens/about` |
 | `NoteBlock` | `screens/case-dssl` — все три варианта |
 | `DecisionBlock` | `screens/case-dssl` — четыре носителя |
