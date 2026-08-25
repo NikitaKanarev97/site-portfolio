@@ -155,7 +155,7 @@ const caseMeta = [
 
   <section class="ds-container ds-section">
     <SectionHead eyebrow="MediaFrame · ratio=natural + zoom" size="sm">Кадр в собственном соотношении</SectionHead>
-    <MediaFrame src={home.featured.cover[0]} alt="Кадр экрана в собственном соотношении" ratio="natural" zoom />
+    <MediaFrame src={home.featured.items[0].cover[0]} alt="Кадр экрана в собственном соотношении" ratio="natural" zoom />
     <p class="ds-meta-sm kit__note">
       Соотношение читается из файла на сборке, кадр не режется и не растягивается крупнее
       исходника. Нажатие открывает его в полный размер — MediaZoom, один диалог на маршрут.
@@ -175,7 +175,7 @@ const caseMeta = [
 
   <section class="ds-container ds-section">
     <SectionHead eyebrow="ScreenStack · паттерн" size="sm">Обложка-стопка из трёх кадров</SectionHead>
-    <ScreenStack screens={home.featured.cover} alt="" />
+    <ScreenStack screens={home.featured.items[0].cover} alt="" />
     <p class="ds-meta-sm kit__note">
       Сдвиг вправо-вниз на шаг и два шага, каждый следующий слой у́же и приглушённее.
       Ни поворота, ни перспективы, ни тени — глубину держат сдвиг, обводка и opacity.
@@ -341,7 +341,7 @@ const caseMeta = [
       { term: 'Role', value: 'Design and build', tone: 'strong' },
       { term: 'Stack', value: 'Webflow · GSAP · Client-First' },
     ]}
-    media={{ src: home.featured.cover[0], alt: 'Кадр заглушки' }}
+    media={{ src: home.featured.items[0].cover[0], alt: 'Кадр заглушки' }}
     action={{ href: 'https://example.com', label: 'Live site' }}
     closeLabel="Закрыть"
   />

@@ -46,54 +46,88 @@ export const home = {
     /** Дословно из ia/authorization-copy.md. Не переписывать в отрыве от файла. */
     authorization:
       'Kazakhstan · open to relocation with visa sponsorship, remote until then.',
-    caseEntry: 'Read the case: B2B Partner Portal',
+    /**
+     * С 2026-08-25 открытых кейсов два, и прежняя строка «Read the case:
+     * B2B Partner Portal» называла один из них. Ведёт якорем в секцию
+     * Selected work: выбор между двумя делает читатель, а не шапка.
+     */
+    caseEntry: 'Read the cases',
     cv: 'Download CV (PDF)',
   },
 
+  /**
+   * Открытые кейсы. С 2026-08-25 их два, и секция стала списком: разметка
+   * index.astro повторяет паттерн FeaturedCaseCover по числу записей, новых
+   * компонентов не заводится (ds/screens/case-vet.md §Что этот экран меняет
+   * на главной).
+   *
+   * Порядок — решение владельца 2026-08-25: DSSL первым. Он единственный
+   * дошёл до прода целиком, и это самое сильное, что есть в портфолио.
+   */
   featured: {
     eyebrow: 'Selected work',
-    href: '/work/partner-portal',
-    title: 'B2B Partner Portal — DSSL',
-    outcome:
-      'Partners order without a manager — on top of a legacy system that could not be replaced.',
-    /** Одна строка вайрфрейма, разобранная на пары: MetaList требует ключей. */
-    meta: [
-      { term: 'Product', value: 'Distributor partner portal, redesign' },
-      { term: 'Year', value: '2024–2026' },
-      { term: 'Role', value: 'Product Designer' },
-      { term: 'Platform', value: 'Web, desktop-first' },
-    ],
-    cta: 'Read the case',
-    /**
-     * Обложка-стопка: три кадра живой сборки прототипа, данные synthetic
-     * (D013 проекта b2b-dssl). Порядок — от переднего к дальнему. Тот же
-     * набор стоит на CaseCover: обложка кейса на главной и на самой
-     * странице кейса — один объект, а не два разных снимка.
-     */
-    cover: [
-      '/media/case-dssl/cover/resolution-center.webp',
-      '/media/case-dssl/cover/fulfillment.webp',
-      '/media/case-dssl/cover/dashboard.webp',
-    ],
-    coverAlt:
-      'B2B Partner Portal: specification review screen with forty-eight imported lines and their resolution status, with two more screens of the portal behind it',
-  },
-
-  works: {
-    heading: 'Three more projects. Their cases are not written yet.',
-    lead: 'Listed with what they were and why they are not open. The first full case is above.',
     items: [
       {
-        title: 'Vet Clinic OS',
-        type: 'B2B SaaS for veterinary clinics, desktop-first',
-        year: '2025',
-        role: 'Product Designer',
-        description: [
-          'Several roles working on one dataset: reception, doctor, manager.',
-          'Emergency intake and weight-based dosing — where a wrong number has a price.',
+        href: '/work/partner-portal',
+        title: 'B2B Partner Portal — DSSL',
+        outcome:
+          'Partners order without a manager — on top of a legacy system that could not be replaced.',
+        /** Одна строка вайрфрейма, разобранная на пары: MetaList требует ключей. */
+        meta: [
+          { term: 'Product', value: 'Distributor partner portal, redesign' },
+          { term: 'Year', value: '2024–2026' },
+          { term: 'Role', value: 'Product Designer' },
+          { term: 'Platform', value: 'Web, desktop-first' },
         ],
-        reason: "Not open yet: the visual pass isn't finished. It follows DSSL, by the same template.",
+        cta: 'Read the case',
+        /**
+         * Обложка-стопка: три кадра живой сборки прототипа, данные synthetic
+         * (D013 проекта b2b-dssl). Порядок — от переднего к дальнему. Тот же
+         * набор стоит на CaseCover: обложка кейса на главной и на самой
+         * странице кейса — один объект, а не два разных снимка.
+         */
+        cover: [
+          '/media/case-dssl/cover/resolution-center.webp',
+          '/media/case-dssl/cover/fulfillment.webp',
+          '/media/case-dssl/cover/dashboard.webp',
+        ],
+        coverAlt:
+          'B2B Partner Portal: specification review screen with forty-eight imported lines and their resolution status, with two more screens of the portal behind it',
       },
+      {
+        href: '/work/vet-clinic',
+        title: 'Vet Clinic OS',
+        outcome:
+          'A visit leaves a trace in thirty seconds — the only window a veterinarian actually has.',
+        meta: [
+          { term: 'Product', value: 'Clinic operations SaaS: schedule, record, invoicing' },
+          { term: 'Year', value: '2026' },
+          { term: 'Role', value: 'Product Designer' },
+          { term: 'Platform', value: 'Web, desktop and tablet' },
+        ],
+        cta: 'Read the case',
+        /** Тот же набор, что на CaseCover кейса. Данные на кадрах выдуманы. */
+        cover: [
+          '/media/case-vet/cover/vet-day-queue.webp',
+          '/media/case-vet/cover/patient-card.webp',
+          '/media/case-vet/cover/schedule.webp',
+        ],
+        coverAlt:
+          'Vet Clinic OS: the veterinarian’s queue for the day with three visits still unfinished, with the patient card and the schedule behind it',
+      },
+    ],
+  },
+
+  /**
+   * Список закрытых кейсов. Vet Clinic OS ушёл отсюда 2026-08-25: он
+   * открыт и стоит выше второй обложкой. Заголовок и подводка правятся
+   * вместе с составом — «Three more» при двух записях было бы враньём в
+   * первом же слове секции.
+   */
+  works: {
+    heading: 'Two more projects. Their cases are not written yet.',
+    lead: 'Listed with what they were and why they are not open. The full cases are above.',
+    items: [
       {
         title: 'Pawly',
         type: 'Mobile marketplace for dog walking, iOS / Android',

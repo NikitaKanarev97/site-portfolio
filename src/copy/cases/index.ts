@@ -11,7 +11,8 @@
  * §Решения карты №3).
  */
 import { partnerPortal } from './partner-portal.ts';
+import { vetClinic } from './vet-clinic.ts';
 
-export const cases = [partnerPortal];
+export const cases = [partnerPortal, vetClinic];
 
 export type Case = (typeof cases)[number];

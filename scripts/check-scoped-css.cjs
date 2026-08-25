@@ -23,6 +23,7 @@ const pages = {
   '/': 'dist/index.html',
   '/about': 'dist/about/index.html',
   '/work/partner-portal': 'dist/work/partner-portal/index.html',
+  '/work/vet-clinic': 'dist/work/vet-clinic/index.html',
   '/ru/': 'dist/ru/index.html',
   '/404': 'dist/404.html',
   '/500': 'dist/500.html',

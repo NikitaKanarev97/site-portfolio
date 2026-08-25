@@ -366,6 +366,17 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
     color: var(--text-meta);
   }
 
+  /* Цель нажатия на мобильном не ниже space-12 — то же правило, что у выхода
+     к контакту ниже. Ссылка на прототип — строка в 26 px, и на 360 px это
+     ниже порога; на кейсе DSSL она появилась после приёмки и замер не
+     проходила. **Найдено приёмкой кейса Vet Clinic OS 2026-08-25**, чинится
+     в шаблоне, то есть сразу на обоих кейсах. */
+  .case-prototype > :global(.ds-link) {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--space-12);
+  }
+
   /* Выход к контакту: ссылка принадлежит абзацу над ней — текстовый шаг
      вместо умолчания секции, как в AboutShort на главной. Цель нажатия
      не ниже space-12 на мобильном, как в ряду действий Hero. :global
@@ -379,7 +390,8 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
   }
 
   @media (--bp-md) {
-    .case-outro > :global(.ds-link) {
+    .case-outro > :global(.ds-link),
+    .case-prototype > :global(.ds-link) {
       min-height: 0;
     }
 

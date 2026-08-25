@@ -59,7 +59,7 @@ import { site } from '../copy/site.ts';
     </p>
 
     <div class="hero__actions" data-motion="fade" data-motion-at="0.4">
-      <TextLink href={home.featured.href} type="arrow">{home.hero.caseEntry}</TextLink>
+      <TextLink href="#work" type="arrow">{home.hero.caseEntry}</TextLink>
       <TextLink href="/cv.pdf">{home.hero.cv}</TextLink>
       <CopyEmail email={site.contact.email} appearance="action" />
     </div>
@@ -77,26 +77,37 @@ import { site } from '../copy/site.ts';
   <section class="ds-container ds-section featured" id="work">
     <p class="ds-meta-xs featured__eyebrow ds-flow-eyebrow">{home.featured.eyebrow}</p>
 
-    <a class="featured__link ds-pressable" href={home.featured.href} data-motion-group>
-      <ScreenStack
-        screens={home.featured.cover}
-        alt={home.featured.coverAlt}
-        loading="eager"
-        class="featured__cover"
-      />
+    {
+      home.featured.items.map((item, index) => (
+        <a class="featured__link ds-pressable" href={item.href} data-motion-group>
+          {/*
+            eager только у первой обложки: она стоит в первом экране, вторая
+            уходит за сгиб и грузится по умолчанию.
+          */}
+          <ScreenStack
+            screens={item.cover}
+            alt={item.coverAlt}
+            loading={index === 0 ? 'eager' : 'lazy'}
+            class="featured__cover"
+          />
 
-      <h2 class="ds-heading-3xl featured__title" data-motion="reveal-text">
-        {home.featured.title}
-      </h2>
+          <h2 class="ds-heading-3xl featured__title" data-motion="reveal-text">
+            {item.title}
+          </h2>
 
-      <ProseBlock variant="lead" class="featured__outcome">
-        <p>{home.featured.outcome}</p>
-      </ProseBlock>
+          <ProseBlock variant="lead" class="featured__outcome">
+            <p>{item.outcome}</p>
+          </ProseBlock>
 
-      <MetaList items={home.featured.meta} layout="inline" class="featured__meta" />
+          <MetaList items={item.meta} layout="inline" class="featured__meta" />
 
-      <span class="featured__cta ds-body-base">{home.featured.cta}<span aria-hidden="true"> →</span></span>
-    </a>
+          <span class="featured__cta ds-body-base">
+            {item.cta}
+            <span aria-hidden="true"> →</span>
+          </span>
+        </a>
+      ))
+    }
   </section>
 
   {/*
@@ -308,6 +319,14 @@ import { site } from '../copy/site.ts';
     display: block;
     color: inherit;
     text-decoration: none;
+  }
+
+  /* Кейс к кейсу — секционный шаг, а не узловой. Умолчание секции
+     (`--flow-block`, 64) ставило вторую обложку почти вплотную к CTA
+     первой, и две карточки читались одной. Каждая здесь — целый кейс,
+     промежуток между ними того же порядка, что между секциями. */
+  .featured__link + .featured__link {
+    margin-block-start: var(--section-gap);
   }
 
   /* Фокус-кольцо на обёртке, не на картинке. */
