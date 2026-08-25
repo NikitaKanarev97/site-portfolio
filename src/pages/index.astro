@@ -103,7 +103,7 @@ import { site } from '../copy/site.ts';
 
           <span class="featured__cta ds-body-base">
             {item.cta}
-            <span aria-hidden="true"> →</span>
+            <span class="featured__cta-arrow" aria-hidden="true">→</span>
           </span>
         </a>
       ))
@@ -376,13 +376,20 @@ import { site } from '../copy/site.ts';
     margin-block-start: var(--flow-text);
   }
 
-  /* CTA — часть той же ссылки, не вторая ссылка рядом. Подчёркивание ведёт
-     себя как у TextLink: приходит слева, уходит вправо. */
+  /* CTA — часть той же ссылки, не вторая ссылка рядом. Как у TextLink,
+     подчёркивание приходит слева и уходит вправо, стрелка сдвигается. */
   .featured__cta {
-    display: inline-block;
+    display: inline-flex;
+    align-items: baseline;
+    gap: var(--space-2);
     position: relative;
     margin-block-start: var(--flow-text);
     color: var(--text-link);
+  }
+
+  .featured__cta-arrow {
+    display: inline-block;
+    transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
   }
 
   .featured__cta::after {
@@ -408,6 +415,10 @@ import { site } from '../copy/site.ts';
     .featured__link:hover .featured__cta::after {
       transform: scaleX(1);
       transform-origin: left;
+    }
+
+    .featured__link:hover .featured__cta-arrow {
+      transform: translateX(var(--space-1));
     }
   }
 
