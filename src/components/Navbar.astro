@@ -22,6 +22,7 @@
  */
 import TextLink from './TextLink.astro';
 import { token } from '../lib/tokens.ts';
+import logoMarkup from '../../Images/logo-portfolio.svg?raw';
 
 interface NavItem {
   label: string;
@@ -68,7 +69,9 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
 
 <header class="navbar" data-navbar data-navbar-desktop={DESKTOP_MEDIA}>
   <div class="ds-container navbar__bar">
-    <a class="navbar__brand ds-heading-xl" href={brandHref}>{brand}</a>
+    <a class="navbar__brand" href={brandHref} aria-label={brand}>
+      <span class="navbar__brand-logo" aria-hidden="true" set:html={logoMarkup} />
+    </a>
 
     <nav class="navbar__desktop" aria-label={label}>
       <ul class="navbar__list">
@@ -130,8 +133,8 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
     padding-block: var(--space-6);
   }
 
-  /* Наведения у имени нет намеренно: подчёркивание Строки принадлежит
-     пунктам навигации, а имя — не пункт. Нажатие есть у всех целей без
+  /* Наведения у знака нет намеренно: подчёркивание Строки принадлежит
+     пунктам навигации, а логотип — не пункт. Нажатие есть у всех целей без
      исключения — оно подтверждает приём тапа, а не обещает переход. */
   .navbar__brand {
     display: inline-flex;
@@ -140,6 +143,16 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
     color: var(--text-default);
     text-decoration: none;
     transition: color var(--motion-hover-duration) var(--motion-hover-ease);
+  }
+
+  .navbar__brand-logo {
+    display: block;
+    block-size: var(--space-12);
+  }
+
+  .navbar__brand-logo :global(svg) {
+    inline-size: auto;
+    block-size: 100%;
   }
 
   .navbar__brand:active {

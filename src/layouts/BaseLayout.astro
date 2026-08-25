@@ -17,6 +17,7 @@ import Navbar from '../components/Navbar.astro';
 import { PREVIEW_NOINDEX, site } from '../copy/site';
 import { OG_HEIGHT, OG_WIDTH, ogImage as ogImageFor, ogImageAlt } from '../copy/og.ts';
 import { alternatesFor, canonicalPath } from '../copy/routes.ts';
+import logoUrl from '../../Images/logo-portfolio.svg?url';
 
 import '../styles/tokens.css';
 import '../styles/fonts.css';
@@ -79,6 +80,7 @@ const image = new URL(ogImageFor(ogCard), Astro.site);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="icon" href={logoUrl} type="image/svg+xml" />
     {canonical && <link rel="canonical" href={canonicalUrl} />}
 
     {/*
@@ -151,7 +153,7 @@ const image = new URL(ogImageFor(ogCard), Astro.site);
 
   <body>
     <a class="ds-skip-link" href="#main">Skip to content</a>
-    {nav && <Navbar current={current} />}
+    {nav && <Navbar brand={site.brand} items={[...site.nav]} current={current} />}
     <main id="main" tabindex="-1">
       <slot />
     </main>
