@@ -294,15 +294,35 @@ import { site } from '../copy/site.ts';
     min-height: var(--space-12);
   }
 
+  /* CopyEmail сам является flex-контейнером: общее центрирование цели
+     выше не должно центрировать кнопку и адрес внутри его мобильной
+     колонки. */
+  .hero__actions > :global(.copy-email--action) {
+    align-items: flex-start;
+  }
+
   @media (--bp-md) {
     .hero__actions {
       flex-direction: row;
       align-items: baseline;
-      gap: var(--space-8);
+      /* На нижней границе tablet три действия и адрес занимают почти всю
+         колонку. Узкий системный шаг сохраняет ряд без переноса подписей;
+         desktop возвращает исходный простор ниже. */
+      gap: var(--space-4);
     }
 
     .hero__actions > :global(*) {
       min-height: 0;
+    }
+
+    .hero__actions > :global(.copy-email--action) {
+      align-items: baseline;
+    }
+  }
+
+  @media (--bp-lg) {
+    .hero__actions {
+      gap: var(--space-8);
     }
   }
 

@@ -115,9 +115,13 @@ const [addressLocal, addressDomain] = email.split('@');
   }
 
   .copy-email--action {
-    flex-direction: row;
-    align-items: center;
-    gap: var(--space-3);
+    /* На mobile адрес не конкурирует с подписью кнопки за одну строку:
+       на 360 px длинный email сжимал `Copy email` до 33 px и четырёх
+       строк. Это та же самостоятельная мобильная раскладка, что у
+       внешнего ряда действий Hero. */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
   }
 
   /* Цель нажатия на мобильном — не ниже space-12 (ds/screens/home.md,
@@ -131,7 +135,9 @@ const [addressLocal, addressDomain] = email.split('@');
 
   @media (--bp-md) {
     .copy-email--action {
+      flex-direction: row;
       align-items: baseline;
+      gap: var(--space-3);
     }
 
     .copy-email--action .copy-email__button {
