@@ -220,7 +220,7 @@ export const partnerPortal = {
     /** CASE-10, US-18: состояния в подписи обязательны. */
     grid: [
       {
-        src: `${media}/system-product-row.webp`,
+        src: `${media}/system-product-row-v2.webp`,
         alt: 'Product row in both contexts and all of its states',
         component: 'ProductRow',
         states: 'Cart / Browse × default · attention · disabled · added',
@@ -238,10 +238,10 @@ export const partnerPortal = {
         states: 'verified · stale · not confirmed × unchanged / changed',
       },
       {
-        src: `${media}/system-resolution-row.webp`,
-        alt: 'Resolution row in its four identity states',
+        src: `${media}/system-resolution-row-v2.webp`,
+        alt: 'Resolution row in its four identity states and its separate parse-error state',
         component: 'ResolutionRow',
-        states: 'exact · ambiguous · missing · changed',
+        states: 'exact · ambiguous · missing · changed + parse error',
       },
       {
         src: `${media}/system-fulfillment-plan.webp`,

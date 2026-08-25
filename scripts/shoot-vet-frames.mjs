@@ -77,7 +77,6 @@ const COVER_DIR = path.join(MEDIA_DIR, 'cover');
  */
 const SCREEN_FRAMES = [
   { file: 'vet-day-queue.webp', route: '/app/vet-day-queue' },
-  { file: 'patient-card.webp', route: '/app/patient-card' },
   { file: 'schedule.webp', route: '/app/schedule' },
 ];
 
@@ -87,7 +86,13 @@ const NATURAL_FRAMES = [
   { file: 'visit-quick-trace.webp', route: '/app/visit-quick-trace' },
   { file: 'dose-calculator.webp', route: '/app/dose-calculator' },
   { file: 'discharge-preview.webp', route: '/app/discharge-preview' },
-  { file: 'patient-card-private.webp', route: '/app/patient-card' },
+  {
+    file: 'patient-card-private.webp',
+    route: '/app/patient-card',
+    /** Обложка берёт верх того же полного кадра: второй независимый снимок
+     * однажды поймал экран со сдвинутым viewport и отрезал навигацию слева. */
+    cover: 'patient-card.webp',
+  },
 ];
 
 /**
@@ -224,6 +229,17 @@ async function shoot() {
       .resize({ width: NATURAL_MAX, withoutEnlargement: true })
       .webp({ quality: WEBP_QUALITY })
       .toFile(out);
+
+    if (frame.cover) {
+      const { width, height } = await sharp(out).metadata();
+      if (width !== VIEWPORT_OUTPUT.width || height < VIEWPORT_OUTPUT.height) {
+        throw new Error(`Кадр ${frame.file} не покрывает обложку ${VIEWPORT_OUTPUT.width}×${VIEWPORT_OUTPUT.height}`);
+      }
+      await sharp(out)
+        .extract({ left: 0, top: 0, width: VIEWPORT_OUTPUT.width, height: VIEWPORT_OUTPUT.height })
+        .webp({ quality: WEBP_QUALITY })
+        .toFile(path.join(COVER_DIR, frame.cover));
+    }
 
     console.log(frame.route);
     await report(out);

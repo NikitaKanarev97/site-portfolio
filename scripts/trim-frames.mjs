@@ -26,8 +26,8 @@ import sharp from 'sharp';
 /** Та же норма поля, что у кадров-фрагментов в scripts/shoot-case-frames.mjs. */
 const TRIM_MARGIN = 24;
 const WEBP_QUALITY = 82;
-/** Ниже этой доли заполнения кадр считается неверно снятым. */
-const FILL_THRESHOLD = 0.9;
+/** Допуск для WebP: компрессия может съесть один пиксель белого поля. */
+const MARGIN_TOLERANCE = 1;
 
 const MEDIA_DIR = path.resolve('public/media/case-dssl');
 
@@ -36,29 +36,44 @@ const MEDIA_DIR = path.resolve('public/media/case-dssl');
  * Кадры экранов сюда не входят — у них поле не пустое, а часть интерфейса.
  */
 const FRAMES = [
-  'system-product-row.webp',
+  'system-product-row-v2.webp',
   'system-price-block.webp',
   'system-availability.webp',
-  'system-resolution-row.webp',
+  'system-resolution-row-v2.webp',
   'system-fulfillment-plan.webp',
   'system-empty-state.webp',
   'storybook-matrix.webp',
 ];
 
-async function fillRatio(file) {
+async function frameBounds(file) {
   const image = sharp(file);
   const { width, height } = await image.metadata();
   const { info } = await image.trim({ threshold: 8 }).toBuffer({ resolveWithObject: true });
-  return { width, height, ratio: (info.width * info.height) / (width * height) };
+  const left = -info.trimOffsetLeft;
+  const top = -info.trimOffsetTop;
+  return {
+    width,
+    height,
+    contentWidth: info.width,
+    contentHeight: info.height,
+    margins: {
+      top,
+      right: width - info.width - left,
+      bottom: height - info.height - top,
+      left,
+    },
+  };
 }
 
 async function run() {
   for (const name of FRAMES) {
     const file = path.join(MEDIA_DIR, name);
-    const before = await fillRatio(file);
+    const before = await frameBounds(file);
+    const hasMargin = Object.values(before.margins)
+      .every((margin) => margin >= TRIM_MARGIN - MARGIN_TOLERANCE);
 
-    if (before.ratio >= FILL_THRESHOLD) {
-      console.log(`${name}: ${Math.round(before.ratio * 100)}% — поля нет, кадр не трогаем`);
+    if (hasMargin) {
+      console.log(`${name}: поле ${TRIM_MARGIN}px уже есть — кадр не трогаем`);
       continue;
     }
 
@@ -78,7 +93,7 @@ async function run() {
     await sharp(trimmed).toFile(file);
     const { width, height } = await sharp(file).metadata();
     console.log(
-      `${name}: ${Math.round(before.ratio * 100)}% → обрезан, ` +
+      `${name}: неравные поля ${Object.values(before.margins).join('/')}px → нормализованы, ` +
         `${before.width}×${before.height} → ${width}×${height}`,
     );
   }
