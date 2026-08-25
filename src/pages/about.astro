@@ -10,10 +10,11 @@
  * паттернов ds/patterns.md. Тексты — src/copy/about.ts, сквозные —
  * src/copy/site.ts. Оболочка, ContactBlock и Footer — PageShell.
  *
- * Порядок блоков — предмет проектирования, а не вкуса. Портрет стоит НИЖЕ
- * линии сгиба: первый экран несёт текст, и текст обязан работать сам, а не
- * как подпись к фотографии. Право на работу идёт сразу за портретом — за
- * развёрнутым ответом на формальный фильтр сюда и приходят.
+ * Порядок блоков — предмет проектирования, а не вкуса. Портрет стоит после
+ * тезиса и одного доказательного абзаца: первый экран несёт текст, но на
+ * мобильном фотография не ждёт конца всей длинной главы. Право на работу
+ * идёт сразу за портретом; два оставшихся абзаца практики образуют
+ * самостоятельный блок ниже формального фильтра.
  *
  * Движение — карта ds/motion-concept.md §7. Вступительного такта на этом
  * маршруте нет вовсе: он живёт только на Hero главной (§5, §7), прямой
@@ -35,9 +36,10 @@ import { about } from '../copy/about.ts';
   contactLead={about.contactLead}
 >
   {/*
-    AboutIntro, текстовая часть. Один каскад из трёх участников: заголовок
-    и ведущий абзац — Набор, три абзаца — opacity целым блоком. Три
-    отдельных ProseBlock дали бы три меры и три такта на одном пороге.
+    AboutIntro, текстовая часть. Один каскад из трёх участников: заголовок,
+    ведущий абзац и один конкретный пример работы с ограничением. Этого
+    достаточно, чтобы первый экран работал сам, не превращая портрет в
+    награду после трёх экранов текста на мобильном.
   */}
   <section class="ds-container ds-section intro" data-motion-group data-motion-stagger="tight">
     <h1 class="ds-heading-4xl intro__heading ds-flow-heading" data-motion="reveal-text">
@@ -49,7 +51,7 @@ import { about } from '../copy/about.ts';
     </ProseBlock>
 
     <ProseBlock class="intro__body">
-      {about.intro.body.map((paragraph) => <p>{paragraph}</p>)}
+      <p>{about.intro.principle}</p>
     </ProseBlock>
   </section>
 
@@ -89,6 +91,19 @@ import { about } from '../copy/about.ts';
 
     <ProseBlock>
       <p>{about.authorization.body}</p>
+    </ProseBlock>
+  </section>
+
+  {/*
+    AboutEvidence. Два абзаца про ошибки и измерение вынесены из Intro:
+    это один смысловой блок о том, какие утверждения автор готов защищать.
+    Перенос не добавляет фактов и делает формальный фильтр доступным раньше.
+  */}
+  <section class="ds-container ds-section evidence" data-motion-group data-motion-stagger="tight">
+    <SectionHead size="lg">{about.evidence.heading}</SectionHead>
+
+    <ProseBlock>
+      {about.evidence.body.map((paragraph) => <p>{paragraph}</p>)}
     </ProseBlock>
   </section>
 
@@ -143,10 +158,10 @@ import { about } from '../copy/about.ts';
   }
 
   /* ---------------------------------------------------------------- *
-   * AboutAuthorization и AboutAI                                      *
+   * AboutAuthorization, AboutEvidence и AboutAI                       *
    * ---------------------------------------------------------------- */
 
-  /* Оба блока — заголовок и колонка текста, одинаковая пара. Шаг между
+  /* Три блока — заголовок и колонка текста, одинаковая пара. Шаг между
      ними задаёт ds-flow-heading, и он тот же, что в шапке кейса и на
      главной: с 2026-08-24 у пары «заголовок → тело» одно значение на
      весь продукт. */
