@@ -62,6 +62,7 @@
 import { px } from '../lib/tokens.ts';
 import { frameSize } from '../lib/media.ts';
 import { site } from '../copy/site.ts';
+import { siteRu } from '../copy/ru/site.ts';
 
 interface Props {
   src: string;
@@ -103,7 +104,11 @@ const {
 } = Astro.props;
 
 const hasCaption = Astro.slots.has('caption');
-const zoomLabel = site.zoom.open;
+// Подпись берётся из словаря локали, а не пишется здесь литералом:
+// перевод обязан жить в одном месте с остальными строками зума.
+const zoomLabel = Astro.url.pathname.startsWith('/ru')
+  ? siteRu.zoom.open
+  : site.zoom.open;
 
 /**
  * Собственные размеры кадра нужны только варианту natural. Видео своих

@@ -29,11 +29,28 @@ import ProseBlock from '../components/ProseBlock.astro';
 import SectionHead from '../components/SectionHead.astro';
 import TextLink from '../components/TextLink.astro';
 import CopyEmail from '../components/CopyEmail.astro';
-import { home } from '../copy/home.ts';
-import { site } from '../copy/site.ts';
+import { home as homeEn } from '../copy/home.ts';
+import { homeRu } from '../copy/ru/home.ts';
+import { site as siteEn, type SiteCopy } from '../copy/site.ts';
+import { siteRu } from '../copy/ru/site.ts';
+
+interface Props {
+  locale?: 'en' | 'ru';
+}
+
+const { locale = 'en' } = Astro.props;
+const home = locale === 'ru' ? homeRu : homeEn;
+const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
 ---
 
-<PageShell title={home.meta.title} description={home.meta.description}>
+<PageShell
+  title={home.meta.title}
+  description={home.meta.description}
+  lang={locale}
+  current={locale === 'ru' ? '/ru/' : '/'}
+  siteCopy={site}
+  ogCard={locale === 'ru' ? 'default-ru' : 'default'}
+>
   {/*
     Hero. Вступительный такт: имя, роль, специализация и авторизация идут
     автоматическим шагом каскада, ряд действий — явной позицией 0.4.
@@ -59,8 +76,16 @@ import { site } from '../copy/site.ts';
 
     <div class="hero__actions" data-motion="fade" data-motion-at="0.4">
       <TextLink href="#work" type="arrow">{home.hero.caseEntry}</TextLink>
-      <TextLink href="/cv.pdf">{home.hero.cv}</TextLink>
-      <CopyEmail email={site.contact.email} appearance="action" />
+      <TextLink href={locale === 'ru' ? '/cv-ru.pdf' : '/cv.pdf'}>{home.hero.cv}</TextLink>
+      <CopyEmail
+        email={site.contact.email}
+        appearance="action"
+        label={site.contact.copyLabel}
+        hint={site.contact.copyHint}
+        copiedLabel={site.contact.copiedLabel}
+        announce={site.contact.announce}
+        fallbackAnnounce={site.contact.fallbackAnnounce}
+      />
     </div>
   </section>
 

@@ -29,6 +29,10 @@ interface NavItem {
   href: string;
 }
 
+interface LocaleOption extends NavItem {
+  active: boolean;
+}
+
 interface Props {
   brand?: string;
   brandHref?: string;
@@ -38,6 +42,8 @@ interface Props {
   label?: string;
   triggerLabel?: string;
   closeLabel?: string;
+  localeLabel?: string;
+  locales?: LocaleOption[];
 }
 
 const {
@@ -52,6 +58,8 @@ const {
   label = 'Main navigation',
   triggerLabel = 'Menu',
   closeLabel = 'Close menu',
+  localeLabel = 'Language',
+  locales = [],
 } = Astro.props;
 
 const isActive = (href: string) => current !== undefined && href === current;
@@ -84,6 +92,17 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
             </li>
           ))
         }
+        {
+          locales.length > 1 && (
+            <li class="navbar__locale" role="group" aria-label={localeLabel}>
+              {locales.map((locale) => (
+                <TextLink href={locale.href} type="nav" active={locale.active}>
+                  {locale.label}
+                </TextLink>
+              ))}
+            </li>
+          )
+        }
       </ul>
     </nav>
 
@@ -111,6 +130,17 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
               </TextLink>
             </li>
           ))
+        }
+        {
+          locales.length > 1 && (
+            <li class="navbar__locale navbar__locale--mobile" role="group" aria-label={localeLabel}>
+              {locales.map((locale) => (
+                <TextLink href={locale.href} type="nav" active={locale.active}>
+                  <span class="ds-heading-2xl">{locale.label}</span>
+                </TextLink>
+              ))}
+            </li>
+          )
         }
       </ul>
     </nav>
@@ -162,7 +192,16 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
 
   .navbar__list {
     display: flex;
+    align-items: center;
     gap: var(--space-8);
+  }
+
+  .navbar__locale {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding-inline-start: var(--space-6);
+    border-inline-start: var(--border-width) solid var(--border-default);
   }
 
   .navbar__desktop {
@@ -228,6 +267,14 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
     display: flex;
     flex-direction: column;
     gap: var(--space-6);
+  }
+
+  .navbar__locale--mobile {
+    margin-block-start: var(--flow-node);
+    padding-inline-start: 0;
+    padding-block-start: var(--flow-node);
+    border-inline-start: 0;
+    border-block-start: var(--border-width) solid var(--border-default);
   }
 
   /* Цель нажатия пункта — не ниже space-12, как в остальных мобильных

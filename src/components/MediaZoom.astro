@@ -32,14 +32,15 @@
  * на подложке и на кадре. Нового движения словарь не получает: открытие
  * диалога — смена состояния страницы, а не появление содержимого.
  */
-import { site } from '../copy/site.ts';
+import { site, type SiteCopy } from '../copy/site.ts';
 
 interface Props {
   class?: string;
+  zoomCopy?: SiteCopy['zoom'];
 }
 
-const { class: className } = Astro.props;
-const { zoom } = site;
+const { class: className, zoomCopy = site.zoom } = Astro.props;
+const zoom = zoomCopy;
 ---
 
 <dialog class:list={['media-zoom', className]} data-media-zoom aria-label={zoom.label}>

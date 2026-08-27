@@ -34,12 +34,20 @@ import NoteBlock from '../../components/NoteBlock.astro';
 import DecisionBlock from '../../components/DecisionBlock.astro';
 import TextLink from '../../components/TextLink.astro';
 import { cases } from '../../copy/cases/index.ts';
+import { site as siteEn, type SiteCopy } from '../../copy/site.ts';
+import { siteRu } from '../../copy/ru/site.ts';
 
 export function getStaticPaths() {
   return cases.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
 }
 
-const { entry } = Astro.props;
+interface Props {
+  entry: any;
+  locale?: 'en' | 'ru';
+}
+
+const { entry, locale = 'en' } = Astro.props;
+const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
 const { header, cover, context, reframe, process, failure, decisions, system, result, outro } =
   entry;
 ---
@@ -47,8 +55,10 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
 <PageShell
   title={entry.meta.title}
   description={entry.meta.description}
-  ogCard={`work-${entry.slug}`}
-  current="/work"
+  ogCard={`work-${entry.slug}${locale === 'ru' ? '-ru' : ''}`}
+  lang={locale}
+  current={locale === 'ru' ? '/ru/work' : '/work'}
+  siteCopy={site}
 >
   {/*
     CaseHeader (ds/patterns.md). Порядок не переставляется: суть → мета →
@@ -123,7 +133,7 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
   <section class="ds-container ds-section case-block">
     <SectionHead size="sm">{context.heading}</SectionHead>
     <ProseBlock>
-      {context.body.map((paragraph) => <p>{paragraph}</p>)}
+      {context.body.map((paragraph: string) => <p>{paragraph}</p>)}
     </ProseBlock>
   </section>
 
@@ -131,7 +141,7 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
   <section class="ds-container ds-section case-block">
     <SectionHead size="sm">{reframe.heading}</SectionHead>
     <ProseBlock>
-      {reframe.body.map((paragraph) => <p>{paragraph}</p>)}
+      {reframe.body.map((paragraph: string) => <p>{paragraph}</p>)}
     </ProseBlock>
     <NoteBlock variant="emphasis">{reframe.statement}</NoteBlock>
   </section>
@@ -139,7 +149,7 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
   <section class="ds-container ds-section case-block">
     <SectionHead size="sm">{process.heading}</SectionHead>
     <ProseBlock>
-      {process.body.map((paragraph) => <p>{paragraph}</p>)}
+      {process.body.map((paragraph: string) => <p>{paragraph}</p>)}
     </ProseBlock>
 
     {/*
@@ -163,7 +173,7 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
 
     <div class="case-artifacts" data-motion-group data-motion-stagger="tight">
       {
-        process.artifacts.map((artifact) => (
+        process.artifacts.map((artifact: any) => (
           <figure class="case-artifact">
             <MediaFrame src={artifact.src} alt={artifact.alt} ratio="natural" zoom />
             <figcaption class="ds-meta-sm case-caption">{artifact.caption}</figcaption>
@@ -181,7 +191,7 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
   <section class="ds-container ds-section case-block">
     <SectionHead size="sm">{failure.heading}</SectionHead>
     <ProseBlock>
-      {failure.body.map((paragraph) => <p>{paragraph}</p>)}
+      {failure.body.map((paragraph: string) => <p>{paragraph}</p>)}
     </ProseBlock>
   </section>
 
@@ -191,13 +201,13 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
 
     <div class="case-decisions" data-motion-group data-motion-stagger="base">
       {
-        decisions.items.map((item) => (
+        decisions.items.map((item: any) => (
           <DecisionBlock
             decision={item.decision}
             why={item.why}
             cost={item.cost}
-            whyLabel="Why"
-            costLabel="Cost"
+            whyLabel={locale === 'ru' ? 'Почему' : 'Why'}
+            costLabel={locale === 'ru' ? 'Цена' : 'Cost'}
           >
             {item.artifact && (
               <figure slot="artifact" class="case-artifact">
@@ -219,12 +229,12 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
   <section class="ds-container ds-section case-block">
     <SectionHead size="sm">{system.heading}</SectionHead>
     <ProseBlock>
-      {system.body.map((paragraph) => <p>{paragraph}</p>)}
+      {system.body.map((paragraph: string) => <p>{paragraph}</p>)}
     </ProseBlock>
 
     <div class="case-system" data-motion-group data-motion-stagger="tight">
       {
-        system.grid.map((cell) => (
+        system.grid.map((cell: any) => (
           <figure class="case-artifact">
             <MediaFrame src={cell.src} alt={cell.alt} ratio="natural" zoom />
             <figcaption class="ds-meta-sm case-caption">
@@ -267,7 +277,7 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
     читаются, а зумить страницу колесом никто не станет. Открывают его
     кнопки, которые рисует MediaFrame при zoom.
   */}
-  <MediaZoom />
+  <MediaZoom zoomCopy={site.zoom} />
 </PageShell>
 
 <style>

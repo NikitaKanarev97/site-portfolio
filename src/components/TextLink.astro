@@ -31,6 +31,8 @@ interface Props {
   /** Ссылка на тёмной поверхности — text-link-on-inverse. */
   onInverse?: boolean;
   class?: string;
+  /** Скрытая подпись внешней ссылки; по умолчанию определяется из URL. */
+  externalLabel?: string;
 }
 
 const {
@@ -40,6 +42,9 @@ const {
   active = false,
   onInverse = false,
   class: className,
+  externalLabel = Astro.url.pathname.startsWith('/ru')
+    ? '(внешняя ссылка, откроется в новой вкладке)'
+    : '(external link, opens in a new tab)',
 } = Astro.props;
 ---
 
@@ -57,7 +62,7 @@ const {
 >
   <span class="ds-link__label"><slot /></span>
   {external && <span class="ds-link__external" aria-hidden="true">↗</span>}
-  {external && <span class="ds-visually-hidden">(external link, opens in a new tab)</span>}
+  {external && <span class="ds-visually-hidden">{externalLabel}</span>}
   {type === 'arrow' && <span class="ds-link__arrow" aria-hidden="true">→</span>}
   {(type === 'nav' || type === 'arrow') && <span class="ds-link__rule" aria-hidden="true"></span>}
 </a>

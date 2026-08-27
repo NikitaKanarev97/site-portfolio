@@ -37,7 +37,7 @@ import ProseBlock from '../components/ProseBlock.astro';
 import CopyEmail from '../components/CopyEmail.astro';
 import TextLink from '../components/TextLink.astro';
 import Footer from '../components/Footer.astro';
-import { site } from '../copy/site.ts';
+import { site, type SiteCopy } from '../copy/site.ts';
 
 interface Props {
   title: string;
@@ -70,6 +70,7 @@ interface Props {
    */
   contactHeading?: string;
   contactCopy?: {
+    copyLabel?: string;
     copyHint?: string;
     copiedLabel?: string;
     announce?: string;
@@ -77,6 +78,8 @@ interface Props {
   };
   /** Движение. 404 идёт без него вовсе (ds/motion-concept.md §7). */
   motion?: boolean;
+  /** Локализованный слой сквозных строк. */
+  siteCopy?: SiteCopy;
 }
 
 const {
@@ -89,11 +92,15 @@ const {
   current,
   nav = true,
   contact = true,
-  contactLead = site.contact.lead,
-  contactHeading = site.contact.heading,
+  siteCopy: siteCopyProp = site,
+  contactLead,
+  contactHeading,
   contactCopy,
   motion = true,
 } = Astro.props;
+const siteCopy: SiteCopy = siteCopyProp;
+const resolvedContactLead = contactLead ?? siteCopy.contact.lead;
+const resolvedContactHeading = contactHeading ?? siteCopy.contact.heading;
 ---
 
 <BaseLayout
@@ -105,6 +112,7 @@ const {
   canonical={canonical}
   current={current}
   nav={nav}
+  siteCopy={siteCopy}
 >
   <slot />
 
@@ -116,25 +124,26 @@ const {
         data-motion={motion ? 'fade' : undefined}
       >
         <SectionHead size="lg" reveal={false}>
-          {contactHeading}
+          {resolvedContactHeading}
         </SectionHead>
 
         <ProseBlock motion={false} class="contact__lead">
-          <p>{contactLead}</p>
+          <p>{resolvedContactLead}</p>
         </ProseBlock>
 
         <CopyEmail
-          email={site.contact.email}
+          email={siteCopy.contact.email}
           appearance="address"
-          hint={contactCopy?.copyHint}
-          copiedLabel={contactCopy?.copiedLabel}
-          announce={contactCopy?.announce}
-          fallbackAnnounce={contactCopy?.fallbackAnnounce}
+          label={contactCopy?.copyLabel ?? siteCopy.contact.copyLabel}
+          hint={contactCopy?.copyHint ?? siteCopy.contact.copyHint}
+          copiedLabel={contactCopy?.copiedLabel ?? siteCopy.contact.copiedLabel}
+          announce={contactCopy?.announce ?? siteCopy.contact.announce}
+          fallbackAnnounce={contactCopy?.fallbackAnnounce ?? siteCopy.contact.fallbackAnnounce}
           class="contact__email"
         />
 
         <ul class="contact__links">
-          {site.contact.links.map((link) => (
+          {siteCopy.contact.links.map((link) => (
             <li>
               <TextLink href={link.href} external={link.external}>
                 {link.label}
@@ -148,11 +157,11 @@ const {
 
   <Fragment slot="footer">
     <Footer
-      location={site.footer.location}
-      utcLabel={site.footer.utcLabel}
-      timeZone={site.footer.timeZone}
-      timeLabel={site.footer.timeLabel}
-      copyright={site.footer.copyright}
+      location={siteCopy.footer.location}
+      utcLabel={siteCopy.footer.utcLabel}
+      timeZone={siteCopy.footer.timeZone}
+      timeLabel={siteCopy.footer.timeLabel}
+      copyright={siteCopy.footer.copyright}
     />
   </Fragment>
 </BaseLayout>

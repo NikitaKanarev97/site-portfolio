@@ -33,8 +33,50 @@ export const NAME = 'Nikita Kanarev';
 export const EMAIL = 'nikita.kanarev.dev@outlook.com';
 export const LINKEDIN = 'https://www.linkedin.com/in/nikita-kanarev/';
 
+export interface SiteCopy {
+  brand: string;
+  accessibility: { skipToContent: string; noscript: string };
+  navigation: {
+    label: string;
+    trigger: string;
+    close: string;
+    languageLabel: string;
+  };
+  nav: readonly { label: string; href: string }[];
+  contact: {
+    heading: string;
+    lead: string;
+    email: string;
+    links: readonly { label: string; href: string; external: boolean }[];
+    copyLabel?: string;
+    copyHint?: string;
+    copiedLabel?: string;
+    announce?: string;
+    fallbackAnnounce?: string;
+  };
+  zoom: { label: string; open: string; close: string };
+  footer: {
+    location: string;
+    utcLabel: string;
+    timeZone: string;
+    timeLabel: string;
+    copyright: string;
+  };
+}
+
 export const site = {
   brand: NAME,
+  accessibility: {
+    skipToContent: 'Skip to content',
+    noscript:
+      'This site works without JavaScript: every piece of text and every link is available. The script only drives motion.',
+  },
+  navigation: {
+    label: 'Main navigation',
+    trigger: 'Menu',
+    close: 'Close menu',
+    languageLabel: 'Language',
+  },
   /** Три пункта, не четыре: Development появляется вместе с /development в v1.1. */
   nav: [
     { label: 'Work', href: '/#work' },
@@ -69,7 +111,7 @@ export const site = {
     timeLabel: 'local time',
     copyright: '© 2026',
   },
-} as const;
+} as const satisfies SiteCopy;
 
 /**
  * Preview-режим деплоя (PLAYBOOK-site-portfolio.md §5 Чат 3).
@@ -77,7 +119,7 @@ export const site = {
  * Пока true — каждая страница отдаёт <meta name="robots" content="noindex, nofollow">,
  * а /robots.txt закрывает сайт целиком. Снимается в боевом деплое (Чат 10)
  * одним коммитом вместе с доменом в astro.config.mjs: канонические URL и
- * индексация должны включиться в один момент, иначе поисковик увидит
- * example.com.
+ * индексация должны включиться в один момент. Домен kanarev.com подключён,
+ * поэтому публичные EN/RU-маршруты открыты для индексации.
  */
-export const PREVIEW_NOINDEX = true;
+export const PREVIEW_NOINDEX = false;

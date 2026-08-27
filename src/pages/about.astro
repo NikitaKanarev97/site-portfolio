@@ -25,15 +25,28 @@ import PageShell from '../layouts/PageShell.astro';
 import MediaFrame from '../components/MediaFrame.astro';
 import ProseBlock from '../components/ProseBlock.astro';
 import SectionHead from '../components/SectionHead.astro';
-import { about } from '../copy/about.ts';
+import { about as aboutEn } from '../copy/about.ts';
+import { aboutRu } from '../copy/ru/about.ts';
+import { site as siteEn, type SiteCopy } from '../copy/site.ts';
+import { siteRu } from '../copy/ru/site.ts';
+
+interface Props {
+  locale?: 'en' | 'ru';
+}
+
+const { locale = 'en' } = Astro.props;
+const about = locale === 'ru' ? aboutRu : aboutEn;
+const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
 ---
 
 <PageShell
   title={about.meta.title}
   description={about.meta.description}
-  ogCard="about"
-  current="/about"
+  ogCard={locale === 'ru' ? 'about-ru' : 'about'}
+  current={locale === 'ru' ? '/ru/about' : '/about'}
   contactLead={about.contactLead}
+  lang={locale}
+  siteCopy={site}
 >
   {/*
     AboutIntro, текстовая часть. Один каскад из трёх участников: заголовок,

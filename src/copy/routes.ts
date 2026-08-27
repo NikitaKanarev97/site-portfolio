@@ -45,7 +45,7 @@ const LOCALE_HREFLANG: Record<Locale, string> = { en: 'en', ru: 'ru' };
  * маршрут снимается со сборки. Индексируемая заглушка — третий вариант,
  * и он неверный.
  */
-export const RU_PUBLISHED = false;
+export const RU_PUBLISHED = true;
 
 export interface RouteDef {
   /** Путь БЕЗ префикса локали, всегда с ведущим слешем. */
@@ -65,10 +65,10 @@ export interface RouteDef {
  */
 export const ROUTES: readonly RouteDef[] = [
   { path: '/', locales: ['en', 'ru'], sitemap: true, priority: 1.0 },
-  { path: '/about', locales: ['en'], sitemap: true, priority: 0.8 },
+  { path: '/about', locales: ['en', 'ru'], sitemap: true, priority: 0.8 },
   ...cases.map((entry) => ({
     path: `/work/${entry.slug}`,
-    locales: ['en'] as const,
+    locales: ['en', 'ru'] as const,
     sitemap: true,
     priority: 0.9,
   })),
@@ -94,6 +94,23 @@ function normalize(pathname: string): string {
 /** Путь маршрута в конкретной локали, в каноническом виде. */
 export function localizedPath(route: RouteDef, locale: Locale): string {
   return canonicalPath(`${LOCALE_PREFIX[locale]}${route.path}`);
+}
+
+/**
+ * Эквивалент текущего маршрута в другой локали.
+ *
+ * Переключатель языка не хранит состояние в localStorage: локаль является
+ * частью URL, поэтому ссылка остаётся шаримой, сервер отдаёт правильный
+ * `lang` без JavaScript, а выбор сохраняется всеми локализованными ссылками.
+ * Для служебного или неизвестного маршрута безопасный выход — корень целевой
+ * локали.
+ */
+export function localeSwitchPath(pathname: string, locale: Locale): string {
+  const resolved = resolveRoute(pathname);
+  if (!resolved || !resolved.route.locales.includes(locale)) {
+    return locale === DEFAULT_LOCALE ? '/' : `${LOCALE_PREFIX[locale]}/`;
+  }
+  return localizedPath(resolved.route, locale);
 }
 
 /**

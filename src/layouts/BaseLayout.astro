@@ -14,9 +14,9 @@
  */
 import { ClientRouter } from 'astro:transitions';
 import Navbar from '../components/Navbar.astro';
-import { PREVIEW_NOINDEX, site } from '../copy/site';
+import { PREVIEW_NOINDEX, site, type SiteCopy } from '../copy/site';
 import { OG_HEIGHT, OG_WIDTH, ogImage as ogImageFor, ogImageAlt } from '../copy/og.ts';
-import { alternatesFor, canonicalPath } from '../copy/routes.ts';
+import { alternatesFor, canonicalPath, localeSwitchPath, type Locale } from '../copy/routes.ts';
 import logoUrl from '../../Images/favicon-v3.svg?url';
 
 import '../styles/tokens.css';
@@ -50,6 +50,8 @@ interface Props {
    * страницы. У страницы ошибки канонического адреса нет.
    */
   canonical?: boolean;
+  /** Локализованные сквозные строки навигации, доступности и footer. */
+  siteCopy?: SiteCopy;
 }
 
 const {
@@ -61,7 +63,18 @@ const {
   nav = true,
   noindex = false,
   canonical = true,
+  siteCopy = site,
 } = Astro.props;
+
+const locale: Locale = lang === 'ru' ? 'ru' : 'en';
+const localeOptions = ([
+  { label: 'EN', locale: 'en' },
+  { label: 'RU', locale: 'ru' },
+] as const).map((option) => ({
+  label: option.label,
+  href: localeSwitchPath(Astro.url.pathname, option.locale),
+  active: option.locale === locale,
+}));
 
 /**
  * Канонический URL и hreflang считаются из одного источника — реестра
@@ -104,7 +117,7 @@ const image = new URL(ogImageFor(ogCard), Astro.site);
     {(PREVIEW_NOINDEX || noindex) && <meta name="robots" content="noindex, nofollow" />}
 
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content={site.brand} />
+    <meta property="og:site_name" content={siteCopy.brand} />
     <meta property="og:locale" content={lang} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -152,8 +165,22 @@ const image = new URL(ogImageFor(ogCard), Astro.site);
   </head>
 
   <body>
-    <a class="ds-skip-link" href="#main">Skip to content</a>
-    {nav && <Navbar brand={site.brand} items={[...site.nav]} current={current} />}
+    <a class="ds-skip-link" href="#main">{siteCopy.accessibility.skipToContent}</a>
+    {
+      nav && (
+        <Navbar
+          brand={siteCopy.brand}
+          brandHref={locale === 'ru' ? '/ru/' : '/'}
+          items={[...siteCopy.nav]}
+          current={current}
+          label={siteCopy.navigation.label}
+          triggerLabel={siteCopy.navigation.trigger}
+          closeLabel={siteCopy.navigation.close}
+          localeLabel={siteCopy.navigation.languageLabel}
+          locales={localeOptions}
+        />
+      )
+    }
     <main id="main" tabindex="-1">
       <slot />
     </main>
@@ -165,10 +192,7 @@ const image = new URL(ogImageFor(ogCard), Astro.site);
     <slot name="footer" />
 
     <noscript>
-      <p class="ds-container ds-body-sm">
-        This site works without JavaScript: every piece of text and every
-        link is available. The script only drives motion.
-      </p>
+      <p class="ds-container ds-body-sm">{siteCopy.accessibility.noscript}</p>
     </noscript>
 
     {/* Единственная JS-зависимость продукта (ds/CONTRACT.md, §Стек). */}
