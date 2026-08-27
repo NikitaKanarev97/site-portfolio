@@ -62,6 +62,9 @@ import sharp from 'sharp';
 const ORIGIN = process.env.PROTOTYPE_ORIGIN ?? 'http://localhost:5300';
 const STORYBOOK_ORIGIN = process.env.STORYBOOK_ORIGIN ?? 'http://127.0.0.1:6100';
 const PLAYWRIGHT_REPO = process.env.PLAYWRIGHT_REPO ?? 'd:/Claude-projects/Agent-ops-console';
+const LOCALE = process.env.FRAME_LOCALE === 'ru' ? 'ru' : 'en';
+const ROUTE_PREFIX = LOCALE === 'ru' ? '/ru' : '';
+const STORY_GLOBALS = LOCALE === 'ru' ? '&globals=locale:ru' : '';
 
 /** Одна норма на все кадры консоли. Меняется здесь и нигде больше. */
 const VIEWPORT = { width: 1640, height: 1025 };
@@ -72,7 +75,7 @@ const WEBP_QUALITY = 82;
 /** Потолок по длинной стороне у кадров, которые не идут в норму обложки. */
 const NATURAL_MAX = 2000;
 
-const MEDIA_DIR = path.resolve('public/media/case-agent-ops');
+const MEDIA_DIR = path.resolve(`public/media/case-agent-ops${LOCALE === 'ru' ? '-ru' : ''}`);
 const COVER_DIR = path.join(MEDIA_DIR, 'cover');
 
 /** Ссылки переключения роли на индексе прототипа. */
@@ -158,7 +161,15 @@ async function report(file) {
  * вернувшийся в английский продукт. Та же защита стоит в скрипте Pawly и по
  * той же причине: поймать это глазами на девятнадцати экранах нельзя.
  */
-async function assertLatin(page, where) {
+async function assertLocale(page, where) {
+  if (LOCALE === 'ru') {
+    const result = await page.evaluate(() => ({
+      lang: document.documentElement.lang,
+      cyrillic: /[А-Яа-яЁё]{3,}/.test(document.body?.innerText ?? ''),
+    }));
+    if (result.lang !== 'ru' || !result.cyrillic) throw new Error(`Русская локаль не активна в ${where}`);
+    return;
+  }
   const cyrillic = await page.evaluate(() => {
     const text = document.body?.innerText ?? '';
     const hit = text.match(/[А-Яа-яЁё][А-Яа-яЁё\s]{2,}/);
@@ -190,11 +201,15 @@ async function shoot() {
     await page.addStyleTag({ content: HIDE_CHROME });
     await page.evaluate(() => document.fonts.ready);
     await page.waitForTimeout(500);
+    if (LOCALE === 'ru') {
+      await page.evaluate(() => window.dispatchEvent(new Event('ru:localize')));
+      await page.waitForTimeout(350);
+    }
   }
 
   /** Роль ставится ссылкой на индексе: перезагрузка начала бы смену заново. */
   async function useRole(role) {
-    await page.goto(`${ORIGIN}/`, { waitUntil: 'networkidle' });
+    await page.goto(`${ORIGIN}${ROUTE_PREFIX}/`, { waitUntil: 'networkidle' });
     await settle();
     const link = page.getByRole('link', { name: new RegExp(ROLE_LINK[role]) }).first();
     await link.click();
@@ -206,7 +221,7 @@ async function shoot() {
     await page.evaluate((to) => {
       window.history.pushState(null, '', to);
       window.dispatchEvent(new PopStateEvent('popstate'));
-    }, route);
+    }, `${ROUTE_PREFIX}${route === '/' ? '' : route}`);
     await settle();
   }
 
@@ -226,7 +241,7 @@ async function shoot() {
 
     await useRole(frame.role);
     await enter(frame.route);
-    await assertLatin(page, frame.route);
+    await assertLocale(page, frame.route);
 
     const raw = await page.screenshot({ type: 'png' });
     const out = path.join(MEDIA_DIR, frame.file);
@@ -261,7 +276,7 @@ async function shoot() {
        Индекс — точка входа, и входят в неё Reviewer'ом, как на обложке. */
     await useRole('reviewer');
     await settle();
-    await assertLatin(page, frame.route);
+    await assertLocale(page, frame.route);
 
     const raw = await page.screenshot({ type: 'png', fullPage: true });
     const out = path.join(MEDIA_DIR, frame.file);
@@ -278,7 +293,7 @@ async function shoot() {
   }
 
   for (const frame of STORIES) {
-    await page.goto(`${STORYBOOK_ORIGIN}/iframe.html?id=${frame.id}&viewMode=story`, {
+    await page.goto(`${STORYBOOK_ORIGIN}/iframe.html?id=${frame.id}&viewMode=story${STORY_GLOBALS}`, {
       waitUntil: 'networkidle',
     });
     await page.addStyleTag({
@@ -286,7 +301,7 @@ async function shoot() {
     });
     await page.evaluate(() => document.fonts.ready);
     await page.waitForTimeout(300);
-    await assertLatin(page, frame.id);
+    await assertLocale(page, frame.id);
 
     const node = await page.$('#storybook-root');
     if (!node) throw new Error(`#storybook-root не найден у ${frame.id}`);

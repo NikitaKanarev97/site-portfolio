@@ -27,6 +27,9 @@ import sharp from 'sharp';
 const ORIGIN = process.env.PROTOTYPE_ORIGIN ?? 'http://localhost:5201';
 const STORYBOOK_ORIGIN = process.env.STORYBOOK_ORIGIN ?? 'http://127.0.0.1:6008';
 const PROTOTYPE_REPO = process.env.PROTOTYPE_REPO ?? 'd:/Claude-projects/PETS-walking';
+const LOCALE = process.env.FRAME_LOCALE === 'ru' ? 'ru' : 'en';
+const ROUTE_PREFIX = LOCALE === 'ru' ? '/ru' : '';
+const STORY_GLOBALS = LOCALE === 'ru' ? '&globals=locale:ru' : '';
 
 const VIEWPORT = { width: 1440, height: 900 };
 const DEVICE_SCALE_FACTOR = 1.5;
@@ -35,7 +38,7 @@ const WEBP_QUALITY = 82;
 const NATURAL_MAX = 2000;
 const TRIM_MARGIN = 24;
 
-const MEDIA_DIR = path.resolve('public/media/case-pawly');
+const MEDIA_DIR = path.resolve(`public/media/case-pawly${LOCALE === 'ru' ? '-ru' : ''}`);
 const COVER_DIR = path.join(MEDIA_DIR, 'cover');
 
 /** Стопка обложки, от переднего кадра к дальнему. */
@@ -155,6 +158,10 @@ async function shoot() {
     await page.addStyleTag({ content: css });
     await page.evaluate(() => document.fonts.ready);
     await page.waitForTimeout(400);
+    if (LOCALE === 'ru' && url.startsWith(ORIGIN)) {
+      const lang = await page.evaluate(() => document.documentElement.lang);
+      if (lang !== 'ru') throw new Error(`Русская локаль не активна: ${url}`);
+    }
   }
 
   async function element(selector) {
@@ -177,7 +184,7 @@ async function shoot() {
 
   for (const frame of COVER_FRAMES) {
     const css = frame.mode === 'viewer' ? COVER_VIEWER_CSS : HIDE_SCROLLBARS;
-    await open(`${ORIGIN}${frame.route}`, css);
+    await open(`${ORIGIN}${ROUTE_PREFIX}${frame.route}`, css);
     const raw = await page.screenshot({ type: 'png' });
     const out = path.join(COVER_DIR, frame.file);
 
@@ -192,7 +199,7 @@ async function shoot() {
 
   for (const frame of NATURAL_FRAMES) {
     await open(
-      `${ORIGIN}${frame.route}`,
+      `${ORIGIN}${ROUTE_PREFIX}${frame.route}`,
       frame.gallery ? COMPACT_GALLERY_CSS : HIDE_SCROLLBARS,
     );
 
@@ -215,7 +222,7 @@ async function shoot() {
   }
 
   for (const frame of STORY_FRAMES) {
-    await open(`${STORYBOOK_ORIGIN}/iframe.html?id=${frame.id}&viewMode=story`, STORY_CSS);
+    await open(`${STORYBOOK_ORIGIN}/iframe.html?id=${frame.id}&viewMode=story${STORY_GLOBALS}`, STORY_CSS);
 
     /*
      * Portfolio copy is English. Fail production instead of silently publishing
@@ -223,7 +230,7 @@ async function shoot() {
      */
     const storyText = await page.locator('#storybook-root').innerText();
     const cyrillic = storyText.match(/[А-Яа-яЁё]+/gu);
-    if (cyrillic) {
+    if (LOCALE === 'en' && cyrillic) {
       throw new Error(`${frame.id}: Cyrillic text found — ${[...new Set(cyrillic)].join(', ')}`);
     }
 

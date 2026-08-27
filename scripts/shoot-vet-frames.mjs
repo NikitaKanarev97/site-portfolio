@@ -49,6 +49,9 @@ import sharp from 'sharp';
 const ORIGIN = process.env.PROTOTYPE_ORIGIN ?? 'http://localhost:5200';
 const STORYBOOK_ORIGIN = process.env.STORYBOOK_ORIGIN ?? 'http://127.0.0.1:6007';
 const PLAYWRIGHT_REPO = process.env.PLAYWRIGHT_REPO ?? 'd:/Claude-projects/b2b-dssl';
+const LOCALE = process.env.FRAME_LOCALE === 'ru' ? 'ru' : 'en';
+const ROUTE_PREFIX = LOCALE === 'ru' ? '/ru' : '';
+const STORY_GLOBALS = LOCALE === 'ru' ? '&globals=locale:ru' : '';
 
 /** Одна норма на все кадры. Меняется здесь и нигде больше. */
 const VIEWPORT = { width: 1680, height: 1000 };
@@ -62,7 +65,7 @@ const TRIM_MARGIN = 24;
 /** Потолок по длинной стороне у кадров, которые не идут в норму обложки. */
 const NATURAL_MAX = 2000;
 
-const MEDIA_DIR = path.resolve('public/media/case-vet');
+const MEDIA_DIR = path.resolve(`public/media/case-vet${LOCALE === 'ru' ? '-ru' : ''}`);
 const COVER_DIR = path.join(MEDIA_DIR, 'cover');
 
 /**
@@ -192,6 +195,10 @@ async function shoot() {
     await page.addStyleTag({ content: HIDE_CHROME });
     await page.evaluate(() => document.fonts.ready);
     await page.waitForTimeout(500);
+    if (LOCALE === 'ru' && url.startsWith(ORIGIN)) {
+      const lang = await page.evaluate(() => document.documentElement.lang);
+      if (lang !== 'ru') throw new Error(`Русская локаль не активна: ${url}`);
+    }
   }
 
   async function element(selector) {
@@ -201,7 +208,7 @@ async function shoot() {
   }
 
   for (const frame of SCREEN_FRAMES) {
-    await open(`${ORIGIN}${frame.route}`);
+    await open(`${ORIGIN}${ROUTE_PREFIX}${frame.route}`);
     const raw = await element('[class*="device"]');
     const out = path.join(COVER_DIR, frame.file);
 
@@ -221,7 +228,7 @@ async function shoot() {
   }
 
   for (const frame of NATURAL_FRAMES) {
-    await open(`${ORIGIN}${frame.route}`);
+    await open(`${ORIGIN}${ROUTE_PREFIX}${frame.route}`);
     const raw = await element(frame.selector ?? '[class*="device"]');
     const out = path.join(MEDIA_DIR, frame.file);
 
@@ -246,7 +253,7 @@ async function shoot() {
   }
 
   for (const frame of STORY_FRAMES) {
-    await open(`${STORYBOOK_ORIGIN}/iframe.html?id=${frame.id}&viewMode=story`);
+    await open(`${STORYBOOK_ORIGIN}/iframe.html?id=${frame.id}&viewMode=story${STORY_GLOBALS}`);
     await page.addStyleTag({ content: STORY_CSS });
     await page.waitForTimeout(200);
     const raw = await element('#storybook-root');
