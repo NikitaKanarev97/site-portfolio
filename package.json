@@ -8,7 +8,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "check:css": "node scripts/check-scoped-css.cjs"
+    "check:css": "node scripts/check-scoped-css.cjs",
+    "cv:build": "node cv/build.mjs",
+    "cv:build:ru": "node cv/build-ru.mjs"
   },
   "dependencies": {
     "astro": "^5.6.1",

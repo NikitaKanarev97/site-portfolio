@@ -1,0 +1,95 @@
+@font-face{font-family:"Manrope";src:url(__FONT_SANS__) format("woff2");font-weight:200 800;font-style:normal;font-display:block}
+@font-face{font-family:"JetBrains Mono";src:url(__FONT_MONO__) format("woff2");font-weight:100 800;font-style:normal;font-display:block}
+
+:root{
+  --ink:#1c1c19;
+  --body:#3d3d38;
+  --muted:#66665f;
+  --rule:#d8d8d1;
+  --rule-soft:#ecece7;
+  --paper:#ffffff;
+  --wash:#f7f7f3;
+  --accent:#c54a16;
+  --sans:"Manrope",Arial,sans-serif;
+  --mono:"JetBrains Mono",Consolas,monospace;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:var(--sans);color:var(--ink);background:#ecece8;font-weight:400;-webkit-font-smoothing:antialiased}
+@page{size:A4;margin:0}
+
+.sheet{width:210mm;height:297mm;background:var(--paper);padding:10.5mm 12.5mm 8.5mm;position:relative;overflow:hidden;display:flex;flex-direction:column}
+a{color:inherit;text-decoration:none}
+
+.header{display:grid;grid-template-columns:minmax(0,1fr) 74mm;gap:9mm;align-items:end}
+.name{font-size:25.5pt;line-height:.98;letter-spacing:-.035em;font-weight:800}
+.headline{display:flex;align-items:baseline;gap:2.4mm;margin-top:2.7mm;font-size:9.25pt;line-height:1.3;color:var(--body);letter-spacing:-.01em}
+.headline strong{color:var(--ink);font-weight:760;white-space:nowrap}
+.headline span{padding-left:2.4mm;border-left:1.1mm solid var(--accent)}
+.location{margin-top:2mm;font-family:var(--mono);font-size:6.65pt;line-height:1.35;color:var(--muted)}
+.contacts{display:grid;grid-template-columns:1fr 1fr;gap:2mm 4mm;align-self:end}
+.contact{min-width:0}
+.contact--wide{grid-column:1 / -1}
+.contact dt{font-family:var(--mono);font-size:5.8pt;line-height:1;text-transform:uppercase;letter-spacing:.09em;color:var(--muted)}
+.contact dd{margin-top:.7mm;font-size:6.75pt;line-height:1.2;overflow-wrap:anywhere}
+.contact--primary dd{color:var(--accent);font-weight:720}
+.contact a{border-bottom:.35pt solid var(--rule)}
+.top-rule{height:.7pt;background:var(--ink);margin-top:3.6mm}
+
+.summary{margin-top:3.2mm;max-width:181mm;font-size:8.8pt;line-height:1.44;color:var(--body)}
+
+.section{display:grid;grid-template-columns:24mm minmax(0,1fr);gap:0 5.5mm;border-top:.45pt solid var(--rule);padding-top:2.65mm;margin-top:3.45mm}
+.section-title{font-family:var(--mono);font-size:6.25pt;line-height:1.4;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);padding-top:.35mm}
+
+.entry{break-inside:avoid}
+.entry+.entry{margin-top:2.2mm;padding-top:2.2mm;border-top:.4pt solid var(--rule-soft)}
+.entry-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:5mm;align-items:baseline}
+.entry-title{font-size:9.2pt;line-height:1.2;font-weight:760;letter-spacing:-.01em}
+.entry-title span{font-weight:450;color:var(--body)}
+.entry-date{font-family:var(--mono);font-size:6.3pt;line-height:1.2;color:var(--muted);white-space:nowrap}
+.entry-date span{padding:0 .7mm;color:var(--accent)}
+.entry-sub{margin-top:.9mm;font-size:7.45pt;line-height:1.34;color:var(--muted)}
+.bullets{list-style:none;margin-top:1.2mm}
+.bullets li{position:relative;margin-top:1mm;padding-left:3.6mm;font-size:8.35pt;line-height:1.36;color:var(--body);break-inside:avoid}
+.bullets li:before{content:"";position:absolute;left:0;top:1.35mm;width:1.8mm;height:.55mm;background:var(--accent)}
+
+.work-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2.8mm}
+.work{position:relative;padding:2.4mm 2.6mm 2.2mm;background:var(--wash);border-top:.8mm solid var(--accent);break-inside:avoid}
+.work h3{font-size:8.5pt;line-height:1.2;letter-spacing:-.01em}
+.work h3 a{border-bottom:.4pt solid var(--ink)}
+.work-meta{margin-top:.8mm;font-family:var(--mono);font-size:5.45pt;line-height:1.35;color:var(--muted)}
+.work-desc{margin-top:1.15mm;font-size:7.15pt;line-height:1.37;color:var(--body)}
+.work-link{display:none}
+
+.lower-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:7mm;margin-top:3.45mm}
+.section--stacked{display:block;margin-top:0;padding-top:2.45mm}
+.section--details{margin-top:3.2mm}
+.section--stacked .section-title{margin-bottom:1.8mm}
+.skill-list{display:grid;grid-template-columns:1fr 1fr;gap:2mm 5mm}
+.skill{break-inside:avoid}
+.skill dt{font-family:var(--mono);font-size:5.7pt;line-height:1.25;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.skill dd{margin-top:.6mm;font-size:7.35pt;line-height:1.38;color:var(--body)}
+
+.education{display:grid;gap:0}
+.edu{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4mm;padding:1.25mm 0;border-bottom:.4pt solid var(--rule-soft);align-items:baseline}
+.edu:first-child{padding-top:0}
+.edu:last-child{border-bottom:0;padding-bottom:0}
+.edu-copy{font-size:7.05pt;line-height:1.32;color:var(--body)}
+.edu-copy strong{font-weight:680;color:var(--ink)}
+.edu-year{font-family:var(--mono);font-size:5.8pt;color:var(--muted);white-space:nowrap}
+
+.compact-grid{display:grid;gap:1.6mm}
+.compact{display:grid;grid-template-columns:18mm 1fr;gap:2mm}
+.compact h3{font-family:var(--mono);font-size:5.7pt;line-height:1.3;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.compact p{font-size:7.05pt;line-height:1.37;color:var(--body)}
+
+.cta{margin-top:auto;background:var(--wash);border-left:1mm solid var(--accent);padding:2.8mm 3.4mm;display:flex;justify-content:space-between;align-items:center;gap:7mm}
+.cta strong{font-size:7.7pt}
+.cta a{font-family:var(--mono);font-size:5.9pt;color:var(--accent);border-bottom:.4pt solid currentColor}
+
+.footer{margin-top:3.2mm;padding-top:2.2mm;border-top:.4pt solid var(--rule);display:flex;justify-content:space-between;gap:6mm;font-family:var(--mono);font-size:5.9pt;line-height:1.2;color:var(--muted);letter-spacing:.02em}
+.footer a{color:var(--accent);border-bottom:.35pt solid currentColor}
+.page-number:before{content:"";display:inline-block;width:1.7mm;height:.55mm;background:var(--accent);margin-right:1.6mm;vertical-align:middle}
+
+@media screen{body{display:grid;gap:12px;justify-content:center;padding:24px}.sheet{box-shadow:0 12px 36px rgba(0,0,0,.12)}}
