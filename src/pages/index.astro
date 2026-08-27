@@ -28,7 +28,6 @@ import ProjectDialog from '../components/ProjectDialog.astro';
 import ProseBlock from '../components/ProseBlock.astro';
 import SectionHead from '../components/SectionHead.astro';
 import TextLink from '../components/TextLink.astro';
-import WorkRow from '../components/WorkRow.astro';
 import CopyEmail from '../components/CopyEmail.astro';
 import { home } from '../copy/home.ts';
 import { site } from '../copy/site.ts';
@@ -111,25 +110,16 @@ import { site } from '../copy/site.ts';
   </section>
 
   {/*
-    WorksList. Строки некликабельны, и это требование (WRK-02, WRK-05):
-    внутри нет ничего интерактивного, hover меняет только фон.
+    Секция WorksList снята 2026-08-27 вместе с `home.works` — обоснование
+    там же и в ds/screens/case-agent-ops.md. В ней оставалась одна запись,
+    RUUN, чей кейс решено не писать; секция без записей теряет предмет, а
+    пустая секция ради компонента не заводится (TECH-15). `WorkRow` живёт
+    в каталоге и в /kit, носителей на страницах продукта у него больше нет.
   */}
-  <section class="ds-container ds-section works">
-    <div class="works__head" data-motion-group data-motion-stagger="tight">
-      <SectionHead size="lg">{home.works.heading}</SectionHead>
-      <ProseBlock class="works__lead">
-        <p>{home.works.lead}</p>
-      </ProseBlock>
-    </div>
-
-    <ul class="works__list" data-motion-group data-motion-stagger="base">
-      {home.works.items.map((item) => <WorkRow {...item} />)}
-    </ul>
-  </section>
 
   {/*
     DevelopmentStrip. Ниже всех продуктовых блоков, заголовок заметно мельче
-    заголовка WorksList — это вес блока, а не оформление (DEV-03).
+    заголовка Selected work — это вес блока, а не оформление (DEV-03).
     Мобильная форма — не та же карточка в другом размере, а горизонтальная
     строка с миниатюрой: перенос десктопной сетки даёт 87% площади обложки
     против лимита в четверть (арифметика в ds/patterns.md §DevelopmentCard).

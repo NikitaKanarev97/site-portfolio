@@ -56,17 +56,49 @@ export const home = {
   },
 
   /**
-   * Открытые кейсы. С 2026-08-25 их три, и секция стала списком: разметка
-   * index.astro повторяет паттерн FeaturedCaseCover по числу записей, новых
-   * компонентов не заводится (ds/screens/case-vet.md §Что этот экран меняет
-   * на главной).
+   * Открытые кейсы. С 2026-08-27 их четыре, и секция остаётся списком:
+   * разметка index.astro повторяет паттерн FeaturedCaseCover по числу
+   * записей, новых компонентов не заводится (ds/screens/case-vet.md §Что
+   * этот экран меняет на главной).
    *
-   * Порядок — решение владельца 2026-08-25: DSSL первым, затем Vet Clinic
-   * OS, затем Pawly. Новые кейсы добавляются ниже уже открытых.
+   * **Порядок переставлен 2026-08-27, решение владельца.** Было DSSL → Vet
+   * Clinic OS → Pawly, стало Agent Ops Console → DSSL → Vet Clinic OS →
+   * Pawly. Правило «новые кейсы добавляются ниже уже открытых» отменено:
+   * порядок идёт по убыванию доказательной силы, а не по дате открытия.
+   * Agent Ops единственный из четырёх прошёл полный цикл на живом заказе —
+   * платный клиент, живые интервью, юзер-тест прототипа и приёмка
+   * заказчиком; DSSL — коммерческий редизайн без пользовательской проверки
+   * в этой редакции; Vet Clinic OS — концепт с одним живым врачом; Pawly —
+   * концепт целиком. Обоснование целиком — ds/screens/case-agent-ops.md
+   * §Что этот экран меняет на главной.
+   *
+   * Порядок обязан совпадать с реестром src/copy/cases/index.ts: оттуда
+   * разворачиваются sitemap, hreflang и OG-карточки.
    */
   featured: {
     eyebrow: 'Selected work',
     items: [
+      {
+        href: '/work/agent-ops-console',
+        title: 'Agent Ops Console',
+        outcome:
+          'Every promise an AI agent makes reaches a person — without reading the other 1,770 conversations.',
+        meta: [
+          { term: 'Product', value: 'Oversight console for an AI support agent' },
+          { term: 'Year', value: '2026' },
+          { term: 'Role', value: 'Product Designer' },
+          { term: 'Platform', value: 'Web, desktop-first' },
+        ],
+        cta: 'Read the case',
+        /** Тот же набор, что на CaseCover кейса. Данные на кадрах выдуманы. */
+        cover: [
+          '/media/case-agent-ops/cover/review-queue.webp',
+          '/media/case-agent-ops/cover/run-detail.webp',
+          '/media/case-agent-ops/cover/action-approvals.webp',
+        ],
+        coverAlt:
+          'Agent Ops Console review queue: total exposure for the day, four repeating-cause clusters above ninety-one single conversations, with the run detail and the approval queue behind it',
+      },
       {
         href: '/work/partner-portal',
         title: 'B2B Partner Portal — DSSL',
@@ -139,30 +171,20 @@ export const home = {
     ],
   },
 
-  /**
-   * Список закрытых кейсов. Vet Clinic OS и Pawly ушли отсюда 2026-08-25:
-   * их кейсы открыты и стоят выше обложками. Заголовок и подводка правятся
-   * вместе с составом — множественное число при одной записи было бы
-   * враньём в первом же слове секции.
+  /*
+   * Секция закрытых кейсов (`works`, паттерн WorksList) снята 2026-08-27,
+   * решение владельца. Vet Clinic OS и Pawly ушли из неё 2026-08-25, когда
+   * открылись их кейсы; последней записью оставался RUUN — «case is not
+   * written yet». Кейс по RUUN не пишется: проект убран из портфолио
+   * решением владельца, и с уходом единственной записи секция теряет
+   * предмет. Вместе с ней сняты заголовок, подводка и разметка секции в
+   * index.astro. Пустая секция ради компонента не заводится (`TECH-15`):
+   * `WorkRow` остаётся в каталоге и в `/kit`, но носителей на страницах
+   * продукта у него больше нет.
+   *
+   * Восстанавливается из истории вместе с разметкой, если кейс RUUN
+   * когда-нибудь будет написан.
    */
-  works: {
-    heading: 'One more project. Its case is not written yet.',
-    lead: 'Listed with what it was and why it is not open. The full cases are above.',
-    items: [
-      {
-        title: 'RUUN',
-        type: 'DTC e-commerce, handmade brand, product configurator',
-        year: '2023',
-        role: 'Product Designer',
-        description: [
-          'Brand, commerce and product customization in one scope.',
-          'Built around a strategic constraint the client could not remove.',
-        ],
-        reason:
-          'Not open yet: the case needs a careful telling of that constraint, and that takes longer than a visual pass.',
-      },
-    ],
-  },
 
   /**
    * Webflow-сборки. Роль поменялась 2026-08-25 решением владельца: дизайн

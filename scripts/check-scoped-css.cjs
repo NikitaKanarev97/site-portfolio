@@ -22,6 +22,7 @@ const fs = require('fs');
 const pages = {
   '/': 'dist/index.html',
   '/about': 'dist/about/index.html',
+  '/work/agent-ops-console': 'dist/work/agent-ops-console/index.html',
   '/work/partner-portal': 'dist/work/partner-portal/index.html',
   '/work/vet-clinic': 'dist/work/vet-clinic/index.html',
   '/work/pawly': 'dist/work/pawly/index.html',
