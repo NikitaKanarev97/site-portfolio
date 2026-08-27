@@ -20,7 +20,7 @@ import { site, NAME } from './site.ts';
 import { home } from './home.ts';
 import { about } from './about.ts';
 import { cases } from './cases/index.ts';
-import { siteRu } from './ru/site.ts';
+import { siteRu, NAME_RU } from './ru/site.ts';
 import { homeRu } from './ru/home.ts';
 import { aboutRu } from './ru/about.ts';
 import { casesRu } from './ru/cases/index.ts';
@@ -41,7 +41,7 @@ export interface OgCard {
 
 /** Подпись автора, общая для всех карточек, кроме главной. */
 const BYLINE = `${NAME} — Product Designer`;
-const BYLINE_RU = `${NAME} — продуктовый дизайнер`;
+const BYLINE_RU = `${NAME_RU} — продуктовый дизайнер`;
 
 export const OG_CARDS: readonly OgCard[] = [
   {
@@ -65,7 +65,7 @@ export const OG_CARDS: readonly OgCard[] = [
   {
     id: 'default-ru',
     eyebrow: 'Портфолио',
-    title: NAME,
+    title: NAME_RU,
     footnote: `${homeRu.hero.role} · ${siteRu.footer.location}`,
   },
   {

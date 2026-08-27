@@ -1,11 +1,11 @@
 import { about } from '../about.ts';
-import { NAME } from '../site.ts';
+import { NAME_RU } from './site.ts';
 
 /** Русская редакция About. Факты и порядок обещаний совпадают с EN. */
 export const aboutRu = {
   ...about,
   meta: {
-    title: `${NAME} — как я работаю`,
+    title: `${NAME_RU} — как я работаю`,
     description:
       'Как я работаю внутри заданных ограничений, что делаю с неудачными решениями и где в процессе находится ИИ. Полная информация о найме.',
   },
@@ -25,7 +25,7 @@ export const aboutRu = {
   },
   portrait: {
     ...about.portrait,
-    alt: `${NAME} — портрет по плечи на однотонном фоне`,
+    alt: `${NAME_RU} — портрет по плечи на однотонном фоне`,
   },
   contactLead:
     'Если именно такой подход нужен вашей команде — или после текста выше всё ещё остался вопрос.',

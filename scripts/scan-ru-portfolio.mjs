@@ -24,14 +24,19 @@ const routes = ['/ru/', '/ru/about', ...slugs.map((slug) => `/ru/work/${slug}`)]
 /**
  * Латиница, которая остаётся латиницей осознанно. Каждая запись — решение.
  *
- * Имя владельца, названия кейсов и инструментов — имена собственные. Тип
- * файла в подписи ссылки (PDF) — обозначение формата. Адрес почты и домены —
- * данные. Названия ролей вроде B2B SaaS — принятые в отрасли термины,
- * которые русский текст кейса использует как есть.
+ * Названия инструментов и компаний — имена собственные. Тип файла в подписи
+ * ссылки (PDF) — обозначение формата. Адрес почты и домены — данные.
+ * Названия ролей вроде B2B SaaS — принятые в отрасли термины, которые
+ * русский текст кейса использует как есть.
+ *
+ * Чего здесь намеренно НЕТ: `Nikita Kanarev`, `Agent Ops Console`,
+ * `Vet Clinic OS` и `B2B Partner Portal`. Имя владельца и три названия
+ * кейсов переведены на русскую версию 28.08.2026 — оставить их в списке
+ * значило бы разрешить сканеру молча пропустить откат к английскому.
+ * `Pawly` и `DSSL` остаются: это марка и название компании, а не описание.
  */
 const BRANDS = [
-  'Nikita Kanarev', 'Agent Ops Console', 'Agent Ops', 'Pawly', 'DSSL', 'Vet Clinic OS',
-  'B2B Partner Portal', 'Veterinary SaaS', 'B2B SaaS', 'B2B', 'SaaS', 'NDA', 'PDF', 'UX', 'UI',
+  'Pawly', 'DSSL', 'Veterinary SaaS', 'B2B SaaS', 'B2B', 'SaaS', 'NDA', 'PDF', 'UX', 'UI',
   'Figma', 'Storybook', 'Webflow', 'React', 'TypeScript', 'JavaScript', 'HTML', 'CSS',
   'Git', 'GitHub', 'LinkedIn', 'Claude Code', 'Google UX Design', 'Coursera', 'Pentaschool',
   'QA', 'IA', 'CMS', 'API', 'ERP', 'SKU', 'XLS', 'EMEA', 'SLA', 'UTC', 'CSAT', 'OS',

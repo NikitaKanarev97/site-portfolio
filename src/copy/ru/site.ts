@@ -1,8 +1,18 @@
-import { EMAIL, LINKEDIN, NAME, type SiteCopy } from '../site.ts';
+import { EMAIL, LINKEDIN, type SiteCopy } from '../site.ts';
+
+/**
+ * Имя владельца кириллицей.
+ *
+ * Латинское `NAME` остаётся в английской локали, в резюме и в LinkedIn —
+ * там оно совпадает с документами. На русской версии имя читается сразу,
+ * а не транслитерируется читателем обратно, поэтому написание своё.
+ * Почта и адрес профиля не переводятся: это идентификаторы, не текст.
+ */
+export const NAME_RU = 'Никита Канарев';
 
 /** Сквозные строки русской локали. URL прототипов остаются английскими. */
 export const siteRu = {
-  brand: NAME,
+  brand: NAME_RU,
   accessibility: {
     skipToContent: 'Перейти к содержимому',
     noscript:
