@@ -220,10 +220,10 @@ export const agentOpsConsole = {
         why: 'The client did not want another tool for saying no; they wanted the agent to safely do more over time. Splitting autonomy into capabilities — answer from the knowledge base, extend a trial, issue a credit, refund, change a plan — turns each promotion into a question with a numeric answer: runs, correction rate, severity-1 defects, a regression pass. Demotion needs no meeting: a severity-1 defect drops the level.',
         cost: 'Seven ladders whose evidence has to be kept, and a product that will say “not yet” for weeks. A capability with too few runs cannot be promoted however confident the room feels — which is the point, and the part nobody enjoys.',
         artifact: {
-          src: `${media}/autonomy.webp`,
-          alt: 'Autonomy ladder: seven capabilities from L0 forbidden to L4 on its own, each with its level, its evidence and whether it is ready to promote',
-          caption:
-            'Seven capabilities, five levels, and the evidence behind each current position. The banner on top is an automatic demotion, not a proposal.',
+          src: `${media}/autonomy-crop.webp`,
+          zoomSrc: `${media}/autonomy.webp`,
+          alt: 'Autonomy ladder banner: a severity-1 defect drops refund from L3 to L2 automatically',
+          caption: 'A severity-1 defect drops refund from L3 to L2 automatically. The fuse trips without a meeting.',
         },
       },
     ],

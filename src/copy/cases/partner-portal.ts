@@ -235,9 +235,10 @@ export const partnerPortal = {
         why: 'Two intakes with two resolution mechanics produce two audit trails for the same decision, and a specification is a document people argue about later. The provenance of a line — source file, row number, original text, original quantity — has to survive to the order, or a disputed delivery has nothing to check itself against.',
         cost: 'Quick order lost its own candidate picker. A partner who typed four lines is sent to a different screen to finish two of them, and that hand-off has to be spelled out on the button before they press it.',
         artifact: {
-          src: `${media}/candidate-select.webp`,
-          alt: 'Choosing between two catalogue candidates for one ambiguous imported line',
-          caption: 'One ambiguous line, both candidates, and the source row it came from.',
+          src: `${media}/candidate-select-crop.webp`,
+          zoomSrc: `${media}/candidate-select.webp`,
+          alt: 'Two catalogue candidates for one ambiguous imported line before the choice is applied',
+          caption: 'Both candidates for one imported line, compared before the choice is applied.',
         },
       },
       {
@@ -246,10 +247,10 @@ export const partnerPortal = {
         why: 'A price that moved is still a verified price. The first build had a single list of four statuses, which made one component both the source of truth about freshness and the record of a movement. Cart change review reads the movement; the buyer’s trust reads the freshness. One axis could not answer both.',
         cost: 'Two axes on the two most reused components in the product, and a wider column: “not confirmed” prints those words, never a zero and never an empty cell, because a blank in a price column reads as free.',
         artifact: {
-          src: `${media}/cart-change-review.webp`,
-          alt: 'Cart change review: two lines whose price and lead time moved after import',
-          caption:
-            'Two lines moved after the import. Each names what changed, why, and which source row it belongs to.',
+          src: `${media}/cart-change-review-crop.webp`,
+          zoomSrc: `${media}/cart-change-review.webp`,
+          alt: 'One cart line showing a price change, its reason and its source row',
+          caption: 'One changed price, with the reason and its source row, before acceptance.',
         },
       },
       {

@@ -188,10 +188,10 @@ This broadens recruiter discovery but does not imply existing US/Canadian work a
 
 ## Languages
 
-- English — Professional working proficiency / B2.
+- English — Professional working proficiency.
 - Russian — Native or bilingual proficiency.
 
-Do not claim C1 or native English.
+Do not claim a CEFR score, C1 or native English.
 
 ## Network notifications
 

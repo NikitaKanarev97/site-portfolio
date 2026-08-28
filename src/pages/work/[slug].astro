@@ -39,7 +39,10 @@ import { site as siteEn, type SiteCopy } from '../../copy/site.ts';
 import { siteRu } from '../../copy/ru/site.ts';
 
 export function getStaticPaths() {
-  return cases.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+  return cases.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry, locale: 'en' as Props['locale'] },
+  }));
 }
 
 interface Props {
@@ -47,7 +50,7 @@ interface Props {
   locale?: 'en' | 'ru';
 }
 
-const { entry, locale = 'en' } = Astro.props;
+const { entry, locale = 'en' } = Astro.props as Props;
 const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
 const { header, cover, context, reframe, process, failure, decisions, system, result, outro } =
   entry;

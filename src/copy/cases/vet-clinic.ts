@@ -190,7 +190,8 @@ export const vetClinic = {
         why: 'The real near-miss here was not a gap in knowledge, it was a decimal point moved by hand on the way to a phone calculator. Removing that transfer needs no drug reference at all: the weight is already there, and a number the doctor cannot re-type is one she cannot mistype. Showing the arithmetic makes it checkable rather than trusted.',
         cost: 'No species contraindication warnings in the first version. The risk that worries the clinic and its lawyer stays uncovered and became a separate go/no-go decision, because a warning table we cannot license or verify is a promise the interface cannot keep.',
         artifact: {
-          src: `${media}/dose-calculator.webp`,
+          src: `${media}/dose-calculator-crop.webp`,
+          zoomSrc: `${media}/dose-calculator.webp`,
           alt: 'Dose calculation beside the visit record: weight pulled from the patient card, formula, substitution, rounding and the resulting dose',
           caption:
             'The weight comes from the card and cannot be typed in here. Formula, substitution and rounding are all on screen.',
@@ -202,7 +203,8 @@ export const vetClinic = {
         why: '“I don’t like the look of this” is a class of clinical information that currently lives nowhere: it goes into a notebook that is thrown away, and it is gone by the time the patient comes back. Bringing it into the system only works if the boundary — the owner will not see this — is impossible to miss and impossible to erase. A label survives a rebrand only if someone remembers it; a reserved hue survives it by construction.',
         cost: 'One tone of the palette is spent for good and cannot be reused for anything else, on a product that otherwise runs on a single accent.',
         artifact: {
-          src: `${media}/patient-card-private.webp`,
+          src: `${media}/patient-card-private-crop.webp`,
+          zoomSrc: `${media}/patient-card-private.webp`,
           alt: 'Patient card with a private note in its own colour, marked as visible only to clinic veterinarians',
           caption:
             'The private note carries its own hue and says who can see it. It is in no discharge summary and on no invoice.',
@@ -214,10 +216,10 @@ export const vetClinic = {
         why: 'Premature publication of a draft is irreversible in a way a bug is not, and the response to it is rational: she will write only what she is ready to read aloud — and then the card is empty, the invoice is guesswork and the discharge summary says nothing. The preview is not hygiene here. It is the condition under which anything gets written at all.',
         cost: 'An extra step on every visit, and a discharge summary that cannot be automated even when the record is complete and nothing in it is sensitive.',
         artifact: {
-          src: `${media}/discharge-preview.webp`,
-          alt: 'Publishing review: the owner-visible summary on the left, the clinic-only content excluded from it on the right',
-          caption:
-            'What the owner will see, next to what is being held back from them, before anything is sent.',
+          src: `${media}/discharge-preview-crop.webp`,
+          zoomSrc: `${media}/discharge-preview.webp`,
+          alt: 'Publishing preview: owner-facing instructions beside a private note and diagnosis withheld from the owner',
+          caption: 'Owner-facing instructions beside the private note and diagnosis withheld from the owner.',
         },
       },
     ],

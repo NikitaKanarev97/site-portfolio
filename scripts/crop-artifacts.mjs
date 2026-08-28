@@ -76,6 +76,76 @@ const crops = [
     box: { left: 870, top: 710, width: 1120, height: 540 },
   },
 
+  // --- Остальные артефакты решений, находка `L2-5` ---
+  //
+  // Здесь ширина следует не из общего шаблона, а из обещания подписи. Если
+  // экран раскладывает довод по всей ширине, подпись сужена до одной детали:
+  // иначе кроп снова превращается в нечитаемый полный экран.
+  {
+    file: 'public/media/case-dssl/candidate-select.webp',
+    // Одна строка и оба кандидата. Справа у карточек остаётся пустая
+    // плоскость; граница проходит по ней, не разрезая ни слова и ни контрол.
+    // Верхняя граница ниже строки статуса и исходного текста: русская подпись
+    // сдвигает раскрытую область вниз, и более ранний кроп резал плашку
+    // «Неоднозначно». В подписи остаётся только обещание двух кандидатов.
+    box: { left: 365, top: 750, width: 1000, height: 395 },
+  },
+  {
+    file: 'public/media/case-dssl-ru/candidate-select.webp',
+    box: { left: 365, top: 750, width: 1000, height: 395 },
+  },
+  {
+    file: 'public/media/case-dssl/cart-change-review.webp',
+    // Только карточка изменения цены: левая карточка срока поставки стояла бы
+    // рядом ценой масштаба 0,28. Граница слева — жёлоб между карточками.
+    box: { left: 1175, top: 656, width: 790, height: 296 },
+  },
+  {
+    file: 'public/media/case-dssl-ru/cart-change-review.webp',
+    box: { left: 1175, top: 656, width: 790, height: 296 },
+  },
+  {
+    file: 'public/media/case-vet/dose-calculator.webp',
+    // Вес из карты, входные значения, формула, подстановка, округление и
+    // результат. Боковые границы идут по воздуху вокруг панели расчёта.
+    box: { left: 1120, top: 735, width: 800, height: 925 },
+  },
+  {
+    file: 'public/media/case-vet-ru/dose-calculator.webp',
+    box: { left: 1120, top: 735, width: 800, height: 925 },
+  },
+  {
+    file: 'public/media/case-vet/patient-card-private.webp',
+    // Весь зарезервированный цветом блок: название, граница аудитории и сама
+    // заметка. Граница совпадает с краями карточки.
+    box: { left: 380, top: 1450, width: 1475, height: 260 },
+  },
+  {
+    file: 'public/media/case-vet-ru/patient-card-private.webp',
+    box: { left: 380, top: 1450, width: 1475, height: 260 },
+  },
+  {
+    file: 'public/media/case-vet/discharge-preview.webp',
+    // Две соседние области публикации: инструкция владельцу слева, приватная
+    // заметка и диагноз справа. Нижние блоки к этому доводу не относятся.
+    box: { left: 320, top: 255, width: 1470, height: 405 },
+  },
+  {
+    file: 'public/media/case-vet-ru/discharge-preview.webp',
+    box: { left: 320, top: 255, width: 1470, height: 405 },
+  },
+  {
+    file: 'public/media/case-agent-ops/autonomy.webp',
+    // Автоматическое понижение — один читаемый довод вместо всей лестницы.
+    // Семь способностей, пять уровней и их доказательства разнесены по всей
+    // ширине экрана; обещать их в подписи этого кропа нельзя.
+    box: { left: 310, top: 90, width: 1010, height: 180 },
+  },
+  {
+    file: 'public/media/case-agent-ops-ru/autonomy.webp',
+    box: { left: 310, top: 90, width: 1010, height: 180 },
+  },
+
   // --- Пара «было → стало» для DSSL, находка `L3-4` / вопрос ИА №12 ---
   //
   // Обе половины режутся под ПОЛНУЮ ширину колонки кейса (~1232 px), а не под
