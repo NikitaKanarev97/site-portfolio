@@ -1,6 +1,6 @@
 # LinkedIn Repositioning Execution Plan
 
-Updated: 2026-08-27
+Updated: 2026-08-28
 
 ## Current status
 
@@ -9,8 +9,10 @@ Updated: 2026-08-27
 - Phase 2 — completed with 28 vacancies across Europe, the US and Canada; see `linkedin/research/job-signal-matrix.md`.
 - Phase 3 — completed; see `linkedin/change-set.md`.
 - Phase 4 — completed against `cv/fact-sheet.md`, the master CV and published case disclosures.
-- Phase 5 — waiting for the owner's action-time approval because it changes public profile content, deletes outdated Featured/Projects/Services entries and updates contact information.
-- Phases 6–7 — pending live implementation.
+- Phase 5 — substantially completed in the authenticated LinkedIn session: positioning, About, Experience, Projects, Skills, Education, Languages, portfolio contact and Services were updated.
+- Phase 6 — authenticated QA completed; see `linkedin/after-state.md`.
+- Remaining execution items: the legacy Open to Work record does not persist edits and likely needs deletion/recreation under LinkedIn's current three-role limit; Outlook passed mobile security and now awaits password submission plus email verification; LinkedIn's Featured validator still rejects the `kanarev.com` domain even though its live canonical/Open Graph metadata is correct.
+- Phase 7 — pending distribution and measurement after the three remaining items are cleared.
 
 ## Phase 0 - Access and snapshot
 

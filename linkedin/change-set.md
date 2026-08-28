@@ -1,7 +1,8 @@
 # LinkedIn Product Designer Change Set
 
 Prepared: 2026-08-27
-Status: ready for owner approval; no live profile edits applied yet.
+Live implementation checked: 2026-08-28
+Status: approved package applied to the base profile; see `linkedin/after-state.md` for verified results and the remaining LinkedIn/deployment blockers.
 
 ## Positioning decision
 
