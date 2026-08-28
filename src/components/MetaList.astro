@@ -26,11 +26,22 @@
  * Движение: в statements каждое значение объявляет Набор — четыре строки
  * компромисса идут построчным каскадом (ds/motion-concept.md §7).
  * Группу и строку NDA следом ставит экран, не компонент.
+ *
+ * Значение-ссылка (href) добавлено 2026-08-28, находка L2-6. Носитель
+ * один — пара Prototype в шапке кейса: живой прототип есть у всех
+ * четырёх кейсов, и до правки ссылка на него стояла в середине страницы.
+ * Значение уходит в TextLink type=inline external — не arrow: стрелка →
+ * читается как «дальше по странице», а маркер ↗ в этом продукте значит
+ * ровно «внешняя ссылка», и двух стрелок подряд в одной строке быть не
+ * должно. Ключ и значение остаются dt/dd: ссылка меняет вид значения, а
+ * не природу пары.
  */
 interface MetaItem {
   term: string;
   value: string;
   tone?: 'default' | 'strong';
+  /** Значение — внешняя ссылка. Носитель: пара Prototype в шапке кейса. */
+  href?: string;
 }
 
 interface Props {
@@ -40,6 +51,8 @@ interface Props {
   motion?: boolean;
   class?: string;
 }
+
+import TextLink from './TextLink.astro';
 
 const { items, layout = 'inline', motion = true, class: className } = Astro.props;
 
@@ -57,7 +70,15 @@ const valueClass = isStatements ? 'ds-body-lg' : 'ds-meta-sm';
           class:list={['meta-list__value', valueClass]}
           data-motion={isStatements && motion ? 'reveal-text' : undefined}
         >
-          {item.value}
+          {
+            item.href ? (
+              <TextLink href={item.href} external>
+                {item.value}
+              </TextLink>
+            ) : (
+              item.value
+            )
+          }
         </dd>
       </div>
     ))

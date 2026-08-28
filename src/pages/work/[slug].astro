@@ -34,6 +34,7 @@ import NoteBlock from '../../components/NoteBlock.astro';
 import DecisionBlock from '../../components/DecisionBlock.astro';
 import TextLink from '../../components/TextLink.astro';
 import { cases } from '../../copy/cases/index.ts';
+import { casesRu } from '../../copy/ru/cases/index.ts';
 import { site as siteEn, type SiteCopy } from '../../copy/site.ts';
 import { siteRu } from '../../copy/ru/site.ts';
 
@@ -50,6 +51,28 @@ const { entry, locale = 'en' } = Astro.props;
 const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
 const { header, cover, context, reframe, process, failure, decisions, system, result, outro } =
   entry;
+
+/*
+  Переход к следующему кейсу (CASE-16). Требование само описывает две
+  редакции: «в версии 1 роль „дальше“ играет контакт, с появлением второго
+  кейса возвращается Next case без возврата на главную». Кейсов четыре, и
+  контакт эту роль сдаёт: ContactBlock печатает PageShell сразу за этим
+  блоком на всех маршрутах (IA-06), поэтому связь никуда не девается — она
+  перестаёт быть единственным, что предлагает конец страницы.
+
+  Следующий берётся из реестра по порядку, с замыканием: последний кейс
+  ведёт на первый. Тупика не остаётся ни у одного из четырёх, а замыкание
+  отправляет дочитавшего самый слабый по доказательствам кейс к самому
+  сильному — порядок реестра идёт по её убыванию.
+
+  Адрес не пишется в тексте кейса: реестр — единственный носитель порядка
+  (US-20). Новый кейс добавляется файлом и строкой там, и переходы у
+  соседей перестраиваются сами.
+*/
+const registry = locale === 'ru' ? casesRu : cases;
+const index = registry.findIndex((item: any) => item.slug === entry.slug);
+const nextEntry = registry[(index + 1) % registry.length];
+const nextHref = `${locale === 'ru' ? '/ru' : ''}/work/${nextEntry.slug}`;
 ---
 
 <PageShell
@@ -135,6 +158,26 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
     <ProseBlock>
       {context.body.map((paragraph: string) => <p>{paragraph}</p>)}
     </ProseBlock>
+
+    {/*
+      Пара «было → стало». Необязательна: носитель один — DSSL, единственный
+      кейс, где старый продукт существовал (находка L3-4, вопрос ИА №12).
+      Кадры идут друг под другом во всю ширину колонки, а не парой в ряд:
+      сравнение работает, только если обе стороны читаются, а в половине
+      колонки полный экран нечитаем — тот же замер, что в L2-5.
+    */}
+    {
+      context.comparison && (
+        <div class="case-comparison">
+          {context.comparison.map((shot: any) => (
+            <figure class="case-artifact">
+              <MediaFrame src={shot.src} alt={shot.alt} ratio="natural" zoom />
+              <figcaption class="ds-meta-sm case-caption">{shot.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
+      )
+    }
   </section>
 
   {/* CaseReframe — отдельный блок, не абзац внутри контекста (CASE-06). */}
@@ -211,7 +254,13 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
           >
             {item.artifact && (
               <figure slot="artifact" class="case-artifact">
-                <MediaFrame src={item.artifact.src} alt={item.artifact.alt} ratio="natural" zoom />
+                <MediaFrame
+                  src={item.artifact.src}
+                  zoomSrc={item.artifact.zoomSrc}
+                  alt={item.artifact.alt}
+                  ratio="natural"
+                  zoom
+                />
                 <figcaption class="ds-meta-sm case-caption">{item.artifact.caption}</figcaption>
               </figure>
             )}
@@ -268,7 +317,7 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
     <ProseBlock motion={false}>
       <p data-motion="reveal-text">{outro.lead}</p>
     </ProseBlock>
-    <TextLink href={outro.href} type="arrow">{outro.cta}</TextLink>
+    <TextLink href={nextHref} type="arrow">{`${site.nextCase}: ${nextEntry.header.title}`}</TextLink>
   </section>
 
   {/*
@@ -395,6 +444,15 @@ const { header, cover, context, reframe, process, failure, decisions, system, re
      не ниже space-12 на мобильном, как в ряду действий Hero. :global
      обязателен: ссылка — корень TextLink со своим data-astro-cid, скоуп
      страницы до него не достаёт. */
+  /* Пара «было → стало»: кадры друг под другом, промежуток шкалы ритма.
+     Ширина не ограничивается — обе половины обязаны читаться. */
+  .case-comparison {
+    display: flex;
+    flex-direction: column;
+    gap: var(--flow-group);
+    margin-block-start: var(--flow-block);
+  }
+
   .case-outro > :global(.ds-link) {
     margin-block-start: var(--flow-text);
     display: inline-flex;

@@ -19,13 +19,19 @@
  *    рассмотрены, 71 закрыта, две сняты как ложные; 91 скриншот,
  *    девять отчётов, ноль ошибок консоли на финальной приёмке.
  */
-import { EMAIL } from '../site';
 
 const YEAR = '2026';
 const TEAM =
   'Sole designer — product framing, research synthesis, IA, UX/UI, design system, prototype and QA';
 const RESEARCH = 'Desk research, five competitors and one simulated interview; no human validation';
 const DURATION = 'Sixteen days, brief to audited interactive prototype';
+
+/**
+ * Адрес живого прототипа. Стоит константой с 2026-08-28: носителей два —
+ * пара `Prototype` в мете шапки и ссылка внутри `process`, и разойтись
+ * они не должны.
+ */
+const PROTOTYPE = 'https://pawly-fawn.vercel.app/app';
 
 const media = '/media/case-pawly';
 
@@ -45,8 +51,10 @@ export const pawly = {
       { term: 'Client', value: 'Independent product concept' },
       { term: 'Product', value: 'Marketplace for dog walking and pet sitting' },
       { term: 'Year', value: YEAR },
-      { term: 'Role', value: 'Lead Product Designer' },
+      { term: 'Role', value: 'Product Designer' },
       { term: 'Platform', value: 'Mobile — iOS first, Android next; web prototype' },
+      { term: 'Evidence', value: 'Independent concept · no human validation' },
+      { term: 'Prototype', value: 'Live, on invented data', href: PROTOTYPE },
     ],
     outcome:
       'Outcome. The result was not a polished set of happy-path screens but a testable service model: seven-stage verification is visible, handover produces proof, failure has a recovery path, and the product says what it cannot guarantee. What it cost: a narrower launch, manual operations behind the interface, and several promises deliberately left out.',
@@ -105,7 +113,7 @@ export const pawly = {
       'Then the visual system and the build: 63 primitive tokens, 30 semantic tokens, fourteen text styles and 33 React components with named Storybook matrices. Figma, specifications, React and the catalogue use the same semantic names. The prototype went through structural review, parity review, visual acceptance and synthetic agent runs; the findings returned to the same source instead of being patched only in screenshots.',
     ],
     prototype: {
-      href: 'https://pawly-fawn.vercel.app/app',
+      href: PROTOTYPE,
       label: 'Open the prototype',
       note: 'The interactive concept on invented data — seventeen mobile frames, plus the responsive landing in the same build.',
     },
@@ -244,14 +252,14 @@ export const pawly = {
           'The booking now carries a visible chain of evidence: early coverage, hard compatibility constraints, dated verification, handover proof, a route that survives lost connection, an explicit return and a replacement path. The price shown to the owner includes the 18% platform commission and the walker sees the payout before accepting.',
       },
       {
-        term: 'Built',
+        term: 'Sacrificed',
         value:
-          'Eighty-one core nodes designed at flow and group level; sixteen key screens assembled into seventeen routed frames, plus the landing. Thirty-three components and their state matrices carry the same semantic variables across Figma, specifications, React and Storybook.',
+          'Reach, and the promises that would have sold it faster: no insurance, no guaranteed replacement, no claim about a walker the platform has not verified itself. Coverage came before a complete safety profile at launch, and several operations run by hand behind the interface.',
       },
       {
         term: 'Verified',
         value:
-          'Seventy-three review findings examined, seventy-one resolved and two dismissed as false positives. The final acceptance covered all seventeen routes and the landing at 1440, 960 and 375 pixels with 91 screenshots, nine reports and zero console errors. Synthetic agent QA completed the correct first action five times out of five and the happy path three times out of three; the major persistence defect it found passed retest.',
+          'Seventeen routed frames and the landing were walked at three widths, and seventy-three review findings were resolved or dismissed with a stated reason. A synthetic agent run found the defect that mattered — state from one visitor surviving into the next — and it passed retest.',
       },
       {
         term: 'What changed in how I work',
@@ -259,13 +267,11 @@ export const pawly = {
           'I stopped treating a complete happy path as a complete service. The most important fixes lived between screens: one price across two roles, state that must not leak to the next visitor, a keyboard path through the gallery, and recovery when the person the owner chose is no longer coming.',
       },
     ],
-    nda: 'This is an interactive product concept, not a launched marketplace. No human interviews or usability sessions were completed, and there are no bookings, users, revenue, conversion or retention figures. The synthetic agent runs measure the prototype’s behaviour, not demand or adoption. PRD targets such as weekly bookings, fill rate and proof coverage remain targets, not results.',
+    nda: 'This is an interactive product concept, not a launched marketplace. No human interviews or usability sessions were completed, and there are no bookings, users, revenue, conversion or retention figures. The synthetic agent runs measure the prototype’s behaviour, not demand or adoption. PRD targets such as weekly bookings, fill rate and proof coverage remain targets, not results. If it ran, the number that would decide the model is the share of walks that end with proof an owner actually opens — verification nobody looks at is cost without trust.',
   },
 
   outro: {
     heading: 'Trust was the interface, not a layer of copy.',
     lead: 'Every screen above either shows evidence, preserves it through failure, or admits what the service cannot guarantee yet.',
-    cta: 'Get in touch',
-    href: `mailto:${EMAIL}`,
   },
 };

@@ -84,6 +84,13 @@ interface Props {
   framed?: boolean;
   /** Открывать кадр в полный размер по нажатию. Требует MediaZoom на маршруте. */
   zoom?: boolean;
+  /**
+   * Что открывать в зуме, если это не `src`. Носитель — артефакты решений:
+   * колонка `0.6fr` в `DecisionBlock` даёт кадру ~453 px, и полный экран
+   * продукта в ней нечитаем. На странице стоит кроп с доводом, в зуме —
+   * тот же экран целиком. Заведено 2026-08-28, находка `L2-5`.
+   */
+  zoomSrc?: string;
   class?: string;
 }
 
@@ -100,6 +107,7 @@ const {
   reveal = true,
   framed = false,
   zoom = false,
+  zoomSrc,
   class: className,
 } = Astro.props;
 
@@ -129,7 +137,7 @@ const wrapperProps = zoomable
       class: 'media-frame__zoom',
       type: 'button' as const,
       'data-zoom-trigger': true,
-      'data-zoom-src': src,
+      'data-zoom-src': zoomSrc ?? src,
       'data-zoom-alt': alt,
       'aria-label': `${zoomLabel}: ${alt}`,
     }

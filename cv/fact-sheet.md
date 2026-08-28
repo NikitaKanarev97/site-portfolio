@@ -67,8 +67,8 @@ Recommended narrative:
 
 | Fact | Status | Evidence / permitted wording |
 |---|---|---|
-| Start date: Jan 2023 | VERIFIED | Current CV. |
-| Present status | VERIFIED WITH SCOPE NOTE | A paid contract ended in spring 2026, but self-directed product and portfolio work continues. Use `Jan 2023-Present` only with wording that makes the ongoing self-directed scope explicit. Do not imply that the spring contract remains active. |
+| Start date: Jan 2023 | VERIFIED | Current CV; owner chronology records web-design project work from January 2023 to September 2023, before DSSL. |
+| Present status | RESOLVED BY SPLIT 2026-08-28 | The scope note is no longer carried by wording inside one row: client work and self-directed work are now two entries (finding `L3-6`). `Product Designer - client work, Jan 2023-Present` holds paid engagements only and says the most recent contract closed in spring 2026; `Selected independent projects, 2026` holds Pawly and the portal reconstruction. **Portfolio concepts must never sit under an employment row again** — that was the defect: `3+ years` could be read as including personal projects. |
 | Agent Ops Console - NDA B2B SaaS client project | VERIFIED | Portfolio source and owner decision recorded in `src/copy/home.ts`. Work ended with a tested prototype accepted by the client; implementation was the client's responsibility. |
 | Agent Ops Console scale: three roles, 35 scoped artboards, delivery within one month | VERIFIED | Published case source. Use as project-scope evidence; do not convert it into post-launch business impact. |
 | Agent Ops Console shipped into production | DO NOT CLAIM | Case disclosure explicitly says the work ended at accepted prototype and claims no shipped result. |
@@ -134,7 +134,7 @@ Recommended narrative:
 | Fact | Status | Evidence / permitted wording |
 |---|---|---|
 | Russian - Native | VERIFIED | Current CV. |
-| English - B2 / Upper-Intermediate | VERIFIED as self-reported | Current CV. No IELTS or other official score was found. Do not claim C1. |
+| English - professional working proficiency | OWNER DECISION 2026-08-28 | The CEFR label was removed, not raised (finding `L3-7`, `audit/hiring-readiness-2026-08-28.md`). A self-reported `B2` is never verified by a recruiter but is filtered on, and the written English of the published cases reads above it. **No score is claimed and none may be added**: there is still no IELTS or equivalent, and `C1` must not appear anywhere. |
 
 ## Claims excluded from every CV version
 

@@ -1,6 +1,14 @@
 # CV Change Log
 
-Updated: 2026-08-27
+Updated: 2026-08-28
+
+## 2026-08-28 — hiring-readiness findings `L3-6` and `L3-7`
+
+Source: `audit/hiring-readiness-2026-08-28.md`. Both were owner decisions, not editorial calls.
+
+- **Split the overlapping freelance row into two entries (`L3-6`).** `Freelance Product Designer - Self-employed, Jan 2023 - Present` mixed paid client engagements with portfolio concepts while overlapping DSSL, so `3+ years` could be read as including personal projects. It is now `Product Designer - client work, Jan 2023 - Present` — paid engagements only, stating that the most recent contract closed in spring 2026 — plus a separate `Selected independent projects, 2026` holding Pawly and the portal reconstruction. The 2026-08-27 fix reworded the overlap; this one removes the ambiguity structurally.
+- **Removed the CEFR label from English (`L3-7`).** `B2 (Upper-Intermediate)` became `professional working proficiency`. The level was **removed, not raised**: a self-reported CEFR grade is never verified by a recruiter but is filtered on, while the written English of the published cases reads above it. No score is claimed and none may be added — `C1` must not appear anywhere.
+- Both changes are mirrored in the Russian CV and both PDFs were rebuilt. `cv/fact-sheet.md` carries the new rules, including that portfolio concepts must never sit under an employment row again.
 
 ## Feedback remediation
 

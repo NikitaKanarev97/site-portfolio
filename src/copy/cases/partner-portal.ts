@@ -41,6 +41,13 @@ const TEAM = 'Sole designer — with frontend, backend, a product manager, QA an
 const RESEARCH = 'Product manager on the team; no researcher — the research was mine';
 const DURATION = 'Roughly six months of active work, spread across a long pause';
 
+/**
+ * Адрес живого прототипа. Стоит константой с 2026-08-28: носителей два —
+ * пара `Prototype` в мете шапки и ссылка внутри `process`, и разойтись
+ * они не должны.
+ */
+const PROTOTYPE = 'https://b2b-partner-portal-five.vercel.app/';
+
 const media = '/media/case-dssl';
 
 export const partnerPortal = {
@@ -61,6 +68,8 @@ export const partnerPortal = {
       { term: 'Year', value: YEAR },
       { term: 'Role', value: 'Product Designer' },
       { term: 'Platform', value: 'Web, desktop-first' },
+      { term: 'Evidence', value: 'Commercial redesign · shipped in full' },
+      { term: 'Prototype', value: 'Live, on synthetic data', href: PROTOTYPE },
     ],
     /** CASE-02: что решено и какой ценой, в шапке, одним абзацем. */
     outcome:
@@ -70,10 +79,20 @@ export const partnerPortal = {
       { term: 'Product / research', value: RESEARCH },
       { term: 'Duration', value: DURATION },
     ],
-    /** CASE-04. Вариант flagged, а не muted — решение карты №2. */
+    /**
+     * CASE-04. Вариант flagged, а не muted — решение карты №2.
+     *
+     * Порядок фактов перевёрнут 2026-08-28, находка `L1-2`. Метка была
+     * «A rebuild, not the shipped product», и то, что редизайн дошёл до прода
+     * целиком, стояло третьим предложением внутри абзаца. Рекрутер читает
+     * метку, а не абзац, и уходил с выводом «это не production» — при том,
+     * что это единственный отгруженный коммерческий редизайн в портфолио.
+     * Ни один факт не снят и не смягчён: отгрузка и пересборка обе названы,
+     * поменялось только что стоит первым.
+     */
     rework: {
-      label: 'A rebuild, not the shipped product',
-      text: 'The portal is real and so are its constraints. The redesign shipped in full — every page of the portal — but what you see here is not that build: I designed the solution again from the original product and my own research. Every screen on this page carries synthetic data — no real client, vendor, article number or commercial term appears anywhere on it.',
+      label: 'Shipped at DSSL — rebuilt here on synthetic data',
+      text: 'The redesign shipped in full: every page of the portal went live at DSSL. What you see on this page is not that build — I designed the solution again from the original product and my own research, and every screen of that rebuild carries synthetic data — no real client, vendor, article number or commercial term appears on any of them. One archival frame of the original portal is shown for comparison, cropped so that no order, article number or price is in it.',
     },
   },
 
@@ -101,6 +120,35 @@ export const partnerPortal = {
       'I audited its ten screens before touching anything, and the pattern held across all of them. The left rail was icons with no labels. The dashboard opened with a training banner and promotions, so a professional buyer’s workspace led with marketing. The filter panel listed dozens of technical attributes at one level, alphabetically, with no search inside it and no count of what was already selected. A product card never said whether the item was in the cart, and never said how old its stock number was.',
       'None of that is fatal alone. Together it meant every non-trivial step ended the same way — a message to the personal manager. The manager was the only place a partner’s terms actually lived, and the portal was the thing you used before writing to them.',
     ],
+    /**
+     * Пара «было → стало» — находка `L3-4`, решение владельца 2026-08-28,
+     * закрывает вопрос ИА №12. До этого кейс подробно рассказывал, каким был
+     * старый портал, и не показывал его: единственный отгруженный
+     * коммерческий редизайн в портфолио оставался без доказательства.
+     *
+     * Показывается один экран, а не десять, и один вопрос: чем открывается
+     * рабочее место закупщика. Старый отвечает баннером обучения и промо,
+     * новый — тем, что блокирует работу. Остальные девять кадров старого
+     * портала не публикуются: там живые артикулы, склады и суммы.
+     *
+     * Кадр обрезан так, чтобы ретушь не потребовалась вовсе: карточка заказа
+     * с номером, кодом ДП и суммой осталась за границей кропа. Обрезать
+     * надёжнее, чем замазывать — замазанное можно не заметить.
+     */
+    comparison: [
+      {
+        src: `${media}/legacy-dashboard.webp`,
+        alt: 'The original portal dashboard: an unlabelled icon rail, a training banner across the top, three action tiles and a promotional bonus block',
+        caption:
+          'Before. The buyer’s workspace opened with a training banner and a bonus promotion. Interface in Russian, as it shipped; the partner’s own name is masked.',
+      },
+      {
+        src: `${media}/new-dashboard.webp`,
+        alt: 'The redesigned dashboard: a procurement workspace opening with a Requires attention table of blocking items ranked by impact and due time',
+        caption:
+          'After. The same question — what does the workspace open with — answered by what is blocking work, ranked by impact and due time.',
+      },
+    ],
   },
 
   reframe: {
@@ -126,16 +174,30 @@ export const partnerPortal = {
      * стоял в кейсе нигде, и абзац выше ссылался на «the built prototype»,
      * которого читателю негде было увидеть.
      *
-     * Стоит здесь, а не в шапке и не рядом с CTA. В шапке он обещал бы
-     * продукт: это прототип на синтетических данных, а не портал заказчика,
-     * и подпись говорит это прямо. Рядом с CTA он спорил бы с ним за одну
-     * цель — `ds/patterns.md` §`FeaturedCaseCover` запрещает две цели
-     * фокуса подряд по той же причине.
+     * **Носителей стало два, 2026-08-28** — находка `L2-6`, решение
+     * владельца. Прежнее обоснование держало ссылку только здесь и
+     * запрещало шапку. Оно снято не целиком: из двух его доводов один
+     * остаётся в силе, второй к шапке не относился.
+     *
+     * Довод «рядом с CTA он спорил бы за одну цель» — про главную:
+     * `ds/patterns.md` §`FeaturedCaseCover` запрещает две цели фокуса
+     * подряд внутри обложки-ссылки. В шапке кейса CTA нет вовсе, и
+     * запрет сюда не переносится.
+     *
+     * Довод «в шапке он обещал бы продукт» остаётся в силе и решается
+     * формулировкой, а не отказом от места: значение пары называет
+     * природу ссылки прямо — `Live, on synthetic data`. Обещание снято
+     * там же, где дано, а не абзацем ниже.
+     *
+     * Эта ссылка остаётся, потому что делает другую работу: в шапке
+     * прототип отвечает на «есть ли что открыть», здесь — на «то самое,
+     * через что прошёл агентский прогон». Один адрес, две разные роли;
+     * поэтому и `PROTOTYPE` вынесен константой — разойтись они не должны.
      *
      * `external`: маркер ↗ в этом продукте значит ровно «внешняя ссылка».
      */
     prototype: {
-      href: 'https://b2b-partner-portal-five.vercel.app/',
+      href: PROTOTYPE,
       label: 'Open the prototype',
       note: 'The built prototype, on synthetic data — the same one the agent run walked through.',
     },
@@ -283,25 +345,27 @@ export const partnerPortal = {
       },
     ],
     /** CASE-12. Стоит здесь, не в шапке и не в подвале. */
-    nda: 'Numbers from this project are covered by an NDA and are not published. There is also no baseline to publish them against — the metrics defined for it are a plan for measurement, not a claim of results. The three-of-three above is an agent run, not adoption. What is above it is the compromise, stated in full.',
+    nda: 'Numbers from this project are covered by an NDA and are not published, and there is no baseline to publish them against. The three-of-three above is an agent run, not adoption. What I would measure, given one: the share of specification lines that reach an order without a manager touching them, how long an ambiguous line waits before someone resolves it, and how often a delivery argument can be settled by pointing at the source row. The last one is the reason the source row exists at all.',
   },
 
+  /**
+   * Переход в конце кейса (`CASE-16`). Надписи и адреса здесь нет: строка
+   * сквозная (`site.nextCase`), а следующий кейс считается по реестру
+   * `src/copy/cases/index.ts` с замыканием на первый.
+   *
+   * **Прежний `href: '#contact'` снят 2026-08-28, `L2-3`.** Он был верен для
+   * своей задачи — проверен по собранной странице 2026-08-25, узел
+   * `id="contact"` на месте, и `mailto:` в трёх соседних кейсах был хуже,
+   * потому что уводил мимо блока с тремя другими способами связи. Но сама
+   * задача была временной: `CASE-16` отдаёт роль «дальше» контакту только
+   * «в версии 1, с появлением второго кейса возвращается Next case без
+   * возврата на главную». Кейсов четыре. `ContactBlock` печатает `PageShell`
+   * сразу за этим блоком на всех маршрутах (`IA-06`), поэтому связь от
+   * правки не теряется — она перестаёт быть единственным, что предлагает
+   * конец страницы.
+   */
   outro: {
     heading: 'This case probably raised a question.',
     lead: 'Most of it is a compromise, and compromises are worth arguing about.',
-    cta: 'Get in touch',
-    /**
-     * Якорь на своей же странице, не `mailto:` и не адрес главной.
-     * `ContactBlock` печатает `PageShell` на всех маршрутах (`IA-06`), и
-     * на кейсе он стоит сразу за этим блоком: ссылка ведёт на соседнюю
-     * секцию — «Let's talk», почта, LinkedIn, CV. Это и есть переход к
-     * контакту, которого требует `CASE-16`.
-     *
-     * Проверено 2026-08-25 по собранной странице после вопроса, что эта
-     * кнопка делает: узел `id="contact"` в `dist/work/partner-portal`
-     * присутствует, ссылка рабочая. `mailto:` здесь был бы хуже — он
-     * увёл бы мимо блока, где стоят ещё три способа связи.
-     */
-    href: '#contact',
   },
 };

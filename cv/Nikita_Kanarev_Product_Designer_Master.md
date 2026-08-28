@@ -23,15 +23,24 @@ Video-surveillance developer and distributor with 19 offices and 20+ warehouses;
 - Designed learner and authoring workflows for an internal video-learning platform spanning courses, lessons, progress, tests, certificates, content upload and responsive use.
 - Launched corporate-site sections and product landing pages, then carried shared patterns through engineering handoff and UI QA.
 
-### Freelance Product Designer - Self-employed
+### Product Designer - client work - Independent
 
 Jan 2023 - Present - Remote
 
-Client and self-directed work: full-time before DSSL, alongside it from Sep 2023, and continued through current portfolio work.
+Paid client engagements: full-time before DSSL, alongside it from Sep 2023. Most recent contract closed in spring 2026.
 
-- Delivered product design across B2B SaaS, veterinary operations and service marketplaces, combining research, information architecture, design systems, interactive prototypes and QA.
 - Scoped 35 Agent Ops artboards across three roles and delivered the tested clickable core within one month; the NDA client accepted the prototype after user testing and rework.
-- Designed and built four production Webflow marketing sites end to end, including visual design, responsive implementation, CMS, interactions and QA.
+- Designed a veterinary clinic operations concept from domain research with a practising veterinarian through to a working prototype.
+- Designed and built four production Webflow marketing sites end to end, including visual design, responsive implementation, interactions and QA.
+
+### Selected independent projects - Self-directed
+
+2026 - Remote
+
+Own product work, not client engagements. Listed separately so it is never read as employment.
+
+- Pawly - a dog-care marketplace concept taken from service model to an audited interactive prototype and a 33-component design system.
+- Rebuilt the DSSL partner portal solution on synthetic data to publish it without disclosing client material.
 
 ## Selected Work
 
@@ -75,7 +84,7 @@ A 13-screen prototype with 31 edge cases, grounded in research and Veterinary Do
 
 ## Languages
 
-English - B2 (Upper-Intermediate) | Russian - Native
+English - professional working proficiency | Russian - Native
 
 ## Availability
 

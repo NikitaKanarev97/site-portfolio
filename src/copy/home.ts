@@ -43,9 +43,17 @@ export const home = {
     role: 'Product Designer',
     specialization:
       'I design B2B products where the hard part is the constraint, not the canvas — legacy systems, several roles on one dataset, decisions with a real price.',
-    /** Дословно из ia/authorization-copy.md. Не переписывать в отрыве от файла. */
+    /**
+     * Дословно из ia/authorization-copy.md. Не переписывать в отрыве от файла.
+     *
+     * Порядок фактов перевёрнут 28.08.2026, решение владельца: доступен
+     * удалённо сейчас → готов переехать со спонсорством. Прежняя редакция
+     * начиналась со спонсорства, то есть первым сообщением первого экрана
+     * шло то, что нанять сложно. Факты те же и все на месте; 66 знаков
+     * против лимита в две строки на 360 px.
+     */
     authorization:
-      'Kazakhstan · open to relocation with visa sponsorship, remote until then.',
+      'Kazakhstan · remote now, open to relocation with visa sponsorship.',
     /**
      * С 2026-08-25 открытых кейсов больше одного, и прежняя строка «Read the case:
      * B2B Partner Portal» называла один из них. Ведёт якорем в секцию
@@ -88,6 +96,7 @@ export const home = {
           { term: 'Year', value: '2026' },
           { term: 'Role', value: 'Product Designer' },
           { term: 'Platform', value: 'Web, desktop-first' },
+          { term: 'Evidence', value: 'Paid client · user-tested · accepted' },
         ],
         cta: 'Read the case',
         /** Тот же набор, что на CaseCover кейса. Данные на кадрах выдуманы. */
@@ -110,6 +119,7 @@ export const home = {
           { term: 'Year', value: '2024–2026' },
           { term: 'Role', value: 'Product Designer' },
           { term: 'Platform', value: 'Web, desktop-first' },
+          { term: 'Evidence', value: 'Commercial redesign · shipped in full' },
         ],
         cta: 'Read the case',
         /**
@@ -136,6 +146,7 @@ export const home = {
           { term: 'Year', value: '2026' },
           { term: 'Role', value: 'Product Designer' },
           { term: 'Platform', value: 'Web, desktop and tablet' },
+          { term: 'Evidence', value: 'Concept · domain input from one vet' },
         ],
         cta: 'Read the case',
         /** Тот же набор, что на CaseCover кейса. Данные на кадрах выдуманы. */
@@ -155,8 +166,9 @@ export const home = {
         meta: [
           { term: 'Product', value: 'Dog walking and pet sitting marketplace' },
           { term: 'Year', value: '2026' },
-          { term: 'Role', value: 'Lead Product Designer' },
+          { term: 'Role', value: 'Product Designer' },
           { term: 'Platform', value: 'Mobile, iOS first and Android next' },
+          { term: 'Evidence', value: 'Independent concept · no human validation' },
         ],
         cta: 'Read the case',
         /** Тот же набор, что на CaseCover кейса. Данные на кадрах выдуманы. */
@@ -211,8 +223,22 @@ export const home = {
    * другое на портфолио нельзя.
    */
   development: {
-    heading: 'Webflow sites',
-    lead: 'Four marketing sites, designed and built end to end in Webflow. Listed for completeness — this is presentation work, not product work.',
+    /**
+     * Заголовок и подводка переписаны 2026-08-28, находка `L1-1`. Было:
+     * «Webflow sites» + «Listed for completeness — this is presentation work,
+     * not product work». Вторая строка осталась от редакции, где дизайн
+     * приписывался заказчику; роль подняли до «Design and Webflow build»
+     * решением владельца 2026-08-25, а подводка продолжала говорить читателю
+     * не засчитывать блок. Четыре сборки доказывают адаптив, движение,
+     * Client-First и кастомный код — то, что в вакансиях идёт отдельным
+     * требованием, и добровольно списывать это в примечание нельзя.
+     *
+     * CMS в подводке не заявляется: коллекции есть только у Bloomlex, и это
+     * сказано в его карточке. Общее утверждение про CMS было бы неверным на
+     * трёх сборках из четырёх.
+     */
+    heading: 'Selected web builds',
+    lead: 'Four marketing sites, designed and built end to end in Webflow — the second side of my practice: visual design carried through to a working responsive build.',
     /** DEV-02: подпись роли стоит у каждой сборки, не одной строкой на секцию. */
     roleLabel: 'Role',
     roleValue: 'Design and Webflow build',

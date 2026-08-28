@@ -54,6 +54,12 @@ export interface SiteCopy {
     announce?: string;
     fallbackAnnounce?: string;
   };
+  /**
+   * Надпись перехода к следующему кейсу в конце страницы кейса.
+   * Строка сквозная, адрес — нет: следующий кейс считается по реестру
+   * src/copy/cases/index.ts, а не пишется в тексте кейса (US-20).
+   */
+  nextCase: string;
   zoom: { label: string; open: string; close: string };
   footer: {
     location: string;
@@ -93,6 +99,7 @@ export const site = {
       { label: 'CV (PDF)', href: '/cv.pdf', external: false },
     ],
   },
+  nextCase: 'Next case',
   /**
    * Строки увеличения кадра (MediaZoom). Подпись кнопки-источника читает
    * только скринридер: видимая подсказка на кадре закрывала бы сам кадр,

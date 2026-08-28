@@ -34,7 +34,6 @@
  *
  * Сквозные строки — в ../site.ts.
  */
-import { EMAIL } from '../site';
 
 const YEAR = '2026';
 const TEAM =
@@ -42,6 +41,13 @@ const TEAM =
 const RESEARCH =
   'Interviews with the client and with current and future users; the prototype was tested and reworked';
 const DURATION = 'Up to one month, brief to a tested prototype accepted by the client';
+
+/**
+ * Адрес живого прототипа. Стоит константой с 2026-08-28: носителей два —
+ * пара `Prototype` в мете шапки и ссылка внутри `process`, и разойтись
+ * они не должны.
+ */
+const PROTOTYPE = 'https://agent-ops-console.vercel.app';
 
 const media = '/media/case-agent-ops';
 
@@ -63,6 +69,8 @@ export const agentOpsConsole = {
       { term: 'Year', value: YEAR },
       { term: 'Role', value: 'Product Designer' },
       { term: 'Platform', value: 'Web, desktop-first' },
+      { term: 'Evidence', value: 'Paid client · user-tested · accepted' },
+      { term: 'Prototype', value: 'Live, on invented data', href: PROTOTYPE },
     ],
     /** CASE-02: что решено и какой ценой, в шапке, одним абзацем. */
     outcome:
@@ -92,7 +100,7 @@ export const agentOpsConsole = {
     ],
     alt: 'Agent Ops Console review queue: total exposure for the day, four repeating-cause clusters above ninety-one single conversations, with the run detail and the approval queue behind it',
     caption:
-      'The product before the case explains it: $18,430 of exposure for one day, $0 of it reviewed, four repeating causes above ninety-one single conversations. All data is invented.',
+      'The product before the case explains it: $18,430 of exposure for one day, $0 of it reviewed, four repeating causes above ninety-one single conversations.',
   },
 
   context: {
@@ -124,7 +132,7 @@ export const agentOpsConsole = {
       'Then the role model — Reviewer, Shift Lead, Policy Owner — the information architecture, the design system, and 18 of 35 scoped artboards assembled into a clickable prototype. Testing it with users added decisions the brief never had: a cluster needs its members visible and removable or reviewers stop trusting clusters at all, a wrong verdict needs a short window to take back before it poisons the reporting, and a reviewer needs to see what happened to their correction, or they quietly stop classifying causes at all.',
     ],
     prototype: {
-      href: 'https://agent-ops-console.vercel.app',
+      href: PROTOTYPE,
       label: 'Open the prototype',
       note: 'The clickable console on invented data — nineteen screens across three roles. There is no backend; a reload starts a fresh shift.',
     },
@@ -161,11 +169,23 @@ export const agentOpsConsole = {
           'The queue is ordered by money at risk, and a repeating cause sits above every single conversation.',
         why: 'Arrival order tells a reviewer nothing, and a red flag tells them no more — what they need is “someone promised €420 here”, in figures. Reviewers had already built a shadow filter of their own, and it produced a smaller pile rather than an expensive one. Clusters go on top because one review of an expired article protects seventeen conversations at once.',
         cost: 'Sorting by money buries the promises that carry none — a delivery date, a claim about what a plan covers — which reviewers put at roughly half the traffic. Those get a nominal exposure by type: an editorial judgement the product must keep defending, not a measurement.',
+        /**
+         * Кроп, а не экран целиком — находка `L2-5`, 2026-08-28. Артефакт
+         * решения стоит в колонке `0.6fr` (~453 px), и полный кадр 2000 px
+         * шёл там в масштабе 0,23: подпись называла сумму, которую нельзя
+         * было прочитать. Кроп даёт 0,53. Экран целиком открывается в зуме
+         * через `zoomSrc` — он никуда не делся.
+         *
+         * Подпись сокращена вместе с кадром: таблица участников в кроп не
+         * влезает, и обещать её в подписи больше нельзя. То, что участники
+         * остаются видимыми и удаляемыми, сказано в `cost` этого решения.
+         */
         artifact: {
-          src: `${media}/cluster-detail.webp`,
-          alt: 'Cluster detail: seventeen runs citing one expired article, $4,200 of exposure, and the full table of affected conversations with a remove control on each row',
+          src: `${media}/cluster-detail-crop.webp`,
+          zoomSrc: `${media}/cluster-detail.webp`,
+          alt: 'Cluster header: seventeen runs citing one expired article, $4,200 of exposure, and the shared source marked expired in 2024',
           caption:
-            'Seventeen conversations, one expired article, $4,200. The members stay visible and removable — a cluster nobody can inspect is a cluster nobody trusts.',
+            'Seventeen conversations, one expired article, $4,200 — and the source that caused all of them, expired two years ago.',
         },
       },
       {
@@ -185,9 +205,11 @@ export const agentOpsConsole = {
           'A financial action is stopped before it executes, and the screen states what leaves the account and what the customer will read.',
         why: 'April cost $23,000 because the promise was in writing by the time anyone found it, so the interception has to sit before the money moves. The approver needs the amount, the policy that applied, the billing answer, the customer’s history and — literally — the sentence the customer is about to receive. Rejecting takes a reason from the same four classes a correction uses, so refusing is also how the product learns.',
         cost: 'A queue with a clock on it. Timers create their own pressure, and overdue items escalate into the shift handoff instead of quietly expiring. And a person now stands in the path of every payout — exactly the automation the client had bought.',
+        /** Кроп по тем же правилам, что у первого решения. `L2-5`. */
         artifact: {
-          src: `${media}/consequence-preview.webp`,
-          alt: 'Approval card with the amount, policy, billing answer and customer history, and two panels stating what leaves the account and what the customer will read',
+          src: `${media}/consequence-preview-crop.webp`,
+          zoomSrc: `${media}/consequence-preview.webp`,
+          alt: 'Two panels under the approval card: what leaves the account — $340 to the customer’s card within five business days — and the sentence the customer will read',
           caption:
             'Both consequences on screen before the button is armed: what leaves the account, and the sentence the customer reads.',
         },
@@ -210,7 +232,7 @@ export const agentOpsConsole = {
   system: {
     heading: 'Forty-two components, built around the states where the risk actually lives.',
     body: [
-      'The system carries 88 primitive and 70 semantic tokens, 17 text styles and 42 components with 331 declared variants. Nothing in the semantic layer is a pinned value: every token is an alias, defined separately in each of two modes. Dark is the working mode — a console for a shift, not a report — and light is mandatory rather than decorative, because the auditor role prints.',
+      'The system carries 88 primitive and 70 semantic tokens, 17 text styles and 331 declared variants. Nothing in the semantic layer is a pinned value: every token is an alias, defined separately in each of two modes. Dark is the working mode — a console for a shift, not a report — and light is mandatory rather than decorative, because the auditor role prints.',
       'Storybook renders every declared combination from the same React component the screens import, so the catalogue cannot quietly become a second implementation.',
       'The matrices below are the product under pressure rather than at rest: money that has to read as a figure and not as a colour, a metric that shows nothing rather than a stale number, an empty queue that separates “cleared” from “could not load”, a verdict that can be taken back, and a rollout step that is allowed to fail.',
     ],
@@ -263,14 +285,14 @@ export const agentOpsConsole = {
           'The reviewable object changed from a message to a commitment, which turns an impossible requirement — read 1,770 conversations — into a small one: every refund, credit, plan change and promised date reaches a person, the rest is sampled by expected cost. Repeating causes are reviewed once, corrections carry a reason class and a visible route, financial actions are intercepted before they execute, and a policy is a versioned object with an author, a diff and an approval chain.',
       },
       {
-        term: 'Built',
+        term: 'Sacrificed',
         value:
-          'Thirty-five artboards scoped, eighteen built, and a clickable prototype of nineteen screens on twenty routes across three roles. Forty-two components and 331 variants sit on 88 primitive and 70 semantic tokens in two modes, with the same semantic names in Figma, the specifications, React and Storybook.',
+          'The automation the company paid for, exactly where it pays: every financial commitment now waits for a person. And ranking by cost buries the promises that carry none — roughly half the traffic — which are left to an editorial judgement the product has to keep defending.',
       },
       {
         term: 'Verified',
         value:
-          'The parity pass examined 67 findings against the artboards and closed all 67. A synthetic agent run failed 6 checks of 42 before the fixes and 0 of 41 after, with no regressions; it found the verdict-key defect and the telemetry loss. The prototype was then tested with users, reworked on the findings and accepted by the client.',
+          'The prototype — nineteen screens on twenty routes across three roles — was tested with users, reworked on the findings and accepted by the client. Before that a synthetic agent run failed six checks of forty-two and none after the fixes; it caught the verdict-key defect and the telemetry loss.',
       },
       {
         term: 'What changed in how I work',
@@ -278,13 +300,20 @@ export const agentOpsConsole = {
           'I stopped trusting a measurement layer I had not tried to break. The most expensive defect I shipped was invisible in the interface and looked like a result in the dashboard — and research that quietly under-reports is worse than no research, because it gets believed.',
       },
     ],
-    nda: 'Every company, person, invoice and amount on the screens is invented. The build was the client’s, so this case claims no post-launch outcome — no reduction in losses, no change in deflection, CSAT or handling time. The 25.3 FTE and the 4% commitment rate are my estimates from the client’s figures, not measurements, and the synthetic agent run measures the prototype, not the design.',
+    nda: 'The build was the client’s, so this case claims no post-launch outcome. The 25.3 FTE and the 4% commitment rate are my estimates from the client’s figures, not measurements, and the agent run measures the prototype, not the design. Nothing here was measured. The number that would decide it: how many capabilities earned a higher autonomy level over a quarter — oversight that never ends in more autonomy is a cost the company simply took on.',
   },
 
+  /**
+   * Переход в конце кейса (`CASE-16`). Надписи и адреса здесь нет: строка
+   * сквозная (`site.nextCase`), а следующий кейс считается по реестру
+   * `src/copy/cases/index.ts` с замыканием на первый. Прежняя пара
+   * `cta` + `href` вела в контакт — роль, которую требование отдавало
+   * контакту только «в версии 1», до появления второго кейса. Кейсов
+   * четыре, `ContactBlock` стоит сразу за этим блоком на всех маршрутах
+   * (`IA-06`), и связь от правки не теряется. Правка 2026-08-28, `L2-3`.
+   */
   outro: {
     heading: 'Oversight is only worth building if it ends in more autonomy, not less.',
     lead: 'Every screen above either shows a person what the agent did on their behalf, stops something expensive before it leaves, or accumulates the evidence for letting the agent do it alone.',
-    cta: 'Get in touch',
-    href: `mailto:${EMAIL}`,
   },
 };

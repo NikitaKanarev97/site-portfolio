@@ -31,7 +31,6 @@
  *
  * Сквозные строки — в ../site.ts.
  */
-import { EMAIL } from '../site';
 
 /**
  * Срок подтверждается датами артефактов проекта (11–25 августа 2026) и
@@ -42,6 +41,13 @@ const YEAR = '2026';
 const TEAM = 'Sole designer — research, product decisions, design system and the prototype';
 const RESEARCH = 'Conversations with a practising veterinarian; no research team';
 const DURATION = 'Two weeks, brief to working prototype';
+
+/**
+ * Адрес живого прототипа. Стоит константой с 2026-08-28: носителей два —
+ * пара `Prototype` в мете шапки и ссылка внутри `process`, и разойтись
+ * они не должны.
+ */
+const PROTOTYPE = 'https://veterinary-clinic-gules.vercel.app/';
 
 const media = '/media/case-vet';
 
@@ -63,6 +69,8 @@ export const vetClinic = {
       { term: 'Year', value: YEAR },
       { term: 'Role', value: 'Product Designer' },
       { term: 'Platform', value: 'Web — desktop, tablet in the room, owner’s phone' },
+      { term: 'Evidence', value: 'Concept · domain input from one vet' },
+      { term: 'Prototype', value: 'Live, on invented data', href: PROTOTYPE },
     ],
     /** CASE-02: что решено и какой ценой, в шапке, одним абзацем. */
     outcome:
@@ -132,7 +140,7 @@ export const vetClinic = {
      * выдуманных данных, и подпись говорит это прямо.
      */
     prototype: {
-      href: 'https://veterinary-clinic-gules.vercel.app/',
+      href: PROTOTYPE,
       label: 'Open the prototype',
       note: 'The prototype, on invented data — thirteen screens, the same build the agent runs walked through.',
     },
@@ -218,7 +226,7 @@ export const vetClinic = {
   system: {
     heading: 'Thirty-one components, and one I deleted.',
     body: [
-      'Eighty-five variables — 54 primitive, 31 semantic — 21 text styles, 31 logical components, 136 variants. Every fill and stroke resolves through a semantic variable and every text node through a named style. A full read-only scan, not a sample, found zero hardcoded colours, zero text nodes without a style and zero detached instances; the thirty geometry values still unbound are listed as debt, not hidden behind a claim of parity.',
+      'Eighty-five variables — 54 primitive, 31 semantic — 21 text styles and 136 variants. Every fill and stroke resolves through a semantic variable, every text node through a named style. A full read-only scan, not a sample, found no hardcoded colours, no unstyled text nodes and no detached instances; the thirty geometry values still unbound are listed as debt, not hidden behind a claim of parity.',
       'The one I deleted is the card container: three variants, zero instances anywhere in the product. A component carries exactly the anatomy it was created with, and this one had a title and a single row, while the real blocks here need two to five elements, several of them nested instances. Keeping it “for later” would have meant every screen quietly working around it, which is worse than not having it.',
       'Coverage is not checked by eye: a script walks the catalogue against the variant matrix, and the states below are shot from the catalogue, not assembled by hand.',
     ],
@@ -288,14 +296,18 @@ export const vetClinic = {
       },
     ],
     /** CASE-12. Стоит здесь, не в шапке и не в подвале. */
-    nda: 'The clinic is covered by an NDA: it is not named, and no figures from it are published. There is no baseline to publish them against either — the metrics here are a plan for measurement, not a claim of results, and the ones worth measuring came from the veterinarian as things you can observe: the notebook is not replaced, she leaves at seven instead of nine, the administrator stops asking what to bill. Nothing above is adoption.',
+    /**
+     * Граница проверки названа прямо — находка `L1-3`, 2026-08-28. Прежний
+     * текст говорил, чего нет (метрик, внедрения), но не говорил, что именно
+     * было проверено и на ком. Разговор про «одного врача» лучше вести
+     * самому, чем отдавать его интервьюеру: названное ограничение можно
+     * обсуждать, необъявленное выглядит найденным.
+     */
+    nda: 'Validated: workflow and vocabulary, with one practising veterinarian. Not validated: whether either generalises across clinics, roles or regulation. The clinic is under NDA — not named, no figures published — and there is no baseline to publish them against: the metrics here are a plan for measurement, not a claim of results. The ones worth measuring came from the veterinarian as things you can observe: the notebook is not replaced, she leaves at seven instead of nine, the administrator stops asking what to bill. Nothing above is adoption.',
   },
 
   outro: {
     heading: 'This case is mostly a list of refusals.',
     lead: 'Every decision above bought a guarantee by giving something up, and every one of those trades is arguable.',
-    cta: 'Get in touch',
-    /** `mailto:`, а не якорь: узла id="contact" на сайте нет. Как в кейсе DSSL. */
-    href: `mailto:${EMAIL}`,
   },
 };
