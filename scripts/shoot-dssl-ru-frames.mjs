@@ -33,7 +33,9 @@ const COVER_FRAMES = [
 ];
 
 const VIEWPORT_FRAMES = [
-  { file: 'candidate-select.webp', route: '/resolution-center/candidate-select' },
+  /* candidate-select снят 31.08.2026: артефакт первого решения теперь ролик
+     `clip-line-identity` (`shoot-clips.mjs`), и снимок этого экрана на
+     странице не стоит ни в одной локали. */
   { file: 'cart-change-review.webp', route: '/cart/change-review' },
 ];
 

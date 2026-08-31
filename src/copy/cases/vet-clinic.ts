@@ -154,6 +154,26 @@ export const vetClinic = {
       label: 'Open the prototype',
       note: 'The prototype, on invented data — thirteen screens, the same build the agent runs walked through.',
     },
+    /**
+     * Клип — `CASE-20`, съёмка `scripts/shoot-clips.mjs`, режим `reflow`.
+     *
+     * Здесь он показывает не взаимодействие, а перестроение ширин, и это
+     * не смягчение требования, а единственное честное его прочтение для
+     * этого кейса: прототип собран галереей экранов, продуктовых
+     * обработчиков в нём нет, и «взаимодействие» пришлось бы разыграть.
+     * Адаптив, наоборот, у сборки настоящий — он и заявлен строкой
+     * `Platform` в шапке.
+     *
+     * Экран взят быстрым следом визита, а не очередью дня: очередь уже
+     * стоит выше композитом диапазона, а планшет в кабинете — ровно тот
+     * случай, ради которого этот экран спроектирован.
+     */
+    clip: {
+      src: `${media}/clip-widths-quick-trace-poster.webp`,
+      video: `${media}/clip-widths-quick-trace`,
+      alt: 'Screen recording of one window narrowing from 1440 to 768 and then 390 px: the three steps of the trace, side by side on the desktop, stack into a single column',
+      caption: 'The trace at 1440, 768 and 390 px: the tablet gets a column, not a smaller desktop.',
+    },
     artifacts: [
       {
         src: `${media}/screen-index.webp`,

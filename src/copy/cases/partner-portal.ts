@@ -208,6 +208,25 @@ export const partnerPortal = {
       label: 'Open the prototype',
       note: 'The built prototype, on synthetic data — the same one the agent run walked through.',
     },
+    /**
+     * Клип взаимодействия — `CASE-20`, съёмка `scripts/shoot-clips.mjs`.
+     * Место то же, что в кейсе Agent Ops: сразу за ссылкой на прототип.
+     * Подпись обещает собранный прототип — ролик показывает его работающим,
+     * не требуя перехода.
+     *
+     * Сюжет — второй интакт спецификации, вставка из Excel. Он выбран, а не
+     * разбор строки, потому что показывает обещание кейса в момент его
+     * исполнения: экран печатает исходный текст каждой строки и говорит
+     * словами продукта, что ничего не выброшено. Разбор строки стоит ниже,
+     * артефактом первого решения, и повторения нет — это разные экраны.
+     */
+    clip: {
+      src: `${media}/clip-paste-specification-poster.webp`,
+      video: `${media}/clip-paste-specification`,
+      alt: 'Screen recording of the quick order: four lines pasted from a spreadsheet, the columns recognised, and a grid where two lines match a catalogue product, one shows eleven possible matches and one has no catalogue match',
+      caption:
+        'Four pasted lines, read as they arrived: two matched, two became review items, none was rewritten.',
+    },
     artifacts: [
       {
         src: `${media}/screen-index.webp`,
@@ -241,10 +260,22 @@ export const partnerPortal = {
           'File import and typed entry are two intakes for one specification. Exactly one screen resolves what a line is.',
         why: 'Two intakes with two resolution mechanics produce two audit trails for the same decision, and a specification is a document people argue about later. The provenance of a line — source file, row number, original text, original quantity — has to survive to the order, or a disputed delivery has nothing to check itself against.',
         cost: 'Quick order lost its own candidate picker. A partner who typed four lines is sent to a different screen to finish two of them, and that hand-off has to be spelled out on the button before they press it.',
+        /**
+         * Артефакт этого решения — ролик, а не снимок (`scripts/shoot-clips.mjs`).
+         * Подпись не изменилась и менять её не пришлось: она и раньше
+         * говорила «compared before the choice is applied», а ролик ровно
+         * этим и заканчивается — сравнением без применения.
+         *
+         * `layout: 'wide'` обязателен: в боковом слоте 0.6fr экрану
+         * достаётся ~453 px, и десктопная таблица в нём нечитаема. У
+         * снимка эту работу делал кроп с `zoomSrc`; у ролика увеличения
+         * нет — `MediaZoom` открывает изображение, а не видео.
+         */
         artifact: {
-          src: `${media}/candidate-select-crop.webp`,
-          zoomSrc: `${media}/candidate-select.webp`,
-          alt: 'Two catalogue candidates for one ambiguous imported line before the choice is applied',
+          src: `${media}/clip-line-identity-poster.webp`,
+          video: `${media}/clip-line-identity`,
+          layout: 'wide',
+          alt: 'Screen recording: an ambiguous line opens a panel that prints its source text, its quantity and the reason it is ambiguous, beside two catalogue candidates that differ by object detection — compared, then left unapplied',
           caption: 'Both candidates for one imported line, compared before the choice is applied.',
         },
       },

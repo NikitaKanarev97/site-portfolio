@@ -56,9 +56,11 @@ const COVER_FRAMES = [
 const NATURAL_FRAMES = [
   { file: 'screen-index.webp', route: '/app', selector: 'body', gallery: true },
   { file: 'address-input.webp', route: '/app/address-input' },
-  { file: 'walker-profile.webp', route: '/app/walker-profile' },
   { file: 'handover-photo-review.webp', route: '/app/handover-photo-review' },
-  { file: 'replacement-offer.webp', route: '/app/replacement-offer' },
+  /* walker-profile и replacement-offer сняты 31.08.2026: артефактами второго
+     и четвёртого решений стоят ролики `clip-verification` и
+     `clip-replacement` (`shoot-clips.mjs`). Шторка «как мы проверяем» и
+     обратный отсчёт на кнопке на снимке не существуют в принципе. */
 ];
 
 /** Матрицы CaseSystemGrid и один артефакт процесса. */

@@ -130,6 +130,24 @@ export const pawly = {
       label: 'Open the prototype',
       note: 'The interactive concept on invented data — seventeen mobile frames, plus the responsive landing in the same build.',
     },
+    /**
+     * Клип — `CASE-20`, съёмка `scripts/shoot-clips.mjs`. Экран проверки
+     * заказа выбран потому, что на нём тезис кейса виден целиком и до
+     * денег: полная цена, а под ней два раскрытия — чего платформа не
+     * страхует и во что обойдётся поздняя отмена. Оплата в кадр не входит
+     * намеренно: концепт ничего не проводит, и ролик не должен обещать
+     * обратное.
+     *
+     * Два других ролика стоят ниже, артефактами решений: проверка
+     * выгульщика и замена с обратным отсчётом.
+     */
+    clip: {
+      src: `${media}/clip-booking-disclosures-poster.webp`,
+      video: `${media}/clip-booking-disclosures`,
+      alt: 'Screen recording of the booking review: the full price with its total, then two disclosures opened in turn — that there is no insurance behind the booking, and the three cancellation tiers',
+      caption:
+        'Before the pay button: what this booking is not insured against, and what a late cancellation costs.',
+    },
     artifacts: [
       {
         src: `${media}/screen-index.webp`,
@@ -175,11 +193,17 @@ export const pawly = {
           'Verification is seven named stages with dates, not one “verified” badge.',
         why: 'Owners need to know what the platform did, not how confidently it coloured the checkmark. The same evidence also has to explain why a walker is compatible with this dog: the pet’s required safety fields become hard matching constraints, and an empty result names the constraint instead of offering to clear it.',
         cost: 'Verification is operationally expensive. Only four stages are self-served in the first version; interview, trial walk and reference stay with an operator. The product remains fast for the owner by accepting manual work behind the interface rather than automating a check it cannot perform credibly.',
+        /**
+         * Ролик вместо снимка: шторка «как мы проверяем» открывается только
+         * нажатием, и на статичном кадре её не бывает — а именно она и
+         * отвечает на вопрос, что стоит за словом «проверен».
+         */
         artifact: {
-          src: `${media}/walker-profile.webp`,
-          alt: 'Walker profile showing seven verification stages with dates, compatibility with the dog, review state and the choose action',
+          src: `${media}/clip-verification-poster.webp`,
+          video: `${media}/clip-verification`,
+          alt: 'Screen recording of the walker profile: seven verification stages with their dates, then a sheet explaining what the stages are and how often they are renewed',
           caption:
-            'Seven checks with their dates, followed by the reasons this walker matches this dog. The badge is only the summary.',
+            'Seven checks with their dates, and what each of them means. The badge is only the summary.',
         },
       },
       {
@@ -199,11 +223,17 @@ export const pawly = {
           'A compatible replacement is a primary flow: same time, same price, one tap and a timeout.',
         why: 'A cancelled walker is not an exception to a marketplace promise; it is the moment when that promise is tested. The replacement has to match the same risk profile and booking conditions, and the owner should not rebuild the order under pressure. If they do not answer in time, the compatible reserve is assigned so the walk can still happen.',
         cost: 'The feature consumes real supply: the operation has to keep a reserve available and absorb the price difference. When no compatible reserve exists, the interface has to say so immediately; there is no generic “we are looking” state that can buy reliability with time.',
+        /**
+         * Единственный кадр в портфолио, который снимок показать не может:
+         * обратный отсчёт на кнопке идёт по-настоящему. Ролик показывает и
+         * вторую ветку решения — уход к списку и возврат к предложению.
+         */
         artifact: {
-          src: `${media}/replacement-offer.webp`,
-          alt: 'Replacement offer with a verified walker, compatibility checks, the unchanged time and price, a sixty-second confirmation and another-choice action',
+          src: `${media}/clip-replacement-poster.webp`,
+          video: `${media}/clip-replacement`,
+          alt: 'Screen recording of the replacement offer: a verified substitute at the same time and price, a confirmation button counting down from sixty seconds, and the alternative — choosing someone else',
           caption:
-            'The substitute is already checked against the dog, time and price. The owner confirms; they do not repeat the booking.',
+            'The substitute is already checked against the dog, time and price, and the offer is counting down.',
         },
       },
     ],

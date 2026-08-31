@@ -41,7 +41,16 @@ import { siteRu } from '../../copy/ru/site.ts';
 export function getStaticPaths() {
   return cases.map((entry) => ({
     params: { slug: entry.slug },
-    props: { entry, locale: 'en' as Props['locale'] },
+    /*
+     * `entry` отдаётся как `Props['entry']`, то есть `any`, а не выведенным
+     * типом английского реестра. Русский маршрут рендерит этот же компонент
+     * своими данными, и выведенный union английских кейсов делал бы его
+     * props несовместимыми: у артефактов решений разные наборы ключей —
+     * у одних `zoomSrc`, у других `video` и `layout`. Тип слоя текстов
+     * здесь и так объявлен `any` (см. `interface Props` ниже); эта строка
+     * лишь не даёт Astro вывести более узкий.
+     */
+    props: { entry: entry as Props['entry'], locale: 'en' as Props['locale'] },
   }));
 }
 
@@ -313,9 +322,20 @@ const nextHref = `${locale === 'ru' ? '/ru' : ''}/work/${nextEntry.slug}`;
           >
             {item.artifact && (
               <figure slot="artifact" class="case-artifact">
+                {/*
+                  Артефакт решения бывает роликом, а не снимком: `video`
+                  ставит на его место клип взаимодействия (съёмка —
+                  scripts/shoot-clips.mjs). Проп `zoom` при этом остаётся:
+                  MediaFrame сам гасит увеличение у видео, потому что
+                  MediaZoom открывает изображение, а не ролик. Кроп с
+                  отдельным `zoomSrc` роликам не нужен — движение и так
+                  идёт в полную меру колонки, поэтому носители клипов
+                  стоят `layout: 'wide'` там, где экран десктопный.
+                */}
                 <MediaFrame
                   src={item.artifact.src}
                   zoomSrc={item.artifact.zoomSrc}
+                  video={item.artifact.video}
                   alt={item.artifact.alt}
                   ratio="natural"
                   rounded={entry.slug === 'pawly' || item.artifact.rounded}
