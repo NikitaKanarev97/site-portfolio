@@ -728,12 +728,14 @@ const CASES = {
 
           await page.waitForTimeout(600);
           await hand.click(disclosures.nth(0));
-          await page.waitForTimeout(1900);
+          // Выдержка отсчитывается от нажатия, а выезд шторки съедает у неё
+          // свои 420 мс: чтению остаётся столько же, сколько до анимации.
+          await page.waitForTimeout(2300);
           await hand.pressAt(above);
-          await page.waitForTimeout(700);
+          await page.waitForTimeout(900);
 
           await hand.click(disclosures.nth(1));
-          await page.waitForTimeout(1900);
+          await page.waitForTimeout(2300);
           await hand.pressAt(above);
           await scrim.waitFor({ state: 'detached' });
           await page.waitForTimeout(400);
@@ -762,8 +764,10 @@ const CASES = {
 
           await page.waitForTimeout(1400);
           await hand.click(page.locator('[class*="linkRow"]').first());
+          // `visible` приходит в начале выезда, а не в конце: выдержка
+          // покрывает и анимацию, и чтение.
           await sheet.waitFor({ state: 'visible' });
-          await page.waitForTimeout(2600);
+          await page.waitForTimeout(3000);
 
           await hand.click(sheet.locator('button').last());
           await page.waitForTimeout(500);
