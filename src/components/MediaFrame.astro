@@ -4,6 +4,9 @@
  *
  * Варианты: ratio=wide (Webflow-сборки), ratio=portrait (портрет в About)
  * и ratio=natural (кадры кейса).
+ * Опции rounded и fill нужны мобильным продуктовым экранам: первая
+ * восстанавливает силуэт карточки, вторая разрешает экрану занять колонку
+ * решения целиком, даже если исходная CSS-ширина была меньше колонки.
  *
  * Углы wide скруглены, добавлено 2026-08-25: radius-lg на десктопе — тот
  * же радиус, что у слоёв ScreenStack, — и radius-md на миниатюре ниже
@@ -84,6 +87,10 @@ interface Props {
   framed?: boolean;
   /** Открывать кадр в полный размер по нажатию. Требует MediaZoom на маршруте. */
   zoom?: boolean;
+  /** Скруглить окно кадра токеном ДС. Для скриншотов карточек, не фотографий. */
+  rounded?: boolean;
+  /** В natural снять потолок исходной CSS-ширины и заполнить доступную колонку. */
+  fill?: boolean;
   /**
    * Что открывать в зуме, если это не `src`. Носитель — артефакты решений:
    * колонка `0.6fr` в `DecisionBlock` даёт кадру ~453 px, и полный экран
@@ -107,6 +114,8 @@ const {
   reveal = true,
   framed = false,
   zoom = false,
+  rounded = false,
+  fill = false,
   zoomSrc,
   class: className,
 } = Astro.props;
@@ -160,6 +169,8 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
     `media-frame--${ratio}`,
     ratioMobile && `media-frame--mobile-${ratioMobile}`,
     framed && 'media-frame--framed',
+    rounded && 'media-frame--rounded',
+    fill && 'media-frame--fill',
     className,
   ]}
   data-motion={reveal ? 'reveal-media' : undefined}
@@ -276,6 +287,29 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
   .media-frame--natural .media-frame__mask {
     inline-size: 100%;
     max-inline-size: var(--media-max, 100%);
+  }
+
+  /* Мобильный экран в узкой колонке решения — один цельный объект, а не
+     миниатюра, прижатая влево. Исходник снят с повышенной плотностью, поэтому
+     заполнение колонки не теряет читаемость. */
+  .media-frame--natural.media-frame--fill {
+    align-items: stretch;
+  }
+
+  .media-frame--natural.media-frame--fill .media-frame__mask {
+    max-inline-size: 100%;
+  }
+
+  /* Скругление опционально: обычный natural по-прежнему не теряет углы
+     интерфейса. У карточки продукта пустые внешние углы и могут быть сняты. */
+  .media-frame--rounded .media-frame__mask {
+    border-radius: var(--radius-md);
+  }
+
+  @media (--bp-md) {
+    .media-frame--rounded .media-frame__mask {
+      border-radius: var(--radius-lg);
+    }
   }
 
   /* Кадр показывается целиком: бокс уже равен его пропорции, и cover срезал бы

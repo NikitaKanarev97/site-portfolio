@@ -78,6 +78,20 @@ const HIDE_SCROLLBARS = `
 `;
 
 /**
+ * Natural screen captures contain only the product device. The viewer bar is
+ * fixed, so Playwright otherwise paints it over an element screenshot even
+ * when the bar sits outside the device's document-flow bounds.
+ */
+const NATURAL_VIEWER_CSS = `
+  ${HIDE_SCROLLBARS}
+  [class*="viewerBar"] { display: none !important; }
+  [class*="viewer"] {
+    padding-block-start: 0 !important;
+    min-height: 0 !important;
+  }
+`;
+
+/**
  * Viewer остаётся частью кадра как нейтральное поле вокруг мобильного
  * интерфейса, но его служебная шапка скрывается. Экран продукта не
  * растягивается и не кадрируется.
@@ -200,7 +214,7 @@ async function shoot() {
   for (const frame of NATURAL_FRAMES) {
     await open(
       `${ORIGIN}${ROUTE_PREFIX}${frame.route}`,
-      frame.gallery ? COMPACT_GALLERY_CSS : HIDE_SCROLLBARS,
+      frame.gallery ? COMPACT_GALLERY_CSS : NATURAL_VIEWER_CSS,
     );
 
     let raw;

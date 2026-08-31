@@ -170,8 +170,22 @@ const CASES = {
      */
     css: `
       [class*="viewerBar"] { display: none !important; }
-      [class*="viewer"] { padding: 0 !important; min-height: 0 !important; }
+      [class*="viewer"] {
+        width: 100% !important;
+        padding: 0 !important;
+        min-height: 0 !important;
+      }
+      [class*="device"] {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+      }
     `,
+    /** The compositor restores the product-card silhouette after capture. */
+    columnRadius: 16,
     /**
      * Высота у колонок разная, и это единственный кейс, где так. У трёх
      * остальных колонка — один и тот же экран на разной ширине, и общая
@@ -225,10 +239,10 @@ async function settle(page, locale, css) {
 }
 
 /** Единый масштаб: снимки ставятся рядом как есть, разница ширин сохраняется. */
-async function compose(shots) {
+async function compose(shots, columnRadius = 0) {
   const framed = await Promise.all(
-    shots.map((shot) =>
-      sharp(shot)
+    shots.map(async (shot) => {
+      const base = await sharp(shot)
         .extend({
           top: HAIRLINE,
           bottom: HAIRLINE,
@@ -237,8 +251,21 @@ async function compose(shots) {
           background: BORDER_DEFAULT,
         })
         .png()
-        .toBuffer({ resolveWithObject: true }),
-    ),
+        .toBuffer({ resolveWithObject: true });
+
+      if (!columnRadius) return base;
+
+      const radius = Math.round(columnRadius * DEVICE_SCALE_FACTOR);
+      const mask = Buffer.from(
+        `<svg width="${base.info.width}" height="${base.info.height}"><rect width="100%" height="100%" rx="${radius}" fill="white"/></svg>`,
+      );
+
+      return sharp(base.data)
+        .ensureAlpha()
+        .composite([{ input: mask, blend: 'dest-in' }])
+        .png()
+        .toBuffer({ resolveWithObject: true });
+    }),
   );
 
   const pad = Math.round(PAD * DEVICE_SCALE_FACTOR);
@@ -292,7 +319,7 @@ async function shootCase(name) {
 
     await mkdir(path.resolve(dir), { recursive: true });
     const out = path.resolve(dir, config.out);
-    await sharp(await compose(shots))
+    await sharp(await compose(shots, config.columnRadius))
       .resize({ width: NATURAL_MAX, withoutEnlargement: true })
       .webp({ quality: WEBP_QUALITY })
       .toFile(out);
