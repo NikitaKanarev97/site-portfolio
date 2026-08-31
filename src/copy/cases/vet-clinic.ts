@@ -191,6 +191,7 @@ export const vetClinic = {
           src: `${media}/visit-quick-trace-crop.webp`,
           zoomSrc: `${media}/visit-quick-trace.webp`,
           layout: 'wide',
+          rounded: true,
           alt: 'The quick trace workspace: weight, medication and dose run as three adjacent steps, followed by one private line and the saved actions',
           caption:
             'Three steps stay visible together, followed by one private line. Saving the trace and opening the full record remain separate actions.',

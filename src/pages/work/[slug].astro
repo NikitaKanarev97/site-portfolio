@@ -318,7 +318,7 @@ const nextHref = `${locale === 'ru' ? '/ru' : ''}/work/${nextEntry.slug}`;
                   zoomSrc={item.artifact.zoomSrc}
                   alt={item.artifact.alt}
                   ratio="natural"
-                  rounded={entry.slug === 'pawly'}
+                  rounded={entry.slug === 'pawly' || item.artifact.rounded}
                   fill={entry.slug === 'pawly'}
                   zoom
                 />
