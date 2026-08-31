@@ -103,6 +103,19 @@ export const pawly = {
     ],
     statement:
       'Make every promise inspectable before it becomes trust — and keep the evidence intact when the happy path breaks.',
+    /**
+     * Кадр диапазона. У трёх десктопных кейсов диапазон идёт по ширинам;
+     * здесь продукт мобильный, 390 px — вся его правда, и диапазон идёт по
+     * времени сервиса: три момента из лида кейса. Съёмка —
+     * `scripts/shoot-range-frames.mjs pawly`, обоснование места и состава —
+     * `ds/screens/case-pawly.md` и `audit/visual-density-2026-08-31.md` §9.
+     */
+    range: {
+      src: `${media}/range-evidence-chain.webp`,
+      alt: 'One booking at three moments on a 390 px phone: the review screen with the full price, the missing-insurance disclosure and the pay action; the walk in progress with the live route, the assigned walker and a timeline holding the pickup photo; and the finished walk with both handover photos, a segment recorded offline and synced later, and the amount charged',
+      caption:
+        'The same booking before, during and after: what was promised, what is visible while it happens, and what remains as proof.',
+    },
   },
 
   process: {

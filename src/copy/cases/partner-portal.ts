@@ -67,7 +67,7 @@ export const partnerPortal = {
       { term: 'Product', value: 'Distributor partner portal, redesign' },
       { term: 'Year', value: YEAR },
       { term: 'Role', value: 'Product Designer' },
-      { term: 'Platform', value: 'Web, desktop-first' },
+      { term: 'Platform', value: 'Web — desktop-first, responsive to 360 px' },
       { term: 'Evidence', value: 'Commercial redesign · shipped in full' },
       { term: 'Prototype', value: 'Live, on synthetic data', href: PROTOTYPE },
     ],
@@ -160,6 +160,13 @@ export const partnerPortal = {
     ],
     statement:
       'Take a specification the partner already has, and carry it to a placed order without losing a single source row.',
+    /** Кадр диапазона — `scripts/shoot-range-frames.mjs`, обоснование места в шаблоне. */
+    range: {
+      src: `${media}/range-resolution-center.webp`,
+      alt: 'The specification review at 1440 px and at 390 px side by side: on the narrow width the navigation rail collapses into a menu button, the four counters stack into a column, and a table row becomes a labelled card with quantity, status, explanation and its action',
+      caption:
+        'The same review at 1440 px and at 390: the rail becomes a menu, a table row becomes a card.',
+    },
   },
 
   process: {

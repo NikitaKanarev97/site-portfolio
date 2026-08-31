@@ -68,7 +68,7 @@ export const agentOpsConsole = {
       { term: 'Product', value: 'Internal oversight console for an AI support agent' },
       { term: 'Year', value: YEAR },
       { term: 'Role', value: 'Product Designer' },
-      { term: 'Platform', value: 'Web, desktop-first' },
+      { term: 'Platform', value: 'Web — desktop-first, responsive to 360 px' },
       { term: 'Evidence', value: 'Paid client · user-tested · accepted' },
       { term: 'Prototype', value: 'Live, on invented data', href: PROTOTYPE },
     ],
@@ -122,6 +122,17 @@ export const agentOpsConsole = {
     ],
     statement:
       'Review the consequences, not the sentences — and fix the cause once, not the conversation fourteen times.',
+    /**
+     * Кадр диапазона. Один снимок, две ширины в едином масштабе — съёмка
+     * `scripts/shoot-range-frames.mjs`, обоснование места и композита там же
+     * и в `audit/visual-density-2026-08-31.md`.
+     */
+    range: {
+      src: `${media}/range-review-queue.webp`,
+      alt: 'The review queue at 1640 px and at 390 px side by side: on the narrow width the navigation rail collapses into a menu button, the four exposure metrics stack into a column, and the four cause clusters become full-width cards',
+      caption:
+        'The same queue at 1640 px and at 390: the rail becomes a menu, the table becomes cards.',
+    },
   },
 
   process: {

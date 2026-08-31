@@ -68,7 +68,7 @@ export const vetClinic = {
       { term: 'Product', value: 'Clinic operations SaaS: schedule, medical record, invoicing' },
       { term: 'Year', value: YEAR },
       { term: 'Role', value: 'Product Designer' },
-      { term: 'Platform', value: 'Web — desktop, tablet in the room, owner’s phone' },
+      { term: 'Platform', value: 'Web — responsive: desktop, tablet in the room, owner’s phone' },
       { term: 'Evidence', value: 'Concept · domain input from one vet' },
       { term: 'Prototype', value: 'Live, on invented data', href: PROTOTYPE },
     ],
@@ -124,6 +124,16 @@ export const vetClinic = {
     ],
     statement:
       'Make the smallest useful record survive thirty seconds, and let everything else be written later.',
+    /**
+     * Кадр диапазона — три колонки, а не две: планшет назван платформой в
+     * мете кейса. Подпись самая короткая из трёх кейсов не случайно: запас
+     * по `CASE-15` здесь исчерпан, см. `ds/screens/case-vet.md` §Бюджет слов.
+     */
+    range: {
+      src: `${media}/range-vet-day-queue.webp`,
+      alt: 'The day queue at 1440, 768 and 390 px side by side: the navigation rail collapses into a menu button, the visit table drops its waiting and action columns on the tablet, and on the phone each visit becomes a labelled card ending in Start visit',
+      caption: 'The same day at 1440, 768 and 390 px: columns drop, rows become cards.',
+    },
   },
 
   process: {

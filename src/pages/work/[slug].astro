@@ -190,6 +190,35 @@ const nextHref = `${locale === 'ru' ? '/ru' : ''}/work/${nextEntry.slug}`;
       {reframe.body.map((paragraph: string) => <p>{paragraph}</p>)}
     </ProseBlock>
     <NoteBlock variant="emphasis">{reframe.statement}</NoteBlock>
+
+    {/*
+      Кадр диапазона. Стоит во всех четырёх кейсах, но диапазон у него не
+      один и тот же: у трёх десктопных — по ширинам, у мобильного Pawly —
+      по времени сервиса. Ширина у Pawly одна, 390 px, и диапазон ширин там
+      доказывал бы то, чего продукт не обещает; три момента одного заказа
+      доказывают ровно тезис этого кейса.
+
+      Место выбрано замером, а не вкусом. От подписи обложки до первого
+      артефакта в `CaseProcess` шло 679–786 слов без единого кадра — самый
+      длинный текстовый прогон страницы, и стоял он ровно там, где читатель
+      решает, оставаться ли (`audit/visual-density-2026-08-31.md` §2). Конец
+      `CaseReframe` — середина этого прогона: разрыв разваливается пополам,
+      а не сдвигается.
+
+      Обёртка нужна: `.case-artifact` несёт `margin: 0`, и figure прямым
+      ребёнком секции потеряла бы шаг вертикали. Ту же роль играют
+      `.case-artifacts` и `.case-comparison` у соседей.
+    */}
+    {
+      reframe.range && (
+        <div class="case-range">
+          <figure class="case-artifact">
+            <MediaFrame src={reframe.range.src} alt={reframe.range.alt} ratio="natural" zoom />
+            <figcaption class="ds-meta-sm case-caption">{reframe.range.caption}</figcaption>
+          </figure>
+        </div>
+      )
+    }
   </section>
 
   <section class="ds-container ds-section case-block">
