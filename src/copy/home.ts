@@ -318,7 +318,7 @@ export const home = {
      * до решения, работа в чужих ограничениях, ИИ в собственном процессе, —
      * но готовой формулировки не даёт. Ревьюится вместе с /about.
      */
-    body: 'I start by reframing the task, because the question a team brings is rarely the one worth answering. Then I work inside whatever cannot be changed — the legacy system, the roles, the deadline — and treat those limits as the material rather than the obstacle. AI sits inside that process, not next to it.',
+    body: 'I start by reframing the task, because the question a team brings is rarely the one worth answering. Then I work inside whatever cannot be changed — the legacy system, the roles, the deadline — and treat those limits as the material rather than the obstacle. AI sits inside that process, not next to it. The work ends in a build that runs, not in a handoff file.',
     link: 'More about how I work',
     href: '/about',
   },

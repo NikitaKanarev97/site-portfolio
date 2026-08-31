@@ -15,7 +15,7 @@
  *   - строка UTC+5 обязана совпадать со строкой Footer в site.ts.
  *
  * Что здесь ЧЕРНОВИК и ждёт владельца:
- *   - intro.lead, intro.principle и два абзаца evidence.body. Вайрфрейм
+ *   - intro.lead, intro.principle и три абзаца evidence.body. Вайрфрейм
  *     задаёт содержание каждого абзаца, готовой формулировки не даёт.
  *     Написано по фактам кейса /work/partner-portal —
  *     src/copy/cases/partner-portal.ts.
@@ -66,6 +66,8 @@ export const about = {
       'Every case I write has a section about what did not work, and it is not there for modesty. The order in which a project is run is a design decision, and the places where I got that order wrong are hard to fake. On DSSL I finished six screens before checking their structure against comparable products. A structural finding costs a paragraph before the screen exists and a rebuild afterwards. Two defects found later were also diagnosed incorrectly the first time; fixing either diagnosis would have fixed nothing.',
       /* Чем меряю результат, когда цифры закрыты. */
       'Most of what I have shipped is under NDA, and some of it has no baseline to measure against: its metrics were a plan for measurement, not a claim of results. I do not publish numbers I cannot stand behind or let a plan pass for an outcome. I publish the compromise instead — what the design achieved, what it cost, who now does more work, and what would have to change to remove that cost. A named trade-off can be checked in conversation; a number without a baseline cannot.',
+      /* Чем заканчивается работа: доведение до работающей сборки. */
+      'The same standard applies to what I hand over. I carry design decisions through to a working build — tokens, components in code, a deployed URL, a QA pass against the running screen — because a decision that stops at a handoff file has not been tested yet. The boundary is the one I would give you in conversation: the front end and integration with an existing API, and most of these builds are prototypes on synthetic data rather than production systems under load.',
     ],
   },
 

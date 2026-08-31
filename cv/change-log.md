@@ -1,6 +1,15 @@
 # CV Change Log
 
-Updated: 2026-08-28
+Updated: 2026-08-31
+
+## 2026-08-31 — positioning line: work is carried through to a working build
+
+Source: `PLAYBOOK-upwork-positioning.md` §4, owner decision of 2026-08-31. The site is not rebuilt for a client audience; the only change to both public documents is one sentence about delivery.
+
+- **Rewrote the last sentence of the summary in both languages.** It was `translating design decisions into semantic tokens, React prototypes and Storybook-ready component specifications`; it is now `carrying design decisions through to semantic tokens, React components and a deployed working build rather than a handoff file`. The claim is a differentiator inside the Product Designer role, not a change of role — `Design Engineer` stays on the `DO NOT CLAIM` list in `cv/fact-sheet.md`, and nothing about production systems, backend, auth or payments is implied.
+- **Nothing else in the CV changed.** Headline, experience, selected work and skills are untouched; both PDFs and the plain-text resume were rebuilt from `resume-data.json` and `resume-data-ru.json`.
+- **Line count held.** The English summary stays four lines and the sheet is unchanged in height; the Russian sentence was written shorter than the one it replaced, so the Russian sheet is 26 px shorter than before this edit.
+- **Pre-existing overflow found, not introduced and not fixed here.** `.sheet` in `cv/styles-branded.css` is a fixed 297 mm with `overflow:hidden`, and both branded layouts exceed it: the English one by ~17 px (the footer line with the email is clipped in the PDF), the Russian one by ~97 px (the `Дополнительно` block, the CTA bar and the footer). The ATS layout fits. This predates the sentence above and is a separate fix.
 
 ## 2026-08-28 — hiring-readiness findings `L3-6` and `L3-7`
 

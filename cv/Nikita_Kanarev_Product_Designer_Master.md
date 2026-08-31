@@ -8,7 +8,7 @@ Kazakhstan - UTC+5 - Open to relocation
 
 ## Professional Summary
 
-Product Designer with 3+ years of experience designing complex B2B products and workflows. Spent nearly three years as the sole designer in a 6-10 person cross-functional team, owning three products end to end and shipping a full partner-portal redesign. Brings technical implementation fluency to complex, legacy-heavy domains, translating design decisions into semantic tokens, React prototypes and Storybook-ready component specifications.
+Product Designer with 3+ years of experience designing complex B2B products and workflows. Spent nearly three years as the sole designer in a 6-10 person cross-functional team, owning three products end to end and shipping a full partner-portal redesign. Brings technical implementation fluency to complex, legacy-heavy domains, carrying design decisions through to semantic tokens, React components and a deployed working build rather than a handoff file.
 
 ## Experience
 

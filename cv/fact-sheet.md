@@ -1,6 +1,6 @@
 # Nikita Kanarev - CV Fact Sheet
 
-Updated: 2026-08-27
+Updated: 2026-08-31
 
 Status legend:
 
@@ -35,6 +35,7 @@ Status legend:
 | End-to-end ownership from research through systems, handoff and QA | VERIFIED | Current CV; DSSL and portfolio case process sections. |
 | Strong Figma / design-systems practice | VERIFIED | Portfolio cases document Figma systems, semantic tokens, component matrices, and Storybook parity. |
 | Technical implementation literacy | VERIFIED | React prototypes, Storybook catalogues, HTML/CSS, repository delivery and QA are evidenced across the portfolio projects. |
+| Work carried through to a deployed working build | VERIFIED WITH QUALIFIER | Owner decision 2026-08-31, `PLAYBOOK-upwork-positioning.md` §4. Evidenced by deployed prototypes (Pawly, Vet Clinic OS, the partner-portal reconstruction), the four production Webflow sites and `kanarev.com` itself. Permitted wording: `a deployed working build`, `a live URL`. **Do not extend it** to a production system under load, work inside a client's existing repository, backend, auth or payments — none of those are evidenced. |
 | Senior Product Designer | DO NOT CLAIM | The requested positioning is mid-level / Product Designer, and no senior title is documented. |
 | Design Engineer as primary identity | DO NOT CLAIM | Technical fluency is a differentiator, not the role. |
 
