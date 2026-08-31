@@ -246,6 +246,32 @@ const nextHref = `${locale === 'ru' ? '/ru' : ''}/work/${nextEntry.slug}`;
       </TextLink>
     </div>
 
+    {/*
+      Клип взаимодействия. Стоит сразу за ссылкой на прототип и перед
+      статичными артефактами: подпись обещает работающую консоль, ролик
+      показывает её работающей, а решение «нажать ↗ или читать дальше»
+      читатель принимает уже увидев продукт в движении.
+
+      Зума нет намеренно: MediaZoom открывает изображение, а не ролик, и
+      кнопка увеличения на видео обещала бы то, чего диалог не умеет.
+      Обёртка — по той же причине, что у .case-range выше.
+    */}
+    {
+      process.clip && (
+        <div class="case-clip">
+          <figure class="case-artifact">
+            <MediaFrame
+              src={process.clip.src}
+              video={process.clip.video}
+              alt={process.clip.alt}
+              ratio="natural"
+            />
+            <figcaption class="ds-meta-sm case-caption">{process.clip.caption}</figcaption>
+          </figure>
+        </div>
+      )
+    }
+
     <div class="case-artifacts" data-motion-group data-motion-stagger="tight">
       {
         process.artifacts.map((artifact: any) => (
@@ -281,6 +307,7 @@ const nextHref = `${locale === 'ru' ? '/ru' : ''}/work/${nextEntry.slug}`;
             decision={item.decision}
             why={item.why}
             cost={item.cost}
+            artifactLayout={item.artifact?.layout}
             whyLabel={locale === 'ru' ? 'Почему' : 'Why'}
             costLabel={locale === 'ru' ? 'Цена' : 'Cost'}
           >

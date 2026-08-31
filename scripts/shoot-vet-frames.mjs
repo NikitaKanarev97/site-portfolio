@@ -40,7 +40,7 @@
  * и браузер для съёмки в неё не входит.
  */
 import { createRequire } from 'node:module';
-import { mkdir, rm } from 'node:fs/promises';
+import { mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 
@@ -172,7 +172,12 @@ async function report(file) {
 }
 
 async function shoot() {
-  await rm(MEDIA_DIR, { recursive: true, force: true });
+  /*
+   * Пересъёмка обновляет только кадры из манифестов выше. Каталог целиком
+   * не удаляем: рядом лежит range-композит, который собирается отдельным
+   * скриптом, и прежняя очистка незаметно стирала его при каждом прогоне.
+   * sharp безопасно перезапишет каждый заявленный output сам.
+   */
   await mkdir(COVER_DIR, { recursive: true });
 
   const browser = await chromium.launch();

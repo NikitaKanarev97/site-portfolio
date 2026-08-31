@@ -147,6 +147,23 @@ export const agentOpsConsole = {
       label: 'Open the prototype',
       note: 'The clickable console on invented data — nineteen screens across three roles. There is no backend; a reload starts a fresh shift.',
     },
+    /**
+     * Клип взаимодействия — `CASE-20` в части «видео реального
+     * взаимодействия», этап 3 `audit/visual-density-2026-08-31.md`.
+     * Съёмка `scripts/shoot-clips.mjs`, там же разбор сценария.
+     *
+     * Место: сразу за ссылкой на прототип. Подпись обещает кликабельную
+     * консоль — ролик показывает её работающей, не требуя перехода; а
+     * окно отзыва вердикта в кадре названо абзацем выше третьим по счёту
+     * ('a wrong verdict needs a short window to take back').
+     */
+    clip: {
+      src: `${media}/clip-review-decision-poster.webp`,
+      video: `${media}/clip-review-decision`,
+      alt: 'Screen recording of one review: a queue row opens into the run, the reviewer marks it correct but risky, types the reason, sends the verdict, and the console offers eight minutes to take it back',
+      caption:
+        'One review end to end. The verdict does not leave without its sentence — and for eight minutes it can still be taken back.',
+    },
     artifacts: [
       {
         src: `${media}/screen-index.webp`,

@@ -61,6 +61,12 @@ export interface SiteCopy {
    */
   nextCase: string;
   zoom: { label: string; open: string; close: string };
+  /**
+   * Управление клипом взаимодействия (`MediaFrame` с пропом `video`).
+   * Подпись меняется по состоянию, поэтому строк две, а не одна: кнопка
+   * остановки, названная «воспроизвести», врёт скринридеру.
+   */
+  clip: { play: string; pause: string };
   footer: {
     location: string;
     utcLabel: string;
@@ -109,6 +115,15 @@ export const site = {
     label: 'Enlarged screenshot',
     open: 'Open full size',
     close: 'Close',
+  },
+  /**
+   * Клип идёт петлёй и стартует сам, поэтому механизм остановки —
+   * требование, а не удобство: WCAG 2.2.2 запрещает движение дольше пяти
+   * секунд без способа его прекратить.
+   */
+  clip: {
+    play: 'Play the clip',
+    pause: 'Pause the clip',
   },
   footer: {
     /** Факт, решение владельца №1 от 24.08.2026. PRD SCR-03 расходится — см. ia/open-questions.md №9. */

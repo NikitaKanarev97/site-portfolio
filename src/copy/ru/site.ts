@@ -50,6 +50,10 @@ export const siteRu = {
     open: 'Открыть в полном размере',
     close: 'Закрыть',
   },
+  clip: {
+    play: 'Запустить ролик',
+    pause: 'Остановить ролик',
+  },
   footer: {
     location: 'Казахстан',
     utcLabel: 'UTC+5',

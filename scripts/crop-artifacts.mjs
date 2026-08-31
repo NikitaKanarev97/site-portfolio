@@ -21,6 +21,7 @@
  * оригинал остаётся целью зума.
  *
  * Запуск: node scripts/crop-artifacts.mjs
+ * Один кейс: node scripts/crop-artifacts.mjs vet
  */
 import sharp from 'sharp';
 import { fileURLToPath } from 'node:url';
@@ -105,34 +106,47 @@ const crops = [
     box: { left: 1175, top: 656, width: 790, height: 296 },
   },
   {
+    file: 'public/media/case-vet/visit-quick-trace.webp',
+    // После адаптивной переработки три шага стоят рядом. Кроп сохраняет их
+    // вместе с приватной строкой и действиями, но снимает пустую нижнюю треть
+    // артборда. На странице этот довод идёт во всю ширину DecisionBlock.
+    box: { left: 0, top: 0, width: 2000, height: 1140 },
+  },
+  {
+    file: 'public/media/case-vet-ru/visit-quick-trace.webp',
+    box: { left: 0, top: 0, width: 2000, height: 1140 },
+  },
+  {
     file: 'public/media/case-vet/dose-calculator.webp',
-    // Вес из карты, входные значения, формула, подстановка, округление и
-    // результат. Боковые границы идут по воздуху вокруг панели расчёта.
-    box: { left: 1120, top: 735, width: 800, height: 925 },
+    // Панель расчёта целиком от заголовка до итога курса. Старый кроп
+    // начинался внутри WeightReading и отрезал контекст; после переработки
+    // калькулятор стал правой колонкой рядом с полной записью визита.
+    box: { left: 1225, top: 225, width: 745, height: 1395 },
   },
   {
     file: 'public/media/case-vet-ru/dose-calculator.webp',
-    box: { left: 1120, top: 735, width: 800, height: 925 },
+    box: { left: 1225, top: 225, width: 745, height: 1395 },
   },
   {
     file: 'public/media/case-vet/patient-card-private.webp',
     // Весь зарезервированный цветом блок: название, граница аудитории и сама
     // заметка. Граница совпадает с краями карточки.
-    box: { left: 380, top: 1450, width: 1475, height: 260 },
+    box: { left: 370, top: 1470, width: 1595, height: 300 },
   },
   {
     file: 'public/media/case-vet-ru/patient-card-private.webp',
-    box: { left: 380, top: 1450, width: 1475, height: 260 },
+    box: { left: 370, top: 1490, width: 1595, height: 310 },
   },
   {
     file: 'public/media/case-vet/discharge-preview.webp',
-    // Две соседние области публикации: инструкция владельцу слева, приватная
-    // заметка и диагноз справа. Нижние блоки к этому доводу не относятся.
-    box: { left: 320, top: 255, width: 1470, height: 405 },
+    // После переработки слева стоит полный список исключений, справа — точный
+    // документ владельца. Обе колонки обязательны; служебную шапку клиники и
+    // внешний воздух снимаем. На странице кадр идёт во всю ширину решения.
+    box: { left: 25, top: 100, width: 1950, height: 1240 },
   },
   {
     file: 'public/media/case-vet-ru/discharge-preview.webp',
-    box: { left: 320, top: 255, width: 1470, height: 405 },
+    box: { left: 25, top: 100, width: 1950, height: 1240 },
   },
   {
     file: 'public/media/case-agent-ops/autonomy.webp',
@@ -190,7 +204,16 @@ const crops = [
   },
 ];
 
-for (const { file, box, out: outRel } of crops) {
+const targets = process.argv.slice(2);
+const selectedCrops = targets.length
+  ? crops.filter(({ file, out }) => targets.some((target) => (out ?? file).includes(`/case-${target}`)))
+  : crops;
+
+if (!selectedCrops.length) {
+  throw new Error(`не найдены кропы для: ${targets.join(', ')}`);
+}
+
+for (const { file, box, out: outRel } of selectedCrops) {
   const src = path.join(root, file);
   const out = outRel ? path.join(root, outRel) : src.replace(/\.webp$/, '-crop.webp');
   const meta = await sharp(src).metadata();

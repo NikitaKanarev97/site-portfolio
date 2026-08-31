@@ -188,10 +188,12 @@ export const vetClinic = {
         why: 'Completeness by the end of the shift cannot survive thirty seconds between patients, and a second document would let the old habit continue under a new name. The trace also has to reach a colleague immediately — otherwise Saturday repeats, with a year-old card and a doctor examining from scratch.',
         cost: 'The card stands openly incomplete for hours, and that has to be legible to everyone downstream: the colleague reading it, the administrator billing from it, and the publication to the owner, which refuses to send a trace at all.',
         artifact: {
-          src: `${media}/visit-quick-trace.webp`,
-          alt: 'The quick trace on a tablet: three steps — weight, medication, dose — with the draft saved and a private line at the end',
+          src: `${media}/visit-quick-trace-crop.webp`,
+          zoomSrc: `${media}/visit-quick-trace.webp`,
+          layout: 'wide',
+          alt: 'The quick trace workspace: weight, medication and dose run as three adjacent steps, followed by one private line and the saved actions',
           caption:
-            'Three steps, one hand, and a draft that is already saved. The full record is a separate action below.',
+            'Three steps stay visible together, followed by one private line. Saving the trace and opening the full record remain separate actions.',
         },
       },
       {
@@ -215,6 +217,7 @@ export const vetClinic = {
         artifact: {
           src: `${media}/patient-card-private-crop.webp`,
           zoomSrc: `${media}/patient-card-private.webp`,
+          layout: 'wide',
           alt: 'Patient card with a private note in its own colour, marked as visible only to clinic veterinarians',
           caption:
             'The private note carries its own hue and says who can see it. It is in no discharge summary and on no invoice.',
@@ -228,8 +231,9 @@ export const vetClinic = {
         artifact: {
           src: `${media}/discharge-preview-crop.webp`,
           zoomSrc: `${media}/discharge-preview.webp`,
-          alt: 'Publishing preview: owner-facing instructions beside a private note and diagnosis withheld from the owner',
-          caption: 'Owner-facing instructions beside the private note and diagnosis withheld from the owner.',
+          layout: 'wide',
+          alt: 'Review before publishing: clinic-only notes and diagnosis on the left, with the complete owner-visible discharge summary on the right',
+          caption: 'The publishing check puts clinic-only content beside the exact document the owner will receive.',
         },
       },
     ],

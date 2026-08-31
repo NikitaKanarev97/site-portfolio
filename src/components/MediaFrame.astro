@@ -25,8 +25,30 @@
  * и в атрибуты width/height.
  *
  * Соотношение резервируется до загрузки, фон до этого — surface-media.
- * Без этого раскрытие дёргает вёрстку и рушит CLS. Видео ленивые, без
- * автоплея (prd.md §504); первый экран без видео.
+ * Без этого раскрытие дёргает вёрстку и рушит CLS.
+ *
+ * Клип взаимодействия, доделан 31.08.2026 — этап 3
+ * audit/visual-density-2026-08-31.md, требование CASE-20 в части «видео
+ * реального взаимодействия». До этой правки проп video существовал, но
+ * ролик не мог запуститься никогда: preload="none" без autoplay и без
+ * controls. Что изменилось и почему именно так:
+ *
+ * — Проп video теперь адрес БЕЗ расширения, а src — постер-кадр. Два
+ *   следствия сразу: source идёт парой webm + mp4 (Safari не берёт VP9),
+ *   а размеры кадра читаются из постера тем же frameSize, что у картинок,
+ *   и уходят в aspect-ratio и в width/height. Видео перестало быть
+ *   исключением из резервирования места.
+ * — Запуск по IntersectionObserver, а не autoplay: prd.md §9 требует
+ *   первый экран без видео и запрещает одновременную загрузку всех
+ *   роликов. preload="none" сохранён — до попадания в окно с сервера
+ *   не приходит ничего, кроме постера.
+ * — Кнопка остановки обязательна. Ролик идёт петлёй, то есть движение
+ *   длится дольше пяти секунд, и WCAG 2.2.2 требует механизм остановки.
+ *   Кнопка видима всегда, а не по наведению: у клавиатуры и тача
+ *   наведения нет.
+ * — prefers-reduced-motion: reduce — ролик не стартует сам, на месте
+ *   остаётся постер, кнопка остаётся рабочей. Читатель, попросивший
+ *   покоя, получает картинку и право передумать.
  *
  * Art direction (srcMobile / ratioMobile), добавлен 2026-08-24 при сборке
  * Home. Носитель один: обложка кейса на мобильном — вертикальный кроп, а
@@ -75,9 +97,11 @@ interface Props {
   srcMobile?: string;
   /** Соотношение под bp-md. Без srcMobile перекадрирует тот же файл. */
   ratioMobile?: 'wide' | 'portrait';
-  /** Видео вместо изображения: без звука, без автозапуска. */
-  video?: boolean;
-  poster?: string;
+  /**
+   * Клип взаимодействия: адрес без расширения. Компонент сам добавляет
+   * `.webm` и `.mp4`, постером служит `src`. Съёмка — `scripts/shoot-clips.mjs`.
+   */
+  video?: string;
   loading?: 'lazy' | 'eager';
   /** Контр-масштаб внутри маски. Полный такт — только у обложки DSSL. */
   counterScale?: boolean;
@@ -107,8 +131,7 @@ const {
   ratio = 'wide',
   srcMobile,
   ratioMobile,
-  video = false,
-  poster,
+  video,
   loading = 'lazy',
   counterScale = true,
   reveal = true,
@@ -121,18 +144,19 @@ const {
 } = Astro.props;
 
 const hasCaption = Astro.slots.has('caption');
-// Подпись берётся из словаря локали, а не пишется здесь литералом:
-// перевод обязан жить в одном месте с остальными строками зума.
-const zoomLabel = Astro.url.pathname.startsWith('/ru')
-  ? siteRu.zoom.open
-  : site.zoom.open;
+// Подписи берутся из словаря локали, а не пишутся здесь литералами:
+// перевод обязан жить в одном месте с остальными строками интерфейса.
+const locale = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
+const zoomLabel = locale.zoom.open;
+const clipCopy = locale.clip;
 
 /**
- * Собственные размеры кадра нужны только варианту natural. Видео своих
- * размеров этим путём не отдаёт, и art direction их не имеет смысла читать:
- * ниже bp-md показывается другой файл.
+ * Собственные размеры кадра нужны только варианту natural. У клипа их
+ * отдаёт постер: он снят тем же прогоном и той же геометрии, что ролик,
+ * поэтому место резервируется так же, как под картинкой. Art direction
+ * читать размеры смысла не имеет: ниже bp-md показывается другой файл.
  */
-const natural = ratio === 'natural' && !video ? await frameSize(src) : null;
+const natural = ratio === 'natural' ? await frameSize(src) : null;
 
 /**
  * Обёртка кадра. Без zoom это `<div>` — нейтральный узел, который ничего не
@@ -168,6 +192,7 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
     'media-frame',
     `media-frame--${ratio}`,
     ratioMobile && `media-frame--mobile-${ratioMobile}`,
+    video && 'media-frame--video',
     framed && 'media-frame--framed',
     rounded && 'media-frame--rounded',
     fill && 'media-frame--fill',
@@ -182,16 +207,45 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
     <div class="media-frame__mask ds-media-mask">
       {
         video ? (
-          <video
-            class="media-frame__media ds-media-inner"
-            src={src}
-            poster={poster}
-            preload="none"
-            muted
-            playsinline
-            loop
-            aria-label={alt}
-          />
+          <Fragment>
+            <video
+              class="media-frame__media ds-media-inner"
+              poster={src}
+              width={natural?.width}
+              height={natural?.height}
+              preload="none"
+              muted
+              playsinline
+              loop
+              aria-label={alt}
+              data-clip
+            >
+              <source src={`${video}.webm`} type="video/webm" />
+              <source src={`${video}.mp4`} type="video/mp4" />
+            </video>
+            {/*
+              Управление стоит внутри маски, а не рядом с подписью: оно
+              относится к кадру, и на длинной странице кнопка, уехавшая от
+              своего ролика, теряет смысл. Видима всегда — см. шапку.
+            */}
+            <button
+              class="media-frame__clip ds-meta-sm"
+              type="button"
+              data-clip-toggle
+              data-state="paused"
+              data-play-label={clipCopy.play}
+              data-pause-label={clipCopy.pause}
+            >
+              <svg class="media-frame__clip-icon" viewBox="0 0 12 12" aria-hidden="true" focusable="false">
+                <g class="media-frame__clip-pause">
+                  <rect x="2" y="1.5" width="3" height="9" rx="0.5" />
+                  <rect x="7" y="1.5" width="3" height="9" rx="0.5" />
+                </g>
+                <path class="media-frame__clip-play" d="M3 1.5 L10.5 6 L3 10.5 Z" />
+              </svg>
+              <span data-clip-label>{clipCopy.play}</span>
+            </button>
+          </Fragment>
         ) : srcMobile ? (
           <picture>
             <source media={MOBILE_MEDIA} srcset={srcMobile} />
@@ -403,4 +457,186 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
   .media-frame--framed .media-frame__media {
     object-fit: contain;
   }
+
+  /* ---------- Клип взаимодействия ---------- */
+
+  /* Маска становится системой координат для кнопки. Только у клипа:
+     остальным вариантам позиционирование не нужно, а лишний контекст
+     наложения менял бы поведение теней у framed. */
+  .media-frame--video .media-frame__mask {
+    position: relative;
+  }
+
+  /* Кадр показывается целиком по той же причине, что и natural: ролик снят
+     в геометрии продукта, и кроп срезал бы край интерфейса. */
+  .media-frame--video .media-frame__media {
+    object-fit: contain;
+  }
+
+  /* Плашка на инверсной поверхности, а не на прозрачной: под ней проезжает
+     интерфейс продукта, и контраст на светлом кадре пропал бы. Тот же приём,
+     что у оболочки MediaZoom. */
+  .media-frame__clip {
+    position: absolute;
+    inset-block-end: var(--space-3);
+    inset-inline-end: var(--space-3);
+    display: inline-flex;
+    gap: var(--space-2);
+    align-items: center;
+    padding: var(--space-2) var(--space-3);
+    border: 0;
+    border-radius: var(--radius-md);
+    background: var(--surface-inverse);
+    color: var(--text-on-inverse);
+    font: inherit;
+    cursor: pointer;
+    opacity: 0.82;
+    transition: opacity var(--duration-fast) var(--ease-standard);
+  }
+
+  .media-frame__clip:hover,
+  .media-frame__clip:focus-visible {
+    opacity: 1;
+  }
+
+  .media-frame__clip-icon {
+    width: 12px;
+    height: 12px;
+    flex: none;
+    fill: currentcolor;
+  }
+
+  /* Значок обязан показывать действие кнопки, а не текущее состояние:
+     во время проигрывания на кнопке пауза. Подпись меняется тем же
+     переключателем в скрипте. */
+  .media-frame__clip[data-state='playing'] .media-frame__clip-play,
+  .media-frame__clip[data-state='paused'] .media-frame__clip-pause {
+    display: none;
+  }
 </style>
+
+<script>
+  /**
+   * Проигрывание клипа. Три правила, все три — требования, а не удобство:
+   * ролик не грузится до попадания в окно (prd.md §9), останавливается при
+   * уходе из него и всегда имеет механизм остановки (WCAG 2.2.2).
+   *
+   * `wanted` — намерение читателя, отдельное от видимости. Без этого
+   * разделения ролик, остановленный кнопкой, снова запускался бы сам при
+   * следующей прокрутке мимо, то есть кнопка ничего бы не значила.
+   */
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+
+  document.querySelectorAll<HTMLVideoElement>('[data-clip]').forEach((video) => {
+    const frame = video.closest('.media-frame');
+    const toggle = frame?.querySelector<HTMLButtonElement>('[data-clip-toggle]');
+    const label = toggle?.querySelector('[data-clip-label]');
+
+    // Просьба о покое — не запрет: ролик просто не стартует сам.
+    let wanted = !reduced.matches;
+    let visible = false;
+
+    /**
+     * Принудительный переход на MP4.
+     *
+     * Список `<source>` спасает не всегда: браузер перебирает его по типу
+     * контейнера, и если VP9 он объявляет поддержанным, а декодировать не
+     * может, то остаётся на WebM с `readyState = 0` — «играю», при пустом
+     * кадре. Отказ полностью тихий: события `error` при этом нет, и ни
+     * кнопка, ни читатель о нём не узнают. Найдено 31.08.2026 прогоном
+     * страницы тремя движками.
+     *
+     * Прямой `src` перебивает весь список, поэтому переключение делается
+     * один раз и назад не откатывается: второй фолбэк предлагать нечего.
+     */
+    const toMp4 = () => {
+      const mp4 = video.querySelector<HTMLSourceElement>('source[type="video/mp4"]');
+      if (!mp4 || video.dataset.fallback) return false;
+      video.dataset.fallback = 'mp4';
+      video.src = mp4.src;
+      video.load();
+      return true;
+    };
+
+    const paint = (playing: boolean) => {
+      if (!toggle) return;
+      toggle.dataset.state = playing ? 'playing' : 'paused';
+      const next = playing ? toggle.dataset.pauseLabel : toggle.dataset.playLabel;
+      if (label && next) label.textContent = next;
+    };
+
+    /**
+     * Сторож застревания. `play()` может разрешиться, а картинка — остаться
+     * первым кадром: браузер считает, что играет, но данных у него нет.
+     *
+     * Признак — `readyState`, а не остановившееся время. Проверять время
+     * бесполезно: движок исправно его наращивает и при пустом декодере,
+     * так что «играет» и «показывает» здесь расходятся молча. Данные для
+     * следующего кадра — это `HAVE_FUTURE_DATA` (2) и выше; ниже двух
+     * показывать нечем, чем бы ни отвечал промис.
+     */
+    const watchStall = () => {
+      setTimeout(() => {
+        if (video.paused || video.readyState >= 2) return;
+        if (toMp4()) video.play().then(() => paint(true)).catch(() => paint(false));
+      }, 1400);
+    };
+
+    const start = () => {
+      // Политика автозапуска всё равно может отказать: без звука и с
+      // playsinline это маловероятно, но отказ обязан оставить кнопку
+      // в честном состоянии, а не показывать паузу над стоящим кадром.
+      const attempt = video.play();
+
+      // Сторож взводится на попытке, а не на успехе. Промис `play()` не
+      // обязан разрешаться вовсе: движок, не сумевший получить данные,
+      // оставляет его висеть — ни `then`, ни `catch` не приходят никогда,
+      // и сторож, спрятанный в `then`, не взвёлся бы по построению.
+      watchStall();
+
+      attempt.then(() => {
+        paint(true);
+      }).catch(() => {
+        // Отказ мог прийти и от декодера, а не от политики автозапуска:
+        // сначала пробуем второй формат и только потом сдаёмся.
+        if (toMp4()) {
+          video.play().then(() => paint(true)).catch(() => { wanted = false; paint(false); });
+          return;
+        }
+        wanted = false;
+        paint(false);
+      });
+    };
+
+    const sync = () => {
+      if (wanted && visible) {
+        start();
+        return;
+      }
+      video.pause();
+      paint(false);
+    };
+
+    // Отказ формата приходит и событием — тогда переключение мгновенное,
+    // без ожидания сторожа.
+    video.addEventListener('error', () => {
+      if (toMp4() && wanted && visible) start();
+    });
+
+    toggle?.addEventListener('click', () => {
+      wanted = !wanted;
+      sync();
+    });
+
+    new IntersectionObserver(
+      (entries) => {
+        visible = entries[0].isIntersecting;
+        sync();
+      },
+      // Половина кадра: ролик, задетый краем окна, ещё не смотрят.
+      { threshold: 0.5 },
+    ).observe(video);
+
+    paint(false);
+  });
+</script>
