@@ -1,0 +1,886 @@
+{
+  "observations": [
+    {
+      "label": "home",
+      "url": "http://127.0.0.1:4322/prototypes/learn/home?lang=en",
+      "lang": "en",
+      "text": "Sign in\nField guide · Right now I am\nI’m commissioning a site\nAll 14 resources for this task\n2 paths for preparation\nWhere to start\n\nOne collection: 6 resources. In order for the whole task; by issue for a specific answer.\n\nIn order\n· 6\nBy issue\n· 6\n01\nChecking camera power and link\nHardware · 3 September · 5 min\n02\nTRASSIR cannot discover an ONVIF camera: diagnostic sequence\nTRASSIR OS 4.3 · 12 August · 7 min\n03\nAdding an IP camera manually\nTRASSIR OS 4.2 · 28 July · 11 min\n04\nConfiguring recording retention on DuoStation\nTRASSIR OS 4.3 · 12 August · 12 min\n05\nDistributing recordings across disks\nTRASSIR OS 4.3 · 21 August · 6 min\n06\nOperator access rights\nTRASSIR OS 4.3 · 28 July · 10 min\nBuild a complete understanding\n\nSee the full curriculum and requirements before starting.\n\nCommissioning TRASSIR OS at a site with up to 32 cameras\nYou will be able to deploy and hand over a site independently\n11 units · 2 h 11 min · concept document\nTroubleshooting common commissioning faults\nYou will learn the diagnostic sequence for common on-site faults\n6 units · 54 min · concept document\nABOUT THE PLATFORM\nHow learning works\nPartner certification\nContact\nTRASSIR PRODUCTS\nTRASSIR OS\nDuoStation\nCamera range\nVideo analytics\nSUPPORT\nKnowledge base\nContact support\nService status\nDSSL · TRASSIR Learn — learning platform for partners",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "http://127.0.0.1:4322/prototypes/learn/logo-trassir-learn.svg"
+      ]
+    },
+    {
+      "label": "home reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn/home?lang=en",
+      "lang": "en",
+      "text": "Sign in\nField guide · Right now I am\nI’m commissioning a site\nAll 14 resources for this task\n2 paths for preparation\nWhere to start\n\nOne collection: 6 resources. In order for the whole task; by issue for a specific answer.\n\nIn order\n· 6\nBy issue\n· 6\n01\nChecking camera power and link\nHardware · 3 September · 5 min\n02\nTRASSIR cannot discover an ONVIF camera: diagnostic sequence\nTRASSIR OS 4.3 · 12 August · 7 min\n03\nAdding an IP camera manually\nTRASSIR OS 4.2 · 28 July · 11 min\n04\nConfiguring recording retention on DuoStation\nTRASSIR OS 4.3 · 12 August · 12 min\n05\nDistributing recordings across disks\nTRASSIR OS 4.3 · 21 August · 6 min\n06\nOperator access rights\nTRASSIR OS 4.3 · 28 July · 10 min\nBuild a complete understanding\n\nSee the full curriculum and requirements before starting.\n\nCommissioning TRASSIR OS at a site with up to 32 cameras\nYou will be able to deploy and hand over a site independently\n11 units · 2 h 11 min · concept document\nTroubleshooting common commissioning faults\nYou will learn the diagnostic sequence for common on-site faults\n6 units · 54 min · concept document\nABOUT THE PLATFORM\nHow learning works\nPartner certification\nContact\nTRASSIR PRODUCTS\nTRASSIR OS\nDuoStation\nCamera range\nVideo analytics\nSUPPORT\nKnowledge base\nContact support\nService status\nDSSL · TRASSIR Learn — learning platform for partners",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/logo-trassir-learn.svg"
+      ]
+    },
+    {
+      "label": "material/onvif-not-found",
+      "url": "http://127.0.0.1:4322/prototypes/learn/material/onvif-not-found?lang=en",
+      "lang": "en",
+      "text": "Sign in\nCommissioning\n/\nTRASSIR OS\n/\nTRASSIR cannot discover an ONVIF camera: diagnostic sequence\nTRASSIR OS 4.3\n·\nupdated 12 August 2026\n·\n7 min read\nTRASSIR cannot discover an ONVIF camera: diagnostic sequence\n\nWhat to check, and in what order, when a camera does not appear in the device list\n\nThe camera responds to ping but does not appear in TRASSIR’s device list. Check the network, ONVIF settings, credentials and stream parameters in the order below.\n\n1. Check the network path to the camera\n\nThe camera and server must be in the same subnet or have a route between them. Confirm that the switch port has a link and that its VLAN matches the server’s VLAN.\n\nOpen full-size image ↗\n2. Check that ONVIF is enabled on the camera\n\nSome manufacturers disable ONVIF by default or require a separate account. Open the camera’s web interface and check four things:\n\nONVIF is enabled in the camera’s network settings\nThe ONVIF port matches the value in TRASSIR: 80 by default\nA viewing account has been created for ONVIF\nThe stream profile is Profile S; otherwise, the stream cannot be requested\n3. Check the credentials\n\nTRASSIR requests the stream using the account entered when adding the device. Check it directly in the browser. If that URL does not open the stream, TRASSIR is not the cause:\n\nrtsp://operator:••••••@192.168.1.64:554/Streaming/Channels/101\nCopy command\n4. If the camera is visible but there is no stream\n\nThe device was added but the window stays black: this is almost always a mismatch between the codec or resolution and the profile requested by the server. Switch the second stream to H.264 and try adding it again.\n\nIf nothing helped\n\nCapture the camera’s ONVIF response using a third-party client and attach it to your support request. This gives the specialist diagnostic data.\n\nINCLUDED IN LEARNING PATHS\nCommissioning TRASSIR OS at a site with up to 32 cameras\nstep 3 of 11\nTroubleshooting common commissioning faults\nstep 2 of 6\nDownload text · HTML\nPrint\nSign in to find this again\nThis resource will be saved in your searchable history. All you need is an email or phone number.\nSign in\nRelated to your task\nThe camera was added, but recordings are not being saved\nCheck the recording schedule, disk space and service permissions.\nTRASSIR OS 4.3 · 19 August · 5 min\nChanging a camera’s IP address without reconnecting it\nHow to change the address while preserving recordings and device settings.\nTRASSIR OS 4.1 · 2 August · 5 min\nChecking bandwidth before arriving on site\nCalculate bandwidth from camera count and bitrate before the site visit.\nTRASSIR OS 4.1 · 17 July · 8 min\nABOUT THE PLATFORM\nHow learning works\nPartner certification\nContact\nTRASSIR PRODUCTS\nTRASSIR OS\nDuoStation\nCamera range\nVideo analytics\nSUPPORT\nKnowledge base\nContact support\nService status\nDSSL · TRASSIR Learn — learning platform for partners",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/images/device-search.png"
+      ]
+    },
+    {
+      "label": "material/onvif-not-found reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn/material/onvif-not-found?lang=en",
+      "lang": "en",
+      "text": "Sign in\nCommissioning\n/\nTRASSIR OS\n/\nTRASSIR cannot discover an ONVIF camera: diagnostic sequence\nTRASSIR OS 4.3\n·\nupdated 12 August 2026\n·\n7 min read\nTRASSIR cannot discover an ONVIF camera: diagnostic sequence\n\nWhat to check, and in what order, when a camera does not appear in the device list\n\nThe camera responds to ping but does not appear in TRASSIR’s device list. Check the network, ONVIF settings, credentials and stream parameters in the order below.\n\n1. Check the network path to the camera\n\nThe camera and server must be in the same subnet or have a route between them. Confirm that the switch port has a link and that its VLAN matches the server’s VLAN.\n\nOpen full-size image ↗\n2. Check that ONVIF is enabled on the camera\n\nSome manufacturers disable ONVIF by default or require a separate account. Open the camera’s web interface and check four things:\n\nONVIF is enabled in the camera’s network settings\nThe ONVIF port matches the value in TRASSIR: 80 by default\nA viewing account has been created for ONVIF\nThe stream profile is Profile S; otherwise, the stream cannot be requested\n3. Check the credentials\n\nTRASSIR requests the stream using the account entered when adding the device. Check it directly in the browser. If that URL does not open the stream, TRASSIR is not the cause:\n\nrtsp://operator:••••••@192.168.1.64:554/Streaming/Channels/101\nCopy command\n4. If the camera is visible but there is no stream\n\nThe device was added but the window stays black: this is almost always a mismatch between the codec or resolution and the profile requested by the server. Switch the second stream to H.264 and try adding it again.\n\nIf nothing helped\n\nCapture the camera’s ONVIF response using a third-party client and attach it to your support request. This gives the specialist diagnostic data.\n\nINCLUDED IN LEARNING PATHS\nCommissioning TRASSIR OS at a site with up to 32 cameras\nstep 3 of 11\nTroubleshooting common commissioning faults\nstep 2 of 6\nDownload text · HTML\nPrint\nSign in to find this again\nThis resource will be saved in your searchable history. All you need is an email or phone number.\nSign in\nRelated to your task\nThe camera was added, but recordings are not being saved\nCheck the recording schedule, disk space and service permissions.\nTRASSIR OS 4.3 · 19 August · 5 min\nChanging a camera’s IP address without reconnecting it\nHow to change the address while preserving recordings and device settings.\nTRASSIR OS 4.1 · 2 August · 5 min\nChecking bandwidth before arriving on site\nCalculate bandwidth from camera count and bitrate before the site visit.\nTRASSIR OS 4.1 · 17 July · 8 min\nABOUT THE PLATFORM\nHow learning works\nPartner certification\nContact\nTRASSIR PRODUCTS\nTRASSIR OS\nDuoStation\nCamera range\nVideo analytics\nSUPPORT\nKnowledge base\nContact support\nService status\nDSSL · TRASSIR Learn — learning platform for partners",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/images/device-search.png",
+        "http://127.0.0.1:4322/prototypes/learn/logo-trassir-learn.svg"
+      ]
+    },
+    {
+      "label": "trajectory/proekt",
+      "url": "http://127.0.0.1:4322/prototypes/learn/trajectory/proekt?lang=en",
+      "lang": "en",
+      "text": "Sign in\nI’m preparing a system design\n/\nLearning paths\nSystem design · learning path\nDesigning a system for 64+ cameras\n\nCalculate system load and justify the design to the customer\n\nPath length\n1 h 45 min\n8 resources + assessment\nAssessment\n20 questions · required: 16 correct\n30 minutes · 2 attempts · retry after 24 hr\nOutcome\nTRASSIR System Designer\nNamed concept document\nStart learning path\nSign in to save progress. You can read public resources now.\nPath curriculum\nAll 9 units\n01\nCalculating camera count and coverage zones\nResource\n9 min\n02\nChoosing a server for 64+ cameras\nResource\n14 min\n03\nCalculating disk capacity for 64 cameras\nResource\n12 min\n04\nDistributing recordings across disks\nResource\n6 min\n05\nConfiguring recording retention on DuoStation\nResource\n12 min\n06\nChecking bandwidth before arriving on site\nResource\n8 min\n07\nTRASSIR licensing plan for a project\nResource · partners only\n6 min\n08\nEquipment specification for a tender\nResource · partners only\n8 min\n09\nLearning path assessment\nAssessment\n30 min\nWhat the result confirms\n\nThe certificate confirms that the system designer sizes a system for 64 or more cameras: camera count and coverage areas, server, disk subsystem, bandwidth and licenses. Skills are tested in a 20-question assessment with a passing score of 16.\n\nAn independent learning concept. The document records completion in this prototype and does not award an official DSSL qualification.\n\nABOUT THE PLATFORM\nHow learning works\nPartner certification\nContact\nTRASSIR PRODUCTS\nTRASSIR OS\nDuoStation\nCamera range\nVideo analytics\nSUPPORT\nKnowledge base\nContact support\nService status\nDSSL · TRASSIR Learn — learning platform for partners",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2"
+      ]
+    },
+    {
+      "label": "trajectory/proekt reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn/trajectory/proekt?lang=en",
+      "lang": "en",
+      "text": "Sign in\nI’m preparing a system design\n/\nLearning paths\nSystem design · learning path\nDesigning a system for 64+ cameras\n\nCalculate system load and justify the design to the customer\n\nPath length\n1 h 45 min\n8 resources + assessment\nAssessment\n20 questions · required: 16 correct\n30 minutes · 2 attempts · retry after 24 hr\nOutcome\nTRASSIR System Designer\nNamed concept document\nStart learning path\nSign in to save progress. You can read public resources now.\nPath curriculum\nAll 9 units\n01\nCalculating camera count and coverage zones\nResource\n9 min\n02\nChoosing a server for 64+ cameras\nResource\n14 min\n03\nCalculating disk capacity for 64 cameras\nResource\n12 min\n04\nDistributing recordings across disks\nResource\n6 min\n05\nConfiguring recording retention on DuoStation\nResource\n12 min\n06\nChecking bandwidth before arriving on site\nResource\n8 min\n07\nTRASSIR licensing plan for a project\nResource · partners only\n6 min\n08\nEquipment specification for a tender\nResource · partners only\n8 min\n09\nLearning path assessment\nAssessment\n30 min\nWhat the result confirms\n\nThe certificate confirms that the system designer sizes a system for 64 or more cameras: camera count and coverage areas, server, disk subsystem, bandwidth and licenses. Skills are tested in a 20-question assessment with a passing score of 16.\n\nAn independent learning concept. The document records completion in this prototype and does not award an official DSSL qualification.\n\nABOUT THE PLATFORM\nHow learning works\nPartner certification\nContact\nTRASSIR PRODUCTS\nTRASSIR OS\nDuoStation\nCamera range\nVideo analytics\nSUPPORT\nKnowledge base\nContact support\nService status\nDSSL · TRASSIR Learn — learning platform for partners",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/logo-trassir-learn.svg"
+      ]
+    },
+    {
+      "label": "player/proekt/0",
+      "url": "http://127.0.0.1:4322/prototypes/learn/player/proekt/0?lang=en",
+      "lang": "en",
+      "text": "Sign in\nDesigning a system for 64+ cameras\nPosition\n1 / 9\nLeave learning path\nPath curriculum\n\nReading adds to resources read. For eligibility, select Complete and continue. Your position does not indicate completion.\n\n01\nCalculating camera count and coverage zones\nResource · 9 min\nCurrent unit\n02\nChoosing a server for 64+ cameras\nResource · 14 min\n03\nCalculating disk capacity for 64 cameras\nResource · 12 min\n04\nDistributing recordings across disks\nResource · 6 min\n05\nConfiguring recording retention on DuoStation\nResource · 12 min\n06\nChecking bandwidth before arriving on site\nResource · 8 min\n07\nTRASSIR licensing plan for a project\nResource · 6 min\nFor partners\n08\nEquipment specification for a tender\nResource · 8 min\nFor partners\n09\nLearning path assessment\nAssessment · 30 min\nHardware\n·\nupdated 15 August 2026\n·\n9 minutes\nCalculating camera count and coverage zones\n\nFrom the customer’s task to camera count: position by coverage zone, not by wall\n\nStart with the task, not the floor plan\n\nThe camera count follows from what the customer needs to distinguish: a face, a number plate or an event. Each task requires a different pixel density per metre and therefore a different number of cameras for the same area.\n\nThree pixel densities\nEvent detection: at least 25 pixels per metre\nPerson recognition: at least 125\nFace identification: at least 250\nUse the button below to confirm completion for eligibility. Opening the resource alone is not enough.\nBack\nNext · Choosing a server for 64+ cameras\nSign in to save",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2"
+      ]
+    },
+    {
+      "label": "player/proekt/0 reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn/player/proekt/0?lang=en",
+      "lang": "en",
+      "text": "Sign in\nDesigning a system for 64+ cameras\nPosition\n1 / 9\nLeave learning path\nPath curriculum\n\nReading adds to resources read. For eligibility, select Complete and continue. Your position does not indicate completion.\n\n01\nCalculating camera count and coverage zones\nResource · 9 min\nCurrent unit\n02\nChoosing a server for 64+ cameras\nResource · 14 min\n03\nCalculating disk capacity for 64 cameras\nResource · 12 min\n04\nDistributing recordings across disks\nResource · 6 min\n05\nConfiguring recording retention on DuoStation\nResource · 12 min\n06\nChecking bandwidth before arriving on site\nResource · 8 min\n07\nTRASSIR licensing plan for a project\nResource · 6 min\nFor partners\n08\nEquipment specification for a tender\nResource · 8 min\nFor partners\n09\nLearning path assessment\nAssessment · 30 min\nHardware\n·\nupdated 15 August 2026\n·\n9 minutes\nCalculating camera count and coverage zones\n\nFrom the customer’s task to camera count: position by coverage zone, not by wall\n\nStart with the task, not the floor plan\n\nThe camera count follows from what the customer needs to distinguish: a face, a number plate or an event. Each task requires a different pixel density per metre and therefore a different number of cameras for the same area.\n\nThree pixel densities\nEvent detection: at least 25 pixels per metre\nPerson recognition: at least 125\nFace identification: at least 250\nUse the button below to confirm completion for eligibility. Opening the resource alone is not enough.\nBack\nNext · Choosing a server for 64+ cameras\nSign in to save",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/logo-trassir-learn.svg"
+      ]
+    },
+    {
+      "label": "landing query locale",
+      "url": "http://127.0.0.1:4322/prototypes/learn-landing/en/?lang=en",
+      "lang": "en",
+      "text": "Skip to content\nProgram\nHow it works\nOutcome\nOpen the platform\n↗\nPRACTICAL KNOWLEDGE / TRASSIR\nKnow how.\nMake it work.\n\nFrom camera connection to site handover.\nLearning for engineers who want to\nunderstand and put it into practice.\n\nOpen the guide\n↗\nExplore the program\n↓\n\nThe complete guide. No sign-up.\n\nOPEN GUIDE\n01 / 03\nTRASSIR OS commissioning\n10 guides + assessment\nReference library\n7 min\n\nCAMERA CONNECTION · ONVIF\n\nCamera missing\nin TRASSIR?\n01\nCamera connectivity\n↗\n02\nONVIF settings\n↗\n03\nManual connection\n↗\n04\nVideo and recording\n↗\nRead the guide\n↗\n03\nPart of the bigger picture\nThis answer is a step in your program\n↗\nUNDERSTAND FIRST. THEN PUT IT TO WORK.\n↓\nFOR ENGINEERS AND TECHNICAL SPECIALISTS\nFrom a work question to a solid foundation ↓\n01 / YOUR LEARNING PATH\nThe whole job.\nStep by step.\n\nFrom server setup to site handover.\nKnow what is involved before you begin.\n\nTRASSIR OS · sample program\nCommissioning\na site with up to 32 cameras\n\nFor engineers familiar with IP networks who are getting started with TRASSIR.\n\n2 h 15 min\nreading and assessment\n10 + 1\nguides and assessment\n\nApproximately 115 minutes of reading and around 20 minutes for the assessment. Hands-on practice is at your own pace.\n\nView the full program\n↗\n01\nServer and network preparation\n15 min\n+\n02\nAdding an IP camera\n11 min\n+\n03\nCamera not found via ONVIF\nOpen sample\n7 min\n+\n04\nSetting video retention\n12 min\n+\n05\nOperator access permissions\n10 min\n+\n5 more guides and an assessment\nFull program ↗\nView the curriculum and open guides without signing in\n02 / KNOWLEDGE IN CONTEXT\nOne answer.\nMore possibilities.\n\nSolve the task at hand.\nCome back to build a complete picture.\n\n01\nFind an answer\n02\nConnect the dots\n03\nApply what you know\nFor a task at work\nCamera out of sight.\nNext step in sight.\n\nOpen a guide with a clear sequence of actions. Read it in full and get back to work.\n\nSee the answer\n↗\nONVIF / CHECK SEQUENCE\nStart with the connection\n\nCheck that the server can reach the camera. Then check the ONVIF port and account.\n\nFIRST\nNetwork and access\n→\nTHEN\nONVIF and stream\n4 steps · from network to video\n\nOne guide. Two ways to learn.\n\nUseful long after you read it.\n03 / A CLEAR OUTCOME\nKnowledge you\ncan demonstrate.\n\nServer setup, camera connection, storage and access permissions: the program ends with an assessment of these topics.\n\n20\nquestions\n80%\npass mark\nView a sample certificate\n↗\n\nThis is the certification model in the concept. Official terms are set by the DSSL partner program.\n\nSAMPLE\nCERTIFICATE OF COMPLETION\nFrom knowledge\nto practice.\nParticipant name\n\nTRASSIR OS commissioning\nfor a site with up to 32 cameras\n\n10 guides\nFinal assessment\n↗\nDesign concept\nNot an official document\n04 / EASY TO GET STARTED\nStart with\nthe answer you need.\n\nNo forms before your first guide.\n\nFOR TEAM LEADERS\nGive your team\na clear starting point.\n\nShare the program with a colleague. They can see the topics, time commitment and outcome before they begin.\n\nCopy the program link\n↗\nWhat is available without signing up?\n+\n\nThree complete sample guides, search, the program curriculum and a sample certificate. Start with any topic you need.\n\nBrowse the guides\n↗\nWhat does an account offer?\n+\nHow do I get a certificate?\n+\nIs the program suitable for beginners?\n+\nTHE NEXT STEP IS YOURS\nGood work starts\nwith understanding.\n\nStart with one answer.\nGo further when you need more.\n\nOpen your first guide\n↗\n\nKnowledge stays with you.\n\nBack to top ↑\nIndependent design concept · 2026\nNot an official DSSL / TRASSIR service\nOpen guides",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-regular.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/index-DrVevFI2.css",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-medium.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/brand/trassir-learn.svg",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/motion-CiLNXSEs.js",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/jetbrains-mono-regular.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/favicon.svg"
+      ]
+    },
+    {
+      "label": "landing reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn-landing/en/?lang=en",
+      "lang": "en",
+      "text": "Skip to content\nProgram\nHow it works\nOutcome\nOpen the platform\n↗\nPRACTICAL KNOWLEDGE / TRASSIR\nKnow how.\nMake it work.\n\nFrom camera connection to site handover.\nLearning for engineers who want to\nunderstand and put it into practice.\n\nOpen the guide\n↗\nExplore the program\n↓\n\nThe complete guide. No sign-up.\n\nOPEN GUIDE\n01 / 03\nTRASSIR OS commissioning\n10 guides + assessment\nReference library\n7 min\n\nCAMERA CONNECTION · ONVIF\n\nCamera missing\nin TRASSIR?\n01\nCamera connectivity\n↗\n02\nONVIF settings\n↗\n03\nManual connection\n↗\n04\nVideo and recording\n↗\nRead the guide\n↗\n03\nPart of the bigger picture\nThis answer is a step in your program\n↗\nUNDERSTAND FIRST. THEN PUT IT TO WORK.\n↓\nFOR ENGINEERS AND TECHNICAL SPECIALISTS\nFrom a work question to a solid foundation ↓\n01 / YOUR LEARNING PATH\nThe whole job.\nStep by step.\n\nFrom server setup to site handover.\nKnow what is involved before you begin.\n\nTRASSIR OS · sample program\nCommissioning\na site with up to 32 cameras\n\nFor engineers familiar with IP networks who are getting started with TRASSIR.\n\n2 h 15 min\nreading and assessment\n10 + 1\nguides and assessment\n\nApproximately 115 minutes of reading and around 20 minutes for the assessment. Hands-on practice is at your own pace.\n\nView the full program\n↗\n01\nServer and network preparation\n15 min\n+\n02\nAdding an IP camera\n11 min\n+\n03\nCamera not found via ONVIF\nOpen sample\n7 min\n+\n04\nSetting video retention\n12 min\n+\n05\nOperator access permissions\n10 min\n+\n5 more guides and an assessment\nFull program ↗\nView the curriculum and open guides without signing in\n02 / KNOWLEDGE IN CONTEXT\nOne answer.\nMore possibilities.\n\nSolve the task at hand.\nCome back to build a complete picture.\n\n01\nFind an answer\n02\nConnect the dots\n03\nApply what you know\nFor a task at work\nCamera out of sight.\nNext step in sight.\n\nOpen a guide with a clear sequence of actions. Read it in full and get back to work.\n\nSee the answer\n↗\nONVIF / CHECK SEQUENCE\nStart with the connection\n\nCheck that the server can reach the camera. Then check the ONVIF port and account.\n\nFIRST\nNetwork and access\n→\nTHEN\nONVIF and stream\n4 steps · from network to video\n\nOne guide. Two ways to learn.\n\nUseful long after you read it.\n03 / A CLEAR OUTCOME\nKnowledge you\ncan demonstrate.\n\nServer setup, camera connection, storage and access permissions: the program ends with an assessment of these topics.\n\n20\nquestions\n80%\npass mark\nView a sample certificate\n↗\n\nThis is the certification model in the concept. Official terms are set by the DSSL partner program.\n\nSAMPLE\nCERTIFICATE OF COMPLETION\nFrom knowledge\nto practice.\nParticipant name\n\nTRASSIR OS commissioning\nfor a site with up to 32 cameras\n\n10 guides\nFinal assessment\n↗\nDesign concept\nNot an official document\n04 / EASY TO GET STARTED\nStart with\nthe answer you need.\n\nNo forms before your first guide.\n\nFOR TEAM LEADERS\nGive your team\na clear starting point.\n\nShare the program with a colleague. They can see the topics, time commitment and outcome before they begin.\n\nCopy the program link\n↗\nWhat is available without signing up?\n+\n\nThree complete sample guides, search, the program curriculum and a sample certificate. Start with any topic you need.\n\nBrowse the guides\n↗\nWhat does an account offer?\n+\nHow do I get a certificate?\n+\nIs the program suitable for beginners?\n+\nTHE NEXT STEP IS YOURS\nGood work starts\nwith understanding.\n\nStart with one answer.\nGo further when you need more.\n\nOpen your first guide\n↗\n\nKnowledge stays with you.\n\nBack to top ↑\nIndependent design concept · 2026\nNot an official DSSL / TRASSIR service\nOpen guides",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-regular.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-medium.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/index-DrVevFI2.css",
+        "http://127.0.0.1:4322/prototypes/learn-landing/brand/trassir-learn.svg",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/motion-CiLNXSEs.js",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/jetbrains-mono-regular.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/favicon.svg"
+      ]
+    },
+    {
+      "label": "landing to product click",
+      "url": "http://127.0.0.1:4322/prototypes/learn/home?lang=en",
+      "lang": "en",
+      "text": "Sign in\nField guide · Right now I am\nI’m commissioning a site\nAll 14 resources for this task\n2 paths for preparation\nWhere to start\n\nOne collection: 6 resources. In order for the whole task; by issue for a specific answer.\n\nIn order\n· 6\nBy issue\n· 6\n01\nChecking camera power and link\nHardware · 3 September · 5 min\n02\nTRASSIR cannot discover an ONVIF camera: diagnostic sequence\nTRASSIR OS 4.3 · 12 August · 7 min\n03\nAdding an IP camera manually\nTRASSIR OS 4.2 · 28 July · 11 min\n04\nConfiguring recording retention on DuoStation\nTRASSIR OS 4.3 · 12 August · 12 min\n05\nDistributing recordings across disks\nTRASSIR OS 4.3 · 21 August · 6 min\n06\nOperator access rights\nTRASSIR OS 4.3 · 28 July · 10 min\nBuild a complete understanding\n\nSee the full curriculum and requirements before starting.\n\nCommissioning TRASSIR OS at a site with up to 32 cameras\nYou will be able to deploy and hand over a site independently\n11 units · 2 h 11 min · concept document\nTroubleshooting common commissioning faults\nYou will learn the diagnostic sequence for common on-site faults\n6 units · 54 min · concept document\nABOUT THE PLATFORM\nHow learning works\nPartner certification\nContact\nTRASSIR PRODUCTS\nTRASSIR OS\nDuoStation\nCamera range\nVideo analytics\nSUPPORT\nKnowledge base\nContact support\nService status\nDSSL · TRASSIR Learn — learning platform for partners",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2"
+      ]
+    },
+    {
+      "label": "home",
+      "url": "http://127.0.0.1:4322/prototypes/learn/home?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nРабочий атлас · Я сейчас\nНастраиваю объект\nВсе 14 материалов задачи\n2 программы подготовки\nС чего начать\n\nОдна подборка: 6 материалов. По порядку — вся задача; по симптому — конкретный ответ.\n\nПо порядку\n· 6\nПо симптому\n· 6\n01\nПроверка питания и линка камеры\nОборудование · 3 сентября · 5 мин\n02\nTRASSIR не видит камеру по ONVIF: порядок проверки\nTRASSIR OS 4.3 · 12 августа · 7 мин\n03\nДобавление IP-камеры вручную\nTRASSIR OS 4.2 · 28 июля · 11 мин\n04\nНастройка глубины архива на DuoStation\nTRASSIR OS 4.3 · 12 августа · 12 мин\n05\nРаспределение архива по дискам\nTRASSIR OS 4.3 · 21 августа · 6 мин\n06\nПрава доступа операторов\nTRASSIR OS 4.3 · 28 июля · 10 мин\nПодготовиться системно\n\nПолный состав и условия — до начала программы.\n\nПусконаладка TRASSIR OS на объекте до 32 камер\nСможете развернуть и сдать объект самостоятельно\n11 единиц · 2 ч 11 мин · документ концепта\nРазбор типовых отказов на пусконаладке\nРазберёте порядок проверки типовых отказов на объекте\n6 единиц · 54 мин · документ концепта\nО ПЛАТФОРМЕ\nКак устроено обучение\nСертификация партнёров\nКонтакты\nПРОДУКТЫ TRASSIR\nTRASSIR OS\nDuoStation\nЛинейка камер\nВидеоаналитика\nПОДДЕРЖКА\nБаза знаний\nЗапрос в поддержку\nСтатус сервисов\nDSSL · TRASSIR Learn — учебная платформа для партнёров",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2"
+      ]
+    },
+    {
+      "label": "home reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn/home?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nРабочий атлас · Я сейчас\nНастраиваю объект\nВсе 14 материалов задачи\n2 программы подготовки\nС чего начать\n\nОдна подборка: 6 материалов. По порядку — вся задача; по симптому — конкретный ответ.\n\nПо порядку\n· 6\nПо симптому\n· 6\n01\nПроверка питания и линка камеры\nОборудование · 3 сентября · 5 мин\n02\nTRASSIR не видит камеру по ONVIF: порядок проверки\nTRASSIR OS 4.3 · 12 августа · 7 мин\n03\nДобавление IP-камеры вручную\nTRASSIR OS 4.2 · 28 июля · 11 мин\n04\nНастройка глубины архива на DuoStation\nTRASSIR OS 4.3 · 12 августа · 12 мин\n05\nРаспределение архива по дискам\nTRASSIR OS 4.3 · 21 августа · 6 мин\n06\nПрава доступа операторов\nTRASSIR OS 4.3 · 28 июля · 10 мин\nПодготовиться системно\n\nПолный состав и условия — до начала программы.\n\nПусконаладка TRASSIR OS на объекте до 32 камер\nСможете развернуть и сдать объект самостоятельно\n11 единиц · 2 ч 11 мин · документ концепта\nРазбор типовых отказов на пусконаладке\nРазберёте порядок проверки типовых отказов на объекте\n6 единиц · 54 мин · документ концепта\nО ПЛАТФОРМЕ\nКак устроено обучение\nСертификация партнёров\nКонтакты\nПРОДУКТЫ TRASSIR\nTRASSIR OS\nDuoStation\nЛинейка камер\nВидеоаналитика\nПОДДЕРЖКА\nБаза знаний\nЗапрос в поддержку\nСтатус сервисов\nDSSL · TRASSIR Learn — учебная платформа для партнёров",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/logo-trassir-learn.svg"
+      ]
+    },
+    {
+      "label": "material/onvif-not-found",
+      "url": "http://127.0.0.1:4322/prototypes/learn/material/onvif-not-found?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nПусконаладка\n/\nTRASSIR OS\n/\nTRASSIR не видит камеру по ONVIF: порядок проверки\nTRASSIR OS 4.3\n·\nобновлено 12 августа 2026\n·\n7 минут чтения\nTRASSIR не видит камеру по ONVIF: порядок проверки\n\nЧто проверить и в каком порядке, если камера не появляется в списке устройств\n\nКамера отвечает на пинг, но в списке устройств TRASSIR её нет. Проверьте сеть, настройки ONVIF, учётные данные и параметры потока — по порядку ниже.\n\n1. Проверьте сеть до камеры\n\nКамера и сервер должны быть в одной подсети или иметь маршрут друг к другу. Убедитесь, что порт на коммутаторе поднялся, а VLAN совпадает с тем, в котором работает сервер.\n\nОткрыть изображение в полном размере ↗\n2. Проверьте, включён ли ONVIF на камере\n\nУ части производителей ONVIF выключен по умолчанию или требует отдельной учётной записи. Зайдите в веб-интерфейс камеры и проверьте четыре пункта:\n\nONVIF включён в настройках сети камеры\nПорт ONVIF совпадает с тем, что указан в TRASSIR — по умолчанию 80\nДля ONVIF заведена учётная запись с правами на просмотр\nПрофиль потока — Profile S, иначе поток не запросится\n3. Проверьте учётные данные\n\nTRASSIR запрашивает поток от имени той учётной записи, что указана при добавлении. Проверьте её прямо в браузере — если по этой строке поток не открывается, дело не в TRASSIR:\n\nrtsp://operator:••••••@192.168.1.64:554/Streaming/Channels/101\nСкопировать команду\n4. Если камера видна, но нет потока\n\nУстройство добавилось, а окно остаётся чёрным — почти всегда это несовпадение кодека или разрешения с профилем, который запрашивает сервер. Переведите второй поток в H.264 и повторите добавление.\n\nЕсли ничего не помогло\n\nСоберите ответ камеры по ONVIF через сторонний клиент и приложите его к запросу в поддержку. Это даст специалисту данные для диагностики.\n\nВХОДИТ В ТРАЕКТОРИИ\nПусконаладка TRASSIR OS на объекте до 32 камер\nшаг 3 из 11\nРазбор типовых отказов на пусконаладке\nшаг 2 из 6\nСкачать текст · HTML\nПечать\nВойдите, чтобы найти это снова\nМатериал попадёт в вашу историю, по ней работает поиск. Ничего кроме почты или телефона не потребуется\nВойти\nРядом по задаче\nКамера добавилась, но архив не пишется\nПроверка расписания записи, места на диске и прав службы.\nTRASSIR OS 4.3 · 19 августа · 5 мин\nСмена IP-адреса камеры без переподключения\nКак поменять адрес и сохранить архив и настройки устройства.\nTRASSIR OS 4.1 · 2 августа · 5 мин\nПроверка пропускной способности до объекта\nРасчёт канала под число камер и битрейт до выезда на объект.\nTRASSIR OS 4.1 · 17 июля · 8 мин\nО ПЛАТФОРМЕ\nКак устроено обучение\nСертификация партнёров\nКонтакты\nПРОДУКТЫ TRASSIR\nTRASSIR OS\nDuoStation\nЛинейка камер\nВидеоаналитика\nПОДДЕРЖКА\nБаза знаний\nЗапрос в поддержку\nСтатус сервисов\nDSSL · TRASSIR Learn — учебная платформа для партнёров",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/images/device-search.png"
+      ]
+    },
+    {
+      "label": "material/onvif-not-found reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn/material/onvif-not-found?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nПусконаладка\n/\nTRASSIR OS\n/\nTRASSIR не видит камеру по ONVIF: порядок проверки\nTRASSIR OS 4.3\n·\nобновлено 12 августа 2026\n·\n7 минут чтения\nTRASSIR не видит камеру по ONVIF: порядок проверки\n\nЧто проверить и в каком порядке, если камера не появляется в списке устройств\n\nКамера отвечает на пинг, но в списке устройств TRASSIR её нет. Проверьте сеть, настройки ONVIF, учётные данные и параметры потока — по порядку ниже.\n\n1. Проверьте сеть до камеры\n\nКамера и сервер должны быть в одной подсети или иметь маршрут друг к другу. Убедитесь, что порт на коммутаторе поднялся, а VLAN совпадает с тем, в котором работает сервер.\n\nОткрыть изображение в полном размере ↗\n2. Проверьте, включён ли ONVIF на камере\n\nУ части производителей ONVIF выключен по умолчанию или требует отдельной учётной записи. Зайдите в веб-интерфейс камеры и проверьте четыре пункта:\n\nONVIF включён в настройках сети камеры\nПорт ONVIF совпадает с тем, что указан в TRASSIR — по умолчанию 80\nДля ONVIF заведена учётная запись с правами на просмотр\nПрофиль потока — Profile S, иначе поток не запросится\n3. Проверьте учётные данные\n\nTRASSIR запрашивает поток от имени той учётной записи, что указана при добавлении. Проверьте её прямо в браузере — если по этой строке поток не открывается, дело не в TRASSIR:\n\nrtsp://operator:••••••@192.168.1.64:554/Streaming/Channels/101\nСкопировать команду\n4. Если камера видна, но нет потока\n\nУстройство добавилось, а окно остаётся чёрным — почти всегда это несовпадение кодека или разрешения с профилем, который запрашивает сервер. Переведите второй поток в H.264 и повторите добавление.\n\nЕсли ничего не помогло\n\nСоберите ответ камеры по ONVIF через сторонний клиент и приложите его к запросу в поддержку. Это даст специалисту данные для диагностики.\n\nВХОДИТ В ТРАЕКТОРИИ\nПусконаладка TRASSIR OS на объекте до 32 камер\nшаг 3 из 11\nРазбор типовых отказов на пусконаладке\nшаг 2 из 6\nСкачать текст · HTML\nПечать\nВойдите, чтобы найти это снова\nМатериал попадёт в вашу историю, по ней работает поиск. Ничего кроме почты или телефона не потребуется\nВойти\nРядом по задаче\nКамера добавилась, но архив не пишется\nПроверка расписания записи, места на диске и прав службы.\nTRASSIR OS 4.3 · 19 августа · 5 мин\nСмена IP-адреса камеры без переподключения\nКак поменять адрес и сохранить архив и настройки устройства.\nTRASSIR OS 4.1 · 2 августа · 5 мин\nПроверка пропускной способности до объекта\nРасчёт канала под число камер и битрейт до выезда на объект.\nTRASSIR OS 4.1 · 17 июля · 8 мин\nО ПЛАТФОРМЕ\nКак устроено обучение\nСертификация партнёров\nКонтакты\nПРОДУКТЫ TRASSIR\nTRASSIR OS\nDuoStation\nЛинейка камер\nВидеоаналитика\nПОДДЕРЖКА\nБаза знаний\nЗапрос в поддержку\nСтатус сервисов\nDSSL · TRASSIR Learn — учебная платформа для партнёров",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/images/device-search.png",
+        "http://127.0.0.1:4322/prototypes/learn/logo-trassir-learn.svg"
+      ]
+    },
+    {
+      "label": "trajectory/proekt",
+      "url": "http://127.0.0.1:4322/prototypes/learn/trajectory/proekt?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nГотовлю проект\n/\nПрограммы\nПроектирование · программа подготовки\nПроектирование системы на 64+ камеры\n\nРассчитать нагрузку и защитить проект перед заказчиком\n\nОбъём программы\n1 ч 45 мин\n8 материалов + зачёт\nКак проверяется\n20 вопросов · нужно 16 верных\n30 минут · 2 попытки · повтор через 24 ч\nНа выходе\nПроектировщик систем TRASSIR\nИменной документ концепта\nНачать программу\nВход нужен для сохранения прогресса. Открытые материалы можно читать сейчас.\nСостав программы\nВсе 9 единиц\n01\nРасчёт числа камер и зон покрытия\nМатериал\n9 мин\n02\nВыбор сервера под 64+ камеры\nМатериал\n14 мин\n03\nРасчёт дисковой ёмкости под 64 камеры\nМатериал\n12 мин\n04\nРаспределение архива по дискам\nМатериал\n6 мин\n05\nНастройка глубины архива на DuoStation\nМатериал\n12 мин\n06\nПроверка пропускной способности до объекта\nМатериал\n8 мин\n07\nСхема лицензий TRASSIR под проект\nМатериал · для партнёров\n6 мин\n08\nСпецификация оборудования для тендера\nМатериал · для партнёров\n8 мин\n09\nЗачёт по траектории\nЗачёт\n30 мин\nЧто подтверждает результат\n\nСертификат подтверждает, что проектировщик рассчитывает состав системы на 64 и более камер: число камер и зоны покрытия, сервер, дисковую подсистему, канал и лицензии. Проверяется зачётом на 20 вопросов с порогом 16.\n\nСамостоятельный учебный концепт. Документ фиксирует прохождение в прототипе; официальная квалификация DSSL не присваивается.\n\nО ПЛАТФОРМЕ\nКак устроено обучение\nСертификация партнёров\nКонтакты\nПРОДУКТЫ TRASSIR\nTRASSIR OS\nDuoStation\nЛинейка камер\nВидеоаналитика\nПОДДЕРЖКА\nБаза знаний\nЗапрос в поддержку\nСтатус сервисов\nDSSL · TRASSIR Learn — учебная платформа для партнёров",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2"
+      ]
+    },
+    {
+      "label": "trajectory/proekt reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn/trajectory/proekt?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nГотовлю проект\n/\nПрограммы\nПроектирование · программа подготовки\nПроектирование системы на 64+ камеры\n\nРассчитать нагрузку и защитить проект перед заказчиком\n\nОбъём программы\n1 ч 45 мин\n8 материалов + зачёт\nКак проверяется\n20 вопросов · нужно 16 верных\n30 минут · 2 попытки · повтор через 24 ч\nНа выходе\nПроектировщик систем TRASSIR\nИменной документ концепта\nНачать программу\nВход нужен для сохранения прогресса. Открытые материалы можно читать сейчас.\nСостав программы\nВсе 9 единиц\n01\nРасчёт числа камер и зон покрытия\nМатериал\n9 мин\n02\nВыбор сервера под 64+ камеры\nМатериал\n14 мин\n03\nРасчёт дисковой ёмкости под 64 камеры\nМатериал\n12 мин\n04\nРаспределение архива по дискам\nМатериал\n6 мин\n05\nНастройка глубины архива на DuoStation\nМатериал\n12 мин\n06\nПроверка пропускной способности до объекта\nМатериал\n8 мин\n07\nСхема лицензий TRASSIR под проект\nМатериал · для партнёров\n6 мин\n08\nСпецификация оборудования для тендера\nМатериал · для партнёров\n8 мин\n09\nЗачёт по траектории\nЗачёт\n30 мин\nЧто подтверждает результат\n\nСертификат подтверждает, что проектировщик рассчитывает состав системы на 64 и более камер: число камер и зоны покрытия, сервер, дисковую подсистему, канал и лицензии. Проверяется зачётом на 20 вопросов с порогом 16.\n\nСамостоятельный учебный концепт. Документ фиксирует прохождение в прототипе; официальная квалификация DSSL не присваивается.\n\nО ПЛАТФОРМЕ\nКак устроено обучение\nСертификация партнёров\nКонтакты\nПРОДУКТЫ TRASSIR\nTRASSIR OS\nDuoStation\nЛинейка камер\nВидеоаналитика\nПОДДЕРЖКА\nБаза знаний\nЗапрос в поддержку\nСтатус сервисов\nDSSL · TRASSIR Learn — учебная платформа для партнёров",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/logo-trassir-learn.svg"
+      ]
+    },
+    {
+      "label": "player/proekt/0",
+      "url": "http://127.0.0.1:4322/prototypes/learn/player/proekt/0?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nПроектирование системы на 64+ камеры\nПозиция\n1 / 9\nВыйти из программы\nСостав программы\n\nЧтение пополняет освоение. Для допуска нажмите «Завершить и далее». Позиция не означает завершение.\n\n01\nРасчёт числа камер и зон покрытия\nМатериал · 9 мин\nТекущая единица\n02\nВыбор сервера под 64+ камеры\nМатериал · 14 мин\n03\nРасчёт дисковой ёмкости под 64 камеры\nМатериал · 12 мин\n04\nРаспределение архива по дискам\nМатериал · 6 мин\n05\nНастройка глубины архива на DuoStation\nМатериал · 12 мин\n06\nПроверка пропускной способности до объекта\nМатериал · 8 мин\n07\nСхема лицензий TRASSIR под проект\nМатериал · 6 мин\nДля партнёров\n08\nСпецификация оборудования для тендера\nМатериал · 8 мин\nДля партнёров\n09\nЗачёт по траектории\nЗачёт · 30 мин\nОборудование\n·\nобновлено 15 августа 2026\n·\n9 минут\nРасчёт числа камер и зон покрытия\n\nОт задачи заказчика к числу камер: расстановка по зонам, а не по стенам\n\nНачинайте с задачи, а не с плана\n\nЧисло камер выводится из того, что заказчик хочет различать: лицо, номер, факт события. Каждая из трёх задач даёт свою плотность пикселей на метр и своё число камер на ту же площадь.\n\nТри плотности\nОбнаружение события — от 25 пикселей на метр\nРаспознавание человека — от 125\nИдентификация лица — от 250\nДля допуска подтвердите завершение кнопкой ниже. Одного открытия материала недостаточно.\nНазад\nДалее · Выбор сервера под 64+ камеры\nВойти для сохранения",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2"
+      ]
+    },
+    {
+      "label": "player/proekt/0 reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn/player/proekt/0?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nПроектирование системы на 64+ камеры\nПозиция\n1 / 9\nВыйти из программы\nСостав программы\n\nЧтение пополняет освоение. Для допуска нажмите «Завершить и далее». Позиция не означает завершение.\n\n01\nРасчёт числа камер и зон покрытия\nМатериал · 9 мин\nТекущая единица\n02\nВыбор сервера под 64+ камеры\nМатериал · 14 мин\n03\nРасчёт дисковой ёмкости под 64 камеры\nМатериал · 12 мин\n04\nРаспределение архива по дискам\nМатериал · 6 мин\n05\nНастройка глубины архива на DuoStation\nМатериал · 12 мин\n06\nПроверка пропускной способности до объекта\nМатериал · 8 мин\n07\nСхема лицензий TRASSIR под проект\nМатериал · 6 мин\nДля партнёров\n08\nСпецификация оборудования для тендера\nМатериал · 8 мин\nДля партнёров\n09\nЗачёт по траектории\nЗачёт · 30 мин\nОборудование\n·\nобновлено 15 августа 2026\n·\n9 минут\nРасчёт числа камер и зон покрытия\n\nОт задачи заказчика к числу камер: расстановка по зонам, а не по стенам\n\nНачинайте с задачи, а не с плана\n\nЧисло камер выводится из того, что заказчик хочет различать: лицо, номер, факт события. Каждая из трёх задач даёт свою плотность пикселей на метр и своё число камер на ту же площадь.\n\nТри плотности\nОбнаружение события — от 25 пикселей на метр\nРаспознавание человека — от 125\nИдентификация лица — от 250\nДля допуска подтвердите завершение кнопкой ниже. Одного открытия материала недостаточно.\nНазад\nДалее · Выбор сервера под 64+ камеры\nВойти для сохранения",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/logo-trassir-learn.svg"
+      ]
+    },
+    {
+      "label": "landing query locale",
+      "url": "http://127.0.0.1:4322/prototypes/learn-landing/?lang=ru",
+      "lang": "ru",
+      "text": "Перейти к содержимому\nПрограмма\nКак это работает\nРезультат\nОткрыть платформу\n↗\nПРАКТИЧЕСКИЕ ЗНАНИЯ / TRASSIR\nЗнать, как.\nУметь сделать.\n\nОт подключения камеры до сдачи объекта.\nОбучение для инженеров, которым важно\nразобраться и применить.\n\nОткрыть материал\n↗\nИзучить программу\n↓\n\nЦеликом. Без регистрации.\n\nОТКРЫТЫЙ МАТЕРИАЛ\n01 / 03\nПусконаладка TRASSIR OS\n10 материалов + зачёт\nСправочник\n7 мин\n\nПОДКЛЮЧЕНИЕ КАМЕР · ONVIF\n\nКамера не появилась\nв TRASSIR?\n01\nДоступность камеры\n↗\n02\nНастройки ONVIF\n↗\n03\nРучное подключение\n↗\n04\nИзображение и запись\n↗\nЧитать материал\n↗\n03\nЧасть большой картины\nЭтот ответ — шаг вашей программы\n↗\nСНАЧАЛА ПОНЯТЬ. ПОТОМ ПРИМЕНИТЬ.\n↓\nДЛЯ ИНЖЕНЕРОВ И ТЕХНИЧЕСКИХ СПЕЦИАЛИСТОВ\nОт рабочего вопроса — к системным знаниям ↓\n01 / ВАШ МАРШРУТ\nВся работа.\nПо шагам.\n\nОт подготовки сервера до передачи объекта.\nВы знаете объём ещё до старта.\n\nTRASSIR OS · пример программы\nПусконаладка\nобъекта до 32 камер\n\nДля инженеров, которые знакомы с IP-сетями и начинают работать с TRASSIR.\n\n2 ч 15 мин\nчтение и проверка\n10 + 1\nматериалов и зачёт\n\nОриентировочно 115 минут на материалы и около 20 минут на зачёт. Практика на оборудовании — в вашем темпе.\n\nПосмотреть всю программу\n↗\n01\nПодготовка сервера и сети\n15 мин\n+\n02\nДобавление IP-камеры\n11 мин\n+\n03\nКамера не видна по ONVIF\nОткрытый пример\n7 мин\n+\n04\nНастройка глубины архива\n12 мин\n+\n05\nПрава доступа операторов\n10 мин\n+\nЕщё 5 материалов и зачёт\nВся программа ↗\nСостав и открытые материалы доступны без входа\n02 / ЗНАНИЯ В КОНТЕКСТЕ\nОдин ответ.\nБольше возможностей.\n\nРешите задачу сейчас.\nВернитесь за целой системой знаний.\n\n01\nНайти ответ\n02\nУвидеть связь\n03\nПрименить знания\nПо рабочей задаче\nКамера не видна.\nСледующий шаг — виден.\n\nОткройте материал с конкретным порядком действий. Прочитайте целиком и возвращайтесь к работе.\n\nПосмотреть ответ\n↗\nONVIF / ПОРЯДОК ПРОВЕРКИ\nНачните с подключения\n\nПроверьте доступность камеры с сервера. Затем сверьте порт и учётную запись ONVIF.\n\nСНАЧАЛА\nСеть и доступ\n→\nЗАТЕМ\nONVIF и поток\n4 шага · от сети до изображения\n\nОдин материал. Два способа учиться.\n\nПольза остаётся с вами.\n03 / ПОНЯТНЫЙ РЕЗУЛЬТАТ\nЗнания, которые\nможно подтвердить.\n\nПодготовка сервера, подключение камер, настройка архива и доступов — программа заканчивается проверкой этих тем.\n\n20\nвопросов\n80%\nпорог прохождения\nПосмотреть образец сертификата\n↗\n\nТак устроена сертификация в концепте. Официальные условия определяет партнёрская программа DSSL.\n\nОБРАЗЕЦ\nСЕРТИФИКАТ О ПРОХОЖДЕНИИ\nОт знаний —\nк практике.\nИмя участника\n\nПусконаладка TRASSIR OS\nна объекте до 32 камер\n\n10 материалов\nИтоговая проверка\n↗\nДизайн-концепт\nНе является документом\n04 / ПРОСТО НАЧАТЬ\nСначала —\nинтересный вам ответ.\n\nНикаких форм перед первым материалом.\n\nДЛЯ РУКОВОДИТЕЛЯ\nДайте команде\nпонятную точку старта.\n\nОтправьте программу сотруднику. Темы, объём и результат он увидит до начала обучения.\n\nСкопировать ссылку на программу\n↗\nЧто доступно без регистрации?\n+\n\nТри полных учебных примера, поиск по ним, состав программы и образец сертификата. Начните с любой интересующей темы.\n\nОткрыть материалы\n↗\nЧто даёт аккаунт?\n+\nКак получить сертификат?\n+\nПодойдёт ли программа новичку?\n+\nСЛЕДУЮЩИЙ ШАГ — ВАШ\nХорошая работа\nначинается с понимания.\n\nНачните с одного ответа.\nПродолжите, когда понадобится больше.\n\nОткрыть первый материал\n↗\n\nЗнания остаются с вами.\n\nНаверх ↑\nНезависимый дизайн-концепт · 2026\nНе официальный сервис DSSL / TRASSIR\nОткрытые материалы",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-regular.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-medium.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/index-DrVevFI2.css",
+        "http://127.0.0.1:4322/prototypes/learn-landing/brand/trassir-learn.svg",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/motion-CiLNXSEs.js",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/jetbrains-mono-regular.woff2"
+      ]
+    },
+    {
+      "label": "landing reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn-landing/?lang=ru",
+      "lang": "ru",
+      "text": "Перейти к содержимому\nПрограмма\nКак это работает\nРезультат\nОткрыть платформу\n↗\nПРАКТИЧЕСКИЕ ЗНАНИЯ / TRASSIR\nЗнать, как.\nУметь сделать.\n\nОт подключения камеры до сдачи объекта.\nОбучение для инженеров, которым важно\nразобраться и применить.\n\nОткрыть материал\n↗\nИзучить программу\n↓\n\nЦеликом. Без регистрации.\n\nОТКРЫТЫЙ МАТЕРИАЛ\n01 / 03\nПусконаладка TRASSIR OS\n10 материалов + зачёт\nСправочник\n7 мин\n\nПОДКЛЮЧЕНИЕ КАМЕР · ONVIF\n\nКамера не появилась\nв TRASSIR?\n01\nДоступность камеры\n↗\n02\nНастройки ONVIF\n↗\n03\nРучное подключение\n↗\n04\nИзображение и запись\n↗\nЧитать материал\n↗\n03\nЧасть большой картины\nЭтот ответ — шаг вашей программы\n↗\nСНАЧАЛА ПОНЯТЬ. ПОТОМ ПРИМЕНИТЬ.\n↓\nДЛЯ ИНЖЕНЕРОВ И ТЕХНИЧЕСКИХ СПЕЦИАЛИСТОВ\nОт рабочего вопроса — к системным знаниям ↓\n01 / ВАШ МАРШРУТ\nВся работа.\nПо шагам.\n\nОт подготовки сервера до передачи объекта.\nВы знаете объём ещё до старта.\n\nTRASSIR OS · пример программы\nПусконаладка\nобъекта до 32 камер\n\nДля инженеров, которые знакомы с IP-сетями и начинают работать с TRASSIR.\n\n2 ч 15 мин\nчтение и проверка\n10 + 1\nматериалов и зачёт\n\nОриентировочно 115 минут на материалы и около 20 минут на зачёт. Практика на оборудовании — в вашем темпе.\n\nПосмотреть всю программу\n↗\n01\nПодготовка сервера и сети\n15 мин\n+\n02\nДобавление IP-камеры\n11 мин\n+\n03\nКамера не видна по ONVIF\nОткрытый пример\n7 мин\n+\n04\nНастройка глубины архива\n12 мин\n+\n05\nПрава доступа операторов\n10 мин\n+\nЕщё 5 материалов и зачёт\nВся программа ↗\nСостав и открытые материалы доступны без входа\n02 / ЗНАНИЯ В КОНТЕКСТЕ\nОдин ответ.\nБольше возможностей.\n\nРешите задачу сейчас.\nВернитесь за целой системой знаний.\n\n01\nНайти ответ\n02\nУвидеть связь\n03\nПрименить знания\nПо рабочей задаче\nКамера не видна.\nСледующий шаг — виден.\n\nОткройте материал с конкретным порядком действий. Прочитайте целиком и возвращайтесь к работе.\n\nПосмотреть ответ\n↗\nONVIF / ПОРЯДОК ПРОВЕРКИ\nНачните с подключения\n\nПроверьте доступность камеры с сервера. Затем сверьте порт и учётную запись ONVIF.\n\nСНАЧАЛА\nСеть и доступ\n→\nЗАТЕМ\nONVIF и поток\n4 шага · от сети до изображения\n\nОдин материал. Два способа учиться.\n\nПольза остаётся с вами.\n03 / ПОНЯТНЫЙ РЕЗУЛЬТАТ\nЗнания, которые\nможно подтвердить.\n\nПодготовка сервера, подключение камер, настройка архива и доступов — программа заканчивается проверкой этих тем.\n\n20\nвопросов\n80%\nпорог прохождения\nПосмотреть образец сертификата\n↗\n\nТак устроена сертификация в концепте. Официальные условия определяет партнёрская программа DSSL.\n\nОБРАЗЕЦ\nСЕРТИФИКАТ О ПРОХОЖДЕНИИ\nОт знаний —\nк практике.\nИмя участника\n\nПусконаладка TRASSIR OS\nна объекте до 32 камер\n\n10 материалов\nИтоговая проверка\n↗\nДизайн-концепт\nНе является документом\n04 / ПРОСТО НАЧАТЬ\nСначала —\nинтересный вам ответ.\n\nНикаких форм перед первым материалом.\n\nДЛЯ РУКОВОДИТЕЛЯ\nДайте команде\nпонятную точку старта.\n\nОтправьте программу сотруднику. Темы, объём и результат он увидит до начала обучения.\n\nСкопировать ссылку на программу\n↗\nЧто доступно без регистрации?\n+\n\nТри полных учебных примера, поиск по ним, состав программы и образец сертификата. Начните с любой интересующей темы.\n\nОткрыть материалы\n↗\nЧто даёт аккаунт?\n+\nКак получить сертификат?\n+\nПодойдёт ли программа новичку?\n+\nСЛЕДУЮЩИЙ ШАГ — ВАШ\nХорошая работа\nначинается с понимания.\n\nНачните с одного ответа.\nПродолжите, когда понадобится больше.\n\nОткрыть первый материал\n↗\n\nЗнания остаются с вами.\n\nНаверх ↑\nНезависимый дизайн-концепт · 2026\nНе официальный сервис DSSL / TRASSIR\nОткрытые материалы",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-regular.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-medium.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/index-DrVevFI2.css",
+        "http://127.0.0.1:4322/prototypes/learn-landing/brand/trassir-learn.svg",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/motion-CiLNXSEs.js",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/jetbrains-mono-regular.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/favicon.svg"
+      ]
+    },
+    {
+      "label": "landing to product click",
+      "url": "http://127.0.0.1:4322/prototypes/learn/home?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nРабочий атлас · Я сейчас\nНастраиваю объект\nВсе 14 материалов задачи\n2 программы подготовки\nС чего начать\n\nОдна подборка: 6 материалов. По порядку — вся задача; по симптому — конкретный ответ.\n\nПо порядку\n· 6\nПо симптому\n· 6\n01\nПроверка питания и линка камеры\nОборудование · 3 сентября · 5 мин\n02\nTRASSIR не видит камеру по ONVIF: порядок проверки\nTRASSIR OS 4.3 · 12 августа · 7 мин\n03\nДобавление IP-камеры вручную\nTRASSIR OS 4.2 · 28 июля · 11 мин\n04\nНастройка глубины архива на DuoStation\nTRASSIR OS 4.3 · 12 августа · 12 мин\n05\nРаспределение архива по дискам\nTRASSIR OS 4.3 · 21 августа · 6 мин\n06\nПрава доступа операторов\nTRASSIR OS 4.3 · 28 июля · 10 мин\nПодготовиться системно\n\nПолный состав и условия — до начала программы.\n\nПусконаладка TRASSIR OS на объекте до 32 камер\nСможете развернуть и сдать объект самостоятельно\n11 единиц · 2 ч 11 мин · документ концепта\nРазбор типовых отказов на пусконаладке\nРазберёте порядок проверки типовых отказов на объекте\n6 единиц · 54 мин · документ концепта\nО ПЛАТФОРМЕ\nКак устроено обучение\nСертификация партнёров\nКонтакты\nПРОДУКТЫ TRASSIR\nTRASSIR OS\nDuoStation\nЛинейка камер\nВидеоаналитика\nПОДДЕРЖКА\nБаза знаний\nЗапрос в поддержку\nСтатус сервисов\nDSSL · TRASSIR Learn — учебная платформа для партнёров",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2"
+      ]
+    },
+    {
+      "label": "home",
+      "url": "http://127.0.0.1:4322/prototypes/learn/home?lang=en",
+      "lang": "en",
+      "text": "Sign in\nField guide · Right now I am\nI’m commissioning a site\nAll 14 resources for this task\n2 paths for preparation\nWhere to start\n\nOne collection: 6 resources. In order for the whole task; by issue for a specific answer.\n\nIn order\n· 6\nBy issue\n· 6\n01\nChecking camera power and link\nHardware · 3 September · 5 min\n02\nTRASSIR cannot discover an ONVIF camera: diagnostic sequence\nTRASSIR OS 4.3 · 12 August · 7 min\n03\nAdding an IP camera manually\nTRASSIR OS 4.2 · 28 July · 11 min\n04\nConfiguring recording retention on DuoStation\nTRASSIR OS 4.3 · 12 August · 12 min\n05\nDistributing recordings across disks\nTRASSIR OS 4.3 · 21 August · 6 min\n06\nOperator access rights\nTRASSIR OS 4.3 · 28 July · 10 min\nBuild a complete understanding\n\nSee the full curriculum and requirements before starting.\n\nCommissioning TRASSIR OS at a site with up to 32 cameras\nYou will be able to deploy and hand over a site independently\n11 units · 2 h 11 min · concept document\nTroubleshooting common commissioning faults\nYou will learn the diagnostic sequence for common on-site faults\n6 units · 54 min · concept document\nABOUT THE PLATFORM\nHow learning works\nPartner certification\nContact\nTRASSIR PRODUCTS\nTRASSIR OS\nDuoStation\nCamera range\nVideo analytics\nSUPPORT\nKnowledge base\nContact support\nService status\nDSSL · TRASSIR Learn — learning platform for partners",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2"
+      ]
+    },
+    {
+      "label": "home reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn/home?lang=en",
+      "lang": "en",
+      "text": "Sign in\nField guide · Right now I am\nI’m commissioning a site\nAll 14 resources for this task\n2 paths for preparation\nWhere to start\n\nOne collection: 6 resources. In order for the whole task; by issue for a specific answer.\n\nIn order\n· 6\nBy issue\n· 6\n01\nChecking camera power and link\nHardware · 3 September · 5 min\n02\nTRASSIR cannot discover an ONVIF camera: diagnostic sequence\nTRASSIR OS 4.3 · 12 August · 7 min\n03\nAdding an IP camera manually\nTRASSIR OS 4.2 · 28 July · 11 min\n04\nConfiguring recording retention on DuoStation\nTRASSIR OS 4.3 · 12 August · 12 min\n05\nDistributing recordings across disks\nTRASSIR OS 4.3 · 21 August · 6 min\n06\nOperator access rights\nTRASSIR OS 4.3 · 28 July · 10 min\nBuild a complete understanding\n\nSee the full curriculum and requirements before starting.\n\nCommissioning TRASSIR OS at a site with up to 32 cameras\nYou will be able to deploy and hand over a site independently\n11 units · 2 h 11 min · concept document\nTroubleshooting common commissioning faults\nYou will learn the diagnostic sequence for common on-site faults\n6 units · 54 min · concept document\nABOUT THE PLATFORM\nHow learning works\nPartner certification\nContact\nTRASSIR PRODUCTS\nTRASSIR OS\nDuoStation\nCamera range\nVideo analytics\nSUPPORT\nKnowledge base\nContact support\nService status\nDSSL · TRASSIR Learn — learning platform for partners",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/logo-trassir-learn.svg"
+      ]
+    },
+    {
+      "label": "material/onvif-not-found",
+      "url": "http://127.0.0.1:4322/prototypes/learn/material/onvif-not-found?lang=en",
+      "lang": "en",
+      "text": "Sign in\nCommissioning\n/\nTRASSIR OS\n/\nTRASSIR cannot discover an ONVIF camera: diagnostic sequence\nTRASSIR OS 4.3\n·\nupdated 12 August 2026\n·\n7 min read\nTRASSIR cannot discover an ONVIF camera: diagnostic sequence\n\nWhat to check, and in what order, when a camera does not appear in the device list\n\nThe camera responds to ping but does not appear in TRASSIR’s device list. Check the network, ONVIF settings, credentials and stream parameters in the order below.\n\n1. Check the network path to the camera\n\nThe camera and server must be in the same subnet or have a route between them. Confirm that the switch port has a link and that its VLAN matches the server’s VLAN.\n\nOpen full-size image ↗\n2. Check that ONVIF is enabled on the camera\n\nSome manufacturers disable ONVIF by default or require a separate account. Open the camera’s web interface and check four things:\n\nONVIF is enabled in the camera’s network settings\nThe ONVIF port matches the value in TRASSIR: 80 by default\nA viewing account has been created for ONVIF\nThe stream profile is Profile S; otherwise, the stream cannot be requested\n3. Check the credentials\n\nTRASSIR requests the stream using the account entered when adding the device. Check it directly in the browser. If that URL does not open the stream, TRASSIR is not the cause:\n\nrtsp://operator:••••••@192.168.1.64:554/Streaming/Channels/101\nCopy command\n4. If the camera is visible but there is no stream\n\nThe device was added but the window stays black: this is almost always a mismatch between the codec or resolution and the profile requested by the server. Switch the second stream to H.264 and try adding it again.\n\nIf nothing helped\n\nCapture the camera’s ONVIF response using a third-party client and attach it to your support request. This gives the specialist diagnostic data.\n\nINCLUDED IN LEARNING PATHS\nCommissioning TRASSIR OS at a site with up to 32 cameras\nstep 3 of 11\nTroubleshooting common commissioning faults\nstep 2 of 6\nDownload text · HTML\nPrint\nSign in to find this again\nThis resource will be saved in your searchable history. All you need is an email or phone number.\nSign in\nRelated to your task\nThe camera was added, but recordings are not being saved\nCheck the recording schedule, disk space and service permissions.\nTRASSIR OS 4.3 · 19 August · 5 min\nChanging a camera’s IP address without reconnecting it\nHow to change the address while preserving recordings and device settings.\nTRASSIR OS 4.1 · 2 August · 5 min\nChecking bandwidth before arriving on site\nCalculate bandwidth from camera count and bitrate before the site visit.\nTRASSIR OS 4.1 · 17 July · 8 min\nABOUT THE PLATFORM\nHow learning works\nPartner certification\nContact\nTRASSIR PRODUCTS\nTRASSIR OS\nDuoStation\nCamera range\nVideo analytics\nSUPPORT\nKnowledge base\nContact support\nService status\nDSSL · TRASSIR Learn — learning platform for partners",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/images/device-search.png"
+      ]
+    },
+    {
+      "label": "material/onvif-not-found reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn/material/onvif-not-found?lang=en",
+      "lang": "en",
+      "text": "Sign in\nCommissioning\n/\nTRASSIR OS\n/\nTRASSIR cannot discover an ONVIF camera: diagnostic sequence\nTRASSIR OS 4.3\n·\nupdated 12 August 2026\n·\n7 min read\nTRASSIR cannot discover an ONVIF camera: diagnostic sequence\n\nWhat to check, and in what order, when a camera does not appear in the device list\n\nThe camera responds to ping but does not appear in TRASSIR’s device list. Check the network, ONVIF settings, credentials and stream parameters in the order below.\n\n1. Check the network path to the camera\n\nThe camera and server must be in the same subnet or have a route between them. Confirm that the switch port has a link and that its VLAN matches the server’s VLAN.\n\nOpen full-size image ↗\n2. Check that ONVIF is enabled on the camera\n\nSome manufacturers disable ONVIF by default or require a separate account. Open the camera’s web interface and check four things:\n\nONVIF is enabled in the camera’s network settings\nThe ONVIF port matches the value in TRASSIR: 80 by default\nA viewing account has been created for ONVIF\nThe stream profile is Profile S; otherwise, the stream cannot be requested\n3. Check the credentials\n\nTRASSIR requests the stream using the account entered when adding the device. Check it directly in the browser. If that URL does not open the stream, TRASSIR is not the cause:\n\nrtsp://operator:••••••@192.168.1.64:554/Streaming/Channels/101\nCopy command\n4. If the camera is visible but there is no stream\n\nThe device was added but the window stays black: this is almost always a mismatch between the codec or resolution and the profile requested by the server. Switch the second stream to H.264 and try adding it again.\n\nIf nothing helped\n\nCapture the camera’s ONVIF response using a third-party client and attach it to your support request. This gives the specialist diagnostic data.\n\nINCLUDED IN LEARNING PATHS\nCommissioning TRASSIR OS at a site with up to 32 cameras\nstep 3 of 11\nTroubleshooting common commissioning faults\nstep 2 of 6\nDownload text · HTML\nPrint\nSign in to find this again\nThis resource will be saved in your searchable history. All you need is an email or phone number.\nSign in\nRelated to your task\nThe camera was added, but recordings are not being saved\nCheck the recording schedule, disk space and service permissions.\nTRASSIR OS 4.3 · 19 August · 5 min\nChanging a camera’s IP address without reconnecting it\nHow to change the address while preserving recordings and device settings.\nTRASSIR OS 4.1 · 2 August · 5 min\nChecking bandwidth before arriving on site\nCalculate bandwidth from camera count and bitrate before the site visit.\nTRASSIR OS 4.1 · 17 July · 8 min\nABOUT THE PLATFORM\nHow learning works\nPartner certification\nContact\nTRASSIR PRODUCTS\nTRASSIR OS\nDuoStation\nCamera range\nVideo analytics\nSUPPORT\nKnowledge base\nContact support\nService status\nDSSL · TRASSIR Learn — learning platform for partners",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/images/device-search.png",
+        "http://127.0.0.1:4322/prototypes/learn/logo-trassir-learn.svg"
+      ]
+    },
+    {
+      "label": "trajectory/proekt",
+      "url": "http://127.0.0.1:4322/prototypes/learn/trajectory/proekt?lang=en",
+      "lang": "en",
+      "text": "Sign in\nI’m preparing a system design\n/\nLearning paths\nSystem design · learning path\nDesigning a system for 64+ cameras\n\nCalculate system load and justify the design to the customer\n\nPath length\n1 h 45 min\n8 resources + assessment\nAssessment\n20 questions · required: 16 correct\n30 minutes · 2 attempts · retry after 24 hr\nOutcome\nTRASSIR System Designer\nNamed concept document\nStart learning path\nSign in to save progress. You can read public resources now.\nPath curriculum\nAll 9 units\n01\nCalculating camera count and coverage zones\nResource\n9 min\n02\nChoosing a server for 64+ cameras\nResource\n14 min\n03\nCalculating disk capacity for 64 cameras\nResource\n12 min\n04\nDistributing recordings across disks\nResource\n6 min\n05\nConfiguring recording retention on DuoStation\nResource\n12 min\n06\nChecking bandwidth before arriving on site\nResource\n8 min\n07\nTRASSIR licensing plan for a project\nResource · partners only\n6 min\n08\nEquipment specification for a tender\nResource · partners only\n8 min\n09\nLearning path assessment\nAssessment\n30 min\nWhat the result confirms\n\nThe certificate confirms that the system designer sizes a system for 64 or more cameras: camera count and coverage areas, server, disk subsystem, bandwidth and licenses. Skills are tested in a 20-question assessment with a passing score of 16.\n\nAn independent learning concept. The document records completion in this prototype and does not award an official DSSL qualification.\n\nABOUT THE PLATFORM\nHow learning works\nPartner certification\nContact\nTRASSIR PRODUCTS\nTRASSIR OS\nDuoStation\nCamera range\nVideo analytics\nSUPPORT\nKnowledge base\nContact support\nService status\nDSSL · TRASSIR Learn — learning platform for partners",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2"
+      ]
+    },
+    {
+      "label": "trajectory/proekt reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn/trajectory/proekt?lang=en",
+      "lang": "en",
+      "text": "Sign in\nI’m preparing a system design\n/\nLearning paths\nSystem design · learning path\nDesigning a system for 64+ cameras\n\nCalculate system load and justify the design to the customer\n\nPath length\n1 h 45 min\n8 resources + assessment\nAssessment\n20 questions · required: 16 correct\n30 minutes · 2 attempts · retry after 24 hr\nOutcome\nTRASSIR System Designer\nNamed concept document\nStart learning path\nSign in to save progress. You can read public resources now.\nPath curriculum\nAll 9 units\n01\nCalculating camera count and coverage zones\nResource\n9 min\n02\nChoosing a server for 64+ cameras\nResource\n14 min\n03\nCalculating disk capacity for 64 cameras\nResource\n12 min\n04\nDistributing recordings across disks\nResource\n6 min\n05\nConfiguring recording retention on DuoStation\nResource\n12 min\n06\nChecking bandwidth before arriving on site\nResource\n8 min\n07\nTRASSIR licensing plan for a project\nResource · partners only\n6 min\n08\nEquipment specification for a tender\nResource · partners only\n8 min\n09\nLearning path assessment\nAssessment\n30 min\nWhat the result confirms\n\nThe certificate confirms that the system designer sizes a system for 64 or more cameras: camera count and coverage areas, server, disk subsystem, bandwidth and licenses. Skills are tested in a 20-question assessment with a passing score of 16.\n\nAn independent learning concept. The document records completion in this prototype and does not award an official DSSL qualification.\n\nABOUT THE PLATFORM\nHow learning works\nPartner certification\nContact\nTRASSIR PRODUCTS\nTRASSIR OS\nDuoStation\nCamera range\nVideo analytics\nSUPPORT\nKnowledge base\nContact support\nService status\nDSSL · TRASSIR Learn — learning platform for partners",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/logo-trassir-learn.svg"
+      ]
+    },
+    {
+      "label": "player/proekt/0",
+      "url": "http://127.0.0.1:4322/prototypes/learn/player/proekt/0?lang=en",
+      "lang": "en",
+      "text": "Sign in\nDesigning a system for 64+ cameras\nPosition\n1 / 9\nLeave learning path\nPath curriculum\n\nReading adds to resources read. For eligibility, select Complete and continue. Your position does not indicate completion.\n\n01\nCalculating camera count and coverage zones\nResource · 9 min\nCurrent unit\n02\nChoosing a server for 64+ cameras\nResource · 14 min\n03\nCalculating disk capacity for 64 cameras\nResource · 12 min\n04\nDistributing recordings across disks\nResource · 6 min\n05\nConfiguring recording retention on DuoStation\nResource · 12 min\n06\nChecking bandwidth before arriving on site\nResource · 8 min\n07\nTRASSIR licensing plan for a project\nResource · 6 min\nFor partners\n08\nEquipment specification for a tender\nResource · 8 min\nFor partners\n09\nLearning path assessment\nAssessment · 30 min\nHardware\n·\nupdated 15 August 2026\n·\n9 minutes\nCalculating camera count and coverage zones\n\nFrom the customer’s task to camera count: position by coverage zone, not by wall\n\nStart with the task, not the floor plan\n\nThe camera count follows from what the customer needs to distinguish: a face, a number plate or an event. Each task requires a different pixel density per metre and therefore a different number of cameras for the same area.\n\nThree pixel densities\nEvent detection: at least 25 pixels per metre\nPerson recognition: at least 125\nFace identification: at least 250\nUse the button below to confirm completion for eligibility. Opening the resource alone is not enough.\nBack\nNext · Choosing a server for 64+ cameras\nSign in to save",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2"
+      ]
+    },
+    {
+      "label": "player/proekt/0 reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn/player/proekt/0?lang=en",
+      "lang": "en",
+      "text": "Sign in\nDesigning a system for 64+ cameras\nPosition\n1 / 9\nLeave learning path\nPath curriculum\n\nReading adds to resources read. For eligibility, select Complete and continue. Your position does not indicate completion.\n\n01\nCalculating camera count and coverage zones\nResource · 9 min\nCurrent unit\n02\nChoosing a server for 64+ cameras\nResource · 14 min\n03\nCalculating disk capacity for 64 cameras\nResource · 12 min\n04\nDistributing recordings across disks\nResource · 6 min\n05\nConfiguring recording retention on DuoStation\nResource · 12 min\n06\nChecking bandwidth before arriving on site\nResource · 8 min\n07\nTRASSIR licensing plan for a project\nResource · 6 min\nFor partners\n08\nEquipment specification for a tender\nResource · 8 min\nFor partners\n09\nLearning path assessment\nAssessment · 30 min\nHardware\n·\nupdated 15 August 2026\n·\n9 minutes\nCalculating camera count and coverage zones\n\nFrom the customer’s task to camera count: position by coverage zone, not by wall\n\nStart with the task, not the floor plan\n\nThe camera count follows from what the customer needs to distinguish: a face, a number plate or an event. Each task requires a different pixel density per metre and therefore a different number of cameras for the same area.\n\nThree pixel densities\nEvent detection: at least 25 pixels per metre\nPerson recognition: at least 125\nFace identification: at least 250\nUse the button below to confirm completion for eligibility. Opening the resource alone is not enough.\nBack\nNext · Choosing a server for 64+ cameras\nSign in to save",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/logo-trassir-learn.svg"
+      ]
+    },
+    {
+      "label": "landing query locale",
+      "url": "http://127.0.0.1:4322/prototypes/learn-landing/en/?lang=en",
+      "lang": "en",
+      "text": "Skip to content\nOpen the platform\n↗\nPRACTICAL KNOWLEDGE / TRASSIR\nKnow how.\nMake it work.\n\nFrom camera connection to site handover.\nLearning for engineers who want to understand and put it into practice.\n\nOpen the guide\n↗\nExplore the program\n↓\n\nThe complete guide. No sign-up.\n\nOPEN GUIDE\n01 / 03\nTRASSIR OS commissioning\n10 guides + assessment\nReference library\n7 min\n\nCAMERA CONNECTION · ONVIF\n\nCamera missing\nin TRASSIR?\n01\nCamera connectivity\n↗\n02\nONVIF settings\n↗\n03\nManual connection\n↗\n04\nVideo and recording\n↗\nRead the guide\n↗\n03\nPart of the bigger picture\nThis answer is a step in your program\n↗\nUNDERSTAND FIRST. THEN PUT IT TO WORK.\n↓\nFOR ENGINEERS AND TECHNICAL SPECIALISTS\nFrom a work question to a solid foundation ↓\n01 / YOUR LEARNING PATH\nThe whole job.\nStep by step.\n\nFrom server setup to site handover.\nKnow what is involved before you begin.\n\nTRASSIR OS · sample program\nCommissioning\na site with up to 32 cameras\n\nFor engineers familiar with IP networks who are getting started with TRASSIR.\n\n2 h 15 min\nreading and assessment\n10 + 1\nguides and assessment\n\nApproximately 115 minutes of reading and around 20 minutes for the assessment. Hands-on practice is at your own pace.\n\nView the full program\n↗\n01\nServer and network preparation\n15 min\n+\n02\nAdding an IP camera\n11 min\n+\n03\nCamera not found via ONVIF\nOpen sample\n7 min\n+\n04\nSetting video retention\n12 min\n+\n05\nOperator access permissions\n10 min\n+\n5 more guides and an assessment\nFull program ↗\nView the curriculum and open guides without signing in\n02 / KNOWLEDGE IN CONTEXT\nOne answer.\nMore possibilities.\n\nSolve the task at hand.\nCome back to build a complete picture.\n\n01\nFind an answer\n02\nConnect the dots\n03\nApply what you know\nFor a task at work\nCamera out of sight.\nNext step in sight.\n\nOpen a guide with a clear sequence of actions. Read it in full and get back to work.\n\nSee the answer\n↗\nONVIF / CHECK SEQUENCE\nStart with the connection\n\nCheck that the server can reach the camera. Then check the ONVIF port and account.\n\nFIRST\nNetwork and access\n→\nTHEN\nONVIF and stream\n4 steps · from network to video\n\nOne guide. Two ways to learn.\n\nUseful long after you read it.\n03 / A CLEAR OUTCOME\nKnowledge you\ncan demonstrate.\n\nServer setup, camera connection, storage and access permissions: the program ends with an assessment of these topics.\n\n20\nquestions\n80%\npass mark\nView a sample certificate\n↗\n\nThis is the certification model in the concept. Official terms are set by the DSSL partner program.\n\nSAMPLE\nCERTIFICATE OF COMPLETION\nFrom knowledge\nto practice.\nParticipant name\n\nTRASSIR OS commissioning\nfor a site with up to 32 cameras\n\n10 guides\nFinal assessment\n↗\nDesign concept\nNot an official document\n04 / EASY TO GET STARTED\nStart with\nthe answer you need.\n\nNo forms before your first guide.\n\nFOR TEAM LEADERS\nGive your team\na clear starting point.\n\nShare the program with a colleague. They can see the topics, time commitment and outcome before they begin.\n\nCopy the program link\n↗\nWhat is available without signing up?\n+\n\nThree complete sample guides, search, the program curriculum and a sample certificate. Start with any topic you need.\n\nBrowse the guides\n↗\nWhat does an account offer?\n+\nHow do I get a certificate?\n+\nIs the program suitable for beginners?\n+\nTHE NEXT STEP IS YOURS\nGood work starts\nwith understanding.\n\nStart with one answer.\nGo further when you need more.\n\nOpen your first guide\n↗\nBack to top ↑\nIndependent design concept · 2026\nNot an official DSSL / TRASSIR service\nOpen guides",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-regular.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/index-DrVevFI2.css",
+        "http://127.0.0.1:4322/prototypes/learn-landing/brand/trassir-learn.svg",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-medium.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/motion-CiLNXSEs.js",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/jetbrains-mono-regular.woff2"
+      ]
+    },
+    {
+      "label": "landing reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn-landing/en/?lang=en",
+      "lang": "en",
+      "text": "Skip to content\nOpen the platform\n↗\nPRACTICAL KNOWLEDGE / TRASSIR\nKnow how.\nMake it work.\n\nFrom camera connection to site handover.\nLearning for engineers who want to understand and put it into practice.\n\nOpen the guide\n↗\nExplore the program\n↓\n\nThe complete guide. No sign-up.\n\nOPEN GUIDE\n01 / 03\nTRASSIR OS commissioning\n10 guides + assessment\nReference library\n7 min\n\nCAMERA CONNECTION · ONVIF\n\nCamera missing\nin TRASSIR?\n01\nCamera connectivity\n↗\n02\nONVIF settings\n↗\n03\nManual connection\n↗\n04\nVideo and recording\n↗\nRead the guide\n↗\n03\nPart of the bigger picture\nThis answer is a step in your program\n↗\nUNDERSTAND FIRST. THEN PUT IT TO WORK.\n↓\nFOR ENGINEERS AND TECHNICAL SPECIALISTS\nFrom a work question to a solid foundation ↓\n01 / YOUR LEARNING PATH\nThe whole job.\nStep by step.\n\nFrom server setup to site handover.\nKnow what is involved before you begin.\n\nTRASSIR OS · sample program\nCommissioning\na site with up to 32 cameras\n\nFor engineers familiar with IP networks who are getting started with TRASSIR.\n\n2 h 15 min\nreading and assessment\n10 + 1\nguides and assessment\n\nApproximately 115 minutes of reading and around 20 minutes for the assessment. Hands-on practice is at your own pace.\n\nView the full program\n↗\n01\nServer and network preparation\n15 min\n+\n02\nAdding an IP camera\n11 min\n+\n03\nCamera not found via ONVIF\nOpen sample\n7 min\n+\n04\nSetting video retention\n12 min\n+\n05\nOperator access permissions\n10 min\n+\n5 more guides and an assessment\nFull program ↗\nView the curriculum and open guides without signing in\n02 / KNOWLEDGE IN CONTEXT\nOne answer.\nMore possibilities.\n\nSolve the task at hand.\nCome back to build a complete picture.\n\n01\nFind an answer\n02\nConnect the dots\n03\nApply what you know\nFor a task at work\nCamera out of sight.\nNext step in sight.\n\nOpen a guide with a clear sequence of actions. Read it in full and get back to work.\n\nSee the answer\n↗\nONVIF / CHECK SEQUENCE\nStart with the connection\n\nCheck that the server can reach the camera. Then check the ONVIF port and account.\n\nFIRST\nNetwork and access\n→\nTHEN\nONVIF and stream\n4 steps · from network to video\n\nOne guide. Two ways to learn.\n\nUseful long after you read it.\n03 / A CLEAR OUTCOME\nKnowledge you\ncan demonstrate.\n\nServer setup, camera connection, storage and access permissions: the program ends with an assessment of these topics.\n\n20\nquestions\n80%\npass mark\nView a sample certificate\n↗\n\nThis is the certification model in the concept. Official terms are set by the DSSL partner program.\n\nSAMPLE\nCERTIFICATE OF COMPLETION\nFrom knowledge\nto practice.\nParticipant name\n\nTRASSIR OS commissioning\nfor a site with up to 32 cameras\n\n10 guides\nFinal assessment\n↗\nDesign concept\nNot an official document\n04 / EASY TO GET STARTED\nStart with\nthe answer you need.\n\nNo forms before your first guide.\n\nFOR TEAM LEADERS\nGive your team\na clear starting point.\n\nShare the program with a colleague. They can see the topics, time commitment and outcome before they begin.\n\nCopy the program link\n↗\nWhat is available without signing up?\n+\n\nThree complete sample guides, search, the program curriculum and a sample certificate. Start with any topic you need.\n\nBrowse the guides\n↗\nWhat does an account offer?\n+\nHow do I get a certificate?\n+\nIs the program suitable for beginners?\n+\nTHE NEXT STEP IS YOURS\nGood work starts\nwith understanding.\n\nStart with one answer.\nGo further when you need more.\n\nOpen your first guide\n↗\nBack to top ↑\nIndependent design concept · 2026\nNot an official DSSL / TRASSIR service\nOpen guides",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-regular.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-medium.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/index-DrVevFI2.css",
+        "http://127.0.0.1:4322/prototypes/learn-landing/brand/trassir-learn.svg",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/motion-CiLNXSEs.js",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/jetbrains-mono-regular.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/favicon.svg"
+      ]
+    },
+    {
+      "label": "landing to product click",
+      "url": "http://127.0.0.1:4322/prototypes/learn/home?lang=en",
+      "lang": "en",
+      "text": "Sign in\nField guide · Right now I am\nI’m commissioning a site\nAll 14 resources for this task\n2 paths for preparation\nWhere to start\n\nOne collection: 6 resources. In order for the whole task; by issue for a specific answer.\n\nIn order\n· 6\nBy issue\n· 6\n01\nChecking camera power and link\nHardware · 3 September · 5 min\n02\nTRASSIR cannot discover an ONVIF camera: diagnostic sequence\nTRASSIR OS 4.3 · 12 August · 7 min\n03\nAdding an IP camera manually\nTRASSIR OS 4.2 · 28 July · 11 min\n04\nConfiguring recording retention on DuoStation\nTRASSIR OS 4.3 · 12 August · 12 min\n05\nDistributing recordings across disks\nTRASSIR OS 4.3 · 21 August · 6 min\n06\nOperator access rights\nTRASSIR OS 4.3 · 28 July · 10 min\nBuild a complete understanding\n\nSee the full curriculum and requirements before starting.\n\nCommissioning TRASSIR OS at a site with up to 32 cameras\nYou will be able to deploy and hand over a site independently\n11 units · 2 h 11 min · concept document\nTroubleshooting common commissioning faults\nYou will learn the diagnostic sequence for common on-site faults\n6 units · 54 min · concept document\nABOUT THE PLATFORM\nHow learning works\nPartner certification\nContact\nTRASSIR PRODUCTS\nTRASSIR OS\nDuoStation\nCamera range\nVideo analytics\nSUPPORT\nKnowledge base\nContact support\nService status\nDSSL · TRASSIR Learn — learning platform for partners",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2"
+      ]
+    },
+    {
+      "label": "home",
+      "url": "http://127.0.0.1:4322/prototypes/learn/home?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nРабочий атлас · Я сейчас\nНастраиваю объект\nВсе 14 материалов задачи\n2 программы подготовки\nС чего начать\n\nОдна подборка: 6 материалов. По порядку — вся задача; по симптому — конкретный ответ.\n\nПо порядку\n· 6\nПо симптому\n· 6\n01\nПроверка питания и линка камеры\nОборудование · 3 сентября · 5 мин\n02\nTRASSIR не видит камеру по ONVIF: порядок проверки\nTRASSIR OS 4.3 · 12 августа · 7 мин\n03\nДобавление IP-камеры вручную\nTRASSIR OS 4.2 · 28 июля · 11 мин\n04\nНастройка глубины архива на DuoStation\nTRASSIR OS 4.3 · 12 августа · 12 мин\n05\nРаспределение архива по дискам\nTRASSIR OS 4.3 · 21 августа · 6 мин\n06\nПрава доступа операторов\nTRASSIR OS 4.3 · 28 июля · 10 мин\nПодготовиться системно\n\nПолный состав и условия — до начала программы.\n\nПусконаладка TRASSIR OS на объекте до 32 камер\nСможете развернуть и сдать объект самостоятельно\n11 единиц · 2 ч 11 мин · документ концепта\nРазбор типовых отказов на пусконаладке\nРазберёте порядок проверки типовых отказов на объекте\n6 единиц · 54 мин · документ концепта\nО ПЛАТФОРМЕ\nКак устроено обучение\nСертификация партнёров\nКонтакты\nПРОДУКТЫ TRASSIR\nTRASSIR OS\nDuoStation\nЛинейка камер\nВидеоаналитика\nПОДДЕРЖКА\nБаза знаний\nЗапрос в поддержку\nСтатус сервисов\nDSSL · TRASSIR Learn — учебная платформа для партнёров",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2"
+      ]
+    },
+    {
+      "label": "home reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn/home?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nРабочий атлас · Я сейчас\nНастраиваю объект\nВсе 14 материалов задачи\n2 программы подготовки\nС чего начать\n\nОдна подборка: 6 материалов. По порядку — вся задача; по симптому — конкретный ответ.\n\nПо порядку\n· 6\nПо симптому\n· 6\n01\nПроверка питания и линка камеры\nОборудование · 3 сентября · 5 мин\n02\nTRASSIR не видит камеру по ONVIF: порядок проверки\nTRASSIR OS 4.3 · 12 августа · 7 мин\n03\nДобавление IP-камеры вручную\nTRASSIR OS 4.2 · 28 июля · 11 мин\n04\nНастройка глубины архива на DuoStation\nTRASSIR OS 4.3 · 12 августа · 12 мин\n05\nРаспределение архива по дискам\nTRASSIR OS 4.3 · 21 августа · 6 мин\n06\nПрава доступа операторов\nTRASSIR OS 4.3 · 28 июля · 10 мин\nПодготовиться системно\n\nПолный состав и условия — до начала программы.\n\nПусконаладка TRASSIR OS на объекте до 32 камер\nСможете развернуть и сдать объект самостоятельно\n11 единиц · 2 ч 11 мин · документ концепта\nРазбор типовых отказов на пусконаладке\nРазберёте порядок проверки типовых отказов на объекте\n6 единиц · 54 мин · документ концепта\nО ПЛАТФОРМЕ\nКак устроено обучение\nСертификация партнёров\nКонтакты\nПРОДУКТЫ TRASSIR\nTRASSIR OS\nDuoStation\nЛинейка камер\nВидеоаналитика\nПОДДЕРЖКА\nБаза знаний\nЗапрос в поддержку\nСтатус сервисов\nDSSL · TRASSIR Learn — учебная платформа для партнёров",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/logo-trassir-learn.svg"
+      ]
+    },
+    {
+      "label": "material/onvif-not-found",
+      "url": "http://127.0.0.1:4322/prototypes/learn/material/onvif-not-found?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nПусконаладка\n/\nTRASSIR OS\n/\nTRASSIR не видит камеру по ONVIF: порядок проверки\nTRASSIR OS 4.3\n·\nобновлено 12 августа 2026\n·\n7 минут чтения\nTRASSIR не видит камеру по ONVIF: порядок проверки\n\nЧто проверить и в каком порядке, если камера не появляется в списке устройств\n\nКамера отвечает на пинг, но в списке устройств TRASSIR её нет. Проверьте сеть, настройки ONVIF, учётные данные и параметры потока — по порядку ниже.\n\n1. Проверьте сеть до камеры\n\nКамера и сервер должны быть в одной подсети или иметь маршрут друг к другу. Убедитесь, что порт на коммутаторе поднялся, а VLAN совпадает с тем, в котором работает сервер.\n\nОткрыть изображение в полном размере ↗\n2. Проверьте, включён ли ONVIF на камере\n\nУ части производителей ONVIF выключен по умолчанию или требует отдельной учётной записи. Зайдите в веб-интерфейс камеры и проверьте четыре пункта:\n\nONVIF включён в настройках сети камеры\nПорт ONVIF совпадает с тем, что указан в TRASSIR — по умолчанию 80\nДля ONVIF заведена учётная запись с правами на просмотр\nПрофиль потока — Profile S, иначе поток не запросится\n3. Проверьте учётные данные\n\nTRASSIR запрашивает поток от имени той учётной записи, что указана при добавлении. Проверьте её прямо в браузере — если по этой строке поток не открывается, дело не в TRASSIR:\n\nrtsp://operator:••••••@192.168.1.64:554/Streaming/Channels/101\nСкопировать команду\n4. Если камера видна, но нет потока\n\nУстройство добавилось, а окно остаётся чёрным — почти всегда это несовпадение кодека или разрешения с профилем, который запрашивает сервер. Переведите второй поток в H.264 и повторите добавление.\n\nЕсли ничего не помогло\n\nСоберите ответ камеры по ONVIF через сторонний клиент и приложите его к запросу в поддержку. Это даст специалисту данные для диагностики.\n\nВХОДИТ В ТРАЕКТОРИИ\nПусконаладка TRASSIR OS на объекте до 32 камер\nшаг 3 из 11\nРазбор типовых отказов на пусконаладке\nшаг 2 из 6\nСкачать текст · HTML\nПечать\nВойдите, чтобы найти это снова\nМатериал попадёт в вашу историю, по ней работает поиск. Ничего кроме почты или телефона не потребуется\nВойти\nРядом по задаче\nКамера добавилась, но архив не пишется\nПроверка расписания записи, места на диске и прав службы.\nTRASSIR OS 4.3 · 19 августа · 5 мин\nСмена IP-адреса камеры без переподключения\nКак поменять адрес и сохранить архив и настройки устройства.\nTRASSIR OS 4.1 · 2 августа · 5 мин\nПроверка пропускной способности до объекта\nРасчёт канала под число камер и битрейт до выезда на объект.\nTRASSIR OS 4.1 · 17 июля · 8 мин\nО ПЛАТФОРМЕ\nКак устроено обучение\nСертификация партнёров\nКонтакты\nПРОДУКТЫ TRASSIR\nTRASSIR OS\nDuoStation\nЛинейка камер\nВидеоаналитика\nПОДДЕРЖКА\nБаза знаний\nЗапрос в поддержку\nСтатус сервисов\nDSSL · TRASSIR Learn — учебная платформа для партнёров",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/images/device-search.png"
+      ]
+    },
+    {
+      "label": "material/onvif-not-found reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn/material/onvif-not-found?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nПусконаладка\n/\nTRASSIR OS\n/\nTRASSIR не видит камеру по ONVIF: порядок проверки\nTRASSIR OS 4.3\n·\nобновлено 12 августа 2026\n·\n7 минут чтения\nTRASSIR не видит камеру по ONVIF: порядок проверки\n\nЧто проверить и в каком порядке, если камера не появляется в списке устройств\n\nКамера отвечает на пинг, но в списке устройств TRASSIR её нет. Проверьте сеть, настройки ONVIF, учётные данные и параметры потока — по порядку ниже.\n\n1. Проверьте сеть до камеры\n\nКамера и сервер должны быть в одной подсети или иметь маршрут друг к другу. Убедитесь, что порт на коммутаторе поднялся, а VLAN совпадает с тем, в котором работает сервер.\n\nОткрыть изображение в полном размере ↗\n2. Проверьте, включён ли ONVIF на камере\n\nУ части производителей ONVIF выключен по умолчанию или требует отдельной учётной записи. Зайдите в веб-интерфейс камеры и проверьте четыре пункта:\n\nONVIF включён в настройках сети камеры\nПорт ONVIF совпадает с тем, что указан в TRASSIR — по умолчанию 80\nДля ONVIF заведена учётная запись с правами на просмотр\nПрофиль потока — Profile S, иначе поток не запросится\n3. Проверьте учётные данные\n\nTRASSIR запрашивает поток от имени той учётной записи, что указана при добавлении. Проверьте её прямо в браузере — если по этой строке поток не открывается, дело не в TRASSIR:\n\nrtsp://operator:••••••@192.168.1.64:554/Streaming/Channels/101\nСкопировать команду\n4. Если камера видна, но нет потока\n\nУстройство добавилось, а окно остаётся чёрным — почти всегда это несовпадение кодека или разрешения с профилем, который запрашивает сервер. Переведите второй поток в H.264 и повторите добавление.\n\nЕсли ничего не помогло\n\nСоберите ответ камеры по ONVIF через сторонний клиент и приложите его к запросу в поддержку. Это даст специалисту данные для диагностики.\n\nВХОДИТ В ТРАЕКТОРИИ\nПусконаладка TRASSIR OS на объекте до 32 камер\nшаг 3 из 11\nРазбор типовых отказов на пусконаладке\nшаг 2 из 6\nСкачать текст · HTML\nПечать\nВойдите, чтобы найти это снова\nМатериал попадёт в вашу историю, по ней работает поиск. Ничего кроме почты или телефона не потребуется\nВойти\nРядом по задаче\nКамера добавилась, но архив не пишется\nПроверка расписания записи, места на диске и прав службы.\nTRASSIR OS 4.3 · 19 августа · 5 мин\nСмена IP-адреса камеры без переподключения\nКак поменять адрес и сохранить архив и настройки устройства.\nTRASSIR OS 4.1 · 2 августа · 5 мин\nПроверка пропускной способности до объекта\nРасчёт канала под число камер и битрейт до выезда на объект.\nTRASSIR OS 4.1 · 17 июля · 8 мин\nО ПЛАТФОРМЕ\nКак устроено обучение\nСертификация партнёров\nКонтакты\nПРОДУКТЫ TRASSIR\nTRASSIR OS\nDuoStation\nЛинейка камер\nВидеоаналитика\nПОДДЕРЖКА\nБаза знаний\nЗапрос в поддержку\nСтатус сервисов\nDSSL · TRASSIR Learn — учебная платформа для партнёров",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/images/device-search.png",
+        "http://127.0.0.1:4322/prototypes/learn/logo-trassir-learn.svg"
+      ]
+    },
+    {
+      "label": "trajectory/proekt",
+      "url": "http://127.0.0.1:4322/prototypes/learn/trajectory/proekt?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nГотовлю проект\n/\nПрограммы\nПроектирование · программа подготовки\nПроектирование системы на 64+ камеры\n\nРассчитать нагрузку и защитить проект перед заказчиком\n\nОбъём программы\n1 ч 45 мин\n8 материалов + зачёт\nКак проверяется\n20 вопросов · нужно 16 верных\n30 минут · 2 попытки · повтор через 24 ч\nНа выходе\nПроектировщик систем TRASSIR\nИменной документ концепта\nНачать программу\nВход нужен для сохранения прогресса. Открытые материалы можно читать сейчас.\nСостав программы\nВсе 9 единиц\n01\nРасчёт числа камер и зон покрытия\nМатериал\n9 мин\n02\nВыбор сервера под 64+ камеры\nМатериал\n14 мин\n03\nРасчёт дисковой ёмкости под 64 камеры\nМатериал\n12 мин\n04\nРаспределение архива по дискам\nМатериал\n6 мин\n05\nНастройка глубины архива на DuoStation\nМатериал\n12 мин\n06\nПроверка пропускной способности до объекта\nМатериал\n8 мин\n07\nСхема лицензий TRASSIR под проект\nМатериал · для партнёров\n6 мин\n08\nСпецификация оборудования для тендера\nМатериал · для партнёров\n8 мин\n09\nЗачёт по траектории\nЗачёт\n30 мин\nЧто подтверждает результат\n\nСертификат подтверждает, что проектировщик рассчитывает состав системы на 64 и более камер: число камер и зоны покрытия, сервер, дисковую подсистему, канал и лицензии. Проверяется зачётом на 20 вопросов с порогом 16.\n\nСамостоятельный учебный концепт. Документ фиксирует прохождение в прототипе; официальная квалификация DSSL не присваивается.\n\nО ПЛАТФОРМЕ\nКак устроено обучение\nСертификация партнёров\nКонтакты\nПРОДУКТЫ TRASSIR\nTRASSIR OS\nDuoStation\nЛинейка камер\nВидеоаналитика\nПОДДЕРЖКА\nБаза знаний\nЗапрос в поддержку\nСтатус сервисов\nDSSL · TRASSIR Learn — учебная платформа для партнёров",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2"
+      ]
+    },
+    {
+      "label": "trajectory/proekt reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn/trajectory/proekt?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nГотовлю проект\n/\nПрограммы\nПроектирование · программа подготовки\nПроектирование системы на 64+ камеры\n\nРассчитать нагрузку и защитить проект перед заказчиком\n\nОбъём программы\n1 ч 45 мин\n8 материалов + зачёт\nКак проверяется\n20 вопросов · нужно 16 верных\n30 минут · 2 попытки · повтор через 24 ч\nНа выходе\nПроектировщик систем TRASSIR\nИменной документ концепта\nНачать программу\nВход нужен для сохранения прогресса. Открытые материалы можно читать сейчас.\nСостав программы\nВсе 9 единиц\n01\nРасчёт числа камер и зон покрытия\nМатериал\n9 мин\n02\nВыбор сервера под 64+ камеры\nМатериал\n14 мин\n03\nРасчёт дисковой ёмкости под 64 камеры\nМатериал\n12 мин\n04\nРаспределение архива по дискам\nМатериал\n6 мин\n05\nНастройка глубины архива на DuoStation\nМатериал\n12 мин\n06\nПроверка пропускной способности до объекта\nМатериал\n8 мин\n07\nСхема лицензий TRASSIR под проект\nМатериал · для партнёров\n6 мин\n08\nСпецификация оборудования для тендера\nМатериал · для партнёров\n8 мин\n09\nЗачёт по траектории\nЗачёт\n30 мин\nЧто подтверждает результат\n\nСертификат подтверждает, что проектировщик рассчитывает состав системы на 64 и более камер: число камер и зоны покрытия, сервер, дисковую подсистему, канал и лицензии. Проверяется зачётом на 20 вопросов с порогом 16.\n\nСамостоятельный учебный концепт. Документ фиксирует прохождение в прототипе; официальная квалификация DSSL не присваивается.\n\nО ПЛАТФОРМЕ\nКак устроено обучение\nСертификация партнёров\nКонтакты\nПРОДУКТЫ TRASSIR\nTRASSIR OS\nDuoStation\nЛинейка камер\nВидеоаналитика\nПОДДЕРЖКА\nБаза знаний\nЗапрос в поддержку\nСтатус сервисов\nDSSL · TRASSIR Learn — учебная платформа для партнёров",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/logo-trassir-learn.svg"
+      ]
+    },
+    {
+      "label": "player/proekt/0",
+      "url": "http://127.0.0.1:4322/prototypes/learn/player/proekt/0?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nПроектирование системы на 64+ камеры\nПозиция\n1 / 9\nВыйти из программы\nСостав программы\n\nЧтение пополняет освоение. Для допуска нажмите «Завершить и далее». Позиция не означает завершение.\n\n01\nРасчёт числа камер и зон покрытия\nМатериал · 9 мин\nТекущая единица\n02\nВыбор сервера под 64+ камеры\nМатериал · 14 мин\n03\nРасчёт дисковой ёмкости под 64 камеры\nМатериал · 12 мин\n04\nРаспределение архива по дискам\nМатериал · 6 мин\n05\nНастройка глубины архива на DuoStation\nМатериал · 12 мин\n06\nПроверка пропускной способности до объекта\nМатериал · 8 мин\n07\nСхема лицензий TRASSIR под проект\nМатериал · 6 мин\nДля партнёров\n08\nСпецификация оборудования для тендера\nМатериал · 8 мин\nДля партнёров\n09\nЗачёт по траектории\nЗачёт · 30 мин\nОборудование\n·\nобновлено 15 августа 2026\n·\n9 минут\nРасчёт числа камер и зон покрытия\n\nОт задачи заказчика к числу камер: расстановка по зонам, а не по стенам\n\nНачинайте с задачи, а не с плана\n\nЧисло камер выводится из того, что заказчик хочет различать: лицо, номер, факт события. Каждая из трёх задач даёт свою плотность пикселей на метр и своё число камер на ту же площадь.\n\nТри плотности\nОбнаружение события — от 25 пикселей на метр\nРаспознавание человека — от 125\nИдентификация лица — от 250\nДля допуска подтвердите завершение кнопкой ниже. Одного открытия материала недостаточно.\nНазад\nДалее · Выбор сервера под 64+ камеры\nВойти для сохранения",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2"
+      ]
+    },
+    {
+      "label": "player/proekt/0 reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn/player/proekt/0?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nПроектирование системы на 64+ камеры\nПозиция\n1 / 9\nВыйти из программы\nСостав программы\n\nЧтение пополняет освоение. Для допуска нажмите «Завершить и далее». Позиция не означает завершение.\n\n01\nРасчёт числа камер и зон покрытия\nМатериал · 9 мин\nТекущая единица\n02\nВыбор сервера под 64+ камеры\nМатериал · 14 мин\n03\nРасчёт дисковой ёмкости под 64 камеры\nМатериал · 12 мин\n04\nРаспределение архива по дискам\nМатериал · 6 мин\n05\nНастройка глубины архива на DuoStation\nМатериал · 12 мин\n06\nПроверка пропускной способности до объекта\nМатериал · 8 мин\n07\nСхема лицензий TRASSIR под проект\nМатериал · 6 мин\nДля партнёров\n08\nСпецификация оборудования для тендера\nМатериал · 8 мин\nДля партнёров\n09\nЗачёт по траектории\nЗачёт · 30 мин\nОборудование\n·\nобновлено 15 августа 2026\n·\n9 минут\nРасчёт числа камер и зон покрытия\n\nОт задачи заказчика к числу камер: расстановка по зонам, а не по стенам\n\nНачинайте с задачи, а не с плана\n\nЧисло камер выводится из того, что заказчик хочет различать: лицо, номер, факт события. Каждая из трёх задач даёт свою плотность пикселей на метр и своё число камер на ту же площадь.\n\nТри плотности\nОбнаружение события — от 25 пикселей на метр\nРаспознавание человека — от 125\nИдентификация лица — от 250\nДля допуска подтвердите завершение кнопкой ниже. Одного открытия материала недостаточно.\nНазад\nДалее · Выбор сервера под 64+ камеры\nВойти для сохранения",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+        "http://127.0.0.1:4322/prototypes/learn/logo-trassir-learn.svg"
+      ]
+    },
+    {
+      "label": "landing query locale",
+      "url": "http://127.0.0.1:4322/prototypes/learn-landing/?lang=ru",
+      "lang": "ru",
+      "text": "Перейти к содержимому\nОткрыть платформу\n↗\nПРАКТИЧЕСКИЕ ЗНАНИЯ / TRASSIR\nЗнать, как.\nУметь сделать.\n\nОт подключения камеры до сдачи объекта.\nОбучение для инженеров, которым важно разобраться и применить.\n\nОткрыть материал\n↗\nИзучить программу\n↓\n\nЦеликом. Без регистрации.\n\nОТКРЫТЫЙ МАТЕРИАЛ\n01 / 03\nПусконаладка TRASSIR OS\n10 материалов + зачёт\nСправочник\n7 мин\n\nПОДКЛЮЧЕНИЕ КАМЕР · ONVIF\n\nКамера не появилась\nв TRASSIR?\n01\nДоступность камеры\n↗\n02\nНастройки ONVIF\n↗\n03\nРучное подключение\n↗\n04\nИзображение и запись\n↗\nЧитать материал\n↗\n03\nЧасть большой картины\nЭтот ответ — шаг вашей программы\n↗\nСНАЧАЛА ПОНЯТЬ. ПОТОМ ПРИМЕНИТЬ.\n↓\nДЛЯ ИНЖЕНЕРОВ И ТЕХНИЧЕСКИХ СПЕЦИАЛИСТОВ\nОт рабочего вопроса — к системным знаниям ↓\n01 / ВАШ МАРШРУТ\nВся работа.\nПо шагам.\n\nОт подготовки сервера до передачи объекта.\nВы знаете объём ещё до старта.\n\nTRASSIR OS · пример программы\nПусконаладка\nобъекта до 32 камер\n\nДля инженеров, которые знакомы с IP-сетями и начинают работать с TRASSIR.\n\n2 ч 15 мин\nчтение и проверка\n10 + 1\nматериалов и зачёт\n\nОриентировочно 115 минут на материалы и около 20 минут на зачёт. Практика на оборудовании — в вашем темпе.\n\nПосмотреть всю программу\n↗\n01\nПодготовка сервера и сети\n15 мин\n+\n02\nДобавление IP-камеры\n11 мин\n+\n03\nКамера не видна по ONVIF\nОткрытый пример\n7 мин\n+\n04\nНастройка глубины архива\n12 мин\n+\n05\nПрава доступа операторов\n10 мин\n+\nЕщё 5 материалов и зачёт\nВся программа ↗\nСостав и открытые материалы доступны без входа\n02 / ЗНАНИЯ В КОНТЕКСТЕ\nОдин ответ.\nБольше возможностей.\n\nРешите задачу сейчас.\nВернитесь за целой системой знаний.\n\n01\nНайти ответ\n02\nУвидеть связь\n03\nПрименить знания\nПо рабочей задаче\nКамера не видна.\nСледующий шаг — виден.\n\nОткройте материал с конкретным порядком действий. Прочитайте целиком и возвращайтесь к работе.\n\nПосмотреть ответ\n↗\nONVIF / ПОРЯДОК ПРОВЕРКИ\nНачните с подключения\n\nПроверьте доступность камеры с сервера. Затем сверьте порт и учётную запись ONVIF.\n\nСНАЧАЛА\nСеть и доступ\n→\nЗАТЕМ\nONVIF и поток\n4 шага · от сети до изображения\n\nОдин материал. Два способа учиться.\n\nПольза остаётся с вами.\n03 / ПОНЯТНЫЙ РЕЗУЛЬТАТ\nЗнания, которые\nможно подтвердить.\n\nПодготовка сервера, подключение камер, настройка архива и доступов — программа заканчивается проверкой этих тем.\n\n20\nвопросов\n80%\nпорог прохождения\nПосмотреть образец сертификата\n↗\n\nТак устроена сертификация в концепте. Официальные условия определяет партнёрская программа DSSL.\n\nОБРАЗЕЦ\nСЕРТИФИКАТ О ПРОХОЖДЕНИИ\nОт знаний —\nк практике.\nИмя участника\n\nПусконаладка TRASSIR OS\nна объекте до 32 камер\n\n10 материалов\nИтоговая проверка\n↗\nДизайн-концепт\nНе является документом\n04 / ПРОСТО НАЧАТЬ\nСначала —\nинтересный вам ответ.\n\nНикаких форм перед первым материалом.\n\nДЛЯ РУКОВОДИТЕЛЯ\nДайте команде\nпонятную точку старта.\n\nОтправьте программу сотруднику. Темы, объём и результат он увидит до начала обучения.\n\nСкопировать ссылку на программу\n↗\nЧто доступно без регистрации?\n+\n\nТри полных учебных примера, поиск по ним, состав программы и образец сертификата. Начните с любой интересующей темы.\n\nОткрыть материалы\n↗\nЧто даёт аккаунт?\n+\nКак получить сертификат?\n+\nПодойдёт ли программа новичку?\n+\nСЛЕДУЮЩИЙ ШАГ — ВАШ\nХорошая работа\nначинается с понимания.\n\nНачните с одного ответа.\nПродолжите, когда понадобится больше.\n\nОткрыть первый материал\n↗\nНаверх ↑\nНезависимый дизайн-концепт · 2026\nНе официальный сервис DSSL / TRASSIR\nОткрытые материалы",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-regular.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-medium.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/index-DrVevFI2.css",
+        "http://127.0.0.1:4322/prototypes/learn-landing/brand/trassir-learn.svg",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/motion-CiLNXSEs.js",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/jetbrains-mono-regular.woff2"
+      ]
+    },
+    {
+      "label": "landing reload",
+      "url": "http://127.0.0.1:4322/prototypes/learn-landing/?lang=ru",
+      "lang": "ru",
+      "text": "Перейти к содержимому\nОткрыть платформу\n↗\nПРАКТИЧЕСКИЕ ЗНАНИЯ / TRASSIR\nЗнать, как.\nУметь сделать.\n\nОт подключения камеры до сдачи объекта.\nОбучение для инженеров, которым важно разобраться и применить.\n\nОткрыть материал\n↗\nИзучить программу\n↓\n\nЦеликом. Без регистрации.\n\nОТКРЫТЫЙ МАТЕРИАЛ\n01 / 03\nПусконаладка TRASSIR OS\n10 материалов + зачёт\nСправочник\n7 мин\n\nПОДКЛЮЧЕНИЕ КАМЕР · ONVIF\n\nКамера не появилась\nв TRASSIR?\n01\nДоступность камеры\n↗\n02\nНастройки ONVIF\n↗\n03\nРучное подключение\n↗\n04\nИзображение и запись\n↗\nЧитать материал\n↗\n03\nЧасть большой картины\nЭтот ответ — шаг вашей программы\n↗\nСНАЧАЛА ПОНЯТЬ. ПОТОМ ПРИМЕНИТЬ.\n↓\nДЛЯ ИНЖЕНЕРОВ И ТЕХНИЧЕСКИХ СПЕЦИАЛИСТОВ\nОт рабочего вопроса — к системным знаниям ↓\n01 / ВАШ МАРШРУТ\nВся работа.\nПо шагам.\n\nОт подготовки сервера до передачи объекта.\nВы знаете объём ещё до старта.\n\nTRASSIR OS · пример программы\nПусконаладка\nобъекта до 32 камер\n\nДля инженеров, которые знакомы с IP-сетями и начинают работать с TRASSIR.\n\n2 ч 15 мин\nчтение и проверка\n10 + 1\nматериалов и зачёт\n\nОриентировочно 115 минут на материалы и около 20 минут на зачёт. Практика на оборудовании — в вашем темпе.\n\nПосмотреть всю программу\n↗\n01\nПодготовка сервера и сети\n15 мин\n+\n02\nДобавление IP-камеры\n11 мин\n+\n03\nКамера не видна по ONVIF\nОткрытый пример\n7 мин\n+\n04\nНастройка глубины архива\n12 мин\n+\n05\nПрава доступа операторов\n10 мин\n+\nЕщё 5 материалов и зачёт\nВся программа ↗\nСостав и открытые материалы доступны без входа\n02 / ЗНАНИЯ В КОНТЕКСТЕ\nОдин ответ.\nБольше возможностей.\n\nРешите задачу сейчас.\nВернитесь за целой системой знаний.\n\n01\nНайти ответ\n02\nУвидеть связь\n03\nПрименить знания\nПо рабочей задаче\nКамера не видна.\nСледующий шаг — виден.\n\nОткройте материал с конкретным порядком действий. Прочитайте целиком и возвращайтесь к работе.\n\nПосмотреть ответ\n↗\nONVIF / ПОРЯДОК ПРОВЕРКИ\nНачните с подключения\n\nПроверьте доступность камеры с сервера. Затем сверьте порт и учётную запись ONVIF.\n\nСНАЧАЛА\nСеть и доступ\n→\nЗАТЕМ\nONVIF и поток\n4 шага · от сети до изображения\n\nОдин материал. Два способа учиться.\n\nПольза остаётся с вами.\n03 / ПОНЯТНЫЙ РЕЗУЛЬТАТ\nЗнания, которые\nможно подтвердить.\n\nПодготовка сервера, подключение камер, настройка архива и доступов — программа заканчивается проверкой этих тем.\n\n20\nвопросов\n80%\nпорог прохождения\nПосмотреть образец сертификата\n↗\n\nТак устроена сертификация в концепте. Официальные условия определяет партнёрская программа DSSL.\n\nОБРАЗЕЦ\nСЕРТИФИКАТ О ПРОХОЖДЕНИИ\nОт знаний —\nк практике.\nИмя участника\n\nПусконаладка TRASSIR OS\nна объекте до 32 камер\n\n10 материалов\nИтоговая проверка\n↗\nДизайн-концепт\nНе является документом\n04 / ПРОСТО НАЧАТЬ\nСначала —\nинтересный вам ответ.\n\nНикаких форм перед первым материалом.\n\nДЛЯ РУКОВОДИТЕЛЯ\nДайте команде\nпонятную точку старта.\n\nОтправьте программу сотруднику. Темы, объём и результат он увидит до начала обучения.\n\nСкопировать ссылку на программу\n↗\nЧто доступно без регистрации?\n+\n\nТри полных учебных примера, поиск по ним, состав программы и образец сертификата. Начните с любой интересующей темы.\n\nОткрыть материалы\n↗\nЧто даёт аккаунт?\n+\nКак получить сертификат?\n+\nПодойдёт ли программа новичку?\n+\nСЛЕДУЮЩИЙ ШАГ — ВАШ\nХорошая работа\nначинается с понимания.\n\nНачните с одного ответа.\nПродолжите, когда понадобится больше.\n\nОткрыть первый материал\n↗\nНаверх ↑\nНезависимый дизайн-концепт · 2026\nНе официальный сервис DSSL / TRASSIR\nОткрытые материалы",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-regular.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-medium.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/index-DrVevFI2.css",
+        "http://127.0.0.1:4322/prototypes/learn-landing/brand/trassir-learn.svg",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/motion-CiLNXSEs.js",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/jetbrains-mono-regular.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/favicon.svg"
+      ]
+    },
+    {
+      "label": "landing to product click",
+      "url": "http://127.0.0.1:4322/prototypes/learn/home?lang=ru",
+      "lang": "ru",
+      "text": "Войти\nРабочий атлас · Я сейчас\nНастраиваю объект\nВсе 14 материалов задачи\n2 программы подготовки\nС чего начать\n\nОдна подборка: 6 материалов. По порядку — вся задача; по симптому — конкретный ответ.\n\nПо порядку\n· 6\nПо симптому\n· 6\n01\nПроверка питания и линка камеры\nОборудование · 3 сентября · 5 мин\n02\nTRASSIR не видит камеру по ONVIF: порядок проверки\nTRASSIR OS 4.3 · 12 августа · 7 мин\n03\nДобавление IP-камеры вручную\nTRASSIR OS 4.2 · 28 июля · 11 мин\n04\nНастройка глубины архива на DuoStation\nTRASSIR OS 4.3 · 12 августа · 12 мин\n05\nРаспределение архива по дискам\nTRASSIR OS 4.3 · 21 августа · 6 мин\n06\nПрава доступа операторов\nTRASSIR OS 4.3 · 28 июля · 10 мин\nПодготовиться системно\n\nПолный состав и условия — до начала программы.\n\nПусконаладка TRASSIR OS на объекте до 32 камер\nСможете развернуть и сдать объект самостоятельно\n11 единиц · 2 ч 11 мин · документ концепта\nРазбор типовых отказов на пусконаладке\nРазберёте порядок проверки типовых отказов на объекте\n6 единиц · 54 мин · документ концепта\nО ПЛАТФОРМЕ\nКак устроено обучение\nСертификация партнёров\nКонтакты\nПРОДУКТЫ TRASSIR\nTRASSIR OS\nDuoStation\nЛинейка камер\nВидеоаналитика\nПОДДЕРЖКА\nБаза знаний\nЗапрос в поддержку\nСтатус сервисов\nDSSL · TRASSIR Learn — учебная платформа для партнёров",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-TZGS3bws.js",
+        "http://127.0.0.1:4322/prototypes/learn/assets/index-BohHRyoA.css",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+        "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2",
+        "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+        "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2"
+      ]
+    },
+    {
+      "label": "landing EN without JavaScript",
+      "url": "http://127.0.0.1:4322/prototypes/learn-landing/en/",
+      "lang": "en",
+      "text": "Skip to content\nProgram\nHow it works\nOutcome\nOpen the platform\n↗\nPRACTICAL KNOWLEDGE / TRASSIR\nKnow how.\nMake it work.\n\nFrom camera connection to site handover.\nLearning for engineers who want to\nunderstand and put it into practice.\n\nOpen the guide\n↗\nExplore the program\n↓\n\nThe complete guide. No sign-up.\n\nOPEN GUIDE\n01 / 03\nTRASSIR OS commissioning\n10 guides + assessment\nReference library\n7 min\n\nCAMERA CONNECTION · ONVIF\n\nCamera missing\nin TRASSIR?\n01\nCamera connectivity\n↗\n02\nONVIF settings\n↗\n03\nManual connection\n↗\n04\nVideo and recording\n↗\nRead the guide\n↗\n03\nPart of the bigger picture\nThis answer is a step in your program\n↗\nUNDERSTAND FIRST. THEN PUT IT TO WORK.\n↓\nFOR ENGINEERS AND TECHNICAL SPECIALISTS\nFrom a work question to a solid foundation ↓\n01 / YOUR LEARNING PATH\nThe whole job.\nStep by step.\n\nFrom server setup to site handover.\nKnow what is involved before you begin.\n\nTRASSIR OS · sample program\nCommissioning\na site with up to 32 cameras\n\nFor engineers familiar with IP networks who are getting started with TRASSIR.\n\n2 h 15 min\nreading and assessment\n10 + 1\nguides and assessment\n\nApproximately 115 minutes of reading and around 20 minutes for the assessment. Hands-on practice is at your own pace.\n\nView the full program\n↗\n01\nServer and network preparation\n15 min\n+\n02\nAdding an IP camera\n11 min\n+\n03\nCamera not found via ONVIF\nOpen sample\n7 min\n+\n04\nSetting video retention\n12 min\n+\n05\nOperator access permissions\n10 min\n+\n5 more guides and an assessment\nFull program ↗\nView the curriculum and open guides without signing in\n02 / KNOWLEDGE IN CONTEXT\nOne answer.\nMore possibilities.\n\nSolve the task at hand.\nCome back to build a complete picture.\n\n01\nFind an answer\n02\nConnect the dots\n03\nApply what you know\nFor a task at work\nCamera out of sight.\nNext step in sight.\n\nOpen a guide with a clear sequence of actions. Read it in full and get back to work.\n\nSee the answer\n↗\nONVIF / CHECK SEQUENCE\nStart with the connection\n\nCheck that the server can reach the camera. Then check the ONVIF port and account.\n\nFIRST\nNetwork and access\n→\nTHEN\nONVIF and stream\n4 steps · from network to video\nFollowing a program\nFrom one answer\nto the full picture.\n\nConnecting a camera involves the network, video storage and access permissions. The program puts these topics in a clear sequence.\n\nOpen the program\n↗\nCOMMISSIONING / PROGRAM EXCERPT\n02\nAdding an IP camera\n11 min\n03\nCamera not found via ONVIF\n7 min\n04\nSetting video retention\n12 min\n05\nOperator access permissions\n10 min\nOn site\nKnow the process.\nCheck the result.\n\nAfter setup, check the video, recording and operator access. Every step has a clear outcome.\n\nHow knowledge is assessed\n↗\nBEFORE SITE HANDOVER\nEverything in place.\n✓\nVideo is available\n✓\nRecording is working\n✓\nOperator permissions checked\nSample checklist\n\nOne guide. Two ways to learn.\n\nUseful long after you read it.\n03 / A CLEAR OUTCOME\nKnowledge you\ncan demonstrate.\n\nServer setup, camera connection, storage and access permissions: the program ends with an assessment of these topics.\n\n20\nquestions\n80%\npass mark\nView a sample certificate\n↗\n\nThis is the certification model in the concept. Official terms are set by the DSSL partner program.\n\nSAMPLE\nCERTIFICATE OF COMPLETION\nFrom knowledge\nto practice.\nParticipant name\n\nTRASSIR OS commissioning\nfor a site with up to 32 cameras\n\n10 guides\nFinal assessment\n↗\nDesign concept\nNot an official document\n04 / EASY TO GET STARTED\nStart with\nthe answer you need.\n\nNo forms before your first guide.\n\nFOR TEAM LEADERS\nGive your team\na clear starting point.\n\nShare the program with a colleague. They can see the topics, time commitment and outcome before they begin.\n\nCopy the program link\n↗\nWhat is available without signing up?\n+\n\nThree complete sample guides, search, the program curriculum and a sample certificate. Start with any topic you need.\n\nBrowse the guides\n↗\nWhat does an account offer?\n+\nHow do I get a certificate?\n+\nIs the program suitable for beginners?\n+\nTHE NEXT STEP IS YOURS\nGood work starts\nwith understanding.\n\nStart with one answer.\nGo further when you need more.\n\nOpen your first guide\n↗\n\nKnowledge stays with you.\n\nBack to top ↑\nIndependent design concept · 2026\nNot an official DSSL / TRASSIR service\nOpen guides",
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "resources": [
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-regular.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/index-DrVevFI2.css",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-medium.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/brand/trassir-learn.svg",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/motion-CiLNXSEs.js",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/jetbrains-mono-regular.woff2"
+      ]
+    },
+    {
+      "label": "landing EN without JavaScript",
+      "url": "http://127.0.0.1:4322/prototypes/learn-landing/en/",
+      "lang": "en",
+      "text": "Skip to content\nOpen the platform\n↗\nPRACTICAL KNOWLEDGE / TRASSIR\nKnow how.\nMake it work.\n\nFrom camera connection to site handover.\nLearning for engineers who want to understand and put it into practice.\n\nOpen the guide\n↗\nExplore the program\n↓\n\nThe complete guide. No sign-up.\n\nOPEN GUIDE\n01 / 03\nTRASSIR OS commissioning\n10 guides + assessment\nReference library\n7 min\n\nCAMERA CONNECTION · ONVIF\n\nCamera missing\nin TRASSIR?\n01\nCamera connectivity\n↗\n02\nONVIF settings\n↗\n03\nManual connection\n↗\n04\nVideo and recording\n↗\nRead the guide\n↗\n03\nPart of the bigger picture\nThis answer is a step in your program\n↗\nUNDERSTAND FIRST. THEN PUT IT TO WORK.\n↓\nFOR ENGINEERS AND TECHNICAL SPECIALISTS\nFrom a work question to a solid foundation ↓\n01 / YOUR LEARNING PATH\nThe whole job.\nStep by step.\n\nFrom server setup to site handover.\nKnow what is involved before you begin.\n\nTRASSIR OS · sample program\nCommissioning\na site with up to 32 cameras\n\nFor engineers familiar with IP networks who are getting started with TRASSIR.\n\n2 h 15 min\nreading and assessment\n10 + 1\nguides and assessment\n\nApproximately 115 minutes of reading and around 20 minutes for the assessment. Hands-on practice is at your own pace.\n\nView the full program\n↗\n01\nServer and network preparation\n15 min\n+\n02\nAdding an IP camera\n11 min\n+\n03\nCamera not found via ONVIF\nOpen sample\n7 min\n+\n04\nSetting video retention\n12 min\n+\n05\nOperator access permissions\n10 min\n+\n5 more guides and an assessment\nFull program ↗\nView the curriculum and open guides without signing in\n02 / KNOWLEDGE IN CONTEXT\nOne answer.\nMore possibilities.\n\nSolve the task at hand.\nCome back to build a complete picture.\n\n01\nFind an answer\n02\nConnect the dots\n03\nApply what you know\nFor a task at work\nCamera out of sight.\nNext step in sight.\n\nOpen a guide with a clear sequence of actions. Read it in full and get back to work.\n\nSee the answer\n↗\nONVIF / CHECK SEQUENCE\nStart with the connection\n\nCheck that the server can reach the camera. Then check the ONVIF port and account.\n\nFIRST\nNetwork and access\n→\nTHEN\nONVIF and stream\n4 steps · from network to video\nFollowing a program\nFrom one answer\nto the full picture.\n\nConnecting a camera involves the network, video storage and access permissions. The program puts these topics in a clear sequence.\n\nOpen the program\n↗\nCOMMISSIONING / PROGRAM EXCERPT\n02\nAdding an IP camera\n11 min\n03\nCamera not found via ONVIF\n7 min\n04\nSetting video retention\n12 min\n05\nOperator access permissions\n10 min\nOn site\nKnow the process.\nCheck the result.\n\nAfter setup, check the video, recording and operator access. Every step has a clear outcome.\n\nHow knowledge is assessed\n↗\nBEFORE SITE HANDOVER\nEverything in place.\n✓\nVideo is available\n✓\nRecording is working\n✓\nOperator permissions checked\nSample checklist\n\nOne guide. Two ways to learn.\n\nUseful long after you read it.\n03 / A CLEAR OUTCOME\nKnowledge you\ncan demonstrate.\n\nServer setup, camera connection, storage and access permissions: the program ends with an assessment of these topics.\n\n20\nquestions\n80%\npass mark\nView a sample certificate\n↗\n\nThis is the certification model in the concept. Official terms are set by the DSSL partner program.\n\nSAMPLE\nCERTIFICATE OF COMPLETION\nFrom knowledge\nto practice.\nParticipant name\n\nTRASSIR OS commissioning\nfor a site with up to 32 cameras\n\n10 guides\nFinal assessment\n↗\nDesign concept\nNot an official document\n04 / EASY TO GET STARTED\nStart with\nthe answer you need.\n\nNo forms before your first guide.\n\nFOR TEAM LEADERS\nGive your team\na clear starting point.\n\nShare the program with a colleague. They can see the topics, time commitment and outcome before they begin.\n\nCopy the program link\n↗\nWhat is available without signing up?\n+\n\nThree complete sample guides, search, the program curriculum and a sample certificate. Start with any topic you need.\n\nBrowse the guides\n↗\nWhat does an account offer?\n+\nHow do I get a certificate?\n+\nIs the program suitable for beginners?\n+\nTHE NEXT STEP IS YOURS\nGood work starts\nwith understanding.\n\nStart with one answer.\nGo further when you need more.\n\nOpen your first guide\n↗\nBack to top ↑\nIndependent design concept · 2026\nNot an official DSSL / TRASSIR service\nOpen guides",
+      "width": 375,
+      "scroll": 375,
+      "brokenImages": [],
+      "resources": [
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-regular.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/golos-text-medium.woff2",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/index-DrVevFI2.css",
+        "http://127.0.0.1:4322/prototypes/learn-landing/brand/trassir-learn.svg",
+        "http://127.0.0.1:4322/prototypes/learn-landing/assets/motion-CiLNXSEs.js",
+        "http://127.0.0.1:4322/prototypes/learn-landing/fonts/jetbrains-mono-regular.woff2"
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,17 @@
+
+> learn-ds@0.1.0 test:pilot
+> esbuild src/data/index.ts --bundle --platform=node --format=cjs --outfile=node_modules/.cache/pilot-data.cjs --loader:.css=empty --log-level=error && node scripts/pilot-model-test.mjs
+
+{
+  "passed": 8,
+  "checks": [
+    "Visit and completion use different fields; exam cannot be completed by player",
+    "Restricted previews do not record reading or permit completion",
+    "Start consumes once; reload preserves id, questions, rules, answer, index, deadline",
+    "Frozen error payload is immutable; idempotent retry creates one record and one document",
+    "Two programs keep separate result/document ownership, in both orders",
+    "Threshold, all skipped, mixed answers, expiry, cooldown, exhausted and abandoned",
+    "Legacy draft migration preserves existing answers and deadline",
+    "History undo restores exact timestamp without duplicate; unsafe return is rejected"
+  ]
+}

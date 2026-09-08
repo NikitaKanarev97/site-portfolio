@@ -1,0 +1,137 @@
+{
+  "checkedAt": "2026-09-08T21:01:36.988Z",
+  "reports": [
+    {
+      "name": "source-live",
+      "status": "checked",
+      "title": "TRASSIR Learn · портфолио-версия",
+      "url": "http://127.0.0.1:5174/practice?trajectoryId=proekt&lang=ru",
+      "states": [
+        {
+          "state": "correct",
+          "text": "Глубина уменьшится примерно до 20 суток",
+          "background": "rgb(220, 245, 227)",
+          "border": "rgb(20, 107, 54)"
+        },
+        {
+          "state": "incorrect",
+          "text": "Глубина не изменится — TRASSIR перераспределит битрейт",
+          "background": "rgb(253, 224, 224)",
+          "border": "rgb(206, 34, 34)"
+        },
+        {
+          "state": "disabled",
+          "text": "Запись новых камер не начнётся, пока не увеличить диск",
+          "background": "rgb(228, 235, 243)",
+          "border": "rgb(228, 235, 243)"
+        },
+        {
+          "state": "disabled",
+          "text": "Глубина уменьшится примерно до 10 суток",
+          "background": "rgb(228, 235, 243)",
+          "border": "rgb(228, 235, 243)"
+        },
+        {
+          "state": "error",
+          "text": "Ваш ответГлубина не изменится — TRASSIR перераспределит битрейт. Этот вариант не соответствует ответу в источнике. Ниже — общее объяснение.",
+          "background": "rgb(253, 224, 224)",
+          "border": "rgb(23, 44, 75)"
+        },
+        {
+          "state": "success",
+          "text": "Правильный ответ24 камеры вместо 16 — это в полтора раза больший поток. При том же объёме диска глубина падает примерно до 20 суток",
+          "background": "rgb(220, 245, 227)",
+          "border": "rgb(23, 44, 75)"
+        }
+      ]
+    },
+    {
+      "name": "portfolio-export",
+      "status": "checked",
+      "title": "TRASSIR Learn · портфолио-версия",
+      "url": "http://127.0.0.1:4322/prototypes/learn/practice?trajectoryId=proekt&lang=ru",
+      "states": [
+        {
+          "state": "correct",
+          "text": "Глубина уменьшится примерно до 20 суток",
+          "background": "rgb(220, 245, 227)",
+          "border": "rgb(20, 107, 54)"
+        },
+        {
+          "state": "incorrect",
+          "text": "Глубина не изменится — TRASSIR перераспределит битрейт",
+          "background": "rgb(253, 224, 224)",
+          "border": "rgb(206, 34, 34)"
+        },
+        {
+          "state": "disabled",
+          "text": "Запись новых камер не начнётся, пока не увеличить диск",
+          "background": "rgb(228, 235, 243)",
+          "border": "rgb(228, 235, 243)"
+        },
+        {
+          "state": "disabled",
+          "text": "Глубина уменьшится примерно до 10 суток",
+          "background": "rgb(228, 235, 243)",
+          "border": "rgb(228, 235, 243)"
+        },
+        {
+          "state": "error",
+          "text": "Ваш ответГлубина не изменится — TRASSIR перераспределит битрейт. Этот вариант не соответствует ответу в источнике. Ниже — общее объяснение.",
+          "background": "rgb(253, 224, 224)",
+          "border": "rgb(23, 44, 75)"
+        },
+        {
+          "state": "success",
+          "text": "Правильный ответ24 камеры вместо 16 — это в полтора раза больший поток. При том же объёме диска глубина падает примерно до 20 суток",
+          "background": "rgb(220, 245, 227)",
+          "border": "rgb(23, 44, 75)"
+        }
+      ]
+    },
+    {
+      "name": "deployed",
+      "status": "checked",
+      "title": "TRASSIR Learn — учебный концепт",
+      "url": "https://learn-pi-bice.vercel.app/practice?trajectoryId=proekt",
+      "states": [
+        {
+          "state": "correct",
+          "text": "Глубина уменьшится примерно до 20 суток",
+          "background": "rgb(220, 245, 227)",
+          "border": "rgb(20, 107, 54)"
+        },
+        {
+          "state": "incorrect",
+          "text": "Глубина не изменится — TRASSIR перераспределит битрейт",
+          "background": "rgb(253, 224, 224)",
+          "border": "rgb(206, 34, 34)"
+        },
+        {
+          "state": "disabled",
+          "text": "Запись новых камер не начнётся, пока не увеличить диск",
+          "background": "rgb(228, 235, 243)",
+          "border": "rgb(228, 235, 243)"
+        },
+        {
+          "state": "disabled",
+          "text": "Глубина уменьшится примерно до 10 суток",
+          "background": "rgb(228, 235, 243)",
+          "border": "rgb(228, 235, 243)"
+        },
+        {
+          "state": "error",
+          "text": "Ваш ответГлубина не изменится — TRASSIR перераспределит битрейт. Этот вариант не соответствует ответу в источнике. Ниже — общее объяснение.",
+          "background": "rgb(253, 224, 224)",
+          "border": "rgb(23, 44, 75)"
+        },
+        {
+          "state": "success",
+          "text": "Правильный ответ24 камеры вместо 16 — это в полтора раза больший поток. При том же объёме диска глубина падает примерно до 20 суток",
+          "background": "rgb(220, 245, 227)",
+          "border": "rgb(23, 44, 75)"
+        }
+      ]
+    }
+  ]
+}

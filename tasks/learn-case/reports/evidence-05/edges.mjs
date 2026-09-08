@@ -1,0 +1,31 @@
+import {fixture,check,ab,ev,dir,locale,width,pick,click,state,open,assert,shot} from './browser.mjs'
+import {writeFileSync} from 'node:fs'
+try {
+  const formats=ev(`(async()=>{const f=await import('/src/data/format.ts');const t=await import('/src/data/trajectories.ts');const {tr}=await import('/src/i18n/index.ts');return {day:f.formatDayYear('2026-09-07T12:00:00Z'),duration:t.humanDuration(131),timer:f.formatTimer(65000),plurals:[0,1,2,5,11,21].map(n=>[n,t.plural(n,tr('единица'),tr('единицы'),tr('единиц'))])}})()`)
+  assert(formats.day===pick('7 September 2026','7 сентября 2026') && formats.timer==='01:05','Date/time formatting')
+  assert(JSON.stringify(formats.plurals.map(p=>p[1]))===JSON.stringify(pick(['units','unit','units','units','units','units'],['единиц','единица','единицы','единиц','единиц','единица'])),'Plural rules')
+  writeFileSync(`${dir}${locale}-${width}-formats.json`,JSON.stringify(formats,null,2))
+  fixture('marina-one','/my',s=>{s.history=s.history.slice(0,1);return s})
+  const single=check('one resource reading count')
+  assert(single.text.includes(pick('1\nresource read','1\nматериал прочитан')),'Singular reading count')
+  const failed=fixture('marina-failed','/home')
+  const fail=failed.attempts.proekt.at(-1)
+  open(`/assessment/result?attemptId=${fail.id}`)
+  check('saved failed attempt result')
+  assert(!state().attempts.proekt.at(-1).passed && state().certificates.length===0,'Failure issued document')
+  shot('failed')
+  const frozen=fixture('marina-frozen','/home')
+  open(`/assessment?attemptId=${frozen.activeExam.id}`)
+  check('saved RU frozen attempt')
+  const restored=state().activeExam
+  assert(JSON.stringify(restored.answers)===JSON.stringify(frozen.activeExam.answers) && restored.questions.every((q,i)=>q.correct===frozen.activeExam.questions[i].correct),'Saved answer key changed')
+  ab('reload')
+  check('frozen attempt reload')
+  click('button',pick('Try submitting again','Отправить ещё раз'))
+  ab('wait','800')
+  check('retry produces same attempt result')
+  const submitted=state()
+  assert(submitted.attempts.proekt.at(-1).id===frozen.activeExam.id && submitted.certificates.length===1,'Retry duplicated attempt/document')
+  ab('reload')
+  assert(state().certificates.length===1,'Reload duplicated certificate')
+} finally {ab('close')}

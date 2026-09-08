@@ -10,6 +10,7 @@ import { agentOpsConsoleRu } from './cases/agent-ops-console.ts';
 import { partnerPortalRu } from './cases/partner-portal.ts';
 import { vetClinicRu } from './cases/vet-clinic.ts';
 import { pawlyRu } from './cases/pawly.ts';
+import { learnRu } from './cases/learn.ts';
 
 /** Русская редакция главной. Факты, URL и порядок совпадают с EN. */
 export const homeRu = {
@@ -77,7 +78,23 @@ export const homeRu = {
           'Партнёрский B2B-портал: проверка спецификации с сорока восемью импортированными позициями и статусами их обработки; позади — ещё два экрана портала',
       },
       {
-        ...home.featured.items[2],
+        href: '/ru/work/learn',
+        title: learnRu.header.title,
+        outcome:
+          'Найти технический ответ или пройти программу — чтение и завершение обучения считаются отдельно.',
+        meta: [
+          { term: 'Продукт', value: 'Редизайн B2B-платформы обучения' },
+          { term: 'Переосмысление', value: '2026' },
+          { term: 'Роль', value: 'Продуктовый дизайнер' },
+          { term: 'Платформа', value: 'Адаптивный веб · сервис и лендинг · EN / RU' },
+          { term: 'Проект', value: 'Рабочий кейс переосмыслен · нынешний прототип' },
+        ],
+        cta: 'Читать кейс',
+        cover: learnRu.cover.screens,
+        coverAlt: learnRu.cover.alt,
+      },
+      {
+        ...home.featured.items[3],
         href: '/ru/work/vet-clinic',
         title: vetClinicRu.header.title,
         outcome:
@@ -99,7 +116,7 @@ export const homeRu = {
           'Операционная система ветклиники: очередь ветеринара на день с тремя незавершёнными визитами; позади — карта пациента и расписание',
       },
       {
-        ...home.featured.items[3],
+        ...home.featured.items[4],
         href: '/ru/work/pawly',
         title: pawlyRu.header.title,
         outcome:

@@ -1,0 +1,495 @@
+
+> open http://127.0.0.1:5174/catalog?all=1&lang=en
+✓ TRASSIR Learn · learning concept
+  http://127.0.0.1:5174/catalog?all=1&lang=en
+[agent-browser] launched browser
+
+> set viewport 375 1000
+✓ Done
+
+> snapshot -i
+- generic "Sign inSign inField guideCatalogResources for work questions and paths for structured learning.Filte" [ref=e1] clickable [onclick]
+  - button "Go to home" [ref=e2]
+  - button "Sign in" [ref=e3]
+  - button "Menu" [expanded=false, ref=e4]
+  - textbox "Search resources and learning paths" [ref=e7]
+  - heading "Catalog" [level=1, ref=e8]
+  - button "Filters · 0" [ref=e5]
+  - navigation "Catalog sections" [ref=e6]
+    - link "Go to resources" [ref=e9]
+    - link "Go to learning paths" [ref=e10]
+  - heading "Resources" [level=2, ref=e24]
+  - link "TRASSIR cannot discover an ONVIF camera: diagnostic sequence Power and link, ONVIF response on port 80, credentials and stream profile. TRASSIR OS 4.3 · 12 August · 7 min" [ref=e11]
+  - link "Configuring recording retention on DuoStation Calculate retention from bitrate and camera count, and define behaviour when storage fills. TRASSIR OS 4.3 · 12 August · 12 min" [ref=e12]
+  - link "Operator access rights What the operator sees, what the supervisor sees and what stays closed. TRASSIR OS 4.3 · 28 July · 10 min" [ref=e13]
+  - link "Checking camera power and link What to check on the switch and camera before changing TRASSIR settings. Hardware · 3 September · 5 min" [ref=e14]
+  - link "Adding an IP camera manually When auto-discovery cannot find the device: RTSP URL, port, profile and stream check. TRASSIR OS 4.2 · 28 July · 11 min" [ref=e15]
+  - button "Show more: 5" [ref=e16]
+  - heading "Learning paths" [level=2, ref=e25]
+  - link "Commissioning TRASSIR OS at a site with up to 32 cameras You will be able to deploy and hand over a site independently 11 units · 2 h 11 min · concept document" [ref=e17]
+  - link "Troubleshooting common commissioning faults You will learn the diagnostic sequence for common on-site faults 6 units · 54 min · concept document" [ref=e18]
+  - link "Designing a system for 64+ cameras You will calculate system load and justify the design to the customer 9 units · 1 h 45 min · concept document" [ref=e19]
+  - link "Archive and disk subsystem sizing You will justify storage capacity with calculations rather than extra headroom 6 units · 1 h 13 min · concept document" [ref=e20]
+  - link "Site handover to the customer without rework You will check site readiness and the documentation required for acceptance 7 units · 1 h 23 min · concept document" [ref=e21]
+  - link "Basic qualification in the TRASSIR product range You will be able to select hardware for the job without escalation 7 units · 1 h 11 min · concept document" [ref=e22]
+  - link "TRASSIR video analytics: modules and requirements You will understand what will run on the existing server 6 units · 1 h 24 min · concept document" [ref=e23]
+
+> click @e16
+✓ Done
+
+> snapshot -i
+- generic "Sign inSign inField guideCatalogResources for work questions and paths for structured learning.Filte" [ref=e1] clickable [onclick]
+  - button "Go to home" [ref=e2]
+  - button "Sign in" [ref=e3]
+  - button "Menu" [expanded=false, ref=e4]
+  - textbox "Search resources and learning paths" [ref=e7]
+  - heading "Catalog" [level=1, ref=e8]
+  - button "Filters · 0" [ref=e5]
+  - navigation "Catalog sections" [ref=e6]
+    - link "Go to resources" [ref=e9]
+    - link "Go to learning paths" [ref=e10]
+  - heading "Resources" [level=2, ref=e29]
+  - link "TRASSIR cannot discover an ONVIF camera: diagnostic sequence Power and link, ONVIF response on port 80, credentials and stream profile. TRASSIR OS 4.3 · 12 August · 7 min" [ref=e11]
+  - link "Configuring recording retention on DuoStation Calculate retention from bitrate and camera count, and define behaviour when storage fills. TRASSIR OS 4.3 · 12 August · 12 min" [ref=e12]
+  - link "Operator access rights What the operator sees, what the supervisor sees and what stays closed. TRASSIR OS 4.3 · 28 July · 10 min" [ref=e13]
+  - link "Checking camera power and link What to check on the switch and camera before changing TRASSIR settings. Hardware · 3 September · 5 min" [ref=e14]
+  - link "Adding an IP camera manually When auto-discovery cannot find the device: RTSP URL, port, profile and stream check. TRASSIR OS 4.2 · 28 July · 11 min" [ref=e15]
+  - link "Distributing recordings across disks How to distribute recordings across disks so one camera does not consume all the space. TRASSIR OS 4.3 · 21 August · 6 min" [ref=e16]
+  - link "The camera was added, but recordings are not being saved Check the recording schedule, disk space and service permissions. TRASSIR OS 4.3 · 19 August · 5 min" [ref=e17]
+  - link "Changing a camera’s IP address without reconnecting it How to change the address while preserving recordings and device settings. TRASSIR OS 4.1 · 2 August · 5 min" [ref=e18]
+  - link "Connecting an IP camera over RTSP when ONVIF is unavailable A direct RTSP URL instead of ONVIF: when it is the only option. TRASSIR OS 4.3 · 21 August · 7 min" [ref=e19]
+  - link "ONVIF profiles S, T and G: what TRASSIR supports How the profiles differ and why a camera with Profile G does not provide live video. TRASSIR OS 4.3 · 16 August · 6 min" [ref=e20]
+  - button "Show more: 5" [ref=e21]
+  - heading "Learning paths" [level=2, ref=e30]
+  - link "Commissioning TRASSIR OS at a site with up to 32 cameras You will be able to deploy and hand over a site independently 11 units · 2 h 11 min · concept document" [ref=e22]
+  - link "Troubleshooting common commissioning faults You will learn the diagnostic sequence for common on-site faults 6 units · 54 min · concept document" [ref=e23]
+  - link "Designing a system for 64+ cameras You will calculate system load and justify the design to the customer 9 units · 1 h 45 min · concept document" [ref=e24]
+  - link "Archive and disk subsystem sizing You will justify storage capacity with calculations rather than extra headroom 6 units · 1 h 13 min · concept document" [ref=e25]
+  - link "Site handover to the customer without rework You will check site readiness and the documentation required for acceptance 7 units · 1 h 23 min · concept document" [ref=e26]
+  - link "Basic qualification in the TRASSIR product range You will be able to select hardware for the job without escalation 7 units · 1 h 11 min · concept document" [ref=e27]
+  - link "TRASSIR video analytics: modules and requirements You will understand what will run on the existing server 6 units · 1 h 24 min · concept document" [ref=e28]
+
+> click @e21
+✓ Done
+
+> snapshot -i
+- generic "Sign inSign inField guideCatalogResources for work questions and paths for structured learning.Filte" [ref=e1] clickable [onclick]
+  - button "Go to home" [ref=e2]
+  - button "Sign in" [ref=e3]
+  - button "Menu" [expanded=false, ref=e4]
+  - textbox "Search resources and learning paths" [ref=e7]
+  - heading "Catalog" [level=1, ref=e8]
+  - button "Filters · 0" [ref=e5]
+  - navigation "Catalog sections" [ref=e6]
+    - link "Go to resources" [ref=e9]
+    - link "Go to learning paths" [ref=e10]
+  - heading "Resources" [level=2, ref=e34]
+  - link "TRASSIR cannot discover an ONVIF camera: diagnostic sequence Power and link, ONVIF response on port 80, credentials and stream profile. TRASSIR OS 4.3 · 12 August · 7 min" [ref=e11]
+  - link "Configuring recording retention on DuoStation Calculate retention from bitrate and camera count, and define behaviour when storage fills. TRASSIR OS 4.3 · 12 August · 12 min" [ref=e12]
+  - link "Operator access rights What the operator sees, what the supervisor sees and what stays closed. TRASSIR OS 4.3 · 28 July · 10 min" [ref=e13]
+  - link "Checking camera power and link What to check on the switch and camera before changing TRASSIR settings. Hardware · 3 September · 5 min" [ref=e14]
+  - link "Adding an IP camera manually When auto-discovery cannot find the device: RTSP URL, port, profile and stream check. TRASSIR OS 4.2 · 28 July · 11 min" [ref=e15]
+  - link "Distributing recordings across disks How to distribute recordings across disks so one camera does not consume all the space. TRASSIR OS 4.3 · 21 August · 6 min" [ref=e16]
+  - link "The camera was added, but recordings are not being saved Check the recording schedule, disk space and service permissions. TRASSIR OS 4.3 · 19 August · 5 min" [ref=e17]
+  - link "Changing a camera’s IP address without reconnecting it How to change the address while preserving recordings and device settings. TRASSIR OS 4.1 · 2 August · 5 min" [ref=e18]
+  - link "Connecting an IP camera over RTSP when ONVIF is unavailable A direct RTSP URL instead of ONVIF: when it is the only option. TRASSIR OS 4.3 · 21 August · 7 min" [ref=e19]
+  - link "ONVIF profiles S, T and G: what TRASSIR supports How the profiles differ and why a camera with Profile G does not provide live video. TRASSIR OS 4.3 · 16 August · 6 min" [ref=e20]
+  - link "Configuring motion detectors Zones, sensitivity and why full-scene detection is ineffective. TRASSIR OS 4.3 · 9 August · 15 min" [ref=e21]
+  - link "Recording redundancy Duplicating the stream and behaviour when the primary volume fails. TRASSIR OS 4.3 · 7 August · 13 min" [ref=e22]
+  - link "Exporting a video clip for the customer Format, watermark and signature: what the security team accepts. TRASSIR OS 4.3 · 5 August · 9 min" [ref=e23]
+  - link "Checking recording on every channel before handover Acceptance checklist: what to inspect for every camera before signing the handover report. TRASSIR OS 4.3 · 1 September · 12 min" [ref=e24]
+  - link "Site handover document pack What to attach to the handover report so acceptance closes on the first attempt. Hardware · 30 August · 7 min" [ref=e25]
+  - button "Show more: 5" [ref=e26]
+  - heading "Learning paths" [level=2, ref=e35]
+  - link "Commissioning TRASSIR OS at a site with up to 32 cameras You will be able to deploy and hand over a site independently 11 units · 2 h 11 min · concept document" [ref=e27]
+  - link "Troubleshooting common commissioning faults You will learn the diagnostic sequence for common on-site faults 6 units · 54 min · concept document" [ref=e28]
+  - link "Designing a system for 64+ cameras You will calculate system load and justify the design to the customer 9 units · 1 h 45 min · concept document" [ref=e29]
+  - link "Archive and disk subsystem sizing You will justify storage capacity with calculations rather than extra headroom 6 units · 1 h 13 min · concept document" [ref=e30]
+  - link "Site handover to the customer without rework You will check site readiness and the documentation required for acceptance 7 units · 1 h 23 min · concept document" [ref=e31]
+  - link "Basic qualification in the TRASSIR product range You will be able to select hardware for the job without escalation 7 units · 1 h 11 min · concept document" [ref=e32]
+  - link "TRASSIR video analytics: modules and requirements You will understand what will run on the existing server 6 units · 1 h 24 min · concept document" [ref=e33]
+
+> click @e26
+✓ Done
+
+> snapshot -i
+- generic "Sign inSign inField guideCatalogResources for work questions and paths for structured learning.Filte" [ref=e1] clickable [onclick]
+  - button "Go to home" [ref=e2]
+  - button "Sign in" [ref=e3]
+  - button "Menu" [expanded=false, ref=e4]
+  - textbox "Search resources and learning paths" [ref=e7]
+  - heading "Catalog" [level=1, ref=e8]
+  - button "Filters · 0" [ref=e5]
+  - navigation "Catalog sections" [ref=e6]
+    - link "Go to resources" [ref=e9]
+    - link "Go to learning paths" [ref=e10]
+  - heading "Resources" [level=2, ref=e39]
+  - link "TRASSIR cannot discover an ONVIF camera: diagnostic sequence Power and link, ONVIF response on port 80, credentials and stream profile. TRASSIR OS 4.3 · 12 August · 7 min" [ref=e11]
+  - link "Configuring recording retention on DuoStation Calculate retention from bitrate and camera count, and define behaviour when storage fills. TRASSIR OS 4.3 · 12 August · 12 min" [ref=e12]
+  - link "Operator access rights What the operator sees, what the supervisor sees and what stays closed. TRASSIR OS 4.3 · 28 July · 10 min" [ref=e13]
+  - link "Checking camera power and link What to check on the switch and camera before changing TRASSIR settings. Hardware · 3 September · 5 min" [ref=e14]
+  - link "Adding an IP camera manually When auto-discovery cannot find the device: RTSP URL, port, profile and stream check. TRASSIR OS 4.2 · 28 July · 11 min" [ref=e15]
+  - link "Distributing recordings across disks How to distribute recordings across disks so one camera does not consume all the space. TRASSIR OS 4.3 · 21 August · 6 min" [ref=e16]
+  - link "The camera was added, but recordings are not being saved Check the recording schedule, disk space and service permissions. TRASSIR OS 4.3 · 19 August · 5 min" [ref=e17]
+  - link "Changing a camera’s IP address without reconnecting it How to change the address while preserving recordings and device settings. TRASSIR OS 4.1 · 2 August · 5 min" [ref=e18]
+  - link "Connecting an IP camera over RTSP when ONVIF is unavailable A direct RTSP URL instead of ONVIF: when it is the only option. TRASSIR OS 4.3 · 21 August · 7 min" [ref=e19]
+  - link "ONVIF profiles S, T and G: what TRASSIR supports How the profiles differ and why a camera with Profile G does not provide live video. TRASSIR OS 4.3 · 16 August · 6 min" [ref=e20]
+  - link "Configuring motion detectors Zones, sensitivity and why full-scene detection is ineffective. TRASSIR OS 4.3 · 9 August · 15 min" [ref=e21]
+  - link "Recording redundancy Duplicating the stream and behaviour when the primary volume fails. TRASSIR OS 4.3 · 7 August · 13 min" [ref=e22]
+  - link "Exporting a video clip for the customer Format, watermark and signature: what the security team accepts. TRASSIR OS 4.3 · 5 August · 9 min" [ref=e23]
+  - link "Checking recording on every channel before handover Acceptance checklist: what to inspect for every camera before signing the handover report. TRASSIR OS 4.3 · 1 September · 12 min" [ref=e24]
+  - link "Site handover document pack What to attach to the handover report so acceptance closes on the first attempt. Hardware · 30 August · 7 min" [ref=e25]
+  - link "Configuring access rights for the customer’s team Customer-side roles: who creates users after handover. TRASSIR OS 4.3 · 26 August · 9 min" [ref=e26]
+  - link "Training the operator at their workstation Twenty minutes that prevent minor support calls later. Hardware · 24 August · 11 min" [ref=e27]
+  - link "Calculating camera count and coverage zones From the customer’s task to camera count: position by coverage zone, not by wall. Hardware · 15 August · 9 min" [ref=e28]
+  - link "Choosing a server for 64+ cameras DuoStation and NeuroStation: what to calculate beyond channel count. NeuroStation · 24 August · 14 min" [ref=e29]
+  - link "Calculating disk capacity for 64 cameras Retention, bitrate and reserve: justify capacity with a calculation, not a guess. Hardware · 28 August · 12 min" [ref=e30]
+  - button "Show more: 5" [ref=e31]
+  - heading "Learning paths" [level=2, ref=e40]
+  - link "Commissioning TRASSIR OS at a site with up to 32 cameras You will be able to deploy and hand over a site independently 11 units · 2 h 11 min · concept document" [ref=e32]
+  - link "Troubleshooting common commissioning faults You will learn the diagnostic sequence for common on-site faults 6 units · 54 min · concept document" [ref=e33]
+  - link "Designing a system for 64+ cameras You will calculate system load and justify the design to the customer 9 units · 1 h 45 min · concept document" [ref=e34]
+  - link "Archive and disk subsystem sizing You will justify storage capacity with calculations rather than extra headroom 6 units · 1 h 13 min · concept document" [ref=e35]
+  - link "Site handover to the customer without rework You will check site readiness and the documentation required for acceptance 7 units · 1 h 23 min · concept document" [ref=e36]
+  - link "Basic qualification in the TRASSIR product range You will be able to select hardware for the job without escalation 7 units · 1 h 11 min · concept document" [ref=e37]
+  - link "TRASSIR video analytics: modules and requirements You will understand what will run on the existing server 6 units · 1 h 24 min · concept document" [ref=e38]
+
+> click @e31
+✓ Done
+
+> snapshot -i
+- generic "Sign inSign inField guideCatalogResources for work questions and paths for structured learning.Filte" [ref=e1] clickable [onclick]
+  - button "Go to home" [ref=e2]
+  - button "Sign in" [ref=e3]
+  - button "Menu" [expanded=false, ref=e4]
+  - textbox "Search resources and learning paths" [ref=e7]
+  - heading "Catalog" [level=1, ref=e8]
+  - button "Filters · 0" [ref=e5]
+  - navigation "Catalog sections" [ref=e6]
+    - link "Go to resources" [ref=e9]
+    - link "Go to learning paths" [ref=e10]
+  - heading "Resources" [level=2, ref=e44]
+  - link "TRASSIR cannot discover an ONVIF camera: diagnostic sequence Power and link, ONVIF response on port 80, credentials and stream profile. TRASSIR OS 4.3 · 12 August · 7 min" [ref=e11]
+  - link "Configuring recording retention on DuoStation Calculate retention from bitrate and camera count, and define behaviour when storage fills. TRASSIR OS 4.3 · 12 August · 12 min" [ref=e12]
+  - link "Operator access rights What the operator sees, what the supervisor sees and what stays closed. TRASSIR OS 4.3 · 28 July · 10 min" [ref=e13]
+  - link "Checking camera power and link What to check on the switch and camera before changing TRASSIR settings. Hardware · 3 September · 5 min" [ref=e14]
+  - link "Adding an IP camera manually When auto-discovery cannot find the device: RTSP URL, port, profile and stream check. TRASSIR OS 4.2 · 28 July · 11 min" [ref=e15]
+  - link "Distributing recordings across disks How to distribute recordings across disks so one camera does not consume all the space. TRASSIR OS 4.3 · 21 August · 6 min" [ref=e16]
+  - link "The camera was added, but recordings are not being saved Check the recording schedule, disk space and service permissions. TRASSIR OS 4.3 · 19 August · 5 min" [ref=e17]
+  - link "Changing a camera’s IP address without reconnecting it How to change the address while preserving recordings and device settings. TRASSIR OS 4.1 · 2 August · 5 min" [ref=e18]
+  - link "Connecting an IP camera over RTSP when ONVIF is unavailable A direct RTSP URL instead of ONVIF: when it is the only option. TRASSIR OS 4.3 · 21 August · 7 min" [ref=e19]
+  - link "ONVIF profiles S, T and G: what TRASSIR supports How the profiles differ and why a camera with Profile G does not provide live video. TRASSIR OS 4.3 · 16 August · 6 min" [ref=e20]
+  - link "Configuring motion detectors Zones, sensitivity and why full-scene detection is ineffective. TRASSIR OS 4.3 · 9 August · 15 min" [ref=e21]
+  - link "Recording redundancy Duplicating the stream and behaviour when the primary volume fails. TRASSIR OS 4.3 · 7 August · 13 min" [ref=e22]
+  - link "Exporting a video clip for the customer Format, watermark and signature: what the security team accepts. TRASSIR OS 4.3 · 5 August · 9 min" [ref=e23]
+  - link "Checking recording on every channel before handover Acceptance checklist: what to inspect for every camera before signing the handover report. TRASSIR OS 4.3 · 1 September · 12 min" [ref=e24]
+  - link "Site handover document pack What to attach to the handover report so acceptance closes on the first attempt. Hardware · 30 August · 7 min" [ref=e25]
+  - link "Configuring access rights for the customer’s team Customer-side roles: who creates users after handover. TRASSIR OS 4.3 · 26 August · 9 min" [ref=e26]
+  - link "Training the operator at their workstation Twenty minutes that prevent minor support calls later. Hardware · 24 August · 11 min" [ref=e27]
+  - link "Calculating camera count and coverage zones From the customer’s task to camera count: position by coverage zone, not by wall. Hardware · 15 August · 9 min" [ref=e28]
+  - link "Choosing a server for 64+ cameras DuoStation and NeuroStation: what to calculate beyond channel count. NeuroStation · 24 August · 14 min" [ref=e29]
+  - link "Calculating disk capacity for 64 cameras Retention, bitrate and reserve: justify capacity with a calculation, not a guess. Hardware · 28 August · 12 min" [ref=e30]
+  - link "Checking bandwidth before arriving on site Calculate bandwidth from camera count and bitrate before the site visit. TRASSIR OS 4.1 · 17 July · 8 min" [ref=e31]
+  - link "TRASSIR licensing plan for a project What is licensed per channel, what is licensed per module and where estimates go wrong. TRASSIR OS 4.3 · 11 August · 6 min For partners" [ref=e32]
+  - link "Equipment specification for a tender How to specify equipment so it is not replaced with an ‘equivalent’. Hardware · 11 August · 8 min For partners" [ref=e33]
+  - link "DuoStation: what is inside and how it differs from an NVR Device architecture and why it is a server rather than a recorder. Hardware · 6 August · 6 min" [ref=e34]
+  - link "First startup and factory settings What to do in the first ten minutes to avoid rework a month later. Hardware · 4 August · 5 min" [ref=e35]
+  - button "Show more: 5" [ref=e36]
+  - heading "Learning paths" [level=2, ref=e45]
+  - link "Commissioning TRASSIR OS at a site with up to 32 cameras You will be able to deploy and hand over a site independently 11 units · 2 h 11 min · concept document" [ref=e37]
+  - link "Troubleshooting common commissioning faults You will learn the diagnostic sequence for common on-site faults 6 units · 54 min · concept document" [ref=e38]
+  - link "Designing a system for 64+ cameras You will calculate system load and justify the design to the customer 9 units · 1 h 45 min · concept document" [ref=e39]
+  - link "Archive and disk subsystem sizing You will justify storage capacity with calculations rather than extra headroom 6 units · 1 h 13 min · concept document" [ref=e40]
+  - link "Site handover to the customer without rework You will check site readiness and the documentation required for acceptance 7 units · 1 h 23 min · concept document" [ref=e41]
+  - link "Basic qualification in the TRASSIR product range You will be able to select hardware for the job without escalation 7 units · 1 h 11 min · concept document" [ref=e42]
+  - link "TRASSIR video analytics: modules and requirements You will understand what will run on the existing server 6 units · 1 h 24 min · concept document" [ref=e43]
+
+> click @e36
+✓ Done
+
+> snapshot -i
+- generic "Sign inSign inField guideCatalogResources for work questions and paths for structured learning.Filte" [ref=e1] clickable [onclick]
+  - button "Go to home" [ref=e2]
+  - button "Sign in" [ref=e3]
+  - button "Menu" [expanded=false, ref=e4]
+  - textbox "Search resources and learning paths" [ref=e7]
+  - heading "Catalog" [level=1, ref=e8]
+  - button "Filters · 0" [ref=e5]
+  - navigation "Catalog sections" [ref=e6]
+    - link "Go to resources" [ref=e9]
+    - link "Go to learning paths" [ref=e10]
+  - heading "Resources" [level=2, ref=e49]
+  - link "TRASSIR cannot discover an ONVIF camera: diagnostic sequence Power and link, ONVIF response on port 80, credentials and stream profile. TRASSIR OS 4.3 · 12 August · 7 min" [ref=e11]
+  - link "Configuring recording retention on DuoStation Calculate retention from bitrate and camera count, and define behaviour when storage fills. TRASSIR OS 4.3 · 12 August · 12 min" [ref=e12]
+  - link "Operator access rights What the operator sees, what the supervisor sees and what stays closed. TRASSIR OS 4.3 · 28 July · 10 min" [ref=e13]
+  - link "Checking camera power and link What to check on the switch and camera before changing TRASSIR settings. Hardware · 3 September · 5 min" [ref=e14]
+  - link "Adding an IP camera manually When auto-discovery cannot find the device: RTSP URL, port, profile and stream check. TRASSIR OS 4.2 · 28 July · 11 min" [ref=e15]
+  - link "Distributing recordings across disks How to distribute recordings across disks so one camera does not consume all the space. TRASSIR OS 4.3 · 21 August · 6 min" [ref=e16]
+  - link "The camera was added, but recordings are not being saved Check the recording schedule, disk space and service permissions. TRASSIR OS 4.3 · 19 August · 5 min" [ref=e17]
+  - link "Changing a camera’s IP address without reconnecting it How to change the address while preserving recordings and device settings. TRASSIR OS 4.1 · 2 August · 5 min" [ref=e18]
+  - link "Connecting an IP camera over RTSP when ONVIF is unavailable A direct RTSP URL instead of ONVIF: when it is the only option. TRASSIR OS 4.3 · 21 August · 7 min" [ref=e19]
+  - link "ONVIF profiles S, T and G: what TRASSIR supports How the profiles differ and why a camera with Profile G does not provide live video. TRASSIR OS 4.3 · 16 August · 6 min" [ref=e20]
+  - link "Configuring motion detectors Zones, sensitivity and why full-scene detection is ineffective. TRASSIR OS 4.3 · 9 August · 15 min" [ref=e21]
+  - link "Recording redundancy Duplicating the stream and behaviour when the primary volume fails. TRASSIR OS 4.3 · 7 August · 13 min" [ref=e22]
+  - link "Exporting a video clip for the customer Format, watermark and signature: what the security team accepts. TRASSIR OS 4.3 · 5 August · 9 min" [ref=e23]
+  - link "Checking recording on every channel before handover Acceptance checklist: what to inspect for every camera before signing the handover report. TRASSIR OS 4.3 · 1 September · 12 min" [ref=e24]
+  - link "Site handover document pack What to attach to the handover report so acceptance closes on the first attempt. Hardware · 30 August · 7 min" [ref=e25]
+  - link "Configuring access rights for the customer’s team Customer-side roles: who creates users after handover. TRASSIR OS 4.3 · 26 August · 9 min" [ref=e26]
+  - link "Training the operator at their workstation Twenty minutes that prevent minor support calls later. Hardware · 24 August · 11 min" [ref=e27]
+  - link "Calculating camera count and coverage zones From the customer’s task to camera count: position by coverage zone, not by wall. Hardware · 15 August · 9 min" [ref=e28]
+  - link "Choosing a server for 64+ cameras DuoStation and NeuroStation: what to calculate beyond channel count. NeuroStation · 24 August · 14 min" [ref=e29]
+  - link "Calculating disk capacity for 64 cameras Retention, bitrate and reserve: justify capacity with a calculation, not a guess. Hardware · 28 August · 12 min" [ref=e30]
+  - link "Checking bandwidth before arriving on site Calculate bandwidth from camera count and bitrate before the site visit. TRASSIR OS 4.1 · 17 July · 8 min" [ref=e31]
+  - link "TRASSIR licensing plan for a project What is licensed per channel, what is licensed per module and where estimates go wrong. TRASSIR OS 4.3 · 11 August · 6 min For partners" [ref=e32]
+  - link "Equipment specification for a tender How to specify equipment so it is not replaced with an ‘equivalent’. Hardware · 11 August · 8 min For partners" [ref=e33]
+  - link "DuoStation: what is inside and how it differs from an NVR Device architecture and why it is a server rather than a recorder. Hardware · 6 August · 6 min" [ref=e34]
+  - link "First startup and factory settings What to do in the first ten minutes to avoid rework a month later. Hardware · 4 August · 5 min" [ref=e35]
+  - link "Updating TRASSIR OS firmware When to update, when to leave it alone and what to check afterwards. TRASSIR OS 4.3 · 31 July · 7 min" [ref=e36]
+  - link "Camera range: how the series differ ActiveDome and fixed-camera ranges: choosing for the task. ActiveDome · 29 July · 9 min" [ref=e37]
+  - link "ActiveDome: auto-tracking and presets Configuring auto-tracking and why it loses the target at the zone boundary. ActiveDome · 22 July · 10 min" [ref=e38]
+  - link "Video analytics: which modules run on which hardware NeuroStation and server-side analytics: requirements and limitations. NeuroStation · 18 August · 11 min" [ref=e39]
+  - link "Unattended object detection: configuring zones Zones, delay and managing false alarms in a busy space. NeuroStation · 12 August · 9 min" [ref=e40]
+  - button "Show more: 1" [ref=e41]
+  - heading "Learning paths" [level=2, ref=e50]
+  - link "Commissioning TRASSIR OS at a site with up to 32 cameras You will be able to deploy and hand over a site independently 11 units · 2 h 11 min · concept document" [ref=e42]
+  - link "Troubleshooting common commissioning faults You will learn the diagnostic sequence for common on-site faults 6 units · 54 min · concept document" [ref=e43]
+  - link "Designing a system for 64+ cameras You will calculate system load and justify the design to the customer 9 units · 1 h 45 min · concept document" [ref=e44]
+  - link "Archive and disk subsystem sizing You will justify storage capacity with calculations rather than extra headroom 6 units · 1 h 13 min · concept document" [ref=e45]
+  - link "Site handover to the customer without rework You will check site readiness and the documentation required for acceptance 7 units · 1 h 23 min · concept document" [ref=e46]
+  - link "Basic qualification in the TRASSIR product range You will be able to select hardware for the job without escalation 7 units · 1 h 11 min · concept document" [ref=e47]
+  - link "TRASSIR video analytics: modules and requirements You will understand what will run on the existing server 6 units · 1 h 24 min · concept document" [ref=e48]
+
+> click @e41
+✓ Done
+
+> eval JSON.stringify({url:location.href,lang:document.documentElement.lang,text:document.body.innerText,width:innerWidth,scroll:document.documentElement.scrollWidth,cyrillic:document.body.innerText.match(/[^\n]*[А-Яа-яЁё][^\n]*/g),clippedControls:[...document.querySelectorAll("button,a")].filter(e=>e.getClientRects().length).filter(e=>{const r=e.getBoundingClientRect();return r.left<0||r.right>innerWidth+1||e.scrollWidth>e.clientWidth+2}).map(e=>e.textContent)})
+"{\"url\":\"http://127.0.0.1:5174/catalog?all=1&lang=en&shown=31\",\"lang\":\"en\",\"text\":\"Sign in\\nField guide\\nCatalog\\n\\nResources for work questions and paths for structured learning.\\n\\nFilters · 0\\n\\nResources: 31 · Learning paths: 7 · Resources shown: 31\\n\\nGo to resources\\nGo to learning paths\\nResources\\n31\\nTRASSIR cannot discover an ONVIF camera: diagnostic sequence\\nPower and link, ONVIF response on port 80, credentials and stream profile.\\nTRASSIR OS 4.3 · 12 August · 7 min\\nConfiguring recording retention on DuoStation\\nCalculate retention from bitrate and camera count, and define behaviour when storage fills.\\nTRASSIR OS 4.3 · 12 August · 12 min\\nOperator access rights\\nWhat the operator sees, what the supervisor sees and what stays closed.\\nTRASSIR OS 4.3 · 28 July · 10 min\\nChecking camera power and link\\nWhat to check on the switch and camera before changing TRASSIR settings.\\nHardware · 3 September · 5 min\\nAdding an IP camera manually\\nWhen auto-discovery cannot find the device: RTSP URL, port, profile and stream check.\\nTRASSIR OS 4.2 · 28 July · 11 min\\nDistributing recordings across disks\\nHow to distribute recordings across disks so one camera does not consume all the space.\\nTRASSIR OS 4.3 · 21 August · 6 min\\nThe camera was added, but recordings are not being saved\\nCheck the recording schedule, disk space and service permissions.\\nTRASSIR OS 4.3 · 19 August · 5 min\\nChanging a camera’s IP address without reconnecting it\\nHow to change the address while preserving recordings and device settings.\\nTRASSIR OS 4.1 · 2 August · 5 min\\nConnecting an IP camera over RTSP when ONVIF is unavailable\\nA direct RTSP URL instead of ONVIF: when it is the only option.\\nTRASSIR OS 4.3 · 21 August · 7 min\\nONVIF profiles S, T and G: what TRASSIR supports\\nHow the profiles differ and why a camera with Profile G does not provide live video.\\nTRASSIR OS 4.3 · 16 August · 6 min\\nConfiguring motion detectors\\nZones, sensitivity and why full-scene detection is ineffective.\\nTRASSIR OS 4.3 · 9 August · 15 min\\nRecording redundancy\\nDuplicating the stream and behaviour when the primary volume fails.\\nTRASSIR OS 4.3 · 7 August · 13 min\\nExporting a video clip for the customer\\nFormat, watermark and signature: what the security team accepts.\\nTRASSIR OS 4.3 · 5 August · 9 min\\nChecking recording on every channel before handover\\nAcceptance checklist: what to inspect for every camera before signing the handover report.\\nTRASSIR OS 4.3 · 1 September · 12 min\\nSite handover document pack\\nWhat to attach to the handover report so acceptance closes on the first attempt.\\nHardware · 30 August · 7 min\\nConfiguring access rights for the customer’s team\\nCustomer-side roles: who creates users after handover.\\nTRASSIR OS 4.3 · 26 August · 9 min\\nTraining the operator at their workstation\\nTwenty minutes that prevent minor support calls later.\\nHardware · 24 August · 11 min\\nCalculating camera count and coverage zones\\nFrom the customer’s task to camera count: position by coverage zone, not by wall.\\nHardware · 15 August · 9 min\\nChoosing a server for 64+ cameras\\nDuoStation and NeuroStation: what to calculate beyond channel count.\\nNeuroStation · 24 August · 14 min\\nCalculating disk capacity for 64 cameras\\nRetention, bitrate and reserve: justify capacity with a calculation, not a guess.\\nHardware · 28 August · 12 min\\nChecking bandwidth before arriving on site\\nCalculate bandwidth from camera count and bitrate before the site visit.\\nTRASSIR OS 4.1 · 17 July · 8 min\\nTRASSIR licensing plan for a project\\nWhat is licensed per channel, what is licensed per module and where estimates go wrong.\\nTRASSIR OS 4.3 · 11 August · 6 min\\nFor partners\\nEquipment specification for a tender\\nHow to specify equipment so it is not replaced with an ‘equivalent’.\\nHardware · 11 August · 8 min\\nFor partners\\nDuoStation: what is inside and how it differs from an NVR\\nDevice architecture and why it is a server rather than a recorder.\\nHardware · 6 August · 6 min\\nFirst startup and factory settings\\nWhat to do in the first ten minutes to avoid rework a month later.\\nHardware · 4 August · 5 min\\nUpdating TRASSIR OS firmware\\nWhen to update, when to leave it alone and what to check afterwards.\\nTRASSIR OS 4.3 · 31 July · 7 min\\nCamera range: how the series differ\\nActiveDome and fixed-camera ranges: choosing for the task.\\nActiveDome · 29 July · 9 min\\nActiveDome: auto-tracking and presets\\nConfiguring auto-tracking and why it loses the target at the zone boundary.\\nActiveDome · 22 July · 10 min\\nVideo analytics: which modules run on which hardware\\nNeuroStation and server-side analytics: requirements and limitations.\\nNeuroStation · 18 August · 11 min\\nUnattended object detection: configuring zones\\nZones, delay and managing false alarms in a busy space.\\nNeuroStation · 12 August · 9 min\\nThird-party hardware compatibility over ONVIF\\nWhat to check on a third-party camera before purchasing.\\nHardware · 25 July · 8 min\\nShowing 31 of 31 resources\\nLearning paths\\n7\\n\\nAll learning paths.\\n\\nCommissioning TRASSIR OS at a site with up to 32 cameras\\nYou will be able to deploy and hand over a site independently\\n11 units · 2 h 11 min · concept document\\nTroubleshooting common commissioning faults\\nYou will learn the diagnostic sequence for common on-site faults\\n6 units · 54 min · concept document\\nDesigning a system for 64+ cameras\\nYou will calculate system load and justify the design to the customer\\n9 units · 1 h 45 min · concept document\\nArchive and disk subsystem sizing\\nYou will justify storage capacity with calculations rather than extra headroom\\n6 units · 1 h 13 min · concept document\\nSite handover to the customer without rework\\nYou will check site readiness and the documentation required for acceptance\\n7 units · 1 h 23 min · concept document\\nBasic qualification in the TRASSIR product range\\nYou will be able to select hardware for the job without escalation\\n7 units · 1 h 11 min · concept document\\nTRASSIR video analytics: modules and requirements\\nYou will understand what will run on the existing server\\n6 units · 1 h 24 min · concept document\",\"width\":375,\"scroll\":375,\"cyrillic\":null,\"clippedControls\":[]}"
+
+> errors
+
+> snapshot -i
+- generic "Sign inSign inField guideCatalogResources for work questions and paths for structured learning.Filte" [ref=e1] clickable [onclick]
+  - button "Go to home" [ref=e2]
+  - button "Sign in" [ref=e3]
+  - button "Menu" [expanded=false, ref=e4]
+  - textbox "Search resources and learning paths" [ref=e7]
+  - heading "Catalog" [level=1, ref=e8]
+  - button "Filters · 0" [ref=e5]
+  - navigation "Catalog sections" [ref=e6]
+    - link "Go to resources" [ref=e9]
+    - link "Go to learning paths" [ref=e10]
+  - heading "Resources" [level=2, ref=e49]
+  - link "TRASSIR cannot discover an ONVIF camera: diagnostic sequence Power and link, ONVIF response on port 80, credentials and stream profile. TRASSIR OS 4.3 · 12 August · 7 min" [ref=e11]
+  - link "Configuring recording retention on DuoStation Calculate retention from bitrate and camera count, and define behaviour when storage fills. TRASSIR OS 4.3 · 12 August · 12 min" [ref=e12]
+  - link "Operator access rights What the operator sees, what the supervisor sees and what stays closed. TRASSIR OS 4.3 · 28 July · 10 min" [ref=e13]
+  - link "Checking camera power and link What to check on the switch and camera before changing TRASSIR settings. Hardware · 3 September · 5 min" [ref=e14]
+  - link "Adding an IP camera manually When auto-discovery cannot find the device: RTSP URL, port, profile and stream check. TRASSIR OS 4.2 · 28 July · 11 min" [ref=e15]
+  - link "Distributing recordings across disks How to distribute recordings across disks so one camera does not consume all the space. TRASSIR OS 4.3 · 21 August · 6 min" [ref=e16]
+  - link "The camera was added, but recordings are not being saved Check the recording schedule, disk space and service permissions. TRASSIR OS 4.3 · 19 August · 5 min" [ref=e17]
+  - link "Changing a camera’s IP address without reconnecting it How to change the address while preserving recordings and device settings. TRASSIR OS 4.1 · 2 August · 5 min" [ref=e18]
+  - link "Connecting an IP camera over RTSP when ONVIF is unavailable A direct RTSP URL instead of ONVIF: when it is the only option. TRASSIR OS 4.3 · 21 August · 7 min" [ref=e19]
+  - link "ONVIF profiles S, T and G: what TRASSIR supports How the profiles differ and why a camera with Profile G does not provide live video. TRASSIR OS 4.3 · 16 August · 6 min" [ref=e20]
+  - link "Configuring motion detectors Zones, sensitivity and why full-scene detection is ineffective. TRASSIR OS 4.3 · 9 August · 15 min" [ref=e21]
+  - link "Recording redundancy Duplicating the stream and behaviour when the primary volume fails. TRASSIR OS 4.3 · 7 August · 13 min" [ref=e22]
+  - link "Exporting a video clip for the customer Format, watermark and signature: what the security team accepts. TRASSIR OS 4.3 · 5 August · 9 min" [ref=e23]
+  - link "Checking recording on every channel before handover Acceptance checklist: what to inspect for every camera before signing the handover report. TRASSIR OS 4.3 · 1 September · 12 min" [ref=e24]
+  - link "Site handover document pack What to attach to the handover report so acceptance closes on the first attempt. Hardware · 30 August · 7 min" [ref=e25]
+  - link "Configuring access rights for the customer’s team Customer-side roles: who creates users after handover. TRASSIR OS 4.3 · 26 August · 9 min" [ref=e26]
+  - link "Training the operator at their workstation Twenty minutes that prevent minor support calls later. Hardware · 24 August · 11 min" [ref=e27]
+  - link "Calculating camera count and coverage zones From the customer’s task to camera count: position by coverage zone, not by wall. Hardware · 15 August · 9 min" [ref=e28]
+  - link "Choosing a server for 64+ cameras DuoStation and NeuroStation: what to calculate beyond channel count. NeuroStation · 24 August · 14 min" [ref=e29]
+  - link "Calculating disk capacity for 64 cameras Retention, bitrate and reserve: justify capacity with a calculation, not a guess. Hardware · 28 August · 12 min" [ref=e30]
+  - link "Checking bandwidth before arriving on site Calculate bandwidth from camera count and bitrate before the site visit. TRASSIR OS 4.1 · 17 July · 8 min" [ref=e31]
+  - link "TRASSIR licensing plan for a project What is licensed per channel, what is licensed per module and where estimates go wrong. TRASSIR OS 4.3 · 11 August · 6 min For partners" [ref=e32]
+  - link "Equipment specification for a tender How to specify equipment so it is not replaced with an ‘equivalent’. Hardware · 11 August · 8 min For partners" [ref=e33]
+  - link "DuoStation: what is inside and how it differs from an NVR Device architecture and why it is a server rather than a recorder. Hardware · 6 August · 6 min" [ref=e34]
+  - link "First startup and factory settings What to do in the first ten minutes to avoid rework a month later. Hardware · 4 August · 5 min" [ref=e35]
+  - link "Updating TRASSIR OS firmware When to update, when to leave it alone and what to check afterwards. TRASSIR OS 4.3 · 31 July · 7 min" [ref=e36]
+  - link "Camera range: how the series differ ActiveDome and fixed-camera ranges: choosing for the task. ActiveDome · 29 July · 9 min" [ref=e37]
+  - link "ActiveDome: auto-tracking and presets Configuring auto-tracking and why it loses the target at the zone boundary. ActiveDome · 22 July · 10 min" [ref=e38]
+  - link "Video analytics: which modules run on which hardware NeuroStation and server-side analytics: requirements and limitations. NeuroStation · 18 August · 11 min" [ref=e39]
+  - link "Unattended object detection: configuring zones Zones, delay and managing false alarms in a busy space. NeuroStation · 12 August · 9 min" [ref=e40]
+  - link "Third-party hardware compatibility over ONVIF What to check on a third-party camera before purchasing. Hardware · 25 July · 8 min" [ref=e41]
+  - heading "Learning paths" [level=2, ref=e50]
+  - link "Commissioning TRASSIR OS at a site with up to 32 cameras You will be able to deploy and hand over a site independently 11 units · 2 h 11 min · concept document" [ref=e42]
+  - link "Troubleshooting common commissioning faults You will learn the diagnostic sequence for common on-site faults 6 units · 54 min · concept document" [ref=e43]
+  - link "Designing a system for 64+ cameras You will calculate system load and justify the design to the customer 9 units · 1 h 45 min · concept document" [ref=e44]
+  - link "Archive and disk subsystem sizing You will justify storage capacity with calculations rather than extra headroom 6 units · 1 h 13 min · concept document" [ref=e45]
+  - link "Site handover to the customer without rework You will check site readiness and the documentation required for acceptance 7 units · 1 h 23 min · concept document" [ref=e46]
+  - link "Basic qualification in the TRASSIR product range You will be able to select hardware for the job without escalation 7 units · 1 h 11 min · concept document" [ref=e47]
+  - link "TRASSIR video analytics: modules and requirements You will understand what will run on the existing server 6 units · 1 h 24 min · concept document" [ref=e48]
+
+> click @e5
+✓ Done
+
+> snapshot -i
+- button "Close" [ref=e1]
+- button "TRASSIR OS 17" [ref=e2]
+- button "ActiveDome 2" [ref=e3]
+- button "NeuroStation 3" [ref=e4]
+- button "Hardware 9" [ref=e5]
+- button "System design 9" [ref=e6]
+- button "Commissioning 9" [ref=e7]
+- button "Video analytics 3" [ref=e8]
+- button "Operation and maintenance 10" [ref=e9]
+- button "4.3 26" [ref=e10]
+- button "4.2 2" [ref=e11]
+- button "4.1 3" [ref=e12]
+- button "Show results · 31 resources" [ref=e13]
+
+> click @e5
+✓ Done
+
+> snapshot -i
+- button "Close" [ref=e1]
+- button "TRASSIR OS 17" [ref=e2]
+- button "ActiveDome 2" [ref=e3]
+- button "NeuroStation 3" [ref=e4]
+- button "Hardware 9" [ref=e5]
+- button "System design 5" [ref=e6]
+- button "Commissioning 2" [ref=e7]
+- button "Video analytics 0" [ref=e8]
+- button "Operation and maintenance 2" [ref=e9]
+- button "4.3 8" [ref=e10]
+- button "4.2 0" [ref=e11]
+- button "4.1 1" [ref=e12]
+- button "Show results · 9 resources" [ref=e13]
+
+> click @e13
+✓ Done
+
+> eval JSON.stringify({url:location.href,lang:document.documentElement.lang,text:document.body.innerText,width:innerWidth,scroll:document.documentElement.scrollWidth,cyrillic:document.body.innerText.match(/[^\n]*[А-Яа-яЁё][^\n]*/g),clippedControls:[...document.querySelectorAll("button,a")].filter(e=>e.getClientRects().length).filter(e=>{const r=e.getBoundingClientRect();return r.left<0||r.right>innerWidth+1||e.scrollWidth>e.clientWidth+2}).map(e=>e.textContent)})
+"{\"url\":\"http://127.0.0.1:5174/catalog?product=%D0%9E%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5&lang=en\",\"lang\":\"en\",\"text\":\"Sign in\\nField guide\\nCatalog\\n\\nResources for work questions and paths for structured learning.\\n\\nFilters · 1\\n\\nResources: 9 · Learning paths: 6 · Resources shown: 5\\n\\nGo to resources\\nGo to learning paths\\nProduct: Hardware\\n×\\nReset filters\\nResources\\n9\\nChecking camera power and link\\nWhat to check on the switch and camera before changing TRASSIR settings.\\nHardware · 3 September · 5 min\\nSite handover document pack\\nWhat to attach to the handover report so acceptance closes on the first attempt.\\nHardware · 30 August · 7 min\\nTraining the operator at their workstation\\nTwenty minutes that prevent minor support calls later.\\nHardware · 24 August · 11 min\\nCalculating camera count and coverage zones\\nFrom the customer’s task to camera count: position by coverage zone, not by wall.\\nHardware · 15 August · 9 min\\nCalculating disk capacity for 64 cameras\\nRetention, bitrate and reserve: justify capacity with a calculation, not a guess.\\nHardware · 28 August · 12 min\\nShowing 5 of 9 resources\\nShow more: 4\\nLearning paths\\n6\\n\\nIncludes paths with at least one matching resource. These filters do not imply compatibility of the entire path.\\n\\nCommissioning TRASSIR OS at a site with up to 32 cameras\\nYou will be able to deploy and hand over a site independently\\n11 units · 2 h 11 min · concept document\\nMatching resources: 2\\nTroubleshooting common commissioning faults\\nYou will learn the diagnostic sequence for common on-site faults\\n6 units · 54 min · concept document\\nMatching resources: 1\\nDesigning a system for 64+ cameras\\nYou will calculate system load and justify the design to the customer\\n9 units · 1 h 45 min · concept document\\nMatching resources: 3\\nArchive and disk subsystem sizing\\nYou will justify storage capacity with calculations rather than extra headroom\\n6 units · 1 h 13 min · concept document\\nMatching resources: 1\\nSite handover to the customer without rework\\nYou will check site readiness and the documentation required for acceptance\\n7 units · 1 h 23 min · concept document\\nMatching resources: 2\\nBasic qualification in the TRASSIR product range\\nYou will be able to select hardware for the job without escalation\\n7 units · 1 h 11 min · concept document\\nMatching resources: 3\",\"width\":375,\"scroll\":375,\"cyrillic\":null,\"clippedControls\":[]}"
+
+> errors
+
+> open http://127.0.0.1:5174/catalog?theme=%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0&version=4.1&lang=en
+✓ TRASSIR Learn · learning concept
+  http://127.0.0.1:5174/catalog?theme=%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0&version=4.1&lang=en
+
+> eval JSON.stringify({url:location.href,lang:document.documentElement.lang,text:document.body.innerText,width:innerWidth,scroll:document.documentElement.scrollWidth,cyrillic:document.body.innerText.match(/[^\n]*[А-Яа-яЁё][^\n]*/g),clippedControls:[...document.querySelectorAll("button,a")].filter(e=>e.getClientRects().length).filter(e=>{const r=e.getBoundingClientRect();return r.left<0||r.right>innerWidth+1||e.scrollWidth>e.clientWidth+2}).map(e=>e.textContent)})
+"{\"url\":\"http://127.0.0.1:5174/catalog?theme=%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0&version=4.1&lang=en\",\"lang\":\"en\",\"text\":\"Sign in\\nField guide\\nCatalog\\n\\nResources for work questions and paths for structured learning.\\n\\nFilters · 2\\n\\nResources: 0 · Learning paths: 0 · Resources shown: 0\\n\\nResources\\n0\\nLearning paths\\n0\\nThis filter combination has no results\\nRemove “4.1”. Your other filters and selected task will stay.\\nRemove version: 4.1\\nTopic: Video analytics\\n×\\nVersion: 4.1\\n×\\nReset filters\",\"width\":375,\"scroll\":375,\"cyrillic\":null,\"clippedControls\":[]}"
+
+> errors
+
+> snapshot -i
+- generic "Sign inSign inField guideCatalogResources for work questions and paths for structured learning.Filte" [ref=e1] clickable [onclick]
+  - button "Go to home" [ref=e2]
+  - button "Sign in" [ref=e3]
+  - button "Menu" [expanded=false, ref=e4]
+  - textbox "Search resources and learning paths" [ref=e11]
+  - heading "Catalog" [level=1, ref=e12]
+  - button "Filters · 2" [ref=e5]
+  - heading "Resources" [level=2, ref=e13]
+  - heading "Learning paths" [level=2, ref=e14]
+  - heading "This filter combination has no results" [level=2, ref=e6]
+  - button "Remove version: 4.1" [ref=e7]
+  - button "Remove topic: Video analytics" [ref=e8]
+  - button "Remove version: 4.1" [ref=e9]
+  - button "Reset filters" [ref=e10]
+
+> click @e7
+✓ Done
+
+> eval JSON.stringify({url:location.href,lang:document.documentElement.lang,text:document.body.innerText,width:innerWidth,scroll:document.documentElement.scrollWidth,cyrillic:document.body.innerText.match(/[^\n]*[А-Яа-яЁё][^\n]*/g),clippedControls:[...document.querySelectorAll("button,a")].filter(e=>e.getClientRects().length).filter(e=>{const r=e.getBoundingClientRect();return r.left<0||r.right>innerWidth+1||e.scrollWidth>e.clientWidth+2}).map(e=>e.textContent)})
+"{\"url\":\"http://127.0.0.1:5174/catalog?theme=%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0&lang=en\",\"lang\":\"en\",\"text\":\"Sign in\\nField guide\\nCatalog\\n\\nResources for work questions and paths for structured learning.\\n\\nFilters · 1\\n\\nResources: 3 · Learning paths: 2 · Resources shown: 3\\n\\nGo to resources\\nGo to learning paths\\nTopic: Video analytics\\n×\\nReset filters\\nResources\\n3\\nActiveDome: auto-tracking and presets\\nConfiguring auto-tracking and why it loses the target at the zone boundary.\\nActiveDome · 22 July · 10 min\\nVideo analytics: which modules run on which hardware\\nNeuroStation and server-side analytics: requirements and limitations.\\nNeuroStation · 18 August · 11 min\\nUnattended object detection: configuring zones\\nZones, delay and managing false alarms in a busy space.\\nNeuroStation · 12 August · 9 min\\nShowing 3 of 3 resources\\nLearning paths\\n2\\n\\nIncludes paths with at least one matching resource. These filters do not imply compatibility of the entire path.\\n\\nBasic qualification in the TRASSIR product range\\nYou will be able to select hardware for the job without escalation\\n7 units · 1 h 11 min · concept document\\nMatching resources: 1\\nTRASSIR video analytics: modules and requirements\\nYou will understand what will run on the existing server\\n6 units · 1 h 24 min · concept document\\nMatching resources: 3\",\"width\":375,\"scroll\":375,\"cyrillic\":null,\"clippedControls\":[]}"
+
+> errors
+
+> open http://127.0.0.1:5174/history?source=stage04&lang=en
+✓ TRASSIR Learn · learning concept
+  http://127.0.0.1:5174/history?source=stage04&lang=en
+
+> eval JSON.stringify({url:location.href,lang:document.documentElement.lang,text:document.body.innerText,width:innerWidth,scroll:document.documentElement.scrollWidth,cyrillic:document.body.innerText.match(/[^\n]*[А-Яа-яЁё][^\n]*/g),clippedControls:[...document.querySelectorAll("button,a")].filter(e=>e.getClientRects().length).filter(e=>{const r=e.getBoundingClientRect();return r.left<0||r.right>innerWidth+1||e.scrollWidth>e.clientWidth+2}).map(e=>e.textContent)})
+"{\"url\":\"http://127.0.0.1:5174/login?returnTo=%2Fhistory%3Fsource%3Dstage04%26lang%3Den&lang=en\",\"lang\":\"en\",\"text\":\"Sign in\\nSign in to your workspace\\n\\nReading history\\n\\nWe will keep your page address and search query after sign-in.\\nWork email or phone\\nContinue\\nSign in with an SMS code\\nReturn without signing in\\n\\nDemo sign-in: use code 123456; 000000 shows an error. No messages are sent. Data is saved only in this browser tab.\",\"width\":375,\"scroll\":375,\"cyrillic\":null,\"clippedControls\":[]}"
+
+> errors
+
+> snapshot -i
+- generic "Sign inSign inSign in to your workspaceReading historyWe will keep your page address and search quer" [ref=e1] clickable [onclick]
+  - button "Go to home" [ref=e2]
+  - button "Sign in" [ref=e3]
+  - button "Menu" [expanded=false, ref=e4]
+  - textbox "Search resources and learning paths" [ref=e8]
+  - heading "Sign in to your workspace" [level=1, ref=e5]
+  - textbox "Work email or phone" [ref=e9]
+  - button "Continue" [ref=e10]
+  - button "Sign in with an SMS code" [ref=e6]
+  - button "Return without signing in" [ref=e7]
+
+> fill @e9 navigation.demo@example.test
+✓ Done
+
+> snapshot -i
+- generic "Sign inSign inSign in to your workspaceReading historyWe will keep your page address and search quer" [ref=e1] clickable [onclick]
+  - button "Go to home" [ref=e2]
+  - button "Sign in" [ref=e3]
+  - button "Menu" [expanded=false, ref=e4]
+  - textbox "Search resources and learning paths" [ref=e8]
+  - heading "Sign in to your workspace" [level=1, ref=e5]
+  - textbox "Work email or phone" [ref=e9]: navigation.demo@example.test
+  - button "Continue" [ref=e10]
+  - button "Sign in with an SMS code" [ref=e6]
+  - button "Return without signing in" [ref=e7]
+
+> click @e6
+✓ Done
+
+> eval JSON.stringify({url:location.href,lang:document.documentElement.lang,text:document.body.innerText,width:innerWidth,scroll:document.documentElement.scrollWidth,cyrillic:document.body.innerText.match(/[^\n]*[А-Яа-яЁё][^\n]*/g),clippedControls:[...document.querySelectorAll("button,a")].filter(e=>e.getClientRects().length).filter(e=>{const r=e.getBoundingClientRect();return r.left<0||r.right>innerWidth+1||e.scrollWidth>e.clientWidth+2}).map(e=>e.textContent)})
+"{\"url\":\"http://127.0.0.1:5174/login?returnTo=%2Fhistory%3Fsource%3Dstage04%26lang%3Den&lang=en\",\"lang\":\"en\",\"text\":\"Sign in\\nSign in to your workspace\\n\\nReading history\\n\\nWe will keep your page address and search query after sign-in.\\nEnter the demo code\\nUse 123456 in this prototype. SMS and email delivery are not connected.\\nMessage code\\nSign in\\nGet demo code again\\nChange email or phone\\nReturn without signing in\\n\\nDemo sign-in: use code 123456; 000000 shows an error. No messages are sent. Data is saved only in this browser tab.\",\"width\":375,\"scroll\":375,\"cyrillic\":null,\"clippedControls\":[]}"
+
+> errors
+
+> snapshot -i
+- generic "Sign inSign inSign in to your workspaceReading historyWe will keep your page address and search quer" [ref=e1] clickable [onclick]
+  - button "Go to home" [ref=e2]
+  - button "Sign in" [ref=e3]
+  - button "Menu" [expanded=false, ref=e4]
+  - textbox "Search resources and learning paths" [ref=e7]
+  - heading "Sign in to your workspace" [level=1, ref=e5]
+  - textbox "Message code" [ref=e8]
+  - button "Sign in" [ref=e9]
+  - button "Get demo code again" [ref=e10]
+  - button "Change email or phone" [ref=e11]
+  - button "Return without signing in" [ref=e6]
+
+> fill @e8 123456
+✓ Done
+
+> snapshot -i
+- generic "Sign inSign inSign in to your workspaceReading historyWe will keep your page address and search quer" [ref=e1] clickable [onclick]
+  - button "Go to home" [ref=e2]
+  - button "Sign in" [ref=e3]
+  - button "Menu" [expanded=false, ref=e4]
+  - textbox "Search resources and learning paths" [ref=e7]
+  - heading "Sign in to your workspace" [level=1, ref=e5]
+  - textbox "Message code" [ref=e8]: 123456
+  - button "Sign in" [ref=e9]
+  - button "Get demo code again" [ref=e10]
+  - button "Change email or phone" [ref=e11]
+  - button "Return without signing in" [ref=e6]
+
+> click @e9
+✓ Done
+
+> wait 800
+✓ Done
+
+> eval JSON.stringify({url:location.href,lang:document.documentElement.lang,text:document.body.innerText,width:innerWidth,scroll:document.documentElement.scrollWidth,cyrillic:document.body.innerText.match(/[^\n]*[А-Яа-яЁё][^\n]*/g),clippedControls:[...document.querySelectorAll("button,a")].filter(e=>e.getClientRects().length).filter(e=>{const r=e.getBoundingClientRect();return r.left<0||r.right>innerWidth+1||e.scrollWidth>e.clientWidth+2}).map(e=>e.textContent)})
+"{\"url\":\"http://127.0.0.1:5174/history?source=stage04&lang=en\",\"lang\":\"en\",\"text\":\"NA\\nPersonal · reference library\\nReading history\\n\\n0 resources · your history only\\n\\nRemoving an entry reduces resources read. Eligibility stays the same. You can undo this.\\n\\nNo reading history yet\\nOpen and read a resource to see it here. You can then find it again by title and date.\\nFind a resource\\n\\nYour history is private. Reading adds to resources read. Eligibility changes when you complete path units.\\n\\nYou are signed in. Resources you open will be added to your history automatically.\",\"width\":375,\"scroll\":375,\"cyrillic\":null,\"clippedControls\":[]}"
+
+> errors
+
+> console
+[debug] [vite] connecting...
+[debug] [vite] connected.
+[info] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[debug] [vite] connecting...
+[debug] [vite] connected.
+[info] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[debug] [vite] connecting...
+[debug] [vite] connected.
+[info] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+
+> close
+✓ Browser closed

@@ -2,13 +2,14 @@
 import { createRequire } from 'node:module';
 import { mkdirSync } from 'node:fs';
 import path from 'node:path';
+import { verifyImages } from './lib/verify-images.mjs';
 
 const playwrightRepo = process.env.PLAYWRIGHT_REPO ?? 'D:/Claude-projects/b2b-dssl';
 const require = createRequire(path.join(playwrightRepo, 'package.json'));
 const { chromium } = require('playwright');
 
 const origin = process.env.PORTFOLIO_ORIGIN ?? 'http://127.0.0.1:4322';
-const slugs = ['agent-ops-console', 'partner-portal', 'vet-clinic', 'pawly'];
+const slugs = ['agent-ops-console', 'partner-portal', 'vet-clinic', 'pawly', 'learn'];
 const routes = [
   { path: '/', locale: 'en', switchPath: '/ru/', cv: '/cv.pdf' },
   { path: '/about', locale: 'en', switchPath: '/ru/about', cv: '/cv.pdf' },
@@ -41,6 +42,7 @@ for (const route of routes) {
     if (!response || response.status() !== 200) fail(route.path, width, `HTTP ${response?.status() ?? 'no response'}`);
     await page.evaluate(() => document.fonts.ready);
     await page.waitForTimeout(100);
+    const broken = await verifyImages(page);
 
     const result = await page.evaluate(({ locale, switchPath, cv }) => {
       const exactPath = (href) => {
@@ -77,17 +79,7 @@ for (const route of routes) {
     if (result.untranslatedRu.length) fail(route.path, width, `untranslated UI: ${result.untranslatedRu.join(', ')}`);
     if (consoleErrors.length) fail(route.path, width, `console: ${[...new Set(consoleErrors)].join(' | ')}`);
 
-    if (width === 1440) {
-      await page.evaluate(() => {
-        for (const image of document.images) image.loading = 'eager';
-        window.scrollTo(0, document.documentElement.scrollHeight);
-      });
-      await page.waitForTimeout(500);
-      const broken = await page.evaluate(() => [...document.images]
-        .filter((image) => image.getAttribute('src') && image.complete && image.naturalWidth === 0)
-        .map((image) => image.currentSrc || image.src));
-      if (broken.length) fail(route.path, width, `broken images: ${broken.join(', ')}`);
-    }
+    if (broken.length) fail(route.path, width, `broken images: ${broken.join(', ')}`);
   }
 }
 

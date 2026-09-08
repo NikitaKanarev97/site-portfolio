@@ -1,0 +1,6 @@
+
+> learn-ds@0.1.0 routes
+> esbuild scripts/routes-smoke.tsx --bundle --platform=node --format=cjs --outfile=node_modules/.cache/routes-smoke.cjs --loader:.css=empty --jsx=automatic --log-level=error && node node_modules/.cache/routes-smoke.cjs
+
+
+Оба прохода чисты: 137 роутов × 2.

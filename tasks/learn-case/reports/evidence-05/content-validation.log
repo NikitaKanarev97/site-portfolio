@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "sourceEntries": 612,
+  "numericKeys": 612,
+  "runtimeKeys": 612,
+  "uiKeys": 665,
+  "duplicateSourceGroups": [],
+  "uiOverlaps": [],
+  "coverage": "100%",
+  "checks": [
+    "exact ID and source-key coverage",
+    "duplicate source consistency",
+    "nonempty translations",
+    "placeholders including repetitions",
+    "boundary whitespace",
+    "no untranslated Cyrillic",
+    "runtime/by-ID equality",
+    "UI override conflicts"
+  ]
+}

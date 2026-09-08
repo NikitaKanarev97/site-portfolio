@@ -1,0 +1,48 @@
+
+> site-portfolio@0.1.0 sync:learn
+> node scripts/sync-learn-prototypes.mjs
+
+
+> learn-ds@0.1.0 build
+> tsc -b && vite build --base=/prototypes/learn/
+
+vite v8.2.2 building client environment for production...
+transforming...
+✓ 1999 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.91 kB │ gzip:   0.50 kB
+dist/assets/index-BohHRyoA.css   83.62 kB │ gzip:  12.72 kB
+dist/assets/index-TZGS3bws.js   698.87 kB │ gzip: 208.61 kB
+
+✓ built in 564ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+> landing-app@0.0.0 build
+> tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir .ssr && node scripts/prerender.mjs
+
+vite v8.2.2 building client environment for production...
+transforming...
+✓ 30 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   1.81 kB │ gzip:  0.79 kB
+dist/assets/index-DrVevFI2.css   30.84 kB │ gzip:  6.53 kB
+dist/assets/motion-CiLNXSEs.js  118.52 kB │ gzip: 46.50 kB
+dist/assets/index-BMppoM_K.js   266.39 kB │ gzip: 79.67 kB
+
+✓ built in 840ms
+vite v8.2.2 building ssr environment for production...
+transforming...
+✓ 10 modules transformed.
+rendering chunks...
+computing gzip size...
+.ssr/assets/entry-server-CiV1H3gg.js  95.07 kB │ gzip: 22.04 kB
+
+✓ built in 52ms
+Prerendered 7 public pages + 404 in RU and EN at /prototypes/learn-landing/. No client React or hydration.
+Learn exported with 128 reloadable product routes and both landing languages.

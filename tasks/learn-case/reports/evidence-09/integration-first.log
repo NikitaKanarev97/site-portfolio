@@ -1,0 +1,17 @@
+
+> site-portfolio@0.1.0 verify:learn
+> node scripts/verify-learn-integration.mjs
+
+110 page/locale/viewport checks; 12 failures.
+en 360px /work/learn/: missing images http://127.0.0.1:4322/work/learn/
+en 768px /work/learn/: missing images http://127.0.0.1:4322/work/learn/
+en 1440px /work/learn/: missing images http://127.0.0.1:4322/work/learn/
+en 1440px /prototypes/learn-landing/en/?lang=en#program: HTTP undefined
+en 1440px /prototypes/learn-landing/en/?lang=en#approach: HTTP undefined
+en 1440px /prototypes/learn-landing/en/?lang=en#qualification: HTTP undefined
+ru 360px /ru/work/learn/: missing images http://127.0.0.1:4322/ru/work/learn/
+ru 768px /ru/work/learn/: missing images http://127.0.0.1:4322/ru/work/learn/
+ru 1440px /ru/work/learn/: missing images http://127.0.0.1:4322/ru/work/learn/
+ru 1440px /prototypes/learn-landing/?lang=ru#program: HTTP undefined
+ru 1440px /prototypes/learn-landing/?lang=ru#approach: HTTP undefined
+ru 1440px /prototypes/learn-landing/?lang=ru#qualification: HTTP undefined

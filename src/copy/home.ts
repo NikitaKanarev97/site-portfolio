@@ -18,6 +18,7 @@
  * ради формы файла текстов не стоит.
  */
 import { NAME } from './site.ts';
+import { learn } from './cases/learn.ts';
 
 /**
  * Не подтверждено владельцем: URL взяты из PROJECT.md §Референсы, где те же
@@ -64,7 +65,7 @@ export const home = {
   },
 
   /**
-   * Открытые кейсы. С 2026-08-27 их четыре, и секция остаётся списком:
+   * Открытые кейсы. С добавлением Learn их пять, и секция остаётся списком:
    * разметка index.astro повторяет паттерн FeaturedCaseCover по числу
    * записей, новых компонентов не заводится (ds/screens/case-vet.md §Что
    * этот экран меняет на главной).
@@ -82,6 +83,8 @@ export const home = {
    *
    * Порядок обязан совпадать с реестром src/copy/cases/index.ts: оттуда
    * разворачиваются sitemap, hreflang и OG-карточки.
+   * 2026-09-09 владелец поставил Learn третьим, после Partner Portal:
+   * рабочий проект, переосмысленный для портфолио, перед двумя концептами.
    */
   featured: {
     eyebrow: 'Selected work',
@@ -135,6 +138,22 @@ export const home = {
         ],
         coverAlt:
           'B2B Partner Portal: specification review screen with forty-eight imported lines and their resolution status, with two more screens of the portal behind it',
+      },
+      {
+        href: '/work/learn',
+        title: learn.header.title,
+        outcome:
+          'Find a technical answer or complete a programme — with reading and progress kept distinct.',
+        meta: [
+          { term: 'Product', value: 'B2B learning platform, redesign' },
+          { term: 'Revisited', value: '2026' },
+          { term: 'Role', value: 'Product Designer' },
+          { term: 'Platform', value: 'Responsive web · product and landing · EN / RU' },
+          { term: 'Project', value: 'Work project revisited · current prototype' },
+        ],
+        cta: 'Read the case',
+        cover: learn.cover.screens,
+        coverAlt: learn.cover.alt,
       },
       {
         href: '/work/vet-clinic',

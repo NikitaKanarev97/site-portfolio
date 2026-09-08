@@ -14,6 +14,7 @@ import { agentOpsConsole } from './agent-ops-console.ts';
 import { partnerPortal } from './partner-portal.ts';
 import { vetClinic } from './vet-clinic.ts';
 import { pawly } from './pawly.ts';
+import { learn } from './learn.ts';
 
 /**
  * Порядок значим и совпадает с `home.featured.items`: из этого массива
@@ -25,7 +26,9 @@ import { pawly } from './pawly.ts';
  * доказательной силы, а не хронология. Agent Ops единственный прошёл полный
  * цикл на живом заказе — платный клиент, живые интервью, юзер-тест прототипа
  * и приёмка заказчиком.
+ * 2026-09-09: по решению владельца Learn поставлен третьим — после
+ * коммерческого Partner Portal, перед концептами Vet Clinic OS и Pawly.
  */
-export const cases = [agentOpsConsole, partnerPortal, vetClinic, pawly];
+export const cases = [agentOpsConsole, partnerPortal, learn, vetClinic, pawly];
 
 export type Case = (typeof cases)[number];

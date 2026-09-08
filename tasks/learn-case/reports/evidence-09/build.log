@@ -1,0 +1,77 @@
+
+> site-portfolio@0.1.0 build
+> astro build
+
+23:44:23 [content] Syncing content
+23:44:23 [content] Synced content
+23:44:23 [types] Generated 48ms
+23:44:23 [build] output: "static"
+23:44:23 [build] mode: "static"
+23:44:23 [build] directory: D:\Claude-projects\Site-portfolio\dist\
+23:44:23 [build] Collecting build info...
+23:44:23 [build] ✓ Completed in 67ms.
+23:44:23 [build] Building static entrypoints...
+23:44:25 [vite] ✓ built in 1.53s
+23:44:25 [build] ✓ Completed in 1.57s.
+
+ building client (vite) 
+23:44:25 [vite] transforming...
+23:44:25 [vite] ✓ 29 modules transformed.
+23:44:25 [vite] rendering chunks...
+23:44:25 [vite] computing gzip size...
+23:44:25 [vite] dist/_astro/page.IvKoM_B8.js                                                 0.05 kB │ gzip:  0.07 kB
+23:44:25 [vite] dist/_astro/index.BbWtjHji.js                                                2.30 kB │ gzip:  1.05 kB
+23:44:25 [vite] dist/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js   13.11 kB │ gzip:  4.54 kB
+23:44:25 [vite] dist/_astro/BaseLayout.astro_astro_type_script_index_0_lang.BHTcWTy9.js    126.87 kB │ gzip: 50.16 kB
+23:44:25 [vite] ✓ built in 471ms
+
+ generating static routes 
+23:44:25 ▶ src/pages/404.astro
+23:44:25   └─ /404.html (+13ms) 
+23:44:25 ▶ src/pages/500.astro
+23:44:25   └─ /500.html (+3ms) 
+23:44:25 ▶ src/pages/about.astro
+23:44:25   └─ /about/index.html (+6ms) 
+23:44:25 ▶ src/pages/index.astro
+23:44:25   └─ /index.html (+13ms) 
+23:44:25 ▶ src/pages/kit.astro
+23:44:25   └─ /kit/index.html (+12ms) 
+23:44:26 λ src/pages/og/[card].png.ts
+23:44:26   ├─ /og/default.png (+124ms) 
+23:44:26   ├─ /og/about.png (+84ms) 
+23:44:26   ├─ /og/work-agent-ops-console.png (+68ms) 
+23:44:26   ├─ /og/work-partner-portal.png (+89ms) 
+23:44:26   ├─ /og/work-vet-clinic.png (+88ms) 
+23:44:26   ├─ /og/work-pawly.png (+51ms) 
+23:44:26   ├─ /og/work-learn.png (+67ms) 
+23:44:26   ├─ /og/default-ru.png (+95ms) 
+23:44:26   ├─ /og/about-ru.png (+85ms) 
+23:44:26   ├─ /og/work-agent-ops-console-ru.png (+95ms) 
+23:44:26   ├─ /og/work-partner-portal-ru.png (+110ms) 
+23:44:26   ├─ /og/work-vet-clinic-ru.png (+92ms) 
+23:44:27   ├─ /og/work-pawly-ru.png (+71ms) 
+23:44:27   └─ /og/work-learn-ru.png (+71ms) 
+23:44:27 λ src/pages/robots.txt.ts
+23:44:27   └─ /robots.txt (+1ms) 
+23:44:27 ▶ src/pages/ru/about.astro
+23:44:27   └─ /ru/about/index.html (+3ms) 
+23:44:27 ▶ src/pages/ru/index.astro
+23:44:27   └─ /ru/index.html (+4ms) 
+23:44:27 ▶ src/pages/ru/work/[slug].astro
+23:44:27   ├─ /ru/work/agent-ops-console/index.html (+23ms) 
+23:44:27   ├─ /ru/work/partner-portal/index.html (+21ms) 
+23:44:27   ├─ /ru/work/vet-clinic/index.html (+21ms) 
+23:44:27   ├─ /ru/work/pawly/index.html (+21ms) 
+23:44:27   └─ /ru/work/learn/index.html (+7ms) 
+23:44:27 λ src/pages/sitemap.xml.ts
+23:44:27   └─ /sitemap.xml (+2ms) 
+23:44:27 ▶ src/pages/work/[slug].astro
+23:44:27   ├─ /work/agent-ops-console/index.html (+20ms) 
+23:44:27   ├─ /work/partner-portal/index.html (+22ms) 
+23:44:27   ├─ /work/vet-clinic/index.html (+20ms) 
+23:44:27   ├─ /work/pawly/index.html (+20ms) 
+23:44:27   └─ /work/learn/index.html (+5ms) 
+23:44:27 ✓ Completed in 1.62s.
+
+23:44:27 [build] 17 page(s) built in 3.83s
+23:44:27 [build] Complete!
