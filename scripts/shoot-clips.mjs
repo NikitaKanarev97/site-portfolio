@@ -438,9 +438,14 @@ const CASES = {
     clips: [
       {
         out: 'clip-review-decision',
-        /** Артборд консоли — тот же, что у кадров кейса. Высота чётная: yuv420p. */
-        width: 1640,
-        height: 1024,
+        /**
+         * Артборд консоли — тот же, что у кадров кейса (`shoot-agent-ops-frames.mjs`
+         * §VIEWPORT). Поднят с 1640×1024 доводкой 09.09.2026 вслед за артбордом:
+         * на прежней высоте очередь получила внутреннюю прокрутку и роняла из
+         * кадра футер таблицы. Высота чётная: yuv420p.
+         */
+        width: 1920,
+        height: 1200,
         /**
          * Фраза обоснования. Это публикуемый текст, а не тестовые данные:
          * она видна в кадре на обеих версиях сайта. Сказанное в ней —
@@ -456,7 +461,8 @@ const CASES = {
         async open(page, { origin, prefix, settle }) {
           await page.goto(`${origin}${prefix}/`, { waitUntil: 'networkidle' });
           await settle();
-          await page.getByRole('link', { name: /Martin K./ }).first().click();
+          await page.locator('[data-track="shell:role-switch"]').first().click();
+          await page.getByRole('menuitem', { name: /Martin K./ }).first().click();
           await page.waitForTimeout(250);
           await page.evaluate((to) => {
             window.history.pushState(null, '', to);

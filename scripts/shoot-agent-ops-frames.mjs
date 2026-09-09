@@ -9,11 +9,21 @@
  * прибиты к нижнему краю через `position: sticky`. Снятый на 900 экран режет
  * последнюю строку таблицы пополам — проверено 2026-08-27 на `review-queue`.
  *
- * Поэтому viewport здесь `1640×1025`. Это те же 16:10 (1640/1025 = 1.6), но
- * высота вмещает артборд целиком: ни одна строка, полоса и кнопка не обрезана.
- * Ширина уходит в поля полосы контента — оболочка консоли текучая, и на 1640
- * она просто дышит свободнее. Ни один кадр этого кейса не кропается после
- * съёмки: то, что видно в кадре, — это весь экран.
+ * Поэтому viewport здесь `1920×1200`. Это те же 16:10, но высота вмещает
+ * артборд целиком: ни одна строка, полоса и кнопка не обрезана. Ширина уходит
+ * в поля полосы контента — оболочка консоли текучая, и шире она просто дышит
+ * свободнее. Ни один кадр этого кейса не кропается после съёмки: то, что видно
+ * в кадре, — это весь экран.
+ *
+ * **Было `1640×1025` до 09.09.2026.** Доводка добавила подвал рельса
+ * (`ShiftPanel`) и подняла строки таблиц: на 1025 пять экранов из десяти
+ * получили внутреннюю прокрутку — очередь на 172 px, качество на 92,
+ * предпросмотр последствия на 71, согласования на 47, сравнение версий на 39.
+ * В кадре это выглядело как обрезанная последняя строка вместо футера
+ * «Showing 7 of 91». Три экрана из десяти идут в стопку обложки и обязаны
+ * держать 16:10, поэтому высота поднята вместе с шириной, а не отдельно:
+ * 1200 = 1025 + 175, ширина следом. На 1920×1200 прокрутки не остаётся ни на
+ * одном из десяти (замер 09.09.2026).
  *
  * Остальное совпадает с прежней нормой (`scripts/shoot-case-frames.mjs`):
  * `deviceScaleFactor` 1.5, выход `2000×1250` WebP q82, обработка только
@@ -26,8 +36,9 @@
  *             решений через `MediaFrame ratio=natural` — кадр один и тот же,
  *             второй раз не переснимается.
  *
- *   page      Страница своей высоты — только индекс экранов прототипа.
- *             Единственный кадр не из консоли, поэтому `fullPage`.
+ *   page      Страница вне оболочки консоли — только индекс экранов
+ *             прототипа. С 09.09.2026 снимается тем же артбордом, что и
+ *             экраны: разбор — в комментарии к `PAGES`.
  *
  *   story     Ячейка `CaseSystemGrid`: история `AllVariants` из каталога.
  *             Обрезки по содержимому нет: `.storybook-canvas` уже несёт своё
@@ -38,7 +49,7 @@
  *             стоило бы обрезанного варианта в доказательстве матрицы.
  *
  * Роль в `TopStrip` не декорация: очередь подтверждений принадлежит Shift Lead,
- * автономия и качество — Policy Owner. Роль переключается ссылкой на индексе,
+ * автономия и качество — Policy Owner. Роль переключается меню роли на индексе,
  * дальше маршрут открывается **внутри SPA** (`pushState` + `popstate`), а не
  * `goto`: бэкенда нет, состояние живёт в памяти, и перезагрузка начала бы смену
  * заново — вместе с ролью.
@@ -67,7 +78,7 @@ const ROUTE_PREFIX = LOCALE === 'ru' ? '/ru' : '';
 const STORY_GLOBALS = LOCALE === 'ru' ? '&globals=locale:ru' : '';
 
 /** Одна норма на все кадры консоли. Меняется здесь и нигде больше. */
-const VIEWPORT = { width: 1640, height: 1025 };
+const VIEWPORT = { width: 1920, height: 1200 };
 const DEVICE_SCALE_FACTOR = 1.5;
 const VIEWPORT_OUTPUT = { width: 2000, height: 1250 };
 const WEBP_QUALITY = 82;
@@ -95,8 +106,8 @@ const SCREENS = [
   { file: 'review-queue.webp', route: '/screens/review-queue', role: 'reviewer', cover: 'review-queue.webp' },
   { file: 'run-detail.webp', route: '/screens/run-detail?run=run-cl-promo-01', role: 'reviewer', cover: 'run-detail.webp' },
   { file: 'action-approvals.webp', route: '/screens/action-approvals', role: 'lead', cover: 'action-approvals.webp' },
-  { file: 'cluster-detail.webp', route: '/screens/cluster-detail?cluster=cl-promo', role: 'reviewer', height: 1060 },
-  { file: 'trace-gap-state.webp', route: '/screens/trace-gap-state', role: 'reviewer', height: 1580 },
+  { file: 'cluster-detail.webp', route: '/screens/cluster-detail?cluster=cl-promo', role: 'reviewer', height: 1255 },
+  { file: 'trace-gap-state.webp', route: '/screens/trace-gap-state', role: 'reviewer', height: 1750 },
   { file: 'consequence-preview.webp', route: '/screens/consequence-preview', role: 'lead' },
   { file: 'correction.webp', route: '/screens/correction?run=run-cl-promo-01', role: 'reviewer' },
   { file: 'autonomy.webp', route: '/screens/autonomy', role: 'owner' },
@@ -105,20 +116,32 @@ const SCREENS = [
 ];
 
 /**
- * Индекс экранов прототипа — единственная страница вне оболочки консоли,
- * поэтому единственный `fullPage`.
+ * Индекс экранов прототипа.
  *
- * Ширина 1000, а не 1640, и это выведено из соседа по ряду, а не из вкуса.
- * Оба артефакта блока процесса стоят в одном ряду `case-artifacts` двумя
- * равными колонками с `ratio=natural`, то есть выравниваются по верху и
- * растут вниз каждый по своей пропорции. Матрица кнопки — 5 состояний на
- * 12 строк, её пропорция 0.74 и от ширины колонки каталога не зависит.
- * Индекс на 1640 раскладывается в шесть колонок и даёт 1.54: правая
- * картинка уходила вниз вдвое дальше левой, и ряд читался как ошибка
- * вёрстки. На 1000 индекс раскладывается в четыре колонки и даёт 0.68 —
- * пара сходится, как в кейсе Vet Clinic OS (0.71 против 0.69).
+ * **Переснят кадром артборда 09.09.2026.** До доводки индекс был списком
+ * карточек с подписями: на 1000 он раскладывался в четыре колонки и давал
+ * 1.47 — пара с матрицей кнопки (1.35) сходилась. Коммит `e57ca3c` заменил
+ * подписи живыми превью экранов, и та же страница целиком выросла до 1500×7688
+ * (пропорция 5.13): в колонке ряда `case-artifacts` шириной ~604 px это
+ * двухтысячепиксельная кишка, в которой каждое превью — 180 px мутного шума.
+ *
+ * Поэтому индекс снимается кадром 1920×1250, без `fullPage`. В кадр попадают
+ * шапка со счётчиками «19 screens · 44 DS components» и **первая группа
+ * целиком** — пять экранов раздела Supervise: число экранов заявлено в самом
+ * кадре, а живое превью видно в масштабе, в котором его можно рассмотреть.
+ *
+ * 1250 — не 16:10, а замер: нижняя карточка группы кончается на 1229 в обеих
+ * локалях, дальше идёт промежуток до заголовка следующей группы. Резать по
+ * 1200 значило бы оставить в кадре ряд карточек, разрезанный пополам.
+ * Пропорция кадра 0.66, у матрицы кнопки рядом — 0.74 (см. `STORIES`).
+ *
+ * `settle` для этой страницы отдельный: превью монтируются `IntersectionObserver`
+ * с запасом в экран (`src/screens/ScreenPreview.tsx`), и без прокрутки страницы
+ * нижние карточки остаются пустыми прямоугольниками. Кадр берёт только верх, но
+ * прокрутка проходит всю страницу и возвращается — иначе первый ряд успевает,
+ * а второй не всегда.
  */
-const PAGES = [{ file: 'screen-index.webp', route: '/', width: 1000 }];
+const PAGES = [{ file: 'screen-index.webp', route: '/', height: 1250 }];
 
 /**
  * Ячейки `CaseSystemGrid` плюс матрица кнопки для блока процесса.
@@ -127,6 +150,14 @@ const PAGES = [{ file: 'screen-index.webp', route: '/', width: 1000 }];
  * ужимается по содержимому, и матрица схлопывается в одну колонку без явной
  * ширины. 760 — общая; 1160 у двух компонентов, которым 760 мало (полоса
  * вердикта теряет `Submit`, лестница автономии — колонку уровня справа).
+ *
+ * У матрицы кнопки ширина 1800, а не 1160, и она подчинена соседу по ряду.
+ * `.story-grid` идёт `repeat(auto-fit, minmax(180px, 1fr))`, то есть число
+ * колонок задаётся шириной: 1160 даёт пять колонок и пропорцию 1.48, 1600 —
+ * восемь колонок и 0.74. Индекс рядом даёт 0.66, и пара сходится; портрет 1.48
+ * рядом с ним читался бы как ошибка вёрстки — та же находка, из-за которой
+ * индекс когда-то снимали на 1000. Ни одна ячейка от ширины не теряется:
+ * матрица та же, меняется только раскладка.
  */
 const STORIES = [
   { file: 'system-amount-figure.webp', id: 'components-amountfigure--all-variants', width: 760 },
@@ -135,7 +166,7 @@ const STORIES = [
   { file: 'system-empty-state.webp', id: 'components-emptystate--all-variants', width: 760 },
   { file: 'system-autonomy-ladder.webp', id: 'components-autonomyladder--all-variants', width: 1160 },
   { file: 'system-trail-step.webp', id: 'components-trailstep--all-variants', width: 760 },
-  { file: 'storybook-matrix.webp', id: 'components-button--all-variants', width: 1160 },
+  { file: 'storybook-matrix.webp', id: 'components-button--all-variants', width: 1600 },
 ];
 
 /**
@@ -207,12 +238,20 @@ async function shoot() {
     }
   }
 
-  /** Роль ставится ссылкой на индексе: перезагрузка начала бы смену заново. */
+  /**
+   * Роль ставится меню роли на индексе: перезагрузка начала бы смену заново.
+   *
+   * До доводки 09.09.2026 здесь стояли три подчёркнутые ссылки, и роль
+   * выбиралась `getByRole('link')`. `PP-006` свёл их в один переключатель:
+   * кнопка с `aria-haspopup="menu"` и меню под ней. Триггер берётся по
+   * `data-track`, а не по `aria-label`: подпись кнопки переводится на
+   * русской локали, атрибут трекинга — нет.
+   */
   async function useRole(role) {
     await page.goto(`${ORIGIN}${ROUTE_PREFIX}/`, { waitUntil: 'networkidle' });
     await settle();
-    const link = page.getByRole('link', { name: new RegExp(ROLE_LINK[role]) }).first();
-    await link.click();
+    await page.locator('[data-track="shell:role-switch"]').first().click();
+    await page.getByRole('menuitem', { name: new RegExp(ROLE_LINK[role]) }).first().click();
     await page.waitForTimeout(200);
   }
 
@@ -231,9 +270,11 @@ async function shoot() {
      * следствие того же правила: ничего не резать. Таблица кластера на
      * семнадцать строк и сравнение четырёх весов пробела не помещаются в
      * артборд 1025 — на нижнем краю остаётся строка, разрезанная пополам
-     * прилипшим футером, и половина второй пары карточек. Высоты 1060 и
-     * 1580 сняты замером `scrollHeight` области контента: это минимум, при
-     * котором прокрутки внутри экрана не остаётся вовсе. Оба кадра идут
+     * прилипшим футером, и половина второй пары карточек. Высоты 1255 и
+     * 1750 сняты замером `scrollHeight` области контента: это минимум, при
+     * котором прокрутки внутри экрана не остаётся вовсе. Оба числа выросли
+     * после доводки 09.09.2026 (было 1060 и 1580): строки таблицы кластера
+     * и карточки весов пробела стали выше. Оба кадра идут
      * `MediaFrame ratio=natural` и в стопку обложки не попадают, поэтому
      * 16:10 им не нужно.
      */
@@ -268,7 +309,7 @@ async function shoot() {
   }
 
   for (const frame of PAGES) {
-    if (frame.width) await page.setViewportSize({ width: frame.width, height: VIEWPORT.height });
+    await page.setViewportSize({ ...VIEWPORT, height: frame.height });
 
     /* Роль ставится и здесь, хотя индекс её не показывает содержанием: она
        стоит в строке переключателя, и без этого кадр унаследовал бы роль
@@ -276,9 +317,24 @@ async function shoot() {
        Индекс — точка входа, и входят в неё Reviewer'ом, как на обложке. */
     await useRole('reviewer');
     await settle();
+
+    /* Живые превью монтируются по пересечению с областью просмотра. Кадр
+       берёт только верх страницы, но прокрутка проходит её целиком: без
+       этого карточки второго ряда попадают в кадр пустыми прямоугольниками
+       (`src/screens/ScreenPreview.tsx`, rootMargin 100%). */
+    await page.evaluate(async () => {
+      const step = window.innerHeight;
+      for (let y = 0; y < document.body.scrollHeight; y += step) {
+        window.scrollTo(0, y);
+        await new Promise((resolve) => setTimeout(resolve, 120));
+      }
+      window.scrollTo(0, 0);
+    });
+    await page.waitForTimeout(600);
+    await settle();
     await assertLocale(page, frame.route);
 
-    const raw = await page.screenshot({ type: 'png', fullPage: true });
+    const raw = await page.screenshot({ type: 'png' });
     const out = path.join(MEDIA_DIR, frame.file);
 
     await sharp(raw)
@@ -286,7 +342,7 @@ async function shoot() {
       .webp({ quality: WEBP_QUALITY })
       .toFile(out);
 
-    if (frame.width) await page.setViewportSize(VIEWPORT);
+    await page.setViewportSize(VIEWPORT);
 
     console.log(frame.route);
     await report(out);

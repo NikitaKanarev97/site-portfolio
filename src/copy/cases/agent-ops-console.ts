@@ -32,6 +32,17 @@
  * обоснования рядом с полновесными соседними секциями. Бюджет по блокам —
  * ds/screens/case-agent-ops.md §Бюджет слов.
  *
+ * **09.09.2026: лимит превышен осознанно, ~2 614.** В `process` добавлен
+ * четвёртый абзац — стадия продуктовой доводки, пройденная после приёмки
+ * прототипа. Разбор размена — там же, ds/screens/case-agent-ops.md
+ * §Бюджет слов.
+ *
+ * **Числа дизайн-системы держатся кодом прототипа, не документом.**
+ * 92 примитива и 79 смысловых токенов — счёт по `src/tokens/{primitives,
+ * semantics}.css`, 17 TextStyles — по `typography.css`, 44 компонента и
+ * 372 варианта — `ds/components.md` §Итого. Строка «Итого 70» в шапке
+ * `ds/foundation.md` устарела: она относится к состоянию до доводки.
+ *
  * Сквозные строки — в ../site.ts.
  */
 
@@ -141,6 +152,15 @@ export const agentOpsConsole = {
       'Research ran with the client and with the people who do this work — reviewers today, and the shift leads and policy owners who would inherit the product. Alongside it I audited the QA tool they already used, walked the existing paths for review, refund approval and policy change, and compared products in AI observability, evaluation and human-in-the-loop approval.',
       'Two findings rewrote the brief. The route for one hard conversation ran QA tool → vendor panel → knowledge base → Confluence → Slack and took an hour and a half against a six-minute norm, so the evidence had to arrive inside the verdict card or the product had no reason to exist. And confident prose turned out to be active camouflage: reviewers cannot spot an unsupported claim by reading, and asked for it to be marked — while ruling out the engineering answer, since a confidence score gets the screen dismissed as noise rather than read.',
       'Then the role model — Reviewer, Shift Lead, Policy Owner — the information architecture, the design system, and 18 of 35 scoped artboards assembled into a clickable prototype. Testing it with users added decisions the brief never had: a cluster needs its members visible and removable or reviewers stop trusting clusters at all, a wrong verdict needs a short window to take back before it poisons the reporting, and a reviewer needs to see what happened to their correction, or they quietly stop classifying causes at all.',
+      /**
+       * Стадия продуктовой доводки, пройденная уже после приёмки
+       * (`Agent-ops-console/outputs/case-study.md` §Продуктовая доводка,
+       * разборы `audit/product-polish/report-0*.md`). Абзац стоит последним
+       * в процессе, потому что и работа шла последней; в `failure` она не
+       * идёт намеренно — регрессия ховера найдена и закрыта внутри самой
+       * доводки, а не осталась дефектом сборки.
+       */
+      'After acceptance I ran one more pass, against a complaint that was honestly a matter of taste: the console looked competent and dull. Measuring it made the feeling a number — the hairlines dividing the zones carried 1.32:1 of contrast, the surfaces they divided 1.05–1.08, so shell, working field and blocks stood on one plane. I split the surfaces into three and pushed that through the shared components rather than screen by screen; the transfer then found what no single screen could — three carriers of the shell answered the cursor at 1.000:1 on twelve of them, a hover token having drifted into the colour of the panel beneath it.',
     ],
     prototype: {
       href: PROTOTYPE,
@@ -167,9 +187,9 @@ export const agentOpsConsole = {
     artifacts: [
       {
         src: `${media}/screen-index.webp`,
-        alt: 'Index of the nineteen prototype screens: review, corrections, approvals, policies, autonomy, quality and the system states',
+        alt: 'Head of the prototype index — nineteen screens, forty-four design-system components — above the five screens of the Supervise group, each card rendering the screen itself rather than a picture of it',
         caption:
-          'Nineteen screens on one mock data layer. Thirty-five artboards were scoped; eighteen were built, because the rest could not be reached in a clickable path.',
+          'Nineteen screens on one mock data layer, and the index renders each of them live rather than as a picture of it.',
       },
       {
         src: `${media}/storybook-matrix.webp`,
@@ -247,7 +267,16 @@ export const agentOpsConsole = {
           'Autonomy is granted one capability at a time, on accumulated evidence, and withdrawn automatically.',
         why: 'The client did not want another tool for saying no; they wanted the agent to safely do more over time. Splitting autonomy into capabilities — answer from the knowledge base, extend a trial, issue a credit, refund, change a plan — turns each promotion into a question with a numeric answer: runs, correction rate, severity-1 defects, a regression pass. Demotion needs no meeting: a severity-1 defect drops the level.',
         cost: 'Seven ladders whose evidence has to be kept, and a product that will say “not yet” for weeks. A capability with too few runs cannot be promoted however confident the room feels — which is the point, and the part nobody enjoys.',
+        /**
+         * `layout: 'wide'` с 09.09.2026. После доводки баннер понижения идёт
+         * во всю ширину полосы контента и стал низким: кроп под боковой слот
+         * 453 px пришлось бы резать по правому краю вместе со ссылкой на
+         * прогон, а полоса пропорции 0.10 в нём всё равно нечитаема. Под
+         * текстом решения, в полной мере колонки, тот же кадр идёт масштабом
+         * 0.71. Координаты кропа — scripts/crop-artifacts.mjs.
+         */
         artifact: {
+          layout: 'wide',
           src: `${media}/autonomy-crop.webp`,
           zoomSrc: `${media}/autonomy.webp`,
           alt: 'Autonomy ladder banner: a severity-1 defect drops refund from L3 to L2 automatically',
@@ -258,9 +287,9 @@ export const agentOpsConsole = {
   },
 
   system: {
-    heading: 'Forty-two components, built around the states where the risk actually lives.',
+    heading: 'Forty-four components, built around the states where the risk actually lives.',
     body: [
-      'The system carries 88 primitive and 70 semantic tokens, 17 text styles and 331 declared variants. Nothing in the semantic layer is a pinned value: every token is an alias, defined separately in each of two modes. Dark is the working mode — a console for a shift, not a report — and light is mandatory rather than decorative, because the auditor role prints.',
+      'The system carries 92 primitive and 79 semantic tokens, 17 text styles and 372 declared variants. Nothing in the semantic layer is a pinned value: every token is an alias, defined separately in each of two modes. Dark is the working mode — a console for a shift, not a report — and light is mandatory rather than decorative, because the auditor role prints. Surfaces are three planes rather than one, and a share against its threshold is three tokens of its own.',
       'Storybook renders every declared combination from the same React component the screens import, so the catalogue cannot quietly become a second implementation.',
       'The matrices below are the product under pressure rather than at rest: money that has to read as a figure and not as a colour, a metric that shows nothing rather than a stale number, an empty queue that separates “cleared” from “could not load”, a verdict that can be taken back, and a rollout step that is allowed to fail.',
     ],
