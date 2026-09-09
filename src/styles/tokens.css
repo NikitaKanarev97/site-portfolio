@@ -22,6 +22,13 @@
   --gray-900:  #1B1B18;  /* 17.26:1 */
   --gray-950:  #0D0D0B;
 
+  /* Project artwork: sampled from the five products, not site accents. */
+  --graphite-800: #253332;
+  --blue-100: #DCE7F3;
+  --navy-800: #243C56;
+  --sage-100: #E0EAE4;
+  --sand-100: #EAE2D8;
+
   /* Акцент — приглушённый рыжий, только интерактив */
   --accent-300: #E8845C;  /* 7.31:1 на gray-950 */
   --accent-500: #C1440E;  /* 5.12:1 на белом, 4.77:1 на gray-50 */
@@ -74,12 +81,16 @@
   --radius-sm:   4px;
   --radius-md:   8px;
   --radius-lg:   16px;
+  --radius-xl:   20px;
 
   /* Соотношение кадра. Одно число на весь продукт: 16/10 — пропорция
      реального скриншота, в ней снимаются кадры (scripts/shoot-case-frames.mjs),
      её держит рамка MediaFrame framed и слой стопки ScreenStack. Заведено
      примитивом, потому что мест применения три, а число обязано быть одно. */
   --ratio-16-10: 16 / 10;
+  --ratio-16-9: 16 / 9;
+  --ratio-4-3: 4 / 3;
+  --ratio-1-2: 1 / 2;
 
   /* Отступы — имя = значение / 4 */
   --space-1:  4px;
@@ -173,6 +184,11 @@
   --surface-subtle:               var(--gray-50);
   --surface-inverse:              var(--gray-950);
   --surface-media:                var(--gray-100);
+  --surface-cover-agent:          var(--graphite-800);
+  --surface-cover-portal:         var(--blue-100);
+  --surface-cover-learn:          var(--navy-800);
+  --surface-cover-vet:            var(--sage-100);
+  --surface-cover-pawly:          var(--sand-100);
   --surface-action-primary:       var(--gray-900);
   --surface-action-primary-hover: var(--gray-700);
 
@@ -217,6 +233,11 @@
      — не оформление, а единственное, что отличает слои друг от друга: поворота
      и перспективы в стопке нет (ds/patterns.md §ScreenStack). */
   --ratio-screen:   var(--ratio-16-10);
+  --ratio-cover:    var(--ratio-16-9);
+  --ratio-cover-mobile: var(--ratio-4-3);
+  --ratio-cover-phone: var(--ratio-1-2);
+  --elevation-artwork: var(--shadow-lg);
+  --radius-artwork-detail: var(--radius-xl);
   --stack-dim-near: var(--opacity-80);
   --stack-dim-far:  var(--opacity-60);
 

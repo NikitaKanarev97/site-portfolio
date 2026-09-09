@@ -1,0 +1,61 @@
+---
+import CaseArtwork from './CaseArtwork.astro';
+import { getCaseVisuals } from '../copy/case-visuals.ts';
+import type { home } from '../copy/home.ts';
+
+interface Props {
+  item: (typeof home.featured.items)[number];
+  index: number;
+  locale: 'en' | 'ru';
+}
+const { item, index, locale } = Astro.props;
+const slug = item.href.split('/').filter(Boolean).at(-1)!;
+const visuals = getCaseVisuals(slug, locale);
+const proof = item.meta.at(-1)!;
+const year = item.meta[1];
+---
+
+<a class="featured-case" href={item.href} aria-labelledby={`title-${slug} cta-${slug}`}>
+  <div class="featured-case__head">
+    <div class="featured-case__identity">
+      <span class="ds-meta-xs featured-case__number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+      <h2 class="ds-heading-3xl" id={`title-${slug}`}>{item.title}</h2>
+    </div>
+    <p class="ds-body-base featured-case__outcome">{item.outcome}</p>
+  </div>
+  <CaseArtwork slug={visuals.slug} artwork={visuals.cover} loading={index === 0 ? 'eager' : 'lazy'} />
+  <div class="featured-case__foot">
+    <div class="featured-case__facts ds-body-sm">
+      <span class="featured-case__year ds-meta-sm"><span class="ds-visually-hidden">{year.term}: </span>{year.value}</span>
+      <span><span class="ds-visually-hidden">{proof.term}: </span>{proof.value}</span>
+    </div>
+    <span class="featured-case__cta ds-body-sm" id={`cta-${slug}`}>
+      {item.cta}<span aria-hidden="true">↗</span>
+    </span>
+  </div>
+</a>
+
+<style>
+  .featured-case { display: grid; gap: var(--flow-text); color: var(--text-default); text-decoration: none; }
+  .featured-case__head { display: grid; gap: var(--space-4); align-items: start; }
+  .featured-case__identity { display: flex; align-items: baseline; gap: var(--space-4); }
+  .featured-case__identity h2 { text-wrap: balance; }
+  .featured-case__number { color: var(--text-meta); flex: none; }
+  .featured-case__outcome { color: var(--text-subtle); text-wrap: pretty; }
+  .featured-case__foot { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: var(--space-3) var(--space-6); }
+  .featured-case__facts { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-6); color: var(--text-subtle); }
+  .featured-case__year { color: var(--text-meta); }
+  .featured-case__cta { display: inline-flex; flex: none; gap: var(--space-3); color: var(--text-link); }
+  .featured-case__cta > span { transition: transform var(--motion-hover-duration) var(--motion-hover-ease); }
+  .featured-case:focus-visible { outline-offset: var(--space-2); }
+  .featured-case:active .featured-case__cta { color: var(--text-link-pressed); }
+  .featured-case:focus-visible .featured-case__cta { text-decoration: underline; text-underline-offset: var(--space-1); }
+  @media (--can-hover) {
+    .featured-case:hover .featured-case__cta { text-decoration: underline; text-underline-offset: var(--space-1); }
+    .featured-case:hover .featured-case__cta > span { transform: translate(var(--space-1), calc(var(--space-1) * -1)); }
+  }
+  @media (--bp-lg) {
+    .featured-case__head { grid-template-columns: 1fr 1fr; gap: var(--space-16); }
+    .featured-case__foot { margin-inline-start: var(--space-1); }
+  }
+</style>

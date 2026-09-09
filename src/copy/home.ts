@@ -88,6 +88,8 @@ export const home = {
    */
   featured: {
     eyebrow: 'Selected work',
+    expandLabel: 'Show {count} more cases',
+    collapseLabel: 'Show fewer cases',
     items: [
       {
         href: '/work/agent-ops-console',

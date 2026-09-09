@@ -1,5 +1,13 @@
 # Компоненты — Site-portfolio
 
+## `FeaturedCase` / `MoreCases` · 2026-09-09
+
+FeaturedCase исполняет паттерн FeaturedCaseCover: одна ссылка, название и исход, CaseArtwork, год и статус, CTA. Все подписи и факты берутся из home.ts / ru/home.ts. MoreCases — нативный details/summary с компактным списком дополнительных кейсов, динамическим числом и надписями expand/collapse. Состояние сохраняется в sessionStorage, основной путь работает без JS. Носители — EN/RU Home. Используются существующие типографические роли, flow-*, section-gap, text-*, border-* и motion-hover. Фокус и нажатие видимы; скрытые ссылки не попадают в Tab-порядок. Подробная карта — screens/case-presentation.md.
+
+## `CaseArtwork` · 2026-09-09
+
+Композиция реальных продуктовых экранов для обложки или первого визуала кейса. Варианты по slug: agent-ops-console, partner-portal, learn, vet-clinic, pawly; носители `cover`, `hero`, `thumbnail`. Данные и локализованные подписи — `src/copy/case-visuals.ts`. Цвета только surface-cover-*, геометрия ratio-cover / ratio-cover-mobile, радиусы radius-md/lg, тень elevation-artwork. Общая картинка имеет один осмысленный alt; внутренние изображения декоративны. Без перспективы и устройств. Раскрытие только у обложки; thumbnail без движения и с lazy-loading. На узкой ширине собственное кадрирование. Обложка и первый визуал имеют разный состав экранов. Спецификация: `screens/case-presentation.md`.
+
 **Статус:** реализовано 2026-08-24. Код — `src/components/*.astro`, по одному файлу на компонент.
 **Источник состава:** `ia/screens-inventory.md` и `ia/wireframes/`. Двенадцать позиций, каждая имеет носитель на реальном экране. Двенадцатая — `MediaZoom`, заведена 2026-08-25 вместе с увеличением кадров кейса.
 

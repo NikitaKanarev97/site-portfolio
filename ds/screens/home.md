@@ -1,5 +1,7 @@
 # Screen: Home
 
+**Редакция 2026-09-09:** три крупные работы, две дополнительные в раскрываемом списке; новые CaseArtwork вместо стопок, контекст перед изображением. Актуальная карта и критерии — `case-presentation.md`. Старые описания обложек ниже сохраняют историю предыдущей версии.
+
 **Маршрут:** `/` · файл `src/pages/index.astro`
 **Источник:** `ia/wireframes/home.md` (desktop 1440×3582) · `ia/wireframes/mobile-home.md` (375×3396, проверочная 360) · `ia/sitemap.md`
 **Оболочка:** `PageShell` — `Navbar` + содержимое + `ContactBlock` + `Footer` (`ds/patterns.md`)

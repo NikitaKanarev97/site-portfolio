@@ -62,6 +62,21 @@ let transitionsEnabled = false;
  */
 let restoredView = false;
 
+// Native disclosure stays usable without this enhancement. Keep the open list
+// when returning from a case, and restore it before Astro restores the scroll.
+let moreCasesOpen = false;
+try { moreCasesOpen = sessionStorage.getItem('portfolio:more-cases') === 'open'; } catch {}
+function restoreMoreCases(root) {
+  const details = root.querySelector('[data-more-cases]');
+  if (details) details.open = moreCasesOpen;
+}
+document.addEventListener('toggle', (event) => {
+  if (!(event.target instanceof HTMLDetailsElement) || !event.target.matches('[data-more-cases]')) return;
+  moreCasesOpen = event.target.open;
+  try { sessionStorage.setItem('portfolio:more-cases', moreCasesOpen ? 'open' : 'closed'); } catch {}
+  ScrollTrigger.refresh();
+}, true);
+
 /* ------------------------------------------------------------------ */
 /* Утилиты                                                             */
 /* ------------------------------------------------------------------ */
@@ -288,6 +303,7 @@ function buildScrollScenes(root) {
 
 function initPage() {
   const root = document.body;
+  restoreMoreCases(root);
 
   pageMedia = withMotionPreference(
     gsap,
@@ -399,6 +415,7 @@ document.addEventListener('astro:before-preparation', (event) => {
 });
 
 document.addEventListener('astro:before-swap', teardownPage);
+document.addEventListener('astro:before-swap', (event) => restoreMoreCases(event.newDocument));
 
 document.addEventListener('astro:after-swap', () => {
   // Скролл ставит сам роутер, до этого события и без анимации: переход

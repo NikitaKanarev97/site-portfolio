@@ -1,0 +1,127 @@
+---
+import type { Artwork, CaseSlug } from '../copy/case-visuals.ts';
+import { px } from '../lib/tokens.ts';
+
+interface Props {
+  slug: CaseSlug;
+  artwork: Artwork;
+  variant?: 'cover' | 'hero' | 'thumbnail';
+  loading?: 'eager' | 'lazy';
+}
+const { slug, artwork, variant = 'cover', loading = 'lazy' } = Astro.props;
+const crop = artwork.detailCrop;
+const cropStyle = crop ? {
+  '--detail-ratio': `${crop.width} / ${crop.height}`,
+  '--detail-image-width': `${crop.sourceWidth / crop.width * 100}%`,
+  '--detail-x': `${-crop.x / crop.sourceWidth * 100}%`,
+  '--detail-y': `${-crop.y / crop.sourceHeight * 100}%`,
+  '--detail-radius-x': `${px('radius-artwork-detail') / crop.width * 100}%`,
+  '--detail-radius-y': `${px('radius-artwork-detail') / crop.height * 100}%`,
+} : undefined;
+---
+
+<div
+  class:list={['case-artwork', `case-artwork--${slug}`, `case-artwork--${variant}`]}
+  role="img"
+  aria-label={artwork.alt}
+  data-motion={variant === 'cover' ? 'reveal-media' : undefined}
+  data-motion-counter="none"
+  style={cropStyle}
+>
+  <div class="case-artwork__canvas ds-media-mask">
+    {artwork.images.map((src, index) => (
+      <div class:list={['case-artwork__frame', index === 0 ? 'case-artwork__frame--main' : 'case-artwork__frame--detail']} aria-hidden="true">
+        <img src={src} alt="" loading={loading} decoding="async" draggable="false" />
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+  .case-artwork {
+    --artwork-surface: var(--surface-media);
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    isolation: isolate;
+  }
+  .case-artwork__canvas {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: var(--ratio-cover);
+    background: var(--artwork-surface);
+  }
+  .case-artwork__frame {
+    position: absolute;
+    overflow: hidden;
+    border: var(--border-width) solid var(--border-default);
+    border-radius: var(--radius-md);
+    box-shadow: var(--elevation-artwork);
+  }
+  .case-artwork__frame img { width: 100%; height: auto; max-width: none; }
+  .case-artwork__frame--main { width: 86%; inset-inline-start: 7%; inset-block-start: 9%; }
+  .case-artwork__frame--detail { width: 42%; inset-inline-end: 5%; inset-block-end: 7%; }
+
+  .case-artwork--agent-ops-console { --artwork-surface: var(--surface-cover-agent); }
+  .case-artwork--agent-ops-console .case-artwork__frame { border-color: var(--border-inverse); }
+  .case-artwork--agent-ops-console .case-artwork__frame--main { width: 88%; inset-inline-start: 6%; inset-block-start: 8%; }
+
+  .case-artwork--partner-portal { --artwork-surface: var(--surface-cover-portal); }
+  .case-artwork--partner-portal .case-artwork__frame--main { width: 84%; inset-inline-start: 8%; inset-block-start: 10%; }
+
+  .case-artwork--learn { --artwork-surface: var(--surface-cover-learn); }
+  .case-artwork--learn .case-artwork__frame--main { width: 77%; inset-inline-start: 5%; inset-block-start: 9%; }
+  .case-artwork--learn .case-artwork__frame--detail {
+    width: 25%; aspect-ratio: var(--detail-ratio); inset-inline-end: 5%; inset-block-end: 6%;
+    border-radius: calc(var(--detail-radius-x) + var(--border-width)) / calc(var(--detail-radius-y) + var(--border-width));
+  }
+  /* The curriculum's right column is a meaningful detail, not a hidden layer. */
+  .case-artwork--learn .case-artwork__frame--detail img { width: var(--detail-image-width); transform: translate(var(--detail-x), var(--detail-y)); }
+
+  .case-artwork--vet-clinic { --artwork-surface: var(--surface-cover-vet); }
+  .case-artwork--vet-clinic .case-artwork__frame--main { width: 76%; inset-inline-start: 5%; inset-block-start: 9%; }
+  .case-artwork--vet-clinic .case-artwork__frame--detail { width: 49%; inset-inline-end: 5%; inset-block-end: 6%; }
+
+  .case-artwork--pawly { --artwork-surface: var(--surface-cover-pawly); }
+  .case-artwork--pawly .case-artwork__frame--main {
+    width: 69%; height: 90%; inset-inline-start: 15.5%; inset-block-start: 10%; border: 0; border-radius: 0; box-shadow: none;
+  }
+  .case-artwork--pawly .case-artwork__frame--main img { mix-blend-mode: multiply; }
+
+  /* The first image in a case is an independent, inspectable product moment. */
+  .case-artwork--hero.case-artwork--agent-ops-console .case-artwork__frame--main { width: 81%; inset-inline-start: 5%; inset-block-start: 6%; }
+  .case-artwork--hero.case-artwork--agent-ops-console .case-artwork__frame--detail { width: 58%; inset-inline-end: 4%; inset-block-end: 5%; }
+  .case-artwork--hero.case-artwork--partner-portal .case-artwork__frame--main { width: 90%; inset-inline-start: 5%; inset-block-start: 7%; }
+  .case-artwork--hero.case-artwork--vet-clinic .case-artwork__frame--main { width: 86%; inset-inline-start: 7%; inset-block-start: 7%; }
+  .case-artwork--hero.case-artwork--learn .case-artwork__canvas { aspect-ratio: var(--ratio-screen); }
+  .case-artwork--hero.case-artwork--learn .case-artwork__frame--main { width: 90%; inset-inline-start: 5%; inset-block-start: 5%; }
+  .case-artwork--hero.case-artwork--pawly .case-artwork__canvas { aspect-ratio: var(--ratio-screen); }
+  .case-artwork--hero.case-artwork--pawly .case-artwork__frame--main { width: 25%; height: auto; inset-inline-start: 37.5%; inset-block-start: 5%; border-radius: var(--radius-lg); }
+  .case-artwork--hero.case-artwork--pawly .case-artwork__frame--main img { mix-blend-mode: normal; }
+
+  /* Compact rows use the same composition, with no scroll reveal. */
+  .case-artwork--thumbnail { border-radius: var(--radius-md); }
+  .case-artwork--thumbnail .case-artwork__frame { border-radius: var(--radius-sm); }
+
+  @media (--below-bp-md) {
+    .case-artwork { border-radius: var(--radius-md); }
+    .case-artwork__canvas { aspect-ratio: var(--ratio-cover-mobile); }
+    .case-artwork__frame { border-radius: var(--radius-sm); }
+    .case-artwork--agent-ops-console .case-artwork__frame--main { width: 126%; inset-inline-start: -16%; inset-block-start: 8%; }
+    .case-artwork--partner-portal .case-artwork__frame--main { width: 132%; inset-inline-start: -12%; inset-block-start: 8%; }
+    .case-artwork--learn .case-artwork__frame--main { width: 116%; inset-inline-start: 6%; inset-block-start: 8%; }
+    .case-artwork--learn .case-artwork__frame--detail { width: 34%; inset-inline-end: 5%; inset-block-end: 5%; }
+    .case-artwork--vet-clinic .case-artwork__frame--main { width: 106%; inset-inline-start: -7%; inset-block-start: 8%; }
+    .case-artwork--vet-clinic .case-artwork__frame--detail { width: 65%; inset-inline-end: 5%; inset-block-end: 5%; }
+    .case-artwork--pawly .case-artwork__frame--main { width: 89%; inset-inline-start: 5.5%; inset-block-start: 6%; height: 94%; }
+    .case-artwork--hero .case-artwork__canvas { aspect-ratio: var(--ratio-cover-mobile); }
+    .case-artwork--hero.case-artwork--agent-ops-console .case-artwork__frame--main { width: 126%; inset-inline-start: -16%; inset-block-start: 6%; }
+    .case-artwork--hero.case-artwork--agent-ops-console .case-artwork__frame--detail { width: 90%; inset-inline-end: 5%; inset-block-end: 5%; }
+    .case-artwork--hero.case-artwork--partner-portal .case-artwork__frame--main { width: 132%; inset-inline-start: -12%; inset-block-start: 7%; }
+    .case-artwork--hero.case-artwork--vet-clinic .case-artwork__frame--main { width: 116%; inset-inline-start: -8%; inset-block-start: 7%; }
+    .case-artwork--hero.case-artwork--learn .case-artwork__canvas { aspect-ratio: var(--ratio-cover-mobile); }
+    .case-artwork--hero.case-artwork--learn .case-artwork__frame--main { width: 116%; inset-inline-start: 5%; inset-block-start: 6%; }
+    .case-artwork--hero.case-artwork--pawly .case-artwork__canvas { aspect-ratio: var(--ratio-cover-phone); }
+    .case-artwork--hero.case-artwork--pawly .case-artwork__frame--main { width: 80%; inset-inline-start: 10%; inset-block-start: 5%; height: auto; }
+    .case-artwork--thumbnail .case-artwork__canvas { aspect-ratio: var(--ratio-cover-mobile); }
+  }
+</style>

@@ -1,0 +1,73 @@
+---
+import CaseArtwork from './CaseArtwork.astro';
+import { getCaseVisuals } from '../copy/case-visuals.ts';
+import type { home } from '../copy/home.ts';
+
+interface Props {
+  items: (typeof home.featured.items);
+  locale: 'en' | 'ru';
+  expandLabel: string;
+  collapseLabel: string;
+}
+const { items, locale, expandLabel, collapseLabel } = Astro.props;
+---
+
+<details class="more-cases" data-more-cases>
+  <summary class="more-cases__toggle">
+    <span class="ds-body-base more-cases__expand">{expandLabel.replace('{count}', String(items.length))}</span>
+    <span class="ds-body-base more-cases__collapse">{collapseLabel}</span>
+    <span class="more-cases__icon" aria-hidden="true"></span>
+  </summary>
+  <ul class="more-cases__list">
+    {items.map((item) => {
+      const slug = item.href.split('/').filter(Boolean).at(-1)!;
+      const visuals = getCaseVisuals(slug, locale);
+      return (
+        <li>
+          <a class="more-cases__link" href={item.href} aria-labelledby={`more-title-${slug}`}>
+            <div class="more-cases__preview"><CaseArtwork slug={visuals.slug} artwork={visuals.cover} variant="thumbnail" /></div>
+            <div class="more-cases__body">
+              <h2 class="ds-heading-2xl" id={`more-title-${slug}`}>{item.title}</h2>
+              <p class="ds-body-sm more-cases__outcome">{item.outcome}</p>
+              <p class="ds-body-sm more-cases__proof">{item.meta.at(-1)!.value}</p>
+            </div>
+            <span class="more-cases__arrow ds-heading-2xl" aria-hidden="true">↗</span>
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+</details>
+
+<style>
+  .more-cases { border-block: var(--border-width) solid var(--border-default); }
+  .more-cases__toggle { display: flex; justify-content: space-between; align-items: center; gap: var(--space-6); padding-block: var(--space-6); cursor: pointer; list-style: none; color: var(--text-default); }
+  .more-cases__toggle::-webkit-details-marker { display: none; }
+  .more-cases__collapse { display: none; }
+  .more-cases[open] .more-cases__expand { display: none; }
+  .more-cases[open] .more-cases__collapse { display: inline; }
+  .more-cases__icon { position: relative; width: var(--space-6); height: var(--space-6); flex: none; }
+  .more-cases__icon::before, .more-cases__icon::after { content: ''; position: absolute; inset-inline: var(--space-1); top: 50%; height: var(--border-width); background: currentColor; }
+  .more-cases__icon::after { transform: rotate(90deg); }
+  .more-cases[open] .more-cases__icon::after { transform: rotate(0deg); }
+  .more-cases__list { padding-block-end: var(--space-4); }
+  .more-cases__list > li { border-block-start: var(--border-width) solid var(--border-default); }
+  .more-cases__link { display: grid; grid-template-columns: var(--space-24) minmax(0, 1fr) auto; gap: var(--space-6); align-items: center; padding-block: var(--space-6); text-decoration: none; }
+  .more-cases__body { display: grid; gap: var(--space-2); }
+  .more-cases__outcome { color: var(--text-subtle); max-width: var(--measure-text); }
+  .more-cases__proof { color: var(--text-meta); }
+  .more-cases__arrow { color: var(--text-link); transition: transform var(--motion-hover-duration) var(--motion-hover-ease); }
+  .more-cases__toggle:active, .more-cases__link:active .more-cases__arrow { color: var(--text-link-pressed); }
+  .more-cases__toggle:focus-visible, .more-cases__link:focus-visible { outline-offset: var(--space-2); }
+  @media (--can-hover) {
+    .more-cases__toggle:hover { color: var(--text-link); }
+    .more-cases__link:hover .more-cases__arrow { transform: translate(var(--space-1), calc(var(--space-1) * -1)); }
+    .more-cases__link:hover h2 { text-decoration: underline; text-decoration-thickness: var(--border-width); text-underline-offset: var(--space-1); }
+  }
+  @media (--bp-md) { .more-cases__link { grid-template-columns: var(--space-48) minmax(0, 1fr) auto; gap: var(--space-8); } }
+  @media (--below-bp-md) {
+    .more-cases__link { grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-4); align-items: start; }
+    .more-cases__preview { display: none; }
+    .more-cases__arrow { padding-block-start: var(--space-1); }
+  }
+</style>

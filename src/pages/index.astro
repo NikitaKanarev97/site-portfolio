@@ -22,7 +22,8 @@
  */
 import PageShell from '../layouts/PageShell.astro';
 import MediaFrame from '../components/MediaFrame.astro';
-import ScreenStack from '../components/ScreenStack.astro';
+import FeaturedCase from '../components/FeaturedCase.astro';
+import MoreCases from '../components/MoreCases.astro';
 import MetaList from '../components/MetaList.astro';
 import ProjectDialog from '../components/ProjectDialog.astro';
 import ProseBlock from '../components/ProseBlock.astro';
@@ -94,44 +95,25 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     один <a> вокруг обложки, заголовка, строки исхода, меты и CTA.
     Вложенных ссылок внутри нет — иначе фокус ловит две цели подряд.
 
-    ds-pressable — плоскостная форма нажатия (ds/motion-concept.md §3.4).
-    Главная цель продукта, и на телефоне единственный отклик на тап: hover
-    там не существует, а до начала перехода проходит сетевой запрос.
+    Три главные работы открыты. Остальные раскрываются на месте компактными
+    строками; состояние списка сохраняется при возврате из кейса.
   */}
   <section class="ds-container ds-section featured" id="work">
     <p class="ds-meta-xs featured__eyebrow ds-flow-eyebrow">{home.featured.eyebrow}</p>
 
-    {
-      home.featured.items.map((item, index) => (
-        <a class="featured__link ds-pressable" href={item.href} data-motion-group>
-          {/*
-            eager только у первой обложки: она стоит в первом экране,
-            остальные уходят за сгиб и грузятся по умолчанию.
-          */}
-          <ScreenStack
-            screens={item.cover}
-            alt={item.coverAlt}
-            loading={index === 0 ? 'eager' : 'lazy'}
-            class="featured__cover"
-          />
-
-          <h2 class="ds-heading-3xl featured__title" data-motion="reveal-text">
-            {item.title}
-          </h2>
-
-          <ProseBlock variant="lead" class="featured__outcome">
-            <p>{item.outcome}</p>
-          </ProseBlock>
-
-          <MetaList items={item.meta} layout="inline" class="featured__meta" />
-
-          <span class="featured__cta ds-body-base">
-            {item.cta}
-            <span class="featured__cta-arrow" aria-hidden="true">→</span>
-          </span>
-        </a>
-      ))
-    }
+    <ol class="featured__list">
+      {home.featured.items.slice(0, 3).map((item, index) => (
+        <li><FeaturedCase item={item} index={index} locale={locale} /></li>
+      ))}
+    </ol>
+    {home.featured.items.length > 3 && (
+      <MoreCases
+        items={home.featured.items.slice(3)}
+        locale={locale}
+        expandLabel={home.featured.expandLabel}
+        collapseLabel={home.featured.collapseLabel}
+      />
+    )}
   </section>
 
   {/*
@@ -350,92 +332,8 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     color: var(--text-meta);
   }
 
-  .featured__link {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-  }
-
-  /* Кейс к кейсу — секционный шаг, а не узловой. Умолчание секции
-     (`--flow-block`, 64) ставило следующую обложку почти вплотную к CTA
-     предыдущей, и соседние карточки читались одной. Каждая здесь — целый кейс,
-     промежуток между ними того же порядка, что между секциями. */
-  .featured__link + .featured__link {
-    margin-block-start: var(--section-gap);
-  }
-
-  /* Фокус-кольцо на обёртке, не на картинке. */
-  .featured__link:focus-visible {
-    outline: var(--focus-ring-width) solid var(--focus-ring-color);
-    outline-offset: var(--space-2);
-  }
-
-  /* Обложка → заголовок: узловой шаг. Ниже карточка идёт теснее шкалы
-     по умолчанию — это одна композиция, а не перечень узлов, и её
-     собственная плотность держит вход в кейс в первом экране (SCR-02). */
-  .featured__link > :global(.featured__title) {
-    margin-block-start: var(--flow-node);
-  }
-
-  .featured__title {
-    color: var(--text-default);
-  }
-
-  /* Заголовок и строка исхода — пара. */
-  .featured__link > :global(.featured__outcome) {
-    margin-block-start: var(--flow-pair);
-  }
-
-  /* Перебивает ds-flow-lead на строке исхода: в карточке шаг текстовый. */
-  .featured__link > :global(.featured__meta) {
-    margin-block-start: var(--flow-text);
-  }
-
-  /* CTA — часть той же ссылки, не вторая ссылка рядом. Как у TextLink,
-     подчёркивание приходит слева и уходит вправо, стрелка сдвигается. */
-  .featured__cta {
-    display: inline-flex;
-    align-items: baseline;
-    gap: var(--space-2);
-    position: relative;
-    margin-block-start: var(--flow-text);
-    color: var(--text-link);
-  }
-
-  .featured__cta-arrow {
-    display: inline-block;
-    transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
-  }
-
-  .featured__cta::after {
-    content: '';
-    position: absolute;
-    inset-inline: 0;
-    bottom: calc(var(--space-1) * -1);
-    height: var(--border-width);
-    background: currentColor;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition:
-      transform var(--motion-hover-duration) var(--motion-hover-ease);
-  }
-
-  .featured__link:focus-visible .featured__cta::after,
-  .featured__link:active .featured__cta::after {
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-
-  @media (--can-hover) {
-    .featured__link:hover .featured__cta::after {
-      transform: scaleX(1);
-      transform-origin: left;
-    }
-
-    .featured__link:hover .featured__cta-arrow {
-      transform: translateX(var(--space-1));
-    }
-  }
+  .featured__list { display: grid; gap: var(--section-gap); }
+  .featured > .featured__list { margin-block-start: var(--flow-node); }
 
   /* ---------------------------------------------------------------- *
    * WorksList                                                         *

@@ -32,13 +32,15 @@ export const homeRu = {
   },
   featured: {
     eyebrow: 'Избранные работы',
+    expandLabel: 'Показать ещё {count} кейса',
+    collapseLabel: 'Свернуть дополнительные кейсы',
     items: [
       {
         ...home.featured.items[0],
         href: '/ru/work/agent-ops-console',
         title: agentOpsConsoleRu.header.title,
         outcome:
-          'Каждое обещание ИИ-агента доходит до человека — без чтения остальных 1 770 диалогов.',
+          'Каждое обещание ИИ-агента доходит до человека — без чтения остальных 1\u00a0770 диалогов.',
         meta: [
           { term: 'Продукт', value: 'Консоль контроля ИИ-агента поддержки' },
           { term: 'Год', value: '2026' },
