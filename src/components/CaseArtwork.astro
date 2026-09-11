@@ -107,7 +107,14 @@ const cropStyle = crop ? {
     .case-artwork__canvas { aspect-ratio: var(--ratio-cover-mobile); }
     .case-artwork__frame { border-radius: var(--radius-sm); }
     .case-artwork--agent-ops-console .case-artwork__frame--main { width: 126%; inset-inline-start: -16%; inset-block-start: 8%; }
-    .case-artwork--partner-portal .case-artwork__frame--main { width: 132%; inset-inline-start: -12%; inset-block-start: 8%; }
+    /* Окна пересчитаны 11.09.2026 под артборд 1760 (было 132 % / −12 % под
+       1440 на оба кадра) — и разведены, потому что кадры разные. Прежнее окно
+       показывало источник с 9 по 85 %: у разбора (hero) без колонки действий,
+       которую обещает alt, у плана отгрузки (обложка главной) без начала
+       заголовка и кнопок планов.
+       План отгрузки: рельс свёрнут (`D028`), 3,6 % ширины; содержимое с 7,8 по
+       95,9 %. 108 % / −4 % даёт окно 3,7…96,3 %. Разбор — ниже, у hero. */
+    .case-artwork--partner-portal .case-artwork__frame--main { width: 108%; inset-inline-start: -4%; inset-block-start: 8%; }
     .case-artwork--learn .case-artwork__frame--main { width: 116%; inset-inline-start: 6%; inset-block-start: 8%; }
     .case-artwork--learn .case-artwork__frame--detail { width: 34%; inset-inline-end: 5%; inset-block-end: 5%; }
     .case-artwork--vet-clinic .case-artwork__frame--main { width: 106%; inset-inline-start: -7%; inset-block-start: 8%; }
@@ -116,7 +123,9 @@ const cropStyle = crop ? {
     .case-artwork--hero .case-artwork__canvas { aspect-ratio: var(--ratio-cover-mobile); }
     .case-artwork--hero.case-artwork--agent-ops-console .case-artwork__frame--main { width: 126%; inset-inline-start: -16%; inset-block-start: 6%; }
     .case-artwork--hero.case-artwork--agent-ops-console .case-artwork__frame--detail { width: 90%; inset-inline-end: 5%; inset-block-end: 5%; }
-    .case-artwork--hero.case-artwork--partner-portal .case-artwork__frame--main { width: 132%; inset-inline-start: -12%; inset-block-start: 7%; }
+    /* Разбор: рельс развёрнут, 13,6 % ширины. 117 % / −16 % начинает окно на
+       краю рельса и доводит до 99 % — колонка действий в кадре. */
+    .case-artwork--hero.case-artwork--partner-portal .case-artwork__frame--main { width: 117%; inset-inline-start: -16%; inset-block-start: 7%; }
     .case-artwork--hero.case-artwork--vet-clinic .case-artwork__frame--main { width: 116%; inset-inline-start: -8%; inset-block-start: 7%; }
     .case-artwork--hero.case-artwork--learn .case-artwork__canvas { aspect-ratio: var(--ratio-cover-mobile); }
     .case-artwork--hero.case-artwork--learn .case-artwork__frame--main { width: 116%; inset-inline-start: 5%; inset-block-start: 6%; }

@@ -3,7 +3,12 @@ import { copyFile, readFile, readdir, unlink } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 
-const CASES = ['dssl', 'vet', 'pawly', 'agent-ops'];
+/*
+ * `dssl` снят 11.09.2026: `shoot-dssl-frames.mjs` снимает обе локали одним
+ * артбордом, пары совпадают сами, а подгонка `fit: contain` подложила бы белые
+ * поля под кадры, где русская раскладка выше английской.
+ */
+const CASES = ['vet', 'pawly', 'agent-ops'];
 
 async function files(dir, relative = '') {
   const result = [];

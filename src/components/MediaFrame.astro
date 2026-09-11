@@ -50,6 +50,13 @@
  *   остаётся постер, кнопка остаётся рабочей. Читатель, попросивший
  *   покоя, получает картинку и право передумать.
  *
+ * Режим film, добавлен 11.09.2026. Носитель — ролик по маршруту показа
+ * Partner Portal (≈85 с): у него есть начало и конец, и петля с автозапуском
+ * по видимости для него неверна — зритель попадал бы в середину сюжета, а
+ * восемьдесят секунд движения без нажатия читать страницу не дают. Поэтому
+ * нативные controls, без loop, без автозапуска и без своей кнопки;
+ * на подходе грузятся только метаданные. Сторож VP9 остаётся.
+ *
  * Art direction (srcMobile / ratioMobile), добавлен 2026-08-24 при сборке
  * Home. Носитель один: обложка кейса на мобильном — вертикальный кроп, а
  * не сжатый горизонтальный. wide на 375 даёт полоску 327×153. Это разные
@@ -102,6 +109,11 @@ interface Props {
    * `.webm` и `.mp4`, постером служит `src`. Съёмка — `scripts/shoot-clips.mjs`.
    */
   video?: string;
+  /**
+   * Ролик-фильм, а не петля: нативные контролы, без `loop`, без автозапуска
+   * и без своей кнопки. Только вместе с `video`. См. шапку.
+   */
+  film?: boolean;
   loading?: 'lazy' | 'eager';
   /** Контр-масштаб внутри маски. Полный такт — только у обложки DSSL. */
   counterScale?: boolean;
@@ -132,6 +144,7 @@ const {
   srcMobile,
   ratioMobile,
   video,
+  film = false,
   loading = 'lazy',
   counterScale = true,
   reveal = true,
@@ -216,9 +229,10 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
               preload="none"
               muted
               playsinline
-              loop
+              loop={!film}
+              controls={film}
               aria-label={alt}
-              data-clip
+              data-clip={film ? 'film' : 'loop'}
             >
               <source src={`${video}.webm`} type="video/webm" />
               <source src={`${video}.mp4`} type="video/mp4" />
@@ -227,8 +241,9 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
               Управление стоит внутри маски, а не рядом с подписью: оно
               относится к кадру, и на длинной странице кнопка, уехавшая от
               своего ролика, теряет смысл. Видима всегда — см. шапку.
+              У фильма своей кнопки нет: управление — нативные контролы.
             */}
-            <button
+            {!film && <button
               class="media-frame__clip ds-meta-sm"
               type="button"
               data-clip-toggle
@@ -244,7 +259,7 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
                 <path class="media-frame__clip-play" d="M3 1.5 L10.5 6 L3 10.5 Z" />
               </svg>
               <span data-clip-label>{clipCopy.play}</span>
-            </button>
+            </button>}
           </Fragment>
         ) : srcMobile ? (
           <picture>
@@ -545,6 +560,7 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
     if (video.dataset.bound) return;
     video.dataset.bound = 'on';
 
+    const film = video.dataset.clip === 'film';
     const frame = video.closest('.media-frame');
     const toggle = frame?.querySelector<HTMLButtonElement>('[data-clip-toggle]');
     const label = toggle?.querySelector('[data-clip-label]');
@@ -595,7 +611,9 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
         if (!entries[entries.length - 1].isIntersecting) return;
         warm.disconnect();
         if (video.dataset.fallback) return;
-        video.preload = 'auto';
+        // Фильм на подходе берёт только заголовок — контролам нужна
+        // длительность, а не восемьдесят секунд, которые могут не посмотреть.
+        video.preload = film ? 'metadata' : 'auto';
         video.load();
       },
       { rootMargin: '800px 0px' },
@@ -651,6 +669,24 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
       };
       setTimeout(tick, 700);
     };
+
+    /**
+     * Фильм запускает только читатель, нативными контролами. Наблюдатель
+     * видимости, отмотка и своя кнопка ему не нужны: движения без нажатия
+     * нет, и `WCAG 2.2.2` закрывают сами контролы. Остаётся одно — тихий
+     * отказ VP9, он от режима не зависит. Сторож взводится на нажатии,
+     * а ошибка до нажатия меняет формат, не запуская ролик.
+     */
+    if (film) {
+      video.addEventListener('play', () => {
+        video.dataset.started = 'on';
+        watchStall();
+      });
+      video.addEventListener('error', () => {
+        if (toMp4() && video.dataset.started) video.play().catch(() => {});
+      });
+      return;
+    }
 
     const start = () => {
       // Политика автозапуска всё равно может отказать: без звука и с

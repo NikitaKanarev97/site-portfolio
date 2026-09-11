@@ -31,7 +31,7 @@ const catalog = {
     en: {
       cover: 'B2B Partner Portal: three fulfillment plans compared by delivery date, shipment count and cost.',
       hero: 'Imported specification review: ambiguous, missing and changed product lines with a distinct next action for each.',
-      caption: 'A pasted specification becomes a workable order: exact matches proceed, exceptions keep their own next step. Demonstration data.',
+      caption: 'An imported specification becomes a workable order: exact matches proceed, exceptions keep their own next step. Demonstration data.',
     },
     ru: {
       cover: 'Партнёрский портал: три плана поставки с датой, числом отправлений и стоимостью.',

@@ -126,23 +126,32 @@ const CARDS = {
     frames: [
       "legacy-dashboard.webp",
       "new-dashboard.webp",
+      /**
+       * Пересборка 11.09.2026, после доводки прототипа. Три кадра прежнего
+       * плана пересъёмкой стёрты или сменили смысл; порядок и число (14)
+       * сохранены, композиция карточки не менялась:
+       * — `xls-parse-result` переснят `shoot-dssl-pairs.mjs` (SINGLES);
+       * — постер петли `clip-line-identity` теперь её первый кадр (очередь без
+       *   панели), а сравнение кандидатов — постер фильма;
+       * — `fulfillment-plans` не снимается, план отгрузки — кадр стопки.
+       */
       "xls-parse-result.webp",
-      "clip-line-identity-poster.webp",
+      "film-pipeline-poster.webp",
       "range-resolution-center.webp",
       "cart-change-review.webp",
       "system-price-block.webp",
       "system-availability.webp",
-      "fulfillment-plans.webp",
+      "cover/fulfillment.webp",
       /**
        * 🔴 На месте `system-fulfillment-plan` в плане стоял `storybook-matrix`.
-       * Снят 2026-09-01: в `public/media/case-dssl/` этот файл — побайтовая
-       * копия `system-product-row-v2.webp` (md5 совпадает). Дефект исходников
-       * кейса, не сборки: на сайте один и тот же кадр стоит в двух секциях с
-       * разными подписями. В карточку один кадр дважды не идёт.
+       * Снят 2026-09-01: тогда этот файл был побайтовой копией
+       * `system-product-row-v2.webp`. Пересъёмкой 11.09.2026 матрица снята
+       * заново (кнопка каталога, 2000×669), дубля больше нет — но слот 10
+       * остаётся за `FulfillmentPlan`: он парой к `09.png`.
        */
       "system-fulfillment-plan.webp",
-      "system-product-row-v2.webp",
-      "system-resolution-row-v2.webp",
+      "system-product-row.webp",
+      "system-resolution-row.webp",
       "system-empty-state.webp",
       "screen-index.webp",
     ],

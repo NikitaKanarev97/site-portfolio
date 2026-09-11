@@ -242,7 +242,7 @@ Before. The buyer's workspace opened with a training banner and a bonus promotio
 Description:
 
 ```
-After. The same question - what does the workspace open with - answered by what is blocking work, ranked by impact and due time.
+After. The same question - what does the workspace open with - answered by the purchase in progress and what is waiting on the buyer.
 ```
 
 ---
@@ -276,7 +276,7 @@ Ten to fifty lines for one project, written in a spreadsheet, passed around by e
 Description:
 
 ```
-Quick order: four lines pasted from a spreadsheet. Two matched a catalogue product, one shows eleven candidates, one has no match.
+Import result: 48 lines read, 41 matched exactly, 7 sent to review, 0 dropped - every source row kept with its number and text.
 ```
 
 ---
@@ -481,13 +481,13 @@ Price lists and a global document registry left the rail: neither had a confirme
 Heading:
 
 ```
-Forty-five components, and one row I refused to fork.
+Forty-six components, and one row I refused to fork.
 ```
 
 Тело:
 
 ```
-Twenty-four generic families and twenty-one domain components. The most reused element is the product row, and it appears in three places doing two different jobs: choosing, in the catalogue, and reviewing, in the cart. Forking it was the obvious move and the wrong one. It carries a context property instead, and its matrix is deliberately incomplete - a browse row has no disabled state, and a commercial change cannot happen to something you have not added yet. An incomplete matrix with a reason beats a full one that invents states to fill itself. Coverage is not checked by eye: a script walks the catalogue against the variant matrix, and a smoke run loads every story to catch the ones that compile but do not paint.
+Twenty-four generic families and twenty-two domain components. The most reused element is the product row, and it appears in three places doing two different jobs: choosing, in the catalogue, and reviewing, in the cart. Forking it was the obvious move and the wrong one. It carries a context property instead, and its matrix is deliberately incomplete - a browse row has no disabled state, and a commercial change cannot happen to something you have not added yet. An incomplete matrix with a reason beats a full one that invents states to fill itself. Coverage is not checked by eye: a script walks the catalogue against the variant matrix, and a smoke run loads every story to catch the ones that compile but do not paint.
 ```
 
 ---
@@ -523,7 +523,7 @@ ProductRow in both contexts and all its states: cart and browse, each default, a
 Description:
 
 ```
-ResolutionRow: exact, ambiguous, missing, changed - and a parse error, which is a different problem and looks like one.
+ResolutionRow: five match types, each open and confirmed - a confirmed line still says what the match originally was.
 ```
 
 ---
@@ -626,8 +626,9 @@ node scripts/build-upwork-card.mjs partner-portal --cover-only
 сайте. Внизу плашка `--accent-500` с ярлыком `CASE STUDY · B2B ORDERING UX`.
 
 Передним идёт разбор спецификации: это единственный экран, на котором задача
-кейса читается до текста — сорок восемь строк с их статусами и четыре
-счётчика над ними.
+кейса читается до текста — семь из сорока восьми строк, у каждой своё
+следующее действие, и полоса итога внизу. (До 11.09.2026 — все сорок восемь
+и четыре плитки счётчиков; плитки доводка заменила одной строкой о работе.)
 
 **Геометрия — в `scripts/lib/upwork-cover.mjs`**, общем модуле на все восемь
 карточек. Полная спецификация 5:4 и замеры плитки — в
@@ -655,19 +656,19 @@ PNG с палитрой, 97–252 КБ на кадр, весь пакет 2.8 М
 |---|---|---|---|---|
 | — | `00-thumbnail-preview.png` | 2000×1600 | `cover/*` | собрана |
 | 1 | `01.png` | 2000×617 | `legacy-dashboard.webp` | ×1.40 |
-| 2 | `02.png` | 2000×687 | `new-dashboard.webp` | ×1.23 |
+| 2 | `02.png` | 2000×473 | `new-dashboard.webp` | ×1.18 |
 | 3 | `03.png` | 2000×1250 | `xls-parse-result.webp` | ×1.00 |
-| 4 | `04.png` | 2000×1071 | `clip-line-identity-poster.webp` | ×1.19 |
-| 5 | `05.png` | 2000×1413 | `range-resolution-center.webp` | ×1.00 |
+| 4 | `04.png` | 2000×1250 | `film-pipeline-poster.webp` | ×1.14 |
+| 5 | `05.png` | 2000×1211 | `range-resolution-center.webp` | ×1.00 |
 | 6 | `06.png` | 2000×1250 | `cart-change-review.webp` | ×1.00 |
-| 7 | `07.png` | 2000×1424 | `system-price-block.webp` | ×1.45 + поле |
-| 8 | `08.png` | 2000×1424 | `system-availability.webp` | ×1.45 + поле |
-| 9 | `09.png` | 2000×1250 | `fulfillment-plans.webp` | ×1.00 |
-| 10 | `10.png` | 1215×2000 | `system-fulfillment-plan.webp` | ×1.17 |
-| 11 | `11.png` | 2000×1542 | `system-product-row-v2.webp` | ×1.00 |
-| 12 | `12.png` | 2000×1599 | `system-resolution-row-v2.webp` | ×1.00 |
-| 13 | `13.png` | 1015×2000 | `system-empty-state.webp` | ×0.98 |
-| 14 | `14.png` | 1168×2000 | `screen-index.webp` | ×0.58 |
+| 7 | `07.png` | 2000×1196 | `system-price-block.webp` | ×1.45 + поле |
+| 8 | `08.png` | 2000×1196 | `system-availability.webp` | ×1.45 + поле |
+| 9 | `09.png` | 2000×1250 | `cover/fulfillment.webp` | ×1.00 |
+| 10 | `10.png` | 1776×2000 | `system-fulfillment-plan.webp` | ×1.18 |
+| 11 | `11.png` | 2000×1509 | `system-product-row.webp` | ×1.11 |
+| 12 | `12.png` | 1725×2000 | `system-resolution-row.webp` | ×1.00 |
+| 13 | `13.png` | 1690×2000 | `system-empty-state.webp` | ×1.13 |
+| 14 | `14.png` | 2000×848 | `screen-index.webp` | ×1.00 |
 
 **Правило растягивания и почему оно есть.** Потолок — ×1.45. Выше скрипт не
 растягивает вовсе: недостающая ширина добирается **полем цвета обложки по
@@ -687,7 +688,28 @@ PNG с палитрой, 97–252 КБ на кадр, весь пакет 2.8 М
 Здесь он заменён на `system-fulfillment-plan.webp`, который парой к `09.png`
 работает лучше каталога. **Дефект сайта этим не закрыт** — он в
 `src/copy/cases/partner-portal.ts` и в медиа кейса, и чинится пересъёмкой
-кадра каталога, а не здесь.
+кадра каталога, а не здесь. **Закрыт пересъёмкой 11.09.2026:** матрица кнопки
+снята заново (`shoot-dssl-frames.mjs`, 2000×669), md5 с `system-product-row`
+больше не совпадает. Слот `10.png` остаётся за `FulfillmentPlan` — парой к `09`.
+
+**Пересборка 11.09.2026, после продуктовой доводки прототипа.** Все четырнадцать
+кадров — из новой съёмки. Композиция карточки та же; поменялись три источника
+и четыре подписи:
+
+| # | Было | Стало | Почему |
+|---|---|---|---|
+| 03 | `xls-parse-result` (прежний) | тот же маршрут, переснят | прежний файл стёрт пересъёмкой; подпись описывала быстрый заказ, а кадр — импорт, теперь описывает импорт |
+| 04 | постер `clip-line-identity` | постер `film-pipeline` | постер петли теперь её первый кадр — очередь без панели; сравнение кандидатов держит постер фильма |
+| 09 | `fulfillment-plans` | `cover/fulfillment` | отдельный кадр больше не снимается, план отгрузки — кадр стопки |
+| 02, 12, 18 | подписи и текст | переписаны | дашборд открывается текущей закупкой (`D024`); `ResolutionRow` — `Type × State` (`D026`); компонентов 46 = 24 + 22 |
+
+**Готовые пары до/после, в карточку не поставлены — решение владельца.** Лимит 25
+выбран в ноль, а пара — это два кадра и, вероятно, текст. Лежат в
+`b2b-dssl/audit/product-polish/evidence/09-case/pairs/` и в медиа кейса:
+очередь разбора до/после доводки (`polish-{before,after}-resolution.webp`, та же
+пара, что на сайте), поиск несуществующего артикула до/после
+(`search-missing-sku__en__*`), русская служебная страница до/после перевода.
+Кандидаты на освобождение слотов названы в §7: `13.png` и `10.png`.
 
 **Два кадра в карточку не попали.**
 
@@ -786,7 +808,10 @@ Saad S., ни у Anna P., ни у Artem K. в карточках нет ни о�
   прототип в блоке 1 делает ту же работу и лучше: он не показывает
   взаимодействие, а отдаёт его. Постер клипа `clip-line-identity` при этом
   используется как обычный кадр (`04.png`) — там он статичный снимок сравнения
-  кандидатов, а не заглушка ролика.
+  кандидатов, а не заглушка ролика. **С 11.09.2026 у кейса есть фильм** по
+  маршруту показа (`film-pipeline`, 87,7 с, 5,7 МБ MP4); `04.png` теперь его
+  постер. Нужен ли фильм карточке отдельным блоком — вопрос владельцу: решение
+  2026-09-01 принималось про петли по 9–11 с, а не про сквозной ролик.
 - **Поле подписи у блока ссылки** по скриншотам не видно. Если его нет —
   ссылки вставляются голыми URL. **[проверить на шаге 3]**
 - **Порядок «ссылка первым блоком»** принят в пакете Agent Ops и повторён

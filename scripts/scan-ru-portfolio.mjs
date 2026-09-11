@@ -37,7 +37,7 @@ const routes = ['/ru/', '/ru/about', ...slugs.map((slug) => `/ru/work/${slug}`)]
  */
 const BRANDS = [
   'Pawly', 'DSSL', 'Veterinary SaaS', 'B2B SaaS', 'B2B', 'SaaS', 'NDA', 'PDF', 'UX', 'UI',
-  'Figma', 'Storybook', 'Webflow', 'React', 'TypeScript', 'JavaScript', 'HTML', 'CSS',
+  'Figma', 'Storybook', 'Webflow', 'React', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Tailwind',
   'Git', 'GitHub', 'LinkedIn', 'Claude Code', 'Google UX Design', 'Coursera', 'Pentaschool',
   'QA', 'IA', 'CMS', 'API', 'ERP', 'SKU', 'XLS', 'EMEA', 'SLA', 'UTC', 'CSAT', 'OS',
   'Yandex', 'Practicum', 'Vercel', 'Astro', 'Manrope', 'JetBrains Mono', 'Scale',

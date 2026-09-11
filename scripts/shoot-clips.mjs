@@ -112,6 +112,8 @@ import os from 'node:os';
 
 import sharp from 'sharp';
 
+import { filmScenario } from './lib/dssl-film.mjs';
+
 /** Съёмка с запасом по плотности, выдача — в ширину артборда. */
 const DEVICE_SCALE_FACTOR = 2;
 /**
@@ -336,8 +338,27 @@ class Hand {
     await this.page.evaluate(() => window.__press?.(false));
   }
 
-  async click(locator) {
+  /**
+   * Цель за краем окна сначала подвозится прокруткой — плавной, как колесом.
+   * Найдено 11.09.2026 на ролике Partner Portal: `boundingBox` отдаёт
+   * координаты и для узла ниже окна, нажатие уходило в точку за кадром и
+   * не попадало никуда, а отладочный прогон этого не видел — `locator.click()`
+   * Playwright прокручивает к цели сам. Цель в окне не трогается: сценарии,
+   * снятые до этой правки, остаются теми же.
+   */
+  async reach(locator) {
+    await locator.waitFor({ state: 'visible' });
     const box = await locator.boundingBox();
+    if (!box) return null;
+    const { height } = this.page.viewportSize();
+    if (box.y >= 0 && box.y + box.height <= height) return box;
+    await locator.evaluate((node) => node.scrollIntoView({ block: 'center', behavior: 'smooth' }));
+    await this.page.waitForTimeout(650);
+    return locator.boundingBox();
+  }
+
+  async click(locator) {
+    const box = await this.reach(locator);
     if (!box) throw new Error('цель нажатия не видна на экране');
     // Не в геометрический центр: рука не попадает в пиксель.
     await this.pressAt({
@@ -372,7 +393,7 @@ class Hand {
 
   /** Наведение без нажатия: состояние hover — тоже доказательство. */
   async hover(locator, hold = 320) {
-    const box = await locator.boundingBox();
+    const box = await this.reach(locator);
     if (!box) throw new Error('цель наведения не видна на экране');
     await this.moveTo({ x: box.x + box.width * 0.35, y: box.y + box.height / 2 });
     await this.page.waitForTimeout(hold);
@@ -417,16 +438,6 @@ const PAWLY_CSS = `
 /* ------------------------------------------------------------------ *
  * Кейсы
  * ------------------------------------------------------------------ */
-
-/**
- * Четыре строки спецификации, которые закупщик копирует из своего файла.
- * Данные синтетические и взяты из каталога прототипа (D013 проекта
- * b2b-dssl): две строки матчатся точно, третья даёт одиннадцать кандидатов,
- * четвёртая не находится вовсе. Четвёртая написана по-русски намеренно —
- * так выглядит настоящая спецификация интегратора, и ровно на ней видно
- * обещание экрана: исходная строка сохраняется дословно.
- */
-const SPEC_PASTE = 'KX-2CB4046F2-I, 12\nKX-7608NI-K2, 2\nnvr 8ch poe, 2\nкамера 4мп уличная, 8';
 
 const CASES = {
   'agent-ops': {
@@ -524,12 +535,24 @@ const CASES = {
   },
 
   /**
-   * Partner Portal. Два ролика на разных экранах и с разными обещаниями:
-   * первый — как спецификация попадает в систему, второй — как решается,
-   * чем является одна её строка. Ширина 1680, а не 1440: таблица разбора
-   * заявляет `tableMinWidth` 1016, и на 1440 колонка «Статус» уезжает под
-   * горизонтальную прокрутку — в кадре это читалось бы обрезанным экраном,
-   * а не плотной таблицей.
+   * Partner Portal. С 11.09.2026 — два ролика разного рода.
+   *
+   * `film-pipeline` — ролик по маршруту показа (≈85 с, не петля): конвейер
+   * спецификации от индекса до карточки созданного заказа, контролами самого
+   * продукта. Сценарий — `lib/dssl-film.mjs`. Стоит в слоте `process.clip`
+   * режимом `film` у `MediaFrame` (контролы, без автозапуска). Он заменил
+   * петлю вставки `clip-paste-specification`: быстрый заказ маршрут показа
+   * исключает как второй интейк, дублирующий импорт по смыслу
+   * (`b2b-dssl/audit/product-polish/report-08.md` § 8), а обещание петли —
+   * «ни одна строка не переписана» — ролик показывает на результате разбора
+   * импорта: 48 прочитано, 0 потеряно.
+   *
+   * `clip-line-identity` — петля, артефакт решения 1: как решается, чем
+   * является одна строка.
+   *
+   * Артборд — `1760×1100`, тот же, что у кадров кейса (`shoot-dssl-frames.mjs`):
+   * после доводки на прежних 1680×900 разбор терял нижнюю панель
+   * следующего шага (`D027`). Высота чётная: yuv420p.
    */
   dssl: {
     repo: 'd:/Claude-projects/b2b-dssl',
@@ -539,65 +562,55 @@ const CASES = {
     pointer: 'arrow',
     clips: [
       {
-        out: 'clip-paste-specification',
-        width: 1680,
-        height: 900,
+        out: 'film-pipeline',
+        mode: 'film',
+        width: 1760,
+        height: 1100,
         /**
-         * Второй интакт спецификации целиком: вставка из Excel, разбор
-         * колонок, четыре строки с их исходным текстом и итог готовности.
-         *
-         * Сюжет выбран тем, что он единственный показывает обещание кейса
-         * в момент его исполнения: «11 possible matches» и «No catalog
-         * match» — это не ошибки импорта, а строки, которые никуда не
-         * делись. Полоса готовности проговаривает это словами продукта:
-         * «nothing is dropped, provenance is kept».
-         *
-         * Петля закрывается «Очистить всё» — своей же кнопкой продукта,
-         * возвращающей пустую поверхность вставки. Последний клик по пустому
-         * месту снимает фокус с поля: иначе на стыке петли рамка фокуса
-         * появлялась бы из ниоткуда.
+         * Постер — очередь разбора с открытой панелью кандидатов, а не первый
+         * кадр. Первый кадр ролика — индекс экранов, и он же стоит артефактом
+         * сразу под роликом: два одинаковых кадра подряд. Постер фильма
+         * обещает содержание, а не начало: закупщик сравнивает двух
+         * кандидатов одной строки — ядро кейса. Отметка — шаг сценария, а не
+         * секунда: темп локалей разный.
+         */
+        poster: { step: 'resolution-center', after: 5.2 },
+        /**
+         * Ролик по маршруту показа. Не петля: у него есть начало (индекс
+         * собранного продукта) и конец (созданный заказ), и правило стыка
+         * к нему не относится. Необратимые шаги — применить кандидата,
+         * принять изменение, создать заказ — здесь и есть содержание.
+         * Сценарий и ритм — `lib/dssl-film.mjs`.
          */
         async open(page, { origin, prefix, settle }) {
-          await page.goto(`${origin}${prefix}/quick-order`, { waitUntil: 'networkidle' });
+          await page.goto(`${origin}${prefix || '/'}`, { waitUntil: 'networkidle' });
           await settle();
         },
-        async scenario(page, hand) {
-          const clearAll = page.getByRole('button', { name: /^(Clear all|Очистить всё)$/ });
-
-          await page.waitForTimeout(420);
-          await hand.click(page.locator('[data-track="quick-order-paste"]'));
-          await page.waitForTimeout(300);
-          await hand.paste(SPEC_PASTE);
-          // Метка кнопки считает строки по мере ввода — это её и видно.
-          await page.waitForTimeout(900);
-
-          await hand.click(page.locator('[data-track="quick-order-parse"]'));
-          await page.waitForTimeout(1500);
-
-          // Исходный текст строки не переводится и не переписывается — по нему
-          // же и наводимся: русская строка в английском интерфейсе и есть
-          // доказательство сохранённой провенанс-записи.
-          // `visible=true`: таблица рендерит две раскладки сразу — карточки
-          // под bp-md и строки над ним, — и невидимая половина тоже совпадает
-          // с текстом.
-          await hand.hover(page.getByText('камера 4мп уличная').locator('visible=true').first(), 1100);
-          await page.waitForTimeout(500);
-
-          await hand.click(clearAll);
-          await page.waitForTimeout(700);
-          // Клик по пустой подложке справа: поле теряет фокус, кадр сходится
-          // с первым. Координата — под карточкой «How this works», там нет
-          // ни одного элемента управления.
-          await hand.pressAt({ x: 1500, y: 800 });
-          await page.waitForTimeout(300);
+        async scenario(page, hand, { settle, locale, mark }) {
+          await filmScenario(page, {
+            step: async (name) => mark(name),
+            click: (locator) => hand.click(locator),
+            hover: (locator, hold) => hand.hover(locator, hold),
+            type: (text) => hand.type(text),
+            pressKey: (key) => page.keyboard.press(key),
+            pause: (ms) => page.waitForTimeout(ms),
+            settle,
+            /* Кнопка выбора файла нажимается рукой, файл отдаётся диалогу:
+               в кадре — то же нажатие, что сделал бы человек. */
+            setFiles: async (trigger, file) => {
+              const chooser = page.waitForEvent('filechooser');
+              await hand.click(trigger);
+              await (await chooser).setFiles(file);
+            },
+          }, { locale });
           await hand.exit();
           await page.waitForTimeout(600);
         },
       },
       {
         out: 'clip-line-identity',
-        width: 1680,
-        height: 900,
+        width: 1760,
+        height: 1100,
         /**
          * Одна неоднозначная строка, открытая и сравнённая. Панель печатает
          * исходный текст, количество и причину неоднозначности, а два
@@ -633,7 +646,10 @@ const CASES = {
           await page.waitForTimeout(1200);
 
           // Второй кандидат — тот, что дешевле и без распознавания объектов.
-          await hand.click(panel.locator('label').nth(1));
+          // По роли, а не по `label`: после доводки у панели появилась своя
+          // подпись над списком, и `label` второго по счёту стал первым
+          // кандидатом — рука нажимала уже выбранную строку (11.09.2026).
+          await hand.click(panel.getByRole('radio').nth(1));
           await page.waitForTimeout(1300);
 
           // Радиокнопки radix — тоже <button>; «Отмена» — последняя из тех,
@@ -840,7 +856,7 @@ function run(bin, args) {
  * равна расстоянию до следующего по часам съёмки. Дальше ffmpeg приводит
  * это к постоянным 30 fps.
  */
-async function encode(frames, outBase) {
+async function encode(frames, outBase, posterIndex = 0) {
   const dir = path.join(SCRATCH, path.basename(outBase));
   await rm(dir, { recursive: true, force: true });
   await mkdir(dir, { recursive: true });
@@ -871,8 +887,9 @@ async function encode(frames, outBase) {
     '-c:v', 'libx264', '-crf', '23', '-preset', 'slow',
     '-pix_fmt', 'yuv420p', '-movflags', '+faststart', `${outBase}.mp4`]);
 
-  // Постер — первый кадр ролика: стыка при запуске не возникает.
-  await sharp(Buffer.from(frames[0].data, 'base64'))
+  // Постер петли — первый кадр ролика: стыка при запуске не возникает.
+  // У фильма стыка нет, и постер выбирается сценарием — см. `poster` у клипа.
+  await sharp(Buffer.from(frames[posterIndex].data, 'base64'))
     .webp({ quality: 82 })
     .toFile(`${outBase}-poster.webp`);
 
@@ -1021,8 +1038,13 @@ async function shootClip(browser, config, clip, locale, dir) {
     everyNthFrame: 1,
   });
 
+  /* Отметки шагов сценария — по тем же часам, что метки кадров скринкаста
+     (секунды эпохи): по ним фильм выбирает свой постер. */
+  const marks = {};
+  const mark = (name) => { marks[name] ??= Date.now() / 1000; };
+
   if (reflow) await runReflow(page, clip.steps);
-  else await clip.scenario(page, hand, { prefix, settle, scale: density, note: clip.note?.[locale] });
+  else await clip.scenario(page, hand, { prefix, settle, locale, mark, scale: density, note: clip.note?.[locale] });
 
   await client.send('Page.stopScreencast');
 
@@ -1052,9 +1074,16 @@ async function shootClip(browser, config, clip, locale, dir) {
   console.log(`  ${clip.out} · ${locale}: ${frames.length} кадров, ${seconds.toFixed(1)} с, `
     + `${(frames.length / seconds).toFixed(1)} fps`);
 
+  let posterIndex = 0;
+  if (clip.poster) {
+    const at = marks[clip.poster.step];
+    if (at === undefined) throw new Error(`постер: шага ${clip.poster.step} в сценарии не было`);
+    posterIndex = Math.max(0, frames.findIndex((f) => f.t >= at + clip.poster.after));
+  }
+
   await mkdir(path.resolve(dir), { recursive: true });
   const outBase = path.resolve(dir, clip.out);
-  await encode(frames, outBase);
+  await encode(frames, outBase, posterIndex);
   return outBase;
 }
 

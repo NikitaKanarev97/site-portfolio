@@ -5,8 +5,11 @@
  * d:\Claude-projects\b2b-dssl: outputs/brief.md, ds/DECISIONS.md,
  * ds/patterns.md, ds/components.md, audit/audit_report.md,
  * audit/agent_qa_2026-08-23.md. Ни одна цифра здесь не выдумана: 17,9 с и
- * 0,9–2,8 с, семь находок, два критических, 560 px, три прогона из трёх,
- * 24 + 21 компонент — всё из перечисленных файлов.
+ * 0,9–2,8 с, семь находок, два критических, 560 px, три прогона из трёх —
+ * всё из перечисленных файлов. Числа доводки (24 + 22 компонента, 23 из 23
+ * стоковых значений, 1.046:1, 75 боксов, пять ложных ответов) — из прогона
+ * audit/product-polish/ того же проекта: BACKLOG.md, ds/DECISIONS.md D018–D032,
+ * evidence/refinement-closeout/checks.md.
  *
  * Три правила, которые этот файл обязан держать:
  *
@@ -108,7 +111,7 @@ export const partnerPortal = {
       `${media}/cover/fulfillment.webp`,
       `${media}/cover/dashboard.webp`,
     ],
-    alt: 'Specification review screen: forty-eight imported lines with their resolution status, with two more screens of the portal behind it',
+    alt: 'Specification review screen: the seven of forty-eight imported lines that still need a decision, each with its source row, status and reason, and a bar pinned to the bottom counting what is confirmed — with two more screens of the portal behind it',
     caption:
       'Specification review — the queue where a line’s identity is settled. Data is synthetic.',
   },
@@ -134,6 +137,12 @@ export const partnerPortal = {
      * Кадр обрезан так, чтобы ретушь не потребовалась вовсе: карточка заказа
      * с номером, кодом ДП и суммой осталась за границей кропа. Обрезать
      * надёжнее, чем замазывать — замазанное можно не заметить.
+     *
+     * **Правая половина переписана 11.09.2026.** После доводки (`D024`)
+     * дашборд открывается не таблицей «Requires attention», а текущей
+     * закупкой и обновлениями заказов; кроп `new-dashboard` снят по ним, и
+     * подпись «ranked by impact and due time» описывала бы экран, которого
+     * больше нет. Вопрос пары тот же, ответ продукта — другой.
      */
     comparison: [
       {
@@ -144,9 +153,9 @@ export const partnerPortal = {
       },
       {
         src: `${media}/new-dashboard.webp`,
-        alt: 'The redesigned dashboard: a procurement workspace opening with a Requires attention table of blocking items ranked by impact and due time',
+        alt: 'The redesigned dashboard: a procurement workspace opening with the purchase in progress — forty-eight lines, one change waiting on the buyer’s decision — beside the order updates that need action',
         caption:
-          'After. The same question — what does the workspace open with — answered by what is blocking work, ranked by impact and due time.',
+          'After. The same question — what does the workspace open with — answered by the purchase in progress and what is waiting on the buyer.',
       },
     ],
   },
@@ -175,6 +184,22 @@ export const partnerPortal = {
       'The only hard evidence I had was the old product, so that is where I started: ten screens, one cognitive walkthrough each, four questions per step — goal, discoverability, mapping, feedback — and a severity scale that keeps “blocks the flow” apart from “looks untidy”. Where a static screen could not prove something, such as keyboard order or what happens after a click, I recorded it as not confirmed rather than counting it as a defect.',
       'From there: a brief that keeps what is known about the old product separate from what is a target assumption, and never lets the second quietly become the first. Scenario work across the real buying shapes — a five-line reorder, a fifty-line project, a two-hundred-line import. A market pass over sixteen comparable screens, each recorded as adopt, adapt or reject with its reason, so a pattern rejected once does not come back merely because it surfaced in search again.',
       'Then the design system, then twenty screens, then the implementation in React with a component catalogue on top of it. The last step was a synthetic run: an agent walking nine scenarios through the built prototype, thirty-five runs across three rounds, recorded as real test runs with their own events. That step is what found the things the screens were still missing.',
+      /**
+       * Стадия продуктовой доводки после приёмки — прогон
+       * `b2b-dssl/audit/product-polish/` (`pp-b2b-2026-09-09`), решения
+       * `D018`–`D032`. Абзац стоит последним в процессе, потому что и работа
+       * шла последней; образец места и формы — последний абзац `process`
+       * кейса Agent Ops. Нового раздела нет — решение владельца 11.09.2026.
+       *
+       * Числа — из прогона и перепроверяемы: 23 значения из 23 совпали со
+       * стоковой палитрой Tailwind, пара рабочих плоскостей 1.046:1, `shadow-sm`
+       * на 75 боксах (`BACKLOG.md` §`PP-016`, `D018`, `D019`); пять ложных
+       * ответов на действие — волна `W0` по `D020`. Вето тени названо как
+       * исполненное, а не снятое: так оно и решено в `D019`. Вердикт
+       * «не wireframe» вынесен прогоном по 40 целям реестра на 1440 в обеих
+       * локалях (`report-08.md` § 11), а устойчивость — на четырёх ширинах.
+       */
+      'After acceptance I ran one more pass, because the screens carrying this argument still read as a low-fi wireframe. Measured, that had one cause: the palette was stock Tailwind in all twenty-three values, the two working planes stood 1.046:1 apart, and the shadow meant to separate them sat on seventy-five boxes where no one could see it. I re-cut the neutral ramp into paper, ground and a graphite rail, and kept the veto on shadow by deleting the invisible one — depth now comes from material and edge. The same pass caught five controls that answered the buyer falsely, a search that ignored its own query among them. The second row of frames below is the same queue before and after, on the same data at the same width.',
     ],
     /**
      * Живой прототип — решение владельца 2026-08-25. До этого адрес не
@@ -214,18 +239,26 @@ export const partnerPortal = {
      * Подпись обещает собранный прототип — ролик показывает его работающим,
      * не требуя перехода.
      *
-     * Сюжет — второй интакт спецификации, вставка из Excel. Он выбран, а не
-     * разбор строки, потому что показывает обещание кейса в момент его
-     * исполнения: экран печатает исходный текст каждой строки и говорит
-     * словами продукта, что ничего не выброшено. Разбор строки стоит ниже,
-     * артефактом первого решения, и повторения нет — это разные экраны.
+     * **С 11.09.2026 здесь фильм, а не петля** — решение владельца на этапе
+     * 09 прогона доводки. Прежний сюжет — вставка из Excel в быстрый заказ —
+     * снят: маршрут показа приёмки (`b2b-dssl/audit/product-polish/
+     * report-08.md` § 8) исключает быстрый заказ как второй интейк,
+     * дублирующий импорт по смыслу. Обещание петли — «ни одна строка не
+     * переписана» — фильм показывает на результате разбора: 48 прочитано,
+     * 0 потеряно. Разбор одной строки по-прежнему стоит ниже, петлёй
+     * первого решения; в фильме он идёт быстрым проходом, а не сравнением.
+     *
+     * `film`: нативные контролы, без петли и без автозапуска —
+     * `ds/components.md` §`MediaFrame`. Постер — очередь разбора с открытой
+     * панелью кандидатов, а не первый кадр (индекс стоит артефактом ниже).
      */
     clip: {
-      src: `${media}/clip-paste-specification-poster.webp`,
-      video: `${media}/clip-paste-specification`,
-      alt: 'Screen recording of the quick order: four lines pasted from a spreadsheet, the columns recognised, and a grid where two lines match a catalogue product, one shows eleven possible matches and one has no catalogue match',
+      src: `${media}/film-pipeline-poster.webp`,
+      video: `${media}/film-pipeline`,
+      film: true,
+      alt: 'Screen recording of the demo path, on the product’s own controls: sign in, choose a company, import a spreadsheet, read the parse result, resolve the seven open lines one by one, accept the commercial changes in the cart, choose a fulfillment plan, complete checkout and open the created order',
       caption:
-        'Four pasted lines, read as they arrived: two matched, two became review items, none was rewritten.',
+        'The whole pipeline in under ninety seconds: a forty-eight-line file in, a placed order out, and not one source row lost on the way.',
     },
     artifacts: [
       {
@@ -239,6 +272,26 @@ export const partnerPortal = {
         alt: 'Component catalogue showing every variant of one component side by side',
         caption:
           'One component, every variant it is allowed to have. The matrix is checked in the catalogue, not on the screen.',
+      },
+      /**
+       * Второй ряд — пара «до / после доводки», решение владельца 11.09.2026:
+       * существующий слот, а не новый раздел. Экран — очередь разбора: его
+       * носитель владелец назвал поимённо («low-fi wireframe», четыре плитки
+       * счётчиков), и на нём видны все четыре механизма доводки сразу.
+       *
+       * Сопоставимость (ось `E2`): `scripts/shoot-dssl-pairs.mjs`, обе
+       * половины — 1440×900 @2, свежий контекст, те же мок-данные и локаль.
+       * «До» — прототип на коммите `8a5b3d4`, с которого начался прогон.
+       */
+      {
+        src: `${media}/polish-before-resolution.webp`,
+        alt: 'The specification review before the polish pass, at 1440 px: four white counter tiles of equal weight above the queue, a white table on an almost identical canvas, and nothing at the bottom of the window',
+        caption: 'Before the pass: four counters of one weight, and every plane the same white.',
+      },
+      {
+        src: `${media}/polish-after-resolution.webp`,
+        alt: 'The same review after the pass, on the same data at the same width: one line saying how many rows still need confirmation, the blocking rows marked, a graphite rail, and a bar pinned to the bottom with the count and the next step',
+        caption: 'After: one sentence about the work, the blocking rows marked, the next step pinned to the bottom.',
       },
     ],
   },
@@ -312,16 +365,21 @@ export const partnerPortal = {
   },
 
   system: {
-    heading: 'Forty-five components, and one row I refused to fork.',
+    /**
+     * 46 = 24 + 22 после доводки: доменный `DeltaRow` («было → стало» одним
+     * объектом, `D029`) заведён в `b2b-dssl/ds/components.md` до применения.
+     * Каталог — 327 / 327 ячеек матрицы, `catalog-coverage` на 11.09.2026.
+     */
+    heading: 'Forty-six components, and one row I refused to fork.',
     body: [
-      'Twenty-four generic families and twenty-one domain components. The generic half is taken selectively from an open library and only where an approved screen needed it. The domain half — procurement tables, resolution rows, price and availability blocks, shipment groups, fulfillment plans, the order timeline — is the product’s own, because that is where its argument lives.',
+      'Twenty-four generic families and twenty-two domain components. The generic half is taken selectively from an open library and only where an approved screen needed it. The domain half — procurement tables, resolution rows, price and availability blocks, shipment groups, fulfillment plans, the order timeline — is the product’s own, because that is where its argument lives.',
       'The most reused element is the product row, and it appears in three places doing two different jobs: choosing, in the catalogue, and reviewing, in the cart. Forking it was the obvious move and the wrong one. It carries a context property instead, and its matrix is deliberately incomplete — a browse row has no disabled state, and a commercial change cannot happen to something you have not added yet. An incomplete matrix with a reason beats a full one that invents states to fill itself.',
       'Coverage is not checked by eye. A script walks the catalogue against the variant matrix, and a smoke run loads every story to catch the ones that compile but do not paint.',
     ],
     /** CASE-10, US-18: состояния в подписи обязательны. */
     grid: [
       {
-        src: `${media}/system-product-row-v2.webp`,
+        src: `${media}/system-product-row.webp`,
         alt: 'Product row in both contexts and all of its states',
         component: 'ProductRow',
         states: 'Cart / Browse × default · attention · disabled · added',
@@ -339,10 +397,10 @@ export const partnerPortal = {
         states: 'verified · stale · not confirmed × unchanged / changed',
       },
       {
-        src: `${media}/system-resolution-row-v2.webp`,
-        alt: 'Resolution row in its four identity states and its separate parse-error state',
+        src: `${media}/system-resolution-row.webp`,
+        alt: 'Resolution row in its five match types, each open and confirmed; a confirmed row keeps what the match originally was',
         component: 'ResolutionRow',
-        states: 'exact · ambiguous · missing · changed + parse error',
+        states: 'exact · ambiguous · missing · changed · parse error × open / confirmed',
       },
       {
         src: `${media}/system-fulfillment-plan.webp`,

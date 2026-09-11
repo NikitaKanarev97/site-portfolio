@@ -1,4 +1,4 @@
-/** Refreshes the four Russian case-index screenshots from their live source apps. */
+/** Refreshes the Russian case-index screenshots (vet, pawly, agent-ops) from their live source apps. */
 import { createRequire } from 'node:module';
 import path from 'node:path';
 import sharp from 'sharp';
@@ -7,13 +7,12 @@ const require = createRequire('D:/Claude-projects/b2b-dssl/package.json');
 const { chromium } = require('playwright');
 
 const root = process.cwd();
+/*
+ * `dssl` снят 11.09.2026: русский индекс снимает `shoot-dssl-frames.mjs` той же
+ * нормой, что английский (1760×746, шапка и первая группа). Прежняя запись
+ * снимала бы его на 1440 другим селектором — пара разошлась бы.
+ */
 const targets = [
-  {
-    id: 'dssl',
-    url: 'http://127.0.0.1:5199/b2b/ru',
-    viewport: { width: 1440, height: 900 },
-    selector: '#root > div > div',
-  },
   {
     id: 'vet',
     url: 'http://127.0.0.1:5200/ru/',
