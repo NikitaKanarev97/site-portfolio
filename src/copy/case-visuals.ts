@@ -71,15 +71,15 @@ const catalog = {
   },
   pawly: {
     folder: 'case-pawly',
-    cover: ['range-evidence-chain.webp'],
+    cover: ['cover/return-confirmed.webp'],
     hero: ['handover-photo-review.webp'],
     en: {
-      cover: 'Pawly: recorded compatibility, expected return and a report with two confirmed handover photos.',
+      cover: 'Pawly: return confirmed at 14:52, with dated pickup and return photos in one report card.',
       hero: 'Pawly return photo review: the full selected image remains local until the walker sends it and the demo confirms receipt.',
       caption: 'A selected photo is not yet a confirmed return. The walker reviews the full image before sending. Local demo on invented data.',
     },
     ru: {
-      cover: 'Pawly: записанная совместимость, ожидаемый возврат и отчёт с двумя подтверждёнными фотографиями передачи.',
+      cover: 'Pawly: возвращение подтверждено в 14:52; фотографии передачи и возвращения с датами в одной карточке отчёта.',
       hero: 'Проверка фото возвращения в Pawly: полный выбранный кадр остаётся локальным до отправки и подтверждения в демо.',
       caption: 'Выбранное фото ещё не подтверждает возвращение. Исполнитель проверяет полный кадр до отправки. Локальное демо на вымышленных данных.',
     },

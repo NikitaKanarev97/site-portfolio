@@ -192,14 +192,12 @@ export const home = {
           { term: 'Evidence', value: 'Independent concept · no human validation' },
         ],
         cta: 'Read the case',
-        /** Тот же набор, что на CaseCover кейса. Данные на кадрах выдуманы. */
+        /** Один крупный фрагмент подтверждения; полный отчёт остаётся в кейсе. */
         cover: [
-          '/media/case-pawly/walker-profile.webp',
-          '/media/case-pawly/active-service.webp',
-          '/media/case-pawly/handover-photo-review.webp',
+          '/media/case-pawly/cover/return-confirmed.webp',
         ],
         coverAlt:
-          'Pawly: recorded compatibility, expected return and a selected return photo awaiting confirmation',
+          'Pawly: return confirmed at 14:52, with dated pickup and return photos in one report card',
       },
     ],
   },

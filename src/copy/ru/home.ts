@@ -132,12 +132,10 @@ export const homeRu = {
         ],
         cta: 'Читать кейс',
         cover: [
-          '/media/case-pawly-ru/walker-profile.webp',
-          '/media/case-pawly-ru/active-service.webp',
-          '/media/case-pawly-ru/handover-photo-review.webp',
+          '/media/case-pawly-ru/cover/return-confirmed.webp',
         ],
         coverAlt:
-          'Pawly: записанная совместимость, ожидаемый возврат и выбранное фото, которое ещё ждёт подтверждения',
+          'Pawly: возвращение подтверждено в 14:52; фотографии передачи и возвращения с датами в одной карточке отчёта',
       },
     ],
   },
