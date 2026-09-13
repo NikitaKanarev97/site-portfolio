@@ -188,18 +188,18 @@ export const home = {
           { term: 'Product', value: 'Dog walking and pet sitting marketplace' },
           { term: 'Year', value: '2026' },
           { term: 'Role', value: 'Product Designer' },
-          { term: 'Platform', value: 'Mobile, iOS first and Android next' },
+          { term: 'Platform', value: 'Mobile web prototype · EN / RU' },
           { term: 'Evidence', value: 'Independent concept · no human validation' },
         ],
         cta: 'Read the case',
         /** Тот же набор, что на CaseCover кейса. Данные на кадрах выдуманы. */
         cover: [
-          '/media/case-pawly/cover/screen-gallery.webp',
-          '/media/case-pawly/cover/owner-home.webp',
-          '/media/case-pawly/cover/handover-photo-review.webp',
+          '/media/case-pawly/walker-profile.webp',
+          '/media/case-pawly/active-service.webp',
+          '/media/case-pawly/handover-photo-review.webp',
         ],
         coverAlt:
-          'Pawly product screen index: the owner home, a walker profile, the pet address check and the safety profile, with the active owner screen and the drop-off proof behind it',
+          'Pawly: recorded compatibility, expected return and a selected return photo awaiting confirmation',
       },
     ],
   },

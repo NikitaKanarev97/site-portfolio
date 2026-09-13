@@ -1,320 +1,252 @@
-/**
- * Тексты кейса Pawly — маршрут /work/pawly
- *
- * Композиция — ds/screens/case-pawly.md. Фактура собрана из проекта
- * d:\Claude-projects\PETS-walking: outputs/{brief,prd,prioritization,
- * competitive_analysis_final,interview_primary_persona}.md,
- * ia/{sitemap,open-questions}.md, ds/{foundation,components,patterns}.md,
- * audit/review-2026-08-25.md, dashboard/seed/test-suites.json и README.md.
- *
- * Четыре правила, которые этот файл обязан держать:
- *
- * 1. Это интерактивный продуктовый концепт, а не работающий маркетплейс.
- *    Бронирований, выручки, конверсии и пользовательской валидации нет.
- * 2. Интервью primary-персоны было симуляцией. Оно может менять гипотезу,
- *    но не называется живым исследованием и не доказывает спрос.
- * 3. «81 designed, 16 assembled» — точная формулировка из
- *    ia/open-questions.md. Восемьдесят один экран не был собран.
- * 4. Все цифры QA — качество прототипа, не adoption: 73 находки
- *    рассмотрены, 71 закрыта, две сняты как ложные; 91 скриншот,
- *    девять отчётов, ноль ошибок консоли на финальной приёмке.
+/** Pawly · accepted Product Polish, September 2026.
+ * Independent concept; synthetic QA only. Source: PETS-walking/audit/product-polish/reports/05-acceptance.md.
+ * Composition and media provenance: ds/screens/case-pawly.md.
  */
-
-const YEAR = '2026';
-const TEAM =
-  'Sole designer — product framing, research synthesis, IA, UX/UI, design system, prototype and QA';
-const RESEARCH = 'Desk research, five competitors and one simulated interview; no human validation';
-const DURATION = 'Sixteen days, brief to audited interactive prototype';
-
-/**
- * Адрес живого прототипа. Стоит константой с 2026-08-28: носителей два —
- * пара `Prototype` в мете шапки и ссылка внутри `process`, и разойтись
- * они не должны.
- */
-const PROTOTYPE = 'https://pawly-fawn.vercel.app/app';
-
-const media = '/media/case-pawly';
-
 export const pawly = {
-  slug: 'pawly',
-
-  meta: {
-    title: 'Pawly — trust as evidence in a dog-care marketplace',
-    description:
-      'A mobile marketplace concept that makes trust inspectable: verified walkers, compatible matching, handover proof, live routes and a recovery path when a walk goes wrong.',
+  "slug": "pawly",
+  "meta": {
+    "title": "Pawly — trust as evidence in a dog-care marketplace",
+    "description": "Independent dog-care concept: recorded compatibility, dated checks, confirmed handover photos and clear walker earnings. Interactive EN/RU demo; no human validation."
   },
-
-  header: {
-    title: 'Pawly',
-    lead: 'A dog-care marketplace designed so trust is something an owner can inspect — before a stranger takes the dog, while the walk is happening, and after the pet is home.',
-    meta: [
-      { term: 'Client', value: 'Independent product concept' },
-      { term: 'Product', value: 'Marketplace for dog walking and pet sitting' },
-      { term: 'Year', value: YEAR },
-      { term: 'Role', value: 'Product Designer' },
-      { term: 'Platform', value: 'Mobile — iOS first, Android next; web prototype' },
-      { term: 'Evidence', value: 'Independent concept · no human validation' },
-      { term: 'Prototype', value: 'Live, on invented data', href: PROTOTYPE },
+  "header": {
+    "title": "Pawly",
+    "lead": "A dog-care marketplace designed so trust is something an owner can inspect — before a stranger takes the dog, while the walk is happening, and after the pet is home.",
+    "meta": [
+      {
+        "term": "Client",
+        "value": "Independent product concept"
+      },
+      {
+        "term": "Product",
+        "value": "Marketplace for dog walking and pet sitting"
+      },
+      {
+        "term": "Year",
+        "value": "2026"
+      },
+      {
+        "term": "Role",
+        "value": "Product Designer"
+      },
+      {
+        "term": "Platform",
+        "value": "Mobile web prototype · EN / RU"
+      },
+      {
+        "term": "Evidence",
+        "value": "Independent concept · no human validation"
+      },
+      {
+        "term": "Prototype",
+        "value": "Interactive demo · invented data",
+        "href": "https://pawly-fawn.vercel.app/app"
+      }
     ],
-    outcome:
-      'Outcome. The result was not a polished set of happy-path screens but a testable service model: seven-stage verification is visible, handover produces proof, failure has a recovery path, and the product says what it cannot guarantee. What it cost: a narrower launch, manual operations behind the interface, and several promises deliberately left out.',
-    team: [
-      { term: 'Team', value: TEAM },
-      { term: 'Research', value: RESEARCH },
-      { term: 'Duration', value: DURATION },
+    "outcome": "A testable journey across both sides of a walk: the owner can inspect compatibility and return evidence; the walker sees the risks, confirms the handover and can trace the payout. The September polish makes those decisions easier to read and keeps their states consistent across seventeen routes.",
+    "team": [
+      {
+        "term": "Team",
+        "value": "Sole designer — product framing, research synthesis, IA, UX/UI, design system, prototype and QA"
+      },
+      {
+        "term": "Research",
+        "value": "Desk research, five competitors and one simulated interview; no human validation"
+      },
+      {
+        "term": "Duration",
+        "value": "Initial prototype: sixteen days in August 2026. Product polish: September 2026."
+      }
     ],
-    rework: {
-      label: 'A concept, not a live service',
-      text: 'The product, design system and interactive prototype are real. The company is not registered, nothing on the prototype can be booked or paid for, and there are no human research results, orders, revenue or conversion data. Every name, route, date and payment on the screens is invented. The simulated interview and the synthetic agent runs are labelled as such everywhere they are used.',
+    "rework": {
+      "label": "A concept, not a live service",
+      "text": "Independent concept · no human validation. The design and interactive demo are implemented; the marketplace is not operating. Names, checks, addresses, photos and money are demonstration data. There is no backend, real GPS, upload, chat or payment processing. Research used secondary sources and a simulated interview; QA used synthetic runs."
+    }
+  },
+  "cover": {
+    "screens": [
+      "/media/case-pawly/walker-profile.webp",
+      "/media/case-pawly/active-service.webp",
+      "/media/case-pawly/handover-photo-review.webp"
+    ],
+    "alt": "Pawly: recorded handling limits, expected return and a selected return photo awaiting confirmation.",
+    "caption": "Compatibility, return and proof in the accepted September demo. Invented data."
+  },
+  "context": {
+    "heading": "The owner is not buying a walk. They are handing over a dog, and sometimes the keys.",
+    "body": [
+      "The starting brief was “Uber for dogs”: find somebody nearby, book and follow the route. The harder decision happens before booking. An owner at work has a short window to decide whether a stranger can handle their dog and receive access to the home.",
+      "Desk research across five competitors suggested a gap between fast self-service booking and services whose reassurance depends on a manager assigning the walker. I used that gap as a design hypothesis: let the owner inspect the basis for a match without implying that an early marketplace can serve every address.",
+      "The concept keeps its original Russian-market setting. English and Russian versions use the same rouble prices and Moscow demonstration address; translation does not imply a launch in another market."
+    ]
+  },
+  "reframe": {
+    "heading": "Trust could not be a badge. It had to be a chain of evidence.",
+    "body": [
+      "A verification badge cannot answer whether this person can handle this dog. Pawly puts the pet’s requirements beside the walker’s recorded handling limits and availability. The seven dated checks remain inspectable, while an unknown qualification stays unknown.",
+      "During the walk, the first question is when the pet is expected home. The active screen gives that time and the received pickup photo priority over the map. The map is labelled as a sample route: the prototype has no live GPS or measured signal freshness.",
+      "At the other boundary, choosing a photo is still a local draft. Only the demo’s successful send records the return. The owner’s report then shows the actual confirmation time and both dated photos. That distinction is the core of the interaction, not just a change of button label."
+    ],
+    "statement": "Show what is known, what is expected and what has actually been confirmed.",
+    "range": {
+      "src": "/media/case-pawly/range-evidence-chain.webp",
+      "alt": "Three current Pawly screens: Marina’s recorded handling limits, Baikal expected home at 14:50, and the report with return confirmed at 14:52.",
+      "caption": "A recorded match, an expected return, then a confirmed return. Three different claims, with different evidence. Demonstration data."
+    }
+  },
+  "process": {
+    "heading": "I designed the service boundary before I designed the screens.",
+    "body": [
+      "The first build started with secondary research, five competitors and one simulated interview. No participants were recruited. The interview suggested that pickup and return photos might matter more than watching a route; that remains a hypothesis to test with owners.",
+      "The original planning map contained 95 nodes, including 81 core nodes and seven flows. “81 designed, 16 assembled” described that August scope, not 81 built screens. The current demo has seventeen routes across owner and walker roles. The initial build took sixteen days; September refinement is a separate phase.",
+      "For the polish, I kept Inter, Lucide and the blue and warm-neutral system. I changed the information hierarchy: pet and return on Home, requirements before verification in the profile, a full photo before confirmation, and net earnings before transaction history. The owner and walker paths now share the same compatibility, handover and settlement state."
+    ],
+    "prototype": {
+      "href": "https://pawly-fawn.vercel.app/app",
+      "label": "Open the prototype",
+      "note": "Seventeen routes in EN/RU on invented data. Open “All screens” to move between owner and walker roles; reset is available in the demo shell."
     },
-  },
-
-  cover: {
-    /**
-     * Три широких кадра сняты одним прогоном shoot-pawly-frames.mjs.
-     * Pawly — мобильный продукт, поэтому портретный экран не кладётся в
-     * ScreenStack напрямую: фиксированный 16:10 срезал бы его целиком.
-     */
-    screens: [
-      `${media}/cover/screen-gallery.webp`,
-      `${media}/cover/owner-home.webp`,
-      `${media}/cover/handover-photo-review.webp`,
-    ],
-    alt: 'Pawly product screen index: the owner home, a walker profile, the pet address check and the safety profile, with the active owner screen and the drop-off proof behind it',
-    caption:
-      'The product before the case is explained: availability, compatibility, verification and proof. All data is invented.',
-  },
-
-  context: {
-    heading: 'The owner is not buying a walk. They are handing over a dog, and sometimes the keys.',
-    body: [
-      'The starting brief was “Uber for dogs”: open the app, find somebody nearby, book and follow the route. The primary situation was concrete — an owner is at work, needs help during the day and has about fifteen minutes to decide whether a stranger can be trusted with the dog and access to the home. A quick list of profiles answers only the easiest part of that decision.',
-      'The market research showed a split. Self-service products made the transaction fast but kept verification shallow; services with institutional trust relied on a manager, a phone call and manual assignment. The gap was not another map with more pins. It was a way to combine speed with evidence without pretending that an early marketplace already has supply everywhere.',
-      'The economics narrowed the everyday story as well. Twenty weekday walks at the researched price range would cost eighteen to twenty-two thousand roubles a month, so the realistic starting behaviour became one to three bookings a week, not a daily habit. That moved the product away from a universal convenience promise and toward reliability on the occasions that matter.',
-    ],
-  },
-
-  reframe: {
-    heading: 'Trust could not be a badge. It had to be a chain of evidence.',
-    body: [
-      'A green check next to a portrait compresses seven different claims into one word: identity, legal status, training, interview, practical skill, references and the date on which any of those were last checked. It asks the owner to trust the interface instead of letting them inspect what the interface knows.',
-      'The same problem repeats during the service. A live dot on a map looks precise, but a lost connection can make a safe walk look like a missing dog. A completed route does not prove who was handed over at the door, or that the dog came home. The evidence has to survive failure: last signal instead of a blank map, locally buffered route and photos, pickup and drop-off proof, and an explicit final state that says the pet is home.',
-      'So the product object changed from “a walker nearby” to the whole chain: compatible person, visible verification, handover, route, return and recovery. Speed remained a requirement, but never by hiding the part the operation could not guarantee.',
-    ],
-    statement:
-      'Make every promise inspectable before it becomes trust — and keep the evidence intact when the happy path breaks.',
-    /**
-     * Кадр диапазона. У трёх десктопных кейсов диапазон идёт по ширинам;
-     * здесь продукт мобильный, 390 px — вся его правда, и диапазон идёт по
-     * времени сервиса: три момента из лида кейса. Съёмка —
-     * `scripts/shoot-range-frames.mjs pawly`, обоснование места и состава —
-     * `ds/screens/case-pawly.md` и `audit/visual-density-2026-08-31.md` §9.
-     */
-    range: {
-      src: `${media}/range-evidence-chain.webp`,
-      alt: 'One booking at three moments on a 390 px phone: the review screen with the full price, the missing-insurance disclosure and the pay action; the walk in progress with the live route, the assigned walker and a timeline holding the pickup photo; and the finished walk with both handover photos, a segment recorded offline and synced later, and the amount charged',
-      caption:
-        'The same booking before, during and after: what was promised, what is visible while it happens, and what remains as proof.',
+    "clip": {
+      "src": "/media/case-pawly/clip-return-proof-poster.webp",
+      "video": "/media/case-pawly/clip-return-proof",
+      "film": true,
+      "alt": "Local recording: a selected return photo is sent, the demo confirms the return, and the owner’s report shows both dated handovers.",
+      "caption": "Selected locally → sending → return confirmed → owner report. A real interaction in the local demo; no real upload or service takes place."
     },
+    "artifacts": [
+      {
+        "src": "/media/case-pawly/owner-home.webp",
+        "alt": "Owner Home puts Baikal, Marina, the expected return at 14:50 and the received pickup photo first.",
+        "caption": "Home answers the immediate question: who is with my dog, and when should they be back?"
+      },
+      {
+        "src": "/media/case-pawly/walker-active-order.webp",
+        "alt": "The walker’s current booking with Baikal, the 779-rouble net payout, expected return, handover record and care instructions.",
+        "caption": "The other role sees the same walk, with handover duties and care instructions close to the next action."
+      }
+    ]
   },
-
-  process: {
-    heading: 'I designed the service boundary before I designed the screens.',
-    body: [
-      'I started with secondary research, five competitors and a focused audit of the closest analogue. The primary-persona interview was simulated, not recruited, and used only to challenge the first hypothesis. It did: the final pickup and drop-off photos mattered more than watching the whole route, and “pet is home” mattered more than a perfect GPS line. Those remain hypotheses for live interviews, but they were strong enough to change what the prototype had to make testable.',
-      'Scope came next: 42 Must-haves out of 65 requirements, then a 95-screen product map with 81 core nodes and seven user flows. I deliberately did not turn every node into a frame. Eighty-one were designed at flow and group level; sixteen decision-heavy screens were assembled into seventeen routed frames, plus the landing. That kept the built layer on the questions worth testing — compatibility, verification, handover proof, replacement and two-sided money — instead of spending the same time on routine settings screens.',
-      'Then the visual system and the build: 63 primitive tokens, 30 semantic tokens, fourteen text styles and 33 React components with named Storybook matrices. Figma, specifications, React and the catalogue use the same semantic names. The prototype went through structural review, parity review, visual acceptance and synthetic agent runs; the findings returned to the same source instead of being patched only in screenshots.',
-    ],
-    prototype: {
-      href: PROTOTYPE,
-      label: 'Open the prototype',
-      note: 'The interactive concept on invented data — seventeen mobile frames, plus the responsive landing in the same build.',
-    },
-    /**
-     * Клип — `CASE-20`, съёмка `scripts/shoot-clips.mjs`. Экран проверки
-     * заказа выбран потому, что на нём тезис кейса виден целиком и до
-     * денег: полная цена, а под ней два раскрытия — чего платформа не
-     * страхует и во что обойдётся поздняя отмена. Оплата в кадр не входит
-     * намеренно: концепт ничего не проводит, и ролик не должен обещать
-     * обратное.
-     *
-     * Два других ролика стоят ниже, артефактами решений: проверка
-     * выгульщика и замена с обратным отсчётом.
-     */
-    clip: {
-      src: `${media}/clip-booking-disclosures-poster.webp`,
-      video: `${media}/clip-booking-disclosures`,
-      alt: 'Screen recording of the booking review: the full price with its total, then two disclosures opened in turn — that there is no insurance behind the booking, and the three cancellation tiers',
-      caption:
-        'Before the pay button: what this booking is not insured against, and what a late cancellation costs.',
-    },
-    artifacts: [
-      {
-        src: `${media}/screen-index.webp`,
-        alt: 'Index of all seventeen Pawly frames: the owner flow, the active service, recovery, the walker flow and earnings',
-        caption:
-          'Seventeen routed frames as one index. Eighty-one core nodes were designed; these sixteen decision-heavy screens were assembled.',
-      },
-      {
-        src: `${media}/storybook-matrix.webp`,
-        alt: 'Button catalogue with primary, secondary, ghost and danger types in default, pressed, disabled and loading states',
-        caption:
-          'One component across type and state. The matrix is rendered from the same React component the screens use.',
-      },
-    ],
+  "failure": {
+    "heading": "The inventory was complete. The service logic was not.",
+    "body": [
+      "The August review found plausible screens describing inconsistent prices, and saved state that could confuse the next demo visit. Those were problems between screens. Its historical total of 73 reviewed findings — 71 resolved and two dismissed — belongs to that original build, not to a new user study.",
+      "September checks found a more consequential contradiction: choosing another time could bypass the dog’s constraints, and a replacement did not always preserve the named reserve. Both now use one compatibility rule across weight, safety answers, recorded qualifications, all seven checks and the full booking slot. Changing the time never clears the risks.",
+      "The final synthetic journeys also exposed an old review surviving the start of a new draft. A new booking ID now clears the review and private flags. On the walker side, a confirmed return records the payout once: re-entering or reloading the report does not earn another 779 ₽. These are verified demo behaviours, not evidence of safer real walks."
+    ]
   },
-
-  failure: {
-    heading: 'The inventory was complete. The service logic was not.',
-    body: [
-      'The first full review found a contradiction in the product’s strongest claim. The landing promised a price with the platform fee included; the booking screen added a separate service fee; the walker payout was calculated from a third model. Each surface looked plausible alone. Together they described two different businesses on the page that asked users to trust one number. The fix began with one price table in the decision log, then made every surface read from it.',
-      'The prototype also remembered too much. Cancelling one synthetic booking wrote the state to local storage, and the next visitor could arrive to an empty owner home with no way to reset it. In the gallery, seventeen live screens were mounted inside links, leaving the controls inside every preview in the keyboard order. Both passed a frame review because neither exists in a frame; they appeared only when the build was used as a product.',
-      'The main review and consistency pass examined 58 findings; the visual acceptance added fifteen more. Seventy-one were resolved and two were dismissed as false positives. A synthetic agent run found the state-persistence defect, the fix was retested, and the final pass covered seventeen routes and the landing with 91 screenshots, nine reports and no console errors. None of those numbers is user validation. They are evidence that the prototype now tells one story and survives its own interactions.',
-    ],
+  "decisions": {
+    "heading": "Four decisions, and what each one cost.",
+    "items": [
+      {
+        "decision": "A match must satisfy the dog’s requirements for the whole slot.",
+        "why": "Coverage is checked against the pet’s address first. Then weight, safety answers, recorded skills and availability determine the list. An empty result explains the constraint. Another time can change availability; it cannot make a bite history disappear.",
+        "cost": "The result can stay empty. The concept accepts fewer matches instead of relaxing requirements to make booking look easy. The rule is a demonstration model, not a professionally validated safety assessment.",
+        "artifact": {
+          "src": "/media/case-pawly/walker-list.webp",
+          "alt": "Walker list for Baikal with duration, price and recorded compatibility for the selected slot.",
+          "caption": "The same 45-minute, 950 ₽ booking carries its requirements into every candidate choice."
+        }
+      },
+      {
+        "decision": "Handling limits come before the seven dated checks.",
+        "why": "Verification and suitability answer different questions. The profile first relates Baikal’s needs to Marina’s recorded limits, then lets the owner inspect the seven checks. General profile text is not treated as proof of a missing qualification.",
+        "cost": "More evidence takes space and would require an operation to maintain it. The original service plan leaves interview, trial walk and references with a team; the demo only presents sample records.",
+        "artifact": {
+          "src": "/media/case-pawly/walker-profile.webp",
+          "alt": "Marina’s profile: Baikal’s requirements, recorded handling limits, match explanation and an expandable record of seven checks.",
+          "caption": "The reason for this match is visible before the verification history."
+        }
+      },
+      {
+        "decision": "Expected return and confirmed return are separate states.",
+        "why": "An expected 14:50 return helps the owner plan. It does not prove the dog is home. The active screen keeps the received pickup photo visible; the walker reviews the full return photo before sending. Only confirmation produces the 14:52 event in the final report.",
+        "cost": "The walker has an extra step. A local photo or failed send cannot finish the order. Received confirmations survive a warm offline session, but the prototype does not offer cold-start offline access or a real camera and upload service.",
+        "artifact": {
+          "src": "/media/case-pawly/active-service.webp",
+          "alt": "Active walk: Baikal expected home by 14:50, Marina, received pickup photo at 14:05 and a labelled sample route.",
+          "caption": "The expected time and received photo lead; the sample map supports the story without claiming live tracking."
+        }
+      },
+      {
+        "decision": "Both roles must be able to explain the same money.",
+        "why": "For the shown walk, the owner pays 950 ₽, the platform fee is 171 ₽ at 18%, and the walker earns 779 ₽. That net amount is visible before acceptance. After return confirmation it becomes one recorded earning, distinct from the available balance and period history.",
+        "cost": "Cancellation and replacement need equally explicit boundaries. The existing 60-second reserve assignment rechecks the named person; manual choice stops it, and no compatible reserve means no invented assignment. Insurance and guaranteed replacement remain outside the offer.",
+        "artifact": {
+          "src": "/media/case-pawly/walker-earnings.webp",
+          "alt": "Earnings after one confirmed walk: 3895 ₽ available, 779 ₽ for the completed order, and separate period history.",
+          "caption": "3116 + 779 = 3895 ₽ available. Reloading does not repeat the earning. All amounts are simulated."
+        }
+      }
+    ]
   },
-
-  decisions: {
-    heading: 'Four decisions, and what each one cost.',
-    items: [
-      {
-        decision:
-          'Availability is checked from the pet’s address before the owner fills the safety profile.',
-        why: 'The common case is booking from work for the address at home, so device geolocation answers the wrong question. Competitor audits also showed the most expensive dead end: twenty minutes of profile and payment work before learning that the area is not served. Pawly separates “temporarily no compatible walker” from “this area has not opened” and says which one happened.',
-        cost: 'The launch cannot pretend to cover three whole cities. Each city starts with two to four districts and a service area opens only when local supply is dense enough; outside it, the honest result is a wait-list, not a pin that nobody can accept.',
-        artifact: {
-          src: `${media}/address-input.webp`,
-          alt: 'Pet address screen with a two-step progress indicator, address field, location explanation, map and continue action',
-          caption:
-            'The pet’s address comes before the profile. Current location is a hint; coverage is checked against the service address.',
-        },
-      },
-      {
-        decision:
-          'Verification is seven named stages with dates, not one “verified” badge.',
-        why: 'Owners need to know what the platform did, not how confidently it coloured the checkmark. The same evidence also has to explain why a walker is compatible with this dog: the pet’s required safety fields become hard matching constraints, and an empty result names the constraint instead of offering to clear it.',
-        cost: 'Verification is operationally expensive. Only four stages are self-served in the first version; interview, trial walk and reference stay with an operator. The product remains fast for the owner by accepting manual work behind the interface rather than automating a check it cannot perform credibly.',
-        /**
-         * Ролик вместо снимка: шторка «как мы проверяем» открывается только
-         * нажатием, и на статичном кадре её не бывает — а именно она и
-         * отвечает на вопрос, что стоит за словом «проверен».
-         */
-        artifact: {
-          src: `${media}/clip-verification-poster.webp`,
-          video: `${media}/clip-verification`,
-          alt: 'Screen recording of the walker profile: seven verification stages with their dates, then a sheet explaining what the stages are and how often they are renewed',
-          caption:
-            'Seven checks with their dates, and what each of them means. The badge is only the summary.',
-        },
-      },
-      {
-        decision:
-          'Pickup and drop-off photos outrank the live map, and the walk ends only when the pet is home.',
-        why: 'The simulated interview challenged the original GPS-first concept: the two boundary moments were the evidence the owner wanted most. A route can disappear with the network and come back later; the handover tells who received the dog, and the return tells that the service actually ended. The capture screen therefore names three quality criteria and makes a bad proof retakable.',
-        cost: 'The walker does more than tap “done”, and the service cannot complete until usable proof exists. Pawly also refuses the word “insured”: insurance is not in the MVP, so the absence is disclosed before payment instead of being covered with safety copy.',
-        artifact: {
-          src: `${media}/handover-photo-review.webp`,
-          alt: 'Drop-off proof review with a full photo of the dog, three quality checks, confirm and retake actions',
-          caption:
-            'A drop-off photo is reviewed against three explicit criteria before it can finish the walk.',
-        },
-      },
-      {
-        decision:
-          'A compatible replacement is a primary flow: same time, same price, one tap and a timeout.',
-        why: 'A cancelled walker is not an exception to a marketplace promise; it is the moment when that promise is tested. The replacement has to match the same risk profile and booking conditions, and the owner should not rebuild the order under pressure. If they do not answer in time, the compatible reserve is assigned so the walk can still happen.',
-        cost: 'The feature consumes real supply: the operation has to keep a reserve available and absorb the price difference. When no compatible reserve exists, the interface has to say so immediately; there is no generic “we are looking” state that can buy reliability with time.',
-        /**
-         * Единственный кадр в портфолио, который снимок показать не может:
-         * обратный отсчёт на кнопке идёт по-настоящему. Ролик показывает и
-         * вторую ветку решения — уход к списку и возврат к предложению.
-         */
-        artifact: {
-          src: `${media}/clip-replacement-poster.webp`,
-          video: `${media}/clip-replacement`,
-          alt: 'Screen recording of the replacement offer: a verified substitute at the same time and price, a confirmation button counting down from sixty seconds, and the alternative — choosing someone else',
-          caption:
-            'The substitute is already checked against the dog, time and price, and the offer is counting down.',
-        },
-      },
+  "system": {
+    "heading": "Thirty-three components, with states treated as product decisions.",
+    "body": [
+      "The August foundation defined 63 primitive tokens, 30 semantic tokens, fourteen text styles and 33 React components. Those are historical baseline counts. September work extended the existing system: stronger text semantics, wrapping controls, named questions and the pending, local and confirmed PhotoProof states.",
+      "The matrices below come from the accepted component catalogue. The code, local specifications and stories record the polish. Figma reverse-sync is still pending; the current application is not claimed to match the older Figma screens pixel for pixel."
     ],
+    "grid": [
+      {
+        "src": "/media/case-pawly/system-info-note.webp",
+        "alt": "InfoNote catalogue with legacy, hint, warning and disclosure presentations.",
+        "component": "InfoNote",
+        "states": "legacy · hint · warning · disclosure"
+      },
+      {
+        "src": "/media/case-pawly/system-empty-state.webp",
+        "alt": "Empty state with secondary action, primary action and without an action",
+        "component": "EmptyState",
+        "states": "secondary action · primary action · no action"
+      },
+      {
+        "src": "/media/case-pawly/system-bottom-sheet.webp",
+        "alt": "Bottom sheet without actions, with one action and with two actions",
+        "component": "BottomSheet",
+        "states": "no action · single action · double action"
+      },
+      {
+        "src": "/media/case-pawly/system-photo-proof.webp",
+        "alt": "PhotoProof catalogue with tile and compact photos: received pickup and return, pending proof, local selection and unavailable image; EN/RU examples.",
+        "component": "PhotoProof",
+        "states": "tile · compact / pending · local · confirmed · unavailable"
+      },
+      {
+        "src": "/media/case-pawly/system-timeline-row.webp",
+        "alt": "Timeline row when done, current, pending and with a nested proof photo",
+        "component": "TimelineRow",
+        "states": "done · current · pending · nested photo"
+      },
+      {
+        "src": "/media/case-pawly/system-icon-button.webp",
+        "alt": "Icon button in default, pressed and disabled states across the icon set",
+        "component": "IconButton",
+        "states": "default · pressed · disabled × icon set"
+      }
+    ]
   },
-
-  system: {
-    heading: 'Thirty-three components, with states treated as product decisions.',
-    body: [
-      'The system has 63 primitive and 30 semantic tokens, fourteen text styles and 33 React components. Component code never reaches for a raw colour, radius or type size; the same semantic layer mirrors the Figma library and the screen specifications. Storybook renders every declared combination from the actual component, so the catalogue cannot quietly become a second implementation.',
-      'A full Figma audit covered 448 instances and found zero broken instances, zero text nodes without a design-system style, zero unbound fills or strokes and zero spacing values outside the scale. The screen-to-code parity pass found the opposite class of problem — specifications that had fallen behind a component already used in the build — and fixed the wrong side instead of forcing the code back to an old document.',
-      'The matrices below matter because the service lives outside the default state: the network drops, proof is missing, a disclosure opens, a timeline is waiting, an action becomes unavailable. Those are not edge decorations around the interface. They are the interface when trust is at risk.',
+  "result": {
+    "heading": "What got solved, and what did not.",
+    "statements": [
+      {
+        "term": "Implemented",
+        "value": "A visible reason for the match, consistent replacement rules, expected and confirmed return states, a saved two-photo report and one settlement shared by both roles."
+      },
+      {
+        "term": "Trade-off",
+        "value": "A deliberately narrow demo: one active booking, a shared demonstration wallet and recorded handling limits. No insurance, guaranteed reserve, real payments, GPS or operational verification."
+      },
+      {
+        "term": "Checked",
+        "value": "Local acceptance on 13 September 2026 covered all seventeen routes in EN/RU, using earlier 360/390/430 px checks and focused cross-screen journeys. Keyboard access, long text, reduced motion and recovery states were checked within that scope. This was synthetic QA, not human validation or a full accessibility certification."
+      },
+      {
+        "term": "What changed in how I work",
+        "value": "I now review the boundary between a claim and its evidence: selected versus received, expected versus confirmed, pending versus earned. A clear screen is only useful when the next screen preserves its meaning."
+      }
     ],
-    grid: [
-      {
-        src: `${media}/system-info-note.webp`,
-        alt: 'Information note in plain and disclosure forms, each in default and pressed states',
-        component: 'InfoNote',
-        states: 'plain / disclose × default · pressed',
-      },
-      {
-        src: `${media}/system-empty-state.webp`,
-        alt: 'Empty state with secondary action, primary action and without an action',
-        component: 'EmptyState',
-        states: 'secondary action · primary action · no action',
-      },
-      {
-        src: `${media}/system-bottom-sheet.webp`,
-        alt: 'Bottom sheet without actions, with one action and with two actions',
-        component: 'BottomSheet',
-        states: 'no action · single action · double action',
-      },
-      {
-        src: `${media}/system-photo-proof.webp`,
-        alt: 'Photo proof for pickup, drop-off and the not-yet-uploaded state',
-        component: 'PhotoProof',
-        states: 'pickup · drop-off · placeholder',
-      },
-      {
-        src: `${media}/system-timeline-row.webp`,
-        alt: 'Timeline row when done, current, pending and with a nested proof photo',
-        component: 'TimelineRow',
-        states: 'done · current · pending · nested photo',
-      },
-      {
-        src: `${media}/system-icon-button.webp`,
-        alt: 'Icon button in default, pressed and disabled states across the icon set',
-        component: 'IconButton',
-        states: 'default · pressed · disabled × icon set',
-      },
-    ],
+    "nda": "Independent concept · no human validation. There were no human interviews or usability sessions and no real orders, users, revenue, conversion or retention results. The next research question is whether owners understand and use these proofs when choosing and receiving care. PRD metrics remain targets. Figma reverse-sync and the blocked Storybook test adapter remain recorded limitations; the adapter did not run its tests."
   },
-
-  result: {
-    heading: 'What got solved, and what did not.',
-    statements: [
-      {
-        term: 'Solved',
-        value:
-          'The booking now carries a visible chain of evidence: early coverage, hard compatibility constraints, dated verification, handover proof, a route that survives lost connection, an explicit return and a replacement path. The price shown to the owner includes the 18% platform commission and the walker sees the payout before accepting.',
-      },
-      {
-        term: 'Sacrificed',
-        value:
-          'Reach, and the promises that would have sold it faster: no insurance, no guaranteed replacement, no claim about a walker the platform has not verified itself. Coverage came before a complete safety profile at launch, and several operations run by hand behind the interface.',
-      },
-      {
-        term: 'Verified',
-        value:
-          'Seventeen routed frames and the landing were walked at three widths, and seventy-three review findings were resolved or dismissed with a stated reason. A synthetic agent run found the defect that mattered — state from one visitor surviving into the next — and it passed retest.',
-      },
-      {
-        term: 'What changed in how I work',
-        value:
-          'I stopped treating a complete happy path as a complete service. The most important fixes lived between screens: one price across two roles, state that must not leak to the next visitor, a keyboard path through the gallery, and recovery when the person the owner chose is no longer coming.',
-      },
-    ],
-    nda: 'This is an interactive product concept, not a launched marketplace. No human interviews or usability sessions were completed, and there are no bookings, users, revenue, conversion or retention figures. The synthetic agent runs measure the prototype’s behaviour, not demand or adoption. PRD targets such as weekly bookings, fill rate and proof coverage remain targets, not results. If it ran, the number that would decide the model is the share of walks that end with proof an owner actually opens — verification nobody looks at is cost without trust.',
-  },
-
-  outro: {
-    heading: 'Trust was the interface, not a layer of copy.',
-    lead: 'Every screen above either shows evidence, preserves it through failure, or admits what the service cannot guarantee yet.',
-  },
+  "outro": {
+    "heading": "Trust was the interface, not a layer of copy.",
+    "lead": "The next step is to test whether owners and walkers understand these distinctions in real tasks. The prototype makes that question inspectable."
+  }
 };

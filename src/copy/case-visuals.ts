@@ -74,14 +74,14 @@ const catalog = {
     cover: ['range-evidence-chain.webp'],
     hero: ['handover-photo-review.webp'],
     en: {
-      cover: 'Pawly: booking, a live walk and the completed route with pickup and drop-off photographs.',
-      hero: 'Pawly drop-off confirmation: a photograph of the returned dog and three visible checks before completing the walk.',
-      caption: 'A route ending is not proof of a safe return. The handover photo is checked before the walk can be completed. Demonstration scenario.',
+      cover: 'Pawly: recorded compatibility, expected return and a report with two confirmed handover photos.',
+      hero: 'Pawly return photo review: the full selected image remains local until the walker sends it and the demo confirms receipt.',
+      caption: 'A selected photo is not yet a confirmed return. The walker reviews the full image before sending. Local demo on invented data.',
     },
     ru: {
-      cover: 'Pawly: бронирование, активная прогулка и завершённый маршрут с фотографиями передачи и возвращения.',
-      hero: 'Подтверждение возвращения в Pawly: фотография питомца и три проверки перед завершением прогулки.',
-      caption: 'Конец маршрута ещё не доказывает возвращение. Перед завершением прогулки нужно проверить фотографию передачи питомца. Демонстрационный сценарий.',
+      cover: 'Pawly: записанная совместимость, ожидаемый возврат и отчёт с двумя подтверждёнными фотографиями передачи.',
+      hero: 'Проверка фото возвращения в Pawly: полный выбранный кадр остаётся локальным до отправки и подтверждения в демо.',
+      caption: 'Выбранное фото ещё не подтверждает возвращение. Исполнитель проверяет полный кадр до отправки. Локальное демо на вымышленных данных.',
     },
   },
 } satisfies Record<CaseSlug, unknown>;
