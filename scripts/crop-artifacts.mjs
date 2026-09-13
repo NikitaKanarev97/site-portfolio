@@ -109,48 +109,56 @@ const crops = [
     file: 'public/media/case-dssl-ru/cart-change-review.webp',
     box: { left: 300, top: 527, width: 745, height: 388 },
   },
+  /*
+   * Vet Clinic OS — пересчитано 13.09.2026 после продуктовой доводки
+   * (прогон `VET-PP-2026-09-12`). Координаты сняты из DOM собранного
+   * прототипа (прямоугольники панелей × 2000/1440), а не на глаз; у русской
+   * локали свои высоты там, где подписи длиннее. Все четыре кропа идут
+   * `artifactLayout=wide`: после доводки панель расчёта стала широкой, и
+   * боковой слот 453 px резал бы её посреди формулы.
+   */
   {
     file: 'public/media/case-vet/visit-quick-trace.webp',
-    // После адаптивной переработки три шага стоят рядом. Кроп сохраняет их
-    // вместе с приватной строкой и действиями, но снимает пустую нижнюю треть
-    // артборда. На странице этот довод идёт во всю ширину DecisionBlock.
-    box: { left: 0, top: 0, width: 2000, height: 1140 },
+    // Пациент, три шага, приватная строка и два действия сохранения — до
+    // низа кнопок (1393 + 65) с полем 24. Подпись о необязательности полей
+    // ниже в кроп не входит.
+    box: { left: 0, top: 0, width: 2000, height: 1482 },
   },
   {
+    // Русские подписи шагов идут в две строки: всё ниже на 103 px.
     file: 'public/media/case-vet-ru/visit-quick-trace.webp',
-    box: { left: 0, top: 0, width: 2000, height: 1140 },
+    box: { left: 0, top: 0, width: 2000, height: 1585 },
   },
   {
     file: 'public/media/case-vet/dose-calculator.webp',
-    // Панель расчёта целиком от заголовка до итога курса. Старый кроп
-    // начинался внутри WeightReading и отрезал контекст; после переработки
-    // калькулятор стал правой колонкой рядом с полной записью визита.
-    box: { left: 1225, top: 225, width: 745, height: 1395 },
+    // Панель расчёта от заголовка до строки «Weight cannot be typed here»:
+    // исходные величины с происхождением, ответ, формула, подстановка,
+    // округление. Поля формы под ней — в зуме.
+    box: { left: 554, top: 306, width: 1425, height: 690 },
   },
   {
     file: 'public/media/case-vet-ru/dose-calculator.webp',
-    box: { left: 1225, top: 225, width: 745, height: 1395 },
+    box: { left: 554, top: 306, width: 1425, height: 700 },
   },
   {
     file: 'public/media/case-vet/patient-card-private.webp',
-    // Весь зарезервированный цветом блок: название, граница аудитории и сама
-    // заметка. Граница совпадает с краями карточки.
-    box: { left: 370, top: 1470, width: 1595, height: 300 },
+    // Весь зарезервированный цветом блок (L369 T1736 W1596 H254) с полем 14.
+    box: { left: 355, top: 1722, width: 1624, height: 282 },
   },
   {
     file: 'public/media/case-vet-ru/patient-card-private.webp',
-    box: { left: 370, top: 1490, width: 1595, height: 310 },
+    box: { left: 355, top: 1722, width: 1624, height: 282 },
   },
   {
     file: 'public/media/case-vet/discharge-preview.webp',
-    // После переработки слева стоит полный список исключений, справа — точный
-    // документ владельца. Обе колонки обязательны; служебную шапку клиники и
-    // внешний воздух снимаем. На странице кадр идёт во всю ширину решения.
-    box: { left: 25, top: 100, width: 1950, height: 1240 },
+    // Документ владельца (L378 W756) и панель публикации со списком «Stays in
+    // the clinic» (L1521 W444) — обе колонки от верхней кромки, служебная
+    // шапка и заголовок страницы сняты.
+    box: { left: 358, top: 305, width: 1627, height: 946 },
   },
   {
     file: 'public/media/case-vet-ru/discharge-preview.webp',
-    box: { left: 25, top: 100, width: 1950, height: 1240 },
+    box: { left: 358, top: 305, width: 1627, height: 1008 },
   },
   {
     file: 'public/media/case-agent-ops/autonomy.webp',
@@ -227,9 +235,18 @@ if (!selectedCrops.length) {
   throw new Error(`не найдены кропы для: ${targets.join(', ')}`);
 }
 
+/**
+ * `MEDIA_ROOT` переносит `public/media/…` в другой корень — staging-каталог
+ * пересъёмки (13.09.2026, кейс Vet). Без переменной поведение прежнее.
+ */
+const mediaPath = (relative) =>
+  process.env.MEDIA_ROOT && relative.startsWith('public/media/')
+    ? path.resolve(process.env.MEDIA_ROOT, relative.slice('public/media/'.length))
+    : path.join(root, relative);
+
 for (const { file, box, out: outRel } of selectedCrops) {
-  const src = path.join(root, file);
-  const out = outRel ? path.join(root, outRel) : src.replace(/\.webp$/, '-crop.webp');
+  const src = mediaPath(file);
+  const out = outRel ? mediaPath(outRel) : src.replace(/\.webp$/, '-crop.webp');
   const meta = await sharp(src).metadata();
   const right = box.left + box.width;
   const bottom = box.top + box.height;

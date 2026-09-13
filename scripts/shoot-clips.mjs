@@ -413,7 +413,7 @@ class Hand {
 const HIDE_CHROME = `
   html { scrollbar-width: none; }
   *::-webkit-scrollbar { width: 0; height: 0; }
-  [class*="viewerBack"], [class*="protoToggle"], [class*="protoPanel"] { display: none !important; }
+  [class*="viewerBack"], [class*="protoToggle"], [class*="protoPanel"], [class*="protoDock"] { display: none !important; }
   [class*="viewer"] { padding-block-start: 0 !important; }
 `;
 
@@ -664,44 +664,57 @@ const CASES = {
   },
 
   /**
-   * Vet Clinic OS. Прототип собран галереей экранов без продуктовых
-   * обработчиков — «взаимодействие» там пришлось бы инсценировать, а
-   * `CASE-20` заведён ради обратного. Что у продукта есть по-настоящему —
-   * адаптив, и ролик показывает именно его.
+   * Vet Clinic OS.
    *
-   * Экран выбран быстрым следом визита, а не очередью дня: очередь уже
-   * стоит на странице композитом диапазона, а планшет назван платформой
-   * прямо в шапке кейса — и вот он, тот самый экран, который врач держит
-   * в руках в кабинете.
+   * **С 13.09.2026 — взаимодействие, а не перестроение ширин.** Прежний
+   * ролик (`clip-widths-quick-trace`, режим `reflow`) стоял здесь потому, что
+   * прототип был галереей экранов без продуктовых обработчиков, и
+   * «взаимодействие» пришлось бы инсценировать. Продуктовая доводка
+   * (прогон `VET-PP-2026-09-12`, волны 02–07) это изменила: след сохраняется,
+   * выписка публикуется снимком, перенос применяется. Адаптив на странице
+   * по-прежнему доказывает композит диапазона `range-vet-day-queue`.
    *
-   * Playwright берётся из b2b-dssl: в Veterinary-clinic его нет — та же
-   * причина и та же ссылка, что в `shoot-vet-frames.mjs`.
+   * Сюжет — ровно шаг 0:12 маршрута показа (`DEMO.md` прогона): в коротком
+   * следе врач выбирает другой вес, доза и три строки расчёта пересчитываются
+   * на месте, статус сохранения честно говорит «Unsaved changes»; возврат к
+   * 4.8 возвращает и дозу, и «Saved at 09:07». Петля сходится сама: статус
+   * считается от состояния формы, а не печатается константой (VET-021).
    */
   vet: {
     repo: 'd:/Claude-projects/b2b-dssl',
     origin: process.env.PROTOTYPE_ORIGIN ?? 'http://localhost:5200',
     media: 'public/media/case-vet',
     mediaRu: 'public/media/case-vet-ru',
-    pointer: 'none',
+    pointer: 'arrow',
     clips: [
       {
-        out: 'clip-widths-quick-trace',
-        mode: 'reflow',
+        out: 'clip-dose-from-weight',
         width: 1440,
         height: 900,
-        route: '/app/visit-quick-trace',
-        /**
-         * Концы диапазона и планшет между ними — те же три числа, что у
-         * композита `range-vet-day-queue`. Выдержки длиннее переездов:
-         * читатель должен успеть прочитать раскладку, а не только увидеть
-         * движение.
-         */
-        steps: [
-          { to: 1440, ms: 0, hold: 1500 },
-          { to: 768, ms: 1000, hold: 1900 },
-          { to: 390, ms: 1000, hold: 1900 },
-          { to: 1440, ms: 1100, hold: 1500 },
-        ],
+        async open(page, { origin, prefix, settle }) {
+          await page.goto(`${origin}${prefix}/app/visit-quick-trace?patient=marsik`, { waitUntil: 'networkidle' });
+          await settle();
+        },
+        async scenario(page, hand) {
+          // Чипы веса — кнопки с числом; число одинаково в обеих локалях.
+          // `exact`: «5.2» стоит ещё и в строке «Previously 5.2 kg».
+          const chip = (value) => page.getByRole('button', { name: value, exact: true }).first();
+          // Цель взгляда между нажатиями — подпись строки округления: рука
+          // стоит у расчёта, но не закрывает ни ответ, ни цифры формулы
+          // (первая запись держала указатель прямо на «1.05»).
+          const answer = page.getByText(/^(rounding|округление)$/i).first();
+
+          await page.waitForTimeout(900);
+          await hand.click(chip('5.2'));
+          await page.waitForTimeout(700);
+          await hand.hover(answer, 1700);
+          await page.waitForTimeout(400);
+          await hand.click(chip('4.8'));
+          await page.waitForTimeout(700);
+          await hand.hover(answer, 1300);
+          await hand.exit();
+          await page.waitForTimeout(600);
+        },
       },
     ],
   },
@@ -1081,8 +1094,12 @@ async function shootClip(browser, config, clip, locale, dir) {
     posterIndex = Math.max(0, frames.findIndex((f) => f.t >= at + clip.poster.after));
   }
 
-  await mkdir(path.resolve(dir), { recursive: true });
-  const outBase = path.resolve(dir, clip.out);
+  /* `MEDIA_ROOT` — staging-каталог пересъёмки (Vet, 13.09.2026). */
+  const target = process.env.MEDIA_ROOT && dir.startsWith('public/media/')
+    ? path.resolve(process.env.MEDIA_ROOT, dir.slice('public/media/'.length))
+    : path.resolve(dir);
+  await mkdir(target, { recursive: true });
+  const outBase = path.resolve(target, clip.out);
   await encode(frames, outBase, posterIndex);
   return outBase;
 }

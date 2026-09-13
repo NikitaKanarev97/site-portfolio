@@ -65,7 +65,13 @@ const TRIM_MARGIN = 24;
 /** Потолок по длинной стороне у кадров, которые не идут в норму обложки. */
 const NATURAL_MAX = 2000;
 
-const MEDIA_DIR = path.resolve(`public/media/case-vet${LOCALE === 'ru' ? '-ru' : ''}`);
+/**
+ * Корень вывода. По умолчанию — боевой каталог кейса; пересъёмка 13.09.2026
+ * шла в staging (`MEDIA_ROOT=.tmp/vet-case-08/stage`), и замена каталога
+ * делалась только после просмотра всех кадров обеих локалей.
+ */
+const MEDIA_ROOT = process.env.MEDIA_ROOT ?? 'public/media';
+const MEDIA_DIR = path.resolve(MEDIA_ROOT, `case-vet${LOCALE === 'ru' ? '-ru' : ''}`);
 const COVER_DIR = path.join(MEDIA_DIR, 'cover');
 
 /**
@@ -83,15 +89,32 @@ const SCREEN_FRAMES = [
   { file: 'schedule.webp', route: '/app/schedule' },
 ];
 
-/** Кадры своей высоты: артефакты процесса и доказательства решений. */
+/**
+ * Кадры своей высоты: артефакты процесса и доказательства решений.
+ *
+ * С 13.09.2026 (продуктовая доводка, прогон `VET-PP-2026-09-12`) экраны
+ * визита читают пациента из адреса: без `?patient=marsik` прямой вход берёт
+ * активного пациента браузера, и свежий контекст съёмки его не гарантирует.
+ *
+ * Индекс больше не `fullPage`: после доводки он вырос до 3 123 px, и в колонке
+ * страницы кадр становился полосой превью. В кадр идёт шапка со счётчиком
+ * экранов и первая группа «Veterinarian» целиком — низ группы 1 620 px en,
+ * 1 599 ru; высота 1 640 одна на обе локали. По ширине — поле контента
+ * (240 + 1 200 + 240 css) с запасом 24: пропорция 0.76 встаёт рядом с
+ * матрицей кнопки (0.69) так же, как прежний индекс (0.70).
+ *
+ * Окно перед снимком растягивается до высоты документа: рейка навигации
+ * `sticky`, и её серый фон в кадре во всю высоту обрывался на высоте окна
+ * (STATE прогона доводки, п. 39) — читалось как сломанная вёрстка.
+ */
 const NATURAL_FRAMES = [
-  { file: 'screen-index.webp', route: '/', selector: 'main' },
-  { file: 'visit-quick-trace.webp', route: '/app/visit-quick-trace' },
-  { file: 'dose-calculator.webp', route: '/app/dose-calculator' },
-  { file: 'discharge-preview.webp', route: '/app/discharge-preview' },
+  { file: 'screen-index.webp', route: '/', selector: 'main', clip: { left: 216, width: 1248, height: 1640 } },
+  { file: 'visit-quick-trace.webp', route: '/app/visit-quick-trace?patient=marsik' },
+  { file: 'dose-calculator.webp', route: '/app/dose-calculator?patient=marsik' },
+  { file: 'discharge-preview.webp', route: '/app/discharge-preview?patient=marsik' },
   {
     file: 'patient-card-private.webp',
-    route: '/app/patient-card',
+    route: '/app/patient-card?patient=marsik',
     /** Обложка берёт верх того же полного кадра: второй независимый снимок
      * однажды поймал экран со сдвинутым viewport и отрезал навигацию слева. */
     cover: 'patient-card.webp',
@@ -142,7 +165,7 @@ const STORY_CSS = `
 const HIDE_CHROME = `
   html { scrollbar-width: none; }
   *::-webkit-scrollbar { width: 0; height: 0; }
-  [class*="viewerBack"], [class*="protoToggle"], [class*="protoPanel"] { display: none !important; }
+  [class*="viewerBack"], [class*="protoToggle"], [class*="protoPanel"], [class*="protoDock"] { display: none !important; }
   [class*="viewer"] { padding-block-start: 0 !important; }
 `;
 
@@ -234,7 +257,22 @@ async function shoot() {
 
   for (const frame of NATURAL_FRAMES) {
     await open(`${ORIGIN}${ROUTE_PREFIX}${frame.route}`);
-    const raw = await element(frame.selector ?? '[class*="device"]');
+    const docHeight = await page.evaluate(() => document.documentElement.scrollHeight);
+    await page.setViewportSize({ width: VIEWPORT.width, height: Math.max(VIEWPORT.height, docHeight) });
+    await page.waitForTimeout(300);
+    let raw = await element(frame.selector ?? '[class*="device"]');
+    await page.setViewportSize(VIEWPORT);
+    if (frame.clip) {
+      const { height } = await sharp(raw).metadata();
+      const box = {
+        left: Math.round(frame.clip.left * DEVICE_SCALE_FACTOR),
+        top: 0,
+        width: Math.round(frame.clip.width * DEVICE_SCALE_FACTOR),
+        height: Math.round(frame.clip.height * DEVICE_SCALE_FACTOR),
+      };
+      if (height < box.height) throw new Error(`${frame.file}: ${height} < ${box.height}`);
+      raw = await sharp(raw).extract(box).toBuffer();
+    }
     const out = path.join(MEDIA_DIR, frame.file);
 
     await sharp(raw)

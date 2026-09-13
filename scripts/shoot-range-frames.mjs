@@ -62,7 +62,7 @@ const HAIRLINE = 2;
 const HIDE_CHROME = `
   html { scrollbar-width: none; }
   *::-webkit-scrollbar { width: 0; height: 0; }
-  [class*="viewerBack"], [class*="protoToggle"], [class*="protoPanel"] { display: none !important; }
+  [class*="viewerBack"], [class*="protoToggle"], [class*="protoPanel"], [class*="protoDock"] { display: none !important; }
   [class*="viewer"] { padding-block-start: 0 !important; }
 `;
 
@@ -329,8 +329,12 @@ async function shootCase(name) {
       await context.close();
     }
 
-    await mkdir(path.resolve(dir), { recursive: true });
-    const out = path.resolve(dir, config.out);
+    /* `MEDIA_ROOT` — staging-каталог пересъёмки (Vet, 13.09.2026). */
+    const target = process.env.MEDIA_ROOT && dir.startsWith('public/media/')
+      ? path.resolve(process.env.MEDIA_ROOT, dir.slice('public/media/'.length))
+      : path.resolve(dir);
+    await mkdir(target, { recursive: true });
+    const out = path.resolve(target, config.out);
     await sharp(await compose(shots, config.columnRadius))
       .resize({ width: NATURAL_MAX, withoutEnlargement: true })
       .webp({ quality: WEBP_QUALITY })

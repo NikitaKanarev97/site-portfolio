@@ -40,7 +40,11 @@
 const YEAR = '2026';
 const TEAM = 'Sole designer — research, product decisions, design system and the prototype';
 const RESEARCH = 'Conversations with a practising veterinarian; no research team';
-const DURATION = 'Two weeks, brief to working prototype';
+/**
+ * Вторая половина — прогон продуктовой доводки `VET-PP-2026-09-12`: чаты
+ * 01–07 шли 12–13 сентября 2026 (`audit/product-polish/STATE.md` продукта).
+ */
+const DURATION = 'Two weeks to a working prototype, then a two-day polish pass';
 
 /**
  * Адрес живого прототипа. Стоит константой с 2026-08-28: носителей два —
@@ -101,9 +105,9 @@ export const vetClinic = {
       `${media}/cover/patient-card.webp`,
       `${media}/cover/schedule.webp`,
     ],
-    alt: 'The veterinarian’s queue for the day: patients at the clinic, patients expected, and a notice that three visits from earlier in the week are still unfinished — with the patient card and the schedule behind it',
+    alt: 'The veterinarian’s queue for the day: counts in the header, one line naming three records still open from earlier in the week, patients at the clinic and patients expected — with the patient card and the schedule behind it',
     caption:
-      'The veterinarian’s day — who is here, who is expected, and three visits still unfinished from last week. Data is invented.',
+      'The veterinarian’s day — who is here, who is expected, and three records still open from earlier in the week. Data is invented.',
   },
 
   context: {
@@ -131,7 +135,7 @@ export const vetClinic = {
      */
     range: {
       src: `${media}/range-vet-day-queue.webp`,
-      alt: 'The day queue at 1440, 768 and 390 px side by side: the navigation rail collapses into a menu button, the visit table drops its waiting and action columns on the tablet, and on the phone each visit becomes a labelled card ending in Start visit',
+      alt: 'The day queue at 1440, 768 and 390 px side by side: the navigation rail collapses into a menu button, the tablet table folds the owner under the patient’s name, and on the phone each visit becomes a labelled card ending in Start visit',
       caption: 'The same day at 1440, 768 and 390 px: columns drop, rows become cards.',
     },
   },
@@ -142,6 +146,23 @@ export const vetClinic = {
       'This clinic was not coming from paper: practices of this size already run specialised software, so the product had to beat an incumbent rather than replace a filing cabinet — which makes it the only hard evidence there is. I audited it screen by screen against heuristics, with a severity scale that keeps “blocks the work” apart from “looks untidy”, and with a limit written into the report: the veterinarian’s own visit screen, the schedule and the owner cabinet were not in the material I had, and no conclusions were drawn about them.',
       'Then desk research on the market and on the regulation around veterinary records. Three of its numbers could not be traced to a primary source, so they were marked unverified and kept out of the PRD rather than rounded into it. Everything the conversations could not confirm carries the same mark and stays a hypothesis for real customer development — including the two that changed the product, because a hypothesis that flatters your redesign is still a hypothesis.',
       'Then scope: 31 Must-haves out of 62 requirements, with the core of the appointment declared indivisible — seven parts that ship together or not at all. Then a 44-screen sitemap, three flows, twelve low-fidelity frames. Then the design system, then twelve high-fidelity frames carrying one story end to end, from the queue to the discharge summary on the owner’s phone, with 31 edge cases built as hidden states instead of described in prose. Then a React prototype, a catalogue in Storybook, and synthetic agent runs over three scenarios, whose findings came back in four waves of fixes.',
+      /**
+       * Стадия продуктовой доводки после приёмки — прогон
+       * `Veterinary-clinic/audit/product-polish/` (`VET-PP-2026-09-12`),
+       * чаты 01–07, 12–13 сентября 2026. Место и форма — как у последнего
+       * абзаца `process` в кейсах Agent Ops и DSSL: этап работы, а не список
+       * правок. Нового раздела нет.
+       *
+       * Каждое утверждение перепроверяемо по отчётам прогона: однообразие —
+       * запрос владельца (`USER-DIRECTION.md`) и аудит `00-audit.md`; три
+       * неправды прототипа — VET-014 (Start visit у Тима открывал Марсика),
+       * VET-015 (перенос двигал строку, где стоял Рекс другого врача), VET-016
+       * (правка после публикации молча меняла документ владельца); формы
+       * поверхностей — отчёты 02–06; «три цепочки скриптом на обоих языках,
+       * 360–1440» — `07-acceptance.md` §0, §2, §3. Это браузерные прогоны, не
+       * пользовательская проверка, и абзац так и говорит.
+       */
+      'After acceptance I ran a separate polish pass: thirteen working screens still read as one screen repeated. Each surface got its own form — the queue a ledger where the emergency holds the only primary action, the calculation an answer above its arithmetic, the schedule a timeline where height is duration, the owner’s view a letter. The pass also caught the prototype saying false things: Start visit on one patient opened another, the emergency shift moved a different doctor’s appointment, and an edit silently rewrote a summary the owner already had. The visit is now keyed to its patient, the shift moves appointments by id, and publishing stores a snapshot. Three end-to-end chains pass by script in both languages, 360 to 1440 px.',
     ],
     /**
      * Живой прототип на Vercel, без логина — проверено 2026-08-25.
@@ -152,40 +173,81 @@ export const vetClinic = {
     prototype: {
       href: PROTOTYPE,
       label: 'Open the prototype',
-      note: 'The prototype, on invented data — thirteen screens, the same build the agent runs walked through.',
+      note: 'The prototype after the polish pass, on invented data — thirteen screens, three roles; changes stay in your browser.',
     },
     /**
-     * Клип — `CASE-20`, съёмка `scripts/shoot-clips.mjs`, режим `reflow`.
+     * Клип — `CASE-20`, съёмка `scripts/shoot-clips.mjs vet`.
      *
-     * Здесь он показывает не взаимодействие, а перестроение ширин, и это
-     * не смягчение требования, а единственное честное его прочтение для
-     * этого кейса: прототип собран галереей экранов, продуктовых
-     * обработчиков в нём нет, и «взаимодействие» пришлось бы разыграть.
-     * Адаптив, наоборот, у сборки настоящий — он и заявлен строкой
-     * `Platform` в шапке.
+     * **С 13.09.2026 — взаимодействие, а не перестроение ширин.** Прежний
+     * ролик показывал адаптив, потому что прототип был галереей экранов без
+     * продуктовых обработчиков. После доводки у него настоящее поведение, и
+     * «видео реального взаимодействия» больше не пришлось бы разыгрывать.
+     * Адаптив по-прежнему доказывает кадр диапазона в `reframe`.
      *
-     * Экран взят быстрым следом визита, а не очередью дня: очередь уже
-     * стоит выше композитом диапазона, а планшет в кабинете — ровно тот
-     * случай, ради которого этот экран спроектирован.
+     * Сюжет — шаг 0:12 маршрута показа (`DEMO.md` прогона): вес 4.8 → 5.2 →
+     * 4.8 в коротком следе. Доза, три строки расчёта и статус сохранения
+     * отвечают на месте; петля сходится сама, потому что статус считается от
+     * состояния формы (VET-021).
      */
     clip: {
-      src: `${media}/clip-widths-quick-trace-poster.webp`,
-      video: `${media}/clip-widths-quick-trace`,
-      alt: 'Screen recording of one window narrowing from 1440 to 768 and then 390 px: the three steps of the trace, side by side on the desktop, stack into a single column',
-      caption: 'The trace at 1440, 768 and 390 px: the tablet gets a column, not a smaller desktop.',
+      src: `${media}/clip-dose-from-weight-poster.webp`,
+      video: `${media}/clip-dose-from-weight`,
+      alt: 'Screen recording of the quick trace: the weight is switched from 4.8 to 5.2 kg, the dose, formula, substitution and rounding recalculate to 1.05 ml and the status turns to Unsaved changes; switching back restores 0.95 ml and the saved state',
+      caption: 'Change the weight, and the dose, its arithmetic and the save status answer in place.',
     },
     artifacts: [
       {
         src: `${media}/screen-index.webp`,
-        alt: 'Index of the prototype: thirteen screens as cards, each with the frame it came from',
+        alt: 'Index of the prototype: a header counting thirteen screens, and the veterinarian’s group of seven live previews from the queue to the discharge preview',
         caption:
-          'Thirteen screens as one index — every route the prototype has, and the frame each one came from.',
+          'Thirteen screens grouped by role — here the veterinarian’s seven, from the queue to the published summary.',
       },
       {
         src: `${media}/storybook-matrix.webp`,
         alt: 'Component catalogue: every variant of the button side by side, twenty-four in all',
         caption:
-          'One component, every variant it is allowed to have — twenty-four for the button alone. The matrix is checked in the catalogue, not on the screen.',
+          'Every variant the button is allowed — twenty-four, checked in the catalogue rather than on screens.',
+      },
+      /**
+       * Три пары «до / после доводки» — `scripts/shoot-vet-pairs.mjs`. Одна
+       * задача на пару, те же демоданные, локаль и ширина; «до» — сборка
+       * `main@0413e29` с Vercel, с которой начался прогон, «после» — сборка
+       * коммита приёмки `c2a65cc`. Задачи — из пакета приёмки 07
+       * (`evidence/07-final/case/manifest.json`): очередь, перенос, кабинет
+       * владельца. Остальные типы экранов — карта, расчёт, приём с
+       * приватностью, публикация — стоят ниже артефактами решений.
+       * Телефон владельца — на квадратной подложке, иначе портрет 390 px был
+       * бы втрое выше соседних пар.
+       */
+      {
+        src: `${media}/polish-before-queue.webp`,
+        alt: 'The day queue before the polish pass, at 1440 px: a wide warning banner above the table, the emergency row tinted red, and a filled Start visit button on every row',
+        caption: 'Before: a banner over the table, and a primary button in every row.',
+      },
+      {
+        src: `${media}/polish-after-queue.webp`,
+        alt: 'The same queue after the pass, on the same data: counts for the day in the header, one line naming the records still open, the emergency marked by an edge and the only filled Start visit button',
+        caption: 'After: counts in the header, open records in one line, one primary action.',
+      },
+      {
+        src: `${media}/polish-before-shift.webp`,
+        alt: 'The emergency shift review before the pass: the added appointment in a card, before and after times in two boxes, a table of owners to notify and a card saying other veterinarians are unaffected',
+        caption: 'Before: times in two boxes, and a card promising no other doctor moves.',
+      },
+      {
+        src: `${media}/polish-after-shift.webp`,
+        alt: 'The same review after the pass: each move as a struck-through old time and a new time, where the delay comes from, owners to call with both times, and Rex in another veterinarian’s column listed as not affected',
+        caption: 'After: old time, new time, why — and Rex, in another column, left alone.',
+      },
+      {
+        src: `${media}/polish-before-owner.webp`,
+        alt: 'The owner’s view on a phone before the pass: stacked cards, with the instruction to stop the drops printed twice in the first one',
+        caption: 'Before: the owner’s view as cards, the instruction printed twice.',
+      },
+      {
+        src: `${media}/polish-after-owner.webp`,
+        alt: 'The owner’s view after the pass, on the same phone width: the pet’s name, one published status with time and doctor, what to do today, then the prescription',
+        caption: 'After: a letter — the pet, one status, today, then the prescription.',
       },
     ],
   },
@@ -212,7 +274,7 @@ export const vetClinic = {
           zoomSrc: `${media}/visit-quick-trace.webp`,
           layout: 'wide',
           rounded: true,
-          alt: 'The quick trace workspace: weight, medication and dose run as three adjacent steps, followed by one private line and the saved actions',
+          alt: 'The quick trace: weight with its clinic history, medication from the formulary and the dose with formula, substitution and rounding as three adjacent steps, then the private note and two separate actions',
           caption:
             'Three steps stay visible together, followed by one private line. Saving the trace and opening the full record remain separate actions.',
         },
@@ -225,9 +287,12 @@ export const vetClinic = {
         artifact: {
           src: `${media}/dose-calculator-crop.webp`,
           zoomSrc: `${media}/dose-calculator.webp`,
-          alt: 'Dose calculation beside the visit record: weight pulled from the patient card, formula, substitution, rounding and the resulting dose',
+          /** С 13.09.2026 `wide`: после доводки панель расчёта широкая, и
+           *  боковой слот 453 px резал бы её посреди строки округления. */
+          layout: 'wide',
+          alt: 'Dose calculation: weight, concentration and dose each with its source, the answer 0.95 ml, then formula, substitution and rounding to the syringe step',
           caption:
-            'The weight comes from the card and cannot be typed in here. Formula, substitution and rounding are all on screen.',
+            'The weight arrives from the card with its source and cannot be typed here. The answer comes first, then its arithmetic.',
         },
       },
       {
@@ -253,8 +318,8 @@ export const vetClinic = {
           src: `${media}/discharge-preview-crop.webp`,
           zoomSrc: `${media}/discharge-preview.webp`,
           layout: 'wide',
-          alt: 'Review before publishing: clinic-only notes and diagnosis on the left, with the complete owner-visible discharge summary on the right',
-          caption: 'The publishing check puts clinic-only content beside the exact document the owner will receive.',
+          alt: 'Review before publishing: the document the owner will receive, and beside the publish button the list of what stays in the clinic — private note, diagnosis, internal comments, invoice',
+          caption: 'The owner’s document exactly as it will arrive, and beside the publish button, what stays in the clinic.',
         },
       },
     ],
@@ -263,7 +328,7 @@ export const vetClinic = {
   system: {
     heading: 'Thirty-one components, and one I deleted.',
     body: [
-      'Eighty-five variables — 54 primitive, 31 semantic — 21 text styles and 136 variants. Every fill and stroke resolves through a semantic variable, every text node through a named style. A full read-only scan, not a sample, found no hardcoded colours, no unstyled text nodes and no detached instances; the thirty geometry values still unbound are listed as debt, not hidden behind a claim of parity.',
+      'Eighty-six variables — 54 primitive, 32 semantic — 25 text styles and 137 variants. Every fill and stroke resolves through a semantic variable, every text node through a named style. The last full scan of the design file found no hardcoded colours, unstyled text or detached instances; the polish pass has since added one colour, four numeric styles and a variant axis in code, and the file’s lag is listed as debt, not hidden behind a claim of parity.',
       'The one I deleted is the card container: three variants, zero instances anywhere in the product. A component carries exactly the anatomy it was created with, and this one had a title and a single row, while the real blocks here need two to five elements, several of them nested instances. Keeping it “for later” would have meant every screen quietly working around it, which is worse than not having it.',
       'Coverage is not checked by eye: a script walks the catalogue against the variant matrix, and the states below are shot from the catalogue, not assembled by hand.',
     ],
