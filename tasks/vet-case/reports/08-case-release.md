@@ -2,7 +2,7 @@
 
 **Дата:** 13 сентября 2026. **Прогон продукта:** `VET-PP-2026-09-12`, отчёт в продукте — `Veterinary-clinic/audit/product-polish/08-case-release.md`.
 **Портфолио:** ветка `codex/vet-case-08` от `main@12ba3a6`. **Продукт:** `codex/product-polish`, код `c2a65cc` (после — только документы).
-**Статус:** версия кейса собрана и проверена локально; **выпуск не выполнен — ждёт разрешения владельца** на два шага (продукт на Vercel, затем портфолио). Причина порядка — ниже.
+**Статус:** кейс обновлён, проверен и **выпущен 13.09.2026**: продукт на Vercel (`main@cb49256`), затем портфолио на `kanarev.com` (`main@b92828f`); боевые страницы и путь до демо проверены (§7).
 
 ---
 
@@ -105,5 +105,16 @@
 |---|---|
 | Текст и медиа кейса EN/RU | готовы, проверены на локальной сборке |
 | Путь кейс → прототип → действие | проверен на сборке выпуска (55/0) и по ссылкам на боевом Vercel (37/0) |
-| Выпуск продукта на Vercel | **ждёт разрешения** |
-| Выпуск портфолио | **ждёт разрешения**, после выпуска продукта |
+| Выпуск продукта на Vercel | **выполнен** — `main@cb49256`, боевой маршрут показа EN/RU пройден |
+| Выпуск портфолио | **выполнен** — `main@b92828f`, `kanarev.com` 55 / 0 |
+
+## 7 · Выпуск — выполнен 13.09.2026
+
+Разрешение владельца получено в этом чате («Выпустить оба»). Порядок соблюдён: продукт, проверка, портфолио, проверка.
+
+| Шаг | Что сделано | Проверка на боевом адресе |
+|---|---|---|
+| Продукт | `git push origin codex/product-polish`; `main` `0413e29 → cb49256` fast-forward, push | Vercel пересобрал production за ~30 с: бандл `index-G0YIfvHV.js → index-BS1RH4Ym.js`; ключевые строки совпадают со сборкой коммита (ключ `v6`, `clinic-visit-start`, `discharge-publish`), размер отличается на 89 байт — соли CSS-модулей. `demo-route.mjs` с `BASE=https://veterinary-clinic-gules.vercel.app` — EN и RU, все шаги ok, ошибок консоли нет (логи `Veterinary-clinic/audit/product-polish/evidence/08-case-release/`). F5 на `/app/owner-discharge?patient=marsik`, `/ru/app/shift-impact`, `/app/visit-record?patient=marsik` держит путь и язык; неверный адрес — экран «This screen does not exist» / «Такого экрана нет» с выходами в своей локали |
+| Портфолио | `main` `12ba3a6 → b92828f` fast-forward, push | `kanarev.com` отдал новый кейс через ~20 с. `/work/vet-clinic/`: 2 ссылки → `vercel.app/`; `/ru/work/vet-clinic/`: 2 → `vercel.app/ru`; ни ролика ширин, ни оговорки про английский; все пути медиа — 200. `PORTFOLIO_ORIGIN=https://kanarev.com PROTOTYPE_TARGET=live LIVE_ACTION=1 verify-vet-case-journey.mjs` — **55 / 0** (главная → кейс → новая вкладка → боевой прототип → Марсик → вес → сохранение → F5 → Back, RU → EN → RU). `verify-portfolio-locales.mjs` на `kanarev.com` — пройдено. Логи — `tasks/vet-case/reports/evidence/` |
+
+Не проверено и после выпуска: Safari/Firefox, реальные телефоны. Ветка `codex/vet-case-08` на `origin` не публиковалась — её содержимое целиком в `main`.
