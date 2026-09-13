@@ -9,7 +9,7 @@ const output='D:/Claude-projects/PETS-walking/audit/product-polish/evidence/06-c
 const records=[],errors=[];
 const browser=await chromium.launch({headless:true});
 try{
-  for(const locale of ['en','ru'])for(const width of live?[390]:[360,390,1440]){
+  for(const locale of ['en','ru'])for(const width of live?[390,1440]:[360,390,1440]){
     const prefix=locale==='ru'?'/ru':'';
     const p=await browser.newPage({viewport:{width,height:960},reducedMotion:'reduce'});
     p.on('pageerror',e=>errors.push(e.message));
