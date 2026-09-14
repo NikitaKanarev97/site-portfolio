@@ -134,7 +134,15 @@ const INDEX = { file: 'screen-index.webp', height: 746 };
  * и портрет рядом с ландшафтом читался бы как ошибка вёрстки.
  *
  *   ряд 1 — ProductRow 1200 (0.75), PriceBlock 700 (0.79), Availability 700 (0.79)
- *   ряд 2 — ResolutionRow 1400 (1.16), FulfillmentPlan 1000 (1.13), EmptyState 1000 (1.18)
+ *   ряд 2 — ResolutionRow 1400 (1.16), FulfillmentPlan 1200 (0.45), EmptyState 1000 (1.18)
+ *
+ * `FulfillmentPlan` из подбора выпадает. Его «портрет 1.13» на 1000 был
+ * поломкой: строка плана — пять фиксированных колонок и кнопка, 880 px, и
+ * на 1000 колонке названия оставалось ~88 px, заголовок шёл по букве в
+ * строку. 14.09.2026 у колонки названия появился минимум, а ячейки матрицы
+ * встали в `TableViewport` на 1080, как на экране. 1200 — ширина, на которой
+ * таблица входит без прокрутки; честная строка — ландшафт, и соседей по
+ * пропорции она не держит.
  *
  * `ResolutionRow` после `D026` — матрица `Type × State` на десять ячеек, на
  * 1000 это портрет 1.62. Матрица кнопки идёт рядом с индексом (0.42): на
@@ -148,7 +156,7 @@ const STORIES = [
   { file: 'system-price-block.webp', id: 'components-domain-priceblock--all-variants', width: 700 },
   { file: 'system-availability.webp', id: 'components-domain-availability--all-variants', width: 700 },
   { file: 'system-resolution-row.webp', id: 'components-domain-resolutionrow--all-variants', width: 1400 },
-  { file: 'system-fulfillment-plan.webp', id: 'components-domain-fulfillmentplan--all-variants', width: 1000 },
+  { file: 'system-fulfillment-plan.webp', id: 'components-domain-fulfillmentplan--all-variants', width: 1200 },
   { file: 'system-empty-state.webp', id: 'components-domain-emptystate--all-variants', width: 1000 },
   { file: 'storybook-matrix.webp', id: 'components-actions-button--all-variants', width: 2400 },
 ];
