@@ -35,6 +35,11 @@ const VIEWPORT = {
  * Слой: src — ключ исходника; clip — [x, y, w, h] в CSS px экрана (без clip —
  * экран целиком); x, y — место на холсте; scale — масштаб относительно CSS px.
  * `lift` — вынесенный элемент: сильнее тень и обводка.
+ * `radius` — собственное скругление элемента в CSS px экрана: рамка вырезки
+ * повторяет его, иначе в углах проступает фон страницы. `inset` — срез
+ * внутрь на столько px: дуга с тем же центром и меньшим радиусом лежит
+ * внутри сглаженного края источника, светлых пикселей по углам не остаётся.
+ * При уменьшении вдвое и сильнее фильтр задевает соседние пиксели — срез глубже.
  * Клипы можно задать по локали: { en: [...], ru: [...] }.
  */
 const COVERS = {
@@ -59,11 +64,11 @@ const COVERS = {
     desktop: { w: 1280, h: 720, layers: [
       { src: 'dssl-resolution', x: 40, y: 34, scale: 0.6 },
       { src: 'dssl-resolution', clip: { en: [265, 488, 765, 69], ru: [265, 506, 812, 69] }, x: 24, y: 520, scale: 1.1, lift: true },
-      { src: 'dssl-fulfillment', clip: { en: [1056, 545, 360, 396], ru: [1056, 557, 360, 417] }, x: 880, y: 150, scale: 0.98, lift: true },
+      { src: 'dssl-fulfillment', clip: { en: [1056, 545, 360, 396], ru: [1056, 557, 360, 417] }, x: 880, y: 150, scale: 0.98, lift: true, radius: 8 },
     ] },
     mobile: { w: 360, h: 450, layers: [
       { src: 'dssl-resolution', x: 18, y: 22, scale: 0.225 },
-      { src: 'dssl-fulfillment', clip: { en: [1056, 545, 360, 396], ru: [1056, 557, 360, 417] }, x: 150, y: 120, scale: 0.53, lift: true },
+      { src: 'dssl-fulfillment', clip: { en: [1056, 545, 360, 396], ru: [1056, 557, 360, 417] }, x: 150, y: 120, scale: 0.53, lift: true, radius: 8 },
       { src: 'dssl-resolution', clip: { en: [265, 488, 765, 69], ru: [265, 506, 812, 69] }, x: 18, y: 372, scale: 0.4, lift: true },
     ] },
   },
@@ -73,11 +78,11 @@ const COVERS = {
     desktop: { w: 1280, h: 720, layers: [
       { src: 'learn-home', x: 40, y: 44, scale: 0.62 },
       { src: 'learn-home', clip: { en: [32, 540, 640, 82], ru: [32, 540, 640, 82] }, x: 24, y: 560, scale: 1.2, lift: true },
-      { src: 'learn-trajectory', clip: { en: [1088, 338, 320, 548], ru: [1088, 389, 320, 590] }, x: 900, y: 86, scale: 1.0, lift: true },
+      { src: 'learn-trajectory', clip: { en: [1088, 338, 320, 548], ru: [1088, 389, 320, 590] }, x: 900, y: 86, scale: 1.0, lift: true, radius: 20, inset: 1 },
     ] },
     mobile: { w: 360, h: 450, layers: [
       { src: 'learn-home', x: 18, y: 22, scale: 0.225 },
-      { src: 'learn-trajectory', clip: { en: [1088, 338, 320, 548], ru: [1088, 389, 320, 590] }, x: 176, y: 58, scale: 0.5, lift: true },
+      { src: 'learn-trajectory', clip: { en: [1088, 338, 320, 548], ru: [1088, 389, 320, 590] }, x: 176, y: 58, scale: 0.5, lift: true, radius: 20, inset: 3 },
       { src: 'learn-home', clip: { en: [32, 540, 640, 82], ru: [32, 540, 640, 82] }, x: 18, y: 372, scale: 0.5, lift: true },
     ] },
   },
@@ -93,9 +98,10 @@ function html(cover, form, locale, data) {
   const layers = spec.layers.map((l) => {
     const [full, fullHeight] = VIEWPORT[l.src];
     const clip = l.clip ? (Array.isArray(l.clip) ? l.clip : l.clip[locale]) : [0, 0, full, fullHeight];
-    const [cx, cy, cw, ch] = clip;
+    const inset = l.inset ?? 0;
+    const [cx, cy, cw, ch] = [clip[0] + inset, clip[1] + inset, clip[2] - 2 * inset, clip[3] - 2 * inset];
     const s = l.scale;
-    const r = l.lift ? 10 : 12;
+    const r = l.radius !== undefined ? (l.radius - inset) * s : (l.lift ? 10 : 12);
     return `<div style="position:absolute;left:${l.x}px;top:${l.y}px;width:${cw * s}px;height:${ch * s}px;overflow:hidden;border-radius:${r}px;box-shadow:${l.lift ? shade.lift : shade.base}">
       <img src="${data[l.src]}" style="position:absolute;left:${-cx * s}px;top:${-cy * s}px;width:${full * s}px;max-width:none">
     </div>`;
