@@ -9,8 +9,8 @@ interface Props {
   loading?: 'eager' | 'lazy';
 }
 const { slug, artwork, variant = 'cover', loading = 'lazy' } = Astro.props;
-// A cover with a phone crop is one product moment, centred at natural size.
-const moment = variant === 'cover' && Boolean(artwork.mobile);
+// One product moment, centred on the canvas instead of layered frames.
+const moment = Boolean(artwork.moment);
 // Same bp-md boundary as the CSS below; `media` is markup, custom media cannot reach it.
 const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
 ---
@@ -70,31 +70,18 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
   .case-artwork--learn { --artwork-surface: var(--surface-cover-learn); }
 
   .case-artwork--vet-clinic { --artwork-surface: var(--surface-cover-vet); }
-  .case-artwork--vet-clinic .case-artwork__frame--main { width: 76%; inset-inline-start: 5%; inset-block-start: 9%; }
-  .case-artwork--vet-clinic .case-artwork__frame--detail { width: 49%; inset-inline-end: 5%; inset-block-end: 6%; }
 
   .case-artwork--pawly { --artwork-surface: var(--surface-cover-pawly); }
-  .case-artwork--pawly .case-artwork__frame--main {
-    width: 69%; height: 90%; inset-inline-start: 15.5%; inset-block-start: 10%; border: 0; border-radius: 0; box-shadow: none;
-  }
-  .case-artwork--pawly .case-artwork__frame--main img { mix-blend-mode: multiply; }
-  /* A single proof card fills the small Pawly preview without clipping it.
-     The case hero retains its independent full-phone composition below. */
-  .case-artwork--pawly:not(.case-artwork--hero) .case-artwork__frame--main {
-    inset: var(--space-2);
-    width: auto;
-    height: auto;
-  }
-  .case-artwork--pawly:not(.case-artwork--hero) .case-artwork__frame--main img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    mix-blend-mode: normal;
-  }
+  /* Pawly phones are whole devices with their shadow baked in: no window chrome. */
+  .case-artwork--pawly .case-artwork__frame { border: 0; border-radius: 0; box-shadow: none; overflow: visible; }
 
   /* One product moment: the crop is centred and never scaled past the card. */
   .case-artwork--moment .case-artwork__canvas { display: grid; place-items: center; }
-  .case-artwork--moment.case-artwork--cover .case-artwork__frame--main { position: relative; inset: auto; width: 88%; }
+  .case-artwork--moment .case-artwork__frame--main { position: relative; inset: auto; width: 88%; }
+  /* Widths keep each moment inside the canvas height with an even margin. */
+  .case-artwork--moment.case-artwork--vet-clinic .case-artwork__frame--main { width: 63%; }
+  .case-artwork--moment.case-artwork--pawly .case-artwork__frame--main { width: 68%; }
+  .case-artwork--moment.case-artwork--hero.case-artwork--pawly .case-artwork__frame--main { width: 70%; }
 
   /* The first image in a case is an independent, inspectable product moment. */
   .case-artwork--hero.case-artwork--agent-ops-console .case-artwork__frame--main { width: 81%; inset-inline-start: 5%; inset-block-start: 6%; }
@@ -103,9 +90,6 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
   .case-artwork--hero.case-artwork--vet-clinic .case-artwork__frame--main { width: 86%; inset-inline-start: 7%; inset-block-start: 7%; }
   .case-artwork--hero.case-artwork--learn .case-artwork__canvas { aspect-ratio: var(--ratio-screen); }
   .case-artwork--hero.case-artwork--learn .case-artwork__frame--main { width: 90%; inset-inline-start: 5%; inset-block-start: 5%; }
-  .case-artwork--hero.case-artwork--pawly .case-artwork__canvas { aspect-ratio: var(--ratio-screen); }
-  .case-artwork--hero.case-artwork--pawly .case-artwork__frame--main { width: 25%; height: auto; inset-inline-start: 37.5%; inset-block-start: 5%; border-radius: var(--radius-lg); }
-  .case-artwork--hero.case-artwork--pawly .case-artwork__frame--main img { mix-blend-mode: normal; }
 
   /* Compact rows use the same composition, with no scroll reveal. */
   .case-artwork--thumbnail { border-radius: var(--radius-md); }
@@ -115,9 +99,6 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
     .case-artwork { border-radius: var(--radius-md); }
     .case-artwork__canvas { aspect-ratio: var(--ratio-cover-mobile); }
     .case-artwork__frame { border-radius: var(--radius-sm); }
-    .case-artwork--vet-clinic .case-artwork__frame--main { width: 106%; inset-inline-start: -7%; inset-block-start: 8%; }
-    .case-artwork--vet-clinic .case-artwork__frame--detail { width: 65%; inset-inline-end: 5%; inset-block-end: 5%; }
-    .case-artwork--pawly .case-artwork__frame--main { width: 89%; inset-inline-start: 5.5%; inset-block-start: 6%; height: 94%; }
     .case-artwork--hero .case-artwork__canvas { aspect-ratio: var(--ratio-cover-mobile); }
     .case-artwork--hero.case-artwork--agent-ops-console .case-artwork__frame--main { width: 126%; inset-inline-start: -16%; inset-block-start: 6%; }
     .case-artwork--hero.case-artwork--agent-ops-console .case-artwork__frame--detail { width: 90%; inset-inline-end: 5%; inset-block-end: 5%; }
@@ -128,9 +109,11 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
     .case-artwork--hero.case-artwork--learn .case-artwork__canvas { aspect-ratio: var(--ratio-cover-mobile); }
     .case-artwork--hero.case-artwork--learn .case-artwork__frame--main { width: 116%; inset-inline-start: 5%; inset-block-start: 6%; }
     .case-artwork--hero.case-artwork--pawly .case-artwork__canvas { aspect-ratio: var(--ratio-cover-phone); }
-    .case-artwork--hero.case-artwork--pawly .case-artwork__frame--main { width: 80%; inset-inline-start: 10%; inset-block-start: 5%; height: auto; }
     .case-artwork--thumbnail .case-artwork__canvas { aspect-ratio: var(--ratio-cover-mobile); }
     /* The phone crop is taller than 4:3 would hold at a readable size. */
-    .case-artwork--moment .case-artwork__canvas { aspect-ratio: var(--ratio-cover-moment-mobile); }
+    .case-artwork--moment.case-artwork--cover .case-artwork__canvas { aspect-ratio: var(--ratio-cover-moment-mobile); }
+    .case-artwork--moment.case-artwork--vet-clinic .case-artwork__frame--main { width: 84%; }
+    .case-artwork--moment.case-artwork--pawly .case-artwork__frame--main { width: 90%; }
+    .case-artwork--moment.case-artwork--hero.case-artwork--pawly .case-artwork__frame--main { width: 86%; }
   }
 </style>

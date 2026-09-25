@@ -67,7 +67,7 @@ const { items, locale, expandLabel, collapseLabel } = Astro.props;
   @media (--bp-md) { .more-cases__link { grid-template-columns: var(--space-48) minmax(0, 1fr) auto; gap: var(--space-8); } }
   @media (--below-bp-md) {
     .more-cases__link { grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-4); align-items: start; }
-    .more-cases__preview { display: none; }
+    .more-cases__preview { grid-column: 1 / -1; }
     .more-cases__arrow { padding-block-start: var(--space-1); }
   }
 </style>

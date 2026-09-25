@@ -5,6 +5,8 @@ export interface Artwork {
   images: string[];
   /** Phone-width crop of the same product moment; replaces the first image below bp-md. */
   mobile?: string;
+  /** One product moment centred on the canvas, instead of a layered composition. */
+  moment?: boolean;
   alt: string;
   caption?: string;
 }
@@ -60,32 +62,33 @@ const catalog = {
   },
   'vet-clinic': {
     folder: 'case-vet',
-    cover: ['cover/vet-day-queue.webp', 'visit-quick-trace-crop.webp'],
+    cover: ['cover/queue-moment.webp'],
     hero: ['visit-quick-trace-crop.webp'],
     en: {
-      cover: 'Vet Clinic: the veterinarian’s daily queue and a quick visit record.',
+      cover: 'Vet Clinic: today’s visits, with an emergency walk-in at the top of the queue and three records left open.',
       hero: 'Quick visit record: weight, medication and dose, with the draft saved and a short clinical note.',
       caption: 'A short record at the point of care: weight, medication, dose and a note. The full record remains a separate step. Fictional patient data.',
     },
     ru: {
-      cover: 'Ветклиника: очередь врача на день и быстрая запись визита.',
+      cover: 'Ветклиника: визиты на сегодня — экстренный пациент без записи первым в очереди, три записи не закрыты.',
       hero: 'Быстрая запись визита: вес, препарат, доза, сохранённый черновик и короткая заметка врача.',
       caption: 'Короткий след приёма: вес, препарат, доза и заметка. Полная карта остаётся отдельным шагом. Данные пациента вымышлены.',
     },
   },
   pawly: {
     folder: 'case-pawly',
-    cover: ['cover/return-confirmed.webp'],
-    hero: ['handover-photo-review.webp'],
+    cover: ['cover/story.webp'],
+    hero: ['cover/story.webp'],
+    heroMobile: 'cover/story-phone.webp',
     en: {
-      cover: 'Pawly: return confirmed at 14:52, with dated pickup and return photos in one report card.',
-      hero: 'Pawly return photo review: the full selected image remains local until the walker sends it and the demo confirms receipt.',
-      caption: 'A selected photo is not yet a confirmed return. The walker reviews the full image before sending. Local demo on invented data.',
+      cover: 'Pawly, one walk in three screens: the owner sees Baikal out for a walk, the walker checks the drop-off photo, the report confirms the return at 14:52.',
+      hero: 'Pawly, one walk in three screens: the owner sees who has Baikal and when to expect him home; the walker checks the drop-off photo before sending; the report confirms the return at 14:52 with both photos.',
+      caption: 'Before, during and after one walk. A selected photo is not yet a confirmed return: the walker reviews it before sending, and the report counts only what was received. Local demo on invented data.',
     },
     ru: {
-      cover: 'Pawly: возвращение подтверждено в 14:52; фотографии передачи и возвращения с датами в одной карточке отчёта.',
-      hero: 'Проверка фото возвращения в Pawly: полный выбранный кадр остаётся локальным до отправки и подтверждения в демо.',
-      caption: 'Выбранное фото ещё не подтверждает возвращение. Исполнитель проверяет полный кадр до отправки. Локальное демо на вымышленных данных.',
+      cover: 'Pawly, одна прогулка в трёх экранах: владелец видит, что Байкал на прогулке, исполнитель проверяет фото возвращения, отчёт подтверждает возврат в 14:52.',
+      hero: 'Pawly, одна прогулка в трёх экранах: владелец видит, с кем Байкал и когда его ждать; исполнитель проверяет фото возвращения до отправки; отчёт подтверждает возврат в 14:52 с обоими фото.',
+      caption: 'До, во время и после одной прогулки. Выбранное фото ещё не подтверждает возвращение: исполнитель проверяет его до отправки, а отчёт учитывает только полученное. Локальное демо на вымышленных данных.',
     },
   },
 } satisfies Record<CaseSlug, unknown>;
@@ -98,13 +101,21 @@ export function getCaseVisuals(slug: string, locale: Locale = 'en') {
   const copy = entry[locale];
   return {
     slug: key,
-    // Featured cases show one product moment at natural size, desktop and
-    // phone cropped separately (scripts/shoot-home-covers.mjs).
+    // Every cover is one product moment at a readable size; the featured
+    // three carry a separate phone crop (scripts/shoot-home-covers.mjs,
+    // scripts/build-secondary-covers.mjs).
     cover: {
       images: entry.cover.map((file) => `${root}/${file}`),
       mobile: 'mobile' in entry ? `${root}/${entry.mobile}` : undefined,
+      moment: true,
       alt: copy.cover,
     } satisfies Artwork,
-    hero: { images: entry.hero.map((file) => `${root}/${file}`), alt: copy.hero, caption: copy.caption } satisfies Artwork,
+    hero: {
+      images: entry.hero.map((file) => `${root}/${file}`),
+      mobile: 'heroMobile' in entry ? `${root}/${entry.heroMobile}` : undefined,
+      moment: 'heroMobile' in entry,
+      alt: copy.hero,
+      caption: copy.caption,
+    } satisfies Artwork,
   };
 }

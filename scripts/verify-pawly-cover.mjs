@@ -20,17 +20,17 @@ try{
     const img=link.locator('img');
     await img.evaluate(i=>{i.loading='eager';return Promise.race([i.decode(),new Promise((_,reject)=>setTimeout(()=>reject(Error('Cover image decode timeout: '+i.src)),5000))]);});
     assert.equal(await img.count(),1);
-    assert((await img.getAttribute('src')).endsWith('/cover/return-confirmed.webp'));
-    const geometry=await img.evaluate(i=>({fit:getComputedStyle(i).objectFit,blend:getComputedStyle(i).mixBlendMode,natural:[i.naturalWidth,i.naturalHeight]}));
-    assert.equal(geometry.fit,'contain');
-    assert.equal(geometry.blend,'normal');
-    assert.deepEqual(geometry.natural,[537,397]);
+    assert((await img.getAttribute('src')).endsWith('/cover/story.webp'));
+    // Since 25.09.2026: three whole phones (status bar, screen, home bar), scripts/build-secondary-covers.mjs.
+    const geometry=await img.evaluate(i=>{const r=i.getBoundingClientRect(),c=i.closest('.case-artwork__canvas').getBoundingClientRect();return{natural:[i.naturalWidth,i.naturalHeight],inside:r.top>=c.top-1&&r.bottom<=c.bottom+1&&r.left>=c.left-1&&r.right<=c.right+1};});
+    assert.deepEqual(geometry.natural,[2067,1532]);
+    assert.equal(geometry.inside,true);
     assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
     if(!live)await link.screenshot({path:`${output}/cover-after-${locale}-${width}.png`});
     await link.click();
     await p.waitForURL(/\/work\/pawly\/?$/);
-    assert((await p.locator('.case-cover img').getAttribute('src')).endsWith('/handover-photo-review.webp'));
-    records.push({locale,width,cover:'single confirmed-return card',geometry,heroUnchanged:true,pass:true});
+    assert((await p.locator('.case-cover img').getAttribute('src')).endsWith('/cover/story.webp'));
+    records.push({locale,width,cover:'three whole phones: before, during, after',geometry,pass:true});
     await p.close();
   }
   assert.equal(errors.length,0);
