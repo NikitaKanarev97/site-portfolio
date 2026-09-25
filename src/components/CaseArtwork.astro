@@ -11,12 +11,13 @@ interface Props {
 const { slug, artwork, variant = 'cover', loading = 'lazy' } = Astro.props;
 // One product moment, centred on the canvas instead of layered frames.
 const moment = Boolean(artwork.moment);
+const composed = Boolean(artwork.composed);
 // Same bp-md boundary as the CSS below; `media` is markup, custom media cannot reach it.
 const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
 ---
 
 <div
-  class:list={['case-artwork', `case-artwork--${slug}`, `case-artwork--${variant}`, { 'case-artwork--moment': moment }]}
+  class:list={['case-artwork', `case-artwork--${slug}`, `case-artwork--${variant}`, { 'case-artwork--moment': moment, 'case-artwork--composed': composed }]}
   role="img"
   aria-label={artwork.alt}
   data-motion={variant === 'cover' ? 'reveal-media' : undefined}
@@ -78,6 +79,8 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
   /* One product moment: the crop is centred and never scaled past the card. */
   .case-artwork--moment .case-artwork__canvas { display: grid; place-items: center; }
   .case-artwork--moment .case-artwork__frame--main { position: relative; inset: auto; width: 88%; }
+  /* A composed cover carries its own ground, layers and shadows. */
+  .case-artwork--composed .case-artwork__frame--main { inset: 0; width: 100%; border: 0; border-radius: 0; box-shadow: none; }
   /* Widths keep each moment inside the canvas height with an even margin. */
   .case-artwork--moment.case-artwork--vet-clinic .case-artwork__frame--main { width: 63%; }
   .case-artwork--moment.case-artwork--pawly .case-artwork__frame--main { width: 68%; }
@@ -110,8 +113,8 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
     .case-artwork--hero.case-artwork--learn .case-artwork__frame--main { width: 116%; inset-inline-start: 5%; inset-block-start: 6%; }
     .case-artwork--hero.case-artwork--pawly .case-artwork__canvas { aspect-ratio: var(--ratio-cover-phone); }
     .case-artwork--thumbnail .case-artwork__canvas { aspect-ratio: var(--ratio-cover-mobile); }
-    /* The phone crop is taller than 4:3 would hold at a readable size. */
-    .case-artwork--moment.case-artwork--cover .case-artwork__canvas { aspect-ratio: var(--ratio-cover-moment-mobile); }
+    /* The phone composition is taller than 4:3 would hold at a readable size. */
+    .case-artwork--composed .case-artwork__canvas { aspect-ratio: var(--ratio-cover-moment-mobile); }
     .case-artwork--moment.case-artwork--vet-clinic .case-artwork__frame--main { width: 84%; }
     .case-artwork--moment.case-artwork--pawly .case-artwork__frame--main { width: 90%; }
     .case-artwork--moment.case-artwork--hero.case-artwork--pawly .case-artwork__frame--main { width: 86%; }

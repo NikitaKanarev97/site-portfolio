@@ -7,6 +7,8 @@ export interface Artwork {
   mobile?: string;
   /** One product moment centred on the canvas, instead of a layered composition. */
   moment?: boolean;
+  /** A finished composition (scripts/build-home-covers.mjs) that fills the canvas. */
+  composed?: boolean;
   alt: string;
   caption?: string;
 }
@@ -101,13 +103,15 @@ export function getCaseVisuals(slug: string, locale: Locale = 'en') {
   const copy = entry[locale];
   return {
     slug: key,
-    // Every cover is one product moment at a readable size; the featured
-    // three carry a separate phone crop (scripts/shoot-home-covers.mjs,
-    // scripts/build-secondary-covers.mjs).
+    // The featured three are finished compositions — the whole screen as
+    // ground, key elements lifted over it (scripts/build-home-covers.mjs).
+    // Vet and Pawly previews are one product moment each
+    // (scripts/build-secondary-covers.mjs).
     cover: {
       images: entry.cover.map((file) => `${root}/${file}`),
       mobile: 'mobile' in entry ? `${root}/${entry.mobile}` : undefined,
-      moment: true,
+      moment: !('mobile' in entry),
+      composed: 'mobile' in entry,
       alt: copy.cover,
     } satisfies Artwork,
     hero: {
