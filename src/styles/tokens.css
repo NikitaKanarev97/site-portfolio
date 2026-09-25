@@ -90,6 +90,7 @@
   --ratio-16-10: 16 / 10;
   --ratio-16-9: 16 / 9;
   --ratio-4-3: 4 / 3;
+  --ratio-4-5: 4 / 5;
   --ratio-1-2: 1 / 2;
 
   /* Отступы — имя = значение / 4 */
@@ -235,6 +236,7 @@
   --ratio-screen:   var(--ratio-16-10);
   --ratio-cover:    var(--ratio-16-9);
   --ratio-cover-mobile: var(--ratio-4-3);
+  --ratio-cover-moment-mobile: var(--ratio-4-5);
   --ratio-cover-phone: var(--ratio-1-2);
   --elevation-artwork: var(--shadow-lg);
   --radius-artwork-detail: var(--radius-xl);

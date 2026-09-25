@@ -9,29 +9,30 @@ interface Props {
   loading?: 'eager' | 'lazy';
 }
 const { slug, artwork, variant = 'cover', loading = 'lazy' } = Astro.props;
-const crop = artwork.detailCrop;
-const cropStyle = crop ? {
-  '--detail-ratio': `${crop.width} / ${crop.height}`,
-  '--detail-image-width': `${crop.sourceWidth / crop.width * 100}%`,
-  '--detail-x': `${-crop.x / crop.sourceWidth * 100}%`,
-  '--detail-y': `${-crop.y / crop.sourceHeight * 100}%`,
-  '--detail-radius-x': `${px('radius-artwork-detail') / crop.width * 100}%`,
-  '--detail-radius-y': `${px('radius-artwork-detail') / crop.height * 100}%`,
-} : undefined;
+// A cover with a phone crop is one product moment, centred at natural size.
+const moment = variant === 'cover' && Boolean(artwork.mobile);
+// Same bp-md boundary as the CSS below; `media` is markup, custom media cannot reach it.
+const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
 ---
 
 <div
-  class:list={['case-artwork', `case-artwork--${slug}`, `case-artwork--${variant}`]}
+  class:list={['case-artwork', `case-artwork--${slug}`, `case-artwork--${variant}`, { 'case-artwork--moment': moment }]}
   role="img"
   aria-label={artwork.alt}
   data-motion={variant === 'cover' ? 'reveal-media' : undefined}
   data-motion-counter="none"
-  style={cropStyle}
 >
   <div class="case-artwork__canvas ds-media-mask">
     {artwork.images.map((src, index) => (
       <div class:list={['case-artwork__frame', index === 0 ? 'case-artwork__frame--main' : 'case-artwork__frame--detail']} aria-hidden="true">
-        <img src={src} alt="" loading={loading} decoding="async" draggable="false" />
+        {index === 0 && artwork.mobile ? (
+          <picture>
+            <source media={MOBILE_MEDIA} srcset={artwork.mobile} />
+            <img src={src} alt="" loading={loading} decoding="async" draggable="false" />
+          </picture>
+        ) : (
+          <img src={src} alt="" loading={loading} decoding="async" draggable="false" />
+        )}
       </div>
     ))}
   </div>
@@ -63,19 +64,10 @@ const cropStyle = crop ? {
 
   .case-artwork--agent-ops-console { --artwork-surface: var(--surface-cover-agent); }
   .case-artwork--agent-ops-console .case-artwork__frame { border-color: var(--border-inverse); }
-  .case-artwork--agent-ops-console .case-artwork__frame--main { width: 88%; inset-inline-start: 6%; inset-block-start: 8%; }
 
   .case-artwork--partner-portal { --artwork-surface: var(--surface-cover-portal); }
-  .case-artwork--partner-portal .case-artwork__frame--main { width: 84%; inset-inline-start: 8%; inset-block-start: 10%; }
 
   .case-artwork--learn { --artwork-surface: var(--surface-cover-learn); }
-  .case-artwork--learn .case-artwork__frame--main { width: 77%; inset-inline-start: 5%; inset-block-start: 9%; }
-  .case-artwork--learn .case-artwork__frame--detail {
-    width: 25%; aspect-ratio: var(--detail-ratio); inset-inline-end: 5%; inset-block-end: 6%;
-    border-radius: calc(var(--detail-radius-x) + var(--border-width)) / calc(var(--detail-radius-y) + var(--border-width));
-  }
-  /* The curriculum's right column is a meaningful detail, not a hidden layer. */
-  .case-artwork--learn .case-artwork__frame--detail img { width: var(--detail-image-width); transform: translate(var(--detail-x), var(--detail-y)); }
 
   .case-artwork--vet-clinic { --artwork-surface: var(--surface-cover-vet); }
   .case-artwork--vet-clinic .case-artwork__frame--main { width: 76%; inset-inline-start: 5%; inset-block-start: 9%; }
@@ -100,6 +92,10 @@ const cropStyle = crop ? {
     mix-blend-mode: normal;
   }
 
+  /* One product moment: the crop is centred and never scaled past the card. */
+  .case-artwork--moment .case-artwork__canvas { display: grid; place-items: center; }
+  .case-artwork--moment.case-artwork--cover .case-artwork__frame--main { position: relative; inset: auto; width: 88%; }
+
   /* The first image in a case is an independent, inspectable product moment. */
   .case-artwork--hero.case-artwork--agent-ops-console .case-artwork__frame--main { width: 81%; inset-inline-start: 5%; inset-block-start: 6%; }
   .case-artwork--hero.case-artwork--agent-ops-console .case-artwork__frame--detail { width: 58%; inset-inline-end: 4%; inset-block-end: 5%; }
@@ -119,17 +115,6 @@ const cropStyle = crop ? {
     .case-artwork { border-radius: var(--radius-md); }
     .case-artwork__canvas { aspect-ratio: var(--ratio-cover-mobile); }
     .case-artwork__frame { border-radius: var(--radius-sm); }
-    .case-artwork--agent-ops-console .case-artwork__frame--main { width: 126%; inset-inline-start: -16%; inset-block-start: 8%; }
-    /* Окна пересчитаны 11.09.2026 под артборд 1760 (было 132 % / −12 % под
-       1440 на оба кадра) — и разведены, потому что кадры разные. Прежнее окно
-       показывало источник с 9 по 85 %: у разбора (hero) без колонки действий,
-       которую обещает alt, у плана отгрузки (обложка главной) без начала
-       заголовка и кнопок планов.
-       План отгрузки: рельс свёрнут (`D028`), 3,6 % ширины; содержимое с 7,8 по
-       95,9 %. 108 % / −4 % даёт окно 3,7…96,3 %. Разбор — ниже, у hero. */
-    .case-artwork--partner-portal .case-artwork__frame--main { width: 108%; inset-inline-start: -4%; inset-block-start: 8%; }
-    .case-artwork--learn .case-artwork__frame--main { width: 116%; inset-inline-start: 6%; inset-block-start: 8%; }
-    .case-artwork--learn .case-artwork__frame--detail { width: 34%; inset-inline-end: 5%; inset-block-end: 5%; }
     .case-artwork--vet-clinic .case-artwork__frame--main { width: 106%; inset-inline-start: -7%; inset-block-start: 8%; }
     .case-artwork--vet-clinic .case-artwork__frame--detail { width: 65%; inset-inline-end: 5%; inset-block-end: 5%; }
     .case-artwork--pawly .case-artwork__frame--main { width: 89%; inset-inline-start: 5.5%; inset-block-start: 6%; height: 94%; }
@@ -145,5 +130,7 @@ const cropStyle = crop ? {
     .case-artwork--hero.case-artwork--pawly .case-artwork__canvas { aspect-ratio: var(--ratio-cover-phone); }
     .case-artwork--hero.case-artwork--pawly .case-artwork__frame--main { width: 80%; inset-inline-start: 10%; inset-block-start: 5%; height: auto; }
     .case-artwork--thumbnail .case-artwork__canvas { aspect-ratio: var(--ratio-cover-mobile); }
+    /* The phone crop is taller than 4:3 would hold at a readable size. */
+    .case-artwork--moment .case-artwork__canvas { aspect-ratio: var(--ratio-cover-moment-mobile); }
   }
 </style>
