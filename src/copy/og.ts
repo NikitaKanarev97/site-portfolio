@@ -88,9 +88,27 @@ export function ogCard(id: string): OgCard {
   return card;
 }
 
+/**
+ * Обложки кейсов для LinkedIn Featured (25.09.2026).
+ *
+ * Featured показывает og:image карточкой 237–364 px, и типографская
+ * карточка с одним названием там неотличима от соседней. Для трёх кейсов,
+ * которые стоят в профиле, превью — готовая обложка с экраном продукта
+ * (исходник — D:\Freelance\linkedin\coversuild\covers.html).
+ * Отдельный путь, а не замена /og/*.png: те отдаются с immutable-кэшем,
+ * и LinkedIn держал бы старую картинку. Подпись — текст самой обложки.
+ */
+const CASE_COVERS: Record<string, string> = {
+  'work-agent-ops-console': 'Agent Ops Console — oversight for a team running an AI support agent. Paid client, accepted.',
+  'work-partner-portal': 'B2B Partner Portal — ordering on a legacy backend at DSSL. Shipped.',
+  'work-vet-clinic': 'Vet Clinic OS — records that fit a 30-second gap between patients. Concept.',
+};
+
 /** Путь картинки маршрута. Служебные страницы берут карточку default. */
 export function ogImage(id: string): string {
-  return `/og/${ogCard(id).id}.png`;
+  const cardId = ogCard(id).id;
+  if (cardId in CASE_COVERS) return `/media/linkedin/og/${cardId}.png`;
+  return `/og/${cardId}.png`;
 }
 
 /**
@@ -99,5 +117,6 @@ export function ogImage(id: string): string {
  */
 export function ogImageAlt(id: string): string {
   const card = ogCard(id);
+  if (card.id in CASE_COVERS) return CASE_COVERS[card.id];
   return `${card.eyebrow}: ${card.title}. ${card.footnote}`;
 }
