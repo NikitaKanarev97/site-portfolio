@@ -94,7 +94,7 @@ export function ogCard(id: string): OgCard {
  * Featured показывает og:image карточкой 237–364 px, и типографская
  * карточка с одним названием там неотличима от соседней. Для трёх кейсов,
  * которые стоят в профиле, превью — готовая обложка с экраном продукта
- * (исходник — D:\Freelance\linkedin\coversuild\covers.html).
+ * (исходник — D:/Freelance/linkedin/covers/build/covers.html).
  * Отдельный путь, а не замена /og/*.png: те отдаются с immutable-кэшем,
  * и LinkedIn держал бы старую картинку. Подпись — текст самой обложки.
  */
