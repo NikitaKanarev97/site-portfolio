@@ -36,7 +36,7 @@ export const home = {
   meta: {
     title: `${NAME} — Product Designer`,
     description:
-      'Product designer working on B2B products where the hard part is the constraint, not the canvas. Based in Kazakhstan, open to relocation.',
+      'Product designer working on B2B products where the hard part is the constraint, not the canvas. Based in Armenia, open to relocation.',
   },
 
   hero: {
@@ -54,7 +54,7 @@ export const home = {
      * против лимита в две строки на 360 px.
      */
     authorization:
-      'Kazakhstan · remote now, open to relocation with visa sponsorship.',
+      'Armenia · remote now, open to relocation with visa sponsorship.',
     /**
      * С 2026-08-25 открытых кейсов больше одного, и прежняя строка «Read the case:
      * B2B Partner Portal» называла один из них. Ведёт якорем в секцию

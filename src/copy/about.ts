@@ -12,7 +12,7 @@
  *     часы пересечения. Подача — одна траектория, не перечисление через
  *     «или». Механики оплаты в блоке нет и не появляется, пока открыт
  *     вопрос №10 ia/open-questions.md (где регистрируется ИП).
- *   - строка UTC+5 обязана совпадать со строкой Footer в site.ts.
+ *   - строка UTC+4 обязана совпадать со строкой Footer в site.ts.
  *
  * Что здесь ЧЕРНОВИК и ждёт владельца:
  *   - intro.lead, intro.principle и три абзаца evidence.body. Вайрфрейм
@@ -102,7 +102,7 @@ export const about = {
   authorization: {
     heading: 'Work authorization',
     body:
-      'Russian citizen, currently based in Kazakhstan (UTC+5). I’m open to relocation — visa sponsorship required. Until then I’m available for remote work, and I’m flexible about the contracting arrangement: happy to work through whatever setup your company uses. My afternoons overlap with the European morning — four to five hours of shared working time, more if the team is flexible.',
+      'Russian citizen, currently based in Armenia (UTC+4). I’m open to relocation — visa sponsorship required. Until then I’m available for remote work, and I’m flexible about the contracting arrangement: happy to work through whatever setup your company uses. My afternoons overlap with the European morning — four to five hours of shared working time, more if the team is flexible.',
   },
 
   /**

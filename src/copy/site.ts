@@ -127,9 +127,9 @@ export const site = {
   },
   footer: {
     /** Факт, решение владельца №1 от 24.08.2026. PRD SCR-03 расходится — см. ia/open-questions.md №9. */
-    location: 'Kazakhstan',
-    utcLabel: 'UTC+5',
-    timeZone: 'Asia/Almaty',
+    location: 'Armenia',
+    utcLabel: 'UTC+4',
+    timeZone: 'Asia/Yerevan',
     timeLabel: 'local time',
     copyright: '© 2026',
   },
