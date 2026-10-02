@@ -38,6 +38,21 @@
   /* Функциональные — заведён один, носителя для остальных нет */
   --success-500: #2F7D4F;  /* 5.04:1 на белом */
 
+  /* Нотация диаграмм — заведена 2026-10-03 (ds/patterns.md §Диаграммы).
+     Носитель один: Diagram.astro. Ни один из этих цветов не уходит в
+     интерфейс сайта — это язык схем, а не палитра продукта. */
+  --gray-400:    #8A8A82;  /* 5.59:1 на gray-950, 4.37:1 на gray-800 — стрелка в тёмной схеме */
+  --gray-800:    #262622;  /* узел тёмной схемы */
+  --sky-300:     #8CCBF5;  /* 11.09:1 на gray-950 — служебный синий тёмной схемы */
+  --sky-600:     #2F86CC;  /* 3.62:1 на gray-50 — связь прототипа, рамка набора */
+  --success-100: #EDF6EF;  /* под success-500: 4.57:1 — таблетка yes */
+  --error-100:   #FBE5E2;
+  --error-500:   #B42318;  /* 5.45:1 на error-100 — таблетка no */
+  --success-300: #7FD1A0;  /* 7.8:1 на success-900 — таблетка yes в тёмной схеме */
+  --success-900: #17301F;
+  --error-300:   #F2A097;  /* 7.91:1 на error-900 — таблетка no в тёмной схеме */
+  --error-900:   #3A1512;
+
   /* Семейства */
   --font-sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Consolas, monospace;
@@ -121,6 +136,7 @@
   --opacity-90: 0.90;
   --opacity-80: 0.80;
   --opacity-60: 0.60;
+  --opacity-40: 0.40;  /* бледный общий префикс user flow, 2026-10-03 */
 
   /* Брейкпоинты. Заведены 2026-08-24 аудитом экранов: foundation.md держал
      их таблицей с самой постановки ДС, а объявления здесь не было — и 768
@@ -311,6 +327,70 @@
   --motion-press-duration: var(--duration-instant);
   --motion-press-ease:     var(--ease-standard);
   --motion-press-scale:    var(--scale-press);
+
+  /* Диаграммы — ds/patterns.md §Диаграммы, заведено 2026-10-03.
+     Карта экранов, user flow, карта прототипа и лист библиотеки кейса
+     рисуются одной нотацией. Diagram.astro читает только эти токены,
+     поэтому тёмная пара ниже переключает схему целиком.
+
+     Геометрию (клетка, скругления) компонент считает на сборке через
+     src/lib/tokens.ts, цвета — в CSS. Размерные токены в тёмной паре
+     не переопределяются: tokens.ts берёт последнее объявление в файле. */
+  --diagram-field:        var(--gray-50);
+  --diagram-node:         var(--gray-00);
+  --diagram-text:         var(--gray-900);
+  --diagram-text-muted:   var(--gray-500);
+  --diagram-edge:         var(--gray-300);  /* гребёнка карты: структуру несёт раскладка */
+  --diagram-arrow:        var(--gray-500);  /* стрелка флоу несёт порядок — 4.79:1 */
+  --diagram-stroke:       var(--gray-900);  /* вход, ромб, ввод, переход во флоу */
+  --diagram-group:        var(--gray-500);  /* пунктир функций экрана */
+  --diagram-badge:        var(--gray-900);
+  --diagram-badge-text:   var(--gray-00);
+  --diagram-frame:        var(--gray-00);   /* экран прототипа */
+  --diagram-wire:         var(--gray-200);  /* блоки вайрфрейма */
+  --diagram-wire-strong:  var(--gray-300);
+  --diagram-proto:        var(--sky-600);   /* связь прототипа и рамка набора */
+  --diagram-yes-bg:       var(--success-100);
+  --diagram-yes-text:     var(--success-500);
+  --diagram-no-bg:        var(--error-100);
+  --diagram-no-text:      var(--error-500);
+  --diagram-dim:          var(--opacity-40);
+  /* Кегли схемы — вне ролей по той же причине, что size-link-marker:
+     SVG-подписи нужен только размер, семейство даёт font-body. 12 px без
+     моно и капса ролью не покрыт, а ромбу и действиям нужен именно он. */
+  --diagram-label-size:   var(--size-sm);   /* подпись узла */
+  --diagram-note-size:    var(--size-xs);   /* ромб, действие, таблетка, номер */
+  --diagram-cell:         var(--space-2);   /* единица координат в данных */
+  --diagram-pad:          var(--space-6);   /* поле вокруг данных: схема не касается края */
+  --diagram-node-radius:  var(--radius-sm);
+  --diagram-corner:       var(--radius-md); /* скругление излома связи */
+  --diagram-line:         var(--rule-width);
+  --diagram-proto-line:   var(--focus-width);
+}
+
+/* Тёмная схема. Атрибут на любом предке — тема кейса, а не системная
+   prefers-color-scheme: у сайта одна светлая тема, тёмными бывают кейсы
+   (Agent Ops, Learn). Таблетки yes/no уходят в тёмные тона: светлая
+   плашка на тёмном поле читается пятном, а под бледным префиксом — грязью. */
+[data-theme="dark"] {
+  --diagram-field:        var(--gray-950);
+  --diagram-node:         var(--gray-800);
+  --diagram-text:         var(--gray-50);
+  --diagram-text-muted:   var(--gray-400);
+  --diagram-edge:         var(--gray-700);
+  --diagram-arrow:        var(--gray-400);
+  --diagram-stroke:       var(--gray-300);
+  --diagram-group:        var(--gray-400);
+  --diagram-badge:        var(--gray-00);
+  --diagram-badge-text:   var(--gray-950);
+  --diagram-frame:        var(--gray-800);
+  --diagram-wire:         var(--gray-700);
+  --diagram-wire-strong:  var(--gray-500);
+  --diagram-proto:        var(--sky-300);
+  --diagram-yes-bg:       var(--success-900);
+  --diagram-yes-text:     var(--success-300);
+  --diagram-no-bg:        var(--error-900);
+  --diagram-no-text:      var(--error-300);
 }
 
 /* ============================================================

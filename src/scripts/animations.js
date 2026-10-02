@@ -102,6 +102,9 @@ function staggerFor(el) {
 function scrollTargets(root) {
   return toArray(root.querySelectorAll('[data-motion-group], [data-motion]')).filter((el) => {
     if (el.closest('[data-motion-intro]')) return false;
+    // Линии диаграмм объявлены заранее, хореография — этап 3 PLAN-CHATS.md.
+    // Без пропуска каждая линия ушла бы в fade со своим ScrollTrigger.
+    if (el.dataset.motion === 'draw') return false;
     if (el.hasAttribute('data-motion') && el.parentElement?.closest('[data-motion-group]')) return false;
     return true;
   });

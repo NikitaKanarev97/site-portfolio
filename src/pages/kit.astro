@@ -14,6 +14,10 @@
  * 2026-08-24: ProseBlock, NoteBlock, DecisionBlock, Footer,
  * MetaList layout=statements, CopyEmail appearance.
  *
+ * Diagram — четыре вида нотации, 2026-10-03 (PLAN-CHATS.md, этап 1).
+ * Каждый образец дважды: светлая тема на EN и тёмная на RU, чтобы обе
+ * темы и обе локали проверялись одним проходом.
+ *
  * Содержимое — заглушки. Ни одна строка отсюда в продукт не переносится.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -30,6 +34,11 @@ import ProseBlock from '../components/ProseBlock.astro';
 import NoteBlock from '../components/NoteBlock.astro';
 import DecisionBlock from '../components/DecisionBlock.astro';
 import Footer from '../components/Footer.astro';
+import Diagram from '../components/Diagram.astro';
+import diagramMap from '../data/diagrams/kit/map.ts';
+import diagramFlow from '../data/diagrams/kit/flow.ts';
+import diagramPrototype from '../data/diagrams/kit/prototype.ts';
+import diagramLibrary from '../data/diagrams/kit/library.ts';
 /* Кадры стопки берутся из продуктового слоя текстов, а не копируются сюда
    третьим списком: витрина обязана показывать ровно то, что стоит на
    главной, иначе она перестаёт быть поверхностью QA. */
@@ -324,6 +333,38 @@ const caseMeta = [
     </div>
   </section>
 
+  <section class="ds-container ds-section" id="diagram-map">
+    <SectionHead eyebrow="Diagram · kind=map" size="sm">Карта экранов</SectionHead>
+    <Diagram data={diagramMap} lang="en" />
+    <div class="kit__dark" data-theme="dark">
+      <Diagram data={diagramMap} lang="ru" />
+    </div>
+  </section>
+
+  <section class="ds-container ds-section" id="diagram-flow">
+    <SectionHead eyebrow="Diagram · kind=flow" size="sm">User flow с ромбами и бледным префиксом</SectionHead>
+    <Diagram data={diagramFlow} lang="en" />
+    <div class="kit__dark" data-theme="dark">
+      <Diagram data={diagramFlow} lang="ru" />
+    </div>
+  </section>
+
+  <section class="ds-container ds-section" id="diagram-prototype">
+    <SectionHead eyebrow="Diagram · kind=prototype" size="sm">Карта прототипа</SectionHead>
+    <Diagram data={diagramPrototype} lang="en" />
+    <div class="kit__dark" data-theme="dark">
+      <Diagram data={diagramPrototype} lang="ru" />
+    </div>
+  </section>
+
+  <section class="ds-container ds-section" id="diagram-library">
+    <SectionHead eyebrow="Diagram · kind=library" size="sm">Лист библиотеки компонентов</SectionHead>
+    <Diagram data={diagramLibrary} lang="en" />
+    <div class="kit__dark" data-theme="dark">
+      <Diagram data={diagramLibrary} lang="ru" />
+    </div>
+  </section>
+
   {/* Footer стоит внутри main только здесь: витрина показывает компонент,
       на экранах продукта он живёт под main. */}
   <section class="ds-container ds-section">
@@ -350,6 +391,12 @@ const caseMeta = [
 </BaseLayout>
 
 <style>
+  /* Тёмный образец диаграммы: тема кейса задаётся атрибутом на предке. */
+  .kit__dark {
+    padding: var(--space-6);
+    background: var(--surface-inverse);
+  }
+
   /* Витрина идёт на той же шкале, что продукт: eyebrow и заголовок несут
      ds-flow-eyebrow и ds-flow-heading, остальные промежутки — умолчание
      секции. Иначе поверхность визуального QA расходится с тем, что она

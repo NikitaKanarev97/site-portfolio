@@ -21,6 +21,17 @@ FeaturedCase исполняет паттерн FeaturedCaseCover: одна сс�
 
 ---
 
+## `Diagram` · 2026-10-03
+
+Схема кейса из файла данных: карта экранов, user flow, карта прототипа, лист библиотеки компонентов. Нотация и что в ней нельзя переставлять — `ds/patterns.md` §Диаграммы.
+
+- **Варианты:** `kind` из данных — `map` · `flow` · `prototype` (SVG) и `library` (HTML). Пропы: `data`, `lang` (`en` | `ru`), `class`.
+- **Токены:** только `--diagram-*` (`ds/foundation.md` §Диаграммы), кроме палитры продукта на листе библиотеки — это данные.
+- **Тема:** `data-theme="dark"` на предке.
+- **Движение:** `data-motion="draw"` на линиях связей, хореография — этап 3. Компонент ничего не анимирует.
+- **Доступность:** SVG скрыт, вместо него фокусируемая область прокрутки с `aria-label` и визуально скрытая расшифровка из `summary` и связей. Таблица типографики — настоящая `<table>` со скрытой шапкой.
+- **Данные:** `src/data/diagrams/<кейс>/<вид>.ts`, схема — `src/data/diagrams/README.md`.
+
 ## `Navbar`
 
 Навигация с персональным знаком `NK`, ведущим на главную, и четырьмя пунктами: Work · Development · About · Contact (`IA-05`). Исходник знака — `Images/logo-portfolio.svg`; в компонент он встраивается inline, чтобы основной цвет и акцент брались из смысловых токенов.
@@ -347,7 +358,9 @@ FeaturedCase исполняет паттерн FeaturedCaseCover: одна сс�
 | Оболочка маршрута | `src/layouts/PageShell.astro` — реализация паттерна `PageShell`; держит `ContactBlock` в единственном экземпляре |
 | Тексты | `src/copy/site.ts` — сквозные строки; строки экранов рядом. Слой отделён от композиции |
 | Хореография | `src/scripts/animations.js` — все пять движений словаря |
-| Компоненты | `src/components/{Navbar,TextLink,CopyEmail,MediaFrame,MediaZoom,ProjectDialog,WorkRow,MetaList,SectionHead,ProseBlock,NoteBlock,DecisionBlock,Footer}.astro` |
+| Компоненты | `src/components/{Navbar,TextLink,CopyEmail,MediaFrame,MediaZoom,ProjectDialog,WorkRow,MetaList,SectionHead,ProseBlock,NoteBlock,DecisionBlock,Footer,Diagram}.astro` |
+| Геометрия диаграмм | `src/lib/diagram.ts` — маршруты связей, кривые, вайрфреймы; считается на сборке |
+| Данные диаграмм | `src/data/diagrams/` — схема, README, образцы `/kit` |
 | Размеры кадров | `src/lib/media.ts` — соотношение и потолок ширины читаются из файла на сборке |
 | Производство кадров | `scripts/shoot-case-frames.mjs` (съёмка) и `scripts/trim-frames.mjs` (обрезка по содержимому) |
 | Паттерны композиции | `ds/patterns.md` — из чего собираются узлы, не ставшие компонентами |
@@ -370,7 +383,7 @@ Astro скоупит стили страницы атрибутом `data-astro-
 
 **Как компонент объявляет вертикаль.** Никак — и это правило, а не умолчание. Отступ до соседа принадлежит промежутку, а не узлу: его задаёт поток секции в `src/styles/global.css` (`ds/foundation.md` §Вертикальный ритм). Компонент объявляет только свой внутренний ритм и, если у него есть роль в цепочке, класс-метку на корне: `ds-flow-heading` у `SectionHead`, `ds-flow-lead` у `ProseBlock variant=lead`. Метки работают в любом контейнере — внутри секции, внутри обёртки каскада, внутри ссылки-обложки. Заведено 2026-08-24; до этого `margin` компонента складывался с `gap` контейнера, и одна и та же пара давала три разных числа на трёх маршрутах.
 
-**Как компонент объявляет движение.** Компоненты анимаций не пишут: они ставят атрибут, хореографию ведёт `animations.js`. Словарь атрибутов — в шапке того же файла: `data-motion` (`reveal-text` · `reveal-media` · `fade` · `rise`), `data-motion-intro`, `data-motion-at`, `data-motion-group`, `data-motion-stagger`, `data-motion-counter`. Строка и Состояние (`motion-hover`, `motion-state`, `motion-press`) исполняются CSS-переходами внутри компонентов — это ровно те смыслы, которые CSS умеет сам.
+**Как компонент объявляет движение.** Компоненты анимаций не пишут: они ставят атрибут, хореографию ведёт `animations.js`. Словарь атрибутов — в шапке того же файла: `data-motion` (`reveal-text` · `reveal-media` · `fade` · `rise`; `draw` объявлен у линий `Diagram`, исполнитель — этап 3), `data-motion-intro`, `data-motion-at`, `data-motion-group`, `data-motion-stagger`, `data-motion-counter`. Строка и Состояние (`motion-hover`, `motion-state`, `motion-press`) исполняются CSS-переходами внутри компонентов — это ровно те смыслы, которые CSS умеет сам.
 
 **Как объявляется нажатие.** Форм две (`ds/motion-concept.md` §3.4), и выбирает между ними размер цели, а не тип элемента.
 
