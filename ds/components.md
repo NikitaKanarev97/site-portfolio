@@ -1,5 +1,24 @@
 # Компоненты — Site-portfolio
 
+**G · 04.10.2026, G-01:** `CaseScreen native?: boolean` показывает документальный alpha-контур actual specimen без рамки, тени и скругляющей маски портфолио. `CaseSpecimen` всегда передаёт native. Радиусы, обводки и цвета настоящего компонента сохраняются в source capture; прозрачный bleed в 2 CSS px вокруг него сохраняет внешнюю обводку. Для обычных экранов прежняя рамка сохраняется.
+
+**Common A · 04.10.2026.** `CaseStory` — типизированный renderer упорядоченных `blocks`, а не фиксированный шаблон. `CaseSpecimen` — общая композиция `CasePlate` + настоящие `CaseScreen` из accepted каталога + native foundation table. Она нужна, потому что `Diagram library` имитирует обычные контролы и не принимает actual specimens. Props: `specimen` (foundation, sets/states/mediaId), `tone`, `lang`; desktop 35:65, mobile последовательные foundation/import-resolution/commerce материалы. Никаких продуктовых контролов не рисует. Токены: `flow-*`, `space-*`, `diagram-proto`, `border-width`, `measure-*`. Product type/color values — данные предмета показа; шрифт продукта загружен. Alt содержит fields/actions, изображения декоративно не обрезаются, состояния доступны без JS. Окружающие подписи EN/RU, EN UI в source frames сохраняется.
+
+`CaseImpact` получает qualitative `outcome`: result в CaseThesis, evidence и tradeoff как отдельные statements, optional nextEvidence. Числовые cards остаются optional; цифра не обязательна. `Diagram` принимает mobile geometry с теми же node IDs/типами и edge IDs/смыслом; ниже bp-md используется самостоятельная SVG-композиция. Full/reduce/no-JS показывают все ветви. Map badge — синий квадрат внутри верхнего правого угла, роль `diagram-screen-badge` и контрастный `diagram-badge-text`.
+
+**Актуальное решение владельца · CaseNext, 03.10.2026:** секция — одна ссылка без pause-кнопки и hover/focus-паузы. Строка движется автоматически в видимом окне/вкладке; reduce/no-JS оставляют статичное название. Исторические S2/S3 требования о marquee-контроле ниже заменены этим решением.
+
+**S3 · 03.10.2026.** Переносимые правила выбора proof/screen/video, pin, fallback и перехода закреплены в `ds/screens/case.md` §S3. Вступление proof: 1 с / power3.out / y 24 px, конечная композиция прежняя. Пустой `panels` использует `shot`. Видеообложка теперь объявляет только разметку; общий `animations.js` ведёт видимость, ручную паузу, live reduce, отказ форматов и очистку. Marquee удерживает focus/hover-паузу при повторном входе; ручная пауза сохраняется при reduce/full. `CaseStory.estimateNote` и `closing` типизируют оговорку расчёта и развязку из существующего `MetaList`, без нового компонента. Короткие и высокие шаги сохраняют свои пропорции; самостоятельный cover и высокий cover не создают sheet-сцены.
+
+**S2 · 03.10.2026.** `CaseCover proof` принимает optional `media.panels`: два целых реальных кадра с собственными narrow-источниками, fallback `shot` сохраняется для других данных. `CaseCover` и `CaseNext` принимают optional `transitionKey` для совместимого preview-перехода; ключ назначается одной выбранной паре в `animations.js`. `CaseNext` содержит кнопку паузы marquee (hidden без JS/reduce), с `aria-pressed` и локализуемыми `pauseLabel` / `playLabel`. `CaseSteps` — нативный grid-список с gap из flow-block; pin не влияет на интервал и не задаёт единую пропорцию кадра. Все режимы исполняются общим motion-слоем, описание — `ds/motion-concept.md` §3.
+
+## Уточнения пилота · 03.10.2026, этап 1 из 3
+
+- `CaseCover`: вариант `proof` — крупное название, лид и целый смысловой фрагмент реального продукта на цвете кейса. `eyebrow`, `caption`, `shot`; кадр не перекрывается текстом. Высота от содержимого, минимум окно на desktop. Токены существующие: surface-cover, text-on-inverse, flow, space, display/heading. На телефоне независимая узкая панель.
+- `CaseScreen`: `ShotItem.device=panel`; необязательные `srcNarrow`/`altNarrow` переключаются `<picture>` ниже bp-md. Это отдельный снятый адаптивный DOM-узел, не кроп десктопа и не корпус телефона. Размеры и пропорции каждой версии резервируются; один доступный img.
+- `CaseSteps`: необязательные `layout=wide|split`, `caption` у шага. Wide — две текстовые колонки от bp-xl, материал во всю ширину. Split — текст 4 / экран 8 колонок от bp-xl. До bp-xl одна колонка. Естественная высота и flow-block между шагами; pin-swap только будущая progressive enhancement. Матрица /kit показывает обе подачи.
+- `CaseCallout`: `srcNarrow`/`altNarrow` для реальной адаптивной панели. Линии начинаются от края изображения, не пересекают UI; на узкой ширине нумерованный список. Токены и порядок чтения сохранены.
+
 ## `FeaturedCase` / `MoreCases` · 2026-09-09
 
 FeaturedCase исполняет паттерн FeaturedCaseCover: одна ссылка, название и исход, CaseArtwork, год и статус, CTA. Все подписи и факты берутся из home.ts / ru/home.ts. MoreCases — нативный details/summary с компактным списком дополнительных кейсов, динамическим числом и надписями expand/collapse. Состояние сохраняется в sessionStorage, основной путь работает без JS. Носители — EN/RU Home. Используются существующие типографические роли, flow-*, section-gap, text-*, border-* и motion-hover. Фокус и нажатие видимы; скрытые ссылки не попадают в Tab-порядок. Подробная карта — screens/case-presentation.md.
@@ -31,6 +50,31 @@ FeaturedCase исполняет паттерн FeaturedCaseCover: одна сс�
 - **Движение:** `data-motion="draw"` на линиях связей, хореография — этап 3. Компонент ничего не анимирует.
 - **Доступность:** SVG скрыт, вместо него фокусируемая область прокрутки с `aria-label` и визуально скрытая расшифровка из `summary` и связей. Таблица типографики — настоящая `<table>` со скрытой шапкой.
 - **Данные:** `src/data/diagrams/<кейс>/<вид>.ts`, схема — `src/data/diagrams/README.md`.
+
+## Модули страницы кейса · 2026-10-03
+
+Этап 2 `PLAN-CHATS.md`. Карта, порядок блоков, правила плашек и кадра — `ds/screens/case.md`; там же поле данных `story` (`src/copy/cases/story.ts`). Все модули живут рядом со старым шаблоном `[slug].astro` и до этапов 7–11 стоят только на `/kit`. Анимаций не пишут: объявляют `data-motion` (`lines`, `fade-image`, `sheet`, `pin-swap`, `count`, `marquee`, `draw`), исполнитель — этап 3; до него `animations.js` эти режимы пропускает, узлы стоят в конечном состоянии. Метки `data-h` — для `scripts/harmony-check.mjs`.
+
+| Компонент | Назначение | Варианты и пропы | Токены |
+|---|---|---|---|
+| `CaseCover` | обложка, блок 01 | `media.variant`: `video` (только стартовый кейс; без `media.video` — постер под ширину) · `screen` с `layout` `screen` / `screen-detail` / `phones`; `theme`, `as`; `--cover-offset` от страницы | `surface-cover-*`, `text-on-inverse` / `text-default`, `elevation-artwork` |
+| `CaseSheet` | белый лист, наезжает на закреплённую обложку | слот | `surface-default`, `section-gap` |
+| `MetaList layout=facts` | строка фактов вверху листа | вариант существующего компонента | — |
+| `CaseThesis` | метка + тезис + абзац | `label`, `thesis`, `body?`, `as` | `measure-case`, `flow-*` |
+| `CaseNumbers` | цепочка чисел со стрелками, блок 02 | `items: { value, caption }[]` | `ds-display-5xl` |
+| `CasePlate` | плашка: симметричные поля, светлая / тёмная | `tone` | `surface-plate`, `surface-plate-dark`, `space-4/12/16`, `radius-md/lg` |
+| `CaseScreen` | служебный: один экран кадра, картинка или клип | `item: ShotItem` | `radius-sm/md/lg`, `shadow-md`, `border-default` / `border-inverse` |
+| `CaseShot` | кадр по стандарту + подпись | `shot.layout`: `desktop` · `pair` · `phones`; `tone` | `measure-lead` (потолок ряда телефонов) |
+| `CaseCallout` | элемент крупно с выносками | `tone`: `note` · `issue`; `plate` | `callout-*` |
+| `CaseArtifact` | плашка со схемой `Diagram` | `artifact`, `tone`, `lang` | `--diagram-field` приравнен к плашке |
+| `CaseCarousel` | лента с краем следующего слайда, блок 05 | `slides`, `captions`, подписи кнопок | `margin-*`, `border-strong`, `motion-state` |
+| `CaseSteps` | закреплённый экран со сменой шагов, блок 06 | `label`, `items` | `section-gap` (точка закрепления) |
+| `CaseImpact` | итоговые карточки, цитата, цена решения | `cards`, `quote?`, `cost?` | `border-default`, `radius-lg` |
+| `CaseNext` | следующий кейс на его цвете, бегущая строка | `href`, `title`, `theme`, `label`, `prototype?` | `surface-cover-*`, `.ds-pressable` |
+
+- **Доступность.** Обложка-видео: кнопка паузы видима всегда, подпись меняется с действием, при reduced-motion ролик не стартует. Карусель: лента — фокусируемая область с именем, кнопки появляются только с JS, у выключенной — `disabled`. `CaseNext`: одна ссылка с именем «метка: название», копии бегущей строки `aria-hidden`. Стрелки `CaseNumbers` и номера выносок на кадре скрыты от скринридера: порядок несёт список.
+- **Нажатие.** Кнопки карусели и паузы — `:active`; `CaseNext` — `.ds-pressable`.
+- **Ловушка компилятора.** Фронтматтер, который кончается на `as Props;`, `convertToTSX` склеивает с первым тегом шаблона в generic-сигнатуру, и `astro check` теряет пропсы компонента. Обход — любая инструкция после приведения (`CaseThesis`).
 
 ## `Navbar`
 
@@ -212,6 +256,7 @@ FeaturedCase исполняет паттерн FeaturedCaseCover: одна сс�
 | `layout=inline` | В строку через разделитель — шапка кейса |
 | `layout=stacked` | Столбцом — узкий экран, подпись роли у Webflow-сборок |
 | `layout=statements` | Столбцом, метка `ds-meta-sm` над утверждением `ds-body-lg` — четыре строки компромисса в `CaseResult` |
+| `layout=facts` | Сеткой колонок: 2 → 3 от `bp-md` → все в строку от `bp-lg`; значение `ds-body-sm` — строка фактов листа кейса (`ds/screens/case.md`), 2026-10-03 |
 
 - **Токены:** `font-meta` · `text-meta` для ключа · `text-default` для значения · `border-default` + `border-width` на разделителе `layout=inline` · `space-2` / `space-4`
 - **Доступность:** размечать `<dl>` / `<dt>` / `<dd>` — связь ключа и значения должна быть машиночитаемой.
@@ -358,14 +403,15 @@ FeaturedCase исполняет паттерн FeaturedCaseCover: одна сс�
 | Оболочка маршрута | `src/layouts/PageShell.astro` — реализация паттерна `PageShell`; держит `ContactBlock` в единственном экземпляре |
 | Тексты | `src/copy/site.ts` — сквозные строки; строки экранов рядом. Слой отделён от композиции |
 | Хореография | `src/scripts/animations.js` — все пять движений словаря |
-| Компоненты | `src/components/{Navbar,TextLink,CopyEmail,MediaFrame,MediaZoom,ProjectDialog,WorkRow,MetaList,SectionHead,ProseBlock,NoteBlock,DecisionBlock,Footer,Diagram}.astro` |
+| Компоненты | `src/components/{Navbar,TextLink,CopyEmail,MediaFrame,MediaZoom,ProjectDialog,WorkRow,MetaList,SectionHead,ProseBlock,NoteBlock,DecisionBlock,Footer,Diagram}.astro`; модули кейса — `src/components/Case*.astro` (кроме `CaseArtwork`) |
 | Геометрия диаграмм | `src/lib/diagram.ts` — маршруты связей, кривые, вайрфреймы; считается на сборке |
 | Данные диаграмм | `src/data/diagrams/` — схема, README, образцы `/kit` |
 | Размеры кадров | `src/lib/media.ts` — соотношение и потолок ширины читаются из файла на сборке |
 | Производство кадров | `scripts/shoot-case-frames.mjs` (съёмка) и `scripts/trim-frames.mjs` (обрезка по содержимому) |
 | Паттерны композиции | `ds/patterns.md` — из чего собираются узлы, не ставшие компонентами |
 | Паттерны со своим файлом | `src/layouts/PageShell.astro`, `src/components/{ServiceRoutes,ScreenStack}.astro` — исполняемая запись рецепта. Сущности в каталог не добавляют: ни матрицы вариантов, ни строки здесь у них нет |
-| Витрина | `src/pages/kit.astro` — съехала с `/` 2026-08-24, корень занят `Home` |
+| Витрина | `src/pages/kit.astro` — съехала с `/` 2026-08-24, корень занят `Home`; демо-кейс модулей — `src/copy/kit-case.ts` |
+| Приёмка гармонии | `scripts/harmony-check.mjs`, `npm run check:harmony` — правила `harmony-checklist.md` §4 по меткам `data-h` |
 | Экраны | `src/pages/` — боевые маршруты. Composition map каждого — `ds/screens/<name>.md` |
 
 **Зеркала обязаны совпадать побайтово.** `ds/tokens.css` → `src/styles/tokens.css`, `ds/motion.js` → `src/scripts/motion.js`. Правка идёт в `ds/`, копия обновляется тем же коммитом. Расхождение — баг, проверяется `diff`.
@@ -393,3 +439,18 @@ Astro скоупит стили страницы атрибутом `data-astro-
 Правило приёмки простое: **нажимаемая цель без `:active` — баг.** После гейта `@media (--can-hover)` на тач-устройстве это единственный отклик, который вообще существует.
 
 **Pawly cover/thumbnail · 13.09.2026:** один реальный crop карточки подтверждённого возвращения вместо контактного листа из трёх экранов. Только этот slug и эти варианты: inset space-2, object-fit contain, исходные цвета. Hero не меняется. Точный crop и обоснование — screens/case-pawly.md, воспроизведение — scripts/build-pawly-cover.mjs.
+
+## Art direction: переносимые варианты · 03.10.2026
+
+`CaseCover`: proof `layout=interlock`, массив целых panels, отдельный gate. Два последствия сходятся к визуальному шлюзу; вертикальные поля/знак строятся из space-токенов, текст — из типографических ролей. На mobile — последовательные panels и горизонтальный шлюз. Статичный и reduced вид совпадают с концом входа.
+
+`CaseSteps`: `variant=focus`. Одна сцена в существующем DOM, целые панели разных пропорций. Desktop от bp-lg, высота от 820: общий pin с явной сменой состояния при полной непрозрачности, движение только новой панели. На tablet тезис 3xl; desktop 4xl. `desktopOnly` позволяет пропустить деталь, уже включённую в narrow-материал. Mobile, short, reduce, no-JS — нативный список; основная нумерация решений сохраняется. Текст и fixture-подписи берутся из copy. Все новые настройки — motion.coverInterlock/focusStage. Старые variants и motion-режимы сохраняются. При переносе другой кейс выбирает свои материалы и composition, автоматического включения нет.
+
+## CaseSteps · checkpoint (03.10.2026)
+
+Дополнение `composition?: 'checkpoint'`, `gate?: string`, item `scene?: 'overview' | 'workspace' | 'promise' | 'decision'` к `variant=focus`. Четыре пространственные роли на одном тёмном столе, без копий UI. Два широких кадра, правая переписка у рубежа, правое согласование напротив знака паузы. Native fallback сохраняет последовательность; mobile скрывает дополнительную desktop-переписку. Gate — редакционная подпись и декоративный знак, не кнопка. Использует surface-review, text-on-inverse, review-stop-*, существующие flow/space. Движение только animations.js / reviewStage.
+
+
+## CaseNext · единая ссылка (03.10.2026, решение владельца)
+
+Ручная пауза и pauseLabel/playLabel удалены. У секции одна цель — переход в следующий case. Hover/focus не останавливают строку. Автоматически движение работает только в видимом окне/вкладке; reduce и no-JS оставляют читаемое статичное название. Это актуальная спецификация, заменяющая исторические S2/S3 требования о ручной, hover и focus паузе.

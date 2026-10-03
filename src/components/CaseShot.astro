@@ -1,0 +1,92 @@
+---
+/**
+ * CaseShot — ds/components.md, карта ds/screens/case.md §6
+ *
+ * Кадр кейса по стандарту: экраны на плашке и подпись под ней.
+ *
+ *   layout=desktop  один десктопный экран целиком
+ *   layout=pair     десктоп и телефон одного экрана в одном кадре, одной
+ *                   высоты (правило 13: не двумя кадрами подряд)
+ *   layout=phones   2–3 телефона одной высоты в ряд
+ *
+ * Ряд раздаёт ширину пропорционально соотношению экранов (--ar у
+ * CaseScreen), поэтому высота у всех экранов ряда одна по построению.
+ * Ниже bp-md пара встаёт столбиком внутри той же плашки, телефон — в
+ * половину ширины.
+ *
+ * Подпись стоит на белом листе, не на плашке: text-muted на surface-plate
+ * дал бы 4.46:1. Одна строка, до 12 слов, обычный шрифт (правило 10).
+ */
+import CasePlate from './CasePlate.astro';
+import CaseScreen from './CaseScreen.astro';
+import type { Shot } from '../copy/cases/story';
+
+interface Props {
+  shot: Shot;
+  tone?: 'light' | 'dark';
+  class?: string;
+}
+
+const { shot, tone = 'light', class: className } = Astro.props;
+---
+
+<figure class:list={['case-shot', className]}>
+  <CasePlate tone={tone}>
+    <div class:list={['case-shot__row', `case-shot__row--${shot.layout}`]}>
+      {shot.items.map((item) => <CaseScreen item={item} />)}
+    </div>
+  </CasePlate>
+  <figcaption class="ds-body-sm case-shot__caption" data-h="caption">{shot.caption}</figcaption>
+</figure>
+
+<style>
+  .case-shot {
+    /* Верх не сбрасывается: его задаёт поток (ds-flow-lead → flow-group).
+       margin: 0 в скоупленном правиле перебивал шаг потока по специфичности. */
+    margin-inline: 0;
+    margin-block-end: 0;
+  }
+
+  .case-shot__row {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-6);
+    inline-size: 100%;
+  }
+
+  .case-shot__row > :global(.case-screen) {
+    flex: var(--ar) 1 0%;
+  }
+
+  /* Телефоны не растягиваются во всю ширину колонки: три телефона на
+     1280 px встали бы по 860 px в высоту. Потолок ряда — мера ведущего
+     абзаца, ряд стоит по центру плашки. */
+  .case-shot__row--phones {
+    max-inline-size: var(--measure-lead);
+  }
+
+  @media (--below-bp-md) {
+    .case-shot__row {
+      gap: var(--space-4);
+    }
+
+    .case-shot__row--pair {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .case-shot__row--pair > :global(.case-screen) {
+      flex: none;
+      inline-size: 100%;
+    }
+
+    .case-shot__row--pair > :global(.case-screen--phone) {
+      inline-size: 50%;
+    }
+  }
+
+  .case-shot__caption {
+    margin-block-start: var(--flow-pair);
+    color: var(--text-muted);
+  }
+</style>

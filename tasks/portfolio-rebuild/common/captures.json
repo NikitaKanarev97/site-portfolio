@@ -1,0 +1,653 @@
+{
+  "generated": "2026-10-04",
+  "sources": [
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/tokens/primitives.css",
+      "sha256": "e4f103c14e1838c83912896aff1d7d5034170dfb455d47ef11b064580b8635aa"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/tokens/semantics.css",
+      "sha256": "8ba7da701d630b3fc26bf596d1ed8c76a83c3c9745f268163d81ca6cfcb0d780"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/tokens/typography.css",
+      "sha256": "c251b0938f1759a40990d790438c0b302e9fff86da7ab69abf2acdec76cd8017"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/ResolutionRow/ResolutionRow.tsx",
+      "sha256": "e0c48fed7b648c444e31ee929b9fa372956ff1fc63607b2edfdb322b7ebb1e9a"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/ResolutionRow/ResolutionRow.stories.tsx",
+      "sha256": "305d5b3c8eb8f0c371ed18db578eeb2e2357cce3adb41981bee8d5239765874e"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/FileUpload/FileUpload.tsx",
+      "sha256": "2fa60296c5ce9fa7d2ff2518ec71e03bb1f1c334bba594c6d7afdbd02d9b464d"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/FileUpload/FileUpload.stories.tsx",
+      "sha256": "85acb8defa7e8a9cf1aa03fa8636cb1c16426c0f2f9c7a8b26d022a30114cd5c"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/Availability/Availability.tsx",
+      "sha256": "2a5abec566a017a22efda53b1a311e65750965a9490ae6c56abfaa801bbc2c71"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/Availability/Availability.stories.tsx",
+      "sha256": "0364ef003cab944fdab05f4ef5f31efab546d1a0476dcda134ac3aa810958373"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/QuantityStepper/QuantityStepper.tsx",
+      "sha256": "fa72eaabd5177540dcf4e23a63801672e13fec00c3fd331507acea9a0c013d78"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/QuantityStepper/QuantityStepper.stories.tsx",
+      "sha256": "414015d36f9b5fbb2dec87235d18e76913abe4713c5ef20deb09e6641da6649a"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/storybook-static/index.json",
+      "sha256": "1ad32cb910dce9d3265ce7ab584cd806757f12b842b5176363047b71294f8179"
+    }
+  ],
+  "media": [
+    {
+      "mediaId": "portal-fileupload-empty",
+      "file": "/media/rebuild/common/portal/fileupload-empty-480.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-fileupload--empty",
+      "viewport": {
+        "width": 484,
+        "height": 1200
+      },
+      "componentWidth": 480,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 968,
+      "height": 478,
+      "sha256": "919b77877542a2ce573cc9fc6f7a8e4605c688c2ed0916079851ea17eed81b33",
+      "visibleText": "Drop the XLS specification here\n\nXLSX or XLS, up to 10 MB. Columns are mapped after upload — the file does not need a template.\n\nBrowse files",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-fileupload-empty",
+      "file": "/media/rebuild/common/portal/fileupload-empty-288.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-fileupload--empty",
+      "viewport": {
+        "width": 292,
+        "height": 1200
+      },
+      "componentWidth": 288,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 584,
+      "height": 514,
+      "sha256": "b7d419607a684b0844fd02196a57541794b9032aaff552bbcdb4c215c6955eee",
+      "visibleText": "Drop the XLS specification here\n\nXLSX or XLS, up to 10 MB. Columns are mapped after upload — the file does not need a template.\n\nBrowse files",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-fileupload-complete",
+      "file": "/media/rebuild/common/portal/fileupload-complete-480.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-fileupload--complete",
+      "viewport": {
+        "width": 484,
+        "height": 1200
+      },
+      "componentWidth": 480,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 968,
+      "height": 328,
+      "sha256": "499aec8434cf04e580e1154e9151dbf667df28a50429c6f1f27b4ef7d65c3abd",
+      "visibleText": "office_north_v8.xlsx\n\n48 lines read · 41 matched exactly · 7 need a decision\n\nOpen resolution center",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-fileupload-complete",
+      "file": "/media/rebuild/common/portal/fileupload-complete-288.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-fileupload--complete",
+      "viewport": {
+        "width": 292,
+        "height": 1200
+      },
+      "componentWidth": 288,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 584,
+      "height": 370,
+      "sha256": "cbfdbce24dbc1e4341ead09b4c01891e733549fd21788d7d8a46539e9fee8e70",
+      "visibleText": "office_north_v8.xlsx\n\n48 lines read · 41 matched exactly · 7 need a decision\n\nOpen resolution center",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-fileupload-error",
+      "file": "/media/rebuild/common/portal/fileupload-error-480.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-fileupload--error",
+      "viewport": {
+        "width": 484,
+        "height": 1200
+      },
+      "componentWidth": 480,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 968,
+      "height": 370,
+      "sha256": "cb1266bce02fd34d901bd4c2891b7ab5b663b8b8061eb098dbfbd6d4c5502311",
+      "visibleText": "office_north_v8.xlsx\n\nThe file could not be read: row 1 has no header. Fix the header row and upload again.\n\nUpload another file",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-fileupload-error",
+      "file": "/media/rebuild/common/portal/fileupload-error-288.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-fileupload--error",
+      "viewport": {
+        "width": 292,
+        "height": 1200
+      },
+      "componentWidth": 288,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 584,
+      "height": 412,
+      "sha256": "c1da31c26d99f4b6eb6dc8a722cd0ee0669286a8642b96783f90e9a58133b900",
+      "visibleText": "office_north_v8.xlsx\n\nThe file could not be read: row 1 has no header. Fix the header row and upload again.\n\nUpload another file",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-resolutionrow-ambiguous",
+      "file": "/media/rebuild/common/portal/resolutionrow-ambiguous-480.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-resolutionrow--ambiguous",
+      "viewport": {
+        "width": 484,
+        "height": 1200
+      },
+      "componentWidth": 480,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 968,
+      "height": 594,
+      "sha256": "6b10ba055a62ea1ac8b221108273acf7d3afc90b4e0d42f714da2de14fc7191f",
+      "visibleText": "SOURCE LINE\nbullet camera 4mp korvex\n4 MP object-detect bullet camera · KX-2CB4046F2-I\nQUANTITY\n6\npcs\nIDENTITY\nAmbiguous\nEXPLANATION\n3 catalogue items match this description\nChoose item",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-resolutionrow-ambiguous",
+      "file": "/media/rebuild/common/portal/resolutionrow-ambiguous-288.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-resolutionrow--ambiguous",
+      "viewport": {
+        "width": 292,
+        "height": 1200
+      },
+      "componentWidth": 288,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 584,
+      "height": 680,
+      "sha256": "6887581ad105721bc9917e45908072c10781465baccdf12ca9c3a652666e84c2",
+      "visibleText": "SOURCE LINE\nbullet camera 4mp korvex\n4 MP object-detect bullet camera · KX-2CB4046F2-I\nQUANTITY\n6\npcs\nIDENTITY\nAmbiguous\nEXPLANATION\n3 catalogue items match this description\nChoose item",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-resolutionrow-missing",
+      "file": "/media/rebuild/common/portal/resolutionrow-missing-480.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-resolutionrow--missing",
+      "viewport": {
+        "width": 484,
+        "height": 1200
+      },
+      "componentWidth": 480,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 968,
+      "height": 552,
+      "sha256": "1bbe2873fee20761fe3738740fbe3fcfc9d316337cb3b23a7d1764f372066947",
+      "visibleText": "SOURCE LINE\nKX-9900ZZ mounting kit\nNo match\nQUANTITY\n4\npcs\nIDENTITY\nMissing\nEXPLANATION\nNo catalogue item matches this line\nRequest item",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-resolutionrow-missing",
+      "file": "/media/rebuild/common/portal/resolutionrow-missing-288.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-resolutionrow--missing",
+      "viewport": {
+        "width": 292,
+        "height": 1200
+      },
+      "componentWidth": 288,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 584,
+      "height": 644,
+      "sha256": "57dceed6dc45299724c0fb8fc57b5d36a7979ad17e345a34119a147c419b0e04",
+      "visibleText": "SOURCE LINE\nKX-9900ZZ mounting kit\nNo match\nQUANTITY\n4\npcs\nIDENTITY\nMissing\nEXPLANATION\nNo catalogue item matches this line\nRequest item",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-resolutionrow-error",
+      "file": "/media/rebuild/common/portal/resolutionrow-error-480.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-resolutionrow--error",
+      "viewport": {
+        "width": 484,
+        "height": 1200
+      },
+      "componentWidth": 480,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 968,
+      "height": 594,
+      "sha256": "0c61186c7e2565078b63cf3dc56d2b1caa00f0260547a17f81e8d321f3e44061",
+      "visibleText": "SOURCE LINE\n=SUM(B2:B14)\n4 MP object-detect bullet camera · KX-2CB4046F2-I\nQUANTITY\n—\nIDENTITY\nError\nEXPLANATION\nThe quantity column could not be read for this line\nFix line",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-resolutionrow-error",
+      "file": "/media/rebuild/common/portal/resolutionrow-error-288.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-resolutionrow--error",
+      "viewport": {
+        "width": 292,
+        "height": 1200
+      },
+      "componentWidth": 288,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 584,
+      "height": 680,
+      "sha256": "5500e92308af5866800ba0fa952ef15f5abe2bfb65983d9db7b1e714eb9897f8",
+      "visibleText": "SOURCE LINE\n=SUM(B2:B14)\n4 MP object-detect bullet camera · KX-2CB4046F2-I\nQUANTITY\n—\nIDENTITY\nError\nEXPLANATION\nThe quantity column could not be read for this line\nFix line",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-resolutionrow-confirmed-from-ambiguous",
+      "file": "/media/rebuild/common/portal/resolutionrow-confirmed-from-ambiguous-480.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-resolutionrow--confirmed-from-ambiguous",
+      "viewport": {
+        "width": 484,
+        "height": 1200
+      },
+      "componentWidth": 480,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 968,
+      "height": 586,
+      "sha256": "a1310889bb956d87088a00250b7e2ce62574f18b75fc5078200ddd56469f1af7",
+      "visibleText": "SOURCE LINE\nbullet camera 4mp korvex\n4 MP object-detect bullet camera · KX-2CB4046F2-I\nQUANTITY\n12\npcs\nIDENTITY\nConfirmed\nwas Ambiguous\nEXPLANATION\nHousing and lens differ between them\nUndo",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-resolutionrow-confirmed-from-ambiguous",
+      "file": "/media/rebuild/common/portal/resolutionrow-confirmed-from-ambiguous-288.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-resolutionrow--confirmed-from-ambiguous",
+      "viewport": {
+        "width": 292,
+        "height": 1200
+      },
+      "componentWidth": 288,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 584,
+      "height": 714,
+      "sha256": "0c9f8f1460916591514c3bdb7649b6c0afdc31088e6070e4f129c3f749f72dd4",
+      "visibleText": "SOURCE LINE\nbullet camera 4mp korvex\n4 MP object-detect bullet camera · KX-2CB4046F2-I\nQUANTITY\n12\npcs\nIDENTITY\nConfirmed\nwas Ambiguous\nEXPLANATION\nHousing and lens differ between them\nUndo",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-availability-verified",
+      "file": "/media/rebuild/common/portal/availability-verified-480.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-availability--verified",
+      "viewport": {
+        "width": 484,
+        "height": 1200
+      },
+      "componentWidth": 480,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 304,
+      "height": 106,
+      "sha256": "45986ca80a02385bfd174b0421a677c8f1ab5b513ee5d0b6161d487394fd7d85",
+      "visibleText": "24 pcs · Moscow DC\nShips in 2 business days",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-availability-verified",
+      "file": "/media/rebuild/common/portal/availability-verified-288.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-availability--verified",
+      "viewport": {
+        "width": 292,
+        "height": 1200
+      },
+      "componentWidth": 288,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 304,
+      "height": 106,
+      "sha256": "45986ca80a02385bfd174b0421a677c8f1ab5b513ee5d0b6161d487394fd7d85",
+      "visibleText": "24 pcs · Moscow DC\nShips in 2 business days",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-availability-stale",
+      "file": "/media/rebuild/common/portal/availability-stale-480.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-availability--stale",
+      "viewport": {
+        "width": 484,
+        "height": 1200
+      },
+      "componentWidth": 480,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 332,
+      "height": 150,
+      "sha256": "d7f65b7232e649ebb75cfb430e999f1c8ce0c0dcf9ce522716d7268b1d5fcf64",
+      "visibleText": "24 pcs · Moscow DC\nWMS · 21 Aug 2026, 18:30\nSTALE",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-availability-stale",
+      "file": "/media/rebuild/common/portal/availability-stale-288.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-availability--stale",
+      "viewport": {
+        "width": 292,
+        "height": 1200
+      },
+      "componentWidth": 288,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 332,
+      "height": 150,
+      "sha256": "d7f65b7232e649ebb75cfb430e999f1c8ce0c0dcf9ce522716d7268b1d5fcf64",
+      "visibleText": "24 pcs · Moscow DC\nWMS · 21 Aug 2026, 18:30\nSTALE",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-availability-not-confirmed",
+      "file": "/media/rebuild/common/portal/availability-not-confirmed-480.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-availability--not-confirmed",
+      "viewport": {
+        "width": 484,
+        "height": 1200
+      },
+      "componentWidth": 480,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 256,
+      "height": 110,
+      "sha256": "f485d286523c5489bfc996015ac2fd4fd8acf9006a1eea837c0ff083c7aed291",
+      "visibleText": "Not confirmed\nWMS · no response",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-availability-not-confirmed",
+      "file": "/media/rebuild/common/portal/availability-not-confirmed-288.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-availability--not-confirmed",
+      "viewport": {
+        "width": 292,
+        "height": 1200
+      },
+      "componentWidth": 288,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 256,
+      "height": 110,
+      "sha256": "f485d286523c5489bfc996015ac2fd4fd8acf9006a1eea837c0ff083c7aed291",
+      "visibleText": "Not confirmed\nWMS · no response",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-quantitystepper-default",
+      "file": "/media/rebuild/common/portal/quantitystepper-default-480.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-quantitystepper--default",
+      "viewport": {
+        "width": 484,
+        "height": 1200
+      },
+      "componentWidth": 480,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 284,
+      "height": 104,
+      "sha256": "adb043ba96ec7df161a9b290d6938a98ea7d1188af9c806acd740c38e53665c3",
+      "visibleText": "Quantity 12",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-quantitystepper-default",
+      "file": "/media/rebuild/common/portal/quantitystepper-default-288.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-quantitystepper--default",
+      "viewport": {
+        "width": 292,
+        "height": 1200
+      },
+      "componentWidth": 288,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 284,
+      "height": 104,
+      "sha256": "adb043ba96ec7df161a9b290d6938a98ea7d1188af9c806acd740c38e53665c3",
+      "visibleText": "Quantity 12",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-quantitystepper-at-minimum",
+      "file": "/media/rebuild/common/portal/quantitystepper-at-minimum-480.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-quantitystepper--at-minimum",
+      "viewport": {
+        "width": 484,
+        "height": 1200
+      },
+      "componentWidth": 480,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 284,
+      "height": 104,
+      "sha256": "48e90ea87d1a230acb1cc4600e165a76a94862e34b506d2af1f8ef1ad35819bb",
+      "visibleText": "Quantity 0",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-quantitystepper-at-minimum",
+      "file": "/media/rebuild/common/portal/quantitystepper-at-minimum-288.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-quantitystepper--at-minimum",
+      "viewport": {
+        "width": 292,
+        "height": 1200
+      },
+      "componentWidth": 288,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 284,
+      "height": 104,
+      "sha256": "48e90ea87d1a230acb1cc4600e165a76a94862e34b506d2af1f8ef1ad35819bb",
+      "visibleText": "Quantity 0",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-quantitystepper-disabled",
+      "file": "/media/rebuild/common/portal/quantitystepper-disabled-480.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-quantitystepper--disabled",
+      "viewport": {
+        "width": 484,
+        "height": 1200
+      },
+      "componentWidth": 480,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 284,
+      "height": 104,
+      "sha256": "b9c9d34c476f43922b0979f30abe8cec9568d7ad3c6ff2ac5321326017e47abc",
+      "visibleText": "Quantity 12",
+      "errors": []
+    },
+    {
+      "mediaId": "portal-quantitystepper-disabled",
+      "file": "/media/rebuild/common/portal/quantitystepper-disabled-288.webp",
+      "source": "D:/Claude-projects/b2b-dssl/storybook-static/iframe.html",
+      "story": "components-domain-quantitystepper--disabled",
+      "viewport": {
+        "width": 292,
+        "height": 1200
+      },
+      "componentWidth": 288,
+      "bleed": 2,
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "origin": "actual accepted domain component",
+      "selection": "A-DS / HA-DS-01",
+      "captureChromeAdaptation": "inline transparent canvas overrides Storybook background; original inherited source surface retained only within the actual component contour; 2 CSS px alpha bleed; decorator constrained to component viewport",
+      "width": 284,
+      "height": 104,
+      "sha256": "b9c9d34c476f43922b0979f30abe8cec9568d7ad3c6ff2ac5321326017e47abc",
+      "visibleText": "Quantity 12",
+      "errors": []
+    }
+  ]
+}

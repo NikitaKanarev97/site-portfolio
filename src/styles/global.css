@@ -189,11 +189,40 @@ body.ds-scroll-locked { overflow: hidden; }
    ============================================================ */
 
 @media (prefers-reduced-motion: no-preference) {
+  ::view-transition-group(case-agent),
+  ::view-transition-group(case-portal) {
+    overflow: clip;
+    animation-duration: var(--case-transition-duration);
+    animation-timing-function: var(--case-transition-ease);
+  }
+  ::view-transition-group(case-agent) { background: var(--surface-cover-agent); }
+  ::view-transition-group(case-portal) { background: var(--surface-cover-portal); }
+  ::view-transition-old(case-agent), ::view-transition-old(case-portal) {
+    inline-size: 100%;
+    block-size: auto;
+    animation: case-cover-out var(--case-transition-out) var(--case-transition-ease) both;
+    mix-blend-mode: normal;
+  }
+  ::view-transition-new(case-agent), ::view-transition-new(case-portal) {
+    inline-size: 100%;
+    block-size: auto;
+    animation: case-cover-in var(--case-transition-in) var(--case-transition-ease) var(--case-transition-out) both;
+    mix-blend-mode: normal;
+  }
   .js [data-motion='reveal-text'],
   .js [data-motion='fade'],
   .js [data-motion='rise'] { opacity: 0; }
 
   .js [data-motion='reveal-media'] .ds-media-mask { clip-path: inset(100% 0 0 0); }
+}
+
+@keyframes case-cover-out { to { opacity: 0; } }
+@keyframes case-cover-in { from { opacity: 0; } to { opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) {
+    animation: none !important;
+  }
 }
 
 /* Маска строки для набора. Класс вешает SplitText, размеры не задаются:

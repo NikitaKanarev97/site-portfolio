@@ -1,0 +1,53 @@
+---
+/**
+ * CaseArtifact — ds/components.md, карта ds/screens/case.md §8
+ *
+ * Лист артефакта: схема из этапа 1 (Diagram) на плашке кейса и подпись.
+ * Карта экранов, user flow, карта прототипа, лист библиотеки — всё из
+ * файла данных, нотацией ds/patterns.md §Диаграммы.
+ *
+ * Поле схемы приравнено к плашке (CasePlate переопределяет
+ * --diagram-field), поэтому плашки в плашке нет. Тёмная плашка тёмного
+ * продукта даёт схеме тёмную тему тем же атрибутом.
+ *
+ * На узкой ширине схема прокручивается внутри своей области — это уже
+ * поведение Diagram; плашка его не ломает и за край не выходит.
+ */
+import CasePlate from './CasePlate.astro';
+import Diagram from './Diagram.astro';
+import type { Artifact } from '../copy/cases/story';
+
+interface Props {
+  artifact: Artifact;
+  tone?: 'light' | 'dark';
+  lang?: 'en' | 'ru';
+  class?: string;
+}
+
+const { artifact, tone = 'light', lang = 'en', class: className } = Astro.props;
+---
+
+<figure class:list={['case-artifact-sheet', className]} data-artifact-origin={artifact.source?.kind} data-source-ref={artifact.source?.ref}>
+  <CasePlate tone={tone}>
+    <Diagram data={artifact.data} lang={lang} class="case-artifact-sheet__diagram" />
+  </CasePlate>
+  <figcaption class="ds-body-sm case-artifact-sheet__caption" data-h="caption">{artifact.caption}</figcaption>
+</figure>
+
+<style>
+  .case-artifact-sheet {
+    /* Верх не сбрасывается: его задаёт поток (ds-flow-lead → flow-group).
+       margin: 0 в скоупленном правиле перебивал шаг потока по специфичности. */
+    margin-inline: 0;
+    margin-block-end: 0;
+  }
+
+  .case-artifact-sheet :global(.case-artifact-sheet__diagram) {
+    inline-size: 100%;
+  }
+
+  .case-artifact-sheet__caption {
+    margin-block-start: var(--flow-pair);
+    color: var(--text-muted);
+  }
+</style>

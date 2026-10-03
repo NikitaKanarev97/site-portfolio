@@ -35,6 +35,13 @@
  * ровно «внешняя ссылка», и двух стрелок подряд в одной строке быть не
  * должно. Ключ и значение остаются dt/dd: ссылка меняет вид значения, а
  * не природу пары.
+ *
+ * layout=facts добавлен 2026-10-03, этап 2 PLAN-CHATS.md. Носитель —
+ * строка фактов вверху белого листа кейса (ds/screens/case.md §8, модуль
+ * CaseFacts). Пары встают колонками сетки: 2 до bp-md, 3 до bp-lg, дальше
+ * все в одну строку. Значение — обычный шрифт ds-body-sm: в строке фактов
+ * стоят фразы («Sole designer, research to prototype»), а моно оставлен
+ * меткам и числам (harmony-checklist.md, правило 8).
  */
 interface MetaItem {
   term: string;
@@ -46,7 +53,7 @@ interface MetaItem {
 
 interface Props {
   items: MetaItem[];
-  layout?: 'inline' | 'stacked' | 'statements';
+  layout?: 'inline' | 'stacked' | 'statements' | 'facts';
   /** Снять Набор в statements: блок идёт частью чужого такта. */
   motion?: boolean;
   class?: string;
@@ -58,7 +65,7 @@ const { items, layout = 'inline', motion = true, class: className } = Astro.prop
 
 const isStatements = layout === 'statements';
 const termClass = isStatements ? 'ds-meta-sm' : 'ds-meta-xs';
-const valueClass = isStatements ? 'ds-body-lg' : 'ds-meta-sm';
+const valueClass = isStatements ? 'ds-body-lg' : layout === 'facts' ? 'ds-body-sm' : 'ds-meta-sm';
 ---
 
 <dl class:list={['meta-list', `meta-list--${layout}`, className]}>
@@ -106,6 +113,26 @@ const valueClass = isStatements ? 'ds-body-lg' : 'ds-meta-sm';
     flex-direction: column;
     gap: var(--space-8);
     max-width: var(--measure-lead);
+  }
+
+  .meta-list--facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-6) var(--gutter);
+  }
+
+  @media (--bp-md) {
+    .meta-list--facts {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (--bp-lg) {
+    .meta-list--facts {
+      grid-template-columns: none;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(0, 1fr);
+    }
   }
 
   .meta-list__pair {

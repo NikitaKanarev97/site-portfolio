@@ -1,0 +1,492 @@
+---
+/**
+ * CaseCover — ds/components.md, карта ds/screens/case.md §4
+ *
+ * Обложка кейса (блок 01): название, строка итога до 25 слов и продукт на
+ * цвете кейса. Выбор варианта — по содержанию, ds/screens/case.md §S3:
+ *
+ *   proof   целый смысловой фрагмент или несколько реальных панелей,
+ *           статичная композиция остаётся доступной при любом motion
+ *
+ *   video   отдельное производство с реальным UI, постером и паузой
+ *   screen  остальные четыре: название на цвете, ниже кадр продукта на том
+ *           же цвете. Раскладка своя у каждого — media.layout:
+ *           screen (один экран), screen-detail (экран и фрагмент рядом,
+ *           не поверх — правило 1), phones (2–3 телефона группой)
+ *
+ * Цвет кейса — surface-cover-*, тон текста из caseThemes (контраст —
+ * карта §4). Текст стоит на чистом цвете, поверх скриншота — никогда.
+ *
+ * В потоке по умолчанию; motion включает sticky, только когда обложка
+ * помещается в окно и следом стоит CaseSheet. Высокая читается целиком.
+ *
+ * Кадр в варианте screen целиком внутри обложки: ряд экранов вписан в
+ * остаток высоты под названием через контейнерные единицы — ширина ряда
+ * не больше, чем позволяет высота при его суммарном соотношении.
+ *
+ * Ролик: muted, playsinline, loop, постер. Первый экран, поэтому
+ * preload="auto", в отличие от клипов MediaFrame. Кнопка паузы видима
+ * всегда (WCAG 2.2.2); при reduced-motion ролик не стартует, стоит постер.
+ *
+ * Исполнитель движения и жизненного цикла видео — animations.js.
+ *
+ * Классы — case-opening, а не case-cover: имя занято первым визуалом
+ * старого шаблона [slug].astro, и npm run check:css, который сводит CSS
+ * всех страниц, считал бы правило мёртвым. Шаблоны живут рядом до этапов 7–11.
+ */
+import CaseScreen from './CaseScreen.astro';
+import { frameSize } from '../lib/media';
+import { caseThemes, type CaseTheme, type CoverMedia } from '../copy/cases/story';
+import { px } from '../lib/tokens.ts';
+
+interface Props {
+  theme: CaseTheme;
+  title: string;
+  outcome: string;
+  media: CoverMedia;
+  /** На странице кейса — h1; на витрине обложек несколько, там h2. */
+  as?: 'h1' | 'h2';
+  pauseLabel?: string;
+  playLabel?: string;
+  class?: string;
+  transitionKey?: string;
+}
+
+const {
+  theme,
+  title,
+  outcome,
+  media,
+  as: Heading = 'h1',
+  pauseLabel = 'Pause video',
+  playLabel = 'Play video',
+  class: className,
+  transitionKey,
+} = Astro.props as Props;
+const { surface, tone } = caseThemes[theme];
+/* Постер без ролика (до этапа 4) — своя композиция под ширину: широкий от
+   bp-xl, средний от bp-md, узкий ниже. Пороги — из токенов, как у
+   MediaFrame. */
+const poster = media.variant === 'video' && !media.video;
+const NARROW_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
+const MID_MEDIA = `(max-width: ${px('bp-xl') - 1}px)`;
+
+let sum = 0;
+let count = 0;
+if (media.variant === 'screen') {
+  count = media.items.length;
+  for (const item of media.items) {
+    const size = await frameSize(item.src);
+    sum += size ? size.width / size.height : item.device === 'phone' ? 390 / 844 : 16 / 10;
+  }
+}
+---
+
+<section
+  class:list={['case-opening', `case-opening--${media.variant}`, media.variant === 'proof' && media.layout === 'interlock' && 'case-opening--interlock', poster && 'case-opening--poster', className]}
+  data-tone={tone}
+  style={`--cover-surface: ${surface}`}
+  transition:name={transitionKey}
+  transition:animate={transitionKey ? 'initial' : 'none'}
+  data-case-cover={transitionKey}
+  data-motion={media.variant === 'proof' && media.panels?.length ? (media.layout === 'interlock' ? 'cover-interlock' : 'cover-proof') : undefined}
+>
+  {
+    media.variant === 'proof' ? (
+      <div class="ds-container case-opening__proof">
+        <p class="ds-meta-xs case-opening__eyebrow">{media.eyebrow}</p>
+        <div class="case-opening__proof-head">
+          <Heading class="ds-display-7xl case-opening__title" data-motion="lines">{title}</Heading>
+          <p class:list={[media.layout === 'interlock' ? 'ds-heading-4xl' : 'ds-heading-xl', 'case-opening__proof-lead']} data-h="lead" data-cover-lead>{outcome}</p>
+        </div>
+        <div class="case-opening__proof-media">
+          {media.panels?.length ? (
+            <div class="case-opening__panels">
+              {media.panels.map((panel, i) => <>
+                {media.layout === 'interlock' && i === 1 && <div class="case-opening__gate" data-cover-gate><span class="case-opening__gate-line" aria-hidden="true" /><p class="ds-meta-xs">{media.gate}</p></div>}
+                <div data-cover-panel><CaseScreen item={panel} loading="eager" /></div>
+              </>)}
+            </div>
+          ) : <CaseScreen item={media.shot} loading="eager" />}
+        </div>
+        <p class="ds-body-sm case-opening__proof-caption" data-h="caption">{media.caption}</p>
+      </div>
+    ) : media.variant === 'video' && !media.video ? (
+      <>
+        <picture>
+          {media.posterNarrow && <source media={NARROW_MEDIA} srcset={media.posterNarrow} />}
+          {media.posterMid && <source media={MID_MEDIA} srcset={media.posterMid} />}
+          <img
+            class="case-opening__video case-opening__poster"
+            src={media.poster}
+            alt={media.alt}
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+            data-motion="fade-image"
+          />
+        </picture>
+        <div class="ds-container case-opening__head case-opening__head--over">
+          <Heading class="ds-display-7xl case-opening__title" data-motion="lines">
+            {title}
+          </Heading>
+          <p class="ds-heading-xl case-opening__outcome" data-h="lead">
+            {outcome}
+          </p>
+        </div>
+      </>
+    ) : media.variant === 'video' ? (
+      <>
+        <video
+          class="case-opening__video"
+          muted
+          playsinline
+          loop
+          preload="auto"
+          poster={media.poster}
+          aria-label={media.alt}
+          data-cover-video
+        >
+          <source src={`${media.video}.webm`} type="video/webm" />
+          <source src={`${media.video}.mp4`} type="video/mp4" />
+        </video>
+        <div class="ds-container case-opening__head case-opening__head--over">
+          <Heading class="ds-display-7xl case-opening__title" data-motion="lines">
+            {title}
+          </Heading>
+          <p class="ds-heading-xl case-opening__outcome" data-h="lead">
+            {outcome}
+          </p>
+        </div>
+        <button
+          type="button"
+          class="case-opening__pause"
+          data-cover-pause
+          data-label-pause={pauseLabel}
+          data-label-play={playLabel}
+          aria-label={pauseLabel}
+          hidden
+        >
+          <span class="case-opening__icon" aria-hidden="true" />
+        </button>
+      </>
+    ) : (
+      <div class="ds-container case-opening__inner">
+        <div class="case-opening__head">
+          <Heading class="ds-display-6xl case-opening__title" data-motion="lines">
+            {title}
+          </Heading>
+          <p class="ds-heading-xl case-opening__outcome" data-h="lead">
+            {outcome}
+          </p>
+        </div>
+        <div class="case-opening__media">
+          <div
+            class:list={['case-opening__row', `case-opening__row--${media.layout}`]}
+            style={`--sum: ${sum.toFixed(4)}; --n: ${count}`}
+          >
+            {media.items.map((item) => (
+              <CaseScreen item={item} loading="eager" />
+            ))}
+          </div>
+        </div>
+      </div>
+    )
+  }
+</section>
+
+<style>
+  .case-opening {
+    position: relative;
+    inset-block-start: 0;
+    z-index: 0;
+    /* --cover-offset — высота того, что стоит над обложкой в первом экране
+       (навбар в потоке). Ставит страница; без него обложка в окно целиком,
+       и название внизу уходит за сгиб на высоту навбара. */
+    block-size: calc(100svh - var(--cover-offset, 0px));
+    overflow: clip;
+    background: var(--cover-surface);
+    color: var(--text-default);
+  }
+
+  .case-opening[data-tone='dark'] {
+    color: var(--text-on-inverse);
+  }
+
+  .case-opening__title {
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .case-opening__outcome {
+    margin: var(--flow-node) 0 0;
+    max-inline-size: var(--measure-lead);
+    text-wrap: pretty;
+  }
+
+  .case-opening--proof {
+    block-size: auto;
+    min-block-size: calc(100svh - var(--cover-offset, 0px));
+  }
+
+  .case-opening__proof {
+    padding-block: var(--flow-group);
+  }
+
+  .case-opening__eyebrow {
+    margin: 0;
+  }
+
+  .case-opening__proof-head {
+    margin-block-start: var(--flow-node);
+  }
+
+  .case-opening__proof-lead {
+    margin: var(--flow-node) 0 0;
+    max-inline-size: var(--measure-case);
+    text-wrap: pretty;
+  }
+
+  .case-opening__proof-media {
+    margin-block-start: var(--flow-group);
+    max-inline-size: var(--measure-lead);
+    margin-inline: auto;
+  }
+
+  .case-opening__proof-caption {
+    margin: var(--flow-node) 0 0;
+    text-align: center;
+  }
+
+  .case-opening__panels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: var(--space-6);
+  }
+
+  @media (--below-bp-md) {
+    .case-opening__panels {
+      grid-template-columns: 1fr;
+      gap: var(--space-3);
+    }
+  }
+
+  @media (--bp-xl) {
+    .case-opening__proof-head {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: var(--space-12);
+      align-items: end;
+    }
+    .case-opening__proof-lead {
+      margin: 0;
+    }
+    .case-opening__proof-media {
+      max-inline-size: calc(var(--measure-lead) + var(--space-48));
+    }
+  }
+
+  /* ---------- video ---------- */
+
+  /* A human gate connects two whole consequences. The gap carries the story. */
+  .case-opening--interlock .case-opening__proof { padding-block: var(--flow-text); }
+  .case-opening--interlock .case-opening__proof-head { margin-block-start: var(--flow-pair); }
+  .case-opening--interlock .case-opening__proof-media {
+    max-inline-size: none;
+    margin-block-start: var(--flow-text);
+  }
+  .case-opening--interlock .case-opening__proof-caption { margin-block-start: var(--flow-text); }
+  .case-opening--interlock .case-opening__panels {
+    grid-template-columns: 5fr 2fr 5fr;
+    align-items: center;
+    gap: var(--space-8);
+    padding-block: var(--flow-pair) var(--flow-text);
+  }
+  .case-opening--interlock [data-cover-panel]:first-child {
+    transform: rotate(-3deg);
+    transform-origin: right center;
+  }
+  .case-opening--interlock [data-cover-panel]:last-child {
+    margin-block-start: var(--flow-block);
+    transform: rotate(3deg);
+    transform-origin: left center;
+  }
+  .case-opening__gate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+    text-align: center;
+  }
+  .case-opening__gate p { margin: 0; }
+  .case-opening__gate-line {
+    inline-size: var(--space-12);
+    block-size: var(--space-32);
+    border-inline: var(--space-3) solid currentColor;
+  }
+  @media (--below-bp-md) {
+    .case-opening--interlock .case-opening__panels {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+      padding-block: 0;
+    }
+    .case-opening--interlock [data-cover-panel]:first-child,
+    .case-opening--interlock [data-cover-panel]:last-child {
+      transform: none;
+      margin-block-start: 0;
+    }
+    .case-opening__gate { flex-direction: row; justify-content: center; }
+    .case-opening__gate-line { block-size: var(--space-6); inline-size: var(--space-3); border-inline-width: var(--border-width); }
+  }
+
+  .case-opening__video {
+    position: absolute;
+    inset: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  /* Постер собран под обложку: экраны в верхней части, низ — цвет кейса.
+     contain + фон постера, равный цвету обложки: поля невидимы на любой
+     пропорции окна, а экраны не режутся краем. */
+  .case-opening__poster {
+    object-fit: contain;
+    object-position: center top;
+  }
+
+  /* Под названием ролик уходит в цвет кейса. Ролик этапа 4 снимается с
+     пустой нижней третью, переход страхует, если кадр всё же туда зайдёт:
+     название не должно стоять поверх интерфейса. Это не подсветка поверх
+     экрана, а продолжение поля обложки. */
+  .case-opening--video:not(.case-opening--poster)::after {
+    content: '';
+    position: absolute;
+    inset-inline: 0;
+    inset-block-end: 0;
+    block-size: 50%;
+    background: linear-gradient(to bottom, transparent, var(--cover-surface) 70%);
+    pointer-events: none;
+  }
+
+  .case-opening__head--over {
+    z-index: 1;
+    position: absolute;
+    inset-inline: 0;
+    inset-block-end: 0;
+    padding-block-end: var(--flow-group);
+  }
+
+  .case-opening__pause {
+    z-index: 1;
+    position: absolute;
+    inset-block-start: var(--space-6);
+    inset-inline-end: var(--space-6);
+    display: inline-grid;
+    place-items: center;
+    inline-size: var(--space-12);
+    block-size: var(--space-12);
+    padding: 0;
+    border: var(--border-width) solid currentColor;
+    border-radius: 50%;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .case-opening__pause:active {
+    transform: scale(var(--motion-press-scale));
+  }
+
+  .case-opening__pause[hidden] {
+    display: none;
+  }
+
+  /* Значок показывает действие кнопки: две полосы — пауза, треугольник —
+     воспроизвести. Рисуется рамками, без иконочного шрифта. */
+  .case-opening__icon {
+    inline-size: var(--space-3);
+    block-size: var(--space-4);
+    border-inline: var(--space-1) solid currentColor;
+  }
+
+  .case-opening__pause[data-state='paused'] .case-opening__icon {
+    inline-size: 0;
+    block-size: 0;
+    border-inline: 0;
+    border-block: var(--space-2) solid transparent;
+    border-inline-start: var(--space-3) solid currentColor;
+    translate: calc(var(--space-1) / 2) 0;
+  }
+
+  /* ---------- screen ---------- */
+
+  .case-opening__inner {
+    display: flex;
+    flex-direction: column;
+    block-size: 100%;
+    padding-block: var(--flow-group);
+  }
+
+  .case-opening__media {
+    container-type: size;
+    flex: 1;
+    min-block-size: 0;
+    margin-block-start: var(--flow-group);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .case-opening__row {
+    --gaps: calc((var(--n) - 1) * var(--space-6));
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-6);
+    inline-size: min(100cqw, calc(100cqh * var(--sum) + var(--gaps)));
+  }
+
+  .case-opening__row > :global(.case-screen) {
+    flex: var(--ar) 1 0%;
+    box-shadow: var(--elevation-artwork);
+  }
+
+  /* Ниже bp-md — своя раскладка, а не сжатие (ds/CONTRACT.md §6). В окне
+     высотой в экран 16:10-кадр шириной 342 px занимал четверть обложки, а
+     два кадра screen-detail рядом были нечитаемы. Высота обложки — по
+     содержимому, кадр во всю ширину, экран и фрагмент — столбиком,
+     телефонов два вместо трёх. Видео остаётся на весь экран. */
+  @media (--below-bp-md) {
+    .case-opening--proof {
+      position: relative;
+    }
+    .case-opening--screen {
+      block-size: auto;
+    }
+
+    .case-opening__media {
+      container-type: normal;
+      display: block;
+    }
+
+    .case-opening__row {
+      inline-size: 100%;
+      gap: var(--space-3);
+    }
+
+    .case-opening__row--screen-detail {
+      flex-direction: column;
+    }
+
+    .case-opening__row--screen-detail > :global(.case-screen) {
+      flex: none;
+      inline-size: 100%;
+    }
+
+    .case-opening__row--phones > :global(.case-screen:nth-child(n + 3)) {
+      display: none;
+    }
+  }
+</style>
+

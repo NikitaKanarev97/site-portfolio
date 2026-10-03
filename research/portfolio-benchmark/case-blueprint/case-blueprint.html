@@ -1,0 +1,404 @@
+<title>Схема кейса kanarev.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a working spec sheet in the site's own tokens — numbered blocks, text column left, reference frames right. */
+:root{
+  --bg:#F7F7F5; --paper:#FFFFFF; --ink:#1B1B18; --muted:#6E6E67; --line:#E1E1DC; --plate:#EFEFEC;
+  --accent:#C1440E; --accent-soft:#F6E3DA;
+  --c-agent:#253332; --c-portal:#DCE7F3; --c-learn:#243C56; --c-vet:#E0EAE4; --c-pawly:#EAE2D8;
+  --font-sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,"SF Mono",Consolas,monospace;
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:24px; --s6:32px; --s7:48px; --s8:72px; --s9:112px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0D0D0B; --paper:#171714; --ink:#EFEFEC; --muted:#A3A39B; --line:#2C2C28; --plate:#1F1F1C;
+  --accent:#E8845C; --accent-soft:#3A2218; color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#0D0D0B; --paper:#171714; --ink:#EFEFEC; --muted:#A3A39B; --line:#2C2C28; --plate:#1F1F1C;
+  --accent:#E8845C; --accent-soft:#3A2218; color-scheme:dark;}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-sans);font-size:16px;line-height:1.55;margin:0;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:clamp(16px,4vw,40px);padding-block:var(--s7) var(--s9)}
+h1,h2,h3{margin:0;text-wrap:balance;letter-spacing:-0.02em}
+p{margin:0}
+.mono{font-family:var(--font-mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.lede{font-size:clamp(19px,2vw,22px);line-height:1.45;max-width:62ch}
+
+/* header */
+header{display:grid;gap:var(--s5);padding-block-end:var(--s7);border-bottom:1px solid var(--line)}
+h1{font-size:clamp(40px,6vw,72px);font-weight:800;line-height:1}
+.swatches{display:flex;flex-wrap:wrap;gap:var(--s3);align-items:center}
+.sw{display:flex;align-items:center;gap:var(--s2);font-size:14px}
+.sw i{width:22px;height:22px;border-radius:6px;border:1px solid var(--line);display:block}
+
+/* now vs target */
+.now{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:var(--s6);padding-block:var(--s7);border-bottom:1px solid var(--line)}
+.now h2{font-size:28px;font-weight:700;margin-block-end:var(--s4)}
+.stats{display:grid;gap:var(--s4)}
+.stat{display:grid;grid-template-columns:auto 1fr;gap:var(--s4);align-items:baseline;padding-block:var(--s3);border-top:1px solid var(--line)}
+.stat b{font-size:clamp(28px,3.4vw,40px);font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.02em;white-space:nowrap}
+.stat b s{color:var(--muted);font-weight:500;text-decoration-thickness:2px}
+.stat b em{font-style:normal;color:var(--accent)}
+.stat span{color:var(--muted);font-size:15px}
+
+/* rules */
+.rules{padding-block:var(--s7);border-bottom:1px solid var(--line);display:grid;gap:var(--s5)}
+.rules h2{font-size:28px;font-weight:700}
+.rules ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:var(--s4)}
+.rules li{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:var(--s5);display:grid;gap:var(--s2);align-content:start}
+.rules li strong{font-size:17px}
+.rules li span{color:var(--muted);font-size:15px}
+
+/* blocks */
+.blocks-head{padding-block:var(--s8) var(--s5);display:grid;gap:var(--s3)}
+.blocks-head h2{font-size:clamp(30px,4vw,44px);font-weight:800}
+.block{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:var(--s7);padding-block:var(--s7);border-top:1px solid var(--line)}
+.num{font-family:var(--font-mono);font-size:13px;color:var(--accent);letter-spacing:.06em}
+.block h3{font-size:clamp(26px,3vw,34px);font-weight:800;line-height:1.1;margin-block:var(--s2) var(--s4)}
+.txt{display:grid;gap:var(--s4);align-content:start}
+.txt .what{font-size:17px}
+.row{display:grid;gap:var(--s1)}
+.row p{font-size:15px}
+.row.why p{color:var(--ink)}
+.motion{background:var(--accent-soft);border-radius:12px;padding:var(--s4)}
+.motion .mono{color:var(--accent)}
+.budget{display:inline-flex;gap:var(--s2);align-items:center;border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-family:var(--font-mono);font-size:12px;color:var(--muted);justify-self:start}
+.example{border-left:2px solid var(--ink);padding-inline-start:var(--s4)}
+.example p{font-size:15px}
+.example .thesis{font-size:20px;font-weight:700;letter-spacing:-.01em;line-height:1.25;margin-block:var(--s1)}
+.shots{display:grid;gap:var(--s4);align-content:start}
+.shots.two{grid-template-columns:1fr 1fr}
+figure{margin:0;display:grid;gap:var(--s2);min-width:0}
+figure img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line);background:var(--plate)}
+figcaption{font-size:13px;color:var(--muted)}
+figcaption b{color:var(--ink);font-weight:600}
+.shots.two figure:first-child:last-child{grid-column:1/-1}
+
+/* case table */
+.cases{padding-block:var(--s8) var(--s5);display:grid;gap:var(--s5)}
+.cases h2{font-size:clamp(30px,4vw,44px);font-weight:800}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+table{border-collapse:collapse;width:100%;min-width:900px;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:var(--s3) var(--s4);border-bottom:1px solid var(--line)}
+th{font-weight:700;font-size:14px}
+thead th{position:sticky;top:0;background:var(--paper)}
+th .dot{display:inline-block;width:12px;height:12px;border-radius:4px;margin-inline-end:6px;vertical-align:-1px;border:1px solid var(--line)}
+tbody th{white-space:nowrap;color:var(--muted);font-weight:500;font-family:var(--font-mono);font-size:12px}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
+
+/* motion list */
+.motions{padding-block:var(--s8) 0;display:grid;gap:var(--s5)}
+.motions h2{font-size:clamp(30px,4vw,44px);font-weight:800}
+.mgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:var(--s4)}
+.m{border:1px solid var(--line);border-radius:14px;padding:var(--s5);background:var(--paper);display:grid;gap:var(--s2);align-content:start}
+.m code{font-family:var(--font-mono);font-size:12px;color:var(--accent)}
+.m strong{font-size:17px}
+.m p{font-size:15px;color:var(--muted)}
+.next{margin-block-start:var(--s8);padding:var(--s6);border-radius:16px;background:var(--ink);color:var(--bg);display:grid;gap:var(--s4)}
+.next h2{font-size:28px;font-weight:800}
+.next ol{margin:0;padding-inline-start:1.2em;display:grid;gap:var(--s2)}
+
+@media (max-width:860px){
+  .block{grid-template-columns:1fr;gap:var(--s5)}
+}
+@media (max-width:520px){ .shots.two{grid-template-columns:1fr} }
+</style>
+
+<div class="wrap">
+
+<header>
+  <p class="mono">kanarev.com · после сессии с Робертом Гармазой · 2 октября 2026</p>
+  <h1>Схема кейса</h1>
+  <p class="lede">Все пять кейсов собираются из одних и тех же десяти блоков в одном порядке. Меняются тема, цвет обложки и содержимое блоков, а система остаётся общей. Ниже каждый блок показан на примере Agent Ops, рядом кадр-образец, который мы берём за основу.</p>
+  <div class="swatches" aria-label="Цвета обложек кейсов">
+    <span class="sw"><i style="background:var(--c-agent)"></i>Agent Ops</span>
+    <span class="sw"><i style="background:var(--c-portal)"></i>Partner Portal</span>
+    <span class="sw"><i style="background:var(--c-learn)"></i>Learn</span>
+    <span class="sw"><i style="background:var(--c-vet)"></i>Vet Clinic</span>
+    <span class="sw"><i style="background:var(--c-pawly)"></i>Pawly</span>
+  </div>
+</header>
+
+<section class="now">
+  <div>
+    <h2>Что меняем</h2>
+    <div class="stats">
+      <div class="stat"><b><s>2 703</s> → <em>~400</em></b><span>слов в кейсе Agent Ops. У референсов обычно около 250</span></div>
+      <div class="stat"><b><s>1</s> → <em>6</em></b><span>типов изображений: экран, схема, флоу, телефон, выноски, артефакты процесса</span></div>
+      <div class="stat"><b><s>15</s> → <em>10</em></b><span>разделов. Каждый блок — одна мысль и одна картинка</span></div>
+    </div>
+  </div>
+  <div class="shots two">
+    <figure><img src="img/us-case2.jpg" alt="Текущий кейс Agent Ops: длинные абзацы текста" loading="lazy"><figcaption><b>Сейчас</b> · стена текста</figcaption></figure>
+    <figure><img src="img/us-case1.jpg" alt="Текущий кейс Agent Ops: тёмный экран в одинаковой рамке" loading="lazy"><figcaption><b>Сейчас</b> · один и тот же тёмный кадр</figcaption></figure>
+  </div>
+</section>
+
+<section class="rules">
+  <h2>Пять правил системы</h2>
+  <ol>
+    <li><strong>Один порядок блоков</strong><span>Десять блоков ниже идут в каждом кейсе в одном порядке. Блок можно пропустить, переставлять нельзя.</span></li>
+    <li><strong>Один набор плашек</strong><span>Экраны лежат на светлой плашке со скруглением. Цвет кейса только на обложке и в переходе к следующему.</span></li>
+    <li><strong>Текст по бюджету</strong><span>Метка, тезис до 60 знаков, абзац до 35 слов. Весь кейс укладывается в 300–450 слов.</span></li>
+    <li><strong>Не два одинаковых кадра подряд</strong><span>После десктопа идёт схема, телефон или выноски.</span></li>
+    <li><strong>Шесть анимаций на весь сайт</strong><span>Одни и те же движения во всех кейсах, через <code>data-motion</code>. Без анимации страница тоже читается.</span></li>
+  </ol>
+</section>
+
+<div class="blocks-head">
+  <p class="mono">Страница кейса сверху вниз · пример Agent Ops Console</p>
+  <h2>Десять блоков</h2>
+</div>
+
+<!-- 1 -->
+<article class="block">
+  <div class="txt">
+    <div><p class="num">01 · ОБЛОЖКА</p><h3>Что это и чем кончилось — за пять секунд</h3></div>
+    <p class="what">Название, одна строка итога, строка фактов, большой кадр продукта на цветной плашке кейса.</p>
+    <div class="example">
+      <p class="mono">Agent Ops</p>
+      <p class="thesis">Every promise an AI agent makes reaches a person.</p>
+      <p>Клиент · Год · Роль · Платформа · Подтверждение — одной строкой. Ниже очередь ревью на графитовой плашке.</p>
+    </div>
+    <div class="row why"><p class="mono">Почему</p><p>Менеджер решает, читать ли дальше, по первому экрану. У Дунара и HA всё главное собрано наверху, текста почти нет.</p></div>
+    <div class="motion"><p class="mono">Анимация · reveal</p><p>Заголовок поднимается построчно, кадр чуть приближается и при прокрутке едет медленнее текста.</p></div>
+    <span class="budget">до 25 слов</span>
+  </div>
+  <div class="shots">
+    <figure><img src="img/ha-cover.jpg" alt="HA Interactive: название проекта крупно поверх двух телефонов" loading="lazy"><figcaption><b>HA Interactive</b> · Atlant Telecom: название поверх продукта</figcaption></figure>
+    <figure><img src="img/dn-head.jpg" alt="Ilya Dounar: название, подзаголовок-итог и строка фактов над кадром" loading="lazy"><figcaption><b>Ilya Dounar</b> · MyTeam: подзаголовок-итог и строка фактов</figcaption></figure>
+  </div>
+</article>
+
+<!-- 2 -->
+<article class="block">
+  <div class="txt">
+    <div><p class="num">02 · ЗАДАЧА</p><h3>Одна фраза и одно число</h3></div>
+    <p class="what">Метка, крупный тезис, два предложения. Масштаб задачи — числами со стрелками, а не в абзаце.</p>
+    <div class="example">
+      <p class="mono">Challenge</p>
+      <p class="thesis">Read the promises, not the chats.</p>
+      <p><b>1 770 → 71 → 2,4 ч</b> — чатов в день, обещаний среди них, часов на проверку.</p>
+    </div>
+    <div class="row why"><p class="mono">Почему</p><p>Число, показанное крупно, запоминается. В абзаце оно теряется среди других.</p></div>
+    <div class="motion"><p class="mono">Анимация · count-up</p><p>Числа досчитываются от нуля, когда блок входит в экран. Стрелки появляются следом.</p></div>
+    <span class="budget">до 40 слов</span>
+  </div>
+  <div class="shots">
+    <figure><img src="img/ha-aims.jpg" alt="HA Interactive: крупное слово Aims и короткий текст цели" loading="lazy"><figcaption><b>HA Interactive</b> · «Aims»: слово и три строки</figcaption></figure>
+    <div class="shots two">
+      <figure><img src="img/gr-thesis.jpg" alt="Garri: метка Challenge, крупный тезис, фото команды" loading="lazy"><figcaption><b>Garri</b> · Yandex Bank: метка и тезис</figcaption></figure>
+      <figure><img src="img/lv-numbers.jpg" alt="Яндекс Лавка: цифры выделены цветом прямо в предложении" loading="lazy"><figcaption><b>Ivan Annenkov</b> · Лавка: цифры цветом</figcaption></figure>
+    </div>
+  </div>
+</article>
+
+<!-- 3 -->
+<article class="block">
+  <div class="txt">
+    <div><p class="num">03 · КАК УСТРОЕНО</p><h3>Схема вместо объяснения</h3></div>
+    <p class="what">Схема системы: кто участвует и что кому передаёт. Под ней — главный пользовательский путь.</p>
+    <div class="example">
+      <p class="mono">Agent Ops</p>
+      <p>Агент → клиент → ревьюер → правка → политика. Ниже флоу проверки одного обещания с развилками.</p>
+    </div>
+    <div class="row why"><p class="mono">Почему</p><p>B2B без схемы не понять. Роберт: схемы сами по себе дают кейсу плюс. Исходники уже лежат в <code>ia/flows</code> проекта.</p></div>
+    <div class="motion"><p class="mono">Анимация · draw</p><p>Линии схемы прорисовываются по мере прокрутки, узлы зажигаются по очереди.</p></div>
+    <span class="budget">до 20 слов</span>
+  </div>
+  <div class="shots">
+    <figure><img src="img/rm-eco.jpg" alt="Маргарита Романова: схема экосистемы продукта с участниками" loading="lazy"><figcaption><b>Маргарита Романова</b> · CRM Сбера: схема участников</figcaption></figure>
+    <figure><img src="img/ha-flow.jpg" alt="HA Interactive: два user flow с ромбами решений" loading="lazy"><figcaption><b>HA Interactive</b> · user flow с развилками</figcaption></figure>
+  </div>
+</article>
+
+<!-- 4 -->
+<article class="block">
+  <div class="txt">
+    <div><p class="num">04 · БЫЛО → СТАЛО</p><h3>Красным — что было сломано</h3></div>
+    <p class="what">Старый экран с пометками проблем, над ним три колонки по три пункта. Потом тот же участок в новом виде.</p>
+    <div class="example">
+      <p class="mono">Agent Ops</p>
+      <p>Дашборд вендора, где все цифры зелёные, и красные пометки: не видно обещаний, не видно денег под риском, четырнадцать жалоб выглядят как четырнадцать разных проблем.</p>
+    </div>
+    <div class="row why"><p class="mono">Почему</p><p>Самый быстрый способ показать вклад дизайнера. Для редизайнов (Partner Portal, Learn) это главный блок кейса.</p></div>
+    <div class="motion"><p class="mono">Анимация · reveal</p><p>Красные метки появляются по одной, затем кадр «стало» въезжает поверх «было».</p></div>
+    <span class="budget">до 30 слов</span>
+  </div>
+  <div class="shots">
+    <figure><img src="img/dn-diag.jpg" alt="Ilya Dounar: старые экраны с красными рамками проблем и таблица диагноза" loading="lazy"><figcaption><b>Ilya Dounar</b> · Initial UX Diagnosis и Structural Shift</figcaption></figure>
+  </div>
+</article>
+
+<!-- 5 -->
+<article class="block">
+  <div class="txt">
+    <div><p class="num">05 · ПРОЦЕСС</p><h3>Артефакты, а не рассказ о процессе</h3></div>
+    <p class="what">Лента из вайрфреймов со стрелками переходов, скетчей и карты экранов. Подпись — одна строка на кадр.</p>
+    <div class="example">
+      <p class="mono">Agent Ops</p>
+      <p>Вайрфреймы очереди и карточки из <code>ia/wireframes</code>, перерисованные в одном стиле; лист со скетчем лестницы автономии.</p>
+    </div>
+    <div class="row why"><p class="mono">Почему</p><p>Артефакт сложнее выдумать, чем текст, — это ответ на подозрение «всё написал ИИ». Скетчи можно нарисовать под кейс, но без дат и подписей «первые наброски».</p></div>
+    <div class="motion"><p class="mono">Анимация · h-scroll</p><p>Блок закрепляется, и лента едет вбок, пока человек крутит вниз. На телефоне — обычный свайп.</p></div>
+    <span class="budget">подписи по 1 строке</span>
+  </div>
+  <div class="shots">
+    <figure><img src="img/ha-wire.jpg" alt="HA Interactive: вайрфреймы с линиями переходов между экранами" loading="lazy"><figcaption><b>HA Interactive</b> · вайрфреймы со связями</figcaption></figure>
+    <div class="shots two">
+      <figure><img src="img/ha-sketch.jpg" alt="HA Interactive: скетчи экранов от руки на бумаге" loading="lazy"><figcaption><b>HA Interactive</b> · Zenia: скетчи на бумаге</figcaption></figure>
+      <figure><img src="img/ku-bag.jpg" alt="Сергей Кудинов: лист со скетчем, сфотографированный в пакете" loading="lazy"><figcaption><b>Сергей Кудинов</b> · скетч как предмет</figcaption></figure>
+    </div>
+  </div>
+</article>
+
+<!-- 6 -->
+<article class="block">
+  <div class="txt">
+    <div><p class="num">06 · ПРОДУКТ ПО ШАГАМ</p><h3>Текст стоит, экран меняется</h3></div>
+    <p class="what">Главный блок кейса. Слева четыре шага сценария, справа один экран. Прокрутил — шаг сменился, и экран вместе с ним.</p>
+    <div class="example">
+      <p class="mono">Agent Ops · 4 шага</p>
+      <p>Очередь по деньгам под риском → карточка обещания → правка с причиной → правило-политика. На каждый шаг: метка, тезис, до 30 слов.</p>
+    </div>
+    <div class="row why"><p class="mono">Почему</p><p>У Garri самый длинный кейс выборки, и он читается легко: каждый кусок текста стоит рядом со своим экраном. Заменяет 8 наших разделов.</p></div>
+    <div class="motion"><p class="mono">Анимация · pin-swap</p><p>Экран закреплён, при прокрутке кадры плавно сменяют друг друга, сбоку точки прогресса. На телефоне шаги идут списком: текст, под ним кадр.</p></div>
+    <span class="budget">до 120 слов на 4 шага</span>
+  </div>
+  <div class="shots two">
+    <figure><img src="img/gr-swap1.jpg" alt="Garri: тезис слева, экран перевода справа" loading="lazy"><figcaption><b>Garri</b> · шаг: «A disruptive flow for transfers»</figcaption></figure>
+    <figure><img src="img/gr-swap2.jpg" alt="Garri: следующий шаг, экран сменился" loading="lazy"><figcaption><b>Garri</b> · следующий шаг, экран сменился</figcaption></figure>
+  </div>
+</article>
+
+<!-- 7 -->
+<article class="block">
+  <div class="txt">
+    <div><p class="num">07 · ТЕЛЕФОН И ЖИВЫЕ МОМЕНТЫ</p><h3>Разбить ряд десктопов</h3></div>
+    <p class="what">Десктоп и телефон рядом. Одно-два коротких видео без звука там, где в интерфейсе что-то меняется.</p>
+    <div class="example">
+      <p class="mono">Agent Ops</p>
+      <p>Согласование действия на телефоне рядом с очередью. Видео: сумма риска пересчитывается, карточка уходит из очереди после правки.</p>
+    </div>
+    <div class="row why"><p class="mono">Почему</p><p>Совет Роберта: вынести что можно в мобилку, видео — только в самых интересных местах. Живой прототип остаётся ссылкой внизу, рассказ на нём не держится.</p></div>
+    <div class="motion"><p class="mono">Анимация · reveal + video</p><p>Телефон въезжает снизу с небольшим отставанием от десктопа. Видео играет, только пока оно на экране.</p></div>
+    <span class="budget">подписи по 1 строке</span>
+  </div>
+  <div class="shots">
+    <figure><img src="img/ku-pair.jpg" alt="Сергей Кудинов: десктоп и телефон рядом на тёмном фоне" loading="lazy"><figcaption><b>Сергей Кудинов</b> · Практикум: десктоп и телефон рядом</figcaption></figure>
+    <figure><img src="img/ha-phones.jpg" alt="HA Interactive: три экрана телефона на серой плашке" loading="lazy"><figcaption><b>HA Interactive</b> · три телефона на плашке</figcaption></figure>
+  </div>
+</article>
+
+<!-- 8 -->
+<article class="block">
+  <div class="txt">
+    <div><p class="num">08 · ДЕТАЛИ И СИСТЕМА</p><h3>Один элемент крупно, с выносками</h3></div>
+    <p class="what">Ключевой компонент крупно, с линиями-выносками: что значит каждая часть. Рядом — лист компонентов с состояниями.</p>
+    <div class="example">
+      <p class="mono">Agent Ops</p>
+      <p>Карточка обещания: сумма, срок, причина, кто проверил. Лист компонентов риска из Storybook.</p>
+    </div>
+    <div class="row why"><p class="mono">Почему</p><p>Показывает, что дизайн-система — рабочий инструмент, а не дополнение. Роберт отметил это отдельно.</p></div>
+    <div class="motion"><p class="mono">Анимация · draw + stagger</p><p>Выноски прорисовываются к элементу, компоненты на листе появляются волной.</p></div>
+    <span class="budget">до 30 слов</span>
+  </div>
+  <div class="shots">
+    <figure><img src="img/dy-spec2.jpg" alt="Alex Dyakov: тёмный интерфейс с выносками и подписями" loading="lazy"><figcaption><b>Alex Dyakov</b> · интерфейс с выносками</figcaption></figure>
+    <figure><img src="img/ha-components.jpg" alt="HA Interactive: библиотека компонентов таблицей" loading="lazy"><figcaption><b>HA Interactive</b> · библиотека компонентов</figcaption></figure>
+  </div>
+</article>
+
+<!-- 9 -->
+<article class="block">
+  <div class="txt">
+    <div><p class="num">09 · ИТОГ</p><h3>Три карточки и цена решения</h3></div>
+    <p class="what">Три карточки с крупной строкой и подписью. Цитата пользователя, если она настоящая. Одна строка о том, чем пришлось заплатить.</p>
+    <div class="example">
+      <p class="mono">Agent Ops</p>
+      <p><b>71 из 1 770</b> — проверяется вручную · <b>0,3 ставки</b> — на всю проверку · <b>1 причина</b> вместо 14 жалоб.</p>
+      <p>Цена решения: ревьюер читает меньше разговоров, и редкая ошибка вне обещаний проходит выборочно.</p>
+    </div>
+    <div class="row why"><p class="mono">Почему</p><p>Итог крупной типографикой виден с одного взгляда. Только цифры, которые Никита защитит на интервью.</p></div>
+    <div class="motion"><p class="mono">Анимация · count-up</p><p>Цифры в карточках досчитываются, карточки появляются по очереди слева направо.</p></div>
+    <span class="budget">до 40 слов</span>
+  </div>
+  <div class="shots">
+    <figure><img src="img/dn-impact.jpg" alt="Ilya Dounar: три карточки итога с крупными цифрами" loading="lazy"><figcaption><b>Ilya Dounar</b> · Impact: три карточки</figcaption></figure>
+    <figure><img src="img/tr-quote.jpg" alt="Trove: карточка с цитатой пользователя и его фото" loading="lazy"><figcaption><b>Daniil Sergeev</b> · Trove: цитата пользователя</figcaption></figure>
+  </div>
+</article>
+
+<!-- 10 -->
+<article class="block">
+  <div class="txt">
+    <div><p class="num">10 · СЛЕДУЮЩИЙ КЕЙС</p><h3>Переход, который хочется досмотреть</h3></div>
+    <p class="what">Название следующего кейса огромной бегущей строкой поверх его цвета и кадра. Ниже — контакт и мелкая ссылка на прототип.</p>
+    <div class="example">
+      <p class="mono">Agent Ops → Partner Portal</p>
+      <p>Графитовый фон перетекает в голубой, по нему бежит «B2B Partner Portal».</p>
+    </div>
+    <div class="row why"><p class="mono">Почему</p><p>Держит человека на сайте и связывает пять кейсов в одну систему. Это та самая анимация HA, которая понравилась.</p></div>
+    <div class="motion"><p class="mono">Анимация · marquee</p><p>Строка бежит с постоянной скоростью, фон меняет цвет при подходе к блоку.</p></div>
+    <span class="budget">только название</span>
+  </div>
+  <div class="shots">
+    <figure><img src="img/ha-marquee.jpg" alt="HA Interactive: название следующего проекта бегущей строкой поверх кадра" loading="lazy"><figcaption><b>HA Interactive</b> · переход к следующему кейсу</figcaption></figure>
+  </div>
+</article>
+
+<section class="cases">
+  <p class="mono">Те же десять блоков · остальные кейсы</p>
+  <h2>Чем заполняется у каждого</h2>
+  <div class="tbl">
+  <table>
+    <thead><tr>
+      <th>Блок</th>
+      <th><span class="dot" style="background:var(--c-portal)"></span>Partner Portal</th>
+      <th><span class="dot" style="background:var(--c-learn)"></span>Learn</th>
+      <th><span class="dot" style="background:var(--c-vet)"></span>Vet Clinic</th>
+      <th><span class="dot" style="background:var(--c-pawly)"></span>Pawly</th>
+    </tr></thead>
+    <tbody>
+      <tr><th>01 Обложка</th><td>каталог заказа на голубой плашке</td><td>путь обучения на тёмно-синей</td><td>экран приёма на шалфейной</td><td>телефоны на песочной</td></tr>
+      <tr><th>02 Задача</th><td>партнёр не может заказать без менеджера</td><td>найти технический ответ или пройти программу, не путая чтение с прогрессом</td><td>у врача тридцать секунд, чтобы оставить след визита</td><td>доверие к выгульщику — доказательствами, а не значком</td></tr>
+      <tr><th>03 Как устроено</th><td>партнёр ↔ портал ↔ учётная система; флоу заказа</td><td>карта программы и справочника</td><td>день клиники: владелец → регистратура → врач → касса</td><td>флоу от проверки до возвращения домой</td></tr>
+      <tr><th>04 Было → стало</th><td><b>главный блок:</b> легаси DSSL с пометками</td><td>прежний курс с пометками</td><td>как сейчас: Vetmanager или бумажный журнал</td><td>как сейчас: значок «проверен» вместо доказательств</td></tr>
+      <tr><th>05 Процесс</th><td>карта экранов, вайрфреймы</td><td>вайрфреймы</td><td>скетчи, вайрфреймы</td><td>скетчи, знак, палитра</td></tr>
+      <tr><th>06 По шагам</th><td>оформление заказа</td><td>поиск ответа и прохождение программы</td><td>запись визита за тридцать секунд</td><td>проверка выгульщика → прогулка → питомец дома</td></tr>
+      <tr><th>07 Телефон</th><td>каталог на телефоне</td><td>урок на телефоне</td><td>планшет на стойке регистратуры</td><td>телефон в руке на прогулке</td></tr>
+      <tr><th>08 Детали</th><td>строка заказа с выносками</td><td>карточка урока, тест</td><td>карточка пациента с выносками</td><td>компоненты и иконки</td></tr>
+      <tr><th>09 Итог</th><td>итоги отгрузки</td><td>итог переосмысления</td><td>итоги тестов прототипа</td><td>итоги тестов прототипа</td></tr>
+      <tr><th>10 Дальше</th><td>→ Learn</td><td>→ Vet Clinic</td><td>→ Pawly</td><td>→ Agent Ops</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section class="motions">
+  <p class="mono">Одна библиотека движения на весь сайт</p>
+  <h2>Шесть анимаций</h2>
+  <div class="mgrid">
+    <div class="m"><code>reveal</code><strong>Появление</strong><p>Заголовки поднимаются построчно, кадры чуть приближаются. Блоки 01, 04, 07.</p></div>
+    <div class="m"><code>count-up</code><strong>Счёт чисел</strong><p>Числа досчитываются при входе в экран. Блоки 02, 09.</p></div>
+    <div class="m"><code>draw</code><strong>Прорисовка линий</strong><p>Схемы, флоу и выноски рисуются по мере прокрутки. Блоки 03, 08.</p></div>
+    <div class="m"><code>h-scroll</code><strong>Лента вбок</strong><p>Блок закреплён, артефакты едут горизонтально. Блок 05.</p></div>
+    <div class="m"><code>pin-swap</code><strong>Смена экрана</strong><p>Текст шагов листается, экран рядом меняется. Блок 06.</p></div>
+    <div class="m"><code>marquee</code><strong>Бегущая строка</strong><p>Название следующего кейса и смена цвета. Блок 10.</p></div>
+  </div>
+  <p style="color:var(--muted);font-size:15px;max-width:70ch">Все шесть пишутся один раз в <code>animations.js</code> на GSAP ScrollTrigger, компоненты только объявляют их атрибутом. При «уменьшить движение» страница показывается сразу целиком, без анимации.</p>
+</section>
+
+<section class="next">
+  <h2>Что дальше</h2>
+  <ol>
+    <li>Досмотреть анимации на foliobin.com: там кейсы показаны видео, снимем кадры и ритм движения.</li>
+    <li>Собрать блоки как компоненты дизайн-системы и карту экрана кейса.</li>
+    <li>Пилот на Agent Ops: текст, схемы, кадры, сборка. Потом остальные четыре по той же схеме.</li>
+  </ol>
+</section>
+
+</div>

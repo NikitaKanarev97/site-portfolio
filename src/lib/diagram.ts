@@ -104,7 +104,7 @@ function defaultWidth(node: DiagramNode): number {
     case 'input':
       return Math.ceil((longest(node.label, NODE_SIZE) + 2 * NODE_PAD_X * CELL) / CELL) + SKEW;
     default:
-      return Math.ceil((longest(node.label, NODE_SIZE) + 2 * NODE_PAD_X * CELL) / CELL);
+      return Math.ceil((longest(node.label, NODE_SIZE) + 2 * NODE_PAD_X * CELL) / CELL) + (node.num !== undefined ? 2 : 0);
   }
 }
 
@@ -143,12 +143,12 @@ export function layoutNode(node: DiagramNode): LaidNode {
   };
 }
 
-/** Номер экрана: квадрат в правом верхнем углу, наполовину над узлом. */
+/** HA-MAP-01: square inside the top-right corner, with half-cell inset. */
 export function badgeBox(box: Box, num: number): Box {
   const size = BADGE * CELL;
   // Двузначный номер не помещается в квадрат: плашка растёт вбок на полклетки.
   const w = String(num).length > 1 ? size + CELL / 2 : size;
-  return { x: box.x + box.w - w - CELL / 2, y: box.y - size / 2, w, h: size };
+  return { x: box.x + box.w - w - CELL / 2, y: box.y + CELL / 2, w, h: w };
 }
 
 /** Ромб в рамке узла. */

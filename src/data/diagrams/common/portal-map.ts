@@ -1,0 +1,43 @@
+import { defineDiagram } from '../schema';
+export const portalMap = defineDiagram({
+  kind: 'map',
+  title: { en: 'Selected Portal MVP screens', ru: 'Выбранные экраны MVP портала' },
+  summary: { en: 'Dashboard offers XLS import and Quick order. Both intakes share Resolution Center and Cart. Fulfillment and Order details continue the specification. Numbers identify selected real screens, not the full scope.',
+    ru: 'С главной доступны импорт XLS и быстрый заказ. Оба входа используют общий центр разрешения и корзину. План поставки и детали заказа продолжают спецификацию. Номера связывают выбранные реальные экраны, а не весь scope.' },
+  size: { w: 145, h: 49 },
+  heading: { lead: { en: 'Screen map', ru: 'Карта экранов' }, name: { en: 'One specification', ru: 'Одна спецификация' } },
+  nodes: [
+    { id: 'home', type: 'entry', at: [1, 19], w: 22, label: { en: 'Dashboard', ru: 'Главная' }, num: 1 },
+    { id: 'xls', type: 'screen', at: [32, 8], w: 23, label: { en: 'XLS import', ru: 'Импорт XLS' }, num: 2 },
+    { id: 'quick', type: 'screen', at: [32, 32], w: 23, label: { en: 'Quick order', ru: 'Быстрый заказ' }, num: 3 },
+    { id: 'resolve', type: 'screen', at: [66, 19], w: 24, label: { en: 'Resolution', ru: 'Разрешение' }, num: 4,
+      actions: [{ label: { en: 'choose a match', ru: 'выбрать товар' } }, { label: { en: 'correct source', ru: 'исправить строку' } }] },
+    { id: 'cart', type: 'screen', at: [100, 19], w: 20, label: { en: 'Cart', ru: 'Корзина' }, num: 5,
+      actions: [{ label: { en: 'review change', ru: 'принять дельту' } }] },
+    { id: 'plan', type: 'screen', at: [125, 6], w: 20, label: { en: 'Supply plan', ru: 'План поставки' }, num: 6 },
+    { id: 'order', type: 'screen', at: [125, 34], w: 20, label: { en: 'Order details', ru: 'Детали заказа' }, num: 7 },
+  ],
+  edges: [
+    { id: 'home-xls', from: 'home', to: 'xls', bend: 27 },
+    { id: 'home-quick', from: 'home', to: 'quick', bend: 27 },
+    { id: 'xls-resolve', from: 'xls', to: 'resolve', bend: 61 },
+    { id: 'quick-resolve', from: 'quick', to: 'resolve', bend: 61 },
+    { id: 'resolve-cart', from: 'resolve', to: 'cart' },
+    { id: 'cart-plan', from: 'cart', to: 'plan', bend: 123 },
+    { id: 'cart-order', from: 'cart', to: 'order', bend: 123 },
+  ],
+  mobile: { size: { w: 29, h: 95 }, nodes: [
+    { id: 'home', at: [3, 0], w: 24 }, { id: 'xls', at: [3, 12], w: 24 },
+    { id: 'quick', at: [3, 24], w: 24 }, { id: 'resolve', at: [3, 38], w: 24 },
+    { id: 'cart', at: [3, 59], w: 24 }, { id: 'plan', at: [3, 76], w: 24 },
+    { id: 'order', at: [3, 90], w: 24 },
+  ], edges: [
+    { id: 'home-xls', exit: 'b', enter: 't' },
+    { id: 'home-quick', exit: 'l', enter: 'l', via: [[1, 2.5], [1, 26.5]] },
+    { id: 'xls-resolve', exit: 'r', enter: 'r', via: [[29, 14.5], [29, 40.5]] },
+    { id: 'quick-resolve', exit: 'b', enter: 't' },
+    { id: 'resolve-cart', exit: 'r', enter: 'r', via: [[29, 40.5], [29, 61.5]] },
+    { id: 'cart-plan', exit: 'r', enter: 'r', via: [[29, 61.5], [29, 78.5]] },
+    { id: 'cart-order', exit: 'l', enter: 'l', via: [[1, 61.5], [1, 92.5]] },
+  ] },
+});

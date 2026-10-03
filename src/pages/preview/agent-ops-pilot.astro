@@ -1,0 +1,10 @@
+---
+/** Accepted Agent Ops checkpoint using the frozen ordered-block renderer. */
+import PageShell from '../../layouts/PageShell.astro';
+import CaseStory from '../../components/CaseStory.astro';
+import { agentOpsPilot as story } from '../../copy/pilot/agent-ops';
+import { site } from '../../copy/site';
+---
+<PageShell title="Agent Ops — human oversight before the payout" description="A product design case: review commitments, fix repeating causes and approve financial consequences. Local preview." lang="en" current="/work" siteCopy={site} noindex>
+  <CaseStory story={story} id="agent-ops-pilot" next={{ href:'/preview/partner-portal-pilot/',title:'Partner Portal',theme:'portal',label:'Next case' }} />
+</PageShell>

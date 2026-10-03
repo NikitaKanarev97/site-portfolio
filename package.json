@@ -9,6 +9,7 @@
     "preview": "astro preview",
     "check": "astro check",
     "check:css": "node scripts/check-scoped-css.cjs",
+    "check:harmony": "node scripts/harmony-check.mjs",
     "sync:learn": "node scripts/sync-learn-prototypes.mjs",
     "frames:learn": "node scripts/shoot-learn-frames.mjs",
     "verify:learn": "node scripts/verify-learn-integration.mjs",

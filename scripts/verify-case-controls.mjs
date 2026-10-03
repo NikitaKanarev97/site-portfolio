@@ -1,0 +1,81 @@
+/** Real /kit cover video and marquee lifecycle; no synthetic player implementation. */
+import { createRequire } from 'node:module';
+import { writeFileSync } from 'node:fs';
+const require = createRequire('D:/Claude-projects/Agent-ops-console/package.json');
+const browser = await require('playwright').chromium.launch({ executablePath: 'C:/Users/kanar/AppData/Local/ms-playwright/chromium-1243/chrome-win64/chrome.exe' });
+const base = process.env.PILOT_BASE || 'http://127.0.0.1:4330';
+const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+const errors = []; const checks = [];
+page.on('pageerror', error => errors.push(error.message));
+const check = (name, passed, evidence) => { checks.push({ name, passed, evidence }); if (!passed) throw new Error(name); };
+const wait = () => page.waitForTimeout(350);
+try {
+  await page.goto(`${base}/kit/`, { waitUntil: 'networkidle' });
+  const video = page.locator('[data-cover-video]').first();
+  const control = page.locator('[data-cover-pause]').first();
+  const state = () => video.evaluate(v => ({ paused: v.paused, connected: v.isConnected, ready: v.readyState }));
+  const showCover = () => video.evaluate(v => {
+    const cover = v.closest('.case-opening'); scrollTo(0, cover.getBoundingClientRect().top + scrollY);
+  });
+  await showCover(); await page.waitForTimeout(1000);
+  check('Visible video autoplays', !(await state()).paused, await state());
+  await control.click(); await wait(); check('Manual pause', (await state()).paused, await state());
+  await page.emulateMedia({ reducedMotion: 'reduce' }); await wait();
+  await page.emulateMedia({ reducedMotion: 'no-preference' }); await wait();
+  check('Manual pause survives preference change', (await state()).paused, await state());
+  await control.click(); await wait();
+  await page.emulateMedia({ reducedMotion: 'reduce' }); await wait();
+  check('Live reduce stops autoplay', (await state()).paused, await state());
+  await control.click(); await wait(); check('Explicit play in reduce', !(await state()).paused, await state());
+  await video.evaluate(v => { const sheet = v.closest('.case-opening').nextElementSibling; scrollTo(0, sheet.getBoundingClientRect().top + scrollY + 100); });
+  await wait(); check('Covered sticky video pauses', (await state()).paused, await state());
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await showCover(); await wait();
+  await video.evaluate(v => { window.__previousCoverVideo = v; });
+  await page.evaluate(async base => {
+    const link = document.createElement('a'); link.href = `${base}/preview/agent-ops-pilot/`; document.body.append(link); link.click();
+  }, base);
+  await page.waitForURL('**/preview/agent-ops-pilot/'); await page.waitForTimeout(1500);
+  const old = await page.evaluate(() => ({ paused: window.__previousCoverVideo.paused, connected: window.__previousCoverVideo.isConnected }));
+  check('Navigation stops detached video', old.paused && !old.connected, old);
+  const link = page.locator('[data-case-next]');
+  await link.scrollIntoViewIfNeeded(); await wait();
+  await page.mouse.move(0, 0);
+  await link.focus();
+  const track = page.locator('[data-motion="marquee"]');
+  const position = () => track.evaluate(el => getComputedStyle(el).transform);
+  await wait(); const focused = await position(); await wait();
+  check('Focus keeps marquee moving', focused !== await position(), focused);
+  await page.evaluate(() => scrollBy(0, -1500)); await wait();
+  await link.evaluate(el => scrollTo(0, el.getBoundingClientRect().top + scrollY - 100)); await wait();
+  const focusReturned = await position(); await wait();
+  check('Marquee moves after viewport re-entry', focusReturned !== await position(), focusReturned);
+  await link.evaluate(el => el.blur()); await wait();
+  const before = await position(); await wait(); check('Blur resumes marquee', before !== await position(), await position());
+  await link.hover(); const hovered = await position(); await wait();
+  check('Hover keeps marquee moving', hovered !== await position(), hovered);
+  check('Next case has no pause controls', await page.locator('.case-next button').count() === 0, await page.locator('.case-next button').count());
+  await page.screenshot({ path: 'outputs/agent-ops-next-link-only.png' });
+  await page.emulateMedia({ reducedMotion: 'reduce' }); await wait();
+  const reduced = await position(); await wait();
+  check('Reduced motion keeps title still', reduced === await position(), reduced);
+  await page.emulateMedia({ reducedMotion: 'no-preference' }); await wait();
+  const resumed = await position(); await wait();
+  check('Full motion resumes automatically', resumed !== await position(), resumed);
+  await link.click(); await page.waitForURL('**/preview/partner-portal-pilot/'); await wait();
+  check('Title links to next case', new URL(page.url()).pathname === '/preview/partner-portal-pilot/', page.url());
+  await page.goBack(); await page.waitForURL('**/preview/agent-ops-pilot/'); await wait();
+  await page.route('**/clip-review-decision.*', route => route.abort());
+  await page.goto(`${base}/kit/`, { waitUntil: 'networkidle' });
+  await video.evaluate(v => v.closest('.case-opening').scrollIntoView());
+  await page.waitForFunction(() => {
+    const video = document.querySelector('[data-cover-video]');
+    return video && !video.querySelector('source') && video.readyState === 0;
+  });
+  check('Failed formats return to poster', await control.isHidden(), { poster: await video.getAttribute('poster'), hiddenControl: await control.isHidden() });
+  check('No page errors', errors.length === 0, errors);
+} finally {
+  writeFileSync(`outputs/agent-ops-${process.env.PILOT_STAGE || 'stage3'}-controls.json`, JSON.stringify({ base, checks, errors }, null, 2));
+  await browser.close();
+}
+console.log(checks);

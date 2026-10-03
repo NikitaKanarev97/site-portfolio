@@ -1,0 +1,37 @@
+---
+/**
+ * CaseSheet — ds/components.md, карта ds/screens/case.md §4
+ *
+ * Белый лист кейса: несёт строку фактов и блоки 02–09, при прокрутке
+ * наезжает на закреплённую обложку. Донор — hainteractive.
+ *
+ * Наезд нативный: обложка position: sticky, лист идёт следом в потоке с
+ * непрозрачным фоном и стоит выше по z-index. Ни перехвата скролла, ни JS.
+ * Режим sheet этапа 3 добавит к этому только оттенок движения.
+ *
+ * Между блоками — section-gap, как между секциями страницы. Края листа —
+ * тот же шаг: лист — страница внутри страницы.
+ */
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<div class:list={['case-sheet', className]} data-motion="sheet">
+  <slot />
+</div>
+
+<style>
+  .case-sheet {
+    position: relative;
+    z-index: 1;
+    padding-block: var(--section-gap);
+    background: var(--surface-default);
+  }
+
+  .case-sheet > :global(* + *) {
+    margin-block-start: var(--section-gap);
+  }
+</style>

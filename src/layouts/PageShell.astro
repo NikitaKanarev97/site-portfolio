@@ -80,6 +80,8 @@ interface Props {
   motion?: boolean;
   /** Локализованный слой сквозных строк. */
   siteCopy?: SiteCopy;
+  /** Isolated EN/RU preview pair; public routes retain registry defaults. */
+  localePaths?: Partial<Record<'en' | 'ru', string>>;
 }
 
 const {
@@ -93,6 +95,7 @@ const {
   nav = true,
   contact = true,
   siteCopy: siteCopyProp = site,
+  localePaths,
   contactLead,
   contactHeading,
   contactCopy,
@@ -113,6 +116,7 @@ const resolvedContactHeading = contactHeading ?? siteCopy.contact.heading;
   current={current}
   nav={nav}
   siteCopy={siteCopy}
+  localePaths={localePaths}
 >
   <slot />
 

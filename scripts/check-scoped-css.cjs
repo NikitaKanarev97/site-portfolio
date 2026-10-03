@@ -14,11 +14,14 @@
  * Лечение — писать через родителя из шаблона страницы:
  *   .секция > :global(.мой-класс) { … }
  *
- * Запуск: npm run build && npm run check:css
+ * Запуск: npm run build && npm run check:css [-- /preview/custom/]
+ * Любой новый index.html внутри dist/preview находится автоматически.
+ * Дополнительные маршруты CLI добавляются к базовому охвату.
  * Правило и его история — ds/components.md §Реализация,
  * ds/screens/about.md §«Найдено при сборке».
  */
 const fs = require('fs');
+const path = require('path');
 const pages = {
   '/': 'dist/index.html',
   '/about': 'dist/about/index.html',
@@ -29,10 +32,35 @@ const pages = {
   '/ru/': 'dist/ru/index.html',
   '/404': 'dist/404.html',
   '/500': 'dist/500.html',
+  '/preview/agent-ops-pilot': 'dist/preview/agent-ops-pilot/index.html',
+  '/preview/partner-portal-pilot': 'dist/preview/partner-portal-pilot/index.html',
+  '/kit': 'dist/kit/index.html',
+  '/preview/common': 'dist/preview/common/index.html',
+  ...Object.fromEntries(['en','ru'].flatMap(locale => ['agent-ops','partner-portal'].map(slug => [
+    `/preview/common/${locale}/${slug}`, `dist/preview/common/${locale}/${slug}/index.html`,
+  ]))),
 };
+function collectPreviews(directory) {
+  if (!fs.existsSync(directory)) return;
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    const file = path.join(directory, entry.name);
+    if (entry.isDirectory()) collectPreviews(file);
+    else if (entry.name === 'index.html') {
+      const route = '/' + path.relative('dist', directory).split(path.sep).join('/');
+      pages[route] = file;
+    }
+  }
+}
+collectPreviews('dist/preview');
+for (const route of process.argv.slice(2)) {
+  if (!route.startsWith('/') || route.split('/').includes('..') || route.includes('\\')) throw new Error(`Invalid route: ${route}`);
+  const normalized = route.replace(/\/$/, '') || '/';
+  pages[normalized] = path.join('dist', normalized.slice(1), 'index.html');
+}
 const cssFiles = fs.readdirSync('dist/_astro').filter(f => f.endsWith('.css'));
 const css = cssFiles.map(f => fs.readFileSync('dist/_astro/' + f, 'utf8')).join('\n');
 
+let failures = 0;
 for (const [route, file] of Object.entries(pages)) {
   const html = fs.readFileSync(file, 'utf8');
   const source = css + '\n' + html;
@@ -57,4 +85,6 @@ for (const [route, file] of Object.entries(pages)) {
     if (present && !found) dead.push(cls);
   }
   console.log(route + ': мёртвых правил ' + dead.length + (dead.length ? ' → ' + dead.join(', ') : ''));
+  failures += dead.length;
 }
+if (failures) process.exitCode = 1;

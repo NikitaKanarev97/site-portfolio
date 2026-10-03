@@ -1,5 +1,11 @@
 # Foundation — Site-portfolio
 
+**Common A · 04.10.2026.** Новый `sky-700` = #176AA7; роль `diagram-screen-badge` → sky-700, `diagram-badge` → diagram-screen-badge. White `diagram-badge-text` сохраняется в обеих темах. Белый номер проходит AA на синем; square размещён внутри верхнего правого угла. Общая палитра портфолио сохраняется. Actual specimen: 35:65 от bp-xl; tablet — foundation сверху, две колонки состояний; mobile — последовательные материалы. Отдельная геометрия схем не меняет клетку/кегль, переставляет те же ID/связи. Типографика/цвета продукта — документальные данные, не токены портфолио.
+
+**Полировка S3 (03.10.2026).** Proof-вступление сокращено до 1 с / power3.out, подъём 24 px; интервал 120 мс и акцент x 12 px сохраняют связь двух последствий. Остальные роли и CSS-токены прежние. Числовой счёт использует один Intl.NumberFormat на число и меняет DOM только при новом округлённом значении. Для высокой обложки sheet-сцена не создаётся. Исполнитель контролов видео перенесён в общий lifecycle. Правила повторного применения — `screens/case.md` §S3.
+
+**Motion S2 (03.10.2026).** Реестр `ds/motion.js` дополнен режимами кейса: lines 640 мс / шаг 40 мс / editorial .645,.05,.355,1; fade-image и count 1 с; cover-proof 1 с / шаг 120 мс (S3); draw 700 мс; marquee 24 с; sheet scrub .3; pin-swap scrub .25. Геометрия и пороги хранятся в том же смысловом слое, брейкпоинт pin берётся из `--bp-xl`. Snapshot-переход 1 с получает CSS timing из реестра, отдельного набора длительностей в компонентах нет. Спецификация применения и fallback — `ds/motion-concept.md` §3.
+
 **Обложки, 2026-09-09.** Локальные поверхности изображений: `surface-cover-agent` → graphite-800 (#253332), `surface-cover-portal` → blue-100 (#DCE7F3), `surface-cover-learn` → navy-800 (#243C56), `surface-cover-vet` → sage-100 (#E0EAE4), `surface-cover-pawly` → sand-100 (#EAE2D8). Это фон реальных скриншотов, не интерактивные акценты. Текст поверх цветных холстов не ставится. `ratio-cover` → 16/9, `ratio-cover-mobile` → 4/3. **25.09.2026:** `ratio-cover-moment-mobile` → 4/5 — обложка главного кейса на телефоне: экран фоном и вынесенные элементы стопкой; в 4/3 они не помещаются читаемыми. `elevation-artwork` → shadow-lg отделяет видимые пересекающиеся фрагменты UI. Контраст подписей определяется существующими text-default/text-meta на белом. Геометрия — `screens/case-presentation.md`.
 
 **Бриф:** сдержанное editorial-портфолио продуктового дизайнера, web desktop+tablet+mobile, en с каркасом под ru, характер через типографику и движение, не через декор.
@@ -385,7 +391,7 @@
 | `diagram-arrow` | `gray-500` | `gray-400` | стрелка флоу — несёт порядок, 3:1 и выше |
 | `diagram-stroke` | `gray-900` | `gray-300` | обводка входа, ромба, ввода, перехода во флоу |
 | `diagram-group` | `gray-500` | `gray-400` | пунктир функций экрана |
-| `diagram-badge` / `-text` | `gray-900` / `gray-00` | `gray-00` / `gray-950` | номер экрана |
+| `diagram-badge` / `-text` | `diagram-screen-badge` / `gray-00` | `diagram-screen-badge` / `gray-00` | синий квадрат номера внутри плашки; роль → sky-700 |
 | `diagram-frame` | `gray-00` | `gray-800` | экран прототипа |
 | `diagram-wire` / `-strong` | `gray-200` / `gray-300` | `gray-700` / `gray-500` | блоки вайрфрейма |
 | `diagram-proto` | `sky-600` | `sky-300` | связь прототипа, рамка набора |
@@ -396,6 +402,22 @@
 Размеры, одни на обе темы: `diagram-cell` → `space-2` (единица координат в данных), `diagram-pad` → `space-6` (поле вокруг данных), `diagram-node-radius` → `radius-sm`, `diagram-corner` → `radius-md` (скругление излома), `diagram-line` → `rule-width`, `diagram-proto-line` → `focus-width`, `diagram-label-size` → `size-sm`, `diagram-note-size` → `size-xs`.
 
 Два кегля стоят вне ролей по той же причине, что `size-link-marker`: подписи SVG нужен только размер, а 12 px без моно и капса ролью не покрыт. Геометрию `src/lib/diagram.ts` считает на сборке через `src/lib/tokens.ts`, поэтому размерные токены в тёмной паре не переопределяются: разборщик берёт последнее объявление в файле.
+
+### Плашки и выноски кейса
+
+**Заведено 2026-10-03, этап 2 `PLAN-CHATS.md`.** Карта — `ds/screens/case.md` §5 и §11.
+
+| Токен | → | Зачем |
+|---|---|---|
+| `surface-plate` | `gray-100` | единственная светлая плашка кадров кейса |
+| `surface-plate-dark` | `gray-950` | плашка тёмного продукта (Agent Ops), совпадает с тёмным полем схем |
+| `callout-mark` / `-text` | `gray-900` / `gray-00` | номер выноски `CaseCallout` |
+| `callout-issue` / `-text` | `error-500` / `gray-00` | номер проблемы кадра «было», 6.57:1 |
+| `measure-case` | `measure-600` (новый примитив, 600 px) | колонка текста кейса, ~65 знаков при 18 px |
+
+Тёмная пара под `[data-theme="dark"]`: `callout-mark` → `gray-00`, `-text` → `gray-950`; `callout-issue` → `error-300`, `-text` → `gray-950` (9.5:1). `error-500` на `gray-950` дал бы 2.96:1.
+
+Подпись под плашкой стоит на белом листе, а не на плашке: `text-muted` на `surface-plate` — 4.46:1, ниже AA. Цвет кейса (`surface-cover-*`) на плашку не идёт: он живёт только на обложке и в переходе к следующему кейсу. Правило 09.09.2026 «текст поверх цветных холстов не ставится» для нового шаблона снято решением владельца 03.10.2026: название обложки стоит на чистом цвете кейса, контраст 11.3–14.0:1. Текст поверх скриншота по-прежнему запрещён.
 
 ---
 
@@ -463,3 +485,16 @@ Display-ступени стояли с постановки ДС. Heading-сту
 Отдельного `Button` нет: единственная кнопка продукта — `CopyEmail`, у неё своя логика состояния и `aria-live`. Заводить универсальный `Button` ради одного применения — тот же мёртвый компонент, от которого мы ушли.
 
 `SkipLink` и видимый фокус (`TECH-12`, №35) — не компонент, а глобальный стиль на `border-focus` + `focus-ring-width`. Живёт в контракте, не в UI-ките.
+
+**03.10.2026 · статичная версия пилота.** Новых токенов нет. `CaseCover proof`, `CaseSteps wide/split` и отдельные адаптивные панели используют существующие display/heading/body-роли, flow-*, space-*, surface-cover/plate и radius/shadow. Панель не получает искусственную обводку вокруг уже оформленного UI. Смена материала по ширине резервирует собственное соотношение, не растягивает кадр. Подробная композиция — начало `ds/screens/case.md`.
+
+## Art direction motion · 03.10.2026
+
+Обложка interlock использует существующие space, cover, text-on-inverse и typography токены. Параметры `motion.coverInterlock`: duration 1.25, editorial, x 96, вход rotation 8 относительно конечных ±3°; gate .45, payout .65. `motion.focusStage`: minHeight 820, inset 24, maxHeight 780, header budget 260, 650 px на смену, hold .78 / exchange .22, x 24, scrub true; reflowWait .18 с для конечного пересчёта после смены motion/viewport, отменяется жестом и cleanup. При stop/back кадр полный, старые тексты не накладываются. Новых цветов и CSS-примитивов нет. Источник и зеркало motion побайтово равны.
+
+## Checkpoint · 03.10.2026
+
+surface-review → graphite-800: тёмный стол чтения Agent Ops, связанный с обложкой. text-on-inverse (white) даёт контраст более 12:1. review-stop-width/height → space-48 (192 px), stroke → space-8 (32 px), gap → space-12 (48 px). Mobile использует существующие space-16/space-4. Поля стола space-12 desktop / space-8 tablet; поля исходных снимков сохранены. reviewStage: retreat 0.96 с 55% такта, вход x32 за .22 такта, раскрытие стопа .12→1 за .18, карточка после .04; power3.out. Геометрия и timing отделены от компонентов, зеркало побайтовое.
+
+Field-bleed: scaleX выводится из clientWidth / offsetWidth; рост 2.55–3 такта (.45), UI и текст остаются в собственном масштабе. Checkpoint headline — display-5xl на wide, heading-4xl на 1024; fallback использует прежние heading-роли.
+

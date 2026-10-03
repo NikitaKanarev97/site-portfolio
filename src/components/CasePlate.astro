@@ -1,0 +1,71 @@
+---
+/**
+ * CasePlate — ds/components.md, карта ds/screens/case.md §5
+ *
+ * Плашка под кадр, выноски или схему кейса. Держит три правила
+ * harmony-checklist.md: поля симметричны и из токенов (5), одна светлая
+ * плашка на все экраны, тёмная только у тёмного продукта (12), ничего не
+ * выходит за край без класса -bleed (3).
+ *
+ * Поле одно на четыре стороны, содержимое по центру — поэтому верх равен
+ * низу и лево равно праву по построению, а не по подбору. Ступени поля —
+ * внутренняя вертикаль компонента, поэтому прямой space-*, а не flow-*
+ * (ds/CONTRACT.md §4).
+ *
+ * Цвета кейса плашка не принимает вовсе: surface-cover-* живут только на
+ * обложке и в переходе к следующему кейсу.
+ *
+ * Схема на плашке не рисует плашку в плашке: поле Diagram приравнено к
+ * плашке. Тёмная плашка ставит data-theme="dark", и схема, выноски и текст
+ * берут тёмную пару токенов.
+ *
+ * data-h="plate" — метка для scripts/harmony-check.mjs.
+ */
+interface Props {
+  tone?: 'light' | 'dark';
+  class?: string;
+}
+
+const { tone = 'light', class: className } = Astro.props;
+---
+
+<div
+  class:list={['case-plate', `case-plate--${tone}`, className]}
+  data-h="plate"
+  data-theme={tone === 'dark' ? 'dark' : undefined}
+>
+  <slot />
+</div>
+
+<style>
+  .case-plate {
+    --diagram-field: var(--surface-plate);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    background: var(--surface-plate);
+    color: var(--text-default);
+  }
+
+  .case-plate--dark {
+    --diagram-field: var(--surface-plate-dark);
+    background: var(--surface-plate-dark);
+    color: var(--text-on-inverse);
+  }
+
+  @media (--bp-md) {
+    .case-plate {
+      padding: var(--space-12);
+      border-radius: var(--radius-lg);
+    }
+  }
+
+  @media (--bp-lg) {
+    .case-plate {
+      padding: var(--space-16);
+    }
+  }
+</style>

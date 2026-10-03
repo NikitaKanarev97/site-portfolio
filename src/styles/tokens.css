@@ -45,6 +45,7 @@
   --gray-800:    #262622;  /* узел тёмной схемы */
   --sky-300:     #8CCBF5;  /* 11.09:1 на gray-950 — служебный синий тёмной схемы */
   --sky-600:     #2F86CC;  /* 3.62:1 на gray-50 — связь прототипа, рамка набора */
+  --sky-700:     #176AA7;  /* blue map marker; white small text passes AA */
   --success-100: #EDF6EF;  /* под success-500: 4.57:1 — таблетка yes */
   --error-100:   #FBE5E2;
   --error-500:   #B42318;  /* 5.45:1 на error-100 — таблетка no */
@@ -164,6 +165,7 @@
      720 — тело кейса и About, 800 — ведущий абзац и строка исхода */
   --measure-720: 720px;
   --measure-800: 800px;
+  --measure-600: 600px;  /* колонка текста кейса нового шаблона, 2026-10-03 */
 
   /* Motion — длительности. Лестница идёт по возрастанию, а не по смыслу:
      соседние ступени обязаны быть различимы на глаз, и это видно только
@@ -202,10 +204,24 @@
   --surface-inverse:              var(--gray-950);
   --surface-media:                var(--gray-100);
   --surface-cover-agent:          var(--graphite-800);
+  --surface-review:               var(--graphite-800);
+  --review-stop-width:            var(--space-48);
+  --review-stop-height:           var(--space-48);
+  --review-stop-stroke:           var(--space-8);
+  --review-stop-gap:              var(--space-12);
   --surface-cover-portal:         var(--blue-100);
   --surface-cover-learn:          var(--navy-800);
   --surface-cover-vet:            var(--sage-100);
   --surface-cover-pawly:          var(--sand-100);
+  /* Плашки кадров кейса, 2026-10-03 (ds/screens/case.md §5): одна светлая
+     на все экраны, тёмная только у тёмного продукта. Цвет кейса сюда не идёт. */
+  --surface-plate:                var(--gray-100);
+  --surface-plate-dark:           var(--gray-950);
+  /* Номер выноски CaseCallout: ink для пояснения, красный для проблемы «было». */
+  --callout-mark:                 var(--gray-900);
+  --callout-mark-text:            var(--gray-00);
+  --callout-issue:                var(--error-500);
+  --callout-issue-text:           var(--gray-00);
   --surface-action-primary:       var(--gray-900);
   --surface-action-primary-hover: var(--gray-700);
 
@@ -268,6 +284,7 @@
      не знают, что 720 — это 720. */
   --measure-text: var(--measure-720);
   --measure-lead: var(--measure-800);
+  --measure-case: var(--measure-600);
 
   /* Вертикальный ритм. Одна шкала на весь продукт: шаг растёт вместе со
      смысловым расстоянием между узлами, и цепочка читается сверху вниз —
@@ -344,7 +361,8 @@
   --diagram-arrow:        var(--gray-500);  /* стрелка флоу несёт порядок — 4.79:1 */
   --diagram-stroke:       var(--gray-900);  /* вход, ромб, ввод, переход во флоу */
   --diagram-group:        var(--gray-500);  /* пунктир функций экрана */
-  --diagram-badge:        var(--gray-900);
+  --diagram-screen-badge: var(--sky-700);
+  --diagram-badge:        var(--diagram-screen-badge);
   --diagram-badge-text:   var(--gray-00);
   --diagram-frame:        var(--gray-00);   /* экран прототипа */
   --diagram-wire:         var(--gray-200);  /* блоки вайрфрейма */
@@ -381,8 +399,8 @@
   --diagram-arrow:        var(--gray-400);
   --diagram-stroke:       var(--gray-300);
   --diagram-group:        var(--gray-400);
-  --diagram-badge:        var(--gray-00);
-  --diagram-badge-text:   var(--gray-950);
+  --diagram-badge:        var(--diagram-screen-badge);
+  --diagram-badge-text:   var(--gray-00);
   --diagram-frame:        var(--gray-800);
   --diagram-wire:         var(--gray-700);
   --diagram-wire-strong:  var(--gray-500);
@@ -391,6 +409,13 @@
   --diagram-yes-text:     var(--success-300);
   --diagram-no-bg:        var(--error-900);
   --diagram-no-text:      var(--error-300);
+
+  /* Плашка тёмного продукта (ds/screens/case.md §5): номер выноски светлый,
+     красный уходит на ступень 300 — error-500 на gray-950 даёт 2.96:1. */
+  --callout-mark:         var(--gray-00);
+  --callout-mark-text:    var(--gray-950);
+  --callout-issue:        var(--error-300);
+  --callout-issue-text:   var(--gray-950);
 }
 
 /* ============================================================

@@ -1,0 +1,1585 @@
+{
+  "version": "common-a-review-2026-10-04",
+  "baseHead": "62304d8e555193a26926b673a56ba13f631ecd7e",
+  "status": "prepared-for-visual-acceptance; no commit",
+  "files": [
+    {
+      "path": "CLAUDE.md",
+      "purpose": "required-base-support",
+      "bytes": 2998,
+      "sha256": "0de6faa06a79c0beb216c028ffaa4c9be27cc66e7b4c7c93d43302f7a3c50232"
+    },
+    {
+      "path": "PLAN-CHATS.md",
+      "purpose": "required-base-support",
+      "bytes": 24101,
+      "sha256": "79bb92668b5cf159f678158592cc7de7a7287af7569e93cc5edf64f515a946ec"
+    },
+    {
+      "path": "ds/CONTRACT.md",
+      "purpose": "frozen-common",
+      "bytes": 16612,
+      "sha256": "479b8d860d6be9e933d54d6e7dffb12425cc63ffadd395cf2562842a9c960ae4"
+    },
+    {
+      "path": "ds/components.md",
+      "purpose": "frozen-common",
+      "bytes": 102750,
+      "sha256": "4254db822f754790c72a61a6e52d63687a8cf7bc5772e1629b2543a4f08c96d2"
+    },
+    {
+      "path": "ds/foundation.md",
+      "purpose": "frozen-common",
+      "bytes": 48281,
+      "sha256": "802fc0d0bd6e945262a0a3b48942b518b56dcbc286615e8b2b3ddffba6d70d39"
+    },
+    {
+      "path": "ds/motion-concept.md",
+      "purpose": "frozen-common",
+      "bytes": 52690,
+      "sha256": "033ffc99a1b2319101d1cb50ae91b37abd6cc894996ff49063504a7b9df6b080"
+    },
+    {
+      "path": "ds/motion.js",
+      "purpose": "frozen-common",
+      "bytes": 4703,
+      "sha256": "2232f827a51a8d57787578f5e8ecdd67cd47015ecde89a9a357755d83dd444bc"
+    },
+    {
+      "path": "ds/patterns.md",
+      "purpose": "frozen-common",
+      "bytes": 65132,
+      "sha256": "0062be8aba1c2d70d3817a11686e98142214433b65785467753d113af9608566"
+    },
+    {
+      "path": "ds/screens/case.md",
+      "purpose": "frozen-common",
+      "bytes": 55431,
+      "sha256": "4fd07d5b1318ae8bd15f615df4daf20eee3b572d5b5fcfef99b1e41c25db334f"
+    },
+    {
+      "path": "ds/story-contract.md",
+      "purpose": "frozen-common",
+      "bytes": 9801,
+      "sha256": "186258ea558f38ca1d45b550ea59de93ba162df11e7da786e7478147b802eb36"
+    },
+    {
+      "path": "ds/tokens.css",
+      "purpose": "frozen-common",
+      "bytes": 31208,
+      "sha256": "47f89e88a2796834e9ef45d4c473a0411d7ec58e9fd366dd30d77adc9611b832"
+    },
+    {
+      "path": "outputs/agent-ops-checkpoint-focus.mp4",
+      "purpose": "accepted-pilot-support",
+      "bytes": 1211824,
+      "sha256": "3818463d005c38686ec4ceec239099e093d0078e1e8d370e97168f0219e33b3b"
+    },
+    {
+      "path": "outputs/agent-ops-checkpoint-review.md",
+      "purpose": "accepted-pilot-support",
+      "bytes": 9611,
+      "sha256": "5d2d716423cbcd0d86a8db4781dd32f660c8bd272e1c9a71971854933698a79f"
+    },
+    {
+      "path": "outputs/agent-ops-checkpoint-scene-sheet.jpg",
+      "purpose": "accepted-pilot-support",
+      "bytes": 183798,
+      "sha256": "a4e98bc8bdd8ab91eacf9f972273acd53a484f73df8d4ab88be6c89af0933883"
+    },
+    {
+      "path": "outputs/agent-ops-next-link-controls.json",
+      "purpose": "accepted-pilot-support",
+      "bytes": 2626,
+      "sha256": "b49384cd3d91b343f8a4dd28b0c97a5e6959a9d736ba754844e7929c25839af3"
+    },
+    {
+      "path": "outputs/agent-ops-next-link-only.png",
+      "purpose": "accepted-pilot-support",
+      "bytes": 44645,
+      "sha256": "d46aca97499c1710fda95388cd6b2fd2d564097eb8a24fceca7aa7713eff66ff"
+    },
+    {
+      "path": "package-lock.json",
+      "purpose": "required-base-support",
+      "bytes": 263720,
+      "sha256": "455bc6428c91a0e55c115bfbfa58c866e89fbad12de5c258d5816d25e2fe0ec4"
+    },
+    {
+      "path": "package.json",
+      "purpose": "required-base-support",
+      "bytes": 1052,
+      "sha256": "e43d9f6281b10bcadeea574f3243754d2cd9768861a62023cdacdd83463ecca3"
+    },
+    {
+      "path": "public/media/case-dssl/cover/resolution-center.webp",
+      "purpose": "required-base-support",
+      "bytes": 93262,
+      "sha256": "86b3bbcdebac8b8c224c4637b531a13292e87955eb677ca526e0dea031f39137"
+    },
+    {
+      "path": "public/media/case-dssl/polish-after-resolution.webp",
+      "purpose": "required-base-support",
+      "bytes": 108262,
+      "sha256": "3b1a8628427985685eecbf4b45ce98926eaf28939685f182af5af878e3c09a9a"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/approval-card-1440.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 42658,
+      "sha256": "edeb175a469c6ab01ebbc2786798f387c24ca9de5e78c347c4bbe79f08bcc7be"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/approval-card-390.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 63932,
+      "sha256": "e57d341f9cd591d71dc25cde2f5abd4ff79785336dc9adfb6bf712a780db67ff"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/clusters-1440.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 88622,
+      "sha256": "e6fb286afaeb86917b453764ea1e5619fa03e54300c881c13463783f4b3ec1cf"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/clusters-390.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 69430,
+      "sha256": "850872d2277a5032943ed96c270ba1ad33b3cf0655ae72031457664e09ab333a"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/clusters-framed-1440.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 89586,
+      "sha256": "28ab7ad8dcd95a92c4faef0359866badc631482bec76721bdd43701b04db777c"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/clusters-framed-390.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 71550,
+      "sha256": "81c22c923ee373a65c4a58d429dd934d5cbb59c2e10cc45c108ad482f5988bb3"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/consequences-1440.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 45018,
+      "sha256": "632d04026509cc86372c6b89e450af7a495e5540320b1f473d184fc6592ef7f9"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/consequences-390.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 70734,
+      "sha256": "8b000d3244aa4d4c1242c4596ea901407034e2e6be536d2a6245829146fc02d3"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/evidence-1440.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 56050,
+      "sha256": "662503b0350700901510aeeb180f98d4d790b910a30c643e29974fd5a79033a7"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/evidence-390.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 124000,
+      "sha256": "26f3131128b812cdbbce5c8e38fbcd70c066bf16497d5397b7a1722c9409dd55"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/evidence-panel.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 22700,
+      "sha256": "e3251b3807fd441c30e464a03e2a8e51a9165818679d8f28e2a022f2dea7ec54"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/message-1440.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 26686,
+      "sha256": "3b96c7efc745e9f90922987a4b201f686913965a120540fc193f7c879ec5338f"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/message-390.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 43208,
+      "sha256": "21377f70a637e8e2d4d6c6340cc94965ab6707d74625cdaeddfa61fbf406f304"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/payout-1440.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 19000,
+      "sha256": "b12f03252f8861b1161c5d1d664f2027c4def08aab116f0169753f0fd709955b"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/payout-390.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 30036,
+      "sha256": "93d4bf513cb3aaf1518019dc946225c5690dc77d6234449c53fd852a2d119391"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/poster-mid.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 67714,
+      "sha256": "eaeee8559227893b365a3845583113a3b87ab0112e9188a24055f4180918afd0"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/poster-tall.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 45088,
+      "sha256": "72e2d47d84ab436f0997885e81ab89021e32f2e3ed240eb106f8bf30d8414009"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/poster-wide.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 57246,
+      "sha256": "7a3084f772bd27928e558116e744190e343b50e32514b3198e2133aeeaba9e82"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/run-context.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 215134,
+      "sha256": "a52be222a2afe23ee33ce3a9df9177221e6035b1bbc2caad0992bc240f5ebed8"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/transcript-1440.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 70284,
+      "sha256": "78bb0924ae146366ff2c92c22b5e1722387785eb445105e1eaf05c8227a3323a"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/transcript-390.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 153410,
+      "sha256": "1410b201518891fbb6f8ffd5f209cc1369e51573d6320b75f33a3b41a3c3067a"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/transcript-framed-1440.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 100660,
+      "sha256": "85c5df7567033be79e0b9bb6169543b892346ea64a5520c7acd860a605a4c4b6"
+    },
+    {
+      "path": "public/media/pilot-agent-ops/transcript-framed-390.webp",
+      "purpose": "accepted-pilot-support",
+      "bytes": 153518,
+      "sha256": "40408723c498077db5e302335fbc08740ea3ee014ac78a30d42da0822821c72f"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/availability-not-confirmed-288.webp",
+      "purpose": "contract-example",
+      "bytes": 5818,
+      "sha256": "82ab710207bda887e51653c592df08064ea21a8bcea284a89c748dc49f4fe477"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/availability-not-confirmed-480.webp",
+      "purpose": "contract-example",
+      "bytes": 5818,
+      "sha256": "82ab710207bda887e51653c592df08064ea21a8bcea284a89c748dc49f4fe477"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/availability-stale-288.webp",
+      "purpose": "contract-example",
+      "bytes": 9532,
+      "sha256": "ce0f660540c77b992aa0b37b075b5ba7f7562633711cf80bc6a785ab09b9f67f"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/availability-stale-480.webp",
+      "purpose": "contract-example",
+      "bytes": 9532,
+      "sha256": "ce0f660540c77b992aa0b37b075b5ba7f7562633711cf80bc6a785ab09b9f67f"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/availability-verified-288.webp",
+      "purpose": "contract-example",
+      "bytes": 7014,
+      "sha256": "eb4817586c4f56fdece4552ffd7732626d85554bb4fecda42555968e870c9e44"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/availability-verified-480.webp",
+      "purpose": "contract-example",
+      "bytes": 7014,
+      "sha256": "eb4817586c4f56fdece4552ffd7732626d85554bb4fecda42555968e870c9e44"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/fileupload-complete-288.webp",
+      "purpose": "contract-example",
+      "bytes": 23626,
+      "sha256": "c60430673ab4cba2d646c91e82c4a11d15d7258b003208ec4723ceeb6b47f647"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/fileupload-complete-480.webp",
+      "purpose": "contract-example",
+      "bytes": 25742,
+      "sha256": "0085c1877449fc358737ac1cef25239e2893fde3a8ca12efd3eecfabecf6d4e3"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/fileupload-empty-288.webp",
+      "purpose": "contract-example",
+      "bytes": 28080,
+      "sha256": "25377e26bb117ab098897c200d81fe0987727752e14601fcbf2c13c928fbe0c9"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/fileupload-empty-480.webp",
+      "purpose": "contract-example",
+      "bytes": 29988,
+      "sha256": "2fc45d1ba5ae388f9b6760b57aa3bf4a08c456cc5847b43d1b2ee5eb50dcd384"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/fileupload-error-288.webp",
+      "purpose": "contract-example",
+      "bytes": 29456,
+      "sha256": "581245aeddfe1326a0e0cbb677d6179f2e0975c2638089943447e1fb4758c5ac"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/fileupload-error-480.webp",
+      "purpose": "contract-example",
+      "bytes": 32260,
+      "sha256": "0fda02355523f19606c3befe5c8da6ffeff303466b4230cff9cf25d312551c88"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/inter-OFL.txt",
+      "purpose": "contract-example",
+      "bytes": 4477,
+      "sha256": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/inter-latin.woff2",
+      "purpose": "contract-example",
+      "bytes": 48256,
+      "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/quantitystepper-at-minimum-288.webp",
+      "purpose": "contract-example",
+      "bytes": 1168,
+      "sha256": "43cb2b36f5cc13493a79724cdc4cccb7a2c50aeffab3a5c0fc3a6c3bab61373d"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/quantitystepper-at-minimum-480.webp",
+      "purpose": "contract-example",
+      "bytes": 1168,
+      "sha256": "43cb2b36f5cc13493a79724cdc4cccb7a2c50aeffab3a5c0fc3a6c3bab61373d"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/quantitystepper-default-288.webp",
+      "purpose": "contract-example",
+      "bytes": 1330,
+      "sha256": "fe9275dc763e36bc842b98e9335d84436f4f2459be9a14e1de0604576d9f9372"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/quantitystepper-default-480.webp",
+      "purpose": "contract-example",
+      "bytes": 1330,
+      "sha256": "fe9275dc763e36bc842b98e9335d84436f4f2459be9a14e1de0604576d9f9372"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/quantitystepper-disabled-288.webp",
+      "purpose": "contract-example",
+      "bytes": 1010,
+      "sha256": "9d6bcf9f84531b026fb33080419a214bfc539c6e7b162b2b86fc735b6511f05f"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/quantitystepper-disabled-480.webp",
+      "purpose": "contract-example",
+      "bytes": 1010,
+      "sha256": "9d6bcf9f84531b026fb33080419a214bfc539c6e7b162b2b86fc735b6511f05f"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/resolutionrow-ambiguous-288.webp",
+      "purpose": "contract-example",
+      "bytes": 32154,
+      "sha256": "14cebd3bf45cf46f3ad7e045757fd6d5026f7520821c33846f4b07f6d6a0545d"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/resolutionrow-ambiguous-480.webp",
+      "purpose": "contract-example",
+      "bytes": 33068,
+      "sha256": "3abd5f8795632c55761aca77e7901dafc1e1ad91e995b0b91005efd42e1acc53"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/resolutionrow-confirmed-from-ambiguous-288.webp",
+      "purpose": "contract-example",
+      "bytes": 31392,
+      "sha256": "ea4222a3d5a0ef072d9e5b147afff6eae554be40935adb91a8293e761fcafc74"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/resolutionrow-confirmed-from-ambiguous-480.webp",
+      "purpose": "contract-example",
+      "bytes": 31780,
+      "sha256": "b53a5e4ced89789c94240f9e811e5626274f669dfb373a9a2085701c71e7f923"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/resolutionrow-error-288.webp",
+      "purpose": "contract-example",
+      "bytes": 27898,
+      "sha256": "ced1956e833eaa7bc670d1c9e5093018d13e1300971f55c45b5c72560051ec73"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/resolutionrow-error-480.webp",
+      "purpose": "contract-example",
+      "bytes": 29078,
+      "sha256": "e22303369452316b01882ef87531da26404464887e00e6d2a787020fd45b771f"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/resolutionrow-missing-288.webp",
+      "purpose": "contract-example",
+      "bytes": 25004,
+      "sha256": "97840220c48f2ff7788e8c20e08891b11e876af7907c453b391ded0b44a610cd"
+    },
+    {
+      "path": "public/media/rebuild/common/portal/resolutionrow-missing-480.webp",
+      "purpose": "contract-example",
+      "bytes": 25452,
+      "sha256": "169ba5f5c9e7797823c781f42005c260937d7c651b5317d4e1eb0af5dc32431d"
+    },
+    {
+      "path": "research/portfolio-benchmark/README.md",
+      "purpose": "accepted-pilot-support",
+      "bytes": 3570,
+      "sha256": "d042a81ff4e8acee69ec9e56484b4359216b17b2cb7d660d6f66403164f89ebe"
+    },
+    {
+      "path": "research/portfolio-benchmark/case-blueprint/case-blueprint.html",
+      "purpose": "accepted-pilot-support",
+      "bytes": 35691,
+      "sha256": "001bd41308f609d1476e06636a37c53a996879e3929c01d0cabad15d8734da9a"
+    },
+    {
+      "path": "research/portfolio-benchmark/ha-deep-dive.md",
+      "purpose": "accepted-pilot-support",
+      "bytes": 14675,
+      "sha256": "40b750d2fe24eea40a5a7bb1cc6ba04a3731c1af244b729157eb0cbfe54f54e3"
+    },
+    {
+      "path": "research/portfolio-benchmark/harmony-checklist.md",
+      "purpose": "accepted-pilot-support",
+      "bytes": 10196,
+      "sha256": "1f92e9b2b1a3a8d005ff32569ffab391fcbb7906b12fb8eba575a7596b2b2e3d"
+    },
+    {
+      "path": "research/portfolio-benchmark/pilot-agent-ops-report.md",
+      "purpose": "accepted-pilot-support",
+      "bytes": 7079,
+      "sha256": "3e5cecccdbcde7b954124ae1a28e4a1f2f409b358ce361e00d4714abddc0612f"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/artifact-visual-spec.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 29194,
+      "sha256": "2887690bae19da489da0ababd8bb4b777cecce92021231890a8fdbc3a767fc70"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/case-plan.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 31703,
+      "sha256": "3d930f59dd4d29f277b57525e3da22ed40c94ac9734de7024291a5266c161276"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/chat-packets.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 19333,
+      "sha256": "72a62a4cab503fa5ba9266e384b116e2a1a0ef3369fec0627240d1cb41bffe63"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/competitive_analysis_final.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 13026,
+      "sha256": "72d0415e3eb4a0c1367cb957a871d8d60ecb763b329e7ac702d72f4714eb2227"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/competitor_features.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 2751,
+      "sha256": "d14960be6cd220765faed37b21853caf8f18385ca6d14685f4965356d5cdc37a"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/competitor_swot.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 3426,
+      "sha256": "8979d5077dc0c6da86429b37400fdc46fd8d188701c3864b46904690ca833a41"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/competitor_ux_patterns.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 4936,
+      "sha256": "f82b5f760af7dd516818d56eae80d16f954d7c844b58068ebe278fdc8b410757"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/data-and-motion.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 22819,
+      "sha256": "e9f0fa051c57b3b7efbe20bd3a1db15a157c4369f526bcd90f28e2531fa7329f"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/previous-plan-2026-10-03.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 43143,
+      "sha256": "7e623c8546fd1586c8c48c2b8b6847af99bd1555f92d6e7d0569272c0ba3e723"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/prompts/README.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 2581,
+      "sha256": "25481ed74bbbcffab4bde3f08355243f2f13b27ce8dd2c5f81ab4c80706620b2"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/prompts/a-common.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 10821,
+      "sha256": "3179f9962ea8856736e4c0aa5d103cd57fcecd94431e42343c3062695a60c2af"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/prompts/b-partner-portal.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 13394,
+      "sha256": "b46a8b04e1b5c670c149408f3503c1928948574a1aaf2654bbfa1b300be0d846"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/prompts/c-learn.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 12981,
+      "sha256": "a9141957faf122c86e449fff29613e38303ab7d662d19c53105ac7c1a444bc00"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/prompts/d-vet-clinic.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 13131,
+      "sha256": "d2ae8d4e368c5ec3208ec89ff544aea943c839a225c4bd6e2a748a605c2ce502"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/prompts/e-pawly.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 13300,
+      "sha256": "279031740fc3bab6b9e111141caee1fe6505c7c203888816dcd317bd67f3c0f2"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/prompts/f-agent-ops.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 14589,
+      "sha256": "f32a2ae74334925829a5b09c7ba511932716cc85d840124c2dd16d05c9945fb2"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/prompts/g-integration.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 13045,
+      "sha256": "91ae5d996d2d578a943b1935cef018204409041c7128a85241221133cbab1199"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/references/README.md",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 2442,
+      "sha256": "8e73e6701dd9b281cac205c17b736a5d17cb79a583002cbabcd36b9f8ad0e07c"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/references/ha-component-library.png",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 390636,
+      "sha256": "8e3afa5bf9f4ad61ef7b5341623744dd101b9d1cc61e3726331c2f641b670622"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/references/ha-prototype-map.png",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 1443478,
+      "sha256": "10398bb45e269d910a059f69493a9241af419a293e46639f1fc2d78a84db0785"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/references/ha-screen-map.png",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 113715,
+      "sha256": "5dc573e6ef88406a388fc436650baed0b63de6d8efe933428197ef56ab536073"
+    },
+    {
+      "path": "research/portfolio-rebuild-2026-10-03/references/ha-user-flow.png",
+      "purpose": "current-plan-and-pinned-references",
+      "bytes": 136255,
+      "sha256": "82585098d77212952fa2c289754387f30baa7d4bfa8271906636ec69688bca79"
+    },
+    {
+      "path": "scripts/build-pilot-media.mjs",
+      "purpose": "accepted-pilot-support",
+      "bytes": 5404,
+      "sha256": "8a2bdabdde6cdc95e14a26c6bfc0ecf613e5661aec15953ec0c125c55b3b7da4"
+    },
+    {
+      "path": "scripts/check-scoped-css.cjs",
+      "purpose": "required-base-support",
+      "bytes": 4603,
+      "sha256": "2bc41aaddb03ab1ecb932193f82e78841921943326a07474f4365494c12d5a3d"
+    },
+    {
+      "path": "scripts/harmony-check.mjs",
+      "purpose": "required-base-support",
+      "bytes": 13035,
+      "sha256": "1f676b5dfc57f0bf1777c9786951a88bcdb931533c062e891a19b993e8fe2834"
+    },
+    {
+      "path": "scripts/shoot-pilot-cover-panels.mjs",
+      "purpose": "accepted-pilot-support",
+      "bytes": 2760,
+      "sha256": "8305747d51aa7e985c9cc270c8f55e06e1dc3b756a4aa6911fb393b84f04eecd"
+    },
+    {
+      "path": "scripts/shoot-pilot-panel-insets.mjs",
+      "purpose": "accepted-pilot-support",
+      "bytes": 4695,
+      "sha256": "14969c39fbbd8811f34e3edee14e22f22a746d4608e79636390690a5fbe505fb"
+    },
+    {
+      "path": "scripts/verify-case-controls.mjs",
+      "purpose": "required-base-support",
+      "bytes": 5822,
+      "sha256": "888d40f75afecdfe8d3294375a2c93d136159e0357178c7ea1884cffe061bb24"
+    },
+    {
+      "path": "scripts/verify-case-resize.mjs",
+      "purpose": "required-base-support",
+      "bytes": 2342,
+      "sha256": "b3cafc01329e201b6fbd2d48e67925ed117f32e8248a6614bba93b07bc31bce5"
+    },
+    {
+      "path": "scripts/verify-motion-lifecycle.mjs",
+      "purpose": "required-base-support",
+      "bytes": 2423,
+      "sha256": "93ba16cf1ca5c730b9c75d20cf9ad47396ece14e6faf8987eb2be6ceb1126d82"
+    },
+    {
+      "path": "src/components/CaseArtifact.astro",
+      "purpose": "frozen-common",
+      "bytes": 2269,
+      "sha256": "5aef8586235d65b92125de95a42d312d1ae47e08aade83420b595b226e6c5ad4"
+    },
+    {
+      "path": "src/components/CaseArtwork.astro",
+      "purpose": "frozen-common",
+      "bytes": 7019,
+      "sha256": "65f8085d31102cc04184f7aa0f6022a5b1d9e59511a1d12534e433890281f29e"
+    },
+    {
+      "path": "src/components/CaseCallout.astro",
+      "purpose": "frozen-common",
+      "bytes": 6757,
+      "sha256": "660fa6623d5a258a19c1740f4be20a364e8f49eb16c622ebefba120bd34e5520"
+    },
+    {
+      "path": "src/components/CaseCarousel.astro",
+      "purpose": "frozen-common",
+      "bytes": 8696,
+      "sha256": "2bd18013b8bf6976b37e05d6c8e0fb1d5afbce7678647e1dfd6b840c3fad0d6d"
+    },
+    {
+      "path": "src/components/CaseCover.astro",
+      "purpose": "frozen-common",
+      "bytes": 17858,
+      "sha256": "ff2a7c736c6efb54410468ce74b2ade1b4b1076a62df60082f6f3a8a18ba6625"
+    },
+    {
+      "path": "src/components/CaseImpact.astro",
+      "purpose": "frozen-common",
+      "bytes": 4291,
+      "sha256": "94d989539fcead4223e0e16b256c8393224e9f9cbaeec2ee31b69cdf67f42aaa"
+    },
+    {
+      "path": "src/components/CaseNext.astro",
+      "purpose": "frozen-common",
+      "bytes": 4439,
+      "sha256": "484f7d6a8eb81c3a23f46d94307056f6c5426771be33b68077fcfd253e835143"
+    },
+    {
+      "path": "src/components/CaseNumbers.astro",
+      "purpose": "frozen-common",
+      "bytes": 3126,
+      "sha256": "aa1220972bc8d9962c5f42404a9d66202e9fc7be14cae20eca6d96e277b0dbbf"
+    },
+    {
+      "path": "src/components/CasePlate.astro",
+      "purpose": "frozen-common",
+      "bytes": 2430,
+      "sha256": "e23e0acadc1363b78f2fa107fdfcd6372a922852c137b71b977fc2a0a0c30c70"
+    },
+    {
+      "path": "src/components/CaseScreen.astro",
+      "purpose": "frozen-common",
+      "bytes": 3504,
+      "sha256": "64135c62df1bb027b5a8d37e7ab6da2d6f334884f3bd87018cf47137d41356b4"
+    },
+    {
+      "path": "src/components/CaseSheet.astro",
+      "purpose": "frozen-common",
+      "bytes": 1270,
+      "sha256": "60b53312d6721f37f68a985616b03e91737f907422acce408518f9ee7ff4032a"
+    },
+    {
+      "path": "src/components/CaseShot.astro",
+      "purpose": "frozen-common",
+      "bytes": 3284,
+      "sha256": "9cdd148859436876ca5616825ad245ecc7e40152a4112b736f64dbdb6f812c1b"
+    },
+    {
+      "path": "src/components/CaseSpecimen.astro",
+      "purpose": "frozen-common",
+      "bytes": 5766,
+      "sha256": "b98270bdc4dc80a91cef5d771febf2cf759ba2fca927f5ed06f9ce249fd0773d"
+    },
+    {
+      "path": "src/components/CaseSteps.astro",
+      "purpose": "frozen-common",
+      "bytes": 12116,
+      "sha256": "46c3eb25a00a59529893d3978053bb51ec14baff4595d7f59d5c258ccc209bfd"
+    },
+    {
+      "path": "src/components/CaseStory.astro",
+      "purpose": "frozen-common",
+      "bytes": 4598,
+      "sha256": "bffb7d544c5b57c44a32f61288c0b2487573953421b54907358ae1077ffaeca2"
+    },
+    {
+      "path": "src/components/CaseThesis.astro",
+      "purpose": "frozen-common",
+      "bytes": 3285,
+      "sha256": "d52f53fa2ee0d4feddd992ce8643ba3fc54e64021ebab68ec59d495fbb44eef4"
+    },
+    {
+      "path": "src/components/Diagram.astro",
+      "purpose": "frozen-common",
+      "bytes": 1066,
+      "sha256": "2c2d1390f3d6e0c646932c5b5acba08ce4e5a33470f3aad022ae8dd9be6145a5"
+    },
+    {
+      "path": "src/components/DiagramCanvas.astro",
+      "purpose": "frozen-common",
+      "bytes": 31263,
+      "sha256": "ed229c8cc63b634ab7bf9b229759ea37f6466d3548a8b939c09062828bb590ad"
+    },
+    {
+      "path": "src/components/MetaList.astro",
+      "purpose": "frozen-common",
+      "bytes": 6742,
+      "sha256": "aa76a4ceee58552fd0fa7613aeca276e6f63285da80dc8c71935e15e0e8c7d0f"
+    },
+    {
+      "path": "src/copy/cases/story.ts",
+      "purpose": "required-base-support",
+      "bytes": 10343,
+      "sha256": "e0804623e503af7e027186025a98527332ec37b446cb11ac1aac2539de000348"
+    },
+    {
+      "path": "src/copy/common/agent-ops.ts",
+      "purpose": "contract-example",
+      "bytes": 7890,
+      "sha256": "6dadc5d879ecc23738905095ead5b64b7ebef06dc2dc54ace8ba07c68e7cc6d2"
+    },
+    {
+      "path": "src/copy/common/partner-portal.ts",
+      "purpose": "contract-example",
+      "bytes": 15178,
+      "sha256": "921417eb2dc3a04978433dd83083b4dbaaa9db302fbf4191c2f6b6f949cdb684"
+    },
+    {
+      "path": "src/copy/kit-case.ts",
+      "purpose": "required-base-support",
+      "bytes": 11786,
+      "sha256": "a6f6afa4beff9fd6831ba2687eb9db606f4c5231491f0fc9651601ea490902a5"
+    },
+    {
+      "path": "src/copy/pilot/agent-ops.ts",
+      "purpose": "accepted-pilot-support",
+      "bytes": 7370,
+      "sha256": "e74681a0f1bc941f5d31a6af539082fe33e0a2c66da7a34466337045df30e29f"
+    },
+    {
+      "path": "src/copy/pilot/partner-portal.ts",
+      "purpose": "accepted-pilot-support",
+      "bytes": 759,
+      "sha256": "06883d770afbc837468957630d8e0a71d6649aa47eff6f637d8a722edfd6435b"
+    },
+    {
+      "path": "src/data/diagrams/README.md",
+      "purpose": "required-base-support",
+      "bytes": 6403,
+      "sha256": "0d0a931f1d5ee40ffe346d344a6dd855c069759c64fe1f9c1fe10305f6b42ca2"
+    },
+    {
+      "path": "src/data/diagrams/common/portal-flow.ts",
+      "purpose": "contract-example",
+      "bytes": 4012,
+      "sha256": "244054aca9bdb4528a85fb50cf46665cb862d5979e0309d606e57ed3cc5d5603"
+    },
+    {
+      "path": "src/data/diagrams/common/portal-map.ts",
+      "purpose": "contract-example",
+      "bytes": 3431,
+      "sha256": "b1a276baaee20d1b43a1905eab5bd42995309626fa4b5738723a48620e2247d1"
+    },
+    {
+      "path": "src/data/diagrams/kit/flow.ts",
+      "purpose": "required-base-support",
+      "bytes": 4775,
+      "sha256": "8cdfeeabb0ab1ab100eec059adb7092c56b80c788a6329b6a7bced54e2339924"
+    },
+    {
+      "path": "src/data/diagrams/kit/library.ts",
+      "purpose": "required-base-support",
+      "bytes": 6164,
+      "sha256": "f44222f76cc03de6dbc898463b93f2b405c259bcd84a2dfcf3d6af4ced433fe1"
+    },
+    {
+      "path": "src/data/diagrams/kit/map.ts",
+      "purpose": "required-base-support",
+      "bytes": 5174,
+      "sha256": "5a4e95735bbf777fa90047aefd59bbe0efc915479e31dd5c1b722ce9acfea327"
+    },
+    {
+      "path": "src/data/diagrams/kit/prototype.ts",
+      "purpose": "required-base-support",
+      "bytes": 3518,
+      "sha256": "c8d375653a3ab3be782f333ea35cb23b10d088ddcb41ea2f6c9de4142ecb9167"
+    },
+    {
+      "path": "src/data/diagrams/schema.ts",
+      "purpose": "frozen-common",
+      "bytes": 10066,
+      "sha256": "355202205bc13ea932b9cc340d89e579e97bb9455e3244254ff28f24a793ad8c"
+    },
+    {
+      "path": "src/layouts/BaseLayout.astro",
+      "purpose": "frozen-common",
+      "bytes": 8522,
+      "sha256": "a64286782508d8b0f96a3926c90ae0be0fee59e406e60668d7e894ac5d8e8d15"
+    },
+    {
+      "path": "src/layouts/PageShell.astro",
+      "purpose": "frozen-common",
+      "bytes": 9651,
+      "sha256": "98d4cae224c3285bcd94fcc03ee2b90b18051ccd71aaf1a705d30fd9c7c008f0"
+    },
+    {
+      "path": "src/lib/diagram.ts",
+      "purpose": "required-base-support",
+      "bytes": 20562,
+      "sha256": "103ddd0e70198fe39f6d09e24ea0bdb0e5855aea8756ecaa620c26a9a043fb7f"
+    },
+    {
+      "path": "src/pages/kit.astro",
+      "purpose": "required-base-support",
+      "bytes": 30773,
+      "sha256": "7f29f860f842b540e9e85173c08ded07c751342ec5e73b3aeb1e3fe495100eee"
+    },
+    {
+      "path": "src/pages/preview/agent-ops-pilot.astro",
+      "purpose": "accepted-pilot-support",
+      "bytes": 725,
+      "sha256": "841ffe86aa2fdcfd337a3b751504769f6461140f22656fb1dec1605463d0db26"
+    },
+    {
+      "path": "src/pages/preview/common/[locale]/[case].astro",
+      "purpose": "contract-example",
+      "bytes": 2220,
+      "sha256": "506696b2636dccbdc6943451a542b79f66c2ea4de049f661cca9f4cdd722e536"
+    },
+    {
+      "path": "src/pages/preview/common/index.astro",
+      "purpose": "contract-example",
+      "bytes": 1487,
+      "sha256": "46816b6ae8d910d86260682f9efec48fe8fd922c7357e97f2b673ae694bb6f64"
+    },
+    {
+      "path": "src/pages/preview/partner-portal-pilot.astro",
+      "purpose": "accepted-pilot-support",
+      "bytes": 1327,
+      "sha256": "81277e7df534e682c95b9c41a168f5230947e18428a1249ca79fff0bc0ce91c5"
+    },
+    {
+      "path": "src/pages/robots.txt.ts",
+      "purpose": "required-base-support",
+      "bytes": 1538,
+      "sha256": "06c3cebad6fbe4ace51f0a93317e5065009a278bacaf0516386397d6c5df98fa"
+    },
+    {
+      "path": "src/scripts/animations.js",
+      "purpose": "frozen-common",
+      "bytes": 40820,
+      "sha256": "62e0b35bea77782d3623c3ec69c0fe8382798bfb8646a7977bef844de7959be7"
+    },
+    {
+      "path": "src/scripts/motion.js",
+      "purpose": "frozen-common",
+      "bytes": 4703,
+      "sha256": "2232f827a51a8d57787578f5e8ecdd67cd47015ecde89a9a357755d83dd444bc"
+    },
+    {
+      "path": "src/styles/global.css",
+      "purpose": "frozen-common",
+      "bytes": 11679,
+      "sha256": "ebd8ff59a34365ec09d155f6c6858071b482db9070f0c34dc0f2acae63bfa0e2"
+    },
+    {
+      "path": "src/styles/specimen-fonts.css",
+      "purpose": "frozen-common",
+      "bytes": 260,
+      "sha256": "f89bdea565cdc13b7bf200d994711e68992ccc2fee8a9dd45b2be9f7bc6c9112"
+    },
+    {
+      "path": "src/styles/tokens.css",
+      "purpose": "frozen-common",
+      "bytes": 31208,
+      "sha256": "47f89e88a2796834e9ef45d4c473a0411d7ec58e9fd366dd30d77adc9611b832"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/artifact-plan.md",
+      "purpose": "verification-and-handoff",
+      "bytes": 12966,
+      "sha256": "9b6ba064273a9aa9df74b22257858e8ffa917828932fc91081fada3daab3c230"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/base/README.md",
+      "purpose": "verification-and-handoff",
+      "bytes": 4600,
+      "sha256": "f7c96196df30bfa1f3fadd0ae1514c1dc8e2966393dc53d647d9f55cf160113e"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/base/verify-base.mjs",
+      "purpose": "verification-and-handoff",
+      "bytes": 824,
+      "sha256": "a37d27b1ea6e6c823953f95e61d7d241ed33a1f09d675a3aff545d2e99a0e0aa"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/build-final.log",
+      "purpose": "verification-and-handoff",
+      "bytes": 4141,
+      "sha256": "1486356b6cc1706b7b47624ac0ec6794c033c71322f3b2d43c155ed403009048"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/capture-review.mjs",
+      "purpose": "verification-and-handoff",
+      "bytes": 2254,
+      "sha256": "9747c3d8e24f6c6ee92dcff925b63777947a6b1bf6a08d2e01dfc7ce272ea68f"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/capture-specimens.mjs",
+      "purpose": "verification-and-handoff",
+      "bytes": 4859,
+      "sha256": "70a889eaf994bf78018706bdab66a81aa0efd0f1d1286fab27f6c58c2d7a56ef"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/captures.json",
+      "purpose": "verification-and-handoff",
+      "bytes": 25972,
+      "sha256": "2033c89e01fd0cd6a35efdbd30b1c99c4b4d9f66a5b7cc405ef380aa1aef95db"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/check-final.log",
+      "purpose": "verification-and-handoff",
+      "bytes": 335,
+      "sha256": "58a063deab199f201e5d0299bdb4063ace2973775bdd6f8404fd3e5581dd463e"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/common-requests.md",
+      "purpose": "verification-and-handoff",
+      "bytes": 1021,
+      "sha256": "07fae4421661e7c4c222b10ee27abdd56b71e00b146d5388dd8919d639f65fde"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/crop-review.mjs",
+      "purpose": "verification-and-handoff",
+      "bytes": 332,
+      "sha256": "fab0a2ef68fb880bae05c25f67a559ca72ba937353a9935da5a83a2d964fb258"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/css-final.log",
+      "purpose": "verification-and-handoff",
+      "bytes": 1396,
+      "sha256": "c01d62ae6680d109b4494284a0f954233a111e7be358cbf5530650946198925b"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/evidence.md",
+      "purpose": "verification-and-handoff",
+      "bytes": 4137,
+      "sha256": "98f48027ed983dd10936ff559656a0b9c41c62e5dcdbc9a38bfe6ed6fc2bec01"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/harmony-final.log",
+      "purpose": "verification-and-handoff",
+      "bytes": 3728,
+      "sha256": "1b155f78d32c8cefffb5f3b344ef16f27fbc2cd243865bef7588fa67d1041532"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/harmony-short.log",
+      "purpose": "verification-and-handoff",
+      "bytes": 3114,
+      "sha256": "1f406b49b0a3f2ff41db0c00fbd99fdd037de09b9f0f902fbaf2c2b9af99e9e4"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/harmony-specimen-final.log",
+      "purpose": "verification-and-handoff",
+      "bytes": 1854,
+      "sha256": "6d7d72be030b2e9abb8198695f7b9800d1d1e981fc4a576eebdce891159e7880"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/make-snapshot.mjs",
+      "purpose": "verification-and-handoff",
+      "bytes": 6338,
+      "sha256": "64191e8e1a393f4ac79bf0609a42ab6c39db3771944a3e7b7812da45a9266432"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/measure-production.mjs",
+      "purpose": "verification-and-handoff",
+      "bytes": 2952,
+      "sha256": "5de34d5c9d7121eb5d308b187b109a6943fa29c5dc1502f89cd4faf581df0514"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/media.md",
+      "purpose": "verification-and-handoff",
+      "bytes": 2939,
+      "sha256": "4cbef147a8c69ef3c77b02ddf5766787452a15a33e54414105be3b534e69303f"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/mirrors.json",
+      "purpose": "verification-and-handoff",
+      "bytes": 406,
+      "sha256": "ca6f86e1b028ff3efcad10c5d1126b54df668653616106263d5de7bcd3de9610"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/motion-verification.json",
+      "purpose": "verification-and-handoff",
+      "bytes": 32201,
+      "sha256": "9d49fad08b7dd842cae6cb82a159ce0c7cb65923617a82925768805b72451041"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/motion.log",
+      "purpose": "verification-and-handoff",
+      "bytes": 1442,
+      "sha256": "157672a7e88fd204e7133306a4c6be6f21976e79a8a421bfeeb8f124d071e589"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/navigation-verification.json",
+      "purpose": "verification-and-handoff",
+      "bytes": 3407,
+      "sha256": "4a298da8dc5d1113d8bee7b5b63d231a7679dfa1dd744f7edefa341b5e02a00c"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/navigation.log",
+      "purpose": "verification-and-handoff",
+      "bytes": 31,
+      "sha256": "046a9ffd10c2ffa412a700c3ce74055c052b11252c662aa296fa70dbfe66d6a4"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/production-probe.json",
+      "purpose": "verification-and-handoff",
+      "bytes": 5909,
+      "sha256": "b81d90a79b5f76c86d64c2aafd132ead47420947b743919cbe5ef6fe373b77ee"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/production.log",
+      "purpose": "verification-and-handoff",
+      "bytes": 428,
+      "sha256": "e988f67abeea3691d724d8c01c080a591bccd7fec203a3a1c52af364499dbd18"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/record-central.mjs",
+      "purpose": "verification-and-handoff",
+      "bytes": 2750,
+      "sha256": "a759ed8dbbf90e365301d5e4d39cbae8c9b6ee5b6faa023dac56994678b0e701"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/record.log",
+      "purpose": "verification-and-handoff",
+      "bytes": 63,
+      "sha256": "b36a5e4b83404672485f962bd80cc5ea771d96272a5386ad8739082354458a84"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/recording/central-scene.mp4",
+      "purpose": "verification-and-handoff",
+      "bytes": 1221509,
+      "sha256": "e9c47394d964aec29d95f471bf7632ba0900630328c1c139279df1ea52598479"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/recording/focus-0.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 174778,
+      "sha256": "a1e45e60c33ab9e92719fb131ed8ed5ffc92ebd6ba8cb4d16d5516af6bb4538e"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/recording/focus-1.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 172198,
+      "sha256": "fb6fda0a7b8dcb649d2dfe38dc21b157b7329e7ada604f5f6e4a6f5b67b20e1d"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/recording/focus-2.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 149519,
+      "sha256": "7c8dd30f7325a1bd064b15d986457fba758c5d589b4fe59e3271b075c1b9a8d4"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/recording/focus-3.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 112984,
+      "sha256": "57c76fa551efad98dafe0c08cca3bf88a4361b8edbf3bec31aadd91f5385611d"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/recording/movie-sheet.jpg",
+      "purpose": "verification-and-handoff",
+      "bytes": 69099,
+      "sha256": "3ae628ce20819c848a906e3bc86b1887365fd3f57396ce0ad4cf3df008f76a65"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/recording/native-wheel.webm",
+      "purpose": "verification-and-handoff",
+      "bytes": 1895126,
+      "sha256": "2b6954a2851887c67a03a411abc9e6457e9b0398e6e565a2af01a7c1b7704f9b"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/recording/recording.json",
+      "purpose": "verification-and-handoff",
+      "bytes": 235,
+      "sha256": "961b205b91684e0a347184cc89130d7679c67f27ad53da9828f9d08fc071eea6"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/refresh-specimen.mjs",
+      "purpose": "verification-and-handoff",
+      "bytes": 2046,
+      "sha256": "38b7c6c72d35e01ad1df72d16ad65efd6fa786cdd9728032c9a7b1d87aa8257d"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/report.md",
+      "purpose": "verification-and-handoff",
+      "bytes": 18942,
+      "sha256": "7d62880d3beb96fb0173640c6972efa9a1f0c828e084de70d12a5473bb4e227a"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/agent-ops-1440-accepted-prototype.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 53109,
+      "sha256": "a0b6769c29e9cf3b47796fef67e96bb123e1a2e8667c556898f744a689856483"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/agent-ops-1440-cover.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 185940,
+      "sha256": "f9fcd8ddd29ca1ae1785baca16219938cba95fbcd22e5f6f777856f09b92d9d0"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/agent-ops-1440-human-checkpoint.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 909826,
+      "sha256": "0e859cc721adad08a632cefa59b14af4b75cdc7df227bcb8b3f9274368fc7e3f"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/agent-ops-390-accepted-prototype.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 53813,
+      "sha256": "599632eb0566f225d4669e4428f07229727d93f7df335b354abd96a98b978341"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/agent-ops-390-cover.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 76359,
+      "sha256": "70c3c1eec64f371c371edfb7cf2b43fbc90e0f31aec87d744b09d7fde40567b2"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/agent-ops-390-human-checkpoint.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 285665,
+      "sha256": "0c056670272d3e0cb9d7d016c8f3ecab1cd26f21df6a03c8004510ad091df53a"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/agent-ops-ru-1440-accepted-prototype.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 51511,
+      "sha256": "9a3fecdcb02594d06f1faf4d8643c4864a8ba508a6462bc6184eadd6838e57aa"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/agent-ops-ru-1440-cover.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 182447,
+      "sha256": "1e27ccb6c02de664b838221e03191f1ddd93594c1f4cd4fbf05317675efa92a8"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/agent-ops-ru-1440-human-checkpoint.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 797893,
+      "sha256": "d37d5e81c62baa65a83ba9f7ce7fcf7af2f7462241d2fc24f5b3a2fce74d5376"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/agent-ops-ru-360-accepted-prototype.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 51562,
+      "sha256": "7f04838dbde1eefb5c465cac3d9d5a91a668e447c993a2fbc5f9067444617ad4"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/agent-ops-ru-360-cover.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 78626,
+      "sha256": "73c60e2ad41c9c3bd05ed7c5f8533f5d9aaaa31042df376bd7d77eaf9e1e7fc7"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/agent-ops-ru-360-human-checkpoint.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 262768,
+      "sha256": "323359c0947c71ba8f6caa1ab0194689996e7d0fd6637735fd9b78d0df693624"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/agent-ops-ru-390-accepted-prototype.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 51732,
+      "sha256": "4d144f46562f6095efd6ff416fba835f82501194394357a4e8b992af67ffe059"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/agent-ops-ru-390-cover.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 85179,
+      "sha256": "c6ce5b360d6978108b9d74f28dd2d10775b42da0e1b3e7f7e14c91638be3dee1"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/agent-ops-ru-390-human-checkpoint.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 290299,
+      "sha256": "ad9c23a497b36b849f2fab84ddf3e1d4305fd2ea3c2a11ba341f97dd77db9688"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/kit-flow-1440.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 42201,
+      "sha256": "98bdcee0802c0d30fdd56a7bfba01fbd5c77aadffab3bb0cdf56fd5e8b732e53"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/kit-library-1440.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 143940,
+      "sha256": "18aed674d1384cca4620a744175ff0f28c5c3723166c0971422f2a8f9c16927d"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/kit-map-1440.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 49719,
+      "sha256": "520045202752e3a4fd16ef4bb6aa81f05b3142c0ce29c77fb3a2e8e7488acbb3"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/kit-prototype-1440.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 32082,
+      "sha256": "7edc1fbcc1971451d76ec7b3c8f64f8b5add119bf816910a99e4fc6d146bc388"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-1024-domain-system.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 421749,
+      "sha256": "264465f519e2ae9f121d2f627b09b4e140ae6a4e61587ecf3581bc571001c4cb"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-1440-buyer-decision.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 61105,
+      "sha256": "96ca45b5b239b000a396d1587c2f9ec69b82e34e1b7b1f9716a7c8fe7cb3127c"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-1440-cover.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 168824,
+      "sha256": "4d677e1cc2ecc24117c356aa2714d88eab8e6f7cfefd2b572f75a4f8f71f08fa"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-1440-domain-system.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 423603,
+      "sha256": "c12c6f10678c506facff57b4733794f349098d95d1714c715b23eb11aac5e675"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-1440-foundation-detail.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 207602,
+      "sha256": "1639c3a8ded5e6cd218ae2fd5d682366fb74e8124291818e3995e6a603934d1b"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-1440-shared-specification.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 69094,
+      "sha256": "98932286eb4eac90b9fedd976bc2850e14307b08603986fa9a79de44110cd01a"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-1440-shipped-redesign.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 67234,
+      "sha256": "ee2f3d7828665866b454cc5ad6194759a3e9644bf1e8857d6c1dce520d1ad79f"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-360-domain-system.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 390212,
+      "sha256": "cf13fa798109628676d6b9b795f17e4513a1627984ab58b69eb43ed279213eae"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-390-buyer-decision.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 63569,
+      "sha256": "b4ec3a8e75068f589ea5cc1d8320a87bf382e0717304b2980b0d81166268d19f"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-390-cover.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 64261,
+      "sha256": "28153631af47fdc021295974f0f3aaeca9b266f9238529b234db7854801307a3"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-390-domain-system.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 398940,
+      "sha256": "20f7fc295f037a12554ce780dff79b2943c0cad796d1f24049984e82b4112232"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-390-foundation-detail.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 45873,
+      "sha256": "0d2f241b30d71d55cdca29131af03952af033b57f1e27c98bc604d43228a3c1e"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-390-shared-specification.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 61792,
+      "sha256": "1150d30a80149c94a9fb2cfcce95c2e2cdde08b3ea14fd94a73f3780ba0cc52a"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-390-shipped-redesign.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 65260,
+      "sha256": "718beb13e47dc22919a551aff26d8d4fa0696820bd871c48ce00ab4cc2588451"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-ru-1024-domain-system.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 420842,
+      "sha256": "5b7eb6fb74129d8a931fac57e30f2db5782a6081402c8fced23de7ad04247003"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-ru-1440-buyer-decision.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 61209,
+      "sha256": "d26dbdeced7a993498473d199d27c1b68a9c48a70318ced8572f365d5e975974"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-ru-1440-cover.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 171268,
+      "sha256": "598540f3ff7a001dac72da1e1f0ce7e82aee280a4d285a54121681b72c39ef5c"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-ru-1440-domain-system.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 425292,
+      "sha256": "50ae473617d4c512b5e662347ff1f9df8872c130d18d918ac6c74d302538aea2"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-ru-1440-shared-specification.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 68382,
+      "sha256": "6881115c377e5944473c68e046141b81fed4b5aab101a37f5d9078a3b3ee4107"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-ru-1440-shipped-redesign.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 69720,
+      "sha256": "3c313c73c41ef6c230e81f96600878895aea1bf046ceb17a81470b7e0bcd67c2"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-ru-360-buyer-decision.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 66010,
+      "sha256": "b0ed3df079d2937814945f1db590994da0f606c152d7b7aed293c5930fb308f6"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-ru-360-cover.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 63476,
+      "sha256": "e9436914f21662faeb4128a624aa2d21ef63067486f0f6bc714699f5ebfbc701"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-ru-360-domain-system.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 388724,
+      "sha256": "dcae8b407bf1aa30f3ffcb86ec83ea21c952a6f3f858f0f6c9a0f9f27b86ee53"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-ru-360-shared-specification.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 60871,
+      "sha256": "d7771ec4cf5f4a07be3320717094683d266de0dad35c5ff8dd1f85b6005a8f6c"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-ru-360-shipped-redesign.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 70032,
+      "sha256": "2db644b15c27e4dd284df55eec87f918f386e6c072efd713c59e3c2620edad86"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-ru-390-buyer-decision.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 65324,
+      "sha256": "65564540487e82710a12e3d6bd99cb8cdc0e5192436281fe42ab346308674d7b"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-ru-390-cover.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 69290,
+      "sha256": "b9fa8c4326e32d2438813fe53ed0f5247e2bb1255d452ad3b4b28b44a20ce439"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-ru-390-domain-system.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 397257,
+      "sha256": "4a47eaf16bdb2e7a35800ebbbc5ae3e6fbebe95b6f7fdd6813c275984cdc696f"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-ru-390-shared-specification.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 60321,
+      "sha256": "3d9c645d1b9cf6fe596fb9fe064303285bf19d4a9ff92e7ab5473a7fd2d7ad88"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/partner-portal-ru-390-shipped-redesign.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 69800,
+      "sha256": "7e0ef61b10012456ff23a82e01044dde8f42314781c2918478fc7c6cdb15ed3d"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/portal-flow-1440.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 25656,
+      "sha256": "4ebd2e1a30ee56f97c73b7a099ae17dd550fb98d1f87a0bf21be3ff3d509ccb3"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/portal-map-1440.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 29131,
+      "sha256": "f0a4662b10ca976526ad712b6bbdad65e44974cd55fe83d509b7096451836773"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/portal-specimen-1440.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 381025,
+      "sha256": "e54b34188ba0b06e86a8412be302eb6ac40bde3335e6b6f1ecef66bc593d5cb8"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/reference-kit-flow.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 145140,
+      "sha256": "e656df3b81b4dc28725bb5a3540abc442553b4c69b4067d260dfd618e45b3271"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/reference-kit-library.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 405022,
+      "sha256": "aa2c8729880616f51b7879c28b9e688f8720fceb7d0f3f29d2c890aea05dacbb"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/reference-kit-map.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 151325,
+      "sha256": "dcd632ec770cd8c09a3d456b86136752725816fbb2e5c54199dbf5131d7de2d8"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/reference-kit-prototype.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 365235,
+      "sha256": "053d8b445c60cf3da66b3f164f9789776fcc26d2c2a141b68162fedb5c5d6503"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/reference-portal-flow.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 130905,
+      "sha256": "13c13f00027e0a9d668ae1e3a249a2a3289cd3ce4adc67dfbf2ed4e088b7b27e"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/reference-portal-map.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 125243,
+      "sha256": "8db396d4839a0720f1fd0e3be31a663f3b21f16df9fb8acdce2ec3949d978388"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/shots/reference-portal-specimen.png",
+      "purpose": "verification-and-handoff",
+      "bytes": 703568,
+      "sha256": "eff607f6ee6fc2342b5ecae262843d77d78a2f082218a0b7255e5d24b1544724"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/source-verification.json",
+      "purpose": "verification-and-handoff",
+      "bytes": 4848,
+      "sha256": "bb013a18daf5c42c9e85e3d14265ce674ff43a4c263bc2d25e66550046dd1b2b"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/specimen-final.log",
+      "purpose": "verification-and-handoff",
+      "bytes": 30,
+      "sha256": "1de09e47393c9091e52add88660fbd1caca9a4bf6b43cc4cb78a9bbe15f19af8"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/specimen-verification.json",
+      "purpose": "verification-and-handoff",
+      "bytes": 4859,
+      "sha256": "754d96825352fb5e9795b0bbfebbc76cebe4d672c729e5d8dd69b89b7917cbd1"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/static-final.log",
+      "purpose": "verification-and-handoff",
+      "bytes": 2744,
+      "sha256": "b1d7354b8e9cb178e354710e906a6cf83c1300a3e4b8c9c33f6236ddbe44a187"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/static-verification.json",
+      "purpose": "verification-and-handoff",
+      "bytes": 60662,
+      "sha256": "df5f2131fc0da418d4fbe4e0e9b0fab0cd80526b6dd356bbff5603c440d91f07"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/summarize-production.mjs",
+      "purpose": "verification-and-handoff",
+      "bytes": 988,
+      "sha256": "598e6a3512100d330d6202c96be6e9f12dd6dfa58db08b2343cc8b2b39011e83"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/support-verification.json",
+      "purpose": "verification-and-handoff",
+      "bytes": 10966,
+      "sha256": "a24b2fc72bb04bd99ef8ef3c4608315224e0e56c9c037f6ebcf76ce035f71ba6"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/support.log",
+      "purpose": "verification-and-handoff",
+      "bytes": 31,
+      "sha256": "1b4362a7d54b91567bc7664a60ab79a18063c15484bc29a16179bb9cca7f1847"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/verify-motion.mjs",
+      "purpose": "verification-and-handoff",
+      "bytes": 6058,
+      "sha256": "ca8ad344044a2dd17590831a1876429bcf81bdd74359beb69a964cbf9a469ede"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/verify-navigation.mjs",
+      "purpose": "verification-and-handoff",
+      "bytes": 2007,
+      "sha256": "0e4ac5531266c273f7faa701a433aac213376856297fab10d4bacb212c322314"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/verify-sources.mjs",
+      "purpose": "verification-and-handoff",
+      "bytes": 745,
+      "sha256": "fbde9a46f15afbb390b122a565e2a64f6616abca5f37d12dcb292eb924887be6"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/verify-static.mjs",
+      "purpose": "verification-and-handoff",
+      "bytes": 6662,
+      "sha256": "95647b4fa87fc6dc99256835db844028067a5521db404eedd2d75ff1ab1cb635"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/common/verify-support.mjs",
+      "purpose": "verification-and-handoff",
+      "bytes": 3784,
+      "sha256": "e7c0d4862cdb386041d075b82baf81e20732966c93ede072f024b1dd189e39e5"
+    },
+    {
+      "path": "tsconfig.json",
+      "purpose": "required-base-support",
+      "bytes": 165,
+      "sha256": "05e3dc343c2279c0b0e3c05e1cd472be18488fe0e936e86c63069ae1851bb3b0"
+    }
+  ]
+}

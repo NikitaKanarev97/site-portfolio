@@ -1,0 +1,82 @@
+---
+/** Ordered composition; Case modules still own their visuals and motion declarations. */
+import MetaList from './MetaList.astro';
+import CaseCover from './CaseCover.astro';
+import CaseSheet from './CaseSheet.astro';
+import CaseThesis from './CaseThesis.astro';
+import CaseNumbers from './CaseNumbers.astro';
+import CaseArtifact from './CaseArtifact.astro';
+import CaseCallout from './CaseCallout.astro';
+import CaseShot from './CaseShot.astro';
+import CaseCarousel from './CaseCarousel.astro';
+import CaseSteps from './CaseSteps.astro';
+import CaseSpecimen from './CaseSpecimen.astro';
+import CaseImpact from './CaseImpact.astro';
+import CaseNext from './CaseNext.astro';
+import { defineStory, type CaseStory, type CaseTheme } from '../copy/cases/story';
+interface Props {
+  story: CaseStory;
+  lang?: 'en' | 'ru';
+  id?: string;
+  next: { href: string; title: string; theme: CaseTheme; label: string };
+}
+const { story: input, lang = 'en', id = 'case-story', next } = Astro.props;
+const story = defineStory(input);
+const label = (block: CaseStory['blocks'][number]) => block.type === 'steps' ? block.payload.label
+  : block.type === 'outcome' ? block.payload.result.label
+  : block.type === 'thesis' ? block.payload.label
+  : block.payload.thesis?.label ?? block.id;
+---
+<div class="pilot case-story" data-h="case" data-story-version="blocks-v1" data-word-budget="450" id={id}>
+  <CaseCover theme={story.theme} title={story.cover.title} outcome={story.cover.outcome} media={story.cover.media} transitionKey={`case-${story.theme}`} />
+  <CaseSheet>
+    <div class="ds-container"><MetaList layout="facts" items={story.facts} /></div>
+    {story.blocks.map(block => (
+      <section class="ds-container ds-section" id={block.id} aria-label={label(block)} data-block-type={block.type} data-evidence-id={block.evidenceId} data-media-id={block.mediaId} data-story-motion={block.motion}>
+        {block.type === 'thesis' && <CaseThesis {...block.payload} />}
+        {block.type === 'numbers' && <>
+          <CaseThesis {...block.payload.thesis} />
+          <CaseNumbers items={block.payload.items} />
+          {block.payload.note && <p class="ds-body-sm case-story__estimate" data-h="para">{block.payload.note}</p>}
+        </>}
+        {block.type === 'artifact' && <>
+          {block.payload.thesis && <CaseThesis {...block.payload.thesis} />}
+          <CaseArtifact artifact={block.payload.artifact} tone={story.plate} lang={lang} />
+        </>}
+        {block.type === 'comparison' && <>
+          <CaseThesis {...block.payload.thesis} />
+          <CaseCallout callout={block.payload.issue} tone="issue" plate={story.plate} />
+          {block.payload.after && <CaseShot shot={block.payload.after} tone={story.plate} />}
+        </>}
+        {block.type === 'process' && <>
+          <CaseThesis {...block.payload.thesis} />
+          <CaseCarousel {...block.payload} label={block.payload.thesis.label} prevLabel={lang === 'ru' ? 'Предыдущий материал' : 'Previous material'} nextLabel={lang === 'ru' ? 'Следующий материал' : 'Next material'} lang={lang} tone={story.plate} />
+        </>}
+        {block.type === 'steps' && <CaseSteps {...block.payload} variant={block.motion === 'focus' ? 'focus' : undefined} tone={story.plate} />}
+        {block.type === 'shot' && <>
+          {block.payload.thesis && <CaseThesis {...block.payload.thesis} />}
+          <CaseShot shot={block.payload.shot} tone={story.plate} />
+        </>}
+        {block.type === 'detail' && <>
+          <CaseThesis {...block.payload.thesis} />
+          <CaseCallout callout={block.payload.callout} plate={story.plate} />
+        </>}
+        {block.type === 'specimen' && <>
+          {block.payload.thesis && <CaseThesis {...block.payload.thesis} />}
+          <CaseSpecimen specimen={block.payload.specimen} tone={story.plate} lang={lang} />
+        </>}
+        {block.type === 'outcome' && <>
+          <CaseThesis {...block.payload.result} />
+          <CaseImpact outcome={block.payload} cards={block.payload.cards} quote={block.payload.quote} />
+        </>}
+      </section>
+    ))}
+  </CaseSheet>
+  <CaseNext {...next} transitionKey={`case-${next.theme}`} prototype={story.prototype} />
+</div>
+<style>
+  :global(main:has(> .case-story)) { padding-block-start: 0; }
+  .case-story { --cover-offset: calc(var(--space-12) + var(--space-6) * 2 + var(--border-width)); }
+  .case-story__estimate { max-inline-size: var(--measure-case); color: var(--text-muted); text-wrap: pretty; }
+  .case-story [data-story-motion='static'] :global([data-motion]) { opacity: 1; }
+</style>

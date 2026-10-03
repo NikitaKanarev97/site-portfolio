@@ -87,6 +87,8 @@ export interface DiagramNode {
 /* ------------------------------------------------------------------ */
 
 export interface DiagramEdge {
+  /** Stable identity when supplying responsive edge geometry. */
+  id?: string;
   from: string;
   /** Цель. Без неё связь прототипа уходит в `toPoint` — за край поля. */
   to?: string;
@@ -126,6 +128,12 @@ export interface GraphDiagram extends DiagramBase {
   heading?: { lead: Label; name: Label };
   nodes: DiagramNode[];
   edges: DiagramEdge[];
+  /** Same content/IDs, different layout. Labels, types and answers cannot be overridden. */
+  mobile?: {
+    size: { w: number; h: number };
+    nodes: (Pick<DiagramNode, 'id' | 'at'> & Partial<Pick<DiagramNode, 'w' | 'h'>>)[];
+    edges: (Pick<DiagramEdge, 'id'> & Partial<Pick<DiagramEdge, 'exit' | 'enter' | 'via' | 'bend' | 'hotspot'>>)[];
+  };
 }
 
 /* Лист библиотеки ---------------------------------------------------- */
@@ -204,6 +212,7 @@ export type Diagram = GraphDiagram | LibraryDiagram;
 export function defineDiagram<const T extends Diagram>(diagram: T): T {
   if (diagram.kind !== 'library') {
     const ids = new Set(diagram.nodes.map((node) => node.id));
+    if (ids.size !== diagram.nodes.length) throw new Error(`Duplicate diagram node: ${diagram.title.en}`);
     for (const edge of diagram.edges) {
       for (const id of [edge.from, edge.to]) {
         if (id !== undefined && !ids.has(id)) {
@@ -211,6 +220,27 @@ export function defineDiagram<const T extends Diagram>(diagram: T): T {
         }
       }
     }
+    if (diagram.mobile) {
+      const mobileIds = new Set(diagram.mobile.nodes.map(n => n.id));
+      if (mobileIds.size !== ids.size || diagram.mobile.nodes.length !== ids.size || [...ids].some(id => !mobileIds.has(id))) {
+        throw new Error(`Mobile diagram must preserve all node IDs: ${diagram.title.en}`);
+      }
+      const edges = new Set(diagram.edges.map(e => e.id));
+      if (edges.has(undefined) || edges.size !== diagram.edges.length || new Set(diagram.mobile.edges.map(e => e.id)).size !== edges.size || diagram.mobile.edges.length !== edges.size || diagram.mobile.edges.some(e => !edges.has(e.id))) {
+        throw new Error(`Mobile diagram must preserve all edge IDs: ${diagram.title.en}`);
+      }
+    }
   }
   return diagram;
+}
+
+/** Derive content rather than maintaining a second translated/mobile graph. */
+export function mobileDiagram(data: GraphDiagram): GraphDiagram | undefined {
+  if (!data.mobile) return undefined;
+  const { mobile, ...desktop } = data;
+  return { ...desktop, size: mobile.size,
+    nodes: data.nodes.map(node => ({ ...node, ...mobile.nodes.find(n => n.id === node.id) })),
+    edges: data.edges.map(edge => ({ ...edge, via: undefined, bend: undefined, exit: undefined, enter: undefined,
+      ...mobile.edges.find(e => e.id === edge.id) })),
+  };
 }

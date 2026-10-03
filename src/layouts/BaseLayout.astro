@@ -52,6 +52,8 @@ interface Props {
   canonical?: boolean;
   /** Локализованные сквозные строки навигации, доступности и footer. */
   siteCopy?: SiteCopy;
+  /** Native locale destinations for isolated previews outside the public registry. */
+  localePaths?: Partial<Record<Locale, string>>;
 }
 
 const {
@@ -64,6 +66,7 @@ const {
   noindex = false,
   canonical = true,
   siteCopy = site,
+  localePaths,
 } = Astro.props;
 
 const locale: Locale = lang === 'ru' ? 'ru' : 'en';
@@ -72,7 +75,7 @@ const localeOptions = ([
   { label: 'RU', locale: 'ru' },
 ] as const).map((option) => ({
   label: option.label,
-  href: localeSwitchPath(Astro.url.pathname, option.locale),
+  href: localePaths?.[option.locale] ?? localeSwitchPath(Astro.url.pathname, option.locale),
   active: option.locale === locale,
 }));
 

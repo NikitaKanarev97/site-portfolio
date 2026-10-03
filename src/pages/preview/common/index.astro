@@ -1,0 +1,20 @@
+---
+import PageShell from '../../../layouts/PageShell.astro';
+import SectionHead from '../../../components/SectionHead.astro';
+import ProseBlock from '../../../components/ProseBlock.astro';
+---
+<PageShell title="Common case system — visual review" description="Agent Ops and Partner Portal shared-contract previews, EN/RU." noindex canonical={false} contact={false}>
+  <section class="ds-container ds-section">
+    <SectionHead eyebrow="A · 04.10.2026">Общая система кейсов</SectionHead>
+    <ProseBlock variant="lead"><p>Agent Ops сохраняет принятый checkpoint. Фрагмент Portal проверяет IA, flow, настоящие состояния DSSL и качественный итог.</p></ProseBlock>
+    <ul class="common-index ds-body-lg">
+      <li>Agent Ops: <a class="ds-link" href="/preview/common/en/agent-ops/">EN</a> · <a class="ds-link" href="/preview/common/ru/agent-ops/">RU</a></li>
+      <li>Partner Portal: <a class="ds-link" href="/preview/common/en/partner-portal/">EN</a> · <a class="ds-link" href="/preview/common/ru/partner-portal/">RU</a></li>
+      <li><a class="ds-link" href="/kit/#common-contract">Контракты и specimen в /kit</a></li>
+      <li><a class="ds-link" href="/kit/#diagram-map">Четыре образца HA-нотации в /kit</a></li>
+    </ul>
+  </section>
+</PageShell>
+<style>
+  .common-index { display:grid; gap:var(--flow-node); padding-inline-start:var(--space-6); }
+</style>

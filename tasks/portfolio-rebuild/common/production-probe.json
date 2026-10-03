@@ -1,0 +1,217 @@
+{
+  "base": "http://127.0.0.1:4340",
+  "network": "local unthrottled",
+  "samplesPerProfile": 1,
+  "captureAndEncoding": "none during measurement",
+  "physicalDevice": false,
+  "results": [
+    {
+      "slug": "agent-ops",
+      "width": 1440,
+      "cpu": 1,
+      "startup": {
+        "lcp": {
+          "ms": 412,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4340/media/pilot-agent-ops/message-1440.webp"
+        },
+        "cls": 0,
+        "production": true,
+        "booted": true,
+        "transferredKB": 639.4326171875
+      },
+      "frameMedian": 16.699999999254942,
+      "frameP95": 17.200000002980232,
+      "framesOver34ms": 0,
+      "costs": {
+        "TaskDuration": 0.31228900000000004,
+        "ScriptDuration": 0.12260499999999999,
+        "LayoutDuration": 0.008514999999999995,
+        "RecalcStyleDuration": 0.030482999999999996
+      },
+      "errors": []
+    },
+    {
+      "slug": "agent-ops",
+      "width": 1440,
+      "cpu": 6,
+      "startup": {
+        "lcp": {
+          "ms": 484,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4340/media/pilot-agent-ops/message-1440.webp"
+        },
+        "cls": 0.0016888921152907635,
+        "production": true,
+        "booted": true,
+        "transferredKB": 639.4326171875
+      },
+      "frameMedian": 19,
+      "frameP95": 39.69999999925494,
+      "framesOver34ms": 16,
+      "costs": {
+        "TaskDuration": 3.8022799999999997,
+        "ScriptDuration": 1.5216969999999999,
+        "LayoutDuration": 0.090669,
+        "RecalcStyleDuration": 0.36980700000000005
+      },
+      "errors": []
+    },
+    {
+      "slug": "agent-ops",
+      "width": 390,
+      "cpu": 1,
+      "startup": {
+        "lcp": {
+          "ms": 152,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4340/media/pilot-agent-ops/message-390.webp"
+        },
+        "cls": 0.0018050308583848935,
+        "production": true,
+        "booted": true,
+        "transferredKB": 227.6357421875
+      },
+      "frameMedian": 16.699999999254942,
+      "frameP95": 17,
+      "framesOver34ms": 0,
+      "costs": {
+        "TaskDuration": 0.249915,
+        "ScriptDuration": 0.11724199999999999,
+        "LayoutDuration": 0.005278000000000005,
+        "RecalcStyleDuration": 0.007848
+      },
+      "errors": []
+    },
+    {
+      "slug": "agent-ops",
+      "width": 390,
+      "cpu": 6,
+      "startup": {
+        "lcp": {
+          "ms": 612,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4340/media/pilot-agent-ops/message-390.webp"
+        },
+        "cls": 0.0018050308583848935,
+        "production": true,
+        "booted": true,
+        "transferredKB": 227.6357421875
+      },
+      "frameMedian": 17.100000001490116,
+      "frameP95": 27.199999999254942,
+      "framesOver34ms": 5,
+      "costs": {
+        "TaskDuration": 2.8618819999999996,
+        "ScriptDuration": 1.4264100000000002,
+        "LayoutDuration": 0.050176000000000054,
+        "RecalcStyleDuration": 0.07437000000000005
+      },
+      "errors": []
+    },
+    {
+      "slug": "partner-portal",
+      "width": 1440,
+      "cpu": 1,
+      "startup": {
+        "lcp": {
+          "ms": 204,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4340/media/case-dssl/cover/resolution-center.webp"
+        },
+        "cls": 0.0012929848251028806,
+        "production": true,
+        "booted": true,
+        "transferredKB": 294.3095703125
+      },
+      "frameMedian": 16.699999999254942,
+      "frameP95": 17,
+      "framesOver34ms": 0,
+      "costs": {
+        "TaskDuration": 0.22477999999999998,
+        "ScriptDuration": 0.087407,
+        "LayoutDuration": 0.0034389999999999976,
+        "RecalcStyleDuration": 0.0019610000000000044
+      },
+      "errors": []
+    },
+    {
+      "slug": "partner-portal",
+      "width": 1440,
+      "cpu": 6,
+      "startup": {
+        "lcp": {
+          "ms": 420,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4340/media/case-dssl/cover/resolution-center.webp"
+        },
+        "cls": 0.0012929848251028806,
+        "production": true,
+        "booted": true,
+        "transferredKB": 294.3095703125
+      },
+      "frameMedian": 16.899999998509884,
+      "frameP95": 29.800000000745058,
+      "framesOver34ms": 8,
+      "costs": {
+        "TaskDuration": 2.5495660000000004,
+        "ScriptDuration": 1.002059,
+        "LayoutDuration": 0.031293000000000015,
+        "RecalcStyleDuration": 0.011480999999999963
+      },
+      "errors": []
+    },
+    {
+      "slug": "partner-portal",
+      "width": 390,
+      "cpu": 1,
+      "startup": {
+        "lcp": {
+          "ms": 208,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4340/media/case-dssl/cover/resolution-center.webp"
+        },
+        "cls": 0,
+        "production": true,
+        "booted": true,
+        "transferredKB": 294.3095703125
+      },
+      "frameMedian": 16.699999999254942,
+      "frameP95": 17,
+      "framesOver34ms": 0,
+      "costs": {
+        "TaskDuration": 0.21219200000000005,
+        "ScriptDuration": 0.08801900000000001,
+        "LayoutDuration": 0.0011899999999999966,
+        "RecalcStyleDuration": 0.002434000000000002
+      },
+      "errors": []
+    },
+    {
+      "slug": "partner-portal",
+      "width": 390,
+      "cpu": 6,
+      "startup": {
+        "lcp": {
+          "ms": 716,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4340/media/case-dssl/cover/resolution-center.webp"
+        },
+        "cls": 0,
+        "production": true,
+        "booted": true,
+        "transferredKB": 294.3095703125
+      },
+      "frameMedian": 16.599999997764826,
+      "frameP95": 24.600000001490116,
+      "framesOver34ms": 0,
+      "costs": {
+        "TaskDuration": 2.243063,
+        "ScriptDuration": 0.924566,
+        "LayoutDuration": 0.012719000000000036,
+        "RecalcStyleDuration": 0.012507999999999964
+      },
+      "errors": []
+    }
+  ]
+}

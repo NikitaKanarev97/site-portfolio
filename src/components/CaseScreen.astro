@@ -1,0 +1,112 @@
+---
+/**
+ * CaseScreen — ds/components.md, карта ds/screens/case.md §6
+ *
+ * Один экран продукта в кадре кейса: десктоп или телефон, картинка или
+ * клип. Служебный узел модулей CaseShot, CaseCarousel, CaseSteps и
+ * CaseCover — у всех четырёх экран обязан выглядеть одинаково.
+ *
+ * Соотношение читается из файла на сборке (src/lib/media.ts) и уходит в
+ * --ar на корне: ряд кадра раздаёт ширину пропорционально --ar, и все
+ * экраны ряда встают одной высоты — один масштаб на кадр (правило 4).
+ *
+ * Мягкий вид (правило 15): скругление и тень из токенов, край — волосяная
+ * линия тенью, чтобы не менять раскладку. Никаких подсветок поверх кадра.
+ *
+ * Клип идёт через MediaFrame video: запуск по видимости, кнопка паузы,
+ * reduced-motion и сторож кодека уже живут там.
+ */
+import MediaFrame from './MediaFrame.astro';
+import { frameSize } from '../lib/media';
+import type { ShotItem } from '../copy/cases/story';
+import { px } from '../lib/tokens';
+
+interface Props {
+  item: ShotItem;
+  loading?: 'lazy' | 'eager';
+  class?: string;
+  /** Actual specimen: preserve the product's own alpha outline and border. */
+  native?: boolean;
+}
+
+const { item, loading = 'lazy', class: className, native = false } = Astro.props;
+const size = await frameSize(item.src);
+const narrowSize = item.srcNarrow ? await frameSize(item.srcNarrow) : size;
+const narrowMedia = `(max-width: ${px('bp-md') - 1}px)`;
+const ar = size ? size.width / size.height : item.device === 'phone' ? 390 / 844 : 16 / 10;
+---
+
+<div
+  class:list={['case-screen', `case-screen--${item.device}`, native && 'case-screen--native', className]}
+  style={`--ar: ${ar.toFixed(4)}; --ar-narrow: ${narrowSize ? narrowSize.width / narrowSize.height : ar}; ${item.nativeWidth ? `max-inline-size:${item.nativeWidth}px;` : ''}`}
+>
+  {
+    item.video ? (
+      <MediaFrame src={item.src} alt={item.alt} video={item.video} ratio="natural" fill reveal={false} />
+    ) : (
+      <picture>
+      {item.srcNarrow && <source media={narrowMedia} srcset={item.srcNarrow} width={narrowSize?.width} height={narrowSize?.height} />}
+      <img
+        src={item.src}
+        alt={item.altNarrow ?? item.alt}
+        width={size?.width}
+        height={size?.height}
+        loading={loading}
+        decoding="async"
+        data-motion="fade-image"
+      />
+      </picture>
+    )
+  }
+</div>
+
+<style>
+  .case-screen {
+    --screen-edge: var(--border-default);
+    min-inline-size: 0;
+    aspect-ratio: var(--ar-narrow);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    box-shadow:
+      0 0 0 var(--border-width) var(--screen-edge),
+      var(--shadow-md);
+  }
+
+  :global([data-theme='dark']) .case-screen {
+    --screen-edge: var(--border-inverse);
+  }
+
+  .case-screen--phone {
+    border-radius: var(--radius-lg);
+  }
+
+  .case-screen--panel {
+    box-shadow: none;
+  }
+
+  .case-screen img,
+  .case-screen :global(video),
+  .case-screen :global(img) {
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  @media (--bp-md) {
+    .case-screen {
+      aspect-ratio: var(--ar);
+      border-radius: var(--radius-md);
+    }
+
+    .case-screen--phone {
+      border-radius: var(--radius-lg);
+    }
+  }
+
+  .case-screen--native {
+    border-radius: var(--radius-none);
+    overflow: visible;
+    box-shadow: none;
+  }
+</style>

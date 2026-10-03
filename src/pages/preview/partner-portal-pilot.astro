@@ -1,0 +1,25 @@
+---
+/** Closed transition specimen, using the existing real reconstructed portal. */
+import PageShell from '../../layouts/PageShell.astro';
+import CaseCover from '../../components/CaseCover.astro';
+import CaseSheet from '../../components/CaseSheet.astro';
+import CaseThesis from '../../components/CaseThesis.astro';
+import CaseNext from '../../components/CaseNext.astro';
+import { partnerPortal } from '../../copy/cases/partner-portal';
+import { partnerPortalPilot as story } from '../../copy/pilot/partner-portal';
+---
+<PageShell title={partnerPortal.meta.title} description={partnerPortal.meta.description} noindex current="/work">
+  <div class="portal-pilot">
+    <CaseCover theme="portal" title={story.title} outcome={story.outcome} media={story.media} transitionKey="case-portal" />
+    <CaseSheet>
+      <section class="ds-container" aria-label="Preview specimen">
+        <CaseThesis label={story.label} thesis={story.thesis} body={story.body} />
+      </section>
+    </CaseSheet>
+    <CaseNext href="/preview/agent-ops-pilot/" title="Agent Ops" theme="agent" label="Return to pilot" transitionKey="case-agent" />
+  </div>
+</PageShell>
+<style>
+  :global(main:has(> .portal-pilot)) { padding-block-start: 0; }
+  .portal-pilot { --cover-offset: calc(var(--space-12) + var(--space-6) * 2 + var(--border-width)); }
+</style>

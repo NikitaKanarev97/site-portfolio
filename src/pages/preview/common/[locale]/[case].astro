@@ -1,0 +1,28 @@
+---
+import PageShell from '../../../../layouts/PageShell.astro';
+import CaseStory from '../../../../components/CaseStory.astro';
+import { commonAgent } from '../../../../copy/common/agent-ops';
+import { commonPortal } from '../../../../copy/common/partner-portal';
+import { site } from '../../../../copy/site';
+import { siteRu } from '../../../../copy/ru/site';
+export function getStaticPaths() {
+  return ['en','ru'].flatMap(locale => ['agent-ops','partner-portal'].map(slug => ({ params:{locale,case:slug} })));
+}
+const lang = Astro.params.locale as 'en'|'ru';
+const agent = Astro.params.case === 'agent-ops';
+const slug = agent ? 'agent-ops' : 'partner-portal';
+const story = agent ? commonAgent[lang] : commonPortal[lang];
+const next = agent ? {href:`/preview/common/${lang}/partner-portal/`,title:'Partner Portal',theme:'portal' as const,label:lang === 'ru' ? 'Следующий кейс' : 'Next case'} :
+  {href:`/preview/common/${lang}/agent-ops/`,title:'Agent Ops',theme:'agent' as const,label:lang === 'ru' ? 'Контрольный кейс' : 'Control case'};
+---
+<PageShell title={`${story.cover.title} — ${lang === 'ru' ? 'проверка общего контракта' : 'common contract preview'}`} description={story.cover.outcome} lang={lang} siteCopy={lang === 'ru' ? siteRu : site} localePaths={{en:`/preview/common/en/${slug}/`,ru:`/preview/common/ru/${slug}/`}} noindex canonical={false} current={lang === 'ru' ? '/ru/work' : '/work'}>
+  <CaseStory story={story} lang={lang} id={agent ? 'agent-ops-pilot' : 'portal-common'} next={next} />
+  <nav class="ds-container common-preview-links ds-body-sm" aria-label={lang === 'ru' ? 'Версии preview' : 'Preview versions'}>
+    <a class="ds-link" href={`/preview/common/${lang === 'ru' ? 'en' : 'ru'}/${agent ? 'agent-ops' : 'partner-portal'}/`}>{lang === 'ru' ? 'English version' : 'Русская версия'}</a>
+    <a class="ds-link" href="/preview/common/">{lang === 'ru' ? 'Общий слой' : 'Common system'}</a>
+    <a class="ds-link" href="/kit/#common-contract">/kit</a>
+  </nav>
+</PageShell>
+<style>
+  .common-preview-links { display:flex; flex-wrap:wrap; gap:var(--space-6); margin-block-start:var(--flow-block); }
+</style>

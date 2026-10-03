@@ -18,6 +18,12 @@
  * Каждый образец дважды: светлая тема на EN и тёмная на RU, чтобы обе
  * темы и обе локали проверялись одним проходом.
  *
+ * Модули страницы кейса — 2026-10-03 (PLAN-CHATS.md, этап 2, карта
+ * ds/screens/case.md): демо-кейс целиком на варианте обложки «видео» и
+ * тёмной плашке, затем три обложки «экран на цвете» со светлой плашкой.
+ * Демо-кейс помечен data-h="case" — по нему scripts/harmony-check.mjs
+ * считает бюджет слов.
+ *
  * Содержимое — заглушки. Ни одна строка отсюда в продукт не переносится.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -35,10 +41,27 @@ import NoteBlock from '../components/NoteBlock.astro';
 import DecisionBlock from '../components/DecisionBlock.astro';
 import Footer from '../components/Footer.astro';
 import Diagram from '../components/Diagram.astro';
+import CaseSpecimen from '../components/CaseSpecimen.astro';
+import { portalSpecimen } from '../copy/common/partner-portal';
+import { portalMap } from '../data/diagrams/common/portal-map';
+import { portalFlow } from '../data/diagrams/common/portal-flow';
 import diagramMap from '../data/diagrams/kit/map.ts';
 import diagramFlow from '../data/diagrams/kit/flow.ts';
 import diagramPrototype from '../data/diagrams/kit/prototype.ts';
 import diagramLibrary from '../data/diagrams/kit/library.ts';
+import CaseCover from '../components/CaseCover.astro';
+import { agentOpsPilot } from '../copy/pilot/agent-ops';
+import CaseSheet from '../components/CaseSheet.astro';
+import CaseThesis from '../components/CaseThesis.astro';
+import CaseNumbers from '../components/CaseNumbers.astro';
+import CaseArtifact from '../components/CaseArtifact.astro';
+import CaseCallout from '../components/CaseCallout.astro';
+import CaseShot from '../components/CaseShot.astro';
+import CaseCarousel from '../components/CaseCarousel.astro';
+import CaseSteps from '../components/CaseSteps.astro';
+import CaseImpact from '../components/CaseImpact.astro';
+import CaseNext from '../components/CaseNext.astro';
+import { kitStory as story, kitCovers } from '../copy/kit-case.ts';
 /* Кадры стопки берутся из продуктового слоя текстов, а не копируются сюда
    третьим списком: витрина обязана показывать ровно то, что стоит на
    главной, иначе она перестаёт быть поверхностью QA. */
@@ -333,6 +356,15 @@ const caseMeta = [
     </div>
   </section>
 
+  <section class="ds-container ds-section" id="common-contract">
+    <SectionHead eyebrow="CaseStory · ordered blocks" size="sm">Разные истории, один контракт</SectionHead>
+    <p class="ds-body-lg">Стабильные id, evidence/media, разрешённые motion variants. EN/RU — одинаковая структура. <a class="ds-link" href="/preview/common/">Открыть пару preview</a></p>
+    <CaseArtifact artifact={{data:portalMap,caption:'HA-MAP-01 · editorial Portal MVP selection'}} />
+    <CaseArtifact artifact={{data:portalFlow,caption:'HA-FLOW-01 · actual conditions, editorial geometry'}} />
+    <CaseSpecimen specimen={portalSpecimen('en')} />
+    <CaseImpact outcome={{result:{label:'Outcome',thesis:'The commercial redesign shipped'},evidence:{label:'Evidence',text:'Owner-confirmed delivery of the original commercial work.'},tradeoff:{label:'Trade-off',text:'Buyers resolve ambiguity manually; business results remain confidential.'}}} />
+  </section>
+
   <section class="ds-container ds-section" id="diagram-map">
     <SectionHead eyebrow="Diagram · kind=map" size="sm">Карта экранов</SectionHead>
     <Diagram data={diagramMap} lang="en" />
@@ -364,6 +396,108 @@ const caseMeta = [
       <Diagram data={diagramLibrary} lang="ru" />
     </div>
   </section>
+
+  <section class="ds-container ds-section" id="case-modules">
+    <SectionHead eyebrow="Модули кейса · ds/screens/case.md" size="sm">Страница кейса из 10 блоков</SectionHead>
+    <p class="kit__lead ds-body-lg">
+      Ниже демо-кейс целиком: обложка «видео», белый лист, блоки 02–09 на тёмной плашке и переход к
+      следующему кейсу. За ним три обложки «экран на цвете» — по одной на раскладку — со светлой плашкой.
+    </p>
+  </section>
+
+  <CaseCover theme={agentOpsPilot.theme} title={agentOpsPilot.cover.title} outcome={agentOpsPilot.cover.outcome} media={agentOpsPilot.cover.media} as="h2" />
+
+  <div class="kit-case" data-h="case" id="case-demo">
+    <CaseCover
+      theme={story.theme}
+      title={story.cover.title}
+      outcome={story.cover.outcome}
+      media={story.cover.media}
+      as="h2"
+      pauseLabel="Остановить ролик"
+      playLabel="Запустить ролик"
+    />
+    <CaseSheet>
+      <div class="ds-container">
+        <MetaList layout="facts" items={story.facts} />
+      </div>
+
+      <section class="ds-container ds-section" aria-label="02 Задача">
+        <CaseThesis label={story.challenge.label} thesis={story.challenge.thesis} body={story.challenge.body} />
+        <CaseNumbers items={story.challenge.numbers} />
+      </section>
+
+      <section class="ds-container ds-section" aria-label="03 Как устроено">
+        <CaseThesis label={story.system.label} thesis={story.system.thesis} body={story.system.body} />
+        {story.system.diagrams.map((artifact) => (
+          <CaseArtifact artifact={artifact} tone={story.plate} lang="ru" />
+        ))}
+      </section>
+
+      <section class="ds-container ds-section" aria-label="04 Было и стало">
+        <CaseThesis label={story.before.label} thesis={story.before.thesis} body={story.before.body} />
+        <CaseCallout callout={story.before.issue} tone="issue" plate={story.plate} />
+        <CaseShot shot={story.before.after} tone={story.plate} />
+      </section>
+
+      <section class="ds-container ds-section" aria-label="05 Процесс">
+        <CaseThesis label={story.process.label} thesis={story.process.thesis} body={story.process.body} />
+        <CaseCarousel
+          slides={story.process.slides}
+          captions={story.process.captions}
+          label="Артефакты процесса"
+          prevLabel="Предыдущий артефакт"
+          nextLabel="Следующий артефакт"
+          tone={story.plate}
+          lang="ru"
+        />
+      </section>
+
+      <section class="ds-container ds-section" aria-label="06 Продукт по шагам">
+        <CaseSteps label={story.steps.label} items={story.steps.items} tone={story.plate} />
+      </section>
+
+      <section class="ds-container ds-section" aria-label="07 Телефон">
+        <CaseThesis label={story.moments.label} thesis={story.moments.thesis} body={story.moments.body} />
+        <CaseShot shot={story.moments.shot} tone={story.plate} />
+      </section>
+
+      <section class="ds-container ds-section" aria-label="08 Детали и система">
+        <CaseThesis label={story.details.label} thesis={story.details.thesis} body={story.details.body} />
+        <CaseCallout callout={story.details.callout} plate={story.plate} />
+        <CaseArtifact artifact={story.details.library} tone={story.plate} lang="ru" />
+      </section>
+
+      <section class="ds-container ds-section" aria-label="09 Итог">
+        <CaseThesis label={story.result.label} thesis={story.result.thesis} />
+        <CaseImpact cards={story.result.cards} quote={story.result.quote} cost={story.result.cost} />
+      </section>
+    </CaseSheet>
+    <CaseNext
+      href="/preview/partner-portal-pilot/"
+      transitionKey="case-portal"
+      title="Partner Portal"
+      theme="portal"
+      label="Следующий кейс"
+      prototype={story.prototype}
+    />
+  </div>
+
+  {
+    kitCovers.map((cover) => (
+      <div class="kit-case">
+        <CaseCover theme={cover.theme} title={cover.title} outcome={cover.outcome} media={cover.media} as="h2" />
+        <CaseSheet>
+          <div class="ds-container">
+            <MetaList layout="facts" items={story.facts.slice(0, 4)} />
+          </div>
+          <div class="ds-container">
+            <CaseShot shot={cover.shot} />
+          </div>
+        </CaseSheet>
+      </div>
+    ))
+  }
 
   {/* Footer стоит внутри main только здесь: витрина показывает компонент,
       на экранах продукта он живёт под main. */}

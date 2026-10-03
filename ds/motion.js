@@ -16,6 +16,10 @@ export const duration = {
   base:    0.4,
   reveal:  0.6,
   slow:    0.7,
+  lines:   0.64,
+  image:   1,
+  cover:   1,
+  marquee: 24,
 };
 
 /** Кривые. Имена GSAP; CSS-эквиваленты лежат в tokens.css. */
@@ -24,6 +28,7 @@ export const ease = {
   entrance:   'power3.out',
   exit:       'power2.in',
   expressive: 'expo.out',
+  editorial:  'case-editorial', // CustomEase: .645,.05,.355,1
 };
 
 /** Задержки каскада в секундах. */
@@ -48,6 +53,18 @@ export const motion = {
   revealMedia: { duration: duration.slow,    ease: ease.expressive },
   pageOut:     { duration: duration.page,    ease: ease.exit },
   pageIn:      { duration: duration.page,    ease: ease.entrance },
+  lines:       { duration: duration.lines, ease: ease.editorial, stagger: stagger.tight, curve: '.645,.05,.355,1', maskBleed: '0.15em' },
+  caseTransition: { duration: duration.image, out: duration.page, in: duration.slow, cssEase: 'cubic-bezier(.645,.05,.355,1)' },
+  fadeImage:   { duration: duration.image, ease: ease.entrance, y: 24 },
+  coverProof:  { duration: duration.cover, ease: ease.entrance, stagger: stagger.loose, y: 24, accentX: 12 },
+  coverInterlock: { duration: 1.25, ease: ease.editorial, x: 96, rotation: 8, gateAt: 0.45, payoutAt: 0.65 },
+  focusStage: { minHeight: 820, inset: 24, maxHeight: 780, header: 260, distance: 650, hold: 0.78, exchange: 0.22, x: 24, reflowWait: 0.18, scrub: true, ease: ease.editorial },
+  reviewStage: { header: 250, retreatAt: 0.55, retreat: 0.96, fieldAt: 2.55, fieldDuration: 0.45, x: 32, enter: 0.22, stopFrom: 0.12, stopDuration: 0.18, cardDelay: 0.04, ease: ease.entrance },
+  sheet:       { scrub: 0.3, scale: 0.98, opacity: 0.65, tolerance: 2 },
+  pinSwap:     { scrub: 0.25, inset: 32, y: -24, start: 'top 90%', end: 'top 25%' },
+  count:       { duration: duration.image, ease: ease.standard },
+  draw:        { duration: duration.slow, ease: ease.standard },
+  marquee:     { duration: duration.marquee, ease: 'none' },
 };
 
 /**

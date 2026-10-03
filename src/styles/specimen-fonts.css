@@ -1,0 +1,8 @@
+/* The displayed product's real font, separate from portfolio typography. */
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/media/rebuild/common/portal/inter-latin.woff2') format('woff2');
+}

@@ -1,0 +1,2668 @@
+{
+  "base": "http://127.0.0.1:4352",
+  "alpha": [
+    {
+      "file": "/media/rebuild/common/portal/fileupload-empty-480.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/fileupload-empty-288.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/fileupload-complete-480.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/fileupload-complete-288.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/fileupload-error-480.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/fileupload-error-288.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/resolutionrow-ambiguous-480.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/resolutionrow-ambiguous-288.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/resolutionrow-missing-480.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/resolutionrow-missing-288.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/resolutionrow-error-480.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/resolutionrow-error-288.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/resolutionrow-confirmed-from-ambiguous-480.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/resolutionrow-confirmed-from-ambiguous-288.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/availability-verified-480.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/availability-verified-288.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/availability-stale-480.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/availability-stale-288.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/availability-not-confirmed-480.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/availability-not-confirmed-288.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/quantitystepper-default-480.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/quantitystepper-default-288.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/quantitystepper-at-minimum-480.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/quantitystepper-at-minimum-288.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/quantitystepper-disabled-480.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    },
+    {
+      "file": "/media/rebuild/common/portal/quantitystepper-disabled-288.webp",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bleed": 2
+    }
+  ],
+  "profiles": [
+    {
+      "route": "/kit/",
+      "width": 1440,
+      "mode": "reduce",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/kit/",
+      "width": 1440,
+      "mode": "no-js",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/kit/",
+      "width": 1024,
+      "mode": "reduce",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/kit/",
+      "width": 1024,
+      "mode": "no-js",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/kit/",
+      "width": 390,
+      "mode": "reduce",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/kit/",
+      "width": 390,
+      "mode": "no-js",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/kit/",
+      "width": 360,
+      "mode": "reduce",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/kit/",
+      "width": 360,
+      "mode": "no-js",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/preview/common/en/partner-portal/",
+      "width": 1440,
+      "mode": "reduce",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/preview/common/en/partner-portal/",
+      "width": 1440,
+      "mode": "no-js",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/preview/common/en/partner-portal/",
+      "width": 1024,
+      "mode": "reduce",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/preview/common/en/partner-portal/",
+      "width": 1024,
+      "mode": "no-js",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/preview/common/en/partner-portal/",
+      "width": 390,
+      "mode": "reduce",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/preview/common/en/partner-portal/",
+      "width": 390,
+      "mode": "no-js",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/preview/common/en/partner-portal/",
+      "width": 360,
+      "mode": "reduce",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/preview/common/en/partner-portal/",
+      "width": 360,
+      "mode": "no-js",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/preview/common/ru/partner-portal/",
+      "width": 1440,
+      "mode": "reduce",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/preview/common/ru/partner-portal/",
+      "width": 1440,
+      "mode": "no-js",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/preview/common/ru/partner-portal/",
+      "width": 1024,
+      "mode": "reduce",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/preview/common/ru/partner-portal/",
+      "width": 1024,
+      "mode": "no-js",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/preview/common/ru/partner-portal/",
+      "width": 390,
+      "mode": "reduce",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/preview/common/ru/partner-portal/",
+      "width": 390,
+      "mode": "no-js",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/preview/common/ru/partner-portal/",
+      "width": 360,
+      "mode": "reduce",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    },
+    {
+      "route": "/preview/common/ru/partner-portal/",
+      "width": 360,
+      "mode": "no-js",
+      "errors": [],
+      "overflow": 0,
+      "states": [
+        {
+          "id": "ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "missing",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "confirmed-from-ambiguous",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "empty",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "complete",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "error",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "verified",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "stale",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "not-confirmed",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "default",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "at-minimum",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        },
+        {
+          "id": "disabled",
+          "radius": "0px",
+          "shadow": "none",
+          "overflow": "visible",
+          "broken": false
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

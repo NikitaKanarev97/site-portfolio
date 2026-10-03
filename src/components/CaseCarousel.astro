@@ -1,0 +1,263 @@
+---
+/**
+ * CaseCarousel — ds/components.md, карта ds/screens/case.md §8
+ *
+ * Лента артефактов процесса (блок 05). Донор — Ilya Dounar: слайд шире
+ * колонки текста, край следующего торчит справа — намёк, что можно листать.
+ *
+ * Лента нативная: scroll-snap, свайп, Shift + колесо, клавиатура (лента
+ * фокусируемая). Перехвата скролла нет. Кнопки «назад / вперёд» и счётчик
+ * появляются только с JS — без него они ничего бы не делали.
+ *
+ * Лента выходит за правый край контейнера до края секции на величину
+ * поля контейнера: так край следующего слайда упирается в край окна, а
+ * не в колонку, и горизонтальной прокрутки страницы не появляется (50vw
+ * считает полосу прокрутки и дал бы её).
+ *
+ * Каждый слайд — CasePlate с экраном или схемой и подпись до 12 слов.
+ */
+import CasePlate from './CasePlate.astro';
+import CaseScreen from './CaseScreen.astro';
+import Diagram from './Diagram.astro';
+import type { ShotItem } from '../copy/cases/story';
+import type { Diagram as DiagramData } from '../data/diagrams/schema';
+
+interface Props {
+  slides: ({ shot: ShotItem } | { diagram: DiagramData })[];
+  captions: string[];
+  /** Имя ленты для скринридера. */
+  label: string;
+  prevLabel: string;
+  nextLabel: string;
+  tone?: 'light' | 'dark';
+  lang?: 'en' | 'ru';
+  class?: string;
+}
+
+const {
+  slides,
+  captions,
+  label,
+  prevLabel,
+  nextLabel,
+  tone = 'light',
+  lang = 'en',
+  class: className,
+} = Astro.props;
+---
+
+<div class:list={['case-carousel', className]} data-carousel>
+  <div class="case-carousel__bar" data-carousel-bar hidden>
+    <span class="ds-meta-xs case-carousel__count" aria-hidden="true">
+      <span data-carousel-index>1</span> / {slides.length}
+    </span>
+    <div class="case-carousel__buttons">
+      <button type="button" class="case-carousel__button" data-carousel-prev aria-label={prevLabel}>
+        <span aria-hidden="true">←</span>
+      </button>
+      <button type="button" class="case-carousel__button" data-carousel-next aria-label={nextLabel}>
+        <span aria-hidden="true">→</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="case-carousel__track" tabindex="0" role="region" aria-label={label} data-carousel-track>
+  <ul class="case-carousel__list">
+    {
+      slides.map((slide, i) => (
+        <li class="case-carousel__slide">
+          <figure class="case-carousel__figure">
+            <CasePlate tone={tone} class="case-carousel__plate">
+              {'shot' in slide ? (
+                <CaseScreen item={slide.shot} class="case-carousel__screen" />
+              ) : (
+                <Diagram data={slide.diagram} lang={lang} class="case-carousel__diagram" />
+              )}
+            </CasePlate>
+            <figcaption class="ds-body-sm case-carousel__caption" data-h="caption">
+              {captions[i]}
+            </figcaption>
+          </figure>
+        </li>
+      ))
+    }
+  </ul>
+  </div>
+</div>
+
+<style>
+  .case-carousel {
+    --carousel-gutter: var(--margin-sm);
+  }
+
+  @media (--bp-md) {
+    .case-carousel {
+      --carousel-gutter: var(--margin-md);
+    }
+  }
+
+  @media (--bp-lg) {
+    .case-carousel {
+      --carousel-gutter: var(--margin-lg);
+    }
+  }
+
+  .case-carousel__bar:not([hidden]) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block-end: var(--flow-pair);
+  }
+
+  .case-carousel__count {
+    color: var(--text-meta);
+  }
+
+  .case-carousel__buttons {
+    display: flex;
+    gap: var(--space-3);
+  }
+
+  .case-carousel__button {
+    display: inline-grid;
+    place-items: center;
+    inline-size: var(--space-12);
+    block-size: var(--space-12);
+    padding: 0;
+    border: var(--border-width) solid var(--border-strong);
+    border-radius: 50%;
+    background: var(--surface-default);
+    color: var(--text-default);
+    font: inherit;
+    cursor: pointer;
+    transition:
+      background-color var(--motion-state-duration) var(--motion-state-ease),
+      color var(--motion-state-duration) var(--motion-state-ease);
+  }
+
+  .case-carousel__button:disabled {
+    border-color: var(--border-default);
+    color: var(--text-muted);
+    cursor: default;
+  }
+
+  @media (--can-hover) {
+    .case-carousel__button:not(:disabled):hover {
+      background: var(--surface-action-primary);
+      color: var(--text-on-action);
+    }
+  }
+
+  .case-carousel__button:not(:disabled):active {
+    background: var(--surface-action-primary-hover);
+    color: var(--text-on-action);
+  }
+
+  /* position: relative — содержащий блок для абсолютных узлов внутри
+     слайдов (скрытая расшифровка Diagram). Без него они позиционируются от
+     страницы, на месте четвёртого слайда, и дают ей горизонтальную прокрутку. */
+  .case-carousel__track {
+    position: relative;
+    margin-inline-end: calc(-1 * var(--carousel-gutter));
+    padding-inline-end: var(--carousel-gutter);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 0 var(--carousel-gutter);
+    scrollbar-width: none;
+  }
+
+  .case-carousel__track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .case-carousel__list {
+    display: flex;
+    gap: var(--gutter);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* min-inline-size: 0 — схема в слайде прокручивается в своей области, а
+     не растягивает слайд до натуральной ширины SVG. */
+  .case-carousel__slide {
+    flex: 0 0 88%;
+    min-inline-size: 0;
+    scroll-snap-align: start;
+  }
+
+  @media (--bp-md) {
+    .case-carousel__slide {
+      flex-basis: 78%;
+    }
+  }
+
+  .case-carousel__figure {
+    margin: 0;
+  }
+
+  .case-carousel__figure :global(.case-carousel__screen),
+  .case-carousel__figure :global(.case-carousel__diagram) {
+    inline-size: 100%;
+  }
+
+  .case-carousel__caption {
+    margin-block-start: var(--flow-pair);
+    color: var(--text-muted);
+  }
+</style>
+
+<script>
+  /*
+   * Кнопки ленты. Не анимация, а действие: прокрутка на один слайд,
+   * плавная только без reduced-motion. Заводится по astro:page-load —
+   * у сайта клиентская маршрутизация (ds/components.md §MediaFrame).
+   */
+  function setup() {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    document.querySelectorAll<HTMLElement>('[data-carousel]').forEach((root) => {
+      if (root.dataset.carouselReady) return;
+      root.dataset.carouselReady = 'true';
+
+      const track = root.querySelector<HTMLElement>('[data-carousel-track]');
+      const bar = root.querySelector<HTMLElement>('[data-carousel-bar]');
+      const prev = root.querySelector<HTMLButtonElement>('[data-carousel-prev]');
+      const next = root.querySelector<HTMLButtonElement>('[data-carousel-next]');
+      const index = root.querySelector<HTMLElement>('[data-carousel-index]');
+      if (!track || !bar || !prev || !next || !index) return;
+
+      const slides = Array.from(track.querySelectorAll<HTMLElement>('.case-carousel__slide'));
+      bar.hidden = false;
+
+      const step = () => {
+        const [a, b] = slides;
+        return b ? b.offsetLeft - a.offsetLeft : track.clientWidth;
+      };
+
+      const current = () => Math.round(track.scrollLeft / step());
+
+      const update = () => {
+        const i = Math.min(current(), slides.length - 1);
+        index.textContent = String(i + 1);
+        prev.disabled = track.scrollLeft <= 1;
+        next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 1;
+      };
+
+      const go = (dir: number) => {
+        track.scrollTo({
+          left: (current() + dir) * step(),
+          behavior: reduce.matches ? 'auto' : 'smooth',
+        });
+      };
+
+      prev.addEventListener('click', () => go(-1));
+      next.addEventListener('click', () => go(1));
+      track.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+      update();
+    });
+  }
+
+  document.addEventListener('astro:page-load', setup);
+</script>

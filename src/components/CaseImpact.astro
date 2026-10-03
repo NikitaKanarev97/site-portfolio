@@ -1,0 +1,149 @@
+---
+/**
+ * CaseImpact — ds/components.md, карта ds/screens/case.md §8
+ *
+ * Итог (блок 09): три карточки с крупной строкой и подписью, цитата
+ * пользователя и цена решения. Донор — Ilya Dounar, Impact.
+ *
+ * Только цифры, которые владелец защитит на интервью; цитата — только
+ * настоящая. Компонент этого не проверяет — это правило данных
+ * (PLAN-CHATS.md, общие правила: дыры закрываются TODO(owner), не
+ * выдумкой).
+ *
+ * Крупная строка — ds-display-5xl, tabular-nums, режим count этапа 3.
+ * Ниже bp-md карточки столбиком.
+ */
+import MetaList from './MetaList.astro';
+import type { Outcome } from '../copy/cases/story';
+interface Props {
+  cards?: { value: string; caption: string }[];
+  outcome?: Outcome;
+  quote?: { text: string; who: string };
+  cost?: { label: string; text: string };
+  class?: string;
+}
+
+const { cards = [], outcome, quote, cost, class: className } = Astro.props;
+---
+
+<div class:list={['case-impact', className]}>
+  {cards.length > 0 && <ul class="case-impact__cards">
+    {
+      cards.map((card) => (
+        <li class="case-impact__card">
+          <span class="ds-display-5xl case-impact__value" data-motion="count">
+            {card.value}
+          </span>
+          <span class="ds-body-sm case-impact__caption" data-h="caption">
+            {card.caption}
+          </span>
+        </li>
+      ))
+    }
+  </ul>}
+
+  {outcome && <div class="case-impact__statements">
+    <MetaList layout="statements" motion={false} items={[
+      { term: outcome.tradeoff.label, value: outcome.tradeoff.text },
+      { term: outcome.evidence.label, value: outcome.evidence.text },
+      ...(outcome.nextEvidence ? [{ term: outcome.nextEvidence.label, value: outcome.nextEvidence.text }] : []),
+    ]} />
+  </div>}
+
+  {
+    quote && (
+      <blockquote class="case-impact__quote">
+        <p class="ds-heading-2xl case-impact__quote-text" data-h="para">
+          {quote.text}
+        </p>
+        <footer class="ds-meta-xs case-impact__quote-who">{quote.who}</footer>
+      </blockquote>
+    )
+  }
+
+  {
+    cost && (
+      <p class="case-impact__cost">
+        <span class="ds-meta-xs case-impact__cost-label">{cost.label}</span>
+        <span class="ds-body-lg case-impact__cost-text" data-h="para">
+          {cost.text}
+        </span>
+      </p>
+    )
+  }
+</div>
+
+<style>
+  .case-impact__statements > :global(.meta-list) { max-inline-size: var(--measure-case); }
+  @media (--bp-lg) {
+    .case-impact__statements { display: grid; grid-template-columns: repeat(var(--columns-lg), minmax(0, 1fr)); column-gap: var(--gutter); }
+    .case-impact__statements > :global(.meta-list) { grid-column: 3 / -1; }
+  }
+  @media (--bp-xl) {
+    .case-impact__statements > :global(.meta-list) { grid-column: 4 / 11; }
+  }
+  .case-impact__cards {
+    display: grid;
+    gap: var(--gutter);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  @media (--bp-md) {
+    .case-impact__cards {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .case-impact__card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-8);
+    border: var(--border-width) solid var(--border-default);
+    border-radius: var(--radius-lg);
+  }
+
+  .case-impact__value {
+    color: var(--text-default);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .case-impact__caption {
+    color: var(--text-muted);
+  }
+
+  .case-impact__quote {
+    margin: var(--flow-group) 0 0;
+    max-inline-size: var(--measure-lead);
+  }
+
+  .case-impact__quote-text {
+    margin: 0;
+    color: var(--text-default);
+    text-wrap: pretty;
+  }
+
+  .case-impact__quote-who {
+    margin-block-start: var(--flow-pair);
+    color: var(--text-meta);
+  }
+
+  .case-impact__cost {
+    display: flex;
+    flex-direction: column;
+    gap: var(--flow-pair);
+    margin: var(--flow-group) 0 0;
+    max-inline-size: var(--measure-case);
+  }
+
+  .case-impact__cost-label {
+    color: var(--text-meta);
+  }
+
+  .case-impact__cost-text {
+    color: var(--text-subtle);
+    text-wrap: pretty;
+  }
+</style>

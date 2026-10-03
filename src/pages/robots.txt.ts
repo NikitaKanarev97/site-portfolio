@@ -22,6 +22,7 @@ export const GET: APIRoute = ({ site }) => {
         'User-agent: *',
         'Allow: /',
         'Disallow: /kit',
+        'Disallow: /preview/',
         '',
         `Sitemap: ${new URL('/sitemap.xml', site).href}`,
         '',
