@@ -8,7 +8,7 @@ import CaseNext from '../../components/CaseNext.astro';
 import { partnerPortal } from '../../copy/cases/partner-portal';
 import { partnerPortalPilot as story } from '../../copy/pilot/partner-portal';
 ---
-<PageShell title={partnerPortal.meta.title} description={partnerPortal.meta.description} noindex current="/work">
+<PageShell title={partnerPortal.meta.title} description={partnerPortal.meta.description} noindex canonical={false} current="/work">
   <div class="portal-pilot">
     <CaseCover theme="portal" title={story.title} outcome={story.outcome} media={story.media} transitionKey="case-portal" />
     <CaseSheet>

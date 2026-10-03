@@ -18,7 +18,8 @@ import PageShell from '../layouts/PageShell.astro';
 import SectionHead from '../components/SectionHead.astro';
 import ProseBlock from '../components/ProseBlock.astro';
 import ServiceRoutes from '../components/ServiceRoutes.astro';
-import { notFound, serviceRoutes } from '../copy/service.ts';
+import { notFound, serviceRoutes, serviceContactLead } from '../copy/service.ts';
+import { notFoundRu, serviceRoutesRu } from '../copy/ru/service.ts';
 ---
 
 <PageShell
@@ -28,6 +29,7 @@ import { notFound, serviceRoutes } from '../copy/service.ts';
   motion={false}
   noindex
   canonical={false}
+  contactLead={serviceContactLead}
 >
   <section class="ds-container ds-section">
     {/* Код ответа стоит текстом: по нему видно, что ошибся адрес, а не
@@ -44,6 +46,13 @@ import { notFound, serviceRoutes } from '../copy/service.ts';
 
     <h2 class="ds-heading-3xl routes-heading ds-flow-heading">{notFound.routesHeading}</h2>
     <ServiceRoutes items={serviceRoutes} />
+  </section>
+
+  <section class="ds-container ds-section" lang="ru" aria-labelledby="not-found-ru">
+    <h2 class="ds-heading-4xl ds-flow-heading" id="not-found-ru">{notFoundRu.heading}</h2>
+    <ProseBlock variant="lead" motion={false}><p>{notFoundRu.lead}</p></ProseBlock>
+    <h3 class="ds-heading-3xl ds-flow-heading">{notFoundRu.routesHeading}</h3>
+    <ServiceRoutes items={serviceRoutesRu} />
   </section>
 </PageShell>
 

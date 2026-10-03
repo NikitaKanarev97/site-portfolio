@@ -34,21 +34,19 @@ export interface ServiceRoute {
  * остальное.
  */
 export const serviceRoutes: readonly ServiceRoute[] = [
-  { label: 'Home', href: '/', note: 'Role, work authorization, the first case and three more projects.' },
-  {
-    label: 'B2B Partner Portal — the case',
-    href: '/work/partner-portal',
-    note: 'A distributor’s partner portal rebuilt on top of a system that could not be replaced.',
-  },
+  { label: 'Home / selected work', href: '/#work', note: 'Five product design cases, project context and contact.' },
   { label: 'About', href: '/about', note: 'How I work inside constraints I did not set. Work authorization in full.' },
   { label: 'CV (PDF)', href: '/cv.pdf', note: 'One file, direct link, no form in front of it.' },
 ];
+
+/** Error pages have no case above the contact block. */
+export const serviceContactLead = 'For project enquiries or a broken link, email me directly.';
 
 export const notFound = {
   meta: {
     title: `Page not found — ${NAME}`,
     description:
-      'This address does not exist on the site. The four pages that do are listed here: home, the case, about, and the CV.',
+      'This address does not exist. Continue to selected work, About, or the CV in English or Russian.',
   },
   /** Код страницы. Моноширинный, роль ds-meta-xs — тот же знак, что в шапке ответа. */
   code: '404',
@@ -59,17 +57,16 @@ export const notFound = {
    * нечего. Второе объясняет, почему список ниже полный, а не «популярное».
    */
   lead: [
-    'The address is either mistyped or points at a page this site never had. Nothing here sits behind a login, so there is nothing to be let into.',
-    'The site has four addresses in total. All four are below.',
+    'This address may be mistyped or out of date. You can continue to selected work, About, or the CV below.',
   ],
-  routesHeading: 'Everything the site has',
+  routesHeading: 'Continue from here',
 } as const;
 
 export const serverError = {
   meta: {
     title: `Server error — ${NAME}`,
     description:
-      'The page did not load — that is the server, not you. The four pages of the site are listed here.',
+      'The page did not load. Try again, or continue to selected work, About and the CV.',
   },
   code: '500',
   heading: 'The page did not load',
@@ -79,10 +76,9 @@ export const serverError = {
    * что `ia/authorization-copy.md` §«Что убрано и почему» запрещает.
    */
   lead: [
-    'Something on the hosting side failed to answer. It is not your browser and not the link — the site is a set of static files, and this state is rare.',
-    'A refresh usually settles it. If it does not, the addresses below are the whole site, and my email is at the bottom of this page.',
+    'The page could not be loaded. Try refreshing, or use the links below. My email is at the bottom of this page.',
   ],
-  routesHeading: 'Everything the site has',
+  routesHeading: 'Continue from here',
 } as const;
 
 /**

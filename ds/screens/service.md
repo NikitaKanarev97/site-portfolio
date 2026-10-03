@@ -1,5 +1,7 @@
 # Screens: служебный слой
 
+**G · 04.10.2026:** актуальные /404 и /500 дают короткое объяснение и ссылки на существующий обзор работ /#work, About и CV. Утверждение «всего четыре адреса» удалено. Единственная host 404 содержит EN-раздел и самостоятельный RU-раздел с lang=ru, SectionHead-ролями, ProseBlock и ServiceRoutes; её можно читать с любого префикса без JS. RU destinations — /ru/#work, /ru/about/, /cv-ru.pdf. Новый error-route не требуется. Сквозной ContactBlock в EN/RU получил обычный mailto рядом с CopyEmail, LinkedIn и существующим CV; состав и токены прежние. Историческое описание каркаса /ru/ ниже относится к первой редакции.
+
 **Маршруты:** `/404` (`src/pages/404.astro`) · `/500` (`src/pages/500.astro`) · `/ru/` (`src/pages/ru/index.astro`)
 **Источник:** `ia/screens-inventory.md` №31, №32, №34, №38 · `ia/sitemap.md` §Сквозные состояния · `outputs/prd.md` `TECH-04`, `TECH-05`, `TECH-06`, `TECH-13` · `PLAYBOOK-site-portfolio.md` §5 Чат 5
 **Оболочка:** `PageShell` — три маршрута, три разных набора пропов

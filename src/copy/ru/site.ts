@@ -16,7 +16,7 @@ export const siteRu = {
   accessibility: {
     skipToContent: 'Перейти к содержимому',
     noscript:
-      'Сайт работает без JavaScript: весь текст и все ссылки доступны. Скрипт отвечает только за движение.',
+      'Работы, ссылки и контакты доступны без JavaScript.',
   },
   navigation: {
     label: 'Основная навигация',
@@ -34,6 +34,7 @@ export const siteRu = {
     lead: 'Если кейс выше ответил на ваш вопрос — или добавил новый.',
     email: EMAIL,
     links: [
+      { label: 'Написать', href: `mailto:${EMAIL}`, external: false },
       { label: 'LinkedIn', href: LINKEDIN, external: true },
       { label: 'Резюме (PDF)', href: '/cv-ru.pdf', external: false },
     ],

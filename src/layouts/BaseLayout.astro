@@ -16,7 +16,7 @@ import { ClientRouter } from 'astro:transitions';
 import Navbar from '../components/Navbar.astro';
 import { PREVIEW_NOINDEX, site, type SiteCopy } from '../copy/site';
 import { OG_HEIGHT, OG_WIDTH, ogImage as ogImageFor, ogImageAlt } from '../copy/og.ts';
-import { alternatesFor, canonicalPath, localeSwitchPath, type Locale } from '../copy/routes.ts';
+import { alternatesFor, canonicalPath, localeSwitchPath, OG_LOCALES, type Locale } from '../copy/routes.ts';
 import logoUrl from '../../Images/favicon-v3.svg?url';
 
 import '../styles/tokens.css';
@@ -121,7 +121,10 @@ const image = new URL(ogImageFor(ogCard), Astro.site);
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={siteCopy.brand} />
-    <meta property="og:locale" content={lang} />
+    <meta property="og:locale" content={OG_LOCALES[locale]} />
+    {alternates.filter(a => a.hreflang !== 'x-default' && a.hreflang !== locale).map(a => (
+      <meta property="og:locale:alternate" content={OG_LOCALES[a.hreflang as Locale]} />
+    ))}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     {canonical && <meta property="og:url" content={canonicalUrl} />}

@@ -205,11 +205,14 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
   }
 
   .navbar__desktop {
-    display: none;
+    display: block;
   }
 
+  .navbar[data-navbar-ready] .navbar__desktop { display: none; }
+  .navbar[data-navbar-ready] .navbar__trigger { display: inline-flex; }
+
   .navbar__trigger {
-    display: inline-flex;
+    display: none;
     align-items: center;
     min-height: var(--space-12);
     color: var(--text-default);
@@ -287,27 +290,43 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
   }
 
   @media (--bp-md) {
-    .navbar__desktop {
+    .navbar[data-navbar-ready] .navbar__desktop {
       display: block;
     }
 
-    .navbar__trigger,
+    .navbar[data-navbar-ready] .navbar__trigger,
     .navbar__panel {
       display: none;
+    }
+  }
+
+  @media (--below-bp-md) {
+    .navbar:not([data-navbar-ready]) .navbar__bar { flex-wrap: wrap; }
+    .navbar:not([data-navbar-ready]) .navbar__desktop { inline-size: 100%; }
+    .navbar:not([data-navbar-ready]) .navbar__list { flex-wrap: wrap; gap: var(--space-4); }
+    .navbar:not([data-navbar-ready]) .navbar__list li :global(.ds-link) {
+      display: inline-flex;
+      align-items: center;
+      min-block-size: var(--space-12);
     }
   }
 </style>
 
 <script>
   const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+  let cleanupNavbar: (() => void) | undefined;
 
   function initNavbar() {
+    cleanupNavbar?.();
     const root = document.querySelector<HTMLElement>('[data-navbar]');
     if (!root) return;
 
     const trigger = root.querySelector<HTMLButtonElement>('[data-navbar-trigger]');
     const panel = root.querySelector<HTMLElement>('[data-navbar-panel]');
     if (!trigger || !panel) return;
+    const controller = new AbortController();
+    const { signal } = controller;
+    cleanupNavbar = () => controller.abort();
 
     let open = false;
     /** Позиция страницы на момент открытия панели — см. setOpen. */
@@ -338,7 +357,7 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
       }
     };
 
-    trigger.addEventListener('click', () => setOpen(!open));
+    trigger.addEventListener('click', () => setOpen(!open), { signal });
 
     // Фокус-ловушка, Escape и возврат фокуса на триггер.
     panel.addEventListener('keydown', (event: KeyboardEvent) => {
@@ -363,13 +382,13 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
         event.preventDefault();
         first.focus();
       }
-    });
+    }, { signal });
 
     // Переход по пункту закрывает панель: ClientRouter меняет содержимое,
     // а зафиксированный скролл пережил бы навигацию.
     panel.addEventListener('click', (event) => {
       if ((event.target as HTMLElement).closest('a[href]')) setOpen(false);
-    });
+    }, { signal });
 
     // Уход на десктопную раскладку не должен оставлять открытую панель.
     // Запрос приходит атрибутом из фронтматтера: он собран из токена bp-md.
@@ -379,11 +398,13 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
     const desktop = window.matchMedia(query);
     desktop.addEventListener('change', (event) => {
       if (event.matches && open) setOpen(false);
-    });
+    }, { signal });
+    root.dataset.navbarReady = 'true';
   }
 
   document.addEventListener('astro:page-load', initNavbar);
-  document.addEventListener('astro:before-swap', () =>
-    document.body.classList.remove('ds-scroll-locked'),
-  );
+  document.addEventListener('astro:before-swap', () => {
+    cleanupNavbar?.();
+    document.body.classList.remove('ds-scroll-locked');
+  });
 </script>

@@ -22,6 +22,8 @@ import { cases } from './cases/index.ts';
 /** Локали продукта. Порядок значим: первая — основная. */
 export const LOCALES = ['en', 'ru'] as const;
 export type Locale = (typeof LOCALES)[number];
+/** Open Graph uses language_TERRITORY; hreflang above remains language-only. */
+export const OG_LOCALES: Record<Locale, string> = { en: 'en_US', ru: 'ru_RU' };
 
 export const DEFAULT_LOCALE: Locale = 'en';
 

@@ -15,7 +15,7 @@ import PageShell from '../layouts/PageShell.astro';
 import SectionHead from '../components/SectionHead.astro';
 import ProseBlock from '../components/ProseBlock.astro';
 import ServiceRoutes from '../components/ServiceRoutes.astro';
-import { serverError, serviceRoutes } from '../copy/service.ts';
+import { serverError, serviceRoutes, serviceContactLead } from '../copy/service.ts';
 ---
 
 <PageShell
@@ -25,6 +25,7 @@ import { serverError, serviceRoutes } from '../copy/service.ts';
   motion={false}
   noindex
   canonical={false}
+  contactLead={serviceContactLead}
 >
   <section class="ds-container ds-section">
     <p class="ds-meta-xs code ds-flow-eyebrow">{serverError.code}</p>

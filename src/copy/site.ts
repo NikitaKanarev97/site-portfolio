@@ -81,7 +81,7 @@ export const site = {
   accessibility: {
     skipToContent: 'Skip to content',
     noscript:
-      'This site works without JavaScript: every piece of text and every link is available. The script only drives motion.',
+      'You can read the work, follow links and contact me without JavaScript.',
   },
   navigation: {
     label: 'Main navigation',
@@ -101,6 +101,7 @@ export const site = {
     lead: 'If the case above answered your question — or raised one.',
     email: EMAIL,
     links: [
+      { label: 'Email', href: `mailto:${EMAIL}`, external: false },
       { label: 'LinkedIn', href: LINKEDIN, external: true },
       { label: 'CV (PDF)', href: '/cv.pdf', external: false },
     ],

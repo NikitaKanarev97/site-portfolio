@@ -9,3 +9,15 @@
 ## G-02 · Мобильная навигация без JS
 
 Navbar прячет desktop navigation на телефоне, оставляет кнопку без работающего обработчика и hidden-панель. Нужно дать те же native URL в потоке, если скрипт меню не инициализирован; обычная панель остаётся при работающем JS. Проверка: no-JS и заблокированный JS, EN/RU, 360/390, focus/Escape/resize/Back при JS.
+
+## G-03 · OG-локали
+
+BaseLayout выдавал og:locale=en/ru. Общий routes map теперь задаёт en_US/ru_RU и alternate для парных публичных страниц; hreflang остаётся en/ru/x-default. Источник формата: https://ogp.me/, Optional Metadata. Снят собственный canonical у /kit и двух исторических pilot preview; Common уже имел canonical=false. Preview без canonical не получают пару публичных OG locales. На Common review index исправлен отсутствовавший h1. Проверяется во всех публичных EN/RU маршрутах, /kit и preview.
+
+## Монограмма · подтверждённое замечание Роберта
+
+Исходник mentor-robert-garmaza-2026-10-02.md, строки 84–86: K читается как «<»; штрихи должны держать оптическую линию. У текущего v3 K был только шеврон, без собственного штриха, соединённый с N. Добавлен отдельный вертикальный штрих и небольшой просвет N–K; торцы обеих букв совпадают сверху и снизу. Стиль, цвет, высота Navbar и tap target прежние. Favicon повторяет ту же геометрию. Сравнение — shots/logo-comparison.png.
+
+## Закрытие checkpoint G-base
+
+G-01 закрыт в принятом ref A: 26 alpha captures, 24 профиля /kit и Portal EN/RU, 0 failures. На трёх локальных origins 4350/4352/4353 все 78 HTTP-ответов captures совпадают с исправленными файлами (`base-reproduction.json`). G-02 закрыт в рабочей ветке G: 32 профиля двух локалей, четыре ширины, full/reduce/no-JS/blocked-JS; focus/Escape/resize/live preference/Back и короткое окно. G-03 закрыт: 24 страницы, 14 public sitemap routes, 14 OG assets и два PDF, 0 failures; /kit имеет RU locale корректно. Две служебные страницы дают native email/CV, 404 содержит EN/RU выходы; их contact lead больше не ссылается на отсутствующий кейс сверху. После последней правки текста служебные страницы дополнительно проверены в 16 профилях 600 px высоты. Монограмма просмотрена на сравнительном кадре и в текущей desktop/mobile оболочке. Подробности — `shell-verification.json`, `service-verification.json` и `report.md`.
