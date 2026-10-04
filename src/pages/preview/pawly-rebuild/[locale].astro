@@ -1,9 +1,6 @@
 ---
 import PageShell from '../../../layouts/PageShell.astro';
 import CaseStory from '../../../components/CaseStory.astro';
-import CaseThesis from '../../../components/CaseThesis.astro';
-import MediaFrame from '../../../components/MediaFrame.astro';
-import TextLink from '../../../components/TextLink.astro';
 import { pawlyStory } from '../../../copy/cases/pawly';
 import { pawlyStoryRu } from '../../../copy/ru/cases/pawly';
 import { site } from '../../../copy/site';
@@ -13,18 +10,7 @@ const lang = Astro.params.locale as 'en'|'ru';
 const ru = lang === 'ru';
 const story = ru ? pawlyStoryRu : pawlyStory;
 const next = {href:ru?'/ru/work/agent-ops-console/':'/work/agent-ops-console/',title:'Agent Ops',theme:'agent' as const,label:ru?'Следующий кейс':'Next case'};
-const media = `/media/rebuild/pawly/${lang}/clip-return-proof`;
 ---
 <PageShell title={`Pawly — ${ru?'новая версия кейса':'case rebuild'}`} description={story.cover.outcome} lang={lang} siteCopy={ru?siteRu:site} localePaths={{en:'/preview/pawly-rebuild/en/',ru:'/preview/pawly-rebuild/ru/'}} noindex canonical={false} current={ru?'/ru/work':'/work'}>
   <CaseStory story={story} lang={lang} id="pawly-rebuild" next={next} />
-  <!-- E-G-01: native companion until frozen ShotItem supports film. -->
-  <section class="ds-container ds-section pawly-film" id="return-proof" aria-label={ru?'Подтверждение возвращения':'Return proof'}>
-    <CaseThesis label={ru?'Действие · реальная запись демо':'Interaction · actual demo recording'} thesis={ru?'От выбора фото к отчёту':'From photo selection to report'} body={ru?'Нажмите воспроизведение. Локальный кадр → отправка → подтверждение → отчёт. Данные демонстрационные.':'Press play. Local photo → sending → confirmed → report. Demonstration data.'} />
-    <div class="pawly-film__media"><MediaFrame src={`${media}-poster.webp`} video={media} film ratio="natural" reveal={false} alt={ru?'Реальная демоотправка фото возвращения и переход к отчёту':'Actual demo return-photo send and transition to the report'} /></div>
-    <TextLink href="#return-boundary">{ru?'Вернуться к состояниям':'Back to the states'}</TextLink>
-  </section>
 </PageShell>
-<style>
-  .pawly-film { margin-block-start: var(--section-gap); }
-  .pawly-film__media { max-inline-size: calc(var(--space-48) * 2); margin-inline: auto; }
-</style>

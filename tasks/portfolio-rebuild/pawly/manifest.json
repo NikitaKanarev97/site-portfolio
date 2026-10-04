@@ -1,12 +1,15 @@
 {
   "base": "58002c398c3386c9df4b398f324ab07115c979f7",
   "branch": "codex/pawly-rebuild-e",
+  "commonDelta": "433c80bcba29eda2060067570e9f8ec2087a2a91",
+  "commonImportedRef": "129b96f5bebcb9f11c93a42b2f78617b3b217d9c",
+  "commonFilesExcluded": true,
   "excludesSelf": true,
   "files": [
     {
       "path": "ds/screens/case-pawly.md",
-      "bytes": 35499,
-      "sha256": "edb3105a161570159f377fc6ed606427deb5d6d06114c21d70cfa34579f595ec"
+      "bytes": 35785,
+      "sha256": "c9399a2daca46173b9f4675d4233a4d9561d22e2cd78a436834f282e104605c2"
     },
     {
       "path": "public/media/rebuild/pawly/en/active-service.webp",
@@ -210,8 +213,8 @@
     },
     {
       "path": "src/copy/cases/pawly.ts",
-      "bytes": 29922,
-      "sha256": "fe4fef025056bdd95b9982f2237382af0e5d007f7181501b3da9ff992c53953e"
+      "bytes": 30024,
+      "sha256": "1d2e355906100f5b57d07f5dfce41048323ea63a7e1773c5183ab2567bd6b3f3"
     },
     {
       "path": "src/copy/ru/cases/pawly.ts",
@@ -220,13 +223,23 @@
     },
     {
       "path": "src/pages/preview/pawly-rebuild/[locale].astro",
-      "bytes": 2702,
-      "sha256": "ac753b62d305edac3ed60b36b84996f840324f3169f14feb7a449ccc8b9c577a"
+      "bytes": 1105,
+      "sha256": "93020c3547637b650e47be569f058464accb203ded080157e7ea8cc9d7bb4f46"
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/artifact-plan.md",
-      "bytes": 7622,
-      "sha256": "9f08ec32c3b42a08d791c519d41650a2a6f70fe21d0dd6d93d2b11e6f9eb7f5f"
+      "bytes": 8261,
+      "sha256": "ff8748cdfd11cb141dc17922d0d8a8f61f3674a7a62df506a1ee9eb82b72e736"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/browser-inline.log",
+      "bytes": 39,
+      "sha256": "1c013fef8f71b31fa69e12408a3adb16bdcb3c554841dfcbec0437fdf45f51e7"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/build-inline.log",
+      "bytes": 4643,
+      "sha256": "2a95d623c4bdef6fbbbe691573886183aa2fef3c61e4f0c121851478103e131d"
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/build.log",
@@ -244,14 +257,34 @@
       "sha256": "83e8e966b30217d8e5c9ccec992bb09c28e1d46c0aed8bf386cdf65570c30917"
     },
     {
+      "path": "tasks/portfolio-rebuild/pawly/case-addition-files.txt",
+      "bytes": 5196,
+      "sha256": "19c706533798030a014c624057ab5ad8840349297c36dd63375bebd57dd6c487"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/check-inline.log",
+      "bytes": 354,
+      "sha256": "ca0ba00aaba599a12cb230c96e8a51a11523eb2e025360e8b6d1628bd8d6090f"
+    },
+    {
       "path": "tasks/portfolio-rebuild/pawly/check.log",
       "bytes": 354,
       "sha256": "47609bf244452c7a46ffa0b69c51facebca8b0da70c1d0fbe91e3084cb0309f9"
     },
     {
+      "path": "tasks/portfolio-rebuild/pawly/common-import.json",
+      "bytes": 1159,
+      "sha256": "2e98c31acbd5c037f784e823af1e2eeef762f762efe6c3f042cc0c3e216416ca"
+    },
+    {
       "path": "tasks/portfolio-rebuild/pawly/common-requests.md",
-      "bytes": 3833,
-      "sha256": "a33c02a9ea0f653554fffd29d349a62006aba7cb924ed8b47fdf42028d761af9"
+      "bytes": 6103,
+      "sha256": "292f7590856574baaa9efc4dc7a25a8cd2e90eacaca7c4a9a2162d7553a26500"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/css-inline.log",
+      "bytes": 1258,
+      "sha256": "a4bd46f53c8ac3d1fc61f3f76020c8f0167256e58229e33084c09f0915355130"
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/css.log",
@@ -270,13 +303,23 @@
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/evidence.md",
-      "bytes": 3366,
-      "sha256": "990ed83cc560c379f1b4aa4e37bc82bab96199afd8faa687adadcaf7c0b67933"
+      "bytes": 4377,
+      "sha256": "bd110b0c774e12f11c07a126e3b30ebb4d6255845c890a79cee2e5ff4eb7ebf2"
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/files.txt",
-      "bytes": 9470,
-      "sha256": "beab5d7e60032a9abc336a71ca4695848efa5542d2f2b84b5881a3119c4aa08d"
+      "bytes": 13956,
+      "sha256": "2d678bd48922ba8bcee8c98e3fe4e133ab3f0c626ba4bbb2ae0b0c75732459e0"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/film-inline-verification.json",
+      "bytes": 26474,
+      "sha256": "404edc062ddcf8f38210e9f3a13c54b3cd87a47c36879e4fee58cc268acf8188"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/film-inline.log",
+      "bytes": 554,
+      "sha256": "053d33f1d9d083c98280d5315e9444c40f5a065bf4e0c24aea73e767ee2e4ef3"
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/film-lifecycle.log",
@@ -290,8 +333,18 @@
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/film-verify.mjs",
-      "bytes": 6139,
-      "sha256": "ab2aa8de38e326317095797787b7db33bbad142288496612e7ce8a39851f4215"
+      "bytes": 10012,
+      "sha256": "8da644a664797fe020cbde1615974f138e55a1703b8339e55146480ecdec2ab4"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/harmony-inline-short.log",
+      "bytes": 1266,
+      "sha256": "650e9b02eeca1c7532473f6a2b263c132b2bf57c160a0809b54355c15073684e"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/harmony-inline.log",
+      "bytes": 1266,
+      "sha256": "650e9b02eeca1c7532473f6a2b263c132b2bf57c160a0809b54355c15073684e"
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/harmony-short.log",
@@ -302,6 +355,31 @@
       "path": "tasks/portfolio-rebuild/pawly/harmony.log",
       "bytes": 1448,
       "sha256": "5a01cdd69701fe9da51563495a77d8265a0ea48f0089f19f29f3972b93ba7578"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/history/d3bbbb-film-lifecycle.log",
+      "bytes": 5416,
+      "sha256": "1d00c204802321248e69aa8ea614df87e29104cd6835cb10ff424d137dfd124d"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/history/d3bbbb-film-verification.json",
+      "bytes": 5398,
+      "sha256": "06bd80cb5d5e3a546b77c22f68df7477fc0140a7ec678a655e5af845768cf892"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/history/d3bbbb-film-verify.mjs",
+      "bytes": 6139,
+      "sha256": "ab2aa8de38e326317095797787b7db33bbad142288496612e7ce8a39851f4215"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/history/d3bbbb-report.md",
+      "bytes": 17320,
+      "sha256": "5677a7c2f03a5732d409f0d98d67cb09378d0b719edd318cc01646071ea2a92d"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/history/d3bbbb-verification.json",
+      "bytes": 25205,
+      "sha256": "d24480f2f9b729a0c44ffbbe1c01f08e9d1dffe1693aea9d6fed50daff219304"
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/initial-film-harness.log",
@@ -315,28 +393,28 @@
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/integrity.json",
-      "bytes": 11700,
-      "sha256": "2a73cce4d585bb921830ef3d1de341d3782cba3f297a33bac21c2627987b6079"
+      "bytes": 23901,
+      "sha256": "cefee13b57ddfcf571b58b561207476756441200fde2b34d52f9550e5373c831"
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/integrity.mjs",
-      "bytes": 2763,
-      "sha256": "ead2ba4d9ed0d0854c3e8230a970d890e5f84712adf41826b404c8b0bae38daf"
+      "bytes": 4762,
+      "sha256": "a66210829770398f52354d015ce4f9a7f80fdb80ce78cad3b1449f592c046abd"
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/inventory.mjs",
-      "bytes": 3714,
-      "sha256": "767fdab28e89641139e84530284945b61fa56d952353acebc664bd1e3fb093bd"
+      "bytes": 4114,
+      "sha256": "5208dbe2a903204ce43f5f60805230d696ecab8c8457a57e84a0edca03a58aa2"
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/manifest.mjs",
-      "bytes": 1099,
-      "sha256": "fc1682385844ea85b3141a8b4b6501c1153e6ce3ccc18c4187d10351e68055ed"
+      "bytes": 1631,
+      "sha256": "6ccc0c6fbaf59eb6abcb69d5bcbf6e14833dbb43d26f345e672b334d31d46a6b"
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/media.md",
-      "bytes": 7689,
-      "sha256": "073fc309df984a8871e57fac46676844675a89fd21df90281da8ee7cbfe7bd93"
+      "bytes": 8089,
+      "sha256": "b55d49eaaae164f6b501f08a7e2fe8afb4b92cf580ec3567ffcf8137ed2e2e94"
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/navigation.log",
@@ -354,6 +432,26 @@
       "sha256": "18824b9a9845dbb23971e7d2fee94f14b5f80e018a15cd30cf4606a7cb1b3baa"
     },
     {
+      "path": "tasks/portfolio-rebuild/pawly/recording/inline/en-end.png",
+      "bytes": 115963,
+      "sha256": "5e638dffda33b6d8a1c58ca3e5b3c4f27ec95cb41d20579b24126a2d94319d59"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/recording/inline/en-native-return-proof.webm",
+      "bytes": 1105811,
+      "sha256": "fbccdad7e8fb6b3b173d0b8ba532355cf5a711b8e3db1bdcc70f60269ccb273d"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/recording/inline/ru-end.png",
+      "bytes": 133464,
+      "sha256": "2fa23bd43a7b8da7d10715cbe2f9535bb3a9abd059c5b8b19d08a1600ec5b703"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/recording/inline/ru-native-return-proof.webm",
+      "bytes": 1316798,
+      "sha256": "0d02397014c56cd67b26b14b5c5f131e52d3ba58d409743fc9cb5969693bd221"
+    },
+    {
       "path": "tasks/portfolio-rebuild/pawly/recording/ru-end.png",
       "bytes": 115146,
       "sha256": "7555a8ad0105526a0b1ef90acdce3377b59ee569cd04e51bad5a050b3ab18732"
@@ -365,8 +463,8 @@
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/report.md",
-      "bytes": 17320,
-      "sha256": "5677a7c2f03a5732d409f0d98d67cb09378d0b719edd318cc01646071ea2a92d"
+      "bytes": 16824,
+      "sha256": "51ff84ef0e6188dc682da9aa26939f68508b7469f238dbc7defdf01b21a6e104"
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/serve-source.mjs",
@@ -567,6 +665,236 @@
       "path": "tasks/portfolio-rebuild/pawly/shots/en-390-no-js-system.png",
       "bytes": 183717,
       "sha256": "02386deb25f7f6df476fedf00543e9711eb7dbacabb2908d0a280282c5e9f21a"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-1440-900-reduce-full.png",
+      "bytes": 1619304,
+      "sha256": "196334877347b04ebc189b8de5f8b8adff1e98532651b347619fb91a3b315c5d"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-1440-900-reduce-middle-step.png",
+      "bytes": 262321,
+      "sha256": "ac828091fb86eba1244c1832e57f586cdc599a9fc4dedb73118546c6f5f8164b"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-1440-900-reduce-next.png",
+      "bytes": 33861,
+      "sha256": "aa75bbe74fc61d6711c8ef18dbc3feabc5163cb58cb14c690423061d8c6418c8"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-1440-900-reduce-return-boundary.png",
+      "bytes": 643083,
+      "sha256": "657c52150d0b5726c27a72a835444d29de089c10a27a7dfd5c698b88792289f9"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-1440-no-js-poster.png",
+      "bytes": 262242,
+      "sha256": "0c9a75787751436ded0570219d3cb5bda436ea2776b711cf963b12c6cc5e8544"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-1440-no-js-sequence.png",
+      "bytes": 643321,
+      "sha256": "b4fb8dea486b65c8070f6da975e002010c1fb12657b5b8b164b97b7daf343603"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-360-800-reduce-full.png",
+      "bytes": 934453,
+      "sha256": "7ea5fcf92fecb2544d693f64dd791d01dee139c2146ad7c81e5e53e51490a905"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-360-800-reduce-middle-step.png",
+      "bytes": 149444,
+      "sha256": "666c5a890af3d23873624a396c2b8c6c6a0ff544a513eea6278e7b48f51c6d9c"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-360-800-reduce-next.png",
+      "bytes": 10229,
+      "sha256": "94ce1eb7df384ce5c3e4774638f9343660e05a529a21d280671974dd23b951dd"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-360-800-reduce-return-boundary.png",
+      "bytes": 380775,
+      "sha256": "b1b1a239785b7912def79ccb11380c6548aa271fa03f5ca91d1ea4cab6dbb4bb"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-390-844-reduce-full.png",
+      "bytes": 1033120,
+      "sha256": "201fb1b7bbc3ed84c1b7f7efe7099bc5ce4fcaaac2e80b915984b04ac244980f"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-390-844-reduce-middle-step.png",
+      "bytes": 175344,
+      "sha256": "e8c74349943821eb347e725b2ee235e0dc9cc2f4caeb7078cdf4dc27028b2715"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-390-844-reduce-next.png",
+      "bytes": 10350,
+      "sha256": "7752e237af437946ae26733fb3c154214c548c8127d9703d9f49d6d181c86062"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-390-844-reduce-return-boundary.png",
+      "bytes": 437005,
+      "sha256": "a381940aa98d6bb20e4ab81a4adaaf7e9069945d100b72af95220847b4fc2616"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-390-no-js-poster.png",
+      "bytes": 175310,
+      "sha256": "fbf09409407efef8906e66ede4d5efce60d0401e915b339881baf4bdb51266ab"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-390-no-js-sequence.png",
+      "bytes": 437563,
+      "sha256": "0ebf494f6d8bf95bb9d945d6bcdf66d0de2e50e75175e79feb66ea6758c4534b"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-full-native-paused.png",
+      "bytes": 236326,
+      "sha256": "e80fea1cccff83eb64ea2d09683e4760e8269ec097d3859d000947eaa64d6dac"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-no-js-native-paused.png",
+      "bytes": 140065,
+      "sha256": "08849846616e1fdf09e410bb089fda518adf7edaeed7fba98947022d136c55c3"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/en-reduce-native-paused.png",
+      "bytes": 161447,
+      "sha256": "2d4c84cb408124ce8b870d0a235b9661e8008e799d5a34ff1c7a086417c7bfc5"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/review-en-1440-final.png",
+      "bytes": 83175,
+      "sha256": "5fd24dd009ffa1b13d129e566996b51cd6fbb6e0520e6c2afa1f826ba3e69b6e"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/review-en-1440-top.png",
+      "bytes": 277020,
+      "sha256": "35e2f8f80d522e6bbffa03725b02836f5869df0a904e91cb9bc5418ee7db6f44"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/review-en-390-final.png",
+      "bytes": 54426,
+      "sha256": "1182a92bc18df9e62cea22e3a7b027765b157cfe484b61ca00ab1af8807544a1"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/review-en-390-top.png",
+      "bytes": 130111,
+      "sha256": "0307759c172e335986d48a790734da2cee3bf4db2a54419fdb1e5bc8088a20bf"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/review-ru-1440-final.png",
+      "bytes": 87289,
+      "sha256": "a118f39ca7b620a76539fb148a896ebb07a8ef2f5d1bb94c682f929413a8deef"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/review-ru-1440-top.png",
+      "bytes": 289143,
+      "sha256": "78b1465638ffaadb167dabb9f9ba6f7af4ad6da54bee4fd98687ce2ea9ac373c"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/review-ru-390-final.png",
+      "bytes": 56978,
+      "sha256": "00e688b6aa57e39725ff863cefd15029c0004c02b0e091a7e1b8386c23ca396d"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/review-ru-390-top.png",
+      "bytes": 132832,
+      "sha256": "00039a86a89c87e11f3c355d1173a8f59dee1ea7729d13d08c4dfc0f27e6591b"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-1440-900-reduce-full.png",
+      "bytes": 1728378,
+      "sha256": "587335f9f78468e7c5b6da4bf7388963279aee97b6117490f127e85e93b16741"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-1440-900-reduce-middle-step.png",
+      "bytes": 278489,
+      "sha256": "c86f378644cd5110eabab750e7e7974990a08978819399710a2c96d748740441"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-1440-900-reduce-next.png",
+      "bytes": 35245,
+      "sha256": "9854bd97f504b40b7708f83626e0630209ea23d1779bac8fe4370f13ec5b9be0"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-1440-900-reduce-return-boundary.png",
+      "bytes": 692959,
+      "sha256": "b3b33e4cb98de27a9de7c892bb42f866715d6ccc6893b41075e0a99c05e50b2b"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-1440-no-js-poster.png",
+      "bytes": 278175,
+      "sha256": "defc73390aabb04fd12ed3b68b7a106a23b3400131401c17097c531c7ee06abb"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-1440-no-js-sequence.png",
+      "bytes": 692863,
+      "sha256": "d3ddd19346f7dddb726474b7a354e6897b45a661ad0cc3e3c5e6aca15527c022"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-360-800-reduce-full.png",
+      "bytes": 1006230,
+      "sha256": "8f5d3dac6a0dd5033ffea296a89e7ac2f6e344922988dd8461d2e32e3190b224"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-360-800-reduce-middle-step.png",
+      "bytes": 159427,
+      "sha256": "439ad1ee5943943a310481a2643a8f08b58f8469b660089f632c7902e939fbc5"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-360-800-reduce-next.png",
+      "bytes": 11414,
+      "sha256": "5ab4aab74fb6ff54d220a5f2bcb90de4b00b12981e66beae6232f99b3f4afc41"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-360-800-reduce-return-boundary.png",
+      "bytes": 412026,
+      "sha256": "e27b0931659ff4bfd0527e45386d716b79460fb051b3e78752da19851d10863d"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-390-844-reduce-full.png",
+      "bytes": 1107135,
+      "sha256": "72a5b869c00766b5bc17b7578ccc0ad554446085d9cbd58b969237c8f0200a7b"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-390-844-reduce-middle-step.png",
+      "bytes": 185501,
+      "sha256": "e68f1fb6f6ba9d0a8f660bbab2b47dc129c2d562ae63de60e893ddfe758927b6"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-390-844-reduce-next.png",
+      "bytes": 11528,
+      "sha256": "2770dab9e9e0e9a8b7fd6714f7522a69c3d192ece90c1440188660f9fd8929c3"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-390-844-reduce-return-boundary.png",
+      "bytes": 471298,
+      "sha256": "a75bdc312e583e4471562d3cb123c1d328841e0710d8e2b8b57614a314a11a73"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-390-no-js-poster.png",
+      "bytes": 185396,
+      "sha256": "e9208d8b7b83dc589c4909e862296e47cc442ffc6d621783bd4cf137be2d1d1e"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-390-no-js-sequence.png",
+      "bytes": 471516,
+      "sha256": "69e50f498c56a0d9fee9e25ccbd55472f37d3fc4db7a703a875f5e2d2ead69ef"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-full-native-paused.png",
+      "bytes": 253992,
+      "sha256": "00cd33befa650294ca9700d9fbd1ea032a1f27a6a0eeab22080b243d0a1cb44f"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-no-js-native-paused.png",
+      "bytes": 150038,
+      "sha256": "7205f3f75e8804afaac02f742d3d00646e0bfc71a742c4758e2eec1ec93d6f6c"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/shots/inline/ru-reduce-native-paused.png",
+      "bytes": 172488,
+      "sha256": "6c0f36ca9338ef6a97a427691c09cf1f99326e7dd49b117461bbb5afe4c5a7e0"
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/shots/reference-HA-DS-01-Pawly.png",
@@ -774,14 +1102,24 @@
       "sha256": "cbf4bc91ed2f5e331f4e3e500041161c86556928b5de1a0936bbc0e9cd3f0d84"
     },
     {
+      "path": "tasks/portfolio-rebuild/pawly/static-fallback-inline.log",
+      "bytes": 50,
+      "sha256": "6761307355c2a6b5d2b10b16d4654e3a825f06373c22379d2d9663d264bc3328"
+    },
+    {
       "path": "tasks/portfolio-rebuild/pawly/static-fallback.log",
       "bytes": 44,
       "sha256": "d2d70d61a636333789e47bad56459791fe0f77405c9112912e8c57b034bba2ff"
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/static-fallback.mjs",
-      "bytes": 959,
-      "sha256": "e88553de24304db73e3dacbd5a85ec0058da81b4f76d640d0bc0692d69a79705"
+      "bytes": 1092,
+      "sha256": "56813339a3de0304e4004dbc8e2f24ae1f5bd2a3aba144018109ae593bf7670f"
+    },
+    {
+      "path": "tasks/portfolio-rebuild/pawly/verification-inline.json",
+      "bytes": 36478,
+      "sha256": "32716ebc47ad228d01ac0526ae05684f8f17141eb08da65c7b9edcc3cd65202f"
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/verification.json",
@@ -790,8 +1128,8 @@
     },
     {
       "path": "tasks/portfolio-rebuild/pawly/verify.mjs",
-      "bytes": 6413,
-      "sha256": "1eab0fb98f321d425b7c23333b5f697cf21277429264b8dffb4690e62fe10e96"
+      "bytes": 7123,
+      "sha256": "fae6de4980f9260df9790081284c4c3727e0f7730b6880eeb41089bbc7bc8fae"
     }
   ]
 }

@@ -13,3 +13,9 @@ Read-only product HEAD `06322ba1a64306687f4ca7d2289fd6e32d463b0b`; runtime accep
 | paw-film | Actual local send and report ↔ реальная демоотправка и отчёт | existing recording / 06 | 06-case.md media, 06-case/media-manifest.json; byte-identical site clip | approximately 11 seconds, original timing; names/photos/addresses/amounts invented; native playback explicit |
 
 New E acceptance is the portfolio matrix only. Previous product PASS is attributed to its original date and scope, not counted as newly executed here. No conversion, retention, safety, GPS freshness or trust improvement claimed.
+
+## Inline-film completion after G-common-E
+
+Source and fixture evidence above is unchanged. Accepted shared delta `433c80bcba29eda2060067570e9f8ec2087a2a91`, imported as `129b96f5bebcb9f11c93a42b2f78617b3b217d9c`, changes exactly six canonical shared files; common-import.json and integrity.json verify them. Film now occupies the original middle return-boundary step, with the original poster, MP4/WebM and timing. No companion or stale #return-proof link remains.
+
+Fresh portfolio verification is film-inline-verification.json and verification-inline.json, distinct from the d3bbbb records. Playback evidence requires trusted native input and decoded frames, not metadata alone or scripted video.play(). Old findings/report are preserved under history/d3bbbb-*. A synthetic visibility handler probe does not establish a physically hidden-tab result. No-JS native playback is separate from JS-only offscreen/visibility cleanup. This completion does not rerun product acceptance or establish human validation.
