@@ -1,0 +1,1229 @@
+{
+  "base": "http://127.0.0.1:4354",
+  "originalCommit": "172a468fc5570ada70aae033a52ecc3b78c11d69",
+  "checkedPngCount": 39,
+  "originalWhite": [
+    "ru-390-shipped-redesign.png"
+  ],
+  "repaired": [
+    {
+      "original": {
+        "file": "ru-390-shipped-redesign.png",
+        "bytes": 2743,
+        "sha256": "30e28fa1a21295361369daad42dcaa7520b0f3f5f3fbe283b9f92ca56c31b0b8",
+        "width": 390,
+        "height": 845,
+        "white": true,
+        "rgb": [
+          {
+            "min": 255,
+            "max": 255,
+            "mean": 255,
+            "stdev": 0
+          },
+          {
+            "min": 255,
+            "max": 255,
+            "mean": 255,
+            "stdev": 0
+          },
+          {
+            "min": 255,
+            "max": 255,
+            "mean": 255,
+            "stdev": 0
+          }
+        ]
+      },
+      "after": {
+        "file": "ru-390-shipped-redesign.png",
+        "bytes": 73284,
+        "sha256": "d004ebe829b280dc74a9fb7884814bb1d611779220604582aea01cee133c72e2",
+        "width": 390,
+        "height": 845,
+        "white": false,
+        "rgb": [
+          {
+            "min": 27,
+            "max": 255,
+            "mean": 242.8847640722197,
+            "stdev": 44.01315719470866
+          },
+          {
+            "min": 27,
+            "max": 255,
+            "mean": 242.87612805340615,
+            "stdev": 43.93365024932567
+          },
+          {
+            "min": 24,
+            "max": 255,
+            "mean": 242.65264754968896,
+            "stdev": 44.83975741625972
+          }
+        ]
+      },
+      "route": "/preview/partner-portal-rebuild/ru/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mode": "reduce",
+      "waitAfterScrollMs": 700,
+      "twoAnimationFrames": true,
+      "state": {
+        "text": "РЕЗУЛЬТАТ\n\nРабота дошла до прода\n\nИсходный редизайн DSSL отгружен целиком. Эти самостоятельные демокадры позволяют проверить решения пересборки; бизнес-эффект ими не измерен.\n\nЦена решения\nНеоднозначность требует ручного выбора покупателя. Данные сопоставления не гарантируют совместимость.\nДоказательство\nОтгрузка подтверждена владельцем. Нынешняя съёмка проверяет строку 38 в центре разрешения и корзине.\nСледующая проверка\nСозданный демо-заказ не хранит исходный текст строки. Проверить постзаказный след, затем измерить время и ошибки; бизнес-baseline нет.",
+        "bounds": {
+          "x": 0,
+          "y": 0.265625,
+          "width": 390,
+          "height": 843.953125,
+          "top": 0.265625,
+          "right": 390,
+          "bottom": 844.21875,
+          "left": 0
+        },
+        "ancestors": [
+          {
+            "tag": "SECTION",
+            "id": "shipped-redesign",
+            "opacity": "1",
+            "display": "block",
+            "visibility": "visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "opacity": "1",
+            "display": "block",
+            "visibility": "visible"
+          },
+          {
+            "tag": "DIV",
+            "id": "partner-portal-rebuild",
+            "opacity": "1",
+            "display": "block",
+            "visibility": "visible"
+          },
+          {
+            "tag": "MAIN",
+            "id": "main",
+            "opacity": "1",
+            "display": "block",
+            "visibility": "visible"
+          },
+          {
+            "tag": "BODY",
+            "id": "",
+            "opacity": "1",
+            "display": "block",
+            "visibility": "visible"
+          },
+          {
+            "tag": "HTML",
+            "id": "",
+            "opacity": "1",
+            "display": "block",
+            "visibility": "visible"
+          }
+        ]
+      },
+      "errors": []
+    }
+  ],
+  "remainingWhite": [],
+  "after": [
+    {
+      "file": "en-1440-audit-direction.png",
+      "bytes": 103284,
+      "sha256": "6438b61da35bd4b28e442e0a4d04cf7026ba6a4b88993e035ffece5c1f42a69c",
+      "width": 1440,
+      "height": 629,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 239.58315447800743,
+          "stdev": 37.98292895813167
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 241.26964979685567,
+          "stdev": 32.205712585803504
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 241.1544283253842,
+          "stdev": 30.955043348389086
+        }
+      ]
+    },
+    {
+      "file": "en-1440-buyer-decision.png",
+      "bytes": 71382,
+      "sha256": "7599a8f0dd6090b6ee44fbab3c16a3efb543f705fdb01d280c03783bf97471b4",
+      "width": 1440,
+      "height": 965,
+      "white": false,
+      "rgb": [
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 242.7354303396661,
+          "stdev": 24.742464386279437
+        },
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 242.72343264248704,
+          "stdev": 24.67788606679357
+        },
+        {
+          "min": 24,
+          "max": 255,
+          "mean": 240.9958239781232,
+          "stdev": 25.49747115831087
+        }
+      ]
+    },
+    {
+      "file": "en-1440-cover.png",
+      "bytes": 132894,
+      "sha256": "6f3904d8354a875e036deb788db00465b5083ae9a41a2d978d50e7b52c37d6a3",
+      "width": 1440,
+      "height": 900,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 220.9500609567901,
+          "stdev": 38.54990675668955
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 229.0151952160494,
+          "stdev": 37.90867161158419
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 238.31956404320988,
+          "stdev": 38.34731180791577
+        }
+      ]
+    },
+    {
+      "file": "en-1440-domain-system.png",
+      "bytes": 596475,
+      "sha256": "dbce5e8e33db0b72e97a41fe0648791d4a1642699db3c2e754d9cba9309426af",
+      "width": 1440,
+      "height": 3671,
+      "white": false,
+      "rgb": [
+        {
+          "min": 3,
+          "max": 255,
+          "mean": 237.43650099125276,
+          "stdev": 31.458997464348762
+        },
+        {
+          "min": 19,
+          "max": 255,
+          "mean": 238.15392982535792,
+          "stdev": 28.642858426046928
+        },
+        {
+          "min": 14,
+          "max": 255,
+          "mean": 236.93253408850146,
+          "stdev": 27.403797630545146
+        }
+      ]
+    },
+    {
+      "file": "en-1440-full.png",
+      "bytes": 1640603,
+      "sha256": "93565031174fb81c7c4db09b9df6670247ab30e9fcdc84e7df44305a7ee1bd6b",
+      "width": 1440,
+      "height": 13250,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 232.81455183438155,
+          "stdev": 49.86953290563075
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 234.82860660377358,
+          "stdev": 45.70665669331308
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 236.2164567610063,
+          "stdev": 41.69120010551045
+        }
+      ]
+    },
+    {
+      "file": "en-1440-shared-specification.png",
+      "bytes": 72174,
+      "sha256": "005a8100ef28c69a4a89d60f327d6229a7e1ccdbb4f15d0bb3b6a2bdf2f14593",
+      "width": 1440,
+      "height": 957,
+      "white": false,
+      "rgb": [
+        {
+          "min": 23,
+          "max": 255,
+          "mean": 241.92326062347615,
+          "stdev": 25.03170000794176
+        },
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 242.02290650760477,
+          "stdev": 24.327805028844292
+        },
+        {
+          "min": 24,
+          "max": 255,
+          "mean": 240.23651747358645,
+          "stdev": 24.8106477271605
+        }
+      ]
+    },
+    {
+      "file": "en-1440-shipped-redesign.png",
+      "bytes": 71406,
+      "sha256": "90cc65251aa14e958afd4e7e95d8abfdeeab861cf81e11edeb7365b9d7760508",
+      "width": 1440,
+      "height": 662,
+      "white": false,
+      "rgb": [
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 249.4448168429003,
+          "stdev": 31.622077200186293
+        },
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 249.4375062940584,
+          "stdev": 31.60387892366215
+        },
+        {
+          "min": 24,
+          "max": 255,
+          "mean": 249.3425835011749,
+          "stdev": 32.19976783881819
+        }
+      ]
+    },
+    {
+      "file": "en-1440-source-in-context.png",
+      "bytes": 214423,
+      "sha256": "db0acebfcfba48290416eb46e9240022c7ce035a60c10a91640ace304bbdc2f1",
+      "width": 1440,
+      "height": 1043,
+      "white": false,
+      "rgb": [
+        {
+          "min": 11,
+          "max": 255,
+          "mean": 213.19706575583254,
+          "stdev": 69.48481357686683
+        },
+        {
+          "min": 21,
+          "max": 255,
+          "mean": 215.94218600191755,
+          "stdev": 66.95853366821702
+        },
+        {
+          "min": 28,
+          "max": 255,
+          "mean": 220.43972182273356,
+          "stdev": 61.36493092625004
+        }
+      ]
+    },
+    {
+      "file": "en-1440-source-line.png",
+      "bytes": 295146,
+      "sha256": "d443b3270b50ea08a364c4d92fa84029133b591b2e81c452adbe956419970322",
+      "width": 1440,
+      "height": 1944,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 243.0852737768633,
+          "stdev": 31.090562196280285
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 244.25754350994512,
+          "stdev": 29.814008561095182
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 245.22560871056243,
+          "stdev": 29.2776897443172
+        }
+      ]
+    },
+    {
+      "file": "en-390-audit-direction.png",
+      "bytes": 63932,
+      "sha256": "ca9d7a12e52655414fe824b75e80e5ee723b3631714d4eb1864bd209de34bb02",
+      "width": 390,
+      "height": 643,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 237.73760816684612,
+          "stdev": 44.03058465083326
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 238.14642899868406,
+          "stdev": 43.041401221645344
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 238.0626031821988,
+          "stdev": 43.294456501059805
+        }
+      ]
+    },
+    {
+      "file": "en-390-buyer-decision.png",
+      "bytes": 73252,
+      "sha256": "562ad2eccc385d961f4c56775c7baf238beb4ca58a5467cb96b86d961280cc4b",
+      "width": 390,
+      "height": 1931,
+      "white": false,
+      "rgb": [
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 240.6144697180948,
+          "stdev": 26.816597998880464
+        },
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 240.5885790542963,
+          "stdev": 26.690108720858692
+        },
+        {
+          "min": 24,
+          "max": 255,
+          "mean": 238.66940073563586,
+          "stdev": 27.537119010050194
+        }
+      ]
+    },
+    {
+      "file": "en-390-cover.png",
+      "bytes": 104181,
+      "sha256": "87fe9470092d925f71a4bfa49a0e2e1f82d7ad44bcf453cff97602185b416ce6",
+      "width": 390,
+      "height": 844,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 213.98724328593997,
+          "stdev": 53.994993503201236
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 223.06977153967676,
+          "stdev": 47.20968866704313
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 236.1698717948718,
+          "stdev": 40.50819472492569
+        }
+      ]
+    },
+    {
+      "file": "en-390-domain-system.png",
+      "bytes": 547727,
+      "sha256": "2449cd3f2adba604c517b60dc78e40744e22e7767c18d031adcf9528bf69fa84",
+      "width": 390,
+      "height": 6693,
+      "white": false,
+      "rgb": [
+        {
+          "min": 3,
+          "max": 255,
+          "mean": 233.82887325832195,
+          "stdev": 40.50666470128366
+        },
+        {
+          "min": 19,
+          "max": 255,
+          "mean": 235.25323357353838,
+          "stdev": 36.49374789309943
+        },
+        {
+          "min": 14,
+          "max": 255,
+          "mean": 235.08879732747954,
+          "stdev": 34.49814871051769
+        }
+      ]
+    },
+    {
+      "file": "en-390-full.png",
+      "bytes": 1453075,
+      "sha256": "513f683e16be746bdf38f4c5e4b5bf28610922fd7bd33ed491a41cf62f5e1970",
+      "width": 390,
+      "height": 18604,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 235.511520268594,
+          "stdev": 39.203316126437144
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 237.4395462238614,
+          "stdev": 35.70195003170031
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 238.95237349012345,
+          "stdev": 33.545780101515234
+        }
+      ]
+    },
+    {
+      "file": "en-390-shared-specification.png",
+      "bytes": 68124,
+      "sha256": "aacc1f9ab7f360ffbc1bb8c01554a68f23061f3b06dac5c406aae812a84e6cda",
+      "width": 390,
+      "height": 1646,
+      "white": false,
+      "rgb": [
+        {
+          "min": 23,
+          "max": 255,
+          "mean": 240.31769480013708,
+          "stdev": 29.498565256077406
+        },
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 240.55441630058883,
+          "stdev": 27.98448872644107
+        },
+        {
+          "min": 24,
+          "max": 255,
+          "mean": 238.90987942798392,
+          "stdev": 28.279174573849897
+        }
+      ]
+    },
+    {
+      "file": "en-390-shipped-redesign.png",
+      "bytes": 70507,
+      "sha256": "5f098ff1ecf2032072a9985b7599565faacd6aa8e5c51513c86030da64e265e7",
+      "width": 390,
+      "height": 813,
+      "white": false,
+      "rgb": [
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 242.39449648342637,
+          "stdev": 45.17890751727729
+        },
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 242.3779417794178,
+          "stdev": 45.07368781886373
+        },
+        {
+          "min": 24,
+          "max": 255,
+          "mean": 242.150954048002,
+          "stdev": 46.03155424098032
+        }
+      ]
+    },
+    {
+      "file": "en-390-source-in-context.png",
+      "bytes": 115901,
+      "sha256": "11c48a8f1ebf5af151f9fd54dbe73615d7865138d8cd798c13c26a0e0b2c2b18",
+      "width": 390,
+      "height": 1203,
+      "white": false,
+      "rgb": [
+        {
+          "min": 11,
+          "max": 255,
+          "mean": 236.6152887013236,
+          "stdev": 24.36823610103157
+        },
+        {
+          "min": 20,
+          "max": 255,
+          "mean": 238.77924846004646,
+          "stdev": 22.460433116186845
+        },
+        {
+          "min": 28,
+          "max": 255,
+          "mean": 241.90306072425773,
+          "stdev": 20.56841871884126
+        }
+      ]
+    },
+    {
+      "file": "en-390-source-line.png",
+      "bytes": 253925,
+      "sha256": "b44bf88787d3bcd2709e0dd60bf2d6bb49fa68f38b6a7292c0b922047b3b6ba4",
+      "width": 390,
+      "height": 2446,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 238.6450185546261,
+          "stdev": 42.721669623651756
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 240.61208566576514,
+          "stdev": 39.343719768336506
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 243.33435960332935,
+          "stdev": 36.34920925956616
+        }
+      ]
+    },
+    {
+      "file": "reference-buyer-decision.png",
+      "bytes": 178815,
+      "sha256": "773457d46da1d51c05f215f3ea66756a0c8bb723549e17537cf7dbf623ffcb91",
+      "width": 1800,
+      "height": 675,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 241.27593827160493,
+          "stdev": 19.659900595201968
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 241.26435144032922,
+          "stdev": 19.639544438021954
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 240.44837366255143,
+          "stdev": 20.027251326663855
+        }
+      ]
+    },
+    {
+      "file": "reference-domain-system.png",
+      "bytes": 744390,
+      "sha256": "c91f7686e91c27cb623f14dbca587997f85d5ae3e486210f7a416bd0b008993a",
+      "width": 1800,
+      "height": 2294,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 243.49573258742615,
+          "stdev": 25.2293873524097
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 244.02382616487455,
+          "stdev": 22.6802507572672
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 243.57617528819142,
+          "stdev": 21.964442337994633
+        }
+      ]
+    },
+    {
+      "file": "reference-shared-specification.png",
+      "bytes": 168449,
+      "sha256": "756c8674dd9108896a421bad8cff9b09ad9b1d94682a60bf86943c1429b4767d",
+      "width": 1800,
+      "height": 598,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 242.48642790784095,
+          "stdev": 20.858265990236067
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 242.63896692679302,
+          "stdev": 19.695745576311165
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 241.83407840951318,
+          "stdev": 19.80744197494014
+        }
+      ]
+    },
+    {
+      "file": "ru-1440-audit-direction.png",
+      "bytes": 105650,
+      "sha256": "6db4083e19aa3f8af8ea52b37b059819094a6aee644339dea92e7c72c1c6977a",
+      "width": 1440,
+      "height": 629,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 239.21651430842607,
+          "stdev": 38.69855750461811
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 240.90774487723016,
+          "stdev": 33.03304113636
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 240.7815204910793,
+          "stdev": 31.86006297933446
+        }
+      ]
+    },
+    {
+      "file": "ru-1440-buyer-decision.png",
+      "bytes": 75175,
+      "sha256": "19fcf6a32e49b04318aaadaed9d859fc1363a89dafe6833f2c52038d201728db",
+      "width": 1440,
+      "height": 942,
+      "white": false,
+      "rgb": [
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 242.36211812927579,
+          "stdev": 24.91808380478126
+        },
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 242.35012753597547,
+          "stdev": 24.833349805687675
+        },
+        {
+          "min": 24,
+          "max": 255,
+          "mean": 240.57595467681057,
+          "stdev": 25.672513450883425
+        }
+      ]
+    },
+    {
+      "file": "ru-1440-cover.png",
+      "bytes": 132799,
+      "sha256": "0fe73919760eda3cd23911f55ffe9a7bdc91dccfa38fe92e5ebbc5dff8c023a2",
+      "width": 1440,
+      "height": 900,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 220.88643981481482,
+          "stdev": 38.67168749722819
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 228.9495725308642,
+          "stdev": 38.03536511286119
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 238.2504359567901,
+          "stdev": 38.490344926914425
+        }
+      ]
+    },
+    {
+      "file": "ru-1440-domain-system.png",
+      "bytes": 593248,
+      "sha256": "41eca39f0770047d7bd4a281fcc204bd624fa9da8b0965ef5cb24a4b9b2f86e1",
+      "width": 1440,
+      "height": 3616,
+      "white": false,
+      "rgb": [
+        {
+          "min": 3,
+          "max": 255,
+          "mean": 237.26390463679942,
+          "stdev": 31.270550943264393
+        },
+        {
+          "min": 19,
+          "max": 255,
+          "mean": 237.99282817109145,
+          "stdev": 28.379674646494387
+        },
+        {
+          "min": 14,
+          "max": 255,
+          "mean": 236.75107066586776,
+          "stdev": 27.114909115378058
+        }
+      ]
+    },
+    {
+      "file": "ru-1440-full.png",
+      "bytes": 1647252,
+      "sha256": "6f1d02dc0616bb484ccb57a67e6279ae32b4546b35a6759ccb29f98b0d7b8b23",
+      "width": 1440,
+      "height": 13148,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 232.7268077844539,
+          "stdev": 49.81971113648426
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 234.7550916594835,
+          "stdev": 45.61833160716106
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 236.15134045524456,
+          "stdev": 41.568229420266775
+        }
+      ]
+    },
+    {
+      "file": "ru-1440-shared-specification.png",
+      "bytes": 74124,
+      "sha256": "619027c1adcbc42272b5d7cbab226752d792e0698a8a4633e68b0c4fff543e98",
+      "width": 1440,
+      "height": 957,
+      "white": false,
+      "rgb": [
+        {
+          "min": 23,
+          "max": 255,
+          "mean": 241.79857482874723,
+          "stdev": 25.415677764216266
+        },
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 241.89818370486475,
+          "stdev": 24.711485596760788
+        },
+        {
+          "min": 24,
+          "max": 255,
+          "mean": 240.11183167885753,
+          "stdev": 25.158860661900054
+        }
+      ]
+    },
+    {
+      "file": "ru-1440-shipped-redesign.png",
+      "bytes": 72937,
+      "sha256": "bb48831a27665c6d861d8bc77a03a83e19c91596ef8d9657ce5617502786cfb0",
+      "width": 1440,
+      "height": 606,
+      "white": false,
+      "rgb": [
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 249.3479338558856,
+          "stdev": 31.504396995479706
+        },
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 249.34443642280894,
+          "stdev": 31.473310309640492
+        },
+        {
+          "min": 24,
+          "max": 255,
+          "mean": 249.24450861752842,
+          "stdev": 32.06733767528237
+        }
+      ]
+    },
+    {
+      "file": "ru-1440-source-in-context.png",
+      "bytes": 214501,
+      "sha256": "45f7a85e9f67f91674862d6c48902732c2d670c83eb3c6baa5a6ddd9d8d83af4",
+      "width": 1440,
+      "height": 1043,
+      "white": false,
+      "rgb": [
+        {
+          "min": 11,
+          "max": 255,
+          "mean": 213.17660128369022,
+          "stdev": 69.4870834922623
+        },
+        {
+          "min": 21,
+          "max": 255,
+          "mean": 215.92212967401727,
+          "stdev": 66.96344585848372
+        },
+        {
+          "min": 28,
+          "max": 255,
+          "mean": 220.41817939703844,
+          "stdev": 61.36923273963116
+        }
+      ]
+    },
+    {
+      "file": "ru-1440-source-line.png",
+      "bytes": 290720,
+      "sha256": "dd37a310b3298bfd4f989800f59a03a7e63d8688517cf2a32ef767b64ae14529",
+      "width": 1440,
+      "height": 1975,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 243.90443917018285,
+          "stdev": 28.792791141586633
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 245.05925808720113,
+          "stdev": 27.36490748695475
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 246.01733720112517,
+          "stdev": 26.687158294726085
+        }
+      ]
+    },
+    {
+      "file": "ru-390-audit-direction.png",
+      "bytes": 68387,
+      "sha256": "fe499a2242e84ee47495932b95a8c0a970aea8453cddc46f4f8a8e5d13325946",
+      "width": 390,
+      "height": 695,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 237.69151817007932,
+          "stdev": 43.77792708079616
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 238.0867847260653,
+          "stdev": 42.894004977489125
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 237.9111086515403,
+          "stdev": 43.170747249270406
+        }
+      ]
+    },
+    {
+      "file": "ru-390-buyer-decision.png",
+      "bytes": 79345,
+      "sha256": "c81ba3eace004a90c0b580cd81f7e6d2e2aff9154651373e2e729656a4600ac9",
+      "width": 390,
+      "height": 1994,
+      "white": false,
+      "rgb": [
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 240.71242573875472,
+          "stdev": 27.096273049830707
+        },
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 240.68177352570532,
+          "stdev": 27.111263889426194
+        },
+        {
+          "min": 24,
+          "max": 255,
+          "mean": 238.81199495923667,
+          "stdev": 27.941209797095734
+        }
+      ]
+    },
+    {
+      "file": "ru-390-cover.png",
+      "bytes": 101512,
+      "sha256": "30b7ca875d493a078ba6fd678eab4d31283f64989429050c9dcfeed7f1ae16dc",
+      "width": 390,
+      "height": 844,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 217.7584366265646,
+          "stdev": 47.45035567004166
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 225.73900838497994,
+          "stdev": 43.860848860746735
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 236.17172195892576,
+          "stdev": 40.90022457697622
+        }
+      ]
+    },
+    {
+      "file": "ru-390-domain-system.png",
+      "bytes": 547203,
+      "sha256": "11db3424583788d9ac9f8d08f9bb4dabf247040598d924b56e667c147bd47d11",
+      "width": 390,
+      "height": 6756,
+      "white": false,
+      "rgb": [
+        {
+          "min": 3,
+          "max": 255,
+          "mean": 234.05289732962913,
+          "stdev": 40.171555239748265
+        },
+        {
+          "min": 19,
+          "max": 255,
+          "mean": 235.4642080733555,
+          "stdev": 36.160738162495676
+        },
+        {
+          "min": 14,
+          "max": 255,
+          "mean": 235.2979710342943,
+          "stdev": 34.19054142562801
+        }
+      ]
+    },
+    {
+      "file": "ru-390-full.png",
+      "bytes": 1471684,
+      "sha256": "6e415f57908f872c49ca064f59b860a31e39be7e64d331bf42c33418ec26cb15",
+      "width": 390,
+      "height": 18894,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 235.5990353741386,
+          "stdev": 39.23898861082286
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 237.52192216766684,
+          "stdev": 35.80960703844789
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 239.01266336077387,
+          "stdev": 33.717607546840966
+        }
+      ]
+    },
+    {
+      "file": "ru-390-shared-specification.png",
+      "bytes": 69154,
+      "sha256": "b01ca664d4c3242ac8e4ebf1e9cf152baa0f6e0fb9f00206514b4c62e07810ce",
+      "width": 390,
+      "height": 1677,
+      "white": false,
+      "rgb": [
+        {
+          "min": 23,
+          "max": 255,
+          "mean": 240.2897894591991,
+          "stdev": 30.00917323947832
+        },
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 240.52410134091707,
+          "stdev": 28.54737239923258
+        },
+        {
+          "min": 24,
+          "max": 255,
+          "mean": 238.90734522881215,
+          "stdev": 28.784454063621656
+        }
+      ]
+    },
+    {
+      "file": "ru-390-shipped-redesign.png",
+      "bytes": 73284,
+      "sha256": "d004ebe829b280dc74a9fb7884814bb1d611779220604582aea01cee133c72e2",
+      "width": 390,
+      "height": 845,
+      "white": false,
+      "rgb": [
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 242.8847640722197,
+          "stdev": 44.01315719470866
+        },
+        {
+          "min": 27,
+          "max": 255,
+          "mean": 242.87612805340615,
+          "stdev": 43.93365024932567
+        },
+        {
+          "min": 24,
+          "max": 255,
+          "mean": 242.65264754968896,
+          "stdev": 44.83975741625972
+        }
+      ]
+    },
+    {
+      "file": "ru-390-source-in-context.png",
+      "bytes": 116279,
+      "sha256": "de0e8f3db051e3df41bc97494811fcdf6193abdbf08f8f2df59f0296dd34a323",
+      "width": 390,
+      "height": 1203,
+      "white": false,
+      "rgb": [
+        {
+          "min": 11,
+          "max": 255,
+          "mean": 236.55001172282968,
+          "stdev": 24.45585884685271
+        },
+        {
+          "min": 20,
+          "max": 255,
+          "mean": 238.71461090862587,
+          "stdev": 22.56318642930753
+        },
+        {
+          "min": 28,
+          "max": 255,
+          "mean": 241.8344480678645,
+          "stdev": 20.683277517266735
+        }
+      ]
+    },
+    {
+      "file": "ru-390-source-line.png",
+      "bytes": 247858,
+      "sha256": "e05707b1ee0565c6d0905c02cf8d9f860ecce3a1b13ab17a198272b838ae252b",
+      "width": 390,
+      "height": 2446,
+      "white": false,
+      "rgb": [
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 239.31532905633478,
+          "stdev": 41.09508804786287
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 241.29004864037572,
+          "stdev": 37.471050608990275
+        },
+        {
+          "min": 0,
+          "max": 255,
+          "mean": 244.0086630186385,
+          "stdev": 34.286454464950246
+        }
+      ]
+    }
+  ]
+}
