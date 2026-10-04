@@ -1,0 +1,198 @@
+{
+  "profiles": 10,
+  "results": [
+    {
+      "locale": "en",
+      "mode": "full",
+      "initial": {
+        "paused": true,
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.webm"
+      },
+      "played": {
+        "currentTime": 0.518692,
+        "paused": false,
+        "duration": 10.966667,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "readyState": 4
+      },
+      "final": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667
+      }
+    },
+    {
+      "locale": "en",
+      "mode": "reduce",
+      "initial": {
+        "paused": true,
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.webm"
+      },
+      "played": {
+        "currentTime": 0.523262,
+        "paused": false,
+        "duration": 10.966667,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "readyState": 4
+      },
+      "final": {
+        "paused": true,
+        "ended": false,
+        "time": 0.534916
+      }
+    },
+    {
+      "locale": "en",
+      "mode": "no-js",
+      "initial": {
+        "paused": true,
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "readyState": 0,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.webm"
+      },
+      "metadata": false,
+      "state": {
+        "duration": null,
+        "readyState": 0,
+        "error": null,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.webm"
+      },
+      "staticFallback": true
+    },
+    {
+      "locale": "ru",
+      "mode": "full",
+      "initial": {
+        "paused": true,
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.webm"
+      },
+      "played": {
+        "currentTime": 0.524623,
+        "paused": false,
+        "duration": 10.966667,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "readyState": 4
+      },
+      "final": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667
+      }
+    },
+    {
+      "locale": "ru",
+      "mode": "reduce",
+      "initial": {
+        "paused": true,
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.webm"
+      },
+      "played": {
+        "currentTime": 0.524467,
+        "paused": false,
+        "duration": 10.966667,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "readyState": 4
+      },
+      "final": {
+        "paused": true,
+        "ended": false,
+        "time": 0.536814
+      }
+    },
+    {
+      "locale": "ru",
+      "mode": "no-js",
+      "initial": {
+        "paused": true,
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "readyState": 0,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.webm"
+      },
+      "metadata": false,
+      "state": {
+        "duration": null,
+        "readyState": 0,
+        "error": null,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.webm"
+      },
+      "staticFallback": true
+    },
+    {
+      "mode": "leave-viewport",
+      "paused": false
+    },
+    {
+      "mode": "return-viewport",
+      "paused": false
+    },
+    {
+      "mode": "route-departure",
+      "paused": true,
+      "connected": false
+    },
+    {
+      "mode": "back",
+      "url": "http://127.0.0.1:4370/preview/pawly-rebuild/en/",
+      "videos": 1,
+      "paused": true
+    }
+  ],
+  "failures": [
+    {
+      "id": "E-G-02",
+      "locale": "en",
+      "mode": "no-js",
+      "reason": "WebM metadata/decode unavailable; no-JS cannot reach shared MP4 fallback",
+      "duration": null,
+      "readyState": 0,
+      "error": null,
+      "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.webm"
+    },
+    {
+      "id": "E-G-02",
+      "locale": "ru",
+      "mode": "no-js",
+      "reason": "WebM metadata/decode unavailable; no-JS cannot reach shared MP4 fallback",
+      "duration": null,
+      "readyState": 0,
+      "error": null,
+      "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.webm"
+    },
+    {
+      "id": "E-G-03",
+      "mode": "leave-viewport",
+      "paused": false
+    },
+    {
+      "id": "E-G-03",
+      "mode": "return-viewport",
+      "paused": false
+    }
+  ]
+}

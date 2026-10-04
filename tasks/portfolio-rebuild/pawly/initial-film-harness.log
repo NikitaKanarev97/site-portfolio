@@ -1,0 +1,16 @@
+Starting native playback: en full
+Starting native playback: en reduce
+Starting native playback: en no-js
+Starting native playback: ru full
+Starting native playback: ru reduce
+Starting native playback: ru no-js
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+locator.evaluate: AbortError: The play() request was interrupted by a new load request. https://goo.gl/LdLk22
+    at C:\Users\kanar\.codex\worktrees\pawly-rebuild-e\Site-portfolio\tasks\portfolio-rebuild\pawly\film-verify.mjs:46:85 {
+  log: []
+}
+
+Node.js v24.18.0

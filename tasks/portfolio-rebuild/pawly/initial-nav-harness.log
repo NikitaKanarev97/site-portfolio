@@ -1,0 +1,24 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+locator.scrollIntoViewIfNeeded: Element is not attached to the DOM
+Call log:
+  - attempting scroll into view action
+    - waiting for element to be stable
+    - element is not stable
+  - retrying scroll into view action
+    - waiting for element to be stable
+
+    at C:\Users\kanar\.codex\worktrees\pawly-rebuild-e\Site-portfolio\tasks\portfolio-rebuild\pawly\verify.mjs:54:61 {
+  log: [
+    '  - attempting scroll into view action',
+    '    - waiting for element to be stable',
+    '    - element is not stable',
+    '  - retrying scroll into view action',
+    '    - waiting for element to be stable'
+  ],
+  name: 'Error'
+}
+
+Node.js v24.18.0

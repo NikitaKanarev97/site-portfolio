@@ -1,0 +1,18 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import sharp from 'sharp';
+const source='D:/Claude-projects/PETS-walking';
+const paths=['audit/product-polish/reports/03-owner.md','audit/product-polish/reports/04-walker.md','audit/product-polish/reports/05-acceptance.md','audit/product-polish/reports/06-case.md','.tmp/pawly-walker-storybook/index.json','dist/index.html','src/components/PhotoProof/PhotoProof.tsx','src/components/PhotoProof/PhotoProof.stories.tsx','src/components/TimelineRow/TimelineRow.tsx','src/components/TimelineRow/TimelineRow.stories.tsx','src/components/InfoNote/InfoNote.tsx','src/components/InfoNote/InfoNote.stories.tsx','src/tokens/primitives.css','src/tokens/semantics.css','src/tokens/typography.css','src/screens/PilotScreens.tsx','src/screens/OwnerScreens.tsx','src/screens/WalkerScreens.tsx','src/data/ownerBooking.ts','src/data/walkerBooking.ts','audit/product-polish/evidence/06-case/media-manifest.json'];
+const hashes=[];
+for(const file of paths){const b=await readFile(`${source}/${file}`);hashes.push({file,bytes:b.length,sha256:createHash('sha256').update(b).digest('hex')});}
+await writeFile('tasks/portfolio-rebuild/pawly/sources.json',JSON.stringify({source,head:'06322ba1a64306687f4ca7d2289fd6e32d463b0b',files:hashes},null,2));
+const captures=JSON.parse(await readFile('tasks/portfolio-rebuild/pawly/captures.json','utf8'));
+const lines=['# Media inventory · E · 04.10.2026','','All displayed media derives from the existing owner product and its invented fixture. Product photographs remain demonstration assets; they do not evidence recruited participants or real walks. Shared geometry/EN source matrices reused by both stories. September UI; fixture date 22 August. See artifact-plan.md (PAW-DS-01 / HA-DS-01, PAW-RETURN-01, PAW-FILM-01).','','Screen sources: accepted 06 site capture, 390×844 DPR1.5, synthetic pawly-case-06/Marina/Baikal. Corresponding locale EN/RU. Existing media is copied byte for byte; only 22 selected-state DOM captures are new. Native captures: accepted catalogue04, 500×900 DPR2, 343/288 CSS decorator widths + 2px bleed, source EN. Narrow control wrapping comes from product CSS. No UI retouch, fonts/colors replaced or old booking clips.','','| ID | File | Locale / fixture | Capture viewport / DPR | Size | New capture |','|---|---|---|---|---|---|'];
+for(const r of captures.records.filter(r=>r.file)){
+ const b=await readFile(r.file);let size=`${b.length} bytes`;
+ if(r.file.endsWith('.webp')){const m=await sharp(b).metadata();size=`${m.width}×${m.height}`;}
+ lines.push(`| ${r.id} | ${r.file} | ${r.locale} / ${r.reused?'pawly-case-06':'accepted story fixture'} | ${r.viewport} / ${r.dpr} | ${size} | ${r.reused?'Reused':'Yes, completed'} |`);
+}
+lines.push('','Exact source URLs, DOM labels, native width, file SHA256 and locale are in captures.json. All reused files match their existing source hashes. Product source fingerprints in sources.json. Inter from accepted product is preserved inside raster captures; foundation samples use the already-loaded shared Inter font with its existing OFL license under rebuild/common/portal. No product font or dependency added.','', 'PAW-FILM-01: both codecs + original poster copied; budget below 2MB per file. Poster is selected local state; final confirmed report is separately present in static story. Source native recording was not accelerated. E-G-01 requests inline film in shared schema; preview companion uses existing MediaFrame film.');
+await writeFile('tasks/portfolio-rebuild/pawly/media.md',lines.join('\n')+'\n');
+console.log(`${hashes.length} source hashes; ${captures.records.filter(r=>r.file).length} media records`);
