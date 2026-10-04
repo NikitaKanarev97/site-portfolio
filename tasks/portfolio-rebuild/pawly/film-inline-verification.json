@@ -1,0 +1,843 @@
+{
+  "origin": "http://127.0.0.1:4370",
+  "phase": "actual-inline-film",
+  "commonDelta": "433c80bcba29eda2060067570e9f8ec2087a2a91",
+  "importedRef": "129b96f5bebcb9f11c93a42b2f78617b3b217d9c",
+  "historicalFindings": "history/d3bbbb-film-verification.json",
+  "nativeInput": "Focused HTML video + trusted Space; read-only Node polling; no scripted play/pause/seek",
+  "results": [
+    {
+      "lang": "en",
+      "mode": "full",
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
+      "route": "/preview/pawly-rebuild/en/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": true
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "companion": false,
+        "staleAnchor": 0,
+        "staticSources": [
+          "/media/rebuild/pawly/en/active-service.webp",
+          "/media/rebuild/pawly/en/order-details.webp"
+        ]
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.619332,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 22,
+        "bound": true
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.851068,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 29,
+        "bound": true
+      },
+      "resumed": {
+        "paused": false,
+        "ended": false,
+        "time": 1.13019,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 31,
+        "bound": true
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": true
+      },
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "mode": "reduce",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/preview/pawly-rebuild/en/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": true
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "companion": false,
+        "staleAnchor": 0,
+        "staticSources": [
+          "/media/rebuild/pawly/en/active-service.webp",
+          "/media/rebuild/pawly/en/order-details.webp"
+        ]
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.562611,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 22,
+        "bound": true
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.795759,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 29,
+        "bound": true
+      },
+      "resumed": {
+        "paused": false,
+        "ended": false,
+        "time": 1.069982,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 36,
+        "bound": true
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": true
+      },
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "mode": "no-js",
+      "viewport": {
+        "width": 360,
+        "height": 844
+      },
+      "route": "/preview/pawly-rebuild/en/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": null,
+        "readyState": 0,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": false
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "companion": false,
+        "staleAnchor": 0,
+        "staticSources": [
+          "/media/rebuild/pawly/en/active-service.webp",
+          "/media/rebuild/pawly/en/order-details.webp"
+        ]
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.514457,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 22,
+        "bound": false
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.731188,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 28,
+        "bound": false
+      },
+      "resumed": {
+        "paused": false,
+        "ended": false,
+        "time": 1.01127,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 36,
+        "bound": false
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": false
+      },
+      "errors": []
+    },
+    {
+      "lang": "ru",
+      "mode": "full",
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
+      "route": "/preview/pawly-rebuild/ru/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": true
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "companion": false,
+        "staleAnchor": 0,
+        "staticSources": [
+          "/media/rebuild/pawly/ru/active-service.webp",
+          "/media/rebuild/pawly/ru/order-details.webp"
+        ]
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.596295,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 22,
+        "bound": true
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.829094,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 28,
+        "bound": true
+      },
+      "resumed": {
+        "paused": false,
+        "ended": false,
+        "time": 1.109038,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 37,
+        "bound": true
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": true
+      },
+      "errors": []
+    },
+    {
+      "lang": "ru",
+      "mode": "reduce",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/preview/pawly-rebuild/ru/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": true
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "companion": false,
+        "staleAnchor": 0,
+        "staticSources": [
+          "/media/rebuild/pawly/ru/active-service.webp",
+          "/media/rebuild/pawly/ru/order-details.webp"
+        ]
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.582662,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 23,
+        "bound": true
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.81457,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 30,
+        "bound": true
+      },
+      "resumed": {
+        "paused": false,
+        "ended": false,
+        "time": 1.091778,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 38,
+        "bound": true
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": true
+      },
+      "errors": []
+    },
+    {
+      "lang": "ru",
+      "mode": "no-js",
+      "viewport": {
+        "width": 360,
+        "height": 844
+      },
+      "route": "/preview/pawly-rebuild/ru/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": null,
+        "readyState": 0,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": false
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "companion": false,
+        "staleAnchor": 0,
+        "staticSources": [
+          "/media/rebuild/pawly/ru/active-service.webp",
+          "/media/rebuild/pawly/ru/order-details.webp"
+        ]
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.527192,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 22,
+        "bound": false
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.743145,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 28,
+        "bound": false
+      },
+      "resumed": {
+        "paused": false,
+        "ended": false,
+        "time": 1.01918,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 36,
+        "bound": false
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": false
+      },
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "mode": "lifecycle",
+      "beforeDeparture": {
+        "paused": false,
+        "ended": false,
+        "time": 0.504546,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 21,
+        "bound": true
+      },
+      "outside": {
+        "paused": true,
+        "ended": false,
+        "time": 0.515416,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 21,
+        "bound": true
+      },
+      "returned": {
+        "paused": true,
+        "ended": false,
+        "time": 0.515416,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 21,
+        "bound": true
+      },
+      "preferenceFull": {
+        "paused": true,
+        "ended": false,
+        "time": 0.825339,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 30,
+        "bound": true
+      },
+      "preferenceReduce": {
+        "paused": true,
+        "ended": false,
+        "time": 1.130736,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 39,
+        "bound": true
+      },
+      "syntheticHidden": {
+        "paused": true,
+        "ended": false,
+        "time": 1.410396,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 46,
+        "bound": true
+      },
+      "syntheticVisible": {
+        "paused": true,
+        "ended": false,
+        "time": 1.410396,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 46,
+        "bound": true
+      },
+      "detached": {
+        "paused": true,
+        "connected": false,
+        "bound": false
+      },
+      "back": {
+        "count": 1,
+        "state": {
+          "paused": true,
+          "ended": false,
+          "time": 0,
+          "duration": null,
+          "readyState": 0,
+          "source": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof.mp4",
+          "controls": true,
+          "loop": false,
+          "autoplay": false,
+          "poster": "http://127.0.0.1:4370/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+          "decodedFrames": 0,
+          "bound": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "lang": "ru",
+      "mode": "lifecycle",
+      "beforeDeparture": {
+        "paused": false,
+        "ended": false,
+        "time": 0.520763,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 20,
+        "bound": true
+      },
+      "outside": {
+        "paused": true,
+        "ended": false,
+        "time": 0.540997,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 21,
+        "bound": true
+      },
+      "returned": {
+        "paused": true,
+        "ended": false,
+        "time": 0.540997,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 21,
+        "bound": true
+      },
+      "preferenceFull": {
+        "paused": true,
+        "ended": false,
+        "time": 0.850141,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 30,
+        "bound": true
+      },
+      "preferenceReduce": {
+        "paused": true,
+        "ended": false,
+        "time": 1.028165,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 37,
+        "bound": true
+      },
+      "syntheticHidden": {
+        "paused": true,
+        "ended": false,
+        "time": 1.18073,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 38,
+        "bound": true
+      },
+      "syntheticVisible": {
+        "paused": true,
+        "ended": false,
+        "time": 1.18073,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 38,
+        "bound": true
+      },
+      "detached": {
+        "paused": true,
+        "connected": false,
+        "bound": false
+      },
+      "back": {
+        "count": 1,
+        "state": {
+          "paused": true,
+          "ended": false,
+          "time": 0,
+          "duration": null,
+          "readyState": 0,
+          "source": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof.mp4",
+          "controls": true,
+          "loop": false,
+          "autoplay": false,
+          "poster": "http://127.0.0.1:4370/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+          "decodedFrames": 0,
+          "bound": true
+        }
+      },
+      "errors": []
+    }
+  ],
+  "failures": [],
+  "limitations": [
+    "Local Chromium1243 only; no physical devices or other engines.",
+    "Hidden document is an explicitly synthetic visibility handler probe; physically hidden tab not verified.",
+    "No-JS native playback works; lifecycle enhancement requires JS."
+  ],
+  "storySha256": "1d2e355906100f5b57d07f5dfce41048323ea63a7e1773c5183ab2567bd6b3f3"
+}

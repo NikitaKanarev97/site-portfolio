@@ -4,23 +4,22 @@
 
 | Порядок / ID | Общий модуль | Визуальный довод |
 |---|---|---|
-| Cover / facts | CaseCover screen phones / MetaList facts | Три сентябрьских момента на песочном поле. Mobile — первые два; report ниже отдельно. Концепт, единственный дизайнер, версия, synthetic QA видны рано |
+| Cover / facts | CaseCover screen phones / MetaList facts | Три сентябрьских момента на песочном поле. Mobile — первые два; report ниже отдельно. Четыре факта: концепт, единственный дизайнер, версия, synthetic QA |
 | care-context | CaseThesis | Человеческая ситуация передачи питомца/ключей; основания доверия — гипотеза дизайна |
 | compatibility | CaseCarousel / process | Реальные профиль и список, потребности/пределы перед проверками, полный CTA |
-| return-boundary | CaseSteps static | Ожидаемые 14:50 → локальный полный кадр → подтверждённые 14:52 и два фото |
+| return-boundary | CaseSteps static / CaseScreen film | Ожидаемые 14:50 → исходный local poster + manual send/report film → статичные подтверждённые 14:52 и два фото |
 | proof-system | CaseSpecimen | PhotoProof 4, TimelineRow 4, InfoNote 3 states; compact foundation, собственный Inter и реальные цвета |
 | walker-earnings | CaseShot phones | Один полный мобильный earnings, 950/171/779 и 3116+779=3895 — арифметика fixture |
 | inspectable-care | CaseImpact outcome | Реализованная цепочка, synthetic September acceptance, цена отдельной отправки и вопрос будущей проверки с людьми |
 | Next | CaseNext | Native Agent Ops, порядок публичного реестра не менялся |
-| return-proof companion | MediaFrame film | Реальная существующая запись, explicit play/native controls, no autoplay/loop. Доступна из ранних facts и обратной ссылкой к состояниям |
 
 Паспорта до capture — `tasks/portfolio-rebuild/pawly/artifact-plan.md`, provenance/evidence/media inventories рядом. Продукт строго read-only. Три отобранные матрицы сняты из принятого catalogue 04; это не старый Storybook/Figma. Все 11 states доступны без JS. Source UI матриц EN, окружающие строки EN/RU; экраны и фильм используют соответствующую настоящую локаль. Foundation образцы EN документируют шрифт без имитации RU.
 
 Статичная проверка показала чрезмерную высоту трёх full-width групп. Уточнение: один care-evidence group, PhotoProof и TimelineRow в двух колонках, InfoNote wide снизу; на mobile по одному семейству. Это native вариант frozen Specimen, не новый renderer. Foundation 35:65 и грамматика HA-DS-01 сохранены.
 
-Центральное действие — существующий return-proof, без ретайминга. Спокойные defaults common reveal; никакого pinned desktop-сценария, финансового счётчика или live GPS. Full/reduce/no-JS содержат полную статичную цепочку. E-G-01: для inline native film в Story нужен optional film в ShotItem/CaseScreen. Пока native companion размещён после рассказа; это явная граница интеграции, не заявленная поддержка схемы.
+Центральное действие — существующий return-proof, без ретайминга, в штатном среднем шаге `return-boundary`. Общий delta 433c80b импортирован как 129b96f: optional film в ShotItem/CaseScreen, native controls, MP4 первым, lifecycle. Все шесть shared файлов имеют принятые canonical hashes. Companion после Next и #return-proof удалены. Спокойные defaults common reveal; никакого pinned desktop-сценария, финансового счётчика или live GPS. Full/reduce/no-JS содержат полную статичную expected/local-poster/end-report цепочку.
 
-Фактические film-границы: full/reduce manual play прошли; no-JS Chromium остаётся на WebM без metadata (E-G-02), но poster/static end states читаются. Ручной film продолжает играть вне viewport (E-G-03); route departure/Back прошли. Полная film-приёмка ожидает общих исправлений G. Охват и записи — собственный report, не исторический PASS ниже.
+Свежая actual-case film-проверка: EN/RU × full1440/reduce390/no-JS360, native play/pause/resume/end с decoded frames, 6 профилей. Два lifecycle профиля: offscreen pause, сохранённое время/ручной return, live preferences, Next cleanup и Back. 0 failures; E-G-01/02/03 закрыты на actual case. Synthetic document.hidden probe явно отделён от физически скрытой вкладки. Записи/кадры — recording/inline и shots/inline. Исходные findings d3bbbb сохранены в history; прежние metadata-ожидания не выданы за playback proof. Новая матрица страницы 34 профиля и harmony16 samples прошли, budget329EN/279RU. Product acceptance с людьми и public integration не заявляются.
 
 ## История до E: Product Polish 06
 
