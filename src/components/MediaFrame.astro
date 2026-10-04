@@ -234,8 +234,9 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
               aria-label={alt}
               data-clip={film ? 'film' : 'loop'}
             >
+              {film && <source src={`${video}.mp4`} type="video/mp4" />}
               <source src={`${video}.webm`} type="video/webm" />
-              <source src={`${video}.mp4`} type="video/mp4" />
+              {!film && <source src={`${video}.mp4`} type="video/mp4" />}
             </video>
             {/*
               Управление стоит внутри маски, а не рядом с подписью: оно
@@ -554,11 +555,31 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
    * приходит и после возврата по истории, а кадры при этом те же.
    */
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  const clipCleanups = new Set<() => void>();
+
+  function teardownClips() {
+    clipCleanups.forEach(dispose => dispose());
+    clipCleanups.clear();
+  }
 
   function initClips() {
   document.querySelectorAll<HTMLVideoElement>('[data-clip]').forEach((video) => {
     if (video.dataset.bound) return;
     video.dataset.bound = 'on';
+    let alive = true;
+    const controller = new AbortController();
+    const events = { signal: controller.signal };
+    const observers: IntersectionObserver[] = [];
+    let stallTimer: ReturnType<typeof setTimeout> | undefined;
+    const stopStall = () => { clearTimeout(stallTimer); stallTimer = undefined; };
+    clipCleanups.add(() => {
+      alive = false;
+      controller.abort();
+      observers.forEach(observer => observer.disconnect());
+      stopStall();
+      video.pause();
+      delete video.dataset.bound;
+    });
 
     const film = video.dataset.clip === 'film';
     const frame = video.closest('.media-frame');
@@ -584,7 +605,7 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
      */
     const toMp4 = () => {
       const mp4 = video.querySelector<HTMLSourceElement>('source[type="video/mp4"]');
-      if (!mp4 || video.dataset.fallback) return false;
+      if (!alive || !mp4 || video.dataset.fallback || (film && (!video.currentSrc || video.currentSrc === mp4.src))) return false;
       video.dataset.fallback = 'mp4';
       video.src = mp4.src;
       video.load();
@@ -608,9 +629,11 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
      */
     const warm = new IntersectionObserver(
       (entries) => {
+        if (!alive) return;
         if (!entries[entries.length - 1].isIntersecting) return;
         warm.disconnect();
         if (video.dataset.fallback) return;
+        if (film && (!video.paused || video.currentTime > 0)) return;
         // Фильм на подходе берёт только заголовок — контролам нужна
         // длительность, а не восемьдесят секунд, которые могут не посмотреть.
         video.preload = film ? 'metadata' : 'auto';
@@ -618,9 +641,11 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
       },
       { rootMargin: '800px 0px' },
     );
+    observers.push(warm);
     warm.observe(video);
 
     const paint = (playing: boolean) => {
+      if (!alive) { video.pause(); return; }
       if (!toggle) return;
       toggle.dataset.state = playing ? 'playing' : 'paused';
       const next = playing ? toggle.dataset.pauseLabel : toggle.dataset.playLabel;
@@ -655,36 +680,47 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
      * отказ ровно в тот момент, который и нужно переждать.
      */
     let flowing = performance.now();
-    video.addEventListener('progress', () => { flowing = performance.now(); });
-    video.addEventListener('loadstart', () => { flowing = performance.now(); });
+    video.addEventListener('progress', () => { flowing = performance.now(); }, events);
+    video.addEventListener('loadstart', () => { flowing = performance.now(); }, events);
 
     const watchStall = () => {
+      stopStall();
       const tick = () => {
-        if (video.paused || video.readyState >= 2) return;
+        stallTimer = undefined;
+        if (!alive || video.paused || video.readyState >= 2) return;
         if (performance.now() - flowing >= 2100) {
           if (toMp4()) video.play().then(() => paint(true)).catch(() => paint(false));
           return;
         }
-        setTimeout(tick, 700);
+        stallTimer = setTimeout(tick, 700);
       };
-      setTimeout(tick, 700);
+      stallTimer = setTimeout(tick, 700);
     };
 
     /**
-     * Фильм запускает только читатель, нативными контролами. Наблюдатель
-     * видимости, отмотка и своя кнопка ему не нужны: движения без нажатия
-     * нет, и `WCAG 2.2.2` закрывают сами контролы. Остаётся одно — тихий
-     * отказ VP9, он от режима не зависит. Сторож взводится на нажатии,
-     * а ошибка до нажатия меняет формат, не запуская ролик.
+     * Фильм запускает только читатель. Уход из окна/вкладки ставит его
+     * на паузу; возврат сохраняет время и требует нового явного play.
      */
     if (film) {
+      const inView = () => {
+        const rect = video.getBoundingClientRect();
+        return rect.bottom > 0 && rect.top < innerHeight;
+      };
+      const pauseOutside = () => { if (document.hidden || !inView()) video.pause(); };
+      const observer = new IntersectionObserver(pauseOutside);
+      observers.push(observer);
+      observer.observe(video);
+      document.addEventListener('visibilitychange', pauseOutside, events);
+      reduced.addEventListener('change', () => video.pause(), events);
       video.addEventListener('play', () => {
-        video.dataset.started = 'on';
+        if (document.hidden || !inView()) { video.pause(); return; }
         watchStall();
-      });
+      }, events);
+      video.addEventListener('pause', stopStall, events);
       video.addEventListener('error', () => {
-        if (toMp4() && video.dataset.started) video.play().catch(() => {});
-      });
+        const resume = !video.paused && !document.hidden && inView();
+        if (toMp4() && resume) video.play().then(() => { if (!alive) video.pause(); }).catch(() => {});
+      }, events);
       return;
     }
 
@@ -701,8 +737,10 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
       watchStall();
 
       attempt.then(() => {
+        if (!alive) { video.pause(); return; }
         paint(true);
       }).catch(() => {
+        if (!alive) return;
         // Отказ мог прийти и от декодера, а не от политики автозапуска:
         // сначала пробуем второй формат и только потом сдаёмся.
         if (toMp4()) {
@@ -715,7 +753,7 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
     };
 
     const sync = () => {
-      if (wanted && visible) {
+      if (alive && wanted && visible) {
         start();
         return;
       }
@@ -727,14 +765,14 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
     // без ожидания сторожа.
     video.addEventListener('error', () => {
       if (toMp4() && wanted && visible) start();
-    });
+    }, events);
 
     toggle?.addEventListener('click', () => {
       wanted = !wanted;
       sync();
-    });
+    }, events);
 
-    new IntersectionObserver(
+    const observer = new IntersectionObserver(
       (entries) => {
         // Важен переход, а не текущее состояние: отматывает и снимает
         // паузу именно возвращение в окно, а не каждое срабатывание.
@@ -801,11 +839,14 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
        * а «нужный момент» считается в пикселях — в разборе выше.
        */
       { threshold: Array.from({ length: 21 }, (_, step) => step / 20) },
-    ).observe(video);
+    );
+    observers.push(observer);
+    observer.observe(video);
 
     paint(false);
   });
   }
 
   document.addEventListener('astro:page-load', initClips);
+  document.addEventListener('astro:before-swap', teardownClips);
 </script>

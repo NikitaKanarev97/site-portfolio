@@ -1,5 +1,7 @@
 # Компоненты — Site-portfolio
 
+**G-common-E · E-G-01/02/03:** общий CaseScreen поддерживает optional ShotItem.film, проверяет video и передаёт его MediaFrame. Ручной режим отдаёт MP4 первым, WebM вторым; loop порядок прежний. Film сохраняет время при паузе вне viewport/вкладки и остаётся ручным при возврате/live preference. MediaFrame очищает observers, listeners и stall timer на astro:before-swap. Кнопки/фреймы продукта и DS tokens не меняются.
+
 **G · 04.10.2026, G-01:** `CaseScreen native?: boolean` показывает документальный alpha-контур actual specimen без рамки, тени и скругляющей маски портфолио. `CaseSpecimen` всегда передаёт native. Радиусы, обводки и цвета настоящего компонента сохраняются в source capture; прозрачный bleed в 2 CSS px вокруг него сохраняет внешнюю обводку. Для обычных экранов прежняя рамка сохраняется.
 
 **G · 04.10.2026, G-02:** Navbar показывает native ссылки в потоке на mobile, пока обработчики меню не готовы. После `data-navbar-ready` включается обычная панель и её кнопка. Fallback закрывает no-JS и отказ загрузки скрипта, поддерживает EN/RU, существующие цели space-12 и те же URL. Слушатели снимаются через AbortController при уходе.

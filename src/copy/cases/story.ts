@@ -38,6 +38,8 @@ export interface ShotItem {
   altNarrow?: string;
   /** Клип взаимодействия: адрес без расширения, `src` — постер. */
   video?: string;
+  /** Manual native film; requires video, preserves the poster and static states. */
+  film?: boolean;
   /** Actual specimen capture width in CSS pixels; prevents enlarging a tiny control. */
   nativeWidth?: number;
 }
@@ -187,8 +189,27 @@ const modes: Record<CaseBlock['type'], readonly string[]> = {
   specimen: ['reveal'], outcome: ['count'],
 };
 
+export function assertShotMedia(shot: ShotItem): void {
+  if (shot.film !== undefined && typeof shot.film !== 'boolean') throw new Error('Shot film must be boolean');
+  if (shot.film && !shot.video) throw new Error('Shot film requires video');
+}
+
+function* storyShots(story: CaseStory): Generator<ShotItem> {
+  const media = story.cover.media;
+  if (media.variant === 'proof') { yield media.shot; yield* media.panels ?? []; }
+  if (media.variant === 'screen') yield* media.items;
+  for (const block of story.blocks) {
+    if (block.type === 'shot') yield* block.payload.shot.items;
+    if (block.type === 'comparison') yield* block.payload.after?.items ?? [];
+    if (block.type === 'steps') for (const item of block.payload.items) yield item.shot;
+    if (block.type === 'process') for (const slide of block.payload.slides) if ('shot' in slide) yield slide.shot;
+    if (block.type === 'specimen') for (const set of block.payload.specimen.sets) for (const state of set.states) yield state.shot;
+  }
+}
+
 /** Build-time guard, also for data assembled from object spreads or JS. */
 export function defineStory<const T extends CaseStory>(story: T): T {
+  for (const shot of storyShots(story)) assertShotMedia(shot);
   const ids = new Set<string>();
   for (const block of story.blocks) {
     if (!/^[a-z][a-z0-9-]*$/.test(block.id) || ids.has(block.id)) throw new Error(`Invalid/duplicate story ID: ${block.id}`);
@@ -220,6 +241,7 @@ export function defineStory<const T extends CaseStory>(story: T): T {
 /** Locales keep the same structure, evidence/media identities and motion semantics. */
 export function assertStoryPair(en: CaseStory, ru: CaseStory): void {
   const signature = (story: CaseStory) => JSON.stringify({ theme: story.theme, plate: story.plate,
+    films: [...storyShots(story)].map(shot => Boolean(shot.film)),
     blocks: story.blocks.map(b => ({ id: b.id, type: b.type, evidenceId: b.evidenceId, mediaId: b.mediaId, motion: b.motion,
       groups: b.type === 'specimen' ? b.payload.specimen.groups.map(g => g.id) : undefined,
       sets: b.type === 'specimen' ? b.payload.specimen.sets.map(s => ({ id: s.id, group:s.group, wide:s.wide, states: s.states.map(v => ({ id: v.id, mediaId: v.mediaId })) })) : undefined,
