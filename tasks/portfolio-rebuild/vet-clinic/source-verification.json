@@ -1,0 +1,104 @@
+{
+  "sourceRoot": "D:/Claude-projects/Veterinary-clinic",
+  "sourceHead": "78772df6735d90d3ba79704fe51bb225cd927ebf",
+  "accepted": "c2a65cc",
+  "sourceFiles": [
+    {
+      "file": "src/screens/ProductScreens.tsx",
+      "sha256": "ac77818cefc7777352ecc40e1950c85e06b10bdcb2c2b842efce698ff6791a67"
+    },
+    {
+      "file": "src/data/clinicData.tsx",
+      "sha256": "ac40210f3b7262305a95ed6a48b2084df59bd924087aa753d284b638771dbfab"
+    },
+    {
+      "file": "src/i18n/RussianLocalization.tsx",
+      "sha256": "23752fca191d0a6244935b2e3e401fa2ced9d71bedf2036c9f2fcbddaa483a2c"
+    },
+    {
+      "file": "src/screens/PolishScreens.module.css",
+      "sha256": "70a72873754150bbfa9b0cb467668f123f90d5a086c10dfe62cbbfc6ab500a0e"
+    },
+    {
+      "file": "ds/foundation.md",
+      "sha256": "d695ddbdf8bbb5afb19969746fc9e3e823a75169908a0fe8a83bd0bbf1206cc0"
+    },
+    {
+      "file": "ds/components.md",
+      "sha256": "ca0bb603b00740dbf7ce7b6821413ba2532746c5a29bdcaebe1fc0b8c2ecb8d2"
+    },
+    {
+      "file": "ia/flows/visit-trace.mmd",
+      "sha256": "689728afdf71d30bc5696a89a91330a1ac95d4088206d9aa3f19f08e3c78ffe3"
+    },
+    {
+      "file": "ia/flows/discharge-and-invoice.mmd",
+      "sha256": "e1bb79551d4cd7710831eb5531d3d34daf69c0c514b831979641a184294922ea"
+    },
+    {
+      "file": "audit/product-polish/07-acceptance.md",
+      "sha256": "153508fbd5114789c2021776e49353bf1b99f39b63b7a18b971d394109111063"
+    },
+    {
+      "file": "audit/product-polish/08-case-release.md",
+      "sha256": "53161cc90077a2c6b01a53405d7ada98a18d3117c66fc4287737d7ea437e0f7e"
+    }
+  ],
+  "observedExistingBuild": [
+    {
+      "file": "dist/assets/index-D8TiSzrF.js",
+      "sha256": "80c799164455efbfc82b49e540387e8e0a807697c6e8dc78042e80f20ba47193"
+    },
+    {
+      "file": "dist/assets/index-DMoT7fAk.css",
+      "sha256": "7bf310052d44babe22380a46a7c726814e4b9a605466af1046247352ba100481"
+    },
+    {
+      "file": "dist/assets/ScrollTrigger-BXR6Gh-7.js",
+      "sha256": "13f9d9312f5f63da31aeffd078115dcc8a93cdb1f06f9a1d612b2a98a1c7c234"
+    }
+  ],
+  "buildDate": "2026-09-13; no build written in source",
+  "checks": [
+    {
+      "name": "current built source has clinical queue",
+      "ok": true,
+      "details": "source dist 13.09.2026"
+    },
+    {
+      "name": "unsaved state",
+      "ok": true,
+      "details": "4.9 form; 4.8 stored"
+    },
+    {
+      "name": "unsaved draft lost on reload",
+      "ok": true,
+      "details": "No draft recovery; explicit Save required"
+    },
+    {
+      "name": "saved 09:12",
+      "ok": true,
+      "details": "demo clock"
+    },
+    {
+      "name": "saved survives reload",
+      "ok": true,
+      "details": "4.9"
+    },
+    {
+      "name": "published snapshot",
+      "ok": true,
+      "details": "v1 09:13"
+    },
+    {
+      "name": "owner same dose and plan",
+      "ok": true,
+      "details": "1.00 / 7 days"
+    },
+    {
+      "name": "saved edit does not change owner snapshot",
+      "ok": true,
+      "details": "record10 / owner7"
+    }
+  ]
+}

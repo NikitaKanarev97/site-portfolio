@@ -1,0 +1,29 @@
+{
+  "checks": [
+    {
+      "name": "RU unsaved weight is lost on reload",
+      "ok": true
+    },
+    {
+      "name": "RU saved weight survives reload",
+      "ok": true
+    },
+    {
+      "name": "RU owner reads the published plan and same dose",
+      "ok": true
+    },
+    {
+      "name": "RU invoice has total and no diagnosis",
+      "ok": true
+    },
+    {
+      "name": "RU saved edit leaves owner snapshot unchanged",
+      "ok": true
+    },
+    {
+      "name": "RU new changes require explicit publication",
+      "ok": true
+    }
+  ],
+  "errors": []
+}

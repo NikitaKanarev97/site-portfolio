@@ -1,0 +1,25 @@
+{
+  "base": "58002c398c3386c9df4b398f324ab07115c979f7",
+  "unchangedFrozenFiles": 585,
+  "ownedBaseExceptions": [
+    "ds/screens/case-vet.md",
+    "src/copy/cases/vet-clinic.ts",
+    "src/copy/ru/cases/vet-clinic.ts"
+  ],
+  "mirrors": [
+    {
+      "source": "ds/tokens.css",
+      "mirror": "src/styles/tokens.css",
+      "equal": true
+    },
+    {
+      "source": "ds/motion.js",
+      "mirror": "src/scripts/motion.js",
+      "equal": true
+    }
+  ],
+  "sourceHead": "78772df6735d90d3ba79704fe51bb225cd927ebf",
+  "sourceStatus": "",
+  "mediaFiles": 32,
+  "failures": []
+}

@@ -1,5 +1,33 @@
 # Screen: CaseVet
 
+## D · новая composition map · 04.10.2026
+
+Действующая новая редакция в изолированном preview; историческая карта ниже описывает прежний public fallback и не является её приёмкой. Base 58002c398c3386c9df4b398f324ab07115c979f7. Preview `/preview/vet-clinic-rebuild/{en,ru}/`; story `vetClinicStory` / `vetClinicStoryRu`. Общие frozen modules/DS не меняются.
+
+Тезис: одна запись пересекает границы роли и публикации, сохраняя нужный каждой роли объём. Статус концепта — в eyebrow до UI; роль автора, один врач, NDA и вымышленные данные — в первых facts. Продукт не внедрён. Тридцать секунд — контекст, не результат замера. Копирайт — короткие связи, ориентир 250–350 слов, фактический бюджет фиксируется harmony.
+
+| Стабильный ID | Каталог / материал | Вывод / движение после статической проверки |
+|---|---|---|
+| cover/facts | CaseCover proof, целый QuickTrace; MetaList facts | Реальный UI с полями и Save, честный статус; одна спокойная поверхность sage |
+| room-window | CaseThesis + CaseShot | Исходное ограничение; очередь без старого backlog-абзаца |
+| role-boundaries | CaseArtifact / Diagram | HA-FLOW-01: ввод/условие/исходы и три роли; desktop/mobile geometry общая EN/RU; draw once |
+| one-visit | CaseSteps | Сохранённые факты врача → целый invoice регистратуры → опубликованное назначение телефона. Focus общего слоя, без checkpoint-стола; narrow/short/reduce/no-JS native sequence |
+| save-is-not-publish | CaseThesis / CaseCarousel | Unsaved, saved и published с behind changes — независимые границы, native horizontal reading без JS |
+| prototype-boundary | CaseThesis / CaseImpact qualitative | Проверенный demo path, ограничения draft/storage/versions; следующий human test |
+| next | CaseNext Pawly | Native ссылка, без паузы; registry подключает G |
+
+EN/RU строятся одной фабрикой в EN-copy, RU экспортирует локализованную story с assertStoryPair. Геометрия/fixtures/evidence IDs не дублируются. Legacy export сохранён побайтовым payload: публичные маршруты ещё показывают старый рассказ до интеграции G.
+
+Паспорта до capture: tasks/portfolio-rebuild/vet-clinic/artifact-plan.md. Реальные DOM-кропы не изменяют поля/значения; выбранные полосы собраны в явные редакционные детали без дорисовки UI. Central fixture: Marsik 4.9/1.00, save09:12, publish09:13; cover seed4.8/0.95 не смешивается с этой фикстурой. Межустройственная синхронизация не реализована: размеры браузера показывают адаптивные роли одной локальной модели.
+
+Цена решения: две явные операции Save/Publish; несохранённая форма теряется при reload; прошлые выписки не хранятся. Старый flow с «локальным буфером» — намерение, не нынешнее реализованное свойство. Полная DS-библиотека и старые десять секций исключены редакционным планом.
+
+Финальные кадры, source verification, full/reduce/no-JS/lifecycle coverage и отчёт — tasks/portfolio-rebuild/vet-clinic/report.md.
+
+---
+
+## Историческая public-карта до интеграции D
+
 **Маршрут:** `/work/vet-clinic` · файлы `src/pages/work/[slug].astro` + `src/copy/cases/vet-clinic.ts`
 **Источник:** `ds/screens/case-dssl.md` — шаблон страницы кейса, здесь не переизобретается · `outputs/prd.md` US-07…US-11, US-18, US-19
 **Оболочка:** `PageShell` — `Navbar` + содержимое + `Footer`

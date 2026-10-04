@@ -1,0 +1,14 @@
+
+> site-portfolio@0.1.0 check:harmony
+> node scripts/harmony-check.mjs /preview/vet-clinic-rebuild/en/ /preview/vet-clinic-rebuild/ru/ --base=http://127.0.0.1:4366 --widths=1440,1024,390,360 --height=600
+
+/preview/vet-clinic-rebuild/en/ @1440: плашек 8, тезисов 7, подписей и абзацев 11 · vet-clinic-rebuild 339 слов, 8 кадров
+/preview/vet-clinic-rebuild/en/ @1024: плашек 8, тезисов 7, подписей и абзацев 11 · vet-clinic-rebuild 339 слов, 8 кадров
+/preview/vet-clinic-rebuild/en/ @390: плашек 8, тезисов 7, подписей и абзацев 11 · vet-clinic-rebuild 339 слов, 8 кадров
+/preview/vet-clinic-rebuild/en/ @360: плашек 8, тезисов 7, подписей и абзацев 11 · vet-clinic-rebuild 339 слов, 8 кадров
+/preview/vet-clinic-rebuild/ru/ @1440: плашек 8, тезисов 7, подписей и абзацев 11 · vet-clinic-rebuild 298 слов, 8 кадров
+/preview/vet-clinic-rebuild/ru/ @1024: плашек 8, тезисов 7, подписей и абзацев 11 · vet-clinic-rebuild 298 слов, 8 кадров
+/preview/vet-clinic-rebuild/ru/ @390: плашек 8, тезисов 7, подписей и абзацев 11 · vet-clinic-rebuild 298 слов, 8 кадров
+/preview/vet-clinic-rebuild/ru/ @360: плашек 8, тезисов 7, подписей и абзацев 11 · vet-clinic-rebuild 298 слов, 8 кадров
+
+✓ harmony-check: нарушений нет

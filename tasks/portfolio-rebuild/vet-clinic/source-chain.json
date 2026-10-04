@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "name": "current built source has clinical queue",
+      "ok": true,
+      "details": "source dist 13.09.2026"
+    },
+    {
+      "name": "unsaved state",
+      "ok": true,
+      "details": "4.9 form; 4.8 stored"
+    },
+    {
+      "name": "unsaved draft lost on reload",
+      "ok": true,
+      "details": "No draft recovery; explicit Save required"
+    },
+    {
+      "name": "saved 09:12",
+      "ok": true,
+      "details": "demo clock"
+    },
+    {
+      "name": "saved survives reload",
+      "ok": true,
+      "details": "4.9"
+    },
+    {
+      "name": "published snapshot",
+      "ok": true,
+      "details": "v1 09:13"
+    },
+    {
+      "name": "owner same dose and plan",
+      "ok": true,
+      "details": "1.00 / 7 days"
+    },
+    {
+      "name": "saved edit does not change owner snapshot",
+      "ok": true,
+      "details": "record10 / owner7"
+    }
+  ],
+  "errors": [],
+  "failures": []
+}

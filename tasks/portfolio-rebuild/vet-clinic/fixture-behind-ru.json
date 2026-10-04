@@ -1,0 +1,482 @@
+{
+  "queue": [
+    {
+      "id": "tim",
+      "time": "09:06",
+      "patient": "Tim",
+      "species": "cat",
+      "breed": "mixed breed",
+      "age": "3 years",
+      "weight": 3.9,
+      "owner": "Yulia Gavrilova",
+      "reason": "paw injury",
+      "waitingMinutes": 6,
+      "status": "arrived",
+      "emergency": true
+    },
+    {
+      "id": "marsik",
+      "time": "09:00",
+      "patient": "Marsik",
+      "species": "cat",
+      "breed": "mixed breed",
+      "age": "6 years",
+      "weight": 4.8,
+      "owner": "Irina Kuznetsova",
+      "reason": "otitis follow-up",
+      "waitingMinutes": 12,
+      "status": "seen"
+    },
+    {
+      "id": "baikal",
+      "time": "09:30",
+      "patient": "Baikal",
+      "species": "dog",
+      "breed": "Labrador",
+      "age": "4 years",
+      "weight": 32.4,
+      "owner": "Pavel Vetrov",
+      "reason": "vaccination",
+      "waitingMinutes": 3,
+      "status": "arrived"
+    },
+    {
+      "id": "tisha",
+      "time": "10:00",
+      "patient": "Tisha",
+      "species": "cat",
+      "breed": "British Shorthair",
+      "age": "11 years",
+      "owner": "Maria Abramova",
+      "reason": "vomiting for two days",
+      "confirmed": true,
+      "status": "expected"
+    },
+    {
+      "id": "nika",
+      "time": "10:30",
+      "patient": "Nika",
+      "species": "dog",
+      "breed": "Dachshund",
+      "age": "7 years",
+      "owner": "Artyom Solovyov",
+      "reason": "limping",
+      "confirmed": true,
+      "status": "expected"
+    },
+    {
+      "id": "grom",
+      "time": "11:00",
+      "patient": "Grom",
+      "species": "dog",
+      "breed": "German Shepherd",
+      "age": "2 years",
+      "owner": "Igor Panov",
+      "reason": "pre-anesthetic examination",
+      "confirmed": false,
+      "status": "expected"
+    }
+  ],
+  "activePatientId": "marsik",
+  "patients": {
+    "marsik": {
+      "id": "marsik",
+      "name": "Marsik",
+      "species": "Cat",
+      "breed": "mixed breed",
+      "age": "6 years",
+      "sex": "male, neutered",
+      "chip": "643094100123456",
+      "owner": "Irina Sergeevna Kuznetsova",
+      "ownerPhone": "+7 905 123-45-67",
+      "ownerEmail": "kuznetsova@example.com",
+      "privateNote": "Owner does not complete the ear drops; ask directly. Check the ear at every visit.",
+      "weights": [
+        {
+          "date": "August 13",
+          "value": 4.9,
+          "change": "−0.3 kg",
+          "author": "A. I. Sokolova",
+          "source": "clinic"
+        },
+        {
+          "date": "August 1",
+          "value": 5.2,
+          "change": "−0.2 kg",
+          "author": "A. I. Sokolova",
+          "source": "clinic"
+        },
+        {
+          "date": "May 14",
+          "value": 5.4,
+          "change": "+0.1 kg",
+          "author": "Irina Kuznetsova",
+          "source": "owner"
+        },
+        {
+          "date": "February 2",
+          "value": 5.3,
+          "change": "—",
+          "author": "D. V. Kim",
+          "source": "clinic"
+        }
+      ],
+      "previousMedications": [
+        "Meloxicam"
+      ],
+      "standingNote": "Chronic otitis, right ear",
+      "intolerances": "Intolerances: none identified",
+      "history": [
+        {
+          "id": "aug-1",
+          "date": "August 1",
+          "reason": "Right ear otitis",
+          "doctor": "A. I. Sokolova",
+          "outcome": "Ear drops prescribed for 5 days. At the follow-up the owner reported the course was not completed",
+          "prescriptions": [
+            {
+              "drug": "Meloxicam 1.05 ml",
+              "detail": "oral suspension 0.5 mg/ml · once daily · through August 6",
+              "endedOn": "2026-08-06"
+            }
+          ]
+        },
+        {
+          "id": "may-14",
+          "date": "May 14",
+          "reason": "Routine examination and vaccination",
+          "doctor": "A. I. Sokolova",
+          "outcome": "Core vaccine administered. No complaints were recorded at this visit",
+          "prescriptions": []
+        },
+        {
+          "id": "feb-2",
+          "date": "February 2",
+          "reason": "GI upset",
+          "doctor": "D. V. Kim",
+          "outcome": "Resolved on a diet; no medication was dispensed",
+          "prescriptions": [
+            {
+              "drug": "Diet",
+              "detail": "for 5 days",
+              "endedOn": "2026-02-07"
+            }
+          ]
+        }
+      ],
+      "vaccinations": [
+        {
+          "id": "core-2026",
+          "vaccine": "Core vaccine",
+          "given": "May 14, 2026",
+          "validUntil": "May 14, 2027",
+          "author": "A. I. Sokolova"
+        },
+        {
+          "id": "rabies-2025",
+          "vaccine": "Rabies",
+          "given": "March 6, 2025",
+          "validUntil": "March 6, 2026",
+          "author": "D. V. Kim"
+        },
+        {
+          "id": "core-2025",
+          "vaccine": "Core vaccine",
+          "given": "March 4, 2025",
+          "validUntil": "March 4, 2026",
+          "author": "A. I. Sokolova"
+        }
+      ],
+      "accessLog": [
+        {
+          "day": "August 13",
+          "time": "09:12",
+          "user": "A. I. Sokolova",
+          "role": "Veterinarian",
+          "action": "Opened the record"
+        },
+        {
+          "day": "August 13",
+          "time": "09:07",
+          "user": "A. I. Sokolova",
+          "role": "Veterinarian",
+          "action": "Added a weight measurement"
+        },
+        {
+          "day": "August 13",
+          "time": "08:58",
+          "user": "Yulia Gavrilova",
+          "role": "Administrator",
+          "action": "Opened owner and billing details"
+        },
+        {
+          "day": "August 1",
+          "time": "10:20",
+          "user": "D. V. Kim",
+          "role": "Veterinarian",
+          "action": "Opened the record of a colleague"
+        }
+      ]
+    },
+    "tim": {
+      "id": "tim",
+      "name": "Tim",
+      "species": "Cat",
+      "breed": "mixed breed",
+      "age": "3 years",
+      "owner": "Yulia Gavrilova",
+      "ownerPhone": "+7 905 448-11-02",
+      "ownerEmail": "gavrilova@example.com",
+      "privateNote": "",
+      "weights": [],
+      "previousMedications": [],
+      "history": [],
+      "vaccinations": [],
+      "accessLog": []
+    },
+    "baikal": {
+      "id": "baikal",
+      "name": "Baikal",
+      "species": "Dog",
+      "breed": "Labrador",
+      "age": "4 years",
+      "owner": "Pavel Vetrov",
+      "ownerPhone": "+7 905 771-30-18",
+      "ownerEmail": "vetrov@example.com",
+      "privateNote": "",
+      "weights": [],
+      "previousMedications": [],
+      "history": [],
+      "vaccinations": [],
+      "accessLog": []
+    },
+    "tisha": {
+      "id": "tisha",
+      "name": "Tisha",
+      "species": "Cat",
+      "breed": "British Shorthair",
+      "age": "11 years",
+      "owner": "Maria Abramova",
+      "ownerPhone": "+7 905 204-77-51",
+      "ownerEmail": "abramova@example.com",
+      "privateNote": "",
+      "weights": [],
+      "previousMedications": [],
+      "history": [],
+      "vaccinations": [],
+      "accessLog": []
+    },
+    "nika": {
+      "id": "nika",
+      "name": "Nika",
+      "species": "Dog",
+      "breed": "Dachshund",
+      "age": "7 years",
+      "owner": "Artyom Solovyov",
+      "ownerPhone": "+7 905 613-09-44",
+      "ownerEmail": "solovyov@example.com",
+      "privateNote": "",
+      "weights": [],
+      "previousMedications": [],
+      "history": [],
+      "vaccinations": [],
+      "accessLog": []
+    },
+    "grom": {
+      "id": "grom",
+      "name": "Grom",
+      "species": "Dog",
+      "breed": "German Shepherd",
+      "age": "2 years",
+      "owner": "Igor Panov",
+      "ownerPhone": "+7 905 890-62-37",
+      "ownerEmail": "panov@example.com",
+      "privateNote": "",
+      "weights": [],
+      "previousMedications": [],
+      "history": [],
+      "vaccinations": [],
+      "accessLog": []
+    },
+    "rex": {
+      "id": "rex",
+      "name": "Rex",
+      "species": "Dog",
+      "breed": "Belgian Malinois",
+      "age": "5 years",
+      "owner": "Denis Sorokin",
+      "ownerPhone": "+7 905 337-22-09",
+      "ownerEmail": "sorokin@example.com",
+      "privateNote": "",
+      "weights": [],
+      "previousMedications": [],
+      "history": [],
+      "vaccinations": [],
+      "accessLog": []
+    }
+  },
+  "quickTraces": {
+    "marsik": {
+      "weight": "4.9",
+      "medication": "Meloxicam",
+      "concentration": "0.5",
+      "doseMgKg": "0.1",
+      "frequency": "Once daily for 5 days",
+      "note": "Ear is cleaner; no discharge",
+      "savedAt": "09:12"
+    }
+  },
+  "visits": {
+    "marsik": {
+      "complaints": "Owner reports that the cat shakes his head less often than a week ago",
+      "history": "Right ear otitis since August 1. Ear drops were prescribed for 5 days but the course was not completed",
+      "examination": "Temperature 38.4°C. Right ear: erythema has subsided; no discharge",
+      "diagnosis": "Right ear otitis, resolving",
+      "plan": "Повторный осмотр через 10 дней.",
+      "privateNote": "Owner does not complete the ear drops; ask directly. Check the ear at every visit.",
+      "published": {
+        "content": {
+          "plan": "Повторный осмотр через 7 дней.",
+          "complaints": "Owner reports that the cat shakes his head less often than a week ago",
+          "examination": "Temperature 38.4°C. Right ear: erythema has subsided; no discharge",
+          "weight": "4.9",
+          "medication": "Meloxicam",
+          "concentration": "0.5",
+          "doseMgKg": "0.1",
+          "frequency": "Once daily for 5 days"
+        },
+        "publishedAt": "09:13",
+        "publishedOn": "August 13",
+        "revision": 1
+      }
+    }
+  },
+  "servicesByPatient": {
+    "marsik": [
+      {
+        "id": "follow-up",
+        "name": "Therapeutic follow-up",
+        "price": 900
+      },
+      {
+        "id": "otoscopy",
+        "name": "Otoscopy",
+        "price": 600
+      }
+    ]
+  },
+  "serviceCatalog": [
+    {
+      "id": "follow-up",
+      "name": "Therapeutic follow-up",
+      "price": 900
+    },
+    {
+      "id": "otoscopy",
+      "name": "Otoscopy",
+      "price": 600
+    },
+    {
+      "id": "injection",
+      "name": "Subcutaneous injection",
+      "price": 350
+    },
+    {
+      "id": "cbc",
+      "name": "Complete blood count",
+      "price": 1100
+    }
+  ],
+  "invoicesByPatient": {
+    "marsik": {
+      "paid": false,
+      "history": [
+        "09:40 · invoice created automatically from the veterinarian’s selections",
+        "09:42 · opened by administrator Yulia Gavrilova"
+      ]
+    }
+  },
+  "schedule": [
+    {
+      "id": "ap-marsik",
+      "start": "09:00",
+      "durationMinutes": 30,
+      "column": 0,
+      "kind": "visit",
+      "patientId": "marsik",
+      "reason": "otitis follow-up"
+    },
+    {
+      "id": "ap-baikal",
+      "start": "09:30",
+      "durationMinutes": 15,
+      "column": 0,
+      "kind": "visit",
+      "patientId": "baikal",
+      "reason": "vaccination"
+    },
+    {
+      "id": "ap-tisha",
+      "start": "10:00",
+      "durationMinutes": 30,
+      "column": 0,
+      "kind": "visit",
+      "patientId": "tisha",
+      "reason": "vomiting for two days"
+    },
+    {
+      "id": "ap-nika",
+      "start": "10:30",
+      "durationMinutes": 30,
+      "column": 0,
+      "kind": "visit",
+      "patientId": "nika",
+      "reason": "limping"
+    },
+    {
+      "id": "ap-grom",
+      "start": "11:00",
+      "durationMinutes": 45,
+      "column": 0,
+      "kind": "visit",
+      "patientId": "grom",
+      "reason": "pre-anesthetic examination"
+    },
+    {
+      "id": "ap-rex",
+      "start": "11:00",
+      "durationMinutes": 30,
+      "column": 1,
+      "kind": "visit",
+      "patientId": "rex",
+      "reason": "suture check"
+    },
+    {
+      "id": "ap-lunch",
+      "start": "13:00",
+      "durationMinutes": 60,
+      "column": 0,
+      "kind": "closed",
+      "label": "Lunch · closed by the veterinarian until 14:00"
+    }
+  ],
+  "scheduleDay": {
+    "opensAt": "09:00",
+    "closesAt": "14:00",
+    "stepMinutes": 30
+  },
+  "unfinishedVisits": [
+    {
+      "patient": "Rex",
+      "date": "August 12"
+    },
+    {
+      "patient": "Tisha",
+      "date": "August 12"
+    },
+    {
+      "patient": "Baikal",
+      "date": "August 11"
+    }
+  ]
+}
