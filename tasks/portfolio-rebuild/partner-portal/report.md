@@ -7,6 +7,12 @@ Branch: codex/partner-portal-rebuild
 Base A: 936724beff3bb9a01c69381659dc808782cc7950
 Local thematic commit: resolve with git rev-parse HEAD in this checkout; exact SHA is in the final chat handoff.
 
+### Narrow review-shot correction · 04.10.2026
+
+The initial `shots/ru-390-shipped-redesign.png` in implementation commit `172a468fc5570ada70aae033a52ecc3b78c11d69` was entirely white because capture preceded the completed paint. It has been replaced with a visually opened, readable 390×845 PNG (73,284 bytes) from the actual RU 390×844 reduced-motion page. The capture waits 700 ms after scroll plus two animation frames; all inspected ancestor opacities are 1 and there are no runtime errors.
+
+Pixel inspection covered all 39 PNG review shots: only that file needed replacement; zero entirely white shots remain. `shot-repair.json` records before/after hashes, pixel ranges and page state. `repair-review-shots.mjs` reproduces the narrow audit/repair; `verify-preview.mjs` now waits for paint and rejects entirely white section captures before writing them. This is a separate local delta commit preserving the implementation commit. Story, content, UI and shared runtime are unchanged; full build/check/harmony were not repeated for this media-only correction. B-G-01 remains the same P2 shared request.
+
 ## Open the result
 
 - [EN production preview](http://127.0.0.1:4354/preview/partner-portal-rebuild/en/)

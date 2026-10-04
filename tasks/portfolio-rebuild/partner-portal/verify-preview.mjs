@@ -36,7 +36,11 @@ try{
    if(mode==='reduce'&&viewport.height!==600&&[1440,390].includes(viewport.width)){
     await p.screenshot({path:`${out}/${lang}-${viewport.width}-full.png`,fullPage:true});await p.screenshot({path:`${out}/${lang}-${viewport.width}-cover.png`});
     for(const id of ['audit-direction','shared-specification','buyer-decision','source-line','domain-system','source-in-context','shipped-redesign']){
-     const el=p.locator('#'+id);await el.evaluate(e=>e.scrollIntoView({block:'center'}));await p.waitForTimeout(80);await el.screenshot({path:`${out}/${lang}-${viewport.width}-${id}.png`});
+     const el=p.locator('#'+id);await el.evaluate(e=>e.scrollIntoView({block:'center'}));await p.waitForTimeout(700);
+     await p.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+     const bytes=await el.screenshot();const pixels=await sharp(bytes).stats();
+     if(pixels.channels.slice(0,3).every(c=>c.min===255&&c.max===255))throw Error(`Entirely white review shot: ${lang}-${viewport.width}-${id}`);
+     writeFileSync(`${out}/${lang}-${viewport.width}-${id}.png`,bytes);
     }
    }
    console.log('static',lang,mode,viewport.width,viewport.height,'failures',failures.length);await c.close();
