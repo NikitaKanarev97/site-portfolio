@@ -1,0 +1,1204 @@
+{
+  "sourceVersion": "722b5c6d06a9ddcdc8bb813f84c60d0cac2e07e9",
+  "method": "native controls through existing filmScenario; pauses shortened, no storage writes",
+  "steps": [
+    {
+      "name": "index",
+      "url": "http://127.0.0.1:10845/b2b/",
+      "state": {
+        "specification": {
+          "fileName": "office_north_v8.xlsx",
+          "status": "parsed",
+          "lineCount": 48,
+          "line38": {
+            "id": "line-38",
+            "row": 38,
+            "zone": "Building B · floor 2",
+            "sourceText": "камера 4мп уличная",
+            "sourceQuantity": 8,
+            "quantity": 8,
+            "sku": "KX-2CB4T47F2-L",
+            "status": "ambiguous",
+            "explanation": "Housing and lens differ between them",
+            "candidates": [
+              "KX-2CB4T47F2-L",
+              "KX-2CB4046F2-I",
+              "KX-2CB4043F2-I"
+            ],
+            "resolved": false
+          }
+        },
+        "cart": {
+          "lineCount": 0
+        },
+        "latestOrder": {
+          "id": "B2B-10488",
+          "lineCount": 26,
+          "composition": [
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 14
+            },
+            {
+              "sku": "KX-3E4510P-E",
+              "quantity": 8
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 32
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "login",
+      "url": "http://127.0.0.1:10845/b2b/login",
+      "state": {
+        "specification": {
+          "fileName": "office_north_v8.xlsx",
+          "status": "parsed",
+          "lineCount": 48,
+          "line38": {
+            "id": "line-38",
+            "row": 38,
+            "zone": "Building B · floor 2",
+            "sourceText": "камера 4мп уличная",
+            "sourceQuantity": 8,
+            "quantity": 8,
+            "sku": "KX-2CB4T47F2-L",
+            "status": "ambiguous",
+            "explanation": "Housing and lens differ between them",
+            "candidates": [
+              "KX-2CB4T47F2-L",
+              "KX-2CB4046F2-I",
+              "KX-2CB4043F2-I"
+            ],
+            "resolved": false
+          }
+        },
+        "cart": {
+          "lineCount": 0
+        },
+        "latestOrder": {
+          "id": "B2B-10488",
+          "lineCount": 26,
+          "composition": [
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 14
+            },
+            {
+              "sku": "KX-3E4510P-E",
+              "quantity": 8
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 32
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "counterparty",
+      "url": "http://127.0.0.1:10845/b2b/counterparty-select",
+      "state": {
+        "specification": {
+          "fileName": "office_north_v8.xlsx",
+          "status": "parsed",
+          "lineCount": 48,
+          "line38": {
+            "id": "line-38",
+            "row": 38,
+            "zone": "Building B · floor 2",
+            "sourceText": "камера 4мп уличная",
+            "sourceQuantity": 8,
+            "quantity": 8,
+            "sku": "KX-2CB4T47F2-L",
+            "status": "ambiguous",
+            "explanation": "Housing and lens differ between them",
+            "candidates": [
+              "KX-2CB4T47F2-L",
+              "KX-2CB4046F2-I",
+              "KX-2CB4043F2-I"
+            ],
+            "resolved": false
+          }
+        },
+        "cart": {
+          "lineCount": 0
+        },
+        "latestOrder": {
+          "id": "B2B-10488",
+          "lineCount": 26,
+          "composition": [
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 14
+            },
+            {
+              "sku": "KX-3E4510P-E",
+              "quantity": 8
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 32
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "dashboard",
+      "url": "http://127.0.0.1:10845/b2b/dashboard",
+      "state": {
+        "specification": {
+          "fileName": "office_north_v8.xlsx",
+          "status": "parsed",
+          "lineCount": 48,
+          "line38": {
+            "id": "line-38",
+            "row": 38,
+            "zone": "Building B · floor 2",
+            "sourceText": "камера 4мп уличная",
+            "sourceQuantity": 8,
+            "quantity": 8,
+            "sku": "KX-2CB4T47F2-L",
+            "status": "ambiguous",
+            "explanation": "Housing and lens differ between them",
+            "candidates": [
+              "KX-2CB4T47F2-L",
+              "KX-2CB4046F2-I",
+              "KX-2CB4043F2-I"
+            ],
+            "resolved": false
+          }
+        },
+        "cart": {
+          "lineCount": 0
+        },
+        "latestOrder": {
+          "id": "B2B-10488",
+          "lineCount": 26,
+          "composition": [
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 14
+            },
+            {
+              "sku": "KX-3E4510P-E",
+              "quantity": 8
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 32
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "xls-import",
+      "url": "http://127.0.0.1:10845/b2b/xls-import",
+      "state": {
+        "specification": {
+          "fileName": "office_north_v8.xlsx",
+          "status": "parsed",
+          "lineCount": 48,
+          "line38": {
+            "id": "line-38",
+            "row": 38,
+            "zone": "Building B · floor 2",
+            "sourceText": "камера 4мп уличная",
+            "sourceQuantity": 8,
+            "quantity": 8,
+            "sku": "KX-2CB4T47F2-L",
+            "status": "ambiguous",
+            "explanation": "Housing and lens differ between them",
+            "candidates": [
+              "KX-2CB4T47F2-L",
+              "KX-2CB4046F2-I",
+              "KX-2CB4043F2-I"
+            ],
+            "resolved": false
+          }
+        },
+        "cart": {
+          "lineCount": 0
+        },
+        "latestOrder": {
+          "id": "B2B-10488",
+          "lineCount": 26,
+          "composition": [
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 14
+            },
+            {
+              "sku": "KX-3E4510P-E",
+              "quantity": 8
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 32
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "parse-result",
+      "url": "http://127.0.0.1:10845/b2b/xls-import/parse-result",
+      "state": {
+        "specification": {
+          "fileName": "office_north_v8.xlsx",
+          "status": "parsed",
+          "lineCount": 48,
+          "line38": {
+            "id": "line-38",
+            "row": 38,
+            "zone": "Building B · floor 2",
+            "sourceText": "камера 4мп уличная",
+            "sourceQuantity": 8,
+            "quantity": 8,
+            "sku": "KX-2CB4T47F2-L",
+            "status": "ambiguous",
+            "explanation": "Housing and lens differ between them",
+            "candidates": [
+              "KX-2CB4T47F2-L",
+              "KX-2CB4046F2-I",
+              "KX-2CB4043F2-I"
+            ],
+            "resolved": false
+          }
+        },
+        "cart": {
+          "lineCount": 0
+        },
+        "latestOrder": {
+          "id": "B2B-10488",
+          "lineCount": 26,
+          "composition": [
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 14
+            },
+            {
+              "sku": "KX-3E4510P-E",
+              "quantity": 8
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 32
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "resolution-center",
+      "url": "http://127.0.0.1:10845/b2b/resolution-center",
+      "state": {
+        "specification": {
+          "fileName": "office_north_v8.xlsx",
+          "status": "parsed",
+          "lineCount": 48,
+          "line38": {
+            "id": "line-38",
+            "row": 38,
+            "zone": "Building B · floor 2",
+            "sourceText": "камера 4мп уличная",
+            "sourceQuantity": 8,
+            "quantity": 8,
+            "sku": "KX-2CB4T47F2-L",
+            "status": "ambiguous",
+            "explanation": "Housing and lens differ between them",
+            "candidates": [
+              "KX-2CB4T47F2-L",
+              "KX-2CB4046F2-I",
+              "KX-2CB4043F2-I"
+            ],
+            "resolved": false
+          }
+        },
+        "cart": {
+          "lineCount": 0
+        },
+        "latestOrder": {
+          "id": "B2B-10488",
+          "lineCount": 26,
+          "composition": [
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 14
+            },
+            {
+              "sku": "KX-3E4510P-E",
+              "quantity": 8
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 32
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "cart",
+      "url": "http://127.0.0.1:10845/b2b/cart",
+      "state": {
+        "specification": {
+          "fileName": "office_north_v8.xlsx",
+          "status": "parsed",
+          "lineCount": 48,
+          "line38": {
+            "id": "line-38",
+            "row": 38,
+            "zone": "Building B · floor 2",
+            "sourceText": "камера 4мп уличная",
+            "sourceQuantity": 8,
+            "quantity": 8,
+            "sku": "KX-2CB4046F2-I",
+            "status": "ambiguous",
+            "explanation": "Candidate chosen by the buyer",
+            "candidates": [
+              "KX-2CB4T47F2-L",
+              "KX-2CB4046F2-I",
+              "KX-2CB4043F2-I"
+            ],
+            "resolved": true,
+            "saveFailed": false
+          }
+        },
+        "cart": {
+          "lineCount": 48,
+          "line38": {
+            "id": "cart-38",
+            "sku": "KX-2CB4046F2-I",
+            "quantity": 8,
+            "unitPrice": 12900,
+            "leadTimeDays": 2,
+            "freshness": "verified",
+            "sourceRow": 38
+          }
+        },
+        "latestOrder": {
+          "id": "B2B-10488",
+          "lineCount": 26,
+          "composition": [
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 14
+            },
+            {
+              "sku": "KX-3E4510P-E",
+              "quantity": 8
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 32
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "fulfillment",
+      "url": "http://127.0.0.1:10845/b2b/fulfillment",
+      "state": {
+        "specification": {
+          "fileName": "office_north_v8.xlsx",
+          "status": "parsed",
+          "lineCount": 48,
+          "line38": {
+            "id": "line-38",
+            "row": 38,
+            "zone": "Building B · floor 2",
+            "sourceText": "камера 4мп уличная",
+            "sourceQuantity": 8,
+            "quantity": 8,
+            "sku": "KX-2CB4046F2-I",
+            "status": "ambiguous",
+            "explanation": "Candidate chosen by the buyer",
+            "candidates": [
+              "KX-2CB4T47F2-L",
+              "KX-2CB4046F2-I",
+              "KX-2CB4043F2-I"
+            ],
+            "resolved": true,
+            "saveFailed": false
+          }
+        },
+        "cart": {
+          "lineCount": 48,
+          "line38": {
+            "id": "cart-38",
+            "sku": "KX-2CB4046F2-I",
+            "quantity": 8,
+            "unitPrice": 12900,
+            "leadTimeDays": 2,
+            "freshness": "verified",
+            "sourceRow": 38
+          }
+        },
+        "latestOrder": {
+          "id": "B2B-10488",
+          "lineCount": 26,
+          "composition": [
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 14
+            },
+            {
+              "sku": "KX-3E4510P-E",
+              "quantity": 8
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 32
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "checkout",
+      "url": "http://127.0.0.1:10845/b2b/checkout",
+      "state": {
+        "specification": {
+          "fileName": "office_north_v8.xlsx",
+          "status": "parsed",
+          "lineCount": 48,
+          "line38": {
+            "id": "line-38",
+            "row": 38,
+            "zone": "Building B · floor 2",
+            "sourceText": "камера 4мп уличная",
+            "sourceQuantity": 8,
+            "quantity": 8,
+            "sku": "KX-2CB4046F2-I",
+            "status": "ambiguous",
+            "explanation": "Candidate chosen by the buyer",
+            "candidates": [
+              "KX-2CB4T47F2-L",
+              "KX-2CB4046F2-I",
+              "KX-2CB4043F2-I"
+            ],
+            "resolved": true,
+            "saveFailed": false
+          }
+        },
+        "cart": {
+          "lineCount": 48,
+          "line38": {
+            "id": "cart-38",
+            "sku": "KX-2CB4046F2-I",
+            "quantity": 8,
+            "unitPrice": 12900,
+            "leadTimeDays": 2,
+            "freshness": "verified",
+            "sourceRow": 38
+          }
+        },
+        "latestOrder": {
+          "id": "B2B-10488",
+          "lineCount": 26,
+          "composition": [
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 14
+            },
+            {
+              "sku": "KX-3E4510P-E",
+              "quantity": 8
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 32
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "order-created",
+      "url": "http://127.0.0.1:10845/b2b/orders/created",
+      "state": {
+        "specification": {
+          "fileName": "office_north_v8.xlsx",
+          "status": "parsed",
+          "lineCount": 0
+        },
+        "cart": {
+          "lineCount": 0
+        },
+        "latestOrder": {
+          "id": "B2B-10493",
+          "lineCount": 48,
+          "composition": [
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-KV8113-WME1",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CD4183F2-IS",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-7608NI-K2",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-3E4510P-E",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4043F2-I",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 12
+            },
+            {
+              "sku": "KX-7608NI-K2",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4621F0-IZS",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-KV8113-WME1",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-2CD4143F2-IS",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 2
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-7608NI-K2",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 1
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CD4183F2-IS",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-KV8113-WME1",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-2CD4183F2-IS",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 3
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 24
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 3
+            },
+            {
+              "sku": "KX-7608NI-K2",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CD4183F2-IS",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-3E4510P-E",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4T47F2-L",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 6
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 3
+            },
+            {
+              "sku": "KX-7608NI-K2",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CD4183F2-IS",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 8
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-KV8113-WME1",
+              "quantity": 3
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 4
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4043F2-I",
+              "quantity": 2
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 4
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 4
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-2CB4043F2-I",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "order-details",
+      "url": "http://127.0.0.1:10845/b2b/orders/details?id=B2B-10493",
+      "state": {
+        "specification": {
+          "fileName": "office_north_v8.xlsx",
+          "status": "parsed",
+          "lineCount": 0
+        },
+        "cart": {
+          "lineCount": 0
+        },
+        "latestOrder": {
+          "id": "B2B-10493",
+          "lineCount": 48,
+          "composition": [
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-KV8113-WME1",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CD4183F2-IS",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-7608NI-K2",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-3E4510P-E",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4043F2-I",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 12
+            },
+            {
+              "sku": "KX-7608NI-K2",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4621F0-IZS",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-KV8113-WME1",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-2CD4143F2-IS",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 2
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-7608NI-K2",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 1
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CD4183F2-IS",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-KV8113-WME1",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-2CD4183F2-IS",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 3
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 24
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 3
+            },
+            {
+              "sku": "KX-7608NI-K2",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CD4183F2-IS",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-3E4510P-E",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4T47F2-L",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 6
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 3
+            },
+            {
+              "sku": "KX-7608NI-K2",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CD4183F2-IS",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 8
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-KV8113-WME1",
+              "quantity": 3
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 4
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4043F2-I",
+              "quantity": 2
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 4
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 4
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-2CB4043F2-I",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "final-order",
+      "url": "http://127.0.0.1:10845/b2b/orders/details?id=B2B-10493",
+      "state": {
+        "specification": {
+          "fileName": "office_north_v8.xlsx",
+          "status": "parsed",
+          "lineCount": 0
+        },
+        "cart": {
+          "lineCount": 0
+        },
+        "latestOrder": {
+          "id": "B2B-10493",
+          "lineCount": 48,
+          "composition": [
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-KV8113-WME1",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CD4183F2-IS",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-7608NI-K2",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-3E4510P-E",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4043F2-I",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 12
+            },
+            {
+              "sku": "KX-7608NI-K2",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4621F0-IZS",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-KV8113-WME1",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-2CD4143F2-IS",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 2
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-7608NI-K2",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 1
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CD4183F2-IS",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-KV8113-WME1",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-2CD4183F2-IS",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 3
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 24
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 3
+            },
+            {
+              "sku": "KX-7608NI-K2",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CD4183F2-IS",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-3E4510P-E",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4T47F2-L",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 6
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 3
+            },
+            {
+              "sku": "KX-7608NI-K2",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CD4183F2-IS",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 8
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-KV8113-WME1",
+              "quantity": 3
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 4
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4043F2-I",
+              "quantity": 2
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 4
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-2CB4046F2-I",
+              "quantity": 4
+            },
+            {
+              "sku": "SV4000TX016",
+              "quantity": 2
+            },
+            {
+              "sku": "KX-2CB4043F2-I",
+              "quantity": 1
+            },
+            {
+              "sku": "KX-1273ZJ-140",
+              "quantity": 4
+            }
+          ]
+        }
+      },
+      "body": "Dashboard\nCatalog\nCart\nOrders\nWORKSPACE\nTax ID\n7705123456\nCart\nEmpty\nReservation\nNone held\nSign out\nAlex Kim\nProcurement manager\nVector Integration LLC\n3\nAK\nAlex Kim\nProcurement manager\nOrders\nB2B-10493\nOrder B2B-10493\n\nCreated 04 Oct 2026 · Vector Integration LLC · Tax ID 7705123456 · 48 lines · ₽1,873,200\n\nRequest a change\nAwaiting payment\n\nAssembly starts once the invoice is paid.\n\nDownload invoice\nPayment details\nORDER\nConfirmed\n48 of 48 lines\nPAYMENT\nInvoice pending\nInvoice INV-2026-4417 expected within 15 minutes\nRESERVATION & ASSEMBLY\nReserved\nHeld until 11 Oct 2026\nSHIPMENTS\n0 of 2 shipped\nHandover 11 Oct 2026\n\nShipments · 2 planned\n\nA partial delivery is never collapsed into one status.\n\nSHP-10493-1 · Moscow DC\n118 items · handover 10 Oct 2026 · delivery to site\nPreparing\n\nTracking available after handover\n\n4 MP object-detect bullet camera · KX-2CB4046F2-I\n2 pcs\nWall mount bracket · KX-1273ZJ-140\n2 pcs\n8 MP dome camera · KX-2CD4183F2-IS\n1 pc\n40 further lines\n113 pcs\nSHP-10493-2 · Saint Petersburg DC\n9 items · handover 06 Oct 2026 · delivery to site\nPreparing\n\nTracking available after handover\n\nHistory\n\nThe same four tracks, in the order they happened.\n\nAll\nOrder\nPayment\nReservation\nShipments\nDocuments\nFulfillment plan confirmed: Fastest · 2 shipments\n04 Oct 2026, 03:42 · self-service checkout\nChosen over the alternatives on completeness, timing and handover count.\nInvoice requested\n04 Oct 2026, 03:42 · ERP\nNet 30 terms on contract VI-2024-118.\nStock reserved until 11 Oct 2026\n04 Oct 2026, 03:42 · warehouse system\nOrder created\n04 Oct 2026, 03:42 · self-service checkout\n\nOrder summary\n\nGoods · 48 lines\n₽1,553,600\nDelivery\n₽7,400\nVAT 20%\n₽312,200\nOrder total\n₽1,873,200\n\nPayment terms · Invoice INV-2026-4417 expected within 15 minutes\n\nDelivery\n\nRead-only once the order exists.\n\nAddress\nMoscow, Skladochnaya 1, building 18\nContact\nIvan Petrov · +7 495 123 45 67\n\nDocuments\n\nWhat exists, and when the rest will.\n\nInvoice · INV-2026-4417\nPending\n\nOrder B2B-10493 · Vector Integration LLC\n\nExpected today, 04:12\n\nUPD\nNot issued\n\nShipment SHP-10493-1\n\nIssued when SHP-10493-1 is handed over\n\nWaybill\nNot issued\n\nShipment SHP-10493-1\n\nIssued when the carrier accepts the shipment\n\nDownload all ready documents\nNo documents are ready yet.\n\nLine 44 mapped to SV4000TX016\n\nThe source row, its text and its quantity are kept unchanged.\n\nLine 46 mapped to KX-2CB4046F2-I\n\nThe source row, its text and its quantity are kept unchanged.\n\nChange accepted\n\n8-port PoE switch: 2 days → 7 days."
+    }
+  ],
+  "errors": []
+}

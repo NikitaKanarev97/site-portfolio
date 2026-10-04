@@ -1,0 +1,108 @@
+{
+  "network": "local unthrottled",
+  "physicalDevice": false,
+  "samples": 1,
+  "concurrentCaptureOrEncoding": false,
+  "results": [
+    {
+      "width": 1440,
+      "cpu": 1,
+      "startup": {
+        "lcp": {
+          "ms": 320,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4354/media/rebuild/partner-portal/line-open-wide.webp"
+        },
+        "cls": 0,
+        "production": true,
+        "booted": true,
+        "transferredKB": 323.447265625
+      },
+      "frameMedian": 17.399999998509884,
+      "frameP95": 18,
+      "framesOver34ms": 1,
+      "costs": {
+        "TaskDuration": 0.23908999999999997,
+        "ScriptDuration": 0.11978599999999999,
+        "LayoutDuration": 0.0047790000000000055,
+        "RecalcStyleDuration": 0.004569999999999998
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "cpu": 6,
+      "startup": {
+        "lcp": {
+          "ms": 480,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4354/media/rebuild/partner-portal/line-open-wide.webp"
+        },
+        "cls": 0.004271949481310013,
+        "production": true,
+        "booted": true,
+        "transferredKB": 323.447265625
+      },
+      "frameMedian": 17.600000001490116,
+      "frameP95": 22.600000001490116,
+      "framesOver34ms": 1,
+      "costs": {
+        "TaskDuration": 1.8767500000000004,
+        "ScriptDuration": 0.9568760000000001,
+        "LayoutDuration": 0.03468800000000005,
+        "RecalcStyleDuration": 0.036573999999999995
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "cpu": 1,
+      "startup": {
+        "lcp": {
+          "ms": 168,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4354/media/rebuild/partner-portal/line-open-narrow.webp"
+        },
+        "cls": 0.0012564430484836024,
+        "production": true,
+        "booted": true,
+        "transferredKB": 304.6796875
+      },
+      "frameMedian": 17.300000000745058,
+      "frameP95": 18,
+      "framesOver34ms": 1,
+      "costs": {
+        "TaskDuration": 0.20754299999999998,
+        "ScriptDuration": 0.11266599999999999,
+        "LayoutDuration": 0.0007739999999999969,
+        "RecalcStyleDuration": 0.0012190000000000013
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "cpu": 6,
+      "startup": {
+        "lcp": {
+          "ms": 1020,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4354/media/rebuild/partner-portal/line-open-narrow.webp"
+        },
+        "cls": 0.0012564430484836024,
+        "production": true,
+        "booted": true,
+        "transferredKB": 304.6796875
+      },
+      "frameMedian": 17.399999998509884,
+      "frameP95": 21.700000002980232,
+      "framesOver34ms": 3,
+      "costs": {
+        "TaskDuration": 1.786454,
+        "ScriptDuration": 1.030707,
+        "LayoutDuration": 0.008803000000000005,
+        "RecalcStyleDuration": 0.00941599999999998
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,5 +1,29 @@
 # Screen: CaseDSSL
 
+## Active full-story rebuild · B · 04.10.2026
+
+Preview EN `/preview/partner-portal-rebuild/en/`, RU `/preview/partner-portal-rebuild/ru/`; noindex, no canonical. Base A `936724beff3bb9a01c69381659dc808782cc7950`. Uses frozen `ds/story-contract.md` / `CaseStory`, no renderer or DS mutations. Public legacy routes remain under the archived map below until integration.
+
+Cover: portal proof, one complete real decision panel; matching native narrow capture. The original commercial redesign shipped in full (owner fact). Every new UI frame is the current independent reconstruction on synthetic data. Facts retain sole designer/team and 2024–winter 2026 / roughly six active months across a long pause.
+
+| Stable ID | Module / motion | Purpose / evidence |
+|---|---|---|
+| audit-direction | comparison / reveal | Safe original dashboard crop; two observed symptoms → chosen procurement rules. `portal-diagnosis`, `portal-archive`. |
+| shared-specification | artifact / draw | HA-MAP-01 hierarchy: eight selected actual screens; blue IDs, functional action groups, orthogonal links without arrows. `portal-scope`. |
+| buyer-decision | artifact / draw | HA-FLOW-01: identity and commerce decisions, yes/no paths, recheck loops, supply plan, terms, order creation. `portal-decision`. |
+| source-line | steps / focus | Native choice → confirmed row → Cart; row 38, source text, original eight units, chosen SKU. `portal-line`. |
+| domain-system | specimen / static | HA-DS-01: Inter scale/four columns + palette left; ResolutionRow, FileUpload, Availability, FulfillmentPlan matrices right; 13 real states. `portal-domain`, `portal-specimens`. |
+| source-in-context | shot / reveal | Actual Resolution Center, same selected row in the wider workspace. Native narrow UI. `portal-line`, `portal-application`. |
+| shipped-redesign | outcome / static | Owner-confirmed shipment, current observed demo, manual-choice cost, missing post-order source snapshot and next measurement. `portal-shipped`. |
+
+The map is an editorial selection of current hierarchy, not a workshop photo or entire scope count. The flow is an editorial reconstruction, not observed human research. Numeric IDs identify screens/rows; no QA scores or business uplift are used as impact.
+
+Desktop focus scene uses frozen runtime, gated by width and height. Mobile, short, reduced-motion and no-JS show all three stages in document order. Diagram mobile geometry preserves all IDs and decision answers without shrinking the desktop. Specimen keeps native alpha edges and product widths; grouping becomes sequential on mobile. Evidence, media, source hashes, capture details and verification are in `tasks/portfolio-rebuild/partner-portal/`.
+
+### Archived public composition
+
+The remainder documents the earlier public route and remains as history. Its fixed sections, word budget and historic QA numbers do not govern the B preview.
+
 **Маршрут:** `/work/partner-portal` · файлы `src/pages/work/[slug].astro` + `src/copy/cases/partner-portal.ts`
 **Источник:** `ia/wireframes/case-dssl.md` (desktop 1440×9292) · `ia/screens-inventory.md` §CaseDSSL · `outputs/prd.md` US-07…US-11, US-18, US-19
 **Оболочка:** `PageShell` — `Navbar` + содержимое + `ContactBlock` + `Footer`

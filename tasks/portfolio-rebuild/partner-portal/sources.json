@@ -1,0 +1,135 @@
+{
+  "version": "722b5c6d06a9ddcdc8bb813f84c60d0cac2e07e9",
+  "commonVerification": [
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/tokens/primitives.css",
+      "sha256": "e4f103c14e1838c83912896aff1d7d5034170dfb455d47ef11b064580b8635aa",
+      "identical": true
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/tokens/semantics.css",
+      "sha256": "8ba7da701d630b3fc26bf596d1ed8c76a83c3c9745f268163d81ca6cfcb0d780",
+      "identical": true
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/tokens/typography.css",
+      "sha256": "c251b0938f1759a40990d790438c0b302e9fff86da7ab69abf2acdec76cd8017",
+      "identical": true
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/ResolutionRow/ResolutionRow.tsx",
+      "sha256": "e0c48fed7b648c444e31ee929b9fa372956ff1fc63607b2edfdb322b7ebb1e9a",
+      "identical": true
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/ResolutionRow/ResolutionRow.stories.tsx",
+      "sha256": "305d5b3c8eb8f0c371ed18db578eeb2e2357cce3adb41981bee8d5239765874e",
+      "identical": true
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/FileUpload/FileUpload.tsx",
+      "sha256": "2fa60296c5ce9fa7d2ff2518ec71e03bb1f1c334bba594c6d7afdbd02d9b464d",
+      "identical": true
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/FileUpload/FileUpload.stories.tsx",
+      "sha256": "85acb8defa7e8a9cf1aa03fa8636cb1c16426c0f2f9c7a8b26d022a30114cd5c",
+      "identical": true
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/Availability/Availability.tsx",
+      "sha256": "2a5abec566a017a22efda53b1a311e65750965a9490ae6c56abfaa801bbc2c71",
+      "identical": true
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/Availability/Availability.stories.tsx",
+      "sha256": "0364ef003cab944fdab05f4ef5f31efab546d1a0476dcda134ac3aa810958373",
+      "identical": true
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/QuantityStepper/QuantityStepper.tsx",
+      "sha256": "fa72eaabd5177540dcf4e23a63801672e13fec00c3fd331507acea9a0c013d78",
+      "identical": true
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/QuantityStepper/QuantityStepper.stories.tsx",
+      "sha256": "414015d36f9b5fbb2dec87235d18e76913abe4713c5ef20deb09e6641da6649a",
+      "identical": true
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/storybook-static/index.json",
+      "sha256": "1ad32cb910dce9d3265ce7ab584cd806757f12b842b5176363047b71294f8179",
+      "identical": true
+    }
+  ],
+  "sources": [
+    {
+      "file": "D:/Claude-projects/b2b-dssl/ds/components.md",
+      "sha256": "0c6b82563bed270cc8eb54503f04602213f25ffbd0da53f8aa0e7859bd10eee3"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/ds/DECISIONS.md",
+      "sha256": "4e63eb603f4855c9f6fdfee861e5e05c686bafde4ab8bfe710be59e2b7d8c188"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/ia/sitemap.md",
+      "sha256": "e5093961e153bf31b3b7439505ae54a1d84e3138f92027f24806166ea90c815c"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/ia/flows/xls-to-order.mmd",
+      "sha256": "a385357232cf3d0b3329e15cc4f8bb7482defb6e855bd4e8648f23298a7ec9ee"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/data/types.ts",
+      "sha256": "2b159cdd8c3eb3f036a441c70ded1ea544303bafe4c76c2a2e148a53e2e4e63a"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/data/store.tsx",
+      "sha256": "ef0a21b63937aae0a46e011b1feb177089ed64f5a1279c30b13737abff752cb7"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/data/specification-lines.ts",
+      "sha256": "03028f3b6efa0f688ccd76008e7ec09a919eb75feed6367af06cac0078ae39d0"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/screens/resolution-center/ResolutionCenter.tsx",
+      "sha256": "09c3c5be0acb2aab116c06c53d947e6a1c81dec53907700726b95f716cfe3003"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/screens/cart/Cart.tsx",
+      "sha256": "77bdbf6c373f1b77c36b5ca08ac25daca44dfb2c8534999a14b00019af0d5324"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/screens/order-details/OrderDetails.tsx",
+      "sha256": "8611dd730541b27f56869aa6db3ce0a3e24bffb328f5fcf6c25d7238042c45f3"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/tokens/primitives.css",
+      "sha256": "e4f103c14e1838c83912896aff1d7d5034170dfb455d47ef11b064580b8635aa"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/tokens/semantics.css",
+      "sha256": "8ba7da701d630b3fc26bf596d1ed8c76a83c3c9745f268163d81ca6cfcb0d780"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/tokens/typography.css",
+      "sha256": "c251b0938f1759a40990d790438c0b302e9fff86da7ab69abf2acdec76cd8017"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/FulfillmentPlan/FulfillmentPlan.tsx",
+      "sha256": "f3d7686565e68164bb8ed698ab790309b7a5f6dbbd20f4b38a65157990407c63"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/src/components/FulfillmentPlan/FulfillmentPlan.stories.tsx",
+      "sha256": "666b4eb0f8f70146acb56c93aefdd02aeb872788bddd7d24c7083adbfaef7df1"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/dist/index.html",
+      "sha256": "ddd9451633fd45da754564c36bc81e843b621c3855ebc284929a8a4f7476180e"
+    },
+    {
+      "file": "D:/Claude-projects/b2b-dssl/storybook-static/index.json",
+      "sha256": "1ad32cb910dce9d3265ce7ab584cd806757f12b842b5176363047b71294f8179"
+    }
+  ]
+}

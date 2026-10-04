@@ -1,0 +1,91 @@
+
+> site-portfolio@0.1.0 build
+> astro build
+
+03:44:23 [content] Syncing content
+03:44:23 [content] Synced content
+03:44:23 [types] Generated 58ms
+03:44:23 [build] output: "static"
+03:44:23 [build] mode: "static"
+03:44:23 [build] directory: C:\Users\kanar\.codex\worktrees\partner-portal-rebuild\Site-portfolio\dist\
+03:44:23 [build] Collecting build info...
+03:44:23 [build] ✓ Completed in 83ms.
+03:44:24 [build] Building static entrypoints...
+03:44:26 [vite] ✓ built in 2.47s
+03:44:26 [build] ✓ Completed in 2.50s.
+
+ building client (vite)
+03:44:26 [vite] transforming...
+03:44:27 [vite] ✓ 32 modules transformed.
+03:44:27 [vite] rendering chunks...
+03:44:27 [vite] computing gzip size...
+03:44:27 [vite] dist/_astro/page.IvKoM_B8.js                                                 0.05 kB │ gzip:  0.07 kB
+03:44:27 [vite] dist/_astro/index.BbWtjHji.js                                                2.30 kB │ gzip:  1.05 kB
+03:44:27 [vite] dist/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js   13.11 kB │ gzip:  4.54 kB
+03:44:27 [vite] dist/_astro/BaseLayout.astro_astro_type_script_index_0_lang.DQQMwGTB.js    149.10 kB │ gzip: 58.07 kB
+03:44:27 [vite] ✓ built in 542ms
+
+ generating static routes
+03:44:27 ▶ src/pages/404.astro
+03:44:27   └─ /404.html (+12ms)
+03:44:27 ▶ src/pages/500.astro
+03:44:27   └─ /500.html (+3ms)
+03:44:27 ▶ src/pages/about.astro
+03:44:27   └─ /about/index.html (+7ms)
+03:44:27 ▶ src/pages/index.astro
+03:44:27   └─ /index.html (+17ms)
+03:44:27 ▶ src/pages/kit.astro
+03:44:27   └─ /kit/index.html (+95ms)
+03:44:27 λ src/pages/og/[card].png.ts
+03:44:27   ├─ /og/default.png (+207ms)
+03:44:27   ├─ /og/about.png (+232ms)
+03:44:27   ├─ /og/work-agent-ops-console.png (+307ms)
+03:44:28   ├─ /og/work-partner-portal.png (+139ms)
+03:44:28   ├─ /og/work-learn.png (+124ms)
+03:44:28   ├─ /og/work-vet-clinic.png (+169ms)
+03:44:28   ├─ /og/work-pawly.png (+147ms)
+03:44:28   ├─ /og/default-ru.png (+101ms)
+03:44:28   ├─ /og/about-ru.png (+166ms)
+03:44:29   ├─ /og/work-agent-ops-console-ru.png (+161ms)
+03:44:29   ├─ /og/work-partner-portal-ru.png (+286ms)
+03:44:29   ├─ /og/work-learn-ru.png (+237ms)
+03:44:29   ├─ /og/work-vet-clinic-ru.png (+266ms)
+03:44:30   └─ /og/work-pawly-ru.png (+172ms)
+03:44:30 ▶ src/pages/preview/agent-ops-pilot.astro
+03:44:30   └─ /preview/agent-ops-pilot/index.html (+24ms)
+03:44:30 ▶ src/pages/preview/common/[locale]/[case].astro
+03:44:30   ├─ /preview/common/en/agent-ops/index.html (+6ms)
+03:44:30   ├─ /preview/common/en/partner-portal/index.html (+11ms)
+03:44:30   ├─ /preview/common/ru/agent-ops/index.html (+4ms)
+03:44:30   └─ /preview/common/ru/partner-portal/index.html (+6ms)
+03:44:30 ▶ src/pages/preview/common/index.astro
+03:44:30   └─ /preview/common/index.html (+3ms)
+03:44:30 ▶ src/pages/preview/partner-portal-pilot.astro
+03:44:30   └─ /preview/partner-portal-pilot/index.html (+3ms)
+03:44:30 ▶ src/pages/preview/partner-portal-rebuild/[locale].astro
+03:44:30   ├─ /preview/partner-portal-rebuild/en/index.html (+23ms)
+03:44:30   └─ /preview/partner-portal-rebuild/ru/index.html (+8ms)
+03:44:30 λ src/pages/robots.txt.ts
+03:44:30   └─ /robots.txt (+3ms)
+03:44:30 ▶ src/pages/ru/about.astro
+03:44:30   └─ /ru/about/index.html (+7ms)
+03:44:30 ▶ src/pages/ru/index.astro
+03:44:30   └─ /ru/index.html (+8ms)
+03:44:30 ▶ src/pages/ru/work/[slug].astro
+03:44:30   ├─ /ru/work/agent-ops-console/index.html (+26ms)
+03:44:30   ├─ /ru/work/partner-portal/index.html (+27ms)
+03:44:30   ├─ /ru/work/learn/index.html (+13ms)
+03:44:30   ├─ /ru/work/vet-clinic/index.html (+28ms)
+03:44:30   └─ /ru/work/pawly/index.html (+22ms)
+03:44:30 λ src/pages/sitemap.xml.ts
+03:44:30   └─ /sitemap.xml (+3ms)
+03:44:30 ▶ src/pages/work/[slug].astro
+03:44:30   ├─ /work/agent-ops-console/index.html (+21ms)
+03:44:30   ├─ /work/partner-portal/index.html (+25ms)
+03:44:30   ├─ /work/learn/index.html (+19ms)
+03:44:30   ├─ /work/vet-clinic/index.html (+30ms)
+03:44:30   └─ /work/pawly/index.html (+18ms)
+03:44:30 ✓ Completed in 3.43s.
+
+03:44:30 [build] 26 page(s) built in 6.73s
+03:44:30 [build] Complete!
