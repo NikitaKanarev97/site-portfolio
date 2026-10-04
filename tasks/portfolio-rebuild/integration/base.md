@@ -1,4 +1,8 @@
-# Принятая общая база A · G-base · 04.10.2026
+# Общая база · G-integrate-1 · 04.10.2026
+
+**Действующий ref для D/E/F: 58002c398c3386c9df4b398f324ab07115c979f7.** Alias: codex/portfolio-common-wave-1-2026-10-04. База воспроизведена, checkpoint завершён; актуальный handoff — wave-1-handoff.md. Ниже сохранено происхождение первой базы A; результаты второй волны — в заключительном разделе.
+
+## История принятой A · G-base
 
 ## Точный ref для первой волны B/C
 
@@ -57,10 +61,24 @@ G-01 проверен на `/kit/` и Portal EN/RU в 1440/1024/390/360, reduce 
 
 ## Следующая волна
 
-B и C могут использовать указанный ref. Полные prompts находятся в `research/portfolio-rebuild-2026-10-03/prompts/`; контроллер читает их актуальные версии из исходного checkout. B/C интегрированы в ветке G. Точный обновлённый ref для D/E/F фиксируется ниже после чистого воспроизведения; ref A сохраняется исторической базой первой волны.
+B и C могут использовать указанный ref. Полные prompts находятся в `research/portfolio-rebuild-2026-10-03/prompts/`; контроллер читает их актуальные версии из исходного checkout. B/C интегрированы в ветке G. Точный обновлённый ref для D/E/F зафиксирован ниже после чистого воспроизведения; ref A сохраняется исторической базой первой волны.
 
 Последовательность запуска ведёт отдельный контроллер согласно `orchestration/CONTROL.md`. G не создаёт дубли case-чатов и не изменяет `orchestration/STATE.json`. Порядок Agent Ops → Portal → Learn → Vet → Pawly сохраняется до сравнения пяти финальных историй. Push/deploy не выполнялись.
 
 ## G-integrate-1 · обновление первой волны
 
-B/C перенесены отдельными commits с сохранёнными payload: B 1dc263f11fba969e6a822a985b4201c70ba0d26b, C afe6785cc20d230c96b8c1d3f350ffa13bbeb18f. Новые CaseStory доступны на штатных /work/partner-portal/, /work/learn/ и RU. Agent Ops/Vet/Pawly сохраняют legacy fallback. Общий runtime Next обновлён по B-G-01; schema и оба DS mirrors прежние. Подробная приёмка/проверки — wave-1-report.md. Новый integrity пакет: wave-1-base-manifest.json, wave-1-base-files.txt, verify-wave-1-base.mjs. Точный updated ref и чистое воспроизведение добавляются после финальной проверки checkpoint; до этой записи новая база не считается выданной D/E/F.
+B/C перенесены отдельными commits с сохранёнными payload: B 1dc263f11fba969e6a822a985b4201c70ba0d26b, C afe6785cc20d230c96b8c1d3f350ffa13bbeb18f. Новые CaseStory доступны на штатных /work/partner-portal/, /work/learn/ и RU. Agent Ops/Vet/Pawly сохраняют legacy fallback. Общий runtime Next обновлён по B-G-01; schema и оба DS mirrors прежние. Подробная приёмка/проверки — wave-1-report.md. Новый integrity пакет: wave-1-base-manifest.json, wave-1-base-files.txt, verify-wave-1-base.mjs. Точный updated ref и чистое воспроизведение зафиксированы ниже.
+
+### Точный ref для D/E/F
+
+**58002c398c3386c9df4b398f324ab07115c979f7**
+
+Локальный alias: codex/portfolio-common-wave-1-2026-10-04. Parent: afe6785cc20d230c96b8c1d3f350ffa13bbeb18f. Ветка интеграции: codex/portfolio-integration-g. История содержит принятую A, независимые G-base commits, три отдельных cherry-pick B/C и общий integration commit. Это полный Git checkout, не overlay и не remote default.
+
+Новый integrity пакет содержит 585 файлов / 75 742 739 bytes. Хэши рассчитаны по canonical Git blobs; бинарные owner captures не менялись. Manifest/list исключают только собственное самохеширование. Исходный base-manifest.json по-прежнему проверяет старый ref A; для второй волны запускать verify-wave-1-base.mjs в чистом checkout нового ref до собственных изменений.
+
+Чистое воспроизведение: D:/Claude-projects/Site-portfolio/tmp/portfolio-wave-1-58002c3. Node v24.18.0 / npm 11.16.0. npm ci, build (28 страниц), check (106 файлов, 0 errors / 0 warnings / 101 hints), check:css (28 routes / 0 dead rules) завершились успешно. Все 585 integrity-файлов совпали побайтово, оба DS mirrors совпадают. Git status --porcelain после установки/сборки и браузерного запуска пуст. Восемь smoke profiles public B/C EN/RU на 1440 full / 360 no-JS, Next/Back/locale для двух соседних переходов и 26 HTTP alpha captures проверены: 0 failures. Полная матрица и motion/lifecycle записаны на идентичном UI integration origin 4352; без новых изменений повторно весь набор в клоне не запускался. npm ci сообщает 11 существующих advisories, зависимости не менялись.
+
+Неизменный production preview этого ref: http://127.0.0.1:4364, штатные /work/partner-portal/, /ru/work/partner-portal/, /work/learn/, /ru/work/learn/, /preview/common/ и /kit/. Рабочий G production preview 4352 и dev 4350 остаются доступны. Четыре owner previews: /preview/partner-portal-rebuild/en/, /ru/ и /preview/learn-rebuild/en/, /ru/ на том же origin. Отчёт воспроизведения — wave-1-reproduction.json; handoff — wave-1-handoff.md.
+
+Исполнители D/E/F сначала читают актуальные base.md, wave-1-report.md, wave-1-handoff.md и свой полный prompt из исходного checkout: финальные records с полным ref добавлены отдельным evidence/handoff commit после snapshot и не могут входить в его собственный hash. Затем создают свой checkout строго от 58002c398c3386c9df4b398f324ab07115c979f7. Snapshot содержит принятый код, shared contracts, B/C материалы и все четыре reference PNG. Центральная schema и native specimens сохранены; B-G-01 закрыт одним общим runtime. D/E/F не меняют shared renderer/registries/routes/DS: необходимые расширения передают common-request G.

@@ -1,0 +1,61 @@
+{
+  "stage": "G-integrate-1",
+  "status": "reproduced",
+  "ref": "58002c398c3386c9df4b398f324ab07115c979f7",
+  "alias": "codex/portfolio-common-wave-1-2026-10-04",
+  "checkout": "D:/Claude-projects/Site-portfolio/tmp/portfolio-wave-1-58002c3",
+  "origin": "http://127.0.0.1:4364",
+  "generatedAt": "2026-10-04T02:59:15.080Z",
+  "node": "v24.18.0",
+  "npm": "11.16.0",
+  "gitStatus": "",
+  "integrity": {
+    "manifest": "tasks/portfolio-rebuild/integration/wave-1-base-manifest.json",
+    "files": 585,
+    "failures": 0,
+    "bytes": 75742739,
+    "byteSource": "canonical Git blobs"
+  },
+  "commands": [
+    {
+      "command": "npm ci",
+      "exitCode": 0,
+      "log": "tasks/portfolio-rebuild/integration/wave-1/clean-install.log",
+      "existingDependencyAdvisories": 11
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "pages": 28,
+      "log": "tasks/portfolio-rebuild/integration/wave-1/clean-build.log"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "files": 106,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 101,
+      "log": "tasks/portfolio-rebuild/integration/wave-1/clean-check-summary.txt"
+    },
+    {
+      "command": "npm run check:css -- /ru/about /work/learn /ru/work/agent-ops-console /ru/work/partner-portal /ru/work/learn /ru/work/vet-clinic /ru/work/pawly",
+      "exitCode": 0,
+      "routes": 28,
+      "deadRules": 0,
+      "log": "tasks/portfolio-rebuild/integration/wave-1/clean-css.log"
+    }
+  ],
+  "browser": {
+    "log": "tasks/portfolio-rebuild/integration/wave-1/clean-browser.json",
+    "profiles": 8,
+    "correctedCaptureResponses": 26,
+    "failures": 0,
+    "nextAndBack": [
+      "/work/partner-portal/",
+      "/ru/work/learn/"
+    ],
+    "nativeLocale": true
+  },
+  "scope": "Updated shared base for D/E/F; three remaining public cases are legacy. Final home/order/publication not accepted."
+}

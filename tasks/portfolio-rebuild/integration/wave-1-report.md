@@ -47,6 +47,8 @@ Schema, DS tokens и motion mirrors не изменены. Документы co
 
 ## Обновлённая база и границы
 
-Точный ref и воспроизведение записываются в base.md и wave-1-handoff.md после создания чистого checkout. Новый wave-1-base-manifest.json хеширует canonical Git blobs выбранного пакета; исходный base-manifest.json относится только к неизменному ref A. D/E/F используют новую базу целиком, без overlay старого ZIP.
+Обновлённый code/base ref: 58002c398c3386c9df4b398f324ab07115c979f7; alias codex/portfolio-common-wave-1-2026-10-04. Чистый checkout D:/Claude-projects/Site-portfolio/tmp/portfolio-wave-1-58002c3 воспроизвёл 585 файлов, install/build/check/CSS и восемь браузерных smoke profiles, 0 failures. Точные records — base.md, wave-1-reproduction.json и wave-1-handoff.md. Финальный evidence/handoff commit добавлен после неизменного snapshot; это не другая UI версия. Новый wave-1-base-manifest.json хеширует canonical Git blobs выбранного пакета; исходный base-manifest.json относится только к неизменному ref A. D/E/F используют новую базу целиком, без overlay старого ZIP.
 
 Production integration origin: http://127.0.0.1:4352. Проверено в локальном Chromium/Playwright; viewport profiles не заменяют физические устройства, человеческий UX-тест или измерение продуктового эффекта. Новый CPU/performance benchmark не выполнялся; capture и encoding не объявлены performance evidence. Истории F/D/E ещё не получены, их public entries остаются legacy. Финальный site-wide QA и главная выполняются на G-final. Push/deploy не выполнялись; готовность к публикации не заявлена.
+
+Точный список 61 файла implementation/integration commit — wave-1-files.txt; полный integrity payload — wave-1-base-files.txt. Последующий evidence/handoff commit содержит только итоговые статусы, воспроизведение и узкий launch-proof script.

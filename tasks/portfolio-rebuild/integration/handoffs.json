@@ -65,13 +65,24 @@
     "pawly"
   ],
   "finalOrderSelected": false,
-  "updatedBaseForSecondWave": null,
+  "updatedBaseForSecondWave": {
+    "ref": "58002c398c3386c9df4b398f324ab07115c979f7",
+    "alias": "codex/portfolio-common-wave-1-2026-10-04",
+    "reproduced": true,
+    "files": 585,
+    "checkout": "D:/Claude-projects/Site-portfolio/tmp/portfolio-wave-1-58002c3",
+    "origin": "http://127.0.0.1:4364",
+    "integrityManifest": "tasks/portfolio-rebuild/integration/wave-1-base-manifest.json",
+    "reproduction": "tasks/portfolio-rebuild/integration/wave-1-reproduction.json",
+    "handoff": "tasks/portfolio-rebuild/integration/wave-1-handoff.md"
+  },
   "readyForBAndC": true,
   "readyForPublication": false,
   "controllerStateOwner": "01a103b5-7549-7211-8683-f14b03d9beef",
   "commonRequests": {
     "B-G-01": "closed"
   },
-  "readyForDAndE": false,
-  "readyForF": false
+  "readyForDAndE": true,
+  "readyForF": true,
+  "checkpointStatus": "complete"
 }
