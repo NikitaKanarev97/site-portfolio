@@ -136,7 +136,9 @@ Preview и /kit не попадают в sitemap и индексацию. Пуб
 | 2 | Завершена G 04.10.2026 | Ref 936724beff3bb9a01c69381659dc808782cc7950; 277 файлов воспроизведены в чистом checkout; integration/base.md |
 | 3 | Принята координатором 04.10.2026 | B ae47c6bec7641669470783269e63280debeaa5ee и C 9d714b3994169d87620f1704f029e78d94ec15b2; новые public EN/RU routes, B-G-01 закрыт; integration/wave-1-report.md |
 | 4 | Завершена G 04.10.2026 | Ref 58002c398c3386c9df4b398f324ab07115c979f7; A + G + B/C + общий Next, 585 файлов в чистом checkout; integration/base.md и wave-1-handoff.md |
-| 5–6 | Ожидают пакетов | Новые D/E/F stories ещё не переданы; соответствующие public entries пока legacy |
+| 5–6 | По очереди контроллера | D принят отдельно (81db809e6ac1f9e99bc117b9b63a9f52e72e32d0); E продолжает после G-common-E, F получает новую базу a6faac3a3d10eb6601fcc34caa70a915bea5dab3; public D/E/F пока legacy |
 | 7–8 | Подготовка G | Инвентарь, native nav/contact без JS, служебные маршруты, OG и монограмма проверены; B/C штатно перенесены; остальные stories и финальная главная зависят от пяти принятых историй |
 
 Предыдущие этапы 1/S1/S2/S3/Art direction сохранены в архиве, действующих DS-документах и outputs. Повторно запускать их по старым промптам не надо.
+
+G-common-E (04.10.2026): E-G-01/02/03 закрыты переносимым общим delta 433c80bcba29eda2060067570e9f8ec2087a2a91. Для F проверен ref a6faac3a3d10eb6601fcc34caa70a915bea5dab3, alias codex/portfolio-common-film-2026-10-04, 630 canonical files, check/build/CSS и browser launch без failures. E подключает film в штатный средний шаг и пересдаёт case; эта общая правка не является приёмкой его истории. Актуальный пакет — tasks/portfolio-rebuild/integration/film-common-handoff.md. D-G-01 остаётся до G-final; CONTROL/STATE и запуск следующих чатов — у контроллера.

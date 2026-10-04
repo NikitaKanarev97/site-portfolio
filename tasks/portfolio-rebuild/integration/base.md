@@ -1,6 +1,6 @@
-# Общая база · G-integrate-1 · 04.10.2026
+# Общая база · G-common-E · 04.10.2026
 
-**Действующий ref для D/E/F: 58002c398c3386c9df4b398f324ab07115c979f7.** Alias: codex/portfolio-common-wave-1-2026-10-04. База воспроизведена, checkpoint завершён; актуальный handoff — wave-1-handoff.md. Ниже сохранено происхождение первой базы A; результаты второй волны — в заключительном разделе.
+**Действующий ref для F: a6faac3a3d10eb6601fcc34caa70a915bea5dab3.** Alias: codex/portfolio-common-film-2026-10-04. Общая база воспроизведена: A + G + B/C + manual film. Актуальный handoff — film-common-handoff.md; E переносит только delta `433c80bcba29eda2060067570e9f8ec2087a2a91` на свой d3bbbb. Прочитать текущие документы из исходного checkout до создания нового checkout. Ниже сохраняется история предыдущих баз; D/E ещё не интегрированы публично.
 
 ## История принятой A · G-base
 
@@ -82,3 +82,9 @@ B/C перенесены отдельными commits с сохранённым�
 Неизменный production preview этого ref: http://127.0.0.1:4364, штатные /work/partner-portal/, /ru/work/partner-portal/, /work/learn/, /ru/work/learn/, /preview/common/ и /kit/. Рабочий G production preview 4352 и dev 4350 остаются доступны. Четыре owner previews: /preview/partner-portal-rebuild/en/, /ru/ и /preview/learn-rebuild/en/, /ru/ на том же origin. Отчёт воспроизведения — wave-1-reproduction.json; handoff — wave-1-handoff.md.
 
 Исполнители D/E/F сначала читают актуальные base.md, wave-1-report.md, wave-1-handoff.md и свой полный prompt из исходного checkout: финальные records с полным ref добавлены отдельным evidence/handoff commit после snapshot и не могут входить в его собственный hash. Затем создают свой checkout строго от 58002c398c3386c9df4b398f324ab07115c979f7. Snapshot содержит принятый код, shared contracts, B/C материалы и все четыре reference PNG. Центральная schema и native specimens сохранены; B-G-01 закрыт одним общим runtime. D/E/F не меняют shared renderer/registries/routes/DS: необходимые расширения передают common-request G.
+
+## G-common-E · manual film и новая база F
+
+E-G-01/02/03 закрыты общим delta `433c80bcba29eda2060067570e9f8ec2087a2a91` (ровно шесть файлов). Проверенный чистый snapshot `a6faac3a3d10eb6601fcc34caa70a915bea5dab3`, alias `codex/portfolio-common-film-2026-10-04`; checkout `D:/Claude-projects/Site-portfolio/tmp/portfolio-common-film`, origin http://127.0.0.1:4381. 630 canonical files / 78,007,784 bytes совпали; build 30 pages, check 108 с 0 errors/0 warnings, CSS 30 routes с 0 dead rules, mirrors равны, git status clean. Source film matrix 14 и B/C 8+26 responses без failures; clone native no-JS launch EN/RU, /kit full/no-JS и 10 media hashes без failures. Физически скрытая вкладка не подтверждена; visibility handler проверен synthetic probe.
+
+Доказательства: film-common-report.md, film-common-reproduction.json, film-common-handoff.md. Metadata handoff/readback находится в последующем commit и читается из исходного checkout; snapshot содержит прежние base.md/handoffs как исторический вход. E подключает film в actual middle step и пересдаёт свой case; F использует новый frozen ref. D принят контроллером отдельно, публичная интеграция D/E/F и G-final остаются следующими фазами. Предыдущая wave-1 база 58002c3 и A 936724b сохранены, не заменены задним числом.

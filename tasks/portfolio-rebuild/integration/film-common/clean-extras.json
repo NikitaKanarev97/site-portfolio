@@ -1,0 +1,98 @@
+{
+  "base": "http://127.0.0.1:4381",
+  "results": [
+    {
+      "mode": "full",
+      "route": "/kit/",
+      "state": {
+        "mediaFrames": 10,
+        "specimens": 1,
+        "screens": 33,
+        "mediaFrameClips": 0,
+        "loadedImages": 13,
+        "pendingLazyImages": 0,
+        "brokenImages": []
+      },
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "mode": "no-js",
+      "route": "/kit/",
+      "state": {
+        "mediaFrames": 10,
+        "specimens": 1,
+        "screens": 33,
+        "mediaFrameClips": 0,
+        "loadedImages": 13,
+        "pendingLazyImages": 0,
+        "brokenImages": []
+      },
+      "overflow": 0,
+      "errors": []
+    }
+  ],
+  "mediaResponses": [
+    {
+      "file": "public/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+      "status": 200,
+      "bytes": 151139,
+      "sha256": "205f72ccfbb0aa6d8e0ea40b00edc1804e9dac5b6fccb8f18f8285820aa530e4"
+    },
+    {
+      "file": "public/media/rebuild/common/film-fixture/en/clip-return-proof.webm",
+      "status": 200,
+      "bytes": 194654,
+      "sha256": "fcf18e73b2ecfaf2e025680be11fdcc699bd7f9e52af730a495cde28a5fbc9e8"
+    },
+    {
+      "file": "public/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+      "status": 200,
+      "bytes": 78592,
+      "sha256": "5927879bccecd0ebc6014f19f38dc82155da78fbe8e714f037d512f220c99054"
+    },
+    {
+      "file": "public/media/rebuild/common/film-fixture/en/active-service.webp",
+      "status": 200,
+      "bytes": 68106,
+      "sha256": "9a9436b169d961d081ff1b081c154e95c6478fbbad2a5bb3879b235027f1114b"
+    },
+    {
+      "file": "public/media/rebuild/common/film-fixture/en/order-details.webp",
+      "status": 200,
+      "bytes": 47656,
+      "sha256": "31982cb9b9adfd64a565d0234c8da07b1aa71e564730f467cc1da002a7ddda01"
+    },
+    {
+      "file": "public/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+      "status": 200,
+      "bytes": 152713,
+      "sha256": "abb061d8718c4478cb28960e5aeb5269007ea56f0373ce8971cb615bf84c4e9a"
+    },
+    {
+      "file": "public/media/rebuild/common/film-fixture/ru/clip-return-proof.webm",
+      "status": 200,
+      "bytes": 214190,
+      "sha256": "7d5d9b4427363b8d0b547fd3f60cbde7c85a43ca23e38cae10c89318ac12b5c0"
+    },
+    {
+      "file": "public/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+      "status": 200,
+      "bytes": 83038,
+      "sha256": "89fa5a39f5be858fb26be90745a37bc8ffd649bc7c8dd0188c0766df9346489a"
+    },
+    {
+      "file": "public/media/rebuild/common/film-fixture/ru/active-service.webp",
+      "status": 200,
+      "bytes": 71050,
+      "sha256": "161db266b0b3e88a2d6b8d8455395be4daa8f1ff0844bb2f182bb1eedf1e66af"
+    },
+    {
+      "file": "public/media/rebuild/common/film-fixture/ru/order-details.webp",
+      "status": 200,
+      "bytes": 54076,
+      "sha256": "3f438c88eec0dc512110590af6917662ca7e2e4bc0e2872287c3fdf1b8ea32da"
+    }
+  ],
+  "failures": []
+}

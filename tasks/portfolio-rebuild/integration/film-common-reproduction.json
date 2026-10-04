@@ -1,0 +1,119 @@
+{
+  "stage": "G-common-E",
+  "status": "reproduced",
+  "ref": "a6faac3a3d10eb6601fcc34caa70a915bea5dab3",
+  "alias": "codex/portfolio-common-film-2026-10-04",
+  "commonDelta": "433c80bcba29eda2060067570e9f8ec2087a2a91",
+  "previousBase": "58002c398c3386c9df4b398f324ab07115c979f7",
+  "previousMetadata": "28cf1876ec633797193b4f0ada3de5d817ff89f9",
+  "submittedE": "d3bbbbd78fb3a75c87d3f6117f91d1606e462932",
+  "generatedAt": "2026-10-04T06:34:08.211Z",
+  "checkout": "D:/Claude-projects/Site-portfolio/tmp/portfolio-common-film",
+  "origin": "http://127.0.0.1:4381",
+  "node": "v24.18.0",
+  "npm": "11.16.0",
+  "gitStatus": "",
+  "integrity": {
+    "manifest": "tasks/portfolio-rebuild/integration/film-common-base-manifest.json",
+    "files": 630,
+    "bytes": 78007784,
+    "failures": 0,
+    "byteSource": "canonical Git blobs"
+  },
+  "commands": [
+    {
+      "command": "npm ci",
+      "exitCode": 0,
+      "log": "tasks/portfolio-rebuild/integration/film-common/clean-install.log",
+      "existingDependencyAdvisories": 11
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "pages": 30,
+      "log": "tasks/portfolio-rebuild/integration/film-common/clean-build.log"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "files": 108,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 101,
+      "log": "tasks/portfolio-rebuild/integration/film-common/clean-check-summary.txt"
+    },
+    {
+      "command": "npm run check:css -- /ru/about /work/learn /ru/work/agent-ops-console /ru/work/partner-portal /ru/work/learn /ru/work/vet-clinic /ru/work/pawly",
+      "exitCode": 0,
+      "routes": 30,
+      "deadRules": 0,
+      "log": "tasks/portfolio-rebuild/integration/film-common/clean-css.log"
+    }
+  ],
+  "sourceBrowser": {
+    "filmObservations": 14,
+    "failures": 0,
+    "record": "tasks/portfolio-rebuild/integration/film-common/verification.json",
+    "bcProfiles": 8,
+    "alphaCaptureResponses": 26,
+    "bcFailures": 0,
+    "bcRecord": "tasks/portfolio-rebuild/integration/film-common/bc-verification.json",
+    "harmonySamples": 24,
+    "harmonyFailures": 0
+  },
+  "cleanBrowser": {
+    "nativeNoJsProfiles": 2,
+    "failures": 0,
+    "record": "tasks/portfolio-rebuild/integration/film-common/clean-launch.json",
+    "kitProfiles": 2,
+    "fixtureMediaResponses": 10,
+    "extraFailures": 0,
+    "extrasRecord": "tasks/portfolio-rebuild/integration/film-common/clean-extras.json"
+  },
+  "safeTransfer": {
+    "originalERef": "d3bbbbd78fb3a75c87d3f6117f91d1606e462932",
+    "deltaRef": "433c80bcba29eda2060067570e9f8ec2087a2a91",
+    "transferCheckout": "D:/Claude-projects/Site-portfolio/tmp/film-e-transfer-433c80b",
+    "transferredRef": "d60e515093731d24d4df693b334e3b1085dae2c9",
+    "gitStatus": "",
+    "files": [
+      {
+        "file": "ds/components.md",
+        "sha256": "fbf8d67b69589ecfb54fcf2d2f5caef7783825233a7932d6eb481fc44ac850b7",
+        "bytes": 104545
+      },
+      {
+        "file": "ds/motion-concept.md",
+        "sha256": "8be18dc4b08f1c7d24061648e83c685f2eda0437c5606b7ae3c12bd912170ce8",
+        "bytes": 54365
+      },
+      {
+        "file": "ds/story-contract.md",
+        "sha256": "394ada6dcbaa7397ebdf4d8911c8fad0b4dded6c8f91363b20068791918b802d",
+        "bytes": 11829
+      },
+      {
+        "file": "src/components/CaseScreen.astro",
+        "sha256": "9d415e11f68bbc6a1b76760dba4a8c5d5b84f8ec5394494e98b49e08c567fdbf",
+        "bytes": 3861
+      },
+      {
+        "file": "src/components/MediaFrame.astro",
+        "sha256": "b31eba8691fedcf988963838f34e9b915a21827e12456eb236850f95b6c5ddff",
+        "bytes": 45183
+      },
+      {
+        "file": "src/copy/cases/story.ts",
+        "sha256": "abcf0d4320b79897047cb285b7ea7a861934c321fe08538008b503a66e8a271e",
+        "bytes": 11579
+      }
+    ],
+    "caseFilesChanged": 0,
+    "result": "clean cherry-pick; all six shared files byte-identical; E payload untouched"
+  },
+  "limitations": [
+    "Native playback tested in local Chromium 1243. No physical devices or other browser engines.",
+    "Document-hidden branch tested with an explicit synthetic visibility handler probe; a physically hidden tab was not verified."
+  ],
+  "scope": "Shared adapter/lifecycle only. E must connect inline film and rerun actual case. No D/E/F public integration or final home/order/publication."
+}
