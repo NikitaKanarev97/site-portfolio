@@ -1,8 +1,8 @@
 {
   "checkpoint": "G-final",
-  "status": "G-technical-complete-F01-closed-H-pending",
+  "status": "complete-local-reviewable",
   "branch": "codex/portfolio-integration-g",
-  "frozenCodeRef": "c0c69040801d60bcfc836f6728f2ae806911be1d",
+  "frozenCodeRef": "93b9f7f5a260636b878fd0d67f863c675e410065",
   "metadata": "Subsequent documentation/proof commit; exact commit listed by git log and final reply",
   "accepted": {
     "A": "936724beff3bb9a01c69381659dc808782cc7950",
@@ -12,8 +12,8 @@
     "E": "a3641e8203dc250dc520ac494eec7fea0cf5f965",
     "F": "cfba94c0d184e1063484961b1ac5f463d6981e27"
   },
-  "preview": "http://127.0.0.1:4392",
-  "checkout": "D:\\Claude-projects\\Site-portfolio\\tmp\\portfolio-final-f01",
+  "preview": "http://127.0.0.1:4391",
+  "checkout": "D:\\Claude-projects\\Site-portfolio\\tmp\\portfolio-final-93b9f7f",
   "manifest": "tasks/portfolio-rebuild/integration/final/code-manifest.json",
   "report": "tasks/portfolio-rebuild/integration/report.md",
   "comparison": "tasks/portfolio-rebuild/integration/final/order-review.md",
@@ -35,21 +35,5 @@
   },
   "publication": false,
   "ownerArtisticAcceptance": false,
-  "controllerFilesModified": false,
-  "previousCodeRef": "93b9f7f5a260636b878fd0d67f863c675e410065",
-  "rootImportRef": "41c09115a34fb3c552557c7e7f8b01f87c02b51a",
-  "correction": {
-    "id": "G-final-F01",
-    "status": "closed",
-    "changedFiles": [
-      "src/copy/featured-work.ts"
-    ],
-    "homeProfiles": 24,
-    "caseLinks": 10,
-    "failures": 0,
-    "unchangedCanonicalPaths": 1269,
-    "evidence": "tasks/portfolio-rebuild/integration/final/correction-f01/byte-identity.json",
-    "report": "tasks/portfolio-rebuild/integration/final/correction-f01/report.md"
-  },
-  "nextStage": "H-art-direction/H-art-review under controller; not completed by G"
+  "controllerFilesModified": false
 }

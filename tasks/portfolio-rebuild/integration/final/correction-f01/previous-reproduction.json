@@ -1,8 +1,8 @@
 {
-  "ref": "c0c69040801d60bcfc836f6728f2ae806911be1d",
-  "root": "D:\\Claude-projects\\Site-portfolio\\tmp\\portfolio-final-f01",
+  "ref": "93b9f7f5a260636b878fd0d67f863c675e410065",
+  "root": "D:\\Claude-projects\\Site-portfolio\\tmp\\portfolio-final-93b9f7f",
   "canonicalFiles": 1270,
-  "totalBytes": 245198849,
+  "totalBytes": 245198805,
   "normalizedText": [],
   "mismatches": [],
   "commands": [
@@ -10,25 +10,25 @@
       "name": "install",
       "command": "npm ci",
       "exitCode": 0,
-      "seconds": 9.22
+      "seconds": 17.47
     },
     {
       "name": "check",
       "command": "npm run check",
       "exitCode": 0,
-      "seconds": 41.92
+      "seconds": 43.32
     },
     {
       "name": "build",
       "command": "npm run build",
       "exitCode": 0,
-      "seconds": 11.8
+      "seconds": 11.67
     },
     {
       "name": "css",
       "command": "npm run check:css -- /ru/about /work/learn /ru/work/agent-ops-console /ru/work/partner-portal /ru/work/learn /ru/work/vet-clinic /ru/work/pawly",
       "exitCode": 0,
-      "seconds": 2.28
+      "seconds": 2.2
     }
   ],
   "checkSummary": "Result (113 files): \n- 0 errors\n- 0 warnings\n- 101 hints",
@@ -44,7 +44,5 @@
       "mirror": "src/scripts/motion.js",
       "equal": true
     }
-  ],
-  "logs": "correction-f01/clean-*",
-  "previousProof": "correction-f01/previous-reproduction.json"
+  ]
 }

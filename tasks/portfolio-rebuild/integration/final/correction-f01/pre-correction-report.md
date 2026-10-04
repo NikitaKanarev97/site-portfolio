@@ -2,11 +2,11 @@
 
 Локальная реализация G завершена по прямому поручению владельца и последовательному CONTROL. Все пять принятых историй подключены в EN/RU, главная показывает Product Designer и пять реальных работ, лишняя legacy-ветка удалена. Общие запросы закрыты. Итог проверен и воспроизведён в чистом checkout. Художественная приёмка владельцем новых кейсов не заявляется: A принята владельцем, B–F — координатором по согласованному ночному процессу.
 
-**Смотреть сайт:** [EN](http://127.0.0.1:4392/) / [RU](http://127.0.0.1:4392/ru/). Исправленный контур — [Portal, Domain system](http://127.0.0.1:4392/work/partner-portal/#domain-system). [Обложки и полные desktop/mobile кадры](final/visual-gallery.md), [сравнение и порядок](final/order-review.md), [handoff](final-handoff.md).
+**Смотреть сайт:** [EN](http://127.0.0.1:4391/) / [RU](http://127.0.0.1:4391/ru/). Исправленный контур — [Portal, Domain system](http://127.0.0.1:4391/work/partner-portal/#domain-system). [Обложки и полные desktop/mobile кадры](final/visual-gallery.md), [сравнение и порядок](final/order-review.md), [handoff](final-handoff.md).
 
 ## Точные версии и происхождение
 
-Финальный frozen code ref после G-final-F01 — **c0c69040801d60bcfc836f6728f2ae806911be1d**, ветка codex/portfolio-final-f01-2026-10-04. Parent — 93b9f7f5a260636b878fd0d67f863c675e410065: новый снимок отличается только двумя Home promise строками в featured-work.ts. В рабочую codex/portfolio-integration-g этот delta перенесён commit 41c09115a34fb3c552557c7e7f8b01f87c02b51a. Прежний G-final code 93b9f7f5a260636b878fd0d67f863c675e410065 следовал за импортами D/E/F на 65da74a9d32f1cfb2787bcb633eacf2242f750e0; metadata до исправления — 9dd53859d156fc13b4302d98afc95a3b26e91cd2. Текущая metadata добавляет только correction evidence и указатели. Для воспроизведения приложения использовать новый полный frozen ref.
+Финальный frozen code ref — **93b9f7f5a260636b878fd0d67f863c675e410065**, ветка codex/portfolio-integration-g. Parent после переносов D/E/F — 65da74a9d32f1cfb2787bcb633eacf2242f750e0. Последующая metadata добавляет отчёты, указатель base.md, manifest, QA и кадры; она не меняет финальный код. Для воспроизведения использовать frozen code ref, а не актуальное название ветки. Старые base.md и отчёты внутри frozen ref исторические; текущая передача — этот документ.
 
 | Пакет | Принятая версия | Статус и маршрут |
 |---|---|---|
@@ -30,7 +30,7 @@ B/C уже были интегрированы в первой волне, по�
 | 3d35b7c88b89f36c72eaff315dec4bfc5dc887a5 | 742dc7c80171fb4a8305fae489ea9358cb851497 |
 | cfba94c0d184e1063484961b1ac5f463d6981e27 | 65da74a9d32f1cfb2787bcb633eacf2242f750e0 |
 
-[final/inputs.json](final/inputs.json) фиксирует checkout/ref каждого исполнителя, собственные пути и исходные hashes чужих dirty-файлов. [final/imports.json](final/imports.json): 632 собственных файла D/E/F совпали с принятыми версиями, 0 расхождений. G не переписывал их story/evidence/media/case maps. Продуктовые проекты остаются read-only. Пять исходных несвязанных tracked-правок и новый внешний PLAN-CHATS delta H сохранены вне correction commits; untracked-инвентарь и orchestration CONTROL/STATE не включались. Main, push и deploy не выполнялись.
+[final/inputs.json](final/inputs.json) фиксирует checkout/ref каждого исполнителя, собственные пути и исходные hashes чужих dirty-файлов. [final/imports.json](final/imports.json): 632 собственных файла D/E/F совпали с принятыми версиями, 0 расхождений. G не переписывал их story/evidence/media/case maps. Продуктовые проекты остаются read-only. Пять исходных несвязанных tracked-правок сохранены вне commits; untracked-инвентарь и orchestration CONTROL/STATE не включались. Main, push и deploy не выполнялись.
 
 ## Итоговая композиция и оболочка
 
@@ -68,11 +68,11 @@ SEO: OG titles соответствуют принятым историям; des
 | Harmony | Все 14 public страниц × 4 ширины × высоты 900/600 = 112 профилей, 0 нарушений. EN/RU слова: Agent 404/336, Portal 448/394, Learn 400/361, Vet 339/298, Pawly 329/279; утверждения и статусы не расширены |
 | SEO/assets/parity | 18 metadata routes, 14 public sitemap URLs, robots, два PDF; 142 served image files совпали, 26 alpha captures без внешних непрозрачных углов; tokens.css и motion.js mirrors побайтово равны |
 | Итоговые кадры | 28 полных EN/RU desktop/mobile страниц после actual decode и first carousel stop, 0 failures; также пары первых двух экранов, 20 Home cover кадров и Vet role flow |
-| Чистое воспроизведение | 1270 canonical files / 245198849 bytes совпали без дополнительной нормализации; npm ci/check/build/CSS exit 0, status clean, оба mirrors равны. Новый preview 4392: 24 Home profiles + 10 case URL checks, 0 failures. Прежние 28 launch profiles + 2 film launch сохраняются как baseline до F01 |
+| Чистое воспроизведение | 1270 canonical files / 245198805 bytes совпали без дополнительной нормализации; npm ci/check/build/CSS exit 0, status clean, оба mirrors равны. Новый preview 4391: 28 launch profiles + 2 Pawly no-JS native playback, 0 failures |
 
 Исходный site-verification.json честно сохраняет 26 findings, а не искусственный PASS: 10 проверок приняли offscreen lazy carousel slides за уже загруженные; 12 canonical assertions забыли завершающий slash; два nav assertions ожидали dialog вместо существующего custom panel; два Back assertions сработали до завершения Astro DOM swap. findings-retest.json проверяет реальное decode, правильный canonical/panel и завершённый DOM, 30 observations, 0 failures. Маршрутных/layout/h1/overflow ошибок в исходной матрице не было.
 
-Первый film/verification.json сохраняет одну ошибку harness после шести успешных playback profiles: Next пришёл на правильный Agent URL без slash, а waitForURL ожидал slash. Assertion исправлен по pathname; film/lifecycle-verification.json отдельно фиксирует весь остаток, 6 observations / 0 failures. Failed history не удалена и не смешана с retest. Последние первоначальные source-правки проверены отдельно final-delta/capture и затем clean build/launch. G-final-F01 имеет отдельную узкую проверку ниже.
+Первый film/verification.json сохраняет одну ошибку harness после шести успешных playback profiles: Next пришёл на правильный Agent URL без slash, а waitForURL ожидал slash. Assertion исправлен по pathname; film/lifecycle-verification.json отдельно фиксирует весь остаток, 6 observations / 0 failures. Failed history не удалена и не смешана с retest. Последние source-правки проверены отдельно final-delta/capture и затем clean build/launch.
 
 Браузерный охват — локальный Chromium 1243 с заданными viewport. Физические устройства, другие движки и физически скрытая вкладка не проверены; document.hidden — явно синтетический handler probe. Внешние Webflow/LinkedIn/demo проверены как корректные ссылки, без запроса к внешним сайтам; письмо не отправлялось. CPU/performance benchmarking на финальном этапе не выполнялся и не смешивался с capture/encoding. npm ci сообщает 11 существующих dependency advisories; lockfile и dependencies этим этапом не менялись, их исправление не заявляется. Полные verbose check logs остаются локально; в metadata сохранены компактные summaries.
 
@@ -80,25 +80,8 @@ SEO: OG titles соответствуют принятым историям; des
 
 ## Воспроизведение и передача
 
-Чистый frozen checkout: D:/Claude-projects/Site-portfolio/tmp/portfolio-final-f01. Preview запущен командой npm run preview -- --host 127.0.0.1 --port 4392. Он обслуживает исправленный финальный dist этого checkout, независимо от последующих root-правок. Preview endpoints всех владельцев и /kit остаются техническими, публичные истории доступны по сохранённым /work slugs.
+Чистый frozen checkout: D:/Claude-projects/Site-portfolio/tmp/portfolio-final-93b9f7f. Preview запущен командой npm run preview -- --host 127.0.0.1 --port 4391. Он обслуживает финальный dist этого checkout, независимо от последующих root-правок. Preview endpoints всех владельцев и /kit остаются техническими, публичные истории доступны по сохранённым /work slugs.
 
-Для нового checkout использовать полный ref c0c69040801d60bcfc836f6728f2ae806911be1d и обычные npm ci, npm run check, npm run build. Integrity verifier запускается из текущего root: node tasks/portfolio-rebuild/integration/final/reproduce-final.mjs --root=<fresh-checkout>. Он сверяет committed manifest, запускает команды, проверяет mirrors и clean status. Выходы — final/reproduction.json и clean-* logs. Canonical manifest объединяет прежние 630 common paths, точные D/E/F payloads и G code whitelist; 1270 уникальных путей. Metadata и её собственный manifest не хешируют себя.
+Для нового checkout использовать полный ref 93b9f7f5a260636b878fd0d67f863c675e410065 и обычные npm ci, npm run check, npm run build. Integrity verifier запускается из текущего root: node tasks/portfolio-rebuild/integration/final/reproduce-final.mjs --root=<fresh-checkout>. Он сверяет committed manifest, запускает команды, проверяет mirrors и clean status. Выходы — final/reproduction.json и clean-* logs. Canonical manifest объединяет прежние 630 common paths, точные D/E/F payloads и G code whitelist; 1270 уникальных путей. Metadata и её собственный manifest не хешируют себя.
 
-Готовность: технический локальный кандидат для просмотра и следующего художественного этапа H. G-final-F01 закрыт; открытых технических common-requests и незавершённых public migrations нет. Новое обязательное условие текущего PLAN-CHATS — H-art-direction/H-art-review после технического G; этот художественный этап остаётся в цепочке контроллера и здесь не объявлен выполненным. Публикация требует отдельного действия владельца; текущий пакет не содержит push/deploy. Orchestration и запуск чатов принадлежат контроллеру; G оставляет конечный handoff и не меняет CONTROL/STATE.
-
-## G-final-F01 · точная граница Home promise
-
-Координатор нашёл несоответствие: обещание Home о сохранении исходной строки до заказа шире принятого portal-order evidence. Созданный demo order хранит SKU/quantity; source text и row number отсутствуют, specification/cart очищаются. Кейс уже раскрывал этот предел и не менялся.
-
-Изменены ровно две строки src/copy/featured-work.ts:
-
-- EN: “Match a product to the source row, then place the order.”
-- RU: «Сначала подобрать товар по исходной строке, затем оформить заказ.»
-
-Это последовательность наблюдаемых действий до оформления; post-order source snapshot не обещается. Чистый frozen code c0c69040801d60bcfc836f6728f2ae806911be1d построен непосредственно от предыдущего code ref 93b9f7f5a260636b878fd0d67f863c675e410065, без промежуточной metadata в дереве. Поэтому прежние 1270 canonical paths сохранены: 1269 совпадают целиком, отличается только featured-work.ts, +44 bytes. [Byte identity](final/correction-f01/byte-identity.json), [commit](final/correction-f01/code-commit.json). Root import 41c09115a34fb3c552557c7e7f8b01f87c02b51a содержит тот же двухстрочный delta и сохраняет старую metadata и внешний PLAN H.
-
-Новый clean checkout tmp/portfolio-final-f01: все 1270 файлов / 245198849 bytes совпали без нормализации; npm ci/check/build/CSS exit 0; check 113 files, 0 errors/0 warnings, 101 hints; build 36 pages; CSS 36 routes, 0 dead rules; status clean; mirrors равны. Новые логи лежат в final/correction-f01/; прежние clean-* logs сохранены с исходным scope. Новый конечный preview — [4392 EN](http://127.0.0.1:4392/) / [RU](http://127.0.0.1:4392/ru/). Origins 4390/4391 показывают предыдущее Home и теперь исторические.
-
-Узкая current Home проверка: 24 profiles = EN/RU × 1440/1024/390/360 × full/reduce/no-JS; проверены новый смысл, реальные переносы внутри текстового блока, отсутствие clipping/overflow/errors, пять видимых ссылок с прежним порядком и 10 HTTP case links. 0 failures. [Результат](final/correction-f01/home-verification.json), [EN desktop](final/correction-f01/shots/en-portal-home-1440.png), [EN mobile](final/correction-f01/shots/en-portal-home-390.png), [RU desktop](final/correction-f01/shots/ru-portal-home-1440.png), [RU mobile](final/correction-f01/shots/ru-portal-home-390.png). Все четыре кадра просмотрены.
-
-Предыдущие 336 site-wide, 51 final-delta, 112 Harmony, native motion/controls/film и 28 page captures сохраняются как доказательства неизменённых renderer/case/media/shell. Они не названы повторным прогоном новой Home; актуальная Home подтверждена 24 profiles и четырьмя correction frames. Первоначальные 26 findings harness и film URL failure с их отдельными retests сохранены побайтово. Сами кейсы, media, порядок, DS, motion и факты не менялись.
+Готовность: полный локальный кандидат для просмотра владельцем и отдельной production-публикации. Открытых технических common-requests и незавершённых public migrations нет. Публикация и новая художественная приёмка требуют соответствующего отдельного действия владельца; текущий пакет не содержит push/deploy. Orchestration и запуск чатов принадлежат контроллеру; G оставляет конечный handoff и не меняет CONTROL/STATE.

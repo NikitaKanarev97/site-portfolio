@@ -1,6 +1,6 @@
 {
-  "ref": "93b9f7f5a260636b878fd0d67f863c675e410065",
-  "preview": "http://127.0.0.1:4391",
+  "ref": "c0c69040801d60bcfc836f6728f2ae806911be1d",
+  "preview": "http://127.0.0.1:4392",
   "scope": "G-final; publication not performed",
   "checks": {
     "source": {
@@ -48,11 +48,11 @@
     },
     "reproduction": {
       "canonicalFiles": 1270,
-      "bytes": 245198805,
+      "bytes": 245198849,
       "mismatches": 0,
       "status": "clean",
-      "launchProfiles": 28,
-      "filmNoJsLaunch": 2,
+      "homeProfiles": 24,
+      "caseLinks": 10,
       "failures": 0
     }
   },
@@ -77,5 +77,17 @@
     "clean-launch.json",
     "film/clean-launch.json",
     "visual-gallery.md"
-  ]
+  ],
+  "previousRef": "93b9f7f5a260636b878fd0d67f863c675e410065",
+  "correction": {
+    "id": "G-final-F01",
+    "closed": true,
+    "currentHomeProfiles": 24,
+    "caseLinks": 10,
+    "failures": 0,
+    "unchangedCanonicalPaths": 1269,
+    "proof": "correction-f01/byte-identity.json",
+    "reusedProofScope": "Previous site-wide/case/motion/film/Harmony runs at previousRef; unchanged bytes. New Home separately verified."
+  },
+  "nextStage": "H-art-direction/H-art-review"
 }

@@ -1,0 +1,38 @@
+{
+  "previousRef": "93b9f7f5a260636b878fd0d67f863c675e410065",
+  "frozenRef": "c0c69040801d60bcfc836f6728f2ae806911be1d",
+  "rootImportRef": "41c09115a34fb3c552557c7e7f8b01f87c02b51a",
+  "canonicalPaths": 1270,
+  "unchangedCanonicalPaths": 1269,
+  "changedFiles": [
+    {
+      "path": "src/copy/featured-work.ts",
+      "before": {
+        "path": "src/copy/featured-work.ts",
+        "gitBlob": "4c9cb4d6c0859434b52fa1fcc98a16e41280a841",
+        "bytes": 2797,
+        "sha256": "eef79ea3e90b8dc36a91bb57b4a2d15b7d5f354f38fbc018dc6da56a24dfc24b"
+      },
+      "after": {
+        "path": "src/copy/featured-work.ts",
+        "gitBlob": "6b5027bb3c4f894879d2fc600300b6975ec25f92",
+        "bytes": 2841,
+        "sha256": "0cc0a5c257080a2dc26194358e8d3de56abb66987dde864bdc9fb4d874c38939"
+      }
+    }
+  ],
+  "gitDelta": "2\t2\tsrc/copy/featured-work.ts",
+  "reusedProof": [
+    "native-states.json",
+    "controls.json",
+    "film/verification.json",
+    "film/lifecycle-verification.json",
+    "harmony.log",
+    "harmony-short.log",
+    "site-verification.json",
+    "findings-retest.json",
+    "final-delta-verification.json",
+    "capture-final.json"
+  ],
+  "reuseBasis": "Only two Home promise strings differ; product stories, media, all renderer/DS/motion/public routes and shell are byte-identical. Prior site-wide/native controls/film/Harmony history is retained with its original scope. Home itself gets a focused current retest."
+}

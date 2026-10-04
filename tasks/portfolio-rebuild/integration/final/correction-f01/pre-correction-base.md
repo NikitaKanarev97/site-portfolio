@@ -1,14 +1,10 @@
-# Финальная локальная база · G-final-F01 · 04.10.2026
+# Финальная локальная база · G-final · 04.10.2026
 
-**Точный frozen code ref: c0c69040801d60bcfc836f6728f2ae806911be1d.** В нём интегрированы все пять принятых историй, завершены EN/RU Home и штатные маршруты. Ветка G — codex/portfolio-integration-g. Последующая metadata фиксирует доказательства и handoff; для воспроизведения приложения использовать этот точный ref.
+**Точный frozen code ref: 93b9f7f5a260636b878fd0d67f863c675e410065.** В нём интегрированы все пять принятых историй, завершены EN/RU Home и штатные маршруты. Ветка G — codex/portfolio-integration-g. Последующая metadata фиксирует доказательства и handoff; для воспроизведения приложения использовать этот точный ref.
 
-Чистый checkout: D:/Claude-projects/Site-portfolio/tmp/portfolio-final-f01. Рабочий production-preview: http://127.0.0.1:4392/. Canonical manifest — [final/code-manifest.json](final/code-manifest.json): **1270 файлов / 245198849 bytes**, точные Git blobs. В свежем checkout совпали все 1270 файлов без дополнительной нормализации. npm ci, check, build и CSS завершились с exit 0; check — 113 файлов, 0 errors/0 warnings, 101 hints; build — 36 страниц; CSS — 36 маршрутов, 0 мёртвых правил. Оба DS-зеркала побайтово равны; checkout остаётся clean. [Воспроизведение](final/reproduction.json).
+Чистый checkout: D:/Claude-projects/Site-portfolio/tmp/portfolio-final-93b9f7f. Рабочий production-preview: http://127.0.0.1:4391/. Canonical manifest — [final/code-manifest.json](final/code-manifest.json): **1270 файлов / 245198805 bytes**, точные Git blobs. В свежем checkout совпали все 1270 файлов без дополнительной нормализации. npm ci, check, build и CSS завершились с exit 0; check — 113 файлов, 0 errors/0 warnings, 101 hints; build — 36 страниц; CSS — 36 маршрутов, 0 мёртвых правил. Оба DS-зеркала побайтово равны; checkout остаётся clean. [Воспроизведение](final/reproduction.json).
 
 Принятые refs, provenance, код, визуальное сравнение и полный охват — [report.md](report.md), [final-handoff.md](final-handoff.md). Все public slugs сохранены. Metadata commit добавляет этот текущий указатель, отчёт, manifest, QA и кадры; исторический base.md внутри frozen code ref относится к предыдущему checkpoint и не заменяет текущий handoff.
-
-## Исправление F01 и сохранность
-
-Новый frozen code построен непосредственно от прежнего G-final code 93b9f7f5a260636b878fd0d67f863c675e410065, отличается только двумя Home promises в src/copy/featured-work.ts. Остальные 1269 из 1270 canonical paths побайтово сохранены. Root import — 41c09115a34fb3c552557c7e7f8b01f87c02b51a. [Byte identity](final/correction-f01/byte-identity.json), [24 current Home profiles](final/correction-f01/home-verification.json); новые clean logs — final/correction-f01/. Старые origins 4390/4391 и Home кадры относятся к сборке до F01. Технический G готов к художественным H-art-direction/H-art-review по обновлённому PLAN; H не объявлен выполненным. Внешний PLAN delta и orchestration сохраняются вне commits G.
 
 ## История баз до финальной интеграции
 
