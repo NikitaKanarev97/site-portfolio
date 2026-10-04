@@ -6,6 +6,8 @@
 
 Локальный alias: `codex/portfolio-common-a-2026-10-04`. Parent: `62304d8e555193a26926b673a56ba13f631ecd7e`. Это локальный тематический commit, не remote default. Рабочая ветка G: `codex/portfolio-integration-g`; последующие независимые поправки оболочки остаются в ней и будут сохранены при интеграции B/C.
 
+Независимый G checkpoint code ref: `68b608a34c382ee80c24ae15f0a45277e2277db7`. Он содержит оболочку и этот документ, добавленные после принятой A. Исполнители первой волны читают актуальные `base.md`/`report.md` из исходного checkout и начинают case от ref A. Подробный готовый handoff — `g-base-handoff.md`.
+
 Владелец в текущем чате G ответил «Принимаю A — зафиксировать общую базу». Затем поручил исправить края specimens. Исправление G-01 вошло в этот ref: настоящий alpha-контур компонента, красная обводка без внешнего белого прямоугольника, capture bleed 2 CSS px и native presentation CaseScreen. Основание: `a-acceptance.md`, `common-requests.md`, `corners-verification.json`, шесть кадров `shots/corners-*.png`. Полные новые истории B–F ещё не приняты.
 
 ## Происхождение и состав
