@@ -1,0 +1,104 @@
+[
+  {
+    "file": "actual-final.json",
+    "observations": 4,
+    "transitions": 24,
+    "maxTopDelta": 0.1875,
+    "failures": 0,
+    "sharedSourceSha256": "d1468a8e12ca45fbfc941aee94d0c77aa93efec5e889c4eac7929df4976179a4"
+  },
+  {
+    "file": "native-states.json",
+    "observations": 36,
+    "transitions": 96,
+    "maxTopDelta": 0.59375,
+    "failures": 0,
+    "sharedSourceSha256": "d1468a8e12ca45fbfc941aee94d0c77aa93efec5e889c4eac7929df4976179a4"
+  },
+  {
+    "file": "motion-verification.json",
+    "observations": 12,
+    "transitions": 0,
+    "maxTopDelta": null,
+    "failures": 0
+  },
+  {
+    "file": "static-verification.json",
+    "observations": 24,
+    "transitions": 0,
+    "maxTopDelta": null,
+    "failures": 0
+  },
+  {
+    "file": "f-debug.json",
+    "observations": 30,
+    "failures": 0,
+    "readingObserverMax": 1,
+    "releaseSnapshots": [
+      {
+        "lang": "en",
+        "stage": "next",
+        "observers": 0,
+        "reading": {
+          "scene": "workspace",
+          "index": 2,
+          "progress": 2,
+          "observing": false,
+          "y": null
+        }
+      },
+      {
+        "lang": "en",
+        "stage": "away",
+        "observers": 0,
+        "reading": {
+          "observing": false,
+          "y": null
+        }
+      },
+      {
+        "lang": "en",
+        "stage": "back",
+        "observers": 0,
+        "reading": {
+          "index": null,
+          "progress": null,
+          "observing": false,
+          "y": null
+        }
+      },
+      {
+        "lang": "ru",
+        "stage": "next",
+        "observers": 0,
+        "reading": {
+          "scene": "workspace",
+          "index": 2,
+          "progress": 2,
+          "observing": false,
+          "y": null
+        }
+      },
+      {
+        "lang": "ru",
+        "stage": "away",
+        "observers": 0,
+        "reading": {
+          "observing": false,
+          "y": null
+        }
+      },
+      {
+        "lang": "ru",
+        "stage": "back",
+        "observers": 0,
+        "reading": {
+          "index": null,
+          "progress": null,
+          "observing": false,
+          "y": null
+        }
+      }
+    ]
+  }
+]

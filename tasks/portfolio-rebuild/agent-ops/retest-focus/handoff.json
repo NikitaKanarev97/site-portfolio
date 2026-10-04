@@ -1,0 +1,147 @@
+{
+  "stage": "F actual-case retest",
+  "status": "passed_ready_for_controller_review",
+  "request": "F-G-01",
+  "requestStatus": "actual_closed",
+  "checkout": "C:/Users/kanar/.codex/worktrees/agent-ops-rebuild-f/Site-portfolio",
+  "branch": "codex/agent-ops-rebuild-f",
+  "casePayloadRef": "3d35b7c88b89f36c72eaff315dec4bfc5dc887a5",
+  "acceptedCommonRef": "6e8f0e075916dec82a90831c7c2c78a38ea60e20",
+  "ownImportRef": "c950cb20ec9557f6a656dd8ed825c18b40970c88",
+  "newOwnProofRef": "Immutable full ref is supplied in the final delivery response; commit containing this file",
+  "gTransfer": "Original case commit plus new own proof commit; G already owns common 6e8f0e0, do not re-pick c950cb2",
+  "origin": "http://127.0.0.1:4384",
+  "sourceCaseUnchanged": true,
+  "sourceMediaUnchanged": true,
+  "sharedEditedAfterImport": false,
+  "technicalSummary": [
+    {
+      "file": "actual-final.json",
+      "observations": 4,
+      "transitions": 24,
+      "maxTopDelta": 0.1875,
+      "failures": 0,
+      "sharedSourceSha256": "d1468a8e12ca45fbfc941aee94d0c77aa93efec5e889c4eac7929df4976179a4"
+    },
+    {
+      "file": "native-states.json",
+      "observations": 36,
+      "transitions": 96,
+      "maxTopDelta": 0.59375,
+      "failures": 0,
+      "sharedSourceSha256": "d1468a8e12ca45fbfc941aee94d0c77aa93efec5e889c4eac7929df4976179a4"
+    },
+    {
+      "file": "motion-verification.json",
+      "observations": 12,
+      "transitions": 0,
+      "maxTopDelta": null,
+      "failures": 0
+    },
+    {
+      "file": "static-verification.json",
+      "observations": 24,
+      "transitions": 0,
+      "maxTopDelta": null,
+      "failures": 0
+    },
+    {
+      "file": "f-debug.json",
+      "observations": 30,
+      "failures": 0,
+      "readingObserverMax": 1,
+      "releaseSnapshots": [
+        {
+          "lang": "en",
+          "stage": "next",
+          "observers": 0,
+          "reading": {
+            "scene": "workspace",
+            "index": 2,
+            "progress": 2,
+            "observing": false,
+            "y": null
+          }
+        },
+        {
+          "lang": "en",
+          "stage": "away",
+          "observers": 0,
+          "reading": {
+            "observing": false,
+            "y": null
+          }
+        },
+        {
+          "lang": "en",
+          "stage": "back",
+          "observers": 0,
+          "reading": {
+            "index": null,
+            "progress": null,
+            "observing": false,
+            "y": null
+          }
+        },
+        {
+          "lang": "ru",
+          "stage": "next",
+          "observers": 0,
+          "reading": {
+            "scene": "workspace",
+            "index": 2,
+            "progress": 2,
+            "observing": false,
+            "y": null
+          }
+        },
+        {
+          "lang": "ru",
+          "stage": "away",
+          "observers": 0,
+          "reading": {
+            "observing": false,
+            "y": null
+          }
+        },
+        {
+          "lang": "ru",
+          "stage": "back",
+          "observers": 0,
+          "reading": {
+            "index": null,
+            "progress": null,
+            "observing": false,
+            "y": null
+          }
+        }
+      ]
+    }
+  ],
+  "proofScripts": [
+    {
+      "file": "tasks/portfolio-rebuild/agent-ops/retest-focus/reproduce-exact.mjs",
+      "sha256": "517f9abdcd5465381718476ddab25ec2a8874de2cf6518f06b7a2e1accfe3262"
+    },
+    {
+      "file": "tasks/portfolio-rebuild/agent-ops/retest-focus/verify-native.mjs",
+      "sha256": "239b6be5c198966030c5c0668c28de7e601bc96f4c0f6f7ed238a18dacc831b6"
+    },
+    {
+      "file": "tasks/portfolio-rebuild/agent-ops/retest-focus/verify-debug.mjs",
+      "sha256": "ce9cee22a6d6e97f3ee414955af613be13bbf26a9a0672157a3f3dbd90de3cbe"
+    },
+    {
+      "file": "tasks/portfolio-rebuild/agent-ops/retest-focus/verify-matrix.mjs",
+      "sha256": "068e7eca46f0f219aba4766c8990f0b9a5ae4c1182fc6da345426bf54a531a92"
+    },
+    {
+      "file": "tasks/portfolio-rebuild/agent-ops/retest-focus/audit.mjs",
+      "sha256": "3a1de7c6c5632bf78e1c252ccc82b2db2c4f04ab34dffa8e445881855c6ceafb"
+    }
+  ],
+  "artisticOwnerAcceptanceClaimed": false,
+  "published": false,
+  "ownProofFiles": 63,
+  "caseOwnedFiles": 267
+}
