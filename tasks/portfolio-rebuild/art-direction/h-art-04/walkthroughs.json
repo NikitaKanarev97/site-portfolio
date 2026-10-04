@@ -1,0 +1,1070 @@
+{
+  "base": "http://127.0.0.1:4395",
+  "recording": "Current H4 production preview. Native wheel, programme disclosure, Next/Back and reverse reading. Mark times are wall-clock observations from navigation, not frame-accurate video timecodes.",
+  "results": [
+    {
+      "key": "en-1440-home",
+      "lang": "en",
+      "width": 1440,
+      "slug": "",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.19
+        },
+        {
+          "scene": "work-agent-ops-console",
+          "seconds": 3.94
+        },
+        {
+          "scene": "work-partner-portal",
+          "seconds": 5.32
+        },
+        {
+          "scene": "work-learn",
+          "seconds": 6.7
+        },
+        {
+          "scene": "work-vet-clinic",
+          "seconds": 8.45
+        },
+        {
+          "scene": "work-pawly",
+          "seconds": 10.56
+        },
+        {
+          "scene": "page end",
+          "seconds": 12.08
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 12.89
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-1440-agent-ops-console",
+      "lang": "en",
+      "width": 1440,
+      "slug": "agent-ops-console",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.29
+        },
+        {
+          "scene": "case-steps case-steps--focus · overview",
+          "seconds": 4.04
+        },
+        {
+          "scene": "case-plate case-plate--dark",
+          "seconds": 5.42
+        },
+        {
+          "scene": "case-steps case-steps--focus · workspace",
+          "seconds": 6.78
+        },
+        {
+          "scene": "case-steps case-steps--focus · promise",
+          "seconds": 8.16
+        },
+        {
+          "scene": "case-steps case-steps--focus · decision",
+          "seconds": 9.54
+        },
+        {
+          "scene": "case-next",
+          "seconds": 12.07
+        },
+        {
+          "scene": "page end",
+          "seconds": 13.21
+        },
+        {
+          "scene": "Next",
+          "seconds": 14.11
+        },
+        {
+          "scene": "Back",
+          "seconds": 15.13
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 15.96
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-1440-partner-portal",
+      "lang": "en",
+      "width": 1440,
+      "slug": "partner-portal",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.27
+        },
+        {
+          "scene": "work-stage work-stage--portal",
+          "seconds": 3.63
+        },
+        {
+          "scene": "case-plate case-plate--light",
+          "seconds": 5.02
+        },
+        {
+          "scene": "case-steps case-steps--focus · ",
+          "seconds": 7.56
+        },
+        {
+          "scene": "case-next",
+          "seconds": 13.39
+        },
+        {
+          "scene": "page end",
+          "seconds": 14.15
+        },
+        {
+          "scene": "Next",
+          "seconds": 15.06
+        },
+        {
+          "scene": "Back",
+          "seconds": 16.08
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 16.93
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-1440-learn",
+      "lang": "en",
+      "width": 1440,
+      "slug": "learn",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.16
+        },
+        {
+          "scene": "work-stage work-stage--learn",
+          "seconds": 3.54
+        },
+        {
+          "scene": "case-plate case-plate--light",
+          "seconds": 4.98
+        },
+        {
+          "scene": "case-next",
+          "seconds": 12.26
+        },
+        {
+          "scene": "page end",
+          "seconds": 13.12
+        },
+        {
+          "scene": "Next",
+          "seconds": 14.01
+        },
+        {
+          "scene": "Back",
+          "seconds": 15.03
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 15.87
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-1440-vet-clinic",
+      "lang": "en",
+      "width": 1440,
+      "slug": "vet-clinic",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.19
+        },
+        {
+          "scene": "work-stage work-stage--vet",
+          "seconds": 3.57
+        },
+        {
+          "scene": "case-plate case-plate--light",
+          "seconds": 5.32
+        },
+        {
+          "scene": "case-steps case-steps--handoff · ,,",
+          "seconds": 7.82
+        },
+        {
+          "scene": "case-next",
+          "seconds": 10.67
+        },
+        {
+          "scene": "page end",
+          "seconds": 11.43
+        },
+        {
+          "scene": "Next",
+          "seconds": 12.34
+        },
+        {
+          "scene": "Back",
+          "seconds": 13.36
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 14.2
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-1440-pawly",
+      "lang": "en",
+      "width": 1440,
+      "slug": "pawly",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.17
+        },
+        {
+          "scene": "work-stage work-stage--pawly",
+          "seconds": 3.56
+        },
+        {
+          "scene": "case-plate case-plate--light",
+          "seconds": 4.94
+        },
+        {
+          "scene": "case-steps · ,,",
+          "seconds": 6.68
+        },
+        {
+          "scene": "case-next",
+          "seconds": 12.24
+        },
+        {
+          "scene": "page end",
+          "seconds": 13.02
+        },
+        {
+          "scene": "Next",
+          "seconds": 13.95
+        },
+        {
+          "scene": "Back",
+          "seconds": 14.98
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 15.81
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-390-home",
+      "lang": "en",
+      "width": 390,
+      "slug": "",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.18
+        },
+        {
+          "scene": "work-agent-ops-console",
+          "seconds": 3.92
+        },
+        {
+          "scene": "work-partner-portal",
+          "seconds": 5.66
+        },
+        {
+          "scene": "work-learn",
+          "seconds": 7.4
+        },
+        {
+          "scene": "work-vet-clinic",
+          "seconds": 9.54
+        },
+        {
+          "scene": "work-pawly",
+          "seconds": 12.02
+        },
+        {
+          "scene": "page end",
+          "seconds": 14.31
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 15.12
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-390-agent-ops-console",
+      "lang": "en",
+      "width": 390,
+      "slug": "agent-ops-console",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.15
+        },
+        {
+          "scene": "case-steps case-steps--focus · overview,workspace,promise,decision",
+          "seconds": 4.25
+        },
+        {
+          "scene": "case-plate case-plate--dark",
+          "seconds": 5.63
+        },
+        {
+          "scene": "case-next",
+          "seconds": 9.24
+        },
+        {
+          "scene": "page end",
+          "seconds": 10.38
+        },
+        {
+          "scene": "Next",
+          "seconds": 11.26
+        },
+        {
+          "scene": "Back",
+          "seconds": 12.28
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 13.12
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-390-partner-portal",
+      "lang": "en",
+      "width": 390,
+      "slug": "partner-portal",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.24
+        },
+        {
+          "scene": "work-stage work-stage--portal",
+          "seconds": 3.63
+        },
+        {
+          "scene": "case-plate case-plate--light",
+          "seconds": 5.38
+        },
+        {
+          "scene": "case-steps case-steps--focus · ,,",
+          "seconds": 8.62
+        },
+        {
+          "scene": "case-next",
+          "seconds": 16.65
+        },
+        {
+          "scene": "page end",
+          "seconds": 17.4
+        },
+        {
+          "scene": "Next",
+          "seconds": 18.3
+        },
+        {
+          "scene": "Back",
+          "seconds": 19.31
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 20.15
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-390-learn",
+      "lang": "en",
+      "width": 390,
+      "slug": "learn",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.17
+        },
+        {
+          "scene": "work-stage work-stage--learn",
+          "seconds": 3.55
+        },
+        {
+          "scene": "case-plate case-plate--light",
+          "seconds": 5.72
+        },
+        {
+          "scene": "native programme disclosure",
+          "seconds": 7.68
+        },
+        {
+          "scene": "case-next",
+          "seconds": 14.97
+        },
+        {
+          "scene": "page end",
+          "seconds": 16.11
+        },
+        {
+          "scene": "Next",
+          "seconds": 16.98
+        },
+        {
+          "scene": "Back",
+          "seconds": 18
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 18.8
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-390-pawly",
+      "lang": "en",
+      "width": 390,
+      "slug": "pawly",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.2
+        },
+        {
+          "scene": "work-stage work-stage--pawly",
+          "seconds": 3.56
+        },
+        {
+          "scene": "case-plate case-plate--light",
+          "seconds": 5.71
+        },
+        {
+          "scene": "case-steps · ,,",
+          "seconds": 7.08
+        },
+        {
+          "scene": "case-next",
+          "seconds": 12.62
+        },
+        {
+          "scene": "page end",
+          "seconds": 13.75
+        },
+        {
+          "scene": "Next",
+          "seconds": 14.63
+        },
+        {
+          "scene": "Back",
+          "seconds": 15.64
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 16.46
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-390-vet-clinic",
+      "lang": "en",
+      "width": 390,
+      "slug": "vet-clinic",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.28
+        },
+        {
+          "scene": "work-stage work-stage--vet",
+          "seconds": 3.65
+        },
+        {
+          "scene": "case-plate case-plate--light",
+          "seconds": 6.13
+        },
+        {
+          "scene": "case-steps case-steps--handoff · ,,",
+          "seconds": 9.38
+        },
+        {
+          "scene": "case-next",
+          "seconds": 13.32
+        },
+        {
+          "scene": "page end",
+          "seconds": 14.08
+        },
+        {
+          "scene": "Next",
+          "seconds": 14.98
+        },
+        {
+          "scene": "Back",
+          "seconds": 15.99
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 16.82
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-1440-home",
+      "lang": "ru",
+      "width": 1440,
+      "slug": "",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.28
+        },
+        {
+          "scene": "work-agent-ops-console",
+          "seconds": 4.03
+        },
+        {
+          "scene": "work-partner-portal",
+          "seconds": 5.4
+        },
+        {
+          "scene": "work-learn",
+          "seconds": 6.78
+        },
+        {
+          "scene": "work-vet-clinic",
+          "seconds": 8.53
+        },
+        {
+          "scene": "work-pawly",
+          "seconds": 10.65
+        },
+        {
+          "scene": "page end",
+          "seconds": 12.16
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 12.97
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-1440-agent-ops-console",
+      "lang": "ru",
+      "width": 1440,
+      "slug": "agent-ops-console",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.23
+        },
+        {
+          "scene": "case-steps case-steps--focus · overview",
+          "seconds": 3.99
+        },
+        {
+          "scene": "case-plate case-plate--dark",
+          "seconds": 5.36
+        },
+        {
+          "scene": "case-steps case-steps--focus · workspace",
+          "seconds": 6.74
+        },
+        {
+          "scene": "case-steps case-steps--focus · promise",
+          "seconds": 8.11
+        },
+        {
+          "scene": "case-steps case-steps--focus · decision",
+          "seconds": 9.48
+        },
+        {
+          "scene": "case-next",
+          "seconds": 12
+        },
+        {
+          "scene": "page end",
+          "seconds": 12.76
+        },
+        {
+          "scene": "Next",
+          "seconds": 13.64
+        },
+        {
+          "scene": "Back",
+          "seconds": 14.65
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 15.52
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-1440-partner-portal",
+      "lang": "ru",
+      "width": 1440,
+      "slug": "partner-portal",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.2
+        },
+        {
+          "scene": "work-stage work-stage--portal",
+          "seconds": 3.62
+        },
+        {
+          "scene": "case-plate case-plate--light",
+          "seconds": 5
+        },
+        {
+          "scene": "case-steps case-steps--focus · ",
+          "seconds": 7.53
+        },
+        {
+          "scene": "case-next",
+          "seconds": 13.37
+        },
+        {
+          "scene": "page end",
+          "seconds": 14.13
+        },
+        {
+          "scene": "Next",
+          "seconds": 15.03
+        },
+        {
+          "scene": "Back",
+          "seconds": 16.04
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 16.88
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-1440-learn",
+      "lang": "ru",
+      "width": 1440,
+      "slug": "learn",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.17
+        },
+        {
+          "scene": "work-stage work-stage--learn",
+          "seconds": 3.53
+        },
+        {
+          "scene": "case-plate case-plate--light",
+          "seconds": 4.96
+        },
+        {
+          "scene": "case-next",
+          "seconds": 12.15
+        },
+        {
+          "scene": "page end",
+          "seconds": 12.96
+        },
+        {
+          "scene": "Next",
+          "seconds": 13.83
+        },
+        {
+          "scene": "Back",
+          "seconds": 14.84
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 15.68
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-1440-vet-clinic",
+      "lang": "ru",
+      "width": 1440,
+      "slug": "vet-clinic",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.18
+        },
+        {
+          "scene": "work-stage work-stage--vet",
+          "seconds": 3.56
+        },
+        {
+          "scene": "case-plate case-plate--light",
+          "seconds": 5.3
+        },
+        {
+          "scene": "case-steps case-steps--handoff · ,,",
+          "seconds": 7.8
+        },
+        {
+          "scene": "case-next",
+          "seconds": 10.65
+        },
+        {
+          "scene": "page end",
+          "seconds": 11.79
+        },
+        {
+          "scene": "Next",
+          "seconds": 12.68
+        },
+        {
+          "scene": "Back",
+          "seconds": 13.7
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 14.53
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-1440-pawly",
+      "lang": "ru",
+      "width": 1440,
+      "slug": "pawly",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.2
+        },
+        {
+          "scene": "work-stage work-stage--pawly",
+          "seconds": 3.57
+        },
+        {
+          "scene": "case-plate case-plate--light",
+          "seconds": 4.94
+        },
+        {
+          "scene": "case-steps · ,,",
+          "seconds": 6.68
+        },
+        {
+          "scene": "case-next",
+          "seconds": 12.25
+        },
+        {
+          "scene": "page end",
+          "seconds": 12.98
+        },
+        {
+          "scene": "Next",
+          "seconds": 13.86
+        },
+        {
+          "scene": "Back",
+          "seconds": 14.88
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 15.72
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-390-home",
+      "lang": "ru",
+      "width": 390,
+      "slug": "",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.17
+        },
+        {
+          "scene": "work-agent-ops-console",
+          "seconds": 3.92
+        },
+        {
+          "scene": "work-partner-portal",
+          "seconds": 5.67
+        },
+        {
+          "scene": "work-learn",
+          "seconds": 7.41
+        },
+        {
+          "scene": "work-vet-clinic",
+          "seconds": 9.54
+        },
+        {
+          "scene": "work-pawly",
+          "seconds": 12.38
+        },
+        {
+          "scene": "page end",
+          "seconds": 14.27
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 15.08
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-390-agent-ops-console",
+      "lang": "ru",
+      "width": 390,
+      "slug": "agent-ops-console",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.18
+        },
+        {
+          "scene": "case-steps case-steps--focus · overview,workspace,promise,decision",
+          "seconds": 4.3
+        },
+        {
+          "scene": "case-plate case-plate--dark",
+          "seconds": 5.67
+        },
+        {
+          "scene": "case-next",
+          "seconds": 9.64
+        },
+        {
+          "scene": "page end",
+          "seconds": 10.4
+        },
+        {
+          "scene": "Next",
+          "seconds": 11.28
+        },
+        {
+          "scene": "Back",
+          "seconds": 12.3
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 13.13
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-390-learn",
+      "lang": "ru",
+      "width": 390,
+      "slug": "learn",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.17
+        },
+        {
+          "scene": "work-stage work-stage--learn",
+          "seconds": 3.55
+        },
+        {
+          "scene": "case-plate case-plate--light",
+          "seconds": 6.09
+        },
+        {
+          "scene": "native programme disclosure",
+          "seconds": 7.61
+        },
+        {
+          "scene": "case-next",
+          "seconds": 15.26
+        },
+        {
+          "scene": "page end",
+          "seconds": 15.99
+        },
+        {
+          "scene": "Next",
+          "seconds": 16.84
+        },
+        {
+          "scene": "Back",
+          "seconds": 17.86
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 18.67
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-390-partner-portal",
+      "lang": "ru",
+      "width": 390,
+      "slug": "partner-portal",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.27
+        },
+        {
+          "scene": "work-stage work-stage--portal",
+          "seconds": 3.62
+        },
+        {
+          "scene": "case-plate case-plate--light",
+          "seconds": 5.38
+        },
+        {
+          "scene": "case-steps case-steps--focus · ,,",
+          "seconds": 8.63
+        },
+        {
+          "scene": "case-next",
+          "seconds": 16.65
+        },
+        {
+          "scene": "page end",
+          "seconds": 17.77
+        },
+        {
+          "scene": "Next",
+          "seconds": 18.66
+        },
+        {
+          "scene": "Back",
+          "seconds": 19.68
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 20.52
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-390-vet-clinic",
+      "lang": "ru",
+      "width": 390,
+      "slug": "vet-clinic",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.17
+        },
+        {
+          "scene": "work-stage work-stage--vet",
+          "seconds": 3.55
+        },
+        {
+          "scene": "case-plate case-plate--light",
+          "seconds": 6.04
+        },
+        {
+          "scene": "case-steps case-steps--handoff · ,,",
+          "seconds": 9.3
+        },
+        {
+          "scene": "case-next",
+          "seconds": 13.27
+        },
+        {
+          "scene": "page end",
+          "seconds": 14
+        },
+        {
+          "scene": "Next",
+          "seconds": 14.93
+        },
+        {
+          "scene": "Back",
+          "seconds": 15.95
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 16.79
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-390-pawly",
+      "lang": "ru",
+      "width": 390,
+      "slug": "pawly",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.19
+        },
+        {
+          "scene": "work-stage work-stage--pawly",
+          "seconds": 3.56
+        },
+        {
+          "scene": "case-plate case-plate--light",
+          "seconds": 5.7
+        },
+        {
+          "scene": "case-steps · ,,",
+          "seconds": 7.08
+        },
+        {
+          "scene": "case-next",
+          "seconds": 13.02
+        },
+        {
+          "scene": "page end",
+          "seconds": 13.78
+        },
+        {
+          "scene": "Next",
+          "seconds": 14.64
+        },
+        {
+          "scene": "Back",
+          "seconds": 15.66
+        },
+        {
+          "scene": "reverse reading",
+          "seconds": 16.48
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

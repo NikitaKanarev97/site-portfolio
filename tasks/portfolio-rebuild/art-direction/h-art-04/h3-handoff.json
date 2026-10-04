@@ -1,0 +1,58 @@
+{
+  "stage": "H-art-direction",
+  "iteration": "H-art-03",
+  "status": "ready_for_visual_review",
+  "sourceRef": "7e2ae63c80008977f6974fdb6d4c985231ea3e8c",
+  "codeRef": "7e2ae63c80008977f6974fdb6d4c985231ea3e8c",
+  "previousEvidenceRef": "4e3b9b8bf19a14239c039c0ed757aa7545604682",
+  "baseRef": "c0c69040801d60bcfc836f6728f2ae806911be1d",
+  "checkout": "C:/Users/kanar/.codex/worktrees/portfolio-art-direction-h/Site-portfolio",
+  "branch": "codex/portfolio-art-direction-h-2026-10-04",
+  "evidenceRefResolver": "git log -1 --format=%H -- tasks/portfolio-rebuild/art-direction",
+  "previews": {
+    "en": "http://127.0.0.1:4394/",
+    "ru": "http://127.0.0.1:4394/ru/",
+    "review": "http://127.0.0.1:4396/art-review.html"
+  },
+  "ownerFeedback": [
+    "CROP: padded complete native screenshots",
+    "RADIUS: consistent portfolio shell",
+    "ZOOM: real lightbox and text block across both locales",
+    "PERSISTENCE: rule saved in CLAUDE and DS"
+  ],
+  "checks": {
+    "sourceRef": "7e2ae63c80008977f6974fdb6d4c985231ea3e8c",
+    "previousEvidenceRef": "4e3b9b8bf19a14239c039c0ed757aa7545604682",
+    "baseRef": "c0c69040801d60bcfc836f6728f2ae806911be1d",
+    "primaryProfiles": 144,
+    "lightboxOpenings": 314,
+    "lifecycle": 4,
+    "finalLightboxProfiles": 24,
+    "finalLightboxFailures": 0,
+    "followupProfiles": 11,
+    "focusedSceneCaptures": 16,
+    "focusedSceneOverflow": 0,
+    "videoProfiles": 4,
+    "videoFailures": 0,
+    "galleryCombinations": 24,
+    "galleryMissingAssets": 0,
+    "unresolved": 0,
+    "pngCount": 113,
+    "mirrors": {
+      "tokens": {
+        "equal": true,
+        "sha256": "47f89e88a2796834e9ef45d4c473a0411d7ec58e9fd366dd30d77adc9611b832"
+      },
+      "motion": {
+        "equal": true,
+        "sha256": "3136db057ba7629c550544cf7a4951bb9bf5d118272dce9ea37b191021eb952f"
+      }
+    },
+    "unchangedStoryAndMedia": true,
+    "changes": "",
+    "independentArtAcceptance": "pending_owner_or_controller"
+  },
+  "previousReview": "H2 self-assessment superseded by direct owner feedback",
+  "independentAcceptance": "pending",
+  "requiredControllerAction": "Review current H3 gallery and source; integrate through existing controller flow. Root remains controller-owned."
+}

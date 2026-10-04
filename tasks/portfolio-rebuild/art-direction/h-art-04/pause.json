@@ -1,0 +1,75 @@
+{
+  "stage": "H-art-direction",
+  "iteration": "H-art-04",
+  "status": "paused_by_owner_pending_technical_handoff",
+  "sourceRef": "3cf9c54de09f77b4b496328af2c8b5f2f6e2af4c",
+  "codeRef": "3cf9c54de09f77b4b496328af2c8b5f2f6e2af4c",
+  "previousEvidenceRef": "df04416637063522a9a240a40405a7103e1add8b",
+  "baseRef": "c0c69040801d60bcfc836f6728f2ae806911be1d",
+  "checkout": "C:/Users/kanar/.codex/worktrees/portfolio-art-direction-h/Site-portfolio",
+  "branch": "codex/portfolio-art-direction-h-2026-10-04",
+  "ownerPauseEvidence": {
+    "threadId": "01a10832-8a18-72d1-8d57-2cbe1fca8702",
+    "threadTitle": "Исправить карточки и анимации кейсов",
+    "verified": "Direct human user message read, not merely delegated assertion",
+    "instruction": "Сначала исправить технические ошибки, пока поставить визуальную задачу на паузу; после технического handoff продолжить её с исправленной базой."
+  },
+  "previews": {
+    "en": "http://127.0.0.1:4395/",
+    "ru": "http://127.0.0.1:4395/ru/",
+    "review": "http://127.0.0.1:4396/art-review-h4.html",
+    "frozenH3": "http://127.0.0.1:4394/"
+  },
+  "changedFiles": [
+    "ds/components.md",
+    "ds/foundation.md",
+    "ds/motion-concept.md",
+    "ds/patterns.md",
+    "ds/screens/home.md",
+    "src/components/FeaturedCase.astro",
+    "src/components/VetStage.astro",
+    "src/components/WorkStage.astro",
+    "src/copy/home.ts",
+    "src/copy/ru/home.ts",
+    "src/pages/index.astro"
+  ],
+  "checks": {
+    "primaryProfiles": 64,
+    "homeLightboxes": 44,
+    "primaryRawFlags": 8,
+    "followupProfiles": 8,
+    "reason": "Four Pawly entries are video carriers without img; verified native controls, play/pause and full ratio separately. Four Vet entries opened a lazy image in a disclosure at the end of the scan without bringing it into view; every current disclosure image was brought into view, decoded, and final complete captures refreshed. Original raw flags retained.",
+    "unresolved": 0,
+    "buildRoutes": 36,
+    "astroCheck": {
+      "files": 125,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 262
+    },
+    "css": "Repository checker, isolated dist-h4 path; 0 dead scoped rules",
+    "harmonyProfiles": 16,
+    "harmonyViolations": 0,
+    "nativeWalkthroughs": 24,
+    "walkthroughErrors": 0
+  },
+  "selfAssessment": {
+    "question": "Вызывает ли теперь вау-эффект? Это классно, круто, мощно, на уровне присланных референсов?",
+    "answer": "Уверенного Да пока не заявлено. H4 улучшает первый экран и ритм; полный художественный просмотр прерван прямой паузой владельца ради технических исправлений.",
+    "status": "paused_before_final_art_review"
+  },
+  "independentAcceptance": "pending",
+  "ownership": "Art source frozen. Technical executor may use this same checkout/branch after pause evidence checkpoint; no reset/clean or replacement by older root checkout. Sequential ownership of src/ and relevant ds/. H owns only this pause artifact while finalizing it.",
+  "technicalScope": [
+    "Home hero meaning and case click target",
+    "Agent caption overlap and scene transitions",
+    "Portal/Learn callout numbers in explanations",
+    "Learn native captures, inner blue fields, specimens, assessment and landing",
+    "Pawly carousel composition/navigation",
+    "CaseNext marquee clipping",
+    "Desktop/tablet/mobile smoothness"
+  ],
+  "resumeCondition": "Verified technical handoff on this H4 base. Continue the same G/H art work; do not restart B–F or duplicate the timer.",
+  "requiredControllerAction": "Respect direct owner technical pause, keep overall chain unfinished, consume technical handoff before resuming H and its final independent review.",
+  "evidenceRefResolver": "git log -1 --format=%H -- tasks/portfolio-rebuild/art-direction/h-art-04/pause.json"
+}
