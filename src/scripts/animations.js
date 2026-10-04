@@ -35,6 +35,10 @@ gsap.registerPlugin(ScrollTrigger, SplitText, CustomEase);
 CustomEase.create(motion.lines.ease, motion.lines.curve);
 if (import.meta.env.DEV) {
   window.__dsMotionDebug = () => ({ triggers: ScrollTrigger.getAll().length,
+    reading: { scene: focusReadingSnapshot?.step?.dataset.scene, index: focusReadingSnapshot?.index,
+      progress: focusReadingSnapshot?.progress, observing: Boolean(focusReadingObserver), y: focusReadingY },
+    focusScenes: ScrollTrigger.getAll().filter(scene => scene.trigger?.matches('[data-motion="focus-stage"]'))
+      .map(scene => ({ start: scene.start, end: scene.end, progress: scene.progress, active: scene.isActive })),
     pins: ScrollTrigger.getAll().filter(scene => scene.pin).length,
     marquees: Array.from(document.querySelectorAll('[data-motion="marquee"]')).map(track => ({
       triggers: ScrollTrigger.getAll().filter(scene => scene.trigger === track.parentElement).map(scene => ({ active: scene.isActive, start: scene.start, end: scene.end })),
@@ -55,16 +59,42 @@ const TRIGGER_START = 'top 85%';
 let focusReadingSnapshot = null;
 let focusReadingTimer = null;
 let focusReadingFrame = null;
+let focusReadingObserver = null;
+let focusReadingTarget = null;
+let focusReadingY = null;
+let focusReadingSize = null;
+let focusReadingEpoch = 0;
 function cancelFocusReading() {
+  focusReadingEpoch += 1;
   clearTimeout(focusReadingTimer);
   cancelAnimationFrame(focusReadingFrame);
   focusReadingTimer = focusReadingFrame = null;
+  focusReadingObserver?.disconnect();
+  focusReadingObserver = focusReadingTarget = focusReadingY = focusReadingSize = null;
+}
+function rememberFocusReading(list, scene, steps = Array.from(list.querySelectorAll('[data-focus-state]'))) {
+  const cfg = motion.focusStage;
+  const progress = scene.progress * (steps.length - 1);
+  const index = Math.min(steps.length - 1, Math.floor(progress + 1 - cfg.hold));
+  focusReadingSnapshot = { list, step: steps[index], index, progress, enhanced: true,
+    y: scrollY, start: scene.start, end: scene.end,
+    top: cfg.inset + list.querySelector('.case-steps__stage').getBoundingClientRect().top - list.getBoundingClientRect().top };
 }
 function restoreFocusReading(snapshot) {
   if (!snapshot?.list.isConnected) return;
   cancelFocusReading();
+  const epoch = focusReadingEpoch;
   const apply = () => {
-    if (!snapshot.list.isConnected) return;
+    if (epoch !== focusReadingEpoch) return;
+    if (!snapshot.list.isConnected) { cancelFocusReading(); return; }
+    if (focusReadingY != null && Math.abs(scrollY - focusReadingY) > 1) {
+      const scene = ScrollTrigger.getAll().find(scene => scene.trigger === snapshot.list && scene.pin);
+      const rect = focusReadingTarget.getBoundingClientRect();
+      const leftMaterial = scene ? scrollY < scene.start || scrollY > scene.end
+        : rect.bottom <= 0 || rect.top >= innerHeight;
+      // A native/programmatic navigation can leave the stage before scroll is delivered.
+      if (leftMaterial) { cancelFocusReading(); return; }
+    }
     let material = snapshot.step;
     if (snapshot.index != null && getComputedStyle(material).display === 'none') {
       material = Array.from(snapshot.list.querySelectorAll('[data-focus-state]')).slice(0, snapshot.index).reverse()
@@ -77,13 +107,27 @@ function restoreFocusReading(snapshot) {
     } else {
       y = material.getBoundingClientRect().top + scrollY - snapshot.top;
     }
+    focusReadingTarget = material;
+    const rect = material.getBoundingClientRect(), listRect = snapshot.list.getBoundingClientRect();
+    focusReadingSize = [rect.width, rect.height, listRect.width, listRect.height];
+    focusReadingY = Math.round(y);
     window.scrollTo(0, y);
     ScrollTrigger.update();
-    if (!snapshot.list.classList.contains('is-focused')) {
+    if (snapshot.list.classList.contains('is-focused')) {
+      const scene = ScrollTrigger.getAll().find(scene => scene.trigger === snapshot.list && scene.pin);
+      focusReadingSnapshot = { ...snapshot, step: material, enhanced: true, y,
+        progress: scene ? scene.progress * (snapshot.list.querySelectorAll('[data-focus-state]').length - 1) : snapshot.progress,
+        start: scene?.start, end: scene?.end, top: material.getBoundingClientRect().top };
+    } else {
       focusReadingSnapshot = { ...snapshot, step: material, progress: null, enhanced: false, y,
         top: material.getBoundingClientRect().top };
     }
   };
+  // Reverted panels can change size after the fixed reflow wait. Keep this
+  // material anchored until the reader moves; never capture an intermediate panel.
+  focusReadingObserver = new ResizeObserver(apply);
+  focusReadingObserver.observe(snapshot.list);
+  focusReadingObserver.observe(snapshot.step);
   focusReadingFrame = requestAnimationFrame(() => {
     focusReadingFrame = null;
     apply();
@@ -98,8 +142,17 @@ window.addEventListener('resize', () => restoreFocusReading(focusReadingSnapshot
 window.addEventListener('scroll', () => {
   const list = document.querySelector('[data-motion="focus-stage"]');
   if (!list) return;
+  if (focusReadingObserver) {
+    if (focusReadingY == null || Math.abs(scrollY - focusReadingY) <= 1) return;
+    const rect = focusReadingTarget.getBoundingClientRect(), listRect = list.getBoundingClientRect();
+    const size = [rect.width, rect.height, listRect.width, listRect.height];
+    if (size.some((value, i) => Math.abs(value - focusReadingSize[i]) > 0.5)) return;
+    // A new scroll without a geometry change belongs to the reader/native navigation.
+    cancelFocusReading();
+  }
   if (list.classList.contains('is-focused')) {
-    if (focusReadingSnapshot?.enhanced && scrollY >= focusReadingSnapshot.start && scrollY <= focusReadingSnapshot.end) return;
+    const scene = ScrollTrigger.getAll().find(scene => scene.trigger === list && scene.pin);
+    if (scene?.isActive) { rememberFocusReading(list, scene); return; }
     const stable = Array.from(document.querySelectorAll('.case-sheet > section:not(:has([data-motion="focus-stage"])), .case-next, .contact')).find(el => {
       const r = el.getBoundingClientRect(); return r.top <= innerHeight / 2 && r.bottom > innerHeight / 2;
     });
@@ -437,11 +490,8 @@ function buildCaseScenes(root, settled = false) {
         refreshPriority: 1,
         end: () => `+=${cfg.distance * (steps.length - 1)}`, scrub: cfg.scrub, invalidateOnRefresh: true,
         onUpdate: self => {
-          if (!self.isActive) return;
-          const progress = self.progress * (steps.length - 1);
-          const index = Math.min(steps.length - 1, Math.floor(progress + 1 - cfg.hold));
-          focusReadingSnapshot = { list, step: steps[index], index, progress, enhanced: true, y: window.scrollY, start: self.start, end: self.end,
-            top: cfg.inset + list.querySelector('.case-steps__stage').getBoundingClientRect().top - list.getBoundingClientRect().top };
+          if (!self.isActive || focusReadingObserver) return;
+          rememberFocusReading(list, self, steps);
         },
       } });
       if (checkpoint) tl.to(list.querySelector('.case-steps__field-bleed'), {
