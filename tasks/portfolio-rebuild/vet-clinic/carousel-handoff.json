@@ -1,0 +1,1335 @@
+{
+  "baseCommit": "4919971ab2a75135fd4efa4a332a998eed292c0f",
+  "method": "Warm source images; native stop; eight stable animation frames with JS, eight external layout polls with no-JS; viewport screenshots and page-bitmap chapter crop; no element screenshot on carousel",
+  "results": [
+    {
+      "locale": "en",
+      "mode": "reduce",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "errors": [],
+      "stops": [
+        {
+          "name": "draft",
+          "before": {
+            "scrollLeft": 0,
+            "maxScroll": 585,
+            "index": "1",
+            "expectedIndex": 1,
+            "track": {
+              "x": 24,
+              "y": 84.328125,
+              "width": 366,
+              "height": 649.359375,
+              "right": 390,
+              "bottom": 733.6875
+            },
+            "slide": {
+              "x": 24,
+              "y": 84.328125,
+              "width": 300.953125,
+              "height": 649.359375,
+              "right": 324.953125,
+              "bottom": 733.6875
+            },
+            "image": {
+              "x": 40,
+              "y": 100.328125,
+              "width": 268.953125,
+              "height": 417.21875,
+              "right": 308.953125,
+              "bottom": 517.546875
+            },
+            "caption": {
+              "x": 24,
+              "y": 545.546875,
+              "width": 300.953125,
+              "height": 22.390625,
+              "right": 324.953125,
+              "bottom": 567.9375
+            },
+            "captionText": "Unsaved edits live only in this form.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/draft-en-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          },
+          "after": {
+            "scrollLeft": 0,
+            "maxScroll": 585,
+            "index": "1",
+            "expectedIndex": 1,
+            "track": {
+              "x": 24,
+              "y": 84.328125,
+              "width": 366,
+              "height": 649.359375,
+              "right": 390,
+              "bottom": 733.6875
+            },
+            "slide": {
+              "x": 24,
+              "y": 84.328125,
+              "width": 300.953125,
+              "height": 649.359375,
+              "right": 324.953125,
+              "bottom": 733.6875
+            },
+            "image": {
+              "x": 40,
+              "y": 100.328125,
+              "width": 268.953125,
+              "height": 417.21875,
+              "right": 308.953125,
+              "bottom": 517.546875
+            },
+            "caption": {
+              "x": 24,
+              "y": 545.546875,
+              "width": 300.953125,
+              "height": 22.390625,
+              "right": 324.953125,
+              "bottom": 567.9375
+            },
+            "captionText": "Unsaved edits live only in this form.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/draft-en-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        },
+        {
+          "name": "saved",
+          "before": {
+            "scrollLeft": 325,
+            "maxScroll": 585,
+            "index": "2",
+            "expectedIndex": 2,
+            "track": {
+              "x": 24,
+              "y": 84.328125,
+              "width": 366,
+              "height": 649.359375,
+              "right": 390,
+              "bottom": 733.6875
+            },
+            "slide": {
+              "x": 23.953125,
+              "y": 84.328125,
+              "width": 300.953125,
+              "height": 649.359375,
+              "right": 324.90625,
+              "bottom": 733.6875
+            },
+            "image": {
+              "x": 39.953125,
+              "y": 100.328125,
+              "width": 268.953125,
+              "height": 417.21875,
+              "right": 308.90625,
+              "bottom": 517.546875
+            },
+            "caption": {
+              "x": 23.953125,
+              "y": 545.546875,
+              "width": 300.953125,
+              "height": 22.390625,
+              "right": 324.90625,
+              "bottom": 567.9375
+            },
+            "captionText": "Save survives reload; it does not publish.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/saved-en-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          },
+          "after": {
+            "scrollLeft": 325,
+            "maxScroll": 585,
+            "index": "2",
+            "expectedIndex": 2,
+            "track": {
+              "x": 24,
+              "y": 84.328125,
+              "width": 366,
+              "height": 649.359375,
+              "right": 390,
+              "bottom": 733.6875
+            },
+            "slide": {
+              "x": 23.953125,
+              "y": 84.328125,
+              "width": 300.953125,
+              "height": 649.359375,
+              "right": 324.90625,
+              "bottom": 733.6875
+            },
+            "image": {
+              "x": 39.953125,
+              "y": 100.328125,
+              "width": 268.953125,
+              "height": 417.21875,
+              "right": 308.90625,
+              "bottom": 517.546875
+            },
+            "caption": {
+              "x": 23.953125,
+              "y": 545.546875,
+              "width": 300.953125,
+              "height": 22.390625,
+              "right": 324.90625,
+              "bottom": 567.9375
+            },
+            "captionText": "Save survives reload; it does not publish.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/saved-en-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        },
+        {
+          "name": "published",
+          "before": {
+            "scrollLeft": 585,
+            "maxScroll": 585,
+            "index": "3",
+            "expectedIndex": 3,
+            "track": {
+              "x": 24,
+              "y": 84.328125,
+              "width": 366,
+              "height": 649.359375,
+              "right": 390,
+              "bottom": 733.6875
+            },
+            "slide": {
+              "x": 88.90625,
+              "y": 84.328125,
+              "width": 300.953125,
+              "height": 649.359375,
+              "right": 389.859375,
+              "bottom": 733.6875
+            },
+            "image": {
+              "x": 104.90625,
+              "y": 100.328125,
+              "width": 268.953125,
+              "height": 582.96875,
+              "right": 373.859375,
+              "bottom": 683.296875
+            },
+            "caption": {
+              "x": 88.90625,
+              "y": 711.296875,
+              "width": 300.953125,
+              "height": 22.390625,
+              "right": 389.859375,
+              "bottom": 733.6875
+            },
+            "captionText": "The owner still reads the published snapshot.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/publication-en-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          },
+          "after": {
+            "scrollLeft": 585,
+            "maxScroll": 585,
+            "index": "3",
+            "expectedIndex": 3,
+            "track": {
+              "x": 24,
+              "y": 84.328125,
+              "width": 366,
+              "height": 649.359375,
+              "right": 390,
+              "bottom": 733.6875
+            },
+            "slide": {
+              "x": 88.90625,
+              "y": 84.328125,
+              "width": 300.953125,
+              "height": 649.359375,
+              "right": 389.859375,
+              "bottom": 733.6875
+            },
+            "image": {
+              "x": 104.90625,
+              "y": 100.328125,
+              "width": 268.953125,
+              "height": 582.96875,
+              "right": 373.859375,
+              "bottom": 683.296875
+            },
+            "caption": {
+              "x": 88.90625,
+              "y": 711.296875,
+              "width": 300.953125,
+              "height": 22.390625,
+              "right": 389.859375,
+              "bottom": 733.6875
+            },
+            "captionText": "The owner still reads the published snapshot.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/publication-en-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        }
+      ],
+      "fullPage": {
+        "before": {
+          "scrollLeft": 0,
+          "maxScroll": 585,
+          "index": "1",
+          "expectedIndex": 1,
+          "track": {
+            "x": 24,
+            "y": 9425.328125,
+            "width": 366,
+            "height": 649.359375,
+            "right": 390,
+            "bottom": 10074.6875
+          },
+          "slide": {
+            "x": 24,
+            "y": 9425.328125,
+            "width": 300.953125,
+            "height": 649.359375,
+            "right": 324.953125,
+            "bottom": 10074.6875
+          },
+          "image": {
+            "x": 40,
+            "y": 9441.328125,
+            "width": 268.953125,
+            "height": 417.21875,
+            "right": 308.953125,
+            "bottom": 9858.546875
+          },
+          "caption": {
+            "x": 24,
+            "y": 9886.546875,
+            "width": 300.953125,
+            "height": 22.390625,
+            "right": 324.953125,
+            "bottom": 9908.9375
+          },
+          "captionText": "Unsaved edits live only in this form.",
+          "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/draft-en-narrow.webp",
+          "loaded": true,
+          "wholeHorizontal": true,
+          "wholeMaterialInViewport": false
+        },
+        "after": {
+          "scrollLeft": 0,
+          "maxScroll": 585,
+          "index": "1",
+          "expectedIndex": 1,
+          "track": {
+            "x": 24,
+            "y": 9425.328125,
+            "width": 366,
+            "height": 649.359375,
+            "right": 390,
+            "bottom": 10074.6875
+          },
+          "slide": {
+            "x": 24,
+            "y": 9425.328125,
+            "width": 300.953125,
+            "height": 649.359375,
+            "right": 324.953125,
+            "bottom": 10074.6875
+          },
+          "image": {
+            "x": 40,
+            "y": 9441.328125,
+            "width": 268.953125,
+            "height": 417.21875,
+            "right": 308.953125,
+            "bottom": 9858.546875
+          },
+          "caption": {
+            "x": 24,
+            "y": 9886.546875,
+            "width": 300.953125,
+            "height": 22.390625,
+            "right": 324.953125,
+            "bottom": 9908.9375
+          },
+          "captionText": "Unsaved edits live only in this form.",
+          "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/draft-en-narrow.webp",
+          "loaded": true,
+          "wholeHorizontal": true,
+          "wholeMaterialInViewport": false
+        }
+      }
+    },
+    {
+      "locale": "ru",
+      "mode": "reduce",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "errors": [],
+      "stops": [
+        {
+          "name": "draft",
+          "before": {
+            "scrollLeft": 0,
+            "maxScroll": 585,
+            "index": "1",
+            "expectedIndex": 1,
+            "track": {
+              "x": 24,
+              "y": 84.234375,
+              "width": 366,
+              "height": 689.78125,
+              "right": 390,
+              "bottom": 774.015625
+            },
+            "slide": {
+              "x": 24,
+              "y": 84.234375,
+              "width": 300.953125,
+              "height": 689.78125,
+              "right": 324.953125,
+              "bottom": 774.015625
+            },
+            "image": {
+              "x": 40,
+              "y": 100.234375,
+              "width": 268.953125,
+              "height": 417.21875,
+              "right": 308.953125,
+              "bottom": 517.453125
+            },
+            "caption": {
+              "x": 24,
+              "y": 545.453125,
+              "width": 300.953125,
+              "height": 44.78125,
+              "right": 324.953125,
+              "bottom": 590.234375
+            },
+            "captionText": "Несохранённые правки живут только в этой форме.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/draft-ru-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          },
+          "after": {
+            "scrollLeft": 0,
+            "maxScroll": 585,
+            "index": "1",
+            "expectedIndex": 1,
+            "track": {
+              "x": 24,
+              "y": 84.234375,
+              "width": 366,
+              "height": 689.78125,
+              "right": 390,
+              "bottom": 774.015625
+            },
+            "slide": {
+              "x": 24,
+              "y": 84.234375,
+              "width": 300.953125,
+              "height": 689.78125,
+              "right": 324.953125,
+              "bottom": 774.015625
+            },
+            "image": {
+              "x": 40,
+              "y": 100.234375,
+              "width": 268.953125,
+              "height": 417.21875,
+              "right": 308.953125,
+              "bottom": 517.453125
+            },
+            "caption": {
+              "x": 24,
+              "y": 545.453125,
+              "width": 300.953125,
+              "height": 44.78125,
+              "right": 324.953125,
+              "bottom": 590.234375
+            },
+            "captionText": "Несохранённые правки живут только в этой форме.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/draft-ru-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        },
+        {
+          "name": "saved",
+          "before": {
+            "scrollLeft": 325,
+            "maxScroll": 585,
+            "index": "2",
+            "expectedIndex": 2,
+            "track": {
+              "x": 24,
+              "y": 84.234375,
+              "width": 366,
+              "height": 689.78125,
+              "right": 390,
+              "bottom": 774.015625
+            },
+            "slide": {
+              "x": 23.953125,
+              "y": 84.234375,
+              "width": 300.953125,
+              "height": 689.78125,
+              "right": 324.90625,
+              "bottom": 774.015625
+            },
+            "image": {
+              "x": 39.953125,
+              "y": 100.234375,
+              "width": 268.953125,
+              "height": 417.21875,
+              "right": 308.90625,
+              "bottom": 517.453125
+            },
+            "caption": {
+              "x": 23.953125,
+              "y": 545.453125,
+              "width": 300.953125,
+              "height": 44.78125,
+              "right": 324.90625,
+              "bottom": 590.234375
+            },
+            "captionText": "Сохранение переживает перезагрузку, но не публикует.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/saved-ru-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          },
+          "after": {
+            "scrollLeft": 325,
+            "maxScroll": 585,
+            "index": "2",
+            "expectedIndex": 2,
+            "track": {
+              "x": 24,
+              "y": 84.234375,
+              "width": 366,
+              "height": 689.78125,
+              "right": 390,
+              "bottom": 774.015625
+            },
+            "slide": {
+              "x": 23.953125,
+              "y": 84.234375,
+              "width": 300.953125,
+              "height": 689.78125,
+              "right": 324.90625,
+              "bottom": 774.015625
+            },
+            "image": {
+              "x": 39.953125,
+              "y": 100.234375,
+              "width": 268.953125,
+              "height": 417.21875,
+              "right": 308.90625,
+              "bottom": 517.453125
+            },
+            "caption": {
+              "x": 23.953125,
+              "y": 545.453125,
+              "width": 300.953125,
+              "height": 44.78125,
+              "right": 324.90625,
+              "bottom": 590.234375
+            },
+            "captionText": "Сохранение переживает перезагрузку, но не публикует.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/saved-ru-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        },
+        {
+          "name": "published",
+          "before": {
+            "scrollLeft": 585,
+            "maxScroll": 585,
+            "index": "3",
+            "expectedIndex": 3,
+            "track": {
+              "x": 24,
+              "y": 84.234375,
+              "width": 366,
+              "height": 689.78125,
+              "right": 390,
+              "bottom": 774.015625
+            },
+            "slide": {
+              "x": 88.90625,
+              "y": 84.234375,
+              "width": 300.953125,
+              "height": 689.78125,
+              "right": 389.859375,
+              "bottom": 774.015625
+            },
+            "image": {
+              "x": 104.90625,
+              "y": 100.234375,
+              "width": 268.953125,
+              "height": 601,
+              "right": 373.859375,
+              "bottom": 701.234375
+            },
+            "caption": {
+              "x": 88.90625,
+              "y": 729.234375,
+              "width": 300.953125,
+              "height": 44.78125,
+              "right": 389.859375,
+              "bottom": 774.015625
+            },
+            "captionText": "Владелец всё ещё читает опубликованный снимок.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/publication-ru-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          },
+          "after": {
+            "scrollLeft": 585,
+            "maxScroll": 585,
+            "index": "3",
+            "expectedIndex": 3,
+            "track": {
+              "x": 24,
+              "y": 84.234375,
+              "width": 366,
+              "height": 689.78125,
+              "right": 390,
+              "bottom": 774.015625
+            },
+            "slide": {
+              "x": 88.90625,
+              "y": 84.234375,
+              "width": 300.953125,
+              "height": 689.78125,
+              "right": 389.859375,
+              "bottom": 774.015625
+            },
+            "image": {
+              "x": 104.90625,
+              "y": 100.234375,
+              "width": 268.953125,
+              "height": 601,
+              "right": 373.859375,
+              "bottom": 701.234375
+            },
+            "caption": {
+              "x": 88.90625,
+              "y": 729.234375,
+              "width": 300.953125,
+              "height": 44.78125,
+              "right": 389.859375,
+              "bottom": 774.015625
+            },
+            "captionText": "Владелец всё ещё читает опубликованный снимок.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/publication-ru-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        }
+      ],
+      "fullPage": {
+        "before": {
+          "scrollLeft": 0,
+          "maxScroll": 585,
+          "index": "1",
+          "expectedIndex": 1,
+          "track": {
+            "x": 24,
+            "y": 9472.234375,
+            "width": 366,
+            "height": 689.78125,
+            "right": 390,
+            "bottom": 10162.015625
+          },
+          "slide": {
+            "x": 24,
+            "y": 9472.234375,
+            "width": 300.953125,
+            "height": 689.78125,
+            "right": 324.953125,
+            "bottom": 10162.015625
+          },
+          "image": {
+            "x": 40,
+            "y": 9488.234375,
+            "width": 268.953125,
+            "height": 417.21875,
+            "right": 308.953125,
+            "bottom": 9905.453125
+          },
+          "caption": {
+            "x": 24,
+            "y": 9933.453125,
+            "width": 300.953125,
+            "height": 44.78125,
+            "right": 324.953125,
+            "bottom": 9978.234375
+          },
+          "captionText": "Несохранённые правки живут только в этой форме.",
+          "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/draft-ru-narrow.webp",
+          "loaded": true,
+          "wholeHorizontal": true,
+          "wholeMaterialInViewport": false
+        },
+        "after": {
+          "scrollLeft": 0,
+          "maxScroll": 585,
+          "index": "1",
+          "expectedIndex": 1,
+          "track": {
+            "x": 24,
+            "y": 9472.234375,
+            "width": 366,
+            "height": 689.78125,
+            "right": 390,
+            "bottom": 10162.015625
+          },
+          "slide": {
+            "x": 24,
+            "y": 9472.234375,
+            "width": 300.953125,
+            "height": 689.78125,
+            "right": 324.953125,
+            "bottom": 10162.015625
+          },
+          "image": {
+            "x": 40,
+            "y": 9488.234375,
+            "width": 268.953125,
+            "height": 417.21875,
+            "right": 308.953125,
+            "bottom": 9905.453125
+          },
+          "caption": {
+            "x": 24,
+            "y": 9933.453125,
+            "width": 300.953125,
+            "height": 44.78125,
+            "right": 324.953125,
+            "bottom": 9978.234375
+          },
+          "captionText": "Несохранённые правки живут только в этой форме.",
+          "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/draft-ru-narrow.webp",
+          "loaded": true,
+          "wholeHorizontal": true,
+          "wholeMaterialInViewport": false
+        }
+      }
+    },
+    {
+      "locale": "en",
+      "mode": "normal",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "errors": [],
+      "stops": [
+        {
+          "name": "draft",
+          "state": {
+            "scrollLeft": 0,
+            "maxScroll": 585,
+            "index": "1",
+            "expectedIndex": 1,
+            "track": {
+              "x": 24,
+              "y": 84.125,
+              "width": 366,
+              "height": 649.359375,
+              "right": 390,
+              "bottom": 733.484375
+            },
+            "slide": {
+              "x": 24,
+              "y": 84.125,
+              "width": 300.953125,
+              "height": 649.359375,
+              "right": 324.953125,
+              "bottom": 733.484375
+            },
+            "image": {
+              "x": 40,
+              "y": 100.125,
+              "width": 268.953125,
+              "height": 417.21875,
+              "right": 308.953125,
+              "bottom": 517.34375
+            },
+            "caption": {
+              "x": 24,
+              "y": 545.34375,
+              "width": 300.953125,
+              "height": 22.390625,
+              "right": 324.953125,
+              "bottom": 567.734375
+            },
+            "captionText": "Unsaved edits live only in this form.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/draft-en-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        },
+        {
+          "name": "saved",
+          "state": {
+            "scrollLeft": 325,
+            "maxScroll": 585,
+            "index": "2",
+            "expectedIndex": 2,
+            "track": {
+              "x": 24,
+              "y": 84.125,
+              "width": 366,
+              "height": 649.359375,
+              "right": 390,
+              "bottom": 733.484375
+            },
+            "slide": {
+              "x": 23.953125,
+              "y": 84.125,
+              "width": 300.953125,
+              "height": 649.359375,
+              "right": 324.90625,
+              "bottom": 733.484375
+            },
+            "image": {
+              "x": 39.953125,
+              "y": 100.125,
+              "width": 268.953125,
+              "height": 417.21875,
+              "right": 308.90625,
+              "bottom": 517.34375
+            },
+            "caption": {
+              "x": 23.953125,
+              "y": 545.34375,
+              "width": 300.953125,
+              "height": 22.390625,
+              "right": 324.90625,
+              "bottom": 567.734375
+            },
+            "captionText": "Save survives reload; it does not publish.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/saved-en-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        },
+        {
+          "name": "published",
+          "state": {
+            "scrollLeft": 585,
+            "maxScroll": 585,
+            "index": "3",
+            "expectedIndex": 3,
+            "track": {
+              "x": 24,
+              "y": 84.125,
+              "width": 366,
+              "height": 649.359375,
+              "right": 390,
+              "bottom": 733.484375
+            },
+            "slide": {
+              "x": 88.90625,
+              "y": 84.125,
+              "width": 300.953125,
+              "height": 649.359375,
+              "right": 389.859375,
+              "bottom": 733.484375
+            },
+            "image": {
+              "x": 104.90625,
+              "y": 100.125,
+              "width": 268.953125,
+              "height": 582.96875,
+              "right": 373.859375,
+              "bottom": 683.09375
+            },
+            "caption": {
+              "x": 88.90625,
+              "y": 711.09375,
+              "width": 300.953125,
+              "height": 22.390625,
+              "right": 389.859375,
+              "bottom": 733.484375
+            },
+            "captionText": "The owner still reads the published snapshot.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/publication-en-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        }
+      ]
+    },
+    {
+      "locale": "en",
+      "mode": "no-JS",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "errors": [],
+      "stops": [
+        {
+          "name": "draft",
+          "state": {
+            "scrollLeft": 0,
+            "maxScroll": 585,
+            "index": null,
+            "expectedIndex": 1,
+            "track": {
+              "x": 24,
+              "y": 24.328125,
+              "width": 366,
+              "height": 649.359375,
+              "right": 390,
+              "bottom": 673.6875
+            },
+            "slide": {
+              "x": 24,
+              "y": 24.328125,
+              "width": 300.953125,
+              "height": 649.359375,
+              "right": 324.953125,
+              "bottom": 673.6875
+            },
+            "image": {
+              "x": 40,
+              "y": 40.328125,
+              "width": 268.953125,
+              "height": 417.21875,
+              "right": 308.953125,
+              "bottom": 457.546875
+            },
+            "caption": {
+              "x": 24,
+              "y": 485.546875,
+              "width": 300.953125,
+              "height": 22.390625,
+              "right": 324.953125,
+              "bottom": 507.9375
+            },
+            "captionText": "Unsaved edits live only in this form.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/draft-en-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        },
+        {
+          "name": "saved",
+          "state": {
+            "scrollLeft": 325,
+            "maxScroll": 585,
+            "index": null,
+            "expectedIndex": 2,
+            "track": {
+              "x": 24,
+              "y": 24.328125,
+              "width": 366,
+              "height": 649.359375,
+              "right": 390,
+              "bottom": 673.6875
+            },
+            "slide": {
+              "x": 23.953125,
+              "y": 24.328125,
+              "width": 300.953125,
+              "height": 649.359375,
+              "right": 324.90625,
+              "bottom": 673.6875
+            },
+            "image": {
+              "x": 39.953125,
+              "y": 40.328125,
+              "width": 268.953125,
+              "height": 417.21875,
+              "right": 308.90625,
+              "bottom": 457.546875
+            },
+            "caption": {
+              "x": 23.953125,
+              "y": 485.546875,
+              "width": 300.953125,
+              "height": 22.390625,
+              "right": 324.90625,
+              "bottom": 507.9375
+            },
+            "captionText": "Save survives reload; it does not publish.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/saved-en-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        },
+        {
+          "name": "published",
+          "state": {
+            "scrollLeft": 585,
+            "maxScroll": 585,
+            "index": null,
+            "expectedIndex": 3,
+            "track": {
+              "x": 24,
+              "y": 24.328125,
+              "width": 366,
+              "height": 649.359375,
+              "right": 390,
+              "bottom": 673.6875
+            },
+            "slide": {
+              "x": 88.90625,
+              "y": 24.328125,
+              "width": 300.953125,
+              "height": 649.359375,
+              "right": 389.859375,
+              "bottom": 673.6875
+            },
+            "image": {
+              "x": 104.90625,
+              "y": 40.328125,
+              "width": 268.953125,
+              "height": 582.96875,
+              "right": 373.859375,
+              "bottom": 623.296875
+            },
+            "caption": {
+              "x": 88.90625,
+              "y": 651.296875,
+              "width": 300.953125,
+              "height": 22.390625,
+              "right": 389.859375,
+              "bottom": 673.6875
+            },
+            "captionText": "The owner still reads the published snapshot.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/publication-en-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        }
+      ]
+    },
+    {
+      "locale": "ru",
+      "mode": "normal",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "errors": [],
+      "stops": [
+        {
+          "name": "draft",
+          "state": {
+            "scrollLeft": 0,
+            "maxScroll": 585,
+            "index": "1",
+            "expectedIndex": 1,
+            "track": {
+              "x": 24,
+              "y": 84.03125,
+              "width": 366,
+              "height": 689.78125,
+              "right": 390,
+              "bottom": 773.8125
+            },
+            "slide": {
+              "x": 24,
+              "y": 84.03125,
+              "width": 300.953125,
+              "height": 689.78125,
+              "right": 324.953125,
+              "bottom": 773.8125
+            },
+            "image": {
+              "x": 40,
+              "y": 100.03125,
+              "width": 268.953125,
+              "height": 417.21875,
+              "right": 308.953125,
+              "bottom": 517.25
+            },
+            "caption": {
+              "x": 24,
+              "y": 545.25,
+              "width": 300.953125,
+              "height": 44.78125,
+              "right": 324.953125,
+              "bottom": 590.03125
+            },
+            "captionText": "Несохранённые правки живут только в этой форме.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/draft-ru-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        },
+        {
+          "name": "saved",
+          "state": {
+            "scrollLeft": 325,
+            "maxScroll": 585,
+            "index": "2",
+            "expectedIndex": 2,
+            "track": {
+              "x": 24,
+              "y": 84.03125,
+              "width": 366,
+              "height": 689.78125,
+              "right": 390,
+              "bottom": 773.8125
+            },
+            "slide": {
+              "x": 23.953125,
+              "y": 84.03125,
+              "width": 300.953125,
+              "height": 689.78125,
+              "right": 324.90625,
+              "bottom": 773.8125
+            },
+            "image": {
+              "x": 39.953125,
+              "y": 100.03125,
+              "width": 268.953125,
+              "height": 417.21875,
+              "right": 308.90625,
+              "bottom": 517.25
+            },
+            "caption": {
+              "x": 23.953125,
+              "y": 545.25,
+              "width": 300.953125,
+              "height": 44.78125,
+              "right": 324.90625,
+              "bottom": 590.03125
+            },
+            "captionText": "Сохранение переживает перезагрузку, но не публикует.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/saved-ru-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        },
+        {
+          "name": "published",
+          "state": {
+            "scrollLeft": 585,
+            "maxScroll": 585,
+            "index": "3",
+            "expectedIndex": 3,
+            "track": {
+              "x": 24,
+              "y": 84.03125,
+              "width": 366,
+              "height": 689.78125,
+              "right": 390,
+              "bottom": 773.8125
+            },
+            "slide": {
+              "x": 88.90625,
+              "y": 84.03125,
+              "width": 300.953125,
+              "height": 689.78125,
+              "right": 389.859375,
+              "bottom": 773.8125
+            },
+            "image": {
+              "x": 104.90625,
+              "y": 100.03125,
+              "width": 268.953125,
+              "height": 601,
+              "right": 373.859375,
+              "bottom": 701.03125
+            },
+            "caption": {
+              "x": 88.90625,
+              "y": 729.03125,
+              "width": 300.953125,
+              "height": 44.78125,
+              "right": 389.859375,
+              "bottom": 773.8125
+            },
+            "captionText": "Владелец всё ещё читает опубликованный снимок.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/publication-ru-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        }
+      ]
+    },
+    {
+      "locale": "ru",
+      "mode": "no-JS",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "errors": [],
+      "stops": [
+        {
+          "name": "draft",
+          "state": {
+            "scrollLeft": 0,
+            "maxScroll": 585,
+            "index": null,
+            "expectedIndex": 1,
+            "track": {
+              "x": 24,
+              "y": 24.234375,
+              "width": 366,
+              "height": 689.78125,
+              "right": 390,
+              "bottom": 714.015625
+            },
+            "slide": {
+              "x": 24,
+              "y": 24.234375,
+              "width": 300.953125,
+              "height": 689.78125,
+              "right": 324.953125,
+              "bottom": 714.015625
+            },
+            "image": {
+              "x": 40,
+              "y": 40.234375,
+              "width": 268.953125,
+              "height": 417.21875,
+              "right": 308.953125,
+              "bottom": 457.453125
+            },
+            "caption": {
+              "x": 24,
+              "y": 485.453125,
+              "width": 300.953125,
+              "height": 44.78125,
+              "right": 324.953125,
+              "bottom": 530.234375
+            },
+            "captionText": "Несохранённые правки живут только в этой форме.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/draft-ru-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        },
+        {
+          "name": "saved",
+          "state": {
+            "scrollLeft": 325,
+            "maxScroll": 585,
+            "index": null,
+            "expectedIndex": 2,
+            "track": {
+              "x": 24,
+              "y": 24.234375,
+              "width": 366,
+              "height": 689.78125,
+              "right": 390,
+              "bottom": 714.015625
+            },
+            "slide": {
+              "x": 23.953125,
+              "y": 24.234375,
+              "width": 300.953125,
+              "height": 689.78125,
+              "right": 324.90625,
+              "bottom": 714.015625
+            },
+            "image": {
+              "x": 39.953125,
+              "y": 40.234375,
+              "width": 268.953125,
+              "height": 417.21875,
+              "right": 308.90625,
+              "bottom": 457.453125
+            },
+            "caption": {
+              "x": 23.953125,
+              "y": 485.453125,
+              "width": 300.953125,
+              "height": 44.78125,
+              "right": 324.90625,
+              "bottom": 530.234375
+            },
+            "captionText": "Сохранение переживает перезагрузку, но не публикует.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/saved-ru-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        },
+        {
+          "name": "published",
+          "state": {
+            "scrollLeft": 585,
+            "maxScroll": 585,
+            "index": null,
+            "expectedIndex": 3,
+            "track": {
+              "x": 24,
+              "y": 24.234375,
+              "width": 366,
+              "height": 689.78125,
+              "right": 390,
+              "bottom": 714.015625
+            },
+            "slide": {
+              "x": 88.90625,
+              "y": 24.234375,
+              "width": 300.953125,
+              "height": 689.78125,
+              "right": 389.859375,
+              "bottom": 714.015625
+            },
+            "image": {
+              "x": 104.90625,
+              "y": 40.234375,
+              "width": 268.953125,
+              "height": 601,
+              "right": 373.859375,
+              "bottom": 641.234375
+            },
+            "caption": {
+              "x": 88.90625,
+              "y": 669.234375,
+              "width": 300.953125,
+              "height": 44.78125,
+              "right": 389.859375,
+              "bottom": 714.015625
+            },
+            "captionText": "Владелец всё ещё читает опубликованный снимок.",
+            "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/publication-ru-narrow.webp",
+            "loaded": true,
+            "wholeHorizontal": true,
+            "wholeMaterialInViewport": true
+          }
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

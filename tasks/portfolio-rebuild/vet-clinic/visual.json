@@ -59,7 +59,50 @@
       }
     ],
     "images": [],
-    "height": 12026
+    "height": 12026,
+    "carousel": {
+      "scrollLeft": 0,
+      "maxScroll": 585,
+      "index": "1",
+      "expectedIndex": 1,
+      "track": {
+        "x": 24,
+        "y": 9425.328125,
+        "width": 366,
+        "height": 649.359375,
+        "right": 390,
+        "bottom": 10074.6875
+      },
+      "slide": {
+        "x": 24,
+        "y": 9425.328125,
+        "width": 300.953125,
+        "height": 649.359375,
+        "right": 324.953125,
+        "bottom": 10074.6875
+      },
+      "image": {
+        "x": 40,
+        "y": 9441.328125,
+        "width": 268.953125,
+        "height": 417.21875,
+        "right": 308.953125,
+        "bottom": 9858.546875
+      },
+      "caption": {
+        "x": 24,
+        "y": 9886.546875,
+        "width": 300.953125,
+        "height": 22.390625,
+        "right": 324.953125,
+        "bottom": 9908.9375
+      },
+      "captionText": "Unsaved edits live only in this form.",
+      "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/draft-en-narrow.webp",
+      "loaded": true,
+      "wholeHorizontal": true,
+      "wholeMaterialInViewport": false
+    }
   },
   {
     "locale": "ru",
@@ -121,6 +164,49 @@
       }
     ],
     "images": [],
-    "height": 12207
+    "height": 12207,
+    "carousel": {
+      "scrollLeft": 0,
+      "maxScroll": 585,
+      "index": "1",
+      "expectedIndex": 1,
+      "track": {
+        "x": 24,
+        "y": 9472.234375,
+        "width": 366,
+        "height": 689.78125,
+        "right": 390,
+        "bottom": 10162.015625
+      },
+      "slide": {
+        "x": 24,
+        "y": 9472.234375,
+        "width": 300.953125,
+        "height": 689.78125,
+        "right": 324.953125,
+        "bottom": 10162.015625
+      },
+      "image": {
+        "x": 40,
+        "y": 9488.234375,
+        "width": 268.953125,
+        "height": 417.21875,
+        "right": 308.953125,
+        "bottom": 9905.453125
+      },
+      "caption": {
+        "x": 24,
+        "y": 9933.453125,
+        "width": 300.953125,
+        "height": 44.78125,
+        "right": 324.953125,
+        "bottom": 9978.234375
+      },
+      "captionText": "Несохранённые правки живут только в этой форме.",
+      "src": "http://127.0.0.1:4366/media/rebuild/vet-clinic/draft-ru-narrow.webp",
+      "loaded": true,
+      "wholeHorizontal": true,
+      "wholeMaterialInViewport": false
+    }
   }
 ]
