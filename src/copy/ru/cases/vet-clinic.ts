@@ -3,6 +3,11 @@ import { withRussianMedia } from './utils.ts';
 
 const base = withRussianMedia(vetClinic, '/media/case-vet', '/media/case-vet-ru');
 
+import {makeVetStory,vetClinicStory} from '../../cases/vet-clinic';
+import {assertStoryPair} from '../../cases/story';
+export const vetClinicStoryRu=makeVetStory('ru');
+assertStoryPair(vetClinicStory,vetClinicStoryRu);
+
 /**
  * Русский прототип — тот же деплой, свой путь `/ru`: локаль прототипа живёт
  * только в адресе (`src/navigation.ts` продукта), сохранённого выбора языка

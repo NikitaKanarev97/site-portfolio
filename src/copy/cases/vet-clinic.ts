@@ -55,6 +55,43 @@ const PROTOTYPE = 'https://veterinary-clinic-gules.vercel.app/';
 
 const media = '/media/case-vet';
 
+import {defineStory,type CaseStory,type ShotItem} from './story';
+import {vetRoleFlow} from '../../data/diagrams/vet-clinic/role-flow';
+
+/** D is preview-only. The historical public object below stays unchanged. */
+export function makeVetStory(lang:'en'|'ru'):CaseStory {
+  const t=(en:string,ru:string)=>lang==='ru'?ru:en;
+  const root='/media/rebuild/vet-clinic';
+  const shot=(name:string,en:string,ru:string,nativeWidth?:number):ShotItem=>({src:`${root}/${name}-${lang}-wide.webp`,srcNarrow:`${root}/${name}-${lang}-narrow.webp`,alt:t(en,ru),device:'panel',nativeWidth});
+  return defineStory({theme:'vet',plate:'light',
+    cover:{title:'Vet Clinic OS',outcome:t('One visit. Different responsibilities.','Один визит. Разные зоны ответственности.'),media:{variant:'proof',eyebrow:t('Concept · not deployed in a clinic','Концепт · в клинике не внедрён'),shot:{...shot('cover','Quick trace: Marsik, weight, complete dose calculation and Save actions.','Короткий след: Марсик, вес, целый расчёт дозы и действия сохранения.')},caption:t('Clinical workspace · seed example 4.8 kg / 0.95 ml.','Рабочая поверхность · исходный пример 4.8 кг / 0.95 мл.')}},
+    facts:[
+      {term:t('Role','Роль'),value:t('Sole product designer','Единственный продуктовый дизайнер')},
+      {term:t('Input','Основание'),value:t('Conversations with one practising vet','Разговоры с одним практикующим врачом')},
+      {term:t('Delivery','Результат'),value:t('Working prototype · 2026','Рабочий прототип · 2026')},
+      {term:t('Data','Данные'),value:t('Real clinic under NDA; all demo data invented','Реальная клиника под NDA; все демо-данные вымышлены')},
+    ],blocks:[
+      {id:'room-window',type:'shot',evidenceId:'vet-window',mediaId:'vet-queue',motion:'static',payload:{
+        thesis:{label:t('Constraint','Ограничение'),thesis:t('A trace before the next patient','След за время паузы'),body:t('I separated a useful trace from the complete record. Thirty seconds between patients was the original constraint, not a measured speed of the new interface.','Я отделил полезный след от полной записи. Тридцать секунд между пациентами — исходное ограничение, а не измеренная скорость нового интерфейса.')},
+        shot:{layout:'desktop',items:[{src:`${root}/queue-${lang}.webp`,srcNarrow:`${root}/queue-${lang}-narrow.webp`,device:'panel',alt:t('Today’s queue: all patients at the clinic and an emergency action; wide view includes expected visits.','Очередь дня: все пациенты в клинике и экстренное действие; широкий кадр также показывает ожидаемых.')}],caption:t('Patients first; unfinished records stay visible.','Сначала пациенты; незавершённые записи остаются видны.')},
+      }},
+      {id:'role-boundaries',type:'artifact',evidenceId:'vet-roles',mediaId:'vet-role-flow',motion:'draw',payload:{thesis:{label:t('Role flow','Ролевой сценарий'),thesis:t('Each role receives its own part','У каждой роли своя часть')},artifact:{data:vetRoleFlow,source:{kind:'editorial',ref:'Veterinary-clinic: current ProductScreens / clinicData; visit-trace + discharge-and-invoice'},caption:t('Editorial flow; roles named inside their zones.','Схема текущего прототипа; роли подписаны внутри зон.')}}},
+      {id:'one-visit',type:'steps',evidenceId:'vet-roles',mediaId:'vet-handoff',motion:'focus',payload:{label:t('One visit · three views','Один визит · три представления'),items:[
+        {label:t('Veterinarian · tablet','Врач · планшет'),thesis:t('Save the useful facts','Вес, препарат и доза'),body:t('Weight, medication and dose become sourced facts. The full note can follow later. Here: Marsik, 4.9 kg, Meloxicam, 1.00 ml. Saved at 09:12.','Вес, препарат и доза становятся фактами с источником. Полную запись можно дописать позже. Здесь: Марсик, 4.9 кг, мелоксикам, 1.00 мл. Сохранено в 09:12.'),shot:shot('trace','Marsik’s saved facts: 4.9 kg, Meloxicam, 1.00 ml, frequency, source and time.','Сохранённые факты Марсика: 4.9 кг, мелоксикам, 1.00 мл, частота, источник и время.')},
+        {label:t('Reception · desktop','Регистратура · desktop'),thesis:t('Bill the work, keep the note private','Счёт готов'),body:t('Selected services create the invoice. Reception sees payer, items and total. Diagnosis and private notes stay in the clinic; payment happens outside the prototype. Two services for Marsik.','Выбранные услуги составляют счёт. Регистратура видит плательщика, позиции и итог. Диагноз и приватная заметка остаются в клинике; оплата происходит вне прототипа. Две услуги Марсика.'),shot:shot('invoice','Complete invoice: payer, selected services, total and payment action.','Целый счёт: плательщик, выбранные услуги, итог и действие отметки оплаты.',640)},
+        {label:t('Owner · phone','Владелец · телефон'),thesis:t('Publish a stable document','План уже у семьи'),body:t('The owner receives the same prescription in a published snapshot. A later saved edit does not silently rewrite it. Publishing a new version is explicit. Published at 09:13; viewports share one browser.','Владелец получает то же назначение в опубликованном снимке. Поздняя сохранённая правка не переписывает его молча. Новая версия публикуется явно. Публикация 09:13; размеры окна одного браузера.'),shot:{src:`${root}/owner-detail-${lang}.webp`,srcNarrow:`${root}/owner-${lang}.webp`,device:'panel',nativeWidth:390,alt:t('Phone details: Marsik, publication 09:13, Meloxicam 1.00 ml and complete discharge action; mobile shows the full owner view.','Детали телефона: Марсик, публикация 09:13, мелоксикам 1.00 мл и целое действие выписки; на mobile — полный кабинет владельца.')}},
+      ]}},
+      {id:'save-is-not-publish',type:'process',evidenceId:'vet-publication',mediaId:'vet-boundaries',motion:'static',payload:{thesis:{label:t('State boundaries','Границы состояний'),thesis:t('Saved does not mean published','Запись и выписка живут отдельно'),body:t('Unsaved form, saved record and published document are independent states. The owner can still read an older publication while the doctor edits the record.','Несохранённая форма, сохранённая запись и опубликованный документ — независимые состояния. Владелец может читать прежнюю публикацию, пока врач меняет запись.')},slides:[
+        {shot:shot('draft','Unsaved changes, weight 4.9 and complete Save actions.','Несохранённые правки, вес 4.9 и целые действия сохранения.',768)},
+        {shot:shot('saved','Saved at 09:12; weight persists after reload.','Сохранено в 09:12; вес переживает перезагрузку.',768)},
+        {shot:shot('publication','Published version 1, Changes are not published, Publish new version.','Опубликована версия 1, новые правки не опубликованы, действие новой публикации.',358)},
+      ],captions:[t('Unsaved edits live only in this form.','Несохранённые правки живут только в этой форме.'),t('Save survives reload; it does not publish.','Сохранение переживает перезагрузку, но не публикует.'),t('The owner still reads the published snapshot.','Владелец всё ещё читает опубликованный снимок.')]}},
+      {id:'prototype-boundary',type:'outcome',evidenceId:'vet-outcome',motion:'static',payload:{result:{label:t('Result','Результат'),thesis:t('A working path, with clear limits','Рабочий путь с ясными границами')},evidence:{label:t('Evidence','Подтверждение'),text:t('The trace, invoice and recommendations connect in the current prototype. This run checked the chain and both locales. One doctor informed the concept; clinical safety and adoption were not tested.','След, счёт и рекомендации связаны в текущем прототипе. Этот прогон проверил цепочку и обе локали. Концепт опирается на ввод одного врача; клиническая безопасность и внедрение не проверялись.')},tradeoff:{label:t('Cost','Цена решения'),text:t('Save and Publish are separate actions. Unsaved edits disappear on reload. Data stays in one browser; past published versions are not stored.','Сохранение и публикация — отдельные действия. Несохранённые правки теряются при перезагрузке. Данные живут в одном браузере; прошлые опубликованные версии не хранятся.')},nextEvidence:{label:t('Next evidence','Следующая проверка'),text:t('Observe real handoffs, interrupted work and record recovery in a practice.','Наблюдать передачу, прерванную работу и восстановление записи в реальной практике.')}}},
+    ],prototype:{label:t('Open the demo','Открыть демо'),href:PROTOTYPE+(lang==='ru'?'ru/':'')},
+  });
+}
+export const vetClinicStory=makeVetStory('en');
+
 export const vetClinic = {
   slug: 'vet-clinic',
 

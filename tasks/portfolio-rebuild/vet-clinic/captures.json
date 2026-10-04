@@ -1,0 +1,482 @@
+[
+  {
+    "id": "draft-en-wide",
+    "file": "public/media/rebuild/vet-clinic/draft-en-wide.webp",
+    "route": "http://127.0.0.1:5261/app/visit-quick-trace?patient=marsik",
+    "fixture": "form4.9; stored4.8",
+    "locale": "en",
+    "viewport": {
+      "width": 768,
+      "height": 900
+    },
+    "dpr": 2,
+    "width": 1468,
+    "height": 1012,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "172e89d9546168d58cb60c0adeb8c8b1de34755eb748eb9df90a293b101d9eaf"
+  },
+  {
+    "id": "saved-en-wide",
+    "file": "public/media/rebuild/vet-clinic/saved-en-wide.webp",
+    "route": "http://127.0.0.1:5261/app/visit-quick-trace?patient=marsik",
+    "fixture": "saved4.9 at09:12",
+    "locale": "en",
+    "viewport": {
+      "width": 768,
+      "height": 900
+    },
+    "dpr": 2,
+    "width": 1468,
+    "height": 1012,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "d7e2b20a914b066fd8cf291559d348ad041234ca5a7fdbd0ff2c46d54543335b"
+  },
+  {
+    "id": "trace-en-wide",
+    "file": "public/media/rebuild/vet-clinic/trace-en-wide.webp",
+    "route": "http://127.0.0.1:5261/app/visit-record?patient=marsik",
+    "fixture": "saved4.9; real facts with origin",
+    "locale": "en",
+    "viewport": {
+      "width": 1024,
+      "height": 900
+    },
+    "dpr": 2,
+    "width": 1980,
+    "height": 450,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "7ac3038ffd3a95e7bbca21d8e278bbb0a660fdc7d4eaadcf3c98306220db1d0d"
+  },
+  {
+    "id": "invoice-en-wide",
+    "file": "public/media/rebuild/vet-clinic/invoice-en-wide.webp",
+    "route": "http://127.0.0.1:5261/app/invoice-draft?patient=marsik",
+    "fixture": "Marsik services; unpaid; no diagnosis",
+    "locale": "en",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "dpr": 2,
+    "width": 1530,
+    "height": 1078,
+    "sha256": "fac6ce2d3aeae7bbb0691b218d919f462ef83225cce48068bd15230133ddedd6"
+  },
+  {
+    "id": "publication-en-wide",
+    "file": "public/media/rebuild/vet-clinic/publication-en-wide.webp",
+    "route": "http://127.0.0.1:5261/app/discharge-preview?patient=marsik",
+    "fixture": "record10 days / published7 days at09:13; real publication state, warning and whole action bar",
+    "locale": "en",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "dpr": 2,
+    "width": 640,
+    "height": 762,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "77e271029ebbe95cdc9ad46ca6d61508d7086f26a4cf8310e3f49bd7b3e7ca89"
+  },
+  {
+    "id": "cover-en-narrow",
+    "file": "public/media/rebuild/vet-clinic/cover-en-narrow.webp",
+    "route": "http://127.0.0.1:5261/app/visit-quick-trace?patient=marsik",
+    "fixture": "seed Marsik4.8/0.95; selected weight/dose/actions",
+    "locale": "en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 780,
+    "height": 2184,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "3f7957e080a9aef7f71582fd61fdf86ef5e551039309a85444dc0f43ca3fa9fb"
+  },
+  {
+    "id": "draft-en-narrow",
+    "file": "public/media/rebuild/vet-clinic/draft-en-narrow.webp",
+    "route": "http://127.0.0.1:5261/app/visit-quick-trace?patient=marsik",
+    "fixture": "form4.9; stored4.8",
+    "locale": "en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 780,
+    "height": 1210,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "b4d09c9e1d722aafe69457033f29e77f116a3b7a0329edfc4947cbde8dd4fab1"
+  },
+  {
+    "id": "saved-en-narrow",
+    "file": "public/media/rebuild/vet-clinic/saved-en-narrow.webp",
+    "route": "http://127.0.0.1:5261/app/visit-quick-trace?patient=marsik",
+    "fixture": "saved4.9 at09:12",
+    "locale": "en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 780,
+    "height": 1210,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "562f427b330ff3442be88fc4385b9bbb983c33be880ede2cf4b47e60bb84e414"
+  },
+  {
+    "id": "trace-en-narrow",
+    "file": "public/media/rebuild/vet-clinic/trace-en-narrow.webp",
+    "route": "http://127.0.0.1:5261/app/visit-record?patient=marsik",
+    "fixture": "saved4.9; real facts with origin",
+    "locale": "en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 780,
+    "height": 1112,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "fb2ea5cf521a9ee51742a94554c95a093fbcfab3913245d54af7380fd97b459a"
+  },
+  {
+    "id": "invoice-en-narrow",
+    "file": "public/media/rebuild/vet-clinic/invoice-en-narrow.webp",
+    "route": "http://127.0.0.1:5261/app/invoice-draft?patient=marsik",
+    "fixture": "Marsik services; unpaid; no diagnosis",
+    "locale": "en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 716,
+    "height": 1374,
+    "sha256": "849e9e254c5d9e40a80aea1f1981a174d74a8224cb49ebc6375cec8b85ff74fc"
+  },
+  {
+    "id": "publication-en-narrow",
+    "file": "public/media/rebuild/vet-clinic/publication-en-narrow.webp",
+    "route": "http://127.0.0.1:5261/app/discharge-preview?patient=marsik",
+    "fixture": "record10 days / published7 days at09:13",
+    "locale": "en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 716,
+    "height": 1552,
+    "sha256": "15076c5fece488d434b917e07bee2fb370dc1940c06e5accb5f5776fc54fd4ab"
+  },
+  {
+    "id": "owner-en",
+    "file": "public/media/rebuild/vet-clinic/owner-en.webp",
+    "route": "http://127.0.0.1:5261/app/owner-home?patient=marsik",
+    "fixture": "published v1 09:13,4.9/1.00,7days",
+    "locale": "en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 780,
+    "height": 2184,
+    "sha256": "e339478dc220965da3ea774c8f8dd8b1eb10c6d4ad442d209f7d04393c6630f5"
+  },
+  {
+    "id": "owner-detail-en",
+    "file": "public/media/rebuild/vet-clinic/owner-detail-en.webp",
+    "route": "http://127.0.0.1:5261/app/owner-home?patient=marsik",
+    "fixture": "selected phone details; publication, same dose, complete discharge action",
+    "locale": "en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 716,
+    "height": 722,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "89e07f7c7e2c8a9f4ef0bcd8b593ea6fd5b2f21ab3046567a70e08cfb7f4ef3f"
+  },
+  {
+    "id": "queue-en-narrow",
+    "file": "public/media/rebuild/vet-clinic/queue-en-narrow.webp",
+    "route": "http://127.0.0.1:5261/app/vet-day-queue",
+    "fixture": "seed; day header + whole At clinic group; Expected omitted",
+    "locale": "en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 716,
+    "height": 2922,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "ecb3f12f164c48bc33f1292df69616d2dcbf2a26ab057fede1e05ab5d22ea2b3"
+  },
+  {
+    "id": "cover-en-wide",
+    "file": "public/media/rebuild/vet-clinic/cover-en-wide.webp",
+    "source": "public/media/case-vet/visit-quick-trace.webp",
+    "locale": "en",
+    "fixture": "seed4.8/0.95",
+    "reused": true,
+    "sourceDate": "2026-09-13",
+    "sha256": "a054cceadee94962cd169a104d513e5be6e6565cf9e395655f873fac489d8543"
+  },
+  {
+    "id": "queue-en",
+    "file": "public/media/rebuild/vet-clinic/queue-en.webp",
+    "source": "public/media/case-vet/cover/vet-day-queue.webp",
+    "locale": "en",
+    "fixture": "seed4.8/0.95",
+    "reused": true,
+    "sourceDate": "2026-09-13",
+    "sha256": "db56dc5d2a9eb9785cfa81b839f601bc6e8d93b6b9b9c925f2fff913070641a9"
+  },
+  {
+    "id": "draft-ru-wide",
+    "file": "public/media/rebuild/vet-clinic/draft-ru-wide.webp",
+    "route": "http://127.0.0.1:5261/ru/app/visit-quick-trace?patient=marsik",
+    "fixture": "form4.9; stored4.8",
+    "locale": "ru",
+    "viewport": {
+      "width": 768,
+      "height": 900
+    },
+    "dpr": 2,
+    "width": 1468,
+    "height": 1012,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "ec252cd1f03a796823690dd667e9f6d28366bbd6a0c4612603e974447b48d47b"
+  },
+  {
+    "id": "saved-ru-wide",
+    "file": "public/media/rebuild/vet-clinic/saved-ru-wide.webp",
+    "route": "http://127.0.0.1:5261/ru/app/visit-quick-trace?patient=marsik",
+    "fixture": "saved4.9 at09:12",
+    "locale": "ru",
+    "viewport": {
+      "width": 768,
+      "height": 900
+    },
+    "dpr": 2,
+    "width": 1468,
+    "height": 1012,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "0be0f1c27a55ef1800098372eebe3b28f1f66a51cf2b372069fece33c1c3acff"
+  },
+  {
+    "id": "trace-ru-wide",
+    "file": "public/media/rebuild/vet-clinic/trace-ru-wide.webp",
+    "route": "http://127.0.0.1:5261/ru/app/visit-record?patient=marsik",
+    "fixture": "saved4.9; real facts with origin",
+    "locale": "ru",
+    "viewport": {
+      "width": 1024,
+      "height": 900
+    },
+    "dpr": 2,
+    "width": 1980,
+    "height": 450,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "8650f0975fbc6d9568f937d2a08ed57d6a97ef99a53dbd7b3b521298e2773de4"
+  },
+  {
+    "id": "invoice-ru-wide",
+    "file": "public/media/rebuild/vet-clinic/invoice-ru-wide.webp",
+    "route": "http://127.0.0.1:5261/ru/app/invoice-draft?patient=marsik",
+    "fixture": "Marsik services; unpaid; no diagnosis",
+    "locale": "ru",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "dpr": 2,
+    "width": 1530,
+    "height": 1078,
+    "sha256": "7302faf283f73f8aad5ebe16c39c057af1936e81a007a2a4b72bef405ae245ce"
+  },
+  {
+    "id": "publication-ru-wide",
+    "file": "public/media/rebuild/vet-clinic/publication-ru-wide.webp",
+    "route": "http://127.0.0.1:5261/ru/app/discharge-preview?patient=marsik",
+    "fixture": "record10 days / published7 days at09:13; real publication state, warning and whole action bar",
+    "locale": "ru",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "dpr": 2,
+    "width": 640,
+    "height": 804,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "40f8a54cf3d8d393c70e70dcbe365d24b0708938512ae6f05e7fd84998866bcb"
+  },
+  {
+    "id": "cover-ru-narrow",
+    "file": "public/media/rebuild/vet-clinic/cover-ru-narrow.webp",
+    "route": "http://127.0.0.1:5261/ru/app/visit-quick-trace?patient=marsik",
+    "fixture": "seed Marsik4.8/0.95; selected weight/dose/actions",
+    "locale": "ru",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 780,
+    "height": 2184,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "d113786ddd44628f1f4473a0d2d205a16fdc28b1a4fbdbb07980ea42c62f8d1e"
+  },
+  {
+    "id": "draft-ru-narrow",
+    "file": "public/media/rebuild/vet-clinic/draft-ru-narrow.webp",
+    "route": "http://127.0.0.1:5261/ru/app/visit-quick-trace?patient=marsik",
+    "fixture": "form4.9; stored4.8",
+    "locale": "ru",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 780,
+    "height": 1210,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "281e7a99c62479867a217f9dd5e17b6a608db6b8789c94a97e9a29f0fa85b58f"
+  },
+  {
+    "id": "saved-ru-narrow",
+    "file": "public/media/rebuild/vet-clinic/saved-ru-narrow.webp",
+    "route": "http://127.0.0.1:5261/ru/app/visit-quick-trace?patient=marsik",
+    "fixture": "saved4.9 at09:12",
+    "locale": "ru",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 780,
+    "height": 1210,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "bd735293820d0925d747ec3dbfcfd5ee4001647ac32605a35b001d7346c4f802"
+  },
+  {
+    "id": "trace-ru-narrow",
+    "file": "public/media/rebuild/vet-clinic/trace-ru-narrow.webp",
+    "route": "http://127.0.0.1:5261/ru/app/visit-record?patient=marsik",
+    "fixture": "saved4.9; real facts with origin",
+    "locale": "ru",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 780,
+    "height": 1112,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "5c3300776c2a8a82e9fd04943529d14897cbe0f9b2c48cfccecead7581af9c7e"
+  },
+  {
+    "id": "invoice-ru-narrow",
+    "file": "public/media/rebuild/vet-clinic/invoice-ru-narrow.webp",
+    "route": "http://127.0.0.1:5261/ru/app/invoice-draft?patient=marsik",
+    "fixture": "Marsik services; unpaid; no diagnosis",
+    "locale": "ru",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 716,
+    "height": 1374,
+    "sha256": "3da80e45c6b73f47921ae7807db6b8a7da1c6f76d3318c62ed9f3014751dcd57"
+  },
+  {
+    "id": "publication-ru-narrow",
+    "file": "public/media/rebuild/vet-clinic/publication-ru-narrow.webp",
+    "route": "http://127.0.0.1:5261/ru/app/discharge-preview?patient=marsik",
+    "fixture": "record10 days / published7 days at09:13",
+    "locale": "ru",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 716,
+    "height": 1600,
+    "sha256": "993b8c065104feb0b7d7648ffd89e8733be2f40a449bf0a9a8054842d77cba21"
+  },
+  {
+    "id": "owner-ru",
+    "file": "public/media/rebuild/vet-clinic/owner-ru.webp",
+    "route": "http://127.0.0.1:5261/ru/app/owner-home?patient=marsik",
+    "fixture": "published v1 09:13,4.9/1.00,7days",
+    "locale": "ru",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 780,
+    "height": 2222,
+    "sha256": "555fe8ac5559a322deb0f0e4d85a76bcc5a4ab631365670a2c1c5cc8dd807107"
+  },
+  {
+    "id": "owner-detail-ru",
+    "file": "public/media/rebuild/vet-clinic/owner-detail-ru.webp",
+    "route": "http://127.0.0.1:5261/ru/app/owner-home?patient=marsik",
+    "fixture": "selected phone details; publication, same dose, complete discharge action",
+    "locale": "ru",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 716,
+    "height": 724,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "2cc32e1e9684052b467473b55458be59151849010c3056aff9e82b56532c254e"
+  },
+  {
+    "id": "queue-ru-narrow",
+    "file": "public/media/rebuild/vet-clinic/queue-ru-narrow.webp",
+    "route": "http://127.0.0.1:5261/ru/app/vet-day-queue",
+    "fixture": "seed; day header + whole At clinic group; Expected omitted",
+    "locale": "ru",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 716,
+    "height": 2838,
+    "composition": "Unaltered DOM crops in source order; omitted unrelated form blocks; 12 CSS px editorial gaps",
+    "sha256": "ac7e04cc253a05355b2e193799559b96a9d11253738953f10b01a8477a630b28"
+  },
+  {
+    "id": "cover-ru-wide",
+    "file": "public/media/rebuild/vet-clinic/cover-ru-wide.webp",
+    "source": "public/media/case-vet-ru/visit-quick-trace.webp",
+    "locale": "ru",
+    "fixture": "seed4.8/0.95",
+    "reused": true,
+    "sourceDate": "2026-09-13",
+    "sha256": "fd99c98da3fe282229b3875066dd0b1c66d31c7d7dad8dacf2925cee6208cefd"
+  },
+  {
+    "id": "queue-ru",
+    "file": "public/media/rebuild/vet-clinic/queue-ru.webp",
+    "source": "public/media/case-vet-ru/cover/vet-day-queue.webp",
+    "locale": "ru",
+    "fixture": "seed4.8/0.95",
+    "reused": true,
+    "sourceDate": "2026-09-13",
+    "sha256": "fb8388b722849504997aea3b4b78de71bf86407ceddf414ae9f24b3e94c33bcd"
+  }
+]

@@ -1,0 +1,32 @@
+import {createRequire} from 'node:module';
+import {writeFile} from 'node:fs/promises';
+const require=createRequire('D:/Claude-projects/b2b-dssl/package.json'),{chromium}=require('playwright');
+const browser=await chromium.launch({headless:true,executablePath:'C:/Users/kanar/AppData/Local/ms-playwright/chromium-1243/chrome-win64/chrome.exe'});
+const p=await browser.newPage({viewport:{width:1024,height:900},reducedMotion:'reduce'}),checks=[],errors=[];
+p.on('pageerror',e=>errors.push(String(e)));
+const go=route=>p.goto('http://127.0.0.1:5261/ru'+route,{waitUntil:'networkidle'});
+const check=(name,ok)=>{checks.push({name,ok});if(!ok)throw Error(name);};
+try{
+ await go('/app/visit-quick-trace?patient=marsik');await p.getByLabel('Вес, кг').fill('4.9');
+ await p.reload({waitUntil:'networkidle'});check('RU unsaved weight is lost on reload',await p.getByLabel('Вес, кг').inputValue()==='4.8');
+ await p.getByLabel('Вес, кг').fill('4.9');await p.locator('[data-track="visit-quick-trace-save"]').click();await p.waitForTimeout(1100);
+ await p.reload({waitUntil:'networkidle'});check('RU saved weight survives reload',await p.getByLabel('Вес, кг').inputValue()==='4.9');
+ await writeFile('tasks/portfolio-rebuild/vet-clinic/fixture-saved-ru.json',JSON.stringify(await p.evaluate(()=>JSON.parse(localStorage.getItem('vet-clinic-wire-data-v6'))),null,2));
+ await go('/app/visit-record?patient=marsik');await p.getByLabel(/^План/).fill('Повторный осмотр через 7 дней.');
+ await p.locator('[data-track="visit-record-publish"]').click();await p.waitForTimeout(1200);
+ await p.locator('[data-track="discharge-publish"]').click();await p.waitForTimeout(1100);
+ await writeFile('tasks/portfolio-rebuild/vet-clinic/fixture-published-ru.json',JSON.stringify(await p.evaluate(()=>JSON.parse(localStorage.getItem('vet-clinic-wire-data-v6'))),null,2));
+ await go('/app/owner-home?patient=marsik');let text=await p.locator('#root').innerText();
+ check('RU owner reads the published plan and same dose',text.includes('7 дней.')&&text.includes('1.00'));
+ await go('/app/invoice-draft?patient=marsik');text=await p.locator('[class*="_invoiceDoc_"]').innerText();
+ check('RU invoice has total and no diagnosis',/1[\s\u00a0]500/.test(text)&&!text.includes('Отит'));
+ await go('/app/visit-record?patient=marsik');await p.getByLabel(/^План/).fill('Повторный осмотр через 10 дней.');
+ await p.getByRole('button',{name:'Сохранить и вернуться в очередь',exact:true}).click();await p.waitForTimeout(1200);
+ await writeFile('tasks/portfolio-rebuild/vet-clinic/fixture-behind-ru.json',JSON.stringify(await p.evaluate(()=>JSON.parse(localStorage.getItem('vet-clinic-wire-data-v6'))),null,2));
+ await go('/app/owner-home?patient=marsik');text=await p.locator('#root').innerText();
+ check('RU saved edit leaves owner snapshot unchanged',text.includes('7 дней.')&&!text.includes('10 дней.'));
+ await go('/app/discharge-preview?patient=marsik');
+ check('RU new changes require explicit publication',(await p.locator('[class*="_publishPanel_"]').innerText()).includes('Правки не опубликованы'));
+}catch(e){errors.push(String(e));}
+await browser.close();await writeFile('tasks/portfolio-rebuild/vet-clinic/source-chain-ru.json',JSON.stringify({checks,errors},null,2));
+console.log(JSON.stringify({checks,errors},null,2));if(errors.length)process.exitCode=1;
