@@ -1,0 +1,213 @@
+{
+  "base": "936724beff3bb9a01c69381659dc808782cc7950",
+  "branch": "codex/learn-rebuild-2026-10-04",
+  "changed": [
+    "ds/screens/case-learn.md",
+    "public/media/rebuild/learn/answer-desktop.webp",
+    "public/media/rebuild/learn/answer-mobile.webp",
+    "public/media/rebuild/learn/archive-catalog.webp",
+    "public/media/rebuild/learn/assessment-desktop.webp",
+    "public/media/rebuild/learn/assessment-mobile.webp",
+    "public/media/rebuild/learn/completion-desktop.webp",
+    "public/media/rebuild/learn/completion-mobile.webp",
+    "public/media/rebuild/learn/cover-answer-desktop.webp",
+    "public/media/rebuild/learn/cover-answer-mobile.webp",
+    "public/media/rebuild/learn/cover-desktop.webp",
+    "public/media/rebuild/learn/cover-mobile.webp",
+    "public/media/rebuild/learn/cover-programme-desktop.webp",
+    "public/media/rebuild/learn/cover-programme-mobile.webp",
+    "public/media/rebuild/learn/landing-desktop.webp",
+    "public/media/rebuild/learn/landing-mobile.webp",
+    "public/media/rebuild/learn/onest-bold.woff2",
+    "public/media/rebuild/learn/programme-desktop.webp",
+    "public/media/rebuild/learn/programme-mobile.webp",
+    "public/media/rebuild/learn/progress-desktop.webp",
+    "public/media/rebuild/learn/progress-mobile.webp",
+    "public/media/rebuild/learn/theme-explore-desktop.webp",
+    "public/media/rebuild/learn/theme-explore-mobile.webp",
+    "public/media/rebuild/learn/theme-handover-desktop.webp",
+    "public/media/rebuild/learn/theme-handover-mobile.webp",
+    "public/media/rebuild/learn/theme-project-desktop.webp",
+    "public/media/rebuild/learn/theme-project-mobile.webp",
+    "public/media/rebuild/learn/theme-setup-desktop.webp",
+    "public/media/rebuild/learn/theme-setup-mobile.webp",
+    "public/media/rebuild/learn/trust-desktop.webp",
+    "public/media/rebuild/learn/trust-mobile.webp",
+    "src/copy/cases/learn.ts",
+    "src/copy/ru/cases/learn.ts",
+    "src/data/diagrams/learn/content-model.ts",
+    "src/pages/preview/learn-rebuild/[locale].astro",
+    "tasks/portfolio-rebuild/learn/artifact-plan.md",
+    "tasks/portfolio-rebuild/learn/build.log",
+    "tasks/portfolio-rebuild/learn/capture-cards.mjs",
+    "tasks/portfolio-rebuild/learn/capture.mjs",
+    "tasks/portfolio-rebuild/learn/captures.json",
+    "tasks/portfolio-rebuild/learn/check.log",
+    "tasks/portfolio-rebuild/learn/common-requests.md",
+    "tasks/portfolio-rebuild/learn/comparison-reference-map.png",
+    "tasks/portfolio-rebuild/learn/comparison-reference-theme.png",
+    "tasks/portfolio-rebuild/learn/css.log",
+    "tasks/portfolio-rebuild/learn/evidence.md",
+    "tasks/portfolio-rebuild/learn/harmony-short.log",
+    "tasks/portfolio-rebuild/learn/harmony.log",
+    "tasks/portfolio-rebuild/learn/integrity.json",
+    "tasks/portfolio-rebuild/learn/integrity.mjs",
+    "tasks/portfolio-rebuild/learn/media-manifest.json",
+    "tasks/portfolio-rebuild/learn/media.md",
+    "tasks/portfolio-rebuild/learn/motion/central-raw.webm",
+    "tasks/portfolio-rebuild/learn/motion/central-reference-end.png",
+    "tasks/portfolio-rebuild/learn/motion/central.mp4",
+    "tasks/portfolio-rebuild/learn/motion/contact-sheet.png",
+    "tasks/portfolio-rebuild/learn/motion/encode.log",
+    "tasks/portfolio-rebuild/learn/motion/frame-1.png",
+    "tasks/portfolio-rebuild/learn/motion/frame-2.png",
+    "tasks/portfolio-rebuild/learn/motion/frame-3.png",
+    "tasks/portfolio-rebuild/learn/motion/frame-4.png",
+    "tasks/portfolio-rebuild/learn/motion/frame-5.png",
+    "tasks/portfolio-rebuild/learn/motion/timeline.json",
+    "tasks/portfolio-rebuild/learn/probe.mjs",
+    "tasks/portfolio-rebuild/learn/production-probe.json",
+    "tasks/portfolio-rebuild/learn/record.mjs",
+    "tasks/portfolio-rebuild/learn/refine-captures.mjs",
+    "tasks/portfolio-rebuild/learn/report.md",
+    "tasks/portfolio-rebuild/learn/review-assets.mjs",
+    "tasks/portfolio-rebuild/learn/shots/en-1440-content-language.png",
+    "tasks/portfolio-rebuild/learn/shots/en-1440-cover.png",
+    "tasks/portfolio-rebuild/learn/shots/en-1440-full.png",
+    "tasks/portfolio-rebuild/learn/shots/en-1440-honest-result.png",
+    "tasks/portfolio-rebuild/learn/shots/en-1440-motion-1.png",
+    "tasks/portfolio-rebuild/learn/shots/en-1440-motion-2.png",
+    "tasks/portfolio-rebuild/learn/shots/en-1440-motion-3.png",
+    "tasks/portfolio-rebuild/learn/shots/en-1440-neutral-assessment.png",
+    "tasks/portfolio-rebuild/learn/shots/en-1440-one-material.png",
+    "tasks/portfolio-rebuild/learn/shots/en-1440-public-promise.png",
+    "tasks/portfolio-rebuild/learn/shots/en-1440-shared-material.png",
+    "tasks/portfolio-rebuild/learn/shots/en-1440-short-end.png",
+    "tasks/portfolio-rebuild/learn/shots/en-360-no-js.png",
+    "tasks/portfolio-rebuild/learn/shots/en-390-content-language.png",
+    "tasks/portfolio-rebuild/learn/shots/en-390-cover.png",
+    "tasks/portfolio-rebuild/learn/shots/en-390-full.png",
+    "tasks/portfolio-rebuild/learn/shots/en-390-honest-result.png",
+    "tasks/portfolio-rebuild/learn/shots/en-390-neutral-assessment.png",
+    "tasks/portfolio-rebuild/learn/shots/en-390-one-material.png",
+    "tasks/portfolio-rebuild/learn/shots/en-390-public-promise.png",
+    "tasks/portfolio-rebuild/learn/shots/en-390-shared-material.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-1440-content-language.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-1440-cover.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-1440-full.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-1440-honest-result.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-1440-motion-1.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-1440-motion-2.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-1440-motion-3.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-1440-neutral-assessment.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-1440-one-material.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-1440-public-promise.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-1440-shared-material.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-1440-short-end.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-360-no-js.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-390-content-language.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-390-cover.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-390-full.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-390-honest-result.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-390-neutral-assessment.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-390-one-material.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-390-public-promise.png",
+    "tasks/portfolio-rebuild/learn/shots/ru-390-shared-material.png",
+    "tasks/portfolio-rebuild/learn/source-server.mjs",
+    "tasks/portfolio-rebuild/learn/source-verification.json",
+    "tasks/portfolio-rebuild/learn/verification.json",
+    "tasks/portfolio-rebuild/learn/verification.log",
+    "tasks/portfolio-rebuild/learn/verify.mjs",
+    "tasks/portfolio-rebuild/learn/visual.json",
+    "tasks/portfolio-rebuild/learn/visual.mjs"
+  ],
+  "ownership": true,
+  "sourceMatches": [
+    {
+      "file": "PROJECT-CONTEXT.md",
+      "unchanged": true
+    },
+    {
+      "file": "outputs/prd.md",
+      "unchanged": true
+    },
+    {
+      "file": "ia/sitemap.md",
+      "unchanged": true
+    },
+    {
+      "file": "ia/flows/junction-two-scales.mmd",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/materials.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/trajectories.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/screens/materialpage/MaterialPage.tsx",
+      "unchanged": true
+    },
+    {
+      "file": "src/screens/player/Player.tsx",
+      "unchanged": true
+    },
+    {
+      "file": "src/components/Card/Card.tsx",
+      "unchanged": true
+    },
+    {
+      "file": "src/components/TrustHeader/TrustHeader.tsx",
+      "unchanged": true
+    },
+    {
+      "file": "src/components/ProgressMeter/ProgressMeter.tsx",
+      "unchanged": true
+    },
+    {
+      "file": "src/tokens/content.css",
+      "unchanged": true
+    },
+    {
+      "file": "src/tokens/primitives.css",
+      "unchanged": true
+    },
+    {
+      "file": "audit/product-polish/07-final.md",
+      "unchanged": true
+    },
+    {
+      "file": "ia/wireframes/materialpage.md",
+      "unchanged": true
+    },
+    {
+      "file": "src/screens/assessmentintro/AssessmentIntro.tsx",
+      "unchanged": true
+    },
+    {
+      "file": "src/tokens/typography.css",
+      "unchanged": true
+    },
+    {
+      "file": "landing/app/public/fonts/onest-bold.woff2",
+      "unchanged": true
+    }
+  ],
+  "mirrors": [
+    {
+      "a": "ds/tokens.css",
+      "b": "src/styles/tokens.css",
+      "equal": true,
+      "sha256": "47f89e88a2796834e9ef45d4c473a0411d7ec58e9fd366dd30d77adc9611b832"
+    },
+    {
+      "a": "ds/motion.js",
+      "b": "src/scripts/motion.js",
+      "equal": true,
+      "sha256": "3136db057ba7629c550544cf7a4951bb9bf5d118272dce9ea37b191021eb952f"
+    }
+  ]
+}

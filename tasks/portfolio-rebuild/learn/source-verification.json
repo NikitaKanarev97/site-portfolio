@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-04",
+  "sourceRoot": "D:/Claude-projects/learn",
+  "sourceFiles": [
+    {
+      "file": "PROJECT-CONTEXT.md",
+      "sha256": "bce9ea484ac01af521c31d841441664521f6bafc34b4631fc87b84c7e06980e4"
+    },
+    {
+      "file": "outputs/prd.md",
+      "sha256": "68f699fb1b797a317b46ef805c80bf2972c0bc7902558f8fd37fe247e7ec7964"
+    },
+    {
+      "file": "ia/sitemap.md",
+      "sha256": "d043649458a7664c953081bbedca6c7faf58d36daab578055c9cae9a284cd369"
+    },
+    {
+      "file": "ia/flows/junction-two-scales.mmd",
+      "sha256": "63c826fc4ddc5a2df846b68b6ec20eadf9caff9db1133304441f45e71f2bd8cc"
+    },
+    {
+      "file": "src/data/materials.ts",
+      "sha256": "d083c50d828be03ae474f71bceb58cf9521764da462c7303b18fdedc49db0416"
+    },
+    {
+      "file": "src/data/trajectories.ts",
+      "sha256": "1a0f22e8c2e60a8c1dbabeba3ee5bad0a629066eaf48f8191bdd1cff435c0dae"
+    },
+    {
+      "file": "src/screens/materialpage/MaterialPage.tsx",
+      "sha256": "381b9b1cfbe0cfe75b14aad48fb7b418866c9fe75ed474308c962ed15246b2b8"
+    },
+    {
+      "file": "src/screens/player/Player.tsx",
+      "sha256": "3e5365f79f3dfb155f605f472b4709ec126f3d80ffe7a94e0daece8cdfeb5eed"
+    },
+    {
+      "file": "src/components/Card/Card.tsx",
+      "sha256": "e6dae00dd00c72ce9ae186f6ea59e60fffd765c7e93d86b2ac62a52dc11ad637"
+    },
+    {
+      "file": "src/components/TrustHeader/TrustHeader.tsx",
+      "sha256": "7aac31500a4fc9b044ad51a5fac80a8c548a3d3b53634c2487a240d2ab327c0e"
+    },
+    {
+      "file": "src/components/ProgressMeter/ProgressMeter.tsx",
+      "sha256": "8b7398189a0364a7de8309038a4a57be2d047857c9c2dda18a5ff718fa9b51e3"
+    },
+    {
+      "file": "src/tokens/content.css",
+      "sha256": "3ca1f80409b8e9380a80d6a196eebfacd990411f81bf2b226d056f5d1537e761"
+    },
+    {
+      "file": "src/tokens/primitives.css",
+      "sha256": "1fad6e471ef51503ebf31da3aea200c6b4d220f19ed1659d84c5705cee5eb544"
+    },
+    {
+      "file": "audit/product-polish/07-final.md",
+      "sha256": "61bfed479e47e2fc06749c87a35a32a1d966088dfab43e1dfe129ebb395eef73"
+    },
+    {
+      "file": "ia/wireframes/materialpage.md",
+      "sha256": "f97fe91a71a3a85f7b31e9fb2eb9e22c7a4ec877e952c13e2fbc76de366ddbd0"
+    },
+    {
+      "file": "src/screens/assessmentintro/AssessmentIntro.tsx",
+      "sha256": "3e07f94015a69189f194bca22c68d74a2f27756740dda14e2c5f33f4a06c084d"
+    },
+    {
+      "file": "src/tokens/typography.css",
+      "sha256": "b2fd3ef2bafbc1d0c535389fc214d011bbc92638c5cfc1ca4f8fc7505b2b954a"
+    },
+    {
+      "file": "landing/app/public/fonts/onest-bold.woff2",
+      "sha256": "1f7d3995a9a02ed9e64120562d2a18a535ca8f325cbe8069e769f9d12f10fb5c"
+    }
+  ],
+  "builds": [
+    {
+      "file": "learn/assets/index-bBGdNjWO.js",
+      "same": true,
+      "sha256": "aaf015b08a9dc84421861ea8aed1c44e98fc4195249915488eaba51e63a402b8"
+    },
+    {
+      "file": "learn/assets/index-BohHRyoA.css",
+      "same": true,
+      "sha256": "09cfe819c9122f9e4fc5ad7dc2c289a39665983661b369b0ad4513133c3a5ddb"
+    },
+    {
+      "file": "learn-landing/assets/band-cobalt.png",
+      "same": true,
+      "sha256": "67dffa95e2685c739aa6a65829fb2b57d9604598b9e8134aa41aaf23ac147bc2"
+    },
+    {
+      "file": "learn-landing/assets/band-violet.png",
+      "same": true,
+      "sha256": "47cbbbb1429c49fc3cb24f8f8181359b82380d77413f96f6ca11f0bb66112c09"
+    },
+    {
+      "file": "learn-landing/assets/finale-cobalt.png",
+      "same": true,
+      "sha256": "8dffa6af3973b2eeeb971b58b9916a774591f9b720db40a4841954bee9741e5b"
+    },
+    {
+      "file": "learn-landing/assets/hero-ground-1440.png",
+      "same": true,
+      "sha256": "203862a4cf9038cc300c90542eee81a7bf0014e8c7f32f5fd6cdc48d54577a1f"
+    },
+    {
+      "file": "learn-landing/assets/hero-ground-375.png",
+      "same": true,
+      "sha256": "d8b638b7ffffab24ff4efd93efb31417c1835c24610505729c88212045c9bc39"
+    },
+    {
+      "file": "learn-landing/assets/hero-ground-768.png",
+      "same": true,
+      "sha256": "47f6986d8b276f1e4ed252f4e6045763c450f0ac0119b8e8498d37a96a172015"
+    },
+    {
+      "file": "learn-landing/assets/index-DrVevFI2.css",
+      "same": true,
+      "sha256": "c172905edf4b56c5ab2a3c300c3ed7dbd139f6e7cda5dca406824df38e63f3df"
+    },
+    {
+      "file": "learn-landing/assets/motion-CiLNXSEs.js",
+      "same": true,
+      "sha256": "93f7e120f0455949a49070d78548e4ba7d78f6fd10d493176c72da428de5337c"
+    }
+  ]
+}
