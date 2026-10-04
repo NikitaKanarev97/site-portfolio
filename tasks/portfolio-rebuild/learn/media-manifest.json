@@ -1,48 +1,5 @@
 [
   {
-    "file": "public/media/rebuild/learn/answer-desktop.webp",
-    "bytes": 316698,
-    "sha256": "8f978578b495672b33f4a7292134be3d3fd6aa4052911fb4d101574f1dfc788e",
-    "captureId": "answer-desktop"
-  },
-  {
-    "file": "public/media/rebuild/learn/answer-mobile.webp",
-    "bytes": 133666,
-    "sha256": "52018c96a65f5232cf25c05731e61fee1bed4e787f2616ab4fd3d90459561bd8",
-    "captureId": "answer-mobile"
-  },
-  {
-    "file": "public/media/rebuild/learn/archive-catalog.webp",
-    "bytes": 112664,
-    "sha256": "7797ae98e5cbf4e07c4ca5261d0d5a5f21cf23bec9af58361a4fddf8372aa146",
-    "captureId": null,
-    "source": "Byte reuse of public/media/case-learn/before-catalog.webp"
-  },
-  {
-    "file": "public/media/rebuild/learn/assessment-desktop.webp",
-    "bytes": 144848,
-    "sha256": "a1cafecb0232308af7e1b9dbe82811405902d159d4c8c8e75790a302da1730a1",
-    "captureId": "assessment-desktop"
-  },
-  {
-    "file": "public/media/rebuild/learn/assessment-mobile.webp",
-    "bytes": 91412,
-    "sha256": "a7e2cea1c0a01088e15cbc68e1166a26aa2ac7a77752940781216e4d68594c72",
-    "captureId": "assessment-mobile"
-  },
-  {
-    "file": "public/media/rebuild/learn/completion-desktop.webp",
-    "bytes": 281978,
-    "sha256": "a9e3be31771223488be828baa6a367e42b6ce873b2e8deef0490d0fb74e69125",
-    "captureId": "completion-desktop"
-  },
-  {
-    "file": "public/media/rebuild/learn/completion-mobile.webp",
-    "bytes": 107930,
-    "sha256": "21f8eb82ab22fd761c889a0921c3bdc85d545cf80046cea36487323f4f574451",
-    "captureId": "completion-mobile"
-  },
-  {
     "file": "public/media/rebuild/learn/cover-answer-desktop.webp",
     "bytes": 63162,
     "sha256": "16c62c4c83210a4ab59e7108bf456ce454219aaaff6a554cd1b2d83b3ac5b83c",
@@ -79,18 +36,6 @@
     "captureId": "cover-programme-mobile"
   },
   {
-    "file": "public/media/rebuild/learn/landing-desktop.webp",
-    "bytes": 161068,
-    "sha256": "80083a0f6a1c0ac33b37f074b1eb3f82f0ffd5ed1ff501aa1c8a5fab3d89eddd",
-    "captureId": "landing-desktop"
-  },
-  {
-    "file": "public/media/rebuild/learn/landing-mobile.webp",
-    "bytes": 102040,
-    "sha256": "cefa82154b122cb703cfbeba50f4fee13055ce4e46668884d55116853bced010",
-    "captureId": "landing-mobile"
-  },
-  {
     "file": "public/media/rebuild/learn/onest-bold.woff2",
     "bytes": 22228,
     "sha256": "1f7d3995a9a02ed9e64120562d2a18a535ca8f325cbe8069e769f9d12f10fb5c",
@@ -108,18 +53,6 @@
     "bytes": 126514,
     "sha256": "a2708b96ab388e005c8c6bb5f7d3f56d7714a0715bdd2b68ba648ec2ec4f78c6",
     "captureId": "programme-mobile"
-  },
-  {
-    "file": "public/media/rebuild/learn/progress-desktop.webp",
-    "bytes": 4462,
-    "sha256": "0ee9888eff0d56098dc09f3a6e1427e2220e185062652c1cb50c35ab5c378526",
-    "captureId": "progress-desktop"
-  },
-  {
-    "file": "public/media/rebuild/learn/progress-mobile.webp",
-    "bytes": 4462,
-    "sha256": "0ee9888eff0d56098dc09f3a6e1427e2220e185062652c1cb50c35ab5c378526",
-    "captureId": "progress-mobile"
   },
   {
     "file": "public/media/rebuild/learn/theme-explore-desktop.webp",
@@ -170,15 +103,195 @@
     "captureId": "theme-setup-mobile"
   },
   {
+    "file": "public/media/rebuild/learn/answer-desktop.webp",
+    "bytes": 146684,
+    "sha256": "c73f6c0ed8db86d92f7fb6fbed033c7c1a1a7d30df37d1e59bd91218180601bd",
+    "captureId": "answer-desktop",
+    "source": "http://127.0.0.1:4395/prototypes/learn/material/onvif-not-found?lang=en",
+    "selection": "Same complete first diagnostic section and native fields.",
+    "width": 2304,
+    "height": 1550,
+    "dpr": 2,
+    "viewport": {
+      "width": 1440,
+      "height": 1600
+    }
+  },
+  {
+    "file": "public/media/rebuild/learn/completion-desktop.webp",
+    "bytes": 48050,
+    "sha256": "d103669303622d34efd219e6d0d7efd9f68eb8fd304bb3b0a539cc33207961d0",
+    "captureId": "completion-desktop",
+    "source": "http://127.0.0.1:4395/prototypes/learn/player/puskonaladka/2?lang=en",
+    "selection": "Whole final diagnostic section, completion notice and next action. Curriculum outside the selected region; no clipped curriculum row. Native UI untouched.",
+    "width": 2080,
+    "height": 756,
+    "dpr": 2,
+    "viewport": {
+      "width": 1440,
+      "height": 1600
+    }
+  },
+  {
+    "file": "public/media/rebuild/learn/assessment-desktop.webp",
+    "bytes": 88048,
+    "sha256": "f46191b570d2bd7bbf758834c1b291fa1b26b75357fac803259219918aba4c03",
+    "captureId": "assessment-desktop",
+    "source": "http://127.0.0.1:4395/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=en",
+    "selection": "Whole assessment heading, notice and rules with 32px native blue above and below; symmetric native page gutters.",
+    "width": 1568,
+    "height": 1606,
+    "dpr": 2,
+    "viewport": {
+      "width": 1440,
+      "height": 1600
+    }
+  },
+  {
+    "file": "public/media/rebuild/learn/landing-desktop.webp",
+    "bytes": 89724,
+    "sha256": "4e49912100ea5930b75b5d0d8bd19cc27c2ed856b1a512872003abcf19c0c85b",
+    "captureId": "landing-desktop",
+    "source": "http://127.0.0.1:4395/prototypes/learn-landing/en/?lang=en",
+    "selection": "Full landing navigation and hero, ending at the section boundary before the next heading.",
+    "width": 2880,
+    "height": 1642,
+    "dpr": 2,
+    "viewport": {
+      "width": 1440,
+      "height": 1600
+    }
+  },
+  {
+    "file": "public/media/rebuild/learn/answer-mobile.webp",
+    "bytes": 116780,
+    "sha256": "3b520f17196fb7e9af8f7fc4a38999d374cd3a2f535e7fee86e8da653294ede1",
+    "captureId": "answer-mobile",
+    "source": "http://127.0.0.1:4395/prototypes/learn/material/onvif-not-found?lang=en",
+    "selection": "Same complete first diagnostic section and native fields.",
+    "width": 780,
+    "height": 2120,
+    "dpr": 2,
+    "viewport": {
+      "width": 390,
+      "height": 1600
+    }
+  },
+  {
+    "file": "public/media/rebuild/learn/completion-mobile.webp",
+    "bytes": 42054,
+    "sha256": "5f2c5e712e81e4ab8eefa92da064c642b14321e5dea30fdf0c2b39bda17ef43d",
+    "captureId": "completion-mobile",
+    "source": "http://127.0.0.1:4395/prototypes/learn/player/puskonaladka/2?lang=en",
+    "selection": "Whole final diagnostic section, completion notice and next action. Curriculum outside the selected region; no clipped curriculum row. Native UI untouched.",
+    "width": 780,
+    "height": 956,
+    "dpr": 2,
+    "viewport": {
+      "width": 390,
+      "height": 1600
+    }
+  },
+  {
+    "file": "public/media/rebuild/learn/assessment-mobile.webp",
+    "bytes": 85524,
+    "sha256": "4d6bfef089c2e52e08410349aaf10f85d79b4a4e26995db4dfad6db9ff07196a",
+    "captureId": "assessment-mobile",
+    "source": "http://127.0.0.1:4395/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=en",
+    "selection": "Whole assessment heading, notice and rules with 32px native blue above and below; symmetric native page gutters.",
+    "width": 780,
+    "height": 2618,
+    "dpr": 2,
+    "viewport": {
+      "width": 390,
+      "height": 1600
+    }
+  },
+  {
+    "file": "public/media/rebuild/learn/landing-mobile.webp",
+    "bytes": 65498,
+    "sha256": "fac306dfb861eedb59d73e3dcfc456d1ababf76b4212d810d3888c939c046445",
+    "captureId": "landing-mobile",
+    "source": "http://127.0.0.1:4395/prototypes/learn-landing/en/?lang=en",
+    "selection": "Full landing navigation and hero, ending at the section boundary before the next heading.",
+    "width": 780,
+    "height": 2116,
+    "dpr": 2,
+    "viewport": {
+      "width": 390,
+      "height": 1600
+    }
+  },
+  {
     "file": "public/media/rebuild/learn/trust-desktop.webp",
-    "bytes": 10214,
-    "sha256": "169f588ed3233743da880757a00fcf0e9cb3f4d59f28c5d3885bd9f9c1447feb",
-    "captureId": "trust-desktop"
+    "bytes": 5556,
+    "sha256": "90e17d4a45723da7e2873de13da77af59c11bc2e1bc516b4a254c052c3e1586e",
+    "captureId": "trust-desktop",
+    "source": "http://127.0.0.1:4395/prototypes/learn/material/onvif-not-found?lang=en",
+    "selection": "Whole native component with true outer transparency. Original component typography, border, padding and alpha preserved.",
+    "width": 576,
+    "height": 164,
+    "dpr": 2,
+    "viewport": {
+      "width": 320,
+      "height": 1000
+    }
   },
   {
     "file": "public/media/rebuild/learn/trust-mobile.webp",
-    "bytes": 10214,
-    "sha256": "169f588ed3233743da880757a00fcf0e9cb3f4d59f28c5d3885bd9f9c1447feb",
-    "captureId": "trust-mobile"
+    "bytes": 5556,
+    "sha256": "90e17d4a45723da7e2873de13da77af59c11bc2e1bc516b4a254c052c3e1586e",
+    "captureId": "trust-mobile",
+    "source": "http://127.0.0.1:4395/prototypes/learn/material/onvif-not-found?lang=en",
+    "selection": "Whole native component with true outer transparency. Original component typography, border, padding and alpha preserved.",
+    "width": 576,
+    "height": 164,
+    "dpr": 2,
+    "viewport": {
+      "width": 320,
+      "height": 1000
+    }
+  },
+  {
+    "file": "public/media/rebuild/learn/progress-desktop.webp",
+    "bytes": 2534,
+    "sha256": "8a8e7dffa4a25dd5e72fb3445804b634be0cf2b5539bf781461c1ad31c49d611",
+    "captureId": "progress-desktop",
+    "source": "http://127.0.0.1:4395/prototypes/learn/player/puskonaladka/2?lang=en",
+    "selection": "Whole native component with true outer transparency. Original component typography, border, padding and alpha preserved.",
+    "width": 576,
+    "height": 74,
+    "dpr": 2,
+    "viewport": {
+      "width": 320,
+      "height": 1000
+    }
+  },
+  {
+    "file": "public/media/rebuild/learn/progress-mobile.webp",
+    "bytes": 2534,
+    "sha256": "8a8e7dffa4a25dd5e72fb3445804b634be0cf2b5539bf781461c1ad31c49d611",
+    "captureId": "progress-mobile",
+    "source": "http://127.0.0.1:4395/prototypes/learn/player/puskonaladka/2?lang=en",
+    "selection": "Whole native component with true outer transparency. Original component typography, border, padding and alpha preserved.",
+    "width": 576,
+    "height": 74,
+    "dpr": 2,
+    "viewport": {
+      "width": 320,
+      "height": 1000
+    }
+  },
+  {
+    "file": "public/media/rebuild/learn/archive-catalog.webp",
+    "bytes": 94168,
+    "sha256": "31661ca26d68165b7716c6ef20e74f528a26ad680ffa156b23cc5cd168089023",
+    "captureId": null,
+    "source": "D:/Claude-projects/Site-portfolio/public/media/rebuild/learn/archive-catalog.webp",
+    "width": 1413,
+    "height": 666,
+    "reused": true,
+    "id": "archive-catalog",
+    "selection": "Existing corrected native archive catalog, ending after the first complete card row."
   }
 ]

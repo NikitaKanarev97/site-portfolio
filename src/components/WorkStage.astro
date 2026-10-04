@@ -10,14 +10,16 @@ interface Props {
   locale: 'en' | 'ru';
   usage?: 'home' | 'cover';
   loading?: 'eager' | 'lazy';
+  href?: string;
+  linkLabel?: string;
 }
-const {theme, media, locale, usage = 'home', loading = 'lazy'} = Astro.props;
+const {theme, media, locale, usage = 'home', loading = 'lazy', href, linkLabel} = Astro.props;
 const art = caseArt(theme, locale);
 const shots = media.variant === 'proof' ? media.panels ?? [media.shot] : media.variant === 'screen' ? media.items : [];
 const visibleShots: ShotItem[] = theme === 'pawly' ? shots.slice(-1) : shots;
 ---
 <div class:list={['work-stage', `work-stage--${theme}`, `work-stage--${usage}`]} data-motion={theme === 'agent' ? 'cover-interlock' : undefined}>
-  {theme === 'learn' ? <LearnStage locale={locale} loading={loading} /> : theme === 'vet' ? <VetStage locale={locale} loading={loading} /> : <>
+  {theme === 'learn' ? <LearnStage locale={locale} loading={loading} href={href} linkLabel={linkLabel} /> : theme === 'vet' ? <VetStage locale={locale} loading={loading} href={href} linkLabel={linkLabel} /> : <>
   {theme === 'portal' && <div class="work-stage__annotation">
     <p class="ds-meta-xs">{art.label}</p>
     <p class="ds-display-7xl work-stage__figure">38</p>
@@ -30,7 +32,7 @@ const visibleShots: ShotItem[] = theme === 'pawly' ? shots.slice(-1) : shots;
   <div class="work-stage__screens">
     {visibleShots.map((shot, i) => <>
       {theme === 'agent' && i === 1 && <div class="work-stage__gate" data-cover-gate><span aria-hidden="true" /><p class="ds-meta-xs">{art.label}</p></div>}
-      <div class="work-stage__panel" data-cover-panel={theme === 'agent' ? '' : undefined}><CaseScreen item={shot} loading={loading} /></div>
+      <div class="work-stage__panel" data-cover-panel={theme === 'agent' ? '' : undefined}><CaseScreen item={shot} loading={loading} href={href} linkLabel={linkLabel} /></div>
     </>)}
   </div>
   </>}

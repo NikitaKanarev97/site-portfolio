@@ -77,7 +77,7 @@ const heroProof = checkpoint.payload.items[3].shot;
 
     <div class="hero__proof">
       <p class="ds-meta-xs"><a href={home.featured.items[0].href}>{home.hero.proofLabel}<span aria-hidden="true">↗</span></a></p>
-      <CaseScreen item={heroProof} loading="eager" caption={home.hero.proofCaption} />
+      <CaseScreen item={heroProof} loading="eager" caption={home.hero.proofCaption} href={home.featured.items[0].href} linkLabel={locale === 'ru' ? 'Читать кейс Agent Ops' : 'Read the Agent Ops case'} />
     </div>
 
     <div class="hero__copy">

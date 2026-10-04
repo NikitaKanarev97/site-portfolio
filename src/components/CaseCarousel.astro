@@ -46,7 +46,7 @@ const {
 } = Astro.props;
 ---
 
-<div class:list={['case-carousel', className]} data-carousel>
+<div class:list={['case-carousel', slides.every(s => 'shot' in s && s.shot.device === 'phone') && 'case-carousel--phones', className]} data-carousel>
   <div class="case-carousel__bar" data-carousel-bar hidden>
     <span class="ds-meta-xs case-carousel__count" aria-hidden="true">
       <span data-carousel-index>1</span> / {slides.length}
@@ -186,6 +186,10 @@ const {
     min-inline-size: 0;
     scroll-snap-align: start;
   }
+  .case-carousel--phones .case-carousel__slide { flex-basis: min(88%, calc(var(--space-48) * 2 + var(--space-16))); }
+  .case-carousel--phones { max-inline-size: calc(var(--space-48) * 4 + var(--space-16)); margin-inline: auto; }
+  .case-carousel--phones .case-carousel__track { margin-inline-end: 0; padding-inline-end: 0; }
+  .case-carousel--phones .case-carousel__figure :global(.case-plate) { padding: var(--space-4); }
 
   @media (--bp-md) {
     .case-carousel__slide {
@@ -236,18 +240,32 @@ const {
         return b ? b.offsetLeft - a.offsetLeft : track.clientWidth;
       };
 
-      const current = () => Math.round(track.scrollLeft / step());
+      const current = () => track.scrollLeft + track.clientWidth >= track.scrollWidth - 1
+        ? slides.length - 1 : Math.max(0, Math.round(track.scrollLeft / step()));
+      let targetIndex = 0;
+      let navigating = false;
+      let targetOffset = 0;
 
       const update = () => {
         const i = Math.min(current(), slides.length - 1);
         index.textContent = String(i + 1);
         prev.disabled = track.scrollLeft <= 1;
         next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 1;
+        if (Math.abs(track.scrollLeft - targetOffset) <= 1) navigating = false;
       };
 
       const go = (dir: number) => {
+        targetIndex = Math.max(0, Math.min((navigating ? targetIndex : current()) + dir, slides.length - 1));
+        navigating = true;
+        const max = track.scrollWidth - track.clientWidth;
+        const desired = Math.min(targetIndex * step(), max);
+        // At the end, several slides may share the same clamped offset.
+        // A previous action must still move to the preceding reachable stop.
+        const destination = dir < 0 && Math.abs(desired - track.scrollLeft) <= 1
+          ? Math.max(0, Math.floor((track.scrollLeft - 1) / step()) * step()) : desired;
+        targetOffset = destination;
         track.scrollTo({
-          left: (current() + dir) * step(),
+          left: destination,
           behavior: reduce.matches ? 'auto' : 'smooth',
         });
       };
@@ -255,6 +273,13 @@ const {
       prev.addEventListener('click', () => go(-1));
       next.addEventListener('click', () => go(1));
       track.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+      const manual = () => { navigating = false; };
+      track.addEventListener('pointerdown', manual, { passive: true });
+      track.addEventListener('wheel', manual, { passive: true });
+      track.addEventListener('keydown', manual);
+      const observer = new ResizeObserver(update);
+      observer.observe(track);
+      document.addEventListener('astro:before-swap', () => observer.disconnect(), { once: true });
       update();
     });
   }

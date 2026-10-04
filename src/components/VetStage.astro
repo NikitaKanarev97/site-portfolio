@@ -2,7 +2,7 @@
 import CaseScreen from './CaseScreen.astro';
 import { makeVetStory } from '../copy/cases/vet-clinic';
 import { caseArt } from '../copy/case-art';
-const {locale,loading='lazy'} = Astro.props as {locale:'en'|'ru';loading?:'eager'|'lazy'};
+const {locale,loading='lazy',href,linkLabel} = Astro.props as {locale:'en'|'ru';loading?:'eager'|'lazy';href?:string;linkLabel?:string};
 const ru = locale==='ru';
 const art = caseArt('vet',locale);
 const step = makeVetStory(locale).blocks.find(b=>b.type==='steps');
@@ -11,9 +11,9 @@ const [trace,invoice,owner] = step.payload.items;
 ---
 <div class="vet-stage" data-motion-group data-motion-stagger="tight">
   <div class="vet-stage__route ds-meta-xs"><span>{ru?'Марсик · один визит':'Marsik · one visit'}</span><span>{ru?'Сохранено 09:12 → опубликовано 09:13':'Saved 09:12 → published 09:13'}</span></div>
-  <figure class="vet-stage__trace"><figcaption class="ds-meta-xs">01 · {trace.label}</figcaption><CaseScreen item={trace.shot} loading={loading} /></figure>
-  <figure class="vet-stage__invoice"><figcaption class="ds-meta-xs">02 · {invoice.label}</figcaption><CaseScreen item={invoice.shot} loading={loading} /></figure>
-  <figure class="vet-stage__owner"><figcaption class="ds-meta-xs">03 · {owner.label}</figcaption><CaseScreen item={owner.shot} loading={loading} /></figure>
+  <figure class="vet-stage__trace"><figcaption class="ds-meta-xs">01 · {trace.label}</figcaption><CaseScreen item={trace.shot} loading={loading} href={href} linkLabel={linkLabel} /></figure>
+  <figure class="vet-stage__invoice"><figcaption class="ds-meta-xs">02 · {invoice.label}</figcaption><CaseScreen item={invoice.shot} loading={loading} href={href} linkLabel={linkLabel} /></figure>
+  <figure class="vet-stage__owner"><figcaption class="ds-meta-xs">03 · {owner.label}</figcaption><CaseScreen item={owner.shot} loading={loading} href={href} linkLabel={linkLabel} /></figure>
   <p class="vet-stage__constraint ds-body-sm">{art.detail}</p>
 </div>
 <style>

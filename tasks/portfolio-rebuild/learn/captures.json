@@ -2,18 +2,19 @@
   {
     "id": "answer-desktop",
     "file": "public/media/rebuild/learn/answer-desktop.webp",
-    "source": "http://127.0.0.1:4362/prototypes/learn/material/onvif-not-found?lang=en",
+    "source": "http://127.0.0.1:4395/prototypes/learn/material/onvif-not-found?lang=en",
     "locale": "en",
     "fixture": "anonymous",
     "viewport": {
       "width": 1440,
-      "height": 1000
+      "height": 1600
     },
     "dpr": 2,
-    "width": 2880,
-    "height": 2000,
-    "sha256": "8f978578b495672b33f4a7292134be3d3fd6aa4052911fb4d101574f1dfc788e",
-    "alpha": false
+    "width": 2304,
+    "height": 1550,
+    "sha256": "c73f6c0ed8db86d92f7fb6fbed033c7c1a1a7d30df37d1e59bd91218180601bd",
+    "alpha": false,
+    "selection": "Same complete first diagnostic section and native fields."
   },
   {
     "id": "programme-desktop",
@@ -34,18 +35,19 @@
   {
     "id": "completion-desktop",
     "file": "public/media/rebuild/learn/completion-desktop.webp",
-    "source": "http://127.0.0.1:4362/prototypes/learn/player/puskonaladka/2?lang=en",
+    "source": "http://127.0.0.1:4395/prototypes/learn/player/puskonaladka/2?lang=en",
     "locale": "en",
     "fixture": "same material end, explicit action before click",
     "viewport": {
       "width": 1440,
-      "height": 1000
+      "height": 1600
     },
     "dpr": 2,
-    "width": 2880,
-    "height": 2000,
-    "sha256": "a9e3be31771223488be828baa6a367e42b6ce873b2e8deef0490d0fb74e69125",
-    "alpha": false
+    "width": 2080,
+    "height": 756,
+    "sha256": "d103669303622d34efd219e6d0d7efd9f68eb8fd304bb3b0a539cc33207961d0",
+    "alpha": false,
+    "selection": "Whole final diagnostic section, completion notice and next action. Curriculum outside the selected region; no clipped curriculum row. Native UI untouched."
   },
   {
     "id": "cover-programme-desktop",
@@ -66,34 +68,36 @@
   {
     "id": "landing-desktop",
     "file": "public/media/rebuild/learn/landing-desktop.webp",
-    "source": "http://127.0.0.1:4362/prototypes/learn-landing/en/?lang=en",
+    "source": "http://127.0.0.1:4395/prototypes/learn-landing/en/?lang=en",
     "locale": "en",
     "fixture": "anonymous",
     "viewport": {
       "width": 1440,
-      "height": 1000
+      "height": 1600
     },
     "dpr": 2,
     "width": 2880,
-    "height": 2000,
-    "sha256": "80083a0f6a1c0ac33b37f074b1eb3f82f0ffd5ed1ff501aa1c8a5fab3d89eddd",
-    "alpha": false
+    "height": 1642,
+    "sha256": "4e49912100ea5930b75b5d0d8bd19cc27c2ed856b1a512872003abcf19c0c85b",
+    "alpha": false,
+    "selection": "Full landing navigation and hero, ending at the section boundary before the next heading."
   },
   {
     "id": "answer-mobile",
     "file": "public/media/rebuild/learn/answer-mobile.webp",
-    "source": "http://127.0.0.1:4362/prototypes/learn/material/onvif-not-found?lang=en",
+    "source": "http://127.0.0.1:4395/prototypes/learn/material/onvif-not-found?lang=en",
     "locale": "en",
     "fixture": "anonymous",
     "viewport": {
       "width": 390,
-      "height": 844
+      "height": 1600
     },
     "dpr": 2,
     "width": 780,
-    "height": 1688,
-    "sha256": "52018c96a65f5232cf25c05731e61fee1bed4e787f2616ab4fd3d90459561bd8",
-    "alpha": false
+    "height": 2120,
+    "sha256": "3b520f17196fb7e9af8f7fc4a38999d374cd3a2f535e7fee86e8da653294ede1",
+    "alpha": false,
+    "selection": "Same complete first diagnostic section and native fields."
   },
   {
     "id": "programme-mobile",
@@ -114,18 +118,19 @@
   {
     "id": "completion-mobile",
     "file": "public/media/rebuild/learn/completion-mobile.webp",
-    "source": "http://127.0.0.1:4362/prototypes/learn/player/puskonaladka/2?lang=en",
+    "source": "http://127.0.0.1:4395/prototypes/learn/player/puskonaladka/2?lang=en",
     "locale": "en",
     "fixture": "same material end, explicit action before click",
     "viewport": {
       "width": 390,
-      "height": 844
+      "height": 1600
     },
     "dpr": 2,
     "width": 780,
-    "height": 1688,
-    "sha256": "21f8eb82ab22fd761c889a0921c3bdc85d545cf80046cea36487323f4f574451",
-    "alpha": false
+    "height": 956,
+    "sha256": "5f2c5e712e81e4ab8eefa92da064c642b14321e5dea30fdf0c2b39bda17ef43d",
+    "alpha": false,
+    "selection": "Whole final diagnostic section, completion notice and next action. Curriculum outside the selected region; no clipped curriculum row. Native UI untouched."
   },
   {
     "id": "cover-programme-mobile",
@@ -146,18 +151,19 @@
   {
     "id": "landing-mobile",
     "file": "public/media/rebuild/learn/landing-mobile.webp",
-    "source": "http://127.0.0.1:4362/prototypes/learn-landing/en/?lang=en",
+    "source": "http://127.0.0.1:4395/prototypes/learn-landing/en/?lang=en",
     "locale": "en",
     "fixture": "anonymous",
     "viewport": {
       "width": 390,
-      "height": 844
+      "height": 1600
     },
     "dpr": 2,
-    "width": 700,
-    "height": 1986,
-    "sha256": "cefa82154b122cb703cfbeba50f4fee13055ce4e46668884d55116853bced010",
-    "alpha": false
+    "width": 780,
+    "height": 2116,
+    "sha256": "fac306dfb861eedb59d73e3dcfc456d1ababf76b4212d810d3888c939c046445",
+    "alpha": false,
+    "selection": "Full landing navigation and hero, ending at the section boundary before the next heading."
   },
   {
     "id": "theme-setup-desktop",
@@ -368,97 +374,103 @@
   {
     "id": "trust-mobile",
     "file": "public/media/rebuild/learn/trust-mobile.webp",
-    "source": "http://127.0.0.1:4362/prototypes/learn/material/onvif-not-found?lang=en",
+    "source": "http://127.0.0.1:4395/prototypes/learn/material/onvif-not-found?lang=en",
     "locale": "en",
     "width": 576,
     "height": 164,
     "dpr": 2,
-    "sha256": "169f588ed3233743da880757a00fcf0e9cb3f4d59f28c5d3885bd9f9c1447feb",
+    "sha256": "90e17d4a45723da7e2873de13da77af59c11bc2e1bc516b4a254c052c3e1586e",
     "nativeWidth": 288,
     "viewport": {
       "width": 320,
       "height": 1000
-    }
+    },
+    "selection": "Whole native component with true outer transparency. Original component typography, border, padding and alpha preserved."
   },
   {
     "id": "trust-desktop",
     "file": "public/media/rebuild/learn/trust-desktop.webp",
-    "source": "http://127.0.0.1:4362/prototypes/learn/material/onvif-not-found?lang=en",
+    "source": "http://127.0.0.1:4395/prototypes/learn/material/onvif-not-found?lang=en",
     "locale": "en",
     "width": 576,
     "height": 164,
     "dpr": 2,
-    "sha256": "169f588ed3233743da880757a00fcf0e9cb3f4d59f28c5d3885bd9f9c1447feb",
+    "sha256": "90e17d4a45723da7e2873de13da77af59c11bc2e1bc516b4a254c052c3e1586e",
     "nativeWidth": 288,
     "viewport": {
       "width": 320,
       "height": 1000
     },
-    "fixture": "Compact native component at 288 CSS pixels, documentary selection."
+    "fixture": "Compact native component at 288 CSS pixels, documentary selection.",
+    "selection": "Whole native component with true outer transparency. Original component typography, border, padding and alpha preserved."
   },
   {
     "id": "progress-mobile",
     "file": "public/media/rebuild/learn/progress-mobile.webp",
-    "source": "http://127.0.0.1:4362/prototypes/learn/player/puskonaladka/2?lang=en",
+    "source": "http://127.0.0.1:4395/prototypes/learn/player/puskonaladka/2?lang=en",
     "locale": "en",
     "width": 576,
     "height": 74,
     "dpr": 2,
-    "sha256": "0ee9888eff0d56098dc09f3a6e1427e2220e185062652c1cb50c35ab5c378526",
+    "sha256": "8a8e7dffa4a25dd5e72fb3445804b634be0cf2b5539bf781461c1ad31c49d611",
     "nativeWidth": 288,
     "viewport": {
       "width": 320,
       "height": 1000
     },
-    "fixture": "Current position 3/11, not completion."
+    "fixture": "Current position 3/11, not completion.",
+    "selection": "Whole native component with true outer transparency. Original component typography, border, padding and alpha preserved."
   },
   {
     "id": "progress-desktop",
     "file": "public/media/rebuild/learn/progress-desktop.webp",
-    "source": "http://127.0.0.1:4362/prototypes/learn/player/puskonaladka/2?lang=en",
+    "source": "http://127.0.0.1:4395/prototypes/learn/player/puskonaladka/2?lang=en",
     "locale": "en",
     "width": 576,
     "height": 74,
     "dpr": 2,
-    "sha256": "0ee9888eff0d56098dc09f3a6e1427e2220e185062652c1cb50c35ab5c378526",
+    "sha256": "8a8e7dffa4a25dd5e72fb3445804b634be0cf2b5539bf781461c1ad31c49d611",
     "nativeWidth": 288,
     "viewport": {
       "width": 320,
       "height": 1000
     },
-    "fixture": "Compact native position meter at 288 CSS pixels, not completion."
+    "fixture": "Compact native position meter at 288 CSS pixels, not completion.",
+    "selection": "Whole native component with true outer transparency. Original component typography, border, padding and alpha preserved."
   },
   {
     "id": "assessment-desktop",
     "file": "public/media/rebuild/learn/assessment-desktop.webp",
-    "source": "http://127.0.0.1:4362/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=en",
+    "source": "http://127.0.0.1:4395/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=en",
     "locale": "en",
-    "width": 2048,
-    "height": 1476,
+    "width": 1568,
+    "height": 1606,
     "dpr": 2,
-    "sha256": "a1cafecb0232308af7e1b9dbe82811405902d159d4c8c8e75790a302da1730a1",
+    "sha256": "f46191b570d2bd7bbf758834c1b291fa1b26b75357fac803259219918aba4c03",
     "crop": "Whole title, lead, notice and rules. Desktop includes the native symmetric page gutters. Ends before the additional-bank section; no action is clipped.",
     "viewport": {
-      "width": 1024,
-      "height": 1000
+      "width": 1440,
+      "height": 1600
     },
-    "fixture": "state-marina-ready; introduction only, no result."
+    "fixture": "state-marina-ready; introduction only, no result.",
+    "selection": "Whole assessment heading, notice and rules with 32px native blue above and below; symmetric native page gutters."
   },
   {
     "id": "assessment-mobile",
     "file": "public/media/rebuild/learn/assessment-mobile.webp",
-    "source": "http://127.0.0.1:4362/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=en",
+    "source": "http://127.0.0.1:4395/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=en",
     "locale": "en",
-    "width": 716,
-    "height": 1684,
+    "width": 780,
+    "height": 2618,
     "dpr": 2,
-    "sha256": "a7e2cea1c0a01088e15cbc68e1166a26aa2ac7a77752940781216e4d68594c72",
+    "sha256": "4d6bfef089c2e52e08410349aaf10f85d79b4a4e26995db4dfad6db9ff07196a",
     "crop": "Whole title, lead, notice and rules. Desktop includes the native symmetric page gutters. Ends before the additional-bank section; no action is clipped.",
     "viewport": {
       "width": 390,
-      "height": 1000
+      "height": 1600
     },
-    "fixture": "state-marina-ready; introduction only, no result."
+    "fixture": "state-marina-ready; introduction only, no result.",
+    "selection": "Whole assessment heading, notice and rules with 32px native blue above and below; symmetric native page gutters."
   },
   {
     "id": "cover-desktop",

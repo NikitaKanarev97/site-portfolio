@@ -337,3 +337,5 @@ stories — английские: `Button`, `InfoNote`, `EmptyState`, `BottomShe
 CaseArtwork для Pawly cover/thumbnail использует существующий space-2 и object-fit: contain, без multiply: весь фрагмент помещается в рамку без тонирования. Hero и остальные slug не попадают под новый селектор. На mobile MoreCases по прежнему паттерну показывает текстовую строку без картинки; скрытая картинка не стала новым мобильным блоком.
 
 Карточки и alt EN/RU согласованы. Проверка scripts/verify-pawly-cover.mjs: обе локали, 360/390/1440, загрузка одного нового изображения, contain/normal, отсутствие overflow, переход и неизменённый hero. Публикация — в существующий main после build и scoped CSS.
+
+Owner correction 04.10.2026: compatibility process has four complete native screens in order: address/service area → candidate list → profile/recorded limits → dated verification details. Compact phone slides, visible arrows and accurate 1/4 counter replace the oversized two-frame carousel.

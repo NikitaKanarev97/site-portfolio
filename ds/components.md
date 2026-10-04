@@ -507,3 +507,12 @@ Home uses an external anchor with `data-dialog-open` as the progressive dialog t
 
 FeaturedCase: отдельные редакционные композиции пяти работ; article остаётся семантическим контейнером с заголовком и CTA. Только Agent имеет полный тёмный фон; Portal/Learn — локальный холст WorkStage, Vet — светлый маршрутный заголовок, Pawly — фото и отчёт на странице. usage=cover сохраняет принятые обложки кейсов; usage=home применяет новую режиссуру. Все физические медиапанели radius-lg, native пиксели и поля CaseScreen неизменны. Никакого вложенного интерактива.
 
+
+## Technical corrections · owner feedback · 04.10.2026
+
+Home hero proof explains AI oversight and opens Agent Ops through the whole CaseScreen (`href`, `linkLabel`). FeaturedCase uses a stretched CTA over its editorial surface; all native Home frames open the relevant case. Inside cases, CaseScreen keeps MediaZoom. No nested anchors.
+CaseCallout: a flowing numbered list on every width, number → short rule → explanation. From bp-md matching markers sit in the left frame field at the detail's height; they never cover native UI. Below bp-md the numbered legend remains without cramped pins. No absolute label collision. The native image uses the same padded CaseScreen and zoom as other captures.
+CaseCarousel phone slides use a compact width and 16px plate fields, with arrows and an accurate end counter. Pawly has four meaningful screens: address, candidates, profile, dated verification details. Resize updates the controls; rapid actions retain their target and the previous button always leaves the last reachable stop.
+CaseSteps measures the whole frame, including padding, action row and caption, before fitting it to a pinned scene. A text ResizeObserver updates the measurement; teardown removes its sizing and observer. Only one state is visible during exchange. Focus scrub uses 0.25s catch-up from the mirrored motion layer. Tablet/mobile/short/reduce remain a natural list.
+CaseNext clips horizontally; its track has vertical breathing room and heading line-height, preserving ascenders and descenders.
+Learn documentary regions include native pale-blue fields. Completion begins with the whole final diagnostic section and ends after the whole action, without partial curriculum rows. Assessment includes native top/bottom fields; landing ends at the complete hero boundary. Native progress/trust alpha is isolated without repainting components.

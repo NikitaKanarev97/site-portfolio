@@ -504,3 +504,5 @@ surface-review → graphite-800: тёмный стол чтения Agent Ops, �
 
 Field-bleed: scaleX выводится из clientWidth / offsetWidth; рост 2.55–3 такта (.45), UI и текст остаются в собственном масштабе. Checkpoint headline — display-5xl на wide, heading-4xl на 1024; fallback использует прежние heading-роли.
 
+
+Technical corrections 04.10.2026: focusStage.scrub = 0.25 seconds in ds/motion.js and its byte-identical src mirror. Existing state/heading/space/focus tokens remain the source for fields, links and motion.

@@ -1,7 +1,7 @@
 ---
 import CaseScreen from './CaseScreen.astro';
 import { caseArt } from '../copy/case-art';
-const {locale, loading = 'lazy'} = Astro.props as {locale:'en'|'ru';loading?:'eager'|'lazy'};
+const {locale, loading = 'lazy', href, linkLabel} = Astro.props as {locale:'en'|'ru';loading?:'eager'|'lazy';href?:string;linkLabel?:string};
 const ru = locale === 'ru';
 const art = caseArt('learn',locale);
 const material = {src:'/media/art-direction/learn/material-desktop.png',srcNarrow:'/media/art-direction/learn/material-mobile.png',device:'panel' as const,alt:ru?'Тот же материал ONVIF: версия, заголовок, введение и целый первый шаг диагностики; справа — связанные программы.':'The same ONVIF material: version, title, introduction and complete first diagnostic step; related learning paths at right.'};
@@ -12,14 +12,14 @@ const passport = {src:'/media/art-direction/learn/passport-desktop.png',srcNarro
   <div class="learn-stage__heading"><p class="ds-heading-2xl">{art.label}</p><p class="ds-body-sm">{art.detail}</p></div>
   <figure class="learn-stage__material">
     <figcaption class="ds-meta-xs">{ru?'Справочник · материал ONVIF':'Reference · ONVIF material'}</figcaption>
-    <CaseScreen item={material} loading={loading} />
+    <CaseScreen item={material} loading={loading} href={href} linkLabel={linkLabel} />
   </figure>
   <figure class="learn-stage__unit">
     <figcaption class="ds-meta-xs">{ru?'Программа · тот же ресурс 03':'Learning path · same resource 03'}<span aria-hidden="true">↙</span></figcaption>
-    <CaseScreen item={unit} loading={loading} />
+    <CaseScreen item={unit} loading={loading} href={href} linkLabel={linkLabel} />
   </figure>
   <figure class="learn-stage__passport">
-    <CaseScreen item={passport} loading={loading} />
+    <CaseScreen item={passport} loading={loading} href={href} linkLabel={linkLabel} />
   </figure>
 </div>
 <style>

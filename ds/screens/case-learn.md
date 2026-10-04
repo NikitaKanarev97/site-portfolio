@@ -55,3 +55,7 @@
 Полная матрица и lifecycle: `tasks/portfolio-rebuild/learn/verification.json`, `verification.log`. Статические страницы и ключевые блоки: `shots/`. Движение центральной сцены: `motion/` (исходная browser recording, MP4 и contact sheet без ретайминга). Reference comparisons: `comparison-reference-map.png`, `comparison-reference-theme.png`.
 
 `report.md` фиксирует точный охват, ограничения браузера, checks, known common B-G-01 и commit handoff. Изменений общих tokens, renderer, schema, animations и CSS-mirrors нет. Push и публикация не выполняются в Chat C.
+
+## Технические исправления владельца · 04.10.2026
+
+Новые кадры сохраняют родные голубые поля со всех сторон. Ответ показывает целый первый диагностический раздел; завершение — целый финальный раздел и действие, без обрезанной строки программы. Assessment имеет 32px родного поля до заголовка и после правил. Landing заканчивается на границе hero, до следующего заголовка. TrustHeader и ProgressMeter сняты целиком с прозрачностью внешних углов; внутренние стили продукта сохранены. Архивный каталог заканчивается после первого полного ряда карточек. Источники, границы и hashes — tasks/technical-fixes/captures.json.

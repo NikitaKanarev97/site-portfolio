@@ -522,6 +522,54 @@
       "source": "http://127.0.0.1:4372/ru/app/active-service",
       "text": "Все экраны\nАктивная услуга\n\nДемо-маршрут · свежесть геопозиции неизвестна\n\nСвернуть события\nПрогулка идёт\nБайкал на прогулке\n\nОжидаем дома к\n\n14:50\n\nНачало 14:05 · 45 мин · 22 августа\n\nМарина К.\nНаписать\nПозвонить\n\nДемо-связь · без отправки и звонка\n\nФото при передаче · 14:05\nСмотреть фото\nВсе события\n\nВозврат ещё не подтверждён\n\nГлавная\nЗаказы\nЧаты\nПрофиль",
       "locale": "ru"
+    },
+    {
+      "file": "public/media/rebuild/pawly/en/address-input.webp",
+      "source": "public/media/case-pawly/address-input.webp",
+      "locale": "en",
+      "selection": "Complete native screen reused without pixel changes.",
+      "sha256": "c64d73f5d67f18cda2a4065c5767c4dc90c406f459c68e58d67f1db8b494553e",
+      "bytes": 37104,
+      "width": 564,
+      "height": 1221,
+      "reused": true,
+      "id": "en-address-input"
+    },
+    {
+      "file": "public/media/rebuild/pawly/ru/address-input.webp",
+      "source": "public/media/case-pawly-ru/address-input.webp",
+      "locale": "ru",
+      "selection": "Complete native screen reused without pixel changes.",
+      "sha256": "df8718015517a57cf3cb1b7934dc5501b628d479385ec24d39ca4892a214fedc",
+      "bytes": 38554,
+      "width": 564,
+      "height": 1221,
+      "reused": true,
+      "id": "ru-address-input"
+    },
+    {
+      "file": "public/media/rebuild/pawly/en/verification-details.webp",
+      "source": "public/media/case-pawly/clip-verification-poster.webp",
+      "width": 563,
+      "height": 1569,
+      "reused": true,
+      "sha256": "b1f1703d68f88f64d98020782a40179230461b26d9e08770489190a28156c8a0",
+      "id": "en-verification-details",
+      "locale": "en",
+      "selection": "Complete native screen reused without pixel changes.",
+      "bytes": 45712
+    },
+    {
+      "file": "public/media/rebuild/pawly/ru/verification-details.webp",
+      "source": "public/media/case-pawly-ru/clip-verification-poster.webp",
+      "width": 563,
+      "height": 1569,
+      "reused": true,
+      "sha256": "42baf04459fadd0686c5820d04f1397219d1b3ac1741f32f3760c5ef24a7a338",
+      "id": "ru-verification-details",
+      "locale": "ru",
+      "selection": "Complete native screen reused without pixel changes.",
+      "bytes": 50116
     }
   ]
 }

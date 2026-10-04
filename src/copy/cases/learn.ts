@@ -222,7 +222,7 @@ export function makeLearnStory(lang: 'en' | 'ru'): CaseStory {
           thesis: { label: t('Audit → direction', 'Аудит → направление'), thesis: t('Start with the specialist’s task', 'Начать с рабочей задачи'),
             body: t('The archive leads with courses, ratings and rewards. I reframed entry around a question or programme, with the answer available before sign-in.', 'Архивный каталог начинает с курсов, рейтингов и наград. Я перенёс вход на рабочий вопрос или программу: полезный ответ доступен ещё до авторизации.') },
           issue: { src: `${base}archive-catalog.webp`, alt: t('Archived Russian course catalogue with ratings and reward points', 'Архивный каталог курсов с рейтингом и баллами'),
-            marks: [{ x: 20, y: 14, text: t('Courses define the entry', 'Вход определён курсами') }, { x: 25, y: 74, text: t('Points accompany the material', 'Баллы сопровождают материал') }],
+            marks: [{ x: 20, y: 17, text: t('Courses define the entry', 'Вход определён курсами') }, { x: 25, y: 90, text: t('Points accompany the material', 'Баллы сопровождают материал') }],
             caption: t('Archived interface. The visible entry shaped the redesign direction.', 'Архивный интерфейс: видимый вход определил направление переработки.') },
         } },
       { id: 'shared-material', type: 'artifact', evidenceId: 'learn-model', mediaId: 'learn-content-model', motion: 'draw',

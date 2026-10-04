@@ -96,7 +96,9 @@ const { surface, tone } = caseThemes[theme];
   .case-next__marquee {
     display: block;
     min-inline-size: 0;
-    overflow: clip;
+    overflow-x: clip;
+    overflow-y: visible;
+    padding-block: var(--space-6);
   }
 
   .case-next__track {
@@ -120,6 +122,7 @@ const { surface, tone } = caseThemes[theme];
 
   .case-next__title {
     white-space: nowrap;
+    line-height: var(--lh-heading);
   }
 
   .case-next__proto {

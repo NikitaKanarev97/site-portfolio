@@ -308,3 +308,5 @@ Current composition: name metadata → Product Designer h1 → short specialisat
 
 Пять stories и порядок сохраняются. Разная геометрия WorkStage видна без одинаковой внешней цветной карточки; фон Agent занимает флагман, Portal/Learn — только собственный UI-холст, Vet — маршрут одной записи, Pawly — фотография и полный отчёт. Шаг секций остаётся из foundation. Общий лайтбокс, полные native источники и 16/24px поля не меняются.
 
+
+Owner correction 04.10.2026: hero proof is explicitly a work example of AI oversight, and its whole surface opens Agent Ops. Featured work surfaces and native frames open their case. Large CTA remains visible; zoom belongs to case detail. The H4 two-line opening and differentiated materials remain.

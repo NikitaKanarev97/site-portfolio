@@ -14,8 +14,10 @@ interface Props {
   class?: string;
   native?: boolean;
   caption?: string;
+  href?: string;
+  linkLabel?: string;
 }
-const { item, loading = 'lazy', class: className, native = false, caption } = Astro.props;
+const { item, loading = 'lazy', class: className, native = false, caption, href, linkLabel } = Astro.props;
 assertShotMedia(item);
 const size = await frameSize(item.src);
 const narrowSize = item.srcNarrow ? await frameSize(item.srcNarrow) : size;
@@ -33,9 +35,9 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
       <MediaFrame src={item.src} alt={item.alt} video={item.video} film={item.film} ratio="natural" fill reveal={false} />
     </div>
   ) : (
-    <a class="case-screen__open" href={item.src} data-astro-reload data-zoom-trigger data-zoom-src={item.src}
+    <a class:list={['case-screen__open', href && 'case-screen__open--case']} href={href ?? item.src} data-astro-reload={href ? undefined : true} data-zoom-trigger={href ? undefined : true} data-zoom-src={href ? undefined : item.src}
       data-zoom-alt={item.alt} data-zoom-alt-narrow={item.altNarrow}
-      data-zoom-caption={caption} aria-label={`${copy.zoom.open}: ${item.alt}`}>
+      data-zoom-caption={caption} aria-label={href ? linkLabel : `${copy.zoom.open}: ${item.alt}`}>
       <div class="case-screen__media">
         <picture>
           {item.srcNarrow && <source media={narrowMedia} srcset={item.srcNarrow} width={narrowSize?.width} height={narrowSize?.height} />}
@@ -46,7 +48,7 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
       </div>
       <div class="case-screen__text">
         {caption && <p class="ds-body-sm">{caption}</p>}
-        <span class="ds-meta-xs case-screen__action" data-h-utility>{copy.zoom.open}<span aria-hidden="true">↗</span></span>
+        <span class="ds-meta-xs case-screen__action" data-h-utility>{linkLabel ?? copy.zoom.open}<span aria-hidden="true">↗</span></span>
       </div>
     </a>
   )}
@@ -54,6 +56,7 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
 
 <style>
   .case-screen {
+    position: relative;
     min-inline-size: 0;
     padding: var(--space-4);
     border-radius: var(--radius-lg);
@@ -63,6 +66,8 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
   }
   .case-screen__open { display: grid; gap: var(--space-3); color: inherit; text-decoration: none; cursor: zoom-in; }
   .case-screen__open:focus-visible { outline-offset: var(--space-2); }
+  .case-screen__open--case { cursor: pointer; }
+  .case-screen__open--case::after { content: ''; position: absolute; inset: 0; border-radius: var(--radius-lg); }
   .case-screen__media { position: relative; aspect-ratio: var(--ar-narrow); }
   .case-screen__media picture { display: contents; }
   .case-screen img { display: block; inline-size: 100%; block-size: auto; object-fit: contain; }

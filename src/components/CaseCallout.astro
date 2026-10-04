@@ -2,8 +2,7 @@
 /**
  * CaseCallout — ds/components.md, карта ds/screens/case.md §8
  *
- * Один элемент крупно, с нумерованными выносками (блоки 04 и 08). Донор —
- * Alex Dyakov: тонкая линия от номера на элементе к подписи сбоку.
+ * Один элемент крупно, с нумерованными пояснениями сбоку (блоки 04 и 08).
  *
  *   tone=note   номер ink — что значит каждая часть элемента (блок 08)
  *   tone=issue  номер красный — что было сломано, кадр «было» (блок 04)
@@ -12,16 +11,14 @@
  * экрана (правило 1). Кадр режется по границе смыслового блока (правило 2)
  * — это забота съёмки, компонент кадр не обрезает.
  *
- * Геометрия без JS. Номер стоит на кадре по координатам x, y в процентах.
- * Подпись стоит в колонке справа на той же высоте y, линия идёт только
- * снаружи, от края кадра до подписи. Подписи
- * у близких по y номеров наедут друг на друга: разводить их — забота
- * данных, не компонента.
+ * Один номер и его текст стоят рядом в отдельном поле справа от кадра.
+ * Маркеры в левом поле кадра связывают номер с высотой детали,
+ * сохраняя родной UI открытым. На узкой ширине остаётся список.
+ * Список остаётся в потоке: длинные пояснения не сталкиваются.
  *
- * Ниже bp-md линий нет: номера на кадре, список подписей под кадром
+ * Ниже bp-md нумерованный список подписей стоит под кадром
  * внутри той же плашки.
  *
- * Движение: data-motion="draw" на линиях, исполнитель — этап 3.
  */
 import CasePlate from './CasePlate.astro';
 import CaseScreen from './CaseScreen.astro';
@@ -41,37 +38,20 @@ const { callout, tone = 'note', plate = 'light', class: className } = Astro.prop
   <CasePlate tone={plate}>
     <div class="case-callout__body">
       <div class="case-callout__shot">
-        <CaseScreen item={{ src: callout.src, alt: callout.alt, srcNarrow: callout.srcNarrow, altNarrow: callout.altNarrow, device: 'panel' }}>
-        <Fragment slot="annotations">
-        {
-          callout.marks.map((mark, i) => (
-            <>
-              <span
-                class="case-callout__line"
-                style={`--x: ${mark.x}%; --y: ${mark.y}%`}
-                data-motion="draw"
-                aria-hidden="true"
-              />
-              <span
-                class="ds-meta-xs case-callout__dot"
-                style={`--x: ${mark.x}%; --y: ${mark.y}%`}
-                aria-hidden="true"
-              >
-                {i + 1}
-              </span>
-            </>
-          ))
-        }
-        </Fragment>
+        <CaseScreen item={{ src: callout.src, srcNarrow: callout.srcNarrow, alt: callout.alt, altNarrow: callout.altNarrow, device: 'panel' }}>
+          <Fragment slot="annotations">
+            {callout.marks.map((mark, i) => <span class="ds-meta-xs case-callout__dot case-callout__pin" style={`--y: ${mark.y}%`} aria-hidden="true">{i + 1}</span>)}
+          </Fragment>
         </CaseScreen>
       </div>
       <ol class="case-callout__list">
         {
           callout.marks.map((mark, i) => (
-            <li class="case-callout__item" style={`--y: ${mark.y}%`}>
+            <li class="case-callout__item">
               <span class="ds-meta-xs case-callout__dot case-callout__dot--list" aria-hidden="true">
                 {i + 1}
               </span>
+              <span class="case-callout__rule" aria-hidden="true" />
               <span class="ds-body-sm" data-h="caption">
                 {mark.text}
               </span>
@@ -107,8 +87,9 @@ const { callout, tone = 'note', plate = 'light', class: className } = Astro.prop
   }
 
   .case-callout__shot {
-    position: relative;
+    min-inline-size: 0;
   }
+
 
   .case-callout__dot {
     display: inline-grid;
@@ -122,17 +103,6 @@ const { callout, tone = 'note', plate = 'light', class: className } = Astro.prop
     flex: none;
   }
 
-  .case-callout__shot .case-callout__dot {
-    position: absolute;
-    inset-inline-start: var(--x);
-    inset-block-start: var(--y);
-    translate: -50% -50%;
-    pointer-events: none;
-  }
-
-  .case-callout__line {
-    display: none;
-  }
 
   .case-callout__list {
     display: flex;
@@ -144,10 +114,13 @@ const { callout, tone = 'note', plate = 'light', class: className } = Astro.prop
   }
 
   .case-callout__item {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto var(--space-8) minmax(0, 1fr);
+    align-items: start;
     gap: var(--space-3);
   }
+  .case-callout__rule { block-size: var(--border-width); background: var(--mark); margin-block-start: var(--space-3); }
+  .case-callout__pin { display: none; pointer-events: none; }
 
   .case-callout__caption {
     margin-block-start: var(--flow-pair);
@@ -155,37 +128,18 @@ const { callout, tone = 'note', plate = 'light', class: className } = Astro.prop
   }
 
   @media (--bp-md) {
+    .case-callout__pin { display: inline-grid; position: absolute; inset-inline-start: calc(-1 * var(--space-8)); inset-block-start: var(--y); translate: 0 -50%; }
+    .case-callout__pin::after { content: ''; position: absolute; inset-inline-start: 100%; inset-block-start: 50%; inline-size: var(--space-2); block-size: var(--border-width); background: var(--mark); }
     .case-callout__body {
       display: grid;
       grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-      gap: var(--space-12);
-    }
-
-    /* Линия только в межколонном поле; интерфейс не перечёркивается. */
-    .case-callout__line {
-      display: block;
-      position: absolute;
-      inset-inline-start: 100%;
-      inset-inline-end: calc(-1 * var(--space-12));
-      inset-block-start: var(--y);
-      block-size: var(--border-width);
-      background: var(--mark);
+      gap: var(--space-6);
     }
 
     .case-callout__list {
-      position: relative;
-      display: block;
+      justify-content: center;
+      gap: var(--space-6);
     }
 
-    .case-callout__item {
-      position: absolute;
-      inset-inline: 0;
-      inset-block-start: var(--y);
-      translate: 0 -50%;
-    }
-
-    .case-callout__dot--list {
-      display: none;
-    }
   }
 </style>
