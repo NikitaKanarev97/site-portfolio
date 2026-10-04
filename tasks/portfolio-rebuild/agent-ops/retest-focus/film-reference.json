@@ -1,0 +1,18 @@
+{
+  "owner": "G-common-F",
+  "common": "6e8f0e075916dec82a90831c7c2c78a38ea60e20",
+  "metadata": "fdfda334f4d44d6e2f46c1822df2422eb99269dd",
+  "file": "tasks/portfolio-rebuild/integration/focus-common/film/verification.json",
+  "sha256": "861d8b4cdb41d6d0cb850e39a9a76d6e5197bfa0f416fe1000b43cc1c35491fb",
+  "observations": 14,
+  "failures": 0,
+  "reusedAcceptedProof": true,
+  "rerunOnActualF": false,
+  "reason": "MediaFrame and film assets unchanged; controller explicitly permits the accepted 14-observation G regression instead of repeating it",
+  "mediaFrame": {
+    "file": "src/components/MediaFrame.astro",
+    "actual": "b31eba8691fedcf988963838f34e9b915a21827e12456eb236850f95b6c5ddff",
+    "expected": "b31eba8691fedcf988963838f34e9b915a21827e12456eb236850f95b6c5ddff"
+  },
+  "limits": "Local Chromium; synthetic hidden handler, no physical hidden-tab certification"
+}

@@ -1,0 +1,10 @@
+en registry snapshots 15 failures 15
+ru registry snapshots 15 failures 30
+file:///C:/Users/kanar/.codex/worktrees/agent-ops-rebuild-f/Site-portfolio/tasks/portfolio-rebuild/agent-ops/retest-focus/verify-debug.mjs:27
+if(failures.length)throw new Error('Duplicate/pin registry failures');
+                         ^
+
+Error: Duplicate/pin registry failures
+    at file:///C:/Users/kanar/.codex/worktrees/agent-ops-rebuild-f/Site-portfolio/tasks/portfolio-rebuild/agent-ops/retest-focus/verify-debug.mjs:27:26
+
+Node.js v24.18.0

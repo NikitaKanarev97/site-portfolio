@@ -1,0 +1,31 @@
+{
+  "sourceCommon": "6e8f0e075916dec82a90831c7c2c78a38ea60e20",
+  "rootMetadata": "fdfda334f4d44d6e2f46c1822df2422eb99269dd",
+  "scripts": [
+    {
+      "source": "D:/Claude-projects/Site-portfolio/tasks/portfolio-rebuild/integration/reproduce-focus-common.mjs",
+      "sourceSha256": "3ed65d0dee0dbce6524d4c4fdd86ee3910b0d65c5ec754332a78c51455b20681",
+      "own": "tasks/portfolio-rebuild/agent-ops/retest-focus/reproduce-exact.mjs",
+      "ownSha256": "517f9abdcd5465381718476ddab25ec2a8874de2cf6518f06b7a2e1accfe3262"
+    },
+    {
+      "source": "D:/Claude-projects/Site-portfolio/tasks/portfolio-rebuild/integration/verify-focus-native.mjs",
+      "sourceSha256": "fadd448e02cebd3f99173a180556e2bf5304045cb743d2cb205902701d3380f9",
+      "own": "tasks/portfolio-rebuild/agent-ops/retest-focus/verify-native.mjs",
+      "ownSha256": "239b6be5c198966030c5c0668c28de7e601bc96f4c0f6f7ed238a18dacc831b6"
+    },
+    {
+      "source": "D:/Claude-projects/Site-portfolio/tasks/portfolio-rebuild/integration/verify-f-focus-debug.mjs",
+      "sourceSha256": "117094a8614fe0ca4eb8b3d226686d77ed748f98a9c2b93188b77a24c031729d",
+      "own": "tasks/portfolio-rebuild/agent-ops/retest-focus/verify-debug.mjs",
+      "ownSha256": "ce9cee22a6d6e97f3ee414955af613be13bbf26a9a0672157a3f3dbd90de3cbe"
+    }
+  ],
+  "adaptations": [
+    "All output paths redirected into F retest-focus, defaults to own 4384/4385",
+    "Native suite saves eight full/eight reduce actual frames",
+    "DEV suite requires the debug hook before checking registry",
+    "Existing F matrix copied with --no-shots to avoid duplicating large unchanged static captures"
+  ],
+  "gProofFilesWritten": 0
+}

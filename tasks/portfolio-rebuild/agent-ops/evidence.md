@@ -13,3 +13,5 @@ Product: D:/Claude-projects/Agent-ops-console, clean HEAD f4bb4bb451651593e423dd
 | agent-review-cost | Every payout waits for a human; design trade-off | Accepted pilot checkpoint + product consequence-preview | Demonstrated prototype rule; no claim of deployed coverage | Every payout waits for a person / Каждая выплата ждёт человека |
 
 Technical F browser observations are separate from these client facts. They do not validate user hypotheses or establish business impact. The client fact comes from the confirmed checkpoint; historical QA PASS is not artistic acceptance.
+
+Actual focus retest: accepted shared delta 6e8f0e075916dec82a90831c7c2c78a38ea60e20 imported as c950cb20ec9557f6a656dd8ed825c18b40970c88, exact24/native-wheel96 and lifecycle/fallback/registry pass. F-G-01 closed with retest-focus evidence; technical readiness for G-final does not imply new client, business or owner-artistic acceptance. Original source facts, EN/RU story and public media retain their 3d35 bytes.

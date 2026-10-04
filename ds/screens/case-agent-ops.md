@@ -21,7 +21,7 @@ No new art direction, IA/user flow/system sheet or bespoke motion. Shared surfac
 
 Evidence/media/artifact passports: `tasks/portfolio-rebuild/agent-ops/{evidence,media,artifact-plan}.md`. Exact source/capture hashes, page frames, central recording and fresh F checks are recorded there. Historical PASS below is not F acceptance.
 
-Current handoff is conditional on F-G-01: repeated live reduced-motion may shift the reading position. Independent copy/media/static/geometry checks are complete; shared motion remains frozen. Details and required G correction/retest are in `tasks/portfolio-rebuild/agent-ops/common-requests.md` and `report.md`.
+F-G-01 is closed on actual F after the exact accepted two-file delta `6e8f0e075916dec82a90831c7c2c78a38ea60e20` (own import `c950cb20ec9557f6a656dd8ed825c18b40970c88`). Shared motion is frozen at those bytes. Actual exact24/native-wheel96, full/reduce/no-JS, lifecycle/registry, integrity and harmony retest passes. EN/RU copy, source UI and media retain the original 3d35 payload. Current evidence and G-final handoff: `tasks/portfolio-rebuild/agent-ops/report.md`; old conditional results remain historical.
 
 ---
 
