@@ -1,0 +1,848 @@
+{
+  "base": "http://127.0.0.1:4380",
+  "nativeInput": "Focused HTML video + trusted Space key, Chromium native controls; no scripted play/pause/seek",
+  "results": [
+    {
+      "lang": "en",
+      "mode": "full",
+      "route": "/preview/film-common/en/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": true
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "noindex": "noindex, nofollow"
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.644511,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 24,
+        "bound": true
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.856075,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 30,
+        "bound": true
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": true
+      },
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "mode": "reduce",
+      "route": "/preview/film-common/en/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": true
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "noindex": "noindex, nofollow"
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.578202,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 22,
+        "bound": true
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.774974,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 27,
+        "bound": true
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": true
+      },
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "mode": "no-js",
+      "route": "/preview/film-common/en/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": null,
+        "readyState": 0,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": false
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "noindex": "noindex, nofollow"
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.527639,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 20,
+        "bound": false
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.739512,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 26,
+        "bound": false
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": false
+      },
+      "errors": []
+    },
+    {
+      "lang": "ru",
+      "mode": "full",
+      "route": "/preview/film-common/ru/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": true
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "noindex": "noindex, nofollow"
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.631756,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 24,
+        "bound": true
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.83953,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 30,
+        "bound": true
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": true
+      },
+      "errors": []
+    },
+    {
+      "lang": "ru",
+      "mode": "reduce",
+      "route": "/preview/film-common/ru/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": true
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "noindex": "noindex, nofollow"
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.636361,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 24,
+        "bound": true
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.831351,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 30,
+        "bound": true
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": true
+      },
+      "errors": []
+    },
+    {
+      "lang": "ru",
+      "mode": "no-js",
+      "route": "/preview/film-common/ru/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": null,
+        "readyState": 0,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": false
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "noindex": "noindex, nofollow"
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.51704,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 20,
+        "bound": false
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.729163,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 26,
+        "bound": false
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": false
+      },
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "mode": "lifecycle",
+      "beforeDeparture": {
+        "paused": false,
+        "ended": false,
+        "time": 0.522427,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 21,
+        "bound": true
+      },
+      "outside": {
+        "paused": true,
+        "ended": false,
+        "time": 0.536042,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 22,
+        "bound": true
+      },
+      "returned": {
+        "paused": true,
+        "ended": false,
+        "time": 0.536042,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 22,
+        "bound": true
+      },
+      "preference": {
+        "paused": true,
+        "ended": false,
+        "time": 0.972621,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 34,
+        "bound": true
+      },
+      "syntheticHidden": {
+        "paused": true,
+        "ended": false,
+        "time": 1.250797,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 42,
+        "bound": true
+      },
+      "syntheticVisible": {
+        "paused": true,
+        "ended": false,
+        "time": 1.250797,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+        "decodedFrames": 42,
+        "bound": true
+      },
+      "detached": {
+        "paused": true,
+        "connected": false,
+        "bound": false
+      },
+      "back": {
+        "count": 1,
+        "state": {
+          "paused": true,
+          "ended": false,
+          "time": 0,
+          "duration": null,
+          "readyState": 0,
+          "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof.mp4",
+          "controls": true,
+          "loop": false,
+          "autoplay": false,
+          "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/en/clip-return-proof-poster.webp",
+          "decodedFrames": 0,
+          "bound": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "lang": "ru",
+      "mode": "lifecycle",
+      "beforeDeparture": {
+        "paused": false,
+        "ended": false,
+        "time": 0.52544,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 21,
+        "bound": true
+      },
+      "outside": {
+        "paused": true,
+        "ended": false,
+        "time": 0.538985,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 22,
+        "bound": true
+      },
+      "returned": {
+        "paused": true,
+        "ended": false,
+        "time": 0.538985,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 22,
+        "bound": true
+      },
+      "preference": {
+        "paused": true,
+        "ended": false,
+        "time": 0.901405,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 31,
+        "bound": true
+      },
+      "syntheticHidden": {
+        "paused": true,
+        "ended": false,
+        "time": 1.17962,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 39,
+        "bound": true
+      },
+      "syntheticVisible": {
+        "paused": true,
+        "ended": false,
+        "time": 1.17962,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 39,
+        "bound": true
+      },
+      "detached": {
+        "paused": true,
+        "connected": false,
+        "bound": false
+      },
+      "back": {
+        "count": 1,
+        "state": {
+          "paused": true,
+          "ended": false,
+          "time": 0,
+          "duration": null,
+          "readyState": 0,
+          "source": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof.mp4",
+          "controls": true,
+          "loop": false,
+          "autoplay": false,
+          "poster": "http://127.0.0.1:4380/media/rebuild/common/film-fixture/ru/clip-return-proof-poster.webp",
+          "decodedFrames": 0,
+          "bound": true
+        }
+      },
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "mode": "existing-loop",
+      "route": "/work/vet-clinic/",
+      "playing": {
+        "paused": false,
+        "ended": false,
+        "time": 0.007343,
+        "duration": 10.733,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/case-vet/clip-dose-from-weight.webm",
+        "controls": false,
+        "loop": true,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/case-vet/clip-dose-from-weight-poster.webp",
+        "decodedFrames": 1,
+        "bound": true
+      },
+      "sourceTypes": [
+        "video/webm",
+        "video/mp4"
+      ],
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": 10.733333,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/case-vet/clip-dose-from-weight.mp4",
+        "controls": false,
+        "loop": true,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/case-vet/clip-dose-from-weight-poster.webp",
+        "decodedFrames": 4,
+        "bound": true
+      },
+      "outside": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": 10.733333,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/case-vet/clip-dose-from-weight.mp4",
+        "controls": false,
+        "loop": true,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/case-vet/clip-dose-from-weight-poster.webp",
+        "decodedFrames": 4,
+        "bound": true
+      },
+      "reentry": {
+        "paused": false,
+        "ended": false,
+        "time": 0.021284,
+        "duration": 10.733333,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/case-vet/clip-dose-from-weight.mp4",
+        "controls": false,
+        "loop": true,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/case-vet/clip-dose-from-weight-poster.webp",
+        "decodedFrames": 5,
+        "bound": true
+      }
+    },
+    {
+      "lang": "ru",
+      "mode": "existing-loop",
+      "route": "/ru/work/vet-clinic/",
+      "playing": {
+        "paused": false,
+        "ended": false,
+        "time": 0.008364,
+        "duration": 11.533,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/case-vet-ru/clip-dose-from-weight.webm",
+        "controls": false,
+        "loop": true,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/case-vet-ru/clip-dose-from-weight-poster.webp",
+        "decodedFrames": 1,
+        "bound": true
+      },
+      "sourceTypes": [
+        "video/webm",
+        "video/mp4"
+      ],
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.01332,
+        "duration": 11.533333,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/case-vet-ru/clip-dose-from-weight.mp4",
+        "controls": false,
+        "loop": true,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/case-vet-ru/clip-dose-from-weight-poster.webp",
+        "decodedFrames": 4,
+        "bound": true
+      },
+      "outside": {
+        "paused": true,
+        "ended": false,
+        "time": 0.01332,
+        "duration": 11.533333,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4380/media/case-vet-ru/clip-dose-from-weight.mp4",
+        "controls": false,
+        "loop": true,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/case-vet-ru/clip-dose-from-weight-poster.webp",
+        "decodedFrames": 4,
+        "bound": true
+      },
+      "reentry": {
+        "paused": false,
+        "ended": false,
+        "time": 0,
+        "duration": 11.533333,
+        "readyState": 1,
+        "source": "http://127.0.0.1:4380/media/case-vet-ru/clip-dose-from-weight.mp4",
+        "controls": false,
+        "loop": true,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4380/media/case-vet-ru/clip-dose-from-weight-poster.webp",
+        "decodedFrames": 4,
+        "bound": true
+      }
+    },
+    {
+      "lang": "en",
+      "mode": "geometry",
+      "viewport": {
+        "width": 1024,
+        "height": 900
+      },
+      "overflow": 0,
+      "film": true,
+      "staticSteps": 3
+    },
+    {
+      "lang": "en",
+      "mode": "geometry",
+      "viewport": {
+        "width": 1440,
+        "height": 600
+      },
+      "overflow": 0,
+      "film": true,
+      "staticSteps": 3
+    },
+    {
+      "lang": "ru",
+      "mode": "geometry",
+      "viewport": {
+        "width": 1024,
+        "height": 900
+      },
+      "overflow": 0,
+      "film": true,
+      "staticSteps": 3
+    },
+    {
+      "lang": "ru",
+      "mode": "geometry",
+      "viewport": {
+        "width": 1440,
+        "height": 600
+      },
+      "overflow": 0,
+      "film": true,
+      "staticSteps": 3
+    }
+  ],
+  "failures": [],
+  "limitations": [
+    "Native playback tested in local Chromium 1243. No physical devices or other browser engines.",
+    "Document-hidden branch tested with an explicit synthetic visibility handler probe; a physically hidden tab was not verified."
+  ],
+  "mediaFrameSha256": "b31eba8691fedcf988963838f34e9b915a21827e12456eb236850f95b6c5ddff",
+  "testedMediaFrameRawSha256": "d06c4deba0befd5e374bb2be001c158ca9060c49365598ab9e78397fd4bc2d25",
+  "normalization": "Only CRLF/LF and trailing whitespace normalized after full browser proof; clean-checkout launch tests use the canonical bytes."
+}

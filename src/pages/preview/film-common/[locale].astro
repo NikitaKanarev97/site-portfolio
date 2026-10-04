@@ -1,0 +1,14 @@
+---
+import PageShell from '../../../layouts/PageShell.astro';
+import CaseStory from '../../../components/CaseStory.astro';
+import { filmCommonFixture } from '../../../copy/cases/film-common-fixture';
+import { site } from '../../../copy/site';
+import { siteRu } from '../../../copy/ru/site';
+export function getStaticPaths() { return ['en', 'ru'].map(locale => ({ params: { locale } })); }
+const lang = Astro.params.locale as 'en' | 'ru';
+const story = filmCommonFixture(lang);
+const next = { href: lang === 'ru' ? '/ru/work/partner-portal/' : '/work/partner-portal/', title: 'Partner Portal', theme: 'portal' as const, label: lang === 'ru' ? 'Следующий кейс' : 'Next case' };
+---
+<PageShell title={story.cover.title} description={story.cover.outcome} lang={lang} siteCopy={lang === 'ru' ? siteRu : site} localePaths={{ en: '/preview/film-common/en/', ru: '/preview/film-common/ru/' }} noindex canonical={false} current={lang === 'ru' ? '/ru/work' : '/work'}>
+  <CaseStory story={story} lang={lang} id="film-common" next={next} />
+</PageShell>

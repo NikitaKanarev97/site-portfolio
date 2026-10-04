@@ -1,5 +1,9 @@
 # Общие запросы G · 04.10.2026
 
+## E-G-01/02/03 · закрыты G-common-E в общем слое
+
+Delta `433c80bcba29eda2060067570e9f8ec2087a2a91`: optional ShotItem.film и guard, передача CaseScreen → существующий MediaFrame; film MP4 → WebM для настоящего native playback без JS; pause вне viewport/вкладки с сохранением времени и ручным возвратом, cleanup observers/listeners/stall timers на route leave. Loop semantics/codecs прежние. 14 film/lifecycle/loop/geometry observations и 8 B/C profiles + 26 alpha HTTP captures — 0 failures. Физически скрытая вкладка не подтверждена; visibility branch проверен synthetic probe. Перенос delta на E d3bbbb воспроизведён без конфликтов и изменений case payload. См. film-common-report.md и film-common-handoff.md. E должен подключить film в своём среднем шаге и повторить case verification; готовность общей правки не означает приёмку его истории. D-G-01 zone labels отложен до G-final.
+
 Владелец принял A в текущем чате, затем указал конкретную визуальную ошибку углов specimens на /kit. Доводка вошла в первую базу. Общий слой передан G; текущая приёмка и закрытие запросов B/C записаны ниже.
 
 ## G-01 · Настоящие края specimens

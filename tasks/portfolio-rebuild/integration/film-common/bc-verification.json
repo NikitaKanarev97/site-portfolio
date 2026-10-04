@@ -1,0 +1,216 @@
+{
+  "base": "http://127.0.0.1:4380",
+  "profiles": [
+    {
+      "lang": "en",
+      "blocks": 7,
+      "states": 13,
+      "overflow": 0,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "next": "/work/learn/",
+      "route": "/work/partner-portal/",
+      "js": true,
+      "status": 200,
+      "movingAfterResize": true,
+      "destination": "/work/learn/",
+      "movingAfterBack": true,
+      "localeDestination": "/ru/work/partner-portal/",
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "blocks": 7,
+      "states": 13,
+      "overflow": 0,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "next": "/work/learn/",
+      "route": "/work/partner-portal/",
+      "js": false,
+      "status": 200,
+      "errors": []
+    },
+    {
+      "lang": "ru",
+      "blocks": 7,
+      "states": 13,
+      "overflow": 0,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "next": "/ru/work/learn/",
+      "route": "/ru/work/partner-portal/",
+      "js": true,
+      "status": 200,
+      "errors": []
+    },
+    {
+      "lang": "ru",
+      "blocks": 7,
+      "states": 13,
+      "overflow": 0,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "next": "/ru/work/learn/",
+      "route": "/ru/work/partner-portal/",
+      "js": false,
+      "status": 200,
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "blocks": 7,
+      "states": 6,
+      "overflow": 0,
+      "canonical": "https://kanarev.com/work/learn/",
+      "next": "/work/vet-clinic/",
+      "route": "/work/learn/",
+      "js": true,
+      "status": 200,
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "blocks": 7,
+      "states": 6,
+      "overflow": 0,
+      "canonical": "https://kanarev.com/work/learn/",
+      "next": "/work/vet-clinic/",
+      "route": "/work/learn/",
+      "js": false,
+      "status": 200,
+      "errors": []
+    },
+    {
+      "lang": "ru",
+      "blocks": 7,
+      "states": 6,
+      "overflow": 0,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "next": "/ru/work/vet-clinic/",
+      "route": "/ru/work/learn/",
+      "js": true,
+      "status": 200,
+      "movingAfterResize": true,
+      "destination": "/ru/work/vet-clinic/",
+      "movingAfterBack": true,
+      "localeDestination": "/work/learn/",
+      "errors": []
+    },
+    {
+      "lang": "ru",
+      "blocks": 7,
+      "states": 6,
+      "overflow": 0,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "next": "/ru/work/vet-clinic/",
+      "route": "/ru/work/learn/",
+      "js": false,
+      "status": 200,
+      "errors": []
+    }
+  ],
+  "captures": [
+    {
+      "file": "/media/rebuild/common/portal/fileupload-empty-480.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/fileupload-empty-288.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/fileupload-complete-480.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/fileupload-complete-288.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/fileupload-error-480.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/fileupload-error-288.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/resolutionrow-ambiguous-480.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/resolutionrow-ambiguous-288.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/resolutionrow-missing-480.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/resolutionrow-missing-288.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/resolutionrow-error-480.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/resolutionrow-error-288.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/resolutionrow-confirmed-from-ambiguous-480.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/resolutionrow-confirmed-from-ambiguous-288.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/availability-verified-480.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/availability-verified-288.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/availability-stale-480.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/availability-stale-288.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/availability-not-confirmed-480.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/availability-not-confirmed-288.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/quantitystepper-default-480.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/quantitystepper-default-288.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/quantitystepper-at-minimum-480.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/quantitystepper-at-minimum-288.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/quantitystepper-disabled-480.webp",
+      "matches": true
+    },
+    {
+      "file": "/media/rebuild/common/portal/quantitystepper-disabled-288.webp",
+      "matches": true
+    }
+  ],
+  "failures": []
+}
