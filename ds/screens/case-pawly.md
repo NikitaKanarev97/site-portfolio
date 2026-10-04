@@ -1,3 +1,7 @@
+## H · текущий художественный delta · 04.10.2026
+
+Вход WorkStage: исходная неизменённая демонстрационная фотография handover-dropoff и настоящий confirmed report. Происхождение явно подписано; это не новое пользовательское исследование. Human context ведёт к исходной return-proof сцене и ручному film; native phone, earning и компонентные матрицы сохранены.
+
 # Pawly E · индивидуальная история · 04.10.2026
 
 Приоритет — PLAN-CHATS 03–04.10.2026 и frozen story-contract. Полная пара находится в `src/copy/cases/pawly.ts` (`pawlyStory`, общая фабрика локалей) и `src/copy/ru/cases/pawly.ts` (`pawlyStoryRu`, assertStoryPair). Legacy export сохранён для штатного маршрута до интеграции G. Собственные noindex preview: `/preview/pawly-rebuild/en/` и `/preview/pawly-rebuild/ru/`, origin 4370. Ветка `codex/pawly-rebuild-e`, база 58002c3.

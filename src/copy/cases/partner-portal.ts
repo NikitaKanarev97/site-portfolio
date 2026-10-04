@@ -10,10 +10,10 @@ export const portalLineShot = (stage:string,alt:string,altNarrow=alt):ShotItem =
 
 /** Full B story; isolated preview only. Legacy export below remains public. */
 export const partnerPortalStory = defineStory({theme:'portal',plate:'light',
-  cover:{title:'Partner Portal',outcome:'Give buyers a working specification, from intake to checkout.',media:{
+  cover:{title:'Partner Portal',outcome:'A working specification, from intake to checkout.',media:{
     variant:'proof',eyebrow:'DSSL · B2B procurement',
     shot:portalLineShot('open','Actual buyer decision for row 38: original source text, eight units and three catalog candidates'),
-    caption:'Current reconstruction · actual UI on synthetic data',
+    caption:'Reconstruction · demonstration data',
   }},
   facts:[{term:'Work',value:'Commercial redesign shipped in full'},{term:'Shown',value:'Independent reconstruction on synthetic data'},
     {term:'Role',value:'Sole designer; frontend, backend, PM, QA and team lead'},

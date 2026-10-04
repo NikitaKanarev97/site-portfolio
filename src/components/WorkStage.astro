@@ -1,0 +1,79 @@
+---
+import CaseScreen from './CaseScreen.astro';
+import { caseArt } from '../copy/case-art';
+import type { CaseTheme, CoverMedia, ShotItem } from '../copy/cases/story';
+interface Props {
+  theme: CaseTheme;
+  media: CoverMedia;
+  locale: 'en' | 'ru';
+  usage?: 'home' | 'cover';
+  loading?: 'eager' | 'lazy';
+}
+const {theme, media, locale, usage = 'home', loading = 'lazy'} = Astro.props;
+const art = caseArt(theme, locale);
+const shots = media.variant === 'proof' ? media.panels ?? [media.shot] : media.variant === 'screen' ? media.items : [];
+const visibleShots: ShotItem[] = theme === 'pawly' ? shots.slice(-1) : theme === 'learn' ? [
+  {src:'/media/rebuild/learn/cover-answer-desktop.webp',srcNarrow:'/media/rebuild/learn/cover-answer-mobile.webp',device:'panel',alt:locale === 'ru' ? 'Целые версия, заголовок и описание того же материала об ONVIF.' : 'Whole version, title and lead of the same ONVIF material.'},
+  {src:'/media/art-direction/learn/passport-desktop.png',srcNarrow:'/media/art-direction/learn/passport-mobile.png',device:'panel',alt:locale === 'ru' ? 'Целый паспорт программы: объём, правила зачёта, демонстрационный документ и действие старта.' : 'Whole programme passport: workload, assessment rules, demonstration document and start action.'},
+] : shots;
+---
+<div class:list={['work-stage', `work-stage--${theme}`, `work-stage--${usage}`]} data-motion={theme === 'agent' ? 'cover-interlock' : undefined}>
+  {(theme === 'portal' || theme === 'vet') && <div class="work-stage__annotation">
+    <p class="ds-meta-xs">{art.label}</p>
+    <p class="ds-display-7xl work-stage__figure">{theme === 'portal' ? '38' : '30'}</p>
+    <p class="ds-body-sm work-stage__detail">{art.detail}</p>
+  </div>}
+  {theme === 'learn' && <div class="work-stage__model">
+    <p class="ds-heading-2xl">{art.label}</p><p class="ds-body-base">{art.detail}</p>
+    <span class="work-stage__path" aria-hidden="true" />
+  </div>}
+  {theme === 'pawly' && <figure class="work-stage__photo">
+    <img src="/media/art-direction/pawly/handover-dropoff.webp" width="800" height="597" loading={loading} decoding="async" alt={locale === 'ru' ? 'Демонстрационная фотография Pawly: питомец у двери, исполнитель снимает поводок.' : 'Pawly demonstration photograph: a dog at the door as the walker unclips the lead.'} />
+    <figcaption class="ds-body-sm">{art.detail}</figcaption>
+  </figure>}
+  <div class="work-stage__screens">
+    {visibleShots.map((shot, i) => <>
+      {theme === 'agent' && i === 1 && <div class="work-stage__gate" data-cover-gate><span aria-hidden="true" /><p class="ds-meta-xs">{art.label}</p></div>}
+      <div class="work-stage__panel" data-cover-panel={theme === 'agent' ? '' : undefined}><CaseScreen item={shot} loading={loading} native={theme === 'learn'} /></div>
+    </>)}
+  </div>
+</div>
+<style>
+  .work-stage { display: grid; gap: var(--space-6); align-items: center; }
+  .work-stage__screens { display: grid; gap: var(--space-6); min-inline-size: 0; align-items: center; }
+  .work-stage__panel { min-inline-size: 0; }
+  .work-stage__annotation { display: grid; gap: var(--space-3); align-content: center; }
+  .work-stage__annotation p, .work-stage__model p, .work-stage__gate p { margin: 0; }
+  .work-stage__figure { font-variant-numeric: tabular-nums; }
+  .work-stage__detail { max-inline-size: var(--measure-case); text-wrap: pretty; }
+  .work-stage__model { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-3) var(--space-8); }
+  .work-stage__path { flex: 1; min-inline-size: var(--space-12); border-block-end: var(--border-width) solid currentColor; }
+  .work-stage__gate { display: flex; gap: var(--space-3); align-items: center; justify-content: center; text-align: center; }
+  .work-stage__gate > span { inline-size: var(--space-3); block-size: var(--space-6); border-inline: var(--border-width) solid currentColor; }
+  .work-stage__photo { margin: 0; display: grid; gap: var(--space-3); }
+  .work-stage__photo img { display: block; inline-size: 100%; block-size: auto; border-radius: var(--radius-md); }
+  .work-stage--pawly .work-stage__panel { inline-size: 100%; max-inline-size: calc(var(--space-48) * 2); margin-inline: auto; }
+  .work-stage--learn .work-stage__panel:last-child { inline-size: 100%; max-inline-size: calc(var(--space-16) * 5); margin-inline: auto; }
+  @media (--below-bp-md) {
+    .work-stage__annotation { grid-template-columns: auto 1fr; align-items: center; column-gap: var(--space-6); }
+    .work-stage__figure { grid-row: 1 / 3; }
+    .work-stage__annotation > p:first-child { grid-column: 2; }
+    .work-stage__detail { grid-column: 2; }
+  }
+  @media (--bp-md) {
+    .work-stage--agent .work-stage__screens { grid-template-columns: 5fr 1fr 5fr; gap: var(--space-8); }
+    .work-stage--agent .work-stage__panel:last-child { padding-block-start: var(--space-12); }
+    .work-stage__gate { flex-direction: column; }
+    .work-stage__gate > span { inline-size: var(--space-8); block-size: var(--space-24); border-inline-width: var(--space-2); }
+    .work-stage--portal, .work-stage--vet { grid-template-columns: 1fr 4fr; gap: var(--space-12); }
+    .work-stage--portal .work-stage__annotation, .work-stage--vet .work-stage__annotation { align-self: start; padding-block-start: var(--space-8); }
+    .work-stage--learn .work-stage__screens { grid-template-columns: 3fr 1fr; padding-inline: var(--space-4); gap: var(--space-12); }
+    .work-stage--pawly { grid-template-columns: 3fr 2fr; gap: var(--space-12); }
+    .work-stage--pawly .work-stage__photo { align-self: center; }
+  }
+  @media (--bp-xl) {
+    .work-stage--pawly { grid-template-columns: 7fr 5fr; }
+    .work-stage--pawly .work-stage__screens { padding-inline: var(--space-8); }
+    .work-stage--learn { gap: var(--space-12); }
+  }
+</style>

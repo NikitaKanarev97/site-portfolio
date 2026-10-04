@@ -229,8 +229,8 @@ export function makeLearnStory(lang: 'en' | 'ru'): CaseStory {
         payload: { thesis: { label: t('Content model', 'Модель контента'), thesis: t('One material, two entrances', 'Один материал, два входа'),
           body: t('The material owns its content and version; programmes reference it. Reading history, explicit completion and assessment attempts remain separate records.', 'Материал хранит содержание и версию. Программа ссылается на него без копии. История чтения, явное завершение и попытка зачёта остаются отдельными записями.') },
           artifact: { data: learnContentModel, source: { kind: 'editorial', ref: 'Learn PRD §4.2/5.3, current MaterialPage and Player' }, caption: t('Editorial model: two entrances, one material, separate records.', 'Редакционная модель: два входа, один материал, отдельные записи.') } } },
-      { id: 'one-material', type: 'steps', evidenceId: 'learn-completion', mediaId: 'material-contexts', motion: 'focus',
-        payload: { label: t('The same ONVIF material', 'Тот же материал об ONVIF'), items: [
+      { id: 'one-material', type: 'steps', evidenceId: 'learn-completion', mediaId: 'material-contexts', motion: 'static',
+        payload: { composition: 'routes', label: t('The same ONVIF material', 'Тот же материал об ONVIF'), items: [
           { label: t('Reference', 'Справочник'), thesis: t('Answer the question now', 'Ответить на вопрос сейчас'), layout: 'wide',
             body: t('The answer has its own address, version and date. A learning path sits alongside.', 'Полный ответ имеет свой адрес, версию и дату. Учебный путь предложен рядом с ответом.'),
             shot: shot('answer', 'Open ONVIF answer with version, date and learning path rail', 'Открытый ответ об ONVIF, версия, дата и связанные программы'), caption: t('Reference view · onvif-not-found.', 'Справочник · onvif-not-found.') },

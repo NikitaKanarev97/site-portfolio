@@ -478,7 +478,7 @@ export const agentOpsStory = defineStory({
     { id: 'missing-evidence', type: 'detail', evidenceId: 'agent-panels', mediaId: 'agent-evidence',
       payload: { thesis: agentOpsMaterial.details, callout: agentOpsMaterial.details.callout } },
     { id: 'accepted-prototype', type: 'outcome', motion: 'static', evidenceId: 'agent-acceptance',
-      payload: { result: agentOpsMaterial.result,
+      payload: { presentation: 'editorial', cards: [{ value: '19', caption: 'screens · accepted prototype' }, { value: '3', caption: 'roles · one oversight system' }], result: agentOpsMaterial.result,
         tradeoff: { label: agentOpsMaterial.closing[0].term, text: agentOpsMaterial.closing[0].value },
         evidence: { label: agentOpsMaterial.closing[1].term, text: agentOpsMaterial.closing[1].value } } },
   ],

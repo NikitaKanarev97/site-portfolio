@@ -10,6 +10,7 @@ import CaseCallout from './CaseCallout.astro';
 import CaseShot from './CaseShot.astro';
 import CaseCarousel from './CaseCarousel.astro';
 import CaseSteps from './CaseSteps.astro';
+import CaseRoutes from './CaseRoutes.astro';
 import CaseSpecimen from './CaseSpecimen.astro';
 import CaseImpact from './CaseImpact.astro';
 import CaseNext from './CaseNext.astro';
@@ -27,12 +28,12 @@ const label = (block: CaseStory['blocks'][number]) => block.type === 'steps' ? b
   : block.type === 'thesis' ? block.payload.label
   : block.payload.thesis?.label ?? block.id;
 ---
-<div class="pilot case-story" data-h="case" data-story-version="blocks-v1" data-word-budget="450" id={id}>
-  <CaseCover theme={story.theme} title={story.cover.title} outcome={story.cover.outcome} media={story.cover.media} transitionKey={`case-${story.theme}`} />
+<div class:list={['pilot', 'case-story', `case-story--${story.theme}`]} data-h="case" data-story-version="blocks-v1" data-word-budget="450" id={id}>
+  <CaseCover theme={story.theme} title={story.cover.title} outcome={story.cover.outcome} media={story.cover.media} locale={lang} transitionKey={`case-${story.theme}`} />
   <CaseSheet>
     <div class="ds-container"><MetaList layout="facts" items={story.facts} /></div>
     {story.blocks.map(block => (
-      <section class="ds-container ds-section" id={block.id} aria-label={label(block)} data-block-type={block.type} data-evidence-id={block.evidenceId} data-media-id={block.mediaId} data-story-motion={block.motion}>
+      <section class:list={['ds-container', 'ds-section', block.type === 'outcome' && block.payload.presentation === 'editorial' && 'case-story__finale']} id={block.id} aria-label={label(block)} data-block-type={block.type} data-evidence-id={block.evidenceId} data-media-id={block.mediaId} data-story-motion={block.motion}>
         {block.type === 'thesis' && <CaseThesis {...block.payload} />}
         {block.type === 'numbers' && <>
           <CaseThesis {...block.payload.thesis} />
@@ -52,7 +53,9 @@ const label = (block: CaseStory['blocks'][number]) => block.type === 'steps' ? b
           <CaseThesis {...block.payload.thesis} />
           <CaseCarousel {...block.payload} label={block.payload.thesis.label} prevLabel={lang === 'ru' ? 'Предыдущий материал' : 'Previous material'} nextLabel={lang === 'ru' ? 'Следующий материал' : 'Next material'} lang={lang} tone={story.plate} />
         </>}
-        {block.type === 'steps' && <CaseSteps {...block.payload} variant={block.motion === 'focus' ? 'focus' : undefined} tone={story.plate} />}
+        {block.type === 'steps' && (block.payload.composition === 'routes'
+          ? <CaseRoutes {...block.payload} idPrefix={block.id} />
+          : <CaseSteps {...block.payload} composition={block.payload.composition} variant={block.motion === 'focus' ? 'focus' : undefined} tone={story.plate} />)}
         {block.type === 'shot' && <>
           {block.payload.thesis && <CaseThesis {...block.payload.thesis} />}
           <CaseShot shot={block.payload.shot} tone={story.plate} />
@@ -66,8 +69,8 @@ const label = (block: CaseStory['blocks'][number]) => block.type === 'steps' ? b
           <CaseSpecimen specimen={block.payload.specimen} tone={story.plate} lang={lang} />
         </>}
         {block.type === 'outcome' && <>
-          <CaseThesis {...block.payload.result} />
-          <CaseImpact outcome={block.payload} cards={block.payload.cards} quote={block.payload.quote} />
+          <CaseThesis {...block.payload.result} variant={block.payload.presentation} />
+          <CaseImpact outcome={block.payload} cards={block.payload.cards} quote={block.payload.quote} variant={block.payload.presentation} />
         </>}
       </section>
     ))}
@@ -79,4 +82,8 @@ const label = (block: CaseStory['blocks'][number]) => block.type === 'steps' ? b
   .case-story { --cover-offset: calc(var(--space-12) + var(--space-6) * 2 + var(--border-width)); }
   .case-story__estimate { max-inline-size: var(--measure-case); color: var(--text-muted); text-wrap: pretty; }
   .case-story [data-story-motion='static'] :global([data-motion]) { opacity: 1; }
+  .case-story__finale { padding: var(--space-6); background: var(--surface-cover-agent); border-radius: var(--radius-lg); --text-default: var(--text-on-inverse); --text-subtle: var(--text-on-inverse); --text-meta: var(--text-on-inverse); --text-muted: var(--text-on-inverse); }
+  .case-story__finale > :global(.case-thesis) { display: block; }
+  .case-story__finale :global(.case-thesis__text) { margin-block-start: var(--flow-text); }
+  @media (--bp-lg) { .case-story__finale { padding: var(--space-12); } }
 </style>

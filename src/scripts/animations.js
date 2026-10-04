@@ -209,6 +209,10 @@ function restoreMoreCases(root) {
   if (details) details.open = moreCasesOpen;
 }
 document.addEventListener('toggle', (event) => {
+  if (event.target instanceof HTMLDetailsElement && event.target.matches('[data-case-route]')) {
+    ScrollTrigger.refresh();
+    return;
+  }
   if (!(event.target instanceof HTMLDetailsElement) || !event.target.matches('[data-more-cases]')) return;
   moreCasesOpen = event.target.open;
   try { sessionStorage.setItem('portfolio:more-cases', moreCasesOpen ? 'open' : 'closed'); } catch {}
@@ -409,14 +413,16 @@ function buildCaseScenes(root, settled = false) {
     const tl = gsap.timeline({ scrollTrigger: { trigger: cover, start: TRIGGER_START, once: true },
       onStart: () => skipCovers.push(armSkip(tl)) });
     revealText(cover.querySelector('[data-motion="lines"]'), tl, 0, motion.lines);
-    tl.from(cover.querySelector('[data-cover-lead]'), { opacity: 0, duration: cfg.duration, ease: cfg.ease }, 0);
+    const lead = cover.querySelector('[data-cover-lead]');
+    if (lead) tl.from(lead, { opacity: 0, duration: cfg.duration, ease: cfg.ease }, 0);
     panels.forEach((panel, i) => tl.from(panel, {
       opacity: 0, x: narrow ? 0 : (i ? cfg.x : -cfg.x), y: narrow ? motion.coverProof.y : 0,
       rotation: narrow ? 0 : (i ? cfg.rotation : -cfg.rotation),
       duration: cfg.duration, ease: cfg.ease, ...lift(panel),
     }, i ? cfg.payoutAt : 0));
     if (gate) tl.from(gate, { opacity: 0, duration: motion.lines.duration, ease: cfg.ease }, cfg.gateAt);
-    tl.from(cover.querySelector('.case-opening__proof-caption'), { opacity: 0, duration: motion.lines.duration }, cfg.payoutAt);
+    const caption = cover.querySelector('.case-opening__proof-caption');
+    if (caption) tl.from(caption, { opacity: 0, duration: motion.lines.duration }, cfg.payoutAt);
   });
   root.querySelectorAll('[data-motion="cover-proof"]').forEach(cover => {
     if (settled) return;

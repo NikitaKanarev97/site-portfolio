@@ -21,17 +21,18 @@ interface Props {
   quote?: { text: string; who: string };
   cost?: { label: string; text: string };
   class?: string;
+  variant?: 'editorial';
 }
 
-const { cards = [], outcome, quote, cost, class: className } = Astro.props;
+const { cards = [], outcome, quote, cost, class: className, variant } = Astro.props;
 ---
 
-<div class:list={['case-impact', className]}>
+<div class:list={['case-impact', variant && `case-impact--${variant}`, className]}>
   {cards.length > 0 && <ul class="case-impact__cards">
     {
       cards.map((card) => (
         <li class="case-impact__card">
-          <span class="ds-display-5xl case-impact__value" data-motion="count">
+          <span class:list={[variant === 'editorial' ? 'ds-display-7xl' : 'ds-display-5xl', 'case-impact__value']} data-motion={variant === 'editorial' ? undefined : 'count'}>
             {card.value}
           </span>
           <span class="ds-body-sm case-impact__caption" data-h="caption">
@@ -74,6 +75,13 @@ const { cards = [], outcome, quote, cost, class: className } = Astro.props;
 </div>
 
 <style>
+  .case-impact--editorial { display: grid; gap: var(--flow-group); }
+  .case-impact--editorial .case-impact__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .case-impact--editorial .case-impact__card { padding: 0; border: 0; border-radius: 0; }
+  @media (--bp-lg) {
+    .case-impact--editorial { grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: start; }
+    .case-impact--editorial .case-impact__statements { display: block; }
+  }
   .case-impact__statements > :global(.meta-list) { max-inline-size: var(--measure-case); }
   @media (--bp-lg) {
     .case-impact__statements { display: grid; grid-template-columns: repeat(var(--columns-lg), minmax(0, 1fr)); column-gap: var(--gutter); }

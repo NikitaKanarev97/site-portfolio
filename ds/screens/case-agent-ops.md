@@ -1,3 +1,7 @@
+## H · текущий художественный delta · 04.10.2026
+
+Принятые interlock cover / human-checkpoint сохраняются. accepted-prototype: крупный editorial финал 19 экранов / 3 роли по принятому evidence; пользовательское тестирование, клиентская приёмка и граница внедрения остаются явно названы. Числа — объём, не эффект.
+
 # Screen: Agent Ops · F checkpoint transfer · 04.10.2026
 
 Current story exports: `agentOpsStory` in `src/copy/cases/agent-ops-console.ts`, `agentOpsStoryRu` in `src/copy/ru/cases/agent-ops-console.ts`. Four stable ordered blocks, frozen `CaseStory.astro`. Base `a6faac3a3d10eb6601fcc34caa70a915bea5dab3`; own checkout/commit and actual verification in `tasks/portfolio-rebuild/agent-ops/report.md`.

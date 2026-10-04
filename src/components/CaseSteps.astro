@@ -21,7 +21,7 @@ interface Props {
   items: (Thesis & { shot: ShotItem; layout?: 'wide' | 'split'; caption?: string; desktopOnly?: boolean; scene?: 'overview' | 'workspace' | 'promise' | 'decision' })[];
   tone?: 'light' | 'dark';
   variant?: 'focus';
-  composition?: 'checkpoint';
+  composition?: 'checkpoint' | 'handoff';
   gate?: string;
   class?: string;
 }
@@ -30,7 +30,7 @@ const { label, items, tone = 'light', variant, composition, gate, class: classNa
 const pad = (n: number) => String(n).padStart(2, '0');
 ---
 
-<div class:list={['case-steps', variant && `case-steps--${variant}`, composition && `case-steps--${composition}`, className]} data-composition={composition} data-motion={variant === 'focus' ? 'focus-stage' : 'pin-swap'}>
+<div class:list={['case-steps', variant && `case-steps--${variant}`, composition && `case-steps--${composition}`, className]} data-composition={composition} data-motion={composition === 'handoff' ? undefined : variant === 'focus' ? 'focus-stage' : 'pin-swap'}>
   {composition === 'checkpoint' && <div class="case-steps__field-bleed" aria-hidden="true" />}
   <p class="ds-meta-xs case-steps__label">{label}</p>
   <div class="case-steps__stage">
@@ -66,6 +66,12 @@ const pad = (n: number) => String(n).padStart(2, '0');
 </div>
 
 <style>
+  .case-steps--handoff .case-steps__step { display: block; }
+  @media (--bp-lg) {
+    .case-steps--handoff .case-steps__list { grid-template-columns: 3fr 2fr; gap: var(--flow-block) var(--space-12); align-items: start; }
+    .case-steps--handoff .case-steps__step:first-child { grid-column: 1 / -1; }
+    .case-steps--handoff .case-steps__step:last-child .case-steps__shot { max-inline-size: calc(var(--space-48) * 2); margin-inline: auto; }
+  }
   .case-steps__label {
     margin: 0;
     color: var(--text-meta);

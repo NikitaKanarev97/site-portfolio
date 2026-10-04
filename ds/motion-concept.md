@@ -1,3 +1,9 @@
+H Home: WorkStage/Agent подключает существующий cover-interlock — сообщение, рубеж человека, выплата. Те же duration/ease/skip/lifecycle, полный native fallback. Root содержит только панели и gate; необязательные lead/caption не создают tween.
+
+## H · native раскрытие · 04.10.2026
+
+CaseRoutes — доступное native details раскрытие реального UI, без анимации высоты и без scroll pin. Два контекста доступны независимо; третье действие завершения всегда открыто. Toggle обновляет геометрию общих ScrollTrigger. В reduce/no-JS сохраняется тот же native control. Новых motion-токенов нет; WorkStage использует существующее fade-image, Agent interlock/checkpoint остаются принятыми.
+
 # Motion-концепция — Site-portfolio
 
 **Common A · 04.10.2026.** История выбирает только разрешённые `CaseBlock.motion`: static/reveal/count/draw/focus/pin-swap по типу блока. Новых длительностей/кривых не потребовалось. Static блок исключён из исполнения, CSS оставляет весь текст видимым. Draw использует общий matchMedia для desktop/mobile geometry; после завершения при resize остаётся конечным, обратный scroll не повторяет объяснение. Контексты очищаются через общий lifecycle. `CaseNext` остаётся одной обычной ссылкой без pause title / hover / focus пауз; видимость страницы/секции и reduced motion управляют движением.

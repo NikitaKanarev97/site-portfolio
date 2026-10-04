@@ -1,4 +1,18 @@
+## H · художественный проход · 04.10.2026
+
+**CaseRoutes**: два native details для двух контекстов одного материала; первый открыт, второй раскрывается клавиатурой/тапом. Завершение — отдельный постоянно видимый третий кадр. CaseScreen хранит полный продуктовый край; controls не имитируют продукт. Без JS те же disclosures работают. Перестройка геометрии вызывает общий ScrollTrigger.refresh; собственной анимации нет.
+
+**CaseSteps composition=handoff**: последовательная передача роли; первый планшетный материал во всю ширину, desktop счёт и телефон рядом. Mobile — все три целых материала в порядке передачи. Нет pin.
+
+**CaseImpact variant=editorial** и **CaseThesis variant=editorial**: финал с крупными фактами объёма и коротким тезисом. Это не метрики эффекта. Display/5xl, display/7xl, flow/space, semantic colors; keyboard/static одинаковы.
+
 # Компоненты — Site-portfolio
+
+## H · `WorkStage` / 04.10.2026
+
+Общая художественная композиция настоящих материалов для `FeaturedCase` и `CaseCover`. Props: theme, media (существующий CoverMedia), locale, usage=home|cover, loading. Варианты: agent — два последствия и gate; portal — строка 38 рядом с целой native decision-панелью; learn — один материал и два подписанных входа; vet — ограничение 30 секунд рядом с целой QuickTrace; pawly — исходная demo-фотография и настоящий подтверждённый mobile report. UI остаётся CaseScreen, без дорисовки, двойной рамки, повторной увеличенной копии или искажения пропорции. Оба фрагмента Learn используют native край: заголовок без дополнительного скругляющего кропа; паспорт со своим радиусом и прозрачными внешними углами.
+
+Текст и цвета: существующие display/heading/body/meta, surface-cover, text-on-inverse/default; поля space/flow. Новых примитивов нет. NativeWidth сохраняется у телефонов. Mobile: последовательные цельные narrow panels; фотография целиком, отчёт отдельно. Home — одна внешняя native ссылка, без вложенных controls. Cover не содержит действия, которое имитировало бы продукт. Движение исходных кадров через существующий fade-image; Agent CaseCover interlock/checkpoint сохраняет свою хореографию. Без JS/reduce вся композиция видима.
 
 **G-common-E · E-G-01/02/03:** общий CaseScreen поддерживает optional ShotItem.film, проверяет video и передаёт его MediaFrame. Ручной режим отдаёт MP4 первым, WebM вторым; loop порядок прежний. Film сохраняет время при паузе вне viewport/вкладки и остаётся ручным при возврате/live preference. MediaFrame очищает observers, listeners и stall timer на astro:before-swap. Кнопки/фреймы продукта и DS tokens не меняются.
 

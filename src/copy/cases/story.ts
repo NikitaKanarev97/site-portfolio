@@ -125,7 +125,7 @@ export interface LegacyKitStory {
 
 export interface Steps {
   label: string;
-  composition?: 'checkpoint';
+  composition?: 'checkpoint' | 'routes' | 'handoff';
   gate?: string;
   items: (Thesis & { shot: ShotItem; layout?: 'wide' | 'split'; caption?: string; desktopOnly?: boolean; scene?: 'overview' | 'workspace' | 'promise' | 'decision' })[];
 }
@@ -149,6 +149,7 @@ export interface Specimen {
 
 export interface Outcome {
   result: Thesis;
+  presentation?: 'editorial';
   evidence: { label: string; text: string };
   tradeoff: { label: string; text: string };
   nextEvidence?: { label: string; text: string };

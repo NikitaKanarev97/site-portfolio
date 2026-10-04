@@ -25,9 +25,10 @@ interface Props {
   /** Уровень заголовка тезиса. В блоках страницы — h2. */
   as?: 'h2' | 'h3';
   class?: string;
+  variant?: 'editorial';
 }
 
-const { label, thesis, body, as: Heading = 'h2', class: className } = Astro.props as Props;
+const { label, thesis, body, as: Heading = 'h2', class: className, variant } = Astro.props as Props;
 /*
  * Список классов вынесен из шаблона намеренно: фронтматтер, который
  * кончается на `as Props;`, компилятор Astro (convertToTSX) склеивает с
@@ -40,7 +41,7 @@ const rootClass = ['case-thesis', 'ds-flow-lead', className];
 <div class:list={rootClass}>
   <p class="ds-meta-xs case-thesis__label">{label}</p>
   <div class="case-thesis__text">
-    <Heading class="ds-heading-4xl case-thesis__thesis" data-h="thesis" data-motion="lines">{thesis}</Heading>
+    <Heading class:list={[variant === 'editorial' ? 'ds-display-5xl' : 'ds-heading-4xl', 'case-thesis__thesis']} data-h="thesis" data-motion="lines">{thesis}</Heading>
     {body && <p class="ds-body-lg case-thesis__body" data-h="para" data-motion="fade">{body}</p>}
   </div>
 </div>

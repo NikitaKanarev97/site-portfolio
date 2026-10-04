@@ -1,3 +1,7 @@
+## H · текущий художественный delta · 04.10.2026
+
+Вход WorkStage: строка 38 / 8 единиц рядом с реальным целым выбором. Source-line focus и системный лист остаются. Источник сохраняется до корзины; в созданном demo order его snapshot отсутствует. UI edge/alpha без внешней белой рамки.
+
 # Screen: CaseDSSL
 
 ## Active full-story rebuild · B · 04.10.2026
