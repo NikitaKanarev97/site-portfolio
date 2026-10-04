@@ -12,6 +12,8 @@
 
 Видео внутри CaseScreen использует те же внешние поля, внутренний MediaFrame не добавляет второй отступ; manual film, нативные controls и lifecycle сохраняются.
 
+Белый фон поля MediaZoom продолжается под белым native снимком: контрастная подложка не должна визуально превращать край tight capture в новую рамку, к которой прижат текст. Поля16/24 px остаются видимым отступом до внешнего края панели.
+
 ## H · художественный проход · 04.10.2026
 
 **H-ART-01 hero proof**: compact role/index precede a whole native Agent approval card. Desktop text/UI share the opening; mobile shows all five quick entries and actual UI before biography/actions. Facts, CV and CopyEmail remain. Proof is one native link, no nested interactive UI; existing display/space and intro movement.
