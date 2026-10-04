@@ -1,0 +1,39 @@
+{
+  "checkpoint": "G-final",
+  "status": "complete-local-reviewable",
+  "branch": "codex/portfolio-integration-g",
+  "frozenCodeRef": "93b9f7f5a260636b878fd0d67f863c675e410065",
+  "metadata": "Subsequent documentation/proof commit; exact commit listed by git log and final reply",
+  "accepted": {
+    "A": "936724beff3bb9a01c69381659dc808782cc7950",
+    "B": "ae47c6bec7641669470783269e63280debeaa5ee",
+    "C": "9d714b3994169d87620f1704f029e78d94ec15b2",
+    "D": "81db809e6ac1f9e99bc117b9b63a9f52e72e32d0",
+    "E": "a3641e8203dc250dc520ac494eec7fea0cf5f965",
+    "F": "cfba94c0d184e1063484961b1ac5f463d6981e27"
+  },
+  "preview": "http://127.0.0.1:4391",
+  "checkout": "D:\\Claude-projects\\Site-portfolio\\tmp\\portfolio-final-93b9f7f",
+  "manifest": "tasks/portfolio-rebuild/integration/final/code-manifest.json",
+  "report": "tasks/portfolio-rebuild/integration/report.md",
+  "comparison": "tasks/portfolio-rebuild/integration/final/order-review.md",
+  "gallery": "tasks/portfolio-rebuild/integration/final/visual-gallery.md",
+  "proof": "tasks/portfolio-rebuild/integration/final/qa-summary.json",
+  "order": [
+    "agent-ops-console",
+    "partner-portal",
+    "learn",
+    "vet-clinic",
+    "pawly"
+  ],
+  "commonRequests": {
+    "G-01": "closed",
+    "B-G-01": "closed",
+    "D-G-01": "closed",
+    "E-G-01/02/03": "closed",
+    "F-G-01": "closed"
+  },
+  "publication": false,
+  "ownerArtisticAcceptance": false,
+  "controllerFilesModified": false
+}

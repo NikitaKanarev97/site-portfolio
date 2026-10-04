@@ -1,0 +1,81 @@
+{
+  "ref": "93b9f7f5a260636b878fd0d67f863c675e410065",
+  "preview": "http://127.0.0.1:4391",
+  "scope": "G-final; publication not performed",
+  "checks": {
+    "source": {
+      "types": {
+        "files": 113,
+        "errors": 0,
+        "warnings": 0,
+        "hints": 101
+      },
+      "builtPages": 36,
+      "cssRoutes": 36,
+      "deadCss": 0
+    },
+    "site": {
+      "profiles": 336,
+      "initialHarnessFindings": 26,
+      "findingsRetest": 30,
+      "remainingFindings": 0,
+      "finalDeltaProfiles": 51,
+      "finalDeltaFailures": 0,
+      "capturedPages": 28
+    },
+    "motion": {
+      "nativeObservations": 36,
+      "livePreferenceSwitches": 96,
+      "controlRoutes": 11,
+      "controlLivePreferenceSwitches": 48,
+      "failures": 0
+    },
+    "film": {
+      "initialPlaybackProfiles": 6,
+      "initialHarnessNavigationFailure": 1,
+      "lifecycleAndGeometryRetest": 6,
+      "remainingFailures": 0
+    },
+    "harmony": {
+      "profiles": 112,
+      "failures": 0
+    },
+    "media": {
+      "served": 142,
+      "mismatches": 0,
+      "transparentCaptures": 26,
+      "alphaFailures": 0
+    },
+    "reproduction": {
+      "canonicalFiles": 1270,
+      "bytes": 245198805,
+      "mismatches": 0,
+      "status": "clean",
+      "launchProfiles": 28,
+      "filmNoJsLaunch": 2,
+      "failures": 0
+    }
+  },
+  "limitations": [
+    "Local Chromium viewport testing; no physical devices or other browser engines.",
+    "document.hidden is an explicitly synthetic lifecycle probe.",
+    "No external message, push, deploy or final CPU benchmark.",
+    "Eleven inherited npm dependency advisories remain.",
+    "Coordinator acceptance of B-F; no new artistic owner acceptance."
+  ],
+  "evidence": [
+    "site-verification.json",
+    "findings-retest.json",
+    "final-delta-verification.json",
+    "native-states.json",
+    "controls.json",
+    "film/verification.json",
+    "film/lifecycle-verification.json",
+    "harmony.log",
+    "harmony-short.log",
+    "reproduction.json",
+    "clean-launch.json",
+    "film/clean-launch.json",
+    "visual-gallery.md"
+  ]
+}

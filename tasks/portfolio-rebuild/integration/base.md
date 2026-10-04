@@ -1,3 +1,15 @@
+# Финальная локальная база · G-final · 04.10.2026
+
+**Точный frozen code ref: 93b9f7f5a260636b878fd0d67f863c675e410065.** В нём интегрированы все пять принятых историй, завершены EN/RU Home и штатные маршруты. Ветка G — codex/portfolio-integration-g. Последующая metadata фиксирует доказательства и handoff; для воспроизведения приложения использовать этот точный ref.
+
+Чистый checkout: D:/Claude-projects/Site-portfolio/tmp/portfolio-final-93b9f7f. Рабочий production-preview: http://127.0.0.1:4391/. Canonical manifest — [final/code-manifest.json](final/code-manifest.json): **1270 файлов / 245198805 bytes**, точные Git blobs. В свежем checkout совпали все 1270 файлов без дополнительной нормализации. npm ci, check, build и CSS завершились с exit 0; check — 113 файлов, 0 errors/0 warnings, 101 hints; build — 36 страниц; CSS — 36 маршрутов, 0 мёртвых правил. Оба DS-зеркала побайтово равны; checkout остаётся clean. [Воспроизведение](final/reproduction.json).
+
+Принятые refs, provenance, код, визуальное сравнение и полный охват — [report.md](report.md), [final-handoff.md](final-handoff.md). Все public slugs сохранены. Metadata commit добавляет этот текущий указатель, отчёт, manifest, QA и кадры; исторический base.md внутри frozen code ref относится к предыдущему checkpoint и не заменяет текущий handoff.
+
+## История баз до финальной интеграции
+
+Ниже сохранены прежние checkpoints и их ограничения на момент передачи. Статусы «F pending» и «public legacy» в этой истории больше не описывают итоговый сайт.
+
 # Общая база · G-common-F · 04.10.2026
 
 **Новый точный common ref: 6e8f0e075916dec82a90831c7c2c78a38ea60e20.** Alias: codex/portfolio-common-focus-2026-10-04. База воспроизведена: A + G + B/C + manual film + F-G-01 shared reading-position fix. Продолжающий F на `3d35b7c88b89f36c72eaff315dec4bfc5dc887a5` импортирует только этот двухфайловый delta; его case payload сохраняется. Актуальный пакет — focus-common-handoff.md и focus-common-report.md. Common checkpoint готов для review контроллера, F ждёт actual-case retest. Прочитать текущую root metadata до создания checkout; ниже сохраняется история баз. D/E приняты контроллером в своих checkout, public D/E/F пока legacy.

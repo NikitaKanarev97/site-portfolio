@@ -1,0 +1,456 @@
+{
+  "base": "http://127.0.0.1:4390",
+  "nativeInput": "Focused HTML video + trusted Space key, Chromium native controls; no scripted play/pause/seek",
+  "results": [
+    {
+      "lang": "en",
+      "mode": "full",
+      "route": "/work/pawly/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": true
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "canonical": "https://kanarev.com/work/pawly/"
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.534233,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 22,
+        "bound": true
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.728489,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 28,
+        "bound": true
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": true
+      },
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "mode": "reduce",
+      "route": "/work/pawly/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": true
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "canonical": "https://kanarev.com/work/pawly/"
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.531665,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 21,
+        "bound": true
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.726198,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 26,
+        "bound": true
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": true
+      },
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "mode": "no-js",
+      "route": "/work/pawly/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": null,
+        "readyState": 0,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": false
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "canonical": "https://kanarev.com/work/pawly/"
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.51858,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 22,
+        "bound": false
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.699514,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 27,
+        "bound": false
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": false
+      },
+      "errors": []
+    },
+    {
+      "lang": "ru",
+      "mode": "full",
+      "route": "/ru/work/pawly/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": true
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "canonical": "https://kanarev.com/ru/work/pawly/"
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.530983,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 21,
+        "bound": true
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.724955,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 27,
+        "bound": true
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": true
+      },
+      "errors": []
+    },
+    {
+      "lang": "ru",
+      "mode": "reduce",
+      "route": "/ru/work/pawly/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": true
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "canonical": "https://kanarev.com/ru/work/pawly/"
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.531013,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 22,
+        "bound": true
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.724657,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 27,
+        "bound": true
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": true
+      },
+      "errors": []
+    },
+    {
+      "lang": "ru",
+      "mode": "no-js",
+      "route": "/ru/work/pawly/",
+      "initial": {
+        "paused": true,
+        "ended": false,
+        "time": 0,
+        "duration": null,
+        "readyState": 0,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 0,
+        "bound": false
+      },
+      "structure": {
+        "filmCount": 1,
+        "inline": true,
+        "steps": 3,
+        "sourceTypes": [
+          "video/mp4",
+          "video/webm"
+        ],
+        "overflow": 0,
+        "canonical": "https://kanarev.com/ru/work/pawly/"
+      },
+      "played": {
+        "paused": false,
+        "ended": false,
+        "time": 0.538425,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 22,
+        "bound": false
+      },
+      "manualPause": {
+        "paused": true,
+        "ended": false,
+        "time": 0.718434,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 27,
+        "bound": false
+      },
+      "ended": {
+        "paused": true,
+        "ended": true,
+        "time": 10.966667,
+        "duration": 10.966667,
+        "readyState": 4,
+        "source": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof.mp4",
+        "controls": true,
+        "loop": false,
+        "autoplay": false,
+        "poster": "http://127.0.0.1:4390/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+        "decodedFrames": 329,
+        "bound": false
+      },
+      "errors": []
+    }
+  ],
+  "failures": [
+    {
+      "where": "ru no-js end",
+      "detail": "page.waitForURL: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n  navigated to \"http://127.0.0.1:4390/work/pawly/\"\n  navigated to \"http://127.0.0.1:4390/work/agent-ops-console\"\n============================================================",
+      "state": null
+    }
+  ],
+  "limitations": [
+    "Native playback tested in local Chromium 1243. No physical devices or other browser engines.",
+    "Document-hidden branch tested with an explicit synthetic visibility handler probe; a physically hidden tab was not verified."
+  ],
+  "mediaFrameSha256": "b31eba8691fedcf988963838f34e9b915a21827e12456eb236850f95b6c5ddff"
+}

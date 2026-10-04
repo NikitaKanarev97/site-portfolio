@@ -1,0 +1,24 @@
+{
+  "matrixProfiles": 336,
+  "initialFindings": 26,
+  "routeFailures": [],
+  "media": 142,
+  "mediaMismatches": 0,
+  "alphaCaptures": 26,
+  "alphaFailures": 0,
+  "mirrors": [
+    {
+      "source": "ds/tokens.css",
+      "mirror": "src/styles/tokens.css",
+      "equal": true
+    },
+    {
+      "source": "ds/motion.js",
+      "mirror": "src/scripts/motion.js",
+      "equal": true
+    }
+  ],
+  "findingsRetest": 0,
+  "finalDelta": 0,
+  "capture": 0
+}
