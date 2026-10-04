@@ -14,4 +14,3 @@ for(const lang of ['en','ru'])for(const width of [1440,1024]){
  await c.close();
 }
 await b.close();await writeFile(dir+'/focus-verification.json',JSON.stringify(results,null,2));console.log(JSON.stringify(results.map(r=>({lang:r.lang,width:r.width,index:r.index,focused:r.focused,visible:r.visible.map(v=>({name:v.name,bottom:v.screen.bottom,stageBottom:r.stage.bottom,imageBottom:v.img.bottom}))})),null,2));
-

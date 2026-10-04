@@ -80,4 +80,3 @@ try{
  await writeFile(dir+'/verification.json',JSON.stringify({base,created:new Date().toISOString(),results,zooms,lifecycle,focus,alpha,failures},null,2));
  console.log(JSON.stringify({profiles:results.length,zooms:zooms.length,lifecycle:lifecycle.length,failures:failures.length}));if(failures.length)process.exitCode=1;
 }finally{await browser.close();}
-
