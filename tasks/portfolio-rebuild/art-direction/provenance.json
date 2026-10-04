@@ -1,0 +1,67 @@
+{
+  "base": "c0c69040801d60bcfc836f6728f2ae806911be1d",
+  "codeRef": "8a74ed3692d23d0d14014c038e0c5d6d5754238d",
+  "created": "2026-10-04T15:05:59.776Z",
+  "pairs": [
+    {
+      "source": "ds/tokens.css",
+      "mirror": "src/styles/tokens.css",
+      "sha256": "47f89e88a2796834e9ef45d4c473a0411d7ec58e9fd366dd30d77adc9611b832",
+      "mirrorSha256": "47f89e88a2796834e9ef45d4c473a0411d7ec58e9fd366dd30d77adc9611b832",
+      "equal": true
+    },
+    {
+      "source": "ds/motion.js",
+      "mirror": "src/scripts/motion.js",
+      "sha256": "3136db057ba7629c550544cf7a4951bb9bf5d118272dce9ea37b191021eb952f",
+      "mirrorSha256": "3136db057ba7629c550544cf7a4951bb9bf5d118272dce9ea37b191021eb952f",
+      "equal": true
+    }
+  ],
+  "media": [
+    {
+      "file": "public/media/art-direction/learn/passport-desktop.png",
+      "bytes": 78376,
+      "sha256": "9920072090737c56d23e0df1d8232dd59bfef941982240b0e2e2cf68bef8931a"
+    },
+    {
+      "file": "public/media/art-direction/learn/passport-mobile.png",
+      "bytes": 76446,
+      "sha256": "c115f7cc0203f3a1fd0423f1031068c3e0f1ec722d3cd7ea308373bd1e930a05"
+    },
+    {
+      "file": "public/media/art-direction/pawly/handover-dropoff.webp",
+      "bytes": 59504,
+      "sha256": "8a0536f918f62d68b228207f06e405af7dfc0034bf97ed9115eeeefe1b939fe6"
+    },
+    {
+      "file": "public/media/rebuild/common/portal/availability-stale-288.webp",
+      "bytes": 9406,
+      "sha256": "d7f65b7232e649ebb75cfb430e999f1c8ce0c0dcf9ce522716d7268b1d5fcf64"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "file": "public/prototypes/learn/trajectory/puskonaladka/index.html",
+      "sha256": "b47c3a189a82fcf4fb5ed0d4880c68bee946260932a4b7aa7f6888ac0347ad63",
+      "version": "Unmodified frozen prototype from accepted G c0c6904"
+    },
+    {
+      "file": "public/prototypes/learn/material/onvif-not-found/index.html",
+      "sha256": "b47c3a189a82fcf4fb5ed0d4880c68bee946260932a4b7aa7f6888ac0347ad63",
+      "version": "Unmodified frozen prototype from accepted G c0c6904"
+    }
+  ],
+  "photo": {
+    "source": "D:/Claude-projects/PETS-walking/public/assets/proof/handover-dropoff.webp",
+    "sourceSha256": "8a0536f918f62d68b228207f06e405af7dfc0034bf97ed9115eeeefe1b939fe6",
+    "destination": "public/media/art-direction/pawly/handover-dropoff.webp",
+    "destinationSha256": "8a0536f918f62d68b228207f06e405af7dfc0034bf97ed9115eeeefe1b939fe6",
+    "equal": true,
+    "processing": "No pixel editing or generative replacement"
+  },
+  "references": {
+    "source": "D:/Claude-projects/Site-portfolio/research/portfolio-benchmark and research/portfolio-rebuild-2026-10-03/references",
+    "usage": "Private review only; reference pixels not published as portfolio material"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "base": "http://127.0.0.1:4394",
+  "updated": "2026-10-04T15:01:37.131Z",
+  "results": [
+    {
+      "key": "en-1440-agent-ops-console",
+      "approxSeconds": 12.2,
+      "marks": [],
+      "errors": []
+    },
+    {
+      "key": "en-1440-partner-portal",
+      "approxSeconds": 17.4,
+      "marks": [],
+      "errors": []
+    },
+    {
+      "key": "en-1440-vet-clinic",
+      "approxSeconds": 12.8,
+      "marks": [],
+      "errors": []
+    },
+    {
+      "key": "en-1440-pawly",
+      "approxSeconds": 14.8,
+      "marks": [],
+      "errors": []
+    },
+    {
+      "key": "ru-390-agent-ops-console",
+      "approxSeconds": 12.8,
+      "marks": [],
+      "errors": []
+    },
+    {
+      "key": "ru-390-partner-portal",
+      "approxSeconds": 23.2,
+      "marks": [],
+      "errors": []
+    },
+    {
+      "key": "ru-390-vet-clinic",
+      "approxSeconds": 16.1,
+      "marks": [],
+      "errors": []
+    },
+    {
+      "key": "ru-390-pawly",
+      "approxSeconds": 16.1,
+      "marks": [],
+      "errors": []
+    },
+    {
+      "key": "en-1440-learn",
+      "approxSeconds": 18.2,
+      "marks": [
+        "programme"
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-390-learn",
+      "approxSeconds": 20.1,
+      "marks": [
+        "programme"
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-1440-home",
+      "marks": [
+        "work-agent-ops-console",
+        "work-partner-portal",
+        "work-learn",
+        "work-vet-clinic",
+        "work-pawly"
+      ],
+      "errors": [],
+      "recording": "Native wheel 500 px / 900 ms, 2 seconds at the first arrival of each WorkStage. Original fast traversal retained separately."
+    },
+    {
+      "key": "ru-390-home",
+      "marks": [
+        "work-agent-ops-console",
+        "work-partner-portal",
+        "work-learn",
+        "work-vet-clinic",
+        "work-pawly"
+      ],
+      "errors": [],
+      "recording": "Native wheel 500 px / 900 ms, 2 seconds at the first arrival of each WorkStage. Original fast traversal retained separately."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# Raw terminal output and duplicate files emitted by Playwright recordVideo.
+# Canonical recordings, summaries, source scripts and screenshots are versioned.
+check.log
+recordings/after/*.webm
+!recordings/after/*-walkthrough.webm
+recordings/before/*.webm
+!recordings/before/*-walkthrough.webm

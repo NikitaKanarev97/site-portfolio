@@ -1,0 +1,15 @@
+import {createRequire} from 'node:module';import{writeFile}from'node:fs/promises';
+const require=createRequire('D:/Claude-projects/Agent-ops-console/package.json');const{chromium}=require('playwright');
+const browser=await chromium.launch({executablePath:'C:/Users/kanar/AppData/Local/ms-playwright/chromium-1243/chrome-win64/chrome.exe',headless:true});const results=[],failures=[];
+for(const lang of ['en','ru'])for(const width of[1440,1024,390,360])for(const mode of['full','reduce','no-js']){
+ const c=await browser.newContext({viewport:{width,height:900},javaScriptEnabled:mode!=='no-js',reducedMotion:mode==='reduce'?'reduce':'no-preference'});const p=await c.newPage();const errors=[],warnings=[];p.on('pageerror',e=>errors.push(e.message));p.on('console',m=>{if(m.type()==='warn')warnings.push(m.text())});
+ await p.goto(`http://127.0.0.1:4394/${lang==='ru'?'ru/':''}`,{waitUntil:'networkidle'});await p.locator('.work-stage--agent').scrollIntoViewIfNeeded();await p.waitForTimeout(mode==='full'?2200:100);
+ const data=await p.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,panels:[...document.querySelectorAll('.work-stage--agent [data-cover-panel]')].map(e=>({opacity:Number(getComputedStyle(e).opacity),transform:getComputedStyle(e).transform})),gate:Number(getComputedStyle(document.querySelector('.work-stage--agent [data-cover-gate]')).opacity)}));
+ const r={lang,width,mode,...data,errors,warnings};results.push(r);if(data.overflow||data.panels.length!==2||data.panels.some(e=>e.opacity!==1)||data.gate!==1||errors.length||warnings.length)failures.push(r);await c.close();
+}
+const lifecycle=[];
+for(const lang of['en','ru']){
+ const c=await browser.newContext({viewport:{width:1440,height:600}}),p=await c.newPage();const errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(`http://127.0.0.1:4394/${lang==='ru'?'ru/':''}`,{waitUntil:'networkidle'});await p.locator('.work-stage--agent').scrollIntoViewIfNeeded();await p.waitForTimeout(150);await p.setViewportSize({width:360,height:600});await p.emulateMedia({reducedMotion:'reduce'});await p.waitForTimeout(150);await p.emulateMedia({reducedMotion:'no-preference'});await p.waitForTimeout(2200);await p.mouse.wheel(0,-500);await p.mouse.wheel(0,1100);await p.locator('.featured-case--agent').click();await p.waitForTimeout(350);await p.goBack();await p.waitForTimeout(350);
+ const data=await p.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,panels:[...document.querySelectorAll('.work-stage--agent [data-cover-panel]')].map(e=>Number(getComputedStyle(e).opacity))}));const r={lang,...data,errors};lifecycle.push(r);if(data.overflow||data.panels.some(e=>e!==1)||errors.length)failures.push(r);await c.close();
+}
+await browser.close();await writeFile(new URL('./home-motion-retest.json',import.meta.url),JSON.stringify({base:'http://127.0.0.1:4394',results,lifecycle,failures},null,2));console.log(JSON.stringify({profiles:results.length,lifecycle:lifecycle.length,failures}));
