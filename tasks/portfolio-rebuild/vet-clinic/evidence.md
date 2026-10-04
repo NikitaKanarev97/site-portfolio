@@ -16,3 +16,9 @@ Source root D:/Claude-projects/Veterinary-clinic; HEAD 78772df6735d90d3ba79704fe
 Medical values are seed examples, not treatment advice. Engineering acceptance counts are not headline product impact. Original Figma is historical and has reverse-sync debt; current source DOM controls are used.
 
 Fresh source checks: EN8 + RU6 pass, no page errors. Both publish plan7, save plan10 later and keep owner plan7. RU text is entered through the actual Russian form, then its real stored fixture is used for RU media. The bill is unpaid, with two seed services at900+600; 1500 is a demo total, not product impact. Captures and browser verification do not replace human research or clinical validation.
+
+## Mobile capture correction · 04.10.2026
+
+Capture-only delta after implementation `4919971ab2a75135fd4efa4a332a998eed292c0f`. The previous mobile chapter screenshot could show a track left between slides by image warm-up or element capture. The corrected script warms the carousel separately, selects the native stop, waits for stable layout/paint, takes viewport shots, and crops the chapter from the same full-page bitmap. Full/overview capture records first-stop `scrollLeft=0`, index `1`, before and after.
+
+Six readable EN/RU draft/saved/published shots at 390×900 were opened and visually checked alongside the corrected chapters/full/overviews. [carousel-handoff.json](carousel-handoff.json) records six narrow normal/reduce/no-JS profiles, all three stops at `0 / 325 / 585`, loaded images and whole current image/caption, zero failures/page errors. JS counters read `1 / 2 / 3`; no-JS hides the counter and uses external layout polling because Chromium blocks RAF callbacks. These are screenshot handoff checks; story/product/source/STATE are unchanged. Earlier build/check/harmony and clinical verification were not rerun for this delta.
