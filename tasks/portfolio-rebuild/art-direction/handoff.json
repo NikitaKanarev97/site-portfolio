@@ -1,18 +1,57 @@
 {
-  "stage":"H-art-direction",
-  "status":"ready_for_h_art_review",
-  "checkout":"C:/Users/kanar/.codex/worktrees/portfolio-art-direction-h/Site-portfolio",
-  "branch":"codex/portfolio-art-direction-h-2026-10-04",
-  "baseRef":"c0c69040801d60bcfc836f6728f2ae806911be1d",
-  "codeRef":"8a74ed3692d23d0d14014c038e0c5d6d5754238d",
-  "evidenceRefResolver":"git log -1 --format=%H -- tasks/portfolio-rebuild/art-direction",
-  "previews":{"en":"http://127.0.0.1:4394/","ru":"http://127.0.0.1:4394/ru/","review":"http://127.0.0.1:4396/art-review.html","frozenG":"http://127.0.0.1:4392/"},
-  "latestChecks":{"visualProfiles":24,"focusedProfiles":60,"failures":0,"buildPages":36,"typeErrors":0,"typeWarnings":0,"cssRoutes":35,"cssDead":0},
-  "earlierChecks":{"matrixProfiles":144,"lifecycle":12,"homeMotionRetestProfiles":24,"homeMotionLifecycle":2,"boundary":"144+12 predates final Home interlock; 60 focused profiles and 24 visual profiles cover the last native Learn edge change"},
-  "recordings":{"canonicalAfter":12,"bytes":25327115,"metadata":"recording-inspection.json","latestHomeSeconds":{"en":27.32,"ru":31}},
-  "selfArtAssessment":"yes_with_scene_and_reference_evidence",
-  "independentArtReview":"pending_controller",
-  "ownerArtAcceptance":"not_claimed",
-  "controllerStateModified":false,
-  "published":false
+  "stage": "H-art-direction",
+  "iteration": "H-art-02",
+  "status": "ready_for_h_art_review",
+  "checkout": "C:/Users/kanar/.codex/worktrees/portfolio-art-direction-h/Site-portfolio",
+  "branch": "codex/portfolio-art-direction-h-2026-10-04",
+  "baseRef": "c0c69040801d60bcfc836f6728f2ae806911be1d",
+  "previousEvidenceRef": "df1da7ef044bda231049f1f48e899050e71ff611",
+  "codeRef": "765803e9d2e56e663885d083237ea29ac53a11b9",
+  "evidenceRefResolver": "git log -1 --format=%H -- tasks/portfolio-rebuild/art-direction",
+  "previews": {
+    "en": "http://127.0.0.1:4394/",
+    "ru": "http://127.0.0.1:4394/ru/",
+    "review": "http://127.0.0.1:4396/art-review.html"
+  },
+  "findings": [
+    {
+      "id": "H-ART-01",
+      "status": "resolved_by_executor_pending_independent_review"
+    },
+    {
+      "id": "H-ART-02",
+      "status": "resolved_by_executor_pending_independent_review"
+    },
+    {
+      "id": "H-ART-03",
+      "status": "resolved_by_executor_pending_independent_review"
+    }
+  ],
+  "checks": {
+    "codeRef": "765803e9d2e56e663885d083237ea29ac53a11b9",
+    "previousEvidenceRef": "df1da7ef044bda231049f1f48e899050e71ff611",
+    "baseRef": "c0c69040801d60bcfc836f6728f2ae806911be1d",
+    "primaryProfiles": 72,
+    "neighborProfiles": 6,
+    "lifecycle": 12,
+    "openingProfiles": 8,
+    "followupProfiles": 8,
+    "initialPrimaryFindings": 4,
+    "resolvedNativeCarouselFindings": 4,
+    "unresolvedFailures": 0,
+    "pngCount": 54,
+    "newRecordings": 6,
+    "preservedRecordings": 6,
+    "mirrors": {
+      "tokens": true,
+      "motion": true
+    },
+    "selfArtAssessment": "yes_with_specific_scene_evidence",
+    "independentArtReview": "pending_controller"
+  },
+  "selfArtAssessment": "yes_with_scene_evidence",
+  "independentArtReview": "pending_controller",
+  "ownerArtAcceptance": "not_claimed",
+  "controllerStateModified": false,
+  "published": false
 }

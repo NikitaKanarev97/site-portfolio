@@ -1,0 +1,146 @@
+{
+  "base": "http://127.0.0.1:4394",
+  "results": [
+    {
+      "key": "en-1440-home",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.51
+        },
+        {
+          "scene": "work-agent-ops-console",
+          "seconds": 4.089
+        },
+        {
+          "scene": "work-partner-portal",
+          "seconds": 6.564
+        },
+        {
+          "scene": "work-learn",
+          "seconds": 9.806
+        },
+        {
+          "scene": "work-vet-clinic",
+          "seconds": 13.832
+        },
+        {
+          "scene": "work-pawly",
+          "seconds": 17.084
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-1440-learn",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.477
+        },
+        {
+          "scene": "case-cover",
+          "seconds": 3.257
+        },
+        {
+          "scene": "native programme disclosure",
+          "seconds": 11.264
+        },
+        {
+          "scene": "Next / Back",
+          "seconds": 28.002
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-1440-vet-clinic",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.458
+        },
+        {
+          "scene": "case-cover",
+          "seconds": 3.22
+        },
+        {
+          "scene": "Next / Back",
+          "seconds": 19.141
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-390-home",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.474
+        },
+        {
+          "scene": "work-agent-ops-console",
+          "seconds": 4.788
+        },
+        {
+          "scene": "work-partner-portal",
+          "seconds": 8.047
+        },
+        {
+          "scene": "work-learn",
+          "seconds": 11.298
+        },
+        {
+          "scene": "work-vet-clinic",
+          "seconds": 16.089
+        },
+        {
+          "scene": "work-pawly",
+          "seconds": 22.406
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-390-learn",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.488
+        },
+        {
+          "scene": "case-cover",
+          "seconds": 3.266
+        },
+        {
+          "scene": "native programme disclosure",
+          "seconds": 13.543
+        },
+        {
+          "scene": "Next / Back",
+          "seconds": 32.613
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-390-vet-clinic",
+      "marks": [
+        {
+          "scene": "settled opening",
+          "seconds": 2.441
+        },
+        {
+          "scene": "case-cover",
+          "seconds": 3.219
+        },
+        {
+          "scene": "Next / Back",
+          "seconds": 26.86
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "recording": "Native wheel and native disclosure/Next/Back. Times are wall-clock observations; use ffprobe/frame evidence for exact video duration."
+}

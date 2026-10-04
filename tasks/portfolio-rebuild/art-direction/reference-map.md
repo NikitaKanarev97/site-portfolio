@@ -1,3 +1,9 @@
+## H2 · актуальное сопоставление
+
+Learn: HA-MAP/FLOW показывают видимую структуру контекста; Dounar Black Forest Products overview — одна доминирующая UI-плоскость. Наша целая статья сохраняет source learning paths и повторяется тем же названием в реальном current unit03. Vet: HA-PROTO показывает устройства/состояния; наш след врача, счёт регистратуры и публикация владельца складываются в два уровня, mobile — последовательность. Home: реальный approval-material входит вместе с компактной ролью и всеми пятью быстрыми целями. Новые точные EN Home кадры11.00/15.00, RU12.50/17.30.
+
+Black Forest открыт live отдельно, homepage/TopNote остаются историческим архивом. CDN asset download запрещён browser policy; обхода нет. Сохранённые HA originals и собственные сцены доступны рядом в gallery. Прежняя таблица ниже относится к H1; её направление Vet30 заменено в H2.
+
 # H · конкретные визуальные основания
 
 Вход: принятый G-final-F01 c0c6904. Все четыре оригинала HA, обе sheets picks, четыре motion sheets и Agent Ops art/checkpoint before-after просмотрены из основного checkout. HA Atlant Telecom, Anton Blinkov, Victor Vudoo и Ilya Dounar Black Forest открыты live. Multiply отдельно изучен по сохранённым frames; это другая история Victor. Архивные записи и blueprint остаются источником сравнения, не материалом сайта.

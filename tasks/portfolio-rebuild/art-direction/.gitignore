@@ -1,6 +1,9 @@
 # Raw terminal output and duplicate files emitted by Playwright recordVideo.
 # Canonical recordings, summaries, source scripts and screenshots are versioned.
 check.log
+h-art-02/check.log
+h-art-02/recordings/*.webm
+!h-art-02/recordings/*-walkthrough.webm
 recordings/after/*.webm
 !recordings/after/*-walkthrough.webm
 recordings/before/*.webm
