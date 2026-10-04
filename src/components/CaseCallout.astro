@@ -24,9 +24,8 @@
  * Движение: data-motion="draw" на линиях, исполнитель — этап 3.
  */
 import CasePlate from './CasePlate.astro';
-import { frameSize } from '../lib/media';
+import CaseScreen from './CaseScreen.astro';
 import type { Callout } from '../copy/cases/story';
-import { px } from '../lib/tokens';
 
 interface Props {
   callout: Callout;
@@ -36,27 +35,14 @@ interface Props {
 }
 
 const { callout, tone = 'note', plate = 'light', class: className } = Astro.props;
-const size = await frameSize(callout.src);
-const narrowSize = callout.srcNarrow ? await frameSize(callout.srcNarrow) : size;
-const narrowMedia = `(max-width: ${px('bp-md') - 1}px)`;
 ---
 
 <figure class:list={['case-callout', `case-callout--${tone}`, className]}>
   <CasePlate tone={plate}>
     <div class="case-callout__body">
       <div class="case-callout__shot">
-        <picture>
-        {callout.srcNarrow && <source media={narrowMedia} srcset={callout.srcNarrow} width={narrowSize?.width} height={narrowSize?.height} />}
-        <img
-          src={callout.src}
-          alt={callout.altNarrow ?? callout.alt}
-          width={size?.width}
-          height={size?.height}
-          loading="lazy"
-          decoding="async"
-          data-motion="fade-image"
-        />
-        </picture>
+        <CaseScreen item={{ src: callout.src, alt: callout.alt, srcNarrow: callout.srcNarrow, altNarrow: callout.altNarrow, device: 'panel' }}>
+        <Fragment slot="annotations">
         {
           callout.marks.map((mark, i) => (
             <>
@@ -76,6 +62,8 @@ const narrowMedia = `(max-width: ${px('bp-md') - 1}px)`;
             </>
           ))
         }
+        </Fragment>
+        </CaseScreen>
       </div>
       <ol class="case-callout__list">
         {
@@ -122,14 +110,6 @@ const narrowMedia = `(max-width: ${px('bp-md') - 1}px)`;
     position: relative;
   }
 
-  .case-callout__shot img {
-    display: block;
-    inline-size: 100%;
-    block-size: auto;
-    border-radius: var(--radius-sm);
-    box-shadow: var(--shadow-md);
-  }
-
   .case-callout__dot {
     display: inline-grid;
     place-items: center;
@@ -142,11 +122,12 @@ const narrowMedia = `(max-width: ${px('bp-md') - 1}px)`;
     flex: none;
   }
 
-  .case-callout__shot > .case-callout__dot {
+  .case-callout__shot .case-callout__dot {
     position: absolute;
     inset-inline-start: var(--x);
     inset-block-start: var(--y);
     translate: -50% -50%;
+    pointer-events: none;
   }
 
   .case-callout__line {

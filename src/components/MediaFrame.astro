@@ -184,6 +184,7 @@ const wrapperProps = zoomable
       type: 'button' as const,
       'data-zoom-trigger': true,
       'data-zoom-src': zoomSrc ?? src,
+      'data-zoom-fixed': zoomSrc ? true : undefined,
       'data-zoom-alt': alt,
       'aria-label': `${zoomLabel}: ${alt}`,
     }
@@ -326,7 +327,7 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
      в пилюлю. */
   .media-frame--wide .media-frame__mask {
     aspect-ratio: 16 / 9;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
   }
 
   @media (--bp-md) {
@@ -354,6 +355,18 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
     align-items: flex-start;
   }
 
+  /* The rounded portfolio shell has fields; native pixels keep their edge. */
+  .media-frame--natural .media-frame__frame {
+    display: block;
+    inline-size: 100%;
+    padding: var(--space-4);
+    border-radius: var(--radius-lg);
+    background: var(--surface-default);
+  }
+  @media (--bp-md) {
+    .media-frame--natural .media-frame__frame { padding: var(--space-6); }
+  }
+
   .media-frame--natural .media-frame__mask {
     inline-size: 100%;
     max-inline-size: var(--media-max, 100%);
@@ -373,7 +386,7 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
   /* Скругление опционально: обычный natural по-прежнему не теряет углы
      интерфейса. У карточки продукта пустые внешние углы и могут быть сняты. */
   .media-frame--rounded .media-frame__mask {
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
   }
 
   @media (--bp-md) {
@@ -390,6 +403,8 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
   }
 
   /* Art direction: соотношение под bp-md перебивает основное. */
+  .media-frame--natural .media-frame__mask { border-radius: var(--radius-none); background: transparent; }
+
   @media (--below-bp-md) {
     .media-frame--mobile-wide .media-frame__mask {
       aspect-ratio: 16 / 9;
@@ -447,7 +462,7 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
     padding: var(--space-8);
     background: var(--surface-subtle);
     border: var(--border-width) solid var(--border-default);
-    border-radius: var(--radius-none);
+    border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
   }
 

@@ -48,7 +48,7 @@ export const siteRu = {
   nextCase: 'Следующий кейс',
   zoom: {
     label: 'Увеличенный скриншот',
-    open: 'Открыть в полном размере',
+    open: 'Увеличить',
     close: 'Закрыть',
   },
   clip: {

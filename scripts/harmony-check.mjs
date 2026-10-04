@@ -207,7 +207,7 @@ function measure(limits) {
       const visibleCopy = [];
       for (let node = walker.nextNode(); node; node = walker.nextNode()) {
         const parent = node.parentElement;
-        if (!parent || hidden(parent) || parent.closest('[data-story-document], .case-next, script, style, svg')) continue;
+        if (!parent || hidden(parent) || parent.closest('[data-story-document], [data-h-utility], .case-next, script, style, svg')) continue;
         visibleCopy.push(node.textContent);
       }
       total = words(visibleCopy.join(' '));

@@ -228,6 +228,10 @@ const pad = (n: number) => String(n).padStart(2, '0');
   }
   .case-steps--checkpoint.is-focused .case-steps__list { margin-block-start: var(--flow-node); }
   .case-steps--checkpoint.is-focused .case-steps__text { min-block-size: auto; }
+  /* Reserve the frame fields and its action row before sizing native UI. */
+  .case-steps--checkpoint.is-focused [data-scene='overview'] .case-steps__shot :global(.case-steps__screen) {
+    inline-size: min(100%, calc((var(--focus-media-height) - var(--space-32)) * var(--ar)));
+  }
   .case-steps--checkpoint.is-focused .case-steps__shot { margin-block-start: var(--flow-group); }
   .case-steps--checkpoint.is-focused .case-steps__shot > :global(.case-plate) {
     background: transparent;
