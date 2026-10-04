@@ -1,0 +1,7167 @@
+{
+  "base": "http://127.0.0.1:4352",
+  "profiles": [
+    {
+      "route": "/work/partner-portal/",
+      "width": 1440,
+      "height": 900,
+      "kind": "full",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": true,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Keep the request beside the candidates",
+          "opacity": 0,
+          "visibility": "hidden",
+          "height": 780
+        },
+        {
+          "title": "Confirm the choice, retain the source",
+          "opacity": 0,
+          "visibility": "hidden",
+          "height": 780
+        },
+        {
+          "title": "Carry the row into commercial review",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 780
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "stops": [
+        {
+          "offset": 100,
+          "active": [
+            {
+              "index": 0,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 750,
+          "active": [
+            {
+              "index": 1,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 1250,
+          "active": [
+            {
+              "index": 2,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 750,
+          "active": [
+            {
+              "index": 1,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 100,
+          "active": [
+            {
+              "index": 0,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/work/partner-portal/",
+      "width": 1440,
+      "height": 900,
+      "kind": "reduce",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Keep the request beside the candidates",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 806.5
+        },
+        {
+          "title": "Confirm the choice, retain the source",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 484.375
+        },
+        {
+          "title": "Carry the row into commercial review",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 472.90625
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/partner-portal/",
+      "width": 1440,
+      "height": 900,
+      "kind": "no-js",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Keep the request beside the candidates",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 806.5
+        },
+        {
+          "title": "Confirm the choice, retain the source",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 484.375
+        },
+        {
+          "title": "Carry the row into commercial review",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 472.90625
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/partner-portal/",
+      "width": 1440,
+      "height": 600,
+      "kind": "short",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Keep the request beside the candidates",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 806.5
+        },
+        {
+          "title": "Confirm the choice, retain the source",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 484.375
+        },
+        {
+          "title": "Carry the row into commercial review",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 472.90625
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/partner-portal/",
+      "width": 1024,
+      "height": 900,
+      "kind": "full",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": true,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Keep the request beside the candidates",
+          "opacity": 0,
+          "visibility": "hidden",
+          "height": 780
+        },
+        {
+          "title": "Confirm the choice, retain the source",
+          "opacity": 0,
+          "visibility": "hidden",
+          "height": 780
+        },
+        {
+          "title": "Carry the row into commercial review",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 780
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "stops": [
+        {
+          "offset": 100,
+          "active": [
+            {
+              "index": 0,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 750,
+          "active": [
+            {
+              "index": 1,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 1250,
+          "active": [
+            {
+              "index": 2,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 750,
+          "active": [
+            {
+              "index": 1,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 100,
+          "active": [
+            {
+              "index": 0,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/work/partner-portal/",
+      "width": 1024,
+      "height": 900,
+      "kind": "reduce",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Keep the request beside the candidates",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 709.03125
+        },
+        {
+          "title": "Confirm the choice, retain the source",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 459.421875
+        },
+        {
+          "title": "Carry the row into commercial review",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 440.71875
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/partner-portal/",
+      "width": 1024,
+      "height": 900,
+      "kind": "no-js",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Keep the request beside the candidates",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 709.03125
+        },
+        {
+          "title": "Confirm the choice, retain the source",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 459.421875
+        },
+        {
+          "title": "Carry the row into commercial review",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 440.71875
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/partner-portal/",
+      "width": 1024,
+      "height": 600,
+      "kind": "short",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Keep the request beside the candidates",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 709.03125
+        },
+        {
+          "title": "Confirm the choice, retain the source",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 459.421875
+        },
+        {
+          "title": "Carry the row into commercial review",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 440.71875
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/partner-portal/",
+      "width": 390,
+      "height": 900,
+      "kind": "full",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Keep the request beside the candidates",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 873
+        },
+        {
+          "title": "Confirm the choice, retain the source",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 672.5625
+        },
+        {
+          "title": "Carry the row into commercial review",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 720.734375
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/partner-portal/",
+      "width": 390,
+      "height": 900,
+      "kind": "reduce",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Keep the request beside the candidates",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 873
+        },
+        {
+          "title": "Confirm the choice, retain the source",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 672.5625
+        },
+        {
+          "title": "Carry the row into commercial review",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 720.734375
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/partner-portal/",
+      "width": 390,
+      "height": 900,
+      "kind": "no-js",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Keep the request beside the candidates",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 873
+        },
+        {
+          "title": "Confirm the choice, retain the source",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 672.5625
+        },
+        {
+          "title": "Carry the row into commercial review",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 720.734375
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/partner-portal/",
+      "width": 390,
+      "height": 600,
+      "kind": "short",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Keep the request beside the candidates",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 873
+        },
+        {
+          "title": "Confirm the choice, retain the source",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 672.5625
+        },
+        {
+          "title": "Carry the row into commercial review",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 720.734375
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/partner-portal/",
+      "width": 360,
+      "height": 900,
+      "kind": "full",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Keep the request beside the candidates",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 863.21875
+        },
+        {
+          "title": "Confirm the choice, retain the source",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 668.640625
+        },
+        {
+          "title": "Carry the row into commercial review",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 686.703125
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/partner-portal/",
+      "width": 360,
+      "height": 900,
+      "kind": "reduce",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Keep the request beside the candidates",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 863.21875
+        },
+        {
+          "title": "Confirm the choice, retain the source",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 668.640625
+        },
+        {
+          "title": "Carry the row into commercial review",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 686.703125
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/partner-portal/",
+      "width": 360,
+      "height": 900,
+      "kind": "no-js",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Keep the request beside the candidates",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 863.21875
+        },
+        {
+          "title": "Confirm the choice, retain the source",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 668.640625
+        },
+        {
+          "title": "Carry the row into commercial review",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 686.703125
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/partner-portal/",
+      "width": 360,
+      "height": 600,
+      "kind": "short",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Keep the request beside the candidates",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 863.21875
+        },
+        {
+          "title": "Confirm the choice, retain the source",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 668.640625
+        },
+        {
+          "title": "Carry the row into commercial review",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 686.703125
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 1440,
+      "height": 900,
+      "kind": "full",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": true,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Три кандидата на одну строку",
+          "opacity": 0,
+          "visibility": "hidden",
+          "height": 780
+        },
+        {
+          "title": "Выбор принят, строка та же",
+          "opacity": 0,
+          "visibility": "hidden",
+          "height": 780
+        },
+        {
+          "title": "Тот же товар в корзине",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 780
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/ru/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "stops": [
+        {
+          "offset": 100,
+          "active": [
+            {
+              "index": 0,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 750,
+          "active": [
+            {
+              "index": 1,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 1250,
+          "active": [
+            {
+              "index": 2,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 750,
+          "active": [
+            {
+              "index": 1,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 100,
+          "active": [
+            {
+              "index": 0,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 1440,
+      "height": 900,
+      "kind": "reduce",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Три кандидата на одну строку",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 806.5
+        },
+        {
+          "title": "Выбор принят, строка та же",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 484.375
+        },
+        {
+          "title": "Тот же товар в корзине",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 504.40625
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/ru/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 1440,
+      "height": 900,
+      "kind": "no-js",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Три кандидата на одну строку",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 806.5
+        },
+        {
+          "title": "Выбор принят, строка та же",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 484.375
+        },
+        {
+          "title": "Тот же товар в корзине",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 504.40625
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/ru/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 1440,
+      "height": 600,
+      "kind": "short",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Три кандидата на одну строку",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 806.5
+        },
+        {
+          "title": "Выбор принят, строка та же",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 484.375
+        },
+        {
+          "title": "Тот же товар в корзине",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 504.40625
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/ru/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 1024,
+      "height": 900,
+      "kind": "full",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": true,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Три кандидата на одну строку",
+          "opacity": 0,
+          "visibility": "hidden",
+          "height": 780
+        },
+        {
+          "title": "Выбор принят, строка та же",
+          "opacity": 0,
+          "visibility": "hidden",
+          "height": 780
+        },
+        {
+          "title": "Тот же товар в корзине",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 780
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/ru/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "stops": [
+        {
+          "offset": 100,
+          "active": [
+            {
+              "index": 0,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 750,
+          "active": [
+            {
+              "index": 1,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 1250,
+          "active": [
+            {
+              "index": 2,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 750,
+          "active": [
+            {
+              "index": 1,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 100,
+          "active": [
+            {
+              "index": 0,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 1024,
+      "height": 900,
+      "kind": "reduce",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Три кандидата на одну строку",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 653.84375
+        },
+        {
+          "title": "Выбор принят, строка та же",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 459.421875
+        },
+        {
+          "title": "Тот же товар в корзине",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 472.21875
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/ru/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 1024,
+      "height": 900,
+      "kind": "no-js",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Три кандидата на одну строку",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 653.84375
+        },
+        {
+          "title": "Выбор принят, строка та же",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 459.421875
+        },
+        {
+          "title": "Тот же товар в корзине",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 472.21875
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/ru/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 1024,
+      "height": 600,
+      "kind": "short",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Три кандидата на одну строку",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 653.84375
+        },
+        {
+          "title": "Выбор принят, строка та же",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 459.421875
+        },
+        {
+          "title": "Тот же товар в корзине",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 472.21875
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/ru/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 390,
+      "height": 900,
+      "kind": "full",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Три кандидата на одну строку",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 850.609375
+        },
+        {
+          "title": "Выбор принят, строка та же",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 694.953125
+        },
+        {
+          "title": "Тот же товар в корзине",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 720.734375
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/ru/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 390,
+      "height": 900,
+      "kind": "reduce",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Три кандидата на одну строку",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 850.609375
+        },
+        {
+          "title": "Выбор принят, строка та же",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 694.953125
+        },
+        {
+          "title": "Тот же товар в корзине",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 720.734375
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/ru/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 390,
+      "height": 900,
+      "kind": "no-js",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Три кандидата на одну строку",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 850.609375
+        },
+        {
+          "title": "Выбор принят, строка та же",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 694.953125
+        },
+        {
+          "title": "Тот же товар в корзине",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 720.734375
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/ru/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 390,
+      "height": 600,
+      "kind": "short",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Три кандидата на одну строку",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 850.609375
+        },
+        {
+          "title": "Выбор принят, строка та же",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 694.953125
+        },
+        {
+          "title": "Тот же товар в корзине",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 720.734375
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/ru/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 360,
+      "height": 900,
+      "kind": "full",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Три кандидата на одну строку",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 857.921875
+        },
+        {
+          "title": "Выбор принят, строка та же",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 700.140625
+        },
+        {
+          "title": "Тот же товар в корзине",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 686.703125
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/ru/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 360,
+      "height": 900,
+      "kind": "reduce",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Три кандидата на одну строку",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 857.921875
+        },
+        {
+          "title": "Выбор принят, строка та же",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 700.140625
+        },
+        {
+          "title": "Тот же товар в корзине",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 686.703125
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/ru/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 360,
+      "height": 900,
+      "kind": "no-js",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Три кандидата на одну строку",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 857.921875
+        },
+        {
+          "title": "Выбор принят, строка та же",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 700.140625
+        },
+        {
+          "title": "Тот же товар в корзине",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 686.703125
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/ru/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 360,
+      "height": 600,
+      "kind": "short",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "portal-diagnosis",
+          "media": "portal-archive"
+        },
+        {
+          "id": "shared-specification",
+          "type": "artifact",
+          "evidence": "portal-scope"
+        },
+        {
+          "id": "buyer-decision",
+          "type": "artifact",
+          "evidence": "portal-decision"
+        },
+        {
+          "id": "source-line",
+          "type": "steps",
+          "evidence": "portal-line",
+          "media": "portal-line"
+        },
+        {
+          "id": "domain-system",
+          "type": "specimen",
+          "evidence": "portal-domain",
+          "media": "portal-specimens"
+        },
+        {
+          "id": "source-in-context",
+          "type": "shot",
+          "evidence": "portal-line",
+          "media": "portal-application"
+        },
+        {
+          "id": "shipped-redesign",
+          "type": "outcome",
+          "evidence": "portal-shipped"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Три кандидата на одну строку",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 857.921875
+        },
+        {
+          "title": "Выбор принят, строка та же",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 700.140625
+        },
+        {
+          "title": "Тот же товар в корзине",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 686.703125
+        }
+      ],
+      "sets": [
+        {
+          "id": "resolution",
+          "states": 4
+        },
+        {
+          "id": "upload",
+          "states": 3
+        },
+        {
+          "id": "availability",
+          "states": 3
+        },
+        {
+          "id": "fulfillment",
+          "states": 3
+        }
+      ],
+      "next": "/ru/work/learn/",
+      "locale": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/",
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/learn/",
+      "width": 1440,
+      "height": 900,
+      "kind": "full",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": true,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Answer the question now",
+          "opacity": 0,
+          "visibility": "hidden",
+          "height": 780
+        },
+        {
+          "title": "Keep the sequence around the answer",
+          "opacity": 0,
+          "visibility": "hidden",
+          "height": 780
+        },
+        {
+          "title": "Reading does not finish a unit",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 780
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "stops": [
+        {
+          "offset": 100,
+          "active": [
+            {
+              "index": 0,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 750,
+          "active": [
+            {
+              "index": 1,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 1250,
+          "active": [
+            {
+              "index": 2,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 750,
+          "active": [
+            {
+              "index": 1,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 100,
+          "active": [
+            {
+              "index": 0,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/work/learn/",
+      "width": 1440,
+      "height": 900,
+      "kind": "reduce",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Answer the question now",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1104.578125
+        },
+        {
+          "title": "Keep the sequence around the answer",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1151.953125
+        },
+        {
+          "title": "Reading does not finish a unit",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1151.953125
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/learn/",
+      "width": 1440,
+      "height": 900,
+      "kind": "no-js",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Answer the question now",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1104.578125
+        },
+        {
+          "title": "Keep the sequence around the answer",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1151.953125
+        },
+        {
+          "title": "Reading does not finish a unit",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1151.953125
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/learn/",
+      "width": 1440,
+      "height": 600,
+      "kind": "short",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Answer the question now",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1104.578125
+        },
+        {
+          "title": "Keep the sequence around the answer",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1151.953125
+        },
+        {
+          "title": "Reading does not finish a unit",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1151.953125
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/learn/",
+      "width": 1024,
+      "height": 900,
+      "kind": "full",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": true,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Answer the question now",
+          "opacity": 0,
+          "visibility": "hidden",
+          "height": 780
+        },
+        {
+          "title": "Keep the sequence around the answer",
+          "opacity": 0,
+          "visibility": "hidden",
+          "height": 780
+        },
+        {
+          "title": "Reading does not finish a unit",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 780
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "stops": [
+        {
+          "offset": 100,
+          "active": [
+            {
+              "index": 0,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 750,
+          "active": [
+            {
+              "index": 1,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 1250,
+          "active": [
+            {
+              "index": 2,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 750,
+          "active": [
+            {
+              "index": 1,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 100,
+          "active": [
+            {
+              "index": 0,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/work/learn/",
+      "width": 1024,
+      "height": 900,
+      "kind": "reduce",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Answer the question now",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 894.875
+        },
+        {
+          "title": "Keep the sequence around the answer",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 950.0625
+        },
+        {
+          "title": "Reading does not finish a unit",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 894.875
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/learn/",
+      "width": 1024,
+      "height": 900,
+      "kind": "no-js",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Answer the question now",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 894.875
+        },
+        {
+          "title": "Keep the sequence around the answer",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 950.0625
+        },
+        {
+          "title": "Reading does not finish a unit",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 894.875
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/learn/",
+      "width": 1024,
+      "height": 600,
+      "kind": "short",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Answer the question now",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 894.875
+        },
+        {
+          "title": "Keep the sequence around the answer",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 950.0625
+        },
+        {
+          "title": "Reading does not finish a unit",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 894.875
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/learn/",
+      "width": 390,
+      "height": 900,
+      "kind": "full",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Answer the question now",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 977.03125
+        },
+        {
+          "title": "Keep the sequence around the answer",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1008.53125
+        },
+        {
+          "title": "Reading does not finish a unit",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1040.03125
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/learn/",
+      "width": 390,
+      "height": 900,
+      "kind": "reduce",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Answer the question now",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 977.03125
+        },
+        {
+          "title": "Keep the sequence around the answer",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1008.53125
+        },
+        {
+          "title": "Reading does not finish a unit",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1040.03125
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/learn/",
+      "width": 390,
+      "height": 900,
+      "kind": "no-js",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Answer the question now",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 977.03125
+        },
+        {
+          "title": "Keep the sequence around the answer",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1008.53125
+        },
+        {
+          "title": "Reading does not finish a unit",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1040.03125
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/learn/",
+      "width": 390,
+      "height": 600,
+      "kind": "short",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Answer the question now",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 977.03125
+        },
+        {
+          "title": "Keep the sequence around the answer",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1008.53125
+        },
+        {
+          "title": "Reading does not finish a unit",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1040.03125
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/learn/",
+      "width": 360,
+      "height": 900,
+      "kind": "full",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Answer the question now",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 943.609375
+        },
+        {
+          "title": "Keep the sequence around the answer",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 975.109375
+        },
+        {
+          "title": "Reading does not finish a unit",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 997.5
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/learn/",
+      "width": 360,
+      "height": 900,
+      "kind": "reduce",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Answer the question now",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 943.609375
+        },
+        {
+          "title": "Keep the sequence around the answer",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 975.109375
+        },
+        {
+          "title": "Reading does not finish a unit",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 997.5
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/learn/",
+      "width": 360,
+      "height": 900,
+      "kind": "no-js",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Answer the question now",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 943.609375
+        },
+        {
+          "title": "Keep the sequence around the answer",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 975.109375
+        },
+        {
+          "title": "Reading does not finish a unit",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 997.5
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/work/learn/",
+      "width": 360,
+      "height": 600,
+      "kind": "short",
+      "lang": "en",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Answer the question now",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 943.609375
+        },
+        {
+          "title": "Keep the sequence around the answer",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 975.109375
+        },
+        {
+          "title": "Reading does not finish a unit",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 997.5
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 1440,
+      "height": 900,
+      "kind": "full",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": true,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Ответить на вопрос сейчас",
+          "opacity": 0,
+          "visibility": "hidden",
+          "height": 780
+        },
+        {
+          "title": "Сохранить порядок вокруг ответа",
+          "opacity": 0,
+          "visibility": "hidden",
+          "height": 780
+        },
+        {
+          "title": "Чтение не завершает единицу",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 780
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/ru/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "stops": [
+        {
+          "offset": 100,
+          "active": [
+            {
+              "index": 0,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 750,
+          "active": [
+            {
+              "index": 1,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 1250,
+          "active": [
+            {
+              "index": 2,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 750,
+          "active": [
+            {
+              "index": 1,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 100,
+          "active": [
+            {
+              "index": 0,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 1440,
+      "height": 900,
+      "kind": "reduce",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Ответить на вопрос сейчас",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1151.953125
+        },
+        {
+          "title": "Сохранить порядок вокруг ответа",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1151.953125
+        },
+        {
+          "title": "Чтение не завершает единицу",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1151.953125
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/ru/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 1440,
+      "height": 900,
+      "kind": "no-js",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Ответить на вопрос сейчас",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1151.953125
+        },
+        {
+          "title": "Сохранить порядок вокруг ответа",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1151.953125
+        },
+        {
+          "title": "Чтение не завершает единицу",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1151.953125
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/ru/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 1440,
+      "height": 600,
+      "kind": "short",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Ответить на вопрос сейчас",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1151.953125
+        },
+        {
+          "title": "Сохранить порядок вокруг ответа",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1151.953125
+        },
+        {
+          "title": "Чтение не завершает единицу",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1151.953125
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/ru/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 1024,
+      "height": 900,
+      "kind": "full",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": true,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Ответить на вопрос сейчас",
+          "opacity": 0,
+          "visibility": "hidden",
+          "height": 780
+        },
+        {
+          "title": "Сохранить порядок вокруг ответа",
+          "opacity": 0,
+          "visibility": "hidden",
+          "height": 780
+        },
+        {
+          "title": "Чтение не завершает единицу",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 780
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/ru/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "stops": [
+        {
+          "offset": 100,
+          "active": [
+            {
+              "index": 0,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 750,
+          "active": [
+            {
+              "index": 1,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 1250,
+          "active": [
+            {
+              "index": 2,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 750,
+          "active": [
+            {
+              "index": 1,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "offset": 100,
+          "active": [
+            {
+              "index": 0,
+              "opacity": 1,
+              "visibility": "visible"
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 1024,
+      "height": 900,
+      "kind": "reduce",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Ответить на вопрос сейчас",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 894.875
+        },
+        {
+          "title": "Сохранить порядок вокруг ответа",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 894.875
+        },
+        {
+          "title": "Чтение не завершает единицу",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 894.875
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/ru/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 1024,
+      "height": 900,
+      "kind": "no-js",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Ответить на вопрос сейчас",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 894.875
+        },
+        {
+          "title": "Сохранить порядок вокруг ответа",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 894.875
+        },
+        {
+          "title": "Чтение не завершает единицу",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 894.875
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/ru/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 1024,
+      "height": 600,
+      "kind": "short",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Ответить на вопрос сейчас",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 894.875
+        },
+        {
+          "title": "Сохранить порядок вокруг ответа",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 894.875
+        },
+        {
+          "title": "Чтение не завершает единицу",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 894.875
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/ru/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 390,
+      "height": 900,
+      "kind": "full",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Ответить на вопрос сейчас",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1008.53125
+        },
+        {
+          "title": "Сохранить порядок вокруг ответа",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1040.03125
+        },
+        {
+          "title": "Чтение не завершает единицу",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1040.03125
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/ru/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 390,
+      "height": 900,
+      "kind": "reduce",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Ответить на вопрос сейчас",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1008.53125
+        },
+        {
+          "title": "Сохранить порядок вокруг ответа",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1040.03125
+        },
+        {
+          "title": "Чтение не завершает единицу",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1040.03125
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/ru/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 390,
+      "height": 900,
+      "kind": "no-js",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Ответить на вопрос сейчас",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1008.53125
+        },
+        {
+          "title": "Сохранить порядок вокруг ответа",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1040.03125
+        },
+        {
+          "title": "Чтение не завершает единицу",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1040.03125
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/ru/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 390,
+      "height": 600,
+      "kind": "short",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Ответить на вопрос сейчас",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1008.53125
+        },
+        {
+          "title": "Сохранить порядок вокруг ответа",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1040.03125
+        },
+        {
+          "title": "Чтение не завершает единицу",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1040.03125
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/ru/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 360,
+      "height": 900,
+      "kind": "full",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Ответить на вопрос сейчас",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 943.609375
+        },
+        {
+          "title": "Сохранить порядок вокруг ответа",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 975.109375
+        },
+        {
+          "title": "Чтение не завершает единицу",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1029
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/ru/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 360,
+      "height": 900,
+      "kind": "reduce",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Ответить на вопрос сейчас",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 943.609375
+        },
+        {
+          "title": "Сохранить порядок вокруг ответа",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 975.109375
+        },
+        {
+          "title": "Чтение не завершает единицу",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1029
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/ru/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 360,
+      "height": 900,
+      "kind": "no-js",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Ответить на вопрос сейчас",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 943.609375
+        },
+        {
+          "title": "Сохранить порядок вокруг ответа",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 975.109375
+        },
+        {
+          "title": "Чтение не завершает единицу",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1029
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/ru/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 360,
+      "height": 600,
+      "kind": "short",
+      "lang": "ru",
+      "overflow": 0,
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "ids": [
+        {
+          "id": "audit-direction",
+          "type": "comparison",
+          "evidence": "learn-audit",
+          "media": "archive-catalog"
+        },
+        {
+          "id": "shared-material",
+          "type": "artifact",
+          "evidence": "learn-model",
+          "media": "learn-content-model"
+        },
+        {
+          "id": "one-material",
+          "type": "steps",
+          "evidence": "learn-completion",
+          "media": "material-contexts"
+        },
+        {
+          "id": "content-language",
+          "type": "specimen",
+          "evidence": "learn-themes",
+          "media": "learn-content-theme"
+        },
+        {
+          "id": "neutral-assessment",
+          "type": "shot",
+          "evidence": "learn-trust",
+          "media": "assessment"
+        },
+        {
+          "id": "public-promise",
+          "type": "shot",
+          "evidence": "learn-landing",
+          "media": "landing"
+        },
+        {
+          "id": "honest-result",
+          "type": "outcome",
+          "evidence": "learn-validation"
+        }
+      ],
+      "broken": [],
+      "focus": false,
+      "spacers": 0,
+      "states": [
+        {
+          "title": "Ответить на вопрос сейчас",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 943.609375
+        },
+        {
+          "title": "Сохранить порядок вокруг ответа",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 975.109375
+        },
+        {
+          "title": "Чтение не завершает единицу",
+          "opacity": 1,
+          "visibility": "visible",
+          "height": 1029
+        }
+      ],
+      "sets": [
+        {
+          "id": "card-setup-project",
+          "states": 2
+        },
+        {
+          "id": "card-handover-explore",
+          "states": 2
+        },
+        {
+          "id": "trust-header",
+          "states": 1
+        },
+        {
+          "id": "progress-meter",
+          "states": 1
+        }
+      ],
+      "next": "/ru/work/vet-clinic/",
+      "locale": [
+        "/work/learn/",
+        "/ru/work/learn/",
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "h1": 1,
+      "errors": []
+    }
+  ],
+  "routes": [
+    {
+      "route": "/work/agent-ops-console/",
+      "stories": 0,
+      "canonical": "https://kanarev.com/work/agent-ops-console/",
+      "locale": [
+        {
+          "lang": "en",
+          "href": "https://kanarev.com/work/agent-ops-console/"
+        },
+        {
+          "lang": "ru",
+          "href": "https://kanarev.com/ru/work/agent-ops-console/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://kanarev.com/work/agent-ops-console/"
+        }
+      ],
+      "og": "en_US"
+    },
+    {
+      "route": "/work/partner-portal/",
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "locale": [
+        {
+          "lang": "en",
+          "href": "https://kanarev.com/work/partner-portal/"
+        },
+        {
+          "lang": "ru",
+          "href": "https://kanarev.com/ru/work/partner-portal/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://kanarev.com/work/partner-portal/"
+        }
+      ],
+      "og": "en_US"
+    },
+    {
+      "route": "/work/learn/",
+      "stories": 1,
+      "canonical": "https://kanarev.com/work/learn/",
+      "locale": [
+        {
+          "lang": "en",
+          "href": "https://kanarev.com/work/learn/"
+        },
+        {
+          "lang": "ru",
+          "href": "https://kanarev.com/ru/work/learn/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://kanarev.com/work/learn/"
+        }
+      ],
+      "og": "en_US"
+    },
+    {
+      "route": "/work/vet-clinic/",
+      "stories": 0,
+      "canonical": "https://kanarev.com/work/vet-clinic/",
+      "locale": [
+        {
+          "lang": "en",
+          "href": "https://kanarev.com/work/vet-clinic/"
+        },
+        {
+          "lang": "ru",
+          "href": "https://kanarev.com/ru/work/vet-clinic/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://kanarev.com/work/vet-clinic/"
+        }
+      ],
+      "og": "en_US"
+    },
+    {
+      "route": "/work/pawly/",
+      "stories": 0,
+      "canonical": "https://kanarev.com/work/pawly/",
+      "locale": [
+        {
+          "lang": "en",
+          "href": "https://kanarev.com/work/pawly/"
+        },
+        {
+          "lang": "ru",
+          "href": "https://kanarev.com/ru/work/pawly/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://kanarev.com/work/pawly/"
+        }
+      ],
+      "og": "en_US"
+    },
+    {
+      "route": "/ru/work/agent-ops-console/",
+      "stories": 0,
+      "canonical": "https://kanarev.com/ru/work/agent-ops-console/",
+      "locale": [
+        {
+          "lang": "en",
+          "href": "https://kanarev.com/work/agent-ops-console/"
+        },
+        {
+          "lang": "ru",
+          "href": "https://kanarev.com/ru/work/agent-ops-console/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://kanarev.com/work/agent-ops-console/"
+        }
+      ],
+      "og": "ru_RU"
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "locale": [
+        {
+          "lang": "en",
+          "href": "https://kanarev.com/work/partner-portal/"
+        },
+        {
+          "lang": "ru",
+          "href": "https://kanarev.com/ru/work/partner-portal/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://kanarev.com/work/partner-portal/"
+        }
+      ],
+      "og": "ru_RU"
+    },
+    {
+      "route": "/ru/work/learn/",
+      "stories": 1,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "locale": [
+        {
+          "lang": "en",
+          "href": "https://kanarev.com/work/learn/"
+        },
+        {
+          "lang": "ru",
+          "href": "https://kanarev.com/ru/work/learn/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://kanarev.com/work/learn/"
+        }
+      ],
+      "og": "ru_RU"
+    },
+    {
+      "route": "/ru/work/vet-clinic/",
+      "stories": 0,
+      "canonical": "https://kanarev.com/ru/work/vet-clinic/",
+      "locale": [
+        {
+          "lang": "en",
+          "href": "https://kanarev.com/work/vet-clinic/"
+        },
+        {
+          "lang": "ru",
+          "href": "https://kanarev.com/ru/work/vet-clinic/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://kanarev.com/work/vet-clinic/"
+        }
+      ],
+      "og": "ru_RU"
+    },
+    {
+      "route": "/ru/work/pawly/",
+      "stories": 0,
+      "canonical": "https://kanarev.com/ru/work/pawly/",
+      "locale": [
+        {
+          "lang": "en",
+          "href": "https://kanarev.com/work/pawly/"
+        },
+        {
+          "lang": "ru",
+          "href": "https://kanarev.com/ru/work/pawly/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://kanarev.com/work/pawly/"
+        }
+      ],
+      "og": "ru_RU"
+    }
+  ],
+  "mirrors": [
+    {
+      "source": "ds/tokens.css",
+      "mirror": "src/styles/tokens.css",
+      "equal": true,
+      "sha256": "47f89e88a2796834e9ef45d4c473a0411d7ec58e9fd366dd30d77adc9611b832"
+    },
+    {
+      "source": "ds/motion.js",
+      "mirror": "src/scripts/motion.js",
+      "equal": true,
+      "sha256": "3136db057ba7629c550544cf7a4951bb9bf5d118272dce9ea37b191021eb952f"
+    }
+  ],
+  "next": [],
+  "failures": []
+}

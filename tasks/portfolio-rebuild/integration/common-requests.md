@@ -1,6 +1,6 @@
 # Общие запросы G · 04.10.2026
 
-Владелец принял A в текущем чате, затем указал конкретную визуальную ошибку углов specimens на /kit. До фиксации базы закрываем эту доводку. Общий слой передан G; B–F ещё не передавали истории.
+Владелец принял A в текущем чате, затем указал конкретную визуальную ошибку углов specimens на /kit. Доводка вошла в первую базу. Общий слой передан G; текущая приёмка и закрытие запросов B/C записаны ниже.
 
 ## G-01 · Настоящие края specimens
 
@@ -21,3 +21,7 @@ BaseLayout выдавал og:locale=en/ru. Общий routes map теперь з
 ## Закрытие checkpoint G-base
 
 G-01 закрыт в принятом ref A: 26 alpha captures, 24 профиля /kit и Portal EN/RU, 0 failures. На трёх локальных origins 4350/4352/4353 все 78 HTTP-ответов captures совпадают с исправленными файлами (`base-reproduction.json`). G-02 закрыт в рабочей ветке G: 32 профиля двух локалей, четыре ширины, full/reduce/no-JS/blocked-JS; focus/Escape/resize/live preference/Back и короткое окно. G-03 закрыт: 24 страницы, 14 public sitemap routes, 14 OG assets и два PDF, 0 failures; /kit имеет RU locale корректно. Две служебные страницы дают native email/CV, 404 содержит EN/RU выходы; их contact lead больше не ссылается на отсутствующий кейс сверху. После последней правки текста служебные страницы дополнительно проверены в 16 профилях 600 px высоты. Монограмма просмотрена на сравнительном кадре и в текущей desktop/mobile оболочке. Подробности — `shell-verification.json`, `service-verification.json` и `report.md`.
+
+## B-G-01 · закрыт G-integrate-1
+
+B и C подтвердили остановку общего Next после многократного resize. Причина — cached start/end после пересоздания pin geometry; на /kit затронут также legacy pin-swap. Structural pins обновляются с refreshPriority=1. Видимость marquee отслеживает IntersectionObserver реального viewport, resize пересчитывает GSAP tween; синхронный промежуточный размер до reflow не записывается как финальная видимость. Lifecycle очищает observer и listeners. Один общий вариант, без изменения schema, длительности, hover/focus и fallback. Проверены public Portal/Learn EN/RU, Common Agent EN/RU и /kit: семь routes, повторный resize до Next и в его окне, exit/re-entry, live reduce/full, native Next/Back/Forward; 0 failures. Доказательство: wave-1/next-verification.json; логика — ds/motion-concept.md. Публичная матрица B/C: 64 profiles, 0 failures. Исторические отчёты владельцев сохраняют исходный finding; это актуальный статус общего исправления.

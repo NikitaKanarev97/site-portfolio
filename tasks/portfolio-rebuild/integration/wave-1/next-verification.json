@@ -1,0 +1,2963 @@
+{
+  "base": "http://127.0.0.1:4352",
+  "profiles": [],
+  "routes": [],
+  "mirrors": [],
+  "next": [
+    {
+      "route": "/work/partner-portal/",
+      "sizes": [
+        {
+          "transform": "matrix(1, 0, 0, 1, -156.241, 0)",
+          "inView": true,
+          "y": 12630,
+          "top": 409.953125,
+          "bottom": 540.5,
+          "width": 1024,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -284.229, 0)",
+          "inView": true,
+          "y": 12039,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -316.625, 0)",
+          "inView": true,
+          "y": 17253,
+          "top": 378.125,
+          "bottom": 427.078125,
+          "width": 390,
+          "height": 844,
+          "link": "/work/learn/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -337.516, 0)",
+          "inView": true,
+          "y": 17026,
+          "top": 377.984375,
+          "bottom": 426.9375,
+          "width": 360,
+          "height": 844,
+          "link": "/work/learn/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -510.79, 0)",
+          "inView": true,
+          "y": 12630,
+          "top": 409.953125,
+          "bottom": 540.5,
+          "width": 1024,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -661.888, 0)",
+          "inView": true,
+          "y": 12039,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        }
+      ],
+      "inViewSizes": [
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -156.241, 0)",
+            "inView": true,
+            "y": 12630,
+            "top": 409.953125,
+            "bottom": 540.5,
+            "width": 1024,
+            "height": 900,
+            "link": "/work/learn/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -169.961, 0)",
+            "inView": true,
+            "y": 12630,
+            "top": 409.953125,
+            "bottom": 540.5,
+            "width": 1024,
+            "height": 900,
+            "link": "/work/learn/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -284.229, 0)",
+            "inView": true,
+            "y": 12039,
+            "top": 410,
+            "bottom": 540.546875,
+            "width": 1440,
+            "height": 900,
+            "link": "/work/learn/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -296.344, 0)",
+            "inView": true,
+            "y": 12039,
+            "top": 410,
+            "bottom": 540.546875,
+            "width": 1440,
+            "height": 900,
+            "link": "/work/learn/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -316.625, 0)",
+            "inView": true,
+            "y": 17253,
+            "top": 378.125,
+            "bottom": 427.078125,
+            "width": 390,
+            "height": 844,
+            "link": "/work/learn/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -318.232, 0)",
+            "inView": true,
+            "y": 17253,
+            "top": 378.125,
+            "bottom": 427.078125,
+            "width": 390,
+            "height": 844,
+            "link": "/work/learn/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -337.575, 0)",
+            "inView": true,
+            "y": 17026,
+            "top": 377.984375,
+            "bottom": 426.9375,
+            "width": 360,
+            "height": 844,
+            "link": "/work/learn/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -338.863, 0)",
+            "inView": true,
+            "y": 17026,
+            "top": 377.984375,
+            "bottom": 426.9375,
+            "width": 360,
+            "height": 844,
+            "link": "/work/learn/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -510.79, 0)",
+            "inView": true,
+            "y": 12630,
+            "top": 409.953125,
+            "bottom": 540.5,
+            "width": 1024,
+            "height": 900,
+            "link": "/work/learn/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -520.391, 0)",
+            "inView": true,
+            "y": 12630,
+            "top": 409.953125,
+            "bottom": 540.5,
+            "width": 1024,
+            "height": 900,
+            "link": "/work/learn/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -661.888, 0)",
+            "inView": true,
+            "y": 12039,
+            "top": 410,
+            "bottom": 540.546875,
+            "width": 1440,
+            "height": 900,
+            "link": "/work/learn/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -668.668, 0)",
+            "inView": true,
+            "y": 12039,
+            "top": 410,
+            "bottom": 540.546875,
+            "width": 1440,
+            "height": 900,
+            "link": "/work/learn/"
+          },
+          "moving": true
+        }
+      ],
+      "resizedEntry": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -20.1444, 0)",
+          "inView": true,
+          "y": 12039,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -34.9008, 0)",
+          "inView": true,
+          "y": 12039,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "moving": true
+      },
+      "hover": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -37.0721, 0)",
+          "inView": true,
+          "y": 12039,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -51.6677, 0)",
+          "inView": true,
+          "y": 12039,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "moving": true
+      },
+      "focus": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -52.3512, 0)",
+          "inView": true,
+          "y": 12039,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -67.0675, 0)",
+          "inView": true,
+          "y": 12039,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "moving": true
+      },
+      "finalSize": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -677.745, 0)",
+          "inView": true,
+          "y": 12039,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -684.841, 0)",
+          "inView": true,
+          "y": 12039,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "moving": true
+      },
+      "outside": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -685.174, 0)",
+          "inView": false,
+          "y": 11199,
+          "top": 1250,
+          "bottom": 1380.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -685.174, 0)",
+          "inView": false,
+          "y": 11199,
+          "top": 1250,
+          "bottom": 1380.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "moving": false
+      },
+      "reentry": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -693.27, 0)",
+          "inView": true,
+          "y": 12039,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -700.106, 0)",
+          "inView": true,
+          "y": 12039,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "moving": true
+      },
+      "reduce": {
+        "before": {
+          "transform": "none",
+          "inView": true,
+          "y": 11825,
+          "top": 409.59375,
+          "bottom": 540.140625,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "after": {
+          "transform": "none",
+          "inView": true,
+          "y": 11825,
+          "top": 409.59375,
+          "bottom": 540.140625,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "moving": false
+      },
+      "resume": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -26.6581, 0)",
+          "inView": true,
+          "y": 12013,
+          "top": 409.625,
+          "bottom": 540.171875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -41.4146, 0)",
+          "inView": true,
+          "y": 12013,
+          "top": 409.625,
+          "bottom": 540.171875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "moving": true
+      },
+      "destination": "http://127.0.0.1:4352/work/learn/",
+      "back": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -31.0006, 0)",
+          "inView": true,
+          "y": 12013,
+          "top": 409.625,
+          "bottom": 540.171875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -45.7571, 0)",
+          "inView": true,
+          "y": 12013,
+          "top": 409.625,
+          "bottom": 540.171875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "moving": true
+      },
+      "forwardBack": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -31.5233, 0)",
+          "inView": true,
+          "y": 12013,
+          "top": 409.625,
+          "bottom": 540.171875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -47.0035, 0)",
+          "inView": true,
+          "y": 12013,
+          "top": 409.625,
+          "bottom": 540.171875,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/learn/"
+        },
+        "moving": true
+      },
+      "locale": "http://127.0.0.1:4352/ru/work/partner-portal/",
+      "errors": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "sizes": [
+        {
+          "transform": "matrix(1, 0, 0, 1, -155.505, 0)",
+          "inView": true,
+          "y": 12426,
+          "top": 410.328125,
+          "bottom": 540.875,
+          "width": 1024,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -282.562, 0)",
+          "inView": true,
+          "y": 11897,
+          "top": 410.75,
+          "bottom": 541.296875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -314.742, 0)",
+          "inView": true,
+          "y": 17542,
+          "top": 378.796875,
+          "bottom": 427.75,
+          "width": 390,
+          "height": 844,
+          "link": "/ru/work/learn/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -336.053, 0)",
+          "inView": true,
+          "y": 17215,
+          "top": 379.15625,
+          "bottom": 428.109375,
+          "width": 360,
+          "height": 844,
+          "link": "/ru/work/learn/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -508.859, 0)",
+          "inView": true,
+          "y": 12425,
+          "top": 411.328125,
+          "bottom": 541.875,
+          "width": 1024,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -660.242, 0)",
+          "inView": true,
+          "y": 11896,
+          "top": 411.75,
+          "bottom": 542.296875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        }
+      ],
+      "inViewSizes": [
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -155.505, 0)",
+            "inView": true,
+            "y": 12426,
+            "top": 410.328125,
+            "bottom": 540.875,
+            "width": 1024,
+            "height": 900,
+            "link": "/ru/work/learn/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -169.193, 0)",
+            "inView": true,
+            "y": 12426,
+            "top": 410.328125,
+            "bottom": 540.875,
+            "width": 1024,
+            "height": 900,
+            "link": "/ru/work/learn/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -282.562, 0)",
+            "inView": true,
+            "y": 11897,
+            "top": 410.75,
+            "bottom": 541.296875,
+            "width": 1440,
+            "height": 900,
+            "link": "/ru/work/learn/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -294.699, 0)",
+            "inView": true,
+            "y": 11897,
+            "top": 410.75,
+            "bottom": 541.296875,
+            "width": 1440,
+            "height": 900,
+            "link": "/ru/work/learn/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -314.742, 0)",
+            "inView": true,
+            "y": 17542,
+            "top": 378.796875,
+            "bottom": 427.75,
+            "width": 390,
+            "height": 844,
+            "link": "/ru/work/learn/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -316.382, 0)",
+            "inView": true,
+            "y": 17542,
+            "top": 378.796875,
+            "bottom": 427.75,
+            "width": 390,
+            "height": 844,
+            "link": "/ru/work/learn/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -336.053, 0)",
+            "inView": true,
+            "y": 17215,
+            "top": 379.15625,
+            "bottom": 428.109375,
+            "width": 360,
+            "height": 844,
+            "link": "/ru/work/learn/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -337.355, 0)",
+            "inView": true,
+            "y": 17215,
+            "top": 379.15625,
+            "bottom": 428.109375,
+            "width": 360,
+            "height": 844,
+            "link": "/ru/work/learn/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -508.859, 0)",
+            "inView": true,
+            "y": 12425,
+            "top": 411.328125,
+            "bottom": 541.875,
+            "width": 1024,
+            "height": 900,
+            "link": "/ru/work/learn/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -518.378, 0)",
+            "inView": true,
+            "y": 12425,
+            "top": 411.328125,
+            "bottom": 541.875,
+            "width": 1024,
+            "height": 900,
+            "link": "/ru/work/learn/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -660.242, 0)",
+            "inView": true,
+            "y": 11896,
+            "top": 411.75,
+            "bottom": 542.296875,
+            "width": 1440,
+            "height": 900,
+            "link": "/ru/work/learn/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -667.046, 0)",
+            "inView": true,
+            "y": 11896,
+            "top": 411.75,
+            "bottom": 542.296875,
+            "width": 1440,
+            "height": 900,
+            "link": "/ru/work/learn/"
+          },
+          "moving": true
+        }
+      ],
+      "resizedEntry": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -19.6619, 0)",
+          "inView": true,
+          "y": 11897,
+          "top": 410.75,
+          "bottom": 541.296875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -34.4183, 0)",
+          "inView": true,
+          "y": 11897,
+          "top": 410.75,
+          "bottom": 541.296875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "moving": true
+      },
+      "hover": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -36.5896, 0)",
+          "inView": true,
+          "y": 11897,
+          "top": 410.75,
+          "bottom": 541.296875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -51.909, 0)",
+          "inView": true,
+          "y": 11897,
+          "top": 410.75,
+          "bottom": 541.296875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "moving": true
+      },
+      "focus": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -51.909, 0)",
+          "inView": true,
+          "y": 11897,
+          "top": 410.75,
+          "bottom": 541.296875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -67.3892, 0)",
+          "inView": true,
+          "y": 11897,
+          "top": 410.75,
+          "bottom": 541.296875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "moving": true
+      },
+      "finalSize": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -676.154, 0)",
+          "inView": true,
+          "y": 11896,
+          "top": 411.75,
+          "bottom": 542.296875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -682.995, 0)",
+          "inView": true,
+          "y": 11896,
+          "top": 411.75,
+          "bottom": 542.296875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "moving": true
+      },
+      "outside": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -683.646, 0)",
+          "inView": false,
+          "y": 11058,
+          "top": 1249.75,
+          "bottom": 1380.296875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -683.646, 0)",
+          "inView": false,
+          "y": 11058,
+          "top": 1249.75,
+          "bottom": 1380.296875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "moving": false
+      },
+      "reentry": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -691.751, 0)",
+          "inView": true,
+          "y": 11897,
+          "top": 410.75,
+          "bottom": 541.296875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -698.611, 0)",
+          "inView": true,
+          "y": 11897,
+          "top": 410.75,
+          "bottom": 541.296875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "moving": true
+      },
+      "reduce": {
+        "before": {
+          "transform": "none",
+          "inView": true,
+          "y": 11721,
+          "top": 411.03125,
+          "bottom": 541.578125,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "after": {
+          "transform": "none",
+          "inView": true,
+          "y": 11721,
+          "top": 411.03125,
+          "bottom": 541.578125,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "moving": false
+      },
+      "resume": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -27.3417, 0)",
+          "inView": true,
+          "y": 11878,
+          "top": 410.5625,
+          "bottom": 541.109375,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -42.0579, 0)",
+          "inView": true,
+          "y": 11878,
+          "top": 410.5625,
+          "bottom": 541.109375,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "moving": true
+      },
+      "destination": "http://127.0.0.1:4352/ru/work/learn/",
+      "back": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -30.9202, 0)",
+          "inView": true,
+          "y": 11878,
+          "top": 410.5625,
+          "bottom": 541.109375,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -45.6767, 0)",
+          "inView": true,
+          "y": 11878,
+          "top": 410.5625,
+          "bottom": 541.109375,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "moving": true
+      },
+      "forwardBack": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -32.9708, 0)",
+          "inView": true,
+          "y": 11878,
+          "top": 410.5625,
+          "bottom": 541.109375,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -47.7273, 0)",
+          "inView": true,
+          "y": 11878,
+          "top": 410.5625,
+          "bottom": 541.109375,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/learn/"
+        },
+        "moving": true
+      },
+      "locale": "http://127.0.0.1:4352/work/partner-portal/",
+      "errors": []
+    },
+    {
+      "route": "/work/learn/",
+      "sizes": [
+        {
+          "transform": "matrix(1, 0, 0, 1, -134.64, 0)",
+          "inView": true,
+          "y": 10074,
+          "top": 409.640625,
+          "bottom": 540.1875,
+          "width": 1024,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -245.286, 0)",
+          "inView": true,
+          "y": 10283,
+          "top": 409.984375,
+          "bottom": 540.53125,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -274.849, 0)",
+          "inView": true,
+          "y": 13550,
+          "top": 378.171875,
+          "bottom": 427.125,
+          "width": 390,
+          "height": 844,
+          "link": "/work/vet-clinic/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -294.926, 0)",
+          "inView": true,
+          "y": 13283,
+          "top": 378.3125,
+          "bottom": 427.265625,
+          "width": 360,
+          "height": 844,
+          "link": "/work/vet-clinic/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -445.848, 0)",
+          "inView": true,
+          "y": 10073,
+          "top": 410.640625,
+          "bottom": 541.1875,
+          "width": 1024,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -578.62, 0)",
+          "inView": true,
+          "y": 10282,
+          "top": 410.984375,
+          "bottom": 541.53125,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        }
+      ],
+      "inViewSizes": [
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -134.64, 0)",
+            "inView": true,
+            "y": 10074,
+            "top": 409.640625,
+            "bottom": 540.1875,
+            "width": 1024,
+            "height": 900,
+            "link": "/work/vet-clinic/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -146.701, 0)",
+            "inView": true,
+            "y": 10074,
+            "top": 409.640625,
+            "bottom": 540.1875,
+            "width": 1024,
+            "height": 900,
+            "link": "/work/vet-clinic/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -245.286, 0)",
+            "inView": true,
+            "y": 10283,
+            "top": 409.984375,
+            "bottom": 540.53125,
+            "width": 1440,
+            "height": 900,
+            "link": "/work/vet-clinic/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -256.084, 0)",
+            "inView": true,
+            "y": 10283,
+            "top": 409.984375,
+            "bottom": 540.53125,
+            "width": 1440,
+            "height": 900,
+            "link": "/work/vet-clinic/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -274.849, 0)",
+            "inView": true,
+            "y": 13550,
+            "top": 378.171875,
+            "bottom": 427.125,
+            "width": 390,
+            "height": 844,
+            "link": "/work/vet-clinic/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -276.404, 0)",
+            "inView": true,
+            "y": 13550,
+            "top": 378.171875,
+            "bottom": 427.125,
+            "width": 390,
+            "height": 844,
+            "link": "/work/vet-clinic/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -294.926, 0)",
+            "inView": true,
+            "y": 13283,
+            "top": 378.3125,
+            "bottom": 427.265625,
+            "width": 360,
+            "height": 844,
+            "link": "/work/vet-clinic/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -296.174, 0)",
+            "inView": true,
+            "y": 13283,
+            "top": 378.3125,
+            "bottom": 427.265625,
+            "width": 360,
+            "height": 844,
+            "link": "/work/vet-clinic/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -446.239, 0)",
+            "inView": true,
+            "y": 10073,
+            "top": 410.640625,
+            "bottom": 541.1875,
+            "width": 1024,
+            "height": 900,
+            "link": "/work/vet-clinic/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -454.3, 0)",
+            "inView": true,
+            "y": 10073,
+            "top": 410.640625,
+            "bottom": 541.1875,
+            "width": 1024,
+            "height": 900,
+            "link": "/work/vet-clinic/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -578.915, 0)",
+            "inView": true,
+            "y": 10282,
+            "top": 410.984375,
+            "bottom": 541.53125,
+            "width": 1440,
+            "height": 900,
+            "link": "/work/vet-clinic/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -584.682, 0)",
+            "inView": true,
+            "y": 10282,
+            "top": 410.984375,
+            "bottom": 541.53125,
+            "width": 1440,
+            "height": 900,
+            "link": "/work/vet-clinic/"
+          },
+          "moving": true
+        }
+      ],
+      "resizedEntry": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -17.2276, 0)",
+          "inView": true,
+          "y": 10283,
+          "top": 409.984375,
+          "bottom": 540.53125,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -30.281, 0)",
+          "inView": true,
+          "y": 10283,
+          "top": 409.984375,
+          "bottom": 540.53125,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "moving": true
+      },
+      "hover": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -32.1559, 0)",
+          "inView": true,
+          "y": 10283,
+          "top": 409.984375,
+          "bottom": 540.53125,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -45.0678, 0)",
+          "inView": true,
+          "y": 10283,
+          "top": 409.984375,
+          "bottom": 540.53125,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "moving": true
+      },
+      "focus": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -45.6691, 0)",
+          "inView": true,
+          "y": 10283,
+          "top": 409.984375,
+          "bottom": 540.53125,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -58.0857, 0)",
+          "inView": true,
+          "y": 10283,
+          "top": 409.984375,
+          "bottom": 540.53125,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "moving": true
+      },
+      "finalSize": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -593.275, 0)",
+          "inView": true,
+          "y": 10282,
+          "top": 410.984375,
+          "bottom": 541.53125,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -599.304, 0)",
+          "inView": true,
+          "y": 10282,
+          "top": 410.984375,
+          "bottom": 541.53125,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "moving": true
+      },
+      "outside": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -599.6, 0)",
+          "inView": false,
+          "y": 9443,
+          "top": 1249.984375,
+          "bottom": 1380.53125,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -599.6, 0)",
+          "inView": false,
+          "y": 9443,
+          "top": 1249.984375,
+          "bottom": 1380.53125,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "moving": false
+      },
+      "reentry": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -606.747, 0)",
+          "inView": true,
+          "y": 10283,
+          "top": 409.984375,
+          "bottom": 540.53125,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -613.056, 0)",
+          "inView": true,
+          "y": 10283,
+          "top": 409.984375,
+          "bottom": 540.53125,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "moving": true
+      },
+      "reduce": {
+        "before": {
+          "transform": "none",
+          "inView": true,
+          "y": 11713,
+          "top": 410.28125,
+          "bottom": 540.828125,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "none",
+          "inView": true,
+          "y": 11713,
+          "top": 410.28125,
+          "bottom": 540.828125,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "moving": false
+      },
+      "resume": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -23.4536, 0)",
+          "inView": true,
+          "y": 10256,
+          "top": 410.609375,
+          "bottom": 541.15625,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -36.3655, 0)",
+          "inView": true,
+          "y": 10256,
+          "top": 410.609375,
+          "bottom": 541.15625,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "moving": true
+      },
+      "destination": "http://127.0.0.1:4352/work/vet-clinic/",
+      "back": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -27.8047, 0)",
+          "inView": true,
+          "y": 10256,
+          "top": 410.609375,
+          "bottom": 541.15625,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -40.7874, 0)",
+          "inView": true,
+          "y": 10256,
+          "top": 410.609375,
+          "bottom": 541.15625,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "moving": true
+      },
+      "forwardBack": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -28.4415, 0)",
+          "inView": true,
+          "y": 10256,
+          "top": 410.609375,
+          "bottom": 541.15625,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -41.3887, 0)",
+          "inView": true,
+          "y": 10256,
+          "top": 410.609375,
+          "bottom": 541.15625,
+          "width": 1440,
+          "height": 900,
+          "link": "/work/vet-clinic/"
+        },
+        "moving": true
+      },
+      "locale": "http://127.0.0.1:4352/ru/work/learn/",
+      "errors": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "sizes": [
+        {
+          "transform": "matrix(1, 0, 0, 1, -366.14, 0)",
+          "inView": true,
+          "y": 10170,
+          "top": 410.40625,
+          "bottom": 540.953125,
+          "width": 1024,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -670.473, 0)",
+          "inView": true,
+          "y": 10338,
+          "top": 410.171875,
+          "bottom": 540.71875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -739.657, 0)",
+          "inView": true,
+          "y": 13794,
+          "top": 378.546875,
+          "bottom": 427.5,
+          "width": 390,
+          "height": 844,
+          "link": "/ru/work/vet-clinic/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -781.068, 0)",
+          "inView": true,
+          "y": 13485,
+          "top": 379.09375,
+          "bottom": 428.046875,
+          "width": 360,
+          "height": 844,
+          "link": "/ru/work/vet-clinic/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -1200.74, 0)",
+          "inView": true,
+          "y": 10169,
+          "top": 411.40625,
+          "bottom": 541.953125,
+          "width": 1024,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -1570.15, 0)",
+          "inView": true,
+          "y": 10337,
+          "top": 411.171875,
+          "bottom": 541.71875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        }
+      ],
+      "inViewSizes": [
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -367.672, 0)",
+            "inView": true,
+            "y": 10170,
+            "top": 410.40625,
+            "bottom": 540.953125,
+            "width": 1024,
+            "height": 900,
+            "link": "/ru/work/vet-clinic/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -400.643, 0)",
+            "inView": true,
+            "y": 10170,
+            "top": 410.40625,
+            "bottom": 540.953125,
+            "width": 1024,
+            "height": 900,
+            "link": "/ru/work/vet-clinic/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -671.832, 0)",
+            "inView": true,
+            "y": 10338,
+            "top": 410.171875,
+            "bottom": 540.71875,
+            "width": 1440,
+            "height": 900,
+            "link": "/ru/work/vet-clinic/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -701.182, 0)",
+            "inView": true,
+            "y": 10338,
+            "top": 410.171875,
+            "bottom": 540.71875,
+            "width": 1440,
+            "height": 900,
+            "link": "/ru/work/vet-clinic/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -739.805, 0)",
+            "inView": true,
+            "y": 13794,
+            "top": 378.546875,
+            "bottom": 427.5,
+            "width": 390,
+            "height": 844,
+            "link": "/ru/work/vet-clinic/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -742.998, 0)",
+            "inView": true,
+            "y": 13794,
+            "top": 378.546875,
+            "bottom": 427.5,
+            "width": 390,
+            "height": 844,
+            "link": "/ru/work/vet-clinic/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -781.068, 0)",
+            "inView": true,
+            "y": 13485,
+            "top": 379.09375,
+            "bottom": 428.046875,
+            "width": 360,
+            "height": 844,
+            "link": "/ru/work/vet-clinic/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -783.614, 0)",
+            "inView": true,
+            "y": 13485,
+            "top": 379.09375,
+            "bottom": 428.046875,
+            "width": 360,
+            "height": 844,
+            "link": "/ru/work/vet-clinic/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -1200.74, 0)",
+            "inView": true,
+            "y": 10169,
+            "top": 411.40625,
+            "bottom": 541.953125,
+            "width": 1024,
+            "height": 900,
+            "link": "/ru/work/vet-clinic/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -1224.04, 0)",
+            "inView": true,
+            "y": 10169,
+            "top": 411.40625,
+            "bottom": 541.953125,
+            "width": 1024,
+            "height": 900,
+            "link": "/ru/work/vet-clinic/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -1570.93, 0)",
+            "inView": true,
+            "y": 10337,
+            "top": 411.171875,
+            "bottom": 541.71875,
+            "width": 1440,
+            "height": 900,
+            "link": "/ru/work/vet-clinic/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -1586.98, 0)",
+            "inView": true,
+            "y": 10337,
+            "top": 411.171875,
+            "bottom": 541.71875,
+            "width": 1440,
+            "height": 900,
+            "link": "/ru/work/vet-clinic/"
+          },
+          "moving": true
+        }
+      ],
+      "resizedEntry": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -46.7867, 0)",
+          "inView": true,
+          "y": 10338,
+          "top": 410.171875,
+          "bottom": 540.71875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -82.1667, 0)",
+          "inView": true,
+          "y": 10338,
+          "top": 410.171875,
+          "bottom": 540.71875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "moving": true
+      },
+      "hover": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -87.3867, 0)",
+          "inView": true,
+          "y": 10338,
+          "top": 410.171875,
+          "bottom": 540.71875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -122.573, 0)",
+          "inView": true,
+          "y": 10338,
+          "top": 410.171875,
+          "bottom": 540.71875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "moving": true
+      },
+      "focus": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -122.573, 0)",
+          "inView": true,
+          "y": 10338,
+          "top": 410.171875,
+          "bottom": 540.71875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -157.953, 0)",
+          "inView": true,
+          "y": 10338,
+          "top": 410.171875,
+          "bottom": 540.71875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "moving": true
+      },
+      "finalSize": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -1610.11, 0)",
+          "inView": true,
+          "y": 10337,
+          "top": 411.171875,
+          "bottom": 541.71875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -1627.63, 0)",
+          "inView": true,
+          "y": 10337,
+          "top": 411.171875,
+          "bottom": 541.71875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "moving": true
+      },
+      "outside": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -1628.45, 0)",
+          "inView": false,
+          "y": 9498,
+          "top": 1250.171875,
+          "bottom": 1380.71875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -1628.45, 0)",
+          "inView": false,
+          "y": 9498,
+          "top": 1250.171875,
+          "bottom": 1380.71875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "moving": false
+      },
+      "reentry": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -1648.29, 0)",
+          "inView": true,
+          "y": 10338,
+          "top": 410.171875,
+          "bottom": 540.71875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -1665.76, 0)",
+          "inView": true,
+          "y": 10338,
+          "top": 410.171875,
+          "bottom": 540.71875,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "moving": true
+      },
+      "reduce": {
+        "before": {
+          "transform": "none",
+          "inView": true,
+          "y": 11816,
+          "top": 409.84375,
+          "bottom": 540.390625,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "none",
+          "inView": true,
+          "y": 11816,
+          "top": 409.84375,
+          "bottom": 540.390625,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "moving": false
+      },
+      "resume": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -65.7333, 0)",
+          "inView": true,
+          "y": 10312,
+          "top": 409.796875,
+          "bottom": 540.34375,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -101.113, 0)",
+          "inView": true,
+          "y": 10312,
+          "top": 409.796875,
+          "bottom": 540.34375,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "moving": true
+      },
+      "destination": "http://127.0.0.1:4352/ru/work/vet-clinic/",
+      "back": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -74.1433, 0)",
+          "inView": true,
+          "y": 10312,
+          "top": 409.796875,
+          "bottom": 540.34375,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -109.523, 0)",
+          "inView": true,
+          "y": 10312,
+          "top": 409.796875,
+          "bottom": 540.34375,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "moving": true
+      },
+      "forwardBack": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -77.2367, 0)",
+          "inView": true,
+          "y": 10312,
+          "top": 409.796875,
+          "bottom": 540.34375,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -114.357, 0)",
+          "inView": true,
+          "y": 10312,
+          "top": 409.796875,
+          "bottom": 540.34375,
+          "width": 1440,
+          "height": 900,
+          "link": "/ru/work/vet-clinic/"
+        },
+        "moving": true
+      },
+      "locale": "http://127.0.0.1:4352/work/learn/",
+      "errors": []
+    },
+    {
+      "route": "/preview/common/en/agent-ops/",
+      "sizes": [
+        {
+          "transform": "matrix(1, 0, 0, 1, -147.488, 0)",
+          "inView": true,
+          "y": 6201,
+          "top": 409.75,
+          "bottom": 540.296875,
+          "width": 1024,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -268.527, 0)",
+          "inView": true,
+          "y": 6509,
+          "top": 410.203125,
+          "bottom": 540.75,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -299.658, 0)",
+          "inView": true,
+          "y": 7038,
+          "top": 377.78125,
+          "bottom": 426.734375,
+          "width": 390,
+          "height": 844,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -320.533, 0)",
+          "inView": true,
+          "y": 6935,
+          "top": 378.25,
+          "bottom": 427.203125,
+          "width": 360,
+          "height": 844,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -484.985, 0)",
+          "inView": true,
+          "y": 6201,
+          "top": 409.75,
+          "bottom": 540.296875,
+          "width": 1024,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -629.747, 0)",
+          "inView": true,
+          "y": 6509,
+          "top": 410.203125,
+          "bottom": 540.75,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        }
+      ],
+      "inViewSizes": [
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -147.488, 0)",
+            "inView": true,
+            "y": 6201,
+            "top": 409.75,
+            "bottom": 540.296875,
+            "width": 1024,
+            "height": 900,
+            "link": "/preview/common/en/partner-portal/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -160.75, 0)",
+            "inView": true,
+            "y": 6201,
+            "top": 409.75,
+            "bottom": 540.296875,
+            "width": 1024,
+            "height": 900,
+            "link": "/preview/common/en/partner-portal/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -268.527, 0)",
+            "inView": true,
+            "y": 6509,
+            "top": 410.203125,
+            "bottom": 540.75,
+            "width": 1440,
+            "height": 900,
+            "link": "/preview/common/en/partner-portal/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -280.167, 0)",
+            "inView": true,
+            "y": 6509,
+            "top": 410.203125,
+            "bottom": 540.75,
+            "width": 1440,
+            "height": 900,
+            "link": "/preview/common/en/partner-portal/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -299.733, 0)",
+            "inView": true,
+            "y": 7038,
+            "top": 377.78125,
+            "bottom": 426.734375,
+            "width": 390,
+            "height": 844,
+            "link": "/preview/common/en/partner-portal/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -301.289, 0)",
+            "inView": true,
+            "y": 7038,
+            "top": 377.78125,
+            "bottom": 426.734375,
+            "width": 390,
+            "height": 844,
+            "link": "/preview/common/en/partner-portal/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -320.596, 0)",
+            "inView": true,
+            "y": 6935,
+            "top": 378.25,
+            "bottom": 427.203125,
+            "width": 360,
+            "height": 844,
+            "link": "/preview/common/en/partner-portal/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -321.828, 0)",
+            "inView": true,
+            "y": 6935,
+            "top": 378.25,
+            "bottom": 427.203125,
+            "width": 360,
+            "height": 844,
+            "link": "/preview/common/en/partner-portal/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -484.985, 0)",
+            "inView": true,
+            "y": 6201,
+            "top": 409.75,
+            "bottom": 540.296875,
+            "width": 1024,
+            "height": 900,
+            "link": "/preview/common/en/partner-portal/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -494.268, 0)",
+            "inView": true,
+            "y": 6201,
+            "top": 409.75,
+            "bottom": 540.296875,
+            "width": 1024,
+            "height": 900,
+            "link": "/preview/common/en/partner-portal/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -630.069, 0)",
+            "inView": true,
+            "y": 6509,
+            "top": 410.203125,
+            "bottom": 540.75,
+            "width": 1440,
+            "height": 900,
+            "link": "/preview/common/en/partner-portal/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -636.616, 0)",
+            "inView": true,
+            "y": 6509,
+            "top": 410.203125,
+            "bottom": 540.75,
+            "width": 1440,
+            "height": 900,
+            "link": "/preview/common/en/partner-portal/"
+          },
+          "moving": true
+        }
+      ],
+      "resizedEntry": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -18.6725, 0)",
+          "inView": true,
+          "y": 6509,
+          "top": 410.203125,
+          "bottom": 540.75,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -32.8405, 0)",
+          "inView": true,
+          "y": 6509,
+          "top": 410.203125,
+          "bottom": 540.75,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "moving": true
+      },
+      "hover": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -34.9195, 0)",
+          "inView": true,
+          "y": 6509,
+          "top": 410.203125,
+          "bottom": 540.75,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -49.665, 0)",
+          "inView": true,
+          "y": 6509,
+          "top": 410.203125,
+          "bottom": 540.75,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "moving": true
+      },
+      "focus": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -49.665, 0)",
+          "inView": true,
+          "y": 6509,
+          "top": 410.203125,
+          "bottom": 540.75,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -63.7175, 0)",
+          "inView": true,
+          "y": 6509,
+          "top": 410.203125,
+          "bottom": 540.75,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "moving": true
+      },
+      "finalSize": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -645.721, 0)",
+          "inView": true,
+          "y": 6509,
+          "top": 410.203125,
+          "bottom": 540.75,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -652.589, 0)",
+          "inView": true,
+          "y": 6509,
+          "top": 410.203125,
+          "bottom": 540.75,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "moving": true
+      },
+      "outside": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -652.929, 0)",
+          "inView": false,
+          "y": 5669,
+          "top": 1250.203125,
+          "bottom": 1380.75,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -652.929, 0)",
+          "inView": false,
+          "y": 5669,
+          "top": 1250.203125,
+          "bottom": 1380.75,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "moving": false
+      },
+      "reentry": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -660.746, 0)",
+          "inView": true,
+          "y": 6509,
+          "top": 410.203125,
+          "bottom": 540.75,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -667.311, 0)",
+          "inView": true,
+          "y": 6509,
+          "top": 410.203125,
+          "bottom": 540.75,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "moving": true
+      },
+      "reduce": {
+        "before": {
+          "transform": "none",
+          "inView": true,
+          "y": 8820,
+          "top": 409.765625,
+          "bottom": 540.3125,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "after": {
+          "transform": "none",
+          "inView": true,
+          "y": 8820,
+          "top": 409.765625,
+          "bottom": 540.3125,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "moving": false
+      },
+      "resume": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -26.257, 0)",
+          "inView": true,
+          "y": 6495,
+          "top": 409.828125,
+          "bottom": 540.375,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -39.732, 0)",
+          "inView": true,
+          "y": 6495,
+          "top": 409.828125,
+          "bottom": 540.375,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "moving": true
+      },
+      "destination": "http://127.0.0.1:4352/preview/common/en/partner-portal/",
+      "back": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -43.8515, 0)",
+          "inView": true,
+          "y": 6495,
+          "top": 409.828125,
+          "bottom": 540.375,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -57.981, 0)",
+          "inView": true,
+          "y": 6495,
+          "top": 409.828125,
+          "bottom": 540.375,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "moving": true
+      },
+      "forwardBack": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -42.4655, 0)",
+          "inView": true,
+          "y": 6495,
+          "top": 409.828125,
+          "bottom": 540.375,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -56.6335, 0)",
+          "inView": true,
+          "y": 6495,
+          "top": 409.828125,
+          "bottom": 540.375,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/en/partner-portal/"
+        },
+        "moving": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/preview/common/ru/agent-ops/",
+      "sizes": [
+        {
+          "transform": "matrix(1, 0, 0, 1, -146.665, 0)",
+          "inView": true,
+          "y": 6192,
+          "top": 410.265625,
+          "bottom": 540.8125,
+          "width": 1024,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -267.489, 0)",
+          "inView": true,
+          "y": 6500,
+          "top": 410.71875,
+          "bottom": 541.265625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -299.282, 0)",
+          "inView": true,
+          "y": 7157,
+          "top": 378.359375,
+          "bottom": 427.3125,
+          "width": 390,
+          "height": 844,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -320.259, 0)",
+          "inView": true,
+          "y": 7136,
+          "top": 378.40625,
+          "bottom": 427.359375,
+          "width": 360,
+          "height": 844,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -484.847, 0)",
+          "inView": true,
+          "y": 6192,
+          "top": 410.265625,
+          "bottom": 540.8125,
+          "width": 1024,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -629.552, 0)",
+          "inView": true,
+          "y": 6500,
+          "top": 410.71875,
+          "bottom": 541.265625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        }
+      ],
+      "inViewSizes": [
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -146.665, 0)",
+            "inView": true,
+            "y": 6192,
+            "top": 410.265625,
+            "bottom": 540.8125,
+            "width": 1024,
+            "height": 900,
+            "link": "/preview/common/ru/partner-portal/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -159.822, 0)",
+            "inView": true,
+            "y": 6192,
+            "top": 410.265625,
+            "bottom": 540.8125,
+            "width": 1024,
+            "height": 900,
+            "link": "/preview/common/ru/partner-portal/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -268.061, 0)",
+            "inView": true,
+            "y": 6500,
+            "top": 410.71875,
+            "bottom": 541.265625,
+            "width": 1440,
+            "height": 900,
+            "link": "/preview/common/ru/partner-portal/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -279.673, 0)",
+            "inView": true,
+            "y": 6500,
+            "top": 410.71875,
+            "bottom": 541.265625,
+            "width": 1440,
+            "height": 900,
+            "link": "/preview/common/ru/partner-portal/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -299.282, 0)",
+            "inView": true,
+            "y": 7157,
+            "top": 378.359375,
+            "bottom": 427.3125,
+            "width": 390,
+            "height": 844,
+            "link": "/preview/common/ru/partner-portal/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -300.908, 0)",
+            "inView": true,
+            "y": 7157,
+            "top": 378.359375,
+            "bottom": 427.3125,
+            "width": 390,
+            "height": 844,
+            "link": "/preview/common/ru/partner-portal/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -320.259, 0)",
+            "inView": true,
+            "y": 7136,
+            "top": 378.40625,
+            "bottom": 427.359375,
+            "width": 360,
+            "height": 844,
+            "link": "/preview/common/ru/partner-portal/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -321.56, 0)",
+            "inView": true,
+            "y": 7136,
+            "top": 378.40625,
+            "bottom": 427.359375,
+            "width": 360,
+            "height": 844,
+            "link": "/preview/common/ru/partner-portal/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -484.847, 0)",
+            "inView": true,
+            "y": 6192,
+            "top": 410.265625,
+            "bottom": 540.8125,
+            "width": 1024,
+            "height": 900,
+            "link": "/preview/common/ru/partner-portal/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -493.984, 0)",
+            "inView": true,
+            "y": 6192,
+            "top": 410.265625,
+            "bottom": 540.8125,
+            "width": 1024,
+            "height": 900,
+            "link": "/preview/common/ru/partner-portal/"
+          },
+          "moving": true
+        },
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -629.552, 0)",
+            "inView": true,
+            "y": 6500,
+            "top": 410.71875,
+            "bottom": 541.265625,
+            "width": 1440,
+            "height": 900,
+            "link": "/preview/common/ru/partner-portal/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -636.068, 0)",
+            "inView": true,
+            "y": 6500,
+            "top": 410.71875,
+            "bottom": 541.265625,
+            "width": 1440,
+            "height": 900,
+            "link": "/preview/common/ru/partner-portal/"
+          },
+          "moving": true
+        }
+      ],
+      "resizedEntry": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -18.557, 0)",
+          "inView": true,
+          "y": 6500,
+          "top": 410.71875,
+          "bottom": 541.265625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -32.725, 0)",
+          "inView": true,
+          "y": 6500,
+          "top": 410.71875,
+          "bottom": 541.265625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "moving": true
+      },
+      "hover": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -34.804, 0)",
+          "inView": true,
+          "y": 6500,
+          "top": 410.71875,
+          "bottom": 541.265625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -48.8565, 0)",
+          "inView": true,
+          "y": 6500,
+          "top": 410.71875,
+          "bottom": 541.265625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "moving": true
+      },
+      "focus": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -49.511, 0)",
+          "inView": true,
+          "y": 6500,
+          "top": 410.71875,
+          "bottom": 541.265625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -62.9475, 0)",
+          "inView": true,
+          "y": 6500,
+          "top": 410.71875,
+          "bottom": 541.265625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "moving": true
+      },
+      "finalSize": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -644.82, 0)",
+          "inView": true,
+          "y": 6500,
+          "top": 410.71875,
+          "bottom": 541.265625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -651.712, 0)",
+          "inView": true,
+          "y": 6500,
+          "top": 410.71875,
+          "bottom": 541.265625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "moving": true
+      },
+      "outside": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -652.052, 0)",
+          "inView": false,
+          "y": 5661,
+          "top": 1249.71875,
+          "bottom": 1380.265625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -652.052, 0)",
+          "inView": false,
+          "y": 5661,
+          "top": 1249.71875,
+          "bottom": 1380.265625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "moving": false
+      },
+      "reentry": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -659.856, 0)",
+          "inView": true,
+          "y": 6500,
+          "top": 410.71875,
+          "bottom": 541.265625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -666.425, 0)",
+          "inView": true,
+          "y": 6500,
+          "top": 410.71875,
+          "bottom": 541.265625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "moving": true
+      },
+      "reduce": {
+        "before": {
+          "transform": "none",
+          "inView": true,
+          "y": 8881,
+          "top": 410.46875,
+          "bottom": 541.015625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "after": {
+          "transform": "none",
+          "inView": true,
+          "y": 8881,
+          "top": 410.46875,
+          "bottom": 541.015625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "moving": false
+      },
+      "resume": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -25.5255, 0)",
+          "inView": true,
+          "y": 6493,
+          "top": 410.53125,
+          "bottom": 541.078125,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -39.6165, 0)",
+          "inView": true,
+          "y": 6493,
+          "top": 410.53125,
+          "bottom": 541.078125,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "moving": true
+      },
+      "destination": "http://127.0.0.1:4352/preview/common/ru/partner-portal/",
+      "back": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -43.3895, 0)",
+          "inView": true,
+          "y": 6493,
+          "top": 410.53125,
+          "bottom": 541.078125,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -57.365, 0)",
+          "inView": true,
+          "y": 6493,
+          "top": 410.53125,
+          "bottom": 541.078125,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "moving": true
+      },
+      "forwardBack": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -43.0045, 0)",
+          "inView": true,
+          "y": 6493,
+          "top": 410.53125,
+          "bottom": 541.078125,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -57.0955, 0)",
+          "inView": true,
+          "y": 6493,
+          "top": 410.53125,
+          "bottom": 541.078125,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/common/ru/partner-portal/"
+        },
+        "moving": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/kit/",
+      "sizes": [
+        {
+          "transform": "matrix(1, 0, 0, 1, -148.069, 0)",
+          "inView": true,
+          "y": 35764,
+          "top": 127.875,
+          "bottom": 258.421875,
+          "width": 1024,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -252.059, 0)",
+          "inView": false,
+          "y": 0,
+          "top": 35823,
+          "bottom": 35953.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -252.059, 0)",
+          "inView": false,
+          "y": 0,
+          "top": 44995.125,
+          "bottom": 45044.078125,
+          "width": 390,
+          "height": 844,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -252.059, 0)",
+          "inView": false,
+          "y": 0,
+          "top": 45306.40625,
+          "bottom": 45355.359375,
+          "width": 360,
+          "height": 844,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -252.059, 0)",
+          "inView": false,
+          "y": 0,
+          "top": 35891.875,
+          "bottom": 36022.421875,
+          "width": 1024,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, -252.059, 0)",
+          "inView": false,
+          "y": 0,
+          "top": 35823,
+          "bottom": 35953.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        }
+      ],
+      "inViewSizes": [
+        {
+          "before": {
+            "transform": "matrix(1, 0, 0, 1, -148.714, 0)",
+            "inView": true,
+            "y": 35764,
+            "top": 127.875,
+            "bottom": 258.421875,
+            "width": 1024,
+            "height": 900,
+            "link": "/preview/partner-portal-pilot/"
+          },
+          "after": {
+            "transform": "matrix(1, 0, 0, 1, -161.838, 0)",
+            "inView": true,
+            "y": 35764,
+            "top": 127.875,
+            "bottom": 258.421875,
+            "width": 1024,
+            "height": 900,
+            "link": "/preview/partner-portal-pilot/"
+          },
+          "moving": true
+        }
+      ],
+      "resizedEntry": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -18.634, 0)",
+          "inView": true,
+          "y": 35413,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -32.725, 0)",
+          "inView": true,
+          "y": 35413,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "moving": true
+      },
+      "hover": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -35.497, 0)",
+          "inView": true,
+          "y": 35413,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -49.434, 0)",
+          "inView": true,
+          "y": 35413,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "moving": true
+      },
+      "focus": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -50.127, 0)",
+          "inView": true,
+          "y": 35413,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -63.448, 0)",
+          "inView": true,
+          "y": 35413,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "moving": true
+      },
+      "finalSize": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -344.255, 0)",
+          "inView": true,
+          "y": 35413,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -354.502, 0)",
+          "inView": true,
+          "y": 35413,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "moving": true
+      },
+      "outside": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -355.034, 0)",
+          "inView": false,
+          "y": 34573,
+          "top": 1250,
+          "bottom": 1380.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -355.034, 0)",
+          "inView": false,
+          "y": 34573,
+          "top": 1250,
+          "bottom": 1380.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "moving": false
+      },
+      "reentry": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -367.213, 0)",
+          "inView": true,
+          "y": 35413,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -377.964, 0)",
+          "inView": true,
+          "y": 35413,
+          "top": 410,
+          "bottom": 540.546875,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "moving": true
+      },
+      "reduce": {
+        "before": {
+          "transform": "none",
+          "inView": true,
+          "y": 35346,
+          "top": 409.859375,
+          "bottom": 540.40625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "after": {
+          "transform": "none",
+          "inView": true,
+          "y": 35346,
+          "top": 409.859375,
+          "bottom": 540.40625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "moving": false
+      },
+      "resume": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -26.18, 0)",
+          "inView": true,
+          "y": 35346,
+          "top": 409.96875,
+          "bottom": 540.515625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -40.271, 0)",
+          "inView": true,
+          "y": 35346,
+          "top": 409.96875,
+          "bottom": 540.515625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "moving": true
+      },
+      "destination": "http://127.0.0.1:4352/preview/partner-portal-pilot/",
+      "back": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -26.8345, 0)",
+          "inView": true,
+          "y": 35346,
+          "top": 409.96875,
+          "bottom": 540.515625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -41.657, 0)",
+          "inView": true,
+          "y": 35346,
+          "top": 409.96875,
+          "bottom": 540.515625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "moving": true
+      },
+      "forwardBack": {
+        "before": {
+          "transform": "matrix(1, 0, 0, 1, -29.6065, 0)",
+          "inView": true,
+          "y": 35346,
+          "top": 409.96875,
+          "bottom": 540.515625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "after": {
+          "transform": "matrix(1, 0, 0, 1, -43.6975, 0)",
+          "inView": true,
+          "y": 35346,
+          "top": 409.96875,
+          "bottom": 540.515625,
+          "width": 1440,
+          "height": 900,
+          "link": "/preview/partner-portal-pilot/"
+        },
+        "moving": true
+      },
+      "errors": []
+    }
+  ],
+  "failures": [],
+  "runtimeSha256": "91352d1179ca34ebbae253ad392876d9fc065cbb31b17626f6419d381af22826",
+  "targetedRepeat": {
+    "route": "/preview/common/en/agent-ops/",
+    "reason": "Harness now waits for native ViewTransition.finished; earlier animation-list snapshot could miss the pending native transition.",
+    "result": "0 failures; no runtime changes after the seven-route motion pass"
+  }
+}

@@ -24,6 +24,7 @@
  * объявляет движение атрибутами, хореография в src/scripts/animations.js.
  */
 import PageShell from '../../layouts/PageShell.astro';
+import CaseStory from '../../components/CaseStory.astro';
 import SectionHead from '../../components/SectionHead.astro';
 import ProseBlock from '../../components/ProseBlock.astro';
 import MetaList from '../../components/MetaList.astro';
@@ -86,7 +87,7 @@ const { header, context, reframe, process, failure, decisions, system, result, o
 const registry = locale === 'ru' ? casesRu : cases;
 const index = registry.findIndex((item: any) => item.slug === entry.slug);
 const nextEntry = registry[(index + 1) % registry.length];
-const nextHref = `${locale === 'ru' ? '/ru' : ''}/work/${nextEntry.slug}`;
+const nextHref = `${locale === 'ru' ? '/ru' : ''}/work/${nextEntry.slug}/`;
 ---
 
 <PageShell
@@ -97,6 +98,11 @@ const nextHref = `${locale === 'ru' ? '/ru' : ''}/work/${nextEntry.slug}`;
   current={locale === 'ru' ? '/ru/work' : '/work'}
   siteCopy={site}
 >
+  {entry.story ? (
+    <CaseStory story={entry.story} lang={locale} id={`case-${entry.slug}`}
+      next={{ href: nextHref, title: nextEntry.story?.cover.title ?? nextEntry.header.title, theme: nextEntry.theme, label: site.nextCase }} />
+  ) : (
+  <Fragment>
   {/*
     CaseHeader (ds/patterns.md). Порядок не переставляется: суть → мета →
     исход → команда → оговорка. Весь блок — Набор одним каскадом, поэтому
@@ -407,6 +413,8 @@ const nextHref = `${locale === 'ru' ? '/ru' : ''}/work/${nextEntry.slug}`;
     кнопки, которые рисует MediaFrame при zoom.
   */}
   <MediaZoom zoomCopy={site.zoom} />
+  </Fragment>
+  )}
 </PageShell>
 
 <style>

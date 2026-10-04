@@ -1,0 +1,42 @@
+
+> site-portfolio@0.1.0 check:harmony
+> node scripts/harmony-check.mjs --base=http://127.0.0.1:4352 --widths=1440,1024,390,360 /work/partner-portal/ /ru/work/partner-portal/ /work/learn/ /ru/work/learn/ /preview/common/en/agent-ops/ /preview/common/ru/agent-ops/ /work/vet-clinic/ /ru/work/vet-clinic/ /kit/
+
+/work/partner-portal/ @1440: плашек 8, тезисов 8, подписей и абзацев 19 · case-partner-portal 448 слов, 19 кадров
+/work/partner-portal/ @1024: плашек 8, тезисов 8, подписей и абзацев 19 · case-partner-portal 448 слов, 19 кадров
+/work/partner-portal/ @390: плашек 8, тезисов 8, подписей и абзацев 19 · case-partner-portal 448 слов, 19 кадров
+/work/partner-portal/ @360: плашек 8, тезисов 8, подписей и абзацев 19 · case-partner-portal 448 слов, 19 кадров
+/ru/work/partner-portal/ @1440: плашек 8, тезисов 8, подписей и абзацев 19 · case-partner-portal 394 слов, 19 кадров
+/ru/work/partner-portal/ @1024: плашек 8, тезисов 8, подписей и абзацев 19 · case-partner-portal 394 слов, 19 кадров
+/ru/work/partner-portal/ @390: плашек 8, тезисов 8, подписей и абзацев 19 · case-partner-portal 394 слов, 19 кадров
+/ru/work/partner-portal/ @360: плашек 8, тезисов 8, подписей и абзацев 19 · case-partner-portal 394 слов, 19 кадров
+/work/learn/ @1440: плашек 8, тезисов 9, подписей и абзацев 19 · case-learn 400 слов, 13 кадров
+/work/learn/ @1024: плашек 8, тезисов 9, подписей и абзацев 19 · case-learn 400 слов, 13 кадров
+/work/learn/ @390: плашек 8, тезисов 9, подписей и абзацев 19 · case-learn 400 слов, 13 кадров
+/work/learn/ @360: плашек 8, тезисов 9, подписей и абзацев 19 · case-learn 400 слов, 13 кадров
+/ru/work/learn/ @1440: плашек 8, тезисов 9, подписей и абзацев 19 · case-learn 361 слов, 13 кадров
+/ru/work/learn/ @1024: плашек 8, тезисов 9, подписей и абзацев 19 · case-learn 361 слов, 13 кадров
+/ru/work/learn/ @390: плашек 8, тезисов 9, подписей и абзацев 19 · case-learn 361 слов, 13 кадров
+/ru/work/learn/ @360: плашек 8, тезисов 9, подписей и абзацев 19 · case-learn 361 слов, 13 кадров
+/preview/common/en/agent-ops/ @1440: плашек 5, тезисов 7, подписей и абзацев 21 · agent-ops-pilot 402 слов, 7 кадров
+/preview/common/en/agent-ops/ @1024: плашек 5, тезисов 7, подписей и абзацев 21 · agent-ops-pilot 402 слов, 7 кадров
+/preview/common/en/agent-ops/ @390: плашек 5, тезисов 6, подписей и абзацев 19 · agent-ops-pilot 366 слов, 6 кадров
+/preview/common/en/agent-ops/ @360: плашек 5, тезисов 6, подписей и абзацев 19 · agent-ops-pilot 366 слов, 6 кадров
+/preview/common/ru/agent-ops/ @1440: плашек 5, тезисов 7, подписей и абзацев 21 · agent-ops-pilot 333 слов, 7 кадров
+/preview/common/ru/agent-ops/ @1024: плашек 5, тезисов 7, подписей и абзацев 21 · agent-ops-pilot 333 слов, 7 кадров
+/preview/common/ru/agent-ops/ @390: плашек 5, тезисов 6, подписей и абзацев 19 · agent-ops-pilot 305 слов, 6 кадров
+/preview/common/ru/agent-ops/ @360: плашек 5, тезисов 6, подписей и абзацев 19 · agent-ops-pilot 305 слов, 6 кадров
+/work/vet-clinic/ @1440: плашек 0, тезисов 0, подписей и абзацев 0
+/work/vet-clinic/ @1024: плашек 0, тезисов 0, подписей и абзацев 0
+/work/vet-clinic/ @390: плашек 0, тезисов 0, подписей и абзацев 0
+/work/vet-clinic/ @360: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/work/vet-clinic/ @1440: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/work/vet-clinic/ @1024: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/work/vet-clinic/ @390: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/work/vet-clinic/ @360: плашек 0, тезисов 0, подписей и абзацев 0
+/kit/ @1440: плашек 19, тезисов 10, подписей и абзацев 40 · case-demo 281 слов, 10 кадров
+/kit/ @1024: плашек 19, тезисов 10, подписей и абзацев 40 · case-demo 281 слов, 10 кадров
+/kit/ @390: плашек 19, тезисов 10, подписей и абзацев 40 · case-demo 281 слов, 10 кадров
+/kit/ @360: плашек 19, тезисов 10, подписей и абзацев 40 · case-demo 281 слов, 10 кадров
+
+✓ harmony-check: нарушений нет

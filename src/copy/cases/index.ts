@@ -11,10 +11,10 @@
  * §Решения карты №3).
  */
 import { agentOpsConsole } from './agent-ops-console.ts';
-import { partnerPortal } from './partner-portal.ts';
+import { partnerPortal, partnerPortalStory } from './partner-portal.ts';
 import { vetClinic } from './vet-clinic.ts';
 import { pawly } from './pawly.ts';
-import { learn } from './learn.ts';
+import { learn, learnStory } from './learn.ts';
 
 /**
  * Порядок значим и совпадает с `home.featured.items`: из этого массива
@@ -29,6 +29,15 @@ import { learn } from './learn.ts';
  * 2026-09-09: по решению владельца Learn поставлен третьим — после
  * коммерческого Partner Portal, перед концептами Vet Clinic OS и Pawly.
  */
-export const cases = [agentOpsConsole, partnerPortal, learn, vetClinic, pawly];
+/** G wave 1: accepted B/C use ordered stories; the other three keep their legacy entry. */
+export const cases = [
+  { ...agentOpsConsole, theme: 'agent' as const, story: undefined },
+  { ...partnerPortal, theme: partnerPortalStory.theme, story: partnerPortalStory,
+    meta: { ...partnerPortal.meta, description: partnerPortalStory.cover.outcome } },
+  { ...learn, theme: learnStory.theme, story: learnStory,
+    meta: { ...learn.meta, description: learnStory.cover.outcome } },
+  { ...vetClinic, theme: 'vet' as const, story: undefined },
+  { ...pawly, theme: 'pawly' as const, story: undefined },
+];
 
 export type Case = (typeof cases)[number];

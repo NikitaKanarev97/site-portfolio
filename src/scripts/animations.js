@@ -36,6 +36,10 @@ CustomEase.create(motion.lines.ease, motion.lines.curve);
 if (import.meta.env.DEV) {
   window.__dsMotionDebug = () => ({ triggers: ScrollTrigger.getAll().length,
     pins: ScrollTrigger.getAll().filter(scene => scene.pin).length,
+    marquees: Array.from(document.querySelectorAll('[data-motion="marquee"]')).map(track => ({
+      triggers: ScrollTrigger.getAll().filter(scene => scene.trigger === track.parentElement).map(scene => ({ active: scene.isActive, start: scene.start, end: scene.end })),
+      tweens: gsap.getTweensOf(track).map(tween => ({ paused: tween.paused(), active: tween.isActive(), time: tween.totalTime(), duration: tween.duration(), parent: Boolean(tween.parent) })),
+    })),
     duplicateScenes: ScrollTrigger.getAll().filter((scene, index, all) => all.slice(0,index).some(previous =>
       previous.trigger === scene.trigger && Boolean(previous.pin) === Boolean(scene.pin) && previous.start === scene.start && previous.end === scene.end)).length });
 }
@@ -429,6 +433,8 @@ function buildCaseScenes(root, settled = false) {
       gsap.set(steps.slice(1), { autoAlpha: 0 });
       const tl = gsap.timeline({ defaults: { ease: cfg.ease }, scrollTrigger: {
         trigger: list, start: `top top+=${cfg.inset}`, pin: list, pinSpacing: true,
+        // Recreated focus pins must contribute their spacing before later triggers refresh.
+        refreshPriority: 1,
         end: () => `+=${cfg.distance * (steps.length - 1)}`, scrub: cfg.scrub, invalidateOnRefresh: true,
         onUpdate: self => {
           if (!self.isActive) return;
@@ -477,7 +483,7 @@ function buildCaseScenes(root, settled = false) {
         gsap.set(step, { position: 'relative', zIndex: index + 1, backgroundColor: 'var(--surface-default)' });
         const next = steps[index + 1];
         if (!next) return;
-        const pin = ScrollTrigger.create({ trigger: step, pin: step, pinSpacing: false,
+        const pin = ScrollTrigger.create({ trigger: step, pin: step, pinSpacing: false, refreshPriority: 1,
           start: () => step.offsetHeight > innerHeight - motion.pinSwap.inset * 2
             ? `bottom bottom-=${motion.pinSwap.inset}` : `top top+=${motion.pinSwap.inset}`,
           endTrigger: next, end: `top top+=${motion.pinSwap.inset}`, invalidateOnRefresh: true });
@@ -496,13 +502,28 @@ function buildCaseScenes(root, settled = false) {
     if (!child) return;
     const tween = gsap.to(track, { x: () => -(child.offsetWidth + parseFloat(getComputedStyle(track).gap)),
       duration: motion.marquee.duration, ease: motion.marquee.ease, repeat: -1, paused: true });
-    let inView = false;
+    const viewport = track.parentElement;
+    const visible = () => {
+      const rect = viewport.getBoundingClientRect();
+      return rect.bottom > 0 && rect.top < innerHeight;
+    };
+    let inView = visible();
     const sync = () => inView && !document.hidden ? tween.play() : tween.pause();
-    ScrollTrigger.create({ trigger: track.parentElement, start: 'top bottom', end: 'bottom top',
-      onToggle: self => { inView = self.isActive; sync(); },
-      onRefresh: () => tween.invalidate() });
+    // Visibility follows the painted viewport, including geometry changed by pins.
+    const observer = new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting;
+      sync();
+    });
+    observer.observe(viewport);
+    // Pins and reading-position restoration settle after the resize event.
+    // Keep the observer's painted state until its next delivered intersection.
+    const resize = () => { tween.invalidate(); sync(); };
+    window.addEventListener('resize', resize, { passive: true });
+    sync();
     document.addEventListener('visibilitychange', sync);
     gsap.context(() => () => {
+      observer.disconnect();
+      window.removeEventListener('resize', resize);
       document.removeEventListener('visibilitychange', sync);
     });
   });

@@ -2,6 +2,8 @@
 
 **G-01 · 04.10.2026:** actual specimen captures имеют прозрачный фон и bleed 2 CSS px для полной обводки. CaseSpecimen передаёт `CaseScreen native`, который сохраняет alpha-контур продукта без дополнительной рамки/маски портфолио. `nativeWidth` включает capture bleed. Story/schema, ID и EN/RU-структура не менялись. Владение общим слоем после приёмки A передано G; запросы — в integration/common-requests.md.
 
+**G wave 1 · B/C:** публичные registries добавляют `story` и `theme` к существующей entry после приёмки G. Общий EN route (RU использует его же) рендерит CaseStory для такой entry и прежнюю композицию для ещё не перенесённых. Next берёт slug/title/theme из той же локализованной registry; кейсовые owners не правят её. Frozen CaseStory data interface не изменился. B-G-01 исправлен централизованно в animations.js; ожидания resize/Back/live preference записаны в motion-concept.md.
+
 04.10.2026. Рабочая база B–E. Типы — `src/copy/cases/story.ts`, исполняемая композиция — `src/components/CaseStory.astro`. Этот контракт заменяет фиксированные 10 секций. Исторический kit fixture `LegacyKitStory` остаётся только демонстрацией старых модулей; нового legacy story renderer нет.
 
 ## Story и ответственность

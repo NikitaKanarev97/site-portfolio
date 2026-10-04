@@ -57,6 +57,10 @@ G-01 проверен на `/kit/` и Portal EN/RU в 1440/1024/390/360, reduce 
 
 ## Следующая волна
 
-B и C могут использовать указанный ref. Полные prompts находятся в `research/portfolio-rebuild-2026-10-03/prompts/`; контроллер читает их актуальные версии из исходного checkout. Общая база для D/E/F **ещё не подготовлена**: её точный ref появится после приёмки и интеграции B+C, закрытия common requests и проверки соседних историй. Ref A не обозначать обновлённой базой второй волны.
+B и C могут использовать указанный ref. Полные prompts находятся в `research/portfolio-rebuild-2026-10-03/prompts/`; контроллер читает их актуальные версии из исходного checkout. B/C интегрированы в ветке G. Точный обновлённый ref для D/E/F фиксируется ниже после чистого воспроизведения; ref A сохраняется исторической базой первой волны.
 
 Последовательность запуска ведёт отдельный контроллер согласно `orchestration/CONTROL.md`. G не создаёт дубли case-чатов и не изменяет `orchestration/STATE.json`. Порядок Agent Ops → Portal → Learn → Vet → Pawly сохраняется до сравнения пяти финальных историй. Push/deploy не выполнялись.
+
+## G-integrate-1 · обновление первой волны
+
+B/C перенесены отдельными commits с сохранёнными payload: B 1dc263f11fba969e6a822a985b4201c70ba0d26b, C afe6785cc20d230c96b8c1d3f350ffa13bbeb18f. Новые CaseStory доступны на штатных /work/partner-portal/, /work/learn/ и RU. Agent Ops/Vet/Pawly сохраняют legacy fallback. Общий runtime Next обновлён по B-G-01; schema и оба DS mirrors прежние. Подробная приёмка/проверки — wave-1-report.md. Новый integrity пакет: wave-1-base-manifest.json, wave-1-base-files.txt, verify-wave-1-base.mjs. Точный updated ref и чистое воспроизведение добавляются после финальной проверки checkpoint; до этой записи новая база не считается выданной D/E/F.

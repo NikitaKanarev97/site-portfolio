@@ -1,5 +1,5 @@
 {
-  "stage": "G-base",
+  "stage": "G-integrate-1",
   "acceptedBaseRef": "936724beff3bb9a01c69381659dc808782cc7950",
   "acceptedBaseAlias": "codex/portfolio-common-a-2026-10-04",
   "baseDocument": "tasks/portfolio-rebuild/integration/base.md",
@@ -12,16 +12,66 @@
     "reproduced": true
   },
   "stories": [
-    { "chat": "B", "slug": "partner-portal", "status": "not_received", "versionRef": null, "publicState": "legacy", "prompt": "research/portfolio-rebuild-2026-10-03/prompts/b-partner-portal.md" },
-    { "chat": "C", "slug": "learn", "status": "not_received", "versionRef": null, "publicState": "legacy", "prompt": "research/portfolio-rebuild-2026-10-03/prompts/c-learn.md" },
-    { "chat": "D", "slug": "vet-clinic", "status": "not_received", "versionRef": null, "publicState": "legacy", "prompt": "research/portfolio-rebuild-2026-10-03/prompts/d-vet-clinic.md" },
-    { "chat": "E", "slug": "pawly", "status": "not_received", "versionRef": null, "publicState": "legacy", "prompt": "research/portfolio-rebuild-2026-10-03/prompts/e-pawly.md" },
-    { "chat": "F", "slug": "agent-ops-console", "status": "not_received", "versionRef": null, "publicState": "legacy", "prompt": "research/portfolio-rebuild-2026-10-03/prompts/f-agent-ops.md" }
+    {
+      "chat": "B",
+      "slug": "partner-portal",
+      "status": "accepted_and_integrated_by_coordinator",
+      "versionRef": "ae47c6bec7641669470783269e63280debeaa5ee",
+      "publicState": "CaseStory",
+      "prompt": "research/portfolio-rebuild-2026-10-03/prompts/b-partner-portal.md",
+      "integrationRef": "1dc263f11fba969e6a822a985b4201c70ba0d26b",
+      "report": "tasks/portfolio-rebuild/integration/wave-1-report.md"
+    },
+    {
+      "chat": "C",
+      "slug": "learn",
+      "status": "accepted_and_integrated_by_coordinator",
+      "versionRef": "9d714b3994169d87620f1704f029e78d94ec15b2",
+      "publicState": "CaseStory",
+      "prompt": "research/portfolio-rebuild-2026-10-03/prompts/c-learn.md",
+      "integrationRef": "afe6785cc20d230c96b8c1d3f350ffa13bbeb18f",
+      "report": "tasks/portfolio-rebuild/integration/wave-1-report.md"
+    },
+    {
+      "chat": "D",
+      "slug": "vet-clinic",
+      "status": "not_received",
+      "versionRef": null,
+      "publicState": "legacy",
+      "prompt": "research/portfolio-rebuild-2026-10-03/prompts/d-vet-clinic.md"
+    },
+    {
+      "chat": "E",
+      "slug": "pawly",
+      "status": "not_received",
+      "versionRef": null,
+      "publicState": "legacy",
+      "prompt": "research/portfolio-rebuild-2026-10-03/prompts/e-pawly.md"
+    },
+    {
+      "chat": "F",
+      "slug": "agent-ops-console",
+      "status": "not_received",
+      "versionRef": null,
+      "publicState": "legacy",
+      "prompt": "research/portfolio-rebuild-2026-10-03/prompts/f-agent-ops.md"
+    }
   ],
-  "order": ["agent-ops-console", "partner-portal", "learn", "vet-clinic", "pawly"],
+  "order": [
+    "agent-ops-console",
+    "partner-portal",
+    "learn",
+    "vet-clinic",
+    "pawly"
+  ],
   "finalOrderSelected": false,
   "updatedBaseForSecondWave": null,
   "readyForBAndC": true,
   "readyForPublication": false,
-  "controllerStateOwner": "01a103b5-7549-7211-8683-f14b03d9beef"
+  "controllerStateOwner": "01a103b5-7549-7211-8683-f14b03d9beef",
+  "commonRequests": {
+    "B-G-01": "closed"
+  },
+  "readyForDAndE": false,
+  "readyForF": false
 }

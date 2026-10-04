@@ -383,3 +383,5 @@ Checkpoint field-bleed: при последнем решении только д
 ## Marquee · решение владельца (03.10.2026)
 
 CaseNext не содержит кнопки паузы. Hover/focus не меняют движение. Автоматический цикл 24 с только в видимом viewport и вкладке; reduce/no-JS — статичное название. Единственный жест — переход по ссылке. Требования S2/S3 о ручной/hover/focus паузе заменены этим решением.
+
+B-G-01 · G wave 1 (04.10.2026): структурные focus-stage и pin-swap имеют refreshPriority=1; пересозданные pins обновляют геометрию до последующих ScrollTriggers. Это соответствует [порядку refresh в GSAP](https://gsap.com/docs/v3/Plugins/ScrollTrigger/). Видимость Next определяется IntersectionObserver по реальному viewport блока: cached start/end pin-сцен больше не управляют запуском marquee. GSAP исполняет прежний tween 24 с; resize обновляет измерение tween; состояние видимости поступает от observer после раскладки, visibilitychange останавливает/возобновляет движение. Hover/focus и reduce/no-JS semantics прежние. Cleanup отключает observer и listeners в общем GSAP context. Повторный exit/re-entry для запуска не требуется.
