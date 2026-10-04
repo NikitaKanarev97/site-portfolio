@@ -1,6 +1,8 @@
 ## H · текущая карта · 04.10.2026
 
-Крупная роль Display/7xl, короткий текст слева, реальные контакты справа; пять быстрых native anchors. Все пять работ открыты в принятом порядке. WorkStage вместо общего 16:9: Agent — две целые панели и рубеж человека; Portal — исходная строка 38; Learn — один материал/два входа; Vet — 30 секунд как ограничение и полный QuickTrace; Pawly — demo photograph/confirmed report. Mobile — самостоятельная последовательность, индекс в двух колонках.
+**H-ART-01..03, актуально:** compact role/index precede native Agent approval UI; biography/actions follow it on mobile. Settled EN/RU geometry determines visibility; previous H1 RU five-links-in-window claim was wrong. LearnStage connects actual material/current unit/passport; VetStage shows three visit roles instead of repeating Portal38. Agent interlock, Portal/Pawly preserved.
+
+Роль Display/5xl и компактный индекс пяти native anchors. Desktop: биография, авторизация и действия слева; целая native карточка одобрения $340 справа. Mobile: роль → все пять входов → реальный UI → биография/авторизация/CV/email. Показанная карточка — принятый прототип, не бизнес-метрика. Все пять работ открыты в принятом порядке. WorkStage: Agent — две целые панели и рубеж человека; Portal — исходная строка 38; Learn — общая статья, текущий ресурс 03 и паспорт программы; Vet — планшетный след, счёт и публикация владельцу; Pawly — demo photograph/confirmed report. 30 секунд — небольшая подпись исходного ограничения Vet. Mobile индекс в двух колонках, все native материалы целиком в последовательном потоке.
 
 # Screen: Home
 

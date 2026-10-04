@@ -87,7 +87,7 @@ if (media.variant === 'screen') {
 ---
 
 <section
-  class:list={['case-opening', `case-opening--${media.variant}`, editorial && 'case-opening--editorial', media.variant === 'proof' && media.layout === 'interlock' && 'case-opening--interlock', poster && 'case-opening--poster', className]}
+  class:list={['case-opening', `case-opening--${media.variant}`, editorial && 'case-opening--editorial', theme === 'vet' && 'case-opening--vet', media.variant === 'proof' && media.layout === 'interlock' && 'case-opening--interlock', poster && 'case-opening--poster', className]}
   data-tone={tone}
   style={`--cover-surface: ${surface}`}
   transition:name={transitionKey}
@@ -210,6 +210,7 @@ if (media.variant === 'screen') {
 </section>
 
 <style>
+  .case-opening--vet .case-opening__editorial-head { grid-template-columns:1fr; gap:var(--space-4); }
   .case-opening--editorial { block-size: auto; min-block-size: calc(100svh - var(--cover-offset, 0px)); }
   .case-opening__editorial { display: grid; gap: var(--flow-group); padding-block: var(--flow-group); }
   .case-opening__editorial-head { display: grid; gap: var(--flow-text); }

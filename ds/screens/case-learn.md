@@ -1,5 +1,7 @@
 ## H · текущий художественный delta · 04.10.2026
 
+**H-ART-02, актуально:** LearnStage Home/cover uses a complete native diagnostic section as the shared plane; current unit03/passport supply the learning context. Same onvif-not-found title in both sources. Mobile current unit precedes material; source alpha/radius preserved. Existing CaseRoutes below remain.
+
 Обложка WorkStage связывает материал с паспортом. one-material заменяет общий focus на CaseRoutes: два native раскрываемых контекста одного onvif-not-found, полный UI в выбранном входе; явное завершение постоянно открыто ниже. Без JS те же controls; чтение не становится завершением.
 
 # TRASSIR Learn · full rebuild preview

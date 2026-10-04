@@ -1,5 +1,13 @@
 ## H · художественный проход · 04.10.2026
 
+**H-ART-01 hero proof**: compact role/index precede a whole native Agent approval card. Desktop text/UI share the opening; mobile shows all five quick entries and actual UI before biography/actions. Facts, CV and CopyEmail remain. Proof is one native link, no nested interactive UI; existing display/space and intro movement.
+
+**H-ART-02 LearnStage**: dominant contiguous real material (version/title/intro/complete first diagnostic section), actual curriculum current unit03 with the same title and unchanged native programme passport. Resource ID/route captions join contexts; no simulated interface. Desktop top-aligned plane/context, mobile current unit precedes material and passport follows it. Native edges/colors remain.
+
+**H-ART-03 VetStage**: clinical trace above actual invoice and owner publication; modest30s task constraint. Same visit, saved09:12/published09:13, three role/device views. Desktop two levels, mobile ordered views. Existing fade-image group, no pin/new primitive.
+
+`LearnStage` и `VetStage` — внутренние композиции `WorkStage`, общие для Home/CaseCover. Props locale, loading. Только существующие CaseScreen, typography/space/border/surface роли; медиа и alt — принятые source story или зарегистрированные native captures. Figures имеют отдельные подписи; нет вложенных контролов. Нативные края Learn проходят без вторичной маски; обычные Vet screenshots — через существующий CaseScreen. Существующая fade-image хореография; в reduce/no-JS весь материал доступен сразу.
+
 **CaseRoutes**: два native details для двух контекстов одного материала; первый открыт, второй раскрывается клавиатурой/тапом. Завершение — отдельный постоянно видимый третий кадр. CaseScreen хранит полный продуктовый край; controls не имитируют продукт. Без JS те же disclosures работают. Перестройка геометрии вызывает общий ScrollTrigger.refresh; собственной анимации нет.
 
 **CaseSteps composition=handoff**: последовательная передача роли; первый планшетный материал во всю ширину, desktop счёт и телефон рядом. Mobile — все три целых материала в порядке передачи. Нет pin.
@@ -10,7 +18,7 @@
 
 ## H · `WorkStage` / 04.10.2026
 
-Общая художественная композиция настоящих материалов для `FeaturedCase` и `CaseCover`. Props: theme, media (существующий CoverMedia), locale, usage=home|cover, loading. Варианты: agent — два последствия и gate; portal — строка 38 рядом с целой native decision-панелью; learn — один материал и два подписанных входа; vet — ограничение 30 секунд рядом с целой QuickTrace; pawly — исходная demo-фотография и настоящий подтверждённый mobile report. UI остаётся CaseScreen, без дорисовки, двойной рамки, повторной увеличенной копии или искажения пропорции. Оба фрагмента Learn используют native край: заголовок без дополнительного скругляющего кропа; паспорт со своим радиусом и прозрачными внешними углами.
+Общая художественная композиция настоящих материалов для `FeaturedCase` и `CaseCover`. Props: theme, media (существующий CoverMedia), locale, usage=home|cover, loading. Варианты: agent — два последствия и gate; portal — строка 38 рядом с целой native decision-панелью; learn — общая статья с диагностическим разделом, текущий ресурс 03 и паспорт программы; vet — native след врача сверху, счёт регистратуры и публикация владельцу ниже; pawly — исходная demo-фотография и настоящий подтверждённый mobile report. UI остаётся CaseScreen, без дорисовки, двойной рамки, повторной увеличенной копии или искажения пропорции. Learn использует native край без дополнительного кропа; паспорт со своим радиусом и прозрачными внешними углами. Мобильная последовательность Learn: ресурс → материал → паспорт; Vet: врач → регистратура → владелец. 30 секунд — исходное ограничение, не результат.
 
 Текст и цвета: существующие display/heading/body/meta, surface-cover, text-on-inverse/default; поля space/flow. Новых примитивов нет. NativeWidth сохраняется у телефонов. Mobile: последовательные цельные narrow panels; фотография целиком, отчёт отдельно. Home — одна внешняя native ссылка, без вложенных controls. Cover не содержит действия, которое имитировало бы продукт. Движение исходных кадров через существующий fade-image; Agent CaseCover interlock/checkpoint сохраняет свою хореографию. Без JS/reduce вся композиция видима.
 

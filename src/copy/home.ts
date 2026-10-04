@@ -61,6 +61,8 @@ export const home = {
      * B2B Partner Portal» называла один из них. Ведёт якорем в секцию
      * Selected work: выбор между двумя делает читатель, а не шапка.
      */
+    proofLabel: 'Agent Ops · human review',
+    proofCaption: 'Accepted prototype · $340 refund approval example',
     caseEntry: 'Read the cases',
     cv: 'Download CV (PDF)',
   },
