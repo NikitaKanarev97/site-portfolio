@@ -211,7 +211,6 @@ if (media.variant === 'screen') {
 
 <style>
   .case-opening--vet .case-opening__editorial-head { grid-template-columns:1fr; gap:var(--space-4); }
-  .case-opening--editorial { block-size: auto; min-block-size: calc(100svh - var(--cover-offset, 0px)); }
   .case-opening__editorial { display: grid; gap: var(--flow-group); padding-block: var(--flow-group); }
   .case-opening__editorial-head { display: grid; gap: var(--flow-text); }
   .case-opening__editorial-lead { margin: 0; max-inline-size: var(--measure-case); text-wrap: pretty; }
@@ -230,6 +229,9 @@ if (media.variant === 'screen') {
     background: var(--cover-surface);
     color: var(--text-default);
   }
+
+  /* Editorial material owns its height; the viewport rule above is only a minimum. */
+  .case-opening--editorial { block-size: auto; min-block-size: calc(100svh - var(--cover-offset, 0px)); }
 
   .case-opening[data-tone='dark'] {
     color: var(--text-on-inverse);
