@@ -33,8 +33,10 @@ const {surface, tone} = caseThemes[item.theme];
   </div>
 </article>
 <style>
-  .featured-case { display: grid; gap: var(--flow-group); padding: var(--space-6); background: var(--work-surface); color: var(--text-default); text-decoration: none; border-radius: var(--radius-lg); scroll-margin-block-start: var(--space-6); }
-  .featured-case[data-tone='dark'] { color: var(--text-on-inverse); }
+  .featured-case { display: grid; gap: var(--flow-group); color: var(--text-default); text-decoration: none; border-radius: var(--radius-lg); scroll-margin-block-start: var(--space-6); }
+  .featured-case--agent { padding:var(--space-6); background:var(--work-surface); }
+  .featured-case--learn[data-tone='dark'] { color:var(--text-default); }
+  .featured-case--agent[data-tone='dark'] { color: var(--text-on-inverse); }
   .featured-case__head { display: grid; gap: var(--space-4); align-items: end; }
   .featured-case__identity { display: grid; gap: var(--space-3); }
   .featured-case__identity h2 { margin: 0; text-wrap: balance; }
@@ -51,11 +53,16 @@ const {surface, tone} = caseThemes[item.theme];
     .featured-case__cta:hover > span { transform: translate(var(--space-1), calc(var(--space-1) * -1)); }
   }
   @media (--bp-lg) {
-    .featured-case { padding: var(--space-12); }
+    .featured-case--agent { padding: var(--space-12); }
     .featured-case__head { grid-template-columns: 3fr 2fr; gap: var(--space-16); }
     .featured-case__identity { grid-template-columns: auto 1fr; align-items: baseline; gap: var(--space-4); }
     .featured-case--vet .featured-case__head { grid-template-columns:1fr; gap:var(--space-4); }
     .featured-case--vet .featured-case__outcome { margin-inline-start:var(--space-10); }
     .featured-case--pawly .featured-case__head { grid-template-columns: 1fr 1fr; }
+    .featured-case--portal .featured-case__head { grid-template-columns:2fr 1fr; }
+    .featured-case--learn .featured-case__head { grid-template-columns:2fr 1fr; }
+    .featured-case--vet .featured-case__head { max-inline-size:var(--measure-lead); }
+    .featured-case--pawly .featured-case__identity h2 { font-size:var(--size-6xl); }
+    .featured-case--pawly .featured-case__outcome { align-self:center; }
   }
 </style>

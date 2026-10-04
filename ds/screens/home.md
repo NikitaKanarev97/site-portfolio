@@ -302,3 +302,9 @@
 # G-final · accepted-story home, 04.10.2026
 
 Current composition: name metadata → Product Designer h1 → short specialisation/availability/CV/email → five visible FeaturedCaseCover entries → subordinate Webflow → About/contact/footer. Agent Ops → Portal → Learn → Vet → Pawly is unchanged. Accepted story media and title are the home source; `src/copy/featured-work.ts` supplies the short localized promise and qualified evidence status. No 30-second outcome or estimated review saving is claimed on Home. The historic three-open/two-collapsed and legacy artwork descriptions below no longer govern the current Home.
+# H4 · художественный вход и смена материала
+
+Небольшая общая роль заменяется двухстрочным позиционированием крупной Manrope, явная роль остаётся рядом с именем. Все пять якорей предшествуют biography и остаются быстрым доступом на360. Настоящий approval и отдельная подпись входят в первый предметный кадр. Техническая приёмка рамок H3 не является художественным закрытием.
+
+Пять stories и порядок сохраняются. Разная геометрия WorkStage видна без одинаковой внешней цветной карточки; фон Agent занимает флагман, Portal/Learn — только собственный UI-холст, Vet — маршрут одной записи, Pawly — фотография и полный отчёт. Шаг секций остаётся из foundation. Общий лайтбокс, полные native источники и 16/24px поля не меняются.
+

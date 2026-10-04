@@ -503,3 +503,7 @@ Astro скоупит стили страницы атрибутом `data-astro-
 `DiagramCanvas` renders an existing optional group label at two grid cells from the left and five cells below the group's top. It uses the existing `dg-note` text role. Unlabelled groups retain their frame alone. D-G-01 supplies reserved heading space in the existing Vet role-flow data for desktop and mobile; nodes, edges, answers and IDs are unchanged.
 
 Home uses an external anchor with `data-dialog-open` as the progressive dialog trigger. The initialized handler prevents navigation and opens the native dialog. Without an initialized handler the anchor goes to the original site. Existing button triggers in /kit remain supported; dialog content and focus behavior are unchanged.
+# H4 · FeaturedCase / WorkStage, 04.10.2026
+
+FeaturedCase: отдельные редакционные композиции пяти работ; article остаётся семантическим контейнером с заголовком и CTA. Только Agent имеет полный тёмный фон; Portal/Learn — локальный холст WorkStage, Vet — светлый маршрутный заголовок, Pawly — фото и отчёт на странице. usage=cover сохраняет принятые обложки кейсов; usage=home применяет новую режиссуру. Все физические медиапанели radius-lg, native пиксели и поля CaseScreen неизменны. Никакого вложенного интерактива.
+

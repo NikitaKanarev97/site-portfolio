@@ -18,7 +18,7 @@ const [trace,invoice,owner] = step.payload.items;
 </div>
 <style>
   .vet-stage { display:grid; gap:var(--space-6); min-inline-size:0; }
-  .vet-stage__route { display:flex; flex-wrap:wrap; justify-content:space-between; gap:var(--space-3) var(--space-6); padding-block-end:var(--space-4); border-block-end:var(--border-width) solid currentColor; }
+  .vet-stage__route { display:flex; flex-wrap:wrap; justify-content:space-between; gap:var(--space-3) var(--space-6); padding:var(--space-4) var(--space-6); border-radius:var(--radius-lg); background:var(--surface-cover-vet); color:var(--text-default); }
   .vet-stage figure { margin:0; min-inline-size:0; display:grid; align-content:start; gap:var(--space-3); }
   .vet-stage__owner { inline-size:100%; max-inline-size:calc(var(--space-48) * 2); justify-self:center; }
   .vet-stage__constraint { margin:0; color:var(--text-subtle); }

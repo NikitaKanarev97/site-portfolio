@@ -43,6 +43,7 @@ export const home = {
   hero: {
     name: NAME,
     role: 'Product Designer',
+    headline: ['Complex systems.', 'Clear decisions.'],
     specialization:
       "I design B2B tools for decisions that need context: AI oversight, procurement and workflows shared by several roles.",
     /**

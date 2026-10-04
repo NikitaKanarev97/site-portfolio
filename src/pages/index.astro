@@ -63,10 +63,10 @@ const heroProof = checkpoint.payload.items[3].shot;
     автоматическим шагом каскада, ряд действий — явной позицией 0.4.
   */}
   <section class="ds-container ds-section hero" data-motion-intro>
-    <p class="ds-meta-sm hero__name" data-motion="reveal-text">{home.hero.name}</p>
+    <p class="ds-meta-sm hero__name" data-motion="fade"><span>{home.hero.name}</span><span>{home.hero.role}</span></p>
 
-    <h1 class="ds-display-5xl hero__role ds-flow-heading" data-motion="reveal-text">
-      {home.hero.role}
+    <h1 class="ds-display-6xl hero__role ds-flow-heading">
+      {home.hero.headline.map(line => <span data-motion="reveal-text">{line}</span>)}
     </h1>
 
     <nav class="work-index" aria-label={locale === 'ru' ? 'Пять продуктовых работ' : 'Five product design projects'}>
@@ -253,8 +253,10 @@ const heroProof = checkpoint.payload.items[3].shot;
   .hero { display:grid; gap:var(--space-4); }
   .hero > *, .hero > .hero__role, .hero__copy > *, .hero__copy > :global(.hero__spec) { margin-block-start:0; }
   .hero__copy { display:grid; gap:var(--flow-text); align-content:start; }
-  .hero__name { color:var(--text-meta); }
-  .hero__role { color:var(--text-default); text-wrap:balance; }
+  .hero__name { display:flex; flex-wrap:wrap; justify-content:space-between; gap:var(--space-2) var(--space-4); color:var(--text-meta); }
+  .hero__role { color:var(--text-default); }
+  .hero__role > span { display:block; }
+  .hero__role > span:last-child { color:var(--text-link); }
   .hero__authorization { color:var(--text-subtle); max-inline-size:var(--measure-text); }
   .hero__proof { display:grid; gap:var(--space-3); color:var(--text-default); text-decoration:none; min-inline-size:0; }
   .hero__proof p { margin:0; }
@@ -272,10 +274,13 @@ const heroProof = checkpoint.payload.items[3].shot;
   @media (--bp-lg) {
     .hero { grid-template-columns:4fr 6fr; gap:var(--space-6) var(--space-16); }
     .hero__name, .hero__role, .work-index { grid-column:1 / -1; }
+    .hero__role { padding-block:var(--space-4); font-size:var(--size-5xl); }
+    .hero__role > span:last-child { text-align:right; }
     .hero__proof { grid-column:2; grid-row:4; align-self:start; }
     .hero__copy { grid-column:1; grid-row:4; }
-    .hero__actions { display:flex; flex-direction:column; align-items:flex-start; align-self:start; }
+    .hero__actions { display:flex; flex-wrap:wrap; gap:var(--space-4) var(--space-6); align-items:flex-start; align-self:start; }
   }
+  @media (--bp-xl) { .hero__role { font-size:var(--size-6xl); } }
 
   /* Отступ под eyebrow задаёт ds-flow-eyebrow на нём самом. */
   .featured__eyebrow {
