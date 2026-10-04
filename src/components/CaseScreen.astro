@@ -29,6 +29,7 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
 <div
   class:list={['case-screen', `case-screen--${item.device}`, native && 'case-screen--native', className]}
   style={`--ar: ${ar.toFixed(4)}; --ar-narrow: ${narrowSize ? narrowSize.width / narrowSize.height : ar}; ${item.nativeWidth ? `max-inline-size:calc(${item.nativeWidth}px + var(--space-6) * 2);` : ''}`}
+  data-motion={!native && !href ? 'fade-image' : undefined}
 >
   {item.video ? (
     <div class="case-screen__media">
@@ -42,7 +43,7 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
         <picture>
           {item.srcNarrow && <source media={narrowMedia} srcset={item.srcNarrow} width={narrowSize?.width} height={narrowSize?.height} />}
           <img src={item.src} alt={item.alt} width={size?.width} height={size?.height}
-            loading={loading} decoding="async" data-motion="fade-image" />
+            loading={loading} decoding="async" />
         </picture>
         <slot name="annotations" />
       </div>

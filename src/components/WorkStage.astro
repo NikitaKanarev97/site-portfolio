@@ -18,7 +18,7 @@ const art = caseArt(theme, locale);
 const shots = media.variant === 'proof' ? media.panels ?? [media.shot] : media.variant === 'screen' ? media.items : [];
 const visibleShots: ShotItem[] = theme === 'pawly' ? shots.slice(-1) : shots;
 ---
-<div class:list={['work-stage', `work-stage--${theme}`, `work-stage--${usage}`]} data-motion={theme === 'agent' ? 'cover-interlock' : undefined}>
+<div class:list={['work-stage', `work-stage--${theme}`, `work-stage--${usage}`]} data-motion={theme === 'agent' && usage === 'cover' ? 'cover-interlock' : undefined}>
   {theme === 'learn' ? <LearnStage locale={locale} loading={loading} href={href} linkLabel={linkLabel} /> : theme === 'vet' ? <VetStage locale={locale} loading={loading} href={href} linkLabel={linkLabel} /> : <>
   {theme === 'portal' && <div class="work-stage__annotation">
     <p class="ds-meta-xs">{art.label}</p>
@@ -31,7 +31,7 @@ const visibleShots: ShotItem[] = theme === 'pawly' ? shots.slice(-1) : shots;
   </figure>}
   <div class="work-stage__screens">
     {visibleShots.map((shot, i) => <>
-      {theme === 'agent' && i === 1 && <div class="work-stage__gate" data-cover-gate><span aria-hidden="true" /><p class="ds-meta-xs">{art.label}</p></div>}
+      {theme === 'agent' && i === 1 && <div class="work-stage__gate" data-cover-gate data-motion={usage === 'home' ? 'fade' : undefined}><span aria-hidden="true" /><p class="ds-meta-xs">{art.label}</p></div>}
       <div class="work-stage__panel" data-cover-panel={theme === 'agent' ? '' : undefined}><CaseScreen item={shot} loading={loading} href={href} linkLabel={linkLabel} /></div>
     </>)}
   </div>
