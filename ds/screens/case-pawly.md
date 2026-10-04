@@ -1,4 +1,28 @@
-# Pawly · актуальная редакция Product Polish 06
+# Pawly E · индивидуальная история · 04.10.2026
+
+Приоритет — PLAN-CHATS 03–04.10.2026 и frozen story-contract. Полная пара находится в `src/copy/cases/pawly.ts` (`pawlyStory`, общая фабрика локалей) и `src/copy/ru/cases/pawly.ts` (`pawlyStoryRu`, assertStoryPair). Legacy export сохранён для штатного маршрута до интеграции G. Собственные noindex preview: `/preview/pawly-rebuild/en/` и `/preview/pawly-rebuild/ru/`, origin 4370. Ветка `codex/pawly-rebuild-e`, база 58002c3.
+
+| Порядок / ID | Общий модуль | Визуальный довод |
+|---|---|---|
+| Cover / facts | CaseCover screen phones / MetaList facts | Три сентябрьских момента на песочном поле. Mobile — первые два; report ниже отдельно. Концепт, единственный дизайнер, версия, synthetic QA видны рано |
+| care-context | CaseThesis | Человеческая ситуация передачи питомца/ключей; основания доверия — гипотеза дизайна |
+| compatibility | CaseCarousel / process | Реальные профиль и список, потребности/пределы перед проверками, полный CTA |
+| return-boundary | CaseSteps static | Ожидаемые 14:50 → локальный полный кадр → подтверждённые 14:52 и два фото |
+| proof-system | CaseSpecimen | PhotoProof 4, TimelineRow 4, InfoNote 3 states; compact foundation, собственный Inter и реальные цвета |
+| walker-earnings | CaseShot phones | Один полный мобильный earnings, 950/171/779 и 3116+779=3895 — арифметика fixture |
+| inspectable-care | CaseImpact outcome | Реализованная цепочка, synthetic September acceptance, цена отдельной отправки и вопрос будущей проверки с людьми |
+| Next | CaseNext | Native Agent Ops, порядок публичного реестра не менялся |
+| return-proof companion | MediaFrame film | Реальная существующая запись, explicit play/native controls, no autoplay/loop. Доступна из ранних facts и обратной ссылкой к состояниям |
+
+Паспорта до capture — `tasks/portfolio-rebuild/pawly/artifact-plan.md`, provenance/evidence/media inventories рядом. Продукт строго read-only. Три отобранные матрицы сняты из принятого catalogue 04; это не старый Storybook/Figma. Все 11 states доступны без JS. Source UI матриц EN, окружающие строки EN/RU; экраны и фильм используют соответствующую настоящую локаль. Foundation образцы EN документируют шрифт без имитации RU.
+
+Статичная проверка показала чрезмерную высоту трёх full-width групп. Уточнение: один care-evidence group, PhotoProof и TimelineRow в двух колонках, InfoNote wide снизу; на mobile по одному семейству. Это native вариант frozen Specimen, не новый renderer. Foundation 35:65 и грамматика HA-DS-01 сохранены.
+
+Центральное действие — существующий return-proof, без ретайминга. Спокойные defaults common reveal; никакого pinned desktop-сценария, финансового счётчика или live GPS. Full/reduce/no-JS содержат полную статичную цепочку. E-G-01: для inline native film в Story нужен optional film в ShotItem/CaseScreen. Пока native companion размещён после рассказа; это явная граница интеграции, не заявленная поддержка схемы.
+
+Фактические film-границы: full/reduce manual play прошли; no-JS Chromium остаётся на WebM без metadata (E-G-02), но poster/static end states читаются. Ручной film продолжает играть вне viewport (E-G-03); route departure/Back прошли. Полная film-приёмка ожидает общих исправлений G. Охват и записи — собственный report, не исторический PASS ниже.
+
+## История до E: Product Polish 06
 
 Дата: 13.09.2026. Маршруты: /work/pawly/ и /ru/work/pawly/.
 Источник принятого продукта: D:/Claude-projects/PETS-walking/audit/product-polish/reports/05-acceptance.md.

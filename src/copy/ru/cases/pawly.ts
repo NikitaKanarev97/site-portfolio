@@ -250,3 +250,8 @@ export const pawlyRu = {
     "lead": "Следующий шаг — проверить с владельцами и исполнителями, понятны ли эти различия в реальных задачах. Прототип позволяет это исследовать."
   }
 };
+
+import { createPawlyStory, pawlyStory } from '../../cases/pawly';
+import { assertStoryPair } from '../../cases/story';
+export const pawlyStoryRu = createPawlyStory('ru');
+assertStoryPair(pawlyStory, pawlyStoryRu);
