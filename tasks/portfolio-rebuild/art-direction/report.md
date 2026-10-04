@@ -1,39 +1,41 @@
-# H5 · готово к независимой художественной проверке
+# H6 · готово к независимой художественной проверке
 
-Текущий source 297ddd3e1a8ccdea56a8a33e4d25865f03771e07, на технической базе 574110a5b9d33760c82e6d461ade600c409f807c; её evidence 16ff1695388efecbf9b022227391159b7eb0b292. Checkout C:/Users/kanar/.codex/worktrees/portfolio-art-direction-h/Site-portfolio, branch codex/portfolio-art-direction-h-2026-10-04. Build dist-h5. EN http://127.0.0.1:4398/, RU http://127.0.0.1:4398/ru/, галерея http://127.0.0.1:4396/art-review-h5.html. Прежняя техническая сборка4397 и H4dist-h4/4395 сохранены отдельно.
+Source 0bfd9644207f6cd972c0941ce47742dd79ee2462. Checkout C:/Users/kanar/.codex/worktrees/portfolio-art-direction-h/Site-portfolio; branch codex/portfolio-art-direction-h-2026-10-04. Frozen build dist-h6: EN http://127.0.0.1:4399/, RU http://127.0.0.1:4399/ru/. Галерея http://127.0.0.1:4396/art-review-h6.html. H5/dist-h5/4398 и принятый технический preview4397 сохранены.
 
 ## Обязательный вопрос и честный ответ
 
 «Вызывает ли теперь вау-эффект? Это классно, круто, мощно, на уровне присланных референсов?»
 
-**Да.** Это оценка исполнителя после просмотра текущего сайта, целых смысловых композиций и кадров текущих native walkthrough, с сопоставлением точных материалов HA, Blinkov, Dounar и Victor. Оценка не выдаётся за реакцию или приёмку владельца. Независимый H-art-review остаётся pending.
+**Да — моя оценка исполнителя текущего H6.** Основание: масштабный авторский вход с пятью быстрыми маршрутами; сильная пространственная обложка Agent и последовательность причина → обещание/доказательство → деньги ждут человека; разные материал и ритм Portal/Learn/Vet/Pawly. Нынешние реальные семейства показывают сравнение состояний, а готовые native кадры вместе с рамками не выглядят недогруженными. Это вывод из просмотра и сопоставления, а не из build/PASS.
 
-Основание: Home за первые секунды задаёт масштабную авторскую идею «Сложные системы. Ясные решения.», даёт пять входов и понятный настоящий пример решения человека. Далее меняются материал и плотность: тёмный флагман, светлая каталожная сцена с исходной строкой, документ в двух контекстах, трёхролевая клиническая передача и фотографическая история подтверждения. Agent Ops связывает крупную обложку со смысловыми событиями: одна причина объединяет семнадцать чатов; обещание проверяется полным диалогом; деньги ждут человека. Сцены убедительны статично, движение меняет фокус по смыслу. Карты и компонентные листы имеют конкретные формы, группы и реальные состояния. Качество не выводится из числа эффектов или технических PASS.
+**Независимой положительной приёмки H6 пока нет.** H5 самооценка «Да» была отклонена контроллером по H-ART-04/05. Она сохранена исторически в h-art-06/h5-*; текущая передача содержит фактические исправления. Цепочка ACTIVE. Если контроллер не согласится, тот же исполнитель продолжает по конкретным кадрам, без новой команды владельца.
 
-## Реальные изменения
+## Что изменено
 
-H4source3cf9c54 реализовал новый двухстрочный Home, явную роль, пять быстрых входов, крупный native approval и разные редакционные композиции пяти работ. Технический source574110a сохранил их и исправил объяснение/клики Home, frame+caption fit, движение/возврат, callout нумерацию, настоящие внутренние поля Learn, четыре экрана Pawly и CaseNext. Эти правки сохранены.
+CaseSpecimen показывает группы и сравнительные семейства до foundation. Четыре состояния —2×2; тройки от bp-xl учитывают nativeWidth с24px полями. Portal помещает три, более широкий InfoNote Pawly347px остаётся в двух. Learn TrustHeader/ProgressMeter образуют пару. Типографическая таблица и палитра компактны; на mobile native sample рядом с параметрами. Сохранены группы, IDs, порядок,13/6/11состояний Portal/Learn/Pawly, все type/color values и source assets. Шрифт портфолио/Manrope и токены не менялись.
 
-В H5 найден ещё один реальный дефект: базовая фиксированная высота CaseCover перекрывала auto-height редакционной обложки Pawly на desktop. Изображения помещались в собственные рамки, но общий предок обрезал низ фотографии и native отчёта. Правило editorial-height перенесено после базового правила. Теперь фото, весь отчёт, действие и подписи помещаются с нижним полем. Манроп, цвета,16px внешние радиусы, исходные UI-пиксели и поля16/24px сохранены. Правило внесено в ds/components.md.
+CaseScreen объявляет fade-image на всей внешней рамке с изображением и подписью; отдельного img reveal нет. Native specimens и Home case-links статичны. Home Agent показывает обещание, рубеж человека и выплату сразу; fade выделяет только рубеж. Interlock в обложке Agent и focus/money checkpoint сохраняются. Web builds MediaFrame reveal=false; RU использует тот же HomePage.
 
-Portal сохраняет крупную исходную строку38, карту рабочего объекта, поток и настоящий системный лист. Learn связывает ресурс03, полный ONVIF материал и паспорт программы; native голубые внутренние поля не заменены внешней белой рамкой. Vet показывает целые4,9кг/назначение, отдельную оплату и опубликованный документ владельца. Pawly сочетает собственное демонстрационное фото с полным подтверждённым отчётом; четыре native экрана раскрывают основание выбора.
+Whole UI, alpha-контуры/красные обводки, natural ratio, поля16/24px и общий внешний radius16px сохранены. Родные продуктовые радиусы не перерисованы. Сохраняются H5 natural CaseCover height, закрытые H-ART-01/02/03, весь ONVIF/паспорт Learn, отдельные роли Vet, photograph/full report Pawly и CaseNext.
 
-## Доказательства и просмотр
+## Просмотр и конкретные доказательства
 
-h-art-05/final/: 92 новых PNG — целые страницы, Hero, Home article, обложки и доступные audit/system контейнеры, EN/RU1440/390. Изображения не ретушированы и не обрезаны по внутреннему UI. Галерея показывает H3→H5, выбранный язык/ширину/страницу,24 текущих native videos,24 контактных листа и точные референсы. Отдельная пара before-pawly-cover.png / final/en-1440-pawly-cover.png показывает исправление общего предка.
+Живой H6: EN Home и все пять обложек; Portal domain-system; быстрый Home Agent. Просмотрены целые текущие контейнеры Hero/обложек/системных листов,12contact sheets (шесть EN1440 и шесть RU390),8исходных Home film frames на2.23/2.80/6.74/7.20/8.49/9.00/10.61/11.20s. EN Home film воспроизведён в native browser player. Не заявляется непрерывный просмотр каждой секунды всех28фильмов. Точные whole PNG и выбранные native samples дополняют живой просмотр.
 
-walkthroughs.json:24 новых записей Home+5 stories ×EN/RU ×1440/390. Сценарий использует native wheel, раскрытие программы Learn, Next/Back и обратное чтение. Desktop Agent запись содержит overview/workspace/promise/decision. video-metadata.json подтверждает размеры/длительность; все записи имеют0pageerror. Контактные листы содержат целый native viewport, в котором прокрутка естественно может показать часть длинного материала. Метки walkthrough — приблизительные wall-clock ориентиры, не точные монтажные таймкоды. Просмотр включал live страницы, текущие ключевые кадры всех шести маршрутов EN desktop/RU mobile, locale-пары целых композиций и выборочное native воспроизведение; не заявляется непрерывный просмотр каждой секунды всех24файлов.
+HA component-library вновь открыт в исходном размере; сохранённые HA maps и picks доступны рядом с H6. Заново открыты live HA/Atlant Telecom и Dounar/Black Forest, просмотрены пространственная cover и предметный header/product материал. Чужие пиксели остаются только в review evidence.
 
-H5 live сравнение: HA/Atlant Telecom cover и Dounar/Black Forest header+настоящий product screen. Сохранённые picks, motion sheets и четыре закреплённых HA originals просмотрены в рамках H; H5 дополнительно сопоставлен с component-library. Подробная связь каждого решения с эталоном — reference-map.md; Before/After/Why — review.md. Чужие пиксели остаются только доказательствами в галерее.
+Контроллерские H5 исходные кадры сохранены в before. В нынешнем EN Home2.23s обе панели Agent читаются,6.74s показывает native Vet вместе с рамкой,10.61s — все четыре Web builds. Мобильный Portal первым UI входит через724px вместо2396px в сопоставимом прогоне. Галерея показывает H5/H6 системные листы, цельные Home scenes, выбранные EN/RU/1440/390 pages,24новых films/sheets и4quick films.
 
-## Проверки
+## Проверки фактически изменённого слоя
 
-Build36pages; check:css0мёртвых правил; harmony0нарушений; gitdiff--check чистый. Токены и motion зеркала byte-identical. capture-verification.json:24профиля,0overflow/0pageerror; natural ratio/contain/без clip-path внутри рамок. Два unloaded Agent transcript кадра на mobile проверены отдельно: frame-followup.json подтверждает display:none у desktop-only предка; это скрытый desktop вариант, не сломанный видимый UI. Остальные видимые кадры загружены.
+Build36pages; Astro check0errors/0warnings; scoped CSS checker на dist-h6 —0dead rules; harmony32профиля Home+три изменённых systems —0нарушений, ширины1440/1024/390/360. gitdiff--check чистый. Tokens/motion mirrors побайтово совпадают.
 
-cover-verification.json:20целевых профилей Pawly EN/RU390/768/1024/1440, высоты600/900, reduced-motion/no-JS1440×600 —0обрезаний материала общим cover,0overflow, native ratio сохранён. Полная предыдущая техническая матрица находится в tasks/technical-fixes/handoff.md и не повторялась без причины. H5 изменяет CSS-каскад высоты, не создаёт нового motion lifecycle.
+composition-verification:12пар H5/H6 сохраняют source URLs, dimensions, states/type/colors, contain/без clip и UI width не меньше прежнего;12Home full/reduce/no-JS профилей имеют frame/image opacity1, без независимого reveal,0ошибок. quick-verification:4профиля, все пять native quick links, первая фиксация через100ms, loaded UI, fast wheel/reverse и готовые Web builds —pass.
 
-## Границы фактов и передачи
+lifecycle-verification:30состояний resize/preference/carousel/no-JS; Agent/Portal focus сохраняет чтение и один selected state, Pawly rapid/keyboard carousel и CaseNext сохраняются. navigation-verification:18whole-container case clicks и3MediaZoom открытия/Escape. capture-verification:24профиля,92PNG,0overflow/0pageerror/0bad visible frame geometry. Два unloaded Agent transcript на mobile проверены свежим frame-followup: desktop-only ancestor display:none. Walkthroughs24+quick4:0pageerror; ffprobe подтверждает размеры/длительности. Метки walkthrough — wall-clock ориентиры, не точные монтажные таймкоды.
 
-$420диалог и$340approval — отдельные fixtures. Portal источник сохраняется до корзины, подтверждения post-order нет. Learn прочтение/завершение/assessment различаются.30секунд Vet — исходное ограничение, не измеренная скорость; visit остаётся незавершённым. Pawly — самостоятельный concept/demo, без human validation и настоящего внедрения. Прежние отрицательные художественные ответы и пауза H4 сохранены в h-art-05/h4-*; они не переписаны задним числом.
+## Факты и передача
 
-Status ready_for_visual_review. Только контроллер после собственного положительного просмотра обновляет STATE/PLAN и закрывает цепочку. Если его ответ отрицательный — конкретные кадры возвращаются тому же исполнителю, работа продолжается. Push/deploy не выполнялись.
+Технический checkpoint574110a5b9d33760c82e6d461ade600c409f807c / evidence16ff1695388efecbf9b022227391159b7eb0b292 остаётся предком и принят. Basec0c69040801d60bcfc836f6728f2ae806911be1d. H4 art3cf9c54 сохранён. UI assets и copy facts H6 не меняет: $420dialog/$340approval — разные fixtures; Portal provenance подтверждён до Cart; Learn reading/completion/assessment различаются; Vet30seconds — constraint, visitunfinished; Pawly concept/demo без human validation и внедрения.
+
+Status ready_for_visual_review. Только контроллер после своего положительного просмотра обновляет STATE/PLAN, закрывает цепочку и её существующий heartbeat. Root checkout/соседние продукты не изменены; push/deploy не выполнялись. До решения независимого review художественный этап остаётся активным.

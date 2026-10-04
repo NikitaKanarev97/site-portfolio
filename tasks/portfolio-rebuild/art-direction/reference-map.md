@@ -1,3 +1,7 @@
+## H6 · 05.10.2026
+
+Source 0bfd9644207f6cd972c0941ce47742dd79ee2462. H6 сравнивает HA component-library с H5/H6 whole Portal/Learn/Pawly sheets: отношения состояний, плотность, native scale. Для движения — исходные H5 моменты и нынешние24+4films/8Homeframes. Live HA/Dounar открыты вновь; прошлые референсные решения H4/технические исправления сохранены.
+
 ## H5 · актуальное сопоставление
 
 Source 297ddd3e1a8ccdea56a8a33e4d25865f03771e07. Home: масштаб и смена материала Blinkov; Agent: пространственная связь двух последствий HA и смысловой фокус; Portal: source-row+map/flow/component families; Learn: один объект в двух контекстах по предметной архитектуре Dounar; Vet: разные роли/устройства; Pawly: собственное фото и целый native отчёт по ритму Victor. Live HA cover и Black Forest header/product screen сопоставлены с текущими сценами. HA component-library сравнен с текущими группами Portal/Learn/Pawly, без копирования чужих пикселей. Положительный ответ исполнителя обоснован в report; независимая проверка pending. Исторические таблицы и статусы ниже относятся к указанным прежним итерациям.

@@ -1,9 +1,9 @@
 {
   "stage": "H-art-direction",
-  "iteration": "H-art-05",
+  "iteration": "H-art-06",
   "status": "ready_for_visual_review",
-  "sourceRef": "297ddd3e1a8ccdea56a8a33e4d25865f03771e07",
-  "codeRef": "297ddd3e1a8ccdea56a8a33e4d25865f03771e07",
+  "sourceRef": "0bfd9644207f6cd972c0941ce47742dd79ee2462",
+  "codeRef": "0bfd9644207f6cd972c0941ce47742dd79ee2462",
   "technicalSourceRef": "574110a5b9d33760c82e6d461ade600c409f807c",
   "technicalHandoffRef": "16ff1695388efecbf9b022227391159b7eb0b292",
   "artCompositionRef": "3cf9c54de09f77b4b496328af2c8b5f2f6e2af4c",
@@ -11,25 +11,31 @@
   "checkout": "C:/Users/kanar/.codex/worktrees/portfolio-art-direction-h/Site-portfolio",
   "branch": "codex/portfolio-art-direction-h-2026-10-04",
   "previews": {
-    "en": "http://127.0.0.1:4398/",
-    "ru": "http://127.0.0.1:4398/ru/",
-    "review": "http://127.0.0.1:4396/art-review-h5.html"
+    "en": "http://127.0.0.1:4399/",
+    "ru": "http://127.0.0.1:4399/ru/",
+    "review": "http://127.0.0.1:4396/art-review-h6.html"
   },
-  "buildDirectory": "dist-h5",
-  "selfAssessment": "Да: крупный авторский вход, цельная сильная история Agent, разный материал пяти работ и конкретные системные артефакты; ответ основан на текущих целых кадрах, native движении и сравнениях.",
+  "buildDirectory": "dist-h6",
+  "selfAssessment": "Да: сильный масштаб/флагман и разные пять материалов; реальные comparative families и атомарное появление сохраняют цельность. Обоснование и границы просмотра в report.md.",
   "independentAcceptance": "pending",
   "proof": {
-    "captures": "h-art-05/final/",
-    "captureVerification": "h-art-05/capture-verification.json",
-    "coverVerification": "h-art-05/cover-verification.json",
-    "hiddenDesktopFollowup": "h-art-05/frame-followup.json",
-    "walkthroughs": "h-art-05/walkthroughs.json",
-    "recordings": "h-art-05/recordings/",
-    "videoMetadata": "h-art-05/video-metadata.json",
+    "captures": "h-art-06/final/",
+    "captureVerification": "h-art-06/capture-verification.json",
+    "compositionVerification": "h-art-06/composition-verification.json",
+    "quickVerification": "h-art-06/quick-verification.json",
+    "lifecycleVerification": "h-art-06/lifecycle-verification.json",
+    "navigationVerification": "h-art-06/navigation-verification.json",
+    "hiddenDesktopFollowup": "h-art-06/frame-followup.json",
+    "walkthroughs": "h-art-06/walkthroughs.json",
+    "recordings": "h-art-06/recordings/",
+    "quickRecordings": "h-art-06/quick/",
+    "videoMetadata": "h-art-06/video-metadata.json",
     "review": "review.md",
     "report": "report.md"
   },
-  "requiredControllerAction": "Perform independent H-art-review on source297 and preview4398. Do not close chain from self-assessment/technical PASS. Return concrete visual findings to the same executor if negative.",
+  "requiredControllerAction": "Independently review H6 source0bfd964 and frozen preview4399 against the preserved H5 findings, HA references and current 24+4 native films. Do not close from executor assessment or technical PASS. Return concrete findings to the same G if negative; chain and existing heartbeat remain ACTIVE.",
   "ownerPause": "Resolved after verified technical handoff; H resumed under original direct human instruction.",
-  "publication": "Not requested; no push/deploy."
+  "publication": "Not requested; no push/deploy.",
+  "chainStatus": "ACTIVE",
+  "previousIndependentAcceptance": "H5 changes_requested: H-ART-04/05; original review preserved in h-art-06/independent-h5-review.md"
 }

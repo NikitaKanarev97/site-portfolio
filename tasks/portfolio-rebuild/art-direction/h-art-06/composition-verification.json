@@ -1,0 +1,5203 @@
+{
+  "sourceRef": "0bfd9644207f6cd972c0941ce47742dd79ee2462",
+  "results": [
+    {
+      "key": "en-1440-partner-portal",
+      "pass": true,
+      "errors": [],
+      "before": {
+        "height": 4079.59375,
+        "firstImageOffset": 591.75,
+        "foundationAfterStates": false,
+        "states": [
+          {
+            "id": "ambiguous",
+            "media": "portal-resolutionrow-ambiguous",
+            "src": "rebuild/common/portal/resolutionrow-ambiguous-288.webp",
+            "width": 264.796875,
+            "height": 308.3125,
+            "naturalWidth": 584,
+            "naturalHeight": 680,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "missing",
+            "media": "portal-resolutionrow-missing",
+            "src": "rebuild/common/portal/resolutionrow-missing-288.webp",
+            "width": 264.796875,
+            "height": 292,
+            "naturalWidth": 584,
+            "naturalHeight": 644,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "changed",
+            "media": "portal-resolutionrow-changed",
+            "src": "rebuild/partner-portal/resolutionrow-changed-288.webp",
+            "width": 264.796875,
+            "height": 327.359375,
+            "naturalWidth": 584,
+            "naturalHeight": 722,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "confirmed-from-ambiguous",
+            "media": "portal-resolutionrow-confirmed-from-ambiguous",
+            "src": "rebuild/common/portal/resolutionrow-confirmed-from-ambiguous-288.webp",
+            "width": 264.796875,
+            "height": 323.734375,
+            "naturalWidth": 584,
+            "naturalHeight": 714,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "empty",
+            "media": "portal-fileupload-empty",
+            "src": "rebuild/common/portal/fileupload-empty-288.webp",
+            "width": 264.8125,
+            "height": 233.0625,
+            "naturalWidth": 584,
+            "naturalHeight": 514,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "complete",
+            "media": "portal-fileupload-complete",
+            "src": "rebuild/common/portal/fileupload-complete-288.webp",
+            "width": 264.8125,
+            "height": 167.765625,
+            "naturalWidth": 584,
+            "naturalHeight": 370,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "error",
+            "media": "portal-fileupload-error",
+            "src": "rebuild/common/portal/fileupload-error-288.webp",
+            "width": 264.8125,
+            "height": 186.8125,
+            "naturalWidth": 584,
+            "naturalHeight": 412,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "verified",
+            "media": "portal-availability-verified",
+            "src": "rebuild/common/portal/availability-verified-288.webp",
+            "width": 154,
+            "height": 53.6875,
+            "naturalWidth": 304,
+            "naturalHeight": 106,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "stale",
+            "media": "portal-availability-stale",
+            "src": "rebuild/common/portal/availability-stale-288.webp",
+            "width": 168,
+            "height": 75.890625,
+            "naturalWidth": 332,
+            "naturalHeight": 150,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "not-confirmed",
+            "media": "portal-availability-not-confirmed",
+            "src": "rebuild/common/portal/availability-not-confirmed-288.webp",
+            "width": 130,
+            "height": 55.859375,
+            "naturalWidth": 256,
+            "naturalHeight": 110,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "default",
+            "media": "portal-fulfillmentplan-default",
+            "src": "rebuild/partner-portal/fulfillmentplan-default-288.webp",
+            "width": 264.8125,
+            "height": 347.328125,
+            "naturalWidth": 584,
+            "naturalHeight": 766,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "selected",
+            "media": "portal-fulfillmentplan-selected",
+            "src": "rebuild/partner-portal/fulfillmentplan-selected-288.webp",
+            "width": 264.8125,
+            "height": 350.046875,
+            "naturalWidth": 584,
+            "naturalHeight": 772,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "unavailable",
+            "media": "portal-fulfillmentplan-unavailable",
+            "src": "rebuild/partner-portal/fulfillmentplan-unavailable-288.webp",
+            "width": 264.8125,
+            "height": 342.796875,
+            "naturalWidth": 584,
+            "naturalHeight": 756,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Page",
+            "Pagetitle",
+            "32/42600",
+            "Orders"
+          ],
+          [
+            "Section",
+            "Sectiontitle",
+            "24/36600",
+            "Import"
+          ],
+          [
+            "Row",
+            "Linetitle",
+            "18/27600",
+            "Camera"
+          ],
+          [
+            "Body",
+            "Maintext",
+            "16/24400",
+            "Sourcerow"
+          ],
+          [
+            "Status",
+            "Statelabel",
+            "12/18600",
+            "VERIFIED"
+          ],
+          [
+            "Data",
+            "Tabulardata",
+            "11/16500",
+            "2412pcs"
+          ]
+        ],
+        "colors": [
+          "#2563ebAction",
+          "#ffffffWhite",
+          "#fafbfcSheet",
+          "#e7eaf0Ground",
+          "#0f172aInk",
+          "#475569Muted",
+          "#166534Success",
+          "#92400eWarning",
+          "#b91c1cError",
+          "#0369a1Info"
+        ],
+        "overflow": 0
+      },
+      "after": {
+        "height": 3795.8125,
+        "firstImageOffset": 676.53125,
+        "foundationAfterStates": true,
+        "states": [
+          {
+            "id": "ambiguous",
+            "media": "portal-resolutionrow-ambiguous",
+            "src": "rebuild/common/portal/resolutionrow-ambiguous-288.webp",
+            "width": 292,
+            "height": 340,
+            "naturalWidth": 584,
+            "naturalHeight": 680,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "missing",
+            "media": "portal-resolutionrow-missing",
+            "src": "rebuild/common/portal/resolutionrow-missing-288.webp",
+            "width": 292,
+            "height": 322,
+            "naturalWidth": 584,
+            "naturalHeight": 644,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "changed",
+            "media": "portal-resolutionrow-changed",
+            "src": "rebuild/partner-portal/resolutionrow-changed-288.webp",
+            "width": 292,
+            "height": 361,
+            "naturalWidth": 584,
+            "naturalHeight": 722,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "confirmed-from-ambiguous",
+            "media": "portal-resolutionrow-confirmed-from-ambiguous",
+            "src": "rebuild/common/portal/resolutionrow-confirmed-from-ambiguous-288.webp",
+            "width": 292,
+            "height": 357,
+            "naturalWidth": 584,
+            "naturalHeight": 714,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "empty",
+            "media": "portal-fileupload-empty",
+            "src": "rebuild/common/portal/fileupload-empty-288.webp",
+            "width": 292,
+            "height": 257,
+            "naturalWidth": 584,
+            "naturalHeight": 514,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "complete",
+            "media": "portal-fileupload-complete",
+            "src": "rebuild/common/portal/fileupload-complete-288.webp",
+            "width": 292,
+            "height": 185,
+            "naturalWidth": 584,
+            "naturalHeight": 370,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "error",
+            "media": "portal-fileupload-error",
+            "src": "rebuild/common/portal/fileupload-error-288.webp",
+            "width": 292,
+            "height": 206,
+            "naturalWidth": 584,
+            "naturalHeight": 412,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "verified",
+            "media": "portal-availability-verified",
+            "src": "rebuild/common/portal/availability-verified-288.webp",
+            "width": 154,
+            "height": 53.6875,
+            "naturalWidth": 304,
+            "naturalHeight": 106,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "stale",
+            "media": "portal-availability-stale",
+            "src": "rebuild/common/portal/availability-stale-288.webp",
+            "width": 168,
+            "height": 75.890625,
+            "naturalWidth": 332,
+            "naturalHeight": 150,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "not-confirmed",
+            "media": "portal-availability-not-confirmed",
+            "src": "rebuild/common/portal/availability-not-confirmed-288.webp",
+            "width": 130,
+            "height": 55.859375,
+            "naturalWidth": 256,
+            "naturalHeight": 110,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "default",
+            "media": "portal-fulfillmentplan-default",
+            "src": "rebuild/partner-portal/fulfillmentplan-default-288.webp",
+            "width": 292,
+            "height": 383,
+            "naturalWidth": 584,
+            "naturalHeight": 766,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "selected",
+            "media": "portal-fulfillmentplan-selected",
+            "src": "rebuild/partner-portal/fulfillmentplan-selected-288.webp",
+            "width": 292,
+            "height": 386,
+            "naturalWidth": 584,
+            "naturalHeight": 772,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "unavailable",
+            "media": "portal-fulfillmentplan-unavailable",
+            "src": "rebuild/partner-portal/fulfillmentplan-unavailable-288.webp",
+            "width": 292,
+            "height": 378,
+            "naturalWidth": 584,
+            "naturalHeight": 756,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Page",
+            "Pagetitle",
+            "32/42600",
+            "Orders"
+          ],
+          [
+            "Section",
+            "Sectiontitle",
+            "24/36600",
+            "Import"
+          ],
+          [
+            "Row",
+            "Linetitle",
+            "18/27600",
+            "Camera"
+          ],
+          [
+            "Body",
+            "Maintext",
+            "16/24400",
+            "Sourcerow"
+          ],
+          [
+            "Status",
+            "Statelabel",
+            "12/18600",
+            "VERIFIED"
+          ],
+          [
+            "Data",
+            "Tabulardata",
+            "11/16500",
+            "2412pcs"
+          ]
+        ],
+        "colors": [
+          "#2563ebAction",
+          "#ffffffWhite",
+          "#fafbfcSheet",
+          "#e7eaf0Ground",
+          "#0f172aInk",
+          "#475569Muted",
+          "#166534Success",
+          "#92400eWarning",
+          "#b91c1cError",
+          "#0369a1Info"
+        ],
+        "overflow": 0
+      }
+    },
+    {
+      "key": "en-1440-learn",
+      "pass": true,
+      "errors": [],
+      "before": {
+        "height": 1540.5625,
+        "firstImageOffset": 505.0625,
+        "foundationAfterStates": false,
+        "states": [
+          {
+            "id": "setup",
+            "media": "theme-setup",
+            "src": "rebuild/learn/theme-setup-desktop.webp",
+            "width": 264.796875,
+            "height": 194.40625,
+            "naturalWidth": 632,
+            "naturalHeight": 464,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "project",
+            "media": "theme-project",
+            "src": "rebuild/learn/theme-project-desktop.webp",
+            "width": 264.796875,
+            "height": 171.78125,
+            "naturalWidth": 632,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "handover",
+            "media": "theme-handover",
+            "src": "rebuild/learn/theme-handover-desktop.webp",
+            "width": 264.8125,
+            "height": 171.78125,
+            "naturalWidth": 632,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "explore",
+            "media": "theme-explore",
+            "src": "rebuild/learn/theme-explore-desktop.webp",
+            "width": 264.8125,
+            "height": 171.78125,
+            "naturalWidth": 632,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "version-date",
+            "media": "trust",
+            "src": "rebuild/learn/trust-desktop.webp",
+            "width": 264.796875,
+            "height": 75.390625,
+            "naturalWidth": 576,
+            "naturalHeight": 164,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "position",
+            "media": "progress",
+            "src": "rebuild/learn/progress-desktop.webp",
+            "width": 264.8125,
+            "height": 34.015625,
+            "naturalWidth": 576,
+            "naturalHeight": 74,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Display/4xl",
+            "Materialtitle",
+            "44/50.6700",
+            "Aa"
+          ],
+          [
+            "Heading/3xl",
+            "Sectionheading",
+            "32/43.2700",
+            "Aa"
+          ]
+        ],
+        "colors": [
+          "#0A66CESetup",
+          "#6D3EEAProject",
+          "#D6207AHandover",
+          "#0E9E86Explore",
+          "#3A4C66Neutral"
+        ],
+        "overflow": 0
+      },
+      "after": {
+        "height": 2200.3125,
+        "firstImageOffset": 589.84375,
+        "foundationAfterStates": true,
+        "states": [
+          {
+            "id": "setup",
+            "media": "theme-setup",
+            "src": "rebuild/learn/theme-setup-desktop.webp",
+            "width": 316,
+            "height": 232,
+            "naturalWidth": 632,
+            "naturalHeight": 464,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "project",
+            "media": "theme-project",
+            "src": "rebuild/learn/theme-project-desktop.webp",
+            "width": 316,
+            "height": 205,
+            "naturalWidth": 632,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "handover",
+            "media": "theme-handover",
+            "src": "rebuild/learn/theme-handover-desktop.webp",
+            "width": 316,
+            "height": 205,
+            "naturalWidth": 632,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "explore",
+            "media": "theme-explore",
+            "src": "rebuild/learn/theme-explore-desktop.webp",
+            "width": 316,
+            "height": 205,
+            "naturalWidth": 632,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "version-date",
+            "media": "trust",
+            "src": "rebuild/learn/trust-desktop.webp",
+            "width": 288,
+            "height": 82,
+            "naturalWidth": 576,
+            "naturalHeight": 164,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "position",
+            "media": "progress",
+            "src": "rebuild/learn/progress-desktop.webp",
+            "width": 288,
+            "height": 37,
+            "naturalWidth": 576,
+            "naturalHeight": 74,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Display/4xl",
+            "Materialtitle",
+            "44/50.6700",
+            "Aa"
+          ],
+          [
+            "Heading/3xl",
+            "Sectionheading",
+            "32/43.2700",
+            "Aa"
+          ]
+        ],
+        "colors": [
+          "#0A66CESetup",
+          "#6D3EEAProject",
+          "#D6207AHandover",
+          "#0E9E86Explore",
+          "#3A4C66Neutral"
+        ],
+        "overflow": 0
+      }
+    },
+    {
+      "key": "en-1440-pawly",
+      "pass": true,
+      "errors": [],
+      "before": {
+        "height": 1932.734375,
+        "firstImageOffset": 275.375,
+        "foundationAfterStates": false,
+        "states": [
+          {
+            "id": "photo-pending",
+            "media": "photo-pending",
+            "src": "rebuild/pawly/states/photo-pending-343.webp",
+            "width": 264.796875,
+            "height": 51.890625,
+            "naturalWidth": 694,
+            "naturalHeight": 136,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-local",
+            "media": "photo-local",
+            "src": "rebuild/pawly/states/photo-local-343.webp",
+            "width": 264.796875,
+            "height": 54.171875,
+            "naturalWidth": 694,
+            "naturalHeight": 142,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-confirmed",
+            "media": "photo-confirmed",
+            "src": "rebuild/pawly/states/photo-confirmed-343.webp",
+            "width": 264.796875,
+            "height": 54.171875,
+            "naturalWidth": 694,
+            "naturalHeight": 142,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-unavailable",
+            "media": "photo-unavailable",
+            "src": "rebuild/pawly/states/photo-unavailable-343.webp",
+            "width": 264.796875,
+            "height": 86.984375,
+            "naturalWidth": 694,
+            "naturalHeight": 228,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-done",
+            "media": "timeline-done",
+            "src": "rebuild/pawly/states/timeline-done-343.webp",
+            "width": 264.8125,
+            "height": 45.78125,
+            "naturalWidth": 694,
+            "naturalHeight": 120,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-current",
+            "media": "timeline-current",
+            "src": "rebuild/pawly/states/timeline-current-343.webp",
+            "width": 264.8125,
+            "height": 45.78125,
+            "naturalWidth": 694,
+            "naturalHeight": 120,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-pending",
+            "media": "timeline-pending",
+            "src": "rebuild/pawly/states/timeline-pending-343.webp",
+            "width": 264.8125,
+            "height": 28.984375,
+            "naturalWidth": 694,
+            "naturalHeight": 76,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-photo",
+            "media": "timeline-photo",
+            "src": "rebuild/pawly/states/timeline-photo-343.webp",
+            "width": 264.8125,
+            "height": 207.5625,
+            "naturalWidth": 694,
+            "naturalHeight": 544,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-hint",
+            "media": "note-hint",
+            "src": "rebuild/pawly/states/note-hint-343.webp",
+            "width": 347,
+            "height": 23,
+            "naturalWidth": 694,
+            "naturalHeight": 46,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-warning",
+            "media": "note-warning",
+            "src": "rebuild/pawly/states/note-warning-343.webp",
+            "width": 347,
+            "height": 67,
+            "naturalWidth": 694,
+            "naturalHeight": 134,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-disclosure",
+            "media": "note-disclosure",
+            "src": "rebuild/pawly/states/note-disclosure-343.webp",
+            "width": 347,
+            "height": 67,
+            "naturalWidth": 694,
+            "naturalHeight": 134,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Body",
+            "Event",
+            "15/22.5500",
+            "Returnconfirmed"
+          ],
+          [
+            "Small",
+            "Proofcaption",
+            "13/19.5500",
+            "Pickup14:05"
+          ]
+        ],
+        "colors": [
+          "#2563EBAction",
+          "#FAF9F7Care context",
+          "#167A4CConfirmed event"
+        ],
+        "overflow": 0
+      },
+      "after": {
+        "height": 2438.265625,
+        "firstImageOffset": 360.15625,
+        "foundationAfterStates": true,
+        "states": [
+          {
+            "id": "photo-pending",
+            "media": "photo-pending",
+            "src": "rebuild/pawly/states/photo-pending-343.webp",
+            "width": 347,
+            "height": 68,
+            "naturalWidth": 694,
+            "naturalHeight": 136,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-local",
+            "media": "photo-local",
+            "src": "rebuild/pawly/states/photo-local-343.webp",
+            "width": 347,
+            "height": 71,
+            "naturalWidth": 694,
+            "naturalHeight": 142,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-confirmed",
+            "media": "photo-confirmed",
+            "src": "rebuild/pawly/states/photo-confirmed-343.webp",
+            "width": 347,
+            "height": 71,
+            "naturalWidth": 694,
+            "naturalHeight": 142,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-unavailable",
+            "media": "photo-unavailable",
+            "src": "rebuild/pawly/states/photo-unavailable-343.webp",
+            "width": 347,
+            "height": 114,
+            "naturalWidth": 694,
+            "naturalHeight": 228,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-done",
+            "media": "timeline-done",
+            "src": "rebuild/pawly/states/timeline-done-343.webp",
+            "width": 347,
+            "height": 60,
+            "naturalWidth": 694,
+            "naturalHeight": 120,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-current",
+            "media": "timeline-current",
+            "src": "rebuild/pawly/states/timeline-current-343.webp",
+            "width": 347,
+            "height": 60,
+            "naturalWidth": 694,
+            "naturalHeight": 120,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-pending",
+            "media": "timeline-pending",
+            "src": "rebuild/pawly/states/timeline-pending-343.webp",
+            "width": 347,
+            "height": 38,
+            "naturalWidth": 694,
+            "naturalHeight": 76,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-photo",
+            "media": "timeline-photo",
+            "src": "rebuild/pawly/states/timeline-photo-343.webp",
+            "width": 347,
+            "height": 272,
+            "naturalWidth": 694,
+            "naturalHeight": 544,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-hint",
+            "media": "note-hint",
+            "src": "rebuild/pawly/states/note-hint-343.webp",
+            "width": 347,
+            "height": 23,
+            "naturalWidth": 694,
+            "naturalHeight": 46,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-warning",
+            "media": "note-warning",
+            "src": "rebuild/pawly/states/note-warning-343.webp",
+            "width": 347,
+            "height": 67,
+            "naturalWidth": 694,
+            "naturalHeight": 134,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-disclosure",
+            "media": "note-disclosure",
+            "src": "rebuild/pawly/states/note-disclosure-343.webp",
+            "width": 347,
+            "height": 67,
+            "naturalWidth": 694,
+            "naturalHeight": 134,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Body",
+            "Event",
+            "15/22.5500",
+            "Returnconfirmed"
+          ],
+          [
+            "Small",
+            "Proofcaption",
+            "13/19.5500",
+            "Pickup14:05"
+          ]
+        ],
+        "colors": [
+          "#2563EBAction",
+          "#FAF9F7Care context",
+          "#167A4CConfirmed event"
+        ],
+        "overflow": 0
+      }
+    },
+    {
+      "key": "en-390-partner-portal",
+      "pass": true,
+      "errors": [],
+      "before": {
+        "height": 7354.015625,
+        "firstImageOffset": 2333.4375,
+        "foundationAfterStates": false,
+        "states": [
+          {
+            "id": "ambiguous",
+            "media": "portal-resolutionrow-ambiguous",
+            "src": "rebuild/common/portal/resolutionrow-ambiguous-288.webp",
+            "width": 260,
+            "height": 302.734375,
+            "naturalWidth": 584,
+            "naturalHeight": 680,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "missing",
+            "media": "portal-resolutionrow-missing",
+            "src": "rebuild/common/portal/resolutionrow-missing-288.webp",
+            "width": 260,
+            "height": 286.703125,
+            "naturalWidth": 584,
+            "naturalHeight": 644,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "changed",
+            "media": "portal-resolutionrow-changed",
+            "src": "rebuild/partner-portal/resolutionrow-changed-288.webp",
+            "width": 260,
+            "height": 321.4375,
+            "naturalWidth": 584,
+            "naturalHeight": 722,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "confirmed-from-ambiguous",
+            "media": "portal-resolutionrow-confirmed-from-ambiguous",
+            "src": "rebuild/common/portal/resolutionrow-confirmed-from-ambiguous-288.webp",
+            "width": 260,
+            "height": 317.875,
+            "naturalWidth": 584,
+            "naturalHeight": 714,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "empty",
+            "media": "portal-fileupload-empty",
+            "src": "rebuild/common/portal/fileupload-empty-288.webp",
+            "width": 260,
+            "height": 228.828125,
+            "naturalWidth": 584,
+            "naturalHeight": 514,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "complete",
+            "media": "portal-fileupload-complete",
+            "src": "rebuild/common/portal/fileupload-complete-288.webp",
+            "width": 260,
+            "height": 164.71875,
+            "naturalWidth": 584,
+            "naturalHeight": 370,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "error",
+            "media": "portal-fileupload-error",
+            "src": "rebuild/common/portal/fileupload-error-288.webp",
+            "width": 260,
+            "height": 183.421875,
+            "naturalWidth": 584,
+            "naturalHeight": 412,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "verified",
+            "media": "portal-availability-verified",
+            "src": "rebuild/common/portal/availability-verified-288.webp",
+            "width": 170,
+            "height": 59.265625,
+            "naturalWidth": 304,
+            "naturalHeight": 106,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "stale",
+            "media": "portal-availability-stale",
+            "src": "rebuild/common/portal/availability-stale-288.webp",
+            "width": 184,
+            "height": 83.125,
+            "naturalWidth": 332,
+            "naturalHeight": 150,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "not-confirmed",
+            "media": "portal-availability-not-confirmed",
+            "src": "rebuild/common/portal/availability-not-confirmed-288.webp",
+            "width": 146,
+            "height": 62.734375,
+            "naturalWidth": 256,
+            "naturalHeight": 110,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "default",
+            "media": "portal-fulfillmentplan-default",
+            "src": "rebuild/partner-portal/fulfillmentplan-default-288.webp",
+            "width": 260,
+            "height": 341.015625,
+            "naturalWidth": 584,
+            "naturalHeight": 766,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "selected",
+            "media": "portal-fulfillmentplan-selected",
+            "src": "rebuild/partner-portal/fulfillmentplan-selected-288.webp",
+            "width": 260,
+            "height": 343.6875,
+            "naturalWidth": 584,
+            "naturalHeight": 772,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "unavailable",
+            "media": "portal-fulfillmentplan-unavailable",
+            "src": "rebuild/partner-portal/fulfillmentplan-unavailable-288.webp",
+            "width": 260,
+            "height": 336.5625,
+            "naturalWidth": 584,
+            "naturalHeight": 756,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Page",
+            "Pagetitle",
+            "32/42600",
+            "Orders"
+          ],
+          [
+            "Section",
+            "Sectiontitle",
+            "24/36600",
+            "Import"
+          ],
+          [
+            "Row",
+            "Linetitle",
+            "18/27600",
+            "Camera"
+          ],
+          [
+            "Body",
+            "Maintext",
+            "16/24400",
+            "Sourcerow"
+          ],
+          [
+            "Status",
+            "Statelabel",
+            "12/18600",
+            "VERIFIED"
+          ],
+          [
+            "Data",
+            "Tabulardata",
+            "11/16500",
+            "2412pcs"
+          ]
+        ],
+        "colors": [
+          "#2563ebAction",
+          "#ffffffWhite",
+          "#fafbfcSheet",
+          "#e7eaf0Ground",
+          "#0f172aInk",
+          "#475569Muted",
+          "#166534Success",
+          "#92400eWarning",
+          "#b91c1cError",
+          "#0369a1Info"
+        ],
+        "overflow": 0
+      },
+      "after": {
+        "height": 6888.984375,
+        "firstImageOffset": 660.734375,
+        "foundationAfterStates": true,
+        "states": [
+          {
+            "id": "ambiguous",
+            "media": "portal-resolutionrow-ambiguous",
+            "src": "rebuild/common/portal/resolutionrow-ambiguous-288.webp",
+            "width": 260,
+            "height": 302.734375,
+            "naturalWidth": 584,
+            "naturalHeight": 680,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "missing",
+            "media": "portal-resolutionrow-missing",
+            "src": "rebuild/common/portal/resolutionrow-missing-288.webp",
+            "width": 260,
+            "height": 286.703125,
+            "naturalWidth": 584,
+            "naturalHeight": 644,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "changed",
+            "media": "portal-resolutionrow-changed",
+            "src": "rebuild/partner-portal/resolutionrow-changed-288.webp",
+            "width": 260,
+            "height": 321.4375,
+            "naturalWidth": 584,
+            "naturalHeight": 722,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "confirmed-from-ambiguous",
+            "media": "portal-resolutionrow-confirmed-from-ambiguous",
+            "src": "rebuild/common/portal/resolutionrow-confirmed-from-ambiguous-288.webp",
+            "width": 260,
+            "height": 317.875,
+            "naturalWidth": 584,
+            "naturalHeight": 714,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "empty",
+            "media": "portal-fileupload-empty",
+            "src": "rebuild/common/portal/fileupload-empty-288.webp",
+            "width": 260,
+            "height": 228.828125,
+            "naturalWidth": 584,
+            "naturalHeight": 514,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "complete",
+            "media": "portal-fileupload-complete",
+            "src": "rebuild/common/portal/fileupload-complete-288.webp",
+            "width": 260,
+            "height": 164.71875,
+            "naturalWidth": 584,
+            "naturalHeight": 370,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "error",
+            "media": "portal-fileupload-error",
+            "src": "rebuild/common/portal/fileupload-error-288.webp",
+            "width": 260,
+            "height": 183.421875,
+            "naturalWidth": 584,
+            "naturalHeight": 412,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "verified",
+            "media": "portal-availability-verified",
+            "src": "rebuild/common/portal/availability-verified-288.webp",
+            "width": 170,
+            "height": 59.265625,
+            "naturalWidth": 304,
+            "naturalHeight": 106,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "stale",
+            "media": "portal-availability-stale",
+            "src": "rebuild/common/portal/availability-stale-288.webp",
+            "width": 184,
+            "height": 83.125,
+            "naturalWidth": 332,
+            "naturalHeight": 150,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "not-confirmed",
+            "media": "portal-availability-not-confirmed",
+            "src": "rebuild/common/portal/availability-not-confirmed-288.webp",
+            "width": 146,
+            "height": 62.734375,
+            "naturalWidth": 256,
+            "naturalHeight": 110,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "default",
+            "media": "portal-fulfillmentplan-default",
+            "src": "rebuild/partner-portal/fulfillmentplan-default-288.webp",
+            "width": 260,
+            "height": 341.015625,
+            "naturalWidth": 584,
+            "naturalHeight": 766,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "selected",
+            "media": "portal-fulfillmentplan-selected",
+            "src": "rebuild/partner-portal/fulfillmentplan-selected-288.webp",
+            "width": 260,
+            "height": 343.6875,
+            "naturalWidth": 584,
+            "naturalHeight": 772,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "unavailable",
+            "media": "portal-fulfillmentplan-unavailable",
+            "src": "rebuild/partner-portal/fulfillmentplan-unavailable-288.webp",
+            "width": 260,
+            "height": 336.5625,
+            "naturalWidth": 584,
+            "naturalHeight": 756,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Page",
+            "Pagetitle",
+            "32/42600",
+            "Orders"
+          ],
+          [
+            "Section",
+            "Sectiontitle",
+            "24/36600",
+            "Import"
+          ],
+          [
+            "Row",
+            "Linetitle",
+            "18/27600",
+            "Camera"
+          ],
+          [
+            "Body",
+            "Maintext",
+            "16/24400",
+            "Sourcerow"
+          ],
+          [
+            "Status",
+            "Statelabel",
+            "12/18600",
+            "VERIFIED"
+          ],
+          [
+            "Data",
+            "Tabulardata",
+            "11/16500",
+            "2412pcs"
+          ]
+        ],
+        "colors": [
+          "#2563ebAction",
+          "#ffffffWhite",
+          "#fafbfcSheet",
+          "#e7eaf0Ground",
+          "#0f172aInk",
+          "#475569Muted",
+          "#166534Success",
+          "#92400eWarning",
+          "#b91c1cError",
+          "#0369a1Info"
+        ],
+        "overflow": 0
+      }
+    },
+    {
+      "key": "en-390-learn",
+      "pass": true,
+      "errors": [],
+      "before": {
+        "height": 3314.890625,
+        "firstImageOffset": 1406.90625,
+        "foundationAfterStates": false,
+        "states": [
+          {
+            "id": "setup",
+            "media": "theme-setup",
+            "src": "rebuild/learn/theme-setup-mobile.webp",
+            "width": 260,
+            "height": 206.5625,
+            "naturalWidth": 584,
+            "naturalHeight": 464,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "project",
+            "media": "theme-project",
+            "src": "rebuild/learn/theme-project-mobile.webp",
+            "width": 260,
+            "height": 182.53125,
+            "naturalWidth": 584,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "handover",
+            "media": "theme-handover",
+            "src": "rebuild/learn/theme-handover-mobile.webp",
+            "width": 260,
+            "height": 182.53125,
+            "naturalWidth": 584,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "explore",
+            "media": "theme-explore",
+            "src": "rebuild/learn/theme-explore-mobile.webp",
+            "width": 260,
+            "height": 182.53125,
+            "naturalWidth": 584,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "version-date",
+            "media": "trust",
+            "src": "rebuild/learn/trust-mobile.webp",
+            "width": 260,
+            "height": 74.015625,
+            "naturalWidth": 576,
+            "naturalHeight": 164,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "position",
+            "media": "progress",
+            "src": "rebuild/learn/progress-mobile.webp",
+            "width": 260,
+            "height": 33.390625,
+            "naturalWidth": 576,
+            "naturalHeight": 74,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Display/4xl",
+            "Materialtitle",
+            "44/50.6700",
+            "Aa"
+          ],
+          [
+            "Heading/3xl",
+            "Sectionheading",
+            "32/43.2700",
+            "Aa"
+          ]
+        ],
+        "colors": [
+          "#0A66CESetup",
+          "#6D3EEAProject",
+          "#D6207AHandover",
+          "#0E9E86Explore",
+          "#3A4C66Neutral"
+        ],
+        "overflow": 0
+      },
+      "after": {
+        "height": 3274.25,
+        "firstImageOffset": 661.625,
+        "foundationAfterStates": true,
+        "states": [
+          {
+            "id": "setup",
+            "media": "theme-setup",
+            "src": "rebuild/learn/theme-setup-mobile.webp",
+            "width": 260,
+            "height": 206.5625,
+            "naturalWidth": 584,
+            "naturalHeight": 464,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "project",
+            "media": "theme-project",
+            "src": "rebuild/learn/theme-project-mobile.webp",
+            "width": 260,
+            "height": 182.53125,
+            "naturalWidth": 584,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "handover",
+            "media": "theme-handover",
+            "src": "rebuild/learn/theme-handover-mobile.webp",
+            "width": 260,
+            "height": 182.53125,
+            "naturalWidth": 584,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "explore",
+            "media": "theme-explore",
+            "src": "rebuild/learn/theme-explore-mobile.webp",
+            "width": 260,
+            "height": 182.53125,
+            "naturalWidth": 584,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "version-date",
+            "media": "trust",
+            "src": "rebuild/learn/trust-mobile.webp",
+            "width": 260,
+            "height": 74.015625,
+            "naturalWidth": 576,
+            "naturalHeight": 164,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "position",
+            "media": "progress",
+            "src": "rebuild/learn/progress-mobile.webp",
+            "width": 260,
+            "height": 33.390625,
+            "naturalWidth": 576,
+            "naturalHeight": 74,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Display/4xl",
+            "Materialtitle",
+            "44/50.6700",
+            "Aa"
+          ],
+          [
+            "Heading/3xl",
+            "Sectionheading",
+            "32/43.2700",
+            "Aa"
+          ]
+        ],
+        "colors": [
+          "#0A66CESetup",
+          "#6D3EEAProject",
+          "#D6207AHandover",
+          "#0E9E86Explore",
+          "#3A4C66Neutral"
+        ],
+        "overflow": 0
+      }
+    },
+    {
+      "key": "en-390-pawly",
+      "pass": true,
+      "errors": [],
+      "before": {
+        "height": 3349.5,
+        "firstImageOffset": 894.453125,
+        "foundationAfterStates": false,
+        "states": [
+          {
+            "id": "photo-pending",
+            "media": "photo-pending",
+            "src": "rebuild/pawly/states/photo-pending-288.webp",
+            "width": 260,
+            "height": 60.546875,
+            "naturalWidth": 584,
+            "naturalHeight": 136,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-local",
+            "media": "photo-local",
+            "src": "rebuild/pawly/states/photo-local-288.webp",
+            "width": 260,
+            "height": 81.015625,
+            "naturalWidth": 584,
+            "naturalHeight": 182,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-confirmed",
+            "media": "photo-confirmed",
+            "src": "rebuild/pawly/states/photo-confirmed-288.webp",
+            "width": 260,
+            "height": 63.21875,
+            "naturalWidth": 584,
+            "naturalHeight": 142,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-unavailable",
+            "media": "photo-unavailable",
+            "src": "rebuild/pawly/states/photo-unavailable-288.webp",
+            "width": 260,
+            "height": 101.5,
+            "naturalWidth": 584,
+            "naturalHeight": 228,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-done",
+            "media": "timeline-done",
+            "src": "rebuild/pawly/states/timeline-done-288.webp",
+            "width": 260,
+            "height": 53.421875,
+            "naturalWidth": 584,
+            "naturalHeight": 120,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-current",
+            "media": "timeline-current",
+            "src": "rebuild/pawly/states/timeline-current-288.webp",
+            "width": 260,
+            "height": 53.421875,
+            "naturalWidth": 584,
+            "naturalHeight": 120,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-pending",
+            "media": "timeline-pending",
+            "src": "rebuild/pawly/states/timeline-pending-288.webp",
+            "width": 260,
+            "height": 33.828125,
+            "naturalWidth": 584,
+            "naturalHeight": 76,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-photo",
+            "media": "timeline-photo",
+            "src": "rebuild/pawly/states/timeline-photo-288.webp",
+            "width": 260,
+            "height": 242.1875,
+            "naturalWidth": 584,
+            "naturalHeight": 544,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-hint",
+            "media": "note-hint",
+            "src": "rebuild/pawly/states/note-hint-288.webp",
+            "width": 260,
+            "height": 20.46875,
+            "naturalWidth": 584,
+            "naturalHeight": 46,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-warning",
+            "media": "note-warning",
+            "src": "rebuild/pawly/states/note-warning-288.webp",
+            "width": 260,
+            "height": 59.65625,
+            "naturalWidth": 584,
+            "naturalHeight": 134,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-disclosure",
+            "media": "note-disclosure",
+            "src": "rebuild/pawly/states/note-disclosure-288.webp",
+            "width": 260,
+            "height": 59.65625,
+            "naturalWidth": 584,
+            "naturalHeight": 134,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Body",
+            "Event",
+            "15/22.5500",
+            "Returnconfirmed"
+          ],
+          [
+            "Small",
+            "Proofcaption",
+            "13/19.5500",
+            "Pickup14:05"
+          ]
+        ],
+        "colors": [
+          "#2563EBAction",
+          "#FAF9F7Care context",
+          "#167A4CConfirmed event"
+        ],
+        "overflow": 0
+      },
+      "after": {
+        "height": 3299.875,
+        "firstImageOffset": 314.546875,
+        "foundationAfterStates": true,
+        "states": [
+          {
+            "id": "photo-pending",
+            "media": "photo-pending",
+            "src": "rebuild/pawly/states/photo-pending-288.webp",
+            "width": 260,
+            "height": 60.546875,
+            "naturalWidth": 584,
+            "naturalHeight": 136,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-local",
+            "media": "photo-local",
+            "src": "rebuild/pawly/states/photo-local-288.webp",
+            "width": 260,
+            "height": 81.015625,
+            "naturalWidth": 584,
+            "naturalHeight": 182,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-confirmed",
+            "media": "photo-confirmed",
+            "src": "rebuild/pawly/states/photo-confirmed-288.webp",
+            "width": 260,
+            "height": 63.21875,
+            "naturalWidth": 584,
+            "naturalHeight": 142,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-unavailable",
+            "media": "photo-unavailable",
+            "src": "rebuild/pawly/states/photo-unavailable-288.webp",
+            "width": 260,
+            "height": 101.5,
+            "naturalWidth": 584,
+            "naturalHeight": 228,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-done",
+            "media": "timeline-done",
+            "src": "rebuild/pawly/states/timeline-done-288.webp",
+            "width": 260,
+            "height": 53.421875,
+            "naturalWidth": 584,
+            "naturalHeight": 120,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-current",
+            "media": "timeline-current",
+            "src": "rebuild/pawly/states/timeline-current-288.webp",
+            "width": 260,
+            "height": 53.421875,
+            "naturalWidth": 584,
+            "naturalHeight": 120,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-pending",
+            "media": "timeline-pending",
+            "src": "rebuild/pawly/states/timeline-pending-288.webp",
+            "width": 260,
+            "height": 33.828125,
+            "naturalWidth": 584,
+            "naturalHeight": 76,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-photo",
+            "media": "timeline-photo",
+            "src": "rebuild/pawly/states/timeline-photo-288.webp",
+            "width": 260,
+            "height": 242.1875,
+            "naturalWidth": 584,
+            "naturalHeight": 544,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-hint",
+            "media": "note-hint",
+            "src": "rebuild/pawly/states/note-hint-288.webp",
+            "width": 260,
+            "height": 20.46875,
+            "naturalWidth": 584,
+            "naturalHeight": 46,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-warning",
+            "media": "note-warning",
+            "src": "rebuild/pawly/states/note-warning-288.webp",
+            "width": 260,
+            "height": 59.65625,
+            "naturalWidth": 584,
+            "naturalHeight": 134,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-disclosure",
+            "media": "note-disclosure",
+            "src": "rebuild/pawly/states/note-disclosure-288.webp",
+            "width": 260,
+            "height": 59.65625,
+            "naturalWidth": 584,
+            "naturalHeight": 134,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Body",
+            "Event",
+            "15/22.5500",
+            "Returnconfirmed"
+          ],
+          [
+            "Small",
+            "Proofcaption",
+            "13/19.5500",
+            "Pickup14:05"
+          ]
+        ],
+        "colors": [
+          "#2563EBAction",
+          "#FAF9F7Care context",
+          "#167A4CConfirmed event"
+        ],
+        "overflow": 0
+      }
+    },
+    {
+      "key": "ru-1440-partner-portal",
+      "pass": true,
+      "errors": [],
+      "before": {
+        "height": 4024.40625,
+        "firstImageOffset": 536.5625,
+        "foundationAfterStates": false,
+        "states": [
+          {
+            "id": "ambiguous",
+            "media": "portal-resolutionrow-ambiguous",
+            "src": "rebuild/common/portal/resolutionrow-ambiguous-288.webp",
+            "width": 264.796875,
+            "height": 308.3125,
+            "naturalWidth": 584,
+            "naturalHeight": 680,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "missing",
+            "media": "portal-resolutionrow-missing",
+            "src": "rebuild/common/portal/resolutionrow-missing-288.webp",
+            "width": 264.796875,
+            "height": 292,
+            "naturalWidth": 584,
+            "naturalHeight": 644,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "changed",
+            "media": "portal-resolutionrow-changed",
+            "src": "rebuild/partner-portal/resolutionrow-changed-288.webp",
+            "width": 264.796875,
+            "height": 327.359375,
+            "naturalWidth": 584,
+            "naturalHeight": 722,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "confirmed-from-ambiguous",
+            "media": "portal-resolutionrow-confirmed-from-ambiguous",
+            "src": "rebuild/common/portal/resolutionrow-confirmed-from-ambiguous-288.webp",
+            "width": 264.796875,
+            "height": 323.734375,
+            "naturalWidth": 584,
+            "naturalHeight": 714,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "empty",
+            "media": "portal-fileupload-empty",
+            "src": "rebuild/common/portal/fileupload-empty-288.webp",
+            "width": 264.8125,
+            "height": 233.0625,
+            "naturalWidth": 584,
+            "naturalHeight": 514,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "complete",
+            "media": "portal-fileupload-complete",
+            "src": "rebuild/common/portal/fileupload-complete-288.webp",
+            "width": 264.8125,
+            "height": 167.765625,
+            "naturalWidth": 584,
+            "naturalHeight": 370,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "error",
+            "media": "portal-fileupload-error",
+            "src": "rebuild/common/portal/fileupload-error-288.webp",
+            "width": 264.8125,
+            "height": 186.8125,
+            "naturalWidth": 584,
+            "naturalHeight": 412,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "verified",
+            "media": "portal-availability-verified",
+            "src": "rebuild/common/portal/availability-verified-288.webp",
+            "width": 154,
+            "height": 53.6875,
+            "naturalWidth": 304,
+            "naturalHeight": 106,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "stale",
+            "media": "portal-availability-stale",
+            "src": "rebuild/common/portal/availability-stale-288.webp",
+            "width": 168,
+            "height": 75.890625,
+            "naturalWidth": 332,
+            "naturalHeight": 150,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "not-confirmed",
+            "media": "portal-availability-not-confirmed",
+            "src": "rebuild/common/portal/availability-not-confirmed-288.webp",
+            "width": 130,
+            "height": 55.859375,
+            "naturalWidth": 256,
+            "naturalHeight": 110,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "default",
+            "media": "portal-fulfillmentplan-default",
+            "src": "rebuild/partner-portal/fulfillmentplan-default-288.webp",
+            "width": 264.8125,
+            "height": 347.328125,
+            "naturalWidth": 584,
+            "naturalHeight": 766,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "selected",
+            "media": "portal-fulfillmentplan-selected",
+            "src": "rebuild/partner-portal/fulfillmentplan-selected-288.webp",
+            "width": 264.8125,
+            "height": 350.046875,
+            "naturalWidth": 584,
+            "naturalHeight": 772,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "unavailable",
+            "media": "portal-fulfillmentplan-unavailable",
+            "src": "rebuild/partner-portal/fulfillmentplan-unavailable-288.webp",
+            "width": 264.8125,
+            "height": 342.796875,
+            "naturalWidth": 584,
+            "naturalHeight": 756,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Page",
+            "Заголовок",
+            "32/42600",
+            "Orders"
+          ],
+          [
+            "Section",
+            "Раздел",
+            "24/36600",
+            "Import"
+          ],
+          [
+            "Row",
+            "Строка",
+            "18/27600",
+            "Camera"
+          ],
+          [
+            "Body",
+            "Текст",
+            "16/24400",
+            "Sourcerow"
+          ],
+          [
+            "Status",
+            "Статус",
+            "12/18600",
+            "VERIFIED"
+          ],
+          [
+            "Data",
+            "Данные",
+            "11/16500",
+            "2412pcs"
+          ]
+        ],
+        "colors": [
+          "#2563ebДействие",
+          "#ffffffБелый",
+          "#fafbfcЛист",
+          "#e7eaf0Поле",
+          "#0f172aТекст",
+          "#475569Тише",
+          "#166534Успех",
+          "#92400eВнимание",
+          "#b91c1cОшибка",
+          "#0369a1Информация"
+        ],
+        "overflow": 0
+      },
+      "after": {
+        "height": 3740.625,
+        "firstImageOffset": 621.34375,
+        "foundationAfterStates": true,
+        "states": [
+          {
+            "id": "ambiguous",
+            "media": "portal-resolutionrow-ambiguous",
+            "src": "rebuild/common/portal/resolutionrow-ambiguous-288.webp",
+            "width": 292,
+            "height": 340,
+            "naturalWidth": 584,
+            "naturalHeight": 680,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "missing",
+            "media": "portal-resolutionrow-missing",
+            "src": "rebuild/common/portal/resolutionrow-missing-288.webp",
+            "width": 292,
+            "height": 322,
+            "naturalWidth": 584,
+            "naturalHeight": 644,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "changed",
+            "media": "portal-resolutionrow-changed",
+            "src": "rebuild/partner-portal/resolutionrow-changed-288.webp",
+            "width": 292,
+            "height": 361,
+            "naturalWidth": 584,
+            "naturalHeight": 722,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "confirmed-from-ambiguous",
+            "media": "portal-resolutionrow-confirmed-from-ambiguous",
+            "src": "rebuild/common/portal/resolutionrow-confirmed-from-ambiguous-288.webp",
+            "width": 292,
+            "height": 357,
+            "naturalWidth": 584,
+            "naturalHeight": 714,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "empty",
+            "media": "portal-fileupload-empty",
+            "src": "rebuild/common/portal/fileupload-empty-288.webp",
+            "width": 292,
+            "height": 257,
+            "naturalWidth": 584,
+            "naturalHeight": 514,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "complete",
+            "media": "portal-fileupload-complete",
+            "src": "rebuild/common/portal/fileupload-complete-288.webp",
+            "width": 292,
+            "height": 185,
+            "naturalWidth": 584,
+            "naturalHeight": 370,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "error",
+            "media": "portal-fileupload-error",
+            "src": "rebuild/common/portal/fileupload-error-288.webp",
+            "width": 292,
+            "height": 206,
+            "naturalWidth": 584,
+            "naturalHeight": 412,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "verified",
+            "media": "portal-availability-verified",
+            "src": "rebuild/common/portal/availability-verified-288.webp",
+            "width": 154,
+            "height": 53.6875,
+            "naturalWidth": 304,
+            "naturalHeight": 106,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "stale",
+            "media": "portal-availability-stale",
+            "src": "rebuild/common/portal/availability-stale-288.webp",
+            "width": 168,
+            "height": 75.890625,
+            "naturalWidth": 332,
+            "naturalHeight": 150,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "not-confirmed",
+            "media": "portal-availability-not-confirmed",
+            "src": "rebuild/common/portal/availability-not-confirmed-288.webp",
+            "width": 130,
+            "height": 55.859375,
+            "naturalWidth": 256,
+            "naturalHeight": 110,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "default",
+            "media": "portal-fulfillmentplan-default",
+            "src": "rebuild/partner-portal/fulfillmentplan-default-288.webp",
+            "width": 292,
+            "height": 383,
+            "naturalWidth": 584,
+            "naturalHeight": 766,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "selected",
+            "media": "portal-fulfillmentplan-selected",
+            "src": "rebuild/partner-portal/fulfillmentplan-selected-288.webp",
+            "width": 292,
+            "height": 386,
+            "naturalWidth": 584,
+            "naturalHeight": 772,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "unavailable",
+            "media": "portal-fulfillmentplan-unavailable",
+            "src": "rebuild/partner-portal/fulfillmentplan-unavailable-288.webp",
+            "width": 292,
+            "height": 378,
+            "naturalWidth": 584,
+            "naturalHeight": 756,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Page",
+            "Заголовок",
+            "32/42600",
+            "Orders"
+          ],
+          [
+            "Section",
+            "Раздел",
+            "24/36600",
+            "Import"
+          ],
+          [
+            "Row",
+            "Строка",
+            "18/27600",
+            "Camera"
+          ],
+          [
+            "Body",
+            "Текст",
+            "16/24400",
+            "Sourcerow"
+          ],
+          [
+            "Status",
+            "Статус",
+            "12/18600",
+            "VERIFIED"
+          ],
+          [
+            "Data",
+            "Данные",
+            "11/16500",
+            "2412pcs"
+          ]
+        ],
+        "colors": [
+          "#2563ebДействие",
+          "#ffffffБелый",
+          "#fafbfcЛист",
+          "#e7eaf0Поле",
+          "#0f172aТекст",
+          "#475569Тише",
+          "#166534Успех",
+          "#92400eВнимание",
+          "#b91c1cОшибка",
+          "#0369a1Информация"
+        ],
+        "overflow": 0
+      }
+    },
+    {
+      "key": "ru-1440-learn",
+      "pass": true,
+      "errors": [],
+      "before": {
+        "height": 1540.5625,
+        "firstImageOffset": 505.0625,
+        "foundationAfterStates": false,
+        "states": [
+          {
+            "id": "setup",
+            "media": "theme-setup",
+            "src": "rebuild/learn/theme-setup-desktop.webp",
+            "width": 264.796875,
+            "height": 194.40625,
+            "naturalWidth": 632,
+            "naturalHeight": 464,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "project",
+            "media": "theme-project",
+            "src": "rebuild/learn/theme-project-desktop.webp",
+            "width": 264.796875,
+            "height": 171.78125,
+            "naturalWidth": 632,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "handover",
+            "media": "theme-handover",
+            "src": "rebuild/learn/theme-handover-desktop.webp",
+            "width": 264.8125,
+            "height": 171.78125,
+            "naturalWidth": 632,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "explore",
+            "media": "theme-explore",
+            "src": "rebuild/learn/theme-explore-desktop.webp",
+            "width": 264.8125,
+            "height": 171.78125,
+            "naturalWidth": 632,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "version-date",
+            "media": "trust",
+            "src": "rebuild/learn/trust-desktop.webp",
+            "width": 264.796875,
+            "height": 75.390625,
+            "naturalWidth": 576,
+            "naturalHeight": 164,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "position",
+            "media": "progress",
+            "src": "rebuild/learn/progress-desktop.webp",
+            "width": 264.8125,
+            "height": 34.015625,
+            "naturalWidth": 576,
+            "naturalHeight": 74,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Display/4xl",
+            "Названиематериала",
+            "44/50.6700",
+            "Аа"
+          ],
+          [
+            "Heading/3xl",
+            "Разделматериала",
+            "32/43.2700",
+            "Аа"
+          ]
+        ],
+        "colors": [
+          "#0A66CESetup",
+          "#6D3EEAProject",
+          "#D6207AHandover",
+          "#0E9E86Explore",
+          "#3A4C66Neutral"
+        ],
+        "overflow": 0
+      },
+      "after": {
+        "height": 2200.3125,
+        "firstImageOffset": 589.84375,
+        "foundationAfterStates": true,
+        "states": [
+          {
+            "id": "setup",
+            "media": "theme-setup",
+            "src": "rebuild/learn/theme-setup-desktop.webp",
+            "width": 316,
+            "height": 232,
+            "naturalWidth": 632,
+            "naturalHeight": 464,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "project",
+            "media": "theme-project",
+            "src": "rebuild/learn/theme-project-desktop.webp",
+            "width": 316,
+            "height": 205,
+            "naturalWidth": 632,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "handover",
+            "media": "theme-handover",
+            "src": "rebuild/learn/theme-handover-desktop.webp",
+            "width": 316,
+            "height": 205,
+            "naturalWidth": 632,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "explore",
+            "media": "theme-explore",
+            "src": "rebuild/learn/theme-explore-desktop.webp",
+            "width": 316,
+            "height": 205,
+            "naturalWidth": 632,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "version-date",
+            "media": "trust",
+            "src": "rebuild/learn/trust-desktop.webp",
+            "width": 288,
+            "height": 82,
+            "naturalWidth": 576,
+            "naturalHeight": 164,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "position",
+            "media": "progress",
+            "src": "rebuild/learn/progress-desktop.webp",
+            "width": 288,
+            "height": 37,
+            "naturalWidth": 576,
+            "naturalHeight": 74,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Display/4xl",
+            "Названиематериала",
+            "44/50.6700",
+            "Аа"
+          ],
+          [
+            "Heading/3xl",
+            "Разделматериала",
+            "32/43.2700",
+            "Аа"
+          ]
+        ],
+        "colors": [
+          "#0A66CESetup",
+          "#6D3EEAProject",
+          "#D6207AHandover",
+          "#0E9E86Explore",
+          "#3A4C66Neutral"
+        ],
+        "overflow": 0
+      }
+    },
+    {
+      "key": "ru-1440-pawly",
+      "pass": true,
+      "errors": [],
+      "before": {
+        "height": 1932.734375,
+        "firstImageOffset": 275.375,
+        "foundationAfterStates": false,
+        "states": [
+          {
+            "id": "photo-pending",
+            "media": "photo-pending",
+            "src": "rebuild/pawly/states/photo-pending-343.webp",
+            "width": 264.796875,
+            "height": 51.890625,
+            "naturalWidth": 694,
+            "naturalHeight": 136,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-local",
+            "media": "photo-local",
+            "src": "rebuild/pawly/states/photo-local-343.webp",
+            "width": 264.796875,
+            "height": 54.171875,
+            "naturalWidth": 694,
+            "naturalHeight": 142,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-confirmed",
+            "media": "photo-confirmed",
+            "src": "rebuild/pawly/states/photo-confirmed-343.webp",
+            "width": 264.796875,
+            "height": 54.171875,
+            "naturalWidth": 694,
+            "naturalHeight": 142,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-unavailable",
+            "media": "photo-unavailable",
+            "src": "rebuild/pawly/states/photo-unavailable-343.webp",
+            "width": 264.796875,
+            "height": 86.984375,
+            "naturalWidth": 694,
+            "naturalHeight": 228,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-done",
+            "media": "timeline-done",
+            "src": "rebuild/pawly/states/timeline-done-343.webp",
+            "width": 264.8125,
+            "height": 45.78125,
+            "naturalWidth": 694,
+            "naturalHeight": 120,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-current",
+            "media": "timeline-current",
+            "src": "rebuild/pawly/states/timeline-current-343.webp",
+            "width": 264.8125,
+            "height": 45.78125,
+            "naturalWidth": 694,
+            "naturalHeight": 120,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-pending",
+            "media": "timeline-pending",
+            "src": "rebuild/pawly/states/timeline-pending-343.webp",
+            "width": 264.8125,
+            "height": 28.984375,
+            "naturalWidth": 694,
+            "naturalHeight": 76,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-photo",
+            "media": "timeline-photo",
+            "src": "rebuild/pawly/states/timeline-photo-343.webp",
+            "width": 264.8125,
+            "height": 207.5625,
+            "naturalWidth": 694,
+            "naturalHeight": 544,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-hint",
+            "media": "note-hint",
+            "src": "rebuild/pawly/states/note-hint-343.webp",
+            "width": 347,
+            "height": 23,
+            "naturalWidth": 694,
+            "naturalHeight": 46,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-warning",
+            "media": "note-warning",
+            "src": "rebuild/pawly/states/note-warning-343.webp",
+            "width": 347,
+            "height": 67,
+            "naturalWidth": 694,
+            "naturalHeight": 134,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-disclosure",
+            "media": "note-disclosure",
+            "src": "rebuild/pawly/states/note-disclosure-343.webp",
+            "width": 347,
+            "height": 67,
+            "naturalWidth": 694,
+            "naturalHeight": 134,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Body",
+            "Событие",
+            "15/22.5500",
+            "Returnconfirmed"
+          ],
+          [
+            "Small",
+            "Подписьфото",
+            "13/19.5500",
+            "Pickup14:05"
+          ]
+        ],
+        "colors": [
+          "#2563EBДействие",
+          "#FAF9F7Контекст заботы",
+          "#167A4CПодтверждённое событие"
+        ],
+        "overflow": 0
+      },
+      "after": {
+        "height": 2438.265625,
+        "firstImageOffset": 360.15625,
+        "foundationAfterStates": true,
+        "states": [
+          {
+            "id": "photo-pending",
+            "media": "photo-pending",
+            "src": "rebuild/pawly/states/photo-pending-343.webp",
+            "width": 347,
+            "height": 68,
+            "naturalWidth": 694,
+            "naturalHeight": 136,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-local",
+            "media": "photo-local",
+            "src": "rebuild/pawly/states/photo-local-343.webp",
+            "width": 347,
+            "height": 71,
+            "naturalWidth": 694,
+            "naturalHeight": 142,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-confirmed",
+            "media": "photo-confirmed",
+            "src": "rebuild/pawly/states/photo-confirmed-343.webp",
+            "width": 347,
+            "height": 71,
+            "naturalWidth": 694,
+            "naturalHeight": 142,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-unavailable",
+            "media": "photo-unavailable",
+            "src": "rebuild/pawly/states/photo-unavailable-343.webp",
+            "width": 347,
+            "height": 114,
+            "naturalWidth": 694,
+            "naturalHeight": 228,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-done",
+            "media": "timeline-done",
+            "src": "rebuild/pawly/states/timeline-done-343.webp",
+            "width": 347,
+            "height": 60,
+            "naturalWidth": 694,
+            "naturalHeight": 120,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-current",
+            "media": "timeline-current",
+            "src": "rebuild/pawly/states/timeline-current-343.webp",
+            "width": 347,
+            "height": 60,
+            "naturalWidth": 694,
+            "naturalHeight": 120,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-pending",
+            "media": "timeline-pending",
+            "src": "rebuild/pawly/states/timeline-pending-343.webp",
+            "width": 347,
+            "height": 38,
+            "naturalWidth": 694,
+            "naturalHeight": 76,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-photo",
+            "media": "timeline-photo",
+            "src": "rebuild/pawly/states/timeline-photo-343.webp",
+            "width": 347,
+            "height": 272,
+            "naturalWidth": 694,
+            "naturalHeight": 544,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-hint",
+            "media": "note-hint",
+            "src": "rebuild/pawly/states/note-hint-343.webp",
+            "width": 347,
+            "height": 23,
+            "naturalWidth": 694,
+            "naturalHeight": 46,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-warning",
+            "media": "note-warning",
+            "src": "rebuild/pawly/states/note-warning-343.webp",
+            "width": 347,
+            "height": 67,
+            "naturalWidth": 694,
+            "naturalHeight": 134,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-disclosure",
+            "media": "note-disclosure",
+            "src": "rebuild/pawly/states/note-disclosure-343.webp",
+            "width": 347,
+            "height": 67,
+            "naturalWidth": 694,
+            "naturalHeight": 134,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Body",
+            "Событие",
+            "15/22.5500",
+            "Returnconfirmed"
+          ],
+          [
+            "Small",
+            "Подписьфото",
+            "13/19.5500",
+            "Pickup14:05"
+          ]
+        ],
+        "colors": [
+          "#2563EBДействие",
+          "#FAF9F7Контекст заботы",
+          "#167A4CПодтверждённое событие"
+        ],
+        "overflow": 0
+      }
+    },
+    {
+      "key": "ru-390-partner-portal",
+      "pass": true,
+      "errors": [],
+      "before": {
+        "height": 7417.015625,
+        "firstImageOffset": 2396.4375,
+        "foundationAfterStates": false,
+        "states": [
+          {
+            "id": "ambiguous",
+            "media": "portal-resolutionrow-ambiguous",
+            "src": "rebuild/common/portal/resolutionrow-ambiguous-288.webp",
+            "width": 260,
+            "height": 302.734375,
+            "naturalWidth": 584,
+            "naturalHeight": 680,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "missing",
+            "media": "portal-resolutionrow-missing",
+            "src": "rebuild/common/portal/resolutionrow-missing-288.webp",
+            "width": 260,
+            "height": 286.703125,
+            "naturalWidth": 584,
+            "naturalHeight": 644,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "changed",
+            "media": "portal-resolutionrow-changed",
+            "src": "rebuild/partner-portal/resolutionrow-changed-288.webp",
+            "width": 260,
+            "height": 321.4375,
+            "naturalWidth": 584,
+            "naturalHeight": 722,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "confirmed-from-ambiguous",
+            "media": "portal-resolutionrow-confirmed-from-ambiguous",
+            "src": "rebuild/common/portal/resolutionrow-confirmed-from-ambiguous-288.webp",
+            "width": 260,
+            "height": 317.875,
+            "naturalWidth": 584,
+            "naturalHeight": 714,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "empty",
+            "media": "portal-fileupload-empty",
+            "src": "rebuild/common/portal/fileupload-empty-288.webp",
+            "width": 260,
+            "height": 228.828125,
+            "naturalWidth": 584,
+            "naturalHeight": 514,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "complete",
+            "media": "portal-fileupload-complete",
+            "src": "rebuild/common/portal/fileupload-complete-288.webp",
+            "width": 260,
+            "height": 164.71875,
+            "naturalWidth": 584,
+            "naturalHeight": 370,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "error",
+            "media": "portal-fileupload-error",
+            "src": "rebuild/common/portal/fileupload-error-288.webp",
+            "width": 260,
+            "height": 183.421875,
+            "naturalWidth": 584,
+            "naturalHeight": 412,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "verified",
+            "media": "portal-availability-verified",
+            "src": "rebuild/common/portal/availability-verified-288.webp",
+            "width": 170,
+            "height": 59.265625,
+            "naturalWidth": 304,
+            "naturalHeight": 106,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "stale",
+            "media": "portal-availability-stale",
+            "src": "rebuild/common/portal/availability-stale-288.webp",
+            "width": 184,
+            "height": 83.125,
+            "naturalWidth": 332,
+            "naturalHeight": 150,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "not-confirmed",
+            "media": "portal-availability-not-confirmed",
+            "src": "rebuild/common/portal/availability-not-confirmed-288.webp",
+            "width": 146,
+            "height": 62.734375,
+            "naturalWidth": 256,
+            "naturalHeight": 110,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "default",
+            "media": "portal-fulfillmentplan-default",
+            "src": "rebuild/partner-portal/fulfillmentplan-default-288.webp",
+            "width": 260,
+            "height": 341.015625,
+            "naturalWidth": 584,
+            "naturalHeight": 766,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "selected",
+            "media": "portal-fulfillmentplan-selected",
+            "src": "rebuild/partner-portal/fulfillmentplan-selected-288.webp",
+            "width": 260,
+            "height": 343.6875,
+            "naturalWidth": 584,
+            "naturalHeight": 772,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "unavailable",
+            "media": "portal-fulfillmentplan-unavailable",
+            "src": "rebuild/partner-portal/fulfillmentplan-unavailable-288.webp",
+            "width": 260,
+            "height": 336.5625,
+            "naturalWidth": 584,
+            "naturalHeight": 756,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Page",
+            "Заголовок",
+            "32/42600",
+            "Orders"
+          ],
+          [
+            "Section",
+            "Раздел",
+            "24/36600",
+            "Import"
+          ],
+          [
+            "Row",
+            "Строка",
+            "18/27600",
+            "Camera"
+          ],
+          [
+            "Body",
+            "Текст",
+            "16/24400",
+            "Sourcerow"
+          ],
+          [
+            "Status",
+            "Статус",
+            "12/18600",
+            "VERIFIED"
+          ],
+          [
+            "Data",
+            "Данные",
+            "11/16500",
+            "2412pcs"
+          ]
+        ],
+        "colors": [
+          "#2563ebДействие",
+          "#ffffffБелый",
+          "#fafbfcЛист",
+          "#e7eaf0Поле",
+          "#0f172aТекст",
+          "#475569Тише",
+          "#166534Успех",
+          "#92400eВнимание",
+          "#b91c1cОшибка",
+          "#0369a1Информация"
+        ],
+        "overflow": 0
+      },
+      "after": {
+        "height": 6951.984375,
+        "firstImageOffset": 723.734375,
+        "foundationAfterStates": true,
+        "states": [
+          {
+            "id": "ambiguous",
+            "media": "portal-resolutionrow-ambiguous",
+            "src": "rebuild/common/portal/resolutionrow-ambiguous-288.webp",
+            "width": 260,
+            "height": 302.734375,
+            "naturalWidth": 584,
+            "naturalHeight": 680,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "missing",
+            "media": "portal-resolutionrow-missing",
+            "src": "rebuild/common/portal/resolutionrow-missing-288.webp",
+            "width": 260,
+            "height": 286.703125,
+            "naturalWidth": 584,
+            "naturalHeight": 644,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "changed",
+            "media": "portal-resolutionrow-changed",
+            "src": "rebuild/partner-portal/resolutionrow-changed-288.webp",
+            "width": 260,
+            "height": 321.4375,
+            "naturalWidth": 584,
+            "naturalHeight": 722,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "confirmed-from-ambiguous",
+            "media": "portal-resolutionrow-confirmed-from-ambiguous",
+            "src": "rebuild/common/portal/resolutionrow-confirmed-from-ambiguous-288.webp",
+            "width": 260,
+            "height": 317.875,
+            "naturalWidth": 584,
+            "naturalHeight": 714,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "empty",
+            "media": "portal-fileupload-empty",
+            "src": "rebuild/common/portal/fileupload-empty-288.webp",
+            "width": 260,
+            "height": 228.828125,
+            "naturalWidth": 584,
+            "naturalHeight": 514,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "complete",
+            "media": "portal-fileupload-complete",
+            "src": "rebuild/common/portal/fileupload-complete-288.webp",
+            "width": 260,
+            "height": 164.71875,
+            "naturalWidth": 584,
+            "naturalHeight": 370,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "error",
+            "media": "portal-fileupload-error",
+            "src": "rebuild/common/portal/fileupload-error-288.webp",
+            "width": 260,
+            "height": 183.421875,
+            "naturalWidth": 584,
+            "naturalHeight": 412,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "verified",
+            "media": "portal-availability-verified",
+            "src": "rebuild/common/portal/availability-verified-288.webp",
+            "width": 170,
+            "height": 59.265625,
+            "naturalWidth": 304,
+            "naturalHeight": 106,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "stale",
+            "media": "portal-availability-stale",
+            "src": "rebuild/common/portal/availability-stale-288.webp",
+            "width": 184,
+            "height": 83.125,
+            "naturalWidth": 332,
+            "naturalHeight": 150,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "not-confirmed",
+            "media": "portal-availability-not-confirmed",
+            "src": "rebuild/common/portal/availability-not-confirmed-288.webp",
+            "width": 146,
+            "height": 62.734375,
+            "naturalWidth": 256,
+            "naturalHeight": 110,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "default",
+            "media": "portal-fulfillmentplan-default",
+            "src": "rebuild/partner-portal/fulfillmentplan-default-288.webp",
+            "width": 260,
+            "height": 341.015625,
+            "naturalWidth": 584,
+            "naturalHeight": 766,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "selected",
+            "media": "portal-fulfillmentplan-selected",
+            "src": "rebuild/partner-portal/fulfillmentplan-selected-288.webp",
+            "width": 260,
+            "height": 343.6875,
+            "naturalWidth": 584,
+            "naturalHeight": 772,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "unavailable",
+            "media": "portal-fulfillmentplan-unavailable",
+            "src": "rebuild/partner-portal/fulfillmentplan-unavailable-288.webp",
+            "width": 260,
+            "height": 336.5625,
+            "naturalWidth": 584,
+            "naturalHeight": 756,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Page",
+            "Заголовок",
+            "32/42600",
+            "Orders"
+          ],
+          [
+            "Section",
+            "Раздел",
+            "24/36600",
+            "Import"
+          ],
+          [
+            "Row",
+            "Строка",
+            "18/27600",
+            "Camera"
+          ],
+          [
+            "Body",
+            "Текст",
+            "16/24400",
+            "Sourcerow"
+          ],
+          [
+            "Status",
+            "Статус",
+            "12/18600",
+            "VERIFIED"
+          ],
+          [
+            "Data",
+            "Данные",
+            "11/16500",
+            "2412pcs"
+          ]
+        ],
+        "colors": [
+          "#2563ebДействие",
+          "#ffffffБелый",
+          "#fafbfcЛист",
+          "#e7eaf0Поле",
+          "#0f172aТекст",
+          "#475569Тише",
+          "#166534Успех",
+          "#92400eВнимание",
+          "#b91c1cОшибка",
+          "#0369a1Информация"
+        ],
+        "overflow": 0
+      }
+    },
+    {
+      "key": "ru-390-learn",
+      "pass": true,
+      "errors": [],
+      "before": {
+        "height": 3346.390625,
+        "firstImageOffset": 1438.40625,
+        "foundationAfterStates": false,
+        "states": [
+          {
+            "id": "setup",
+            "media": "theme-setup",
+            "src": "rebuild/learn/theme-setup-mobile.webp",
+            "width": 260,
+            "height": 206.5625,
+            "naturalWidth": 584,
+            "naturalHeight": 464,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "project",
+            "media": "theme-project",
+            "src": "rebuild/learn/theme-project-mobile.webp",
+            "width": 260,
+            "height": 182.53125,
+            "naturalWidth": 584,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "handover",
+            "media": "theme-handover",
+            "src": "rebuild/learn/theme-handover-mobile.webp",
+            "width": 260,
+            "height": 182.53125,
+            "naturalWidth": 584,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "explore",
+            "media": "theme-explore",
+            "src": "rebuild/learn/theme-explore-mobile.webp",
+            "width": 260,
+            "height": 182.53125,
+            "naturalWidth": 584,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "version-date",
+            "media": "trust",
+            "src": "rebuild/learn/trust-mobile.webp",
+            "width": 260,
+            "height": 74.015625,
+            "naturalWidth": 576,
+            "naturalHeight": 164,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "position",
+            "media": "progress",
+            "src": "rebuild/learn/progress-mobile.webp",
+            "width": 260,
+            "height": 33.390625,
+            "naturalWidth": 576,
+            "naturalHeight": 74,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Display/4xl",
+            "Названиематериала",
+            "44/50.6700",
+            "Аа"
+          ],
+          [
+            "Heading/3xl",
+            "Разделматериала",
+            "32/43.2700",
+            "Аа"
+          ]
+        ],
+        "colors": [
+          "#0A66CESetup",
+          "#6D3EEAProject",
+          "#D6207AHandover",
+          "#0E9E86Explore",
+          "#3A4C66Neutral"
+        ],
+        "overflow": 0
+      },
+      "after": {
+        "height": 3305.75,
+        "firstImageOffset": 693.125,
+        "foundationAfterStates": true,
+        "states": [
+          {
+            "id": "setup",
+            "media": "theme-setup",
+            "src": "rebuild/learn/theme-setup-mobile.webp",
+            "width": 260,
+            "height": 206.5625,
+            "naturalWidth": 584,
+            "naturalHeight": 464,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "project",
+            "media": "theme-project",
+            "src": "rebuild/learn/theme-project-mobile.webp",
+            "width": 260,
+            "height": 182.53125,
+            "naturalWidth": 584,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "handover",
+            "media": "theme-handover",
+            "src": "rebuild/learn/theme-handover-mobile.webp",
+            "width": 260,
+            "height": 182.53125,
+            "naturalWidth": 584,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "explore",
+            "media": "theme-explore",
+            "src": "rebuild/learn/theme-explore-mobile.webp",
+            "width": 260,
+            "height": 182.53125,
+            "naturalWidth": 584,
+            "naturalHeight": 410,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "version-date",
+            "media": "trust",
+            "src": "rebuild/learn/trust-mobile.webp",
+            "width": 260,
+            "height": 74.015625,
+            "naturalWidth": 576,
+            "naturalHeight": 164,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "position",
+            "media": "progress",
+            "src": "rebuild/learn/progress-mobile.webp",
+            "width": 260,
+            "height": 33.390625,
+            "naturalWidth": 576,
+            "naturalHeight": 74,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Display/4xl",
+            "Названиематериала",
+            "44/50.6700",
+            "Аа"
+          ],
+          [
+            "Heading/3xl",
+            "Разделматериала",
+            "32/43.2700",
+            "Аа"
+          ]
+        ],
+        "colors": [
+          "#0A66CESetup",
+          "#6D3EEAProject",
+          "#D6207AHandover",
+          "#0E9E86Explore",
+          "#3A4C66Neutral"
+        ],
+        "overflow": 0
+      }
+    },
+    {
+      "key": "ru-390-pawly",
+      "pass": true,
+      "errors": [],
+      "before": {
+        "height": 3394.28125,
+        "firstImageOffset": 916.84375,
+        "foundationAfterStates": false,
+        "states": [
+          {
+            "id": "photo-pending",
+            "media": "photo-pending",
+            "src": "rebuild/pawly/states/photo-pending-288.webp",
+            "width": 260,
+            "height": 60.546875,
+            "naturalWidth": 584,
+            "naturalHeight": 136,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-local",
+            "media": "photo-local",
+            "src": "rebuild/pawly/states/photo-local-288.webp",
+            "width": 260,
+            "height": 81.015625,
+            "naturalWidth": 584,
+            "naturalHeight": 182,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-confirmed",
+            "media": "photo-confirmed",
+            "src": "rebuild/pawly/states/photo-confirmed-288.webp",
+            "width": 260,
+            "height": 63.21875,
+            "naturalWidth": 584,
+            "naturalHeight": 142,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-unavailable",
+            "media": "photo-unavailable",
+            "src": "rebuild/pawly/states/photo-unavailable-288.webp",
+            "width": 260,
+            "height": 101.5,
+            "naturalWidth": 584,
+            "naturalHeight": 228,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-done",
+            "media": "timeline-done",
+            "src": "rebuild/pawly/states/timeline-done-288.webp",
+            "width": 260,
+            "height": 53.421875,
+            "naturalWidth": 584,
+            "naturalHeight": 120,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-current",
+            "media": "timeline-current",
+            "src": "rebuild/pawly/states/timeline-current-288.webp",
+            "width": 260,
+            "height": 53.421875,
+            "naturalWidth": 584,
+            "naturalHeight": 120,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-pending",
+            "media": "timeline-pending",
+            "src": "rebuild/pawly/states/timeline-pending-288.webp",
+            "width": 260,
+            "height": 33.828125,
+            "naturalWidth": 584,
+            "naturalHeight": 76,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-photo",
+            "media": "timeline-photo",
+            "src": "rebuild/pawly/states/timeline-photo-288.webp",
+            "width": 260,
+            "height": 242.1875,
+            "naturalWidth": 584,
+            "naturalHeight": 544,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-hint",
+            "media": "note-hint",
+            "src": "rebuild/pawly/states/note-hint-288.webp",
+            "width": 260,
+            "height": 20.46875,
+            "naturalWidth": 584,
+            "naturalHeight": 46,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-warning",
+            "media": "note-warning",
+            "src": "rebuild/pawly/states/note-warning-288.webp",
+            "width": 260,
+            "height": 59.65625,
+            "naturalWidth": 584,
+            "naturalHeight": 134,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-disclosure",
+            "media": "note-disclosure",
+            "src": "rebuild/pawly/states/note-disclosure-288.webp",
+            "width": 260,
+            "height": 59.65625,
+            "naturalWidth": 584,
+            "naturalHeight": 134,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Body",
+            "Событие",
+            "15/22.5500",
+            "Returnconfirmed"
+          ],
+          [
+            "Small",
+            "Подписьфото",
+            "13/19.5500",
+            "Pickup14:05"
+          ]
+        ],
+        "colors": [
+          "#2563EBДействие",
+          "#FAF9F7Контекст заботы",
+          "#167A4CПодтверждённое событие"
+        ],
+        "overflow": 0
+      },
+      "after": {
+        "height": 3344.65625,
+        "firstImageOffset": 314.546875,
+        "foundationAfterStates": true,
+        "states": [
+          {
+            "id": "photo-pending",
+            "media": "photo-pending",
+            "src": "rebuild/pawly/states/photo-pending-288.webp",
+            "width": 260,
+            "height": 60.546875,
+            "naturalWidth": 584,
+            "naturalHeight": 136,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-local",
+            "media": "photo-local",
+            "src": "rebuild/pawly/states/photo-local-288.webp",
+            "width": 260,
+            "height": 81.015625,
+            "naturalWidth": 584,
+            "naturalHeight": 182,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-confirmed",
+            "media": "photo-confirmed",
+            "src": "rebuild/pawly/states/photo-confirmed-288.webp",
+            "width": 260,
+            "height": 63.21875,
+            "naturalWidth": 584,
+            "naturalHeight": 142,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "photo-unavailable",
+            "media": "photo-unavailable",
+            "src": "rebuild/pawly/states/photo-unavailable-288.webp",
+            "width": 260,
+            "height": 101.5,
+            "naturalWidth": 584,
+            "naturalHeight": 228,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-done",
+            "media": "timeline-done",
+            "src": "rebuild/pawly/states/timeline-done-288.webp",
+            "width": 260,
+            "height": 53.421875,
+            "naturalWidth": 584,
+            "naturalHeight": 120,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-current",
+            "media": "timeline-current",
+            "src": "rebuild/pawly/states/timeline-current-288.webp",
+            "width": 260,
+            "height": 53.421875,
+            "naturalWidth": 584,
+            "naturalHeight": 120,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-pending",
+            "media": "timeline-pending",
+            "src": "rebuild/pawly/states/timeline-pending-288.webp",
+            "width": 260,
+            "height": 33.828125,
+            "naturalWidth": 584,
+            "naturalHeight": 76,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "timeline-photo",
+            "media": "timeline-photo",
+            "src": "rebuild/pawly/states/timeline-photo-288.webp",
+            "width": 260,
+            "height": 242.1875,
+            "naturalWidth": 584,
+            "naturalHeight": 544,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-hint",
+            "media": "note-hint",
+            "src": "rebuild/pawly/states/note-hint-288.webp",
+            "width": 260,
+            "height": 20.46875,
+            "naturalWidth": 584,
+            "naturalHeight": 46,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-warning",
+            "media": "note-warning",
+            "src": "rebuild/pawly/states/note-warning-288.webp",
+            "width": 260,
+            "height": 59.65625,
+            "naturalWidth": 584,
+            "naturalHeight": 134,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          },
+          {
+            "id": "note-disclosure",
+            "media": "note-disclosure",
+            "src": "rebuild/pawly/states/note-disclosure-288.webp",
+            "width": 260,
+            "height": 59.65625,
+            "naturalWidth": 584,
+            "naturalHeight": 134,
+            "fit": "contain",
+            "clip": "none",
+            "inside": true
+          }
+        ],
+        "type": [
+          [
+            "Body",
+            "Событие",
+            "15/22.5500",
+            "Returnconfirmed"
+          ],
+          [
+            "Small",
+            "Подписьфото",
+            "13/19.5500",
+            "Pickup14:05"
+          ]
+        ],
+        "colors": [
+          "#2563EBДействие",
+          "#FAF9F7Контекст заботы",
+          "#167A4CПодтверждённое событие"
+        ],
+        "overflow": 0
+      }
+    },
+    {
+      "key": "en-1440-home-full",
+      "pass": true,
+      "errors": [],
+      "observations": [
+        {
+          "id": "work-agent-ops-console",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/agent-ops-console"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/agent-ops-console"
+            }
+          ]
+        },
+        {
+          "id": "work-partner-portal",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/partner-portal"
+            }
+          ]
+        },
+        {
+          "id": "work-learn",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            }
+          ]
+        },
+        {
+          "id": "work-vet-clinic",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            }
+          ]
+        },
+        {
+          "id": "work-pawly",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/pawly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "en-390-home-full",
+      "pass": true,
+      "errors": [],
+      "observations": [
+        {
+          "id": "work-agent-ops-console",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/agent-ops-console"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/agent-ops-console"
+            }
+          ]
+        },
+        {
+          "id": "work-partner-portal",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/partner-portal"
+            }
+          ]
+        },
+        {
+          "id": "work-learn",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            }
+          ]
+        },
+        {
+          "id": "work-vet-clinic",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            }
+          ]
+        },
+        {
+          "id": "work-pawly",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/pawly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "ru-1440-home-full",
+      "pass": true,
+      "errors": [],
+      "observations": [
+        {
+          "id": "work-agent-ops-console",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/agent-ops-console"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/agent-ops-console"
+            }
+          ]
+        },
+        {
+          "id": "work-partner-portal",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/partner-portal"
+            }
+          ]
+        },
+        {
+          "id": "work-learn",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            }
+          ]
+        },
+        {
+          "id": "work-vet-clinic",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            }
+          ]
+        },
+        {
+          "id": "work-pawly",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/pawly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "ru-390-home-full",
+      "pass": true,
+      "errors": [],
+      "observations": [
+        {
+          "id": "work-agent-ops-console",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/agent-ops-console"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/agent-ops-console"
+            }
+          ]
+        },
+        {
+          "id": "work-partner-portal",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/partner-portal"
+            }
+          ]
+        },
+        {
+          "id": "work-learn",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            }
+          ]
+        },
+        {
+          "id": "work-vet-clinic",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            }
+          ]
+        },
+        {
+          "id": "work-pawly",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/pawly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "en-1440-home-reduce",
+      "pass": true,
+      "errors": [],
+      "observations": [
+        {
+          "id": "work-agent-ops-console",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/agent-ops-console"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/agent-ops-console"
+            }
+          ]
+        },
+        {
+          "id": "work-partner-portal",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/partner-portal"
+            }
+          ]
+        },
+        {
+          "id": "work-learn",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            }
+          ]
+        },
+        {
+          "id": "work-vet-clinic",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            }
+          ]
+        },
+        {
+          "id": "work-pawly",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/pawly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "en-390-home-reduce",
+      "pass": true,
+      "errors": [],
+      "observations": [
+        {
+          "id": "work-agent-ops-console",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/agent-ops-console"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/agent-ops-console"
+            }
+          ]
+        },
+        {
+          "id": "work-partner-portal",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/partner-portal"
+            }
+          ]
+        },
+        {
+          "id": "work-learn",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            }
+          ]
+        },
+        {
+          "id": "work-vet-clinic",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            }
+          ]
+        },
+        {
+          "id": "work-pawly",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/pawly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "ru-1440-home-reduce",
+      "pass": true,
+      "errors": [],
+      "observations": [
+        {
+          "id": "work-agent-ops-console",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/agent-ops-console"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/agent-ops-console"
+            }
+          ]
+        },
+        {
+          "id": "work-partner-portal",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/partner-portal"
+            }
+          ]
+        },
+        {
+          "id": "work-learn",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            }
+          ]
+        },
+        {
+          "id": "work-vet-clinic",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            }
+          ]
+        },
+        {
+          "id": "work-pawly",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/pawly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "ru-390-home-reduce",
+      "pass": true,
+      "errors": [],
+      "observations": [
+        {
+          "id": "work-agent-ops-console",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/agent-ops-console"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/agent-ops-console"
+            }
+          ]
+        },
+        {
+          "id": "work-partner-portal",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/partner-portal"
+            }
+          ]
+        },
+        {
+          "id": "work-learn",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            }
+          ]
+        },
+        {
+          "id": "work-vet-clinic",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            }
+          ]
+        },
+        {
+          "id": "work-pawly",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/pawly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "en-1440-home-no-js",
+      "pass": true,
+      "errors": [],
+      "observations": [
+        {
+          "id": "work-agent-ops-console",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/agent-ops-console"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/agent-ops-console"
+            }
+          ]
+        },
+        {
+          "id": "work-partner-portal",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/partner-portal"
+            }
+          ]
+        },
+        {
+          "id": "work-learn",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            }
+          ]
+        },
+        {
+          "id": "work-vet-clinic",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            }
+          ]
+        },
+        {
+          "id": "work-pawly",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/pawly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "en-390-home-no-js",
+      "pass": true,
+      "errors": [],
+      "observations": [
+        {
+          "id": "work-agent-ops-console",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/agent-ops-console"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/agent-ops-console"
+            }
+          ]
+        },
+        {
+          "id": "work-partner-portal",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/partner-portal"
+            }
+          ]
+        },
+        {
+          "id": "work-learn",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/learn"
+            }
+          ]
+        },
+        {
+          "id": "work-vet-clinic",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/vet-clinic"
+            }
+          ]
+        },
+        {
+          "id": "work-pawly",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/work/pawly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "ru-1440-home-no-js",
+      "pass": true,
+      "errors": [],
+      "observations": [
+        {
+          "id": "work-agent-ops-console",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/agent-ops-console"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/agent-ops-console"
+            }
+          ]
+        },
+        {
+          "id": "work-partner-portal",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/partner-portal"
+            }
+          ]
+        },
+        {
+          "id": "work-learn",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            }
+          ]
+        },
+        {
+          "id": "work-vet-clinic",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            }
+          ]
+        },
+        {
+          "id": "work-pawly",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/pawly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "ru-390-home-no-js",
+      "pass": true,
+      "errors": [],
+      "observations": [
+        {
+          "id": "work-agent-ops-console",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/agent-ops-console"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/agent-ops-console"
+            }
+          ]
+        },
+        {
+          "id": "work-partner-portal",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/partner-portal"
+            }
+          ]
+        },
+        {
+          "id": "work-learn",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/learn"
+            }
+          ]
+        },
+        {
+          "id": "work-vet-clinic",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            },
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/vet-clinic"
+            }
+          ]
+        },
+        {
+          "id": "work-pawly",
+          "frames": [
+            {
+              "frameOpacity": "1",
+              "imageOpacity": "1",
+              "loaded": true,
+              "motion": null,
+              "imageMotion": null,
+              "href": "/ru/work/pawly"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "build": "dist-h6",
+  "provenance": "Verified against the identical working tree then committed as sourceRef; token/motion mirrors unchanged."
+}

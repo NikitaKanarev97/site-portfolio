@@ -1,5 +1,5 @@
-# H5 · передача на независимый H-art-review
+# H6 · передача в независимый H-art-review
 
-Status ready_for_visual_review. Code 297ddd3e1a8ccdea56a8a33e4d25865f03771e07. Checkout/branch/preview/proof и обязательный положительный ответ исполнителя — в report.md и handoff.json. Техническая база 574110a5b9d33760c82e6d461ade600c409f807c, evidence 16ff1695388efecbf9b022227391159b7eb0b292, сохранена. Новая правка H5 исправляет высоту whole-cover Pawly; новые PNG/videos/sheets относятся к4398/dist-h5. Галерея http://127.0.0.1:4396/art-review-h5.html показывает H3→H5 и отдельно574→297Pawly.
+Source 0bfd9644207f6cd972c0941ce47742dd79ee2462; checkout C:/Users/kanar/.codex/worktrees/portfolio-art-direction-h/Site-portfolio; branch codex/portfolio-art-direction-h-2026-10-04; frozen dist-h6 /4399. Галерея http://127.0.0.1:4396/art-review-h6.html. H5 review changes_requested исправлен фактическими изменениями CaseSpecimen/CaseScreen/Home; H5 сохраняется на4398.
 
-Контроллер самостоятельно смотрит Home+5stories EN/RU desktop/mobile и реальные native записи рядом с эталонами. Только после его положительного ответа обновляются STATE/PLAN и закрывается цепочка. При отрицательном ответе конкретные кадры/сцены возвращаются тому же исполнителю. Прежняя пауза снята; нового чата/таймера и действий владельца для передачи не нужно.
+Самооценка «Да» обоснована в report.md и review.md. Независимый H6 pending, цепочка ACTIVE. 92whole PNG,24native films/sheets,4quick films, текущие scoped checks и original H5 feedback — h-art-06/. Не закрывать STATE/PLAN/heartbeat из технического PASS или самооценки. При отрицательном просмотре вернуть конкретные кадры этому же G, продолжение без новой команды владельца.
