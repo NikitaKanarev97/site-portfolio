@@ -1,0 +1,24 @@
+---
+import PageShell from '../../../layouts/PageShell.astro';
+import CaseStory from '../../../components/CaseStory.astro';
+import { learnStory } from '../../../copy/cases/learn';
+import { learnStoryRu } from '../../../copy/ru/cases/learn';
+import { site } from '../../../copy/site';
+import { siteRu } from '../../../copy/ru/site';
+export function getStaticPaths() { return ['en','ru'].map(locale => ({ params: { locale } })); }
+const lang = Astro.params.locale as 'en' | 'ru';
+const story = lang === 'ru' ? learnStoryRu : learnStory;
+const next = { href: lang === 'ru' ? '/ru/work/vet-clinic/' : '/work/vet-clinic/', title: 'Vet Clinic OS', theme: 'vet' as const, label: lang === 'ru' ? 'Следующий кейс' : 'Next case' };
+---
+<PageShell title={`${story.cover.title} — ${lang === 'ru' ? 'новая версия кейса' : 'case rebuild'}`} description={story.cover.outcome} lang={lang} siteCopy={lang === 'ru' ? siteRu : site} localePaths={{en:'/preview/learn-rebuild/en/',ru:'/preview/learn-rebuild/ru/'}} noindex canonical={false} current={lang === 'ru' ? '/ru/work' : '/work'}>
+  <CaseStory story={story} lang={lang} id="learn-rebuild" next={next} />
+</PageShell>
+<style is:global>
+  @font-face {
+    font-family: 'Learn Onest';
+    src: url('/media/rebuild/learn/onest-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+</style>

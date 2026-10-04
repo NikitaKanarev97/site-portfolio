@@ -1,0 +1,43 @@
+{
+  "method": "One cold local run per profile, CPU emulation only, no network throttle; after capture/verification finish. Initial viewport only, not a field measurement.",
+  "results": [
+    {
+      "width": 1440,
+      "rate": 1,
+      "reduced": false,
+      "fcp": 300,
+      "cls": 0,
+      "lcp": 388,
+      "longTasks": [],
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "rate": 4,
+      "reduced": false,
+      "fcp": 668,
+      "cls": 0.0011049501424501423,
+      "lcp": 668,
+      "longTasks": [
+        278,
+        210,
+        180
+      ],
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "rate": 4,
+      "reduced": true,
+      "fcp": 352,
+      "cls": 0,
+      "lcp": 352,
+      "longTasks": [
+        118,
+        108,
+        61
+      ],
+      "overflow": 0
+    }
+  ]
+}

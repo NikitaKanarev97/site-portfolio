@@ -1,0 +1,50 @@
+{
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "url": "/preview/learn-rebuild/en/",
+  "method": "Unretimed Playwright browser video, real wheel input, pauses on whole states; first jump positions the scene.",
+  "events": [
+    {
+      "seconds": 2.18,
+      "action": "Reference stop",
+      "scrollY": 3558,
+      "visible": [
+        " Answer the question now "
+      ]
+    },
+    {
+      "seconds": 5.436,
+      "action": "Programme stop",
+      "scrollY": 4208,
+      "visible": [
+        " Keep the sequence around the answer "
+      ]
+    },
+    {
+      "seconds": 9.515,
+      "action": "Completion stop",
+      "scrollY": 4708,
+      "visible": [
+        " Reading does not finish a unit "
+      ]
+    },
+    {
+      "seconds": 12.637,
+      "action": "Programme reverse",
+      "scrollY": 4208,
+      "visible": [
+        " Keep the sequence around the answer "
+      ]
+    },
+    {
+      "seconds": 16.19,
+      "action": "Reference reverse",
+      "scrollY": 3558,
+      "visible": [
+        " Answer the question now "
+      ]
+    }
+  ]
+}

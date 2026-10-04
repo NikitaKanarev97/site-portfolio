@@ -5,6 +5,9 @@
  * audit/product-polish/07-final.md. QA counts describe the documented
  * 7 September acceptance, not human research or the later translation.
  */
+import { defineStory, type CaseStory, type ShotItem } from './story';
+import { learnContentModel } from '../../data/diagrams/learn/content-model';
+
 const PROTOTYPE = '/prototypes/learn/home?lang=en';
 const LANDING = '/prototypes/learn-landing/?lang=en';
 const media = '/media/case-learn';
@@ -182,3 +185,97 @@ export const learn = {
     lead: 'That boundary shaped the content, access, progress model and recovery behaviour throughout the product.',
   },
 };
+
+/** Full rebuild preview; the public legacy composition remains independently routed. */
+export function makeLearnStory(lang: 'en' | 'ru'): CaseStory {
+  const t = (en: string, ru: string) => lang === 'en' ? en : ru;
+  const base = '/media/rebuild/learn/';
+  const shot = (id: string, en: string, ru: string, nativeWidth?: number): ShotItem => ({
+    src: `${base}${id}-desktop.webp`, srcNarrow: `${base}${id}-mobile.webp`,
+    alt: t(en, ru), device: 'panel', ...(nativeWidth ? { nativeWidth } : {}),
+  });
+  const cards = [
+    ['setup', 'Setup', 'Пусконаладка'], ['project', 'Project', 'Проектирование'],
+    ['handover', 'Handover', 'Сдача объекта'], ['explore', 'Explore', 'Обзор линейки'],
+  ];
+  return defineStory({
+    theme: 'learn', plate: 'light',
+    cover: {
+      title: 'TRASSIR Learn',
+      outcome: t('A technical answer becomes part of a learning path.', 'Технический ответ становится частью учебного пути.'),
+      media: { variant: 'proof', eyebrow: t('Work project · reinterpreted in 2026', 'Рабочий проект · переосмысление 2026'),
+        shot: shot('cover', 'One material beside its programme passport', 'Материал рядом с паспортом его программы'),
+        caption: t('Current reinterpretation of my redesign at DSSL / TRASSIR.', 'Нынешнее переосмысление моего редизайна в DSSL / TRASSIR.'),
+      },
+    },
+    facts: [
+      { term: t('Role', 'Роль'), value: t('Product Designer', 'Продуктовый дизайнер') },
+      { term: t('Original work', 'Исходная работа'), value: t('DSSL / TRASSIR · several months', 'DSSL / TRASSIR · несколько месяцев') },
+      { term: t('Version shown', 'Показанная версия'), value: t('Portfolio prototype · after leaving the company', 'Прототип для портфолио · после ухода из компании') },
+      { term: t('Scope', 'Объём'), value: t('Content model, UX/UI, system, prototype', 'Модель контента, UX/UI, система, прототип') },
+      { term: t('Product', 'Продукт'), value: t('Open the prototype', 'Открыть прототип'), href: `/prototypes/learn/home?lang=${lang}` },
+      { term: t('Landing', 'Лендинг'), value: t('Open the introduction', 'Открыть представление продукта'), href: `/prototypes/learn-landing/?lang=${lang}` },
+    ],
+    blocks: [
+      { id: 'audit-direction', type: 'comparison', evidenceId: 'learn-audit', mediaId: 'archive-catalog', motion: 'reveal',
+        payload: {
+          thesis: { label: t('Audit → direction', 'Аудит → направление'), thesis: t('Start with the specialist’s task', 'Начать с рабочей задачи'),
+            body: t('The archive leads with courses, ratings and rewards. I reframed entry around a question or programme, with the answer available before sign-in.', 'Архивный каталог начинает с курсов, рейтингов и наград. Я перенёс вход на рабочий вопрос или программу: полезный ответ доступен ещё до авторизации.') },
+          issue: { src: `${base}archive-catalog.webp`, alt: t('Archived Russian course catalogue with ratings and reward points', 'Архивный каталог курсов с рейтингом и баллами'),
+            marks: [{ x: 20, y: 14, text: t('Courses define the entry', 'Вход определён курсами') }, { x: 25, y: 74, text: t('Points accompany the material', 'Баллы сопровождают материал') }],
+            caption: t('Archived interface. The visible entry shaped the redesign direction.', 'Архивный интерфейс: видимый вход определил направление переработки.') },
+        } },
+      { id: 'shared-material', type: 'artifact', evidenceId: 'learn-model', mediaId: 'learn-content-model', motion: 'draw',
+        payload: { thesis: { label: t('Content model', 'Модель контента'), thesis: t('One material, two entrances', 'Один материал, два входа'),
+          body: t('The material owns its content and version; programmes reference it. Reading history, explicit completion and assessment attempts remain separate records.', 'Материал хранит содержание и версию. Программа ссылается на него без копии. История чтения, явное завершение и попытка зачёта остаются отдельными записями.') },
+          artifact: { data: learnContentModel, source: { kind: 'editorial', ref: 'Learn PRD §4.2/5.3, current MaterialPage and Player' }, caption: t('Editorial model: two entrances, one material, separate records.', 'Редакционная модель: два входа, один материал, отдельные записи.') } } },
+      { id: 'one-material', type: 'steps', evidenceId: 'learn-completion', mediaId: 'material-contexts', motion: 'focus',
+        payload: { label: t('The same ONVIF material', 'Тот же материал об ONVIF'), items: [
+          { label: t('Reference', 'Справочник'), thesis: t('Answer the question now', 'Ответить на вопрос сейчас'), layout: 'wide',
+            body: t('The answer has its own address, version and date. A learning path sits alongside.', 'Полный ответ имеет свой адрес, версию и дату. Учебный путь предложен рядом с ответом.'),
+            shot: shot('answer', 'Open ONVIF answer with version, date and learning path rail', 'Открытый ответ об ONVIF, версия, дата и связанные программы'), caption: t('Reference view · onvif-not-found.', 'Справочник · onvif-not-found.') },
+          { label: t('Programme', 'Программа'), thesis: t('Keep the sequence around the answer', 'Сохранить порядок вокруг ответа'), layout: 'wide',
+            body: t('Inside the programme, the same material gains a curriculum and a current position. Its content stays intact.', 'Внутри программы тот же материал получает оглавление и текущую позицию. Содержание сохраняется целиком.'),
+            shot: shot('programme', 'The same ONVIF answer in the programme, position 3 of 11', 'Тот же ответ в программе, позиция 3 из 11'), caption: t('Programme view · the same material ID.', 'Программа · тот же ID материала.') },
+          { label: t('Completion', 'Завершение'), thesis: t('Reading does not finish a unit', 'Чтение не завершает единицу'), layout: 'wide',
+            body: t('Complete and continue records an explicit decision. Simply opening or scrolling through the material does not earn completion.', '«Завершить и продолжить» фиксирует явное решение. Открытие материала и прокрутка сами по себе не засчитывают завершение.'),
+            shot: shot('completion', 'End of the same ONVIF material with the explicit completion button', 'Конец того же материала с явной кнопкой завершения'), caption: t('The whole completion action at the material’s end.', 'Целое действие завершения в конце материала.') },
+        ] } },
+      { id: 'content-language', type: 'specimen', evidenceId: 'learn-themes', mediaId: 'learn-content-theme', motion: 'reveal',
+        payload: { thesis: { label: t('Content language', 'Язык контента'), thesis: t('Colour follows the task', 'Цвет следует за задачей'),
+          body: t('Four task modes persist across contexts. Trust information stays neutral; programme position is a count. These are actual component fixtures from the current system.', 'Четыре режима задачи сохраняются между контекстами. Достоверность нейтральна; позиция в программе выражена счётом. Здесь реальные образцы компонентов нынешней системы.') },
+          specimen: { title: t('Learn · task modes and records', 'Learn · режимы задач и записи'), fontFamily: 'Learn Onest, sans-serif',
+            type: [
+              { style: 'Display/4xl', usage: { en: 'Material title', ru: 'Название материала' }, size: 44, lineHeight: 50.6, weight: 700, sample: { en: 'Aa', ru: 'Аа' } },
+              { style: 'Heading/3xl', usage: { en: 'Section heading', ru: 'Раздел материала' }, size: 32, lineHeight: 43.2, weight: 700, sample: { en: 'Aa', ru: 'Аа' } },
+            ],
+            colors: [ { name: 'Setup', hex: '#0A66CE' }, { name: 'Project', hex: '#6D3EEA' }, { name: 'Handover', hex: '#D6207A' }, { name: 'Explore', hex: '#0E9E86' }, { name: 'Neutral', hex: '#3A4C66' } ],
+            groups: [{ id: 'tasks', title: t('Task modes', 'Режимы задач') }, { id: 'records', title: t('Neutral context', 'Нейтральный контекст') }],
+            sets: [
+              { id: 'card-setup-project', title: 'Card · Setup / Project', group: 'tasks', states: cards.slice(0,2).map(([id,en,ru]) => ({ id, label: t(en,ru), mediaId: `theme-${id}`, shot: shot(`theme-${id}`, `${en} Card fixture`, `Образец Card: ${ru}`,316) })) },
+              { id: 'card-handover-explore', title: 'Card · Handover / Explore', group: 'tasks', states: cards.slice(2).map(([id,en,ru]) => ({ id, label: t(en,ru), mediaId: `theme-${id}`, shot: shot(`theme-${id}`, `${en} Card fixture`, `Образец Card: ${ru}`,316) })) },
+              { id: 'trust-header', title: 'TrustHeader', group: 'records', states: [{ id: 'version-date', label: t('Version · date · reading time', 'Версия · дата · время чтения'), mediaId: 'trust', shot: shot('trust','Neutral version, update date and reading time','Нейтральные версия, дата обновления и время чтения',288) }] },
+              { id: 'progress-meter', title: 'ProgressMeter', group: 'records', states: [{ id: 'position', label: t('Position 3/11', 'Позиция 3/11'), mediaId: 'progress', shot: shot('progress','Current programme position 3 of 11','Текущая позиция в программе: 3 из 11',288) }] },
+            ],
+            caption: t('Real components. Task colours stay separate from result states.', 'Реальные компоненты: цвет задачи отделён от состояния результата.'),
+          } } },
+      { id: 'neutral-assessment', type: 'shot', evidenceId: 'learn-trust', mediaId: 'assessment', motion: 'reveal',
+        payload: { thesis: { label: t('Assessment', 'Зачёт'), thesis: t('An attempt has its own rules', 'У попытки свои правила'),
+          body: t('Assessment switches to neutral. Time, remaining attempts and the passing threshold are explicit. The prototype demonstrates the mechanism; the question bank still needs expert validation.', 'Зачёт переходит в нейтральный режим. Время, оставшиеся попытки и порог видимы. Прототип показывает механику; банк вопросов ещё требует экспертной проверки.') },
+          shot: { layout: 'desktop', items: [shot('assessment','Neutral assessment introduction and complete rules','Нейтральное введение в зачёт и полные правила')], caption: t('Current prototype · assessment introduction.', 'Нынешний прототип · введение в зачёт.') } } },
+      { id: 'public-promise', type: 'shot', evidenceId: 'learn-landing', mediaId: 'landing', motion: 'reveal',
+        payload: { thesis: { label: t('Landing', 'Лендинг'), thesis: t('Show the answer before asking for trust', 'Показать ответ до просьбы о доверии'),
+          body: t('The landing introduces the same material and programme. A real product example carries the promise into the experience.', 'Лендинг знакомит с теми же материалом и программой. Реальный пример продукта переносит обещание в рабочий опыт.') },
+          shot: { layout: 'desktop', items: [shot('landing','Learn landing with a real material and programme preview','Лендинг Learn с реальными примерами материала и программы')], caption: t('The public introduction uses its own editorial scale.', 'Публичное представление использует собственный редакционный масштаб.') } } },
+      { id: 'honest-result', type: 'outcome', evidenceId: 'learn-validation', motion: 'static',
+        payload: { result: { label: t('Result', 'Результат'), thesis: t('Both routes work', 'Рабочая модель; эффект ещё не измерен') },
+          evidence: { label: t('Evidence', 'Подтверждение'), text: t('September agent QA covered 108 state–width combinations. This is engineering evidence; no human usability study or learning outcome was measured.', 'Сентябрьская QA агента охватила 108 сочетаний состояния и ширины. Это инженерная проверка; юзабилити с людьми и учебный эффект не измерены.') },
+          tradeoff: { label: t('Cost', 'Цена решения'), text: t('Explicit completion adds an action. Storage stays within the browser tab; account checks and documents are simulated.', 'Явное завершение добавляет действие. Данные живут в браузерной вкладке; проверки аккаунта и документы симулированы.') },
+          nextEvidence: { label: t('Next evidence', 'Следующая проверка'), text: t('Test with specialists, validate the question bank, measure answer finding and programme continuation.', 'Тест со специалистами, проверка банка вопросов, замер поиска ответа и продолжения программы.') },
+        } },
+    ],
+    prototype: { label: t('Try Learn', 'Открыть Learn'), href: `/prototypes/learn/home?lang=${lang}` },
+  });
+}
+
+export const learnStory = makeLearnStory('en');

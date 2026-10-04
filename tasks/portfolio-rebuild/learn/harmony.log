@@ -1,0 +1,14 @@
+
+> site-portfolio@0.1.0 check:harmony
+> node scripts/harmony-check.mjs /preview/learn-rebuild/en/ /preview/learn-rebuild/ru/ --base=http://127.0.0.1:4360 --widths=1440,1024,390,360
+
+/preview/learn-rebuild/en/ @1440: плашек 8, тезисов 9, подписей и абзацев 19 · learn-rebuild 400 слов, 13 кадров
+/preview/learn-rebuild/en/ @1024: плашек 8, тезисов 9, подписей и абзацев 19 · learn-rebuild 400 слов, 13 кадров
+/preview/learn-rebuild/en/ @390: плашек 8, тезисов 9, подписей и абзацев 19 · learn-rebuild 400 слов, 13 кадров
+/preview/learn-rebuild/en/ @360: плашек 8, тезисов 9, подписей и абзацев 19 · learn-rebuild 400 слов, 13 кадров
+/preview/learn-rebuild/ru/ @1440: плашек 8, тезисов 9, подписей и абзацев 19 · learn-rebuild 361 слов, 13 кадров
+/preview/learn-rebuild/ru/ @1024: плашек 8, тезисов 9, подписей и абзацев 19 · learn-rebuild 361 слов, 13 кадров
+/preview/learn-rebuild/ru/ @390: плашек 8, тезисов 9, подписей и абзацев 19 · learn-rebuild 361 слов, 13 кадров
+/preview/learn-rebuild/ru/ @360: плашек 8, тезисов 9, подписей и абзацев 19 · learn-rebuild 361 слов, 13 кадров
+
+✓ harmony-check: нарушений нет

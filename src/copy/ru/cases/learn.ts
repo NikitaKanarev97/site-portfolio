@@ -1,4 +1,7 @@
 /** Русская версия кейса TRASSIR Learn; карта фактуры — ds/screens/case-learn.md. */
+import { makeLearnStory, learnStory } from '../../cases/learn';
+import { assertStoryPair } from '../../cases/story';
+
 const PROTOTYPE = '/prototypes/learn/home?lang=ru';
 const LANDING = '/prototypes/learn-landing/?lang=ru';
 const media = '/media/case-learn-ru';
@@ -176,3 +179,6 @@ export const learnRu = {
     lead: 'Эта граница определила контент, доступ, модель прогресса и восстановление после сбоя во всём продукте.',
   },
 };
+
+export const learnStoryRu = makeLearnStory('ru');
+assertStoryPair(learnStory, learnStoryRu);

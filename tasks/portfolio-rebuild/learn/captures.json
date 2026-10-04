@@ -1,0 +1,487 @@
+[
+  {
+    "id": "answer-desktop",
+    "file": "public/media/rebuild/learn/answer-desktop.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn/material/onvif-not-found?lang=en",
+    "locale": "en",
+    "fixture": "anonymous",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "dpr": 2,
+    "width": 2880,
+    "height": 2000,
+    "sha256": "8f978578b495672b33f4a7292134be3d3fd6aa4052911fb4d101574f1dfc788e",
+    "alpha": false
+  },
+  {
+    "id": "programme-desktop",
+    "file": "public/media/rebuild/learn/programme-desktop.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn/player/puskonaladka/2?lang=en",
+    "locale": "en",
+    "fixture": "state-marina-one (authorized), same onvif-not-found unit",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "dpr": 2,
+    "width": 2880,
+    "height": 2000,
+    "sha256": "4a917eb5afbedfc391b1d0dff82211964d967e338aa1229eb08522521b418c58",
+    "alpha": false
+  },
+  {
+    "id": "completion-desktop",
+    "file": "public/media/rebuild/learn/completion-desktop.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn/player/puskonaladka/2?lang=en",
+    "locale": "en",
+    "fixture": "same material end, explicit action before click",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "dpr": 2,
+    "width": 2880,
+    "height": 2000,
+    "sha256": "a9e3be31771223488be828baa6a367e42b6ce873b2e8deef0490d0fb74e69125",
+    "alpha": false
+  },
+  {
+    "id": "cover-programme-desktop",
+    "file": "public/media/rebuild/learn/cover-programme-desktop.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn/trajectory/puskonaladka?lang=en",
+    "locale": "en",
+    "fixture": "anonymous",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "dpr": 2,
+    "width": 640,
+    "height": 1100,
+    "sha256": "20bfbe964dab36f607578d06e62baf7d961574f2a9e98e151894b1c02e341bdc",
+    "alpha": false
+  },
+  {
+    "id": "landing-desktop",
+    "file": "public/media/rebuild/learn/landing-desktop.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn-landing/en/?lang=en",
+    "locale": "en",
+    "fixture": "anonymous",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "dpr": 2,
+    "width": 2880,
+    "height": 2000,
+    "sha256": "80083a0f6a1c0ac33b37f074b1eb3f82f0ffd5ed1ff501aa1c8a5fab3d89eddd",
+    "alpha": false
+  },
+  {
+    "id": "answer-mobile",
+    "file": "public/media/rebuild/learn/answer-mobile.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn/material/onvif-not-found?lang=en",
+    "locale": "en",
+    "fixture": "anonymous",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 780,
+    "height": 1688,
+    "sha256": "52018c96a65f5232cf25c05731e61fee1bed4e787f2616ab4fd3d90459561bd8",
+    "alpha": false
+  },
+  {
+    "id": "programme-mobile",
+    "file": "public/media/rebuild/learn/programme-mobile.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn/player/puskonaladka/2?lang=en",
+    "locale": "en",
+    "fixture": "state-marina-one (authorized), same onvif-not-found unit",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 780,
+    "height": 1688,
+    "sha256": "a2708b96ab388e005c8c6bb5f7d3f56d7714a0715bdd2b68ba648ec2ec4f78c6",
+    "alpha": false
+  },
+  {
+    "id": "completion-mobile",
+    "file": "public/media/rebuild/learn/completion-mobile.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn/player/puskonaladka/2?lang=en",
+    "locale": "en",
+    "fixture": "same material end, explicit action before click",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 780,
+    "height": 1688,
+    "sha256": "21f8eb82ab22fd761c889a0921c3bdc85d545cf80046cea36487323f4f574451",
+    "alpha": false
+  },
+  {
+    "id": "cover-programme-mobile",
+    "file": "public/media/rebuild/learn/cover-programme-mobile.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn/trajectory/puskonaladka?lang=en",
+    "locale": "en",
+    "fixture": "anonymous",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 716,
+    "height": 940,
+    "sha256": "a9c34c6b036915569741c9a9cbdfe3a829ad80a9b0ab8dd08883975f802566d9",
+    "alpha": false
+  },
+  {
+    "id": "landing-mobile",
+    "file": "public/media/rebuild/learn/landing-mobile.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn-landing/en/?lang=en",
+    "locale": "en",
+    "fixture": "anonymous",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 2,
+    "width": 700,
+    "height": 1986,
+    "sha256": "cefa82154b122cb703cfbeba50f4fee13055ce4e46668884d55116853bced010",
+    "alpha": false
+  },
+  {
+    "id": "theme-setup-desktop",
+    "file": "public/media/rebuild/learn/theme-setup-desktop.webp",
+    "source": "http://127.0.0.1:4362/storybook/iframe.html?id=components-card--default&viewMode=story&globals=contentMode:Setup&args=title:Commissioning TRASSIR OS at a site with up to 32 cameras;result:Deploy and hand over a site independently;meta:11 units",
+    "locale": "en",
+    "fixture": {
+      "mode": "Setup",
+      "title": "Commissioning TRASSIR OS at a site with up to 32 cameras",
+      "result": "Deploy and hand over a site independently",
+      "meta": "11 units"
+    },
+    "viewport": {
+      "width": 800,
+      "height": 600
+    },
+    "dpr": 2,
+    "nativeWidth": 316,
+    "width": 632,
+    "height": 464,
+    "alpha": true,
+    "sha256": "5723fb1dba63f2d1fed8cc8aac092118bef79f8dd00b4a2dbd1938407720411f"
+  },
+  {
+    "id": "theme-setup-mobile",
+    "file": "public/media/rebuild/learn/theme-setup-mobile.webp",
+    "source": "http://127.0.0.1:4362/storybook/iframe.html?id=components-card--default&viewMode=story&globals=contentMode:Setup&args=title:Commissioning TRASSIR OS at a site with up to 32 cameras;result:Deploy and hand over a site independently;meta:11 units",
+    "locale": "en",
+    "fixture": {
+      "mode": "Setup",
+      "title": "Commissioning TRASSIR OS at a site with up to 32 cameras",
+      "result": "Deploy and hand over a site independently",
+      "meta": "11 units"
+    },
+    "viewport": {
+      "width": 800,
+      "height": 600
+    },
+    "dpr": 2,
+    "nativeWidth": 292,
+    "width": 584,
+    "height": 464,
+    "alpha": true,
+    "sha256": "611cd700f2d08b88b619a1928e0b78ac707b01fc20c1f9c736aaf15ad1c24810"
+  },
+  {
+    "id": "theme-project-desktop",
+    "file": "public/media/rebuild/learn/theme-project-desktop.webp",
+    "source": "http://127.0.0.1:4362/storybook/iframe.html?id=components-card--default&viewMode=story&globals=contentMode:Project&args=title:Designing a system for 64 cameras or more;result:Calculate the load and defend the design;meta:9 units",
+    "locale": "en",
+    "fixture": {
+      "mode": "Project",
+      "title": "Designing a system for 64 cameras or more",
+      "result": "Calculate the load and defend the design",
+      "meta": "9 units"
+    },
+    "viewport": {
+      "width": 800,
+      "height": 600
+    },
+    "dpr": 2,
+    "nativeWidth": 316,
+    "width": 632,
+    "height": 410,
+    "alpha": true,
+    "sha256": "15bf72e284762cdfd1bc29e16649840898360f190e0e0a8de1e0d499c00b24f6"
+  },
+  {
+    "id": "theme-project-mobile",
+    "file": "public/media/rebuild/learn/theme-project-mobile.webp",
+    "source": "http://127.0.0.1:4362/storybook/iframe.html?id=components-card--default&viewMode=story&globals=contentMode:Project&args=title:Designing a system for 64 cameras or more;result:Calculate the load and defend the design;meta:9 units",
+    "locale": "en",
+    "fixture": {
+      "mode": "Project",
+      "title": "Designing a system for 64 cameras or more",
+      "result": "Calculate the load and defend the design",
+      "meta": "9 units"
+    },
+    "viewport": {
+      "width": 800,
+      "height": 600
+    },
+    "dpr": 2,
+    "nativeWidth": 292,
+    "width": 584,
+    "height": 410,
+    "alpha": true,
+    "sha256": "6b59338a431b4db6f180f0ac72cb8bfe327a28bbc6763ffe61732ae2460e92d4"
+  },
+  {
+    "id": "theme-handover-desktop",
+    "file": "public/media/rebuild/learn/theme-handover-desktop.webp",
+    "source": "http://127.0.0.1:4362/storybook/iframe.html?id=components-card--default&viewMode=story&globals=contentMode:Handover&args=title:Site handover to the customer;result:Check site readiness and the document pack;meta:7 units",
+    "locale": "en",
+    "fixture": {
+      "mode": "Handover",
+      "title": "Site handover to the customer",
+      "result": "Check site readiness and the document pack",
+      "meta": "7 units"
+    },
+    "viewport": {
+      "width": 800,
+      "height": 600
+    },
+    "dpr": 2,
+    "nativeWidth": 316,
+    "width": 632,
+    "height": 410,
+    "alpha": true,
+    "sha256": "15dc26f82bd65744d3aef1bdfcbcaeefcdc05d512489428de2a1ac5c5c0e1256"
+  },
+  {
+    "id": "theme-handover-mobile",
+    "file": "public/media/rebuild/learn/theme-handover-mobile.webp",
+    "source": "http://127.0.0.1:4362/storybook/iframe.html?id=components-card--default&viewMode=story&globals=contentMode:Handover&args=title:Site handover to the customer;result:Check site readiness and the document pack;meta:7 units",
+    "locale": "en",
+    "fixture": {
+      "mode": "Handover",
+      "title": "Site handover to the customer",
+      "result": "Check site readiness and the document pack",
+      "meta": "7 units"
+    },
+    "viewport": {
+      "width": 800,
+      "height": 600
+    },
+    "dpr": 2,
+    "nativeWidth": 292,
+    "width": 584,
+    "height": 410,
+    "alpha": true,
+    "sha256": "93c0ed6b707f59630373191f74085cc7a9aafa871a4a1c5e4aa60252cffc5966"
+  },
+  {
+    "id": "theme-explore-desktop",
+    "file": "public/media/rebuild/learn/theme-explore-desktop.webp",
+    "source": "http://127.0.0.1:4362/storybook/iframe.html?id=components-card--default&viewMode=story&globals=contentMode:Explore&args=title:TRASSIR product range fundamentals;result:Select hardware for the task without escalation;meta:7 units",
+    "locale": "en",
+    "fixture": {
+      "mode": "Explore",
+      "title": "TRASSIR product range fundamentals",
+      "result": "Select hardware for the task without escalation",
+      "meta": "7 units"
+    },
+    "viewport": {
+      "width": 800,
+      "height": 600
+    },
+    "dpr": 2,
+    "nativeWidth": 316,
+    "width": 632,
+    "height": 410,
+    "alpha": true,
+    "sha256": "b731356756c4627bea9202f4890290111f2a13831e4f847e9a157c9531788c0a"
+  },
+  {
+    "id": "theme-explore-mobile",
+    "file": "public/media/rebuild/learn/theme-explore-mobile.webp",
+    "source": "http://127.0.0.1:4362/storybook/iframe.html?id=components-card--default&viewMode=story&globals=contentMode:Explore&args=title:TRASSIR product range fundamentals;result:Select hardware for the task without escalation;meta:7 units",
+    "locale": "en",
+    "fixture": {
+      "mode": "Explore",
+      "title": "TRASSIR product range fundamentals",
+      "result": "Select hardware for the task without escalation",
+      "meta": "7 units"
+    },
+    "viewport": {
+      "width": 800,
+      "height": 600
+    },
+    "dpr": 2,
+    "nativeWidth": 292,
+    "width": 584,
+    "height": 410,
+    "alpha": true,
+    "sha256": "61d2d734307c98d3953d0b101a80643cc7451e368b6fa907bcc38a4a43311d9e"
+  },
+  {
+    "id": "cover-answer-desktop",
+    "file": "public/media/rebuild/learn/cover-answer-desktop.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn/material/onvif-not-found?lang=en",
+    "locale": "en",
+    "width": 2000,
+    "height": 456,
+    "dpr": 2,
+    "sha256": "16c62c4c83210a4ab59e7108bf456ce454219aaaff6a554cd1b2d83b3ac5b83c",
+    "crop": "Whole version/date, title and lead; no body or action is cut.",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    }
+  },
+  {
+    "id": "cover-answer-mobile",
+    "file": "public/media/rebuild/learn/cover-answer-mobile.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn/material/onvif-not-found?lang=en",
+    "locale": "en",
+    "width": 716,
+    "height": 666,
+    "dpr": 2,
+    "sha256": "5a02b1b8404b0f592a116d057bc29674981e1aaf31ba8b928822c9f3684aedbb",
+    "crop": "Whole version/date, title and lead; no body or action is cut.",
+    "viewport": {
+      "width": 390,
+      "height": 1000
+    }
+  },
+  {
+    "id": "trust-mobile",
+    "file": "public/media/rebuild/learn/trust-mobile.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn/material/onvif-not-found?lang=en",
+    "locale": "en",
+    "width": 576,
+    "height": 164,
+    "dpr": 2,
+    "sha256": "169f588ed3233743da880757a00fcf0e9cb3f4d59f28c5d3885bd9f9c1447feb",
+    "nativeWidth": 288,
+    "viewport": {
+      "width": 320,
+      "height": 1000
+    }
+  },
+  {
+    "id": "trust-desktop",
+    "file": "public/media/rebuild/learn/trust-desktop.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn/material/onvif-not-found?lang=en",
+    "locale": "en",
+    "width": 576,
+    "height": 164,
+    "dpr": 2,
+    "sha256": "169f588ed3233743da880757a00fcf0e9cb3f4d59f28c5d3885bd9f9c1447feb",
+    "nativeWidth": 288,
+    "viewport": {
+      "width": 320,
+      "height": 1000
+    },
+    "fixture": "Compact native component at 288 CSS pixels, documentary selection."
+  },
+  {
+    "id": "progress-mobile",
+    "file": "public/media/rebuild/learn/progress-mobile.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn/player/puskonaladka/2?lang=en",
+    "locale": "en",
+    "width": 576,
+    "height": 74,
+    "dpr": 2,
+    "sha256": "0ee9888eff0d56098dc09f3a6e1427e2220e185062652c1cb50c35ab5c378526",
+    "nativeWidth": 288,
+    "viewport": {
+      "width": 320,
+      "height": 1000
+    },
+    "fixture": "Current position 3/11, not completion."
+  },
+  {
+    "id": "progress-desktop",
+    "file": "public/media/rebuild/learn/progress-desktop.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn/player/puskonaladka/2?lang=en",
+    "locale": "en",
+    "width": 576,
+    "height": 74,
+    "dpr": 2,
+    "sha256": "0ee9888eff0d56098dc09f3a6e1427e2220e185062652c1cb50c35ab5c378526",
+    "nativeWidth": 288,
+    "viewport": {
+      "width": 320,
+      "height": 1000
+    },
+    "fixture": "Compact native position meter at 288 CSS pixels, not completion."
+  },
+  {
+    "id": "assessment-desktop",
+    "file": "public/media/rebuild/learn/assessment-desktop.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=en",
+    "locale": "en",
+    "width": 2048,
+    "height": 1476,
+    "dpr": 2,
+    "sha256": "a1cafecb0232308af7e1b9dbe82811405902d159d4c8c8e75790a302da1730a1",
+    "crop": "Whole title, lead, notice and rules. Desktop includes the native symmetric page gutters. Ends before the additional-bank section; no action is clipped.",
+    "viewport": {
+      "width": 1024,
+      "height": 1000
+    },
+    "fixture": "state-marina-ready; introduction only, no result."
+  },
+  {
+    "id": "assessment-mobile",
+    "file": "public/media/rebuild/learn/assessment-mobile.webp",
+    "source": "http://127.0.0.1:4362/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=en",
+    "locale": "en",
+    "width": 716,
+    "height": 1684,
+    "dpr": 2,
+    "sha256": "a7e2cea1c0a01088e15cbc68e1166a26aa2ac7a77752940781216e4d68594c72",
+    "crop": "Whole title, lead, notice and rules. Desktop includes the native symmetric page gutters. Ends before the additional-bank section; no action is clipped.",
+    "viewport": {
+      "width": 390,
+      "height": 1000
+    },
+    "fixture": "state-marina-ready; introduction only, no result."
+  },
+  {
+    "id": "cover-desktop",
+    "file": "public/media/rebuild/learn/cover-desktop.webp",
+    "source": "cover-answer-desktop + cover-programme-desktop",
+    "locale": "en",
+    "width": 2736,
+    "height": 1100,
+    "dpr": 2,
+    "sha256": "7f023d84e357cad0e0d6fdf232d07e0ae2d7515f7ff536f2f3f0459cdb622368",
+    "composition": "Separate whole source regions, same DPR and scale, transparent field; asymmetric on desktop, stacked mobile.",
+    "alpha": true
+  },
+  {
+    "id": "cover-mobile",
+    "file": "public/media/rebuild/learn/cover-mobile.webp",
+    "source": "cover-answer-mobile + cover-programme-mobile",
+    "locale": "en",
+    "width": 716,
+    "height": 1670,
+    "dpr": 2,
+    "sha256": "fb82d25d2f9d89871c5e7d51cdf67cd16e4536249680742fa4de6359bd0bce43",
+    "composition": "Separate whole source regions, same DPR and scale, transparent field; asymmetric on desktop, stacked mobile.",
+    "alpha": true
+  }
+]
