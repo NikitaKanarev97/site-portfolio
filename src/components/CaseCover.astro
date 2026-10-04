@@ -35,7 +35,7 @@
  * всех страниц, считал бы правило мёртвым. Шаблоны живут рядом до этапов 7–11.
  */
 import CaseScreen from './CaseScreen.astro';
-import ProcurementCover from './ProcurementCover.astro';
+import WorkStage from './WorkStage.astro';
 import { frameSize } from '../lib/media';
 import { caseThemes, type CaseTheme, type CoverMedia } from '../copy/cases/story';
 import { px } from '../lib/tokens.ts';
@@ -45,6 +45,7 @@ interface Props {
   title: string;
   outcome: string;
   media: CoverMedia;
+  locale?: 'en' | 'ru';
   /** На странице кейса — h1; на витрине обложек несколько, там h2. */
   as?: 'h1' | 'h2';
   pauseLabel?: string;
@@ -58,6 +59,7 @@ const {
   title,
   outcome,
   media,
+  locale = 'en',
   as: Heading = 'h1',
   pauseLabel = 'Pause video',
   playLabel = 'Play video',
@@ -65,6 +67,7 @@ const {
   transitionKey,
 } = Astro.props as Props;
 const { surface, tone } = caseThemes[theme];
+const editorial = theme !== 'agent' && media.variant !== 'video';
 /* Постер без ролика (до этапа 4) — своя композиция под ширину: широкий от
    bp-xl, средний от bp-md, узкий ниже. Пороги — из токенов, как у
    MediaFrame. */
@@ -84,7 +87,7 @@ if (media.variant === 'screen') {
 ---
 
 <section
-  class:list={['case-opening', `case-opening--${media.variant}`, media.variant === 'proof' && media.layout === 'interlock' && 'case-opening--interlock', poster && 'case-opening--poster', className]}
+  class:list={['case-opening', `case-opening--${media.variant}`, editorial && 'case-opening--editorial', theme === 'vet' && 'case-opening--vet', media.variant === 'proof' && media.layout === 'interlock' && 'case-opening--interlock', poster && 'case-opening--poster', className]}
   data-tone={tone}
   style={`--cover-surface: ${surface}`}
   transition:name={transitionKey}
@@ -93,9 +96,17 @@ if (media.variant === 'screen') {
   data-motion={media.variant === 'proof' && media.panels?.length ? (media.layout === 'interlock' ? 'cover-interlock' : 'cover-proof') : undefined}
 >
   {
-    media.variant === 'proof' ? (
-      <>
-      {media.layout === 'procurement' && media.workflow ? <ProcurementCover title={title} outcome={outcome} media={media} as={Heading} /> :
+    editorial ? (
+      <div class="ds-container case-opening__editorial">
+        {media.variant === 'proof' && <p class="ds-meta-xs case-opening__eyebrow">{media.eyebrow}</p>}
+        <div class="case-opening__editorial-head">
+          <Heading class="ds-display-5xl case-opening__title" data-motion="lines">{title}</Heading>
+          <p class="ds-heading-xl case-opening__editorial-lead" data-h="lead">{outcome}</p>
+        </div>
+        <WorkStage theme={theme} media={media} locale={locale} usage="cover" loading="eager" />
+        {media.variant === 'proof' && <p class="ds-body-sm case-opening__proof-caption" data-h="caption">{media.caption}</p>}
+      </div>
+    ) : media.variant === 'proof' ? (
       <div class="ds-container case-opening__proof">
         <p class="ds-meta-xs case-opening__eyebrow">{media.eyebrow}</p>
         <div class="case-opening__proof-head">
@@ -114,8 +125,6 @@ if (media.variant === 'screen') {
         </div>
         <p class="ds-body-sm case-opening__proof-caption" data-h="caption">{media.caption}</p>
       </div>
-      }
-      </>
     ) : media.variant === 'video' && !media.video ? (
       <>
         <picture>
@@ -201,6 +210,13 @@ if (media.variant === 'screen') {
 </section>
 
 <style>
+  .case-opening--vet .case-opening__editorial-head { grid-template-columns:1fr; gap:var(--space-4); }
+  .case-opening__editorial { display: grid; gap: var(--flow-group); padding-block: var(--flow-group); }
+  .case-opening__editorial-head { display: grid; gap: var(--flow-text); }
+  .case-opening__editorial-lead { margin: 0; max-inline-size: var(--measure-case); text-wrap: pretty; }
+  @media (--bp-lg) {
+    .case-opening__editorial-head { grid-template-columns: 3fr 2fr; gap: var(--space-12); align-items: end; }
+  }
   .case-opening {
     position: relative;
     inset-block-start: 0;
@@ -213,6 +229,9 @@ if (media.variant === 'screen') {
     background: var(--cover-surface);
     color: var(--text-default);
   }
+
+  /* Editorial material owns its height; the viewport rule above is only a minimum. */
+  .case-opening--editorial { block-size: auto; min-block-size: calc(100svh - var(--cover-offset, 0px)); }
 
   .case-opening[data-tone='dark'] {
     color: var(--text-on-inverse);

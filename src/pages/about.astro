@@ -1,25 +1,7 @@
 ---
-/**
- * About — Site-portfolio, маршрут /about
- *
- * Composition map: ds/screens/about.md, редакция 2, апрувнута 2026-08-24.
- * Вайрфрейм: ia/wireframes/about.md. Блок авторизации — дословно из
- * ia/authorization-copy.md, решение владельца №1.
- *
- * Экран не изобретает сущностей: всё из каталога ds/components.md и
- * паттернов ds/patterns.md. Тексты — src/copy/about.ts, сквозные —
- * src/copy/site.ts. Оболочка, ContactBlock и Footer — PageShell.
- *
- * Портрет — часть вступления: рядом с тезисом на desktop, между лидом
- * и подробным примером на mobile. Право на работу идёт после вступления.
- *
- * Движение — карта ds/motion-concept.md §7. Вступительного такта на этом
- * маршруте нет вовсе: он живёт только на Hero главной (§5, §7), прямой
- * вход отдаёт конечное состояние. Анимаций здесь нет — экран объявляет
- * движение атрибутами.
- */
+/** About — ds/patterns.md §AboutChapters; facts remain in localized copy. */
 import PageShell from '../layouts/PageShell.astro';
-import MediaFrame from '../components/MediaFrame.astro';
+import AuthorPortrait from '../components/AuthorPortrait.astro';
 import ProseBlock from '../components/ProseBlock.astro';
 import SectionHead from '../components/SectionHead.astro';
 import { about as aboutEn } from '../copy/about.ts';
@@ -27,144 +9,83 @@ import { aboutRu } from '../copy/ru/about.ts';
 import { site as siteEn, type SiteCopy } from '../copy/site.ts';
 import { siteRu } from '../copy/ru/site.ts';
 
-interface Props {
-  locale?: 'en' | 'ru';
-}
-
+interface Props { locale?: 'en' | 'ru'; }
 const { locale = 'en' } = Astro.props;
 const about = locale === 'ru' ? aboutRu : aboutEn;
 const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
+const chapters = [
+  { id: 'approach', heading: about.approach.heading, body: [about.intro.principle] },
+  ...(about.authorization ? [{ id: 'authorization', heading: about.authorization.heading, body: [about.authorization.body] }] : []),
+  { id: 'evidence', heading: about.evidence.heading, body: about.evidence.body },
+  { id: 'ai', heading: about.ai.heading, body: about.ai.body },
+];
 ---
 
-<PageShell
-  title={about.meta.title}
-  description={about.meta.description}
+<PageShell title={about.meta.title} description={about.meta.description}
   ogCard={locale === 'ru' ? 'about-ru' : 'about'}
   current={locale === 'ru' ? '/ru/about' : '/about'}
-  contactLead={about.contactLead}
-  lang={locale}
-  siteCopy={site}
->
-  {/* AboutIntro: лицо и подход видны вместе; пример следует за лидом. */}
+  contactLead={about.contactLead} lang={locale} siteCopy={site}>
   <section class="ds-container intro" data-motion-group data-motion-stagger="tight">
-    <div class="ds-section intro__copy">
-      <h1 class="ds-heading-4xl intro__heading ds-flow-heading" data-motion="reveal-text">
-        {about.intro.heading}
-      </h1>
+    <p class="ds-meta-sm intro__meta" data-motion="fade">
+      <span>{site.brand}</span><span>{about.intro.heading}</span>
+    </p>
+    <h1 class="ds-display-6xl intro__heading">
+      {about.intro.headline.map(line => <span data-motion="reveal-text">{line}</span>)}
+    </h1>
+    <nav class="chapter-index" aria-label={about.contentsLabel} style={`--about-chapter-count: ${chapters.length}`}>
+      {chapters.map((chapter, index) => <a href={`#${chapter.id}`} class="ds-body-sm">
+        <span class="ds-meta-xs" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+        {about.chapterLabels[index]}<span aria-hidden="true">↓</span>
+      </a>)}
+    </nav>
+    <AuthorPortrait src={about.portrait.src} alt={about.portrait.alt}
+      lines={about.profile.headline} action={{ href: about.profile.cvHref, label: about.profile.cv }}
+      class="intro__profile" />
+    <ProseBlock variant="lead" class="intro__lead"><p>{about.intro.lead}</p></ProseBlock>
+  </section>
 
-      <ProseBlock variant="lead" class="intro__lead">
-        <p>{about.intro.lead}</p>
-      </ProseBlock>
+  {chapters.map((chapter, index) => <section id={chapter.id} class="ds-container chapter" data-motion="fade">
+    <div class="chapter__head">
+      <p class="ds-meta-sm chapter__number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</p>
+      <SectionHead size="sm" reveal={false}>{chapter.heading}</SectionHead>
     </div>
-
-    <MediaFrame
-      src={about.portrait.src}
-      alt={about.portrait.alt}
-      ratio="portrait"
-      loading="eager"
-      counterScale={false}
-      reveal={false}
-      class="intro__portrait"
-    />
-
-    <ProseBlock class="intro__body">
-      <p>{about.intro.principle}</p>
+    <ProseBlock motion={false} class="chapter__body">
+      {chapter.body.map(paragraph => <p>{paragraph}</p>)}
     </ProseBlock>
-  </section>
-
-  {/*
-    Здесь место AboutExperience — годы практики и тип опыта (SCR-05).
-    Блок ждёт решения владельца №3 (ia/open-questions.md §3) и в v1 не
-    рисуется, а не рисуется пустым. Место именно тут, а не ниже: годы
-    практики отвечают на тот же формальный фильтр, что и право на работу,
-    и читаются одним заходом. Когда решение будет «указывать» — сюда
-    встаёт SectionHead size="sm" + ProseBlock, всё ниже сдвигается,
-    порядок блоков не меняется.
-  */}
-
-  {/*
-    AboutAuthorization. Текст дословно из ia/authorization-copy.md: порядок
-    фактов внутри абзаца зафиксирован, подача — одна траектория, а не
-    перечисление вариантов через «или». NoteBlock здесь не стоит намеренно:
-    рамка и метка читаются как оговорка, а это не оговорка, а факт.
-  */}
-  {about.authorization && <section class="ds-container ds-section authorization" data-motion-group data-motion-stagger="tight">
-    <SectionHead size="lg">{about.authorization.heading}</SectionHead>
-
-    <ProseBlock>
-      <p>{about.authorization.body}</p>
-    </ProseBlock>
-  </section>}
-
-  {/*
-    AboutEvidence. Два абзаца про ошибки и измерение вынесены из Intro:
-    это один смысловой блок о том, какие утверждения автор готов защищать.
-    Перенос не добавляет фактов и делает формальный фильтр доступным раньше.
-  */}
-  <section class="ds-container ds-section evidence" data-motion-group data-motion-stagger="tight">
-    <SectionHead size="lg">{about.evidence.heading}</SectionHead>
-
-    <ProseBlock>
-      {about.evidence.body.map((paragraph) => <p>{paragraph}</p>)}
-    </ProseBlock>
-  </section>
-
-  {/*
-    AboutAI. Блок фактический, а не декларативный: названные этапы
-    проверяемы, «использую ИИ как инструмент» — заполнитель. Позиции «за»
-    или «против» нет ни в одном абзаце.
-  */}
-  <section class="ds-container ds-section ai" data-motion-group data-motion-stagger="tight">
-    <SectionHead size="lg">{about.ai.heading}</SectionHead>
-
-    <ProseBlock>
-      {about.ai.body.map((paragraph) => <p>{paragraph}</p>)}
-    </ProseBlock>
-  </section>
+  </section>)}
 </PageShell>
 
 <style>
-  /* ---------------------------------------------------------------- *
-   * AboutIntro — текст                                                *
-   * ---------------------------------------------------------------- */
-
-  .intro__heading {
-    color: var(--text-default);
-  }
-
-  .intro {
-    display: grid;
-    gap: var(--flow-group);
-    grid-template-areas: 'copy' 'portrait' 'body';
-  }
-
-  .intro__copy { grid-area: copy; min-inline-size: 0; }
-  .intro > :global(.intro__portrait) { grid-area: portrait; }
-  .intro > :global(.intro__body) { grid-area: body; }
-
+  :global(main:has(> .intro)) { padding-block-start: var(--flow-text); }
+  .intro { display: grid; gap: var(--space-4); }
+  .intro > :global(*) { margin-block-start: 0; }
+  .intro__meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-2) var(--space-4); color: var(--text-meta); }
+  .intro__heading { color: var(--text-default); }
+  .intro__heading > span { display: block; }
+  .intro__heading > span:last-child { color: var(--text-link); }
+  .chapter-index { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 var(--space-4); border-block: var(--border-width) solid var(--border-default); }
+  .chapter-index a { display: flex; align-items: center; gap: var(--space-2); min-block-size: var(--space-12); color: var(--text-default); text-decoration: none; }
+  .chapter-index a > span:last-child { margin-inline-start: auto; }
+  .chapter-index a:active { color: var(--text-link-pressed); }
+  .chapter { display: grid; gap: var(--flow-node); padding-block-start: var(--flow-group); position: relative; }
+  .chapter::before { content: ''; position: absolute; inset-block-start: 0; inset-inline: var(--margin-sm); border-block-start: var(--border-width) solid var(--border-default); }
+  .chapter__head { display: grid; align-content: start; gap: var(--flow-text); }
+  .chapter__head > :global(*) { margin-block-start: 0; }
+  .chapter__number { color: var(--text-link); }
+  @media (--can-hover) { .chapter-index a:hover { color: var(--text-link-hover); } }
   @media (--bp-md) {
-    .intro {
-      grid-template-columns: minmax(0, 1fr) minmax(0, calc(var(--measure-text) / 2 - var(--space-16)));
-      grid-template-areas: 'copy portrait' 'body portrait';
-      column-gap: var(--space-12);
-      align-items: start;
-      align-content: start;
-    }
+    .chapter-index { grid-template-columns: repeat(var(--about-chapter-count), minmax(0, 1fr)); gap: var(--space-4); }
+    .chapter::before { inset-inline: var(--margin-md); }
   }
-
   @media (--bp-lg) {
-    .intro {
-      grid-template-columns: minmax(0, 1fr) minmax(0, calc(var(--measure-text) / 2));
-      column-gap: var(--space-16);
-    }
+    .intro { grid-template-columns: 4fr 6fr; gap: var(--space-6) var(--space-16); }
+    .intro__meta, .intro__heading, .chapter-index { grid-column: 1 / -1; }
+    .intro__heading { padding-block: var(--space-4); font-size: var(--size-5xl); }
+    .intro__heading > span:last-child { text-align: right; }
+    .intro > :global(.intro__lead) { grid-column: 1; grid-row: 4; }
+    .intro > :global(.intro__profile) { grid-column: 2; grid-row: 4; align-self: start; }
+    .chapter { grid-template-columns: 4fr 6fr; column-gap: var(--space-16); }
+    .chapter::before { inset-inline: var(--margin-lg); }
   }
-
-  /* ---------------------------------------------------------------- *
-   * AboutAuthorization, AboutEvidence и AboutAI                       *
-   * ---------------------------------------------------------------- */
-
-  /* Три блока — заголовок и колонка текста, одинаковая пара. Шаг между
-     ними задаёт ds-flow-heading, и он тот же, что в шапке кейса и на
-     главной: с 2026-08-24 у пары «заголовок → тело» одно значение на
-     весь продукт. */
+  @media (--bp-xl) { .intro__heading { font-size: var(--size-6xl); } }
 </style>

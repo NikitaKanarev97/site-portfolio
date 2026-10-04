@@ -12,7 +12,8 @@
  * — это забота съёмки, компонент кадр не обрезает.
  *
  * Один номер и его текст стоят рядом в отдельном поле справа от кадра.
- * Маркеры никогда не закрывают UI и не повторяются на изображении.
+ * Маркеры в левом поле кадра связывают номер с высотой детали,
+ * сохраняя родной UI открытым. На узкой ширине остаётся список.
  * Список остаётся в потоке: длинные пояснения не сталкиваются.
  *
  * Ниже bp-md нумерованный список подписей стоит под кадром
@@ -20,9 +21,8 @@
  *
  */
 import CasePlate from './CasePlate.astro';
-import { frameSize } from '../lib/media';
+import CaseScreen from './CaseScreen.astro';
 import type { Callout } from '../copy/cases/story';
-import { px } from '../lib/tokens';
 
 interface Props {
   callout: Callout;
@@ -32,27 +32,17 @@ interface Props {
 }
 
 const { callout, tone = 'note', plate = 'light', class: className } = Astro.props;
-const size = await frameSize(callout.src);
-const narrowSize = callout.srcNarrow ? await frameSize(callout.srcNarrow) : size;
-const narrowMedia = `(max-width: ${px('bp-md') - 1}px)`;
 ---
 
 <figure class:list={['case-callout', `case-callout--${tone}`, className]}>
   <CasePlate tone={plate}>
     <div class="case-callout__body">
       <div class="case-callout__shot">
-        <picture>
-        {callout.srcNarrow && <source media={narrowMedia} srcset={callout.srcNarrow} width={narrowSize?.width} height={narrowSize?.height} />}
-        <img
-          src={callout.src}
-          alt={callout.altNarrow ?? callout.alt}
-          width={size?.width}
-          height={size?.height}
-          loading="lazy"
-          decoding="async"
-          data-motion="fade-image"
-        />
-        </picture>
+        <CaseScreen item={{ src: callout.src, srcNarrow: callout.srcNarrow, alt: callout.alt, altNarrow: callout.altNarrow, device: 'panel' }}>
+          <Fragment slot="annotations">
+            {callout.marks.map((mark, i) => <span class="ds-meta-xs case-callout__dot case-callout__pin" style={`--y: ${mark.y}%`} aria-hidden="true">{i + 1}</span>)}
+          </Fragment>
+        </CaseScreen>
       </div>
       <ol class="case-callout__list">
         {
@@ -61,6 +51,7 @@ const narrowMedia = `(max-width: ${px('bp-md') - 1}px)`;
               <span class="ds-meta-xs case-callout__dot case-callout__dot--list" aria-hidden="true">
                 {i + 1}
               </span>
+              <span class="case-callout__rule" aria-hidden="true" />
               <span class="ds-body-sm" data-h="caption">
                 {mark.text}
               </span>
@@ -99,13 +90,6 @@ const narrowMedia = `(max-width: ${px('bp-md') - 1}px)`;
     min-inline-size: 0;
   }
 
-  .case-callout__shot img {
-    display: block;
-    inline-size: 100%;
-    block-size: auto;
-    border-radius: var(--radius-sm);
-    box-shadow: var(--shadow-md);
-  }
 
   .case-callout__dot {
     display: inline-grid;
@@ -130,10 +114,13 @@ const narrowMedia = `(max-width: ${px('bp-md') - 1}px)`;
   }
 
   .case-callout__item {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto var(--space-8) minmax(0, 1fr);
+    align-items: start;
     gap: var(--space-3);
   }
+  .case-callout__rule { block-size: var(--border-width); background: var(--mark); margin-block-start: var(--space-3); }
+  .case-callout__pin { display: none; pointer-events: none; }
 
   .case-callout__caption {
     margin-block-start: var(--flow-pair);
@@ -141,6 +128,8 @@ const narrowMedia = `(max-width: ${px('bp-md') - 1}px)`;
   }
 
   @media (--bp-md) {
+    .case-callout__pin { display: inline-grid; position: absolute; inset-inline-start: calc(-1 * var(--space-8)); inset-block-start: var(--y); translate: 0 -50%; }
+    .case-callout__pin::after { content: ''; position: absolute; inset-inline-start: 100%; inset-block-start: 50%; inline-size: var(--space-2); block-size: var(--border-width); background: var(--mark); }
     .case-callout__body {
       display: grid;
       grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
@@ -152,8 +141,5 @@ const narrowMedia = `(max-width: ${px('bp-md') - 1}px)`;
       gap: var(--space-6);
     }
 
-    .case-callout__item {
-      align-items: flex-start;
-    }
   }
 </style>

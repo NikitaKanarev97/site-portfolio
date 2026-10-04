@@ -22,12 +22,12 @@ const catalog = {
     en: {
       cover: 'Agent Ops: a $340 refund awaiting approval, with the customer, agent reason, policy, billing and history beside Reject and Approve.',
       hero: 'An action awaiting approval, with a close-up of the payment and exact message the customer will receive.',
-      caption: 'Before approval: the payment, its destination and the exact customer message are visible together.',
+      caption: 'Before approval: the payment, its destination and the exact customer message are visible together. Demonstration data.',
     },
     ru: {
       cover: 'Agent Ops: возврат $340 ждёт согласования; рядом клиент, обоснование агента, политика, биллинг и история, кнопки «Отклонить» и «Согласовать».',
       hero: 'Действие перед согласованием; крупно — выплата и точный текст сообщения клиенту.',
-      caption: 'До согласования видны сумма выплаты, её получатель и точный текст сообщения клиенту.',
+      caption: 'До согласования видны сумма выплаты, её получатель и точный текст сообщения клиенту. Данные вымышлены.',
     },
   },
   'partner-portal': {
@@ -38,12 +38,12 @@ const catalog = {
     en: {
       cover: 'B2B Partner Portal: three fulfillment plans compared by availability, completion date, shipments and delivery cost.',
       hero: 'Imported specification review: ambiguous, missing and changed product lines with a distinct next action for each.',
-      caption: 'An imported specification becomes a workable order: exact matches proceed, exceptions keep their own next step.',
+      caption: 'An imported specification becomes a workable order: exact matches proceed, exceptions keep their own next step. Demonstration data.',
     },
     ru: {
       cover: 'Партнёрский портал: три плана отгрузки — наличие, дата готовности, число отгрузок и стоимость доставки.',
       hero: 'Проверка спецификации: неоднозначные, отсутствующие и заменённые позиции с отдельным действием для каждой.',
-      caption: 'Спецификация превращается в заказ: точные совпадения проходят дальше, исключения получают свой следующий шаг.',
+      caption: 'Спецификация превращается в заказ: точные совпадения проходят дальше, исключения получают свой следующий шаг. Данные вымышлены.',
     },
   },
   learn: {
@@ -69,12 +69,12 @@ const catalog = {
     en: {
       cover: 'Vet Clinic: today’s visits, with an emergency walk-in at the top of the queue and three records left open.',
       hero: 'Quick visit record: weight, medication and dose, with the draft saved and a short clinical note.',
-      caption: 'A short record at the point of care: weight, medication, dose and a note. The full record remains a separate step.',
+      caption: 'A short record at the point of care: weight, medication, dose and a note. The full record remains a separate step. Fictional patient data.',
     },
     ru: {
       cover: 'Ветклиника: визиты на сегодня — экстренный пациент без записи первым в очереди, три записи не закрыты.',
       hero: 'Быстрая запись визита: вес, препарат, доза, сохранённый черновик и короткая заметка врача.',
-      caption: 'Короткий след приёма: вес, препарат, доза и заметка. Полная карта остаётся отдельным шагом.',
+      caption: 'Короткий след приёма: вес, препарат, доза и заметка. Полная карта остаётся отдельным шагом. Данные пациента вымышлены.',
     },
   },
   pawly: {
@@ -85,12 +85,12 @@ const catalog = {
     en: {
       cover: 'Pawly, one walk in three screens: the owner sees Baikal out for a walk, the walker checks the drop-off photo, the report confirms the return at 14:52.',
       hero: 'Pawly, one walk in three screens: the owner sees who has Baikal and when to expect him home; the walker checks the drop-off photo before sending; the report confirms the return at 14:52 with both photos.',
-      caption: 'Before, during and after one walk. A selected photo is not yet a confirmed return: the walker reviews it before sending, and the report counts only what was received.',
+      caption: 'Before, during and after one walk. A selected photo is not yet a confirmed return: the walker reviews it before sending, and the report counts only what was received. Local demo on invented data.',
     },
     ru: {
       cover: 'Pawly, одна прогулка в трёх экранах: владелец видит, что Байкал на прогулке, исполнитель проверяет фото возвращения, отчёт подтверждает возврат в 14:52.',
       hero: 'Pawly, одна прогулка в трёх экранах: владелец видит, с кем Байкал и когда его ждать; исполнитель проверяет фото возвращения до отправки; отчёт подтверждает возврат в 14:52 с обоими фото.',
-      caption: 'До, во время и после одной прогулки. Выбранное фото ещё не подтверждает возвращение: исполнитель проверяет его до отправки, а отчёт учитывает только полученное.',
+      caption: 'До, во время и после одной прогулки. Выбранное фото ещё не подтверждает возвращение: исполнитель проверяет его до отправки, а отчёт учитывает только полученное. Локальное демо на вымышленных данных.',
     },
   },
 } satisfies Record<CaseSlug, unknown>;

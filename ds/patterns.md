@@ -1,10 +1,26 @@
+**H · 04.10.2026, замечание владельца о краях.** FeaturedCaseCover — article с отдельными ссылками названия/CTA в кейс и отдельным открытием каждого снимка. Все пять карточек имеют radius-lg на каждой ширине. Скриншот — полные пиксели в padded CaseScreen, скругляется только внешняя оболочка. Общий MediaZoom показывает кадр и отдельный текстовый блок, tall capture прокручивается. EN/RU используют одну геометрию. Это заменяет нижеописанную одну ссылку вокруг карточки и острые исключения для Portal/Learn.
+
+H Learn: WorkStage раскладывает два отдельных живых semantic captures (целый answer header + целый programme passport). Passport переснят с прозрачными внешними ancestor backgrounds; PNG без retouch, native radius/border/actions сохранены. Старый composite не используется в этой сцене.
+
+## H6 · сравнение состояний · 04.10.2026
+
+CaseSpecimen: название → группы сравнительных семейств → foundation. Порядок состояний внутри семейства сохраняется; четыре состояния сравниваются в двух рядах, три — в одном ряду от bp-xl, если nativeWidth всех кадров с полями помещается. Более широкие состояния остаются в двух колонках; одиночные семейства соседствуют парой. На mobile те же состояния идут последовательно, первый настоящий компонент доступен до типографической таблицы. Компактная foundation сохраняет native samples, все параметры и свотчи. Нельзя сокращать лист удалением состояния или уменьшением исходного UI.
+
+Home WorkStage: готовые native панели видимы вместе со своими полями и подписью, Agent выделяет рубеж человека без ожидания второй панели. Web builds используют MediaFrame reveal=false. Это заменяет H4 Home cover-interlock; смысловая interlock-обложка Agent и money checkpoint в кейсе сохраняются.
+
+## H · индивидуальные сцены · 04.10.2026
+
+CaseCover получает WorkStage для Portal/Learn/Vet/Pawly и locale; Agent сохраняет принятую interlock-обложку и human checkpoint. Portal — строка 38 рядом с полным выбором; Learn — материал/паспорт и два раскрываемых входа; Vet — ограничение 30 секунд и отдельная передача трёх ролей; Pawly — неизменённая демонстрационная фотография и родной confirmed report. Финал Agent получает 19 экранов / 3 роли из принятого scope, без обещания внедрения. Числа не анимируются как коммерческий рост.
+
 # Паттерны композиции — Site-portfolio
 
-**05.10.2026 · локальное правило RU.** Hero и About опускают authorization при `null`; Hero убирает пустую строку desktop-сетки. PageShell передаёт в RU Footer только copyright, поэтому группа location/UTC/local time не попадает в DOM. Правило действует на всех RU-маршрутах; EN сохраняет полный состав.
+**05.10.2026 · RU.** Hero и AboutChapters опускают authorization при `null`; число колонок оглавления определяется оставшимися главами. PageShell/Footer не выводят location/UTC/local time для RU. Английская композиция версии 4394 сохраняется.
 
-## HeroPortrait · 05.10.2026
+## H · редакционный Home и пять разных материалов
 
-Композиция из существующих `ProseBlock`, `MediaFrame ratio=portrait`, `TextLink` и `CopyEmail`. Имя и роль — начало траектории; портрет и короткая личная строка показывают автора, ссылка ведёт в About. На desktop текст и действия слева, фотография справа; на mobile маленький портрет с подписью стоит между специализацией и авторизацией. Кейсов в этой композиции нет, вход в работы — якорь `#work`. Фото eager, собственное место зарезервировано; обычный fade в общем intro без встречного масштаба. Длины строк, цели нажатия и сетка берутся из ДС. EN/RU используют один шаблон и один файл фотографии. Новых компонентов и токенов не требуется.
+HeroPackage: автор → Product Designer (display-7xl) → специализация/авторизация → CV/email/вход. Компактная редакционная геометрия, затем индекс пяти native ссылок и первый Agent Ops. Индекс использует порядок и локализованные названия того же featured registry. На mobile полный пакет читается в потоке, targets ≥space-12. Webflow остаётся ниже пяти продуктовых работ.
+
+FeaturedCaseCover: native anchor с номером/названием/коротким обещанием, WorkStage, годом/доказательством и CTA. У каждого материала своя высота и форма; общий 16:9 подиум снят. Agent — тёмное сопоставление с Human review; Portal — редакционная строка 38 и native выбор; Learn — широкая связка двух входов; Vet — короткое ограничение и плотная запись; Pawly — demo-фотография и mobile report. Название/описание не кладутся поверх UI или фото. Внутренняя геометрия меняется под смысл, внешние поля/шкала остаются из DS. Это направление H заменяет однообразную композицию G-final, не факты пяти stories.
 
 **Заведён:** 2026-08-24, при расширении каталога компонентов.
 **Зачем:** `ds/CONTRACT.md` §«Что делать, если нужного нет» требует проверить композицию до того, как заводить компонент. Проверка прошла — часть узлов вайрфреймов собирается из существующих компонентов и в каталог не идёт. Чтобы они не собирались каждый раз заново и по-разному, состав записан здесь.
@@ -154,8 +170,6 @@
 
 ## `HeroPackage`
 
-**05.10.2026:** текущая композиция — `HeroPortrait` выше. Скрининговые факты и действия сохранены; старое требование непрерывного текстового порядка и горизонтальный шаг действий ниже описывают прежнюю раскладку.
-
 Скрининговый пакет главной (`SCR-01`, `SCR-02`, `SCR-04`, `SCR-06`, `SCR-07`). Записан 2026-08-24, при сборке Home.
 
 **Собирается из:** `<h1>` `ds-display-5xl` + строка роли `ds-heading-2xl` + `ProseBlock variant=body` (специализация) + строка права на работу `ds-body-base` + ряд действий: `TextLink type=arrow` (вход в кейс) + `TextLink` (CV) + `CopyEmail appearance=action`.
@@ -173,12 +187,10 @@
 
 **Собирается из:** `SectionHead size=lg reveal={false}` + `ProseBlock variant=body motion={false}` + `TextLink type=arrow`.
 
-- У этого нижнего блока портрета нет: фотография уже показана в HeroPortrait и во вступлении `/about`.
+- Портрета здесь нет: он живёт на `/about` и не на первом экране.
 - `reveal` и `motion` сняты намеренно: блок идёт opacity целиком, и собственные такты внутри него дали бы два каскада на одном пороге.
 
 ## `AboutPortrait`
-
-**05.10.2026:** портрет встроен в AboutIntro: справа от текста с `bp-md`, между лидом и подробным примером на mobile. `MediaFrame portrait`, eager, reveal=false; desktop ширина — половина measure-text, tablet — эта мера минус space-16. Ниже сохранена историческая спецификация отдельной секции, её порядок и отдельное Раскрытие больше не применяются.
 
 Портрет на `/about` (`IA-04`, `SCR-05`). Записан 2026-08-24, при сборке About.
 
@@ -340,3 +352,16 @@ Checkpoint composition: CaseSteps + CaseScreen + CasePlate + статичный 
 `FeaturedCaseCover` now shows all five accepted stories in registry order. Each cover composes their actual `ShotItem` panels through `CaseScreen`, with the existing case surface, cover ratio, space, radius and typography roles. Desktop panels fit their natural proportions within the canvas; narrow views use original narrow captures. Agent retains both consequence panels; the Pawly home preview selects the complete confirmed report, while the full three-phone sequence remains inside the case. No product pixels are redrawn. Home promise/status belongs to `featured-work.ts`; title, theme and media come from the accepted story. Legacy `ScreenStack` remains an explicit three-frame /kit fixture.
 
 The Home hero names Product Designer as h1, with the author as metadata. Webflow stays below all five works. Its real external links progressively open `ProjectDialog` when JS is available; without JS or when scripts are blocked, the destination remains usable. Dialog focus, Escape and close return use the native dialog.
+# H4 · редакционная главная, 04.10.2026
+
+Hero: имя и явная роль → двухстрочное позиционирование → пять быстрых якорей → реальный Agent approval с отдельной подписью и краткая специализация/контакты. Desktop даёт крупную типографику и предметный материал, mobile сохраняет все пять якорей и настоящий UI до биографии. Тексты EN/RU различаются в copy, структура одна.
+
+FeaturedCase сохраняет article, название/CTA и отдельные увеличения. Общая белая страница связывает работы; dark Agent — флагман; Portal и Learn получают собственный цветной холст только под UI; Vet — белый след одного визита с sage маршрутной строкой; Pawly — фотографический материал без внешней цветной карточки. Это замещает одинаковую цветную оболочку H1–H3. Снимки не уменьшаются ради декора и не маскируются; CaseScreen поля16/24 и внешний radius16 продолжают действовать. Цвета и геометрия берутся из существующих токенов.
+
+## AuthorPortrait и AboutChapters · 05.10.2026
+
+Решение владельца: повтор Agent Ops в hero заменить знакомством с автором; Home и About адаптировать к текущей редакционной композиции H4–H6 перед объединением на4394.
+
+`AuthorPortrait.astro` — общая композиция MediaFrame + короткий тезис + TextLink, без новой интерактивной сущности ДС. Настоящая фотография 3:4, eager, без зума, собственного reveal и контр-масштаба. Скругление фона фотографии — radius-lg, без рамки, тени или обработки лица. Подпись ds-heading-2xl; мобильная фотография space-32, tablet до половины measure-text минус space-16, desktop две равные колонки. Движение fade всего блока. На Home ссылка ведёт в About; на About — в локализованный PDF резюме.
+
+About продолжает крупное двухстрочное вступление Home: имя/метка страницы, h1 ds-display-6xl с text-link на второй строке, индекс четырёх глав, ведущий абзац и AuthorPortrait. Главы: ограничения → право на работу → доказательства → ИИ. Каждый раздел имеет якорь, номер, h2 и ProseBlock; desktop заголовок слева, читаемая колонка справа, mobile последовательно. Содержание и обещания авторизации сохраняются. Все цвета, размеры и интервалы из foundation. Существующие WorkStage и механика кейсов не меняются.

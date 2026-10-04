@@ -23,7 +23,7 @@ const material = {
     { term: 'Role', value: 'Sole product designer' },
     { term: 'Platform', value: 'Web, desktop-first' },
     { term: 'Evidence', value: 'User-tested, accepted' },
-    { term: 'Prototype', value: 'Live', href: PROTOTYPE },
+    { term: 'Prototype', value: 'Live, invented data', href: PROTOTYPE },
   ],
   challenge: {
     label: 'Challenge', thesis: 'Read the promises, not the chats',
@@ -88,7 +88,7 @@ const material = {
     { term: 'The trade-off', value: 'Every payout now waits for a person. Oversight gives control back, but sacrifices automation at the point where money moves.' },
     { term: 'Scope', value: 'Research, IA, UX/UI, the design system and a tested prototype. Brief to acceptance: up to one month.' },
   ],
-  prototype: { label: 'Open the live prototype', href: PROTOTYPE },
+  prototype: { label: 'Open the live prototype, on invented data', href: PROTOTYPE },
 } satisfies LegacyKitStory;
 
 /** The accepted composition, expressed as ordered modules without a new art pass. */

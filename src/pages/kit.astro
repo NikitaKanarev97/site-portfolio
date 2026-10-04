@@ -30,7 +30,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import CopyEmail from '../components/CopyEmail.astro';
 import MediaFrame from '../components/MediaFrame.astro';
 import ScreenStack from '../components/ScreenStack.astro';
-import MediaZoom from '../components/MediaZoom.astro';
 import ProjectDialog from '../components/ProjectDialog.astro';
 import MetaList from '../components/MetaList.astro';
 import SectionHead from '../components/SectionHead.astro';
@@ -59,6 +58,8 @@ import CaseCallout from '../components/CaseCallout.astro';
 import CaseShot from '../components/CaseShot.astro';
 import CaseCarousel from '../components/CaseCarousel.astro';
 import CaseSteps from '../components/CaseSteps.astro';
+import CaseRoutes from '../components/CaseRoutes.astro';
+import { makeLearnStory } from '../copy/cases/learn';
 import CaseImpact from '../components/CaseImpact.astro';
 import CaseNext from '../components/CaseNext.astro';
 import { kitStory as story, kitCovers } from '../copy/kit-case.ts';
@@ -66,6 +67,7 @@ import { kitStory as story, kitCovers } from '../copy/kit-case.ts';
    третьим списком: витрина обязана показывать ровно то, что стоит на
    главной, иначе она перестаёт быть поверхностью QA. */
 import { home } from '../copy/home.ts';
+const routeBlock = makeLearnStory('en').blocks.find(block => block.type === 'steps');
 
 const works = [
   {
@@ -522,7 +524,10 @@ const caseMeta = [
     closeLabel="Закрыть"
   />
 
-  <MediaZoom />
+  <section class="ds-container ds-section" id="h-native-routes">
+    <SectionHead eyebrow="CaseRoutes · native disclosure" size="sm">Два входа в один материал</SectionHead>
+    {routeBlock?.type === 'steps' && <CaseRoutes {...routeBlock.payload} idPrefix="kit-material" />}
+  </section>
 </BaseLayout>
 
 <style>

@@ -1,10 +1,50 @@
+## H6 · сравнительные системные листы и целое появление материала · 04.10.2026
+
+CaseSpecimen сначала показывает реальные семейства: две сравнительные колонки от bp-md; для трёх состояний от bp-xl — столько колонок, сколько помещает исходная nativeWidth с полями. Portal помещает три, более широкие InfoNote Pawly сохраняют две; четыре состояния остаются парой рядов. Семейства с несколькими состояниями занимают всю ширину; одиночные соседние семейства образуют пару, как TrustHeader/ProgressMeter Learn. Foundation завершает лист компактным блоком типографики и палитры. Все группы, состояния, размеры образцов и пиксели источника сохранены. На mobile первый компонент предшествует foundation; таблица располагает native sample рядом с его параметрами.
+
+CaseScreen объявляет fade-image на всей рамке с изображением и подписью, без второго reveal внутри. Native specimens и ссылки Home в кейс статичны: материал узнаваем сразу. Home Agent сохраняет видимое обещание → рубеж человека → последствие, мягко появляется только рубеж; cover-interlock остаётся на обложке кейса. Web builds показывают готовое медиа без независимого reveal.
+
+## H · исправление краёв по замечанию владельца · 04.10.2026
+
+Обязательное правило для всех EN/RU носителей: скриншот показывается целиком в собственном соотношении, без `cover` и маски на его углах. `CaseScreen` держит белое поле 16 px / 24 px от bp-md, внешний radius-lg (16 px) и отдельную строку открытия. Поле отделяет текст у границы исходного захвата от внешнего края. Радиус принадлежит оболочке портфолио; внутренний native UI не перерисовывается. Actual specimens сохраняют прозрачную подложку и исходный alpha-контур, включая красную обводку. `caption?` даёт описание для лайтбокса, по умолчанию берётся alt. `annotations` — слот на геометрии исходного изображения для CaseCallout.
+
+`MediaZoom`: общий native dialog с белой скруглённой панелью, отдельными областью изображения и текстовым блоком. Высокий снимок прокручивается в области изображения, подпись не перекрывает UI. Открывается актуальный `img.currentSrc`, поэтому мобильная версия получает свой захват. Escape, крестик, возврат фокуса и очистка на astro:before-swap обязательны. Без JS ссылка открывает исходное изображение. Кнопки MediaFrame сохраняют прежний контракт.
+
+`FeaturedCase` теперь article: название и CTA — ссылки в кейс, каждый снимок отдельно открывает лайтбокс. Вложенных интерактивных элементов нет. Все пять внешних карточек имеют radius-lg на всех ширинах. Hero proof использует ту же рамку, отдельную подпись и ссылку в кейс. CasePlate и natural/framed MediaFrame также используют radius-lg; скругление не переносится на native пиксели.
+
+Эта правка заменяет прежние указания об одной ссылке вокруг всей FeaturedCase, квадратных Portal/Learn карточках и скругляющей маске CaseScreen. Правило проверяется на Home и пяти кейсах EN/RU одновременно; новые захваты обязаны сохранять целый смысловой блок и родные обводки.
+
+В pinned overview Agent резервируется место для полей рамки и строки открытия, чтобы целый белый контейнер помещался в stage. Служебная подпись открытия помечена data-h-utility: harmony исключает навигационные действия из редакционного лимита кейса, как уже исключает CaseNext; сами подписи материала и prose продолжают считаться.
+
+Видео внутри CaseScreen использует те же внешние поля, внутренний MediaFrame не добавляет второй отступ; manual film, нативные controls и lifecycle сохраняются.
+
+Белый фон поля MediaZoom продолжается под белым native снимком: контрастная подложка не должна визуально превращать край tight capture в новую рамку, к которой прижат текст. Поля16/24 px остаются видимым отступом до внешнего края панели.
+
+## H · художественный проход · 04.10.2026
+
+**H-ART-01 hero proof**: compact role/index precede a whole native Agent approval card. Desktop text/UI share the opening; mobile shows all five quick entries and actual UI before biography/actions. Facts, CV and CopyEmail remain. Proof is one native link, no nested interactive UI; existing display/space and intro movement.
+
+**H-ART-02 LearnStage**: dominant contiguous real material (version/title/intro/complete first diagnostic section), actual curriculum current unit03 with the same title and unchanged native programme passport. Resource ID/route captions join contexts; no simulated interface. Desktop top-aligned plane/context, mobile current unit precedes material and passport follows it. Native edges/colors remain.
+
+**H-ART-03 VetStage**: clinical trace above actual invoice and owner publication; modest30s task constraint. Same visit, saved09:12/published09:13, three role/device views. Desktop two levels, mobile ordered views. Existing fade-image group, no pin/new primitive.
+
+`LearnStage` и `VetStage` — внутренние композиции `WorkStage`, общие для Home/CaseCover. Props locale, loading. Только существующие CaseScreen, typography/space/border/surface роли; медиа и alt — принятые source story или зарегистрированные native captures. Figures имеют отдельные подписи; нет вложенных контролов. Нативные края Learn проходят без вторичной маски; обычные Vet screenshots — через существующий CaseScreen. Существующая fade-image хореография; в reduce/no-JS весь материал доступен сразу.
+
+**CaseRoutes**: два native details для двух контекстов одного материала; первый открыт, второй раскрывается клавиатурой/тапом. Завершение — отдельный постоянно видимый третий кадр. CaseScreen хранит полный продуктовый край; controls не имитируют продукт. Без JS те же disclosures работают. Перестройка геометрии вызывает общий ScrollTrigger.refresh; собственной анимации нет.
+
+**CaseSteps composition=handoff**: последовательная передача роли; первый планшетный материал во всю ширину, desktop счёт и телефон рядом. Mobile — все три целых материала в порядке передачи. Нет pin.
+
+**CaseImpact variant=editorial** и **CaseThesis variant=editorial**: финал с крупными фактами объёма и коротким тезисом. Это не метрики эффекта. Display/5xl, display/7xl, flow/space, semantic colors; keyboard/static одинаковы.
+
 # Компоненты — Site-portfolio
 
-**05.10.2026 · русская версия без личных географических сведений.** Решение владельца: на RU-маршрутах не публикуются местонахождение, гражданство, переезд, визовая поддержка и часовой пояс. `Footer` принимает location/utcLabel/timeZone как необязательную группу; `siteRu.footer` содержит только copyright. Главная и About не выводят authorization при `null`, а desktop Hero убирает соответствующую строку сетки. Метаданные, RU OG-карточка и скачиваемое русское CV следуют тому же правилу. Английские сведения и часы сохраняются.
+**05.10.2026 · публикация версии 4394.** Источник — текущий checkout `portfolio-art-direction-h` на базе `d684f91` вместе с локальными Home/About/AuthorPortrait и logo-v4. `Footer` принимает location/utcLabel/timeZone как необязательную группу; русская локаль передаёт только copyright. Hero и AboutChapters опускают authorization при `null`. В RU не публикуются местонахождение, гражданство, релокация и часовой пояс, включая метаданные, OG и русское PDF. EN сохраняет состав и сведения версии 4394.
 
-**05.10.2026 · портрет на главной.** `MediaFrame ratio=portrait loading=eager reveal=false counterScale=false` используется в HeroPortrait и во вступлении About. Размер и адаптивное положение задаёт композиция страницы; содержимое лица не перекрывается текстом или декором. Подпись и ссылка на About используют существующие body-sm и TextLink. Каталог и токены не расширяются.
+## H · `WorkStage` / 04.10.2026
 
-**04.10.2026 · правки визуальной подачи.** `CaseCover proof` поддерживает `layout: procurement` и `workflow`: `ProcurementCover` связывает исходную строку XLS, реальные строки очереди с тремя разными исключениями и подтверждённый выбор. Сетка 1:2 на desktop; native narrow UI и последовательный поток на mobile. `ShotItem.field: plain` убирает вторую подложку в `CaseSteps` у самостоятельных панелей продукта. `CaseScreen` вписывает изображение через `contain`. `CaseCallout` размещает один номер и его текст рядом справа от изображения, без дублирования и наложения на UI; на mobile список стоит ниже. Список в потоке не допускает пересечений длинного текста. Источники Learn захватываются целыми смысловыми блоками с полями, alpha-контур паспорта сохраняется. Тексты сайта не маркируют данные как вымышленные или синтетические, согласно уточнению владельца.
+Общая художественная композиция настоящих материалов для `FeaturedCase` и `CaseCover`. Props: theme, media (существующий CoverMedia), locale, usage=home|cover, loading. Варианты: agent — два последствия и gate; portal — строка 38 рядом с целой native decision-панелью; learn — общая статья с диагностическим разделом, текущий ресурс 03 и паспорт программы; vet — native след врача сверху, счёт регистратуры и публикация владельцу ниже; pawly — исходная demo-фотография и настоящий подтверждённый mobile report. UI остаётся CaseScreen, без дорисовки, двойной рамки, повторной увеличенной копии или искажения пропорции. Learn использует native край без дополнительного кропа; паспорт со своим радиусом и прозрачными внешними углами. Мобильная последовательность Learn: ресурс → материал → паспорт; Vet: врач → регистратура → владелец. 30 секунд — исходное ограничение, не результат.
+
+Текст и цвета: существующие display/heading/body/meta, surface-cover, text-on-inverse/default; поля space/flow. Новых примитивов нет. NativeWidth сохраняется у телефонов. Mobile: последовательные цельные narrow panels; фотография целиком, отчёт отдельно. Home — одна внешняя native ссылка, без вложенных controls. Cover не содержит действия, которое имитировало бы продукт. Движение исходных кадров через существующий fade-image; Agent CaseCover interlock/checkpoint сохраняет свою хореографию. Без JS/reduce вся композиция видима.
 
 **G-common-E · E-G-01/02/03:** общий CaseScreen поддерживает optional ShotItem.film, проверяет video и передаёт его MediaFrame. Ручной режим отдаёт MP4 первым, WebM вторым; loop порядок прежний. Film сохраняет время при паузе вне viewport/вкладки и остаётся ручным при возврате/live preference. MediaFrame очищает observers, listeners и stall timer на astro:before-swap. Кнопки/фреймы продукта и DS tokens не меняются.
 
@@ -90,7 +130,7 @@ FeaturedCase исполняет паттерн FeaturedCaseCover: одна сс�
 
 ## `Navbar`
 
-Навигация с персональным знаком `NK`, ведущим на главную, и четырьмя пунктами: Work · Development · About · Contact (`IA-05`). Актуальный исходник знака — `Images/logo-portfolio-v4.svg` (05.10.2026). Знак встраивается inline и наследует `currentColor` от ссылки, включая её нажатое состояние. В v4 облегчена и сужена N, раскрыта ветвящаяся K, компенсированы её диагональные окончания. `Images/logo-portfolio-v4-compact.svg` увеличивает межбуквенный просвет для favicon; SVG и PNG 16/32 px подключены в `BaseLayout`. Геометрия и применение — `ds/logo.md`.
+Навигация с персональным знаком `NK`, ведущим на главную, и четырьмя пунктами: Work · Development · About · Contact (`IA-05`). Исходник знака — `Images/logo-portfolio.svg`; в компонент он встраивается inline, чтобы основной цвет и акцент брались из смысловых токенов.
 
 Локализованные маршруты добавляют в тот же компонент группу `EN / RU`. Это не отдельный контрол ДС: два настоящих URL собраны существующим `TextLink type=nav`, активная локаль получает `aria-current="page"`. На desktop группа отделена волосяной линией от навигации, на mobile стоит отдельной строкой внутри той же фокус-ловушки. Язык является частью URL, поэтому переключатель работает без JavaScript и не требует скрытого состояния.
 
@@ -101,7 +141,7 @@ FeaturedCase исполняет паттерн FeaturedCaseCover: одна сс�
 | `breakpoint=desktop` | Пункты в строку, справа от имени |
 | `breakpoint=mobile` | Имя + триггер раскрытия; панель поверх контента (№33) |
 
-- **Токены:** `surface-default` · `text-default` на знаке · `text-link-pressed` при нажатии · `text-link-hover` на триггере · `border-default` + `border-width` · `space-6` / `space-8` / `space-12` · `motion-hover` · `motion-press`
+- **Токены:** `surface-default` · `text-default` на основном теле знака · `text-link` на рыжей метке · `text-link-hover` · `text-link-pressed` · `border-default` + `border-width` · `space-6` / `space-8` / `space-12` · `motion-hover` · `motion-press`
 - **Наведения у логотипа нет, нажатие есть.** Подчёркивание Строки принадлежит пунктам навигации, логотип — не пункт. Нажатие есть у каждой цели без исключения: оно подтверждает приём тапа, а не обещает переход. Видимый знак скрыт от accessibility tree, имя ссылки приходит строкой бренда из `site.brand` через `aria-label`.
 - **Доступность:** триггер — `<button>` с `aria-expanded` и `aria-controls`. Панель ловит фокус, закрывается по `Escape`, возвращает фокус на триггер. Скролл под панелью блокируется. Это единственное место в продукте, где нужна фокус-ловушка. **Решение изменено при реализации 2026-08-24:** ловушка написана руками, без Radix Dialog. Причина — §Стек контракта: GSAP остаётся единственной JS-зависимостью, а Radix потянул бы React в сборку ради одного компонента. Поведение реализовано целиком: `Escape`, циклический `Tab`, возврат фокуса на триггер, блокировка скролла, закрытие при уходе на десктопную раскладку. `ds-strategy.md` §2 в части `MobileNav` этим отменён.
 - **Цель нажатия на мобильном:** логотип, триггер и каждый пункт панели — не ниже `space-12`. Сам знак занимает `space-12 − space-2` (40 px) по высоте; подрезанный по реальной геометрии `viewBox` не оставляет вокруг него невидимых полей. Кликабельная область знака остаётся `space-12`, поэтому строка шапки встаёт ровно в `space-24` по высоте на обоих брейкпоинтах.
@@ -471,3 +511,24 @@ Astro скоупит стили страницы атрибутом `data-astro-
 `DiagramCanvas` renders an existing optional group label at two grid cells from the left and five cells below the group's top. It uses the existing `dg-note` text role. Unlabelled groups retain their frame alone. D-G-01 supplies reserved heading space in the existing Vet role-flow data for desktop and mobile; nodes, edges, answers and IDs are unchanged.
 
 Home uses an external anchor with `data-dialog-open` as the progressive dialog trigger. The initialized handler prevents navigation and opens the native dialog. Without an initialized handler the anchor goes to the original site. Existing button triggers in /kit remain supported; dialog content and focus behavior are unchanged.
+# H4 · FeaturedCase / WorkStage, 04.10.2026
+
+FeaturedCase: отдельные редакционные композиции пяти работ; article остаётся семантическим контейнером с заголовком и CTA. Только Agent имеет полный тёмный фон; Portal/Learn — локальный холст WorkStage, Vet — светлый маршрутный заголовок, Pawly — фото и отчёт на странице. usage=cover сохраняет принятые обложки кейсов; usage=home применяет новую режиссуру. Все физические медиапанели radius-lg, native пиксели и поля CaseScreen неизменны. Никакого вложенного интерактива.
+
+H5: редакционная CaseCover имеет естественную высоту всего содержимого на desktop и mobile. Высота окна задаёт минимум; она не отсекает нижнюю часть фотографии, полного отчёта или подписи. Это правило стоит после базовой фиксированной высоты video/screen cover. Проверка целого материала включает границы всех предков, а не только локальной CaseScreen.
+
+
+## Technical corrections · owner feedback · 04.10.2026
+
+Home hero proof explains AI oversight and opens Agent Ops through the whole CaseScreen (`href`, `linkLabel`). FeaturedCase uses a stretched CTA over its editorial surface; all native Home frames open the relevant case. Inside cases, CaseScreen keeps MediaZoom. No nested anchors.
+CaseCallout: a flowing numbered list on every width, number → short rule → explanation. From bp-md matching markers sit in the left frame field at the detail's height; they never cover native UI. Below bp-md the numbered legend remains without cramped pins. No absolute label collision. The native image uses the same padded CaseScreen and zoom as other captures.
+CaseCarousel phone slides use a compact width and 16px plate fields, with arrows and an accurate end counter. Pawly has four meaningful screens: address, candidates, profile, dated verification details. Resize updates the controls; rapid actions retain their target and the previous button always leaves the last reachable stop.
+CaseSteps measures the whole frame, including padding, action row and caption, before fitting it to a pinned scene. A text ResizeObserver updates the measurement; teardown removes its sizing and observer. Only one state is visible during exchange. Focus scrub uses 0.25s catch-up from the mirrored motion layer. Tablet/mobile/short/reduce remain a natural list.
+CaseNext clips horizontally; its track has vertical breathing room and heading line-height, preserving ascenders and descenders.
+Learn documentary regions include native pale-blue fields. Completion begins with the whole final diagnostic section and ends after the whole action, without partial curriculum rows. Assessment includes native top/bottom fields; landing ends at the complete hero boundary. Native progress/trust alpha is isolated without repainting components.
+
+## AuthorPortrait · 05.10.2026
+
+Композиция существующих MediaFrame и TextLink для Home/About описана в ds/patterns.md. Фотография 3:4, короткий тезис ds-heading-2xl и цель высотой минимум space-12. Фон фотографии скруглён radius-lg в самой композиции, без изменения вариантов MediaFrame. Это общий файл паттерна, не новая интерактивная сущность /kit.
+
+Navbar использует Images/logo-portfolio-v4.svg. BaseLayout — favicon-v4.svg и PNG16/32; версия и геометрия из ds/logo.md. MediaZoom и прочие механики текущих кейсов сохранены.

@@ -81,7 +81,7 @@ export const agentOpsConsole = {
       { term: 'Role', value: 'Product Designer' },
       { term: 'Platform', value: 'Web — desktop-first, responsive to 360 px' },
       { term: 'Evidence', value: 'Paid client · user-tested · accepted' },
-      { term: 'Prototype', value: 'Live', href: PROTOTYPE },
+      { term: 'Prototype', value: 'Live, on invented data', href: PROTOTYPE },
     ],
     /** CASE-02: что решено и какой ценой, в шапке, одним абзацем. */
     outcome:
@@ -93,8 +93,8 @@ export const agentOpsConsole = {
     ],
     /** CASE-04. Вариант flagged, как у трёх опубликованных кейсов. */
     rework: {
-      label: 'Under NDA',
-      text: 'The client, the AI vendor and the people in the research are not named; the industry, the problem and the operating figures are cleared for publication. The work ended with the prototype tested and accepted; the build was the client’s, so nothing here claims a shipped result.',
+      label: 'Under NDA, on invented data',
+      text: 'The client, the AI vendor and the people in the research are not named; the industry, the problem and the operating figures are cleared for publication. Everything on the screens is fixture data — the companies, people, invoices and amounts are invented and none belong to the client. The work ended with the prototype tested and accepted; the build was the client’s, so nothing here claims a shipped result.',
     },
   },
 
@@ -165,7 +165,7 @@ export const agentOpsConsole = {
     prototype: {
       href: PROTOTYPE,
       label: 'Open the prototype',
-      note: 'The clickable console — nineteen screens across three roles. There is no backend; a reload starts a fresh shift.',
+      note: 'The clickable console on invented data — nineteen screens across three roles. There is no backend; a reload starts a fresh shift.',
     },
     /**
      * Клип взаимодействия — `CASE-20` в части «видео реального
@@ -189,7 +189,7 @@ export const agentOpsConsole = {
         src: `${media}/screen-index.webp`,
         alt: 'Head of the prototype index — nineteen screens, forty-four design-system components — above the five screens of the Supervise group, each card rendering the screen itself rather than a picture of it',
         caption:
-          'Nineteen screens on one shared data layer, and the index renders each of them live rather than as a picture of it.',
+          'Nineteen screens on one mock data layer, and the index renders each of them live rather than as a picture of it.',
       },
       {
         src: `${media}/storybook-matrix.webp`,
@@ -349,7 +349,7 @@ export const agentOpsConsole = {
       {
         term: 'Verified',
         value:
-          'The prototype — nineteen screens on twenty routes across three roles — was tested with users, reworked on the findings and accepted by the client. Before that a agent run failed six checks of forty-two and none after the fixes; it caught the verdict-key defect and the telemetry loss.',
+          'The prototype — nineteen screens on twenty routes across three roles — was tested with users, reworked on the findings and accepted by the client. Before that a synthetic agent run failed six checks of forty-two and none after the fixes; it caught the verdict-key defect and the telemetry loss.',
       },
       {
         term: 'What changed in how I work',
@@ -400,7 +400,7 @@ const agentOpsMaterial = {
     { term: 'Role', value: 'Sole product designer' },
     { term: 'Platform', value: 'Web, desktop-first' },
     { term: 'Evidence', value: 'Paid client · user-tested, accepted' },
-    { term: 'Prototype', value: 'Live', href: PROTOTYPE },
+    { term: 'Prototype', value: 'Live, invented data', href: PROTOTYPE },
   ],
   challenge: {
     label: 'Challenge', thesis: 'Read the promises, not the chats',
@@ -465,7 +465,7 @@ const agentOpsMaterial = {
     { term: 'The trade-off', value: 'Every payout now waits for a person. Oversight gives control back, but sacrifices automation at the point where money moves.' },
     { term: 'Scope', value: 'Research, IA, UX/UI, the design system and a tested prototype. Brief to acceptance: up to one month.' },
   ],
-  prototype: { label: 'Open the live prototype', href: PROTOTYPE },
+  prototype: { label: 'Open the live prototype, on invented data', href: PROTOTYPE },
 } satisfies LegacyKitStory;
 
 /** The accepted composition, expressed as ordered modules without a new art pass. */
@@ -478,7 +478,7 @@ export const agentOpsStory = defineStory({
     { id: 'missing-evidence', type: 'detail', evidenceId: 'agent-panels', mediaId: 'agent-evidence',
       payload: { thesis: agentOpsMaterial.details, callout: agentOpsMaterial.details.callout } },
     { id: 'accepted-prototype', type: 'outcome', motion: 'static', evidenceId: 'agent-acceptance',
-      payload: { result: agentOpsMaterial.result,
+      payload: { presentation: 'editorial', cards: [{ value: '19', caption: 'screens · accepted prototype' }, { value: '3', caption: 'roles · one oversight system' }], result: agentOpsMaterial.result,
         tradeoff: { label: agentOpsMaterial.closing[0].term, text: agentOpsMaterial.closing[0].value },
         evidence: { label: agentOpsMaterial.closing[1].term, text: agentOpsMaterial.closing[1].value } } },
   ],

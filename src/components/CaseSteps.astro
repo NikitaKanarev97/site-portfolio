@@ -21,7 +21,7 @@ interface Props {
   items: (Thesis & { shot: ShotItem; layout?: 'wide' | 'split'; caption?: string; desktopOnly?: boolean; scene?: 'overview' | 'workspace' | 'promise' | 'decision' })[];
   tone?: 'light' | 'dark';
   variant?: 'focus';
-  composition?: 'checkpoint';
+  composition?: 'checkpoint' | 'handoff';
   gate?: string;
   class?: string;
 }
@@ -30,7 +30,7 @@ const { label, items, tone = 'light', variant, composition, gate, class: classNa
 const pad = (n: number) => String(n).padStart(2, '0');
 ---
 
-<div class:list={['case-steps', variant && `case-steps--${variant}`, composition && `case-steps--${composition}`, className]} data-composition={composition} data-motion={variant === 'focus' ? 'focus-stage' : 'pin-swap'}>
+<div class:list={['case-steps', variant && `case-steps--${variant}`, composition && `case-steps--${composition}`, className]} data-composition={composition} data-motion={composition === 'handoff' ? undefined : variant === 'focus' ? 'focus-stage' : 'pin-swap'}>
   {composition === 'checkpoint' && <div class="case-steps__field-bleed" aria-hidden="true" />}
   <p class="ds-meta-xs case-steps__label">{label}</p>
   <div class="case-steps__stage">
@@ -53,7 +53,7 @@ const pad = (n: number) => String(n).padStart(2, '0');
             {composition === 'checkpoint' && step.scene === 'decision' && <div class="case-steps__stop"><span class="case-steps__stop-symbol" aria-hidden="true"><i /><i /></span><p class="ds-meta-xs">{gate}</p></div>}
           </div>
           <div class="case-steps__shot">
-            <CasePlate tone={composition === 'checkpoint' ? 'dark' : variant === 'focus' ? 'light' : tone} class={step.shot.field === 'plain' ? 'case-plate--plain' : undefined}>
+            <CasePlate tone={composition === 'checkpoint' ? 'dark' : variant === 'focus' ? 'light' : tone}>
               <CaseScreen item={step.shot} class="case-steps__screen" />
             </CasePlate>
             {step.caption && <p class="ds-body-sm case-steps__caption" data-h="caption">{step.caption}</p>}
@@ -66,6 +66,12 @@ const pad = (n: number) => String(n).padStart(2, '0');
 </div>
 
 <style>
+  .case-steps--handoff .case-steps__step { display: block; }
+  @media (--bp-lg) {
+    .case-steps--handoff .case-steps__list { grid-template-columns: 3fr 2fr; gap: var(--flow-block) var(--space-12); align-items: start; }
+    .case-steps--handoff .case-steps__step:first-child { grid-column: 1 / -1; }
+    .case-steps--handoff .case-steps__step:last-child .case-steps__shot { max-inline-size: calc(var(--space-48) * 2); margin-inline: auto; }
+  }
   .case-steps__label {
     margin: 0;
     color: var(--text-meta);
@@ -128,7 +134,7 @@ const pad = (n: number) => String(n).padStart(2, '0');
   }
   .case-steps--focus.is-focused .case-steps__list {
     position: relative;
-    block-size: 100%;
+    block-size: calc(100% - var(--flow-node));
     margin: var(--flow-node) 0 0;
     display: block;
   }
@@ -162,10 +168,8 @@ const pad = (n: number) => String(n).padStart(2, '0');
     min-block-size: 0;
     padding: var(--space-6);
   }
-  .case-steps--focus.is-focused .case-steps__shot :global(.case-steps__screen) {
-    inline-size: min(100%, calc(var(--focus-media-height) * var(--ar)));
-  }
   .case-steps--focus.is-focused .case-steps__caption { margin-block-start: var(--flow-pair); }
+  .case-steps--focus.is-focused .case-steps__caption { flex-shrink: 0; }
 
   @media (--below-bp-md) {
     .case-steps__step--desktop-only { display: none; }
@@ -239,9 +243,6 @@ const pad = (n: number) => String(n).padStart(2, '0');
   .case-steps--checkpoint.is-focused .case-steps__step:not([data-scene='overview']) .case-steps__shot { margin: 0; }
   .case-steps--checkpoint.is-focused .case-steps__step:not([data-scene='overview']) .case-steps__body { margin-block-start: var(--flow-text); }
   .case-steps--checkpoint.is-focused .case-steps__step:not([data-scene='overview']) .case-steps__thesis { font-size: var(--size-5xl); line-height: var(--lh-display); }
-  .case-steps--checkpoint.is-focused .case-steps__step:not([data-scene='overview']) .case-steps__shot :global(.case-steps__screen) {
-    inline-size: min(100%, calc((var(--focus-height) - var(--space-12) * 4) * var(--ar)));
-  }
   .case-steps--checkpoint.is-focused [data-scene='promise'] .case-steps__shot {
     border-inline-start: var(--border-width) solid currentColor;
     padding-inline-start: var(--space-12);
@@ -259,6 +260,12 @@ const pad = (n: number) => String(n).padStart(2, '0');
     .case-steps--checkpoint.is-focused [data-scene='promise'] .case-steps__shot { padding-inline-start: var(--space-8); }
     .case-steps__stop-symbol { inline-size: var(--space-32); block-size: var(--space-32); gap: var(--space-8); }
     .case-steps__stop-symbol i { inline-size: var(--space-6); }
+  }
+  /* Fit the complete frame, including its fields and action, in the scene. */
+  .case-steps--focus.is-focused .case-steps__shot :global(.case-steps__screen),
+  .case-steps--checkpoint.is-focused .case-steps__step .case-steps__shot :global(.case-steps__screen) {
+    inline-size: min(100%, var(--focus-screen-width));
+    flex-shrink: 0;
   }
   @media (--below-bp-md) {
     .case-steps__stop-symbol { inline-size: var(--space-16); block-size: var(--space-16); gap: var(--space-4); }

@@ -13,6 +13,7 @@
  * (ds/motion-concept.md §2).
  */
 import { ClientRouter } from 'astro:transitions';
+import MediaZoom from '../components/MediaZoom.astro';
 import Navbar from '../components/Navbar.astro';
 import { PREVIEW_NOINDEX, site, type SiteCopy } from '../copy/site';
 import { OG_HEIGHT, OG_WIDTH, ogImage as ogImageFor, ogImageAlt } from '../copy/og.ts';
@@ -200,6 +201,7 @@ const image = new URL(ogImageFor(ogCard), Astro.site);
       Слот именованный: содержимое подаёт PageShell, витрина /kit — нет.
     */}
     <slot name="footer" />
+    <MediaZoom zoomCopy={siteCopy.zoom} />
 
     <noscript>
       <p class="ds-container ds-body-sm">{siteCopy.accessibility.noscript}</p>

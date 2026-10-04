@@ -35,9 +35,9 @@ const blocks: CaseBlock[] = en.blocks.map(block => {
 const ru = defineStory<CaseStory>({ ...en, cover:{ ...en.cover, outcome:'Между обещанием и выплатой — человек.',
   media: en.cover.media.variant === 'proof' ? { ...en.cover.media, gate:'Решение человека', eyebrow:'AI-поддержка · Биллинг · Контроль', caption:'Выплата и сообщение · данные прототипа',
     shot:{ ...en.cover.media.shot, alt:'Две настоящие панели прототипа: выплата $340 и сообщение, которое отправит одобрение' },
-    panels:en.cover.media.panels?.map((s,i) => ({ ...s, alt:i === 0 ?'Целое сообщение клиенту, отправляемое при одобрении' : 'Целый предварительный расчёт выплаты $340 до одобрения' })) } : en.cover.media },
-  facts:[{term:'Клиент',value:'NDA · B2B SaaS, биллинг'},{term:'Год',value:'2026'},{term:'Роль',value:'Единственный продуктовый дизайнер'},{term:'Платформа',value:'Web, desktop-first'},{term:'Доказательство',value:'Проверен с пользователями, принят'},{term:'Прототип',value:'Рабочий',href:en.prototype.href}],
-  blocks, prototype:{ ...en.prototype, label:'Открыть прототип' },
+    panels:en.cover.media.panels?.map((s,i) => ({ ...s, alt:i === 0 ? 'Целое сообщение клиенту, отправляемое при одобрении' : 'Целый предварительный расчёт выплаты $340 до одобрения' })) } : en.cover.media },
+  facts:[{term:'Клиент',value:'NDA · B2B SaaS, биллинг'},{term:'Год',value:'2026'},{term:'Роль',value:'Единственный продуктовый дизайнер'},{term:'Платформа',value:'Web, desktop-first'},{term:'Доказательство',value:'Проверен с пользователями, принят'},{term:'Прототип',value:'Рабочий, вымышленные данные',href:en.prototype.href}],
+  blocks, prototype:{ ...en.prototype, label:'Открыть прототип с вымышленными данными' },
 });
 assertStoryPair(en,ru);
 export const commonAgent = { en, ru };

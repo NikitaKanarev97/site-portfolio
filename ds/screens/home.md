@@ -1,8 +1,14 @@
+## H · текущая карта · 04.10.2026
+
+**Замечание владельца о краях, 04.10.2026:** Hero proof и все пять WorkStage используют полный native кадр внутри белого CaseScreen с полями и radius-lg. FeaturedCase — article с независимым увеличением снимков и ссылками названия/CTA. Один MediaZoom в BaseLayout: белая панель, целое изображение и отдельное описание, актуальный узкий исходник на mobile. Пять внешних карточек всегда radius-lg. Это заменяет ранее записанную кликабельную обёртку всего блока и нулевые внешние радиусы.
+
+**H-ART-01..03, актуально:** compact role/index precede native Agent approval UI; biography/actions follow it on mobile. Settled EN/RU geometry determines visibility; previous H1 RU five-links-in-window claim was wrong. LearnStage connects actual material/current unit/passport; VetStage shows three visit roles instead of repeating Portal38. Agent interlock, Portal/Pawly preserved.
+
+Роль Display/5xl и компактный индекс пяти native anchors. Desktop: биография, авторизация и действия слева; целая native карточка одобрения $340 справа. Mobile: роль → все пять входов → реальный UI → биография/авторизация/CV/email. Показанная карточка — принятый прототип, не бизнес-метрика. Все пять работ открыты в принятом порядке. WorkStage: Agent — две целые панели и рубеж человека; Portal — исходная строка 38; Learn — общая статья, текущий ресурс 03 и паспорт программы; Vet — планшетный след, счёт и публикация владельцу; Pawly — demo photograph/confirmed report. 30 секунд — небольшая подпись исходного ограничения Vet. Mobile индекс в двух колонках, все native материалы целиком в последовательном потоке.
+
 # Screen: Home
 
-**05.10.2026 · RU.** По решению владельца из Hero, метаописания, OG-карточки и футера убраны личные географические сведения и релокация. `homeRu.hero.authorization = null`; строка authorization не рендерится, desktop-сетка состоит из intro/actions рядом с portrait. Русское PDF-резюме также не содержит местонахождения и переезда. EN сохраняет прежние сведения.
-
-**05.10.2026 · HeroPortrait, запрос владельца.** Первый экран знакомит с автором: имя, роль в две строки и специализация слева; настоящий портрет справа, короткая строка о связи дизайна с разработкой и `TextLink` на `/about` (RU — `/ru/about`). Изображений и ссылок на отдельный кейс в hero нет: работы начинаются в `#work`. На mobile после специализации стоит компактная горизонтальная пара «портрет + подпись», затем авторизация и действия. На desktop лицо не конкурирует с заголовком; CV, почта и якорь остаются слева. Первое поле — `flow-block`, остальные интервалы — существующие flow/space токены. Фото `MediaFrame portrait`, eager, без кропа лица, без контр-масштаба; общий fade во вступительном такте, full/reduce/no-JS. Новых токенов, компонентов и независимой анимации нет. Эта редакция заменяет прежний запрет портрета в первом экране.
+**05.10.2026 · RU.** Версия 4394: двухстрочный Hero, пять якорей работ, AuthorPortrait и WorkStage. Из RU Hero, метаданных, OG и Footer исключены личные географические сведения; authorization не рендерится при `null`. EN сохраняет полный состав.
 
 **Редакция 2026-09-09:** три крупные работы, две дополнительные в раскрываемом списке; новые CaseArtwork вместо стопок, контекст перед изображением. Актуальная карта и критерии — `case-presentation.md`. Старые описания обложек ниже сохраняют историю предыдущей версии.
 
@@ -298,3 +304,15 @@
 # G-final · accepted-story home, 04.10.2026
 
 Current composition: name metadata → Product Designer h1 → short specialisation/availability/CV/email → five visible FeaturedCaseCover entries → subordinate Webflow → About/contact/footer. Agent Ops → Portal → Learn → Vet → Pawly is unchanged. Accepted story media and title are the home source; `src/copy/featured-work.ts` supplies the short localized promise and qualified evidence status. No 30-second outcome or estimated review saving is claimed on Home. The historic three-open/two-collapsed and legacy artwork descriptions below no longer govern the current Home.
+# H4 · художественный вход и смена материала
+
+Небольшая общая роль заменяется двухстрочным позиционированием крупной Manrope, явная роль остаётся рядом с именем. Все пять якорей предшествуют biography и остаются быстрым доступом на360. Настоящий approval и отдельная подпись входят в первый предметный кадр. Техническая приёмка рамок H3 не является художественным закрытием.
+
+Пять stories и порядок сохраняются. Разная геометрия WorkStage видна без одинаковой внешней цветной карточки; фон Agent занимает флагман, Portal/Learn — только собственный UI-холст, Vet — маршрут одной записи, Pawly — фотография и полный отчёт. Шаг секций остаётся из foundation. Общий лайтбокс, полные native источники и 16/24px поля не меняются.
+
+
+Owner correction 04.10.2026: hero proof is explicitly a work example of AI oversight, and its whole surface opens Agent Ops. Featured work surfaces and native frames open their case. Large CTA remains visible; zoom belongs to case detail. The H4 two-line opening and differentiated materials remain.
+
+## Знакомство в текущем H-дизайне · 05.10.2026
+
+По уточнению владельца: фото сначала адаптируется к новому дизайну, затем объединяется на4394. Двухстрочное позиционирование, смещённая рыжая строка и пять быстрых входов сохранены. Повтор Agent approval в hero снят: справа AuthorPortrait, реальная фотография и короткий тезис о доведении исследования до сборки, ссылка в About. На mobile фото128×171 рядом с тезисом следует за индексом работ и предшествует специализации. На desktop левая колонка специализации/контактов4fr, правое поле фото/подписи6fr. Пять последних WorkStage и страницы кейсов сохраняют текущий материал и поведение. Исторические требования к hero proof ниже не действуют.

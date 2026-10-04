@@ -1,114 +1,87 @@
 ---
-/**
- * CaseScreen — ds/components.md, карта ds/screens/case.md §6
- *
- * Один экран продукта в кадре кейса: десктоп или телефон, картинка или
- * клип. Служебный узел модулей CaseShot, CaseCarousel, CaseSteps и
- * CaseCover — у всех четырёх экран обязан выглядеть одинаково.
- *
- * Соотношение читается из файла на сборке (src/lib/media.ts) и уходит в
- * --ar на корне: ряд кадра раздаёт ширину пропорционально --ar, и все
- * экраны ряда встают одной высоты — один масштаб на кадр (правило 4).
- *
- * Мягкий вид (правило 15): скругление и тень из токенов, край — волосяная
- * линия тенью, чтобы не менять раскладку. Никаких подсветок поверх кадра.
- *
- * Клип идёт через MediaFrame video: запуск по видимости, кнопка паузы,
- * reduced-motion и сторож кодека уже живут там.
- */
+/** Full native capture inside a padded portfolio frame. See ds/components.md. */
 import MediaFrame from './MediaFrame.astro';
 import { frameSize } from '../lib/media';
 import type { ShotItem } from '../copy/cases/story';
 import { assertShotMedia } from '../copy/cases/story';
 import { px } from '../lib/tokens';
+import { site } from '../copy/site';
+import { siteRu } from '../copy/ru/site';
 
 interface Props {
   item: ShotItem;
   loading?: 'lazy' | 'eager';
   class?: string;
-  /** Actual specimen: preserve the product's own alpha outline and border. */
   native?: boolean;
+  caption?: string;
+  href?: string;
+  linkLabel?: string;
 }
-
-const { item, loading = 'lazy', class: className, native = false } = Astro.props;
+const { item, loading = 'lazy', class: className, native = false, caption, href, linkLabel } = Astro.props;
 assertShotMedia(item);
 const size = await frameSize(item.src);
 const narrowSize = item.srcNarrow ? await frameSize(item.srcNarrow) : size;
 const narrowMedia = `(max-width: ${px('bp-md') - 1}px)`;
 const ar = size ? size.width / size.height : item.device === 'phone' ? 390 / 844 : 16 / 10;
+const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
 ---
 
 <div
   class:list={['case-screen', `case-screen--${item.device}`, native && 'case-screen--native', className]}
-  style={`--ar: ${ar.toFixed(4)}; --ar-narrow: ${narrowSize ? narrowSize.width / narrowSize.height : ar}; ${item.nativeWidth ? `max-inline-size:${item.nativeWidth}px;` : ''}`}
+  style={`--ar: ${ar.toFixed(4)}; --ar-narrow: ${narrowSize ? narrowSize.width / narrowSize.height : ar}; ${item.nativeWidth ? `max-inline-size:calc(${item.nativeWidth}px + var(--space-6) * 2);` : ''}`}
+  data-motion={!native && !href ? 'fade-image' : undefined}
 >
-  {
-    item.video ? (
+  {item.video ? (
+    <div class="case-screen__media">
       <MediaFrame src={item.src} alt={item.alt} video={item.video} film={item.film} ratio="natural" fill reveal={false} />
-    ) : (
-      <picture>
-      {item.srcNarrow && <source media={narrowMedia} srcset={item.srcNarrow} width={narrowSize?.width} height={narrowSize?.height} />}
-      <img
-        src={item.src}
-        alt={item.altNarrow ?? item.alt}
-        width={size?.width}
-        height={size?.height}
-        loading={loading}
-        decoding="async"
-        data-motion="fade-image"
-      />
-      </picture>
-    )
-  }
+    </div>
+  ) : (
+    <a class:list={['case-screen__open', href && 'case-screen__open--case']} href={href ?? item.src} data-astro-reload={href ? undefined : true} data-zoom-trigger={href ? undefined : true} data-zoom-src={href ? undefined : item.src}
+      data-zoom-alt={item.alt} data-zoom-alt-narrow={item.altNarrow}
+      data-zoom-caption={caption} aria-label={href ? linkLabel : `${copy.zoom.open}: ${item.alt}`}>
+      <div class="case-screen__media">
+        <picture>
+          {item.srcNarrow && <source media={narrowMedia} srcset={item.srcNarrow} width={narrowSize?.width} height={narrowSize?.height} />}
+          <img src={item.src} alt={item.alt} width={size?.width} height={size?.height}
+            loading={loading} decoding="async" />
+        </picture>
+        <slot name="annotations" />
+      </div>
+      <div class="case-screen__text">
+        {caption && <p class="ds-body-sm">{caption}</p>}
+        <span class="ds-meta-xs case-screen__action" data-h-utility>{linkLabel ?? copy.zoom.open}<span aria-hidden="true">↗</span></span>
+      </div>
+    </a>
+  )}
 </div>
 
 <style>
   .case-screen {
-    --screen-edge: var(--border-default);
+    position: relative;
     min-inline-size: 0;
-    aspect-ratio: var(--ar-narrow);
-    border-radius: var(--radius-sm);
-    overflow: hidden;
-    box-shadow:
-      0 0 0 var(--border-width) var(--screen-edge),
-      var(--shadow-md);
-  }
-
-  :global([data-theme='dark']) .case-screen {
-    --screen-edge: var(--border-inverse);
-  }
-
-  .case-screen--phone {
+    padding: var(--space-4);
     border-radius: var(--radius-lg);
+    background: var(--surface-default);
+    color: var(--text-default);
+    box-shadow: 0 0 0 var(--border-width) var(--border-default);
   }
-
-  .case-screen--panel {
-    box-shadow: none;
-  }
-
-  .case-screen img,
-  .case-screen :global(video),
-  .case-screen :global(img) {
-    display: block;
-    inline-size: 100%;
-    block-size: 100%;
-    object-fit: contain;
-  }
-
+  .case-screen__open { display: grid; gap: var(--space-3); color: inherit; text-decoration: none; cursor: zoom-in; }
+  .case-screen__open:focus-visible { outline-offset: var(--space-2); }
+  .case-screen__open--case { cursor: pointer; }
+  .case-screen__open--case::after { content: ''; position: absolute; inset: 0; border-radius: var(--radius-lg); }
+  .case-screen__media { position: relative; aspect-ratio: var(--ar-narrow); }
+  .case-screen__media picture { display: contents; }
+  .case-screen img { display: block; inline-size: 100%; block-size: auto; object-fit: contain; }
+  .case-screen__text { display: grid; gap: var(--space-2); padding-block-start: var(--space-3); border-block-start: var(--border-width) solid var(--border-default); }
+  .case-screen__text p { margin: 0; }
+  .case-screen__action { display: flex; justify-content: space-between; gap: var(--space-3); color: var(--text-subtle); }
+  .case-screen .case-screen__media :global(.media-frame--natural .media-frame__frame) { padding: 0; background: transparent; box-shadow: none; border: 0; }
+  .case-screen--native { background: transparent; box-shadow: none; color: inherit; }
+  .case-screen--native .case-screen__text { border-color: currentColor; }
+  .case-screen--native .case-screen__action { color: inherit; }
   @media (--bp-md) {
-    .case-screen {
-      aspect-ratio: var(--ar);
-      border-radius: var(--radius-md);
-    }
-
-    .case-screen--phone {
-      border-radius: var(--radius-lg);
-    }
+    .case-screen { padding: var(--space-6); }
+    .case-screen__media { aspect-ratio: var(--ar); }
   }
-
-  .case-screen--native {
-    border-radius: var(--radius-none);
-    overflow: visible;
-    box-shadow: none;
-  }
+  @media (--can-hover) { .case-screen__open:hover .case-screen__action { color: var(--text-link-hover); } }
 </style>

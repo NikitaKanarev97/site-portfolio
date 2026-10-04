@@ -42,8 +42,6 @@ export interface ShotItem {
   film?: boolean;
   /** Actual specimen capture width in CSS pixels; prevents enlarging a tiny control. */
   nativeWidth?: number;
-  /** A self-contained product panel needs no second coloured container. */
-  field?: 'plain';
 }
 
 export interface Shot {
@@ -58,7 +56,7 @@ export interface Callout {
   alt: string;
   srcNarrow?: string;
   altNarrow?: string;
-  /** Source observation coordinates; each numbered explanation renders once beside the image. */
+  /** Координаты номера в процентах кадра; текст — до 12 слов. */
   marks: { x: number; y: number; text: string }[];
   caption: string;
 }
@@ -76,8 +74,7 @@ export interface Thesis {
 }
 
 export type CoverMedia =
-  | { variant: 'proof'; eyebrow: string; caption: string; shot: ShotItem; panels?: ShotItem[]; layout?: 'interlock' | 'procurement'; gate?: string;
-      workflow?: { sourceLabel: string; reviewLabel: string; resultLabel: string; source: string; request: string; quantity: string; total: string; exceptions: string; decision: string } }
+  | { variant: 'proof'; eyebrow: string; caption: string; shot: ShotItem; panels?: ShotItem[]; layout?: 'interlock'; gate?: string }
   | {
       variant: 'video';
       /** Адрес ролика без расширения. Нет ролика — читаемый постер. */
@@ -128,7 +125,7 @@ export interface LegacyKitStory {
 
 export interface Steps {
   label: string;
-  composition?: 'checkpoint';
+  composition?: 'checkpoint' | 'routes' | 'handoff';
   gate?: string;
   items: (Thesis & { shot: ShotItem; layout?: 'wide' | 'split'; caption?: string; desktopOnly?: boolean; scene?: 'overview' | 'workspace' | 'promise' | 'decision' })[];
 }
@@ -152,6 +149,7 @@ export interface Specimen {
 
 export interface Outcome {
   result: Thesis;
+  presentation?: 'editorial';
   evidence: { label: string; text: string };
   tradeoff: { label: string; text: string };
   nextEvidence?: { label: string; text: string };

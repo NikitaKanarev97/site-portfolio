@@ -114,7 +114,7 @@ export const site = {
    */
   zoom: {
     label: 'Enlarged screenshot',
-    open: 'Open full size',
+    open: 'Enlarge',
     close: 'Close',
   },
   /**

@@ -64,19 +64,19 @@ export function makeVetStory(lang:'en'|'ru'):CaseStory {
   const root='/media/rebuild/vet-clinic';
   const shot=(name:string,en:string,ru:string,nativeWidth?:number):ShotItem=>({src:`${root}/${name}-${lang}-wide.webp`,srcNarrow:`${root}/${name}-${lang}-narrow.webp`,alt:t(en,ru),device:'panel',nativeWidth});
   return defineStory({theme:'vet',plate:'light',
-    cover:{title:'Vet Clinic OS',outcome:t('One visit. Different responsibilities.','Один визит. Разные зоны ответственности.'),media:{variant:'proof',eyebrow:t('Concept · not deployed in a clinic','Концепт · в клинике не внедрён'),shot:{...shot('cover','Quick trace: Marsik, weight, complete dose calculation and Save actions.','Короткий след: Марсик, вес, целый расчёт дозы и действия сохранения.')},caption:t('Clinical workspace · seed example 4.8 kg / 0.95 ml.','Рабочая поверхность · исходный пример 4.8 кг / 0.95 мл.')}},
+    cover:{title:'Vet Clinic OS',outcome:t('One visit. Different responsibilities.','Один визит. Разные зоны ответственности.'),media:{variant:'proof',eyebrow:t('Concept · not deployed in a clinic','Концепт · в клинике не внедрён'),shot:{...shot('cover','Quick trace: Marsik, weight, complete dose calculation and Save actions.','Короткий след: Марсик, вес, целый расчёт дозы и действия сохранения.')},caption:t('Same demonstration visit · saved trace, invoice and published owner summary.','Один демонстрационный визит · сохранённый след, счёт и опубликованная выписка.')}},
     facts:[
       {term:t('Role','Роль'),value:t('Sole product designer','Единственный продуктовый дизайнер')},
       {term:t('Input','Основание'),value:t('Conversations with one practising vet','Разговоры с одним практикующим врачом')},
       {term:t('Delivery','Результат'),value:t('Working prototype · 2026','Рабочий прототип · 2026')},
-      {term:t('Data','Данные'),value:t('Real clinic under NDA','Реальная клиника под NDA')},
+      {term:t('Data','Данные'),value:t('Real clinic under NDA; all demo data invented','Реальная клиника под NDA; все демо-данные вымышлены')},
     ],blocks:[
       {id:'room-window',type:'shot',evidenceId:'vet-window',mediaId:'vet-queue',motion:'static',payload:{
         thesis:{label:t('Constraint','Ограничение'),thesis:t('A trace before the next patient','След за время паузы'),body:t('I separated a useful trace from the complete record. Thirty seconds between patients was the original constraint, not a measured speed of the new interface.','Я отделил полезный след от полной записи. Тридцать секунд между пациентами — исходное ограничение, а не измеренная скорость нового интерфейса.')},
         shot:{layout:'desktop',items:[{src:`${root}/queue-${lang}.webp`,srcNarrow:`${root}/queue-${lang}-narrow.webp`,device:'panel',alt:t('Today’s queue: all patients at the clinic and an emergency action; wide view includes expected visits.','Очередь дня: все пациенты в клинике и экстренное действие; широкий кадр также показывает ожидаемых.')}],caption:t('Patients first; unfinished records stay visible.','Сначала пациенты; незавершённые записи остаются видны.')},
       }},
       {id:'role-boundaries',type:'artifact',evidenceId:'vet-roles',mediaId:'vet-role-flow',motion:'draw',payload:{thesis:{label:t('Role flow','Ролевой сценарий'),thesis:t('Each role receives its own part','У каждой роли своя часть')},artifact:{data:vetRoleFlow,source:{kind:'editorial',ref:'Veterinary-clinic: current ProductScreens / clinicData; visit-trace + discharge-and-invoice'},caption:t('Editorial flow; roles named inside their zones.','Схема текущего прототипа; роли подписаны внутри зон.')}}},
-      {id:'one-visit',type:'steps',evidenceId:'vet-roles',mediaId:'vet-handoff',motion:'focus',payload:{label:t('One visit · three views','Один визит · три представления'),items:[
+      {id:'one-visit',type:'steps',evidenceId:'vet-roles',mediaId:'vet-handoff',motion:'static',payload:{composition:'handoff',label:t('One visit · three views','Один визит · три представления'),items:[
         {label:t('Veterinarian · tablet','Врач · планшет'),thesis:t('Save the useful facts','Вес, препарат и доза'),body:t('Weight, medication and dose become sourced facts. The full note can follow later. Here: Marsik, 4.9 kg, Meloxicam, 1.00 ml. Saved at 09:12.','Вес, препарат и доза становятся фактами с источником. Полную запись можно дописать позже. Здесь: Марсик, 4.9 кг, мелоксикам, 1.00 мл. Сохранено в 09:12.'),shot:shot('trace','Marsik’s saved facts: 4.9 kg, Meloxicam, 1.00 ml, frequency, source and time.','Сохранённые факты Марсика: 4.9 кг, мелоксикам, 1.00 мл, частота, источник и время.')},
         {label:t('Reception · desktop','Регистратура · desktop'),thesis:t('Bill the work, keep the note private','Счёт готов'),body:t('Selected services create the invoice. Reception sees payer, items and total. Diagnosis and private notes stay in the clinic; payment happens outside the prototype. Two services for Marsik.','Выбранные услуги составляют счёт. Регистратура видит плательщика, позиции и итог. Диагноз и приватная заметка остаются в клинике; оплата происходит вне прототипа. Две услуги Марсика.'),shot:shot('invoice','Complete invoice: payer, selected services, total and payment action.','Целый счёт: плательщик, выбранные услуги, итог и действие отметки оплаты.',640)},
         {label:t('Owner · phone','Владелец · телефон'),thesis:t('Publish a stable document','План уже у семьи'),body:t('The owner receives the same prescription in a published snapshot. A later saved edit does not silently rewrite it. Publishing a new version is explicit. Published at 09:13; viewports share one browser.','Владелец получает то же назначение в опубликованном снимке. Поздняя сохранённая правка не переписывает его молча. Новая версия публикуется явно. Публикация 09:13; размеры окна одного браузера.'),shot:{src:`${root}/owner-detail-${lang}.webp`,srcNarrow:`${root}/owner-${lang}.webp`,device:'panel',nativeWidth:390,alt:t('Phone details: Marsik, publication 09:13, Meloxicam 1.00 ml and complete discharge action; mobile shows the full owner view.','Детали телефона: Марсик, публикация 09:13, мелоксикам 1.00 мл и целое действие выписки; на mobile — полный кабинет владельца.')}},
@@ -111,7 +111,7 @@ export const vetClinic = {
       { term: 'Role', value: 'Product Designer' },
       { term: 'Platform', value: 'Web — responsive: desktop, tablet in the room, owner’s phone' },
       { term: 'Evidence', value: 'Concept · domain input from one vet' },
-      { term: 'Prototype', value: 'Live', href: PROTOTYPE },
+      { term: 'Prototype', value: 'Live, on invented data', href: PROTOTYPE },
     ],
     /** CASE-02: что решено и какой ценой, в шапке, одним абзацем. */
     outcome:
@@ -124,7 +124,7 @@ export const vetClinic = {
     /** CASE-04. Вариант flagged, как в кейсе DSSL: оговорка одна на страницу. */
     rework: {
       label: 'A rebuild, not the clinic’s build',
-      text: 'The clinic is real and so is the NDA. The work went as far as research, a design system and a working prototype; it was not taken into production.',
+      text: 'The clinic is real and so is the NDA. Its name, its people, its patients and its prices appear nowhere here: every screen runs on invented data, and the practice on them — “Lesnaya Clinic” — is a fixture, not the client. The work went as far as research, a design system and a working prototype; it was not taken into production.',
     },
   },
 
@@ -144,7 +144,7 @@ export const vetClinic = {
     ],
     alt: 'The veterinarian’s queue for the day: counts in the header, one line naming three records still open from earlier in the week, patients at the clinic and patients expected — with the patient card and the schedule behind it',
     caption:
-      'The veterinarian’s day — who is here, who is expected, and three records still open from earlier in the week.',
+      'The veterinarian’s day — who is here, who is expected, and three records still open from earlier in the week. Data is invented.',
   },
 
   context: {
@@ -182,7 +182,7 @@ export const vetClinic = {
     body: [
       'This clinic was not coming from paper: practices of this size already run specialised software, so the product had to beat an incumbent rather than replace a filing cabinet — which makes it the only hard evidence there is. I audited it screen by screen against heuristics, with a severity scale that keeps “blocks the work” apart from “looks untidy”, and with a limit written into the report: the veterinarian’s own visit screen, the schedule and the owner cabinet were not in the material I had, and no conclusions were drawn about them.',
       'Then desk research on the market and on the regulation around veterinary records. Three of its numbers could not be traced to a primary source, so they were marked unverified and kept out of the PRD rather than rounded into it. Everything the conversations could not confirm carries the same mark and stays a hypothesis for real customer development — including the two that changed the product, because a hypothesis that flatters your redesign is still a hypothesis.',
-      'Then scope: 31 Must-haves out of 62 requirements, with the core of the appointment declared indivisible — seven parts that ship together or not at all. Then a 44-screen sitemap, three flows, twelve low-fidelity frames. Then the design system, then twelve high-fidelity frames carrying one story end to end, from the queue to the discharge summary on the owner’s phone, with 31 edge cases built as hidden states instead of described in prose. Then a React prototype, a catalogue in Storybook, and agent runs over three scenarios, whose findings came back in four waves of fixes.',
+      'Then scope: 31 Must-haves out of 62 requirements, with the core of the appointment declared indivisible — seven parts that ship together or not at all. Then a 44-screen sitemap, three flows, twelve low-fidelity frames. Then the design system, then twelve high-fidelity frames carrying one story end to end, from the queue to the discharge summary on the owner’s phone, with 31 edge cases built as hidden states instead of described in prose. Then a React prototype, a catalogue in Storybook, and synthetic agent runs over three scenarios, whose findings came back in four waves of fixes.',
       /**
        * Стадия продуктовой доводки после приёмки — прогон
        * `Veterinary-clinic/audit/product-polish/` (`VET-PP-2026-09-12`),
@@ -210,7 +210,7 @@ export const vetClinic = {
     prototype: {
       href: PROTOTYPE,
       label: 'Open the prototype',
-      note: 'The prototype after the polish pass — thirteen screens, three roles; changes stay in your browser.',
+      note: 'The prototype after the polish pass, on invented data — thirteen screens, three roles; changes stay in your browser.',
     },
     /**
      * Клип — `CASE-20`, съёмка `scripts/shoot-clips.mjs vet`.

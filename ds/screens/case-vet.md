@@ -1,3 +1,9 @@
+## H · текущий художественный delta · 04.10.2026
+
+**H-ART-03, актуально:** VetStage replaces large30/side-screen in Home/cover with native Marsik trace, reception invoice and owner publication. Saved09:12/published09:13 link the three views; incomplete clinical record is not named a completed visit.30s is a modest original constraint. Desktop two levels, mobile ordered handoff.
+
+Вход WorkStage: 30 секунд — исходное ограничение, не замер UI. one-visit — открытая handoff композиция: сначала полный след врача, затем счёт и телефон владельца разного масштаба. Сохранение/публикация и fixture timestamps сохранены. Без pin и одинаковых подиумов.
+
 # Screen: CaseVet
 
 ## D · новая composition map · 04.10.2026

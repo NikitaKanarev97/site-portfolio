@@ -1,5 +1,5 @@
 ---
-/** Documentary foundation + actual domain matrices, composed from existing Case modules. */
+/** Actual comparative families, followed by documentary foundation. */
 import CasePlate from './CasePlate.astro';
 import CaseScreen from './CaseScreen.astro';
 import type { Specimen } from '../copy/cases/story';
@@ -10,15 +10,26 @@ const t = (value: { en: string; ru: string }) => value[lang];
 ---
 <figure class="case-specimen">
   <CasePlate tone={tone}>
-    <div class="case-specimen__sheet" style={`--specimen-group-count:${specimen.groups.length}`} data-story-document>
+    <div class="case-specimen__sheet" data-story-document>
       <h3 class="ds-heading-3xl case-specimen__title">{specimen.title}</h3>
+      {specimen.groups.map(group => <section class="case-specimen__sets" data-specimen-part={group.id} aria-label={group.title}>
+        <h4 class="ds-meta-xs case-specimen__group-title">{group.title}</h4>
+        {specimen.sets.filter(set => set.group === group.id).map(set => <div class:list={['case-specimen__set', set.states.length === 1 && 'case-specimen__set--single', set.states.length === 3 && set.states.every(state => state.shot.nativeWidth) && 'case-specimen__set--triple']} style={`--specimen-width:${Math.max(...set.states.map(state => state.shot.nativeWidth ?? 0))}px`} data-specimen-set={set.id}>
+          <h5 class="ds-heading-xl">{set.title}</h5>
+          <ol class="case-specimen__states">{set.states.map(state => <li data-specimen-state={state.id} data-media-id={state.mediaId}>
+            <p class="ds-body-sm case-specimen__state-label">{state.label}</p>
+            <CaseScreen item={state.shot} native />
+          </li>)}</ol>
+        </div>)}
+      </section>)}
       <section class="case-specimen__foundation" aria-label={lang === 'ru' ? 'Основа системы' : 'Foundation'} data-specimen-part="foundation">
+        <h4 class="ds-heading-xl case-specimen__foundation-title">{lang === 'ru' ? 'Типографика и палитра' : 'Typography and palette'}</h4>
         <table class="case-specimen__type ds-body-sm">
           <colgroup><col span="3" style="width:20%" /><col style="width:40%" /></colgroup>
           <thead class="ds-meta-xs"><tr>{(lang === 'ru' ? ['Стиль', 'Применение', 'Параметры', 'Образец'] : ['Style', 'Use', 'Metrics', 'Sample']).map(v => <th scope="col">{v}</th>)}</tr></thead>
           <tbody>{specimen.type.map(row => <tr>
             <th scope="row">{row.style}</th><td>{t(row.usage)}</td>
-            <td class="ds-meta-xs">{row.size}/{row.lineHeight}<br />{row.weight}</td>
+            <td class="ds-meta-xs">{row.size}/{row.lineHeight} · {row.weight}</td>
             <td class="case-specimen__sample" style={`font-family: ${specimen.fontFamily}; font-size:${row.size}px; line-height:${row.lineHeight}px; font-weight:${row.weight};`}>{t(row.sample)}</td>
           </tr>)}</tbody>
         </table>
@@ -29,15 +40,6 @@ const t = (value: { en: string; ru: string }) => value[lang];
           </div>)}
         </div>
       </section>
-      {specimen.groups.map(group => <section class="case-specimen__sets" data-specimen-part={group.id} aria-label={group.title}>
-        {specimen.sets.filter(set => set.group === group.id).map(set => <div class:list={['case-specimen__set', set.wide && 'case-specimen__set--wide']} data-specimen-set={set.id}>
-          <h4 class="ds-meta-xs">{set.title}</h4>
-          <ol class="case-specimen__states">{set.states.map(state => <li data-specimen-state={state.id} data-media-id={state.mediaId}>
-            <p class="ds-body-sm case-specimen__state-label">{state.label}</p>
-            <CaseScreen item={state.shot} native />
-          </li>)}</ol>
-        </div>)}
-      </section>)}
     </div>
   </CasePlate>
   <figcaption class="ds-body-sm case-specimen__caption" data-h="caption">{specimen.caption}</figcaption>
@@ -46,17 +48,20 @@ const t = (value: { en: string; ru: string }) => value[lang];
   .case-specimen { margin-inline: 0; margin-block-end: 0; }
   .case-specimen__sheet { display: grid; gap: var(--flow-group); inline-size: 100%; min-inline-size: 0; }
   .case-specimen__title { grid-column: 1 / -1; }
-  .case-specimen__foundation { min-inline-size: 0; }
+  .case-specimen__foundation { display: grid; gap: var(--space-6); min-inline-size: 0; }
+  .case-specimen__foundation-title { grid-column: 1 / -1; }
   .case-specimen__type { inline-size: 100%; border-collapse: collapse; table-layout: fixed; }
   .case-specimen__type th, .case-specimen__type td { text-align: start; padding: var(--space-3) var(--space-1); border-block-end: var(--border-width) solid var(--border-default); overflow-wrap: anywhere; vertical-align: middle; }
   .case-specimen__type th { font-weight: var(--weight-semibold); }
   .case-specimen__sample { color: var(--text-default); }
-  .case-specimen__colors { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); margin-block-start: var(--flow-group); }
+  .case-specimen__colors { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); align-content: start; }
   .case-specimen__swatch { display: flex; flex-direction: column; gap: var(--space-1); }
-  .case-specimen__paint { block-size: var(--space-12); border: var(--border-width) solid var(--border-default); }
+  .case-specimen__paint { block-size: var(--space-6); border: var(--border-width) solid var(--border-default); }
   .case-specimen__sets { display: grid; align-items: start; gap: var(--space-6); min-inline-size: 0; }
-  .case-specimen__set { min-inline-size: 0; padding: var(--space-4); border: var(--border-width) dashed var(--diagram-proto); border-radius: var(--radius-md); }
-  .case-specimen__states { display: grid; gap: var(--space-6); padding: 0; margin: var(--flow-node) 0 0; list-style: none; }
+  .case-specimen__set { min-inline-size: 0; padding: var(--space-4); border: var(--border-width) dashed var(--diagram-proto); border-radius: var(--radius-lg); }
+  .case-specimen__group-title { margin: 0; color: var(--text-muted); }
+  .case-specimen__states { display: grid; gap: var(--space-6); padding: 0; margin: var(--flow-pair) 0 0; list-style: none; }
+  .case-specimen__states > li { min-inline-size: 0; }
   .case-specimen__state-label { margin-block-end: var(--flow-pair); color: var(--text-muted); }
   .case-specimen__states :global(.case-screen) { max-inline-size: 100%; }
   .case-specimen__caption { margin-block-start: var(--flow-pair); color: var(--text-muted); }
@@ -64,18 +69,21 @@ const t = (value: { en: string; ru: string }) => value[lang];
     .case-specimen__type, .case-specimen__type tbody { display: block; inline-size: 100%; }
     .case-specimen__type colgroup { display: none; }
     .case-specimen__type thead { display: none; }
-    .case-specimen__type tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); padding-block: var(--space-3); border-block-end: var(--border-width) solid var(--border-default); }
-    .case-specimen__type th, .case-specimen__type td { border: 0; }
-    .case-specimen__type .case-specimen__sample { grid-column: 1 / -1; }
+    .case-specimen__type tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--space-3); padding-block: var(--space-2); border-block-end: var(--border-width) solid var(--border-default); align-items: center; }
+    .case-specimen__type th, .case-specimen__type td { border: 0; padding: 0; grid-column: 2; }
+    .case-specimen__type .case-specimen__sample { grid-column: 1; grid-row: 1 / 4; }
     .case-specimen__set { padding: var(--space-2); }
   }
   @media (--bp-md) {
     .case-specimen__sets { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .case-specimen__group-title, .case-specimen__set { grid-column: 1 / -1; }
+    .case-specimen__set--single { grid-column: auto; }
+    .case-specimen__states { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .case-specimen__set--single .case-specimen__states { grid-template-columns: minmax(0, 1fr); }
+    .case-specimen__foundation { grid-template-columns: 3fr 2fr; align-items: start; }
   }
   @media (--bp-xl) {
-    .case-specimen__sheet { grid-template-columns: 35fr 65fr; align-items: start; }
-    .case-specimen__foundation { grid-column: 1; grid-row: 2 / span var(--specimen-group-count); }
-    .case-specimen__sets { grid-column: 2; }
-    .case-specimen__set--wide { grid-column: 1 / -1; }
+    .case-specimen__set--triple .case-specimen__states { grid-template-columns: repeat(auto-fit, minmax(min(100%, calc(var(--specimen-width) + var(--space-6) * 2)), 1fr)); }
+    .case-specimen__colors { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   }
 </style>

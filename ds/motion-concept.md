@@ -1,4 +1,12 @@
+H Home: WorkStage/Agent подключает существующий cover-interlock — сообщение, рубеж человека, выплата. Те же duration/ease/skip/lifecycle, полный native fallback. Root содержит только панели и gate; необязательные lead/caption не создают tween.
+
+## H · native раскрытие · 04.10.2026
+
+CaseRoutes — доступное native details раскрытие реального UI, без анимации высоты и без scroll pin. Два контекста доступны независимо; третье действие завершения всегда открыто. Toggle обновляет геометрию общих ScrollTrigger. В reduce/no-JS сохраняется тот же native control. Новых motion-токенов нет; WorkStage использует существующее fade-image, Agent interlock/checkpoint остаются принятыми.
+
 # Motion-концепция — Site-portfolio
+
+**H6 · 04.10.2026.** fade-image принадлежит целой CaseScreen: поля, native материал и подпись появляются одним движением. Вложенного reveal картинки нет. Actual specimens и Home case-links статичны; у Home Agent только gate использует прежний fade. MediaFrame Web builds reveal=false. CaseCover interlock, focus/money checkpoint, skip/reverse/lifecycle, reduce и no-JS сохраняются; значения ds/motion.js не меняются.
 
 **Common A · 04.10.2026.** История выбирает только разрешённые `CaseBlock.motion`: static/reveal/count/draw/focus/pin-swap по типу блока. Новых длительностей/кривых не потребовалось. Static блок исключён из исполнения, CSS оставляет весь текст видимым. Draw использует общий matchMedia для desktop/mobile geometry; после завершения при resize остаётся конечным, обратный scroll не повторяет объяснение. Контексты очищаются через общий lifecycle. `CaseNext` остаётся одной обычной ссылкой без pause title / hover / focus пауз; видимость страницы/секции и reduced motion управляют движением.
 
@@ -393,3 +401,9 @@ ShotItem.film выбирает существующий MediaFrame film, нов�
 ## Focus reading reflow · G-common-F (04.10.2026)
 
 F-G-01: pin/list rebuild может менять размер материала после прежнего reflowWait=0.18 s; два ранних измерения иногда сохраняли промежуточную геометрию. Общий restoreFocusReading теперь наблюдает размеры list и выбранного материала через ResizeObserver, сохраняет его identity/top и повторяет восстановление после фактического reflow. Промежуточный scroll не подменяет выбранный panel. Новое движение читателя/нативная навигация освобождают observer; scroll за пределы сцены освобождает его до отложенной доставки scroll event. Frame, timer и observer отменяются при новом восстановлении/жесте/route teardown; epoch исключает устаревшие callbacks. Состояние после жеста читается из actual ScrollTrigger registry в scroll handler и onUpdate, поэтому порядок native wheel/scroll/update не оставляет предыдущий panel. DEV debug показывает reading и actual focusScenes; production hook не добавлен. GSAP timings, markup, UI, fallback и mirrors прежние; private case overrides отсутствуют.
+# H4 · вход главной и смена материала, 04.10.2026
+
+Имя/роль остаются одним fade, чтобы SplitText не объединял две независимые подписи. Две строки позиционирования используют существующий reveal-text внутри intro; последующий настоящий approval использует fade-image. Пять быстрых якорей доступны сразу. Reduce/no-JS показывают законченный статичный вход. Agent cover-interlock сохраняет смысл человеческого шлюза; Portal, Learn, Vet и Pawly используют прежнее движение своих материалов. Новых режимов, pin-сцен или длительностей нет; быстрый и обратный scroll проверяются на новой композиции. Белые поля и целый контур не анимируются маской.
+
+
+Technical corrections 04.10.2026: focus-stage retains a full-contrast state exchange, with numeric scrub 0.25s for smooth panel travel. Fit is computed from the whole framed screen and its external caption; measurements refresh when text reflows and are cleared on responsive teardown. Responsive reading restoration uses the refreshed ScrollTrigger start and re-applies after refresh. While that restoration owns the scroll, native overflow anchoring is disabled; the previous value returns on reader input, navigation or teardown. The playhead settles at the selected material after a reflow. No overlay of text or ghost panels is introduced. Native-list fallbacks remain on tablet, mobile, short viewport and reduced motion.

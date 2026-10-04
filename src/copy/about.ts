@@ -26,9 +26,8 @@
  *     чисел конкретного прогона. Числа вернутся вместе с блоком CaseAI
  *     внутри кейса, где их можно показать, а не пересказать.
  *
- * Подписи к портрету нет: решение владельца от 24.08.2026. Вайрфрейм
- * допускал короткую фактическую подпись, но факта под неё в артефактах
- * не оказалось, а подпись ради подписи — заполнитель.
+ * С 05.10.2026 рядом с портретом — короткий тезис из evidence.body,
+ * по решению владельца: знакомство на Home и единая композиция About.
  *
  * Чего здесь НЕТ намеренно: AboutExperience — годы практики и тип опыта.
  * Решение владельца №3 (SCR-05) не принято, поэтому блок в v1 не
@@ -52,6 +51,7 @@ export const about = {
      * условиях тебя можно нанять», а не «кто ты» (ia/wireframes/about.md).
      */
     heading: 'How I work',
+    headline: ['Understand first.', 'Then design.'],
     lead:
       'I reformulate the task before I design it. Most of the briefs I’ve worked from described a solution someone had already chosen — the useful work started when we went back to what the actual problem was.',
     /* Как работаю в чужих ограничениях. */
@@ -59,6 +59,14 @@ export const about = {
       'Most of my work happens inside limits I did not set: a system of record the business runs on, a pricing model that lives in contracts rather than in the product, an agreement between departments that predates the brief. I start by finding out what the limit is holding up, because a constraint that has survived that long is usually load-bearing. On the partner portal the legacy system could not be touched, so the question changed from what the new portal should look like to what the new surface could own that the old one did not. The answer — the specification line and where it came from — came out of the constraint.',
   },
 
+  approach: { heading: 'Working with constraints' },
+  contentsLabel: 'On this page',
+  chapterLabels: ['Constraints', 'Hiring', 'Evidence', 'AI in practice'],
+  profile: {
+    headline: ['Research.', 'Design.', 'Build.'],
+    cv: 'Download CV (PDF)',
+    cvHref: '/cv.pdf',
+  },
   evidence: {
     heading: 'What I can stand behind',
     body: [
@@ -67,7 +75,7 @@ export const about = {
       /* Чем меряю результат, когда цифры закрыты. */
       'Most of what I have shipped is under NDA, and some of it has no baseline to measure against: its metrics were a plan for measurement, not a claim of results. I do not publish numbers I cannot stand behind or let a plan pass for an outcome. I publish the compromise instead — what the design achieved, what it cost, who now does more work, and what would have to change to remove that cost. A named trade-off can be checked in conversation; a number without a baseline cannot.',
       /* Чем заканчивается работа: доведение до работающей сборки. */
-      'The same standard applies to what I hand over. I carry design decisions through to a working build — tokens, components in code, a deployed URL, a QA pass against the running screen — because a decision that stops at a handoff file has not been tested yet. The boundary is the one I would give you in conversation: the front end and integration with an existing API, and most of these builds are prototypes rather than production systems under load.',
+      'The same standard applies to what I hand over. I carry design decisions through to a working build — tokens, components in code, a deployed URL, a QA pass against the running screen — because a decision that stops at a handoff file has not been tested yet. The boundary is the one I would give you in conversation: the front end and integration with an existing API, and most of these builds are prototypes on synthetic data rather than production systems under load.',
     ],
   },
 
@@ -76,8 +84,8 @@ export const about = {
    * человек, а не несёт смысл. Без mockup-рамок и обработки под «стиль» —
    * тот же принцип, что для скриншотов в кейсе (CASE-20).
    *
-   * Подписи нет — решение владельца от 24.08.2026. Слот caption у
-   * MediaFrame остаётся пустым, figcaption в DOM не появляется.
+   * Слот caption у MediaFrame пуст. Тезис и ссылка — соседняя колонка
+   * композиции AuthorPortrait, общий носитель Home и About.
    */
   portrait: {
     src: '/media/about/portrait.webp',

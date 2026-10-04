@@ -1,0 +1,56 @@
+---
+/** Shared page composition — ds/patterns.md §AuthorPortrait. */
+import MediaFrame from './MediaFrame.astro';
+import TextLink from './TextLink.astro';
+interface Props {
+  src: string;
+  alt: string;
+  lines: string[];
+  action: { href: string; label: string };
+  class?: string;
+  at?: string;
+}
+const { src, alt, lines, action, class: className, at } = Astro.props;
+---
+
+<aside class:list={['author-portrait', className]} data-motion="fade" data-motion-at={at}>
+  <MediaFrame src={src} alt={alt} ratio="portrait" loading="eager"
+    counterScale={false} reveal={false} class="author-portrait__photo" />
+  <div class="author-portrait__copy">
+    <p class="ds-heading-2xl author-portrait__statement">
+      {lines.map((line, index) => <span>{line}{index < lines.length - 1 ? ' ' : ''}</span>)}
+    </p>
+    <TextLink href={action.href} type="arrow">{action.label}</TextLink>
+  </div>
+</aside>
+
+<style>
+  .author-portrait {
+    display: grid;
+    grid-template-columns: var(--space-32) minmax(0, 1fr);
+    align-items: center;
+    gap: var(--space-6);
+    min-inline-size: 0;
+  }
+  .author-portrait > :global(.author-portrait__photo) {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+  .author-portrait__copy { display: grid; gap: var(--flow-text); min-inline-size: 0; }
+  .author-portrait__statement { color: var(--text-default); text-wrap: pretty; }
+  .author-portrait__statement > span { display: block; }
+  .author-portrait__copy > :global(.ds-link) {
+    align-items: center;
+    justify-self: start;
+    min-block-size: var(--space-12);
+  }
+  @media (--bp-md) {
+    .author-portrait {
+      grid-template-columns: minmax(0, calc(var(--measure-text) / 2 - var(--space-16))) minmax(0, 1fr);
+      gap: var(--space-8);
+    }
+  }
+  @media (--bp-lg) {
+    .author-portrait { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+</style>

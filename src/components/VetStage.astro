@@ -1,0 +1,30 @@
+---
+import CaseScreen from './CaseScreen.astro';
+import { makeVetStory } from '../copy/cases/vet-clinic';
+import { caseArt } from '../copy/case-art';
+const {locale,loading='lazy',href,linkLabel} = Astro.props as {locale:'en'|'ru';loading?:'eager'|'lazy';href?:string;linkLabel?:string};
+const ru = locale==='ru';
+const art = caseArt('vet',locale);
+const step = makeVetStory(locale).blocks.find(b=>b.type==='steps');
+if (!step || step.type!=='steps') throw new Error('Vet handoff is required');
+const [trace,invoice,owner] = step.payload.items;
+---
+<div class="vet-stage" data-motion-group data-motion-stagger="tight">
+  <div class="vet-stage__route ds-meta-xs"><span>{ru?'Марсик · один визит':'Marsik · one visit'}</span><span>{ru?'Сохранено 09:12 → опубликовано 09:13':'Saved 09:12 → published 09:13'}</span></div>
+  <figure class="vet-stage__trace"><figcaption class="ds-meta-xs">01 · {trace.label}</figcaption><CaseScreen item={trace.shot} loading={loading} href={href} linkLabel={linkLabel} /></figure>
+  <figure class="vet-stage__invoice"><figcaption class="ds-meta-xs">02 · {invoice.label}</figcaption><CaseScreen item={invoice.shot} loading={loading} href={href} linkLabel={linkLabel} /></figure>
+  <figure class="vet-stage__owner"><figcaption class="ds-meta-xs">03 · {owner.label}</figcaption><CaseScreen item={owner.shot} loading={loading} href={href} linkLabel={linkLabel} /></figure>
+  <p class="vet-stage__constraint ds-body-sm">{art.detail}</p>
+</div>
+<style>
+  .vet-stage { display:grid; gap:var(--space-6); min-inline-size:0; }
+  .vet-stage__route { display:flex; flex-wrap:wrap; justify-content:space-between; gap:var(--space-3) var(--space-6); padding:var(--space-4) var(--space-6); border-radius:var(--radius-lg); background:var(--surface-cover-vet); color:var(--text-default); }
+  .vet-stage figure { margin:0; min-inline-size:0; display:grid; align-content:start; gap:var(--space-3); }
+  .vet-stage__owner { inline-size:100%; max-inline-size:calc(var(--space-48) * 2); justify-self:center; }
+  .vet-stage__constraint { margin:0; color:var(--text-subtle); }
+  @media (--bp-md) {
+    .vet-stage { grid-template-columns:3fr 2fr; gap:var(--space-6) var(--space-12); align-items:start; }
+    .vet-stage__route, .vet-stage__trace, .vet-stage__constraint { grid-column:1 / -1; }
+    .vet-stage__owner { align-self:center; }
+  }
+</style>

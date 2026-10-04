@@ -29,7 +29,7 @@ export const learn = {
       { term: 'Role', value: 'Product Designer' },
       { term: 'Platform', value: 'Responsive web · English and Russian' },
       { term: 'Version shown', value: 'Current reinterpretation · interactive prototype' },
-      { term: 'Prototype', value: 'Interactive product', href: PROTOTYPE },
+      { term: 'Prototype', value: 'Interactive product, on demo data', href: PROTOTYPE },
       { term: 'Landing', value: 'The product’s public introduction', href: LANDING },
     ],
     outcome:
@@ -41,7 +41,7 @@ export const learn = {
     ],
     rework: {
       label: 'A real project, reconsidered with today’s approach',
-      text: 'The original redesign was a real assignment during my time at DSSL / TRASSIR and took several months. Many of these features were part of that work. After leaving the company, I rebuilt the experience to show how I would approach it today. The screens here show that current reinterpretation, not the version delivered then or the platform’s current live interface.',
+      text: 'The original redesign was a real assignment during my time at DSSL / TRASSIR and took several months. Many of these features were part of that work. After leaving the company, I rebuilt the experience to show how I would approach it today. The screens here show that current reinterpretation, not the version delivered then or the platform’s current live interface. Account data and documents in this prototype are demonstrations.',
     },
   },
   cover: {
@@ -51,7 +51,7 @@ export const learn = {
       `${media}/cover/material.webp`,
     ],
     alt: 'TRASSIR Learn home with task-based entry points, with a learning programme and a technical material behind it',
-    caption: 'One product, two ways in: find an answer or choose a programme.',
+    caption: 'One product, two ways in: find an answer or choose a programme. Screens use demonstration content.',
   },
   context: {
     heading: 'The old entry point offered courses before it understood the task.',
@@ -83,13 +83,13 @@ export const learn = {
   process: {
     heading: 'I made both routes testable before treating the screens as finished.',
     body: [
-      'For this rework, I returned to the original screens and the problem I had worked on in the company. I added secondary research and competitor walkthroughs. This work informed two equally important acceptance routes — an engineer finding a technical answer and a designer starting and completing structured training.',
+      'For this rework, I returned to the original screens and the problem I had worked on in the company. I added secondary research and competitor walkthroughs. The personas and interviews used in this new iteration were synthetic: useful for challenging assumptions, insufficient for claiming demand. They informed two equally important acceptance routes — an engineer finding a technical answer and a designer starting and completing structured training.',
       'The PRD then fixed the access ladder, content model and counting rules before the sitemap, design system and interactive build. The public programme page exposes its purpose, workload, full contents and assessment conditions before sign-in. Both the service and its landing are available in English and Russian; links from this portfolio open the selected language.',
     ],
     prototype: {
       href: PROTOTYPE,
       label: 'Open the learning prototype',
-      note: 'The current portfolio version. Open the landing separately from the case header.',
+      note: 'The current portfolio version, with local demo data. Open the landing separately from the case header.',
     },
     artifacts: [
       {
@@ -153,7 +153,7 @@ export const learn = {
     heading: 'Colour identifies the work; it never rewards the score.',
     body: [
       'Four content colours carry the task from home into the catalogue, material and player. Status colours have a separate meaning. Assessment deliberately switches to neutral, while version and update information stays neutral everywhere. There are no points, streaks or success celebrations substituting for progress.',
-      'The landing shares that visual vocabulary but uses its own type scale, spacing and component set. It proves the promise with a material and a programme through the interface. Its first useful action opens the product; English and Russian lead to the corresponding product language.',
+      'The landing shares that visual vocabulary but uses its own type scale, spacing and component set. It proves the promise with a material and a programme rather than invented testimonials. Its first useful action opens the product; English and Russian lead to the corresponding product language.',
     ],
     grid: [
       {
@@ -222,15 +222,15 @@ export function makeLearnStory(lang: 'en' | 'ru'): CaseStory {
           thesis: { label: t('Audit → direction', 'Аудит → направление'), thesis: t('Start with the specialist’s task', 'Начать с рабочей задачи'),
             body: t('The archive leads with courses, ratings and rewards. I reframed entry around a question or programme, with the answer available before sign-in.', 'Архивный каталог начинает с курсов, рейтингов и наград. Я перенёс вход на рабочий вопрос или программу: полезный ответ доступен ещё до авторизации.') },
           issue: { src: `${base}archive-catalog.webp`, alt: t('Archived Russian course catalogue with ratings and reward points', 'Архивный каталог курсов с рейтингом и баллами'),
-            marks: [{ x: 20, y: 14, text: t('Courses define the entry', 'Вход определён курсами') }, { x: 25, y: 74, text: t('Points accompany the material', 'Баллы сопровождают материал') }],
+            marks: [{ x: 20, y: 17, text: t('Courses define the entry', 'Вход определён курсами') }, { x: 25, y: 90, text: t('Points accompany the material', 'Баллы сопровождают материал') }],
             caption: t('Archived interface. The visible entry shaped the redesign direction.', 'Архивный интерфейс: видимый вход определил направление переработки.') },
         } },
       { id: 'shared-material', type: 'artifact', evidenceId: 'learn-model', mediaId: 'learn-content-model', motion: 'draw',
         payload: { thesis: { label: t('Content model', 'Модель контента'), thesis: t('One material, two entrances', 'Один материал, два входа'),
           body: t('The material owns its content and version; programmes reference it. Reading history, explicit completion and assessment attempts remain separate records.', 'Материал хранит содержание и версию. Программа ссылается на него без копии. История чтения, явное завершение и попытка зачёта остаются отдельными записями.') },
           artifact: { data: learnContentModel, source: { kind: 'editorial', ref: 'Learn PRD §4.2/5.3, current MaterialPage and Player' }, caption: t('Editorial model: two entrances, one material, separate records.', 'Редакционная модель: два входа, один материал, отдельные записи.') } } },
-      { id: 'one-material', type: 'steps', evidenceId: 'learn-completion', mediaId: 'material-contexts', motion: 'focus',
-        payload: { label: t('The same ONVIF material', 'Тот же материал об ONVIF'), items: [
+      { id: 'one-material', type: 'steps', evidenceId: 'learn-completion', mediaId: 'material-contexts', motion: 'static',
+        payload: { composition: 'routes', label: t('The same ONVIF material', 'Тот же материал об ONVIF'), items: [
           { label: t('Reference', 'Справочник'), thesis: t('Answer the question now', 'Ответить на вопрос сейчас'), layout: 'wide',
             body: t('The answer has its own address, version and date. A learning path sits alongside.', 'Полный ответ имеет свой адрес, версию и дату. Учебный путь предложен рядом с ответом.'),
             shot: shot('answer', 'Open ONVIF answer with version, date and learning path rail', 'Открытый ответ об ONVIF, версия, дата и связанные программы'), caption: t('Reference view · onvif-not-found.', 'Справочник · onvif-not-found.') },

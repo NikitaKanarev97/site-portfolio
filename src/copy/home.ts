@@ -43,16 +43,9 @@ export const home = {
   hero: {
     name: NAME,
     role: 'Product Designer',
-    roleLines: ['Product', 'Designer'],
+    headline: ['Complex systems.', 'Clear decisions.'],
     specialization:
       "I design B2B tools for decisions that need context: AI oversight, procurement and workflows shared by several roles.",
-    portrait: {
-      src: '/media/about/portrait.webp',
-      alt: 'Nikita Kanarev in a taupe knit sweater against a light background',
-      note: 'I connect product design and development, from research to a working build.',
-      link: 'About me and my approach',
-      href: '/about',
-    },
     /**
      * Дословно из ia/authorization-copy.md. Не переписывать в отрыве от файла.
      *
@@ -69,6 +62,13 @@ export const home = {
      * B2B Partner Portal» называла один из них. Ведёт якорем в секцию
      * Selected work: выбор между двумя делает читатель, а не шапка.
      */
+    portrait: {
+      src: '/media/about/portrait.webp',
+      alt: 'Nikita Kanarev in a taupe knit sweater against a light background',
+      headline: ['Research.', 'Design.', 'Build.'],
+      link: 'About me and my approach',
+      href: '/about',
+    },
     caseEntry: 'Read the cases',
     cv: 'Download CV (PDF)',
   },

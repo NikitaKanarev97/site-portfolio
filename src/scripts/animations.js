@@ -63,6 +63,7 @@ let focusReadingObserver = null;
 let focusReadingTarget = null;
 let focusReadingY = null;
 let focusReadingSize = null;
+let focusReadingAnchor = null;
 let focusReadingEpoch = 0;
 function cancelFocusReading() {
   focusReadingEpoch += 1;
@@ -70,6 +71,8 @@ function cancelFocusReading() {
   cancelAnimationFrame(focusReadingFrame);
   focusReadingTimer = focusReadingFrame = null;
   focusReadingObserver?.disconnect();
+  if (focusReadingAnchor !== null) document.documentElement.style.overflowAnchor = focusReadingAnchor;
+  focusReadingAnchor = null;
   focusReadingObserver = focusReadingTarget = focusReadingY = focusReadingSize = null;
 }
 function rememberFocusReading(list, scene, steps = Array.from(list.querySelectorAll('[data-focus-state]'))) {
@@ -83,6 +86,10 @@ function rememberFocusReading(list, scene, steps = Array.from(list.querySelector
 function restoreFocusReading(snapshot) {
   if (!snapshot?.list.isConnected) return;
   cancelFocusReading();
+  // During an owned reflow, native scroll anchoring must not undo the
+  // restored material's position when an earlier section finishes wrapping.
+  focusReadingAnchor = document.documentElement.style.overflowAnchor;
+  document.documentElement.style.overflowAnchor = 'none';
   const epoch = focusReadingEpoch;
   const apply = () => {
     if (epoch !== focusReadingEpoch) return;
@@ -102,7 +109,10 @@ function restoreFocusReading(snapshot) {
     }
     let y;
     if (snapshot.list.classList.contains('is-focused') && snapshot.index != null) {
-      const base = (snapshot.list.closest('.pin-spacer') || snapshot.list).getBoundingClientRect().top + scrollY - motion.focusStage.inset;
+      const scene = ScrollTrigger.getAll().find(scene => scene.trigger === snapshot.list && scene.pin);
+      // The refreshed trigger owns the pin's scroll origin. The transformed
+      // spacer rectangle can still report the geometry from the narrow list.
+      const base = scene?.start ?? (snapshot.list.closest('.pin-spacer') || snapshot.list).getBoundingClientRect().top + scrollY - motion.focusStage.inset;
       y = base + Math.max(0, snapshot.progress ?? snapshot.index) * motion.focusStage.distance;
     } else {
       y = material.getBoundingClientRect().top + scrollY - snapshot.top;
@@ -115,6 +125,10 @@ function restoreFocusReading(snapshot) {
     ScrollTrigger.update();
     if (snapshot.list.classList.contains('is-focused')) {
       const scene = ScrollTrigger.getAll().find(scene => scene.trigger === snapshot.list && scene.pin);
+      // A refreshed numeric scrub can retain its old playhead after the
+      // timeline was invalidated. Restore the selected whole panel now.
+      scene?.getTween()?.progress(1);
+      scene?.animation.totalProgress(scene.progress);
       focusReadingSnapshot = { ...snapshot, step: material, enhanced: true, y,
         progress: scene ? scene.progress * (snapshot.list.querySelectorAll('[data-focus-state]').length - 1) : snapshot.progress,
         start: scene?.start, end: scene?.end, top: material.getBoundingClientRect().top };
@@ -209,6 +223,10 @@ function restoreMoreCases(root) {
   if (details) details.open = moreCasesOpen;
 }
 document.addEventListener('toggle', (event) => {
+  if (event.target instanceof HTMLDetailsElement && event.target.matches('[data-case-route]')) {
+    ScrollTrigger.refresh();
+    return;
+  }
   if (!(event.target instanceof HTMLDetailsElement) || !event.target.matches('[data-more-cases]')) return;
   moreCasesOpen = event.target.open;
   try { sessionStorage.setItem('portfolio:more-cases', moreCasesOpen ? 'open' : 'closed'); } catch {}
@@ -409,14 +427,16 @@ function buildCaseScenes(root, settled = false) {
     const tl = gsap.timeline({ scrollTrigger: { trigger: cover, start: TRIGGER_START, once: true },
       onStart: () => skipCovers.push(armSkip(tl)) });
     revealText(cover.querySelector('[data-motion="lines"]'), tl, 0, motion.lines);
-    tl.from(cover.querySelector('[data-cover-lead]'), { opacity: 0, duration: cfg.duration, ease: cfg.ease }, 0);
+    const lead = cover.querySelector('[data-cover-lead]');
+    if (lead) tl.from(lead, { opacity: 0, duration: cfg.duration, ease: cfg.ease }, 0);
     panels.forEach((panel, i) => tl.from(panel, {
       opacity: 0, x: narrow ? 0 : (i ? cfg.x : -cfg.x), y: narrow ? motion.coverProof.y : 0,
       rotation: narrow ? 0 : (i ? cfg.rotation : -cfg.rotation),
       duration: cfg.duration, ease: cfg.ease, ...lift(panel),
     }, i ? cfg.payoutAt : 0));
     if (gate) tl.from(gate, { opacity: 0, duration: motion.lines.duration, ease: cfg.ease }, cfg.gateAt);
-    tl.from(cover.querySelector('.case-opening__proof-caption'), { opacity: 0, duration: motion.lines.duration }, cfg.payoutAt);
+    const caption = cover.querySelector('.case-opening__proof-caption');
+    if (caption) tl.from(caption, { opacity: 0, duration: motion.lines.duration }, cfg.payoutAt);
   });
   root.querySelectorAll('[data-motion="cover-proof"]').forEach(cover => {
     if (settled) return;
@@ -480,8 +500,28 @@ function buildCaseScenes(root, settled = false) {
         const height = Math.min(cfg.maxHeight, innerHeight - cfg.inset * 3);
         list.style.setProperty('--focus-height', `${height}px`);
         list.style.setProperty('--focus-media-height', `${height - (checkpoint ? art.header : cfg.header)}px`);
+        steps.forEach(step => {
+          const shot = step.querySelector('.case-steps__shot');
+          const plate = shot.querySelector('.case-plate');
+          const screen = shot.querySelector('.case-screen');
+          const media = screen.querySelector('.case-screen__media');
+          const caption = shot.querySelector('.case-steps__caption');
+          const text = step.querySelector('.case-steps__text');
+          const padding = el => {
+            const s = getComputedStyle(el);
+            return { x: parseFloat(s.paddingLeft) + parseFloat(s.paddingRight), y: parseFloat(s.paddingTop) + parseFloat(s.paddingBottom) };
+          };
+          const stacked = getComputedStyle(step).display === 'flex';
+          const space = step.clientHeight - (stacked ? text.offsetHeight : 0) - parseFloat(getComputedStyle(shot).marginTop)
+            - (caption ? caption.offsetHeight + parseFloat(getComputedStyle(caption).marginTop) : 0) - padding(plate).y;
+          const chrome = screen.offsetHeight - media.offsetHeight;
+          const ratio = parseFloat(getComputedStyle(screen).getPropertyValue('--ar'));
+          screen.style.setProperty('--focus-screen-width', `${Math.max(0, (space - chrome) * ratio + padding(screen).x)}px`);
+        });
       };
       measure();
+      const observer = new ResizeObserver(measure);
+      steps.forEach(step => observer.observe(step.querySelector('.case-steps__text')));
       window.addEventListener('resize', measure, { passive: true });
       gsap.set(steps.slice(1), { autoAlpha: 0 });
       const tl = gsap.timeline({ defaults: { ease: cfg.ease }, scrollTrigger: {
@@ -489,6 +529,9 @@ function buildCaseScenes(root, settled = false) {
         // Recreated focus pins must contribute their spacing before later triggers refresh.
         refreshPriority: 1,
         end: () => `+=${cfg.distance * (steps.length - 1)}`, scrub: cfg.scrub, invalidateOnRefresh: true,
+        onRefresh: () => {
+          if (focusReadingObserver && focusReadingSnapshot?.list === list) restoreFocusReading(focusReadingSnapshot);
+        },
         onUpdate: self => {
           if (!self.isActive || focusReadingObserver) return;
           rememberFocusReading(list, self, steps);
@@ -516,9 +559,11 @@ function buildCaseScenes(root, settled = false) {
       });
       gsap.context(() => () => {
         window.removeEventListener('resize', measure);
+        observer.disconnect();
         list.classList.remove('is-focused');
         list.style.removeProperty('--focus-height');
         list.style.removeProperty('--focus-media-height');
+        steps.forEach(step => step.querySelector('.case-screen').style.removeProperty('--focus-screen-width'));
         gsap.set(steps.map(step => step.querySelector('.case-steps__screen')), { clearProps: 'transform' });
         if (checkpoint) gsap.set(list.querySelectorAll('.case-steps__stop-symbol i'), { clearProps: 'transform' });
         if (checkpoint) gsap.set(list.querySelector('.case-steps__field-bleed'), { clearProps: 'transform' });
