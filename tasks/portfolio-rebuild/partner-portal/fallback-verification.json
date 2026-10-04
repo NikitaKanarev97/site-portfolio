@@ -1,0 +1,223 @@
+{
+  "results": [
+    {
+      "mode": "no-js",
+      "lang": "en",
+      "width": 1440,
+      "initial": {
+        "lang": "en",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      },
+      "translated": {
+        "lang": "ru",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      },
+      "back": {
+        "lang": "en",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      }
+    },
+    {
+      "mode": "no-js",
+      "lang": "en",
+      "width": 390,
+      "initial": {
+        "lang": "en",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      },
+      "translated": {
+        "lang": "ru",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      },
+      "back": {
+        "lang": "en",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      }
+    },
+    {
+      "mode": "no-js",
+      "lang": "ru",
+      "width": 1440,
+      "initial": {
+        "lang": "ru",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      },
+      "translated": {
+        "lang": "en",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      },
+      "back": {
+        "lang": "ru",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      }
+    },
+    {
+      "mode": "no-js",
+      "lang": "ru",
+      "width": 390,
+      "initial": {
+        "lang": "ru",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      },
+      "translated": {
+        "lang": "en",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      },
+      "back": {
+        "lang": "ru",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      }
+    },
+    {
+      "mode": "blocked-js",
+      "lang": "en",
+      "width": 1440,
+      "initial": {
+        "lang": "en",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      },
+      "translated": {
+        "lang": "ru",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      },
+      "back": {
+        "lang": "en",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      }
+    },
+    {
+      "mode": "blocked-js",
+      "lang": "en",
+      "width": 390,
+      "initial": {
+        "lang": "en",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      },
+      "translated": {
+        "lang": "ru",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      },
+      "back": {
+        "lang": "en",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      }
+    },
+    {
+      "mode": "blocked-js",
+      "lang": "ru",
+      "width": 1440,
+      "initial": {
+        "lang": "ru",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      },
+      "translated": {
+        "lang": "en",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      },
+      "back": {
+        "lang": "ru",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      }
+    },
+    {
+      "mode": "blocked-js",
+      "lang": "ru",
+      "width": 390,
+      "initial": {
+        "lang": "ru",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      },
+      "translated": {
+        "lang": "en",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      },
+      "back": {
+        "lang": "ru",
+        "overflow": 0,
+        "pins": 0,
+        "blank": 0,
+        "stages": 3
+      }
+    },
+    {
+      "scenario": "fresh Next hover / focus / headless tabs / CDP freeze",
+      "first": "matrix(1, 0, 0, 1, -8.9469, 0)",
+      "hover": "matrix(1, 0, 0, 1, -14.298, 0)",
+      "focus": "matrix(1, 0, 0, 1, -19.0696, 0)",
+      "hidden": false,
+      "restored": "matrix(1, 0, 0, 1, -24.4037, 0)",
+      "thawed": "matrix(1, 0, 0, 1, -34.2026, 0)"
+    }
+  ],
+  "failures": [],
+  "visibilityLimit": "Headless tabs may stay visible; hidden field records actual observation, not physical tab acceptance"
+}

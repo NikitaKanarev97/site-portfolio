@@ -1,5 +1,53 @@
 import { partnerPortal } from '../../cases/partner-portal.ts';
+import { portalLineShot, partnerPortalStory } from '../../cases/partner-portal.ts';
+import { defineStory, assertStoryPair } from '../../cases/story';
+import { partnerPortalMap } from '../../../data/diagrams/partner-portal/screen-map';
+import { partnerPortalFlow } from '../../../data/diagrams/partner-portal/purchase-flow';
+import { partnerPortalSpecimen } from '../../../data/diagrams/partner-portal/specimen';
 import { withRussianMedia } from './utils.ts';
+
+export const partnerPortalStoryRu = defineStory({theme:'portal',plate:'light',
+  cover:{title:'Partner Portal',outcome:'Рабочая спецификация для закупщика: от ввода до оформления.',media:{
+    variant:'proof',eyebrow:'DSSL · B2B-закупка',shot:portalLineShot('open','Настоящее решение по строке 38: исходный текст, восемь единиц и три кандидата из каталога'),
+    caption:'Нынешняя пересборка · настоящий UI на демоданных',
+  }},
+  facts:[{term:'Работа',value:'Коммерческий редизайн отгружен целиком'},{term:'На кадрах',value:'Самостоятельная пересборка на демоданных'},
+    {term:'Роль',value:'Единственный дизайнер; фронтенд, бэкенд, продакт, QA и руководитель команды'},
+    {term:'Период',value:'2024–зима 2026; около полугода активной работы с долгой паузой'}],
+  blocks:[
+    {id:'audit-direction',type:'comparison',motion:'reveal',evidenceId:'portal-diagnosis',mediaId:'portal-archive',payload:{
+      thesis:{label:'Аудит → направление',thesis:'Сначала дело, затем промо',body:'На архивной главной промо занимало заметное место, а разделы скрывались за иконками. Я сделал спецификацию рабочим объектом: названная навигация, отдельные задачи подбора товара и проверки коммерческих условий.'},
+      issue:{src:'/media/case-dssl/legacy-dashboard.webp',alt:'Безопасный фрагмент исходной главной DSSL: промобаннер и навигация только иконками',marks:[
+        {x:55,y:10,text:'Промо первым → сначала задачи закупки'},{x:1.6,y:32,text:'Только иконки → названные разделы'}],caption:'Исходная главная · безопасный архивный фрагмент · выбранные наблюдения'},
+    }},
+    {id:'shared-specification',type:'artifact',motion:'draw',evidenceId:'portal-scope',payload:{
+      thesis:{label:'Архитектура',thesis:'Один список для двух входов',body:'Импорт XLS и быстрый заказ ведут в общий центр разрешения. Корзина, план поставки и оформление решают разные задачи. В иерархии выбраны восемь настоящих экранов пересборки.'},
+      artifact:{data:partnerPortalMap,caption:'Выбранные экраны · редакционная схема нынешней иерархии',source:{kind:'editorial',ref:'b2b-dssl/ia/sitemap.md; D007–D010'}},
+    }},
+    {id:'buyer-decision',type:'artifact',motion:'draw',evidenceId:'portal-decision',payload:{
+      thesis:{label:'Логика закупки',thesis:'Сначала товар, затем условия',body:'Сопоставление не обещает совместимость. Покупатель выбирает или исправляет товар; корзина отдельно проверяет коммерческие изменения. У каждого решения есть явный возврат перед созданием заказа.'},
+      artifact:{data:partnerPortalFlow,caption:'Соответствие → проверка условий → создание заказа · логика демо',source:{kind:'editorial',ref:'b2b-dssl/ia/flows/xls-to-order.mmd; D007, D010, D026'}},
+    }},
+    {id:'source-line',type:'steps',motion:'focus',evidenceId:'portal-line',mediaId:'portal-line',payload:{label:'Одна исходная строка',items:[
+      {label:'Выбрать',thesis:'Три кандидата на одну строку',body:'Строка 38 файла office_north_v8.xlsx: «камера 4мп уличная», восемь единиц. Покупатель сравнивает три совпадения и выбирает второе.',shot:portalLineShot('open','Исходная строка 38 и восемь единиц над тремя кандидатами'),caption:'Строка 38 · три кандидата · демоданные закупки'},
+      {label:'Подтвердить',thesis:'Выбор принят, строка та же',body:'Исходный текст и количество остаются. Confirmed фиксирует решение покупателя; «was Ambiguous» сохраняет исходный тип соответствия. Undo позволяет отменить выбор.',shot:portalLineShot('confirmed','Подтверждённая строка 38: восемь единиц, прежняя неоднозначность и отмена выбора'),caption:'Та же строка · выбран SKU KX-2CB4046F2-I · восемь единиц'},
+      {label:'Подготовить',thesis:'Тот же товар в корзине',body:'Корзина связывает выбранный SKU с исходной строкой 38 и сохраняет количество восемь. Цена и наличие отделены от соответствия товара.',shot:portalLineShot('cart','Настоящая строка корзины: выбранный SKU, исходная строка 38, восемь единиц, цена и наличие'),caption:'Та же строка в корзине · исходный след виден'},
+    ]}},
+    {id:'domain-system',type:'specimen',motion:'static',evidenceId:'portal-domain',mediaId:'portal-specimens',payload:{
+      thesis:{label:'Доменная система',thesis:'У статуса есть явный шаг',body:'Настоящие принятые компоненты показывают нерешённое соответствие, ошибки импорта, неопределённость наличия и выбор поставки. Отсутствие ответа WMS остаётся неподтверждённым наличием. UI продукта сохранён на исходном английском.'},specimen:partnerPortalSpecimen('ru'),
+    }},
+    {id:'source-in-context',type:'shot',motion:'reveal',evidenceId:'portal-line',mediaId:'portal-application',payload:{
+      shot:{layout:'desktop',items:[{src:'/media/rebuild/partner-portal/resolution-context-wide.webp',srcNarrow:'/media/rebuild/partner-portal/resolution-context-narrow.webp',device:'desktop',alt:'Настоящий центр разрешения после выбора строки 38: фильтр, вкладка решённых строк, отмена и общий прогресс',altNarrow:'Настоящий узкий центр разрешения после выбора строки 38, с общим прогрессом под строкой'}],caption:'Компоненты в работе · та же строка после подтверждения покупателем'},
+    }},
+    {id:'shipped-redesign',type:'outcome',motion:'static',evidenceId:'portal-shipped',payload:{
+      result:{label:'Результат',thesis:'Работа дошла до прода',body:'Исходный редизайн DSSL отгружен целиком. Эти самостоятельные демокадры позволяют проверить решения пересборки; бизнес-эффект ими не измерен.'},
+      evidence:{label:'Доказательство',text:'Отгрузка подтверждена владельцем. Нынешняя съёмка проверяет строку 38 в центре разрешения и корзине.'},
+      tradeoff:{label:'Цена решения',text:'Неоднозначность требует ручного выбора покупателя. Данные сопоставления не гарантируют совместимость.'},
+      nextEvidence:{label:'Следующая проверка',text:'Созданный демо-заказ не хранит исходный текст строки. Проверить постзаказный след, затем измерить время и ошибки; бизнес-baseline нет.'},
+    }},
+  ],prototype:{label:'Открыть нынешний прототип на демоданных',href:'https://b2b-partner-portal-five.vercel.app/'},
+});
+assertStoryPair(partnerPortalStory,partnerPortalStoryRu);
 
 const base = withRussianMedia(
   partnerPortal,

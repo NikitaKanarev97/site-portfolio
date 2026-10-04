@@ -1,0 +1,18 @@
+motion en 1440 900 focus 1 failures 0
+motion en 1024 900 focus 1 failures 0
+motion en 390 844 focus 0 failures 0
+motion en 360 800 focus 0 failures 0
+motion en 1440 600 focus 0 failures 0
+motion ru 1440 900 focus 1 failures 0
+motion ru 1024 900 focus 1 failures 0
+motion ru 390 844 focus 0 failures 0
+motion ru 360 800 focus 0 failures 0
+motion ru 1440 600 focus 0 failures 0
+file:///C:/Users/kanar/.codex/worktrees/partner-portal-rebuild/Site-portfolio/tasks/portfolio-rebuild/partner-portal/verify-preview.mjs:87
+if(failures.length)throw Error(failures.length+' preview verification failures');
+                         ^
+
+Error: 1 preview verification failures
+    at file:///C:/Users/kanar/.codex/worktrees/partner-portal-rebuild/Site-portfolio/tasks/portfolio-rebuild/partner-portal/verify-preview.mjs:87:26
+
+Node.js v24.18.0

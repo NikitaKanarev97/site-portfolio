@@ -1,0 +1,277 @@
+{
+  "generated": "2026-10-04",
+  "captures": [
+    {
+      "file": "/media/rebuild/partner-portal/resolutionrow-changed-288.webp",
+      "id": "portal-resolutionrow-changed",
+      "story": "components-domain-resolutionrow--changed",
+      "viewport": {
+        "width": 292,
+        "height": 1200
+      },
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "componentWidth": 288,
+      "bleed": 2,
+      "width": 584,
+      "height": 722,
+      "sha256": "e2f5c3d4f4a7456837e28d599ee42ec977d618ebbc07662cd7a785caa3467bea",
+      "text": "SOURCE LINE\nKX-2CB4043F2-I bullet camera\n4 MP object-detect bullet camera, 4 mm lens · KX-2CB4043F2-I\nQUANTITY\n12\npcs\nIDENTITY\nChanged\nEXPLANATION\nMatched, but the manufacturer code was superseded\nConfirm replacement",
+      "selector": "#storybook-root > * (first)"
+    },
+    {
+      "file": "/media/rebuild/partner-portal/fulfillmentplan-default-288.webp",
+      "id": "portal-fulfillmentplan-default",
+      "story": "components-domain-fulfillmentplan--default",
+      "viewport": {
+        "width": 292,
+        "height": 1200
+      },
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "componentWidth": 288,
+      "bleed": 2,
+      "width": 584,
+      "height": 766,
+      "sha256": "dec1dc168e21dd9ba811508dda2403b8cbcfe70af91b42c4847b6999e557bdd7",
+      "text": "Fewest shipments\nEverything from the Moscow DC in one shipment\nAVAILABLE NOW\n48 of 48\nCOMPLETE BY\n28 Aug 2026\nSHIPMENTS\n1\nWAREHOUSES\nMoscow DC\nDELIVERY\n4,200\nChoose this plan",
+      "selector": "#storybook-root > * (first)"
+    },
+    {
+      "file": "/media/rebuild/partner-portal/fulfillmentplan-selected-288.webp",
+      "id": "portal-fulfillmentplan-selected",
+      "story": "components-domain-fulfillmentplan--selected",
+      "viewport": {
+        "width": 292,
+        "height": 1200
+      },
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "componentWidth": 288,
+      "bleed": 2,
+      "width": 584,
+      "height": 772,
+      "sha256": "e2025660ae8848c96d8e04f031f3812a58bcafbe78cd43cb4aeda894c74d6470",
+      "text": "Fewest shipments\nSelected\nEverything from the Moscow DC in one shipment\nAVAILABLE NOW\n48 of 48\nCOMPLETE BY\n28 Aug 2026\nSHIPMENTS\n1\nWAREHOUSES\nMoscow DC\nDELIVERY\n4,200\nSelected plan",
+      "selector": "#storybook-root > * (first)"
+    },
+    {
+      "file": "/media/rebuild/partner-portal/fulfillmentplan-unavailable-288.webp",
+      "id": "portal-fulfillmentplan-unavailable",
+      "story": "components-domain-fulfillmentplan--unavailable",
+      "viewport": {
+        "width": 292,
+        "height": 1200
+      },
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "canonical accepted CSF args",
+      "componentWidth": 288,
+      "bleed": 2,
+      "width": 584,
+      "height": 756,
+      "sha256": "a4218841b3d61164412031dadd0ad7df9b2354102f7da7eb3c42170d9ce7aadf",
+      "text": "Fewest shipments\nUnavailable\nEverything from the Moscow DC in one shipment\nAVAILABLE NOW\n48 of 48\nCOMPLETE BY\n28 Aug 2026\nSHIPMENTS\n1\nWAREHOUSES\nMoscow DC\nDELIVERY\n4,200\n\nNot available: 7 lines have no stock at this warehouse",
+      "selector": "#storybook-root > * (first)"
+    },
+    {
+      "file": "/media/rebuild/partner-portal/line-open-wide.webp",
+      "id": "portal-line-open",
+      "route": "/b2b/resolution-center",
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "office_north_v8.xlsx · row 38 · original 8 pcs",
+      "width": 2300,
+      "height": 844,
+      "sha256": "0cc4312e903d2acecf108d76f6e431982459df4130bc3b742186f5e4036f8713",
+      "text": "Choose a catalog product for line 38\nFrom the file: “камера 4мп уличная” · 8 pcs · housing and lens differ between them\n4 MP full-colour bullet camera\nKX-2CB4T47F2-L\n4 MP\nfixed 2.8 mm\nIP67\nPoE\n₽16,800\n9 in Saint Petersburg DC\n4 MP object-detect bullet camera\nKX-2CB4046F2-I\n4 MP\nfixed 2.8 mm\nIP67\nPoE\n₽12,900\n24 in Moscow DC\n4 MP object-detect bullet camera, 4 mm lens\nKX-2CB4043F2-I\n4 MP\nfixed 4 mm\nIP67\nPoE\n₽13,600\n16 in Moscow DC\nApply to line 38\nCancel",
+      "selector": "[data-flip] filtered by a descendant [role=\"radiogroup\"] (first)"
+    },
+    {
+      "file": "/media/rebuild/partner-portal/line-confirmed-wide.webp",
+      "id": "portal-line-confirmed",
+      "route": "/b2b/resolution-center",
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "same row 38, buyer chose second candidate",
+      "width": 2300,
+      "height": 138,
+      "sha256": "651ef850fd58fee3aebfed598385a56f3faa36df4e5176d7073768750b12c61f",
+      "text": "Row 38 · камера 4мп уличная\n4 MP object-detect bullet camera · KX-2CB4046F2-I\n8\npcs\nConfirmed\nwas Ambiguous\nCandidate chosen by the buyer\nUndo",
+      "selector": "[data-flip] filtered by text Row 38 (first)"
+    },
+    {
+      "file": "/media/rebuild/partner-portal/resolution-context-wide.webp",
+      "id": "portal-application",
+      "route": "/b2b/resolution-center",
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "same row 38, filtered resolved view after buyer choice",
+      "width": 2880,
+      "height": 2200,
+      "sha256": "f5267f82c4d62eeaa7e4324f2c9fb6e7386c98f5e5eecfab4cb09023ba60122d",
+      "selector": "viewport after same resolved-row filter"
+    },
+    {
+      "file": "/media/rebuild/partner-portal/line-cart-wide.webp",
+      "id": "portal-line-cart",
+      "route": "/b2b/cart",
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "same row 38, chosen SKU, quantity 8",
+      "width": 2300,
+      "height": 178,
+      "sha256": "796f2364200f0446bfa2546ab996db6542236f3de1ee96215662d1bfb47a1530",
+      "text": "4 MP object-detect bullet camera\nSKU KX-2CB4046F2-I · source row 38\n₽12,900\n24 in Moscow DC\nShips in 1–2 days\n₽103,200",
+      "selector": "[data-slot=\"product-row\"] filtered by text source row 38 (first)"
+    },
+    {
+      "file": "/media/rebuild/partner-portal/line-open-narrow.webp",
+      "id": "portal-line-open",
+      "route": "/b2b/resolution-center",
+      "viewport": {
+        "width": 390,
+        "height": 1400
+      },
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "office_north_v8.xlsx · row 38 · original 8 pcs",
+      "width": 716,
+      "height": 1112,
+      "sha256": "d901e8359f6d5dc0dda4fd6db624a8e605217c34d55f510fb3746076546783af",
+      "text": "Choose a catalog product for line 38\nFrom the file: “камера 4мп уличная” · 8 pcs · housing and lens differ between them\n4 MP full-colour bullet camera\nKX-2CB4T47F2-L\n4 MP\nfixed 2.8 mm\nIP67\nPoE\n4 MP object-detect bullet camera\nKX-2CB4046F2-I\n4 MP\nfixed 2.8 mm\nIP67\nPoE\n4 MP object-detect bullet camera, 4 mm lens\nKX-2CB4043F2-I\n4 MP\nfixed 4 mm\nIP67\nPoE\nApply to line 38\nCancel",
+      "selector": "[data-flip] filtered by a descendant [role=\"radiogroup\"] (first)"
+    },
+    {
+      "file": "/media/rebuild/partner-portal/line-confirmed-narrow.webp",
+      "id": "portal-line-confirmed",
+      "route": "/b2b/resolution-center",
+      "viewport": {
+        "width": 390,
+        "height": 1400
+      },
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "same row 38, buyer chose second candidate",
+      "width": 716,
+      "height": 628,
+      "sha256": "ca0d86ac4b9394858f86c5bbefa66b3ebcb33729abcbdfad3656ea91b12fc6cb",
+      "text": "SOURCE LINE\nRow 38 · камера 4мп уличная\n4 MP object-detect bullet camera · KX-2CB4046F2-I\nQUANTITY\n8\npcs\nIDENTITY\nConfirmed\nwas Ambiguous\nEXPLANATION\nCandidate chosen by the buyer\nUndo",
+      "selector": "[data-flip] filtered by text Row 38 (first)"
+    },
+    {
+      "file": "/media/rebuild/partner-portal/resolution-context-narrow.webp",
+      "id": "portal-application",
+      "route": "/b2b/resolution-center",
+      "viewport": {
+        "width": 390,
+        "height": 1400
+      },
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "same row 38, filtered resolved view after buyer choice",
+      "width": 780,
+      "height": 2800,
+      "sha256": "c734cccd5d693ab95b238408c7d260a7fdeafdeca61260463b323363fad9a13d",
+      "selector": "viewport after same resolved-row filter"
+    },
+    {
+      "file": "/media/rebuild/partner-portal/line-cart-narrow.webp",
+      "id": "portal-line-cart",
+      "route": "/b2b/cart",
+      "viewport": {
+        "width": 390,
+        "height": 1400
+      },
+      "dpr": 2,
+      "locale": "en",
+      "fixture": "same row 38, chosen SKU, quantity 8",
+      "width": 716,
+      "height": 812,
+      "sha256": "9c3ca1cc0447cbc6b17875cc97f6ed952f14f91df12261965d2e92306b5734c9",
+      "text": "PRODUCT\n4 MP object-detect bullet camera\nSKU KX-2CB4046F2-I · source row 38\nPRICE\n₽12,900\nAVAILABILITY\n24 in Moscow DC\nShips in 1–2 days\nQUANTITY\nLINE TOTAL\n₽103,200",
+      "selector": "[data-slot=\"product-row\"] filtered by text source row 38 (first)"
+    }
+  ],
+  "trace": [
+    {
+      "width": 1440,
+      "at": "after-native-choice",
+      "line": {
+        "id": "line-38",
+        "row": 38,
+        "zone": "Building B · floor 2",
+        "sourceText": "камера 4мп уличная",
+        "sourceQuantity": 8,
+        "quantity": 8,
+        "sku": "KX-2CB4046F2-I",
+        "status": "ambiguous",
+        "explanation": "Candidate chosen by the buyer",
+        "candidates": [
+          "KX-2CB4T47F2-L",
+          "KX-2CB4046F2-I",
+          "KX-2CB4043F2-I"
+        ],
+        "resolved": true,
+        "saveFailed": false
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "at": "cart",
+      "text": "4 MP object-detect bullet camera\nSKU KX-2CB4046F2-I · source row 38\n₽12,900\n24 in Moscow DC\nShips in 1–2 days\n₽103,200",
+      "errors": []
+    },
+    {
+      "width": 390,
+      "at": "after-native-choice",
+      "line": {
+        "id": "line-38",
+        "row": 38,
+        "zone": "Building B · floor 2",
+        "sourceText": "камера 4мп уличная",
+        "sourceQuantity": 8,
+        "quantity": 8,
+        "sku": "KX-2CB4046F2-I",
+        "status": "ambiguous",
+        "explanation": "Candidate chosen by the buyer",
+        "candidates": [
+          "KX-2CB4T47F2-L",
+          "KX-2CB4046F2-I",
+          "KX-2CB4043F2-I"
+        ],
+        "resolved": true,
+        "saveFailed": false
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "at": "cart",
+      "text": "PRODUCT\n4 MP object-detect bullet camera\nSKU KX-2CB4046F2-I · source row 38\nPRICE\n₽12,900\nAVAILABILITY\n24 in Moscow DC\nShips in 1–2 days\nQUANTITY\nLINE TOTAL\n₽103,200",
+      "errors": []
+    }
+  ],
+  "sourceVersion": "722b5c6d06a9ddcdc8bb813f84c60d0cac2e07e9",
+  "sourceHashes": "sources.json"
+}

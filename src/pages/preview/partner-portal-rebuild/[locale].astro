@@ -1,0 +1,21 @@
+---
+import PageShell from '../../../layouts/PageShell.astro';
+import CaseStory from '../../../components/CaseStory.astro';
+import { partnerPortalStory } from '../../../copy/cases/partner-portal';
+import { partnerPortalStoryRu } from '../../../copy/ru/cases/partner-portal';
+import { site } from '../../../copy/site';
+import { siteRu } from '../../../copy/ru/site';
+export function getStaticPaths(){return ['en','ru'].map(locale=>({params:{locale}}));}
+const lang=Astro.params.locale as 'en'|'ru';
+const story=lang==='ru'?partnerPortalStoryRu:partnerPortalStory;
+const next={href:lang==='ru'?'/ru/work/learn/':'/work/learn/',title:'Learn',theme:'learn' as const,label:lang==='ru'?'Следующий кейс':'Next case'};
+---
+<PageShell title={`${story.cover.title} — ${lang==='ru'?'пересборка кейса':'case rebuild'}`} description={story.cover.outcome} lang={lang} siteCopy={lang==='ru'?siteRu:site} localePaths={{en:'/preview/partner-portal-rebuild/en/',ru:'/preview/partner-portal-rebuild/ru/'}} noindex canonical={false} current={lang==='ru'?'/ru/work':'/work'}>
+  <CaseStory story={story} lang={lang} id="partner-portal-rebuild" next={next}/>
+  <nav class="ds-container portal-preview-links ds-body-sm" aria-label={lang==='ru'?'Версии кейса':'Case versions'}>
+    <a class="ds-link" href={`/preview/partner-portal-rebuild/${lang==='ru'?'en':'ru'}/`}>{lang==='ru'?'English version':'Русская версия'}</a>
+  </nav>
+</PageShell>
+<style>
+  .portal-preview-links { margin-block-start:var(--flow-block); }
+</style>
