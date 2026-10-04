@@ -1,0 +1,20 @@
+PROFILE en-1440-full states 1 failures 0
+PROFILE en-1024-full states 1 failures 0
+PROFILE en-390-full states 3 failures 0
+PROFILE en-360-full states 3 failures 0
+PROFILE en-1440-short-full states 4 failures 0
+PROFILE ru-1440-full states 1 failures 0
+PROFILE ru-1024-full states 1 failures 0
+PROFILE ru-390-full states 3 failures 0
+PROFILE ru-360-full states 3 failures 0
+PROFILE ru-1440-short-full states 4 failures 0
+LIFECYCLE en 0
+LIFECYCLE ru 2
+file:///C:/Users/kanar/.codex/worktrees/agent-ops-rebuild-f/Site-portfolio/tasks/portfolio-rebuild/agent-ops/verify-f.mjs:79
+if(failures.length)throw new Error('F failures '+failures.length);console.log('F verification passed',results.length,'observations');
+                         ^
+
+Error: F failures 2
+    at file:///C:/Users/kanar/.codex/worktrees/agent-ops-rebuild-f/Site-portfolio/tasks/portfolio-rebuild/agent-ops/verify-f.mjs:79:26
+
+Node.js v24.18.0
