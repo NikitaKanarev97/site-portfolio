@@ -1,57 +1,56 @@
 {
   "stage": "H-art-direction",
-  "iteration": "H-art-02",
-  "status": "ready_for_h_art_review",
+  "iteration": "H-art-03",
+  "status": "ready_for_visual_review",
+  "sourceRef": "60e13209f0c09b6afd83fd857a4702e090a713e8",
+  "codeRef": "60e13209f0c09b6afd83fd857a4702e090a713e8",
+  "previousEvidenceRef": "4e3b9b8bf19a14239c039c0ed757aa7545604682",
+  "baseRef": "c0c69040801d60bcfc836f6728f2ae806911be1d",
   "checkout": "C:/Users/kanar/.codex/worktrees/portfolio-art-direction-h/Site-portfolio",
   "branch": "codex/portfolio-art-direction-h-2026-10-04",
-  "baseRef": "c0c69040801d60bcfc836f6728f2ae806911be1d",
-  "previousEvidenceRef": "df1da7ef044bda231049f1f48e899050e71ff611",
-  "codeRef": "765803e9d2e56e663885d083237ea29ac53a11b9",
   "evidenceRefResolver": "git log -1 --format=%H -- tasks/portfolio-rebuild/art-direction",
   "previews": {
     "en": "http://127.0.0.1:4394/",
     "ru": "http://127.0.0.1:4394/ru/",
     "review": "http://127.0.0.1:4396/art-review.html"
   },
-  "findings": [
-    {
-      "id": "H-ART-01",
-      "status": "resolved_by_executor_pending_independent_review"
-    },
-    {
-      "id": "H-ART-02",
-      "status": "resolved_by_executor_pending_independent_review"
-    },
-    {
-      "id": "H-ART-03",
-      "status": "resolved_by_executor_pending_independent_review"
-    }
+  "ownerFeedback": [
+    "CROP: padded complete native screenshots",
+    "RADIUS: consistent portfolio shell",
+    "ZOOM: real lightbox and text block across both locales",
+    "PERSISTENCE: rule saved in CLAUDE and DS"
   ],
   "checks": {
-    "codeRef": "765803e9d2e56e663885d083237ea29ac53a11b9",
-    "previousEvidenceRef": "df1da7ef044bda231049f1f48e899050e71ff611",
+    "sourceRef": "60e13209f0c09b6afd83fd857a4702e090a713e8",
+    "previousEvidenceRef": "4e3b9b8bf19a14239c039c0ed757aa7545604682",
     "baseRef": "c0c69040801d60bcfc836f6728f2ae806911be1d",
-    "primaryProfiles": 72,
-    "neighborProfiles": 6,
-    "lifecycle": 12,
-    "openingProfiles": 8,
-    "followupProfiles": 8,
-    "initialPrimaryFindings": 4,
-    "resolvedNativeCarouselFindings": 4,
-    "unresolvedFailures": 0,
-    "pngCount": 54,
-    "newRecordings": 6,
-    "preservedRecordings": 6,
+    "primaryProfiles": 144,
+    "lightboxOpenings": 314,
+    "lifecycle": 4,
+    "followupProfiles": 11,
+    "focusedSceneCaptures": 16,
+    "focusedSceneOverflow": 0,
+    "videoProfiles": 4,
+    "videoFailures": 0,
+    "galleryCombinations": 24,
+    "galleryMissingAssets": 0,
+    "unresolved": 0,
+    "pngCount": 113,
     "mirrors": {
-      "tokens": true,
-      "motion": true
+      "tokens": {
+        "equal": true,
+        "sha256": "47f89e88a2796834e9ef45d4c473a0411d7ec58e9fd366dd30d77adc9611b832"
+      },
+      "motion": {
+        "equal": true,
+        "sha256": "3136db057ba7629c550544cf7a4951bb9bf5d118272dce9ea37b191021eb952f"
+      }
     },
-    "selfArtAssessment": "yes_with_specific_scene_evidence",
-    "independentArtReview": "pending_controller"
+    "unchangedStoryAndMedia": true,
+    "changes": "",
+    "independentArtAcceptance": "pending_owner_or_controller"
   },
-  "selfArtAssessment": "yes_with_scene_evidence",
-  "independentArtReview": "pending_controller",
-  "ownerArtAcceptance": "not_claimed",
-  "controllerStateModified": false,
-  "published": false
+  "previousReview": "H2 self-assessment superseded by direct owner feedback",
+  "independentAcceptance": "pending",
+  "requiredControllerAction": "Review current H3 gallery and source; integrate through existing controller flow. Root remains controller-owned."
 }

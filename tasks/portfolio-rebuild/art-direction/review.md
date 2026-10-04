@@ -1,21 +1,16 @@
-# H2 · Before / After / Why
+# H3 · Before / After / Why
 
-Source 765803e9d2e56e663885d083237ea29ac53a11b9; H1 baseline df1da7ef044bda231049f1f48e899050e71ff611. H1 changes_requested; H2 independent review pending.
+Source 60e13209f0c09b6afd83fd857a4702e090a713e8. H2 owner feedback supersedes its self-assessment.
 
 | Before | After | Why |
 |---|---|---|
-| H-ART-01: settled RU390 содержит четыре входа и биографию; продукта нет | Роль Display/5xl, компактный индекс пяти работ, целая native $340 approval-card до биографии на mobile. Desktop объединяет UI и факты/контакты | Первое впечатление предметное; UI и все пять ссылок участвуют в первом окне |
-| H-ART-02: полоска заголовка и отдельный высокий паспорт на синем поле | Цельная native статья с первой диагностикой; рядом выбранный ресурс 03 с тем же заголовком и неизменённый паспорт. Mobile: ресурс → статья → паспорт | Два настоящих контекста связаны самой сущностью материала, её заголовком и исходными learning-path ссылками |
-| H-ART-03: 30 слева / UI справа повторяет Portal38 | Полный след врача сверху; счёт и опубликованный документ владельца ниже. Имя Марсик и 09:12 → 09:13 связывают три ответственности. Стек заголовка отличается от Portal | Другая форма, масштаб и последовательность реальных материалов; 30 секунд остаются небольшой подписью исходного ограничения |
-| Белая кайма specimens | Свежий native Portal capture показывает красный край без внешнего белого canvas; alpha и renderer сохранены | Родная обводка полностью видна, вторичной маски нет |
+| Текст и вес 4,9 кг прижаты к краю захвата; углы маскируются | Целый native снимок, белые поля 16/24 px; скруглена внешняя оболочка | Исходный текст, действия и родная обводка не срезаются |
+| Portal/Learn Home имеют острые углы на desktop | Все пять FeaturedCase, CasePlate и медиапанели используют radius-lg =16 px | Одна геометрия оболочки EN/RU и всех ширин |
+| У CaseScreen нет общего работающего увеличения | Один MediaZoom в BaseLayout: полный текущий источник, прокрутка, отдельное описание, Escape/возврат фокуса | Плотный UI и низ длинного снимка можно прочитать; mobile открывает свой currentSrc |
+| Карточка Home целиком является ссылкой | Article: ссылка названия/CTA и отдельное увеличение каждого снимка | Открытие снимка и переход в кейс не конфликтуют |
+| Обзор Agent переполняет закреплённую сцену после добавления полей | При расчёте масштаба оставлено место всей рамке и строке открытия | Полный контейнер помещается в stage |
+| Галерея отдаёт голые файлы при увеличении | Её собственный лайтбокс показывает полный снимок с текстовым блоком | Приёмочные изображения тоже не режутся рамкой |
 
-Сильные Agent interlock/cover/checkpoint, Portal38 и Pawly photo/report сохранены. Происхождение источников и границы концептов, fixtures и публикации не меняются. Vet clinical record на снимке Unfinished: это сохранённый полезный след, не законченный визит. Отдельная подпись обложки приведена к текущей передаче вместо старого seed4.8/0.95. Portal lineage ограничена Cart; после заказа источник всё ещё не сохраняется. Learn чтение не считается завершением. Никаких новых business metrics, pixel-retouch или изменений соседних продуктов.
+144 профиля: Home +5 кейсов ×EN/RU ×1440/1024/390/360 ×full/reduce/no-JS. 314 открытий лайтбокса: источник совпадает с currentSrc, описание отдельно, целые пропорции, конец длинного изображения достигается клавиатурой, Escape возвращает фокус, маршрут сохраняется. 4 lifecycle проверки Home→Agent→Back, resize и live preference; 11 follow-up (RU360 float-геометрия, Portal alpha-окружение, /kit); 16 окончательных full-motion кадров Agent EN/RU1440/1024; 4 manual-film проверки Pawly EN/RU1440/390 после удаления двойных полей. Галерея: 24 комбинации, отсутствующих файлов0; её лайтбокс открыт/закрыт. Build36 routes; check118 files:0 errors/0 warnings/101 hints; CSS35 routes:0 dead rules; harmony48 profiles +8 целевых Pawly после финального CSS:0 нарушений. 113 актуальных PNG в final/ и focus-final/.
 
-
-## Наблюдаемые доказательства
-
-Home RU390: before/ru-390-home-opening.png → after/ru-390-home-opening.png. Learn/Vet: before/work-{learn,vet-clinic}.png → after/en-1440-work-{learn,vet-clinic}.png. Те же варианты есть на mobile/RU. Абсолютный корень: C:/Users/kanar/.codex/worktrees/portfolio-art-direction-h/Site-portfolio/tasks/portfolio-rebuild/art-direction/h-art-02/.
-
-Новые EN Home кадры11.00/15.00 и RU12.50/17.30 показывают реальные материалы. Frames2.20 и settled PNG подтверждают вход;00:00 не использован. Native HA originals и ссылка Black Forest находятся рядом в art-review.html. Архив homepage/TopNote помечен отдельно.
-
-Оценка исполнителя: да, благодаря трём конкретным улучшениям композиции и сохранённым сильным сценам. Техническая проверка не считается художественной приёмкой. Ограничения/сырой QA и происхождение: report.md / h-art-02/summary.json / provenance.json.
+Native UI pixels, facts and fixtures unchanged. Current proof: h-art-03/final and focus-final. Executor verification complete; independent owner/controller acceptance pending.
