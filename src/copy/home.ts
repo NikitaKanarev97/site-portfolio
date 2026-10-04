@@ -43,8 +43,16 @@ export const home = {
   hero: {
     name: NAME,
     role: 'Product Designer',
+    roleLines: ['Product', 'Designer'],
     specialization:
       "I design B2B tools for decisions that need context: AI oversight, procurement and workflows shared by several roles.",
+    portrait: {
+      src: '/media/about/portrait.webp',
+      alt: 'Nikita Kanarev in a taupe knit sweater against a light background',
+      note: 'I connect product design and development, from research to a working build.',
+      link: 'About me and my approach',
+      href: '/about',
+    },
     /**
      * Дословно из ia/authorization-copy.md. Не переписывать в отрыве от файла.
      *

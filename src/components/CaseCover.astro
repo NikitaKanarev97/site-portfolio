@@ -35,6 +35,7 @@
  * всех страниц, считал бы правило мёртвым. Шаблоны живут рядом до этапов 7–11.
  */
 import CaseScreen from './CaseScreen.astro';
+import ProcurementCover from './ProcurementCover.astro';
 import { frameSize } from '../lib/media';
 import { caseThemes, type CaseTheme, type CoverMedia } from '../copy/cases/story';
 import { px } from '../lib/tokens.ts';
@@ -93,6 +94,8 @@ if (media.variant === 'screen') {
 >
   {
     media.variant === 'proof' ? (
+      <>
+      {media.layout === 'procurement' && media.workflow ? <ProcurementCover title={title} outcome={outcome} media={media} as={Heading} /> :
       <div class="ds-container case-opening__proof">
         <p class="ds-meta-xs case-opening__eyebrow">{media.eyebrow}</p>
         <div class="case-opening__proof-head">
@@ -111,6 +114,8 @@ if (media.variant === 'screen') {
         </div>
         <p class="ds-body-sm case-opening__proof-caption" data-h="caption">{media.caption}</p>
       </div>
+      }
+      </>
     ) : media.variant === 'video' && !media.video ? (
       <>
         <picture>

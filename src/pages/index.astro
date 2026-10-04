@@ -51,28 +51,40 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
   siteCopy={site}
   ogCard={locale === 'ru' ? 'default-ru' : 'default'}
 >
-  {/*
-    Hero. Вступительный такт: имя, роль, специализация и авторизация идут
-    автоматическим шагом каскада, ряд действий — явной позицией 0.4.
-  */}
-  <section class="ds-container ds-section hero" data-motion-intro>
-    <p class="ds-meta-sm hero__name" data-motion="reveal-text">{home.hero.name}</p>
+  {/* HeroPortrait: знакомство с автором; работы начинаются в #work. */}
+  <section class:list={['ds-container', 'hero', { 'hero--without-authorization': !home.hero.authorization }]} data-motion-intro>
+    <div class="ds-section hero__intro">
+      <p class="ds-meta-sm hero__name" data-motion="reveal-text">{home.hero.name}</p>
 
-    <h1 class="ds-display-5xl hero__role ds-flow-heading" data-motion="reveal-text">
-      {home.hero.role}
-    </h1>
+      <h1 class="ds-display-5xl hero__role ds-flow-heading" data-motion="reveal-text">
+        {home.hero.roleLines.map((line, index) => <Fragment>{index > 0 && ' '}<span class="hero__role-line">{line}</span></Fragment>)}
+      </h1>
 
-    <ProseBlock motion={false} class="hero__spec">
-      <p data-motion="reveal-text">{home.hero.specialization}</p>
-    </ProseBlock>
+      <ProseBlock motion={false} class="hero__spec">
+        <p data-motion="reveal-text">{home.hero.specialization}</p>
+      </ProseBlock>
+    </div>
 
-    {/*
-      Право на работу. Максимум две строки на 360 px — единственная строка
-      сайта с жёстким лимитом по числу строк (ia/wireframes/mobile-home.md).
-    */}
-    <p class="ds-body-base hero__authorization" data-motion="reveal-text">
+    <aside class="hero__profile" data-motion="fade" data-motion-at="0.2">
+      <MediaFrame
+        src={home.hero.portrait.src}
+        alt={home.hero.portrait.alt}
+        ratio="portrait"
+        loading="eager"
+        counterScale={false}
+        reveal={false}
+        class="hero__portrait"
+      />
+      <div class="hero__profile-copy">
+        <p class="ds-body-sm hero__note">{home.hero.portrait.note}</p>
+        <TextLink href={home.hero.portrait.href} type="arrow">{home.hero.portrait.link}</TextLink>
+      </div>
+    </aside>
+
+    {/* Право на работу: максимум две строки на 360 px. */}
+    {home.hero.authorization && <p class="ds-body-base hero__authorization" data-motion="reveal-text">
       {home.hero.authorization}
-    </p>
+    </p>}
 
     <div class="hero__actions" data-motion="fade" data-motion-at="0.4">
       <TextLink href="#work" type="arrow">{home.hero.caseEntry}</TextLink>
@@ -218,7 +230,7 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     ))
   }
 
-  {/* AboutShort. Портрета здесь нет: он живёт на /about и не на первом экране. */}
+  {/* AboutShort развивает короткое знакомство из HeroPortrait. */}
   <section class="ds-container ds-section about" data-motion="fade">
     <SectionHead size="lg" reveal={false}>{home.about.heading}</SectionHead>
 
@@ -235,20 +247,51 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
    * Hero                                                              *
    * ---------------------------------------------------------------- */
 
-  /* Вертикаль экрана идёт шкалой ДС и пишется одним направлением —
-     margin-block-start на нижнем узле. Шаг принадлежит промежутку, и
-     смешение направлений (margin-bottom у одного, margin-top у соседа)
-     складывало бы их. Умолчание секции — flow-block; здесь перебиты три
-     пары, у которых связь теснее. */
+  /* На телефоне портрет и короткая подпись стоят до действий. */
+  .hero {
+    display: grid;
+    gap: var(--flow-text);
+    margin-block-start: calc(var(--flow-block) - var(--section-gap));
+  }
+
+  .hero__intro { min-inline-size: 0; }
 
   .hero__name {
     color: var(--text-meta);
   }
 
   /* Имя и роль — одна пара, а не два узла. */
-  .hero > .hero__role {
+  .hero__intro > .hero__role {
     margin-block-start: var(--flow-pair);
     color: var(--text-default);
+  }
+
+  .hero__role-line { display: block; }
+
+  .hero__profile {
+    display: grid;
+    grid-template-columns: var(--space-32) minmax(0, 1fr);
+    align-items: center;
+    gap: var(--space-6);
+    min-inline-size: 0;
+  }
+
+  .hero__profile-copy {
+    display: grid;
+    gap: var(--flow-pair);
+    min-inline-size: 0;
+  }
+
+  .hero__note {
+    color: var(--text-subtle);
+    text-wrap: pretty;
+  }
+
+  .hero__profile-copy > :global(.ds-link) {
+    display: inline-flex;
+    align-items: center;
+    justify-self: start;
+    min-block-size: var(--space-12);
   }
 
   /* Роль → специализация: шаг задаёт ds-flow-heading на роли. Правила
@@ -257,7 +300,6 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
      :global() и заводился. */
 
   .hero > .hero__authorization {
-    margin-block-start: var(--flow-text);
     color: var(--text-subtle);
     max-width: var(--measure-text);
   }
@@ -288,12 +330,40 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
   }
 
   @media (--bp-md) {
+    .hero {
+      grid-template-columns: minmax(0, 1fr) minmax(0, calc(var(--measure-text) / 2 - var(--space-16)));
+      grid-template-areas: 'intro profile' 'authorization profile' 'actions profile';
+      grid-template-rows: min-content min-content 1fr;
+      column-gap: var(--space-12);
+      align-content: start;
+      align-items: start;
+    }
+
+    .hero__intro { grid-area: intro; }
+    .hero--without-authorization {
+      grid-template-areas: 'intro profile' 'actions profile';
+      grid-template-rows: min-content 1fr;
+    }
+    .hero__authorization { grid-area: authorization; }
+    .hero__actions { grid-area: actions; }
+
+    .hero__profile {
+      grid-area: profile;
+      grid-template-columns: minmax(0, 1fr);
+      gap: var(--flow-text);
+    }
+
+    .hero__profile-copy {
+      border-block-start: var(--border-width) solid var(--border-default);
+      padding-block-start: var(--flow-pair);
+      gap: 0;
+    }
+
     .hero__actions {
       flex-direction: row;
+      flex-wrap: wrap;
       align-items: baseline;
-      /* На нижней границе tablet три действия и адрес занимают почти всю
-         колонку. Узкий системный шаг сохраняет ряд без переноса подписей;
-         desktop возвращает исходный простор ниже. */
+      /* Действия переносятся целиком, сохраняя свободную колонку портрета. */
       gap: var(--space-4);
     }
 
@@ -307,8 +377,13 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
   }
 
   @media (--bp-lg) {
+    .hero {
+      grid-template-columns: minmax(0, 1fr) minmax(0, calc(var(--measure-text) / 2));
+      column-gap: var(--space-16);
+    }
+
     .hero__actions {
-      gap: var(--space-8);
+      gap: var(--space-3) var(--space-6);
     }
   }
 

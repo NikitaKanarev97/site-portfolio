@@ -68,10 +68,10 @@ export interface SiteCopy {
    */
   clip: { play: string; pause: string };
   footer: {
-    location: string;
-    utcLabel: string;
-    timeZone: string;
-    timeLabel: string;
+    location?: string;
+    utcLabel?: string;
+    timeZone?: string;
+    timeLabel?: string;
     copyright: string;
   };
 }

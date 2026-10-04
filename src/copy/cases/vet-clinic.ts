@@ -69,7 +69,7 @@ export function makeVetStory(lang:'en'|'ru'):CaseStory {
       {term:t('Role','Роль'),value:t('Sole product designer','Единственный продуктовый дизайнер')},
       {term:t('Input','Основание'),value:t('Conversations with one practising vet','Разговоры с одним практикующим врачом')},
       {term:t('Delivery','Результат'),value:t('Working prototype · 2026','Рабочий прототип · 2026')},
-      {term:t('Data','Данные'),value:t('Real clinic under NDA; all demo data invented','Реальная клиника под NDA; все демо-данные вымышлены')},
+      {term:t('Data','Данные'),value:t('Real clinic under NDA','Реальная клиника под NDA')},
     ],blocks:[
       {id:'room-window',type:'shot',evidenceId:'vet-window',mediaId:'vet-queue',motion:'static',payload:{
         thesis:{label:t('Constraint','Ограничение'),thesis:t('A trace before the next patient','След за время паузы'),body:t('I separated a useful trace from the complete record. Thirty seconds between patients was the original constraint, not a measured speed of the new interface.','Я отделил полезный след от полной записи. Тридцать секунд между пациентами — исходное ограничение, а не измеренная скорость нового интерфейса.')},
@@ -111,7 +111,7 @@ export const vetClinic = {
       { term: 'Role', value: 'Product Designer' },
       { term: 'Platform', value: 'Web — responsive: desktop, tablet in the room, owner’s phone' },
       { term: 'Evidence', value: 'Concept · domain input from one vet' },
-      { term: 'Prototype', value: 'Live, on invented data', href: PROTOTYPE },
+      { term: 'Prototype', value: 'Live', href: PROTOTYPE },
     ],
     /** CASE-02: что решено и какой ценой, в шапке, одним абзацем. */
     outcome:
@@ -124,7 +124,7 @@ export const vetClinic = {
     /** CASE-04. Вариант flagged, как в кейсе DSSL: оговорка одна на страницу. */
     rework: {
       label: 'A rebuild, not the clinic’s build',
-      text: 'The clinic is real and so is the NDA. Its name, its people, its patients and its prices appear nowhere here: every screen runs on invented data, and the practice on them — “Lesnaya Clinic” — is a fixture, not the client. The work went as far as research, a design system and a working prototype; it was not taken into production.',
+      text: 'The clinic is real and so is the NDA. The work went as far as research, a design system and a working prototype; it was not taken into production.',
     },
   },
 
@@ -144,7 +144,7 @@ export const vetClinic = {
     ],
     alt: 'The veterinarian’s queue for the day: counts in the header, one line naming three records still open from earlier in the week, patients at the clinic and patients expected — with the patient card and the schedule behind it',
     caption:
-      'The veterinarian’s day — who is here, who is expected, and three records still open from earlier in the week. Data is invented.',
+      'The veterinarian’s day — who is here, who is expected, and three records still open from earlier in the week.',
   },
 
   context: {
@@ -182,7 +182,7 @@ export const vetClinic = {
     body: [
       'This clinic was not coming from paper: practices of this size already run specialised software, so the product had to beat an incumbent rather than replace a filing cabinet — which makes it the only hard evidence there is. I audited it screen by screen against heuristics, with a severity scale that keeps “blocks the work” apart from “looks untidy”, and with a limit written into the report: the veterinarian’s own visit screen, the schedule and the owner cabinet were not in the material I had, and no conclusions were drawn about them.',
       'Then desk research on the market and on the regulation around veterinary records. Three of its numbers could not be traced to a primary source, so they were marked unverified and kept out of the PRD rather than rounded into it. Everything the conversations could not confirm carries the same mark and stays a hypothesis for real customer development — including the two that changed the product, because a hypothesis that flatters your redesign is still a hypothesis.',
-      'Then scope: 31 Must-haves out of 62 requirements, with the core of the appointment declared indivisible — seven parts that ship together or not at all. Then a 44-screen sitemap, three flows, twelve low-fidelity frames. Then the design system, then twelve high-fidelity frames carrying one story end to end, from the queue to the discharge summary on the owner’s phone, with 31 edge cases built as hidden states instead of described in prose. Then a React prototype, a catalogue in Storybook, and synthetic agent runs over three scenarios, whose findings came back in four waves of fixes.',
+      'Then scope: 31 Must-haves out of 62 requirements, with the core of the appointment declared indivisible — seven parts that ship together or not at all. Then a 44-screen sitemap, three flows, twelve low-fidelity frames. Then the design system, then twelve high-fidelity frames carrying one story end to end, from the queue to the discharge summary on the owner’s phone, with 31 edge cases built as hidden states instead of described in prose. Then a React prototype, a catalogue in Storybook, and agent runs over three scenarios, whose findings came back in four waves of fixes.',
       /**
        * Стадия продуктовой доводки после приёмки — прогон
        * `Veterinary-clinic/audit/product-polish/` (`VET-PP-2026-09-12`),
@@ -210,7 +210,7 @@ export const vetClinic = {
     prototype: {
       href: PROTOTYPE,
       label: 'Open the prototype',
-      note: 'The prototype after the polish pass, on invented data — thirteen screens, three roles; changes stay in your browser.',
+      note: 'The prototype after the polish pass — thirteen screens, three roles; changes stay in your browser.',
     },
     /**
      * Клип — `CASE-20`, съёмка `scripts/shoot-clips.mjs vet`.

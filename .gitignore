@@ -20,3 +20,14 @@ tmp/
 # Сборка резюме. Генерируется npm run cv:build и cv:build:ru из
 # cv/resume-data*.json — в репозитории хранятся источники, не выгрузка.
 output/
+
+# Тяжёлые материалы бенчмарка: видео, записи прокрутки, исходники доноров,
+# покадровая съёмка. Локальные, ~45 МБ; выводы лежат в .md рядом.
+research/portfolio-benchmark/blinkov-rec/
+research/portfolio-benchmark/ha-src/
+research/portfolio-benchmark/motion-rec/
+research/portfolio-benchmark/frames/
+research/portfolio-benchmark/ha/
+research/portfolio-benchmark/ours/
+research/portfolio-benchmark/picks/
+research/portfolio-benchmark/shots/

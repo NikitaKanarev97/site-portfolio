@@ -20,7 +20,7 @@ import { site, NAME } from './site.ts';
 import { home } from './home.ts';
 import { about } from './about.ts';
 import { cases } from './cases/index.ts';
-import { siteRu, NAME_RU } from './ru/site.ts';
+import { NAME_RU } from './ru/site.ts';
 import { homeRu } from './ru/home.ts';
 import { aboutRu } from './ru/about.ts';
 import { casesRu } from './ru/cases/index.ts';
@@ -66,7 +66,7 @@ export const OG_CARDS: readonly OgCard[] = [
     id: 'default-ru',
     eyebrow: 'Портфолио',
     title: NAME_RU,
-    footnote: `${homeRu.hero.role} · ${siteRu.footer.location}`,
+    footnote: homeRu.hero.role,
   },
   {
     id: 'about-ru',

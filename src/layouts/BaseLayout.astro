@@ -17,7 +17,9 @@ import Navbar from '../components/Navbar.astro';
 import { PREVIEW_NOINDEX, site, type SiteCopy } from '../copy/site';
 import { OG_HEIGHT, OG_WIDTH, ogImage as ogImageFor, ogImageAlt } from '../copy/og.ts';
 import { alternatesFor, canonicalPath, localeSwitchPath, OG_LOCALES, type Locale } from '../copy/routes.ts';
-import logoUrl from '../../Images/favicon-v3.svg?url';
+import logoUrl from '../../Images/favicon-v4.svg?url';
+import logo16Url from '../../Images/favicon-v4-16.png?url';
+import logo32Url from '../../Images/favicon-v4-32.png?url';
 
 import '../styles/tokens.css';
 import '../styles/fonts.css';
@@ -96,7 +98,9 @@ const image = new URL(ogImageFor(ogCard), Astro.site);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="icon" href={logoUrl} type="image/svg+xml" />
+    <link rel="icon" href={logo16Url} type="image/png" sizes="16x16" />
+    <link rel="icon" href={logo32Url} type="image/png" sizes="32x32" />
+    <link rel="icon" href={logoUrl} type="image/svg+xml" sizes="any" />
     {canonical && <link rel="canonical" href={canonicalUrl} />}
 
     {/*

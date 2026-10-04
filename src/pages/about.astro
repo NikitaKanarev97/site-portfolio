@@ -10,11 +10,8 @@
  * паттернов ds/patterns.md. Тексты — src/copy/about.ts, сквозные —
  * src/copy/site.ts. Оболочка, ContactBlock и Footer — PageShell.
  *
- * Порядок блоков — предмет проектирования, а не вкуса. Портрет стоит после
- * тезиса и одного доказательного абзаца: первый экран несёт текст, но на
- * мобильном фотография не ждёт конца всей длинной главы. Право на работу
- * идёт сразу за портретом; два оставшихся абзаца практики образуют
- * самостоятельный блок ниже формального фильтра.
+ * Портрет — часть вступления: рядом с тезисом на desktop, между лидом
+ * и подробным примером на mobile. Право на работу идёт после вступления.
  *
  * Движение — карта ds/motion-concept.md §7. Вступительного такта на этом
  * маршруте нет вовсе: он живёт только на Hero главной (§5, §7), прямой
@@ -48,39 +45,31 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
   lang={locale}
   siteCopy={site}
 >
-  {/*
-    AboutIntro, текстовая часть. Один каскад из трёх участников: заголовок,
-    ведущий абзац и один конкретный пример работы с ограничением. Этого
-    достаточно, чтобы первый экран работал сам, не превращая портрет в
-    награду после трёх экранов текста на мобильном.
-  */}
-  <section class="ds-container ds-section intro" data-motion-group data-motion-stagger="tight">
-    <h1 class="ds-heading-4xl intro__heading ds-flow-heading" data-motion="reveal-text">
-      {about.intro.heading}
-    </h1>
+  {/* AboutIntro: лицо и подход видны вместе; пример следует за лидом. */}
+  <section class="ds-container intro" data-motion-group data-motion-stagger="tight">
+    <div class="ds-section intro__copy">
+      <h1 class="ds-heading-4xl intro__heading ds-flow-heading" data-motion="reveal-text">
+        {about.intro.heading}
+      </h1>
 
-    <ProseBlock variant="lead" class="intro__lead">
-      <p>{about.intro.lead}</p>
-    </ProseBlock>
+      <ProseBlock variant="lead" class="intro__lead">
+        <p>{about.intro.lead}</p>
+      </ProseBlock>
+    </div>
 
-    <ProseBlock class="intro__body">
-      <p>{about.intro.principle}</p>
-    </ProseBlock>
-  </section>
-
-  {/*
-    AboutIntro, портрет. Одна фотография, не галерея: она подтверждает, что
-    за текстом человек, а не несёт смысл. Подписи нет — решение владельца.
-    Ширина выведена из токена меры, а не прибита числом.
-  */}
-  <section class="ds-container ds-section-tight portrait">
     <MediaFrame
       src={about.portrait.src}
       alt={about.portrait.alt}
       ratio="portrait"
+      loading="eager"
       counterScale={false}
-      class="portrait__frame"
+      reveal={false}
+      class="intro__portrait"
     />
+
+    <ProseBlock class="intro__body">
+      <p>{about.intro.principle}</p>
+    </ProseBlock>
   </section>
 
   {/*
@@ -99,13 +88,13 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     перечисление вариантов через «или». NoteBlock здесь не стоит намеренно:
     рамка и метка читаются как оговорка, а это не оговорка, а факт.
   */}
-  <section class="ds-container ds-section authorization" data-motion-group data-motion-stagger="tight">
+  {about.authorization && <section class="ds-container ds-section authorization" data-motion-group data-motion-stagger="tight">
     <SectionHead size="lg">{about.authorization.heading}</SectionHead>
 
     <ProseBlock>
       <p>{about.authorization.body}</p>
     </ProseBlock>
-  </section>
+  </section>}
 
   {/*
     AboutEvidence. Два абзаца про ошибки и измерение вынесены из Intro:
@@ -143,30 +132,30 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     color: var(--text-default);
   }
 
-  /* Вертикали здесь больше нет: заголовок → лид даёт ds-flow-heading,
-     лид → тело — ds-flow-lead на ProseBlock. Два правила с margin-bottom
-     и :global(), стоявшие тут до 2026-08-24, были единственным местом,
-     где цепочка «заголовок → лид → тело» вообще существовала — на других
-     маршрутах те же три узла стояли на других числах. */
+  .intro {
+    display: grid;
+    gap: var(--flow-group);
+    grid-template-areas: 'copy' 'portrait' 'body';
+  }
 
-  /* ---------------------------------------------------------------- *
-   * AboutIntro — портрет                                              *
-   * ---------------------------------------------------------------- */
+  .intro__copy { grid-area: copy; min-inline-size: 0; }
+  .intro > :global(.intro__portrait) { grid-area: portrait; }
+  .intro > :global(.intro__body) { grid-area: body; }
 
-  /* Портрет принадлежит блоку выше, а не стоит отдельно: сверху узловой
-     шаг вместо секционного — класс ds-section-tight. Снизу полный шаг
-     секции, его приносит следующая секция, потому что дальше начинается
-     другой разговор. */
-
-  /* Мобильная раскладка базовая: кадр во всю ширину контейнера, никаких
-     ограничений. Десктопное надстраивается. */
   @media (--bp-md) {
-    /* Не на всю ширину и не по центру: половина колонки чтения, по левому
-       краю. Число не прибито — ширина выведена из токена меры и поедет
-       вместе с ним. :global по той же причине: корень MediaFrame — figure
-       с собственным data-astro-cid. */
-    .portrait > :global(.portrait__frame) {
-      max-width: calc(var(--measure-text) / 2);
+    .intro {
+      grid-template-columns: minmax(0, 1fr) minmax(0, calc(var(--measure-text) / 2 - var(--space-16)));
+      grid-template-areas: 'copy portrait' 'body portrait';
+      column-gap: var(--space-12);
+      align-items: start;
+      align-content: start;
+    }
+  }
+
+  @media (--bp-lg) {
+    .intro {
+      grid-template-columns: minmax(0, 1fr) minmax(0, calc(var(--measure-text) / 2));
+      column-gap: var(--space-16);
     }
   }
 

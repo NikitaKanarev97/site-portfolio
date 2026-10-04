@@ -68,4 +68,11 @@ const { tone = 'light', class: className } = Astro.props;
       padding: var(--space-16);
     }
   }
+
+  /* The product already owns its surface; retain only its native outline. */
+  .case-plate.case-plate--plain {
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+  }
 </style>

@@ -42,6 +42,8 @@ export interface ShotItem {
   film?: boolean;
   /** Actual specimen capture width in CSS pixels; prevents enlarging a tiny control. */
   nativeWidth?: number;
+  /** A self-contained product panel needs no second coloured container. */
+  field?: 'plain';
 }
 
 export interface Shot {
@@ -56,7 +58,7 @@ export interface Callout {
   alt: string;
   srcNarrow?: string;
   altNarrow?: string;
-  /** Координаты номера в процентах кадра; текст — до 12 слов. */
+  /** Source observation coordinates; each numbered explanation renders once beside the image. */
   marks: { x: number; y: number; text: string }[];
   caption: string;
 }
@@ -74,7 +76,8 @@ export interface Thesis {
 }
 
 export type CoverMedia =
-  | { variant: 'proof'; eyebrow: string; caption: string; shot: ShotItem; panels?: ShotItem[]; layout?: 'interlock'; gate?: string }
+  | { variant: 'proof'; eyebrow: string; caption: string; shot: ShotItem; panels?: ShotItem[]; layout?: 'interlock' | 'procurement'; gate?: string;
+      workflow?: { sourceLabel: string; reviewLabel: string; resultLabel: string; source: string; request: string; quantity: string; total: string; exceptions: string; decision: string } }
   | {
       variant: 'video';
       /** Адрес ролика без расширения. Нет ролика — читаемый постер. */

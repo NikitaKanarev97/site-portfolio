@@ -56,10 +56,6 @@ export const siteRu = {
     pause: 'Остановить ролик',
   },
   footer: {
-    location: 'Армения',
-    utcLabel: 'UTC+4',
-    timeZone: 'Asia/Yerevan',
-    timeLabel: 'местное время',
     copyright: '© 2026',
   },
 } as const satisfies SiteCopy;

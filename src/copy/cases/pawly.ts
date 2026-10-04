@@ -1,5 +1,5 @@
 /** Pawly · accepted Product Polish, September 2026.
- * Independent concept; synthetic QA only. Source: PETS-walking/audit/product-polish/reports/05-acceptance.md.
+ * Independent concept; agent QA only. Source: PETS-walking/audit/product-polish/reports/05-acceptance.md.
  * Composition and media provenance: ds/screens/case-pawly.md.
  */
 export const pawly = {
@@ -38,7 +38,7 @@ export const pawly = {
       },
       {
         "term": "Prototype",
-        "value": "Interactive demo · invented data",
+        "value": "Interactive demo",
         "href": "https://pawly-fawn.vercel.app/app"
       }
     ],
@@ -59,7 +59,7 @@ export const pawly = {
     ],
     "rework": {
       "label": "A concept, not a live service",
-      "text": "Independent concept · no human validation. The design and interactive demo are implemented; the marketplace is not operating. Names, checks, addresses, photos and money are demonstration data. There is no backend, real GPS, upload, chat or payment processing. Research used secondary sources and a simulated interview; QA used synthetic runs."
+      "text": "Independent concept · no human validation. The design and interactive demo are implemented; the marketplace is not operating. There is no backend, real GPS, upload, chat or payment processing. Research used secondary sources; QA used agent runs."
     }
   },
   "cover": {
@@ -69,14 +69,14 @@ export const pawly = {
       "/media/case-pawly/handover-photo-review.webp"
     ],
     "alt": "Pawly: recorded handling limits, expected return and a selected return photo awaiting confirmation.",
-    "caption": "Compatibility, return and proof in the accepted September demo. Invented data."
+    "caption": "Compatibility, return and proof in the accepted September demo."
   },
   "context": {
     "heading": "The owner is not buying a walk. They are handing over a dog, and sometimes the keys.",
     "body": [
       "The starting brief was “Uber for dogs”: find somebody nearby, book and follow the route. The harder decision happens before booking. An owner at work has a short window to decide whether a stranger can handle their dog and receive access to the home.",
       "Desk research across five competitors suggested a gap between fast self-service booking and services whose reassurance depends on a manager assigning the walker. I used that gap as a design hypothesis: let the owner inspect the basis for a match without implying that an early marketplace can serve every address.",
-      "The concept keeps its original Russian-market setting. English and Russian versions use the same rouble prices and Moscow demonstration address; translation does not imply a launch in another market."
+      "The concept keeps its original Russian-market setting. English and Russian versions use the same rouble prices and Moscow address; translation does not imply a launch in another market."
     ]
   },
   "reframe": {
@@ -90,7 +90,7 @@ export const pawly = {
     "range": {
       "src": "/media/case-pawly/range-evidence-chain.webp",
       "alt": "Three current Pawly screens: Marina’s recorded handling limits, Baikal expected home at 14:50, and the report with return confirmed at 14:52.",
-      "caption": "A recorded match, an expected return, then a confirmed return. Three different claims, with different evidence. Demonstration data."
+      "caption": "A recorded match, an expected return, then a confirmed return. Three different claims, with different evidence."
     }
   },
   "process": {
@@ -103,7 +103,7 @@ export const pawly = {
     "prototype": {
       "href": "https://pawly-fawn.vercel.app/app",
       "label": "Open the prototype",
-      "note": "Seventeen routes in EN/RU on invented data. Open “All screens” to move between owner and walker roles; reset is available in the demo shell."
+      "note": "Seventeen routes in EN/RU. Open “All screens” to move between owner and walker roles; reset is available in the demo shell."
     },
     "clip": {
       "src": "/media/case-pawly/clip-return-proof-poster.webp",
@@ -130,7 +130,7 @@ export const pawly = {
     "body": [
       "The August review found plausible screens describing inconsistent prices, and saved state that could confuse the next demo visit. Those were problems between screens. Its historical total of 73 reviewed findings — 71 resolved and two dismissed — belongs to that original build, not to a new user study.",
       "September checks found a more consequential contradiction: choosing another time could bypass the dog’s constraints, and a replacement did not always preserve the named reserve. Both now use one compatibility rule across weight, safety answers, recorded qualifications, all seven checks and the full booking slot. Changing the time never clears the risks.",
-      "The final synthetic journeys also exposed an old review surviving the start of a new draft. A new booking ID now clears the review and private flags. On the walker side, a confirmed return records the payout once: re-entering or reloading the report does not earn another 779 ₽. These are verified demo behaviours, not evidence of safer real walks."
+      "The final agent journeys also exposed an old review surviving the start of a new draft. A new booking ID now clears the review and private flags. On the walker side, a confirmed return records the payout once: re-entering or reloading the report does not earn another 779 ₽. These are verified demo behaviours, not evidence of safer real walks."
     ]
   },
   "decisions": {
@@ -232,11 +232,11 @@ export const pawly = {
       },
       {
         "term": "Trade-off",
-        "value": "A deliberately narrow demo: one active booking, a shared demonstration wallet and recorded handling limits. No insurance, guaranteed reserve, real payments, GPS or operational verification."
+        "value": "A deliberately narrow demo: one active booking, a shared wallet and recorded handling limits. No insurance, guaranteed reserve, real payments, GPS or operational verification."
       },
       {
         "term": "Checked",
-        "value": "Local acceptance on 13 September 2026 covered all seventeen routes in EN/RU, using earlier 360/390/430 px checks and focused cross-screen journeys. Keyboard access, long text, reduced motion and recovery states were checked within that scope. This was synthetic QA, not human validation or a full accessibility certification."
+        "value": "Local acceptance on 13 September 2026 covered all seventeen routes in EN/RU, using earlier 360/390/430 px checks and focused cross-screen journeys. Keyboard access, long text, reduced motion and recovery states were checked within that scope. This was agent QA, not human validation or a full accessibility certification."
       },
       {
         "term": "What changed in how I work",
@@ -275,7 +275,7 @@ export function createPawlyStory(locale: 'en' | 'ru'): CaseStory {
   };
   return defineStory({theme:'pawly',plate:'light',
     cover:{title:'Pawly',outcome:t('A familiar face. A clear return. Proof the dog is home.','Знакомое лицо. Понятное возвращение. Подтверждение, что собака дома.'),media:{variant:'screen',layout:'phones',items:[profile,active,report]}},
-    facts:[{term:t('Status','Статус'),value:t('Independent concept','Самостоятельный концепт')},{term:t('Role','Роль'),value:t('Sole product designer','Единственный продуктовый дизайнер')},{term:t('Version','Версия'),value:t('September 2026 · EN/RU','Сентябрь 2026 · EN/RU')},{term:t('Evidence','Проверка'),value:t('Synthetic QA · no human validation','Синтетическая QA · без проверки с людьми')}],
+    facts:[{term:t('Status','Статус'),value:t('Independent concept','Самостоятельный концепт')},{term:t('Role','Роль'),value:t('Sole product designer','Единственный продуктовый дизайнер')},{term:t('Version','Версия'),value:t('September 2026 · EN/RU','Сентябрь 2026 · EN/RU')},{term:t('Evidence','Проверка'),value:t('agent QA · no human validation','QA агентом · без проверки с людьми')}],
     blocks:[
       {id:'care-context',type:'thesis',evidenceId:'paw-concept',payload:{label:t('The situation','Ситуация'),thesis:t('Handing over a dog takes trust','Передать собаку — значит довериться'),body:t('An owner at work hands over a pet, sometimes the keys. I framed trust as inspectable evidence: who can handle this dog, when they should return, and what has actually been received.','Владелец на работе передаёт питомца, иногда ключи. Я связал доверие с проверяемыми основаниями: кто справится с собакой, когда её ждать и какое подтверждение уже получено.')}},
       {id:'compatibility',type:'process',evidenceId:'paw-match',mediaId:'paw-profile',payload:{thesis:{label:t('Before booking','До бронирования'),thesis:t('A match needs a reason','У выбора есть основание'),body:t('Baikal’s needs sit beside Marina’s recorded limits. Seven dated checks answer a different question. Changing the time can change availability; it cannot remove the dog’s risks.','Потребности Байкала стоят рядом с записанными пределами Марины. Семь датированных проверок отвечают на другой вопрос. Другое время меняет доступность, но не убирает риски собаки.')},slides:[{shot:profile},{shot:phone('walker-list','Compatible walker list for a 45-minute 950 rouble fixture.','Подходящие исполнители для фикстуры 45 минут, 950 рублей.')}],captions:[t('Requirements before checks. The primary action stays visible.','Потребности перед проверками. Основное действие видно целиком.'),t('The same requirements follow the booking into the candidate list.','Те же требования сохраняются в списке исполнителей.')]}},
@@ -286,7 +286,7 @@ export function createPawlyStory(locale: 'en' | 'ru'): CaseStory {
       ]}},
       {id:'proof-system',type:'specimen',evidenceId:'paw-catalogue',mediaId:'paw-specimens',payload:{specimen}},
       {id:'walker-earnings',type:'shot',evidenceId:'paw-settlement',mediaId:'paw-earnings',payload:{thesis:{label:t('The other role','Вторая роль'),thesis:t('The same walk, one earning','Одна прогулка — одно начисление'),body:t('950 − 171 = 779 ₽. The net earning is separate from available balance and period history. Re-entry does not pay twice. These are fixture amounts.','950 − 171 = 779 ₽. Начисление отделено от доступного баланса и истории периода. Повторный вход не платит дважды. Это суммы фикстуры.')},shot:{layout:'phones',items:[phone('walker-earnings','Walker earnings: 3895 roubles available after one 779 rouble settlement, period history below.','Заработок исполнителя: доступно 3895 рублей после одного начисления 779 рублей, ниже история периода.')],caption:t('3116 + 779 = 3895 ₽. Demonstration arithmetic.','3116 + 779 = 3895 ₽. Арифметика демонстрации.')}}},
-      {id:'inspectable-care',type:'outcome',evidenceId:'paw-acceptance',motion:'static',payload:{result:{label:t('What is complete','Что завершено'),thesis:t('A chain you can inspect','Цепочка, которую можно проверить')},evidence:{label:t('Implemented','Реализовано'),text:t('Compatibility, two confirmed photos and one settlement across both roles. September acceptance covers 17 EN/RU demo routes through synthetic QA.','Совместимость, два подтверждённых фото и одно начисление для обеих ролей. Сентябрьская приёмка охватывает 17 демомаршрутов EN/RU средствами синтетической QA.')},tradeoff:{label:t('The boundary','Граница'),text:t('One demo booking; no live GPS, upload or payments. Choosing and sending add a deliberate step.','Одна демобронь; без живого GPS, загрузки и платежей. Выбор и отправка требуют отдельного шага.')},nextEvidence:{label:t('Next question','Следующий вопрос'),text:t('Do owners and walkers understand these boundaries in a real task?','Понимают ли владельцы и исполнители эти границы в реальной задаче?')}}},
+      {id:'inspectable-care',type:'outcome',evidenceId:'paw-acceptance',motion:'static',payload:{result:{label:t('What is complete','Что завершено'),thesis:t('A chain you can inspect','Цепочка, которую можно проверить')},evidence:{label:t('Implemented','Реализовано'),text:t('Compatibility, two confirmed photos and one settlement across both roles. September acceptance covers 17 EN/RU demo routes through agent QA.','Совместимость, два подтверждённых фото и одно начисление для обеих ролей. Сентябрьская приёмка охватывает 17 демомаршрутов EN/RU средствами QA агентом.')},tradeoff:{label:t('The boundary','Граница'),text:t('One demo booking; no live GPS, upload or payments. Choosing and sending add a deliberate step.','Одна демобронь; без живого GPS, загрузки и платежей. Выбор и отправка требуют отдельного шага.')},nextEvidence:{label:t('Next question','Следующий вопрос'),text:t('Do owners and walkers understand these boundaries in a real task?','Понимают ли владельцы и исполнители эти границы в реальной задаче?')}}},
     ],prototype:{label:t('Explore the EN demo','Открыть демо на русском'),href:`https://pawly-fawn.vercel.app/${locale==='ru'?'ru/':''}app`},
   });
 }

@@ -2,8 +2,8 @@
 /**
  * Footer — ds/components.md
  *
- * Локация, смещение UTC и локальное время (SCR-03). Присутствует на всех
- * трёх маршрутах.
+ * Локация, смещение UTC и локальное время (SCR-03) — необязательная группа.
+ * Русская локаль передаёт только copyright (решение владельца 05.10.2026).
  *
  * Почему компонент, а не композиция: время считается на клиенте, и без
  * JS блок обязан оставаться осмысленным. Разметка приходит с сервера как
@@ -18,10 +18,10 @@
  * Движение: без движения (ds/motion-concept.md §7, карта Home).
  */
 interface Props {
-  location: string;
-  utcLabel: string;
+  location?: string;
+  utcLabel?: string;
   /** IANA-зона для Intl. Без неё время считалось бы по зоне читателя. */
-  timeZone: string;
+  timeZone?: string;
   timeLabel?: string;
   copyright: string;
   class?: string;
@@ -39,12 +39,12 @@ const {
 
 <footer class:list={['footer', className]}>
   <div class="ds-container footer__inner">
-    <p class="footer__place ds-meta-sm">
+    {location && utcLabel && timeZone && <p class="footer__place ds-meta-sm">
       <span>{location} · {utcLabel}</span>
       <span class="footer__time" data-local-time data-time-zone={timeZone} hidden>
         {' · '}<time data-local-time-value></time>{' '}{timeLabel}
       </span>
-    </p>
+    </p>}
 
     <p class="footer__copyright ds-meta-sm">{copyright}</p>
   </div>

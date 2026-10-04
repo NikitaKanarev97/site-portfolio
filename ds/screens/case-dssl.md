@@ -4,7 +4,7 @@
 
 Preview EN `/preview/partner-portal-rebuild/en/`, RU `/preview/partner-portal-rebuild/ru/`; noindex, no canonical. Base A `936724beff3bb9a01c69381659dc808782cc7950`. Uses frozen `ds/story-contract.md` / `CaseStory`, no renderer or DS mutations. Public legacy routes remain under the archived map below until integration.
 
-Cover: portal proof, one complete real decision panel; matching native narrow capture. The original commercial redesign shipped in full (owner fact). Every new UI frame is the current independent reconstruction on synthetic data. Facts retain sole designer/team and 2024–winter 2026 / roughly six active months across a long pause.
+Cover: procurement workflow, source XLS row → three distinct exception categories in the actual resolution queue → confirmed source row 38. Native narrow captures preserve the whole rows. The original commercial redesign shipped in full (owner fact). Facts retain sole designer/team and 2024–winter 2026 / roughly six active months across a long pause. Self-contained source-line panels have a plain field, without a second beige container. The owner confirmed that the project data are real; public copy carries no fictional-data qualifiers.
 
 | Stable ID | Module / motion | Purpose / evidence |
 |---|---|---|

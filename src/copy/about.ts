@@ -67,7 +67,7 @@ export const about = {
       /* Чем меряю результат, когда цифры закрыты. */
       'Most of what I have shipped is under NDA, and some of it has no baseline to measure against: its metrics were a plan for measurement, not a claim of results. I do not publish numbers I cannot stand behind or let a plan pass for an outcome. I publish the compromise instead — what the design achieved, what it cost, who now does more work, and what would have to change to remove that cost. A named trade-off can be checked in conversation; a number without a baseline cannot.',
       /* Чем заканчивается работа: доведение до работающей сборки. */
-      'The same standard applies to what I hand over. I carry design decisions through to a working build — tokens, components in code, a deployed URL, a QA pass against the running screen — because a decision that stops at a handoff file has not been tested yet. The boundary is the one I would give you in conversation: the front end and integration with an existing API, and most of these builds are prototypes on synthetic data rather than production systems under load.',
+      'The same standard applies to what I hand over. I carry design decisions through to a working build — tokens, components in code, a deployed URL, a QA pass against the running screen — because a decision that stops at a handoff file has not been tested yet. The boundary is the one I would give you in conversation: the front end and integration with an existing API, and most of these builds are prototypes rather than production systems under load.',
     ],
   },
 

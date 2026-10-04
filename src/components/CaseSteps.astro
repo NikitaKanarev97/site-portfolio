@@ -53,7 +53,7 @@ const pad = (n: number) => String(n).padStart(2, '0');
             {composition === 'checkpoint' && step.scene === 'decision' && <div class="case-steps__stop"><span class="case-steps__stop-symbol" aria-hidden="true"><i /><i /></span><p class="ds-meta-xs">{gate}</p></div>}
           </div>
           <div class="case-steps__shot">
-            <CasePlate tone={composition === 'checkpoint' ? 'dark' : variant === 'focus' ? 'light' : tone}>
+            <CasePlate tone={composition === 'checkpoint' ? 'dark' : variant === 'focus' ? 'light' : tone} class={step.shot.field === 'plain' ? 'case-plate--plain' : undefined}>
               <CaseScreen item={step.shot} class="case-steps__screen" />
             </CasePlate>
             {step.caption && <p class="ds-body-sm case-steps__caption" data-h="caption">{step.caption}</p>}

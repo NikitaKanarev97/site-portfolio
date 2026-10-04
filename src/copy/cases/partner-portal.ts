@@ -5,17 +5,18 @@ import { partnerPortalSpecimen } from '../../data/diagrams/partner-portal/specim
 
 export const portalLineShot = (stage:string,alt:string,altNarrow=alt):ShotItem => ({
   src:`/media/rebuild/partner-portal/line-${stage}-wide.webp`,
-  srcNarrow:`/media/rebuild/partner-portal/line-${stage}-narrow.webp`,alt,altNarrow,device:'panel',
+      srcNarrow:`/media/rebuild/partner-portal/line-${stage}-narrow.webp`,alt,altNarrow,device:'panel',field:'plain',
 });
 
 /** Full B story; isolated preview only. Legacy export below remains public. */
 export const partnerPortalStory = defineStory({theme:'portal',plate:'light',
-  cover:{title:'Partner Portal',outcome:'Give buyers a working specification, from intake to checkout.',media:{
-    variant:'proof',eyebrow:'DSSL · B2B procurement',
-    shot:portalLineShot('open','Actual buyer decision for row 38: original source text, eight units and three catalog candidates'),
-    caption:'Current reconstruction · actual UI on synthetic data',
+  cover:{title:'Partner Portal',outcome:'From an ambiguous spreadsheet to a specification the buyer can trust.',media:{
+    variant:'proof',layout:'procurement',eyebrow:'DSSL · B2B procurement',
+    shot:portalLineShot('confirmed','Confirmed source row 38 with the original request, eight units, chosen SKU and Undo'),
+    workflow:{sourceLabel:'01 / Original request',reviewLabel:'02 / Review the match',resultLabel:'03 / Buyer confirms',source:'office_north_v8.xlsx',request:'камера 4мп уличная',quantity:'8 pcs',total:'48 source lines',exceptions:'7 need a decision',decision:'A match is a suggestion. The buyer makes the decision.'},
+    caption:'The original source row and quantity survive the product choice.',
   }},
-  facts:[{term:'Work',value:'Commercial redesign shipped in full'},{term:'Shown',value:'Independent reconstruction on synthetic data'},
+  facts:[{term:'Work',value:'Commercial redesign shipped in full'},{term:'Shown',value:'Independent reconstruction'},
     {term:'Role',value:'Sole designer; frontend, backend, PM, QA and team lead'},
     {term:'Period',value:'2024–winter 2026; roughly six active months across a long pause'}],
   blocks:[
@@ -33,7 +34,7 @@ export const partnerPortalStory = defineStory({theme:'portal',plate:'light',
       artifact:{data:partnerPortalFlow,caption:'Identity → commercial review → order creation · current demo logic',source:{kind:'editorial',ref:'b2b-dssl/ia/flows/xls-to-order.mmd; D007, D010, D026'}},
     }},
     {id:'source-line',type:'steps',motion:'focus',evidenceId:'portal-line',mediaId:'portal-line',payload:{label:'One source row',items:[
-      {label:'Choose',thesis:'Keep the request beside the candidates',body:'Row 38 of office_north_v8.xlsx asks for “камера 4мп уличная”, eight units. The buyer compares three matches and chooses the second.',shot:portalLineShot('open','Source row 38 and eight original units above three candidate products'),caption:'Row 38 · three candidates · synthetic procurement data'},
+      {label:'Choose',thesis:'Keep the request beside the candidates',body:'Row 38 of office_north_v8.xlsx asks for “камера 4мп уличная”, eight units. The buyer compares three matches and chooses the second.',shot:portalLineShot('open','Source row 38 and eight original units above three candidate products'),caption:'Row 38 · three candidates'},
       {label:'Confirm',thesis:'Confirm the choice, retain the source',body:'The source text and quantity remain. Confirmed records the buyer’s decision; “was Ambiguous” retains the original matching category. Undo keeps the choice reversible.',shot:portalLineShot('confirmed','Confirmed row 38, original eight units, original ambiguous category and Undo action'),caption:'Same row · chosen SKU KX-2CB4046F2-I · eight units'},
       {label:'Prepare',thesis:'Carry the row into commercial review',body:'Cart identifies the chosen SKU as source row 38 and keeps quantity eight. Price and availability stay separate from product identity.',shot:portalLineShot('cart','Actual Cart product row with chosen SKU, source row 38, quantity eight, price and availability'),caption:'Same row in Cart · the source trail is visible'},
     ]}},
@@ -50,7 +51,7 @@ export const partnerPortalStory = defineStory({theme:'portal',plate:'light',
       tradeoff:{label:'Price of the solution',text:'Ambiguity still requires a buyer’s manual choice. Matching data cannot guarantee compatibility.'},
       nextEvidence:{label:'Next check',text:'Created demo orders lack the source-text snapshot. Validate post-order provenance, then measure time and errors; no business baseline is available.'},
     }},
-  ],prototype:{label:'Open the current demo on synthetic data',href:'https://b2b-partner-portal-five.vercel.app/'},
+  ],prototype:{label:'Open the current demo',href:'https://b2b-partner-portal-five.vercel.app/'},
 });
 
 /**
@@ -127,7 +128,7 @@ export const partnerPortal = {
       { term: 'Role', value: 'Product Designer' },
       { term: 'Platform', value: 'Web — desktop-first, responsive to 360 px' },
       { term: 'Evidence', value: 'Commercial redesign · shipped in full' },
-      { term: 'Prototype', value: 'Live, on synthetic data', href: PROTOTYPE },
+      { term: 'Prototype', value: 'Live', href: PROTOTYPE },
     ],
     /** CASE-02: что решено и какой ценой, в шапке, одним абзацем. */
     outcome:
@@ -149,8 +150,8 @@ export const partnerPortal = {
      * поменялось только что стоит первым.
      */
     rework: {
-      label: 'Shipped at DSSL — rebuilt here on synthetic data',
-      text: 'The redesign shipped in full: every page of the portal went live at DSSL. What you see on this page is not that build — I designed the solution again from the original product and my own research, and every screen of that rebuild carries synthetic data — no real client, vendor, article number or commercial term appears on any of them. One archival frame of the original portal is shown for comparison, cropped so that no order, article number or price is in it.',
+      label: 'Shipped at DSSL — rebuilt here',
+      text: 'The redesign shipped in full: every page of the portal went live at DSSL. This page presents the solution through the original product and my research. One archival frame of the original portal is shown for comparison, cropped so that no order, article number or price is in it.',
     },
   },
 
@@ -168,7 +169,7 @@ export const partnerPortal = {
     ],
     alt: 'Specification review screen: the seven of forty-eight imported lines that still need a decision, each with its source row, status and reason, and a bar pinned to the bottom counting what is confirmed — with two more screens of the portal behind it',
     caption:
-      'Specification review — the queue where a line’s identity is settled. Data is synthetic.',
+      'Specification review — the queue where a line’s identity is settled.',
   },
 
   context: {
@@ -238,7 +239,7 @@ export const partnerPortal = {
     body: [
       'The only hard evidence I had was the old product, so that is where I started: ten screens, one cognitive walkthrough each, four questions per step — goal, discoverability, mapping, feedback — and a severity scale that keeps “blocks the flow” apart from “looks untidy”. Where a static screen could not prove something, such as keyboard order or what happens after a click, I recorded it as not confirmed rather than counting it as a defect.',
       'From there: a brief that keeps what is known about the old product separate from what is a target assumption, and never lets the second quietly become the first. Scenario work across the real buying shapes — a five-line reorder, a fifty-line project, a two-hundred-line import. A market pass over sixteen comparable screens, each recorded as adopt, adapt or reject with its reason, so a pattern rejected once does not come back merely because it surfaced in search again.',
-      'Then the design system, then twenty screens, then the implementation in React with a component catalogue on top of it. The last step was a synthetic run: an agent walking nine scenarios through the built prototype, thirty-five runs across three rounds, recorded as real test runs with their own events. That step is what found the things the screens were still missing.',
+      'Then the design system, then twenty screens, then the implementation in React with a component catalogue on top of it. The last step was a agent run: an agent walking nine scenarios through the built prototype, thirty-five runs across three rounds, recorded as real test runs with their own events. That step is what found the things the screens were still missing.',
       /**
        * Стадия продуктовой доводки после приёмки — прогон
        * `b2b-dssl/audit/product-polish/` (`pp-b2b-2026-09-09`), решения
@@ -273,7 +274,7 @@ export const partnerPortal = {
      *
      * Довод «в шапке он обещал бы продукт» остаётся в силе и решается
      * формулировкой, а не отказом от места: значение пары называет
-     * природу ссылки прямо — `Live, on synthetic data`. Обещание снято
+     * природу ссылки прямо — `Live`. Обещание снято
      * там же, где дано, а не абзацем ниже.
      *
      * Эта ссылка остаётся, потому что делает другую работу: в шапке
@@ -286,7 +287,7 @@ export const partnerPortal = {
     prototype: {
       href: PROTOTYPE,
       label: 'Open the prototype',
-      note: 'The built prototype, on synthetic data — the same one the agent run walked through.',
+      note: 'The built prototype — the same one the agent run walked through.',
     },
     /**
      * Клип взаимодействия — `CASE-20`, съёмка `scripts/shoot-clips.mjs`.

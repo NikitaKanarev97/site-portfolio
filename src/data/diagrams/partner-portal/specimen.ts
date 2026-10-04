@@ -19,5 +19,5 @@ export function partnerPortalSpecimen(lang:'en'|'ru'): Specimen {
       state('fulfillmentplan','selected','Selected · choice remains visible','Выбран · выбор виден','Selected plan retains all shipment terms and selected action','Выбранный план сохраняет все условия и явно отмеченный выбор'),
       state('fulfillmentplan','unavailable','Unavailable · reason stated','Недоступен · причина названа','Plan unavailable because seven lines have no stock at this warehouse','План недоступен: семи строк нет на выбранном складе'),
     ]},
-  ],caption:ru?'Четыре семейства · 13 состояний · настоящий UI на демоданных':'Four domain families · 13 states · actual UI on synthetic data'};
+  ],caption:ru?'Четыре семейства · 13 состояний · настоящий UI':'Four domain families · 13 states · actual UI'};
 }

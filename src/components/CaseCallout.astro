@@ -2,8 +2,7 @@
 /**
  * CaseCallout — ds/components.md, карта ds/screens/case.md §8
  *
- * Один элемент крупно, с нумерованными выносками (блоки 04 и 08). Донор —
- * Alex Dyakov: тонкая линия от номера на элементе к подписи сбоку.
+ * Один элемент крупно, с нумерованными пояснениями сбоку (блоки 04 и 08).
  *
  *   tone=note   номер ink — что значит каждая часть элемента (блок 08)
  *   tone=issue  номер красный — что было сломано, кадр «было» (блок 04)
@@ -12,16 +11,13 @@
  * экрана (правило 1). Кадр режется по границе смыслового блока (правило 2)
  * — это забота съёмки, компонент кадр не обрезает.
  *
- * Геометрия без JS. Номер стоит на кадре по координатам x, y в процентах.
- * Подпись стоит в колонке справа на той же высоте y, линия идёт только
- * снаружи, от края кадра до подписи. Подписи
- * у близких по y номеров наедут друг на друга: разводить их — забота
- * данных, не компонента.
+ * Один номер и его текст стоят рядом в отдельном поле справа от кадра.
+ * Маркеры никогда не закрывают UI и не повторяются на изображении.
+ * Список остаётся в потоке: длинные пояснения не сталкиваются.
  *
- * Ниже bp-md линий нет: номера на кадре, список подписей под кадром
+ * Ниже bp-md нумерованный список подписей стоит под кадром
  * внутри той же плашки.
  *
- * Движение: data-motion="draw" на линиях, исполнитель — этап 3.
  */
 import CasePlate from './CasePlate.astro';
 import { frameSize } from '../lib/media';
@@ -57,30 +53,11 @@ const narrowMedia = `(max-width: ${px('bp-md') - 1}px)`;
           data-motion="fade-image"
         />
         </picture>
-        {
-          callout.marks.map((mark, i) => (
-            <>
-              <span
-                class="case-callout__line"
-                style={`--x: ${mark.x}%; --y: ${mark.y}%`}
-                data-motion="draw"
-                aria-hidden="true"
-              />
-              <span
-                class="ds-meta-xs case-callout__dot"
-                style={`--x: ${mark.x}%; --y: ${mark.y}%`}
-                aria-hidden="true"
-              >
-                {i + 1}
-              </span>
-            </>
-          ))
-        }
       </div>
       <ol class="case-callout__list">
         {
           callout.marks.map((mark, i) => (
-            <li class="case-callout__item" style={`--y: ${mark.y}%`}>
+            <li class="case-callout__item">
               <span class="ds-meta-xs case-callout__dot case-callout__dot--list" aria-hidden="true">
                 {i + 1}
               </span>
@@ -119,7 +96,7 @@ const narrowMedia = `(max-width: ${px('bp-md') - 1}px)`;
   }
 
   .case-callout__shot {
-    position: relative;
+    min-inline-size: 0;
   }
 
   .case-callout__shot img {
@@ -142,16 +119,6 @@ const narrowMedia = `(max-width: ${px('bp-md') - 1}px)`;
     flex: none;
   }
 
-  .case-callout__shot > .case-callout__dot {
-    position: absolute;
-    inset-inline-start: var(--x);
-    inset-block-start: var(--y);
-    translate: -50% -50%;
-  }
-
-  .case-callout__line {
-    display: none;
-  }
 
   .case-callout__list {
     display: flex;
@@ -177,34 +144,16 @@ const narrowMedia = `(max-width: ${px('bp-md') - 1}px)`;
     .case-callout__body {
       display: grid;
       grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-      gap: var(--space-12);
-    }
-
-    /* Линия только в межколонном поле; интерфейс не перечёркивается. */
-    .case-callout__line {
-      display: block;
-      position: absolute;
-      inset-inline-start: 100%;
-      inset-inline-end: calc(-1 * var(--space-12));
-      inset-block-start: var(--y);
-      block-size: var(--border-width);
-      background: var(--mark);
+      gap: var(--space-6);
     }
 
     .case-callout__list {
-      position: relative;
-      display: block;
+      justify-content: center;
+      gap: var(--space-6);
     }
 
     .case-callout__item {
-      position: absolute;
-      inset-inline: 0;
-      inset-block-start: var(--y);
-      translate: 0 -50%;
-    }
-
-    .case-callout__dot--list {
-      display: none;
+      align-items: flex-start;
     }
   }
 </style>

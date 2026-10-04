@@ -44,12 +44,18 @@ ${base}
    Размеры шрифтов здесь были уменьшены под Segoe UI — широкую гарнитуру, на
    которую страница сваливалась из-за подмены выше. С Manrope подгонка не
    нужна и вредна: она оставляла пустой нижнюю треть листа и разводила
-   русское CV с английским по кеглю. Русский длиннее английского примерно
-   на десятую часть, поэтому колонка контактов получает чуть больше места,
-   а межстрочный интервал списков — чуть больше воздуха. */
+   русское CV с английским по кеглю. Русский текст длиннее английского,
+   поэтому контакты получают больше места, а вертикальный ритм компактнее:
+   все разделы, контакты и формат работы должны помещаться на одном листе. */
 .header{grid-template-columns:minmax(0,1fr) 76mm;gap:8mm}
-.bullets li{line-height:1.4}
-.skill dd{line-height:1.4}
+.sheet{zoom:.96;width:calc(210mm / .96);height:calc(297mm / .96)}
+.sheet>*{flex-shrink:0}
+.summary{line-height:1.36}
+.section{margin-top:2.7mm;padding-top:2mm}
+.entry+.entry{margin-top:1.7mm;padding-top:1.7mm}
+.bullets li{line-height:1.32;margin-top:.7mm}
+.skill dd{line-height:1.32}
+.lower-grid{margin-top:2.7mm}
 `;
 }
 
@@ -111,7 +117,7 @@ const html = `<!doctype html>
     <div>
       <h1 class="name">${escapeHtml(data.name)}</h1>
       <p class="headline"><strong>${escapeHtml(data.title)}</strong><span>${escapeHtml(data.headlineDetail)}</span></p>
-      <p class="location">${escapeHtml(data.location)}</p>
+${data.location ? `      <p class="location">${escapeHtml(data.location)}</p>` : ''}
     </div>
     <dl class="contacts">
       <div class="contact contact--primary"><dt>Портфолио</dt><dd>${anchor(contacts.portfolio)}</dd></div>
