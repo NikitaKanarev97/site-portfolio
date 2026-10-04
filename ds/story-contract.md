@@ -1,5 +1,7 @@
 # CaseStory — frozen Common A interface
 
+**G-common-E · manual film:** `ShotItem.film?: boolean` передаётся CaseScreen → существующий MediaFrame. Только вместе с video; guard действует на defineStory и CaseScreen, EN/RU pair проверяет одинаковый manual mode. Film имеет native controls, no autoplay/loop и poster. MP4 первый source только у film; loop сохраняет WebM → MP4. С JS уход из viewport/скрытие документа и смена motion preference ставят film на паузу без отмотки/автовозврата. No-JS сохраняет нативное управление, codec selection и статичные состояния.
+
 **G-01 · 04.10.2026:** actual specimen captures имеют прозрачный фон и bleed 2 CSS px для полной обводки. CaseSpecimen передаёт `CaseScreen native`, который сохраняет alpha-контур продукта без дополнительной рамки/маски портфолио. `nativeWidth` включает capture bleed. Story/schema, ID и EN/RU-структура не менялись. Владение общим слоем после приёмки A передано G; запросы — в integration/common-requests.md.
 
 **G wave 1 · B/C:** публичные registries добавляют `story` и `theme` к существующей entry после приёмки G. Общий EN route (RU использует его же) рендерит CaseStory для такой entry и прежнюю композицию для ещё не перенесённых. Next берёт slug/title/theme из той же локализованной registry; кейсовые owners не правят её. Frozen CaseStory data interface не изменился. B-G-01 исправлен централизованно в animations.js; ожидания resize/Back/live preference записаны в motion-concept.md.
