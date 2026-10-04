@@ -1,4 +1,31 @@
-# Screen: Agent Ops Console case
+# Screen: Agent Ops · F checkpoint transfer · 04.10.2026
+
+Current story exports: `agentOpsStory` in `src/copy/cases/agent-ops-console.ts`, `agentOpsStoryRu` in `src/copy/ru/cases/agent-ops-console.ts`. Four stable ordered blocks, frozen `CaseStory.astro`. Base `a6faac3a3d10eb6601fcc34caa70a915bea5dab3`; own checkout/commit and actual verification in `tasks/portfolio-rebuild/agent-ops/report.md`.
+
+Preview pair: `/preview/agent-ops-rebuild/en/`, `/preview/agent-ops-rebuild/ru/`, noindex, canonical disabled, outside sitemap. G connects the new story to public EN/RU entries after acceptance. Existing legacy exports remain for current public routes. Historical composition below does not govern this transfer.
+
+The opening says sole product designer / paid client / tested and accepted prototype. The client implementation is outside the outcome. Narrative budget 300–450 words is a guide, no minimum. Original operational facts, design estimates and invented UI fixtures retain separate statuses.
+
+| Order / stable ID | Native modules / intent | Proof and preserved composition | Fallback |
+|---|---|---|---|
+| Cover / facts | CaseCover proof/interlock, MetaList facts | Exact message and complete $340 payout; Human review gate. Whole panels, separate narrow material. Paid project and sole author early | Final interlock; natural mobile scroll |
+| review-load | CaseThesis + CaseNumbers count + visible estimate note | 61%, $23k, team 24 are context; 1,770 chats/day. 71 / 2.4h and staffing comparison are estimates, not savings | Final values and note without motion |
+| human-checkpoint | CaseSteps focus/checkpoint, CaseScreen | overview → workspace → promise → decision; horizontal cause table, right context, whole transcript, two strokes, whole approval with reject/approve. Background expands; UI does not | Native wide / wide / split list. Extra desktop transcript hidden on narrow; its content is already in workspace narrow |
+| missing-evidence | CaseThesis + CaseCallout | Whole trace: intent, policy match, skipped article, billing $420, written promise. Four external callouts | Whole narrow trace and numbered captions; no scrolling SVG |
+| accepted-prototype | CaseThesis + qualitative CaseImpact | User-tested, reworked and accepted; 19 screens / 3 roles. Scope and price of human review. No fabricated quote or measured effect | All result/evidence/tradeoff text visible |
+| External next | CaseNext | Native Partner Portal link, optional live prototype link in matching locale | Static readable title, same link; no manual pause |
+
+EN and RU share block IDs, order, evidence IDs, media identities, scene roles and geometry. RU text is independently edited; product pixels are real `/ru/` DOM captures from read-only accepted f4bb4bb. EN pilot files are unchanged and reused. $420 Nordwind and $340 Helio are separate fixtures. Full workspace is contextual; the following enlarged transcript carries the reading task.
+
+No new art direction, IA/user flow/system sheet or bespoke motion. Shared surface-review, review-stop, typography, flow/space and existing reviewStage remain. Full pin only width ≥1024 and height ≥820; mobile, short, reduce and no-JS use the native list. CaseNext is a single link with no pause button and no hover/focus pause.
+
+Evidence/media/artifact passports: `tasks/portfolio-rebuild/agent-ops/{evidence,media,artifact-plan}.md`. Exact source/capture hashes, page frames, central recording and fresh F checks are recorded there. Historical PASS below is not F acceptance.
+
+Current handoff is conditional on F-G-01: repeated live reduced-motion may shift the reading position. Independent copy/media/static/geometry checks are complete; shared motion remains frozen. Details and required G correction/retest are in `tasks/portfolio-rebuild/agent-ops/common-requests.md` and `report.md`.
+
+---
+
+# Historical legacy map · retained as provenance
 
 **Маршрут:** `/work/agent-ops-console` · шаблон `src/pages/work/[slug].astro`
 **Тексты:** `src/copy/cases/agent-ops-console.ts`
