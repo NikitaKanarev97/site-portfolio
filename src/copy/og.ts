@@ -59,7 +59,7 @@ export const OG_CARDS: readonly OgCard[] = [
   ...cases.map((entry) => ({
     id: `work-${entry.slug}`,
     eyebrow: 'Case',
-    title: entry.header.title,
+    title: entry.story.cover.title,
     footnote: BYLINE,
   })),
   {
@@ -77,7 +77,7 @@ export const OG_CARDS: readonly OgCard[] = [
   ...casesRu.map((entry) => ({
     id: `work-${entry.slug}-ru`,
     eyebrow: 'Кейс',
-    title: entry.header.title,
+    title: entry.story.cover.title,
     footnote: BYLINE_RU,
   })),
 ];

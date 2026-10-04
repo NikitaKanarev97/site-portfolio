@@ -291,3 +291,6 @@
 | Короткий About → ссылка | `space-6` | `flow-text` |
 
 Из `src/pages/index.astro` при этом исчезли **пять** правил вида `.секция > :global(.класс)` — те самые, что аудит экранов чинил вручную (`hero__spec`, `featured__cover`, `works__lead`, `dev__lead`, `about__body`). Ловушка скоупа никуда не делась, но узлов, где её нужно обходить, стало меньше: поток живёт в глобальном слое и до корней компонентов достаёт сам.
+# G-final · accepted-story home, 04.10.2026
+
+Current composition: name metadata → Product Designer h1 → short specialisation/availability/CV/email → five visible FeaturedCaseCover entries → subordinate Webflow → About/contact/footer. Agent Ops → Portal → Learn → Vet → Pawly is unchanged. Accepted story media and title are the home source; `src/copy/featured-work.ts` supplies the short localized promise and qualified evidence status. No 30-second outcome or estimated review saving is claimed on Home. The historic three-open/two-collapsed and legacy artwork descriptions below no longer govern the current Home.

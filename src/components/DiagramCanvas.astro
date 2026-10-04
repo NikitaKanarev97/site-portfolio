@@ -131,7 +131,10 @@ function rows(items: LibraryItem[]): LibraryItem[][] {
                   <rect class:list={['dg-group', node.dim && 'is-dim']} x={frame.x} y={frame.y} width={frame.w} height={frame.h} rx={px('diagram-corner')} />
                 )}
                 {node.type === 'group' && (
+                  <>
                   <rect class:list={['dg-group', node.dim && 'is-dim']} x={box.x} y={box.y} width={box.w} height={box.h} rx={px('diagram-corner')} />
+                  {node.label && <text class:list={['dg-note', node.dim && 'is-dim']} x={box.x + 2 * px('diagram-cell')} y={box.y + 5 * px('diagram-cell')}>{t(node.label)}</text>}
+                  </>
                 )}
               </>
             ))}

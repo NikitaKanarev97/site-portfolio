@@ -23,7 +23,6 @@
 import PageShell from '../layouts/PageShell.astro';
 import MediaFrame from '../components/MediaFrame.astro';
 import FeaturedCase from '../components/FeaturedCase.astro';
-import MoreCases from '../components/MoreCases.astro';
 import MetaList from '../components/MetaList.astro';
 import ProjectDialog from '../components/ProjectDialog.astro';
 import ProseBlock from '../components/ProseBlock.astro';
@@ -57,11 +56,11 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     автоматическим шагом каскада, ряд действий — явной позицией 0.4.
   */}
   <section class="ds-container ds-section hero" data-motion-intro>
-    <h1 class="ds-display-5xl hero__name" data-motion="reveal-text">{home.hero.name}</h1>
+    <p class="ds-meta-sm hero__name" data-motion="reveal-text">{home.hero.name}</p>
 
-    <p class="ds-heading-2xl hero__role ds-flow-heading" data-motion="reveal-text">
+    <h1 class="ds-display-5xl hero__role ds-flow-heading" data-motion="reveal-text">
       {home.hero.role}
-    </p>
+    </h1>
 
     <ProseBlock motion={false} class="hero__spec">
       <p data-motion="reveal-text">{home.hero.specialization}</p>
@@ -95,25 +94,16 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     один <a> вокруг обложки, заголовка, строки исхода, меты и CTA.
     Вложенных ссылок внутри нет — иначе фокус ловит две цели подряд.
 
-    Три главные работы открыты. Остальные раскрываются на месте компактными
-    строками; состояние списка сохраняется при возврате из кейса.
+    Все пять принятых работ открыты. Обложки берут реальные кадры из stories.
   */}
   <section class="ds-container ds-section featured" id="work">
     <p class="ds-meta-xs featured__eyebrow ds-flow-eyebrow">{home.featured.eyebrow}</p>
 
     <ol class="featured__list">
-      {home.featured.items.slice(0, 3).map((item, index) => (
+      {home.featured.items.map((item, index) => (
         <li><FeaturedCase item={item} index={index} locale={locale} /></li>
       ))}
     </ol>
-    {home.featured.items.length > 3 && (
-      <MoreCases
-        items={home.featured.items.slice(3)}
-        locale={locale}
-        expandLabel={home.featured.expandLabel}
-        collapseLabel={home.featured.collapseLabel}
-      />
-    )}
   </section>
 
   {/*
@@ -156,9 +146,8 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
               из надписи и имени сборки: четыре «Details» подряд в списке
               ссылок скринридера не различаются между собой.
             */}
-            <button
+            <a href={item.href}
               class="dev__link ds-pressable"
-              type="button"
               data-dialog-open={`dev-${item.slug}`}
               aria-label={`${home.development.openLabel} ${home.development.openHint} ${item.name}`}
             >
@@ -198,7 +187,7 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
               <span class="dev__cta ds-meta-xs" aria-hidden="true">
                 {home.development.openLabel}
               </span>
-            </button>
+            </a>
           </li>
         ))
       }
@@ -253,13 +242,13 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
      пары, у которых связь теснее. */
 
   .hero__name {
-    color: var(--text-default);
+    color: var(--text-meta);
   }
 
   /* Имя и роль — одна пара, а не два узла. */
   .hero > .hero__role {
     margin-block-start: var(--flow-pair);
-    color: var(--text-subtle);
+    color: var(--text-default);
   }
 
   /* Роль → специализация: шаг задаёт ds-flow-heading на роли. Правила

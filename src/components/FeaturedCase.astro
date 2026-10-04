@@ -1,6 +1,7 @@
 ---
-import CaseArtwork from './CaseArtwork.astro';
-import { getCaseVisuals } from '../copy/case-visuals.ts';
+import CaseScreen from './CaseScreen.astro';
+import { caseThemes } from '../copy/cases/story';
+import { frameSize } from '../lib/media';
 import type { home } from '../copy/home.ts';
 
 interface Props {
@@ -8,9 +9,12 @@ interface Props {
   index: number;
   locale: 'en' | 'ru';
 }
-const { item, index, locale } = Astro.props;
+const { item, index } = Astro.props;
 const slug = item.href.split('/').filter(Boolean).at(-1)!;
-const visuals = getCaseVisuals(slug, locale);
+const media = item.media;
+const shots = media.variant === 'proof' ? media.panels ?? [media.shot] : media.variant === 'screen' ? media.items : [];
+const sizes = await Promise.all(shots.map(shot => frameSize(shot.src)));
+const sum = sizes.reduce((value, size) => value + (size ? size.width / size.height : 1), 0);
 const proof = item.meta.at(-1)!;
 const year = item.meta[1];
 ---
@@ -23,7 +27,13 @@ const year = item.meta[1];
     </div>
     <p class="ds-body-base featured-case__outcome">{item.outcome}</p>
   </div>
-  <CaseArtwork slug={visuals.slug} artwork={visuals.cover} loading={index === 0 ? 'eager' : 'lazy'} />
+  <div class:list={['featured-case__canvas', `featured-case__canvas--${item.theme}`]} style={`--cover-surface:${caseThemes[item.theme].surface}; --cover-ar-sum:${sum};`}>
+    <div class="featured-case__media">
+      {shots.map((shot, i) => <div class="featured-case__panel" style={`--panel-ar:${sizes[i] ? sizes[i]!.width / sizes[i]!.height : 1}`}>
+        <CaseScreen item={shot} loading={index === 0 ? 'eager' : 'lazy'} />
+      </div>)}
+    </div>
+  </div>
   <div class="featured-case__foot">
     <div class="featured-case__facts ds-body-sm">
       <span class="featured-case__year ds-meta-sm"><span class="ds-visually-hidden">{year.term}: </span>{year.value}</span>
@@ -38,6 +48,18 @@ const year = item.meta[1];
 <style>
   .featured-case { display: grid; gap: var(--flow-text); color: var(--text-default); text-decoration: none; }
   .featured-case__head { display: grid; gap: var(--space-4); align-items: start; }
+  .featured-case__canvas { background: var(--cover-surface); padding: var(--space-4); border-radius: var(--radius-lg); }
+  .featured-case__media { display: grid; gap: var(--space-6); }
+  .featured-case__panel { min-inline-size: 0; }
+  .featured-case__canvas--pawly .featured-case__panel { margin-inline: auto; }
+  @media (--below-bp-md) {
+    .featured-case__canvas--pawly .featured-case__panel:not(:last-child) { display: none; }
+  }
+  @media (--bp-md) {
+    .featured-case__canvas { aspect-ratio: var(--ratio-cover); container-type: size; display: grid; place-items: center; padding: var(--space-8); }
+    .featured-case__media { display: flex; align-items: center; inline-size: 100%; max-inline-size: min(100%, calc(var(--cover-ar-sum) * (100cqh - var(--space-8) * 2))); }
+    .featured-case__panel { flex: var(--panel-ar) 1 0; }
+  }
   .featured-case__identity { display: flex; align-items: baseline; gap: var(--space-4); }
   .featured-case__identity h2 { text-wrap: balance; }
   .featured-case__number { color: var(--text-meta); flex: none; }

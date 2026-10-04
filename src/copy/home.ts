@@ -1,3 +1,5 @@
+import { cases } from './cases/index.ts';
+import { featuredWork } from './featured-work.ts';
 /**
  * Тексты главной — Site-portfolio, маршрут /
  *
@@ -18,7 +20,6 @@
  * ради формы файла текстов не стоит.
  */
 import { NAME } from './site.ts';
-import { learn } from './cases/learn.ts';
 
 /**
  * Не подтверждено владельцем: URL взяты из PROJECT.md §Референсы, где те же
@@ -36,14 +37,14 @@ export const home = {
   meta: {
     title: `${NAME} — Product Designer`,
     description:
-      'Product designer working on B2B products where the hard part is the constraint, not the canvas. Based in Armenia, open to relocation.',
+      "Product designer for B2B systems: AI oversight, procurement and shared workflows. Based in Armenia, available remotely.",
   },
 
   hero: {
     name: NAME,
     role: 'Product Designer',
     specialization:
-      'I design B2B products where the hard part is the constraint, not the canvas — legacy systems, several roles on one dataset, decisions with a real price.',
+      "I design B2B tools for decisions that need context: AI oversight, procurement and workflows shared by several roles.",
     /**
      * Дословно из ia/authorization-copy.md. Не переписывать в отрыве от файла.
      *
@@ -90,116 +91,7 @@ export const home = {
     eyebrow: 'Selected work',
     expandLabel: 'Show {count} more cases',
     collapseLabel: 'Show fewer cases',
-    items: [
-      {
-        href: '/work/agent-ops-console',
-        title: 'Agent Ops Console',
-        outcome:
-          'Every promise an AI agent makes reaches a person — without reading the other 1,770 conversations.',
-        meta: [
-          { term: 'Product', value: 'Oversight console for an AI support agent' },
-          { term: 'Year', value: '2026' },
-          { term: 'Role', value: 'Product Designer' },
-          { term: 'Platform', value: 'Web — desktop-first, responsive to 360 px' },
-          { term: 'Evidence', value: 'Paid client · user-tested · accepted' },
-        ],
-        cta: 'Read the case',
-        /** Тот же набор, что на CaseCover кейса. Данные на кадрах выдуманы. */
-        cover: [
-          '/media/case-agent-ops/cover/review-queue.webp',
-          '/media/case-agent-ops/cover/run-detail.webp',
-          '/media/case-agent-ops/cover/action-approvals.webp',
-        ],
-        coverAlt:
-          'Agent Ops Console review queue: total exposure for the day, four repeating-cause clusters above ninety-one single conversations, with the run detail and the approval queue behind it',
-      },
-      {
-        href: '/work/partner-portal',
-        title: 'B2B Partner Portal — DSSL',
-        outcome:
-          'Partners order without a manager — on top of a legacy system that could not be replaced.',
-        /** Одна строка вайрфрейма, разобранная на пары: MetaList требует ключей. */
-        meta: [
-          { term: 'Product', value: 'Distributor partner portal, redesign' },
-          { term: 'Year', value: '2024–2026' },
-          { term: 'Role', value: 'Product Designer' },
-          { term: 'Platform', value: 'Web — desktop-first, responsive to 360 px' },
-          { term: 'Evidence', value: 'Commercial redesign · shipped in full' },
-        ],
-        cta: 'Read the case',
-        /**
-         * Обложка-стопка: три кадра живой сборки прототипа, данные synthetic
-         * (D013 проекта b2b-dssl). Порядок — от переднего к дальнему. Тот же
-         * набор стоит на CaseCover: обложка кейса на главной и на самой
-         * странице кейса — один объект, а не два разных снимка.
-         */
-        cover: [
-          '/media/case-dssl/cover/resolution-center.webp',
-          '/media/case-dssl/cover/fulfillment.webp',
-          '/media/case-dssl/cover/dashboard.webp',
-        ],
-        coverAlt:
-          'B2B Partner Portal: specification review screen with forty-eight imported lines and their resolution status, with two more screens of the portal behind it',
-      },
-      {
-        href: '/work/learn',
-        title: learn.header.title,
-        outcome:
-          'Find a technical answer or complete a programme — with reading and progress kept distinct.',
-        meta: [
-          { term: 'Product', value: 'B2B learning platform, redesign' },
-          { term: 'Revisited', value: '2026' },
-          { term: 'Role', value: 'Product Designer' },
-          { term: 'Platform', value: 'Responsive web · product and landing · EN / RU' },
-          { term: 'Project', value: 'Work project revisited · current prototype' },
-        ],
-        cta: 'Read the case',
-        cover: learn.cover.screens,
-        coverAlt: learn.cover.alt,
-      },
-      {
-        href: '/work/vet-clinic',
-        title: 'Vet Clinic OS',
-        outcome:
-          'A visit leaves a trace in thirty seconds — the only window a veterinarian actually has.',
-        meta: [
-          { term: 'Product', value: 'Clinic operations SaaS: schedule, record, invoicing' },
-          { term: 'Year', value: '2026' },
-          { term: 'Role', value: 'Product Designer' },
-          { term: 'Platform', value: 'Web — desktop and tablet, responsive to 360 px' },
-          { term: 'Evidence', value: 'Concept · domain input from one vet' },
-        ],
-        cta: 'Read the case',
-        /** Тот же набор, что на CaseCover кейса. Данные на кадрах выдуманы. */
-        cover: [
-          '/media/case-vet/cover/vet-day-queue.webp',
-          '/media/case-vet/cover/patient-card.webp',
-          '/media/case-vet/cover/schedule.webp',
-        ],
-        coverAlt:
-          'Vet Clinic OS: the veterinarian’s queue for the day with three visits still unfinished, with the patient card and the schedule behind it',
-      },
-      {
-        href: '/work/pawly',
-        title: 'Pawly',
-        outcome:
-          'Trust is evidence, not a badge — from verification to the moment the pet is home.',
-        meta: [
-          { term: 'Product', value: 'Dog walking and pet sitting marketplace' },
-          { term: 'Year', value: '2026' },
-          { term: 'Role', value: 'Product Designer' },
-          { term: 'Platform', value: 'Mobile web prototype · EN / RU' },
-          { term: 'Evidence', value: 'Independent concept · no human validation' },
-        ],
-        cta: 'Read the case',
-        /** Один крупный фрагмент подтверждения; полный отчёт остаётся в кейсе. */
-        cover: [
-          '/media/case-pawly/cover/return-confirmed.webp',
-        ],
-        coverAlt:
-          'Pawly: return confirmed at 14:52, with dated pickup and return photos in one report card',
-      },
-    ],
+    items: featuredWork(cases, 'en'),
   },
 
   /*
@@ -337,7 +229,7 @@ export const home = {
      * до решения, работа в чужих ограничениях, ИИ в собственном процессе, —
      * но готовой формулировки не даёт. Ревьюится вместе с /about.
      */
-    body: 'I start by reframing the task, because the question a team brings is rarely the one worth answering. Then I work inside whatever cannot be changed — the legacy system, the roles, the deadline — and treat those limits as the material rather than the obstacle. AI sits inside that process, not next to it. The work ends in a build that runs, not in a handoff file.',
+    body: "I start with the decision and the constraints around it. Then I connect roles, states and actions in a prototype, test it, and carry the decisions into a working build.",
     link: 'More about how I work',
     href: '/about',
   },

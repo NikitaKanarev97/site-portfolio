@@ -460,3 +460,8 @@ Astro скоупит стили страницы атрибутом `data-astro-
 ## CaseNext · единая ссылка (03.10.2026, решение владельца)
 
 Ручная пауза и pauseLabel/playLabel удалены. У секции одна цель — переход в следующий case. Hover/focus не останавливают строку. Автоматически движение работает только в видимом окне/вкладке; reduce и no-JS оставляют читаемое статичное название. Это актуальная спецификация, заменяющая исторические S2/S3 требования о ручной, hover и focus паузе.
+# G-final · ProjectDialog trigger, 04.10.2026
+
+`DiagramCanvas` renders an existing optional group label at two grid cells from the left and five cells below the group's top. It uses the existing `dg-note` text role. Unlabelled groups retain their frame alone. D-G-01 supplies reserved heading space in the existing Vet role-flow data for desktop and mobile; nodes, edges, answers and IDs are unchanged.
+
+Home uses an external anchor with `data-dialog-open` as the progressive dialog trigger. The initialized handler prevents navigation and opens the native dialog. Without an initialized handler the anchor goes to the original site. Existing button triggers in /kit remain supported; dialog content and focus behavior are unchanged.

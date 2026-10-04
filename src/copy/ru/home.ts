@@ -1,3 +1,5 @@
+import { casesRu } from './cases/index.ts';
+import { featuredWork } from '../featured-work.ts';
 import { home } from '../home.ts';
 import { NAME_RU } from './site.ts';
 /**
@@ -6,11 +8,6 @@ import { NAME_RU } from './site.ts';
  * имя продукта и разойтись не могут; русские названия длиннее, и
  * расхождение карточки с шапкой кейса читатель заметит раньше нас.
  */
-import { agentOpsConsoleRu } from './cases/agent-ops-console.ts';
-import { partnerPortalRu } from './cases/partner-portal.ts';
-import { vetClinicRu } from './cases/vet-clinic.ts';
-import { pawlyRu } from './cases/pawly.ts';
-import { learnRu } from './cases/learn.ts';
 
 /** Русская редакция главной. Факты, URL и порядок совпадают с EN. */
 export const homeRu = {
@@ -18,13 +15,13 @@ export const homeRu = {
   meta: {
     title: `${NAME_RU} — продуктовый дизайнер`,
     description:
-      'Продуктовый дизайнер B2B-систем, где главная сложность — ограничения: легаси, несколько ролей и решения с реальной ценой.',
+      "Продуктовый дизайнер B2B-систем: контроль ИИ, закупки и процессы нескольких ролей. Живу в Армении, доступен удалённо.",
   },
   hero: {
     name: NAME_RU,
     role: 'Продуктовый дизайнер',
     specialization:
-      'Проектирую B2B-продукты, где главная сложность — не холст, а ограничения: легаси-системы, несколько ролей на одних данных и решения с реальной ценой.',
+      "Проектирую B2B-инструменты для решений, которым нужен контекст: контроль ИИ, закупки и процессы нескольких ролей.",
     authorization:
       'Армения · удалённо сейчас, открыт к релокации с визовой поддержкой.',
     caseEntry: 'Смотреть кейсы',
@@ -32,112 +29,9 @@ export const homeRu = {
   },
   featured: {
     eyebrow: 'Избранные работы',
-    expandLabel: 'Показать ещё {count} кейса',
-    collapseLabel: 'Свернуть дополнительные кейсы',
-    items: [
-      {
-        ...home.featured.items[0],
-        href: '/ru/work/agent-ops-console',
-        title: agentOpsConsoleRu.header.title,
-        outcome:
-          'Каждое обещание ИИ-агента доходит до человека — без чтения остальных 1\u00a0770 диалогов.',
-        meta: [
-          { term: 'Продукт', value: 'Консоль контроля ИИ-агента поддержки' },
-          { term: 'Год', value: '2026' },
-          { term: 'Роль', value: 'Продуктовый дизайнер' },
-          { term: 'Платформа', value: 'Веб: сначала десктоп, адаптив до 360 px' },
-          { term: 'Доказательство', value: 'Платный заказ · юзер-тест · принят' },
-        ],
-        cta: 'Читать кейс',
-        cover: [
-          '/media/case-agent-ops-ru/cover/review-queue.webp',
-          '/media/case-agent-ops-ru/cover/run-detail.webp',
-          '/media/case-agent-ops-ru/cover/action-approvals.webp',
-        ],
-        coverAlt:
-          'Очередь проверки консоли контроля ИИ-агента: общая сумма риска за день, четыре кластера повторяющихся причин поверх девяноста одной одиночной беседы; позади — детали прогона и очередь согласований',
-      },
-      {
-        ...home.featured.items[1],
-        href: '/ru/work/partner-portal',
-        title: partnerPortalRu.header.title,
-        outcome:
-          'Партнёры оформляют заказ без менеджера — поверх легаси-системы, которую нельзя было заменить.',
-        meta: [
-          { term: 'Продукт', value: 'Редизайн партнёрского портала дистрибьютора' },
-          { term: 'Год', value: '2024–2026' },
-          { term: 'Роль', value: 'Продуктовый дизайнер' },
-          { term: 'Платформа', value: 'Веб: сначала десктоп, адаптив до 360 px' },
-          { term: 'Доказательство', value: 'Коммерческий редизайн · отгружен целиком' },
-        ],
-        cta: 'Читать кейс',
-        cover: [
-          '/media/case-dssl-ru/cover/resolution-center.webp',
-          '/media/case-dssl-ru/cover/fulfillment.webp',
-          '/media/case-dssl-ru/cover/dashboard.webp',
-        ],
-        coverAlt:
-          'Партнёрский B2B-портал: проверка спецификации с сорока восемью импортированными позициями и статусами их обработки; позади — ещё два экрана портала',
-      },
-      {
-        href: '/ru/work/learn',
-        title: learnRu.header.title,
-        outcome:
-          'Найти технический ответ или пройти программу — чтение и завершение обучения считаются отдельно.',
-        meta: [
-          { term: 'Продукт', value: 'Редизайн B2B-платформы обучения' },
-          { term: 'Переосмысление', value: '2026' },
-          { term: 'Роль', value: 'Продуктовый дизайнер' },
-          { term: 'Платформа', value: 'Адаптивный веб · сервис и лендинг · EN / RU' },
-          { term: 'Проект', value: 'Рабочий кейс переосмыслен · нынешний прототип' },
-        ],
-        cta: 'Читать кейс',
-        cover: learnRu.cover.screens,
-        coverAlt: learnRu.cover.alt,
-      },
-      {
-        ...home.featured.items[3],
-        href: '/ru/work/vet-clinic',
-        title: vetClinicRu.header.title,
-        outcome:
-          'Визит оставляет след за тридцать секунд — единственное окно, которое действительно есть у ветеринара.',
-        meta: [
-          { term: 'Продукт', value: 'SaaS для клиники: расписание, карта и счета' },
-          { term: 'Год', value: '2026' },
-          { term: 'Роль', value: 'Продуктовый дизайнер' },
-          { term: 'Платформа', value: 'Веб: десктоп и планшет, адаптив до 360 px' },
-          { term: 'Доказательство', value: 'Концепт · фактура от одного врача' },
-        ],
-        cta: 'Читать кейс',
-        cover: [
-          '/media/case-vet-ru/cover/vet-day-queue.webp',
-          '/media/case-vet-ru/cover/patient-card.webp',
-          '/media/case-vet-ru/cover/schedule.webp',
-        ],
-        coverAlt:
-          'Операционная система ветклиники: очередь ветеринара на день с тремя незавершёнными визитами; позади — карта пациента и расписание',
-      },
-      {
-        ...home.featured.items[4],
-        href: '/ru/work/pawly',
-        title: pawlyRu.header.title,
-        outcome:
-          'Доверие — это доказательства, а не значок: от проверки исполнителя до возвращения питомца домой.',
-        meta: [
-          { term: 'Продукт', value: 'Маркетплейс выгула и передержки питомцев' },
-          { term: 'Год', value: '2026' },
-          { term: 'Роль', value: 'Продуктовый дизайнер' },
-          { term: 'Платформа', value: 'Мобильный веб-прототип · EN / RU' },
-          { term: 'Доказательство', value: 'Независимый концепт · без живой проверки' },
-        ],
-        cta: 'Читать кейс',
-        cover: [
-          '/media/case-pawly-ru/cover/return-confirmed.webp',
-        ],
-        coverAlt:
-          'Pawly: возвращение подтверждено в 14:52; фотографии передачи и возвращения с датами в одной карточке отчёта',
-      },
-    ],
+    expandLabel: 'Показать ещё {count}',
+    collapseLabel: 'Свернуть',
+    items: featuredWork(casesRu, 'ru'),
   },
   development: {
     ...home.development,
@@ -197,7 +91,7 @@ export const homeRu = {
   about: {
     heading: 'Как я работаю',
     body:
-      'Начинаю с переформулировки задачи: вопрос, с которым приходит команда, редко оказывается тем, на который стоит отвечать. Затем работаю внутри того, что нельзя изменить, — легаси-системы, ролей, сроков — и отношусь к ограничениям как к материалу, а не препятствию. ИИ встроен в этот процесс, а не стоит рядом с ним. Работа заканчивается сборкой, которая работает, а не файлом для передачи в разработку.',
+      "Начинаю с решения и ограничений вокруг него. Связываю роли, состояния и действия в прототипе, проверяю сценарий и довожу дизайн до работающей сборки.",
     link: 'Подробнее о моём подходе',
     href: '/ru/about',
   },

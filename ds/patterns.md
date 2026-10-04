@@ -325,3 +325,8 @@ HTML, а не SVG: таблицу типографики читает скрин
 - **Доступность.** SVG скрыт от скринридера. Вместо него область прокрутки с именем схемы (фокусируемая, чтобы листать с клавиатуры) и визуально скрытая расшифровка: `summary` из данных и перечень связей «откуда → куда (да/нет)».
 
 Checkpoint composition: CaseSteps + CaseScreen + CasePlate + статичный редакционный знак Human review. Поле расширяется до краёв окна перед решением; это осмысленный field-bleed, только background, ни один UI не выходит за кадр. Desktop показывает целый workspace справа, после него более крупную переписку. Мобильная подача остаётся последовательной. Opt-in Agent Ops pilot.
+# G-final · 04.10.2026
+
+`FeaturedCaseCover` now shows all five accepted stories in registry order. Each cover composes their actual `ShotItem` panels through `CaseScreen`, with the existing case surface, cover ratio, space, radius and typography roles. Desktop panels fit their natural proportions within the canvas; narrow views use original narrow captures. Agent retains both consequence panels; the Pawly home preview selects the complete confirmed report, while the full three-phone sequence remains inside the case. No product pixels are redrawn. Home promise/status belongs to `featured-work.ts`; title, theme and media come from the accepted story. Legacy `ScreenStack` remains an explicit three-frame /kit fixture.
+
+The Home hero names Product Designer as h1, with the author as metadata. Webflow stays below all five works. Its real external links progressively open `ProjectDialog` when JS is available; without JS or when scripts are blocked, the destination remains usable. Dialog focus, Escape and close return use the native dialog.

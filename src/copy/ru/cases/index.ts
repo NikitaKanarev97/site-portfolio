@@ -1,16 +1,14 @@
-import { agentOpsConsoleRu } from './agent-ops-console.ts';
+import { agentOpsConsoleRu, agentOpsStoryRu } from './agent-ops-console.ts';
 import { partnerPortalRu, partnerPortalStoryRu } from './partner-portal.ts';
-import { vetClinicRu } from './vet-clinic.ts';
-import { pawlyRu } from './pawly.ts';
 import { learnRu, learnStoryRu } from './learn.ts';
+import { vetClinicRu, vetClinicStoryRu } from './vet-clinic.ts';
+import { pawlyRu, pawlyStoryRu } from './pawly.ts';
 
-/** Порядок совпадает с английским реестром и главной. */
+/** Five accepted stories. Home, Next, sitemap and both locales keep this order. */
 export const casesRu = [
-  { ...agentOpsConsoleRu, theme: 'agent' as const, story: undefined },
-  { ...partnerPortalRu, theme: partnerPortalStoryRu.theme, story: partnerPortalStoryRu,
-    meta: { ...partnerPortalRu.meta, description: partnerPortalStoryRu.cover.outcome } },
-  { ...learnRu, theme: learnStoryRu.theme, story: learnStoryRu,
-    meta: { ...learnRu.meta, description: learnStoryRu.cover.outcome } },
-  { ...vetClinicRu, theme: 'vet' as const, story: undefined },
-  { ...pawlyRu, theme: 'pawly' as const, story: undefined },
+  { ...agentOpsConsoleRu, theme: agentOpsStoryRu.theme, story: agentOpsStoryRu, meta: { ...agentOpsConsoleRu.meta, description: agentOpsStoryRu.cover.outcome } },
+  { ...partnerPortalRu, theme: partnerPortalStoryRu.theme, story: partnerPortalStoryRu, meta: { ...partnerPortalRu.meta, description: partnerPortalStoryRu.cover.outcome } },
+  { ...learnRu, theme: learnStoryRu.theme, story: learnStoryRu, meta: { ...learnRu.meta, description: learnStoryRu.cover.outcome } },
+  { ...vetClinicRu, theme: vetClinicStoryRu.theme, story: vetClinicStoryRu, meta: { ...vetClinicRu.meta, description: vetClinicStoryRu.cover.outcome } },
+  { ...pawlyRu, theme: pawlyStoryRu.theme, story: pawlyStoryRu, meta: { ...pawlyRu.meta, description: pawlyStoryRu.cover.outcome } },
 ];
