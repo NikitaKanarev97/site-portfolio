@@ -1,6 +1,14 @@
-# Общая база · G-common-E · 04.10.2026
+# Общая база · G-common-F · 04.10.2026
 
-**Действующий ref для F: a6faac3a3d10eb6601fcc34caa70a915bea5dab3.** Alias: codex/portfolio-common-film-2026-10-04. Общая база воспроизведена: A + G + B/C + manual film. Актуальный handoff — film-common-handoff.md; E переносит только delta `433c80bcba29eda2060067570e9f8ec2087a2a91` на свой d3bbbb. Прочитать текущие документы из исходного checkout до создания нового checkout. Ниже сохраняется история предыдущих баз; D/E ещё не интегрированы публично.
+**Новый точный common ref: 6e8f0e075916dec82a90831c7c2c78a38ea60e20.** Alias: codex/portfolio-common-focus-2026-10-04. База воспроизведена: A + G + B/C + manual film + F-G-01 shared reading-position fix. Продолжающий F на `3d35b7c88b89f36c72eaff315dec4bfc5dc887a5` импортирует только этот двухфайловый delta; его case payload сохраняется. Актуальный пакет — focus-common-handoff.md и focus-common-report.md. Common checkpoint готов для review контроллера, F ждёт actual-case retest. Прочитать текущую root metadata до создания checkout; ниже сохраняется история баз. D/E приняты контроллером в своих checkout, public D/E/F пока legacy.
+
+## Текущий checkpoint G-common-F
+
+Delta/common ref `6e8f0e075916dec82a90831c7c2c78a38ea60e20`, parent metadata `0809df0de9dda0f0c1fe0e7172f8dff5a70f1a89`; exact base до правки — `a6faac3a3d10eb6601fcc34caa70a915bea5dab3`. Только animations.js и ds/motion-concept.md. Новый frozen checkout: `D:/Claude-projects/Site-portfolio/tmp/portfolio-common-focus-6e8f0e0`, origin `http://127.0.0.1:4388`; 630 canonical files / 78,017,347 bytes совпали с `focus-common-base-manifest.json`. Check/build/CSS: 108 files, 0 errors/0 warnings, 101 hints, 30 pages/routes, 0 dead CSS, status clean; mirrors равны.
+
+Чистый перенос delta точно на F 3d35b7 проверен в G checkout `tmp/focus-common-f`: result `7493e45a257866b9824b1290ab82e3d8b3bb448f`, diff ровно два shared файла, payload неизменен; 109 checked files, 32 pages/routes, clean status. Production F proof — 4386, DEV registry — 4387. Actual F checkout остался clean на 3d35b7.
+
+Финальные G данные: 24 exact preference switches, 96 native-wheel switches, 12 F motion/lifecycle + 24 fallback observations, 30 DEV snapshots, 8 common routes / 42 preference switches, 14 film regression observations и 20 Harmony profiles — 0 failures. Historical failed attempts сохранены отдельно. Metadata/report/handoff/manifest идут последующим commit и не являются частью code delta. Frozen ref содержит прежние base.md/PLAN-CHATS/handoffs; integrity verifier запускается из актуального root с `--root=<unchanged-checkout>`.
 
 ## История принятой A · G-base
 

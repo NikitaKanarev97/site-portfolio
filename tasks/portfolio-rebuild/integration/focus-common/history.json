@@ -1,0 +1,78 @@
+{
+  "results": [
+    {
+      "stage": "Original F on submitted ref",
+      "evidence": "baseline.json",
+      "observations": 4,
+      "transitions": 24,
+      "failures": 5,
+      "positionFailures": 5,
+      "maximumPositionShift": 1360.09375,
+      "recorderRootSha256": "91352d1179ca34ebbae253ad392876d9fc065cbb31b17626f6419d381af22826"
+    },
+    {
+      "stage": "Diagnostic overflow-anchor:none only",
+      "evidence": "anchor-control.json",
+      "observations": 4,
+      "transitions": 24,
+      "failures": 6,
+      "positionFailures": 6,
+      "maximumPositionShift": 1360.09375,
+      "recorderRootSha256": "91352d1179ca34ebbae253ad392876d9fc065cbb31b17626f6419d381af22826"
+    },
+    {
+      "stage": "Diagnostic ScrollTrigger.saveStyles only",
+      "evidence": "style-control-full.json",
+      "observations": 4,
+      "transitions": 24,
+      "failures": 3,
+      "positionFailures": 3,
+      "maximumPositionShift": 181.09375,
+      "recorderRootSha256": "91352d1179ca34ebbae253ad392876d9fc065cbb31b17626f6419d381af22826"
+    },
+    {
+      "stage": "Intermediate observer retained anchor at Next",
+      "evidence": "candidate-1-navigation-failures.json",
+      "observations": 12,
+      "transitions": 22,
+      "failures": 6,
+      "positionFailures": 0,
+      "maximumPositionShift": 0,
+      "recorderRootSha256": null
+    },
+    {
+      "stage": "Intermediate native event ordering retained previous reading identity",
+      "evidence": "candidate-2-stale-reading-failures.json",
+      "observations": 36,
+      "transitions": 96,
+      "failures": 72,
+      "positionFailures": 36,
+      "maximumPositionShift": 3639.53125,
+      "recorderRootSha256": "fd6f95844410c4cfdec5301b487790dda08fc5c6c1964b565937509ba1dff934"
+    },
+    {
+      "stage": "Final shared delta, original exact reproduction",
+      "evidence": "final-exact.json",
+      "observations": 4,
+      "transitions": 24,
+      "failures": 0,
+      "positionFailures": 0,
+      "maximumPositionShift": 0,
+      "recorderRootSha256": "d1468a8e12ca45fbfc941aee94d0c77aa93efec5e889c4eac7929df4976179a4"
+    },
+    {
+      "stage": "Final shared delta, trusted wheel reading of every state",
+      "evidence": "native-states.json",
+      "observations": 36,
+      "transitions": 96,
+      "failures": 0,
+      "positionFailures": 0,
+      "maximumPositionShift": 0,
+      "recorderRootSha256": "d1468a8e12ca45fbfc941aee94d0c77aa93efec5e889c4eac7929df4976179a4"
+    }
+  ],
+  "limitations": [
+    "Intermediate candidates and diagnostic-only styles are historical evidence; final result is identified separately.",
+    "Historical recorder root checksums do not identify temporary diagnostic edits made only in the isolated clone. Final served source is separately byte-verified in f-transfer.json."
+  ]
+}

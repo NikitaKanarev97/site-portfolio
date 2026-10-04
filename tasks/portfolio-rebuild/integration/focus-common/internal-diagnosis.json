@@ -1,0 +1,2132 @@
+{
+  "base": "http://127.0.0.1:4387",
+  "diagnose": true,
+  "disableAnchor": false,
+  "results": [
+    {
+      "lang": "ru",
+      "route": "/preview/agent-ops-rebuild/ru/",
+      "wait": 600,
+      "entry": {
+        "y": 3156,
+        "top": 123.15625,
+        "focused": true,
+        "pins": 1,
+        "debug": {
+          "triggers": 9,
+          "pins": 1,
+          "marquees": [
+            {
+              "triggers": [],
+              "tweens": [
+                {
+                  "paused": true,
+                  "active": false,
+                  "time": 0,
+                  "duration": 24,
+                  "parent": true
+                }
+              ]
+            }
+          ],
+          "duplicateScenes": 0
+        },
+        "states": [
+          {
+            "scene": "overview",
+            "top": 123.15625,
+            "opacity": "0",
+            "loaded": 2448
+          },
+          {
+            "scene": "workspace",
+            "top": 123.15625,
+            "opacity": "0",
+            "loaded": 2880
+          },
+          {
+            "scene": "promise",
+            "top": 123.15625,
+            "opacity": "1",
+            "loaded": 1462
+          },
+          {
+            "scene": "decision",
+            "top": 123.15625,
+            "opacity": "0",
+            "loaded": 1516
+          }
+        ]
+      },
+      "changes": [
+        {
+          "cycle": 0,
+          "reducedMotion": "reduce",
+          "y": 4030,
+          "top": 123.25,
+          "focused": false,
+          "pins": 0,
+          "debug": {
+            "triggers": 0,
+            "pins": 0,
+            "marquees": [
+              {
+                "triggers": [],
+                "tweens": []
+              }
+            ],
+            "duplicateScenes": 0
+          },
+          "states": [
+            {
+              "scene": "overview",
+              "top": -2106.03125,
+              "opacity": "1",
+              "loaded": 2448
+            },
+            {
+              "scene": "workspace",
+              "top": -1236.828125,
+              "opacity": "1",
+              "loaded": 2880
+            },
+            {
+              "scene": "promise",
+              "top": 123.25,
+              "opacity": "1",
+              "loaded": 1462
+            },
+            {
+              "scene": "decision",
+              "top": 1533.5,
+              "opacity": "1",
+              "loaded": 1516
+            }
+          ],
+          "writes": [
+            {
+              "at": 3580.10000000149,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 3580.2000000029802,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 3580.5,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 3580.5,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 3581,
+              "args": [
+                0,
+                3450.25
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at apply (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:82:12)\n    at http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:92:5"
+            },
+            {
+              "at": 3583.7000000029802,
+              "event": "scroll",
+              "y": 3450
+            },
+            {
+              "at": 3768.10000000149,
+              "args": [
+                0,
+                4030.0625
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at apply (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:82:12)\n    at http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:94:70"
+            },
+            {
+              "at": 3771.60000000149,
+              "event": "scroll",
+              "y": 4030
+            }
+          ],
+          "trace": [
+            {
+              "phase": "capture",
+              "at": 3561.39999999851,
+              "scene": "promise",
+              "top": 123.1875,
+              "index": 2,
+              "progress": 2,
+              "y": 3156
+            },
+            {
+              "phase": "apply",
+              "at": 3581,
+              "scene": "promise",
+              "targetTop": 123.1875,
+              "targetY": 3450.25,
+              "scrollY": 3450,
+              "rect": {
+                "x": 128,
+                "y": 123.4375,
+                "width": 1184,
+                "height": 784.09375,
+                "top": 123.4375,
+                "right": 1312,
+                "bottom": 907.53125,
+                "left": 128
+              },
+              "globalScene": "promise",
+              "globalTop": 123.1875,
+              "listClass": "case-steps case-steps--focus case-steps--checkpoint",
+              "listInline": "opacity: 1;",
+              "padding": "48px",
+              "width": "1280px"
+            },
+            {
+              "phase": "apply",
+              "at": 3768.2000000029802,
+              "scene": "promise",
+              "targetTop": 123.1875,
+              "targetY": 4030.0625,
+              "scrollY": 4030,
+              "rect": {
+                "x": 80,
+                "y": 123.25,
+                "width": 1280,
+                "height": 1346.25,
+                "top": 123.25,
+                "right": 1360,
+                "bottom": 1469.5,
+                "left": 80
+              },
+              "globalScene": "promise",
+              "globalTop": 123.4375,
+              "listClass": "case-steps case-steps--focus case-steps--checkpoint",
+              "listInline": "opacity: 1;",
+              "padding": "0px",
+              "width": "1280px"
+            }
+          ]
+        },
+        {
+          "cycle": 0,
+          "reducedMotion": "no-preference",
+          "y": 3149,
+          "top": 122.96875,
+          "focused": true,
+          "pins": 1,
+          "debug": {
+            "triggers": 3,
+            "pins": 1,
+            "marquees": [
+              {
+                "triggers": [],
+                "tweens": [
+                  {
+                    "paused": true,
+                    "active": false,
+                    "time": 0,
+                    "duration": 24,
+                    "parent": true
+                  }
+                ]
+              }
+            ],
+            "duplicateScenes": 0
+          },
+          "states": [
+            {
+              "scene": "overview",
+              "top": 122.96875,
+              "opacity": "0",
+              "loaded": 2448
+            },
+            {
+              "scene": "workspace",
+              "top": 122.96875,
+              "opacity": "0",
+              "loaded": 2880
+            },
+            {
+              "scene": "promise",
+              "top": 122.96875,
+              "opacity": "1",
+              "loaded": 1462
+            },
+            {
+              "scene": "decision",
+              "top": 122.96875,
+              "opacity": "0",
+              "loaded": 1516
+            }
+          ],
+          "writes": [
+            {
+              "at": 4275,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at ScrollTrigger2.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:2076:83)\n    at Context2.<anonymous> (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:748:23)\n    at Context2.f2 [as onMatch] (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2737:21)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2708:16"
+            },
+            {
+              "at": 4275.10000000149,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at ScrollTrigger2.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:2076:83)\n    at Context2.<anonymous> (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:748:23)\n    at Context2.f2 [as onMatch] (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2737:21)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2708:16"
+            },
+            {
+              "at": 4278.5,
+              "args": [
+                0,
+                4030
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at ScrollTrigger2.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:2076:83)\n    at Context2.<anonymous> (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:748:23)\n    at Context2.f2 [as onMatch] (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2737:21)"
+            },
+            {
+              "at": 4278.5,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at ScrollTrigger2.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:2076:83)\n    at Context2.<anonymous> (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:748:23)\n    at Context2.f2 [as onMatch] (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2737:21)"
+            },
+            {
+              "at": 4280.60000000149,
+              "args": [
+                0,
+                4030
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at Context2.<anonymous> (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:749:16)\n    at Context2.f2 [as onMatch] (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2737:21)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2708:16\n    at Array.forEach (<anonymous>)\n    at MediaQueryList._onMediaChange2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2707:13)"
+            },
+            {
+              "at": 4280.80000000447,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4280.80000000447,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4284.80000000447,
+              "args": [
+                0,
+                4030
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 4284.89999999851,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 4286.5,
+              "args": [
+                0,
+                4030
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4288.20000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4288.20000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4290.30000000447,
+              "args": [
+                0,
+                4030
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 4290.39999999851,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 4291.80000000447,
+              "args": [
+                0,
+                4030
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4293.5,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4293.5,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4295.60000000149,
+              "args": [
+                0,
+                4030
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 4295.70000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 4297.20000000298,
+              "args": [
+                0,
+                4030
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4298.80000000447,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4298.89999999851,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4300.89999999851,
+              "args": [
+                0,
+                4030
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 4301,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 4302.5,
+              "args": [
+                0,
+                4030
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4304.20000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4304.30000000447,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4306.39999999851,
+              "args": [
+                0,
+                4030
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 4306.5,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 4308,
+              "args": [
+                0,
+                4030
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4309.70000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4309.70000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4311.80000000447,
+              "args": [
+                0,
+                4030
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 4311.89999999851,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 4313.30000000447,
+              "args": [
+                0,
+                4030
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4313.5,
+              "args": [
+                0,
+                3148.78125
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at apply (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:82:12)\n    at http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:92:5"
+            },
+            {
+              "at": 4315.80000000447,
+              "event": "scroll",
+              "y": 3149
+            },
+            {
+              "at": 4494.60000000149,
+              "args": [
+                0,
+                3148.78125
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at apply (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:82:12)\n    at http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:94:70"
+            }
+          ],
+          "trace": [
+            {
+              "phase": "capture",
+              "at": 4261.20000000298,
+              "scene": "promise",
+              "top": 123.25,
+              "index": 2,
+              "progress": null,
+              "y": 4030
+            },
+            {
+              "phase": "apply",
+              "at": 4313.60000000149,
+              "scene": "promise",
+              "targetTop": 123.25,
+              "targetY": 3148.78125,
+              "scrollY": 3149,
+              "rect": {
+                "x": 128,
+                "y": 772.96875,
+                "width": 1184,
+                "height": 652,
+                "top": 772.96875,
+                "right": 1312,
+                "bottom": 1424.96875,
+                "left": 128
+              },
+              "globalScene": "promise",
+              "globalTop": 123.25,
+              "listClass": "case-steps case-steps--focus case-steps--checkpoint is-focused",
+              "listInline": "opacity: 1; --focus-height: 780px; --focus-media-height: 530px; translate: none; rotate: none; scale: none; inset: 0px auto auto 0px; margin: 0px; max-width: 1280px; width: 1280px; max-height: 799.188px; height: 799.188px; padding: 48px; transform: translate(0px, 1950px);",
+              "padding": "48px",
+              "width": "1280px"
+            },
+            {
+              "phase": "apply",
+              "at": 4494.60000000149,
+              "scene": "promise",
+              "targetTop": 123.25,
+              "targetY": 3148.78125,
+              "scrollY": 3149,
+              "rect": {
+                "x": 128,
+                "y": 122.96875,
+                "width": 1184,
+                "height": 652,
+                "top": 122.96875,
+                "right": 1312,
+                "bottom": 774.96875,
+                "left": 128
+              },
+              "globalScene": "promise",
+              "globalTop": 123.1875,
+              "listClass": "case-steps case-steps--focus case-steps--checkpoint is-focused",
+              "listInline": "opacity: 1; --focus-height: 780px; --focus-media-height: 530px; translate: none; rotate: none; scale: none; left: 80px; top: 23.7812px; margin: 0px; max-width: 1280px; width: 1280px; max-height: 800px; height: 800px; padding: 48px; box-sizing: border-box; position: fixed; transform: translate(0px, 0px);",
+              "padding": "48px",
+              "width": "1280px"
+            }
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "reduce",
+          "y": 3450,
+          "top": 703.25,
+          "focused": false,
+          "pins": 0,
+          "debug": {
+            "triggers": 0,
+            "pins": 0,
+            "marquees": [
+              {
+                "triggers": [],
+                "tweens": []
+              }
+            ],
+            "duplicateScenes": 0
+          },
+          "states": [
+            {
+              "scene": "overview",
+              "top": -1526.03125,
+              "opacity": "1",
+              "loaded": 2448
+            },
+            {
+              "scene": "workspace",
+              "top": -656.828125,
+              "opacity": "1",
+              "loaded": 2880
+            },
+            {
+              "scene": "promise",
+              "top": 703.25,
+              "opacity": "1",
+              "loaded": 1462
+            },
+            {
+              "scene": "decision",
+              "top": 2113.5,
+              "opacity": "1",
+              "loaded": 1516
+            }
+          ],
+          "writes": [
+            {
+              "at": 4884,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4884.10000000149,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4884.20000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4884.30000000447,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 4884.5,
+              "args": [
+                0,
+                3450.25
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at apply (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:82:12)\n    at http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:92:5"
+            },
+            {
+              "at": 5080.20000000298,
+              "args": [
+                0,
+                3450.25
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at apply (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:82:12)\n    at http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:94:70"
+            },
+            {
+              "at": 5222.80000000447,
+              "event": "scroll",
+              "y": 3450
+            }
+          ],
+          "trace": [
+            {
+              "phase": "capture",
+              "at": 4871.39999999851,
+              "scene": "promise",
+              "top": 123.1875,
+              "index": 2,
+              "progress": 2,
+              "y": 3149
+            },
+            {
+              "phase": "apply",
+              "at": 4884.60000000149,
+              "scene": "promise",
+              "targetTop": 123.1875,
+              "targetY": 3450.25,
+              "scrollY": 3450,
+              "rect": {
+                "x": 128,
+                "y": 123.4375,
+                "width": 1184,
+                "height": 784.09375,
+                "top": 123.4375,
+                "right": 1312,
+                "bottom": 907.53125,
+                "left": 128
+              },
+              "globalScene": "promise",
+              "globalTop": 123.1875,
+              "listClass": "case-steps case-steps--focus case-steps--checkpoint",
+              "listInline": "opacity: 1;",
+              "padding": "48px",
+              "width": "1280px"
+            },
+            {
+              "phase": "apply",
+              "at": 5080.30000000447,
+              "scene": "promise",
+              "targetTop": 123.1875,
+              "targetY": 3450.25,
+              "scrollY": 3450,
+              "rect": {
+                "x": 128,
+                "y": 123.4375,
+                "width": 1184,
+                "height": 784.09375,
+                "top": 123.4375,
+                "right": 1312,
+                "bottom": 907.53125,
+                "left": 128
+              },
+              "globalScene": "promise",
+              "globalTop": 123.4375,
+              "listClass": "case-steps case-steps--focus case-steps--checkpoint",
+              "listInline": "opacity: 1;",
+              "padding": "48px",
+              "width": "1280px"
+            }
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "no-preference",
+          "y": 2499,
+          "top": 122.96875,
+          "focused": true,
+          "pins": 1,
+          "debug": {
+            "triggers": 3,
+            "pins": 1,
+            "marquees": [
+              {
+                "triggers": [],
+                "tweens": [
+                  {
+                    "paused": true,
+                    "active": false,
+                    "time": 0,
+                    "duration": 24,
+                    "parent": true
+                  }
+                ]
+              }
+            ],
+            "duplicateScenes": 0
+          },
+          "states": [
+            {
+              "scene": "overview",
+              "top": 122.96875,
+              "opacity": "0",
+              "loaded": 2448
+            },
+            {
+              "scene": "workspace",
+              "top": 122.96875,
+              "opacity": "1",
+              "loaded": 2880
+            },
+            {
+              "scene": "promise",
+              "top": 122.96875,
+              "opacity": "0",
+              "loaded": 1462
+            },
+            {
+              "scene": "decision",
+              "top": 122.96875,
+              "opacity": "0",
+              "loaded": 1516
+            }
+          ],
+          "writes": [
+            {
+              "at": 5511.89999999851,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at ScrollTrigger2.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:2076:83)\n    at Context2.<anonymous> (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:748:23)\n    at Context2.f2 [as onMatch] (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2737:21)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2708:16"
+            },
+            {
+              "at": 5512,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at ScrollTrigger2.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:2076:83)\n    at Context2.<anonymous> (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:748:23)\n    at Context2.f2 [as onMatch] (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2737:21)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2708:16"
+            },
+            {
+              "at": 5520,
+              "args": [
+                0,
+                3450
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at ScrollTrigger2.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:2076:83)\n    at Context2.<anonymous> (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:748:23)\n    at Context2.f2 [as onMatch] (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2737:21)"
+            },
+            {
+              "at": 5520.10000000149,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at ScrollTrigger2.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:2076:83)\n    at Context2.<anonymous> (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:748:23)\n    at Context2.f2 [as onMatch] (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2737:21)"
+            },
+            {
+              "at": 5523.20000000298,
+              "args": [
+                0,
+                3450
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at Context2.<anonymous> (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:749:16)\n    at Context2.f2 [as onMatch] (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2737:21)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2708:16\n    at Array.forEach (<anonymous>)\n    at MediaQueryList._onMediaChange2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2707:13)"
+            },
+            {
+              "at": 5523.70000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5523.80000000447,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5531.39999999851,
+              "args": [
+                0,
+                3450
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 5531.5,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 5533.80000000447,
+              "args": [
+                0,
+                3450
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5536.70000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5536.70000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5539.60000000149,
+              "args": [
+                0,
+                3450
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 5539.60000000149,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 5541,
+              "args": [
+                0,
+                3450
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5543,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5543.10000000149,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5547.89999999851,
+              "args": [
+                0,
+                3450
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 5548,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 5550.60000000149,
+              "args": [
+                0,
+                3450
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5554,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5554.20000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5558.5,
+              "args": [
+                0,
+                3450
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 5558.70000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 5561.20000000298,
+              "args": [
+                0,
+                3450
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5564,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5564,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5567.30000000447,
+              "args": [
+                0,
+                3450
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 5567.5,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 5569.5,
+              "args": [
+                0,
+                3450
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5572.20000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5572.20000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5576,
+              "args": [
+                0,
+                3450
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 5576,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 5578.30000000447,
+              "args": [
+                0,
+                3450
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 5578.60000000149,
+              "args": [
+                0,
+                2498.78125
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at apply (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:82:12)\n    at http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:92:5"
+            },
+            {
+              "at": 5582,
+              "event": "scroll",
+              "y": 2499
+            },
+            {
+              "at": 5759.70000000298,
+              "args": [
+                0,
+                2498.78125
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at apply (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:82:12)\n    at http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:94:70"
+            }
+          ],
+          "trace": [
+            {
+              "phase": "capture",
+              "at": 5497.39999999851,
+              "scene": "workspace",
+              "top": -656.828125,
+              "index": 1,
+              "progress": null,
+              "y": 3450
+            },
+            {
+              "phase": "apply",
+              "at": 5578.60000000149,
+              "scene": "workspace",
+              "targetTop": -656.828125,
+              "targetY": 2498.78125,
+              "scrollY": 2499,
+              "rect": {
+                "x": 128,
+                "y": 122.96875,
+                "width": 1184,
+                "height": 652,
+                "top": 122.96875,
+                "right": 1312,
+                "bottom": 774.96875,
+                "left": 128
+              },
+              "globalScene": "promise",
+              "globalTop": 123.1875,
+              "listClass": "case-steps case-steps--focus case-steps--checkpoint is-focused",
+              "listInline": "opacity: 1; --focus-height: 780px; --focus-media-height: 530px; translate: none; rotate: none; scale: none; left: 80px; top: 23.7812px; margin: 0px; max-width: 1280px; width: 1280px; max-height: 800px; height: 800px; padding: 48px; box-sizing: border-box; position: fixed; transform: translate(0px, 0px);",
+              "padding": "48px",
+              "width": "1280px"
+            },
+            {
+              "phase": "apply",
+              "at": 5759.89999999851,
+              "scene": "workspace",
+              "targetTop": -656.828125,
+              "targetY": 2498.78125,
+              "scrollY": 2499,
+              "rect": {
+                "x": 128,
+                "y": 122.96875,
+                "width": 1184,
+                "height": 652,
+                "top": 122.96875,
+                "right": 1312,
+                "bottom": 774.96875,
+                "left": 128
+              },
+              "globalScene": "workspace",
+              "globalTop": 123.1875,
+              "listClass": "case-steps case-steps--focus case-steps--checkpoint is-focused",
+              "listInline": "opacity: 1; --focus-height: 780px; --focus-media-height: 530px; translate: none; rotate: none; scale: none; left: 80px; top: 23.7812px; margin: 0px; max-width: 1280px; width: 1280px; max-height: 800px; height: 800px; padding: 48px; box-sizing: border-box; position: fixed; transform: translate(0px, 0px);",
+              "padding": "48px",
+              "width": "1280px"
+            }
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "reduce",
+          "y": 2670,
+          "top": 1483.25,
+          "focused": false,
+          "pins": 0,
+          "debug": {
+            "triggers": 0,
+            "pins": 0,
+            "marquees": [
+              {
+                "triggers": [],
+                "tweens": []
+              }
+            ],
+            "duplicateScenes": 0
+          },
+          "states": [
+            {
+              "scene": "overview",
+              "top": -746.03125,
+              "opacity": "1",
+              "loaded": 2448
+            },
+            {
+              "scene": "workspace",
+              "top": 123.171875,
+              "opacity": "1",
+              "loaded": 2880
+            },
+            {
+              "scene": "promise",
+              "top": 1483.25,
+              "opacity": "1",
+              "loaded": 1462
+            },
+            {
+              "scene": "decision",
+              "top": 2893.5,
+              "opacity": "1",
+              "loaded": 1516
+            }
+          ],
+          "writes": [
+            {
+              "at": 6130.10000000149,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6130.20000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6130.5,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6130.5,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6130.80000000447,
+              "args": [
+                0,
+                2602.15625
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at apply (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:82:12)\n    at http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:92:5"
+            },
+            {
+              "at": 6240.60000000149,
+              "event": "scroll",
+              "y": 2602
+            },
+            {
+              "at": 6316,
+              "args": [
+                0,
+                2669.984375
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at apply (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:82:12)\n    at http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:94:70"
+            },
+            {
+              "at": 6320.10000000149,
+              "event": "scroll",
+              "y": 2670
+            }
+          ],
+          "trace": [
+            {
+              "phase": "capture",
+              "at": 6111.30000000447,
+              "scene": "workspace",
+              "top": 123.1875,
+              "index": 1,
+              "progress": 1,
+              "y": 2499
+            },
+            {
+              "phase": "apply",
+              "at": 6130.89999999851,
+              "scene": "workspace",
+              "targetTop": 123.1875,
+              "targetY": 2602.15625,
+              "scrollY": 2602,
+              "rect": {
+                "x": 128,
+                "y": 123.34375,
+                "width": 1184,
+                "height": 784.09375,
+                "top": 123.34375,
+                "right": 1312,
+                "bottom": 907.4375,
+                "left": 128
+              },
+              "globalScene": "workspace",
+              "globalTop": 123.1875,
+              "listClass": "case-steps case-steps--focus case-steps--checkpoint",
+              "listInline": "opacity: 1;",
+              "padding": "48px",
+              "width": "1280px"
+            },
+            {
+              "phase": "apply",
+              "at": 6316.10000000149,
+              "scene": "workspace",
+              "targetTop": 123.1875,
+              "targetY": 2669.984375,
+              "scrollY": 2670,
+              "rect": {
+                "x": 80,
+                "y": 123.171875,
+                "width": 1280,
+                "height": 1296.078125,
+                "top": 123.171875,
+                "right": 1360,
+                "bottom": 1419.25,
+                "left": 80
+              },
+              "globalScene": "workspace",
+              "globalTop": 123.34375,
+              "listClass": "case-steps case-steps--focus case-steps--checkpoint",
+              "listInline": "opacity: 1;",
+              "padding": "0px",
+              "width": "1280px"
+            }
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "no-preference",
+          "y": 2499,
+          "top": 122.96875,
+          "focused": true,
+          "pins": 1,
+          "debug": {
+            "triggers": 3,
+            "pins": 1,
+            "marquees": [
+              {
+                "triggers": [],
+                "tweens": [
+                  {
+                    "paused": true,
+                    "active": false,
+                    "time": 0,
+                    "duration": 24,
+                    "parent": true
+                  }
+                ]
+              }
+            ],
+            "duplicateScenes": 0
+          },
+          "states": [
+            {
+              "scene": "overview",
+              "top": 122.96875,
+              "opacity": "0",
+              "loaded": 2448
+            },
+            {
+              "scene": "workspace",
+              "top": 122.96875,
+              "opacity": "1",
+              "loaded": 2880
+            },
+            {
+              "scene": "promise",
+              "top": 122.96875,
+              "opacity": "0",
+              "loaded": 1462
+            },
+            {
+              "scene": "decision",
+              "top": 122.96875,
+              "opacity": "0",
+              "loaded": 1516
+            }
+          ],
+          "writes": [
+            {
+              "at": 6741.39999999851,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at ScrollTrigger2.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:2076:83)\n    at Context2.<anonymous> (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:748:23)\n    at Context2.f2 [as onMatch] (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2737:21)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2708:16"
+            },
+            {
+              "at": 6741.5,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at ScrollTrigger2.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:2076:83)\n    at Context2.<anonymous> (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:748:23)\n    at Context2.f2 [as onMatch] (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2737:21)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2708:16"
+            },
+            {
+              "at": 6749.20000000298,
+              "args": [
+                0,
+                2670
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at ScrollTrigger2.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:2076:83)\n    at Context2.<anonymous> (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:748:23)\n    at Context2.f2 [as onMatch] (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2737:21)"
+            },
+            {
+              "at": 6749.30000000447,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at ScrollTrigger2.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:2076:83)\n    at Context2.<anonymous> (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:748:23)\n    at Context2.f2 [as onMatch] (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2737:21)"
+            },
+            {
+              "at": 6752,
+              "args": [
+                0,
+                2670
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at Context2.<anonymous> (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:749:16)\n    at Context2.f2 [as onMatch] (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2737:21)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2708:16\n    at Array.forEach (<anonymous>)\n    at MediaQueryList._onMediaChange2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2707:13)"
+            },
+            {
+              "at": 6752.20000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6752.20000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6756.10000000149,
+              "args": [
+                0,
+                2670
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 6756.20000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 6758.10000000149,
+              "args": [
+                0,
+                2670
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6759.80000000447,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6759.80000000447,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6761.89999999851,
+              "args": [
+                0,
+                2670
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 6762,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 6763.39999999851,
+              "args": [
+                0,
+                2670
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6765.20000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6765.20000000298,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6767.5,
+              "args": [
+                0,
+                2670
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 6767.5,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 6768.89999999851,
+              "args": [
+                0,
+                2670
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6770.60000000149,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6770.60000000149,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6772.60000000149,
+              "args": [
+                0,
+                2670
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 6772.80000000447,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 6774,
+              "args": [
+                0,
+                2670
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6776,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6776,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6778.39999999851,
+              "args": [
+                0,
+                2670
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 6778.5,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 6780.60000000149,
+              "args": [
+                0,
+                2670
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6782.5,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6782.60000000149,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6784.89999999851,
+              "args": [
+                0,
+                2670
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1540:31)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 6785,
+              "args": [
+                0,
+                0
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at self.refresh (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1561:29)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:912:14\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:911:22)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)"
+            },
+            {
+              "at": 6786.5,
+              "args": [
+                0,
+                2670
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:939:18\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:934:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+            },
+            {
+              "at": 6786.70000000298,
+              "args": [
+                0,
+                2498.78125
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at apply (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:82:12)\n    at http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:92:5"
+            },
+            {
+              "at": 6788.5,
+              "event": "scroll",
+              "y": 2499
+            },
+            {
+              "at": 6982,
+              "args": [
+                0,
+                2498.78125
+              ],
+              "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at apply (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:82:12)\n    at http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:94:70"
+            }
+          ],
+          "trace": [
+            {
+              "phase": "capture",
+              "at": 6722.20000000298,
+              "scene": "workspace",
+              "top": 123.171875,
+              "index": 1,
+              "progress": null,
+              "y": 2670
+            },
+            {
+              "phase": "apply",
+              "at": 6786.70000000298,
+              "scene": "workspace",
+              "targetTop": 123.171875,
+              "targetY": 2498.78125,
+              "scrollY": 2499,
+              "rect": {
+                "x": 128,
+                "y": 122.96875,
+                "width": 1184,
+                "height": 652,
+                "top": 122.96875,
+                "right": 1312,
+                "bottom": 774.96875,
+                "left": 128
+              },
+              "globalScene": "workspace",
+              "globalTop": 123.1875,
+              "listClass": "case-steps case-steps--focus case-steps--checkpoint is-focused",
+              "listInline": "opacity: 1; --focus-height: 780px; --focus-media-height: 530px; translate: none; rotate: none; scale: none; left: 80px; top: 23.7812px; margin: 0px; max-width: 1280px; width: 1280px; max-height: 800px; height: 800px; padding: 48px; box-sizing: border-box; position: fixed; transform: translate(0px, 0px);",
+              "padding": "48px",
+              "width": "1280px"
+            },
+            {
+              "phase": "apply",
+              "at": 6982.10000000149,
+              "scene": "workspace",
+              "targetTop": 123.171875,
+              "targetY": 2498.78125,
+              "scrollY": 2499,
+              "rect": {
+                "x": 128,
+                "y": 122.96875,
+                "width": 1184,
+                "height": 652,
+                "top": 122.96875,
+                "right": 1312,
+                "bottom": 774.96875,
+                "left": 128
+              },
+              "globalScene": "workspace",
+              "globalTop": 123.1875,
+              "listClass": "case-steps case-steps--focus case-steps--checkpoint is-focused",
+              "listInline": "opacity: 1; --focus-height: 780px; --focus-media-height: 530px; translate: none; rotate: none; scale: none; left: 80px; top: 23.7812px; margin: 0px; max-width: 1280px; width: 1280px; max-height: 800px; height: 800px; padding: 48px; box-sizing: border-box; position: fixed; transform: translate(0px, 0px);",
+              "padding": "48px",
+              "width": "1280px"
+            }
+          ]
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "failures": [
+    {
+      "lang": "ru",
+      "wait": 600,
+      "entryTop": 123.15625,
+      "cycle": 1,
+      "reducedMotion": "reduce",
+      "y": 3450,
+      "top": 703.25,
+      "focused": false,
+      "pins": 0,
+      "debug": {
+        "triggers": 0,
+        "pins": 0,
+        "marquees": [
+          {
+            "triggers": [],
+            "tweens": []
+          }
+        ],
+        "duplicateScenes": 0
+      },
+      "states": [
+        {
+          "scene": "overview",
+          "top": -1526.03125,
+          "opacity": "1",
+          "loaded": 2448
+        },
+        {
+          "scene": "workspace",
+          "top": -656.828125,
+          "opacity": "1",
+          "loaded": 2880
+        },
+        {
+          "scene": "promise",
+          "top": 703.25,
+          "opacity": "1",
+          "loaded": 1462
+        },
+        {
+          "scene": "decision",
+          "top": 2113.5,
+          "opacity": "1",
+          "loaded": 1516
+        }
+      ],
+      "writes": [
+        {
+          "at": 4884,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+        },
+        {
+          "at": 4884.10000000149,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+        },
+        {
+          "at": 4884.20000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+        },
+        {
+          "at": 4884.30000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+        },
+        {
+          "at": 4884.5,
+          "args": [
+            0,
+            3450.25
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at apply (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:82:12)\n    at http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:92:5"
+        },
+        {
+          "at": 5080.20000000298,
+          "args": [
+            0,
+            3450.25
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at apply (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:82:12)\n    at http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:94:70"
+        },
+        {
+          "at": 5222.80000000447,
+          "event": "scroll",
+          "y": 3450
+        }
+      ],
+      "trace": [
+        {
+          "phase": "capture",
+          "at": 4871.39999999851,
+          "scene": "promise",
+          "top": 123.1875,
+          "index": 2,
+          "progress": 2,
+          "y": 3149
+        },
+        {
+          "phase": "apply",
+          "at": 4884.60000000149,
+          "scene": "promise",
+          "targetTop": 123.1875,
+          "targetY": 3450.25,
+          "scrollY": 3450,
+          "rect": {
+            "x": 128,
+            "y": 123.4375,
+            "width": 1184,
+            "height": 784.09375,
+            "top": 123.4375,
+            "right": 1312,
+            "bottom": 907.53125,
+            "left": 128
+          },
+          "globalScene": "promise",
+          "globalTop": 123.1875,
+          "listClass": "case-steps case-steps--focus case-steps--checkpoint",
+          "listInline": "opacity: 1;",
+          "padding": "48px",
+          "width": "1280px"
+        },
+        {
+          "phase": "apply",
+          "at": 5080.30000000447,
+          "scene": "promise",
+          "targetTop": 123.1875,
+          "targetY": 3450.25,
+          "scrollY": 3450,
+          "rect": {
+            "x": 128,
+            "y": 123.4375,
+            "width": 1184,
+            "height": 784.09375,
+            "top": 123.4375,
+            "right": 1312,
+            "bottom": 907.53125,
+            "left": 128
+          },
+          "globalScene": "promise",
+          "globalTop": 123.4375,
+          "listClass": "case-steps case-steps--focus case-steps--checkpoint",
+          "listInline": "opacity: 1;",
+          "padding": "48px",
+          "width": "1280px"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "entryTop": 123.15625,
+      "cycle": 2,
+      "reducedMotion": "reduce",
+      "y": 2670,
+      "top": 1483.25,
+      "focused": false,
+      "pins": 0,
+      "debug": {
+        "triggers": 0,
+        "pins": 0,
+        "marquees": [
+          {
+            "triggers": [],
+            "tweens": []
+          }
+        ],
+        "duplicateScenes": 0
+      },
+      "states": [
+        {
+          "scene": "overview",
+          "top": -746.03125,
+          "opacity": "1",
+          "loaded": 2448
+        },
+        {
+          "scene": "workspace",
+          "top": 123.171875,
+          "opacity": "1",
+          "loaded": 2880
+        },
+        {
+          "scene": "promise",
+          "top": 1483.25,
+          "opacity": "1",
+          "loaded": 1462
+        },
+        {
+          "scene": "decision",
+          "top": 2893.5,
+          "opacity": "1",
+          "loaded": 1516
+        }
+      ],
+      "writes": [
+        {
+          "at": 6130.10000000149,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+        },
+        {
+          "at": 6130.20000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+        },
+        {
+          "at": 6130.5,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:115:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+        },
+        {
+          "at": 6130.5,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:101:36\n    at cachingFunc2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:79:7)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:908:7\n    at Array.forEach (<anonymous>)\n    at _refreshAll2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:905:14)\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=2c63c5e6:1947:13\n    at http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2684:12\n    at Array.map (<anonymous>)\n    at _dispatch2 (http://127.0.0.1:4387/node_modules/.vite/deps/gsap.js?v=6b3465bc:2683:44)"
+        },
+        {
+          "at": 6130.80000000447,
+          "args": [
+            0,
+            2602.15625
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at apply (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:82:12)\n    at http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:92:5"
+        },
+        {
+          "at": 6240.60000000149,
+          "event": "scroll",
+          "y": 2602
+        },
+        {
+          "at": 6316,
+          "args": [
+            0,
+            2669.984375
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:4:98)\n    at apply (http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:82:12)\n    at http://127.0.0.1:4387/src/scripts/animations.js?t=1791105387118:94:70"
+        },
+        {
+          "at": 6320.10000000149,
+          "event": "scroll",
+          "y": 2670
+        }
+      ],
+      "trace": [
+        {
+          "phase": "capture",
+          "at": 6111.30000000447,
+          "scene": "workspace",
+          "top": 123.1875,
+          "index": 1,
+          "progress": 1,
+          "y": 2499
+        },
+        {
+          "phase": "apply",
+          "at": 6130.89999999851,
+          "scene": "workspace",
+          "targetTop": 123.1875,
+          "targetY": 2602.15625,
+          "scrollY": 2602,
+          "rect": {
+            "x": 128,
+            "y": 123.34375,
+            "width": 1184,
+            "height": 784.09375,
+            "top": 123.34375,
+            "right": 1312,
+            "bottom": 907.4375,
+            "left": 128
+          },
+          "globalScene": "workspace",
+          "globalTop": 123.1875,
+          "listClass": "case-steps case-steps--focus case-steps--checkpoint",
+          "listInline": "opacity: 1;",
+          "padding": "48px",
+          "width": "1280px"
+        },
+        {
+          "phase": "apply",
+          "at": 6316.10000000149,
+          "scene": "workspace",
+          "targetTop": 123.1875,
+          "targetY": 2669.984375,
+          "scrollY": 2670,
+          "rect": {
+            "x": 80,
+            "y": 123.171875,
+            "width": 1280,
+            "height": 1296.078125,
+            "top": 123.171875,
+            "right": 1360,
+            "bottom": 1419.25,
+            "left": 80
+          },
+          "globalScene": "workspace",
+          "globalTop": 123.34375,
+          "listClass": "case-steps case-steps--focus case-steps--checkpoint",
+          "listInline": "opacity: 1;",
+          "padding": "0px",
+          "width": "1280px"
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "sharedSourceSha256": "91352d1179ca34ebbae253ad392876d9fc065cbb31b17626f6419d381af22826"
+}

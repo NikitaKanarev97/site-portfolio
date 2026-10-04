@@ -1,0 +1,52 @@
+{
+  "commonDelta": "6e8f0e075916dec82a90831c7c2c78a38ea60e20",
+  "submittedF": "3d35b7c88b89f36c72eaff315dec4bfc5dc887a5",
+  "clone": "D:/Claude-projects/Site-portfolio/tmp/focus-common-f",
+  "transferRef": "7493e45a257866b9824b1290ab82e3d8b3bb448f",
+  "changedPaths": [
+    "ds/motion-concept.md",
+    "src/scripts/animations.js"
+  ],
+  "expectedPaths": [
+    "ds/motion-concept.md",
+    "src/scripts/animations.js"
+  ],
+  "payloadUnchanged": true,
+  "cloneStatus": "",
+  "actualCheckout": "C:/Users/kanar/.codex/worktrees/agent-ops-rebuild-f/Site-portfolio",
+  "actualHead": "3d35b7c88b89f36c72eaff315dec4bfc5dc887a5",
+  "actualStatus": "",
+  "actualUntouched": true,
+  "commonCheckout": "D:/Claude-projects/Site-portfolio/tmp/portfolio-common-focus-6e8f0e0",
+  "commonRef": "6e8f0e075916dec82a90831c7c2c78a38ea60e20",
+  "commonStatus": "",
+  "sourceBytes": [
+    {
+      "path": "ds/motion-concept.md",
+      "root": "5201fa92b0074443373e9bf2abd2cb5ae6895599fe6791e89f6453433a7aee71",
+      "transfer": "5201fa92b0074443373e9bf2abd2cb5ae6895599fe6791e89f6453433a7aee71",
+      "common": "5201fa92b0074443373e9bf2abd2cb5ae6895599fe6791e89f6453433a7aee71"
+    },
+    {
+      "path": "src/scripts/animations.js",
+      "root": "d1468a8e12ca45fbfc941aee94d0c77aa93efec5e889c4eac7929df4976179a4",
+      "transfer": "d1468a8e12ca45fbfc941aee94d0c77aa93efec5e889c4eac7929df4976179a4",
+      "common": "d1468a8e12ca45fbfc941aee94d0c77aa93efec5e889c4eac7929df4976179a4"
+    }
+  ],
+  "mirrors": [
+    {
+      "source": "ds/tokens.css",
+      "mirror": "src/styles/tokens.css",
+      "equal": true
+    },
+    {
+      "source": "ds/motion.js",
+      "mirror": "src/scripts/motion.js",
+      "equal": true
+    }
+  ],
+  "limitations": [
+    "This is G’s isolated import, not the actual F case retest or acceptance."
+  ]
+}

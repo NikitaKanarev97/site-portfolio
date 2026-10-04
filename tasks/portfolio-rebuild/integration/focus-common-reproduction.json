@@ -1,0 +1,215 @@
+{
+  "stage": "G-common-F",
+  "status": "ready_for_controller_review",
+  "request": "F-G-01",
+  "commonDelta": "6e8f0e075916dec82a90831c7c2c78a38ea60e20",
+  "commonRef": "6e8f0e075916dec82a90831c7c2c78a38ea60e20",
+  "alias": "codex/portfolio-common-focus-2026-10-04",
+  "previousBase": "a6faac3a3d10eb6601fcc34caa70a915bea5dab3",
+  "previousMetadata": "0809df0de9dda0f0c1fe0e7172f8dff5a70f1a89",
+  "submittedF": "3d35b7c88b89f36c72eaff315dec4bfc5dc887a5",
+  "testImportRef": "7493e45a257866b9824b1290ab82e3d8b3bb448f",
+  "caseAccepted": false,
+  "actualFRetest": "pending_after_controller_review",
+  "sharedFiles": [
+    {
+      "path": "ds/motion-concept.md",
+      "root": "5201fa92b0074443373e9bf2abd2cb5ae6895599fe6791e89f6453433a7aee71",
+      "transfer": "5201fa92b0074443373e9bf2abd2cb5ae6895599fe6791e89f6453433a7aee71",
+      "common": "5201fa92b0074443373e9bf2abd2cb5ae6895599fe6791e89f6453433a7aee71"
+    },
+    {
+      "path": "src/scripts/animations.js",
+      "root": "d1468a8e12ca45fbfc941aee94d0c77aa93efec5e889c4eac7929df4976179a4",
+      "transfer": "d1468a8e12ca45fbfc941aee94d0c77aa93efec5e889c4eac7929df4976179a4",
+      "common": "d1468a8e12ca45fbfc941aee94d0c77aa93efec5e889c4eac7929df4976179a4"
+    }
+  ],
+  "actualF": {
+    "checkout": "C:/Users/kanar/.codex/worktrees/agent-ops-rebuild-f/Site-portfolio",
+    "ref": "3d35b7c88b89f36c72eaff315dec4bfc5dc887a5",
+    "clean": true,
+    "untouched": true
+  },
+  "isolatedF": {
+    "checkout": "D:/Claude-projects/Site-portfolio/tmp/focus-common-f",
+    "ref": "7493e45a257866b9824b1290ab82e3d8b3bb448f",
+    "production": "http://127.0.0.1:4386",
+    "dev": "http://127.0.0.1:4387",
+    "payloadUnchanged": true,
+    "clean": true
+  },
+  "frozenCommon": {
+    "checkout": "D:/Claude-projects/Site-portfolio/tmp/portfolio-common-focus-6e8f0e0",
+    "ref": "6e8f0e075916dec82a90831c7c2c78a38ea60e20",
+    "origin": "http://127.0.0.1:4388",
+    "clean": true,
+    "manifest": "tasks/portfolio-rebuild/integration/focus-common-base-manifest.json",
+    "canonicalFiles": 630,
+    "canonicalBytes": 78017347,
+    "integrityFailures": 0
+  },
+  "originalReproduction": {
+    "file": "tasks/portfolio-rebuild/integration/focus-common/baseline.json",
+    "observations": 4,
+    "transitions": 24,
+    "failures": 5
+  },
+  "browserProof": [
+    {
+      "name": "exact-preference",
+      "file": "tasks/portfolio-rebuild/integration/focus-common/final-exact.json",
+      "observations": 4,
+      "transitions": 24,
+      "failures": 0,
+      "sha256": "b58eb25a97d09c1d2e52c17307e44f484f0eda0b76c95fb03e51f7f365c9e414"
+    },
+    {
+      "name": "native-wheel",
+      "file": "tasks/portfolio-rebuild/integration/focus-common/native-states.json",
+      "observations": 36,
+      "transitions": 96,
+      "failures": 0,
+      "sha256": "0ce96909a35fc3a2e0a98d70a51cf07856c112fbc881b4a0739d95af52910acb"
+    },
+    {
+      "name": "F-motion",
+      "file": "tasks/portfolio-rebuild/integration/focus-common/f-motion-verification.json",
+      "observations": 12,
+      "transitions": 22,
+      "failures": 0,
+      "sha256": "e5c7cd353b49a50d8ea82a67154ea2c97a55df7cfd1028857b4cca030e55e606"
+    },
+    {
+      "name": "F-static",
+      "file": "tasks/portfolio-rebuild/integration/focus-common/f-static-verification.json",
+      "observations": 24,
+      "transitions": 0,
+      "failures": 0,
+      "sha256": "56d2f39ea881e1f5bf23f64c9c45eb984202ef92537e1d8b72a050fd09b7890c"
+    },
+    {
+      "name": "DEV-registry",
+      "file": "tasks/portfolio-rebuild/integration/focus-common/f-debug.json",
+      "observations": 30,
+      "transitions": 0,
+      "failures": 0,
+      "sha256": "97d8615e47609c5ec9607fade1a2cf6b88a8031abcdae9544f18d72a650360ac"
+    },
+    {
+      "name": "shared-controls",
+      "file": "tasks/portfolio-rebuild/integration/focus-common/controls.json",
+      "observations": 8,
+      "transitions": 42,
+      "failures": 0,
+      "sha256": "b50671c3561804599e5ec51f839807ae0d6b67f6cbb16fdf03af33cbd70e1f5b"
+    },
+    {
+      "name": "film-regression",
+      "file": "tasks/portfolio-rebuild/integration/focus-common/film/verification.json",
+      "observations": 14,
+      "transitions": 0,
+      "failures": 0,
+      "sha256": "861d8b4cdb41d6d0cb850e39a9a76d6e5197bfa0f416fe1000b43cc1c35491fb"
+    }
+  ],
+  "harmony": {
+    "samples": 20,
+    "violations": 0,
+    "logs": [
+      {
+        "file": "tasks/portfolio-rebuild/integration/focus-common/harmony-f-900.log",
+        "samples": 8,
+        "passed": true
+      },
+      {
+        "file": "tasks/portfolio-rebuild/integration/focus-common/harmony-f-600.log",
+        "samples": 8,
+        "passed": true
+      },
+      {
+        "file": "tasks/portfolio-rebuild/integration/focus-common/harmony-public.log",
+        "samples": 4,
+        "passed": true
+      }
+    ]
+  },
+  "checks": [
+    {
+      "checkout": "tmp/focus-common-f",
+      "check": {
+        "files": 109,
+        "errors": 0,
+        "warnings": 0,
+        "hints": 101,
+        "summaryFile": "tasks/portfolio-rebuild/integration/focus-common/f-transfer-check.log"
+      },
+      "build": {
+        "pages": 32
+      },
+      "css": {
+        "routes": 32,
+        "deadRules": 0
+      },
+      "productionDebugHooks": []
+    },
+    {
+      "checkout": "tmp/portfolio-common-focus-6e8f0e0",
+      "check": {
+        "files": 108,
+        "errors": 0,
+        "warnings": 0,
+        "hints": 101,
+        "summaryFile": "tasks/portfolio-rebuild/integration/focus-common/clean-check.log"
+      },
+      "build": {
+        "pages": 30
+      },
+      "css": {
+        "routes": 30,
+        "deadRules": 0
+      },
+      "productionDebugHooks": []
+    }
+  ],
+  "mirrors": [
+    {
+      "source": "ds/tokens.css",
+      "mirror": "src/styles/tokens.css",
+      "equal": true
+    },
+    {
+      "source": "ds/motion.js",
+      "mirror": "src/scripts/motion.js",
+      "equal": true
+    }
+  ],
+  "history": "tasks/portfolio-rebuild/integration/focus-common/history.json",
+  "outlineRetained": "tasks/portfolio-rebuild/integration/focus-common/outline-confirmation.json",
+  "visualReview": {
+    "reviewed": [
+      "tasks/portfolio-rebuild/integration/focus-common/shots/baseline-ru-1800-reduce.png",
+      "tasks/portfolio-rebuild/integration/focus-common/shots/final-exact-ru-600-reduce.png",
+      "tasks/portfolio-rebuild/integration/focus-common/shots/final-exact-ru-1800-reduce.png"
+    ],
+    "finalPairs": [
+      "tasks/portfolio-rebuild/integration/focus-common/shots/final-exact-en-1800-before.png",
+      "tasks/portfolio-rebuild/integration/focus-common/shots/final-exact-en-1800-reduce.png",
+      "tasks/portfolio-rebuild/integration/focus-common/shots/final-exact-en-600-before.png",
+      "tasks/portfolio-rebuild/integration/focus-common/shots/final-exact-en-600-reduce.png",
+      "tasks/portfolio-rebuild/integration/focus-common/shots/final-exact-ru-1800-before.png",
+      "tasks/portfolio-rebuild/integration/focus-common/shots/final-exact-ru-1800-reduce.png",
+      "tasks/portfolio-rebuild/integration/focus-common/shots/final-exact-ru-600-before.png",
+      "tasks/portfolio-rebuild/integration/focus-common/shots/final-exact-ru-600-reduce.png"
+    ]
+  },
+  "limitations": [
+    "Chromium 1243 viewport emulation; no physical devices or other engines.",
+    "Film document.hidden is an explicitly synthetic handler probe; physical hidden tab not verified.",
+    "No separate CPU/performance or encoding probes.",
+    "Browser F proof precedes clean cherry-pick; exact runtime bytes were verified equal and clean transfer was rebuilt.",
+    "Controller review, actual F retest/acceptance and G-final remain separate pending stages."
+  ],
+  "readyForPublication": false,
+  "proofBytes": "Metadata text normalized to LF with one final newline; recorded browser geometry and results unchanged"
+}

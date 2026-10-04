@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "checkout": "tmp/focus-common-f",
+      "check": {
+        "files": 109,
+        "errors": 0,
+        "warnings": 0,
+        "hints": 101,
+        "summaryFile": "tasks/portfolio-rebuild/integration/focus-common/f-transfer-check.log"
+      },
+      "build": {
+        "pages": 32
+      },
+      "css": {
+        "routes": 32,
+        "deadRules": 0
+      },
+      "productionDebugHooks": []
+    },
+    {
+      "checkout": "tmp/portfolio-common-focus-6e8f0e0",
+      "check": {
+        "files": 108,
+        "errors": 0,
+        "warnings": 0,
+        "hints": 101,
+        "summaryFile": "tasks/portfolio-rebuild/integration/focus-common/clean-check.log"
+      },
+      "build": {
+        "pages": 30
+      },
+      "css": {
+        "routes": 30,
+        "deadRules": 0
+      },
+      "productionDebugHooks": []
+    }
+  ],
+  "limitations": [
+    "Full diagnostic logs remain local; compact official check summaries are committed.",
+    "Existing hints are unchanged in count; dependency advisories were not remediated in this scoped patch."
+  ]
+}

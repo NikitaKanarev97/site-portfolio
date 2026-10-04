@@ -1,5 +1,11 @@
 # Общие запросы G · 04.10.2026
 
+## F-G-01 · исправлен G-common-F, actual F retest ожидается
+
+Delta `6e8f0e075916dec82a90831c7c2c78a38ea60e20`, ровно animations.js и ds/motion-concept.md. Исходный F 3d35b7 воспроизведён в отдельном G checkout: 5/24 live preference position failures. Trace показал промежуточную pin/list геометрию после двух прежних ранних измерений. Shared ResizeObserver удерживает identity/top до фактического reflow, освобождается при жесте/native navigation/route teardown; epoch отменяет прошлые callbacks. Actual registry capture после native wheel устраняет сохранение предыдущего panel. GSAP timings, DS mirrors и case payload прежние.
+
+Final exact 24 и native wheel 96 switches — 0 failures; F motion/static 12+24 observations, registry 30 snapshots, common controls 8 routes/42 transitions, additive film 14 и Harmony 20 profiles — 0 failures. Transfer на exact F ref clean, payload неизменен; новая common base 630 files воспроизведена. Report/handoff — focus-common-report.md / focus-common-handoff.md. F остаётся непринятым до импорта и retest своего actual checkout; review/STATE/chat dispatch — у контроллера.
+
 ## E-G-01/02/03 · закрыты G-common-E в общем слое
 
 Delta `433c80bcba29eda2060067570e9f8ec2087a2a91`: optional ShotItem.film и guard, передача CaseScreen → существующий MediaFrame; film MP4 → WebM для настоящего native playback без JS; pause вне viewport/вкладки с сохранением времени и ручным возвратом, cleanup observers/listeners/stall timers на route leave. Loop semantics/codecs прежние. 14 film/lifecycle/loop/geometry observations и 8 B/C profiles + 26 alpha HTTP captures — 0 failures. Физически скрытая вкладка не подтверждена; visibility branch проверен synthetic probe. Перенос delta на E d3bbbb воспроизведён без конфликтов и изменений case payload. См. film-common-report.md и film-common-handoff.md. E должен подключить film в своём среднем шаге и повторить case verification; готовность общей правки не означает приёмку его истории. D-G-01 zone labels отложен до G-final.

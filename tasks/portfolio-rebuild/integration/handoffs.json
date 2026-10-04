@@ -1,5 +1,5 @@
 {
-  "stage": "G-common-E",
+  "stage": "G-common-F",
   "acceptedBaseRef": "936724beff3bb9a01c69381659dc808782cc7950",
   "acceptedBaseAlias": "codex/portfolio-common-a-2026-10-04",
   "baseDocument": "tasks/portfolio-rebuild/integration/base.md",
@@ -44,20 +44,27 @@
     {
       "chat": "E",
       "slug": "pawly",
-      "status": "shared_fix_ready_awaiting_case_adaptation",
-      "versionRef": "d3bbbbd78fb3a75c87d3f6117f91d1606e462932",
+      "status": "accepted_by_controller_awaiting_public_integration",
+      "versionRef": "a3641e8203dc250dc520ac494eec7fea0cf5f965",
       "publicState": "legacy",
       "prompt": "research/portfolio-rebuild-2026-10-03/prompts/e-pawly.md",
       "report": "C:/Users/kanar/.codex/worktrees/pawly-rebuild-e/Site-portfolio/tasks/portfolio-rebuild/pawly/report.md",
-      "commonDelta": "433c80bcba29eda2060067570e9f8ec2087a2a91"
+      "commonDelta": "433c80bcba29eda2060067570e9f8ec2087a2a91",
+      "caseCommits": [
+        "d3bbbbd78fb3a75c87d3f6117f91d1606e462932",
+        "a3641e8203dc250dc520ac494eec7fea0cf5f965"
+      ]
     },
     {
       "chat": "F",
       "slug": "agent-ops-console",
-      "status": "pending_controller_launch_on_updated_base",
-      "versionRef": null,
+      "status": "shared_fix_ready_awaiting_actual_case_retest",
+      "versionRef": "3d35b7c88b89f36c72eaff315dec4bfc5dc887a5",
       "publicState": "legacy",
-      "prompt": "research/portfolio-rebuild-2026-10-03/prompts/f-agent-ops.md"
+      "prompt": "research/portfolio-rebuild-2026-10-03/prompts/f-agent-ops.md",
+      "commonDelta": "6e8f0e075916dec82a90831c7c2c78a38ea60e20",
+      "report": "C:/Users/kanar/.codex/worktrees/agent-ops-rebuild-f/Site-portfolio/tasks/portfolio-rebuild/agent-ops/report.md",
+      "handoff": "tasks/portfolio-rebuild/integration/focus-common-handoff.md"
     }
   ],
   "order": [
@@ -69,6 +76,32 @@
   ],
   "finalOrderSelected": false,
   "updatedBaseForSecondWave": {
+    "ref": "6e8f0e075916dec82a90831c7c2c78a38ea60e20",
+    "alias": "codex/portfolio-common-focus-2026-10-04",
+    "reproduced": true,
+    "files": 630,
+    "checkout": "D:/Claude-projects/Site-portfolio/tmp/portfolio-common-focus-6e8f0e0",
+    "origin": "http://127.0.0.1:4388",
+    "integrityManifest": "tasks/portfolio-rebuild/integration/focus-common-base-manifest.json",
+    "reproduction": "tasks/portfolio-rebuild/integration/focus-common-reproduction.json",
+    "handoff": "tasks/portfolio-rebuild/integration/focus-common-handoff.md",
+    "commonDelta": "6e8f0e075916dec82a90831c7c2c78a38ea60e20"
+  },
+  "readyForBAndC": true,
+  "readyForPublication": false,
+  "controllerStateOwner": "01a103b5-7549-7211-8683-f14b03d9beef",
+  "commonRequests": {
+    "B-G-01": "closed",
+    "E-G-01": "closed_in_shared_adapter",
+    "E-G-02": "closed_with_native_mp4_first_playback",
+    "E-G-03": "closed_in_shared_lifecycle",
+    "D-G-01": "deferred_to_G_final",
+    "F-G-01": "fixed_in_shared_runtime_pending_actual_F_retest"
+  },
+  "readyForDAndE": true,
+  "readyForF": true,
+  "checkpointStatus": "ready_for_controller_review",
+  "previousUpdatedBaseForSecondWave": {
     "ref": "a6faac3a3d10eb6601fcc34caa70a915bea5dab3",
     "alias": "codex/portfolio-common-film-2026-10-04",
     "reproduced": true,
@@ -80,20 +113,8 @@
     "handoff": "tasks/portfolio-rebuild/integration/film-common-handoff.md",
     "commonDelta": "433c80bcba29eda2060067570e9f8ec2087a2a91"
   },
-  "readyForBAndC": true,
-  "readyForPublication": false,
-  "controllerStateOwner": "01a103b5-7549-7211-8683-f14b03d9beef",
-  "commonRequests": {
-    "B-G-01": "closed",
-    "E-G-01": "closed_in_shared_adapter",
-    "E-G-02": "closed_with_native_mp4_first_playback",
-    "E-G-03": "closed_in_shared_lifecycle",
-    "D-G-01": "deferred_to_G_final"
-  },
-  "readyForDAndE": true,
-  "readyForF": true,
-  "checkpointStatus": "complete",
-  "previousUpdatedBaseForSecondWave": {
+  "readyForEContinuation": false,
+  "earlierUpdatedBaseForSecondWave": {
     "ref": "58002c398c3386c9df4b398f324ab07115c979f7",
     "alias": "codex/portfolio-common-wave-1-2026-10-04",
     "reproduced": true,
@@ -104,5 +125,6 @@
     "reproduction": "tasks/portfolio-rebuild/integration/wave-1-reproduction.json",
     "handoff": "tasks/portfolio-rebuild/integration/wave-1-handoff.md"
   },
-  "readyForEContinuation": true
+  "readyForFContinuation": true,
+  "finalIntegrationStatus": "pending_F_acceptance_and_controller_dispatch"
 }

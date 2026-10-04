@@ -1,4 +1,4 @@
-> Актуальный checkpoint: **G-integrate-1**, приёмка/интеграция B+C и B-G-01 — [wave-1-report.md](wave-1-report.md). Ниже сохранён исторический G-base. Точный updated ref и воспроизведение — [base.md](base.md).
+> Актуальный checkpoint: **G-common-F**, shared F-G-01 fix и clean transfer proof — [focus-common-report.md](focus-common-report.md), [focus-common-handoff.md](focus-common-handoff.md). Готов для review контроллера; actual F retest и G-final pending. Ниже сохранён исторический G-base. Точные refs и воспроизведение — [base.md](base.md).
 
 # G · checkpoint общей базы · 04.10.2026
 

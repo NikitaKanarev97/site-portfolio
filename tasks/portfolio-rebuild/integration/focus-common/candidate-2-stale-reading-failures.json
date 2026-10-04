@@ -1,0 +1,3436 @@
+{
+  "base": "http://127.0.0.1:4386",
+  "nativeInput": "Trusted Home and mouse.wheel; no scripted scroll/play",
+  "results": [
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "overview",
+      "entry": {
+        "y": 1844,
+        "top": 123.65625,
+        "scene": "overview",
+        "loaded": true,
+        "pins": 1,
+        "focused": true,
+        "overflow": 0,
+        "active": [
+          "overview"
+        ]
+      },
+      "changes": [
+        {
+          "cycle": 0,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 123.46875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 0,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 123.46875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 123.46875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "workspace",
+      "entry": {
+        "y": 2468,
+        "top": 123.46875,
+        "scene": "workspace",
+        "loaded": true,
+        "pins": 1,
+        "focused": true,
+        "overflow": 0,
+        "active": [
+          "workspace"
+        ]
+      },
+      "changes": [
+        {
+          "cycle": 0,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 977.046875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 0,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 977.046875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 977.046875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "promise",
+      "entry": {
+        "y": 3117,
+        "top": 123.46875,
+        "scene": "promise",
+        "loaded": true,
+        "pins": 1,
+        "focused": true,
+        "overflow": 0,
+        "active": [
+          "promise"
+        ]
+      },
+      "changes": [
+        {
+          "cycle": 0,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 2305.625,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 0,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 2305.625,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 2305.625,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "decision",
+      "entry": {
+        "y": 3717,
+        "top": 123.46875,
+        "scene": "decision",
+        "loaded": true,
+        "pins": 1,
+        "focused": true,
+        "overflow": 0,
+        "active": [
+          "decision"
+        ]
+      },
+      "changes": [
+        {
+          "cycle": 0,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 3715.875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 0,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 3715.875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 3715.875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "mode": "native-reverse-fast",
+      "y": 3118,
+      "top": 123.46875,
+      "scene": "promise",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "promise"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "mode": "native-reverse-fast",
+      "y": 2467,
+      "top": 123.46875,
+      "scene": "workspace",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "workspace"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "mode": "native-reverse-fast",
+      "y": 1837,
+      "top": 123.46875,
+      "scene": "overview",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "mode": "native-reverse-fast",
+      "y": 3717,
+      "top": 123.46875,
+      "scene": "decision",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "mode": "native-reverse-fast",
+      "y": 1838,
+      "top": 123.46875,
+      "scene": "overview",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "overview",
+      "entry": {
+        "y": 1844,
+        "top": 123.65625,
+        "scene": "overview",
+        "loaded": true,
+        "pins": 1,
+        "focused": true,
+        "overflow": 0,
+        "active": [
+          "overview"
+        ]
+      },
+      "changes": [
+        {
+          "cycle": 0,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 123.46875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 0,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 123.46875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 123.46875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "workspace",
+      "entry": {
+        "y": 2468,
+        "top": 123.46875,
+        "scene": "workspace",
+        "loaded": true,
+        "pins": 1,
+        "focused": true,
+        "overflow": 0,
+        "active": [
+          "workspace"
+        ]
+      },
+      "changes": [
+        {
+          "cycle": 0,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 977.046875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 0,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 977.046875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 977.046875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "promise",
+      "entry": {
+        "y": 3117,
+        "top": 123.46875,
+        "scene": "promise",
+        "loaded": true,
+        "pins": 1,
+        "focused": true,
+        "overflow": 0,
+        "active": [
+          "promise"
+        ]
+      },
+      "changes": [
+        {
+          "cycle": 0,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 2305.625,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 0,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 2305.625,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 2305.625,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "decision",
+      "entry": {
+        "y": 3717,
+        "top": 123.46875,
+        "scene": "decision",
+        "loaded": true,
+        "pins": 1,
+        "focused": true,
+        "overflow": 0,
+        "active": [
+          "decision"
+        ]
+      },
+      "changes": [
+        {
+          "cycle": 0,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 3715.875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 0,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 3715.875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "reduce",
+          "y": 1769,
+          "top": 3715.875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "no-preference",
+          "y": 1817,
+          "top": 123.46875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "mode": "native-reverse-fast",
+      "y": 3118,
+      "top": 123.46875,
+      "scene": "promise",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "promise"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "mode": "native-reverse-fast",
+      "y": 2467,
+      "top": 123.46875,
+      "scene": "workspace",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "workspace"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "mode": "native-reverse-fast",
+      "y": 1837,
+      "top": 123.46875,
+      "scene": "overview",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "mode": "native-reverse-fast",
+      "y": 3717,
+      "top": 123.46875,
+      "scene": "decision",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "mode": "native-reverse-fast",
+      "y": 1838,
+      "top": 123.46875,
+      "scene": "overview",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "overview",
+      "entry": {
+        "y": 1876,
+        "top": 123.15625,
+        "scene": "overview",
+        "loaded": true,
+        "pins": 1,
+        "focused": true,
+        "overflow": 0,
+        "active": [
+          "overview"
+        ]
+      },
+      "changes": [
+        {
+          "cycle": 0,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 122.96875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 0,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 122.96875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 122.96875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "workspace",
+      "entry": {
+        "y": 2499,
+        "top": 122.96875,
+        "scene": "workspace",
+        "loaded": true,
+        "pins": 1,
+        "focused": true,
+        "overflow": 0,
+        "active": [
+          "workspace"
+        ]
+      },
+      "changes": [
+        {
+          "cycle": 0,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 992.171875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 0,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 992.171875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 992.171875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "promise",
+      "entry": {
+        "y": 3149,
+        "top": 122.96875,
+        "scene": "promise",
+        "loaded": true,
+        "pins": 1,
+        "focused": true,
+        "overflow": 0,
+        "active": [
+          "promise"
+        ]
+      },
+      "changes": [
+        {
+          "cycle": 0,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 2352.25,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 0,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 2352.25,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 2352.25,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "decision",
+      "entry": {
+        "y": 3748,
+        "top": 122.96875,
+        "scene": "decision",
+        "loaded": true,
+        "pins": 1,
+        "focused": true,
+        "overflow": 0,
+        "active": [
+          "decision"
+        ]
+      },
+      "changes": [
+        {
+          "cycle": 0,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 3762.5,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 0,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 3762.5,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 3762.5,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "mode": "native-reverse-fast",
+      "y": 3149,
+      "top": 122.96875,
+      "scene": "promise",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "promise"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "mode": "native-reverse-fast",
+      "y": 2499,
+      "top": 122.96875,
+      "scene": "workspace",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "workspace"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "mode": "native-reverse-fast",
+      "y": 1869,
+      "top": 122.96875,
+      "scene": "overview",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "mode": "native-reverse-fast",
+      "y": 3748,
+      "top": 122.96875,
+      "scene": "decision",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "mode": "native-reverse-fast",
+      "y": 1869,
+      "top": 122.96875,
+      "scene": "overview",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "overview",
+      "entry": {
+        "y": 1876,
+        "top": 123.15625,
+        "scene": "overview",
+        "loaded": true,
+        "pins": 1,
+        "focused": true,
+        "overflow": 0,
+        "active": [
+          "overview"
+        ]
+      },
+      "changes": [
+        {
+          "cycle": 0,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 122.96875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 0,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 122.96875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 122.96875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "overview",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "workspace",
+      "entry": {
+        "y": 2499,
+        "top": 122.96875,
+        "scene": "workspace",
+        "loaded": true,
+        "pins": 1,
+        "focused": true,
+        "overflow": 0,
+        "active": [
+          "workspace"
+        ]
+      },
+      "changes": [
+        {
+          "cycle": 0,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 992.171875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 0,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 992.171875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 992.171875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "workspace",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "promise",
+      "entry": {
+        "y": 3149,
+        "top": 122.96875,
+        "scene": "promise",
+        "loaded": true,
+        "pins": 1,
+        "focused": true,
+        "overflow": 0,
+        "active": [
+          "promise"
+        ]
+      },
+      "changes": [
+        {
+          "cycle": 0,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 2352.25,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 0,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 2352.25,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 2352.25,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "promise",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "decision",
+      "entry": {
+        "y": 3748,
+        "top": 122.96875,
+        "scene": "decision",
+        "loaded": true,
+        "pins": 1,
+        "focused": true,
+        "overflow": 0,
+        "active": [
+          "decision"
+        ]
+      },
+      "changes": [
+        {
+          "cycle": 0,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 3762.5,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 0,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 3762.5,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 1,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "reduce",
+          "y": 1801,
+          "top": 3762.5,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 0,
+          "focused": false,
+          "overflow": 0,
+          "active": [
+            "overview",
+            "workspace",
+            "promise",
+            "decision"
+          ]
+        },
+        {
+          "cycle": 2,
+          "reducedMotion": "no-preference",
+          "y": 1849,
+          "top": 122.96875,
+          "scene": "decision",
+          "loaded": true,
+          "pins": 1,
+          "focused": true,
+          "overflow": 0,
+          "active": [
+            "overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "mode": "native-reverse-fast",
+      "y": 3149,
+      "top": 122.96875,
+      "scene": "promise",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "promise"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "mode": "native-reverse-fast",
+      "y": 2499,
+      "top": 122.96875,
+      "scene": "workspace",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "workspace"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "mode": "native-reverse-fast",
+      "y": 1869,
+      "top": 122.96875,
+      "scene": "overview",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "mode": "native-reverse-fast",
+      "y": 3748,
+      "top": 122.96875,
+      "scene": "decision",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "mode": "native-reverse-fast",
+      "y": 1869,
+      "top": 122.96875,
+      "scene": "overview",
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    }
+  ],
+  "failures": [
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "workspace",
+      "entryTop": 123.46875,
+      "cycle": 0,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 977.046875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "workspace",
+      "entryTop": 123.46875,
+      "cycle": 0,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "workspace",
+      "entryTop": 123.46875,
+      "cycle": 1,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 977.046875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "workspace",
+      "entryTop": 123.46875,
+      "cycle": 1,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "workspace",
+      "entryTop": 123.46875,
+      "cycle": 2,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 977.046875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "workspace",
+      "entryTop": 123.46875,
+      "cycle": 2,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "promise",
+      "entryTop": 123.46875,
+      "cycle": 0,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 2305.625,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "promise",
+      "entryTop": 123.46875,
+      "cycle": 0,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "promise",
+      "entryTop": 123.46875,
+      "cycle": 1,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 2305.625,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "promise",
+      "entryTop": 123.46875,
+      "cycle": 1,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "promise",
+      "entryTop": 123.46875,
+      "cycle": 2,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 2305.625,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "promise",
+      "entryTop": 123.46875,
+      "cycle": 2,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "decision",
+      "entryTop": 123.46875,
+      "cycle": 0,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 3715.875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "decision",
+      "entryTop": 123.46875,
+      "cycle": 0,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "decision",
+      "entryTop": 123.46875,
+      "cycle": 1,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 3715.875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "decision",
+      "entryTop": 123.46875,
+      "cycle": 1,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "decision",
+      "entryTop": 123.46875,
+      "cycle": 2,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 3715.875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 600,
+      "scene": "decision",
+      "entryTop": 123.46875,
+      "cycle": 2,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "workspace",
+      "entryTop": 123.46875,
+      "cycle": 0,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 977.046875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "workspace",
+      "entryTop": 123.46875,
+      "cycle": 0,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "workspace",
+      "entryTop": 123.46875,
+      "cycle": 1,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 977.046875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "workspace",
+      "entryTop": 123.46875,
+      "cycle": 1,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "workspace",
+      "entryTop": 123.46875,
+      "cycle": 2,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 977.046875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "workspace",
+      "entryTop": 123.46875,
+      "cycle": 2,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "promise",
+      "entryTop": 123.46875,
+      "cycle": 0,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 2305.625,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "promise",
+      "entryTop": 123.46875,
+      "cycle": 0,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "promise",
+      "entryTop": 123.46875,
+      "cycle": 1,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 2305.625,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "promise",
+      "entryTop": 123.46875,
+      "cycle": 1,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "promise",
+      "entryTop": 123.46875,
+      "cycle": 2,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 2305.625,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "promise",
+      "entryTop": 123.46875,
+      "cycle": 2,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "decision",
+      "entryTop": 123.46875,
+      "cycle": 0,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 3715.875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "decision",
+      "entryTop": 123.46875,
+      "cycle": 0,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "decision",
+      "entryTop": 123.46875,
+      "cycle": 1,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 3715.875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "decision",
+      "entryTop": 123.46875,
+      "cycle": 1,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "decision",
+      "entryTop": 123.46875,
+      "cycle": 2,
+      "reducedMotion": "reduce",
+      "y": 1769,
+      "top": 3715.875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "en",
+      "wait": 1800,
+      "scene": "decision",
+      "entryTop": 123.46875,
+      "cycle": 2,
+      "reducedMotion": "no-preference",
+      "y": 1817,
+      "top": 123.46875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "workspace",
+      "entryTop": 122.96875,
+      "cycle": 0,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 992.171875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "workspace",
+      "entryTop": 122.96875,
+      "cycle": 0,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "workspace",
+      "entryTop": 122.96875,
+      "cycle": 1,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 992.171875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "workspace",
+      "entryTop": 122.96875,
+      "cycle": 1,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "workspace",
+      "entryTop": 122.96875,
+      "cycle": 2,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 992.171875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "workspace",
+      "entryTop": 122.96875,
+      "cycle": 2,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "promise",
+      "entryTop": 122.96875,
+      "cycle": 0,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 2352.25,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "promise",
+      "entryTop": 122.96875,
+      "cycle": 0,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "promise",
+      "entryTop": 122.96875,
+      "cycle": 1,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 2352.25,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "promise",
+      "entryTop": 122.96875,
+      "cycle": 1,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "promise",
+      "entryTop": 122.96875,
+      "cycle": 2,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 2352.25,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "promise",
+      "entryTop": 122.96875,
+      "cycle": 2,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "decision",
+      "entryTop": 122.96875,
+      "cycle": 0,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 3762.5,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "decision",
+      "entryTop": 122.96875,
+      "cycle": 0,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "decision",
+      "entryTop": 122.96875,
+      "cycle": 1,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 3762.5,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "decision",
+      "entryTop": 122.96875,
+      "cycle": 1,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "decision",
+      "entryTop": 122.96875,
+      "cycle": 2,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 3762.5,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 600,
+      "scene": "decision",
+      "entryTop": 122.96875,
+      "cycle": 2,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "workspace",
+      "entryTop": 122.96875,
+      "cycle": 0,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 992.171875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "workspace",
+      "entryTop": 122.96875,
+      "cycle": 0,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "workspace",
+      "entryTop": 122.96875,
+      "cycle": 1,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 992.171875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "workspace",
+      "entryTop": 122.96875,
+      "cycle": 1,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "workspace",
+      "entryTop": 122.96875,
+      "cycle": 2,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 992.171875,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "workspace",
+      "entryTop": 122.96875,
+      "cycle": 2,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "promise",
+      "entryTop": 122.96875,
+      "cycle": 0,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 2352.25,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "promise",
+      "entryTop": 122.96875,
+      "cycle": 0,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "promise",
+      "entryTop": 122.96875,
+      "cycle": 1,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 2352.25,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "promise",
+      "entryTop": 122.96875,
+      "cycle": 1,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "promise",
+      "entryTop": 122.96875,
+      "cycle": 2,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 2352.25,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "promise",
+      "entryTop": 122.96875,
+      "cycle": 2,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "decision",
+      "entryTop": 122.96875,
+      "cycle": 0,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 3762.5,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "decision",
+      "entryTop": 122.96875,
+      "cycle": 0,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "decision",
+      "entryTop": 122.96875,
+      "cycle": 1,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 3762.5,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "decision",
+      "entryTop": 122.96875,
+      "cycle": 1,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "decision",
+      "entryTop": 122.96875,
+      "cycle": 2,
+      "reducedMotion": "reduce",
+      "y": 1801,
+      "top": 3762.5,
+      "loaded": true,
+      "pins": 0,
+      "focused": false,
+      "overflow": 0,
+      "active": [
+        "overview",
+        "workspace",
+        "promise",
+        "decision"
+      ]
+    },
+    {
+      "lang": "ru",
+      "wait": 1800,
+      "scene": "decision",
+      "entryTop": 122.96875,
+      "cycle": 2,
+      "reducedMotion": "no-preference",
+      "y": 1849,
+      "top": 122.96875,
+      "loaded": true,
+      "pins": 1,
+      "focused": true,
+      "overflow": 0,
+      "active": [
+        "overview"
+      ]
+    }
+  ],
+  "sharedSourceSha256": "fd6f95844410c4cfdec5301b487790dda08fc5c6c1964b565937509ba1dff934",
+  "limitations": [
+    "Local Chromium viewport emulation, no physical device or CPU measurement"
+  ]
+}

@@ -1,0 +1,2690 @@
+{
+  "base": "http://127.0.0.1:4386",
+  "results": [
+    {
+      "key": "en-1440-reduce",
+      "route": "/preview/agent-ops-rebuild/en/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "mode": "reduce",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Seventeen chats. One cause. ",
+            "rect": {
+              "x": 144,
+              "y": 2146.03125,
+              "width": 1152,
+              "height": 437.625,
+              "top": 2146.03125,
+              "right": 1296,
+              "bottom": 2583.65625,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "workspace",
+            "title": " The promise and the proof ",
+            "rect": {
+              "x": 144,
+              "y": 2952.234375,
+              "width": 1152,
+              "height": 960,
+              "top": 2952.234375,
+              "right": 1296,
+              "bottom": 3912.234375,
+              "left": 144
+            },
+            "loaded": false
+          },
+          {
+            "scene": "promise",
+            "title": " The promise lacks proof ",
+            "rect": {
+              "x": 144,
+              "y": 4280.8125,
+              "width": 1152,
+              "height": 1041.671875,
+              "top": 4280.8125,
+              "right": 1296,
+              "bottom": 5322.484375,
+              "left": 144
+            },
+            "loaded": false
+          },
+          {
+            "scene": "decision",
+            "title": " Money waits for a person ",
+            "rect": {
+              "x": 144,
+              "y": 6041.75,
+              "width": 1152,
+              "height": 775.078125,
+              "top": 6041.75,
+              "right": 1296,
+              "bottom": 6816.828125,
+              "left": 144
+            },
+            "loaded": false
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Seventeen chats. One cause.",
+              "lines": [
+                "Seventeen chats.",
+                "One cause."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "The promise and the proof",
+              "lines": [
+                "The promise and the proof"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "The promise lacks proof",
+              "lines": [
+                "The promise lacks proof"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Money waits for a person",
+              "lines": [
+                "Money waits for a person"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-1440-nojs",
+      "route": "/preview/agent-ops-rebuild/en/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "mode": "nojs",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Seventeen chats. One cause. ",
+            "rect": {
+              "x": 144,
+              "y": 2146.03125,
+              "width": 1152,
+              "height": 437.625,
+              "top": 2146.03125,
+              "right": 1296,
+              "bottom": 2583.65625,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "workspace",
+            "title": " The promise and the proof ",
+            "rect": {
+              "x": 144,
+              "y": 2952.234375,
+              "width": 1152,
+              "height": 960,
+              "top": 2952.234375,
+              "right": 1296,
+              "bottom": 3912.234375,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "promise",
+            "title": " The promise lacks proof ",
+            "rect": {
+              "x": 144,
+              "y": 4280.8125,
+              "width": 1152,
+              "height": 1041.671875,
+              "top": 4280.8125,
+              "right": 1296,
+              "bottom": 5322.484375,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "decision",
+            "title": " Money waits for a person ",
+            "rect": {
+              "x": 144,
+              "y": 6041.75,
+              "width": 1152,
+              "height": 775.078125,
+              "top": 6041.75,
+              "right": 1296,
+              "bottom": 6816.828125,
+              "left": 144
+            },
+            "loaded": true
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Seventeen chats. One cause.",
+              "lines": [
+                "Seventeen chats.",
+                "One cause."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "The promise and the proof",
+              "lines": [
+                "The promise and the proof"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "The promise lacks proof",
+              "lines": [
+                "The promise lacks proof"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Money waits for a person",
+              "lines": [
+                "Money waits for a person"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-1024-reduce",
+      "route": "/preview/agent-ops-rebuild/en/",
+      "viewport": {
+        "width": 1024,
+        "height": 900
+      },
+      "mode": "reduce",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Seventeen chats. One cause. ",
+            "rect": {
+              "x": 144,
+              "y": 2209.34375,
+              "width": 736,
+              "height": 279.59375,
+              "top": 2209.34375,
+              "right": 880,
+              "bottom": 2488.9375,
+              "left": 144
+            },
+            "loaded": false
+          },
+          {
+            "scene": "workspace",
+            "title": " The promise and the proof ",
+            "rect": {
+              "x": 144,
+              "y": 2936.703125,
+              "width": 736,
+              "height": 613.328125,
+              "top": 2936.703125,
+              "right": 880,
+              "bottom": 3550.03125,
+              "left": 144
+            },
+            "loaded": false
+          },
+          {
+            "scene": "promise",
+            "title": " The promise lacks proof ",
+            "rect": {
+              "x": 144,
+              "y": 3997.796875,
+              "width": 736,
+              "height": 665.515625,
+              "top": 3997.796875,
+              "right": 880,
+              "bottom": 4663.3125,
+              "left": 144
+            },
+            "loaded": false
+          },
+          {
+            "scene": "decision",
+            "title": " Money waits for a person ",
+            "rect": {
+              "x": 144,
+              "y": 5318.578125,
+              "width": 736,
+              "height": 495.1875,
+              "top": 5318.578125,
+              "right": 880,
+              "bottom": 5813.765625,
+              "left": 144
+            },
+            "loaded": false
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Seventeen chats. One cause.",
+              "lines": [
+                "Seventeen chats. One cause."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "The promise and the proof",
+              "lines": [
+                "The promise and the proof"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "The promise lacks proof",
+              "lines": [
+                "The promise lacks proof"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Money waits for a person",
+              "lines": [
+                "Money waits for a person"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-1024-nojs",
+      "route": "/preview/agent-ops-rebuild/en/",
+      "viewport": {
+        "width": 1024,
+        "height": 900
+      },
+      "mode": "nojs",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Seventeen chats. One cause. ",
+            "rect": {
+              "x": 144,
+              "y": 2209.34375,
+              "width": 736,
+              "height": 279.59375,
+              "top": 2209.34375,
+              "right": 880,
+              "bottom": 2488.9375,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "workspace",
+            "title": " The promise and the proof ",
+            "rect": {
+              "x": 144,
+              "y": 2936.703125,
+              "width": 736,
+              "height": 613.328125,
+              "top": 2936.703125,
+              "right": 880,
+              "bottom": 3550.03125,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "promise",
+            "title": " The promise lacks proof ",
+            "rect": {
+              "x": 144,
+              "y": 3997.796875,
+              "width": 736,
+              "height": 665.515625,
+              "top": 3997.796875,
+              "right": 880,
+              "bottom": 4663.3125,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "decision",
+            "title": " Money waits for a person ",
+            "rect": {
+              "x": 144,
+              "y": 5318.578125,
+              "width": 736,
+              "height": 495.1875,
+              "top": 5318.578125,
+              "right": 880,
+              "bottom": 5813.765625,
+              "left": 144
+            },
+            "loaded": true
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Seventeen chats. One cause.",
+              "lines": [
+                "Seventeen chats. One cause."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "The promise and the proof",
+              "lines": [
+                "The promise and the proof"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "The promise lacks proof",
+              "lines": [
+                "The promise lacks proof"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Money waits for a person",
+              "lines": [
+                "Money waits for a person"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-390-reduce",
+      "route": "/preview/agent-ops-rebuild/en/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mode": "reduce",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Seventeen chats. One cause. ",
+            "rect": {
+              "x": 40,
+              "y": 2705.515625,
+              "width": 310,
+              "height": 345.109375,
+              "top": 2705.515625,
+              "right": 350,
+              "bottom": 3050.625,
+              "left": 40
+            },
+            "loaded": false
+          },
+          {
+            "scene": "workspace",
+            "title": " The promise and the proof ",
+            "rect": {
+              "x": 40,
+              "y": 3483.796875,
+              "width": 310,
+              "height": 574.171875,
+              "top": 3483.796875,
+              "right": 350,
+              "bottom": 4057.96875,
+              "left": 40
+            },
+            "loaded": false
+          },
+          {
+            "scene": "decision",
+            "title": " Money waits for a person ",
+            "rect": {
+              "x": 40,
+              "y": 4634.640625,
+              "width": 310,
+              "height": 486.640625,
+              "top": 4634.640625,
+              "right": 350,
+              "bottom": 5121.28125,
+              "left": 40
+            },
+            "loaded": false
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Seventeen chats. One cause.",
+              "lines": [
+                "Seventeen chats.",
+                "One cause."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "The promise and the proof",
+              "lines": [
+                "The promise",
+                "and the proof"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Money waits for a person",
+              "lines": [
+                "Money waits",
+                "for a person"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-390-nojs",
+      "route": "/preview/agent-ops-rebuild/en/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mode": "nojs",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Seventeen chats. One cause. ",
+            "rect": {
+              "x": 40,
+              "y": 2777.515625,
+              "width": 310,
+              "height": 345.109375,
+              "top": 2777.515625,
+              "right": 350,
+              "bottom": 3122.625,
+              "left": 40
+            },
+            "loaded": true
+          },
+          {
+            "scene": "workspace",
+            "title": " The promise and the proof ",
+            "rect": {
+              "x": 40,
+              "y": 3555.796875,
+              "width": 310,
+              "height": 574.171875,
+              "top": 3555.796875,
+              "right": 350,
+              "bottom": 4129.96875,
+              "left": 40
+            },
+            "loaded": true
+          },
+          {
+            "scene": "decision",
+            "title": " Money waits for a person ",
+            "rect": {
+              "x": 40,
+              "y": 4706.640625,
+              "width": 310,
+              "height": 486.640625,
+              "top": 4706.640625,
+              "right": 350,
+              "bottom": 5193.28125,
+              "left": 40
+            },
+            "loaded": true
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Seventeen chats. One cause.",
+              "lines": [
+                "Seventeen chats.",
+                "One cause."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "The promise and the proof",
+              "lines": [
+                "The promise",
+                "and the proof"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Money waits for a person",
+              "lines": [
+                "Money waits",
+                "for a person"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-360-reduce",
+      "route": "/preview/agent-ops-rebuild/en/",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "mode": "reduce",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Seventeen chats. One cause. ",
+            "rect": {
+              "x": 40,
+              "y": 2746.40625,
+              "width": 280,
+              "height": 311.71875,
+              "top": 2746.40625,
+              "right": 320,
+              "bottom": 3058.125,
+              "left": 40
+            },
+            "loaded": false
+          },
+          {
+            "scene": "workspace",
+            "title": " The promise and the proof ",
+            "rect": {
+              "x": 40,
+              "y": 3491.296875,
+              "width": 280,
+              "height": 518.609375,
+              "top": 3491.296875,
+              "right": 320,
+              "bottom": 4009.90625,
+              "left": 40
+            },
+            "loaded": false
+          },
+          {
+            "scene": "decision",
+            "title": " Money waits for a person ",
+            "rect": {
+              "x": 40,
+              "y": 4586.578125,
+              "width": 280,
+              "height": 439.546875,
+              "top": 4586.578125,
+              "right": 320,
+              "bottom": 5026.125,
+              "left": 40
+            },
+            "loaded": false
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Seventeen chats. One cause.",
+              "lines": [
+                "Seventeen chats.",
+                "One cause."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "The promise and the proof",
+              "lines": [
+                "The promise",
+                "and the proof"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Money waits for a person",
+              "lines": [
+                "Money waits",
+                "for a person"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-360-nojs",
+      "route": "/preview/agent-ops-rebuild/en/",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "mode": "nojs",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Seventeen chats. One cause. ",
+            "rect": {
+              "x": 40,
+              "y": 2818.40625,
+              "width": 280,
+              "height": 311.71875,
+              "top": 2818.40625,
+              "right": 320,
+              "bottom": 3130.125,
+              "left": 40
+            },
+            "loaded": true
+          },
+          {
+            "scene": "workspace",
+            "title": " The promise and the proof ",
+            "rect": {
+              "x": 40,
+              "y": 3563.296875,
+              "width": 280,
+              "height": 518.609375,
+              "top": 3563.296875,
+              "right": 320,
+              "bottom": 4081.90625,
+              "left": 40
+            },
+            "loaded": true
+          },
+          {
+            "scene": "decision",
+            "title": " Money waits for a person ",
+            "rect": {
+              "x": 40,
+              "y": 4658.578125,
+              "width": 280,
+              "height": 439.546875,
+              "top": 4658.578125,
+              "right": 320,
+              "bottom": 5098.125,
+              "left": 40
+            },
+            "loaded": true
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Seventeen chats. One cause.",
+              "lines": [
+                "Seventeen chats.",
+                "One cause."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "The promise and the proof",
+              "lines": [
+                "The promise",
+                "and the proof"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Money waits for a person",
+              "lines": [
+                "Money waits",
+                "for a person"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-1440-short-reduce",
+      "route": "/preview/agent-ops-rebuild/en/",
+      "viewport": {
+        "width": 1440,
+        "height": 600
+      },
+      "mode": "reduce",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Seventeen chats. One cause. ",
+            "rect": {
+              "x": 144,
+              "y": 2140.9375,
+              "width": 1152,
+              "height": 437.625,
+              "top": 2140.9375,
+              "right": 1296,
+              "bottom": 2578.5625,
+              "left": 144
+            },
+            "loaded": false
+          },
+          {
+            "scene": "workspace",
+            "title": " The promise and the proof ",
+            "rect": {
+              "x": 144,
+              "y": 2947.140625,
+              "width": 1152,
+              "height": 960,
+              "top": 2947.140625,
+              "right": 1296,
+              "bottom": 3907.140625,
+              "left": 144
+            },
+            "loaded": false
+          },
+          {
+            "scene": "promise",
+            "title": " The promise lacks proof ",
+            "rect": {
+              "x": 144,
+              "y": 4275.71875,
+              "width": 1152,
+              "height": 1041.671875,
+              "top": 4275.71875,
+              "right": 1296,
+              "bottom": 5317.390625,
+              "left": 144
+            },
+            "loaded": false
+          },
+          {
+            "scene": "decision",
+            "title": " Money waits for a person ",
+            "rect": {
+              "x": 144,
+              "y": 6036.65625,
+              "width": 1152,
+              "height": 775.078125,
+              "top": 6036.65625,
+              "right": 1296,
+              "bottom": 6811.734375,
+              "left": 144
+            },
+            "loaded": false
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Seventeen chats. One cause.",
+              "lines": [
+                "Seventeen chats.",
+                "One cause."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "The promise and the proof",
+              "lines": [
+                "The promise and the proof"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "The promise lacks proof",
+              "lines": [
+                "The promise lacks proof"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Money waits for a person",
+              "lines": [
+                "Money waits for a person"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "en-1440-short-nojs",
+      "route": "/preview/agent-ops-rebuild/en/",
+      "viewport": {
+        "width": 1440,
+        "height": 600
+      },
+      "mode": "nojs",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Seventeen chats. One cause. ",
+            "rect": {
+              "x": 144,
+              "y": 2140.9375,
+              "width": 1152,
+              "height": 437.625,
+              "top": 2140.9375,
+              "right": 1296,
+              "bottom": 2578.5625,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "workspace",
+            "title": " The promise and the proof ",
+            "rect": {
+              "x": 144,
+              "y": 2947.140625,
+              "width": 1152,
+              "height": 960,
+              "top": 2947.140625,
+              "right": 1296,
+              "bottom": 3907.140625,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "promise",
+            "title": " The promise lacks proof ",
+            "rect": {
+              "x": 144,
+              "y": 4275.71875,
+              "width": 1152,
+              "height": 1041.671875,
+              "top": 4275.71875,
+              "right": 1296,
+              "bottom": 5317.390625,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "decision",
+            "title": " Money waits for a person ",
+            "rect": {
+              "x": 144,
+              "y": 6036.65625,
+              "width": 1152,
+              "height": 775.078125,
+              "top": 6036.65625,
+              "right": 1296,
+              "bottom": 6811.734375,
+              "left": 144
+            },
+            "loaded": true
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Seventeen chats. One cause.",
+              "lines": [
+                "Seventeen chats.",
+                "One cause."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "The promise and the proof",
+              "lines": [
+                "The promise and the proof"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "The promise lacks proof",
+              "lines": [
+                "The promise lacks proof"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Money waits for a person",
+              "lines": [
+                "Money waits for a person"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-1440-reduce",
+      "route": "/preview/agent-ops-rebuild/ru/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "mode": "reduce",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Семнадцать чатов. Одна причина. ",
+            "rect": {
+              "x": 144,
+              "y": 2193.15625,
+              "width": 1152,
+              "height": 437.625,
+              "top": 2193.15625,
+              "right": 1296,
+              "bottom": 2630.78125,
+              "left": 144
+            },
+            "loaded": false
+          },
+          {
+            "scene": "workspace",
+            "title": " Слова рядом с фактами ",
+            "rect": {
+              "x": 144,
+              "y": 3030.859375,
+              "width": 1152,
+              "height": 960,
+              "top": 3030.859375,
+              "right": 1296,
+              "bottom": 3990.859375,
+              "left": 144
+            },
+            "loaded": false
+          },
+          {
+            "scene": "promise",
+            "title": " У обещания нет опоры ",
+            "rect": {
+              "x": 144,
+              "y": 4359.4375,
+              "width": 1152,
+              "height": 1041.671875,
+              "top": 4359.4375,
+              "right": 1296,
+              "bottom": 5401.109375,
+              "left": 144
+            },
+            "loaded": false
+          },
+          {
+            "scene": "decision",
+            "title": " Нет «да» — нет выплаты ",
+            "rect": {
+              "x": 144,
+              "y": 6120.375,
+              "width": 1152,
+              "height": 775.078125,
+              "top": 6120.375,
+              "right": 1296,
+              "bottom": 6895.453125,
+              "left": 144
+            },
+            "loaded": false
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Семнадцать чатов. Одна причина.",
+              "lines": [
+                "Семнадцать чатов.",
+                "Одна причина."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Слова рядом с фактами",
+              "lines": [
+                "Слова рядом с фактами"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "У обещания нет опоры",
+              "lines": [
+                "У обещания нет опоры"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Нет «да» — нет выплаты",
+              "lines": [
+                "Нет «да» — нет выплаты"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-1440-nojs",
+      "route": "/preview/agent-ops-rebuild/ru/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "mode": "nojs",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Семнадцать чатов. Одна причина. ",
+            "rect": {
+              "x": 144,
+              "y": 2193.15625,
+              "width": 1152,
+              "height": 437.625,
+              "top": 2193.15625,
+              "right": 1296,
+              "bottom": 2630.78125,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "workspace",
+            "title": " Слова рядом с фактами ",
+            "rect": {
+              "x": 144,
+              "y": 3030.859375,
+              "width": 1152,
+              "height": 960,
+              "top": 3030.859375,
+              "right": 1296,
+              "bottom": 3990.859375,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "promise",
+            "title": " У обещания нет опоры ",
+            "rect": {
+              "x": 144,
+              "y": 4359.4375,
+              "width": 1152,
+              "height": 1041.671875,
+              "top": 4359.4375,
+              "right": 1296,
+              "bottom": 5401.109375,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "decision",
+            "title": " Нет «да» — нет выплаты ",
+            "rect": {
+              "x": 144,
+              "y": 6120.375,
+              "width": 1152,
+              "height": 775.078125,
+              "top": 6120.375,
+              "right": 1296,
+              "bottom": 6895.453125,
+              "left": 144
+            },
+            "loaded": true
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Семнадцать чатов. Одна причина.",
+              "lines": [
+                "Семнадцать чатов.",
+                "Одна причина."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Слова рядом с фактами",
+              "lines": [
+                "Слова рядом с фактами"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "У обещания нет опоры",
+              "lines": [
+                "У обещания нет опоры"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Нет «да» — нет выплаты",
+              "lines": [
+                "Нет «да» — нет выплаты"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-1024-reduce",
+      "route": "/preview/agent-ops-rebuild/ru/",
+      "viewport": {
+        "width": 1024,
+        "height": 900
+      },
+      "mode": "reduce",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Семнадцать чатов. Одна причина. ",
+            "rect": {
+              "x": 144,
+              "y": 2294.734375,
+              "width": 736,
+              "height": 279.59375,
+              "top": 2294.734375,
+              "right": 880,
+              "bottom": 2574.328125,
+              "left": 144
+            },
+            "loaded": false
+          },
+          {
+            "scene": "workspace",
+            "title": " Слова рядом с фактами ",
+            "rect": {
+              "x": 144,
+              "y": 3053.59375,
+              "width": 736,
+              "height": 613.328125,
+              "top": 3053.59375,
+              "right": 880,
+              "bottom": 3666.921875,
+              "left": 144
+            },
+            "loaded": false
+          },
+          {
+            "scene": "promise",
+            "title": " У обещания нет опоры ",
+            "rect": {
+              "x": 144,
+              "y": 4114.6875,
+              "width": 736,
+              "height": 665.515625,
+              "top": 4114.6875,
+              "right": 880,
+              "bottom": 4780.203125,
+              "left": 144
+            },
+            "loaded": false
+          },
+          {
+            "scene": "decision",
+            "title": " Нет «да» — нет выплаты ",
+            "rect": {
+              "x": 144,
+              "y": 5435.46875,
+              "width": 736,
+              "height": 495.1875,
+              "top": 5435.46875,
+              "right": 880,
+              "bottom": 5930.65625,
+              "left": 144
+            },
+            "loaded": false
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Семнадцать чатов. Одна причина.",
+              "lines": [
+                "Семнадцать чатов. Одна причина."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Слова рядом с фактами",
+              "lines": [
+                "Слова рядом с фактами"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "У обещания нет опоры",
+              "lines": [
+                "У обещания нет опоры"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Нет «да» — нет выплаты",
+              "lines": [
+                "Нет «да» — нет выплаты"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-1024-nojs",
+      "route": "/preview/agent-ops-rebuild/ru/",
+      "viewport": {
+        "width": 1024,
+        "height": 900
+      },
+      "mode": "nojs",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Семнадцать чатов. Одна причина. ",
+            "rect": {
+              "x": 144,
+              "y": 2294.734375,
+              "width": 736,
+              "height": 279.59375,
+              "top": 2294.734375,
+              "right": 880,
+              "bottom": 2574.328125,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "workspace",
+            "title": " Слова рядом с фактами ",
+            "rect": {
+              "x": 144,
+              "y": 3053.59375,
+              "width": 736,
+              "height": 613.328125,
+              "top": 3053.59375,
+              "right": 880,
+              "bottom": 3666.921875,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "promise",
+            "title": " У обещания нет опоры ",
+            "rect": {
+              "x": 144,
+              "y": 4114.6875,
+              "width": 736,
+              "height": 665.515625,
+              "top": 4114.6875,
+              "right": 880,
+              "bottom": 4780.203125,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "decision",
+            "title": " Нет «да» — нет выплаты ",
+            "rect": {
+              "x": 144,
+              "y": 5435.46875,
+              "width": 736,
+              "height": 495.1875,
+              "top": 5435.46875,
+              "right": 880,
+              "bottom": 5930.65625,
+              "left": 144
+            },
+            "loaded": true
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Семнадцать чатов. Одна причина.",
+              "lines": [
+                "Семнадцать чатов. Одна причина."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Слова рядом с фактами",
+              "lines": [
+                "Слова рядом с фактами"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "У обещания нет опоры",
+              "lines": [
+                "У обещания нет опоры"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Нет «да» — нет выплаты",
+              "lines": [
+                "Нет «да» — нет выплаты"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-390-reduce",
+      "route": "/preview/agent-ops-rebuild/ru/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mode": "reduce",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Семнадцать чатов. Одна причина. ",
+            "rect": {
+              "x": 40,
+              "y": 2795.609375,
+              "width": 310,
+              "height": 345.109375,
+              "top": 2795.609375,
+              "right": 350,
+              "bottom": 3140.71875,
+              "left": 40
+            },
+            "loaded": false
+          },
+          {
+            "scene": "workspace",
+            "title": " Слова рядом с фактами ",
+            "rect": {
+              "x": 40,
+              "y": 3605.390625,
+              "width": 310,
+              "height": 574.171875,
+              "top": 3605.390625,
+              "right": 350,
+              "bottom": 4179.5625,
+              "left": 40
+            },
+            "loaded": false
+          },
+          {
+            "scene": "decision",
+            "title": " Нет «да» — нет выплаты ",
+            "rect": {
+              "x": 40,
+              "y": 4724.734375,
+              "width": 310,
+              "height": 486.640625,
+              "top": 4724.734375,
+              "right": 350,
+              "bottom": 5211.375,
+              "left": 40
+            },
+            "loaded": false
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Семнадцать чатов. Одна причина.",
+              "lines": [
+                "Семнадцать чатов.",
+                "Одна причина."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Слова рядом с фактами",
+              "lines": [
+                "Слова рядом",
+                "с фактами"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Нет «да» — нет выплаты",
+              "lines": [
+                "Нет «да» —",
+                "нет выплаты"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-390-nojs",
+      "route": "/preview/agent-ops-rebuild/ru/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mode": "nojs",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Семнадцать чатов. Одна причина. ",
+            "rect": {
+              "x": 40,
+              "y": 2867.609375,
+              "width": 310,
+              "height": 345.109375,
+              "top": 2867.609375,
+              "right": 350,
+              "bottom": 3212.71875,
+              "left": 40
+            },
+            "loaded": true
+          },
+          {
+            "scene": "workspace",
+            "title": " Слова рядом с фактами ",
+            "rect": {
+              "x": 40,
+              "y": 3677.390625,
+              "width": 310,
+              "height": 574.171875,
+              "top": 3677.390625,
+              "right": 350,
+              "bottom": 4251.5625,
+              "left": 40
+            },
+            "loaded": true
+          },
+          {
+            "scene": "decision",
+            "title": " Нет «да» — нет выплаты ",
+            "rect": {
+              "x": 40,
+              "y": 4796.734375,
+              "width": 310,
+              "height": 486.640625,
+              "top": 4796.734375,
+              "right": 350,
+              "bottom": 5283.375,
+              "left": 40
+            },
+            "loaded": true
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Семнадцать чатов. Одна причина.",
+              "lines": [
+                "Семнадцать чатов.",
+                "Одна причина."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Слова рядом с фактами",
+              "lines": [
+                "Слова рядом",
+                "с фактами"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Нет «да» — нет выплаты",
+              "lines": [
+                "Нет «да» —",
+                "нет выплаты"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-360-reduce",
+      "route": "/preview/agent-ops-rebuild/ru/",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "mode": "reduce",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Семнадцать чатов. Одна причина. ",
+            "rect": {
+              "x": 40,
+              "y": 2916.40625,
+              "width": 280,
+              "height": 311.71875,
+              "top": 2916.40625,
+              "right": 320,
+              "bottom": 3228.125,
+              "left": 40
+            },
+            "loaded": false
+          },
+          {
+            "scene": "workspace",
+            "title": " Слова рядом с фактами ",
+            "rect": {
+              "x": 40,
+              "y": 3692.796875,
+              "width": 280,
+              "height": 518.609375,
+              "top": 3692.796875,
+              "right": 320,
+              "bottom": 4211.40625,
+              "left": 40
+            },
+            "loaded": false
+          },
+          {
+            "scene": "decision",
+            "title": " Нет «да» — нет выплаты ",
+            "rect": {
+              "x": 40,
+              "y": 4788.078125,
+              "width": 280,
+              "height": 439.546875,
+              "top": 4788.078125,
+              "right": 320,
+              "bottom": 5227.625,
+              "left": 40
+            },
+            "loaded": false
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Семнадцать чатов. Одна причина.",
+              "lines": [
+                "Семнадцать чатов.",
+                "Одна причина."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Слова рядом с фактами",
+              "lines": [
+                "Слова рядом",
+                "с фактами"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Нет «да» — нет выплаты",
+              "lines": [
+                "Нет «да» —",
+                "нет выплаты"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-360-nojs",
+      "route": "/preview/agent-ops-rebuild/ru/",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "mode": "nojs",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Семнадцать чатов. Одна причина. ",
+            "rect": {
+              "x": 40,
+              "y": 3052.40625,
+              "width": 280,
+              "height": 311.71875,
+              "top": 3052.40625,
+              "right": 320,
+              "bottom": 3364.125,
+              "left": 40
+            },
+            "loaded": true
+          },
+          {
+            "scene": "workspace",
+            "title": " Слова рядом с фактами ",
+            "rect": {
+              "x": 40,
+              "y": 3828.796875,
+              "width": 280,
+              "height": 518.609375,
+              "top": 3828.796875,
+              "right": 320,
+              "bottom": 4347.40625,
+              "left": 40
+            },
+            "loaded": true
+          },
+          {
+            "scene": "decision",
+            "title": " Нет «да» — нет выплаты ",
+            "rect": {
+              "x": 40,
+              "y": 4924.078125,
+              "width": 280,
+              "height": 439.546875,
+              "top": 4924.078125,
+              "right": 320,
+              "bottom": 5363.625,
+              "left": 40
+            },
+            "loaded": true
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Семнадцать чатов. Одна причина.",
+              "lines": [
+                "Семнадцать чатов.",
+                "Одна причина."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Слова рядом с фактами",
+              "lines": [
+                "Слова рядом",
+                "с фактами"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Нет «да» — нет выплаты",
+              "lines": [
+                "Нет «да» —",
+                "нет выплаты"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-1440-short-reduce",
+      "route": "/preview/agent-ops-rebuild/ru/",
+      "viewport": {
+        "width": 1440,
+        "height": 600
+      },
+      "mode": "reduce",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Семнадцать чатов. Одна причина. ",
+            "rect": {
+              "x": 144,
+              "y": 2153.046875,
+              "width": 1152,
+              "height": 437.625,
+              "top": 2153.046875,
+              "right": 1296,
+              "bottom": 2590.671875,
+              "left": 144
+            },
+            "loaded": false
+          },
+          {
+            "scene": "workspace",
+            "title": " Слова рядом с фактами ",
+            "rect": {
+              "x": 144,
+              "y": 2990.75,
+              "width": 1152,
+              "height": 960,
+              "top": 2990.75,
+              "right": 1296,
+              "bottom": 3950.75,
+              "left": 144
+            },
+            "loaded": false
+          },
+          {
+            "scene": "promise",
+            "title": " У обещания нет опоры ",
+            "rect": {
+              "x": 144,
+              "y": 4319.328125,
+              "width": 1152,
+              "height": 1041.671875,
+              "top": 4319.328125,
+              "right": 1296,
+              "bottom": 5361,
+              "left": 144
+            },
+            "loaded": false
+          },
+          {
+            "scene": "decision",
+            "title": " Нет «да» — нет выплаты ",
+            "rect": {
+              "x": 144,
+              "y": 6080.265625,
+              "width": 1152,
+              "height": 775.078125,
+              "top": 6080.265625,
+              "right": 1296,
+              "bottom": 6855.34375,
+              "left": 144
+            },
+            "loaded": false
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Семнадцать чатов. Одна причина.",
+              "lines": [
+                "Семнадцать чатов.",
+                "Одна причина."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Слова рядом с фактами",
+              "lines": [
+                "Слова рядом с фактами"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "У обещания нет опоры",
+              "lines": [
+                "У обещания нет опоры"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Нет «да» — нет выплаты",
+              "lines": [
+                "Нет «да» — нет выплаты"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "ru-1440-short-nojs",
+      "route": "/preview/agent-ops-rebuild/ru/",
+      "viewport": {
+        "width": 1440,
+        "height": 600
+      },
+      "mode": "nojs",
+      "entry": {
+        "y": 0,
+        "overflow": 0,
+        "focused": 0,
+        "pins": 0,
+        "blocks": [
+          {
+            "id": "review-load",
+            "type": "numbers",
+            "evidence": "agent-estimates"
+          },
+          {
+            "id": "human-checkpoint",
+            "type": "steps",
+            "evidence": "agent-panels",
+            "media": "agent-workspace"
+          },
+          {
+            "id": "missing-evidence",
+            "type": "detail",
+            "evidence": "agent-panels",
+            "media": "agent-evidence"
+          },
+          {
+            "id": "accepted-prototype",
+            "type": "outcome",
+            "evidence": "agent-acceptance"
+          }
+        ],
+        "states": [
+          {
+            "scene": "overview",
+            "title": " Семнадцать чатов. Одна причина. ",
+            "rect": {
+              "x": 144,
+              "y": 2153.046875,
+              "width": 1152,
+              "height": 437.625,
+              "top": 2153.046875,
+              "right": 1296,
+              "bottom": 2590.671875,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "workspace",
+            "title": " Слова рядом с фактами ",
+            "rect": {
+              "x": 144,
+              "y": 2990.75,
+              "width": 1152,
+              "height": 960,
+              "top": 2990.75,
+              "right": 1296,
+              "bottom": 3950.75,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "promise",
+            "title": " У обещания нет опоры ",
+            "rect": {
+              "x": 144,
+              "y": 4319.328125,
+              "width": 1152,
+              "height": 1041.671875,
+              "top": 4319.328125,
+              "right": 1296,
+              "bottom": 5361,
+              "left": 144
+            },
+            "loaded": true
+          },
+          {
+            "scene": "decision",
+            "title": " Нет «да» — нет выплаты ",
+            "rect": {
+              "x": 144,
+              "y": 6080.265625,
+              "width": 1152,
+              "height": 775.078125,
+              "top": 6080.265625,
+              "right": 1296,
+              "bottom": 6855.34375,
+              "left": 144
+            },
+            "loaded": true
+          }
+        ],
+        "static": [
+          1
+        ],
+        "pauseButtons": 0
+      },
+      "observations": [
+        {
+          "headings": [
+            {
+              "title": "Семнадцать чатов. Одна причина.",
+              "lines": [
+                "Семнадцать чатов.",
+                "Одна причина."
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Слова рядом с фактами",
+              "lines": [
+                "Слова рядом с фактами"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "У обещания нет опоры",
+              "lines": [
+                "У обещания нет опоры"
+              ],
+              "orphans": 0
+            },
+            {
+              "title": "Нет «да» — нет выплаты",
+              "lines": [
+                "Нет «да» — нет выплаты"
+              ],
+              "orphans": 0
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "scenario": "no-JS native Next/Back",
+      "lang": "en",
+      "width": 1440,
+      "href": "/work/partner-portal/"
+    },
+    {
+      "scenario": "no-JS native Next/Back",
+      "lang": "en",
+      "width": 390,
+      "href": "/work/partner-portal/"
+    },
+    {
+      "scenario": "no-JS native Next/Back",
+      "lang": "ru",
+      "width": 1440,
+      "href": "/ru/work/partner-portal/"
+    },
+    {
+      "scenario": "no-JS native Next/Back",
+      "lang": "ru",
+      "width": 390,
+      "href": "/ru/work/partner-portal/"
+    }
+  ],
+  "failures": [],
+  "limitations": [
+    "Local Chromium 1243 viewport emulation; no physical devices/people/CPU benchmark",
+    "Physically hidden tab not certified"
+  ]
+}
