@@ -4,9 +4,10 @@ import { caseArt } from '../copy/case-art';
 const {locale, loading = 'lazy', href, linkLabel} = Astro.props as {locale:'en'|'ru';loading?:'eager'|'lazy';href?:string;linkLabel?:string};
 const ru = locale === 'ru';
 const art = caseArt('learn',locale);
-const material = {src:'/media/art-direction/learn/material-desktop.png',srcNarrow:'/media/art-direction/learn/material-mobile.png',device:'panel' as const,alt:ru?'Тот же материал ONVIF: версия, заголовок, введение и целый первый шаг диагностики; справа — связанные программы.':'The same ONVIF material: version, title, introduction and complete first diagnostic step; related learning paths at right.'};
-const unit = {src:'/media/art-direction/learn/current-unit.png',device:'panel' as const,alt:ru?'Тот же материал об ONVIF выбран как текущий ресурс 03 в программе.':'The same ONVIF material selected as current resource 03 in the learning path.'};
-const passport = {src:'/media/art-direction/learn/passport-desktop.png',srcNarrow:'/media/art-direction/learn/passport-mobile.png',device:'panel' as const,alt:ru?'Целый паспорт программы: объём, правила зачёта, демонстрационный документ и действие старта.':'Whole programme passport: workload, assessment rules, demonstration document and start action.'};
+const media = `/media/art-direction/learn${ru ? '-ru' : ''}`;
+const material = {src:`${media}/material-desktop.png`,srcNarrow:`${media}/material-mobile.png`,device:'panel' as const,alt:ru?'Тот же материал ONVIF: версия, заголовок, введение и целый первый шаг диагностики; справа — связанные программы.':'The same ONVIF material: version, title, introduction and complete first diagnostic step; related learning paths at right.'};
+const unit = {src:`${media}/current-unit.png`,device:'panel' as const,alt:ru?'Тот же материал об ONVIF выбран как текущий ресурс 03 в программе.':'The same ONVIF material selected as current resource 03 in the learning path.'};
+const passport = {src:`${media}/passport-desktop.png`,srcNarrow:`${media}/passport-mobile.png`,device:'panel' as const,alt:ru?'Целый паспорт программы: объём, правила зачёта, демонстрационный документ и действие старта.':'Whole programme passport: workload, assessment rules, demonstration document and start action.'};
 ---
 <div class="learn-stage" data-motion-group data-motion-stagger="tight">
   <div class="learn-stage__heading"><p class="ds-heading-2xl">{art.label}</p><p class="ds-body-sm">{art.detail}</p></div>

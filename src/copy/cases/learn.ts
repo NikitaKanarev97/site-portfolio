@@ -189,7 +189,7 @@ export const learn = {
 /** Full rebuild preview; the public legacy composition remains independently routed. */
 export function makeLearnStory(lang: 'en' | 'ru'): CaseStory {
   const t = (en: string, ru: string) => lang === 'en' ? en : ru;
-  const base = '/media/rebuild/learn/';
+  const base = `/media/rebuild/learn${lang === 'ru' ? '-ru' : ''}/`;
   const shot = (id: string, en: string, ru: string, nativeWidth?: number): ShotItem => ({
     src: `${base}${id}-desktop.webp`, srcNarrow: `${base}${id}-mobile.webp`,
     alt: t(en, ru), device: 'panel', ...(nativeWidth ? { nativeWidth } : {}),
@@ -221,7 +221,7 @@ export function makeLearnStory(lang: 'en' | 'ru'): CaseStory {
         payload: {
           thesis: { label: t('Audit → direction', 'Аудит → направление'), thesis: t('Start with the specialist’s task', 'Начать с рабочей задачи'),
             body: t('The archive leads with courses, ratings and rewards. I reframed entry around a question or programme, with the answer available before sign-in.', 'Архивный каталог начинает с курсов, рейтингов и наград. Я перенёс вход на рабочий вопрос или программу: полезный ответ доступен ещё до авторизации.') },
-          issue: { src: `${base}archive-catalog.webp`, alt: t('Archived Russian course catalogue with ratings and reward points', 'Архивный каталог курсов с рейтингом и баллами'),
+          issue: { src: '/media/rebuild/learn/archive-catalog.webp', alt: t('Archived Russian course catalogue with ratings and reward points', 'Архивный каталог курсов с рейтингом и баллами'),
             marks: [{ x: 20, y: 17, text: t('Courses define the entry', 'Вход определён курсами') }, { x: 25, y: 90, text: t('Points accompany the material', 'Баллы сопровождают материал') }],
             caption: t('Archived interface. The visible entry shaped the redesign direction.', 'Архивный интерфейс: видимый вход определил направление переработки.') },
         } },
@@ -249,13 +249,13 @@ export function makeLearnStory(lang: 'en' | 'ru'): CaseStory {
               { style: 'Display/4xl', usage: { en: 'Material title', ru: 'Название материала' }, size: 44, lineHeight: 50.6, weight: 700, sample: { en: 'Aa', ru: 'Аа' } },
               { style: 'Heading/3xl', usage: { en: 'Section heading', ru: 'Раздел материала' }, size: 32, lineHeight: 43.2, weight: 700, sample: { en: 'Aa', ru: 'Аа' } },
             ],
-            colors: [ { name: 'Setup', hex: '#0A66CE' }, { name: 'Project', hex: '#6D3EEA' }, { name: 'Handover', hex: '#D6207A' }, { name: 'Explore', hex: '#0E9E86' }, { name: 'Neutral', hex: '#3A4C66' } ],
+            colors: [ { name: t('Setup', 'Пусконаладка'), hex: '#0A66CE' }, { name: t('Project', 'Проектирование'), hex: '#6D3EEA' }, { name: t('Handover', 'Сдача объекта'), hex: '#D6207A' }, { name: t('Explore', 'Обзор линейки'), hex: '#0E9E86' }, { name: t('Neutral', 'Нейтральный'), hex: '#3A4C66' } ],
             groups: [{ id: 'tasks', title: t('Task modes', 'Режимы задач') }, { id: 'records', title: t('Neutral context', 'Нейтральный контекст') }],
             sets: [
-              { id: 'card-setup-project', title: 'Card · Setup / Project', group: 'tasks', states: cards.slice(0,2).map(([id,en,ru]) => ({ id, label: t(en,ru), mediaId: `theme-${id}`, shot: shot(`theme-${id}`, `${en} Card fixture`, `Образец Card: ${ru}`,316) })) },
-              { id: 'card-handover-explore', title: 'Card · Handover / Explore', group: 'tasks', states: cards.slice(2).map(([id,en,ru]) => ({ id, label: t(en,ru), mediaId: `theme-${id}`, shot: shot(`theme-${id}`, `${en} Card fixture`, `Образец Card: ${ru}`,316) })) },
-              { id: 'trust-header', title: 'TrustHeader', group: 'records', states: [{ id: 'version-date', label: t('Version · date · reading time', 'Версия · дата · время чтения'), mediaId: 'trust', shot: shot('trust','Neutral version, update date and reading time','Нейтральные версия, дата обновления и время чтения',288) }] },
-              { id: 'progress-meter', title: 'ProgressMeter', group: 'records', states: [{ id: 'position', label: t('Position 3/11', 'Позиция 3/11'), mediaId: 'progress', shot: shot('progress','Current programme position 3 of 11','Текущая позиция в программе: 3 из 11',288) }] },
+              { id: 'card-setup-project', title: t('Card · Setup / Project', 'Карточка · Пусконаладка / Проектирование'), group: 'tasks', states: cards.slice(0,2).map(([id,en,ru]) => ({ id, label: t(en,ru), mediaId: `theme-${id}`, shot: shot(`theme-${id}`, `${en} Card fixture`, `Образец Card: ${ru}`,316) })) },
+              { id: 'card-handover-explore', title: t('Card · Handover / Explore', 'Карточка · Сдача объекта / Обзор линейки'), group: 'tasks', states: cards.slice(2).map(([id,en,ru]) => ({ id, label: t(en,ru), mediaId: `theme-${id}`, shot: shot(`theme-${id}`, `${en} Card fixture`, `Образец Card: ${ru}`,316) })) },
+              { id: 'trust-header', title: t('TrustHeader', 'Шапка материала'), group: 'records', states: [{ id: 'version-date', label: t('Version · date · reading time', 'Версия · дата · время чтения'), mediaId: 'trust', shot: shot('trust','Neutral version, update date and reading time','Нейтральные версия, дата обновления и время чтения',288) }] },
+              { id: 'progress-meter', title: t('ProgressMeter', 'Индикатор позиции'), group: 'records', states: [{ id: 'position', label: t('Position 3/11', 'Позиция 3/11'), mediaId: 'progress', shot: shot('progress','Current programme position 3 of 11','Текущая позиция в программе: 3 из 11',288) }] },
             ],
             caption: t('Real components. Task colours stay separate from result states.', 'Реальные компоненты: цвет задачи отделён от состояния результата.'),
           } } },

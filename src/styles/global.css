@@ -140,9 +140,10 @@ main > * + .ds-section-tight {
   font-family: var(--font-meta);
   font-size: var(--size-sm);
   transform: translateY(-200%);
-  transition: transform var(--motion-state-duration) var(--motion-state-ease);
 }
 
+/* Keyboard focus reveals the link immediately; blur hides it immediately.
+   No animated travel or lingering overlay during route/pointer navigation. */
 .ds-skip-link:focus-visible { transform: translateY(0); }
 
 /* Ссылка приходит только с клавиатуры, но нажимается и мышью — отклик

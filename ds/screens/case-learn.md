@@ -1,5 +1,7 @@
 ## H · текущий художественный delta · 04.10.2026
 
+**05.10.2026 · локализация native кадров.** RU LearnStage использует пять снимков `art-direction/learn-ru`: desktop/mobile материал и паспорт, текущий ресурс 03. RU story выбирает `rebuild/learn-ru`: материал, плеер, завершение, зачёт, лендинг и компоненты в обеих ширинах. Архивный русский каталог общий. Скрипты `shoot-learn-stage.mjs` и `shoot-learn-story-ru.mjs` снимают реальное приложение с `lang=ru` и native Card fixtures. Текст в изображениях не подменяется. Старые `case-learn-ru` не использовались новой композицией: её общая папка `rebuild/learn` и была вторым источником английских кадров.
+
 **H-ART-02, актуально:** LearnStage Home/cover uses a complete native diagnostic section as the shared plane; current unit03/passport supply the learning context. Same onvif-not-found title in both sources. Mobile current unit precedes material; source alpha/radius preserved. Existing CaseRoutes below remain.
 
 Обложка WorkStage связывает материал с паспортом. one-material заменяет общий focus на CaseRoutes: два native раскрываемых контекста одного onvif-not-found, полный UI в выбранном входе; явное завершение постоянно открыто ниже. Без JS те же controls; чтение не становится завершением.

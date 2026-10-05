@@ -1,5 +1,7 @@
 ## H · текущая карта · 04.10.2026
 
+**05.10.2026 · ритм секций и локаль кадров.** Hero → Featured использует общий `section-gap`: 96 px ниже bp-lg, 128 px от bp-lg, как промежутки между работами и остальными секциями. Исключение `flow-group` (48 px) удалено. Eyebrow → список остаётся внутренней парой `flow-node` (32 px). LearnStage выбирает native RU кадры из `art-direction/learn-ru` для русской версии, EN кадры — из `art-direction/learn`.
+
 **Замечание владельца о краях, 04.10.2026:** Hero proof и все пять WorkStage используют полный native кадр внутри белого CaseScreen с полями и radius-lg. FeaturedCase — article с независимым увеличением снимков и ссылками названия/CTA. Один MediaZoom в BaseLayout: белая панель, целое изображение и отдельное описание, актуальный узкий исходник на mobile. Пять внешних карточек всегда radius-lg. Это заменяет ранее записанную кликабельную обёртку всего блока и нулевые внешние радиусы.
 
 **H-ART-01..03, актуально:** compact role/index precede native Agent approval UI; biography/actions follow it on mobile. Settled EN/RU geometry determines visibility; previous H1 RU five-links-in-window claim was wrong. LearnStage connects actual material/current unit/passport; VetStage shows three visit roles instead of repeating Portal38. Agent interlock, Portal/Pawly preserved.
