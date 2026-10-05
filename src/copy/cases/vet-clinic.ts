@@ -64,7 +64,7 @@ export function makeVetStory(lang:'en'|'ru'):CaseStory {
   const root='/media/rebuild/vet-clinic';
   const shot=(name:string,en:string,ru:string,nativeWidth?:number):ShotItem=>({src:`${root}/${name}-${lang}-wide.webp`,srcNarrow:`${root}/${name}-${lang}-narrow.webp`,alt:t(en,ru),device:'panel',nativeWidth});
   return defineStory({theme:'vet',plate:'light',
-    cover:{title:'Vet Clinic OS',outcome:t('One visit. Different responsibilities.','Один визит. Разные зоны ответственности.'),media:{variant:'proof',eyebrow:t('Concept · not deployed in a clinic','Концепт · в клинике не внедрён'),shot:{...shot('cover','Quick trace: Marsik, weight, complete dose calculation and Save actions.','Короткий след: Марсик, вес, целый расчёт дозы и действия сохранения.')},caption:t('Same demonstration visit · saved trace, invoice and published owner summary.','Один демонстрационный визит · сохранённый след, счёт и опубликованная выписка.')}},
+    cover:{title:'Vet Clinic OS',outcome:t('One visit. Different responsibilities.','Один визит. Разные зоны ответственности.'),media:{variant:'proof',eyebrow:t('Concept · not deployed in a clinic','Концепт · в клинике не внедрён'),shot:{...shot('cover','Quick trace: Marsik, weight, complete dose calculation and Save actions.','Короткий след: Марсик, вес, целый расчёт дозы и действия сохранения.')},caption:t('The vet saves prescriptions; reception bills services; owners receive the summary.','Один пример: врач сохраняет назначение, регистратура выставляет счёт, владелец получает выписку.')}},
     facts:[
       {term:t('Role','Роль'),value:t('Sole product designer','Единственный продуктовый дизайнер')},
       {term:t('Input','Основание'),value:t('Conversations with one practising vet','Разговоры с одним практикующим врачом')},

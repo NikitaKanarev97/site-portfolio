@@ -51,9 +51,36 @@
       "height": 1000
     },
     "width": 2048,
-    "height": 1476,
-    "text": "MA\nЗачёт · Проектирование системы на 64+ камеры\n\nПроверка по объявленным ниже правилам. Здесь показана работа зачёта в нынешнем прототипе.\n\nПеред стартом\nПопытка расходуется при нажатии «Начать зачёт». Обновление страницы или выход не останавливают срок. После отправки ответы зафиксированы.\nВремя\n30 минут\nПопыток осталось\n2 из 2\nПорог\n16 верных из 20\nДо отправки\nМожно пропускать вопросы и менять ответы\nДопуск\nЗавершённые материалы и подтверждённая компания\nПосле неуспеха\nПовтор через 24 ч, если остались попытки\nДополнительные темы демобанка\n\n11 из 20 вопросов относятся к общим темам за пределами состава этой программы. Перед зачётом изучите источники ниже. Предметная валидация банка ещё не выполнена.\n\nTRASSIR не видит камеру по ONVIF: порядок проверки\nTRASSIR OS 4.3\nONVIF-профили S, T и G: что поддерживает TRASSIR\nTRASSIR OS 4.3\nПроверка питания и линка камеры\nОборудование\nДобавление IP-камеры вручную\nTRASSIR OS 4.2\nПрава доступа операторов\nTRASSIR OS 4.3\nНастройка детекторов движения\nTRASSIR OS 4.3\nРезервирование записи\nTRASSIR OS 4.3\nЭкспорт видеофрагмента для передачи заказчику\nTRASSIR OS 4.3\nПроверка записи по всем каналам перед сдачей\nTRASSIR OS 4.3\nПакет документов для сдачи объекта\nОборудование\nК программе\nНачать зачёт\nОткрыть тренировку",
-    "sha256": "c1b3937d8eecf46e55fde5889c9097fea36e1fd9249310cafe35a0f56c8b5cda"
+    "height": 1670,
+    "text": "Зачёт · Проектирование системы на 64+ камеры\n\nПроверка по объявленным ниже правилам. Здесь показана работа зачёта в нынешнем прототипе.\n\nПеред стартом\nПопытка расходуется при нажатии «Начать зачёт». Обновление страницы или выход не останавливают срок. После отправки ответы зафиксированы.\nВремя\n30 минут\nПопыток осталось\n2 из 2\nПорог\n16 верных из 20\nДо отправки\nМожно пропускать вопросы и менять ответы\nДопуск\nЗавершённые материалы и подтверждённая компания\nПосле неуспеха\nПовтор через 24 ч, если остались попытки",
+    "sha256": "c36520d57c27f4bbf59a0aaf0a28a1902945141814a813245a4143abcbfb8433",
+    "kind": "assessment",
+    "variant": "desktop",
+    "dpr": 2,
+    "before": {
+      "width": 2048,
+      "height": 1670
+    },
+    "fields": [
+      {
+        "region": "heading",
+        "left": 152,
+        "right": 152,
+        "top": 48,
+        "bottom": 700.375
+      },
+      {
+        "region": "_card_18whj_33",
+        "left": 152,
+        "right": 152,
+        "top": 419.75,
+        "bottom": 48
+      }
+    ],
+    "boundary": "Whole native region at integer origin; source page fields retained; no image/text painting.",
+    "source": "http://127.0.0.1:4475/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=ru",
+    "crop": "Whole native region at integer origin; source page fields retained; no image/text painting.",
+    "fixture": "Native page fields; assessment intro / complete landing hero"
   },
   {
     "id": "landing-desktop",
@@ -64,10 +91,44 @@
       "width": 1440,
       "height": 1000
     },
-    "width": 2400,
-    "height": 1488,
+    "width": 2880,
+    "height": 1548,
     "text": "ПРАКТИЧЕСКИЕ ЗНАНИЯ / TRASSIR\nЗнать, как.\nУметь сделать.\n\nОт подключения камеры до сдачи объекта.\nОбучение для инженеров, которым важно\nразобраться и применить.\n\nОткрыть материал\n↗\nИзучить программу\n↓\n\nЦеликом. Без регистрации.\n\nОТКРЫТЫЙ МАТЕРИАЛ\n01 / 03\nПусконаладка TRASSIR OS\n10 материалов + зачёт\nСправочник\n7 мин\n\nПОДКЛЮЧЕНИЕ КАМЕР · ONVIF\n\nКамера не появилась\nв TRASSIR?\n01\nДоступность камеры\n↗\n02\nНастройки ONVIF\n↗\n03\nРучное подключение\n↗\n04\nИзображение и запись\n↗\nЧитать материал\n↗\n03\nЧасть большой картины\nЭтот ответ — шаг вашей программы\n↗\nСНАЧАЛА ПОНЯТЬ. ПОТОМ ПРИМЕНИТЬ.\n↓\nДЛЯ ИНЖЕНЕРОВ И ТЕХНИЧЕСКИХ СПЕЦИАЛИСТОВ\nОт рабочего вопроса — к системным знаниям ↓",
-    "sha256": "715bb91882e5f560f7e3479a2602a8cd6eab6c276e2dbf65c5c2366a44ba1350"
+    "sha256": "e1251760fbe14391c48bd2987fd39caf7944f9de00d13237f4c342eeba665e6e",
+    "kind": "landing",
+    "variant": "desktop",
+    "dpr": 2,
+    "before": {
+      "width": 2880,
+      "height": 1548
+    },
+    "fields": [
+      {
+        "region": "hero-copy",
+        "left": 120,
+        "right": 749.421875,
+        "top": 119.4375,
+        "bottom": 217.5
+      },
+      {
+        "region": "hero-visual",
+        "left": 726.578125,
+        "right": 120,
+        "top": 54,
+        "bottom": 152.046875
+      },
+      {
+        "region": "hero-bottom",
+        "left": 120,
+        "right": 120,
+        "top": 665.859375,
+        "bottom": 30
+      }
+    ],
+    "boundary": "Whole native region at integer origin; source page fields retained; no image/text painting.",
+    "source": "http://127.0.0.1:4475/prototypes/learn-landing/?lang=ru",
+    "crop": "Whole native region at integer origin; source page fields retained; no image/text painting.",
+    "fixture": "Native page fields; assessment intro / complete landing hero"
   },
   {
     "id": "answer-mobile",
@@ -120,10 +181,37 @@
       "width": 390,
       "height": 1000
     },
-    "width": 716,
-    "height": 1684,
-    "text": "MA\nЗачёт · Проектирование системы на 64+ камеры\n\nПроверка по объявленным ниже правилам. Здесь показана работа зачёта в нынешнем прототипе.\n\nПеред стартом\nПопытка расходуется при нажатии «Начать зачёт». Обновление страницы или выход не останавливают срок. После отправки ответы зафиксированы.\nВремя\n30 минут\nПопыток осталось\n2 из 2\nПорог\n16 верных из 20\nДо отправки\nМожно пропускать вопросы и менять ответы\nДопуск\nЗавершённые материалы и подтверждённая компания\nПосле неуспеха\nПовтор через 24 ч, если остались попытки\nДополнительные темы демобанка\n\n11 из 20 вопросов относятся к общим темам за пределами состава этой программы. Перед зачётом изучите источники ниже. Предметная валидация банка ещё не выполнена.\n\nTRASSIR не видит камеру по ONVIF: порядок проверки\nTRASSIR OS 4.3\nONVIF-профили S, T и G: что поддерживает TRASSIR\nTRASSIR OS 4.3\nПроверка питания и линка камеры\nОборудование\nДобавление IP-камеры вручную\nTRASSIR OS 4.2\nПрава доступа операторов\nTRASSIR OS 4.3\nНастройка детекторов движения\nTRASSIR OS 4.3\nРезервирование записи\nTRASSIR OS 4.3\nЭкспорт видеофрагмента для передачи заказчику\nTRASSIR OS 4.3\nПроверка записи по всем каналам перед сдачей\nTRASSIR OS 4.3\nПакет документов для сдачи объекта\nОборудование\nК программе\nНачать зачёт\nОткрыть тренировку",
-    "sha256": "4c130262dab4ed5be337700a9b87e5f7c9c23c010782027386233c77a576bad4"
+    "width": 780,
+    "height": 2618,
+    "text": "Зачёт · Проектирование системы на 64+ камеры\n\nПроверка по объявленным ниже правилам. Здесь показана работа зачёта в нынешнем прототипе.\n\nПеред стартом\nПопытка расходуется при нажатии «Начать зачёт». Обновление страницы или выход не останавливают срок. После отправки ответы зафиксированы.\nВремя\n30 минут\nПопыток осталось\n2 из 2\nПорог\n16 верных из 20\nДо отправки\nМожно пропускать вопросы и менять ответы\nДопуск\nЗавершённые материалы и подтверждённая компания\nПосле неуспеха\nПовтор через 24 ч, если остались попытки",
+    "sha256": "bd0d0b0929d42f59310e948110e310c8fa4652af8c966dedff26211622e62fd8",
+    "kind": "assessment",
+    "variant": "mobile",
+    "dpr": 2,
+    "before": {
+      "width": 780,
+      "height": 2618
+    },
+    "fields": [
+      {
+        "region": "heading",
+        "left": 16,
+        "right": 16,
+        "top": 32,
+        "bottom": 1212.0625
+      },
+      {
+        "region": "_card_18whj_33",
+        "left": 16,
+        "right": 16,
+        "top": 453.84375,
+        "bottom": 32
+      }
+    ],
+    "boundary": "Whole native region at integer origin; source page fields retained; no image/text painting.",
+    "source": "http://127.0.0.1:4475/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=ru",
+    "crop": "Whole native region at integer origin; source page fields retained; no image/text painting.",
+    "fixture": "Native page fields; assessment intro / complete landing hero"
   },
   {
     "id": "landing-mobile",
@@ -134,10 +222,44 @@
       "width": 390,
       "height": 1000
     },
-    "width": 700,
-    "height": 1986,
+    "width": 780,
+    "height": 2034,
     "text": "ПРАКТИЧЕСКИЕ ЗНАНИЯ / TRASSIR\nЗнать, как.\nУметь сделать.\n\nОт подключения камеры до сдачи объекта.\nОбучение для инженеров, которым важно разобраться и применить.\n\nОткрыть материал\n↗\nИзучить программу\n↓\n\nЦеликом. Без регистрации.\n\nОТКРЫТЫЙ МАТЕРИАЛ\n01 / 03\nПусконаладка TRASSIR OS\n10 материалов + зачёт\nСправочник\n7 мин\n\nПОДКЛЮЧЕНИЕ КАМЕР · ONVIF\n\nКамера не появилась\nв TRASSIR?\n01\nДоступность камеры\n↗\n02\nНастройки ONVIF\n↗\n03\nРучное подключение\n↗\n04\nИзображение и запись\n↗\nЧитать материал\n↗\n03\nЧасть большой картины\nЭтот ответ — шаг вашей программы\n↗\nСНАЧАЛА ПОНЯТЬ. ПОТОМ ПРИМЕНИТЬ.\n↓\nДЛЯ ИНЖЕНЕРОВ И ТЕХНИЧЕСКИХ СПЕЦИАЛИСТОВ\nОт рабочего вопроса — к системным знаниям ↓",
-    "sha256": "1ac47c77e42e65fb0868724b31ea0b8cbf051f4150dfb79407f978c21c782a84"
+    "sha256": "a1c1fd579cc5e0126f806e603b3aaa3aa3f3c5ca2c079c5cb702bf44fe5bdf59",
+    "kind": "landing",
+    "variant": "mobile",
+    "dpr": 2,
+    "before": {
+      "width": 780,
+      "height": 2034
+    },
+    "fields": [
+      {
+        "region": "hero-copy",
+        "left": 20,
+        "right": 20,
+        "top": 34,
+        "bottom": 667.671875
+      },
+      {
+        "region": "hero-visual",
+        "left": 20,
+        "right": 20,
+        "top": 380.734375,
+        "bottom": 108.875
+      },
+      {
+        "region": "hero-bottom",
+        "left": 20,
+        "right": 20,
+        "top": 939.53125,
+        "bottom": 24
+      }
+    ],
+    "boundary": "Whole native region at integer origin; source page fields retained; no image/text painting.",
+    "source": "http://127.0.0.1:4475/prototypes/learn-landing/?lang=ru",
+    "crop": "Whole native region at integer origin; source page fields retained; no image/text painting.",
+    "fixture": "Native page fields; assessment intro / complete landing hero"
   },
   {
     "id": "trust-mobile",

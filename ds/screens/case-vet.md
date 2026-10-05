@@ -1,3 +1,7 @@
+## Выравнивание обложки и ленты · 05.10.2026
+
+Строка «Марсик · демонстрационный визит» стоит на одной вертикали с заголовком и подписями ролей. Вложенные поля и отдельная подложка строки убраны. Подпись объясняет действия: врач сохраняет назначение, регистратура выставляет счёт, владелец получает выписку; текст выровнен влево, без сложения margin с gap родителя. Все подложки ленты draft/saved/publication получают одну высоту по самому высокому целому кадру; подписи тоже выровнены, изображения не обрезаются.
+
 ## H · текущий художественный delta · 04.10.2026
 
 **H-ART-03, актуально:** VetStage replaces large30/side-screen in Home/cover with native Marsik trace, reception invoice and owner publication. Saved09:12/published09:13 link the three views; incomplete clinical record is not named a completed visit.30s is a modest original constraint. Desktop two levels, mobile ordered handoff.

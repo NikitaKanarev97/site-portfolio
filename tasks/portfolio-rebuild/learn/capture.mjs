@@ -3,6 +3,7 @@ import {mkdir,readFile,writeFile,copyFile,readdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import path from 'node:path';
 import sharp from 'sharp';
+import {isolateAssessment, isolateLanding} from '../../../scripts/lib/learn-frame-fields.mjs';
 const require=createRequire('D:/Claude-projects/b2b-dssl/package.json');
 const {chromium}=require('playwright');
 const dir=path.resolve('public/media/rebuild/learn');
@@ -53,10 +54,10 @@ for(const width of [1440,390]){
  await snap(p,'cover-programme-'+variant,{locator:passport});
  const ready=JSON.parse(await readFile('D:/Claude-projects/learn/audit/product-polish/evidence/07/state-marina-ready.json','utf8'));ready.toasts=[];
  const a=await page(width,ready);await go(a,'/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=en');
- await snap(a,'assessment-'+variant,{fixture:'state-marina-ready; neutral assessment intro, no attempt result'});
+ const rules=a.locator('div[class*="_card_"]').filter({has:a.getByText('Attempts remaining',{exact:true})}).first();
+ await snap(a,'assessment-'+variant,{locator:await isolateAssessment(a,rules),fixture:'state-marina-ready; neutral assessment intro with native fields, no attempt result'});
  await go(p,'/prototypes/learn-landing/?lang=en');
- if(width<768){await snap(p,'landing-'+variant,{locator:p.locator('.ed-hero').first()});}
- else await snap(p,'landing-'+variant);
+ await snap(p,'landing-'+variant,{locator:await isolateLanding(p)});
  await p.context().close();await ctxPage.context().close();await a.context().close();
 }
 // Card fixtures are captured by capture-cards.mjs at the final native widths.

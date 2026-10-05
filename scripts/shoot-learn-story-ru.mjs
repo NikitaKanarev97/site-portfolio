@@ -1,6 +1,7 @@
 /** Native Russian media for every active Learn case fragment. */
 import {createRequire}from'node:module';import{mkdir,readFile,writeFile,copyFile}from'node:fs/promises';
 import{createHash}from'node:crypto';import assert from'node:assert/strict';import sharp from'sharp';
+import {isolateAssessment, isolateLanding} from './lib/learn-frame-fields.mjs';
 const{chromium}=createRequire('D:/Claude-projects/Agent-ops-console/package.json')('playwright');
 const origin=process.argv[2]??'http://127.0.0.1:4475',catalog=process.argv[3]??'http://127.0.0.1:4362';
 const dir='public/media/rebuild/learn-ru';await mkdir(dir,{recursive:true});
@@ -35,13 +36,10 @@ for(const width of[1440,390]){
  await p.close();await player.close();
  const assessment=await page(width===1440?1024:width,ready);
  await go(assessment,'/prototypes/learn/assessment/intro?trajectoryId=proekt');
- const title=await assessment.locator('h1').boundingBox();
  const rules=assessment.locator('div[class*="_card_"]').filter({has:assessment.getByText('Попыток осталось',{exact:true})}).first();
- const rb=await rules.boundingBox();assert(rb,'Assessment rules');
- const x=width===1440?0:Math.min(title.x,rb.x),right=width===1440?1024:Math.max(title.x+title.width,rb.x+rb.width);
- await save(assessment,'assessment-'+v,null,{x,y:title.y,width:right-x,height:rb.y+rb.height-title.y});await assessment.close();
+ await save(assessment,'assessment-'+v,await isolateAssessment(assessment,rules));await assessment.close();
  const landing=await page(width);await go(landing,'/prototypes/learn-landing/');
- await save(landing,'landing-'+v,landing.locator('.ed-hero').first());await landing.close();
+ await save(landing,'landing-'+v,await isolateLanding(landing));await landing.close();
 }
 const compact=await page(320,one);await go(compact,'/prototypes/learn/material/onvif-not-found');
 const trust=compact.locator('div[class*="_root_"]').filter({has:compact.locator('span[class*="_version_"]')}).last();

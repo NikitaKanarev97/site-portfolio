@@ -2,6 +2,7 @@ import {createRequire} from 'node:module';
 import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import sharp from 'sharp';
+import {isolateAssessment} from '../../../scripts/lib/learn-frame-fields.mjs';
 const {chromium}=createRequire('D:/Claude-projects/b2b-dssl/package.json')('playwright');
 const browser=await chromium.launch({headless:true,executablePath:'C:/Users/kanar/AppData/Local/ms-playwright/chromium-1243/chrome-win64/chrome.exe'});
 const dir='public/media/rebuild/learn/';
@@ -38,10 +39,9 @@ for(const width of [1024,390]){
  const state=JSON.parse(await readFile('D:/Claude-projects/learn/audit/product-polish/evidence/07/state-marina-ready.json','utf8'));state.toasts=[];
  await ctx.addInitScript(s=>sessionStorage.setItem('learn-prototype-v1',JSON.stringify(s)),state);const p=await ctx.newPage();
  await p.goto('http://127.0.0.1:4362/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=en',{waitUntil:'networkidle'});await p.evaluate(()=>document.fonts.ready);
- const title=await p.locator('h1').boundingBox();
- const rules=await p.locator('div[class*="_card_"]').filter({has:p.getByText('Attempts remaining',{exact:true})}).first().boundingBox();
- const x=width===1024?0:Math.min(title.x,rules.x),right=width===1024?width:Math.max(title.x+title.width,rules.x+rules.width),bottom=rules.y+rules.height;
- await save('assessment-'+(width===1024?'desktop':'mobile'),await p.screenshot({clip:{x,y:title.y,width:right-x,height:bottom-title.y}}),p.url(),{crop:'Whole title, lead, notice and rules. Desktop includes the native symmetric page gutters. Ends before the additional-bank section; no action is clipped.',viewport:p.viewportSize(),fixture:'state-marina-ready; introduction only, no result.'});
+ const rules=p.locator('div[class*="_card_"]').filter({has:p.getByText('Attempts remaining',{exact:true})}).first();
+ const frame=await isolateAssessment(p,rules);
+ await save('assessment-'+(width===1024?'desktop':'mobile'),await frame.screenshot(),p.url(),{crop:'Whole title, lead, notice and rules with native page fields on all four sides. Integer origin. Ends before the additional-bank section.',viewport:p.viewportSize(),fixture:'state-marina-ready; introduction only, no result.'});
  await ctx.close();
 }
 // Compose only captured semantic regions, at one original scale. No UI is redrawn.

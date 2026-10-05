@@ -321,34 +321,97 @@
   {
     "id": "assessment-desktop",
     "file": "public/media/rebuild/learn/assessment-desktop.webp",
-    "source": "http://127.0.0.1:4362/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=en",
+    "source": "http://127.0.0.1:4475/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=en",
     "selection": "Whole introduction and rules with the native page padding above and below.",
     "viewport": {
-      "width": 1440,
-      "height": 1200
+      "width": 1024,
+      "height": 1000
     },
     "dpr": 2,
-    "width": 2880,
-    "height": 2256,
+    "width": 2048,
+    "height": 1670,
     "alpha": false,
-    "sha256": "046d3a22ccd41d26aeeb910e99f5ec14cf9f4140745dc9ea25d7031a5a7e5e10",
-    "locale": "en"
+    "sha256": "c5d4e34bfcb30a97c90782f344980b9b110bf09ed71799746807152b0b3083b4",
+    "locale": "en",
+    "lang": "en",
+    "kind": "assessment",
+    "variant": "desktop",
+    "url": "http://127.0.0.1:4475/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=en",
+    "before": {
+      "width": 2048,
+      "height": 1670
+    },
+    "fields": [
+      {
+        "region": "heading",
+        "left": 152,
+        "right": 152,
+        "top": 48,
+        "bottom": 700.375
+      },
+      {
+        "region": "_card_18whj_33",
+        "left": 152,
+        "right": 152,
+        "top": 419.75,
+        "bottom": 48
+      }
+    ],
+    "text": "Assessment · Designing a system for 64+ cameras\n\nAn assessment under the rules below. This demonstrates assessment in the current prototype.\n\nBefore you start\nAn attempt is used when you select Start assessment. Refreshing or signing out does not pause the timer. Answers are locked after submission.\nTime\n30 minutes\nAttempts remaining\n2 of 2\nPass mark\n16 correct out of 20\nBefore submission\nYou can skip questions and change answers\nEligibility\nComplete all path resources and verify your company\nAfter an unsuccessful attempt\nRetry in 24 hr if you have attempts remaining",
+    "boundary": "Whole native region at integer origin; source page fields retained; no image/text painting.",
+    "crop": "Whole native region at integer origin; source page fields retained; no image/text painting.",
+    "fixture": "Native page fields; assessment intro / complete landing hero"
   },
   {
     "id": "landing-desktop",
     "file": "public/media/rebuild/learn/landing-desktop.webp",
-    "source": "http://127.0.0.1:4362/prototypes/learn-landing/en/?lang=en",
+    "source": "http://127.0.0.1:4475/prototypes/learn-landing/en/?lang=en",
     "selection": "Whole landing introduction including navigation and bottom rule; ends before the next section.",
     "viewport": {
       "width": 1440,
-      "height": 1200
+      "height": 1000
     },
     "dpr": 2,
     "width": 2880,
-    "height": 1738,
+    "height": 1548,
     "alpha": false,
-    "sha256": "5fbe99c4c9c9e23b1c322e84214a5611e10cbb8e8856f801f33ce7dd9d482cac",
-    "locale": "en"
+    "sha256": "ad15b77bdb58363229f808cc49e182c6574c97690510c2b9d84f8e49e1c484ec",
+    "locale": "en",
+    "lang": "en",
+    "kind": "landing",
+    "variant": "desktop",
+    "url": "http://127.0.0.1:4475/prototypes/learn-landing/en/?lang=en",
+    "before": {
+      "width": 2880,
+      "height": 1548
+    },
+    "fields": [
+      {
+        "region": "hero-copy",
+        "left": 120,
+        "right": 749.421875,
+        "top": 119.4375,
+        "bottom": 217.5
+      },
+      {
+        "region": "hero-visual",
+        "left": 726.578125,
+        "right": 120,
+        "top": 54,
+        "bottom": 152.046875
+      },
+      {
+        "region": "hero-bottom",
+        "left": 120,
+        "right": 120,
+        "top": 665.859375,
+        "bottom": 30
+      }
+    ],
+    "text": "PRACTICAL KNOWLEDGE / TRASSIR\nKnow how.\nMake it work.\n\nFrom camera connection to site handover.\nLearning for engineers who want to\nunderstand and put it into practice.\n\nOpen the guide\n↗\nExplore the program\n↓\n\nThe complete guide. No sign-up.\n\nOPEN GUIDE\n01 / 03\nTRASSIR OS commissioning\n10 guides + assessment\nReference library\n7 min\n\nCAMERA CONNECTION · ONVIF\n\nCamera missing\nin TRASSIR?\n01\nCamera connectivity\n↗\n02\nONVIF settings\n↗\n03\nManual connection\n↗\n04\nVideo and recording\n↗\nRead the guide\n↗\n03\nPart of the bigger picture\nThis answer is a step in your program\n↗\nUNDERSTAND FIRST. THEN PUT IT TO WORK.\n↓\nFOR ENGINEERS AND TECHNICAL SPECIALISTS\nFrom a work question to a solid foundation ↓",
+    "boundary": "Whole native region at integer origin; source page fields retained; no image/text painting.",
+    "crop": "Whole native region at integer origin; source page fields retained; no image/text painting.",
+    "fixture": "Native page fields; assessment intro / complete landing hero"
   },
   {
     "id": "cover-answer-mobile",
@@ -433,34 +496,97 @@
   {
     "id": "assessment-mobile",
     "file": "public/media/rebuild/learn/assessment-mobile.webp",
-    "source": "http://127.0.0.1:4362/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=en",
+    "source": "http://127.0.0.1:4475/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=en",
     "selection": "Whole introduction and rules with the native page padding above and below.",
     "viewport": {
       "width": 390,
-      "height": 1200
+      "height": 1000
     },
     "dpr": 2,
     "width": 780,
     "height": 2618,
     "alpha": false,
     "sha256": "d8e819313560e5447fb80684915656b8cc4773b42a0b905a962945aebdc0d181",
-    "locale": "en"
+    "locale": "en",
+    "lang": "en",
+    "kind": "assessment",
+    "variant": "mobile",
+    "url": "http://127.0.0.1:4475/prototypes/learn/assessment/intro?trajectoryId=proekt&lang=en",
+    "before": {
+      "width": 780,
+      "height": 2618
+    },
+    "fields": [
+      {
+        "region": "heading",
+        "left": 16,
+        "right": 16,
+        "top": 32,
+        "bottom": 1212.0625
+      },
+      {
+        "region": "_card_18whj_33",
+        "left": 16,
+        "right": 16,
+        "top": 453.84375,
+        "bottom": 32
+      }
+    ],
+    "text": "Assessment · Designing a system for 64+ cameras\n\nAn assessment under the rules below. This demonstrates assessment in the current prototype.\n\nBefore you start\nAn attempt is used when you select Start assessment. Refreshing or signing out does not pause the timer. Answers are locked after submission.\nTime\n30 minutes\nAttempts remaining\n2 of 2\nPass mark\n16 correct out of 20\nBefore submission\nYou can skip questions and change answers\nEligibility\nComplete all path resources and verify your company\nAfter an unsuccessful attempt\nRetry in 24 hr if you have attempts remaining",
+    "boundary": "Whole native region at integer origin; source page fields retained; no image/text painting.",
+    "crop": "Whole native region at integer origin; source page fields retained; no image/text painting.",
+    "fixture": "Native page fields; assessment intro / complete landing hero"
   },
   {
     "id": "landing-mobile",
     "file": "public/media/rebuild/learn/landing-mobile.webp",
-    "source": "http://127.0.0.1:4362/prototypes/learn-landing/en/?lang=en",
+    "source": "http://127.0.0.1:4475/prototypes/learn-landing/en/?lang=en",
     "selection": "Whole landing introduction including navigation and bottom rule; ends before the next section.",
     "viewport": {
       "width": 390,
-      "height": 1200
+      "height": 1000
     },
     "dpr": 2,
     "width": 780,
-    "height": 2212,
+    "height": 2034,
     "alpha": false,
-    "sha256": "1d9052e7fb9f2b126ccff64e970c29575b924e4f6f174759d814218834e44662",
-    "locale": "en"
+    "sha256": "b692e9614aaa172b8c7817e7e3b351266379c72ea40372bc4f9c90d510f8e259",
+    "locale": "en",
+    "lang": "en",
+    "kind": "landing",
+    "variant": "mobile",
+    "url": "http://127.0.0.1:4475/prototypes/learn-landing/en/?lang=en",
+    "before": {
+      "width": 780,
+      "height": 2034
+    },
+    "fields": [
+      {
+        "region": "hero-copy",
+        "left": 20,
+        "right": 20,
+        "top": 34,
+        "bottom": 667.671875
+      },
+      {
+        "region": "hero-visual",
+        "left": 20,
+        "right": 20,
+        "top": 380.734375,
+        "bottom": 108.875
+      },
+      {
+        "region": "hero-bottom",
+        "left": 20,
+        "right": 20,
+        "top": 939.53125,
+        "bottom": 24
+      }
+    ],
+    "text": "PRACTICAL KNOWLEDGE / TRASSIR\nKnow how.\nMake it work.\n\nFrom camera connection to site handover.\nLearning for engineers who want to understand and put it into practice.\n\nOpen the guide\n↗\nExplore the program\n↓\n\nThe complete guide. No sign-up.\n\nOPEN GUIDE\n01 / 03\nTRASSIR OS commissioning\n10 guides + assessment\nReference library\n7 min\n\nCAMERA CONNECTION · ONVIF\n\nCamera missing\nin TRASSIR?\n01\nCamera connectivity\n↗\n02\nONVIF settings\n↗\n03\nManual connection\n↗\n04\nVideo and recording\n↗\nRead the guide\n↗\n03\nPart of the bigger picture\nThis answer is a step in your program\n↗\nUNDERSTAND FIRST. THEN PUT IT TO WORK.\n↓\nFOR ENGINEERS AND TECHNICAL SPECIALISTS\nFrom a work question to a solid foundation ↓",
+    "boundary": "Whole native region at integer origin; source page fields retained; no image/text painting.",
+    "crop": "Whole native region at integer origin; source page fields retained; no image/text painting.",
+    "fixture": "Native page fields; assessment intro / complete landing hero"
   },
   {
     "id": "cover-desktop",

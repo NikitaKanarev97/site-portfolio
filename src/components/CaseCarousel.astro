@@ -158,6 +158,7 @@ const {
      страницы, на месте четвёртого слайда, и дают ей горизонтальную прокрутку. */
   .case-carousel__track {
     position: relative;
+    container-type: inline-size;
     margin-inline-end: calc(-1 * var(--carousel-gutter));
     padding-inline-end: var(--carousel-gutter);
     overflow-x: auto;
@@ -171,9 +172,15 @@ const {
     display: none;
   }
 
+  /* Shared rows keep every plate and every caption aligned. Intrinsic image
+     height sets the first row; neither a fixed height nor a crop is needed. */
   .case-carousel__list {
-    display: flex;
-    gap: var(--gutter);
+    display: grid;
+    inline-size: max-content;
+    grid-auto-flow: column;
+    grid-auto-columns: 88cqw;
+    grid-template-rows: auto auto;
+    column-gap: var(--gutter);
     margin: 0;
     padding: 0;
     list-style: none;
@@ -182,23 +189,28 @@ const {
   /* min-inline-size: 0 — схема в слайде прокручивается в своей области, а
      не растягивает слайд до натуральной ширины SVG. */
   .case-carousel__slide {
-    flex: 0 0 88%;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 2;
     min-inline-size: 0;
     scroll-snap-align: start;
   }
-  .case-carousel--phones .case-carousel__slide { flex-basis: min(88%, calc(var(--space-48) * 2 + var(--space-16))); }
+  .case-carousel--phones .case-carousel__list { grid-auto-columns: min(88cqw, calc(var(--space-48) * 2 + var(--space-16))); }
   .case-carousel--phones { max-inline-size: calc(var(--space-48) * 4 + var(--space-16)); margin-inline: auto; }
   .case-carousel--phones .case-carousel__track { margin-inline-end: 0; padding-inline-end: 0; }
   .case-carousel--phones .case-carousel__figure :global(.case-plate) { padding: var(--space-4); }
 
   @media (--bp-md) {
-    .case-carousel__slide {
-      flex-basis: 78%;
+    .case-carousel__list {
+      grid-auto-columns: 78cqw;
     }
   }
 
   .case-carousel__figure {
     margin: 0;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 2;
   }
 
   .case-carousel__figure :global(.case-carousel__screen),

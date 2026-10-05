@@ -1,3 +1,7 @@
+## Поля документальных кадров · 05.10.2026
+
+Assessment и Landing EN/RU сняты целыми native DOM-областями с полями исходной страницы. У assessment сохранены PageShell gutters и верх/низ 32 px на mobile, 48 px на 1024 px; белая карточка не касается края. У landing сохранены поля wrap (20 px на mobile, 120 px на 1440 px), целый hero-bottom и нижний интервал. Внешний CaseScreen не заменяет внутренние поля кадра. Повторная съёмка: `node scripts/shoot-learn-frame-fields.mjs`; размеры, SHA256 и четыре поля каждой области — `tasks/portfolio-rebuild/integration/learn-frame-fields-2026-10-05.json`.
+
 ## H · текущий художественный delta · 04.10.2026
 
 **05.10.2026 · локализация native кадров.** RU LearnStage использует пять снимков `art-direction/learn-ru`: desktop/mobile материал и паспорт, текущий ресурс 03. RU story выбирает `rebuild/learn-ru`: материал, плеер, завершение, зачёт, лендинг и компоненты в обеих ширинах. Архивный русский каталог общий. Скрипты `shoot-learn-stage.mjs` и `shoot-learn-story-ru.mjs` снимают реальное приложение с `lang=ru` и native Card fixtures. Текст в изображениях не подменяется. Старые `case-learn-ru` не использовались новой композицией: её общая папка `rebuild/learn` и была вторым источником английских кадров.

@@ -10,7 +10,7 @@ if (!step || step.type!=='steps') throw new Error('Vet handoff is required');
 const [trace,invoice,owner] = step.payload.items;
 ---
 <div class="vet-stage" data-motion-group data-motion-stagger="tight">
-  <div class="vet-stage__route ds-meta-xs"><span>{ru?'Марсик · один визит':'Marsik · one visit'}</span><span>{ru?'Сохранено 09:12 → опубликовано 09:13':'Saved 09:12 → published 09:13'}</span></div>
+  <div class="vet-stage__route ds-meta-xs"><span>{ru?'Марсик · демонстрационный визит':'Marsik · demo visit'}</span><span>{ru?'Сохранено 09:12 → опубликовано 09:13':'Saved 09:12 → published 09:13'}</span></div>
   <figure class="vet-stage__trace"><figcaption class="ds-meta-xs">01 · {trace.label}</figcaption><CaseScreen item={{...trace.shot, nativeWidth: undefined}} loading={loading} href={href} linkLabel={linkLabel} /></figure>
   <figure class="vet-stage__invoice"><figcaption class="ds-meta-xs">02 · {invoice.label}</figcaption><CaseScreen item={{...invoice.shot, nativeWidth: undefined}} loading={loading} href={href} linkLabel={linkLabel} /></figure>
   <figure class="vet-stage__owner"><figcaption class="ds-meta-xs">03 · {owner.label}</figcaption><CaseScreen item={{...owner.shot, nativeWidth: undefined}} loading={loading} href={href} linkLabel={linkLabel} /></figure>
@@ -18,7 +18,7 @@ const [trace,invoice,owner] = step.payload.items;
 </div>
 <style>
   .vet-stage { display:grid; gap:var(--space-6); min-inline-size:0; }
-  .vet-stage__route { display:flex; flex-wrap:wrap; justify-content:space-between; gap:var(--space-3) var(--space-6); padding:var(--frame-inset); border-radius:var(--radius-lg); background:var(--surface-cover-vet); color:var(--text-default); }
+  .vet-stage__route { display:flex; flex-wrap:wrap; justify-content:space-between; gap:var(--space-3) var(--space-6); color:var(--text-default); }
   .vet-stage figure { margin:0; min-inline-size:0; display:grid; align-content:start; gap:var(--space-3); }
   .vet-stage__owner { inline-size:100%; }
   .vet-stage__constraint { margin:0; color:var(--text-subtle); }
