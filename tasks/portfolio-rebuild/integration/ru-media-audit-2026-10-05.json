@@ -1,0 +1,229 @@
+{
+  "date": "2026-10-05",
+  "pages": [
+    {
+      "route": "/ru/",
+      "width": 1440,
+      "images": 16,
+      "specimens": 0,
+      "failures": []
+    },
+    {
+      "route": "/ru/about/",
+      "width": 1440,
+      "images": 1,
+      "specimens": 0,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/agent-ops-console/",
+      "width": 1440,
+      "images": 7,
+      "specimens": 0,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 1440,
+      "images": 19,
+      "specimens": 4,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 1440,
+      "images": 15,
+      "specimens": 4,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/vet-clinic/",
+      "width": 1440,
+      "images": 10,
+      "specimens": 0,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/pawly/",
+      "width": 1440,
+      "images": 20,
+      "specimens": 3,
+      "failures": []
+    },
+    {
+      "route": "/ru/",
+      "width": 820,
+      "images": 16,
+      "specimens": 0,
+      "failures": []
+    },
+    {
+      "route": "/ru/about/",
+      "width": 820,
+      "images": 1,
+      "specimens": 0,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/agent-ops-console/",
+      "width": 820,
+      "images": 7,
+      "specimens": 0,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 820,
+      "images": 19,
+      "specimens": 4,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 820,
+      "images": 15,
+      "specimens": 4,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/vet-clinic/",
+      "width": 820,
+      "images": 10,
+      "specimens": 0,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/pawly/",
+      "width": 820,
+      "images": 20,
+      "specimens": 3,
+      "failures": []
+    },
+    {
+      "route": "/ru/",
+      "width": 390,
+      "images": 16,
+      "specimens": 0,
+      "failures": []
+    },
+    {
+      "route": "/ru/about/",
+      "width": 390,
+      "images": 1,
+      "specimens": 0,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/agent-ops-console/",
+      "width": 390,
+      "images": 6,
+      "specimens": 0,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 390,
+      "images": 19,
+      "specimens": 4,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 390,
+      "images": 15,
+      "specimens": 4,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/vet-clinic/",
+      "width": 390,
+      "images": 10,
+      "specimens": 0,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/pawly/",
+      "width": 390,
+      "images": 20,
+      "specimens": 3,
+      "failures": []
+    },
+    {
+      "route": "/ru/",
+      "width": 360,
+      "images": 16,
+      "specimens": 0,
+      "failures": []
+    },
+    {
+      "route": "/ru/about/",
+      "width": 360,
+      "images": 1,
+      "specimens": 0,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/agent-ops-console/",
+      "width": 360,
+      "images": 6,
+      "specimens": 0,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "width": 360,
+      "images": 19,
+      "specimens": 4,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/learn/",
+      "width": 360,
+      "images": 15,
+      "specimens": 4,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/vet-clinic/",
+      "width": 360,
+      "images": 10,
+      "specimens": 0,
+      "failures": []
+    },
+    {
+      "route": "/ru/work/pawly/",
+      "width": 360,
+      "images": 20,
+      "specimens": 3,
+      "failures": []
+    }
+  ],
+  "responsiveSources": 112,
+  "failures": [],
+  "nativeContours": [
+    {
+      "engine": "chromium",
+      "assets": 28,
+      "pages": 12,
+      "failures": []
+    },
+    {
+      "engine": "webkit",
+      "assets": 28,
+      "pages": 12,
+      "failures": []
+    }
+  ],
+  "checks": {
+    "astroCheck": "0 errors, 0 warnings",
+    "build": "36 pages built",
+    "scopedCss": "passed",
+    "harmony": "passed at 360/390/820/1440"
+  },
+  "corrections": [
+    "One specimen inset; no default h5 margins or doubled native fields",
+    "Zoom action uses the existing link gap",
+    "Vet handoff phone plate aligned left, with flow-group below text",
+    "Whole Pawly profile with footer in normal flow; no divider through reviews"
+  ]
+}

@@ -58,7 +58,8 @@ const t = (value: { en: string; ru: string }) => value[lang];
   .case-specimen__swatch { display: flex; flex-direction: column; gap: var(--space-1); }
   .case-specimen__paint { block-size: var(--space-6); border: var(--border-width) solid var(--border-default); }
   .case-specimen__sets { display: grid; align-items: start; gap: var(--space-6); min-inline-size: 0; }
-  .case-specimen__set { min-inline-size: 0; padding: var(--space-4); border: var(--border-width) dashed var(--diagram-proto); border-radius: var(--radius-lg); }
+  .case-specimen__set { min-inline-size: 0; padding: var(--space-6); border: var(--border-width) dashed var(--diagram-proto); border-radius: var(--radius-lg); }
+  .case-specimen__set h5 { margin: 0; }
   .case-specimen__group-title { margin: 0; color: var(--text-muted); }
   .case-specimen__states { display: grid; gap: var(--space-6); padding: 0; margin: var(--flow-pair) 0 0; list-style: none; }
   .case-specimen__states > li { min-inline-size: 0; }
@@ -72,7 +73,7 @@ const t = (value: { en: string; ru: string }) => value[lang];
     .case-specimen__type tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--space-3); padding-block: var(--space-2); border-block-end: var(--border-width) solid var(--border-default); align-items: center; }
     .case-specimen__type th, .case-specimen__type td { border: 0; padding: 0; grid-column: 2; }
     .case-specimen__type .case-specimen__sample { grid-column: 1; grid-row: 1 / 4; }
-    .case-specimen__set { padding: var(--space-2); }
+    .case-specimen__set { padding: var(--space-4); }
   }
   @media (--bp-md) {
     .case-specimen__sets { grid-template-columns: repeat(2, minmax(0, 1fr)); }

@@ -29,7 +29,7 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
 
 <div
   class:list={['case-screen', `case-screen--${item.device}`, native && 'case-screen--native', item.srcNarrow && narrowAt === 'lg' && 'case-screen--narrow-tablet', className]}
-  style={`--ar: ${ar.toFixed(4)}; --ar-narrow: ${narrowSize ? narrowSize.width / narrowSize.height : ar}; ${item.nativeWidth ? `max-inline-size:calc(${item.nativeWidth}px + var(--frame-inset) * 2);` : ''}`}
+  style={`--ar: ${ar.toFixed(4)}; --ar-narrow: ${narrowSize ? narrowSize.width / narrowSize.height : ar}; ${item.nativeWidth ? `max-inline-size:calc(${item.nativeWidth}px + ${native ? '0px' : 'var(--frame-inset) * 2'});` : ''}`}
   data-motion={!native && !href ? 'fade-image' : undefined}
 >
   {item.video ? (
@@ -74,11 +74,11 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
   .case-screen__media { position: relative; aspect-ratio: var(--ar-narrow); }
   .case-screen__media picture { display: contents; }
   .case-screen img { display: block; inline-size: 100%; block-size: auto; object-fit: contain; }
-  .case-screen__text { display: grid; gap: var(--space-2); padding-block-start: var(--space-3); }
+  .case-screen__text { display: grid; gap: var(--space-2); }
   .case-screen__text p { margin: 0; }
   .case-screen__action { display: flex; justify-content: space-between; gap: var(--space-3); color: var(--text-subtle); }
   .case-screen .case-screen__media :global(.media-frame--natural .media-frame__frame) { padding: 0; background: transparent; box-shadow: none; border: 0; }
-  .case-screen--native { background: transparent; box-shadow: none; color: inherit; }
+  .case-screen--native { padding: 0; background: transparent; box-shadow: none; color: inherit; }
   .case-screen--native .case-screen__action { color: inherit; }
   @media (--bp-md) {
     .case-screen__media { aspect-ratio: var(--ar); }

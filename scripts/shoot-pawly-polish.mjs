@@ -26,7 +26,17 @@ async function shoot(page, name, dir, locale) {
   if (name === 'walker-profile') await page.locator('[data-track="walker-confirm"]').waitFor();
   await page.evaluate(async () => { scrollTo(0, 0); await document.fonts.ready; await Promise.all([...document.images].map(i => i.decode().catch(() => {}))); });
   await page.waitForTimeout(300);
-  const png = await page.screenshot();
+  let png;
+  if (name === 'walker-profile') {
+    const footer = page.locator('article > footer');
+    const style = await footer.getAttribute('style');
+    await footer.evaluate(node => { node.style.position = 'static'; node.style.borderTop = '0'; });
+    try {
+      png = await page.locator('article').first().screenshot({ animations: 'disabled' });
+    } finally {
+      await footer.evaluate((node, original) => original === null ? node.removeAttribute('style') : node.setAttribute('style', original), style);
+    }
+  } else png = await page.screenshot();
   await fs.writeFile(path.join(evidence, `${name}-${locale}.png`), png);
   const file = path.join(dir, `${name}.webp`);
   await sharp(png).webp({ quality: 90 }).toFile(file);

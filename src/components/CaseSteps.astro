@@ -70,7 +70,7 @@ const pad = (n: number) => String(n).padStart(2, '0');
   @media (--bp-lg) {
     .case-steps--handoff .case-steps__list { grid-template-columns: 3fr 2fr; gap: var(--flow-block) var(--space-12); align-items: start; }
     .case-steps--handoff .case-steps__step:first-child { grid-column: 1 / -1; }
-    .case-steps--handoff .case-steps__step:last-child .case-steps__shot { max-inline-size: calc(var(--space-48) * 2); margin-inline: auto; }
+    .case-steps--handoff .case-steps__step:last-child .case-steps__shot { max-inline-size: calc(var(--space-48) * 2); margin-inline: 0; }
   }
   .case-steps__label {
     margin: 0;
@@ -304,4 +304,7 @@ const pad = (n: number) => String(n).padStart(2, '0');
       margin-block-start: var(--flow-pair);
     }
   }
+
+  /* The handoff keeps text above every frame, including wide viewports. */
+  .case-steps--handoff .case-steps__step .case-steps__shot { margin-block-start: var(--flow-group); }
 </style>
