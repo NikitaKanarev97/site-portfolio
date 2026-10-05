@@ -93,6 +93,7 @@
  */
 import { px } from '../lib/tokens.ts';
 import { frameSize } from '../lib/media.ts';
+import ScreenSurface from './ScreenSurface.astro';
 import { site } from '../copy/site.ts';
 import { siteRu } from '../copy/ru/site.ts';
 
@@ -199,6 +200,10 @@ const wrapperProps = zoomable
  * Граница на единицу меньше bp-md: диапазоны не пересекаются.
  */
 const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
+if (zoomable) {
+  const zoomSize = await frameSize(zoomSrc ?? src);
+  Object.assign(wrapperProps, { 'data-zoom-surface': zoomSize?.surface });
+}
 ---
 
 <figure
@@ -218,6 +223,7 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
 >
   <div class="media-frame__frame">
     <Wrapper {...wrapperProps}>
+    <ScreenSurface src={src} srcNarrow={srcMobile} extend={ratio === 'natural' && !framed}>
     <div class="media-frame__mask ds-media-mask">
       {
         video ? (
@@ -287,6 +293,7 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
         )
       }
     </div>
+    </ScreenSurface>
     </Wrapper>
   </div>
 
@@ -314,7 +321,7 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
   .media-frame__mask {
     overflow: hidden;
     background: var(--surface-media);
-    border-radius: var(--radius-none);
+    border-radius: var(--radius-media);
   }
 
   /* Соотношение держит рамка, а не содержимое: пустого места
@@ -403,7 +410,7 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
   }
 
   /* Art direction: соотношение под bp-md перебивает основное. */
-  .media-frame--natural .media-frame__mask { border-radius: var(--radius-none); background: transparent; }
+  .media-frame--natural .media-frame__mask { border-radius: var(--radius-screen); background: transparent; }
 
   @media (--below-bp-md) {
     .media-frame--mobile-wide .media-frame__mask {

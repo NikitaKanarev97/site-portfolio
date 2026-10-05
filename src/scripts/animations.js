@@ -514,9 +514,11 @@ function buildCaseScenes(root, settled = false) {
           const stacked = getComputedStyle(step).display === 'flex';
           const space = step.clientHeight - (stacked ? text.offsetHeight : 0) - parseFloat(getComputedStyle(shot).marginTop)
             - (caption ? caption.offsetHeight + parseFloat(getComputedStyle(caption).marginTop) : 0) - padding(plate).y;
-          const chrome = screen.offsetHeight - media.offsetHeight;
+          const surface = media.querySelector('.screen-surface__edge');
+          const edge = surface ? parseFloat(getComputedStyle(surface).paddingTop) * 2 : 0;
+          const chrome = screen.offsetHeight - media.offsetHeight + edge;
           const ratio = parseFloat(getComputedStyle(screen).getPropertyValue('--ar'));
-          screen.style.setProperty('--focus-screen-width', `${Math.max(0, (space - chrome) * ratio + padding(screen).x)}px`);
+          screen.style.setProperty('--focus-screen-width', `${Math.max(0, (space - chrome) * ratio + padding(screen).x + edge)}px`);
         });
       };
       measure();

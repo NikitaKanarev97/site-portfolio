@@ -69,8 +69,10 @@ const label = (block: CaseStory['blocks'][number]) => block.type === 'steps' ? b
           <CaseSpecimen specimen={block.payload.specimen} tone={story.plate} lang={lang} />
         </>}
         {block.type === 'outcome' && <>
+          <div class:list={['ds-section', block.payload.presentation === 'editorial' && 'case-story__finale-body']}>
           <CaseThesis {...block.payload.result} variant={block.payload.presentation} />
           <CaseImpact outcome={block.payload} cards={block.payload.cards} quote={block.payload.quote} variant={block.payload.presentation} />
+          </div>
         </>}
       </section>
     ))}
@@ -82,8 +84,25 @@ const label = (block: CaseStory['blocks'][number]) => block.type === 'steps' ? b
   .case-story { --cover-offset: calc(var(--space-12) + var(--space-6) * 2 + var(--border-width)); }
   .case-story__estimate { max-inline-size: var(--measure-case); color: var(--text-muted); text-wrap: pretty; }
   .case-story [data-story-motion='static'] :global([data-motion]) { opacity: 1; }
-  .case-story__finale { padding: var(--space-6); background: var(--surface-cover-agent); border-radius: var(--radius-lg); --text-default: var(--text-on-inverse); --text-subtle: var(--text-on-inverse); --text-meta: var(--text-on-inverse); --text-muted: var(--text-on-inverse); }
-  .case-story__finale > :global(.case-thesis) { display: block; }
-  .case-story__finale :global(.case-thesis__text) { margin-block-start: var(--flow-text); }
-  @media (--bp-lg) { .case-story__finale { padding: var(--space-12); } }
+  .case-story__finale-body {
+    display: grid;
+    gap: var(--flow-group);
+    padding: var(--space-6);
+    background: var(--surface-cover-agent);
+    border-radius: var(--radius-media);
+    --text-default: var(--text-on-inverse);
+    --text-subtle: var(--text-on-inverse);
+    --text-meta: var(--text-on-inverse);
+    --text-muted: var(--text-on-inverse);
+  }
+  .case-story__finale-body > :global(* + *) { margin-block-start: 0; }
+  .case-story__finale-body > :global(.case-thesis) { display: block; }
+  .case-story__finale-body :global(.case-thesis__text) { margin-block-start: var(--flow-text); }
+  @media (--bp-lg) {
+    .case-story__finale-body { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--space-12); padding: var(--space-12); }
+    .case-story__finale-body > :global(.case-thesis) { grid-column: 1; }
+    .case-story__finale-body > :global(.case-impact--editorial) { display: contents; }
+    .case-story__finale-body :global(.case-impact__cards) { grid-column: 1; grid-row: 2; }
+    .case-story__finale-body :global(.case-impact__statements) { grid-column: 2; grid-row: 1 / span 2; align-self: start; }
+  }
 </style>

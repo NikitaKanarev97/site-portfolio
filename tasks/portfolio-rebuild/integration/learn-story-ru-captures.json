@@ -30,16 +30,26 @@
   {
     "id": "completion-desktop",
     "file": "public/media/rebuild/learn-ru/completion-desktop.webp",
-    "url": "http://127.0.0.1:4475/prototypes/learn/player/puskonaladka/2?lang=ru",
-    "lang": "ru",
+    "locale": "ru",
+    "source": "http://127.0.0.1:4477/prototypes/learn/player/puskonaladka/2?lang=ru",
+    "selection": "Complete final material section and full native step navigation; completion button fills its action column.",
     "viewport": {
       "width": 1440,
-      "height": 1000
+      "height": 1100
     },
+    "dpr": 2,
     "width": 1920,
-    "height": 586,
-    "text": "Если ничего не помогло\n\nСоберите ответ камеры по ONVIF через сторонний клиент и приложите его к запросу в поддержку. Это даст специалисту данные для диагностики.\n\nДалее · Настройка глубины архива на DuoStation\nЗавершить и далее",
-    "sha256": "1371259327c76373a2b68134bfde7df9cbebaa2b2c0f920390523b6f2a11b406"
+    "height": 682,
+    "text": "Если ничего не помогло\n\nСоберите ответ камеры по ONVIF через сторонний клиент и приложите его к запросу в поддержку. Это даст специалисту данные для диагностики.\n\nНазад\nДалее · Настройка глубины архива на DuoStation\nЗавершить и далее",
+    "fields": {
+      "nav": 912,
+      "action": 789.1875,
+      "button": 789.1875,
+      "left": 0,
+      "right": 0,
+      "text": "Завершить и далее"
+    },
+    "sha256": "3f784d2a53025b1a0086bca7be402b8f9c4f85dd2d6f247c1979a0e461d47ec2"
   },
   {
     "id": "assessment-desktop",
@@ -161,16 +171,26 @@
   {
     "id": "completion-mobile",
     "file": "public/media/rebuild/learn-ru/completion-mobile.webp",
-    "url": "http://127.0.0.1:4475/prototypes/learn/player/puskonaladka/2?lang=ru",
-    "lang": "ru",
+    "locale": "ru",
+    "source": "http://127.0.0.1:4477/prototypes/learn/player/puskonaladka/2?lang=ru",
+    "selection": "Complete final material section and full native step navigation; completion button fills its action column.",
     "viewport": {
       "width": 390,
-      "height": 1000
+      "height": 1100
     },
-    "width": 716,
-    "height": 806,
-    "text": "Если ничего не помогло\n\nСоберите ответ камеры по ONVIF через сторонний клиент и приложите его к запросу в поддержку. Это даст специалисту данные для диагностики.\n\nДалее · Настройка глубины архива на DuoStation\nЗавершить и далее",
-    "sha256": "3bdf026b8e282b32c62ad708204e7cdf4db36cc3c0d73b9abe36bb02deaf4f45"
+    "dpr": 2,
+    "width": 780,
+    "height": 900,
+    "text": "Если ничего не помогло\n\nСоберите ответ камеры по ONVIF через сторонний клиент и приложите его к запросу в поддержку. Это даст специалисту данные для диагностики.\n\nНазад\nДалее · Настройка глубины архива на DuoStation\nЗавершить и далее",
+    "fields": {
+      "nav": 358,
+      "action": 358,
+      "button": 358,
+      "left": 0,
+      "right": 0,
+      "text": "Завершить и далее"
+    },
+    "sha256": "332ea5f4e9b78b436f902d03a57c96751301ff22a4bebc4bc662ac8408add43b"
   },
   {
     "id": "assessment-mobile",

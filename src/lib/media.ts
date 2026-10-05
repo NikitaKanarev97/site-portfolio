@@ -42,6 +42,8 @@ export interface FrameSize {
   ratio: string;
   /** Потолок ширины в пикселях раскладки: крупнее исходник не позволяет. */
   maxWidth: string;
+  /** Documentary background sampled inside the screenshot's perimeter. */
+  surface: string;
 }
 
 /** Один файл читается один раз за сборку: на странице кейса кадров четырнадцать. */
@@ -65,11 +67,26 @@ export async function frameSize(src: string): Promise<FrameSize | null> {
     const file = path.join(process.cwd(), 'public', src.replace(/^\//, ''));
     const { width, height } = await sharp(file).metadata();
     if (width && height) {
+      const pixels = await sharp(file).resize(64, 64, { fit: 'fill', kernel: 'nearest' }).toColourspace('srgb').ensureAlpha().raw().toBuffer();
+      const colours = new Map<string, { count: number; rgb: number[] }>();
+      const sample = (x: number, y: number) => {
+        const offset = (y * 64 + x) * 4;
+        if (pixels[offset + 3] < 128) return;
+        const rgb = [pixels[offset], pixels[offset + 1], pixels[offset + 2]];
+        const key = rgb.map(value => Math.round(value / 8)).join(',');
+        const colour = colours.get(key) ?? { count: 0, rgb };
+        colour.count++;
+        colours.set(key, colour);
+      };
+      // Sample beyond capture borders and alpha corners; text is a minority.
+      for (let i = 2; i < 62; i++) { sample(i, 2); sample(i, 61); sample(2, i); sample(61, i); }
+      const dominant = [...colours.values()].sort((a, b) => b.count - a.count)[0];
       size = {
         width,
         height,
         ratio: `${width} / ${height}`,
         maxWidth: `${Math.round(width / FRAME_DENSITY)}px`,
+        surface: dominant ? `rgb(${dominant.rgb.join(' ')})` : 'transparent',
       };
     }
   } catch {

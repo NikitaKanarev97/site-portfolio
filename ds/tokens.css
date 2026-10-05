@@ -201,6 +201,9 @@
   /* Поля кадров и цветных холстов: одна шкала на всех страницах. */
   --frame-inset: var(--space-4);
   --stage-inset: var(--space-4);
+  --radius-media: var(--radius-lg);
+  --radius-screen: var(--radius-md);
+  --screen-inset: var(--space-4);
 
   /* Поверхности. Кнопка — ink, не акцент: акцент отдан ссылкам и фокусу. */
   --surface-default:              var(--gray-00);

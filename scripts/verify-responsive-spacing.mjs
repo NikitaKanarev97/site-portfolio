@@ -33,12 +33,17 @@ try {
         const stageInset = innerWidth >= 1024 ? 48 : innerWidth >= 768 ? 24 : 16;
         if (document.documentElement.scrollWidth > innerWidth + 1) failures.push(`page overflow ${document.documentElement.scrollWidth}`);
         for (const node of document.querySelectorAll('.case-screen')) {
+          if (rect(node).width <= 0) continue;
           const css = getComputedStyle(node);
           const paddings = ['Top', 'Right', 'Bottom', 'Left'].map(side => Number.parseFloat(css[`padding${side}`]));
-          if (paddings.some(value => !close(value, frameInset))) failures.push(`frame fields ${paddings}`);
+          const expected = node.classList.contains('case-screen--native') ? [0,0,0,0]
+            : [frameInset, frameInset, frameInset, frameInset + (innerWidth >= 768 && node.closest('.case-callout') ? 32 : 0)];
+          if (paddings.some((value, index) => !close(value, expected[index]))) failures.push(`frame fields ${paddings}`);
           const image = node.querySelector('img');
           const media = node.querySelector('.case-screen__media');
-          if (image && media && !close(rect(image).height, rect(media).height)) failures.push(`reserved image height ${image.getAttribute('src')}`);
+          const edge = media?.querySelector('.screen-surface__edge');
+          const inset = edge && getComputedStyle(edge).display !== 'contents' ? parseFloat(getComputedStyle(edge).paddingTop) * 2 : 0;
+          if (image && media && !close(parseFloat(getComputedStyle(image).height) + inset, parseFloat(getComputedStyle(media).height))) failures.push(`reserved image height ${image.getAttribute('src')}`);
           const text = node.querySelector('.case-screen__text');
           // Local coordinates keep the check valid for rotated Agent cover panels.
           if (text && media && (!close(media.offsetLeft, text.offsetLeft) || !close(media.offsetWidth, text.offsetWidth))) failures.push('frame/action alignment');

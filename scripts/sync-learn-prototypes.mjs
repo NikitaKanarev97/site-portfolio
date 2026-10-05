@@ -56,7 +56,8 @@ for (const match of trajectories.matchAll(/\bid:\s*['"]([^'"]+)['"][\s\S]*?units
   for (let index = 0; index < count; index++) routes.add(`/player/${id}/${index}`);
 }
 if (routes.size < 60) throw new Error('Route inventory unexpectedly small; review source extraction before publishing.');
-const shell = await readFile(path.join(product, 'index.html'), 'utf8');
+const shell = (await readFile(path.join(product, 'index.html'), 'utf8'))
+  .replace('</head>', '<link rel="stylesheet" href="/prototypes/learn-player-layout.css" /></head>');
 for (const route of routes) {
   if (!/^\/[a-z0-9/-]*$/i.test(route)) throw new Error(`Unexpected route: ${route}`);
   const dir = path.join(product, route.slice(1));

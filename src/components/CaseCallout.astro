@@ -128,6 +128,7 @@ const { callout, tone = 'note', plate = 'light', class: className } = Astro.prop
   }
 
   @media (--bp-md) {
+    .case-callout__shot :global(.case-screen) { padding-inline-start: calc(var(--frame-inset) + var(--space-8)); }
     .case-callout__pin { display: inline-grid; position: absolute; inset-inline-start: calc(-1 * var(--space-8)); inset-block-start: var(--y); translate: 0 -50%; }
     .case-callout__pin::after { content: ''; position: absolute; inset-inline-start: 100%; inset-block-start: 50%; inline-size: var(--space-2); block-size: var(--border-width); background: var(--mark); }
     .case-callout__body {
