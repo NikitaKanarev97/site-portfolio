@@ -920,6 +920,13 @@ function pageIn() {
       duration: motion.pageIn.duration,
       ease: motion.pageIn.ease,
       ...lift(document.body),
+      // Even an identity transform makes body the containing block for fixed
+      // pins. Release it after navigation, then measure against the viewport.
+      clearProps: 'opacity,transform',
+      onComplete: () => {
+        gsap.set(document.body, { willChange: 'auto' });
+        ScrollTrigger.refresh();
+      },
     },
   );
 }
