@@ -16,19 +16,20 @@ interface Props {
   caption?: string;
   href?: string;
   linkLabel?: string;
+  narrowAt?: 'md' | 'lg';
 }
-const { item, loading = 'lazy', class: className, native = false, caption, href, linkLabel } = Astro.props;
+const { item, loading = 'lazy', class: className, native = false, caption, href, linkLabel, narrowAt = 'md' } = Astro.props;
 assertShotMedia(item);
 const size = await frameSize(item.src);
 const narrowSize = item.srcNarrow ? await frameSize(item.srcNarrow) : size;
-const narrowMedia = `(max-width: ${px('bp-md') - 1}px)`;
+const narrowMedia = `(max-width: ${px(`bp-${narrowAt}`) - 1}px)`;
 const ar = size ? size.width / size.height : item.device === 'phone' ? 390 / 844 : 16 / 10;
 const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
 ---
 
 <div
-  class:list={['case-screen', `case-screen--${item.device}`, native && 'case-screen--native', className]}
-  style={`--ar: ${ar.toFixed(4)}; --ar-narrow: ${narrowSize ? narrowSize.width / narrowSize.height : ar}; ${item.nativeWidth ? `max-inline-size:calc(${item.nativeWidth}px + var(--space-6) * 2);` : ''}`}
+  class:list={['case-screen', `case-screen--${item.device}`, native && 'case-screen--native', item.srcNarrow && narrowAt === 'lg' && 'case-screen--narrow-tablet', className]}
+  style={`--ar: ${ar.toFixed(4)}; --ar-narrow: ${narrowSize ? narrowSize.width / narrowSize.height : ar}; ${item.nativeWidth ? `max-inline-size:calc(${item.nativeWidth}px + var(--frame-inset) * 2);` : ''}`}
   data-motion={!native && !href ? 'fade-image' : undefined}
 >
   {item.video ? (
@@ -59,7 +60,8 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
   .case-screen {
     position: relative;
     min-inline-size: 0;
-    padding: var(--space-4);
+    inline-size: 100%;
+    padding: var(--frame-inset);
     border-radius: var(--radius-lg);
     background: var(--surface-default);
     color: var(--text-default);
@@ -80,8 +82,9 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
   .case-screen--native .case-screen__text { border-color: currentColor; }
   .case-screen--native .case-screen__action { color: inherit; }
   @media (--bp-md) {
-    .case-screen { padding: var(--space-6); }
     .case-screen__media { aspect-ratio: var(--ar); }
+    .case-screen--narrow-tablet .case-screen__media { aspect-ratio: var(--ar-narrow); }
   }
+  @media (--bp-lg) { .case-screen--narrow-tablet .case-screen__media { aspect-ratio: var(--ar); } }
   @media (--can-hover) { .case-screen__open:hover .case-screen__action { color: var(--text-link-hover); } }
 </style>

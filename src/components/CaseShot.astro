@@ -70,19 +70,17 @@ const { shot, tone = 'light', class: className } = Astro.props;
       gap: var(--space-4);
     }
 
-    .case-shot__row--pair {
+    .case-shot__row--pair, .case-shot__row--phones {
       flex-direction: column;
       align-items: center;
     }
 
-    .case-shot__row--pair > :global(.case-screen) {
+    .case-shot__row--pair > :global(.case-screen),
+    .case-shot__row--phones > :global(.case-screen) {
       flex: none;
       inline-size: 100%;
     }
 
-    .case-shot__row--pair > :global(.case-screen--phone) {
-      inline-size: 50%;
-    }
   }
 
   .case-shot__caption {

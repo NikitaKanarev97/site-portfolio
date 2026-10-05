@@ -12,14 +12,14 @@ const passport = {src:'/media/art-direction/learn/passport-desktop.png',srcNarro
   <div class="learn-stage__heading"><p class="ds-heading-2xl">{art.label}</p><p class="ds-body-sm">{art.detail}</p></div>
   <figure class="learn-stage__material">
     <figcaption class="ds-meta-xs">{ru?'Справочник · материал ONVIF':'Reference · ONVIF material'}</figcaption>
-    <CaseScreen item={material} loading={loading} href={href} linkLabel={linkLabel} />
+    <CaseScreen item={material} loading={loading} href={href} linkLabel={linkLabel} narrowAt="lg" />
   </figure>
   <figure class="learn-stage__unit">
     <figcaption class="ds-meta-xs">{ru?'Программа · тот же ресурс 03':'Learning path · same resource 03'}<span aria-hidden="true">↙</span></figcaption>
     <CaseScreen item={unit} loading={loading} href={href} linkLabel={linkLabel} />
   </figure>
   <figure class="learn-stage__passport">
-    <CaseScreen item={passport} loading={loading} href={href} linkLabel={linkLabel} />
+    <CaseScreen item={passport} loading={loading} href={href} linkLabel={linkLabel} narrowAt="lg" />
   </figure>
 </div>
 <style>
@@ -29,9 +29,9 @@ const passport = {src:'/media/art-direction/learn/passport-desktop.png',srcNarro
   .learn-stage figure { margin:0; min-inline-size:0; display:grid; align-content:start; gap:var(--space-3); }
   .learn-stage figcaption { display:flex; justify-content:space-between; align-items:center; gap:var(--space-4); }
   .learn-stage__unit { grid-row:2; }
-  .learn-stage__passport { inline-size:100%; max-inline-size:calc(var(--space-16) * 5); justify-self:center; }
-  @media (--bp-md) {
-    .learn-stage { grid-template-columns:3fr 1fr; grid-template-rows:auto auto 1fr; gap:var(--space-6) var(--space-6); align-items:start; }
+  .learn-stage__passport { inline-size:100%; }
+  @media (--bp-lg) {
+    .learn-stage { grid-template-columns:minmax(0,3fr) minmax(0,2fr); grid-template-rows:auto auto 1fr; gap:var(--space-6); align-items:start; }
     .learn-stage__heading { grid-column:1 / -1; }
     .learn-stage__material { grid-column:1; grid-row:2 / 4; }
     .learn-stage__unit { grid-column:2; grid-row:2; }

@@ -508,3 +508,9 @@ Field-bleed: scaleX выводится из clientWidth / offsetWidth; рост 
 
 
 Technical corrections 04.10.2026: focusStage.scrub = 0.25 seconds in ds/motion.js and its byte-identical src mirror. Existing state/heading/space/focus tokens remain the source for fields, links and motion.
+
+## Responsive spacing · 05.10.2026
+
+`frame-inset` — общие поля CaseScreen и маршрутной полосы Vet: space-4 (16 px) ниже bp-md, space-6 (24 px) от bp-md. `stage-inset` — поля цветных холстов главной Agent, Portal и Learn: space-4 / space-6 / space-12 (16 / 24 / 48 px) по mobile / tablet / desktop. Кадры, ссылка и подпись выравниваются по одному внутреннему краю. Внешние поля страницы остаются margin-sm/md/lg (24 / 48 / 80 px), вертикаль — flow-* и section-gap.
+
+Ограничения ширины телефона применяются от bp-lg внутри многоколоночной композиции. На mobile каждый кадр занимает всю доступную колонку: паспорт Learn, документ владельца Vet и отчёт Pawly не имеют отдельных боковых полей. Learn до bp-lg читает материал и паспорт из узких источников в одной колонке; от bp-lg использует две колонки 3:2. Pawly и Portal переходят к соседним колонкам от bp-lg, чтобы поля планшета не съедали ширину материала. Поля внутри документальных снимков принадлежат интерфейсу исходного продукта.
