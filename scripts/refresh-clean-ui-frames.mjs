@@ -16,15 +16,30 @@ const report = { captures:[], checks:[], corrections: [
   'Pawly: natural document height and footer in flow; full demo explanation; no footer rule.',
 ]};
 const vetCSS = `
-  [data-clean-frame] { display:grid; gap:var(--space-3); background:var(--surface-default); }
+  [data-clean-frame] { position:absolute; inset-block-start:0; inset-inline-start:0; z-index:2147483647; display:grid; gap:var(--space-3); background:var(--surface-default); }
   [data-clean-frame] > * { width:100%; min-width:0; margin:0; }
   /* Strip only the header's outer capture margin, aligning source crops. */
   [data-clean-frame] [class*="_visitHeader_"] { padding:0; }
+  /* A complete document capture uses the action bar's natural flow position. */
+  [data-clean-frame] [class*="_quickTraceActions_"] { position:static; }
 `;
 async function shoot(page,file,selector) {
   await page.evaluate(async()=>{await document.fonts.ready;await Promise.all([...document.images].map(image=>image.decode().catch(()=>{})));});
   const node=page.locator(selector);
   const bytes=await node.screenshot();
+  if(selector==='[data-clean-frame]') {
+    const overlap=await node.evaluate(frame=>[...frame.children].some((child,i,nodes)=>i>0&&child.getBoundingClientRect().top<nodes[i-1].getBoundingClientRect().bottom-0.5));
+    if(overlap) throw Error(`Overlapping capture panels: ${file}`);
+    const {data,info}=await sharp(bytes).removeAlpha().raw().toBuffer({resolveWithObject:true});
+    for(let y=0;y<2;y++) {
+      let tinted=0;
+      for(let x=0;x<info.width;x++) {
+        const k=(y*info.width+x)*info.channels;
+        if(Math.min(data[k],data[k+1],data[k+2])<252) tinted++;
+      }
+      if(tinted/info.width>0.9) throw Error(`Foreign line at capture edge: ${file}, row ${y}`);
+    }
+  }
   await copyFile(file, `${dir}/${file.replaceAll('/','-')}`);
   await sharp(bytes).webp({quality:94}).toFile(file);
   const metadata=await sharp(file).metadata();
@@ -54,7 +69,7 @@ try {
     await quick.addStyleTag({content:vetCSS});
     const header='[class*="_visitHeader_"]',step='[class*="_quickTraceStep_"]',actions='[class*="_quickTraceActions_"]';
     if(width===390) {
-      await compose(quick,[header,step,'[class*="_traceDose_"]',actions]);
+      await compose(quick,[header,step,'[class*="_traceDose_"]','[class*="_quickTraceNote_"]',actions]);
       await shoot(quick,`${root}/cover-${locale}-${variant}.webp`,'[data-clean-frame]');
     } else {
       await shoot(quick,`${root}/cover-${locale}-${variant}.webp`,'[class*="_quickTraceFrame_"]');

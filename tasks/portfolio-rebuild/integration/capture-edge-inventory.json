@@ -1,0 +1,2343 @@
+{
+  "routes": 14,
+  "files": [
+    {
+      "src": "/media/about/portrait.webp",
+      "routes": [
+        "//",
+        "/about/",
+        "/ru/",
+        "/ru/about/"
+      ],
+      "width": 768,
+      "height": 1024,
+      "topEdgeCoverage": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/art-direction/learn/current-unit.png",
+      "routes": [
+        "//",
+        "/work/learn/",
+        "/ru/",
+        "/ru/work/learn/"
+      ],
+      "width": 640,
+      "height": 260,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/art-direction/learn/material-desktop.png",
+      "routes": [
+        "//",
+        "/work/learn/",
+        "/ru/",
+        "/ru/work/learn/"
+      ],
+      "width": 2304,
+      "height": 1550,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/art-direction/learn/material-mobile.png",
+      "routes": [
+        "//",
+        "/work/learn/",
+        "/ru/",
+        "/ru/work/learn/"
+      ],
+      "width": 780,
+      "height": 2120,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/art-direction/learn/passport-desktop.png",
+      "routes": [
+        "//",
+        "/work/learn/",
+        "/ru/",
+        "/ru/work/learn/"
+      ],
+      "width": 640,
+      "height": 1100,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0.003125
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/art-direction/learn/passport-mobile.png",
+      "routes": [
+        "//",
+        "/work/learn/",
+        "/ru/",
+        "/ru/work/learn/"
+      ],
+      "width": 716,
+      "height": 940,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0.002793296089385475
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/art-direction/pawly/handover-dropoff.webp",
+      "routes": [
+        "//",
+        "/work/pawly/",
+        "/ru/",
+        "/ru/work/pawly/"
+      ],
+      "width": 800,
+      "height": 597,
+      "topEdgeCoverage": [
+        0.02875,
+        0.03,
+        0.03,
+        0.03125
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/case-dssl/legacy-dashboard.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 1426,
+      "height": 440,
+      "topEdgeCoverage": [
+        0.9544179523141655,
+        0.9544179523141655,
+        0.9544179523141655,
+        0.9544179523141655
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/development/bloomlex.webp",
+      "routes": [
+        "//",
+        "/ru/"
+      ],
+      "width": 2000,
+      "height": 1125,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/development/common.webp",
+      "routes": [
+        "//",
+        "/ru/"
+      ],
+      "width": 2000,
+      "height": 1125,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/development/scrib3.webp",
+      "routes": [
+        "//",
+        "/ru/"
+      ],
+      "width": 2000,
+      "height": 1125,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/development/synk.webp",
+      "routes": [
+        "//",
+        "/ru/"
+      ],
+      "width": 2000,
+      "height": 1125,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/pilot-agent-ops/approval-card-1440.webp",
+      "routes": [
+        "/work/agent-ops-console/"
+      ],
+      "width": 1516,
+      "height": 1020,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/pilot-agent-ops/approval-card-390.webp",
+      "routes": [
+        "/work/agent-ops-console/"
+      ],
+      "width": 1074,
+      "height": 1686,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/pilot-agent-ops/clusters-framed-1440.webp",
+      "routes": [
+        "/work/agent-ops-console/"
+      ],
+      "width": 2448,
+      "height": 930,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/pilot-agent-ops/clusters-framed-390.webp",
+      "routes": [
+        "/work/agent-ops-console/"
+      ],
+      "width": 1218,
+      "height": 1356,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/pilot-agent-ops/evidence-1440.webp",
+      "routes": [
+        "/work/agent-ops-console/"
+      ],
+      "width": 940,
+      "height": 1246,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/pilot-agent-ops/evidence-390.webp",
+      "routes": [
+        "/work/agent-ops-console/"
+      ],
+      "width": 1074,
+      "height": 2193,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/pilot-agent-ops/message-1440.webp",
+      "routes": [
+        "//",
+        "/work/agent-ops-console/"
+      ],
+      "width": 734,
+      "height": 608,
+      "topEdgeCoverage": [
+        0.0027247956403269754,
+        0.0027247956403269754,
+        0,
+        0.0027247956403269754
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/pilot-agent-ops/message-390.webp",
+      "routes": [
+        "//",
+        "/work/agent-ops-console/"
+      ],
+      "width": 1074,
+      "height": 807,
+      "topEdgeCoverage": [
+        0.00186219739292365,
+        0.00186219739292365,
+        0.00186219739292365,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/pilot-agent-ops/payout-1440.webp",
+      "routes": [
+        "//",
+        "/work/agent-ops-console/"
+      ],
+      "width": 736,
+      "height": 556,
+      "topEdgeCoverage": [
+        0.002717391304347826,
+        0.002717391304347826,
+        0,
+        0.002717391304347826
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/pilot-agent-ops/payout-390.webp",
+      "routes": [
+        "//",
+        "/work/agent-ops-console/"
+      ],
+      "width": 1074,
+      "height": 786,
+      "topEdgeCoverage": [
+        0.00186219739292365,
+        0.00186219739292365,
+        0.00186219739292365,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/pilot-agent-ops/run-context.webp",
+      "routes": [
+        "/work/agent-ops-console/"
+      ],
+      "width": 2880,
+      "height": 2400,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/pilot-agent-ops/transcript-framed-1440.webp",
+      "routes": [
+        "/work/agent-ops-console/"
+      ],
+      "width": 1462,
+      "height": 1322,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/pilot-agent-ops/transcript-framed-390.webp",
+      "routes": [
+        "/work/agent-ops-console/"
+      ],
+      "width": 1218,
+      "height": 2256,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/agent-ops/ru/approval-card-1440.webp",
+      "routes": [
+        "/ru/work/agent-ops-console/"
+      ],
+      "width": 1516,
+      "height": 1020,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/agent-ops/ru/approval-card-390.webp",
+      "routes": [
+        "/ru/work/agent-ops-console/"
+      ],
+      "width": 1074,
+      "height": 1686,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/agent-ops/ru/clusters-framed-1440.webp",
+      "routes": [
+        "/ru/work/agent-ops-console/"
+      ],
+      "width": 2448,
+      "height": 930,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/agent-ops/ru/clusters-framed-390.webp",
+      "routes": [
+        "/ru/work/agent-ops-console/"
+      ],
+      "width": 1218,
+      "height": 1356,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/agent-ops/ru/evidence-1440.webp",
+      "routes": [
+        "/ru/work/agent-ops-console/"
+      ],
+      "width": 940,
+      "height": 1246,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/agent-ops/ru/evidence-390.webp",
+      "routes": [
+        "/ru/work/agent-ops-console/"
+      ],
+      "width": 1074,
+      "height": 2367,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/agent-ops/ru/message-1440.webp",
+      "routes": [
+        "/ru/",
+        "/ru/work/agent-ops-console/"
+      ],
+      "width": 734,
+      "height": 608,
+      "topEdgeCoverage": [
+        0.0027247956403269754,
+        0.0027247956403269754,
+        0,
+        0.0027247956403269754
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/agent-ops/ru/message-390.webp",
+      "routes": [
+        "/ru/",
+        "/ru/work/agent-ops-console/"
+      ],
+      "width": 1074,
+      "height": 867,
+      "topEdgeCoverage": [
+        0.00186219739292365,
+        0.00186219739292365,
+        0.00186219739292365,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/agent-ops/ru/payout-1440.webp",
+      "routes": [
+        "/ru/",
+        "/ru/work/agent-ops-console/"
+      ],
+      "width": 736,
+      "height": 556,
+      "topEdgeCoverage": [
+        0.002717391304347826,
+        0.002717391304347826,
+        0,
+        0.002717391304347826
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/agent-ops/ru/payout-390.webp",
+      "routes": [
+        "/ru/",
+        "/ru/work/agent-ops-console/"
+      ],
+      "width": 1074,
+      "height": 786,
+      "topEdgeCoverage": [
+        0.00186219739292365,
+        0.00186219739292365,
+        0.00186219739292365,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/agent-ops/ru/run-context.webp",
+      "routes": [
+        "/ru/work/agent-ops-console/"
+      ],
+      "width": 2880,
+      "height": 2400,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/agent-ops/ru/transcript-framed-1440.webp",
+      "routes": [
+        "/ru/work/agent-ops-console/"
+      ],
+      "width": 1462,
+      "height": 1322,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/agent-ops/ru/transcript-framed-390.webp",
+      "routes": [
+        "/ru/work/agent-ops-console/"
+      ],
+      "width": 1218,
+      "height": 2256,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/common/portal/availability-not-confirmed-288.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 256,
+      "height": 110,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/common/portal/availability-stale-288.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 332,
+      "height": 150,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/common/portal/availability-verified-288.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 304,
+      "height": 106,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/common/portal/fileupload-complete-288.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 584,
+      "height": 370,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/common/portal/fileupload-empty-288.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 584,
+      "height": 514,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/common/portal/fileupload-error-288.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 584,
+      "height": 412,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/common/portal/resolutionrow-ambiguous-288.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 584,
+      "height": 680,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/common/portal/resolutionrow-confirmed-from-ambiguous-288.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 584,
+      "height": 714,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/common/portal/resolutionrow-missing-288.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 584,
+      "height": 644,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/answer-desktop.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 2304,
+      "height": 1550,
+      "topEdgeCoverage": [
+        0.9930555555555556,
+        0.9930555555555556,
+        0.9930555555555556,
+        0.9930555555555556
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/answer-mobile.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 780,
+      "height": 2120,
+      "topEdgeCoverage": [
+        0.9794871794871794,
+        0.9794871794871794,
+        0.9794871794871794,
+        0.9794871794871794
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/archive-catalog.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 1413,
+      "height": 666,
+      "topEdgeCoverage": [
+        0.0021231422505307855,
+        0.0021231422505307855,
+        0.0021231422505307855,
+        0.0021231422505307855
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/assessment-desktop.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 1568,
+      "height": 1606,
+      "topEdgeCoverage": [
+        0.9923469387755102,
+        0.9923469387755102,
+        0.9923469387755102,
+        0.9923469387755102
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/assessment-mobile.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 780,
+      "height": 2618,
+      "topEdgeCoverage": [
+        0.9794871794871794,
+        0.9794871794871794,
+        0.9794871794871794,
+        0.9794871794871794
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/completion-desktop.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 2080,
+      "height": 756,
+      "topEdgeCoverage": [
+        0.9942307692307693,
+        0.9942307692307693,
+        0.9942307692307693,
+        0.9942307692307693
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/completion-mobile.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 780,
+      "height": 956,
+      "topEdgeCoverage": [
+        0.9794871794871794,
+        0.9794871794871794,
+        0.9794871794871794,
+        0.9794871794871794
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/landing-desktop.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 2880,
+      "height": 1642,
+      "topEdgeCoverage": [
+        0.9958333333333333,
+        0.9958333333333333,
+        0.9958333333333333,
+        0.9958333333333333
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/landing-mobile.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 780,
+      "height": 2116,
+      "topEdgeCoverage": [
+        0.9794871794871794,
+        0.9794871794871794,
+        0.9794871794871794,
+        0.9794871794871794
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/programme-desktop.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 2880,
+      "height": 2000,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/programme-mobile.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 780,
+      "height": 1688,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/progress-desktop.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 576,
+      "height": 74,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/progress-mobile.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 576,
+      "height": 74,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/theme-explore-desktop.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 632,
+      "height": 410,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/theme-explore-mobile.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 584,
+      "height": 410,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/theme-handover-desktop.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 632,
+      "height": 410,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/theme-handover-mobile.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 584,
+      "height": 410,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/theme-project-desktop.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 632,
+      "height": 410,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/theme-project-mobile.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 584,
+      "height": 410,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/theme-setup-desktop.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 632,
+      "height": 464,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/theme-setup-mobile.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 584,
+      "height": 464,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/trust-desktop.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 576,
+      "height": 164,
+      "topEdgeCoverage": [
+        0.003472222222222222,
+        0.003472222222222222,
+        0,
+        0.003472222222222222
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/learn/trust-mobile.webp",
+      "routes": [
+        "/work/learn/",
+        "/ru/work/learn/"
+      ],
+      "width": 576,
+      "height": 164,
+      "topEdgeCoverage": [
+        0.003472222222222222,
+        0.003472222222222222,
+        0,
+        0.003472222222222222
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/partner-portal/fulfillmentplan-default-288.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 584,
+      "height": 766,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/partner-portal/fulfillmentplan-selected-288.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 584,
+      "height": 772,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/partner-portal/fulfillmentplan-unavailable-288.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 584,
+      "height": 756,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/partner-portal/line-cart-narrow.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 716,
+      "height": 812,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/partner-portal/line-cart-wide.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 2300,
+      "height": 178,
+      "topEdgeCoverage": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/partner-portal/line-confirmed-narrow.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 716,
+      "height": 628,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/partner-portal/line-confirmed-wide.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 2300,
+      "height": 138,
+      "topEdgeCoverage": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/partner-portal/line-open-narrow.webp",
+      "routes": [
+        "//",
+        "/work/partner-portal/",
+        "/ru/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 716,
+      "height": 1112,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/partner-portal/line-open-wide.webp",
+      "routes": [
+        "//",
+        "/work/partner-portal/",
+        "/ru/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 2300,
+      "height": 844,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/partner-portal/resolution-context-narrow.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 780,
+      "height": 2800,
+      "topEdgeCoverage": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/partner-portal/resolution-context-wide.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 2880,
+      "height": 2200,
+      "topEdgeCoverage": [
+        0.8329861111111111,
+        0.8329861111111111,
+        0.8329861111111111,
+        0.8329861111111111
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/partner-portal/resolutionrow-changed-288.webp",
+      "routes": [
+        "/work/partner-portal/",
+        "/ru/work/partner-portal/"
+      ],
+      "width": 584,
+      "height": 722,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/en/active-service.webp",
+      "routes": [
+        "/work/pawly/"
+      ],
+      "width": 585,
+      "height": 1266,
+      "topEdgeCoverage": [
+        0.008547008547008548,
+        0.015384615384615385,
+        0.018803418803418803,
+        0.008547008547008548
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/en/address-input.webp",
+      "routes": [
+        "/work/pawly/"
+      ],
+      "width": 564,
+      "height": 1221,
+      "topEdgeCoverage": [
+        0.9893617021276596,
+        0.9893617021276596,
+        0.05851063829787234,
+        0.05319148936170213
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/en/clip-return-proof-poster.webp",
+      "routes": [
+        "/work/pawly/"
+      ],
+      "width": 585,
+      "height": 1266,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/en/order-details.webp",
+      "routes": [
+        "//",
+        "/work/pawly/"
+      ],
+      "width": 585,
+      "height": 1380,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/en/verification-details.webp",
+      "routes": [
+        "/work/pawly/"
+      ],
+      "width": 563,
+      "height": 1569,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/en/walker-earnings.webp",
+      "routes": [
+        "/work/pawly/"
+      ],
+      "width": 585,
+      "height": 1266,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/en/walker-list.webp",
+      "routes": [
+        "/work/pawly/"
+      ],
+      "width": 585,
+      "height": 1266,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/en/walker-profile.webp",
+      "routes": [
+        "/work/pawly/"
+      ],
+      "width": 585,
+      "height": 1266,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/ru/active-service.webp",
+      "routes": [
+        "/ru/work/pawly/"
+      ],
+      "width": 585,
+      "height": 1266,
+      "topEdgeCoverage": [
+        0.008547008547008548,
+        0.015384615384615385,
+        0.018803418803418803,
+        0.008547008547008548
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/ru/address-input.webp",
+      "routes": [
+        "/ru/work/pawly/"
+      ],
+      "width": 564,
+      "height": 1221,
+      "topEdgeCoverage": [
+        0.9893617021276596,
+        0.9893617021276596,
+        0.05851063829787234,
+        0.05319148936170213
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/ru/clip-return-proof-poster.webp",
+      "routes": [
+        "/ru/work/pawly/"
+      ],
+      "width": 585,
+      "height": 1266,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/ru/order-details.webp",
+      "routes": [
+        "/ru/",
+        "/ru/work/pawly/"
+      ],
+      "width": 585,
+      "height": 1410,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/ru/verification-details.webp",
+      "routes": [
+        "/ru/work/pawly/"
+      ],
+      "width": 563,
+      "height": 1569,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/ru/walker-earnings.webp",
+      "routes": [
+        "/ru/work/pawly/"
+      ],
+      "width": 585,
+      "height": 1266,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/ru/walker-list.webp",
+      "routes": [
+        "/ru/work/pawly/"
+      ],
+      "width": 585,
+      "height": 1266,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/ru/walker-profile.webp",
+      "routes": [
+        "/ru/work/pawly/"
+      ],
+      "width": 585,
+      "height": 1266,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/note-disclosure-288.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 584,
+      "height": 134,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/note-disclosure-343.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 694,
+      "height": 134,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/note-hint-288.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 584,
+      "height": 46,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/note-hint-343.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 694,
+      "height": 46,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/note-warning-288.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 584,
+      "height": 134,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/note-warning-343.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 694,
+      "height": 134,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/photo-confirmed-288.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 584,
+      "height": 142,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/photo-confirmed-343.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 694,
+      "height": 142,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/photo-local-288.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 584,
+      "height": 182,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/photo-local-343.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 694,
+      "height": 142,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/photo-pending-288.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 584,
+      "height": 136,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/photo-pending-343.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 694,
+      "height": 136,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/photo-unavailable-288.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 584,
+      "height": 228,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/photo-unavailable-343.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 694,
+      "height": 228,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/timeline-current-288.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 584,
+      "height": 120,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/timeline-current-343.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 694,
+      "height": 120,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/timeline-done-288.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 584,
+      "height": 120,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/timeline-done-343.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 694,
+      "height": 120,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/timeline-pending-288.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 584,
+      "height": 76,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/timeline-pending-343.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 694,
+      "height": 76,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/timeline-photo-288.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 584,
+      "height": 544,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/pawly/states/timeline-photo-343.webp",
+      "routes": [
+        "/work/pawly/",
+        "/ru/work/pawly/"
+      ],
+      "width": 694,
+      "height": 544,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/draft-en-narrow.webp",
+      "routes": [
+        "/work/vet-clinic/"
+      ],
+      "width": 716,
+      "height": 1156,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/draft-en-wide.webp",
+      "routes": [
+        "/work/vet-clinic/"
+      ],
+      "width": 1372,
+      "height": 960,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/draft-ru-narrow.webp",
+      "routes": [
+        "/ru/work/vet-clinic/"
+      ],
+      "width": 716,
+      "height": 1156,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/draft-ru-wide.webp",
+      "routes": [
+        "/ru/work/vet-clinic/"
+      ],
+      "width": 1372,
+      "height": 960,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/invoice-en-narrow.webp",
+      "routes": [
+        "//",
+        "/work/vet-clinic/"
+      ],
+      "width": 716,
+      "height": 1372,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/invoice-en-wide.webp",
+      "routes": [
+        "//",
+        "/work/vet-clinic/"
+      ],
+      "width": 1530,
+      "height": 1078,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0.00130718954248366,
+        0.00065359477124183
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/invoice-ru-narrow.webp",
+      "routes": [
+        "/ru/",
+        "/ru/work/vet-clinic/"
+      ],
+      "width": 716,
+      "height": 1372,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/invoice-ru-wide.webp",
+      "routes": [
+        "/ru/",
+        "/ru/work/vet-clinic/"
+      ],
+      "width": 1530,
+      "height": 1078,
+      "topEdgeCoverage": [
+        0.00065359477124183,
+        0,
+        0.00065359477124183,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/owner-detail-en.webp",
+      "routes": [
+        "//",
+        "/work/vet-clinic/"
+      ],
+      "width": 716,
+      "height": 722,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/owner-detail-ru.webp",
+      "routes": [
+        "/ru/",
+        "/ru/work/vet-clinic/"
+      ],
+      "width": 716,
+      "height": 724,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/owner-en.webp",
+      "routes": [
+        "//",
+        "/work/vet-clinic/"
+      ],
+      "width": 780,
+      "height": 2184,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/owner-ru.webp",
+      "routes": [
+        "/ru/",
+        "/ru/work/vet-clinic/"
+      ],
+      "width": 780,
+      "height": 2222,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/publication-en-narrow.webp",
+      "routes": [
+        "/work/vet-clinic/"
+      ],
+      "width": 716,
+      "height": 1552,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/publication-en-wide.webp",
+      "routes": [
+        "/work/vet-clinic/"
+      ],
+      "width": 640,
+      "height": 762,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/publication-ru-narrow.webp",
+      "routes": [
+        "/ru/work/vet-clinic/"
+      ],
+      "width": 716,
+      "height": 1600,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/publication-ru-wide.webp",
+      "routes": [
+        "/ru/work/vet-clinic/"
+      ],
+      "width": 640,
+      "height": 804,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/queue-en-narrow.webp",
+      "routes": [
+        "/work/vet-clinic/"
+      ],
+      "width": 716,
+      "height": 2922,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/queue-en.webp",
+      "routes": [
+        "/work/vet-clinic/"
+      ],
+      "width": 2000,
+      "height": 1250,
+      "topEdgeCoverage": [
+        0.9995,
+        1,
+        1,
+        0.998
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/queue-ru-narrow.webp",
+      "routes": [
+        "/ru/work/vet-clinic/"
+      ],
+      "width": 716,
+      "height": 2838,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/queue-ru.webp",
+      "routes": [
+        "/ru/work/vet-clinic/"
+      ],
+      "width": 2000,
+      "height": 1250,
+      "topEdgeCoverage": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/saved-en-narrow.webp",
+      "routes": [
+        "/work/vet-clinic/"
+      ],
+      "width": 716,
+      "height": 1156,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/saved-en-wide.webp",
+      "routes": [
+        "/work/vet-clinic/"
+      ],
+      "width": 1372,
+      "height": 960,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/saved-ru-narrow.webp",
+      "routes": [
+        "/ru/work/vet-clinic/"
+      ],
+      "width": 716,
+      "height": 1156,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/saved-ru-wide.webp",
+      "routes": [
+        "/ru/work/vet-clinic/"
+      ],
+      "width": 1372,
+      "height": 960,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/trace-en-narrow.webp",
+      "routes": [
+        "//",
+        "/work/vet-clinic/"
+      ],
+      "width": 716,
+      "height": 1044,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/trace-en-wide.webp",
+      "routes": [
+        "//",
+        "/work/vet-clinic/"
+      ],
+      "width": 1884,
+      "height": 380,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/trace-ru-narrow.webp",
+      "routes": [
+        "/ru/",
+        "/ru/work/vet-clinic/"
+      ],
+      "width": 716,
+      "height": 1044,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    },
+    {
+      "src": "/media/rebuild/vet-clinic/trace-ru-wide.webp",
+      "routes": [
+        "/ru/",
+        "/ru/work/vet-clinic/"
+      ],
+      "width": 1884,
+      "height": 380,
+      "topEdgeCoverage": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "neutralEdgeCandidate": false
+    }
+  ]
+}
