@@ -6,26 +6,29 @@ import {createRequire} from 'node:module';
 import {mkdir,readFile,writeFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
+import {captureNativeAlpha} from './lib/native-alpha-capture.mjs';
 const {chromium}=createRequire('D:/Claude-projects/Agent-ops-console/package.json')('playwright');
 const origin=process.argv[2]??'http://127.0.0.1:4475';
 const dir='public/media/art-direction/learn-ru';
+const passportsOnly=process.argv.includes('--passports-only');
 await mkdir(dir,{recursive:true});
 const browser=await chromium.launch({executablePath:process.env.HARMONY_CHROME??'C:/Program Files/Google/Chrome/Application/chrome.exe'});
 const report=[];
-async function shot(page,file,selector,expected){
+async function shot(page,file,selector,expected,alpha=false){
  await page.evaluate(()=>document.fonts.ready);
  const node=page.locator(selector);const text=await node.innerText();
  assert.equal(await page.locator('html').getAttribute('lang'),'ru');
  assert(text.includes(expected),`${file}: expected Russian content`);
  assert(!/Path length|Assessment|Resource|Current unit|cannot discover|Start learning|Sign in/.test(text),`${file}: English UI`);
  const box=await node.boundingBox();assert(box.width>0&&box.height>0);
- const bytes=await node.screenshot({animations:'disabled'});
+ const bytes=alpha?await captureNativeAlpha(page,node):await node.screenshot({animations:'disabled'});
  await writeFile(`${dir}/${file}.png`,bytes);
- report.push({file:`${dir}/${file}.png`,url:page.url(),text,width:box.width,height:box.height,sha256:createHash('sha256').update(bytes).digest('hex')});
+ report.push({file:`${dir}/${file}.png`,url:page.url(),text,width:box.width,height:box.height,alpha,sha256:createHash('sha256').update(bytes).digest('hex')});
 }
 try{
  for(const [kind,width] of [['desktop',1440],['mobile',390]]){
  const page=await browser.newPage({viewport:{width,height:1000},deviceScaleFactor:2,reducedMotion:'reduce'});
+ if(!passportsOnly){
  await page.goto(`${origin}/prototypes/learn/material/onvif-not-found?lang=ru`);
  await page.evaluate(()=>document.fonts.ready);
  // The editorial excerpt contains real header nodes and the complete first
@@ -45,10 +48,12 @@ try{
  frame.append(content);document.body.append(frame);
  },kind==='desktop');
  await shot(page,`material-${kind}`,'[data-stage-capture]','TRASSIR не видит камеру');
+ }
  await page.goto(`${origin}/prototypes/learn/trajectory/puskonaladka?lang=ru`);
- await shot(page,`passport-${kind}`,'aside[class*="_passport_"]','Объём программы');
+ await shot(page,`passport-${kind}`,'aside[class*="_passport_"]','Объём программы',true);
  await page.close();
  }
+ if(!passportsOnly){
  // A saved demonstration cursor selects this real shared material as unit 03.
  const fixture=JSON.parse(await readFile('../learn/audit/product-polish/evidence/07/state-marina-one.json','utf8'));
  fixture.progress={puskonaladka:{trajectoryId:'puskonaladka',doneUnitIds:['puskonaladka#0','puskonaladka#1'],cursor:2,startedAt:'2026-09-07T18:07:54.081Z',lastActivityAt:'2026-09-07T18:07:54.787Z'}};fixture.toasts=[];
@@ -61,6 +66,9 @@ try{
  });
  await shot(page,'current-unit','[data-layout="curriculum"][data-step="current"]','TRASSIR не видит камеру');
  await page.close();
+ }
 }finally{await browser.close();}
-await writeFile('tasks/portfolio-rebuild/integration/learn-stage-ru-captures.json',JSON.stringify(report,null,2));
+const manifest='tasks/portfolio-rebuild/integration/learn-stage-ru-captures.json';
+const entries=passportsOnly?JSON.parse(await readFile(manifest,'utf8')).map(old=>report.find(r=>r.file===old.file)??old):report;
+await writeFile(manifest,JSON.stringify(entries,null,2));
 console.log(`Captured ${report.length} native Russian fragments`);

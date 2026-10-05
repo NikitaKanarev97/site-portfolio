@@ -264,7 +264,7 @@
   {
     "id": "trust-mobile",
     "file": "public/media/rebuild/learn-ru/trust-mobile.webp",
-    "url": "http://127.0.0.1:4475/prototypes/learn/material/onvif-not-found?lang=ru",
+    "url": "http://127.0.0.1:4362/prototypes/learn/material/onvif-not-found?lang=ru",
     "lang": "ru",
     "viewport": {
       "width": 320,
@@ -273,12 +273,14 @@
     "width": 576,
     "height": 222,
     "text": "TRASSIR OS 4.3\n·\nобновлено 12 августа 2026\n·\n7 минут чтения",
-    "sha256": "face3a9e331693bc59749cc1b35efd182daeb6732b38c133514538b17ab46b12"
+    "alpha": true,
+    "bleed": 0,
+    "sha256": "6d45e415183fd4ad39124b7e0862966bf1b57ae3e15b6192b5410bc774d62c49"
   },
   {
     "id": "progress-mobile",
     "file": "public/media/rebuild/learn-ru/progress-mobile.webp",
-    "url": "http://127.0.0.1:4475/prototypes/learn/player/puskonaladka/2?lang=ru",
+    "url": "http://127.0.0.1:4362/prototypes/learn/player/puskonaladka/2?lang=ru",
     "lang": "ru",
     "viewport": {
       "width": 320,
@@ -287,7 +289,9 @@
     "width": 576,
     "height": 74,
     "text": "Позиция\n3 / 11",
-    "sha256": "ac5713c5b5c9a9ce21be73d7de3af2d69373cf5fdf7472dc09892942220289f3"
+    "alpha": true,
+    "bleed": 0,
+    "sha256": "b1f51d0846afde557a0ec8e926ba4896d439d78cb39c96132c07bc69bcab2a1f"
   },
   {
     "id": "theme-setup-desktop",
@@ -298,10 +302,12 @@
       "width": 800,
       "height": 1000
     },
-    "width": 624,
-    "height": 456,
+    "width": 632,
+    "height": 464,
     "text": "Пусконаладка TRASSIR OS на объекте до 32 камер\nРазвернуть и сдать объект самостоятельно\n11 единиц",
-    "sha256": "0d8774e68b2f71a4cc3a75f77f6af8159108f456168703886dc2bf41f498a8f9"
+    "alpha": true,
+    "bleed": 2,
+    "sha256": "c98d076c222ad8ba1f84bb951b706b181d45407b4a8251ff9f9098632f245591"
   },
   {
     "id": "theme-setup-mobile",
@@ -312,10 +318,12 @@
       "width": 800,
       "height": 1000
     },
-    "width": 576,
-    "height": 456,
+    "width": 584,
+    "height": 464,
     "text": "Пусконаладка TRASSIR OS на объекте до 32 камер\nРазвернуть и сдать объект самостоятельно\n11 единиц",
-    "sha256": "2cdff856b6c492bc8cd1330eb884a2eee8e5e632caae03a0024159d3507ef65c"
+    "alpha": true,
+    "bleed": 2,
+    "sha256": "019fce4a2483777175ba018c066ec88030513cd75575eb0d365967b6e5cab5b2"
   },
   {
     "id": "theme-project-desktop",
@@ -326,10 +334,12 @@
       "width": 800,
       "height": 1000
     },
-    "width": 624,
-    "height": 404,
+    "width": 632,
+    "height": 410,
     "text": "Проектирование системы на 64+ камеры\nРассчитать нагрузку и защитить проект\n9 единиц",
-    "sha256": "782166717b33560b16dff10d24177d4054449a172217a1bb2808534a8bb1f5ca"
+    "alpha": true,
+    "bleed": 2,
+    "sha256": "326402d6e9275a47af6c2961cfe6f379d414b9ec9e9fc1fd16cce9b2d71c2796"
   },
   {
     "id": "theme-project-mobile",
@@ -340,10 +350,12 @@
       "width": 800,
       "height": 1000
     },
-    "width": 576,
-    "height": 404,
+    "width": 584,
+    "height": 410,
     "text": "Проектирование системы на 64+ камеры\nРассчитать нагрузку и защитить проект\n9 единиц",
-    "sha256": "8d5d167389524034f985cfe0ad3d161d6764e207beed39206384167920a87387"
+    "alpha": true,
+    "bleed": 2,
+    "sha256": "74e147679e6025b4f81437a68035ed20b20da059d83bda38d05e17549ca9b776"
   },
   {
     "id": "theme-handover-desktop",
@@ -354,10 +366,12 @@
       "width": 800,
       "height": 1000
     },
-    "width": 624,
-    "height": 348,
+    "width": 632,
+    "height": 356,
     "text": "Сдача объекта заказчику\nПроверить готовность объекта и пакет документов\n7 единиц",
-    "sha256": "04188778464909af54f2a3dba1b0bb520e099d28ca72c5ee1f0fecf020269432"
+    "alpha": true,
+    "bleed": 2,
+    "sha256": "ccc717027f655b0eaa4de1557082045e22a684531ae7273d658f38360a979e42"
   },
   {
     "id": "theme-handover-mobile",
@@ -368,10 +382,12 @@
       "width": 800,
       "height": 1000
     },
-    "width": 576,
-    "height": 404,
+    "width": 584,
+    "height": 410,
     "text": "Сдача объекта заказчику\nПроверить готовность объекта и пакет документов\n7 единиц",
-    "sha256": "57d94702004cf6375dfe90a2c415118c17b0ad9a6bd0c965e3f36c4f4bb947cd"
+    "alpha": true,
+    "bleed": 2,
+    "sha256": "1888940871a673837a31ece446f06e828b9e616b14734f909af9dc9a8d54a1de"
   },
   {
     "id": "theme-explore-desktop",
@@ -382,10 +398,12 @@
       "width": 800,
       "height": 1000
     },
-    "width": 624,
-    "height": 348,
+    "width": 632,
+    "height": 356,
     "text": "Основы линейки TRASSIR\nПодобрать оборудование под задачу\n7 единиц",
-    "sha256": "ad224412f3f4d47b2637c6a00307612e971120a83249c1e0f87df9f284f21c49"
+    "alpha": true,
+    "bleed": 2,
+    "sha256": "e9ece34617dff32a77cfcf00ed30186c38d6d18dff1c7af5833f44c068ad6fec"
   },
   {
     "id": "theme-explore-mobile",
@@ -396,9 +414,11 @@
       "width": 800,
       "height": 1000
     },
-    "width": 576,
-    "height": 404,
+    "width": 584,
+    "height": 410,
     "text": "Основы линейки TRASSIR\nПодобрать оборудование под задачу\n7 единиц",
-    "sha256": "cda8ba6acb6d1b70cc6692b3b0e0fed5c7668906a537064ce19ff73162694f69"
+    "alpha": true,
+    "bleed": 2,
+    "sha256": "313720ec04eeeca285477e30ad4d5e687b571061497991bfdc8156876859d1e6"
   }
 ]
