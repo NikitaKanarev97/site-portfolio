@@ -21,19 +21,22 @@ const EN = 'a|an|the|I|of|to|in|on|at|by';
 const SHORT = new RegExp(`(^|[\\s(«“"—])(${RU}|${EN})[ ](?=\\S)`, 'gi');
 const DASH = /[ ](—|–)(?=\s)/g;
 
-// Короткая фраза — заголовок, лид, подпись: последнее слово не остаётся
+// Короткая фраза от пяти слов — лид, подпись: последнее слово не остаётся
 // в строке одно. Длинные абзацы сюда не попадают, их держит text-wrap:
 // pretty роли; узкая колонка в три строки — нет, balance там бессилен.
+// Заголовки до четырёх слов правило не трогает: склейка «a stable
+// document» в узкой колонке оставляла одним первое слово.
 const LAST = /(\S)[ ](\S{1,12})(\s*)$/;
 const PHRASE_MAX = 70;
-const NBSP = ' ';
+const PHRASE_MIN_WORDS = 5;
+const NBSP = String.fromCharCode(0xa0);
 
 function typeset(text: string): string {
   // Два прохода: «в и с» подряд — второе слово открывается только
   // после того, как первое уже привязано.
   let out = text.replace(SHORT, `$1$2${NBSP}`).replace(SHORT, `$1$2${NBSP}`).replace(DASH, `${NBSP}$1`);
   const trimmed = out.trim();
-  if (trimmed.length <= PHRASE_MAX && trimmed.split(/\s+/).length >= 3) out = out.replace(LAST, `$1${NBSP}$2$3`);
+  if (trimmed.length <= PHRASE_MAX && trimmed.split(/\s+/).length >= PHRASE_MIN_WORDS) out = out.replace(LAST, `$1${NBSP}$2$3`);
   return out;
 }
 

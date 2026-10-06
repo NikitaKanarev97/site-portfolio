@@ -386,7 +386,7 @@ const agentOpsMaterial = {
     outcome: 'Between a promise and a payout: a person.',
     media: {
       variant: 'proof', layout: 'interlock', gate: 'Human review', eyebrow: 'AI support · Billing · Human oversight',
-      caption: 'Payout + message · prototype data',
+      caption: 'The message and the payout, side by side',
       shot: { src: `${pilot}/consequences-1440.webp`, srcNarrow: `${pilot}/consequences-390.webp`, alt: 'Two real prototype panels: the $340 payout and the exact message sent on approval', device: 'panel' },
       panels: [
         { src: `${pilot}/message-1440.webp`, srcNarrow: `${pilot}/message-390.webp`, alt: 'The complete customer message that approval will send', device: 'panel' },
@@ -418,7 +418,7 @@ const agentOpsMaterial = {
       {
         label: 'Find the cause', thesis: 'Seventeen chats. One cause.',
         body: 'I put repeating causes above individual chats and ranked them by financial exposure. One expired article becomes one correction at the source, rather than seventeen separate verdicts.',
-        layout: 'wide', scene: 'overview', caption: 'Cause clusters · prototype data',
+        layout: 'wide', scene: 'overview', caption: 'Causes ranked by money at risk',
         shot: { src: `${pilot}/clusters-framed-1440.webp`, srcNarrow: `${pilot}/clusters-framed-390.webp`, alt: 'Four complete cause clusters: expired promotion, extended trial, unsupported SLA and legacy price', device: 'panel' },
       },
       {
@@ -453,7 +453,7 @@ const agentOpsMaterial = {
         { x: 98, y: 76, text: 'The billing call carries the amount' },
         { x: 98, y: 89, text: 'The promise is now in writing' },
       ],
-      caption: 'Evidence panel · prototype data',
+      caption: 'Why the agent answered: the evidence panel',
     },
   },
   result: {

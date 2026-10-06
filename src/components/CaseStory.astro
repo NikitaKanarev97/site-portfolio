@@ -98,8 +98,13 @@ const label = (block: CaseStory['blocks'][number]) => block.type === 'steps' ? b
   .case-story__finale-body > :global(* + *) { margin-block-start: 0; }
   .case-story__finale-body > :global(.case-thesis) { display: block; }
   .case-story__finale-body :global(.case-thesis__text) { margin-block-start: var(--flow-text); }
+  /* Две колонки — с bp-xl. На 1024 половина плашки давала 352 px под
+     display-5xl, и заголовок итога шёл по слову в строке. */
   @media (--bp-lg) {
-    .case-story__finale-body { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--space-12); padding: var(--space-12); }
+    .case-story__finale-body { padding: var(--space-12); }
+  }
+  @media (--bp-xl) {
+    .case-story__finale-body { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--space-12); }
     .case-story__finale-body > :global(.case-thesis) { grid-column: 1; }
     .case-story__finale-body > :global(.case-impact--editorial) { display: contents; }
     .case-story__finale-body :global(.case-impact__cards) { grid-column: 1; grid-row: 2; }
