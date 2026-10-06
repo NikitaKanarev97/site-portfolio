@@ -45,7 +45,7 @@ export const partnerPortalStoryRu = defineStory({theme:'portal',plate:'light',
       tradeoff:{label:'Цена решения',text:'Неоднозначность требует ручного выбора покупателя. Данные сопоставления не гарантируют совместимость.'},
       nextEvidence:{label:'Следующая проверка',text:'Сохранять исходный текст строки в созданном заказе, затем измерить время и ошибки. Базовой бизнес-метрики пока нет.'},
     }},
-  ],prototype:{label:'Открыть нынешний прототип на демоданных',href:'https://b2b-partner-portal-five.vercel.app/'},
+  ],prototype:{label:'Открыть живой прототип',href:'https://b2b-partner-portal-five.vercel.app/'},
 });
 assertStoryPair(partnerPortalStory,partnerPortalStoryRu);
 

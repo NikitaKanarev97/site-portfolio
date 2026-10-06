@@ -50,7 +50,7 @@ export const partnerPortalStory = defineStory({theme:'portal',plate:'light',
       tradeoff:{label:'Price of the solution',text:'Ambiguity still requires a buyer’s manual choice. Matching data cannot guarantee compatibility.'},
       nextEvidence:{label:'Next check',text:'Keep the source text on created orders, then measure time and errors. There is no business baseline yet.'},
     }},
-  ],prototype:{label:'Open the current demo on synthetic data',href:'https://b2b-partner-portal-five.vercel.app/'},
+  ],prototype:{label:'Open the live demo',href:'https://b2b-partner-portal-five.vercel.app/'},
 });
 
 /**

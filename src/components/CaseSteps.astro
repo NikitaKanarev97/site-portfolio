@@ -198,6 +198,21 @@ const pad = (n: number) => String(n).padStart(2, '0');
     background: currentColor;
     transform-origin: center;
   }
+  /* Без движения (reduce, нет JS, сцена не помещается) шаги идут списком,
+     но на десктопе в той же композиции, что и сцена: текст слева, кадр
+     справа. Иначе транскрипт и карточка одобрения растягивались на всю
+     ширину крупнее собственного масштаба, а знак проверки висел над ними. */
+  @media (--bp-lg) {
+    .case-steps--checkpoint:not(.is-focused) .case-steps__step:not([data-scene='overview']) {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      gap: var(--space-12);
+      align-items: center;
+    }
+    .case-steps--checkpoint:not(.is-focused) .case-steps__step:not([data-scene='overview']) .case-steps__text { display: block; grid-column: auto; }
+    .case-steps--checkpoint:not(.is-focused) .case-steps__step:not([data-scene='overview']) .case-steps__shot { margin: 0; grid-column: auto; }
+    .case-steps--checkpoint:not(.is-focused) .case-steps__step:not([data-scene='overview']) .case-steps__body { margin-block-start: var(--flow-text); }
+  }
   .case-steps--checkpoint.is-focused {
     position: relative;
     isolation: isolate;

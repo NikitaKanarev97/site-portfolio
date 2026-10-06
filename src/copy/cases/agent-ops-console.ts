@@ -424,19 +424,19 @@ const agentOpsMaterial = {
       {
         label: 'Check the promise', thesis: 'The promise and the proof',
         body: 'A hard case once crossed five tools. I brought the conversation, trace and verdict together; the transcript flags the unsupported claim.',
-        layout: 'wide', scene: 'workspace', caption: 'Workspace / transcript · $420 fixture',
+        layout: 'wide', scene: 'workspace', caption: 'Conversation, trace and verdict in one workspace',
         shot: { src: `${pilot}/run-context.webp`, srcNarrow: `${pilot}/transcript-framed-390.webp`, alt: 'Run workspace with conversation, evidence and verdict; narrow view shows its complete transcript panel', device: 'panel' },
       },
       {
         label: 'Read the promise', thesis: 'The promise lacks proof',
         body: 'The conversation stays intact. An unsupported refund claim is flagged at the exact message, so the reviewer sees what the customer was told.',
-        layout: 'wide', scene: 'promise', caption: 'Same $420 fixture · complete transcript', desktopOnly: true,
+        layout: 'wide', scene: 'promise', caption: 'The full conversation, with the unsupported promise flagged', desktopOnly: true,
         shot: { src: `${pilot}/transcript-framed-1440.webp`, srcNarrow: `${pilot}/transcript-framed-390.webp`, alt: 'Six real prototype turns, with an unsupported refund promise explicitly flagged', device: 'panel' },
       },
       {
         label: 'Approve the consequence', thesis: 'Money waits for a person',
         body: 'A refund waits for a person. The amount, policy and customer message are visible before approval. Rejecting remains available even when evidence is incomplete.',
-        layout: 'split', scene: 'decision', caption: '$340 approval · separate prototype fixture',
+        layout: 'split', scene: 'decision', caption: 'The $340 refund, waiting for approval',
         shot: { src: `${pilot}/approval-card-1440.webp`, srcNarrow: `${pilot}/approval-card-390.webp`, alt: 'Complete $340 refund approval card: customer, reason, policy, billing, history and both actions', device: 'panel' },
       },
     ],

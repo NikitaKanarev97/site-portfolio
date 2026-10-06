@@ -219,7 +219,7 @@ export function makeLearnStory(lang: 'en' | 'ru'): CaseStory {
     blocks: [
       { id: 'audit-direction', type: 'comparison', evidenceId: 'learn-audit', mediaId: 'archive-catalog', motion: 'reveal',
         payload: {
-          thesis: { label: t('Audit → direction', 'Аудит → направление'), thesis: t('Start with the specialist’s task', 'Начать с рабочей задачи'),
+          thesis: { label: t('Audit → direction', 'Аудит → направление'), thesis: t('Start with the specialist’s task', 'Сначала — задача специалиста'),
             body: t('The archive leads with courses, ratings and rewards. I reframed entry around a question or programme, with the answer open to read without an account.', 'Архивный каталог начинает с курсов, рейтингов и наград. Я перенёс вход на рабочий вопрос или программу: полезный ответ доступен ещё до авторизации.') },
           issue: { src: '/media/rebuild/learn/archive-catalog.webp', alt: t('Archived Russian course catalogue with ratings and reward points', 'Архивный каталог курсов с рейтингом и баллами'),
             marks: [{ x: 20, y: 17, text: t('Courses define the entry', 'Вход определён курсами') }, { x: 25, y: 90, text: t('Points accompany the material', 'Баллы сопровождают материал') }],
@@ -237,7 +237,7 @@ export function makeLearnStory(lang: 'en' | 'ru'): CaseStory {
           { label: t('Programme', 'Программа'), thesis: t('Keep the sequence around the answer', 'Сохранить порядок вокруг ответа'), layout: 'wide',
             body: t('Inside the programme, the same material gains a curriculum and a current position. Its content stays intact.', 'Внутри программы тот же материал получает оглавление и текущую позицию. Содержание сохраняется целиком.'),
             shot: shot('programme', 'The same ONVIF answer in the programme, position 3 of 11', 'Тот же ответ в программе, позиция 3 из 11'), caption: t('Programme view · the same material ID.', 'Программа · тот же ID материала.') },
-          { label: t('Completion', 'Завершение'), thesis: t('Reading does not finish a unit', 'Чтение не завершает единицу'), layout: 'wide',
+          { label: t('Completion', 'Завершение'), thesis: t('Reading does not finish a unit', 'Прочитать — ещё не завершить'), layout: 'wide',
             body: t('Complete and continue records an explicit decision. Simply opening or scrolling through the material does not earn completion.', '«Завершить и продолжить» фиксирует явное решение. Открытие материала и прокрутка сами по себе не засчитывают завершение.'),
             shot: shot('completion', 'End of the same ONVIF material with the explicit completion button', 'Конец того же материала с явной кнопкой завершения'), caption: t('Completion is a deliberate action at the end.', 'Завершение — осознанное действие в конце материала.') },
         ] } },
@@ -268,7 +268,7 @@ export function makeLearnStory(lang: 'en' | 'ru'): CaseStory {
           body: t('The landing introduces the same material and programme. A real product example carries the promise into the experience.', 'Лендинг знакомит с теми же материалом и программой. Реальный пример продукта переносит обещание в рабочий опыт.') },
           shot: { layout: 'desktop', items: [shot('landing','Learn landing with a real material and programme preview','Лендинг Learn с реальными примерами материала и программы')], caption: t('The public introduction uses its own editorial scale.', 'Публичное представление использует собственный редакционный масштаб.') } } },
       { id: 'honest-result', type: 'outcome', evidenceId: 'learn-validation', motion: 'static',
-        payload: { result: { label: t('Result', 'Результат'), thesis: t('Both routes work', 'Рабочая модель; эффект ещё не измерен') },
+        payload: { result: { label: t('Result', 'Результат'), thesis: t('Both routes work', 'Модель работает, эффект не измерен') },
           evidence: { label: t('Evidence', 'Подтверждение'), text: t('Both routes are built and checked in every state, at every screen size. Usability with specialists and learning outcomes are not yet measured.', 'Оба маршрута собраны и проверены во всех состояниях на всех размерах экрана. Юзабилити со специалистами и учебный эффект ещё не измерены.') },
           tradeoff: { label: t('Cost', 'Цена решения'), text: t('Explicit completion costs one extra action. In the prototype, progress lives in the browser; accounts and certificates are simulated.', 'Явное завершение стоит одного лишнего действия. В прототипе прогресс живёт в браузере; аккаунт и сертификаты симулированы.') },
           nextEvidence: { label: t('Next evidence', 'Следующая проверка'), text: t('Test with specialists, validate the question bank, measure answer finding and programme continuation.', 'Тест со специалистами, проверка банка вопросов, замер поиска ответа и продолжения программы.') },
