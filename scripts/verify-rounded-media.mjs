@@ -31,11 +31,12 @@ try {
           if (rect(surface).width <= 0) continue;
           const edge = surface.firstElementChild, css = getComputedStyle(edge), radius = parseFloat(getComputedStyle(surface).borderTopLeftRadius);
           if (!close(radius, 16)) failures.push('Inconsistent media radius');
-          if (['Top','Right','Bottom','Left'].some(side => parseFloat(css[`padding${side}`]) < radius)) failures.push('Original pixels enter rounded corners');
+          if (['Top','Right','Bottom','Left'].some(side => parseFloat(css[`padding${side}`]) !== 0)) failures.push('Screenshot has an added field');
+          if (getComputedStyle(surface).backgroundColor !== 'rgba(0, 0, 0, 0)') failures.push('Screenshot has a painted extension');
           const image = edge.querySelector('img');
           if (image) {
             const radius = parseFloat(getComputedStyle(image).borderTopLeftRadius);
-            if (!image.closest('.media-frame') && !close(radius, 8)) failures.push('Inner screenshot has square corners');
+            if (!close(radius, 0)) failures.push('Screenshot has a second rounded contour');
             if (!image.naturalWidth) failures.push(`Broken image ${image.currentSrc}`);
             else {
               // Agent cover panels rotate as a whole; bounding boxes include that transform.

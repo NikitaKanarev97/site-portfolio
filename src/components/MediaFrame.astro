@@ -200,10 +200,6 @@ const wrapperProps = zoomable
  * Граница на единицу меньше bp-md: диапазоны не пересекаются.
  */
 const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
-if (zoomable) {
-  const zoomSize = await frameSize(zoomSrc ?? src);
-  Object.assign(wrapperProps, { 'data-zoom-surface': zoomSize?.surface });
-}
 ---
 
 <figure
@@ -223,7 +219,7 @@ if (zoomable) {
 >
   <div class="media-frame__frame">
     <Wrapper {...wrapperProps}>
-    <ScreenSurface src={src} srcNarrow={srcMobile} extend={ratio === 'natural' && !framed}>
+    <ScreenSurface native={ratio !== 'natural' || framed}>
     <div class="media-frame__mask ds-media-mask">
       {
         video ? (
@@ -410,7 +406,7 @@ if (zoomable) {
   }
 
   /* Art direction: соотношение под bp-md перебивает основное. */
-  .media-frame--natural .media-frame__mask { border-radius: var(--radius-screen); background: transparent; }
+  .media-frame--natural .media-frame__mask { border-radius: 0; background: transparent; }
 
   @media (--below-bp-md) {
     .media-frame--mobile-wide .media-frame__mask {

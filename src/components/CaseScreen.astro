@@ -30,7 +30,7 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
 
 <div
   class:list={['case-screen', `case-screen--${item.device}`, native && 'case-screen--native', item.srcNarrow && narrowAt === 'lg' && 'case-screen--narrow-tablet', className]}
-  style={`--ar: ${ar.toFixed(4)}; --ar-narrow: ${narrowSize ? narrowSize.width / narrowSize.height : ar}; ${item.nativeWidth ? `max-inline-size:calc(${item.nativeWidth}px + ${native ? '0px' : '(var(--frame-inset) + var(--screen-inset)) * 2'});` : ''}`}
+  style={`--ar: ${ar.toFixed(4)}; --ar-narrow: ${narrowSize ? narrowSize.width / narrowSize.height : ar}; ${item.nativeWidth ? `max-inline-size:calc(${item.nativeWidth}px + ${native ? '0px' : 'var(--frame-inset) * 2'});` : ''}`}
   data-motion={!native && !href ? 'fade-image' : undefined}
 >
   {item.video ? (
@@ -40,10 +40,10 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
   ) : (
     <a class:list={['case-screen__open', href && 'case-screen__open--case']} href={href ?? item.src} data-astro-reload={href ? undefined : true} data-zoom-trigger={href ? undefined : true} data-zoom-src={href ? undefined : item.src}
       data-zoom-alt={item.alt} data-zoom-alt-narrow={item.altNarrow}
-      data-zoom-surface={size?.surface} data-zoom-surface-narrow={narrowSize?.surface}
+      data-zoom-native={native || undefined}
       data-zoom-caption={caption} aria-label={href ? linkLabel : `${copy.zoom.open}: ${item.alt}`}>
       <div class="case-screen__media">
-        <ScreenSurface src={item.src} srcNarrow={item.srcNarrow} narrowAt={narrowAt} extend={!native}>
+        <ScreenSurface native={native}>
         <picture>
           {item.srcNarrow && <source media={narrowMedia} srcset={item.srcNarrow} width={narrowSize?.width} height={narrowSize?.height} />}
           <img src={item.src} alt={item.alt} width={size?.width} height={size?.height}
@@ -77,7 +77,7 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
   .case-screen__open--case::after { content: ''; position: absolute; inset: 0; border-radius: var(--radius-lg); }
   .case-screen__media { position: relative; }
   .case-screen__media picture { display: contents; }
-  .case-screen img { display: block; inline-size: 100%; block-size: auto; object-fit: contain; border-radius: var(--radius-screen); }
+  .case-screen img { display: block; inline-size: 100%; block-size: auto; object-fit: contain; }
   .case-screen__text { display: grid; gap: var(--space-2); }
   .case-screen__text p { margin: 0; }
   .case-screen__action { display: flex; justify-content: space-between; gap: var(--space-3); color: var(--text-subtle); }

@@ -2,11 +2,17 @@
  * Keep the source theme and typography; only surrounding page paint is removed.
  * No CSS mask, pixel editing or replacement product controls.
  */
-export async function captureNativeAlpha(page, target, {bleed = 0} = {}) {
+export async function captureNativeAlpha(page, target, {bleed = 0, cropBorder = false} = {}) {
   await page.evaluate(() => document.fonts.ready);
   const viewport = page.viewportSize();
   await page.mouse.move(viewport.width - 1, viewport.height - 1);
+  const border = await target.evaluate(node => {
+    const css = getComputedStyle(node);
+    return Object.fromEntries(['Top', 'Right', 'Bottom', 'Left'].map(side => [side.toLowerCase(), parseFloat(css[`border${side}Width`]) || 0]));
+  });
   await target.evaluate((node, bleed) => {
+    const saved = [];
+    const remember = element => saved.push([element, element.getAttribute('style')]);
     const width = node.getBoundingClientRect().width;
     const frame = document.createElement('div');
     frame.dataset.nativeAlphaCapture = '';
@@ -21,15 +27,34 @@ export async function captureNativeAlpha(page, target, {bleed = 0} = {}) {
     node.parentElement.append(frame);
     let kept = frame;
     for (let parent = frame.parentElement; parent; parent = parent.parentElement) {
-      for (const child of parent.children) if (child !== kept) child.style.setProperty('display','none','important');
+      for (const child of parent.children) if (child !== kept) { remember(child); child.style.setProperty('display','none','important'); }
+      remember(parent);
       parent.style.setProperty('background','transparent','important');
       parent.style.setProperty('box-shadow','none','important');
       parent.style.setProperty('border-color','transparent','important');
+      parent.style.setProperty('transform','none','important');
       kept = parent;
     }
+    window.__restoreNativeCapture = () => {
+      frame.remove();
+      for (const [element, style] of saved.reverse()) {
+        if (style === null) element.removeAttribute('style');
+        else element.setAttribute('style', style);
+      }
+      delete window.__restoreNativeCapture;
+    };
   }, bleed);
-  const frame = page.locator('[data-native-alpha-capture]');
-  const bounds = await frame.boundingBox();
-  if (bounds.x !== 0 || bounds.y !== 0) throw Error(`Capture origin must be integer 0,0: ${JSON.stringify(bounds)}`);
-  return frame.screenshot({animations:'disabled',omitBackground:true});
+  try {
+    const frame = page.locator('[data-native-alpha-capture]');
+    const bounds = await frame.boundingBox();
+    if (bounds.x !== 0 || bounds.y !== 0) throw Error(`Capture origin must be integer 0,0: ${JSON.stringify(bounds)}`);
+    if (!cropBorder) return await frame.screenshot({animations:'disabled',omitBackground:true});
+    return await page.screenshot({animations:'disabled',omitBackground:true,clip:{
+      x: border.left, y: border.top,
+      width: bounds.width - border.left - border.right,
+      height: bounds.height - border.top - border.bottom,
+    }});
+  } finally {
+    await page.evaluate(() => window.__restoreNativeCapture?.());
+  }
 }

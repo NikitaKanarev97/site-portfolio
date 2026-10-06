@@ -17,9 +17,7 @@ const report = { captures:[], checks:[], corrections: [
 ]};
 const vetCSS = `
   [data-clean-frame] { position:absolute; inset-block-start:0; inset-inline-start:0; z-index:2147483647; display:grid; gap:var(--space-3); background:var(--surface-default); }
-  [data-clean-frame] > * { width:100%; min-width:0; margin:0; }
-  /* Strip only the header's outer capture margin, aligning source crops. */
-  [data-clean-frame] [class*="_visitHeader_"] { padding:0; }
+  [data-clean-frame] > * { min-width:0; }
   /* A complete document capture uses the action bar's natural flow position. */
   [data-clean-frame] [class*="_quickTraceActions_"] { position:static; }
 `;
@@ -53,8 +51,18 @@ async function compose(page,selectors) {
     if(nodes.some(node=>!node)) throw new Error(`Missing source DOM: ${selectors}`);
     const wrapper=document.createElement('div');
     wrapper.dataset.cleanFrame='';
-    wrapper.style.width=Math.min(...nodes.map(node=>node.getBoundingClientRect().width))+'px';
-    for(const node of nodes) wrapper.append(node.cloneNode(true));
+    // Preserve the native header padding and the body offset relative to it.
+    // A tight crop followed by a rounded mask used to clip the first letter.
+    const boxes=nodes.map(node=>node.getBoundingClientRect());
+    const left=Math.min(...boxes.map(box=>box.left));
+    wrapper.style.width=(Math.max(...boxes.map(box=>box.right))-left)+'px';
+    for(const [i,node] of nodes.entries()) {
+      const copy=node.cloneNode(true);
+      copy.style.width=boxes[i].width+'px';
+      copy.style.margin='0';
+      copy.style.marginLeft=(boxes[i].left-left)+'px';
+      wrapper.append(copy);
+    }
     document.body.append(wrapper);
   },selectors);
 }
