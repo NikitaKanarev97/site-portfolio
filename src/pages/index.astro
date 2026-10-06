@@ -68,7 +68,7 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
       </a>)}
     </nav>
 
-    <AuthorPortrait src={home.hero.portrait.src} alt={home.hero.portrait.alt}
+    <AuthorPortrait src={home.hero.portrait.src} srcMobile={home.hero.portrait.srcMobile} alt={home.hero.portrait.alt}
       lines={home.hero.portrait.headline}
       action={{ href: home.hero.portrait.href, label: home.hero.portrait.link }}
       class="hero__profile" at="0.2" />

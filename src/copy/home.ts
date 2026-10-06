@@ -64,6 +64,7 @@ export const home = {
      */
     portrait: {
       src: '/media/about/portrait.webp',
+      srcMobile: '/media/about/portrait-mobile.webp',
       alt: 'Nikita Kanarev in a taupe knit sweater against a light background',
       headline: ['Research.', 'Design.', 'Build.'],
       link: 'About me and my approach',

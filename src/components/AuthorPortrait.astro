@@ -4,17 +4,19 @@ import MediaFrame from './MediaFrame.astro';
 import TextLink from './TextLink.astro';
 interface Props {
   src: string;
+  /** Меньший файл под bp-md: на телефоне фото 128 px, а не 768. */
+  srcMobile?: string;
   alt: string;
   lines: string[];
   action: { href: string; label: string };
   class?: string;
   at?: string;
 }
-const { src, alt, lines, action, class: className, at } = Astro.props;
+const { src, srcMobile, alt, lines, action, class: className, at } = Astro.props;
 ---
 
 <aside class:list={['author-portrait', className]} data-motion="fade" data-motion-at={at}>
-  <MediaFrame src={src} alt={alt} ratio="portrait" loading="eager"
+  <MediaFrame src={src} srcMobile={srcMobile} alt={alt} ratio="portrait" loading="eager"
     counterScale={false} reveal={false} class="author-portrait__photo" />
   <div class="author-portrait__copy">
     <p class="ds-heading-2xl author-portrait__statement">

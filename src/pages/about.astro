@@ -38,7 +38,7 @@ const chapters = [
         {about.chapterLabels[index]}<span aria-hidden="true">↓</span>
       </a>)}
     </nav>
-    <AuthorPortrait src={about.portrait.src} alt={about.portrait.alt}
+    <AuthorPortrait src={about.portrait.src} srcMobile={about.portrait.srcMobile} alt={about.portrait.alt}
       lines={about.profile.headline} action={{ href: about.profile.cvHref, label: about.profile.cv }}
       class="intro__profile" />
     <ProseBlock variant="lead" class="intro__lead"><p>{about.intro.lead}</p></ProseBlock>

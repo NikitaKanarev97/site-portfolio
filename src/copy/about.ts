@@ -89,6 +89,7 @@ export const about = {
    */
   portrait: {
     src: '/media/about/portrait.webp',
+    srcMobile: '/media/about/portrait-mobile.webp',
     alt: `${NAME} — head-and-shoulders portrait against a plain background`,
   },
 
