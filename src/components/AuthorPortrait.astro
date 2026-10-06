@@ -50,7 +50,10 @@ const { src, alt, lines, action, class: className, at } = Astro.props;
       gap: var(--space-8);
     }
   }
+  /* Desktop: фото 2/5, тезис стоит у нижнего края фото — подпись к
+     портрету, а не текст, висящий посередине высокой фотографии. Уже
+     фото держит портрет в первом экране 1440 × 900 целиком. */
   @media (--bp-lg) {
-    .author-portrait { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .author-portrait { grid-template-columns: 2fr 3fr; align-items: end; gap: var(--space-8); }
   }
 </style>
