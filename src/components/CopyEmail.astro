@@ -90,11 +90,7 @@ const [addressLocal, addressDomain] = email.split('@');
   >
     {
       isAddress && addressDomain ? (
-        <Fragment>
-          {addressLocal}
-          <wbr />
-          {`@${addressDomain}`}
-        </Fragment>
+        <Fragment>{addressLocal}<wbr />{`@${addressDomain}`}</Fragment>
       ) : (
         buttonText
       )

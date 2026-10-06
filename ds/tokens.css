@@ -498,6 +498,22 @@
 .ds-meta-sm,
 .ds-meta-xs { font-family: var(--font-meta); }
 
+/* Перенос — свойство роли, а не компонента. Заголовки выравнивают строки
+   по длине, текст не оставляет одно слово в последней строке. Без этого
+   правило жило в половине компонентов, и висячие слова шли по всем
+   маршрутам (замер 06.10.2026: 365 мест на 1440/1024/390, EN+RU). */
+.ds-display-7xl,
+.ds-display-6xl,
+.ds-display-5xl,
+.ds-heading-4xl,
+.ds-heading-3xl,
+.ds-heading-2xl,
+.ds-heading-xl { text-wrap: balance; }
+
+.ds-body-lg,
+.ds-body-base,
+.ds-body-sm { text-wrap: pretty; }
+
 .ds-display-7xl { font-size: var(--size-7xl); font-weight: var(--weight-extrabold); line-height: var(--lh-display); letter-spacing: var(--tracking-display); }
 .ds-display-6xl { font-size: var(--size-6xl); font-weight: var(--weight-extrabold); line-height: var(--lh-display); letter-spacing: var(--tracking-display); }
 .ds-display-5xl { font-size: var(--size-5xl); font-weight: var(--weight-bold);      line-height: var(--lh-display); letter-spacing: var(--tracking-tight); }
