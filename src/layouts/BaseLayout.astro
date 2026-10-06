@@ -11,6 +11,11 @@
  * Нативная анимация View Transitions выключена на <html>: хореографию
  * переходов ведёт GSAP через astro:before-preparation и astro:after-swap
  * (ds/motion-concept.md §2).
+ *
+ * Имя снимка корня (transition:name="site") одно на все маршруты. Без него
+ * Astro нумерует его по дереву компонентов (главная -1, кейс -3), пара не
+ * совпадает, и новый снимок страницы с дырой на месте обложки ложится
+ * поверх общего перехода карточка → обложка: экран белеет на всю секунду.
  */
 import { ClientRouter } from 'astro:transitions';
 import MediaZoom from '../components/MediaZoom.astro';
@@ -93,7 +98,7 @@ const alternates = canonical ? alternatesFor(Astro.url.pathname) : [];
 const image = new URL(ogImageFor(ogCard), Astro.site);
 ---
 
-<html lang={lang} transition:animate="none">
+<html lang={lang} transition:name="site" transition:animate="none">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

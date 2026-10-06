@@ -953,12 +953,14 @@ document.addEventListener('astro:before-preparation', (event) => {
   // Кнопка «назад» и «вперёд»: позицию восстанавливает сам роутер, а
   // вступительный такт на уже виденной странице не играет (§4.3).
   restoredView = event.navigationType === 'traverse';
-  const link = event.sourceElement?.closest('[data-case-next]');
+  // Источник общего перехода: полоса «следующий кейс» или карточка кейса
+  // на главной — обе несут цвет кейса и перетекают в его обложку.
+  const link = event.sourceElement?.closest('[data-case-next], [data-case-card]');
   sharedTransition = Boolean(link)
     || (restoredView && location.pathname.startsWith('/preview/') && event.to.pathname.startsWith('/preview/'));
   // Named snapshots own this transition; body fades would erase their source.
   if (sharedTransition) {
-    sharedKey = link?.dataset.caseNext || sharedKey;
+    sharedKey = link?.dataset.caseNext || link?.dataset.caseCard || sharedKey;
     selectSnapshot(document);
     return;
   }
@@ -973,8 +975,8 @@ document.addEventListener('astro:before-preparation', (event) => {
 document.addEventListener('astro:before-swap', teardownPage);
 document.addEventListener('astro:before-swap', (event) => restoreMoreCases(event.newDocument));
 function selectSnapshot(doc) {
-  doc.querySelectorAll('[data-case-cover], [data-case-next]').forEach(el => {
-    const key = el.dataset.caseCover || el.dataset.caseNext;
+  doc.querySelectorAll('[data-case-cover], [data-case-next], [data-case-card]').forEach(el => {
+    const key = el.dataset.caseCover || el.dataset.caseNext || el.dataset.caseCard;
     el.style.viewTransitionName = key === sharedKey ? key : 'none';
   });
 }

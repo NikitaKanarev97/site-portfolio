@@ -13,7 +13,7 @@ const proof = item.meta.at(-1)!;
 const year = item.meta[1];
 const {surface, tone} = caseThemes[item.theme];
 ---
-<article class:list={['featured-case', `featured-case--${item.theme}`]} id={`work-${slug}`} data-tone={tone} style={`--work-surface:${surface}`} aria-labelledby={`title-${slug}`}>
+<article class:list={['featured-case', `featured-case--${item.theme}`]} id={`work-${slug}`} data-tone={tone} style={`--work-surface:${surface}`} aria-labelledby={`title-${slug}`} data-case-card={`case-${item.theme}`}>
   <div class="featured-case__head">
     <div class="featured-case__identity">
       <span class="ds-meta-xs featured-case__number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>

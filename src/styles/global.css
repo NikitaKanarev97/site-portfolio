@@ -190,21 +190,31 @@ body.ds-scroll-locked { overflow: hidden; }
    ============================================================ */
 
 @media (prefers-reduced-motion: no-preference) {
+  /* Все пять тем: до 06.10.2026 цвет перехода был только у двух, и
+     Learn, Vet, Pawly растворялись без своей поверхности. */
   ::view-transition-group(case-agent),
-  ::view-transition-group(case-portal) {
+  ::view-transition-group(case-portal),
+  ::view-transition-group(case-learn),
+  ::view-transition-group(case-vet),
+  ::view-transition-group(case-pawly) {
     overflow: clip;
     animation-duration: var(--case-transition-duration);
     animation-timing-function: var(--case-transition-ease);
   }
   ::view-transition-group(case-agent) { background: var(--surface-cover-agent); }
   ::view-transition-group(case-portal) { background: var(--surface-cover-portal); }
-  ::view-transition-old(case-agent), ::view-transition-old(case-portal) {
+  ::view-transition-group(case-learn) { background: var(--surface-cover-learn); }
+  ::view-transition-group(case-vet) { background: var(--surface-cover-vet); }
+  ::view-transition-group(case-pawly) { background: var(--surface-cover-pawly); }
+  ::view-transition-old(case-agent), ::view-transition-old(case-portal),
+  ::view-transition-old(case-learn), ::view-transition-old(case-vet), ::view-transition-old(case-pawly) {
     inline-size: 100%;
     block-size: auto;
     animation: case-cover-out var(--case-transition-out) var(--case-transition-ease) both;
     mix-blend-mode: normal;
   }
-  ::view-transition-new(case-agent), ::view-transition-new(case-portal) {
+  ::view-transition-new(case-agent), ::view-transition-new(case-portal),
+  ::view-transition-new(case-learn), ::view-transition-new(case-vet), ::view-transition-new(case-pawly) {
     inline-size: 100%;
     block-size: auto;
     animation: case-cover-in var(--case-transition-in) var(--case-transition-ease) var(--case-transition-out) both;
