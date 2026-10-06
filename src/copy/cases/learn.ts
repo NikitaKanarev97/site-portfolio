@@ -220,7 +220,7 @@ export function makeLearnStory(lang: 'en' | 'ru'): CaseStory {
       { id: 'audit-direction', type: 'comparison', evidenceId: 'learn-audit', mediaId: 'archive-catalog', motion: 'reveal',
         payload: {
           thesis: { label: t('Audit → direction', 'Аудит → направление'), thesis: t('Start with the specialist’s task', 'Начать с рабочей задачи'),
-            body: t('The archive leads with courses, ratings and rewards. I reframed entry around a question or programme, with the answer available before sign-in.', 'Архивный каталог начинает с курсов, рейтингов и наград. Я перенёс вход на рабочий вопрос или программу: полезный ответ доступен ещё до авторизации.') },
+            body: t('The archive leads with courses, ratings and rewards. I reframed entry around a question or programme, with the answer open to read without an account.', 'Архивный каталог начинает с курсов, рейтингов и наград. Я перенёс вход на рабочий вопрос или программу: полезный ответ доступен ещё до авторизации.') },
           issue: { src: '/media/rebuild/learn/archive-catalog.webp', alt: t('Archived Russian course catalogue with ratings and reward points', 'Архивный каталог курсов с рейтингом и баллами'),
             marks: [{ x: 20, y: 17, text: t('Courses define the entry', 'Вход определён курсами') }, { x: 25, y: 90, text: t('Points accompany the material', 'Баллы сопровождают материал') }],
             caption: t('The archived catalogue: courses and points come first.', 'Архивный каталог: впереди курсы и баллы.') },

@@ -21,14 +21,15 @@ const EN = 'a|an|the|I|of|to|in|on|at|by';
 const SHORT = new RegExp(`(^|[\\s(«“"—])(${RU}|${EN})[ ](?=\\S)`, 'gi');
 const DASH = /[ ](—|–)(?=\s)/g;
 
-// Короткая фраза от пяти слов — лид, подпись: последнее слово не остаётся
-// в строке одно. Длинные абзацы сюда не попадают, их держит text-wrap:
-// pretty роли; узкая колонка в три строки — нет, balance там бессилен.
-// Заголовки до четырёх слов правило не трогает: склейка «a stable
-// document» в узкой колонке оставляла одним первое слово.
-const LAST = /(\S)[ ](\S{1,12})(\s*)$/;
+// Короткая фраза от четырёх слов — заголовок, лид, подпись: последнее слово
+// не остаётся в строке одно. Длинные абзацы сюда не попадают, их держит
+// text-wrap: pretty роли; узкая колонка в три строки — нет, balance там
+// бессилен. Склеенный хвост не длиннее TAIL_MAX знаков: «a stable document»
+// одним куском в узкой колонке выталкивал одним уже первое слово.
+const LAST = /((?:[^\s]+ )*[^\s]+)[ ]([^\s]{1,12})(\s*)$/;
 const PHRASE_MAX = 70;
-const PHRASE_MIN_WORDS = 5;
+const PHRASE_MIN_WORDS = 4;
+const TAIL_MAX = 14;
 const NBSP = String.fromCharCode(0xa0);
 
 function typeset(text: string): string {
@@ -36,7 +37,14 @@ function typeset(text: string): string {
   // после того, как первое уже привязано.
   let out = text.replace(SHORT, `$1$2${NBSP}`).replace(SHORT, `$1$2${NBSP}`).replace(DASH, `${NBSP}$1`);
   const trimmed = out.trim();
-  if (trimmed.length <= PHRASE_MAX && trimmed.split(/\s+/).length >= PHRASE_MIN_WORDS) out = out.replace(LAST, `$1${NBSP}$2$3`);
+  const words = trimmed.split(/\s+/).length;
+  if (trimmed.length <= PHRASE_MAX && words >= PHRASE_MIN_WORDS) {
+    // before — предпоследний кусок вместе со словами, уже привязанными к нему.
+    // Предел длины хвоста — только для четырёх слов: в длинной фразе
+    // остальным словам есть где встать.
+    out = out.replace(LAST, (all, before: string, last: string, tail: string) =>
+      words > PHRASE_MIN_WORDS || before.length + 1 + last.length <= TAIL_MAX ? `${before}${NBSP}${last}${tail}` : all);
+  }
   return out;
 }
 
