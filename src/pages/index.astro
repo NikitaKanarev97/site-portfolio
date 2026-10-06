@@ -24,7 +24,6 @@ import PageShell from '../layouts/PageShell.astro';
 import MediaFrame from '../components/MediaFrame.astro';
 import AuthorPortrait from '../components/AuthorPortrait.astro';
 import FeaturedCase from '../components/FeaturedCase.astro';
-import MetaList from '../components/MetaList.astro';
 import ProjectDialog from '../components/ProjectDialog.astro';
 import ProseBlock from '../components/ProseBlock.astro';
 import SectionHead from '../components/SectionHead.astro';
@@ -183,23 +182,11 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
 
               <div class="dev__body">
                 <h3 class="ds-heading-xl dev__name">{item.name}</h3>
-
-                <MetaList
-                  items={[
-                    {
-                      term: home.development.roleLabel,
-                      value: home.development.roleValue,
-                      tone: 'strong',
-                    },
-                  ]}
-                  layout="stacked"
-                  class="dev__role"
-                />
+                {/* DEV-02: роль у каждой сборки — обычной строкой, без
+                    моноширинной метки «Role»: метка над одной и той же
+                    фразой четыре раза подряд читалась как таблица. */}
+                <p class="ds-body-sm dev__role">{home.development.roleValue}</p>
               </div>
-
-              <span class="dev__cta ds-meta-xs" aria-hidden="true">
-                {home.development.openLabel}
-              </span>
             </a>
           </li>
         ))
@@ -308,7 +295,7 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
      кнопка по умолчанию сжимается по содержимому и центрует его. */
   .dev__link {
     display: grid;
-    grid-template-columns: var(--space-16) 1fr auto;
+    grid-template-columns: var(--space-16) 1fr;
     align-items: center;
     gap: var(--space-3);
     width: 100%;
@@ -335,17 +322,19 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     color: var(--text-default);
   }
 
-  .dev__cta {
-    color: var(--text-meta);
-    white-space: nowrap;
+  .dev__role {
+    color: var(--text-subtle);
   }
 
-  /* Десктоп: четыре карточки в ряд, превью сверху. */
+  /* Десктоп: две карточки в ряд, превью сверху. Четыре в ряд давали кадр
+     шириной 300 px — визуальную работу было не разглядеть, а именно эта
+     секция показывает визуальный дизайн. Подпись «Details» снята: карточка
+     открывает разбор по клику, скринридеру это говорит aria-label. */
   @media (--bp-md) {
     .dev__list {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: var(--space-6);
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-12) var(--gutter);
     }
 
     .dev__link {
@@ -362,9 +351,21 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
      строки больше нет: подсветка ряда целиком читается как выделение в списке,
      а не как переход, и на десктопе четыре карточки её всё равно не получали.
      Отклик на тап даёт ds-pressable. */
+  .dev__link :global(.dev__preview) {
+    transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
+  }
+  /* Волосяной контур поверх кадра: у светлых сборок (Common) белая
+     страница иначе сливается с фоном и кадр теряет край. */
+  .dev__link :global(.media-frame__mask) {
+    outline: var(--border-width) solid var(--border-default);
+    outline-offset: calc(var(--border-width) * -1);
+  }
   @media (--can-hover) {
     .dev__link:hover .dev__name {
       color: var(--text-link-hover);
+    }
+    .dev__link:hover :global(.dev__preview) {
+      transform: translateY(calc(var(--space-1) * -1));
     }
   }
 
