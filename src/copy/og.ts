@@ -35,6 +35,13 @@ export interface OgCard {
   eyebrow: string;
   /** Название. Display-ступень, до трёх строк. */
   title: string;
+  /**
+   * Вторая строка названия цветом ссылки — только у главной: карточка
+   * повторяет первый экран сайта, «Complex systems. / Clear decisions.»
+   * (06.10.2026; до этого на главной стояло одно имя, и в ленте карточка
+   * не отвечала, чем человек занимается).
+   */
+  accent?: string;
   /** Подпись автора. На главной вместо неё идёт специализация. */
   footnote: string;
 }
@@ -46,9 +53,10 @@ const BYLINE_RU = `${NAME_RU} — продуктовый дизайнер`;
 export const OG_CARDS: readonly OgCard[] = [
   {
     id: 'default',
-    eyebrow: 'Portfolio',
-    title: NAME,
-    footnote: `${home.hero.role} · ${site.footer.location}, open to relocation`,
+    eyebrow: `${NAME} · ${home.hero.role}`,
+    title: home.hero.headline[0],
+    accent: home.hero.headline[1],
+    footnote: `B2B product design · ${site.footer.location}, open to relocation`,
   },
   {
     id: 'about',
@@ -64,9 +72,10 @@ export const OG_CARDS: readonly OgCard[] = [
   })),
   {
     id: 'default-ru',
-    eyebrow: 'Портфолио',
-    title: NAME_RU,
-    footnote: homeRu.hero.role,
+    eyebrow: `${NAME_RU} · ${homeRu.hero.role}`,
+    title: homeRu.hero.headline[0],
+    accent: homeRu.hero.headline[1],
+    footnote: 'Продуктовый дизайн B2B-систем',
   },
   {
     id: 'about-ru',

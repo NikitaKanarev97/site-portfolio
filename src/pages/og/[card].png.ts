@@ -127,10 +127,16 @@ export const GET: APIRoute = async ({ params }) => {
             props: {
               style: {
                 display: 'flex',
-                ...role('ds-display-6xl', titleSize(card.title)),
+                flexDirection: 'column',
+                ...role('ds-display-6xl', titleSize(card.title + (card.accent ?? ''))),
                 color: token('text-default'),
               },
-              children: card.title,
+              children: card.accent
+                ? [
+                    { type: 'div', props: { style: { display: 'flex' }, children: card.title } },
+                    { type: 'div', props: { style: { display: 'flex', color: token('text-link') }, children: card.accent } },
+                  ]
+                : card.title,
             },
           },
           {
