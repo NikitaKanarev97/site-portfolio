@@ -98,6 +98,7 @@
   --radius-md:   8px;
   --radius-lg:   16px;
   --radius-xl:   20px;
+  --radius-full: 9999px;
 
   /* Соотношение кадра. Одно число на весь продукт: 16/10 — пропорция
      реального скриншота, в ней снимаются кадры (scripts/shoot-case-frames.mjs),
@@ -277,6 +278,14 @@
   --ratio-cover-phone: var(--ratio-1-2);
   --elevation-artwork: var(--shadow-lg);
   --radius-artwork-detail: var(--radius-xl);
+
+  /* Метка увеличения. Подпись «Enlarge» под каждым кадром читалась как
+     служебный текст интерфейса разработчика; кадр кликабелен целиком,
+     курсор zoom-in говорит то же самое. Метка — круглая плашка в углу
+     кадра, появляется только при наведении (06.10.2026). */
+  --zoom-cue-size: var(--space-8);
+  --zoom-cue-radius: var(--radius-full);
+  --zoom-cue-elevation: var(--shadow-md);
   --stack-dim-near: var(--opacity-80);
   --stack-dim-far:  var(--opacity-60);
 

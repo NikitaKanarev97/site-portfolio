@@ -51,11 +51,13 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
         </picture>
         </ScreenSurface>
         <slot name="annotations" />
+        {!href && (
+          <span class="case-screen__cue" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg>
+          </span>
+        )}
       </div>
-      <div class="case-screen__text">
-        {caption && <p class="ds-body-sm">{caption}</p>}
-        <span class="ds-meta-xs case-screen__action" data-h-utility>{linkLabel ?? copy.zoom.open}<span aria-hidden="true">↗</span></span>
-      </div>
+      {caption && <div class="case-screen__text"><p class="ds-body-sm">{caption}</p></div>}
     </a>
   )}
 </div>
@@ -80,10 +82,32 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
   .case-screen img { display: block; inline-size: 100%; block-size: auto; object-fit: contain; }
   .case-screen__text { display: grid; gap: var(--space-2); }
   .case-screen__text p { margin: 0; }
-  .case-screen__action { display: flex; justify-content: space-between; gap: var(--space-3); color: var(--text-subtle); }
+  /* Метка увеличения вместо подписи «Enlarge ↗»: кадр кликабелен целиком,
+     курсор zoom-in и aria-label говорят то же самое, а видимый служебный
+     текст под каждым кадром читался как интерфейс разработчика. */
+  .case-screen__cue {
+    position: absolute;
+    inset-block-start: var(--space-3);
+    inset-inline-end: var(--space-3);
+    display: grid;
+    place-items: center;
+    inline-size: var(--zoom-cue-size);
+    block-size: var(--zoom-cue-size);
+    border-radius: var(--zoom-cue-radius);
+    background: var(--surface-default);
+    color: var(--text-default);
+    box-shadow: var(--zoom-cue-elevation);
+    opacity: 0;
+    transform: scale(var(--motion-press-scale));
+    transition: opacity var(--motion-hover-duration) var(--motion-hover-ease), transform var(--motion-hover-duration) var(--motion-hover-ease);
+    pointer-events: none;
+  }
+  .case-screen__cue svg { inline-size: 50%; block-size: 50%; }
   .case-screen .case-screen__media :global(.media-frame--natural .media-frame__frame) { padding: 0; background: transparent; box-shadow: none; border: 0; }
   .case-screen--native { padding: 0; background: transparent; box-shadow: none; color: inherit; }
-  .case-screen--native .case-screen__action { color: inherit; }
   .case-screen--native img { border-radius: 0; }
-  @media (--can-hover) { .case-screen__open:hover .case-screen__action { color: var(--text-link-hover); } }
+  @media (--can-hover) {
+    .case-screen__open:hover .case-screen__cue,
+    .case-screen__open:focus-visible .case-screen__cue { opacity: 1; transform: none; }
+  }
 </style>

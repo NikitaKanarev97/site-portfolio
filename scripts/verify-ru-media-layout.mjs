@@ -44,7 +44,7 @@ try {
         const style = getComputedStyle(set);
         const heading = getComputedStyle(set.querySelector('h5'));
         if (parseFloat(heading.marginTop) || parseFloat(heading.marginBottom)) failures.push('Default heading margins in specimen: ' + set.dataset.specimenSet);
-        const content = [...set.querySelectorAll('h5, .case-specimen__state-label, .case-screen__media, .case-screen__action')].map(node => {
+        const content = [...set.querySelectorAll('h5, .case-specimen__state-label, .case-screen__media')].map(node => {
           const rect = node.getBoundingClientRect();
           if (rect.left < box.left - 1 || rect.right > box.right + 1) failures.push('Specimen outside its fields: ' + set.dataset.specimenSet);
           return {role:node.className || node.tagName, x:rect.left-box.left, y:rect.top-box.top, width:rect.width, height:rect.height};
@@ -52,8 +52,7 @@ try {
         for (const state of set.querySelectorAll('[data-specimen-state]')) {
           const label = state.querySelector('.case-specimen__state-label').getBoundingClientRect();
           const frame = state.querySelector('.case-screen__media').getBoundingClientRect();
-          const action = state.querySelector('.case-screen__action').getBoundingClientRect();
-          if (Math.abs(label.left - frame.left) > 1 || Math.abs(action.left - frame.left) > 1) failures.push('Specimen has inconsistent left fields: ' + set.dataset.specimenSet);
+          if (Math.abs(label.left - frame.left) > 1) failures.push('Specimen has inconsistent left fields: ' + set.dataset.specimenSet);
         }
         return {id:set.dataset.specimenSet, width:box.width, height:box.height, padding:style.padding, content};
       });

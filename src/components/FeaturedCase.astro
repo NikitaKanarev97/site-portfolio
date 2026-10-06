@@ -28,7 +28,7 @@ const {surface, tone} = caseThemes[item.theme];
       <span><span class="ds-visually-hidden">{proof.term}: </span>{proof.value}</span>
     </div>
     <a href={item.href} class="featured-case__cta ds-body-base" id={`cta-${slug}`} aria-label={`${item.cta}: ${item.title}`}>
-      {item.cta}<span aria-hidden="true">↗</span>
+      {item.cta}<span aria-hidden="true">→</span>
     </a>
   </div>
 </article>
@@ -53,8 +53,13 @@ const {surface, tone} = caseThemes[item.theme];
   .featured-case__cta > span { transition: transform var(--motion-hover-duration) var(--motion-hover-ease); }
   .featured-case__cta:focus-visible { outline-offset: var(--space-2); }
   .featured-case__cta:active { text-decoration-thickness: var(--focus-ring-width); }
+  /* Вся карточка — одна цель (::after у ссылки), поэтому и отклик на
+     наведение у всей карточки: стрелка уходит вперёд, сцена приподнимается.
+     → — переход по сайту; ↗ в продукте зарезервирован за внешними ссылками. */
+  .featured-case :global(.work-stage) { transition: transform var(--motion-hover-duration) var(--motion-hover-ease); }
   @media (--can-hover) {
-    .featured-case__cta:hover > span { transform: translate(var(--space-1), calc(var(--space-1) * -1)); }
+    .featured-case:hover .featured-case__cta > span { transform: translateX(var(--space-1)); }
+    .featured-case:hover :global(.work-stage) { transform: translateY(calc(var(--space-1) * -1)); }
   }
   @media (--bp-lg) {
     .featured-case__head { grid-template-columns: 3fr 2fr; gap: var(--space-16); }
