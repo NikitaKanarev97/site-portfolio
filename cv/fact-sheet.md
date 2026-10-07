@@ -1,6 +1,8 @@
 # Nikita Kanarev - CV Fact Sheet
 
-Updated: 2026-08-31
+Updated: 2026-10-07
+
+Public editorial rule: [CONTENT-RULES.md](../CONTENT-RULES.md) supersedes earlier project-status wording in this fact sheet. Describe the author's completed work without Concept or equivalent labels. Keep client work and own projects distinct in employment history, and do not invent human research, launch or business results.
 
 Status legend:
 
@@ -76,8 +78,8 @@ Recommended narrative:
 | Vet Clinic OS - real private clinic, NDA, research + design system + working prototype | VERIFIED | Portfolio case. Not taken into production. |
 | Vet Clinic OS scale: two weeks, 44-screen sitemap, 13-screen prototype, 31 edge cases | VERIFIED | Published case source. These are design-scope facts, not user or adoption metrics. |
 | Vet Clinic OS production SaaS | DO NOT CLAIM | Case disclosure explicitly says it was not taken into production. |
-| Pawly - independent product concept with a working prototype | VERIFIED | Portfolio case. No human validation, bookings, users, revenue, conversion or retention data. |
-| Pawly production marketplace / live service | DO NOT CLAIM | Case disclosure explicitly calls it a concept, not a live service. |
+| Pawly - product design, design system and working prototype | VERIFIED | Portfolio case. Research used secondary sources and a simulated interview; QA used synthetic runs. No bookings, users, revenue, conversion or retention data. |
+| Pawly production marketplace / live service | DO NOT CLAIM | Delivery evidence covers design and a prototype, without operational or business results. |
 | RUUN | DO NOT CLAIM in the master CV | The project was removed from the portfolio and has no current case-study proof. |
 | Four Webflow marketing sites | VERIFIED | Current repository lists Common, Synk, Scrib3 and Bloomlex. |
 | Webflow role: design and build, end to end | VERIFIED | Explicit owner decisions dated 2026-08-25 and 2026-08-27. Use `designed and built`. |
@@ -90,7 +92,7 @@ Recommended narrative:
 | Agent Ops Console | Commercial client work; prototype delivery | VERIFIED. Tested with current/future users and accepted by the client; not shipped by Nikita. |
 | B2B Partner Portal at DSSL | Commercial shipped redesign + later portfolio reconstruction | VERIFIED. CV experience may state the commercial redesign shipped; Selected Work must state that the published case revisits the problem. |
 | Vet Clinic OS | Client-informed independent prototype under NDA | VERIFIED. Research and working prototype; not production. |
-| Pawly | Self-directed product concept | VERIFIED. No human validation or live-service outcomes. |
+| Pawly | Own product design project | VERIFIED. Research and QA methods must be described accurately; no live-service outcomes. |
 | RUUN | Removed / insufficient current proof | DO NOT CLAIM in master CV. |
 
 ## Education

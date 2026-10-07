@@ -204,7 +204,10 @@ function brandedHtml() {
 
   return documentShell(
     `${data.name} - Product Designer - CV`,
-    inlineCss('styles-branded.css'),
+    `${inlineCss('styles-branded.css')}
+/* Keep the complete English CV, including its footer, on the A4 sheet. */
+.sheet{zoom:.96;width:calc(210mm / .96);height:calc(297mm / .96)}
+.sheet>*{flex-shrink:0}`,
     body,
   );
 }

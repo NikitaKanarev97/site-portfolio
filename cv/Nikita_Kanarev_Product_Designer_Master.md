@@ -30,16 +30,16 @@ Jan 2023 - Present - Remote
 Paid client engagements: full-time before DSSL, alongside it from Sep 2023. Most recent contract closed in spring 2026.
 
 - Scoped 35 Agent Ops artboards across three roles and delivered the tested clickable core within one month; the NDA client accepted the prototype after user testing and rework.
-- Designed a veterinary clinic operations concept from domain research with a practising veterinarian through to a working prototype.
+- Designed a veterinary clinic operations system from domain research with a practising veterinarian through to a working prototype.
 - Designed and built four production Webflow marketing sites end to end, including visual design, responsive implementation, interactions and QA.
 
 ### Selected independent projects - Self-directed
 
 2026 - Remote
 
-Own product work, not client engagements. Listed separately so it is never read as employment.
+Product design, design systems and interactive prototypes for my own projects.
 
-- Pawly - a dog-care marketplace concept taken from service model to an audited interactive prototype and a 33-component design system.
+- Pawly - a dog-care marketplace: service model, interactive prototype verified through synthetic QA, and a 33-component design system.
 - Rebuilt the DSSL partner portal solution on synthetic data to publish it without disclosing client material.
 
 ## Selected Work

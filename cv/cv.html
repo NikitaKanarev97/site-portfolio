@@ -99,7 +99,10 @@ a{color:inherit;text-decoration:none}
 .page-number:before{content:"";display:inline-block;width:1.7mm;height:.55mm;background:var(--accent);margin-right:1.6mm;vertical-align:middle}
 
 @media screen{body{display:grid;gap:12px;justify-content:center;padding:24px}.sheet{box-shadow:0 12px 36px rgba(0,0,0,.12)}}
-</style>
+
+/* Keep the complete English CV, including its footer, on the A4 sheet. */
+.sheet{zoom:.96;width:calc(210mm / .96);height:calc(297mm / .96)}
+.sheet>*{flex-shrink:0}</style>
 </head>
 <body>
 <section class="sheet">
@@ -134,14 +137,14 @@ a{color:inherit;text-decoration:none}
     <p class="entry-date">Jan 2023 to Present <span aria-hidden="true">/</span> Remote</p>
   </div>
   <p class="entry-sub">Paid client engagements: full-time before DSSL, alongside it from Sep 2023. Most recent contract closed in spring 2026.</p>
-  <ul class="bullets"><li>Scoped 35 Agent Ops artboards across three roles and delivered the tested clickable core within one month; the NDA client accepted the prototype after user testing and rework.</li><li>Designed a veterinary clinic operations concept from domain research with a practising veterinarian through to a working prototype.</li><li>Designed and built four production Webflow marketing sites end to end, including visual design, responsive implementation, interactions and QA.</li></ul>
+  <ul class="bullets"><li>Scoped 35 Agent Ops artboards across three roles and delivered the tested clickable core within one month; the NDA client accepted the prototype after user testing and rework.</li><li>Designed a veterinary clinic operations system from domain research with a practising veterinarian through to a working prototype.</li><li>Designed and built four production Webflow marketing sites end to end, including visual design, responsive implementation, interactions and QA.</li></ul>
 </article><article class="entry">
   <div class="entry-head">
     <h3 class="entry-title">Selected independent projects <span>/ Self-directed</span></h3>
     <p class="entry-date">2026 <span aria-hidden="true">/</span> Remote</p>
   </div>
-  <p class="entry-sub">Own product work, not client engagements. Listed separately so it is never read as employment.</p>
-  <ul class="bullets"><li>Pawly - a dog-care marketplace concept taken from service model to an audited interactive prototype and a 33-component design system.</li><li>Rebuilt the DSSL partner portal solution on synthetic data to publish it without disclosing client material.</li></ul>
+  <p class="entry-sub">Product design, design systems and interactive prototypes for my own projects.</p>
+  <ul class="bullets"><li>Pawly - a dog-care marketplace: service model, interactive prototype verified through synthetic QA, and a 33-component design system.</li><li>Rebuilt the DSSL partner portal solution on synthetic data to publish it without disclosing client material.</li></ul>
 </article></div>
   </section>
 
