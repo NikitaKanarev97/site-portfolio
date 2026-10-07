@@ -51,7 +51,6 @@ const { callout, tone = 'note', plate = 'light', class: className } = Astro.prop
               <span class="ds-meta-xs case-callout__dot case-callout__dot--list" aria-hidden="true">
                 {i + 1}
               </span>
-              <span class="case-callout__rule" aria-hidden="true" />
               <span class="ds-body-sm" data-h="caption">
                 {mark.text}
               </span>
@@ -115,11 +114,10 @@ const { callout, tone = 'note', plate = 'light', class: className } = Astro.prop
 
   .case-callout__item {
     display: grid;
-    grid-template-columns: auto var(--space-8) minmax(0, 1fr);
+    grid-template-columns: auto minmax(0, 1fr);
     align-items: start;
     gap: var(--space-3);
   }
-  .case-callout__rule { block-size: var(--border-width); background: var(--mark); margin-block-start: var(--space-3); }
   .case-callout__pin { display: none; pointer-events: none; }
 
   .case-callout__caption {
@@ -128,9 +126,8 @@ const { callout, tone = 'note', plate = 'light', class: className } = Astro.prop
   }
 
   @media (--bp-md) {
-    .case-callout__shot :global(.case-screen) { padding-inline-start: calc(var(--frame-inset) + var(--space-8)); }
+    .case-callout__shot { padding-inline-start: var(--space-8); }
     .case-callout__pin { display: inline-grid; position: absolute; inset-inline-start: calc(-1 * var(--space-8)); inset-block-start: var(--y); translate: 0 -50%; }
-    .case-callout__pin::after { content: ''; position: absolute; inset-inline-start: 100%; inset-block-start: 50%; inline-size: var(--space-2); block-size: var(--border-width); background: var(--mark); }
     .case-callout__body {
       display: grid;
       grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);

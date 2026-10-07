@@ -1,6 +1,6 @@
 ---
 import WorkStage from './WorkStage.astro';
-import { caseThemes } from '../copy/cases/story';
+import IconArrow from './IconArrow.astro';
 import type { home } from '../copy/home.ts';
 interface Props {
   item: (typeof home.featured.items)[number];
@@ -10,25 +10,23 @@ interface Props {
 const { item, index, locale } = Astro.props;
 const slug = item.href.split('/').filter(Boolean).at(-1)!;
 const proof = item.meta.at(-1)!;
-const year = item.meta[1];
-const {surface, tone} = caseThemes[item.theme];
 ---
-<article class:list={['featured-case', `featured-case--${item.theme}`]} id={`work-${slug}`} data-tone={tone} style={`--work-surface:${surface}`} aria-labelledby={`title-${slug}`} data-case-card={`case-${item.theme}`}>
+<article class:list={['featured-case', `featured-case--${item.theme}`]} id={`work-${slug}`} aria-labelledby={`title-${slug}`} data-case-card={`case-${item.theme}`}>
   <div class="featured-case__head">
     <div class="featured-case__identity">
-      <span class="ds-meta-xs featured-case__number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
-      <h2 class="ds-display-5xl" id={`title-${slug}`}><a href={item.href}>{item.title}</a></h2>
+      <h2 class="ds-display-6xl" id={`title-${slug}`}><a href={item.href}>{item.title}</a></h2>
     </div>
     <p class="ds-heading-xl featured-case__outcome">{item.outcome}</p>
   </div>
-  <WorkStage theme={item.theme} media={item.media} locale={locale} loading={index === 0 ? 'eager' : 'lazy'} href={item.href} linkLabel={`${item.cta}: ${item.title}`} />
+  <div class="featured-case__stage" data-focus-tone={item.theme === 'agent' ? 'inverse' : undefined}>
+    <WorkStage theme={item.theme} media={item.media} locale={locale} loading={index === 0 ? 'eager' : 'lazy'} href={item.href} linkLabel={`${item.cta}: ${item.title}`} />
+  </div>
   <div class="featured-case__foot">
     <div class="featured-case__facts ds-body-sm">
-      <span class="featured-case__year ds-meta-sm"><span class="ds-visually-hidden">{year.term}: </span>{year.value}</span>
       <span><span class="ds-visually-hidden">{proof.term}: </span>{proof.value}</span>
     </div>
     <a href={item.href} class="featured-case__cta ds-body-base" id={`cta-${slug}`} aria-label={`${item.cta}: ${item.title}`}>
-      {item.cta}<span aria-hidden="true">→</span>
+      {item.cta}<IconArrow class="featured-case__arrow" />
     </a>
   </div>
 </article>
@@ -37,40 +35,34 @@ const {surface, tone} = caseThemes[item.theme];
   .featured-case__cta::after { content: ''; position: absolute; inset: 0; border-radius: var(--radius-lg); }
   .featured-case :global([data-zoom-trigger]), .featured-case :global(button), .featured-case__identity a { position: relative; z-index: 1; }
   .featured-case:has(.featured-case__cta:focus-visible) { outline: var(--focus-ring-width) solid var(--focus-ring-color); outline-offset: var(--space-2); }
-  .featured-case { display: grid; gap: var(--flow-group); color: var(--text-default); text-decoration: none; border-radius: var(--radius-lg); scroll-margin-block-start: var(--space-6); }
-  .featured-case--agent { padding:var(--stage-inset); background:var(--work-surface); }
-  .featured-case--learn[data-tone='dark'] { color:var(--text-default); }
-  .featured-case--agent[data-tone='dark'] { color: var(--text-on-inverse); }
-  .featured-case__head { display: grid; gap: var(--space-4); align-items: end; }
-  .featured-case__identity { display: grid; gap: var(--space-3); }
-  .featured-case__identity h2 { margin: 0; text-wrap: balance; }
+  .featured-case { display: grid; gap: var(--flow-node); color: var(--text-default); text-decoration: none; border-radius: var(--radius-lg); scroll-margin-block-start: var(--space-6); }
+  .featured-case__stage { min-inline-size: 0; }
+  .featured-case--agent .featured-case__stage { padding: var(--stage-inset); border-radius: var(--radius-lg); background: var(--surface-cover-agent); color: var(--text-on-inverse); }
+  .featured-case__head { display: grid; gap: var(--flow-text); align-items: end; }
+  .featured-case__identity { min-inline-size: 0; }
+  .featured-case__identity h2 { margin: 0; }
   .featured-case__identity a { color: inherit; text-decoration: none; }
-  .featured-case__outcome { margin: 0; text-wrap: pretty; max-inline-size: var(--measure-case); }
-  .featured-case__number { font-variant-numeric: tabular-nums; }
-  .featured-case__foot { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: var(--space-4) var(--space-6); padding-block-start: var(--space-6); border-block-start: var(--border-width) solid currentColor; }
-  .featured-case__facts { display: grid; gap: var(--space-2); }
-  .featured-case__cta { display: inline-flex; flex: none; align-items: center; min-block-size: var(--space-12); gap: var(--space-3); color: inherit; text-decoration: underline; text-underline-offset: var(--space-1); }
-  .featured-case__cta > span { transition: transform var(--motion-hover-duration) var(--motion-hover-ease); }
+  .featured-case__outcome { margin: 0; max-inline-size: var(--measure-case); }
+  .featured-case__foot { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--flow-pair) var(--space-6); }
+  .featured-case__facts { color: var(--text-meta); }
+  .featured-case__cta { display: inline-flex; flex: none; align-items: center; min-block-size: var(--space-12); gap: var(--space-3); color: var(--text-link); text-decoration: none; transition: color var(--motion-hover-duration) var(--motion-hover-ease); }
+  .featured-case__cta :global(.featured-case__arrow) { inline-size: var(--space-6); block-size: var(--space-6); flex: none; transition: transform var(--motion-hover-duration) var(--motion-hover-ease); }
   .featured-case__cta:focus-visible { outline-offset: var(--space-2); }
-  .featured-case__cta:active { text-decoration-thickness: var(--focus-ring-width); }
+  .featured-case__cta:active { color: var(--text-link-pressed); }
   /* Вся карточка — одна цель (::after у ссылки), поэтому и отклик на
      наведение у всей карточки: стрелка уходит вперёд, сцена приподнимается.
-     → — переход по сайту; ↗ в продукте зарезервирован за внешними ссылками. */
+     SVG → обозначает переход по сайту. */
   .featured-case :global(.work-stage) { transition: transform var(--motion-hover-duration) var(--motion-hover-ease); }
   @media (--can-hover) {
-    .featured-case:hover .featured-case__cta > span { transform: translateX(var(--space-1)); }
+    .featured-case:hover .featured-case__cta { color: var(--text-link-hover); }
+    .featured-case:hover :global(.featured-case__arrow) { transform: translateX(var(--space-1)); }
     .featured-case:hover :global(.work-stage) { transform: translateY(calc(var(--space-1) * -1)); }
   }
   @media (--bp-lg) {
-    .featured-case__head { grid-template-columns: 3fr 2fr; gap: var(--space-16); }
-    .featured-case__identity { grid-template-columns: auto 1fr; align-items: baseline; gap: var(--space-4); }
-    .featured-case--vet .featured-case__head { grid-template-columns:1fr; gap:var(--space-4); }
-    .featured-case--vet .featured-case__outcome { margin-inline-start:var(--space-10); }
-    .featured-case--pawly .featured-case__head { grid-template-columns: 1fr 1fr; }
-    .featured-case--portal .featured-case__head { grid-template-columns:2fr 1fr; }
-    .featured-case--learn .featured-case__head { grid-template-columns:2fr 1fr; }
-    .featured-case--vet .featured-case__head { max-inline-size:var(--measure-lead); }
-    .featured-case--pawly .featured-case__identity h2 { font-size:var(--size-6xl); }
-    .featured-case--pawly .featured-case__outcome { align-self:center; }
+    .featured-case__head { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: var(--space-16); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .featured-case:hover :global(.work-stage),
+    .featured-case:hover :global(.featured-case__arrow) { transform: none; }
   }
 </style>

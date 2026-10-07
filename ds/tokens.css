@@ -17,7 +17,7 @@
   --gray-100:  #EFEFEC;
   --gray-200:  #E1E1DC;
   --gray-300:  #C7C7C0;
-  --gray-500:  #6E6E67;  /* AA 5.14:1 на белом — потолок для mono 12px */
+  --gray-500:  #6E6E67;  /* AA 5.14:1 на белом, включая метки 12px */
   --gray-700:  #53534C;  /* 7.75:1 */
   --gray-900:  #1B1B18;  /* 17.26:1 */
   --gray-950:  #0D0D0B;
@@ -25,15 +25,16 @@
   /* Project artwork: sampled from the five products, not site accents. */
   --graphite-800: #253332;
   --blue-100: #DCE7F3;
+  --lavender-100: #DDD5FF;
   --navy-800: #243C56;
   --sage-100: #E0EAE4;
   --sand-100: #EAE2D8;
 
-  /* Акцент — приглушённый рыжий, только интерактив */
-  --accent-300: #E8845C;  /* 7.31:1 на gray-950 */
-  --accent-500: #C1440E;  /* 5.12:1 на белом, 4.77:1 на gray-50 */
-  --accent-700: #94330A;  /* 7.67:1 на белом */
-  --accent-900: #5E2006;  /* резерв под pressed */
+  /* Томатный акцент: тёмный на бумаге, светлый на инверсной сцене. */
+  --accent-300: #FF8A75;  /* 8.47:1 на gray-950, 4.93:1 на navy-800 */
+  --accent-500: #D43220;  /* 4.91:1 на белом, 4.58:1 на gray-50 */
+  --accent-700: #B52B1B;  /* 6.31:1 на белом — hover */
+  --accent-900: #842014;  /* 9.55:1 на белом — pressed */
 
   /* Функциональные — заведён один, носителя для остальных нет */
   --success-500: #2F7D4F;  /* 5.04:1 на белом */
@@ -55,10 +56,9 @@
   --error-900:   #3A1512;
 
   /* Семейства */
-  --font-sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Consolas, monospace;
+  --font-sans: "Onest", system-ui, -apple-system, "Segoe UI", sans-serif;
 
-  /* Кегли — 11 ступеней, верхние три display-only */
+  /* Кегли — 11 базовых ступеней, затем три ступени Home. */
   --size-xs:   12px;
   --size-sm:   14px;
   --size-base: 16px;
@@ -70,6 +70,11 @@
   --size-5xl:  64px;
   --size-6xl:  96px;
   --size-7xl:  128px;
+
+  /* Позиционирование Home: самостоятельные ступени для EN/RU. */
+  --size-hero-sm: 36px;
+  --size-hero-lg: 80px;
+  --size-hero-xl: 112px;
 
   /* Веса */
   --weight-regular:    400;
@@ -215,7 +220,7 @@
   --review-stop-height:           var(--space-48);
   --review-stop-stroke:           var(--space-8);
   --review-stop-gap:              var(--space-12);
-  --surface-cover-portal:         var(--blue-100);
+  --surface-cover-portal:         var(--lavender-100);
   --surface-cover-learn:          var(--navy-800);
   --surface-cover-vet:            var(--sage-100);
   --surface-cover-pawly:          var(--sand-100);
@@ -265,6 +270,7 @@
 
   /* Фокус */
   --focus-ring-color: var(--accent-500);
+  --focus-ring-color-on-inverse: var(--accent-300);
   --focus-ring-width: var(--focus-width);
 
   /* Кадр и глубина. Соотношение кадра продукта и две ступени приглушения
@@ -323,12 +329,15 @@
   --flow-node:   var(--space-8);
   --flow-group:  var(--space-12);
   --flow-block:  var(--space-16);
-  --section-gap: var(--space-24);
+  --section-gap: var(--space-32);
+
+  --navbar-logo-height: var(--space-8);
+  --size-home-display: var(--size-hero-sm);
 
   /* Типографические роли */
   --font-body:    var(--font-sans);
   --font-display: var(--font-sans);
-  --font-meta:    var(--font-mono);
+  --font-meta:    var(--font-sans);
 
   /* Кегль маркера внешней ссылки — единственный кегль вне ролей. Роль здесь
      не подходит: маркер ↗ обязан наследовать семейство окружающей роли и
@@ -405,6 +414,7 @@
    (Agent Ops, Learn). Таблетки yes/no уходят в тёмные тона: светлая
    плашка на тёмном поле читается пятном, а под бледным префиксом — грязью. */
 [data-theme="dark"] {
+  --focus-ring-color: var(--focus-ring-color-on-inverse);
   --diagram-field:        var(--gray-950);
   --diagram-node:         var(--gray-800);
   --diagram-text:         var(--gray-50);
@@ -430,6 +440,14 @@
   --callout-mark-text:    var(--gray-950);
   --callout-issue:        var(--error-300);
   --callout-issue-text:   var(--gray-950);
+}
+
+/* Инверсный фокус — роль поверхности. Hook применяют только на тёмном
+   холсте; белая шапка проекта сохраняет обычный томатный контур. */
+[data-focus-tone="inverse"],
+.case-opening[data-tone="dark"],
+.case-next__link[data-tone="dark"] {
+  --focus-ring-color: var(--focus-ring-color-on-inverse);
 }
 
 /* ============================================================
@@ -482,7 +500,7 @@
    быть уже прочитано. */
 @media (--bp-lg) {
   :root {
-    --section-gap: var(--space-32);
+    --section-gap: var(--space-48);
     --stage-inset: var(--space-12);
   }
 }
@@ -492,6 +510,7 @@
    Цвет здесь не задаётся: приходит отдельно, смысловым токеном.
    ============================================================ */
 
+.ds-display-home,
 .ds-display-7xl,
 .ds-display-6xl,
 .ds-display-5xl,
@@ -511,6 +530,7 @@
    по длине, текст не оставляет одно слово в последней строке. Без этого
    правило жило в половине компонентов, и висячие слова шли по всем
    маршрутам (замер 06.10.2026: 365 мест на 1440/1024/390, EN+RU). */
+.ds-display-home,
 .ds-display-7xl,
 .ds-display-6xl,
 .ds-display-5xl,
@@ -523,6 +543,7 @@
 .ds-body-base,
 .ds-body-sm { text-wrap: pretty; }
 
+.ds-display-home { font-size: var(--size-home-display); font-weight: var(--weight-extrabold); line-height: var(--lh-display); letter-spacing: var(--tracking-display); }
 .ds-display-7xl { font-size: var(--size-7xl); font-weight: var(--weight-extrabold); line-height: var(--lh-display); letter-spacing: var(--tracking-display); }
 .ds-display-6xl { font-size: var(--size-6xl); font-weight: var(--weight-extrabold); line-height: var(--lh-display); letter-spacing: var(--tracking-display); }
 .ds-display-5xl { font-size: var(--size-5xl); font-weight: var(--weight-bold);      line-height: var(--lh-display); letter-spacing: var(--tracking-tight); }
@@ -542,6 +563,18 @@
   .ds-display-7xl { font-size: var(--size-5xl); }
   .ds-display-6xl { font-size: var(--size-4xl); }
   .ds-display-5xl { font-size: var(--size-4xl); }
+}
+
+@media (--bp-md) {
+  :root { --size-home-display: var(--size-5xl); }
+}
+
+@media (--bp-lg) {
+  :root { --size-home-display: var(--size-hero-lg); }
+}
+
+@media (--bp-xl) {
+  :root { --size-home-display: var(--size-hero-xl); }
 }
 
 @media (--below-bp-md) {

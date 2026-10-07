@@ -57,7 +57,7 @@ const { cards = [], outcome, quote, cost, class: className, variant } = Astro.pr
         <p class="ds-heading-2xl case-impact__quote-text" data-h="para">
           {quote.text}
         </p>
-        <footer class="ds-meta-xs case-impact__quote-who">{quote.who}</footer>
+        <footer class="ds-meta-sm case-impact__quote-who">{quote.who}</footer>
       </blockquote>
     )
   }
@@ -65,7 +65,7 @@ const { cards = [], outcome, quote, cost, class: className, variant } = Astro.pr
   {
     cost && (
       <p class="case-impact__cost">
-        <span class="ds-meta-xs case-impact__cost-label">{cost.label}</span>
+        <span class="ds-meta-sm case-impact__cost-label">{cost.label}</span>
         <span class="ds-body-lg case-impact__cost-text" data-h="para">
           {cost.text}
         </span>
@@ -83,13 +83,6 @@ const { cards = [], outcome, quote, cost, class: className, variant } = Astro.pr
     .case-impact--editorial .case-impact__statements { display: block; }
   }
   .case-impact__statements > :global(.meta-list) { max-inline-size: var(--measure-case); }
-  @media (--bp-lg) {
-    .case-impact__statements { display: grid; grid-template-columns: repeat(var(--columns-lg), minmax(0, 1fr)); column-gap: var(--gutter); }
-    .case-impact__statements > :global(.meta-list) { grid-column: 3 / -1; }
-  }
-  @media (--bp-xl) {
-    .case-impact__statements > :global(.meta-list) { grid-column: 4 / 11; }
-  }
   .case-impact__cards {
     display: grid;
     gap: var(--gutter);

@@ -63,20 +63,20 @@ export function portalSpecimen(lang:'en'|'ru'): Specimen {
         state('quantitystepper','at-minimum','Minimum · decrement disabled','Минимум · уменьшение недоступно','Quantity zero, decrement disabled, increment remains available',138),
         state('quantitystepper','disabled','Disabled · unconfirmed price','Недоступно · цена не подтверждена','Quantity 12, control disabled while price is not confirmed',138),
       ]},
-    ], caption:ru ? 'Доменные компоненты · выбранные состояния · демоданные' : 'Accepted domain components · selected states · synthetic data',
+    ], caption:ru ? 'Состояния строки закупки, наличия и количества' : 'Procurement row, availability and quantity states',
   };
 }
 function story(lang:'en'|'ru'): CaseStory {
   const ru = lang === 'ru';
   return defineStory({ theme:'portal',plate:'light',
     cover:{title:'Partner Portal',outcome:ru ? 'Одна исходная строка — от файла до заказа.' : 'One source row, from file to order.',
-      media:{variant:'screen',layout:'screen',items:[{src:'/media/case-dssl/cover/resolution-center.webp',alt:ru ? 'Настоящий центр разрешения: исходные строки, статусы и действия; демоданные' : 'Actual Resolution Center: source lines, identity states and actions; synthetic data',device:'desktop'}]}},
-    facts:ru ? [{term:'Клиент',value:'DSSL'},{term:'Год',value:'2024–2026'},{term:'Роль',value:'Единственный дизайнер в продуктовой команде'},{term:'Исходная работа',value:'Коммерческий редизайн отгружен'},{term:'На кадрах',value:'Нынешняя пересборка, демоданные'},{term:'Этот preview',value:'Фрагмент для проверки общего контракта'}] :
-      [{term:'Client',value:'DSSL'},{term:'Year',value:'2024–2026'},{term:'Role',value:'Sole designer on the product team'},{term:'Original work',value:'Commercial redesign shipped'},{term:'Shown here',value:'Current reconstruction, synthetic data'},{term:'This preview',value:'Shared-contract fragment'}],
+      media:{variant:'screen',layout:'screen',items:[{src:'/media/case-dssl/cover/resolution-center.webp',alt:ru ? 'Исходные строки закупки, статусы сопоставления и действия покупателя' : 'Source procurement rows, matching states and buyer actions',device:'desktop'}]}},
+    facts:ru ? [{term:'Клиент',value:'DSSL'},{term:'Год',value:'2024–2026'},{term:'Роль',value:'Единственный дизайнер в продуктовой команде'},{term:'Исходная работа',value:'Коммерческий редизайн отгружен'}] :
+      [{term:'Client',value:'DSSL'},{term:'Year',value:'2024–2026'},{term:'Role',value:'Sole designer on the product team'},{term:'Original work',value:'Commercial redesign shipped'}],
     blocks:[
       {id:'shared-specification',type:'artifact',motion:'draw',evidenceId:'portal-scope',payload:{
         thesis:{label:ru ? 'Архитектура' : 'Architecture',thesis:ru ? 'Два входа, один список' : 'One specification, two ways in',body:ru ? 'Файл и ручной ввод сохраняют исходную строку. Подбор товара меняет интерпретацию рядом с ней, а не её происхождение. Здесь — семь выбранных экранов нынешнего MVP.' : 'File upload and manual entry retain the source row. Matching changes the interpretation beside it, never its provenance. These are seven selected screens from the current MVP.'},
-        artifact:{data:portalMap,caption:ru ? 'Выборка экранов MVP · редакционная карта пересборки' : 'Selected MVP screens · editorial map of the reconstruction',source:{kind:'editorial',ref:'b2b-dssl/ia/sitemap.md; D007'}},
+        artifact:{data:portalMap,caption:ru ? 'Карта ключевых экранов закупки' : 'Map of the main procurement screens',source:{kind:'editorial',ref:'b2b-dssl/ia/sitemap.md; D007'}},
       }},
       {id:'buyer-decision',type:'artifact',motion:'draw',evidenceId:'portal-tradeoff',payload:{
         thesis:{label:ru ? 'Сценарий' : 'Flow',thesis:ru ? 'Решает покупатель' : 'The buyer resolves ambiguity',body:ru ? 'Импорт читает файл. Центр разрешения отвечает за соответствие товара. Корзина отдельно проверяет цену и наличие. Каждое условие имеет явный выход и возврат.' : 'Import reads the file. Resolution owns product identity. Cart separately reviews price and availability. Each condition has an explicit exit and return.'},
@@ -87,15 +87,14 @@ function story(lang:'en'|'ru'): CaseStory {
         specimen:portalSpecimen(lang),
       }},
       {id:'source-in-context',type:'shot',motion:'reveal',evidenceId:'portal-domain',mediaId:'portal-application',payload:{
-        shot:{layout:'desktop',items:[{src:'/media/case-dssl/polish-after-resolution.webp',alt:ru ? 'Центр разрешения в настоящем UI: исходная строка остаётся рядом с сопоставлением и действием покупателя' : 'Actual Resolution Center application: source identity stays beside the match and the buyer action',device:'desktop'}],caption:ru ? 'Компоненты в работе · пересборка на демоданных' : 'Components in use · reconstruction on synthetic data'},
+        shot:{layout:'desktop',items:[{src:'/media/case-dssl/polish-after-resolution.webp',alt:ru ? 'Исходная строка остаётся рядом с сопоставлением и действием покупателя' : 'Source identity stays beside the match and the buyer action',device:'desktop'}],caption:ru ? 'Сопоставление товара сохраняет исходную строку' : 'Product matching retains the source row'},
       }},
       {id:'shipped-redesign',type:'outcome',motion:'static',evidenceId:'portal-shipped',payload:{
-        result:{label:ru ? 'Результат' : 'Outcome',thesis:ru ? 'Редизайн отгружен' : 'The commercial redesign shipped',body:ru ? 'Исходная работа завершена в DSSL. Нынешние кадры — самостоятельная пересборка: на них можно проверить сохранение строки и обработку исключений.' : 'The original work was delivered at DSSL. These frames show an independent reconstruction where source identity and exception handling can be inspected.'},
+        result:{label:ru ? 'Результат' : 'Outcome',thesis:ru ? 'Редизайн отгружен' : 'The commercial redesign shipped',body:ru ? 'Исходная работа завершена в DSSL. На экранах показаны сохранение исходной строки и обработка исключений на вымышленных данных закупки.' : 'The original work was delivered at DSSL. The screens show source identity and exception handling using synthetic procurement data.'},
         evidence:{label:ru ? 'Доказательство' : 'Evidence',text:ru ? 'Отгрузка подтверждена владельцем в публичной карте кейса; текущий accepted UI отдельно демонстрирует правила строки.' : 'Delivery is owner-confirmed in the public case record. The current accepted UI separately demonstrates the row rules.'},
         tradeoff:{label:ru ? 'Цена решения' : 'Trade-off',text:ru ? 'Покупатель вручную разрешает неоднозначность: данные не подтверждают совместимость за него.' : 'The buyer resolves ambiguity by hand. The data cannot confirm compatibility on their behalf.'},
-        nextEvidence:{label:ru ? 'Следующая проверка' : 'Next evidence',text:ru ? 'Бизнес-результаты закрыты; baseline нет. Эффект на время и ошибки требует отдельного измерения.' : 'Business results are confidential and there is no baseline. Time and error effects need separate measurement.'},
       }},
-    ],prototype:{label:ru ? 'Открыть текущий прототип на демоданных' : 'Open the current prototype on synthetic data',href:'https://b2b-partner-portal-five.vercel.app/'},
+    ],prototype:{label:ru ? 'Открыть продукт' : 'Open product',href:'https://b2b-partner-portal-five.vercel.app/'},
   });
 }
 export const commonPortal = {en:story('en'),ru:story('ru')};

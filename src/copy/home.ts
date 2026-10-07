@@ -66,11 +66,8 @@ export const home = {
       src: '/media/about/portrait.webp',
       srcMobile: '/media/about/portrait-mobile.webp',
       alt: 'Nikita Kanarev in a taupe knit sweater against a light background',
-      headline: ['Research.', 'Design.', 'Build.'],
-      link: 'About me and my approach',
-      href: '/about',
     },
-    caseEntry: 'Read the cases',
+    workLabel: 'Selected product design projects',
     cv: 'Download CV (PDF)',
   },
 
@@ -87,14 +84,14 @@ export const home = {
    * Agent Ops единственный из четырёх прошёл полный цикл на живом заказе —
    * платный клиент, живые интервью, юзер-тест прототипа и приёмка
    * заказчиком; DSSL — коммерческий редизайн без пользовательской проверки
-   * в этой редакции; Vet Clinic OS — концепт с одним живым врачом; Pawly —
-   * концепт целиком. Обоснование целиком — ds/screens/case-agent-ops.md
+   * в этой редакции; Vet Clinic OS — работа с одним практикующим врачом;
+   * Pawly — собственный продуктовый проект. Обоснование — ds/screens/case-agent-ops.md
    * §Что этот экран меняет на главной.
    *
    * Порядок обязан совпадать с реестром src/copy/cases/index.ts: оттуда
    * разворачиваются sitemap, hreflang и OG-карточки.
    * 2026-09-09 владелец поставил Learn третьим, после Partner Portal:
-   * рабочий проект, переосмысленный для портфолио, перед двумя концептами.
+   * рабочий проект с нынешним переосмыслением, перед Vet Clinic OS и Pawly.
    */
   featured: {
     eyebrow: 'Selected work',
@@ -158,8 +155,8 @@ export const home = {
      * трёх сборках из четырёх.
      */
     heading: 'Selected web builds',
-    lead: 'Four marketing sites, designed and built end to end in Webflow — the second side of my practice: visual design carried through to a working responsive build.',
-    /** DEV-02: подпись роли стоит у каждой сборки, не одной строкой на секцию. */
+    lead: 'Four marketing sites, from visual design to a working responsive build in Webflow.',
+    /** Полная роль показана в каждом ProjectDialog; в превью её сообщает подводка. */
     roleLabel: 'Role',
     roleValue: 'Design and Webflow build',
     /**
@@ -238,7 +235,11 @@ export const home = {
      * до решения, работа в чужих ограничениях, ИИ в собственном процессе, —
      * но готовой формулировки не даёт. Ревьюится вместе с /about.
      */
-    body: "I start with the decision and the constraints around it. Then I connect roles, states and actions in a prototype, test it, and carry the decisions into a working build.",
+    steps: [
+      { heading: 'Frame the decision', body: 'Start with the decision people need to make and the constraints around it.' },
+      { heading: 'Test the workflow', body: 'Connect roles, states and actions in a prototype, then test the scenario.' },
+      { heading: 'Carry it into a build', body: 'Bring the design decisions into a working build.' },
+    ],
     link: 'More about how I work',
     href: '/about',
   },

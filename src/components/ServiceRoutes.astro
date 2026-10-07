@@ -53,12 +53,11 @@ const { items, class: className } = Astro.props;
     gap: var(--space-2);
   }
 
-  /* Цель нажатия набирается интервалом, а не высотой ссылки, и это
-     вынужденно: у arrow подчёркивание Строки — абсолютный элемент на
-     space-1 ниже бокса ссылки. Растянутая до space-12 ссылка увела бы
-     подчёркивание на два сантиметра от текста. Интервал space-8 между
-     соседними целями даёт то же — промах на телефоне не уводит не туда
-     (WCAG 2.5.8: 24 px цель плюс разрежение). */
+  .routes__item > :global(.ds-link) {
+    align-self: flex-start;
+    min-block-size: var(--space-12);
+    align-items: center;
+  }
 
   .routes__note {
     color: var(--text-subtle);

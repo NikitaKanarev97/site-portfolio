@@ -145,21 +145,21 @@ const image = new URL(ogImageFor(ogCard), Astro.site);
     <meta property="og:image:alt" content={ogImageAlt(ogCard)} />
     <meta name="twitter:card" content="summary_large_image" />
 
-    {/* Два критических woff2 — набор идёт по fonts.ready (motion-concept §4.1). */}
+    {/* Локальный Onest — набор идёт по fonts.ready (motion-concept §4.1). */}
     <link
       rel="preload"
-      href="/fonts/manrope-latin-wght-normal.woff2"
+      href="/fonts/onest-latin-wght-normal.woff2"
       as="font"
       type="font/woff2"
       crossorigin
     />
-    <link
+    {locale === 'ru' && <link
       rel="preload"
-      href="/fonts/manrope-cyrillic-wght-normal.woff2"
+      href="/fonts/onest-cyrillic-wght-normal.woff2"
       as="font"
       type="font/woff2"
       crossorigin
-    />
+    />}
 
     {/*
       Блокирующий инлайн-скрипт. Начальные состояния движения скоупятся

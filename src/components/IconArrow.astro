@@ -1,0 +1,43 @@
+---
+/** Decorative SVG marker. Semantics belong to the enclosing link or button. */
+interface Props {
+  direction?: 'right' | 'down' | 'up-right';
+  size?: 'base' | 'small';
+  class?: string;
+}
+
+const { direction = 'right', size = 'base', class: className } = Astro.props;
+const paths = {
+  right: 'M4 12h16m-7-7 7 7-7 7',
+  down: 'M12 4v16m-7-7 7 7 7-7',
+  'up-right': 'M5 19 19 5M5 5h14v14',
+};
+---
+
+<svg
+  class:list={['icon-arrow', `icon-arrow--${size}`, className]}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path d={paths[direction]} />
+</svg>
+
+<style>
+  .icon-arrow {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+  }
+
+  .icon-arrow--small {
+    width: var(--size-link-marker);
+    height: var(--size-link-marker);
+  }
+</style>

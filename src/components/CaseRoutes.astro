@@ -1,42 +1,41 @@
 ---
 import CaseScreen from './CaseScreen.astro';
 import CaseThesis from './CaseThesis.astro';
+import CasePlate from './CasePlate.astro';
 import type { Steps } from '../copy/cases/story';
 interface Props extends Steps { idPrefix: string; }
 const { label, items, idPrefix } = Astro.props;
 ---
 <div class="case-routes">
-  <p class="ds-meta-xs case-routes__label">{label}</p>
   <div class="case-routes__entries">
     {items.slice(0, 2).map((item, i) => <details class="case-routes__entry" open={i === 0} data-case-route id={`${idPrefix}-${i + 1}`}>
       <summary>
-        <span class="ds-meta-xs case-routes__number">0{i + 1} · {item.label}</span>
+        <span class="ds-meta-sm case-routes__name">{item.label}</span>
         <span class="ds-heading-3xl">{item.thesis}</span>
         <span class="case-routes__toggle ds-heading-2xl" aria-hidden="true">+</span>
       </summary>
       <div class="case-routes__content">
         {item.body && <p class="ds-body-lg case-routes__body" data-h="para">{item.body}</p>}
-        <CaseScreen item={item.shot} />
+        <CasePlate><CaseScreen item={item.shot} /></CasePlate>
         {item.caption && <p class="ds-body-sm case-routes__caption" data-h="caption">{item.caption}</p>}
       </div>
     </details>)}
   </div>
   {items.slice(2).map(item => <div class="case-routes__completion">
     <CaseThesis label={item.label} thesis={item.thesis} body={item.body} />
-    <CaseScreen item={item.shot} />
+    <CasePlate><CaseScreen item={item.shot} /></CasePlate>
     {item.caption && <p class="ds-body-sm case-routes__caption" data-h="caption">{item.caption}</p>}
   </div>)}
 </div>
 <style>
   .case-routes { display: grid; gap: var(--flow-group); }
-  .case-routes__label, .case-routes__caption { margin: 0; color: var(--text-meta); }
-  .case-routes__entries { border-block-end: var(--border-width) solid var(--border-default); }
-  .case-routes__entry { border-block-start: var(--border-width) solid var(--border-default); }
+  .case-routes__caption { margin: 0; color: var(--text-meta); }
+  .case-routes__entries { display: grid; gap: var(--flow-node); }
   .case-routes__entry summary { position: relative; display: grid; gap: var(--space-3); padding-block: var(--flow-text); padding-inline-end: var(--space-12); cursor: pointer; list-style: none; }
   .case-routes__entry summary::-webkit-details-marker { display: none; }
   .case-routes__toggle { position: absolute; inset-inline-end: 0; inset-block-start: var(--flow-text); }
   .case-routes__entry[open] .case-routes__toggle { transform: rotate(45deg); }
-  .case-routes__number { color: var(--text-meta); }
+  .case-routes__name { color: var(--text-meta); }
   .case-routes__content { display: grid; gap: var(--flow-text); padding-block: 0 var(--flow-group); }
   .case-routes__body { margin: 0; max-inline-size: var(--measure-case); text-wrap: pretty; }
   .case-routes__completion { display: grid; gap: var(--flow-group); }

@@ -86,7 +86,7 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
         {
           items.map((item) => (
             <li>
-              <TextLink href={item.href} type="nav" active={isActive(item.href)}>
+              <TextLink href={item.href} type="nav" active={isActive(item.href)} class="ds-body-sm">
                 {item.label}
               </TextLink>
             </li>
@@ -96,7 +96,7 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
           locales.length > 1 && (
             <li class="navbar__locale" role="group" aria-label={localeLabel}>
               {locales.map((locale) => (
-                <TextLink href={locale.href} type="nav" active={locale.active}>
+                <TextLink href={locale.href} type="nav" active={locale.active} class="ds-body-sm">
                   {locale.label}
                 </TextLink>
               ))}
@@ -107,7 +107,7 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
     </nav>
 
     <button
-      class="navbar__trigger ds-meta-xs"
+      class="navbar__trigger ds-body-sm"
       type="button"
       aria-expanded="false"
       aria-controls="navbar-panel"
@@ -152,7 +152,6 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
     position: relative;
     z-index: 10;
     background: var(--surface-default);
-    border-bottom: var(--border-width) solid var(--border-default);
   }
 
   .navbar__bar {
@@ -160,7 +159,7 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
     align-items: center;
     justify-content: space-between;
     gap: var(--space-6);
-    padding-block: var(--space-6);
+    padding-block: var(--space-4);
   }
 
   /* Наведения у знака нет намеренно: подчёркивание Строки принадлежит
@@ -177,7 +176,7 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
 
   .navbar__brand-logo {
     display: block;
-    block-size: calc(var(--space-12) - var(--space-2));
+    block-size: var(--navbar-logo-height);
   }
 
   .navbar__brand-logo :global(svg) {
@@ -258,11 +257,11 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
   }
 
   /* Верхний отступ разведён с нижним: строка с триггером на время
-     открытия прибита к верху окна и занимает ровно space-24 по высоте
-     (space-6 сверху и снизу + цель нажатия space-12). Список начинается
+     открытия прибита к верху окна: цель space-12 + поля space-4 с двух
+     сторон. Список начинается
      под ней, а не впритык к её нижнему краю. */
   .navbar__panel-inner {
-    padding-block-start: calc(var(--space-24) + var(--space-6));
+    padding-block-start: calc(var(--space-12) + var(--space-8) + var(--space-6));
     padding-block-end: var(--space-24);
   }
 
@@ -332,7 +331,7 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
     /** Позиция страницы на момент открытия панели — см. setOpen. */
     let lockedScrollY = 0;
 
-    const focusables = () => Array.from(panel.querySelectorAll<HTMLElement>(FOCUSABLE));
+    const focusables = () => [trigger, ...Array.from(panel.querySelectorAll<HTMLElement>(FOCUSABLE))];
 
     const setOpen = (next: boolean) => {
       // overflow: hidden на body схлопывает область прокрутки, и позиция
@@ -348,7 +347,7 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
       document.body.classList.toggle('ds-scroll-locked', next);
 
       if (next) {
-        focusables()[0]?.focus();
+        focusables()[1]?.focus();
       } else {
         // preventScroll обязателен: шапка не липкая, и фокус на триггере
         // утащил бы страницу обратно наверх мимо восстановленной позиции.
@@ -360,7 +359,8 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
     trigger.addEventListener('click', () => setOpen(!open), { signal });
 
     // Фокус-ловушка, Escape и возврат фокуса на триггер.
-    panel.addEventListener('keydown', (event: KeyboardEvent) => {
+    root.addEventListener('keydown', (event: KeyboardEvent) => {
+      if (!open) return;
       if (event.key === 'Escape') {
         event.preventDefault();
         setOpen(false);

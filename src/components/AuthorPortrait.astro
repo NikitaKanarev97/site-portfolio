@@ -7,22 +7,26 @@ interface Props {
   /** Меньший файл под bp-md: на телефоне фото 128 px, а не 768. */
   srcMobile?: string;
   alt: string;
-  lines: string[];
-  action: { href: string; label: string };
+  lines?: string[];
+  action?: { href: string; label: string };
+  /** Home uses a single project index beside the portrait. */
+  variant?: 'statement' | 'work-index';
   class?: string;
   at?: string;
 }
-const { src, srcMobile, alt, lines, action, class: className, at } = Astro.props;
+const { src, srcMobile, alt, lines = [], action, variant = 'statement', class: className, at } = Astro.props;
 ---
 
-<aside class:list={['author-portrait', className]} data-motion="fade" data-motion-at={at}>
+<aside class:list={['author-portrait', `author-portrait--${variant}`, className]} data-motion="fade" data-motion-at={at}>
   <MediaFrame src={src} srcMobile={srcMobile} alt={alt} ratio="portrait" loading="eager"
     counterScale={false} reveal={false} class="author-portrait__photo" />
   <div class="author-portrait__copy">
+    {variant === 'work-index' ? <slot /> : <>
     <p class="ds-heading-2xl author-portrait__statement">
       {lines.map((line, index) => <span>{line}{index < lines.length - 1 ? ' ' : ''}</span>)}
     </p>
-    <TextLink href={action.href} type="arrow">{action.label}</TextLink>
+    {action && <TextLink href={action.href} type="arrow">{action.label}</TextLink>}
+    </>}
   </div>
 </aside>
 
@@ -57,5 +61,16 @@ const { src, srcMobile, alt, lines, action, class: className, at } = Astro.props
      фото держит портрет в первом экране 1440 × 900 целиком. */
   @media (--bp-lg) {
     .author-portrait { grid-template-columns: 2fr 3fr; align-items: end; gap: var(--space-8); }
+  }
+  .author-portrait--work-index {
+    grid-template-columns: var(--space-32) minmax(0, 1fr);
+    align-items: start;
+    gap: var(--space-6);
+  }
+  @media (--bp-lg) {
+    .author-portrait--work-index {
+      grid-template-columns: var(--space-48) minmax(0, 1fr);
+      gap: var(--space-8);
+    }
   }
 </style>

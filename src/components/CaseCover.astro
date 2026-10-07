@@ -98,32 +98,38 @@ if (media.variant === 'screen') {
   {
     editorial ? (
       <div class="ds-container case-opening__editorial">
-        {media.variant === 'proof' && <p class="ds-meta-xs case-opening__eyebrow">{media.eyebrow}</p>}
+        {media.variant === 'proof' && media.eyebrow && <p class="ds-meta-sm case-opening__eyebrow">{media.eyebrow}</p>}
         <div class="case-opening__editorial-head">
-          <Heading class="ds-display-5xl case-opening__title" data-motion="lines">{title}</Heading>
+          <Heading class="ds-display-6xl case-opening__title" data-motion="lines">{title}</Heading>
           <p class="ds-heading-xl case-opening__editorial-lead" data-h="lead">{outcome}</p>
         </div>
         <WorkStage theme={theme} media={media} locale={locale} usage="cover" loading="eager" />
-        {media.variant === 'proof' && <p class="ds-body-sm case-opening__proof-caption" data-h="caption">{media.caption}</p>}
+        {media.variant === 'proof' && media.caption && <p class="ds-body-sm case-opening__proof-caption" data-h="caption">{media.caption}</p>}
       </div>
     ) : media.variant === 'proof' ? (
       <div class="ds-container case-opening__proof">
-        <p class="ds-meta-xs case-opening__eyebrow">{media.eyebrow}</p>
+        {media.eyebrow && <p class="ds-meta-sm case-opening__eyebrow">{media.eyebrow}</p>}
         <div class="case-opening__proof-head">
-          <Heading class="ds-display-7xl case-opening__title" data-motion="lines">{title}</Heading>
-          <p class:list={[media.layout === 'interlock' ? 'ds-heading-4xl' : 'ds-heading-xl', 'case-opening__proof-lead']} data-h="lead" data-cover-lead>{outcome}</p>
+          <Heading class="ds-display-6xl case-opening__title" data-motion="lines">{title}</Heading>
+          <p class="ds-heading-xl case-opening__proof-lead" data-h="lead" data-cover-lead>{outcome}</p>
         </div>
         <div class="case-opening__proof-media">
           {media.panels?.length ? (
             <div class="case-opening__panels">
               {media.panels.map((panel, i) => <>
-                {media.layout === 'interlock' && i === 1 && <div class="case-opening__gate" data-cover-gate><span class="case-opening__gate-line" aria-hidden="true" /><p class="ds-meta-xs">{media.gate}</p></div>}
+                {media.layout === 'interlock' && i === 1 && <div class="case-opening__gate" data-cover-gate>
+                  <svg class="case-opening__reviewer" viewBox="0 0 48 48" fill="none" aria-hidden="true" focusable="false">
+                    <circle cx="24" cy="15" r="7" stroke="currentColor" stroke-width="2" />
+                    <path d="M10 40v-4a14 14 0 0 1 28 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                  <p class="ds-body-sm">{media.gate}</p>
+                </div>}
                 <div data-cover-panel><CaseScreen item={panel} loading="eager" /></div>
               </>)}
             </div>
           ) : <CaseScreen item={media.shot} loading="eager" />}
         </div>
-        <p class="ds-body-sm case-opening__proof-caption" data-h="caption">{media.caption}</p>
+        {media.caption && <p class="ds-body-sm case-opening__proof-caption" data-h="caption">{media.caption}</p>}
       </div>
     ) : media.variant === 'video' && !media.video ? (
       <>
@@ -141,7 +147,7 @@ if (media.variant === 'screen') {
           />
         </picture>
         <div class="ds-container case-opening__head case-opening__head--over">
-          <Heading class="ds-display-7xl case-opening__title" data-motion="lines">
+          <Heading class="ds-display-6xl case-opening__title" data-motion="lines">
             {title}
           </Heading>
           <p class="ds-heading-xl case-opening__outcome" data-h="lead">
@@ -165,7 +171,7 @@ if (media.variant === 'screen') {
           <source src={`${media.video}.mp4`} type="video/mp4" />
         </video>
         <div class="ds-container case-opening__head case-opening__head--over">
-          <Heading class="ds-display-7xl case-opening__title" data-motion="lines">
+          <Heading class="ds-display-6xl case-opening__title" data-motion="lines">
             {title}
           </Heading>
           <p class="ds-heading-xl case-opening__outcome" data-h="lead">
@@ -210,7 +216,6 @@ if (media.variant === 'screen') {
 </section>
 
 <style>
-  .case-opening--vet .case-opening__editorial-head { grid-template-columns:1fr; gap:var(--space-4); }
   .case-opening__editorial { display: grid; gap: var(--flow-group); padding-block: var(--flow-group); }
   .case-opening__editorial-head { display: grid; gap: var(--flow-text); }
   .case-opening__editorial-lead { margin: 0; max-inline-size: var(--measure-case); text-wrap: pretty; }
@@ -231,7 +236,7 @@ if (media.variant === 'screen') {
   }
 
   /* Editorial material owns its height; the viewport rule above is only a minimum. */
-  .case-opening--editorial { block-size: auto; min-block-size: calc(100svh - var(--cover-offset, 0px)); }
+  .case-opening--editorial { block-size: auto; }
 
   .case-opening[data-tone='dark'] {
     color: var(--text-on-inverse);
@@ -299,7 +304,7 @@ if (media.variant === 'screen') {
     }
   }
 
-  @media (--bp-xl) {
+  @media (--bp-lg) {
     .case-opening__proof-head {
       display: grid;
       grid-template-columns: 3fr 2fr;
@@ -347,10 +352,10 @@ if (media.variant === 'screen') {
     text-align: center;
   }
   .case-opening__gate p { margin: 0; }
-  .case-opening__gate-line {
+  .case-opening__reviewer {
+    flex: none;
     inline-size: var(--space-12);
-    block-size: var(--space-32);
-    border-inline: var(--space-3) solid currentColor;
+    block-size: var(--space-12);
   }
   @media (--below-bp-md) {
     .case-opening--interlock .case-opening__panels {
@@ -364,7 +369,7 @@ if (media.variant === 'screen') {
       margin-block-start: 0;
     }
     .case-opening__gate { flex-direction: row; justify-content: center; }
-    .case-opening__gate-line { block-size: var(--space-6); inline-size: var(--space-3); border-inline-width: var(--border-width); }
+    .case-opening__reviewer { block-size: var(--space-8); inline-size: var(--space-8); }
   }
 
   .case-opening__video {

@@ -31,7 +31,7 @@ const { shot, tone = 'light', class: className } = Astro.props;
 ---
 
 <figure class:list={['case-shot', className]}>
-  <CasePlate tone={tone}>
+  <CasePlate tone={tone} class={shot.layout === 'phones' && shot.items.length === 1 ? 'case-shot__compact-plate' : undefined}>
     <div class:list={['case-shot__row', `case-shot__row--${shot.layout}`]}>
       {shot.items.map((item) => <CaseScreen item={item} />)}
     </div>
@@ -63,6 +63,12 @@ const { shot, tone = 'light', class: className } = Astro.props;
      абзаца, ряд стоит по центру плашки. */
   .case-shot__row--phones {
     max-inline-size: var(--measure-lead);
+  }
+
+  .case-shot > :global(.case-shot__compact-plate) {
+    inline-size: 100%;
+    max-inline-size: calc(var(--space-48) * 2 + var(--space-4) * 2);
+    padding: var(--space-4);
   }
 
   @media (--below-bp-md) {

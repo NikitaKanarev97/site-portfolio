@@ -56,22 +56,18 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     автоматическим шагом каскада, ряд действий — явной позицией 0.4.
   */}
   <section class="ds-container ds-section hero" data-motion-intro>
-    <p class="ds-meta-sm hero__name" data-motion="fade"><span>{home.hero.name}</span><span>{home.hero.role}</span></p>
+    <p class="ds-body-base hero__name" data-motion="fade"><span>{home.hero.name}</span><span class="hero__profession">{home.hero.role}</span></p>
 
-    <h1 class="ds-display-6xl hero__role ds-flow-heading">
+    <h1 class="ds-display-home hero__role ds-flow-heading">
       {home.hero.headline.map(line => <span data-motion="reveal-text">{line}</span>)}
     </h1>
 
-    <nav class="work-index" aria-label={locale === 'ru' ? 'Пять продуктовых работ' : 'Five product design projects'}>
-      {home.featured.items.map((item, i) => <a href={`#work-${item.href.split('/').filter(Boolean).at(-1)}`} class="ds-body-sm">
-        <span class="ds-meta-xs" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>{item.title}<span aria-hidden="true">↓</span>
-      </a>)}
-    </nav>
-
     <AuthorPortrait src={home.hero.portrait.src} srcMobile={home.hero.portrait.srcMobile} alt={home.hero.portrait.alt}
-      lines={home.hero.portrait.headline}
-      action={{ href: home.hero.portrait.href, label: home.hero.portrait.link }}
-      class="hero__profile" at="0.2" />
+      variant="work-index" class="hero__profile" at="0.2">
+      <nav class="work-index" aria-label={home.hero.workLabel}>
+        {home.featured.items.map(item => <a href={`#work-${item.href.split('/').filter(Boolean).at(-1)}`} class="ds-body-base">{item.title}</a>)}
+      </nav>
+    </AuthorPortrait>
 
     <div class="hero__copy">
     <ProseBlock motion={false} class="hero__spec">
@@ -87,8 +83,7 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     </p>}
 
     <div class="hero__actions" data-motion="fade" data-motion-at="0.4">
-      <TextLink href="#work" type="arrow">{home.hero.caseEntry}</TextLink>
-      <TextLink href={locale === 'ru' ? '/cv-ru.pdf' : '/cv.pdf'}>{home.hero.cv}</TextLink>
+      <TextLink type="arrow" href={locale === 'ru' ? '/cv-ru.pdf' : '/cv.pdf'}>{home.hero.cv}</TextLink>
       <CopyEmail
         email={site.contact.email}
         appearance="action"
@@ -139,7 +134,7 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
   */}
   <section class="ds-container ds-section dev">
     <div class="dev__head" data-motion-group data-motion-stagger="tight">
-      <SectionHead size="sm">{home.development.heading}</SectionHead>
+      <SectionHead size="lg">{home.development.heading}</SectionHead>
       <ProseBlock class="dev__lead">
         <p>{home.development.lead}</p>
       </ProseBlock>
@@ -182,10 +177,6 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
 
               <div class="dev__body">
                 <h3 class="ds-heading-xl dev__name">{item.name}</h3>
-                {/* DEV-02: роль у каждой сборки — обычной строкой, без
-                    моноширинной метки «Role»: метка над одной и той же
-                    фразой четыре раза подряд читалась как таблица. */}
-                <p class="ds-body-sm dev__role">{home.development.roleValue}</p>
               </div>
             </a>
           </li>
@@ -218,48 +209,51 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     ))
   }
 
-  {/* AboutShort развивает короткое знакомство из hero. */}
+  {/* The process is a sequence; its section heading matches web builds. */}
   <section class="ds-container ds-section about" data-motion="fade">
-    <SectionHead size="lg" reveal={false}>{home.about.heading}</SectionHead>
-
-    <ProseBlock motion={false} class="about__body">
-      <p>{home.about.body}</p>
-    </ProseBlock>
-
-    <TextLink href={home.about.href} type="arrow">{home.about.link}</TextLink>
+    <div class="about__head">
+      <SectionHead size="lg" reveal={false}>{home.about.heading}</SectionHead>
+      <TextLink href={home.about.href} type="arrow">{home.about.link}</TextLink>
+    </div>
+    <ol class="about__steps">
+      {home.about.steps.map(step => <li>
+        <h3 class="ds-heading-xl">{step.heading}</h3>
+        <p class="ds-body-lg">{step.body}</p>
+      </li>)}
+    </ol>
   </section>
 </PageShell>
 
 <style>
-  :global(main:has(> .hero)) { padding-block-start:var(--flow-text); }
-  .hero { display:grid; gap:var(--space-4); }
+  :global(main:has(> .hero)) { padding-block-start:var(--flow-group); }
+  .hero { display:grid; gap:var(--flow-text); }
   .hero > *, .hero > .hero__role, .hero__copy > *, .hero__copy > :global(.hero__spec) { margin-block-start:0; }
   .hero__copy { display:grid; gap:var(--flow-text); align-content:start; }
-  .hero__name { display:flex; flex-wrap:wrap; justify-content:space-between; gap:var(--space-2) var(--space-4); color:var(--text-meta); }
+  .hero__name { display:flex; flex-direction:column; gap:0; color:var(--text-default); }
+  .hero__profession { color:var(--text-subtle); }
   .hero__role { color:var(--text-default); }
   .hero__role > span { display:block; }
   .hero__role > span:last-child { color:var(--text-link); }
   .hero__authorization { color:var(--text-subtle); max-inline-size:var(--measure-text); }
   .hero > :global(.hero__profile) { margin-block-start:0; }
-  .hero__actions { display:grid; grid-template-columns:1fr 1fr; gap:var(--space-3); }
+  .hero__actions { display:flex; flex-wrap:wrap; gap:var(--space-3) var(--space-6); }
   .hero__actions > :global(*) { display:flex; align-items:center; min-block-size:var(--space-12); }
-  .hero__actions > :global(.copy-email--action) { grid-column:1 / -1; align-items:flex-start; }
-  .work-index { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 var(--space-4); border-block:var(--border-width) solid var(--border-default); }
-  .work-index a { display:flex; align-items:center; gap:var(--space-2); min-block-size:var(--space-12); color:var(--text-default); text-decoration:none; }
-  .work-index a > span:last-child { margin-inline-start:auto; }
+  @media (--below-bp-md) {
+    .hero__actions > :global(.copy-email--action) { align-items:flex-start; }
+  }
+  .work-index { display:grid; }
+  .work-index a { display:flex; align-items:center; min-block-size:var(--space-12); color:var(--text-default); text-decoration:none; }
   .work-index a:active { color:var(--text-link-pressed); }
   @media (--can-hover) { .work-index a:hover { color:var(--text-link-hover); } }
-  @media (--bp-md) { .work-index { grid-template-columns:repeat(5,minmax(0,1fr)); gap:var(--space-4); } }
+  @media (--bp-md) { .hero__name { flex-direction:row; gap:var(--space-6); } }
   @media (--bp-lg) {
-    .hero { grid-template-columns:4fr 6fr; gap:var(--space-6) var(--space-16); }
-    .hero__name, .hero__role, .work-index { grid-column:1 / -1; }
-    .hero__role { padding-block:var(--space-4); font-size:var(--size-5xl); }
-    .hero__role > span:last-child { text-align:right; }
-    .hero > :global(.hero__profile) { grid-column:2; grid-row:4; align-self:start; }
-    .hero__copy { grid-column:1; grid-row:4; }
+    .hero { grid-template-columns:1fr 1fr; gap:var(--flow-node) var(--space-16); }
+    .hero__name, .hero__role { grid-column:1 / -1; }
+    .hero__role { padding-block:var(--space-4); }
+    .hero > :global(.hero__profile) { grid-column:2; grid-row:3; align-self:start; }
+    .hero__copy { grid-column:1; grid-row:3; }
     .hero__actions { display:flex; flex-wrap:wrap; gap:var(--space-4) var(--space-6); align-items:flex-start; align-self:start; }
   }
-  @media (--bp-xl) { .hero__role { font-size:var(--size-6xl); } }
 
   /* Отступ под eyebrow задаёт ds-flow-eyebrow на нём самом. */
   .featured__eyebrow {
@@ -322,10 +316,6 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     color: var(--text-default);
   }
 
-  .dev__role {
-    color: var(--text-subtle);
-  }
-
   /* Десктоп: две карточки в ряд, превью сверху. Четыре в ряд давали кадр
      шириной 300 px — визуальную работу было не разглядеть, а именно эта
      секция показывает визуальный дизайн. Подпись «Details» снята: карточка
@@ -373,20 +363,21 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
    * AboutShort                                                        *
    * ---------------------------------------------------------------- */
 
-  /* Ссылка принадлежит абзацу над ней, а не стоит отдельным узлом:
-     текстовый шаг вместо умолчания секции. Та же цель нажатия, что в
-     ряду Hero, и тот же :global по той же причине — ссылка это корень
-     TextLink. */
-  .about > :global(.ds-link) {
-    margin-block-start: var(--flow-text);
+  .about__head { display:grid; gap:var(--flow-text); align-content:start; }
+  .about__head > :global(*) { margin-block-start:0; }
+  .about__head > :global(.ds-link) {
     display: inline-flex;
     align-items: center;
-    min-height: var(--space-12);
+    justify-self:start;
+    min-block-size: var(--space-12);
   }
 
-  @media (--bp-md) {
-    .about > :global(.ds-link) {
-      min-height: 0;
-    }
+  .about__steps { display:grid; gap:var(--flow-node); }
+  .about__steps li { display:grid; gap:var(--flow-pair); align-content:start; }
+  .about__steps p { color:var(--text-subtle); }
+  @media (--bp-lg) {
+    .about { display:grid; grid-template-columns:1fr 3fr; gap:var(--space-16); }
+    .about > * { margin-block-start:0; }
+    .about__steps { grid-template-columns:repeat(3,minmax(0,1fr)); gap:var(--space-8); }
   }
 </style>

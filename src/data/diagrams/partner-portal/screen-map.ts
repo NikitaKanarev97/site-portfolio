@@ -2,14 +2,14 @@ import { defineDiagram } from '../schema';
 /** Selected screen hierarchy, not the sequential flow. HA-MAP-01. */
 export const partnerPortalMap = defineDiagram({
   kind:'map', title:{en:'Selected procurement screens',ru:'Выбранные экраны закупки'},
-  summary:{en:'Dashboard opens file import, Quick order, Cart and Order details. Both intakes share Resolution Center. Cart contains supply planning and checkout. Eight selected screens, not the entire product.',ru:'С главной доступны импорт файла, быстрый заказ, корзина и детали заказа. Оба входа используют центр разрешения. В корзине доступны план поставки и оформление. Восемь выбранных экранов, не весь продукт.'},
+  summary:{en:'Dashboard opens file import, Quick order, Cart and Order details. Both intakes share Resolution Center. Cart contains supply planning and checkout. Eight selected screens, not the entire product.',ru:'С главной доступны импорт файла, быстрый заказ, корзина и детали заказа. Оба входа ведут на общий экран сопоставления. В корзине доступны план поставки и оформление. Восемь выбранных экранов, не весь продукт.'},
   heading:{lead:{en:'Screen map',ru:'Карта экранов'},name:{en:'Procurement workspace',ru:'Рабочее место закупки'}},
   size:{w:146,h:61},
   nodes:[
     {id:'home',type:'entry',at:[61,0],w:24,label:{en:'Dashboard',ru:'Главная'},num:1},
     {id:'xls',type:'screen',at:[0,18],w:28,label:{en:'XLS import',ru:'Импорт XLS'},num:2},
     {id:'quick',type:'screen',at:[34,18],w:28,label:{en:'Quick order',ru:'Быстрый заказ'},num:3},
-    {id:'resolve',type:'screen',at:[17,39],w:28,label:{en:'Resolution',ru:'Разрешение'},num:4,actions:[{label:{en:'choose a match',ru:'выбрать товар'}},{label:{en:'correct source',ru:'исправить строку'}}]},
+    {id:'resolve',type:'screen',at:[17,39],w:28,label:{en:'Resolution',ru:'Сопоставление'},num:4,actions:[{label:{en:'choose a match',ru:'выбрать товар'}},{label:{en:'correct source',ru:'исправить строку'}}]},
     {id:'cart',type:'screen',at:[79,18],w:26,label:{en:'Cart',ru:'Корзина'},num:5},
     {id:'plan',type:'screen',at:[69,39],w:28,label:{en:'Supply plan',ru:'План поставки'},num:6},
     {id:'checkout',type:'screen',at:[103,39],w:28,label:{en:'Checkout',ru:'Оформление'},num:7,actions:[{label:{en:'confirm terms',ru:'подтвердить условия'}}]},

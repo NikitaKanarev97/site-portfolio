@@ -18,6 +18,7 @@
  */
 import CasePlate from './CasePlate.astro';
 import CaseScreen from './CaseScreen.astro';
+import IconArrow from './IconArrow.astro';
 import Diagram from './Diagram.astro';
 import type { ShotItem } from '../copy/cases/story';
 import type { Diagram as DiagramData } from '../data/diagrams/schema';
@@ -53,10 +54,10 @@ const {
     </span>
     <div class="case-carousel__buttons">
       <button type="button" class="case-carousel__button" data-carousel-prev aria-label={prevLabel}>
-        <span aria-hidden="true">←</span>
+        <span class="case-carousel__previous" aria-hidden="true"><IconArrow /></span>
       </button>
       <button type="button" class="case-carousel__button" data-carousel-next aria-label={nextLabel}>
-        <span aria-hidden="true">→</span>
+        <IconArrow />
       </button>
     </div>
   </div>
@@ -117,6 +118,8 @@ const {
     display: flex;
     gap: var(--space-3);
   }
+
+  .case-carousel__previous { display: flex; transform: rotate(180deg); }
 
   .case-carousel__button {
     display: inline-grid;

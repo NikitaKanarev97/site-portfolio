@@ -1,23 +1,5 @@
 ---
-/**
- * CaseThesis — ds/components.md, карта ds/screens/case.md §7
- *
- * Метка + тезис + абзац: текстовая часть любого блока 02–09.
- * Бюджет (правила 8–10 harmony-checklist.md): тезис до 60 знаков, абзац
- * до 35 слов. Проверяет scripts/harmony-check.mjs по меткам data-h.
- *
- * На ≥ bp-xl метка стоит в колонках 1–3, текст — в 4–10; на bp-lg текст
- * берёт 3–12: в 4–10 при 1024 тезису 48 px оставалось ~500 px, и
- * harmony-check ловил строки из одного слова. Абзац держит меру
- * measure-case (~65 знаков при 18 px, правило 9). Ниже bp-lg — метка над
- * тезисом. Тезис text-wrap: balance, абзац pretty: без одиночного слова в
- * последней строке.
- *
- * Корень несёт ds-flow-lead: следующий за ним визуал встаёт шагом
- * flow-group (48), и кадр не прилипает к тексту (правило 7).
- *
- * Движение: lines на тезисе; абзац появляется целиком через fade.
- */
+/** Heading and optional body with the shared flow-node rhythm. The data label names its section. */
 interface Props {
   label: string;
   thesis: string;
@@ -28,7 +10,7 @@ interface Props {
   variant?: 'editorial';
 }
 
-const { label, thesis, body, as: Heading = 'h2', class: className, variant } = Astro.props as Props;
+const { thesis, body, as: Heading = 'h2', class: className, variant } = Astro.props as Props;
 /*
  * Список классов вынесен из шаблона намеренно: фронтматтер, который
  * кончается на `as Props;`, компилятор Astro (convertToTSX) склеивает с
@@ -39,7 +21,6 @@ const rootClass = ['case-thesis', 'ds-flow-lead', className];
 ---
 
 <div class:list={rootClass}>
-  <p class="ds-meta-xs case-thesis__label">{label}</p>
   <div class="case-thesis__text">
     <Heading class:list={[variant === 'editorial' ? 'ds-display-5xl' : 'ds-heading-4xl', 'case-thesis__thesis']} data-h="thesis" data-motion="lines">{thesis}</Heading>
     {body && <p class="ds-body-lg case-thesis__body" data-h="para" data-motion="fade">{body}</p>}
@@ -47,13 +28,8 @@ const rootClass = ['case-thesis', 'ds-flow-lead', className];
 </div>
 
 <style>
-  .case-thesis__label {
-    margin: 0;
-    color: var(--text-meta);
-  }
-
   .case-thesis__text {
-    margin-block-start: var(--flow-pair);
+    max-inline-size: var(--measure-lead);
   }
 
   .case-thesis__thesis {
@@ -69,31 +45,4 @@ const rootClass = ['case-thesis', 'ds-flow-lead', className];
     text-wrap: pretty;
   }
 
-  @media (--bp-lg) {
-    .case-thesis {
-      display: grid;
-      grid-template-columns: repeat(var(--columns-lg), minmax(0, 1fr));
-      column-gap: var(--gutter);
-      align-items: baseline;
-    }
-
-    .case-thesis__label {
-      grid-column: 1 / 3;
-    }
-
-    .case-thesis__text {
-      grid-column: 3 / -1;
-      margin-block-start: 0;
-    }
-  }
-
-  @media (--bp-xl) {
-    .case-thesis__label {
-      grid-column: 1 / 4;
-    }
-
-    .case-thesis__text {
-      grid-column: 4 / 11;
-    }
-  }
 </style>

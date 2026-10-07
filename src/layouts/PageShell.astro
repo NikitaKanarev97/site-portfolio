@@ -9,7 +9,7 @@
  * (ds/CONTRACT.md §Что запрещено).
  *
  * ContactBlock тоже остаётся паттерном без своего файла: он собран здесь
- * из SectionHead + ProseBlock + CopyEmail appearance=address + ряда
+ * из display h2 + ProseBlock + CopyEmail appearance=address + ряда
  * TextLink. Отдельного компонента не заводим — в продукте он существует
  * ровно в одном экземпляре, в этом файле.
  *
@@ -17,22 +17,20 @@
  * а не внутри (ds/patterns.md).
  *
  * Движение: ContactBlock — opacity целым блоком (ds/motion-concept.md §7),
- * поэтому SectionHead и ProseBlock внутри своих тактов не получают.
+ * поэтому заголовок и ProseBlock внутри своих тактов не получают.
  * Footer без движения. 404 идёт с motion={false} и nav={false} — без
  * движения вовсе.
  *
  * Две раскладки блока, не одна ужатая (ia/wireframes/mobile-home.md):
- * десктоп — по центру, ссылки в ряд; мобильный — по левому краю, ссылки
- * двумя строками с целью нажатия в space-12. Центрированный текст на
- * 327 px даёт рваный левый край на каждой строке, а две цели в ряд —
- * маленькие зоны нажатия рядом, где промах ведёт не туда, куда целился.
+ * десктоп — заголовок над двумя колонками пояснения и контактов;
+ * мобильный — последовательный поток. Вторичные ссылки в ряд с
+ * переносом, каждая сохраняет цель нажатия space-12.
  *
  * Тексты приходят из src/copy/site.ts, композиция их не держит. Ведущая
  * строка ContactBlock — проп со сквозным умолчанием: маршрут передаёт свою,
  * когда сквозная на нём неверна (ds/screens/about.md §ContactBlock).
  */
 import BaseLayout from './BaseLayout.astro';
-import SectionHead from '../components/SectionHead.astro';
 import ProseBlock from '../components/ProseBlock.astro';
 import CopyEmail from '../components/CopyEmail.astro';
 import TextLink from '../components/TextLink.astro';
@@ -125,74 +123,79 @@ const resolvedContactHeading = contactHeading ?? siteCopy.contact.heading;
       <section
         class="ds-container ds-section contact"
         id="contact"
+        aria-labelledby="contact-heading"
         data-motion={motion ? 'fade' : undefined}
       >
-        <SectionHead size="lg" reveal={false}>
+        <h2 class="ds-display-7xl ds-flow-heading contact__heading" id="contact-heading">
           {resolvedContactHeading}
-        </SectionHead>
+        </h2>
 
-        <ProseBlock motion={false} class="contact__lead">
-          <p>{resolvedContactLead}</p>
-        </ProseBlock>
+        <div class="contact__body">
+          <ProseBlock motion={false} class="contact__lead">
+            <p>{resolvedContactLead}</p>
+          </ProseBlock>
 
-        <CopyEmail
-          email={siteCopy.contact.email}
-          appearance="address"
-          label={contactCopy?.copyLabel ?? siteCopy.contact.copyLabel}
-          hint={contactCopy?.copyHint ?? siteCopy.contact.copyHint}
-          copiedLabel={contactCopy?.copiedLabel ?? siteCopy.contact.copiedLabel}
-          announce={contactCopy?.announce ?? siteCopy.contact.announce}
-          fallbackAnnounce={contactCopy?.fallbackAnnounce ?? siteCopy.contact.fallbackAnnounce}
-          class="contact__email"
-        />
+          <div class="contact__actions">
+            <CopyEmail
+              email={siteCopy.contact.email}
+              appearance="address"
+              label={contactCopy?.copyLabel ?? siteCopy.contact.copyLabel}
+              hint={contactCopy?.copyHint ?? siteCopy.contact.copyHint}
+              copiedLabel={contactCopy?.copiedLabel ?? siteCopy.contact.copiedLabel}
+              announce={contactCopy?.announce ?? siteCopy.contact.announce}
+              fallbackAnnounce={contactCopy?.fallbackAnnounce ?? siteCopy.contact.fallbackAnnounce}
+              class="contact__email"
+            />
 
-        <ul class="contact__links">
-          {siteCopy.contact.links.map((link) => (
-            <li>
-              <TextLink href={link.href} external={link.external}>
-                {link.label}
-              </TextLink>
-            </li>
-          ))}
-        </ul>
+            <ul class="contact__links">
+              {siteCopy.contact.links.map((link) => (
+                <li>
+                  <TextLink href={link.href} type="arrow" external={link.external}>
+                    {link.label}
+                  </TextLink>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </section>
     )
   }
 
   <Fragment slot="footer">
     <Footer
-      location={siteCopy.footer.location}
-      utcLabel={siteCopy.footer.utcLabel}
-      timeZone={siteCopy.footer.timeZone}
-      timeLabel={siteCopy.footer.timeLabel}
       copyright={siteCopy.footer.copyright}
     />
   </Fragment>
 </BaseLayout>
 
 <style>
-  /* :global обязателен: корни ProseBlock и CopyEmail несут собственный
-     data-astro-cid, скоуп оболочки до них не достаёт, и правило молча не
-     применяется. Найдено при сборке About 2026-08-24 — правило общее для
-     любого корня компонента, не только для ссылок (ds/components.md
-     §Реализация). Без него блок шёл без отступов на всех маршрутах.
+  .contact__heading {
+    overflow-wrap: anywhere;
+  }
 
-     Заголовок → ведущая строка идёт шкалой ДС (ds-flow-heading), два
-     оставшихся промежутка перебиты: адрес — группа, ссылки принадлежат
-     адресу и стоят на узловом шаге, а не отдельным узлом. */
-  .contact > :global(.contact__email) {
+  .contact > .contact__body {
     margin-block-start: var(--flow-group);
   }
 
-  .contact > .contact__links {
-    margin-block-start: var(--flow-node);
+  .contact__body {
+    display: grid;
+    gap: var(--flow-node);
   }
 
-  /* Мобильная раскладка — базовая, десктопная надстраивается медиазапросом. */
+  .contact__actions {
+    min-width: 0;
+  }
+
+  .contact__actions > .contact__links {
+    margin-block-start: var(--flow-text);
+  }
+
   .contact__links {
     display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
+    flex-wrap: wrap;
+    column-gap: var(--space-8);
+    row-gap: var(--space-2);
   }
 
   .contact__links li {
@@ -201,38 +204,17 @@ const resolvedContactHeading = contactHeading ?? siteCopy.contact.heading;
     min-height: var(--space-12);
   }
 
-  /* Цель нажатия — сама ссылка, а не строка вокруг неё: li тянется на
-     space-12, ссылка внутри оставалась 26 px. :global обязателен —
-     корень TextLink несёт собственный data-astro-cid. */
+  /* Scope reaches the actual TextLink root, so the whole touch target works. */
   .contact__links li :global(.ds-link) {
     display: inline-flex;
     align-items: center;
   }
 
-  @media (--bp-md) {
-    .contact {
-      text-align: center;
-    }
-
-    /* Мера колонки остаётся, центрируется сам блок. */
-    .contact > :global(.contact__lead) {
-      margin-inline: auto;
-    }
-
-    /* Перебивает align-items: flex-start из самого CopyEmail. */
-    .contact > :global(.contact__email) {
-      align-items: center;
-    }
-
-    .contact__links {
-      flex-direction: row;
-      justify-content: center;
-      gap: var(--space-8);
-    }
-
-    .contact__links li {
-      align-items: center;
-      min-height: 0;
+  @media (--bp-lg) {
+    .contact__body {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+      column-gap: var(--space-16);
+      align-items: start;
     }
   }
 </style>

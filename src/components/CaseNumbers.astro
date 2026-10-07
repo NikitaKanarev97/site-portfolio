@@ -13,6 +13,8 @@
  * число, и не озвучивается: порядок несёт сам список <ol>. Ниже bp-md
  * цепочка встаёт столбиком, стрелка поворачивается вниз.
  */
+import IconArrow from './IconArrow.astro';
+
 interface Props {
   items: { value: string; caption: string }[];
   class?: string;
@@ -27,7 +29,7 @@ const { items, class: className } = Astro.props;
       <li class="case-numbers__item">
         {i > 0 && (
           <span class="ds-display-5xl case-numbers__arrow" aria-hidden="true">
-            →
+            <IconArrow />
           </span>
         )}
         <span class="case-numbers__body">

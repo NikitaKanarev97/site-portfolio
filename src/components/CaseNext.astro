@@ -1,24 +1,5 @@
 ---
-/**
- * CaseNext — ds/components.md, карта ds/screens/case.md §8
- *
- * Переход к следующему кейсу (блок 10): блок во всю ширину на цвете
- * следующего кейса, название огромной бегущей строкой. Доноры —
- * hainteractive и Tubik. Цвет кейса стоит только здесь и на обложке.
- *
- * Весь блок — одна ссылка. Без перехвата колеса и без перехода по
- * докручиванию (PLAN-CHATS.md, общие правила): переход — клик или обычная
- * ссылка. Ссылка на прототип стоит ниже, вне большой ссылки, чтобы не
- * вкладывать одну цель в другую.
- *
- * Бегущая строка — три копии названия в ряд. Первую читает только
- * визуально, имя ссылки собирается из метки и названия в скрытом тексте;
- * все копии aria-hidden. Без JS и при reduced-motion строка стоит: первая
- * копия с левого поля контейнера, хвост уходит за край. Движение —
- * data-motion="marquee", исполнитель этап 3; раскрытие обложки следующего
- * кейса через View Transitions — тоже этап 3.
- */
-import TextLink from './TextLink.astro';
+/** Next case: one wrapped title and one native link; the product action stays in facts. */
 import { caseThemes, type CaseTheme } from '../copy/cases/story';
 
 interface Props {
@@ -31,7 +12,7 @@ interface Props {
   transitionKey?: string;
 }
 
-const { href, title, theme, label, prototype, class: className, transitionKey } = Astro.props;
+const { href, title, theme, label, class: className, transitionKey } = Astro.props;
 const { surface, tone } = caseThemes[theme];
 ---
 
@@ -45,23 +26,10 @@ const { surface, tone } = caseThemes[theme];
     data-tone={tone}
     style={`--next-surface: ${surface}`}
   >
-    <span class="ds-container ds-meta-xs case-next__label" aria-hidden="true">{label}</span>
+    <span class="ds-container ds-meta-sm case-next__label" aria-hidden="true">{label}</span>
     <span class="ds-visually-hidden">{label}: {title}</span>
-    <span class="case-next__marquee" aria-hidden="true">
-      <span class="case-next__track" data-motion="marquee">
-        {[0, 1, 2].map(() => <span class="ds-display-7xl case-next__title">{title}</span>)}
-      </span>
-    </span>
+    <span class="ds-container ds-display-6xl case-next__title" aria-hidden="true">{title}</span>
   </a>
-  {
-    prototype && (
-      <p class="ds-container ds-body-sm case-next__proto">
-        <TextLink href={prototype.href} external>
-          {prototype.label}
-        </TextLink>
-      </p>
-    )
-  }
 </section>
 
 <style>
@@ -91,43 +59,9 @@ const { surface, tone } = caseThemes[theme];
     outline-offset: calc(-1 * var(--focus-ring-width) * 2);
   }
 
-  /* min-inline-size обязателен: clip — не область прокрутки, и без него
-     flex-элемент держит ширину всей строки и даёт прокрутку страницы. */
-  .case-next__marquee {
-    display: block;
-    min-inline-size: 0;
-    overflow-x: clip;
-    overflow-y: visible;
-    padding-block: var(--space-6);
-  }
-
-  .case-next__track {
-    display: flex;
-    gap: var(--space-16);
-    inline-size: max-content;
-    padding-inline-start: var(--margin-sm);
-  }
-
-  @media (--bp-md) {
-    .case-next__track {
-      padding-inline-start: var(--margin-md);
-    }
-  }
-
-  @media (--bp-lg) {
-    .case-next__track {
-      padding-inline-start: var(--margin-lg);
-    }
-  }
-
   .case-next__title {
-    white-space: nowrap;
-    line-height: var(--lh-heading);
-  }
-
-  .case-next__proto {
-    margin: var(--flow-node) 0 0;
-    color: var(--text-subtle);
+    inline-size: 100%;
+    overflow-wrap: anywhere;
   }
 
 </style>

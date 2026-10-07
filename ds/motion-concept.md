@@ -6,6 +6,8 @@ CaseRoutes — доступное native details раскрытие реальн
 
 # Motion-концепция — Site-portfolio
 
+**FIXES · 07.10.2026.** CaseNext больше не объявляет marquee: одна нативная ссылка с одним переносимым названием, обычные hover/focus/active и общий переход кейса. Цикл для этой поверхности удалён во всех motion preferences; старый motion-токен сохраняется для совместимости без нового значения. Исторические требования цикла CaseNext ниже заменены этой редакцией. CaseSpecimen использует native details без анимации высоты; toggle/resize обновляют геометрию существующим lifecycle, новых движений нет.
+
 **H6 · 04.10.2026.** fade-image принадлежит целой CaseScreen: поля, native материал и подпись появляются одним движением. Вложенного reveal картинки нет. Actual specimens и Home case-links статичны; у Home Agent только gate использует прежний fade. MediaFrame Web builds reveal=false. CaseCover interlock, focus/money checkpoint, skip/reverse/lifecycle, reduce и no-JS сохраняются; значения ds/motion.js не меняются.
 
 **Common A · 04.10.2026.** История выбирает только разрешённые `CaseBlock.motion`: static/reveal/count/draw/focus/pin-swap по типу блока. Новых длительностей/кривых не потребовалось. Static блок исключён из исполнения, CSS оставляет весь текст видимым. Draw использует общий matchMedia для desktop/mobile geometry; после завершения при resize остаётся конечным, обратный scroll не повторяет объяснение. Контексты очищаются через общий lifecycle. `CaseNext` остаётся одной обычной ссылкой без pause title / hover / focus пауз; видимость страницы/секции и reduced motion управляют движением.

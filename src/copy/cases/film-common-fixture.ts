@@ -9,7 +9,7 @@ export function filmCommonFixture(lang: 'en' | 'ru') {
   const after = phone('order-details', t('Demo report: return received at 14:52.', 'Демоотчёт: возвращение получено в 14:52.'));
   return defineStory({
     theme: 'pawly', plate: 'light',
-    cover: { title: t('A film inside the story', 'Фильм внутри истории'), outcome: t('Shared media verification fixture. Pawly remains an independent concept on invented data.', 'Проверочный пример общего носителя. Pawly — самостоятельный концепт на вымышленных данных.'),
+    cover: { title: t('A film inside the story', 'Фильм внутри истории'), outcome: t('Shared media verification fixture with Pawly on demonstration data.', 'Проверочный пример общего носителя с Pawly на демонстрационных данных.'),
       media: { variant: 'screen', layout: 'phones', items: [before, after] } },
     facts: [{ term: t('Source', 'Источник'), value: 'Pawly · EN/RU demo' }, { term: t('Status', 'Статус'), value: t('Integration fixture', 'Проверочный пример') }],
     blocks: [

@@ -12,20 +12,21 @@ export const portalLineShot = (stage:string,alt:string,altNarrow=alt):ShotItem =
 export const partnerPortalStory = defineStory({theme:'portal',plate:'light',
   cover:{title:'Partner Portal',outcome:'A working specification, from intake to checkout.',media:{
     variant:'proof',eyebrow:'DSSL · B2B procurement',
-    shot:portalLineShot('open','Actual buyer decision for row 38: original source text, eight units and three catalog candidates'),
+    shot:portalLineShot('open','Buyer decision for row 38: original source text, eight units and three catalog candidates'),
     caption:'Row 38: the source text beside three matches',
   }},
-  facts:[{term:'Work',value:'Commercial redesign shipped in full'},{term:'Shown',value:'Independent reconstruction on synthetic data'},
+  facts:[{term:'Work',value:'Commercial redesign shipped in full'},
     {term:'Role',value:'Sole designer; frontend, backend, PM, QA and team lead'},
-    {term:'Period',value:'2024–winter 2026; roughly six active months across a long pause'}],
+    {term:'Period',value:'2024–winter 2026'},
+    {term:'Product',value:'Open product',href:'https://b2b-partner-portal-five.vercel.app/'}],
   blocks:[
     {id:'audit-direction',type:'comparison',motion:'reveal',evidenceId:'portal-diagnosis',mediaId:'portal-archive',payload:{
-      thesis:{label:'Audit → direction',thesis:'Make space for the buyer',body:'The archived dashboard foregrounded promotions and left destinations behind icons. I made the specification the working object, with named navigation and separate responsibilities for matching and commercial terms.'},
-      issue:{src:'/media/case-dssl/legacy-dashboard.webp',alt:'Safe crop of the original DSSL dashboard: promotional banner and an icon-only navigation rail',
-        marks:[{x:55,y:10,text:'Promotion first → procurement tasks first'},{x:1.6,y:32,text:'Icons alone → named destinations'}],caption:'The archived dashboard, with audit notes'},
+      thesis:{label:'Design direction',thesis:'Make space for the buyer',body:'The archived dashboard foregrounded promotions and left destinations behind icons. I made the specification the working object, with named navigation and separate responsibilities for matching and commercial terms.'},
+      issue:{src:'/media/case-dssl/legacy-dashboard.webp',alt:'DSSL dashboard: promotional banner and an icon-only navigation rail',
+        marks:[{x:55,y:10,text:'Procurement tasks first'},{x:1.6,y:32,text:'Named destinations'}],caption:'The archived dashboard, with audit notes'},
     }},
     {id:'shared-specification',type:'artifact',motion:'draw',evidenceId:'portal-scope',payload:{
-      thesis:{label:'Architecture',thesis:'Two ways into one specification',body:'XLS import and Quick order feed the same resolution workspace. Cart, supply planning and checkout have distinct jobs. This hierarchy selects eight real screens from the reconstruction.'},
+      thesis:{label:'Architecture',thesis:'A shared list',body:'XLS import and Quick order feed the same resolution workspace. Cart, supply planning and checkout have distinct jobs. The map shows eight key screens.'},
       artifact:{data:partnerPortalMap,caption:'Eight key screens of the procurement workspace',source:{kind:'editorial',ref:'b2b-dssl/ia/sitemap.md; D007–D010'}},
     }},
     {id:'buyer-decision',type:'artifact',motion:'draw',evidenceId:'portal-decision',payload:{
@@ -33,24 +34,23 @@ export const partnerPortalStory = defineStory({theme:'portal',plate:'light',
       artifact:{data:partnerPortalFlow,caption:'From the right product to commercial terms to an order',source:{kind:'editorial',ref:'b2b-dssl/ia/flows/xls-to-order.mmd; D007, D010, D026'}},
     }},
     {id:'source-line',type:'steps',motion:'focus',evidenceId:'portal-line',mediaId:'portal-line',payload:{label:'One source row',items:[
-      {label:'Choose',thesis:'Keep the request beside the candidates',body:'Row 38 of office_north_v8.xlsx asks for “камера 4мп уличная”, eight units. The buyer compares three matches and chooses the second.',shot:portalLineShot('open','Source row 38 and eight original units above three candidate products'),caption:'Three candidates, one choice'},
+      {label:'Choose',thesis:'Keep the request beside the candidates',body:'Row 38 of office_north_v8.xlsx asks for “камера 4мп уличная”, eight units. The buyer compares three matches and chooses the second.',shot:portalLineShot('open','Source row 38 and eight original units above three candidate products'),caption:'The second candidate selected'},
       {label:'Confirm',thesis:'Confirm the choice, retain the source',body:'The source text and quantity remain. Confirmed records the buyer’s decision; “was Ambiguous” retains the original matching category. Undo keeps the choice reversible.',shot:portalLineShot('confirmed','Confirmed row 38, original eight units, original ambiguous category and Undo action'),caption:'Same row · chosen SKU KX-2CB4046F2-I · eight units'},
-      {label:'Prepare',thesis:'Carry the row into commercial review',body:'Cart identifies the chosen SKU as source row 38 and keeps quantity eight. Price and availability stay separate from product identity.',shot:portalLineShot('cart','Actual Cart product row with chosen SKU, source row 38, quantity eight, price and availability'),caption:'Same row in Cart · the source trail is visible'},
+      {label:'Prepare',thesis:'Carry the row into commercial review',body:'Cart identifies the chosen SKU as source row 38 and keeps quantity eight. Price and availability stay separate from product identity.',shot:portalLineShot('cart','Cart product row with chosen SKU, source row 38, quantity eight, price and availability'),caption:'Same row in Cart · the source trail is visible'},
     ]}},
     {id:'domain-system',type:'specimen',motion:'static',evidenceId:'portal-domain',mediaId:'portal-specimens',payload:{
-      thesis:{label:'Domain system',thesis:'States make the next action explicit',body:'The accepted components cover unresolved matches, import errors, uncertain stock and supply choices. A missing warehouse response reads “not confirmed”, never zero.'},
+      thesis:{label:'Domain system',thesis:'States make the next action explicit',body:'Resolution rows retain the source request after a product is chosen. Availability records the warehouse response; shipment plans show whether supply is possible. A missing warehouse response reads “not confirmed”, never zero.'},
       specimen:partnerPortalSpecimen('en'),
     }},
     {id:'source-in-context',type:'shot',motion:'reveal',evidenceId:'portal-line',mediaId:'portal-application',payload:{
-      shot:{layout:'desktop',items:[{src:'/media/rebuild/partner-portal/resolution-context-wide.webp',srcNarrow:'/media/rebuild/partner-portal/resolution-context-narrow.webp',device:'desktop',alt:'Actual Resolution Center after choosing row 38: filter, resolved tab, reversible row and global progress',altNarrow:'Native narrow Resolution Center after choosing row 38, with global progress below the row'}],caption:'Components in context · the same row after buyer confirmation'},
+      shot:{layout:'desktop',items:[{src:'/media/rebuild/partner-portal/resolution-context-wide.webp',srcNarrow:'/media/rebuild/partner-portal/resolution-context-narrow.webp',device:'desktop',alt:'Resolution Center after choosing row 38: filter, resolved tab, reversible row and global progress',altNarrow:'Narrow Resolution Center after choosing row 38, with global progress below the row'}],caption:'Components in context · the same row after buyer confirmation'},
     }},
     {id:'shipped-redesign',type:'outcome',motion:'static',evidenceId:'portal-shipped',payload:{
-      result:{label:'Outcome',thesis:'The commercial redesign shipped',body:'The DSSL redesign shipped in full. The frames here are my independent reconstruction on synthetic data: they show the decisions, not business impact.'},
-      evidence:{label:'Evidence',text:'The shipment is my own account, with no public metrics. In the reconstruction, row 38 runs from matching to Cart.'},
-      tradeoff:{label:'Price of the solution',text:'Ambiguity still requires a buyer’s manual choice. Matching data cannot guarantee compatibility.'},
-      nextEvidence:{label:'Next check',text:'Keep the source text on created orders, then measure time and errors. There is no business baseline yet.'},
+      result:{label:'Result',thesis:'The commercial redesign shipped',body:'The DSSL redesign shipped in full. I rebuilt the procurement scenario shown here with synthetic data.'},
+      evidence:{label:'Evidence',text:'Row 38 runs from product choice to Cart with its source text and quantity intact.'},
+      tradeoff:{label:'Trade-off',text:'Ambiguity still requires a buyer’s manual choice. Matching data cannot guarantee compatibility.'},
     }},
-  ],prototype:{label:'Open the live demo',href:'https://b2b-partner-portal-five.vercel.app/'},
+  ],prototype:{label:'Open product',href:'https://b2b-partner-portal-five.vercel.app/'},
 });
 
 /**

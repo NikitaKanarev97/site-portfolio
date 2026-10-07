@@ -31,7 +31,7 @@ export const OG_HEIGHT = 630;
 export interface OgCard {
   /** Идентификатор маршрута /og/<id>.png. */
   id: string;
-  /** Род страницы. Моноширинный, капсом — роль ds-meta-xs. */
+  /** Род страницы. Пропорциональный Onest, капсом — роль ds-meta-xs. */
   eyebrow: string;
   /** Название. Display-ступень, до трёх строк. */
   title: string;
@@ -98,26 +98,35 @@ export function ogCard(id: string): OgCard {
 }
 
 /**
- * Обложки кейсов для LinkedIn Featured (25.09.2026).
+ * Обложки кейсов для LinkedIn Featured (25.09.2026; Onest 07.10.2026).
  *
  * Featured показывает og:image карточкой 237–364 px, и типографская
- * карточка с одним названием там неотличима от соседней. Для трёх кейсов,
- * которые стоят в профиле, превью — готовая обложка с экраном продукта
- * (исходник — D:/Freelance/linkedin/covers/build/covers.html).
- * Отдельный путь, а не замена /og/*.png: те отдаются с immutable-кэшем,
- * и LinkedIn держал бы старую картинку. Подпись — текст самой обложки.
+ * карточка с одним названием там неотличима от соседней. Для трёх кейсов
+ * рендер сохраняет документальную половину прежнего PNG без изменения
+ * пикселей; внешние заголовок, описание и статус собирает в Onest.
+ * Новые -onest URL обходят immutable-кэш прежних карточек. Старые PNG
+ * остаются исходниками изображения, метаданные на них больше не ссылаются.
  */
-const CASE_COVERS: Record<string, string> = {
-  'work-agent-ops-console': 'Agent Ops Console — oversight for a team running an AI support agent. Paid client, accepted.',
-  'work-partner-portal': 'B2B Partner Portal — ordering on a legacy backend at DSSL. Shipped.',
-  'work-vet-clinic': 'Vet Clinic OS — records that fit a 30-second gap between patients. Concept.',
+export const OG_FEATURES: Record<string, { title: string; description: string; status?: string }> = {
+  'work-agent-ops-console': {
+    title: 'Agent Ops Console',
+    description: 'Oversight for a team running an AI support agent',
+    status: 'Paid client · accepted',
+  },
+  'work-partner-portal': {
+    title: 'B2B Partner Portal',
+    description: 'Ordering on a legacy backend at DSSL',
+    status: 'Shipped',
+  },
+  'work-vet-clinic': {
+    title: 'Vet Clinic OS',
+    description: 'Records that fit a 30-second gap between patients',
+  },
 };
 
 /** Путь картинки маршрута. Служебные страницы берут карточку default. */
 export function ogImage(id: string): string {
-  const cardId = ogCard(id).id;
-  if (cardId in CASE_COVERS) return `/media/linkedin/og/${cardId}.png`;
-  return `/og/${cardId}.png`;
+  return `/og/${ogCard(id).id}-onest.png`;
 }
 
 /**
@@ -126,6 +135,7 @@ export function ogImage(id: string): string {
  */
 export function ogImageAlt(id: string): string {
   const card = ogCard(id);
-  if (card.id in CASE_COVERS) return CASE_COVERS[card.id];
-  return `${card.eyebrow}: ${card.title}. ${card.footnote}`;
+  const feature = OG_FEATURES[card.id];
+  if (feature) return `${feature.title} — ${feature.description}.${feature.status ? ` ${feature.status}.` : ''}`;
+  return `${card.eyebrow}: ${card.title}${card.accent ? ` ${card.accent}` : ''}. ${card.footnote}`;
 }

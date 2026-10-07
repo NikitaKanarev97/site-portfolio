@@ -15,45 +15,48 @@
  * сломалась ссылка, а email и CV — то, за чем он шёл (IA-06, US-03).
  */
 import PageShell from '../layouts/PageShell.astro';
-import SectionHead from '../components/SectionHead.astro';
 import ProseBlock from '../components/ProseBlock.astro';
 import ServiceRoutes from '../components/ServiceRoutes.astro';
 import { notFound, serviceRoutes, serviceContactLead } from '../copy/service.ts';
-import { notFoundRu, serviceRoutesRu } from '../copy/ru/service.ts';
+import { notFoundRu, serviceRoutesRu, serviceContactLeadRu } from '../copy/ru/service.ts';
+import { site } from '../copy/site.ts';
+import { siteRu } from '../copy/ru/site.ts';
+
+interface Props { locale?: 'en' | 'ru'; }
+const { locale = 'en' } = Astro.props;
+const ruFirst = locale === 'ru';
+const primary = ruFirst ? notFoundRu : notFound;
+const blocks = [
+  { lang: 'en', heading: notFound.heading, lead: notFound.lead, routesHeading: notFound.routesHeading, routes: serviceRoutes },
+  { lang: 'ru', heading: notFoundRu.heading, lead: [notFoundRu.lead], routesHeading: notFoundRu.routesHeading, routes: serviceRoutesRu },
+];
+if (ruFirst) blocks.reverse();
 ---
 
 <PageShell
-  title={notFound.meta.title}
-  description={notFound.meta.description}
+  title={primary.meta.title}
+  description={primary.meta.description}
+  lang={locale}
+  siteCopy={ruFirst ? siteRu : site}
   nav={false}
   motion={false}
   noindex
   canonical={false}
-  contactLead={serviceContactLead}
+  contactLead={ruFirst ? serviceContactLeadRu : serviceContactLead}
 >
-  <section class="ds-container ds-section">
-    {/* Код ответа стоит текстом: по нему видно, что ошибся адрес, а не
-        наткнулся на пустую страницу. */}
-    <p class="ds-meta-xs code ds-flow-eyebrow">{notFound.code}</p>
-
-    <SectionHead as="h1" size="lg" reveal={false} class="heading">
-      {notFound.heading}
-    </SectionHead>
-
-    <ProseBlock variant="lead" motion={false} class="lead">
-      {notFound.lead.map((paragraph) => <p>{paragraph}</p>)}
-    </ProseBlock>
-
-    <h2 class="ds-heading-3xl routes-heading ds-flow-heading">{notFound.routesHeading}</h2>
-    <ServiceRoutes items={serviceRoutes} />
-  </section>
-
-  <section class="ds-container ds-section" lang="ru" aria-labelledby="not-found-ru">
-    <h2 class="ds-heading-4xl ds-flow-heading" id="not-found-ru">{notFoundRu.heading}</h2>
-    <ProseBlock variant="lead" motion={false}><p>{notFoundRu.lead}</p></ProseBlock>
-    <h3 class="ds-heading-3xl ds-flow-heading">{notFoundRu.routesHeading}</h3>
-    <ServiceRoutes items={serviceRoutesRu} />
-  </section>
+  {blocks.map((block, index) => {
+    const Heading = index === 0 ? 'h1' : 'h2';
+    const RoutesHeading = index === 0 ? 'h2' : 'h3';
+    return <section class="ds-container ds-section" lang={block.lang} aria-labelledby={`not-found-${block.lang}`}>
+      {index === 0 && <p class="ds-meta-xs code ds-flow-eyebrow">{notFound.code}</p>}
+      <Heading class="ds-heading-4xl ds-flow-heading" id={`not-found-${block.lang}`}>{block.heading}</Heading>
+      <ProseBlock variant="lead" motion={false}>
+        {block.lead.map(paragraph => <p>{paragraph}</p>)}
+      </ProseBlock>
+      <RoutesHeading class="ds-heading-3xl ds-flow-heading">{block.routesHeading}</RoutesHeading>
+      <ServiceRoutes items={block.routes} />
+    </section>;
+  })}
 </PageShell>
 
 <style>

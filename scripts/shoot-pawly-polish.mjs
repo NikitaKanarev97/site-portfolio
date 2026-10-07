@@ -36,6 +36,18 @@ async function shoot(page, name, dir, locale) {
     } finally {
       await footer.evaluate((node, original) => original === null ? node.removeAttribute('style') : node.setAttribute('style', original), style);
     }
+  } else if (name === 'order-details') {
+    // The review footer flows after the report since 05.10.2026, so a 844 px
+    // viewport cuts Rate the walk in half. For the frame only, pin it to the
+    // bottom of the screen, as the product did before; the style is restored.
+    const footer = page.locator('article > footer');
+    const style = await footer.getAttribute('style');
+    await footer.evaluate(node => { node.style.position = 'sticky'; node.style.borderTop = '1px solid var(--border-default)'; node.style.background = 'var(--surface-default, #fff)'; });
+    try {
+      png = await page.screenshot();
+    } finally {
+      await footer.evaluate((node, original) => original === null ? node.removeAttribute('style') : node.setAttribute('style', original), style);
+    }
   } else png = await page.screenshot();
   await fs.writeFile(path.join(evidence, `${name}-${locale}.png`), png);
   const file = path.join(dir, `${name}.webp`);

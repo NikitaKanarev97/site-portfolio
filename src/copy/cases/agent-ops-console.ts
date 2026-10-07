@@ -383,11 +383,11 @@ const agentOpsMaterial = {
   theme: 'agent', plate: 'dark',
   cover: {
     title: 'Agent Ops',
-    outcome: 'Between a promise and a payout: a person.',
+    outcome: 'An operator checks the agent’s promises before approving a payout.',
     media: {
       variant: 'proof', layout: 'interlock', gate: 'Human review', eyebrow: 'AI support · Billing · Human oversight',
       caption: 'The message and the payout, side by side',
-      shot: { src: `${pilot}/consequences-1440.webp`, srcNarrow: `${pilot}/consequences-390.webp`, alt: 'Two real prototype panels: the $340 payout and the exact message sent on approval', device: 'panel' },
+      shot: { src: `${pilot}/consequences-1440.webp`, srcNarrow: `${pilot}/consequences-390.webp`, alt: 'Two product panels: the $340 payout and the exact message sent on approval', device: 'panel' },
       panels: [
         { src: `${pilot}/message-1440.webp`, srcNarrow: `${pilot}/message-390.webp`, alt: 'The complete customer message that approval will send', device: 'panel' },
         { src: `${pilot}/payout-1440.webp`, srcNarrow: `${pilot}/payout-390.webp`, alt: 'The complete $340 payout preview, before approval', device: 'panel' },
@@ -395,15 +395,15 @@ const agentOpsMaterial = {
     },
   },
   facts: [
-    { term: 'Client', value: 'NDA · B2B SaaS, billing' },
+    { term: 'Client', value: 'B2B SaaS, billing' },
     { term: 'Year', value: '2026' },
     { term: 'Role', value: 'Sole product designer' },
     { term: 'Platform', value: 'Web, desktop-first' },
     { term: 'Evidence', value: 'Paid client · user-tested, accepted' },
-    { term: 'Prototype', value: 'Live, invented data', href: PROTOTYPE },
+    { term: 'Prototype', value: 'Open product', href: PROTOTYPE },
   ],
   challenge: {
-    label: 'Challenge', thesis: 'Read the promises, not the chats',
+    label: 'Challenge', thesis: 'Review promises',
     body: 'The agent closed 61% of contacts alone. Then it promised fourteen refunds under an expired promotion: $23,000. The team of 24 would not grow. Reviewing every conversation was impossible.',
     numbers: [
       { value: '1,770', caption: 'agent-closed chats per day' },
@@ -413,7 +413,7 @@ const agentOpsMaterial = {
   },
   estimateNote: 'Design estimates: 177 hours of daily chat review, requiring 25 reviewers, versus 2.4 hours to review commitments. These are not measured savings.',
   steps: {
-    label: 'Cause → promise → decision', variant: 'focus', composition: 'checkpoint', gate: 'Human review',
+    label: 'From cause to promise review and decision', variant: 'focus', composition: 'checkpoint', gate: 'Human review',
     items: [
       {
         label: 'Find the cause', thesis: 'Seventeen chats. One cause.',
@@ -431,11 +431,11 @@ const agentOpsMaterial = {
         label: 'Read the promise', thesis: 'The promise lacks proof',
         body: 'The conversation stays intact. An unsupported refund claim is flagged at the exact message, so the reviewer sees what the customer was told.',
         layout: 'wide', scene: 'promise', caption: 'The full conversation, with the unsupported promise flagged', desktopOnly: true,
-        shot: { src: `${pilot}/transcript-framed-1440.webp`, srcNarrow: `${pilot}/transcript-framed-390.webp`, alt: 'Six real prototype turns, with an unsupported refund promise explicitly flagged', device: 'panel' },
+        shot: { src: `${pilot}/transcript-framed-1440.webp`, srcNarrow: `${pilot}/transcript-framed-390.webp`, alt: 'Six conversation turns, with an unsupported refund promise explicitly flagged', device: 'panel' },
       },
       {
         label: 'Approve the consequence', thesis: 'Money waits for a person',
-        body: 'A refund waits for a person. The amount, policy and customer message are visible before approval. Rejecting remains available even when evidence is incomplete.',
+        body: 'Before a refund leaves, the reviewer sees the amount, the policy and the customer message. Rejecting remains available even when evidence is incomplete.',
         layout: 'split', scene: 'decision', caption: 'The $340 refund, waiting for approval',
         shot: { src: `${pilot}/approval-card-1440.webp`, srcNarrow: `${pilot}/approval-card-390.webp`, alt: 'Complete $340 refund approval card: customer, reason, policy, billing, history and both actions', device: 'panel' },
       },
@@ -457,15 +457,15 @@ const agentOpsMaterial = {
     },
   },
   result: {
-    label: 'Outcome', thesis: 'Tested, reworked and accepted',
-    body: 'User testing informed the revisions. The client accepted the prototype: nineteen screens across three roles. Implementation remained with the client.',
+    label: 'Result', thesis: 'Tested, reworked and accepted',
+    body: 'The client is under NDA; the screens use invented data. User testing informed the revisions. The client accepted the prototype: nineteen screens across three roles. Implementation remained with the client.',
     cards: [],
   },
   closing: [
-    { term: 'The trade-off', value: 'Every payout now waits for a person. Oversight gives control back, but sacrifices automation at the point where money moves.' },
+    { term: 'Trade-off', value: 'Every payout now waits for a person. Oversight gives control back, but sacrifices automation at the point where money moves.' },
     { term: 'Scope', value: 'Research, IA, UX/UI, the design system and a tested prototype. Brief to acceptance: up to one month.' },
   ],
-  prototype: { label: 'Open the live prototype, on invented data', href: PROTOTYPE },
+  prototype: { label: 'Open product', href: PROTOTYPE },
 } satisfies LegacyKitStory;
 
 /** The accepted composition, expressed as ordered modules without a new art pass. */

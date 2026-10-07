@@ -1,22 +1,20 @@
 ---
 import CaseScreen from './CaseScreen.astro';
-import { caseArt } from '../copy/case-art';
+import { learnVetStageCopy } from '../copy/learn-vet-stage';
 const {locale, loading = 'lazy', href, linkLabel} = Astro.props as {locale:'en'|'ru';loading?:'eager'|'lazy';href?:string;linkLabel?:string};
 const ru = locale === 'ru';
-const art = caseArt('learn',locale);
+const copy = learnVetStageCopy(locale).learn;
 const media = `/media/art-direction/learn${ru ? '-ru' : ''}`;
 const material = {src:`${media}/material-desktop.png`,srcNarrow:`${media}/material-mobile.png`,device:'panel' as const,alt:ru?'Тот же материал ONVIF: версия, заголовок, введение и целый первый шаг диагностики; справа — связанные программы.':'The same ONVIF material: version, title, introduction and complete first diagnostic step; related learning paths at right.'};
 const unit = {src:`${media}/current-unit.png`,device:'panel' as const,alt:ru?'Тот же материал об ONVIF выбран как текущий ресурс 03 в программе.':'The same ONVIF material selected as current resource 03 in the learning path.'};
-const passport = {src:`${media}/passport-desktop.png`,srcNarrow:`${media}/passport-mobile.png`,device:'panel' as const,alt:ru?'Целый паспорт программы: объём, правила зачёта, демонстрационный документ и действие старта.':'Whole programme passport: workload, assessment rules, demonstration document and start action.'};
+const passport = {src:`${media}/passport-desktop.png`,srcNarrow:`${media}/passport-mobile.png`,device:'panel' as const,alt:ru?'Целый паспорт программы: объём, правила зачёта, именной документ о прохождении и действие старта.':'Whole programme passport: workload, assessment rules, the named completion document and start action.'};
 ---
-<div class="learn-stage" data-motion-group data-motion-stagger="tight">
-  <div class="learn-stage__heading"><p class="ds-heading-2xl">{art.label}</p><p class="ds-body-sm">{art.detail}</p></div>
+<div class:list={['learn-stage', !href && 'learn-stage--cover']} data-motion-group data-motion-stagger="tight">
+  {href && <div class="learn-stage__heading"><p class="ds-heading-2xl">{copy.title}</p>{copy.detail && <p class="ds-body-sm">{copy.detail}</p>}</div>}
   <figure class="learn-stage__material">
-    <figcaption class="ds-meta-xs">{ru?'Справочник · материал ONVIF':'Reference · ONVIF material'}</figcaption>
     <CaseScreen item={material} loading={loading} href={href} linkLabel={linkLabel} narrowAt="lg" />
   </figure>
   <figure class="learn-stage__unit">
-    <figcaption class="ds-meta-xs">{ru?'Программа · тот же ресурс 03':'Learning path · same resource 03'}<span aria-hidden="true">↙</span></figcaption>
     <CaseScreen item={unit} loading={loading} href={href} linkLabel={linkLabel} />
   </figure>
   <figure class="learn-stage__passport">
@@ -24,18 +22,26 @@ const passport = {src:`${media}/passport-desktop.png`,srcNarrow:`${media}/passpo
   </figure>
 </div>
 <style>
-  .learn-stage { display:grid; gap:var(--space-6); min-inline-size:0; }
-  .learn-stage__heading { display:flex; flex-wrap:wrap; align-items:baseline; gap:var(--space-3) var(--space-8); padding-block-end:var(--space-4); border-block-end:var(--border-width) solid currentColor; }
+  .learn-stage { display:grid; gap:var(--flow-node); min-inline-size:0; }
+  .learn-stage__heading { display:grid; gap:var(--flow-pair); }
   .learn-stage__heading p { margin:0; }
-  .learn-stage figure { margin:0; min-inline-size:0; display:grid; align-content:start; gap:var(--space-3); }
-  .learn-stage figcaption { display:flex; justify-content:space-between; align-items:center; gap:var(--space-4); }
+  .learn-stage__heading p:last-child { max-inline-size:var(--measure-case); }
+  .learn-stage figure { margin:0; min-inline-size:0; display:grid; align-content:start; }
   .learn-stage__unit { grid-row:2; }
   .learn-stage__passport { inline-size:100%; }
+  @media (--below-bp-md) {
+    .learn-stage--cover .learn-stage__unit,
+    .learn-stage--cover .learn-stage__passport { display:none; }
+  }
   @media (--bp-lg) {
-    .learn-stage { grid-template-columns:minmax(0,3fr) minmax(0,2fr); grid-template-rows:auto auto 1fr; gap:var(--space-6); align-items:start; }
-    .learn-stage__heading { grid-column:1 / -1; }
-    .learn-stage__material { grid-column:1; grid-row:2 / 4; }
-    .learn-stage__unit { grid-column:2; grid-row:2; }
-    .learn-stage__passport { grid-column:2; grid-row:3; }
+    .learn-stage { grid-template-columns:minmax(0,3fr) minmax(0,2fr); grid-template-rows:auto auto auto; gap:var(--flow-node) var(--space-12); align-items:start; }
+    .learn-stage__heading { grid-column:1 / -1; grid-template-columns:subgrid; align-items:baseline; }
+    .learn-stage__material { grid-column:1; grid-row:2; }
+    .learn-stage__unit { grid-column:1; grid-row:3; }
+    .learn-stage__passport { grid-column:2; grid-row:2 / 4; }
+    .learn-stage--cover { grid-template-rows:auto auto; }
+    .learn-stage--cover .learn-stage__material { grid-row:1; }
+    .learn-stage--cover .learn-stage__unit { grid-row:2; }
+    .learn-stage--cover .learn-stage__passport { grid-row:1 / 3; }
   }
 </style>

@@ -22,6 +22,8 @@
  * Внешние ссылки помечаются в тексте — маркер и скрытая подсказка здесь
  * дополняют формулировку, а не заменяют её.
  */
+import IconArrow from './IconArrow.astro';
+
 interface Props {
   href: string;
   type?: 'inline' | 'arrow' | 'nav';
@@ -60,11 +62,13 @@ const {
   rel={external ? 'noopener noreferrer' : undefined}
   aria-current={active && type === 'nav' ? 'page' : undefined}
 >
-  <span class="ds-link__label"><slot /></span>
-  {external && <span class="ds-link__external" aria-hidden="true">↗</span>}
+  <span class="ds-link__label">
+    <slot />
+    {(type === 'nav' || type === 'arrow') && <span class="ds-link__rule" aria-hidden="true"></span>}
+  </span>
+  {external && <IconArrow direction="up-right" size="small" class="ds-link__external" />}
   {external && <span class="ds-visually-hidden">{externalLabel}</span>}
-  {type === 'arrow' && <span class="ds-link__arrow" aria-hidden="true">→</span>}
-  {(type === 'nav' || type === 'arrow') && <span class="ds-link__rule" aria-hidden="true"></span>}
+  {type === 'arrow' && !external && <IconArrow direction="right" class="ds-link__arrow" />}
 </a>
 
 <style>
@@ -80,6 +84,14 @@ const {
 
   .ds-link.is-inverse {
     color: var(--text-link-on-inverse);
+  }
+
+  .ds-link.is-inverse:focus-visible {
+    outline-color: currentColor;
+  }
+
+  .ds-link__label {
+    position: relative;
   }
 
   /* Нажатие. Ступень ниже hover — иначе на десктопе, где ссылка под курсором
@@ -140,13 +152,13 @@ const {
     transition: none;
   }
 
-  .ds-link__arrow {
-    display: inline-block;
+  .ds-link :global(.ds-link__arrow) {
+    align-self: center;
     transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
   }
 
-  .ds-link__external {
-    font-size: var(--size-link-marker);
+  .ds-link :global(.ds-link__external) {
+    align-self: center;
   }
 
   /* Наведение — только там, где курсор действительно есть. Тач-устройство
@@ -161,12 +173,24 @@ const {
       color: var(--text-link-hover);
     }
 
+    .ds-link.is-inverse:hover {
+      color: var(--text-link-on-inverse);
+    }
+
+    .ds-link:active {
+      color: var(--text-link-pressed);
+    }
+
+    .ds-link.is-inverse:active {
+      color: var(--text-link-pressed-on-inverse);
+    }
+
     .ds-link:hover .ds-link__rule {
       transform: scaleX(1);
       transform-origin: left;
     }
 
-    .ds-link:hover .ds-link__arrow {
+    .ds-link:hover :global(.ds-link__arrow) {
       transform: translateX(var(--space-1));
     }
   }

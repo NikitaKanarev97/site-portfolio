@@ -2,8 +2,8 @@ import {defineDiagram} from '../schema';
 /** Editorial current-state role flow. HA-FLOW-01; see artifact-plan.md. */
 export const vetRoleFlow=defineDiagram({
  kind:'flow',title:{en:'One visit, three responsibilities',ru:'Один визит, три зоны ответственности'},
- summary:{en:'The veterinarian enters and saves a quick trace, completes the owner-visible plan and selects services. Reception gets only services and totals. A saved plan with new changes enables publication; otherwise publication is blocked. The owner reads only the published snapshot. Browser-local prototype, not device synchronization.',ru:'Врач вводит и сохраняет короткий след, дописывает план для владельца и выбирает услуги. Регистратура получает только услуги и суммы. Сохранённый план с изменениями разрешает публикацию; иначе она заблокирована. Владелец читает только опубликованный снимок. Локальный прототип, без синхронизации устройств.'},
- heading:{lead:{en:'User flow',ru:'Сценарий'},name:{en:'Record → invoice / publication',ru:'Запись → счёт / публикация'}},size:{w:145,h:105},
+ summary:{en:'The veterinarian enters and saves a quick trace, completes the owner-visible plan and selects services. Reception gets only services and totals. A saved plan with new changes enables publication; otherwise publication is blocked. The owner reads only the published snapshot.',ru:'Врач вводит и сохраняет короткий след, дописывает план для владельца и выбирает услуги. Регистратура получает только услуги и суммы. Сохранённый план с изменениями разрешает публикацию; иначе она заблокирована. Владелец читает только опубликованный снимок.'},
+ heading:{lead:{en:'User flow',ru:'Сценарий'},name:{en:'Record, invoice and publication',ru:'Запись, счёт и публикация'}},size:{w:145,h:105},
  nodes:[
   {id:'vet-zone',type:'group',at:[0,0],w:145,h:76,label:{en:'Veterinarian',ru:'Врач'}},
   {id:'admin-zone',type:'group',at:[0,84],w:84,h:21,label:{en:'Reception · services only',ru:'Регистратура · только услуги'}},
@@ -15,7 +15,7 @@ export const vetRoleFlow=defineDiagram({
   {id:'record',type:'screen',at:[93,32],w:34,label:{en:'Save record',ru:'Сохранить запись'}},
   {id:'ready',type:'decision',at:[61,26],w:24,h:20,label:{en:'Plan + new changes?',ru:'План + изменения?'}},
   {id:'blocked',type:'screen',at:[58,63],w:32,label:{en:'Nothing new to publish',ru:'Нечего публиковать'}},
-  {id:'publish',type:'flowLink',at:[98,55],w:36,label:{en:'Review → publish',ru:'Проверить → опубликовать'}},
+  {id:'publish',type:'flowLink',at:[98,55],w:36,label:{en:'Review and publish',ru:'Проверить и опубликовать'}},
   {id:'invoice',type:'screen',at:[5,94],w:73,label:{en:'Reception · invoice',ru:'Регистратура · счёт'}},
   {id:'owner',type:'screen',at:[99,94],w:41,label:{en:'Owner · snapshot',ru:'Владелец · снимок'}},
  ],edges:[

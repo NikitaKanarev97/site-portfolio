@@ -266,7 +266,7 @@ function rows(items: LibraryItem[]): LibraryItem[][] {
                 .filter((edge) => edge.to)
                 .map((edge) => (
                   <li>
-                    {nodeName.get(edge.from)} → {nodeName.get(edge.to!)}
+                    {nodeName.get(edge.from)} {lang === 'ru' ? 'ведёт в' : 'leads to'} {nodeName.get(edge.to!)}
                     {edge.answer ? ` (${t(pillText[edge.answer])})` : ''}
                   </li>
                 ))}
@@ -382,11 +382,9 @@ function rows(items: LibraryItem[]): LibraryItem[][] {
     margin: 0;
   }
 
-  /* Шапка флоу: «User flow» и сценарий серым, под ними линия. */
+  /* Заголовок и поле схемы разделены шагом ритма. */
   .dg__heading {
     margin: 0;
-    padding-block-end: var(--space-3);
-    border-block-end: var(--diagram-line) solid var(--diagram-text-muted);
     color: var(--diagram-text);
   }
 

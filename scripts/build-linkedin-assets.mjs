@@ -146,7 +146,7 @@ const casesV3 = [
     title: "PAWLY",
     problem: "Trust, handover proof and\nrecovery for pet care.",
     scope: "PRODUCT STRATEGY  ·  MOBILE UX  ·  REACT",
-    evidence: "CONCEPT  ·  17 ROUTES  ·  71 FINDINGS RESOLVED",
+    evidence: "17 ROUTES  ·  71 FINDINGS RESOLVED",
     source: "public/media/case-pawly/cover/screen-gallery.webp",
     extract: { left: 140, top: 290, width: 1720, height: 960 },
     frameHeight: 416,
@@ -363,9 +363,12 @@ async function buildCaseContactSheet() {
 
 await sharp({ create: { width: 1, height: 1, channels: 4, background: "transparent" } }).png().toBuffer();
 await import("node:fs/promises").then(({ mkdir }) => mkdir(caseDir, { recursive: true }));
-await buildProfileBanner();
-for (const item of cases) await buildCaseCover(item);
-for (const item of casesV3) await buildCaseCoverV3(item);
+const caseIndex = process.argv.indexOf('--case');
+const selected = caseIndex === -1 ? null : process.argv[caseIndex + 1];
+if (caseIndex !== -1 && !casesV3.some(item => item.slug === selected)) throw new Error('Unknown --case');
+if (!selected) await buildProfileBanner();
+for (const item of cases.filter(item => !selected || item.slug === selected)) await buildCaseCover(item);
+for (const item of casesV3.filter(item => !selected || item.slug === selected)) await buildCaseCoverV3(item);
 await buildCaseContactSheet();
 
-console.log("Built LinkedIn profile banner and two generations of four Featured case covers.");
+console.log(selected ? `Built ${selected} Featured covers and contact sheet.` : "Built LinkedIn profile banner and two generations of four Featured case covers.");

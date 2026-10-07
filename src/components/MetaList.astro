@@ -27,14 +27,8 @@
  * компромисса идут построчным каскадом (ds/motion-concept.md §7).
  * Группу и строку NDA следом ставит экран, не компонент.
  *
- * Значение-ссылка (href) добавлено 2026-08-28, находка L2-6. Носитель
- * один — пара Prototype в шапке кейса: живой прототип есть у всех
- * четырёх кейсов, и до правки ссылка на него стояла в середине страницы.
- * Значение уходит в TextLink type=inline external — не arrow: стрелка →
- * читается как «дальше по странице», а маркер ↗ в этом продукте значит
- * ровно «внешняя ссылка», и двух стрелок подряд в одной строке быть не
- * должно. Ключ и значение остаются dt/dd: ссылка меняет вид значения, а
- * не природу пары.
+ * Значение-ссылка использует TextLink type=arrow external: действие без
+ * постоянной линии, один SVG маркер. Метки используют ds-meta-sm.
  *
  * layout=facts добавлен 2026-10-03, этап 2 PLAN-CHATS.md. Носитель —
  * строка фактов вверху белого листа кейса (ds/screens/case.md §8, модуль
@@ -64,7 +58,7 @@ import TextLink from './TextLink.astro';
 const { items, layout = 'inline', motion = true, class: className } = Astro.props;
 
 const isStatements = layout === 'statements';
-const termClass = isStatements ? 'ds-meta-sm' : 'ds-meta-xs';
+const termClass = 'ds-meta-sm';
 const valueClass = isStatements ? 'ds-body-lg' : layout === 'facts' ? 'ds-body-sm' : 'ds-meta-sm';
 ---
 
@@ -79,7 +73,7 @@ const valueClass = isStatements ? 'ds-body-lg' : layout === 'facts' ? 'ds-body-s
         >
           {
             item.href ? (
-              <TextLink href={item.href} external>
+              <TextLink href={item.href} type="arrow" external>
                 {item.value}
               </TextLink>
             ) : (
@@ -162,6 +156,16 @@ const valueClass = isStatements ? 'ds-body-lg' : layout === 'facts' ? 'ds-body-s
   .meta-list__value {
     color: var(--text-default);
     text-wrap: pretty;
+  }
+
+  /* Ссылка-действие в фактах на телефоне: цель нажатия space-12, как у
+     ServiceRoutes. Подчёркивание Строки живёт внутри подписи, поэтому
+     высота ссылки его не уводит. */
+  @media (--below-bp-md) {
+    .meta-list__value > :global(.ds-link) {
+      min-block-size: var(--space-12);
+      align-items: center;
+    }
   }
 
   /* Разделитель между парами в строку: только на широком экране,

@@ -1,5 +1,5 @@
 {
   "extends": "astro/tsconfigs/strict",
   "include": [".astro/types.d.ts", "**/*.astro", "**/*.ts", "**/*.js"],
-  "exclude": ["dist", "node_modules", "research", "outputs", "tmp", ".tmp"]
+  "exclude": ["dist", "node_modules", "research", "outputs", "tmp", ".tmp", "public", "tasks/**/B-before", "tasks/**/B-wrap-before"]
 }

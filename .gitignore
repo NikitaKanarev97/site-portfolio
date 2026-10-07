@@ -31,3 +31,11 @@ research/portfolio-benchmark/ha/
 research/portfolio-benchmark/ours/
 research/portfolio-benchmark/picks/
 research/portfolio-benchmark/shots/
+
+# Полные выводы astro check (18–85 МБ каждый) и архивы логов: воспроизводятся
+# одной командой, в репозиторий не идут. Сводки и решения лежат в .md рядом.
+*check*.log
+tasks/**/*.zip
+
+# Снимки и логи Playwright MCP — кэш инструмента.
+.playwright-mcp/

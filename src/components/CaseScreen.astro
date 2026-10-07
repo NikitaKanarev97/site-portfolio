@@ -1,5 +1,5 @@
 ---
-/** Full native capture inside a padded portfolio frame. See ds/components.md. */
+/** Full capture on a single edge; a padded frame is an explicit option. */
 import MediaFrame from './MediaFrame.astro';
 import ScreenSurface from './ScreenSurface.astro';
 import { frameSize } from '../lib/media';
@@ -14,12 +14,14 @@ interface Props {
   loading?: 'lazy' | 'eager';
   class?: string;
   native?: boolean;
+  appearance?: 'edge' | 'frame';
   caption?: string;
   href?: string;
   linkLabel?: string;
   narrowAt?: 'md' | 'lg';
 }
 const { item, loading = 'lazy', class: className, native = false, caption, href, linkLabel, narrowAt = 'md' } = Astro.props;
+const appearance = Astro.props.appearance ?? 'edge';
 assertShotMedia(item);
 const size = await frameSize(item.src);
 const narrowSize = item.srcNarrow ? await frameSize(item.srcNarrow) : size;
@@ -29,8 +31,8 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
 ---
 
 <div
-  class:list={['case-screen', `case-screen--${item.device}`, native && 'case-screen--native', item.srcNarrow && narrowAt === 'lg' && 'case-screen--narrow-tablet', className]}
-  style={`--ar: ${ar.toFixed(4)}; --ar-narrow: ${narrowSize ? narrowSize.width / narrowSize.height : ar}; ${item.nativeWidth ? `max-inline-size:calc(${item.nativeWidth}px + ${native ? '0px' : 'var(--frame-inset) * 2'});` : ''}`}
+  class:list={['case-screen', `case-screen--${item.device}`, `case-screen--${appearance}`, native && 'case-screen--native', item.srcNarrow && narrowAt === 'lg' && 'case-screen--narrow-tablet', className]}
+  style={`--ar: ${ar.toFixed(4)}; --ar-narrow: ${narrowSize ? narrowSize.width / narrowSize.height : ar}; ${item.nativeWidth ? `max-inline-size:calc(${item.nativeWidth}px + ${native || appearance === 'edge' ? '0px' : 'var(--frame-inset) * 2'});` : ''}`}
   data-motion={!native && !href ? 'fade-image' : undefined}
 >
   {item.video ? (
@@ -43,7 +45,7 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
       data-zoom-native={native || undefined}
       data-zoom-caption={caption} aria-label={href ? linkLabel : `${copy.zoom.open}: ${item.alt}`}>
       <div class="case-screen__media">
-        <ScreenSurface native={native}>
+        <ScreenSurface native={native} outlined={appearance === 'edge'}>
         <picture>
           {item.srcNarrow && <source media={narrowMedia} srcset={item.srcNarrow} width={narrowSize?.width} height={narrowSize?.height} />}
           <img src={item.src} alt={item.alt} width={size?.width} height={size?.height}
@@ -67,14 +69,20 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
     position: relative;
     min-inline-size: 0;
     inline-size: 100%;
+    padding: 0;
+    border-radius: var(--radius-lg);
+    color: inherit;
+  }
+  .case-screen--frame {
     padding: var(--frame-inset);
     border-radius: var(--radius-lg);
     background: var(--surface-default);
     color: var(--text-default);
     box-shadow: 0 0 0 var(--border-width) var(--border-default);
   }
-  .case-screen__open { display: grid; gap: var(--space-3); color: inherit; text-decoration: none; cursor: zoom-in; }
+  .case-screen__open { display: grid; gap: var(--flow-pair); min-block-size: var(--space-12); border-radius: var(--radius-media); color: inherit; text-decoration: none; cursor: zoom-in; }
   .case-screen__open:focus-visible { outline-offset: var(--space-2); }
+  .case-screen__open:focus-visible .case-screen__cue { opacity: 1; transform: none; }
   .case-screen__open--case { cursor: pointer; }
   .case-screen__open--case::after { content: ''; position: absolute; inset: 0; border-radius: var(--radius-lg); }
   .case-screen__media { position: relative; }
@@ -107,7 +115,9 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
   .case-screen--native { padding: 0; background: transparent; box-shadow: none; color: inherit; }
   .case-screen--native img { border-radius: 0; }
   @media (--can-hover) {
-    .case-screen__open:hover .case-screen__cue,
-    .case-screen__open:focus-visible .case-screen__cue { opacity: 1; transform: none; }
+    .case-screen__open:hover .case-screen__cue { opacity: 1; transform: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .case-screen__cue { transform: none; }
   }
 </style>

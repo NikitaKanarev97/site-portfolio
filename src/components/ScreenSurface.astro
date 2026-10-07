@@ -2,11 +2,12 @@
 /** Clip the actual capture; never extend its edges with a sampled colour. */
 interface Props {
   native?: boolean;
+  outlined?: boolean;
   class?: string;
 }
-const { native = false, class: className } = Astro.props;
+const { native = false, outlined = false, class: className } = Astro.props;
 ---
-<div class:list={['screen-surface', native && 'screen-surface--native', className]}>
+<div class:list={['screen-surface', native && 'screen-surface--native', outlined && !native && 'screen-surface--outlined', className]}>
   <div class="screen-surface__edge"><slot /></div>
 </div>
 <style>
@@ -21,5 +22,6 @@ const { native = false, class: className } = Astro.props;
     /* One clipping boundary, exactly the size of the original capture. */
     padding: 0;
   }
+  .screen-surface--outlined { box-shadow: 0 0 0 var(--border-width) var(--border-default); }
   .screen-surface--native, .screen-surface--native .screen-surface__edge { display: contents; }
 </style>

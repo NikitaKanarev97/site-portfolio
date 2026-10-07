@@ -4,7 +4,7 @@ export const portalFlow = defineDiagram({
   title: { en: 'From XLS to an order', ru: 'От XLS к заказу' },
   summary: { en: 'Import reads the source lines. Unresolved identity requires a buyer choice or correction, then recheck. Cart separately reviews commercial change. A chosen supply plan leads to a created order.',
     ru: 'Импорт читает исходные строки. Неоднозначность требует выбора или исправления покупателем и повторной проверки. Корзина отдельно проверяет коммерческую дельту. Выбранный план поставки приводит к созданному заказу.' },
-  heading: { lead: { en: 'User flow', ru: 'Сценарий' }, name: { en: 'XLS → order', ru: 'XLS → заказ' } },
+  heading: { lead: { en: 'User flow', ru: 'Сценарий' }, name: { en: 'From XLS to order', ru: 'От XLS к заказу' } },
   size: { w: 149, h: 44 },
   nodes: [
     { id: 'upload', type: 'start', at: [0, 10], w: 18, label: { en: 'Upload XLS', ru: 'Загрузить XLS' } },

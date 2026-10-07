@@ -101,9 +101,8 @@ export const site = {
     lead: 'If the case above answered your question — or raised one.',
     email: EMAIL,
     links: [
-      { label: 'Email', href: `mailto:${EMAIL}`, external: false },
-      { label: 'LinkedIn', href: LINKEDIN, external: true },
       { label: 'CV (PDF)', href: '/cv.pdf', external: false },
+      { label: 'LinkedIn', href: LINKEDIN, external: true },
     ],
   },
   nextCase: 'Next case',
@@ -127,12 +126,9 @@ export const site = {
     pause: 'Pause the clip',
   },
   footer: {
-    /** Факт, решение владельца №1 от 24.08.2026. PRD SCR-03 расходится — см. ia/open-questions.md №9. */
+    /** Existing EN OG copy reads this fact; PageShell does not display it. */
     location: 'Armenia',
-    utcLabel: 'UTC+4',
-    timeZone: 'Asia/Yerevan',
-    timeLabel: 'local time',
-    copyright: '© 2026',
+    copyright: 'Copyright 2026',
   },
 } as const satisfies SiteCopy;
 

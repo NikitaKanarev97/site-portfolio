@@ -34,16 +34,15 @@ export const siteRu = {
     lead: 'Если кейс выше ответил на ваш вопрос — или добавил новый.',
     email: EMAIL,
     links: [
-      { label: 'Написать', href: `mailto:${EMAIL}`, external: false },
-      { label: 'LinkedIn', href: LINKEDIN, external: true },
       { label: 'Резюме (PDF)', href: '/cv-ru.pdf', external: false },
+      { label: 'LinkedIn', href: LINKEDIN, external: true },
     ],
     copyLabel: 'Скопировать почту',
-    copyHint: 'Скопировать в один клик',
+    copyHint: EMAIL,
     copiedLabel: 'Скопировано',
     announce: 'Адрес почты скопирован в буфер обмена',
     fallbackAnnounce:
-      'Скопировать не удалось — адрес показан рядом с кнопкой, его можно выделить',
+      'Скопировать не удалось — выделите адрес почты или откройте его в почтовом приложении',
   },
   nextCase: 'Следующий кейс',
   zoom: {
@@ -56,6 +55,6 @@ export const siteRu = {
     pause: 'Остановить ролик',
   },
   footer: {
-    copyright: '© 2026',
+    copyright: 'Авторские права 2026',
   },
 } as const satisfies SiteCopy;

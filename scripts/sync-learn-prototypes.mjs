@@ -6,6 +6,7 @@ import { spawnSync } from 'node:child_process';
 import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { normalizeLearnPublicCopy } from './lib/learn-public-copy.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const source = path.resolve(process.argv[2] ?? path.join(root, '..', 'learn'));
@@ -39,7 +40,9 @@ async function replaceBuild(name, buildPath) {
 }
 
 const product = await replaceBuild('learn', path.join(source, 'dist'));
-await replaceBuild('learn-landing', path.join(source, 'landing', 'app', 'dist'));
+const landing = await replaceBuild('learn-landing', path.join(source, 'landing', 'app', 'dist'));
+await normalizeLearnPublicCopy(product);
+await normalizeLearnPublicCopy(landing);
 
 // Materialise product entry points so direct links and refresh work on any
 // static host, including Astro preview, without swallowing the site's 404s.

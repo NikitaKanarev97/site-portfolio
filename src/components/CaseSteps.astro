@@ -1,17 +1,5 @@
 ---
-/**
- * CaseSteps — ds/components.md, карта ds/screens/case.md §8
- *
- * Продукт по шагам (блок 06): текст стоит, экран меняется. Донор — Garri,
- * Yandex Bank. 3–4 шага; на каждый — номер, тезис, абзац до 30 слов, экран.
- *
- * Статика имеет естественную высоту. Wide — текст над материалом;
- * split — текст 4 / экран 8 колонок от bp-xl. Ниже bp-xl одна колонка.
- * Pin-swap от bp-xl улучшает смену кадров, сохраняя этот fallback.
- *
- * Тезис шага — ds-heading-3xl (32): та же ступень «тезис» правила 8, но
- * в колонке в треть ширины 48 px ломали бы строку на каждом слове.
- */
+/** Step heading and one explanatory body. Focus/checkpoint keep existing motion hooks; phone sequences share rows. */
 import CasePlate from './CasePlate.astro';
 import CaseScreen from './CaseScreen.astro';
 import type { Thesis, ShotItem } from '../copy/cases/story';
@@ -27,36 +15,31 @@ interface Props {
 }
 
 const { label, items, tone = 'light', variant, composition, gate, class: className } = Astro.props;
-const pad = (n: number) => String(n).padStart(2, '0');
+const phones = items.every(step => step.shot.device === 'phone');
 ---
 
-<div class:list={['case-steps', variant && `case-steps--${variant}`, composition && `case-steps--${composition}`, className]} data-composition={composition} data-motion={composition === 'handoff' ? undefined : variant === 'focus' ? 'focus-stage' : 'pin-swap'}>
+<div class:list={['case-steps', phones && 'case-steps--phones', variant && `case-steps--${variant}`, composition && `case-steps--${composition}`, className]} data-composition={composition} data-motion={composition === 'handoff' ? undefined : variant === 'focus' ? 'focus-stage' : 'pin-swap'}>
   {composition === 'checkpoint' && <div class="case-steps__field-bleed" aria-hidden="true" />}
-  <p class="ds-meta-xs case-steps__label">{label}</p>
   <div class="case-steps__stage">
   <ol class="case-steps__list">
     {
-      items.map((step, i) => (
-        <li class:list={['case-steps__step', `case-steps__step--${step.layout ?? 'split'}`, step.desktopOnly && 'case-steps__step--desktop-only']} data-focus-state data-scene={step.scene}>
+      items.map((step) => (
+        <li class:list={['case-steps__step', `case-steps__step--${step.layout ?? 'split'}`, step.shot.nativeWidth && 'case-steps__step--compact', step.desktopOnly && 'case-steps__step--desktop-only']} style={step.shot.nativeWidth ? `--step-width:${step.shot.nativeWidth}px` : undefined} data-focus-state data-scene={step.scene}>
           <div class="case-steps__text">
-            <p class="ds-meta-xs case-steps__num">
-              {pad(i + 1 - items.slice(0, i + 1).filter(item => item.desktopOnly).length)} · {step.label}
-            </p>
-            <h3 class:list={[variant === 'focus' || step.layout === 'wide' ? 'ds-heading-4xl' : 'ds-heading-3xl', 'case-steps__thesis']} data-h="thesis">
+            <h3 class="ds-heading-3xl case-steps__thesis" data-h="thesis">
               {step.thesis}
             </h3>
-            {step.body && (
+            {(step.body || step.caption) && (
               <p class="ds-body-lg case-steps__body" data-h="para">
-                {step.body}
+                {step.body || step.caption}
               </p>
             )}
-            {composition === 'checkpoint' && step.scene === 'decision' && <div class="case-steps__stop"><span class="case-steps__stop-symbol" aria-hidden="true"><i /><i /></span><p class="ds-meta-xs">{gate}</p></div>}
+            {composition === 'checkpoint' && step.scene === 'decision' && <div class="case-steps__stop"><span class="case-steps__stop-symbol" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" focusable="false"><circle cx="24" cy="15" r="7" stroke="currentColor" stroke-width="2" /><path d="M10 40v-4a14 14 0 0 1 28 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg></span><p class="ds-body-sm">{gate}</p></div>}
           </div>
           <div class="case-steps__shot">
             <CasePlate tone={composition === 'checkpoint' ? 'dark' : variant === 'focus' ? 'light' : tone}>
               <CaseScreen item={step.shot} class="case-steps__screen" />
             </CasePlate>
-            {step.caption && <p class="ds-body-sm case-steps__caption" data-h="caption">{step.caption}</p>}
           </div>
         </li>
       ))
@@ -72,26 +55,18 @@ const pad = (n: number) => String(n).padStart(2, '0');
     .case-steps--handoff .case-steps__step:first-child { grid-column: 1 / -1; }
     .case-steps--handoff .case-steps__step:last-child .case-steps__shot { max-inline-size: calc(var(--space-48) * 2); margin-inline: 0; }
   }
-  .case-steps__label {
-    margin: 0;
-    color: var(--text-meta);
-  }
 
   .case-steps__list {
     display: grid;
     gap: var(--flow-block);
-    margin: var(--flow-node) 0 0;
+    margin: 0;
     padding: 0;
     list-style: none;
   }
 
-  .case-steps__num {
-    margin: 0;
-    color: var(--text-meta);
-  }
 
   .case-steps__thesis {
-    margin: var(--flow-pair) 0 0;
+    margin: 0;
     color: var(--text-default);
     text-wrap: balance;
   }
@@ -111,10 +86,6 @@ const pad = (n: number) => String(n).padStart(2, '0');
     inline-size: 100%;
   }
 
-  .case-steps__caption {
-    margin: var(--flow-pair) 0 0;
-    color: var(--text-muted);
-  }
 
   /* Native focus materials keep their own scale; motion enhances this DOM. */
   .case-steps--focus .case-steps__shot {
@@ -123,7 +94,6 @@ const pad = (n: number) => String(n).padStart(2, '0');
     align-items: center;
   }
   .case-steps--focus .case-steps__shot > :global(.case-plate) { inline-size: 100%; }
-  .case-steps--focus .case-steps__caption { align-self: start; }
   .case-steps--focus .case-steps__step--split { display: block; }
   .case-steps--focus .case-steps__step--split .case-steps__shot { margin-block-start: var(--flow-group); }
 
@@ -152,7 +122,6 @@ const pad = (n: number) => String(n).padStart(2, '0');
     align-content: start;
     flex-shrink: 0;
   }
-  .case-steps--focus.is-focused .case-steps__num { grid-column: 1 / -1; }
   .case-steps--focus.is-focused .case-steps__thesis { margin-block-start: var(--flow-pair); }
   .case-steps--focus.is-focused .case-steps__body { margin-block-start: var(--flow-pair); }
   .case-steps--focus.is-focused .case-steps__shot {
@@ -168,8 +137,6 @@ const pad = (n: number) => String(n).padStart(2, '0');
     min-block-size: 0;
     padding: var(--space-6);
   }
-  .case-steps--focus.is-focused .case-steps__caption { margin-block-start: var(--flow-pair); }
-  .case-steps--focus.is-focused .case-steps__caption { flex-shrink: 0; }
 
   @media (--below-bp-md) {
     .case-steps__step--desktop-only { display: none; }
@@ -185,19 +152,9 @@ const pad = (n: number) => String(n).padStart(2, '0');
     margin-block-start: var(--flow-group);
   }
   .case-steps__stop p { margin: 0; }
-  .case-steps__stop-symbol {
-    display: flex;
-    gap: var(--review-stop-gap);
-    inline-size: var(--review-stop-width);
-    block-size: var(--review-stop-height);
-  }
-  .case-steps__stop-symbol i {
-    display: block;
-    inline-size: var(--review-stop-stroke);
-    block-size: 100%;
-    background: currentColor;
-    transform-origin: center;
-  }
+  .case-steps__stop-symbol { display: block; flex: none; inline-size: var(--space-12); block-size: var(--space-12); }
+  .case-steps__stop-symbol svg { display: block; inline-size: 100%; block-size: 100%; }
+
   /* Без движения (reduce, нет JS, сцена не помещается) шаги идут списком,
      но на десктопе в той же композиции, что и сцена: текст слева, кадр
      справа. Иначе транскрипт и карточка одобрения растягивались на всю
@@ -231,11 +188,8 @@ const pad = (n: number) => String(n).padStart(2, '0');
     transform-origin: center;
     pointer-events: none;
   }
-  .case-steps--checkpoint.is-focused .case-steps__label,
-  .case-steps--checkpoint.is-focused .case-steps__num,
   .case-steps--checkpoint.is-focused .case-steps__thesis,
-  .case-steps--checkpoint.is-focused .case-steps__body,
-  .case-steps--checkpoint.is-focused .case-steps__caption { color: inherit; }
+  .case-steps--checkpoint.is-focused .case-steps__body { color: inherit; }
   .case-steps--checkpoint.is-focused .case-steps__stage {
     block-size: calc(var(--focus-height) - var(--space-12) * 2 - var(--space-8));
   }
@@ -257,7 +211,6 @@ const pad = (n: number) => String(n).padStart(2, '0');
   .case-steps--checkpoint.is-focused .case-steps__shot { grid-column: auto; }
   .case-steps--checkpoint.is-focused .case-steps__step:not([data-scene='overview']) .case-steps__shot { margin: 0; }
   .case-steps--checkpoint.is-focused .case-steps__step:not([data-scene='overview']) .case-steps__body { margin-block-start: var(--flow-text); }
-  .case-steps--checkpoint.is-focused .case-steps__step:not([data-scene='overview']) .case-steps__thesis { font-size: var(--size-5xl); line-height: var(--lh-display); }
   .case-steps--checkpoint.is-focused [data-scene='promise'] .case-steps__shot {
     border-inline-start: var(--border-width) solid currentColor;
     padding-inline-start: var(--space-12);
@@ -271,10 +224,7 @@ const pad = (n: number) => String(n).padStart(2, '0');
     .case-steps--checkpoint.is-focused { padding: var(--space-8); }
     .case-steps--checkpoint.is-focused .case-steps__stage { block-size: calc(var(--focus-height) - var(--space-8) * 3); }
     .case-steps--checkpoint.is-focused .case-steps__step:not([data-scene='overview']) { gap: var(--space-8); }
-    .case-steps--checkpoint.is-focused .case-steps__step:not([data-scene='overview']) .case-steps__thesis { font-size: var(--size-4xl); }
     .case-steps--checkpoint.is-focused [data-scene='promise'] .case-steps__shot { padding-inline-start: var(--space-8); }
-    .case-steps__stop-symbol { inline-size: var(--space-32); block-size: var(--space-32); gap: var(--space-8); }
-    .case-steps__stop-symbol i { inline-size: var(--space-6); }
   }
   /* Fit the complete frame, including its fields and action, in the scene. */
   .case-steps--focus.is-focused .case-steps__shot :global(.case-steps__screen),
@@ -282,14 +232,6 @@ const pad = (n: number) => String(n).padStart(2, '0');
     inline-size: min(100%, var(--focus-screen-width));
     flex-shrink: 0;
   }
-  @media (--below-bp-md) {
-    .case-steps__stop-symbol { inline-size: var(--space-16); block-size: var(--space-16); gap: var(--space-4); }
-    .case-steps__stop-symbol i { inline-size: var(--space-3); }
-  }
-  @media not all and (--bp-xl) {
-    .case-steps--focus.is-focused .case-steps__thesis { font-size: var(--size-3xl); }
-  }
-
   @media (--bp-xl) {
     .case-steps__step--split {
       display: grid;
@@ -312,9 +254,6 @@ const pad = (n: number) => String(n).padStart(2, '0');
       grid-template-columns: 1fr 1fr;
       column-gap: var(--space-16);
     }
-    .case-steps__step--wide .case-steps__num {
-      grid-column: 1 / -1;
-    }
     .case-steps__step--wide .case-steps__body {
       margin-block-start: var(--flow-pair);
     }
@@ -322,4 +261,20 @@ const pad = (n: number) => String(n).padStart(2, '0');
 
   /* The handoff keeps text above every frame, including wide viewports. */
   .case-steps--handoff .case-steps__step .case-steps__shot { margin-block-start: var(--flow-group); }
+
+  /* Native small panels keep their field close; phone sequences share an axis. */
+  .case-steps:not(.is-focused) .case-steps__step--compact .case-steps__shot > :global(.case-plate) {
+    inline-size: 100%;
+    max-inline-size: calc(var(--step-width) + var(--space-4) * 2);
+    padding: var(--space-4);
+    align-items: start;
+  }
+  @media (--bp-md) {
+    .case-steps--phones .case-steps__list { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: auto auto; gap: var(--flow-node) var(--space-8); }
+    .case-steps--phones .case-steps__step--compact { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: subgrid; grid-row: span 2; }
+    .case-steps--phones .case-steps__shot { margin-block-start: 0; }
+    .case-steps--phones .case-steps__text,
+    .case-steps--phones .case-steps__shot { grid-column: auto; }
+    .case-steps:not(.is-focused):not(.case-steps--phones) .case-steps__step--compact { display: block; }
+  }
 </style>

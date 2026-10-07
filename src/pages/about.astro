@@ -4,6 +4,7 @@ import PageShell from '../layouts/PageShell.astro';
 import AuthorPortrait from '../components/AuthorPortrait.astro';
 import ProseBlock from '../components/ProseBlock.astro';
 import SectionHead from '../components/SectionHead.astro';
+import IconArrow from '../components/IconArrow.astro';
 import { about as aboutEn } from '../copy/about.ts';
 import { aboutRu } from '../copy/ru/about.ts';
 import { site as siteEn, type SiteCopy } from '../copy/site.ts';
@@ -34,8 +35,7 @@ const chapters = [
     </h1>
     <nav class="chapter-index" aria-label={about.contentsLabel} style={`--about-chapter-count: ${chapters.length}`}>
       {chapters.map((chapter, index) => <a href={`#${chapter.id}`} class="ds-body-sm">
-        <span class="ds-meta-xs" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
-        {about.chapterLabels[index]}<span aria-hidden="true">↓</span>
+        {about.chapterLabels[index]}<span aria-hidden="true"><IconArrow direction="down" /></span>
       </a>)}
     </nav>
     <AuthorPortrait src={about.portrait.src} srcMobile={about.portrait.srcMobile} alt={about.portrait.alt}
@@ -44,10 +44,9 @@ const chapters = [
     <ProseBlock variant="lead" class="intro__lead"><p>{about.intro.lead}</p></ProseBlock>
   </section>
 
-  {chapters.map((chapter, index) => <section id={chapter.id} class="ds-container chapter" data-motion="fade">
+  {chapters.map(chapter => <section id={chapter.id} class="ds-container chapter" data-motion="fade">
     <div class="chapter__head">
-      <p class="ds-meta-sm chapter__number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</p>
-      <SectionHead size="sm" reveal={false}>{chapter.heading}</SectionHead>
+      <SectionHead size="lg" reveal={false}>{chapter.heading}</SectionHead>
     </div>
     <ProseBlock motion={false} class="chapter__body">
       {chapter.body.map(paragraph => <p>{paragraph}</p>)}
@@ -71,7 +70,6 @@ const chapters = [
   .chapter::before { content: ''; position: absolute; inset-block-start: 0; inset-inline: var(--margin-sm); border-block-start: var(--border-width) solid var(--border-default); }
   .chapter__head { display: grid; align-content: start; gap: var(--flow-text); }
   .chapter__head > :global(*) { margin-block-start: 0; }
-  .chapter__number { color: var(--text-link); }
   @media (--can-hover) { .chapter-index a:hover { color: var(--text-link-hover); } }
   @media (--bp-md) {
     .chapter-index { grid-template-columns: repeat(var(--about-chapter-count), minmax(0, 1fr)); gap: var(--space-4); }

@@ -25,8 +25,8 @@
  *
  * **Шрифты — статические TTF в `scripts/og-fonts/`.** Не woff2 из
  * `public/fonts/`: их Satori не читает. Не вариативные: парсер Satori
- * падает на таблице `fvar`. Файлы — инстансы Google Fonts тех же двух
- * семейств, лицензии OFL лежат рядом. В браузер они не уезжают, это
+ * падает на таблице `fvar`. Файлы — инстансы Google Fonts семейства Onest,
+ * лицензия OFL лежит рядом. В браузер они не уезжают, это
  * билд-ассет.
  *
  * Путь к ним считается от корня проекта (`process.cwd()`), а не от
@@ -44,15 +44,15 @@ import path from 'node:path';
 import type { APIRoute } from 'astro';
 import satori from 'satori';
 import sharp from 'sharp';
-import { OG_CARDS, OG_HEIGHT, OG_WIDTH, ogCard } from '../../copy/og.ts';
+import { OG_CARDS, OG_FEATURES, OG_HEIGHT, OG_WIDTH, ogCard } from '../../copy/og.ts';
 import { px, role, token } from '../../lib/tokens.ts';
 
 const fontFile = (name: string) => fs.readFileSync(path.join(process.cwd(), 'scripts', 'og-fonts', name));
 
 const fonts = [
-  { name: 'Manrope', data: fontFile('Manrope-400.ttf'), weight: 400 as const, style: 'normal' as const },
-  { name: 'Manrope', data: fontFile('Manrope-800.ttf'), weight: 800 as const, style: 'normal' as const },
-  { name: 'JetBrains Mono', data: fontFile('JetBrainsMono-500.ttf'), weight: 500 as const, style: 'normal' as const },
+  { name: 'Onest', data: fontFile('Onest-400.ttf'), weight: 400 as const, style: 'normal' as const },
+  { name: 'Onest', data: fontFile('Onest-800.ttf'), weight: 800 as const, style: 'normal' as const },
+  { name: 'Onest', data: fontFile('Onest-500.ttf'), weight: 500 as const, style: 'normal' as const },
 ];
 
 /**
@@ -60,7 +60,7 @@ const fonts = [
  *
  * Три ступени шкалы, не плавная интерполяция: карточка должна попадать
  * в те же кегли, что и страница. Границы посчитаны от меры строки —
- * при 1040 px рабочей ширины и Manrope 800 в строку 96 px входит около
+ * при 1040 px рабочей ширины и Onest 800 в строку 96 px входит около
  * девятнадцати знаков, то есть три строки — это 55. Дальше ступень вниз.
  */
 function titleSize(title: string): number {
@@ -70,11 +70,44 @@ function titleSize(title: string): number {
 }
 
 export function getStaticPaths() {
-  return OG_CARDS.map((card) => ({ params: { card: card.id } }));
+  return OG_CARDS.flatMap((card) => [card.id, `${card.id}-onest`].map((id) => ({ params: { card: id } })));
 }
 
 export const GET: APIRoute = async ({ params }) => {
-  const card = ogCard(params.card!);
+  const card = ogCard(params.card!.replace(/-onest$/, ''));
+  const feature = OG_FEATURES[card.id];
+
+  if (feature) {
+    // Preserve the documentary half of the accepted LinkedIn artwork exactly.
+    // Only site typography is replaced; no native UI colors or glyphs change.
+    const half = OG_WIDTH / 2;
+    const source = path.join(process.cwd(), 'public', 'media', 'linkedin', 'og', `${card.id}.png`);
+    const documentary = await sharp(source).extract({ left: half, top: 0, width: half, height: OG_HEIGHT }).png().toBuffer();
+    const svg = await satori({
+      type: 'div',
+      props: {
+        style: { width: OG_WIDTH, height: OG_HEIGHT, display: 'flex', backgroundColor: token('surface-subtle') },
+        children: [
+          {
+            type: 'div',
+            props: {
+              style: { width: half, height: OG_HEIGHT, display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: px('space-16'), gap: px('space-6') },
+              children: [
+                { type: 'div', props: { style: { width: px('space-16'), height: px('space-1'), backgroundColor: token('text-link') } } },
+                { type: 'div', props: { style: { display: 'flex', ...role('ds-display-6xl', px('size-hero-lg')), color: token('text-default') }, children: feature.title } },
+                { type: 'div', props: { style: { display: 'flex', ...role('ds-body-base', px('size-3xl')), color: token('text-subtle') }, children: feature.description } },
+                ...(feature.status ? [{ type: 'div', props: { style: { display: 'flex', alignSelf: 'flex-start', ...role('ds-meta-xs', px('size-2xl')), color: token('text-default'), border: `${token('border-width')} solid ${token('border-strong')}`, padding: px('space-3') }, children: feature.status } }] : []),
+              ],
+            },
+          },
+          { type: 'img', props: { src: `data:image/png;base64,${documentary.toString('base64')}`, width: half, height: OG_HEIGHT } },
+        ],
+      },
+    }, { width: OG_WIDTH, height: OG_HEIGHT, fonts });
+    // Reapply the original half after rasterizing, retaining exact native pixels.
+    const png = await sharp(Buffer.from(svg)).composite([{ input: documentary, left: half, top: 0 }]).png().toBuffer();
+    return new Response(new Uint8Array(png), { headers: { 'Content-Type': 'image/png', 'Cache-Control': 'public, max-age=31536000, immutable' } });
+  }
 
   const svg = await satori(
     {
@@ -103,7 +136,7 @@ export const GET: APIRoute = async ({ params }) => {
                     style: {
                       width: px('space-16'),
                       height: px('space-1'),
-                      backgroundColor: token('accent-500'),
+                      backgroundColor: token('text-link'),
                       marginBottom: px('space-6'),
                     },
                   },

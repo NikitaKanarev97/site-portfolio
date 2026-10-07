@@ -74,7 +74,7 @@ export interface Thesis {
 }
 
 export type CoverMedia =
-  | { variant: 'proof'; eyebrow: string; caption: string; shot: ShotItem; panels?: ShotItem[]; layout?: 'interlock'; gate?: string }
+  | { variant: 'proof'; eyebrow: string; caption?: string; shot: ShotItem; panels?: ShotItem[]; layout?: 'interlock'; gate?: string }
   | {
       variant: 'video';
       /** Адрес ролика без расширения. Нет ролика — читаемый постер. */

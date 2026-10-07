@@ -3,7 +3,7 @@ import { defineDiagram } from '../schema';
 export const partnerPortalFlow = defineDiagram({
   kind:'flow',title:{en:'From XLS to order creation',ru:'От XLS к созданию заказа'},
   summary:{en:'Read imported lines. Unresolved identity requires buyer selection or correction and recheck. Cart separately reviews commercial change. Choose a supply plan, confirm terms, create an order. Source text after creation is not yet stored.',ru:'Прочитать импортированные строки. Нерешённое соответствие требует выбора или исправления и повторной проверки. Корзина отдельно проверяет коммерческие изменения. Выбрать план поставки, подтвердить условия, создать заказ. Исходный текст после создания пока не хранится.'},
-  heading:{lead:{en:'User flow',ru:'Сценарий'},name:{en:'XLS → order',ru:'XLS → заказ'}},size:{w:149,h:56},
+  heading:{lead:{en:'User flow',ru:'Сценарий'},name:{en:'From XLS to order',ru:'От XLS к заказу'}},size:{w:149,h:56},
   nodes:[
     {id:'upload',type:'start',at:[0,10],w:18,label:{en:'Upload XLS',ru:'Загрузить XLS'}},
     {id:'read',type:'screen',at:[24,10],w:20,label:{en:'Read lines',ru:'Прочитать строки'}},

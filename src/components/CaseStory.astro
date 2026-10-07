@@ -23,10 +23,16 @@ interface Props {
 }
 const { story: input, lang = 'en', id = 'case-story', next } = Astro.props;
 const story = defineStory(input);
-const label = (block: CaseStory['blocks'][number]) => block.type === 'steps' ? block.payload.label
-  : block.type === 'outcome' ? block.payload.result.label
-  : block.type === 'thesis' ? block.payload.label
-  : block.payload.thesis?.label ?? block.id;
+const label = (block: CaseStory['blocks'][number]) => {
+  if (block.type === 'steps') return block.payload.label;
+  if (block.type === 'outcome') return block.payload.result.thesis;
+  if (block.type === 'thesis') return block.payload.thesis;
+  if (block.payload.thesis) return block.payload.thesis.thesis;
+  if (block.type === 'specimen') return block.payload.specimen.title;
+  if (block.type === 'shot') return block.payload.shot.caption;
+  if (block.type === 'artifact') return block.payload.artifact.caption;
+  return undefined;
+};
 ---
 <div class:list={['pilot', 'case-story', `case-story--${story.theme}`]} data-h="case" data-story-version="blocks-v1" data-word-budget="450" id={id}>
   <CaseCover theme={story.theme} title={story.cover.title} outcome={story.cover.outcome} media={story.cover.media} locale={lang} transitionKey={`case-${story.theme}`} />
@@ -69,7 +75,7 @@ const label = (block: CaseStory['blocks'][number]) => block.type === 'steps' ? b
           <CaseSpecimen specimen={block.payload.specimen} tone={story.plate} lang={lang} />
         </>}
         {block.type === 'outcome' && <>
-          <div class:list={['ds-section', block.payload.presentation === 'editorial' && 'case-story__finale-body']}>
+          <div class:list={['ds-section', 'case-story__result-body', block.payload.presentation === 'editorial' && 'case-story__finale-body']}>
           <CaseThesis {...block.payload.result} variant={block.payload.presentation} />
           <CaseImpact outcome={block.payload} cards={block.payload.cards} quote={block.payload.quote} variant={block.payload.presentation} />
           </div>
@@ -77,31 +83,33 @@ const label = (block: CaseStory['blocks'][number]) => block.type === 'steps' ? b
       </section>
     ))}
   </CaseSheet>
-  <CaseNext {...next} transitionKey={`case-${next.theme}`} prototype={story.prototype} />
+  <CaseNext {...next} transitionKey={`case-${next.theme}`} />
 </div>
 <style>
   :global(main:has(> .case-story)) { padding-block-start: 0; }
   .case-story { --cover-offset: calc(var(--space-12) + var(--space-6) * 2 + var(--border-width)); }
   .case-story__estimate { max-inline-size: var(--measure-case); color: var(--text-muted); text-wrap: pretty; }
   .case-story [data-story-motion='static'] :global([data-motion]) { opacity: 1; }
-  .case-story__finale-body {
+  .case-story__result-body {
     display: grid;
     gap: var(--flow-group);
     padding: var(--space-6);
-    background: var(--surface-cover-agent);
+    background: var(--surface-subtle);
     border-radius: var(--radius-media);
+  }
+  .case-story__result-body > :global(* + *) { margin-block-start: 0; }
+  .case-story__finale-body {
+    background: var(--surface-cover-agent);
     --text-default: var(--text-on-inverse);
     --text-subtle: var(--text-on-inverse);
     --text-meta: var(--text-on-inverse);
     --text-muted: var(--text-on-inverse);
   }
-  .case-story__finale-body > :global(* + *) { margin-block-start: 0; }
   .case-story__finale-body > :global(.case-thesis) { display: block; }
-  .case-story__finale-body :global(.case-thesis__text) { margin-block-start: var(--flow-text); }
   /* Две колонки — с bp-xl. На 1024 половина плашки давала 352 px под
      display-5xl, и заголовок итога шёл по слову в строке. */
   @media (--bp-lg) {
-    .case-story__finale-body { padding: var(--space-12); }
+    .case-story__result-body { padding: var(--space-12); }
   }
   @media (--bp-xl) {
     .case-story__finale-body { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--space-12); }
