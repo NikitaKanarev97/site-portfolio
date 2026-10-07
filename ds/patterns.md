@@ -4,7 +4,7 @@
 
 **HeroPackage**: имя и роль рядом у левого края. Две строки ds-display-home на общей левой оси. От bp-lg две равные колонки с space-16 между ними: слева specialization/authorization/CV/email, справа AuthorPortrait work-index с единственным вертикальным индексом пяти работ. До bp-lg портрет/индекс предшествуют specialization. Индекс без номеров, стрелок и линий; ссылки ds-body-base с целью space-12. Research/Design/Build и повтор Read the cases сняты. Onest, томатный акцент, размер Home 36/64/80/112.
 
-**FeaturedCaseCover**: белая единая шапка ds-display-6xl + пояснение справа от bp-lg, без номера. Тёмный Agent только вокруг WorkStage; Portal на lavender, Learn на navy, Vet на sage, Pawly — фото/отчёт по верхней оси. Все native кадры целиком, без дополнительной карточки CaseScreen edge; alpha-компоненты native. После сцены статус и CTA с SVG; нижние линии и повторные годы сняты. Порядок и доказательность stories сохраняются. Agent/Learn media объявляют inverse focus; белая шапка обычный.
+**FeaturedCaseCover**: белая единая шапка ds-display-6xl + пояснение справа от bp-lg, без номера. Тёмный Agent только вокруг WorkStage; Portal на butter, Learn на navy, Vet на sage, Pawly — фото/отчёт по верхней оси. Все native кадры целиком, без дополнительной карточки CaseScreen edge; alpha-компоненты native. После сцены статус и CTA с SVG; нижние линии и повторные годы сняты. Порядок и доказательность stories сохраняются. Agent/Learn media объявляют inverse focus; белая шапка обычный.
 
 **DevelopmentStrip**: SectionHead size=lg, как у How I work. Подводка сообщает design/Webflow build; повторные роли на четырёх превью сняты, полный контекст остаётся в ProjectDialog. Медиассылки и адаптивные превью прежние.
 
@@ -14,7 +14,7 @@
 
 **PageShell / ContactBlock**: h2 ds-display-7xl (48/64/128), ProseBlock, mailto CopyEmail appearance=address, TextLink arrow на CV и LinkedIn. Desktop: левый заголовок, ниже две колонки text/contacts. Mobile: заголовок → текст → email → вторичные ссылки с переносом, цель 48 px. Вертикаль flow-node/group/text. Footer — одна спокойная строка Copyright / Авторские права, без личных данных и таймера.
 
-**Ритм**: section-gap 128 px ниже bp-lg / 192 px от bp-lg разделяет Hero/работы, пять работ между собой и нижние секции. Внутренние пары используют меньшие flow-ступени. Portal surface-cover ссылается на lavender-100 #DDD5FF; реальные продуктовые цвета не меняются.
+**Ритм**: section-gap 128 px ниже bp-lg / 192 px от bp-lg разделяет Hero/работы, пять работ между собой и нижние секции. Внутренние пары используют меньшие flow-ступени. Portal surface-cover ссылается на butter-100 #F3E6AE; реальные продуктовые цвета не меняются.
 
 **H · 04.10.2026, замечание владельца о краях.** FeaturedCaseCover — article с отдельными ссылками названия/CTA в кейс и отдельным открытием каждого снимка. Все пять карточек имеют radius-lg на каждой ширине. Скриншот — полные пиксели в padded CaseScreen, скругляется только внешняя оболочка. Общий MediaZoom показывает кадр и отдельный текстовый блок, tall capture прокручивается. EN/RU используют одну геометрию. Это заменяет нижеописанную одну ссылку вокруг карточки и острые исключения для Portal/Learn.
 

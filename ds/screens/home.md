@@ -10,7 +10,7 @@
 | Hero | имя/роль слева; оба тезиса ds-display-home на общей левой оси; desktop две равные колонки с gap space-16: copy/actions слева, портрет с единственным вертикальным индексом работ справа; mobile портрет/index до copy. Индекс без номера/стрелки/линии, ds-body-base, цель 48 px |
 | Featured | пять одинаковых белых шапок, h2 ds-display-6xl + пояснение ds-heading-xl справа от bp-lg, ниже на mobile. Номера сняты. Локальные материалы сохраняют собственную форму, целые native кадры, CaseScreen edge/native. Под ними описание сделанной работы и CTA с IconArrow; года и линии сняты с превью, даты сохранены в кейсах |
 | Agent material | тёмный media wrapper, человек SVG + Human review body-sm; existing hooks/motion и inverse focus. Внешние title/CTA на белом |
-| Portal material | lavender surface-cover-portal, 38 + редакционная цитата с количеством через запятую, без дополнительной пометки и mini-tags |
+| Portal material | butter surface-cover-portal, 38 + редакционная цитата с количеством через запятую, без дополнительной пометки и mini-tags |
 | Learn material | navy, без стрелок/номеров/линий. 3:2 от bp-lg: материал + current unit слева, native passport справа на два ряда; mobile ресурс → материал → паспорт |
 | Vet material | sage, три верхневыравненных capture-колонки от bp-lg, одна ниже. Одна подпись о трёх ролях, 30 секунд — исходное ограничение |
 | Pawly material | demo-фото и настоящий отчёт по верхней оси, 2:1 от bp-lg, gap space-8; mobile последовательно во всю колонку |
