@@ -1,0 +1,44 @@
+{
+  "stage": "G-common-F",
+  "status": "accepted",
+  "ref": "6e8f0e075916dec82a90831c7c2c78a38ea60e20",
+  "handoffRef": "fdfda334f4d44d6e2f46c1822df2422eb99269dd",
+  "deltaFiles": [
+    "src/scripts/animations.js",
+    "ds/motion-concept.md"
+  ],
+  "reviewed": [
+    "focus-common-report.md",
+    "focus-common-handoff.md",
+    "focus-common-reproduction.json",
+    "delta code and observer/gesture/route lifecycle",
+    "f-transfer.json",
+    "clean-integrity.json",
+    "checks.json",
+    "PLAN-CHATS metadata",
+    "seven raw proof checksums and failure arrays",
+    "baseline RU vs final before/reduce RU and EN frames"
+  ],
+  "confirmed": {
+    "browserProofHashes": 7,
+    "reportedFailures": 0,
+    "exactPreferenceTransitions": 24,
+    "nativeWheelTransitions": 96,
+    "sharedRoutes": 8,
+    "sharedTransitions": 42,
+    "filmObservations": 14,
+    "canonicalFiles": 630,
+    "cleanSharedClone": true,
+    "cleanFClone": true,
+    "fCasePayloadUnchanged": true,
+    "actualFUntouched": true,
+    "mirrorsEqual": true
+  },
+  "decision": "Narrow shared correction accepted; same actual F imports exact delta and retests before case acceptance. Final site integration remains pending.",
+  "limitations": [
+    "Local Chromium 1243 viewport emulation.",
+    "Physical devices/other engines/CPU not certified.",
+    "Hidden tab is synthetic handler proof.",
+    "Shared verification is on G isolated F clone; actual F retest remains pending."
+  ]
+}

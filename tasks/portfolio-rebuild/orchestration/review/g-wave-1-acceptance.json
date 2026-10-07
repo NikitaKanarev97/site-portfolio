@@ -1,0 +1,29 @@
+{
+  "stage": "G-integrate-1",
+  "status": "accepted",
+  "baseRef": "58002c398c3386c9df4b398f324ab07115c979f7",
+  "handoffRef": "28cf1876ec633797193b4f0ada3de5d817ff89f9",
+  "cleanCheckout": "D:/Claude-projects/Site-portfolio/tmp/portfolio-wave-1-58002c3",
+  "reviewed": [
+    "wave-1-report.md", "wave-1-handoff.md", "base.md",
+    "wave-1-reproduction.json", "clean-integrity.json", "clean-browser.json",
+    "profiles-verification.json", "next-verification.json",
+    "registry and route bridge diff", "shared animation diff",
+    "integrated Portal RU390 cover", "integrated Learn RU390 outcome",
+    "native Availability contour shot", "clean checkout HEAD and status"
+  ],
+  "evidence": {
+    "payloadFiles": 585,
+    "publicProfiles": 64,
+    "nextLifecycleRoutes": 7,
+    "harmonySamples": 36,
+    "cleanBrowserProfiles": 8,
+    "buildPages": 28,
+    "failures": 0,
+    "dsMirrorsEqual": true,
+    "cleanGitStatus": ""
+  },
+  "closedRequest": "B-G-01",
+  "nextStage": "D",
+  "scope": "B/C public integration and refreshed base for D/E/F; final home, three remaining stories and site publication still pending"
+}

@@ -1,0 +1,217 @@
+---
+/**
+ * Базовый layout — Site-portfolio
+ *
+ * Держит три вещи, которые не принадлежат ни одному компоненту:
+ *   1. глобальный слой ДС — tokens.css, шрифты, global.css;
+ *   2. единственный JS-бандл продукта — GSAP одним общим скриптом;
+ *   3. SkipLink и точку монтирования фокуса (TECH-12);
+ *   4. именованный слот footer — место под <main> (ds/patterns.md).
+ *
+ * Нативная анимация View Transitions выключена на <html>: хореографию
+ * переходов ведёт GSAP через astro:before-preparation и astro:after-swap
+ * (ds/motion-concept.md §2).
+ */
+import { ClientRouter } from 'astro:transitions';
+import MediaZoom from '../components/MediaZoom.astro';
+import Navbar from '../components/Navbar.astro';
+import { PREVIEW_NOINDEX, site, type SiteCopy } from '../copy/site';
+import { OG_HEIGHT, OG_WIDTH, ogImage as ogImageFor, ogImageAlt } from '../copy/og.ts';
+import { alternatesFor, canonicalPath, localeSwitchPath, OG_LOCALES, type Locale } from '../copy/routes.ts';
+import logoUrl from '../../Images/favicon-v3.svg?url';
+
+import '../styles/tokens.css';
+import '../styles/fonts.css';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  lang?: string;
+  /**
+   * Идентификатор OG-карточки из src/copy/og.ts — `default`, `about`,
+   * `work-<slug>`. Не путь к файлу: путь строит реестр, и опечатка в нём
+   * дала бы битую картинку молча, без ошибки сборки (TECH-04).
+   */
+  ogCard?: string;
+  /** Маршрут текущей страницы — Navbar подсвечивает активный пункт. */
+  current?: string;
+  /** Показывать навигацию. 404 обходится без неё. */
+  nav?: boolean;
+  /**
+   * Закрыть страницу от индексации независимо от превью-режима.
+   * Витрина /kit и непереведённый каркас /ru/ остаются noindex и после
+   * боевого запуска (src/copy/routes.ts).
+   */
+  noindex?: boolean;
+  /**
+   * Канонический адрес. Снимается на 404 и 500: страница ошибки
+   * отдаётся хостингом по ЧУЖОМУ адресу — тому, который человек набрал, —
+   * и canonical на /404/ объявил бы этот чужой адрес копией служебной
+   * страницы. У страницы ошибки канонического адреса нет.
+   */
+  canonical?: boolean;
+  /** Локализованные сквозные строки навигации, доступности и footer. */
+  siteCopy?: SiteCopy;
+  /** Native locale destinations for isolated previews outside the public registry. */
+  localePaths?: Partial<Record<Locale, string>>;
+}
+
+const {
+  title,
+  description,
+  lang = 'en',
+  ogCard = 'default',
+  current,
+  nav = true,
+  noindex = false,
+  canonical = true,
+  siteCopy = site,
+  localePaths,
+} = Astro.props;
+
+const locale: Locale = lang === 'ru' ? 'ru' : 'en';
+const localeOptions = ([
+  { label: 'EN', locale: 'en' },
+  { label: 'RU', locale: 'ru' },
+] as const).map((option) => ({
+  label: option.label,
+  href: localePaths?.[option.locale] ?? localeSwitchPath(Astro.url.pathname, option.locale),
+  active: option.locale === locale,
+}));
+
+/**
+ * Канонический URL и hreflang считаются из одного источника — реестра
+ * маршрутов. Расхождение в один символ (слеш на конце) обнуляет обе
+ * аннотации сразу, поэтому форму пути задаёт canonicalPath(), а не
+ * страница.
+ */
+const canonicalUrl = new URL(canonicalPath(Astro.url.pathname), Astro.site);
+const alternates = canonical ? alternatesFor(Astro.url.pathname) : [];
+const image = new URL(ogImageFor(ogCard), Astro.site);
+---
+
+<html lang={lang} transition:animate="none">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href={logoUrl} type="image/svg+xml" />
+    {canonical && <link rel="canonical" href={canonicalUrl} />}
+
+    {/*
+      Аннотации локалей. Пусты, пока у маршрута одна локаль: hreflang на
+      самого себя без пары смысла не несёт (src/copy/routes.ts).
+    */}
+    {
+      alternates.map((alternate) => (
+        <link
+          rel="alternate"
+          hreflang={alternate.hreflang}
+          href={new URL(alternate.path, Astro.site)}
+        />
+      ))
+    }
+
+    {/*
+      Preview-деплой закрыт от поиска до боевого запуска (src/copy/site.ts).
+      Проп noindex закрывает страницу и после запуска — /kit и каркас /ru/.
+    */}
+    {(PREVIEW_NOINDEX || noindex) && <meta name="robots" content="noindex, nofollow" />}
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteCopy.brand} />
+    <meta property="og:locale" content={OG_LOCALES[locale]} />
+    {alternates.filter(a => a.hreflang !== 'x-default' && a.hreflang !== locale).map(a => (
+      <meta property="og:locale:alternate" content={OG_LOCALES[a.hreflang as Locale]} />
+    ))}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {canonical && <meta property="og:url" content={canonicalUrl} />}
+    <meta property="og:image" content={image} />
+    <meta property="og:image:width" content={String(OG_WIDTH)} />
+    <meta property="og:image:height" content={String(OG_HEIGHT)} />
+    {/* Альтернатива обязательна: карточка типографская, и текст на ней — весь её смысл. */}
+    <meta property="og:image:alt" content={ogImageAlt(ogCard)} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    {/* Два критических woff2 — набор идёт по fonts.ready (motion-concept §4.1). */}
+    <link
+      rel="preload"
+      href="/fonts/manrope-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/manrope-cyrillic-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    {/*
+      Блокирующий инлайн-скрипт. Начальные состояния движения скоупятся
+      под .js — без него текст виден всегда (motion-concept §8).
+      Страховка на TECH-15: бандл не дошёл за 2 с (прокси, блокировка
+      скриптов) — .js снимается, страница возвращается в читаемый вид.
+    */}
+    <script is:inline>
+      (function () {
+        var root = document.documentElement;
+        root.classList.add('js');
+        setTimeout(function () {
+          if (!window.__dsMotionBooted) root.classList.remove('js');
+        }, 2000);
+      })();
+    </script>
+
+    <ClientRouter />
+  </head>
+
+  <body>
+    <a class="ds-skip-link" href="#main">{siteCopy.accessibility.skipToContent}</a>
+    {
+      nav && (
+        <Navbar
+          brand={siteCopy.brand}
+          brandHref={locale === 'ru' ? '/ru/' : '/'}
+          items={[...siteCopy.nav]}
+          current={current}
+          label={siteCopy.navigation.label}
+          triggerLabel={siteCopy.navigation.trigger}
+          closeLabel={siteCopy.navigation.close}
+          localeLabel={siteCopy.navigation.languageLabel}
+          locales={localeOptions}
+        />
+      )
+    }
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+
+    {/*
+      Footer стоит под <main>, а не внутри него (ds/patterns.md, PageShell).
+      Слот именованный: содержимое подаёт PageShell, витрина /kit — нет.
+    */}
+    <slot name="footer" />
+    <MediaZoom zoomCopy={siteCopy.zoom} />
+
+    <noscript>
+      <p class="ds-container ds-body-sm">{siteCopy.accessibility.noscript}</p>
+    </noscript>
+
+    {/* Единственная JS-зависимость продукта (ds/CONTRACT.md, §Стек). */}
+    <script>
+      import '../scripts/animations.js';
+    </script>
+  </body>
+</html>
+
+<style>
+  main:focus-visible {
+    outline: none;
+  }
+</style>

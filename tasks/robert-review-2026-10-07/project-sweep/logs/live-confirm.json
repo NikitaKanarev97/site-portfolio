@@ -1,0 +1,170 @@
+[
+  {
+    "file": "work-agent-ops-console-en-1440-live-1.png",
+    "state": {
+      "scrollY": 3100,
+      "steps": [
+        {
+          "scene": "overview",
+          "rect": {
+            "x": 128,
+            "y": 123.65625,
+            "width": 1184,
+            "height": 620,
+            "top": 123.65625,
+            "right": 1312,
+            "bottom": 743.65625,
+            "left": 128
+          },
+          "display": "flex",
+          "opacity": "0"
+        },
+        {
+          "scene": "workspace",
+          "rect": {
+            "x": 128,
+            "y": 123.65625,
+            "width": 1184,
+            "height": 620,
+            "top": 123.65625,
+            "right": 1312,
+            "bottom": 743.65625,
+            "left": 128
+          },
+          "display": "grid",
+          "opacity": "1"
+        },
+        {
+          "scene": "promise",
+          "rect": {
+            "x": 128,
+            "y": 123.65625,
+            "width": 1184,
+            "height": 620,
+            "top": 123.65625,
+            "right": 1312,
+            "bottom": 743.65625,
+            "left": 128
+          },
+          "display": "grid",
+          "opacity": "0"
+        },
+        {
+          "scene": "decision",
+          "rect": {
+            "x": 128,
+            "y": 123.65625,
+            "width": 1184,
+            "height": 620,
+            "top": 123.65625,
+            "right": 1312,
+            "bottom": 743.65625,
+            "left": 128
+          },
+          "display": "grid",
+          "opacity": "0"
+        }
+      ],
+      "stop": [
+        {
+          "rect": {
+            "x": 128,
+            "y": 495.921875,
+            "width": 454.390625,
+            "height": 235.1875,
+            "top": 495.921875,
+            "right": 582.390625,
+            "bottom": 731.109375,
+            "left": 128
+          },
+          "text": ""
+        }
+      ]
+    },
+    "reason": "Контроль закреплённой scroll-сцены: полный кадр при scrollY=0 не показывает её промежуточные состояния. Новый кадр другого состояния, не повтор исходного."
+  },
+  {
+    "file": "work-agent-ops-console-en-1440-live-2.png",
+    "state": {
+      "scrollY": 4150,
+      "steps": [
+        {
+          "scene": "overview",
+          "rect": {
+            "x": 128,
+            "y": -77.34375,
+            "width": 1184,
+            "height": 620,
+            "top": -77.34375,
+            "right": 1312,
+            "bottom": 542.65625,
+            "left": 128
+          },
+          "display": "flex",
+          "opacity": "0"
+        },
+        {
+          "scene": "workspace",
+          "rect": {
+            "x": 128,
+            "y": -77.34375,
+            "width": 1184,
+            "height": 620,
+            "top": -77.34375,
+            "right": 1312,
+            "bottom": 542.65625,
+            "left": 128
+          },
+          "display": "grid",
+          "opacity": "0"
+        },
+        {
+          "scene": "promise",
+          "rect": {
+            "x": 128,
+            "y": -77.34375,
+            "width": 1184,
+            "height": 620,
+            "top": -77.34375,
+            "right": 1312,
+            "bottom": 542.65625,
+            "left": 128
+          },
+          "display": "grid",
+          "opacity": "0"
+        },
+        {
+          "scene": "decision",
+          "rect": {
+            "x": 128,
+            "y": -77.34375,
+            "width": 1184,
+            "height": 620,
+            "top": -77.34375,
+            "right": 1312,
+            "bottom": 542.65625,
+            "left": 128
+          },
+          "display": "grid",
+          "opacity": "1"
+        }
+      ],
+      "stop": [
+        {
+          "rect": {
+            "x": 128,
+            "y": 294.921875,
+            "width": 454.390625,
+            "height": 235.1875,
+            "top": 294.921875,
+            "right": 582.390625,
+            "bottom": 530.109375,
+            "left": 128
+          },
+          "text": "HUMAN REVIEW"
+        }
+      ]
+    },
+    "reason": "Контроль закреплённой scroll-сцены: полный кадр при scrollY=0 не показывает её промежуточные состояния. Новый кадр другого состояния, не повтор исходного."
+  }
+]

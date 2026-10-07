@@ -1,0 +1,8 @@
+
+> site-portfolio@0.1.0 check:harmony
+> node scripts/harmony-check.mjs --base=http://127.0.0.1:4401 --widths=1440,360 /kit
+
+/kit @1440: плашек 19, тезисов 11, подписей и абзацев 46 · case-demo 281 слов, 10 кадров
+/kit @360: плашек 19, тезисов 11, подписей и абзацев 46 · case-demo 281 слов, 10 кадров
+
+✓ harmony-check: нарушений нет

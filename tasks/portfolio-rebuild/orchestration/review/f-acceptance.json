@@ -1,0 +1,111 @@
+{
+  "stage": "F",
+  "status": "accepted",
+  "acceptedBy": "coordinator",
+  "acceptedAt": "2026-10-04T14:06:10+03:00",
+  "ownerArtisticAcceptance": false,
+  "threadId": "01a105c4-d3b0-7900-ab7d-aeec6f12c4b1",
+  "hostId": "local",
+  "checkout": "C:/Users/kanar/.codex/worktrees/agent-ops-rebuild-f/Site-portfolio",
+  "branch": "codex/agent-ops-rebuild-f",
+  "ref": "cfba94c0d184e1063484961b1ac5f463d6981e27",
+  "originalPayload": "3d35b7c88b89f36c72eaff315dec4bfc5dc887a5",
+  "caseCommits": [
+    "3d35b7c88b89f36c72eaff315dec4bfc5dc887a5",
+    "cfba94c0d184e1063484961b1ac5f463d6981e27"
+  ],
+  "sharedDelta": "6e8f0e075916dec82a90831c7c2c78a38ea60e20",
+  "skipImportedCommonCommit": "c950cb20ec9557f6a656dd8ed825c18b40970c88",
+  "report": "tasks/portfolio-rebuild/agent-ops/report.md",
+  "retestReport": "tasks/portfolio-rebuild/agent-ops/retest-focus/report.md",
+  "previewOrigin": "http://127.0.0.1:4384",
+  "previewRoutes": [
+    "/preview/agent-ops-rebuild/en/",
+    "/preview/agent-ops-rebuild/ru/"
+  ],
+  "reviewed": {
+    "content": "Original EN/RU story, actual source provenance, source/fixture facts, checkpoint comparison, key desktop/mobile scenes and reports reviewed in initial review. Retest leaves copy, media and preview payload unchanged.",
+    "finalVisuals": [
+      "retest-focus/shots/actual-final-ru-1800-reduce.png",
+      "retest-focus/shots/native-ru-decision-full.png",
+      "retest-focus/shots/native-en-workspace-full.png"
+    ],
+    "repository": "Clean final checkout at cfba94c; own payload and closure commits inspected. Closure code-adjacent delta is only own case-map F-G-01 status.",
+    "rawEvidence": "Actual-case results-summary, actual-final, native-states, motion/static verification, registry/debug, integrity and film-reference reviewed. No new independent controller browser test asserted."
+  },
+  "verification": {
+    "exact": {
+      "transitions": 24,
+      "maxTopDeltaPx": 0.1875,
+      "failures": 0
+    },
+    "native": {
+      "transitions": 96,
+      "observations": 36,
+      "maxTopDeltaPx": 0.59375,
+      "tolerancePx": 3,
+      "failures": 0
+    },
+    "motion": {
+      "observations": 12,
+      "failures": 0
+    },
+    "static": {
+      "observations": 24,
+      "failures": 0
+    },
+    "registry": {
+      "observations": 30,
+      "maxReadingObservers": 1,
+      "nextAwayBackObservers": 0,
+      "failures": 0
+    },
+    "check": {
+      "files": 109,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 101
+    },
+    "build": {
+      "pages": 32
+    },
+    "css": {
+      "routes": 32,
+      "dead": 0
+    },
+    "harmony": {
+      "samples": 16,
+      "failures": 0
+    },
+    "frozen": {
+      "paths": 630,
+      "failed": 0
+    },
+    "source": {
+      "ref": "f4bb4bb451651593e423dde8ed709fb6bfa4ee00",
+      "files": 13,
+      "mismatches": 0,
+      "dirty": false
+    },
+    "media": {
+      "served": 30,
+      "failed": 0
+    },
+    "historicalTaskFiles": {
+      "files": 186,
+      "failed": 0
+    },
+    "dsMirrors": "both exact"
+  },
+  "closedRequests": [
+    "F-G-01"
+  ],
+  "limits": [
+    "Coordinator acceptance under the approved rebuild plan; no new owner artistic acceptance or new user study claimed.",
+    "Film adapter unchanged: accepted 14-observation G proof reused and hash verified, not rerun in actual F checkout.",
+    "First DEV attempt hit stale Vite dependency 504 and lacked runtime hook; invalid evidence retained. Own DEV restart and valid final registry run passed.",
+    "Four common metadata paths retain exact original F base blobs; all 630 expected paths checked positively against accepted clean-transfer catalog."
+  ],
+  "integration": "Import the two caseCommits only. G already owns sharedDelta; do not cherry-pick imported common duplicate.",
+  "readyFor": "G-final"
+}

@@ -1,0 +1,13 @@
+import sharp from 'sharp';
+import { readdir, writeFile, readFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+const dir='tasks/robert-review-2026-10-07/reports/07-build/dist/og';
+const files=(await readdir(dir)).filter(name=>name.endsWith('-onest.png')).sort();
+const inputs=[];
+for(let i=0;i<files.length;i++)inputs.push({input:await sharp(`${dir}/${files[i]}`).resize(600,315).png().toBuffer(),left:(i%2)*600,top:Math.floor(i/2)*315});
+await sharp({create:{width:1200,height:Math.ceil(files.length/2)*315,channels:4,background:'#fff'}}).composite(inputs).png().toFile('tasks/robert-review-2026-10-07/reports/07-og-sheet.png');
+const sha=file=>readFile(file).then(b=>createHash('sha256').update(b).digest('hex'));
+const source='public/media/linkedin/og/work-vet-clinic.png';
+if(await sha(source)!==await sha(`${dir}/work-vet-clinic-onest.png`))throw new Error('Promoted Vet source differs from final OG');
+await writeFile('tasks/robert-review-2026-10-07/reports/07-og-sheet.json',JSON.stringify({files,rawVetMatchesFinal:true},null,2));
+console.log(`Sheet: ${files.length} final EN/RU cards; promoted Vet matches final output.`);

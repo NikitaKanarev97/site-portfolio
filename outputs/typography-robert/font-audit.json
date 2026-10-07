@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-07",
+  "assets": [
+    {
+      "file": "public\\fonts\\onest-latin-wght-normal.woff2",
+      "bytes": 33760,
+      "sha256": "052df74533250c2e0ca0c4bdd32de594e107d99c1648e63820ef9c6142067828",
+      "matches_fontsource": true,
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100.0,
+          "max": 900.0
+        }
+      ],
+      "missing": []
+    },
+    {
+      "file": "public\\fonts\\onest-cyrillic-wght-normal.woff2",
+      "bytes": 15860,
+      "sha256": "68e5e01d6265bd68967746d4f5a9d18d0e6cbb5d15583c7082d6384ab1229b27",
+      "matches_fontsource": true,
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100.0,
+          "max": 900.0
+        }
+      ],
+      "missing": []
+    },
+    {
+      "file": "scripts\\og-fonts\\Onest-400.ttf",
+      "bytes": 98072,
+      "sha256": "caa43e42af518ceff347010f6711890ceb57b5358c44f264469f15db0162afe8",
+      "weight": 400,
+      "variable": false,
+      "family": "Onest",
+      "missing": []
+    },
+    {
+      "file": "scripts\\og-fonts\\Onest-500.ttf",
+      "bytes": 98360,
+      "sha256": "0cd615a3cb0720674d80ba0c5648645abe15c6af07f01dd5d95ed8b0dac54ecb",
+      "weight": 500,
+      "variable": false,
+      "family": "Onest",
+      "missing": []
+    },
+    {
+      "file": "scripts\\og-fonts\\Onest-800.ttf",
+      "bytes": 98200,
+      "sha256": "020248b36a69032a2ba06daa51ee164ae31c086face682f962c181774d1a093d",
+      "weight": 800,
+      "variable": false,
+      "family": "Onest",
+      "missing": []
+    }
+  ],
+  "licenses_match": true,
+  "tokens_byte_equal": true
+}

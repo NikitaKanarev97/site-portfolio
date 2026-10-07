@@ -1,0 +1,486 @@
+/**
+ * Тексты кейса Agent Ops Console — маршрут /work/agent-ops-console
+ *
+ * Композиция — ds/screens/case-agent-ops.md. Фактура собрана из проекта
+ * d:\Claude-projects\Agent-ops-console: outputs/{case-study,brief,
+ * interview_findings,mvp_scope}.md, prd.md, ia/production-list.md,
+ * ds/{foundation,components}.md, audit/{agent-qa,screens-parity}-2026-08-27.md,
+ * PROJECT-MAP.md и CLAUDE.md.
+ *
+ * Пять правил, которые этот файл обязан держать:
+ *
+ * 1. **Ни одной post-launch метрики.** Работа закончилась принятым
+ *    прототипом; реализация — на стороне клиента. Сокращение потерь,
+ *    изменение deflection, CSAT и времени обработки не заявляются ни как
+ *    результат, ни намёком (CASE-12, US-09).
+ * 2. **Три класса фактов не смешиваются.** Операционные факты заказчика
+ *    (61%, CSAT 4,4, $23 000, 1 770 диалогов, 24 человека, ~40 000 клиентов)
+ *    идут фактами. Проектные оценки (25,3 FTE, 4% обязательств, 71 карточка)
+ *    обязаны нести «by my estimate». Факты сборки проверяемы по репозиторию.
+ * 3. **NDA.** Заказчик, AI-вендор и участники исследования не названы.
+ *    Все имена, компании, счета и суммы на кадрах — мок-данные прототипа
+ *    (CASE-22, US-19).
+ * 4. **Агентский QA — не пользовательская валидация.** Он снимает то, что
+ *    снимается без людей, и ни одну гипотезу в validated не переводит.
+ *    Живой юзер-тест прототипа — отдельный факт и назван отдельно.
+ * 5. Заголовки — утверждения (CASE-14). Прочтение только заголовков и
+ *    подписей обязано давать связный пересказ логики.
+ *
+ * **Объём.** Первая редакция дала 2 727 слов при лимите ~2500 (`CASE-15`) —
+ * из них 762 в `CaseDecisions` против бюджета 520. Ужата вся страница, а не
+ * один блок: резать только решения значило бы получить четыре тезиса без
+ * обоснования рядом с полновесными соседними секциями. Бюджет по блокам —
+ * ds/screens/case-agent-ops.md §Бюджет слов.
+ *
+ * **09.09.2026: лимит превышен осознанно, ~2 614.** В `process` добавлен
+ * четвёртый абзац — стадия продуктовой доводки, пройденная после приёмки
+ * прототипа. Разбор размена — там же, ds/screens/case-agent-ops.md
+ * §Бюджет слов.
+ *
+ * **Числа дизайн-системы держатся кодом прототипа, не документом.**
+ * 92 примитива и 79 смысловых токенов — счёт по `src/tokens/{primitives,
+ * semantics}.css`, 17 TextStyles — по `typography.css`, 44 компонента и
+ * 372 варианта — `ds/components.md` §Итого. Строка «Итого 70» в шапке
+ * `ds/foundation.md` устарела: она относится к состоянию до доводки.
+ *
+ * Сквозные строки — в ../site.ts.
+ */
+
+const YEAR = '2026';
+const TEAM =
+  'Sole designer — research, requirements, IA, UX/UI, design system, prototype and testing';
+const RESEARCH =
+  'Interviews with the client and with current and future users; the prototype was tested and reworked';
+const DURATION = 'Up to one month, brief to a tested prototype accepted by the client';
+
+/**
+ * Адрес живого прототипа. Стоит константой с 2026-08-28: носителей два —
+ * пара `Prototype` в мете шапки и ссылка внутри `process`, и разойтись
+ * они не должны.
+ */
+const PROTOTYPE = 'https://agent-ops-console.vercel.app';
+
+const media = '/media/case-agent-ops';
+
+export const agentOpsConsole = {
+  slug: 'agent-ops-console',
+
+  meta: {
+    title: 'Agent Ops Console — oversight that earns an AI agent more autonomy',
+    description:
+      'An internal console for a support team supervising an AI agent: a queue ordered by money at risk, financial actions intercepted before they execute, versioned policies and a per-capability autonomy ladder.',
+  },
+
+  header: {
+    title: 'Agent Ops Console',
+    lead: 'An oversight console for a support team whose AI agent closed most contacts on its own — and occasionally promised money nobody had authorised.',
+    meta: [
+      { term: 'Client', value: 'NDA — B2B SaaS in subscription billing' },
+      { term: 'Product', value: 'Internal oversight console for an AI support agent' },
+      { term: 'Year', value: YEAR },
+      { term: 'Role', value: 'Product Designer' },
+      { term: 'Platform', value: 'Web — desktop-first, responsive to 360 px' },
+      { term: 'Evidence', value: 'Paid client · user-tested · accepted' },
+      { term: 'Prototype', value: 'Live, on invented data', href: PROTOTYPE },
+    ],
+    /** CASE-02: что решено и какой ценой, в шапке, одним абзацем. */
+    outcome:
+      'Outcome. Review stopped being a sample of conversations and became full coverage of consequences: every commitment the agent makes — a refund, a credit, a plan change, a promised date — reaches a person, and a repeating cause is fixed once at the source rather than fourteen times. What it cost: a human now stands in the path of every payout the company bought automation to avoid, and the queue is ordered by an estimate of money at risk.',
+    team: [
+      { term: 'Team', value: TEAM },
+      { term: 'Research', value: RESEARCH },
+      { term: 'Duration', value: DURATION },
+    ],
+    /** CASE-04. Вариант flagged, как у трёх опубликованных кейсов. */
+    rework: {
+      label: 'Under NDA, on invented data',
+      text: 'The client, the AI vendor and the people in the research are not named; the industry, the problem and the operating figures are cleared for publication. Everything on the screens is fixture data — the companies, people, invoices and amounts are invented and none belong to the client. The work ended with the prototype tested and accepted; the build was the client’s, so nothing here claims a shipped result.',
+    },
+  },
+
+  cover: {
+    /**
+     * Стопка от переднего кадра к дальнему: очередь → разбор диалога →
+     * подтверждение денег. Передней идёт очередь — единственный экран, на
+     * котором задача кейса читается до текста.
+     */
+    screens: [
+      `${media}/cover/review-queue.webp`,
+      `${media}/cover/run-detail.webp`,
+      `${media}/cover/action-approvals.webp`,
+    ],
+    alt: 'Agent Ops Console review queue: total exposure for the day, four repeating-cause clusters above ninety-one single conversations, with the run detail and the approval queue behind it',
+    caption:
+      'The product before the case explains it: $18,430 of exposure for one day, $0 of it reviewed, four repeating causes above ninety-one single conversations.',
+  },
+
+  context: {
+    heading:
+      'Every operating number said the rollout was working. None of them could see what the agent was promising.',
+    body: [
+      'The client runs subscription billing for around forty thousand business customers and had put a vendor’s AI agent on the first line of support. By the standard measures the rollout was a success: the agent closed 61% of contacts without a human and CSAT held at 4.4. The vendor dashboard reported both, daily.',
+      'In April the agent offered fourteen customers a refund under a promotion that had ended two years earlier. The mistake surfaced about nineteen days later, when those customers asked for the money. The company paid $23,000 — refusing after a written promise carried a larger legal and reputational cost than honouring it.',
+      'Nothing in those conversations looked wrong. The wording was polite, the customers were satisfied, and the deflection rate went up. The system counted how many decisions the agent made on its own and had no way to count what those decisions cost. That was the gap the console had to close, for an operations team of 24 people across three time zones that was not going to grow.',
+    ],
+  },
+
+  reframe: {
+    heading: 'Reading every message was arithmetically impossible. Reading every commitment was not.',
+    body: [
+      'Around 1,770 conversations closed automatically each day. Reading all of them would take roughly 177 hours a day — by my estimate 25.3 full-time reviewers, against a team of 24 who were also handling live escalations. Any design starting from “review more” was already fiction, and the reviewers knew it: thirty conversations get opened a day, and nobody claims they are the right thirty.',
+      'So I pulled a different object out of the traffic. A commitment is a statement with a financial or legal consequence — a refund, a service credit, a plan change, a promised date, a claim about what a plan covers. By my estimate those are about 4% of automated conversations: roughly 71 cards a day, about 2.4 hours of review, 0.3 FTE. The impossible requirement became a small one, and everything outside it became a sample ranked by expected cost.',
+      'The second move came out of April. Fourteen customers were not fourteen problems; they were one expired knowledge-base article. So the top level of the queue is a cause cluster rather than a conversation, and the output of a review is not a comment but a correction with a reason class and a route — which is what eventually becomes a policy.',
+    ],
+    statement:
+      'Review the consequences, not the sentences — and fix the cause once, not the conversation fourteen times.',
+    /**
+     * Кадр диапазона. Один снимок, две ширины в едином масштабе — съёмка
+     * `scripts/shoot-range-frames.mjs`, обоснование места и композита там же
+     * и в `audit/visual-density-2026-08-31.md`.
+     */
+    range: {
+      src: `${media}/range-review-queue.webp`,
+      alt: 'The review queue at 1640 px and at 390 px side by side: on the narrow width the navigation rail collapses into a menu button, the four exposure metrics stack into a column, and the four cause clusters become full-width cards',
+      caption:
+        'The same queue at 1640 px and at 390: the rail becomes a menu, the table becomes cards.',
+    },
+  },
+
+  process: {
+    heading: 'I designed what a human has to see before I designed where it would sit.',
+    body: [
+      'Research ran with the client and with the people who do this work — reviewers today, and the shift leads and policy owners who would inherit the product. Alongside it I audited the QA tool they already used, walked the existing paths for review, refund approval and policy change, and compared products in AI observability, evaluation and human-in-the-loop approval.',
+      'Two findings rewrote the brief. The route for one hard conversation ran QA tool → vendor panel → knowledge base → Confluence → Slack and took an hour and a half against a six-minute norm, so the evidence had to arrive inside the verdict card or the product had no reason to exist. And confident prose turned out to be active camouflage: reviewers cannot spot an unsupported claim by reading, and asked for it to be marked — while ruling out the engineering answer, since a confidence score gets the screen dismissed as noise rather than read.',
+      'Then the role model — Reviewer, Shift Lead, Policy Owner — the information architecture, the design system, and 18 of 35 scoped artboards assembled into a clickable prototype. Testing it with users added decisions the brief never had: a cluster needs its members visible and removable or reviewers stop trusting clusters at all, a wrong verdict needs a short window to take back before it poisons the reporting, and a reviewer needs to see what happened to their correction, or they quietly stop classifying causes at all.',
+      /**
+       * Стадия продуктовой доводки, пройденная уже после приёмки
+       * (`Agent-ops-console/outputs/case-study.md` §Продуктовая доводка,
+       * разборы `audit/product-polish/report-0*.md`). Абзац стоит последним
+       * в процессе, потому что и работа шла последней; в `failure` она не
+       * идёт намеренно — регрессия ховера найдена и закрыта внутри самой
+       * доводки, а не осталась дефектом сборки.
+       */
+      'After acceptance I ran one more pass, against a complaint that was honestly a matter of taste: the console looked competent and dull. Measuring it made the feeling a number — the hairlines dividing the zones carried 1.32:1 of contrast, the surfaces they divided 1.05–1.08, so shell, working field and blocks stood on one plane. I split the surfaces into three and pushed that through the shared components rather than screen by screen; the transfer then found what no single screen could — three carriers of the shell answered the cursor at 1.000:1 on twelve of them, a hover token having drifted into the colour of the panel beneath it.',
+    ],
+    prototype: {
+      href: PROTOTYPE,
+      label: 'Open the prototype',
+      note: 'The clickable console on invented data — nineteen screens across three roles. There is no backend; a reload starts a fresh shift.',
+    },
+    /**
+     * Клип взаимодействия — `CASE-20` в части «видео реального
+     * взаимодействия», этап 3 `audit/visual-density-2026-08-31.md`.
+     * Съёмка `scripts/shoot-clips.mjs`, там же разбор сценария.
+     *
+     * Место: сразу за ссылкой на прототип. Подпись обещает кликабельную
+     * консоль — ролик показывает её работающей, не требуя перехода; а
+     * окно отзыва вердикта в кадре названо абзацем выше третьим по счёту
+     * ('a wrong verdict needs a short window to take back').
+     */
+    clip: {
+      src: `${media}/clip-review-decision-poster.webp`,
+      video: `${media}/clip-review-decision`,
+      alt: 'Screen recording of one review: a queue row opens into the run, the reviewer marks it correct but risky, types the reason, sends the verdict, and the console offers eight minutes to take it back',
+      caption:
+        'One review end to end. The verdict does not leave without its sentence — and for eight minutes it can still be taken back.',
+    },
+    artifacts: [
+      {
+        src: `${media}/screen-index.webp`,
+        alt: 'Head of the prototype index — nineteen screens, forty-four design-system components — above the five screens of the Supervise group, each card rendering the screen itself rather than a picture of it',
+        caption:
+          'Nineteen screens on one mock data layer, and the index renders each of them live rather than as a picture of it.',
+      },
+      {
+        src: `${media}/storybook-matrix.webp`,
+        alt: 'Button catalogue across default, secondary, ghost and destructive variants in three sizes and five states',
+        caption:
+          'One component across variant, size and state. The matrix renders from the same React component the screens import.',
+      },
+    ],
+  },
+
+  failure: {
+    heading: 'Three defects were mine, and only one of them was visible on a screen.',
+    body: [
+      'The verdict chips printed their own shortcuts — Correct 1, Incorrect 2, Correct-but-risky 3 — and the handler had bound 2 to “correct, but risky” and 3 to “incorrect”. The cheatsheet printed a third arrangement. A reviewer who pressed the number written on the chip filed a different verdict on a conversation with money in it, and the screen showed the chip they had selected, so nothing looked wrong. The gap the two had drifted through was a specification that said “keys 1 2 3” without saying which key meant what.',
+      'The second was worse and had no interface at all. A 1.4-second visit with a real click delivered zero events to the test collector. The tracker flushed on unload through sendBeacon with a JSON content type; a beacon to another origin needs a preflight it never makes, so the browser dropped it silently. In the dashboard the loss did not look like an error — it looked like data. A live session would have produced confident numbers about nothing: an under-counted funnel, an empty first click, short sessions that never happened.',
+      'The third was a misreading of a requirement rather than a bug: seven of nineteen screens answered “access denied”, because a rule about which data a role may see — a region — had been built as a rule about which sections a role may open. It surfaced in the pass against the artboards, which examined 67 findings and closed all 67.',
+    ],
+  },
+
+  decisions: {
+    heading: 'Four decisions, and what each one cost.',
+    items: [
+      {
+        decision:
+          'The queue is ordered by money at risk, and a repeating cause sits above every single conversation.',
+        why: 'Arrival order tells a reviewer nothing, and a red flag tells them no more — what they need is “someone promised €420 here”, in figures. Reviewers had already built a shadow filter of their own, and it produced a smaller pile rather than an expensive one. Clusters go on top because one review of an expired article protects seventeen conversations at once.',
+        cost: 'Sorting by money buries the promises that carry none — a delivery date, a claim about what a plan covers — which reviewers put at roughly half the traffic. Those get a nominal exposure by type: an editorial judgement the product must keep defending, not a measurement.',
+        /**
+         * Кроп, а не экран целиком — находка `L2-5`, 2026-08-28. Артефакт
+         * решения стоит в колонке `0.6fr` (~453 px), и полный кадр 2000 px
+         * шёл там в масштабе 0,23: подпись называла сумму, которую нельзя
+         * было прочитать. Кроп даёт 0,53. Экран целиком открывается в зуме
+         * через `zoomSrc` — он никуда не делся.
+         *
+         * Подпись сокращена вместе с кадром: таблица участников в кроп не
+         * влезает, и обещать её в подписи больше нельзя. То, что участники
+         * остаются видимыми и удаляемыми, сказано в `cost` этого решения.
+         */
+        artifact: {
+          src: `${media}/cluster-detail-crop.webp`,
+          zoomSrc: `${media}/cluster-detail.webp`,
+          alt: 'Cluster header: seventeen runs citing one expired article, $4,200 of exposure, and the shared source marked expired in 2024',
+          caption:
+            'Seventeen conversations, one expired article, $4,200 — and the source that caused all of them, expired two years ago.',
+        },
+      },
+      {
+        decision:
+          'A gap in the trace is a missing record shown in four weights, never a guess about intent.',
+        why: 'An empty evidence panel supports two opposite conclusions: the agent consulted nothing and invented the answer, or the vendor never returned that step. The first is the heaviest defect the product can find; the second means move on. Under one blank state a reviewer cannot tell them apart.',
+        cost: 'Four visual weights instead of one empty state, each dependent on a vendor trace the product does not own. Where the vendor sends nothing, the console says so — an admission printed exactly where the reviewer wants an answer.',
+        artifact: {
+          src: `${media}/trace-gap-state.webp`,
+          alt: 'Four trace states side by side: no gap, light gap, medium gap and heavy gap, each naming what is missing and what it means',
+          caption:
+            'Four weights of the same absence. “The agent skipped a lookup” and “the vendor returned no record” are different findings and must not share a state.',
+        },
+      },
+      {
+        decision:
+          'A financial action is stopped before it executes, and the screen states what leaves the account and what the customer will read.',
+        why: 'April cost $23,000 because the promise was in writing by the time anyone found it, so the interception has to sit before the money moves. The approver needs the amount, the policy that applied, the billing answer, the customer’s history and — literally — the sentence the customer is about to receive. Rejecting takes a reason from the same four classes a correction uses, so refusing is also how the product learns.',
+        cost: 'A queue with a clock on it. Timers create their own pressure, and overdue items escalate into the shift handoff instead of quietly expiring. And a person now stands in the path of every payout — exactly the automation the client had bought.',
+        /** Кроп по тем же правилам, что у первого решения. `L2-5`. */
+        artifact: {
+          src: `${media}/consequence-preview-crop.webp`,
+          zoomSrc: `${media}/consequence-preview.webp`,
+          alt: 'Two panels under the approval card: what leaves the account — $340 to the customer’s card within five business days — and the sentence the customer will read',
+          caption:
+            'Both consequences on screen before the button is armed: what leaves the account, and the sentence the customer reads.',
+        },
+      },
+      {
+        decision:
+          'Autonomy is granted one capability at a time, on accumulated evidence, and withdrawn automatically.',
+        why: 'The client did not want another tool for saying no; they wanted the agent to safely do more over time. Splitting autonomy into capabilities — answer from the knowledge base, extend a trial, issue a credit, refund, change a plan — turns each promotion into a question with a numeric answer: runs, correction rate, severity-1 defects, a regression pass. Demotion needs no meeting: a severity-1 defect drops the level.',
+        cost: 'Seven ladders whose evidence has to be kept, and a product that will say “not yet” for weeks. A capability with too few runs cannot be promoted however confident the room feels — which is the point, and the part nobody enjoys.',
+        /**
+         * `layout: 'wide'` с 09.09.2026. После доводки баннер понижения идёт
+         * во всю ширину полосы контента и стал низким: кроп под боковой слот
+         * 453 px пришлось бы резать по правому краю вместе со ссылкой на
+         * прогон, а полоса пропорции 0.10 в нём всё равно нечитаема. Под
+         * текстом решения, в полной мере колонки, тот же кадр идёт масштабом
+         * 0.71. Координаты кропа — scripts/crop-artifacts.mjs.
+         */
+        artifact: {
+          layout: 'wide',
+          src: `${media}/autonomy-crop.webp`,
+          zoomSrc: `${media}/autonomy.webp`,
+          alt: 'Autonomy ladder banner: a severity-1 defect drops refund from L3 to L2 automatically',
+          caption: 'A severity-1 defect drops refund from L3 to L2 automatically. The fuse trips without a meeting.',
+        },
+      },
+    ],
+  },
+
+  system: {
+    heading: 'Forty-four components, built around the states where the risk actually lives.',
+    body: [
+      'The system carries 92 primitive and 79 semantic tokens, 17 text styles and 372 declared variants. Nothing in the semantic layer is a pinned value: every token is an alias, defined separately in each of two modes. Dark is the working mode — a console for a shift, not a report — and light is mandatory rather than decorative, because the auditor role prints. Surfaces are three planes rather than one, and a share against its threshold is three tokens of its own.',
+      'Storybook renders every declared combination from the same React component the screens import, so the catalogue cannot quietly become a second implementation.',
+      'The matrices below are the product under pressure rather than at rest: money that has to read as a figure and not as a colour, a metric that shows nothing rather than a stale number, an empty queue that separates “cleared” from “could not load”, a verdict that can be taken back, and a rollout step that is allowed to fail.',
+    ],
+    grid: [
+      {
+        src: `${media}/system-amount-figure.webp`,
+        alt: 'Amount figure at three severities and three sizes, the sum always in figures beside a severity bar',
+        component: 'AmountFigure',
+        states: 'high · med · low × lg · 2xl · 4xl',
+      },
+      {
+        src: `${media}/system-verdict-bar.webp`,
+        alt: 'Verdict bar in four modes: verdict, correct-but-risky with a note, ask shift lead, and the undo window',
+        component: 'VerdictBar',
+        states: 'verdict · risky · ask shift lead · undo',
+      },
+      {
+        src: `${media}/system-metric-row.webp`,
+        alt: 'Metric row with a money value, a count value, and both no-data states naming the staleness',
+        component: 'MetricRow',
+        states: 'value · no data × money · count',
+      },
+      {
+        src: `${media}/system-empty-state.webp`,
+        alt: 'Empty state for a cleared queue, for nothing crossing the threshold, and for a queue that could not be loaded',
+        component: 'EmptyState',
+        states: 'resolved · nothing to review · no data',
+      },
+      {
+        src: `${media}/system-autonomy-ladder.webp`,
+        alt: 'Autonomy ladder row in its current, ready-to-promote and locked states',
+        component: 'AutonomyLadder',
+        states: 'current · ready to promote · locked',
+      },
+      {
+        src: `${media}/system-trail-step.webp`,
+        alt: 'Trail step horizontal and vertical, in done, current, pending and failed states',
+        component: 'TrailStep',
+        states: 'done · current · pending · failed × horizontal · vertical',
+      },
+    ],
+  },
+
+  result: {
+    heading: 'What got solved, and what this case cannot claim.',
+    statements: [
+      {
+        term: 'Solved',
+        value:
+          'The reviewable object changed from a message to a commitment, which turns an impossible requirement — read 1,770 conversations — into a small one: every refund, credit, plan change and promised date reaches a person, the rest is sampled by expected cost. Repeating causes are reviewed once, corrections carry a reason class and a visible route, financial actions are intercepted before they execute, and a policy is a versioned object with an author, a diff and an approval chain.',
+      },
+      {
+        term: 'Sacrificed',
+        value:
+          'The automation the company paid for, exactly where it pays: every financial commitment now waits for a person. And ranking by cost buries the promises that carry none — roughly half the traffic — which are left to an editorial judgement the product has to keep defending.',
+      },
+      {
+        term: 'Verified',
+        value:
+          'The prototype — nineteen screens on twenty routes across three roles — was tested with users, reworked on the findings and accepted by the client. Before that a synthetic agent run failed six checks of forty-two and none after the fixes; it caught the verdict-key defect and the telemetry loss.',
+      },
+      {
+        term: 'What changed in how I work',
+        value:
+          'I stopped trusting a measurement layer I had not tried to break. The most expensive defect I shipped was invisible in the interface and looked like a result in the dashboard — and research that quietly under-reports is worse than no research, because it gets believed.',
+      },
+    ],
+    nda: 'The build was the client’s, so this case claims no post-launch outcome. The 25.3 FTE and the 4% commitment rate are my estimates from the client’s figures, not measurements, and the agent run measures the prototype, not the design. Nothing here was measured. The number that would decide it: how many capabilities earned a higher autonomy level over a quarter — oversight that never ends in more autonomy is a cost the company simply took on.',
+  },
+
+  /**
+   * Переход в конце кейса (`CASE-16`). Надписи и адреса здесь нет: строка
+   * сквозная (`site.nextCase`), а следующий кейс считается по реестру
+   * `src/copy/cases/index.ts` с замыканием на первый. Прежняя пара
+   * `cta` + `href` вела в контакт — роль, которую требование отдавало
+   * контакту только «в версии 1», до появления второго кейса. Кейсов
+   * четыре, `ContactBlock` стоит сразу за этим блоком на всех маршрутах
+   * (`IA-06`), и связь от правки не теряется. Правка 2026-08-28, `L2-3`.
+   */
+  outro: {
+    heading: 'Oversight is only worth building if it ends in more autonomy, not less.',
+    lead: 'Every screen above either shows a person what the agent did on their behalf, stops something expensive before it leaves, or accumulates the evidence for letting the agent do it alone.',
+  },
+};
+
+/* F · ordered checkpoint transfer */
+/** Preview only. Facts: cases/agent-ops-console.ts. Screens: real prototype, fixture data. */
+import { defineStory, type LegacyKitStory } from './story';
+const pilot = '/media/pilot-agent-ops';
+const agentOpsMaterial = {
+  theme: 'agent', plate: 'dark',
+  cover: {
+    title: 'Agent Ops',
+    outcome: 'Between a promise and a payout: a person.',
+    media: {
+      variant: 'proof', layout: 'interlock', gate: 'Human review', eyebrow: 'AI support · Billing · Human oversight',
+      caption: 'The message and the payout, side by side',
+      shot: { src: `${pilot}/consequences-1440.webp`, srcNarrow: `${pilot}/consequences-390.webp`, alt: 'Two real prototype panels: the $340 payout and the exact message sent on approval', device: 'panel' },
+      panels: [
+        { src: `${pilot}/message-1440.webp`, srcNarrow: `${pilot}/message-390.webp`, alt: 'The complete customer message that approval will send', device: 'panel' },
+        { src: `${pilot}/payout-1440.webp`, srcNarrow: `${pilot}/payout-390.webp`, alt: 'The complete $340 payout preview, before approval', device: 'panel' },
+      ],
+    },
+  },
+  facts: [
+    { term: 'Client', value: 'NDA · B2B SaaS, billing' },
+    { term: 'Year', value: '2026' },
+    { term: 'Role', value: 'Sole product designer' },
+    { term: 'Platform', value: 'Web, desktop-first' },
+    { term: 'Evidence', value: 'Paid client · user-tested, accepted' },
+    { term: 'Prototype', value: 'Live, invented data', href: PROTOTYPE },
+  ],
+  challenge: {
+    label: 'Challenge', thesis: 'Read the promises, not the chats',
+    body: 'The agent closed 61% of contacts alone. Then it promised fourteen refunds under an expired promotion: $23,000. The team of 24 would not grow. Reviewing every conversation was impossible.',
+    numbers: [
+      { value: '1,770', caption: 'agent-closed chats per day' },
+      { value: '71', caption: 'commitments per day · estimate' },
+      { value: '2.4 h', caption: 'daily review time · estimate' },
+    ],
+  },
+  estimateNote: 'Design estimates: 177 hours of daily chat review, requiring 25 reviewers, versus 2.4 hours to review commitments. These are not measured savings.',
+  steps: {
+    label: 'Cause → promise → decision', variant: 'focus', composition: 'checkpoint', gate: 'Human review',
+    items: [
+      {
+        label: 'Find the cause', thesis: 'Seventeen chats. One cause.',
+        body: 'I put repeating causes above individual chats and ranked them by financial exposure. One expired article becomes one correction at the source, rather than seventeen separate verdicts.',
+        layout: 'wide', scene: 'overview', caption: 'Causes ranked by money at risk',
+        shot: { src: `${pilot}/clusters-framed-1440.webp`, srcNarrow: `${pilot}/clusters-framed-390.webp`, alt: 'Four complete cause clusters: expired promotion, extended trial, unsupported SLA and legacy price', device: 'panel' },
+      },
+      {
+        label: 'Check the promise', thesis: 'The promise and the proof',
+        body: 'A hard case once crossed five tools. I brought the conversation, trace and verdict together; the transcript flags the unsupported claim.',
+        layout: 'wide', scene: 'workspace', caption: 'Conversation, trace and verdict in one workspace',
+        shot: { src: `${pilot}/run-context.webp`, srcNarrow: `${pilot}/transcript-framed-390.webp`, alt: 'Run workspace with conversation, evidence and verdict; narrow view shows its complete transcript panel', device: 'panel' },
+      },
+      {
+        label: 'Read the promise', thesis: 'The promise lacks proof',
+        body: 'The conversation stays intact. An unsupported refund claim is flagged at the exact message, so the reviewer sees what the customer was told.',
+        layout: 'wide', scene: 'promise', caption: 'The full conversation, with the unsupported promise flagged', desktopOnly: true,
+        shot: { src: `${pilot}/transcript-framed-1440.webp`, srcNarrow: `${pilot}/transcript-framed-390.webp`, alt: 'Six real prototype turns, with an unsupported refund promise explicitly flagged', device: 'panel' },
+      },
+      {
+        label: 'Approve the consequence', thesis: 'Money waits for a person',
+        body: 'A refund waits for a person. The amount, policy and customer message are visible before approval. Rejecting remains available even when evidence is incomplete.',
+        layout: 'split', scene: 'decision', caption: 'The $340 refund, waiting for approval',
+        shot: { src: `${pilot}/approval-card-1440.webp`, srcNarrow: `${pilot}/approval-card-390.webp`, alt: 'Complete $340 refund approval card: customer, reason, policy, billing, history and both actions', device: 'panel' },
+      },
+    ],
+  },
+  details: {
+    label: 'A closer look', thesis: 'A missing record is part of the evidence',
+    body: 'An empty trace can mean an invented answer or missing vendor data. I made the gap explicit, so the reviewer can distinguish a policy match from the article the agent never consulted.',
+    callout: {
+      src: `${pilot}/evidence-1440.webp`, srcNarrow: `${pilot}/evidence-390.webp`,
+      alt: 'Complete evidence panel: intent, policy match, missing article warning, billing call and written commitment',
+      marks: [
+        { x: 98, y: 28, text: 'A policy match is recorded' },
+        { x: 98, y: 46, text: 'The skipped article is named' },
+        { x: 98, y: 76, text: 'The billing call carries the amount' },
+        { x: 98, y: 89, text: 'The promise is now in writing' },
+      ],
+      caption: 'Why the agent answered: the evidence panel',
+    },
+  },
+  result: {
+    label: 'Outcome', thesis: 'Tested, reworked and accepted',
+    body: 'User testing informed the revisions. The client accepted the prototype: nineteen screens across three roles. Implementation remained with the client.',
+    cards: [],
+  },
+  closing: [
+    { term: 'The trade-off', value: 'Every payout now waits for a person. Oversight gives control back, but sacrifices automation at the point where money moves.' },
+    { term: 'Scope', value: 'Research, IA, UX/UI, the design system and a tested prototype. Brief to acceptance: up to one month.' },
+  ],
+  prototype: { label: 'Open the live prototype, on invented data', href: PROTOTYPE },
+} satisfies LegacyKitStory;
+
+/** The accepted composition, expressed as ordered modules without a new art pass. */
+export const agentOpsStory = defineStory({
+  theme: agentOpsMaterial.theme, plate: agentOpsMaterial.plate, cover: agentOpsMaterial.cover, facts: agentOpsMaterial.facts,
+  blocks: [
+    { id: 'review-load', type: 'numbers', motion: 'count', evidenceId: 'agent-estimates',
+      payload: { thesis: agentOpsMaterial.challenge, items: agentOpsMaterial.challenge.numbers, note: agentOpsMaterial.estimateNote } },
+    { id: 'human-checkpoint', type: 'steps', motion: 'focus', evidenceId: 'agent-panels', mediaId: 'agent-workspace', payload: agentOpsMaterial.steps },
+    { id: 'missing-evidence', type: 'detail', evidenceId: 'agent-panels', mediaId: 'agent-evidence',
+      payload: { thesis: agentOpsMaterial.details, callout: agentOpsMaterial.details.callout } },
+    { id: 'accepted-prototype', type: 'outcome', motion: 'static', evidenceId: 'agent-acceptance',
+      payload: { presentation: 'editorial', cards: [{ value: '19', caption: 'screens · accepted prototype' }, { value: '3', caption: 'roles · one oversight system' }], result: agentOpsMaterial.result,
+        tradeoff: { label: agentOpsMaterial.closing[0].term, text: agentOpsMaterial.closing[0].value },
+        evidence: { label: agentOpsMaterial.closing[1].term, text: agentOpsMaterial.closing[1].value } } },
+  ],
+  prototype: agentOpsMaterial.prototype,
+});

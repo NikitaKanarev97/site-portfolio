@@ -1,0 +1,19 @@
+
+> site-portfolio@0.1.0 check:content
+> node scripts/check-public-content.mjs
+
+src/copy/common/partner-portal.ts:93: independent reconstruction
+  ginal work was delivered at DSSL. These frames show an independent reconstruction where source identity and exception handling can be inspected.
+{
+  "result": "FAIL",
+  "counts": {
+    "copy": 35,
+    "cv": 2,
+    "public": 156,
+    "builtHtml": 183
+  },
+  "findings": 2,
+  "build": "dist"
+}
+dist/preview/common/en/partner-portal/index.html:1: independent reconstruction
+  ginal work was delivered at DSSL. These frames show an independent reconstruction where source identity and exception handling can be inspected. Trade-off The buyer resolv

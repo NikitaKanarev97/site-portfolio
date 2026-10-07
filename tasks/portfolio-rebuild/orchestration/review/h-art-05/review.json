@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "iteration": "H-art-05",
+  "attempt": 2,
+  "verdict": "changes_requested",
+  "artisticAccepted": false,
+  "question": "Да, классно, круто, мощно, на уровне референсов?",
+  "answer": "Нет уверенного Да; требуется композиционная доводка системного листа и согласованное появление материала.",
+  "sourceRef": "297ddd3e1a8ccdea56a8a33e4d25865f03771e07",
+  "evidenceRef": "88861bf8716e4d0a06c796883ef6bb7aace310f5",
+  "executorThreadId": "01a10409-651d-7731-bb38-28194724895e",
+  "hostId": "local",
+  "controllerThreadId": "01a103b5-7549-7211-8683-f14b03d9beef",
+  "checkout": "C:/Users/kanar/.codex/worktrees/portfolio-art-direction-h/Site-portfolio",
+  "branch": "codex/portfolio-art-direction-h-2026-10-04",
+  "preview": "http://127.0.0.1:4398/",
+  "technicalCheckpointAccepted": "574110a5b9d33760c82e6d461ade600c409f807c",
+  "resolvedPriorFindings": [
+    "H-ART-01",
+    "H-ART-02",
+    "H-ART-03"
+  ],
+  "openFindings": [
+    {
+      "id": "H-ART-04",
+      "kind": "art_composition",
+      "scene": "Partner Portal #domain-system",
+      "mobile": {
+        "width": 390,
+        "height": 844,
+        "sectionHeight": 7254,
+        "firstNativeImageOffset": 2397
+      },
+      "evidence": [
+        "shots/live-en-portal-system-middle.png",
+        "shots/live-en-portal-system-lower.png",
+        "shots/live-ru-portal-system-mobile-foundation.png"
+      ],
+      "reference": "research/portfolio-rebuild-2026-10-03/references/ha-component-library.png",
+      "request": "Compose real component families/state comparisons without tall empty columns; compact foundation and mobile entry; preserve whole readable native UI."
+    },
+    {
+      "id": "H-ART-05",
+      "kind": "motion_polish",
+      "scene": "Home entrances",
+      "film": "http://127.0.0.1:4396/h-art-05/recordings/en-1440-home.webm",
+      "timecodes": [
+        "2.23",
+        "2.80",
+        "6.74",
+        "7.20",
+        "8.49",
+        "9.00",
+        "10.61",
+        "11.20"
+      ],
+      "request": "Synchronize content/frame entrances; avoid temporarily empty visible white slabs during quick-link and fast reading; preserve Agent semantic sequence.",
+      "limitation": "Temporary animation state; not claimed as a failed image load or persistent blank."
+    }
+  ],
+  "verificationScope": {
+    "liveDesktop": "EN Home + five cases, selected scenes/finish; Agent forward/reverse; Learn programme expansion",
+    "liveMobile": "RU 390x844 Home + five entrances; selected Agent/Portal/Learn/Vet/Pawly sections",
+    "nativeContinuousPlayback": [
+      "en-1440-home"
+    ],
+    "nativeContactSheets": 12,
+    "all24RecordingsWatchedContinuously": false,
+    "broadMatrixRerun": false,
+    "temporaryBrowserOverridesReset": true
+  },
+  "next": "Continue same G from evidence HEAD; preserve accepted technical fixes; fresh current evidence and independent review required.",
+  "reviewedAt": "2026-10-04T23:33:01.1420350+03:00"
+}

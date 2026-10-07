@@ -1,0 +1,46 @@
+{
+  "stage": "G-final",
+  "status": "changes-requested",
+  "reviewedAt": "2026-10-04T12:34:01.000Z",
+  "codeRef": "93b9f7f5a260636b878fd0d67f863c675e410065",
+  "metadataRef": "9dd53859d156fc13b4302d98afc95a3b26e91cd2",
+  "preview": "http://127.0.0.1:4391",
+  "checkout": "D:/Claude-projects/Site-portfolio/tmp/portfolio-final-93b9f7f",
+  "reviewed": [
+    "Final report and md/json handoff; code delta and EN/RU registries/work route; raw site matrix and targeted findings retest; native motion/controls; film playback/lifecycle/clean launch; exact clean reproduction and mirrors.",
+    "Five final desktop Home covers; EN1440/RU390 full Home composition; RU1440/390 Vet role flow; actual transparent native Portal red-outline capture."
+  ],
+  "reportedChecks": {
+    "siteProfiles": 336,
+    "initialHarnessFindings": 26,
+    "findingsRetest": 30,
+    "remaining": 0,
+    "finalDelta": 51,
+    "harmony": 112,
+    "focusSwitches": 96,
+    "controlSwitches": 48,
+    "filmProfiles": 6,
+    "filmLifecycleGeometry": 6,
+    "cleanLaunch": 28,
+    "cleanNoJsFilm": 2,
+    "canonicalFiles": 1270
+  },
+  "controllerChecks": {
+    "cleanHEAD": "93b9f7f5a260636b878fd0d67f863c675e410065",
+    "cleanStatus": true,
+    "bothMirrorsExact": true,
+    "metadataOutsideIntegration": false
+  },
+  "findings": [
+    {
+      "id": "G-final-F01",
+      "priority": 2,
+      "file": "src/copy/featured-work.ts",
+      "issue": "Portal Home promises source-row persistence into the completed order, contradicting accepted B evidence. RU: «Исходная строка сохраняется от импорта до заказа.» EN: «Keep the source row from import to order.»",
+      "evidence": "tasks/portfolio-rebuild/partner-portal/report.md:30 and evidence.md portal-order: completed order stores SKU/quantity only; source text and row number are absent; specification/cart rows cleared. No post-order snapshot claim allowed.",
+      "requested": "Change only EN/RU Home promise to product matching before order placement; preserve B story/media and boundaries. Narrow Home/layout/build verification and new frozen exact ref/clean preview required; reuse unaffected site-wide proofs with explicit identity."
+    }
+  ],
+  "ownerArtisticAcceptance": false,
+  "acceptancePending": true
+}

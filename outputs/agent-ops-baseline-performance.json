@@ -1,0 +1,80 @@
+[
+  {
+    "width": 1440,
+    "frameMedian": 16.700000000186265,
+    "frameP95": 17,
+    "framesOver34ms": 0,
+    "costs": {
+      "TaskDuration": 0.146022,
+      "ScriptDuration": 0.060416,
+      "LayoutDuration": 0.0011029999999999998,
+      "RecalcStyleDuration": 0.0016120000000000006
+    },
+    "geometry": [
+      {
+        "height": 750,
+        "width": 1280
+      },
+      {
+        "height": 1312,
+        "width": 1280
+      },
+      {
+        "height": 645,
+        "width": 1280
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "frameMedian": 16.700000000186265,
+    "frameP95": 17,
+    "framesOver34ms": 0,
+    "costs": {
+      "TaskDuration": 0.14446099999999998,
+      "ScriptDuration": 0.05727999999999999,
+      "LayoutDuration": 0.0012749999999999984,
+      "RecalcStyleDuration": 0.001562
+    },
+    "geometry": [
+      {
+        "height": 670,
+        "width": 864
+      },
+      {
+        "height": 1029,
+        "width": 864
+      },
+      {
+        "height": 892,
+        "width": 864
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "frameMedian": 16.699999999254942,
+    "frameP95": 16.90000000037253,
+    "framesOver34ms": 0,
+    "costs": {
+      "TaskDuration": 0.14328100000000002,
+      "ScriptDuration": 0.061002,
+      "LayoutDuration": 0.001236000000000001,
+      "RecalcStyleDuration": 0.0015829999999999993
+    },
+    "geometry": [
+      {
+        "height": 751,
+        "width": 342
+      },
+      {
+        "height": 979,
+        "width": 342
+      },
+      {
+        "height": 841,
+        "width": 342
+      }
+    ]
+  }
+]

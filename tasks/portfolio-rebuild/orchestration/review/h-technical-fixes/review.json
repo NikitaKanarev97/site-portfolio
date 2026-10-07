@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "stage": "H-technical-fixes",
+  "status": "accepted",
+  "artisticAccepted": false,
+  "threadId": "01a10832-8a18-72d1-8d57-2cbe1fca8702",
+  "hostId": "local",
+  "checkout": "C:/Users/kanar/.codex/worktrees/portfolio-art-direction-h/Site-portfolio",
+  "branch": "codex/portfolio-art-direction-h-2026-10-04",
+  "baseRef": "7d76b9114f0b30a4efe6d30a84bdc8c746fcb02b",
+  "sourceRef": "574110a5b9d33760c82e6d461ade600c409f807c",
+  "evidenceRef": "16ff1695388efecbf9b022227391159b7eb0b292",
+  "preview": "http://127.0.0.1:4397/ru/",
+  "handoff": "C:/Users/kanar/.codex/worktrees/portfolio-art-direction-h/Site-portfolio/tasks/technical-fixes/handoff.md",
+  "authorization": "D:/Claude-projects/Site-portfolio/tasks/portfolio-rebuild/orchestration/owner-technical-feedback/authorization.json",
+  "controllerEvidenceFolder": "D:/Claude-projects/Site-portfolio/tasks/portfolio-rebuild/orchestration/review/h-technical-fixes/shots",
+  "executorChecks": {
+    "responsiveProfiles": 60,
+    "motionProfiles": 16,
+    "lifecycleRecords": 30,
+    "navigationRecords": 21,
+    "allPassed": true,
+    "errorRecords": 0,
+    "buildPages": 36,
+    "checkErrors": 0,
+    "checkWarnings": 0,
+    "existingHints": 262,
+    "cssDeadRules": 0,
+    "harmonyViolations": 0
+  },
+  "mirrors": {
+    "motion": "ADF5F2ACF5C7BBD8F9E1278639885B5D3AB2107DAAEB5FAB29AD9843ACC00F30",
+    "tokens": "47F89E88A2796834E9EF45D4C473A0411D7EC58E9FD366DD30D77ADC9611B832",
+    "byteEqual": true
+  },
+  "independentReview": [
+    "Read owner instruction and exact technical handoff; compared source delta against frozen H4, confirmed source/evidence ancestry and clean checkout at handoff.",
+    "Inspected responsive/motion/lifecycle/navigation JSON results, logs and matching DS/source hashes.",
+    "Live RU Home at 1280x720: descriptive Agent Ops example and clear five-case entry; clicked example link and confirmed actual Agent case navigation.",
+    "Live Agent at 1280x720 uses natural short-window reading fallback; text and frames remain distinct. Normal pinned motion assessed through exact 16-profile forward/reverse evidence and saved full panel images, not claimed as live at this viewport.",
+    "Live RU Portal: number 1/2 repeated in explanation rows; matching pins remain outside native UI text.",
+    "Live RU Pawly: four meaningful native materials and arrows; two rapid next actions reached 3/4, another reached 4/4, previous moved back to 3/4 and changed track offset.",
+    "Viewed native Learn assessment and phone landing plus RU390 Learn section evidence: full heading, whole rules/completion actions, consistent original colored fields; no cut following heading.",
+    "Viewed current Agent Ops Next Case evidence: full ascenders/descenders and vertical field."
+  ],
+  "limitations": [
+    "Technical checkpoint only. H4 films predate these fixes; executor is already generating updated art evidence on the corrected source. No positive artistic verdict recorded.",
+    "Controller live viewport was 1280x720. Tablet/mobile and normal focus-mode coverage are from the executor's exact saved checks and inspected images."
+  ],
+  "resume": {
+    "threadId": "01a10409-651d-7731-bb38-28194724895e",
+    "hostId": "local",
+    "turnId": "01a10868-8e52-7aa2-93f2-a97387e5143c",
+    "dispatchedBy": "owner-created technical executor",
+    "controllerDuplicateDispatch": false,
+    "observedCursor": "03cdbdfd-11fa-455d-86df-5203d2cdba69:41",
+    "executorConfirmedCleanBase": true,
+    "originalArtObjectiveRemainsOpen": true
+  },
+  "acceptedAt": "2026-10-04T22:40:36.9839529+03:00",
+  "liveScreenshotHashes": [
+    {
+      "Path": "D:\\Claude-projects\\Site-portfolio\\tasks\\portfolio-rebuild\\orchestration\\review\\h-technical-fixes\\shots\\live-ru-agent-state.png",
+      "Hash": "00C5BD40D529F00FF628C24DB455DF77B5E672749E784ECE3921B9A2CA556EE1"
+    },
+    {
+      "Path": "D:\\Claude-projects\\Site-portfolio\\tasks\\portfolio-rebuild\\orchestration\\review\\h-technical-fixes\\shots\\live-ru-home.png",
+      "Hash": "D922CB752ACF0E0D9ACA684432DFB5148F404CCC831F4A9DDD294C077AFA707B"
+    },
+    {
+      "Path": "D:\\Claude-projects\\Site-portfolio\\tasks\\portfolio-rebuild\\orchestration\\review\\h-technical-fixes\\shots\\live-ru-pawly-back.png",
+      "Hash": "151FEC3910B628862F93A915B1633C63EE9BC52293A81A145149358A5251605E"
+    },
+    {
+      "Path": "D:\\Claude-projects\\Site-portfolio\\tasks\\portfolio-rebuild\\orchestration\\review\\h-technical-fixes\\shots\\live-ru-pawly-forward.png",
+      "Hash": "5BDFB7EF24F348EE8F4E07ED4A4FF7EF6CA8F14E426A56A2832B0A67FD47A272"
+    },
+    {
+      "Path": "D:\\Claude-projects\\Site-portfolio\\tasks\\portfolio-rebuild\\orchestration\\review\\h-technical-fixes\\shots\\live-ru-portal-callouts.png",
+      "Hash": "5A1DD99A37AC6ED3B6CD27644D59BF222C3CD4F09A681368CEE66D1963CFEB52"
+    }
+  ]
+}

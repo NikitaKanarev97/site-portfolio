@@ -1,0 +1,153 @@
+ M .claude/skills/ru-cover-letter/references/evidence-ru.md
+ M .claude/skills/ru-cover-letter/references/patterns-ru.md
+ M .gitignore
+ M CLAUDE.md
+ M HHH/pipeline.md
+ M PLAN-CHATS.md
+ M ds/CONTRACT.md
+ M ds/components.md
+ M ds/foundation.md
+ M ds/motion-concept.md
+ M ds/motion.js
+ M ds/patterns.md
+ M ds/tokens.css
+ M linkedin/after-state.md
+ M package.json
+ M scripts/check-scoped-css.cjs
+ M src/components/Diagram.astro
+ M src/components/MetaList.astro
+ M src/pages/kit.astro
+ M src/pages/robots.txt.ts
+ M src/scripts/animations.js
+ M src/scripts/motion.js
+ M src/styles/global.css
+ M src/styles/tokens.css
+ M tsconfig.json
+?? .playwright-mcp/
+?? HHH/letters/2026-09-11-pixel-plus.md
+?? ds/screens/case.md
+?? outputs/agent-ops-art-before-after.jpg
+?? outputs/agent-ops-art-build.log
+?? outputs/agent-ops-art-check.log
+?? outputs/agent-ops-art-cover-frame.jpg
+?? outputs/agent-ops-art-cover.mp4
+?? outputs/agent-ops-art-css.log
+?? outputs/agent-ops-art-dev-error.log
+?? outputs/agent-ops-art-dev.log
+?? outputs/agent-ops-art-direction-review.md
+?? outputs/agent-ops-art-focus-review.jpg
+?? outputs/agent-ops-art-focus.mp4
+?? outputs/agent-ops-art-harmony.log
+?? outputs/agent-ops-art-lifecycle.json
+?? outputs/agent-ops-art-performance-summary.json
+?? outputs/agent-ops-art-performance.log
+?? outputs/agent-ops-art-production.json
+?? outputs/agent-ops-art-reading-position.json
+?? outputs/agent-ops-art-video.log
+?? outputs/agent-ops-art-visual.log
+?? outputs/agent-ops-baseline-performance.json
+?? outputs/agent-ops-case-handoff.md
+?? outputs/agent-ops-checkpoint-before-after.jpg
+?? outputs/agent-ops-checkpoint-build.log
+?? outputs/agent-ops-checkpoint-check.log
+?? outputs/agent-ops-checkpoint-controls.json
+?? outputs/agent-ops-checkpoint-controls.log
+?? outputs/agent-ops-checkpoint-cover.mp4
+?? outputs/agent-ops-checkpoint-css.log
+?? outputs/agent-ops-checkpoint-export.log
+?? outputs/agent-ops-checkpoint-focus.mp4
+?? outputs/agent-ops-checkpoint-harmony.log
+?? outputs/agent-ops-checkpoint-production.json
+?? outputs/agent-ops-checkpoint-production.log
+?? outputs/agent-ops-checkpoint-review.md
+?? outputs/agent-ops-checkpoint-scene-sheet.jpg
+?? outputs/agent-ops-checkpoint-video-sheet.jpg
+?? outputs/agent-ops-checkpoint-video.log
+?? outputs/agent-ops-checkpoint-visual.log
+?? outputs/agent-ops-next-link-build.log
+?? outputs/agent-ops-next-link-check.log
+?? outputs/agent-ops-next-link-controls.json
+?? outputs/agent-ops-next-link-controls.log
+?? outputs/agent-ops-next-link-css.log
+?? outputs/agent-ops-next-link-only.png
+?? outputs/agent-ops-padding-before-after.jpg
+?? outputs/agent-ops-stage1-build.log
+?? outputs/agent-ops-stage1-check.log
+?? outputs/agent-ops-stage1-css.log
+?? outputs/agent-ops-stage1-harmony.log
+?? outputs/agent-ops-stage1-visual.log
+?? outputs/agent-ops-stage2-build.log
+?? outputs/agent-ops-stage2-check.log
+?? outputs/agent-ops-stage2-css.log
+?? outputs/agent-ops-stage2-draw.json
+?? outputs/agent-ops-stage2-harmony.log
+?? outputs/agent-ops-stage2-kit-sticky.json
+?? outputs/agent-ops-stage2-lifecycle.json
+?? outputs/agent-ops-stage2-performance.json
+?? outputs/agent-ops-stage2-production.json
+?? outputs/agent-ops-stage2-regressions.log
+?? outputs/agent-ops-stage2-resize.json
+?? outputs/agent-ops-stage2-review.md
+?? outputs/agent-ops-stage2-visual.log
+?? outputs/agent-ops-stage3-baseline-build.log
+?? outputs/agent-ops-stage3-build.log
+?? outputs/agent-ops-stage3-check.log
+?? outputs/agent-ops-stage3-controls.json
+?? outputs/agent-ops-stage3-controls.log
+?? outputs/agent-ops-stage3-css.log
+?? outputs/agent-ops-stage3-harmony.log
+?? outputs/agent-ops-stage3-lifecycle.json
+?? outputs/agent-ops-stage3-lifecycle.log
+?? outputs/agent-ops-stage3-production.json
+?? outputs/agent-ops-stage3-production.log
+?? outputs/agent-ops-stage3-resize.json
+?? outputs/agent-ops-stage3-resize.log
+?? outputs/agent-ops-stage3-review.md
+?? outputs/agent-ops-stage3-showcase.log
+?? outputs/agent-ops-stage3-static.log
+?? outputs/agent-ops-stage3-visual.log
+?? outputs/dounar-motion-sheet.jpg
+?? outputs/garri-motion-sheet.jpg
+?? outputs/ha-motion-sheet.jpg
+?? outputs/pilot-panels-clean-1440.png
+?? outputs/pilot-panels-clean-390.png
+?? outputs/tubik-motion-sheet.jpg
+?? public/media/pilot-agent-ops/
+?? research/agilefluent-due-diligence/
+?? research/nwork-due-diligence/
+?? research/portfolio-benchmark/
+?? research/portfolio-rebuild-2026-10-03/
+?? scripts/build-pilot-media.mjs
+?? scripts/export-pilot-checkpoint.mjs
+?? scripts/harmony-check.mjs
+?? scripts/measure-pilot-motion.mjs
+?? scripts/measure-pilot-production.mjs
+?? scripts/record-pilot-checkpoint.mjs
+?? scripts/record-pilot-motion.mjs
+?? scripts/record-pilot-scroll.mjs
+?? scripts/shoot-pilot-cover-panels.mjs
+?? scripts/shoot-pilot-panel-insets.mjs
+?? scripts/shoot-pilot-proof.mjs
+?? scripts/verify-agent-ops-pilot.mjs
+?? scripts/verify-case-controls.mjs
+?? scripts/verify-case-resize.mjs
+?? scripts/verify-motion-lifecycle.mjs
+?? scripts/verify-pilot-art-direction.mjs
+?? scripts/verify-pilot-motion.mjs
+?? src/components/CaseArtifact.astro
+?? src/components/CaseCallout.astro
+?? src/components/CaseCarousel.astro
+?? src/components/CaseCover.astro
+?? src/components/CaseImpact.astro
+?? src/components/CaseNext.astro
+?? src/components/CaseNumbers.astro
+?? src/components/CasePlate.astro
+?? src/components/CaseScreen.astro
+?? src/components/CaseSheet.astro
+?? src/components/CaseShot.astro
+?? src/components/CaseSteps.astro
+?? src/components/CaseThesis.astro
+?? src/copy/cases/story.ts
+?? src/copy/kit-case.ts
+?? src/copy/pilot/
+?? src/pages/preview/

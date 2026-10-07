@@ -1,0 +1,120 @@
+
+> site-portfolio@0.1.0 build
+> astro build --config tasks/robert-review-2026-10-07/reports/07-astro.config.mjs
+
+12:40:21 [content] Syncing content
+12:40:21 [content] Synced content
+12:40:21 [types] Generated 60ms
+12:40:21 [build] output: "static"
+12:40:21 [build] mode: "static"
+12:40:21 [build] directory: D:\Claude-projects\Site-portfolio\tasks\robert-review-2026-10-07\reports\07-build\dist\
+12:40:21 [build] Collecting build info...
+12:40:21 [build] ✓ Completed in 86ms.
+12:40:21 [build] Building static entrypoints...
+12:40:24 [vite] ✓ built in 3.02s
+12:40:24 [build] ✓ Completed in 3.05s.
+
+ building client (vite) 
+12:40:24 [vite] transforming...
+12:40:24 [vite] ✓ 31 modules transformed.
+12:40:24 [vite] rendering chunks...
+12:40:25 [vite] computing gzip size...
+12:40:25 [vite] dist/_astro/page.IvKoM_B8.js                                                 0.05 kB │ gzip:  0.07 kB
+12:40:25 [vite] dist/_astro/index.BbWtjHji.js                                                2.30 kB │ gzip:  1.05 kB
+12:40:25 [vite] dist/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js   13.11 kB │ gzip:  4.54 kB
+12:40:25 [vite] dist/_astro/BaseLayout.astro_astro_type_script_index_0_lang.DQHWE3gl.js    152.06 kB │ gzip: 58.88 kB
+12:40:25 [vite] ✓ built in 637ms
+
+ generating static routes 
+12:40:25 ▶ /404
+12:40:25   └─ /404.html (+20ms) 
+12:40:25 ▶ /500
+12:40:25   └─ /500.html (+5ms) 
+12:40:25 ▶ /about
+12:40:25   └─ /about/index.html (+7ms) 
+12:40:25 ▶ /
+12:40:25   └─ /index.html (+20ms) 
+12:40:25 ▶ /kit
+12:40:25   └─ /kit/index.html (+63ms) 
+12:40:25 λ /og/[card].png
+12:40:25   ├─ /og/default.png (+258ms) 
+12:40:25   ├─ /og/default-onest.png (+200ms) 
+12:40:25   ├─ /og/about.png (+160ms) 
+12:40:26   ├─ /og/about-onest.png (+184ms) 
+12:40:26   ├─ /og/work-agent-ops-console.png (+200ms) 
+12:40:26   ├─ /og/work-agent-ops-console-onest.png (+203ms) 
+12:40:26   ├─ /og/work-partner-portal.png (+217ms) 
+12:40:26   ├─ /og/work-partner-portal-onest.png (+217ms) 
+12:40:27   ├─ /og/work-learn.png (+207ms) 
+12:40:27   ├─ /og/work-learn-onest.png (+158ms) 
+12:40:27   ├─ /og/work-vet-clinic.png (+181ms) 
+12:40:27   ├─ /og/work-vet-clinic-onest.png (+137ms) 
+12:40:27   ├─ /og/work-pawly.png (+129ms) 
+12:40:27   ├─ /og/work-pawly-onest.png (+125ms) 
+12:40:27   ├─ /og/default-ru.png (+146ms) 
+12:40:28   ├─ /og/default-ru-onest.png (+108ms) 
+12:40:28   ├─ /og/about-ru.png (+100ms) 
+12:40:28   ├─ /og/about-ru-onest.png (+103ms) 
+12:40:28   ├─ /og/work-agent-ops-console-ru.png (+108ms) 
+12:40:28   ├─ /og/work-agent-ops-console-ru-onest.png (+107ms) 
+12:40:28   ├─ /og/work-partner-portal-ru.png (+116ms) 
+12:40:28   ├─ /og/work-partner-portal-ru-onest.png (+114ms) 
+12:40:28   ├─ /og/work-learn-ru.png (+133ms) 
+12:40:29   ├─ /og/work-learn-ru-onest.png (+148ms) 
+12:40:29   ├─ /og/work-vet-clinic-ru.png (+250ms) 
+12:40:29   ├─ /og/work-vet-clinic-ru-onest.png (+189ms) 
+12:40:29   ├─ /og/work-pawly-ru.png (+100ms) 
+12:40:29   └─ /og/work-pawly-ru-onest.png (+96ms) 
+12:40:29 ▶ /preview/agent-ops-pilot
+12:40:29   └─ /preview/agent-ops-pilot/index.html (+13ms) 
+12:40:29 ▶ /preview/agent-ops-rebuild/[locale]
+12:40:29   ├─ /preview/agent-ops-rebuild/en/index.html (+9ms) 
+12:40:29   └─ /preview/agent-ops-rebuild/ru/index.html (+14ms) 
+12:40:29 ▶ /preview/common/[locale]/[case]
+12:40:29   ├─ /preview/common/en/agent-ops/index.html (+9ms) 
+12:40:29   ├─ /preview/common/en/partner-portal/index.html (+14ms) 
+12:40:29   ├─ /preview/common/ru/agent-ops/index.html (+9ms) 
+12:40:29   └─ /preview/common/ru/partner-portal/index.html (+13ms) 
+12:40:29 ▶ /preview/common
+12:40:29   └─ /preview/common/index.html (+3ms) 
+12:40:29 ▶ /preview/film-common/[locale]
+12:40:29   ├─ /preview/film-common/en/index.html (+10ms) 
+12:40:29   └─ /preview/film-common/ru/index.html (+9ms) 
+12:40:29 ▶ /preview/learn-rebuild/[locale]
+12:40:29   ├─ /preview/learn-rebuild/en/index.html (+16ms) 
+12:40:29   └─ /preview/learn-rebuild/ru/index.html (+19ms) 
+12:40:29 ▶ /preview/partner-portal-pilot
+12:40:29   └─ /preview/partner-portal-pilot/index.html (+5ms) 
+12:40:29 ▶ /preview/partner-portal-rebuild/[locale]
+12:40:29   ├─ /preview/partner-portal-rebuild/en/index.html (+14ms) 
+12:40:29   └─ /preview/partner-portal-rebuild/ru/index.html (+14ms) 
+12:40:30 ▶ /preview/pawly-rebuild/[locale]
+12:40:30   ├─ /preview/pawly-rebuild/en/index.html (+16ms) 
+12:40:30   └─ /preview/pawly-rebuild/ru/index.html (+18ms) 
+12:40:30 ▶ /preview/vet-clinic-rebuild/[locale]
+12:40:30   ├─ /preview/vet-clinic-rebuild/en/index.html (+17ms) 
+12:40:30   └─ /preview/vet-clinic-rebuild/ru/index.html (+22ms) 
+12:40:30 λ /robots.txt
+12:40:30   └─ /robots.txt (+2ms) 
+12:40:30 ▶ /ru/about
+12:40:30   └─ /ru/about/index.html (+6ms) 
+12:40:30 ▶ /ru
+12:40:30   └─ /ru/index.html (+8ms) 
+12:40:30 ▶ /ru/work/[slug]
+12:40:30   ├─ /ru/work/agent-ops-console/index.html (+7ms) 
+12:40:30   ├─ /ru/work/partner-portal/index.html (+11ms) 
+12:40:30   ├─ /ru/work/learn/index.html (+10ms) 
+12:40:30   ├─ /ru/work/vet-clinic/index.html (+9ms) 
+12:40:30   └─ /ru/work/pawly/index.html (+10ms) 
+12:40:30 λ /sitemap.xml
+12:40:30   └─ /sitemap.xml (+2ms) 
+12:40:30 ▶ /work/[slug]
+12:40:30   ├─ /work/agent-ops-console/index.html (+7ms) 
+12:40:30   ├─ /work/partner-portal/index.html (+12ms) 
+12:40:30   ├─ /work/learn/index.html (+9ms) 
+12:40:30   ├─ /work/vet-clinic/index.html (+18ms) 
+12:40:30   └─ /work/pawly/index.html (+8ms) 
+12:40:30 ✓ Completed in 5.20s.
+
+12:40:30 [build] 36 page(s) built in 9.28s
+12:40:30 [build] Complete!

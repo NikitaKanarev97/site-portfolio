@@ -1,0 +1,1801 @@
+[
+  {
+    "route": "/work/agent-ops-console/",
+    "headings": {
+      "Review the agent’s promises": {
+        "candidates": [
+          "Review promises",
+          "Check each claim",
+          "Check agent promises"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Review promises",
+                "lines": [
+                  [
+                    "Review",
+                    "promises"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Check each claim",
+                "lines": [
+                  [
+                    "Check",
+                    "each",
+                    "claim"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Check agent promises",
+                "lines": [
+                  [
+                    "Check",
+                    "agent",
+                    "promises"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Review promises",
+                "lines": [
+                  [
+                    "Review",
+                    "promises"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Check each claim",
+                "lines": [
+                  [
+                    "Check",
+                    "each",
+                    "claim"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Check agent promises",
+                "lines": [
+                  [
+                    "Check",
+                    "agent"
+                  ],
+                  [
+                    "promises"
+                  ]
+                ],
+                "hidden": false,
+                "pass": false
+              }
+            ]
+          }
+        ],
+        "selected": "Review promises"
+      }
+    }
+  },
+  {
+    "route": "/ru/work/agent-ops-console/",
+    "headings": {
+      "Обещание требует подтверждения": {
+        "candidates": [
+          "Нужны факты",
+          "Есть факт для проверки"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Нужны факты",
+                "lines": [
+                  [
+                    "Нужны",
+                    "факты"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Есть факт для проверки",
+                "lines": [
+                  [
+                    "Есть",
+                    "факт",
+                    "для",
+                    "проверки"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Нужны факты",
+                "lines": [],
+                "hidden": true,
+                "pass": true
+              },
+              {
+                "candidate": "Есть факт для проверки",
+                "lines": [],
+                "hidden": true,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "Нужны факты"
+      },
+      "Проверять обещания агента": {
+        "candidates": [
+          "Проверка слов",
+          "Слова агента под контролем",
+          "Что агент обещал людям"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Проверка слов",
+                "lines": [
+                  [
+                    "Проверка",
+                    "слов"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Слова агента под контролем",
+                "lines": [
+                  [
+                    "Слова",
+                    "агента",
+                    "под",
+                    "контролем"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Что агент обещал людям",
+                "lines": [
+                  [
+                    "Что",
+                    "агент",
+                    "обещал",
+                    "людям"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Проверка слов",
+                "lines": [
+                  [
+                    "Проверка",
+                    "слов"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Слова агента под контролем",
+                "lines": [
+                  [
+                    "Слова",
+                    "агента"
+                  ],
+                  [
+                    "под",
+                    "контролем"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Что агент обещал людям",
+                "lines": [
+                  [
+                    "Что",
+                    "агент"
+                  ],
+                  [
+                    "обещал",
+                    "людям"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "Проверка слов"
+      },
+      "Выплату одобряет человек": {
+        "candidates": [
+          "Нужно одобрение",
+          "Деньги ждут",
+          "Решает человек"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Нужно одобрение",
+                "lines": [
+                  [
+                    "Нужно",
+                    "одобрение"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Деньги ждут",
+                "lines": [
+                  [
+                    "Деньги",
+                    "ждут"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Решает человек",
+                "lines": [
+                  [
+                    "Решает",
+                    "человек"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Нужно одобрение",
+                "lines": [
+                  [
+                    "Нужно",
+                    "одобрение"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Деньги ждут",
+                "lines": [
+                  [
+                    "Деньги",
+                    "ждут"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Решает человек",
+                "lines": [
+                  [
+                    "Решает",
+                    "человек"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "Нужно одобрение"
+      },
+      "Прототип принят": {
+        "candidates": [
+          "Клиент принял",
+          "Работа принята",
+          "Всё принято"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Клиент принял",
+                "lines": [
+                  [
+                    "Клиент",
+                    "принял"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Работа принята",
+                "lines": [
+                  [
+                    "Работа",
+                    "принята"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Всё принято",
+                "lines": [
+                  [
+                    "Всё",
+                    "принято"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Клиент принял",
+                "lines": [
+                  [
+                    "Клиент",
+                    "принял"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Работа принята",
+                "lines": [
+                  [
+                    "Работа",
+                    "принята"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Всё принято",
+                "lines": [
+                  [
+                    "Всё",
+                    "принято"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "Работа принята"
+      }
+    }
+  },
+  {
+    "route": "/work/partner-portal/",
+    "headings": {
+      "Import and manual entry feed a shared specification": {
+        "candidates": [
+          "Import and entry share a list",
+          "A shared list",
+          "One working list"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Import and entry share a list",
+                "lines": [
+                  [
+                    "Import",
+                    "and",
+                    "entry",
+                    "share",
+                    "a",
+                    "list"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "A shared list",
+                "lines": [
+                  [
+                    "A",
+                    "shared",
+                    "list"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "One working list",
+                "lines": [
+                  [
+                    "One",
+                    "working",
+                    "list"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Import and entry share a list",
+                "lines": [
+                  [
+                    "Import",
+                    "and"
+                  ],
+                  [
+                    "entry",
+                    "share",
+                    "a",
+                    "list"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "A shared list",
+                "lines": [
+                  [
+                    "A",
+                    "shared",
+                    "list"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "One working list",
+                "lines": [
+                  [
+                    "One",
+                    "working",
+                    "list"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "A shared list"
+      }
+    }
+  },
+  {
+    "route": "/ru/work/partner-portal/",
+    "headings": {
+      "Коммерческий редизайн выпущен": {
+        "candidates": [
+          "Редизайн выпущен",
+          "Всё выпущено",
+          "Работа выпущена"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Редизайн выпущен",
+                "lines": [
+                  [
+                    "Редизайн",
+                    "выпущен"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Всё выпущено",
+                "lines": [
+                  [
+                    "Всё",
+                    "выпущено"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Работа выпущена",
+                "lines": [
+                  [
+                    "Работа",
+                    "выпущена"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Редизайн выпущен",
+                "lines": [
+                  [
+                    "Редизайн"
+                  ],
+                  [
+                    "выпущен"
+                  ]
+                ],
+                "hidden": false,
+                "pass": false
+              },
+              {
+                "candidate": "Всё выпущено",
+                "lines": [
+                  [
+                    "Всё",
+                    "выпущено"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Работа выпущена",
+                "lines": [
+                  [
+                    "Работа"
+                  ],
+                  [
+                    "выпущена"
+                  ]
+                ],
+                "hidden": false,
+                "pass": false
+              }
+            ]
+          }
+        ],
+        "selected": "Редизайн сдан"
+      },
+      "Состояние подсказывает следующий шаг": {
+        "candidates": [
+          "Следующий шаг",
+          "Статус и шаг",
+          "Статус ведёт к действию"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Следующий шаг",
+                "lines": [
+                  [
+                    "Следующий",
+                    "шаг"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Статус и шаг",
+                "lines": [
+                  [
+                    "Статус",
+                    "и",
+                    "шаг"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Статус ведёт к действию",
+                "lines": [
+                  [
+                    "Статус",
+                    "ведёт",
+                    "к",
+                    "действию"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Следующий шаг",
+                "lines": [
+                  [
+                    "Следующий",
+                    "шаг"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Статус и шаг",
+                "lines": [
+                  [
+                    "Статус",
+                    "и",
+                    "шаг"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Статус ведёт к действию",
+                "lines": [
+                  [
+                    "Статус",
+                    "ведёт"
+                  ],
+                  [
+                    "к",
+                    "действию"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "Следующий шаг"
+      }
+    }
+  },
+  {
+    "route": "/work/learn/",
+    "headings": {
+      "Show the answer before asking for trust": {
+        "candidates": [
+          "See the answer first",
+          "Read the answer first",
+          "An answer before sign-in"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "See the answer first",
+                "lines": [
+                  [
+                    "See",
+                    "the",
+                    "answer",
+                    "first"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Read the answer first",
+                "lines": [
+                  [
+                    "Read",
+                    "the",
+                    "answer",
+                    "first"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "An answer before sign-in",
+                "lines": [
+                  [
+                    "An",
+                    "answer",
+                    "before",
+                    "sign-in"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "See the answer first",
+                "lines": [
+                  [
+                    "See",
+                    "the",
+                    "answer",
+                    "first"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Read the answer first",
+                "lines": [
+                  [
+                    "Read",
+                    "the"
+                  ],
+                  [
+                    "answer",
+                    "first"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "An answer before sign-in",
+                "lines": [
+                  [
+                    "An",
+                    "answer"
+                  ],
+                  [
+                    "before",
+                    "sign-in"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "An answer comes first"
+      }
+    }
+  },
+  {
+    "route": "/ru/work/learn/",
+    "headings": {
+      "Справочник и программа связаны": {
+        "candidates": [
+          "Общий контент",
+          "Ответ ведёт в программу",
+          "Оба пути к ответу"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Общий контент",
+                "lines": [
+                  [
+                    "Общий",
+                    "контент"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Ответ ведёт в программу",
+                "lines": [
+                  [
+                    "Ответ",
+                    "ведёт",
+                    "в",
+                    "программу"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Оба пути к ответу",
+                "lines": [
+                  [
+                    "Оба",
+                    "пути",
+                    "к",
+                    "ответу"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Общий контент",
+                "lines": [
+                  [
+                    "Общий",
+                    "контент"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Ответ ведёт в программу",
+                "lines": [
+                  [
+                    "Ответ",
+                    "ведёт"
+                  ],
+                  [
+                    "в",
+                    "программу"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Оба пути к ответу",
+                "lines": [
+                  [
+                    "Оба",
+                    "пути"
+                  ],
+                  [
+                    "к",
+                    "ответу"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "Два пути к ответу"
+      },
+      "Справочник и программа используют общий материал": {
+        "candidates": [
+          "Контент для двух задач",
+          "Один ответ для двух задач",
+          "Общий материал"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Контент для двух задач",
+                "lines": [
+                  [
+                    "Контент",
+                    "для",
+                    "двух",
+                    "задач"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Один ответ для двух задач",
+                "lines": [
+                  [
+                    "Один",
+                    "ответ",
+                    "для",
+                    "двух",
+                    "задач"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Общий материал",
+                "lines": [
+                  [
+                    "Общий",
+                    "материал"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Контент для двух задач",
+                "lines": [
+                  [
+                    "Контент",
+                    "для"
+                  ],
+                  [
+                    "двух",
+                    "задач"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Один ответ для двух задач",
+                "lines": [
+                  [
+                    "Один",
+                    "ответ"
+                  ],
+                  [
+                    "для",
+                    "двух",
+                    "задач"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Общий материал",
+                "lines": [
+                  [
+                    "Общий",
+                    "материал"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "Общий материал"
+      },
+      "Завершение нужно подтвердить": {
+        "candidates": [
+          "Завершить урок",
+          "Завершить шаг",
+          "Урок готов"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Завершить урок",
+                "lines": [
+                  [
+                    "Завершить",
+                    "урок"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Завершить шаг",
+                "lines": [
+                  [
+                    "Завершить",
+                    "шаг"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Урок готов",
+                "lines": [
+                  [
+                    "Урок",
+                    "готов"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Завершить урок",
+                "lines": [
+                  [
+                    "Завершить",
+                    "урок"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Завершить шаг",
+                "lines": [
+                  [
+                    "Завершить",
+                    "шаг"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Урок готов",
+                "lines": [
+                  [
+                    "Урок",
+                    "готов"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "Завершить шаг"
+      }
+    }
+  },
+  {
+    "route": "/work/vet-clinic/",
+    "headings": {
+      "Publication preserves the owner’s copy": {
+        "candidates": [
+          "Publish a stable copy",
+          "The owner keeps a copy",
+          "A saved copy for the owner"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Publish a stable copy",
+                "lines": [
+                  [
+                    "Publish",
+                    "a",
+                    "stable",
+                    "copy"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "The owner keeps a copy",
+                "lines": [
+                  [
+                    "The",
+                    "owner",
+                    "keeps",
+                    "a",
+                    "copy"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "A saved copy for the owner",
+                "lines": [
+                  [
+                    "A",
+                    "saved",
+                    "copy",
+                    "for",
+                    "the",
+                    "owner"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Publish a stable copy",
+                "lines": [
+                  [
+                    "Publish",
+                    "a"
+                  ],
+                  [
+                    "stable",
+                    "copy"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "The owner keeps a copy",
+                "lines": [
+                  [
+                    "The",
+                    "owner"
+                  ],
+                  [
+                    "keeps",
+                    "a",
+                    "copy"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "A saved copy for the owner",
+                "lines": [
+                  [
+                    "A",
+                    "saved",
+                    "copy"
+                  ],
+                  [
+                    "for",
+                    "the",
+                    "owner"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "The owner keeps a copy"
+      },
+      "The visit connects all three roles": {
+        "candidates": [
+          "The roles stay linked",
+          "A visit across three roles",
+          "The visit links three roles"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "The roles stay linked",
+                "lines": [
+                  [
+                    "The",
+                    "roles",
+                    "stay",
+                    "linked"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "A visit across three roles",
+                "lines": [
+                  [
+                    "A",
+                    "visit",
+                    "across",
+                    "three",
+                    "roles"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "The visit links three roles",
+                "lines": [
+                  [
+                    "The",
+                    "visit",
+                    "links",
+                    "three",
+                    "roles"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "The roles stay linked",
+                "lines": [
+                  [
+                    "The",
+                    "roles"
+                  ],
+                  [
+                    "stay",
+                    "linked"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "A visit across three roles",
+                "lines": [
+                  [
+                    "A",
+                    "visit",
+                    "across"
+                  ],
+                  [
+                    "three",
+                    "roles"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "The visit links three roles",
+                "lines": [
+                  [
+                    "The",
+                    "visit",
+                    "links"
+                  ],
+                  [
+                    "three",
+                    "roles"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "The roles stay linked"
+      }
+    }
+  },
+  {
+    "route": "/ru/work/vet-clinic/",
+    "headings": {
+      "След за время паузы": {
+        "candidates": [
+          "След в паузе",
+          "Запись в паузе",
+          "Запись за 30 секунд"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "След в паузе",
+                "lines": [
+                  [
+                    "След",
+                    "в",
+                    "паузе"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Запись в паузе",
+                "lines": [
+                  [
+                    "Запись",
+                    "в",
+                    "паузе"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Запись за 30 секунд",
+                "lines": [
+                  [
+                    "Запись",
+                    "за",
+                    "30",
+                    "секунд"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "След в паузе",
+                "lines": [
+                  [
+                    "След",
+                    "в",
+                    "паузе"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Запись в паузе",
+                "lines": [
+                  [
+                    "Запись",
+                    "в",
+                    "паузе"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Запись за 30 секунд",
+                "lines": [
+                  [
+                    "Запись",
+                    "за"
+                  ],
+                  [
+                    "30",
+                    "секунд"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "След в паузе"
+      },
+      "Публикация сохраняет выписку владельца": {
+        "candidates": [
+          "У семьи своя копия",
+          "У владельца своя копия"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "У семьи своя копия",
+                "lines": [
+                  [
+                    "У",
+                    "семьи",
+                    "своя",
+                    "копия"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "У владельца своя копия",
+                "lines": [
+                  [
+                    "У",
+                    "владельца",
+                    "своя",
+                    "копия"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "У семьи своя копия",
+                "lines": [
+                  [
+                    "У",
+                    "семьи",
+                    "своя",
+                    "копия"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "У владельца своя копия",
+                "lines": [
+                  [
+                    "У",
+                    "владельца"
+                  ],
+                  [
+                    "своя",
+                    "копия"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "У владельца своя копия"
+      },
+      "Результаты приёма доступны трём ролям": {
+        "candidates": [
+          "Роли связаны",
+          "Итог для всех ролей",
+          "Три роли ведут приём"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Роли связаны",
+                "lines": [
+                  [
+                    "Роли",
+                    "связаны"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Итог для всех ролей",
+                "lines": [
+                  [
+                    "Итог",
+                    "для",
+                    "всех",
+                    "ролей"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Три роли ведут приём",
+                "lines": [
+                  [
+                    "Три",
+                    "роли",
+                    "ведут",
+                    "приём"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Роли связаны",
+                "lines": [
+                  [
+                    "Роли",
+                    "связаны"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Итог для всех ролей",
+                "lines": [
+                  [
+                    "Итог",
+                    "для"
+                  ],
+                  [
+                    "всех",
+                    "ролей"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Три роли ведут приём",
+                "lines": [
+                  [
+                    "Три",
+                    "роли"
+                  ],
+                  [
+                    "ведут",
+                    "приём"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "Роли связаны"
+      }
+    }
+  },
+  {
+    "route": "/ru/work/pawly/",
+    "headings": {
+      "За прогулку начислено 779 рублей": {
+        "candidates": [
+          "779 ₽ за выгул",
+          "За выгул 779 ₽",
+          "Одно начисление"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "779 ₽ за выгул",
+                "lines": [
+                  [
+                    "779",
+                    "₽",
+                    "за",
+                    "выгул"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "За выгул 779 ₽",
+                "lines": [
+                  [
+                    "За",
+                    "выгул",
+                    "779",
+                    "₽"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Одно начисление",
+                "lines": [
+                  [
+                    "Одно",
+                    "начисление"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "779 ₽ за выгул",
+                "lines": [
+                  [
+                    "779",
+                    "₽",
+                    "за",
+                    "выгул"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "За выгул 779 ₽",
+                "lines": [
+                  [
+                    "За",
+                    "выгул",
+                    "779",
+                    "₽"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Одно начисление",
+                "lines": [
+                  [
+                    "Одно",
+                    "начисление"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "779 ₽ за выгул"
+      },
+      "Цепочка, которую можно проверить": {
+        "candidates": [
+          "Факты видны",
+          "Всё видно",
+          "Все шаги видны"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Факты видны",
+                "lines": [
+                  [
+                    "Факты",
+                    "видны"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Всё видно",
+                "lines": [
+                  [
+                    "Всё",
+                    "видно"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Все шаги видны",
+                "lines": [
+                  [
+                    "Все",
+                    "шаги",
+                    "видны"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Факты видны",
+                "lines": [
+                  [
+                    "Факты",
+                    "видны"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Всё видно",
+                "lines": [
+                  [
+                    "Всё",
+                    "видно"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Все шаги видны",
+                "lines": [
+                  [
+                    "Все",
+                    "шаги",
+                    "видны"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "Факты видны"
+      }
+    }
+  }
+]

@@ -1,0 +1,534 @@
+--- a/src/copy/about.ts
++++ b/src/copy/about.ts
+@@ -73,9 +73,9 @@
+       /* Что делаю с тем, что не получается. */
+       'Every case I write has a section about what did not work, and it is not there for modesty. The order in which a project is run is a design decision, and the places where I got that order wrong are hard to fake. On DSSL I finished six screens before checking their structure against comparable products. A structural finding costs a paragraph before the screen exists and a rebuild afterwards. Two defects found later were also diagnosed incorrectly the first time; fixing either diagnosis would have fixed nothing.',
+       /* Чем меряю результат, когда цифры закрыты. */
+-      'Most of what I have shipped is under NDA, and some of it has no baseline to measure against: its metrics were a plan for measurement, not a claim of results. I do not publish numbers I cannot stand behind or let a plan pass for an outcome. I publish the compromise instead — what the design achieved, what it cost, who now does more work, and what would have to change to remove that cost. A named trade-off can be checked in conversation; a number without a baseline cannot.',
++      'Most of what I have shipped is under NDA, and some of it has no baseline to measure against: its metrics were a plan for measurement, not a claim of results. I do not publish numbers I cannot stand behind or let a plan pass for an outcome. I publish the compromise instead — what the design achieved, what it cost, who now does more work, and what would have to change to remove that cost.',
+       /* Чем заканчивается работа: доведение до работающей сборки. */
+-      'The same standard applies to what I hand over. I carry design decisions through to a working build — tokens, components in code, a deployed URL, a QA pass against the running screen — because a decision that stops at a handoff file has not been tested yet. The boundary is the one I would give you in conversation: the front end and integration with an existing API, and most of these builds are prototypes on synthetic data rather than production systems under load.',
++      'The same standard applies to what I hand over. I carry design decisions through to a working build — tokens, components in code, a deployed URL, a QA pass against the running screen — because a decision that stops at a handoff file has not been tested yet. My implementation scope is frontend and integration with an existing API.',
+     ],
+   },
+ 
+@@ -124,7 +124,7 @@
+     body: [
+       'I use AI at every stage of a project rather than at one step of it — from the first interview and the brief, through research, personas and scenarios, the PRD, the information architecture and the design system, into code, testing and deploy. Several models and tools, picked per step, not one assistant for everything.',
+       'In my process, it earns its place through volume and first drafts: reading more comparable products than I can cover by hand, restating a requirement until the weak version becomes visible, walking a finished flow and reporting where it breaks. That last pass has repeatedly found defects on screens I had already called done.',
+-      'The boundary is judgment and evidence. AI can surface options and failure points; it does not choose the object the system is built around, decide which constraint to accept, or turn an assumption into a user finding. Those decisions — and the trade-off I publish — remain mine.',
++      'AI can surface options and failure points; it does not choose the object the system is built around, decide which constraint to accept, or turn an assumption into a user finding. Those decisions — and the trade-off I publish — remain mine.',
+     ],
+   },
+ };
+--- a/src/copy/cases/agent-ops-console.ts
++++ b/src/copy/cases/agent-ops-console.ts
+@@ -383,11 +383,11 @@
+   theme: 'agent', plate: 'dark',
+   cover: {
+     title: 'Agent Ops',
+-    outcome: 'Between a promise and a payout: a person.',
++    outcome: 'An operator checks the agent’s promises before approving a payout.',
+     media: {
+       variant: 'proof', layout: 'interlock', gate: 'Human review', eyebrow: 'AI support · Billing · Human oversight',
+       caption: 'The message and the payout, side by side',
+-      shot: { src: `${pilot}/consequences-1440.webp`, srcNarrow: `${pilot}/consequences-390.webp`, alt: 'Two real prototype panels: the $340 payout and the exact message sent on approval', device: 'panel' },
++      shot: { src: `${pilot}/consequences-1440.webp`, srcNarrow: `${pilot}/consequences-390.webp`, alt: 'Two product panels: the $340 payout and the exact message sent on approval', device: 'panel' },
+       panels: [
+         { src: `${pilot}/message-1440.webp`, srcNarrow: `${pilot}/message-390.webp`, alt: 'The complete customer message that approval will send', device: 'panel' },
+         { src: `${pilot}/payout-1440.webp`, srcNarrow: `${pilot}/payout-390.webp`, alt: 'The complete $340 payout preview, before approval', device: 'panel' },
+@@ -395,15 +395,15 @@
+     },
+   },
+   facts: [
+-    { term: 'Client', value: 'NDA · B2B SaaS, billing' },
++    { term: 'Client', value: 'B2B SaaS, billing' },
+     { term: 'Year', value: '2026' },
+     { term: 'Role', value: 'Sole product designer' },
+     { term: 'Platform', value: 'Web, desktop-first' },
+     { term: 'Evidence', value: 'Paid client · user-tested, accepted' },
+-    { term: 'Prototype', value: 'Live, invented data', href: PROTOTYPE },
++    { term: 'Prototype', value: 'Open product', href: PROTOTYPE },
+   ],
+   challenge: {
+-    label: 'Challenge', thesis: 'Read the promises, not the chats',
++    label: 'Challenge', thesis: 'Review promises',
+     body: 'The agent closed 61% of contacts alone. Then it promised fourteen refunds under an expired promotion: $23,000. The team of 24 would not grow. Reviewing every conversation was impossible.',
+     numbers: [
+       { value: '1,770', caption: 'agent-closed chats per day' },
+@@ -413,7 +413,7 @@
+   },
+   estimateNote: 'Design estimates: 177 hours of daily chat review, requiring 25 reviewers, versus 2.4 hours to review commitments. These are not measured savings.',
+   steps: {
+-    label: 'Cause → promise → decision', variant: 'focus', composition: 'checkpoint', gate: 'Human review',
++    label: 'From cause to promise review and decision', variant: 'focus', composition: 'checkpoint', gate: 'Human review',
+     items: [
+       {
+         label: 'Find the cause', thesis: 'Seventeen chats. One cause.',
+@@ -431,7 +431,7 @@
+         label: 'Read the promise', thesis: 'The promise lacks proof',
+         body: 'The conversation stays intact. An unsupported refund claim is flagged at the exact message, so the reviewer sees what the customer was told.',
+         layout: 'wide', scene: 'promise', caption: 'The full conversation, with the unsupported promise flagged', desktopOnly: true,
+-        shot: { src: `${pilot}/transcript-framed-1440.webp`, srcNarrow: `${pilot}/transcript-framed-390.webp`, alt: 'Six real prototype turns, with an unsupported refund promise explicitly flagged', device: 'panel' },
++        shot: { src: `${pilot}/transcript-framed-1440.webp`, srcNarrow: `${pilot}/transcript-framed-390.webp`, alt: 'Six conversation turns, with an unsupported refund promise explicitly flagged', device: 'panel' },
+       },
+       {
+         label: 'Approve the consequence', thesis: 'Money waits for a person',
+@@ -457,15 +457,15 @@
+     },
+   },
+   result: {
+-    label: 'Outcome', thesis: 'Tested, reworked and accepted',
+-    body: 'User testing informed the revisions. The client accepted the prototype: nineteen screens across three roles. Implementation remained with the client.',
++    label: 'Result', thesis: 'Tested, reworked and accepted',
++    body: 'The client is under NDA; the screens use invented data. User testing informed the revisions. The client accepted the prototype: nineteen screens across three roles. Implementation remained with the client.',
+     cards: [],
+   },
+   closing: [
+-    { term: 'The trade-off', value: 'Every payout now waits for a person. Oversight gives control back, but sacrifices automation at the point where money moves.' },
++    { term: 'Trade-off', value: 'Every payout now waits for a person. Oversight gives control back, but sacrifices automation at the point where money moves.' },
+     { term: 'Scope', value: 'Research, IA, UX/UI, the design system and a tested prototype. Brief to acceptance: up to one month.' },
+   ],
+-  prototype: { label: 'Open the live prototype, on invented data', href: PROTOTYPE },
++  prototype: { label: 'Open product', href: PROTOTYPE },
+ } satisfies LegacyKitStory;
+ 
+ /** The accepted composition, expressed as ordered modules without a new art pass. */
+--- a/src/copy/cases/learn.ts
++++ b/src/copy/cases/learn.ts
+@@ -203,56 +203,50 @@
+     cover: {
+       title: 'TRASSIR Learn',
+       outcome: t('A technical answer becomes part of a learning path.', 'Технический ответ становится частью учебного пути.'),
+-      media: { variant: 'proof', eyebrow: t('Work project · reinterpreted in 2026', 'Рабочий проект · переосмысление 2026'),
++      media: { variant: 'proof', eyebrow: t('Technical learning', 'Техническое обучение'),
+         shot: shot('cover', 'One material beside its programme passport', 'Материал рядом с паспортом его программы'),
+-        caption: t('One material: a quick answer and a step in a path.', 'Один материал: быстрый ответ и шаг программы.'),
+       },
+     },
+     facts: [
+       { term: t('Role', 'Роль'), value: t('Product Designer', 'Продуктовый дизайнер') },
+       { term: t('Original work', 'Исходная работа'), value: t('DSSL / TRASSIR · several months', 'DSSL / TRASSIR · несколько месяцев') },
+       { term: t('Scope', 'Объём'), value: t('Content model, UX/UI, system, prototype', 'Модель контента, UX/UI, система, прототип') },
+-      { term: t('Product', 'Продукт'), value: t('Open the prototype', 'Открыть прототип'), href: `/prototypes/learn/home?lang=${lang}` },
+-      { term: t('Landing', 'Лендинг'), value: t('Open the introduction', 'Открыть представление продукта'), href: `/prototypes/learn-landing/?lang=${lang}` },
++      { term: t('Product', 'Продукт'), value: t('Open product', 'Открыть продукт'), href: `/prototypes/learn/home?lang=${lang}` },
++      { term: t('Landing', 'Лендинг'), value: t('Open website', 'Открыть сайт'), href: `/prototypes/learn-landing/?lang=${lang}` },
+     ],
+     blocks: [
+       { id: 'audit-direction', type: 'comparison', evidenceId: 'learn-audit', mediaId: 'archive-catalog', motion: 'reveal',
+         payload: {
+-          thesis: { label: t('Audit → direction', 'Аудит → направление'), thesis: t('Start with the specialist’s task', 'Сначала — задача специалиста'),
+-            body: t('The archive leads with courses, ratings and rewards. I reframed entry around a question or programme, with the answer open to read without an account.', 'Архивный каталог начинает с курсов, рейтингов и наград. Я перенёс вход на рабочий вопрос или программу: полезный ответ доступен ещё до авторизации.') },
++          thesis: { label: t('Design direction', 'Решение после аудита'), thesis: t('Start with the specialist’s task', 'Сначала — задача специалиста'),
++            body: t('The archive leads with courses and rewards. Revisiting my DSSL / TRASSIR work, I made the question or programme the entry point, with answers open before sign-in. Account and document data are invented.', 'В архивном каталоге сначала идут курсы и награды. Я вернулся к своей работе в DSSL / TRASSIR: входом стал вопрос или программа, ответ доступен до авторизации. Данные аккаунтов и документов вымышлены.') },
+           issue: { src: '/media/rebuild/learn/archive-catalog.webp', alt: t('Archived Russian course catalogue with ratings and reward points', 'Архивный каталог курсов с рейтингом и баллами'),
+-            marks: [{ x: 20, y: 17, text: t('Courses define the entry', 'Вход определён курсами') }, { x: 25, y: 90, text: t('Points accompany the material', 'Баллы сопровождают материал') }],
++            marks: [{ x: 20, y: 17, text: t('Courses define the entry', 'Каталог начинается с курсов') }, { x: 25, y: 90, text: t('Points accompany the material', 'Баллы сопровождают материал') }],
+             caption: t('The archived catalogue: courses and points come first.', 'Архивный каталог: впереди курсы и баллы.') },
+         } },
+       { id: 'shared-material', type: 'artifact', evidenceId: 'learn-model', mediaId: 'learn-content-model', motion: 'draw',
+-        payload: { thesis: { label: t('Content model', 'Модель контента'), thesis: t('One material, two entrances', 'Один материал, два входа'),
++        payload: { thesis: { label: t('Content model', 'Модель контента'), thesis: t('A shared material connects reference and programme', 'Общий материал'),
+           body: t('The material owns its content and version; programmes reference it. Reading history, explicit completion and assessment attempts remain separate records.', 'Материал хранит содержание и версию. Программа ссылается на него без копии. История чтения, явное завершение и попытка зачёта остаются отдельными записями.') },
+-          artifact: { data: learnContentModel, source: { kind: 'editorial', ref: 'Learn PRD §4.2/5.3, current MaterialPage and Player' }, caption: t('Two entrances, one material, separate records.', 'Два входа, один материал, отдельные записи.') } } },
++          artifact: { data: learnContentModel, source: { kind: 'editorial', ref: 'Learn PRD §4.2/5.3, current MaterialPage and Player' }, caption: t('Materials, programmes and their reading and completion records.', 'Связи материалов, программ и записей чтения и завершения.') } } },
+       { id: 'one-material', type: 'steps', evidenceId: 'learn-completion', mediaId: 'material-contexts', motion: 'static',
+         payload: { composition: 'routes', label: t('The same ONVIF material', 'Тот же материал об ONVIF'), items: [
+           { label: t('Reference', 'Справочник'), thesis: t('Answer the question now', 'Ответить на вопрос сейчас'), layout: 'wide',
+-            body: t('The answer has its own address, version and date. A learning path sits alongside.', 'Полный ответ имеет свой адрес, версию и дату. Учебный путь предложен рядом с ответом.'),
++            body: t('The answer has its own address, version and date. A learning path sits alongside.', 'У ответа есть ссылка, версия и дата обновления. Рядом можно выбрать программу, в которую он входит.'),
+             shot: shot('answer', 'Open ONVIF answer with version, date and learning path rail', 'Открытый ответ об ONVIF, версия, дата и связанные программы'), caption: t('The answer, readable before sign-in.', 'Ответ читается до входа в аккаунт.') },
+           { label: t('Programme', 'Программа'), thesis: t('Keep the sequence around the answer', 'Сохранить порядок вокруг ответа'), layout: 'wide',
+             body: t('Inside the programme, the same material gains a curriculum and a current position. Its content stays intact.', 'Внутри программы тот же материал получает оглавление и текущую позицию. Содержание сохраняется целиком.'),
+             shot: shot('programme', 'The same ONVIF answer in the programme, position 3 of 11', 'Тот же ответ в программе, позиция 3 из 11'), caption: t('Programme view · the same material ID.', 'Программа · тот же ID материала.') },
+-          { label: t('Completion', 'Завершение'), thesis: t('Reading does not finish a unit', 'Прочитать — ещё не завершить'), layout: 'wide',
++          { label: t('Completion', 'Завершение'), thesis: t('Completion needs an explicit action', 'Завершить шаг'), layout: 'wide',
+             body: t('Complete and continue records an explicit decision. Simply opening or scrolling through the material does not earn completion.', '«Завершить и продолжить» фиксирует явное решение. Открытие материала и прокрутка сами по себе не засчитывают завершение.'),
+             shot: shot('completion', 'End of the same ONVIF material with the explicit completion button', 'Конец того же материала с явной кнопкой завершения'), caption: t('Completion is a deliberate action at the end.', 'Завершение — осознанное действие в конце материала.') },
+         ] } },
+       { id: 'content-language', type: 'specimen', evidenceId: 'learn-themes', mediaId: 'learn-content-theme', motion: 'reveal',
+         payload: { thesis: { label: t('Content language', 'Язык контента'), thesis: t('Colour follows the task', 'Цвет следует за задачей'),
+-          body: t('Four task modes persist across contexts. Trust information stays neutral; programme position is a count.', 'Четыре режима задачи сохраняются между контекстами. Достоверность нейтральна; позиция в программе выражена счётом.') },
++          body: t('Cards identify four tasks: setup, project, handover and product exploration. The material header shows its version and update date; the programme position is shown as 3 of 11.', 'Карточки различают пусконаладку, проектирование, сдачу объекта и обзор линейки. Над материалом указаны версия и дата обновления, а в программе — текущая позиция: 3 из 11.') },
+           specimen: { title: t('Learn · task modes and records', 'Learn · режимы задач и записи'), fontFamily: 'Learn Onest, sans-serif',
+-            type: [
+-              { style: 'Display/4xl', usage: { en: 'Material title', ru: 'Название материала' }, size: 44, lineHeight: 50.6, weight: 700, sample: { en: 'Aa', ru: 'Аа' } },
+-              { style: 'Heading/3xl', usage: { en: 'Section heading', ru: 'Раздел материала' }, size: 32, lineHeight: 43.2, weight: 700, sample: { en: 'Aa', ru: 'Аа' } },
+-            ],
+-            colors: [ { name: t('Setup', 'Пусконаладка'), hex: '#0A66CE' }, { name: t('Project', 'Проектирование'), hex: '#6D3EEA' }, { name: t('Handover', 'Сдача объекта'), hex: '#D6207A' }, { name: t('Explore', 'Обзор линейки'), hex: '#0E9E86' }, { name: t('Neutral', 'Нейтральный'), hex: '#3A4C66' } ],
++            type: [], colors: [],
+             groups: [{ id: 'tasks', title: t('Task modes', 'Режимы задач') }, { id: 'records', title: t('Neutral context', 'Нейтральный контекст') }],
+             sets: [
+-              { id: 'card-setup-project', title: t('Card · Setup / Project', 'Карточка · Пусконаладка / Проектирование'), group: 'tasks', states: cards.slice(0,2).map(([id,en,ru]) => ({ id, label: t(en,ru), mediaId: `theme-${id}`, shot: shot(`theme-${id}`, `${en} Card fixture`, `Образец Card: ${ru}`,316) })) },
+-              { id: 'card-handover-explore', title: t('Card · Handover / Explore', 'Карточка · Сдача объекта / Обзор линейки'), group: 'tasks', states: cards.slice(2).map(([id,en,ru]) => ({ id, label: t(en,ru), mediaId: `theme-${id}`, shot: shot(`theme-${id}`, `${en} Card fixture`, `Образец Card: ${ru}`,316) })) },
++              { id: 'task-cards', title: t('Task cards', 'Карточки задач'), group: 'tasks', states: cards.map(([id,en,ru]) => ({ id, label: t(en,ru), mediaId: `theme-${id}`, shot: shot(`theme-${id}`, `${en} task card`, `Карточка задачи: ${ru}`,316) })) },
+               { id: 'trust-header', title: t('TrustHeader', 'Шапка материала'), group: 'records', states: [{ id: 'version-date', label: t('Version · date · reading time', 'Версия · дата · время чтения'), mediaId: 'trust', shot: shot('trust','Neutral version, update date and reading time','Нейтральные версия, дата обновления и время чтения',288) }] },
+               { id: 'progress-meter', title: t('ProgressMeter', 'Индикатор позиции'), group: 'records', states: [{ id: 'position', label: t('Position 3/11', 'Позиция 3/11'), mediaId: 'progress', shot: shot('progress','Current programme position 3 of 11','Текущая позиция в программе: 3 из 11',288) }] },
+             ],
+@@ -260,20 +254,19 @@
+           } } },
+       { id: 'neutral-assessment', type: 'shot', evidenceId: 'learn-trust', mediaId: 'assessment', motion: 'reveal',
+         payload: { thesis: { label: t('Assessment', 'Зачёт'), thesis: t('An attempt has its own rules', 'У попытки свои правила'),
+-          body: t('Assessment switches to neutral. Time, remaining attempts and the passing threshold are explicit. The prototype demonstrates the mechanism; the question bank still needs expert validation.', 'Зачёт переходит в нейтральный режим. Время, оставшиеся попытки и порог видимы. Прототип показывает механику; банк вопросов ещё требует экспертной проверки.') },
++          body: t('Assessment switches to neutral. Time, remaining attempts and the passing threshold are explicit.', 'Для зачёта используется нейтральная палитра. До начала видны время, число оставшихся попыток и проходной порог.') },
+           shot: { layout: 'desktop', items: [shot('assessment','Neutral assessment introduction and complete rules','Нейтральное введение в зачёт и полные правила')], caption: t('Before the attempt: time, attempts and pass mark.', 'До попытки: время, попытки и порог.') } } },
+       { id: 'public-promise', type: 'shot', evidenceId: 'learn-landing', mediaId: 'landing', motion: 'reveal',
+-        payload: { thesis: { label: t('Landing', 'Лендинг'), thesis: t('Show the answer before asking for trust', 'Показать ответ до просьбы о доверии'),
+-          body: t('The landing introduces the same material and programme. A real product example carries the promise into the experience.', 'Лендинг знакомит с теми же материалом и программой. Реальный пример продукта переносит обещание в рабочий опыт.') },
+-          shot: { layout: 'desktop', items: [shot('landing','Learn landing with a real material and programme preview','Лендинг Learn с реальными примерами материала и программы')], caption: t('The public introduction uses its own editorial scale.', 'Публичное представление использует собственный редакционный масштаб.') } } },
++        payload: { thesis: { label: t('Landing', 'Лендинг'), thesis: t('An answer comes first', 'Показать ответ до просьбы о доверии'),
++          body: t('The landing shows an ONVIF answer and the programme contents before the reader opens the product.', 'На лендинге можно посмотреть ответ об ONVIF и состав программы перед переходом в продукт.') },
++          shot: { layout: 'desktop', items: [shot('landing','Learn landing with an ONVIF material and programme preview','Лендинг Learn с материалом об ONVIF и составом программы')], caption: t('The public introduction uses its own editorial scale.', 'Публичное представление использует собственный редакционный масштаб.') } } },
+       { id: 'honest-result', type: 'outcome', evidenceId: 'learn-validation', motion: 'static',
+-        payload: { result: { label: t('Result', 'Результат'), thesis: t('Both routes work', 'Модель работает, эффект не измерен') },
+-          evidence: { label: t('Evidence', 'Подтверждение'), text: t('Both routes are built and checked in every state, at every screen size. Usability with specialists and learning outcomes are not yet measured.', 'Оба маршрута собраны и проверены во всех состояниях на всех размерах экрана. Юзабилити со специалистами и учебный эффект ещё не измерены.') },
+-          tradeoff: { label: t('Cost', 'Цена решения'), text: t('Explicit completion costs one extra action. In the prototype, progress lives in the browser; accounts and certificates are simulated.', 'Явное завершение стоит одного лишнего действия. В прототипе прогресс живёт в браузере; аккаунт и сертификаты симулированы.') },
+-          nextEvidence: { label: t('Next evidence', 'Следующая проверка'), text: t('Test with specialists, validate the question bank, measure answer finding and programme continuation.', 'Тест со специалистами, проверка банка вопросов, замер поиска ответа и продолжения программы.') },
++        payload: { result: { label: t('Result', 'Результат'), thesis: t('Both routes work', 'Два пути к ответу') },
++          evidence: { label: t('Evidence', 'Подтверждение'), text: t('The product includes finding an open technical answer and following a programme through explicit completion and assessment. Reading history, completed units and assessment attempts are recorded separately.', 'Собраны поиск открытого технического ответа и прохождение программы с явным завершением и отдельным зачётом. История чтения, завершённые единицы и попытки зачёта учитываются отдельно.') },
++          tradeoff: { label: t('Trade-off', 'Компромисс'), text: t('Explicit completion adds an action after reading each unit.', 'После чтения каждой единицы нужно отдельно подтвердить завершение.') },
+         } },
+     ],
+-    prototype: { label: t('Try Learn', 'Открыть Learn'), href: `/prototypes/learn/home?lang=${lang}` },
++    prototype: { label: t('Open product', 'Открыть продукт'), href: `/prototypes/learn/home?lang=${lang}` },
+   });
+ }
+ 
+--- a/src/copy/cases/partner-portal.ts
++++ b/src/copy/cases/partner-portal.ts
+@@ -12,20 +12,20 @@
+ export const partnerPortalStory = defineStory({theme:'portal',plate:'light',
+   cover:{title:'Partner Portal',outcome:'A working specification, from intake to checkout.',media:{
+     variant:'proof',eyebrow:'DSSL · B2B procurement',
+-    shot:portalLineShot('open','Actual buyer decision for row 38: original source text, eight units and three catalog candidates'),
++    shot:portalLineShot('open','Buyer decision for row 38: original source text, eight units and three catalog candidates'),
+     caption:'Row 38: the source text beside three matches',
+   }},
+-  facts:[{term:'Work',value:'Commercial redesign shipped in full'},{term:'Shown',value:'Independent reconstruction on synthetic data'},
++  facts:[{term:'Work',value:'Commercial redesign shipped in full'},
+     {term:'Role',value:'Sole designer; frontend, backend, PM, QA and team lead'},
+     {term:'Period',value:'2024–winter 2026; roughly six active months across a long pause'}],
+   blocks:[
+     {id:'audit-direction',type:'comparison',motion:'reveal',evidenceId:'portal-diagnosis',mediaId:'portal-archive',payload:{
+-      thesis:{label:'Audit → direction',thesis:'Make space for the buyer',body:'The archived dashboard foregrounded promotions and left destinations behind icons. I made the specification the working object, with named navigation and separate responsibilities for matching and commercial terms.'},
+-      issue:{src:'/media/case-dssl/legacy-dashboard.webp',alt:'Safe crop of the original DSSL dashboard: promotional banner and an icon-only navigation rail',
+-        marks:[{x:55,y:10,text:'Promotion first → procurement tasks first'},{x:1.6,y:32,text:'Icons alone → named destinations'}],caption:'The archived dashboard, with audit notes'},
++      thesis:{label:'Design direction',thesis:'Make space for the buyer',body:'The archived dashboard foregrounded promotions and left destinations behind icons. I made the specification the working object, with named navigation and separate responsibilities for matching and commercial terms.'},
++      issue:{src:'/media/case-dssl/legacy-dashboard.webp',alt:'DSSL dashboard: promotional banner and an icon-only navigation rail',
++        marks:[{x:55,y:10,text:'Procurement tasks first'},{x:1.6,y:32,text:'Named destinations'}],caption:'The archived dashboard, with audit notes'},
+     }},
+     {id:'shared-specification',type:'artifact',motion:'draw',evidenceId:'portal-scope',payload:{
+-      thesis:{label:'Architecture',thesis:'Two ways into one specification',body:'XLS import and Quick order feed the same resolution workspace. Cart, supply planning and checkout have distinct jobs. This hierarchy selects eight real screens from the reconstruction.'},
++      thesis:{label:'Architecture',thesis:'A shared list',body:'XLS import and Quick order feed the same resolution workspace. Cart, supply planning and checkout have distinct jobs. The map shows eight key screens.'},
+       artifact:{data:partnerPortalMap,caption:'Eight key screens of the procurement workspace',source:{kind:'editorial',ref:'b2b-dssl/ia/sitemap.md; D007–D010'}},
+     }},
+     {id:'buyer-decision',type:'artifact',motion:'draw',evidenceId:'portal-decision',payload:{
+@@ -33,24 +33,23 @@
+       artifact:{data:partnerPortalFlow,caption:'From the right product to commercial terms to an order',source:{kind:'editorial',ref:'b2b-dssl/ia/flows/xls-to-order.mmd; D007, D010, D026'}},
+     }},
+     {id:'source-line',type:'steps',motion:'focus',evidenceId:'portal-line',mediaId:'portal-line',payload:{label:'One source row',items:[
+-      {label:'Choose',thesis:'Keep the request beside the candidates',body:'Row 38 of office_north_v8.xlsx asks for “камера 4мп уличная”, eight units. The buyer compares three matches and chooses the second.',shot:portalLineShot('open','Source row 38 and eight original units above three candidate products'),caption:'Three candidates, one choice'},
++      {label:'Choose',thesis:'Keep the request beside the candidates',body:'Row 38 of office_north_v8.xlsx asks for “камера 4мп уличная”, eight units. The buyer compares three matches and chooses the second.',shot:portalLineShot('open','Source row 38 and eight original units above three candidate products'),caption:'The second candidate selected'},
+       {label:'Confirm',thesis:'Confirm the choice, retain the source',body:'The source text and quantity remain. Confirmed records the buyer’s decision; “was Ambiguous” retains the original matching category. Undo keeps the choice reversible.',shot:portalLineShot('confirmed','Confirmed row 38, original eight units, original ambiguous category and Undo action'),caption:'Same row · chosen SKU KX-2CB4046F2-I · eight units'},
+-      {label:'Prepare',thesis:'Carry the row into commercial review',body:'Cart identifies the chosen SKU as source row 38 and keeps quantity eight. Price and availability stay separate from product identity.',shot:portalLineShot('cart','Actual Cart product row with chosen SKU, source row 38, quantity eight, price and availability'),caption:'Same row in Cart · the source trail is visible'},
++      {label:'Prepare',thesis:'Carry the row into commercial review',body:'Cart identifies the chosen SKU as source row 38 and keeps quantity eight. Price and availability stay separate from product identity.',shot:portalLineShot('cart','Cart product row with chosen SKU, source row 38, quantity eight, price and availability'),caption:'Same row in Cart · the source trail is visible'},
+     ]}},
+     {id:'domain-system',type:'specimen',motion:'static',evidenceId:'portal-domain',mediaId:'portal-specimens',payload:{
+-      thesis:{label:'Domain system',thesis:'States make the next action explicit',body:'The accepted components cover unresolved matches, import errors, uncertain stock and supply choices. A missing warehouse response reads “not confirmed”, never zero.'},
++      thesis:{label:'Domain system',thesis:'States make the next action explicit',body:'Resolution rows retain the source request after a product is chosen. Availability records the warehouse response; shipment plans show whether supply is possible. A missing warehouse response reads “not confirmed”, never zero.'},
+       specimen:partnerPortalSpecimen('en'),
+     }},
+     {id:'source-in-context',type:'shot',motion:'reveal',evidenceId:'portal-line',mediaId:'portal-application',payload:{
+-      shot:{layout:'desktop',items:[{src:'/media/rebuild/partner-portal/resolution-context-wide.webp',srcNarrow:'/media/rebuild/partner-portal/resolution-context-narrow.webp',device:'desktop',alt:'Actual Resolution Center after choosing row 38: filter, resolved tab, reversible row and global progress',altNarrow:'Native narrow Resolution Center after choosing row 38, with global progress below the row'}],caption:'Components in context · the same row after buyer confirmation'},
++      shot:{layout:'desktop',items:[{src:'/media/rebuild/partner-portal/resolution-context-wide.webp',srcNarrow:'/media/rebuild/partner-portal/resolution-context-narrow.webp',device:'desktop',alt:'Resolution Center after choosing row 38: filter, resolved tab, reversible row and global progress',altNarrow:'Narrow Resolution Center after choosing row 38, with global progress below the row'}],caption:'Components in context · the same row after buyer confirmation'},
+     }},
+     {id:'shipped-redesign',type:'outcome',motion:'static',evidenceId:'portal-shipped',payload:{
+-      result:{label:'Outcome',thesis:'The commercial redesign shipped',body:'The DSSL redesign shipped in full. The frames here are my independent reconstruction on synthetic data: they show the decisions, not business impact.'},
+-      evidence:{label:'Evidence',text:'The shipment is my own account, with no public metrics. In the reconstruction, row 38 runs from matching to Cart.'},
+-      tradeoff:{label:'Price of the solution',text:'Ambiguity still requires a buyer’s manual choice. Matching data cannot guarantee compatibility.'},
+-      nextEvidence:{label:'Next check',text:'Keep the source text on created orders, then measure time and errors. There is no business baseline yet.'},
++      result:{label:'Result',thesis:'The commercial redesign shipped',body:'The DSSL redesign shipped in full. I rebuilt the procurement scenario shown here with synthetic data.'},
++      evidence:{label:'Evidence',text:'Row 38 runs from product choice to Cart with its source text and quantity intact.'},
++      tradeoff:{label:'Trade-off',text:'Ambiguity still requires a buyer’s manual choice. Matching data cannot guarantee compatibility.'},
+     }},
+-  ],prototype:{label:'Open the live demo',href:'https://b2b-partner-portal-five.vercel.app/'},
++  ],prototype:{label:'Open product',href:'https://b2b-partner-portal-five.vercel.app/'},
+ });
+ 
+ /**
+--- a/src/copy/cases/pawly.ts
++++ b/src/copy/cases/pawly.ts
+@@ -261,35 +261,33 @@
+   const address = phone('address-input','Baikal’s address sets the service area before the walker search.','Адрес Байкала определяет зону обслуживания до поиска исполнителя.');
+   const checks = phone('verification-details','Marina’s seven dated checks, compatibility notes and complete choice action.','Семь датированных проверок Марины, условия совместимости и целое действие выбора.');
+   const active = phone('active-service','Baikal expected home by 14:50; received pickup at 14:05 and a sample route.','Байкал ожидается дома к 14:50; полученное фото передачи в 14:05 и пример маршрута.');
+-  const local: ShotItem = { ...phone('clip-return-proof-poster','Selected return photo, not sent; play the native recording of demo send and report.','Выбранное фото возвращения ещё не отправлено; нативная запись демоотправки и перехода к отчёту.'), video:`${base}/clip-return-proof`, film:true };
+-  const report = phone('order-details','Return confirmed at 14:52, two dated photos, 950 rouble demo charge and review action.','Возвращение подтверждено в 14:52, две датированные фотографии, демонстрационная сумма 950 рублей и действие отзыва.');
+-  const state = (id: string,en: string,ru: string) => ({id,mediaId:id,label:t(en,ru),shot:{src:`/media/rebuild/pawly/states/${id}-343.webp`,srcNarrow:`/media/rebuild/pawly/states/${id}-288.webp`,alt:t(`Accepted Pawly ${en}; original English UI.`,`Принятый компонент Pawly: ${ru}; исходный UI на английском.`),device:'panel' as const,nativeWidth:347}});
++  const local: ShotItem = { ...phone('clip-return-proof-poster','Selected return photo before sending; video follows sending and opening the report.','Выбранное фото возвращения перед отправкой; видео показывает отправку и открытие отчёта.'), video:`${base}/clip-return-proof`, film:true };
++  const report = phone('order-details','Return confirmed at 14:52, two dated photos, 950 rouble charge and review action.','Возвращение подтверждено в 14:52, две датированные фотографии, сумма 950 рублей и действие отзыва.');
++  const state = (id: string,en: string,ru: string) => ({id,mediaId:id,label:t(en,ru),shot:{src:`/media/rebuild/pawly/states/${id}-343.webp`,srcNarrow:`/media/rebuild/pawly/states/${id}-288.webp`,alt:t(`Pawly ${en} state.`,`Состояние Pawly: ${ru}.`),device:'panel' as const,nativeWidth:347}});
+   const specimen: Specimen = {
+-    title:t('Care, in three component families','Забота в трёх семействах компонентов'),fontFamily:'Inter, sans-serif',
+-    type:[{style:'Body',usage:{en:'Event',ru:'Событие'},size:15,lineHeight:22.5,weight:500,sample:{en:'Return confirmed',ru:'Return confirmed'}},{style:'Small',usage:{en:'Proof caption',ru:'Подпись фото'},size:13,lineHeight:19.5,weight:500,sample:{en:'Pickup · 14:05',ru:'Pickup · 14:05'}}],
+-    colors:[{name:t('Action','Действие'),hex:'#2563EB'},{name:t('Care context','Контекст заботы'),hex:'#FAF9F7'},{name:t('Confirmed event','Подтверждённое событие'),hex:'#167A4C'}],
++    title:t('Photo confirmation and walk events','Подтверждение фото и события прогулки'),fontFamily:'Inter, sans-serif',
++    type:[], colors:[],
+     groups:[{id:'care-evidence',title:t('Proof, events and explanations','Доказательства, события и пояснения')}],
+     sets:[
+-      {id:'photo-proof',title:'PhotoProof',group:'care-evidence',states:[state('photo-pending','Pending · no confirmation','Ожидание · подтверждения нет'),state('photo-local','Local · selected, not sent','Локально · выбрано, не отправлено'),state('photo-confirmed','Confirmed · received event','Подтверждено · событие получено'),state('photo-unavailable','Unavailable image · event stays recorded','Картинка недоступна · событие сохранено')]},
+-      {id:'timeline-row',title:'TimelineRow',group:'care-evidence',states:[state('timeline-done','Done','Завершено'),state('timeline-current','Current','Текущее'),state('timeline-pending','Pending','Ожидание'),state('timeline-photo','Event with a photo','Событие с фотографией')]},
+-      {id:'info-note',title:'InfoNote',group:'care-evidence',wide:true,states:[state('note-hint','Hint','Пояснение'),state('note-warning','Warning','Предупреждение'),state('note-disclosure','Disclosure · explicit action','Раскрытие · явное действие')]},
+-    ],caption:t('Selection, events and warnings: one family each.','Выбор, события и предупреждения — по семейству на каждое. Интерфейс каталога на английском.'),
++      {id:'photo-proof',title:'PhotoProof',group:'care-evidence',states:[state('photo-pending','Pending · no confirmation','Ожидание · подтверждения нет'),state('photo-local','Local · selected, not sent','Локально · выбрано, не отправлено'),state('photo-confirmed','Confirmed · received event','Подтверждено · событие получено')]},
++      {id:'timeline-row',title:'TimelineRow',group:'care-evidence',states:[state('timeline-done','Done','Завершено'),state('timeline-current','Current','Текущее')]},
++    ],caption:t('Photo confirmation stays separate from the walk’s current step.','Подтверждение фото отделено от текущего этапа прогулки. На кадрах — английский интерфейс.'),
+   };
+   return defineStory({theme:'pawly',plate:'light',
+-    cover:{title:'Pawly',outcome:t('A familiar face. A clear return. Proof the dog is home.','Знакомое лицо. Понятное возвращение. Подтверждение, что собака дома.'),media:{variant:'screen',layout:'phones',items:[profile,active,report]}},
+-    facts:[{term:t('Role','Роль'),value:t('Sole product designer','Единственный продуктовый дизайнер')},{term:t('Version','Версия'),value:t('September 2026 · EN/RU','Сентябрь 2026 · EN/RU')},{term:t('Evidence','Проверка'),value:t('Synthetic QA across seventeen EN/RU routes','Синтетические прогоны семнадцати маршрутов EN/RU')}],
++    cover:{title:'Pawly',outcome:t('An owner chooses a walker and receives confirmation that the dog is home.','Владелец выбирает выгульщика и получает подтверждение возвращения собаки.'),media:{variant:'screen',layout:'phones',items:[profile,active,report]}},
++    facts:[{term:t('Role','Роль'),value:t('Sole product designer','Единственный продуктовый дизайнер')},{term:t('Version','Версия'),value:t('September 2026 · EN/RU','Сентябрь 2026 · EN/RU')}],
+     blocks:[
+-      {id:'care-context',type:'thesis',evidenceId:'paw-concept',payload:{label:t('The situation','Ситуация'),thesis:t('Handing over a dog takes trust','Передать собаку — значит довериться'),body:t('An owner at work hands over a pet, sometimes the keys. I framed trust as inspectable evidence: who can handle this dog, when they should return, and what has actually been received.','Владелец на работе передаёт питомца, иногда ключи. Я связал доверие с проверяемыми основаниями: кто справится с собакой, когда её ждать и какое подтверждение уже получено.')}},
+-      {id:'compatibility',type:'process',evidenceId:'paw-match',mediaId:'paw-profile',payload:{thesis:{label:t('Before booking','До бронирования'),thesis:t('A match needs a reason','У выбора есть основание'),body:t('Baikal’s needs sit beside Marina’s recorded limits. Seven dated checks answer a different question. Changing the time can change availability; it cannot remove the dog’s risks.','Потребности Байкала стоят рядом с записанными пределами Марины. Семь датированных проверок отвечают на другой вопрос. Другое время меняет доступность, но не убирает риски собаки.')},slides:[{shot:address},{shot:phone('walker-list','Compatible walker list for a 45-minute 950 rouble fixture.','Подходящие исполнители для фикстуры 45 минут, 950 рублей.')},{shot:profile},{shot:checks}],captions:[t('The address determines the service area before search.','Адрес определяет зону обслуживания до поиска.'),t('The same requirements follow the booking into the candidate list.','Те же требования сохраняются в списке исполнителей.'),t('Requirements before checks. The primary action stays visible.','Потребности перед проверками. Основное действие видно целиком.'),t('What was checked, and when. Evidence stays inspectable.','Что проверено и когда. Основания доступны для проверки.')]}},
++      {id:'care-context',type:'thesis',evidenceId:'paw-concept',payload:{label:t('The situation','Ситуация'),thesis:t('Handing over a dog takes trust','Передать собаку — значит довериться'),body:t('Owners hand over a dog and sometimes keys. Trust rests on who can handle the dog, when it should return and which photos have arrived. Characters and scenario data are invented.','Владелец на работе передаёт питомца, иногда ключи. Я связал доверие с проверяемыми основаниями: кто справится с собакой, когда её ждать и какое подтверждение уже получено. Персонажи и данные показанного сценария вымышлены.')}},
++      {id:'compatibility',type:'process',evidenceId:'paw-match',mediaId:'paw-profile',payload:{thesis:{label:t('Before booking','До бронирования'),thesis:t('A match needs a reason','У выбора есть основание'),body:t('Baikal’s needs sit beside Marina’s recorded limits. Seven dated checks answer a different question. Changing the time can change availability; it cannot remove the dog’s risks.','Потребности Байкала стоят рядом с записанными пределами Марины. Семь датированных проверок отвечают на другой вопрос. Другое время меняет доступность, но не убирает риски собаки.')},slides:[{shot:address},{shot:phone('walker-list','Compatible walkers for a 45-minute walk costing 950 roubles.','Подходящие выгульщики для прогулки на 45 минут за 950 рублей.')},{shot:profile},{shot:checks}],captions:[t('The address determines the service area before search.','Адрес определяет зону обслуживания до поиска.'),t('The same requirements follow the booking into the candidate list.','Те же требования сохраняются в списке исполнителей.'),t('Requirements before checks. The primary action stays visible.','Потребности перед проверками. Основное действие видно целиком.'),t('What was checked, and when. Evidence stays inspectable.','Что проверено и когда. Основания доступны для проверки.')]}},
+       {id:'return-boundary',type:'steps',evidenceId:'paw-return',mediaId:'paw-return-sequence',motion:'static',payload:{label:t('The return boundary','Граница возвращения'),items:[
+         {label:t('Expected','Ожидается'),thesis:t('A time to plan around','Время, на которое можно опереться'),body:t('Expected home by 14:50. The received pickup photo leads; the map remains a labelled sample.','Ожидается дома к 14:50. Полученное фото передачи важнее карты, явно названной примером.'),shot:active,caption:t('Expectation and received evidence are different claims.','Ожидание и полученное доказательство — разные утверждения.')},
+-        {label:t('Selected','Выбрано'),thesis:t('A photo is still a draft','Фотография ещё остаётся черновиком'),body:t('Check the full photo before sending. Press play to follow a demo send into the report. A failed send keeps the draft and offers retry.','Проверьте полный кадр до отправки. Нажмите воспроизведение: демоотправка ведёт к отчёту. При сбое черновик сохраняется, отправку можно повторить.'),shot:local,caption:t('Explicit send reaches the report. Local selection alone cannot.','Явная отправка ведёт к отчёту. Локальный выбор ещё не завершение.')},
++        {label:t('Selected','Выбрано'),thesis:t('A photo is still a draft','Фотография ещё остаётся черновиком'),body:t('Check the full photo before sending. The video follows sending the photo and opening the report. A failed send keeps the draft and offers retry.','Проверьте полный кадр до отправки. Видео показывает отправку фотографии и переход к отчёту. При сбое черновик сохраняется, отправку можно повторить.'),shot:local,caption:t('Explicit send reaches the report. Local selection alone cannot.','Явная отправка ведёт к отчёту. Локальный выбор ещё не завершение.')},
+         {label:t('Confirmed','Подтверждено'),thesis:t('Now the report can say home','В отчёте — собака дома'),body:t('Only a successful send records 14:52. The owner sees both dated handovers.','Только успешная отправка фиксирует 14:52. Владелец видит обе датированные передачи.'),shot:report,caption:t('Two received photos support one completed walk.','Две полученные фотографии подтверждают одну завершённую прогулку.')},
+       ]}},
+       {id:'proof-system',type:'specimen',evidenceId:'paw-catalogue',mediaId:'paw-specimens',payload:{specimen}},
+-      {id:'walker-earnings',type:'shot',evidenceId:'paw-settlement',mediaId:'paw-earnings',payload:{thesis:{label:t('The other role','Вторая роль'),thesis:t('The same walk, one earning','Одна прогулка — одно начисление'),body:t('950 − 171 = 779 ₽. The net earning is separate from available balance and period history. Re-entry does not pay twice.','950 − 171 = 779 ₽. Начисление отделено от доступного баланса и истории периода. Повторный вход не платит дважды.')},shot:{layout:'phones',items:[phone('walker-earnings','Walker earnings: 3895 roubles available after one 779 rouble settlement, period history below.','Заработок исполнителя: доступно 3895 рублей после одного начисления 779 рублей, ниже история периода.')],caption:t('3,116 + 779 = 3,895 ₽ available for payout.','3116 + 779 = 3895 ₽ к выплате.')}}},
+-      {id:'inspectable-care',type:'outcome',evidenceId:'paw-acceptance',motion:'static',payload:{result:{label:t('What is complete','Что завершено'),thesis:t('A chain you can inspect','Цепочка, которую можно проверить')},evidence:{label:t('Implemented','Реализовано'),text:t('Compatibility, two confirmed photos and one settlement across both roles. All 17 routes work in English and Russian.','Совместимость, два подтверждённых фото и одно начисление для обеих ролей. Все 17 маршрутов работают на русском и английском.')},tradeoff:{label:t('The boundary','Граница'),text:t('One demo booking; no live GPS, upload or payments. Choosing and sending add a deliberate step.','Одна демобронь; без живого GPS, загрузки и платежей. Выбор и отправка требуют отдельного шага.')},nextEvidence:{label:t('Next question','Следующий вопрос'),text:t('Do owners and walkers understand these boundaries in a real task?','Понимают ли владельцы и исполнители эти границы в реальной задаче?')}}},
+-    ],prototype:{label:t('Explore the EN demo','Открыть демо на русском'),href:`https://pawly-fawn.vercel.app/${locale==='ru'?'ru/':''}app`},
++      {id:'walker-earnings',type:'shot',evidenceId:'paw-settlement',mediaId:'paw-earnings',payload:{thesis:{label:t('The other role','Вторая роль'),thesis:t('The walk produces a single earning','779 ₽ за выгул'),body:t('950 − 171 = 779 ₽. The net earning is separate from available balance and period history. Re-entry does not pay twice.','950 − 171 = 779 ₽. Начисление отделено от доступного баланса и истории периода. Повторный вход не платит дважды.')},shot:{layout:'phones',items:[phone('walker-earnings','Walker earnings: 3895 roubles available after one 779 rouble settlement, period history below.','Заработок исполнителя: доступно 3895 рублей после одного начисления 779 рублей, ниже история периода.')],caption:t('3,116 + 779 = 3,895 ₽ available for payout.','3116 + 779 = 3895 ₽ к выплате.')}}},
++      {id:'inspectable-care',type:'outcome',evidenceId:'paw-acceptance',motion:'static',payload:{result:{label:t('Result','Результат'),thesis:t('A chain you can inspect','Факты видны')},evidence:{label:t('Implemented','Реализовано'),text:t('Compatibility, two confirmed photos and one settlement across both roles. All 17 routes work in English and Russian.','Совместимость, два подтверждённых фото и одно начисление для обеих ролей. Все 17 маршрутов работают на русском и английском.')},tradeoff:{label:t('Trade-off','Компромисс'),text:t('Choosing the walker and sending a return photo each require an explicit action.','Выбор выгульщика и отправку фото возвращения нужно подтвердить отдельными действиями.')}}},
++    ],prototype:{label:t('Open product','Открыть продукт'),href:`https://pawly-fawn.vercel.app/${locale==='ru'?'ru/':''}app`},
+   });
+ }
+ export const pawlyStory = createPawlyStory('en');
+--- a/src/copy/cases/vet-clinic.ts
++++ b/src/copy/cases/vet-clinic.ts
+@@ -64,30 +64,29 @@
+   const root='/media/rebuild/vet-clinic';
+   const shot=(name:string,en:string,ru:string,nativeWidth?:number):ShotItem=>({src:`${root}/${name}-${lang}-wide.webp`,srcNarrow:`${root}/${name}-${lang}-narrow.webp`,alt:t(en,ru),device:'panel',nativeWidth});
+   return defineStory({theme:'vet',plate:'light',
+-    cover:{title:'Vet Clinic OS',outcome:t('One visit. Different responsibilities.','Один визит. Разные зоны ответственности.'),media:{variant:'proof',eyebrow:'',shot:{...shot('cover','Quick trace: Marsik, weight, complete dose calculation and Save actions.','Короткий след: Марсик, вес, целый расчёт дозы и действия сохранения.')},caption:t('The vet saves prescriptions; reception bills services; owners receive the summary.','Один пример: врач сохраняет назначение, регистратура выставляет счёт, владелец получает выписку.')}},
++    cover:{title:'Vet Clinic OS',outcome:t('The vet, receptionist and owner handle their parts of the visit.','Врач, администратор и владелец ведут свои части приёма.'),media:{variant:'proof',eyebrow:'',shot:{...shot('cover','Quick trace: Marsik, weight, complete dose calculation and Save actions.','Короткий след: Марсик, вес, целый расчёт дозы и действия сохранения.')},caption:t('The vet saves prescriptions; reception bills services; owners receive the summary.','Один пример: врач сохраняет назначение, регистратура выставляет счёт, владелец получает выписку.')}},
+     facts:[
+       {term:t('Role','Роль'),value:t('Sole product designer','Единственный продуктовый дизайнер')},
+       {term:t('Input','Основание'),value:t('Conversations with one practising vet','Разговоры с одним практикующим врачом')},
+-      {term:t('Delivery','Результат'),value:t('Working prototype · 2026','Рабочий прототип · 2026')},
+-      {term:t('Data','Данные'),value:t('Real clinic under NDA; all demo data invented','Реальная клиника под NDA; все демо-данные вымышлены')},
++      {term:t('Year','Год'),value:'2026'},
+     ],blocks:[
+       {id:'room-window',type:'shot',evidenceId:'vet-window',mediaId:'vet-queue',motion:'static',payload:{
+-        thesis:{label:t('Constraint','Ограничение'),thesis:t('A trace before the next patient','След за время паузы'),body:t('I separated a useful trace from the complete record. Thirty seconds between patients was the original constraint, not a measured speed of the new interface.','Я отделил полезный след от полной записи. Тридцать секунд между пациентами — исходное ограничение, а не измеренная скорость нового интерфейса.')},
++        thesis:{label:t('Constraint','Ограничение'),thesis:t('A trace before the next patient','След в паузе'),body:t('The clinic is under NDA; names and clinical data are invented. I separated a useful trace from the full record. Thirty seconds between patients was the design constraint, not a measured interface speed.','Клиника защищена NDA; имена и медицинские данные на экранах вымышлены. Я отделил полезный след от полной записи. Тридцать секунд между пациентами — исходное ограничение, а не измеренная скорость нового интерфейса.')},
+         shot:{layout:'desktop',items:[{src:`${root}/queue-${lang}.webp`,srcNarrow:`${root}/queue-${lang}-narrow.webp`,device:'panel',alt:t('Today’s queue: all patients at the clinic and an emergency action; wide view includes expected visits.','Очередь дня: все пациенты в клинике и экстренное действие; широкий кадр также показывает ожидаемых.')}],caption:t('Patients first; unfinished records stay visible.','Сначала пациенты; незавершённые записи остаются видны.')},
+       }},
+-      {id:'role-boundaries',type:'artifact',evidenceId:'vet-roles',mediaId:'vet-role-flow',motion:'draw',payload:{thesis:{label:t('Role flow','Ролевой сценарий'),thesis:t('Each role receives its own part','У каждой роли своя часть')},artifact:{data:vetRoleFlow,source:{kind:'editorial',ref:'Veterinary-clinic: current ProductScreens / clinicData; visit-trace + discharge-and-invoice'},caption:t('Each role gets only its part of the visit.','Каждая роль получает только свою часть визита.')}}},
+-      {id:'one-visit',type:'steps',evidenceId:'vet-roles',mediaId:'vet-handoff',motion:'static',payload:{composition:'handoff',label:t('One visit · three views','Один визит · три представления'),items:[
+-        {label:t('Veterinarian · tablet','Врач · планшет'),thesis:t('Save the useful facts','Вес, препарат и доза'),body:t('Weight, medication and dose become sourced facts. The full note can follow later. Here: Marsik, 4.9 kg, Meloxicam, 1.00 ml. Saved at 09:12.','Вес, препарат и доза становятся фактами с источником. Полную запись можно дописать позже. Здесь: Марсик, 4.9 кг, мелоксикам, 1.00 мл. Сохранено в 09:12.'),shot:shot('trace','Marsik’s saved facts: 4.9 kg, Meloxicam, 1.00 ml, frequency, source and time.','Сохранённые факты Марсика: 4.9 кг, мелоксикам, 1.00 мл, частота, источник и время.')},
+-        {label:t('Reception · desktop','Регистратура · desktop'),thesis:t('Bill the work, keep the note private','Счёт готов'),body:t('Selected services create the invoice. Reception sees payer, items and total. Diagnosis and private notes stay in the clinic; payment happens outside the prototype. Two services for Marsik.','Выбранные услуги составляют счёт. Регистратура видит плательщика, позиции и итог. Диагноз и приватная заметка остаются в клинике; оплата происходит вне прототипа. Две услуги Марсика.'),shot:shot('invoice','Complete invoice: payer, selected services, total and payment action.','Целый счёт: плательщик, выбранные услуги, итог и действие отметки оплаты.',640)},
+-        {label:t('Owner · phone','Владелец · телефон'),thesis:t('The family gets a stable plan','План уже у семьи'),body:t('The owner receives the same prescription in a published snapshot. A later saved edit does not silently rewrite it. Publishing a new version is explicit. Published at 09:13.','Владелец получает то же назначение в опубликованном снимке. Поздняя сохранённая правка не переписывает его молча. Новая версия публикуется явно. Публикация 09:13.'),shot:{src:`${root}/owner-detail-${lang}.webp`,srcNarrow:`${root}/owner-${lang}.webp`,device:'panel',nativeWidth:390,alt:t('Phone details: Marsik, publication 09:13, Meloxicam 1.00 ml and complete discharge action; mobile shows the full owner view.','Детали телефона: Марсик, публикация 09:13, мелоксикам 1.00 мл и целое действие выписки; на mobile — полный кабинет владельца.')}},
++      {id:'role-boundaries',type:'artifact',evidenceId:'vet-roles',mediaId:'vet-role-flow',motion:'draw',payload:{thesis:{label:t('Role flow','Ролевой сценарий'),thesis:t('Each role receives its own part','У каждой роли своя часть')},artifact:{data:vetRoleFlow,source:{kind:'editorial',ref:'Veterinary-clinic: current ProductScreens / clinicData; visit-trace + discharge-and-invoice'},caption:t('Prescription, invoice and published summary.','Назначение, счёт и опубликованная выписка.')}}},
++      {id:'one-visit',type:'steps',evidenceId:'vet-roles',mediaId:'vet-handoff',motion:'static',payload:{composition:'handoff',label:t('Visit handoff','Передача результатов приёма'),items:[
++        {label:t('Veterinarian','Врач'),thesis:t('Save the useful facts','Вес, препарат и доза'),body:t('Weight, medication and dose become sourced facts. The full note can follow later. Here: Marsik, 4.9 kg, Meloxicam, 1.00 ml. Saved at 09:12.','Вес, препарат и доза становятся фактами с источником. Полную запись можно дописать позже. Здесь: Марсик, 4.9 кг, мелоксикам, 1.00 мл. Сохранено в 09:12.'),shot:shot('trace','Marsik’s saved facts: 4.9 kg, Meloxicam, 1.00 ml, frequency, source and time.','Сохранённые факты Марсика: 4.9 кг, мелоксикам, 1.00 мл, частота, источник и время.')},
++        {label:t('Reception','Администратор'),thesis:t('Bill the work, keep the note private','Счёт готов'),body:t('Selected services create the invoice. Reception sees payer, items and total. Diagnosis and private notes stay in the clinic. Two services for Marsik.','Выбранные услуги составляют счёт. Регистратура видит плательщика, позиции и итог. Диагноз и приватная заметка остаются в клинике. Две услуги Марсика.'),shot:shot('invoice','Complete invoice: payer, selected services, total and payment action.','Целый счёт: плательщик, выбранные услуги, итог и действие отметки оплаты.',640)},
++        {label:t('Owner','Владелец'),thesis:t('The family gets a stable plan','План уже у семьи'),body:t('The owner receives the same prescription in a published snapshot. A later saved edit does not silently rewrite it. Publishing a new version is explicit. Published at 09:13.','Владелец получает то же назначение в опубликованном снимке. Поздняя сохранённая правка не переписывает его молча. Новая версия публикуется явно. Публикация 09:13.'),shot:{src:`${root}/owner-detail-${lang}.webp`,srcNarrow:`${root}/owner-${lang}.webp`,device:'panel',nativeWidth:390,alt:t('Phone details: Marsik, publication 09:13, Meloxicam 1.00 ml and complete discharge action; mobile shows the full owner view.','Детали телефона: Марсик, публикация 09:13, мелоксикам 1.00 мл и целое действие выписки; на mobile — полный кабинет владельца.')}},
+       ]}},
+-      {id:'save-is-not-publish',type:'process',evidenceId:'vet-publication',mediaId:'vet-boundaries',motion:'static',payload:{thesis:{label:t('State boundaries','Границы состояний'),thesis:t('Saved does not mean published','Запись и выписка живут отдельно'),body:t('Unsaved form, saved record and published document are independent states. The owner can still read an older publication while the doctor edits the record.','Несохранённая форма, сохранённая запись и опубликованный документ — независимые состояния. Владелец может читать прежнюю публикацию, пока врач меняет запись.')},slides:[
++      {id:'save-is-not-publish',type:'process',evidenceId:'vet-publication',mediaId:'vet-boundaries',motion:'static',payload:{thesis:{label:t('State boundaries','Границы состояний'),thesis:t('The owner keeps a copy','У владельца своя копия'),body:t('Unsaved form, saved record and published document are independent states. The owner can still read an older publication while the doctor edits the record.','Несохранённая форма, сохранённая запись и опубликованный документ — независимые состояния. Владелец может читать прежнюю публикацию, пока врач меняет запись.')},slides:[
+         {shot:shot('draft','Unsaved changes, weight 4.9 and complete Save actions.','Несохранённые правки, вес 4.9 и целые действия сохранения.',768)},
+         {shot:shot('saved','Saved at 09:12; weight persists after reload.','Сохранено в 09:12; вес переживает перезагрузку.',768)},
+         {shot:shot('publication','Published version 1, Changes are not published, Publish new version.','Опубликована версия 1, новые правки не опубликованы, действие новой публикации.',358)},
+       ],captions:[t('Unsaved edits live only in this form.','Несохранённые правки живут только в этой форме.'),t('Save survives reload; it does not publish.','Сохранение переживает перезагрузку, но не публикует.'),t('The owner still reads the published snapshot.','Владелец всё ещё читает опубликованный снимок.')]}},
+-      {id:'prototype-boundary',type:'outcome',evidenceId:'vet-outcome',motion:'static',payload:{result:{label:t('Result','Результат'),thesis:t('A working path, with clear limits','Рабочий путь с ясными границами')},evidence:{label:t('Evidence','Подтверждение'),text:t('The trace, invoice and summary connect end to end in the prototype. Conversations with one practising vet informed the role flows and recording decisions.','След, счёт и выписка связаны в прототипе от начала до конца. Разговоры с одним практикующим врачом помогли определить ролевые сценарии и правила записи.')},tradeoff:{label:t('Cost','Цена решения'),text:t('Save and Publish are two actions, not one. The prototype keeps data in one browser and does not store past versions.','Сохранение и публикация — два действия, а не одно. Прототип хранит данные в одном браузере и не хранит прошлые версии.')},nextEvidence:{label:t('Next evidence','Следующая проверка'),text:t('Observe real handoffs, interrupted work and record recovery in a practice.','Наблюдать передачу, прерванную работу и восстановление записи в реальной практике.')}}},
+-    ],prototype:{label:t('Open the demo','Открыть демо'),href:PROTOTYPE+(lang==='ru'?'ru/':'')},
++      {id:'prototype-boundary',type:'outcome',evidenceId:'vet-outcome',motion:'static',payload:{result:{label:t('Result','Результат'),thesis:t('The roles stay linked','Роли связаны')},evidence:{label:t('Evidence','Подтверждение'),text:t('The trace, invoice and summary connect end to end in the prototype. Conversations with one practising vet informed the role flows and recording decisions.','След, счёт и выписка связаны в прототипе от начала до конца. Разговоры с одним практикующим врачом помогли определить ролевые сценарии и правила записи.')},tradeoff:{label:t('Trade-off','Компромисс'),text:t('The doctor saves the record and publishes the owner’s summary in separate actions.','Врач отдельно сохраняет запись и публикует выписку для владельца.')}}},
++    ],prototype:{label:t('Open product','Открыть продукт'),href:PROTOTYPE+(lang==='ru'?'ru/':'')},
+   });
+ }
+ export const vetClinicStory=makeVetStory('en');
+--- a/src/copy/learn-vet-stage.ts
++++ b/src/copy/learn-vet-stage.ts
+@@ -3,10 +3,10 @@
+   const ru = locale === 'ru';
+   return {
+     learn: {
+-      title: ru ? 'Один материал' : 'One material',
++      title: ru ? 'Ответ об ONVIF в справочнике и программе' : 'The ONVIF answer in the reference and programme',
+       detail: ru
+-        ? 'Ответ в справочнике и тот же ресурс в учебной программе.'
+-        : 'An answer in the reference, the same resource in a learning path.',
++        ? ''
++        : '',
+     },
+     vet: {
+       caption: ru
+--- a/src/copy/ru/about.ts
++++ b/src/copy/ru/about.ts
+@@ -29,8 +29,8 @@
+     heading: 'За что я готов отвечать',
+     body: [
+       'В каждом моём кейсе есть раздел о том, что не сработало, и он нужен не ради скромности. Порядок работы над проектом — тоже дизайн-решение, а ошибки в этом порядке трудно подделать. В DSSL я закончил шесть экранов до того, как сверил их структуру с похожими продуктами. Структурная находка стоит одного абзаца до появления экрана и полной пересборки после. Ещё два дефекта позже я сначала диагностировал неверно; исправление любой из этих диагностик не исправило бы саму проблему.',
+-      'Большая часть выпущенных мной продуктов защищена NDA, а у некоторых не было исходной точки для сравнения: метрики были планом измерения, а не заявлением о результате. Я не публикую числа, за которые не могу отвечать, и не выдаю план за итог. Вместо этого показываю компромисс: чего достиг дизайн, чего это стоило, у кого прибавилось работы и что должно измениться, чтобы убрать эту цену. Названный компромисс можно проверить в разговоре; число без базы — нельзя.',
+-      'Тот же принцип касается того, что я отдаю. Я довожу дизайн-решения до работающей сборки: токены, компоненты в коде, задеплоенный адрес, проверка по живому экрану — потому что решение, остановившееся на файле для передачи в разработку, ещё не проверено. Границу называю так же, как назвал бы в разговоре: фронтенд и интеграция с существующим API, и большинство таких сборок — прототипы на синтетических данных, а не продакшн под нагрузкой.',
++      'Большая часть выпущенных мной продуктов защищена NDA, а у некоторых не было исходной точки для сравнения: метрики были планом измерения, а не заявлением о результате. Я не публикую числа, за которые не могу отвечать, и не выдаю план за итог. Вместо этого показываю компромисс: чего достиг дизайн, чего это стоило, у кого прибавилось работы и что должно измениться, чтобы убрать эту цену.',
++      'Тот же принцип касается того, что я отдаю. Я довожу дизайн-решения до работающей сборки: токены, компоненты в коде, задеплоенный адрес, проверка по живому экрану — потому что решение, остановившееся на файле для передачи в разработку, ещё не проверено. Моя область реализации — фронтенд и интеграция с существующим API.',
+     ],
+   },
+   portrait: {
+@@ -45,7 +45,7 @@
+     body: [
+       'Я использую ИИ не на одном этапе, а на протяжении всего проекта: от первого интервью и брифа через исследование, персоны и сценарии, PRD, информационную архитектуру и дизайн-систему — до кода, тестирования и деплоя. Несколько моделей и инструментов под разные задачи, а не один помощник для всего.',
+       'В моём процессе он оправдывает себя объёмом и первыми версиями: помогает разобрать больше сопоставимых продуктов, чем я успею вручную; переформулировать требование, пока не станет видна его слабая версия; пройти готовый сценарий и показать, где он ломается. Такая последняя проверка не раз находила дефекты на экранах, которые я уже считал готовыми.',
+-      'Граница проходит по суждению и доказательствам. ИИ может показать варианты и точки отказа, но не выбирает объект, вокруг которого строится система, не решает, какое ограничение принять, и не превращает предположение в пользовательскую находку. Эти решения — и опубликованный компромисс — остаются моими.',
++      'ИИ может показать варианты и точки отказа, но не выбирает объект, вокруг которого строится система, не решает, какое ограничение принять, и не превращает предположение в пользовательскую находку. Эти решения — и опубликованный компромисс — остаются моими.',
+     ],
+   },
+ };
+--- a/src/copy/ru/cases/agent-ops-console.ts
++++ b/src/copy/ru/cases/agent-ops-console.ts
+@@ -210,41 +210,41 @@
+ const stepTexts = [
+   { label: 'Найти причину', thesis: 'Семнадцать чатов. Одна причина.', body: 'Повторяющиеся причины я поднял над отдельными чатами и отсортировал по финансовому риску. Одна устаревшая статья требует одной правки источника вместо семнадцати отдельных вердиктов.', caption: 'Причины по сумме под риском' },
+   { label: 'Проверить обещание', thesis: 'Слова рядом с фактами', body: 'Сложный случай проходил через пять инструментов. Я объединил разговор, след агента и вердикт; переписка отмечает утверждение без подтверждения.', caption: 'Переписка, след и вердикт в одной рабочей области' },
+-  { label: 'Прочитать обещание', thesis: 'У обещания нет опоры', body: 'Разговор остаётся целым. Обещание возврата без подтверждения отмечено прямо в сообщении: ревьюер видит, что услышал клиент.', caption: 'Вся переписка, обещание без опоры отмечено' },
+-  { label: 'Одобрить последствие', thesis: 'Нет «да» — нет выплаты', body: 'Возврат ждёт человека. Сумма, правило и сообщение клиенту видны до одобрения. Отказ остаётся доступным, даже если доказательств не хватает.', caption: 'Возврат $340 ждёт одобрения' },
++  { label: 'Прочитать обещание', thesis: 'Нужны факты', body: 'Разговор остаётся целым. Обещание возврата без подтверждения отмечено прямо в сообщении: ревьюер видит, что услышал клиент.', caption: 'Вся переписка, обещание без опоры отмечено' },
++  { label: 'Одобрить последствие', thesis: 'Нужно одобрение', body: 'Возврат ждёт человека. Сумма, правило и сообщение клиенту видны до одобрения. Отказ остаётся доступным, даже если доказательств не хватает.', caption: 'Возврат $340 ждёт одобрения' },
+ ];
+ const blocks: CaseBlock[] = en.blocks.map(block => {
+   switch (block.type) {
+     case 'numbers': return { ...block, payload: {
+-      thesis: { label: 'Задача', thesis: 'Читать обещания, а не переписки', body: 'Агент закрывал 61% обращений самостоятельно. Затем пообещал четырнадцать возвратов по истёкшей акции: $23,000. Команда из 24 человек не расширялась. Проверять каждый разговор было невозможно.' },
++      thesis: { label: 'Задача', thesis: 'Проверка слов', body: 'Агент закрывал 61% обращений самостоятельно. Затем пообещал четырнадцать возвратов по истёкшей акции: $23 000. Команда из 24 человек не расширялась. Проверять каждый разговор было невозможно.' },
+       items: [{ value:'1 770', caption:'чатов агента в день' }, { value:'71', caption:'обещание в день · оценка' }, { value:'2,4 ч', caption:'на ревью в день · оценка' }],
+       note: 'Проектная оценка: 177 часов ежедневного ревью переписок и 25 ревьюеров против 2,4 часа проверки обещаний. Это не измеренная экономия.',
+     } };
+-    case 'steps': return { ...block, payload: { ...block.payload, label:'Причина → обещание → решение', gate:'Решение человека',
++    case 'steps': return { ...block, payload: { ...block.payload, label:'От причины к проверке обещания и решению', gate:'Решение человека',
+       items:block.payload.items.map((item,i) => ({ ...item, ...stepTexts[i], shot: { ...localMedia(item.shot), alt: [
+         'Четыре целые группы причин: истёкшая акция, продление пробного периода, неподтверждённый SLA и прежняя цена',
+         'Рабочая область с перепиской, доказательствами и вердиктом; узкий вид показывает целую панель разговора',
+-        'Шесть настоящих реплик прототипа с отмеченным обещанием возврата без доказательства',
++        'Шесть реплик переписки с отмеченным обещанием возврата без доказательства',
+         'Целая карточка одобрения возврата $340: клиент, причина, правило, биллинг, история и оба действия',
+       ][i] } })),
+     } };
+     case 'detail': return { ...block, payload: { thesis: { label:'Крупнее', thesis:'Пробел в данных тоже важен', body:'Пустой след может означать выдуманный ответ или потерянные данные провайдера. Я сделал пробел явным: ревьюер отличает совпадение правила от статьи, к которой агент не обращался.' },
+       callout:{ ...localMedia(block.payload.callout), alt:'Целая панель доказательств: намерение, совпадение правила, пропущенная статья, вызов биллинга и записанное обещание',
+-        marks:block.payload.callout.marks.map((m,i) => ({ ...m, text:['Совпадение правила записано','Пропущенная статья названа','Вызов биллинга содержит сумму','Обещание теперь записано'][i] })), caption:'Почему агент так ответил: панель доказательств' } } };
++        marks:block.payload.callout.marks.map((m,i) => ({ ...m, text:['Совпадение правила записано','Пропущенная статья названа','Сумма выплаты видна в запросе к биллингу','Обещание теперь записано'][i] })), caption:'Почему агент так ответил: панель доказательств' } } };
+     case 'outcome': return { ...block, payload: {
+       presentation: 'editorial', cards: [{ value: '19', caption: 'экранов · принятый прототип' }, { value: '3', caption: 'роли · одна система контроля' }],
+-      result:{ label:'Результат', thesis:'Прототип принят', body:'Пользовательское тестирование определило доработки. Клиент принял прототип: девятнадцать экранов для трёх ролей. Внедрение осталось на стороне клиента.' },
+-      tradeoff:{ label:'Цена решения', text:'Каждая выплата ждёт человека. Контроль возвращается команде, но автоматизация заканчивается там, где движутся деньги.' },
++      result:{ label:'Результат', thesis:'Работа принята', body:'Заказчик защищён NDA; данные на экранах вымышлены. Пользовательское тестирование определило доработки. Работа принята прототип: девятнадцать экранов для трёх ролей. Внедрение осталось на стороне клиента.' },
++      tradeoff:{ label:'Компромисс', text:'Каждая выплата ждёт человека. Контроль возвращается команде, но автоматизация заканчивается там, где движутся деньги.' },
+       evidence:{ label:'Объём работы', text:'Исследование, IA, UX/UI, дизайн-система и проверенный прототип. От брифа до приёмки — до месяца.' },
+     } };
+     default: return block;
+   }
+ });
+-export const agentOpsStoryRu = defineStory<CaseStory>({ ...en, cover:{ ...en.cover, outcome:'Между обещанием и выплатой — человек.',
++export const agentOpsStoryRu = defineStory<CaseStory>({ ...en, cover:{ ...en.cover, outcome:'Оператор проверяет обещания агента перед выплатой.',
+   media: en.cover.media.variant === 'proof' ? { ...en.cover.media, gate:'Решение человека', eyebrow:'AI-поддержка · Биллинг · Контроль', caption:'Сообщение и выплата рядом',
+-    shot:{ ...localMedia(en.cover.media.shot), alt:'Две настоящие панели прототипа: выплата $340 и сообщение, которое отправит одобрение' },
++    shot:{ ...localMedia(en.cover.media.shot), alt:'Две панели продукта: выплата $340 и сообщение, которое отправит одобрение' },
+     panels:en.cover.media.panels?.map((s,i) => ({ ...localMedia(s), alt:i === 0 ? 'Целое сообщение клиенту, отправляемое при одобрении' : 'Целый предварительный расчёт выплаты $340 до одобрения' })) } : en.cover.media },
+-  facts:[{term:'Клиент',value:'NDA · B2B SaaS, биллинг'},{term:'Год',value:'2026'},{term:'Роль',value:'Единственный продуктовый дизайнер'},{term:'Платформа',value:'Web · компьютер и телефон'},{term:'Доказательство',value:'Платный заказ · проверен, принят'},{term:'Прототип',value:'Рабочий, вымышленные данные',href:'https://agent-ops-console.vercel.app/ru/'}],
+-  blocks, prototype:{ ...en.prototype, href:'https://agent-ops-console.vercel.app/ru/', label:'Открыть прототип с вымышленными данными' },
++  facts:[{term:'Клиент',value:'B2B SaaS, биллинг'},{term:'Год',value:'2026'},{term:'Роль',value:'Единственный продуктовый дизайнер'},{term:'Платформа',value:'Web · компьютер и телефон'},{term:'Доказательство',value:'Платный заказ · проверен, принят'},{term:'Прототип',value:'Открыть продукт',href:'https://agent-ops-console.vercel.app/ru/'}],
++  blocks, prototype:{ ...en.prototype, href:'https://agent-ops-console.vercel.app/ru/', label:'Открыть продукт' },
+ });
+ assertStoryPair(en,agentOpsStoryRu);
+--- a/src/copy/ru/cases/partner-portal.ts
++++ b/src/copy/ru/cases/partner-portal.ts
+@@ -8,20 +8,20 @@
+ 
+ export const partnerPortalStoryRu = defineStory({theme:'portal',plate:'light',
+   cover:{title:'Partner Portal',outcome:'Рабочая спецификация для закупщика: от ввода до оформления.',media:{
+-    variant:'proof',eyebrow:'DSSL · B2B-закупка',shot:portalLineShot('open','Настоящее решение по строке 38: исходный текст, восемь единиц и три кандидата из каталога'),
++    variant:'proof',eyebrow:'DSSL · B2B-закупка',shot:portalLineShot('open','Выбор товара для строки 38: исходный текст, восемь единиц и три кандидата из каталога'),
+     caption:'Строка 38: исходный текст рядом с тремя кандидатами',
+   }},
+-  facts:[{term:'Работа',value:'Коммерческий редизайн отгружен целиком'},{term:'На кадрах',value:'Самостоятельная пересборка на демоданных'},
++  facts:[{term:'Работа',value:'Коммерческий редизайн отгружен целиком'},
+     {term:'Роль',value:'Единственный дизайнер; фронтенд, бэкенд, продакт, QA и руководитель команды'},
+     {term:'Период',value:'2024–зима 2026; около полугода активной работы с долгой паузой'}],
+   blocks:[
+     {id:'audit-direction',type:'comparison',motion:'reveal',evidenceId:'portal-diagnosis',mediaId:'portal-archive',payload:{
+-      thesis:{label:'Аудит → направление',thesis:'Сначала дело, затем промо',body:'На архивной главной промо занимало заметное место, а разделы скрывались за иконками. Я сделал спецификацию рабочим объектом: названная навигация, отдельные задачи подбора товара и проверки коммерческих условий.'},
+-      issue:{src:'/media/case-dssl/legacy-dashboard.webp',alt:'Безопасный фрагмент исходной главной DSSL: промобаннер и навигация только иконками',marks:[
+-        {x:55,y:10,text:'Промо первым → сначала задачи закупки'},{x:1.6,y:32,text:'Только иконки → названные разделы'}],caption:'Архивная главная с пометками аудита'},
++      thesis:{label:'Решение после аудита',thesis:'Сначала дело, затем промо',body:'На архивной главной промо занимало заметное место, а разделы скрывались за иконками. Я сделал спецификацию рабочим объектом: названная навигация, отдельные задачи подбора товара и проверки коммерческих условий.'},
++      issue:{src:'/media/case-dssl/legacy-dashboard.webp',alt:'Главная DSSL: промобаннер и навигация только иконками',marks:[
++        {x:55,y:10,text:'Сначала задачи закупки'},{x:1.6,y:32,text:'Разделы с названиями'}],caption:'Архивная главная с пометками аудита'},
+     }},
+     {id:'shared-specification',type:'artifact',motion:'draw',evidenceId:'portal-scope',payload:{
+-      thesis:{label:'Архитектура',thesis:'Один список для двух входов',body:'Импорт XLS и быстрый заказ ведут в общий центр разрешения. Корзина, план поставки и оформление решают разные задачи. В иерархии выбраны восемь настоящих экранов пересборки.'},
++      thesis:{label:'Архитектура',thesis:'Импорт и ручной ввод ведут в общий список',body:'Импорт XLS и быстрый заказ ведут в общий список разбора строк. Корзина, план поставки и оформление решают отдельные задачи. На карте — восемь ключевых экранов.'},
+       artifact:{data:partnerPortalMap,caption:'Восемь ключевых экранов рабочего места закупщика',source:{kind:'editorial',ref:'b2b-dssl/ia/sitemap.md; D007–D010'}},
+     }},
+     {id:'buyer-decision',type:'artifact',motion:'draw',evidenceId:'portal-decision',payload:{
+@@ -29,23 +29,22 @@
+       artifact:{data:partnerPortalFlow,caption:'От нужного товара к условиям и заказу',source:{kind:'editorial',ref:'b2b-dssl/ia/flows/xls-to-order.mmd; D007, D010, D026'}},
+     }},
+     {id:'source-line',type:'steps',motion:'focus',evidenceId:'portal-line',mediaId:'portal-line',payload:{label:'Одна исходная строка',items:[
+-      {label:'Выбрать',thesis:'Три кандидата на одну строку',body:'Строка 38 файла office_north_v8.xlsx: «камера 4мп уличная», восемь единиц. Покупатель сравнивает три совпадения и выбирает второе.',shot:portalLineShot('open','Исходная строка 38 и восемь единиц над тремя кандидатами'),caption:'Три кандидата, один выбор'},
++      {label:'Выбрать',thesis:'Исходный запрос рядом с кандидатами',body:'Строка 38 файла office_north_v8.xlsx: «камера 4мп уличная», восемь единиц. Покупатель сравнивает три совпадения и выбирает второе.',shot:portalLineShot('open','Исходная строка 38 и восемь единиц над тремя кандидатами'),caption:'Выбор второго кандидата'},
+       {label:'Подтвердить',thesis:'Выбор принят, строка та же',body:'Исходный текст и количество остаются. Confirmed фиксирует решение покупателя; «was Ambiguous» сохраняет исходный тип соответствия. Undo позволяет отменить выбор.',shot:portalLineShot('confirmed','Подтверждённая строка 38: восемь единиц, прежняя неоднозначность и отмена выбора'),caption:'Та же строка · выбран SKU KX-2CB4046F2-I · восемь единиц'},
+-      {label:'Подготовить',thesis:'Тот же товар в корзине',body:'Корзина связывает выбранный SKU с исходной строкой 38 и сохраняет количество восемь. Цена и наличие отделены от соответствия товара.',shot:portalLineShot('cart','Настоящая строка корзины: выбранный SKU, исходная строка 38, восемь единиц, цена и наличие'),caption:'Та же строка в корзине · исходный след виден'},
++      {label:'Подготовить',thesis:'Тот же товар в корзине',body:'Корзина связывает выбранный SKU с исходной строкой 38 и сохраняет количество восемь. Цена и наличие отделены от соответствия товара.',shot:portalLineShot('cart','Строка корзины: выбранный SKU, исходная строка 38, восемь единиц, цена и наличие'),caption:'Та же строка в корзине · исходный след виден'},
+     ]}},
+     {id:'domain-system',type:'specimen',motion:'static',evidenceId:'portal-domain',mediaId:'portal-specimens',payload:{
+-      thesis:{label:'Доменная система',thesis:'У статуса есть явный шаг',body:'Принятые компоненты покрывают нерешённое соответствие, ошибки импорта, неопределённое наличие и выбор поставки. Если склад не ответил, наличие «не подтверждено», а не ноль. UI продукта сохранён на исходном английском.'},specimen:partnerPortalSpecimen('ru'),
++      thesis:{label:'Доменная система',thesis:'Следующий шаг',body:'Строка разбора сохраняет исходный запрос после выбора товара. Наличие показывает ответ склада, а план поставки — возможность отгрузки. Если склад не ответил, наличие «не подтверждено», а не ноль. UI продукта сохранён на исходном английском.'},specimen:partnerPortalSpecimen('ru'),
+     }},
+     {id:'source-in-context',type:'shot',motion:'reveal',evidenceId:'portal-line',mediaId:'portal-application',payload:{
+-      shot:{layout:'desktop',items:[{src:'/media/rebuild/partner-portal/resolution-context-wide.webp',srcNarrow:'/media/rebuild/partner-portal/resolution-context-narrow.webp',device:'desktop',alt:'Настоящий центр разрешения после выбора строки 38: фильтр, вкладка решённых строк, отмена и общий прогресс',altNarrow:'Настоящий узкий центр разрешения после выбора строки 38, с общим прогрессом под строкой'}],caption:'Компоненты в работе · та же строка после подтверждения покупателем'},
++      shot:{layout:'desktop',items:[{src:'/media/rebuild/partner-portal/resolution-context-wide.webp',srcNarrow:'/media/rebuild/partner-portal/resolution-context-narrow.webp',device:'desktop',alt:'Экран разбора строк после выбора строки 38: фильтр, вкладка решённых строк, отмена и общий прогресс',altNarrow:'Узкий экран разбора строк после выбора строки 38, с общим прогрессом под строкой'}],caption:'Компоненты в работе · та же строка после подтверждения покупателем'},
+     }},
+     {id:'shipped-redesign',type:'outcome',motion:'static',evidenceId:'portal-shipped',payload:{
+-      result:{label:'Результат',thesis:'Работа дошла до прода',body:'Редизайн DSSL отгружен целиком. Кадры здесь — моя самостоятельная пересборка на демоданных: они показывают решения, а не бизнес-эффект.'},
+-      evidence:{label:'Доказательство',text:'Отгрузку подтверждаю я сам, публичных метрик нет. В пересборке строка 38 проходит путь от сопоставления до корзины.'},
+-      tradeoff:{label:'Цена решения',text:'Неоднозначность требует ручного выбора покупателя. Данные сопоставления не гарантируют совместимость.'},
+-      nextEvidence:{label:'Следующая проверка',text:'Сохранять исходный текст строки в созданном заказе, затем измерить время и ошибки. Базовой бизнес-метрики пока нет.'},
+-    }},
+-  ],prototype:{label:'Открыть живой прототип',href:'https://b2b-partner-portal-five.vercel.app/'},
++      result:{label:'Результат',thesis:'Редизайн сдан',body:'Редизайн DSSL выпущен полностью. Для показанных экранов я пересобрал закупочный сценарий с вымышленными данными.'},
++      evidence:{label:'Доказательство',text:'Строка 38 проходит от выбора товара до корзины с исходным текстом и количеством.'},
++      tradeoff:{label:'Компромисс',text:'Неоднозначность требует ручного выбора покупателя. Данные сопоставления не гарантируют совместимость.'},
++    }},
++  ],prototype:{label:'Открыть продукт',href:'https://b2b-partner-portal-five.vercel.app/'},
+ });
+ assertStoryPair(partnerPortalStory,partnerPortalStoryRu);
+ 
+--- a/src/data/diagrams/partner-portal/specimen.ts
++++ b/src/data/diagrams/partner-portal/specimen.ts
+@@ -10,14 +10,12 @@
+     },
+   });
+   const resolution=base.sets[0];
+-  return {...base,groups:[{id:'intake',title:ru?'Строка и импорт':'Line and import'},{id:'commerce',title:ru?'Наличие и поставка':'Availability and supply'}],sets:[
+-    {...resolution,states:[resolution.states[0],resolution.states[1],
+-      state('resolutionrow','changed','Changed · confirm replacement','Изменён · подтвердить замену','Source line and quantity retained; superseded manufacturer code needs replacement confirmation','Исходная строка и количество сохранены; устаревший код требует подтверждения замены'),resolution.states[3]]},
+-    base.sets[1],base.sets[2],
++  return {...base,type:[],colors:[],groups:[{id:'intake',title:ru?'Выбор товара':'Product choice'},{id:'commerce',title:ru?'Наличие и поставка':'Availability and supply'}],sets:[
++    {...resolution,states:[resolution.states[0],resolution.states[3]]},
++    {...base.sets[2],states:[base.sets[2].states[0],base.sets[2].states[2]]},
+     {id:'fulfillment',title:'FulfillmentPlan',group:'commerce',states:[
+-      state('fulfillmentplan','default','Default · compare shipment terms','Обычный · сравнить поставку','One shipment plan with stock, completion date, warehouse and delivery cost','План одной поставки: наличие, дата, склад и стоимость доставки'),
+       state('fulfillmentplan','selected','Selected · choice remains visible','Выбран · выбор виден','Selected plan retains all shipment terms and selected action','Выбранный план сохраняет все условия и явно отмеченный выбор'),
+       state('fulfillmentplan','unavailable','Unavailable · reason stated','Недоступен · причина названа','Plan unavailable because seven lines have no stock at this warehouse','План недоступен: семи строк нет на выбранном складе'),
+     ]},
+-  ],caption:ru?'Четыре семейства компонентов, тринадцать состояний':'Four component families, thirteen states'};
++  ],caption:ru?'Выбор товара, подтверждение наличия и возможность поставки':'Product choice, stock confirmation and shipment availability'};
+ }

@@ -1,0 +1,51 @@
+{
+  "stage": "F",
+  "status": "awaiting-common-fix",
+  "submittedRef": "3d35b7c88b89f36c72eaff315dec4bfc5dc887a5",
+  "baseRef": "a6faac3a3d10eb6601fcc34caa70a915bea5dab3",
+  "checkout": "C:/Users/kanar/.codex/worktrees/agent-ops-rebuild-f/Site-portfolio",
+  "branch": "codex/agent-ops-rebuild-f",
+  "reviewed": [
+    "report.md",
+    "common-requests.md",
+    "evidence.md",
+    "artifact-plan.md",
+    "media.md",
+    "audit.json",
+    "motion.log",
+    "static-ru.log",
+    "EN/RU story exports and scope",
+    "read-only product case-study context/accepted-client outcome",
+    "checkpoint-comparison.png",
+    "RU desktop promise and approval scenes",
+    "EN/RU desktop covers",
+    "RU390 decision/noJS evidence/outcome",
+    "RU390 full noJS overview",
+    "encoded film contact sheet"
+  ],
+  "findings": [
+    {
+      "id": "F-G-01",
+      "status": "open",
+      "scope": "shared motion lifecycle",
+      "evidence": "Final RU matrix has two live-reduce position failures (~580px); earlier dedicated EN reproduction also exposes intermittent shift. Static entry, scroll, Next/Back and registry checks pass. No root cause presumed."
+    }
+  ],
+  "verifiedScope": {
+    "changedPaths": 210,
+    "foreignPaths": [],
+    "checkoutClean": true,
+    "sharedFilesChanged": false,
+    "legacyCaseContentPreserved": true
+  },
+  "reportedVerification": {
+    "frozenCanonicalFiles": 630,
+    "sourceHashes": 13,
+    "servedMedia": 30,
+    "integrityFailures": 0,
+    "staticProfiles": 20,
+    "staticFailures": 0,
+    "motionAccepted": false
+  },
+  "decision": "Independent case material reviewed as sufficient for narrow common correction. F remains unaccepted. G must reproduce and fix shared lifecycle, then same F checkout imports exact shared delta and retests. No owner artistic acceptance asserted."
+}

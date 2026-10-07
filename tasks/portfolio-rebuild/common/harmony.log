@@ -1,0 +1,30 @@
+
+> site-portfolio@0.1.0 check:harmony
+> node scripts/harmony-check.mjs --base=http://127.0.0.1:4340 --widths=1440,1024,390,360 /preview/agent-ops-pilot/ /preview/common/en/agent-ops/ /preview/common/ru/agent-ops/ /preview/common/en/partner-portal/ /preview/common/ru/partner-portal/ /kit/
+
+/preview/agent-ops-pilot/ @1440: плашек 5, тезисов 7, подписей и абзацев 21 · agent-ops-pilot 302 слов, 7 кадров
+/preview/agent-ops-pilot/ @1024: плашек 5, тезисов 7, подписей и абзацев 21 · agent-ops-pilot 302 слов, 7 кадров
+/preview/agent-ops-pilot/ @390: плашек 5, тезисов 6, подписей и абзацев 19 · agent-ops-pilot 270 слов, 6 кадров
+/preview/agent-ops-pilot/ @360: плашек 5, тезисов 6, подписей и абзацев 19 · agent-ops-pilot 270 слов, 6 кадров
+/preview/common/en/agent-ops/ @1440: плашек 5, тезисов 7, подписей и абзацев 21 · agent-ops-pilot 302 слов, 7 кадров
+/preview/common/en/agent-ops/ @1024: плашек 5, тезисов 7, подписей и абзацев 21 · agent-ops-pilot 302 слов, 7 кадров
+/preview/common/en/agent-ops/ @390: плашек 5, тезисов 6, подписей и абзацев 19 · agent-ops-pilot 270 слов, 6 кадров
+/preview/common/en/agent-ops/ @360: плашек 5, тезисов 6, подписей и абзацев 19 · agent-ops-pilot 270 слов, 6 кадров
+/preview/common/ru/agent-ops/ @1440: плашек 5, тезисов 7, подписей и абзацев 21 · agent-ops-pilot 248 слов, 7 кадров
+/preview/common/ru/agent-ops/ @1024: плашек 5, тезисов 7, подписей и абзацев 21 · agent-ops-pilot 248 слов, 7 кадров
+/preview/common/ru/agent-ops/ @390: плашек 5, тезисов 6, подписей и абзацев 19 · agent-ops-pilot 223 слов, 6 кадров
+/preview/common/ru/agent-ops/ @360: плашек 5, тезисов 6, подписей и абзацев 19 · agent-ops-pilot 223 слов, 6 кадров
+/preview/common/en/partner-portal/ @1440: плашек 4, тезисов 4, подписей и абзацев 8 · portal-common 154 слов, 15 кадров
+/preview/common/en/partner-portal/ @1024: плашек 4, тезисов 4, подписей и абзацев 8 · portal-common 154 слов, 15 кадров
+/preview/common/en/partner-portal/ @390: плашек 4, тезисов 4, подписей и абзацев 8 · portal-common 154 слов, 15 кадров
+/preview/common/en/partner-portal/ @360: плашек 4, тезисов 4, подписей и абзацев 8 · portal-common 154 слов, 15 кадров
+/preview/common/ru/partner-portal/ @1440: плашек 4, тезисов 4, подписей и абзацев 8 · portal-common 127 слов, 15 кадров
+/preview/common/ru/partner-portal/ @1024: плашек 4, тезисов 4, подписей и абзацев 8 · portal-common 127 слов, 15 кадров
+/preview/common/ru/partner-portal/ @390: плашек 4, тезисов 4, подписей и абзацев 8 · portal-common 127 слов, 15 кадров
+/preview/common/ru/partner-portal/ @360: плашек 4, тезисов 4, подписей и абзацев 8 · portal-common 127 слов, 15 кадров
+/kit/ @1440: плашек 19, тезисов 10, подписей и абзацев 40 · case-demo 281 слов, 10 кадров
+/kit/ @1024: плашек 19, тезисов 10, подписей и абзацев 40 · case-demo 281 слов, 10 кадров
+/kit/ @390: плашек 19, тезисов 10, подписей и абзацев 40 · case-demo 281 слов, 10 кадров
+/kit/ @360: плашек 19, тезисов 10, подписей и абзацев 40 · case-demo 281 слов, 10 кадров
+
+✓ harmony-check: нарушений нет

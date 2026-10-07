@@ -1,0 +1,103 @@
+{
+  "base": "http://127.0.0.1:4330",
+  "network": "local, unthrottled",
+  "samplesPerProfile": 1,
+  "results": [
+    {
+      "width": 1440,
+      "cpu": 1,
+      "startup": {
+        "lcp": {
+          "ms": 1872,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4330/media/pilot-agent-ops/message-1440.webp"
+        },
+        "cls": 0,
+        "production": true,
+        "transferredKB": 194.509765625
+      },
+      "frameMedian": 16.699999999254942,
+      "frameP95": 17.199999999254942,
+      "framesOver34ms": 0,
+      "costs": {
+        "TaskDuration": 0.334192,
+        "ScriptDuration": 0.103767,
+        "LayoutDuration": 0.026576000000000002,
+        "RecalcStyleDuration": 0.035008
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "cpu": 6,
+      "startup": {
+        "lcp": {
+          "ms": 720,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4330/media/pilot-agent-ops/message-1440.webp"
+        },
+        "cls": 0,
+        "production": true,
+        "transferredKB": 281.34765625
+      },
+      "frameMedian": 16.800000000745058,
+      "frameP95": 26.300000000745058,
+      "framesOver34ms": 4,
+      "costs": {
+        "TaskDuration": 2.5093550000000002,
+        "ScriptDuration": 0.813698,
+        "LayoutDuration": 0.17250999999999994,
+        "RecalcStyleDuration": 0.28086
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "cpu": 1,
+      "startup": {
+        "lcp": {
+          "ms": 168,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4330/media/pilot-agent-ops/payout-390.webp"
+        },
+        "cls": 0.0014864960010228536,
+        "production": true,
+        "transferredKB": 221.421875
+      },
+      "frameMedian": 16.699999999254942,
+      "frameP95": 17.199999999254942,
+      "framesOver34ms": 0,
+      "costs": {
+        "TaskDuration": 0.27410799999999996,
+        "ScriptDuration": 0.09206099999999999,
+        "LayoutDuration": 0.02260000000000001,
+        "RecalcStyleDuration": 0.021731000000000004
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "cpu": 6,
+      "startup": {
+        "lcp": {
+          "ms": 636,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4330/media/pilot-agent-ops/payout-390.webp"
+        },
+        "cls": 0.0014864960010228536,
+        "production": true,
+        "transferredKB": 221.421875
+      },
+      "frameMedian": 16.90000000037253,
+      "frameP95": 31.199999999254942,
+      "framesOver34ms": 7,
+      "costs": {
+        "TaskDuration": 2.478948,
+        "ScriptDuration": 0.8314250000000001,
+        "LayoutDuration": 0.17690899999999998,
+        "RecalcStyleDuration": 0.21220300000000003
+      },
+      "errors": []
+    }
+  ]
+}

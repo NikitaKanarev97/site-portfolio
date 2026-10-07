@@ -1,0 +1,774 @@
+[
+  {
+    "file": "public/media/rebuild/vet-clinic/draft-en-wide.webp",
+    "source": "http://127.0.0.1:3379/app/visit-quick-trace?patient=marsik",
+    "viewport": {
+      "width": 768,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_viewer_fexkb_187",
+      "sourcePadding": "16px 16px 48px",
+      "capturedPadding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sourceHeaderPadding": "12px 24px",
+      "widths": [
+        734,
+        686,
+        686
+      ],
+      "contentWidth": 734
+    },
+    "selectors": [
+      "[class*=\"_visitHeader_\"]",
+      "[class*=\"_quickTraceStep_\"]",
+      "[class*=\"_quickTraceActions_\"]"
+    ],
+    "width": 1468,
+    "height": 1008,
+    "text": "Marsik\ncat · mixed breed · 6 years\nStarted 09:04\nUnsaved changes\nStep 1 of 3\nWeight\nWeight, kg\n4.8\n5.2\n5.4\n\nPreviously 5.2 kg · August 1 · A. I. Sokolova\n\n−0.3 kg in 12 days · 6% of body weight\n\nSave quick trace\nOpen full record\nWeight, medication, and dose are required",
+    "sha256": "9f1a8124f9e34719c8470ed4c08f6f8363b869f1d9e264435c71d6a2801191f9"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/saved-en-wide.webp",
+    "source": "http://127.0.0.1:3379/app/visit-quick-trace?patient=marsik",
+    "viewport": {
+      "width": 768,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_viewer_fexkb_187",
+      "sourcePadding": "16px 16px 48px",
+      "capturedPadding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sourceHeaderPadding": "12px 24px",
+      "widths": [
+        734,
+        686,
+        686
+      ],
+      "contentWidth": 734
+    },
+    "selectors": [
+      "[class*=\"_visitHeader_\"]",
+      "[class*=\"_quickTraceStep_\"]",
+      "[class*=\"_quickTraceActions_\"]"
+    ],
+    "width": 1468,
+    "height": 1008,
+    "text": "Marsik\ncat · mixed breed · 6 years\nStarted 09:04\nSaved at 09:12\nStep 1 of 3\nWeight\nWeight, kg\n4.9\n5.2\n5.4\n\nPreviously 5.2 kg · August 1 · A. I. Sokolova\n\n−0.3 kg in 12 days · 6% of body weight\n\nSave quick trace\nOpen full record\nWeight, medication, and dose are required",
+    "sha256": "cfa594b78500a4839750dd3fbea287e8e9ba4d6e3ea5ca66dce63c9c9dfe3836"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/trace-en-wide.webp",
+    "source": "http://127.0.0.1:3379/app/visit-record?patient=marsik",
+    "viewport": {
+      "width": 1024,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_viewer_fexkb_187",
+      "sourcePadding": "16px 16px 48px",
+      "capturedPadding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sourceHeaderPadding": "16px 24px",
+      "widths": [
+        990,
+        942
+      ],
+      "contentWidth": 990
+    },
+    "selectors": [
+      "[class*=\"_visitHeader_\"]",
+      "[class*=\"_traceFacts_\"]"
+    ],
+    "width": 1980,
+    "height": 444,
+    "text": "Marsik\ncat · mixed breed · 6 years\nStarted 09:04\nUnfinished\n\nWEIGHT\n\n4.9 kg\n\nmeasured at the clinic · 09:12 · A. I. Sokolova\n\nMEDICATION\n\nMeloxicam\n\noral suspension 0.5 mg/ml · 0.1 mg/kg\n\nSINGLE DOSE\n\n1.00 ml\n\nshow calculation\n\nFREQUENCY\n\nOnce daily for 5 days\n\nquick trace saved at 09:12",
+    "sha256": "66902e787bc11975264d0194060114fa5f1e5b893e5a02d3696bd7ca84ebd315"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/invoice-en-wide.webp",
+    "source": "http://127.0.0.1:3379/app/invoice-draft?patient=marsik",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_workspaceMain_fexkb_279",
+      "sourcePadding": "24px",
+      "capturedPadding": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "widths": [
+        765
+      ],
+      "contentWidth": 765
+    },
+    "selectors": [
+      "[class*=\"_invoiceDoc_\"]"
+    ],
+    "width": 1626,
+    "height": 1174,
+    "text": "Payer\n\nIrina Sergeevna Kuznetsova\n\n+7 905 123-45-67 · the invoice is issued to the owner, not to the animal\n\nUnpaid\n\nA. I. Sokolova · August 13, 09:00–09:30\n\nServices2\nService\nQuantity\nPrice\nAmount\nAction\nTherapeutic follow-up\n1\n900 ₽\n900 ₽\nRemove\nOtoscopy\n1\n600 ₽\n600 ₽\nRemove\n\nTotal\n1 500 ₽\n2 items · no discounts · the clinical record, diagnosis and prescriptions are not part of this document\n\nMark 1 500 ₽ as paid\nThis system neither accepts payments nor prints receipts. The fiscal receipt is issued at the clinic register.",
+    "sha256": "0a59a4b1b2baf491ab2a76bce82f29872e2c06b569a0d781fd9386608a4628fb"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/publication-en-wide.webp",
+    "source": "http://127.0.0.1:3379/app/discharge-preview?patient=marsik",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_plainMain_fexkb_280 _dischargePreviewMain_rypn1_1",
+      "sourcePadding": "24px",
+      "capturedPadding": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "widths": [
+        320,
+        320,
+        320
+      ],
+      "contentWidth": 320
+    },
+    "selectors": [
+      "[class*=\"_publishPanel_\"] > [class*=\"_publishState_\"]",
+      "[class*=\"_publishPanel_\"] > [role=\"status\"]",
+      "[class*=\"_publishPanel_\"] > [data-layout=\"stacked\"]"
+    ],
+    "width": 736,
+    "height": 858,
+    "text": "PUBLICATION\n\nPublished at 09:13 · version 1\n\nFirst version of this document\n\n!\nChanges are not published\nThe owner still reads the version from 09:13. Publishing replaces it with the document shown here.\nPublish new version\nOpen what the owner sees\nOnly publishing changes the owner’s document. The previous version is not kept in this prototype.",
+    "sha256": "6a411a1766bed1cb7376865b8692205568eab20ea4a42845615677ac7d3f2450"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/draft-en-narrow.webp",
+    "source": "http://127.0.0.1:3379/app/visit-quick-trace?patient=marsik",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_viewer_fexkb_187",
+      "sourcePadding": "8px 0px 0px",
+      "capturedPadding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sourceHeaderPadding": "12px 24px",
+      "widths": [
+        390,
+        358,
+        358
+      ],
+      "contentWidth": 390
+    },
+    "selectors": [
+      "[class*=\"_visitHeader_\"]",
+      "[class*=\"_quickTraceStep_\"]",
+      "[class*=\"_quickTraceActions_\"]"
+    ],
+    "width": 780,
+    "height": 1204,
+    "text": "Marsik\ncat · mixed breed · 6 years\nStarted 09:04\nUnsaved changes\nStep 1 of 3\nWeight\nWeight, kg\n4.8\n5.2\n5.4\n\nPreviously 5.2 kg · August 1 · A. I. Sokolova\n\n−0.3 kg in 12 days · 6% of body weight\n\nSave quick trace\nOpen full record\nWeight, medication, and dose are required",
+    "sha256": "a8e9d21ef4491b63f59072c4ab542a9df6ebe4d1560a82b8b816ef4ae9b0b1fb"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/saved-en-narrow.webp",
+    "source": "http://127.0.0.1:3379/app/visit-quick-trace?patient=marsik",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_viewer_fexkb_187",
+      "sourcePadding": "8px 0px 0px",
+      "capturedPadding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sourceHeaderPadding": "12px 24px",
+      "widths": [
+        390,
+        358,
+        358
+      ],
+      "contentWidth": 390
+    },
+    "selectors": [
+      "[class*=\"_visitHeader_\"]",
+      "[class*=\"_quickTraceStep_\"]",
+      "[class*=\"_quickTraceActions_\"]"
+    ],
+    "width": 780,
+    "height": 1204,
+    "text": "Marsik\ncat · mixed breed · 6 years\nStarted 09:04\nSaved at 09:12\nStep 1 of 3\nWeight\nWeight, kg\n4.9\n5.2\n5.4\n\nPreviously 5.2 kg · August 1 · A. I. Sokolova\n\n−0.3 kg in 12 days · 6% of body weight\n\nSave quick trace\nOpen full record\nWeight, medication, and dose are required",
+    "sha256": "5d933423a9ae546880ea1ead6dfb850a4e06ad1efcbed591a623b971d95d758b"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/trace-en-narrow.webp",
+    "source": "http://127.0.0.1:3379/app/visit-record?patient=marsik",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_viewer_fexkb_187",
+      "sourcePadding": "8px 0px 0px",
+      "capturedPadding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sourceHeaderPadding": "16px",
+      "widths": [
+        390,
+        358
+      ],
+      "contentWidth": 390
+    },
+    "selectors": [
+      "[class*=\"_visitHeader_\"]",
+      "[class*=\"_traceFacts_\"]"
+    ],
+    "width": 780,
+    "height": 1108,
+    "text": "Marsik\ncat · mixed breed · 6 years\nStarted 09:04\nUnfinished\n\nWEIGHT\n\n4.9 kg\n\nmeasured at the clinic · 09:12 · A. I. Sokolova\n\nMEDICATION\n\nMeloxicam\n\noral suspension 0.5 mg/ml · 0.1 mg/kg\n\nSINGLE DOSE\n\n1.00 ml\n\nshow calculation\n\nFREQUENCY\n\nOnce daily for 5 days\n\nquick trace saved at 09:12",
+    "sha256": "f2b3acc61e6554ee09ffd4601de23252dc2cb4d6e55c821c1b3926f019942a8e"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/invoice-en-narrow.webp",
+    "source": "http://127.0.0.1:3379/app/invoice-draft?patient=marsik",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_workspaceMain_fexkb_279",
+      "sourcePadding": "16px",
+      "capturedPadding": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "widths": [
+        358
+      ],
+      "contentWidth": 358
+    },
+    "selectors": [
+      "[class*=\"_invoiceDoc_\"]"
+    ],
+    "width": 780,
+    "height": 1436,
+    "text": "Payer\n\nIrina Sergeevna Kuznetsova\n\n+7 905 123-45-67 · the invoice is issued to the owner, not to the animal\n\nUnpaid\n\nA. I. Sokolova · August 13, 09:00–09:30\n\nServices2\nService\nQuantity\nPrice\nAmount\nAction\nService\nTherapeutic follow-up\nQuantity\n1\nPrice\n900 ₽\nAmount\n900 ₽\nAction\nRemove\nService\nOtoscopy\nQuantity\n1\nPrice\n600 ₽\nAmount\n600 ₽\nAction\nRemove\n\nTotal\n1 500 ₽\n2 items · no discounts · the clinical record, diagnosis and prescriptions are not part of this document\n\nMark 1 500 ₽ as paid\nThis system neither accepts payments nor prints receipts. The fiscal receipt is issued at the clinic register.",
+    "sha256": "29f3e30c99caf552c5d63470894ff8489954623d9dc91ee63426709e9bb5f6d2"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/publication-en-narrow.webp",
+    "source": "http://127.0.0.1:3379/app/discharge-preview?patient=marsik",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_plainMain_fexkb_280 _dischargePreviewMain_rypn1_1",
+      "sourcePadding": "16px",
+      "capturedPadding": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "widths": [
+        358
+      ],
+      "contentWidth": 358
+    },
+    "selectors": [
+      "[class*=\"_publishPanel_\"]"
+    ],
+    "width": 780,
+    "height": 1616,
+    "text": "PUBLICATION\n\nPublished at 09:13 · version 1\n\nFirst version of this document\n\n!\nChanges are not published\nThe owner still reads the version from 09:13. Publishing replaces it with the document shown here.\nRecipient\nIrina Sergeevna Kuznetsova\nWhere it opens\nOwner cabinet · no password, no app\n\nPublishing changes what the cabinet shows. This prototype sends no email and no message.\n\nSTAYS IN THE CLINIC\n\nPrivate note\nClinical diagnosis\nInternal record comments\nInvoice and amounts\nPublish new version\nOpen what the owner sees\nOnly publishing changes the owner’s document. The previous version is not kept in this prototype.",
+    "sha256": "2073514a7bd289b8aee36f614dd504885c51a907288d5a3c67fe1044c8bbc24a"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/owner-detail-en.webp",
+    "source": "http://127.0.0.1:3379/app/owner-home?patient=marsik",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_ownerHome_1eac7_2301",
+      "sourcePadding": "24px 16px 48px",
+      "capturedPadding": [
+        24,
+        16,
+        48,
+        16
+      ],
+      "widths": [
+        358,
+        358,
+        358,
+        358
+      ],
+      "contentWidth": 358
+    },
+    "selectors": [
+      "[class*=\"_ownerPet_\"]",
+      "[class*=\"_ownerStatus_\"]",
+      "[aria-labelledby=\"owner-prescription\"]",
+      "[data-track=\"owner-discharge-open\"]"
+    ],
+    "width": 780,
+    "height": 866,
+    "text": "Marsik\n\nCat · mixed breed · 6 years\n\nThe discharge summary is published\n\nAugust 13 at 09:13 · A. I. Sokolova\n\nPRESCRIPTION\nMeloxicam 1.00 ml\nOnce daily for 5 days · give by mouth with the oral syringe · oral suspension 0.5 mg/ml\nCalculated from 4.9 kg\nOpen the discharge summary",
+    "sha256": "49a31863f2999b6e799237385eb29051f2773a38005832083601fbfba0c0319b"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/queue-en-narrow.webp",
+    "source": "http://127.0.0.1:3379/app/vet-day-queue?patient=marsik",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_workspaceMain_fexkb_279",
+      "sourcePadding": "16px",
+      "capturedPadding": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "widths": [
+        358,
+        358
+      ],
+      "contentWidth": 358
+    },
+    "selectors": [
+      "[class*=\"_dayBlock_\"]",
+      "[class*=\"_queueSection_\"]"
+    ],
+    "width": 780,
+    "height": 2984,
+    "text": "Today's visits\n\nThursday, August 13 · A. I. Sokolova\n\n3\nat the clinic\n3\nexpected\n0\nseen\n3\nunfinished\n\n3 records left open — Rex, August 12 · Tisha, August 12 · Baikal, August 11\n\nAt the clinic\n3\nMarsik has been waiting the longest — 12 minutes\nTime\nPatient\nOwner\nReason\nWaiting\nAction\nTime\n09:06\nwalk-in\nPatient\nEMERGENCY\nTim\ncat · mixed breed · 3 years · 3.9 kg\nOwner\nYulia Gavrilova\nReason\npaw injury\nWaiting\n6 minutes\nAction\nStart visit\nTime\n09:00\nscheduled\nPatient\nMarsik\ncat · mixed breed · 6 years · 4.8 kg\nOwner\nIrina Kuznetsova\nReason\notitis follow-up\nWaiting\n12 minutes\nAction\nStart visit\nTime\n09:30\nscheduled\nPatient\nBaikal\ndog · Labrador · 4 years · 32.4 kg\nOwner\nPavel Vetrov\nReason\nvaccination\nWaiting\n3 minutes\nAction\nStart visit",
+    "sha256": "546c7a00d12e6c898c834af1decb226184f6ced5bbce6f6146c0121d0980f12d"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/draft-ru-wide.webp",
+    "source": "http://127.0.0.1:3379/ru/app/visit-quick-trace?patient=marsik",
+    "viewport": {
+      "width": 768,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_viewer_fexkb_187",
+      "sourcePadding": "16px 16px 48px",
+      "capturedPadding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sourceHeaderPadding": "12px 24px",
+      "widths": [
+        734,
+        686,
+        686
+      ],
+      "contentWidth": 734
+    },
+    "selectors": [
+      "[class*=\"_visitHeader_\"]",
+      "[class*=\"_quickTraceStep_\"]",
+      "[class*=\"_quickTraceActions_\"]"
+    ],
+    "width": 1468,
+    "height": 1008,
+    "text": "Марсик\nкот · метис · 6 лет\nНачато 09:04\nЕсть несохранённые правки\nШаг 1 из 3\nВес\nВес, кг\n4.8\n5.2\n5.4\n\nРанее 5.2 кг · 1 августа · А. И. Соколова\n\n−0.3 кг за 12 дней · 6% массы тела\n\nСохранить короткий след\nОткрыть полную карту\nВес, препарат и доза обязательны",
+    "sha256": "be4d0c152e9b1b80cfacb09c7d601d6631ab04c2ea24fde8283f20e737467a51"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/saved-ru-wide.webp",
+    "source": "http://127.0.0.1:3379/ru/app/visit-quick-trace?patient=marsik",
+    "viewport": {
+      "width": 768,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_viewer_fexkb_187",
+      "sourcePadding": "16px 16px 48px",
+      "capturedPadding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sourceHeaderPadding": "12px 24px",
+      "widths": [
+        734,
+        686,
+        686
+      ],
+      "contentWidth": 734
+    },
+    "selectors": [
+      "[class*=\"_visitHeader_\"]",
+      "[class*=\"_quickTraceStep_\"]",
+      "[class*=\"_quickTraceActions_\"]"
+    ],
+    "width": 1468,
+    "height": 1008,
+    "text": "Марсик\nкот · метис · 6 лет\nНачато 09:04\nСохранено в 09:12\nШаг 1 из 3\nВес\nВес, кг\n4.9\n5.2\n5.4\n\nРанее 5.2 кг · 1 августа · А. И. Соколова\n\n−0.3 кг за 12 дней · 6% массы тела\n\nСохранить короткий след\nОткрыть полную карту\nВес, препарат и доза обязательны",
+    "sha256": "a783cc9e3bb808a2439a542cf10d38b8aef022026fdd0649182e2065965e09c9"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/trace-ru-wide.webp",
+    "source": "http://127.0.0.1:3379/ru/app/visit-record?patient=marsik",
+    "viewport": {
+      "width": 1024,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_viewer_fexkb_187",
+      "sourcePadding": "16px 16px 48px",
+      "capturedPadding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sourceHeaderPadding": "16px 24px",
+      "widths": [
+        990,
+        942
+      ],
+      "contentWidth": 990
+    },
+    "selectors": [
+      "[class*=\"_visitHeader_\"]",
+      "[class*=\"_traceFacts_\"]"
+    ],
+    "width": 1980,
+    "height": 444,
+    "text": "Марсик\nкот · метис · 6 лет\nНачато 09:04\nНе завершено\n\nВЕС\n\n4.9 кг\n\nизмерено в клинике · 09:12 · А. И. Соколова\n\nПРЕПАРАТ\n\nМелоксикам\n\nсуспензия 0.5 мг/мл · 0.1 мг/кг\n\nРАЗОВАЯ ДОЗА\n\n1.00 мл\n\nпоказать расчёт\n\nЧАСТОТА\n\nРаз в сутки на 5 дней\n\nкороткий след сохранён в 09:12",
+    "sha256": "dc940a85fdbe92b2b912dbb435dd68a4718bb05166aa07083faf76ce4112aff7"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/invoice-ru-wide.webp",
+    "source": "http://127.0.0.1:3379/ru/app/invoice-draft?patient=marsik",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_workspaceMain_fexkb_279",
+      "sourcePadding": "24px",
+      "capturedPadding": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "widths": [
+        765
+      ],
+      "contentWidth": 765
+    },
+    "selectors": [
+      "[class*=\"_invoiceDoc_\"]"
+    ],
+    "width": 1626,
+    "height": 1174,
+    "text": "Плательщик\n\nИрина Сергеевна Кузнецова\n\n+7 905 123-45-67 · счёт выставляется владельцу, а не животному\n\nНе оплачен\n\nА. И. Соколова · 13 августа, 09:00–09:30\n\nУслуги2\nУслуга\nКоличество\nЦена\nСумма\nДействие\nКонтроль лечения\n1\n900 ₽\n900 ₽\nУдалить\nОтоскопия\n1\n600 ₽\n600 ₽\nУдалить\n\nИтого\n1 500 ₽\n2 позиции · без скидок · клиническая карта, диагноз и назначения в этот документ не входят\n\nОтметить оплату 1 500 ₽\nСистема не принимает оплату и не печатает чеки. Фискальный чек выдаёт касса клиники.",
+    "sha256": "aa4cbf1c0bfa795a0392810d132c9d48dfe7bf85dce42e8f344b4659448cbfa2"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/publication-ru-wide.webp",
+    "source": "http://127.0.0.1:3379/ru/app/discharge-preview?patient=marsik",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_plainMain_fexkb_280 _dischargePreviewMain_rypn1_1",
+      "sourcePadding": "24px",
+      "capturedPadding": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "widths": [
+        320,
+        320,
+        320
+      ],
+      "contentWidth": 320
+    },
+    "selectors": [
+      "[class*=\"_publishPanel_\"] > [class*=\"_publishState_\"]",
+      "[class*=\"_publishPanel_\"] > [role=\"status\"]",
+      "[class*=\"_publishPanel_\"] > [data-layout=\"stacked\"]"
+    ],
+    "width": 736,
+    "height": 900,
+    "text": "ПУБЛИКАЦИЯ\n\nОпубликовано в 09:13 · редакция 1\n\nПервая редакция этого документа\n\n!\nПравки не опубликованы\nВладелец по-прежнему читает редакцию от 09:13. Публикация заменит её документом с этого экрана.\nОпубликовать новую версию\nОткрыть версию владельца\nДокумент владельца меняет только публикация. Прошлая редакция в этом прототипе не хранится.",
+    "sha256": "2a3cd28f129faca48a4521af84ad9d90a34d0342d4418fb36b9181160a0afab0"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/draft-ru-narrow.webp",
+    "source": "http://127.0.0.1:3379/ru/app/visit-quick-trace?patient=marsik",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_viewer_fexkb_187",
+      "sourcePadding": "8px 0px 0px",
+      "capturedPadding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sourceHeaderPadding": "12px 24px",
+      "widths": [
+        390,
+        358,
+        358
+      ],
+      "contentWidth": 390
+    },
+    "selectors": [
+      "[class*=\"_visitHeader_\"]",
+      "[class*=\"_quickTraceStep_\"]",
+      "[class*=\"_quickTraceActions_\"]"
+    ],
+    "width": 780,
+    "height": 1204,
+    "text": "Марсик\nкот · метис · 6 лет\nНачато 09:04\nЕсть несохранённые правки\nШаг 1 из 3\nВес\nВес, кг\n4.8\n5.2\n5.4\n\nРанее 5.2 кг · 1 августа · А. И. Соколова\n\n−0.3 кг за 12 дней · 6% массы тела\n\nСохранить короткий след\nОткрыть полную карту\nВес, препарат и доза обязательны",
+    "sha256": "cebad963896a1ca1a239de49d4d6d2ff93d18a2f72d5e99484b953b7d63669b0"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/saved-ru-narrow.webp",
+    "source": "http://127.0.0.1:3379/ru/app/visit-quick-trace?patient=marsik",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_viewer_fexkb_187",
+      "sourcePadding": "8px 0px 0px",
+      "capturedPadding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sourceHeaderPadding": "12px 24px",
+      "widths": [
+        390,
+        358,
+        358
+      ],
+      "contentWidth": 390
+    },
+    "selectors": [
+      "[class*=\"_visitHeader_\"]",
+      "[class*=\"_quickTraceStep_\"]",
+      "[class*=\"_quickTraceActions_\"]"
+    ],
+    "width": 780,
+    "height": 1204,
+    "text": "Марсик\nкот · метис · 6 лет\nНачато 09:04\nСохранено в 09:12\nШаг 1 из 3\nВес\nВес, кг\n4.9\n5.2\n5.4\n\nРанее 5.2 кг · 1 августа · А. И. Соколова\n\n−0.3 кг за 12 дней · 6% массы тела\n\nСохранить короткий след\nОткрыть полную карту\nВес, препарат и доза обязательны",
+    "sha256": "dac161ff874c96d9c351d70570856aae72b69712c7f8caa910a3879ab70b75a5"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/trace-ru-narrow.webp",
+    "source": "http://127.0.0.1:3379/ru/app/visit-record?patient=marsik",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_viewer_fexkb_187",
+      "sourcePadding": "8px 0px 0px",
+      "capturedPadding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sourceHeaderPadding": "16px",
+      "widths": [
+        390,
+        358
+      ],
+      "contentWidth": 390
+    },
+    "selectors": [
+      "[class*=\"_visitHeader_\"]",
+      "[class*=\"_traceFacts_\"]"
+    ],
+    "width": 780,
+    "height": 1108,
+    "text": "Марсик\nкот · метис · 6 лет\nНачато 09:04\nНе завершено\n\nВЕС\n\n4.9 кг\n\nизмерено в клинике · 09:12 · А. И. Соколова\n\nПРЕПАРАТ\n\nМелоксикам\n\nсуспензия 0.5 мг/мл · 0.1 мг/кг\n\nРАЗОВАЯ ДОЗА\n\n1.00 мл\n\nпоказать расчёт\n\nЧАСТОТА\n\nРаз в сутки на 5 дней\n\nкороткий след сохранён в 09:12",
+    "sha256": "d8216d0e93baf38d7b30dca7558b26b05b4233d13f05a41fc87d6ea17abbe0dd"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/invoice-ru-narrow.webp",
+    "source": "http://127.0.0.1:3379/ru/app/invoice-draft?patient=marsik",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_workspaceMain_fexkb_279",
+      "sourcePadding": "16px",
+      "capturedPadding": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "widths": [
+        358
+      ],
+      "contentWidth": 358
+    },
+    "selectors": [
+      "[class*=\"_invoiceDoc_\"]"
+    ],
+    "width": 780,
+    "height": 1436,
+    "text": "Плательщик\n\nИрина Сергеевна Кузнецова\n\n+7 905 123-45-67 · счёт выставляется владельцу, а не животному\n\nНе оплачен\n\nА. И. Соколова · 13 августа, 09:00–09:30\n\nУслуги2\nУслуга\nКоличество\nЦена\nСумма\nДействие\nУслуга\nКонтроль лечения\nКоличество\n1\nЦена\n900 ₽\nСумма\n900 ₽\nДействие\nУдалить\nУслуга\nОтоскопия\nКоличество\n1\nЦена\n600 ₽\nСумма\n600 ₽\nДействие\nУдалить\n\nИтого\n1 500 ₽\n2 позиции · без скидок · клиническая карта, диагноз и назначения в этот документ не входят\n\nОтметить оплату 1 500 ₽\nСистема не принимает оплату и не печатает чеки. Фискальный чек выдаёт касса клиники.",
+    "sha256": "cb25df395c2a34e39186468a5bc4ffb8a59bbc79e2b71ce881ee935b65d89a4c"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/publication-ru-narrow.webp",
+    "source": "http://127.0.0.1:3379/ru/app/discharge-preview?patient=marsik",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_plainMain_fexkb_280 _dischargePreviewMain_rypn1_1",
+      "sourcePadding": "16px",
+      "capturedPadding": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "widths": [
+        358
+      ],
+      "contentWidth": 358
+    },
+    "selectors": [
+      "[class*=\"_publishPanel_\"]"
+    ],
+    "width": 780,
+    "height": 1664,
+    "text": "ПУБЛИКАЦИЯ\n\nОпубликовано в 09:13 · редакция 1\n\nПервая редакция этого документа\n\n!\nПравки не опубликованы\nВладелец по-прежнему читает редакцию от 09:13. Публикация заменит её документом с этого экрана.\nПолучатель\nИрина Сергеевна Кузнецова\nГде откроется\nКабинет владельца · без пароля и приложения\n\nПубликация меняет то, что показывает кабинет. Этот прототип не отправляет ни письма, ни сообщения.\n\nОСТАЁТСЯ В КЛИНИКЕ\n\nПриватная заметка\nКлинический диагноз\nВнутренние комментарии к записи\nСчёт и суммы\nОпубликовать новую версию\nОткрыть версию владельца\nДокумент владельца меняет только публикация. Прошлая редакция в этом прототипе не хранится.",
+    "sha256": "4758d03cf221c2803d90bc9a2e8694d319fc3dddf7fdefc9534c8802aee349de"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/owner-detail-ru.webp",
+    "source": "http://127.0.0.1:3379/ru/app/owner-home?patient=marsik",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_ownerHome_1eac7_2301",
+      "sourcePadding": "24px 16px 48px",
+      "capturedPadding": [
+        24,
+        16,
+        48,
+        16
+      ],
+      "widths": [
+        358,
+        358,
+        358,
+        358
+      ],
+      "contentWidth": 358
+    },
+    "selectors": [
+      "[class*=\"_ownerPet_\"]",
+      "[class*=\"_ownerStatus_\"]",
+      "[aria-labelledby=\"owner-prescription\"]",
+      "[data-track=\"owner-discharge-open\"]"
+    ],
+    "width": 780,
+    "height": 866,
+    "text": "Марсик\n\nкот · метис · 6 лет\n\nВыписка опубликована\n\n13 августа в 09:13 · А. И. Соколова\n\nНАЗНАЧЕНИЕ\nМелоксикам 1.00 мл\nРаз в день 5 дней · давать через рот шприцем · суспензия 0.5 мг/мл\nРасчёт по весу 4.9 кг\nОткрыть выписку",
+    "sha256": "34bfeff1d378c9e42557abcd83e517668233e0607f30d0ed7f800754a650969d"
+  },
+  {
+    "file": "public/media/rebuild/vet-clinic/queue-ru-narrow.webp",
+    "source": "http://127.0.0.1:3379/ru/app/vet-day-queue?patient=marsik",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "fields": {
+      "sourceParent": "_workspaceMain_fexkb_279",
+      "sourcePadding": "16px",
+      "capturedPadding": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "widths": [
+        358,
+        358
+      ],
+      "contentWidth": 358
+    },
+    "selectors": [
+      "[class*=\"_dayBlock_\"]",
+      "[class*=\"_queueSection_\"]"
+    ],
+    "width": 780,
+    "height": 2900,
+    "text": "Сегодняшние визиты\n\nЧетверг, 13 августа · А. И. Соколова\n\n3\nв клинике\n3\nОжидаются\n0\nпринято\n3\nНе завершено\n\n3 записи не закрыты — Рекс, 12 августа · Тиша, 12 августа · Байкал, 11 августа\n\nВ клинике\n3\nМарсик ждёт дольше всех — 12 минут\nВремя\nПациент\nВладелец\nПричина\nОжидание\nДействие\nВремя\n09:06\nбез записи\nПациент\nЭКСТРЕННО\nТим\nкот · метис · 3 года · 3.9 кг\nВладелец\nЮлия Гаврилова\nПричина\nтравма лапы\nОжидание\n6 минут\nДействие\nНачать визит\nВремя\n09:00\nпо записи\nПациент\nМарсик\nкот · метис · 6 лет · 4.8 кг\nВладелец\nИрина Кузнецова\nПричина\nконтроль отита\nОжидание\n12 минут\nДействие\nНачать визит\nВремя\n09:30\nпо записи\nПациент\nБайкал\nсобака · лабрадор · 4 года · 32.4 кг\nВладелец\nПавел Ветров\nПричина\nвакцинация\nОжидание\n3 минуты\nДействие\nНачать визит",
+    "sha256": "a0d8999384fc13cdd8f6e97865fe8513281e06914cd7f8f2b52d50e795f3c0e3"
+  }
+]

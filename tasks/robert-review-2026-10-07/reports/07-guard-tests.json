@@ -1,0 +1,16 @@
+[
+  {
+    "name": "rendered labels and entity-encoded metadata",
+    "expected": 1,
+    "exitCode": 1,
+    "stdout": "{\n  \"result\": \"FAIL\",\n  \"counts\": {\n    \"copy\": 35,\n    \"cv\": 2,\n    \"public\": 156,\n    \"builtHtml\": 1\n  },\n  \"findings\": 3,\n  \"build\": \"tasks\\\\robert-review-2026-10-07\\\\reports\\\\07-guard-fixture\"\n}\n",
+    "stderr": "tasks/robert-review-2026-10-07/reports/07-guard-fixture/index.html:1: Concept\n  Concept\ntasks/robert-review-2026-10-07/reports/07-guard-fixture/index.html:1: концепт\n  Независимый концепт\ntasks/robert-review-2026-10-07/reports/07-guard-fixture/index.html:1: Just a prototype\n   Author work Just a prototype \n"
+  },
+  {
+    "name": "compliant method, technical filename and internal comment",
+    "expected": 0,
+    "exitCode": 0,
+    "stdout": "{\n  \"result\": \"PASS\",\n  \"counts\": {\n    \"copy\": 35,\n    \"cv\": 2,\n    \"public\": 156,\n    \"builtHtml\": 1\n  },\n  \"findings\": 0,\n  \"build\": \"tasks\\\\robert-review-2026-10-07\\\\reports\\\\07-guard-fixture\"\n}\n",
+    "stderr": ""
+  }
+]

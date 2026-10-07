@@ -1,0 +1,127 @@
+{
+  "results": [
+    {
+      "name": "Pawly carousel advances with reduced motion",
+      "pass": true,
+      "detail": {
+        "before": "1",
+        "after": "2"
+      }
+    },
+    {
+      "name": "Carousel button touch target",
+      "pass": true,
+      "detail": {
+        "x": 288,
+        "y": 426.09375,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "name": "Carousel zoom opens",
+      "pass": true
+    },
+    {
+      "name": "Zoom Escape closes",
+      "pass": true
+    },
+    {
+      "name": "Zoom returns keyboard focus",
+      "pass": true
+    },
+    {
+      "name": "Learn mobile cover has one frame",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "Mobile specimen starts collapsed",
+      "pass": true
+    },
+    {
+      "name": "Specimen opens from keyboard",
+      "pass": true
+    },
+    {
+      "name": "Specimen omits typography and palette catalogue",
+      "pass": true
+    },
+    {
+      "name": "Native specimen zoom touch target",
+      "pass": true,
+      "detail": {
+        "x": 40,
+        "y": 744.21875,
+        "width": 280,
+        "height": 222.453125
+      }
+    },
+    {
+      "name": "Vet RU mobile cover has one frame",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "Agent desktop focus stage initializes",
+      "pass": true
+    },
+    {
+      "name": "Agent final decision visible after scroll",
+      "pass": true
+    },
+    {
+      "name": "Human review uses person SVG",
+      "pass": true
+    },
+    {
+      "name": "Human review symbol is compact",
+      "pass": true,
+      "detail": {
+        "x": 128,
+        "y": 490.5,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "name": "Next case shows one title",
+      "pass": true
+    },
+    {
+      "name": "Next case has no marquee",
+      "pass": true
+    },
+    {
+      "name": "Pawly phone sequence shares a top axis",
+      "pass": true,
+      "detail": [
+        3.453125,
+        3.453125,
+        3.453125
+      ]
+    },
+    {
+      "name": "Pawly phones stay readable below text",
+      "pass": true,
+      "detail": [
+        {
+          "width": 405.328125,
+          "textBottom": -91.546875,
+          "shotTop": 3.453125
+        },
+        {
+          "width": 405.328125,
+          "textBottom": -28.546875,
+          "shotTop": 3.453125
+        },
+        {
+          "width": 405.34375,
+          "textBottom": -54.75,
+          "shotTop": 3.453125
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

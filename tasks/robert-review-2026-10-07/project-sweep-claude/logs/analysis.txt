@@ -1,0 +1,252 @@
+## INVENTORY (en-1440)
+comp | about | agent-ops-console | partner-portal | learn | vet-clinic | pawly | 404 | home
+404.astro |  |  |  |  |  |  | 4 | 
+AuthorPortrait.astro | 1 |  |  |  |  |  |  | 1
+BaseLayout.astro | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1
+CaseArtifact.astro |  |  | 2 | 1 | 1 |  |  | 
+CaseCallout.astro |  | 6 | 4 | 4 |  |  |  | 
+CaseCarousel.astro |  |  |  |  | 1 | 1 |  | 
+CaseCover.astro |  | 1 | 1 | 1 | 1 | 1 |  | 
+CaseImpact.astro |  | 1 | 1 | 1 | 1 | 1 |  | 
+CaseNext.astro |  | 1 | 1 | 1 | 1 | 1 |  | 
+CaseNumbers.astro |  | 1 |  |  |  |  |  | 
+CasePlate.astro |  | 5 | 8 | 5 | 8 | 9 |  | 
+CaseRoutes.astro |  |  |  | 1 |  |  |  | 
+CaseScreen.astro |  | 14 | 38 | 30 | 20 | 39 |  | 20
+CaseSheet.astro |  | 1 | 1 | 1 | 1 | 1 |  | 
+CaseShot.astro |  |  | 2 | 4 | 2 | 2 |  | 
+CaseSpecimen.astro |  |  | 2 | 2 |  | 2 |  | 
+CaseSteps.astro |  | 1 | 1 |  | 1 | 1 |  | 
+CaseStory.astro |  | 6 | 9 | 9 | 7 | 8 |  | 
+CaseThesis.astro |  | 3 | 5 | 7 | 4 | 4 |  | 
+CopyEmail.astro | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 2
+Diagram.astro |  |  | 2 | 1 | 1 |  |  | 
+DiagramCanvas.astro |  |  | 4 | 2 | 2 |  |  | 
+FeaturedCase.astro |  |  |  |  |  |  |  | 5
+Footer.astro | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1
+IconArrow.astro | 3 | 4 | 3 | 5 | 3 | 3 | 8 | 13
+LearnStage.astro |  |  |  | 1 |  |  |  | 1
+MediaFrame.astro | 2 |  |  |  |  | 2 |  | 18
+MediaZoom.astro | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2
+MetaList.astro |  | 2 | 2 | 2 | 2 | 2 |  | 4
+Navbar.astro | 6 | 6 | 6 | 6 | 6 | 6 |  | 6
+PageShell.astro | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2
+ProjectDialog.astro |  |  |  |  |  |  |  | 4
+ProseBlock.astro | 6 | 1 | 1 | 1 | 1 | 1 | 3 | 3
+ScreenSurface.astro | 2 | 8 | 20 | 16 | 11 | 21 | 1 | 20
+SectionHead.astro | 4 |  |  |  |  |  | 1 | 2
+ServiceRoutes.astro |  |  |  |  |  |  | 2 | 
+TextLink.astro | 13 | 14 | 13 | 15 | 13 | 13 | 8 | 18
+VetStage.astro |  |  |  |  | 1 |  |  | 1
+WorkStage.astro |  |  | 1 | 1 | 1 | 1 |  | 5
+about.astro | 19 |  |  |  |  |  |  | 
+index.astro |  |  |  |  |  |  |  | 7
+
+## T1 mono
+
+## T1 caps-tracked
+- CaseSpecimen.astro ×90 [partner-portal,learn,pawly] :: Line and import (12px) | Availability and supply (12px) | Style (12px) | Use (12px) | Metrics (12px) | Sample (12px) | 32/42 · 600 (12px) | 24/36 · 600 (12px)
+- CaseThesis.astro ×46 [agent-ops-console,partner-portal,learn,vet-clinic,pawly] :: Challenge (12px) | A closer look (12px) | Outcome (12px) | Audit → direction (12px) | Architecture (12px) | Purchase logic (12px) | Domain system (12px) | Content model (12px)
+- MetaList.astro ×44 [agent-ops-console,partner-portal,learn,vet-clinic,pawly] :: Client (12px) | Year (12px) | Role (12px) | Platform (12px) | Evidence (12px) | Prototype (12px) | Work (12px) | Shown (12px)
+- CaseSteps.astro ×24 [agent-ops-console,partner-portal,vet-clinic,pawly] :: Cause → promise → decision (12px) | 01 · Find the cause (12px) | One source row (12px) | 01 · Choose (12px) | One visit · three views (12px) | 01 · Veterinarian · tablet (12px) | 02 · Reception · desktop (12px) | 03 · Owner · phone (12px)
+- CaseNext.astro ×10 [agent-ops-console,partner-portal,learn,vet-clinic,pawly] :: Next case (12px) | Следующий кейс (12px)
+- CaseCarousel.astro ×8 [vet-clinic,pawly] :: / 3 (12px) | 1 (12px) | / 4 (12px)
+- about.astro ×7 [about] :: 01 (12px) | 02 (12px) | 03 (12px) | 04 (12px)
+- CaseCover.astro ×6 [agent-ops-console,partner-portal,learn] :: AI support · Billing · Human oversight (12px) | DSSL · B2B procurement (12px) | Work project · reinterpreted in 2026 (12px) | AI-поддержка · Биллинг · Контроль (12px) | DSSL · B2B-закупка (12px) | Рабочий проект · переосмысление 2026 (12px)
+- CaseRoutes.astro ×6 [learn] :: The same ONVIF material (12px) | 01 · Reference (12px) | 02 · Programme (12px) | Тот же материал об ONVIF (12px) | 01 · Справочник (12px) | 02 · Программа (12px)
+- 404.astro ×2 [404] :: 404 (12px)
+- index.astro ×2 [home] :: Selected work (12px) | Избранные работы (12px)
+
+## T1 num
+- CaseSpecimen.astro ×22 [partner-portal,learn,pawly] :: 32/42 · 600 | 24/36 · 600 | 18/27 · 600 | 16/24 · 400 | 12/18 · 600 | 11/16 · 500 | 24 · 12 pcs | 44/50.6 · 700
+- CaseSteps.astro ×16 [agent-ops-console,partner-portal,vet-clinic,pawly] :: 01 · Find the cause | 01 · Choose | 01 · Veterinarian · tablet | 02 · Reception · desktop | 03 · Owner · phone | 01 · Expected | 02 · Selected | 03 · Confirmed
+- about.astro ×14 [about] :: 01 | 02 | 03 | 04
+- WorkStage.astro ×4 [partner-portal,home] :: 38
+- CaseRoutes.astro ×4 [learn] :: 01 · Reference | 02 · Programme | 01 · Справочник | 02 · Программа
+- CaseNumbers.astro ×2 [agent-ops-console] :: 71
+- CaseImpact.astro ×2 [agent-ops-console] :: 19
+
+## T1 dot-chain
+- CaseSteps.astro ×6 [vet-clinic] :: 01 · Veterinarian · tablet | 02 · Reception · desktop | 03 · Owner · phone | 01 · Врач · планшет | 02 · Регистратура · desktop | 03 · Владелец · телефон
+- CaseCover.astro ×2 [agent-ops-console] :: AI support · Billing · Human oversight | AI-поддержка · Биллинг · Контроль
+- CaseSpecimen.astro ×2 [learn] :: Version · date · reading time | Версия · дата · время чтения
+
+## T2 busy sections (en-1440)
+- CaseStory.astro ×6 [agent-ops-console,partner-portal,learn,pawly] :: n=14 y=4964: A closer look / 1 / 2 / 3 / 4 / 1 | n=8 y=1345: Audit → direction / 1 / 2 / 1 / Promotion first → procurement tasks first / 2 | n=8 y=1821: Audit → direction / 1 / 2 / 1 / Courses define the entry / 2 | n=7 y=4031: The same ONVIF material / 01 · Reference / The answer, readable before sign-in. / 02 · Programme / Programme view · the same material ID. / Completion | n=7 y=1998: Before booking / / 4 / 1 / The address determines the service area before search. / The same requirements follow the booking into the candidate  / Requirements before checks. The primary action stays visible | n=7 y=3633: The return boundary / 01 · Expected / Expectation and received evidence are different claims. / 02 · Selected / Explicit send reaches the report. Local selection alone cann / 03 · Confirmed
+- CaseSpecimen.astro ×6 [partner-portal,learn,pawly] :: n=8 y=7261: Line and import / Ambiguous · choose a match / Missing · request an item / Changed · confirm replacement / Confirmed · original category retained / Empty · choose an XLS file | n=7 y=8637: Availability and supply / Verified stock / Stale · timestamp retained / Not confirmed · no WMS response / Default · compare shipment terms / Selected · choice remains visible | n=44 y=9459: Style / Use / Metrics / Sample / Page / Page title | n=20 y=7764: Style / Use / Metrics / Sample / Display/4xl / Material title | n=12 y=7248: Proof, events and explanations / Pending · no confirmation / Local · selected, not sent / Confirmed · received event / Unavailable image · event stays recorded / Done | n=17 y=8581: Style / Use / Metrics / Sample / Body / Event
+- index.astro ×1 [home] :: n=15 y=943: Selected work / Human review / Paid client · user-tested, accepted prototype / Evidence: / Product design · product matching and ordering / Evidence:
+
+## T2 dup captions (1440)
+- TextLink.astro ×3 [404,home] :: "Обо мне" ~ "В адресе может быть опечатка, или ссылка устарела. Работы, и" 1 | "More about how I work" ~ "How I work" 1
+- CaseCover.astro ×2 [partner-portal] :: "Row 38: the source text beside three matches" ~ "38" 1 | "Строка 38: исходный текст рядом с тремя кандидатами" ~ "38" 1
+- CaseSpecimen.astro ×2 [pawly] :: "Pending · no confirmation" ~ "Pending" 1 | "Ожидание · подтверждения нет" ~ "Ожидание" 1
+- CaseImpact.astro ×1 [agent-ops-console] :: "screens · accepted prototype" ~ "User testing informed the revisions. The client accepted the" 1
+- CaseRoutes.astro ×1 [learn] :: "The same ONVIF material" ~ "A question and an ordered programme reference the same mater" 0.75
+
+## T3 glyphs (1440)
+- DiagramCanvas.astro ×144 [partner-portal,learn,vet-clinic] :: text:Dashboard → XLS import | text:Dashboard → Quick order | text:Dashboard → Cart | text:Dashboard → Order details | text:XLS import → Resolution | text:Quick order → Resolution | text:Cart → Supply plan | text:Cart → Checkout
+- CaseCarousel.astro ×8 [vet-clinic,pawly] :: text:← | text:→
+- about.astro ×7 [about] :: text:↓
+- CaseStory.astro ×6 [agent-ops-console,partner-portal,learn] :: aria:Cause → promise → decision | aria:Audit → direction | aria:Причина → обещание → решение | aria:Аудит → направление
+- CaseNumbers.astro ×4 [agent-ops-console] :: text:→
+- CaseThesis.astro ×4 [partner-portal,learn] :: text:Audit → direction | text:Аудит → направление
+- CaseCallout.astro ×4 [partner-portal] :: text:Promotion first → procurement tasks first | text:Icons alone → named destinations | text:Промо первым → сначала задачи закупки | text:Только иконки → названные разделы
+- CaseSteps.astro ×2 [agent-ops-console] :: text:Cause → promise → decision | text:Причина → обещание → решение
+
+## T4 (1440)
+- PageShell.astro ×16 [about,agent-ops-console,partner-portal,learn,vet-clinic,pawly,404,home] :: (decor) ds-display-7xl ds-flow-heading contact__heading
+- CaseCallout.astro ×16 [agent-ops-console,partner-portal,learn] :: (decor) ds-meta-xs case-callout__dot case-callout__dot--list
+- CaseCover.astro ×10 [agent-ops-console,partner-portal,learn,vet-clinic,pawly] :: (decor) ds-display-7xl case-opening__title | (decor) ds-display-5xl case-opening__title
+- CaseNumbers.astro ×10 [agent-ops-console] :: (decor) ds-display-5xl case-numbers__value | (decor) ds-display-5xl case-numbers__arrow
+- FeaturedCase.astro ×10 [home] :: (decor) ds-display-6xl
+- Footer.astro ×9 [about,agent-ops-console,partner-portal,learn,vet-clinic,pawly,404,home] :: Copyright 2026
+- CaseImpact.astro ×4 [agent-ops-console] :: (decor) ds-display-7xl case-impact__value
+- WorkStage.astro ×4 [partner-portal,home] :: (decor) ds-display-7xl work-stage__figure
+- CaseRoutes.astro ×4 [learn] :: (decor) case-routes__toggle ds-heading-2xl
+- about.astro ×2 [about] :: (decor) ds-display-6xl intro__heading
+- CaseThesis.astro ×2 [agent-ops-console] :: (decor) ds-display-5xl case-thesis__thesis
+- CopyEmail.astro ×2 [home] :: Copy email | Скопировать почту
+- index.astro ×2 [home] :: (decor) ds-display-home hero__role ds-flow-heading
+
+## C1
+
+## C2 (1440)
+- CaseScreen.astro ×16 [agent-ops-console,partner-portal,learn,home] :: clusters-framed-1440.webp bg=rgb(255, 255, 255) 1042x396 | evidence-1440.webp bg=rgb(255, 255, 255) 597x791 | legacy-dashboard.webp bg=rgb(255, 255, 255) 597x184 | archive-catalog.webp bg=rgb(255, 255, 255) 597x281 | answer-desktop.webp bg=rgb(255, 255, 255) 1280x861 | programme-desktop.webp bg=rgb(255, 255, 255) 1280x889 | completion-desktop.webp bg=rgb(255, 255, 255) 1280x455 | order-details.webp bg=rgb(255, 255, 255) 384x906
+- WorkStage.astro ×2 [home] :: handover-dropoff.webp bg=rgb(255, 255, 255) 832x621
+
+## L1 (1440)
+- CaseCover.astro ×2 [agent-ops-console] :: div.ds-container.case-opening__proof>div.case-opening__proof-media>div.case-opening__panels spread=50 n=2
+
+## L2 tight (all)
+- CaseThesis.astro ×26 [agent-ops-console,partner-portal,learn,pawly] :: H2 48px "Read the promises,
+not the chats" gap=25 → div.case-thesis.ds-flow-lead>div.case-thesis__text>p.ds-body-lg.case-thesis__body | H2 48px "A missing record is
+part of the evidence" gap=25 → div.case-thesis.ds-flow-lead>div.case-thesis__text>p.ds-body-lg.case-thesis__body | H2 48px "Make space for the buyer" gap=25 → div.case-thesis.ds-flow-lead>div.case-thesis__text>p.ds-body-lg.case-thesis__body | H2 48px "Two ways into one specification" gap=25 → div.case-thesis.ds-flow-lead>div.case-thesis__text>p.ds-body-lg.case-thesis__body | H2 48px "Choose a product,
+then check terms" gap=25 → div.case-thesis.ds-flow-lead>div.case-thesis__text>p.ds-body-lg.case-thesis__body | H2 48px "Start with the specialist’s task" gap=25 → div.case-thesis.ds-flow-lead>div.case-thesis__text>p.ds-body-lg.case-thesis__body | H2 48px "One material, two entrances" gap=25 → div.case-thesis.ds-flow-lead>div.case-thesis__text>p.ds-body-lg.case-thesis__body | H2 48px "Colour follows the task" gap=25 → div.case-thesis.ds-flow-lead>div.case-thesis__text>p.ds-body-lg.case-thesis__body
+- CaseCover.astro ×6 [agent-ops-console,vet-clinic] :: H1 128px "Agent Ops" gap=24 → section.case-opening.case-opening--proof>div.ds-container.case-opening__proof>div.case-opening__proof-media | H1 64px "Vet Clinic OS" gap=16 → div.ds-container.case-opening__editorial>div.case-opening__editorial-head>p.ds-heading-xl.case-opening__editorial-lead | H1 48px "Agent Ops" gap=25 → div.ds-container.case-opening__proof>div.case-opening__proof-head>p.ds-heading-4xl.case-opening__proof-lead
+- about.astro ×2 [about] :: H1 96px "Understand first.
+Then design." gap=25 → section.ds-container.intro>nav.chapter-index>a.ds-body-sm | H1 96px "Сначала разобраться.
+Потом проектировать." gap=25 → section.ds-container.intro>nav.chapter-index>a.ds-body-sm
+- index.astro ×2 [home] :: H1 112px "Complex systems.
+Clear decisions." gap=29 → div.hero__copy>div.prose.prose--body>p | H1 112px "Сложные системы.
+Ясные решения." gap=29 → div.hero__copy>div.prose.prose--body>p
+
+## L5 (1440)
+- Footer.astro ×16 [about,agent-ops-console,partner-portal,learn,vet-clinic,pawly,404,home] :: FOOTER top footer.footer w=1440 rgb(225, 225, 220)
+- DiagramCanvas.astro ×8 [partner-portal,learn,vet-clinic] :: HEADER bottom div.dg-responsive__desktop>figure.dg.dg--map>header.dg__heading.ds-heading-2xl w=1152 rgb(27, 27, 24) | HEADER bottom div.dg-responsive__desktop>figure.dg.dg--flow>header.dg__heading.ds-heading-2xl w=1152 rgb(27, 27, 24)
+- CaseRoutes.astro ×6 [learn] :: DIV bottom section.ds-container.ds-section>div.case-routes>div.case-routes__entries w=1280 rgb(27, 27, 24) | DETAILS top div.case-routes>div.case-routes__entries>details.case-routes__entry w=1280 rgb(225, 225, 220)
+- about.astro ×2 [about] :: NAV top,bottom main>section.ds-container.intro>nav.chapter-index w=1280 rgb(225, 225, 220)
+
+## X1
+- CopyEmail.astro ×18 [about,agent-ops-console,partner-portal,learn,vet-clinic,pawly,404,home] :: nikita.kanarev.dev@outlook.com
+- Navbar.astro ×14 [about,agent-ops-console,partner-portal,learn,vet-clinic,pawly,home] :: aria-label:Nikita Kanarev — NK
+- ServiceRoutes.astro ×12 [404] :: Пять продуктовых кейсов, контекст проектов и контакты. | Как я работаю и на каких условиях можно нанять. | Прямая ссылка на существующее русское резюме. | Five product design cases, project context and contact. | How I work inside constraints I did not set. Work authorizat | One file, direct link, no form in front of it.
+- 404.astro ×10 [404] :: Страница не найдена | В адресе может быть опечатка, или ссылка устарела. Работы, и | Продолжить просмотр | This address may be mistyped or out of date. You can continu | Continue from here
+- CaseCover.astro ×10 [agent-ops-console,partner-portal,learn,vet-clinic] :: aria-label:Agent Ops | aria-label:Partner Portal | aria-label:TRASSIR Learn | Vet Clinic OS | aria-label:Vet Clinic OS
+- TextLink.astro ×6 [404] :: Главная / работы | Обо мне | Резюме (PDF)
+- CaseNext.astro ×6 [learn] :: Vet Clinic OS
+- CaseStory.astro ×4 [partner-portal,pawly] :: aria-label:source-in-context | aria-label:proof-system
+- CaseSteps.astro ×2 [partner-portal] :: Row 38 of office_north_v8.xlsx asks for “камера 4мп уличная”
+- BaseLayout.astro ×2 [404] :: Skip to content
+- SectionHead.astro ×2 [404] :: This page does not exist
+- PageShell.astro ×2 [404] :: For project enquiries or a broken link, email me directly.
+- MediaZoom.astro ×2 [404] :: aria-label:Enlarged screenshot
+- ? ×2 [404] :: document.title:Page not found — Nikita Kanarev
+- index.astro ×2 [home] :: Vet Clinic OS
+- FeaturedCase.astro ×2 [home] :: Vet Clinic OS
+
+## X2 status (1440)
+- CaseScreen.astro ×16 [learn,pawly,home] :: aria-label[demo] …e programme passport: workload, assessment rules, demonstration document and start action.… | alt[demo] …e programme passport: workload, assessment rules, demonstration document and start action.… | aria-label[demo] … confirmed at 14:52, two dated photos, 950 rouble demo charge and review action.… | alt[demo] … confirmed at 14:52, two dated photos, 950 rouble demo charge and review action.… | aria-label[демо] …: Целый паспорт программы: объём, правила зачёта, демонстрационный документ и действие старта.… | alt[демо] …Целый паспорт программы: объём, правила зачёта, демонстрационный документ и действие старта.… | aria-label[демо] …одтверждено в 14:52, две датированные фотографии, демонстрационная сумма 950 рублей и действие отзыва.… | alt[демо] …одтверждено в 14:52, две датированные фотографии, демонстрационная сумма 950 рублей и действие отзыва.…
+- MetaList.astro ×9 [partner-portal,vet-clinic,pawly] :: text[reconstruct] …Independent reconstruction on synthetic data… | text[reconstruct] …is my own account, with no public metrics. In the reconstruction, row 38 runs from matching to Cart.… | text[demo] …Real clinic under NDA; all demo data invented… | text[Synthetic] …Synthetic QA across seventeen EN/RU routes… | text[demo] …One demo booking; no live GPS, upload or payments. Choosing and … | text[демо] …Самостоятельная пересборка на демоданных… | text[демо] …Реальная клиника под NDA; все демо-данные вымышлены… | text[Синтетич] …Синтетические прогоны семнадцати маршрутов EN/RU…
+- TextLink.astro ×7 [partner-portal,vet-clinic,pawly,agent-ops-console] :: text[demo] …Open the live demo… | text[demo] …Open the demo… | text[demo] …Explore the EN demo… | text[вымышл] …Рабочий, вымышленные данные… | text[вымышл] …Открыть прототип с вымышленными данными… | text[демо] …Открыть демо… | text[демо] …Открыть демо на русском…
+- CaseThesis.astro ×4 [partner-portal,learn] :: text[reconstruct] …his hierarchy selects eight real screens from the reconstruction.… | text[reconstruct] …ipped in full. The frames here are my independent reconstruction on synthetic data: they show the decisions, n… | text[demo] …the passing threshold are explicit. The prototype demonstrates the mechanism; the question bank still needs ex… | text[демо] …. Кадры здесь — моя самостоятельная пересборка на демоданных: они показывают решения, а не бизнес-эффект.…
+- about.astro ×2 [about] :: text[synthetic] …g API, and most of these builds are prototypes on synthetic data rather than production systems under load.… | text[синтетич] …им API, и большинство таких сборок — прототипы на синтетических данных, а не продакшн под нагрузкой.…
+- CaseCover.astro ×2 [learn] :: text[reinterpret] …Work project · reinterpreted in 2026… | text[переосмысл] …Рабочий проект · переосмысление 2026…
+- CaseSteps.astro ×2 [pawly] :: text[demo] …full photo before sending. Press play to follow a demo send into the report. A failed send keeps the draft and… | text[демо] …полный кадр до отправки. Нажмите воспроизведение: демоотправка ведёт к отчёту. При сбое черновик сохраняется, …
+- MediaFrame.astro ×2 [pawly] :: aria-label[demo] …urn photo, not sent; play the native recording of demo send and report.… | aria-label[демо] …то возвращения ещё не отправлено; нативная запись демоотправки и перехода к отчёту.…
+
+## years (en-1440)
+- Footer.astro ×8 [about,agent-ops-console,partner-portal,learn,vet-clinic,pawly,404,home] :: text:2026 …Copyright 2026…
+- MetaList.astro ×5 [agent-ops-console,partner-portal,vet-clinic,pawly] :: text:2026 …2026… | text:2024 …2024–winter 2026; roughly six … | text:2026 …2024–winter 2026; roughly six active month… | text:2026 …Working prototype · 2026… | text:2026 …September 2026 · EN/RU…
+- CaseCover.astro ×1 [learn] :: text:2026 …Work project · reinterpreted in 2026…
+
+## R1 small targets (360)
+- TextLink.astro ×21 [agent-ops-console,partner-portal,learn,vet-clinic,pawly,404] :: Open the live prototype, on in 296x22 | Open the live demo (external l 148x22 | Try Learn (external link, open 85x22 | Open the demo (external link,  123x22 | Explore the EN demo (external  159x22 | Home / selected work 312x26 | About 312x26 | CV (PDF) 312x26
+- BaseLayout.astro ×16 [about,agent-ops-console,partner-portal,learn,vet-clinic,pawly,404,home] :: Skip to content 133x38 | Перейти к содержимому 200x38
+- FeaturedCase.astro ×10 [home] :: Agent Ops 159x41 | Partner Portal 209x41 | TRASSIR Learn 230x41 | Vet Clinic OS 196x41 | Pawly 93x41
+- CaseScreen.astro ×6 [learn,pawly] :: Enlarge: Current programme position 3 of 11 246x32 | Enlarge: Accepted Pawly Pending; original English UI. 246x32 | Enlarge: Accepted Pawly Hint; original English UI. 246x19 | Увеличить: Текущая позиция в программе: 3 из 11 246x32 | Увеличить: Принятый компонент Pawly: Ожидание; исходный UI на английском. 262x34 | Увеличить: Принятый компонент Pawly: Пояснение; исходный UI на английском. 262x21
+
+## R1 over (360)
+
+## R1 clipped
+- TextLink.astro ×64 [about,agent-ops-console,partner-portal,learn,vet-clinic,pawly,404,home] :: (external link, opens in a new tab) | (внешняя ссылка, откроется в новой вкладке)
+- CaseNext.astro ×20 [agent-ops-console,partner-portal,learn,vet-clinic,pawly] :: Next case: Partner Portal | Next case: TRASSIR Learn | Next case: Vet Clinic OS | Next case: Pawly | Next case: Agent Ops | Следующий кейс: Partner Portal | Следующий кейс: TRASSIR Learn | Следующий кейс: Vet Clinic OS
+- FeaturedCase.astro ×20 [home] :: Evidence: | Основание:
+
+## L2 heading→next gaps (en-1440, h1/h2 only)
+about: H196/25 H224/414 H224/320 H224/809 H224/750 H2128/48
+agent-ops-console: H1128/24 H248/25 H248/25 H264/32 H2128/48
+partner-portal: H164/48 H248/25 H248/25 H248/25 H248/32 H248/32 H2128/48
+learn: H164/48 H248/25 H248/25 H248/32 H248/25 H248/25 H248/25 H248/48 H2128/48
+vet-clinic: H164/16 H248/32 H248/41 H248/32 H248/48 H2128/48
+pawly: H164/48 H248/25 H248/25 H248/25 H248/48 H2128/48
+404: H132/32 H232/32 H248/32 H2128/48
+home: H1112/29 H296/32 H296/32 H296/32 H296/32 H296/32 H232/32 H232/24 H2128/48
+
+## Sections (en-1440): comp h pt/pb
+about: about:759(0/0) about:300(48/0) about:206(48/0) about:695(48/0) about:506(48/0) PageShell:299(0/0)
+agent-ops-console: CaseCover:803(0/0) CaseSheet:6368(192/192) CaseNext:742(0/0) PageShell:299(0/0)
+partner-portal: CaseCover:813(0/0) CaseSheet:11330(192/192) CaseNext:742(0/0) PageShell:299(0/0)
+learn: CaseCover:1289(0/0) CaseSheet:10320(192/192) CaseNext:742(0/0) PageShell:299(0/0)
+vet-clinic: CaseCover:1153(0/0) CaseSheet:6655(192/192) CaseNext:742(0/0) PageShell:299(0/0)
+pawly: CaseCover:1115(0/0) CaseSheet:9826(192/192) CaseNext:742(0/0) PageShell:299(0/0)
+404: 404:521(0/0) 404:508(0/0) PageShell:299(0/0)
+home: index:623(0/0) index:5538(0/0) index:1003(0/0) index:133(0/0) PageShell:299(0/0)
+
+## Sections (en-360)
+about: about:625(0/0) about:782(48/0) about:530(48/0) about:1586(48/0) about:1082(48/0) PageShell:382(0/0)
+agent-ops-console: CaseCover:881(0/0) CaseSheet:6825(128/128) CaseNext:486(0/0) PageShell:319(0/0)
+partner-portal: CaseCover:964(0/0) CaseSheet:15654(128/128) CaseNext:486(0/0) PageShell:319(0/0)
+learn: CaseCover:2008(0/0) CaseSheet:11581(128/128) CaseNext:486(0/0) PageShell:319(0/0)
+vet-clinic: CaseCover:2179(0/0) CaseSheet:9287(128/128) CaseNext:486(0/0) PageShell:319(0/0)
+pawly: CaseCover:1302(0/0) CaseSheet:9696(128/128) CaseNext:486(0/0) PageShell:319(0/0)
+404: 404:595(0/0) 404:636(0/0) PageShell:319(0/0)
+home: index:816(0/0) index:7368(0/0) index:426(0/0) index:594(0/0) PageShell:319(0/0)
+
+## Headings (en-1440)
+about: H1.about=96px/800  P.AuthorPortrait=24px/600  DIV.ProseBlock=24px/600  H2.SectionHead=24px/600  H2.PageShell=128px/800  A.CopyEmail=32px/600
+agent-ops-console: H1.CaseCover=128px/800  P.CaseCover=48px/700  H2.CaseThesis=48px/700,64px/700  H3.CaseSteps=48px/700  H2.PageShell=128px/800  A.CopyEmail=32px/600
+partner-portal: H1.CaseCover=64px/700  P.CaseCover=20px/500  H2.CaseThesis=48px/700  HEADER.DiagramCanvas=24px/600  H3.CaseSteps=48px/700  H3.CaseSpecimen=32px/600  H4.CaseSpecimen=12px/500,20px/500  H5.CaseSpecimen=20px/500  H2.PageShell=128px/800  A.CopyEmail=32px/600
+learn: H1.CaseCover=64px/700  P.CaseCover=20px/500  P.LearnStage=24px/600  H2.CaseThesis=48px/700  HEADER.DiagramCanvas=24px/600  SPAN.CaseRoutes=32px/600,24px/600  H3.CaseSpecimen=32px/600  H4.CaseSpecimen=12px/500,20px/500  H5.CaseSpecimen=20px/500  H2.PageShell=128px/800  A.CopyEmail=32px/600
+vet-clinic: H1.CaseCover=64px/700  P.CaseCover=20px/500  H2.CaseThesis=48px/700  HEADER.DiagramCanvas=24px/600  H3.CaseSteps=32px/600  H2.PageShell=128px/800  A.CopyEmail=32px/600
+pawly: H1.CaseCover=64px/700  P.CaseCover=20px/500  H2.CaseThesis=48px/700  H3.CaseSteps=32px/600  H3.CaseSpecimen=32px/600  H4.CaseSpecimen=12px/500,20px/500  H5.CaseSpecimen=20px/500  H2.PageShell=128px/800  A.CopyEmail=32px/600
+404: H1.SectionHead=32px/600  DIV.ProseBlock=24px/600  H2.404=32px/600,48px/700  H3.404=32px/600  H2.PageShell=128px/800  A.CopyEmail=32px/600
+home: H1.index=112px/800  H2.FeaturedCase=96px/800  P.FeaturedCase=20px/500  P.LearnStage=24px/600  H2.SectionHead=32px/600  H3.index=20px/500  H2.PageShell=128px/800  A.CopyEmail=32px/600
+
+## Headings (en-360)
+about: H1.about=32px  P.AuthorPortrait=20px  DIV.ProseBlock=20px  H2.SectionHead=20px  H2.PageShell=48px  A.CopyEmail=24px
+agent-ops-console: H1.CaseCover=48px  P.CaseCover=32px  H2.CaseThesis=32px  H3.CaseSteps=32px  H2.PageShell=48px  A.CopyEmail=24px
+partner-portal: H1.CaseCover=32px  P.CaseCover=20px  H2.CaseThesis=32px  HEADER.DiagramCanvas=20px  H3.CaseSteps=32px  H3.CaseSpecimen=24px  H4.CaseSpecimen=12px,20px  H5.CaseSpecimen=20px  H2.PageShell=48px  A.CopyEmail=24px
+learn: H1.CaseCover=32px  P.CaseCover=20px  P.LearnStage=20px  H2.CaseThesis=32px  HEADER.DiagramCanvas=20px  SPAN.CaseRoutes=24px,20px  H3.CaseSpecimen=24px  H4.CaseSpecimen=12px,20px  H5.CaseSpecimen=20px  H2.PageShell=48px  A.CopyEmail=24px
+vet-clinic: H1.CaseCover=32px  P.CaseCover=20px  H2.CaseThesis=32px  HEADER.DiagramCanvas=20px  H3.CaseSteps=24px  H2.PageShell=48px  A.CopyEmail=24px
+pawly: H1.CaseCover=32px  P.CaseCover=20px  H2.CaseThesis=32px  H3.CaseSteps=24px  H3.CaseSpecimen=24px  H4.CaseSpecimen=12px,20px  H5.CaseSpecimen=20px  H2.PageShell=48px  A.CopyEmail=24px
+404: H1.SectionHead=24px  DIV.ProseBlock=20px  H2.404=24px,32px  H3.404=24px  H2.PageShell=48px  A.CopyEmail=24px
+home: H1.index=36px  H2.FeaturedCase=32px  P.FeaturedCase=20px  P.LearnStage=20px  H2.SectionHead=24px  H3.index=20px  H2.PageShell=48px  A.CopyEmail=24px
+
+## Links (en-1440): comp | cls | deco | labDeco | svg | inPara  (unique)
+BaseLayout.astro | ds-skip-link | underline |  | svg=false | para=false ×8 [about,agent-ops-console,partner-portal,learn,vet-clinic,pawly,404,home] "Skip to content"
+Navbar.astro | navbar__brand | none |  | svg=true | para=false ×7 [about,agent-ops-console,partner-portal,learn,vet-clinic,pawly,home] "Nikita Kanarev"
+TextLink.astro | ds-link ds-link--nav ds-body-sm | none | none | svg=false | para=false ×27 [about,agent-ops-console,partner-portal,learn,vet-clinic,pawly,home] "Work"
+TextLink.astro | ds-link ds-link--nav is-active ds-body-sm | none | none | svg=false | para=false ×8 [about,agent-ops-console,partner-portal,learn,vet-clinic,pawly,home] "About"
+about.astro | ds-body-sm | none |  | svg=false | para=false ×4 [about] "01 Constraints ↓"
+TextLink.astro | ds-link ds-link--arrow | none | none | svg=true | para=false ×25 [about,agent-ops-console,partner-portal,learn,vet-clinic,pawly,404,home] "Download CV (PDF)"
+CopyEmail.astro | copy-email__address ds-heading-3xl | none |  | svg=false | para=false ×8 [about,agent-ops-console,partner-portal,learn,vet-clinic,pawly,404,home] "nikita.kanarev.dev@outlook.com"
+CaseScreen.astro | case-screen__open | none |  | svg=true | para=false ×65 [agent-ops-console,partner-portal,learn,vet-clinic,pawly] "Enlarge: The complete customer message that approval will send"
+TextLink.astro | ds-link ds-link--inline | none | underline | svg=true | para=false ×8 [agent-ops-console,partner-portal,learn,vet-clinic,pawly] "Live, invented data (external link, open"
+CaseNext.astro | case-next__link ds-pressable | none |  | svg=false | para=false ×5 [agent-ops-console,partner-portal,learn,vet-clinic,pawly] "NEXT CASE Next case: Partner Portal Part"
+CaseCarousel.astro | case-carousel__button | none+bb |  | svg=false | para=false ×4 [vet-clinic,pawly] "←"
+index.astro | ds-body-base | none |  | svg=false | para=false ×5 [home] "Agent Ops"
+CopyEmail.astro | copy-email__button ds-body-base | none |  | svg=false | para=false ×1 [home] "Copy email"
+FeaturedCase.astro |  | none |  | svg=false | para=false ×5 [home] "Agent Ops"
+CaseScreen.astro | case-screen__open case-screen__open--case | none |  | svg=false | para=false ×10 [home] "Read the case: Agent Ops"
+FeaturedCase.astro | featured-case__cta ds-body-base | none |  | svg=true | para=false ×5 [home] "Read the case"
+index.astro | dev__link ds-pressable | none |  | svg=false | para=false ×4 [home] "Common"

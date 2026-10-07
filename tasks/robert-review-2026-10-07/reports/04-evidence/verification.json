@@ -1,0 +1,1758 @@
+{
+  "date": "2026-10-07",
+  "base": "http://127.0.0.1:4404",
+  "records": [
+    {
+      "locale": "en",
+      "width": 360,
+      "route": "/",
+      "reducedMotion": true,
+      "scenes": [
+        {
+          "theme": "agent",
+          "box": {
+            "x": 40,
+            "y": 254.015625,
+            "width": 280,
+            "height": 492.90625
+          },
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "24px",
+          "text": "Human review",
+          "panels": [
+            {
+              "opacity": "1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "transform": "none"
+            }
+          ],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/pilot-agent-ops/message-390.webp",
+              "box": {
+                "x": 40,
+                "y": 254.015625,
+                "width": 280,
+                "height": 209.203125
+              }
+            },
+            {
+              "loaded": true,
+              "source": "/media/pilot-agent-ops/payout-390.webp",
+              "box": {
+                "x": 40,
+                "y": 543.21875,
+                "width": 280,
+                "height": 203.703125
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/work/agent-ops-console",
+              "label": "Read the case: Agent Ops"
+            },
+            {
+              "href": "/work/agent-ops-console",
+              "label": "Read the case: Agent Ops"
+            }
+          ],
+          "gate": {
+            "text": "Human review",
+            "svg": true,
+            "opacity": "1"
+          },
+          "screenshot": "home-agent-en-360.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          }
+        },
+        {
+          "theme": "portal",
+          "box": {
+            "x": 24,
+            "y": 211.9375,
+            "width": 312,
+            "height": 576.4375
+          },
+          "background": "rgb(221, 213, 255)",
+          "gap": "24px",
+          "text": "38\n\n“4 MP outdoor camera” · 8 units\nDemonstration example",
+          "panels": [],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/rebuild/partner-portal/line-open-narrow.webp",
+              "box": {
+                "x": 40,
+                "y": 337.515625,
+                "width": 280,
+                "height": 434.859375
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/work/partner-portal",
+              "label": "Read the case: Partner Portal"
+            }
+          ],
+          "example": {
+            "number": "38",
+            "detail": "“4 MP outdoor camera” · 8 unitsDemonstration example",
+            "oldSourceRow": false
+          },
+          "screenshot": "home-portal-en-360.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          }
+        },
+        {
+          "theme": "pawly",
+          "box": {
+            "x": 24,
+            "y": -25.265625,
+            "width": 312,
+            "height": 1049.609375
+          },
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "24px",
+          "text": "A demonstration handover photo and a dated return report.",
+          "panels": [],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/art-direction/pawly/handover-dropoff.webp",
+              "box": {
+                "x": 24,
+                "y": -25.265625,
+                "width": 312,
+                "height": 232.828125
+              }
+            },
+            {
+              "loaded": true,
+              "source": "/media/rebuild/pawly/en/order-details.webp",
+              "box": {
+                "x": 24,
+                "y": 288.34375,
+                "width": 312,
+                "height": 736
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/work/pawly",
+              "label": "Read the case: Pawly"
+            }
+          ],
+          "pair": {
+            "photo": {
+              "x": 24,
+              "y": -25.265625,
+              "width": 312,
+              "height": 232.828125
+            },
+            "report": {
+              "x": 24,
+              "y": 288.34375,
+              "width": 312,
+              "height": 736
+            },
+            "topDifference": -313.609375,
+            "horizontalGap": -312
+          },
+          "screenshot": "home-pawly-en-360.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          }
+        }
+      ],
+      "errors": [],
+      "overflow": {
+        "viewport": 360,
+        "document": 360
+      }
+    },
+    {
+      "locale": "en",
+      "width": 360,
+      "route": "/work/agent-ops-console",
+      "reducedMotion": true,
+      "scenes": [
+        {
+          "theme": "agent",
+          "box": {
+            "x": 24,
+            "y": 350.53125,
+            "width": 312,
+            "height": 532.09375
+          },
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "24px",
+          "text": "HUMAN REVIEW",
+          "panels": [
+            {
+              "opacity": "1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "transform": "none"
+            }
+          ],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/pilot-agent-ops/message-390.webp",
+              "box": {
+                "x": 24,
+                "y": 350.53125,
+                "width": 312,
+                "height": 233.109375
+              }
+            },
+            {
+              "loaded": true,
+              "source": "/media/pilot-agent-ops/payout-390.webp",
+              "box": {
+                "x": 24,
+                "y": 655.640625,
+                "width": 312,
+                "height": 226.984375
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/media/pilot-agent-ops/message-1440.webp",
+              "label": "Enlarge: The complete customer message that approval will send"
+            },
+            {
+              "href": "/media/pilot-agent-ops/payout-1440.webp",
+              "label": "Enlarge: The complete $340 payout preview, before approval"
+            }
+          ],
+          "gate": {
+            "text": "HUMAN REVIEW",
+            "svg": false,
+            "opacity": "1"
+          },
+          "screenshot": "cover-agent-en-360.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          },
+          "zoom": {
+            "open": true,
+            "sameSource": true,
+            "focusReturned": true
+          }
+        }
+      ],
+      "errors": [],
+      "overflow": {
+        "viewport": 360,
+        "document": 360
+      }
+    },
+    {
+      "locale": "en",
+      "width": 360,
+      "route": "/work/partner-portal",
+      "reducedMotion": true,
+      "scenes": [
+        {
+          "theme": "portal",
+          "box": {
+            "x": 24,
+            "y": 351.8125,
+            "width": 312,
+            "height": 576.4375
+          },
+          "background": "rgb(221, 213, 255)",
+          "gap": "24px",
+          "text": "38\n\n“4 MP outdoor camera” · 8 units\nDemonstration example",
+          "panels": [],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/rebuild/partner-portal/line-open-narrow.webp",
+              "box": {
+                "x": 40,
+                "y": 477.390625,
+                "width": 280,
+                "height": 434.859375
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/media/rebuild/partner-portal/line-open-wide.webp",
+              "label": "Enlarge: Actual buyer decision for row 38: original source text, eight units and three catalog candidates"
+            }
+          ],
+          "example": {
+            "number": "38",
+            "detail": "“4 MP outdoor camera” · 8 unitsDemonstration example",
+            "oldSourceRow": false
+          },
+          "screenshot": "cover-portal-en-360.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          },
+          "zoom": {
+            "open": true,
+            "sameSource": true,
+            "focusReturned": true
+          }
+        }
+      ],
+      "errors": [],
+      "overflow": {
+        "viewport": 360,
+        "document": 360
+      }
+    },
+    {
+      "locale": "en",
+      "width": 360,
+      "route": "/work/pawly",
+      "reducedMotion": true,
+      "scenes": [
+        {
+          "theme": "pawly",
+          "box": {
+            "x": 24,
+            "y": -0.375,
+            "width": 312,
+            "height": 1049.609375
+          },
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "24px",
+          "text": "A demonstration handover photo and a dated return report.",
+          "panels": [],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/art-direction/pawly/handover-dropoff.webp",
+              "box": {
+                "x": 24,
+                "y": -0.375,
+                "width": 312,
+                "height": 232.828125
+              }
+            },
+            {
+              "loaded": true,
+              "source": "/media/rebuild/pawly/en/order-details.webp",
+              "box": {
+                "x": 24,
+                "y": 313.234375,
+                "width": 312,
+                "height": 736
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/media/rebuild/pawly/en/order-details.webp",
+              "label": "Enlarge: Return confirmed at 14:52, two dated photos, 950 rouble demo charge and review action."
+            }
+          ],
+          "pair": {
+            "photo": {
+              "x": 24,
+              "y": -0.375,
+              "width": 312,
+              "height": 232.828125
+            },
+            "report": {
+              "x": 24,
+              "y": 313.234375,
+              "width": 312,
+              "height": 736
+            },
+            "topDifference": -313.609375,
+            "horizontalGap": -312
+          },
+          "screenshot": "cover-pawly-en-360.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          },
+          "zoom": {
+            "open": true,
+            "sameSource": true,
+            "focusReturned": true
+          }
+        }
+      ],
+      "errors": [],
+      "overflow": {
+        "viewport": 360,
+        "document": 360
+      }
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "route": "/",
+      "reducedMotion": true,
+      "scenes": [
+        {
+          "theme": "agent",
+          "box": {
+            "x": 128,
+            "y": 284.15625,
+            "width": 1184,
+            "height": 432.609375
+          },
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "24px",
+          "text": "Human review",
+          "panels": [
+            {
+              "opacity": "1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "transform": "none"
+            }
+          ],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/pilot-agent-ops/message-1440.webp",
+              "box": {
+                "x": 128,
+                "y": 289.984375,
+                "width": 509.078125,
+                "height": 420.953125
+              }
+            },
+            {
+              "loaded": true,
+              "source": "/media/pilot-agent-ops/payout-1440.webp",
+              "box": {
+                "x": 802.90625,
+                "y": 332.15625,
+                "width": 509.09375,
+                "height": 384.609375
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/work/agent-ops-console",
+              "label": "Read the case: Agent Ops"
+            },
+            {
+              "href": "/work/agent-ops-console",
+              "label": "Read the case: Agent Ops"
+            }
+          ],
+          "gate": {
+            "text": "Human review",
+            "svg": true,
+            "opacity": "1"
+          },
+          "screenshot": "home-agent-en-1440.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          }
+        },
+        {
+          "theme": "portal",
+          "box": {
+            "x": 80,
+            "y": 282.671875,
+            "width": 1280,
+            "height": 434.1875
+          },
+          "background": "rgb(221, 213, 255)",
+          "gap": "32px",
+          "text": "38\n\n“4 MP outdoor camera” · 8 units\nDemonstration example",
+          "panels": [],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/rebuild/partner-portal/line-open-wide.webp",
+              "box": {
+                "x": 390.390625,
+                "y": 330.671875,
+                "width": 921.609375,
+                "height": 338.1875
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/work/partner-portal",
+              "label": "Read the case: Partner Portal"
+            }
+          ],
+          "example": {
+            "number": "38",
+            "detail": "“4 MP outdoor camera” · 8 unitsDemonstration example",
+            "oldSourceRow": false
+          },
+          "screenshot": "home-portal-en-1440.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          }
+        },
+        {
+          "theme": "pawly",
+          "box": {
+            "x": 80,
+            "y": 46.8125,
+            "width": 1280,
+            "height": 905.84375
+          },
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "32px",
+          "text": "A demonstration handover photo and a dated return report.",
+          "panels": [],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/art-direction/pawly/handover-dropoff.webp",
+              "box": {
+                "x": 80,
+                "y": 46.8125,
+                "width": 832,
+                "height": 620.875
+              }
+            },
+            {
+              "loaded": true,
+              "source": "/media/rebuild/pawly/en/order-details.webp",
+              "box": {
+                "x": 944,
+                "y": 46.8125,
+                "width": 384,
+                "height": 905.84375
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/work/pawly",
+              "label": "Read the case: Pawly"
+            }
+          ],
+          "pair": {
+            "photo": {
+              "x": 80,
+              "y": 46.8125,
+              "width": 832,
+              "height": 620.875
+            },
+            "report": {
+              "x": 944,
+              "y": 46.8125,
+              "width": 384,
+              "height": 905.84375
+            },
+            "topDifference": 0,
+            "horizontalGap": 32
+          },
+          "screenshot": "home-pawly-en-1440.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          }
+        }
+      ],
+      "errors": [],
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "route": "/work/agent-ops-console",
+      "reducedMotion": true,
+      "scenes": [
+        {
+          "theme": "agent",
+          "box": {
+            "x": 80,
+            "y": 324.75,
+            "width": 1280,
+            "height": 482.78125
+          },
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "32px",
+          "text": "HUMAN REVIEW",
+          "panels": [
+            {
+              "opacity": "1",
+              "transform": "matrix(0.99863, -0.052336, 0.052336, 0.99863, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "transform": "matrix(0.99863, 0.052336, -0.052336, 0.99863, 0, 0)"
+            }
+          ],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/pilot-agent-ops/message-1440.webp",
+              "box": {
+                "x": 69.731201171875,
+                "y": 350.9433288574219,
+                "width": 527.88818359375,
+                "height": 444.8952941894531
+              }
+            },
+            {
+              "loaded": true,
+              "source": "/media/pilot-agent-ops/payout-1440.webp",
+              "box": {
+                "x": 843.3115234375,
+                "y": 401.0122985839844,
+                "width": 526.0107421875,
+                "height": 408.7738342285156
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/media/pilot-agent-ops/message-1440.webp",
+              "label": "Enlarge: The complete customer message that approval will send"
+            },
+            {
+              "href": "/media/pilot-agent-ops/payout-1440.webp",
+              "label": "Enlarge: The complete $340 payout preview, before approval"
+            }
+          ],
+          "gate": {
+            "text": "HUMAN REVIEW",
+            "svg": false,
+            "opacity": "1"
+          },
+          "screenshot": "cover-agent-en-1440.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          },
+          "zoom": {
+            "open": true,
+            "sameSource": true,
+            "focusReturned": true
+          }
+        }
+      ],
+      "errors": [],
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "route": "/work/partner-portal",
+      "reducedMotion": true,
+      "scenes": [
+        {
+          "theme": "portal",
+          "box": {
+            "x": 80,
+            "y": 308.453125,
+            "width": 1280,
+            "height": 434.1875
+          },
+          "background": "rgb(221, 213, 255)",
+          "gap": "32px",
+          "text": "38\n\n“4 MP outdoor camera” · 8 units\nDemonstration example",
+          "panels": [],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/rebuild/partner-portal/line-open-wide.webp",
+              "box": {
+                "x": 390.390625,
+                "y": 356.453125,
+                "width": 921.609375,
+                "height": 338.1875
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/media/rebuild/partner-portal/line-open-wide.webp",
+              "label": "Enlarge: Actual buyer decision for row 38: original source text, eight units and three catalog candidates"
+            }
+          ],
+          "example": {
+            "number": "38",
+            "detail": "“4 MP outdoor camera” · 8 unitsDemonstration example",
+            "oldSourceRow": false
+          },
+          "screenshot": "cover-portal-en-1440.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          },
+          "zoom": {
+            "open": true,
+            "sameSource": true,
+            "focusReturned": true
+          }
+        }
+      ],
+      "errors": [],
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "route": "/work/pawly",
+      "reducedMotion": true,
+      "scenes": [
+        {
+          "theme": "pawly",
+          "box": {
+            "x": 80,
+            "y": 94.265625,
+            "width": 1280,
+            "height": 905.84375
+          },
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "32px",
+          "text": "A demonstration handover photo and a dated return report.",
+          "panels": [],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/art-direction/pawly/handover-dropoff.webp",
+              "box": {
+                "x": 80,
+                "y": 94.265625,
+                "width": 832,
+                "height": 620.875
+              }
+            },
+            {
+              "loaded": true,
+              "source": "/media/rebuild/pawly/en/order-details.webp",
+              "box": {
+                "x": 944,
+                "y": 94.265625,
+                "width": 384,
+                "height": 905.84375
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/media/rebuild/pawly/en/order-details.webp",
+              "label": "Enlarge: Return confirmed at 14:52, two dated photos, 950 rouble demo charge and review action."
+            }
+          ],
+          "pair": {
+            "photo": {
+              "x": 80,
+              "y": 94.265625,
+              "width": 832,
+              "height": 620.875
+            },
+            "report": {
+              "x": 944,
+              "y": 94.265625,
+              "width": 384,
+              "height": 905.84375
+            },
+            "topDifference": 0,
+            "horizontalGap": 32
+          },
+          "screenshot": "cover-pawly-en-1440.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          },
+          "zoom": {
+            "open": true,
+            "sameSource": true,
+            "focusReturned": true
+          }
+        }
+      ],
+      "errors": [],
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 360,
+      "route": "/ru/",
+      "reducedMotion": true,
+      "scenes": [
+        {
+          "theme": "agent",
+          "box": {
+            "x": 40,
+            "y": 246.546875,
+            "width": 280,
+            "height": 507.859375
+          },
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "24px",
+          "text": "Человеческая проверка",
+          "panels": [
+            {
+              "opacity": "1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "transform": "none"
+            }
+          ],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/rebuild/agent-ops/ru/message-390.webp",
+              "box": {
+                "x": 40,
+                "y": 246.546875,
+                "width": 280,
+                "height": 224.15625
+              }
+            },
+            {
+              "loaded": true,
+              "source": "/media/rebuild/agent-ops/ru/payout-390.webp",
+              "box": {
+                "x": 40,
+                "y": 550.703125,
+                "width": 280,
+                "height": 203.703125
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/ru/work/agent-ops-console",
+              "label": "Читать кейс: Agent Ops"
+            },
+            {
+              "href": "/ru/work/agent-ops-console",
+              "label": "Читать кейс: Agent Ops"
+            }
+          ],
+          "gate": {
+            "text": "Человеческая проверка",
+            "svg": true,
+            "opacity": "1"
+          },
+          "screenshot": "home-agent-ru-360.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          }
+        },
+        {
+          "theme": "portal",
+          "box": {
+            "x": 24,
+            "y": 211.421875,
+            "width": 312,
+            "height": 576.4375
+          },
+          "background": "rgb(221, 213, 255)",
+          "gap": "24px",
+          "text": "38\n\n«камера 4мп уличная» · 8 шт.\nДемонстрационный пример",
+          "panels": [],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/rebuild/partner-portal/line-open-narrow.webp",
+              "box": {
+                "x": 40,
+                "y": 337,
+                "width": 280,
+                "height": 434.859375
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/ru/work/partner-portal",
+              "label": "Читать кейс: Partner Portal"
+            }
+          ],
+          "example": {
+            "number": "38",
+            "detail": "«камера 4мп уличная» · 8 шт.Демонстрационный пример",
+            "oldSourceRow": false
+          },
+          "screenshot": "home-portal-ru-360.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          }
+        },
+        {
+          "theme": "pawly",
+          "box": {
+            "x": 24,
+            "y": -33.171875,
+            "width": 312,
+            "height": 1065.609375
+          },
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "24px",
+          "text": "Демонстрационное фото передачи и датированный отчёт о возвращении.",
+          "panels": [],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/art-direction/pawly/handover-dropoff.webp",
+              "box": {
+                "x": 24,
+                "y": -33.171875,
+                "width": 312,
+                "height": 232.828125
+              }
+            },
+            {
+              "loaded": true,
+              "source": "/media/rebuild/pawly/ru/order-details.webp",
+              "box": {
+                "x": 24,
+                "y": 280.4375,
+                "width": 312,
+                "height": 752
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/ru/work/pawly",
+              "label": "Читать кейс: Pawly"
+            }
+          ],
+          "pair": {
+            "photo": {
+              "x": 24,
+              "y": -33.171875,
+              "width": 312,
+              "height": 232.828125
+            },
+            "report": {
+              "x": 24,
+              "y": 280.4375,
+              "width": 312,
+              "height": 752
+            },
+            "topDifference": -313.609375,
+            "horizontalGap": -312
+          },
+          "screenshot": "home-pawly-ru-360.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          }
+        }
+      ],
+      "errors": [],
+      "overflow": {
+        "viewport": 360,
+        "document": 360
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 360,
+      "route": "/ru/work/agent-ops-console",
+      "reducedMotion": true,
+      "scenes": [
+        {
+          "theme": "agent",
+          "box": {
+            "x": 24,
+            "y": 313.734375,
+            "width": 312,
+            "height": 548.75
+          },
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "24px",
+          "text": "РЕШЕНИЕ ЧЕЛОВЕКА",
+          "panels": [
+            {
+              "opacity": "1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "transform": "none"
+            }
+          ],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/rebuild/agent-ops/ru/message-390.webp",
+              "box": {
+                "x": 24,
+                "y": 313.734375,
+                "width": 312,
+                "height": 249.765625
+              }
+            },
+            {
+              "loaded": true,
+              "source": "/media/rebuild/agent-ops/ru/payout-390.webp",
+              "box": {
+                "x": 24,
+                "y": 635.5,
+                "width": 312,
+                "height": 226.984375
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/media/rebuild/agent-ops/ru/message-1440.webp",
+              "label": "Увеличить: Целое сообщение клиенту, отправляемое при одобрении"
+            },
+            {
+              "href": "/media/rebuild/agent-ops/ru/payout-1440.webp",
+              "label": "Увеличить: Целый предварительный расчёт выплаты $340 до одобрения"
+            }
+          ],
+          "gate": {
+            "text": "РЕШЕНИЕ ЧЕЛОВЕКА",
+            "svg": false,
+            "opacity": "1"
+          },
+          "screenshot": "cover-agent-ru-360.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          },
+          "zoom": {
+            "open": true,
+            "sameSource": true,
+            "focusReturned": true
+          }
+        }
+      ],
+      "errors": [],
+      "overflow": {
+        "viewport": 360,
+        "document": 360
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 360,
+      "route": "/ru/work/partner-portal",
+      "reducedMotion": true,
+      "scenes": [
+        {
+          "theme": "portal",
+          "box": {
+            "x": 24,
+            "y": 377.8125,
+            "width": 312,
+            "height": 576.4375
+          },
+          "background": "rgb(221, 213, 255)",
+          "gap": "24px",
+          "text": "38\n\n«камера 4мп уличная» · 8 шт.\nДемонстрационный пример",
+          "panels": [],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/rebuild/partner-portal/line-open-narrow.webp",
+              "box": {
+                "x": 40,
+                "y": 503.390625,
+                "width": 280,
+                "height": 434.859375
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/media/rebuild/partner-portal/line-open-wide.webp",
+              "label": "Увеличить: Настоящее решение по строке 38: исходный текст, восемь единиц и три кандидата из каталога"
+            }
+          ],
+          "example": {
+            "number": "38",
+            "detail": "«камера 4мп уличная» · 8 шт.Демонстрационный пример",
+            "oldSourceRow": false
+          },
+          "screenshot": "cover-portal-ru-360.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          },
+          "zoom": {
+            "open": true,
+            "sameSource": true,
+            "focusReturned": true
+          }
+        }
+      ],
+      "errors": [],
+      "overflow": {
+        "viewport": 360,
+        "document": 360
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 360,
+      "route": "/ru/work/pawly",
+      "reducedMotion": true,
+      "scenes": [
+        {
+          "theme": "pawly",
+          "box": {
+            "x": 24,
+            "y": -0.375,
+            "width": 312,
+            "height": 1065.609375
+          },
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "24px",
+          "text": "Демонстрационное фото передачи и датированный отчёт о возвращении.",
+          "panels": [],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/art-direction/pawly/handover-dropoff.webp",
+              "box": {
+                "x": 24,
+                "y": -0.375,
+                "width": 312,
+                "height": 232.828125
+              }
+            },
+            {
+              "loaded": true,
+              "source": "/media/rebuild/pawly/ru/order-details.webp",
+              "box": {
+                "x": 24,
+                "y": 313.234375,
+                "width": 312,
+                "height": 752
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/media/rebuild/pawly/ru/order-details.webp",
+              "label": "Увеличить: Возвращение подтверждено в 14:52, две датированные фотографии, демонстрационная сумма 950 рублей и действие отзыва."
+            }
+          ],
+          "pair": {
+            "photo": {
+              "x": 24,
+              "y": -0.375,
+              "width": 312,
+              "height": 232.828125
+            },
+            "report": {
+              "x": 24,
+              "y": 313.234375,
+              "width": 312,
+              "height": 752
+            },
+            "topDifference": -313.609375,
+            "horizontalGap": -312
+          },
+          "screenshot": "cover-pawly-ru-360.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          },
+          "zoom": {
+            "open": true,
+            "sameSource": true,
+            "focusReturned": true
+          }
+        }
+      ],
+      "errors": [],
+      "overflow": {
+        "viewport": 360,
+        "document": 360
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "route": "/ru/",
+      "reducedMotion": true,
+      "scenes": [
+        {
+          "theme": "agent",
+          "box": {
+            "x": 128,
+            "y": 284.15625,
+            "width": 1184,
+            "height": 432.609375
+          },
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "24px",
+          "text": "Человеческая проверка",
+          "panels": [
+            {
+              "opacity": "1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "transform": "none"
+            }
+          ],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/rebuild/agent-ops/ru/message-1440.webp",
+              "box": {
+                "x": 128,
+                "y": 289.984375,
+                "width": 509.078125,
+                "height": 420.953125
+              }
+            },
+            {
+              "loaded": true,
+              "source": "/media/rebuild/agent-ops/ru/payout-1440.webp",
+              "box": {
+                "x": 802.90625,
+                "y": 332.15625,
+                "width": 509.09375,
+                "height": 384.609375
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/ru/work/agent-ops-console",
+              "label": "Читать кейс: Agent Ops"
+            },
+            {
+              "href": "/ru/work/agent-ops-console",
+              "label": "Читать кейс: Agent Ops"
+            }
+          ],
+          "gate": {
+            "text": "Человеческая проверка",
+            "svg": true,
+            "opacity": "1"
+          },
+          "screenshot": "home-agent-ru-1440.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          }
+        },
+        {
+          "theme": "portal",
+          "box": {
+            "x": 80,
+            "y": 282.671875,
+            "width": 1280,
+            "height": 434.1875
+          },
+          "background": "rgb(221, 213, 255)",
+          "gap": "32px",
+          "text": "38\n\n«камера 4мп уличная» · 8 шт.\nДемонстрационный пример",
+          "panels": [],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/rebuild/partner-portal/line-open-wide.webp",
+              "box": {
+                "x": 390.390625,
+                "y": 330.671875,
+                "width": 921.609375,
+                "height": 338.1875
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/ru/work/partner-portal",
+              "label": "Читать кейс: Partner Portal"
+            }
+          ],
+          "example": {
+            "number": "38",
+            "detail": "«камера 4мп уличная» · 8 шт.Демонстрационный пример",
+            "oldSourceRow": false
+          },
+          "screenshot": "home-portal-ru-1440.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          }
+        },
+        {
+          "theme": "pawly",
+          "box": {
+            "x": 80,
+            "y": 37.125,
+            "width": 1280,
+            "height": 925.53125
+          },
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "32px",
+          "text": "Демонстрационное фото передачи и датированный отчёт о возвращении.",
+          "panels": [],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/art-direction/pawly/handover-dropoff.webp",
+              "box": {
+                "x": 80,
+                "y": 37.125,
+                "width": 832,
+                "height": 620.875
+              }
+            },
+            {
+              "loaded": true,
+              "source": "/media/rebuild/pawly/ru/order-details.webp",
+              "box": {
+                "x": 944,
+                "y": 37.125,
+                "width": 384,
+                "height": 925.53125
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/ru/work/pawly",
+              "label": "Читать кейс: Pawly"
+            }
+          ],
+          "pair": {
+            "photo": {
+              "x": 80,
+              "y": 37.125,
+              "width": 832,
+              "height": 620.875
+            },
+            "report": {
+              "x": 944,
+              "y": 37.125,
+              "width": 384,
+              "height": 925.53125
+            },
+            "topDifference": 0,
+            "horizontalGap": 32
+          },
+          "screenshot": "home-pawly-ru-1440.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          }
+        }
+      ],
+      "errors": [],
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "route": "/ru/work/agent-ops-console",
+      "reducedMotion": true,
+      "scenes": [
+        {
+          "theme": "agent",
+          "box": {
+            "x": 80,
+            "y": 289.734375,
+            "width": 1280,
+            "height": 482.78125
+          },
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "32px",
+          "text": "РЕШЕНИЕ ЧЕЛОВЕКА",
+          "panels": [
+            {
+              "opacity": "1",
+              "transform": "matrix(0.99863, -0.052336, 0.052336, 0.99863, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "transform": "matrix(0.99863, 0.052336, -0.052336, 0.99863, 0, 0)"
+            }
+          ],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/rebuild/agent-ops/ru/message-1440.webp",
+              "box": {
+                "x": 69.731201171875,
+                "y": 315.9277038574219,
+                "width": 527.88818359375,
+                "height": 444.8952941894531
+              }
+            },
+            {
+              "loaded": true,
+              "source": "/media/rebuild/agent-ops/ru/payout-1440.webp",
+              "box": {
+                "x": 843.3115234375,
+                "y": 365.9966735839844,
+                "width": 526.0107421875,
+                "height": 408.7738342285156
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/media/rebuild/agent-ops/ru/message-1440.webp",
+              "label": "Увеличить: Целое сообщение клиенту, отправляемое при одобрении"
+            },
+            {
+              "href": "/media/rebuild/agent-ops/ru/payout-1440.webp",
+              "label": "Увеличить: Целый предварительный расчёт выплаты $340 до одобрения"
+            }
+          ],
+          "gate": {
+            "text": "РЕШЕНИЕ ЧЕЛОВЕКА",
+            "svg": false,
+            "opacity": "1"
+          },
+          "screenshot": "cover-agent-ru-1440.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          },
+          "zoom": {
+            "open": true,
+            "sameSource": true,
+            "focusReturned": true
+          }
+        }
+      ],
+      "errors": [],
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "route": "/ru/work/partner-portal",
+      "reducedMotion": true,
+      "scenes": [
+        {
+          "theme": "portal",
+          "box": {
+            "x": 80,
+            "y": 308.453125,
+            "width": 1280,
+            "height": 434.1875
+          },
+          "background": "rgb(221, 213, 255)",
+          "gap": "32px",
+          "text": "38\n\n«камера 4мп уличная» · 8 шт.\nДемонстрационный пример",
+          "panels": [],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/rebuild/partner-portal/line-open-wide.webp",
+              "box": {
+                "x": 390.390625,
+                "y": 356.453125,
+                "width": 921.609375,
+                "height": 338.1875
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/media/rebuild/partner-portal/line-open-wide.webp",
+              "label": "Увеличить: Настоящее решение по строке 38: исходный текст, восемь единиц и три кандидата из каталога"
+            }
+          ],
+          "example": {
+            "number": "38",
+            "detail": "«камера 4мп уличная» · 8 шт.Демонстрационный пример",
+            "oldSourceRow": false
+          },
+          "screenshot": "cover-portal-ru-1440.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          },
+          "zoom": {
+            "open": true,
+            "sameSource": true,
+            "focusReturned": true
+          }
+        }
+      ],
+      "errors": [],
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "route": "/ru/work/pawly",
+      "reducedMotion": true,
+      "scenes": [
+        {
+          "theme": "pawly",
+          "box": {
+            "x": 80,
+            "y": 74.265625,
+            "width": 1280,
+            "height": 925.53125
+          },
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "32px",
+          "text": "Демонстрационное фото передачи и датированный отчёт о возвращении.",
+          "panels": [],
+          "images": [
+            {
+              "loaded": true,
+              "source": "/media/art-direction/pawly/handover-dropoff.webp",
+              "box": {
+                "x": 80,
+                "y": 74.265625,
+                "width": 832,
+                "height": 620.875
+              }
+            },
+            {
+              "loaded": true,
+              "source": "/media/rebuild/pawly/ru/order-details.webp",
+              "box": {
+                "x": 944,
+                "y": 74.265625,
+                "width": 384,
+                "height": 925.53125
+              }
+            }
+          ],
+          "links": [
+            {
+              "href": "/media/rebuild/pawly/ru/order-details.webp",
+              "label": "Увеличить: Возвращение подтверждено в 14:52, две датированные фотографии, демонстрационная сумма 950 рублей и действие отзыва."
+            }
+          ],
+          "pair": {
+            "photo": {
+              "x": 80,
+              "y": 74.265625,
+              "width": 832,
+              "height": 620.875
+            },
+            "report": {
+              "x": 944,
+              "y": 74.265625,
+              "width": 384,
+              "height": 925.53125
+            },
+            "topDifference": 0,
+            "horizontalGap": 32
+          },
+          "screenshot": "cover-pawly-ru-1440.png",
+          "keyboardFocus": {
+            "focused": true,
+            "outline": "solid"
+          },
+          "zoom": {
+            "open": true,
+            "sameSource": true,
+            "focusReturned": true
+          }
+        }
+      ],
+      "errors": [],
+      "overflow": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "locale": "en",
+      "width": 360,
+      "motion": {
+        "settled": {
+          "panels": [
+            {
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "gateOpacity": "1"
+        },
+        "reduced": {
+          "panels": [
+            {
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "gateOpacity": "1"
+        },
+        "home": {
+          "panelCount": 2,
+          "gateOpacity": "1",
+          "svg": true
+        }
+      }
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "motion": {
+        "settled": {
+          "panels": [
+            {
+              "opacity": "1",
+              "transform": "matrix(0.998629, -0.0523394, 0.0523394, 0.998629, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "transform": "matrix(0.998629, 0.0523394, -0.0523394, 0.998629, 0, 0)"
+            }
+          ],
+          "gateOpacity": "1"
+        },
+        "reduced": {
+          "panels": [
+            {
+              "opacity": "1",
+              "transform": "matrix(0.998629, -0.0523394, 0.0523394, 0.998629, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "transform": "matrix(0.998629, 0.0523394, -0.0523394, 0.998629, 0, 0)"
+            }
+          ],
+          "gateOpacity": "1"
+        },
+        "home": {
+          "panelCount": 2,
+          "gateOpacity": "1",
+          "svg": true
+        }
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 360,
+      "motion": {
+        "settled": {
+          "panels": [
+            {
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "gateOpacity": "1"
+        },
+        "reduced": {
+          "panels": [
+            {
+              "opacity": "1",
+              "transform": "none"
+            },
+            {
+              "opacity": "1",
+              "transform": "none"
+            }
+          ],
+          "gateOpacity": "1"
+        },
+        "home": {
+          "panelCount": 2,
+          "gateOpacity": "1",
+          "svg": true
+        }
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "motion": {
+        "settled": {
+          "panels": [
+            {
+              "opacity": "1",
+              "transform": "matrix(0.998629, -0.0523394, 0.0523394, 0.998629, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "transform": "matrix(0.998629, 0.0523394, -0.0523394, 0.998629, 0, 0)"
+            }
+          ],
+          "gateOpacity": "1"
+        },
+        "reduced": {
+          "panels": [
+            {
+              "opacity": "1",
+              "transform": "matrix(0.998629, -0.0523394, 0.0523394, 0.998629, 0, 0)"
+            },
+            {
+              "opacity": "1",
+              "transform": "matrix(0.998629, 0.0523394, -0.0523394, 0.998629, 0, 0)"
+            }
+          ],
+          "gateOpacity": "1"
+        },
+        "home": {
+          "panelCount": 2,
+          "gateOpacity": "1",
+          "svg": true
+        }
+      }
+    }
+  ]
+}

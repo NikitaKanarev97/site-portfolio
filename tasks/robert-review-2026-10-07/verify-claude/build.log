@@ -1,0 +1,123 @@
+
+> site-portfolio@0.1.0 build
+> astro build
+
+[2m16:16:42[22m [34m[vite][39m Re-optimizing dependencies because vite config has changed
+[2m16:16:42[22m [34m[content][39m Syncing content
+[2m16:16:42[22m [34m[content][39m Synced content
+[2m16:16:42[22m [34m[types][39m Generated [2m621ms[22m
+[2m16:16:42[22m [34m[build][39m output: [34m"static"[39m
+[2m16:16:42[22m [34m[build][39m mode: [34m"static"[39m
+[2m16:16:42[22m [34m[build][39m directory: [34mD:\Claude-projects\Site-portfolio\dist\[39m
+[2m16:16:42[22m [34m[build][39m Collecting build info...
+[2m16:16:42[22m [34m[build][39m [32m✓ Completed in 643ms.[39m
+[2m16:16:42[22m [34m[build][39m Building static entrypoints...
+[2m16:16:46[22m [34m[vite][39m [32m✓ built in 3.90s[39m
+[2m16:16:46[22m [34m[build][39m [32m✓ Completed in 4.00s.[39m
+
+[42m[30m building client (vite) [39m[49m
+[2m16:16:46[22m [34m[vite][39m transforming...
+[2m16:16:47[22m [34m[vite][39m [32m✓[39m 32 modules transformed.
+[2m16:16:47[22m [34m[vite][39m rendering chunks...
+[2m16:16:47[22m [34m[vite][39m computing gzip size...
+[2m16:16:47[22m [34m[vite][39m [2mdist/[22m[36m_astro/page.IvKoM_B8.js                                               [39m[1m[2m  0.05 kB[22m[1m[22m[2m │ gzip:  0.07 kB[22m
+[2m16:16:47[22m [34m[vite][39m [2mdist/[22m[36m_astro/index.BbWtjHji.js                                              [39m[1m[2m  2.30 kB[22m[1m[22m[2m │ gzip:  1.05 kB[22m
+[2m16:16:47[22m [34m[vite][39m [2mdist/[22m[36m_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js  [39m[1m[2m 13.11 kB[22m[1m[22m[2m │ gzip:  4.54 kB[22m
+[2m16:16:47[22m [34m[vite][39m [2mdist/[22m[36m_astro/BaseLayout.astro_astro_type_script_index_0_lang.DQHWE3gl.js    [39m[1m[2m152.06 kB[22m[1m[22m[2m │ gzip: 58.88 kB[22m
+[2m16:16:47[22m [34m[vite][39m [32m✓ built in 635ms[39m
+
+[42m[30m generating static routes [39m[49m
+[2m16:16:47[22m [32m▶[39m src/pages/404.astro
+[2m16:16:47[22m   [34m└─[39m [2m/404.html[22m [2m(+19ms)[22m 
+[2m16:16:47[22m [32m▶[39m src/pages/500.astro
+[2m16:16:47[22m   [34m└─[39m [2m/500.html[22m [2m(+5ms)[22m 
+[2m16:16:47[22m [32m▶[39m src/pages/about.astro
+[2m16:16:47[22m   [34m└─[39m [2m/about/index.html[22m [2m(+8ms)[22m 
+[2m16:16:47[22m [32m▶[39m src/pages/index.astro
+[2m16:16:47[22m   [34m└─[39m [2m/index.html[22m [2m(+39ms)[22m 
+[2m16:16:47[22m [32m▶[39m src/pages/kit.astro
+[2m16:16:47[22m   [34m└─[39m [2m/kit/index.html[22m [2m(+104ms)[22m 
+[2m16:16:49[22m [35mλ[39m src/pages/og/[card].png.ts
+[2m16:16:49[22m   [34m├─[39m [2m/og/default.png[22m [2m(+171ms)[22m 
+[2m16:16:49[22m   [34m├─[39m [2m/og/default-onest.png[22m [2m(+128ms)[22m 
+[2m16:16:49[22m   [34m├─[39m [2m/og/about.png[22m [2m(+121ms)[22m 
+[2m16:16:49[22m   [34m├─[39m [2m/og/about-onest.png[22m [2m(+107ms)[22m 
+[2m16:16:49[22m   [34m├─[39m [2m/og/work-agent-ops-console.png[22m [2m(+167ms)[22m 
+[2m16:16:49[22m   [34m├─[39m [2m/og/work-agent-ops-console-onest.png[22m [2m(+212ms)[22m 
+[2m16:16:50[22m   [34m├─[39m [2m/og/work-partner-portal.png[22m [2m(+172ms)[22m 
+[2m16:16:50[22m   [34m├─[39m [2m/og/work-partner-portal-onest.png[22m [2m(+177ms)[22m 
+[2m16:16:50[22m   [34m├─[39m [2m/og/work-learn.png[22m [2m(+114ms)[22m 
+[2m16:16:50[22m   [34m├─[39m [2m/og/work-learn-onest.png[22m [2m(+100ms)[22m 
+[2m16:16:50[22m   [34m├─[39m [2m/og/work-vet-clinic.png[22m [2m(+124ms)[22m 
+[2m16:16:50[22m   [34m├─[39m [2m/og/work-vet-clinic-onest.png[22m [2m(+120ms)[22m 
+[2m16:16:50[22m   [34m├─[39m [2m/og/work-pawly.png[22m [2m(+100ms)[22m 
+[2m16:16:51[22m   [34m├─[39m [2m/og/work-pawly-onest.png[22m [2m(+105ms)[22m 
+[2m16:16:51[22m   [34m├─[39m [2m/og/default-ru.png[22m [2m(+106ms)[22m 
+[2m16:16:51[22m   [34m├─[39m [2m/og/default-ru-onest.png[22m [2m(+110ms)[22m 
+[2m16:16:51[22m   [34m├─[39m [2m/og/about-ru.png[22m [2m(+102ms)[22m 
+[2m16:16:51[22m   [34m├─[39m [2m/og/about-ru-onest.png[22m [2m(+106ms)[22m 
+[2m16:16:51[22m   [34m├─[39m [2m/og/work-agent-ops-console-ru.png[22m [2m(+102ms)[22m 
+[2m16:16:51[22m   [34m├─[39m [2m/og/work-agent-ops-console-ru-onest.png[22m [2m(+101ms)[22m 
+[2m16:16:51[22m   [34m├─[39m [2m/og/work-partner-portal-ru.png[22m [2m(+103ms)[22m 
+[2m16:16:51[22m   [34m├─[39m [2m/og/work-partner-portal-ru-onest.png[22m [2m(+101ms)[22m 
+[2m16:16:51[22m   [34m├─[39m [2m/og/work-learn-ru.png[22m [2m(+104ms)[22m 
+[2m16:16:52[22m   [34m├─[39m [2m/og/work-learn-ru-onest.png[22m [2m(+98ms)[22m 
+[2m16:16:52[22m   [34m├─[39m [2m/og/work-vet-clinic-ru.png[22m [2m(+104ms)[22m 
+[2m16:16:52[22m   [34m├─[39m [2m/og/work-vet-clinic-ru-onest.png[22m [2m(+102ms)[22m 
+[2m16:16:52[22m   [34m├─[39m [2m/og/work-pawly-ru.png[22m [2m(+97ms)[22m 
+[2m16:16:52[22m   [34m└─[39m [2m/og/work-pawly-ru-onest.png[22m [2m(+100ms)[22m 
+[2m16:16:52[22m [32m▶[39m src/pages/preview/agent-ops-pilot.astro
+[2m16:16:52[22m   [34m└─[39m [2m/preview/agent-ops-pilot/index.html[22m [2m(+29ms)[22m 
+[2m16:16:52[22m [32m▶[39m src/pages/preview/agent-ops-rebuild/[locale].astro
+[2m16:16:52[22m   [34m├─[39m [2m/preview/agent-ops-rebuild/en/index.html[22m [2m(+6ms)[22m 
+[2m16:16:52[22m   [34m└─[39m [2m/preview/agent-ops-rebuild/ru/index.html[22m [2m(+28ms)[22m 
+[2m16:16:52[22m [32m▶[39m src/pages/preview/common/[locale]/[case].astro
+[2m16:16:52[22m   [34m├─[39m [2m/preview/common/en/agent-ops/index.html[22m [2m(+6ms)[22m 
+[2m16:16:52[22m   [34m├─[39m [2m/preview/common/en/partner-portal/index.html[22m [2m(+20ms)[22m 
+[2m16:16:52[22m   [34m├─[39m [2m/preview/common/ru/agent-ops/index.html[22m [2m(+6ms)[22m 
+[2m16:16:52[22m   [34m└─[39m [2m/preview/common/ru/partner-portal/index.html[22m [2m(+10ms)[22m 
+[2m16:16:52[22m [32m▶[39m src/pages/preview/common/index.astro
+[2m16:16:52[22m   [34m└─[39m [2m/preview/common/index.html[22m [2m(+3ms)[22m 
+[2m16:16:52[22m [32m▶[39m src/pages/preview/film-common/[locale].astro
+[2m16:16:52[22m   [34m├─[39m [2m/preview/film-common/en/index.html[22m [2m(+16ms)[22m 
+[2m16:16:52[22m   [34m└─[39m [2m/preview/film-common/ru/index.html[22m [2m(+17ms)[22m 
+[2m16:16:52[22m [32m▶[39m src/pages/preview/learn-rebuild/[locale].astro
+[2m16:16:52[22m   [34m├─[39m [2m/preview/learn-rebuild/en/index.html[22m [2m(+33ms)[22m 
+[2m16:16:52[22m   [34m└─[39m [2m/preview/learn-rebuild/ru/index.html[22m [2m(+43ms)[22m 
+[2m16:16:52[22m [32m▶[39m src/pages/preview/partner-portal-pilot.astro
+[2m16:16:52[22m   [34m└─[39m [2m/preview/partner-portal-pilot/index.html[22m [2m(+5ms)[22m 
+[2m16:16:52[22m [32m▶[39m src/pages/preview/partner-portal-rebuild/[locale].astro
+[2m16:16:52[22m   [34m├─[39m [2m/preview/partner-portal-rebuild/en/index.html[22m [2m(+23ms)[22m 
+[2m16:16:52[22m   [34m└─[39m [2m/preview/partner-portal-rebuild/ru/index.html[22m [2m(+12ms)[22m 
+[2m16:16:52[22m [32m▶[39m src/pages/preview/pawly-rebuild/[locale].astro
+[2m16:16:52[22m   [34m├─[39m [2m/preview/pawly-rebuild/en/index.html[22m [2m(+32ms)[22m 
+[2m16:16:52[22m   [34m└─[39m [2m/preview/pawly-rebuild/ru/index.html[22m [2m(+27ms)[22m 
+[2m16:16:52[22m [32m▶[39m src/pages/preview/vet-clinic-rebuild/[locale].astro
+[2m16:16:52[22m   [34m├─[39m [2m/preview/vet-clinic-rebuild/en/index.html[22m [2m(+24ms)[22m 
+[2m16:16:52[22m   [34m└─[39m [2m/preview/vet-clinic-rebuild/ru/index.html[22m [2m(+32ms)[22m 
+[2m16:16:52[22m [35mλ[39m src/pages/robots.txt.ts
+[2m16:16:52[22m   [34m└─[39m [2m/robots.txt[22m [2m(+1ms)[22m 
+[2m16:16:52[22m [32m▶[39m src/pages/ru/404.astro
+[2m16:16:52[22m   [34m└─[39m [2m/ru/404/index.html[22m [2m(+3ms)[22m 
+[2m16:16:52[22m [32m▶[39m src/pages/ru/about.astro
+[2m16:16:52[22m   [34m└─[39m [2m/ru/about/index.html[22m [2m(+4ms)[22m 
+[2m16:16:52[22m [32m▶[39m src/pages/ru/index.astro
+[2m16:16:52[22m   [34m└─[39m [2m/ru/index.html[22m [2m(+6ms)[22m 
+[2m16:16:52[22m [32m▶[39m src/pages/ru/work/[slug].astro
+[2m16:16:52[22m   [34m├─[39m [2m/ru/work/agent-ops-console/index.html[22m [2m(+8ms)[22m 
+[2m16:16:52[22m   [34m├─[39m [2m/ru/work/partner-portal/index.html[22m [2m(+12ms)[22m 
+[2m16:16:53[22m   [34m├─[39m [2m/ru/work/learn/index.html[22m [2m(+8ms)[22m 
+[2m16:16:53[22m   [34m├─[39m [2m/ru/work/vet-clinic/index.html[22m [2m(+9ms)[22m 
+[2m16:16:53[22m   [34m└─[39m [2m/ru/work/pawly/index.html[22m [2m(+8ms)[22m 
+[2m16:16:53[22m [35mλ[39m src/pages/sitemap.xml.ts
+[2m16:16:53[22m   [34m└─[39m [2m/sitemap.xml[22m [2m(+2ms)[22m 
+[2m16:16:53[22m [32m▶[39m src/pages/work/[slug].astro
+[2m16:16:53[22m   [34m├─[39m [2m/work/agent-ops-console/index.html[22m [2m(+13ms)[22m 
+[2m16:16:53[22m   [34m├─[39m [2m/work/partner-portal/index.html[22m [2m(+9ms)[22m 
+[2m16:16:53[22m   [34m├─[39m [2m/work/learn/index.html[22m [2m(+8ms)[22m 
+[2m16:16:53[22m   [34m├─[39m [2m/work/vet-clinic/index.html[22m [2m(+7ms)[22m 
+[2m16:16:53[22m   [34m└─[39m [2m/work/pawly/index.html[22m [2m(+6ms)[22m 
+[2m16:16:53[22m [32m✓ Completed in 5.60s.
+[39m
+[2m16:16:53[22m [34m[build][39m 37 page(s) built in [1m11.10s[22m
+[2m16:16:53[22m [34m[build][39m [1mComplete![22m

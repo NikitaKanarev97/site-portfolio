@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-07",
+  "states": [
+    {
+      "test": "active nav",
+      "href": "/about",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "test": "prose inline underline",
+      "decoration": "underline"
+    },
+    {
+      "test": "inverse default",
+      "color": "rgb(255, 138, 117)",
+      "background": "rgb(13, 13, 11)",
+      "outline": "none",
+      "outlineColor": "rgb(255, 138, 117)",
+      "underline": "matrix(0, 0, 0, 1, 0, 0)",
+      "arrow": "none",
+      "duration": "1e-05s",
+      "contrast": 8.470713269319038
+    },
+    {
+      "test": "inverse hover",
+      "color": "rgb(255, 138, 117)",
+      "background": "rgb(13, 13, 11)",
+      "outline": "none",
+      "outlineColor": "rgb(255, 138, 117)",
+      "underline": "matrix(1, 0, 0, 1, 0, 0)",
+      "arrow": "matrix(1, 0, 0, 1, 4, 0)",
+      "duration": "1e-05s",
+      "contrast": 8.470713269319038
+    },
+    {
+      "test": "inverse keyboard focus",
+      "color": "rgb(255, 138, 117)",
+      "background": "rgb(13, 13, 11)",
+      "outline": "solid",
+      "outlineColor": "rgb(255, 138, 117)",
+      "underline": "matrix(1, 0, 0, 1, 0, 0)",
+      "arrow": "none",
+      "duration": "1e-05s",
+      "contrast": 8.470713269319038
+    },
+    {
+      "test": "inverse pressed",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(13, 13, 11)",
+      "outline": "solid",
+      "outlineColor": "rgb(255, 255, 255)",
+      "underline": "matrix(1, 0, 0, 1, 0, 0)",
+      "arrow": "matrix(1, 0, 0, 1, 4, 0)",
+      "duration": "1e-05s",
+      "contrast": 19.4531795229682
+    },
+    {
+      "test": "normal motion contact",
+      "opacity": "1",
+      "transition": "0.16s"
+    }
+  ]
+}

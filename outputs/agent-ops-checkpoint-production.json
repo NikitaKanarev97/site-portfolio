@@ -1,0 +1,307 @@
+{
+  "base": "http://127.0.0.1:4330",
+  "network": "local, unthrottled",
+  "samplesPerProfile": 3,
+  "results": [
+    {
+      "width": 1440,
+      "cpu": 1,
+      "sample": 1,
+      "startup": {
+        "lcp": {
+          "ms": 344,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4330/media/pilot-agent-ops/message-1440.webp"
+        },
+        "cls": 0,
+        "production": true,
+        "transferredKB": 636.5537109375
+      },
+      "frameMedian": 16.699999999254942,
+      "frameP95": 17.199999999254942,
+      "framesOver34ms": 0,
+      "costs": {
+        "TaskDuration": 0.26852200000000004,
+        "ScriptDuration": 0.092063,
+        "LayoutDuration": 0.016678,
+        "RecalcStyleDuration": 0.026812000000000002
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "cpu": 1,
+      "sample": 2,
+      "startup": {
+        "lcp": {
+          "ms": 144,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4330/media/pilot-agent-ops/message-1440.webp"
+        },
+        "cls": 0,
+        "production": true,
+        "transferredKB": 636.5537109375
+      },
+      "frameMedian": 16.699999999254942,
+      "frameP95": 17,
+      "framesOver34ms": 0,
+      "costs": {
+        "TaskDuration": 0.26498900000000003,
+        "ScriptDuration": 0.09085,
+        "LayoutDuration": 0.016522000000000002,
+        "RecalcStyleDuration": 0.026667000000000003
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "cpu": 1,
+      "sample": 3,
+      "startup": {
+        "lcp": {
+          "ms": 156,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4330/media/pilot-agent-ops/message-1440.webp"
+        },
+        "cls": 0,
+        "production": true,
+        "transferredKB": 636.5537109375
+      },
+      "frameMedian": 16.699999999254942,
+      "frameP95": 17,
+      "framesOver34ms": 0,
+      "costs": {
+        "TaskDuration": 0.265431,
+        "ScriptDuration": 0.090708,
+        "LayoutDuration": 0.016519000000000006,
+        "RecalcStyleDuration": 0.026506
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "cpu": 6,
+      "sample": 1,
+      "startup": {
+        "lcp": {
+          "ms": 620,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4330/media/pilot-agent-ops/message-1440.webp"
+        },
+        "cls": 0,
+        "production": true,
+        "transferredKB": 636.5537109375
+      },
+      "frameMedian": 16.800000000745058,
+      "frameP95": 26.899999998509884,
+      "framesOver34ms": 4,
+      "costs": {
+        "TaskDuration": 2.6140359999999996,
+        "ScriptDuration": 0.891523,
+        "LayoutDuration": 0.16909700000000005,
+        "RecalcStyleDuration": 0.28760100000000005
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "cpu": 6,
+      "sample": 2,
+      "startup": {
+        "lcp": {
+          "ms": 436,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4330/media/pilot-agent-ops/message-1440.webp"
+        },
+        "cls": 0.0016888921152907635,
+        "production": true,
+        "transferredKB": 636.5537109375
+      },
+      "frameMedian": 16.600000001490116,
+      "frameP95": 23.899999998509884,
+      "framesOver34ms": 2,
+      "costs": {
+        "TaskDuration": 2.4268870000000002,
+        "ScriptDuration": 0.832884,
+        "LayoutDuration": 0.15059199999999995,
+        "RecalcStyleDuration": 0.25541400000000003
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "cpu": 6,
+      "sample": 3,
+      "startup": {
+        "lcp": {
+          "ms": 560,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4330/media/pilot-agent-ops/message-1440.webp"
+        },
+        "cls": 0.0016888921152907635,
+        "production": true,
+        "transferredKB": 636.5537109375
+      },
+      "frameMedian": 16.699999999254942,
+      "frameP95": 25.699999999254942,
+      "framesOver34ms": 1,
+      "costs": {
+        "TaskDuration": 2.4111830000000003,
+        "ScriptDuration": 0.8375940000000001,
+        "LayoutDuration": 0.154331,
+        "RecalcStyleDuration": 0.25984100000000004
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "cpu": 1,
+      "sample": 1,
+      "startup": {
+        "lcp": {
+          "ms": 152,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4330/media/pilot-agent-ops/message-390.webp"
+        },
+        "cls": 0.0018050308583848935,
+        "production": true,
+        "transferredKB": 224.7568359375
+      },
+      "frameMedian": 16.699999999254942,
+      "frameP95": 16.900000002235174,
+      "framesOver34ms": 0,
+      "costs": {
+        "TaskDuration": 0.23266699999999998,
+        "ScriptDuration": 0.089228,
+        "LayoutDuration": 0.015018999999999998,
+        "RecalcStyleDuration": 0.012187
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "cpu": 1,
+      "sample": 2,
+      "startup": {
+        "lcp": {
+          "ms": 144,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4330/media/pilot-agent-ops/message-390.webp"
+        },
+        "cls": 0.0018050308583848935,
+        "production": true,
+        "transferredKB": 224.7568359375
+      },
+      "frameMedian": 16.699999999254942,
+      "frameP95": 16.900000002235174,
+      "framesOver34ms": 0,
+      "costs": {
+        "TaskDuration": 0.228137,
+        "ScriptDuration": 0.08699000000000001,
+        "LayoutDuration": 0.015243,
+        "RecalcStyleDuration": 0.011637000000000002
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "cpu": 1,
+      "sample": 3,
+      "startup": {
+        "lcp": {
+          "ms": 140,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4330/media/pilot-agent-ops/message-390.webp"
+        },
+        "cls": 0.0018050308583848935,
+        "production": true,
+        "transferredKB": 224.7568359375
+      },
+      "frameMedian": 16.699999999254942,
+      "frameP95": 16.900000002235174,
+      "framesOver34ms": 0,
+      "costs": {
+        "TaskDuration": 0.237446,
+        "ScriptDuration": 0.090699,
+        "LayoutDuration": 0.015180000000000006,
+        "RecalcStyleDuration": 0.011872000000000004
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "cpu": 6,
+      "sample": 1,
+      "startup": {
+        "lcp": {
+          "ms": 736,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4330/media/pilot-agent-ops/message-390.webp"
+        },
+        "cls": 0.0018050308583848935,
+        "production": true,
+        "transferredKB": 224.7568359375
+      },
+      "frameMedian": 16.5,
+      "frameP95": 22.600000001490116,
+      "framesOver34ms": 1,
+      "costs": {
+        "TaskDuration": 2.1963679999999997,
+        "ScriptDuration": 0.8502289999999999,
+        "LayoutDuration": 0.13915800000000006,
+        "RecalcStyleDuration": 0.129519
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "cpu": 6,
+      "sample": 2,
+      "startup": {
+        "lcp": {
+          "ms": 688,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4330/media/pilot-agent-ops/message-390.webp"
+        },
+        "cls": 0.0018050308583848935,
+        "production": true,
+        "transferredKB": 224.7568359375
+      },
+      "frameMedian": 16.5,
+      "frameP95": 23,
+      "framesOver34ms": 1,
+      "costs": {
+        "TaskDuration": 2.1486399999999994,
+        "ScriptDuration": 0.8413949999999999,
+        "LayoutDuration": 0.13608300000000007,
+        "RecalcStyleDuration": 0.13049599999999997
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "cpu": 6,
+      "sample": 3,
+      "startup": {
+        "lcp": {
+          "ms": 568,
+          "element": "IMG",
+          "url": "http://127.0.0.1:4330/media/pilot-agent-ops/message-390.webp"
+        },
+        "cls": 0.0018050308583848935,
+        "production": true,
+        "transferredKB": 224.7568359375
+      },
+      "frameMedian": 16.800000000745058,
+      "frameP95": 24.300000000745058,
+      "framesOver34ms": 1,
+      "costs": {
+        "TaskDuration": 2.242531,
+        "ScriptDuration": 0.869016,
+        "LayoutDuration": 0.14577900000000005,
+        "RecalcStyleDuration": 0.13266399999999998
+      },
+      "errors": []
+    }
+  ]
+}

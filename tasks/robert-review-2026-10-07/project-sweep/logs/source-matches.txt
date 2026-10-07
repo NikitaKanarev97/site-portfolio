@@ -1,0 +1,35 @@
+src/components/Footer.astro:26:    border-top: var(--border-width) solid var(--border-default);
+src/pages/about.astro:35:    <nav class="chapter-index" aria-label={about.contentsLabel} style={`--about-chapter-count: ${chapters.length}`}>
+src/pages/about.astro:37:        <span class="ds-meta-xs" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+src/pages/about.astro:49:      <p class="ds-meta-sm chapter__number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</p>
+src/pages/about.astro:66:  .chapter-index { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 var(--space-4); border-block: var(--border-width) solid var(--border-default); }
+src/pages/about.astro:67:  .chapter-index a { display: flex; align-items: center; gap: var(--space-2); min-block-size: var(--space-12); color: var(--text-default); text-decoration: none; }
+src/pages/about.astro:68:  .chapter-index a > span:last-child { margin-inline-start: auto; }
+src/pages/about.astro:69:  .chapter-index a:active { color: var(--text-link-pressed); }
+src/pages/about.astro:74:  .chapter__number { color: var(--text-link); }
+src/pages/about.astro:75:  @media (--can-hover) { .chapter-index a:hover { color: var(--text-link-hover); } }
+src/pages/about.astro:77:    .chapter-index { grid-template-columns: repeat(var(--about-chapter-count), minmax(0, 1fr)); gap: var(--space-4); }
+src/pages/about.astro:82:    .intro__meta, .intro__heading, .chapter-index { grid-column: 1 / -1; }
+src/components/CaseCarousel.astro:51:    <span class="ds-meta-xs case-carousel__count" aria-hidden="true">
+src/components/CaseCarousel.astro:112:  .case-carousel__count {
+src/components/CaseNext.astro:48:    <span class="ds-container ds-meta-xs case-next__label" aria-hidden="true">{label}</span>
+src/components/CaseSteps.astro:35:  <p class="ds-meta-xs case-steps__label">{label}</p>
+src/components/CaseSteps.astro:42:            <p class="ds-meta-xs case-steps__num">
+src/components/CaseSteps.astro:53:            {composition === 'checkpoint' && step.scene === 'decision' && <div class="case-steps__stop"><span class="case-steps__stop-symbol" aria-hidden="true"><i /><i /></span><p class="ds-meta-xs">{gate}</p></div>}
+src/components/CaseSteps.astro:88:  .case-steps__num {
+src/components/CaseSteps.astro:155:  .case-steps--focus.is-focused .case-steps__num { grid-column: 1 / -1; }
+src/components/CaseSteps.astro:188:  .case-steps__stop-symbol {
+src/components/CaseSteps.astro:194:  .case-steps__stop-symbol i {
+src/components/CaseSteps.astro:235:  .case-steps--checkpoint.is-focused .case-steps__num,
+src/components/CaseSteps.astro:276:    .case-steps__stop-symbol { inline-size: var(--space-32); block-size: var(--space-32); gap: var(--space-8); }
+src/components/CaseSteps.astro:277:    .case-steps__stop-symbol i { inline-size: var(--space-6); }
+src/components/CaseSteps.astro:286:    .case-steps__stop-symbol { inline-size: var(--space-16); block-size: var(--space-16); gap: var(--space-4); }
+src/components/CaseSteps.astro:287:    .case-steps__stop-symbol i { inline-size: var(--space-3); }
+src/components/CaseSteps.astro:315:    .case-steps__step--wide .case-steps__num {
+src/components/CaseThesis.astro:42:  <p class="ds-meta-xs case-thesis__label">{label}</p>
+src/components/CaseThesis.astro:50:  .case-thesis__label {
+src/components/CaseThesis.astro:80:    .case-thesis__label {
+src/components/CaseThesis.astro:91:    .case-thesis__label {
+src/components/CaseCover.astro:101:        {media.variant === 'proof' && <p class="ds-meta-xs case-opening__eyebrow">{media.eyebrow}</p>}
+src/components/CaseCover.astro:111:        <p class="ds-meta-xs case-opening__eyebrow">{media.eyebrow}</p>
+src/components/CaseCover.astro:265:  .case-opening__eyebrow {

@@ -1,0 +1,87 @@
+{
+  "server": "http://127.0.0.1:4394",
+  "checks": {
+    "buildPages": 36,
+    "astroErrors": 0,
+    "astroWarnings": 0,
+    "scopedCssDeadRules": 0,
+    "harmonyViolations": 0,
+    "widths": [
+      360,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "routes": [
+      "/",
+      "/ru/",
+      "/about",
+      "/ru/about"
+    ],
+    "caseEntry": true,
+    "mediaZoom": true
+  },
+  "visualMeasurements": [
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "photo": {
+        "bottom": 663.2239837646484,
+        "height": 170.6666717529297,
+        "left": 24,
+        "right": 152,
+        "top": 492.5573120117187,
+        "width": 128,
+        "x": 24,
+        "y": 492.5573120117187
+      },
+      "route": "/ru/",
+      "width": 360
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "photo": {
+        "bottom": 741.1771240234375,
+        "height": 394.6666870117187,
+        "left": 48,
+        "right": 344,
+        "top": 346.51043701171875,
+        "width": 296,
+        "x": 48,
+        "y": 346.51043701171875
+      },
+      "route": "/ru/",
+      "width": 768
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "photo": {
+        "bottom": 730.2135620117188,
+        "height": 292.66668701171875,
+        "left": 458,
+        "right": 677.5,
+        "top": 437.546875,
+        "width": 219.5,
+        "x": 458,
+        "y": 437.546875
+      },
+      "route": "/ru/",
+      "width": 1024
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "route": "/ru/about",
+      "width": 768
+    },
+    {
+      "h1Count": 1,
+      "overflow": false,
+      "route": "/ru/about",
+      "width": 1440
+    }
+  ]
+}

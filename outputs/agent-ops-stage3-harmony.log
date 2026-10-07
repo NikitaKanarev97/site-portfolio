@@ -1,0 +1,20 @@
+
+> site-portfolio@0.1.0 check:harmony
+> node scripts/harmony-check.mjs /preview/agent-ops-pilot /preview/partner-portal-pilot /kit --widths=1440,1024,390,360
+
+(node:30268) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+/preview/agent-ops-pilot @1440: плашек 4, тезисов 6, подписей и абзацев 19 · agent-ops-pilot 282 слов, 6 кадров
+/preview/agent-ops-pilot @1024: плашек 4, тезисов 6, подписей и абзацев 19 · agent-ops-pilot 282 слов, 6 кадров
+/preview/agent-ops-pilot @390: плашек 4, тезисов 6, подписей и абзацев 19 · agent-ops-pilot 282 слов, 6 кадров
+/preview/agent-ops-pilot @360: плашек 4, тезисов 6, подписей и абзацев 19 · agent-ops-pilot 282 слов, 6 кадров
+/preview/partner-portal-pilot @1440: плашек 0, тезисов 1, подписей и абзацев 1
+/preview/partner-portal-pilot @1024: плашек 0, тезисов 1, подписей и абзацев 1
+/preview/partner-portal-pilot @390: плашек 0, тезисов 1, подписей и абзацев 1
+/preview/partner-portal-pilot @360: плашек 0, тезисов 1, подписей и абзацев 1
+/kit @1440: плашек 16, тезисов 10, подписей и абзацев 37 · case-demo 281 слов, 10 кадров
+/kit @1024: плашек 16, тезисов 10, подписей и абзацев 37 · case-demo 281 слов, 10 кадров
+/kit @390: плашек 16, тезисов 10, подписей и абзацев 37 · case-demo 281 слов, 10 кадров
+/kit @360: плашек 16, тезисов 10, подписей и абзацев 37 · case-demo 281 слов, 10 кадров
+
+✓ harmony-check: нарушений нет

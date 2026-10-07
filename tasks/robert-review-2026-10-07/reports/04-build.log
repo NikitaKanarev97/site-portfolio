@@ -1,0 +1,115 @@
+
+> site-portfolio@0.1.0 build
+> astro build
+
+12:13:41 [vite] Re-optimizing dependencies because vite config has changed
+12:13:41 [content] Syncing content
+12:13:41 [content] Synced content
+12:13:41 [types] Generated 261ms
+12:13:41 [build] output: "static"
+12:13:41 [build] mode: "static"
+12:13:41 [build] directory: D:\Claude-projects\Site-portfolio\dist\
+12:13:41 [build] Collecting build info...
+12:13:41 [build] ✓ Completed in 284ms.
+12:13:41 [build] Building static entrypoints...
+12:13:45 [vite] ✓ built in 3.82s
+12:13:45 [build] ✓ Completed in 3.86s.
+
+ building client (vite) 
+12:13:45 [vite] transforming...
+12:13:46 [vite] ✓ 31 modules transformed.
+12:13:46 [vite] rendering chunks...
+12:13:46 [vite] computing gzip size...
+12:13:46 [vite] dist/_astro/page.IvKoM_B8.js                                                 0.05 kB │ gzip:  0.07 kB
+12:13:46 [vite] dist/_astro/index.BbWtjHji.js                                                2.30 kB │ gzip:  1.05 kB
+12:13:46 [vite] dist/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js   13.11 kB │ gzip:  4.54 kB
+12:13:46 [vite] dist/_astro/BaseLayout.astro_astro_type_script_index_0_lang.DQHWE3gl.js    152.06 kB │ gzip: 58.88 kB
+12:13:46 [vite] ✓ built in 881ms
+
+ generating static routes 
+12:13:46 ▶ src/pages/404.astro
+12:13:46   └─ /404.html (+24ms) 
+12:13:46 ▶ src/pages/500.astro
+12:13:46   └─ /500.html (+5ms) 
+12:13:46 ▶ src/pages/about.astro
+12:13:46   └─ /about/index.html (+10ms) 
+12:13:46 ▶ src/pages/index.astro
+12:13:46   └─ /index.html (+51ms) 
+12:13:46 ▶ src/pages/kit.astro
+12:13:46   └─ /kit/index.html (+198ms) 
+12:13:48 λ src/pages/og/[card].png.ts
+12:13:48   ├─ /og/default.png (+185ms) 
+12:13:48   ├─ /og/about.png (+106ms) 
+12:13:48   ├─ /og/work-agent-ops-console.png (+99ms) 
+12:13:48   ├─ /og/work-partner-portal.png (+132ms) 
+12:13:48   ├─ /og/work-learn.png (+155ms) 
+12:13:48   ├─ /og/work-vet-clinic.png (+116ms) 
+12:13:49   ├─ /og/work-pawly.png (+98ms) 
+12:13:49   ├─ /og/default-ru.png (+104ms) 
+12:13:49   ├─ /og/about-ru.png (+100ms) 
+12:13:49   ├─ /og/work-agent-ops-console-ru.png (+98ms) 
+12:13:49   ├─ /og/work-partner-portal-ru.png (+99ms) 
+12:13:49   ├─ /og/work-learn-ru.png (+100ms) 
+12:13:49   ├─ /og/work-vet-clinic-ru.png (+97ms) 
+12:13:49   └─ /og/work-pawly-ru.png (+109ms) 
+12:13:49 ▶ src/pages/preview/agent-ops-pilot.astro
+12:13:49   └─ /preview/agent-ops-pilot/index.html (+36ms) 
+12:13:49 ▶ src/pages/preview/agent-ops-rebuild/[locale].astro
+12:13:49   ├─ /preview/agent-ops-rebuild/en/index.html (+9ms) 
+12:13:49   └─ /preview/agent-ops-rebuild/ru/index.html (+41ms) 
+12:13:49 ▶ src/pages/preview/common/[locale]/[case].astro
+12:13:49   ├─ /preview/common/en/agent-ops/index.html (+9ms) 
+12:13:50   ├─ /preview/common/en/partner-portal/index.html (+20ms) 
+12:13:50   ├─ /preview/common/ru/agent-ops/index.html (+13ms) 
+12:13:50   └─ /preview/common/ru/partner-portal/index.html (+33ms) 
+12:13:50 ▶ src/pages/preview/common/index.astro
+12:13:50   └─ /preview/common/index.html (+4ms) 
+12:13:50 ▶ src/pages/preview/film-common/[locale].astro
+12:13:50   ├─ /preview/film-common/en/index.html (+23ms) 
+12:13:50   └─ /preview/film-common/ru/index.html (+25ms) 
+12:13:50 ▶ src/pages/preview/learn-rebuild/[locale].astro
+12:13:50   ├─ /preview/learn-rebuild/en/index.html (+61ms) 
+12:13:50   └─ /preview/learn-rebuild/ru/index.html (+69ms) 
+12:13:50 ▶ src/pages/preview/partner-portal-pilot.astro
+12:13:50   └─ /preview/partner-portal-pilot/index.html (+6ms) 
+12:13:50 ▶ src/pages/preview/partner-portal-rebuild/[locale].astro
+12:13:50   ├─ /preview/partner-portal-rebuild/en/index.html (+35ms) 
+12:13:50   └─ /preview/partner-portal-rebuild/ru/index.html (+11ms) 
+12:13:50 ▶ src/pages/preview/pawly-rebuild/[locale].astro
+12:13:50   ├─ /preview/pawly-rebuild/en/index.html (+60ms) 
+12:13:50   └─ /preview/pawly-rebuild/ru/index.html (+32ms) 
+12:13:50 ▶ src/pages/preview/vet-clinic-rebuild/[locale].astro
+12:13:50   ├─ /preview/vet-clinic-rebuild/en/index.html (+23ms) 
+12:13:50   └─ /preview/vet-clinic-rebuild/ru/index.html (+46ms) 
+12:13:50 λ src/pages/robots.txt.ts
+12:13:50   └─ /robots.txt (+1ms) 
+12:13:50 ▶ src/pages/ru/about.astro
+12:13:50   └─ /ru/about/index.html (+5ms) 
+12:13:50 ▶ src/pages/ru/index.astro
+12:13:50   └─ /ru/index.html (+6ms) 
+12:13:50 ▶ src/pages/ru/work/[slug].astro
+12:13:50   ├─ /ru/work/agent-ops-console/index.html (+6ms) 
+12:13:50   ├─ /ru/work/partner-portal/index.html (+10ms) 
+12:13:50   ├─ /ru/work/learn/index.html (+7ms) 
+12:13:50   ├─ /ru/work/vet-clinic/index.html (+7ms) 
+12:13:50   └─ /ru/work/pawly/index.html (+8ms) 
+12:13:50 λ src/pages/sitemap.xml.ts
+12:13:50   └─ /sitemap.xml (+3ms) 
+12:13:50 ▶ src/pages/work/[slug].astro
+12:13:50   ├─ /work/agent-ops-console/index.html (+17ms) 
+12:13:50   ├─ /work/partner-portal/index.html (+8ms) 
+12:13:50   ├─ /work/learn/index.html (+7ms) 
+12:13:50   ├─ /work/vet-clinic/index.html (+7ms) 
+12:13:50   └─ /work/pawly/index.html (+6ms) 
+12:13:50 ✓ Completed in 4.32s.
+
+ENOENT: no such file or directory, rmdir 'D:\Claude-projects\Site-portfolio\dist\chunks\astro'
+  Location:
+    D:\Claude-projects\Site-portfolio\node_modules\astro\dist\core\fs\index.js:15:8
+  Stack trace:
+    at Object.rmdirSync (node:fs:1176:11)
+    at file:///D:/Claude-projects/Site-portfolio/node_modules/astro/dist/core/fs/index.js:10:7
+    at removeEmptyDirs (file:///D:/Claude-projects/Site-portfolio/node_modules/astro/dist/core/fs/index.js:9:11)
+    at Array.map (<anonymous>)
+    at cleanServerOutput (file:///D:/Claude-projects/Site-portfolio/node_modules/astro/dist/core/build/static-build.js:282:5)
+Assertion failed: !(handle->flags & UV_HANDLE_CLOSING), file src\win\async.c, line 94

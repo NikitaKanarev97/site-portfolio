@@ -1,0 +1,66 @@
+[
+  {
+    name: 'Visible video autoplays',
+    passed: true,
+    evidence: { paused: false, connected: true, ready: 4 }
+  },
+  {
+    name: 'Manual pause',
+    passed: true,
+    evidence: { paused: true, connected: true, ready: 4 }
+  },
+  {
+    name: 'Manual pause survives preference change',
+    passed: true,
+    evidence: { paused: true, connected: true, ready: 4 }
+  },
+  {
+    name: 'Live reduce stops autoplay',
+    passed: true,
+    evidence: { paused: true, connected: true, ready: 4 }
+  },
+  {
+    name: 'Explicit play in reduce',
+    passed: true,
+    evidence: { paused: false, connected: true, ready: 4 }
+  },
+  {
+    name: 'Covered sticky video pauses',
+    passed: true,
+    evidence: { paused: true, connected: true, ready: 4 }
+  },
+  {
+    name: 'Navigation stops detached video',
+    passed: true,
+    evidence: { paused: true, connected: false }
+  },
+  {
+    name: 'Focus pauses marquee',
+    passed: true,
+    evidence: 'matrix(1, 0, 0, 1, -0.693, 0)'
+  },
+  {
+    name: 'Focus holds after viewport re-entry',
+    passed: true,
+    evidence: 'matrix(1, 0, 0, 1, -0.693, 0)'
+  },
+  {
+    name: 'Blur resumes marquee',
+    passed: true,
+    evidence: 'matrix(1, 0, 0, 1, -28.952, 0)'
+  },
+  {
+    name: 'Manual marquee pause survives reduce/full',
+    passed: true,
+    evidence: 'none'
+  },
+  {
+    name: 'Failed formats return to poster',
+    passed: true,
+    evidence: {
+      poster: '/media/case-agent-ops/clip-review-decision-poster.webp',
+      hiddenControl: true
+    }
+  },
+  { name: 'No page errors', passed: true, evidence: [] }
+]

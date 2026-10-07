@@ -1,0 +1,17 @@
+
+> site-portfolio@0.1.0 cv:build
+> node cv/build.mjs
+
+355202 bytes written to file D:\Claude-projects\Site-portfolio\output\pdf\Nikita_Kanarev_Product_Designer_CV.pdf
+[30620:35808:1007/123057.873:ERROR:chrome\browser\web_applications\os_integration\os_integration_manager.cc:270] Can't perform OS integration while the browser is shutting down.
+[30620:35808:1007/123057.888:ERROR:chrome\browser\web_applications\externally_managed_app_manager.cc:680] https://drive.google.com/drive/installwebapp?usp=chrome_default from install source 1 failed to install with reason 21
+[31948:29312:1007/123100.298:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[31948:29312:1007/123100.299:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[31948:29312:1007/123100.331:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+345610 bytes written to file D:\Claude-projects\Site-portfolio\output\pdf\Nikita_Kanarev_Product_Designer_ATS.pdf
+[31948:29032:1007/123100.407:ERROR:chrome\browser\web_applications\externally_managed_app_manager.cc:680] https://docs.google.com/presentation/installwebapp?usp=chrome_default from install source 1 failed to install with reason 21
+Branded PDF: D:\Claude-projects\Site-portfolio\output\pdf\Nikita_Kanarev_Product_Designer_CV.pdf
+ATS PDF: D:\Claude-projects\Site-portfolio\output\pdf\Nikita_Kanarev_Product_Designer_ATS.pdf
+Plain text: D:\Claude-projects\Site-portfolio\output\pdf\Nikita_Kanarev_Product_Designer_Resume.txt
+Master source: D:\Claude-projects\Site-portfolio\cv\Nikita_Kanarev_Product_Designer_Master.md
+Site copy: D:\Claude-projects\Site-portfolio\public\cv.pdf

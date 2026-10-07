@@ -1,0 +1,622 @@
+[
+  {
+    "file": "about-en-1440-full.png",
+    "route": "about",
+    "loc": "en",
+    "width": 1440,
+    "state": "networkidle/fonts/3s/scroll400-100ms/2s"
+  },
+  {
+    "file": "work-agent-ops-console-en-1440-full.png",
+    "route": "work/agent-ops-console",
+    "loc": "en",
+    "width": 1440,
+    "state": "networkidle/fonts/3s/scroll400-100ms/2s"
+  },
+  {
+    "file": "work-partner-portal-en-1440-full.png",
+    "route": "work/partner-portal",
+    "loc": "en",
+    "width": 1440,
+    "state": "networkidle/fonts/3s/scroll400-100ms/2s"
+  },
+  {
+    "file": "work-learn-en-1440-full.png",
+    "route": "work/learn",
+    "loc": "en",
+    "width": 1440,
+    "state": "networkidle/fonts/3s/scroll400-100ms/2s"
+  },
+  {
+    "file": "work-vet-clinic-en-1440-full.png",
+    "route": "work/vet-clinic",
+    "loc": "en",
+    "width": 1440,
+    "state": "networkidle/fonts/3s/scroll400-100ms/2s"
+  },
+  {
+    "file": "work-pawly-en-1440-full.png",
+    "route": "work/pawly",
+    "loc": "en",
+    "width": 1440,
+    "state": "networkidle/fonts/3s/scroll400-100ms/2s"
+  },
+  {
+    "file": "404-en-1440-full.png",
+    "route": "404",
+    "loc": "en",
+    "width": 1440,
+    "state": "networkidle/fonts/3s/scroll400-100ms/2s"
+  },
+  {
+    "file": "overview-A-en-1440.png",
+    "items": [
+      "about",
+      "work/agent-ops-console",
+      "work/partner-portal"
+    ],
+    "width": 1500,
+    "height": 2380
+  },
+  {
+    "file": "overview-B-en-1440.png",
+    "items": [
+      "work/learn",
+      "work/vet-clinic",
+      "work/pawly"
+    ],
+    "width": 1500,
+    "height": 2380
+  },
+  {
+    "file": "home-reference-sheet.png",
+    "items": [
+      "Home reference; not audited"
+    ],
+    "width": 500,
+    "height": 2380
+  },
+  {
+    "file": "about-en-1440-V01.png",
+    "target": {
+      "id": "V01",
+      "route": "about",
+      "loc": "en",
+      "width": 1440,
+      "rect": {
+        "x": 70,
+        "y": 100,
+        "w": 850,
+        "h": 550
+      },
+      "selector": "intro: index + portrait",
+      "live": false
+    },
+    "clip": {
+      "left": 70,
+      "top": 80,
+      "width": 850,
+      "height": 590
+    }
+  },
+  {
+    "file": "about-en-1440-V02.png",
+    "target": {
+      "id": "V02",
+      "route": "about",
+      "loc": "en",
+      "width": 1440,
+      "rect": {
+        "x": 70,
+        "y": 1090,
+        "w": 900,
+        "h": 450
+      },
+      "selector": "chapter number + divider",
+      "live": false
+    },
+    "clip": {
+      "left": 70,
+      "top": 1070,
+      "width": 900,
+      "height": 490
+    }
+  },
+  {
+    "file": "work-agent-ops-console-en-1440-V03.png",
+    "target": {
+      "id": "V03",
+      "route": "work/agent-ops-console",
+      "loc": "en",
+      "width": 1440,
+      "rect": {
+        "x": 65,
+        "y": 110,
+        "w": 900,
+        "h": 600
+      },
+      "selector": "cover CAPS + panel axes",
+      "live": false
+    },
+    "clip": {
+      "left": 65,
+      "top": 90,
+      "width": 900,
+      "height": 600
+    }
+  },
+  {
+    "file": "work-agent-ops-console-en-1440-V04.png",
+    "target": {
+      "id": "V04",
+      "route": "work/agent-ops-console",
+      "loc": "en",
+      "width": 1440,
+      "rect": {
+        "x": 80,
+        "y": 1290,
+        "w": 900,
+        "h": 560
+      },
+      "selector": "heading gap + numbers glyph",
+      "live": false
+    },
+    "clip": {
+      "left": 80,
+      "top": 1270,
+      "width": 900,
+      "height": 600
+    }
+  },
+  {
+    "file": "work-agent-ops-console-en-1440-V05.png",
+    "target": {
+      "id": "V05",
+      "route": "work/agent-ops-console",
+      "loc": "en",
+      "width": 1440,
+      "rect": {
+        "x": 150,
+        "y": 5290,
+        "w": 900,
+        "h": 600
+      },
+      "selector": "evidence white perimeter",
+      "live": false
+    },
+    "clip": {
+      "left": 150,
+      "top": 5270,
+      "width": 900,
+      "height": 600
+    }
+  },
+  {
+    "file": "work-partner-portal-en-1440-V06.png",
+    "target": {
+      "id": "V06",
+      "route": "work/partner-portal",
+      "loc": "en",
+      "width": 1440,
+      "rect": {
+        "x": 70,
+        "y": 1140,
+        "w": 900,
+        "h": 500
+      },
+      "selector": "facts reconstruction + opening gap",
+      "live": false
+    },
+    "clip": {
+      "left": 70,
+      "top": 1120,
+      "width": 900,
+      "height": 540
+    }
+  },
+  {
+    "file": "work-partner-portal-en-1440-V07.png",
+    "target": {
+      "id": "V07",
+      "route": "work/partner-portal",
+      "loc": "en",
+      "width": 1440,
+      "rect": {
+        "x": 130,
+        "y": 9380,
+        "w": 900,
+        "h": 580
+      },
+      "selector": "specimen font/table clutter",
+      "live": false
+    },
+    "clip": {
+      "left": 130,
+      "top": 9360,
+      "width": 900,
+      "height": 600
+    }
+  },
+  {
+    "file": "work-learn-en-1440-V08.png",
+    "target": {
+      "id": "V08",
+      "route": "work/learn",
+      "loc": "en",
+      "width": 1440,
+      "rect": {
+        "x": 70,
+        "y": 110,
+        "w": 900,
+        "h": 600
+      },
+      "selector": "cover explanations + status",
+      "live": false
+    },
+    "clip": {
+      "left": 70,
+      "top": 90,
+      "width": 900,
+      "height": 600
+    }
+  },
+  {
+    "file": "work-learn-en-1440-V09.png",
+    "target": {
+      "id": "V09",
+      "route": "work/learn",
+      "loc": "en",
+      "width": 1440,
+      "rect": {
+        "x": 70,
+        "y": 4060,
+        "w": 900,
+        "h": 550
+      },
+      "selector": "routes caption + white edges",
+      "live": false
+    },
+    "clip": {
+      "left": 70,
+      "top": 4040,
+      "width": 900,
+      "height": 590
+    }
+  },
+  {
+    "file": "work-vet-clinic-en-1440-V10.png",
+    "target": {
+      "id": "V10",
+      "route": "work/vet-clinic",
+      "loc": "en",
+      "width": 1440,
+      "rect": {
+        "x": 70,
+        "y": 4350,
+        "w": 900,
+        "h": 590
+      },
+      "selector": "ONE VISIT / 01 VETERINARIAN TABLET / caption",
+      "live": false
+    },
+    "clip": {
+      "left": 70,
+      "top": 4330,
+      "width": 900,
+      "height": 600
+    }
+  },
+  {
+    "file": "work-pawly-en-1440-V11.png",
+    "target": {
+      "id": "V11",
+      "route": "work/pawly",
+      "loc": "en",
+      "width": 1440,
+      "rect": {
+        "x": 70,
+        "y": 3740,
+        "w": 900,
+        "h": 600
+      },
+      "selector": "return boundary balance",
+      "live": false
+    },
+    "clip": {
+      "left": 70,
+      "top": 3720,
+      "width": 900,
+      "height": 600
+    }
+  },
+  {
+    "file": "work-pawly-en-1440-V12.png",
+    "target": {
+      "id": "V12",
+      "route": "work/pawly",
+      "loc": "en",
+      "width": 1440,
+      "rect": {
+        "x": 130,
+        "y": 8220,
+        "w": 900,
+        "h": 580
+      },
+      "selector": "small specimen labels",
+      "live": false
+    },
+    "clip": {
+      "left": 130,
+      "top": 8200,
+      "width": 900,
+      "height": 600
+    }
+  },
+  {
+    "file": "work-vet-clinic-en-1440-V13.png",
+    "target": {
+      "id": "V13",
+      "route": "work/vet-clinic",
+      "loc": "en",
+      "width": 1440,
+      "rect": {
+        "x": 125,
+        "y": 1900,
+        "w": 900,
+        "h": 600
+      },
+      "selector": "queue gray field + nested white frame",
+      "live": false
+    },
+    "clip": {
+      "left": 125,
+      "top": 1880,
+      "width": 900,
+      "height": 600
+    }
+  },
+  {
+    "file": "work-vet-clinic-en-1440-V14.png",
+    "target": {
+      "id": "V14",
+      "route": "work/vet-clinic",
+      "loc": "en",
+      "width": 1440,
+      "rect": {
+        "x": 130,
+        "y": 5250,
+        "w": 900,
+        "h": 580
+      },
+      "selector": "invoice vs owner mass",
+      "live": false
+    },
+    "clip": {
+      "left": 130,
+      "top": 5230,
+      "width": 900,
+      "height": 600
+    }
+  },
+  {
+    "file": "candidates-desktop-1.png",
+    "items": [
+      "V01 about intro: index + portrait",
+      "V02 about chapter number + divider",
+      "V03 work/agent-ops-console cover CAPS + panel axes",
+      "V04 work/agent-ops-console heading gap + numbers glyph"
+    ],
+    "width": 1560,
+    "height": 1290
+  },
+  {
+    "file": "candidates-desktop-2.png",
+    "items": [
+      "V05 work/agent-ops-console evidence white perimeter",
+      "V06 work/partner-portal facts reconstruction + opening gap",
+      "V07 work/partner-portal specimen font/table clutter",
+      "V08 work/learn cover explanations + status"
+    ],
+    "width": 1560,
+    "height": 1290
+  },
+  {
+    "file": "candidates-desktop-3.png",
+    "items": [
+      "V09 work/learn routes caption + white edges",
+      "V10 work/vet-clinic ONE VISIT / 01 VETERINARIAN TABLET / caption",
+      "V11 work/pawly return boundary balance",
+      "V12 work/pawly small specimen labels"
+    ],
+    "width": 1560,
+    "height": 1290
+  },
+  {
+    "file": "candidates-desktop-4.png",
+    "items": [
+      "V13 work/vet-clinic queue gray field + nested white frame",
+      "V14 work/vet-clinic invoice vs owner mass"
+    ],
+    "width": 1560,
+    "height": 645
+  },
+  {
+    "file": "work-pawly-en-360-full.png",
+    "route": "work/pawly",
+    "loc": "en",
+    "width": 360
+  },
+  {
+    "file": "work-learn-ru-360-full.png",
+    "route": "work/learn",
+    "loc": "ru",
+    "width": 360
+  },
+  {
+    "file": "404-en-360-full.png",
+    "route": "404",
+    "loc": "en",
+    "width": 360
+  },
+  {
+    "file": "about-ru-360-full.png",
+    "route": "about",
+    "loc": "ru",
+    "width": 360
+  },
+  {
+    "file": "work-vet-clinic-ru-360-full.png",
+    "route": "work/vet-clinic",
+    "loc": "ru",
+    "width": 360
+  },
+  {
+    "file": "candidates-mobile-1.png",
+    "items": [
+      "M01 en/work/pawly 360",
+      "M02 ru/work/learn 360",
+      "M04 ru/work/learn 360",
+      "M03 en/404 360",
+      "M05 ru/about 360",
+      "M06 ru/work/vet-clinic 360"
+    ],
+    "width": 1200,
+    "height": 1290
+  },
+  {
+    "file": "work-pawly-en-1440-focus-1.png",
+    "focus": {
+      "tag": "A",
+      "text": "",
+      "href": "/",
+      "class": "navbar__brand",
+      "rect": {
+        "x": 80,
+        "y": 16,
+        "w": 51.0625,
+        "h": 48
+      },
+      "outline": "rgb(212, 50, 32) solid 2px",
+      "shadow": "none",
+      "focus": true,
+      "inline": false
+    }
+  },
+  {
+    "file": "work-pawly-en-1440-focus-2.png",
+    "focus": {
+      "tag": "A",
+      "text": "Work",
+      "href": "/#work",
+      "class": "ds-link ds-link--nav ds-body-sm",
+      "rect": {
+        "x": 1061.953125,
+        "y": 29.203125,
+        "w": 34.609375,
+        "h": 22.390625
+      },
+      "outline": "rgb(212, 50, 32) solid 2px",
+      "shadow": "none",
+      "focus": true,
+      "inline": false
+    }
+  },
+  {
+    "file": "work-pawly-en-1440-focus-3.png",
+    "focus": {
+      "tag": "A",
+      "text": "About",
+      "href": "/about",
+      "class": "ds-link ds-link--nav ds-body-sm",
+      "rect": {
+        "x": 1128.5625,
+        "y": 29.203125,
+        "w": 39.421875,
+        "h": 22.390625
+      },
+      "outline": "rgb(212, 50, 32) solid 2px",
+      "shadow": "none",
+      "focus": true,
+      "inline": false
+    }
+  },
+  {
+    "file": "work-pawly-en-1440-focus-4.png",
+    "focus": {
+      "tag": "A",
+      "text": "Contact",
+      "href": "/#contact",
+      "class": "ds-link ds-link--nav ds-body-sm",
+      "rect": {
+        "x": 1199.984375,
+        "y": 29.203125,
+        "w": 52.703125,
+        "h": 22.390625
+      },
+      "outline": "rgb(212, 50, 32) solid 2px",
+      "shadow": "none",
+      "focus": true,
+      "inline": false
+    }
+  },
+  {
+    "file": "work-pawly-en-1440-focus-5.png",
+    "focus": {
+      "tag": "A",
+      "text": "EN",
+      "href": "/work/pawly/",
+      "class": "ds-link ds-link--nav is-active ds-body-sm",
+      "rect": {
+        "x": 1309.6875,
+        "y": 28.796875,
+        "w": 18.921875,
+        "h": 22.390625
+      },
+      "outline": "rgb(212, 50, 32) solid 2px",
+      "shadow": "none",
+      "focus": true,
+      "inline": false
+    }
+  },
+  {
+    "file": "work-pawly-en-1440-focus-6.png",
+    "focus": {
+      "tag": "A",
+      "text": "RU",
+      "href": "/ru/work/pawly/",
+      "class": "ds-link ds-link--nav ds-body-sm",
+      "rect": {
+        "x": 1340.609375,
+        "y": 28.796875,
+        "w": 19.390625,
+        "h": 22.390625
+      },
+      "outline": "rgb(212, 50, 32) solid 2px",
+      "shadow": "none",
+      "focus": true,
+      "inline": false
+    }
+  },
+  {
+    "file": "focus-cta-sheet.png",
+    "items": [
+      "Tab 2:  rgb(212, 50, 32) solid 2px",
+      "Tab 3: Work rgb(212, 50, 32) solid 2px",
+      "Tab 4: About rgb(212, 50, 32) solid 2px",
+      "Tab 5: Contact rgb(212, 50, 32) solid 2px",
+      "Tab 6: EN rgb(212, 50, 32) solid 2px",
+      "Tab 7: RU rgb(212, 50, 32) solid 2px"
+    ],
+    "width": 1560,
+    "height": 1935
+  },
+  {
+    "file": "motion-final-sheet.png",
+    "items": [
+      "Agent cover — normal final state",
+      "Agent cover — reduced motion final state"
+    ],
+    "width": 1560,
+    "height": 645
+  }
+]

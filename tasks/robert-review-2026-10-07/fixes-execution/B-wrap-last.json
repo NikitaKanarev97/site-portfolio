@@ -1,0 +1,336 @@
+[
+  {
+    "route": "/ru/work/agent-ops-console/",
+    "headings": {
+      "Клиент принял": {
+        "candidates": [
+          "Работа принята"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Работа принята",
+                "lines": [
+                  [
+                    "Работа",
+                    "принята"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Работа принята",
+                "lines": [
+                  [
+                    "Работа",
+                    "принята"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "Работа принята"
+      }
+    }
+  },
+  {
+    "route": "/ru/work/partner-portal/",
+    "headings": {
+      "Всё выпущено": {
+        "candidates": [
+          "Редизайн сдан",
+          "Портал выпущен"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Редизайн сдан",
+                "lines": [
+                  [
+                    "Редизайн",
+                    "сдан"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Портал выпущен",
+                "lines": [
+                  [
+                    "Портал",
+                    "выпущен"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Редизайн сдан",
+                "lines": [
+                  [
+                    "Редизайн",
+                    "сдан"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Портал выпущен",
+                "lines": [
+                  [
+                    "Портал",
+                    "выпущен"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "Редизайн сдан"
+      }
+    }
+  },
+  {
+    "route": "/ru/work/learn/",
+    "headings": {
+      "Контент для двух задач": {
+        "candidates": [
+          "Общий материал"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Общий материал",
+                "lines": [
+                  [
+                    "Общий",
+                    "материал"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Общий материал",
+                "lines": [
+                  [
+                    "Общий",
+                    "материал"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "Общий материал"
+      },
+      "Общий контент": {
+        "candidates": [
+          "Два пути к ответу",
+          "Общий материал"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Два пути к ответу",
+                "lines": [
+                  [
+                    "Два",
+                    "пути",
+                    "к",
+                    "ответу"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Общий материал",
+                "lines": [
+                  [
+                    "Общий",
+                    "материал"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Два пути к ответу",
+                "lines": [
+                  [
+                    "Два",
+                    "пути"
+                  ],
+                  [
+                    "к",
+                    "ответу"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Общий материал",
+                "lines": [
+                  [
+                    "Общий"
+                  ],
+                  [
+                    "материал"
+                  ]
+                ],
+                "hidden": false,
+                "pass": false
+              }
+            ]
+          }
+        ],
+        "selected": "Два пути к ответу"
+      }
+    }
+  },
+  {
+    "route": "/ru/work/vet-clinic/",
+    "headings": {
+      "У семьи своя копия": {
+        "candidates": [
+          "Владелец видит копию",
+          "Копия для владельца",
+          "У владельца своя копия"
+        ],
+        "measurements": [
+          {
+            "width": 1440,
+            "values": [
+              {
+                "candidate": "Владелец видит копию",
+                "lines": [
+                  [
+                    "Владелец",
+                    "видит",
+                    "копию"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "Копия для владельца",
+                "lines": [
+                  [
+                    "Копия",
+                    "для",
+                    "владельца"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              },
+              {
+                "candidate": "У владельца своя копия",
+                "lines": [
+                  [
+                    "У",
+                    "владельца",
+                    "своя",
+                    "копия"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          },
+          {
+            "width": 360,
+            "values": [
+              {
+                "candidate": "Владелец видит копию",
+                "lines": [
+                  [
+                    "Владелец"
+                  ],
+                  [
+                    "видит",
+                    "копию"
+                  ]
+                ],
+                "hidden": false,
+                "pass": false
+              },
+              {
+                "candidate": "Копия для владельца",
+                "lines": [
+                  [
+                    "Копия"
+                  ],
+                  [
+                    "для",
+                    "владельца"
+                  ]
+                ],
+                "hidden": false,
+                "pass": false
+              },
+              {
+                "candidate": "У владельца своя копия",
+                "lines": [
+                  [
+                    "У",
+                    "владельца"
+                  ],
+                  [
+                    "своя",
+                    "копия"
+                  ]
+                ],
+                "hidden": false,
+                "pass": true
+              }
+            ]
+          }
+        ],
+        "selected": "У владельца своя копия"
+      }
+    }
+  }
+]

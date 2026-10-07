@@ -1,0 +1,63 @@
+# /work/vet-clinic/ 360
+
+Skip to content
+Menu
+Vet Clinic OS
+The vet, receptionist and owner handle their parts of the visit.
+The vet saves prescriptions; reception bills services; owners receive the summary.
+Role
+Sole product designer
+Input
+Conversations with one practising vet
+Year
+2026
+Product
+Open product
+A trace before the next patient
+The clinic is under NDA; names and clinical data are invented. I separated a useful trace from the full record. Thirty seconds between patients was the design constraint, not a measured interface speed.
+Patients first; unfinished records stay visible.
+Each role receives its own part
+User flow
+Record, invoice and publication
+Prescription, invoice and published summary.
+Save the useful facts
+Weight, medication and dose become sourced facts. The full note can follow later. Here: Marsik, 4.9 kg, Meloxicam, 1.00 ml. Saved at 09:12.
+Bill the work, keep the note private
+Selected services create the invoice. Reception sees payer, items and total. Diagnosis and private notes stay in the clinic. Two services for Marsik.
+The family gets a stable plan
+The owner receives the same prescription in a published snapshot. A later saved edit does not silently rewrite it. Publishing a new version is explicit. Published at 09:13.
+The owner keeps a copy
+Unsaved form, saved record and published document are independent states. The owner can still read an older publication while the doctor edits the record.
+Unsaved edits live only in this form.
+Save survives reload; it does not publish.
+The owner still reads the published snapshot.
+The roles stay linked
+Trade-off
+The doctor saves the record and publishes the owner’s summary in separate actions.
+Evidence
+The trace, invoice and summary connect end to end in the prototype. Conversations with one practising vet informed the role flows and recording decisions.
+Let's talk
+If the case above answered your question — or raised one.
+nikita.kanarev.dev@outlook.com
+CV (PDF)
+LinkedIn
+Copyright 2026
+
+## hidden
+(external link, opens in a new tab)
+The veterinarian enters and saves a quick trace, completes the owner-visible plan and selects services. Reception gets only services and totals. A saved plan with new changes enables publication; otherwise publication is blocked. The owner reads only the published snapshot.   Vet · open Marsik leads to Weight / drug / dose   Weight / drug / dose leads to Save quick trace   Save quick trace leads to Plan + services   Plan + services leads to Save record   Save record leads to Plan + new changes?   Plan + new changes? leads to Review and publish  (yes)  Plan + new changes? leads to Nothing new to publish  (no)  Nothing new to publish leads to Plan + services   Save record leads to Reception · invoice   Review and publish leads to Owner · snapshot
+The veterinarian enters and saves a quick trace, completes the owner-visible plan and selects services. Reception gets only services and totals. A saved plan with new changes enables publication; otherwise publication is blocked. The owner reads only the published snapshot.   Vet · open Marsik leads to Weight / drug / dose   Weight / drug / dose leads to Save quick trace   Save quick trace leads to Plan + services   Plan + services leads to Save record   Save record leads to Plan + new changes?   Plan + new changes? leads to Review and publish  (yes)  Plan + new changes? leads to Nothing new to publish  (no)  Nothing new to publish leads to Plan + services   Save record leads to Reception · invoice   Review and publish leads to Owner · snapshot
+Next case: Pawly
+(external link, opens in a new tab)
+
+## alt
+Marsik’s saved facts: 4.9 kg, Meloxicam, 1.00 ml, frequency, source and time.
+Complete invoice: payer, selected services, total and payment action.
+Phone details: Marsik, publication 09:13, Meloxicam 1.00 ml and complete discharge action; mobile shows the full owner view.
+Today’s queue: all patients at the clinic and an emergency action; wide view includes expected visits.
+Marsik’s saved facts: 4.9 kg, Meloxicam, 1.00 ml, frequency, source and time.
+Complete invoice: payer, selected services, total and payment action.
+Phone details: Marsik, publication 09:13, Meloxicam 1.00 ml and complete discharge action; mobile shows the full owner view.
+Unsaved changes, weight 4.9 and complete Save actions.
+Saved at 09:12; weight persists after reload.
+Published version 1, Changes are not published, Publish new version.

@@ -1,0 +1,40 @@
+
+> site-portfolio@0.1.0 check:harmony
+> node scripts/harmony-check.mjs --base=http://127.0.0.1:4401 --widths=1440,360 / /about /work/agent-ops-console /work/partner-portal /work/learn /work/vet-clinic /work/pawly /ru/ /ru/about /ru/work/agent-ops-console /ru/work/partner-portal /ru/work/learn /ru/work/vet-clinic /ru/work/pawly /kit
+
+/ @1440: плашек 0, тезисов 0, подписей и абзацев 0
+/ @360: плашек 0, тезисов 0, подписей и абзацев 0
+/about @1440: плашек 0, тезисов 0, подписей и абзацев 0
+/about @360: плашек 0, тезисов 0, подписей и абзацев 0
+/work/agent-ops-console @1440: плашек 5, тезисов 7, подписей и абзацев 23 · case-agent-ops-console 429 слов, 7 кадров
+/work/agent-ops-console @360: плашек 5, тезисов 6, подписей и абзацев 21 · case-agent-ops-console 390 слов, 6 кадров
+/work/partner-portal @1440: плашек 8, тезисов 8, подписей и абзацев 19 · case-partner-portal 444 слов, 19 кадров
+/work/partner-portal @360: плашек 8, тезисов 8, подписей и абзацев 19 · case-partner-portal 444 слов, 19 кадров
+/work/learn @1440: плашек 5, тезисов 7, подписей и абзацев 19 · case-learn 416 слов, 15 кадров
+/work/learn @360: плашек 5, тезисов 7, подписей и абзацев 19 · case-learn 416 слов, 15 кадров
+/work/vet-clinic @1440: плашек 8, тезисов 7, подписей и абзацев 11 · case-vet-clinic 329 слов, 10 кадров
+/work/vet-clinic @360: плашек 8, тезисов 7, подписей и абзацев 11 · case-vet-clinic 329 слов, 10 кадров
+/work/pawly @1440: плашек 9, тезисов 7, подписей и абзацев 15 · case-pawly 342 слов, 20 кадров
+/work/pawly @360: плашек 9, тезисов 7, подписей и абзацев 15 · case-pawly 342 слов, 20 кадров
+/ru/ @1440: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/ @360: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/about @1440: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/about @360: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/work/agent-ops-console @1440: плашек 5, тезисов 7, подписей и абзацев 23 · case-agent-ops-console 349 слов, 7 кадров
+/ru/work/agent-ops-console @360: плашек 5, тезисов 6, подписей и абзацев 21 · case-agent-ops-console 320 слов, 6 кадров
+/ru/work/partner-portal @1440: плашек 8, тезисов 8, подписей и абзацев 19 · case-partner-portal 404 слов, 19 кадров
+/ru/work/partner-portal @360: плашек 8, тезисов 8, подписей и абзацев 19 · case-partner-portal 404 слов, 19 кадров
+/ru/work/learn @1440: плашек 5, тезисов 7, подписей и абзацев 19 · case-learn 367 слов, 15 кадров
+/ru/work/learn @360: плашек 5, тезисов 7, подписей и абзацев 19 · case-learn 367 слов, 15 кадров
+/ru/work/vet-clinic @1440: плашек 8, тезисов 7, подписей и абзацев 11 · case-vet-clinic 287 слов, 10 кадров
+/ru/work/vet-clinic @360: плашек 8, тезисов 7, подписей и абзацев 11 · case-vet-clinic 287 слов, 10 кадров
+/ru/work/pawly @1440: плашек 9, тезисов 7, подписей и абзацев 15 · case-pawly 294 слов, 20 кадров
+/ru/work/pawly @360: плашек 9, тезисов 7, подписей и абзацев 15 · case-pawly 294 слов, 20 кадров
+/kit @1440: плашек 19, тезисов 11, подписей и абзацев 46 · case-demo 281 слов, 10 кадров
+/kit @360: плашек 19, тезисов 11, подписей и абзацев 46 · case-demo 281 слов, 10 кадров
+
+✗ Нарушений: 4
+  [тезис] /work/partner-portal @360 — строка из одного слова «beside»: «Keep the request beside the candidates»
+  [тезис] /work/learn @360 — строка из одного слова «before»: «Show the answer before asking for trust»
+  [тезис] /ru/work/agent-ops-console @360 — строка из одного слова «Прототип», «принят»: «Прототип принят»
+  [тезис] /ru/work/vet-clinic @360 — строка из одного слова «След»: «След за время паузы»

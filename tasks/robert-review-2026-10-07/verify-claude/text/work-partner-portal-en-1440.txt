@@ -1,0 +1,95 @@
+# /work/partner-portal/ 1440
+
+Skip to content
+Work
+About
+Contact
+EN
+RU
+DSSL · B2B procurement
+Partner Portal
+A working specification, from intake to checkout.
+38
+“4 MP outdoor camera”, 8 units
+Row 38: the source text beside three matches
+Work
+Commercial redesign shipped in full
+Role
+Sole designer; frontend, backend, PM, QA and team lead
+Period
+2024–winter 2026; roughly six active months across a long pause
+Product
+Open product
+Make space for the buyer
+The archived dashboard foregrounded promotions and left destinations behind icons. I made the specification the working object, with named navigation and separate responsibilities for matching and commercial terms.
+Procurement tasks first
+Named destinations
+The archived dashboard, with audit notes
+A shared list
+XLS import and Quick order feed the same resolution workspace. Cart, supply planning and checkout have distinct jobs. The map shows eight key screens.
+Screen map
+Procurement workspace
+Eight key screens of the procurement workspace
+Choose a product, then check terms
+Matching does not promise compatibility. Buyers choose or correct the item; Cart separately reviews commercial changes. Each decision has a visible return path before order creation.
+User flow
+From XLS to order
+From the right product to commercial terms to an order
+Keep the request beside the candidates
+Row 38 of office_north_v8.xlsx asks for “камера 4мп уличная”, eight units. The buyer compares three matches and chooses the second.
+Confirm the choice, retain the source
+The source text and quantity remain. Confirmed records the buyer’s decision; “was Ambiguous” retains the original matching category. Undo keeps the choice reversible.
+Carry the row into commercial review
+Cart identifies the chosen SKU as source row 38 and keeps quantity eight. Price and availability stay separate from product identity.
+States make the next action explicit
+Resolution rows retain the source request after a product is chosen. Availability records the warehouse response; shipment plans show whether supply is possible. A missing warehouse response reads “not confirmed”, never zero.
+Product states
+DSSL procurement system
+Product choice
+ResolutionRow
+Ambiguous · choose a match
+Confirmed · original category retained
+Availability and supply
+Availability
+Verified stock
+Not confirmed · no WMS response
+FulfillmentPlan
+Selected · choice remains visible
+Unavailable · reason stated
+Product choice, stock confirmation and shipment availability
+Components in context · the same row after buyer confirmation
+The commercial redesign shipped
+The DSSL redesign shipped in full. I rebuilt the procurement scenario shown here with synthetic data.
+Trade-off
+Ambiguity still requires a buyer’s manual choice. Matching data cannot guarantee compatibility.
+Evidence
+Row 38 runs from product choice to Cart with its source text and quantity intact.
+Let's talk
+If the case above answered your question — or raised one.
+nikita.kanarev.dev@outlook.com
+CV (PDF)
+LinkedIn
+Copyright 2026
+
+## hidden
+(external link, opens in a new tab)
+Dashboard opens file import, Quick order, Cart and Order details. Both intakes share Resolution Center. Cart contains supply planning and checkout. Eight selected screens, not the entire product.   Dashboard leads to XLS import   Dashboard leads to Quick order   Dashboard leads to Cart   Dashboard leads to Order details   XLS import leads to Resolution   Quick order leads to Resolution   Cart leads to Supply plan   Cart leads to Checkout
+Dashboard opens file import, Quick order, Cart and Order details. Both intakes share Resolution Center. Cart contains supply planning and checkout. Eight selected screens, not the entire product.   Dashboard leads to XLS import   Dashboard leads to Quick order   Dashboard leads to Cart   Dashboard leads to Order details   XLS import leads to Resolution   Quick order leads to Resolution   Cart leads to Supply plan   Cart leads to Checkout
+Read imported lines. Unresolved identity requires buyer selection or correction and recheck. Cart separately reviews commercial change. Choose a supply plan, confirm terms, create an order. Source text after creation is not yet stored.   Upload XLS leads to Read lines   Read lines leads to Unresolved lines?   Unresolved lines? leads to Choose / correct  (yes)  Choose / correct leads to Unresolved lines?   Unresolved lines? leads to Cart  (no)  Cart leads to Commercial change?   Commercial change? leads to Accept / resolve  (yes)  Accept / resolve leads to Cart   Commercial change? leads to Choose plan  (no)  Choose plan leads to Confirm terms   Confirm terms leads to Order created
+Read imported lines. Unresolved identity requires buyer selection or correction and recheck. Cart separately reviews commercial change. Choose a supply plan, confirm terms, create an order. Source text after creation is not yet stored.   Upload XLS leads to Read lines   Read lines leads to Unresolved lines?   Unresolved lines? leads to Choose / correct  (yes)  Choose / correct leads to Unresolved lines?   Unresolved lines? leads to Cart  (no)  Cart leads to Commercial change?   Commercial change? leads to Accept / resolve  (yes)  Accept / resolve leads to Cart   Commercial change? leads to Choose plan  (no)  Choose plan leads to Confirm terms   Confirm terms leads to Order created
+Next case: TRASSIR Learn
+(external link, opens in a new tab)
+
+## alt
+Buyer decision for row 38: original source text, eight units and three catalog candidates
+DSSL dashboard: promotional banner and an icon-only navigation rail
+Source row 38 and eight original units above three candidate products
+Confirmed row 38, original eight units, original ambiguous category and Undo action
+Cart product row with chosen SKU, source row 38, quantity eight, price and availability
+Original source line, quantity, ambiguous identity, plausible match and Choose action
+Confirmed former ambiguous row, source text remains and Undo action is available
+24 pcs at Moscow DC, ships in 2 business days, verified commercial state
+Not confirmed stock, WMS no response; absence is not drawn as zero
+Selected plan retains all shipment terms and selected action
+Plan unavailable because seven lines have no stock at this warehouse
+Resolution Center after choosing row 38: filter, resolved tab, reversible row and global progress

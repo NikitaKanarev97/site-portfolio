@@ -1,0 +1,29 @@
+{
+  "stage": "D",
+  "status": "accepted",
+  "implementationRef": "4919971ab2a75135fd4efa4a332a998eed292c0f",
+  "ref": "81db809e6ac1f9e99bc117b9b63a9f52e72e32d0",
+  "checkout": "C:/Users/kanar/.codex/worktrees/vet-clinic-rebuild/Site-portfolio",
+  "branch": "codex/vet-clinic-rebuild-2026-10-04",
+  "report": "tasks/portfolio-rebuild/vet-clinic/report.md",
+  "review": [
+    "Original story/source/evidence/scoped change and test results reviewed before narrow correction; EN/RU native role views and limits are clear.",
+    "Reviewer fresh carousel normal/reduce/no-JS checks confirmed real page states and native controls.",
+    "Correction commit has 17 files confined to capture script, review screenshots and handoff evidence/report. Worktree clean.",
+    "Corrected RU390 draft/saved/published and EN390 chapter visually opened; whole actions and caption visible. RU overview at reduced scale considered overview only.",
+    "Executor delta checks: EN/RU normal/reduce/no-JS, 6 profiles / 18 stops, no failures/errors; stop positions 0/325/585. Full-page first position preserved."
+  ],
+  "commonRequests": [
+    {
+      "id": "D-G-01",
+      "status": "nonblocking",
+      "description": "Optional DiagramCanvas role group-zone labels. Actual roles readable in real flow nodes; evaluate during G-final."
+    }
+  ],
+  "limits": [
+    "Prototype not deployed; one veterinarian domain input, no invented human outcomes.",
+    "Unsaved edits disappear on reload; saved edits and published owner snapshot are separate; snapshot history not retained.",
+    "Headless browser did not certify physical hidden-tab pause; CPU benchmark not performed."
+  ],
+  "acceptanceType": "Coordinator review within owner-authorized overnight plan; no claim of owner visual acceptance."
+}

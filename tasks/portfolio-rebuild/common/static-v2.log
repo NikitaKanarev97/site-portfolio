@@ -1,0 +1,56 @@
+/preview/common/en/agent-ops/ reduce 1440 900 overflow 0 errors 0
+/preview/common/en/agent-ops/ reduce 1024 900 overflow 0 errors 0
+/preview/common/en/agent-ops/ reduce 390 844 overflow 0 errors 0
+/preview/common/en/agent-ops/ reduce 360 800 overflow 0 errors 0
+/preview/common/en/agent-ops/ reduce 1440 600 overflow 0 errors 0
+/preview/common/en/agent-ops/ no-js 1440 900 overflow 0 errors 0
+/preview/common/en/agent-ops/ no-js 1024 900 overflow 0 errors 0
+/preview/common/en/agent-ops/ no-js 390 844 overflow 0 errors 0
+/preview/common/en/agent-ops/ no-js 360 800 overflow 0 errors 0
+/preview/common/en/agent-ops/ no-js 1440 600 overflow 0 errors 0
+/preview/common/en/partner-portal/ reduce 1440 900 overflow 0 errors 0
+/preview/common/en/partner-portal/ reduce 1024 900 overflow 0 errors 0
+/preview/common/en/partner-portal/ reduce 390 844 overflow 0 errors 0
+/preview/common/en/partner-portal/ reduce 360 800 overflow 0 errors 0
+/preview/common/en/partner-portal/ reduce 1440 600 overflow 0 errors 0
+/preview/common/en/partner-portal/ no-js 1440 900 overflow 0 errors 0
+/preview/common/en/partner-portal/ no-js 1024 900 overflow 0 errors 0
+/preview/common/en/partner-portal/ no-js 390 844 overflow 0 errors 0
+/preview/common/en/partner-portal/ no-js 360 800 overflow 0 errors 0
+/preview/common/en/partner-portal/ no-js 1440 600 overflow 0 errors 0
+/preview/common/ru/agent-ops/ reduce 1440 900 overflow 0 errors 0
+/preview/common/ru/agent-ops/ reduce 1024 900 overflow 0 errors 0
+/preview/common/ru/agent-ops/ reduce 390 844 overflow 0 errors 0
+/preview/common/ru/agent-ops/ reduce 360 800 overflow 0 errors 0
+/preview/common/ru/agent-ops/ reduce 1440 600 overflow 0 errors 0
+/preview/common/ru/agent-ops/ no-js 1440 900 overflow 0 errors 0
+/preview/common/ru/agent-ops/ no-js 1024 900 overflow 0 errors 0
+/preview/common/ru/agent-ops/ no-js 390 844 overflow 0 errors 0
+/preview/common/ru/agent-ops/ no-js 360 800 overflow 0 errors 0
+/preview/common/ru/agent-ops/ no-js 1440 600 overflow 0 errors 0
+/preview/common/ru/partner-portal/ reduce 1440 900 overflow 0 errors 0
+/preview/common/ru/partner-portal/ reduce 1024 900 overflow 0 errors 0
+/preview/common/ru/partner-portal/ reduce 390 844 overflow 0 errors 0
+/preview/common/ru/partner-portal/ reduce 360 800 overflow 0 errors 0
+/preview/common/ru/partner-portal/ reduce 1440 600 overflow 0 errors 0
+/preview/common/ru/partner-portal/ no-js 1440 900 overflow 0 errors 0
+/preview/common/ru/partner-portal/ no-js 1024 900 overflow 0 errors 0
+/preview/common/ru/partner-portal/ no-js 390 844 overflow 0 errors 0
+/preview/common/ru/partner-portal/ no-js 360 800 overflow 1 errors 0
+/preview/common/ru/partner-portal/ no-js 1440 600 overflow 0 errors 0
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('#diagram-map > .dg, #diagram-map > .dg-responsive').first()
+
+    at D:\Claude-projects\Site-portfolio\tasks\portfolio-rebuild\common\verify-static.mjs:51:16 {
+  log: [
+    "  - waiting for locator('#diagram-map > .dg, #diagram-map > .dg-responsive').first()"
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v24.18.0

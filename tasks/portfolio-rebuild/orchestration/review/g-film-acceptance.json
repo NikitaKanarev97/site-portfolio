@@ -1,0 +1,28 @@
+{
+  "stage": "G-common-E",
+  "status": "accepted",
+  "deltaRef": "433c80bcba29eda2060067570e9f8ec2087a2a91",
+  "ref": "a6faac3a3d10eb6601fcc34caa70a915bea5dab3",
+  "handoffRef": "0809df0de9dda0f0c1fe0e7172f8dff5a70f1a89",
+  "branch": "codex/portfolio-integration-g",
+  "checkout": "D:/Claude-projects/Site-portfolio",
+  "cleanCheckout": "D:/Claude-projects/Site-portfolio/tmp/portfolio-common-film",
+  "closedRequests": [
+    "E-G-01",
+    "E-G-02",
+    "E-G-03"
+  ],
+  "review": [
+    "Full common report/handoff reviewed. Six-file delta only adds film forwarding/guards/docs and fixes existing MediaFrame lifecycle, without tokens/dependency/new motion system.",
+    "Reviewed actual delta: MP4 first only manual films; loop codec order preserved; observer/listeners/stall timer cleanup on before-swap; manual return preserves time.",
+    "14 inline native playback/lifecycle/loop/geometry observations and 8 B/C profiles have no failures; 26 captured media HTTP checks pass; 24 final harmony samples pass after documented fixture title repair.",
+    "Clean exact a6faac checkout verified HEAD/status, mirrors hashes; 630 canonical files reproduced. Check/build/CSS pass; two clean no-JS native playback profiles plus kit and media checks have no failures.",
+    "Delta transfer to original E d3bbbb tested clean in separate checkout; six files byte-identical and zero case files changed. Actual E still awaits own import and story placement.",
+    "Viewed EN full and RU no-JS inline native control frames; actual E placement remains next case checkpoint."
+  ],
+  "limits": [
+    "Physical hidden tab/other browsers/physical devices not certified; visibility handler probe explicitly synthetic.",
+    "No-JS native playback/static states available; viewport/hidden lifecycle enhancement needs JS.",
+    "Does not accept E or publicly integrate D/E/F."
+  ]
+}

@@ -1,0 +1,413 @@
+ M .claude/skills/ru-cover-letter/references/evidence-ru.md
+ M .claude/skills/ru-cover-letter/references/patterns-ru.md
+ M CLAUDE.md
+ M HHH/pipeline.md
+ M PLAN-CHATS.md
+ M PROJECT.md
+ M cv/Nikita_Kanarev_Product_Designer_Master.md
+ M cv/ats.html
+ M cv/build.mjs
+ M cv/cv-ru.html
+ M cv/cv.html
+ M cv/fact-sheet.md
+ M cv/resume-data-ru.json
+ M cv/resume-data.json
+ M ds/components.md
+ M ds/foundation.md
+ M ds/logo.md
+ M ds/patterns.md
+ M ds/screens/home.md
+ M ds/tokens.css
+ M linkedin/after-state.md
+ M package-lock.json
+ M package.json
+ M public/cv-ru.pdf
+ M public/cv.pdf
+ M public/media/case-learn-ru/trajectory.webp
+ M public/media/linkedin/cases/featured-v3-contact-sheet.png
+ M public/media/linkedin/cases/pawly-featured-v3.png
+ M public/media/linkedin/og/work-vet-clinic.png
+ M public/prototypes/learn-landing/404.html
+ M public/prototypes/learn-landing/404/index.html
+ M public/prototypes/learn-landing/certificate/index.html
+ M public/prototypes/learn-landing/en/404.html
+ M public/prototypes/learn-landing/en/404/index.html
+ M public/prototypes/learn-landing/en/certificate/index.html
+ M public/prototypes/learn-landing/en/index.html
+ M public/prototypes/learn-landing/en/materials/access/index.html
+ M public/prototypes/learn-landing/en/materials/archive/index.html
+ M public/prototypes/learn-landing/en/materials/index.html
+ M public/prototypes/learn-landing/en/materials/onvif/index.html
+ M public/prototypes/learn-landing/en/program/index.html
+ M public/prototypes/learn-landing/index.html
+ M public/prototypes/learn-landing/materials/access/index.html
+ M public/prototypes/learn-landing/materials/archive/index.html
+ M public/prototypes/learn-landing/materials/index.html
+ M public/prototypes/learn-landing/materials/onvif/index.html
+ M public/prototypes/learn-landing/program/index.html
+ M public/prototypes/learn/assessment/confirm/index.html
+ M public/prototypes/learn/assessment/failed/index.html
+ M public/prototypes/learn/assessment/index.html
+ M public/prototypes/learn/assessment/intro/index.html
+ M public/prototypes/learn/assessment/intro/not-verified/index.html
+ M public/prototypes/learn/assessment/result-failed/index.html
+ M public/prototypes/learn/assessment/result/index.html
+ M public/prototypes/learn/assets/index-bBGdNjWO.js
+ M public/prototypes/learn/catalog/index.html
+ M public/prototypes/learn/catalog/zero/index.html
+ M public/prototypes/learn/certificate/index.html
+ M public/prototypes/learn/history/empty/index.html
+ M public/prototypes/learn/history/index.html
+ M public/prototypes/learn/home/explore/index.html
+ M public/prototypes/learn/home/handover/index.html
+ M public/prototypes/learn/home/index.html
+ M public/prototypes/learn/home/project/index.html
+ M public/prototypes/learn/home/symptom/index.html
+ M public/prototypes/learn/index.html
+ M public/prototypes/learn/login/index.html
+ M public/prototypes/learn/login/known/index.html
+ M public/prototypes/learn/material/abandoned-object/index.html
+ M public/prototypes/learn/material/analytics-modules/index.html
+ M public/prototypes/learn/material/archive-depth/index.html
+ M public/prototypes/learn/material/archive-not-writing/index.html
+ M public/prototypes/learn/material/bandwidth-check/index.html
+ M public/prototypes/learn/material/camera-count/index.html
+ M public/prototypes/learn/material/camera-ip-change/index.html
+ M public/prototypes/learn/material/camera-lineup/index.html
+ M public/prototypes/learn/material/camera-manual-add/index.html
+ M public/prototypes/learn/material/disk-capacity/index.html
+ M public/prototypes/learn/material/disk-layout/index.html
+ M public/prototypes/learn/material/duostation-intro/index.html
+ M public/prototypes/learn/material/export-fragment/index.html
+ M public/prototypes/learn/material/firmware-update/index.html
+ M public/prototypes/learn/material/first-boot/index.html
+ M public/prototypes/learn/material/handover-access/index.html
+ M public/prototypes/learn/material/handover-check/index.html
+ M public/prototypes/learn/material/handover-docs/index.html
+ M public/prototypes/learn/material/index.html
+ M public/prototypes/learn/material/license-scheme/index.html
+ M public/prototypes/learn/material/motion-detectors/index.html
+ M public/prototypes/learn/material/onvif-compat/index.html
+ M public/prototypes/learn/material/onvif-not-found/index.html
+ M public/prototypes/learn/material/onvif-profiles/index.html
+ M public/prototypes/learn/material/operator-briefing/index.html
+ M public/prototypes/learn/material/operator-roles/index.html
+ M public/prototypes/learn/material/partner-only/index.html
+ M public/prototypes/learn/material/power-link-check/index.html
+ M public/prototypes/learn/material/ptz-tracking/index.html
+ M public/prototypes/learn/material/record-redundancy/index.html
+ M public/prototypes/learn/material/rtsp-connect/index.html
+ M public/prototypes/learn/material/server-choice/index.html
+ M public/prototypes/learn/material/tender-spec/index.html
+ M public/prototypes/learn/my/empty/index.html
+ M public/prototypes/learn/my/index.html
+ M public/prototypes/learn/player/already-viewed/index.html
+ M public/prototypes/learn/player/analitika/0/index.html
+ M public/prototypes/learn/player/analitika/1/index.html
+ M public/prototypes/learn/player/analitika/2/index.html
+ M public/prototypes/learn/player/analitika/3/index.html
+ M public/prototypes/learn/player/analitika/4/index.html
+ M public/prototypes/learn/player/analitika/5/index.html
+ M public/prototypes/learn/player/arhiv/0/index.html
+ M public/prototypes/learn/player/arhiv/1/index.html
+ M public/prototypes/learn/player/arhiv/2/index.html
+ M public/prototypes/learn/player/arhiv/3/index.html
+ M public/prototypes/learn/player/arhiv/4/index.html
+ M public/prototypes/learn/player/arhiv/5/index.html
+ M public/prototypes/learn/player/index.html
+ M public/prototypes/learn/player/linejka/0/index.html
+ M public/prototypes/learn/player/linejka/1/index.html
+ M public/prototypes/learn/player/linejka/2/index.html
+ M public/prototypes/learn/player/linejka/3/index.html
+ M public/prototypes/learn/player/linejka/4/index.html
+ M public/prototypes/learn/player/linejka/5/index.html
+ M public/prototypes/learn/player/linejka/6/index.html
+ M public/prototypes/learn/player/otkazy/0/index.html
+ M public/prototypes/learn/player/otkazy/1/index.html
+ M public/prototypes/learn/player/otkazy/2/index.html
+ M public/prototypes/learn/player/otkazy/3/index.html
+ M public/prototypes/learn/player/otkazy/4/index.html
+ M public/prototypes/learn/player/otkazy/5/index.html
+ M public/prototypes/learn/player/proekt/0/index.html
+ M public/prototypes/learn/player/proekt/1/index.html
+ M public/prototypes/learn/player/proekt/2/index.html
+ M public/prototypes/learn/player/proekt/3/index.html
+ M public/prototypes/learn/player/proekt/4/index.html
+ M public/prototypes/learn/player/proekt/5/index.html
+ M public/prototypes/learn/player/proekt/6/index.html
+ M public/prototypes/learn/player/proekt/7/index.html
+ M public/prototypes/learn/player/proekt/8/index.html
+ M public/prototypes/learn/player/puskonaladka/0/index.html
+ M public/prototypes/learn/player/puskonaladka/1/index.html
+ M public/prototypes/learn/player/puskonaladka/10/index.html
+ M public/prototypes/learn/player/puskonaladka/2/index.html
+ M public/prototypes/learn/player/puskonaladka/3/index.html
+ M public/prototypes/learn/player/puskonaladka/4/index.html
+ M public/prototypes/learn/player/puskonaladka/5/index.html
+ M public/prototypes/learn/player/puskonaladka/6/index.html
+ M public/prototypes/learn/player/puskonaladka/7/index.html
+ M public/prototypes/learn/player/puskonaladka/8/index.html
+ M public/prototypes/learn/player/puskonaladka/9/index.html
+ M public/prototypes/learn/player/sdacha/0/index.html
+ M public/prototypes/learn/player/sdacha/1/index.html
+ M public/prototypes/learn/player/sdacha/2/index.html
+ M public/prototypes/learn/player/sdacha/3/index.html
+ M public/prototypes/learn/player/sdacha/4/index.html
+ M public/prototypes/learn/player/sdacha/5/index.html
+ M public/prototypes/learn/player/sdacha/6/index.html
+ M public/prototypes/learn/practice/index.html
+ M public/prototypes/learn/practice/wrong/index.html
+ M public/prototypes/learn/search/index.html
+ M public/prototypes/learn/search/zero/index.html
+ M public/prototypes/learn/showcase/index.html
+ M public/prototypes/learn/trajectory/analitika/index.html
+ M public/prototypes/learn/trajectory/arhiv/index.html
+ M public/prototypes/learn/trajectory/gate/index.html
+ M public/prototypes/learn/trajectory/index.html
+ M public/prototypes/learn/trajectory/linejka/index.html
+ M public/prototypes/learn/trajectory/otkazy/index.html
+ M public/prototypes/learn/trajectory/proekt/index.html
+ M public/prototypes/learn/trajectory/puskonaladka/index.html
+ M public/prototypes/learn/trajectory/sdacha/index.html
+ M public/prototypes/learn/trajectory/started/index.html
+ M public/prototypes/learn/verify/index.html
+ M public/prototypes/learn/verify/inn-error/index.html
+ M public/prototypes/learn/verify/rejected/index.html
+ M public/prototypes/learn/verify/submitted/index.html
+ M scripts/build-linkedin-assets.mjs
+ M scripts/sync-learn-prototypes.mjs
+ M src/components/AuthorPortrait.astro
+ M src/components/CaseCover.astro
+ M src/components/CaseScreen.astro
+ M src/components/CopyEmail.astro
+ M src/components/FeaturedCase.astro
+ M src/components/Footer.astro
+ M src/components/LearnStage.astro
+ M src/components/Navbar.astro
+ M src/components/ScreenSurface.astro
+ M src/components/TextLink.astro
+ M src/components/VetStage.astro
+ M src/components/WorkStage.astro
+ M src/copy/case-art.ts
+ M src/copy/cases/film-common-fixture.ts
+ M src/copy/cases/learn.ts
+ M src/copy/cases/pawly.ts
+ M src/copy/cases/vet-clinic.ts
+ M src/copy/featured-work.ts
+ M src/copy/home.ts
+ M src/copy/og.ts
+ M src/copy/ru/cases/pawly.ts
+ M src/copy/ru/cases/vet-clinic.ts
+ M src/copy/ru/home.ts
+ M src/copy/ru/site.ts
+ M src/copy/site.ts
+ M src/layouts/BaseLayout.astro
+ M src/layouts/PageShell.astro
+ M src/pages/index.astro
+ M src/pages/og/[card].png.ts
+ M src/styles/fonts.css
+ M src/styles/tokens.css
+?? .playwright-mcp/
+?? AGENTS.md
+?? CONTENT-RULES.md
+?? HHH/letters/2026-09-11-pixel-plus.md
+?? outputs/agent-ops-art-before-after.jpg
+?? outputs/agent-ops-art-build.log
+?? outputs/agent-ops-art-check.log
+?? outputs/agent-ops-art-cover-frame.jpg
+?? outputs/agent-ops-art-cover.mp4
+?? outputs/agent-ops-art-css.log
+?? outputs/agent-ops-art-dev-error.log
+?? outputs/agent-ops-art-dev.log
+?? outputs/agent-ops-art-direction-review.md
+?? outputs/agent-ops-art-focus-review.jpg
+?? outputs/agent-ops-art-focus.mp4
+?? outputs/agent-ops-art-harmony.log
+?? outputs/agent-ops-art-lifecycle.json
+?? outputs/agent-ops-art-performance-summary.json
+?? outputs/agent-ops-art-performance.log
+?? outputs/agent-ops-art-production.json
+?? outputs/agent-ops-art-reading-position.json
+?? outputs/agent-ops-art-video.log
+?? outputs/agent-ops-art-visual.log
+?? outputs/agent-ops-baseline-performance.json
+?? outputs/agent-ops-case-handoff.md
+?? outputs/agent-ops-checkpoint-before-after.jpg
+?? outputs/agent-ops-checkpoint-build.log
+?? outputs/agent-ops-checkpoint-check.log
+?? outputs/agent-ops-checkpoint-controls.json
+?? outputs/agent-ops-checkpoint-controls.log
+?? outputs/agent-ops-checkpoint-cover.mp4
+?? outputs/agent-ops-checkpoint-css.log
+?? outputs/agent-ops-checkpoint-export.log
+?? outputs/agent-ops-checkpoint-harmony.log
+?? outputs/agent-ops-checkpoint-production.json
+?? outputs/agent-ops-checkpoint-production.log
+?? outputs/agent-ops-checkpoint-video-sheet.jpg
+?? outputs/agent-ops-checkpoint-video.log
+?? outputs/agent-ops-checkpoint-visual.log
+?? outputs/agent-ops-next-link-build.log
+?? outputs/agent-ops-next-link-check.log
+?? outputs/agent-ops-next-link-controls.log
+?? outputs/agent-ops-next-link-css.log
+?? outputs/agent-ops-padding-before-after.jpg
+?? outputs/agent-ops-stage1-build.log
+?? outputs/agent-ops-stage1-check.log
+?? outputs/agent-ops-stage1-css.log
+?? outputs/agent-ops-stage1-harmony.log
+?? outputs/agent-ops-stage1-visual.log
+?? outputs/agent-ops-stage2-build.log
+?? outputs/agent-ops-stage2-check.log
+?? outputs/agent-ops-stage2-css.log
+?? outputs/agent-ops-stage2-draw.json
+?? outputs/agent-ops-stage2-harmony.log
+?? outputs/agent-ops-stage2-kit-sticky.json
+?? outputs/agent-ops-stage2-lifecycle.json
+?? outputs/agent-ops-stage2-performance.json
+?? outputs/agent-ops-stage2-production.json
+?? outputs/agent-ops-stage2-regressions.log
+?? outputs/agent-ops-stage2-resize.json
+?? outputs/agent-ops-stage2-review.md
+?? outputs/agent-ops-stage2-visual.log
+?? outputs/agent-ops-stage3-baseline-build.log
+?? outputs/agent-ops-stage3-build.log
+?? outputs/agent-ops-stage3-check.log
+?? outputs/agent-ops-stage3-controls.json
+?? outputs/agent-ops-stage3-controls.log
+?? outputs/agent-ops-stage3-css.log
+?? outputs/agent-ops-stage3-harmony.log
+?? outputs/agent-ops-stage3-lifecycle.json
+?? outputs/agent-ops-stage3-lifecycle.log
+?? outputs/agent-ops-stage3-production.json
+?? outputs/agent-ops-stage3-production.log
+?? outputs/agent-ops-stage3-resize.json
+?? outputs/agent-ops-stage3-resize.log
+?? outputs/agent-ops-stage3-review.md
+?? outputs/agent-ops-stage3-showcase.log
+?? outputs/agent-ops-stage3-static.log
+?? outputs/agent-ops-stage3-visual.log
+?? outputs/case-media-repair/
+?? outputs/dounar-motion-sheet.jpg
+?? outputs/garri-motion-sheet.jpg
+?? outputs/ha-motion-sheet.jpg
+?? outputs/home-portrait/
+?? outputs/media-edge-audit/
+?? outputs/pilot-panels-clean-1440.png
+?? outputs/pilot-panels-clean-390.png
+?? outputs/tubik-motion-sheet.jpg
+?? outputs/typography-robert/
+?? outputs/white-screen-after.png
+?? outputs/white-screen-before.png
+?? outputs/white-screen-check.log
+?? outputs/white-screen-home.png
+?? public/fonts/OFL-Onest.txt
+?? public/fonts/onest-cyrillic-wght-normal.woff2
+?? public/fonts/onest-latin-wght-normal.woff2
+?? research/agilefluent-due-diligence/
+?? research/nwork-due-diligence/
+?? research/portfolio-benchmark/case-blueprint/img/
+?? research/portfolio-benchmark/competitive_analysis.md
+?? research/portfolio-benchmark/competitive_analysis_final.md
+?? research/portfolio-benchmark/competitor_features.md
+?? research/portfolio-benchmark/competitor_ux_patterns.md
+?? research/portfolio-benchmark/fishki.md
+?? research/portfolio-benchmark/ha_review.jpg
+?? research/portfolio-benchmark/picks_review_1.jpg
+?? research/portfolio-benchmark/picks_review_2.jpg
+?? research/portfolio-benchmark/plan-chats-draft.md
+?? research/portfolio-benchmark/references-detailed.md
+?? research/portfolio-benchmark/urls-1.txt
+?? research/portfolio-benchmark/urls-f2.txt
+?? research/portfolio-benchmark/urls-f3.txt
+?? research/portfolio-benchmark/urls-frames.txt
+?? research/portfolio-rebuild-2026-10-03/prompts/h-art-direction.md
+?? scripts/check-public-content.mjs
+?? scripts/lib/learn-public-copy.mjs
+?? scripts/og-fonts/OFL-Onest.txt
+?? scripts/og-fonts/Onest-400.ttf
+?? scripts/og-fonts/Onest-500.ttf
+?? scripts/og-fonts/Onest-800.ttf
+?? src/components/IconArrow.astro
+?? src/copy/learn-vet-stage.ts
+?? tasks/logo-refinement/
+?? tasks/portfolio-rebuild/common/base/archive-sha256.txt
+?? tasks/portfolio-rebuild/common/base/common-theme.zip
+?? tasks/portfolio-rebuild/common/base/roundtrip-verification.json
+?? tasks/portfolio-rebuild/common/base/snapshot.log
+?? tasks/portfolio-rebuild/common/build.log
+?? tasks/portfolio-rebuild/common/check.log
+?? tasks/portfolio-rebuild/common/debug-dev.mjs
+?? tasks/portfolio-rebuild/common/harmony.log
+?? tasks/portfolio-rebuild/common/initial-status.txt
+?? tasks/portfolio-rebuild/common/recording/page@146a764ee5efa80aff0eb47894f9ed30.webm
+?? tasks/portfolio-rebuild/common/recording/page@e1d0b637dca1243a5c704b29c527a89b.webm
+?? tasks/portfolio-rebuild/common/review-capture.log
+?? tasks/portfolio-rebuild/common/static-v2.log
+?? tasks/portfolio-rebuild/common/static.log
+?? tasks/portfolio-rebuild/integration/check.log
+?? tasks/portfolio-rebuild/integration/film-common/check.log
+?? tasks/portfolio-rebuild/integration/film-common/clean-check.log
+?? tasks/portfolio-rebuild/integration/film-common/shots/debug-nojs-control.png
+?? tasks/portfolio-rebuild/integration/film-common/shots/debug-nojs-paused.png
+?? tasks/portfolio-rebuild/integration/final/check-final-full.log
+?? tasks/portfolio-rebuild/integration/final/check-full.log
+?? tasks/portfolio-rebuild/integration/final/clean-check-full.log
+?? tasks/portfolio-rebuild/integration/final/correction-f01/clean-check-full.log
+?? tasks/portfolio-rebuild/integration/focus-common/anchor-control.log
+?? tasks/portfolio-rebuild/integration/focus-common/clean-check-full.log
+?? tasks/portfolio-rebuild/integration/focus-common/corrected-three-cycles.json
+?? tasks/portfolio-rebuild/integration/focus-common/corrected-three-cycles.log
+?? tasks/portfolio-rebuild/integration/focus-common/diagnosis.json
+?? tasks/portfolio-rebuild/integration/focus-common/diagnosis.log
+?? tasks/portfolio-rebuild/integration/focus-common/f-build.log
+?? tasks/portfolio-rebuild/integration/focus-common/f-check.log
+?? tasks/portfolio-rebuild/integration/focus-common/f-css.log
+?? tasks/portfolio-rebuild/integration/focus-common/f-transfer-check-full.log
+?? tasks/portfolio-rebuild/integration/focus-common/internal-diagnosis.log
+?? tasks/portfolio-rebuild/integration/focus-common/observer-candidate.json
+?? tasks/portfolio-rebuild/integration/focus-common/observer-candidate.log
+?? tasks/portfolio-rebuild/integration/focus-common/shots/anchor-control-en-1800-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/anchor-control-en-1800-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/anchor-control-en-600-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/anchor-control-en-600-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/anchor-control-ru-1800-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/anchor-control-ru-1800-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/anchor-control-ru-600-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/anchor-control-ru-600-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/baseline-en-1800-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/baseline-en-1800-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/baseline-en-600-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/baseline-ru-600-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/baseline-ru-600-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/corrected-three-cycles-en-1800-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/corrected-three-cycles-en-1800-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/corrected-three-cycles-en-600-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/corrected-three-cycles-en-600-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/corrected-three-cycles-ru-1800-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/corrected-three-cycles-ru-1800-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/corrected-three-cycles-ru-600-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/corrected-three-cycles-ru-600-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/diagnosis-ru-600-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/diagnosis-ru-600-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/internal-diagnosis-ru-600-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/internal-diagnosis-ru-600-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/observer-candidate-ru-600-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/observer-candidate-ru-600-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/style-control-full-en-1800-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/style-control-full-en-1800-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/style-control-full-en-600-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/style-control-full-en-600-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/style-control-full-ru-1800-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/style-control-full-ru-1800-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/style-control-full-ru-600-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/style-control-full-ru-600-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/style-control-ru-600-before.png
+?? tasks/portfolio-rebuild/integration/focus-common/shots/style-control-ru-600-reduce.png
+?? tasks/portfolio-rebuild/integration/focus-common/style-control-full.log
+?? tasks/portfolio-rebuild/integration/focus-common/style-control.json
+?? tasks/portfolio-rebuild/integration/focus-common/style-control.log
+?? tasks/portfolio-rebuild/integration/shell-verification.log
+?? tasks/portfolio-rebuild/integration/wave-1/check.log
+?? tasks/portfolio-rebuild/integration/wave-1/clean-check.log
+?? tasks/portfolio-rebuild/orchestration/
+?? tasks/robert-review-2026-10-07/

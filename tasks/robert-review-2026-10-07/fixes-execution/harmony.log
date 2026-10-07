@@ -1,0 +1,63 @@
+
+> site-portfolio@0.1.0 check:harmony
+> node scripts/harmony-check.mjs --base=http://127.0.0.1:4425 --widths=1440,360 / /ru/ /about/ /ru/about/ /work/agent-ops-console/ /ru/work/agent-ops-console/ /work/partner-portal/ /ru/work/partner-portal/ /work/learn/ /ru/work/learn/ /work/vet-clinic/ /ru/work/vet-clinic/ /work/pawly/ /ru/work/pawly/ /404/ /ru/404/
+
+/ @1440: плашек 0, тезисов 0, подписей и абзацев 0
+/ @360: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/ @1440: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/ @360: плашек 0, тезисов 0, подписей и абзацев 0
+/about/ @1440: плашек 0, тезисов 0, подписей и абзацев 0
+/about/ @360: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/about/ @1440: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/about/ @360: плашек 0, тезисов 0, подписей и абзацев 0
+/work/agent-ops-console/ @1440: плашек 5, тезисов 7, подписей и абзацев 19 · case-agent-ops-console 385 слов, 7 кадров
+/work/agent-ops-console/ @360: плашек 5, тезисов 6, подписей и абзацев 18 · case-agent-ops-console 358 слов, 6 кадров
+/ru/work/agent-ops-console/ @1440: плашек 5, тезисов 7, подписей и абзацев 19 · case-agent-ops-console 312 слов, 7 кадров
+/ru/work/agent-ops-console/ @360: плашек 5, тезисов 6, подписей и абзацев 18 · case-agent-ops-console 293 слов, 6 кадров
+/work/partner-portal/ @1440: плашек 8, тезисов 8, подписей и абзацев 16 · case-partner-portal 376 слов, 12 кадров
+/work/partner-portal/ @360: плашек 8, тезисов 8, подписей и абзацев 16 · case-partner-portal 376 слов, 12 кадров
+/ru/work/partner-portal/ @1440: плашек 8, тезисов 8, подписей и абзацев 16 · case-partner-portal 341 слов, 12 кадров
+/ru/work/partner-portal/ @360: плашек 8, тезисов 8, подписей и абзацев 16 · case-partner-portal 341 слов, 12 кадров
+/work/learn/ @1440: плашек 8, тезисов 7, подписей и абзацев 18 · case-learn 358 слов, 15 кадров
+/work/learn/ @360: плашек 8, тезисов 7, подписей и абзацев 18 · case-learn 358 слов, 13 кадров
+/ru/work/learn/ @1440: плашек 8, тезисов 7, подписей и абзацев 18 · case-learn 323 слов, 15 кадров
+/ru/work/learn/ @360: плашек 8, тезисов 7, подписей и абзацев 18 · case-learn 323 слов, 13 кадров
+/work/vet-clinic/ @1440: плашек 8, тезисов 7, подписей и абзацев 11 · case-vet-clinic 289 слов, 10 кадров
+/work/vet-clinic/ @360: плашек 8, тезисов 7, подписей и абзацев 11 · case-vet-clinic 289 слов, 8 кадров
+/ru/work/vet-clinic/ @1440: плашек 8, тезисов 7, подписей и абзацев 11 · case-vet-clinic 241 слов, 10 кадров
+/ru/work/vet-clinic/ @360: плашек 8, тезисов 7, подписей и абзацев 11 · case-vet-clinic 241 слов, 8 кадров
+/work/pawly/ @1440: плашек 9, тезисов 7, подписей и абзацев 12 · case-pawly 293 слов, 14 кадров
+/work/pawly/ @360: плашек 9, тезисов 7, подписей и абзацев 12 · case-pawly 293 слов, 14 кадров
+/ru/work/pawly/ @1440: плашек 9, тезисов 7, подписей и абзацев 12 · case-pawly 243 слов, 14 кадров
+/ru/work/pawly/ @360: плашек 9, тезисов 7, подписей и абзацев 12 · case-pawly 243 слов, 14 кадров
+/404/ @1440: плашек 0, тезисов 0, подписей и абзацев 0
+/404/ @360: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/404/ @1440: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/404/ @360: плашек 0, тезисов 0, подписей и абзацев 0
+
+✗ Нарушений: 25
+  [тезис] /work/agent-ops-console/ @360 — строка из одного слова «promises»: «Review the agent’s promises»
+  [тезис] /ru/work/agent-ops-console/ @1440 — строка из одного слова «подтверждения»: «Обещание требует подтверждения»
+  [тезис] /ru/work/agent-ops-console/ @360 — строка из одного слова «Проверять»: «Проверять обещания агента»
+  [тезис] /ru/work/agent-ops-console/ @360 — строка из одного слова «Выплату»: «Выплату одобряет человек»
+  [тезис] /ru/work/agent-ops-console/ @360 — строка из одного слова «Прототип», «принят»: «Прототип принят»
+  [тезис] /work/partner-portal/ @360 — строка из одного слова «specification»: «Import and manual entry feed a shared specification»
+  [тезис] /ru/work/partner-portal/ @1440 — строка из одного слова «Коммерческий»: «Коммерческий редизайн выпущен»
+  [тезис] /ru/work/partner-portal/ @360 — строка из одного слова «Состояние», «подсказывает»: «Состояние подсказывает следующий шаг»
+  [тезис] /ru/work/partner-portal/ @360 — строка из одного слова «Коммерческий», «редизайн», «выпущен»: «Коммерческий редизайн выпущен»
+  [абзац] /work/learn/ — 37 > 35: «The archive leads with courses, ratings and rewards. Returning to my work at DSSL / TRASSIR, I reframed entry around a question or programme, with the answer open before sign-in. The screens use invented account and document data.»
+  [тезис] /work/learn/ @360 — строка из одного слова «before»: «Show the answer before asking for trust»
+  [абзац] /ru/work/learn/ — 36 > 35: «В архивном каталоге сначала идут курсы, рейтинги и награды. Я вернулся к своей работе в DSSL / TRASSIR и сделал входом рабочий вопрос или программу: ответ можно прочитать до авторизации. Данные аккаунтов и документов на экранах вымышлены.»
+  [тезис] /ru/work/learn/ @1440 — строка из одного слова «Справочник»: «Справочник и программа связаны»
+  [тезис] /ru/work/learn/ @360 — строка из одного слова «Справочник», «используют»: «Справочник и программа используют общий материал»
+  [тезис] /ru/work/learn/ @360 — строка из одного слова «подтвердить»: «Завершение нужно подтвердить»
+  [тезис] /ru/work/learn/ @360 — строка из одного слова «Справочник», «связаны»: «Справочник и программа связаны»
+  [абзац] /work/vet-clinic/ — 38 > 35: «The clinic is under NDA; names and clinical data shown here are invented. I separated a useful trace from the complete record. Thirty seconds between patients was the original constraint, not a measured speed of the new interface.»
+  [тезис] /work/vet-clinic/ @360 — строка из одного слова «Publication», «preserves»: «Publication preserves the owner’s copy»
+  [тезис] /work/vet-clinic/ @360 — строка из одного слова «connects»: «The visit connects all three roles»
+  [тезис] /ru/work/vet-clinic/ @360 — строка из одного слова «След»: «След за время паузы»
+  [тезис] /ru/work/vet-clinic/ @360 — строка из одного слова «Публикация», «сохраняет»: «Публикация сохраняет выписку владельца»
+  [тезис] /ru/work/vet-clinic/ @360 — строка из одного слова «Результаты», «приёма», «доступны»: «Результаты приёма доступны трём ролям»
+  [абзац] /work/pawly/ — 40 > 35: «An owner at work hands over a pet, sometimes the keys. I framed trust as inspectable evidence: who can handle this dog, when they should return, and what has actually been received. Characters and scenario data shown here are invented.»
+  [тезис] /ru/work/pawly/ @360 — строка из одного слова «начислено»: «За прогулку начислено 779 рублей»
+  [тезис] /ru/work/pawly/ @360 — строка из одного слова «Цепочка,», «проверить»: «Цепочка, которую можно проверить»

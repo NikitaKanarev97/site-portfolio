@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "review": "H-art-01",
+  "reviewedAt": "2026-10-04T18:41:41+03:00",
+  "reviewerThreadId": "01a103b5-7549-7211-8683-f14b03d9beef",
+  "executorThreadId": "01a10409-651d-7731-bb38-28194724895e",
+  "hostId": "local",
+  "codeRef": "8a74ed3692d23d0d14014c038e0c5d6d5754238d",
+  "evidenceRef": "df1da7ef044bda231049f1f48e899050e71ff611",
+  "baseRef": "c0c69040801d60bcfc836f6728f2ae806911be1d",
+  "checkout": "C:/Users/kanar/.codex/worktrees/portfolio-art-direction-h/Site-portfolio",
+  "branch": "codex/portfolio-art-direction-h-2026-10-04",
+  "preview": "http://127.0.0.1:4394/",
+  "gallery": "http://127.0.0.1:4396/art-review.html",
+  "verdict": "changes_requested",
+  "artisticAccepted": false,
+  "answer": "Ещё нет: вход в главную, разрозненный Learn и повтор Portal/Vet не позволяют уверенно принять весь сайт на уровне референсов.",
+  "findings": [
+    {
+      "id": "H-ART-01",
+      "scope": ["Home EN/RU desktop/mobile"],
+      "problem": "Settled RU 390x844 opening contains no product material and only four visible quick entries; Pawly is below viewport. Report first-window claim is inaccurate.",
+      "evidence": "shots/after/ru-390-home-opening.png",
+      "required": "Compose a strong legible initial impression with actual UI/material and compact access to all five stories; preserve facts and contact actions; verify and accurately describe visibility."
+    },
+    {
+      "id": "H-ART-02",
+      "scope": ["Home Learn", "Learn cover EN/RU desktop/mobile"],
+      "problem": "Native article header strip and tall passport remain disconnected on a large blue field; the one-material/two-context thesis is not expressed by the composition.",
+      "evidence": "shots/scenes/work-learn.png",
+      "video": "recordings/after/en-1440-home-walkthrough.webm",
+      "timeSeconds": 10.5,
+      "required": "Create a coherent scene showing the material and its two real contexts; preserve native UI, typography, edges and readable meaningful content."
+    },
+    {
+      "id": "H-ART-03",
+      "scope": ["Home Vet", "Vet cover EN/RU desktop/mobile"],
+      "problem": "Vet repeats Portal composition: oversized number left and native screen right. Shared colored-card framing weakens distinct project rhythm.",
+      "evidence": "shots/scenes/work-vet-clinic.png",
+      "video": "recordings/after/en-1440-home-walkthrough.webm",
+      "timeSeconds": 13.5,
+      "required": "Keep Portal source-row scene; give Vet a distinct real cross-role visit composition; retain 30 seconds as an original constraint rather than measured performance."
+    }
+  ],
+  "preserve": ["Agent Ops real UI interlock, strong cover and checkpoint", "Pawly photo and complete report material", "Learn native edge correction", "accepted source facts and DS mirrors"],
+  "independentScope": {
+    "liveDesktop": ["Home EN", "Agent Ops EN", "Portal EN", "Learn EN", "Vet EN", "Pawly EN", "Home RU", "Learn context disclosure interaction"],
+    "nativePlayback": ["Home EN", "Home RU"],
+    "recordingContactSheets": 12,
+    "continuouslyWatchedAllTwelve": false,
+    "liveMobileVerified": false,
+    "mobileEvidence": "Saved canonical G captures and recordings",
+    "sourceAndDsHashChecks": 11,
+    "sourceAndDsHashMismatches": 0,
+    "physicalDevicesVerified": false,
+    "multipleBrowserEnginesVerified": false
+  },
+  "technicalEvidenceRead": {
+    "historicalProfilesBeforeFinalDelta": 144,
+    "historicalLifecycleBeforeFinalDelta": 12,
+    "homeRetestProfiles": 24,
+    "homeRetestLifecycle": 2,
+    "finalScopedProfiles": 60,
+    "captures": 24,
+    "pngFiles": 60,
+    "walkthroughs": 12,
+    "reportedFailures": 0,
+    "fullSuiteIndependentlyRerun": false
+  },
+  "report": "D:/Claude-projects/Site-portfolio/tasks/portfolio-rebuild/orchestration/review/h-art-01/review.md",
+  "nextAction": "One authorized corrective continuation to same idle G; independent review after new handoff.",
+  "chainComplete": false,
+  "automationPauseAuthorizedNow": false
+}

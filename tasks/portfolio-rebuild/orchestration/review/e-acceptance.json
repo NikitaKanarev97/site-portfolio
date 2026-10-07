@@ -1,0 +1,33 @@
+{
+  "stage": "E",
+  "status": "accepted",
+  "ref": "a3641e8203dc250dc520ac494eec7fea0cf5f965",
+  "caseCommits": [
+    "d3bbbbd78fb3a75c87d3f6117f91d1606e462932",
+    "a3641e8203dc250dc520ac494eec7fea0cf5f965"
+  ],
+  "commonDelta": "433c80bcba29eda2060067570e9f8ec2087a2a91",
+  "importedCommonRef": "129b96f5bebcb9f11c93a42b2f78617b3b217d9c",
+  "branch": "codex/pawly-rebuild-e",
+  "checkout": "C:/Users/kanar/.codex/worktrees/pawly-rebuild-e/Site-portfolio",
+  "report": "tasks/portfolio-rebuild/pawly/report.md",
+  "closedRequests": [
+    "E-G-01",
+    "E-G-02",
+    "E-G-03"
+  ],
+  "review": [
+    "Initial static review retained in e-initial-review.json; shared patch acceptance in g-film-acceptance.json.",
+    "Actual final case diff only moves original native film/poster into second return-boundary step, adds clear play explanation and removes facts anchor/companion; case scope stays intact.",
+    "34 updated page profiles and 6 native playback + 2 lifecycle profiles: zero failures. Six playback rows reach original 10.966667s ending with decoded MP4 frames, including no-JS.",
+    "Actual integrity guard checks six imported files against accepted common Git blobs, denies other shared edits; own case delta has no shared files. Worktree clean.",
+    "Visually opened EN1440 middle step, RU no-JS paused film, RU ended report and mobile final crop; film source and static complete report remain available. Native controls overlay bottom of film is documented.",
+    "Fresh check/build/CSS/harmony pass. Narrative 329EN/279RU. Sources/media remain unchanged; old findings preserved as history."
+  ],
+  "limits": [
+    "Local Chromium only; physical hidden tab/other browsers/devices and new human validation not certified.",
+    "No-JS native playback works; offscreen/visibility lifecycle enhancement requires JS.",
+    "UI fixtures and prior 17-route synthetic QA not commercial impact. Native controls overlap lower video pixels; separate static end report is whole.",
+    "G-final should integrate only both case commits; imported common129b96f duplicates root433c80b and must not be reapplied."
+  ]
+}

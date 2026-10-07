@@ -1,0 +1,86 @@
+[
+  {
+    name: 'Visible video autoplays',
+    passed: true,
+    evidence: { paused: false, connected: true, ready: 4 }
+  },
+  {
+    name: 'Manual pause',
+    passed: true,
+    evidence: { paused: true, connected: true, ready: 4 }
+  },
+  {
+    name: 'Manual pause survives preference change',
+    passed: true,
+    evidence: { paused: true, connected: true, ready: 4 }
+  },
+  {
+    name: 'Live reduce stops autoplay',
+    passed: true,
+    evidence: { paused: true, connected: true, ready: 4 }
+  },
+  {
+    name: 'Explicit play in reduce',
+    passed: true,
+    evidence: { paused: false, connected: true, ready: 4 }
+  },
+  {
+    name: 'Covered sticky video pauses',
+    passed: true,
+    evidence: { paused: true, connected: true, ready: 4 }
+  },
+  {
+    name: 'Navigation stops detached video',
+    passed: true,
+    evidence: { paused: true, connected: false }
+  },
+  {
+    name: 'Focus keeps marquee moving',
+    passed: true,
+    evidence: 'matrix(1, 0, 0, 1, -27.6045, 0)'
+  },
+  {
+    name: 'Marquee moves after viewport re-entry',
+    passed: true,
+    evidence: 'matrix(1, 0, 0, 1, -56.441, 0)'
+  },
+  {
+    name: 'Blur resumes marquee',
+    passed: true,
+    evidence: 'matrix(1, 0, 0, 1, -99.4455, 0)'
+  },
+  {
+    name: 'Hover keeps marquee moving',
+    passed: true,
+    evidence: 'matrix(1, 0, 0, 1, -101.409, 0)'
+  },
+  {
+    name: 'Next case has no pause controls',
+    passed: true,
+    evidence: 0
+  },
+  {
+    name: 'Reduced motion keeps title still',
+    passed: true,
+    evidence: 'none'
+  },
+  {
+    name: 'Full motion resumes automatically',
+    passed: true,
+    evidence: 'matrix(1, 0, 0, 1, -13.475, 0)'
+  },
+  {
+    name: 'Title links to next case',
+    passed: true,
+    evidence: 'http://127.0.0.1:4330/preview/partner-portal-pilot/'
+  },
+  {
+    name: 'Failed formats return to poster',
+    passed: true,
+    evidence: {
+      poster: '/media/case-agent-ops/clip-review-decision-poster.webp',
+      hiddenControl: true
+    }
+  },
+  { name: 'No page errors', passed: true, evidence: [] }
+]

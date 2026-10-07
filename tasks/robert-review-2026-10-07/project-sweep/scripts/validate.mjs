@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';import path from 'node:path';import assert from 'node:assert/strict';import {root} from './sweep.mjs';
+const data=JSON.parse(await fs.readFile(path.join(root,'logs/sweep.json'),'utf8')),summary=JSON.parse(await fs.readFile(path.join(root,'logs/issues.json'),'utf8'));
+const opened=(await fs.readFile(path.join(root,'logs/images-opened.txt'),'utf8')).trim().split(/\r?\n/);
+assert.equal(data.length,28);assert.equal(new Set(data.map(d=>`${d.route}/${d.loc}/${d.width}`)).size,28);assert(data.every(d=>d.status===(d.route==='404'?404:200)));assert.equal(opened.length,14);assert(opened.length<=35);assert.equal(new Set(opened).size,opened.length);
+const files=['00-setup.md','01-auto.md','02-sources.md','03-copy.md','04-visual.md','ISSUES.md'];for(const file of files)assert((await fs.stat(path.join(root,file))).size>0);
+const setup=(await fs.readFile(path.join(root,'00-setup.md'),'utf8')).split('\n').length,auto=(await fs.readFile(path.join(root,'01-auto.md'),'utf8')).split('\n').length;assert(setup<=40);assert(auto<=200);
+for(const file of opened)await fs.access(path.join(root,'evidence',file));
+assert.equal(Object.keys(summary.counts).length,21);assert.equal(summary.issues.length,21);assert.equal(summary.issues.filter(i=>i.owner==='да').length,11);assert.equal(summary.issues.filter(i=>i.confidence.startsWith('низкая')).length,3);
+const before=await fs.readFile(path.join(root,'logs/git-before.txt'),'utf8'),after=await fs.readFile(path.join(root,'logs/git-after.txt'),'utf8');assert.equal(before,after);
+const result={passed:true,states:data.length,normal200:data.filter(d=>d.route!=='404').length,error404:data.filter(d=>d.route==='404').length,stageFiles:files,setupLines:setup,autoLines:auto,imagesOpened:opened.length,classes:Object.keys(summary.counts).length,issues:summary.issues.length,priorities:summary.priorities,ownerRequired:summary.owners,lowConfidence:3,statusIdentical:true};await fs.writeFile(path.join(root,'logs/final-validation.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result));

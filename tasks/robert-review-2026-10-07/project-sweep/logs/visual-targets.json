@@ -1,0 +1,282 @@
+[
+  {
+    "id": "V01",
+    "route": "about",
+    "loc": "en",
+    "width": 1440,
+    "rect": {
+      "x": 70,
+      "y": 100,
+      "w": 850,
+      "h": 550
+    },
+    "selector": "intro: index + portrait",
+    "live": false
+  },
+  {
+    "id": "V02",
+    "route": "about",
+    "loc": "en",
+    "width": 1440,
+    "rect": {
+      "x": 70,
+      "y": 1090,
+      "w": 900,
+      "h": 450
+    },
+    "selector": "chapter number + divider",
+    "live": false
+  },
+  {
+    "id": "V03",
+    "route": "work/agent-ops-console",
+    "loc": "en",
+    "width": 1440,
+    "rect": {
+      "x": 65,
+      "y": 110,
+      "w": 900,
+      "h": 600
+    },
+    "selector": "cover CAPS + panel axes",
+    "live": false
+  },
+  {
+    "id": "V04",
+    "route": "work/agent-ops-console",
+    "loc": "en",
+    "width": 1440,
+    "rect": {
+      "x": 80,
+      "y": 1290,
+      "w": 900,
+      "h": 560
+    },
+    "selector": "heading gap + numbers glyph",
+    "live": false
+  },
+  {
+    "id": "V05",
+    "route": "work/agent-ops-console",
+    "loc": "en",
+    "width": 1440,
+    "rect": {
+      "x": 150,
+      "y": 5290,
+      "w": 900,
+      "h": 600
+    },
+    "selector": "evidence white perimeter",
+    "live": false
+  },
+  {
+    "id": "V06",
+    "route": "work/partner-portal",
+    "loc": "en",
+    "width": 1440,
+    "rect": {
+      "x": 70,
+      "y": 1140,
+      "w": 900,
+      "h": 500
+    },
+    "selector": "facts reconstruction + opening gap",
+    "live": false
+  },
+  {
+    "id": "V07",
+    "route": "work/partner-portal",
+    "loc": "en",
+    "width": 1440,
+    "rect": {
+      "x": 130,
+      "y": 9380,
+      "w": 900,
+      "h": 580
+    },
+    "selector": "specimen font/table clutter",
+    "live": false
+  },
+  {
+    "id": "V08",
+    "route": "work/learn",
+    "loc": "en",
+    "width": 1440,
+    "rect": {
+      "x": 70,
+      "y": 110,
+      "w": 900,
+      "h": 600
+    },
+    "selector": "cover explanations + status",
+    "live": false
+  },
+  {
+    "id": "V09",
+    "route": "work/learn",
+    "loc": "en",
+    "width": 1440,
+    "rect": {
+      "x": 70,
+      "y": 4060,
+      "w": 900,
+      "h": 550
+    },
+    "selector": "routes caption + white edges",
+    "live": false
+  },
+  {
+    "id": "V10",
+    "route": "work/vet-clinic",
+    "loc": "en",
+    "width": 1440,
+    "rect": {
+      "x": 70,
+      "y": 4350,
+      "w": 900,
+      "h": 590
+    },
+    "selector": "ONE VISIT / 01 VETERINARIAN TABLET / caption",
+    "live": false
+  },
+  {
+    "id": "V11",
+    "route": "work/pawly",
+    "loc": "en",
+    "width": 1440,
+    "rect": {
+      "x": 70,
+      "y": 3740,
+      "w": 900,
+      "h": 600
+    },
+    "selector": "return boundary balance",
+    "live": false
+  },
+  {
+    "id": "V12",
+    "route": "work/pawly",
+    "loc": "en",
+    "width": 1440,
+    "rect": {
+      "x": 130,
+      "y": 8220,
+      "w": 900,
+      "h": 580
+    },
+    "selector": "small specimen labels",
+    "live": false
+  },
+  {
+    "id": "V13",
+    "route": "work/vet-clinic",
+    "loc": "en",
+    "width": 1440,
+    "rect": {
+      "x": 125,
+      "y": 1900,
+      "w": 900,
+      "h": 600
+    },
+    "selector": "queue gray field + nested white frame",
+    "live": false
+  },
+  {
+    "id": "V14",
+    "route": "work/vet-clinic",
+    "loc": "en",
+    "width": 1440,
+    "rect": {
+      "x": 130,
+      "y": 5250,
+      "w": 900,
+      "h": 580
+    },
+    "selector": "invoice vs owner mass",
+    "live": false
+  },
+  {
+    "id": "M01",
+    "route": "work/pawly",
+    "loc": "en",
+    "width": 360,
+    "rect": {
+      "x": 0,
+      "y": 7799,
+      "w": 360,
+      "h": 520
+    },
+    "selector": "a.case-screen__open",
+    "live": false
+  },
+  {
+    "id": "M02",
+    "route": "work/learn",
+    "loc": "ru",
+    "width": 360,
+    "rect": {
+      "x": 0,
+      "y": 9357,
+      "w": 360,
+      "h": 520
+    },
+    "selector": "a.case-screen__open",
+    "live": false
+  },
+  {
+    "id": "M03",
+    "route": "404",
+    "loc": "en",
+    "width": 360,
+    "rect": {
+      "x": 0,
+      "y": 350,
+      "w": 360,
+      "h": 520
+    },
+    "selector": "a.ds-link.ds-link--arrow",
+    "live": false
+  },
+  {
+    "id": "M04",
+    "route": "work/learn",
+    "loc": "ru",
+    "width": 360,
+    "rect": {
+      "x": 0,
+      "y": 90,
+      "w": 360,
+      "h": 550
+    },
+    "selector": "RU cover wrapping",
+    "live": false
+  },
+  {
+    "id": "M05",
+    "route": "about",
+    "loc": "ru",
+    "width": 360,
+    "rect": {
+      "x": 0,
+      "y": 95,
+      "w": 360,
+      "h": 550
+    },
+    "selector": "RU headline and index",
+    "live": false
+  },
+  {
+    "id": "M06",
+    "route": "work/vet-clinic",
+    "loc": "ru",
+    "width": 360,
+    "rect": {
+      "x": 0,
+      "y": 90,
+      "w": 360,
+      "h": 550
+    },
+    "selector": "RU cover wrapping",
+    "live": false
+  }
+]

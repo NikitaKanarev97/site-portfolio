@@ -1,0 +1,400 @@
+---
+/**
+ * Home — Site-portfolio, маршрут /
+ *
+ * Composition map: ds/screens/home.md. Вайрфреймы: ia/wireframes/home.md
+ * (десктоп) и ia/wireframes/mobile-home.md (самостоятельный носитель, не
+ * сжатие десктопа — SCR-09, TECH-08).
+ *
+ * Экран не изобретает сущностей: всё собрано из каталога ds/components.md
+ * и паттернов ds/patterns.md. Тексты — src/copy/home.ts, сквозные —
+ * src/copy/site.ts. Оболочка, ContactBlock и Footer — PageShell.
+ *
+ * Порядок блоков — это и есть предмет проектирования. Скрининговый пакет
+ * (роль, специализация, право на работу, CV, email, вход в кейс) обязан
+ * закрыться в первых 2160 px на десктопе и 1624 px на мобильном
+ * (SCR-02, SCR-06): его закрывает Hero, вход в кейс повторяется обложкой
+ * следом. DevelopmentStrip стоит ниже всех продуктовых блоков (DEV-03).
+ *
+ * Движение — карта ds/motion-concept.md §7, один в один. Hero играет
+ * вступительным тактом по fonts.ready, всё остальное — по ScrollTrigger.
+ * Анимаций здесь нет: экран объявляет движение атрибутами.
+ */
+import PageShell from '../layouts/PageShell.astro';
+import MediaFrame from '../components/MediaFrame.astro';
+import FeaturedCase from '../components/FeaturedCase.astro';
+import MetaList from '../components/MetaList.astro';
+import ProjectDialog from '../components/ProjectDialog.astro';
+import ProseBlock from '../components/ProseBlock.astro';
+import SectionHead from '../components/SectionHead.astro';
+import TextLink from '../components/TextLink.astro';
+import CopyEmail from '../components/CopyEmail.astro';
+import CaseScreen from '../components/CaseScreen.astro';
+import { agentOpsStory } from '../copy/cases/agent-ops-console';
+import { agentOpsStoryRu } from '../copy/ru/cases/agent-ops-console';
+import { home as homeEn } from '../copy/home.ts';
+import { homeRu } from '../copy/ru/home.ts';
+import { site as siteEn, type SiteCopy } from '../copy/site.ts';
+import { siteRu } from '../copy/ru/site.ts';
+
+interface Props {
+  locale?: 'en' | 'ru';
+}
+
+const { locale = 'en' } = Astro.props;
+const home = locale === 'ru' ? homeRu : homeEn;
+const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
+const agent = locale === 'ru' ? agentOpsStoryRu : agentOpsStory;
+const checkpoint = agent.blocks.find(b=>b.type==='steps');
+if (!checkpoint || checkpoint.type!=='steps') throw new Error('Agent checkpoint is required');
+const heroProof = checkpoint.payload.items[3].shot;
+---
+
+<PageShell
+  title={home.meta.title}
+  description={home.meta.description}
+  lang={locale}
+  current={locale === 'ru' ? '/ru/' : '/'}
+  siteCopy={site}
+  ogCard={locale === 'ru' ? 'default-ru' : 'default'}
+>
+  {/*
+    Hero. Вступительный такт: имя, роль, специализация и авторизация идут
+    автоматическим шагом каскада, ряд действий — явной позицией 0.4.
+  */}
+  <section class="ds-container ds-section hero" data-motion-intro>
+    <p class="ds-meta-sm hero__name" data-motion="fade"><span>{home.hero.name}</span><span>{home.hero.role}</span></p>
+
+    <h1 class="ds-display-6xl hero__role ds-flow-heading">
+      {home.hero.headline.map(line => <span data-motion="reveal-text">{line}</span>)}
+    </h1>
+
+    <nav class="work-index" aria-label={locale === 'ru' ? 'Пять продуктовых работ' : 'Five product design projects'}>
+      {home.featured.items.map((item, i) => <a href={`#work-${item.href.split('/').filter(Boolean).at(-1)}`} class="ds-body-sm">
+        <span class="ds-meta-xs" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>{item.title}<span aria-hidden="true">↓</span>
+      </a>)}
+    </nav>
+
+    <div class="hero__proof">
+      <p class="ds-meta-xs"><a href={home.featured.items[0].href}>{home.hero.proofLabel}<span aria-hidden="true">↗</span></a></p>
+      <CaseScreen item={heroProof} loading="eager" caption={home.hero.proofCaption} href={home.featured.items[0].href} linkLabel={locale === 'ru' ? 'Читать кейс Agent Ops' : 'Read the Agent Ops case'} />
+    </div>
+
+    <div class="hero__copy">
+    <ProseBlock motion={false} class="hero__spec">
+      <p data-motion="reveal-text">{home.hero.specialization}</p>
+    </ProseBlock>
+
+    {/*
+      Право на работу. Максимум две строки на 360 px — единственная строка
+      сайта с жёстким лимитом по числу строк (ia/wireframes/mobile-home.md).
+    */}
+    <p class="ds-body-base hero__authorization" data-motion="reveal-text">
+      {home.hero.authorization}
+    </p>
+
+    <div class="hero__actions" data-motion="fade" data-motion-at="0.4">
+      <TextLink href="#work" type="arrow">{home.hero.caseEntry}</TextLink>
+      <TextLink href={locale === 'ru' ? '/cv-ru.pdf' : '/cv.pdf'}>{home.hero.cv}</TextLink>
+      <CopyEmail
+        email={site.contact.email}
+        appearance="action"
+        label={site.contact.copyLabel}
+        hint={site.contact.copyHint}
+        copiedLabel={site.contact.copiedLabel}
+        announce={site.contact.announce}
+        fallbackAnnounce={site.contact.fallbackAnnounce}
+      />
+    </div>
+    </div>
+  </section>
+
+  {/*
+    FeaturedCase — отдельные переходы в кейс и увеличение каждого снимка.
+
+    Все пять принятых работ открыты. Обложки берут реальные кадры из stories.
+  */}
+  <section class="ds-container ds-section featured" id="work">
+    <p class="ds-meta-xs featured__eyebrow ds-flow-eyebrow">{home.featured.eyebrow}</p>
+
+    <ol class="featured__list">
+      {home.featured.items.map((item, index) => (
+        <li><FeaturedCase item={item} index={index} locale={locale} /></li>
+      ))}
+    </ol>
+  </section>
+
+  {/*
+    Секция WorksList снята 2026-08-27 вместе с `home.works` — обоснование
+    там же и в ds/screens/case-agent-ops.md. В ней оставалась одна запись,
+    RUUN, чей кейс решено не писать; секция без записей теряет предмет, а
+    пустая секция ради компонента не заводится (TECH-15). `WorkRow` живёт
+    в каталоге и в /kit, носителей на страницах продукта у него больше нет.
+  */}
+
+  {/*
+    DevelopmentStrip. Ниже всех продуктовых блоков, заголовок заметно мельче
+    заголовка Selected work — это вес блока, а не оформление (DEV-03).
+    Мобильная форма — не та же карточка в другом размере, а горизонтальная
+    строка с миниатюрой: перенос десктопной сетки даёт 87% площади обложки
+    против лимита в четверть (арифметика в ds/patterns.md §DevelopmentCard).
+
+    Описания сборок в полосу не выложены, и это не экономия места: четыре
+    описания здесь ломают DEV-03. Они живут в ProjectDialog ниже — вес
+    страницы от них не меняется ни на пиксель. Замерено после сборки:
+    21,8% на 1440, 14,7% на 375, 16,1% на 360.
+  */}
+  <section class="ds-container ds-section dev">
+    <div class="dev__head" data-motion-group data-motion-stagger="tight">
+      <SectionHead size="sm">{home.development.heading}</SectionHead>
+      <ProseBlock class="dev__lead">
+        <p>{home.development.lead}</p>
+      </ProseBlock>
+    </div>
+
+    <ul class="dev__list" data-motion-group data-motion-stagger="tight">
+      {
+        home.development.items.map((item) => (
+          <li>
+            {/*
+              Карточка — кнопка, а не ссылка: она открывает разбор, а не
+              уводит на сайт. Живая ссылка стоит внутри ProjectDialog —
+              вложить её сюда нельзя, это две цели фокуса подряд (запрет
+              ds/patterns.md §FeaturedCaseCover). Название кнопки собрано
+              из надписи и имени сборки: четыре «Details» подряд в списке
+              ссылок скринридера не различаются между собой.
+            */}
+            <a href={item.href}
+              class="dev__link ds-pressable"
+              data-dialog-open={`dev-${item.slug}`}
+              aria-label={`${home.development.openLabel} ${home.development.openHint} ${item.name}`}
+            >
+              {/*
+                ratio=wide — вариант ДС под Webflow-сборки. Кадры сняты в
+                16:9 нормой scripts/shoot-webflow-frames.mjs: рамка ничего
+                не режет, потому что режет уже съёмка — по границе первого
+                экрана сборки, а не по краю окна. До 2026-08-25 здесь стоял
+                natural под кадры 16:10, и он прятал ошибку съёмки, а не
+                решал её. Alt пустой намеренно: описание кадра живёт в
+                разборе, а сама карточка названа целиком.
+              */}
+              <MediaFrame
+                src={item.preview}
+                ratio="wide"
+                alt=""
+                counterScale={false}
+                reveal={false}
+                class="dev__preview"
+              />
+
+              <div class="dev__body">
+                <h3 class="ds-heading-xl dev__name">{item.name}</h3>
+
+                <MetaList
+                  items={[
+                    {
+                      term: home.development.roleLabel,
+                      value: home.development.roleValue,
+                      tone: 'strong',
+                    },
+                  ]}
+                  layout="stacked"
+                  class="dev__role"
+                />
+              </div>
+
+              <span class="dev__cta ds-meta-xs" aria-hidden="true">
+                {home.development.openLabel}
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  {/*
+    Разборы сборок — по узлу на сборку, вне полосы. Стоят после секции, а не
+    внутри <ul>: showModal() уводит окно в top layer независимо от места в
+    DOM, а список из четырёх строк остаётся списком из четырёх строк.
+    Обоснование самого окна — ds/components.md §ProjectDialog.
+  */}
+  {
+    home.development.items.map((item) => (
+      <ProjectDialog
+        id={`dev-${item.slug}`}
+        title={item.name}
+        lead={item.summary}
+        body={item.body}
+        meta={[
+          { term: home.development.roleLabel, value: home.development.roleValue, tone: 'strong' },
+          { term: home.development.builtLabel, value: item.stack },
+        ]}
+        media={{ src: item.preview, alt: item.previewAlt }}
+        action={{ href: item.href, label: home.development.liveLabel }}
+        closeLabel={home.development.closeLabel}
+      />
+    ))
+  }
+
+  {/* AboutShort. Портрета здесь нет: он живёт на /about и не на первом экране. */}
+  <section class="ds-container ds-section about" data-motion="fade">
+    <SectionHead size="lg" reveal={false}>{home.about.heading}</SectionHead>
+
+    <ProseBlock motion={false} class="about__body">
+      <p>{home.about.body}</p>
+    </ProseBlock>
+
+    <TextLink href={home.about.href} type="arrow">{home.about.link}</TextLink>
+  </section>
+</PageShell>
+
+<style>
+  :global(main:has(> .hero)) { padding-block-start:var(--flow-text); }
+  .hero { display:grid; gap:var(--space-4); }
+  .hero > *, .hero > .hero__role, .hero__copy > *, .hero__copy > :global(.hero__spec) { margin-block-start:0; }
+  .hero__copy { display:grid; gap:var(--flow-text); align-content:start; }
+  .hero__name { display:flex; flex-wrap:wrap; justify-content:space-between; gap:var(--space-2) var(--space-4); color:var(--text-meta); }
+  .hero__role { color:var(--text-default); }
+  .hero__role > span { display:block; }
+  .hero__role > span:last-child { color:var(--text-link); }
+  .hero__authorization { color:var(--text-subtle); max-inline-size:var(--measure-text); }
+  .hero__proof { display:grid; gap:var(--space-3); color:var(--text-default); text-decoration:none; min-inline-size:0; }
+  .hero__proof p { margin:0; }
+  .hero__proof > p a { display:flex; gap:var(--space-4); justify-content:space-between; color:inherit; text-decoration:none; }
+  .hero__actions { display:grid; grid-template-columns:1fr 1fr; gap:var(--space-3); }
+  .hero__actions > :global(*) { display:flex; align-items:center; min-block-size:var(--space-12); }
+  .hero__actions > :global(.copy-email--action) { grid-column:1 / -1; align-items:flex-start; }
+  .featured { margin-block-start:var(--flow-group); }
+  .work-index { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 var(--space-4); border-block:var(--border-width) solid var(--border-default); }
+  .work-index a { display:flex; align-items:center; gap:var(--space-2); min-block-size:var(--space-12); color:var(--text-default); text-decoration:none; }
+  .work-index a > span:last-child { margin-inline-start:auto; }
+  .work-index a:active { color:var(--text-link-pressed); }
+  @media (--can-hover) { .work-index a:hover { color:var(--text-link-hover); } }
+  @media (--bp-md) { .work-index { grid-template-columns:repeat(5,minmax(0,1fr)); gap:var(--space-4); } }
+  @media (--bp-lg) {
+    .hero { grid-template-columns:4fr 6fr; gap:var(--space-6) var(--space-16); }
+    .hero__name, .hero__role, .work-index { grid-column:1 / -1; }
+    .hero__role { padding-block:var(--space-4); font-size:var(--size-5xl); }
+    .hero__role > span:last-child { text-align:right; }
+    .hero__proof { grid-column:2; grid-row:4; align-self:start; }
+    .hero__copy { grid-column:1; grid-row:4; }
+    .hero__actions { display:flex; flex-wrap:wrap; gap:var(--space-4) var(--space-6); align-items:flex-start; align-self:start; }
+  }
+  @media (--bp-xl) { .hero__role { font-size:var(--size-6xl); } }
+
+  /* Отступ под eyebrow задаёт ds-flow-eyebrow на нём самом. */
+  .featured__eyebrow {
+    color: var(--text-meta);
+  }
+
+  .featured__list { display: grid; gap: var(--section-gap); }
+  .featured > .featured__list { margin-block-start: var(--flow-node); }
+
+  /* ---------------------------------------------------------------- *
+   * WorksList                                                         *
+   * ---------------------------------------------------------------- */
+
+  /* Заголовок → лид внутри обёртки каскада и обёртка → перечень идут
+     шкалой: ds-flow-heading на SectionHead и умолчание секции. Двух
+     правил, стоявших здесь до 2026-08-24, не осталось — они и давали
+     на главной 64 там, где на /about выходило 48. */
+
+  /* ---------------------------------------------------------------- *
+   * DevelopmentStrip                                                  *
+   * ---------------------------------------------------------------- */
+
+  /* Мобильная форма — четыре строки с миниатюрой. */
+  .dev__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Карточка — кнопка, и вид контрола с неё снимается целиком: она обязана
+     выглядеть карточкой, а не кнопкой с картинкой внутри. Что она
+     нажимается, говорят курсор и ds-pressable, клавиатуре — фокус-кольцо
+     глобального слоя. Ширина 100% и выравнивание влево нужны потому, что
+     кнопка по умолчанию сжимается по содержимому и центрует его. */
+  .dev__link {
+    display: grid;
+    grid-template-columns: var(--space-16) 1fr auto;
+    align-items: center;
+    gap: var(--space-3);
+    width: 100%;
+    padding-inline: 0;
+    padding-block: var(--space-2);
+    min-height: var(--space-12);
+    border: 0;
+    background: none;
+    font: inherit;
+    color: inherit;
+    text-align: start;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .dev__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    min-width: 0;
+  }
+
+  .dev__name {
+    color: var(--text-default);
+  }
+
+  .dev__cta {
+    color: var(--text-meta);
+    white-space: nowrap;
+  }
+
+  /* Десктоп: четыре карточки в ряд, превью сверху. */
+  @media (--bp-md) {
+    .dev__list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-6);
+    }
+
+    .dev__link {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: var(--space-4);
+      padding-block: 0;
+      min-height: 0;
+    }
+  }
+
+  /* Наведение на карточку — только цвет имени. Фона под курсором у мобильной
+     строки больше нет: подсветка ряда целиком читается как выделение в списке,
+     а не как переход, и на десктопе четыре карточки её всё равно не получали.
+     Отклик на тап даёт ds-pressable. */
+  @media (--can-hover) {
+    .dev__link:hover .dev__name {
+      color: var(--text-link-hover);
+    }
+  }
+
+  /* ---------------------------------------------------------------- *
+   * AboutShort                                                        *
+   * ---------------------------------------------------------------- */
+
+  /* Ссылка принадлежит абзацу над ней, а не стоит отдельным узлом:
+     текстовый шаг вместо умолчания секции. Та же цель нажатия, что в
+     ряду Hero, и тот же :global по той же причине — ссылка это корень
+     TextLink. */
+  .about > :global(.ds-link) {
+    margin-block-start: var(--flow-text);
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--space-12);
+  }
+
+  @media (--bp-md) {
+    .about > :global(.ds-link) {
+      min-height: 0;
+    }
+  }
+</style>
