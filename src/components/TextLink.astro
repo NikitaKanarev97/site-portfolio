@@ -152,13 +152,10 @@ const {
     transition: none;
   }
 
-  .ds-link :global(.ds-link__arrow) {
-    align-self: center;
-    transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
-  }
-
+  .ds-link :global(.ds-link__arrow),
   .ds-link :global(.ds-link__external) {
     align-self: center;
+    transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
   }
 
   /* Наведение — только там, где курсор действительно есть. Тач-устройство
@@ -190,8 +187,24 @@ const {
       transform-origin: left;
     }
 
-    .ds-link:hover :global(.ds-link__arrow) {
-      transform: translateX(var(--space-1));
+    @media (prefers-reduced-motion: no-preference) {
+      .ds-link:hover :global(.ds-link__arrow) {
+        transform: translateX(var(--space-1));
+      }
+
+      .ds-link:hover :global(.ds-link__external) {
+        transform: translate(var(--space-1), calc(var(--space-1) * -1));
+      }
     }
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ds-link,
+    .ds-link__rule,
+    .ds-link :global(.ds-link__arrow),
+    .ds-link :global(.ds-link__external) {
+      transition: none;
+    }
+  }
+
 </style>

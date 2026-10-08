@@ -63,8 +63,8 @@ export const home = {
      * Selected work: выбор между двумя делает читатель, а не шапка.
      */
     portrait: {
-      src: '/media/about/portrait.webp',
-      srcMobile: '/media/about/portrait-mobile.webp',
+      src: '/media/about/portrait-natural-v2.webp',
+      srcMobile: '/media/about/portrait-natural-v2-mobile.webp',
       alt: 'Nikita Kanarev in a taupe knit sweater against a light background',
     },
     workLabel: 'Selected product design projects',

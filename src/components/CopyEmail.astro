@@ -46,7 +46,12 @@ const [addressLocal, addressDomain] = email.split('@');
         data-hint-copied={copiedLabel}
         data-announce={announce}
         data-announce-fallback={fallbackAnnounce}
-      >{label}</button>
+      >
+        <span class="copy-email__label">
+          {label}
+          <span class="copy-email__rule" aria-hidden="true"></span>
+        </span>
+      </button>
       <p class="copy-email__hint ds-body-sm" data-copy-hint>{hint}</p>
       <p class="copy-email__failure ds-body-sm" data-copy-failure hidden>{fallbackAnnounce}</p>
       <p class="ds-visually-hidden" aria-live="polite" aria-atomic="true" data-copy-status></p>
@@ -80,7 +85,40 @@ const [addressLocal, addressDomain] = email.split('@');
     padding: 0;
     color: var(--text-link);
     text-align: start;
-    transition: color var(--motion-state-duration) var(--motion-state-ease);
+    transition: color var(--motion-hover-duration) var(--motion-hover-ease);
+  }
+
+  /* Same line geometry and timing as TextLink; the button keeps its semantics. */
+  .copy-email__label {
+    position: relative;
+  }
+
+  .copy-email__rule {
+    position: absolute;
+    inset-inline: 0;
+    bottom: calc(var(--space-1) * -1);
+    height: var(--border-width);
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
+  }
+
+  .copy-email__button:focus-visible .copy-email__rule {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .copy-email__button:active {
+    transition-duration: var(--motion-press-duration);
+    transition-timing-function: var(--motion-press-ease);
+  }
+
+  .copy-email__button:active .copy-email__rule {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition-duration: var(--motion-press-duration);
+    transition-timing-function: var(--motion-press-ease);
   }
 
   .copy-email__address:active,
@@ -88,8 +126,7 @@ const [addressLocal, addressDomain] = email.split('@');
     color: var(--text-link-pressed);
   }
 
-  .copy-email__address:focus-visible,
-  .copy-email__button:focus-visible {
+  .copy-email__address:focus-visible {
     text-decoration: underline;
     text-decoration-thickness: var(--border-width);
     text-underline-offset: var(--space-1);
@@ -127,6 +164,9 @@ const [addressLocal, addressDomain] = email.split('@');
     .copy-email__address:hover,
     .copy-email__button:hover {
       color: var(--text-link-hover);
+    }
+
+    .copy-email__address:hover {
       text-decoration: underline;
       text-decoration-thickness: var(--border-width);
       text-underline-offset: var(--space-1);
@@ -135,6 +175,20 @@ const [addressLocal, addressDomain] = email.split('@');
     .copy-email__address:active,
     .copy-email__button:active {
       color: var(--text-link-pressed);
+    }
+
+    .copy-email__button:hover .copy-email__rule {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .copy-email__address,
+    .copy-email__button,
+    .copy-email__rule,
+    .copy-email__hint {
+      transition: none;
     }
   }
 </style>
