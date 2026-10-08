@@ -134,8 +134,8 @@ const {
     font: inherit;
     cursor: pointer;
     transition:
-      background-color var(--motion-state-duration) var(--motion-state-ease),
-      color var(--motion-state-duration) var(--motion-state-ease);
+      background-color var(--motion-hover-duration) var(--motion-hover-ease),
+      color var(--motion-hover-duration) var(--motion-hover-ease);
   }
 
   .case-carousel__button:disabled {
@@ -154,6 +154,8 @@ const {
   .case-carousel__button:not(:disabled):active {
     background: var(--surface-action-primary-hover);
     color: var(--text-on-action);
+    transition-duration: var(--motion-press-duration);
+    transition-timing-function: var(--motion-press-ease);
   }
 
   /* position: relative — содержащий блок для абсолютных узлов внутри

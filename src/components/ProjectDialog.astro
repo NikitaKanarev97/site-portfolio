@@ -249,7 +249,7 @@ const titleId = `${id}-title`;
     font-size: var(--size-2xl);
     line-height: 1;
     cursor: pointer;
-    transition: color var(--motion-state-duration) var(--motion-state-ease);
+    transition: color var(--motion-hover-duration) var(--motion-hover-ease);
   }
 
   @media (--can-hover) {
@@ -260,6 +260,8 @@ const titleId = `${id}-title`;
 
   .project-dialog__close:active {
     color: var(--text-link-pressed-on-inverse);
+    transition-duration: var(--motion-press-duration);
+    transition-timing-function: var(--motion-press-ease);
   }
 
   /* Десктоп: две колонки, текст слева, кадр справа. В DOM кадр стоит

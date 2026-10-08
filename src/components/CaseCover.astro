@@ -425,10 +425,19 @@ if (media.variant === 'screen') {
     background: transparent;
     color: inherit;
     cursor: pointer;
+    transition: color var(--motion-hover-duration) var(--motion-hover-ease), transform var(--motion-hover-duration) var(--motion-hover-ease);
   }
 
+  @media (--can-hover) {
+    .case-opening__pause:hover { color: var(--text-link-hover); }
+  }
   .case-opening__pause:active {
-    transform: scale(var(--motion-press-scale));
+    color: var(--text-link-pressed);
+    transition-duration: var(--motion-press-duration);
+    transition-timing-function: var(--motion-press-ease);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .case-opening__pause:active { transform: scale(var(--motion-press-scale)); }
   }
 
   .case-opening__pause[hidden] {

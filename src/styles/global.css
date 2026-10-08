@@ -177,6 +177,11 @@ main > * + .ds-section-tight {
 
 body.ds-scroll-locked { overflow: hidden; }
 
+/* Reduced motion retains press feedback without scaling whole surfaces. */
+@media (prefers-reduced-motion: reduce) {
+  .ds-pressable:active { transform: none; }
+}
+
 /* ============================================================
    Начальные состояния движения.
 

@@ -26,7 +26,7 @@ const proof = item.meta.at(-1)!;
       <span><span class="ds-visually-hidden">{proof.term}: </span>{proof.value}</span>
     </div>
     <a href={item.href} class="featured-case__cta ds-body-base" id={`cta-${slug}`} aria-label={`${item.cta}: ${item.title}`}>
-      {item.cta}<IconArrow class="featured-case__arrow" />
+      <span class="featured-case__label">{item.cta}<span class="featured-case__rule" aria-hidden="true"></span></span><IconArrow class="featured-case__arrow" />
     </a>
   </div>
 </article>
@@ -49,12 +49,19 @@ const proof = item.meta.at(-1)!;
   .featured-case__cta :global(.featured-case__arrow) { inline-size: var(--space-6); block-size: var(--space-6); flex: none; transition: transform var(--motion-hover-duration) var(--motion-hover-ease); }
   .featured-case__cta:focus-visible { outline-offset: var(--space-2); }
   .featured-case__cta:active { color: var(--text-link-pressed); }
+  .featured-case__label { position: relative; }
+  .featured-case__rule { position: absolute; inset-inline: 0; bottom: calc(var(--space-1) * -1); height: var(--border-width); background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform var(--motion-hover-duration) var(--motion-hover-ease); }
+  .featured-case__cta:focus-visible .featured-case__rule { transform: scaleX(1); transform-origin: left; }
+  .featured-case__cta:active, .featured-case__cta:active .featured-case__rule { transition-duration: var(--motion-press-duration); transition-timing-function: var(--motion-press-ease); }
+  .featured-case__cta:active .featured-case__rule { transform: scaleX(1); transform-origin: left; }
   /* Move the common preview wrapper, including each theme's background.
      Agent's background belongs to this wrapper; the other scenes own theirs.
      Headings and facts stay still while the whole visual preview lifts. */
   .featured-case__stage { transition: transform var(--motion-hover-duration) var(--motion-hover-ease); }
   @media (--can-hover) {
     .featured-case:hover .featured-case__cta { color: var(--text-link-hover); }
+    .featured-case:hover .featured-case__rule { transform: scaleX(1); transform-origin: left; }
+    .featured-case__cta:active { color: var(--text-link-pressed); }
     @media (prefers-reduced-motion: no-preference) {
       .featured-case:hover :global(.featured-case__arrow) { transform: translateX(var(--space-1)); }
       .featured-case:hover .featured-case__stage { transform: translateY(calc(var(--space-1) * -1)); }
@@ -65,6 +72,7 @@ const proof = item.meta.at(-1)!;
   }
   @media (prefers-reduced-motion: reduce) {
     .featured-case__stage,
+    .featured-case__rule,
     .featured-case__cta,
     .featured-case__cta :global(.featured-case__arrow) { transition: none; }
   }

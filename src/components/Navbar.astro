@@ -187,6 +187,7 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
   .navbar__brand:active {
     color: var(--text-link-pressed);
     transition-duration: var(--motion-press-duration);
+    transition-timing-function: var(--motion-press-ease);
   }
 
   .navbar__list {
@@ -223,12 +224,14 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
   .navbar__trigger:active {
     color: var(--text-link-pressed);
     transition-duration: var(--motion-press-duration);
+    transition-timing-function: var(--motion-press-ease);
   }
 
   @media (--can-hover) {
     .navbar__trigger:hover {
       color: var(--text-link-hover);
     }
+    .navbar__trigger:active { color: var(--text-link-pressed); }
   }
 
   /* Панель поверх контента: собственный слой, не выталкивает раскладку. */

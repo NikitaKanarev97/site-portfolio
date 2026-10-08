@@ -42,8 +42,9 @@ const zoom = zoomCopy;
     .media-zoom__head { padding-inline: var(--space-6); }
     .media-zoom__viewport, .media-zoom__caption { padding: var(--space-6); }
   }
+  .media-zoom__close { transition: color var(--motion-hover-duration) var(--motion-hover-ease); }
   @media (--can-hover) { .media-zoom__close:hover { color: var(--text-link-hover); } }
-  .media-zoom__close:active { color: var(--text-link-pressed); }
+  .media-zoom__close:active { color: var(--text-link-pressed); transition-duration: var(--motion-press-duration); transition-timing-function: var(--motion-press-ease); }
 </style>
 <script>
   let zoomLifecycle: AbortController | undefined;

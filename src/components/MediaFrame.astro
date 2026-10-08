@@ -525,12 +525,22 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
     font: inherit;
     cursor: pointer;
     opacity: 0.82;
-    transition: opacity var(--duration-fast) var(--ease-standard);
+    transition: opacity var(--motion-hover-duration) var(--motion-hover-ease), background-color var(--motion-hover-duration) var(--motion-hover-ease);
   }
 
-  .media-frame__clip:hover,
   .media-frame__clip:focus-visible {
     opacity: 1;
+  }
+
+  @media (--can-hover) {
+    .media-frame__clip:hover { opacity: 1; }
+  }
+
+  .media-frame__clip:active {
+    opacity: 1;
+    background: var(--surface-action-primary-hover);
+    transition-duration: var(--motion-press-duration);
+    transition-timing-function: var(--motion-press-ease);
   }
 
   .media-frame__clip-icon {

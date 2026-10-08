@@ -31,7 +31,7 @@ const { label, items, idPrefix } = Astro.props;
   .case-routes { display: grid; gap: var(--flow-group); }
   .case-routes__caption { margin: 0; color: var(--text-meta); }
   .case-routes__entries { display: grid; gap: var(--flow-node); }
-  .case-routes__entry summary { position: relative; display: grid; gap: var(--space-3); padding-block: var(--flow-text); padding-inline-end: var(--space-12); cursor: pointer; list-style: none; }
+  .case-routes__entry summary { position: relative; display: grid; gap: var(--space-3); padding-block: var(--flow-text); padding-inline-end: var(--space-12); cursor: pointer; list-style: none; transition: color var(--motion-hover-duration) var(--motion-hover-ease); }
   .case-routes__entry summary::-webkit-details-marker { display: none; }
   .case-routes__toggle { position: absolute; inset-inline-end: 0; inset-block-start: var(--flow-text); }
   .case-routes__entry[open] .case-routes__toggle { transform: rotate(45deg); }
@@ -39,7 +39,11 @@ const { label, items, idPrefix } = Astro.props;
   .case-routes__content { display: grid; gap: var(--flow-text); padding-block: 0 var(--flow-group); }
   .case-routes__body { margin: 0; max-inline-size: var(--measure-case); text-wrap: pretty; }
   .case-routes__completion { display: grid; gap: var(--flow-group); }
-  @media (--can-hover) { .case-routes__entry summary:hover { color: var(--text-link-hover); } }
+  .case-routes__entry summary:active { color: var(--text-link-pressed); transition-duration: var(--motion-press-duration); transition-timing-function: var(--motion-press-ease); }
+  @media (--can-hover) {
+    .case-routes__entry summary:hover { color: var(--text-link-hover); }
+    .case-routes__entry summary:active { color: var(--text-link-pressed); }
+  }
   @media (--bp-lg) {
     .case-routes__entry summary { grid-template-columns: 1fr 3fr; align-items: baseline; gap: var(--space-12); }
     .case-routes__content > .case-routes__body { margin-inline-start: 25%; }

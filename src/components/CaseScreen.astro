@@ -107,7 +107,7 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
     box-shadow: var(--zoom-cue-elevation);
     opacity: 0;
     transform: scale(var(--motion-press-scale));
-    transition: opacity var(--motion-hover-duration) var(--motion-hover-ease), transform var(--motion-hover-duration) var(--motion-hover-ease);
+    transition: opacity var(--motion-hover-duration) var(--motion-hover-ease), transform var(--motion-hover-duration) var(--motion-hover-ease), color var(--motion-hover-duration) var(--motion-hover-ease);
     pointer-events: none;
   }
   .case-screen__cue svg { inline-size: 50%; block-size: 50%; }
@@ -116,6 +116,13 @@ const copy = Astro.url.pathname.startsWith('/ru') ? siteRu : site;
   .case-screen--native img { border-radius: 0; }
   @media (--can-hover) {
     .case-screen__open:hover .case-screen__cue { opacity: 1; transform: none; }
+  }
+  .case-screen__open:active .case-screen__cue {
+    opacity: 1;
+    transform: none;
+    color: var(--text-link-pressed);
+    transition-duration: var(--motion-press-duration);
+    transition-timing-function: var(--motion-press-ease);
   }
   @media (prefers-reduced-motion: reduce) {
     .case-screen__cue { transform: none; }

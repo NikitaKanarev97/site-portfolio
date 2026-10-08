@@ -65,7 +65,7 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     <AuthorPortrait src={home.hero.portrait.src} srcMobile={home.hero.portrait.srcMobile} alt={home.hero.portrait.alt}
       variant="work-index" class="hero__profile" at="0.2">
       <nav class="work-index" aria-label={home.hero.workLabel}>
-        {home.featured.items.map(item => <a href={`#work-${item.href.split('/').filter(Boolean).at(-1)}`} class="ds-body-base">{item.title}</a>)}
+        {home.featured.items.map(item => <TextLink href={`#work-${item.href.split('/').filter(Boolean).at(-1)}`} type="nav" class="ds-body-base">{item.title}</TextLink>)}
       </nav>
     </AuthorPortrait>
 
@@ -242,9 +242,7 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     .hero__actions > :global(.copy-email--action) { align-items:flex-start; }
   }
   .work-index { display:grid; }
-  .work-index a { display:flex; align-items:center; min-block-size:var(--space-12); color:var(--text-default); text-decoration:none; }
-  .work-index a:active { color:var(--text-link-pressed); }
-  @media (--can-hover) { .work-index a:hover { color:var(--text-link-hover); } }
+  .work-index :global(.ds-link) { display:flex; align-items:center; min-block-size:var(--space-12); }
   @media (--bp-md) { .hero__name { flex-direction:row; gap:var(--space-6); } }
   @media (--bp-lg) {
     .hero { grid-template-columns:1fr 1fr; gap:var(--flow-node) var(--space-16); }
@@ -337,10 +335,9 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     }
   }
 
-  /* Наведение на карточку — только цвет имени. Фона под курсором у мобильной
-     строки больше нет: подсветка ряда целиком читается как выделение в списке,
-     а не как переход, и на десктопе четыре карточки её всё равно не получали.
-     Отклик на тап даёт ds-pressable. */
+  /* Preview lift matches FeaturedCase; title stays still. */
+  .dev__name { transition: color var(--motion-hover-duration) var(--motion-hover-ease); }
+  .dev__link:active .dev__name { color: var(--text-link-pressed); transition-duration: var(--motion-press-duration); transition-timing-function: var(--motion-press-ease); }
   .dev__link :global(.dev__preview) {
     transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
   }
@@ -354,8 +351,11 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     .dev__link:hover .dev__name {
       color: var(--text-link-hover);
     }
-    .dev__link:hover :global(.dev__preview) {
-      transform: translateY(calc(var(--space-1) * -1));
+    .dev__link:active .dev__name { color: var(--text-link-pressed); }
+    @media (prefers-reduced-motion: no-preference) {
+      .dev__link:hover :global(.dev__preview) {
+        transform: translateY(calc(var(--space-1) * -1));
+      }
     }
   }
 

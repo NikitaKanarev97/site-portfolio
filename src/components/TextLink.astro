@@ -27,6 +27,8 @@ import IconArrow from './IconArrow.astro';
 interface Props {
   href: string;
   type?: 'inline' | 'arrow' | 'nav';
+  /** In-page section links point down; external links keep their up-right marker. */
+  direction?: 'right' | 'down';
   external?: boolean;
   /** Активный пункт навигации: подчёркивание постоянно, на hover не двигается. */
   active?: boolean;
@@ -40,6 +42,7 @@ interface Props {
 const {
   href,
   type = 'inline',
+  direction = 'right',
   external = false,
   active = false,
   onInverse = false,
@@ -68,7 +71,7 @@ const {
   </span>
   {external && <IconArrow direction="up-right" size="small" class="ds-link__external" />}
   {external && <span class="ds-visually-hidden">{externalLabel}</span>}
-  {type === 'arrow' && !external && <IconArrow direction="right" class="ds-link__arrow" />}
+  {type === 'arrow' && !external && <IconArrow direction={direction} class={`ds-link__arrow${direction === 'down' ? ' ds-link__arrow--down' : ''}`} />}
 </a>
 
 <style>
@@ -194,6 +197,10 @@ const {
 
       .ds-link:hover :global(.ds-link__external) {
         transform: translate(var(--space-1), calc(var(--space-1) * -1));
+      }
+
+      .ds-link:hover :global(.ds-link__arrow--down) {
+        transform: translateY(var(--space-1));
       }
     }
   }

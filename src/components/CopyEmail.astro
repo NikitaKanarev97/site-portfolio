@@ -75,7 +75,7 @@ const [addressLocal, addressDomain] = email.split('@');
     color: var(--text-default);
     text-decoration: none;
     user-select: text;
-    transition: color var(--motion-state-duration) var(--motion-state-ease);
+    transition: color var(--motion-hover-duration) var(--motion-hover-ease);
   }
 
   .copy-email__button {
@@ -109,6 +109,7 @@ const [addressLocal, addressDomain] = email.split('@');
     transform-origin: left;
   }
 
+  .copy-email__address:active,
   .copy-email__button:active {
     transition-duration: var(--motion-press-duration);
     transition-timing-function: var(--motion-press-ease);
@@ -126,7 +127,8 @@ const [addressLocal, addressDomain] = email.split('@');
     color: var(--text-link-pressed);
   }
 
-  .copy-email__address:focus-visible {
+  .copy-email__address:focus-visible,
+  .copy-email__address:active {
     text-decoration: underline;
     text-decoration-thickness: var(--border-width);
     text-underline-offset: var(--space-1);
