@@ -240,7 +240,7 @@ const blocks: CaseBlock[] = en.blocks.map(block => {
     default: return block;
   }
 });
-export const agentOpsStoryRu = defineStory<CaseStory>({ ...en, cover:{ ...en.cover, outcome:'Оператор проверяет обещания агента перед выплатой.',
+export const agentOpsStoryRu = defineStory<CaseStory>({ ...en, cover:{ ...en.cover, title:'Консоль контроля ИИ-агента', outcome:'Оператор проверяет обещания агента перед выплатой.',
   media: en.cover.media.variant === 'proof' ? { ...en.cover.media, gate:'Решение человека', eyebrow:'AI-поддержка · Биллинг · Контроль', caption:'Сообщение и выплата рядом',
     shot:{ ...localMedia(en.cover.media.shot), alt:'Две панели продукта: выплата $340 и сообщение, которое отправит одобрение' },
     panels:en.cover.media.panels?.map((s,i) => ({ ...localMedia(s), alt:i === 0 ? 'Целое сообщение клиенту, отправляемое при одобрении' : 'Целый предварительный расчёт выплаты $340 до одобрения' })) } : en.cover.media },

@@ -6,8 +6,12 @@ import { partnerPortalFlow } from '../../../data/diagrams/partner-portal/purchas
 import { partnerPortalSpecimen } from '../../../data/diagrams/partner-portal/specimen';
 import { withRussianMedia } from './utils.ts';
 
-export const partnerPortalStoryRu = defineStory({theme:'portal',plate:'light',
-  cover:{title:'Partner Portal',outcome:'Рабочая спецификация для закупщика: от ввода до оформления.',media:{
+/** Кадры продукта сняты русской локалью прототипа в соседние папки `ru/`
+ * (`tasks/portfolio-rebuild/partner-portal/capture-product-ru.mjs`), английские не тронуты. */
+const russianFrames = <T,>(story:T):T => withRussianMedia(withRussianMedia(story,'/media/rebuild/partner-portal/','/media/rebuild/partner-portal/ru/'),'/media/rebuild/common/portal/','/media/rebuild/common/portal/ru/');
+
+export const partnerPortalStoryRu = russianFrames(defineStory({theme:'portal',plate:'light',
+  cover:{title:'B2B-закупка DSSL',outcome:'Рабочая спецификация для закупщика: от ввода до оформления.',media:{
     variant:'proof',eyebrow:'DSSL · B2B-закупка',shot:portalLineShot('open','Выбор товара для строки 38: исходный текст, восемь единиц и три кандидата из каталога'),
     caption:'Строка 38: исходный текст рядом с тремя кандидатами',
   }},
@@ -31,11 +35,11 @@ export const partnerPortalStoryRu = defineStory({theme:'portal',plate:'light',
     }},
     {id:'source-line',type:'steps',motion:'focus',evidenceId:'portal-line',mediaId:'portal-line',payload:{label:'Одна исходная строка',items:[
       {label:'Выбрать',thesis:'Исходный запрос рядом с кандидатами',body:'Строка 38 файла office_north_v8.xlsx: «камера 4мп уличная», восемь единиц. Покупатель сравнивает три совпадения и выбирает второе.',shot:portalLineShot('open','Исходная строка 38 и восемь единиц над тремя кандидатами'),caption:'Выбор второго кандидата'},
-      {label:'Подтвердить',thesis:'Выбор принят, строка та же',body:'Исходный текст и количество остаются. Confirmed фиксирует решение покупателя; «was Ambiguous» сохраняет исходный тип соответствия. Undo позволяет отменить выбор.',shot:portalLineShot('confirmed','Подтверждённая строка 38: восемь единиц, прежняя неоднозначность и отмена выбора'),caption:'Та же строка · выбран SKU KX-2CB4046F2-I · восемь единиц'},
+      {label:'Подтвердить',thesis:'Выбор принят, строка та же',body:'Исходный текст и количество остаются. «Подтверждено» фиксирует решение покупателя; «было: неоднозначно» сохраняет исходный тип соответствия. «Отменить» возвращает выбор.',shot:portalLineShot('confirmed','Подтверждённая строка 38: восемь единиц, прежняя неоднозначность и отмена выбора'),caption:'Та же строка · выбран SKU KX-2CB4046F2-I · восемь единиц'},
       {label:'Подготовить',thesis:'Тот же товар в корзине',body:'Корзина связывает выбранный SKU с исходной строкой 38 и сохраняет количество восемь. Цена и наличие отделены от соответствия товара.',shot:portalLineShot('cart','Строка корзины: выбранный SKU, исходная строка 38, восемь единиц, цена и наличие'),caption:'Та же строка в корзине · исходный след виден'},
     ]}},
     {id:'domain-system',type:'specimen',motion:'static',evidenceId:'portal-domain',mediaId:'portal-specimens',payload:{
-      thesis:{label:'Доменная система',thesis:'Следующий шаг',body:'Строка разбора сохраняет исходный запрос после выбора товара. Наличие показывает ответ склада, а план поставки — возможность отгрузки. Если склад не ответил, наличие «не подтверждено», а не ноль. UI продукта сохранён на исходном английском.'},specimen:partnerPortalSpecimen('ru'),
+      thesis:{label:'Доменная система',thesis:'Следующий шаг',body:'Строка разбора сохраняет исходный запрос после выбора товара. Наличие показывает ответ склада, а план поставки — возможность отгрузки. Если склад не ответил, наличие «не подтверждено», а не ноль.'},specimen:partnerPortalSpecimen('ru'),
     }},
     {id:'source-in-context',type:'shot',motion:'reveal',evidenceId:'portal-line',mediaId:'portal-application',payload:{
       shot:{layout:'desktop',items:[{src:'/media/rebuild/partner-portal/resolution-context-wide.webp',srcNarrow:'/media/rebuild/partner-portal/resolution-context-narrow.webp',device:'desktop',alt:'Экран разбора строк после выбора строки 38: фильтр, вкладка решённых строк, отмена и общий прогресс',altNarrow:'Узкий экран разбора строк после выбора строки 38, с общим прогрессом под строкой'}],caption:'Компоненты в работе · та же строка после подтверждения покупателем'},
@@ -46,7 +50,7 @@ export const partnerPortalStoryRu = defineStory({theme:'portal',plate:'light',
       tradeoff:{label:'Компромисс',text:'Неоднозначность требует ручного выбора покупателя. Данные сопоставления не гарантируют совместимость.'},
     }},
   ],prototype:{label:'Открыть продукт',href:'https://b2b-partner-portal-five.vercel.app/ru'},
-});
+}));
 assertStoryPair(partnerPortalStory,partnerPortalStoryRu);
 
 const base = withRussianMedia(
@@ -65,13 +69,13 @@ const PROTOTYPE = new URL('ru', partnerPortal.process.prototype.href).href;
 export const partnerPortalRu = {
   ...base,
   meta: {
-    title: 'Партнёрский B2B-портал — DSSL',
+    title: 'B2B-закупка DSSL',
     description:
       'Партнёрский портал дистрибьютора, перестроенный вокруг спецификации: строка сохраняет источник от импортированного файла до оформленного заказа.',
   },
   header: {
     ...base.header,
-    title: 'Партнёрский B2B-портал',
+    title: 'B2B-закупка DSSL',
     lead:
       'Партнёрский портал дистрибьютора, в котором закупочный список превращается в заказ без менеджера — поверх системы цен и остатков, которую нельзя было заменить.',
     meta: [

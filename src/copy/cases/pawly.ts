@@ -263,7 +263,7 @@ export function createPawlyStory(locale: 'en' | 'ru'): CaseStory {
   const active = phone('active-service','Baikal expected home by 14:50; received pickup at 14:05 and a sample route.','Байкал ожидается дома к 14:50; полученное фото передачи в 14:05 и пример маршрута.');
   const local: ShotItem = { ...phone('clip-return-proof-poster','Selected return photo before sending; video follows sending and opening the report.','Выбранное фото возвращения перед отправкой; видео показывает отправку и открытие отчёта.'), video:`${base}/clip-return-proof`, film:true };
   const report = phone('order-details','Return confirmed at 14:52, two dated photos, 950 rouble charge and review action.','Возвращение подтверждено в 14:52, две датированные фотографии, сумма 950 рублей и действие отзыва.');
-  const state = (id: string,en: string,ru: string) => ({id,mediaId:id,label:t(en,ru),shot:{src:`/media/rebuild/pawly/states/${id}-343.webp`,srcNarrow:`/media/rebuild/pawly/states/${id}-288.webp`,alt:t(`Pawly ${en} state.`,`Состояние Pawly: ${ru}.`),device:'panel' as const,nativeWidth:347}});
+  const state = (id: string,en: string,ru: string) => ({id,mediaId:id,label:t(en,ru),shot:{src:`/media/rebuild/pawly/states/${t('','ru/')}${id}-343.webp`,srcNarrow:`/media/rebuild/pawly/states/${t('','ru/')}${id}-288.webp`,alt:t(`Pawly ${en} state.`,`Состояние Pawly: ${ru}.`),device:'panel' as const,nativeWidth:347}});
   const specimen: Specimen = {
     title:t('Photo confirmation and walk events','Подтверждение фото и события прогулки'),fontFamily:'Inter, sans-serif',
     type:[], colors:[],
@@ -271,7 +271,7 @@ export function createPawlyStory(locale: 'en' | 'ru'): CaseStory {
     sets:[
       {id:'photo-proof',title:'PhotoProof',group:'care-evidence',states:[state('photo-pending','Pending · no confirmation','Ожидание · подтверждения нет'),state('photo-local','Local · selected, not sent','Локально · выбрано, не отправлено'),state('photo-confirmed','Confirmed · received event','Подтверждено · событие получено')]},
       {id:'timeline-row',title:'TimelineRow',group:'care-evidence',states:[state('timeline-done','Done','Завершено'),state('timeline-current','Current','Текущее')]},
-    ],caption:t('Photo confirmation stays separate from the walk’s current step.','Подтверждение фото отделено от текущего этапа прогулки. На кадрах — английский интерфейс.'),
+    ],caption:t('Photo confirmation stays separate from the walk’s current step.','Подтверждение фото отделено от текущего этапа прогулки.'),
   };
   return defineStory({theme:'pawly',plate:'light',
     cover:{title:'Pawly',outcome:t('An owner chooses a walker and receives confirmation that the dog is home.','Владелец выбирает выгульщика и получает подтверждение возвращения собаки.'),media:{variant:'screen',layout:'phones',items:[profile,active,report]}},

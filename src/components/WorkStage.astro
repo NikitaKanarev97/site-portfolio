@@ -25,7 +25,8 @@ const visibleShots: ShotItem[] = theme === 'pawly' ? shots.slice(-1) : shots;
     <p class="ds-body-base work-stage__detail">{art.detail}</p>
   </div>}
   {theme === 'pawly' && <figure class="work-stage__photo">
-    <img src="/media/art-direction/pawly/handover-dropoff.webp" width="800" height="597" loading={loading} decoding="async" alt={locale === 'ru' ? 'Pawly: питомец у двери, исполнитель снимает поводок.' : 'Pawly: a dog at the door as the walker unclips the lead.'} />
+    {/* The Russian frame drops the photo's baked English caption strip (bottom 19 px). */}
+    <img src={locale === 'ru' ? '/media/art-direction/pawly/handover-dropoff-ru.webp' : '/media/art-direction/pawly/handover-dropoff.webp'} width="800" height={locale === 'ru' ? 578 : 597} loading={loading} decoding="async" alt={locale === 'ru' ? 'Pawly: питомец у двери, исполнитель снимает поводок.' : 'Pawly: a dog at the door as the walker unclips the lead.'} />
     <figcaption class="ds-body-sm">{art.detail}</figcaption>
   </figure>}
   <div class="work-stage__screens">
