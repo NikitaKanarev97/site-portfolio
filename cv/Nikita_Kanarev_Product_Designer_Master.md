@@ -4,7 +4,7 @@ Product Designer - B2B products, complex workflows, design systems
 
 [Portfolio](https://kanarev.com/#work) | [LinkedIn](https://www.linkedin.com/in/nikita-kanarev/) | [Email](mailto:nikita.kanarev.dev@outlook.com)
 
-Kazakhstan - UTC+5 - Open to relocation
+Armenia (UTC+4) - Open to relocation
 
 ## Professional Summary
 
@@ -31,16 +31,16 @@ Paid client engagements: full-time before DSSL, alongside it from Sep 2023. Most
 
 - Scoped 35 Agent Ops artboards across three roles and delivered the tested clickable core within one month; the NDA client accepted the prototype after user testing and rework.
 - Designed a veterinary clinic operations system from domain research with a practising veterinarian through to a working prototype.
-- Designed and built four production Webflow marketing sites end to end, including visual design, responsive implementation, interactions and QA.
 
 ### Selected independent projects - Self-directed
 
-2026 - Remote
+Remote
 
 Product design, design systems and interactive prototypes for my own projects.
 
 - Pawly - a dog-care marketplace: service model, interactive prototype verified through synthetic QA, and a 33-component design system.
 - Rebuilt the DSSL partner portal solution on synthetic data to publish it without disclosing client material.
+- Designed and built four live Webflow demo builds end to end, including visual design, responsive implementation, interactions and QA.
 
 ## Selected Work
 

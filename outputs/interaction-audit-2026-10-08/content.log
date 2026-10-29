@@ -1,0 +1,15 @@
+
+> site-portfolio@0.1.0 check:content
+> node scripts/check-public-content.mjs
+
+{
+  "result": "PASS",
+  "counts": {
+    "copy": 35,
+    "cv": 2,
+    "public": 156,
+    "builtHtml": 183
+  },
+  "findings": 0,
+  "build": "dist"
+}

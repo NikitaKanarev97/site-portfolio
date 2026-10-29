@@ -1,0 +1,102 @@
+[
+  {
+    "media": [],
+    "selector": ".ds-pressable:active",
+    "style": "transform: scale(var(--motion-press-scale)); transition-duration: var(--motion-press-duration); transition-timing-function: var(--motion-press-ease);"
+  },
+  {
+    "media": [
+      "(prefers-reduced-motion: reduce)"
+    ],
+    "selector": ".ds-pressable:active",
+    "style": "transform: none;"
+  },
+  {
+    "media": [
+      "(hover: hover) and (pointer: fine)",
+      "(prefers-reduced-motion: no-preference)"
+    ],
+    "selector": ".ds-link[data-astro-cid-72a7bium]:hover .ds-link__arrow--down",
+    "style": "transform: translateY(var(--space-1));"
+  },
+  {
+    "media": [],
+    "path": "/ru/",
+    "selector": ".featured-case__stage[data-astro-cid-3ry6t2gh]",
+    "style": "min-inline-size: 0px;"
+  },
+  {
+    "media": "[Circular]",
+    "path": "/ru/",
+    "selector": ".featured-case--agent[data-astro-cid-3ry6t2gh] .featured-case__stage[data-astro-cid-3ry6t2gh]",
+    "style": "padding: var(--stage-inset); border-radius: var(--radius-lg); background: var(--surface-cover-agent); color: var(--text-on-inverse);"
+  },
+  {
+    "media": "[Circular]",
+    "path": "/ru/",
+    "selector": ".featured-case__stage[data-astro-cid-3ry6t2gh]",
+    "style": "transition: transform var(--motion-hover-duration) var(--motion-hover-ease);"
+  },
+  {
+    "media": [
+      "(hover: hover) and (pointer: fine)",
+      "(prefers-reduced-motion: no-preference)"
+    ],
+    "path": "/ru/",
+    "selector": ".featured-case[data-astro-cid-3ry6t2gh]:hover .featured-case__stage[data-astro-cid-3ry6t2gh]",
+    "style": "transform: translateY(calc(var(--space-1) * -1));"
+  },
+  {
+    "media": [
+      "(prefers-reduced-motion: reduce)"
+    ],
+    "path": "/ru/",
+    "selector": ".featured-case__stage[data-astro-cid-3ry6t2gh], .featured-case__rule[data-astro-cid-3ry6t2gh], .featured-case__cta[data-astro-cid-3ry6t2gh], .featured-case__cta[data-astro-cid-3ry6t2gh] .featured-case__arrow",
+    "style": "transition: none;"
+  },
+  {
+    "media": "[Circular]",
+    "path": "/ru/",
+    "selector": ".dev__link[data-astro-cid-j7pv25f6] .dev__preview",
+    "style": "transition: transform var(--motion-hover-duration) var(--motion-hover-ease);"
+  },
+  {
+    "media": [
+      "(hover: hover) and (pointer: fine)",
+      "(prefers-reduced-motion: no-preference)"
+    ],
+    "path": "/ru/",
+    "selector": ".dev__link[data-astro-cid-j7pv25f6]:hover .dev__preview",
+    "style": "transform: translateY(calc(var(--space-1) * -1));"
+  },
+  {
+    "media": [],
+    "path": "/ru/work/pawly/",
+    "selector": ".case-next__label[data-astro-cid-qnrozarn] .case-next__arrow",
+    "style": "transition: transform var(--motion-hover-duration) var(--motion-hover-ease);"
+  },
+  {
+    "media": [
+      "(hover: hover) and (pointer: fine)",
+      "(prefers-reduced-motion: no-preference)"
+    ],
+    "path": "/ru/work/pawly/",
+    "selector": ".case-next__link[data-astro-cid-qnrozarn]:hover .case-next__arrow",
+    "style": "transform: translate(var(--space-1));"
+  },
+  {
+    "media": [],
+    "path": "/kit/",
+    "selector": ".case-next__label[data-astro-cid-qnrozarn] .case-next__arrow",
+    "style": "transition: transform var(--motion-hover-duration) var(--motion-hover-ease);"
+  },
+  {
+    "media": [
+      "(hover: hover) and (pointer: fine)",
+      "(prefers-reduced-motion: no-preference)"
+    ],
+    "path": "/kit/",
+    "selector": ".case-next__link[data-astro-cid-qnrozarn]:hover .case-next__arrow",
+    "style": "transform: translate(var(--space-1));"
+  }
+]

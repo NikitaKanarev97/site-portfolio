@@ -1,0 +1,146 @@
+src/styles/global.css:46:   снимается: у каждой нажимаемой цели продукта есть собственное :active —
+src/styles/global.css:49:   отклик, hover там не существует. */
+src/styles/global.css:142:  transform: translateY(-200%);
+src/styles/global.css:147:.ds-skip-link:focus-visible { transform: translateY(0); }
+src/styles/global.css:152:.ds-skip-link:active { background: var(--surface-action-primary-hover); }
+src/styles/global.css:166:   Возврат идёт медленнее нажатия: базовое правило держит hover-длительность,
+src/styles/global.css:167:   :active перебивает её на время приёма. Быстро принял, спокойно отпустил. */
+src/styles/global.css:169:  transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
+src/styles/global.css:172:.ds-pressable:active {
+src/styles/global.css:173:  transform: scale(var(--motion-press-scale));
+src/layouts\BaseLayout.astro:15: * Имя снимка корня (transition:name="site") одно на все маршруты. Без него
+src/layouts\BaseLayout.astro:101:<html lang={lang} transition:name="site" transition:animate="none">
+src/layouts\BaseLayout.astro:223:  main:focus-visible {
+src/pages\index.astro:246:  .work-index a:active { color:var(--text-link-pressed); }
+src/pages\index.astro:247:  @media (--can-hover) { .work-index a:hover { color:var(--text-link-hover); } }
+src/pages\index.astro:345:    transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
+src/pages\index.astro:353:  @media (--can-hover) {
+src/pages\index.astro:354:    .dev__link:hover .dev__name {
+src/pages\index.astro:355:      color: var(--text-link-hover);
+src/pages\index.astro:357:    .dev__link:hover :global(.dev__preview) {
+src/pages\index.astro:358:      transform: translateY(calc(var(--space-1) * -1));
+src/pages\about.astro:68:  .chapter-index a:active { color: var(--text-link-pressed); }
+src/pages\about.astro:73:  @media (--can-hover) { .chapter-index a:hover { color: var(--text-link-hover); } }
+src/components\CaseCarousel.astro:122:  .case-carousel__previous { display: flex; transform: rotate(180deg); }
+src/components\CaseCarousel.astro:136:    transition:
+src/components\CaseCarousel.astro:147:  @media (--can-hover) {
+src/components\CaseCarousel.astro:148:    .case-carousel__button:not(:disabled):hover {
+src/components\CaseCarousel.astro:154:  .case-carousel__button:not(:disabled):active {
+src/components\CaseCarousel.astro:155:    background: var(--surface-action-primary-hover);
+src/components\CaseCover.astro:93:  transition:name={transitionKey}
+src/components\CaseCover.astro:94:  transition:animate={transitionKey ? 'initial' : 'none'}
+src/components\CaseCover.astro:339:    transform: rotate(-3deg);
+src/components\CaseCover.astro:344:    transform: rotate(3deg);
+src/components\CaseCover.astro:368:      transform: none;
+src/components\CaseCover.astro:430:  .case-opening__pause:active {
+src/components\CaseCover.astro:431:    transform: scale(var(--motion-press-scale));
+src/components\CaseNext.astro:23:    transition:name={transitionKey}
+src/components\CaseNext.astro:24:    transition:animate={transitionKey ? 'initial' : 'none'}
+src/components\CaseNext.astro:58:  .case-next__link:focus-visible {
+src/components\CaseNumbers.astro:76:    transform: rotate(90deg);
+src/components\CaseNumbers.astro:104:      transform: none;
+src/components\CaseRoutes.astro:37:  .case-routes__entry[open] .case-routes__toggle { transform: rotate(45deg); }
+src/components\CaseRoutes.astro:42:  @media (--can-hover) { .case-routes__entry summary:hover { color: var(--text-link-hover); } }
+src/components\CaseScreen.astro:84:  .case-screen__open:focus-visible { outline-offset: var(--space-2); }
+src/components\CaseScreen.astro:85:  .case-screen__open:focus-visible .case-screen__cue { opacity: 1; transform: none; }
+src/components\CaseScreen.astro:109:    transform: scale(var(--motion-press-scale));
+src/components\CaseScreen.astro:110:    transition: opacity var(--motion-hover-duration) var(--motion-hover-ease), transform var(--motion-hover-duration) var(--motion-hover-ease);
+src/components\CaseScreen.astro:117:  @media (--can-hover) {
+src/components\CaseScreen.astro:118:    .case-screen__open:hover .case-screen__cue { opacity: 1; transform: none; }
+src/components\CaseScreen.astro:121:    .case-screen__cue { transform: none; }
+src/components\CopyEmail.astro:78:    transition: color var(--motion-state-duration) var(--motion-state-ease);
+src/components\CopyEmail.astro:88:    transition: color var(--motion-hover-duration) var(--motion-hover-ease);
+src/components\CopyEmail.astro:102:    transform: scaleX(0);
+src/components\CopyEmail.astro:104:    transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
+src/components\CopyEmail.astro:107:  .copy-email__button:focus-visible .copy-email__rule {
+src/components\CopyEmail.astro:108:    transform: scaleX(1);
+src/components\CopyEmail.astro:112:  .copy-email__button:active {
+src/components\CopyEmail.astro:117:  .copy-email__button:active .copy-email__rule {
+src/components\CopyEmail.astro:118:    transform: scaleX(1);
+src/components\CopyEmail.astro:124:  .copy-email__address:active,
+src/components\CopyEmail.astro:125:  .copy-email__button:active {
+src/components\CopyEmail.astro:129:  .copy-email__address:focus-visible {
+src/components\CopyEmail.astro:143:    transition: color var(--motion-state-duration) var(--motion-state-ease);
+src/components\CopyEmail.astro:163:  @media (--can-hover) {
+src/components\CopyEmail.astro:164:    .copy-email__address:hover,
+src/components\CopyEmail.astro:165:    .copy-email__button:hover {
+src/components\CopyEmail.astro:166:      color: var(--text-link-hover);
+src/components\CopyEmail.astro:169:    .copy-email__address:hover {
+src/components\CopyEmail.astro:175:    .copy-email__address:active,
+src/components\CopyEmail.astro:176:    .copy-email__button:active {
+src/components\CopyEmail.astro:180:    .copy-email__button:hover .copy-email__rule {
+src/components\CopyEmail.astro:181:      transform: scaleX(1);
+src/components\CopyEmail.astro:191:      transition: none;
+src/components\FeaturedCase.astro:37:  .featured-case:has(.featured-case__cta:focus-visible) { outline: var(--focus-ring-width) solid var(--focus-ring-color); outline-offset: var(--space-2); }
+src/components\FeaturedCase.astro:48:  .featured-case__cta { display: inline-flex; flex: none; align-items: center; min-block-size: var(--space-12); gap: var(--space-3); color: var(--text-link); text-decoration: none; transition: color var(--motion-hover-duration) var(--motion-hover-ease); }
+src/components\FeaturedCase.astro:49:  .featured-case__cta :global(.featured-case__arrow) { inline-size: var(--space-6); block-size: var(--space-6); flex: none; transition: transform var(--motion-hover-duration) var(--motion-hover-ease); }
+src/components\FeaturedCase.astro:50:  .featured-case__cta:focus-visible { outline-offset: var(--space-2); }
+src/components\FeaturedCase.astro:51:  .featured-case__cta:active { color: var(--text-link-pressed); }
+src/components\FeaturedCase.astro:55:  .featured-case__stage { transition: transform var(--motion-hover-duration) var(--motion-hover-ease); }
+src/components\FeaturedCase.astro:56:  @media (--can-hover) {
+src/components\FeaturedCase.astro:57:    .featured-case:hover .featured-case__cta { color: var(--text-link-hover); }
+src/components\FeaturedCase.astro:59:      .featured-case:hover :global(.featured-case__arrow) { transform: translateX(var(--space-1)); }
+src/components\FeaturedCase.astro:60:      .featured-case:hover .featured-case__stage { transform: translateY(calc(var(--space-1) * -1)); }
+src/components\FeaturedCase.astro:69:    .featured-case__cta :global(.featured-case__arrow) { transition: none; }
+src/components\MediaFrame.astro:528:    transition: opacity var(--duration-fast) var(--ease-standard);
+src/components\MediaFrame.astro:531:  .media-frame__clip:hover,
+src/components\MediaFrame.astro:532:  .media-frame__clip:focus-visible {
+src/components\MediaZoom.astro:45:  @media (--can-hover) { .media-zoom__close:hover { color: var(--text-link-hover); } }
+src/components\MediaZoom.astro:46:  .media-zoom__close:active { color: var(--text-link-pressed); }
+src/components\MoreCases.astro:51:  .more-cases__icon::after { transform: rotate(90deg); }
+src/components\MoreCases.astro:52:  .more-cases[open] .more-cases__icon::after { transform: rotate(0deg); }
+src/components\MoreCases.astro:59:  .more-cases__arrow { color: var(--text-link); transition: transform var(--motion-hover-duration) var(--motion-hover-ease); }
+src/components\MoreCases.astro:60:  .more-cases__toggle:active, .more-cases__link:active .more-cases__arrow { color: var(--text-link-pressed); }
+src/components\MoreCases.astro:61:  .more-cases__toggle:focus-visible, .more-cases__link:focus-visible { outline-offset: var(--space-2); }
+src/components\MoreCases.astro:62:  @media (--can-hover) {
+src/components\MoreCases.astro:63:    .more-cases__toggle:hover { color: var(--text-link); }
+src/components\MoreCases.astro:64:    .more-cases__link:hover .more-cases__arrow { transform: translate(var(--space-1), calc(var(--space-1) * -1)); }
+src/components\MoreCases.astro:65:    .more-cases__link:hover h2 { text-decoration: underline; text-decoration-thickness: var(--border-width); text-underline-offset: var(--space-1); }
+src/components\Navbar.astro:174:    transition: color var(--motion-hover-duration) var(--motion-hover-ease);
+src/components\Navbar.astro:187:  .navbar__brand:active {
+src/components\Navbar.astro:220:    transition: color var(--motion-hover-duration) var(--motion-hover-ease);
+src/components\Navbar.astro:223:  .navbar__trigger:active {
+src/components\Navbar.astro:228:  @media (--can-hover) {
+src/components\Navbar.astro:229:    .navbar__trigger:hover {
+src/components\Navbar.astro:230:      color: var(--text-link-hover);
+src/components\ProjectDialog.astro:144:    transition:
+src/components\ProjectDialog.astro:163:    transition:
+src/components\ProjectDialog.astro:252:    transition: color var(--motion-state-duration) var(--motion-state-ease);
+src/components\ProjectDialog.astro:255:  @media (--can-hover) {
+src/components\ProjectDialog.astro:256:    .project-dialog__close:hover {
+src/components\ProjectDialog.astro:261:  .project-dialog__close:active {
+src/components\TextLink.astro:8: * подчёркивание, у arrow стрелка, у nav подчёркивание по hover и постоянное
+src/components\TextLink.astro:11: * Движение: Строка (motion-hover, ds/motion-concept.md §3.3). Подчёркивание
+src/components\TextLink.astro:16: * Наведение живёт под @media (--can-hover): на тач-устройстве :hover
+src/components\TextLink.astro:31:  /** Активный пункт навигации: подчёркивание постоянно, на hover не двигается. */
+src/components\TextLink.astro:82:    transition: color var(--motion-hover-duration) var(--motion-hover-ease);
+src/components\TextLink.astro:89:  .ds-link.is-inverse:focus-visible {
+src/components\TextLink.astro:97:  /* Нажатие. Ступень ниже hover — иначе на десктопе, где ссылка под курсором
+src/components\TextLink.astro:98:     уже держит hover-цвет, нажатие не видно вовсе. Быстрее наведения:
+src/components\TextLink.astro:100:  .ds-link:active {
+src/components\TextLink.astro:106:  .ds-link.is-inverse:active {
+src/components\TextLink.astro:130:    transform: scaleX(0);
+src/components\TextLink.astro:132:    transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
+src/components\TextLink.astro:135:  .ds-link:focus-visible .ds-link__rule,
+src/components\TextLink.astro:137:    transform: scaleX(1);
+src/components\TextLink.astro:143:  .ds-link:active .ds-link__rule {
+src/components\TextLink.astro:144:    transform: scaleX(1);
+src/components\TextLink.astro:150:  /* Активный пункт держит подчёркивание постоянно и на hover не двигается. */
+src/components\TextLink.astro:152:    transition: none;
+src/components\TextLink.astro:158:    transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
+src/components\TextLink.astro:162:     эмулирует :hover на тапе и держит его до следующего касания в стороне:
+src/components\TextLink.astro:164:  @media (--can-hover) {
+src/components\TextLink.astro:165:    .ds-link:hover {
+src/components\TextLink.astro:166:      color: var(--text-link-hover);
+src/components\TextLink.astro:169:    .ds-link--nav:hover {
+src/components\TextLink.astro:170:      color: var(--text-link-hover);
+src/components\TextLink.astro:173:    .ds-link.is-inverse:hover {
+src/components\TextLink.astro:177:    .ds-link:active {
+src/components\TextLink.astro:181:    .ds-link.is-inverse:active {
+src/components\TextLink.astro:185:    .ds-link:hover .ds-link__rule {
+src/components\TextLink.astro:186:      transform: scaleX(1);
+src/components\TextLink.astro:191:      .ds-link:hover :global(.ds-link__arrow) {
+src/components\TextLink.astro:192:        transform: translateX(var(--space-1));
+src/components\TextLink.astro:195:      .ds-link:hover :global(.ds-link__external) {
+src/components\TextLink.astro:196:        transform: translate(var(--space-1), calc(var(--space-1) * -1));
+src/components\TextLink.astro:206:      transition: none;

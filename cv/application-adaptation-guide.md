@@ -58,7 +58,7 @@ Do not change the headline to `Design Engineer`, `Webflow Developer` or `AI Prod
 
 - Use the branded CV for direct outreach, referrals, recruiter conversations and email applications.
 - Use the ATS resume for Workday, Greenhouse, Lever and LinkedIn applications.
-- Keep `Kazakhstan - UTC+5 - Open to relocation` visible.
+- Keep `Armenia (UTC+4) - Open to relocation` visible.
 - Keep sponsorship out of the general CV. Disclose it accurately in the application form or cover note where work-authorisation questions are asked.
 - Keep `Available immediately` while it remains true.
 - Keep the Specialist Degree wording. Do not translate it to BSc.
@@ -68,7 +68,7 @@ Do not change the headline to `Design Engineer`, `Webflow Developer` or `AI Prod
 - Prefer the ATS resume unless a recruiter asks for a designed CV.
 - Rename the file with `Resume`, not `CV`, if tailoring the filename.
 - Keep one column, no photo, no age, no marital status and no citizenship line.
-- Keep the location as Kazakhstan and state sponsorship requirements plainly in the application form.
+- Keep the location as Armenia (UTC+4) and state sponsorship requirements plainly in the application form.
 - A phone number is optional. Add one only after a complete international `+7` number is available.
 - If an application asks for credential equivalency, describe the education as `Specialist Degree in Veterinary Medicine`; do not claim a US/Canadian bachelor's equivalency without an assessment.
 

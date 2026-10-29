@@ -76,7 +76,7 @@ function experience() {
   return data.experience.map((entry) => `<article class="entry">
   <div class="entry-head">
     <h3 class="entry-title">${escapeHtml(entry.role)} <span>/ ${escapeHtml(entry.company)}</span></h3>
-    <p class="entry-date">${escapeHtml(entry.dates.replaceAll(' - ', ' / '))} <span aria-hidden="true">/</span> ${escapeHtml(entry.location)}</p>
+    <p class="entry-date">${entry.dates ? `${escapeHtml(entry.dates.replaceAll(' - ', ' / '))} <span aria-hidden="true">/</span> ` : ''}${escapeHtml(entry.location)}</p>
   </div>
   <p class="entry-sub">${escapeHtml(entry.description)}</p>
   <ul class="bullets">${entry.bullets.map((bullet) => `<li>${escapeHtml(bullet)}</li>`).join('')}</ul>

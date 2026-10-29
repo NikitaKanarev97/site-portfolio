@@ -56,7 +56,7 @@ export const home = {
      * против лимита в две строки на 360 px.
      */
     authorization:
-      'Armenia · remote now, open to relocation with visa sponsorship.',
+      'Armenia (UTC+4) · remote now, open to relocation with visa sponsorship.',
     /**
      * С 2026-08-25 открытых кейсов больше одного, и прежняя строка «Read the case:
      * B2B Partner Portal» называла один из них. Ведёт якорем в секцию
@@ -155,7 +155,7 @@ export const home = {
      * трёх сборках из четырёх.
      */
     heading: 'Selected web builds',
-    lead: 'Four marketing sites, from visual design to a working responsive build in Webflow.',
+    lead: 'Four live Webflow demo builds, from visual design to responsive implementation.',
     /** Полная роль показана в каждом ProjectDialog; в превью её сообщает подводка. */
     roleLabel: 'Role',
     roleValue: 'Design and Webflow build',
@@ -219,7 +219,7 @@ export const home = {
         href: TODO_WEBFLOW.bloomblex,
         summary:
           'Marketing site for a service that generates claims, complaints and lawsuits without a lawyer.',
-        body: 'Every block on the page answers one doubt: can a document made in five minutes hold up. What it generates, who it already worked for, what people ask before they trust it — and a CMS blog that keeps answering after launch.',
+        body: 'Every block on the page addresses a question about automated legal documents: what the service generates, how it works and what to know before getting started. A CMS blog provides space for more detailed answers.',
         stack: 'Webflow · GSAP · CMS · Client-First · forms',
         preview: '/media/development/bloomlex.webp',
         previewAlt:

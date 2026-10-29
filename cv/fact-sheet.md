@@ -1,6 +1,6 @@
 # Nikita Kanarev - CV Fact Sheet
 
-Updated: 2026-10-07
+Updated: 2026-10-28
 
 Public editorial rule: [CONTENT-RULES.md](../CONTENT-RULES.md) supersedes earlier project-status wording in this fact sheet. Describe the author's completed work without Concept or equivalent labels. Keep client work and own projects distinct in employment history, and do not invent human research, launch or business results.
 
@@ -16,8 +16,8 @@ Status legend:
 |---|---|---|
 | Name: Nikita Kanarev | VERIFIED | Current CV and `src/copy/site.ts`. |
 | Professional title: Product Designer | VERIFIED | Current CV and all portfolio case metadata. |
-| Current location: Kazakhstan | VERIFIED | Owner decision recorded in `src/copy/site.ts` and `ia/open-questions.md`. |
-| Time zone: UTC+5 | VERIFIED | `src/copy/site.ts`; IANA zone `Asia/Almaty`. |
+| Current location: Armenia | VERIFIED | Owner instruction 2026-10-28; `src/copy/site.ts` and `src/copy/about.ts`. |
+| Time zone: UTC+4 | VERIFIED | Owner instruction 2026-10-28; `src/copy/about.ts`; IANA zone `Asia/Yerevan`. |
 | Open to relocation | VERIFIED | Owner decision in `src/copy/about.ts` and current CV. |
 | Visa sponsorship required for relocation | VERIFIED, OMIT FROM MASTER CV | Owner decision in `src/copy/about.ts`. Disclose in application forms or a cover note; do not place it in the general CV because it acts as an early hard filter. |
 | Available for international remote work | VERIFIED | `src/copy/about.ts`. |
@@ -37,7 +37,7 @@ Status legend:
 | End-to-end ownership from research through systems, handoff and QA | VERIFIED | Current CV; DSSL and portfolio case process sections. |
 | Strong Figma / design-systems practice | VERIFIED | Portfolio cases document Figma systems, semantic tokens, component matrices, and Storybook parity. |
 | Technical implementation literacy | VERIFIED | React prototypes, Storybook catalogues, HTML/CSS, repository delivery and QA are evidenced across the portfolio projects. |
-| Work carried through to a deployed working build | VERIFIED WITH QUALIFIER | Owner decision 2026-08-31, `PLAYBOOK-upwork-positioning.md` §4. Evidenced by deployed prototypes (Pawly, Vet Clinic OS, the partner-portal reconstruction), the four production Webflow sites and `kanarev.com` itself. Permitted wording: `a deployed working build`, `a live URL`. **Do not extend it** to a production system under load, work inside a client's existing repository, backend, auth or payments — none of those are evidenced. |
+| Work carried through to a deployed working build | VERIFIED WITH QUALIFIER | Owner decision 2026-08-31, `PLAYBOOK-upwork-positioning.md` §4. Evidenced by deployed prototypes (Pawly, Vet Clinic OS, the partner-portal reconstruction), the four live Webflow demo builds and `kanarev.com` itself. Permitted wording: `a deployed working build`, `a live URL`. **Do not extend it** to a production system under load, work inside a client's existing repository, backend, auth or payments — none of those are evidenced. |
 | Senior Product Designer | DO NOT CLAIM | The requested positioning is mid-level / Product Designer, and no senior title is documented. |
 | Design Engineer as primary identity | DO NOT CLAIM | Technical fluency is a differentiator, not the role. |
 
@@ -81,7 +81,7 @@ Recommended narrative:
 | Pawly - product design, design system and working prototype | VERIFIED | Portfolio case. Research used secondary sources and a simulated interview; QA used synthetic runs. No bookings, users, revenue, conversion or retention data. |
 | Pawly production marketplace / live service | DO NOT CLAIM | Delivery evidence covers design and a prototype, without operational or business results. |
 | RUUN | DO NOT CLAIM in the master CV | The project was removed from the portfolio and has no current case-study proof. |
-| Four Webflow marketing sites | VERIFIED | Current repository lists Common, Synk, Scrib3 and Bloomlex. |
+| Four live Webflow demo builds | VERIFIED | Common, Synk, Scrib3 and Bloomlex. Present as independent published work, separate from paid client engagements; no commercial launch or business results claimed. |
 | Webflow role: design and build, end to end | VERIFIED | Explicit owner decisions dated 2026-08-25 and 2026-08-27. Use `designed and built`. |
 | Webflow production results or conversion metrics | DO NOT CLAIM | No evidence. Keep the work secondary to Product Design. |
 

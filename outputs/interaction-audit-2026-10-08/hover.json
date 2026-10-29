@@ -1,0 +1,226 @@
+[
+  {
+    "label": "Hero PDF",
+    "path": "/ru/",
+    "styles": [
+      {
+        "color": "rgb(132, 32, 20)",
+        "duration": "0.12s",
+        "hover": true,
+        "opacity": "1",
+        "selector": ".hero__actions .ds-link",
+        "transform": "none"
+      },
+      {
+        "color": "rgb(132, 32, 20)",
+        "duration": "0.16s",
+        "hover": false,
+        "opacity": "1",
+        "selector": ".hero__actions .ds-link__arrow",
+        "transform": "matrix(1, 0, 0, 1, 4, 0)"
+      },
+      {
+        "color": "rgb(132, 32, 20)",
+        "duration": "0.12s",
+        "hover": false,
+        "opacity": "1",
+        "selector": ".hero__actions .ds-link__rule",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    ]
+  },
+  {
+    "label": "Copy email",
+    "path": "/ru/",
+    "styles": [
+      {
+        "color": "rgb(179, 43, 27)",
+        "duration": "0.16s",
+        "hover": true,
+        "opacity": "1",
+        "selector": ".copy-email--action .copy-email__button",
+        "transform": "none"
+      },
+      {
+        "color": "rgb(179, 43, 27)",
+        "duration": "0.16s",
+        "hover": false,
+        "opacity": "1",
+        "selector": ".copy-email--action .copy-email__rule",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    ]
+  },
+  {
+    "label": "LinkedIn",
+    "path": "/ru/",
+    "styles": [
+      {
+        "color": "rgb(212, 50, 32)",
+        "duration": "0.16s",
+        "hover": false,
+        "opacity": "1",
+        "selector": ".ds-link:has(.ds-link__external)",
+        "transform": "none"
+      },
+      {
+        "color": "rgb(212, 50, 32)",
+        "duration": "0.16s",
+        "hover": false,
+        "opacity": "1",
+        "selector": ".ds-link__external",
+        "transform": "none"
+      }
+    ]
+  },
+  {
+    "label": "Featured case",
+    "path": "/ru/",
+    "styles": [
+      {
+        "color": "rgb(181, 43, 27)",
+        "duration": "0.16s",
+        "hover": true,
+        "opacity": "1",
+        "selector": "#work-agent-ops-console .featured-case__cta",
+        "transform": "none"
+      },
+      {
+        "color": "rgb(181, 43, 27)",
+        "duration": "0.16s",
+        "hover": false,
+        "opacity": "1",
+        "selector": "#work-agent-ops-console .featured-case__rule",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "color": "rgb(255, 255, 255)",
+        "duration": "0.16s",
+        "hover": false,
+        "opacity": "1",
+        "selector": "#work-agent-ops-console .featured-case__stage",
+        "transform": "matrix(1, 0, 0, 1, 0, -4)"
+      },
+      {
+        "color": "rgb(181, 43, 27)",
+        "duration": "0.16s",
+        "hover": false,
+        "opacity": "1",
+        "selector": "#work-agent-ops-console .featured-case__arrow",
+        "transform": "matrix(1, 0, 0, 1, 4, 0)"
+      }
+    ]
+  },
+  {
+    "label": "LinkedIn exact",
+    "path": "/ru/",
+    "styles": [
+      {
+        "color": "rgb(181, 43, 27)",
+        "duration": "0.16s",
+        "hover": true,
+        "opacity": "1",
+        "selector": "a[href*=\"linkedin.com\"]",
+        "transform": "none"
+      },
+      {
+        "color": "rgb(181, 43, 27)",
+        "duration": "0.16s",
+        "hover": false,
+        "opacity": "1",
+        "selector": "a[href*=\"linkedin.com\"] .ds-link__external",
+        "transform": "matrix(1, 0, 0, 1, 4, -4)"
+      }
+    ]
+  },
+  {
+    "label": "About chapter",
+    "path": "/ru/about/",
+    "styles": [
+      {
+        "color": "rgb(132, 32, 20)",
+        "duration": "0.12s",
+        "hover": true,
+        "opacity": "1",
+        "selector": ".chapter-index .ds-link",
+        "transform": "none"
+      },
+      {
+        "color": "rgb(132, 32, 20)",
+        "duration": "0.12s",
+        "hover": false,
+        "opacity": "1",
+        "selector": ".chapter-index .ds-link__rule",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "color": "rgb(132, 32, 20)",
+        "duration": "0.16s",
+        "hover": false,
+        "opacity": "1",
+        "selector": ".chapter-index .ds-link__arrow--down",
+        "transform": "matrix(1, 0, 0, 1, 0, 4)"
+      }
+    ]
+  },
+  {
+    "label": "Next case",
+    "path": "/ru/work/partner-portal/",
+    "styles": [
+      {
+        "color": "rgb(255, 255, 255)",
+        "duration": "0.16s",
+        "hover": true,
+        "opacity": "1",
+        "selector": ".case-next__link",
+        "transform": "none"
+      },
+      {
+        "color": "rgb(255, 138, 117)",
+        "duration": "0.16s",
+        "hover": false,
+        "opacity": "1",
+        "selector": ".case-next__rule",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "color": "rgb(255, 138, 117)",
+        "duration": "0.16s",
+        "hover": false,
+        "opacity": "1",
+        "selector": ".case-next__arrow",
+        "transform": "matrix(1, 0, 0, 1, 4, 0)"
+      }
+    ]
+  },
+  {
+    "label": "Web build",
+    "path": "/ru/",
+    "styles": [
+      {
+        "color": "rgb(27, 27, 24)",
+        "duration": "0.16s",
+        "hover": true,
+        "opacity": "1",
+        "selector": ".dev__link",
+        "transform": "none"
+      },
+      {
+        "color": "rgb(27, 27, 24)",
+        "duration": "0.16s",
+        "hover": true,
+        "opacity": "1",
+        "selector": ".dev__preview",
+        "transform": "matrix(1, 0, 0, 1, 0, -4)"
+      },
+      {
+        "color": "rgb(181, 43, 27)",
+        "duration": "0.16s",
+        "hover": false,
+        "opacity": "1",
+        "selector": ".dev__name",
+        "transform": "none"
+      }
+    ]
+  }
+]

@@ -2,6 +2,8 @@
 
 Checked: 2026-08-27
 
+Location and Webflow positioning updated locally: 2026-10-28. LinkedIn has not been rechecked or edited.
+
 | Fact | CV | Portfolio | LinkedIn | Status |
 |---|---|---|---|---|
 | Primary title | Product Designer | Product Designer | Webflow Developer | MISMATCH - LinkedIn must be updated |
@@ -10,12 +12,12 @@ Checked: 2026-08-27
 | DSSL dates | Sep 2023-Mar 2026 | Same | Not visible | MISSING ON LINKEDIN |
 | DSSL role | Product Designer | Product Designer | Not visible | MISSING ON LINKEDIN |
 | Freelance dates | Jan 2023-Present; current scope is self-directed portfolio work | Current cases confirm ongoing work | Not aligned | NEEDS LINKEDIN UPDATE |
-| Location | Kazakhstan | Kazakhstan | Kazakhstan | CONSISTENT |
+| Location | Armenia (UTC+4) | Armenia (UTC+4) | Requires profile check | CV / PORTFOLIO ALIGNED; LINKEDIN NOT UPDATED HERE |
 | Relocation | Open to relocation | Same | Germany/Europe relocation; sponsorship required | PARTIAL - CV intentionally omits sponsorship |
 | DSSL case | Shipped commercial redesign; published case is a reconstruction | Same disclosure | Not present | CONSISTENT where stated |
 | Agent Ops Console | Tested client prototype, not a production launch | Same disclosure | Not present | CONSISTENT where stated |
 | Vet Clinic OS | Selected veterinary SaaS prototype; not production | Same disclosure | Not present | CONSISTENT where stated |
-| Webflow | Four sites designed and built end to end | Same | Webflow presented as primary profession | FACT CONSISTENT; EMPHASIS MISMATCH |
+| Webflow | Four live Webflow demo builds, under independent projects | Same | Requires profile check | CV / PORTFOLIO ALIGNED; LINKEDIN NOT UPDATED HERE |
 | Degree | Specialist Degree in Veterinary Medicine; Veterinary Doctor | Not stated | Not visible | VERIFIED IN CV FROM DIPLOMA |
 | Phone | Omitted because supplied digits are incomplete | Not published | Check before editing | SAFE IN CV |
 | Portfolio domain | kanarev.com | kanarev.com | Older Vercel link | UPDATE LINKEDIN LINK |
@@ -32,7 +34,7 @@ Checked: 2026-08-27
 >
 > My strongest work sits in legacy-heavy and multi-role domains: a distributor partner portal, internal learning tools, veterinary operations and oversight for an AI support agent. I build semantic component systems and use React, Storybook and Webflow to make decisions testable and delivery clearer.
 >
-> Based in Kazakhstan (UTC+5), open to international remote work and relocation, and available immediately. Portfolio: https://kanarev.com/#work
+> Based in Armenia (UTC+4), open to international remote work and relocation, and available immediately. Portfolio: https://kanarev.com/#work
 
 ### DSSL experience
 
@@ -46,9 +48,12 @@ Checked: 2026-08-27
 
 `Freelance Product Designer | Self-employed | Jan 2023-Present | Remote`
 
-- Client and self-directed product work across B2B SaaS, veterinary operations and service marketplaces.
-- Designed and built four production Webflow marketing sites end to end.
+- Paid client product work across B2B SaaS and veterinary operations.
 - Current activity is self-directed product and portfolio work; the most recent paid client contract ended in spring 2026.
+
+### Selected independent projects
+
+- Designed and built four live Webflow demo builds end to end: Common, Synk, Scrib3 and Bloomlex.
 
 ## Required public-profile actions
 
