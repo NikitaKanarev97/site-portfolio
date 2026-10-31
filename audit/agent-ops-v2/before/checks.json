@@ -1,0 +1,42 @@
+{
+  "origin": "http://127.0.0.1:4395",
+  "baseline": "b7a4051",
+  "results": [
+    {
+      "name": "en-1440",
+      "errors": [],
+      "path": "/work/agent-ops-console",
+      "scrollWidth": 1440,
+      "viewportWidth": 1440,
+      "brokenImages": []
+    },
+    {
+      "name": "en-390",
+      "errors": [],
+      "path": "/work/agent-ops-console",
+      "scrollWidth": 390,
+      "viewportWidth": 390,
+      "brokenImages": [
+        "http://127.0.0.1:4395/media/pilot-agent-ops/transcript-framed-390.webp"
+      ]
+    },
+    {
+      "name": "ru-1440",
+      "errors": [],
+      "path": "/ru/work/agent-ops-console",
+      "scrollWidth": 1440,
+      "viewportWidth": 1440,
+      "brokenImages": []
+    },
+    {
+      "name": "ru-390",
+      "errors": [],
+      "path": "/ru/work/agent-ops-console",
+      "scrollWidth": 390,
+      "viewportWidth": 390,
+      "brokenImages": [
+        "http://127.0.0.1:4395/media/rebuild/agent-ops/ru/transcript-framed-390.webp"
+      ]
+    }
+  ]
+}

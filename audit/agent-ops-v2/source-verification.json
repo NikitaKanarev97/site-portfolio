@@ -1,0 +1,76 @@
+{
+  "repository": "NikitaKanarev97/Agent-ops-console",
+  "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+  "acceptedCodeRecovery": "6cecdb7 commits the previously uncommitted accepted Review Queue V2, Run Detail, Action Approvals V1.1 and Autonomy V1.1; b391a07 and 8bb61ba are audit-only snapshots.",
+  "screens": [
+    {
+      "screen": "review-queue",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "path": "src/screens/review-queue",
+      "acceptedTree": "6906ee810ccc7d697f9172703f5b83343e832004",
+      "capturedTree": "6906ee810ccc7d697f9172703f5b83343e832004",
+      "diff": ""
+    },
+    {
+      "screen": "run-detail",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "path": "src/screens/run-detail",
+      "acceptedTree": "33205037c8788581d280a4b6926b9ff1772ac945",
+      "capturedTree": "33205037c8788581d280a4b6926b9ff1772ac945",
+      "diff": ""
+    },
+    {
+      "screen": "action-approvals",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "path": "src/screens/action-approvals",
+      "acceptedTree": "4e396aa8cb32b52cde5f12b6877925ecd4c9333e",
+      "capturedTree": "4e396aa8cb32b52cde5f12b6877925ecd4c9333e",
+      "diff": ""
+    },
+    {
+      "screen": "autonomy",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "path": "src/screens/autonomy",
+      "acceptedTree": "0b8b821d7753f36b14519e8a2f2dd3a43cd10463",
+      "capturedTree": "0b8b821d7753f36b14519e8a2f2dd3a43cd10463",
+      "diff": ""
+    },
+    {
+      "screen": "quality-dashboard",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "00641af7706c0f941e5ee58f4da8ee9bf9bb94d6",
+      "path": "src/screens/quality-dashboard",
+      "acceptedTree": "ff46a295031a9497a634a985524ce158f8c4e78b",
+      "capturedTree": "ff46a295031a9497a634a985524ce158f8c4e78b",
+      "diff": ""
+    },
+    {
+      "screen": "policy-editor",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6399f6a4a586783f4eb20df7a9d93cb6076b06ed",
+      "path": "src/screens/policy-editor",
+      "acceptedTree": "d79940bad04f33ba420d92a2035e6e4f970024f3",
+      "capturedTree": "d79940bad04f33ba420d92a2035e6e4f970024f3",
+      "diff": ""
+    },
+    {
+      "screen": "policy-version-diff",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "path": "src/screens/policy-version-diff",
+      "acceptedTree": "eec842bcc2d4f1de44a4dc6fb833d2bad94ff750",
+      "capturedTree": "eec842bcc2d4f1de44a4dc6fb833d2bad94ff750",
+      "diff": ""
+    }
+  ],
+  "localization": {
+    "helper": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+    "sha256": "8721e363e332a04525ab87e541856c450b65db8c25e1cde820edd8be8c8e5e6c",
+    "note": "The accepted source has partial Russian localization. Capture-only text completion preserves actual DOM, technical identifiers, money, statuses, controls and approved interface geometry. No product commit was changed."
+  },
+  "sourceStates": 28
+}

@@ -1,7 +1,5 @@
 import { defineStory, type ShotItem } from './story';
 import { partnerPortalMap } from '../../data/diagrams/partner-portal/screen-map';
-import { partnerPortalFlow } from '../../data/diagrams/partner-portal/purchase-flow';
-import { partnerPortalSpecimen } from '../../data/diagrams/partner-portal/specimen';
 
 export const portalLineShot = (stage:string,alt:string,altNarrow=alt):ShotItem => ({
   src:`/media/rebuild/partner-portal/line-${stage}-wide.webp`,
@@ -9,91 +7,171 @@ export const portalLineShot = (stage:string,alt:string,altNarrow=alt):ShotItem =
 });
 
 /** Full B story; isolated preview only. Legacy export below remains public. */
-export const partnerPortalStory = defineStory({theme:'portal',plate:'light',
-  cover:{title:'Partner Portal',outcome:'A working specification, from intake to checkout.',media:{
-    variant:'proof',eyebrow:'DSSL · B2B procurement',
-    shot:portalLineShot('open','Buyer decision for row 38: original source text, eight units and three catalog candidates'),
-    caption:'Row 38: the source text beside three matches',
-  }},
-  facts:[{term:'Work',value:'Commercial redesign shipped in full'},
-    {term:'Role',value:'Sole designer; frontend, backend, PM, QA and team lead'},
-    {term:'Period',value:'2024–winter 2026'},
-    {term:'Product',value:'Open product',href:'https://b2b-partner-portal-five.vercel.app/'}],
-  blocks:[
-    {id:'audit-direction',type:'comparison',motion:'reveal',evidenceId:'portal-diagnosis',mediaId:'portal-archive',payload:{
-      thesis:{label:'Design direction',thesis:'Make space for the buyer',body:'The archived dashboard foregrounded promotions and left destinations behind icons. I made the specification the working object, with named navigation and separate responsibilities for matching and commercial terms.'},
-      issue:{src:'/media/case-dssl/legacy-dashboard.webp',alt:'DSSL dashboard: promotional banner and an icon-only navigation rail',
-        marks:[{x:55,y:10,text:'Procurement tasks first'},{x:1.6,y:32,text:'Named destinations'}],caption:'The archived dashboard, with audit notes'},
-    }},
-    {id:'shared-specification',type:'artifact',motion:'draw',evidenceId:'portal-scope',payload:{
-      thesis:{label:'Architecture',thesis:'A shared list',body:'XLS import and Quick order feed the same resolution workspace. Cart, supply planning and checkout have distinct jobs. The map shows eight key screens.'},
-      artifact:{data:partnerPortalMap,caption:'Eight key screens of the procurement workspace',source:{kind:'editorial',ref:'b2b-dssl/ia/sitemap.md; D007–D010'}},
-    }},
-    {id:'buyer-decision',type:'artifact',motion:'draw',evidenceId:'portal-decision',payload:{
-      thesis:{label:'Purchase logic',thesis:'Choose a product, then check terms',body:'Matching does not promise compatibility. Buyers choose or correct the item; Cart separately reviews commercial changes. Each decision has a visible return path before order creation.'},
-      artifact:{data:partnerPortalFlow,caption:'From the right product to commercial terms to an order',source:{kind:'editorial',ref:'b2b-dssl/ia/flows/xls-to-order.mmd; D007, D010, D026'}},
-    }},
-    {id:'source-line',type:'steps',motion:'focus',evidenceId:'portal-line',mediaId:'portal-line',payload:{label:'One source row',items:[
-      {label:'Choose',thesis:'Keep the request beside the candidates',body:'Row 38 of office_north_v8.xlsx asks for “камера 4мп уличная”, eight units. The buyer compares three matches and chooses the second.',shot:portalLineShot('open','Source row 38 and eight original units above three candidate products'),caption:'The second candidate selected'},
-      {label:'Confirm',thesis:'Confirm the choice, retain the source',body:'The source text and quantity remain. Confirmed records the buyer’s decision; “was Ambiguous” retains the original matching category. Undo keeps the choice reversible.',shot:portalLineShot('confirmed','Confirmed row 38, original eight units, original ambiguous category and Undo action'),caption:'Same row · chosen SKU KX-2CB4046F2-I · eight units'},
-      {label:'Prepare',thesis:'Carry the row into commercial review',body:'Cart identifies the chosen SKU as source row 38 and keeps quantity eight. Price and availability stay separate from product identity.',shot:portalLineShot('cart','Cart product row with chosen SKU, source row 38, quantity eight, price and availability'),caption:'Same row in Cart · the source trail is visible'},
-    ]}},
-    {id:'domain-system',type:'specimen',motion:'static',evidenceId:'portal-domain',mediaId:'portal-specimens',payload:{
-      thesis:{label:'Domain system',thesis:'States make the next action explicit',body:'Resolution rows retain the source request after a product is chosen. Availability records the warehouse response; shipment plans show whether supply is possible. A missing warehouse response reads “not confirmed”, never zero.'},
-      specimen:partnerPortalSpecimen('en'),
-    }},
-    {id:'source-in-context',type:'shot',motion:'reveal',evidenceId:'portal-line',mediaId:'portal-application',payload:{
-      shot:{layout:'desktop',items:[{src:'/media/rebuild/partner-portal/resolution-context-wide.webp',srcNarrow:'/media/rebuild/partner-portal/resolution-context-narrow.webp',device:'desktop',alt:'Resolution Center after choosing row 38: filter, resolved tab, reversible row and global progress',altNarrow:'Narrow Resolution Center after choosing row 38, with global progress below the row'}],caption:'Components in context · the same row after buyer confirmation'},
-    }},
-    {id:'shipped-redesign',type:'outcome',motion:'static',evidenceId:'portal-shipped',payload:{
-      result:{label:'Result',thesis:'The commercial redesign shipped',body:'The DSSL redesign shipped in full. I rebuilt the procurement scenario shown here with synthetic data.'},
-      evidence:{label:'Evidence',text:'Row 38 runs from product choice to Cart with its source text and quantity intact.'},
-      tradeoff:{label:'Trade-off',text:'Ambiguity still requires a buyer’s manual choice. Matching data cannot guarantee compatibility.'},
-    }},
-  ],prototype:{label:'Open product',href:'https://b2b-partner-portal-five.vercel.app/'},
+export const partnerPortalStory = defineStory({
+  theme: 'portal', plate: 'light',
+  cover: {
+    title: 'B2B Partner Portal',
+    outcome: 'Turning ambiguous product requests into traceable procurement decisions.',
+    media: {
+      variant: 'proof', eyebrow: 'DSSL · B2B procurement',
+      shot: portalLineShot('open', 'A source request kept beside three candidate products'),
+      caption: 'One buyer decision, with the original request still in view',
+    },
+  },
+  facts: [
+    { term: 'Work', value: 'Commercial redesign · shipped; portfolio reconstruction shown' },
+    { term: 'Role', value: 'Product designer · UX/UI, IA and design system' },
+    { term: 'Period', value: '2024–2026' },
+    { term: 'Prototype', value: 'Explore the interactive product', href: 'https://b2b-partner-portal-five.vercel.app/' },
+  ],
+  blocks: [
+    {
+      id: 'audit-direction', type: 'comparison', motion: 'reveal',
+      evidenceId: 'portal-diagnosis', mediaId: 'portal-archive',
+      payload: {
+        thesis: {
+          label: 'The challenge', thesis: 'A buyer needed a workspace, not another storefront',
+          body: 'The old dashboard prioritized promotion while a buyer had to resolve incomplete product requests. I made the active specification, clear navigation and next action the starting point.',
+        },
+        issue: {
+          src: '/media/case-dssl/legacy-dashboard.webp',
+          alt: 'Archived dashboard with promotional content and icon-only navigation',
+          marks: [{ x: 55, y: 10, text: 'Promotion displaced the task' }, { x: 1.6, y: 32, text: 'Navigation lacked labels' }],
+          caption: 'Before · the purchase task competed with promotional content',
+        },
+        after: {
+          layout: 'desktop',
+          items: [{
+            src: '/media/rebuild/partner-portal/2026/dashboard-wide.webp',
+            srcNarrow: '/media/rebuild/partner-portal/2026/dashboard-narrow.webp',
+            device: 'desktop',
+            alt: 'Redesigned procurement dashboard with active specification, progress and a clear continue action',
+          }],
+          caption: 'After · the specification becomes the primary work surface',
+        },
+      },
+    },
+    {
+      id: 'shared-specification', type: 'artifact', motion: 'draw', evidenceId: 'portal-scope',
+      payload: {
+        thesis: {
+          label: 'Architecture', thesis: 'Different entry points. One source of truth.',
+          body: 'Importing XLS or entering SKUs leads to the same working specification. Product matching, commercial review and shipment planning each have a distinct job.',
+        },
+        artifact: {
+          data: partnerPortalMap, caption: 'One workflow, eight connected product surfaces',
+          source: { kind: 'editorial', ref: 'b2b-dssl/ia/sitemap.md; D007–D010' },
+        },
+      },
+    },
+    {
+      id: 'source-line', type: 'steps', motion: 'static', composition: 'handoff', evidenceId: 'portal-line', mediaId: 'portal-line',
+      payload: {
+        label: 'One source line',
+        items: [
+          {
+            label: 'Choose', thesis: 'Keep the request beside the candidates',
+            body: 'Row 38 asks for an outdoor 4 MP camera, eight units. The buyer compares three matching products without losing the original wording.',
+            shot: portalLineShot('open', 'Source row 38 beside three candidates'),
+            caption: 'The buyer makes an informed choice',
+          },
+          {
+            label: 'Confirm', thesis: 'Record a decision without erasing its source',
+            body: 'The selected SKU is confirmed and can be undone. Source text, quantity and the original ambiguous match remain traceable.',
+            shot: portalLineShot('confirmed', 'Confirmed row 38 with original quantity and reversible choice'),
+            caption: 'Confirmed, but still traceable',
+          },
+          {
+            label: 'Review', thesis: 'Check price and availability separately',
+            body: 'The same source row reaches Cart. A chosen product is not proof of confirmed pricing, available stock or compatible equipment.',
+            shot: portalLineShot('cart', 'Row 38 with source identity, quantity, price and availability in Cart'),
+            caption: 'Identity resolved; commercial terms checked next',
+          },
+        ],
+      },
+    },
+    {
+      id: 'product-verification', type: 'shot', motion: 'reveal',
+      evidenceId: 'portal-product-details', mediaId: 'portal-product',
+      payload: {
+        thesis: {
+          label: 'Product verification', thesis: 'Make the product decision easier to trust',
+          body: 'A focused product page places technical specifications beside customer-specific pricing and warehouse availability. The action is clear without hiding what remains unconfirmed.',
+        },
+        shot: {
+          layout: 'desktop',
+          items: [{
+            src: '/media/rebuild/partner-portal/2026/product-wide.webp',
+            srcNarrow: '/media/rebuild/partner-portal/2026/product-narrow.webp',
+            device: 'desktop',
+            alt: 'Product Details with large equipment image, key specifications and a commercial purchase panel',
+          }],
+          caption: 'Product Details · specifications, price and availability in one view',
+        },
+      },
+    },
+    {
+      id: 'commercial-review', type: 'shot', motion: 'reveal',
+      evidenceId: 'portal-cart-v2', mediaId: 'portal-cart',
+      payload: {
+        thesis: {
+          label: 'Commercial review', thesis: 'Uncertainty must not look like a confirmed price',
+          body: 'The Cart links each product to its source row, shows quantity and unit price, and exposes blocking issues. Changed terms need buyer approval; missing prices never become zero.',
+        },
+        shot: {
+          layout: 'desktop',
+          items: [{
+            src: '/media/rebuild/partner-portal/2026/cart-wide.webp',
+            srcNarrow: '/media/rebuild/partner-portal/2026/cart-narrow.webp',
+            device: 'desktop',
+            alt: 'Procurement Cart with dense line items, unpriced row, readiness and sticky commercial totals',
+          }],
+          caption: 'Cart · line-level decisions and a single commercial summary',
+        },
+      },
+    },
+    {
+      id: 'fulfillment-decision', type: 'shot', motion: 'reveal',
+      evidenceId: 'portal-fulfillment-v2', mediaId: 'portal-fulfillment',
+      payload: {
+        thesis: {
+          label: 'Fulfillment', thesis: 'Choose the trade-off, not a fictional delivery promise',
+          body: 'Buyers compare completion date, warehouse handovers and delivery cost after commercial review. The order stays the same; the supply plan is the decision.',
+        },
+        shot: {
+          layout: 'desktop',
+          items: [{
+            src: '/media/rebuild/partner-portal/2026/fulfillment-wide.webp',
+            srcNarrow: '/media/rebuild/partner-portal/2026/fulfillment-narrow.webp',
+            device: 'desktop',
+            alt: 'Fulfillment plan comparison showing speed, shipment count, warehouses and delivery cost',
+          }],
+          caption: 'Fulfillment · a visible choice between speed and fewer shipments',
+        },
+      },
+    },
+    {
+      id: 'shipped-redesign', type: 'outcome', motion: 'static', evidenceId: 'portal-shipped',
+      payload: {
+        presentation: 'editorial',
+        result: {
+          label: 'Outcome', thesis: 'A traceable path to purchase',
+          body: 'The commercial redesign shipped. I later reconstructed and polished this flow with synthetic data for the portfolio; the screens demonstrate the decisions, not measured post-launch improvements.',
+        },
+        evidence: {
+          label: 'What the prototype shows',
+          text: 'Source rows remain identifiable through matching and Cart; product identity and commercial readiness have separate checks.',
+        },
+        tradeoff: {
+          label: 'The trade-off',
+          text: 'Some ambiguity still needs a buyer. Compatibility is never implied by a match, unconfirmed prices are not guessed, and delivery is priced only when a fulfillment plan is chosen.',
+        },
+      },
+    },
+  ],
+  prototype: { label: 'Open the interactive product', href: 'https://b2b-partner-portal-five.vercel.app/' },
 });
 
-/**
- * Тексты кейса B2B Partner Portal — маршрут /work/partner-portal
- *
- * Композиция — ds/screens/case-dssl.md. Фактура собрана из проекта
- * d:\Claude-projects\b2b-dssl: outputs/brief.md, ds/DECISIONS.md,
- * ds/patterns.md, ds/components.md, audit/audit_report.md,
- * audit/agent_qa_2026-08-23.md. Ни одна цифра здесь не выдумана: 17,9 с и
- * 0,9–2,8 с, семь находок, два критических, 560 px, три прогона из трёх —
- * всё из перечисленных файлов. Числа доводки (24 + 22 компонента, 23 из 23
- * стоковых значений, 1.046:1, 75 боксов, пять ложных ответов) — из прогона
- * audit/product-polish/ того же проекта: BACKLOG.md, ds/DECISIONS.md D018–D032,
- * evidence/refinement-closeout/checks.md.
- *
- * Три правила, которые этот файл обязан держать:
- *
- * 1. Ни одной бизнес-метрики (CASE-12, US-09). Результаты закрыты NDA, и
- *    baseline у проекта нет. Числа выше — про прогон и про систему, не про
- *    бизнес, и в тексте это названо прямо.
- * 2. Ни одного реального названия, артикула и коммерческого условия
- *    (CASE-22, US-19). Данные на кадрах synthetic по D013 проекта b2b-dssl.
- *    Имя заказчика — исключение, подтверждённое владельцем 2026-08-24.
- * 3. Заголовки — утверждения (CASE-14). Прочтение только заголовков и
- *    подписей обязано давать связный пересказ логики.
- *
- * v1.0 выходит на английском. Сквозные строки — в ../site.ts.
- */
-
-/**
- * Факты о реальной работе с порталом — решение владельца 2026-08-24. В
- * артефактах проекта b2b-dssl их нет ни в одном файле; источник — владелец.
- *
- * Год. Задача началась в 2024, надолго откладывалась, возобновилась и была
- * закрыта зимой 2026 — отсюда широкий диапазон при шести месяцах активной
- * работы. Начало подтверждается кадрами живого портала в b2b-dssl/
- * pages-default: акция на них датирована 1 октября — 31 декабря 2024.
- * Верхняя граница сходится с трудовой хронологией: DSSL, сентябрь 2023 —
- * март 2026. Duration называет паузу прямо, иначе диапазон читается как
- * приписанный срок.
- *
- * Год продублирован в src/copy/home.ts: правятся оба места.
- */
 const YEAR = '2024–2026';
 const TEAM = 'Sole designer — with frontend, backend, a product manager, QA and the team lead';
 const RESEARCH = 'Product manager on the team; no researcher — the research was mine';

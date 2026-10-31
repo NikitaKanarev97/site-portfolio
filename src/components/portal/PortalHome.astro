@@ -1,0 +1,33 @@
+---
+/** Dedicated homepage composition over accepted row-19 evidence. */
+import PortalShot from './PortalShot.astro';
+import { portalHome } from '../../copy/portal-home';
+interface Props { locale: 'en' | 'ru'; loading?: 'eager' | 'lazy' }
+const { locale = 'en', loading = 'lazy' } = Astro.props;
+const copy = portalHome[locale];
+---
+<div class="portal-home">
+  <div class="portal-home__story">
+    <p class="ds-meta-sm portal-home__eyebrow">{copy.label}</p>
+    <p class="ds-display-5xl portal-home__progress">{copy.progress}</p>
+    <p class="ds-heading-xl">{copy.thesis}</p>
+    <p class="ds-body-base portal-home__body">{copy.body}</p>
+  </div>
+  <PortalShot variant="native" locale={locale} loading={loading} shot={{ desktop: 'decision-1280', mobile: 'workspace-top-390', alt: copy.alt }} />
+</div>
+<style>
+  .portal-home { display: grid; gap: var(--flow-node); padding: var(--stage-inset); background: var(--surface-portal-editorial); border-radius: var(--radius-lg); }
+  .portal-home__story { display: grid; gap: var(--flow-pair); align-content: center; }
+  .portal-home__story p { margin: 0; }
+  .portal-home__body, .portal-home__eyebrow { color: var(--text-subtle); }
+  @media (--bp-lg) {
+    .portal-home { grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); gap: var(--space-12); align-items: center; }
+  }
+  @media (--below-bp-md) {
+    .portal-home__story { grid-template-columns: auto minmax(0, 1fr); gap: var(--space-3) var(--space-4); }
+    .portal-home__eyebrow { grid-column: 1 / -1; }
+    .portal-home__progress { align-self: center; }
+    .portal-home__progress { white-space: nowrap; }
+    .portal-home__body { grid-column: 1 / -1; }
+  }
+</style>

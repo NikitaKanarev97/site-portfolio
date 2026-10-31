@@ -1,0 +1,48 @@
+[
+  {
+    "locale": "en",
+    "route": "/",
+    "width": 360,
+    "overflow": 0
+  },
+  {
+    "locale": "en",
+    "route": "/work/partner-portal",
+    "width": 360,
+    "overflow": 0
+  },
+  {
+    "locale": "en",
+    "focus": {
+      "outline": "solid",
+      "width": "3px"
+    }
+  },
+  {
+    "locale": "en",
+    "cardDestination": "http://127.0.0.1:4393/work/partner-portal"
+  },
+  {
+    "locale": "ru",
+    "route": "/",
+    "width": 360,
+    "overflow": 0
+  },
+  {
+    "locale": "ru",
+    "route": "/work/partner-portal",
+    "width": 360,
+    "overflow": 0
+  },
+  {
+    "locale": "ru",
+    "focus": {
+      "outline": "solid",
+      "width": "2px"
+    }
+  },
+  {
+    "locale": "ru",
+    "cardDestination": "http://127.0.0.1:4393/ru/work/partner-portal"
+  }
+]

@@ -1,4 +1,31 @@
-## H · текущий художественный delta · 04.10.2026
+# Screen: CaseDSSL
+
+## V2.1 correction · 31.10.2026 (supersedes V2 presentation below)
+
+Seven-section structure, buyer comparison and fulfillment remain. Hero uses surface-portal-editorial; main workspace dominates, complete DeltaRow appears as a compact desktop inset. Mobile shows one complete workspace capture ending at row 19, with no next-row sliver. Commerce uses surface-portal-context and centred complete owning cart-line + decision bar; meaningful native status edge is retained with a uniform 20 px field. Product verification keeps its source with extra top breathing room. Archival Before stays a subordinate historical reference without enlargement. Home uses dedicated PortalHome, not the case hero. Public prototype links explicitly say that the public version predates these screens. QA: audit/b2b-case-v21/.
+
+## V2 public case · 31.10.2026 (current)
+
+Routes `/work/partner-portal`, `/ru/work/partner-portal`. Renderer `src/components/portal/PortalCase.astro` + `PortalShot.astro` (case-scoped; the shared `CaseStory` stays frozen for the other cases). Copy `src/copy/cases/partner-portal-v2.ts` / `src/copy/ru/cases/partner-portal-v2.ts`, pair-checked by `assertPortalPair`. Media `public/media/rebuild/partner-portal/v2/{en,ru}/`, sizes and sources in `src/data/partner-portal-v2-media.json`. Brief: `tasks/b2b-case-v2/CLAUDE_HANDOFF.md`; references and QA: `audit/b2b-case-v2/`.
+
+Concept: **turning ambiguous product requests into traceable procurement decisions.** Cover direction B (specification → commercial decision) chosen over A (Dashboard-led): A spent the cover on a status page and duplicated module 01.
+
+Every frame is a fresh DPR 2 capture of `b2b-partner-portal@6bbe1cd` (synthetic data) by `scripts/b2b-v2/capture-product.mjs`. Crops are DOM boxes plus padding, never fixed rectangles; nothing ends inside a heading, card, table or control. Desktop sources are shot at 1280 so native width ≈ display width; a frame never renders wider than its capture (`--shot-native`). Phones get authentic 390 captures through `<picture>`.
+
+| # | Module | Narrative job | Evidence (media key → crop boundary) | Desktop / mobile |
+|---|---|---|---|---|
+| 0 | Cover (butter) | 3-second read: B2B workspace, ambiguous lines, a commercial decision | `workspace-1280` → full viewport fitted to the queue (all 7 open rows end above the sticky bar); `change-390` → row-19 cart line + its change panel | 9 / 3 columns, text on clean colour above; mobile `workspace-top-390` (top bar → row-19 card) + inset change card |
+| — | Facts | Role, period, shipped status, prototype | `MetaList layout=facts` | row / 2×2 |
+| 01 | Problem | Shop vs workspace, one honest before/after | archived `legacy-dashboard.webp` (unchanged); `dashboard-1280` → main column + top bar, ends 24 px under "Start a specification", above Recent orders | text+before 4 col, after plate 8 col; mobile `dashboard-390` → Current purchase card |
+| 02 | System | Two intakes → one specification → order | typographic six-step strip, no diagram | 6 / 3 / 2 columns |
+| 03 | Human decision | Narrow options, buyer decides, stays traceable | `decision-1280` → table head + row 19 + decision panel, candidate selected; `confirmed-1280` → confirmed row 19 alone (Resolved tab) | plate 8 col + "why not automate" note 3 col; mobile `decision-390`, `confirmed-390` |
+| 04 | Verification | Identity / price / stock are separate answers | `product-1280` → main column + top bar, ends 28 px under the product hero cards | plate 8 col + three proofs; mobile `product-390` fold |
+| 05 | Commercial review (dark band) | Unknown ≠ zero; total names what it counts | `unpriced-1280` → first unpriced line + panel; `cartbar-1280` → sticky summary bar | stacked strips at native width; mobile `unpriced-390`, `cartbar-390` |
+| 06 | Fulfillment | Same goods, visible trade-off | `fulfillment-1280` → page header, stepper and three-plan comparison, 20 px margins | full-width plate ≈ 1:1; mobile `fulfillment-390` → comparison stack |
+| 07 | Outcome | Shipped vs rebuild, three costs, prototype CTA | text only; CTA opens the locale's prototype | 5 / 6 columns; stacked |
+
+Rhythm: module step `space-24` mobile, `space-32` from bp-lg (one notch under `section-gap`). Motion: cover in `data-motion-intro` (lines → fade → fade-image); modules use registered `fade`, `fade-image`, `rise` groups; reduced motion leaves everything static and visible. The selection-fill defect from V1 (row 38) is absent in the accepted build; the old `line-*` frames and V1 `2026/` crops are not used by this route.
+
 
 Вход WorkStage: строка 38 / 8 единиц рядом с реальным целым выбором. Source-line focus и системный лист остаются. Источник сохраняется до корзины; в созданном demo order его snapshot отсутствует. UI edge/alpha без внешней белой рамки.
 
@@ -535,3 +562,8 @@ The remainder documents the earlier public route and remains as history. Its fix
 | Заголовок выхода → абзац → ссылка | 32 + 24 / 24 | `flow-node` / `flow-text` |
 
 **Найден и починен дефект разметки.** Строка исхода приходила в `NoteBlock variant=emphasis` абзацем — `<p data-motion>` внутри слота, — а корень этого варианта сам `<p>`. Абзац в абзаце невалиден: парсер разрывал узел на три, рамка `emphasis` доставалась пустому элементу, текст исхода шёл без кегля `ds-heading-xl` и без `measure-lead`, а поток секции считал обломки отдельными узлами и разводил их шагом. Дефект жил с первой сборки кейса и был виден только в собранном HTML. Набор объявляет корень блока сам — как в `CaseReframe` ниже по странице.
+
+
+### Screenshot geometry correction · 31.10.2026
+
+PortalShot now follows the intrinsic image ratio; borders cannot create a contain-fit letterbox. Home/decision/commercial-line evidence has no additional corner mask. The desktop hero DeltaRow has 16 px internal presentation padding on the exact native canvas. Commerce summary captures the complete bar inner module, excluding the outer page separator at its DOM boundary. Fulfillment is recaptured from c899933 (accepted product plus four-sided selected frame), with no product/business changes beyond that border correction. Follow-up evidence: audit/b2b-case-v21/geometry/.

@@ -1,0 +1,42 @@
+name: B2B case page visual evidence
+on:
+  push:
+    branches: [portfolio/b2b-case-visual-v1]
+    paths: [.github/workflows/b2b-case-page-review.yml, scripts/capture-b2b-case-page.mjs]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  capture:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Build production pages
+        run: npm run build
+      - name: Install Chromium
+        run: npx --yes playwright@1.56.1 install --with-deps chromium
+      - name: Install screenshot script runtime
+        run: npm install --no-save --package-lock=false playwright@1.56.1
+      - name: Capture portfolio pages with scrolling and overflow checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run preview -- --host 127.0.0.1 --port 4321 > /tmp/b2b-preview.log 2>&1 &
+          for i in $(seq 1 40); do curl -fsS http://127.0.0.1:4321/work/partner-portal >/dev/null && break || sleep 1; done
+          node scripts/capture-b2b-case-page.mjs
+      - name: Commit visual QA evidence to review branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f audit/b2b-case-refresh/page-review/*.png audit/b2b-case-refresh/page-review/*.webp audit/b2b-case-refresh/page-review/checks.json
+          if ! git diff --cached --quiet; then
+            git commit -m "test(b2b-case): real-page EN RU screenshots at 1440 and 390"
+            git push origin HEAD:portfolio/b2b-case-visual-v1
+          fi

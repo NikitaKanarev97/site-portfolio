@@ -394,3 +394,15 @@ About продолжает крупное двухстрочное вступл�
 # Типографика и ритм · 07.10.2026
 
 HeroPackage использует Onest и роль `ds-display-home`, сохраняя два тезиса, правое выравнивание акцентной строки от bp-lg и существующий индекс работ. Перед Hero — flow-group, внутренний шаг grid — flow-text / flow-node от bp-lg. PageShell и FeaturedCaseCover разделяются общим section-gap = 128 / 192 px до/от bp-lg. Изменение проходит через источник ds/tokens.css и его побайтовое зеркало; поля документальных изображений остаются собственными.
+
+## Portal module · 31.10.2026 (case-scoped)
+
+Модуль кейса Partner Portal V2: метка `ds-meta-sm` (колонки 1–3) | тезис `ds-heading-3xl` + текст `ds-body-lg` (4–12), ниже одно доказательство — плашка `surface-plate` с `PortalShot` на 8 колонок и узкая колонка пояснений (3) либо полноширинная плашка. Порядок «тезис → доказательство» не переставляется; текст никогда не стоит поверх кадра. Шаг между модулями — `space-24` / `space-32` от bp-lg. Используется только в `PortalCase`.
+
+
+## Portal homepage editorial composition · V2.1
+
+FeaturedCase → WorkStage → PortalHome → PortalShot. Text describes the real 41/48 fixture, desktop evidence compares two recorders for source row 19; mobile uses the first complete review card. The card retains FeaturedCase’s dimensions, link and focus treatment. Only the Portal branch changes. PortalShot retains intrinsic sizing and natural component edges.
+## Agent Ops case V2 · 31.10.2026
+
+`AgentCase` composes existing MetaList, typography, motion attributes, MediaZoom and CaseNext with documentary `AgentShot` figures; `AgentHome` supplies the Agent-only WorkStage composition. Details and map: `ds/screens/case-agent-ops.md` §Portfolio V2. On native screenshot crops, 24 CSS px of the sampled product canvas separates the header/customer text from the media boundary; source pixels remain unchanged. Mobile avoids a second enclosing field, desktop plates use space-6 and captions use flow-pair. Headings and captions never overlay UI. Whole long native screens remain available in the shared zoom. No token or shared motion change.

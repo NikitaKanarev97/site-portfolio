@@ -1,0 +1,37 @@
+From c899933a0ebcd9520194887eeb929bda2805477f Mon Sep 17 00:00:00 2001
+From: NikitaKanarev97 <204079494+NikitaKanarev97@users.noreply.github.com>
+Date: Sat, 31 Oct 2026 18:32:31 +0300
+Subject: [PATCH] fix(fulfillment): retain selected comparison frame on all
+ sides
+
+---
+ ds/components.md                                   | 5 +++++
+ src/components/FulfillmentPlan/FulfillmentPlan.css | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+
+diff --git a/ds/components.md b/ds/components.md
+index f9a13e7..36e971c 100644
+--- a/ds/components.md
++++ b/ds/components.md
+@@ -1016,3 +1016,8 @@ Approved by the owner at checkpoint 1. This revision supersedes conflicting visu
+ - **Sidebar/AppHeader**: white surfaces, dark monochrome source DSSL asset, 216 px expanded sidebar, selected blue navigation. Mobile drawer retains focus trap/close and reserves space for its close button. Header remains 64 px. Navigation/search/counterparty behavior unchanged.
+ - **PageHeader** gains optional `supportingSize = base | sm` (default base). ResolutionCenter uses sm for file metadata; no new page-specific font style.
+ - **Button/Input/Tabs/Radio/Breadcrumbs** use compact desktop geometry and retain mobile/touch targets. Coarse-pointer tablets retain minimum 44 px. Badge uses tonal border and 5 px radius. Native focus, disabled and loading semantics remain intact.
++
++
++### FulfillmentPlan comparison selection correction · 31 Oct 2026
++
++At desktop comparison widths, Selected now paints an inset stroke-focus frame on all four sides. The previous left-only inset shadow left the right/bottom edges without a selection boundary. An inset frame preserves track geometry, cannot be covered by the following row and leaves focus-within outlines independent. Mobile card borders remain unchanged. No state or business logic changes.
+diff --git a/src/components/FulfillmentPlan/FulfillmentPlan.css b/src/components/FulfillmentPlan/FulfillmentPlan.css
+index ed0b0a1..f1b7c87 100644
+--- a/src/components/FulfillmentPlan/FulfillmentPlan.css
++++ b/src/components/FulfillmentPlan/FulfillmentPlan.css
+@@ -93,7 +93,7 @@
+     padding: var(--space-4) var(--space-5);
+   }
+   .plan-comparison-row[data-state='selected'] {
+-    box-shadow: inset var(--stroke-focus) 0 var(--border-selected);
++    box-shadow: inset 0 0 0 var(--stroke-focus) var(--border-selected);
+   }
+   .plan-comparison-axes dt {
+     position: absolute;

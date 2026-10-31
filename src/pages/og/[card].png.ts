@@ -82,7 +82,12 @@ export const GET: APIRoute = async ({ params }) => {
     // Only site typography is replaced; no native UI colors or glyphs change.
     const half = OG_WIDTH / 2;
     const source = path.join(process.cwd(), 'public', 'media', 'linkedin', 'og', `${card.id}.png`);
-    const documentary = await sharp(source).extract({ left: half, top: 0, width: half, height: OG_HEIGHT }).png().toBuffer();
+    const isAgentV2 = card.id.startsWith('work-agent-ops-console-v2');
+    const documentary = isAgentV2
+      ? await sharp(path.join(process.cwd(), 'public/media/rebuild/agent-ops/v2', card.id.endsWith('-ru') ? 'ru' : 'en', 'approval-consequences-desktop.webp'))
+          .resize({ width: half - px('space-12'), fit: 'inside', withoutEnlargement: true })
+          .resize({ width: half, height: OG_HEIGHT, fit: 'contain', background: token('surface-subtle') }).png().toBuffer()
+      : await sharp(source).extract({ left: half, top: 0, width: half, height: OG_HEIGHT }).png().toBuffer();
     const svg = await satori({
       type: 'div',
       props: {

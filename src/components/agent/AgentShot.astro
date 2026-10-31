@@ -1,0 +1,47 @@
+---
+import media from '../../data/agent-ops-v2-media.json';
+import { px } from '../../lib/tokens';
+import type { AgentShotCopy } from '../../copy/cases/agent-ops-v2';
+interface Props { shot: AgentShotCopy; locale: 'en' | 'ru'; loading?: 'eager' | 'lazy'; class?: string; zoom?: boolean; href?: string }
+const { shot, locale, loading = 'lazy', class: className, zoom = true, href } = Astro.props;
+type Entry = { src: string; width: number; height: number; cssWidth: number };
+const pick = (key: string) => {
+  const result = (media as Record<string, Entry>)[`${locale}/${key}`];
+  if (!result) throw new Error(`AgentShot: missing ${locale}/${key}`);
+  return result;
+};
+const desktop = pick(shot.desktop), mobile = pick(shot.mobile);
+const fullDesktop = shot.fullDesktop ? pick(shot.fullDesktop) : undefined;
+const fullMobile = shot.fullMobile ? pick(shot.fullMobile) : undefined;
+const label = locale === 'ru' ? 'Рассмотреть экран' : 'Inspect screen';
+const fullLabel = locale === 'ru' ? 'Посмотреть полный экран' : 'Inspect the complete screen';
+---
+<figure class:list={['agent-shot', className]} style={`--agent-native: ${desktop.cssWidth}px; --agent-native-mobile: ${mobile.cssWidth}px`} data-agent-shot={shot.desktop}>
+  <a class:list={['agent-shot__image', href && 'agent-shot__image--case']} href={href ?? desktop.src} data-astro-reload={href ? undefined : true} data-zoom-trigger={zoom && !href || undefined}
+    data-zoom-src={desktop.src} data-zoom-native="true" data-zoom-alt={shot.alt}
+    data-zoom-caption={shot.caption ?? shot.alt} aria-label={href ? (locale === 'ru' ? 'Читать кейс Agent Ops Console' : 'Read the Agent Ops Console case') : `${label}: ${shot.alt}`}>
+    <picture>
+      <source media={`(max-width: ${px('bp-md') - 1}px)`} srcset={mobile.src} width={mobile.width} height={mobile.height} />
+      <img src={desktop.src} width={desktop.width} height={desktop.height} alt={shot.alt}
+        loading={loading} decoding="async" fetchpriority={loading === 'eager' ? 'high' : undefined} />
+    </picture>
+  </a>
+  {(shot.caption || fullDesktop || fullMobile) && <figcaption class="agent-shot__caption ds-body-sm">
+    {shot.caption && <span>{shot.caption}</span>}
+    {fullDesktop && <a class="agent-shot__full agent-shot__full--wide" href={fullDesktop.src} data-astro-reload data-zoom-trigger data-zoom-fixed="true" data-zoom-src={fullDesktop.src} data-zoom-native="true" data-zoom-alt={shot.alt}>{fullLabel}<span aria-hidden="true"> +</span></a>}
+    {fullMobile && <a class="agent-shot__full agent-shot__full--narrow" href={fullMobile.src} data-astro-reload data-zoom-trigger data-zoom-fixed="true" data-zoom-src={fullMobile.src} data-zoom-native="true" data-zoom-alt={shot.alt}>{fullLabel}<span aria-hidden="true"> +</span></a>}
+  </figcaption>}
+</figure>
+<style>
+  .agent-shot { display: grid; gap: var(--flow-pair); inline-size: 100%; min-inline-size: 0; max-inline-size: var(--agent-native); margin: 0; }
+  .agent-shot__image { display: block; min-inline-size: 0; cursor: zoom-in; color: inherit; }
+  .agent-shot__image--case { cursor: pointer; }
+  .agent-shot__image picture, .agent-shot__image img { display: block; inline-size: 100%; block-size: auto; }
+  .agent-shot__caption { display: grid; gap: var(--space-2); max-inline-size: var(--measure-text); color: var(--text-subtle); }
+  .agent-shot__full { display: flex; align-items: center; gap: var(--space-2); min-block-size: var(--space-12); color: var(--text-link); text-decoration: underline; text-underline-offset: var(--space-1); }
+  .agent-shot__full--wide { display: none; }
+  .agent-shot__full:active { color: var(--text-link-pressed); }
+  @media (--can-hover) { .agent-shot__full:hover { color: var(--text-link-hover); } }
+  @media (--below-bp-md) { .agent-shot { max-inline-size: var(--agent-native-mobile); } }
+  @media (--bp-md) { .agent-shot__full--wide { display: flex; } .agent-shot__full--narrow { display: none; } }
+</style>

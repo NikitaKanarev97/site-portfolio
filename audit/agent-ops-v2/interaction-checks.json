@@ -1,0 +1,36 @@
+[
+  {
+    "locale": "en",
+    "focus": {
+      "outline": "solid",
+      "width": "3px",
+      "color": "rgb(27, 27, 24)"
+    },
+    "cardNavigation": "http://127.0.0.1:4490/work/agent-ops-console",
+    "zoomSrc": "http://127.0.0.1:4490/media/rebuild/agent-ops/v2/en/approval-task-mobile.webp",
+    "fullSrc": "/media/rebuild/agent-ops/v2/en/action-approvals-mobile.webp",
+    "escapeRestoresFocus": true,
+    "reduced": {
+      "hidden": 0,
+      "overflow": 0,
+      "sections": 7
+    }
+  },
+  {
+    "locale": "ru",
+    "focus": {
+      "outline": "solid",
+      "width": "3px",
+      "color": "rgb(27, 27, 24)"
+    },
+    "cardNavigation": "http://127.0.0.1:4490/ru/work/agent-ops-console",
+    "zoomSrc": "http://127.0.0.1:4490/media/rebuild/agent-ops/v2/ru/approval-task-mobile.webp",
+    "fullSrc": "/media/rebuild/agent-ops/v2/ru/action-approvals-mobile.webp",
+    "escapeRestoresFocus": true,
+    "reduced": {
+      "hidden": 0,
+      "overflow": 0,
+      "sections": 7
+    }
+  }
+]

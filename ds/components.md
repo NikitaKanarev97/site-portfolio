@@ -568,3 +568,27 @@ Learn documentary regions include native pale-blue fields. Completion begins wit
 Композиция существующих MediaFrame и TextLink для Home/About описана в ds/patterns.md. Фотография 3:4, короткий тезис ds-heading-2xl и цель высотой минимум space-12. Фон фотографии скруглён radius-lg в самой композиции, без изменения вариантов MediaFrame. Это общий файл паттерна, не новая интерактивная сущность /kit.
 
 Navbar использует Images/logo-portfolio-v4.svg. BaseLayout — favicon-v4.svg и PNG16/32; версия и геометрия из ds/logo.md. MediaZoom и прочие механики текущих кейсов сохранены.
+
+## PortalCase · PortalShot · 31.10.2026 (case-scoped)
+
+Только маршрут Partner Portal (`/work/partner-portal`, RU). Карта — `ds/screens/case-dssl.md` §V2. Общий `CaseStory` и `Case*.astro` не тронуты.
+
+- **PortalCase** (`src/components/portal/PortalCase.astro`) — рендер кейса V2: обложка на `surface-cover-portal` (текст на чистом цвете, кадры ниже), лист с `MetaList layout=facts`, модули «метка | тезис + текст» на 12 колонках, одна тёмная полоса `surface-plate-dark`, итог с CTA прототипа, общий `CaseNext`. Токены и роли типографики — только из ДС. Движение — зарегистрированные `lines`, `fade`, `fade-image`, `rise` и `data-motion-intro`; новых движений нет.
+- **PortalShot** (`src/components/portal/PortalShot.astro`) — один кадр продукта: `<picture>` с подлинным 390-px кадром ниже bp-md, рамка `border-default` + `radius-md`, подпись под кадром. Варианты `frame` (умолчание) и `strip` (однострочный макро). Кадр не растягивается шире документальной ширины (`--shot-native`, как `ShotItem.nativeWidth`). Компонент не кадрирует: кроп — граница DOM-узла на съёмке.
+- Доступность: у каждого кадра полный alt по содержимому; заголовки модулей h2 со связью `aria-labelledby`; CTA — внешняя ссылка с видимым фокусом.
+
+
+## Portal V2.1 · 31.10.2026
+
+- PortalHome (`src/components/portal/PortalHome.astro`): dedicated FeaturedCase composition over accepted row-19 evidence; editorial progress 41/48, two-candidate comparison on desktop, real mobile review on phones. Semantic surface-portal-editorial, existing typography/spacing, parent stretched case link. No new interactions.
+- PortalCase: cool neutral hero and commercial band; desktop single dominant workspace plus complete native DeltaRow inset. Mobile prioritises one workspace. Commerce centres complete cart-line parent and summary at native widths, with uniform native canvas fields. Verification adds space-8/space-12 above the unchanged interface.
+
+
+## Portal screenshot geometry correction · 31.10.2026
+
+PortalShot uses intrinsic image height (width:100%, height:auto; picture:block), never a border-box aspect ratio plus contain. `native` preserves square UI edges without a second border or corner mask (Home comparison, decision and commercial line). `detail` adds space-4 inside surface-portal-native around the complete DeltaRow. `panel` frames full cart-bar inner content with space-4 on white; the page separator belongs to the excluded outer bar. Native rounded full-window frames retain the existing frame variant. Thin UI lines use lossless WebP for cart/fulfillment evidence.
+## Agent Ops Portfolio V2 · 31.10.2026
+
+RU homepage correction: from bp-lg, the editorial column has a min-content minimum so Russian nonbreaking phrases preserve the existing space-12 gap to the screenshot. EN grid and typography stay unchanged.
+
+Case-scoped `agent/AgentCase`, `AgentHome`, `AgentShot`: dedicated composition over genuine accepted product captures. The global case renderer and other themes stay unchanged. `AgentShot` uses a responsive picture, real native dimensions from `src/data/agent-ops-v2-media.json`, an existing MediaZoom target, separate caption and optional full-screen inspection link. No image cropping, perspective, UI overlays or independent content animation. `AgentCase`: complete approval task beside the hero thesis, facts, seven numbered editorial sections, historical context metrics, a six-step editorial operating flow, seven product screen types and a tested/accepted outcome. `AgentHome` pairs a modest editorial statement with the actual consequence scene. Existing semantic surface/space/typographic/focus roles only. Media fields: 24 CSS px of captured-product canvas around all isolated native panel crops; no second mobile frame, space-6 neutral field from bp-md; image-to-caption flow-pair; head-to-image flow-node; modules space-24/space-32. Native source corners remain intact. Both locales share structure/media assertions. Capture-only RU string completion is documented in the image provenance; product source is unchanged.
