@@ -2,8 +2,6 @@ import { partnerPortal } from '../../cases/partner-portal.ts';
 import { portalLineShot, partnerPortalStory } from '../../cases/partner-portal.ts';
 import { defineStory, assertStoryPair } from '../../cases/story';
 import { partnerPortalMap } from '../../../data/diagrams/partner-portal/screen-map';
-import { partnerPortalFlow } from '../../../data/diagrams/partner-portal/purchase-flow';
-import { partnerPortalSpecimen } from '../../../data/diagrams/partner-portal/specimen';
 import { withRussianMedia } from './utils.ts';
 
 /** Кадры продукта сняты русской локалью прототипа в соседние папки `ru/`
