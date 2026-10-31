@@ -62,8 +62,13 @@ export const home = {
      * B2B Partner Portal» называла один из них. Ведёт якорем в секцию
      * Selected work: выбор между двумя делает читатель, а не шапка.
      */
-    proofLabel: 'My work in practice · Agent Ops',
-    proofCaption: 'AI oversight: a person checks the context and a $340 refund before approval.',
+    portrait: {
+      src: '/media/about/portrait.webp',
+      alt: 'Nikita Kanarev in a taupe knit sweater against a light background',
+      headline: ['Research.', 'Design.', 'Build.'],
+      link: 'About me and my approach',
+      href: '/about',
+    },
     caseEntry: 'Read the cases',
     cv: 'Download CV (PDF)',
   },

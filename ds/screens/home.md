@@ -310,3 +310,7 @@ Current composition: name metadata → Product Designer h1 → short specialisat
 
 
 Owner correction 04.10.2026: hero proof is explicitly a work example of AI oversight, and its whole surface opens Agent Ops. Featured work surfaces and native frames open their case. Large CTA remains visible; zoom belongs to case detail. The H4 two-line opening and differentiated materials remain.
+
+## Знакомство в текущем H-дизайне · 05.10.2026
+
+По уточнению владельца: фото сначала адаптируется к новому дизайну, затем объединяется на4394. Двухстрочное позиционирование, смещённая рыжая строка и пять быстрых входов сохранены. Повтор Agent approval в hero снят: справа AuthorPortrait, реальная фотография и короткий тезис о доведении исследования до сборки, ссылка в About. На mobile фото128×171 рядом с тезисом следует за индексом работ и предшествует специализации. На desktop левая колонка специализации/контактов4fr, правое поле фото/подписи6fr. Пять последних WorkStage и страницы кейсов сохраняют текущий материал и поведение. Исторические требования к hero proof ниже не действуют.

@@ -1,0 +1,106 @@
+
+> site-portfolio@0.1.0 build
+> astro build
+
+01:35:33 [content] Syncing content
+01:35:33 [content] Synced content
+01:35:33 [types] Generated 70ms
+01:35:33 [build] output: "static"
+01:35:33 [build] mode: "static"
+01:35:33 [build] directory: C:\Users\kanar\.codex\worktrees\portfolio-art-direction-h\Site-portfolio\dist\
+01:35:33 [build] Collecting build info...
+01:35:33 [build] ✓ Completed in 98ms.
+01:35:33 [build] Building static entrypoints...
+01:35:36 [vite] ✓ built in 3.30s
+01:35:36 [build] ✓ Completed in 3.33s.
+
+ building client (vite) 
+01:35:36 [vite] transforming...
+01:35:37 [vite] ✓ 32 modules transformed.
+01:35:37 [vite] rendering chunks...
+01:35:37 [vite] computing gzip size...
+01:35:37 [vite] dist/_astro/page.IvKoM_B8.js                                                 0.05 kB │ gzip:  0.07 kB
+01:35:37 [vite] dist/_astro/index.BbWtjHji.js                                                2.30 kB │ gzip:  1.05 kB
+01:35:37 [vite] dist/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js   13.11 kB │ gzip:  4.54 kB
+01:35:37 [vite] dist/_astro/BaseLayout.astro_astro_type_script_index_0_lang.BEPDvR9y.js    151.79 kB │ gzip: 58.82 kB
+01:35:37 [vite] ✓ built in 598ms
+
+ generating static routes 
+01:35:37 ▶ src/pages/404.astro
+01:35:37   └─ /404.html (+17ms) 
+01:35:37 ▶ src/pages/500.astro
+01:35:37   └─ /500.html (+5ms) 
+01:35:37 ▶ src/pages/about.astro
+01:35:37   └─ /about/index.html (+8ms) 
+01:35:37 ▶ src/pages/index.astro
+01:35:37   └─ /index.html (+35ms) 
+01:35:37 ▶ src/pages/kit.astro
+01:35:37   └─ /kit/index.html (+112ms) 
+01:35:37 λ src/pages/og/[card].png.ts
+01:35:37   ├─ /og/default.png (+211ms) 
+01:35:37   ├─ /og/about.png (+181ms) 
+01:35:37   ├─ /og/work-agent-ops-console.png (+165ms) 
+01:35:38   ├─ /og/work-partner-portal.png (+174ms) 
+01:35:38   ├─ /og/work-learn.png (+173ms) 
+01:35:38   ├─ /og/work-vet-clinic.png (+173ms) 
+01:35:38   ├─ /og/work-pawly.png (+173ms) 
+01:35:38   ├─ /og/default-ru.png (+181ms) 
+01:35:39   ├─ /og/about-ru.png (+161ms) 
+01:35:39   ├─ /og/work-agent-ops-console-ru.png (+166ms) 
+01:35:39   ├─ /og/work-partner-portal-ru.png (+182ms) 
+01:35:39   ├─ /og/work-learn-ru.png (+186ms) 
+01:35:39   ├─ /og/work-vet-clinic-ru.png (+183ms) 
+01:35:39   └─ /og/work-pawly-ru.png (+160ms) 
+01:35:40 ▶ src/pages/preview/agent-ops-pilot.astro
+01:35:40   └─ /preview/agent-ops-pilot/index.html (+24ms) 
+01:35:40 ▶ src/pages/preview/agent-ops-rebuild/[locale].astro
+01:35:40   ├─ /preview/agent-ops-rebuild/en/index.html (+6ms) 
+01:35:40   └─ /preview/agent-ops-rebuild/ru/index.html (+25ms) 
+01:35:40 ▶ src/pages/preview/common/[locale]/[case].astro
+01:35:40   ├─ /preview/common/en/agent-ops/index.html (+7ms) 
+01:35:40   ├─ /preview/common/en/partner-portal/index.html (+15ms) 
+01:35:40   ├─ /preview/common/ru/agent-ops/index.html (+5ms) 
+01:35:40   └─ /preview/common/ru/partner-portal/index.html (+7ms) 
+01:35:40 ▶ src/pages/preview/common/index.astro
+01:35:40   └─ /preview/common/index.html (+3ms) 
+01:35:40 ▶ src/pages/preview/film-common/[locale].astro
+01:35:40   ├─ /preview/film-common/en/index.html (+17ms) 
+01:35:40   └─ /preview/film-common/ru/index.html (+16ms) 
+01:35:40 ▶ src/pages/preview/learn-rebuild/[locale].astro
+01:35:40   ├─ /preview/learn-rebuild/en/index.html (+27ms) 
+01:35:40   └─ /preview/learn-rebuild/ru/index.html (+8ms) 
+01:35:40 ▶ src/pages/preview/partner-portal-pilot.astro
+01:35:40   └─ /preview/partner-portal-pilot/index.html (+3ms) 
+01:35:40 ▶ src/pages/preview/partner-portal-rebuild/[locale].astro
+01:35:40   ├─ /preview/partner-portal-rebuild/en/index.html (+23ms) 
+01:35:40   └─ /preview/partner-portal-rebuild/ru/index.html (+7ms) 
+01:35:40 ▶ src/pages/preview/pawly-rebuild/[locale].astro
+01:35:40   ├─ /preview/pawly-rebuild/en/index.html (+51ms) 
+01:35:40   └─ /preview/pawly-rebuild/ru/index.html (+34ms) 
+01:35:40 ▶ src/pages/preview/vet-clinic-rebuild/[locale].astro
+01:35:40   ├─ /preview/vet-clinic-rebuild/en/index.html (+18ms) 
+01:35:40   └─ /preview/vet-clinic-rebuild/ru/index.html (+32ms) 
+01:35:40 λ src/pages/robots.txt.ts
+01:35:40   └─ /robots.txt (+2ms) 
+01:35:40 ▶ src/pages/ru/about.astro
+01:35:40   └─ /ru/about/index.html (+5ms) 
+01:35:40 ▶ src/pages/ru/index.astro
+01:35:40   └─ /ru/index.html (+6ms) 
+01:35:40 ▶ src/pages/ru/work/[slug].astro
+01:35:40   ├─ /ru/work/agent-ops-console/index.html (+13ms) 
+01:35:40   ├─ /ru/work/partner-portal/index.html (+9ms) 
+01:35:40   ├─ /ru/work/learn/index.html (+7ms) 
+01:35:40   ├─ /ru/work/vet-clinic/index.html (+8ms) 
+01:35:40   └─ /ru/work/pawly/index.html (+8ms) 
+01:35:40 λ src/pages/sitemap.xml.ts
+01:35:40   └─ /sitemap.xml (+2ms) 
+01:35:40 ▶ src/pages/work/[slug].astro
+01:35:40   ├─ /work/agent-ops-console/index.html (+6ms) 
+01:35:40   ├─ /work/partner-portal/index.html (+8ms) 
+01:35:40   ├─ /work/learn/index.html (+6ms) 
+01:35:40   ├─ /work/vet-clinic/index.html (+6ms) 
+01:35:40   └─ /work/pawly/index.html (+5ms) 
+01:35:40 ✓ Completed in 3.38s.
+
+01:35:40 [build] 36 page(s) built in 7.65s
+01:35:40 [build] Complete!

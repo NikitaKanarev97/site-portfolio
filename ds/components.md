@@ -524,3 +524,9 @@ CaseCarousel phone slides use a compact width and 16px plate fields, with arrows
 CaseSteps measures the whole frame, including padding, action row and caption, before fitting it to a pinned scene. A text ResizeObserver updates the measurement; teardown removes its sizing and observer. Only one state is visible during exchange. Focus scrub uses 0.25s catch-up from the mirrored motion layer. Tablet/mobile/short/reduce remain a natural list.
 CaseNext clips horizontally; its track has vertical breathing room and heading line-height, preserving ascenders and descenders.
 Learn documentary regions include native pale-blue fields. Completion begins with the whole final diagnostic section and ends after the whole action, without partial curriculum rows. Assessment includes native top/bottom fields; landing ends at the complete hero boundary. Native progress/trust alpha is isolated without repainting components.
+
+## AuthorPortrait · 05.10.2026
+
+Композиция существующих MediaFrame и TextLink для Home/About описана в ds/patterns.md. Фотография 3:4, короткий тезис ds-heading-2xl и цель высотой минимум space-12. Фон фотографии скруглён radius-lg в самой композиции, без изменения вариантов MediaFrame. Это общий файл паттерна, не новая интерактивная сущность /kit.
+
+Navbar использует Images/logo-portfolio-v4.svg. BaseLayout — favicon-v4.svg и PNG16/32; версия и геометрия из ds/logo.md. MediaZoom и прочие механики текущих кейсов сохранены.
