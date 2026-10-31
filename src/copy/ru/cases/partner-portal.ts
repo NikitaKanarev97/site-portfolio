@@ -10,48 +10,170 @@ import { withRussianMedia } from './utils.ts';
  * (`tasks/portfolio-rebuild/partner-portal/capture-product-ru.mjs`), английские не тронуты. */
 const russianFrames = <T,>(story:T):T => withRussianMedia(withRussianMedia(story,'/media/rebuild/partner-portal/','/media/rebuild/partner-portal/ru/'),'/media/rebuild/common/portal/','/media/rebuild/common/portal/ru/');
 
-export const partnerPortalStoryRu = russianFrames(defineStory({theme:'portal',plate:'light',
-  cover:{title:'B2B-закупка DSSL',outcome:'Рабочая спецификация для закупщика: от ввода до оформления.',media:{
-    variant:'proof',eyebrow:'DSSL · B2B-закупка',shot:portalLineShot('open','Выбор товара для строки 38: исходный текст, восемь единиц и три кандидата из каталога'),
-    caption:'Строка 38: исходный текст рядом с тремя кандидатами',
-  }},
-  facts:[{term:'Работа',value:'Коммерческий редизайн выпущен целиком'},
-    {term:'Роль',value:'Единственный дизайнер; фронтенд, бэкенд, продакт, QA и руководитель команды'},
-    {term:'Период',value:'2024–зима 2026'},
-    {term:'Продукт',value:'Открыть продукт',href:'https://b2b-partner-portal-five.vercel.app/ru'}],
-  blocks:[
-    {id:'audit-direction',type:'comparison',motion:'reveal',evidenceId:'portal-diagnosis',mediaId:'portal-archive',payload:{
-      thesis:{label:'Решение после аудита',thesis:'Сначала дело, затем промо',body:'На архивной главной промо занимало заметное место, а разделы скрывались за иконками. Я сделал спецификацию рабочим объектом: названная навигация, отдельные задачи подбора товара и проверки коммерческих условий.'},
-      issue:{src:'/media/case-dssl/legacy-dashboard.webp',alt:'Главная DSSL: промобаннер и навигация только иконками',marks:[
-        {x:55,y:10,text:'Сначала задачи закупки'},{x:1.6,y:32,text:'Разделы с названиями'}],caption:'Архивная главная с пометками аудита'},
-    }},
-    {id:'shared-specification',type:'artifact',motion:'draw',evidenceId:'portal-scope',payload:{
-      thesis:{label:'Архитектура',thesis:'Импорт и ручной ввод ведут в общий список',body:'Импорт XLS и быстрый заказ ведут в общий список разбора строк. Корзина, план поставки и оформление решают отдельные задачи. На карте — восемь ключевых экранов.'},
-      artifact:{data:partnerPortalMap,caption:'Восемь ключевых экранов рабочего места закупщика',source:{kind:'editorial',ref:'b2b-dssl/ia/sitemap.md; D007–D010'}},
-    }},
-    {id:'buyer-decision',type:'artifact',motion:'draw',evidenceId:'portal-decision',payload:{
-      thesis:{label:'Логика закупки',thesis:'Сначала товар, затем условия',body:'Сопоставление не обещает совместимость. Покупатель выбирает или исправляет товар; корзина отдельно проверяет коммерческие изменения. У каждого решения есть явный возврат перед созданием заказа.'},
-      artifact:{data:partnerPortalFlow,caption:'От нужного товара к условиям и заказу',source:{kind:'editorial',ref:'b2b-dssl/ia/flows/xls-to-order.mmd; D007, D010, D026'}},
-    }},
-    {id:'source-line',type:'steps',motion:'focus',evidenceId:'portal-line',mediaId:'portal-line',payload:{label:'Одна исходная строка',items:[
-      {label:'Выбрать',thesis:'Исходный запрос рядом с кандидатами',body:'Строка 38 файла office_north_v8.xlsx: «камера 4мп уличная», восемь единиц. Покупатель сравнивает три совпадения и выбирает второе.',shot:portalLineShot('open','Исходная строка 38 и восемь единиц над тремя кандидатами'),caption:'Выбор второго кандидата'},
-      {label:'Подтвердить',thesis:'Выбор принят, строка та же',body:'Исходный текст и количество остаются. «Подтверждено» фиксирует решение покупателя; «было: неоднозначно» сохраняет исходный тип соответствия. «Отменить» возвращает выбор.',shot:portalLineShot('confirmed','Подтверждённая строка 38: восемь единиц, прежняя неоднозначность и отмена выбора'),caption:'Та же строка · выбран SKU KX-2CB4046F2-I · восемь единиц'},
-      {label:'Подготовить',thesis:'Тот же товар в корзине',body:'Корзина связывает выбранный SKU с исходной строкой 38 и сохраняет количество восемь. Цена и наличие отделены от соответствия товара.',shot:portalLineShot('cart','Строка корзины: выбранный SKU, исходная строка 38, восемь единиц, цена и наличие'),caption:'Та же строка в корзине · исходный след виден'},
-    ]}},
-    {id:'domain-system',type:'specimen',motion:'static',evidenceId:'portal-domain',mediaId:'portal-specimens',payload:{
-      thesis:{label:'Доменная система',thesis:'Следующий шаг',body:'Строка разбора сохраняет исходный запрос после выбора товара. Наличие показывает ответ склада, а план поставки — возможность отгрузки. Если склад не ответил, наличие «не подтверждено», а не ноль.'},specimen:partnerPortalSpecimen('ru'),
-    }},
-    {id:'source-in-context',type:'shot',motion:'reveal',evidenceId:'portal-line',mediaId:'portal-application',payload:{
-      shot:{layout:'desktop',items:[{src:'/media/rebuild/partner-portal/resolution-context-wide.webp',srcNarrow:'/media/rebuild/partner-portal/resolution-context-narrow.webp',device:'desktop',alt:'Экран разбора строк после выбора строки 38: фильтр, вкладка решённых строк, отмена и общий прогресс',altNarrow:'Узкий экран разбора строк после выбора строки 38, с общим прогрессом под строкой'}],caption:'Компоненты в работе · та же строка после подтверждения покупателем'},
-    }},
-    {id:'shipped-redesign',type:'outcome',motion:'static',evidenceId:'portal-shipped',payload:{
-      result:{label:'Результат',thesis:'Редизайн сдан',body:'Редизайн DSSL выпущен полностью. Для показанных экранов я пересобрал закупочный сценарий с вымышленными данными.'},
-      evidence:{label:'Доказательство',text:'Строка 38 проходит от выбора товара до корзины с исходным текстом и количеством.'},
-      tradeoff:{label:'Компромисс',text:'Неоднозначность требует ручного выбора покупателя. Данные сопоставления не гарантируют совместимость.'},
-    }},
-  ],prototype:{label:'Открыть продукт',href:'https://b2b-partner-portal-five.vercel.app/ru'},
+export const partnerPortalStoryRu = russianFrames(defineStory({
+  theme: 'portal', plate: 'light',
+  cover: {
+    title: 'B2B-портал DSSL',
+    outcome: 'От неоднозначного запроса до заказа с понятной историей решений.',
+    media: {
+      variant: 'proof', eyebrow: 'DSSL · Корпоративные закупки',
+      shot: portalLineShot('open', 'Исходный запрос рядом с тремя товарами-кандидатами'),
+      caption: 'Одно решение покупателя, исходный запрос остаётся перед глазами',
+    },
+  },
+  facts: [
+    { term: 'Проект', value: 'Коммерческий редизайн внедрён; показана портфолио-реконструкция' },
+    { term: 'Роль', value: 'Продуктовый дизайнер · UX/UI, IA и дизайн-система' },
+    { term: 'Период', value: '2024–2026' },
+    { term: 'Прототип', value: 'Изучить интерактивный продукт', href: 'https://b2b-partner-portal-five.vercel.app/ru' },
+  ],
+  blocks: [
+    {
+      id: 'audit-direction', type: 'comparison', motion: 'reveal',
+      evidenceId: 'portal-diagnosis', mediaId: 'portal-archive',
+      payload: {
+        thesis: {
+          label: 'Задача', thesis: 'Закупщику нужно рабочее место, а не витрина',
+          body: 'На старой главной промо мешало основной работе: разбору неполных заявок. Я сделал активную спецификацию, понятную навигацию и следующий шаг центром интерфейса.',
+        },
+        issue: {
+          src: '/media/case-dssl/legacy-dashboard.webp',
+          alt: 'Старая главная с промо и навигацией без подписей',
+          marks: [{ x: 55, y: 10, text: 'Промо вместо задачи' }, { x: 1.6, y: 32, text: 'Неясная навигация' }],
+          caption: 'До · рабочая задача конкурирует с промо',
+        },
+        after: {
+          layout: 'desktop',
+          items: [{
+            src: '/media/rebuild/partner-portal/2026/dashboard-wide.webp',
+            srcNarrow: '/media/rebuild/partner-portal/2026/dashboard-narrow.webp',
+            device: 'desktop',
+            alt: 'Новая главная: активная спецификация, прогресс и понятный переход к работе',
+          }],
+          caption: 'После · спецификация стала главным рабочим объектом',
+        },
+      },
+    },
+    {
+      id: 'shared-specification', type: 'artifact', motion: 'draw', evidenceId: 'portal-scope',
+      payload: {
+        thesis: {
+          label: 'Архитектура', thesis: 'Разные способы ввода. Один источник данных.',
+          body: 'Импорт XLS и ручной ввод SKU ведут в общую спецификацию. Подбор товара, проверка коммерческих условий и планирование поставки решают разные задачи.',
+        },
+        artifact: {
+          data: partnerPortalMap, caption: 'Один процесс, восемь связанных экранов',
+          source: { kind: 'editorial', ref: 'b2b-dssl/ia/sitemap.md; D007–D010' },
+        },
+      },
+    },
+    {
+      id: 'source-line', type: 'steps', motion: 'focus', evidenceId: 'portal-line', mediaId: 'portal-line',
+      payload: {
+        label: 'Одна строка спецификации',
+        items: [
+          {
+            label: 'Выбрать', thesis: 'Сравнить кандидатов, сохранив запрос',
+            body: 'В строке 38 запрошены восемь уличных камер 4 Мп. Покупатель сравнивает три подходящих товара, не теряя формулировку из файла.',
+            shot: portalLineShot('open', 'Исходная строка 38 рядом с тремя кандидатами'),
+            caption: 'Покупатель осознанно выбирает товар',
+          },
+          {
+            label: 'Подтвердить', thesis: 'Зафиксировать выбор, не стирая исходные данные',
+            body: 'Выбранный SKU подтверждён, действие можно отменить. Исходный текст, количество и прежняя неоднозначность остаются в истории строки.',
+            shot: portalLineShot('confirmed', 'Подтверждённая строка 38 с исходным количеством и отменой выбора'),
+            caption: 'Подтверждено, но история сохранена',
+          },
+          {
+            label: 'Проверить', thesis: 'Отдельно проверить цену и наличие',
+            body: 'Та же строка попадает в корзину. Подобранный товар ещё не означает подтверждённую цену, наличие или техническую совместимость.',
+            shot: portalLineShot('cart', 'Строка 38 в корзине: источник, количество, цена и наличие'),
+            caption: 'Товар определён; коммерческие условия проверяются дальше',
+          },
+        ],
+      },
+    },
+    {
+      id: 'product-verification', type: 'shot', motion: 'reveal',
+      evidenceId: 'portal-product-details', mediaId: 'portal-product',
+      payload: {
+        thesis: {
+          label: 'Проверка товара', thesis: 'Помочь закупщику убедиться в выборе',
+          body: 'Характеристики расположены рядом с персональной ценой и ответом склада. Главное действие заметно, но интерфейс не скрывает неподтверждённые данные.',
+        },
+        shot: {
+          layout: 'desktop',
+          items: [{
+            src: '/media/rebuild/partner-portal/2026/product-wide.webp',
+            srcNarrow: '/media/rebuild/partner-portal/2026/product-narrow.webp',
+            device: 'desktop',
+            alt: 'Карточка товара с крупной фотографией, характеристиками и панелью закупки',
+          }],
+          caption: 'Product Details · характеристики, цена и наличие рядом',
+        },
+      },
+    },
+    {
+      id: 'commercial-review', type: 'shot', motion: 'reveal',
+      evidenceId: 'portal-cart-v2', mediaId: 'portal-cart',
+      payload: {
+        thesis: {
+          label: 'Коммерческие условия', thesis: 'Не выдавать неопределённость за известную цену',
+          body: 'Корзина сохраняет связь с исходной строкой и показывает количество, стоимость и блокировки. Изменения требуют согласия покупателя; отсутствие цены никогда не превращается в ноль.',
+        },
+        shot: {
+          layout: 'desktop',
+          items: [{
+            src: '/media/rebuild/partner-portal/2026/cart-wide.webp',
+            srcNarrow: '/media/rebuild/partner-portal/2026/cart-narrow.webp',
+            device: 'desktop',
+            alt: 'Корзина с товарными строками, неподтверждённой ценой и фиксированной панелью итога',
+          }],
+          caption: 'Корзина · решения по строкам и единый коммерческий итог',
+        },
+      },
+    },
+    {
+      id: 'fulfillment-decision', type: 'shot', motion: 'reveal',
+      evidenceId: 'portal-fulfillment-v2', mediaId: 'portal-fulfillment',
+      payload: {
+        thesis: {
+          label: 'Отгрузка', thesis: 'Показать компромисс, а не обещать доставку вслепую',
+          body: 'Закупщик сравнивает срок, число отгрузок и стоимость доставки после проверки коммерческих условий. Товары не меняются — выбирается способ поставки.',
+        },
+        shot: {
+          layout: 'desktop',
+          items: [{
+            src: '/media/rebuild/partner-portal/2026/fulfillment-wide.webp',
+            srcNarrow: '/media/rebuild/partner-portal/2026/fulfillment-narrow.webp',
+            device: 'desktop',
+            alt: 'Сравнение планов отгрузки: сроки, склады, число поставок и стоимость',
+          }],
+          caption: 'Отгрузка · выбор между скоростью и числом поставок',
+        },
+      },
+    },
+    {
+      id: 'shipped-redesign', type: 'outcome', motion: 'static', evidenceId: 'portal-shipped',
+      payload: {
+        presentation: 'editorial',
+        result: {
+          label: 'Результат', thesis: 'Закупочный сценарий с проверяемыми решениями',
+          body: 'Коммерческий редизайн был внедрён. Позже я реконструировал и доработал сценарий на синтетических данных для портфолио: экраны показывают продуктовую логику, а не вымышленные метрики после запуска.',
+        },
+        evidence: {
+          label: 'Что показывает прототип',
+          text: 'Исходные строки сохраняют свою историю при подборе и в корзине. Определение товара и готовность к закупке проверяются отдельно.',
+        },
+        tradeoff: {
+          label: 'Компромисс',
+          text: 'Неоднозначность иногда требует человека. Подбор не обещает совместимость, неподтверждённая цена не подменяется нулём, а доставка рассчитывается только после выбора плана.',
+        },
+      },
+    },
+  ],
+  prototype: { label: 'Открыть интерактивный продукт', href: 'https://b2b-partner-portal-five.vercel.app/ru' },
 }));
-assertStoryPair(partnerPortalStory,partnerPortalStoryRu);
 
 const base = withRussianMedia(
   partnerPortal,
