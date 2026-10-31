@@ -11,7 +11,7 @@ export const partnerPortalStory = defineStory({
   theme: 'portal', plate: 'light',
   cover: {
     title: 'B2B Partner Portal',
-    outcome: 'From an ambiguous product request to a traceable purchase.',
+    outcome: 'Turning ambiguous product requests into traceable procurement decisions.',
     media: {
       variant: 'proof', eyebrow: 'DSSL · B2B procurement',
       shot: portalLineShot('open', 'A source request kept beside three candidate products'),

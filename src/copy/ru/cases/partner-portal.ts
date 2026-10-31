@@ -12,7 +12,7 @@ export const partnerPortalStoryRu = russianFrames(defineStory({
   theme: 'portal', plate: 'light',
   cover: {
     title: 'B2B-портал DSSL',
-    outcome: 'От неоднозначного запроса до заказа с понятной историей решений.',
+    outcome: 'Как неоднозначный запрос на товар превращается в закупочное решение с понятной историей.',
     media: {
       variant: 'proof', eyebrow: 'DSSL · Корпоративные закупки',
       shot: portalLineShot('open', 'Исходный запрос рядом с тремя товарами-кандидатами'),

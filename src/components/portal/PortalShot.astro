@@ -1,0 +1,71 @@
+---
+/**
+ * PortalShot — ds/components.md §PortalShot (case-scoped: Partner Portal V2).
+ *
+ * One real product frame. Below bp-md the authentic 390 px capture replaces
+ * the desktop frame through <picture>, so a phone never gets a shrunken
+ * 1280 px screen. Crops are component boxes made at capture time
+ * (scripts/b2b-v2/capture-product.mjs); this component never crops.
+ *
+ *   frame   UI on a hairline-bordered card, radius-md (default)
+ *   strip   same, for one-row macros: no inner padding, full width
+ *
+ * Caption is optional and always sits under the frame, on clean surface.
+ */
+import media from '../../data/partner-portal-v2-media.json';
+import { px } from '../../lib/tokens.ts';
+import type { PortalShot as Shot } from '../../copy/cases/partner-portal-v2.ts';
+
+interface Props {
+  shot: Shot;
+  locale: 'en' | 'ru';
+  caption?: string;
+  label?: string;
+  variant?: 'frame' | 'strip';
+  loading?: 'eager' | 'lazy';
+  /** Rendered width hint for the desktop source, e.g. "(min-width: 1024px) 70vw". */
+  sizes?: string;
+  class?: string;
+}
+const { shot, locale, caption, label, variant = 'frame', loading = 'lazy', sizes, class: className } = Astro.props;
+type Entry = { src: string; width: number; height: number };
+const pick = (key: string) => {
+  const entry = (media as Record<string, Entry>)[`${locale}/${key}`];
+  if (!entry) throw new Error(`PortalShot: no media ${locale}/${key}`);
+  return entry;
+};
+const desktop = pick(shot.desktop);
+const mobile = shot.mobile ? pick(shot.mobile) : undefined;
+const NARROW = `(max-width: ${px('bp-md') - 1}px)`;
+---
+<figure class:list={['portal-shot', `portal-shot--${variant}`, className]}
+  style={`--shot-native: ${desktop.width}px;${mobile ? ` --shot-native-narrow: ${mobile.width}px;` : ''}`}>
+  {label && <p class="ds-meta-sm portal-shot__label">{label}</p>}
+  <div class="portal-shot__frame" style={`--shot-ratio: ${desktop.width} / ${desktop.height};${mobile ? ` --shot-ratio-narrow: ${mobile.width} / ${mobile.height};` : ''}`}>
+    <picture>
+      {mobile && <source media={NARROW} srcset={mobile.src} width={mobile.width} height={mobile.height} />}
+      <img src={desktop.src} width={desktop.width} height={desktop.height} alt={shot.alt}
+        loading={loading} decoding="async" fetchpriority={loading === 'eager' ? 'high' : undefined} sizes={sizes} />
+    </picture>
+  </div>
+  {caption && <figcaption class="ds-body-sm portal-shot__caption" data-h="caption">{caption}</figcaption>}
+</figure>
+<style>
+  /* Documentary width (story-contract nativeWidth): a capture is never
+     enlarged past the CSS size it was shot at, so UI text never goes soft. */
+  .portal-shot { display: grid; gap: var(--flow-pair); min-inline-size: 0; max-inline-size: var(--shot-native); margin: 0; }
+  .portal-shot__label { color: var(--text-subtle); }
+  .portal-shot__frame {
+    overflow: hidden;
+    aspect-ratio: var(--shot-ratio);
+    background: var(--surface-default);
+    border: var(--border-width) solid var(--border-default);
+    border-radius: var(--radius-md);
+  }
+  .portal-shot__frame img { display: block; inline-size: 100%; block-size: 100%; object-fit: contain; }
+  .portal-shot__caption { max-inline-size: var(--measure-case); color: var(--text-muted); }
+  @media (--below-bp-md) {
+    .portal-shot { max-inline-size: var(--shot-native-narrow, var(--shot-native)); }
+    .portal-shot__frame { aspect-ratio: var(--shot-ratio-narrow, var(--shot-ratio)); }
+  }
+</style>

@@ -568,3 +568,11 @@ Learn documentary regions include native pale-blue fields. Completion begins wit
 Композиция существующих MediaFrame и TextLink для Home/About описана в ds/patterns.md. Фотография 3:4, короткий тезис ds-heading-2xl и цель высотой минимум space-12. Фон фотографии скруглён radius-lg в самой композиции, без изменения вариантов MediaFrame. Это общий файл паттерна, не новая интерактивная сущность /kit.
 
 Navbar использует Images/logo-portfolio-v4.svg. BaseLayout — favicon-v4.svg и PNG16/32; версия и геометрия из ds/logo.md. MediaZoom и прочие механики текущих кейсов сохранены.
+
+## PortalCase · PortalShot · 31.10.2026 (case-scoped)
+
+Только маршрут Partner Portal (`/work/partner-portal`, RU). Карта — `ds/screens/case-dssl.md` §V2. Общий `CaseStory` и `Case*.astro` не тронуты.
+
+- **PortalCase** (`src/components/portal/PortalCase.astro`) — рендер кейса V2: обложка на `surface-cover-portal` (текст на чистом цвете, кадры ниже), лист с `MetaList layout=facts`, модули «метка | тезис + текст» на 12 колонках, одна тёмная полоса `surface-plate-dark`, итог с CTA прототипа, общий `CaseNext`. Токены и роли типографики — только из ДС. Движение — зарегистрированные `lines`, `fade`, `fade-image`, `rise` и `data-motion-intro`; новых движений нет.
+- **PortalShot** (`src/components/portal/PortalShot.astro`) — один кадр продукта: `<picture>` с подлинным 390-px кадром ниже bp-md, рамка `border-default` + `radius-md`, подпись под кадром. Варианты `frame` (умолчание) и `strip` (однострочный макро). Кадр не растягивается шире документальной ширины (`--shot-native`, как `ShotItem.nativeWidth`). Компонент не кадрирует: кроп — граница DOM-узла на съёмке.
+- Доступность: у каждого кадра полный alt по содержимому; заголовки модулей h2 со связью `aria-labelledby`; CTA — внешняя ссылка с видимым фокусом.

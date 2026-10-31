@@ -1,0 +1,366 @@
+---
+/**
+ * PortalCase — ds/components.md §PortalCase, map ds/screens/case-dssl.md §V2.
+ *
+ * Case-scoped renderer for the B2B Partner Portal story V2. The shared
+ * CaseStory stays frozen for the other cases; this page needed an authored
+ * cover and mixed-scale plates the shared blocks cannot express.
+ *
+ * Rhythm: butter cover (title on clean colour, never on UI) → white sheet with
+ * facts → six modules, each a split head (label | thesis + body) and one
+ * piece of evidence → a dark band for the commercial-review module → outcome
+ * with the prototype CTA → shared CaseNext.
+ *
+ * Motion only through registered data-motion names (lines, fade, fade-image,
+ * rise); animations.js plays them, reduced motion keeps everything visible.
+ */
+import MetaList from '../MetaList.astro';
+import CaseNext from '../CaseNext.astro';
+import IconArrow from '../IconArrow.astro';
+import PortalShot from './PortalShot.astro';
+import type { PortalCaseCopy } from '../../copy/cases/partner-portal-v2.ts';
+import type { CaseTheme } from '../../copy/cases/story';
+
+interface Props {
+  copy: PortalCaseCopy;
+  locale: 'en' | 'ru';
+  next: { href: string; title: string; theme: CaseTheme; label: string };
+}
+const { copy, locale, next } = Astro.props;
+const { cover, problem, flow, decision, verify, commerce, supply, outcome } = copy;
+const WIDE = '(min-width: 1024px) 66vw, 100vw';
+---
+<div class="portal-case" id="case-partner-portal" data-h="case" data-story-version="portal-v2">
+  <section class="portal-cover" aria-labelledby="portal-title" data-case-cover="case-portal"
+    transition:name="case-portal" transition:animate="initial">
+    <div class="ds-container portal-cover__inner" data-motion-intro>
+      <header class="portal-cover__head">
+        <p class="ds-meta-sm portal-cover__eyebrow">{cover.eyebrow}</p>
+        <h1 id="portal-title" class="ds-display-6xl portal-cover__title" data-motion="lines">{cover.title}</h1>
+        <p class="ds-heading-xl portal-cover__promise" data-h="lead" data-motion="fade">{cover.promise}</p>
+      </header>
+      <div class="portal-cover__stage" data-motion="fade-image">
+        <PortalShot shot={cover.main} label={cover.main.label} locale={locale} loading="eager" sizes={WIDE} />
+        <div class="portal-cover__detail"><PortalShot shot={cover.detail} label={cover.detail.label} locale={locale} loading="eager" /></div>
+      </div>
+      <p class="ds-meta-sm portal-cover__note">{cover.note}</p>
+    </div>
+  </section>
+
+  <div class="portal-sheet">
+    <div class="ds-container portal-facts"><MetaList layout="facts" items={copy.facts} /></div>
+
+    <section class="ds-container ds-section portal-module" id="problem" aria-labelledby="problem-title">
+      <div class="portal-split">
+        <div class="portal-split__text">
+          <p class="ds-meta-sm portal-label">{problem.label}</p>
+          <h2 id="problem-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{problem.thesis}</h2>
+          <p class="ds-body-lg portal-body">{problem.body}</p>
+          <figure class="portal-before" data-motion="fade-image">
+            <img src={problem.before.src} width="1426" height="440" alt={problem.before.alt} loading="lazy" decoding="async" />
+            <figcaption class="ds-body-sm portal-before__caption">{problem.before.caption}</figcaption>
+          </figure>
+        </div>
+        <div class="portal-plate portal-split__media" data-motion="fade-image">
+          <PortalShot shot={problem.after} caption={problem.after.caption} locale={locale} sizes={WIDE} />
+        </div>
+      </div>
+    </section>
+
+    <section class="ds-container ds-section portal-module" id="system" aria-labelledby="system-title">
+      <div class="portal-head">
+        <p class="ds-meta-sm portal-label">{flow.label}</p>
+        <div class="portal-head__text">
+          <h2 id="system-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{flow.thesis}</h2>
+          <p class="ds-body-lg portal-body">{flow.body}</p>
+        </div>
+      </div>
+      <ol class="portal-flow" data-motion-group data-motion-stagger="tight">
+        {flow.steps.map((step, i) => (
+          <li class="portal-flow__step" data-motion="rise">
+            <span class="ds-meta-xs portal-flow__index" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+            <span class="ds-heading-xl portal-flow__name">{step.name}</span>
+            <span class="ds-body-sm portal-flow__text">{step.text}</span>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <section class="ds-container ds-section portal-module" id="decision" aria-labelledby="decision-title">
+      <div class="portal-head">
+        <p class="ds-meta-sm portal-label">{decision.label}</p>
+        <div class="portal-head__text">
+          <h2 id="decision-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{decision.thesis}</h2>
+          <p class="ds-body-lg portal-body">{decision.body}</p>
+        </div>
+      </div>
+      <div class="portal-pair">
+        <div class="portal-plate portal-plate--stack" data-motion="fade-image">
+          <PortalShot shot={decision.compare} caption={decision.compare.caption} locale={locale} sizes={WIDE} />
+          <PortalShot shot={decision.confirmed} caption={decision.confirmed.caption} locale={locale} variant="strip" sizes={WIDE} />
+        </div>
+        <aside class="portal-note" aria-label={decision.why.label}>
+          <p class="ds-meta-sm portal-note__label">{decision.why.label}</p>
+          <p class="ds-body-base portal-note__text">{decision.why.text}</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="ds-container ds-section portal-module" id="verification" aria-labelledby="verify-title">
+      <div class="portal-head">
+        <p class="ds-meta-sm portal-label">{verify.label}</p>
+        <div class="portal-head__text">
+          <h2 id="verify-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{verify.thesis}</h2>
+          <p class="ds-body-lg portal-body">{verify.body}</p>
+        </div>
+      </div>
+      <div class="portal-pair">
+        <div class="portal-plate" data-motion="fade-image">
+          <PortalShot shot={verify.shot} caption={verify.shot.caption} locale={locale} sizes={WIDE} />
+        </div>
+        <dl class="portal-proofs" data-motion-group data-motion-stagger="tight">
+          {verify.proofs.map(proof => (
+            <div class="portal-proofs__item" data-motion="rise">
+              <dt class="ds-heading-xl">{proof.term}</dt>
+              <dd class="ds-body-base portal-proofs__text">{proof.text}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </section>
+
+    <section class="portal-band ds-section" id="commercial-review" aria-labelledby="commerce-title">
+      <div class="ds-container">
+        <div class="portal-head">
+          <p class="ds-meta-sm portal-label">{commerce.label}</p>
+          <div class="portal-head__text">
+            <h2 id="commerce-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{commerce.thesis}</h2>
+            <p class="ds-body-lg portal-body">{commerce.body}</p>
+          </div>
+        </div>
+        <div class="portal-commerce" data-motion="fade-image">
+          <PortalShot shot={commerce.line} caption={commerce.line.caption} locale={locale} />
+          <PortalShot class="portal-commerce__bar" shot={commerce.bar} caption={commerce.bar.caption} locale={locale} />
+        </div>
+      </div>
+    </section>
+
+    <section class="ds-container ds-section portal-module" id="fulfillment" aria-labelledby="supply-title">
+      <div class="portal-head">
+        <p class="ds-meta-sm portal-label">{supply.label}</p>
+        <div class="portal-head__text">
+          <h2 id="supply-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{supply.thesis}</h2>
+          <p class="ds-body-lg portal-body">{supply.body}</p>
+        </div>
+      </div>
+      <div class="portal-plate portal-plate--wide" data-motion="fade-image">
+        <PortalShot shot={supply.shot} caption={supply.shot.caption} locale={locale} sizes="(min-width: 1440px) 1208px, 100vw" />
+      </div>
+    </section>
+
+    <section class="ds-container ds-section" id="outcome" aria-labelledby="outcome-title">
+      <div class="portal-outcome">
+        <div class="portal-outcome__lead">
+          <p class="ds-meta-sm portal-label">{outcome.label}</p>
+          <h2 id="outcome-title" class="ds-heading-4xl portal-outcome__thesis" data-motion="fade">{outcome.thesis}</h2>
+          <p class="ds-body-lg portal-outcome__body">{outcome.body}</p>
+        </div>
+        <div class="portal-outcome__costs">
+          <p class="ds-meta-sm portal-label">{outcome.costLabel}</p>
+          <dl class="portal-costs" data-motion-group data-motion-stagger="tight">
+            {outcome.costs.map(cost => (
+              <div class="portal-costs__item" data-motion="rise">
+                <dt class="ds-heading-xl">{cost.term}</dt>
+                <dd class="ds-body-base portal-costs__text">{cost.text}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+        <div class="portal-outcome__cta">
+          <a class="ds-body-lg ds-pressable portal-cta" href={outcome.cta.href} target="_blank" rel="noopener">
+            {outcome.cta.label}<IconArrow direction="up-right" class="portal-cta__icon" />
+          </a>
+          <p class="ds-body-sm portal-cta__note">{outcome.cta.note}</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <CaseNext {...next} transitionKey={`case-${next.theme}`} />
+</div>
+
+<style>
+  :global(main:has(> .portal-case)) { padding-block-start: 0; }
+
+  /* ---------- Cover ---------- */
+  .portal-cover { background: var(--surface-cover-portal); color: var(--text-default); }
+  .portal-cover__inner { display: grid; gap: var(--flow-node); padding-block: var(--flow-block); }
+  .portal-cover__head { display: grid; gap: var(--flow-text); }
+  .portal-cover__eyebrow { color: var(--text-subtle); }
+  .portal-cover__title { margin: 0; }
+  .portal-cover__promise { margin: 0; max-inline-size: var(--measure-case); }
+  .portal-cover__stage { display: grid; gap: var(--flow-node); align-items: start; }
+  .portal-cover__stage :global(.portal-shot__frame) { box-shadow: var(--shadow-md); }
+  .portal-cover__detail { justify-self: end; inline-size: calc(100% - var(--space-8)); }
+  .portal-cover__note { color: var(--text-subtle); }
+
+  /* ---------- Sheet + shared module grammar ---------- */
+  /* The sheet owns the section step, as main does for direct children
+     (global.css, `main > * + *`): the modules sit one level deeper here. */
+  /* Module step is one notch tighter than the site's section gap (192 at xl):
+     eight modules at 192 read as an endless scroll, not a skim. */
+  .portal-sheet { --portal-step: var(--space-24); position: relative; z-index: 1; padding-block-end: var(--portal-step); background: var(--surface-default); }
+  .portal-sheet > * + * { margin-block-start: var(--portal-step); }
+  .portal-facts { padding-block-start: var(--flow-group); }
+  .portal-label { margin: 0; color: var(--text-meta); }
+  .portal-thesis { margin: 0; max-inline-size: 24ch; }
+  .portal-body { margin: 0; max-inline-size: var(--measure-case); color: var(--text-subtle); }
+  .portal-head { display: grid; gap: var(--flow-text); }
+  .portal-head__text { display: grid; gap: var(--flow-text); }
+  .portal-module > * + * { margin-block-start: var(--flow-group); }
+
+  .portal-plate {
+    display: grid;
+    gap: var(--flow-node);
+    min-inline-size: 0;
+    padding: var(--space-4);
+    background: var(--surface-plate);
+    border-radius: var(--radius-media);
+  }
+
+  /* ---------- 01 Problem ---------- */
+  .portal-split { display: grid; gap: var(--flow-group); }
+  .portal-split__text { display: grid; gap: var(--flow-text); align-content: start; }
+  .portal-before { display: grid; gap: var(--flow-pair); margin: var(--flow-pair) 0 0; }
+  .portal-before img {
+    display: block; inline-size: 100%; block-size: auto;
+    border: var(--border-width) solid var(--border-default);
+    border-radius: var(--radius-md);
+  }
+  .portal-before__caption { color: var(--text-muted); }
+
+  /* ---------- 02 System ---------- */
+  .portal-flow {
+    display: grid;
+    gap: var(--flow-text) var(--gutter);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 0; padding: 0; list-style: none;
+  }
+  .portal-flow__step {
+    display: grid; gap: var(--flow-pair); align-content: start;
+    padding-block-start: var(--space-4);
+    border-block-start: var(--border-width) solid var(--border-strong);
+  }
+  .portal-flow__index { color: var(--text-meta); }
+  .portal-flow__text { color: var(--text-subtle); }
+
+  /* ---------- 03 Decision / 04 Verification ---------- */
+  .portal-pair { display: grid; gap: var(--flow-group); align-items: start; }
+  .portal-note {
+    display: grid; gap: var(--flow-pair);
+    padding-block-start: var(--space-4);
+    border-block-start: var(--border-width) solid var(--border-strong);
+  }
+  .portal-note__label, .portal-note__text { margin: 0; }
+  .portal-note__label { color: var(--text-meta); }
+  .portal-proofs { display: grid; gap: var(--flow-text); margin: 0; }
+  .portal-proofs__item {
+    display: grid; gap: var(--flow-pair);
+    padding-block-start: var(--space-4);
+    border-block-start: var(--border-width) solid var(--border-strong);
+  }
+  .portal-proofs__text { margin: 0; color: var(--text-subtle); }
+
+  /* ---------- 05 Commercial review: the one dark band ---------- */
+  .portal-band {
+    padding-block: var(--space-24);
+    background: var(--surface-plate-dark);
+    color: var(--text-on-inverse);
+    --text-meta: var(--text-on-inverse);
+    --text-subtle: var(--text-on-inverse);
+    --text-muted: var(--text-on-inverse);
+  }
+  .portal-band :global(.portal-shot__frame) { border-color: var(--border-inverse); }
+  .portal-band .portal-label, .portal-band .portal-body, .portal-band :global(.portal-shot__caption) { opacity: 0.78; }
+  .portal-commerce { display: grid; gap: var(--flow-node); margin-block-start: var(--flow-group); }
+
+  /* ---------- 06 Fulfillment ---------- */
+  .portal-plate--wide { justify-items: center; }
+  .portal-plate--wide :global(.portal-shot) { inline-size: 100%; }
+
+  /* ---------- Outcome ---------- */
+  .portal-outcome {
+    display: grid;
+    gap: var(--flow-group);
+    padding: var(--space-6);
+    background: var(--surface-subtle);
+    border-radius: var(--radius-media);
+  }
+  .portal-outcome__lead { display: grid; gap: var(--flow-text); align-content: start; }
+  .portal-outcome__thesis { margin: 0; max-inline-size: 16ch; }
+  .portal-outcome__body { margin: 0; max-inline-size: var(--measure-case); color: var(--text-subtle); }
+  .portal-outcome__costs { display: grid; gap: var(--flow-text); align-content: start; }
+  .portal-costs { display: grid; gap: var(--flow-text); margin: 0; }
+  .portal-costs__item { display: grid; gap: var(--flow-pair); padding-block-start: var(--space-4); border-block-start: var(--border-width) solid var(--border-strong); }
+  .portal-costs__text { margin: 0; color: var(--text-subtle); }
+  .portal-outcome__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--flow-pair) var(--flow-text); }
+  .portal-cta {
+    display: inline-flex; align-items: center; gap: var(--space-3);
+    min-block-size: var(--space-16);
+    padding-inline: var(--space-8);
+    background: var(--surface-action-primary);
+    color: var(--text-on-action);
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    transition: background-color var(--motion-hover-duration) var(--motion-hover-ease);
+  }
+  .portal-cta:focus-visible { outline: var(--focus-ring-width) solid var(--focus-ring-color); outline-offset: var(--focus-ring-width); }
+  .portal-cta__note { margin: 0; color: var(--text-muted); }
+  @media (--can-hover) {
+    .portal-cta:hover { background: var(--surface-action-primary-hover); }
+  }
+
+  /* ---------- Tablet ---------- */
+  @media (--bp-md) {
+    .portal-plate { padding: var(--space-8); }
+    .portal-flow { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .portal-outcome { padding: var(--space-12); }
+  }
+
+  /* ---------- Desktop: asymmetric 12-column grammar ---------- */
+  @media (--bp-lg) {
+    .portal-sheet { --portal-step: var(--space-32); }
+    .portal-cover__inner { padding-block: var(--flow-group) var(--flow-block); }
+    .portal-cover__head {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      column-gap: var(--gutter);
+      align-items: end;
+    }
+    .portal-cover__eyebrow { grid-column: 1 / -1; }
+    .portal-cover__title { grid-column: 1 / span 7; }
+    .portal-cover__promise { grid-column: 8 / -1; }
+    .portal-cover__stage { grid-template-columns: minmax(0, 3fr) minmax(0, 1fr); gap: var(--gutter); }
+    .portal-cover__detail { inline-size: 100%; margin-block-start: var(--flow-group); }
+
+    .portal-head, .portal-split, .portal-pair, .portal-outcome {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      column-gap: var(--gutter);
+    }
+    .portal-head > .portal-label { grid-column: 1 / span 3; padding-block-start: var(--space-2); }
+    .portal-head__text { grid-column: 4 / -1; }
+
+    .portal-split__text { grid-column: 1 / span 4; }
+    .portal-split__media { grid-column: 5 / -1; }
+
+    .portal-pair > :first-child { grid-column: 1 / span 8; }
+    .portal-pair > :last-child { grid-column: 10 / -1; }
+
+    .portal-flow { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+
+    .portal-band .portal-head { margin-block-end: 0; }
+
+    .portal-outcome__lead { grid-column: 1 / span 5; }
+    .portal-outcome__costs { grid-column: 7 / -1; }
+    .portal-outcome__cta { grid-column: 1 / -1; }
+  }
+</style>

@@ -1,6 +1,9 @@
 ---
 import PageShell from '../../layouts/PageShell.astro';
 import CaseStory from '../../components/CaseStory.astro';
+import PortalCase from '../../components/portal/PortalCase.astro';
+import { portalCaseEn } from '../../copy/cases/partner-portal-v2.ts';
+import { portalCaseRu } from '../../copy/ru/cases/partner-portal-v2.ts';
 import { cases, type Case } from '../../copy/cases/index.ts';
 import { casesRu } from '../../copy/ru/cases/index.ts';
 import { site as siteEn } from '../../copy/site.ts';
@@ -15,10 +18,14 @@ const registry = locale === 'ru' ? casesRu : cases;
 const next = registry[(registry.findIndex(item => item.slug === entry.slug) + 1) % registry.length];
 const nextHref = (locale === 'ru' ? '/ru' : '') + '/work/' + next.slug;
 const site = locale === 'ru' ? siteRu : siteEn;
+// Partner Portal V2 has its own case-scoped renderer; the other cases keep CaseStory.
+const portal = entry.slug === 'partner-portal' ? (locale === 'ru' ? portalCaseRu : portalCaseEn) : undefined;
+const nextLink = { label: locale === 'ru' ? 'Следующий кейс' : 'Next case', title: next.story.cover.title, href: nextHref, theme: next.theme };
 ---
 <PageShell title={entry.meta.title} description={entry.meta.description} lang={locale}
   current={(locale === 'ru' ? '/ru' : '') + '/work/' + entry.slug}
   ogCard={'work-' + entry.slug + (locale === 'ru' ? '-ru' : '')} siteCopy={site}>
-  <CaseStory story={entry.story} id={'case-' + entry.slug} lang={locale}
-    next={{ label: locale === 'ru' ? 'Следующий кейс' : 'Next case', title: next.story.cover.title, href: nextHref, theme: next.theme }} />
+  {portal
+    ? <PortalCase copy={portal} locale={locale} next={nextLink} />
+    : <CaseStory story={entry.story} id={'case-' + entry.slug} lang={locale} next={nextLink} />}
 </PageShell>
