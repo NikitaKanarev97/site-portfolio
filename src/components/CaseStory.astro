@@ -106,16 +106,41 @@ const label = (block: CaseStory['blocks'][number]) => {
     --text-muted: var(--text-on-inverse);
   }
   .case-story__finale-body > :global(.case-thesis) { display: block; }
+
+  /* Only the portal finale: the editorial text must never force a wider
+     grid track or crop content on narrow phones. */
+  .case-story--portal .case-story__finale-body {
+    min-inline-size: 0;
+    grid-template-columns: minmax(0, 1fr);
+    overflow-wrap: break-word;
+  }
+  .case-story--portal .case-story__finale-body > :global(.case-thesis),
+  .case-story--portal .case-story__finale-body > :global(.case-impact),
+  .case-story--portal .case-story__finale-body :global(.case-thesis__text),
+  .case-story--portal .case-story__finale-body :global(.case-impact__statements),
+  .case-story--portal .case-story__finale-body :global(.meta-list) {
+    min-inline-size: 0;
+    max-inline-size: 100%;
+  }
+  .case-story--portal .case-story__finale-body :global(.case-thesis__thesis) {
+    font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+    overflow-wrap: break-word;
+  }
+
   /* Две колонки — с bp-xl. На 1024 половина плашки давала 352 px под
      display-5xl, и заголовок итога шёл по слову в строке. */
   @media (--bp-lg) {
     .case-story__result-body { padding: var(--space-12); }
   }
   @media (--bp-xl) {
+    /* Enterprise case ending: one readable column, no headline bleeding
+       into a floating trade-off column at desktop widths. */
+    .case-story--portal .case-story__finale-body { grid-template-columns: minmax(0, 1fr); }
     .case-story__finale-body { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--space-12); }
     .case-story__finale-body > :global(.case-thesis) { grid-column: 1; }
     .case-story__finale-body > :global(.case-impact--editorial) { display: contents; }
     .case-story__finale-body :global(.case-impact__cards) { grid-column: 1; grid-row: 2; }
     .case-story__finale-body :global(.case-impact__statements) { grid-column: 2; grid-row: 1 / span 2; align-self: start; }
+    .case-story--portal .case-story__finale-body :global(.case-impact__statements) { grid-column: 1; grid-row: auto; }
   }
 </style>
