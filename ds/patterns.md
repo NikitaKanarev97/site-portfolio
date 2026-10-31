@@ -403,3 +403,6 @@ HeroPackage использует Onest и роль `ds-display-home`, сохра
 ## Portal homepage editorial composition · V2.1
 
 FeaturedCase → WorkStage → PortalHome → PortalShot. Text describes the real 41/48 fixture, desktop evidence compares two recorders for source row 19; mobile uses the first complete review card. The card retains FeaturedCase’s dimensions, link and focus treatment. Only the Portal branch changes. PortalShot retains intrinsic sizing and natural component edges.
+## Agent Ops case V2 · 31.10.2026
+
+`AgentCase` composes existing MetaList, typography, motion attributes, MediaZoom and CaseNext with documentary `AgentShot` figures; `AgentHome` supplies the Agent-only WorkStage composition. Details and map: `ds/screens/case-agent-ops.md` §Portfolio V2. On native screenshot crops, 24 CSS px of the sampled product canvas separates the header/customer text from the media boundary; source pixels remain unchanged. Mobile avoids a second enclosing field, desktop plates use space-6 and captions use flow-pair. Headings and captions never overlay UI. Whole long native screens remain available in the shared zoom. No token or shared motion change.

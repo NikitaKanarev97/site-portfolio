@@ -1,0 +1,27 @@
+---
+import AgentShot from './AgentShot.astro';
+import { agentCaseEn } from '../../copy/cases/agent-ops-v2';
+import { agentCaseRu } from '../../copy/ru/cases/agent-ops-v2';
+interface Props { locale: 'en' | 'ru'; loading?: 'eager' | 'lazy' }
+const { locale, loading = 'lazy' } = Astro.props;
+const copy = (locale === 'ru' ? agentCaseRu : agentCaseEn).home;
+---
+<div class="agent-home">
+  <div class="agent-home__story">
+    <p class="ds-meta-sm agent-home__label">{copy.label}</p>
+    <p class="ds-heading-3xl">{copy.title}</p>
+    <p class="ds-body-base agent-home__body">{copy.body}</p>
+  </div>
+  <div class="agent-home__scene">
+    <AgentShot locale={locale} loading={loading} zoom={false} href={`${locale === 'ru' ? '/ru' : ''}/work/agent-ops-console`} shot={{ desktop: 'approval-consequences-desktop', mobile: 'approval-consequences-mobile', alt: copy.alt }} />
+  </div>
+</div>
+<style>
+  :global(#work-agent-ops-console .featured-case__stage) { padding: 0; background: var(--surface-subtle); color: var(--text-default); }
+  .agent-home { --focus-ring-color: var(--border-focus); display: grid; gap: var(--flow-node); padding: var(--stage-inset); background: var(--surface-subtle); color: var(--text-default); border-radius: var(--radius-media); }
+  .agent-home__story { display: grid; gap: var(--flow-text); align-content: center; }
+  .agent-home__story p { margin: 0; }
+  .agent-home__body, .agent-home__label { color: var(--text-subtle); }
+  .agent-home__scene { display: grid; min-inline-size: 0; align-items: center; justify-items: end; }
+  @media (--bp-lg) { .agent-home { grid-template-columns: minmax(0, 2fr) minmax(0, 5fr); gap: var(--space-12); } }
+</style>

@@ -1,0 +1,118 @@
+{
+  "capturedAt": "2026-10-31T16:47:48.239Z",
+  "matrixStates": 8,
+  "primarySourceStates": 28,
+  "allBeforePreserved": true,
+  "preserved": [
+    {
+      "path": "before/en-1440-full.png",
+      "sha256": "D388614168DDE4235ED410B883A6B9B44D84A783608D0439933A65395B100F04",
+      "preserved": true
+    },
+    {
+      "path": "before/en-1440-home.png",
+      "sha256": "75F5A60F90C89429CCDBEF6DE112EA91CB694C743D78A188A6C777873D9111AC",
+      "preserved": true
+    },
+    {
+      "path": "before/en-1440-viewport.png",
+      "sha256": "5B763B601BFDDF7C84B566335AB2F58E0E73F683E9857924F973192433BECE92",
+      "preserved": true
+    },
+    {
+      "path": "before/en-390-full.png",
+      "sha256": "80499984B1989D3991B00C997269228DB2FA958A5811CCFAEEB26FF94BCE33EB",
+      "preserved": true
+    },
+    {
+      "path": "before/en-390-home.png",
+      "sha256": "AA92298BB51AE67294067CE596DCA05793579CFD168FDF8DE4F7CC6E410AFE98",
+      "preserved": true
+    },
+    {
+      "path": "before/en-390-viewport.png",
+      "sha256": "724990F5CA5124602C79D01757F2EE5A6C46ADC618604EFBB6E4719535988AC5",
+      "preserved": true
+    },
+    {
+      "path": "before/ru-1440-full.png",
+      "sha256": "20E8459257DEA81094B9874197760E5462380C7E1EB587A0F9256A2A285D5A5F",
+      "preserved": true
+    },
+    {
+      "path": "before/ru-1440-home.png",
+      "sha256": "B84FB59108D4EEB7E55339D2C9FE328E908487322E54A6F3DC66287A8F02DA13",
+      "preserved": true
+    },
+    {
+      "path": "before/ru-1440-viewport.png",
+      "sha256": "AAFC15FCCA25A48EAC532C7213DB20DD0454310FDEA70F18386582A763B319EB",
+      "preserved": true
+    },
+    {
+      "path": "before/ru-390-full.png",
+      "sha256": "020FC497B4ECE190DF54776BFC94594A4564E60DF5BC523F6CB3A48C842AEE41",
+      "preserved": true
+    },
+    {
+      "path": "before/ru-390-home.png",
+      "sha256": "79A8FCEB62AE09FB49786243ECAF5BA537AB492F5B207E360433499C2FF2E8E7",
+      "preserved": true
+    },
+    {
+      "path": "before/ru-390-viewport.png",
+      "sha256": "09B5DD10521D02A8B831D1B0FF8A9C68A1B6FA1D69E5A8EB09A9202501FEC8F7",
+      "preserved": true
+    }
+  ],
+  "unchangedOtherCards": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "unchanged": true
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "unchanged": true
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "unchanged": true
+    },
+    {
+      "locale": "ru",
+      "width": 390,
+      "unchanged": true
+    }
+  ],
+  "browserFailures": [],
+  "editorialWords": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "words": 833
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "words": 720
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "words": 848
+    },
+    {
+      "locale": "ru",
+      "width": 390,
+      "words": 732
+    }
+  ],
+  "notes": [
+    "Full-page mobile screenshots use PNG when taller than the WebP dimension limit; other review exports are lossless WebP.",
+    "Source originals are local, full resolution, and hash-addressed by capture-manifest.json.",
+    "Portfolio visual acceptance remains with independent ChatGPT review."
+  ]
+}

@@ -1,0 +1,1644 @@
+{
+  "repository": "NikitaKanarev97/Agent-ops-console",
+  "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+  "entries": [
+    {
+      "screen": "review-queue",
+      "locale": "en",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "reviewer",
+      "route": "/screens/review-queue",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:25:06.191Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "review-queue-desktop",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1157.46875
+      },
+      "pixels": {
+        "width": 2880,
+        "height": 2316
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/review-queue-desktop.png",
+      "originalSha256": "b25e5e7e44d0ab89382559de8f4089d43716f9b70a6d5aa63de14d640268b6aa",
+      "src": "/media/rebuild/agent-ops/v2/en/review-queue-desktop.webp",
+      "width": 2880,
+      "height": 2316,
+      "density": 2,
+      "webpBytes": 250068
+    },
+    {
+      "screen": "review-queue",
+      "locale": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "reviewer",
+      "route": "/screens/review-queue",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:25:09.576Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "review-queue-mobile",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 1586.75
+      },
+      "pixels": {
+        "width": 780,
+        "height": 3174
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/review-queue-mobile.png",
+      "originalSha256": "43871e5ef43c10dbf010a16ae3fca41bc5f39484d374fa89a883c4f777d361ff",
+      "src": "/media/rebuild/agent-ops/v2/en/review-queue-mobile.webp",
+      "width": 780,
+      "height": 3174,
+      "density": 2,
+      "webpBytes": 171830
+    },
+    {
+      "screen": "review-queue",
+      "locale": "ru",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "reviewer",
+      "route": "/ru/screens/review-queue",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:25:14.401Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "review-queue-desktop",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1157.46875
+      },
+      "pixels": {
+        "width": 2880,
+        "height": 2316
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/review-queue-desktop.png",
+      "originalSha256": "9443f5073b404de31dcff4387175da1901c5185c3f6aa0e14d8a8359cb11d043",
+      "src": "/media/rebuild/agent-ops/v2/ru/review-queue-desktop.webp",
+      "width": 2880,
+      "height": 2316,
+      "density": 2,
+      "webpBytes": 277974
+    },
+    {
+      "screen": "review-queue",
+      "locale": "ru",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "reviewer",
+      "route": "/ru/screens/review-queue",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:25:19.738Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "review-queue-mobile",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 1580.25
+      },
+      "pixels": {
+        "width": 780,
+        "height": 3162
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/review-queue-mobile.png",
+      "originalSha256": "26fbdfccba81605e837bd9fa3419b7054d3edacafb32523f505b04c1840977c4",
+      "src": "/media/rebuild/agent-ops/v2/ru/review-queue-mobile.webp",
+      "width": 780,
+      "height": 3162,
+      "density": 2,
+      "webpBytes": 175920
+    },
+    {
+      "screen": "policy-editor",
+      "locale": "en",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "policy-owner",
+      "route": "/screens/policy-editor",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6399f6a4a586783f4eb20df7a9d93cb6076b06ed",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:00.637Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "policy-editor-desktop",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1326.8125
+      },
+      "pixels": {
+        "width": 2880,
+        "height": 2654
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/policy-editor-desktop.png",
+      "originalSha256": "50f1a637ec94b8d1acd411344e6b7a6f90a36f618529b8a7cc53ef0389b1437d",
+      "src": "/media/rebuild/agent-ops/v2/en/policy-editor-desktop.webp",
+      "width": 2880,
+      "height": 2654,
+      "density": 2,
+      "webpBytes": 264924
+    },
+    {
+      "screen": "policy-editor",
+      "locale": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "policy-owner",
+      "route": "/screens/policy-editor",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6399f6a4a586783f4eb20df7a9d93cb6076b06ed",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:04.062Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "policy-editor-mobile",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 2440.625
+      },
+      "pixels": {
+        "width": 780,
+        "height": 4882
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/policy-editor-mobile.png",
+      "originalSha256": "5b430845239ab2e52b84dce8c1218b25d013e51e5d1ec49551b3029ca4b21af4",
+      "src": "/media/rebuild/agent-ops/v2/en/policy-editor-mobile.webp",
+      "width": 780,
+      "height": 4882,
+      "density": 2,
+      "webpBytes": 248590
+    },
+    {
+      "screen": "policy-editor",
+      "locale": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "policy-owner",
+      "route": "/screens/policy-editor",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6399f6a4a586783f4eb20df7a9d93cb6076b06ed",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:04.062Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "policy-boundary-mobile",
+      "bounds": {
+        "x": 16,
+        "y": 425.4375,
+        "width": 358,
+        "height": 708.984375
+      },
+      "pixels": {
+        "width": 812,
+        "height": 1516
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/policy-boundary-mobile.png",
+      "originalSha256": "b3cbbfc7e4281f2754e055ac6cb9434b31c1e277d075cf1241d3747b8f79f15f",
+      "src": "/media/rebuild/agent-ops/v2/en/policy-boundary-mobile.webp",
+      "width": 812,
+      "height": 1516,
+      "density": 2,
+      "webpBytes": 59044,
+      "cssWidth": 406,
+      "cssHeight": 758,
+      "nativeCanvas": {
+        "cssPadding": 24,
+        "color": "rgb(25, 26, 28)",
+        "purpose": "Neutral context outside unchanged browser capture; no text or controls repainted"
+      }
+    },
+    {
+      "screen": "policy-editor",
+      "locale": "ru",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "policy-owner",
+      "route": "/ru/screens/policy-editor",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6399f6a4a586783f4eb20df7a9d93cb6076b06ed",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:09.259Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "policy-editor-desktop",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1346.3125
+      },
+      "pixels": {
+        "width": 2880,
+        "height": 2694
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/policy-editor-desktop.png",
+      "originalSha256": "50f077423977954b9fd6c6516de31df94e03e5a23f7b9e32ac0d17b00ff4edfb",
+      "src": "/media/rebuild/agent-ops/v2/ru/policy-editor-desktop.webp",
+      "width": 2880,
+      "height": 2694,
+      "density": 2,
+      "webpBytes": 291802
+    },
+    {
+      "screen": "policy-editor",
+      "locale": "ru",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "policy-owner",
+      "route": "/ru/screens/policy-editor",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6399f6a4a586783f4eb20df7a9d93cb6076b06ed",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:14.806Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "policy-editor-mobile",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 2574.625
+      },
+      "pixels": {
+        "width": 780,
+        "height": 5150
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/policy-editor-mobile.png",
+      "originalSha256": "8248dd16098c16ba9594a51d6a51b54d0e215f19a75f464b94602f57c747965f",
+      "src": "/media/rebuild/agent-ops/v2/ru/policy-editor-mobile.webp",
+      "width": 780,
+      "height": 5150,
+      "density": 2,
+      "webpBytes": 275196
+    },
+    {
+      "screen": "policy-editor",
+      "locale": "ru",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "policy-owner",
+      "route": "/ru/screens/policy-editor",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6399f6a4a586783f4eb20df7a9d93cb6076b06ed",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:14.806Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "policy-boundary-mobile",
+      "bounds": {
+        "x": 16,
+        "y": 425.4375,
+        "width": 358,
+        "height": 750.484375
+      },
+      "pixels": {
+        "width": 812,
+        "height": 1598
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/policy-boundary-mobile.png",
+      "originalSha256": "3bc9c3594583fedb75c424ce0461bdf36090b49d17f5f6f449d4474da6ad2af0",
+      "src": "/media/rebuild/agent-ops/v2/ru/policy-boundary-mobile.webp",
+      "width": 812,
+      "height": 1598,
+      "density": 2,
+      "webpBytes": 67358,
+      "cssWidth": 406,
+      "cssHeight": 799,
+      "nativeCanvas": {
+        "cssPadding": 24,
+        "color": "rgb(25, 26, 28)",
+        "purpose": "Neutral context outside unchanged browser capture; no text or controls repainted"
+      }
+    },
+    {
+      "screen": "policy-version-diff",
+      "locale": "en",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "policy-owner",
+      "route": "/screens/policy-version-diff",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:18.566Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "policy-version-diff-desktop",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1282.265625
+      },
+      "pixels": {
+        "width": 2880,
+        "height": 2566
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/policy-version-diff-desktop.png",
+      "originalSha256": "0ab682222e082607a81187fac57c5201f256ff8d52a332cb1b2d3d12e8bd246e",
+      "src": "/media/rebuild/agent-ops/v2/en/policy-version-diff-desktop.webp",
+      "width": 2880,
+      "height": 2566,
+      "density": 2,
+      "webpBytes": 285256
+    },
+    {
+      "screen": "policy-version-diff",
+      "locale": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "policy-owner",
+      "route": "/screens/policy-version-diff",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:21.961Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "policy-version-diff-mobile",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 2438.28125
+      },
+      "pixels": {
+        "width": 780,
+        "height": 4878
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/policy-version-diff-mobile.png",
+      "originalSha256": "827cc5ff98fdb09502ac4088a84fabad62410cc9060ad383f6d2dd1e875e8903",
+      "src": "/media/rebuild/agent-ops/v2/en/policy-version-diff-mobile.webp",
+      "width": 780,
+      "height": 4878,
+      "density": 2,
+      "webpBytes": 245018
+    },
+    {
+      "screen": "policy-version-diff",
+      "locale": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "policy-owner",
+      "route": "/screens/policy-version-diff",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:21.961Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "policy-rollout-mobile",
+      "bounds": {
+        "x": 16,
+        "y": 260.4375,
+        "width": 358,
+        "height": 447
+      },
+      "pixels": {
+        "width": 812,
+        "height": 992
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/policy-rollout-mobile.png",
+      "originalSha256": "af8c13f760f9d21bc545d0cc365adc29fd704f813782a5110d00d950d0d5f51b",
+      "src": "/media/rebuild/agent-ops/v2/en/policy-rollout-mobile.webp",
+      "width": 812,
+      "height": 992,
+      "density": 2,
+      "webpBytes": 40168,
+      "cssWidth": 406,
+      "cssHeight": 496,
+      "nativeCanvas": {
+        "cssPadding": 24,
+        "color": "rgb(25, 26, 28)",
+        "purpose": "Neutral context outside unchanged browser capture; no text or controls repainted"
+      }
+    },
+    {
+      "screen": "policy-version-diff",
+      "locale": "ru",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "policy-owner",
+      "route": "/ru/screens/policy-version-diff",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:27.058Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "policy-version-diff-desktop",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1300.265625
+      },
+      "pixels": {
+        "width": 2880,
+        "height": 2602
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/policy-version-diff-desktop.png",
+      "originalSha256": "3ddb2a538f1e7da8c204b4fbfe8a911c182465be0becd4d21980a0af7b4cb819",
+      "src": "/media/rebuild/agent-ops/v2/ru/policy-version-diff-desktop.webp",
+      "width": 2880,
+      "height": 2602,
+      "density": 2,
+      "webpBytes": 319926
+    },
+    {
+      "screen": "policy-version-diff",
+      "locale": "ru",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "policy-owner",
+      "route": "/ru/screens/policy-version-diff",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:32.471Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "policy-version-diff-mobile",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 2513.28125
+      },
+      "pixels": {
+        "width": 780,
+        "height": 5028
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/policy-version-diff-mobile.png",
+      "originalSha256": "9aefaa535134d808d273c28b8284eea0864d448765b0889074244972424d8a74",
+      "src": "/media/rebuild/agent-ops/v2/ru/policy-version-diff-mobile.webp",
+      "width": 780,
+      "height": 5028,
+      "density": 2,
+      "webpBytes": 276714
+    },
+    {
+      "screen": "policy-version-diff",
+      "locale": "ru",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "policy-owner",
+      "route": "/ru/screens/policy-version-diff",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:32.471Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "policy-rollout-mobile",
+      "bounds": {
+        "x": 16,
+        "y": 260.4375,
+        "width": 358,
+        "height": 447
+      },
+      "pixels": {
+        "width": 812,
+        "height": 992
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/policy-rollout-mobile.png",
+      "originalSha256": "844a8ed204114883ab6ddc8592063eebbf8fb146bd213da65a2efd5fb91cf91e",
+      "src": "/media/rebuild/agent-ops/v2/ru/policy-rollout-mobile.webp",
+      "width": 812,
+      "height": 992,
+      "density": 2,
+      "webpBytes": 49014,
+      "cssWidth": 406,
+      "cssHeight": 496,
+      "nativeCanvas": {
+        "cssPadding": 24,
+        "color": "rgb(25, 26, 28)",
+        "purpose": "Neutral context outside unchanged browser capture; no text or controls repainted"
+      }
+    },
+    {
+      "screen": "quality-dashboard",
+      "locale": "en",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "policy-owner",
+      "route": "/screens/quality-dashboard",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "00641af7706c0f941e5ee58f4da8ee9bf9bb94d6",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:35.886Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "quality-dashboard-desktop",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1042.984375
+      },
+      "pixels": {
+        "width": 2880,
+        "height": 2086
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/quality-dashboard-desktop.png",
+      "originalSha256": "8167cb50c2859a907d4224d0a0219e8a1ca06e3670d9ad53b8c34475fe96716d",
+      "src": "/media/rebuild/agent-ops/v2/en/quality-dashboard-desktop.webp",
+      "width": 2880,
+      "height": 2086,
+      "density": 2,
+      "webpBytes": 262738
+    },
+    {
+      "screen": "quality-dashboard",
+      "locale": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "policy-owner",
+      "route": "/screens/quality-dashboard",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "00641af7706c0f941e5ee58f4da8ee9bf9bb94d6",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:39.090Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "quality-dashboard-mobile",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 1847.625
+      },
+      "pixels": {
+        "width": 780,
+        "height": 3696
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/quality-dashboard-mobile.png",
+      "originalSha256": "9e816091586c08d80cf61758137fb402222958bd6467ef2c296cdb6e1d33e885",
+      "src": "/media/rebuild/agent-ops/v2/en/quality-dashboard-mobile.webp",
+      "width": 780,
+      "height": 3696,
+      "density": 2,
+      "webpBytes": 193760
+    },
+    {
+      "screen": "quality-dashboard",
+      "locale": "ru",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "policy-owner",
+      "route": "/ru/screens/quality-dashboard",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "00641af7706c0f941e5ee58f4da8ee9bf9bb94d6",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:43.645Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "quality-dashboard-desktop",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1036.3125
+      },
+      "pixels": {
+        "width": 2880,
+        "height": 2074
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/quality-dashboard-desktop.png",
+      "originalSha256": "392b12d8a5f1a59b9247d768a47a6f8b7d361801c0478bf95279acc94f5727a0",
+      "src": "/media/rebuild/agent-ops/v2/ru/quality-dashboard-desktop.webp",
+      "width": 2880,
+      "height": 2074,
+      "density": 2,
+      "webpBytes": 281734
+    },
+    {
+      "screen": "quality-dashboard",
+      "locale": "ru",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "policy-owner",
+      "route": "/ru/screens/quality-dashboard",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "00641af7706c0f941e5ee58f4da8ee9bf9bb94d6",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:48.640Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "quality-dashboard-mobile",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 1905.125
+      },
+      "pixels": {
+        "width": 780,
+        "height": 3812
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/quality-dashboard-mobile.png",
+      "originalSha256": "4169fdad96b330c6ee2233f14d9e62f871e0d5314f80303ddd014ee997e7b504",
+      "src": "/media/rebuild/agent-ops/v2/ru/quality-dashboard-mobile.webp",
+      "width": 780,
+      "height": 3812,
+      "density": 2,
+      "webpBytes": 201406
+    },
+    {
+      "screen": "autonomy",
+      "locale": "en",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "policy-owner",
+      "route": "/screens/autonomy",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:51.591Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "autonomy-desktop",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1396.09375
+      },
+      "pixels": {
+        "width": 2880,
+        "height": 2794
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/autonomy-desktop.png",
+      "originalSha256": "87c1b5adc904074abf9c6a86cf32a801f329d08f0559d7e46ed751a27892fbac",
+      "src": "/media/rebuild/agent-ops/v2/en/autonomy-desktop.webp",
+      "width": 2880,
+      "height": 2794,
+      "density": 2,
+      "webpBytes": 272008
+    },
+    {
+      "screen": "autonomy",
+      "locale": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "policy-owner",
+      "route": "/screens/autonomy",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:26:55.080Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "autonomy-mobile",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 2055.34375
+      },
+      "pixels": {
+        "width": 780,
+        "height": 4112
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/autonomy-mobile.png",
+      "originalSha256": "d52ee8c9c9b32b820adeb95d603c27fb13e9e06c8b548b72bdb55ea99abda56f",
+      "src": "/media/rebuild/agent-ops/v2/en/autonomy-mobile.webp",
+      "width": 780,
+      "height": 4112,
+      "density": 2,
+      "webpBytes": 173476
+    },
+    {
+      "screen": "autonomy",
+      "locale": "ru",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "policy-owner",
+      "route": "/ru/screens/autonomy",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:27:00.076Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "autonomy-desktop",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1495.71875
+      },
+      "pixels": {
+        "width": 2880,
+        "height": 2992
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/autonomy-desktop.png",
+      "originalSha256": "a7e5dd3d2162c3832082b340cedf2c98f27a0bd45b6ea789509e8208589561a9",
+      "src": "/media/rebuild/agent-ops/v2/ru/autonomy-desktop.webp",
+      "width": 2880,
+      "height": 2992,
+      "density": 2,
+      "webpBytes": 321332
+    },
+    {
+      "screen": "autonomy",
+      "locale": "ru",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "policy-owner",
+      "route": "/ru/screens/autonomy",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "fresh seeded session; no verdict or policy submitted",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:27:06.146Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "autonomy-mobile",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 2308.84375
+      },
+      "pixels": {
+        "width": 780,
+        "height": 4618
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/autonomy-mobile.png",
+      "originalSha256": "f7de5c71e6950b542d267cef24d095e1002ee99f716e35e587e22858f9e68a04",
+      "src": "/media/rebuild/agent-ops/v2/ru/autonomy-mobile.webp",
+      "width": 780,
+      "height": 4618,
+      "density": 2,
+      "webpBytes": 206314
+    },
+    {
+      "screen": "run-detail",
+      "locale": "en",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "reviewer",
+      "route": "/screens/run-detail?run=run-24a8-0917",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "run-24a8-0917 · Nordwind GmbH · $1,120 · EMEA",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:37:58.145Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "run-detail-desktop",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1438.75
+      },
+      "pixels": {
+        "width": 2880,
+        "height": 2878
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/run-detail-desktop.png",
+      "originalSha256": "a51bd8280813a211a816ffba7d6eba91028712507a7220dca04a00c18345f261",
+      "src": "/media/rebuild/agent-ops/v2/en/run-detail-desktop.webp",
+      "width": 2880,
+      "height": 2878,
+      "cssWidth": 1440,
+      "cssHeight": 1439,
+      "density": 2,
+      "nativeCanvas": null,
+      "webpBytes": 339566
+    },
+    {
+      "screen": "run-detail",
+      "locale": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "reviewer",
+      "route": "/screens/run-detail?run=run-24a8-0917",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "run-24a8-0917 · Nordwind GmbH · $1,120 · EMEA",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:38:01.608Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "run-detail-mobile",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 2992.984375
+      },
+      "pixels": {
+        "width": 780,
+        "height": 5986
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/run-detail-mobile.png",
+      "originalSha256": "4df41a0633d934f61a4d07a72f694a6e89e1613393c84f74dd612a29919f2138",
+      "src": "/media/rebuild/agent-ops/v2/en/run-detail-mobile.webp",
+      "width": 780,
+      "height": 5986,
+      "cssWidth": 390,
+      "cssHeight": 2993,
+      "density": 2,
+      "nativeCanvas": null,
+      "webpBytes": 308340
+    },
+    {
+      "screen": "run-detail",
+      "locale": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "reviewer",
+      "route": "/screens/run-detail?run=run-24a8-0917",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "run-24a8-0917 · Nordwind GmbH · $1,120 · EMEA",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:38:01.608Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "run-evidence-mobile",
+      "bounds": {
+        "x": 16,
+        "y": 1699.0625,
+        "width": 358,
+        "height": 1093.921875
+      },
+      "pixels": {
+        "width": 812,
+        "height": 2284
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/run-evidence-mobile.png",
+      "originalSha256": "0452bb0f6e3b4e6a25231d858a43c9d7e79184d581fb84cf3d717f9c4d53ac29",
+      "src": "/media/rebuild/agent-ops/v2/en/run-evidence-mobile.webp",
+      "width": 812,
+      "height": 2284,
+      "cssWidth": 406,
+      "cssHeight": 1142,
+      "density": 2,
+      "nativeCanvas": {
+        "cssPadding": 24,
+        "color": "rgb(25, 26, 28)",
+        "purpose": "Neutral context outside unchanged browser capture; no text or controls repainted"
+      },
+      "webpBytes": 124448
+    },
+    {
+      "screen": "run-detail",
+      "locale": "ru",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "reviewer",
+      "route": "/ru/screens/run-detail?run=run-24a8-0917",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "run-24a8-0917 · Nordwind GmbH · $1,120 · EMEA",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:38:06.983Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "run-detail-desktop",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1482.25
+      },
+      "pixels": {
+        "width": 2880,
+        "height": 2966
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/run-detail-desktop.png",
+      "originalSha256": "7c70331468e970e716d05aa53a70c8aab54e22d715c0ef1a461a233c84b5bd60",
+      "src": "/media/rebuild/agent-ops/v2/ru/run-detail-desktop.webp",
+      "width": 2880,
+      "height": 2966,
+      "cssWidth": 1440,
+      "cssHeight": 1483,
+      "density": 2,
+      "nativeCanvas": null,
+      "webpBytes": 361074
+    },
+    {
+      "screen": "run-detail",
+      "locale": "ru",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "reviewer",
+      "route": "/ru/screens/run-detail?run=run-24a8-0917",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "run-24a8-0917 · Nordwind GmbH · $1,120 · EMEA",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:38:12.382Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "run-detail-mobile",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 3058.59375
+      },
+      "pixels": {
+        "width": 780,
+        "height": 6118
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/run-detail-mobile.png",
+      "originalSha256": "bf300cdf0befd04bcbbfe186577af2d3cbc02de95b4253b30476ff2f72b03de0",
+      "src": "/media/rebuild/agent-ops/v2/ru/run-detail-mobile.webp",
+      "width": 780,
+      "height": 6118,
+      "cssWidth": 390,
+      "cssHeight": 3059,
+      "density": 2,
+      "nativeCanvas": null,
+      "webpBytes": 333896
+    },
+    {
+      "screen": "run-detail",
+      "locale": "ru",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "reviewer",
+      "route": "/ru/screens/run-detail?run=run-24a8-0917",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "run-24a8-0917 · Nordwind GmbH · $1,120 · EMEA",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:38:12.382Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "run-evidence-mobile",
+      "bounds": {
+        "x": 16,
+        "y": 1707.671875,
+        "width": 358,
+        "height": 1150.921875
+      },
+      "pixels": {
+        "width": 812,
+        "height": 2400
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/run-evidence-mobile.png",
+      "originalSha256": "855e2553aa5215b96dc391da9d68b48ed6bc7a01b0fed985932512052345c2bd",
+      "src": "/media/rebuild/agent-ops/v2/ru/run-evidence-mobile.webp",
+      "width": 812,
+      "height": 2400,
+      "cssWidth": 406,
+      "cssHeight": 1200,
+      "density": 2,
+      "nativeCanvas": {
+        "cssPadding": 24,
+        "color": "rgb(25, 26, 28)",
+        "purpose": "Neutral context outside unchanged browser capture; no text or controls repainted"
+      },
+      "webpBytes": 133634
+    },
+    {
+      "screen": "action-approvals",
+      "locale": "en",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "shift-lead",
+      "route": "/screens/action-approvals?approval=ap-5",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "ap-5 · Ferrum Logistics · $120 invoice credit · APAC",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:42:35.877Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "action-approvals-desktop",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 934.6875
+      },
+      "pixels": {
+        "width": 2880,
+        "height": 1870
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/action-approvals-desktop.png",
+      "originalSha256": "87b64d31a37296b5384d6e8151820a3c9dc571ef1645b9fb666f451b03248907",
+      "src": "/media/rebuild/agent-ops/v2/en/action-approvals-desktop.webp",
+      "width": 2880,
+      "height": 1870,
+      "cssWidth": 1440,
+      "cssHeight": 935,
+      "density": 2,
+      "nativeCanvas": null,
+      "webpBytes": 231026
+    },
+    {
+      "screen": "action-approvals",
+      "locale": "en",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "shift-lead",
+      "route": "/screens/action-approvals?approval=ap-5",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "ap-5 · Ferrum Logistics · $120 invoice credit · APAC",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:42:35.877Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "crop": "Complete selected task from header through the bottom of its decision dock; empty stretched canvas below the dock excluded",
+      "key": "approval-task-desktop",
+      "bounds": {
+        "x": 658.65625,
+        "y": 179.1875,
+        "width": 757.34375,
+        "height": 718.734375
+      },
+      "pixels": {
+        "width": 1612,
+        "height": 1534
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/approval-task-desktop.png",
+      "originalSha256": "33921275df703c55889fd67cf7195abc5849a204e10573170ede8e122497e193",
+      "src": "/media/rebuild/agent-ops/v2/en/approval-task-desktop.webp",
+      "width": 1612,
+      "height": 1534,
+      "cssWidth": 806,
+      "cssHeight": 767,
+      "density": 2,
+      "nativeCanvas": {
+        "cssPadding": 24,
+        "color": "rgb(25, 26, 28)",
+        "purpose": "Neutral context outside the unchanged captured UI; no text or controls repainted"
+      },
+      "webpBytes": 114476
+    },
+    {
+      "screen": "action-approvals",
+      "locale": "en",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "shift-lead",
+      "route": "/screens/action-approvals?approval=ap-5",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "ap-5 · Ferrum Logistics · $120 invoice credit · APAC",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:42:35.877Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "approval-consequences-desktop",
+      "bounds": {
+        "x": 658.65625,
+        "y": 443.859375,
+        "width": 757.34375,
+        "height": 317.0625
+      },
+      "pixels": {
+        "width": 1612,
+        "height": 732
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/approval-consequences-desktop.png",
+      "originalSha256": "ab056e684965c5421f6aea4316e79533f7acd335ec3f31b0e3ea999e4b973ec7",
+      "src": "/media/rebuild/agent-ops/v2/en/approval-consequences-desktop.webp",
+      "width": 1612,
+      "height": 732,
+      "cssWidth": 806,
+      "cssHeight": 366,
+      "density": 2,
+      "nativeCanvas": {
+        "cssPadding": 24,
+        "color": "rgb(25, 26, 28)",
+        "purpose": "Neutral context outside the unchanged captured UI; no text or controls repainted"
+      },
+      "webpBytes": 58166
+    },
+    {
+      "screen": "action-approvals",
+      "locale": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "shift-lead",
+      "route": "/screens/action-approvals?approval=ap-5",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "ap-5 · Ferrum Logistics · $120 invoice credit · APAC",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:42:39.536Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "action-approvals-mobile",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 1423
+      },
+      "pixels": {
+        "width": 780,
+        "height": 2846
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/action-approvals-mobile.png",
+      "originalSha256": "92cdd35b7cc545873203394dce80b45c8c80c2393f16f23359167acf5ce4e2ff",
+      "src": "/media/rebuild/agent-ops/v2/en/action-approvals-mobile.webp",
+      "width": 780,
+      "height": 2846,
+      "cssWidth": 390,
+      "cssHeight": 1423,
+      "density": 2,
+      "nativeCanvas": null,
+      "webpBytes": 124632
+    },
+    {
+      "screen": "action-approvals",
+      "locale": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "shift-lead",
+      "route": "/screens/action-approvals?approval=ap-5",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "ap-5 · Ferrum Logistics · $120 invoice credit · APAC",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:42:39.536Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "crop": "Complete selected task from header through the bottom of its decision dock; empty stretched canvas below the dock excluded",
+      "key": "approval-task-mobile",
+      "bounds": {
+        "x": 16,
+        "y": 99,
+        "width": 358,
+        "height": 1308
+      },
+      "pixels": {
+        "width": 812,
+        "height": 2712
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/approval-task-mobile.png",
+      "originalSha256": "c4258221968b521d57d85d1a529cbf510125369edf8aef1e19f456623b3afce2",
+      "src": "/media/rebuild/agent-ops/v2/en/approval-task-mobile.webp",
+      "width": 812,
+      "height": 2712,
+      "cssWidth": 406,
+      "cssHeight": 1356,
+      "density": 2,
+      "nativeCanvas": {
+        "cssPadding": 24,
+        "color": "rgb(25, 26, 28)",
+        "purpose": "Neutral context outside the unchanged captured UI; no text or controls repainted"
+      },
+      "webpBytes": 118230
+    },
+    {
+      "screen": "action-approvals",
+      "locale": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "shift-lead",
+      "route": "/screens/action-approvals?approval=ap-5",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "ap-5 · Ferrum Logistics · $120 invoice credit · APAC",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:42:39.536Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": null,
+      "errors": [],
+      "key": "approval-consequences-mobile",
+      "bounds": {
+        "x": 16,
+        "y": 548.1875,
+        "width": 358,
+        "height": 577.8125
+      },
+      "pixels": {
+        "width": 812,
+        "height": 1252
+      },
+      "original": ".tmp/agent-ops-v2-originals/en/approval-consequences-mobile.png",
+      "originalSha256": "a4ac9806c1c262d553913731e860caa699bda1aa6ec85905be611bb0b543f36b",
+      "src": "/media/rebuild/agent-ops/v2/en/approval-consequences-mobile.webp",
+      "width": 812,
+      "height": 1252,
+      "cssWidth": 406,
+      "cssHeight": 626,
+      "density": 2,
+      "nativeCanvas": {
+        "cssPadding": 24,
+        "color": "rgb(25, 26, 28)",
+        "purpose": "Neutral context outside the unchanged captured UI; no text or controls repainted"
+      },
+      "webpBytes": 57756
+    },
+    {
+      "screen": "action-approvals",
+      "locale": "ru",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "shift-lead",
+      "route": "/ru/screens/action-approvals?approval=ap-5",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "ap-5 · Ferrum Logistics · $120 invoice credit · APAC",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:42:44.652Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "action-approvals-desktop",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 951.328125
+      },
+      "pixels": {
+        "width": 2880,
+        "height": 1904
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/action-approvals-desktop.png",
+      "originalSha256": "e71127c1c10cb08c0bd810d3392fc863b4bd6c4e5c6c62d71de893b4a1e08948",
+      "src": "/media/rebuild/agent-ops/v2/ru/action-approvals-desktop.webp",
+      "width": 2880,
+      "height": 1904,
+      "cssWidth": 1440,
+      "cssHeight": 952,
+      "density": 2,
+      "nativeCanvas": null,
+      "webpBytes": 258612
+    },
+    {
+      "screen": "action-approvals",
+      "locale": "ru",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "shift-lead",
+      "route": "/ru/screens/action-approvals?approval=ap-5",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "ap-5 · Ferrum Logistics · $120 invoice credit · APAC",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:42:44.652Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "crop": "Complete selected task from header through the bottom of its decision dock; empty stretched canvas below the dock excluded",
+      "key": "approval-task-desktop",
+      "bounds": {
+        "x": 658.65625,
+        "y": 179.1875,
+        "width": 757.34375,
+        "height": 748.234375
+      },
+      "pixels": {
+        "width": 1612,
+        "height": 1593
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/approval-task-desktop.png",
+      "originalSha256": "00fe79a03274a0d29e8dab87dfc3b5872cb736dcec05602af7e33a4c7f1fe790",
+      "src": "/media/rebuild/agent-ops/v2/ru/approval-task-desktop.webp",
+      "width": 1612,
+      "height": 1593,
+      "cssWidth": 806,
+      "cssHeight": 796.5,
+      "density": 2,
+      "nativeCanvas": {
+        "cssPadding": 24,
+        "color": "rgb(25, 26, 28)",
+        "purpose": "Neutral context outside the unchanged captured UI; no text or controls repainted"
+      },
+      "webpBytes": 128168
+    },
+    {
+      "screen": "action-approvals",
+      "locale": "ru",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "role": "shift-lead",
+      "route": "/ru/screens/action-approvals?approval=ap-5",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "ap-5 · Ferrum Logistics · $120 invoice credit · APAC",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:42:44.652Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "approval-consequences-desktop",
+      "bounds": {
+        "x": 658.65625,
+        "y": 427.859375,
+        "width": 757.34375,
+        "height": 336.5625
+      },
+      "pixels": {
+        "width": 1612,
+        "height": 772
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/approval-consequences-desktop.png",
+      "originalSha256": "82104547260df62721287e681637cf9c5b1412b3bafb35cf94e40ec9587f49b5",
+      "src": "/media/rebuild/agent-ops/v2/ru/approval-consequences-desktop.webp",
+      "width": 1612,
+      "height": 772,
+      "cssWidth": 806,
+      "cssHeight": 386,
+      "density": 2,
+      "nativeCanvas": {
+        "cssPadding": 24,
+        "color": "rgb(25, 26, 28)",
+        "purpose": "Neutral context outside the unchanged captured UI; no text or controls repainted"
+      },
+      "webpBytes": 62172
+    },
+    {
+      "screen": "action-approvals",
+      "locale": "ru",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "shift-lead",
+      "route": "/ru/screens/action-approvals?approval=ap-5",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "ap-5 · Ferrum Logistics · $120 invoice credit · APAC",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:42:50.308Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "action-approvals-mobile",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 1498.734375
+      },
+      "pixels": {
+        "width": 780,
+        "height": 2998
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/action-approvals-mobile.png",
+      "originalSha256": "fbe2c16381cbcc9d646d871d7c4cf923b8c95b01140ec8c69e4ba42513cd99cc",
+      "src": "/media/rebuild/agent-ops/v2/ru/action-approvals-mobile.webp",
+      "width": 780,
+      "height": 2998,
+      "cssWidth": 390,
+      "cssHeight": 1499,
+      "density": 2,
+      "nativeCanvas": null,
+      "webpBytes": 141654
+    },
+    {
+      "screen": "action-approvals",
+      "locale": "ru",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "shift-lead",
+      "route": "/ru/screens/action-approvals?approval=ap-5",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "ap-5 · Ferrum Logistics · $120 invoice credit · APAC",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:42:50.308Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "crop": "Complete selected task from header through the bottom of its decision dock; empty stretched canvas below the dock excluded",
+      "key": "approval-task-mobile",
+      "bounds": {
+        "x": 16,
+        "y": 99,
+        "width": 358,
+        "height": 1383.734375
+      },
+      "pixels": {
+        "width": 812,
+        "height": 2864
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/approval-task-mobile.png",
+      "originalSha256": "1bea0b40bed53812f1667d635d1421f00b47f902f882ce247a3c1065b300f534",
+      "src": "/media/rebuild/agent-ops/v2/ru/approval-task-mobile.webp",
+      "width": 812,
+      "height": 2864,
+      "cssWidth": 406,
+      "cssHeight": 1432,
+      "density": 2,
+      "nativeCanvas": {
+        "cssPadding": 24,
+        "color": "rgb(25, 26, 28)",
+        "purpose": "Neutral context outside the unchanged captured UI; no text or controls repainted"
+      },
+      "webpBytes": 132716
+    },
+    {
+      "screen": "action-approvals",
+      "locale": "ru",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "role": "shift-lead",
+      "route": "/ru/screens/action-approvals?approval=ap-5",
+      "sourceCommit": "030e5af7416ad52bd753271ad7147202b55cd41a",
+      "acceptedCodeCommit": "6cecdb73b3fc23f0465bf7bf6a84598f1a63733d",
+      "fixture": "ap-5 · Ferrum Logistics · $120 invoice credit · APAC",
+      "clock": "2026-08-25T07:12:00Z",
+      "capturedAt": "2026-10-31T16:42:50.308Z",
+      "scrollExport": "html,body,#root,#root>div,[class*=\"_screen_\"],[class*=\"_main_\"],main,[data-pane]{height:auto!important;max-height:none!important;overflow:visible!important}\n[data-pane]{flex:none!important} [data-dock]{position:static!important}",
+      "localeCompletion": "scripts/agent-ops-v2/ru-capture-strings.mjs",
+      "errors": [],
+      "key": "approval-consequences-mobile",
+      "bounds": {
+        "x": 16,
+        "y": 569.78125,
+        "width": 358,
+        "height": 613.953125
+      },
+      "pixels": {
+        "width": 812,
+        "height": 1326
+      },
+      "original": ".tmp/agent-ops-v2-originals/ru/approval-consequences-mobile.png",
+      "originalSha256": "af18dd3636c830ea9f9fc61f9461d09788936932c33d190ec2e8967af568338c",
+      "src": "/media/rebuild/agent-ops/v2/ru/approval-consequences-mobile.webp",
+      "width": 812,
+      "height": 1326,
+      "cssWidth": 406,
+      "cssHeight": 663,
+      "density": 2,
+      "nativeCanvas": {
+        "cssPadding": 24,
+        "color": "rgb(25, 26, 28)",
+        "purpose": "Neutral context outside the unchanged captured UI; no text or controls repainted"
+      },
+      "webpBytes": 59426
+    }
+  ]
+}

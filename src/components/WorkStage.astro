@@ -3,6 +3,7 @@ import CaseScreen from './CaseScreen.astro';
 import LearnStage from './LearnStage.astro';
 import VetStage from './VetStage.astro';
 import PortalHome from './portal/PortalHome.astro';
+import AgentHome from './agent/AgentHome.astro';
 import { caseArt } from '../copy/case-art';
 import type { CaseTheme, CoverMedia, ShotItem } from '../copy/cases/story';
 interface Props {
@@ -20,7 +21,7 @@ const shots = media.variant === 'proof' ? media.panels ?? [media.shot] : media.v
 const visibleShots: ShotItem[] = theme === 'pawly' ? shots.slice(-1) : shots;
 ---
 <div class:list={['work-stage', `work-stage--${theme}`, `work-stage--${usage}`]} data-focus-tone={theme === 'agent' || theme === 'learn' ? 'inverse' : undefined} data-motion={theme === 'agent' && usage === 'cover' ? 'cover-interlock' : undefined}>
-  {theme === 'portal' && usage === 'home' ? <PortalHome locale={locale} loading={loading} /> : theme === 'learn' ? <LearnStage locale={locale} loading={loading} href={href} linkLabel={linkLabel} /> : theme === 'vet' ? <VetStage locale={locale} loading={loading} href={href} linkLabel={linkLabel} /> : <>
+  {theme === 'agent' && usage === 'home' ? <AgentHome locale={locale} loading={loading} /> : theme === 'portal' && usage === 'home' ? <PortalHome locale={locale} loading={loading} /> : theme === 'learn' ? <LearnStage locale={locale} loading={loading} href={href} linkLabel={linkLabel} /> : theme === 'vet' ? <VetStage locale={locale} loading={loading} href={href} linkLabel={linkLabel} /> : <>
   {theme === 'portal' && <div class="work-stage__annotation">
     <p class="ds-display-7xl work-stage__figure">38</p>
     <p class="ds-body-base work-stage__detail">{art.detail}</p>

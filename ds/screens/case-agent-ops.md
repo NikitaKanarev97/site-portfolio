@@ -382,3 +382,10 @@ subtle / media`, `--border-default / strong`, роли типографики
 - Ни одной кириллической строки в кадрах — гейт в скрипте съёмки.
 - Ни одной post-launch метрики и ни одного реального имени — пословный просмотр
   `CaseResult` и всех кадров.
+# Portfolio V2 composition · 31.10.2026
+
+Authorised by `audit/agent-ops-v2/AGENT_OPS_PORTFOLIO_CODEX_HANDOFF.md`. Renderer `src/components/agent/AgentCase.astro`; EN master and full RU parallel copy in `src/copy/{cases,ru/cases}/agent-ops-v2.ts`. Existing route and PageShell/MediaZoom/CaseNext are preserved. Home routes use `AgentHome` through the Agent-only WorkStage branch. B2B V2.1 and other case rendering remain untouched.
+
+Order: dominant complete approval-task hero → role/year/platform/accepted-prototype facts and NDA/synthetic disclosure → 01 historical client context (61%, CSAT 4.4, $23,000) → 02 editorial operating model → 03 complete queue + run evidence → 04 human checkpoint / complete approval → 05 policy draft + approved/live mismatch → 06 quality + autonomy → 07 tested/reworked/accepted outcome, test-driven cluster/undo changes, scope, trade-off and correctly dated public-prototype link → shared next case.
+
+Images live under `public/media/rebuild/agent-ops/v2/{en,ru}`; source states, exact commits, roles, viewports, clock, DOM bounds, hashes and localization completion are in `audit/agent-ops-v2/capture-manifest.json`. Mobile uses actual 390px layout and whole semantic DOM panels for exceptionally long screens, with full screenshot inspection. No CSS-rendered product UI. Source originals are kept locally in `.tmp/agent-ops-v2-originals` to avoid a redundant screenshot audit. Existing twelve BEFORE images are preserved byte-for-byte.

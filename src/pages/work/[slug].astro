@@ -2,6 +2,9 @@
 import PageShell from '../../layouts/PageShell.astro';
 import CaseStory from '../../components/CaseStory.astro';
 import PortalCase from '../../components/portal/PortalCase.astro';
+import AgentCase from '../../components/agent/AgentCase.astro';
+import { agentCaseEn } from '../../copy/cases/agent-ops-v2';
+import { agentCaseRu } from '../../copy/ru/cases/agent-ops-v2';
 import { portalCaseEn } from '../../copy/cases/partner-portal-v2.ts';
 import { portalCaseRu } from '../../copy/ru/cases/partner-portal-v2.ts';
 import { cases, type Case } from '../../copy/cases/index.ts';
@@ -20,12 +23,13 @@ const nextHref = (locale === 'ru' ? '/ru' : '') + '/work/' + next.slug;
 const site = locale === 'ru' ? siteRu : siteEn;
 // Partner Portal V2 has its own case-scoped renderer; the other cases keep CaseStory.
 const portal = entry.slug === 'partner-portal' ? (locale === 'ru' ? portalCaseRu : portalCaseEn) : undefined;
+const agent = entry.slug === 'agent-ops-console' ? (locale === 'ru' ? agentCaseRu : agentCaseEn) : undefined;
 const nextLink = { label: locale === 'ru' ? 'Следующий кейс' : 'Next case', title: next.story.cover.title, href: nextHref, theme: next.theme };
 ---
-<PageShell title={entry.meta.title} description={entry.meta.description} lang={locale}
+<PageShell title={agent?.meta.title ?? entry.meta.title} description={agent?.meta.description ?? entry.meta.description} lang={locale}
   current={(locale === 'ru' ? '/ru' : '') + '/work/' + entry.slug}
-  ogCard={'work-' + entry.slug + (locale === 'ru' ? '-ru' : '')} siteCopy={site}>
-  {portal
+  ogCard={'work-' + entry.slug + (agent ? '-v2' : '') + (locale === 'ru' ? '-ru' : '')} siteCopy={site}>
+  {agent ? <AgentCase copy={agent} locale={locale} next={nextLink} /> : portal
     ? <PortalCase copy={portal} locale={locale} next={nextLink} />
     : <CaseStory story={entry.story} id={'case-' + entry.slug} lang={locale} next={nextLink} />}
 </PageShell>
