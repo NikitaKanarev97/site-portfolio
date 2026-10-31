@@ -1,288 +1,884 @@
 {
-  "home-wide": {
-    "src": "/media/case-learn-v2/home-wide.webp",
-    "width": 1376,
-    "height": 435,
-    "source": "01-home-setup-desktop.png",
-    "crop": {
-      "left": 32,
-      "top": 104,
+  "en/home-wide": {
+    "src": "/media/case-learn-v2/current/en/home-wide.webp",
+    "width": 2848,
+    "height": 966,
+    "cssWidth": 1424,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/home-wide.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/home/?lang=en",
+    "selector": "main > [class*=\"_hero_\"]",
+    "sourceBounds": {
+      "x": 32,
+      "y": 104,
       "width": 1376,
-      "height": 435
+      "height": 434.96875
     },
-    "bytes": 37100
+    "canvasField": 24,
+    "bytes": 69816,
+    "note": "Complete current Home hero with V1.3 teaching diagram; 24 px field."
   },
-  "home-mobile": {
-    "src": "/media/case-learn-v2/home-mobile.webp",
-    "width": 358,
-    "height": 256,
-    "source": "03-home-setup-mobile.png",
-    "crop": {
-      "left": 16,
-      "top": 142,
-      "width": 358,
-      "height": 256
-    },
-    "bytes": 9534
-  },
-  "answer-detail": {
-    "src": "/media/case-learn-v2/answer-detail.webp",
-    "width": 768,
-    "height": 254,
-    "source": "04-material-onvif-desktop.png",
-    "crop": {
-      "left": 144,
-      "top": 144,
-      "width": 768,
-      "height": 254
-    },
-    "bytes": 13404
-  },
-  "path-progress": {
-    "src": "/media/case-learn-v2/path-progress.webp",
-    "width": 272,
-    "height": 208,
-    "source": "08-trajectory-started-desktop.png",
-    "crop": {
-      "left": 1016,
-      "top": 480,
-      "width": 272,
-      "height": 208
-    },
-    "bytes": 7524
-  },
-  "reference": {
-    "src": "/media/case-learn-v2/reference.webp",
-    "width": 1152,
-    "height": 596,
-    "source": "04-material-onvif-desktop.png",
-    "crop": {
-      "left": 144,
-      "top": 88,
-      "width": 1152,
-      "height": 596
-    },
-    "bytes": 45980
-  },
-  "reference-mobile": {
-    "src": "/media/case-learn-v2/reference-mobile.webp",
-    "width": 390,
-    "height": 660,
-    "source": "06-material-onvif-mobile.png",
-    "crop": {
-      "left": 0,
-      "top": 184,
-      "width": 390,
-      "height": 660
-    },
-    "bytes": 24698
-  },
-  "player": {
-    "src": "/media/case-learn-v2/player.webp",
-    "width": 1152,
-    "height": 538,
-    "source": "10-player-current-desktop.png",
-    "crop": {
-      "left": 144,
-      "top": 80,
-      "width": 1152,
-      "height": 538
-    },
-    "bytes": 52200
-  },
-  "player-mobile": {
-    "src": "/media/case-learn-v2/player-mobile.webp",
-    "width": 390,
-    "height": 493,
-    "source": "11-player-current-mobile.png",
-    "crop": {
-      "left": 0,
-      "top": 176,
-      "width": 390,
-      "height": 493
-    },
-    "bytes": 21610
-  },
-  "path": {
-    "src": "/media/case-learn-v2/path.webp",
-    "width": 848,
-    "height": 746,
-    "source": "08-trajectory-started-desktop.png",
-    "crop": {
-      "left": 104,
-      "top": 88,
-      "width": 848,
-      "height": 746
-    },
-    "bytes": 40650
-  },
-  "path-mobile": {
-    "src": "/media/case-learn-v2/path-mobile.webp",
-    "width": 390,
-    "height": 568,
-    "source": "09-trajectory-started-mobile.png",
-    "crop": {
-      "left": 0,
-      "top": 184,
-      "width": 390,
-      "height": 568
-    },
-    "bytes": 27818
-  },
-  "learner": {
-    "src": "/media/case-learn-v2/learner.webp",
-    "width": 1040,
-    "height": 310,
-    "source": "13-my-learning-marina-desktop.png",
-    "crop": {
-      "left": 16,
-      "top": 218,
-      "width": 1040,
-      "height": 310
-    },
-    "bytes": 17036
-  },
-  "learner-records": {
-    "src": "/media/case-learn-v2/learner-records.webp",
-    "width": 1008,
-    "height": 116,
-    "source": "13-my-learning-marina-desktop.png",
-    "crop": {
-      "left": 32,
-      "top": 572,
-      "width": 1008,
-      "height": 116
-    },
-    "bytes": 6252
-  },
-  "learner-mobile": {
-    "src": "/media/case-learn-v2/learner-mobile.webp",
-    "width": 390,
-    "height": 580,
-    "source": "14-my-learning-marina-mobile.png",
-    "crop": {
-      "left": 0,
-      "top": 264,
-      "width": 390,
-      "height": 580
-    },
-    "bytes": 21774
-  },
-  "reader": {
-    "src": "/media/case-learn-v2/reader.webp",
-    "width": 1040,
-    "height": 682,
-    "source": "15-my-learning-reader-desktop.png",
-    "crop": {
-      "left": 16,
-      "top": 218,
-      "width": 1040,
-      "height": 682
-    },
-    "bytes": 36706
-  },
-  "failed": {
-    "src": "/media/case-learn-v2/failed.webp",
-    "width": 1040,
-    "height": 548,
-    "source": "18-result-failed-desktop.png",
-    "crop": {
-      "left": 16,
-      "top": 176,
-      "width": 1040,
-      "height": 548
-    },
-    "bytes": 29224
-  },
-  "failed-mobile": {
-    "src": "/media/case-learn-v2/failed-mobile.webp",
-    "width": 390,
-    "height": 560,
-    "source": "19-result-failed-mobile.png",
-    "crop": {
-      "left": 0,
-      "top": 240,
-      "width": 390,
-      "height": 560
-    },
-    "bytes": 24374
-  },
-  "passed-score": {
-    "src": "/media/case-learn-v2/passed-score.webp",
-    "width": 1040,
-    "height": 388,
-    "source": "20-result-passed-desktop.png",
-    "crop": {
-      "left": 16,
-      "top": 176,
-      "width": 1040,
-      "height": 388
-    },
-    "bytes": 18460
-  },
-  "passed-score-mobile": {
-    "src": "/media/case-learn-v2/passed-score-mobile.webp",
-    "width": 390,
-    "height": 328,
-    "source": "21-result-passed-mobile.png",
-    "crop": {
-      "left": 0,
-      "top": 240,
-      "width": 390,
-      "height": 328
-    },
-    "bytes": 13514
-  },
-  "review": {
-    "src": "/media/case-learn-v2/review.webp",
-    "width": 1040,
-    "height": 612,
-    "source": "22-result-wrong-review-desktop.png",
-    "crop": {
-      "left": 16,
-      "top": 88,
-      "width": 1040,
+  "en/reference": {
+    "src": "/media/case-learn-v2/current/en/reference.webp",
+    "width": 2272,
+    "height": 1224,
+    "cssWidth": 1136,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/reference.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/material/onvif-not-found/?lang=en",
+    "selectors": [
+      "main [class*=\"_main_\"] > header",
+      "main [class*=\"_brief_\"]",
+      "main aside"
+    ],
+    "clip": {
+      "x": 152,
+      "y": 88,
+      "width": 1136,
       "height": 612
     },
-    "bytes": 26730
+    "canvasField": 16,
+    "bytes": 88530,
+    "note": "Whole header, brief and navigation with native page gutters."
   },
-  "review-detail": {
-    "src": "/media/case-learn-v2/review-detail.webp",
-    "width": 446,
-    "height": 68,
-    "source": "22-result-wrong-review-desktop.png",
-    "crop": {
-      "left": 88,
-      "top": 238,
-      "width": 446,
-      "height": 68
+  "en/home-mobile": {
+    "src": "/media/case-learn-v2/current/en/home-mobile.webp",
+    "width": 812,
+    "height": 646,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/home-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/home/?lang=en",
+    "selector": "main > [class*=\"_hero_\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 142,
+      "width": 358,
+      "height": 274.046875
     },
-    "bytes": 5054
+    "canvasField": 24,
+    "bytes": 21330,
+    "note": "Complete current Home hero with V1.3 teaching diagram; 24 px field."
   },
-  "reader-history": {
-    "src": "/media/case-learn-v2/reader-history.webp",
-    "width": 496,
-    "height": 338,
-    "source": "15-my-learning-reader-desktop.png",
-    "crop": {
-      "left": 32,
-      "top": 550,
-      "width": 496,
-      "height": 338
+  "en/answer-detail": {
+    "src": "/media/case-learn-v2/current/en/answer-detail.webp",
+    "width": 812,
+    "height": 838,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/answer-detail.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/material/onvif-not-found/?lang=en",
+    "selector": "main [class*=\"_main_\"] > header",
+    "sourceBounds": {
+      "x": 16,
+      "y": 150,
+      "width": 358,
+      "height": 370.546875
     },
-    "bytes": 12518
+    "canvasField": 24,
+    "bytes": 28672,
+    "note": "Complete native mobile material header; no cut title, metadata or utilities."
   },
-  "reader-programme": {
-    "src": "/media/case-learn-v2/reader-programme.webp",
-    "width": 496,
-    "height": 338,
-    "source": "15-my-learning-reader-desktop.png",
-    "crop": {
-      "left": 544,
-      "top": 550,
-      "width": 496,
-      "height": 338
+  "en/reference-mobile": {
+    "src": "/media/case-learn-v2/current/en/reference-mobile.webp",
+    "width": 780,
+    "height": 1482,
+    "cssWidth": 390,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/reference-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/material/onvif-not-found/?lang=en",
+    "selectors": [
+      "main [class*=\"_main_\"] > header",
+      "main [class*=\"_tocMobile_\"]",
+      "main [class*=\"_brief_\"]"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 134,
+      "width": 390,
+      "height": 741
     },
-    "bytes": 11274
+    "canvasField": 16,
+    "bytes": 48686,
+    "note": "Whole header, brief and navigation with native page gutters."
+  },
+  "en/learner": {
+    "src": "/media/case-learn-v2/current/en/learner.webp",
+    "width": 2112,
+    "height": 1002,
+    "cssWidth": 1056,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/learner.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/my/?lang=en",
+    "selector": "section[aria-labelledby=\"scales-title\"]",
+    "sourceBounds": {
+      "x": 32,
+      "y": 537.78125,
+      "width": 1008,
+      "height": 452.59375
+    },
+    "canvasField": 24,
+    "bytes": 45052,
+    "note": "Two complete independent progress cards, including their explanatory footer."
+  },
+  "en/path-progress": {
+    "src": "/media/case-learn-v2/current/en/path-progress.webp",
+    "width": 732,
+    "height": 730,
+    "cssWidth": 366,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/path-progress.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/trajectory/puskonaladka/?lang=en",
+    "selector": "aside [class*=\"_action_\"]",
+    "sourceBounds": {
+      "x": 993,
+      "y": 454,
+      "width": 318,
+      "height": 316.390625
+    },
+    "canvasField": 24,
+    "bytes": 21182,
+    "note": "Whole continuation action region: count, current step, complete CTA and reading note, with native padding."
+  },
+  "en/path": {
+    "src": "/media/case-learn-v2/current/en/path.webp",
+    "width": 2432,
+    "height": 1622,
+    "cssWidth": 1216,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/path.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/trajectory/puskonaladka/?lang=en",
+    "selectors": [
+      "main header",
+      "#outcomes-title",
+      "#composition-title",
+      "#curriculum > [role=\"group\"]",
+      "main aside"
+    ],
+    "clip": {
+      "x": 112,
+      "y": 88,
+      "width": 1216,
+      "height": 811
+    },
+    "canvasField": 16,
+    "bytes": 115566,
+    "note": "Programme promise, complete first curriculum group and whole passport."
+  },
+  "en/player": {
+    "src": "/media/case-learn-v2/current/en/player.webp",
+    "width": 1504,
+    "height": 660,
+    "cssWidth": 752,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/player.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/player/puskonaladka/3/?lang=en",
+    "selectors": [
+      "article > header",
+      "article > :nth-child(2)"
+    ],
+    "clip": {
+      "x": 536,
+      "y": 150,
+      "width": 752,
+      "height": 330
+    },
+    "canvasField": 16,
+    "bytes": 34920,
+    "note": "Complete article header and existing-read notice, ending before the first body section."
+  },
+  "en/completion": {
+    "src": "/media/case-learn-v2/current/en/completion.webp",
+    "width": 1536,
+    "height": 658,
+    "cssWidth": 768,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/completion.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/player/puskonaladka/3/?lang=en",
+    "selector": "section[aria-labelledby=\"finish-title\"]",
+    "sourceBounds": {
+      "x": 552,
+      "y": 1769.03125,
+      "width": 720,
+      "height": 281
+    },
+    "canvasField": 24,
+    "bytes": 21538,
+    "note": "Whole current end-of-unit panel, including next unit and explicit completion action."
+  },
+  "en/learner-mobile": {
+    "src": "/media/case-learn-v2/current/en/learner-mobile.webp",
+    "width": 812,
+    "height": 1692,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/learner-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/my/?lang=en",
+    "selector": "section[aria-labelledby=\"scales-title\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 638.578125,
+      "width": 358,
+      "height": 798
+    },
+    "canvasField": 24,
+    "bytes": 43082,
+    "note": "Two complete independent progress cards, including their explanatory footer."
+  },
+  "en/path-mobile": {
+    "src": "/media/case-learn-v2/current/en/path-mobile.webp",
+    "width": 780,
+    "height": 1862,
+    "cssWidth": 390,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/path-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/trajectory/puskonaladka/?lang=en",
+    "selectors": [
+      "main header",
+      "main aside"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 134,
+      "width": 390,
+      "height": 931
+    },
+    "canvasField": 16,
+    "bytes": 67640,
+    "note": "Whole mobile programme header and passport; no sliced next row."
+  },
+  "en/player-mobile": {
+    "src": "/media/case-learn-v2/current/en/player-mobile.webp",
+    "width": 780,
+    "height": 864,
+    "cssWidth": 390,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/player-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/player/puskonaladka/3/?lang=en",
+    "selectors": [
+      "article > header",
+      "article > :nth-child(2)"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 221,
+      "width": 390,
+      "height": 432
+    },
+    "canvasField": 16,
+    "bytes": 33866,
+    "note": "Complete article header and existing-read notice, ending before the first body section."
+  },
+  "en/completion-mobile": {
+    "src": "/media/case-learn-v2/current/en/completion-mobile.webp",
+    "width": 812,
+    "height": 792,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/completion-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/player/puskonaladka/3/?lang=en",
+    "selector": "section[aria-labelledby=\"finish-title\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 2330.28125,
+      "width": 358,
+      "height": 348
+    },
+    "canvasField": 24,
+    "bytes": 21510,
+    "note": "Whole current end-of-unit panel, including next unit and explicit completion action."
+  },
+  "en/failed": {
+    "src": "/media/case-learn-v2/current/en/failed.webp",
+    "width": 2112,
+    "height": 1088,
+    "cssWidth": 1056,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/failed.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=fc697efa-853c-4390-a5ce-c1efe7b876c4&lang=en",
+    "selector": "main [class*=\"_lead_\"]",
+    "sourceBounds": {
+      "x": 32,
+      "y": 189,
+      "width": 1008,
+      "height": 495.578125
+    },
+    "canvasField": 24,
+    "bytes": 47706,
+    "note": "Complete current verdict and result card, including permitted next action; no coloured status edge."
+  },
+  "en/review": {
+    "src": "/media/case-learn-v2/current/en/review.webp",
+    "width": 2108,
+    "height": 376,
+    "cssWidth": 1054,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/review.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=fc697efa-853c-4390-a5ce-c1efe7b876c4&lang=en",
+    "selector": "first complete wrong-answer record",
+    "sourceBounds": {
+      "x": 33,
+      "y": 169.96875,
+      "width": 1006,
+      "height": 139.5
+    },
+    "canvasField": 24,
+    "bytes": 18988,
+    "note": "One whole wrong-answer record, with complete question, submitted answer and source link."
+  },
+  "en/failed-mobile": {
+    "src": "/media/case-learn-v2/current/en/failed-mobile.webp",
+    "width": 812,
+    "height": 1200,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/failed-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=fc697efa-853c-4390-a5ce-c1efe7b876c4&lang=en",
+    "selector": "main [class*=\"_lead_\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 203,
+      "width": 358,
+      "height": 551.984375
+    },
+    "canvasField": 24,
+    "bytes": 44854,
+    "note": "Complete current verdict and result card, including permitted next action; no coloured status edge."
+  },
+  "en/review-detail": {
+    "src": "/media/case-learn-v2/current/en/review-detail.webp",
+    "width": 808,
+    "height": 560,
+    "cssWidth": 404,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/review-detail.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=fc697efa-853c-4390-a5ce-c1efe7b876c4&lang=en",
+    "selector": "first complete wrong-answer record",
+    "sourceBounds": {
+      "x": 17,
+      "y": 170.375,
+      "width": 356,
+      "height": 232
+    },
+    "canvasField": 24,
+    "bytes": 18980,
+    "note": "One whole wrong-answer record, with complete question, submitted answer and source link."
+  },
+  "en/passed-score": {
+    "src": "/media/case-learn-v2/current/en/passed-score.webp",
+    "width": 2112,
+    "height": 1130,
+    "cssWidth": 1056,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/passed-score.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=5d018c32-df19-4e83-bfc9-d6deebc36014&lang=en",
+    "selector": "main [class*=\"_lead_\"]",
+    "sourceBounds": {
+      "x": 32,
+      "y": 189,
+      "width": 1008,
+      "height": 516.578125
+    },
+    "canvasField": 24,
+    "bytes": 51180,
+    "note": "Complete current verdict and result card, including permitted next action; no coloured status edge."
+  },
+  "en/passed-score-mobile": {
+    "src": "/media/case-learn-v2/current/en/passed-score-mobile.webp",
+    "width": 812,
+    "height": 1266,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/passed-score-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=5d018c32-df19-4e83-bfc9-d6deebc36014&lang=en",
+    "selector": "main [class*=\"_lead_\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 203,
+      "width": 358,
+      "height": 584.1875
+    },
+    "canvasField": 24,
+    "bytes": 47666,
+    "note": "Complete current verdict and result card, including permitted next action; no coloured status edge."
+  },
+  "en/reader": {
+    "src": "/media/case-learn-v2/current/en/reader.webp",
+    "width": 2112,
+    "height": 756,
+    "cssWidth": 1056,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/reader.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/my/?lang=en",
+    "selector": "section[aria-labelledby=\"scales-title\"]",
+    "sourceBounds": {
+      "x": 32,
+      "y": 551.96875,
+      "width": 1008,
+      "height": 329.59375
+    },
+    "canvasField": 24,
+    "bytes": 35832,
+    "note": "Both complete reader progress cards; no programme completion invented."
+  },
+  "en/reader-history": {
+    "src": "/media/case-learn-v2/current/en/reader-history.webp",
+    "width": 812,
+    "height": 1146,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/reader-history.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/my/?lang=en",
+    "selector": "section[aria-labelledby=\"scales-title\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 620.96875,
+      "width": 358,
+      "height": 525
+    },
+    "canvasField": 24,
+    "bytes": 35208,
+    "note": "Both complete reader progress cards; no programme completion invented."
+  },
+  "ru/home-wide": {
+    "src": "/media/case-learn-v2/current/ru/home-wide.webp",
+    "width": 2848,
+    "height": 966,
+    "cssWidth": 1424,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/home-wide.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/home/?lang=ru",
+    "selector": "main > [class*=\"_hero_\"]",
+    "sourceBounds": {
+      "x": 32,
+      "y": 104,
+      "width": 1376,
+      "height": 434.96875
+    },
+    "canvasField": 24,
+    "bytes": 65068,
+    "note": "Complete current Home hero with V1.3 teaching diagram; 24 px field."
+  },
+  "ru/reference": {
+    "src": "/media/case-learn-v2/current/ru/reference.webp",
+    "width": 2272,
+    "height": 1182,
+    "cssWidth": 1136,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/reference.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/material/onvif-not-found/?lang=ru",
+    "selectors": [
+      "main [class*=\"_main_\"] > header",
+      "main [class*=\"_brief_\"]",
+      "main aside"
+    ],
+    "clip": {
+      "x": 152,
+      "y": 88,
+      "width": 1136,
+      "height": 591
+    },
+    "canvasField": 16,
+    "bytes": 79924,
+    "note": "Whole header, brief and navigation with native page gutters."
+  },
+  "ru/home-mobile": {
+    "src": "/media/case-learn-v2/current/ru/home-mobile.webp",
+    "width": 812,
+    "height": 608,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/home-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/home/?lang=ru",
+    "selector": "main > [class*=\"_hero_\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 142,
+      "width": 358,
+      "height": 255.15625
+    },
+    "canvasField": 24,
+    "bytes": 18686,
+    "note": "Complete current Home hero with V1.3 teaching diagram; 24 px field."
+  },
+  "ru/answer-detail": {
+    "src": "/media/case-learn-v2/current/ru/answer-detail.webp",
+    "width": 812,
+    "height": 838,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/answer-detail.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/material/onvif-not-found/?lang=ru",
+    "selector": "main [class*=\"_main_\"] > header",
+    "sourceBounds": {
+      "x": 16,
+      "y": 150,
+      "width": 358,
+      "height": 370.84375
+    },
+    "canvasField": 24,
+    "bytes": 26820,
+    "note": "Complete native mobile material header; no cut title, metadata or utilities."
+  },
+  "ru/reference-mobile": {
+    "src": "/media/case-learn-v2/current/ru/reference-mobile.webp",
+    "width": 780,
+    "height": 1434,
+    "cssWidth": 390,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/reference-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/material/onvif-not-found/?lang=ru",
+    "selectors": [
+      "main [class*=\"_main_\"] > header",
+      "main [class*=\"_tocMobile_\"]",
+      "main [class*=\"_brief_\"]"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 134,
+      "width": 390,
+      "height": 717
+    },
+    "canvasField": 16,
+    "bytes": 44924,
+    "note": "Whole header, brief and navigation with native page gutters."
+  },
+  "ru/learner": {
+    "src": "/media/case-learn-v2/current/ru/learner.webp",
+    "width": 2112,
+    "height": 1002,
+    "cssWidth": 1056,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/learner.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/my/?lang=ru",
+    "selector": "section[aria-labelledby=\"scales-title\"]",
+    "sourceBounds": {
+      "x": 32,
+      "y": 537.78125,
+      "width": 1008,
+      "height": 452.59375
+    },
+    "canvasField": 24,
+    "bytes": 42520,
+    "note": "Two complete independent progress cards, including their explanatory footer."
+  },
+  "ru/path-progress": {
+    "src": "/media/case-learn-v2/current/ru/path-progress.webp",
+    "width": 732,
+    "height": 730,
+    "cssWidth": 366,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/path-progress.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/trajectory/puskonaladka/?lang=ru",
+    "selector": "aside [class*=\"_action_\"]",
+    "sourceBounds": {
+      "x": 993,
+      "y": 478,
+      "width": 318,
+      "height": 316.390625
+    },
+    "canvasField": 24,
+    "bytes": 19818,
+    "note": "Whole continuation action region: count, current step, complete CTA and reading note, with native padding."
+  },
+  "ru/path": {
+    "src": "/media/case-learn-v2/current/ru/path.webp",
+    "width": 2432,
+    "height": 1670,
+    "cssWidth": 1216,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/path.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/trajectory/puskonaladka/?lang=ru",
+    "selectors": [
+      "main header",
+      "#outcomes-title",
+      "#composition-title",
+      "#curriculum > [role=\"group\"]",
+      "main aside"
+    ],
+    "clip": {
+      "x": 112,
+      "y": 88,
+      "width": 1216,
+      "height": 835
+    },
+    "canvasField": 16,
+    "bytes": 116496,
+    "note": "Programme promise, complete first curriculum group and whole passport."
+  },
+  "ru/player": {
+    "src": "/media/case-learn-v2/current/ru/player.webp",
+    "width": 1504,
+    "height": 660,
+    "cssWidth": 752,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/player.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/player/puskonaladka/3/?lang=ru",
+    "selectors": [
+      "article > header",
+      "article > :nth-child(2)"
+    ],
+    "clip": {
+      "x": 536,
+      "y": 150,
+      "width": 752,
+      "height": 330
+    },
+    "canvasField": 16,
+    "bytes": 33010,
+    "note": "Complete article header and existing-read notice, ending before the first body section."
+  },
+  "ru/completion": {
+    "src": "/media/case-learn-v2/current/ru/completion.webp",
+    "width": 1536,
+    "height": 700,
+    "cssWidth": 768,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/completion.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/player/puskonaladka/3/?lang=ru",
+    "selector": "section[aria-labelledby=\"finish-title\"]",
+    "sourceBounds": {
+      "x": 552,
+      "y": 1769.03125,
+      "width": 720,
+      "height": 302
+    },
+    "canvasField": 24,
+    "bytes": 21604,
+    "note": "Whole current end-of-unit panel, including next unit and explicit completion action."
+  },
+  "ru/learner-mobile": {
+    "src": "/media/case-learn-v2/current/ru/learner-mobile.webp",
+    "width": 812,
+    "height": 1734,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/learner-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/my/?lang=ru",
+    "selector": "section[aria-labelledby=\"scales-title\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 659.578125,
+      "width": 358,
+      "height": 819
+    },
+    "canvasField": 24,
+    "bytes": 42270,
+    "note": "Two complete independent progress cards, including their explanatory footer."
+  },
+  "ru/path-mobile": {
+    "src": "/media/case-learn-v2/current/ru/path-mobile.webp",
+    "width": 780,
+    "height": 1910,
+    "cssWidth": 390,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/path-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/trajectory/puskonaladka/?lang=ru",
+    "selectors": [
+      "main header",
+      "main aside"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 134,
+      "width": 390,
+      "height": 955
+    },
+    "canvasField": 16,
+    "bytes": 66776,
+    "note": "Whole mobile programme header and passport; no sliced next row."
+  },
+  "ru/player-mobile": {
+    "src": "/media/case-learn-v2/current/ru/player-mobile.webp",
+    "width": 780,
+    "height": 870,
+    "cssWidth": 390,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/player-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/player/puskonaladka/3/?lang=ru",
+    "selectors": [
+      "article > header",
+      "article > :nth-child(2)"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 221,
+      "width": 390,
+      "height": 435
+    },
+    "canvasField": 16,
+    "bytes": 31920,
+    "note": "Complete article header and existing-read notice, ending before the first body section."
+  },
+  "ru/completion-mobile": {
+    "src": "/media/case-learn-v2/current/ru/completion-mobile.webp",
+    "width": 812,
+    "height": 834,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/completion-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/player/puskonaladka/3/?lang=ru",
+    "selector": "section[aria-labelledby=\"finish-title\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 2392.65625,
+      "width": 358,
+      "height": 369
+    },
+    "canvasField": 24,
+    "bytes": 21644,
+    "note": "Whole current end-of-unit panel, including next unit and explicit completion action."
+  },
+  "ru/failed": {
+    "src": "/media/case-learn-v2/current/ru/failed.webp",
+    "width": 2112,
+    "height": 1088,
+    "cssWidth": 1056,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/failed.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=70b1f9c1-cd6d-4c9b-a828-f5fba45933f1&lang=ru",
+    "selector": "main [class*=\"_lead_\"]",
+    "sourceBounds": {
+      "x": 32,
+      "y": 189,
+      "width": 1008,
+      "height": 495.578125
+    },
+    "canvasField": 24,
+    "bytes": 46960,
+    "note": "Complete current verdict and result card, including permitted next action; no coloured status edge."
+  },
+  "ru/review": {
+    "src": "/media/case-learn-v2/current/ru/review.webp",
+    "width": 2108,
+    "height": 376,
+    "cssWidth": 1054,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/review.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=70b1f9c1-cd6d-4c9b-a828-f5fba45933f1&lang=ru",
+    "selector": "first complete wrong-answer record",
+    "sourceBounds": {
+      "x": 33,
+      "y": 169.96875,
+      "width": 1006,
+      "height": 139.5
+    },
+    "canvasField": 24,
+    "bytes": 16762,
+    "note": "One whole wrong-answer record, with complete question, submitted answer and source link."
+  },
+  "ru/failed-mobile": {
+    "src": "/media/case-learn-v2/current/ru/failed-mobile.webp",
+    "width": 812,
+    "height": 1266,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/failed-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=70b1f9c1-cd6d-4c9b-a828-f5fba45933f1&lang=ru",
+    "selector": "main [class*=\"_lead_\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 203,
+      "width": 358,
+      "height": 584.1875
+    },
+    "canvasField": 24,
+    "bytes": 44532,
+    "note": "Complete current verdict and result card, including permitted next action; no coloured status edge."
+  },
+  "ru/review-detail": {
+    "src": "/media/case-learn-v2/current/ru/review-detail.webp",
+    "width": 808,
+    "height": 512,
+    "cssWidth": 404,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/review-detail.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=70b1f9c1-cd6d-4c9b-a828-f5fba45933f1&lang=ru",
+    "selector": "first complete wrong-answer record",
+    "sourceBounds": {
+      "x": 17,
+      "y": 169.578125,
+      "width": 356,
+      "height": 208
+    },
+    "canvasField": 24,
+    "bytes": 16532,
+    "note": "One whole wrong-answer record, with complete question, submitted answer and source link."
+  },
+  "ru/passed-score": {
+    "src": "/media/case-learn-v2/current/ru/passed-score.webp",
+    "width": 2112,
+    "height": 1130,
+    "cssWidth": 1056,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/passed-score.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=6d22aca1-48ad-44c2-8119-11a5f3346570&lang=ru",
+    "selector": "main [class*=\"_lead_\"]",
+    "sourceBounds": {
+      "x": 32,
+      "y": 189,
+      "width": 1008,
+      "height": 516.578125
+    },
+    "canvasField": 24,
+    "bytes": 48584,
+    "note": "Complete current verdict and result card, including permitted next action; no coloured status edge."
+  },
+  "ru/passed-score-mobile": {
+    "src": "/media/case-learn-v2/current/ru/passed-score-mobile.webp",
+    "width": 812,
+    "height": 1308,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/passed-score-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=6d22aca1-48ad-44c2-8119-11a5f3346570&lang=ru",
+    "selector": "main [class*=\"_lead_\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 203,
+      "width": 358,
+      "height": 605.1875
+    },
+    "canvasField": 24,
+    "bytes": 46038,
+    "note": "Complete current verdict and result card, including permitted next action; no coloured status edge."
+  },
+  "ru/reader": {
+    "src": "/media/case-learn-v2/current/ru/reader.webp",
+    "width": 2112,
+    "height": 756,
+    "cssWidth": 1056,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/reader.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/my/?lang=ru",
+    "selector": "section[aria-labelledby=\"scales-title\"]",
+    "sourceBounds": {
+      "x": 32,
+      "y": 551.96875,
+      "width": 1008,
+      "height": 329.59375
+    },
+    "canvasField": 24,
+    "bytes": 33302,
+    "note": "Both complete reader progress cards; no programme completion invented."
+  },
+  "ru/reader-history": {
+    "src": "/media/case-learn-v2/current/ru/reader-history.webp",
+    "width": 812,
+    "height": 1188,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/reader-history.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/my/?lang=ru",
+    "selector": "section[aria-labelledby=\"scales-title\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 620.96875,
+      "width": 358,
+      "height": 546
+    },
+    "canvasField": 24,
+    "bytes": 34040,
+    "note": "Both complete reader progress cards; no programme completion invented."
   }
 }

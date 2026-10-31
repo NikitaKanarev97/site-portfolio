@@ -1,119 +1,104 @@
-# TRASSIR Learn Portfolio Case V2 — implementation handoff
+# TRASSIR Learn V2.1 — current media, rounded frames and consistent fields
 
-31 October 2026. **Ready for independent ChatGPT visual review; not design acceptance.**
+31 October 2026. Ready for independent review; design acceptance is not claimed.
 
-- Implementation branch: `codex/trassir-learn-case-v2`.
-- Prepared package / BEFORE baseline: `023880b10dd155dcb158b3b28afa5d020bdf0c93`.
-- Isolated worktree: `D:/Claude-projects/Site-portfolio-trassir-v2`.
-- Existing routes: `/work/learn/`, `/ru/work/learn/`. No new case slug.
-- No merge to main, production deployment, Figma edits or product-source edits.
+Implementation branch: `codex/trassir-learn-case-v2`. Previous V2 commit:
+`4c245bc94d1fc02937ec8057d78d29e27812bb1d`.
 
-## Visible changes
+The owner reported tight screenshot crops and obsolete accent edges, then
+required uniform rounded frames and good fields on every side. This update
+finishes that correction in Learn. Other cases are deferred to a separate pass.
 
-1. Light editorial cover: large native Onest title, two-path thesis and real task-led Home, with separate technical-answer and programme-progress details.
-2. Seven concise story beats replace the old repeated module rhythm. The original archive remains intact; the content-model diagram remains available through a native disclosure.
-3. Reference and Player show their actual contexts. The ONVIF and archive-depth screenshots are explicitly different examples, not falsely presented as the same article.
-4. Programme, explicit completion, independent reading/completion records, failed/passed scores and source-based recovery each have relevant documentary proof.
-5. Native mobile captures and focused details replace desktop billboards. Every screenshot remains inspectable with the existing keyboard-accessible MediaZoom.
-6. Learn's Home entry, bilingual metadata and verified locale-specific product/landing links continue into the existing five-case architecture.
+## What changed
 
-## Matching BEFORE / AFTER evidence
+- Incorporated the relevant portfolio `main` update `49d2fb0` into this review
+  branch. Its embedded Learn export records the clean integrated product source
+  `e9ac4b075c4c5251dc10891ad201ecbf5405b727`; that is also the current remote Learn main.
+- Replaced every current-product image used in the case and Home entry with a
+  fresh browser capture from that export. The English case now has genuine EN
+  interface images; the Russian case has genuine RU images.
+- Replaced tight raster rectangles with complete semantic regions: material
+  header, progress/action panel, first curriculum group and passport, both
+  progress cards, result with its next action, and one whole wrong-answer record.
+- Removed the old partial count strips and old completion-build dependency.
+  Completion now shows the current unit's complete panel and real next action.
+- All screenshot frames, including the untouched historical archive, use the
+  existing `radius-media` / `radius-lg` = **16 px** and `frame-inset` = **16 px
+  below md / 24 px from md**, equal on all four sides. MediaZoom keeps the same
+  16 px rounding and 16/24 px fields. Product controls retain their actual styling.
+- Removed the 22 superseded root-level public crops. The new 44 lossless WebP
+  frames (22 per language, DPR 2) total **1,880,034 bytes**. Original prepared
+  evidence remains untouched in the audit folder.
 
-Real localhost Chromium captures, DPR 1, native Onest fonts. First-viewport images
-are exactly 1440×900 and 390×844; full-page images preserve the complete page.
-The page is scrolled before full capture so lazy images and registered reveals
-settle. Screenshots are unretouched. These are **portfolio page** captures,
-separate from the supplied product evidence.
+## Every media family reviewed
 
-| Locale / viewport | BEFORE viewport | BEFORE full page | AFTER viewport | AFTER full page |
+[Complete EN/RU media review and source links](refresh-2026-10-31/MEDIA-REVIEW.md).
+[Exact capture manifest, regions, native widths and state provenance](refresh-2026-10-31/capture-manifest.json).
+Runtime manifest: `src/data/learn-v2-media.json`.
+
+The historical `public/media/case-learn/before-catalog.webp` remains unchanged;
+its portfolio frame now follows the same rounding and field rule. All other UI
+shown by LearnCase and LearnHome comes from the current integrated product.
+
+Native details are captured as whole DOM elements with 24 CSS px of transparent
+field. Contiguous page excerpts preserve native gutters and end in the gap
+between complete blocks. In the Reference header/brief/navigation excerpt, the
+neighbouring article body is excluded during capture while its layout space is
+preserved, so no partial paragraph leaks into the lower field. No displayed text,
+score, control, colour or border is repainted. No translated text is overlaid.
+
+Account states come from the actual mock sign-in. Assessment outcomes are reached
+through the real completion and quiz controls: 14/20 with four wrong and two skipped
+answers; 20/20 with all answers correct. The pre-exam session is copied into
+separate contexts to capture the two independent outcomes. These are product
+example states, not learning-impact metrics.
+
+## Portfolio evidence
+
+Each viewport image is exactly 1440×900 or 390×844. Full captures preserve the
+whole rendered page after lazy images and existing reveals settle.
+
+| Locale / size | Previous V2 viewport | Previous V2 full | Current viewport | Current full |
 |---|---|---|---|---|
-| EN · 1440×900 | [Open](qa/before/en-1440-viewport.png) | [Open](qa/before/en-1440-full.png) | [Open](qa/after/en-1440-viewport.png) | [Open](qa/after/en-1440-full.png) |
-| RU · 1440×900 | [Open](qa/before/ru-1440-viewport.png) | [Open](qa/before/ru-1440-full.png) | [Open](qa/after/ru-1440-viewport.png) | [Open](qa/after/ru-1440-full.png) |
-| EN · 390×844 | [Open](qa/before/en-390-viewport.png) | [Open](qa/before/en-390-full.png) | [Open](qa/after/en-390-viewport.png) | [Open](qa/after/en-390-full.png) |
-| RU · 390×844 | [Open](qa/before/ru-390-viewport.png) | [Open](qa/before/ru-390-full.png) | [Open](qa/after/ru-390-viewport.png) | [Open](qa/after/ru-390-full.png) |
+| EN · 1440×900 | [Open](qa/after/en-1440-viewport.png) | [Open](qa/after/en-1440-full.png) | [Open](refresh-2026-10-31/portfolio/en-1440-viewport.png) | [Open](refresh-2026-10-31/portfolio/en-1440-full.png) |
+| RU · 1440×900 | [Open](qa/after/ru-1440-viewport.png) | [Open](qa/after/ru-1440-full.png) | [Open](refresh-2026-10-31/portfolio/ru-1440-viewport.png) | [Open](refresh-2026-10-31/portfolio/ru-1440-full.png) |
+| EN · 390×844 | [Open](qa/after/en-390-viewport.png) | [Open](qa/after/en-390-full.png) | [Open](refresh-2026-10-31/portfolio/en-390-viewport.png) | [Open](refresh-2026-10-31/portfolio/en-390-full.png) |
+| RU · 390×844 | [Open](qa/after/ru-390-viewport.png) | [Open](qa/after/ru-390-full.png) | [Open](refresh-2026-10-31/portfolio/ru-390-viewport.png) | [Open](refresh-2026-10-31/portfolio/ru-390-full.png) |
 
-Critical sections, both locales and widths: [AFTER folder](qa/after/).
-Examples: [architecture desktop](qa/after/en-1440-shared-material.png),
-[guided path mobile](qa/after/ru-390-guided-path.png),
-[workspace desktop](qa/after/en-1440-workspace.png),
-[assessment desktop](qa/after/en-1440-assessment.png).
-Additional 320/375/768, Home, zoom, graph and no-JS evidence: [controls](qa/controls/).
-
-## Source map and image integrity
-
-All 23 prepared originals were visually inspected; all 23 Git blob hashes match
-[ASSET_MANIFEST.json](ASSET_MANIFEST.json). No originals were changed.
-The 22 published lossless WebP crops total **503,434 bytes**. Exact source
-rectangles, dimensions and sizes are in
-[`src/data/learn-v2-media.json`](../../src/data/learn-v2-media.json).
-Reproduce with [`scripts/learn-v2/media.mjs`](../../scripts/learn-v2/media.mjs).
-
-| Published proof | Prepared source |
-|---|---|
-| Hero Home | `01` desktop, `03` native mobile |
-| Hero answer / reference | `04`, `06` native mobile |
-| Hero progress / programme | `08`, `09` native mobile |
-| Player context | `10`, `11` native mobile |
-| Learner continuation / count detail | `13`, `14` native mobile |
-| Reader history / no programme credit | `15`, separate native desktop details on mobile |
-| Failed result / cooldown | `18`, `19` native mobile |
-| Passed score region | `20`, `21` native mobile |
-| Read-only recovery / source link | `22`, focused submitted-answer/source detail on mobile |
-| Archive | Existing `public/media/case-learn/before-catalog.webp`, untouched |
-| Explicit completion | Existing localized `public/media/rebuild/learn[-ru]/completion-mobile.webp`; visibly identified as an earlier working-build interaction detail |
-
-The new core screenshots are authentic **Russian UI**, including on the English
-case. The cover explains this. Source branches are separate design iterations;
-the case does not claim they are one integrated public release. No translated
-image overlays or synthetic product UI were made.
-
-Programme/account document panels and the passed-result document area contain
-old public-status disclaimers. Published crops select real programme, progress
-or score regions outside those areas. Nothing is painted over. The passed
-result is explicitly captioned as a score-region detail; its document button
-is not fabricated.
+The original pre-V2 baseline remains in [qa/before](qa/before/).
+Current section closeups are in [portfolio](refresh-2026-10-31/portfolio/).
+Examples: [guided preparation](refresh-2026-10-31/portfolio/en-1440-guided-path.png),
+[mobile workspace](refresh-2026-10-31/portfolio/en-390-workspace.png),
+[assessment](refresh-2026-10-31/portfolio/en-1440-assessment.png).
 
 ## Verification
 
-- `npm run check`: **0 errors, 0 warnings**; 163 existing hints (including archived generated task files).
-- `npm run build`: **37 pages**, successful.
-- `npm run check:content`: **0 findings**, source and built public content.
-- `npm run check:css -- /work/learn/ /ru/work/learn/`: **0 dead rules**, including both changed case routes.
-- [Matching capture checks](qa/after/checks.json): EN/RU × 1440/390, zero page errors, failed requests, broken images or horizontal overflow; fonts loaded.
-- [Focused browser verification](qa/verification.json): EN/RU × 320/375/768, reduced-motion visible content, keyboard zoom/current responsive source, Escape/focus return, keyboard diagram disclosure, Home card navigation, locale switch, local image/next-case links, canonical/hreflang inventory; both mobile no-JS cases.
-- Normal-motion graph disclosure also inspected at 390; [capture](qa/controls/en-390-model-motion.png).
-- Semantic tokens and mirrored motion files remain byte-identical and unchanged. `git diff --check` clean.
+- `npm run check`: 0 errors, 0 warnings; 163 existing hints.
+- `npm run build`: 37 pages, successful.
+- `npm run check:content`: 0 findings.
+- `npm run check:css -- /work/learn/ /ru/work/learn/`: 0 dead rules.
+- [Capture checks](refresh-2026-10-31/portfolio/checks.json): EN/RU × 1440/390;
+  zero page errors, failed requests, missing images or horizontal overflow.
+- [Browser verification](refresh-2026-10-31/verification/verification.json):
+  EN/RU × 320/375/768, equal four-sided frame fields, all visible screenshot
+  frames at radius 16, rounded MediaZoom, responsive source selection, keyboard
+  open/Escape/focus return, diagram disclosure, Home navigation, locale switch,
+  local links and both no-JS cases. Eight live entry routes also return HTTP 200.
+- Semantic tokens, motion registry and their mirrors are unchanged. Source Learn
+  code is unchanged. No merge into main or production deployment was performed.
 
-Reproduce from the built local preview with an installed Playwright runtime:
+Reproduce product media with the bundled public export served as static files:
 
 ```powershell
+python -m http.server 4415 --bind 127.0.0.1 --directory public
+# In another terminal, with an installed Playwright runtime:
 $env:PW = 'file:///D:/Claude-projects/b2b-dssl/node_modules/playwright-core/index.mjs'
-npm run preview -- --host 127.0.0.1 --port 4405
-# In another terminal:
-node scripts/learn-v2/capture.mjs after
-node scripts/learn-v2/verify.mjs
+node scripts/learn-v2/capture-current.mjs
 ```
 
-Full command logs are retained locally under `tmp/learn/`; concise browser
-results and actual evidence are committed here.
+Portfolio capture and verification scripts accept `QA_OUT` to preserve earlier
+review evidence. Full routine logs remain locally in `tmp/learn/refresh-*.log`.
 
-## Live links and remaining boundaries
-
-Verified in the browser on 31 October 2026: Home, ONVIF Material and the
-commissioning Trajectory in EN/RU, plus both localized landing entries — eight
-HTTP 200 routes. The live entry screens match the relevant updated direction.
-The RU landing's real route is `/prototypes/learn-landing/`; `/ru/` returns 404
-and is not used. EN landing is `/prototypes/learn-landing/en/`.
-
-Portfolio CTA links describe the verified reference-library entry and product
-introduction. A fresh integration of **all six** reviewed product branches is
-not established here; no claim is made that the live app reproduces every
-account/assessment state pictured in the case. No product source was modified
-or deployed to resolve that separate dependency.
-
-Human usability, subject-matter accuracy, learning impact, screen-reader and
-physical-device testing are not established by this implementation. No business
-metrics, interviews, official accreditation or launch claims were added.
-
-Remaining requested action: independent ChatGPT comparison of these actual
-rendered pages with the current Agent Ops Console V2 and Partner Portal V2.
+Human usability, learning impact and subject-matter accuracy remain separate
+validation work. Other portfolio cases' media framing is the next requested
+review scope, after this Learn case is finished.

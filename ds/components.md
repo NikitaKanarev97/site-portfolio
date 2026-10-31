@@ -602,3 +602,10 @@ Native screenshot widths cap enlargement. Existing typography, surface, border,
 space and flow roles only; registered lines/fade/rise/fade-image only. Keyboard
 zoom, focus return and reduced-motion behaviour remain owned by shared components.
 Map: screens/case-learn.md §V2. No new global variants or tokens.
+
+V2.1 owner correction: LearnShot uses existing CaseScreen appearance=frame for
+every image, including the historical archive. Outer radius-media is 16 px;
+frame-inset is equal on all four sides (16/24 px). Current EN/RU DPR-2 captures
+come from the integrated product export, with complete semantic boundaries and
+native widths recorded separately from pixel dimensions. MediaZoom uses the same
+16 px rounding. These geometry invariants are checked in the real browser.

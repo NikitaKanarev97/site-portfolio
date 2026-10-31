@@ -84,20 +84,24 @@ This implementation is not design acceptance.
 | 01 Problem | Original archive untouched, alongside concise task argument | Image follows prose; zoom preserves full archive |
 | 02 Paths | Two editorial descriptions of reference and learning jobs | Stacked below md; no simulated product controls |
 | 03 Architecture | ONVIF Reference and archive-depth Player as explicitly different examples; opening ≠ completion; original content-model graph | Native mobile sources; graph behind keyboard-accessible native details |
-| 04 Preparation | Programme purpose/curriculum detail; explicit completion detail from previous working build | Programme mobile capture shows progress/continue; completion uses readable native 390 capture in both layouts |
-| 05 Workspace | Learner continuation + count detail versus reader's separate records | Native learner mobile, full reader history/programme detail stack |
-| 06 Assessment | Failed result with cooldown vs passed score region; read-only recovery linked to source | Native failed/passed mobile score regions; focused wrong-answer/source detail |
+| 04 Preparation | Whole programme header/first group/passport; current explicit completion panel | Whole mobile passport; complete native mobile completion panel in both layouts |
+| 05 Workspace | Both complete progress cards, learner versus reader | Native stacked mobile progress cards; no cropped count strips |
+| 06 Assessment | Complete failed/passed results with next actions; whole wrong-answer record | Real localized mobile layout and complete question/answer/source |
 | 07 Outcome | Connected flows, deliberate-completion trade-off, next human/expert validation, verified live reference and landing links | Stacked content; shared localized CaseNext to Vet |
 
-New published crops: `public/media/case-learn-v2/`, lossless WebP, 22 files (~505 KB).
-Reproduce: `node scripts/learn-v2/media.mjs` with dev server stopped on Windows
-(libvips may retain read handles). Exact source rectangles: `src/data/learn-v2-media.json`.
-All 23 prepared PNG originals remain unchanged in the audit folder. Selected
-RU source captures are never represented as translated EN or one integrated
-release. Original disclaimer-containing areas of programme/account/result screens
-are outside the published semantic crops; nothing is retouched. Passed result
-shows score only, not a fabricated document area. Completion uses unchanged
-earlier localized captures and identifies their provenance in visible copy.
+V2.1: `public/media/case-learn-v2/current/{en,ru}/`, 44 lossless DPR-2 WebP files
+(1,880,034 bytes). Source: integrated Learn main e9ac4b0, embedded by portfolio
+main 49d2fb0. Reproduce with scripts/learn-v2/capture-current.mjs; exact targets,
+native/pixel widths and fields are in src/data/learn-v2-media.json. All old public
+V2 root crops were removed. The 23 prepared historical PNG originals remain in
+the audit folder. New EN images are genuine EN UI; RU images are genuine RU UI.
+No raster translation, repainting or fabricated document area.
+
+Owner rule, 31 October: all screenshot canvases use the same radius-media (16 px)
+and equal frame-inset fields on every side (16/24 px), including zoom. Native
+details retain 24 CSS px of capture field; page regions keep their actual gutters.
+Every selected block and question must be complete, with no neighbour leaking
+across the image boundary. Learn is corrected now; other cases are a later pass.
 
 Home: Learn-only `LearnHome` composition in WorkStage, localized two-path thesis,
 native responsive Home crop and one normal case link. EN/RU registry and OG

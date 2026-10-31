@@ -1,5 +1,5 @@
 /** V2 editorial copy. Source: audit/trassir-learn-case-v2/STORYBOARD.md.
- * The prepared frames are RU evidence from separate reviewed product branches.
+ * Current EN/RU captures: refresh-2026-10-31/capture-manifest.json.
  */
 export interface LearnShotCopy { desktop: string; mobile?: string; alt: string; label?: string; caption?: string }
 export function makeLearnCase(locale: 'en' | 'ru') {
@@ -18,7 +18,7 @@ export function makeLearnCase(locale: 'en' | 'ru') {
     preview: t('Explore the reference library', 'Открыть справочник'),
     previewHref: `https://kanarev.com/prototypes/learn/home?lang=${locale}`,
     previewNote: t('Live product entry · opens in English', 'Главная продукта · откроется на русском'),
-    imageNote: t('Original Russian interface captures · selected states from separate design iterations. Select an image to inspect it.', 'Исходные кадры интерфейса · выбранные состояния отдельных итераций дизайна. Нажмите на кадр, чтобы рассмотреть его.'),
+    imageNote: t('Real interface captures from the current integrated product. Select an image to inspect it.', 'Реальные кадры актуальной сборки продукта. Нажмите на кадр, чтобы рассмотреть его.'),
     origin: t('I worked on the platform redesign at DSSL / TRASSIR. After leaving, I revisited the architecture, UX/UI, design system and responsive prototype. These screens show that later work; account data is illustrative.', 'Я работал над редизайном платформы в DSSL / TRASSIR. После ухода заново проработал архитектуру, UX/UI, дизайн-систему и адаптивный прототип. Здесь показана эта новая работа; данные аккаунтов — примеры.'),
     facts: [
       { term: t('Role', 'Роль'), value: t('Product / UX/UI Designer', 'Продуктовый / UX/UI-дизайнер') },
@@ -29,7 +29,7 @@ export function makeLearnCase(locale: 'en' | 'ru') {
     nav: [t('The task', 'Задача'), t('Shared material', 'Общий материал'), t('Learning path', 'Учебный путь'), t('Assessment', 'Зачёт')],
     hero: {
       home: shot('home-wide', 'home-mobile', 'Task-led Home: commissioning, system design, handover and new hardware', 'Главная по рабочей задаче: пусконаладка, проектирование, сдача объекта и новая линейка'),
-      answer: shot('answer-detail', undefined, 'ONVIF answer with version information and diagnostic entry points', 'Ответ по ONVIF: версия материала и входы в диагностику', 'An answer now', 'Ответ сейчас'),
+      answer: shot('answer-detail', undefined, 'Complete ONVIF article header with version, update date and download/print actions', 'Целая шапка материала ONVIF: версия, дата обновления, скачивание и печать', 'An answer now', 'Ответ сейчас'),
       path: shot('path-progress', undefined, 'Programme: 3 of 11 units complete, with a deliberate action to continue from step 4', 'Программа: завершено 3 из 11 единиц, продолжить можно с шага 4', 'A path forward', 'Последовательный путь'),
     },
     problem: {
@@ -52,7 +52,7 @@ export function makeLearnCase(locale: 'en' | 'ru') {
       body: t('Each resource has its own URL, technical context and version. A programme references it as a counted step without owning a duplicate. The two examples below show how the context changes around the content.', 'У материала есть свой адрес, технический контекст и версия. Программа включает его как шаг, но не дублирует содержимое. Два примера ниже показывают, как меняется контекст вокруг материала.'),
       rule: t('Opening ≠ completing.', 'Прочитано ≠ завершено.'),
       reference: shot('reference', 'reference-mobile', 'Reference example: ONVIF troubleshooting with version and linked programmes', 'Справочник: диагностика ONVIF с версией и связанными программами', 'Reference · ONVIF troubleshooting', 'Справочник · диагностика ONVIF'),
-      player: shot('player', 'player-mobile', 'Player example: archive-depth resource with curriculum, current step and separate completion count', 'Плеер: материал о глубине архива, состав программы, текущий шаг и отдельный счётчик завершения', 'Learning · archive-depth resource', 'Обучение · материал о глубине архива'),
+      player: shot('player', 'player-mobile', 'Archive-depth programme unit with version details and a separate reading notice', 'Материал программы о глубине архива: версия и отдельное уведомление о чтении', 'Learning · archive-depth resource', 'Обучение · материал о глубине архива'),
       diagram: t('Explore the shared content model', 'Посмотреть модель общего контента'),
     },
     guided: {
@@ -62,24 +62,23 @@ export function makeLearnCase(locale: 'en' | 'ru') {
       path: shot('path', 'path-mobile', 'Programme purpose and curriculum detail; on mobile, current progress and continue action', 'Цель программы и фрагмент состава; на телефоне — текущий прогресс и продолжение'),
       pathCaption: t('11 units, with a named outcome and a visible sequence. The current position and completed count stay distinct.', '11 единиц, известный результат и видимая последовательность. Текущая позиция и число завершённых шагов различаются.'),
       actionTitle: t('The learner decides when to finish.', 'Учащийся сам завершает шаг.'),
-      actionBody: t('“Complete and continue” records completion in this programme. Reading and scrolling do not. This interaction detail is preserved from the earlier working build.', '«Завершить и продолжить» фиксирует завершение в этой программе. Чтение и прокрутка — нет. Деталь взаимодействия сохранена из предыдущей рабочей сборки.'),
-      actionAlt: t('End of the ONVIF resource with the explicit Complete and continue action', 'Конец материала ONVIF с явным действием «Завершить и продолжить»'),
+      actionBody: t('“Complete and continue” records completion in this programme. Reading and scrolling do not. The whole panel makes the next unit and this deliberate action visible.', '«Завершить и далее» фиксирует завершение в этой программе. Чтение и прокрутка — нет. Панель показывает следующий материал и действие, которое засчитывает шаг.'),
+      actionAlt: t('Complete end-of-unit panel for archive depth, with the next material and explicit completion action', 'Целая панель завершения материала о глубине архива: следующий материал и явное действие завершения'),
     },
     workspace: {
       label: t('05 / Personal workspace', '05 / Личное пространство'),
       title: t('Reading and completion are two different records.', 'Чтение и завершение — два разных показателя.'),
       body: t('Reference history can grow without creating course credit. Completed units stay tied to a specific programme. My Learning keeps both facts visible and one useful next action in focus.', 'История пополняется при чтении, но не выдаёт за это учебные зачёты. Завершённые шаги принадлежат конкретной программе. Личный кабинет показывает обе шкалы и оставляет одно понятное следующее действие.'),
-      learner: shot('learner', 'learner-mobile', 'Learner account: continue archive-depth unit; 9 resources read and 3 of 11 programme units completed', 'Аккаунт учащейся: продолжить материал о глубине архива; прочитано 9 материалов и завершено 3 из 11 единиц', 'A learner · 9 read / 3 of 11 complete', 'Учащаяся · 9 прочитано / 3 из 11 завершено'),
+      learner: shot('learner', 'learner-mobile', 'Two complete progress cards: 9 resources read and 3 of 11 programme units completed', 'Две целые карточки прогресса: прочитано 9 материалов и завершено 3 из 11 единиц', 'A learner · 9 read / 3 of 11 complete', 'Учащаяся · 9 прочитано / 3 из 11 завершено'),
       reader: shot('reader', 'reader-history', 'Reader account: 3 resources read; no programme completion is awarded', 'Аккаунт читателя: прочитано 3 материала, завершение программы не начисляется', 'A reader · 3 read / no programme credit', 'Читатель · 3 прочитано / без зачёта программы'),
-      readerDetail: shot('reader-programme', undefined, 'Programme count appears only after starting a programme; only explicit completion contributes', 'Счётчик появляется после начала программы и учитывает только явно завершённые единицы'),
     },
     assessment: {
       label: t('06 / Assessment and recovery', '06 / Зачёт и возвращение'),
       title: t('A result explains what happened. And what comes next.', 'Результат объясняет, что произошло и что делать дальше.'),
       body: t('The saved score is compared with a fixed threshold. An unsuccessful attempt keeps the retry rules, read-only review and source materials in reach. Passing opens a training document. Reopening a result changes neither the score nor progress.', 'Сохранённый балл сравнивается с объявленным порогом. При непройденной попытке доступны правила повтора, разбор и исходные материалы. После прохождения открывается учебный документ. Повторное открытие результата ничего не перезаписывает.'),
       failed: shot('failed', 'failed-mobile', 'Unsuccessful assessment: 14 of 20 answers against a threshold of 16, with remaining attempt and cooldown', 'Зачёт не пройден: 14 из 20 при пороге 16, оставшаяся попытка и пауза до повтора', 'Unsuccessful · recovery stays available', 'Не пройден · подготовка остаётся доступной'),
-      passed: shot('passed-score', 'passed-score-mobile', 'Passed assessment score panel: 20 of 20 against the same threshold of 16', 'Блок успешного результата: 20 из 20 при том же пороге 16', 'Passed · the same threshold', 'Пройден · тот же порог'),
-      scoreNote: t('Example assessment states, not learning-impact metrics. The passing frame shows the score region.', 'Примеры состояний зачёта, а не метрики обучения. Успешный результат показан фрагментом с баллом.'),
+      passed: shot('passed-score', 'passed-score-mobile', 'Complete passed assessment result: 20 of 20 against a threshold of 16, with the document action', 'Целый успешный результат: 20 из 20 при пороге 16 и действие открытия документа', 'Passed · the same threshold', 'Пройден · тот же порог'),
+      scoreNote: t('Example assessment states, not learning-impact metrics. The same threshold applies to both outcomes.', 'Примеры состояний зачёта, а не метрики обучения. Для обоих исходов действует один порог.'),
       review: shot('review', 'review-detail', 'Read-only wrong-answer review preserves the submitted answer and links to its source material', 'Разбор ошибки сохраняет отправленный ответ и ведёт к исходному материалу'),
       reviewTitle: t('Return to the source.', 'Вернуться к источнику.'),
       reviewBody: t('The error stays visible. Each answer links back to the material needed for preparation; review never rewrites the submitted attempt.', 'Ошибка остаётся видимой. Ответ ведёт к материалу для подготовки; разбор не переписывает отправленную попытку.'),
@@ -95,7 +94,7 @@ export function makeLearnCase(locale: 'en' | 'ru') {
       cta: t('Explore the reference library', 'Открыть справочник'),
       landing: t('Visit the product landing', 'Посмотреть лендинг'),
       landingHref: `https://kanarev.com/prototypes/learn-landing/${locale === 'en' ? 'en/' : ''}`,
-      note: t('Live reference entry and product introduction. The case documents selected design iterations.', 'Вход в действующий справочник и знакомство с продуктом. Кейс показывает выбранные итерации дизайна.'),
+      note: t('Live reference entry and product introduction. Screens show the current integrated interface.', 'Вход в действующий справочник и знакомство с продуктом. На экранах — актуальный объединённый интерфейс.'),
     },
   };
 }

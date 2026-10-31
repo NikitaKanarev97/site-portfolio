@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdir, writeFile } from 'node:fs/promises';
 const { chromium } = await import(process.env.PW ?? 'playwright');
 const origin = process.argv[2] ?? 'http://127.0.0.1:4405';
-const out = 'audit/trassir-learn-case-v2/qa';
+const out = process.env.QA_OUT ?? 'audit/trassir-learn-case-v2/qa';
 await mkdir(`${out}/controls`, { recursive: true });
 const browser = await chromium.launch();
 const results = [];
@@ -20,6 +20,21 @@ for (const locale of ['en', 'ru']) for (const width of [320, 375, 768]) {
   assert.equal(await page.locator('html').getAttribute('lang'), locale);
   assert.equal(await page.locator('.learn-cover h1').evaluate(el => getComputedStyle(el).opacity), '1');
   assert.equal(await page.locator('.learn-cover h1').evaluate(el => getComputedStyle(el).fontFamily.includes('Onest')), true);
+  const frames = await page.locator('.learn-case .case-screen').evaluateAll(es => es.filter(e => e.getBoundingClientRect().width > 0).map(e => {
+    const style = getComputedStyle(e), image = e.querySelector('img');
+    const box = e.getBoundingClientRect(), ib = image.getBoundingClientRect();
+    return {
+      radius: style.borderRadius,
+      padding: ['Top', 'Right', 'Bottom', 'Left'].map(side => parseFloat(style[`padding${side}`])),
+      actualFields: [ib.top - box.top, box.right - ib.right, box.bottom - ib.bottom, ib.left - box.left],
+      source: image.currentSrc,
+    };
+  }));
+  for (const frame of frames) {
+    assert.equal(frame.radius, '16px', 'Every screenshot uses the same DS radius');
+    assert.ok(frame.padding.every(p => p >= 16 && p === frame.padding[0]), 'Uniform four-sided screenshot fields');
+    assert.ok(frame.actualFields.every(p => p >= frame.padding[0] - 1), 'Source stays inside the rounded field');
+  }
   const trigger = page.locator('.learn-cover__home [data-zoom-trigger]');
   const actualSource = await trigger.locator('img').evaluate(i => i.currentSrc);
   await trigger.focus();
@@ -28,6 +43,13 @@ for (const locale of ['en', 'ru']) for (const width of [320, 375, 768]) {
   await page.keyboard.press('Enter');
   await page.locator('[data-media-zoom][open]').waitFor();
   assert.equal(await page.locator('[data-media-zoom-image]').getAttribute('src'), actualSource);
+  const zoomGeometry = await page.locator('[data-media-zoom][open]').evaluate(e => ({
+    panelRadius: getComputedStyle(e.querySelector('.media-zoom__panel')).borderRadius,
+    imageRadius: getComputedStyle(e.querySelector('.screen-surface')).borderRadius,
+    padding: getComputedStyle(e.querySelector('.media-zoom__viewport')).padding,
+  }));
+  assert.equal(zoomGeometry.panelRadius, '16px');
+  assert.equal(zoomGeometry.imageRadius, '16px');
   await page.screenshot({ path: `${out}/controls/${locale}-${width}-zoom.png` });
   await page.keyboard.press('Escape');
   assert.equal(await trigger.evaluate(e => e === document.activeElement), true, 'Zoom focus return');
@@ -57,7 +79,7 @@ for (const locale of ['en', 'ru']) for (const width of [320, 375, 768]) {
     await page.waitForURL(url => url.pathname.replace(/\/$/, '') === `${locale === 'en' ? '/ru' : ''}/work/learn`);
     assert.equal(await page.locator('html').getAttribute('lang'), locale === 'en' ? 'ru' : 'en');
   }
-  results.push({ locale, width, dimensions, focus, canonical, alternates, localLinks: localLinks.length, errors, zoom: 'keyboard/currentSrc/Escape/focus return', diagram: 'keyboard toggle', homeCard: 'opens same-locale V2' });
+  results.push({ locale, width, dimensions, frames, zoomGeometry, focus, canonical, alternates, localLinks: localLinks.length, errors, zoom: 'keyboard/currentSrc/Escape/focus return', diagram: 'keyboard toggle', homeCard: 'opens same-locale V2' });
   await context.close();
 }
 for (const locale of ['en', 'ru']) {
