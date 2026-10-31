@@ -1,0 +1,174 @@
+{
+  "purpose": "Authentic browser evidence; selected from separate visually accepted Learn branches, NOT a single integrated build.",
+  "sourceRepository": "NikitaKanarev97/learn (private)",
+  "destination": "audit/trassir-learn-case-v2/evidence",
+  "captureOrigin": "Pre-existing reviewer evidence; files copied without modifications by ChatGPT. They were not freshly shot in this preparation turn.",
+  "created": "2026-10-31",
+  "baselinePortfolio": "c96340edd6acddd5e689b038648e5156680ec42a",
+  "sources": {
+    "home": {
+      "ref": "4f0d21b10128962be04536276fea2e00a473b8b8",
+      "dir": "audit/home-portfolio-v1/v1.2"
+    },
+    "material": {
+      "ref": "960ef468684e65ad7114f4c38ef1dcf2753d91b7",
+      "dir": "audit/material-portfolio-v1/after-v1.1"
+    },
+    "trajectory": {
+      "ref": "517993ff51f4da9734a4e7ec736d382f07bd6d05",
+      "dir": "audit/trajectory-portfolio-v1/after-v1.1"
+    },
+    "player": {
+      "ref": "3c2165a27cbc9cbff3e8d344afd399c085c22287",
+      "dir": "audit/player-portfolio-v1/after"
+    },
+    "my": {
+      "ref": "52b1f766b3d874d5c922d038647f6c02d882f23c",
+      "dir": "audit/my-learning-portfolio-v1/after"
+    },
+    "result": {
+      "ref": "75d81e64959126857178c36460f144d1698d529a",
+      "dir": "audit/assessment-result-portfolio-v1/after"
+    }
+  },
+  "assets": [
+    {
+      "file": "01-home-setup-desktop.png",
+      "blobSha": "b18b2c9c0cdad39a4c1f8c2210ab9bbb59886365",
+      "sourceRef": "4f0d21b10128962be04536276fea2e00a473b8b8",
+      "sourcePath": "audit/home-portfolio-v1/v1.2/desktop-1440-setup-viewport.png"
+    },
+    {
+      "file": "02-home-project-desktop.png",
+      "blobSha": "a1295cdb49553dd649d14fdbdea434fe1a103910",
+      "sourceRef": "4f0d21b10128962be04536276fea2e00a473b8b8",
+      "sourcePath": "audit/home-portfolio-v1/v1.2/desktop-1440-project-viewport.png"
+    },
+    {
+      "file": "03-home-setup-mobile.png",
+      "blobSha": "def4f706cabbf8d82dcf37e78e8cb1f48eed19ef",
+      "sourceRef": "4f0d21b10128962be04536276fea2e00a473b8b8",
+      "sourcePath": "audit/home-portfolio-v1/v1.2/mobile-390-setup-viewport.png"
+    },
+    {
+      "file": "04-material-onvif-desktop.png",
+      "blobSha": "8626033590ab5e1b6b374916c61d905b38d511c6",
+      "sourceRef": "960ef468684e65ad7114f4c38ef1dcf2753d91b7",
+      "sourcePath": "audit/material-portfolio-v1/after-v1.1/desktop-1440-onvif-viewport.png"
+    },
+    {
+      "file": "05-material-onvif-full.png",
+      "blobSha": "1380c29c179e0066d8e1dec5183eb4bf6e5e2ebb",
+      "sourceRef": "960ef468684e65ad7114f4c38ef1dcf2753d91b7",
+      "sourcePath": "audit/material-portfolio-v1/after-v1.1/desktop-1440-onvif.png"
+    },
+    {
+      "file": "06-material-onvif-mobile.png",
+      "blobSha": "8c870dfa36926b89bc834e1701cffc225bf1a41f",
+      "sourceRef": "960ef468684e65ad7114f4c38ef1dcf2753d91b7",
+      "sourcePath": "audit/material-portfolio-v1/after-v1.1/mobile-390-onvif-viewport.png"
+    },
+    {
+      "file": "07-trajectory-anon-desktop.png",
+      "blobSha": "6b288425a083ed3ba4ebf13c3d838930171160f3",
+      "sourceRef": "517993ff51f4da9734a4e7ec736d382f07bd6d05",
+      "sourcePath": "audit/trajectory-portfolio-v1/after-v1.1/desktop-1440-setup-anon-viewport.png"
+    },
+    {
+      "file": "08-trajectory-started-desktop.png",
+      "blobSha": "021f8f2acee27f56c2a8b73ae8c6c3cc57188631",
+      "sourceRef": "517993ff51f4da9734a4e7ec736d382f07bd6d05",
+      "sourcePath": "audit/trajectory-portfolio-v1/after-v1.1/desktop-1440-setup-started-viewport.png"
+    },
+    {
+      "file": "09-trajectory-started-mobile.png",
+      "blobSha": "f23026bdbc55681c950736f2fbb8f4964922adb7",
+      "sourceRef": "517993ff51f4da9734a4e7ec736d382f07bd6d05",
+      "sourcePath": "audit/trajectory-portfolio-v1/after-v1.1/mobile-390-setup-started-viewport.png"
+    },
+    {
+      "file": "10-player-current-desktop.png",
+      "blobSha": "d1ea7bedf0aba6ea3e57b2456f836021138e7904",
+      "sourceRef": "3c2165a27cbc9cbff3e8d344afd399c085c22287",
+      "sourcePath": "audit/player-portfolio-v1/after/desktop-1440-current-viewport.png"
+    },
+    {
+      "file": "11-player-current-mobile.png",
+      "blobSha": "751e1d85f7f0cd9f0a47f5102520ee61dbc53ad3",
+      "sourceRef": "3c2165a27cbc9cbff3e8d344afd399c085c22287",
+      "sourcePath": "audit/player-portfolio-v1/after/mobile-390-current-viewport.png"
+    },
+    {
+      "file": "12-player-read-only-desktop.png",
+      "blobSha": "ad3fadf137b1d57d987e43ae71d6bafc60619a11",
+      "sourceRef": "3c2165a27cbc9cbff3e8d344afd399c085c22287",
+      "sourcePath": "audit/player-portfolio-v1/after/desktop-1440-read-elsewhere-viewport.png"
+    },
+    {
+      "file": "13-my-learning-marina-desktop.png",
+      "blobSha": "d7c141ea2b015ffcbca8128c7ec07f50ac08274f",
+      "sourceRef": "52b1f766b3d874d5c922d038647f6c02d882f23c",
+      "sourcePath": "audit/my-learning-portfolio-v1/after/desktop-1440-marina-viewport.png"
+    },
+    {
+      "file": "14-my-learning-marina-mobile.png",
+      "blobSha": "3b3c2e50e1fed5b2a18990cd4f9febe8510a7cc0",
+      "sourceRef": "52b1f766b3d874d5c922d038647f6c02d882f23c",
+      "sourcePath": "audit/my-learning-portfolio-v1/after/mobile-390-marina-viewport.png"
+    },
+    {
+      "file": "15-my-learning-reader-desktop.png",
+      "blobSha": "83d6350888a113198d890315d90985e1423f4bad",
+      "sourceRef": "52b1f766b3d874d5c922d038647f6c02d882f23c",
+      "sourcePath": "audit/my-learning-portfolio-v1/after/desktop-1440-reader-viewport.png"
+    },
+    {
+      "file": "16-my-learning-completed-desktop.png",
+      "blobSha": "2fd13b66074b5df08642680cf97d3d807bd1aeae",
+      "sourceRef": "52b1f766b3d874d5c922d038647f6c02d882f23c",
+      "sourcePath": "audit/my-learning-portfolio-v1/after/desktop-1440-completed-viewport.png"
+    },
+    {
+      "file": "17-my-learning-exam-desktop.png",
+      "blobSha": "b0d1ef6a3597e1cd90012b5d9583d08a69c93831",
+      "sourceRef": "52b1f766b3d874d5c922d038647f6c02d882f23c",
+      "sourcePath": "audit/my-learning-portfolio-v1/after/desktop-1440-active-exam-viewport.png"
+    },
+    {
+      "file": "18-result-failed-desktop.png",
+      "blobSha": "cfd66f37fd9b3eaee4303f454a367f0511ebb1d3",
+      "sourceRef": "75d81e64959126857178c36460f144d1698d529a",
+      "sourcePath": "audit/assessment-result-portfolio-v1/after/desktop-1440-failed-viewport.png"
+    },
+    {
+      "file": "19-result-failed-mobile.png",
+      "blobSha": "208cc2bb8c7d2a6de8c93868e657dd104b19735d",
+      "sourceRef": "75d81e64959126857178c36460f144d1698d529a",
+      "sourcePath": "audit/assessment-result-portfolio-v1/after/mobile-390-failed-viewport.png"
+    },
+    {
+      "file": "20-result-passed-desktop.png",
+      "blobSha": "b32e31c425a5f75cad06b4669b17c0d1638a6fd4",
+      "sourceRef": "75d81e64959126857178c36460f144d1698d529a",
+      "sourcePath": "audit/assessment-result-portfolio-v1/after/desktop-1440-passed-viewport.png"
+    },
+    {
+      "file": "21-result-passed-mobile.png",
+      "blobSha": "8001542378798a69bfd2287b21045a0297bf8109",
+      "sourceRef": "75d81e64959126857178c36460f144d1698d529a",
+      "sourcePath": "audit/assessment-result-portfolio-v1/after/mobile-390-passed-viewport.png"
+    },
+    {
+      "file": "22-result-wrong-review-desktop.png",
+      "blobSha": "b82cc9834d8eaa35301c1125170dbbf69e813e56",
+      "sourceRef": "75d81e64959126857178c36460f144d1698d529a",
+      "sourcePath": "audit/assessment-result-portfolio-v1/after/desktop-1440-failed-wrong-review-viewport.png"
+    },
+    {
+      "file": "23-result-sources-desktop.png",
+      "blobSha": "e963f70fa27898108fc84f2e55d1bcc6df2ddeb6",
+      "sourceRef": "75d81e64959126857178c36460f144d1698d529a",
+      "sourcePath": "audit/assessment-result-portfolio-v1/after/desktop-1440-failed-sources-viewport.png"
+    }
+  ]
+}
