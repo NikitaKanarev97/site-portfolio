@@ -2,7 +2,7 @@ name: B2B case page visual evidence
 on:
   push:
     branches: [portfolio/b2b-case-visual-v1]
-    paths: [.github/workflows/b2b-case-page-review.yml]
+    paths: [.github/workflows/b2b-case-page-review.yml, scripts/capture-b2b-case-page.mjs]
   workflow_dispatch:
 permissions:
   contents: write
