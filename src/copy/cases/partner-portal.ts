@@ -65,7 +65,7 @@ export const partnerPortalStory = defineStory({
       },
     },
     {
-      id: 'source-line', type: 'steps', motion: 'focus', evidenceId: 'portal-line', mediaId: 'portal-line',
+      id: 'source-line', type: 'steps', motion: 'static', composition: 'handoff', evidenceId: 'portal-line', mediaId: 'portal-line',
       payload: {
         label: 'One source line',
         items: [
@@ -155,7 +155,7 @@ export const partnerPortalStory = defineStory({
       payload: {
         presentation: 'editorial',
         result: {
-          label: 'Outcome', thesis: 'A buying workflow built around accountable decisions',
+          label: 'Outcome', thesis: 'A traceable path to purchase',
           body: 'The commercial redesign shipped. I later reconstructed and polished this flow with synthetic data for the portfolio; the screens demonstrate the decisions, not measured post-launch improvements.',
         },
         evidence: {
