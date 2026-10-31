@@ -41,7 +41,7 @@ const WIDE = '(min-width: 1024px) 66vw, 100vw';
       </header>
       <div class="portal-cover__stage" data-motion="fade-image">
         <PortalShot shot={cover.main} label={cover.main.label} locale={locale} loading="eager" sizes={WIDE} />
-        <div class="portal-cover__detail"><PortalShot shot={cover.detail} label={cover.detail.label} locale={locale} loading="eager" /></div>
+        <div class="portal-cover__detail"><PortalShot variant="detail" shot={cover.detail} label={cover.detail.label} locale={locale} loading="eager" /></div>
       </div>
       <p class="ds-meta-sm portal-cover__note">{cover.note}</p>
     </div>
@@ -96,7 +96,7 @@ const WIDE = '(min-width: 1024px) 66vw, 100vw';
       </div>
       <div class="portal-pair">
         <div class="portal-plate portal-plate--stack" data-motion="fade-image">
-          <PortalShot shot={decision.compare} caption={decision.compare.caption} locale={locale} sizes={WIDE} />
+          <PortalShot variant="native" shot={decision.compare} caption={decision.compare.caption} locale={locale} sizes={WIDE} />
           <PortalShot shot={decision.confirmed} caption={decision.confirmed.caption} locale={locale} variant="strip" sizes={WIDE} />
         </div>
         <aside class="portal-note" aria-label={decision.why.label}>
@@ -139,8 +139,8 @@ const WIDE = '(min-width: 1024px) 66vw, 100vw';
           </div>
         </div>
         <div class="portal-commerce" data-motion="fade-image">
-          <PortalShot shot={commerce.line} caption={commerce.line.caption} locale={locale} />
-          <PortalShot class="portal-commerce__bar" shot={commerce.bar} caption={commerce.bar.caption} locale={locale} />
+          <PortalShot variant="native" shot={commerce.line} caption={commerce.line.caption} locale={locale} />
+          <PortalShot variant="panel" class="portal-commerce__bar" shot={commerce.bar} caption={commerce.bar.caption} locale={locale} />
         </div>
       </div>
     </section>

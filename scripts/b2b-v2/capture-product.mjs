@@ -147,7 +147,7 @@ const shots = {
   /* Commercial review: the summary bar and one unpriced line. */
   'cartbar-1280': async locale => {
     const { context, page } = await open('cart', { locale, width: 1280, height: 860, state: 'resolved' });
-    return { context, page, clip: await unionBox(page, ['#cart-summary-bar'], 0), note: 'sticky decision bar, totals and blockers' };
+    return { context, page, clip: await unionBox(page, ['#cart-summary-bar > .cart-bar__inner'], 0), note: 'complete decision-bar content; page separator excluded at its owning parent boundary; site frame supplies padding' };
   },
   'unpriced-1280': async locale => {
     const { context, page } = await open('cart', { locale, width: 1280, height: 1400, state: 'resolved' });
@@ -156,7 +156,7 @@ const shots = {
   },
   'cartbar-390': async locale => {
     const { context, page } = await open('cart', { locale, width: 390, height: 844, state: 'resolved' });
-    return { context, page, clip: await unionBox(page, ['#cart-summary-bar'], 0), note: 'mobile decision bar' };
+    return { context, page, clip: await unionBox(page, ['#cart-summary-bar > .cart-bar__inner'], 0), note: 'complete mobile decision-bar content; site frame supplies padding' };
   },
   /* Supply decision: title, stepper and the three-plan comparison. */
   'fulfillment-1280': async locale => {

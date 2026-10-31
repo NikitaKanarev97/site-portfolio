@@ -582,3 +582,8 @@ Navbar использует Images/logo-portfolio-v4.svg. BaseLayout — favicon
 
 - PortalHome (`src/components/portal/PortalHome.astro`): dedicated FeaturedCase composition over accepted row-19 evidence; editorial progress 41/48, two-candidate comparison on desktop, real mobile review on phones. Semantic surface-portal-editorial, existing typography/spacing, parent stretched case link. No new interactions.
 - PortalCase: cool neutral hero and commercial band; desktop single dominant workspace plus complete native DeltaRow inset. Mobile prioritises one workspace. Commerce centres complete cart-line parent and summary at native widths, with uniform native canvas fields. Verification adds space-8/space-12 above the unchanged interface.
+
+
+## Portal screenshot geometry correction · 31.10.2026
+
+PortalShot uses intrinsic image height (width:100%, height:auto; picture:block), never a border-box aspect ratio plus contain. `native` preserves square UI edges without a second border or corner mask (Home comparison, decision and commercial line). `detail` adds space-4 inside surface-portal-native around the complete DeltaRow. `panel` frames full cart-bar inner content with space-4 on white; the page separator belongs to the excluded outer bar. Native rounded full-window frames retain the existing frame variant. Thin UI lines use lossless WebP for cart/fulfillment evidence.

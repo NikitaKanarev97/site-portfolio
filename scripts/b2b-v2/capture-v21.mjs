@@ -14,7 +14,7 @@ for (const locale of ['en', 'ru']) for (const width of [1280, 390]) {
     const file = `${root}/${locale}/${key}.png`;
     await page.screenshot({ path: file, clip, fullPage: true, animations: 'disabled' });
     const dst = `public/media/rebuild/partner-portal/v2/${locale}/${key}.webp`;
-    const info = await sharp(file).webp({ quality: 88, effort: 6 }).toFile(dst);
+    const info = await sharp(file).webp({ lossless: true, effort: 6 }).toFile(dst);
     const entry = { src: '/' + dst.slice(7), width: Math.round(info.width / 2), height: Math.round(info.height / 2), bytes: info.size, source: file, commit: PRODUCT_COMMIT, route: page.url(), clip };
     media[`${locale}/${key}`] = entry;
     manifest[`${locale}/${key}`] = { ...entry, note };
@@ -31,7 +31,7 @@ for (const locale of ['en', 'ru']) for (const width of [1280, 390]) {
   await owner.screenshot({ path: file, animations: 'disabled' });
   const background = await owner.locator('[data-slot="cart-line-unpriced"]').evaluate(el => getComputedStyle(el).backgroundColor);
   const dst = `public/media/rebuild/partner-portal/v2/${locale}/commerce-sheet-${width}.webp`;
-  const info = await sharp(file).extend({ top: 40, bottom: 40, left: 40, right: 40, background }).webp({ quality: 88, effort: 6 }).toFile(dst);
+  const info = await sharp(file).extend({ top: 40, bottom: 40, left: 40, right: 40, background }).webp({ lossless: true, effort: 6 }).toFile(dst);
   const key = `${locale}/commerce-sheet-${width}`;
   media[key] = { src: '/' + dst.slice(7), width: Math.round(info.width / 2), height: Math.round(info.height / 2), bytes: info.size, source: file, commit: PRODUCT_COMMIT, route: page.url() };
   manifest[key] = { ...media[key], note: 'Full owning cart-line, no altered UI; uniform 20 CSS px native canvas field added around the complete module', padding: 20, nativeCanvas: background };

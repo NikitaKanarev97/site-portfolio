@@ -13,7 +13,7 @@ const copy = portalHome[locale];
     <p class="ds-heading-xl">{copy.thesis}</p>
     <p class="ds-body-base portal-home__body">{copy.body}</p>
   </div>
-  <PortalShot locale={locale} loading={loading} shot={{ desktop: 'decision-1280', mobile: 'workspace-top-390', alt: copy.alt }} />
+  <PortalShot variant="native" locale={locale} loading={loading} shot={{ desktop: 'decision-1280', mobile: 'workspace-top-390', alt: copy.alt }} />
 </div>
 <style>
   .portal-home { display: grid; gap: var(--flow-node); padding: var(--stage-inset); background: var(--surface-portal-editorial); border-radius: var(--radius-lg); }

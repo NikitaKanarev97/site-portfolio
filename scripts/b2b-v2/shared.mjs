@@ -6,7 +6,7 @@
 import { readFile } from 'node:fs/promises';
 const { chromium } = await import(process.env.PW ?? 'playwright');
 
-export const PRODUCT_COMMIT = '6bbe1cd71a656414efcc90a98c61d1012c55be92';
+export const PRODUCT_COMMIT = process.env.PRODUCT_COMMIT ?? '6bbe1cd71a656414efcc90a98c61d1012c55be92';
 export const ORIGIN = process.env.PRODUCT_ORIGIN ?? 'http://127.0.0.1:5191/b2b';
 const PRODUCT_ROOT = process.env.PRODUCT_ROOT ?? 'D:/Claude-projects/b2b-accepted';
 const KEY = 'b2b-dssl.state.v1';

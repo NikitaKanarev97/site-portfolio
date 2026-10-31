@@ -26,7 +26,7 @@ for (const locale of ['en', 'ru']) {
     const source = capture[`${locale}/${name}`];
     if (!source) throw new Error(`No capture ${locale}/${name}; run capture-product.mjs`);
     const dst = `${OUT}/${locale}/${name}.webp`;
-    const info = await sharp(source.file).webp({ quality: 86, effort: 6, smartSubsample: true }).toFile(dst);
+    const info = await sharp(source.file).webp(name.startsWith('cartbar-') || name.startsWith('fulfillment-') ? { lossless: true, effort: 6 } : { quality: 86, effort: 6, smartSubsample: true }).toFile(dst);
     media[`${locale}/${name}`] = {
       src: '/' + dst.replace(/^public\//, ''),
       width: Math.round(info.width / 2), height: Math.round(info.height / 2),

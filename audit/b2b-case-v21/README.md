@@ -1,5 +1,7 @@
 # Partner Portal V2.1 — independent review handoff
 
+**Later geometry correction:** [current follow-up report and captures](geometry/README.md). The original V2.1 comparison below is preserved as the reviewed baseline.
+
 31 Oct 2026. Branch `redesign/b2b-portfolio-case-v2`; baseline `18f73639174cc9a4dbc0c30ba4d8963b0a1a4781`. Ready for independent visual review, **not self-approved**. No merge, production deployment or Figma changes.
 
 ## Changes

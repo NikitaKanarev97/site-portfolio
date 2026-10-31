@@ -8,7 +8,10 @@
  * (scripts/b2b-v2/capture-product.mjs); this component never crops.
  *
  *   frame   UI on a hairline-bordered card, radius-md (default)
- *   strip   same, for one-row macros: no inner padding, full width
+ *   strip   same, for one-row macros
+ *   native  no extra mask/border; preserves complete square product edges
+ *   detail  padded native canvas around an inner product component
+ *   panel   padded white context around complete bar content
  *
  * Caption is optional and always sits under the frame, on clean surface.
  */
@@ -21,7 +24,7 @@ interface Props {
   locale: 'en' | 'ru';
   caption?: string;
   label?: string;
-  variant?: 'frame' | 'strip';
+  variant?: 'frame' | 'strip' | 'native' | 'detail' | 'panel';
   loading?: 'eager' | 'lazy';
   /** Rendered width hint for the desktop source, e.g. "(min-width: 1024px) 70vw". */
   sizes?: string;
@@ -41,7 +44,7 @@ const NARROW = `(max-width: ${px('bp-md') - 1}px)`;
 <figure class:list={['portal-shot', `portal-shot--${variant}`, className]}
   style={`--shot-native: ${desktop.width}px;${mobile ? ` --shot-native-narrow: ${mobile.width}px;` : ''}`}>
   {label && <p class="ds-meta-sm portal-shot__label">{label}</p>}
-  <div class="portal-shot__frame" style={`--shot-ratio: ${desktop.width} / ${desktop.height};${mobile ? ` --shot-ratio-narrow: ${mobile.width} / ${mobile.height};` : ''}`}>
+  <div class="portal-shot__frame">
     <picture>
       {mobile && <source media={NARROW} srcset={mobile.src} width={mobile.width} height={mobile.height} />}
       <img src={desktop.src} width={desktop.width} height={desktop.height} alt={shot.alt}
@@ -57,15 +60,17 @@ const NARROW = `(max-width: ${px('bp-md') - 1}px)`;
   .portal-shot__label { color: var(--text-subtle); }
   .portal-shot__frame {
     overflow: hidden;
-    aspect-ratio: var(--shot-ratio);
     background: var(--surface-default);
     border: var(--border-width) solid var(--border-default);
     border-radius: var(--radius-md);
   }
-  .portal-shot__frame img { display: block; inline-size: 100%; block-size: 100%; object-fit: contain; }
+  .portal-shot__frame picture { display: block; }
+  .portal-shot__frame img { display: block; inline-size: 100%; block-size: auto; }
+  .portal-shot--native .portal-shot__frame { overflow: visible; border: 0; border-radius: 0; background: transparent; }
+  .portal-shot--detail .portal-shot__frame, .portal-shot--panel .portal-shot__frame { padding: var(--space-4); border: 0; }
+  .portal-shot--detail .portal-shot__frame { background: var(--surface-portal-native); }
   .portal-shot__caption { max-inline-size: var(--measure-case); color: var(--text-muted); }
   @media (--below-bp-md) {
     .portal-shot { max-inline-size: var(--shot-native-narrow, var(--shot-native)); }
-    .portal-shot__frame { aspect-ratio: var(--shot-ratio-narrow, var(--shot-ratio)); }
   }
 </style>

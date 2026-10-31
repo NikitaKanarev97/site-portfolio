@@ -562,3 +562,8 @@ The remainder documents the earlier public route and remains as history. Its fix
 | Заголовок выхода → абзац → ссылка | 32 + 24 / 24 | `flow-node` / `flow-text` |
 
 **Найден и починен дефект разметки.** Строка исхода приходила в `NoteBlock variant=emphasis` абзацем — `<p data-motion>` внутри слота, — а корень этого варианта сам `<p>`. Абзац в абзаце невалиден: парсер разрывал узел на три, рамка `emphasis` доставалась пустому элементу, текст исхода шёл без кегля `ds-heading-xl` и без `measure-lead`, а поток секции считал обломки отдельными узлами и разводил их шагом. Дефект жил с первой сборки кейса и был виден только в собранном HTML. Набор объявляет корень блока сам — как в `CaseReframe` ниже по странице.
+
+
+### Screenshot geometry correction · 31.10.2026
+
+PortalShot now follows the intrinsic image ratio; borders cannot create a contain-fit letterbox. Home/decision/commercial-line evidence has no additional corner mask. The desktop hero DeltaRow has 16 px internal presentation padding on the exact native canvas. Commerce summary captures the complete bar inner module, excluding the outer page separator at its DOM boundary. Fulfillment is recaptured from c899933 (accepted product plus four-sided selected frame), with no product/business changes beyond that border correction. Follow-up evidence: audit/b2b-case-v21/geometry/.

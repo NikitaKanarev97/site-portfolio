@@ -27,6 +27,7 @@
   --blue-100: #DCE7F3;
   --cool-50: #F3F6FA;
   --cool-100: #EDF2F8;
+  --cool-25: #F7F9FC;
   --butter-100: #F3E6AE;
   --navy-800: #243C56;
   --sage-100: #E0EAE4;
@@ -225,6 +226,7 @@
   --surface-cover-portal:         var(--butter-100);
   --surface-portal-editorial:     var(--cool-100);
   --surface-portal-context:       var(--cool-50);
+  --surface-portal-native:        var(--cool-25);
   --surface-cover-learn:          var(--navy-800);
   --surface-cover-vet:            var(--sage-100);
   --surface-cover-pawly:          var(--sand-100);
