@@ -1,0 +1,23 @@
+---
+import CaseScreen from '../CaseScreen.astro';
+import media from '../../data/learn-v2-media.json';
+import type { LearnShotCopy } from '../../copy/cases/learn-v2';
+interface Props { shot: LearnShotCopy; loading?: 'eager' | 'lazy'; href?: string; linkLabel?: string; class?: string }
+const { shot, loading = 'lazy', href, linkLabel, class: className } = Astro.props;
+const pick = (key: string) => {
+  const entry = (media as Record<string, { src: string; width: number }>)[key];
+  if (!entry) throw new Error(`Missing Learn V2 media: ${key}`);
+  return entry;
+};
+const desktop = pick(shot.desktop), mobile = shot.mobile ? pick(shot.mobile) : undefined;
+---
+<figure class:list={['learn-shot', className]} data-learn-shot={shot.desktop}>
+  {shot.label && <p class="ds-body-sm learn-shot__label">{shot.label}</p>}
+  <CaseScreen item={{ src: desktop.src, srcNarrow: mobile?.src, alt: shot.alt, device: 'panel', nativeWidth: desktop.width }}
+    loading={loading} href={href} linkLabel={linkLabel} />
+  {shot.caption && <figcaption class="ds-body-sm learn-shot__caption">{shot.caption}</figcaption>}
+</figure>
+<style>
+  .learn-shot { display: grid; gap: var(--flow-pair); min-inline-size: 0; margin: 0; align-content: start; }
+  .learn-shot__label, .learn-shot__caption { color: var(--text-subtle); max-inline-size: var(--measure-case); }
+</style>

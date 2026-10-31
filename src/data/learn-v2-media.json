@@ -1,0 +1,288 @@
+{
+  "home-wide": {
+    "src": "/media/case-learn-v2/home-wide.webp",
+    "width": 1376,
+    "height": 435,
+    "source": "01-home-setup-desktop.png",
+    "crop": {
+      "left": 32,
+      "top": 104,
+      "width": 1376,
+      "height": 435
+    },
+    "bytes": 37100
+  },
+  "home-mobile": {
+    "src": "/media/case-learn-v2/home-mobile.webp",
+    "width": 358,
+    "height": 256,
+    "source": "03-home-setup-mobile.png",
+    "crop": {
+      "left": 16,
+      "top": 142,
+      "width": 358,
+      "height": 256
+    },
+    "bytes": 9534
+  },
+  "answer-detail": {
+    "src": "/media/case-learn-v2/answer-detail.webp",
+    "width": 768,
+    "height": 254,
+    "source": "04-material-onvif-desktop.png",
+    "crop": {
+      "left": 144,
+      "top": 144,
+      "width": 768,
+      "height": 254
+    },
+    "bytes": 13404
+  },
+  "path-progress": {
+    "src": "/media/case-learn-v2/path-progress.webp",
+    "width": 272,
+    "height": 208,
+    "source": "08-trajectory-started-desktop.png",
+    "crop": {
+      "left": 1016,
+      "top": 480,
+      "width": 272,
+      "height": 208
+    },
+    "bytes": 7524
+  },
+  "reference": {
+    "src": "/media/case-learn-v2/reference.webp",
+    "width": 1152,
+    "height": 596,
+    "source": "04-material-onvif-desktop.png",
+    "crop": {
+      "left": 144,
+      "top": 88,
+      "width": 1152,
+      "height": 596
+    },
+    "bytes": 45980
+  },
+  "reference-mobile": {
+    "src": "/media/case-learn-v2/reference-mobile.webp",
+    "width": 390,
+    "height": 660,
+    "source": "06-material-onvif-mobile.png",
+    "crop": {
+      "left": 0,
+      "top": 184,
+      "width": 390,
+      "height": 660
+    },
+    "bytes": 24698
+  },
+  "player": {
+    "src": "/media/case-learn-v2/player.webp",
+    "width": 1152,
+    "height": 538,
+    "source": "10-player-current-desktop.png",
+    "crop": {
+      "left": 144,
+      "top": 80,
+      "width": 1152,
+      "height": 538
+    },
+    "bytes": 52200
+  },
+  "player-mobile": {
+    "src": "/media/case-learn-v2/player-mobile.webp",
+    "width": 390,
+    "height": 493,
+    "source": "11-player-current-mobile.png",
+    "crop": {
+      "left": 0,
+      "top": 176,
+      "width": 390,
+      "height": 493
+    },
+    "bytes": 21610
+  },
+  "path": {
+    "src": "/media/case-learn-v2/path.webp",
+    "width": 848,
+    "height": 746,
+    "source": "08-trajectory-started-desktop.png",
+    "crop": {
+      "left": 104,
+      "top": 88,
+      "width": 848,
+      "height": 746
+    },
+    "bytes": 40650
+  },
+  "path-mobile": {
+    "src": "/media/case-learn-v2/path-mobile.webp",
+    "width": 390,
+    "height": 568,
+    "source": "09-trajectory-started-mobile.png",
+    "crop": {
+      "left": 0,
+      "top": 184,
+      "width": 390,
+      "height": 568
+    },
+    "bytes": 27818
+  },
+  "learner": {
+    "src": "/media/case-learn-v2/learner.webp",
+    "width": 1040,
+    "height": 310,
+    "source": "13-my-learning-marina-desktop.png",
+    "crop": {
+      "left": 16,
+      "top": 218,
+      "width": 1040,
+      "height": 310
+    },
+    "bytes": 17036
+  },
+  "learner-records": {
+    "src": "/media/case-learn-v2/learner-records.webp",
+    "width": 1008,
+    "height": 116,
+    "source": "13-my-learning-marina-desktop.png",
+    "crop": {
+      "left": 32,
+      "top": 572,
+      "width": 1008,
+      "height": 116
+    },
+    "bytes": 6252
+  },
+  "learner-mobile": {
+    "src": "/media/case-learn-v2/learner-mobile.webp",
+    "width": 390,
+    "height": 580,
+    "source": "14-my-learning-marina-mobile.png",
+    "crop": {
+      "left": 0,
+      "top": 264,
+      "width": 390,
+      "height": 580
+    },
+    "bytes": 21774
+  },
+  "reader": {
+    "src": "/media/case-learn-v2/reader.webp",
+    "width": 1040,
+    "height": 682,
+    "source": "15-my-learning-reader-desktop.png",
+    "crop": {
+      "left": 16,
+      "top": 218,
+      "width": 1040,
+      "height": 682
+    },
+    "bytes": 36706
+  },
+  "failed": {
+    "src": "/media/case-learn-v2/failed.webp",
+    "width": 1040,
+    "height": 548,
+    "source": "18-result-failed-desktop.png",
+    "crop": {
+      "left": 16,
+      "top": 176,
+      "width": 1040,
+      "height": 548
+    },
+    "bytes": 29224
+  },
+  "failed-mobile": {
+    "src": "/media/case-learn-v2/failed-mobile.webp",
+    "width": 390,
+    "height": 560,
+    "source": "19-result-failed-mobile.png",
+    "crop": {
+      "left": 0,
+      "top": 240,
+      "width": 390,
+      "height": 560
+    },
+    "bytes": 24374
+  },
+  "passed-score": {
+    "src": "/media/case-learn-v2/passed-score.webp",
+    "width": 1040,
+    "height": 388,
+    "source": "20-result-passed-desktop.png",
+    "crop": {
+      "left": 16,
+      "top": 176,
+      "width": 1040,
+      "height": 388
+    },
+    "bytes": 18460
+  },
+  "passed-score-mobile": {
+    "src": "/media/case-learn-v2/passed-score-mobile.webp",
+    "width": 390,
+    "height": 328,
+    "source": "21-result-passed-mobile.png",
+    "crop": {
+      "left": 0,
+      "top": 240,
+      "width": 390,
+      "height": 328
+    },
+    "bytes": 13514
+  },
+  "review": {
+    "src": "/media/case-learn-v2/review.webp",
+    "width": 1040,
+    "height": 612,
+    "source": "22-result-wrong-review-desktop.png",
+    "crop": {
+      "left": 16,
+      "top": 88,
+      "width": 1040,
+      "height": 612
+    },
+    "bytes": 26730
+  },
+  "review-detail": {
+    "src": "/media/case-learn-v2/review-detail.webp",
+    "width": 446,
+    "height": 68,
+    "source": "22-result-wrong-review-desktop.png",
+    "crop": {
+      "left": 88,
+      "top": 238,
+      "width": 446,
+      "height": 68
+    },
+    "bytes": 5054
+  },
+  "reader-history": {
+    "src": "/media/case-learn-v2/reader-history.webp",
+    "width": 496,
+    "height": 338,
+    "source": "15-my-learning-reader-desktop.png",
+    "crop": {
+      "left": 32,
+      "top": 550,
+      "width": 496,
+      "height": 338
+    },
+    "bytes": 12518
+  },
+  "reader-programme": {
+    "src": "/media/case-learn-v2/reader-programme.webp",
+    "width": 496,
+    "height": 338,
+    "source": "15-my-learning-reader-desktop.png",
+    "crop": {
+      "left": 544,
+      "top": 550,
+      "width": 496,
+      "height": 338
+    },
+    "bytes": 11274
+  }
+}

@@ -406,3 +406,14 @@ FeaturedCase → WorkStage → PortalHome → PortalShot. Text describes the rea
 ## Agent Ops case V2 · 31.10.2026
 
 `AgentCase` composes existing MetaList, typography, motion attributes, MediaZoom and CaseNext with documentary `AgentShot` figures; `AgentHome` supplies the Agent-only WorkStage composition. Details and map: `ds/screens/case-agent-ops.md` §Portfolio V2. On native screenshot crops, 24 CSS px of the sampled product canvas separates the header/customer text from the media boundary; source pixels remain unchanged. Mobile avoids a second enclosing field, desktop plates use space-6 and captions use flow-pair. Headings and captions never overlay UI. Whole long native screens remain available in the shared zoom. No token or shared motion change.
+## Learn V2 editorial composition · 31.10.2026
+
+Light native portfolio cover: identity and two-path thesis above a dominant Home
+capture, with separate Material and Trajectory details. White case sheet:
+archival entry → two journeys → Reference/Player contexts and optional existing
+content-model diagram → programme and explicit completion → two account states →
+assessment and source-based recovery → trade-off/next validation and verified
+product links. Text precedes its proof and never overlays UI. Mobile uses native
+390 px captures or named desktop details, never a whole desktop billboard.
+Shared content diagram remains a native disclosure to avoid forcing a long graph
+into the skim layer. Only Learn is dispatched to this renderer.

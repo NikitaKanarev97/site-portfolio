@@ -1,0 +1,182 @@
+---
+import LearnShot from './LearnShot.astro';
+import MetaList from '../MetaList.astro';
+import CaseScreen from '../CaseScreen.astro';
+import Diagram from '../Diagram.astro';
+import CaseNext from '../CaseNext.astro';
+import TextLink from '../TextLink.astro';
+import { learnContentModel } from '../../data/diagrams/learn/content-model';
+import type { LearnCaseCopy } from '../../copy/cases/learn-v2';
+import type { CaseTheme } from '../../copy/cases/story';
+interface Props { copy: LearnCaseCopy; locale: 'en' | 'ru'; next: { href: string; title: string; theme: CaseTheme; label: string } }
+const { copy: c, locale, next } = Astro.props;
+const { problem, paths, shared, guided, workspace, assessment, outcome } = c;
+const externalLabel = locale === 'ru' ? 'Откроется в новой вкладке' : 'Opens in a new tab';
+---
+<div class="learn-case" id="case-learn" data-h="case" data-story-version="learn-v2">
+  <section class="learn-cover" id="learn-cover" aria-labelledby="learn-title" data-case-cover="case-learn" transition:name="case-learn" transition:animate="initial">
+    <div class="ds-container learn-cover__inner" data-motion-intro>
+      <header class="learn-cover__head">
+        <p class="ds-meta-sm learn-label">{c.eyebrow}</p>
+        <h1 id="learn-title" class="ds-display-6xl" data-motion="lines">{c.title}</h1>
+        <p class="ds-heading-2xl learn-cover__promise" data-motion="fade">{c.promise}</p>
+        <p class="ds-body-lg learn-cover__lead">{c.lead}</p>
+        <div class="learn-cover__preview"><TextLink type="arrow" href={c.previewHref} external externalLabel={externalLabel}>{c.preview}</TextLink><span class="ds-body-sm learn-muted">{c.previewNote}</span></div>
+      </header>
+      <div class="learn-cover__stage">
+        <div class="learn-cover__home"><LearnShot shot={c.hero.home} loading="eager" /></div>
+        <div class="learn-cover__answer"><LearnShot shot={c.hero.answer} loading="eager" /></div>
+        <div class="learn-cover__path"><LearnShot shot={c.hero.path} loading="eager" /></div>
+      </div>
+      <p class="ds-body-sm learn-cover__note">{c.imageNote}</p>
+    </div>
+  </section>
+  <div class="learn-sheet">
+    <div class="ds-container learn-facts">
+      <MetaList layout="facts" items={c.facts} />
+      <p class="ds-body-base learn-origin">{c.origin}</p>
+      <nav class="learn-index" aria-label={c.navLabel}>{['problem', 'shared-material', 'guided-path', 'assessment'].map((id, i) => <a class="ds-body-sm" href={`#${id}`}>{c.nav[i]}</a>)}</nav>
+    </div>
+
+    <section class="ds-container learn-section" id="problem" aria-labelledby="problem-title">
+      <div class="learn-problem">
+        <div class="learn-copy"><p class="ds-meta-sm learn-label">{problem.label}</p><h2 id="problem-title" class="ds-heading-3xl" data-motion="fade">{problem.title}</h2><p class="ds-body-lg learn-body">{problem.body}</p></div>
+        <figure class="learn-archive" data-motion="fade-image"><p class="ds-body-sm learn-muted">{problem.archive}</p><CaseScreen item={{ src: '/media/case-learn/before-catalog.webp', alt: problem.archiveAlt, device: 'panel' }} /><figcaption class="ds-body-sm learn-muted">{problem.caption}</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="learn-paths" id="entry-paths" aria-labelledby="paths-title">
+      <div class="ds-container">
+        <div class="learn-head"><p class="ds-meta-sm learn-label">{paths.label}</p><h2 id="paths-title" class="ds-heading-4xl" data-motion="fade">{paths.title}</h2></div>
+        <div class="learn-two-paths">{[paths.reference, paths.learning].map((path, i) => <div class="learn-route" data-motion="rise"><span class="ds-meta-sm learn-muted">{path.label}</span><h3 class="ds-heading-2xl">{path.title}</h3><p class="ds-body-lg learn-body">{path.text}</p><span class="ds-meta-sm learn-route__key" aria-hidden="true">{i === 0 ? '01' : '02'}</span></div>)}</div>
+      </div>
+    </section>
+
+    <section class="ds-container learn-section" id="shared-material" aria-labelledby="shared-title">
+      <div class="learn-head"><p class="ds-meta-sm learn-label">{shared.label}</p><div class="learn-copy"><h2 id="shared-title" class="ds-heading-3xl" data-motion="fade">{shared.title}</h2><p class="ds-body-lg learn-body">{shared.body}</p></div></div>
+      <div class="learn-contexts">
+        <div class="learn-contexts__reference"><LearnShot shot={shared.reference} /></div>
+        <div class="learn-contexts__rule"><p class="ds-heading-3xl">{shared.rule}</p></div>
+        <div class="learn-contexts__player"><LearnShot shot={shared.player} /></div>
+      </div>
+      <details class="learn-model"><summary class="ds-body-lg">{shared.diagram}</summary><div class="learn-model__canvas"><Diagram data={learnContentModel} lang={locale} /></div></details>
+    </section>
+
+    <section class="ds-container learn-section" id="guided-path" aria-labelledby="guided-title">
+      <div class="learn-head"><p class="ds-meta-sm learn-label">{guided.label}</p><div class="learn-copy"><h2 id="guided-title" class="ds-heading-3xl" data-motion="fade">{guided.title}</h2><p class="ds-body-lg learn-body">{guided.body}</p></div></div>
+      <div class="learn-guided">
+        <div class="learn-plate"><LearnShot shot={{ ...guided.path, caption: guided.pathCaption }} /></div>
+        <div class="learn-completion"><h3 class="ds-heading-2xl">{guided.actionTitle}</h3><p class="ds-body-base learn-body">{guided.actionBody}</p><CaseScreen item={{ src: `/media/rebuild/learn${locale === 'ru' ? '-ru' : ''}/completion-mobile.webp`, nativeWidth: 390, alt: guided.actionAlt, device: 'panel' }} /></div>
+      </div>
+    </section>
+
+    <section class="learn-workspace" id="workspace" aria-labelledby="workspace-title">
+      <div class="ds-container learn-section">
+        <div class="learn-head"><p class="ds-meta-sm learn-label">{workspace.label}</p><div class="learn-copy"><h2 id="workspace-title" class="ds-heading-3xl" data-motion="fade">{workspace.title}</h2><p class="ds-body-lg learn-body">{workspace.body}</p></div></div>
+        <div class="learn-accounts"><div class="learn-accounts__learner"><LearnShot shot={workspace.learner} /><div class="learn-learner-records"><LearnShot shot={{ desktop: 'learner-records', alt: workspace.learner.alt }} /></div></div><div class="learn-accounts__reader"><LearnShot shot={workspace.reader} /><div class="learn-reader-detail"><LearnShot shot={workspace.readerDetail} /></div></div></div>
+      </div>
+    </section>
+
+    <section class="ds-container learn-section" id="assessment" aria-labelledby="assessment-title">
+      <div class="learn-head"><p class="ds-meta-sm learn-label">{assessment.label}</p><div class="learn-copy"><h2 id="assessment-title" class="ds-heading-3xl" data-motion="fade">{assessment.title}</h2><p class="ds-body-lg learn-body">{assessment.body}</p></div></div>
+      <div class="learn-results"><LearnShot shot={assessment.failed} /><div class="learn-results__passed"><LearnShot shot={assessment.passed} /><p class="ds-body-sm learn-muted">{assessment.scoreNote}</p></div></div>
+      <div class="learn-recovery"><div class="learn-copy"><h3 class="ds-heading-2xl">{assessment.reviewTitle}</h3><p class="ds-body-base learn-body">{assessment.reviewBody}</p></div><LearnShot shot={assessment.review} /></div>
+    </section>
+
+    <section class="ds-container learn-section" id="outcome" aria-labelledby="outcome-title">
+      <div class="learn-outcome">
+        <div class="learn-copy"><p class="ds-meta-sm learn-label">{outcome.label}</p><h2 id="outcome-title" class="ds-heading-4xl" data-motion="fade">{outcome.title}</h2><p class="ds-body-lg learn-body">{outcome.body}</p></div>
+        <dl class="learn-outcome__details">{[{ label: outcome.tradeLabel, text: outcome.trade }, { label: outcome.nextLabel, text: outcome.next }].map(item => <div><dt class="ds-heading-xl">{item.label}</dt><dd class="ds-body-base learn-body">{item.text}</dd></div>)}</dl>
+        <div class="learn-outcome__links"><TextLink type="arrow" href={c.previewHref} external externalLabel={externalLabel}>{outcome.cta}</TextLink><TextLink type="arrow" href={outcome.landingHref} external externalLabel={externalLabel}>{outcome.landing}</TextLink><p class="ds-body-sm learn-muted">{outcome.note}</p></div>
+      </div>
+    </section>
+  </div>
+  <CaseNext {...next} transitionKey={`case-${next.theme}`} />
+</div>
+<style>
+  :global(main:has(> .learn-case)) { padding-block-start: 0; }
+  .learn-cover { background: var(--surface-subtle); }
+  .learn-cover__inner { display: grid; gap: var(--flow-node); padding-block: var(--flow-group); }
+  .learn-cover__head { display: grid; gap: var(--flow-text); }
+  .learn-cover__head h1 { margin: 0; }
+  .learn-cover__promise { white-space: pre-line; max-inline-size: 28ch; }
+  .learn-cover__lead { max-inline-size: var(--measure-case); color: var(--text-subtle); }
+  .learn-cover__preview { display: grid; gap: var(--flow-pair); align-content: start; }
+  .learn-cover__stage { display: grid; gap: var(--flow-text); align-items: center; }
+  .learn-cover__home, .learn-cover__answer, .learn-cover__path { min-inline-size: 0; }
+  .learn-cover__answer, .learn-cover__path { display: none; }
+  .learn-cover__note { color: var(--text-subtle); max-inline-size: var(--measure-text); }
+  .learn-sheet { --learn-step: var(--space-24); padding-block-end: var(--learn-step); }
+  .learn-sheet > * + * { margin-block-start: var(--learn-step); }
+  .learn-facts { display: grid; gap: var(--flow-text); padding-block-start: var(--flow-group); }
+  .learn-origin { max-inline-size: var(--measure-lead); color: var(--text-subtle); }
+  .learn-index { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-6); }
+  .learn-index a { display: flex; min-block-size: var(--space-12); align-items: center; color: var(--text-link); text-underline-offset: var(--space-1); }
+  .learn-index a:active { color: var(--text-link-pressed); }
+  .learn-label, .learn-muted { color: var(--text-subtle); }
+  .learn-body { color: var(--text-subtle); max-inline-size: var(--measure-case); }
+  .learn-section { scroll-margin-block-start: var(--flow-node); }
+  .learn-section > * + * { margin-block-start: var(--flow-group); }
+  .learn-copy, .learn-head { display: grid; gap: var(--flow-text); align-content: start; }
+  .learn-copy h2, .learn-head h2 { max-inline-size: 28ch; text-wrap: balance; white-space: pre-line; }
+  .learn-problem { display: grid; gap: var(--flow-group); align-items: center; }
+  .learn-archive { display: grid; gap: var(--flow-pair); min-inline-size: 0; }
+  .learn-paths, .learn-workspace { background: var(--surface-subtle); padding-block: var(--flow-block); }
+  .learn-paths h2 { white-space: pre-line; }
+  .learn-two-paths { display: grid; gap: var(--flow-group); margin-block-start: var(--flow-group); }
+  .learn-route { position: relative; display: grid; gap: var(--flow-pair); padding-block-start: var(--flow-text); padding-inline-end: var(--space-8); border-block-start: var(--border-width) solid var(--border-strong); }
+  .learn-route__key { position: absolute; inset-inline-end: 0; inset-block-start: var(--flow-text); color: var(--text-muted); }
+  .learn-contexts { display: grid; gap: var(--flow-node); }
+  .learn-contexts__rule { padding-block: var(--flow-text); max-inline-size: 18ch; }
+  .learn-contexts__reference, .learn-contexts__player { padding: var(--space-4); background: var(--surface-subtle); border-radius: var(--radius-media); min-inline-size: 0; }
+  .learn-model { border-block: var(--border-width) solid var(--border-default); }
+  .learn-model summary { padding-block: var(--flow-text); cursor: pointer; }
+  .learn-model summary:active { color: var(--text-link-pressed); }
+  .learn-model__canvas { padding-block-end: var(--flow-text); }
+  .learn-guided { display: grid; gap: var(--flow-group); align-items: start; }
+  .learn-plate { padding: var(--space-4); background: var(--surface-subtle); border-radius: var(--radius-media); }
+  .learn-completion { display: grid; gap: var(--flow-text); align-content: start; min-inline-size: 0; }
+  .learn-accounts { display: grid; gap: var(--flow-group); align-items: start; }
+  .learn-accounts__reader, .learn-accounts__learner { display: grid; gap: var(--flow-text); min-inline-size: 0; }
+  .learn-learner-records { display: none; }
+  .learn-results { display: grid; gap: var(--flow-group); align-items: start; }
+  .learn-results__passed { display: grid; gap: var(--flow-text); min-inline-size: 0; }
+  .learn-recovery { display: grid; gap: var(--flow-text); align-items: center; }
+  .learn-outcome { display: grid; gap: var(--flow-group); padding: var(--space-6); background: var(--surface-subtle); border-radius: var(--radius-media); }
+  .learn-outcome__details { display: grid; gap: var(--flow-node); }
+  .learn-outcome__details > div { display: grid; gap: var(--flow-pair); }
+  .learn-outcome__links { display: flex; flex-wrap: wrap; gap: var(--flow-text) var(--space-8); align-items: center; }
+  .learn-outcome__links > p { flex-basis: 100%; }
+  @media (--can-hover) { .learn-index a:hover { color: var(--text-link-hover); } .learn-model summary:hover { color: var(--text-link-hover); } }
+  @media (--bp-md) {
+    .learn-cover__stage { grid-template-columns: minmax(0, 3fr) minmax(0, 1fr); gap: var(--space-8); align-items: start; }
+    .learn-cover__home { grid-column: 1; grid-row: 1 / 3; }
+    .learn-cover__answer { display: block; grid-column: 2; }
+    .learn-cover__path { display: block; grid-column: 2; justify-self: end; }
+    .learn-cover__path :global(.learn-shot) { max-inline-size: calc(var(--space-48) + var(--space-16)); }
+    .learn-two-paths { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-16); }
+    .learn-contexts__reference, .learn-contexts__player, .learn-plate { padding: var(--space-6); }
+    .learn-contexts { grid-template-columns: minmax(0, 3fr) minmax(0, 1fr); align-items: center; }
+    .learn-contexts__player { grid-column: 1 / -1; }
+    .learn-reader-detail { display: none; }
+    .learn-learner-records { display: block; }
+    .learn-results { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-8); }
+    .learn-outcome { padding: var(--space-12); }
+  }
+  @media (--bp-lg) {
+    .learn-sheet { --learn-step: var(--space-32); }
+    .learn-cover__head { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--flow-text) var(--space-16); align-items: start; }
+    .learn-cover__head > .learn-label { grid-column: 1 / -1; }
+    .learn-cover__promise { align-self: center; }
+    .learn-cover__preview { align-self: center; }
+    .learn-head { grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: var(--gutter); }
+    .learn-head > .learn-label { padding-block-start: var(--space-2); }
+    .learn-head > h2 { max-inline-size: 22ch; }
+    .learn-problem { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: var(--space-16); }
+    .learn-guided { grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: var(--space-12); }
+    .learn-accounts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-8); }
+    .learn-recovery { grid-template-columns: minmax(0, 3fr) minmax(0, 7fr); gap: var(--space-12); }
+    .learn-outcome { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--flow-group) var(--space-16); }
+    .learn-outcome__links { grid-column: 1 / -1; }
+  }
+</style>

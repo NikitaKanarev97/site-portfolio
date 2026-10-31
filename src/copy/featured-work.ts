@@ -6,13 +6,13 @@ export function featuredWork(entries: { slug: string; story: CaseStory; theme: C
   const facts: Record<string, [string, string, string]> = ru ? {
     'agent-ops-console': ['2026', 'Платный заказ · прототип проверен и принят', 'Контроль решений ИИ, у которых есть реальные последствия.'],
     'partner-portal': ['2024–2026', 'Продуктовый дизайн · подбор товаров и оформление заказа', 'Сначала подобрать товар по исходной строке, затем оформить заказ.'],
-    learn: ['2026', 'Продуктовый дизайн · справочник и учебные сценарии', 'Один материал — быстрый ответ и часть учебной программы.'],
+    learn: ['2026', 'Продуктовый дизайн · справочник и учебные сценарии', 'Одна база знаний. Два пути к результату.'],
     'vet-clinic': ['2026', 'Продуктовый дизайн · ролевые сценарии клиники', 'Один визит связывает врача, регистратуру и владельца.'],
     pawly: ['2026', 'Продуктовый дизайн · передача питомца и выплаты', 'Выбранное фото становится подтверждением после отправки.'],
   } : {
     'agent-ops-console': ['2026', 'Paid client · user-tested, accepted prototype', 'Human oversight for AI decisions with real consequences.'],
     'partner-portal': ['2024–2026', 'Product design · product matching and ordering', 'Match a product to the source row, then place the order.'],
-    learn: ['2026', 'Product design · reference and learning flows', 'One material serves an answer and a learning path.'],
+    learn: ['2026', 'Product design · reference and learning flows', 'One knowledge system. Two ways to learn.'],
     'vet-clinic': ['2026', 'Product design · clinic role flows', 'One visit connects the vet, reception and owner.'],
     pawly: ['2026', 'Product design · pet handover and earnings', 'A selected photo becomes proof after it is sent.'],
   };

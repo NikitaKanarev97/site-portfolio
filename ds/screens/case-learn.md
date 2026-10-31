@@ -69,3 +69,40 @@ Assessment и Landing EN/RU сняты целыми native DOM-областям�
 ## Технические исправления владельца · 04.10.2026
 
 Новые кадры сохраняют родные голубые поля со всех сторон. Ответ показывает целый первый диагностический раздел; завершение — целый финальный раздел и действие, без обрезанной строки программы. Assessment имеет 32px родного поля до заголовка и после правил. Landing заканчивается на границе hero, до следующего заголовка. TrustHeader и ProgressMeter сняты целиком с прозрачностью внешних углов; внутренние стили продукта сохранены. Архивный каталог заканчивается после первого полного ряда карточек. Источники, границы и hashes — tasks/technical-fixes/captures.json.
+## V2 · 31.10.2026 · implementation for independent review
+
+This section supersedes the historical composition below for `/work/learn/` and
+`/ru/work/learn/`. New case-scoped renderer: `src/components/learn/LearnCase.astro`.
+Shared renderer, tokens, motion registry, adjacent cases and route order remain.
+Copy: `src/copy/cases/learn-v2.ts`, RU export in `src/copy/ru/cases/learn-v2.ts`.
+Prepared task/storyboard constitute the owner's implementation authorization.
+This implementation is not design acceptance.
+
+| Beat | Composition / evidence | Responsive behaviour |
+|---|---|---|
+| 00 Hero | Light native surface, strong title, two-path thesis; dominant real Home, separate Material and Trajectory details; verified reference-library CTA | Native Home mobile crop; supporting details omitted below md |
+| 01 Problem | Original archive untouched, alongside concise task argument | Image follows prose; zoom preserves full archive |
+| 02 Paths | Two editorial descriptions of reference and learning jobs | Stacked below md; no simulated product controls |
+| 03 Architecture | ONVIF Reference and archive-depth Player as explicitly different examples; opening ≠ completion; original content-model graph | Native mobile sources; graph behind keyboard-accessible native details |
+| 04 Preparation | Programme purpose/curriculum detail; explicit completion detail from previous working build | Programme mobile capture shows progress/continue; completion uses readable native 390 capture in both layouts |
+| 05 Workspace | Learner continuation + count detail versus reader's separate records | Native learner mobile, full reader history/programme detail stack |
+| 06 Assessment | Failed result with cooldown vs passed score region; read-only recovery linked to source | Native failed/passed mobile score regions; focused wrong-answer/source detail |
+| 07 Outcome | Connected flows, deliberate-completion trade-off, next human/expert validation, verified live reference and landing links | Stacked content; shared localized CaseNext to Vet |
+
+New published crops: `public/media/case-learn-v2/`, lossless WebP, 22 files (~505 KB).
+Reproduce: `node scripts/learn-v2/media.mjs` with dev server stopped on Windows
+(libvips may retain read handles). Exact source rectangles: `src/data/learn-v2-media.json`.
+All 23 prepared PNG originals remain unchanged in the audit folder. Selected
+RU source captures are never represented as translated EN or one integrated
+release. Original disclaimer-containing areas of programme/account/result screens
+are outside the published semantic crops; nothing is retouched. Passed result
+shows score only, not a fabricated document area. Completion uses unchanged
+earlier localized captures and identifies their provenance in visible copy.
+
+Home: Learn-only `LearnHome` composition in WorkStage, localized two-path thesis,
+native responsive Home crop and one normal case link. EN/RU registry and OG
+identity remain TRASSIR Learn. No change to other WorkStage branches.
+
+Motion: existing lines/fade/rise/fade-image via shared lifecycle. No pin or new
+timings. MediaZoom, Escape/focus return and no-JS image links remain shared.
+Checks and exact before/after evidence: `audit/trassir-learn-case-v2/REPORT.md`.

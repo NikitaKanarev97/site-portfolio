@@ -592,3 +592,13 @@ PortalShot uses intrinsic image height (width:100%, height:auto; picture:block),
 RU homepage correction: from bp-lg, the editorial column has a min-content minimum so Russian nonbreaking phrases preserve the existing space-12 gap to the screenshot. EN grid and typography stay unchanged.
 
 Case-scoped `agent/AgentCase`, `AgentHome`, `AgentShot`: dedicated composition over genuine accepted product captures. The global case renderer and other themes stay unchanged. `AgentShot` uses a responsive picture, real native dimensions from `src/data/agent-ops-v2-media.json`, an existing MediaZoom target, separate caption and optional full-screen inspection link. No image cropping, perspective, UI overlays or independent content animation. `AgentCase`: complete approval task beside the hero thesis, facts, seven numbered editorial sections, historical context metrics, a six-step editorial operating flow, seven product screen types and a tested/accepted outcome. `AgentHome` pairs a modest editorial statement with the actual consequence scene. Existing semantic surface/space/typographic/focus roles only. Media fields: 24 CSS px of captured-product canvas around all isolated native panel crops; no second mobile frame, space-6 neutral field from bp-md; image-to-caption flow-pair; head-to-image flow-node; modules space-24/space-32. Native source corners remain intact. Both locales share structure/media assertions. Capture-only RU string completion is documented in the image provenance; product source is unchanged.
+## Learn V2 · 31.10.2026
+
+`LearnCase` is a case-scoped editorial composition of MetaList, CaseScreen,
+Diagram, TextLink and CaseNext. `LearnShot` supplies source-manifest-backed
+desktop/mobile documentary crops to CaseScreen, with localized alt and a caption
+outside the UI. Its optional home href replaces zoom without nesting links.
+Native screenshot widths cap enlargement. Existing typography, surface, border,
+space and flow roles only; registered lines/fade/rise/fade-image only. Keyboard
+zoom, focus return and reduced-motion behaviour remain owned by shared components.
+Map: screens/case-learn.md §V2. No new global variants or tokens.
