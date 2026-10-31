@@ -66,7 +66,7 @@ export const partnerPortalStoryRu = russianFrames(defineStory({
       },
     },
     {
-      id: 'source-line', type: 'steps', motion: 'focus', evidenceId: 'portal-line', mediaId: 'portal-line',
+      id: 'source-line', type: 'steps', motion: 'static', composition: 'handoff', evidenceId: 'portal-line', mediaId: 'portal-line',
       payload: {
         label: 'Одна строка спецификации',
         items: [
@@ -156,7 +156,7 @@ export const partnerPortalStoryRu = russianFrames(defineStory({
       payload: {
         presentation: 'editorial',
         result: {
-          label: 'Результат', thesis: 'Закупочный сценарий с проверяемыми решениями',
+          label: 'Результат', thesis: 'Закупка с проверяемыми решениями',
           body: 'Коммерческий редизайн был внедрён. Позже я реконструировал и доработал сценарий на синтетических данных для портфолио: экраны показывают продуктовую логику, а не вымышленные метрики после запуска.',
         },
         evidence: {
