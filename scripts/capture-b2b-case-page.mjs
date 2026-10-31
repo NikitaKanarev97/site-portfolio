@@ -19,7 +19,7 @@ for (const locale of ['en', 'ru']) {
     await page.evaluate(() => window.scrollTo(0, 0));
     await page.waitForTimeout(700);
     const checks = await page.evaluate(() => {
-      const allImgs = [...document.images];
+      const allImgs = [...document.images].filter(i => i.getAttribute('src')?.trim());
       return {
         viewportWidth: window.innerWidth, scrollWidth: document.documentElement.scrollWidth,
         missingImages: allImgs.filter(i => !i.complete || i.naturalWidth === 0).map(i => i.getAttribute('src')).slice(0, 25),
