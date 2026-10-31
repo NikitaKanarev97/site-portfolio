@@ -92,6 +92,7 @@ const { outcome } = copy;
   .agent-plate { display: grid; justify-items: center; min-inline-size: 0; border-radius: var(--radius-media); }
   .agent-note { max-inline-size: var(--measure-text); padding-inline-start: var(--space-6); border-inline-start: var(--border-width) solid var(--border-strong); color: var(--text-subtle); }
   .agent-outcome { display: grid; gap: var(--flow-group); padding: var(--space-6); background: var(--surface-subtle); border-radius: var(--radius-media); }
+  .agent-outcome > * { min-inline-size: 0; overflow-wrap: anywhere; }
   .agent-outcome__lead { display: grid; align-content: start; gap: var(--flow-text); }
   .agent-outcome__lead h2 { margin: 0; max-inline-size: 20ch; }
   .agent-outcome__details { display: grid; gap: var(--flow-node); margin: 0; }
