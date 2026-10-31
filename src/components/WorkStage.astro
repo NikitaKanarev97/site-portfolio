@@ -2,6 +2,7 @@
 import CaseScreen from './CaseScreen.astro';
 import LearnStage from './LearnStage.astro';
 import VetStage from './VetStage.astro';
+import PortalHome from './portal/PortalHome.astro';
 import { caseArt } from '../copy/case-art';
 import type { CaseTheme, CoverMedia, ShotItem } from '../copy/cases/story';
 interface Props {
@@ -19,7 +20,7 @@ const shots = media.variant === 'proof' ? media.panels ?? [media.shot] : media.v
 const visibleShots: ShotItem[] = theme === 'pawly' ? shots.slice(-1) : shots;
 ---
 <div class:list={['work-stage', `work-stage--${theme}`, `work-stage--${usage}`]} data-focus-tone={theme === 'agent' || theme === 'learn' ? 'inverse' : undefined} data-motion={theme === 'agent' && usage === 'cover' ? 'cover-interlock' : undefined}>
-  {theme === 'learn' ? <LearnStage locale={locale} loading={loading} href={href} linkLabel={linkLabel} /> : theme === 'vet' ? <VetStage locale={locale} loading={loading} href={href} linkLabel={linkLabel} /> : <>
+  {theme === 'portal' && usage === 'home' ? <PortalHome locale={locale} loading={loading} /> : theme === 'learn' ? <LearnStage locale={locale} loading={loading} href={href} linkLabel={linkLabel} /> : theme === 'vet' ? <VetStage locale={locale} loading={loading} href={href} linkLabel={linkLabel} /> : <>
   {theme === 'portal' && <div class="work-stage__annotation">
     <p class="ds-display-7xl work-stage__figure">38</p>
     <p class="ds-body-base work-stage__detail">{art.detail}</p>
@@ -56,7 +57,7 @@ const visibleShots: ShotItem[] = theme === 'pawly' ? shots.slice(-1) : shots;
   .work-stage__photo { margin: 0; display: grid; gap: var(--space-3); }
   .work-stage__photo img { display: block; inline-size: 100%; block-size: auto; border-radius: var(--radius-lg); }
   .work-stage--pawly .work-stage__panel { inline-size: 100%; }
-  .work-stage--portal { padding: var(--stage-inset); border-radius: var(--radius-lg); background: var(--surface-cover-portal); color: var(--text-default); }
+  .work-stage--portal.work-stage--cover { padding: var(--stage-inset); border-radius: var(--radius-lg); background: var(--surface-cover-portal); color: var(--text-default); }
   .work-stage--home.work-stage--learn { padding:var(--stage-inset); border-radius:var(--radius-lg); background:var(--surface-cover-learn); color:var(--text-on-inverse); }
   @media (--below-bp-md) {
     .work-stage__annotation { grid-template-columns: auto 1fr; align-items: center; column-gap: var(--space-6); }
@@ -70,7 +71,7 @@ const visibleShots: ShotItem[] = theme === 'pawly' ? shots.slice(-1) : shots;
     .work-stage__reviewer { inline-size: var(--space-12); block-size: var(--space-12); }
   }
   @media (--bp-lg) {
-    .work-stage--portal { grid-template-columns: minmax(0,1fr) minmax(0,4fr); gap: var(--space-8); align-items: start; }
+    .work-stage--portal.work-stage--cover { grid-template-columns: minmax(0,1fr) minmax(0,4fr); gap: var(--space-8); align-items: start; }
     .work-stage--pawly { grid-template-columns: minmax(0,2fr) minmax(0,1fr); gap: var(--space-8); align-items: start; }
     .work-stage--pawly .work-stage__panel { max-inline-size: calc(var(--space-48) * 2); }
     .work-stage--pawly .work-stage__photo, .work-stage--pawly .work-stage__screens { align-self: start; }

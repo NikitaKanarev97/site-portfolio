@@ -71,9 +71,9 @@ export const portalCaseEn: PortalCaseCopy = {
       alt: 'Review specification for office_north_v8.xlsx: 41 of 48 lines confirmed, seven open lines marked Ambiguous, Missing or Changed, each with its source row and next action',
     },
     detail: {
-      desktop: 'change-390',
+      desktop: 'change-detail-390',
       label: 'Cart · a changed price waits for approval on its source row',
-      alt: 'Cart line for source row 19: price moved from ₽34,900 to ₽35,800, +2.6%, with the impact on the line and Accept change or Remove line',
+      alt: 'Native price-change detail for source row 19: ₽34,900 to ₽35,800, +2.6%, with its supplier-update reason',
     },
     note: 'Real product screens · synthetic data',
   },
@@ -81,7 +81,7 @@ export const portalCaseEn: PortalCaseCopy = {
     { term: 'Role', value: 'Sole product designer · research, IA, UX/UI, design system' },
     { term: 'Period', value: '2024–2026' },
     { term: 'Status', value: 'Redesign shipped at DSSL · rebuilt here on synthetic data' },
-    { term: 'Prototype', value: 'Live product, EN and RU', href: PROTOTYPE_EN },
+    { term: 'Prototype', value: 'Public version · predates these screens', href: PROTOTYPE_EN },
   ],
   problem: {
     label: '01 · Problem',
@@ -148,9 +148,9 @@ export const portalCaseEn: PortalCaseCopy = {
   commerce: {
     label: '05 · Commercial review',
     thesis: 'Uncertainty must never look like a price.',
-    body: 'A price that moved after import waits on its own line for the buyer’s approval — see the cover. A missing price stays “Not confirmed”, leaves the total and blocks fulfillment. It never becomes zero.',
+    body: 'A price that moved after import waits on its own line for the buyer’s approval. A missing price stays “Not confirmed”, leaves the total and blocks fulfillment. It never becomes zero.',
     line: {
-      desktop: 'unpriced-1280', mobile: 'unpriced-390',
+      desktop: 'commerce-sheet-1280', mobile: 'commerce-sheet-390',
       alt: 'Cart line for an 8 MP dome camera: price and line total Not confirmed, with a note that the line is not in the total and a Remove line action',
       caption: 'An unpriced line says so, and offers a way forward',
     },
@@ -180,7 +180,7 @@ export const portalCaseEn: PortalCaseCopy = {
       { term: 'Unknown is not zero', text: 'Unpriced lines stay out of the total until a manager quotes them.' },
       { term: 'Delivery is priced last', text: 'Its cost appears only once a fulfillment plan is chosen.' },
     ],
-    cta: { label: 'Open the live prototype', href: PROTOTYPE_EN, note: 'Synthetic data · desktop and mobile · EN and RU' },
+    cta: { label: 'Open the public version', href: PROTOTYPE_EN, note: 'The public version predates the screens shown here · synthetic data' },
   },
 };
 

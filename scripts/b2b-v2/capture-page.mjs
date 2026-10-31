@@ -9,7 +9,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 const { chromium } = await import(process.env.PW ?? 'playwright');
 
 const [origin = 'http://127.0.0.1:4391', phase = 'after'] = process.argv.slice(2);
-const out = `audit/b2b-case-v2/qa/${phase}`;
+const out = process.env.QA_OUT ?? `audit/b2b-case-v2/qa/${phase}`;
 await mkdir(out, { recursive: true });
 const browser = await chromium.launch();
 const checks = [];

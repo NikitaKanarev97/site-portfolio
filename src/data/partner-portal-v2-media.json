@@ -17,8 +17,8 @@
   "en/workspace-top-390": {
     "src": "/media/rebuild/partner-portal/v2/en/workspace-top-390.webp",
     "width": 390,
-    "height": 539,
-    "bytes": 40756,
+    "height": 525,
+    "bytes": 40620,
     "source": "audit/b2b-case-v2/captures/en/workspace-top-390.png",
     "route": "/resolution-center",
     "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
@@ -26,7 +26,7 @@
       "x": 0,
       "y": 0,
       "width": 390,
-      "height": 539
+      "height": 525
     }
   },
   "en/change-390": {
@@ -272,8 +272,8 @@
   "ru/workspace-top-390": {
     "src": "/media/rebuild/partner-portal/v2/ru/workspace-top-390.webp",
     "width": 390,
-    "height": 575,
-    "bytes": 45834,
+    "height": 561,
+    "bytes": 45710,
     "source": "audit/b2b-case-v2/captures/ru/workspace-top-390.png",
     "route": "/ru/resolution-center",
     "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
@@ -281,7 +281,7 @@
       "x": 0,
       "y": 0,
       "width": 390,
-      "height": 575
+      "height": 561
     }
   },
   "ru/change-390": {
@@ -508,5 +508,71 @@
       "width": 390,
       "height": 956
     }
+  },
+  "en/commerce-sheet-1280": {
+    "src": "/media/rebuild/partner-portal/v2/en/commerce-sheet-1280.webp",
+    "width": 1054,
+    "height": 200,
+    "bytes": 33600,
+    "source": "audit/b2b-case-v21/captures/en/commerce-sheet-1280.png",
+    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
+    "route": "http://127.0.0.1:5193/b2b/cart"
+  },
+  "en/change-detail-390": {
+    "src": "/media/rebuild/partner-portal/v2/en/change-detail-390.webp",
+    "width": 324,
+    "height": 91,
+    "bytes": 11550,
+    "source": "audit/b2b-case-v21/captures/en/change-detail-390.png",
+    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
+    "route": "http://127.0.0.1:5193/b2b/cart/change-review",
+    "clip": {
+      "x": 33,
+      "y": 5160,
+      "width": 324,
+      "height": 91
+    }
+  },
+  "en/commerce-sheet-390": {
+    "src": "/media/rebuild/partner-portal/v2/en/commerce-sheet-390.webp",
+    "width": 398,
+    "height": 465,
+    "bytes": 41818,
+    "source": "audit/b2b-case-v21/captures/en/commerce-sheet-390.png",
+    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
+    "route": "http://127.0.0.1:5193/b2b/cart"
+  },
+  "ru/commerce-sheet-1280": {
+    "src": "/media/rebuild/partner-portal/v2/ru/commerce-sheet-1280.webp",
+    "width": 1054,
+    "height": 200,
+    "bytes": 39690,
+    "source": "audit/b2b-case-v21/captures/ru/commerce-sheet-1280.png",
+    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
+    "route": "http://127.0.0.1:5193/b2b/ru/cart"
+  },
+  "ru/change-detail-390": {
+    "src": "/media/rebuild/partner-portal/v2/ru/change-detail-390.webp",
+    "width": 324,
+    "height": 91,
+    "bytes": 11232,
+    "source": "audit/b2b-case-v21/captures/ru/change-detail-390.png",
+    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
+    "route": "http://127.0.0.1:5193/b2b/ru/cart/change-review",
+    "clip": {
+      "x": 33,
+      "y": 5248,
+      "width": 324,
+      "height": 91
+    }
+  },
+  "ru/commerce-sheet-390": {
+    "src": "/media/rebuild/partner-portal/v2/ru/commerce-sheet-390.webp",
+    "width": 398,
+    "height": 465,
+    "bytes": 47950,
+    "source": "audit/b2b-case-v21/captures/ru/commerce-sheet-390.png",
+    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
+    "route": "http://127.0.0.1:5193/b2b/ru/cart"
   }
 }

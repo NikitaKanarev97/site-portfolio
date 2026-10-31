@@ -576,3 +576,9 @@ Navbar использует Images/logo-portfolio-v4.svg. BaseLayout — favicon
 - **PortalCase** (`src/components/portal/PortalCase.astro`) — рендер кейса V2: обложка на `surface-cover-portal` (текст на чистом цвете, кадры ниже), лист с `MetaList layout=facts`, модули «метка | тезис + текст» на 12 колонках, одна тёмная полоса `surface-plate-dark`, итог с CTA прототипа, общий `CaseNext`. Токены и роли типографики — только из ДС. Движение — зарегистрированные `lines`, `fade`, `fade-image`, `rise` и `data-motion-intro`; новых движений нет.
 - **PortalShot** (`src/components/portal/PortalShot.astro`) — один кадр продукта: `<picture>` с подлинным 390-px кадром ниже bp-md, рамка `border-default` + `radius-md`, подпись под кадром. Варианты `frame` (умолчание) и `strip` (однострочный макро). Кадр не растягивается шире документальной ширины (`--shot-native`, как `ShotItem.nativeWidth`). Компонент не кадрирует: кроп — граница DOM-узла на съёмке.
 - Доступность: у каждого кадра полный alt по содержимому; заголовки модулей h2 со связью `aria-labelledby`; CTA — внешняя ссылка с видимым фокусом.
+
+
+## Portal V2.1 · 31.10.2026
+
+- PortalHome (`src/components/portal/PortalHome.astro`): dedicated FeaturedCase composition over accepted row-19 evidence; editorial progress 41/48, two-candidate comparison on desktop, real mobile review on phones. Semantic surface-portal-editorial, existing typography/spacing, parent stretched case link. No new interactions.
+- PortalCase: cool neutral hero and commercial band; desktop single dominant workspace plus complete native DeltaRow inset. Mobile prioritises one workspace. Commerce centres complete cart-line parent and summary at native widths, with uniform native canvas fields. Verification adds space-8/space-12 above the unchanged interface.

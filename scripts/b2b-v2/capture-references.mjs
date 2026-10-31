@@ -1,12 +1,16 @@
 /**
  * Reference library for the Partner Portal case V2 (private, audit only).
  * PW=<path to playwright/index.mjs> node scripts/b2b-v2/capture-references.mjs
- * Third-party captures stay in audit/; they never ship in the public case.
+ * PRIVATE_REFERENCE_DIR must point outside this public repository.
  */
 import { mkdir } from 'node:fs/promises';
+import { resolve, relative, isAbsolute } from 'node:path';
 const { chromium } = await import(process.env.PW ?? 'playwright');
 
-const out = 'audit/b2b-case-v2/references';
+const out = process.env.PRIVATE_REFERENCE_DIR;
+if (!out) throw new Error('Set PRIVATE_REFERENCE_DIR outside this public repository.');
+const rel = relative(process.cwd(), resolve(out));
+if (!rel.startsWith('..') && !isAbsolute(rel)) throw new Error('Research screenshots must stay outside the public repository.');
 await mkdir(out, { recursive: true });
 const refs = [
   ['linear-hero', 'https://linear.app/', [0, 900]],

@@ -22,3 +22,8 @@ Cookie banners visible in some captures are part of the live pages and irrelevan
 3. **Component-bounded crops.** Every crop is an element capture (a DOM box plus padding), not a fixed rectangle. Nothing can end inside a heading, card or table.
 4. **Native scale.** Each source is captured at the viewport where its component's native width is close to its display width, at DPR 2, so UI text stays legible.
 5. **Mobile is its own composition.** Mobile uses authentic 390 px captures, not a shrunken desktop plate.
+
+
+## Public-tree cleanup · 31 Oct 2026
+
+Third-party screenshot PNGs were removed from the current tracked tree in V2.1; attribution and source URLs remain here. Local research copies are outside the public repository. Earlier commits still contain these files: current-tree deletion does not erase published history. No history rewrite or force-push was performed. Any historical removal requires a separately approved plan. Do not recapture research into this public directory.

@@ -1,0 +1,82 @@
+{
+  "en/commerce-sheet-1280": {
+    "src": "/media/rebuild/partner-portal/v2/en/commerce-sheet-1280.webp",
+    "width": 1054,
+    "height": 200,
+    "bytes": 33600,
+    "source": "audit/b2b-case-v21/captures/en/commerce-sheet-1280.png",
+    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
+    "route": "http://127.0.0.1:5193/b2b/cart",
+    "note": "Full owning cart-line, no altered UI; uniform 20 CSS px native canvas field added around the complete module",
+    "padding": 20,
+    "nativeCanvas": "rgb(247, 249, 252)"
+  },
+  "en/change-detail-390": {
+    "src": "/media/rebuild/partner-portal/v2/en/change-detail-390.webp",
+    "width": 324,
+    "height": 91,
+    "bytes": 11550,
+    "source": "audit/b2b-case-v21/captures/en/change-detail-390.png",
+    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
+    "route": "http://127.0.0.1:5193/b2b/cart/change-review",
+    "clip": {
+      "x": 33,
+      "y": 5160,
+      "width": 324,
+      "height": 91
+    },
+    "note": "Complete native DeltaRow, no parent status edge or adjacent fragments"
+  },
+  "en/commerce-sheet-390": {
+    "src": "/media/rebuild/partner-portal/v2/en/commerce-sheet-390.webp",
+    "width": 398,
+    "height": 465,
+    "bytes": 41818,
+    "source": "audit/b2b-case-v21/captures/en/commerce-sheet-390.png",
+    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
+    "route": "http://127.0.0.1:5193/b2b/cart",
+    "note": "Full owning cart-line, no altered UI; uniform 20 CSS px native canvas field added around the complete module",
+    "padding": 20,
+    "nativeCanvas": "rgb(247, 249, 252)"
+  },
+  "ru/commerce-sheet-1280": {
+    "src": "/media/rebuild/partner-portal/v2/ru/commerce-sheet-1280.webp",
+    "width": 1054,
+    "height": 200,
+    "bytes": 39690,
+    "source": "audit/b2b-case-v21/captures/ru/commerce-sheet-1280.png",
+    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
+    "route": "http://127.0.0.1:5193/b2b/ru/cart",
+    "note": "Full owning cart-line, no altered UI; uniform 20 CSS px native canvas field added around the complete module",
+    "padding": 20,
+    "nativeCanvas": "rgb(247, 249, 252)"
+  },
+  "ru/change-detail-390": {
+    "src": "/media/rebuild/partner-portal/v2/ru/change-detail-390.webp",
+    "width": 324,
+    "height": 91,
+    "bytes": 11232,
+    "source": "audit/b2b-case-v21/captures/ru/change-detail-390.png",
+    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
+    "route": "http://127.0.0.1:5193/b2b/ru/cart/change-review",
+    "clip": {
+      "x": 33,
+      "y": 5248,
+      "width": 324,
+      "height": 91
+    },
+    "note": "Complete native DeltaRow, no parent status edge or adjacent fragments"
+  },
+  "ru/commerce-sheet-390": {
+    "src": "/media/rebuild/partner-portal/v2/ru/commerce-sheet-390.webp",
+    "width": 398,
+    "height": 465,
+    "bytes": 47950,
+    "source": "audit/b2b-case-v21/captures/ru/commerce-sheet-390.png",
+    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
+    "route": "http://127.0.0.1:5193/b2b/ru/cart",
+    "note": "Full owning cart-line, no altered UI; uniform 20 CSS px native canvas field added around the complete module",
+    "padding": 20,
+    "nativeCanvas": "rgb(247, 249, 252)"
+  }
+}

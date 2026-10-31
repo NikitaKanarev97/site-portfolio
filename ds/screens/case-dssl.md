@@ -1,5 +1,9 @@
 # Screen: CaseDSSL
 
+## V2.1 correction · 31.10.2026 (supersedes V2 presentation below)
+
+Seven-section structure, buyer comparison and fulfillment remain. Hero uses surface-portal-editorial; main workspace dominates, complete DeltaRow appears as a compact desktop inset. Mobile shows one complete workspace capture ending at row 19, with no next-row sliver. Commerce uses surface-portal-context and centred complete owning cart-line + decision bar; meaningful native status edge is retained with a uniform 20 px field. Product verification keeps its source with extra top breathing room. Archival Before stays a subordinate historical reference without enlargement. Home uses dedicated PortalHome, not the case hero. Public prototype links explicitly say that the public version predates these screens. QA: audit/b2b-case-v21/.
+
 ## V2 public case · 31.10.2026 (current)
 
 Routes `/work/partner-portal`, `/ru/work/partner-portal`. Renderer `src/components/portal/PortalCase.astro` + `PortalShot.astro` (case-scoped; the shared `CaseStory` stays frozen for the other cases). Copy `src/copy/cases/partner-portal-v2.ts` / `src/copy/ru/cases/partner-portal-v2.ts`, pair-checked by `assertPortalPair`. Media `public/media/rebuild/partner-portal/v2/{en,ru}/`, sizes and sources in `src/data/partner-portal-v2-media.json`. Brief: `tasks/b2b-case-v2/CLAUDE_HANDOFF.md`; references and QA: `audit/b2b-case-v2/`.

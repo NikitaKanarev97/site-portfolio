@@ -67,7 +67,7 @@ const shots = {
     const { context, page } = await open('resolution-center', { locale, width: 390, height: 1400 });
     await markRow(page, 19, 'row');
     const row = await unionBox(page, ['[data-capture="row"]'], 0);
-    return { context, page, clip: { x: 0, y: 0, width: 390, height: Math.round(row.y + row.height + 14) }, note: 'top bar, title, progress, filters, row 19 card' };
+    return { context, page, clip: { x: 0, y: 0, width: 390, height: Math.round(row.y + row.height) }, note: 'top bar, title, progress, filters, complete row 19 card; ends before the next card' };
   },
   /* Commercial change: the row-19 line and its change panel, one object. */
   'change-390': async locale => {

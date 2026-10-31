@@ -18,7 +18,8 @@ const used = [
   'decision-1280', 'decision-390', 'confirmed-1280', 'product-1280', 'product-390',
   'cartbar-1280', 'cartbar-390', 'unpriced-1280', 'unpriced-390', 'confirmed-390', 'fulfillment-1280', 'fulfillment-390',
 ];
-const media = {};
+// Preserve V2.1 entries captured by capture-v21.mjs when rebuilding V2 frames.
+const media = JSON.parse(await readFile('src/data/partner-portal-v2-media.json', 'utf8'));
 for (const locale of ['en', 'ru']) {
   await mkdir(`${OUT}/${locale}`, { recursive: true });
   for (const name of used) {

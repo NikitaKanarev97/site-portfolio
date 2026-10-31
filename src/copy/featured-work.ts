@@ -1,4 +1,4 @@
-import type { CaseStory, CaseTheme } from './cases/story';
+import type { CoverMedia, CaseStory, CaseTheme } from './cases/story';
 
 /** Home and Next share the accepted registry order and the actual story cover. */
 export function featuredWork(entries: { slug: string; story: CaseStory; theme: CaseTheme }[], locale: 'en' | 'ru') {
@@ -18,7 +18,14 @@ export function featuredWork(entries: { slug: string; story: CaseStory; theme: C
   };
   return entries.map(({ slug, story, theme }) => {
     const [year, evidence, outcome] = facts[slug];
-    const media = story.cover.media;
+    const media: CoverMedia = slug === 'partner-portal' ? {
+      variant: 'screen', layout: 'screen', items: [{
+        src: `/media/rebuild/partner-portal/v2/${locale}/decision-1280.webp`,
+        srcNarrow: `/media/rebuild/partner-portal/v2/${locale}/workspace-top-390.webp`,
+        alt: ru ? 'Исходная строка и выбор закупщика в обновлённом разборе спецификации' : 'Source row and the buyer’s choice in the updated specification review',
+        device: 'desktop',
+      }],
+    } : story.cover.media;
     const shots = media.variant === 'proof' ? media.panels ?? [media.shot] : media.variant === 'screen' ? media.items : [];
     return {
       href: `${ru ? '/ru' : ''}/work/${slug}`, title: story.cover.title, outcome,
