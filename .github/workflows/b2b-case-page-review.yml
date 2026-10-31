@@ -35,7 +35,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f audit/b2b-case-refresh/page-review/*.png audit/b2b-case-refresh/page-review/checks.json
+          git add -f audit/b2b-case-refresh/page-review/*.png audit/b2b-case-refresh/page-review/*.webp audit/b2b-case-refresh/page-review/checks.json
           if ! git diff --cached --quiet; then
             git commit -m "test(b2b-case): real-page EN RU screenshots at 1440 and 390"
             git push origin HEAD:portfolio/b2b-case-visual-v1
