@@ -20,25 +20,22 @@ jobs:
         run: npm run build
       - name: Install Chromium
         run: npx --yes playwright@1.56.1 install --with-deps chromium
-      - name: Capture portfolio pages with real Chromium
+      - name: Install screenshot script runtime
+        run: npm install --no-save --package-lock=false playwright@1.56.1
+      - name: Capture portfolio pages with scrolling and overflow checks
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p audit/b2b-case-refresh/page-review
           npm run preview -- --host 127.0.0.1 --port 4321 > /tmp/b2b-preview.log 2>&1 &
           for i in $(seq 1 40); do curl -fsS http://127.0.0.1:4321/work/partner-portal >/dev/null && break || sleep 1; done
-          npx --yes playwright@1.56.1 screenshot --browser chromium --viewport-size='1440,900' --wait-for-timeout=1200 --full-page http://127.0.0.1:4321/work/partner-portal audit/b2b-case-refresh/page-review/en-1440-full.png
-          npx --yes playwright@1.56.1 screenshot --browser chromium --viewport-size='390,844' --wait-for-timeout=1200 --full-page http://127.0.0.1:4321/work/partner-portal audit/b2b-case-refresh/page-review/en-390-full.png
-          npx --yes playwright@1.56.1 screenshot --browser chromium --viewport-size='1440,900' --wait-for-timeout=1200 --full-page http://127.0.0.1:4321/ru/work/partner-portal audit/b2b-case-refresh/page-review/ru-1440-full.png
-          npx --yes playwright@1.56.1 screenshot --browser chromium --viewport-size='390,844' --wait-for-timeout=1200 --full-page http://127.0.0.1:4321/ru/work/partner-portal audit/b2b-case-refresh/page-review/ru-390-full.png
-          file audit/b2b-case-refresh/page-review/*.png
+          node scripts/capture-b2b-case-page.mjs
       - name: Commit visual QA evidence to review branch
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f audit/b2b-case-refresh/page-review/*.png
+          git add -f audit/b2b-case-refresh/page-review/*.png audit/b2b-case-refresh/page-review/checks.json
           if ! git diff --cached --quiet; then
             git commit -m "test(b2b-case): real-page EN RU screenshots at 1440 and 390"
             git push origin HEAD:portfolio/b2b-case-visual-v1
