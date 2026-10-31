@@ -1,4 +1,5 @@
 import { chromium } from 'playwright';
+import sharp from 'sharp';
 import { mkdir, writeFile } from 'node:fs/promises';
 
 const root = 'audit/b2b-case-refresh/page-review';
@@ -32,7 +33,16 @@ for (const locale of ['en', 'ru']) {
         })(),
       };
     });
-    await page.screenshot({ path: root + '/' + locale + '-' + width + '-full.png', fullPage: true, animations: 'disabled' });
+    const png = root + '/' + locale + '-' + width + '-full.png';
+    await page.screenshot({ path: png, fullPage: true, animations: 'disabled' });
+    // Lightweight independent visual review image; original PNG stays intact.
+    await sharp(png).resize({ width: Math.min(width, 960) })
+      .webp({ quality: 68, effort: 5 })
+      .toFile(root + '/' + locale + '-' + width + '-review.webp');
+    await page.locator('#shipped-redesign').screenshot({
+      path: root + '/' + locale + '-' + width + '-outcome.png',
+      animations: 'disabled',
+    });
     results.push({ locale, width, ...checks });
     console.log(JSON.stringify(results[results.length - 1]));
     await page.close();
