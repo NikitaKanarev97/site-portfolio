@@ -6,7 +6,7 @@ interface Props { locale: 'en' | 'ru'; loading?: 'eager' | 'lazy' }
 const { locale, loading = 'lazy' } = Astro.props;
 const copy = (locale === 'ru' ? agentCaseRu : agentCaseEn).home;
 ---
-<div class="agent-home">
+<div class:list={['agent-home', locale === 'ru' && 'agent-home--ru']}>
   <div class="agent-home__story">
     <p class="ds-meta-sm agent-home__label">{copy.label}</p>
     <p class="ds-heading-3xl">{copy.title}</p>
@@ -23,5 +23,9 @@ const copy = (locale === 'ru' ? agentCaseRu : agentCaseEn).home;
   .agent-home__story p { margin: 0; }
   .agent-home__body, .agent-home__label { color: var(--text-subtle); }
   .agent-home__scene { display: grid; min-inline-size: 0; align-items: center; justify-items: end; }
-  @media (--bp-lg) { .agent-home { grid-template-columns: minmax(0, 2fr) minmax(0, 5fr); gap: var(--space-12); } }
+  @media (--bp-lg) {
+    .agent-home { grid-template-columns: minmax(0, 2fr) minmax(0, 5fr); gap: var(--space-12); }
+    /* Keep Russian nonbreaking phrases inside the copy column at tablet widths. */
+    .agent-home--ru { grid-template-columns: minmax(min-content, 2fr) minmax(0, 5fr); }
+  }
 </style>

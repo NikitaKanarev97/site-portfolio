@@ -4,6 +4,12 @@
 
 The final commit and verified Vercel Preview URL are supplied in the implementation handoff. This worktree is `D:/Claude-projects/sp-agent-ops-v2`.
 
+## P1 RU homepage correction · 31 October 2026
+
+Replaced the cover headline with “Сервисный кредит. Обещание клиенту. Решение человека.” The RU desktop copy column now respects its minimum content width, preserving the existing 48px grid gap at 1024px. Rendered text-to-image clearance: 73.98px at 1440, 47.98px at 1024; mobile has a 32px block gap (34.59px from text glyph bounds). Typography is unchanged.
+
+Updated AFTER: [RU 1440](after/ru-1440-home.webp), [RU 390](after/ru-390-home.webp), supplementary [RU 1024](after/ru-1024-home.webp), plus affected RU full-page/viewport exports. [Focused production-build checks](ru-home-correction-checks.json): no overflow, runtime errors, failed requests or broken cover media; reduced-motion copy visible. EN cover pixels match the accepted captures at both widths. The seven case sections, accepted product imagery, provenance, original BEFORE assets, B2B and other cases remain unchanged. Astro check/build, scoped CSS and public content checks pass. Correction is for final independent sign-off; no merge or production deploy.
+
 ## Changes
 
 - New Agent-only homepage composition uses the actual Action Approvals consequence scene. B2B V2.1 and the other project cards retain their text and media URLs.
