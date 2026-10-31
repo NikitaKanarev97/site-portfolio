@@ -1,7 +1,5 @@
 import { defineStory, type ShotItem } from './story';
 import { partnerPortalMap } from '../../data/diagrams/partner-portal/screen-map';
-import { partnerPortalFlow } from '../../data/diagrams/partner-portal/purchase-flow';
-import { partnerPortalSpecimen } from '../../data/diagrams/partner-portal/specimen';
 
 export const portalLineShot = (stage:string,alt:string,altNarrow=alt):ShotItem => ({
   src:`/media/rebuild/partner-portal/line-${stage}-wide.webp`,
