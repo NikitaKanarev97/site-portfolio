@@ -2,4 +2,5 @@
  * integrated product DOM, not cropped from historical prepared PNGs.
  * Source version: public/prototypes/learn-manifest.json.
  */
-import './capture-current.mjs';
+await import('./capture-current.mjs');
+await import('./capture-home-canvas.mjs');

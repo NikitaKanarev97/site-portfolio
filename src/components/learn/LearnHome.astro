@@ -7,7 +7,7 @@ const copy = makeLearnCase(locale);
 ---
 <div class="learn-home">
   <div class="learn-home__copy"><p class="ds-meta-sm">{copy.eyebrow}</p><p class="ds-heading-3xl learn-home__promise">{copy.promise}</p><p class="ds-body-base">{copy.lead}</p></div>
-  <LearnShot shot={copy.hero.home} loading={loading} href={`${locale === 'ru' ? '/ru' : ''}/work/learn/`} linkLabel={locale === 'ru' ? 'Читать кейс TRASSIR Learn' : 'Read the TRASSIR Learn case'} />
+  <LearnShot shot={copy.hero.home} loading={loading} presentation="canvas" href={`${locale === 'ru' ? '/ru' : ''}/work/learn/`} linkLabel={locale === 'ru' ? 'Читать кейс TRASSIR Learn' : 'Read the TRASSIR Learn case'} />
   <p class="ds-body-sm learn-home__language">{locale === 'ru' ? 'Главная по рабочей задаче · актуальный интерфейс' : 'Task-led Home · current interface'}</p>
 </div>
 <style>

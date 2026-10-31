@@ -24,7 +24,9 @@ for (const locale of ['en', 'ru']) for (const width of [320, 375, 768]) {
     const style = getComputedStyle(e), image = e.querySelector('img');
     const box = e.getBoundingClientRect(), ib = image.getBoundingClientRect();
     return {
+      presentation: e.closest('[data-learn-presentation]')?.dataset.learnPresentation ?? 'frame',
       radius: style.borderRadius,
+      surfaceRadius: getComputedStyle(e.querySelector('.screen-surface')).borderRadius,
       padding: ['Top', 'Right', 'Bottom', 'Left'].map(side => parseFloat(style[`padding${side}`])),
       actualFields: [ib.top - box.top, box.right - ib.right, box.bottom - ib.bottom, ib.left - box.left],
       source: image.currentSrc,
@@ -32,9 +34,15 @@ for (const locale of ['en', 'ru']) for (const width of [320, 375, 768]) {
   }));
   for (const frame of frames) {
     assert.equal(frame.radius, '16px', 'Every screenshot uses the same DS radius');
-    assert.ok(frame.padding.every(p => p >= 16 && p === frame.padding[0]), 'Uniform four-sided screenshot fields');
+    assert.equal(frame.surfaceRadius, '16px', 'Source surface uses the same DS radius');
+    if (frame.presentation === 'canvas') {
+      assert.ok(frame.padding.every(p => p === 0), 'Native canvas has no redundant outer frame');
+    } else {
+      assert.ok(frame.padding.every(p => p >= 16 && p === frame.padding[0]), 'Uniform four-sided screenshot fields');
+    }
     assert.ok(frame.actualFields.every(p => p >= frame.padding[0] - 1), 'Source stays inside the rounded field');
   }
+  assert.equal(await page.locator('.learn-cover__path').count(), 0, 'Programme belongs in its own story section');
   const trigger = page.locator('.learn-cover__home [data-zoom-trigger]');
   const actualSource = await trigger.locator('img').evaluate(i => i.currentSrc);
   await trigger.focus();
@@ -56,9 +64,11 @@ for (const locale of ['en', 'ru']) for (const width of [320, 375, 768]) {
   const summary = page.locator('.learn-model summary');
   await summary.focus();
   await page.keyboard.press('Enter');
+  await page.waitForFunction(() => document.querySelector('.learn-model')?.open === true);
   assert.equal(await page.locator('.learn-model').getAttribute('open'), '');
   await page.locator('.learn-model').screenshot({ path: `${out}/controls/${locale}-${width}-model.png` });
   await page.keyboard.press('Enter');
+  await page.waitForFunction(() => document.querySelector('.learn-model')?.open === false);
   assert.equal(await page.locator('.learn-model').getAttribute('open'), null);
   const canonical = await page.locator('link[rel="canonical"]').getAttribute('href');
   const alternates = await page.locator('link[hreflang]').evaluateAll(links => links.map(l => ({ lang: l.hreflang, href: l.href })));

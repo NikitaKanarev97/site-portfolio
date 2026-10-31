@@ -18,7 +18,6 @@ export function makeLearnCase(locale: 'en' | 'ru') {
     preview: t('Explore the reference library', 'Открыть справочник'),
     previewHref: `https://kanarev.com/prototypes/learn/home?lang=${locale}`,
     previewNote: t('Live product entry · opens in English', 'Главная продукта · откроется на русском'),
-    imageNote: t('Real interface captures from the current integrated product. Select an image to inspect it.', 'Реальные кадры актуальной сборки продукта. Нажмите на кадр, чтобы рассмотреть его.'),
     origin: t('I worked on the platform redesign at DSSL / TRASSIR. After leaving, I revisited the architecture, UX/UI, design system and responsive prototype. These screens show that later work; account data is illustrative.', 'Я работал над редизайном платформы в DSSL / TRASSIR. После ухода заново проработал архитектуру, UX/UI, дизайн-систему и адаптивный прототип. Здесь показана эта новая работа; данные аккаунтов — примеры.'),
     facts: [
       { term: t('Role', 'Роль'), value: t('Product / UX/UI Designer', 'Продуктовый / UX/UI-дизайнер') },
@@ -30,7 +29,6 @@ export function makeLearnCase(locale: 'en' | 'ru') {
     hero: {
       home: shot('home-wide', 'home-mobile', 'Task-led Home: commissioning, system design, handover and new hardware', 'Главная по рабочей задаче: пусконаладка, проектирование, сдача объекта и новая линейка'),
       answer: shot('answer-detail', undefined, 'Complete ONVIF article header with version, update date and download/print actions', 'Целая шапка материала ONVIF: версия, дата обновления, скачивание и печать', 'An answer now', 'Ответ сейчас'),
-      path: shot('path-progress', undefined, 'Programme: 3 of 11 units complete, with a deliberate action to continue from step 4', 'Программа: завершено 3 из 11 единиц, продолжить можно с шага 4', 'A path forward', 'Последовательный путь'),
     },
     problem: {
       label: t('01 / The task', '01 / Задача'),

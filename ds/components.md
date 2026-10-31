@@ -603,9 +603,12 @@ space and flow roles only; registered lines/fade/rise/fade-image only. Keyboard
 zoom, focus return and reduced-motion behaviour remain owned by shared components.
 Map: screens/case-learn.md §V2. No new global variants or tokens.
 
-V2.1 owner correction: LearnShot uses existing CaseScreen appearance=frame for
-every image, including the historical archive. Outer radius-media is 16 px;
-frame-inset is equal on all four sides (16/24 px). Current EN/RU DPR-2 captures
-come from the integrated product export, with complete semantic boundaries and
-native widths recorded separately from pixel dimensions. MediaZoom uses the same
-16 px rounding. These geometry invariants are checked in the real browser.
+V2.3 owner correction supersedes V2.1's universal extra white frame:
+LearnShot presentation=canvas uses the existing CaseScreen appearance=edge for
+Home, Reference, Player and Programme, without an extra outline, white field or
+grey wrapper. The actual source canvas supplies its own fields. The Home blue
+canvas is extended on all four sides during capture; UI size and position stay
+unchanged. Default presentation=frame remains for the archive and isolated
+details/results, with equal 16/24 px fields. Both variants and MediaZoom retain
+the same 16 px outer radius. EN/RU DPR-2 sources, semantic boundaries and native
+widths are recorded in the manifest; browser verification covers both variants.

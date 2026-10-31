@@ -1,22 +1,45 @@
 {
   "en/home-wide": {
-    "src": "/media/case-learn-v2/current/en/home-wide.webp",
+    "src": "/media/case-learn-v2/composition/en/home-wide.webp",
     "width": 2848,
     "height": 966,
     "cssWidth": 1424,
-    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/home-wide.png",
+    "source": "audit/trassir-learn-case-v2/composition-v23/product/en/home-wide.png",
     "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
     "route": "http://127.0.0.1:4415/prototypes/learn/home/?lang=en",
-    "selector": "main > [class*=\"_hero_\"]",
-    "sourceBounds": {
-      "x": 32,
-      "y": 104,
-      "width": 1376,
-      "height": 434.96875
+    "bytes": 69264,
+    "presentation": {
+      "extraCanvasPadding": 24,
+      "contentGeometryUnchanged": true,
+      "screenshotRadius": 16,
+      "originalWidth": 1376,
+      "expandedWidth": 1424,
+      "originalPadding": [
+        32,
+        48,
+        32,
+        48
+      ],
+      "expandedPadding": [
+        56,
+        72,
+        56,
+        72
+      ],
+      "titleBefore": {
+        "x": 80,
+        "y": 136,
+        "width": 752,
+        "height": 64.390625
+      },
+      "titleAfter": {
+        "x": 80,
+        "y": 136,
+        "width": 752,
+        "height": 64.390625
+      }
     },
-    "canvasField": 24,
-    "bytes": 69816,
-    "note": "Complete current Home hero with V1.3 teaching diagram; 24 px field."
+    "note": "Owner-directed extension of the actual blue Home canvas; unchanged UI content and layout. No external white frame or transparent bleed."
   },
   "en/reference": {
     "src": "/media/case-learn-v2/current/en/reference.webp",
@@ -42,23 +65,46 @@
     "note": "Whole header, brief and navigation with native page gutters."
   },
   "en/home-mobile": {
-    "src": "/media/case-learn-v2/current/en/home-mobile.webp",
-    "width": 812,
-    "height": 646,
-    "cssWidth": 406,
-    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/home-mobile.png",
+    "src": "/media/case-learn-v2/composition/en/home-mobile.webp",
+    "width": 780,
+    "height": 614,
+    "cssWidth": 390,
+    "source": "audit/trassir-learn-case-v2/composition-v23/product/en/home-mobile.png",
     "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
     "route": "http://127.0.0.1:4415/prototypes/learn/home/?lang=en",
-    "selector": "main > [class*=\"_hero_\"]",
-    "sourceBounds": {
-      "x": 16,
-      "y": 142,
-      "width": 358,
-      "height": 274.046875
+    "bytes": 20914,
+    "presentation": {
+      "extraCanvasPadding": 16,
+      "contentGeometryUnchanged": true,
+      "screenshotRadius": 16,
+      "originalWidth": 358,
+      "expandedWidth": 390,
+      "originalPadding": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "expandedPadding": [
+        32,
+        32,
+        32,
+        32
+      ],
+      "titleBefore": {
+        "x": 32,
+        "y": 158,
+        "width": 326,
+        "height": 27.59375
+      },
+      "titleAfter": {
+        "x": 32,
+        "y": 158,
+        "width": 326,
+        "height": 27.59375
+      }
     },
-    "canvasField": 24,
-    "bytes": 21330,
-    "note": "Complete current Home hero with V1.3 teaching diagram; 24 px field."
+    "note": "Owner-directed extension of the actual blue Home canvas; unchanged UI content and layout. No external white frame or transparent bleed."
   },
   "en/answer-detail": {
     "src": "/media/case-learn-v2/current/en/answer-detail.webp",
@@ -441,23 +487,46 @@
     "note": "Both complete reader progress cards; no programme completion invented."
   },
   "ru/home-wide": {
-    "src": "/media/case-learn-v2/current/ru/home-wide.webp",
+    "src": "/media/case-learn-v2/composition/ru/home-wide.webp",
     "width": 2848,
     "height": 966,
     "cssWidth": 1424,
-    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/home-wide.png",
+    "source": "audit/trassir-learn-case-v2/composition-v23/product/ru/home-wide.png",
     "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
     "route": "http://127.0.0.1:4415/prototypes/learn/home/?lang=ru",
-    "selector": "main > [class*=\"_hero_\"]",
-    "sourceBounds": {
-      "x": 32,
-      "y": 104,
-      "width": 1376,
-      "height": 434.96875
+    "bytes": 64502,
+    "presentation": {
+      "extraCanvasPadding": 24,
+      "contentGeometryUnchanged": true,
+      "screenshotRadius": 16,
+      "originalWidth": 1376,
+      "expandedWidth": 1424,
+      "originalPadding": [
+        32,
+        48,
+        32,
+        48
+      ],
+      "expandedPadding": [
+        56,
+        72,
+        56,
+        72
+      ],
+      "titleBefore": {
+        "x": 80,
+        "y": 136,
+        "width": 752,
+        "height": 64.390625
+      },
+      "titleAfter": {
+        "x": 80,
+        "y": 136,
+        "width": 752,
+        "height": 64.390625
+      }
     },
-    "canvasField": 24,
-    "bytes": 65068,
-    "note": "Complete current Home hero with V1.3 teaching diagram; 24 px field."
+    "note": "Owner-directed extension of the actual blue Home canvas; unchanged UI content and layout. No external white frame or transparent bleed."
   },
   "ru/reference": {
     "src": "/media/case-learn-v2/current/ru/reference.webp",
@@ -483,23 +552,46 @@
     "note": "Whole header, brief and navigation with native page gutters."
   },
   "ru/home-mobile": {
-    "src": "/media/case-learn-v2/current/ru/home-mobile.webp",
-    "width": 812,
-    "height": 608,
-    "cssWidth": 406,
-    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/home-mobile.png",
+    "src": "/media/case-learn-v2/composition/ru/home-mobile.webp",
+    "width": 780,
+    "height": 576,
+    "cssWidth": 390,
+    "source": "audit/trassir-learn-case-v2/composition-v23/product/ru/home-mobile.png",
     "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
     "route": "http://127.0.0.1:4415/prototypes/learn/home/?lang=ru",
-    "selector": "main > [class*=\"_hero_\"]",
-    "sourceBounds": {
-      "x": 16,
-      "y": 142,
-      "width": 358,
-      "height": 255.15625
+    "bytes": 18420,
+    "presentation": {
+      "extraCanvasPadding": 16,
+      "contentGeometryUnchanged": true,
+      "screenshotRadius": 16,
+      "originalWidth": 358,
+      "expandedWidth": 390,
+      "originalPadding": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "expandedPadding": [
+        32,
+        32,
+        32,
+        32
+      ],
+      "titleBefore": {
+        "x": 32,
+        "y": 158,
+        "width": 326,
+        "height": 27.59375
+      },
+      "titleAfter": {
+        "x": 32,
+        "y": 158,
+        "width": 326,
+        "height": 27.59375
+      }
     },
-    "canvasField": 24,
-    "bytes": 18686,
-    "note": "Complete current Home hero with V1.3 teaching diagram; 24 px field."
+    "note": "Owner-directed extension of the actual blue Home canvas; unchanged UI content and layout. No external white frame or transparent bleed."
   },
   "ru/answer-detail": {
     "src": "/media/case-learn-v2/current/ru/answer-detail.webp",

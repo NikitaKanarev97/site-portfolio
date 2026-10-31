@@ -1,4 +1,72 @@
-# TRASSIR Learn V2.1 — current media, rounded frames and consistent fields
+# TRASSIR Learn V2.3 — composition correction for independent review
+
+31 October 2026. Branch `codex/trassir-learn-case-v2`. This section supersedes
+the historical V2.1 frame policy below. Design acceptance is not claimed.
+
+- Removed the extra white Home frame and the white/grey nesting around Reference,
+  archive-depth Player and Programme. Each now has one native coloured canvas.
+- Extended the actual blue Home canvas by 24 CSS px per side on desktop / 16 on
+  mobile. Captured all four EN/RU variants again at DPR 2. Title coordinates and
+  dimensions are asserted unchanged: content was not cropped or enlarged.
+- Rebuilt the hero as Home plus one complete answer in a single desktop row.
+  Removed the trailing programme detail and the generic capture instructions.
+  The programme remains in its own guided-preparation section.
+- Retained 16 px rounded screenshot surfaces everywhere, including zoom. Isolated
+  details, workspace and results keep their existing equal 16/24 px frame fields.
+  Results composition is unchanged, as requested. Shared components, tokens,
+  motion rules and other cases are unchanged.
+
+The product source is still clean Learn main
+`e9ac4b075c4c5251dc10891ad201ecbf5405b727`, integrated by portfolio main `49d2fb0`.
+Only the owner-requested Home canvas fields were adjusted during capture; no
+product repository edits, raster translation or fabricated UI. The source
+capture geometry is in [home-canvas.json](composition-v23/home-canvas.json).
+The runtime manifest records the four replacement image paths, native sizes,
+source commit and before/after content coordinates.
+
+## Current visual evidence
+
+Real browser captures; viewport and full page, EN/RU, both requested sizes.
+The previous pushed implementation `94f0a2c399194991ecea4f85e5381ed621123f2c`
+is the before baseline for this correction.
+
+| Locale / viewport | Before viewport | Before full page | After viewport | After full page |
+|---|---|---|---|---|
+| EN · 1440×900 | [Open](refresh-2026-10-31/portfolio/en-1440-viewport.png) | [Open](refresh-2026-10-31/portfolio/en-1440-full.png) | [Open](composition-v23/portfolio/en-1440-viewport.png) | [Open](composition-v23/portfolio/en-1440-full.png) |
+| RU · 1440×900 | [Open](refresh-2026-10-31/portfolio/ru-1440-viewport.png) | [Open](refresh-2026-10-31/portfolio/ru-1440-full.png) | [Open](composition-v23/portfolio/ru-1440-viewport.png) | [Open](composition-v23/portfolio/ru-1440-full.png) |
+| EN · 390×844 | [Open](refresh-2026-10-31/portfolio/en-390-viewport.png) | [Open](refresh-2026-10-31/portfolio/en-390-full.png) | [Open](composition-v23/portfolio/en-390-viewport.png) | [Open](composition-v23/portfolio/en-390-full.png) |
+| RU · 390×844 | [Open](refresh-2026-10-31/portfolio/ru-390-viewport.png) | [Open](refresh-2026-10-31/portfolio/ru-390-full.png) | [Open](composition-v23/portfolio/ru-390-viewport.png) | [Open](composition-v23/portfolio/ru-390-full.png) |
+
+[Section closeups](composition-v23/portfolio/) include the hero, shared material,
+guided preparation, workspace and assessment in all four combinations.
+The original pre-V2 baseline remains in [qa/before](qa/before/).
+
+## Current verification
+
+- Build: 37 pages. Astro check: zero errors/warnings, 163 existing hints.
+- Public-content check: zero findings. Scoped CSS: zero dead rules on both routes.
+- [Capture checks](composition-v23/portfolio/checks.json): zero page errors,
+  failed requests, missing images or horizontal overflow, EN/RU × 1440/390.
+- [Browser verification](composition-v23/verification/verification.json):
+  EN/RU × 320/375/768, both canvas/frame geometry policies, all outer surfaces
+  rounded 16 px, responsive image sources, keyboard zoom/Escape/focus return,
+  native diagram, Home navigation, locale switch, local links, both no-JS cases.
+  Eight live product entry routes returned HTTP 200.
+- No merge into main, production deployment, Figma edits or design acceptance.
+
+Reproduce all current media with `node scripts/learn-v2/media.mjs`, using the
+static source server and Playwright setup below. The script captures current UI
+first, then applies the documented Home canvas extension. To capture only the
+four changed canvases: `node scripts/learn-v2/capture-home-canvas.mjs`.
+Portfolio capture/verification use the existing scripts with
+`QA_OUT=audit/trassir-learn-case-v2/composition-v23/{portfolio,verification}`.
+Full routine logs: local `tmp/learn/v23-*.log`.
+
+Other cases' rounding and fields remain the next requested scope after Learn.
+
+---
+
+# Historical V2.1 — current media, rounded frames and consistent fields
 
 31 October 2026. Ready for independent review; design acceptance is not claimed.
 

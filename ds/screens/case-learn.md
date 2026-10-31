@@ -80,7 +80,7 @@ This implementation is not design acceptance.
 
 | Beat | Composition / evidence | Responsive behaviour |
 |---|---|---|
-| 00 Hero | Light native surface, strong title, two-path thesis; dominant real Home, separate Material and Trajectory details; verified reference-library CTA | Native Home mobile crop; supporting details omitted below md |
+| 00 Hero | Light native surface, strong title, two-path thesis; dominant real Home beside one complete Material detail; verified reference-library CTA | Whole native mobile Home; supporting detail omitted below lg |
 | 01 Problem | Original archive untouched, alongside concise task argument | Image follows prose; zoom preserves full archive |
 | 02 Paths | Two editorial descriptions of reference and learning jobs | Stacked below md; no simulated product controls |
 | 03 Architecture | ONVIF Reference and archive-depth Player as explicitly different examples; opening ≠ completion; original content-model graph | Native mobile sources; graph behind keyboard-accessible native details |
@@ -97,11 +97,21 @@ V2 root crops were removed. The 23 prepared historical PNG originals remain in
 the audit folder. New EN images are genuine EN UI; RU images are genuine RU UI.
 No raster translation, repainting or fabricated document area.
 
-Owner rule, 31 October: all screenshot canvases use the same radius-media (16 px)
-and equal frame-inset fields on every side (16/24 px), including zoom. Native
-details retain 24 CSS px of capture field; page regions keep their actual gutters.
-Every selected block and question must be complete, with no neighbour leaking
-across the image boundary. Learn is corrected now; other cases are a later pass.
+V2.3 owner clarification supersedes V2.1's universal extra frame. All screenshot
+canvases retain radius-media (16 px). Home, Reference, Player and Programme use
+one native coloured canvas, with no external white/grey nesting. Default framed
+details/results keep equal frame-inset (16/24 px); zoom also keeps its fields and
+16 px rounding. Native details retain captured transparent fields; page regions
+keep native gutters. Every selected block/question is complete.
+
+The hero has Home + one answer in one desktop row; no trailing programme card or
+generic capture instruction. Programme evidence appears only in beat 04. Home's
+blue canvas is extended by 24 CSS px per side on desktop / 16 on mobile, keeping
+UI content at exactly the same size and page coordinates. Four new DPR-2 captures
+are in public/media/case-learn-v2/composition/{en,ru}; the current manifest points
+to them. Reproduce all media with scripts/learn-v2/media.mjs (static source on
+4415). Capture geometry: audit/trassir-learn-case-v2/composition-v23/home-canvas.json.
+Other cases remain a later pass after Learn.
 
 Home: Learn-only `LearnHome` composition in WorkStage, localized two-path thesis,
 native responsive Home crop and one normal case link. EN/RU registry and OG
