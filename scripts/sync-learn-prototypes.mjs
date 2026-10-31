@@ -3,7 +3,7 @@
  * The regular portfolio build never depends on a sibling checkout.
  */
 import { spawnSync } from 'node:child_process';
-import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { cp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { normalizeLearnPublicCopy } from './lib/learn-public-copy.mjs';
@@ -13,6 +13,17 @@ const source = path.resolve(process.argv[2] ?? path.join(root, '..', 'learn'));
 const destination = path.join(root, 'public', 'prototypes');
 const npmCli = process.env.npm_execpath;
 if (!npmCli) throw new Error('Run through npm run sync:learn so the current npm runtime is reused.');
+
+function sourceGit(...args) {
+  const result = spawnSync('git', ['-C', source, ...args], { encoding: 'utf8' });
+  if (result.status !== 0) throw new Error('Cannot identify the Learn source checkout.');
+  return result.stdout.trim();
+}
+const sourceVersion = {
+  repository: 'NikitaKanarev97/learn',
+  commit: sourceGit('rev-parse', 'HEAD'),
+  dirty: Boolean(sourceGit('status', '--porcelain', '--untracked-files=no')),
+};
 
 function build(cwd, args, env = {}) {
   const result = spawnSync(process.execPath, [npmCli, 'run', 'build', ...args], {
@@ -36,7 +47,20 @@ async function replaceBuild(name, buildPath) {
   await readFile(path.join(buildPath, 'index.html')); // Never delete a good export for a missing one.
   await rm(target, { recursive: true, force: true });
   await cp(buildPath, target, { recursive: true });
+  await normalizeExportLines(target);
   return target;
+}
+
+// Builds made on Windows must obey the portfolio's LF-only artifact contract.
+async function normalizeExportLines(directory) {
+  for (const entry of await readdir(directory, { withFileTypes: true })) {
+    const file = path.join(directory, entry.name);
+    if (entry.isDirectory()) await normalizeExportLines(file);
+    else if (/\.(html|js|css|svg|json)$/.test(entry.name)) {
+      const text = await readFile(file, 'utf8');
+      if (text.includes('\r\n')) await writeFile(file, text.replaceAll('\r\n', '\n'));
+    }
+  }
 }
 
 const product = await replaceBuild('learn', path.join(source, 'dist'));
@@ -68,7 +92,8 @@ for (const route of routes) {
   await writeFile(path.join(dir, 'index.html'), shell);
 }
 await writeFile(path.join(destination, 'learn-manifest.json'), JSON.stringify({
+  source: sourceVersion,
   productBase: '/prototypes/learn/', landingBase: '/prototypes/learn-landing/',
   locales: ['en', 'ru'], routes: [...routes].sort(),
 }, null, 2) + '\n');
-console.log(`Learn exported with ${routes.size} reloadable product routes and both landing languages.`);
+console.log(`Learn ${sourceVersion.commit} exported with ${routes.size} reloadable product routes and both landing languages.${sourceVersion.dirty ? ' Source includes uncommitted changes.' : ''}`);
