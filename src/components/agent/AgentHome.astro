@@ -8,7 +8,7 @@ const copy = (locale === 'ru' ? agentCaseRu : agentCaseEn).home;
 ---
 <div class:list={['agent-home', locale === 'ru' && 'agent-home--ru']}>
   <div class="agent-home__scene">
-    <AgentShot locale={locale} loading={loading} zoom={false} href={`${locale === 'ru' ? '/ru' : ''}/work/agent-ops-console`} shot={{ desktop: 'approval-consequences-desktop', mobile: 'approval-consequences-mobile', alt: copy.alt }} />
+    <AgentShot locale={locale} loading={loading} zoom={false} href={`${locale === 'ru' ? '/ru' : ''}/work/agent-ops-console`} shot={{ desktop: 'home-consequences-desktop', mobile: 'home-consequences-mobile', alt: copy.alt }} />
   </div>
   <div class="agent-home__story">
     <p class="ds-meta-sm agent-home__label">{copy.label}</p>

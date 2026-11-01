@@ -1,0 +1,207 @@
+diff --git a/ds/components.md b/ds/components.md
+index 25e2da2..517d286 100644
+--- a/ds/components.md
++++ b/ds/components.md
+@@ -1,3 +1,12 @@
++## Home cover polish · 01.11.2026 · pending independent review
++
++PortalHome selects Home-only `home-decision-*` entries through the existing native
++PortalShot variant. Complete source components retain natural dimensions; the
++mobile picture now includes both candidates and confirmation. AgentHome selects
++Home-only `home-consequences-*` through unchanged AgentShot: real panels, alpha
++outer canvas, header legible on surface-subtle. Case entries and renderer APIs
++stay unchanged. Provenance and alternate dark stage: audit/home-cover-polish/.
++
+ ## Home V3.1 · 01.11.2026
+ 
+ `FeaturedCase` adds opt-in `proofFirst?: boolean` (default false), only on Home's
+diff --git a/ds/patterns.md b/ds/patterns.md
+index 2db5694..765559f 100644
+--- a/ds/patterns.md
++++ b/ds/patterns.md
+@@ -1,3 +1,13 @@
++## Home cover polish · 01.11.2026 · pending independent review
++
++Existing FeaturedCase → WorkStage → AgentHome/PortalHome composition is retained.
++Portal is a complete source-row/choice/confirmation object on its editorial stage,
++with separated candidate borders. Agent's native panels share the neutral field
++with its explanation; no second dark slab surrounds them. Source export details
++and variant comparison belong to audit/home-cover-polish/. Home portrait width
++uses existing space tokens: 64 mobile, 64+16 tablet, 96+16 from bp-lg. No new token,
++component API, motion, shared-card behavior or case-page composition is introduced.
++
+ ## Home V3.1 · Editorial Bridge correction · 01.11.2026
+ 
+ Home-only Hero action tracks: primary Work, then CV + CopyEmail with a selectable
+diff --git a/ds/screens/home.md b/ds/screens/home.md
+index 8ac0eab..97c6b04 100644
+--- a/ds/screens/home.md
++++ b/ds/screens/home.md
+@@ -1,3 +1,21 @@
++## Homepage cover polish · 01.11.2026 · pending independent review
++
++Retain Premium V3.1's Editorial Bridge, order, typography, actions and proofFirst.
++PortalHome uses Home-only row-19 source exports: a complete neutral shell, one
++uniform 1px border per candidate, separation between candidates, both products
++and the buyer's Apply action at desktop and mobile. The editorial 41/48 remains
++fixture context. External corners are captured against alpha, so the blue-gray
++stage shows through the native radius while the complete border stays intact.
++Source corrections and provenance: audit/home-cover-polish/tools/
++portal-source-fix.css and sources/manifest.json; case-page evidence is unchanged.
++AgentHome uses variant A: the real consequence panels on its existing neutral
++stage, transparent external canvas and neutral-stage header. Source text and
++panel styling remain authentic. Variant B (rounded native dark container) is
++preserved in the review screenshots. Both variants use the same native scale.
++Hero portrait is 80px at bp-md, 112px at bp-lg, 64px below bp-md; existing DS space
++tokens compose these sizes. Same image, positioning, link and mobile dimensions.
++Pawly and Vet renderer, content and images are unchanged.
++
+ ## Homepage Premium V3.1 · focused corrections · 01.11.2026
+ 
+ Option A remains the composition. Existing roles/tokens and native sources remain.
+diff --git a/src/components/agent/AgentHome.astro b/src/components/agent/AgentHome.astro
+index 88bc128..237302b 100644
+--- a/src/components/agent/AgentHome.astro
++++ b/src/components/agent/AgentHome.astro
+@@ -8,7 +8,7 @@ const copy = (locale === 'ru' ? agentCaseRu : agentCaseEn).home;
+ ---
+ <div class:list={['agent-home', locale === 'ru' && 'agent-home--ru']}>
+   <div class="agent-home__scene">
+-    <AgentShot locale={locale} loading={loading} zoom={false} href={`${locale === 'ru' ? '/ru' : ''}/work/agent-ops-console`} shot={{ desktop: 'approval-consequences-desktop', mobile: 'approval-consequences-mobile', alt: copy.alt }} />
++    <AgentShot locale={locale} loading={loading} zoom={false} href={`${locale === 'ru' ? '/ru' : ''}/work/agent-ops-console`} shot={{ desktop: 'home-consequences-desktop', mobile: 'home-consequences-mobile', alt: copy.alt }} />
+   </div>
+   <div class="agent-home__story">
+     <p class="ds-meta-sm agent-home__label">{copy.label}</p>
+diff --git a/src/components/portal/PortalHome.astro b/src/components/portal/PortalHome.astro
+index 04246ee..e02a4f5 100644
+--- a/src/components/portal/PortalHome.astro
++++ b/src/components/portal/PortalHome.astro
+@@ -13,7 +13,7 @@ const copy = portalHome[locale];
+     <p class="ds-heading-xl">{copy.thesis}</p>
+     <p class="ds-body-base portal-home__body">{copy.body}</p>
+   </div>
+-  <PortalShot variant="native" locale={locale} loading={loading} shot={{ desktop: 'decision-1280', mobile: 'workspace-top-390', alt: copy.alt }} />
++  <PortalShot variant="native" locale={locale} loading={loading} shot={{ desktop: 'home-decision-1280', mobile: 'home-decision-390', alt: copy.alt }} />
+ </div>
+ <style>
+   .portal-home { display: grid; gap: var(--flow-node); padding: var(--stage-inset); background: var(--surface-portal-editorial); border-radius: var(--radius-lg); }
+diff --git a/src/copy/portal-home.ts b/src/copy/portal-home.ts
+index 8e44cd6..f965acd 100644
+--- a/src/copy/portal-home.ts
++++ b/src/copy/portal-home.ts
+@@ -3,12 +3,12 @@ export const portalHome = {
+     label: 'From specification to order', progress: '41 / 48',
+     thesis: 'Seven lines still need the buyer.',
+     body: 'The system compares the options. A person confirms the choice.',
+-    alt: 'Specification review: source row and the buyer’s choice. On mobile, progress and the first line that needs a decision.',
++    alt: 'Specification review: ambiguous row 19, two recorder options, the selected product and the buyer’s confirmation action.',
+   },
+   ru: {
+     label: 'От спецификации к заказу', progress: '41 / 48',
+     thesis: 'Семь строк ждут выбора.',
+     body: 'Система сравнивает варианты. Человек подтверждает выбор.',
+-    alt: 'Разбор спецификации: исходная строка и выбор закупщика. На телефоне — прогресс и первая строка, требующая решения.',
++    alt: 'Разбор спецификации: неоднозначная строка 19, два варианта регистратора, выбранный товар и действие подтверждения закупщика.',
+   },
+ };
+diff --git a/src/data/agent-ops-v2-media.json b/src/data/agent-ops-v2-media.json
+index e2c3d7c..74fccb6 100644
+--- a/src/data/agent-ops-v2-media.json
++++ b/src/data/agent-ops-v2-media.json
+@@ -292,5 +292,33 @@
+     "height": 1326,
+     "cssWidth": 406,
+     "cssHeight": 663
++  },
++  "en/home-consequences-desktop": {
++    "src": "/media/home-cover-polish/agent-neutral-en-1440.webp",
++    "width": 1612,
++    "height": 732,
++    "cssWidth": 806,
++    "cssHeight": 366
++  },
++  "en/home-consequences-mobile": {
++    "src": "/media/home-cover-polish/agent-neutral-en-390.webp",
++    "width": 812,
++    "height": 1252,
++    "cssWidth": 406,
++    "cssHeight": 626
++  },
++  "ru/home-consequences-desktop": {
++    "src": "/media/home-cover-polish/agent-neutral-ru-1440.webp",
++    "width": 1612,
++    "height": 772,
++    "cssWidth": 806,
++    "cssHeight": 386
++  },
++  "ru/home-consequences-mobile": {
++    "src": "/media/home-cover-polish/agent-neutral-ru-390.webp",
++    "width": 812,
++    "height": 1326,
++    "cssWidth": 406,
++    "cssHeight": 663
+   }
+ }
+diff --git a/src/data/partner-portal-v2-media.json b/src/data/partner-portal-v2-media.json
+index 3d40f95..66b9d0d 100644
+--- a/src/data/partner-portal-v2-media.json
++++ b/src/data/partner-portal-v2-media.json
+@@ -574,5 +574,37 @@
+     "source": "audit/b2b-case-v21/captures/ru/commerce-sheet-390.png",
+     "commit": "c899933a0ebcd9520194887eeb929bda2805477f",
+     "route": "http://127.0.0.1:5193/b2b/ru/cart"
++  },
++  "en/home-decision-1280": {
++    "src": "/media/home-cover-polish/portal-en-1280.webp",
++    "width": 2028,
++    "height": 852,
++    "source": "audit/home-cover-polish/sources/portal-en-1280.png",
++    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
++    "sourceCorrection": "audit/home-cover-polish/tools/portal-source-fix.css"
++  },
++  "en/home-decision-390": {
++    "src": "/media/home-cover-polish/portal-en-390.webp",
++    "width": 716,
++    "height": 1304,
++    "source": "audit/home-cover-polish/sources/portal-en-390.png",
++    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
++    "sourceCorrection": "audit/home-cover-polish/tools/portal-source-fix.css"
++  },
++  "ru/home-decision-1280": {
++    "src": "/media/home-cover-polish/portal-ru-1280.webp",
++    "width": 2028,
++    "height": 852,
++    "source": "audit/home-cover-polish/sources/portal-ru-1280.png",
++    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
++    "sourceCorrection": "audit/home-cover-polish/tools/portal-source-fix.css"
++  },
++  "ru/home-decision-390": {
++    "src": "/media/home-cover-polish/portal-ru-390.webp",
++    "width": 716,
++    "height": 1388,
++    "source": "audit/home-cover-polish/sources/portal-ru-390.png",
++    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
++    "sourceCorrection": "audit/home-cover-polish/tools/portal-source-fix.css"
+   }
+ }
+diff --git a/src/pages/index.astro b/src/pages/index.astro
+index cd0b9e5..b1f2574 100644
+--- a/src/pages/index.astro
++++ b/src/pages/index.astro
+@@ -254,11 +254,14 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
+     .hero { gap:var(--flow-pair); }
+     .hero__copy { gap:var(--flow-pair); }
+   }
+-  @media (--bp-md) { .hero__name { flex-direction:row; gap:var(--space-6); } }
++  @media (--bp-md) {
++    .hero__name { flex-direction:row; gap:var(--space-6); }
++    .hero__portrait { inline-size:calc(var(--space-16) + var(--space-4)); }
++  }
+   @media (--bp-lg) {
+     .hero { grid-template-columns:minmax(0,3fr) minmax(0,1fr); gap:var(--flow-text) var(--space-16); }
+     .hero__name, .hero__role { grid-column:1 / -1; }
+-    .hero__portrait { grid-column:2; grid-row:3; inline-size:var(--space-24); justify-self:end; }
++    .hero__portrait { grid-column:2; grid-row:3; inline-size:calc(var(--space-24) + var(--space-4)); justify-self:end; }
+     .hero__portrait img { aspect-ratio:3 / 4; }
+     .hero__copy { grid-column:1; grid-row:3; }
+   }

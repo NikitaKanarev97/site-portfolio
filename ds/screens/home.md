@@ -1,3 +1,21 @@
+## Homepage cover polish · 01.11.2026 · pending independent review
+
+Retain Premium V3.1's Editorial Bridge, order, typography, actions and proofFirst.
+PortalHome uses Home-only row-19 source exports: a complete neutral shell, one
+uniform 1px border per candidate, separation between candidates, both products
+and the buyer's Apply action at desktop and mobile. The editorial 41/48 remains
+fixture context. External corners are captured against alpha, so the blue-gray
+stage shows through the native radius while the complete border stays intact.
+Source corrections and provenance: audit/home-cover-polish/tools/
+portal-source-fix.css and sources/manifest.json; case-page evidence is unchanged.
+AgentHome uses variant A: the real consequence panels on its existing neutral
+stage, transparent external canvas and neutral-stage header. Source text and
+panel styling remain authentic. Variant B (rounded native dark container) is
+preserved in the review screenshots. Both variants use the same native scale.
+Hero portrait is 80px at bp-md, 112px at bp-lg, 64px below bp-md; existing DS space
+tokens compose these sizes. Same image, positioning, link and mobile dimensions.
+Pawly and Vet renderer, content and images are unchanged.
+
 ## Homepage Premium V3.1 · focused corrections · 01.11.2026
 
 Option A remains the composition. Existing roles/tokens and native sources remain.

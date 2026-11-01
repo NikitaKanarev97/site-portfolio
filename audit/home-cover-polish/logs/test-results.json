@@ -1,0 +1,78 @@
+{
+  "build": {
+    "routes": 37,
+    "result": "PASS",
+    "log": "after-build.log"
+  },
+  "astro": {
+    "errors": 0,
+    "warnings": 0,
+    "hints": 163,
+    "result": "PASS",
+    "log": "check.log"
+  },
+  "css": {
+    "deadScopedRules": 0,
+    "result": "PASS",
+    "log": "check-css.log"
+  },
+  "content": {
+    "findings": 0,
+    "result": "PASS",
+    "log": "check-content.log"
+  },
+  "browser": {
+    "matchedPairs": 10,
+    "protectedCardsUnchanged": true,
+    "uniformPortalBorders": true,
+    "transparentPortalCorners": true,
+    "intactPortalBorderMidpoints": true,
+    "checks": [
+      {
+        "locale": "en",
+        "width": 1440,
+        "fullMotion": true,
+        "keyboardFocus": true,
+        "caseNavigationAndBack": true,
+        "errors": []
+      },
+      {
+        "locale": "en",
+        "width": 390,
+        "fullMotion": true,
+        "keyboardFocus": true,
+        "caseNavigationAndBack": true,
+        "errors": []
+      },
+      {
+        "locale": "ru",
+        "width": 1440,
+        "fullMotion": true,
+        "keyboardFocus": true,
+        "caseNavigationAndBack": true,
+        "errors": []
+      },
+      {
+        "locale": "ru",
+        "width": 390,
+        "fullMotion": true,
+        "keyboardFocus": true,
+        "caseNavigationAndBack": true,
+        "errors": []
+      },
+      {
+        "locale": "en",
+        "width": 390,
+        "noJavaScript": true,
+        "nativeMediaVisible": true
+      },
+      {
+        "locale": "ru",
+        "width": 390,
+        "noJavaScript": true,
+        "nativeMediaVisible": true
+      }
+    ]
+  },
+  "protectedSources": 244
+}

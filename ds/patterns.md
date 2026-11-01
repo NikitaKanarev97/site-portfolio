@@ -1,3 +1,13 @@
+## Home cover polish · 01.11.2026 · pending independent review
+
+Existing FeaturedCase → WorkStage → AgentHome/PortalHome composition is retained.
+Portal is a complete source-row/choice/confirmation object on its editorial stage,
+with separated candidate borders. Agent's native panels share the neutral field
+with its explanation; no second dark slab surrounds them. Source export details
+and variant comparison belong to audit/home-cover-polish/. Home portrait width
+uses existing space tokens: 64 mobile, 64+16 tablet, 96+16 from bp-lg. No new token,
+component API, motion, shared-card behavior or case-page composition is introduced.
+
 ## Home V3.1 · Editorial Bridge correction · 01.11.2026
 
 Home-only Hero action tracks: primary Work, then CV + CopyEmail with a selectable

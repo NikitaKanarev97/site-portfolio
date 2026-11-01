@@ -254,11 +254,14 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     .hero { gap:var(--flow-pair); }
     .hero__copy { gap:var(--flow-pair); }
   }
-  @media (--bp-md) { .hero__name { flex-direction:row; gap:var(--space-6); } }
+  @media (--bp-md) {
+    .hero__name { flex-direction:row; gap:var(--space-6); }
+    .hero__portrait { inline-size:calc(var(--space-16) + var(--space-4)); }
+  }
   @media (--bp-lg) {
     .hero { grid-template-columns:minmax(0,3fr) minmax(0,1fr); gap:var(--flow-text) var(--space-16); }
     .hero__name, .hero__role { grid-column:1 / -1; }
-    .hero__portrait { grid-column:2; grid-row:3; inline-size:var(--space-24); justify-self:end; }
+    .hero__portrait { grid-column:2; grid-row:3; inline-size:calc(var(--space-24) + var(--space-4)); justify-self:end; }
     .hero__portrait img { aspect-ratio:3 / 4; }
     .hero__copy { grid-column:1; grid-row:3; }
   }

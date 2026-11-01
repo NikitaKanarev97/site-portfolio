@@ -1,3 +1,12 @@
+## Home cover polish · 01.11.2026 · pending independent review
+
+PortalHome selects Home-only `home-decision-*` entries through the existing native
+PortalShot variant. Complete source components retain natural dimensions; the
+mobile picture now includes both candidates and confirmation. AgentHome selects
+Home-only `home-consequences-*` through unchanged AgentShot: real panels, alpha
+outer canvas, header legible on surface-subtle. Case entries and renderer APIs
+stay unchanged. Provenance and alternate dark stage: audit/home-cover-polish/.
+
 ## Home V3.1 · 01.11.2026
 
 `FeaturedCase` adds opt-in `proofFirst?: boolean` (default false), only on Home's

@@ -1,0 +1,49 @@
+
+> site-portfolio@0.1.0 dev
+> astro dev --host 127.0.0.1 --port 4416
+
+23:15:39 [types] Generated 1ms
+23:15:39 [content] Syncing content
+23:15:40 [content] Synced content
+23:15:41 [vite] Re-optimizing dependencies because vite config has changed
+
+ astro  v5.18.2 ready in 2276 ms
+
+┃ Local    http://127.0.0.1:4416/
+
+23:15:41 watching for file changes...
+
+ update  ▶ New version of Astro available: 7.4.4
+  Run npx @astrojs/upgrade to update
+
+23:16:16 [200] / 427ms
+23:16:16 [ERROR] [vite] The request url "D:\Claude-projects\sp-home-premium-v31\node_modules\astro\dist\runtime\client\dev-toolbar\entrypoint.js" is outside of Vite serving allow list.
+23:16:16 [WARN] [vite] 
+- D:/Claude-projects/sp-home-cover-polish
+- D:/Claude-projects/sp-home-premium-v31/node_modules/vite/dist/client
+
+Refer to docs https://vite.dev/config/server-options.html#server-fs-allow for configurations and more details.
+
+23:16:17 [200] / 18ms
+23:16:18 [ERROR] [vite] The request url "D:\Claude-projects\sp-home-premium-v31\node_modules\astro\dist\runtime\client\dev-toolbar\entrypoint.js" is outside of Vite serving allow list.
+23:16:19 [200] / 15ms
+23:16:19 [ERROR] [vite] The request url "D:\Claude-projects\sp-home-premium-v31\node_modules\astro\dist\runtime\client\dev-toolbar\entrypoint.js" is outside of Vite serving allow list.
+23:16:20 [200] / 16ms
+23:16:20 [ERROR] [vite] The request url "D:\Claude-projects\sp-home-premium-v31\node_modules\astro\dist\runtime\client\dev-toolbar\entrypoint.js" is outside of Vite serving allow list.
+23:16:21 [200] / 15ms
+23:16:21 [ERROR] [vite] The request url "D:\Claude-projects\sp-home-premium-v31\node_modules\astro\dist\runtime\client\dev-toolbar\entrypoint.js" is outside of Vite serving allow list.
+23:16:22 [200] /ru/ 27ms
+23:16:22 [ERROR] [vite] The request url "D:\Claude-projects\sp-home-premium-v31\node_modules\astro\dist\runtime\client\dev-toolbar\entrypoint.js" is outside of Vite serving allow list.
+23:16:24 [200] /ru/ 15ms
+23:16:24 [ERROR] [vite] The request url "D:\Claude-projects\sp-home-premium-v31\node_modules\astro\dist\runtime\client\dev-toolbar\entrypoint.js" is outside of Vite serving allow list.
+23:16:25 [200] /ru/ 15ms
+23:16:25 [ERROR] [vite] The request url "D:\Claude-projects\sp-home-premium-v31\node_modules\astro\dist\runtime\client\dev-toolbar\entrypoint.js" is outside of Vite serving allow list.
+23:16:26 [200] /ru/ 15ms
+23:16:26 [ERROR] [vite] The request url "D:\Claude-projects\sp-home-premium-v31\node_modules\astro\dist\runtime\client\dev-toolbar\entrypoint.js" is outside of Vite serving allow list.
+23:16:27 [200] /ru/ 16ms
+23:16:27 [ERROR] [vite] The request url "D:\Claude-projects\sp-home-premium-v31\node_modules\astro\dist\runtime\client\dev-toolbar\entrypoint.js" is outside of Vite serving allow list.
+23:22:03 [watch] /src/components/portal/PortalHome.astro?astro&type=style&index=0&lang.css
+23:22:03 [watch] /src/pages/index.astro?astro&type=style&index=0&lang.css
+23:22:03 [watch] src/pages/index.astro
+23:22:47 [watch] /src/components/agent/AgentHome.astro?astro&type=style&index=0&lang.css
+23:25:14 [watch] audit/home-cover-polish/index.html

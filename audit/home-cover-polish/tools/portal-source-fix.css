@@ -1,0 +1,43 @@
+/* Source export correction for row 19, using the product's own DS tokens.
+   The fixture, content, controls, column layout and selected product are unchanged.
+   A single neutral shell replaces the cut table edge; candidate selection owns
+   its own one-pixel border, separated from the neighbouring candidate. */
+.home-decision-capture {
+  border: var(--stroke-default) solid var(--border-default);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--surface-default);
+}
+.home-decision-capture .resolution-row[data-expanded="true"] {
+  border: 0;
+  border-bottom: var(--stroke-default) solid var(--border-default);
+  border-radius: 0;
+  box-shadow: none;
+}
+.home-decision-capture .decision-panel {
+  margin-top: 0;
+  border: 0;
+  border-radius: 0;
+  background: var(--surface-default);
+}
+.home-decision-capture .candidate-comparison {
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+}
+.home-decision-capture .candidate-comparison-head {
+  background: transparent;
+  border: 0;
+}
+.home-decision-capture .candidate-comparison-options {
+  display: grid;
+  gap: var(--space-2);
+}
+.home-decision-capture .candidate-comparison-row {
+  border: var(--stroke-default) solid var(--border-default);
+  border-radius: var(--radius-md);
+}
+.home-decision-capture .candidate-comparison-row[data-selected="true"] {
+  border-color: var(--border-selected);
+  box-shadow: none;
+}

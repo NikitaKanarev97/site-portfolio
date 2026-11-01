@@ -1,0 +1,4 @@
+# Preserve literal compiler output and unified-diff context in review evidence.
+# Whitespace checks remain enabled for source, reports and capture recipes.
+logs/*.log -whitespace
+logs/*.patch -whitespace
