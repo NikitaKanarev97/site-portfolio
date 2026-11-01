@@ -1,0 +1,60 @@
+---
+import CaseScreen from '../CaseScreen.astro';
+import ScreenSurface from '../ScreenSurface.astro';
+import media from '../../data/learn-v2-media.json';
+import { learnHomeCopy } from '../../copy/learn-home';
+import { px } from '../../lib/tokens';
+interface Props { locale: 'en' | 'ru'; loading?: 'eager' | 'lazy' }
+const { locale, loading = 'lazy' } = Astro.props;
+const copy = learnHomeCopy(locale);
+const reference = media[`${locale}/reference`];
+const narrow = media[`${locale}/answer-detail`];
+const programme = media[`${locale}/path-progress`];
+const href = `${locale === 'ru' ? '/ru' : ''}/work/learn/`;
+---
+<div class="learn-home" data-focus-tone="inverse">
+  <div class="learn-home__copy">
+    <p class="ds-heading-3xl learn-home__promise">{copy.title}</p>
+    <p class="ds-body-base learn-home__connection">{copy.connection}</p>
+  </div>
+  <div class="learn-home__screens">
+    <figure class="learn-home__reference">
+      <figcaption class="ds-meta-sm">{copy.reference}</figcaption>
+      <a class="learn-home__open" href={href} aria-label={copy.link}>
+        <ScreenSurface outlined>
+          <picture>
+            <source media={`(max-width: ${px('bp-xl') - 1}px)`} srcset={narrow.src} width={narrow.width} height={narrow.height} />
+            <img src={reference.src} alt={copy.referenceAlt} width={reference.width} height={reference.height} loading={loading} decoding="async" />
+          </picture>
+        </ScreenSurface>
+      </a>
+    </figure>
+    <figure class="learn-home__programme">
+      <figcaption class="ds-meta-sm">{copy.learning}</figcaption>
+      <CaseScreen item={{src: programme.src, alt: copy.learningAlt, device: 'panel', nativeWidth: programme.cssWidth}} loading={loading} href={href} linkLabel={copy.link} />
+    </figure>
+  </div>
+</div>
+<style>
+  :global(#work-learn .work-stage--home.work-stage--learn) { padding: 0; background: transparent; color: var(--text-default); }
+  .learn-home { display: grid; gap: var(--flow-text); padding: var(--stage-inset); background: var(--surface-cover-learn); color: var(--text-on-inverse); border-radius: var(--radius-media); }
+  .learn-home__copy { display: grid; gap: var(--flow-pair); }
+  .learn-home__promise { white-space: pre-line; }
+  .learn-home__screens { display: grid; gap: var(--flow-text); align-items: start; }
+  .learn-home figure { display: grid; gap: var(--flow-pair); margin: 0; min-inline-size: 0; }
+  .learn-home :global(.case-screen) { background: var(--surface-default); }
+  .learn-home__open { display: block; position: relative; z-index: 1; background: var(--surface-default); border-radius: var(--radius-media); }
+  .learn-home__open img { display: block; inline-size: 100%; block-size: auto; }
+  .learn-home :global(.case-screen__open--case) { position: relative; z-index: 1; }
+  @media (--below-bp-xl) {
+    .learn-home__screens { justify-items: center; }
+    .learn-home__reference { max-inline-size: calc(var(--space-16) * 6 + var(--space-6)); }
+    .learn-home__programme { max-inline-size: calc(var(--space-16) * 6 + var(--space-6)); inline-size: 100%; }
+  }
+  @media (--bp-md) { .learn-home__screens { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+  @media (--bp-lg) {
+    .learn-home__copy { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: var(--space-8); align-items: end; }
+    .learn-home__screens { gap: var(--space-8); }
+  }
+  @media (--bp-xl) { .learn-home__screens { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); } }
+</style>
