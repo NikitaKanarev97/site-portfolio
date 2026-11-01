@@ -1,6 +1,6 @@
 # Homepage layout studies (six SVG files)
 
-These are editable **schematic compositions**, not generated product UI and not screenshots. The source code connects to real repository native product image assets with relative image hrefs. View in a local clone; relative media may not appear in the GitHub in-browser SVG preview.
+These are editable **schematic compositions**, not generated product UI and not screenshots. The layouts reference real accepted application media. Some SVGs embed these images directly for standalone viewing; other images resolve through relative hrefs when opened from a local repository clone. If a GitHub SVG preview strips images, use the local files or HTML reference board.
 
 | Direction | Desktop 1440 | Mobile 390 | Decision |
 |---|---|---|---|
