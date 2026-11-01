@@ -145,6 +145,7 @@ const [privateState, ...exceptions] = states.items;
     .vet-responsive__mobile { max-inline-size: calc(var(--space-48) * 2); }
   }
   @media (--bp-lg) {
+    .vet-cover__media { inline-size: 100%; max-inline-size: calc(var(--measure-lead) + var(--space-48)); justify-self: center; }
     .vet-sheet { --vet-step: var(--space-32); }
     .vet-cover__head { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); column-gap: var(--space-16); align-items: end; }
     .vet-cover__eyebrow { grid-column: 1 / -1; }

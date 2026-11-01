@@ -1,0 +1,16 @@
+
+> site-portfolio@0.1.0 check:harmony
+> node scripts/harmony-check.mjs /work/vet-clinic /ru/work/vet-clinic --base=http://127.0.0.1:5378 --widths=1440,1280,768,390,360
+
+/work/vet-clinic @1440: плашек 0, тезисов 0, подписей и абзацев 4 · case-vet-clinic 283 слов, 9 кадров
+/work/vet-clinic @1280: плашек 0, тезисов 0, подписей и абзацев 4 · case-vet-clinic 283 слов, 9 кадров
+/work/vet-clinic @768: плашек 0, тезисов 0, подписей и абзацев 4 · case-vet-clinic 283 слов, 8 кадров
+/work/vet-clinic @390: плашек 0, тезисов 0, подписей и абзацев 4 · case-vet-clinic 283 слов, 8 кадров
+/work/vet-clinic @360: плашек 0, тезисов 0, подписей и абзацев 4 · case-vet-clinic 283 слов, 8 кадров
+/ru/work/vet-clinic @1440: плашек 0, тезисов 0, подписей и абзацев 4 · case-vet-clinic 255 слов, 9 кадров
+/ru/work/vet-clinic @1280: плашек 0, тезисов 0, подписей и абзацев 4 · case-vet-clinic 255 слов, 9 кадров
+/ru/work/vet-clinic @768: плашек 0, тезисов 0, подписей и абзацев 4 · case-vet-clinic 254 слов, 8 кадров
+/ru/work/vet-clinic @390: плашек 0, тезисов 0, подписей и абзацев 4 · case-vet-clinic 254 слов, 8 кадров
+/ru/work/vet-clinic @360: плашек 0, тезисов 0, подписей и абзацев 4 · case-vet-clinic 254 слов, 8 кадров
+
+✓ harmony-check: нарушений нет

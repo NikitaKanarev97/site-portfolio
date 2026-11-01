@@ -37,12 +37,12 @@ export const vetCaseEn: VetCaseCopy = {
     { term: 'Product', value: 'Explore the working product', href: VET_PRODUCT },
   ],
   hero: {
-    desktop: 'visit-audience-desktop', mobile: 'visit-context-mobile', fullDesktop: 'visit-full-desktop', fullMobile: 'visit-full-mobile',
-    alt: 'Visit Record detail: the complete owner-facing care plan and clinic-only private note. Their audience labels and explicit exclusions keep the information boundary visible. The complete record is available below.',
+    desktop: 'visit-workspace-desktop', mobile: 'visit-context-mobile', fullDesktop: 'visit-full-desktop', fullMobile: 'visit-full-mobile',
+    alt: 'Visit Record for Marsik: clinic and patient headers, draft and publication status, saved 4.8 kg Quick Trace, clinical notes and the complete Meloxicam prescription with calculation review.',
     altFull: 'Visit Record: Marsik’s sourced 4.8 kg trace, clinical fields, private note, 0.95 ml calculation example, selected services and separate save actions.',
     altMobile: 'Native mobile Visit Record detail: Marsik’s visit context and complete saved 4.8 kg Quick Trace. The full record is available below.',
     caption: 'Visit Record · clinical context, prescription and services stay together.',
-    captionDesktop: 'Visit Record · owner-facing plan and clinic-only note have explicit audiences.',
+    captionDesktop: 'Visit Record · patient context, clinical notes and prescription review.',
   },
   problem: {
     label: '02 · The problem', title: 'Information gets lost between responsibilities.',
