@@ -5,7 +5,7 @@ import { createHash } from 'node:crypto';
 const require = createRequire(`${process.env.PLAYWRIGHT_REPO ?? 'D:/Claude-projects/b2b-dssl'}/package.json`);
 const { chromium } = require('playwright');
 const phase = process.argv[2] ?? 'before';
-const origin = process.env.PORTFOLIO_ORIGIN ?? 'http://127.0.0.1:4411';
+const origin = process.env.PORTFOLIO_ORIGIN ?? 'http://127.0.0.1:4412';
 const root = `audit/portfolio-home-v3/stage-01`;
 await mkdir(`${root}/screenshots/${phase}`, { recursive: true });
 const browser = await chromium.launch({ headless: true });
