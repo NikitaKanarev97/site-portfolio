@@ -77,7 +77,7 @@ const [privateState, ...exceptions] = states.items;
 
     <section class="ds-container" id="outcome" aria-labelledby="outcome-title">
       <div class="vet-outcome">
-        <div class="vet-outcome__lead"><p class="ds-meta-sm vet-label">{outcome.label}</p><h2 class="ds-heading-4xl" id="outcome-title">{outcome.title}</h2><p class="ds-body-lg vet-body" data-h="lead">{outcome.body}</p></div>
+        <div class="vet-outcome__lead"><p class="ds-meta-sm vet-label">{outcome.label}</p><h2 class="ds-heading-3xl" id="outcome-title">{outcome.title}</h2><p class="ds-body-lg vet-body" data-h="lead">{outcome.body}</p></div>
         <div class="vet-outcome__trade"><p class="ds-heading-xl">{outcome.tradeLabel}</p><p class="ds-body-base vet-body">{outcome.trade}</p></div>
         <div class="vet-outcome__cta"><TextLink type="arrow" href={outcome.href} external externalLabel={locale === 'ru' ? 'Откроется в новой вкладке' : 'Opens in a new tab'}>{outcome.cta}</TextLink><p class="ds-body-sm vet-body">{outcome.note}</p></div>
       </div>
@@ -132,9 +132,9 @@ const [privateState, ...exceptions] = states.items;
   .vet-state { display: grid; align-content: start; gap: var(--flow-node); }
   .vet-state :global(.vet-shot) { justify-self: start; }
   .vet-outcome { display: grid; gap: var(--flow-group); padding: var(--space-6); background: var(--surface-subtle); border-radius: var(--radius-media); }
-  .vet-outcome > * { min-inline-size: 0; overflow-wrap: anywhere; }
+  .vet-outcome > * { min-inline-size: 0; }
   .vet-outcome__lead, .vet-outcome__trade { display: grid; align-content: start; gap: var(--flow-text); }
-  .vet-outcome__lead h2 { max-inline-size: 21ch; }
+  .vet-outcome__lead h2 { max-inline-size: 26ch; overflow-wrap: normal; word-break: normal; hyphens: none; }
   .vet-outcome__cta { display: grid; gap: var(--flow-pair); }
   .vet-outcome__cta > :global(.ds-link) { min-block-size: var(--space-12); }
   @media (--bp-md) {

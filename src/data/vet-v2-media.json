@@ -1454,5 +1454,75 @@
     "selector": "#dose-result",
     "appearsIn": "Clinical workflow / native-size arithmetic review",
     "sha256": "e1590c9a8015037ae96f8c9001e9fe5d4c8f2fc3bf90c42b00afe41b5dcbdf0d"
+  },
+  "en/visit-audience-desktop": {
+    "src": "/media/case-vet-v2/en/visit-audience-desktop.webp",
+    "width": 1696,
+    "height": 694,
+    "cssWidth": 848,
+    "cssHeight": 347,
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "sourcePath": "src/screens/visit-record/VisitRecord.tsx",
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-visit-full-desktop.png",
+    "route": "/app/visit-record?patient=marsik",
+    "locale": "en",
+    "state": "Initial saved owner-facing Plan and complete clinic-only Private note; unpublished",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 2
+    },
+    "clip": {
+      "x": 96,
+      "y": 985,
+      "width": 848,
+      "height": 347
+    },
+    "selector": "#record-plan parent field + #record-private; 16 CSS px native canvas",
+    "appearsIn": "Desktop hero only; full original remains available for inspection",
+    "sha256": "0098d512528b8c4b4ec833882c9508ef349b8d3934552e34153e79790a1002eb",
+    "derivedFrom": "en/visit-full-desktop",
+    "sourcePixelCrop": {
+      "left": 158,
+      "top": 1824,
+      "width": 1696,
+      "height": 694
+    }
+  },
+  "ru/visit-audience-desktop": {
+    "src": "/media/case-vet-v2/ru/visit-audience-desktop.webp",
+    "width": 1696,
+    "height": 694,
+    "cssWidth": 848,
+    "cssHeight": 347,
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "sourcePath": "src/screens/visit-record/VisitRecord.tsx",
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-visit-full-desktop.png",
+    "route": "/ru/app/visit-record?patient=marsik",
+    "locale": "ru",
+    "state": "Initial saved owner-facing Plan and complete clinic-only Private note; unpublished",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 2
+    },
+    "clip": {
+      "x": 96,
+      "y": 985,
+      "width": 848,
+      "height": 347
+    },
+    "selector": "#record-plan parent field + #record-private; 16 CSS px native canvas",
+    "appearsIn": "Desktop hero only; full original remains available for inspection",
+    "sha256": "5b2ded59f9261a803e3bc3731943f1558fe94f3be15dfaf55da7c0a416a6dc0e",
+    "derivedFrom": "ru/visit-full-desktop",
+    "sourcePixelCrop": {
+      "left": 158,
+      "top": 1824,
+      "width": 1696,
+      "height": 694
+    }
   }
 }

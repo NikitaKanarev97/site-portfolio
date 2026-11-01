@@ -1,5 +1,5 @@
 export type VetShotCopy = {
-  desktop: string; mobile: string; alt: string; altMobile?: string; caption?: string;
+  desktop: string; mobile: string; alt: string; altMobile?: string; altFull?: string; caption?: string; captionDesktop?: string;
   fullDesktop?: string; fullMobile?: string;
 };
 type Section = { label: string; title: string; body: string };
@@ -37,10 +37,12 @@ export const vetCaseEn: VetCaseCopy = {
     { term: 'Product', value: 'Explore the working product', href: VET_PRODUCT },
   ],
   hero: {
-    desktop: 'visit-full-desktop', mobile: 'visit-context-mobile', fullMobile: 'visit-full-mobile',
-    alt: 'Visit Record: Marsik’s sourced 4.8 kg trace, clinical fields, private note, 0.95 ml calculation example, selected services and separate save actions.',
+    desktop: 'visit-audience-desktop', mobile: 'visit-context-mobile', fullDesktop: 'visit-full-desktop', fullMobile: 'visit-full-mobile',
+    alt: 'Visit Record detail: the complete owner-facing care plan and clinic-only private note. Their audience labels and explicit exclusions keep the information boundary visible. The complete record is available below.',
+    altFull: 'Visit Record: Marsik’s sourced 4.8 kg trace, clinical fields, private note, 0.95 ml calculation example, selected services and separate save actions.',
     altMobile: 'Native mobile Visit Record detail: Marsik’s visit context and complete saved 4.8 kg Quick Trace. The full record is available below.',
     caption: 'Visit Record · clinical context, prescription and services stay together.',
+    captionDesktop: 'Visit Record · owner-facing plan and clinic-only note have explicit audiences.',
   },
   problem: {
     label: '02 · The problem', title: 'Information gets lost between responsibilities.',
