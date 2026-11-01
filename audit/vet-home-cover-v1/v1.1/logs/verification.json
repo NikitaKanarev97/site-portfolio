@@ -1,0 +1,53 @@
+{
+  "baseline": "24e0a22",
+  "sourceDiff": [
+    "src/components/vet/VetHome.astro"
+  ],
+  "results": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "gapBefore": 12,
+      "gapAfter": 24,
+      "cardHeightDelta": 12,
+      "imageSourceAndDimensionsIdentical": true,
+      "paddingIdentical": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "gapBefore": 12,
+      "gapAfter": 24,
+      "cardHeightDelta": 12,
+      "imageSourceAndDimensionsIdentical": true,
+      "paddingIdentical": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "gapBefore": 12,
+      "gapAfter": 24,
+      "cardHeightDelta": 12,
+      "imageSourceAndDimensionsIdentical": true,
+      "paddingIdentical": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "locale": "ru",
+      "width": 390,
+      "gapBefore": 12,
+      "gapAfter": 24,
+      "cardHeightDelta": 12,
+      "imageSourceAndDimensionsIdentical": true,
+      "paddingIdentical": true,
+      "overflow": 0,
+      "errors": []
+    }
+  ],
+  "otherCoversCasePageAndVisitScreenshotsUnchanged": true
+}

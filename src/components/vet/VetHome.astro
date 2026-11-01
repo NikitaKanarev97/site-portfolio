@@ -14,7 +14,7 @@ const copy = vetHome[locale];
   <figcaption class="ds-body-sm">{copy.caption}</figcaption>
 </figure>
 <style>
-  .vet-home { display: grid; gap: var(--flow-pair); margin: 0; min-inline-size: 0; padding: var(--stage-inset); background: var(--surface-cover-vet); color: var(--text-default); border-radius: var(--radius-lg); }
+  .vet-home { display: grid; gap: calc(var(--flow-pair) + var(--space-3)); margin: 0; min-inline-size: 0; padding: var(--stage-inset); background: var(--surface-cover-vet); color: var(--text-default); border-radius: var(--radius-lg); }
   .vet-home figcaption { color: var(--text-subtle); }
   @media (--below-bp-lg) {
     .vet-home { padding: var(--space-4); }
