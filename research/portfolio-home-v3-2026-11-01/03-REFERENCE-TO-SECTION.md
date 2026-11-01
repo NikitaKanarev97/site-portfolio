@@ -1,0 +1,25 @@
+# 03 · Block → verified visual → adapted implementation
+
+These links point to images actually preserved in the Git repository as October reference studies or late-October product captures. They are not fresh live-capture claims. Full 26-link index: [REFERENCE_MATRIX](../portfolio-premium-v3-2026-11-01/REFERENCE_MATRIX.md).
+
+| Homepage section | Screenshot(s) to open and compare | Observed strength | Adapt | Reject |
+|---|---|---|---|---|
+| Hero headline | [Garri editorial thesis](../portfolio-premium-v3-2026-11-01/references/thumbs/gr-thesis.jpg), [our current hero 1440](../portfolio-premium-v3-2026-11-01/baseline/agent-ops/en-1440-home-viewport.webp) | Large editorial thinking with restrained layout | Keep two-line phrase, connect immediately to product proof | A longer vague marketing slogan, showy decorative gradients |
+| First case handoff | [HA hero](../portfolio-premium-v3-2026-11-01/references/thumbs/ha-cover.jpg), [HA mobile UI stage](../portfolio-premium-v3-2026-11-01/references/thumbs/ha-phones.jpg) | The authentic product itself is the visual statement | One real Agent scene enters naturally beneath the hero | Fake 3D phones, scroll-jacking transitions |
+| Personal identity / mobile | [Dounar MyTeam title + facts](../portfolio-premium-v3-2026-11-01/references/thumbs/dn-head.jpg), [our Home 390](../portfolio-premium-v3-2026-11-01/baseline/agent-ops/en-390-home-viewport.webp) | Instant role + project context | Compact portrait, name, specialism, factual next action | 5-row link stack before any product pixel |
+| 01 Agent Ops | [Garri focused decision](../portfolio-premium-v3-2026-11-01/references/thumbs/gr-swap1.jpg), [our Agent case](../portfolio-premium-v3-2026-11-01/baseline/agent-ops/en-1440-case-viewport.webp) | One consequential user action dominates | Readable real $120 credit context and decision (synthetic data) | Several miniature windows or fake live outcomes |
+| 02 B2B | [Garri comparison](../portfolio-premium-v3-2026-11-01/references/thumbs/gr-comp.jpg), [our home](../portfolio-premium-v3-2026-11-01/baseline/b2b/en-1440-home.png), [390](../portfolio-premium-v3-2026-11-01/baseline/b2b/en-390-home.png) | Comparison explains difference and a decision | Source row → options → confirmation, with large readable UI | Selling example '41/48' as achieved metric |
+| 03 Learn | [Dounar process diagram](../portfolio-premium-v3-2026-11-01/references/thumbs/dn-diag.jpg), [our Learn cover](../portfolio-premium-v3-2026-11-01/baseline/learn/en-1440-learn-cover.png), [390](../portfolio-premium-v3-2026-11-01/baseline/learn/en-390-learn-cover.png) | Fast understanding by contrasted evidence | Reference answer now vs structured learning path in focused stage | Three tiny panels surrounded by excess blank canvas |
+| 04 Vet Clinic | [HA process](../portfolio-premium-v3-2026-11-01/references/thumbs/ha-flow.jpg), [OLD Vet screenshot](../portfolio-premium-v3-2026-11-01/baseline/historical/vet-hero-desktop.png) | One user workflow and clinical trace | Use newer accepted actual Vet screenshot after source provenance checked | Present OLD Sep picture as latest Vet app |
+| 05 Pawly | [Historical shot for context only](../portfolio-premium-v3-2026-11-01/baseline/historical/pawly-mobile.png) | Not a visual redesign target | Preserve current Pawly stage and link exactly | Any cover replacement or clipping change |
+| Webflow builds | [Archived original section](../../audit/case-presentation/more-desktop.png), [Tubik object context](../portfolio-premium-v3-2026-11-01/references/thumbs/tb-texture.jpg) | Secondary craft evidence deserves a different, smaller rhythm | Compact thumbnails, own information hierarchy, credible design-to-code | Four giant product case heroes or unverified external links |
+| How I work | [Dounar diagnosis](../portfolio-premium-v3-2026-11-01/references/thumbs/dn-diag.jpg), [HA Aims](../portfolio-premium-v3-2026-11-01/references/thumbs/ha-aims.jpg) | Workflow becomes credible when supported with decisions | 3 clear steps, concise handoff, examples where factual | Generic buzzwords/decoration/invented research |
+| End CTA | [Victor Vorontsov](https://www.victors.life/), [Anton Blinkov](https://antonblinkov.com/) | Clear availability and contact | Existing CV, email and links with short next step | Unsupported availability or fake schedule booking |
+
+## Review these in a single image comparison
+A. Original 1440+390 homepage beside Garri thesis and HA opening; first-fold visual proof.  
+B. Actual four eligible previews beside Garri swap/comp and Dounar; observe normal scale and meaningful details.  
+C. Webflow/process/footer with current browser capture, not only Sep screenshot.  
+D. Repeat all for RU and mobile 360/390; screenshots are the acceptance criterion.
+
+The full remote HTML of Garri, HA, Victor and Anton is readable, but live pixel screenshots of all 26 references were not captured in this research turn. SCRN is a native-app catalog, so the web portfolio screenshots above are the relevant primary evidence.
