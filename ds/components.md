@@ -612,3 +612,7 @@ unchanged. Default presentation=frame remains for the archive and isolated
 details/results, with equal 16/24 px fields. Both variants and MediaZoom retain
 the same 16 px outer radius. EN/RU DPR-2 sources, semantic boundaries and native
 widths are recorded in the manifest; browser verification covers both variants.
+
+## Vet Clinic OS V2 · 1 November 2026
+
+Case-scoped `vet/VetCase`, `VetShot`, `VetHome` compose MetaList, CaseScreen/MediaZoom, TextLink and CaseNext over source-manifest-backed native product captures. Map: `screens/case-vet-v2.md`. VetShot uses natural dimensions, a documentary CSS-width ceiling, genuine mobile sources and separate complete-screen links for details. No CSS cropping, additional image masks, fabricated UI or new global tokens. VetCase uses a single Visit Record cover, an editorial three-role flow, sourced calculation, invoice/publication/owner outputs, critical states and an honest implementation outcome. VetHome replaces only the Vet preview. Existing typography, semantic surfaces, focus and spacing; registered motion attributes only. Localized alt, section headings and structural/media parity assertion. All captions sit outside screenshots.

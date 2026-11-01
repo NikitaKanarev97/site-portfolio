@@ -1,0 +1,17 @@
+---
+import VetShot from './VetShot.astro';
+import { vetCaseEn } from '../../copy/cases/vet-v2';
+import { vetCaseRu } from '../../copy/ru/cases/vet-v2';
+const { locale, loading = 'lazy', href, linkLabel } = Astro.props as { locale: 'en' | 'ru'; loading?: 'eager' | 'lazy'; href?: string; linkLabel?: string };
+const copy = locale === 'ru' ? vetCaseRu : vetCaseEn;
+---
+<div class="vet-home">
+  <div class="vet-home__copy"><p class="ds-meta-sm">{copy.home.label}</p><p class="ds-heading-3xl">{copy.home.title}</p><p class="ds-body-base">{copy.home.body}</p></div>
+  <VetShot shot={{ ...copy.hero, caption: undefined }} locale={locale} loading={loading} href={href} linkLabel={linkLabel} />
+</div>
+<style>
+  .vet-home { display: grid; gap: var(--flow-node); align-items: start; padding: var(--stage-inset); border-radius: var(--radius-media); background: var(--surface-cover-vet); }
+  .vet-home__copy { display: grid; gap: var(--flow-text); }
+  .vet-home__copy > :first-child, .vet-home__copy > :last-child { color: var(--text-subtle); }
+  @media (--bp-lg) { .vet-home { grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: var(--space-12); } }
+</style>

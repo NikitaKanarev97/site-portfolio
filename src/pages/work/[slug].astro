@@ -4,6 +4,9 @@ import CaseStory from '../../components/CaseStory.astro';
 import PortalCase from '../../components/portal/PortalCase.astro';
 import AgentCase from '../../components/agent/AgentCase.astro';
 import LearnCase from '../../components/learn/LearnCase.astro';
+import VetCase from '../../components/vet/VetCase.astro';
+import { vetCaseEn, assertVetPair } from '../../copy/cases/vet-v2';
+import { vetCaseRu } from '../../copy/ru/cases/vet-v2';
 import { learnCaseEn } from '../../copy/cases/learn-v2';
 import { learnCaseRu } from '../../copy/ru/cases/learn-v2';
 import { agentCaseEn } from '../../copy/cases/agent-ops-v2';
@@ -28,12 +31,14 @@ const site = locale === 'ru' ? siteRu : siteEn;
 const portal = entry.slug === 'partner-portal' ? (locale === 'ru' ? portalCaseRu : portalCaseEn) : undefined;
 const agent = entry.slug === 'agent-ops-console' ? (locale === 'ru' ? agentCaseRu : agentCaseEn) : undefined;
 const learn = entry.slug === 'learn' ? (locale === 'ru' ? learnCaseRu : learnCaseEn) : undefined;
+assertVetPair(vetCaseEn, vetCaseRu);
+const vet = entry.slug === 'vet-clinic' ? (locale === 'ru' ? vetCaseRu : vetCaseEn) : undefined;
 const nextLink = { label: locale === 'ru' ? 'Следующий кейс' : 'Next case', title: next.story.cover.title, href: nextHref, theme: next.theme };
 ---
-<PageShell title={learn?.meta.title ?? agent?.meta.title ?? entry.meta.title} description={learn?.meta.description ?? agent?.meta.description ?? entry.meta.description} lang={locale}
+<PageShell title={vet?.meta.title ?? learn?.meta.title ?? agent?.meta.title ?? entry.meta.title} description={vet?.meta.description ?? learn?.meta.description ?? agent?.meta.description ?? entry.meta.description} lang={locale}
   current={(locale === 'ru' ? '/ru' : '') + '/work/' + entry.slug}
-  ogCard={'work-' + entry.slug + (agent ? '-v2' : '') + (locale === 'ru' ? '-ru' : '')} siteCopy={site}>
-  {agent ? <AgentCase copy={agent} locale={locale} next={nextLink} /> : portal
+  ogCard={'work-' + entry.slug + (agent || vet ? '-v2' : '') + (locale === 'ru' ? '-ru' : '')} siteCopy={site}>
+  {vet ? <VetCase copy={vet} locale={locale} next={nextLink} /> : agent ? <AgentCase copy={agent} locale={locale} next={nextLink} /> : portal
     ? <PortalCase copy={portal} locale={locale} next={nextLink} />
     : learn ? <LearnCase copy={learn} locale={locale} next={nextLink} />
     : <CaseStory story={entry.story} id={'case-' + entry.slug} lang={locale} next={nextLink} />}

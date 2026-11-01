@@ -26,6 +26,8 @@ import { aboutRu } from './ru/about.ts';
 import { casesRu } from './ru/cases/index.ts';
 import { agentCaseEn } from './cases/agent-ops-v2';
 import { agentCaseRu } from './ru/cases/agent-ops-v2';
+import { vetCaseEn } from './cases/vet-v2';
+import { vetCaseRu } from './ru/cases/vet-v2';
 
 export const OG_WIDTH = 1200;
 export const OG_HEIGHT = 630;
@@ -53,6 +55,8 @@ const BYLINE = `${NAME} — Product Designer`;
 const BYLINE_RU = `${NAME_RU} — продуктовый дизайнер`;
 
 export const OG_CARDS: readonly OgCard[] = [
+  { id: 'work-vet-clinic-v2', eyebrow: vetCaseEn.eyebrow, title: vetCaseEn.title, footnote: BYLINE },
+  { id: 'work-vet-clinic-v2-ru', eyebrow: vetCaseRu.eyebrow, title: vetCaseRu.title, footnote: BYLINE_RU },
   { id: 'work-agent-ops-console-v2', eyebrow: agentCaseEn.eyebrow, title: agentCaseEn.title, footnote: BYLINE },
   { id: 'work-agent-ops-console-v2-ru', eyebrow: agentCaseRu.eyebrow, title: agentCaseRu.title, footnote: BYLINE_RU },
   {
@@ -126,7 +130,7 @@ export const OG_FEATURES: Record<string, { title: string; description: string; s
   },
   'work-vet-clinic': {
     title: 'Vet Clinic OS',
-    description: 'Records that fit a 30-second gap between patients',
+    description: 'One visit. Three connected roles.',
   },
 };
 

@@ -417,3 +417,7 @@ product links. Text precedes its proof and never overlays UI. Mobile uses native
 390 px captures or named desktop details, never a whole desktop billboard.
 Shared content diagram remains a native disclosure to avoid forcing a long graph
 into the skim layer. Only Learn is dispatched to this renderer.
+
+## Vet case V2 · 1 November 2026
+
+Case-scoped composition: `screens/case-vet-v2.md`. Split editorial heads use 3:9 columns from bp-lg; the three-role ordered flow uses plain top rules and becomes a vertical list on phones. Product crops retain native padding; the owner comparison pairs actual desktop and mobile frames. No new generic card, colour system or motion. Shared CaseStory is unchanged.
