@@ -1,0 +1,23 @@
+---
+import CaseScreen from '../CaseScreen.astro';
+import { vetHome } from '../../copy/vet-home';
+interface Props { locale: 'en' | 'ru'; loading?: 'eager' | 'lazy'; href: string; linkLabel?: string }
+const { locale, loading = 'lazy', href, linkLabel } = Astro.props;
+const copy = vetHome[locale];
+---
+<figure class="vet-home">
+  <CaseScreen item={{
+    src: `/media/vet-home-cover-v1/visit-${locale}-1440.webp`,
+    srcNarrow: `/media/vet-home-cover-v1/visit-${locale}-390.webp`,
+    alt: copy.alt, altNarrow: copy.altNarrow, device: 'panel',
+  }} loading={loading} href={href} linkLabel={linkLabel} narrowAt="lg" />
+  <figcaption class="ds-body-sm">{copy.caption}</figcaption>
+</figure>
+<style>
+  .vet-home { display: grid; gap: var(--flow-pair); margin: 0; min-inline-size: 0; padding: var(--stage-inset); background: var(--surface-cover-vet); color: var(--text-default); border-radius: var(--radius-lg); }
+  .vet-home figcaption { color: var(--text-subtle); }
+  @media (--below-bp-lg) {
+    .vet-home { padding: var(--space-4); }
+    .vet-home :global(.case-screen) { max-inline-size: calc(var(--space-48) * 2); justify-self: center; }
+  }
+</style>

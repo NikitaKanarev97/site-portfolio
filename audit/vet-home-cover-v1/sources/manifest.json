@@ -1,0 +1,71 @@
+{
+  "acceptedMerge": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+  "invoiceDelivery": "3112fc053f4ed76c65ddaabae7f28f06fb1db33e",
+  "operation": "exact archived browser PNG -> rectangular crop -> lossless WebP; no fresh product capture",
+  "entries": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "source": "audit/visit-record-premium-v1/v1.3/after/1440-en-normal.png",
+      "local": "audit/vet-home-cover-v1/sources/visit-en-1440.png",
+      "sourceSha": "5ae80f674170ab59d09bf3704fbface87d63e003",
+      "sha256": "9af9f80433820563eeaa618b2c0021b8af2566154d588ea304f952d5629ba5e1",
+      "crop": {
+        "left": 88,
+        "top": 196,
+        "width": 1264,
+        "height": 674
+      },
+      "output": "public/media/vet-home-cover-v1/visit-en-1440.webp",
+      "outputSha256": "3afff0e953e150bb6f4c260bd038a3f7af59415546cf44893e7fe0daf1cc5ecd"
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "source": "audit/visit-record-premium-v1/v1.3/after/390-en-normal.png",
+      "local": "audit/vet-home-cover-v1/sources/visit-en-390.png",
+      "sourceSha": "5ae80f674170ab59d09bf3704fbface87d63e003",
+      "sha256": "1a6b173813fbbbde4d3e32f85c6283663431848d58aa4cb80d4d41c76a1b8660",
+      "crop": {
+        "left": 0,
+        "top": 110,
+        "width": 390,
+        "height": 582
+      },
+      "output": "public/media/vet-home-cover-v1/visit-en-390.webp",
+      "outputSha256": "d3b855ca8bb2a661b6dc8dfdadcc6617289b1bee05efec5f7ac73dc981cb9e82"
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "source": "audit/visit-record-premium-v1/v1.3/after/1440-ru-normal.png",
+      "local": "audit/vet-home-cover-v1/sources/visit-ru-1440.png",
+      "sourceSha": "5ae80f674170ab59d09bf3704fbface87d63e003",
+      "sha256": "968540f611465b9f778fe994c29c04ac626a5f694c862b70b58b227264bc978e",
+      "crop": {
+        "left": 88,
+        "top": 196,
+        "width": 1264,
+        "height": 694
+      },
+      "output": "public/media/vet-home-cover-v1/visit-ru-1440.webp",
+      "outputSha256": "a4a8de1382fe5020bef4ee740c6118642978282d489d2ce698e439e106ada8d0"
+    },
+    {
+      "locale": "ru",
+      "width": 390,
+      "source": "audit/visit-record-premium-v1/v1.3/after/390-ru-normal.png",
+      "local": "audit/vet-home-cover-v1/sources/visit-ru-390.png",
+      "sourceSha": "5ae80f674170ab59d09bf3704fbface87d63e003",
+      "sha256": "05f7ab161583c349575086bdf4cd7ef79689da7a1a920238bc46fc86e916c6d3",
+      "crop": {
+        "left": 0,
+        "top": 110,
+        "width": 390,
+        "height": 582
+      },
+      "output": "public/media/vet-home-cover-v1/visit-ru-390.webp",
+      "outputSha256": "d99211f817aed853c37e7b734973adc5247ec4e3f2bddfe91bb3813423adc066"
+    }
+  ]
+}

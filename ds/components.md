@@ -101,6 +101,8 @@ CaseScreen объявляет fade-image на всей рамке с изобр�
 
 # Компоненты — Site-portfolio
 
+**02.11.2026 · Vet Home Cover V1.** `VetHome` — Home-only composition of existing `CaseScreen`, one responsive Visit Record V1.3 image and a figcaption; `VetStage` selects it only when receiving the Home case href. `locale`, `loading`, `href`, `linkLabel`; narrowAt=lg uses the native 390 excerpt through tablet. Accepted source `5ae80f6`, provenance/crop rectangles in `audit/vet-home-cover-v1/sources/manifest.json`. Existing surface-cover-vet, stage-inset, flow-pair, space-4/48, radius-lg and body-sm/subtle roles; no new tokens or motion. One image/link, no simulated controls; localized desktop/mobile alt, native keyboard case navigation, static no-JS/reduce. CaseCover retains the original VetStage composition.
+
 **05.10.2026 · публикация версии 4394.** Источник — текущий checkout `portfolio-art-direction-h` на базе `d684f91` вместе с локальными Home/About/AuthorPortrait и logo-v4. `Footer` принимает location/utcLabel/timeZone как необязательную группу; русская локаль передаёт только copyright. Hero и AboutChapters опускают authorization при `null`. В RU не публикуются местонахождение, гражданство, релокация и часовой пояс, включая метаданные, OG и русское PDF. EN сохраняет состав и сведения версии 4394.
 
 ## H · `WorkStage` / 04.10.2026

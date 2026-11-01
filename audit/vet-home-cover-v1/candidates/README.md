@@ -1,0 +1,1 @@
+Candidate images are rectangular excerpts of accepted real product captures. Screenshots/candidates renders each in the identical BEFORE Home card at 1440 and 390. The labeled JPEG is a presentation board, not a raw browser screenshot.

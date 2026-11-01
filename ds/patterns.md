@@ -1,3 +1,7 @@
+## Vet Home Cover V1 · 02.11.2026 · implementation for review
+
+Home Vet: FeaturedCase → WorkStage → VetStage (href present) → VetHome → one CaseScreen/picture + figcaption. Desktop presents the contiguous clinical document/real prescription excerpt; below bp-lg uses one native narrow patient/visit/clinical-note excerpt, with source dimensions reserved and a DS width cap through tablet. No stack, duplicate source, decorative metric or product restyling. Existing semantic stage/spacing/type roles only. CaseCover still receives VetStage's original no-href branch. Provenance and exact source/crop hashes: audit/vet-home-cover-v1/sources/manifest.json.
+
 ## Home cover polish · 01.11.2026 · pending independent review
 
 Existing FeaturedCase → WorkStage → AgentHome/PortalHome composition is retained.

@@ -1,5 +1,6 @@
 ---
 import CaseScreen from './CaseScreen.astro';
+import VetHome from './vet/VetHome.astro';
 import { makeVetStory } from '../copy/cases/vet-clinic';
 import { learnVetStageCopy } from '../copy/learn-vet-stage';
 const {locale,loading='lazy',href,linkLabel} = Astro.props as {locale:'en'|'ru';loading?:'eager'|'lazy';href?:string;linkLabel?:string};
@@ -12,12 +13,12 @@ const [trace,invoice,owner] = step.payload.items;
 const traceShot = {...trace.shot, src:trace.shot.srcNarrow ?? trace.shot.src, nativeWidth:undefined};
 const invoiceShot = {...invoice.shot, src:invoice.shot.srcNarrow ?? invoice.shot.src, nativeWidth:undefined};
 ---
-<div class:list={['vet-stage', !href && 'vet-stage--cover']} data-motion-group data-motion-stagger="tight">
+{href ? <VetHome locale={locale} loading={loading} href={href} linkLabel={linkLabel} /> : <div class:list={['vet-stage', !href && 'vet-stage--cover']} data-motion-group data-motion-stagger="tight">
   <figure class="vet-stage__trace"><CaseScreen item={traceShot} loading={loading} href={href} linkLabel={linkLabel} /></figure>
   <figure class="vet-stage__invoice"><CaseScreen item={invoiceShot} loading={loading} href={href} linkLabel={linkLabel} /></figure>
   <figure class="vet-stage__owner"><CaseScreen item={{...owner.shot, nativeWidth: undefined}} loading={loading} href={href} linkLabel={linkLabel} /></figure>
   {href && <p class="vet-stage__caption ds-body-sm">{copy.caption}</p>}
-</div>
+</div>}
 <style>
   .vet-stage { display:grid; gap:var(--flow-node); min-inline-size:0; padding:var(--stage-inset); border-radius:var(--radius-lg); background:var(--surface-cover-vet); color:var(--text-default); }
   .vet-stage figure { margin:0; min-inline-size:0; display:grid; align-content:start; }

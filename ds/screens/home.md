@@ -1,3 +1,7 @@
+## Vet Home Cover V1 · 02.11.2026 · implementation for independent review
+
+Only the Vet Home stage changes: one accepted Visit Record V1.3 excerpt (source 5ae80f6, included in accepted product merge 3835c4f) replaces the old three-role screenshot stack. At 1440: contiguous visit heading, Quick Trace, clinical note and complete prescription with its calculation limitation. At 390/360: native patient/visit/Quick Trace and first complete clinical field; no compressed desktop table. Below bp-lg the narrow panel is width-capped by existing space-48. Source files, exact rectangular crops and lossless output hashes: audit/vet-home-cover-v1/sources/manifest.json. VetHome reuses CaseScreen, semantic vet surface and existing spacing/type roles. All hero/Agent/B2B/Learn/Pawly decisions and case-page media remain baseline; VetStage chooses this composition only when the Home href exists. Matched evidence and limitations: audit/vet-home-cover-v1/REPORT.md.
+
 ## Homepage cover polish · 01.11.2026 · pending independent review
 
 Retain Premium V3.1's Editorial Bridge, order, typography, actions and proofFirst.
