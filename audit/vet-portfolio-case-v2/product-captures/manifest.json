@@ -1,0 +1,1634 @@
+{
+  "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+  "browser": "151.0.7922.34",
+  "capturedAt": "2026-11-01T16:48:22.644Z",
+  "base": "http://127.0.0.1:5370",
+  "errors": [],
+  "policy": "Native browser screenshots. No CSS injection, retouching, compositing, recolouring, hidden warnings or translated overlays. Honest bounds remove only external ScreenViewer chrome; component crops are complete. Same default fixtures and real publication snapshot; blocked/missing states reproduce existing audit model fixtures. DPR 2 lossless WebP, no resizing.",
+  "media": {
+    "en/visit-full-desktop": {
+      "src": "/media/case-vet-v2/en/visit-full-desktop.webp",
+      "width": 2812,
+      "height": 2802,
+      "cssWidth": 1406,
+      "cssHeight": 1401,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/visit-record/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-visit-full-desktop.png",
+      "route": "/app/visit-record?patient=marsik",
+      "locale": "en",
+      "state": "Initial saved clinical record; unpublished",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 17,
+        "y": 73,
+        "width": 1406,
+        "height": 1401
+      },
+      "selector": "[data-visit-record]",
+      "appearsIn": "Hero / complete inspection",
+      "sha256": "d01ce840a6eaf41dfb75e779c83f48e0f0b84984a9eaa3e7f97c95250ff27ad5"
+    },
+    "en/private-desktop": {
+      "src": "/media/case-vet-v2/en/private-desktop.webp",
+      "width": 1632,
+      "height": 380,
+      "cssWidth": 816,
+      "cssHeight": 190,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/visit-record/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-private-desktop.png",
+      "route": "/app/visit-record?patient=marsik",
+      "locale": "en",
+      "state": "Saved private note; complete native section",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 112,
+        "y": 1126,
+        "width": 816,
+        "height": 190
+      },
+      "selector": "#record-private",
+      "appearsIn": "Critical states / clinical-only note",
+      "sha256": "2fb562b772be9b0134a572f46f691f2016f510fad2efee913a0bd4339cf4db17"
+    },
+    "en/dose-full-desktop": {
+      "src": "/media/case-vet-v2/en/dose-full-desktop.webp",
+      "width": 2812,
+      "height": 1782,
+      "cssWidth": 1406,
+      "cssHeight": 891,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/dose-calculator/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-dose-full-desktop.png",
+      "route": "/app/dose-calculator?patient=marsik",
+      "locale": "en",
+      "state": "Normal seeded single-dose calculation; not recorded",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 17,
+        "y": 73,
+        "width": 1406,
+        "height": 891
+      },
+      "selector": "[data-dose-calculator]",
+      "appearsIn": "Clinical workflow / complete inspection",
+      "sha256": "4c5b2f34dc6dddb5d58de11933f671cb2a3e3518f9f28ef5617b37bd8f5d2469"
+    },
+    "en/dose-review-desktop": {
+      "src": "/media/case-vet-v2/en/dose-review-desktop.webp",
+      "width": 1168,
+      "height": 1216,
+      "cssWidth": 584,
+      "cssHeight": 608,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/dose-calculator/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-dose-review-desktop.png",
+      "route": "/app/dose-calculator?patient=marsik",
+      "locale": "en",
+      "state": "Complete answer, arithmetic, rounding, limitation and record action",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 744,
+        "y": 324,
+        "width": 584,
+        "height": 608
+      },
+      "selector": "#dose-result",
+      "appearsIn": "Mobile clinical workflow",
+      "sha256": "b81e6de128c4035d3684615c4d3a2e3deacb1b7bf827afd1d72f80e7c52ad3dc"
+    },
+    "en/invoice-full-desktop": {
+      "src": "/media/case-vet-v2/en/invoice-full-desktop.webp",
+      "width": 2812,
+      "height": 1976,
+      "cssWidth": 1406,
+      "cssHeight": 988,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/invoice-draft/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-invoice-full-desktop.png",
+      "route": "/app/invoice-draft?patient=marsik",
+      "locale": "en",
+      "state": "Two selected services; unpaid; 1500 RUB",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 17,
+        "y": 73,
+        "width": 1406,
+        "height": 988
+      },
+      "selector": "[data-invoice-workspace]",
+      "appearsIn": "Reception / complete inspection",
+      "sha256": "86e67d76dcb8e630c40b9223f653af6633e099d3a83ba8833cb4119469b6c44c"
+    },
+    "en/invoice-document-desktop": {
+      "src": "/media/case-vet-v2/en/invoice-document-desktop.webp",
+      "width": 1650,
+      "height": 904,
+      "cssWidth": 825,
+      "cssHeight": 452,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/invoice-draft/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-invoice-document-desktop.png",
+      "route": "/app/invoice-draft?patient=marsik",
+      "locale": "en",
+      "state": "Services, total and manual payment-status action; full invoice at inspection",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 246,
+        "y": 394,
+        "width": 825,
+        "height": 452
+      },
+      "selector": "[data-invoice-document]",
+      "appearsIn": "Reception",
+      "sha256": "c4cee0623c0c31c7d4e0d5ace0705c89c6cfd3bd195e2cbbe9feff5bcfd93bb6"
+    },
+    "en/discharge-full-desktop": {
+      "src": "/media/case-vet-v2/en/discharge-full-desktop.webp",
+      "width": 2812,
+      "height": 2466,
+      "cssWidth": 1406,
+      "cssHeight": 1233,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/discharge-preview/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-discharge-full-desktop.png",
+      "route": "/app/discharge-preview?patient=marsik",
+      "locale": "en",
+      "state": "Ready to publish; initial saved plan",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 17,
+        "y": 73,
+        "width": 1406,
+        "height": 1233
+      },
+      "selector": "[data-discharge-preview]",
+      "appearsIn": "Publication / complete inspection",
+      "sha256": "882407660ddcc8b64a9720806784d63d7aeadde0f5ce968c3985ede22a549f23"
+    },
+    "en/discharge-document-desktop": {
+      "src": "/media/case-vet-v2/en/discharge-document-desktop.webp",
+      "width": 1712,
+      "height": 1810,
+      "cssWidth": 856,
+      "cssHeight": 905,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/discharge-preview/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-discharge-document-desktop.png",
+      "route": "/app/discharge-preview?patient=marsik",
+      "locale": "en",
+      "state": "Complete owner document preview; not yet published",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 112,
+        "y": 361,
+        "width": 856,
+        "height": 905
+      },
+      "selector": "[data-discharge-document]",
+      "appearsIn": "Mobile publication",
+      "sha256": "56a40d5b02e6e9b4ecc3d853e309f58f30e210ed5c18271f0af02efb2f06d175"
+    },
+    "en/owner-full-desktop": {
+      "src": "/media/case-vet-v2/en/owner-full-desktop.webp",
+      "width": 2812,
+      "height": 2158,
+      "cssWidth": 1406,
+      "cssHeight": 1079,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/owner-home/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-owner-full-desktop.png",
+      "route": "/app/owner-home?patient=marsik",
+      "locale": "en",
+      "state": "Published version 1 from the same initial saved record",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 17,
+        "y": 73,
+        "width": 1406,
+        "height": 1079
+      },
+      "selector": "[data-owner-home]",
+      "appearsIn": "Owner output / responsive comparison",
+      "sha256": "ffaa24c59981db852228a96e7b6512cc094deeafa7df9c9614f311859ff9ae7a"
+    },
+    "en/owner-overview-desktop": {
+      "src": "/media/case-vet-v2/en/owner-overview-desktop.webp",
+      "width": 2208,
+      "height": 2030,
+      "cssWidth": 1104,
+      "cssHeight": 1015,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/owner-home/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-owner-overview-desktop.png",
+      "route": "/app/owner-home?patient=marsik",
+      "locale": "en",
+      "state": "Complete desktop care article and contact rail; global app header excluded",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 168,
+        "y": 137,
+        "width": 1104,
+        "height": 1015
+      },
+      "selector": "[data-owner-home] > article",
+      "appearsIn": "Responsive comparison / desktop",
+      "sha256": "ebf8376d6bbd25365c778f1c95cad24f73183d4e94836341088d6d5afbbf7d10"
+    },
+    "en/blocked-desktop": {
+      "src": "/media/case-vet-v2/en/blocked-desktop.webp",
+      "width": 640,
+      "height": 1532,
+      "cssWidth": 320,
+      "cssHeight": 766,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/discharge-preview/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-blocked-desktop.png",
+      "route": "/app/discharge-preview?patient=marsik",
+      "locale": "en",
+      "state": "Existing audit model state: saved plan empty; existing owner publication retained",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 1008,
+        "y": 309,
+        "width": 320,
+        "height": 766
+      },
+      "selector": "#discharge-publishing",
+      "appearsIn": "Critical states / blocked publication",
+      "sha256": "781ee764b99a424c51515bb0f4040a221d2d86d50ed9b4666c8e0fbf1c353525"
+    },
+    "en/blocked-full-desktop": {
+      "src": "/media/case-vet-v2/en/blocked-full-desktop.webp",
+      "width": 2812,
+      "height": 2396,
+      "cssWidth": 1406,
+      "cssHeight": 1198,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/discharge-preview/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-blocked-full-desktop.png",
+      "route": "/app/discharge-preview?patient=marsik",
+      "locale": "en",
+      "state": "Empty draft plan; existing published version 1 retained",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 17,
+        "y": 73,
+        "width": 1406,
+        "height": 1198
+      },
+      "selector": "[data-discharge-preview]",
+      "appearsIn": "Critical state complete inspection",
+      "sha256": "a559964fd6332ca2775056d46eb9c568c5a97c0fe86af9f6bcb8a1129cf4b362"
+    },
+    "en/missing-desktop": {
+      "src": "/media/case-vet-v2/en/missing-desktop.webp",
+      "width": 1376,
+      "height": 480,
+      "cssWidth": 688,
+      "cssHeight": 240,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/owner-home/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-missing-desktop.png",
+      "route": "/app/owner-home?patient=marsik",
+      "locale": "en",
+      "state": "Existing audit model state: concentration absent in published prescription; dose unavailable",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 200,
+        "y": 540,
+        "width": 688,
+        "height": 240
+      },
+      "selector": "[aria-labelledby=\"owner-prescription\"]",
+      "appearsIn": "Critical states / unavailable dose",
+      "sha256": "4a35eb147d6596b751a2f713f9d78b7bc2f02436b73547b27a23d23d68f0e620"
+    },
+    "en/missing-full-desktop": {
+      "src": "/media/case-vet-v2/en/missing-full-desktop.webp",
+      "width": 2812,
+      "height": 1912,
+      "cssWidth": 1406,
+      "cssHeight": 956,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/owner-home/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-missing-full-desktop.png",
+      "route": "/app/owner-home?patient=marsik",
+      "locale": "en",
+      "state": "Published prescription concentration absent; clinic confirmation required",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 17,
+        "y": 73,
+        "width": 1406,
+        "height": 956
+      },
+      "selector": "[data-owner-home]",
+      "appearsIn": "Critical state complete inspection",
+      "sha256": "0f0389e5665ab6903fa3e62eb8ddd4d9a3a379f1e9996898acc23ee46f257f52"
+    },
+    "en/visit-full-mobile": {
+      "src": "/media/case-vet-v2/en/visit-full-mobile.webp",
+      "width": 780,
+      "height": 5014,
+      "cssWidth": 390,
+      "cssHeight": 2507,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/visit-record/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-visit-full-mobile.png",
+      "route": "/app/visit-record?patient=marsik",
+      "locale": "en",
+      "state": "Initial saved clinical record; unpublished",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 2507
+      },
+      "selector": "[data-visit-record]",
+      "appearsIn": "Hero / complete inspection",
+      "sha256": "d370513be4d0a1202b312e7a5fc110fd489a6cb40c4677fb51210072f0be3c46"
+    },
+    "en/visit-context-mobile": {
+      "src": "/media/case-vet-v2/en/visit-context-mobile.webp",
+      "width": 780,
+      "height": 794,
+      "cssWidth": 390,
+      "cssHeight": 397,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/visit-record/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-visit-context-mobile.png",
+      "route": "/app/visit-record?patient=marsik",
+      "locale": "en",
+      "state": "Saved context and complete Quick Trace; detail ends before the section navigation",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 397
+      },
+      "selector": "[data-visit-record]",
+      "appearsIn": "Mobile hero / Home",
+      "sha256": "ab6f1618cf9683b1f58e9ab5d669091b2efe42a2fc10256ae9c69ce9dbe559fc"
+    },
+    "en/private-mobile": {
+      "src": "/media/case-vet-v2/en/private-mobile.webp",
+      "width": 716,
+      "height": 466,
+      "cssWidth": 358,
+      "cssHeight": 233,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/visit-record/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-private-mobile.png",
+      "route": "/app/visit-record?patient=marsik",
+      "locale": "en",
+      "state": "Saved private note; complete native section",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 16,
+        "y": 1207,
+        "width": 358,
+        "height": 233
+      },
+      "selector": "#record-private",
+      "appearsIn": "Critical states / clinical-only note",
+      "sha256": "4f1762ea02171e7f5c3f790dd880a903513a0a794bb42ec62b2f1300d1eb0ea8"
+    },
+    "en/dose-full-mobile": {
+      "src": "/media/case-vet-v2/en/dose-full-mobile.webp",
+      "width": 780,
+      "height": 3416,
+      "cssWidth": 390,
+      "cssHeight": 1708,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/dose-calculator/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-dose-full-mobile.png",
+      "route": "/app/dose-calculator?patient=marsik",
+      "locale": "en",
+      "state": "Normal seeded single-dose calculation; not recorded",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 1708
+      },
+      "selector": "[data-dose-calculator]",
+      "appearsIn": "Clinical workflow / complete inspection",
+      "sha256": "8cf08fe3fd4a7b8d0e88fa2a3bb5939122f82a14b71491b57989469b259f7678"
+    },
+    "en/dose-review-mobile": {
+      "src": "/media/case-vet-v2/en/dose-review-mobile.webp",
+      "width": 716,
+      "height": 1336,
+      "cssWidth": 358,
+      "cssHeight": 668,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/dose-calculator/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-dose-review-mobile.png",
+      "route": "/app/dose-calculator?patient=marsik",
+      "locale": "en",
+      "state": "Complete answer, arithmetic, rounding, limitation and record action",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 16,
+        "y": 1003,
+        "width": 358,
+        "height": 668
+      },
+      "selector": "#dose-result",
+      "appearsIn": "Mobile clinical workflow",
+      "sha256": "2b90230efc363adfa571975352d19bc0feb621439e1fcb934d0943fdec1c137d"
+    },
+    "en/invoice-full-mobile": {
+      "src": "/media/case-vet-v2/en/invoice-full-mobile.webp",
+      "width": 780,
+      "height": 3166,
+      "cssWidth": 390,
+      "cssHeight": 1583,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/invoice-draft/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-invoice-full-mobile.png",
+      "route": "/app/invoice-draft?patient=marsik",
+      "locale": "en",
+      "state": "Two selected services; unpaid; 1500 RUB",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 1583
+      },
+      "selector": "[data-invoice-workspace]",
+      "appearsIn": "Reception / complete inspection",
+      "sha256": "6219023a6dde82c182185caa343dd0d3c197f50b89977205cf1c2a22c537caa0"
+    },
+    "en/invoice-document-mobile": {
+      "src": "/media/case-vet-v2/en/invoice-document-mobile.webp",
+      "width": 716,
+      "height": 880,
+      "cssWidth": 358,
+      "cssHeight": 440,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/invoice-draft/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-invoice-document-mobile.png",
+      "route": "/app/invoice-draft?patient=marsik",
+      "locale": "en",
+      "state": "Services, total and manual payment-status action; full invoice at inspection",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 16,
+        "y": 471,
+        "width": 358,
+        "height": 440
+      },
+      "selector": "[data-invoice-document]",
+      "appearsIn": "Reception",
+      "sha256": "853063160351aa1318a96931080a7c329feb78af83dac8aaf1ea8a5ecc036502"
+    },
+    "en/discharge-full-mobile": {
+      "src": "/media/case-vet-v2/en/discharge-full-mobile.webp",
+      "width": 780,
+      "height": 4252,
+      "cssWidth": 390,
+      "cssHeight": 2126,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/discharge-preview/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-discharge-full-mobile.png",
+      "route": "/app/discharge-preview?patient=marsik",
+      "locale": "en",
+      "state": "Ready to publish; initial saved plan",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 2126
+      },
+      "selector": "[data-discharge-preview]",
+      "appearsIn": "Publication / complete inspection",
+      "sha256": "1db828506bd620b3da299d1bdbfcbd768cb46cb1047f37673ba907e32b436db5"
+    },
+    "en/discharge-document-mobile": {
+      "src": "/media/case-vet-v2/en/discharge-document-mobile.webp",
+      "width": 716,
+      "height": 2048,
+      "cssWidth": 358,
+      "cssHeight": 1024,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/discharge-preview/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-discharge-document-mobile.png",
+      "route": "/app/discharge-preview?patient=marsik",
+      "locale": "en",
+      "state": "Complete owner document preview; not yet published",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 16,
+        "y": 586,
+        "width": 358,
+        "height": 1024
+      },
+      "selector": "[data-discharge-document]",
+      "appearsIn": "Mobile publication",
+      "sha256": "26e6c118748b1dedaddc9698631aa1c4d5031e29a6429db934ede9f885d3c20d"
+    },
+    "en/owner-full-mobile": {
+      "src": "/media/case-vet-v2/en/owner-full-mobile.webp",
+      "width": 780,
+      "height": 3126,
+      "cssWidth": 390,
+      "cssHeight": 1564,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/owner-home/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-owner-full-mobile.png",
+      "route": "/app/owner-home?patient=marsik",
+      "locale": "en",
+      "state": "Published version 1 from the same initial saved record",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 1564
+      },
+      "selector": "[data-owner-home]",
+      "appearsIn": "Owner output / responsive comparison",
+      "sha256": "6a93d822f30cefe671a37d9039f0c8d26d2be061444d9431392f7dd08e232c8e"
+    },
+    "en/owner-overview-mobile": {
+      "src": "/media/case-vet-v2/en/owner-overview-mobile.webp",
+      "width": 780,
+      "height": 1626,
+      "cssWidth": 390,
+      "cssHeight": 813,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/owner-home/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-owner-overview-mobile.png",
+      "route": "/app/owner-home?patient=marsik",
+      "locale": "en",
+      "state": "Complete mobile context, plan and prescription detail; remainder available in full inspection",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 813
+      },
+      "selector": "[data-owner-home]",
+      "appearsIn": "Responsive comparison / mobile",
+      "sha256": "ba891888d9ec9dc5a482709af58e2885c539fc270437b591a2ee8973fd7cafe2"
+    },
+    "en/blocked-mobile": {
+      "src": "/media/case-vet-v2/en/blocked-mobile.webp",
+      "width": 716,
+      "height": 1216,
+      "cssWidth": 358,
+      "cssHeight": 608,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/discharge-preview/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-blocked-mobile.png",
+      "route": "/app/discharge-preview?patient=marsik",
+      "locale": "en",
+      "state": "Existing audit model state: empty draft plan; publication disabled; owner retains version 1",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 16,
+        "y": 1627,
+        "width": 358,
+        "height": 608
+      },
+      "selector": "#discharge-publishing",
+      "appearsIn": "Critical states / blocked publication",
+      "sha256": "f9a99c46e25b5a484a5165684063f3907280f90641c0d0cd5bdff3f51751e94e"
+    },
+    "en/blocked-full-mobile": {
+      "src": "/media/case-vet-v2/en/blocked-full-mobile.webp",
+      "width": 780,
+      "height": 4388,
+      "cssWidth": 390,
+      "cssHeight": 2195,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/discharge-preview/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-blocked-full-mobile.png",
+      "route": "/app/discharge-preview?patient=marsik",
+      "locale": "en",
+      "state": "Empty draft plan; existing published version 1 retained",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 2195
+      },
+      "selector": "[data-discharge-preview]",
+      "appearsIn": "Critical state complete inspection",
+      "sha256": "1d18334eb091aa3de00235eff26c0af41c2fb8bb343d6536618d267ad1308b0a"
+    },
+    "en/missing-mobile": {
+      "src": "/media/case-vet-v2/en/missing-mobile.webp",
+      "width": 700,
+      "height": 510,
+      "cssWidth": 350,
+      "cssHeight": 255,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/owner-home/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-missing-mobile.png",
+      "route": "/app/owner-home?patient=marsik",
+      "locale": "en",
+      "state": "Existing audit model state: concentration absent in published prescription; dose unavailable",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 20,
+        "y": 494,
+        "width": 350,
+        "height": 255
+      },
+      "selector": "[aria-labelledby=\"owner-prescription\"]",
+      "appearsIn": "Critical states / unavailable dose",
+      "sha256": "194d276a757cbda9475c7f79cfcb70aeda7b631df9550570e6bcae24c075bf15"
+    },
+    "en/missing-full-mobile": {
+      "src": "/media/case-vet-v2/en/missing-full-mobile.webp",
+      "width": 780,
+      "height": 2902,
+      "cssWidth": 390,
+      "cssHeight": 1452,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/owner-home/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-missing-full-mobile.png",
+      "route": "/app/owner-home?patient=marsik",
+      "locale": "en",
+      "state": "Published prescription concentration absent; clinic confirmation required",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 1452
+      },
+      "selector": "[data-owner-home]",
+      "appearsIn": "Critical state complete inspection",
+      "sha256": "c3a6c598224374ce838db2043923e5860aa197ad467ac09c2658d2ca92e71918"
+    },
+    "ru/visit-full-desktop": {
+      "src": "/media/case-vet-v2/ru/visit-full-desktop.webp",
+      "width": 2812,
+      "height": 2874,
+      "cssWidth": 1406,
+      "cssHeight": 1437,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/visit-record/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-visit-full-desktop.png",
+      "route": "/ru/app/visit-record?patient=marsik",
+      "locale": "ru",
+      "state": "Initial saved clinical record; unpublished",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 17,
+        "y": 73,
+        "width": 1406,
+        "height": 1437
+      },
+      "selector": "[data-visit-record]",
+      "appearsIn": "Hero / complete inspection",
+      "sha256": "55c335f5ec0d77310db82d2a8bafc4f8869f0e76fb9832d20602088b4636f809"
+    },
+    "ru/private-desktop": {
+      "src": "/media/case-vet-v2/ru/private-desktop.webp",
+      "width": 1632,
+      "height": 380,
+      "cssWidth": 816,
+      "cssHeight": 190,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/visit-record/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-private-desktop.png",
+      "route": "/ru/app/visit-record?patient=marsik",
+      "locale": "ru",
+      "state": "Saved private note; complete native section",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 112,
+        "y": 1126,
+        "width": 816,
+        "height": 190
+      },
+      "selector": "#record-private",
+      "appearsIn": "Critical states / clinical-only note",
+      "sha256": "5fdcd3f2e113543d5bd76a0800ddb13e101a86e0746847d0bf200cc3a12f0c90"
+    },
+    "ru/dose-full-desktop": {
+      "src": "/media/case-vet-v2/ru/dose-full-desktop.webp",
+      "width": 2812,
+      "height": 1782,
+      "cssWidth": 1406,
+      "cssHeight": 891,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/dose-calculator/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-dose-full-desktop.png",
+      "route": "/ru/app/dose-calculator?patient=marsik",
+      "locale": "ru",
+      "state": "Normal seeded single-dose calculation; not recorded",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 17,
+        "y": 73,
+        "width": 1406,
+        "height": 891
+      },
+      "selector": "[data-dose-calculator]",
+      "appearsIn": "Clinical workflow / complete inspection",
+      "sha256": "cdae30ad2a2087049bae4a74b30d211ab5947c4311a380e81e6139868d811a63"
+    },
+    "ru/dose-review-desktop": {
+      "src": "/media/case-vet-v2/ru/dose-review-desktop.webp",
+      "width": 1168,
+      "height": 1216,
+      "cssWidth": 584,
+      "cssHeight": 608,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/dose-calculator/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-dose-review-desktop.png",
+      "route": "/ru/app/dose-calculator?patient=marsik",
+      "locale": "ru",
+      "state": "Complete answer, arithmetic, rounding, limitation and record action",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 744,
+        "y": 324,
+        "width": 584,
+        "height": 608
+      },
+      "selector": "#dose-result",
+      "appearsIn": "Mobile clinical workflow",
+      "sha256": "e1590c9a8015037ae96f8c9001e9fe5d4c8f2fc3bf90c42b00afe41b5dcbdf0d"
+    },
+    "ru/invoice-full-desktop": {
+      "src": "/media/case-vet-v2/ru/invoice-full-desktop.webp",
+      "width": 2812,
+      "height": 2016,
+      "cssWidth": 1406,
+      "cssHeight": 1008,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/invoice-draft/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-invoice-full-desktop.png",
+      "route": "/ru/app/invoice-draft?patient=marsik",
+      "locale": "ru",
+      "state": "Two selected services; unpaid; 1500 RUB",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 17,
+        "y": 73,
+        "width": 1406,
+        "height": 1008
+      },
+      "selector": "[data-invoice-workspace]",
+      "appearsIn": "Reception / complete inspection",
+      "sha256": "d8eafe38691b0ba816a37dbac8be0d13ebff1506368fcc663042e523806a9acb"
+    },
+    "ru/invoice-document-desktop": {
+      "src": "/media/case-vet-v2/ru/invoice-document-desktop.webp",
+      "width": 1650,
+      "height": 904,
+      "cssWidth": 825,
+      "cssHeight": 452,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/invoice-draft/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-invoice-document-desktop.png",
+      "route": "/ru/app/invoice-draft?patient=marsik",
+      "locale": "ru",
+      "state": "Services, total and manual payment-status action; full invoice at inspection",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 246,
+        "y": 394,
+        "width": 825,
+        "height": 452
+      },
+      "selector": "[data-invoice-document]",
+      "appearsIn": "Reception",
+      "sha256": "a593b396deab56027c99037ad8322b98d59a87355262035349370522c827529c"
+    },
+    "ru/discharge-full-desktop": {
+      "src": "/media/case-vet-v2/ru/discharge-full-desktop.webp",
+      "width": 2812,
+      "height": 2466,
+      "cssWidth": 1406,
+      "cssHeight": 1233,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/discharge-preview/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-discharge-full-desktop.png",
+      "route": "/ru/app/discharge-preview?patient=marsik",
+      "locale": "ru",
+      "state": "Ready to publish; initial saved plan",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 17,
+        "y": 73,
+        "width": 1406,
+        "height": 1233
+      },
+      "selector": "[data-discharge-preview]",
+      "appearsIn": "Publication / complete inspection",
+      "sha256": "548c66685e8e619c8b177e301404bc67a8d227e410c3dc08e5c21605495df23b"
+    },
+    "ru/discharge-document-desktop": {
+      "src": "/media/case-vet-v2/ru/discharge-document-desktop.webp",
+      "width": 1712,
+      "height": 1810,
+      "cssWidth": 856,
+      "cssHeight": 905,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/discharge-preview/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-discharge-document-desktop.png",
+      "route": "/ru/app/discharge-preview?patient=marsik",
+      "locale": "ru",
+      "state": "Complete owner document preview; not yet published",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 112,
+        "y": 361,
+        "width": 856,
+        "height": 905
+      },
+      "selector": "[data-discharge-document]",
+      "appearsIn": "Mobile publication",
+      "sha256": "78d0ae760ca624a29406f5a10d6caad12733a19085a598b0421e9bf4b64ef1f0"
+    },
+    "ru/owner-full-desktop": {
+      "src": "/media/case-vet-v2/ru/owner-full-desktop.webp",
+      "width": 2812,
+      "height": 2158,
+      "cssWidth": 1406,
+      "cssHeight": 1079,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/owner-home/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-owner-full-desktop.png",
+      "route": "/ru/app/owner-home?patient=marsik",
+      "locale": "ru",
+      "state": "Published version 1 from the same initial saved record",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 17,
+        "y": 73,
+        "width": 1406,
+        "height": 1079
+      },
+      "selector": "[data-owner-home]",
+      "appearsIn": "Owner output / responsive comparison",
+      "sha256": "ad88204a0c653e0f15c06b8d42e4fd917ddf5fa2e83dd42684198f37cb81b4b7"
+    },
+    "ru/owner-overview-desktop": {
+      "src": "/media/case-vet-v2/ru/owner-overview-desktop.webp",
+      "width": 2208,
+      "height": 2030,
+      "cssWidth": 1104,
+      "cssHeight": 1015,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/owner-home/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-owner-overview-desktop.png",
+      "route": "/ru/app/owner-home?patient=marsik",
+      "locale": "ru",
+      "state": "Complete desktop care article and contact rail; global app header excluded",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 168,
+        "y": 137,
+        "width": 1104,
+        "height": 1015
+      },
+      "selector": "[data-owner-home] > article",
+      "appearsIn": "Responsive comparison / desktop",
+      "sha256": "f2ec82754f1cd5d291f8f41447c4ea257a13eda4dcfc110795e7baefda110f58"
+    },
+    "ru/blocked-desktop": {
+      "src": "/media/case-vet-v2/ru/blocked-desktop.webp",
+      "width": 640,
+      "height": 1614,
+      "cssWidth": 320,
+      "cssHeight": 807,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/discharge-preview/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-blocked-desktop.png",
+      "route": "/ru/app/discharge-preview?patient=marsik",
+      "locale": "ru",
+      "state": "Existing audit model state: saved plan empty; existing owner publication retained",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 1008,
+        "y": 309,
+        "width": 320,
+        "height": 807
+      },
+      "selector": "#discharge-publishing",
+      "appearsIn": "Critical states / blocked publication",
+      "sha256": "ce058010fa46d53bc0d4c5033b83662197811b4e5a1e0b7db943f262f2456aa5"
+    },
+    "ru/blocked-full-desktop": {
+      "src": "/media/case-vet-v2/ru/blocked-full-desktop.webp",
+      "width": 2812,
+      "height": 2396,
+      "cssWidth": 1406,
+      "cssHeight": 1198,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/discharge-preview/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-blocked-full-desktop.png",
+      "route": "/ru/app/discharge-preview?patient=marsik",
+      "locale": "ru",
+      "state": "Empty draft plan; existing published version 1 retained",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 17,
+        "y": 73,
+        "width": 1406,
+        "height": 1198
+      },
+      "selector": "[data-discharge-preview]",
+      "appearsIn": "Critical state complete inspection",
+      "sha256": "c30bbb4dc359f7eaa4f76e4f4996feaa4bb03c18c88931a1e490ddfdc987c708"
+    },
+    "ru/missing-desktop": {
+      "src": "/media/case-vet-v2/ru/missing-desktop.webp",
+      "width": 1376,
+      "height": 480,
+      "cssWidth": 688,
+      "cssHeight": 240,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/owner-home/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-missing-desktop.png",
+      "route": "/ru/app/owner-home?patient=marsik",
+      "locale": "ru",
+      "state": "Existing audit model state: concentration absent in published prescription; dose unavailable",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 200,
+        "y": 540,
+        "width": 688,
+        "height": 240
+      },
+      "selector": "[aria-labelledby=\"owner-prescription\"]",
+      "appearsIn": "Critical states / unavailable dose",
+      "sha256": "10c5ac2c1d06307464724bf235358397ca916315bb5d42079c36688b361bc888"
+    },
+    "ru/missing-full-desktop": {
+      "src": "/media/case-vet-v2/ru/missing-full-desktop.webp",
+      "width": 2812,
+      "height": 1912,
+      "cssWidth": 1406,
+      "cssHeight": 956,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/owner-home/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-missing-full-desktop.png",
+      "route": "/ru/app/owner-home?patient=marsik",
+      "locale": "ru",
+      "state": "Published prescription concentration absent; clinic confirmation required",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 17,
+        "y": 73,
+        "width": 1406,
+        "height": 956
+      },
+      "selector": "[data-owner-home]",
+      "appearsIn": "Critical state complete inspection",
+      "sha256": "7ca52afd7834c69b3a7dd1ddca419cba71f8929537a84136777bdeabf7e6b64b"
+    },
+    "ru/visit-full-mobile": {
+      "src": "/media/case-vet-v2/ru/visit-full-mobile.webp",
+      "width": 780,
+      "height": 5066,
+      "cssWidth": 390,
+      "cssHeight": 2533,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/visit-record/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-visit-full-mobile.png",
+      "route": "/ru/app/visit-record?patient=marsik",
+      "locale": "ru",
+      "state": "Initial saved clinical record; unpublished",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 2533
+      },
+      "selector": "[data-visit-record]",
+      "appearsIn": "Hero / complete inspection",
+      "sha256": "0024efcac8a4ceecdb8016b4e5b24699f8cb9064ee3ea6e9bf4fd7f829babd35"
+    },
+    "ru/visit-context-mobile": {
+      "src": "/media/case-vet-v2/ru/visit-context-mobile.webp",
+      "width": 780,
+      "height": 794,
+      "cssWidth": 390,
+      "cssHeight": 397,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/visit-record/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-visit-context-mobile.png",
+      "route": "/ru/app/visit-record?patient=marsik",
+      "locale": "ru",
+      "state": "Saved context and complete Quick Trace; detail ends before the section navigation",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 397
+      },
+      "selector": "[data-visit-record]",
+      "appearsIn": "Mobile hero / Home",
+      "sha256": "e1b842065c21e34ae6c1aeff31791185a53f82c43bd799bce911d8397897ef1d"
+    },
+    "ru/private-mobile": {
+      "src": "/media/case-vet-v2/ru/private-mobile.webp",
+      "width": 716,
+      "height": 430,
+      "cssWidth": 358,
+      "cssHeight": 215,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/visit-record/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-private-mobile.png",
+      "route": "/ru/app/visit-record?patient=marsik",
+      "locale": "ru",
+      "state": "Saved private note; complete native section",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 16,
+        "y": 1232,
+        "width": 358,
+        "height": 215
+      },
+      "selector": "#record-private",
+      "appearsIn": "Critical states / clinical-only note",
+      "sha256": "e5ec5db9e14389cedc3f684a62d25c36e05b37779c262f07b1eaebd505e1e918"
+    },
+    "ru/dose-full-mobile": {
+      "src": "/media/case-vet-v2/ru/dose-full-mobile.webp",
+      "width": 780,
+      "height": 3500,
+      "cssWidth": 390,
+      "cssHeight": 1750,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/dose-calculator/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-dose-full-mobile.png",
+      "route": "/ru/app/dose-calculator?patient=marsik",
+      "locale": "ru",
+      "state": "Normal seeded single-dose calculation; not recorded",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 1750
+      },
+      "selector": "[data-dose-calculator]",
+      "appearsIn": "Clinical workflow / complete inspection",
+      "sha256": "39bb22000f8ae794202ed3028d4500180489f12f2c84efb59d7916eb5754e75b"
+    },
+    "ru/dose-review-mobile": {
+      "src": "/media/case-vet-v2/ru/dose-review-mobile.webp",
+      "width": 716,
+      "height": 1336,
+      "cssWidth": 358,
+      "cssHeight": 668,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/dose-calculator/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-dose-review-mobile.png",
+      "route": "/ru/app/dose-calculator?patient=marsik",
+      "locale": "ru",
+      "state": "Complete answer, arithmetic, rounding, limitation and record action",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 16,
+        "y": 1045,
+        "width": 358,
+        "height": 668
+      },
+      "selector": "#dose-result",
+      "appearsIn": "Mobile clinical workflow",
+      "sha256": "5b65e1ead2479996753793a4cda5ef639f16f252b934c39d266542ff21833332"
+    },
+    "ru/invoice-full-mobile": {
+      "src": "/media/case-vet-v2/ru/invoice-full-mobile.webp",
+      "width": 780,
+      "height": 3206,
+      "cssWidth": 390,
+      "cssHeight": 1603,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/invoice-draft/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-invoice-full-mobile.png",
+      "route": "/ru/app/invoice-draft?patient=marsik",
+      "locale": "ru",
+      "state": "Two selected services; unpaid; 1500 RUB",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 1603
+      },
+      "selector": "[data-invoice-workspace]",
+      "appearsIn": "Reception / complete inspection",
+      "sha256": "bcf6b365de3d6a86e4194efa67cfcb2e68ee45da53038235663601de2d474978"
+    },
+    "ru/invoice-document-mobile": {
+      "src": "/media/case-vet-v2/ru/invoice-document-mobile.webp",
+      "width": 716,
+      "height": 920,
+      "cssWidth": 358,
+      "cssHeight": 460,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/invoice-draft/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-invoice-document-mobile.png",
+      "route": "/ru/app/invoice-draft?patient=marsik",
+      "locale": "ru",
+      "state": "Services, total and manual payment-status action; full invoice at inspection",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 16,
+        "y": 471,
+        "width": 358,
+        "height": 460
+      },
+      "selector": "[data-invoice-document]",
+      "appearsIn": "Reception",
+      "sha256": "2baa45898c4ace06b4dca7ec19f0a3a919285d2dae4331d6f85d60d5b4c541f9"
+    },
+    "ru/discharge-full-mobile": {
+      "src": "/media/case-vet-v2/ru/discharge-full-mobile.webp",
+      "width": 780,
+      "height": 4348,
+      "cssWidth": 390,
+      "cssHeight": 2175,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/discharge-preview/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-discharge-full-mobile.png",
+      "route": "/ru/app/discharge-preview?patient=marsik",
+      "locale": "ru",
+      "state": "Ready to publish; initial saved plan",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 2175
+      },
+      "selector": "[data-discharge-preview]",
+      "appearsIn": "Publication / complete inspection",
+      "sha256": "5147a9850b1c05e2c86ebabd2b1630be6ea1498b0be6a65d36c4cb32f8103fd5"
+    },
+    "ru/discharge-document-mobile": {
+      "src": "/media/case-vet-v2/ru/discharge-document-mobile.webp",
+      "width": 716,
+      "height": 2028,
+      "cssWidth": 358,
+      "cssHeight": 1014,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/discharge-preview/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-discharge-document-mobile.png",
+      "route": "/ru/app/discharge-preview?patient=marsik",
+      "locale": "ru",
+      "state": "Complete owner document preview; not yet published",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 16,
+        "y": 644,
+        "width": 358,
+        "height": 1014
+      },
+      "selector": "[data-discharge-document]",
+      "appearsIn": "Mobile publication",
+      "sha256": "87754c61203b377d23aa7d8a708aa0812d6aade8c7613b70b73bac01b1469e66"
+    },
+    "ru/owner-full-mobile": {
+      "src": "/media/case-vet-v2/ru/owner-full-mobile.webp",
+      "width": 780,
+      "height": 3128,
+      "cssWidth": 390,
+      "cssHeight": 1564,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/owner-home/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-owner-full-mobile.png",
+      "route": "/ru/app/owner-home?patient=marsik",
+      "locale": "ru",
+      "state": "Published version 1 from the same initial saved record",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 1564
+      },
+      "selector": "[data-owner-home]",
+      "appearsIn": "Owner output / responsive comparison",
+      "sha256": "c39c001ba783ae80a6222b914e195f2ff7dfbbef5145842fe0b748e2a33f2b59"
+    },
+    "ru/owner-overview-mobile": {
+      "src": "/media/case-vet-v2/ru/owner-overview-mobile.webp",
+      "width": 780,
+      "height": 1582,
+      "cssWidth": 390,
+      "cssHeight": 791,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/owner-home/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-owner-overview-mobile.png",
+      "route": "/ru/app/owner-home?patient=marsik",
+      "locale": "ru",
+      "state": "Complete mobile context, plan and prescription detail; remainder available in full inspection",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 791
+      },
+      "selector": "[data-owner-home]",
+      "appearsIn": "Responsive comparison / mobile",
+      "sha256": "ff3d1165f79cf3b5e1c5a00c9ad52324f1163667da3f0eb0c7db6290bd0487b5"
+    },
+    "ru/blocked-mobile": {
+      "src": "/media/case-vet-v2/ru/blocked-mobile.webp",
+      "width": 716,
+      "height": 1254,
+      "cssWidth": 358,
+      "cssHeight": 627,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/discharge-preview/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-blocked-mobile.png",
+      "route": "/ru/app/discharge-preview?patient=marsik",
+      "locale": "ru",
+      "state": "Existing audit model state: empty draft plan; publication disabled; owner retains version 1",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 16,
+        "y": 1680,
+        "width": 358,
+        "height": 627
+      },
+      "selector": "#discharge-publishing",
+      "appearsIn": "Critical states / blocked publication",
+      "sha256": "4e97d79026f5b3862dc217a14a562c4066440b9069982cc37e7dcdc91f901569"
+    },
+    "ru/blocked-full-mobile": {
+      "src": "/media/case-vet-v2/ru/blocked-full-mobile.webp",
+      "width": 780,
+      "height": 4534,
+      "cssWidth": 390,
+      "cssHeight": 2267,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/discharge-preview/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-blocked-full-mobile.png",
+      "route": "/ru/app/discharge-preview?patient=marsik",
+      "locale": "ru",
+      "state": "Empty draft plan; existing published version 1 retained",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 2267
+      },
+      "selector": "[data-discharge-preview]",
+      "appearsIn": "Critical state complete inspection",
+      "sha256": "4bcdd6fe575e83c3f93486ab4f1f3fa9bd541684641a995227d152242802acfc"
+    },
+    "ru/missing-mobile": {
+      "src": "/media/case-vet-v2/ru/missing-mobile.webp",
+      "width": 700,
+      "height": 510,
+      "cssWidth": 350,
+      "cssHeight": 255,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/owner-home/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-missing-mobile.png",
+      "route": "/ru/app/owner-home?patient=marsik",
+      "locale": "ru",
+      "state": "Existing audit model state: concentration absent in published prescription; dose unavailable",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 20,
+        "y": 494,
+        "width": 350,
+        "height": 255
+      },
+      "selector": "[aria-labelledby=\"owner-prescription\"]",
+      "appearsIn": "Critical states / unavailable dose",
+      "sha256": "d385dd1445a91a6773b5426f767b200be9664c2f155e776a09974dbca2bbd966"
+    },
+    "ru/missing-full-mobile": {
+      "src": "/media/case-vet-v2/ru/missing-full-mobile.webp",
+      "width": 780,
+      "height": 2948,
+      "cssWidth": 390,
+      "cssHeight": 1475,
+      "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+      "sourcePath": "src/screens/owner-home/",
+      "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+      "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-missing-full-mobile.png",
+      "route": "/ru/app/owner-home?patient=marsik",
+      "locale": "ru",
+      "state": "Published prescription concentration absent; clinic confirmation required",
+      "viewport": {
+        "width": 390,
+        "height": 900,
+        "dpr": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 1475
+      },
+      "selector": "[data-owner-home]",
+      "appearsIn": "Critical state complete inspection",
+      "sha256": "be4cc2675d1ffe74c6c310ea63b6c7500a435ca4dfb3cef5e52e2fb2a7a89b3b"
+    }
+  }
+}

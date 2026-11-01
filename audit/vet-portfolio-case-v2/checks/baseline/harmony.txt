@@ -1,0 +1,14 @@
+
+> site-portfolio@0.1.0 check:harmony
+> node scripts/harmony-check.mjs /work/vet-clinic /ru/work/vet-clinic
+
+(node:35836) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+/work/vet-clinic @1440: плашек 8, тезисов 7, подписей и абзацев 11 · case-vet-clinic 286 слов, 10 кадров
+/work/vet-clinic @1024: плашек 8, тезисов 7, подписей и абзацев 11 · case-vet-clinic 286 слов, 10 кадров
+/work/vet-clinic @390: плашек 8, тезисов 7, подписей и абзацев 11 · case-vet-clinic 286 слов, 8 кадров
+/ru/work/vet-clinic @1440: плашек 8, тезисов 7, подписей и абзацев 11 · case-vet-clinic 241 слов, 10 кадров
+/ru/work/vet-clinic @1024: плашек 8, тезисов 7, подписей и абзацев 11 · case-vet-clinic 241 слов, 10 кадров
+/ru/work/vet-clinic @390: плашек 8, тезисов 7, подписей и абзацев 11 · case-vet-clinic 241 слов, 8 кадров
+
+✓ harmony-check: нарушений нет

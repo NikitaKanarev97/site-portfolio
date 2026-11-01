@@ -1,0 +1,319 @@
+1440 {
+  overflow: 0,
+  height: 12122,
+  body: 'One visit. Three connected roles.\n' +
+    '\n' +
+    'Vet Clinic OS\n' +
+    '\n' +
+    'A connected workspace for clinical records, reception and post-visit care.\n' +
+    '\n' +
+    'Visit Record · clinical context, prescription and services stay together.\n' +
+    'My role\n' +
+    'Sole product designer\n' +
+    'Scope\n' +
+    'Research · UX/UI · design system · implementation\n' +
+    'Platform / year\n' +
+    'Responsive web · 2026\n' +
+    'Product\n' +
+    'Explore the working product\n' +
+    '(external link, opens in a new tab)\n' +
+    '\n' +
+    'Informed by conversations with one practising veterinarian. Patient, clinical and financial data shown here are synthetic.\n' +
+    '\n' +
+    '02 · The problem\n' +
+    '\n' +
+    'Information gets lost between responsibilities.\n' +
+    '\n' +
+    'A full clinical record does not fit into the short transition between patients. Postponing it leaves colleagues without context, reception without billable services and owners without clear instructions. I separated a useful, validated trace from the record completed later.\n' +
+    '\n' +
+    '30 seconds\n' +
+    '\n' +
+    'The recording window between patients\n' +
+    '\n' +
+    'A design constraint, not a measured time saving.\n' +
+    '\n' +
+    '03 · One system\n' +
+    '\n' +
+    'Connected work. Deliberate information boundaries.\n' +
+    '\n' +
+    'One visit supports three responsibilities. Each view exposes what that role needs to act.\n' +
+    '\n' +
+    '01 / Veterinarian\n' +
+    '\n' +
+    'Record and prescribe\n' +
+    '\n' +
+    'Selected services → reception\n' +
+    '\n' +
+    'Clinical history and private notes stay with the clinic.\n' +
+    '\n' +
+    '02 / Reception\n' +
+    '\n' +
+    'Bill the visit\n' +
+    '\n' +
+    'Services → invoice → payment status\n' +
+    '\n' +
+    'No clinical notes or prescription details.\n' +
+    '\n' +
+    '03 / Owner\n' +
+    '\n' +
+    'Follow the care plan\n' +
+    '\n' +
+    'Explicit publication → care instructions\n' +
+    '\n' +
+    'No private notes, diagnosis or financial totals.\n' +
+    '\n' +
+    '04 · Clinical workflow\n' +
+    '\n' +
+    'Keep the context. Make the calculation inspectable.\n' +
+    '\n' +
+    'From today’s queue, the veterinarian saves a trace before completing the record. The calculator reuses the visit’s sourced weight and selected formulation. It exposes substitution, units and rounding instead of asking the clinician to trust an unexplained number.\n' +
+    '\n' +
+    'Dose Calculator · source, arithmetic and rounding remain visible.\n' +
+    '\n' +
+    'The calculation supports arithmetic. It does not replace clinical judgement or recommend a safe regimen.\n' +
+    '\n' +
+    '05 · The connected visit\n' +
+    '\n' +
+    'One record becomes different kinds of action.\n' +
+    '\n' +
+    'Saving the visit, recording payment and publishing care are separate commitments. I made those boundaries visible at the point of action.\n' +
+    '\n' +
+    'Reception\n' +
+    '\n' +
+    'Bill the services. Keep the clinical note private.\n' +
+    '\n' +
+    'The services selected by the veterinarian become the invoice. Reception reviews the same total and records payment status. The application does not process payments or issue fiscal receipts.\n' +
+    '\n' +
+    'Invoice · selected services, one total, a manual payment record.\n' +
+    'Inspect the complete screen\n' +
+    '+\n' +
+    '\n' +
+    'Veterinarian → owner\n' +
+    '\n' +
+    'Saving is not publishing.\n' +
+    '\n' +
+    'The preview shows the owner’s document and what stays in the clinic. Publication is explicit. Later saved edits do not silently replace the published copy; the veterinarian must review and publish again.\n' +
+    '\n' +
+    'Discharge Preview · review the actual document before publishing.\n' +
+    '\n' +
+    'Owner\n' +
+    '\n' +
+    'A plan the family can return to.\n' +
+    '\n' +
+    'Owners read the published instructions and prescription, open the discharge and contact the clinic. The phone puts care first; desktop gives the document and contact actions a separate rail.\n' +
+    '\n' +
+    'Desktop · care and contact side by side\n' +
+    '\n' +
+    'Inspect the complete screen\n' +
+    '+\n' +
+    '\n' +
+    'Mobile · one reading sequence\n' +
+    '\n' +
+    'Inspect the complete screen\n' +
+    '+\n' +
+    '\n' +
+    'Owner Home · the same publication, adapted to each screen.\n' +
+    '\n' +
+    '06 · Critical states\n' +
+    '\n' +
+    'Make the boundary clear when information is incomplete.\n' +
+    '\n' +
+    'Visibility, readiness and publication are separate states. Missing information needs a specific next action.\n' +
+    '\n' +
+    'Clinical only\n' +
+    '\n' +
+    'The private note names its audience and is excluded from the invoice and owner document.\n' +
+    '\n' +
+    'Inspect the complete screen\n' +
+    '+\n' +
+    'Publication blocked\n' +
+    '\n' +
+    'An empty draft plan blocks publication. The owner’s existing published document remains available.\n' +
+    '\n' +
+    'Inspect the complete screen\n' +
+    '+\n' +
+    'Confirm with the clinic\n' +
+    '\n' +
+    'An unavailable dose never becomes a guessed number. The owner gets a direct clinic contact action.\n' +
+    '\n' +
+    'Inspect the complete screen\n' +
+    '+\n' +
+    '\n' +
+    '07 · The outcome\n' +
+    '\n' +
+    'A connected experience with explicit boundaries.\n' +
+    '\n' +
+    'I designed and implemented responsive clinical, reception and owner workflows in one coherent system. The working product demonstrates the connected visit and its state transitions. Clinic adoption and business impact have not been measured.\n' +
+    '\n' +
+    'The deliberate cost\n' +
+    '\n' +
+    'Saving and publishing remain separate steps. Role-specific views demonstrate information boundaries; this browser-local implementation does not establish server-enforced access control.\n' +
+    '\n' +
+    'Explore Vet Clinic OS\n' +
+    'Opens in a new tab\n' +
+    '\n' +
+    'Working public product · synthetic data\n' +
+    '\n' +
+    'Next case\n' +
+    'Next case: Pawly\n' +
+    'Pawly'
+}
+390 {
+  overflow: 0,
+  height: 12854,
+  body: 'One visit. Three connected roles.\n' +
+    '\n' +
+    'Vet Clinic OS\n' +
+    '\n' +
+    'A connected workspace for clinical records, reception and post-visit care.\n' +
+    '\n' +
+    'Visit Record · clinical context, prescription and services stay together.\n' +
+    'Inspect the complete screen\n' +
+    '+\n' +
+    'My role\n' +
+    'Sole product designer\n' +
+    'Scope\n' +
+    'Research · UX/UI · design system · implementation\n' +
+    'Platform / year\n' +
+    'Responsive web · 2026\n' +
+    'Product\n' +
+    'Explore the working product\n' +
+    '(external link, opens in a new tab)\n' +
+    '\n' +
+    'Informed by conversations with one practising veterinarian. Patient, clinical and financial data shown here are synthetic.\n' +
+    '\n' +
+    '02 · The problem\n' +
+    '\n' +
+    'Information gets lost between responsibilities.\n' +
+    '\n' +
+    'A full clinical record does not fit into the short transition between patients. Postponing it leaves colleagues without context, reception without billable services and owners without clear instructions. I separated a useful, validated trace from the record completed later.\n' +
+    '\n' +
+    '30 seconds\n' +
+    '\n' +
+    'The recording window between patients\n' +
+    '\n' +
+    'A design constraint, not a measured time saving.\n' +
+    '\n' +
+    '03 · One system\n' +
+    '\n' +
+    'Connected work. Deliberate information boundaries.\n' +
+    '\n' +
+    'One visit supports three responsibilities. Each view exposes what that role needs to act.\n' +
+    '\n' +
+    '01 / Veterinarian\n' +
+    '\n' +
+    'Record and prescribe\n' +
+    '\n' +
+    'Selected services → reception\n' +
+    '\n' +
+    'Clinical history and private notes stay with the clinic.\n' +
+    '\n' +
+    '02 / Reception\n' +
+    '\n' +
+    'Bill the visit\n' +
+    '\n' +
+    'Services → invoice → payment status\n' +
+    '\n' +
+    'No clinical notes or prescription details.\n' +
+    '\n' +
+    '03 / Owner\n' +
+    '\n' +
+    'Follow the care plan\n' +
+    '\n' +
+    'Explicit publication → care instructions\n' +
+    '\n' +
+    'No private notes, diagnosis or financial totals.\n' +
+    '\n' +
+    '04 · Clinical workflow\n' +
+    '\n' +
+    'Keep the context. Make the calculation inspectable.\n' +
+    '\n' +
+    'From today’s queue, the veterinarian saves a trace before completing the record. The calculator reuses the visit’s sourced weight and selected formulation. It exposes substitution, units and rounding instead of asking the clinician to trust an unexplained number.\n' +
+    '\n' +
+    'Dose Calculator · source, arithmetic and rounding remain visible.\n' +
+    'Inspect the complete screen\n' +
+    '+\n' +
+    '\n' +
+    'The calculation supports arithmetic. It does not replace clinical judgement or recommend a safe regimen.\n' +
+    '\n' +
+    '05 · The connected visit\n' +
+    '\n' +
+    'One record becomes different kinds of action.\n' +
+    '\n' +
+    'Saving the visit, recording payment and publishing care are separate commitments. I made those boundaries visible at the point of action.\n' +
+    '\n' +
+    'Reception\n' +
+    '\n' +
+    'Bill the services. Keep the clinical note private.\n' +
+    '\n' +
+    'The services selected by the veterinarian become the invoice. Reception reviews the same total and records payment status. The application does not process payments or issue fiscal receipts.\n' +
+    '\n' +
+    'Invoice · selected services, one total, a manual payment record.\n' +
+    'Inspect the complete screen\n' +
+    '+\n' +
+    '\n' +
+    'Veterinarian → owner\n' +
+    '\n' +
+    'Saving is not publishing.\n' +
+    '\n' +
+    'The preview shows the owner’s document and what stays in the clinic. Publication is explicit. Later saved edits do not silently replace the published copy; the veterinarian must review and publish again.\n' +
+    '\n' +
+    'Discharge Preview · review the actual document before publishing.\n' +
+    'Inspect the complete screen\n' +
+    '+\n' +
+    '\n' +
+    'Owner\n' +
+    '\n' +
+    'A plan the family can return to.\n' +
+    '\n' +
+    'Owners read the published instructions and prescription, open the discharge and contact the clinic. The phone puts care first; desktop gives the document and contact actions a separate rail.\n' +
+    '\n' +
+    'Inspect the complete screen\n' +
+    '+\n' +
+    '\n' +
+    'Owner Home · the same publication, adapted to each screen.\n' +
+    '\n' +
+    '06 · Critical states\n' +
+    '\n' +
+    'Make the boundary clear when information is incomplete.\n' +
+    '\n' +
+    'Visibility, readiness and publication are separate states. Missing information needs a specific next action.\n' +
+    '\n' +
+    'Clinical only\n' +
+    '\n' +
+    'The private note names its audience and is excluded from the invoice and owner document.\n' +
+    '\n' +
+    'Inspect the complete screen\n' +
+    '+\n' +
+    'Publication blocked\n' +
+    '\n' +
+    'An empty draft plan blocks publication. The owner’s existing published document remains available.\n' +
+    '\n' +
+    'Inspect the complete screen\n' +
+    '+\n' +
+    'Confirm with the clinic\n' +
+    '\n' +
+    'An unavailable dose never becomes a guessed number. The owner gets a direct clinic contact action.\n' +
+    '\n' +
+    'Inspect the complete screen\n' +
+    '+\n' +
+    '\n' +
+    '07 · The outcome\n' +
+    '\n' +
+    'A connected experience with explicit boundaries.\n' +
+    '\n' +
+    'I designed and implemented responsive clinical, reception and owner workflows in one coherent system. The working product demonstrates the connected visit and its state transitions. Clinic adoption and business impact have not been measured.\n' +
+    '\n' +
+    'The deliberate cost\n' +
+    '\n' +
+    'Saving and publishing remain separate steps. Role-specific views demonstrate information boundaries; this browser-local implementation does not establish server-enforced access control.\n' +
+    '\n' +
+    'Explore Vet Clinic OS\n' +
+    'Opens in a new tab\n' +
+    '\n' +
+    'Working public product · synthetic data\n' +
+    '\n' +
+    'Next case\n' +
+    'Next case: Pawly\n' +
+    'Pawly'
+}
