@@ -45,7 +45,7 @@ export const home = {
     role: 'Product Designer',
     headline: ['Complex systems.', 'Clear decisions.'],
     specialization:
-      "I design B2B tools for decisions that need context: AI oversight, procurement and workflows shared by several roles.",
+      "I design decision-heavy products — from AI oversight and procurement to learning and clinical workflows.",
     /**
      * Дословно из ia/authorization-copy.md. Не переписывать в отрыве от файла.
      *
@@ -68,7 +68,9 @@ export const home = {
       alt: 'Nikita Kanarev in a taupe knit sweater against a light background',
     },
     workLabel: 'Selected product design projects',
-    cv: 'Download CV (PDF)',
+    workAction: 'Explore selected work',
+    copyAction: 'Copy email',
+    cv: 'CV (PDF)',
   },
 
   /**

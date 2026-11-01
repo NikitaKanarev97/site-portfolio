@@ -63,6 +63,8 @@ const {
 } = Astro.props;
 
 const isActive = (href: string) => current !== undefined && href === current;
+// Home V3 accessibility correction. Preserve other routes within this Home-only pass.
+const homeNavigation = current === '/' || current === '/ru/';
 
 /**
  * Запрос десктопной раскладки для клиентского скрипта.
@@ -94,7 +96,7 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
         }
         {
           locales.length > 1 && (
-            <li class="navbar__locale" role="group" aria-label={localeLabel}>
+            <li class="navbar__locale" role={homeNavigation ? undefined : 'group'} aria-label={homeNavigation ? undefined : localeLabel}>
               {locales.map((locale) => (
                 <TextLink href={locale.href} type="nav" active={locale.active} class="ds-body-sm">
                   {locale.label}
@@ -133,7 +135,7 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
         }
         {
           locales.length > 1 && (
-            <li class="navbar__locale navbar__locale--mobile" role="group" aria-label={localeLabel}>
+            <li class="navbar__locale navbar__locale--mobile" role={homeNavigation ? undefined : 'group'} aria-label={homeNavigation ? undefined : localeLabel}>
               {locales.map((locale) => (
                 <TextLink href={locale.href} type="nav" active={locale.active}>
                   <span class="ds-heading-2xl">{locale.label}</span>

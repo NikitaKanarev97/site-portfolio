@@ -22,7 +22,6 @@
  */
 import PageShell from '../layouts/PageShell.astro';
 import MediaFrame from '../components/MediaFrame.astro';
-import AuthorPortrait from '../components/AuthorPortrait.astro';
 import FeaturedCase from '../components/FeaturedCase.astro';
 import ProjectDialog from '../components/ProjectDialog.astro';
 import ProseBlock from '../components/ProseBlock.astro';
@@ -62,38 +61,33 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
       {home.hero.headline.map(line => <span data-motion="reveal-text">{line}</span>)}
     </h1>
 
-    <AuthorPortrait src={home.hero.portrait.src} srcMobile={home.hero.portrait.srcMobile} alt={home.hero.portrait.alt}
-      variant="work-index" class="hero__profile" at="0.2">
-      <nav class="work-index" aria-label={home.hero.workLabel}>
-        {home.featured.items.map(item => <TextLink href={`#work-${item.href.split('/').filter(Boolean).at(-1)}`} type="nav" class="ds-body-base">{item.title}</TextLink>)}
-      </nav>
-    </AuthorPortrait>
+    <a class="hero__portrait" href={home.about.href} aria-label={home.about.link} data-motion="fade">
+      <img src={home.hero.portrait.srcMobile} width="128" height="171" alt={home.hero.portrait.alt} loading="eager" decoding="async" />
+    </a>
 
     <div class="hero__copy">
-    <ProseBlock motion={false} class="hero__spec">
-      <p data-motion="reveal-text">{home.hero.specialization}</p>
-    </ProseBlock>
+    <p class="ds-body-base hero__spec" data-motion="fade">{home.hero.specialization}</p>
 
     {/*
       Право на работу. Максимум две строки на 360 px — единственная строка
       сайта с жёстким лимитом по числу строк (ia/wireframes/mobile-home.md).
     */}
-    {home.hero.authorization && <p class="ds-body-base hero__authorization" data-motion="reveal-text">
-      {home.hero.authorization}
-    </p>}
-
     <div class="hero__actions" data-motion="fade" data-motion-at="0.4">
+      <TextLink type="arrow" href="#work" class="hero__work-link">{home.hero.workAction}</TextLink>
       <TextLink type="arrow" href={locale === 'ru' ? '/cv-ru.pdf' : '/cv.pdf'}>{home.hero.cv}</TextLink>
       <CopyEmail
         email={site.contact.email}
         appearance="action"
-        label={site.contact.copyLabel}
+        label={home.hero.copyAction}
         hint={site.contact.copyHint}
         copiedLabel={site.contact.copiedLabel}
         announce={site.contact.announce}
         fallbackAnnounce={site.contact.fallbackAnnounce}
       />
     </div>
+    {home.hero.authorization && <p class="ds-body-sm hero__authorization" data-motion="fade">
+      {home.hero.authorization}
+    </p>}
     </div>
   </section>
 
@@ -103,11 +97,14 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     Все пять принятых работ открыты. Обложки берут реальные кадры из stories.
   */}
   <section class="ds-container ds-section featured" id="work">
-    <p class="ds-meta-xs featured__eyebrow ds-flow-eyebrow">{home.featured.eyebrow}</p>
+    <div class="featured__bridge">
+      <p class="ds-meta-xs featured__eyebrow">{home.featured.eyebrow}</p>
+      <span class="ds-meta-xs featured__count" aria-hidden="true">01 — 05</span>
+    </div>
 
     <ol class="featured__list">
       {home.featured.items.map((item, index) => (
-        <li><FeaturedCase item={item} index={index} locale={locale} /></li>
+        <li><FeaturedCase item={item} index={index} locale={locale} editorial={index < 4} /></li>
       ))}
     </ol>
   </section>
@@ -225,33 +222,40 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
 </PageShell>
 
 <style>
-  :global(main:has(> .hero)) { padding-block-start:var(--flow-group); }
-  .hero { display:grid; gap:var(--flow-text); }
+  :global(main:has(> .hero)) { padding-block-start:var(--flow-text); }
+  .hero { display:grid; grid-template-columns:minmax(0,1fr) var(--space-16); gap:var(--flow-text); align-items:center; }
   .hero > *, .hero > .hero__role, .hero__copy > *, .hero__copy > :global(.hero__spec) { margin-block-start:0; }
-  .hero__copy { display:grid; gap:var(--flow-text); align-content:start; }
+  .hero__copy { display:grid; gap:var(--flow-pair); align-content:start; grid-column:1 / -1; }
   .hero__name { display:flex; flex-direction:column; gap:0; color:var(--text-default); }
   .hero__profession { color:var(--text-subtle); }
-  .hero__role { color:var(--text-default); }
+  .hero__role { color:var(--text-default); grid-column:1 / -1; }
   .hero__role > span { display:block; }
   .hero__role > span:last-child { color:var(--text-link); }
   .hero__authorization { color:var(--text-subtle); max-inline-size:var(--measure-text); }
-  .hero > :global(.hero__profile) { margin-block-start:0; }
-  .hero__actions { display:flex; flex-wrap:wrap; gap:var(--space-3) var(--space-6); }
+  .hero__portrait { grid-column:2; grid-row:1; inline-size:var(--space-16); border-radius:var(--radius-md); overflow:hidden; }
+  .hero__portrait img { inline-size:100%; block-size:auto; aspect-ratio:1; object-fit:cover; object-position:top; }
+  .hero__portrait:active { outline:var(--focus-ring-width) solid var(--text-link-pressed); }
+  .hero__actions { display:flex; flex-wrap:wrap; gap:0 var(--space-6); }
   .hero__actions > :global(*) { display:flex; align-items:center; min-block-size:var(--space-12); }
+  .hero__actions > :global(.hero__work-link) { color:var(--text-default); }
   @media (--below-bp-md) {
-    .hero__actions > :global(.copy-email--action) { align-items:flex-start; }
+    .hero__actions > :global(.hero__work-link) { flex-basis:100%; }
+    .hero__actions > :global(.copy-email--action) { display:contents; }
+    .hero__actions :global(.copy-email__hint) { flex-basis:100%; }
   }
-  .work-index { display:grid; }
-  .work-index :global(.ds-link) { display:flex; align-items:center; min-block-size:var(--space-12); }
   @media (--bp-md) { .hero__name { flex-direction:row; gap:var(--space-6); } }
   @media (--bp-lg) {
-    .hero { grid-template-columns:1fr 1fr; gap:var(--flow-node) var(--space-16); }
+    .hero { grid-template-columns:minmax(0,3fr) minmax(0,1fr); gap:var(--flow-text) var(--space-16); }
     .hero__name, .hero__role { grid-column:1 / -1; }
-    .hero__role { padding-block:var(--space-4); }
-    .hero > :global(.hero__profile) { grid-column:2; grid-row:3; align-self:start; }
+    .hero__portrait { grid-column:2; grid-row:3; inline-size:var(--space-24); justify-self:end; }
+    .hero__portrait img { aspect-ratio:3 / 4; }
     .hero__copy { grid-column:1; grid-row:3; }
-    .hero__actions { display:flex; flex-wrap:wrap; gap:var(--space-4) var(--space-6); align-items:flex-start; align-self:start; }
+    .hero__actions { align-items:center; }
   }
+
+  .hero + .featured { margin-block-start:var(--flow-node); }
+  .featured__bridge { display:flex; align-items:center; justify-content:space-between; gap:var(--gutter); border-block-start:var(--border-width) solid var(--border-default); padding-block-start:var(--flow-pair); }
+  .featured__count { color:var(--text-meta); }
 
   /* Отступ под eyebrow задаёт ds-flow-eyebrow на нём самом. */
   .featured__eyebrow {
@@ -259,7 +263,7 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
   }
 
   .featured__list { display: grid; gap: var(--section-gap); }
-  .featured > .featured__list { margin-block-start: var(--flow-node); }
+  .featured > .featured__list { margin-block-start: var(--flow-text); }
 
   /* ---------------------------------------------------------------- *
    * WorksList                                                         *
@@ -333,6 +337,10 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
       padding-block: 0;
       min-height: 0;
     }
+  }
+
+  @media (--bp-lg) {
+    .dev__list { grid-template-columns:repeat(4,minmax(0,1fr)); }
   }
 
   /* Preview lift matches FeaturedCase; title stays still. */

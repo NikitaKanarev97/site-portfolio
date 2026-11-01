@@ -1,3 +1,37 @@
+## Homepage Premium V3 · Option A — Editorial Bridge · 01.11.2026
+
+Supersedes the historical hero/index and first-four cover layout below. Authorized
+implementation of research/portfolio-home-v3-2026-11-01; independent visual
+acceptance remains pending. Routes `/` and `/ru/` share one composition.
+
+- Existing Navbar (Home-only language-list semantics corrected), name/role,
+  unchanged two-line DS/Display/Home. Small real
+  portrait links to About: 64px square on phones, 96px 3:4 in desktop support rail.
+- Factual specialization, primary `#work` TextLink, CV PDF and CopyEmail. EN
+  authorization stays verbatim; RU keeps its intentional absence. Below bp-md,
+  primary action has its own row, secondary CV/copy share a row, selectable address
+  follows. No five-link index before the product proof.
+- Hero to work uses flow-node; a border-default seam, Selected work and decorative
+  01—05 count connect to the actual first card. No duplicate hero screenshot.
+- First four FeaturedCase use opt-in `editorial`: heading-4xl + heading-xl outcome,
+  flow-text before native stage; existing CTA/evidence remain. Fifth Pawly receives
+  the original default layout, text, media, route and interactions.
+- Agent: real accepted financial-consequence image, no asset changes. Desktop
+  2:5 story/UI, 16px vertical and stage-inset horizontal fields. Below bp-lg native
+  responsive image comes first, supporting story follows. No artificial clipping.
+- Portal: native source row/two choices, 1:4 story/UI from bp-lg. 41/48 remains a
+  fixture, not a measured outcome. No source replacements.
+- Learn: one warm field around one dominant native task-led scene; two factual
+  paths come from existing case copy. No nested navy frame. Phone stacks headline,
+  native mobile capture, then two path labels. Case-page renderers are untouched.
+- Vet: existing presentation/media preserved, only opt-in editorial head.
+- Four Webflow previews: 4 columns from bp-lg, 2 on tablet, compact rows on mobile;
+  existing progressive anchors and four native dialogs. Process/contact/footer
+  content and behavior stay current. Inter-section gaps otherwise unchanged.
+
+All dimensions, typography, colors and movement use existing DS roles/tokens.
+No token or motion changes. Evidence: audit/portfolio-home-v3/stage-01/REPORT.md.
+
 ## Роберт · текущая карта Home · 07.10.2026
 
 **Доводка · 07.10.2026.** Под превью — описание сделанной работы и CTA. Portal: 38 и цитата с количеством через запятую, без дополнительной пометки. Pawly: подпись о подтверждении передачи и датированном возвращении. Hero: TextLink arrow для CV и центрированная строка CopyEmail action от bp-md. Портрет ожидает другой подтверждённый снимок владельца (F42).

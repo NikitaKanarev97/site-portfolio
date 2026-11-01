@@ -1,3 +1,13 @@
+## Home V3 · Editorial Bridge · 01.11.2026
+
+Current Home composition supersedes the historical HeroPackage below; see
+screens/home.md for the complete map. Existing TextLink/CopyEmail + real compact
+portrait lead into the real first FeaturedCase. No duplicate proof image or
+five-name index. An explicit `editorial` variant affects only the first four card
+headings; Pawly keeps default composition. DevelopmentCard stays subordinate:
+four native previews in one row from bp-lg, two on tablet, compact rows on phones.
+Dialogs and process/contact/footer keep existing semantics and actions.
+
 ## Роберт · актуальные композиции · 07.10.2026
 
 Эта запись заменяет исторические варианты ниже; спецификации компонентов — актуальный каталог components.md.

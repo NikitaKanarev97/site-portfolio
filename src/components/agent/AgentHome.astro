@@ -18,14 +18,19 @@ const copy = (locale === 'ru' ? agentCaseRu : agentCaseEn).home;
 </div>
 <style>
   :global(#work-agent-ops-console .featured-case__stage) { padding: 0; background: var(--surface-subtle); color: var(--text-default); }
-  .agent-home { --focus-ring-color: var(--border-focus); display: grid; gap: var(--flow-node); padding: var(--stage-inset); background: var(--surface-subtle); color: var(--text-default); border-radius: var(--radius-media); }
+  .agent-home { --focus-ring-color: var(--border-focus); display: grid; gap: var(--flow-node); padding: var(--space-4); background: var(--surface-subtle); color: var(--text-default); border-radius: var(--radius-media); }
   .agent-home__story { display: grid; gap: var(--flow-text); align-content: center; }
   .agent-home__story p { margin: 0; }
   .agent-home__body, .agent-home__label { color: var(--text-subtle); }
   .agent-home__scene { display: grid; min-inline-size: 0; align-items: center; justify-items: end; }
   @media (--bp-lg) {
-    .agent-home { grid-template-columns: minmax(0, 2fr) minmax(0, 5fr); gap: var(--space-12); }
+    .agent-home { grid-template-columns: minmax(0, 2fr) minmax(0, 5fr); gap: var(--space-12); padding:var(--space-4) var(--stage-inset); }
     /* Keep Russian nonbreaking phrases inside the copy column at tablet widths. */
     .agent-home--ru { grid-template-columns: minmax(min-content, 2fr) minmax(0, 5fr); }
+  }
+  /* On phones the real decision is the introduction; explanation follows it. */
+  @media (--below-bp-lg) {
+    .agent-home__scene { grid-row:1; }
+    .agent-home__story { gap:var(--flow-pair); }
   }
 </style>

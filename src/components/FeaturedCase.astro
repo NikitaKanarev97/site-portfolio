@@ -6,15 +6,16 @@ interface Props {
   item: (typeof home.featured.items)[number];
   index: number;
   locale: 'en' | 'ru';
+  editorial?: boolean;
 }
-const { item, index, locale } = Astro.props;
+const { item, index, locale, editorial = false } = Astro.props;
 const slug = item.href.split('/').filter(Boolean).at(-1)!;
 const proof = item.meta.at(-1)!;
 ---
-<article class:list={['featured-case', `featured-case--${item.theme}`]} id={`work-${slug}`} aria-labelledby={`title-${slug}`} data-case-card={`case-${item.theme}`}>
+<article class:list={['featured-case', `featured-case--${item.theme}`, editorial && 'featured-case--editorial']} id={`work-${slug}`} aria-labelledby={`title-${slug}`} data-case-card={`case-${item.theme}`}>
   <div class="featured-case__head">
     <div class="featured-case__identity">
-      <h2 class="ds-display-6xl" id={`title-${slug}`}><a href={item.href}>{item.title}</a></h2>
+      <h2 class={editorial ? 'ds-heading-4xl' : 'ds-display-6xl'} id={`title-${slug}`}><a href={item.href}>{item.title}</a></h2>
     </div>
     <p class="ds-heading-xl featured-case__outcome">{item.outcome}</p>
   </div>
@@ -37,6 +38,8 @@ const proof = item.meta.at(-1)!;
   .featured-case:has(.featured-case__cta:focus-visible) { outline: var(--focus-ring-width) solid var(--focus-ring-color); outline-offset: var(--space-2); }
   .featured-case { display: grid; gap: var(--flow-node); color: var(--text-default); text-decoration: none; border-radius: var(--radius-lg); scroll-margin-block-start: var(--space-6); }
   .featured-case__stage { min-inline-size: 0; }
+  .featured-case--editorial { gap:var(--flow-text); }
+  .featured-case--editorial .featured-case__head { gap:var(--flow-pair); }
   .featured-case--agent .featured-case__stage { padding: var(--stage-inset); border-radius: var(--radius-lg); background: var(--surface-cover-agent); color: var(--text-on-inverse); }
   .featured-case__head { display: grid; gap: var(--flow-text); align-items: end; }
   .featured-case__identity { min-inline-size: 0; }
@@ -69,6 +72,7 @@ const proof = item.meta.at(-1)!;
   }
   @media (--bp-lg) {
     .featured-case__head { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: var(--space-16); }
+    .featured-case--editorial .featured-case__head { gap:var(--space-16); }
   }
   @media (prefers-reduced-motion: reduce) {
     .featured-case__stage,

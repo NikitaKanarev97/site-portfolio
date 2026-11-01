@@ -6,18 +6,27 @@ const { locale, loading = 'lazy' } = Astro.props;
 const copy = makeLearnCase(locale);
 ---
 <div class="learn-home">
-  <div class="learn-home__copy"><p class="ds-meta-sm">{copy.eyebrow}</p><p class="ds-heading-3xl learn-home__promise">{copy.promise}</p><p class="ds-body-base">{copy.lead}</p></div>
+  <div class="learn-home__copy"><p class="ds-heading-3xl learn-home__promise">{copy.paths.title}</p><p class="ds-body-base">{copy.lead}</p></div>
   <LearnShot shot={copy.hero.home} loading={loading} presentation="canvas" href={`${locale === 'ru' ? '/ru' : ''}/work/learn/`} linkLabel={locale === 'ru' ? 'Читать кейс TRASSIR Learn' : 'Read the TRASSIR Learn case'} />
-  <p class="ds-body-sm learn-home__language">{locale === 'ru' ? 'Главная по рабочей задаче · актуальный интерфейс' : 'Task-led Home · current interface'}</p>
+  <div class="learn-home__paths">
+    {[copy.paths.reference, copy.paths.learning].map(path => <div><p class="ds-meta-sm">{path.label}</p><p class="ds-heading-xl">{path.title}</p></div>)}
+  </div>
 </div>
 <style>
+  :global(#work-learn .work-stage--home.work-stage--learn) { padding:0; background:transparent; color:var(--text-default); }
   .learn-home { --focus-ring-color: var(--border-focus); display: grid; gap: var(--flow-node); padding: var(--stage-inset); background: var(--surface-subtle); color: var(--text-default); border-radius: var(--radius-media); }
   .learn-home__copy { display: grid; gap: var(--flow-text); }
-  .learn-home__copy > p:first-child, .learn-home__copy > p:last-child, .learn-home__language { color: var(--text-subtle); }
+  .learn-home__copy > p:last-child, .learn-home__paths > div > p:first-child { color: var(--text-subtle); }
   .learn-home__promise { white-space: pre-line; }
   .learn-home :global(.case-screen__open--case) { position: relative; z-index: 1; }
+  .learn-home__paths { display:grid; gap:var(--flow-text); }
+  .learn-home__paths > div { display:grid; gap:var(--flow-pair); }
+  .learn-home__paths > div + div { border-block-start:var(--border-width) solid var(--border-default); padding-block-start:var(--flow-text); }
+  @media (--below-bp-lg) { .learn-home > :global(.learn-shot) { grid-row:2; } }
   @media (--bp-lg) {
-    .learn-home { grid-template-columns: minmax(0, 2fr) minmax(0, 5fr); gap: var(--flow-text) var(--space-12); align-items: center; }
-    .learn-home__language { grid-column: 2; }
+    .learn-home { grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); gap: var(--flow-text) var(--space-8); align-items: center; }
+    .learn-home__copy { grid-column:1 / -1; grid-template-columns:1fr 1fr; gap:var(--space-12); align-items:start; }
+    .learn-home > :global(.learn-shot) { grid-column:2; grid-row:2; }
+    .learn-home__paths { grid-column:1; grid-row:2; }
   }
 </style>

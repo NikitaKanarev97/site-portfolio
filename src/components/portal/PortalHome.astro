@@ -17,11 +17,11 @@ const copy = portalHome[locale];
 </div>
 <style>
   .portal-home { display: grid; gap: var(--flow-node); padding: var(--stage-inset); background: var(--surface-portal-editorial); border-radius: var(--radius-lg); }
-  .portal-home__story { display: grid; gap: var(--flow-pair); align-content: center; }
+  .portal-home__story { display: grid; gap: var(--flow-pair); align-content: start; }
   .portal-home__story p { margin: 0; }
   .portal-home__body, .portal-home__eyebrow { color: var(--text-subtle); }
   @media (--bp-lg) {
-    .portal-home { grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); gap: var(--space-12); align-items: center; }
+    .portal-home { grid-template-columns: minmax(0, 1fr) minmax(0, 4fr); gap: var(--space-8); align-items: center; }
   }
   @media (--below-bp-md) {
     .portal-home__story { grid-template-columns: auto minmax(0, 1fr); gap: var(--space-3) var(--space-4); }

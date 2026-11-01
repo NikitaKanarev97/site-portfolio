@@ -1,3 +1,16 @@
+## Home V3 · 01.11.2026
+
+`FeaturedCase` gains opt-in `editorial?: boolean` (default false), used only for
+the first four Home cards. Uses existing heading-4xl and flow-text roles; native
+source, article semantics, evidence, stretched CTA, hover/focus/press remain.
+Pawly uses the exact default layout; no Pawly-specific source/copy/media changes.
+AgentHome prioritizes the native image below bp-lg; PortalHome gives native choice
+more width; LearnHome presents two existing path statements beside one native
+image without the nested outer field. These are Home-only compositions, never
+case-page variants. No additional movement, interactions or tokens.
+Navbar preserves native `li` roles for the Home locale links, fixing axe list
+semantics without changing other routes or visual styling.
+
 ## Роберт · актуальный каталог · 07.10.2026
 
 **08.10.2026 · единое наведение FeaturedCase.** Во всех пяти превью Home по can-hover приподнимается общий featured-case__stage на -space-1 вместе с фоном и всеми внутренними материалами; заголовок, outcome и footer неподвижны. Стрелка CTA смещается на space-1 вправо. Длительность/easing — motion-hover. При reduced-motion движения и переходы отключены; сохраняются цветовой отклик и keyboard focus. WorkStage и полные обложки кейсов не меняются.
