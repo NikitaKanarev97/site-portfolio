@@ -1,0 +1,460 @@
+{
+  "protected": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 549.1875,
+      "afterHeight": 565.1875
+    },
+    {
+      "locale": "en",
+      "width": 1024,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 726.765625,
+      "afterHeight": 723.5625
+    },
+    {
+      "locale": "en",
+      "width": 768,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 701.375,
+      "afterHeight": 690.90625
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 991.109375,
+      "afterHeight": 869.265625
+    },
+    {
+      "locale": "en",
+      "width": 360,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 944.859375,
+      "afterHeight": 848.609375
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 569.1875,
+      "afterHeight": 585.1875
+    },
+    {
+      "locale": "ru",
+      "width": 1024,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 769.578125,
+      "afterHeight": 766.375
+    },
+    {
+      "locale": "ru",
+      "width": 768,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 768.859375,
+      "afterHeight": 732.390625
+    },
+    {
+      "locale": "ru",
+      "width": 390,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 1019.359375,
+      "afterHeight": 926.03125
+    },
+    {
+      "locale": "ru",
+      "width": 360,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 996.375,
+      "afterHeight": 877.03125
+    }
+  ],
+  "interactions": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "reducedMotion": "reduce",
+      "tabStops": [
+        {
+          "tag": "A",
+          "href": "/work/agent-ops-console",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(27, 27, 24)",
+          "role": "title"
+        },
+        {
+          "tag": "A",
+          "href": "/work/agent-ops-console",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(27, 27, 24)",
+          "role": "scene"
+        },
+        {
+          "tag": "A",
+          "href": "/work/agent-ops-console",
+          "id": "cta-agent-ops-console",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "cta"
+        }
+      ],
+      "enter": "case route opens",
+      "back": "home restored",
+      "motion": {
+        "transform": "none",
+        "hidden": false
+      }
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "reducedMotion": "no-preference",
+      "tabStops": [
+        {
+          "tag": "A",
+          "href": "/work/agent-ops-console",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "title"
+        },
+        {
+          "tag": "A",
+          "href": "/work/agent-ops-console",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "scene"
+        },
+        {
+          "tag": "A",
+          "href": "/work/agent-ops-console",
+          "id": "cta-agent-ops-console",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "cta"
+        }
+      ],
+      "enter": "case route opens",
+      "back": "home restored",
+      "motion": {
+        "transform": "matrix(1, 0, 0, 1, 0, -4)",
+        "hidden": false
+      }
+    },
+    {
+      "locale": "en",
+      "width": 360,
+      "reducedMotion": "reduce",
+      "tabStops": [
+        {
+          "tag": "A",
+          "href": "/work/agent-ops-console",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(27, 27, 24)",
+          "role": "title"
+        },
+        {
+          "tag": "A",
+          "href": "/work/agent-ops-console",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(27, 27, 24)",
+          "role": "scene"
+        },
+        {
+          "tag": "A",
+          "href": "/work/agent-ops-console",
+          "id": "cta-agent-ops-console",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "cta"
+        }
+      ],
+      "enter": "case route opens",
+      "back": "home restored",
+      "motion": {
+        "transform": "none",
+        "hidden": false
+      }
+    },
+    {
+      "locale": "en",
+      "width": 360,
+      "reducedMotion": "no-preference",
+      "tabStops": [
+        {
+          "tag": "A",
+          "href": "/work/agent-ops-console",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "title"
+        },
+        {
+          "tag": "A",
+          "href": "/work/agent-ops-console",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "scene"
+        },
+        {
+          "tag": "A",
+          "href": "/work/agent-ops-console",
+          "id": "cta-agent-ops-console",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "cta"
+        }
+      ],
+      "enter": "case route opens",
+      "back": "home restored",
+      "motion": {
+        "transform": "matrix(1, 0, 0, 1, 0, -4)",
+        "hidden": false
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "reducedMotion": "reduce",
+      "tabStops": [
+        {
+          "tag": "A",
+          "href": "/ru/work/agent-ops-console",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(27, 27, 24)",
+          "role": "title"
+        },
+        {
+          "tag": "A",
+          "href": "/ru/work/agent-ops-console",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(27, 27, 24)",
+          "role": "scene"
+        },
+        {
+          "tag": "A",
+          "href": "/ru/work/agent-ops-console",
+          "id": "cta-agent-ops-console",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "cta"
+        }
+      ],
+      "enter": "case route opens",
+      "back": "home restored",
+      "motion": {
+        "transform": "none",
+        "hidden": false
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "reducedMotion": "no-preference",
+      "tabStops": [
+        {
+          "tag": "A",
+          "href": "/ru/work/agent-ops-console",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "title"
+        },
+        {
+          "tag": "A",
+          "href": "/ru/work/agent-ops-console",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "scene"
+        },
+        {
+          "tag": "A",
+          "href": "/ru/work/agent-ops-console",
+          "id": "cta-agent-ops-console",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "cta"
+        }
+      ],
+      "enter": "case route opens",
+      "back": "home restored",
+      "motion": {
+        "transform": "matrix(1, 0, 0, 1, 0, -4)",
+        "hidden": false
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 360,
+      "reducedMotion": "reduce",
+      "tabStops": [
+        {
+          "tag": "A",
+          "href": "/ru/work/agent-ops-console",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(27, 27, 24)",
+          "role": "title"
+        },
+        {
+          "tag": "A",
+          "href": "/ru/work/agent-ops-console",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(27, 27, 24)",
+          "role": "scene"
+        },
+        {
+          "tag": "A",
+          "href": "/ru/work/agent-ops-console",
+          "id": "cta-agent-ops-console",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "cta"
+        }
+      ],
+      "enter": "case route opens",
+      "back": "home restored",
+      "motion": {
+        "transform": "none",
+        "hidden": false
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 360,
+      "reducedMotion": "no-preference",
+      "tabStops": [
+        {
+          "tag": "A",
+          "href": "/ru/work/agent-ops-console",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "title"
+        },
+        {
+          "tag": "A",
+          "href": "/ru/work/agent-ops-console",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "scene"
+        },
+        {
+          "tag": "A",
+          "href": "/ru/work/agent-ops-console",
+          "id": "cta-agent-ops-console",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "cta"
+        }
+      ],
+      "enter": "case route opens",
+      "back": "home restored",
+      "motion": {
+        "transform": "matrix(1, 0, 0, 1, 0, -4)",
+        "hidden": false
+      }
+    }
+  ],
+  "noJS": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "height": 414,
+      "opacity": "1",
+      "image": 1612,
+      "href": "/work/agent-ops-console",
+      "overflow": 0
+    },
+    {
+      "locale": "en",
+      "width": 360,
+      "height": 681.421875,
+      "opacity": "1",
+      "image": 812,
+      "href": "/work/agent-ops-console",
+      "overflow": 0
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "height": 434,
+      "opacity": "1",
+      "image": 1612,
+      "href": "/ru/work/agent-ops-console",
+      "overflow": 0
+    },
+    {
+      "locale": "ru",
+      "width": 360,
+      "height": 709.84375,
+      "opacity": "1",
+      "image": 812,
+      "href": "/ru/work/agent-ops-console",
+      "overflow": 0
+    }
+  ],
+  "finalCaptureParity": "PASS: 10 final scrolled BEFORE/AFTER states; all protected DOM hashes equal",
+  "implementationCommit": "f4a28265c8d370cff83fa533aebdcfdd6a7f6938"
+}
