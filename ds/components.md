@@ -647,3 +647,16 @@ unchanged. Default presentation=frame remains for the archive and isolated
 details/results, with equal 16/24 px fields. Both variants and MediaZoom retain
 the same 16 px outer radius. EN/RU DPR-2 sources, semantic boundaries and native
 widths are recorded in the manifest; browser verification covers both variants.
+# Agent Home cover V1 · 02.11.2026 · pending independent review
+
+`AgentHome` now reads story → unchanged native consequences picture in DOM.
+Home-only copy specifies the $120 late-delivery credit, agent limit and human
+confirmation; the label discloses synthetic data. Mobile removes the enclosing
+padding and repeated outer outcome, retaining the title and existing case CTA.
+The scene uses the original accepted `approval-consequences-*`, not the older
+transparent/recolored Home exports. At every width only outer canvas corners are
+masked with radius-media; all product content and proportions remain intact.
+From bp-md: space-6 field; from bp-xl: 2:5 story/scene, space-12 gap and
+stage-inset horizontal padding. Existing semantic typography, surfaces and focus
+only. AgentShot, global tokens, motion, other covers and case page are unchanged.
+Evidence and trade-off: audit/agent-ops-home-cover-v1/v1/REPORT.md.

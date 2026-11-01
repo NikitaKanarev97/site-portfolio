@@ -452,3 +452,12 @@ product links. Text precedes its proof and never overlays UI. Mobile uses native
 390 px captures or named desktop details, never a whole desktop billboard.
 Shared content diagram remains a native disclosure to avoid forcing a long graph
 into the skim layer. Only Learn is dispatched to this renderer.
+# Agent Home cover V1 · 02.11.2026
+
+Existing FeaturedCase → WorkStage → AgentHome → AgentShot. Title stays outside;
+specific decision context precedes a single authentic consequences state; the
+existing proof/CTA closes the cover. No repeated generic outcome below the image
+on phones. Desktop retains the external title/outcome rail and asymmetric 2:5
+stage. All colors, type, spaces, corners and focus come from existing roles.
+Full task candidate A was rejected for cover height; policy/actual approval
+controls remain accessible in the case. No stitching, new controls or new tokens.

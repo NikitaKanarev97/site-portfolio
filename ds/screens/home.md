@@ -424,3 +424,15 @@ Owner correction 04.10.2026: hero proof is explicitly a work example of AI overs
 
 По фидбэку Роберта: единый Onest в display/body/meta вместо Manrope/JetBrains Mono. Роль заголовка `ds-display-home` задаёт 36 / 64 / 80 / 112 px по mobile / bp-md / bp-lg / bp-xl. Перед Hero — flow-group; строки grid разделяет flow-text, от bp-lg — flow-node. Общий section-gap вырос до 128 / 192 px до/от bp-lg и одинаково разделяет Hero/работы, пять работ между собой и нижние секции. Порядок, тексты, фото и материал работ прежние. Шапка использует знак 32 px в прежней цели 48 px. Исторические указания Manrope и прежних размеров ниже заменены этим решением.
 
+# Agent Home cover V1 · 02.11.2026 · local supersession
+
+Only Agent Home changes the earlier image-first rule: story → native consequence
+scene at every width. Below bp-md: title → specific context (synthetic data,
+late-delivery credit above the agent limit, review before confirmation) → full
+native mobile consequences → existing proof/CTA. The generic outer outcome is
+hidden locally. From bp-md it returns to its established rail. At bp-xl, existing
+2:5 story/media columns; smaller widths stack. Native source pixels are unchanged;
+only the outer canvas corners use the existing radius-media mask at every width.
+No hero, other cover, global token, case page or product-repository changes.
+Variant evidence, measurements and acceptance limits live in
+audit/agent-ops-home-cover-v1/v1/REPORT.md. Independent acceptance is pending.

@@ -58,7 +58,7 @@ export const agentCaseEn: AgentCaseCopy = {
     scopeLabel: 'My scope', scope: 'Research, requirements, information architecture, product UX/UI, design system, interactive React / Storybook prototype and testing.',
     cta: 'Public prototype — earlier version', href: 'https://agent-ops-console.vercel.app/', note: 'The public demo predates these accepted screens. Client under NDA · synthetic interface data.',
   },
-  home: { label: 'AI supervision · the human checkpoint', title: 'A credit. A customer promise. One accountable decision.', body: 'See the billing consequence and the exact message before anything is approved.', alt: 'Actual Action Approvals V1.1 consequences: $120 is credited on the next invoice, with the customer’s message alongside it.' },
+  home: { label: 'Human review · synthetic data', title: 'The agent asks for $120.', body: 'A late-delivery credit exceeds the agent’s limit. A person checks the invoice credit and customer message before confirming.', alt: 'Synthetic Ferrum Logistics approval example: $120 credited on the next invoice, no cash leaves the account. The customer message is sent only after confirmation.' },
 };
 
 export function assertAgentPair(en: AgentCaseCopy, ru: AgentCaseCopy) {
