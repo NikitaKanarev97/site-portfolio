@@ -1,3 +1,24 @@
+## Homepage Premium V3.1 · focused corrections · 01.11.2026
+
+Option A remains the composition. Existing roles/tokens and native sources remain.
+The Home-only action grid uses an accent heading-xl Work link with a down arrow;
+CV and CopyEmail are secondary, on one deliberate row below 1440. The selectable
+address occupies its own track across those two actions. At bp-xl all actions and
+the address share the support rail. Each action retains a 48px target and native
+hover/press/focus. CopyEmail's wrapper remains in the DOM (CSS subgrid).
+
+On phones, Hero uses flow-pair between its grid rows and the work list follows
+its bridge by flow-pair. First cover alone opts into `proofFirst`: title → native
+scene → outcome → evidence/CTA in DOM. From bp-md the outcome rejoins the heading
+rail; at bp-lg the original two-column title/outcome arrangement is retained.
+AgentHome's DOM now reads native scene then explanation. It remains full width
+through intermediate widths; only bp-xl pairs story and image at the accepted
+2:5 desktop proportion. No duplicated, cropped, retouched or replaced media.
+Pawly and other covers retain their default markup and composition.
+
+Review evidence: `audit/portfolio-home-v3/stage-01/v3.1/REPORT.md`.
+Independent visual acceptance remains with ChatGPT.
+
 ## Homepage Premium V3 · Option A — Editorial Bridge · 01.11.2026
 
 Supersedes the historical hero/index and first-four cover layout below. Authorized

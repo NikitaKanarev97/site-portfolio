@@ -1,0 +1,235 @@
+diff --git a/ds/components.md b/ds/components.md
+index 18d74f9..25e2da2 100644
+--- a/ds/components.md
++++ b/ds/components.md
+@@ -1,3 +1,14 @@
++## Home V3.1 · 01.11.2026
++
++`FeaturedCase` adds opt-in `proofFirst?: boolean` (default false), only on Home's
++first Agent cover. Its title precedes native proof, followed by the unchanged
++outcome and footer; Home repositions the outcome into the heading rail from
++bp-md. No shared CSS or default-card behavior changes. Pawly remains default.
++`AgentHome` reads scene then story in DOM and stacks through 1439px; bp-xl retains
++the accepted 2:5 story/image composition. No AgentShot or case-page changes.
++TextLink and CopyEmail APIs/behavior remain unchanged; the explicit Hero grid,
++48px targets, centered arrows and secondary colors belong to Home's composition.
++
+ ## Home V3 · 01.11.2026
+ 
+ `FeaturedCase` gains opt-in `editorial?: boolean` (default false), used only for
+diff --git a/ds/patterns.md b/ds/patterns.md
+index 94caf7d..2db5694 100644
+--- a/ds/patterns.md
++++ b/ds/patterns.md
+@@ -1,3 +1,14 @@
++## Home V3.1 · Editorial Bridge correction · 01.11.2026
++
++Home-only Hero action tracks: primary Work, then CV + CopyEmail with a selectable
++address on its own spanning track below bp-xl. At bp-xl the support rail is one
++row. Do not flatten the CopyEmail wrapper or reduce its touch/focus area.
++First FeaturedCase alone uses `proofFirst`: meaningful native proof follows the
++title on phones, explanatory outcome follows the scene in DOM. On wider screens
++the outcome returns to the title rail. Intermediate AgentHome is a wide native
++scene followed by supporting story; bp-xl keeps the accepted story/image pair.
++All existing DS typography/flow/spacing/color/motion roles remain. See Home map.
++
+ ## Home V3 · Editorial Bridge · 01.11.2026
+ 
+ Current Home composition supersedes the historical HeroPackage below; see
+diff --git a/ds/screens/home.md b/ds/screens/home.md
+index 3cadfa9..8ac0eab 100644
+--- a/ds/screens/home.md
++++ b/ds/screens/home.md
+@@ -1,3 +1,24 @@
++## Homepage Premium V3.1 · focused corrections · 01.11.2026
++
++Option A remains the composition. Existing roles/tokens and native sources remain.
++The Home-only action grid uses an accent heading-xl Work link with a down arrow;
++CV and CopyEmail are secondary, on one deliberate row below 1440. The selectable
++address occupies its own track across those two actions. At bp-xl all actions and
++the address share the support rail. Each action retains a 48px target and native
++hover/press/focus. CopyEmail's wrapper remains in the DOM (CSS subgrid).
++
++On phones, Hero uses flow-pair between its grid rows and the work list follows
++its bridge by flow-pair. First cover alone opts into `proofFirst`: title → native
++scene → outcome → evidence/CTA in DOM. From bp-md the outcome rejoins the heading
++rail; at bp-lg the original two-column title/outcome arrangement is retained.
++AgentHome's DOM now reads native scene then explanation. It remains full width
++through intermediate widths; only bp-xl pairs story and image at the accepted
++2:5 desktop proportion. No duplicated, cropped, retouched or replaced media.
++Pawly and other covers retain their default markup and composition.
++
++Review evidence: `audit/portfolio-home-v3/stage-01/v3.1/REPORT.md`.
++Independent visual acceptance remains with ChatGPT.
++
+ ## Homepage Premium V3 · Option A — Editorial Bridge · 01.11.2026
+ 
+ Supersedes the historical hero/index and first-four cover layout below. Authorized
+diff --git a/src/components/FeaturedCase.astro b/src/components/FeaturedCase.astro
+index c94e822..cab7256 100644
+--- a/src/components/FeaturedCase.astro
++++ b/src/components/FeaturedCase.astro
+@@ -7,21 +7,23 @@ interface Props {
+   index: number;
+   locale: 'en' | 'ru';
+   editorial?: boolean;
++  /** First Home proof follows its title, before the explanatory outcome. */
++  proofFirst?: boolean;
+ }
+-const { item, index, locale, editorial = false } = Astro.props;
++const { item, index, locale, editorial = false, proofFirst = false } = Astro.props;
+ const slug = item.href.split('/').filter(Boolean).at(-1)!;
+ const proof = item.meta.at(-1)!;
+ ---
+-<article class:list={['featured-case', `featured-case--${item.theme}`, editorial && 'featured-case--editorial']} id={`work-${slug}`} aria-labelledby={`title-${slug}`} data-case-card={`case-${item.theme}`}>
++<article class:list={['featured-case', `featured-case--${item.theme}`, editorial && 'featured-case--editorial', proofFirst && 'featured-case--proof-first']} id={`work-${slug}`} aria-labelledby={`title-${slug}`} data-case-card={`case-${item.theme}`}>
+   <div class="featured-case__head">
+     <div class="featured-case__identity">
+       <h2 class={editorial ? 'ds-heading-4xl' : 'ds-display-6xl'} id={`title-${slug}`}><a href={item.href}>{item.title}</a></h2>
+     </div>
+-    <p class="ds-heading-xl featured-case__outcome">{item.outcome}</p>
++    {!proofFirst && <p class="ds-heading-xl featured-case__outcome">{item.outcome}</p>}
+   </div>
+   <div class="featured-case__stage" data-focus-tone={item.theme === 'agent' ? 'inverse' : undefined}>
+     <WorkStage theme={item.theme} media={item.media} locale={locale} loading={index === 0 ? 'eager' : 'lazy'} href={item.href} linkLabel={`${item.cta}: ${item.title}`} />
+-  </div>
++  </div>{proofFirst && <p class="ds-heading-xl featured-case__outcome">{item.outcome}</p>}
+   <div class="featured-case__foot">
+     <div class="featured-case__facts ds-body-sm">
+       <span><span class="ds-visually-hidden">{proof.term}: </span>{proof.value}</span>
+diff --git a/src/components/agent/AgentHome.astro b/src/components/agent/AgentHome.astro
+index 69a2a7e..88bc128 100644
+--- a/src/components/agent/AgentHome.astro
++++ b/src/components/agent/AgentHome.astro
+@@ -7,30 +7,26 @@ const { locale, loading = 'lazy' } = Astro.props;
+ const copy = (locale === 'ru' ? agentCaseRu : agentCaseEn).home;
+ ---
+ <div class:list={['agent-home', locale === 'ru' && 'agent-home--ru']}>
++  <div class="agent-home__scene">
++    <AgentShot locale={locale} loading={loading} zoom={false} href={`${locale === 'ru' ? '/ru' : ''}/work/agent-ops-console`} shot={{ desktop: 'approval-consequences-desktop', mobile: 'approval-consequences-mobile', alt: copy.alt }} />
++  </div>
+   <div class="agent-home__story">
+     <p class="ds-meta-sm agent-home__label">{copy.label}</p>
+     <p class="ds-heading-3xl">{copy.title}</p>
+     <p class="ds-body-base agent-home__body">{copy.body}</p>
+   </div>
+-  <div class="agent-home__scene">
+-    <AgentShot locale={locale} loading={loading} zoom={false} href={`${locale === 'ru' ? '/ru' : ''}/work/agent-ops-console`} shot={{ desktop: 'approval-consequences-desktop', mobile: 'approval-consequences-mobile', alt: copy.alt }} />
+-  </div>
+ </div>
+ <style>
+   :global(#work-agent-ops-console .featured-case__stage) { padding: 0; background: var(--surface-subtle); color: var(--text-default); }
+   .agent-home { --focus-ring-color: var(--border-focus); display: grid; gap: var(--flow-node); padding: var(--space-4); background: var(--surface-subtle); color: var(--text-default); border-radius: var(--radius-media); }
+-  .agent-home__story { display: grid; gap: var(--flow-text); align-content: center; }
++  .agent-home__story { display: grid; gap: var(--flow-pair); align-content: center; }
+   .agent-home__story p { margin: 0; }
+   .agent-home__body, .agent-home__label { color: var(--text-subtle); }
+-  .agent-home__scene { display: grid; min-inline-size: 0; align-items: center; justify-items: end; }
+-  @media (--bp-lg) {
++  .agent-home__scene { display: grid; min-inline-size: 0; align-items: center; justify-items: center; }
++  @media (--bp-xl) {
+     .agent-home { grid-template-columns: minmax(0, 2fr) minmax(0, 5fr); gap: var(--space-12); padding:var(--space-4) var(--stage-inset); }
+-    /* Keep Russian nonbreaking phrases inside the copy column at tablet widths. */
+     .agent-home--ru { grid-template-columns: minmax(min-content, 2fr) minmax(0, 5fr); }
+-  }
+-  /* On phones the real decision is the introduction; explanation follows it. */
+-  @media (--below-bp-lg) {
+-    .agent-home__scene { grid-row:1; }
+-    .agent-home__story { gap:var(--flow-pair); }
++    .agent-home__story { grid-column:1; grid-row:1; gap:var(--flow-text); }
++    .agent-home__scene { grid-column:2; grid-row:1; justify-items:end; }
+   }
+ </style>
+diff --git a/src/pages/index.astro b/src/pages/index.astro
+index 5c45fd7..cd0b9e5 100644
+--- a/src/pages/index.astro
++++ b/src/pages/index.astro
+@@ -73,8 +73,8 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
+       сайта с жёстким лимитом по числу строк (ia/wireframes/mobile-home.md).
+     */}
+     <div class="hero__actions" data-motion="fade" data-motion-at="0.4">
+-      <TextLink type="arrow" href="#work" class="hero__work-link">{home.hero.workAction}</TextLink>
+-      <TextLink type="arrow" href={locale === 'ru' ? '/cv-ru.pdf' : '/cv.pdf'}>{home.hero.cv}</TextLink>
++      <TextLink type="arrow" direction="down" href="#work" class="hero__work-link ds-heading-xl">{home.hero.workAction}</TextLink>
++      <TextLink type="arrow" class="hero__cv-link" href={locale === 'ru' ? '/cv-ru.pdf' : '/cv.pdf'}>{home.hero.cv}</TextLink>
+       <CopyEmail
+         email={site.contact.email}
+         appearance="action"
+@@ -104,7 +104,7 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
+ 
+     <ol class="featured__list">
+       {home.featured.items.map((item, index) => (
+-        <li><FeaturedCase item={item} index={index} locale={locale} editorial={index < 4} /></li>
++        <li><FeaturedCase item={item} index={index} locale={locale} editorial={index < 4} proofFirst={index === 0} /></li>
+       ))}
+     </ol>
+   </section>
+@@ -235,13 +235,24 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
+   .hero__portrait { grid-column:2; grid-row:1; inline-size:var(--space-16); border-radius:var(--radius-md); overflow:hidden; }
+   .hero__portrait img { inline-size:100%; block-size:auto; aspect-ratio:1; object-fit:cover; object-position:top; }
+   .hero__portrait:active { outline:var(--focus-ring-width) solid var(--text-link-pressed); }
+-  .hero__actions { display:flex; flex-wrap:wrap; gap:0 var(--space-6); }
+-  .hero__actions > :global(*) { display:flex; align-items:center; min-block-size:var(--space-12); }
+-  .hero__actions > :global(.hero__work-link) { color:var(--text-default); }
++  /* Explicit action tracks. Subgrid lets CopyEmail keep its semantic wrapper
++     while its selectable address spans a separate line beneath both actions. */
++  .hero__actions { display:grid; grid-template-columns:max-content minmax(0,1fr); column-gap:var(--space-6); align-items:start; }
++  .hero .hero__actions > :global(.ds-link) { display:inline-flex; align-items:center; min-block-size:var(--space-12); justify-self:start; white-space:nowrap; }
++  .hero__actions > :global(.hero__work-link) { grid-column:1 / -1; color:var(--text-link); }
++  .hero__actions > :global(.hero__cv-link) { grid-column:1; grid-row:2; color:var(--text-subtle); }
++  .hero__actions > :global(.copy-email--action) { display:grid; grid-template-columns:subgrid; grid-column:1 / -1; grid-row:2 / span 3; gap:0 var(--space-6); align-items:start; pointer-events:none; }
++  .hero__actions :global(.copy-email__button) { grid-column:2; justify-self:start; color:var(--text-subtle); pointer-events:auto; }
++  .hero__actions :global(.copy-email__hint), .hero__actions :global(.copy-email__failure) { grid-column:1 / -1; margin:0; pointer-events:auto; }
++  .hero__actions :global(.copy-email__hint) { min-block-size:var(--flow-text); }
++  .hero__actions :global(.ds-link__arrow) { align-self:center; }
++  @media (--can-hover) {
++    .hero__actions > :global(.ds-link:hover), .hero__actions :global(.copy-email__button:hover) { color:var(--text-link-hover); }
++  }
++  .hero__actions > :global(.ds-link:active), .hero__actions :global(.copy-email__button:active) { color:var(--text-link-pressed); }
+   @media (--below-bp-md) {
+-    .hero__actions > :global(.hero__work-link) { flex-basis:100%; }
+-    .hero__actions > :global(.copy-email--action) { display:contents; }
+-    .hero__actions :global(.copy-email__hint) { flex-basis:100%; }
++    .hero { gap:var(--flow-pair); }
++    .hero__copy { gap:var(--flow-pair); }
+   }
+   @media (--bp-md) { .hero__name { flex-direction:row; gap:var(--space-6); } }
+   @media (--bp-lg) {
+@@ -250,7 +261,12 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
+     .hero__portrait { grid-column:2; grid-row:3; inline-size:var(--space-24); justify-self:end; }
+     .hero__portrait img { aspect-ratio:3 / 4; }
+     .hero__copy { grid-column:1; grid-row:3; }
+-    .hero__actions { align-items:center; }
++  }
++  @media (--bp-xl) {
++    .hero__actions { grid-template-columns:max-content max-content minmax(0,1fr); }
++    .hero__actions > :global(.hero__work-link) { grid-column:1; grid-row:1; }
++    .hero__actions > :global(.hero__cv-link) { grid-column:2; grid-row:1; }
++    .hero__actions > :global(.copy-email--action) { grid-column:3; grid-row:1; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center; gap:0 var(--space-3); }
+   }
+ 
+   .hero + .featured { margin-block-start:var(--flow-node); }
+@@ -265,6 +281,23 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
+   .featured__list { display: grid; gap: var(--section-gap); }
+   .featured > .featured__list { margin-block-start: var(--flow-text); }
+ 
++  /* Only the first cover: native proof follows its title in DOM and on phones.
++     The explanatory outcome rejoins the title rail on wider screens. */
++  @media (--below-bp-md) {
++    .featured > .featured__list { margin-block-start:var(--flow-pair); }
++  }
++  @media (--bp-md) {
++    .featured :global(.featured-case--proof-first .featured-case__outcome) { grid-row:2; }
++  }
++  @media (--bp-lg) {
++    .featured :global(.featured-case--proof-first) { grid-template-columns:minmax(0,3fr) minmax(0,2fr); column-gap:var(--space-16); align-items:end; }
++    .featured :global(.featured-case--proof-first .featured-case__head) { display:contents; }
++    .featured :global(.featured-case--proof-first .featured-case__identity) { grid-column:1; grid-row:1; }
++    .featured :global(.featured-case--proof-first .featured-case__outcome) { grid-column:2; grid-row:1; }
++    .featured :global(.featured-case--proof-first .featured-case__stage) { grid-column:1 / -1; grid-row:2; }
++    .featured :global(.featured-case--proof-first .featured-case__foot) { grid-column:1 / -1; }
++  }
++
+   /* ---------------------------------------------------------------- *
+    * WorksList                                                         *
+    * ---------------------------------------------------------------- */

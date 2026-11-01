@@ -1,3 +1,14 @@
+## Home V3.1 · Editorial Bridge correction · 01.11.2026
+
+Home-only Hero action tracks: primary Work, then CV + CopyEmail with a selectable
+address on its own spanning track below bp-xl. At bp-xl the support rail is one
+row. Do not flatten the CopyEmail wrapper or reduce its touch/focus area.
+First FeaturedCase alone uses `proofFirst`: meaningful native proof follows the
+title on phones, explanatory outcome follows the scene in DOM. On wider screens
+the outcome returns to the title rail. Intermediate AgentHome is a wide native
+scene followed by supporting story; bp-xl keeps the accepted story/image pair.
+All existing DS typography/flow/spacing/color/motion roles remain. See Home map.
+
 ## Home V3 · Editorial Bridge · 01.11.2026
 
 Current Home composition supersedes the historical HeroPackage below; see

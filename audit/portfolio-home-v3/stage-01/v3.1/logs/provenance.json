@@ -1,0 +1,44 @@
+{
+  "base": "c5fd121b86da8ebccf29110869d48d3d32f8531c",
+  "review": "806de5fcc64f8484138a9bef71703807bbf9163e",
+  "branch": "codex/homepage-premium-v3.1-2026-11-01",
+  "remote": "https://github.com/NikitaKanarev97/site-portfolio.git",
+  "captureDate": "2026-11-01",
+  "sourceHashes": [
+    {
+      "path": "src/pages/index.astro",
+      "sha256": "9a80fe8b3da29e5b37b6db750b67be0d4280bfe5a35bcaff8797bb2802078b31"
+    },
+    {
+      "path": "src/components/FeaturedCase.astro",
+      "sha256": "d55ed7f94b9dc6528e9a7f45d02e2c69388175248f6aff0cf9b30836bebde67c"
+    },
+    {
+      "path": "src/components/agent/AgentHome.astro",
+      "sha256": "71cc5e29093dbefb04829ae639eb03ebbebeae2bb55becafedfa94dcba99018b"
+    },
+    {
+      "path": "ds/screens/home.md",
+      "sha256": "2f7e631b3e6c8d6d8d586c7e2c25456c5e617ed8a04bdce6a68e70a7b160e5aa"
+    },
+    {
+      "path": "ds/components.md",
+      "sha256": "9041153b39d47586458ffe15009b8a392a7bb5ab54dd4b5c6c5ac122c2f81951"
+    },
+    {
+      "path": "ds/patterns.md",
+      "sha256": "c5d8ca91e42b21f09d75401b85856b3c93169b6a2d3da711b6c9c96dd782b029"
+    }
+  ],
+  "builtHomeHashes": [
+    {
+      "path": "dist/index.html",
+      "sha256": "354331b3c52389b98f3d4946b6294f8e80ea8119eef50f9ccf3ac02b7853b0ea"
+    },
+    {
+      "path": "dist/ru/index.html",
+      "sha256": "4dca04edeb4f6a00cfd280baa23700136bacaaf24ffc5c9eedfb5ec20732f0a5"
+    }
+  ],
+  "note": "Both captures ran from this worktree. BEFORE served the immutable copy of its c5fd121 build in .tmp/before-dist. AFTER served dist built from these source hashes. Capture sha identifies the base HEAD; the corrective source was uncommitted while captured. This delivery commit contains that exact source."
+}

@@ -1,3 +1,14 @@
+## Home V3.1 · 01.11.2026
+
+`FeaturedCase` adds opt-in `proofFirst?: boolean` (default false), only on Home's
+first Agent cover. Its title precedes native proof, followed by the unchanged
+outcome and footer; Home repositions the outcome into the heading rail from
+bp-md. No shared CSS or default-card behavior changes. Pawly remains default.
+`AgentHome` reads scene then story in DOM and stacks through 1439px; bp-xl retains
+the accepted 2:5 story/image composition. No AgentShot or case-page changes.
+TextLink and CopyEmail APIs/behavior remain unchanged; the explicit Hero grid,
+48px targets, centered arrows and secondary colors belong to Home's composition.
+
 ## Home V3 · 01.11.2026
 
 `FeaturedCase` gains opt-in `editorial?: boolean` (default false), used only for
