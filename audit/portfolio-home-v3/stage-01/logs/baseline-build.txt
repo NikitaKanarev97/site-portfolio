@@ -1,0 +1,126 @@
+
+> site-portfolio@0.1.0 build
+> astro build
+
+22:18:24 [content] Syncing content
+22:18:24 [content] Synced content
+22:18:24 [types] Generated 204ms
+22:18:24 [build] output: "static"
+22:18:24 [build] mode: "static"
+22:18:24 [build] directory: D:\Claude-projects\sp-home-premium-v3\.tmp\home-v3-baseline\dist\
+22:18:24 [build] Collecting build info...
+22:18:24 [build] ✓ Completed in 237ms.
+22:18:24 [build] Building static entrypoints...
+22:18:28 [vite] ✓ built in 3.75s
+22:18:28 [build] ✓ Completed in 3.78s.
+
+ building client (vite) 
+22:18:28 [vite] transforming...
+22:18:29 [vite] ✓ 32 modules transformed.
+22:18:29 [vite] rendering chunks...
+22:18:29 [vite] computing gzip size...
+22:18:29 [vite] dist/_astro/page.IvKoM_B8.js                                                 0.05 kB │ gzip:  0.07 kB
+22:18:29 [vite] dist/_astro/index.BbWtjHji.js                                                2.30 kB │ gzip:  1.05 kB
+22:18:29 [vite] dist/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js   13.11 kB │ gzip:  4.54 kB
+22:18:29 [vite] dist/_astro/BaseLayout.astro_astro_type_script_index_0_lang.DQHWE3gl.js    152.06 kB │ gzip: 58.88 kB
+22:18:29 [vite] ✓ built in 605ms
+
+ generating static routes 
+22:18:29 ▶ src/pages/404.astro
+22:18:29   └─ /404.html (+18ms) 
+22:18:29 ▶ src/pages/500.astro
+22:18:29   └─ /500.html (+6ms) 
+22:18:29 ▶ src/pages/about.astro
+22:18:29   └─ /about/index.html (+9ms) 
+22:18:29 ▶ src/pages/index.astro
+22:18:29   └─ /index.html (+36ms) 
+22:18:29 ▶ src/pages/kit.astro
+22:18:29   └─ /kit/index.html (+112ms) 
+22:18:29 λ src/pages/og/[card].png.ts
+22:18:29   ├─ /og/work-agent-ops-console-v2.png (+323ms) 
+22:18:30   ├─ /og/work-agent-ops-console-v2-onest.png (+240ms) 
+22:18:30   ├─ /og/work-agent-ops-console-v2-ru.png (+273ms) 
+22:18:30   ├─ /og/work-agent-ops-console-v2-ru-onest.png (+241ms) 
+22:18:30   ├─ /og/default.png (+217ms) 
+22:18:31   ├─ /og/default-onest.png (+217ms) 
+22:18:31   ├─ /og/about.png (+223ms) 
+22:18:31   ├─ /og/about-onest.png (+211ms) 
+22:18:31   ├─ /og/work-agent-ops-console.png (+266ms) 
+22:18:32   ├─ /og/work-agent-ops-console-onest.png (+254ms) 
+22:18:32   ├─ /og/work-partner-portal.png (+234ms) 
+22:18:32   ├─ /og/work-partner-portal-onest.png (+268ms) 
+22:18:32   ├─ /og/work-learn.png (+209ms) 
+22:18:32   ├─ /og/work-learn-onest.png (+211ms) 
+22:18:33   ├─ /og/work-vet-clinic.png (+190ms) 
+22:18:33   ├─ /og/work-vet-clinic-onest.png (+187ms) 
+22:18:33   ├─ /og/work-pawly.png (+211ms) 
+22:18:33   ├─ /og/work-pawly-onest.png (+212ms) 
+22:18:34   ├─ /og/default-ru.png (+245ms) 
+22:18:34   ├─ /og/default-ru-onest.png (+217ms) 
+22:18:34   ├─ /og/about-ru.png (+211ms) 
+22:18:34   ├─ /og/about-ru-onest.png (+213ms) 
+22:18:34   ├─ /og/work-agent-ops-console-ru.png (+211ms) 
+22:18:35   ├─ /og/work-agent-ops-console-ru-onest.png (+201ms) 
+22:18:35   ├─ /og/work-partner-portal-ru.png (+197ms) 
+22:18:35   ├─ /og/work-partner-portal-ru-onest.png (+206ms) 
+22:18:35   ├─ /og/work-learn-ru.png (+206ms) 
+22:18:35   ├─ /og/work-learn-ru-onest.png (+213ms) 
+22:18:36   ├─ /og/work-vet-clinic-ru.png (+210ms) 
+22:18:36   ├─ /og/work-vet-clinic-ru-onest.png (+198ms) 
+22:18:36   ├─ /og/work-pawly-ru.png (+206ms) 
+22:18:36   └─ /og/work-pawly-ru-onest.png (+209ms) 
+22:18:36 ▶ src/pages/preview/agent-ops-pilot.astro
+22:18:36   └─ /preview/agent-ops-pilot/index.html (+32ms) 
+22:18:36 ▶ src/pages/preview/agent-ops-rebuild/[locale].astro
+22:18:36   ├─ /preview/agent-ops-rebuild/en/index.html (+13ms) 
+22:18:37   └─ /preview/agent-ops-rebuild/ru/index.html (+43ms) 
+22:18:37 ▶ src/pages/preview/common/[locale]/[case].astro
+22:18:37   ├─ /preview/common/en/agent-ops/index.html (+9ms) 
+22:18:37   ├─ /preview/common/en/partner-portal/index.html (+19ms) 
+22:18:37   ├─ /preview/common/ru/agent-ops/index.html (+8ms) 
+22:18:37   └─ /preview/common/ru/partner-portal/index.html (+15ms) 
+22:18:37 ▶ src/pages/preview/common/index.astro
+22:18:37   └─ /preview/common/index.html (+4ms) 
+22:18:37 ▶ src/pages/preview/film-common/[locale].astro
+22:18:37   ├─ /preview/film-common/en/index.html (+19ms) 
+22:18:37   └─ /preview/film-common/ru/index.html (+22ms) 
+22:18:37 ▶ src/pages/preview/learn-rebuild/[locale].astro
+22:18:37   ├─ /preview/learn-rebuild/en/index.html (+51ms) 
+22:18:37   └─ /preview/learn-rebuild/ru/index.html (+60ms) 
+22:18:37 ▶ src/pages/preview/partner-portal-pilot.astro
+22:18:37   └─ /preview/partner-portal-pilot/index.html (+5ms) 
+22:18:37 ▶ src/pages/preview/partner-portal-rebuild/[locale].astro
+22:18:37   ├─ /preview/partner-portal-rebuild/en/index.html (+31ms) 
+22:18:37   └─ /preview/partner-portal-rebuild/ru/index.html (+29ms) 
+22:18:37 ▶ src/pages/preview/pawly-rebuild/[locale].astro
+22:18:37   ├─ /preview/pawly-rebuild/en/index.html (+39ms) 
+22:18:37   └─ /preview/pawly-rebuild/ru/index.html (+36ms) 
+22:18:37 ▶ src/pages/preview/vet-clinic-rebuild/[locale].astro
+22:18:37   ├─ /preview/vet-clinic-rebuild/en/index.html (+27ms) 
+22:18:37   └─ /preview/vet-clinic-rebuild/ru/index.html (+31ms) 
+22:18:37 λ src/pages/robots.txt.ts
+22:18:37   └─ /robots.txt (+1ms) 
+22:18:37 ▶ src/pages/ru/404.astro
+22:18:37   └─ /ru/404/index.html (+7ms) 
+22:18:37 ▶ src/pages/ru/about.astro
+22:18:37   └─ /ru/about/index.html (+5ms) 
+22:18:37 ▶ src/pages/ru/index.astro
+22:18:37   └─ /ru/index.html (+18ms) 
+22:18:37 ▶ src/pages/ru/work/[slug].astro
+22:18:37   ├─ /ru/work/agent-ops-console/index.html (+8ms) 
+22:18:37   ├─ /ru/work/partner-portal/index.html (+8ms) 
+22:18:37   ├─ /ru/work/learn/index.html (+36ms) 
+22:18:37   ├─ /ru/work/vet-clinic/index.html (+9ms) 
+22:18:37   └─ /ru/work/pawly/index.html (+8ms) 
+22:18:37 λ src/pages/sitemap.xml.ts
+22:18:37   └─ /sitemap.xml (+2ms) 
+22:18:37 ▶ src/pages/work/[slug].astro
+22:18:37   ├─ /work/agent-ops-console/index.html (+7ms) 
+22:18:37   ├─ /work/partner-portal/index.html (+6ms) 
+22:18:37   ├─ /work/learn/index.html (+33ms) 
+22:18:37   ├─ /work/vet-clinic/index.html (+9ms) 
+22:18:37   └─ /work/pawly/index.html (+7ms) 
+22:18:37 ✓ Completed in 8.36s.
+
+22:18:37 [build] 37 page(s) built in 13.08s
+22:18:37 [build] Complete!

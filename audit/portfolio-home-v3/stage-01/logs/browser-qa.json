@@ -1,0 +1,631 @@
+{
+  "origin": "http://127.0.0.1:4412",
+  "results": [
+    {
+      "name": "en-1440 axe WCAG A/AA",
+      "pass": true,
+      "evidence": {
+        "violations": 0,
+        "passes": 39,
+        "manualReview": 0
+      }
+    },
+    {
+      "name": "en-1440 primary work anchor",
+      "pass": true,
+      "evidence": "http://127.0.0.1:4412/#work"
+    },
+    {
+      "name": "en-1440 CV and internal destinations",
+      "pass": true,
+      "evidence": [
+        "/",
+        "/#work",
+        "/about",
+        "/#contact",
+        "/ru/",
+        "/cv.pdf",
+        "/work/agent-ops-console",
+        "/work/partner-portal",
+        "/work/learn",
+        "/work/learn/",
+        "/work/vet-clinic",
+        "/work/pawly"
+      ]
+    },
+    {
+      "name": "en-1440 email keyboard copy",
+      "pass": true,
+      "evidence": "nikita.kanarev.dev@outlook.com"
+    },
+    {
+      "name": "en-1440 all four dialogs / keyboard and focus return",
+      "pass": true,
+      "evidence": {
+        "dialogs": 4,
+        "openedBy": "Enter",
+        "closedBy": "Escape",
+        "focusRestored": true
+      }
+    },
+    {
+      "name": "en-1440 five live case transitions and About",
+      "pass": true,
+      "evidence": {
+        "cases": [
+          "/work/agent-ops-console",
+          "/work/partner-portal",
+          "/work/learn",
+          "/work/vet-clinic",
+          "/work/pawly"
+        ],
+        "about": true,
+        "languageSwitch": true
+      }
+    },
+    {
+      "name": "en-390 axe WCAG A/AA",
+      "pass": true,
+      "evidence": {
+        "violations": 0,
+        "passes": 39,
+        "manualReview": 0
+      }
+    },
+    {
+      "name": "en-390 primary work anchor",
+      "pass": true,
+      "evidence": "http://127.0.0.1:4412/#work"
+    },
+    {
+      "name": "en-390 CV and internal destinations",
+      "pass": true,
+      "evidence": [
+        "/",
+        "/#work",
+        "/about",
+        "/#contact",
+        "/ru/",
+        "/cv.pdf",
+        "/work/agent-ops-console",
+        "/work/partner-portal",
+        "/work/learn",
+        "/work/learn/",
+        "/work/vet-clinic",
+        "/work/pawly"
+      ]
+    },
+    {
+      "name": "en-390 email keyboard copy",
+      "pass": true,
+      "evidence": "nikita.kanarev.dev@outlook.com"
+    },
+    {
+      "name": "en-390 all four dialogs / keyboard and focus return",
+      "pass": true,
+      "evidence": {
+        "dialogs": 4,
+        "openedBy": "Enter",
+        "closedBy": "Escape",
+        "focusRestored": true
+      }
+    },
+    {
+      "name": "en-390 mobile menu focus trap / Space / Escape",
+      "pass": true,
+      "evidence": {
+        "trap": true,
+        "targetHeight": 48
+      }
+    },
+    {
+      "name": "en-390 five live case transitions and About",
+      "pass": true,
+      "evidence": {
+        "cases": [
+          "/work/agent-ops-console",
+          "/work/partner-portal",
+          "/work/learn",
+          "/work/vet-clinic",
+          "/work/pawly"
+        ],
+        "about": true,
+        "languageSwitch": true
+      }
+    },
+    {
+      "name": "en-360 axe WCAG A/AA",
+      "pass": true,
+      "evidence": {
+        "violations": 0,
+        "passes": 39,
+        "manualReview": 0
+      }
+    },
+    {
+      "name": "en-360 primary work anchor",
+      "pass": true,
+      "evidence": "http://127.0.0.1:4412/#work"
+    },
+    {
+      "name": "en-360 CV and internal destinations",
+      "pass": true,
+      "evidence": [
+        "/",
+        "/#work",
+        "/about",
+        "/#contact",
+        "/ru/",
+        "/cv.pdf",
+        "/work/agent-ops-console",
+        "/work/partner-portal",
+        "/work/learn",
+        "/work/learn/",
+        "/work/vet-clinic",
+        "/work/pawly"
+      ]
+    },
+    {
+      "name": "en-360 email keyboard copy",
+      "pass": true,
+      "evidence": "nikita.kanarev.dev@outlook.com"
+    },
+    {
+      "name": "en-360 all four dialogs / keyboard and focus return",
+      "pass": true,
+      "evidence": {
+        "dialogs": 4,
+        "openedBy": "Enter",
+        "closedBy": "Escape",
+        "focusRestored": true
+      }
+    },
+    {
+      "name": "en-360 mobile menu focus trap / Space / Escape",
+      "pass": true,
+      "evidence": {
+        "trap": true,
+        "targetHeight": 48
+      }
+    },
+    {
+      "name": "en-360 five live case transitions and About",
+      "pass": true,
+      "evidence": {
+        "cases": [
+          "/work/agent-ops-console",
+          "/work/partner-portal",
+          "/work/learn",
+          "/work/vet-clinic",
+          "/work/pawly"
+        ],
+        "about": true,
+        "languageSwitch": true
+      }
+    },
+    {
+      "name": "ru-1440 axe WCAG A/AA",
+      "pass": true,
+      "evidence": {
+        "violations": 0,
+        "passes": 39,
+        "manualReview": 0
+      }
+    },
+    {
+      "name": "ru-1440 primary work anchor",
+      "pass": true,
+      "evidence": "http://127.0.0.1:4412/ru/#work"
+    },
+    {
+      "name": "ru-1440 CV and internal destinations",
+      "pass": true,
+      "evidence": [
+        "/ru/",
+        "/ru/#work",
+        "/ru/about",
+        "/ru/#contact",
+        "/",
+        "/cv-ru.pdf",
+        "/ru/work/agent-ops-console",
+        "/ru/work/partner-portal",
+        "/ru/work/learn",
+        "/ru/work/learn/",
+        "/ru/work/vet-clinic",
+        "/ru/work/pawly"
+      ]
+    },
+    {
+      "name": "ru-1440 email keyboard copy",
+      "pass": true,
+      "evidence": "nikita.kanarev.dev@outlook.com"
+    },
+    {
+      "name": "ru-1440 all four dialogs / keyboard and focus return",
+      "pass": true,
+      "evidence": {
+        "dialogs": 4,
+        "openedBy": "Enter",
+        "closedBy": "Escape",
+        "focusRestored": true
+      }
+    },
+    {
+      "name": "ru-1440 five live case transitions and About",
+      "pass": true,
+      "evidence": {
+        "cases": [
+          "/ru/work/agent-ops-console",
+          "/ru/work/partner-portal",
+          "/ru/work/learn",
+          "/ru/work/vet-clinic",
+          "/ru/work/pawly"
+        ],
+        "about": true,
+        "languageSwitch": true
+      }
+    },
+    {
+      "name": "ru-390 axe WCAG A/AA",
+      "pass": true,
+      "evidence": {
+        "violations": 0,
+        "passes": 39,
+        "manualReview": 0
+      }
+    },
+    {
+      "name": "ru-390 primary work anchor",
+      "pass": true,
+      "evidence": "http://127.0.0.1:4412/ru/#work"
+    },
+    {
+      "name": "ru-390 CV and internal destinations",
+      "pass": true,
+      "evidence": [
+        "/ru/",
+        "/ru/#work",
+        "/ru/about",
+        "/ru/#contact",
+        "/",
+        "/cv-ru.pdf",
+        "/ru/work/agent-ops-console",
+        "/ru/work/partner-portal",
+        "/ru/work/learn",
+        "/ru/work/learn/",
+        "/ru/work/vet-clinic",
+        "/ru/work/pawly"
+      ]
+    },
+    {
+      "name": "ru-390 email keyboard copy",
+      "pass": true,
+      "evidence": "nikita.kanarev.dev@outlook.com"
+    },
+    {
+      "name": "ru-390 all four dialogs / keyboard and focus return",
+      "pass": true,
+      "evidence": {
+        "dialogs": 4,
+        "openedBy": "Enter",
+        "closedBy": "Escape",
+        "focusRestored": true
+      }
+    },
+    {
+      "name": "ru-390 mobile menu focus trap / Space / Escape",
+      "pass": true,
+      "evidence": {
+        "trap": true,
+        "targetHeight": 48
+      }
+    },
+    {
+      "name": "ru-390 five live case transitions and About",
+      "pass": true,
+      "evidence": {
+        "cases": [
+          "/ru/work/agent-ops-console",
+          "/ru/work/partner-portal",
+          "/ru/work/learn",
+          "/ru/work/vet-clinic",
+          "/ru/work/pawly"
+        ],
+        "about": true,
+        "languageSwitch": true
+      }
+    },
+    {
+      "name": "ru-360 axe WCAG A/AA",
+      "pass": true,
+      "evidence": {
+        "violations": 0,
+        "passes": 39,
+        "manualReview": 0
+      }
+    },
+    {
+      "name": "ru-360 primary work anchor",
+      "pass": true,
+      "evidence": "http://127.0.0.1:4412/ru/#work"
+    },
+    {
+      "name": "ru-360 CV and internal destinations",
+      "pass": true,
+      "evidence": [
+        "/ru/",
+        "/ru/#work",
+        "/ru/about",
+        "/ru/#contact",
+        "/",
+        "/cv-ru.pdf",
+        "/ru/work/agent-ops-console",
+        "/ru/work/partner-portal",
+        "/ru/work/learn",
+        "/ru/work/learn/",
+        "/ru/work/vet-clinic",
+        "/ru/work/pawly"
+      ]
+    },
+    {
+      "name": "ru-360 email keyboard copy",
+      "pass": true,
+      "evidence": "nikita.kanarev.dev@outlook.com"
+    },
+    {
+      "name": "ru-360 all four dialogs / keyboard and focus return",
+      "pass": true,
+      "evidence": {
+        "dialogs": 4,
+        "openedBy": "Enter",
+        "closedBy": "Escape",
+        "focusRestored": true
+      }
+    },
+    {
+      "name": "ru-360 mobile menu focus trap / Space / Escape",
+      "pass": true,
+      "evidence": {
+        "trap": true,
+        "targetHeight": 48
+      }
+    },
+    {
+      "name": "ru-360 five live case transitions and About",
+      "pass": true,
+      "evidence": {
+        "cases": [
+          "/ru/work/agent-ops-console",
+          "/ru/work/partner-portal",
+          "/ru/work/learn",
+          "/ru/work/vet-clinic",
+          "/ru/work/pawly"
+        ],
+        "about": true,
+        "languageSwitch": true
+      }
+    },
+    {
+      "name": "normal motion, reduced motion, no-JS and slow image layout",
+      "pass": true,
+      "evidence": [
+        {
+          "locale": "en",
+          "mode": "normal",
+          "first": {
+            "x": 40,
+            "y": 787.765625,
+            "width": 310,
+            "height": 477.96875
+          },
+          "last": {
+            "x": 40,
+            "y": 787.765625,
+            "width": 310,
+            "height": 477.96875
+          },
+          "shifts": [
+            {
+              "value": 0.0037517491880452265,
+              "sources": [
+                "SECTION",
+                "DIV"
+              ]
+            }
+          ],
+          "errors": []
+        },
+        {
+          "locale": "en",
+          "mode": "reduced",
+          "first": {
+            "x": 40,
+            "y": 782.375,
+            "width": 310,
+            "height": 477.96875
+          },
+          "last": {
+            "x": 40,
+            "y": 782.375,
+            "width": 310,
+            "height": 477.96875
+          },
+          "shifts": [],
+          "errors": []
+        },
+        {
+          "locale": "en",
+          "mode": "no-js",
+          "first": {
+            "x": 40,
+            "y": 854.375,
+            "width": 310,
+            "height": 477.96875
+          },
+          "last": {
+            "x": 40,
+            "y": 854.375,
+            "width": 310,
+            "height": 477.96875
+          },
+          "shifts": null,
+          "errors": []
+        },
+        {
+          "locale": "en",
+          "mode": "slow-images",
+          "first": {
+            "x": 40,
+            "y": 854.375,
+            "width": 310,
+            "height": 477.96875
+          },
+          "last": {
+            "x": 40,
+            "y": 782.375,
+            "width": 310,
+            "height": 477.96875
+          },
+          "shifts": [
+            {
+              "value": 0.07722198513061253,
+              "sources": [
+                "MAIN"
+              ]
+            }
+          ],
+          "errors": []
+        },
+        {
+          "locale": "en",
+          "mode": "broken-image",
+          "first": {
+            "x": 40,
+            "y": 782.375,
+            "width": 310,
+            "height": 477.96875
+          },
+          "last": {
+            "x": 40,
+            "y": 782.375,
+            "width": 310,
+            "height": 477.96875
+          },
+          "shifts": [],
+          "errors": []
+        },
+        {
+          "locale": "ru",
+          "mode": "normal",
+          "first": {
+            "x": 40,
+            "y": 730.984375,
+            "width": 310,
+            "height": 506.21875
+          },
+          "last": {
+            "x": 40,
+            "y": 730.984375,
+            "width": 310,
+            "height": 506.21875
+          },
+          "shifts": [
+            {
+              "value": 0.003797270799605372,
+              "sources": [
+                "SECTION",
+                "DIV"
+              ]
+            }
+          ],
+          "errors": []
+        },
+        {
+          "locale": "ru",
+          "mode": "reduced",
+          "first": {
+            "x": 40,
+            "y": 725.59375,
+            "width": 310,
+            "height": 506.21875
+          },
+          "last": {
+            "x": 40,
+            "y": 725.59375,
+            "width": 310,
+            "height": 506.21875
+          },
+          "shifts": [],
+          "errors": []
+        },
+        {
+          "locale": "ru",
+          "mode": "no-js",
+          "first": {
+            "x": 40,
+            "y": 797.59375,
+            "width": 310,
+            "height": 506.21875
+          },
+          "last": {
+            "x": 40,
+            "y": 797.59375,
+            "width": 310,
+            "height": 506.21875
+          },
+          "shifts": null,
+          "errors": []
+        },
+        {
+          "locale": "ru",
+          "mode": "slow-images",
+          "first": {
+            "x": 40,
+            "y": 797.59375,
+            "width": 310,
+            "height": 506.21875
+          },
+          "last": {
+            "x": 40,
+            "y": 725.59375,
+            "width": 310,
+            "height": 506.21875
+          },
+          "shifts": [
+            {
+              "value": 0.07722198513061253,
+              "sources": [
+                "MAIN"
+              ]
+            }
+          ],
+          "errors": []
+        },
+        {
+          "locale": "ru",
+          "mode": "broken-image",
+          "first": {
+            "x": 40,
+            "y": 725.59375,
+            "width": 310,
+            "height": 506.21875
+          },
+          "last": {
+            "x": 40,
+            "y": 725.59375,
+            "width": 310,
+            "height": 506.21875
+          },
+          "shifts": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "name": "copy failure keeps selectable email and announces fallback",
+      "pass": true,
+      "evidence": true
+    }
+  ],
+  "issues": []
+}
