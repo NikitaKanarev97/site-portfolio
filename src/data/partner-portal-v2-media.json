@@ -577,34 +577,38 @@
   },
   "en/home-decision-1280": {
     "src": "/media/home-cover-polish/portal-en-1280.webp",
-    "width": 2028,
+    "width": 1980,
     "height": 852,
-    "source": "audit/home-cover-polish/sources/portal-en-1280.png",
-    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
-    "sourceCorrection": "audit/home-cover-polish/tools/portal-source-fix.css"
+    "source": "audit/b2b-source-ui-v11/product/en-1280-native.png",
+    "commit": "36be1d80277c536b94424ac49aa5ff82662d8ee7",
+    "route": "resolution-center",
+    "export": "Native production component crop. External alpha follows its measured source radius; no capture-time CSS or DOM mutation."
   },
   "en/home-decision-390": {
     "src": "/media/home-cover-polish/portal-en-390.webp",
     "width": 716,
     "height": 1304,
-    "source": "audit/home-cover-polish/sources/portal-en-390.png",
-    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
-    "sourceCorrection": "audit/home-cover-polish/tools/portal-source-fix.css"
+    "source": "audit/b2b-source-ui-v11/product/en-390-native.png",
+    "commit": "36be1d80277c536b94424ac49aa5ff82662d8ee7",
+    "route": "resolution-center",
+    "export": "Native production component crop. External alpha follows its measured source radius; no capture-time CSS or DOM mutation."
   },
   "ru/home-decision-1280": {
     "src": "/media/home-cover-polish/portal-ru-1280.webp",
-    "width": 2028,
+    "width": 1980,
     "height": 852,
-    "source": "audit/home-cover-polish/sources/portal-ru-1280.png",
-    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
-    "sourceCorrection": "audit/home-cover-polish/tools/portal-source-fix.css"
+    "source": "audit/b2b-source-ui-v11/product/ru-1280-native.png",
+    "commit": "36be1d80277c536b94424ac49aa5ff82662d8ee7",
+    "route": "ru/resolution-center",
+    "export": "Native production component crop. External alpha follows its measured source radius; no capture-time CSS or DOM mutation."
   },
   "ru/home-decision-390": {
     "src": "/media/home-cover-polish/portal-ru-390.webp",
     "width": 716,
     "height": 1388,
-    "source": "audit/home-cover-polish/sources/portal-ru-390.png",
-    "commit": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
-    "sourceCorrection": "audit/home-cover-polish/tools/portal-source-fix.css"
+    "source": "audit/b2b-source-ui-v11/product/ru-390-native.png",
+    "commit": "36be1d80277c536b94424ac49aa5ff82662d8ee7",
+    "route": "ru/resolution-center",
+    "export": "Native production component crop. External alpha follows its measured source radius; no capture-time CSS or DOM mutation."
   }
 }

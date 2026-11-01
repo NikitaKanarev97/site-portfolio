@@ -1,0 +1,176 @@
+{
+  "sourceRepository": "https://github.com/NikitaKanarev97/b2b-partner-portal.git",
+  "sourceCommit": "36be1d80277c536b94424ac49aa5ff82662d8ee7",
+  "nativeRecipe": "audit/source-ui-v11/tools/capture.mjs",
+  "capturePolicy": "No injected CSS, artificial DOM wrapper or text replacement. Alpha conversion affects only the external measured native silhouette.",
+  "entries": [
+    {
+      "locale": "en",
+      "width": 1280,
+      "viewportHeight": 2000,
+      "dpr": 2,
+      "route": "resolution-center",
+      "source": "after/en-1280-decision.png",
+      "sha256": "e6b0bf0c8689c24fe573999fcef4f577f82622fb4a69d118cd012de4c41b633e",
+      "geometry": {
+        "x": 253,
+        "y": 379,
+        "width": 990,
+        "height": 426,
+        "radius": 8,
+        "border": [
+          "1px",
+          "1px",
+          "1px",
+          "1px"
+        ]
+      },
+      "text": "Row 19 · nvr 8ch poe\n2 compatible catalog options\nQuantity\n2\npcs\nAmbiguous\nBoth candidates are PoE, 8 channel\nChoose\nChoose a catalog product for line 19\nFrom the file: “nvr 8ch poe” · 2 pcs\n\nCompare the specifications, then confirm one product.\n\nProduct\nDetection\nStorage bays\nKX-7608NXI-K2\n8-channel NVR with object detection\nSelected\nDetection\nObject detection on all channels\nStorage bays\n2 HDD bays\nKX-7608NI-K2\n8-channel NVR, base series\nDetection\nNo object detection\nStorage bays\n2 HDD bays\nApply to line 19\nCancel",
+      "errors": [],
+      "failures": [],
+      "export": "Native browser screenshot; only fixture seed, clock and real user control actions. No injected CSS or DOM mutation.",
+      "src": "/media/home-cover-polish/portal-en-1280.webp",
+      "sourceRepository": "https://github.com/NikitaKanarev97/b2b-partner-portal.git",
+      "sourceCommit": "36be1d80277c536b94424ac49aa5ff82662d8ee7",
+      "outputWidth": 1980,
+      "outputHeight": 852,
+      "sourceRadius": 8,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "opaquePixelCount": 1686668,
+      "opaqueRGBUnchanged": true,
+      "rawSha256": "e6b0bf0c8689c24fe573999fcef4f577f82622fb4a69d118cd012de4c41b633e",
+      "webpSha256": "c8922d4e78b5d0724916c1c88e2c34e387c46b9dbcedf0344605d0588a0279a7"
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "viewportHeight": 2000,
+      "dpr": 2,
+      "route": "resolution-center",
+      "source": "after/en-390-decision.png",
+      "sha256": "b1742e64e07c225d600a66e8af0ffff6b21bba6e836c3240c7c2de8e783b8561",
+      "geometry": {
+        "x": 16,
+        "y": 336,
+        "width": 358,
+        "height": 652,
+        "radius": 8,
+        "border": [
+          "1px",
+          "1px",
+          "1px",
+          "1px"
+        ]
+      },
+      "text": "Row 19 · nvr 8ch poe\n2 compatible catalog options\nQuantity\n2\npcs\nAmbiguous\nBoth candidates are PoE, 8 channel\nChoose\nChoose a catalog product for line 19\nFrom the file: “nvr 8ch poe” · 2 pcs\n\nCompare the specifications, then confirm one product.\n\nKX-7608NXI-K2\n8-channel NVR with object detection\nSelected\nDetection\nObject detection on all channels\nStorage bays\n2 HDD bays\nKX-7608NI-K2\n8-channel NVR, base series\nDetection\nNo object detection\nStorage bays\n2 HDD bays\nApply to line 19\nCancel",
+      "errors": [],
+      "failures": [],
+      "export": "Native browser screenshot; only fixture seed, clock and real user control actions. No injected CSS or DOM mutation.",
+      "src": "/media/home-cover-polish/portal-en-390.webp",
+      "sourceRepository": "https://github.com/NikitaKanarev97/b2b-partner-portal.git",
+      "sourceCommit": "36be1d80277c536b94424ac49aa5ff82662d8ee7",
+      "outputWidth": 716,
+      "outputHeight": 1304,
+      "sourceRadius": 8,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "opaquePixelCount": 933372,
+      "opaqueRGBUnchanged": true,
+      "rawSha256": "b1742e64e07c225d600a66e8af0ffff6b21bba6e836c3240c7c2de8e783b8561",
+      "webpSha256": "d815de6b7ebc76878654b343554d77b9a2c6a601e9a46031538db455b126a9f7"
+    },
+    {
+      "locale": "ru",
+      "width": 1280,
+      "viewportHeight": 2000,
+      "dpr": 2,
+      "route": "ru/resolution-center",
+      "source": "after/ru-1280-decision.png",
+      "sha256": "573726825c701011ba6fae826c50b5fad7395adc4a9e24ee7f43739aac41e3b5",
+      "geometry": {
+        "x": 253,
+        "y": 397,
+        "width": 990,
+        "height": 426,
+        "radius": 8,
+        "border": [
+          "1px",
+          "1px",
+          "1px",
+          "1px"
+        ]
+      },
+      "text": "Строка 19 · nvr 8ch poe\n2 совместимых варианта в каталоге\nКоличество\n2\nшт.\nНеоднозначно\nОба кандидата — PoE на 8 каналов\nВыбрать\nВыберите товар каталога для строки 19\nИз файла: «nvr 8ch poe» · 2 шт.\n\nСравните характеристики и подтвердите один товар.\n\nТовар\nРаспознавание\nОтсеки дисков\nKX-7608NXI-K2\n8-канальный NVR с распознаванием объектов\nВыбрано\nРаспознавание\nРаспознавание на всех каналах\nОтсеки дисков\n2 отсека HDD\nKX-7608NI-K2\n8-канальный NVR базовой серии\nРаспознавание\nБез распознавания\nОтсеки дисков\n2 отсека HDD\nПрименить к строке 19\nОтмена",
+      "errors": [],
+      "failures": [],
+      "export": "Native browser screenshot; only fixture seed, clock and real user control actions. No injected CSS or DOM mutation.",
+      "src": "/media/home-cover-polish/portal-ru-1280.webp",
+      "sourceRepository": "https://github.com/NikitaKanarev97/b2b-partner-portal.git",
+      "sourceCommit": "36be1d80277c536b94424ac49aa5ff82662d8ee7",
+      "outputWidth": 1980,
+      "outputHeight": 852,
+      "sourceRadius": 8,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "opaquePixelCount": 1686668,
+      "opaqueRGBUnchanged": true,
+      "rawSha256": "573726825c701011ba6fae826c50b5fad7395adc4a9e24ee7f43739aac41e3b5",
+      "webpSha256": "da21418d106d795b37596445923c813f9ec3f0793a8c6848e1b1a530ccf0ba7b"
+    },
+    {
+      "locale": "ru",
+      "width": 390,
+      "viewportHeight": 2000,
+      "dpr": 2,
+      "route": "ru/resolution-center",
+      "source": "after/ru-390-decision.png",
+      "sha256": "f39ad6f6d6bb157415bc48c045ac5d971feba8c13de2e488dc1d97b6d0dc9007",
+      "geometry": {
+        "x": 16,
+        "y": 274,
+        "width": 358,
+        "height": 694,
+        "radius": 8,
+        "border": [
+          "1px",
+          "1px",
+          "1px",
+          "1px"
+        ]
+      },
+      "text": "Строка 19 · nvr 8ch poe\n2 совместимых варианта в каталоге\nКоличество\n2\nшт.\nНеоднозначно\nОба кандидата — PoE на 8 каналов\nВыбрать\nВыберите товар каталога для строки 19\nИз файла: «nvr 8ch poe» · 2 шт.\n\nСравните характеристики и подтвердите один товар.\n\nKX-7608NXI-K2\n8-канальный NVR с распознаванием объектов\nВыбрано\nРаспознавание\nРаспознавание на всех каналах\nОтсеки дисков\n2 отсека HDD\nKX-7608NI-K2\n8-канальный NVR базовой серии\nРаспознавание\nБез распознавания\nОтсеки дисков\n2 отсека HDD\nПрименить к строке 19\nОтмена",
+      "errors": [],
+      "failures": [],
+      "export": "Native browser screenshot; only fixture seed, clock and real user control actions. No injected CSS or DOM mutation.",
+      "src": "/media/home-cover-polish/portal-ru-390.webp",
+      "sourceRepository": "https://github.com/NikitaKanarev97/b2b-partner-portal.git",
+      "sourceCommit": "36be1d80277c536b94424ac49aa5ff82662d8ee7",
+      "outputWidth": 716,
+      "outputHeight": 1388,
+      "sourceRadius": 8,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "opaquePixelCount": 993516,
+      "opaqueRGBUnchanged": true,
+      "rawSha256": "f39ad6f6d6bb157415bc48c045ac5d971feba8c13de2e488dc1d97b6d0dc9007",
+      "webpSha256": "03d406b6696e8e52db54ce8c5811a36ace67214363fe879f6b3e257b4983bce1"
+    }
+  ]
+}

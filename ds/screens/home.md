@@ -4,10 +4,12 @@ Retain Premium V3.1's Editorial Bridge, order, typography, actions and proofFirs
 PortalHome uses Home-only row-19 source exports: a complete neutral shell, one
 uniform 1px border per candidate, separation between candidates, both products
 and the buyer's Apply action at desktop and mobile. The editorial 41/48 remains
-fixture context. External corners are captured against alpha, so the blue-gray
-stage shows through the native radius while the complete border stays intact.
-Source corrections and provenance: audit/home-cover-polish/tools/
-portal-source-fix.css and sources/manifest.json; case-page evidence is unchanged.
+fixture context. From Source UI Fix V1.1 (02.11.2026), these four Portal captures
+come from the real B2B Resolution Center shell at product revision 36be1d8,
+without capture-time CSS or DOM reconstruction. External alpha follows its
+measured native radius, preserving the border and revealing the blue-gray stage.
+Current native provenance: audit/b2b-source-ui-v11/product/manifest.json. The old
+capture-only corrections remain historical evidence; case media is unchanged.
 AgentHome uses variant A: the real consequence panels on its existing neutral
 stage, transparent external canvas and neutral-stage header. Source text and
 panel styling remain authentic. Variant B (rounded native dark container) is

@@ -1,0 +1,1351 @@
+{
+  "base": "6bbe1cd71a656414efcc90a98c61d1012c55be92",
+  "changed": [
+    "src/components/CandidateComparison/CandidateComparison.css",
+    "src/screens/resolution-center/ResolutionCenter.css",
+    "src/screens/resolution-center/ResolutionCenter.tsx"
+  ],
+  "unchangedFiles": 268,
+  "unchanged": [
+    {
+      "path": "src/App.tsx",
+      "baselineBlob": "da91817711b7c7f9daa48e52a21af466a8186cbb",
+      "currentBlob": "da91817711b7c7f9daa48e52a21af466a8186cbb"
+    },
+    {
+      "path": "src/Showcase.tsx",
+      "baselineBlob": "cc87c1608eebee71642f14cf453d190e5fa2de33",
+      "currentBlob": "cc87c1608eebee71642f14cf453d190e5fa2de33"
+    },
+    {
+      "path": "src/app/LinkInterceptor.tsx",
+      "baselineBlob": "273d5e8443f5b945a12f7c08f265d3f0bcf012f2",
+      "currentBlob": "273d5e8443f5b945a12f7c08f265d3f0bcf012f2"
+    },
+    {
+      "path": "src/app/ToastHost.tsx",
+      "baselineBlob": "78550af0769639948d51c41e88e32cf1df1b2430",
+      "currentBlob": "78550af0769639948d51c41e88e32cf1df1b2430"
+    },
+    {
+      "path": "src/app/routes.ts",
+      "baselineBlob": "edccf1679f54332856c4f57fd9b19f64349d1cb4",
+      "currentBlob": "edccf1679f54332856c4f57fd9b19f64349d1cb4"
+    },
+    {
+      "path": "src/app/telemetry.ts",
+      "baselineBlob": "3f60860d40f8a37830d5a346f47ec9560f92584a",
+      "currentBlob": "3f60860d40f8a37830d5a346f47ec9560f92584a"
+    },
+    {
+      "path": "src/catalog/CatalogStates.stories.tsx",
+      "baselineBlob": "effd972289d31d77ddf8ea7a8ebf53432daefa74",
+      "currentBlob": "effd972289d31d77ddf8ea7a8ebf53432daefa74"
+    },
+    {
+      "path": "src/catalog/DataFeedback.stories.tsx",
+      "baselineBlob": "dc8f334207185deedb2b8a2035744112eb070a2b",
+      "currentBlob": "dc8f334207185deedb2b8a2035744112eb070a2b"
+    },
+    {
+      "path": "src/catalog/Form.stories.tsx",
+      "baselineBlob": "e5056a673aa84a427f49c699cc463b11864cad4e",
+      "currentBlob": "e5056a673aa84a427f49c699cc463b11864cad4e"
+    },
+    {
+      "path": "src/catalog/Matrix.tsx",
+      "baselineBlob": "a6efc7f3ccc58b79ef8980cf3cf7003326eba2ad",
+      "currentBlob": "a6efc7f3ccc58b79ef8980cf3cf7003326eba2ad"
+    },
+    {
+      "path": "src/catalog/OrderTracking.stories.tsx",
+      "baselineBlob": "b61a7069c2b0aa749ff466c2781c3c487153da61",
+      "currentBlob": "b61a7069c2b0aa749ff466c2781c3c487153da61"
+    },
+    {
+      "path": "src/catalog/Overlays.stories.tsx",
+      "baselineBlob": "9bd7388e9436c0a512819e18a070927cfbb913a0",
+      "currentBlob": "9bd7388e9436c0a512819e18a070927cfbb913a0"
+    },
+    {
+      "path": "src/catalog/Procurement.stories.tsx",
+      "baselineBlob": "50d18274330ed445d8b07bd7e96414efa7abfe5e",
+      "currentBlob": "50d18274330ed445d8b07bd7e96414efa7abfe5e"
+    },
+    {
+      "path": "src/catalog/Sandbox.tsx",
+      "baselineBlob": "6c4a29dcbccf33a277a8fa1c5715d81d8234706b",
+      "currentBlob": "6c4a29dcbccf33a277a8fa1c5715d81d8234706b"
+    },
+    {
+      "path": "src/catalog/Shell.stories.tsx",
+      "baselineBlob": "1f7a35825dad8d78ee4eb7ef18320a86d6885340",
+      "currentBlob": "1f7a35825dad8d78ee4eb7ef18320a86d6885340"
+    },
+    {
+      "path": "src/catalog/SystemRoutes.stories.tsx",
+      "baselineBlob": "edc358757b27ff3c52b8e55fe53fcd2b869fb50b",
+      "currentBlob": "edc358757b27ff3c52b8e55fe53fcd2b869fb50b"
+    },
+    {
+      "path": "src/components/Accordion/Accordion.stories.tsx",
+      "baselineBlob": "d2a5c108889b9bd48bce4b8d431575f14cb952e4",
+      "currentBlob": "d2a5c108889b9bd48bce4b8d431575f14cb952e4"
+    },
+    {
+      "path": "src/components/Accordion/Accordion.tsx",
+      "baselineBlob": "31e5787764f5ec0a14d5d0b7c80d4e700b4e108b",
+      "currentBlob": "31e5787764f5ec0a14d5d0b7c80d4e700b4e108b"
+    },
+    {
+      "path": "src/components/Accordion/index.ts",
+      "baselineBlob": "88e19ad8924a7f63291798673ebb1d867deb9eb6",
+      "currentBlob": "88e19ad8924a7f63291798673ebb1d867deb9eb6"
+    },
+    {
+      "path": "src/components/Alert/Alert.stories.tsx",
+      "baselineBlob": "760bdf8b5b6f4f24ce005f0f125850a8a94e8545",
+      "currentBlob": "760bdf8b5b6f4f24ce005f0f125850a8a94e8545"
+    },
+    {
+      "path": "src/components/Alert/Alert.tsx",
+      "baselineBlob": "aec2786bed87a6123734fda64507ca07c335ec9c",
+      "currentBlob": "aec2786bed87a6123734fda64507ca07c335ec9c"
+    },
+    {
+      "path": "src/components/Alert/index.ts",
+      "baselineBlob": "1d29da9baf71ca00f7181b9cc5ba208cbf955ce6",
+      "currentBlob": "1d29da9baf71ca00f7181b9cc5ba208cbf955ce6"
+    },
+    {
+      "path": "src/components/AppHeader/AppHeader.stories.tsx",
+      "baselineBlob": "9ba38cad098a2b25b2ad66c18ce982a7b29730d4",
+      "currentBlob": "9ba38cad098a2b25b2ad66c18ce982a7b29730d4"
+    },
+    {
+      "path": "src/components/AppHeader/AppHeader.tsx",
+      "baselineBlob": "bb6d6e2c844b32bb57953de2b6ee5d58cb9836e6",
+      "currentBlob": "bb6d6e2c844b32bb57953de2b6ee5d58cb9836e6"
+    },
+    {
+      "path": "src/components/AppHeader/index.ts",
+      "baselineBlob": "0d7882980c7e4534960262536ab203a75761332c",
+      "currentBlob": "0d7882980c7e4534960262536ab203a75761332c"
+    },
+    {
+      "path": "src/components/Availability/Availability.stories.tsx",
+      "baselineBlob": "cb3d81aca0b15ec8985de9e957ee424c99eb92c3",
+      "currentBlob": "cb3d81aca0b15ec8985de9e957ee424c99eb92c3"
+    },
+    {
+      "path": "src/components/Availability/Availability.tsx",
+      "baselineBlob": "05108bbf89c751824a944cce0fa401a3e6243535",
+      "currentBlob": "05108bbf89c751824a944cce0fa401a3e6243535"
+    },
+    {
+      "path": "src/components/Availability/index.ts",
+      "baselineBlob": "7c33eb705ff54f990acca4d77dd729c0b3b7039a",
+      "currentBlob": "7c33eb705ff54f990acca4d77dd729c0b3b7039a"
+    },
+    {
+      "path": "src/components/Badge/Badge.stories.tsx",
+      "baselineBlob": "8bbadab2fdea53add46fa28b95c551b4e13ea81c",
+      "currentBlob": "8bbadab2fdea53add46fa28b95c551b4e13ea81c"
+    },
+    {
+      "path": "src/components/Badge/Badge.tsx",
+      "baselineBlob": "6309542ec12a57ea35843be4293cae45a373e6b7",
+      "currentBlob": "6309542ec12a57ea35843be4293cae45a373e6b7"
+    },
+    {
+      "path": "src/components/Badge/index.ts",
+      "baselineBlob": "495ada8d0538bed30870b304be2f7b84d540c338",
+      "currentBlob": "495ada8d0538bed30870b304be2f7b84d540c338"
+    },
+    {
+      "path": "src/components/Breadcrumbs/Breadcrumbs.stories.tsx",
+      "baselineBlob": "1ef72d79032b65d27a80d02bb3be3122ec0d7869",
+      "currentBlob": "1ef72d79032b65d27a80d02bb3be3122ec0d7869"
+    },
+    {
+      "path": "src/components/Breadcrumbs/Breadcrumbs.tsx",
+      "baselineBlob": "bd6026741ea952f1b81ca45bb6d0f85b7415f61c",
+      "currentBlob": "bd6026741ea952f1b81ca45bb6d0f85b7415f61c"
+    },
+    {
+      "path": "src/components/Breadcrumbs/index.ts",
+      "baselineBlob": "aec50e585593e272ab250c4ea42e8fb8a5659922",
+      "currentBlob": "aec50e585593e272ab250c4ea42e8fb8a5659922"
+    },
+    {
+      "path": "src/components/Button/Button.stories.tsx",
+      "baselineBlob": "b3043896497859f6cf1162e8842ab5dcf79b1f2f",
+      "currentBlob": "b3043896497859f6cf1162e8842ab5dcf79b1f2f"
+    },
+    {
+      "path": "src/components/Button/Button.tsx",
+      "baselineBlob": "86ab77bcb9f58377a1de3f9efc1dd226d51015b2",
+      "currentBlob": "86ab77bcb9f58377a1de3f9efc1dd226d51015b2"
+    },
+    {
+      "path": "src/components/Button/index.ts",
+      "baselineBlob": "f2347e06e27acc8cfd771905f500903fc34b38ca",
+      "currentBlob": "f2347e06e27acc8cfd771905f500903fc34b38ca"
+    },
+    {
+      "path": "src/components/CandidateComparison/CandidateComparison.stories.tsx",
+      "baselineBlob": "27fd8db5d1d9d6acccf4f7a0b80b983e6f449765",
+      "currentBlob": "27fd8db5d1d9d6acccf4f7a0b80b983e6f449765"
+    },
+    {
+      "path": "src/components/CandidateComparison/CandidateComparison.tsx",
+      "baselineBlob": "61e535f734c4ee2844ca89ae84aea9afc6a2b534",
+      "currentBlob": "61e535f734c4ee2844ca89ae84aea9afc6a2b534"
+    },
+    {
+      "path": "src/components/CandidateComparison/index.ts",
+      "baselineBlob": "5573f346553365ed55ecff02c6b02c29defd364a",
+      "currentBlob": "5573f346553365ed55ecff02c6b02c29defd364a"
+    },
+    {
+      "path": "src/components/Card/Card.stories.tsx",
+      "baselineBlob": "4d642488a3f7c9bee49b52ab53367b1667e76578",
+      "currentBlob": "4d642488a3f7c9bee49b52ab53367b1667e76578"
+    },
+    {
+      "path": "src/components/Card/Card.tsx",
+      "baselineBlob": "46b979576b57e73bcb4a08e2d7a3bbc0b8a8e23b",
+      "currentBlob": "46b979576b57e73bcb4a08e2d7a3bbc0b8a8e23b"
+    },
+    {
+      "path": "src/components/Card/index.ts",
+      "baselineBlob": "9a469602fbb62a6dba890e7af4a5461b93c8770b",
+      "currentBlob": "9a469602fbb62a6dba890e7af4a5461b93c8770b"
+    },
+    {
+      "path": "src/components/Checkbox/Checkbox.stories.tsx",
+      "baselineBlob": "957653bf5151af5a60831c083fa928d64018afd1",
+      "currentBlob": "957653bf5151af5a60831c083fa928d64018afd1"
+    },
+    {
+      "path": "src/components/Checkbox/Checkbox.tsx",
+      "baselineBlob": "662cddbceac0ad8e1fb9819a39e3d67e75b0a3d6",
+      "currentBlob": "662cddbceac0ad8e1fb9819a39e3d67e75b0a3d6"
+    },
+    {
+      "path": "src/components/Checkbox/index.ts",
+      "baselineBlob": "ba3628d39b9f6740dbe7073f1ec2242fefbf59a3",
+      "currentBlob": "ba3628d39b9f6740dbe7073f1ec2242fefbf59a3"
+    },
+    {
+      "path": "src/components/CheckoutProgress/CheckoutProgress.stories.tsx",
+      "baselineBlob": "179ac0afd1136bcdf1c02b4906b2e1db33c7b252",
+      "currentBlob": "179ac0afd1136bcdf1c02b4906b2e1db33c7b252"
+    },
+    {
+      "path": "src/components/CheckoutProgress/CheckoutProgress.tsx",
+      "baselineBlob": "b957c89355907c3de94fb09b1b8b752eafeebf65",
+      "currentBlob": "b957c89355907c3de94fb09b1b8b752eafeebf65"
+    },
+    {
+      "path": "src/components/CheckoutProgress/index.ts",
+      "baselineBlob": "a22ee8074bd6ba7cc4e1016ab394251c32855639",
+      "currentBlob": "a22ee8074bd6ba7cc4e1016ab394251c32855639"
+    },
+    {
+      "path": "src/components/Combobox/Combobox.stories.tsx",
+      "baselineBlob": "38eb3e3634913b2dd0c8a85c7360dd5eb53866e1",
+      "currentBlob": "38eb3e3634913b2dd0c8a85c7360dd5eb53866e1"
+    },
+    {
+      "path": "src/components/Combobox/Combobox.tsx",
+      "baselineBlob": "4d988627d2390b5cdf127e9545be0b501a2a79e7",
+      "currentBlob": "4d988627d2390b5cdf127e9545be0b501a2a79e7"
+    },
+    {
+      "path": "src/components/Combobox/index.ts",
+      "baselineBlob": "238ce4b3f662c76cf9c83b5f6d1ae08e895bae1e",
+      "currentBlob": "238ce4b3f662c76cf9c83b5f6d1ae08e895bae1e"
+    },
+    {
+      "path": "src/components/CounterpartySwitcher/CounterpartySwitcher.stories.tsx",
+      "baselineBlob": "45a5a64b541c77283998658194e86c2b4ad7bd06",
+      "currentBlob": "45a5a64b541c77283998658194e86c2b4ad7bd06"
+    },
+    {
+      "path": "src/components/CounterpartySwitcher/CounterpartySwitcher.tsx",
+      "baselineBlob": "d244f607242ee5e6fc1dcc74a36cc41062fb1da7",
+      "currentBlob": "d244f607242ee5e6fc1dcc74a36cc41062fb1da7"
+    },
+    {
+      "path": "src/components/CounterpartySwitcher/index.ts",
+      "baselineBlob": "014c5a5f632da049038f48333572d43161d785ff",
+      "currentBlob": "014c5a5f632da049038f48333572d43161d785ff"
+    },
+    {
+      "path": "src/components/DataTable/DataTable.stories.tsx",
+      "baselineBlob": "38bd2157cf2f286ca54fa7b9e28438e760fa14ab",
+      "currentBlob": "38bd2157cf2f286ca54fa7b9e28438e760fa14ab"
+    },
+    {
+      "path": "src/components/DataTable/DataTable.tsx",
+      "baselineBlob": "e619a88f6fc4b7d8f66dc31b7a0226e1a7be1543",
+      "currentBlob": "e619a88f6fc4b7d8f66dc31b7a0226e1a7be1543"
+    },
+    {
+      "path": "src/components/DataTable/index.ts",
+      "baselineBlob": "49046a2e6bc6921a497b541dcc1722b7c70f1a33",
+      "currentBlob": "49046a2e6bc6921a497b541dcc1722b7c70f1a33"
+    },
+    {
+      "path": "src/components/DatePicker/DatePicker.stories.tsx",
+      "baselineBlob": "9a86624bde739f568353660b88fd17999d9ba007",
+      "currentBlob": "9a86624bde739f568353660b88fd17999d9ba007"
+    },
+    {
+      "path": "src/components/DatePicker/DatePicker.tsx",
+      "baselineBlob": "7826137f445f8fcfabc452766b11dabb99085dd4",
+      "currentBlob": "7826137f445f8fcfabc452766b11dabb99085dd4"
+    },
+    {
+      "path": "src/components/DatePicker/index.ts",
+      "baselineBlob": "6e4250df71cbaae8d5984e6093c8c5e17bba180f",
+      "currentBlob": "6e4250df71cbaae8d5984e6093c8c5e17bba180f"
+    },
+    {
+      "path": "src/components/DeltaRow/DeltaRow.stories.tsx",
+      "baselineBlob": "ae8167b14cbe4cccc4032eb5efb0d52b0f453ceb",
+      "currentBlob": "ae8167b14cbe4cccc4032eb5efb0d52b0f453ceb"
+    },
+    {
+      "path": "src/components/DeltaRow/DeltaRow.tsx",
+      "baselineBlob": "4a9081b46e8dc74e0d5837e5b287d61a32720985",
+      "currentBlob": "4a9081b46e8dc74e0d5837e5b287d61a32720985"
+    },
+    {
+      "path": "src/components/DeltaRow/index.ts",
+      "baselineBlob": "5dcc1ae0fa3051656860dc6bc66957d464c99c37",
+      "currentBlob": "5dcc1ae0fa3051656860dc6bc66957d464c99c37"
+    },
+    {
+      "path": "src/components/Dialog/Dialog.stories.tsx",
+      "baselineBlob": "441903964ce0baffcd6a2566ecbe55f8ecc780d6",
+      "currentBlob": "441903964ce0baffcd6a2566ecbe55f8ecc780d6"
+    },
+    {
+      "path": "src/components/Dialog/Dialog.tsx",
+      "baselineBlob": "8ca4ad069b1f6a9d859fba618c92b0819c5724d8",
+      "currentBlob": "8ca4ad069b1f6a9d859fba618c92b0819c5724d8"
+    },
+    {
+      "path": "src/components/Dialog/index.ts",
+      "baselineBlob": "c7231c436740e3fddd15dc1374fe8a4c121b91f5",
+      "currentBlob": "c7231c436740e3fddd15dc1374fe8a4c121b91f5"
+    },
+    {
+      "path": "src/components/DocumentRow/DocumentRow.stories.tsx",
+      "baselineBlob": "e3797e2e07164df387b508cefb0cbaf83b9a8a97",
+      "currentBlob": "e3797e2e07164df387b508cefb0cbaf83b9a8a97"
+    },
+    {
+      "path": "src/components/DocumentRow/DocumentRow.tsx",
+      "baselineBlob": "d174a1f79cf2580b9c425cf7fdfc7e38a7498df6",
+      "currentBlob": "d174a1f79cf2580b9c425cf7fdfc7e38a7498df6"
+    },
+    {
+      "path": "src/components/DocumentRow/index.ts",
+      "baselineBlob": "5063a421eef94cf3c5a123ef7ef50c12cd826866",
+      "currentBlob": "5063a421eef94cf3c5a123ef7ef50c12cd826866"
+    },
+    {
+      "path": "src/components/Drawer/Drawer.stories.tsx",
+      "baselineBlob": "4e1d97e26f15a339247465558b55cfda1fbdb622",
+      "currentBlob": "4e1d97e26f15a339247465558b55cfda1fbdb622"
+    },
+    {
+      "path": "src/components/Drawer/Drawer.tsx",
+      "baselineBlob": "792d2bb2f0e1b42180f37f7475387b45f717baf2",
+      "currentBlob": "792d2bb2f0e1b42180f37f7475387b45f717baf2"
+    },
+    {
+      "path": "src/components/Drawer/index.ts",
+      "baselineBlob": "f9fc1c284e61a45d41dfdc831fbba5f18dc9519e",
+      "currentBlob": "f9fc1c284e61a45d41dfdc831fbba5f18dc9519e"
+    },
+    {
+      "path": "src/components/DropdownMenu/DropdownMenu.stories.tsx",
+      "baselineBlob": "24061d95744affbfe13cdf7c0d30e5ca7d82b468",
+      "currentBlob": "24061d95744affbfe13cdf7c0d30e5ca7d82b468"
+    },
+    {
+      "path": "src/components/DropdownMenu/DropdownMenu.tsx",
+      "baselineBlob": "67896fb286ec82dc7e4c866fa694fe3f00c8305a",
+      "currentBlob": "67896fb286ec82dc7e4c866fa694fe3f00c8305a"
+    },
+    {
+      "path": "src/components/DropdownMenu/index.ts",
+      "baselineBlob": "5bde1cad49a18b6383b2be8704276612e1a8d1c2",
+      "currentBlob": "5bde1cad49a18b6383b2be8704276612e1a8d1c2"
+    },
+    {
+      "path": "src/components/EmptyState/EmptyState.stories.tsx",
+      "baselineBlob": "409bbe6f2c267e606d8b574fe513ec55ee85fcba",
+      "currentBlob": "409bbe6f2c267e606d8b574fe513ec55ee85fcba"
+    },
+    {
+      "path": "src/components/EmptyState/EmptyState.tsx",
+      "baselineBlob": "87f6741e460a0d0094d863ac72e0de723f0eb639",
+      "currentBlob": "87f6741e460a0d0094d863ac72e0de723f0eb639"
+    },
+    {
+      "path": "src/components/EmptyState/index.ts",
+      "baselineBlob": "3ef62b937dd240f4ef0d777fd6cf4372d5545fb4",
+      "currentBlob": "3ef62b937dd240f4ef0d777fd6cf4372d5545fb4"
+    },
+    {
+      "path": "src/components/FileUpload/FileUpload.stories.tsx",
+      "baselineBlob": "e0cc526b91868bcbd5892e37c83d9f442ec0bfb2",
+      "currentBlob": "e0cc526b91868bcbd5892e37c83d9f442ec0bfb2"
+    },
+    {
+      "path": "src/components/FileUpload/FileUpload.tsx",
+      "baselineBlob": "a10ea0aae4d89a076ca63ac58bf6f97270d1ed30",
+      "currentBlob": "a10ea0aae4d89a076ca63ac58bf6f97270d1ed30"
+    },
+    {
+      "path": "src/components/FileUpload/index.ts",
+      "baselineBlob": "47d72cae33c6ae6780a571871e5949227d28cb46",
+      "currentBlob": "47d72cae33c6ae6780a571871e5949227d28cb46"
+    },
+    {
+      "path": "src/components/FulfillmentPlan/FulfillmentPlan.css",
+      "baselineBlob": "ed0b0a1969f045a9f8828aaacbc8f51510774b80",
+      "currentBlob": "ed0b0a1969f045a9f8828aaacbc8f51510774b80"
+    },
+    {
+      "path": "src/components/FulfillmentPlan/FulfillmentPlan.stories.tsx",
+      "baselineBlob": "9fc12abb0892b2e4ebf6c8328f0bef823239bfc5",
+      "currentBlob": "9fc12abb0892b2e4ebf6c8328f0bef823239bfc5"
+    },
+    {
+      "path": "src/components/FulfillmentPlan/FulfillmentPlan.tsx",
+      "baselineBlob": "1ce49710f9b7005ce32303f4f14771b1f637a996",
+      "currentBlob": "1ce49710f9b7005ce32303f4f14771b1f637a996"
+    },
+    {
+      "path": "src/components/FulfillmentPlan/index.ts",
+      "baselineBlob": "b93185218a4d92d6791e290c25eb5d3fbf179155",
+      "currentBlob": "b93185218a4d92d6791e290c25eb5d3fbf179155"
+    },
+    {
+      "path": "src/components/IconButton/IconButton.stories.tsx",
+      "baselineBlob": "e627f4e7fd5055aaf8532296b644770f8728f21f",
+      "currentBlob": "e627f4e7fd5055aaf8532296b644770f8728f21f"
+    },
+    {
+      "path": "src/components/IconButton/IconButton.tsx",
+      "baselineBlob": "63f9e651d4cc2a73d14d848ffc2a5df28283b489",
+      "currentBlob": "63f9e651d4cc2a73d14d848ffc2a5df28283b489"
+    },
+    {
+      "path": "src/components/IconButton/index.ts",
+      "baselineBlob": "51178416c425d37b12e53fb5aaa75406b8157023",
+      "currentBlob": "51178416c425d37b12e53fb5aaa75406b8157023"
+    },
+    {
+      "path": "src/components/Input/Input.stories.tsx",
+      "baselineBlob": "75ff5788f71d09a8420a88575cd272b579693bc3",
+      "currentBlob": "75ff5788f71d09a8420a88575cd272b579693bc3"
+    },
+    {
+      "path": "src/components/Input/Input.tsx",
+      "baselineBlob": "66e72fd2baf97e09bd58a9f7c87c9fc91c229fa9",
+      "currentBlob": "66e72fd2baf97e09bd58a9f7c87c9fc91c229fa9"
+    },
+    {
+      "path": "src/components/Input/index.ts",
+      "baselineBlob": "c6a916ca50a7d470acf7b0ed3998d77b024d181b",
+      "currentBlob": "c6a916ca50a7d470acf7b0ed3998d77b024d181b"
+    },
+    {
+      "path": "src/components/OrderRow/OrderRow.stories.tsx",
+      "baselineBlob": "d990254c741a2261422b3dd83d546cd61d8f255b",
+      "currentBlob": "d990254c741a2261422b3dd83d546cd61d8f255b"
+    },
+    {
+      "path": "src/components/OrderRow/OrderRow.tsx",
+      "baselineBlob": "551478b7ff9cebd4e044581205b633e12a2f202b",
+      "currentBlob": "551478b7ff9cebd4e044581205b633e12a2f202b"
+    },
+    {
+      "path": "src/components/OrderRow/index.ts",
+      "baselineBlob": "76a2c8b8d41a131013f7714ef849d0fb8c44f325",
+      "currentBlob": "76a2c8b8d41a131013f7714ef849d0fb8c44f325"
+    },
+    {
+      "path": "src/components/OrderSummary/OrderSummary.stories.tsx",
+      "baselineBlob": "94b99508b27738a144c47031c91b083e9845d3d2",
+      "currentBlob": "94b99508b27738a144c47031c91b083e9845d3d2"
+    },
+    {
+      "path": "src/components/OrderSummary/OrderSummary.tsx",
+      "baselineBlob": "10e587d4fdd143ff954d409e1ca4819e36ff2204",
+      "currentBlob": "10e587d4fdd143ff954d409e1ca4819e36ff2204"
+    },
+    {
+      "path": "src/components/OrderSummary/index.ts",
+      "baselineBlob": "d759ef0ced48d9b470669bdc615eabcd8869bf19",
+      "currentBlob": "d759ef0ced48d9b470669bdc615eabcd8869bf19"
+    },
+    {
+      "path": "src/components/OrderTimeline/OrderTimeline.stories.tsx",
+      "baselineBlob": "d097f02e1ade68f8b833e6085c99873a640b0e51",
+      "currentBlob": "d097f02e1ade68f8b833e6085c99873a640b0e51"
+    },
+    {
+      "path": "src/components/OrderTimeline/OrderTimeline.tsx",
+      "baselineBlob": "25d135a64d2b129afe3ae7fe980d7e4d948cd41a",
+      "currentBlob": "25d135a64d2b129afe3ae7fe980d7e4d948cd41a"
+    },
+    {
+      "path": "src/components/OrderTimeline/index.ts",
+      "baselineBlob": "fab83ef9347eb6cd30233415c561e19e1d278472",
+      "currentBlob": "fab83ef9347eb6cd30233415c561e19e1d278472"
+    },
+    {
+      "path": "src/components/PageHeader/PageHeader.stories.tsx",
+      "baselineBlob": "c173ed50a94eba3ef77e7b6480fb0a3e408ea0ca",
+      "currentBlob": "c173ed50a94eba3ef77e7b6480fb0a3e408ea0ca"
+    },
+    {
+      "path": "src/components/PageHeader/PageHeader.tsx",
+      "baselineBlob": "17e24521f356a021149294b1dc830dd27628c925",
+      "currentBlob": "17e24521f356a021149294b1dc830dd27628c925"
+    },
+    {
+      "path": "src/components/PageHeader/index.ts",
+      "baselineBlob": "2409d7fcab76b01fb72f70f5607037e87184ae9a",
+      "currentBlob": "2409d7fcab76b01fb72f70f5607037e87184ae9a"
+    },
+    {
+      "path": "src/components/Pagination/Pagination.stories.tsx",
+      "baselineBlob": "aae4a02c22aa97eef8879480a948a8cb3fb33005",
+      "currentBlob": "aae4a02c22aa97eef8879480a948a8cb3fb33005"
+    },
+    {
+      "path": "src/components/Pagination/Pagination.tsx",
+      "baselineBlob": "acdde1287f97aa11caaad98d739c792a4a49d200",
+      "currentBlob": "acdde1287f97aa11caaad98d739c792a4a49d200"
+    },
+    {
+      "path": "src/components/Pagination/index.ts",
+      "baselineBlob": "78dd49c81f1336fed961e6c2a1b3713ce42fe1d6",
+      "currentBlob": "78dd49c81f1336fed961e6c2a1b3713ce42fe1d6"
+    },
+    {
+      "path": "src/components/PriceBlock/PriceBlock.stories.tsx",
+      "baselineBlob": "593687010808bb84b3d26a483c75d51e37c294b4",
+      "currentBlob": "593687010808bb84b3d26a483c75d51e37c294b4"
+    },
+    {
+      "path": "src/components/PriceBlock/PriceBlock.tsx",
+      "baselineBlob": "3bcf701b6d19510519b990f3fb4c43d19bea07ad",
+      "currentBlob": "3bcf701b6d19510519b990f3fb4c43d19bea07ad"
+    },
+    {
+      "path": "src/components/PriceBlock/index.ts",
+      "baselineBlob": "1cb47c224d093e3bbf4c8bb154e39d490c17eb36",
+      "currentBlob": "1cb47c224d093e3bbf4c8bb154e39d490c17eb36"
+    },
+    {
+      "path": "src/components/ProcurementEntryCard/ProcurementEntryCard.stories.tsx",
+      "baselineBlob": "289f371ad6126349f5a1f6ec227612537238c22a",
+      "currentBlob": "289f371ad6126349f5a1f6ec227612537238c22a"
+    },
+    {
+      "path": "src/components/ProcurementEntryCard/ProcurementEntryCard.tsx",
+      "baselineBlob": "4d66e69381012afd806f3d3e73a77e7425247c2e",
+      "currentBlob": "4d66e69381012afd806f3d3e73a77e7425247c2e"
+    },
+    {
+      "path": "src/components/ProcurementEntryCard/index.ts",
+      "baselineBlob": "d34e156de513f3217031956473db025994aee14d",
+      "currentBlob": "d34e156de513f3217031956473db025994aee14d"
+    },
+    {
+      "path": "src/components/ProductRow/ProductRow.css",
+      "baselineBlob": "5890cdbde98c7bf45e0fb12cd66c6e7b2cb185d3",
+      "currentBlob": "5890cdbde98c7bf45e0fb12cd66c6e7b2cb185d3"
+    },
+    {
+      "path": "src/components/ProductRow/ProductRow.stories.tsx",
+      "baselineBlob": "4099ecac01acd50200ff827028430767abe3b8a4",
+      "currentBlob": "4099ecac01acd50200ff827028430767abe3b8a4"
+    },
+    {
+      "path": "src/components/ProductRow/ProductRow.tsx",
+      "baselineBlob": "60d8cd757411b86653aa5be7e3f666d52df40c72",
+      "currentBlob": "60d8cd757411b86653aa5be7e3f666d52df40c72"
+    },
+    {
+      "path": "src/components/ProductRow/index.ts",
+      "baselineBlob": "72f466607a49ab3d4bd533d8608c75eebb329e3d",
+      "currentBlob": "72f466607a49ab3d4bd533d8608c75eebb329e3d"
+    },
+    {
+      "path": "src/components/Progress/Progress.stories.tsx",
+      "baselineBlob": "7313786bfdc25d5d79ccf5084173ef1ea258a2d9",
+      "currentBlob": "7313786bfdc25d5d79ccf5084173ef1ea258a2d9"
+    },
+    {
+      "path": "src/components/Progress/Progress.tsx",
+      "baselineBlob": "cc0885f4396565f5cfe8945d01454f30c57bc39c",
+      "currentBlob": "cc0885f4396565f5cfe8945d01454f30c57bc39c"
+    },
+    {
+      "path": "src/components/Progress/index.ts",
+      "baselineBlob": "26edfa4c08047c55f9a72fd04b0393e27f3e9c45",
+      "currentBlob": "26edfa4c08047c55f9a72fd04b0393e27f3e9c45"
+    },
+    {
+      "path": "src/components/QuantityStepper/QuantityStepper.stories.tsx",
+      "baselineBlob": "06d847acb9b9b788549b8de37074b4cd47e55a01",
+      "currentBlob": "06d847acb9b9b788549b8de37074b4cd47e55a01"
+    },
+    {
+      "path": "src/components/QuantityStepper/QuantityStepper.tsx",
+      "baselineBlob": "092c2d1a9d5a65780a7f63d2732efb425400dcd4",
+      "currentBlob": "092c2d1a9d5a65780a7f63d2732efb425400dcd4"
+    },
+    {
+      "path": "src/components/QuantityStepper/index.ts",
+      "baselineBlob": "5b938ac2e55f1367b4f60ae345fbf9507c9c3639",
+      "currentBlob": "5b938ac2e55f1367b4f60ae345fbf9507c9c3639"
+    },
+    {
+      "path": "src/components/RadioGroup/RadioGroup.stories.tsx",
+      "baselineBlob": "221d4356e360f4070a13d10db9d3af6a8bcffe1a",
+      "currentBlob": "221d4356e360f4070a13d10db9d3af6a8bcffe1a"
+    },
+    {
+      "path": "src/components/RadioGroup/RadioGroup.tsx",
+      "baselineBlob": "b44cf1ff8d1abb364d203b125b73e467b32a177a",
+      "currentBlob": "b44cf1ff8d1abb364d203b125b73e467b32a177a"
+    },
+    {
+      "path": "src/components/RadioGroup/index.ts",
+      "baselineBlob": "c2c19a639a4db2206363669c124f83a0d9c04b47",
+      "currentBlob": "c2c19a639a4db2206363669c124f83a0d9c04b47"
+    },
+    {
+      "path": "src/components/ResolutionRow/ResolutionRow.css",
+      "baselineBlob": "62277334407829f4701c74a38fa4a4f8cb013bc7",
+      "currentBlob": "62277334407829f4701c74a38fa4a4f8cb013bc7"
+    },
+    {
+      "path": "src/components/ResolutionRow/ResolutionRow.stories.tsx",
+      "baselineBlob": "13ea9fe44eafbfd50cc5704878a86b04baa48c9e",
+      "currentBlob": "13ea9fe44eafbfd50cc5704878a86b04baa48c9e"
+    },
+    {
+      "path": "src/components/ResolutionRow/ResolutionRow.tsx",
+      "baselineBlob": "1dd33b3bdf2b4c30851a1224ec9828ace8cbdd97",
+      "currentBlob": "1dd33b3bdf2b4c30851a1224ec9828ace8cbdd97"
+    },
+    {
+      "path": "src/components/ResolutionRow/index.ts",
+      "baselineBlob": "23698c2d4da4ae812c4493a2ffd22c2188d52891",
+      "currentBlob": "23698c2d4da4ae812c4493a2ffd22c2188d52891"
+    },
+    {
+      "path": "src/components/Select/Select.stories.tsx",
+      "baselineBlob": "73d0724d448c3f5687386e63747294505f2795de",
+      "currentBlob": "73d0724d448c3f5687386e63747294505f2795de"
+    },
+    {
+      "path": "src/components/Select/Select.tsx",
+      "baselineBlob": "ae4ebcda4483404ec807e9c75478614258a40319",
+      "currentBlob": "ae4ebcda4483404ec807e9c75478614258a40319"
+    },
+    {
+      "path": "src/components/Select/index.ts",
+      "baselineBlob": "989ce6f59ea04eaad49a44d7c5710b98d19657f2",
+      "currentBlob": "989ce6f59ea04eaad49a44d7c5710b98d19657f2"
+    },
+    {
+      "path": "src/components/Separator/Separator.stories.tsx",
+      "baselineBlob": "0dfc8b77e1f949f694c70961357016fe5cb5a1fa",
+      "currentBlob": "0dfc8b77e1f949f694c70961357016fe5cb5a1fa"
+    },
+    {
+      "path": "src/components/Separator/Separator.tsx",
+      "baselineBlob": "3808c1d1df9f0625e7b8d8db1a899e59c875502e",
+      "currentBlob": "3808c1d1df9f0625e7b8d8db1a899e59c875502e"
+    },
+    {
+      "path": "src/components/Separator/index.ts",
+      "baselineBlob": "802f84aa9b7932b637fb20592a96f51a202d1ef8",
+      "currentBlob": "802f84aa9b7932b637fb20592a96f51a202d1ef8"
+    },
+    {
+      "path": "src/components/ShipmentGroup/ShipmentGroup.stories.tsx",
+      "baselineBlob": "6f0cedcb90cf3b22923d10a361ee708e9c63723b",
+      "currentBlob": "6f0cedcb90cf3b22923d10a361ee708e9c63723b"
+    },
+    {
+      "path": "src/components/ShipmentGroup/ShipmentGroup.tsx",
+      "baselineBlob": "c7a77f12220d1a3b51a6dbd35aacbb3d41b787ab",
+      "currentBlob": "c7a77f12220d1a3b51a6dbd35aacbb3d41b787ab"
+    },
+    {
+      "path": "src/components/ShipmentGroup/index.ts",
+      "baselineBlob": "6f8d3e562791927d09f65fa99caf29fbce7f2683",
+      "currentBlob": "6f8d3e562791927d09f65fa99caf29fbce7f2683"
+    },
+    {
+      "path": "src/components/Sidebar/Sidebar.stories.tsx",
+      "baselineBlob": "ae3028025ad04d7903227336cb38f08e9df95341",
+      "currentBlob": "ae3028025ad04d7903227336cb38f08e9df95341"
+    },
+    {
+      "path": "src/components/Sidebar/Sidebar.tsx",
+      "baselineBlob": "ef9aa7757dd9d16507eef59aaefba50308f739ee",
+      "currentBlob": "ef9aa7757dd9d16507eef59aaefba50308f739ee"
+    },
+    {
+      "path": "src/components/Sidebar/index.ts",
+      "baselineBlob": "e5c569ef9884c3a3768d293d9f177a691a7c19d2",
+      "currentBlob": "e5c569ef9884c3a3768d293d9f177a691a7c19d2"
+    },
+    {
+      "path": "src/components/Skeleton/Skeleton.stories.tsx",
+      "baselineBlob": "0f0c49ccfae93348b7aa013d03b78f07953cff70",
+      "currentBlob": "0f0c49ccfae93348b7aa013d03b78f07953cff70"
+    },
+    {
+      "path": "src/components/Skeleton/Skeleton.tsx",
+      "baselineBlob": "063544e79cb18d1472b68cd969e440290f076809",
+      "currentBlob": "063544e79cb18d1472b68cd969e440290f076809"
+    },
+    {
+      "path": "src/components/Skeleton/index.ts",
+      "baselineBlob": "d25d830992d9bd09af071e907f8174d19fe364b5",
+      "currentBlob": "d25d830992d9bd09af071e907f8174d19fe364b5"
+    },
+    {
+      "path": "src/components/SystemMessage/SystemMessage.stories.tsx",
+      "baselineBlob": "244bf7d945e03f10372d08f702b08b035f1750e5",
+      "currentBlob": "244bf7d945e03f10372d08f702b08b035f1750e5"
+    },
+    {
+      "path": "src/components/SystemMessage/SystemMessage.tsx",
+      "baselineBlob": "99892fc196d638c44ab73168e6c251e8dbebb769",
+      "currentBlob": "99892fc196d638c44ab73168e6c251e8dbebb769"
+    },
+    {
+      "path": "src/components/SystemMessage/index.ts",
+      "baselineBlob": "ca43c904cf18faa7c1c365584aa4ed24d79dbbdd",
+      "currentBlob": "ca43c904cf18faa7c1c365584aa4ed24d79dbbdd"
+    },
+    {
+      "path": "src/components/Tabs/Tabs.stories.tsx",
+      "baselineBlob": "17c56e3db5d280e58ad24a6950d7ddbb77655f15",
+      "currentBlob": "17c56e3db5d280e58ad24a6950d7ddbb77655f15"
+    },
+    {
+      "path": "src/components/Tabs/Tabs.tsx",
+      "baselineBlob": "3ff624f4e8c570c4f0567498baebb5f467cd2560",
+      "currentBlob": "3ff624f4e8c570c4f0567498baebb5f467cd2560"
+    },
+    {
+      "path": "src/components/Tabs/index.ts",
+      "baselineBlob": "9e127321d729c26970e981022dd40c73e63a0bc6",
+      "currentBlob": "9e127321d729c26970e981022dd40c73e63a0bc6"
+    },
+    {
+      "path": "src/components/Textarea/Textarea.stories.tsx",
+      "baselineBlob": "f38885b33b85cae73126ca329922d9b21751c76b",
+      "currentBlob": "f38885b33b85cae73126ca329922d9b21751c76b"
+    },
+    {
+      "path": "src/components/Textarea/Textarea.tsx",
+      "baselineBlob": "6fe521b6ac97738c2cdf8ec35ef1821908e93a4f",
+      "currentBlob": "6fe521b6ac97738c2cdf8ec35ef1821908e93a4f"
+    },
+    {
+      "path": "src/components/Textarea/index.ts",
+      "baselineBlob": "3259e65889ce8bab382314bb8319da7ecf5c1610",
+      "currentBlob": "3259e65889ce8bab382314bb8319da7ecf5c1610"
+    },
+    {
+      "path": "src/components/Toast/Toast.stories.tsx",
+      "baselineBlob": "ce5fbca1f31b075e6882088588016a3290122d3c",
+      "currentBlob": "ce5fbca1f31b075e6882088588016a3290122d3c"
+    },
+    {
+      "path": "src/components/Toast/Toast.tsx",
+      "baselineBlob": "81f05b864e8a6f0d77a721cd83d9e94104a62725",
+      "currentBlob": "81f05b864e8a6f0d77a721cd83d9e94104a62725"
+    },
+    {
+      "path": "src/components/Toast/index.ts",
+      "baselineBlob": "1bbbf83f00d297587058e3d2464f0751ce654b63",
+      "currentBlob": "1bbbf83f00d297587058e3d2464f0751ce654b63"
+    },
+    {
+      "path": "src/components/Tooltip/Tooltip.stories.tsx",
+      "baselineBlob": "1d21071a255bfb81d533b15ba452042dd3c251b6",
+      "currentBlob": "1d21071a255bfb81d533b15ba452042dd3c251b6"
+    },
+    {
+      "path": "src/components/Tooltip/Tooltip.tsx",
+      "baselineBlob": "5ad8bbfbf193f25f40b795d8334b36d09325c42c",
+      "currentBlob": "5ad8bbfbf193f25f40b795d8334b36d09325c42c"
+    },
+    {
+      "path": "src/components/Tooltip/index.ts",
+      "baselineBlob": "0ccabfe7fd17d38157b1c4745fbe0361308c73aa",
+      "currentBlob": "0ccabfe7fd17d38157b1c4745fbe0361308c73aa"
+    },
+    {
+      "path": "src/components/icons.tsx",
+      "baselineBlob": "cd501e5a216ac38841d7798b7bbab405e61aaeb5",
+      "currentBlob": "cd501e5a216ac38841d7798b7bbab405e61aaeb5"
+    },
+    {
+      "path": "src/components/index.ts",
+      "baselineBlob": "61f492de4b50cadf5ec663c0abdd626f1c1c5774",
+      "currentBlob": "61f492de4b50cadf5ec663c0abdd626f1c1c5774"
+    },
+    {
+      "path": "src/components/ui/accordion.tsx",
+      "baselineBlob": "27d8848cd6e69f1c8399e1589d7d09802ccf5898",
+      "currentBlob": "27d8848cd6e69f1c8399e1589d7d09802ccf5898"
+    },
+    {
+      "path": "src/components/ui/alert.tsx",
+      "baselineBlob": "f99164ed4b320790482f514342dab5e72f284aca",
+      "currentBlob": "f99164ed4b320790482f514342dab5e72f284aca"
+    },
+    {
+      "path": "src/components/ui/badge.tsx",
+      "baselineBlob": "0f9f8129576fbe04f63ae8910d1078d9f12a3519",
+      "currentBlob": "0f9f8129576fbe04f63ae8910d1078d9f12a3519"
+    },
+    {
+      "path": "src/components/ui/breadcrumb.tsx",
+      "baselineBlob": "004bb63a4c92229e612b6126d79fb7b078aa7565",
+      "currentBlob": "004bb63a4c92229e612b6126d79fb7b078aa7565"
+    },
+    {
+      "path": "src/components/ui/button.tsx",
+      "baselineBlob": "3143d785da5a2a2abd4c302949655b5732fc3973",
+      "currentBlob": "3143d785da5a2a2abd4c302949655b5732fc3973"
+    },
+    {
+      "path": "src/components/ui/calendar.tsx",
+      "baselineBlob": "cfb2b23b17d8e40c53261fabd3ef70bb49dd8173",
+      "currentBlob": "cfb2b23b17d8e40c53261fabd3ef70bb49dd8173"
+    },
+    {
+      "path": "src/components/ui/card.tsx",
+      "baselineBlob": "11a01372db0e30390a6d4da5ea6365b235f8155f",
+      "currentBlob": "11a01372db0e30390a6d4da5ea6365b235f8155f"
+    },
+    {
+      "path": "src/components/ui/checkbox.tsx",
+      "baselineBlob": "49e6c82d5a60105285b3b72a90795fef7cf4dc0e",
+      "currentBlob": "49e6c82d5a60105285b3b72a90795fef7cf4dc0e"
+    },
+    {
+      "path": "src/components/ui/command.tsx",
+      "baselineBlob": "cc2e22426fbaac63127acc50fc8f1f446e33a680",
+      "currentBlob": "cc2e22426fbaac63127acc50fc8f1f446e33a680"
+    },
+    {
+      "path": "src/components/ui/dialog.tsx",
+      "baselineBlob": "62b09458e199863712d6c8a59922f12be1d42dbc",
+      "currentBlob": "62b09458e199863712d6c8a59922f12be1d42dbc"
+    },
+    {
+      "path": "src/components/ui/dropdown-menu.tsx",
+      "baselineBlob": "e1bff525093ae4d8bee3babcf1ecced7b2cf8fa4",
+      "currentBlob": "e1bff525093ae4d8bee3babcf1ecced7b2cf8fa4"
+    },
+    {
+      "path": "src/components/ui/input.tsx",
+      "baselineBlob": "8f9c7ecd7b45d072786450809ca3ee904ae93cee",
+      "currentBlob": "8f9c7ecd7b45d072786450809ca3ee904ae93cee"
+    },
+    {
+      "path": "src/components/ui/pagination.tsx",
+      "baselineBlob": "1dcfb0cc050c5f2bdd930522d627313d03d3690c",
+      "currentBlob": "1dcfb0cc050c5f2bdd930522d627313d03d3690c"
+    },
+    {
+      "path": "src/components/ui/popover.tsx",
+      "baselineBlob": "a538a81c70f8c1b3636e4000e328f1e386857fbb",
+      "currentBlob": "a538a81c70f8c1b3636e4000e328f1e386857fbb"
+    },
+    {
+      "path": "src/components/ui/progress.tsx",
+      "baselineBlob": "5a0a5a64c925611a9e21cb2d88fd0b1020430a48",
+      "currentBlob": "5a0a5a64c925611a9e21cb2d88fd0b1020430a48"
+    },
+    {
+      "path": "src/components/ui/radio-group.tsx",
+      "baselineBlob": "5541a51be38e5509f5c47f99d83515a8bd508b3c",
+      "currentBlob": "5541a51be38e5509f5c47f99d83515a8bd508b3c"
+    },
+    {
+      "path": "src/components/ui/select.tsx",
+      "baselineBlob": "c3b4f5a6469dc8eda74c2e94036ab2360df25374",
+      "currentBlob": "c3b4f5a6469dc8eda74c2e94036ab2360df25374"
+    },
+    {
+      "path": "src/components/ui/separator.tsx",
+      "baselineBlob": "cd873e3631b571060f166897b7b62e033e87c18f",
+      "currentBlob": "cd873e3631b571060f166897b7b62e033e87c18f"
+    },
+    {
+      "path": "src/components/ui/sheet.tsx",
+      "baselineBlob": "a5b17d19d6279f5ab207d677c6e386074004b441",
+      "currentBlob": "a5b17d19d6279f5ab207d677c6e386074004b441"
+    },
+    {
+      "path": "src/components/ui/skeleton.tsx",
+      "baselineBlob": "3ec6be770b846170b8e7f8916e5f165e2d1730df",
+      "currentBlob": "3ec6be770b846170b8e7f8916e5f165e2d1730df"
+    },
+    {
+      "path": "src/components/ui/table.tsx",
+      "baselineBlob": "7add5f1a22db954ac6cb3446f1bf8c8a9fc5c335",
+      "currentBlob": "7add5f1a22db954ac6cb3446f1bf8c8a9fc5c335"
+    },
+    {
+      "path": "src/components/ui/tabs.tsx",
+      "baselineBlob": "6f4dd7acdc20f679db0296e303f31901c2d993ce",
+      "currentBlob": "6f4dd7acdc20f679db0296e303f31901c2d993ce"
+    },
+    {
+      "path": "src/components/ui/textarea.tsx",
+      "baselineBlob": "8167f8b28814a930f5735bccba2135d0a3f001d3",
+      "currentBlob": "8167f8b28814a930f5735bccba2135d0a3f001d3"
+    },
+    {
+      "path": "src/components/ui/tooltip.tsx",
+      "baselineBlob": "1d5abb8b8bc4936c732b8bc0f4aaabfd50f7d9ed",
+      "currentBlob": "1d5abb8b8bc4936c732b8bc0f4aaabfd50f7d9ed"
+    },
+    {
+      "path": "src/data/catalog-taxonomy.ts",
+      "baselineBlob": "8ce50386b8ce214d5585d8c34d6b25f6b0ffe0dc",
+      "currentBlob": "8ce50386b8ce214d5585d8c34d6b25f6b0ffe0dc"
+    },
+    {
+      "path": "src/data/catalog.ts",
+      "baselineBlob": "6fc064f6967c604496d57ea03dea528e9d1d9a8a",
+      "currentBlob": "6fc064f6967c604496d57ea03dea528e9d1d9a8a"
+    },
+    {
+      "path": "src/data/format.ts",
+      "baselineBlob": "435947a597656580a961633642f24abae7bb5286",
+      "currentBlob": "435947a597656580a961633642f24abae7bb5286"
+    },
+    {
+      "path": "src/data/orders.ts",
+      "baselineBlob": "d94fe842038ffc06fc381f9e41d75d8275c2379b",
+      "currentBlob": "d94fe842038ffc06fc381f9e41d75d8275c2379b"
+    },
+    {
+      "path": "src/data/selectors.ts",
+      "baselineBlob": "334bb07bee3de2e95f3774d2a65981d9ec5b512c",
+      "currentBlob": "334bb07bee3de2e95f3774d2a65981d9ec5b512c"
+    },
+    {
+      "path": "src/data/specification-lines.ts",
+      "baselineBlob": "045ea390869c874dc914c9ba2b910a3e18659a12",
+      "currentBlob": "045ea390869c874dc914c9ba2b910a3e18659a12"
+    },
+    {
+      "path": "src/data/store.tsx",
+      "baselineBlob": "a010af2da2d261aadf3cf62aee65dbe0fe0fb9bb",
+      "currentBlob": "a010af2da2d261aadf3cf62aee65dbe0fe0fb9bb"
+    },
+    {
+      "path": "src/data/types.ts",
+      "baselineBlob": "35b295c3fc339425057bea766f394e904e441711",
+      "currentBlob": "35b295c3fc339425057bea766f394e904e441711"
+    },
+    {
+      "path": "src/foundation/Colors.stories.tsx",
+      "baselineBlob": "11c690bee976eae04e779ace2c965ff680248bd8",
+      "currentBlob": "11c690bee976eae04e779ace2c965ff680248bd8"
+    },
+    {
+      "path": "src/foundation/Elevation.stories.tsx",
+      "baselineBlob": "172c034012e6047bc9deaa553f40dc92675d8543",
+      "currentBlob": "172c034012e6047bc9deaa553f40dc92675d8543"
+    },
+    {
+      "path": "src/foundation/Layout.stories.tsx",
+      "baselineBlob": "125e7258642b2e7a581a7091fd8f8811e0ccbaca",
+      "currentBlob": "125e7258642b2e7a581a7091fd8f8811e0ccbaca"
+    },
+    {
+      "path": "src/foundation/Motion.stories.tsx",
+      "baselineBlob": "2f31c36b978dd0be2fb7bc6bddd13ecaf47aa387",
+      "currentBlob": "2f31c36b978dd0be2fb7bc6bddd13ecaf47aa387"
+    },
+    {
+      "path": "src/foundation/Overview.stories.tsx",
+      "baselineBlob": "554380e93cee05161232a38bf2f92f05f96f1110",
+      "currentBlob": "554380e93cee05161232a38bf2f92f05f96f1110"
+    },
+    {
+      "path": "src/foundation/Sheet.tsx",
+      "baselineBlob": "ae064180f2049af9f2b23f27449d3734e7ae0a2d",
+      "currentBlob": "ae064180f2049af9f2b23f27449d3734e7ae0a2d"
+    },
+    {
+      "path": "src/foundation/Typography.stories.tsx",
+      "baselineBlob": "c75749d688be1261ef62f2529bd0a01faa5575fd",
+      "currentBlob": "c75749d688be1261ef62f2529bd0a01faa5575fd"
+    },
+    {
+      "path": "src/foundation/tokens.ts",
+      "baselineBlob": "0278d16954bc1b482947db6164e0d89f20ae768c",
+      "currentBlob": "0278d16954bc1b482947db6164e0d89f20ae768c"
+    },
+    {
+      "path": "src/i18n/RussianLocalization.tsx",
+      "baselineBlob": "ae796faf51ffadb4aebc256a0575c1fc0a765de9",
+      "currentBlob": "ae796faf51ffadb4aebc256a0575c1fc0a765de9"
+    },
+    {
+      "path": "src/index.css",
+      "baselineBlob": "29a6cf0f348faff0e1a79caa4df88b75f4621c27",
+      "currentBlob": "29a6cf0f348faff0e1a79caa4df88b75f4621c27"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "baselineBlob": "fed2fe91e4d2321f997c0209881db87fe0d07ba9",
+      "currentBlob": "fed2fe91e4d2321f997c0209881db87fe0d07ba9"
+    },
+    {
+      "path": "src/main.tsx",
+      "baselineBlob": "0c284902b27aabbcac1824ffd102b34076dfaf8f",
+      "currentBlob": "0c284902b27aabbcac1824ffd102b34076dfaf8f"
+    },
+    {
+      "path": "src/motion/gsap.ts",
+      "baselineBlob": "ce61e3494420d0b0b7dba352c13f0daec7fd4730",
+      "currentBlob": "ce61e3494420d0b0b7dba352c13f0daec7fd4730"
+    },
+    {
+      "path": "src/motion/hooks.ts",
+      "baselineBlob": "ae3c50142f6b6862a0b9aacc6f03da514953bbeb",
+      "currentBlob": "ae3c50142f6b6862a0b9aacc6f03da514953bbeb"
+    },
+    {
+      "path": "src/motion/index.ts",
+      "baselineBlob": "54485ecec9af57beab3abde8e84f96c8802e90a7",
+      "currentBlob": "54485ecec9af57beab3abde8e84f96c8802e90a7"
+    },
+    {
+      "path": "src/motion/tokens.ts",
+      "baselineBlob": "b59921140023fb99cb89da929db64135da0737fe",
+      "currentBlob": "b59921140023fb99cb89da929db64135da0737fe"
+    },
+    {
+      "path": "src/screens/Index.tsx",
+      "baselineBlob": "0f90c35e9607cf9954632c5da2bb64bbc319fdd0",
+      "currentBlob": "0f90c35e9607cf9954632c5da2bb64bbc319fdd0"
+    },
+    {
+      "path": "src/screens/ScreenPreview.tsx",
+      "baselineBlob": "a334cfa83f68fb6e5c8a5fdeea275b5456430f2d",
+      "currentBlob": "a334cfa83f68fb6e5c8a5fdeea275b5456430f2d"
+    },
+    {
+      "path": "src/screens/_shell/AccessWorkspace.css",
+      "baselineBlob": "b75899e62f4e66bab77129a4376b62dd59045344",
+      "currentBlob": "b75899e62f4e66bab77129a4376b62dd59045344"
+    },
+    {
+      "path": "src/screens/_shell/AppShell.tsx",
+      "baselineBlob": "74cee97a91f66f8324d62a7aec04cfd7310c72cf",
+      "currentBlob": "74cee97a91f66f8324d62a7aec04cfd7310c72cf"
+    },
+    {
+      "path": "src/screens/_shell/EntryAside.tsx",
+      "baselineBlob": "ee25aa45685b3e4a3b81a532b2359c2a9b08b8a7",
+      "currentBlob": "ee25aa45685b3e4a3b81a532b2359c2a9b08b8a7"
+    },
+    {
+      "path": "src/screens/_shell/ProcurementWorkspace.css",
+      "baselineBlob": "79dce4d774c1bdba5a11b5f6611160593aeadd6d",
+      "currentBlob": "79dce4d774c1bdba5a11b5f6611160593aeadd6d"
+    },
+    {
+      "path": "src/screens/_shell/catalog-content.tsx",
+      "baselineBlob": "4c60b2eb015fb7e6a1d8a7ed5075d373975d17ee",
+      "currentBlob": "4c60b2eb015fb7e6a1d8a7ed5075d373975d17ee"
+    },
+    {
+      "path": "src/screens/_shell/rail.tsx",
+      "baselineBlob": "f40ae72c9622c38fc7a229c43a3a4e097abc3b6e",
+      "currentBlob": "f40ae72c9622c38fc7a229c43a3a4e097abc3b6e"
+    },
+    {
+      "path": "src/screens/cart/Cart.css",
+      "baselineBlob": "33a2e91e54eda575d3fa6e37287600a8a6656e51",
+      "currentBlob": "33a2e91e54eda575d3fa6e37287600a8a6656e51"
+    },
+    {
+      "path": "src/screens/cart/Cart.tsx",
+      "baselineBlob": "22c3634a0db836774d2dc4871ddd2c1cc93876c9",
+      "currentBlob": "22c3634a0db836774d2dc4871ddd2c1cc93876c9"
+    },
+    {
+      "path": "src/screens/cart/cart.md",
+      "baselineBlob": "4350157b775459eb01f001e471bda0af79dfcd52",
+      "currentBlob": "4350157b775459eb01f001e471bda0af79dfcd52"
+    },
+    {
+      "path": "src/screens/catalog/Catalog.css",
+      "baselineBlob": "019a277d5437f45dadf6d970390765e7e627dda9",
+      "currentBlob": "019a277d5437f45dadf6d970390765e7e627dda9"
+    },
+    {
+      "path": "src/screens/catalog/Catalog.tsx",
+      "baselineBlob": "71ff03854a41ac7da9c770f1d5072198ae00ac94",
+      "currentBlob": "71ff03854a41ac7da9c770f1d5072198ae00ac94"
+    },
+    {
+      "path": "src/screens/catalog/catalog-model.ts",
+      "baselineBlob": "5b4374504c6643287cb48cd9237c437c600a45f7",
+      "currentBlob": "5b4374504c6643287cb48cd9237c437c600a45f7"
+    },
+    {
+      "path": "src/screens/catalog/catalog-session.ts",
+      "baselineBlob": "825075be31fa9a96163363b31949f088bef010a1",
+      "currentBlob": "825075be31fa9a96163363b31949f088bef010a1"
+    },
+    {
+      "path": "src/screens/catalog/catalog.md",
+      "baselineBlob": "5303882099f12a3e9a3fa46899455b12410ae251",
+      "currentBlob": "5303882099f12a3e9a3fa46899455b12410ae251"
+    },
+    {
+      "path": "src/screens/checkout/Checkout.css",
+      "baselineBlob": "a06996aa3a6cc57f0dbe0a581530cb598aea91ac",
+      "currentBlob": "a06996aa3a6cc57f0dbe0a581530cb598aea91ac"
+    },
+    {
+      "path": "src/screens/checkout/Checkout.tsx",
+      "baselineBlob": "7b5dc0de7d9e7cbaea7b5d014eb8b10e3b6705eb",
+      "currentBlob": "7b5dc0de7d9e7cbaea7b5d014eb8b10e3b6705eb"
+    },
+    {
+      "path": "src/screens/checkout/checkout.md",
+      "baselineBlob": "fa991de1d151e68ebd96df9b1ac6c37d51ebd76f",
+      "currentBlob": "fa991de1d151e68ebd96df9b1ac6c37d51ebd76f"
+    },
+    {
+      "path": "src/screens/counterparty-select/CounterpartySelect.tsx",
+      "baselineBlob": "d990bf6c566d2126bef6c717911fdaadf88d8327",
+      "currentBlob": "d990bf6c566d2126bef6c717911fdaadf88d8327"
+    },
+    {
+      "path": "src/screens/counterparty-select/counterparty-select.md",
+      "baselineBlob": "49fc53a1b03e1d435d64cd85b3baba42ad9f6752",
+      "currentBlob": "49fc53a1b03e1d435d64cd85b3baba42ad9f6752"
+    },
+    {
+      "path": "src/screens/dashboard/Dashboard.css",
+      "baselineBlob": "4536cb6496b7b3ca2104cd1cf44e72335cd8ff7a",
+      "currentBlob": "4536cb6496b7b3ca2104cd1cf44e72335cd8ff7a"
+    },
+    {
+      "path": "src/screens/dashboard/Dashboard.tsx",
+      "baselineBlob": "8aa329b493cb6c2e2479c0720c17e12c1d4bd3b3",
+      "currentBlob": "8aa329b493cb6c2e2479c0720c17e12c1d4bd3b3"
+    },
+    {
+      "path": "src/screens/dashboard/SpecificationThumb.tsx",
+      "baselineBlob": "44eb0281a6ecc613bb6c7d0610968d8c9d649bcc",
+      "currentBlob": "44eb0281a6ecc613bb6c7d0610968d8c9d649bcc"
+    },
+    {
+      "path": "src/screens/dashboard/dashboard.md",
+      "baselineBlob": "dea21a9b8a316b11882b07bf23209ee9a6de59b9",
+      "currentBlob": "dea21a9b8a316b11882b07bf23209ee9a6de59b9"
+    },
+    {
+      "path": "src/screens/fulfillment-plans/FulfillmentPlans.css",
+      "baselineBlob": "15e5500ad29074161bcb2f42e70e458e7035f6bd",
+      "currentBlob": "15e5500ad29074161bcb2f42e70e458e7035f6bd"
+    },
+    {
+      "path": "src/screens/fulfillment-plans/FulfillmentPlans.tsx",
+      "baselineBlob": "c20fbf7547936da3c9c884b9eae8ca8a7af23b55",
+      "currentBlob": "c20fbf7547936da3c9c884b9eae8ca8a7af23b55"
+    },
+    {
+      "path": "src/screens/fulfillment-plans/fulfillment-plans.md",
+      "baselineBlob": "05e5f4eea4a573ca77d3a77df78908e46aabae44",
+      "currentBlob": "05e5f4eea4a573ca77d3a77df78908e46aabae44"
+    },
+    {
+      "path": "src/screens/index.md",
+      "baselineBlob": "a7e7dac7b5d97f56e646294164f1075f880e1e20",
+      "currentBlob": "a7e7dac7b5d97f56e646294164f1075f880e1e20"
+    },
+    {
+      "path": "src/screens/login/Login.tsx",
+      "baselineBlob": "76f17b9b208bf4ae9ad09f5616f0f30f339f4fba",
+      "currentBlob": "76f17b9b208bf4ae9ad09f5616f0f30f339f4fba"
+    },
+    {
+      "path": "src/screens/login/login.md",
+      "baselineBlob": "9d62fb1a0e6072840712635dcd43606013629120",
+      "currentBlob": "9d62fb1a0e6072840712635dcd43606013629120"
+    },
+    {
+      "path": "src/screens/order-details/OrderDetails.tsx",
+      "baselineBlob": "a73c8704ca8234d9e69a86d691f45076448baffe",
+      "currentBlob": "a73c8704ca8234d9e69a86d691f45076448baffe"
+    },
+    {
+      "path": "src/screens/order-details/order-details.md",
+      "baselineBlob": "a17d0d88733a4c3f43c67416a413d53f8918227f",
+      "currentBlob": "a17d0d88733a4c3f43c67416a413d53f8918227f"
+    },
+    {
+      "path": "src/screens/order-success/OrderSuccess.tsx",
+      "baselineBlob": "f2bbf19fb4f869d1cb486bed1d539b55ab43eaf4",
+      "currentBlob": "f2bbf19fb4f869d1cb486bed1d539b55ab43eaf4"
+    },
+    {
+      "path": "src/screens/order-success/order-success.md",
+      "baselineBlob": "fdef4791ce642944d1670a8c68fa2080ef78cce8",
+      "currentBlob": "fdef4791ce642944d1670a8c68fa2080ef78cce8"
+    },
+    {
+      "path": "src/screens/orders/OrderWorkspace.css",
+      "baselineBlob": "f27aee1de22ffd91426b74ebb3c2916ac5792aa7",
+      "currentBlob": "f27aee1de22ffd91426b74ebb3c2916ac5792aa7"
+    },
+    {
+      "path": "src/screens/orders/Orders.tsx",
+      "baselineBlob": "67488b15dd90ff0630c1f74f84808e4344ec3492",
+      "currentBlob": "67488b15dd90ff0630c1f74f84808e4344ec3492"
+    },
+    {
+      "path": "src/screens/orders/orders.md",
+      "baselineBlob": "91a5884b901528b4f089f9c21ae539f29a9e83bc",
+      "currentBlob": "91a5884b901528b4f089f9c21ae539f29a9e83bc"
+    },
+    {
+      "path": "src/screens/password-recovery/PasswordRecovery.tsx",
+      "baselineBlob": "3d575295678ac00dcd57cd0bdf3159d0fa0dbf76",
+      "currentBlob": "3d575295678ac00dcd57cd0bdf3159d0fa0dbf76"
+    },
+    {
+      "path": "src/screens/password-recovery/password-recovery.md",
+      "baselineBlob": "3e3bb21ccf4099cc35356c0ffacafbb096f0470e",
+      "currentBlob": "3e3bb21ccf4099cc35356c0ffacafbb096f0470e"
+    },
+    {
+      "path": "src/screens/product-details/ProductDetails.tsx",
+      "baselineBlob": "77e580c3ecb94f039b688890643509614b995400",
+      "currentBlob": "77e580c3ecb94f039b688890643509614b995400"
+    },
+    {
+      "path": "src/screens/product-details/product-details.md",
+      "baselineBlob": "93c3d792ecf9233ad54e0a69094f6fec903334f2",
+      "currentBlob": "93c3d792ecf9233ad54e0a69094f6fec903334f2"
+    },
+    {
+      "path": "src/screens/quick-order/QuickOrder.tsx",
+      "baselineBlob": "7ccf97f2d5e4cb8b0838f45b16460e4085020666",
+      "currentBlob": "7ccf97f2d5e4cb8b0838f45b16460e4085020666"
+    },
+    {
+      "path": "src/screens/quick-order/quick-order.md",
+      "baselineBlob": "62f9b40c13c35728b491834e93a46bf1cad70309",
+      "currentBlob": "62f9b40c13c35728b491834e93a46bf1cad70309"
+    },
+    {
+      "path": "src/screens/registry.ts",
+      "baselineBlob": "a6d7658ace1bfce602f8b92496d5ce5e2fed28ac",
+      "currentBlob": "a6d7658ace1bfce602f8b92496d5ce5e2fed28ac"
+    },
+    {
+      "path": "src/screens/resolution-center/resolution-center.md",
+      "baselineBlob": "d044e2cf3eaeaad17cc5688f005b4b4a9e86734e",
+      "currentBlob": "d044e2cf3eaeaad17cc5688f005b4b4a9e86734e"
+    },
+    {
+      "path": "src/screens/search-results/SearchResults.tsx",
+      "baselineBlob": "1b591c331eaf6d93368b9e4b16ff87b26bf2854c",
+      "currentBlob": "1b591c331eaf6d93368b9e4b16ff87b26bf2854c"
+    },
+    {
+      "path": "src/screens/search-results/search-results.md",
+      "baselineBlob": "4a933385d69c99736ed39cdab356c055c8b19234",
+      "currentBlob": "4a933385d69c99736ed39cdab356c055c8b19234"
+    },
+    {
+      "path": "src/screens/showcase.md",
+      "baselineBlob": "623004410589f7a9ac0018ac24306e4fd38ba4c1",
+      "currentBlob": "623004410589f7a9ac0018ac24306e4fd38ba4c1"
+    },
+    {
+      "path": "src/screens/system/SystemRoutes.tsx",
+      "baselineBlob": "41a70ca35557e614d5bfd214db544946f90a4efc",
+      "currentBlob": "41a70ca35557e614d5bfd214db544946f90a4efc"
+    },
+    {
+      "path": "src/screens/system/system-routes.md",
+      "baselineBlob": "41bbd10f225136c7d33c7135091e252d892f3298",
+      "currentBlob": "41bbd10f225136c7d33c7135091e252d892f3298"
+    },
+    {
+      "path": "src/screens/xls-import/XlsImport.css",
+      "baselineBlob": "0378d9d64a0628d9d2c57850df1427e2acf73caa",
+      "currentBlob": "0378d9d64a0628d9d2c57850df1427e2acf73caa"
+    },
+    {
+      "path": "src/screens/xls-import/XlsImport.tsx",
+      "baselineBlob": "ebd27c3695cab47794387ed75493587032c182e2",
+      "currentBlob": "ebd27c3695cab47794387ed75493587032c182e2"
+    },
+    {
+      "path": "src/screens/xls-import/xls-import.md",
+      "baselineBlob": "0eac15ac1e2ef56482848807cb7cce5411f06825",
+      "currentBlob": "0eac15ac1e2ef56482848807cb7cce5411f06825"
+    },
+    {
+      "path": "src/tokens/motion.css",
+      "baselineBlob": "488be8828e93c95e517aeadd31fb934949a0fe8c",
+      "currentBlob": "488be8828e93c95e517aeadd31fb934949a0fe8c"
+    },
+    {
+      "path": "src/tokens/primitives.css",
+      "baselineBlob": "c2583db1c1786266541ff6d61df8638052106c1d",
+      "currentBlob": "c2583db1c1786266541ff6d61df8638052106c1d"
+    },
+    {
+      "path": "src/tokens/semantics.css",
+      "baselineBlob": "91dab5e1b72710be8e061874287b8624de2dc75b",
+      "currentBlob": "91dab5e1b72710be8e061874287b8624de2dc75b"
+    },
+    {
+      "path": "src/tokens/typography.css",
+      "baselineBlob": "d0e774501f8c70b7517db95b0eaf9f6dd8a164ff",
+      "currentBlob": "d0e774501f8c70b7517db95b0eaf9f6dd8a164ff"
+    }
+  ]
+}
