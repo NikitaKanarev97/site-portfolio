@@ -15,8 +15,9 @@
 5. **[05-VISUAL-SPEC-AND-ASSETS.md](05-VISUAL-SPEC-AND-ASSETS.md)** — grid, content scale, responsive composition, assets, motion and Pawly freeze.
 6. **[06-QA-AND-ACCEPTANCE.md](06-QA-AND-ACCEPTANCE.md)** — browser snapshots, regressions, visual comparison rubric, evidence outputs.
 7. **[PROMPT-FOR-CLAUDE-CODEX.md](PROMPT-FOR-CLAUDE-CODEX.md)** — ready-to-paste implementation task, explicitly based on this pack.
-8. **[concepts/](concepts/)** — six **annotated schematic SVG layout studies** (3 directions × desktop/mobile) + diagram overview, not product screenshots.
-9. **[VISUAL-REFERENCE-BOARD.html](VISUAL-REFERENCE-BOARD.html)** — local side-by-side gallery referencing archived, actual source screenshots from the existing research pack.
+8. **[motion/](motion/)** — four original October reference motion contact sheets (Dounar, Garri, HA, Tubik), preserved without recompression.
+9. **[concepts/](concepts/)** — six **annotated schematic SVG layout studies** (3 directions × desktop/mobile) + diagram overview, not product screenshots.
+10. **[VISUAL-REFERENCE-BOARD.html](VISUAL-REFERENCE-BOARD.html)** — local side-by-side gallery referencing archived, actual source screenshots from the existing research pack.
 
 ## Evidence and provenance
 
