@@ -1,0 +1,43 @@
+[
+  {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": [
+      {
+        "target": [
+          ".portal-split__media > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+        ],
+        "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">После · рабочее место открывается текущей закупкой и&nbsp;тем, что&nbsp;её держит</figcaption>",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "target": [
+          ".portal-plate--stack > .portal-shot--native.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+        ],
+        "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Сравнение · только то, чем кандидаты&nbsp;отличаются</figcaption>",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "target": [
+          ".portal-shot--strip > .portal-shot__caption[data-h=\"caption\"]"
+        ],
+        "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Подтверждено · видно, что&nbsp;это&nbsp;выбор закупщика, и&nbsp;его можно&nbsp;отменить</figcaption>",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "target": [
+          ".portal-pair > .portal-plate[data-motion=\"fade-image\"] > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+        ],
+        "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Карточка товара · открывается из&nbsp;каталога или&nbsp;из&nbsp;строки&nbsp;спецификации</figcaption>",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "target": [
+          ".portal-plate--wide > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+        ],
+        "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Быстрее всего&nbsp;— к&nbsp;1 ноября за&nbsp;7 400 ₽, или&nbsp;одна передача на&nbsp;три дня позже за&nbsp;4 200 ₽</figcaption>",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      }
+    ]
+  }
+]

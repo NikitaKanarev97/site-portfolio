@@ -1,0 +1,1795 @@
+[
+  {
+    "name": "en-1440 four Vet links",
+    "pass": true
+  },
+  {
+    "name": "en-1440 link 0 48px target",
+    "pass": true,
+    "detail": {
+      "x": 80,
+      "y": 426.484375,
+      "width": 170.3125,
+      "height": 48
+    }
+  },
+  {
+    "name": "en-1440 link 0 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "en-1440 link 0 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "en-1440 link 0 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/app/visit-quick-trace?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/app/visit-quick-trace?patient=marsik"
+    }
+  },
+  {
+    "name": "en-1440 link 1 48px target",
+    "pass": true,
+    "detail": {
+      "x": 528,
+      "y": 426.484375,
+      "width": 163.953125,
+      "height": 48
+    }
+  },
+  {
+    "name": "en-1440 link 1 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "en-1440 link 1 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "en-1440 link 1 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/app/discharge-preview?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/app/discharge-preview?patient=marsik"
+    }
+  },
+  {
+    "name": "en-1440 link 2 48px target",
+    "pass": true,
+    "detail": {
+      "x": 976,
+      "y": 452.078125,
+      "width": 162.359375,
+      "height": 48
+    }
+  },
+  {
+    "name": "en-1440 link 2 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "en-1440 link 2 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "en-1440 link 2 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/app/dose-calculator?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/app/dose-calculator?patient=marsik"
+    }
+  },
+  {
+    "name": "en-1440 link 3 48px target",
+    "pass": true,
+    "detail": {
+      "x": 853.328125,
+      "y": 425.734375,
+      "width": 177.75,
+      "height": 48
+    }
+  },
+  {
+    "name": "en-1440 link 3 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "en-1440 link 3 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "en-1440 link 3 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/",
+      "actual": "https://veterinary-clinic-gules.vercel.app/"
+    }
+  },
+  {
+    "name": "en-1440 prototype renders product index",
+    "pass": true,
+    "detail": {
+      "url": "https://veterinary-clinic-gules.vercel.app/",
+      "excerpt": "VET CLINIC OS · APPLICATION · 13 SCREENS\n\nProduct screens\n\nOne clinic day on demo data: the veterinarian’s visit, the administrator’s schedule and invoice, and what the owner recei"
+    }
+  },
+  {
+    "name": "en-1440 Home axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".navbar__list"
+            ],
+            "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+            "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "en-1440 work/agent-ops-console axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".case-next__label-text"
+            ],
+            "html": "<span class=\"case-next__label-text\" data-astro-cid-qnrozarn=\"\">Next case<span class=\"case-next__rule\" data-astro-cid-qnrozarn=\"\"></span></span>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #d43220, background color: #f3e6ae, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".navbar__list"
+            ],
+            "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+            "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "en-1440 work/partner-portal axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".portal-split__media > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">After · the&nbsp;workspace opens on&nbsp;the&nbsp;purchase in&nbsp;progress and what blocks it</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-plate--stack > .portal-shot--native.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Compare · only the&nbsp;attribute that separates the&nbsp;candidates</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-shot--strip > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Confirmed · still marked as the&nbsp;buyer’s choice, and&nbsp;reversible</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-pair > .portal-plate[data-motion=\"fade-image\"] > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Product Details · reached from the&nbsp;catalog or from a&nbsp;specification line</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-plate--wide > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Fastest by&nbsp;01 Nov for ₽7,400, or one consolidated handover three days later for ₽4,200</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".navbar__list"
+            ],
+            "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+            "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "en-1440 work/learn axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".case-next__label-text"
+            ],
+            "html": "<span class=\"case-next__label-text\" data-astro-cid-qnrozarn=\"\">Next case<span class=\"case-next__rule\" data-astro-cid-qnrozarn=\"\"></span></span>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #d43220, background color: #e0eae4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".navbar__list"
+            ],
+            "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+            "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "en-1440 work/vet-clinic axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".navbar__list"
+            ],
+            "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+            "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "en-1440 work/pawly axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              "h4"
+            ],
+            "html": "<h4 class=\"ds-meta-sm case-specimen__group-title\" data-astro-cid-j24g2lnu=\"\">Proof, events and explanations</h4>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "li[data-specimen-state=\"photo-pending\"] > .case-specimen__state-label"
+            ],
+            "html": "<p class=\"ds-body-sm case-specimen__state-label\" data-astro-cid-j24g2lnu=\"\">Pending · no confirmation</p>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "li[data-specimen-state=\"photo-local\"] > .case-specimen__state-label"
+            ],
+            "html": "<p class=\"ds-body-sm case-specimen__state-label\" data-astro-cid-j24g2lnu=\"\">Local · selected, not&nbsp;sent</p>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "li[data-specimen-state=\"photo-confirmed\"] > .case-specimen__state-label"
+            ],
+            "html": "<p class=\"ds-body-sm case-specimen__state-label\" data-astro-cid-j24g2lnu=\"\">Confirmed · received&nbsp;event</p>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "li[data-specimen-state=\"timeline-done\"] > .case-specimen__state-label"
+            ],
+            "html": "<p class=\"ds-body-sm case-specimen__state-label\" data-astro-cid-j24g2lnu=\"\">Done</p>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "li[data-specimen-state=\"timeline-current\"] > .case-specimen__state-label"
+            ],
+            "html": "<p class=\"ds-body-sm case-specimen__state-label\" data-astro-cid-j24g2lnu=\"\">Current</p>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".navbar__list"
+            ],
+            "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+            "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "en-390 four Vet links",
+    "pass": true
+  },
+  {
+    "name": "en-390 link 0 48px target",
+    "pass": true,
+    "detail": {
+      "x": 24,
+      "y": 425.53125,
+      "width": 170.3125,
+      "height": 48
+    }
+  },
+  {
+    "name": "en-390 link 0 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "en-390 link 0 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "en-390 link 0 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/app/visit-quick-trace?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/app/visit-quick-trace?patient=marsik"
+    }
+  },
+  {
+    "name": "en-390 link 1 48px target",
+    "pass": true,
+    "detail": {
+      "x": 24,
+      "y": 697.3125,
+      "width": 163.953125,
+      "height": 48
+    }
+  },
+  {
+    "name": "en-390 link 1 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "en-390 link 1 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "en-390 link 1 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/app/discharge-preview?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/app/discharge-preview?patient=marsik"
+    }
+  },
+  {
+    "name": "en-390 link 2 48px target",
+    "pass": true,
+    "detail": {
+      "x": 24,
+      "y": 425.6875,
+      "width": 162.359375,
+      "height": 48
+    }
+  },
+  {
+    "name": "en-390 link 2 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "en-390 link 2 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "en-390 link 2 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/app/dose-calculator?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/app/dose-calculator?patient=marsik"
+    }
+  },
+  {
+    "name": "en-390 link 3 48px target",
+    "pass": true,
+    "detail": {
+      "x": 24,
+      "y": 425.796875,
+      "width": 177.75,
+      "height": 48
+    }
+  },
+  {
+    "name": "en-390 link 3 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "en-390 link 3 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "en-390 link 3 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/",
+      "actual": "https://veterinary-clinic-gules.vercel.app/"
+    }
+  },
+  {
+    "name": "en-390 prototype renders product index",
+    "pass": true,
+    "detail": {
+      "url": "https://veterinary-clinic-gules.vercel.app/",
+      "excerpt": "VET CLINIC OS · APPLICATION · 13 SCREENS\n\nProduct screens\n\nOne clinic day on demo data: the veterinarian’s visit, the administrator’s schedule and invoice, and what the owner recei"
+    }
+  },
+  {
+    "name": "en-390 real touch media",
+    "pass": true
+  },
+  {
+    "name": "en-390 touch does not translate arrow",
+    "pass": true
+  },
+  {
+    "name": "en-390 menu nav 48px",
+    "pass": true
+  },
+  {
+    "name": "en-390 menu nav keyboard",
+    "pass": true
+  },
+  {
+    "name": "en-390 Escape closes menu",
+    "pass": true
+  },
+  {
+    "name": "en-390 Home axe links",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "en-390 work/agent-ops-console axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".case-next__label-text"
+            ],
+            "html": "<span class=\"case-next__label-text\" data-astro-cid-qnrozarn=\"\">Next case<span class=\"case-next__rule\" data-astro-cid-qnrozarn=\"\"></span></span>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #d43220, background color: #f3e6ae, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "en-390 work/partner-portal axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".portal-split__media > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">After · the&nbsp;workspace opens on&nbsp;the&nbsp;purchase in&nbsp;progress and what blocks it</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-plate--stack > .portal-shot--native.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Compare · only the&nbsp;attribute that separates the&nbsp;candidates</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-shot--strip > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Confirmed · still marked as the&nbsp;buyer’s choice, and&nbsp;reversible</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-pair > .portal-plate[data-motion=\"fade-image\"] > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Product Details · reached from the&nbsp;catalog or from a&nbsp;specification line</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-plate--wide > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Fastest by&nbsp;01 Nov for ₽7,400, or one consolidated handover three days later for ₽4,200</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "en-390 work/learn axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".case-next__label-text"
+            ],
+            "html": "<span class=\"case-next__label-text\" data-astro-cid-qnrozarn=\"\">Next case<span class=\"case-next__rule\" data-astro-cid-qnrozarn=\"\"></span></span>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #d43220, background color: #e0eae4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "en-390 work/vet-clinic axe links",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "en-390 work/pawly axe links",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "en-320 four Vet links",
+    "pass": true
+  },
+  {
+    "name": "en-320 link 0 48px target",
+    "pass": true,
+    "detail": {
+      "x": 24,
+      "y": 425.796875,
+      "width": 170.3125,
+      "height": 48
+    }
+  },
+  {
+    "name": "en-320 link 0 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "en-320 link 0 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "en-320 link 0 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/app/visit-quick-trace?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/app/visit-quick-trace?patient=marsik"
+    }
+  },
+  {
+    "name": "en-320 link 1 48px target",
+    "pass": true,
+    "detail": {
+      "x": 24,
+      "y": 748.765625,
+      "width": 163.953125,
+      "height": 48
+    }
+  },
+  {
+    "name": "en-320 link 1 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "en-320 link 1 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "en-320 link 1 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/app/discharge-preview?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/app/discharge-preview?patient=marsik"
+    }
+  },
+  {
+    "name": "en-320 link 2 48px target",
+    "pass": true,
+    "detail": {
+      "x": 24,
+      "y": 425.734375,
+      "width": 162.359375,
+      "height": 48
+    }
+  },
+  {
+    "name": "en-320 link 2 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "en-320 link 2 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "en-320 link 2 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/app/dose-calculator?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/app/dose-calculator?patient=marsik"
+    }
+  },
+  {
+    "name": "en-320 link 3 48px target",
+    "pass": true,
+    "detail": {
+      "x": 24,
+      "y": 425.515625,
+      "width": 177.75,
+      "height": 48
+    }
+  },
+  {
+    "name": "en-320 link 3 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "en-320 link 3 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "en-320 link 3 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/",
+      "actual": "https://veterinary-clinic-gules.vercel.app/"
+    }
+  },
+  {
+    "name": "en-320 prototype renders product index",
+    "pass": true,
+    "detail": {
+      "url": "https://veterinary-clinic-gules.vercel.app/",
+      "excerpt": "VET CLINIC OS · APPLICATION · 13 SCREENS\n\nProduct screens\n\nOne clinic day on demo data: the veterinarian’s visit, the administrator’s schedule and invoice, and what the owner recei"
+    }
+  },
+  {
+    "name": "en-320 real touch media",
+    "pass": true
+  },
+  {
+    "name": "en-320 touch does not translate arrow",
+    "pass": true
+  },
+  {
+    "name": "en-320 menu nav 48px",
+    "pass": true
+  },
+  {
+    "name": "en-320 menu nav keyboard",
+    "pass": true
+  },
+  {
+    "name": "en-320 Escape closes menu",
+    "pass": true
+  },
+  {
+    "name": "en-320 Home axe links",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "en-320 work/agent-ops-console axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".case-next__label-text"
+            ],
+            "html": "<span class=\"case-next__label-text\" data-astro-cid-qnrozarn=\"\">Next case<span class=\"case-next__rule\" data-astro-cid-qnrozarn=\"\"></span></span>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #d43220, background color: #f3e6ae, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "en-320 work/partner-portal axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".portal-split__media > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">After · the&nbsp;workspace opens on&nbsp;the&nbsp;purchase in&nbsp;progress and what blocks it</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-plate--stack > .portal-shot--native.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Compare · only the&nbsp;attribute that separates the&nbsp;candidates</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-shot--strip > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Confirmed · still marked as the&nbsp;buyer’s choice, and&nbsp;reversible</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-pair > .portal-plate[data-motion=\"fade-image\"] > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Product Details · reached from the&nbsp;catalog or from a&nbsp;specification line</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-plate--wide > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Fastest by&nbsp;01 Nov for ₽7,400, or one consolidated handover three days later for ₽4,200</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "en-320 work/learn axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".case-next__label-text"
+            ],
+            "html": "<span class=\"case-next__label-text\" data-astro-cid-qnrozarn=\"\">Next case<span class=\"case-next__rule\" data-astro-cid-qnrozarn=\"\"></span></span>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #d43220, background color: #e0eae4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "en-320 work/vet-clinic axe links",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "en-320 work/pawly axe links",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "ru-1440 four Vet links",
+    "pass": true
+  },
+  {
+    "name": "ru-1440 link 0 48px target",
+    "pass": true,
+    "detail": {
+      "x": 80,
+      "y": 426.140625,
+      "width": 202.734375,
+      "height": 48
+    }
+  },
+  {
+    "name": "ru-1440 link 0 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "ru-1440 link 0 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "ru-1440 link 0 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/ru/app/visit-quick-trace?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/ru/app/visit-quick-trace?patient=marsik"
+    }
+  },
+  {
+    "name": "ru-1440 link 1 48px target",
+    "pass": true,
+    "detail": {
+      "x": 528,
+      "y": 426.140625,
+      "width": 184.625,
+      "height": 48
+    }
+  },
+  {
+    "name": "ru-1440 link 1 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "ru-1440 link 1 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "ru-1440 link 1 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/ru/app/discharge-preview?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/ru/app/discharge-preview?patient=marsik"
+    }
+  },
+  {
+    "name": "ru-1440 link 2 48px target",
+    "pass": true,
+    "detail": {
+      "x": 976,
+      "y": 426.140625,
+      "width": 143.015625,
+      "height": 48
+    }
+  },
+  {
+    "name": "ru-1440 link 2 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "ru-1440 link 2 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "ru-1440 link 2 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/ru/app/dose-calculator?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/ru/app/dose-calculator?patient=marsik"
+    }
+  },
+  {
+    "name": "ru-1440 link 3 48px target",
+    "pass": true,
+    "detail": {
+      "x": 853.328125,
+      "y": 425.796875,
+      "width": 187.65625,
+      "height": 48
+    }
+  },
+  {
+    "name": "ru-1440 link 3 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "ru-1440 link 3 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "ru-1440 link 3 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/ru/",
+      "actual": "https://veterinary-clinic-gules.vercel.app/ru/"
+    }
+  },
+  {
+    "name": "ru-1440 prototype renders product index",
+    "pass": true,
+    "detail": {
+      "url": "https://veterinary-clinic-gules.vercel.app/ru/",
+      "excerpt": "ОПЕРАЦИОННАЯ СИСТЕМА ВЕТКЛИНИКИ · ПРИЛОЖЕНИЕ · 13 ЭКРАНОВ\n\nЭкраны продукта\n\nОдин день клиники на демо-данных: приём врача, расписание и счёт администратора и то, что получает владе"
+    }
+  },
+  {
+    "name": "ru-1440 Home axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".navbar__list"
+            ],
+            "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+            "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ru-1440 work/agent-ops-console axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".case-next__label-text"
+            ],
+            "html": "<span class=\"case-next__label-text\" data-astro-cid-qnrozarn=\"\">Следующий кейс<span class=\"case-next__rule\" data-astro-cid-qnrozarn=\"\"></span></span>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #d43220, background color: #f3e6ae, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".navbar__list"
+            ],
+            "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+            "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ru-1440 work/partner-portal axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".portal-split__media > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">После · рабочее место открывается текущей закупкой и&nbsp;тем, что&nbsp;её держит</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-plate--stack > .portal-shot--native.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Сравнение · только то, чем кандидаты&nbsp;отличаются</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-shot--strip > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Подтверждено · видно, что&nbsp;это&nbsp;выбор закупщика, и&nbsp;его можно&nbsp;отменить</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-pair > .portal-plate[data-motion=\"fade-image\"] > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Карточка товара · открывается из&nbsp;каталога или&nbsp;из&nbsp;строки&nbsp;спецификации</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-plate--wide > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Быстрее всего&nbsp;— к&nbsp;1 ноября за&nbsp;7 400 ₽, или&nbsp;одна передача на&nbsp;три дня позже за&nbsp;4 200 ₽</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".navbar__list"
+            ],
+            "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+            "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ru-1440 work/learn axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".case-next__label-text"
+            ],
+            "html": "<span class=\"case-next__label-text\" data-astro-cid-qnrozarn=\"\">Следующий кейс<span class=\"case-next__rule\" data-astro-cid-qnrozarn=\"\"></span></span>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #d43220, background color: #e0eae4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".navbar__list"
+            ],
+            "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+            "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ru-1440 work/vet-clinic axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".navbar__list"
+            ],
+            "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+            "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ru-1440 work/pawly axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              "h4"
+            ],
+            "html": "<h4 class=\"ds-meta-sm case-specimen__group-title\" data-astro-cid-j24g2lnu=\"\">Доказательства, события и&nbsp;пояснения</h4>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "li[data-specimen-state=\"photo-pending\"] > .case-specimen__state-label"
+            ],
+            "html": "<p class=\"ds-body-sm case-specimen__state-label\" data-astro-cid-j24g2lnu=\"\">Ожидание · подтверждения нет</p>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "li[data-specimen-state=\"photo-local\"] > .case-specimen__state-label"
+            ],
+            "html": "<p class=\"ds-body-sm case-specimen__state-label\" data-astro-cid-j24g2lnu=\"\">Локально · выбрано, не&nbsp;отправлено</p>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "li[data-specimen-state=\"photo-confirmed\"] > .case-specimen__state-label"
+            ],
+            "html": "<p class=\"ds-body-sm case-specimen__state-label\" data-astro-cid-j24g2lnu=\"\">Подтверждено · событие получено</p>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "li[data-specimen-state=\"timeline-done\"] > .case-specimen__state-label"
+            ],
+            "html": "<p class=\"ds-body-sm case-specimen__state-label\" data-astro-cid-j24g2lnu=\"\">Завершено</p>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "li[data-specimen-state=\"timeline-current\"] > .case-specimen__state-label"
+            ],
+            "html": "<p class=\"ds-body-sm case-specimen__state-label\" data-astro-cid-j24g2lnu=\"\">Текущее</p>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".navbar__list"
+            ],
+            "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+            "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ru-390 four Vet links",
+    "pass": true
+  },
+  {
+    "name": "ru-390 link 0 48px target",
+    "pass": true,
+    "detail": {
+      "x": 24,
+      "y": 425.6875,
+      "width": 202.734375,
+      "height": 48
+    }
+  },
+  {
+    "name": "ru-390 link 0 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "ru-390 link 0 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "ru-390 link 0 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/ru/app/visit-quick-trace?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/ru/app/visit-quick-trace?patient=marsik"
+    }
+  },
+  {
+    "name": "ru-390 link 1 48px target",
+    "pass": true,
+    "detail": {
+      "x": 24,
+      "y": 723.0625,
+      "width": 184.625,
+      "height": 48
+    }
+  },
+  {
+    "name": "ru-390 link 1 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "ru-390 link 1 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "ru-390 link 1 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/ru/app/discharge-preview?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/ru/app/discharge-preview?patient=marsik"
+    }
+  },
+  {
+    "name": "ru-390 link 2 48px target",
+    "pass": true,
+    "detail": {
+      "x": 24,
+      "y": 426.4375,
+      "width": 143.015625,
+      "height": 48
+    }
+  },
+  {
+    "name": "ru-390 link 2 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "ru-390 link 2 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "ru-390 link 2 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/ru/app/dose-calculator?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/ru/app/dose-calculator?patient=marsik"
+    }
+  },
+  {
+    "name": "ru-390 link 3 48px target",
+    "pass": true,
+    "detail": {
+      "x": 24,
+      "y": 426.234375,
+      "width": 187.65625,
+      "height": 48
+    }
+  },
+  {
+    "name": "ru-390 link 3 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "ru-390 link 3 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "ru-390 link 3 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/ru/",
+      "actual": "https://veterinary-clinic-gules.vercel.app/ru/"
+    }
+  },
+  {
+    "name": "ru-390 prototype renders product index",
+    "pass": true,
+    "detail": {
+      "url": "https://veterinary-clinic-gules.vercel.app/ru/",
+      "excerpt": "ОПЕРАЦИОННАЯ СИСТЕМА ВЕТКЛИНИКИ · ПРИЛОЖЕНИЕ · 13 ЭКРАНОВ\n\nЭкраны продукта\n\nОдин день клиники на демо-данных: приём врача, расписание и счёт администратора и то, что получает владе"
+    }
+  },
+  {
+    "name": "ru-390 real touch media",
+    "pass": true
+  },
+  {
+    "name": "ru-390 touch does not translate arrow",
+    "pass": true
+  },
+  {
+    "name": "ru-390 menu nav 48px",
+    "pass": true
+  },
+  {
+    "name": "ru-390 menu nav keyboard",
+    "pass": true
+  },
+  {
+    "name": "ru-390 Escape closes menu",
+    "pass": true
+  },
+  {
+    "name": "ru-390 Home axe links",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "ru-390 work/agent-ops-console axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".case-next__label-text"
+            ],
+            "html": "<span class=\"case-next__label-text\" data-astro-cid-qnrozarn=\"\">Следующий кейс<span class=\"case-next__rule\" data-astro-cid-qnrozarn=\"\"></span></span>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #d43220, background color: #f3e6ae, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ru-390 work/partner-portal axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".portal-split__media > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">После · рабочее место открывается текущей закупкой и&nbsp;тем, что&nbsp;её держит</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-plate--stack > .portal-shot--native.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Сравнение · только то, чем кандидаты&nbsp;отличаются</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-shot--strip > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Подтверждено · видно, что&nbsp;это&nbsp;выбор закупщика, и&nbsp;его можно&nbsp;отменить</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-pair > .portal-plate[data-motion=\"fade-image\"] > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Карточка товара · открывается из&nbsp;каталога или&nbsp;из&nbsp;строки&nbsp;спецификации</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-plate--wide > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Быстрее всего&nbsp;— к&nbsp;1 ноября за&nbsp;7 400 ₽, или&nbsp;одна передача на&nbsp;три дня позже за&nbsp;4 200 ₽</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ru-390 work/learn axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".case-next__label-text"
+            ],
+            "html": "<span class=\"case-next__label-text\" data-astro-cid-qnrozarn=\"\">Следующий кейс<span class=\"case-next__rule\" data-astro-cid-qnrozarn=\"\"></span></span>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #d43220, background color: #e0eae4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ru-390 work/vet-clinic axe links",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "ru-390 work/pawly axe links",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "ru-320 four Vet links",
+    "pass": true
+  },
+  {
+    "name": "ru-320 link 0 48px target",
+    "pass": true,
+    "detail": {
+      "x": 24,
+      "y": 425.546875,
+      "width": 202.734375,
+      "height": 48
+    }
+  },
+  {
+    "name": "ru-320 link 0 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "ru-320 link 0 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "ru-320 link 0 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/ru/app/visit-quick-trace?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/ru/app/visit-quick-trace?patient=marsik"
+    }
+  },
+  {
+    "name": "ru-320 link 1 48px target",
+    "pass": true,
+    "detail": {
+      "x": 24,
+      "y": 748.515625,
+      "width": 184.625,
+      "height": 48
+    }
+  },
+  {
+    "name": "ru-320 link 1 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "ru-320 link 1 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "ru-320 link 1 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/ru/app/discharge-preview?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/ru/app/discharge-preview?patient=marsik"
+    }
+  },
+  {
+    "name": "ru-320 link 2 48px target",
+    "pass": true,
+    "detail": {
+      "x": 24,
+      "y": 426.484375,
+      "width": 143.015625,
+      "height": 48
+    }
+  },
+  {
+    "name": "ru-320 link 2 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "ru-320 link 2 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "ru-320 link 2 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/ru/app/dose-calculator?patient=marsik",
+      "actual": "https://veterinary-clinic-gules.vercel.app/ru/app/dose-calculator?patient=marsik"
+    }
+  },
+  {
+    "name": "ru-320 link 3 48px target",
+    "pass": true,
+    "detail": {
+      "x": 24,
+      "y": 426.453125,
+      "width": 187.65625,
+      "height": 48
+    }
+  },
+  {
+    "name": "ru-320 link 3 whole target and SVG clickable",
+    "pass": true,
+    "detail": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "name": "ru-320 link 3 keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "ru-320 link 3 real popup URL",
+    "pass": true,
+    "detail": {
+      "expected": "https://veterinary-clinic-gules.vercel.app/ru/",
+      "actual": "https://veterinary-clinic-gules.vercel.app/ru/"
+    }
+  },
+  {
+    "name": "ru-320 prototype renders product index",
+    "pass": true,
+    "detail": {
+      "url": "https://veterinary-clinic-gules.vercel.app/ru/",
+      "excerpt": "ОПЕРАЦИОННАЯ СИСТЕМА ВЕТКЛИНИКИ · ПРИЛОЖЕНИЕ · 13 ЭКРАНОВ\n\nЭкраны продукта\n\nОдин день клиники на демо-данных: приём врача, расписание и счёт администратора и то, что получает владе"
+    }
+  },
+  {
+    "name": "ru-320 real touch media",
+    "pass": true
+  },
+  {
+    "name": "ru-320 touch does not translate arrow",
+    "pass": true
+  },
+  {
+    "name": "ru-320 menu nav 48px",
+    "pass": true
+  },
+  {
+    "name": "ru-320 menu nav keyboard",
+    "pass": true
+  },
+  {
+    "name": "ru-320 Escape closes menu",
+    "pass": true
+  },
+  {
+    "name": "ru-320 Home axe links",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "ru-320 work/agent-ops-console axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".case-next__label-text"
+            ],
+            "html": "<span class=\"case-next__label-text\" data-astro-cid-qnrozarn=\"\">Следующий кейс<span class=\"case-next__rule\" data-astro-cid-qnrozarn=\"\"></span></span>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #d43220, background color: #f3e6ae, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ru-320 work/partner-portal axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".portal-split__media > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">После · рабочее место открывается текущей закупкой и&nbsp;тем, что&nbsp;её держит</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-plate--stack > .portal-shot--native.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Сравнение · только то, чем кандидаты&nbsp;отличаются</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-shot--strip > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Подтверждено · видно, что&nbsp;это&nbsp;выбор закупщика, и&nbsp;его можно&nbsp;отменить</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-pair > .portal-plate[data-motion=\"fade-image\"] > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Карточка товара · открывается из&nbsp;каталога или&nbsp;из&nbsp;строки&nbsp;спецификации</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-plate--wide > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+            ],
+            "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Быстрее всего&nbsp;— к&nbsp;1 ноября за&nbsp;7 400 ₽, или&nbsp;одна передача на&nbsp;три дня позже за&nbsp;4 200 ₽</figcaption>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ru-320 work/learn axe links",
+    "pass": true,
+    "detail": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".case-next__label-text"
+            ],
+            "html": "<span class=\"case-next__label-text\" data-astro-cid-qnrozarn=\"\">Следующий кейс<span class=\"case-next__rule\" data-astro-cid-qnrozarn=\"\"></span></span>",
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #d43220, background color: #e0eae4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ru-320 work/vet-clinic axe links",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "ru-320 work/pawly axe links",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "kit .ds-link--inline accessible link",
+    "pass": true
+  },
+  {
+    "name": "kit .ds-link--inline intended underline",
+    "pass": true,
+    "detail": "underline"
+  },
+  {
+    "name": "kit .ds-link--inline keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "kit .ds-link--nav:has(svg) accessible link",
+    "pass": true
+  },
+  {
+    "name": "kit .ds-link--nav:has(svg) intended underline",
+    "pass": true,
+    "detail": "none"
+  },
+  {
+    "name": "kit .ds-link--nav:has(svg) keyboard focus",
+    "pass": true
+  },
+  {
+    "name": "kit .ds-link--arrow:has(.ds-link__arrow) accessible link",
+    "pass": true
+  },
+  {
+    "name": "kit .ds-link--arrow:has(.ds-link__arrow) intended underline",
+    "pass": true,
+    "detail": "none"
+  },
+  {
+    "name": "kit .ds-link--arrow:has(.ds-link__arrow) keyboard focus",
+    "pass": true
+  }
+]

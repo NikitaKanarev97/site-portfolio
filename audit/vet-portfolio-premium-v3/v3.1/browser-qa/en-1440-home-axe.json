@@ -1,0 +1,15 @@
+[
+  {
+    "id": "list",
+    "impact": "serious",
+    "nodes": [
+      {
+        "target": [
+          ".navbar__list"
+        ],
+        "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+        "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+      }
+    ]
+  }
+]

@@ -51,6 +51,9 @@ const {
     ? '(внешняя ссылка, откроется в новой вкладке)'
     : '(external link, opens in a new tab)',
 } = Astro.props;
+
+// Trim template whitespace so it cannot separate the label from its marker.
+const label = (await Astro.slots.render('default')).trim();
 ---
 
 <a
@@ -65,21 +68,21 @@ const {
   rel={external ? 'noopener noreferrer' : undefined}
   aria-current={active && type === 'nav' ? 'page' : undefined}
 >
-  <span class="ds-link__label">
-    <slot />
-    {(type === 'nav' || type === 'arrow') && <span class="ds-link__rule" aria-hidden="true"></span>}
+  <span class="ds-link__content">
+    <span class="ds-link__label"><Fragment set:html={label} />{(type === 'nav' || type === 'arrow') && <span class="ds-link__rule" aria-hidden="true"></span>}</span>{(external || type === 'arrow') && '\u2060'}{
+      external
+        ? <IconArrow direction="up-right" size="small" class="ds-link__external" />
+        : type === 'arrow' && <IconArrow direction={direction} class={`ds-link__arrow${direction === 'down' ? ' ds-link__arrow--down' : ''}`} />
+    }
   </span>
-  {external && <IconArrow direction="up-right" size="small" class="ds-link__external" />}
   {external && <span class="ds-visually-hidden">{externalLabel}</span>}
-  {type === 'arrow' && !external && <IconArrow direction={direction} class={`ds-link__arrow${direction === 'down' ? ' ds-link__arrow--down' : ''}`} />}
 </a>
 
 <style>
   .ds-link {
     position: relative;
     display: inline-flex;
-    align-items: baseline;
-    gap: var(--space-2);
+    align-items: center;
     color: var(--text-link);
     text-decoration: none;
     transition: color var(--motion-hover-duration) var(--motion-hover-ease);
@@ -93,8 +96,19 @@ const {
     outline-color: currentColor;
   }
 
+  /* Center the complete content in larger targets. The nowrap boundary and
+     word joiner keep the marker with the last word, while the label can wrap.
+     Reset inherited text-wrap: pretty so it cannot orphan the atomic SVG. */
+  .ds-link__content {
+    min-inline-size: 0;
+    white-space: nowrap;
+    text-wrap: nowrap;
+  }
+
   .ds-link__label {
     position: relative;
+    white-space: normal;
+    text-wrap: wrap;
   }
 
   /* Нажатие. Ступень ниже hover — иначе на десктопе, где ссылка под курсором
@@ -157,7 +171,8 @@ const {
 
   .ds-link :global(.ds-link__arrow),
   .ds-link :global(.ds-link__external) {
-    align-self: center;
+    margin-inline-start: var(--space-2);
+    vertical-align: middle;
     transition: transform var(--motion-hover-duration) var(--motion-hover-ease);
   }
 
