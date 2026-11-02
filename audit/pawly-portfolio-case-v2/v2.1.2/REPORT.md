@@ -9,7 +9,7 @@ This report does not approve itself. Nothing was merged or deployed, and Figma w
 | Branch | `redesign/pawly-portfolio-case-v2-2026-11-02` |
 | Base (BEFORE) | `ba611baa4505248c5db51ee5dbf4ae224cda4e46` (V2.1.1) |
 | Implementation | `21b9f0e0b352de7c786d9afcc9e639a63c7ad3f0`, which changes only `src/components/pawly/PawlyCase.astro` and `PawlyShot.astro` (+55 / −34 lines) |
-| Evidence + this report | the commit after `21b9f0e`; the final branch head is recorded in §13 |
+| Evidence + this report | `4d78a6c349413bfda724551e86f1106cd80ee8b6`; branch head = the report-only commit after it (§13) |
 | Routes | `/work/pawly`, `/ru/work/pawly` |
 
 **Unchanged:**
@@ -257,7 +257,7 @@ It gains four widths (1279 / 1100 / 900 / 800) and three new assertions per widt
 - **`PawlyShot.astro`** exposes `--shot-frame` (panel width) and `--shot-canvas` (measured surface) as figure-level custom properties. The component API and markup are unchanged, and it is used only by `PawlyCase`.
 - **Tools** are copies of the V2.1 tools, extended (capture widths and zoom, DOM geometry in `measure.py`, functional assertions, boards). New: `explore.mjs`, `alternatives.py`, `seam.py`, `regress.py`.
 
-**Final branch head:** see the commit that records it after this report's commit (report-only).
+**Final branch head:** evidence + report `4d78a6c349413bfda724551e86f1106cd80ee8b6`; the branch head is the report-only commit after it, which records this line.
 
 ## Questions for the independent reviewer
 
