@@ -1,3 +1,7 @@
+## Agent Ops Premium V3 · 02.11.2026
+
+Case-only checkpoint reading guide: existing Состояние changes the current outside-UI stage/marker while the whole approval stays native and intact. CSS sticky only on wide/tall viewports and only after JS opts in. ScrollTrigger uses native scroll with no pin, spacer, scrub or extra reading distance. Never hides text or disables screenshot zoom. Registered from existing buildCaseScenes inside withMotionPreference; responsive/page cleanup removes triggers, class and state. Reduce/no-JS/mobile retain all three explanations and complete screenshot. Existing intro/fade tokens remain; no new timing or scroll controller. Necessity and regression evidence: `audit/agent-ops-portfolio-premium-v3/MOTION.md`.
+
 H Home: WorkStage/Agent подключает существующий cover-interlock — сообщение, рубеж человека, выплата. Те же duration/ease/skip/lifecycle, полный native fallback. Root содержит только панели и gate; необязательные lead/caption не создают tween.
 
 ## H · native раскрытие · 04.10.2026

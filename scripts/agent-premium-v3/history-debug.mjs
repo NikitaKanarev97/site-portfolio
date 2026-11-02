@@ -1,0 +1,10 @@
+import {launch} from './capture.mjs';
+const b=await launch(),p=await b.newPage({viewport:{width:1440,height:900}});
+await p.addInitScript(()=>{window.events=[];for(const name of ['astro:before-preparation','astro:before-swap','astro:after-swap','astro:page-load'])document.addEventListener(name,e=>window.events.push({name,y:scrollY,href:location.href,state:history.state,type:e.navigationType}));});
+await p.goto('http://127.0.0.1:4406/work/agent-ops-console/',{waitUntil:'networkidle'});await p.waitForTimeout(1500);
+await p.locator('.agent-index a[href="#checkpoint"]').click();await p.waitForTimeout(1500);
+console.log('initial',await p.evaluate(()=>({y:scrollY,state:history.state,events:window.events})));
+await p.locator('nav a[href="/about"]').first().evaluate(el=>el.click());await p.waitForTimeout(1600);
+console.log('away',await p.evaluate(()=>({y:scrollY,state:history.state,events:window.events})));
+await p.goBack();await p.waitForTimeout(1600);console.log('back',await p.evaluate(()=>({y:scrollY,state:history.state,events:window.events})));
+await b.close();

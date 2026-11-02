@@ -1,124 +1,220 @@
 ---
 import AgentShot from './AgentShot.astro';
+import AgentHeadingText from './AgentHeadingText.astro';
 import MetaList from '../MetaList.astro';
 import CaseNext from '../CaseNext.astro';
 import TextLink from '../TextLink.astro';
 import type { AgentCaseCopy } from '../../copy/cases/agent-ops-v2';
+import { agentPremiumEn, agentPremiumRu } from '../../copy/cases/agent-ops-premium';
 import type { CaseTheme } from '../../copy/cases/story';
 interface Props { copy: AgentCaseCopy; locale: 'en' | 'ru'; next: { href: string; title: string; theme: CaseTheme; label: string } }
 const { copy, locale, next } = Astro.props;
 const { outcome } = copy;
+const p = locale === 'ru' ? agentPremiumRu : agentPremiumEn;
+const m = p.model;
+const hero = { ...copy.hero, mobile: 'approval-consequences-mobile', alt: p.heroAlt, caption: p.heroCaption };
+const policyShots = copy.sections.find(s => s.id === 'policy')!.shots!.map((s, i) => ({...s, desktop: i ? 'policy-rollout-mobile' : 'policy-boundary-mobile', mobile: i ? 'policy-rollout-mobile' : 'policy-boundary-mobile', fullDesktop: s.desktop, fullMobile: i ? 'policy-version-diff-mobile' : 'policy-editor-mobile', caption: p.policy.captions[i]}));
 ---
-<div class="agent-case" id="case-agent-ops-console" data-h="case" data-story-version="agent-v2">
+<div class="agent-case" id="case-agent-ops-console" data-h="case" data-story-version="agent-premium-v3">
   <section class="agent-cover" aria-labelledby="agent-title" data-case-cover="case-agent" transition:name="case-agent" transition:animate="initial">
     <div class="ds-container agent-cover__inner" data-motion-intro>
       <header class="agent-cover__head">
         <p class="ds-meta-sm agent-label">{copy.eyebrow}</p>
         <h1 id="agent-title" class="ds-display-5xl" data-motion="lines">{copy.title}</h1>
-        <p class="ds-heading-xl agent-cover__promise" data-motion="fade">{copy.promise}</p>
+        <p class="ds-heading-2xl agent-cover__promise" data-motion="fade">{copy.promise}</p>
+        <div class="agent-cover__facts"><MetaList layout="facts" items={copy.facts} /></div>
+        <p class="ds-body-sm agent-body">{p.scope}</p>
       </header>
-      <div class="agent-cover__media"><AgentShot shot={copy.hero} locale={locale} loading="eager" /></div>
+      <div class="agent-cover__media" data-motion="fade-image"><AgentShot shot={hero} locale={locale} loading="eager" /></div>
     </div>
   </section>
   <div class="agent-sheet">
-    <div class="ds-container agent-facts">
-      <MetaList layout="facts" items={copy.facts} />
-      <p class="ds-body-sm agent-disclosure">{copy.disclosure}</p>
+    <div class="ds-container agent-orientation">
+      <p class="ds-body-sm agent-body">{copy.disclosure}</p>
       <nav class="agent-index" aria-label={copy.navLabel}>
-        {copy.sections.map(section => <a class="ds-body-sm" href={`#${section.id}`}>{section.label}</a>)}
+        {copy.sections.map(s => <a class="ds-body-sm" href={`#${s.id}`}>{s.label}</a>)}
         <a class="ds-body-sm" href="#outcome">{outcome.label}</a>
       </nav>
     </div>
-    {copy.sections.map(section => <section class:list={['ds-container agent-section', `agent-section--${section.id}`]} id={section.id} aria-labelledby={`${section.id}-title`}>
+    {copy.sections.map(s => <section class:list={['ds-container agent-section', `agent-section--${s.id}`]} id={s.id} aria-labelledby={`${s.id}-title`}>
       <div class="agent-section__head">
-        <p class="ds-meta-sm agent-label">{section.label}</p>
+        <p class="ds-meta-sm agent-label">{s.label}</p>
         <div class="agent-section__copy">
-          <h2 id={`${section.id}-title`} class="ds-heading-3xl" data-motion="fade">{section.title}</h2>
-          <p class="ds-body-lg agent-body">{section.body}</p>
+          <h2 id={`${s.id}-title`} class:list={[s.id === 'problem' ? 'ds-display-5xl' : 'ds-heading-4xl']} data-motion="fade"><AgentHeadingText text={s.title} /></h2>
+          {s.id !== 'checkpoint' && <p class="ds-body-lg agent-body">{s.body}</p>}
         </div>
       </div>
-      {section.id === 'problem' && <div class="agent-context">
-        <p class="ds-meta-sm agent-label">{copy.contextLabel}</p>
-        <dl class="agent-metrics">{copy.metrics.map(metric => <div><dt class="ds-body-sm">{metric.label}</dt><dd class="ds-display-5xl">{metric.value}</dd></div>)}</dl>
+
+      {s.id === 'problem' && <div class="agent-problem">
+        <div class="agent-problem__cost"><p class="ds-meta-sm agent-label">{copy.contextLabel}</p><p class="ds-display-6xl" data-editorial-money>{copy.metrics[2].value}</p><p class="ds-body-lg agent-body">{p.problemCost}</p></div>
+        <div class="agent-problem__signals"><p class="ds-heading-2xl">{p.problemAside}</p><dl>{copy.metrics.slice(0,2).map(metric => <div><dt class="ds-body-sm agent-body">{metric.label}</dt><dd class="ds-heading-3xl">{metric.value}</dd></div>)}</dl></div>
       </div>}
-      {section.id === 'operating-model' && <ol class="agent-flow">{copy.flow.map((step, index) => <li><span class="ds-meta-xs agent-label" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><span class="ds-heading-xl">{step.name}</span><span class="ds-body-sm agent-body">{step.text}</span></li>)}</ol>}
-      {section.shots && <div class="agent-evidence">
-        {section.shots.map((shot, index) => <div class:list={['agent-plate', section.id === 'checkpoint' && 'agent-plate--task']} data-motion="fade-image" data-agent-evidence={`${section.id}-${index}`}><AgentShot shot={shot} locale={locale} /></div>)}
+
+      {s.id === 'operating-model' && <figure class="agent-model" aria-labelledby="model-label">
+        <figcaption id="model-label" class="ds-meta-sm agent-label">{m.label}</figcaption>
+        <div class="agent-model__sizing"><p class="ds-meta-sm agent-label">{m.estimate}</p><p class="ds-heading-2xl">~1,770 <span aria-hidden="true">→</span> ~71</p><p class="ds-body-sm agent-body">{m.sizingLabel}</p></div>
+        <div class="agent-model__intake"><p class="ds-heading-2xl">{m.input}</p><span aria-hidden="true">↓</span><p class="ds-heading-xl agent-model__decision">{m.decision}</p></div>
+        <div class="agent-model__fork"><aside class="agent-model__sample"><p class="ds-meta-sm agent-label">{m.no}</p><p class="ds-body-base agent-body">{m.sample}</p></aside><div class="agent-model__commitment"><p class="ds-meta-sm agent-label">{m.yes}</p><p class="ds-heading-xl"><AgentHeadingText text={m.commitment} /></p><p class="ds-body-base agent-body">{m.cluster}</p></div></div>
+        <div class="agent-model__review"><span aria-hidden="true">↓</span><p class="ds-heading-xl">{m.review}</p></div>
+        <div class="agent-model__branches">{m.branches.map(b => <div><p class="ds-meta-sm agent-label">{b.role}</p><h3 class="ds-heading-2xl">{b.title}</h3><p class="ds-body-base agent-body">{b.text}</p></div>)}</div>
+        <div class="agent-model__feedback"><p class="ds-heading-2xl">{m.close}</p><p class="ds-body-base agent-body">{m.feedback}</p></div>
+        <p class="ds-body-sm agent-body agent-model__note">{m.note}</p>
+      </figure>}
+
+      {s.id === 'investigation' && <div class="agent-investigation">{s.shots!.map((shot, i) => <div class:list={['agent-investigation__stage', i === 1 && 'agent-investigation__stage--detail']}>
+        <div class="agent-investigation__text"><p class="ds-meta-sm agent-label" aria-hidden="true">0{i+1}</p><h3 class="ds-heading-2xl">{p.investigation[i].title}</h3><p class="ds-body-base agent-body">{p.investigation[i].body}</p><p class="ds-body-sm agent-cue">{p.investigation[i].cue}</p></div>
+        <div class="agent-plate" data-motion="fade-image" data-agent-evidence={`investigation-${i}`}><AgentShot shot={shot} locale={locale} /></div>
+      </div>)}</div>}
+
+      {s.id === 'checkpoint' && <div class="agent-reading" data-agent-reading>
+        <p class="ds-body-sm agent-label agent-reading__label">{p.checkpoint.label}</p>
+        <ol class="agent-reading__stages">{p.checkpoint.stages.map((stage,i) => <li data-agent-reading-step={i}><span class="ds-heading-3xl agent-reading__number" aria-hidden="true">0{i+1}</span><div><h3 class="ds-heading-2xl">{stage.title}</h3><p class="ds-body-base agent-body">{stage.body}</p></div></li>)}</ol>
+        <div class="agent-reading__proof"><div class="agent-reading__markers" aria-hidden="true">{p.checkpoint.stages.map((stage,i) => <span class="ds-meta-sm" data-agent-reading-marker={i}>0{i+1}<span>{stage.title}</span></span>)}</div><AgentShot shot={{...s.shots![0],caption:p.checkpoint.caption}} locale={locale} /></div>
       </div>}
-      {section.note && <p class="ds-body-base agent-note">{section.note}</p>}
+
+      {s.id === 'policy' && <div class="agent-policy"><ol class="agent-policy__lifecycle">{p.policy.stages.map((stage,i) => <li><span class="ds-meta-sm agent-label" aria-hidden="true">0{i+1}</span><h3 class="ds-heading-xl">{stage.title}</h3><p class="ds-body-sm agent-body">{stage.text}</p></li>)}</ol><p class="ds-heading-xl agent-policy__warning">{p.policy.warning}</p><div class="agent-policy__panels">{policyShots.map((shot,i)=><div class="agent-plate" data-agent-evidence={`policy-${i}`}><AgentShot shot={shot} locale={locale} /></div>)}</div></div>}
+
+      {s.id === 'autonomy' && <div class="agent-autonomy">
+        <div class="agent-autonomy__system"><h3 class="ds-heading-2xl">{p.autonomy.intro}</h3><dl>{p.autonomy.states.map((state,i)=><div><dt class="ds-heading-xl"><span class="ds-meta-sm agent-label" aria-hidden="true">0{i+1}</span>{state.title}</dt><dd class="ds-body-base agent-body">{state.text}</dd></div>)}</dl></div>
+        <div class="agent-autonomy__proof"><p class="ds-meta-sm agent-label">{p.autonomy.proof}</p><div class="agent-plate" data-motion="fade-image" data-agent-evidence="autonomy-1"><AgentShot shot={{...s.shots![1],desktop:'autonomy-states-desktop',mobile:'autonomy-states-mobile',fullDesktop:'autonomy-desktop',fullMobile:'autonomy-mobile',alt:p.autonomy.specimenAlt,caption:p.autonomy.specimenCaption}} locale={locale} /></div></div>
+        <details class="agent-autonomy__quality"><summary class="ds-heading-xl">{p.autonomy.inspect}</summary><div class="agent-plate" data-agent-evidence="autonomy-0"><AgentShot shot={s.shots![0]} locale={locale} /></div></details>
+      </div>}
+      {s.note && <p class="ds-body-base agent-cue">{s.note}</p>}
     </section>)}
+
     <section class="ds-container agent-section" id="outcome" aria-labelledby="outcome-title">
-      <div class="agent-outcome">
-        <div class="agent-outcome__lead"><p class="ds-meta-sm agent-label">{outcome.label}</p><h2 id="outcome-title" class="ds-heading-4xl" data-motion="fade">{outcome.title}</h2><p class="ds-body-lg agent-body">{outcome.body}</p></div>
-        <dl class="agent-outcome__details">
-          {[{label: outcome.changeLabel, body: outcome.change}, {label: outcome.tradeLabel, body: outcome.trade}, {label: outcome.scopeLabel, body: outcome.scope}].map(item => <div><dt class="ds-heading-xl">{item.label}</dt><dd class="ds-body-base agent-body">{item.body}</dd></div>)}
-        </dl>
-        <div class="agent-outcome__cta"><TextLink type="arrow" href={outcome.href} external externalLabel={locale === 'ru' ? 'Откроется в новой вкладке' : 'Opens in a new tab'}>{outcome.cta}</TextLink><p class="ds-body-sm agent-body">{outcome.note}</p></div>
-      </div>
+      <div class="agent-section__head"><p class="ds-meta-sm agent-label">{outcome.label}</p><div class="agent-section__copy"><h2 id="outcome-title" class="ds-heading-4xl" data-motion="fade"><AgentHeadingText text={p.process.title} /></h2></div></div>
+      <div class="agent-process"><p class="ds-meta-sm agent-label">{p.process.label}</p><div class="agent-process__header" aria-hidden="true">{p.process.columns.map(label=><p class="ds-meta-sm">{label}</p>)}</div>{p.process.rows.map(row=><dl class="agent-process__row">{[row.observation,row.decision,row.validation].map((text,i)=><div><dt class="ds-meta-sm agent-label">{p.process.columns[i]}</dt><dd class="ds-body-base">{text}</dd></div>)}</dl>)}</div>
+      <div class="agent-result">{p.process.result.map((item,i)=><div><p class="ds-meta-sm agent-label" aria-hidden="true">0{i+1}</p><h3 class="ds-heading-2xl">{item.label}</h3><p class="ds-body-base agent-body">{item.text}</p></div>)}</div>
+      <p class="ds-body-sm agent-body agent-boundary">{p.process.boundary}</p>
+      <div class="agent-outcome"><div><p class="ds-meta-sm agent-label">{outcome.tradeLabel}</p><p class="ds-heading-3xl">{outcome.trade}</p></div><div><TextLink type="arrow" href={outcome.href} external externalLabel={locale === 'ru' ? 'Откроется в новой вкладке' : 'Opens in a new tab'}>{outcome.cta}</TextLink><p class="ds-body-sm agent-body">{outcome.note}</p></div></div>
     </section>
   </div>
   <CaseNext {...next} transitionKey={`case-${next.theme}`} />
 </div>
 <style>
   :global(main:has(> .agent-case)) { padding-block-start: 0; }
+  .agent-case { overflow-wrap: break-word; }
+  .agent-case :is(h1, h2, h3, [class*="ds-heading"], .ds-display-6xl) { overflow-wrap: normal; word-break: normal; }
+  [data-editorial-money] { white-space: nowrap; }
   .agent-cover { background: var(--surface-subtle); }
-  .agent-cover__inner { display: grid; gap: var(--flow-node); padding-block: var(--flow-node); align-items: center; }
+  .agent-cover__inner { display: grid; gap: var(--flow-node); padding-block: var(--flow-group); align-items: start; }
   .agent-cover__head { display: grid; gap: var(--flow-text); align-content: start; }
-  .agent-cover__head h1, .agent-cover__head p { margin: 0; }
+  .agent-case h1, .agent-case h2, .agent-case h3, .agent-case p { margin: 0; }
   .agent-cover__promise { max-inline-size: 30ch; }
-  .agent-cover__media { min-inline-size: 0; border-radius: var(--radius-media); }
-  .agent-cover__media :global(.agent-shot) { margin-inline: auto; }
-  .agent-sheet { --agent-step: var(--space-24); padding-block-end: var(--agent-step); background: var(--surface-default); }
-  .agent-sheet > * + * { margin-block-start: var(--agent-step); }
-  .agent-facts { display: grid; gap: var(--flow-text); padding-block-start: var(--flow-group); }
-  .agent-disclosure, .agent-label, .agent-body { color: var(--text-subtle); }
-  .agent-disclosure { max-inline-size: var(--measure-text); }
+  .agent-cover__facts { margin-block-start: var(--flow-pair); }
+  .agent-cover__facts :global(.meta-list--facts) { grid-template-columns: repeat(2,minmax(0,1fr)); grid-auto-flow: row; }
+  .agent-cover__media { min-inline-size: 0; }
+  .agent-sheet { padding-block-end: var(--section-gap); background: var(--surface-default); }
+  .agent-sheet > * + * { margin-block-start: var(--section-gap); }
+  .agent-orientation { display: grid; gap: var(--flow-text); padding-block-start: var(--flow-group); }
+  .agent-label, .agent-body { color: var(--text-subtle); }
   .agent-index { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-6); }
   .agent-index a { display: inline-flex; align-items: center; min-block-size: var(--space-12); color: var(--text-link); text-underline-offset: var(--space-1); }
   .agent-index a:active { color: var(--text-link-pressed); }
   .agent-section { scroll-margin-block-start: var(--flow-node); }
-  .agent-section > * + * { margin-block-start: var(--flow-node); }
-  .agent-section__head, .agent-section__copy { display: grid; gap: var(--flow-text); }
-  .agent-section__head h2 { margin: 0; max-inline-size: 30ch; }
-  .agent-section__copy > p { max-inline-size: var(--measure-text); }
-  .agent-context { display: grid; gap: var(--flow-text); padding: var(--space-6); border-radius: var(--radius-media); background: var(--surface-subtle); }
-  .agent-metrics { display: grid; gap: var(--flow-node); margin: 0; }
-  .agent-metrics > div { display: flex; flex-direction: column-reverse; gap: var(--flow-pair); }
-  .agent-metrics dt, .agent-metrics dd { margin: 0; }
-  .agent-metrics dt { color: var(--text-subtle); max-inline-size: 28ch; }
-  .agent-flow { display: grid; gap: var(--flow-text) var(--gutter); padding: 0; margin: 0; list-style: none; }
-  .agent-flow li { display: grid; align-content: start; gap: var(--flow-pair); padding-block-start: var(--space-4); border-block-start: var(--border-width) solid var(--border-default); }
-  .agent-evidence { display: grid; gap: var(--flow-group); }
-  .agent-plate { display: grid; justify-items: center; min-inline-size: 0; border-radius: var(--radius-media); }
-  .agent-note { max-inline-size: var(--measure-text); padding-inline-start: var(--space-6); border-inline-start: var(--border-width) solid var(--border-strong); color: var(--text-subtle); }
-  .agent-outcome { display: grid; gap: var(--flow-group); padding: var(--space-6); background: var(--surface-subtle); border-radius: var(--radius-media); }
-  .agent-outcome > * { min-inline-size: 0; overflow-wrap: anywhere; }
-  .agent-outcome__lead { display: grid; align-content: start; gap: var(--flow-text); }
-  .agent-outcome__lead h2 { margin: 0; max-inline-size: 20ch; }
-  .agent-outcome__details { display: grid; gap: var(--flow-node); margin: 0; }
-  .agent-outcome__details > div { display: grid; gap: var(--flow-pair); }
-  .agent-outcome__details dd { margin: 0; }
-  .agent-outcome__cta { display: grid; gap: var(--flow-pair); }
-  .agent-outcome__cta > :global(.ds-link) { min-block-size: var(--space-12); }
-  @media (--can-hover) { .agent-index a:hover { color: var(--text-link-hover); } }
+  .agent-section > * + * { margin-block-start: var(--flow-group); }
+  .agent-section__head, .agent-section__copy { display: grid; grid-template-columns: minmax(0,1fr); min-inline-size: 0; gap: var(--flow-text); }
+  .agent-section__head h2 { max-inline-size: 26ch; }
+  .agent-section__copy > p, .agent-boundary { max-inline-size: var(--measure-text); }
+  .agent-plate { min-inline-size: 0; display: grid; justify-items: center; }
+  .agent-problem { display: grid; gap: var(--flow-group); border-block-start: var(--border-width) solid var(--border-strong); padding-block-start: var(--flow-group); }
+  .agent-problem__cost, .agent-problem__signals { display: grid; gap: var(--flow-text); align-content: start; }
+  .agent-problem__cost > .agent-body { max-inline-size: 40ch; }
+  .agent-problem__signals dl { margin: 0; display: grid; gap: var(--flow-text); }
+  .agent-problem__signals dl > div { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: baseline; gap: var(--gutter); padding-block-start: var(--space-4); border-block-start: var(--border-width) solid var(--border-default); }
+  .agent-problem__signals dd { margin: 0; }
+  .agent-model { margin: 0; display: grid; gap: var(--flow-text); padding: var(--space-6); background: var(--diagram-field); border-radius: var(--radius-media); }
+  .agent-model__sizing { display: grid; gap: var(--flow-pair); padding-block-end: var(--flow-text); border-block-end: var(--border-width) solid var(--border-default); }
+  .agent-model__intake, .agent-model__review { display: grid; justify-items: center; gap: var(--flow-pair); text-align: center; }
+  .agent-model__decision { padding: var(--space-4) var(--space-6); border: var(--border-width) solid var(--diagram-stroke); border-radius: var(--diagram-node-radius); background: var(--diagram-node); }
+  .agent-model__fork, .agent-model__branches { display: grid; gap: var(--flow-text); }
+  .agent-model__sample, .agent-model__commitment { display: grid; gap: var(--flow-pair); padding-inline-start: var(--space-4); border-inline-start: var(--border-width) solid var(--diagram-arrow); }
+  .agent-model__commitment { background: var(--diagram-node); padding: var(--space-4); border: var(--border-width) solid var(--diagram-stroke); border-radius: var(--diagram-node-radius); }
+  .agent-model__branches > div { display: grid; gap: var(--flow-pair); padding: var(--space-6); background: var(--diagram-node); border-block-start: var(--border-width) solid var(--diagram-stroke); }
+  .agent-model__feedback { display: grid; gap: var(--flow-pair); padding-block-start: var(--flow-text); border-block-start: var(--border-width) solid var(--diagram-arrow); }
+  .agent-model__note { max-inline-size: var(--measure-text); }
+  .agent-investigation { display: grid; gap: var(--flow-block); }
+  .agent-investigation__stage, .agent-investigation__text { display: grid; gap: var(--flow-text); align-content: start; }
+  .agent-cue { padding-inline-start: var(--space-4); border-inline-start: var(--border-width) solid var(--border-strong); color: var(--text-subtle); max-inline-size: var(--measure-text); }
+  .agent-reading { display: grid; gap: var(--flow-node); align-items: start; }
+  .agent-reading__stages { display: grid; gap: var(--flow-node); list-style: none; padding: 0; margin: 0; }
+  .agent-reading__stages li { display: grid; grid-template-columns: auto minmax(0,1fr); gap: var(--space-4); padding-block-start: var(--space-4); border-block-start: var(--border-width) solid var(--border-default); }
+  .agent-reading__stages li > div { display: grid; gap: var(--flow-pair); }
+  .agent-reading__number { color: var(--text-subtle); }
+  .agent-reading__proof { display: grid; gap: var(--flow-text); min-inline-size: 0; }
+  .agent-reading__markers { display: none; }
+  .agent-policy { display: grid; gap: var(--flow-node); }
+  .agent-policy__lifecycle { display: grid; gap: var(--flow-text); padding: 0; margin: 0; list-style: none; }
+  .agent-policy__lifecycle li { display: grid; align-content: start; gap: var(--flow-pair); padding-inline-start: var(--space-4); border-inline-start: var(--border-width) solid var(--border-strong); }
+  .agent-policy__warning { padding: var(--space-4) var(--space-6); border-inline-start: var(--border-width) solid var(--text-link); background: var(--surface-subtle); }
+  .agent-policy__panels { display: grid; gap: var(--flow-node); align-items: start; }
+  .agent-autonomy { display: grid; gap: var(--flow-group); }
+  .agent-autonomy__system { display: grid; gap: var(--flow-node); }
+  .agent-autonomy__system dl { margin: 0; display: grid; gap: var(--flow-text); }
+  .agent-autonomy__system dl > div { display: grid; gap: var(--flow-pair); }
+  .agent-autonomy__system dt { display: flex; align-items: baseline; gap: var(--space-4); }
+  .agent-autonomy__system dd { margin: 0; }
+  .agent-autonomy__proof { display: grid; gap: var(--flow-text); min-inline-size: 0; }
+  .agent-autonomy__quality { border-block: var(--border-width) solid var(--border-default); }
+  .agent-autonomy__quality summary { cursor: pointer; padding-block: var(--space-6); min-block-size: var(--space-12); }
+  .agent-autonomy__quality > div { padding-block: var(--space-6); }
+  .agent-process { display: grid; gap: var(--flow-text); }
+  .agent-process__header { display: none; }
+  .agent-process__row { display: grid; gap: var(--flow-text); margin: 0; padding-block-start: var(--flow-text); border-block-start: var(--border-width) solid var(--border-strong); }
+  .agent-process__row > div { display: grid; gap: var(--flow-pair); }
+  .agent-process__row dd { margin: 0; }
+  .agent-result { display: grid; gap: var(--flow-node); padding: var(--space-6); border-radius: var(--radius-media); background: var(--surface-subtle); }
+  .agent-result > div { display: grid; align-content: start; gap: var(--flow-pair); min-inline-size: 0; }
+  .agent-outcome { display: grid; gap: var(--flow-group); padding-block-start: var(--flow-group); border-block-start: var(--border-width) solid var(--border-strong); }
+  .agent-outcome > div { display: grid; align-content: start; gap: var(--flow-text); min-inline-size: 0; overflow-wrap: anywhere; }
+  @media (--can-hover) { .agent-index a:hover, .agent-autonomy__quality summary:hover { color: var(--text-link-hover); } }
+  @media (--below-bp-md) {
+    /* Stay within the existing section-heading scale, including 320px. */
+    .agent-section__head h2 { font-size: clamp(var(--size-2xl), 8vw, var(--size-3xl)); }
+  }
   @media (--bp-md) {
-    .agent-plate { padding: var(--space-6); background: var(--surface-subtle); }
-    .agent-cover__media { max-inline-size: var(--measure-lead); }
-    .agent-metrics { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gutter); }
-    .agent-flow { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .agent-context, .agent-outcome { padding: var(--space-12); }
+    .agent-cover__media { max-inline-size: var(--measure-lead); justify-self: center; }
+    .agent-problem { grid-template-columns: minmax(0,7fr) minmax(0,5fr); gap: var(--space-16); }
+    .agent-model { padding: var(--space-12); }
+    .agent-model__sizing { grid-template-columns: minmax(0,1fr) auto; align-items: baseline; }
+    .agent-model__sizing > .agent-body { grid-column: 2; }
+    .agent-model__fork { grid-template-columns: minmax(0,4fr) minmax(0,8fr); align-items: center; }
+    .agent-model__branches { grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-12); position: relative; padding-block-start: var(--space-6); }
+    .agent-model__branches::before { content: ''; position: absolute; inset-inline: 25%; inset-block-start: 0; block-size: var(--space-6); border: var(--border-width) solid var(--diagram-arrow); border-block-end: 0; }
+    .agent-policy__lifecycle { grid-template-columns: repeat(4,minmax(0,1fr)); gap: var(--gutter); }
+    .agent-policy__lifecycle li { border-inline-start: 0; padding-inline-start: 0; border-block-start: var(--border-width) solid var(--border-strong); padding-block-start: var(--space-4); }
+    .agent-policy__panels { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .agent-policy__panels .agent-plate { padding: var(--space-6); background: var(--surface-subtle); border-radius: var(--radius-media); }
+    .agent-process__header, .agent-process__row { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--space-8); }
+    .agent-process__row dt { position: absolute; inline-size: var(--border-width); block-size: var(--border-width); overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+    .agent-result { grid-template-columns: repeat(3,minmax(0,1fr)); padding: var(--space-8); gap: var(--space-8); }
   }
   @media (--bp-lg) {
-    .agent-sheet { --agent-step: var(--space-32); }
-    .agent-cover__inner { grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: var(--space-12); }
-    .agent-cover__head { padding-block: var(--space-12); }
-    .agent-cover__media { justify-self: end; inline-size: 100%; }
-    .agent-section__head { grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: var(--gutter); }
+    .agent-cover__inner { grid-template-columns: minmax(0,5fr) minmax(0,7fr); gap: var(--space-12); }
+    .agent-cover__head { padding-block: var(--space-6); }
+    .agent-cover__media { inline-size: 100%; }
+    .agent-section__head { grid-template-columns: minmax(0,3fr) minmax(0,9fr); gap: var(--gutter); }
     .agent-section__head > .agent-label { padding-block-start: var(--space-2); }
-    .agent-section__copy { max-inline-size: var(--measure-text); }
-    .agent-flow { grid-template-columns: repeat(6, minmax(0, 1fr)); }
-    .agent-plate--task :global(.agent-shot) { max-inline-size: min(var(--measure-lead), var(--agent-native)); }
-    .agent-outcome { grid-template-columns: minmax(0, 5fr) minmax(0, 5fr); column-gap: var(--space-16); }
-    .agent-outcome__cta { grid-column: 1 / -1; }
+    .agent-section__copy { max-inline-size: var(--measure-lead); }
+    .agent-problem { margin-inline-start: calc(25% + var(--gutter) / 4); }
+    .agent-investigation__stage { grid-template-columns: minmax(0,3fr) minmax(0,9fr); gap: var(--space-12); }
+    .agent-investigation__stage--detail { grid-template-columns: minmax(0,9fr) minmax(0,3fr); }
+    .agent-investigation__stage--detail .agent-investigation__text { grid-column: 2; grid-row: 1; }
+    .agent-investigation__stage--detail .agent-plate { grid-column: 1; grid-row: 1; }
+    .agent-reading { grid-template-columns: minmax(0,4fr) minmax(0,8fr); column-gap: var(--space-12); }
+    .agent-reading__label { grid-column: 1 / -1; }
+    .agent-reading__proof { max-inline-size: min(var(--measure-text), calc(100svh - var(--space-32) * 2)); justify-self: center; inline-size: 100%; }
+    .agent-reading__markers { display: flex; gap: var(--space-4); }
+    .agent-reading__markers > span { display: flex; align-items: baseline; gap: var(--space-2); flex: 1; padding-block-start: var(--space-3); border-block-start: var(--border-width) solid var(--border-strong); color: var(--text-subtle); }
+    .agent-reading__markers > span > span { max-inline-size: 16ch; }
+    .agent-reading.is-reading .agent-reading__proof { position: sticky; inset-block-start: var(--space-8); }
+    .agent-reading.is-reading .agent-reading__stages { align-self: stretch; }
+    .agent-reading.is-reading .agent-reading__stages li { min-block-size: calc(var(--space-32) * 2); align-content: center; }
+    .agent-reading [data-current='true'] { border-color: var(--text-link); }
+    .agent-reading [data-current='true'] > .agent-reading__number, .agent-reading__markers > [data-current='true'] { color: var(--text-link); }
+    .agent-autonomy { grid-template-columns: minmax(0,3fr) minmax(0,9fr); gap: var(--space-12); }
+    .agent-autonomy__quality { grid-column: 1 / -1; }
+    .agent-outcome { grid-template-columns: minmax(0,7fr) minmax(0,5fr); gap: var(--space-16); }
   }
 </style>

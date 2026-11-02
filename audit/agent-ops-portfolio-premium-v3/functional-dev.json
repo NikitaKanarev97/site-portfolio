@@ -1,0 +1,424 @@
+{
+  "checks": [
+    {
+      "name": "en desktop reading enabled",
+      "pass": true
+    },
+    {
+      "name": "en scroll forward/reverse 0",
+      "pass": true,
+      "data": {
+        "active": "0"
+      }
+    },
+    {
+      "name": "en scroll forward/reverse 1",
+      "pass": true,
+      "data": {
+        "active": "1"
+      }
+    },
+    {
+      "name": "en scroll forward/reverse 2",
+      "pass": true,
+      "data": {
+        "active": "2"
+      }
+    },
+    {
+      "name": "en scroll forward/reverse 1",
+      "pass": true,
+      "data": {
+        "active": "1"
+      }
+    },
+    {
+      "name": "en scroll forward/reverse 0",
+      "pass": true,
+      "data": {
+        "active": "0"
+      }
+    },
+    {
+      "name": "en complete sticky proof fits",
+      "pass": true,
+      "data": {
+        "height": 785,
+        "viewport": 900,
+        "position": "sticky"
+      }
+    },
+    {
+      "name": "en keyboard focus visible",
+      "pass": true,
+      "data": {
+        "style": "solid",
+        "width": "2px"
+      }
+    },
+    {
+      "name": "en image zoom opens",
+      "pass": true
+    },
+    {
+      "name": "en zoom uses correct locale",
+      "pass": true,
+      "data": {
+        "zoomsrc": "http://127.0.0.1:4405/media/rebuild/agent-ops/v2/en/approval-task-desktop.webp"
+      }
+    },
+    {
+      "name": "en focus remains in zoom",
+      "pass": true
+    },
+    {
+      "name": "en Escape closes and returns focus",
+      "pass": true
+    },
+    {
+      "name": "en full policy inspection",
+      "pass": true
+    },
+    {
+      "name": "en native quality disclosure",
+      "pass": true
+    },
+    {
+      "name": "en internal link /work/partner-portal",
+      "pass": true
+    },
+    {
+      "name": "en external links labelled and protected",
+      "pass": true
+    },
+    {
+      "name": "en reduce cleanup 0",
+      "pass": true
+    },
+    {
+      "name": "en preference restore 0",
+      "pass": true
+    },
+    {
+      "name": "en reduce cleanup 1",
+      "pass": true
+    },
+    {
+      "name": "en preference restore 1",
+      "pass": true
+    },
+    {
+      "name": "en reduce cleanup 2",
+      "pass": true
+    },
+    {
+      "name": "en preference restore 2",
+      "pass": true
+    },
+    {
+      "name": "en tablet resize no overflow",
+      "pass": true
+    },
+    {
+      "name": "en mobile reading stays native",
+      "pass": true
+    },
+    {
+      "name": "en mobile zoom native asset",
+      "pass": true
+    },
+    {
+      "name": "en direct anchor",
+      "pass": true,
+      "data": {
+        "anchor": 31.59375
+      }
+    },
+    {
+      "name": "en Astro route cleanup",
+      "pass": true
+    },
+    {
+      "name": "en browser back restores reading",
+      "pass": true,
+      "data": {
+        "readingY": 6101,
+        "backY": 6101
+      }
+    },
+    {
+      "name": "en no duplicate scene",
+      "pass": true,
+      "data": {
+        "triggers": 1,
+        "reading": {
+          "observing": false,
+          "y": null
+        },
+        "focusScenes": [],
+        "pins": 0,
+        "marquees": [],
+        "duplicateScenes": 0
+      }
+    },
+    {
+      "name": "en 1440 reduce complete",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "reading": false,
+        "hidden": 0,
+        "images": 0
+      }
+    },
+    {
+      "name": "en 1440 no-js complete",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "reading": false,
+        "hidden": 0,
+        "images": 0
+      }
+    },
+    {
+      "name": "en 1440 no-JS disclosure works",
+      "pass": true
+    },
+    {
+      "name": "en 360 reduce complete",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "reading": false,
+        "hidden": 0,
+        "images": 0
+      }
+    },
+    {
+      "name": "en 360 no-js complete",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "reading": false,
+        "hidden": 0,
+        "images": 0
+      }
+    },
+    {
+      "name": "en 360 no-JS disclosure works",
+      "pass": true
+    },
+    {
+      "name": "ru desktop reading enabled",
+      "pass": true
+    },
+    {
+      "name": "ru scroll forward/reverse 0",
+      "pass": true,
+      "data": {
+        "active": "0"
+      }
+    },
+    {
+      "name": "ru scroll forward/reverse 1",
+      "pass": true,
+      "data": {
+        "active": "1"
+      }
+    },
+    {
+      "name": "ru scroll forward/reverse 2",
+      "pass": true,
+      "data": {
+        "active": "2"
+      }
+    },
+    {
+      "name": "ru scroll forward/reverse 1",
+      "pass": true,
+      "data": {
+        "active": "1"
+      }
+    },
+    {
+      "name": "ru scroll forward/reverse 0",
+      "pass": true,
+      "data": {
+        "active": "0"
+      }
+    },
+    {
+      "name": "ru complete sticky proof fits",
+      "pass": true,
+      "data": {
+        "height": 830.96875,
+        "viewport": 900,
+        "position": "sticky"
+      }
+    },
+    {
+      "name": "ru keyboard focus visible",
+      "pass": true,
+      "data": {
+        "style": "solid",
+        "width": "2px"
+      }
+    },
+    {
+      "name": "ru image zoom opens",
+      "pass": true
+    },
+    {
+      "name": "ru zoom uses correct locale",
+      "pass": true,
+      "data": {
+        "zoomsrc": "http://127.0.0.1:4405/media/rebuild/agent-ops/v2/ru/approval-task-desktop.webp"
+      }
+    },
+    {
+      "name": "ru focus remains in zoom",
+      "pass": true
+    },
+    {
+      "name": "ru Escape closes and returns focus",
+      "pass": true
+    },
+    {
+      "name": "ru full policy inspection",
+      "pass": true
+    },
+    {
+      "name": "ru native quality disclosure",
+      "pass": true
+    },
+    {
+      "name": "ru internal link /ru/work/partner-portal",
+      "pass": true
+    },
+    {
+      "name": "ru external links labelled and protected",
+      "pass": true
+    },
+    {
+      "name": "ru reduce cleanup 0",
+      "pass": true
+    },
+    {
+      "name": "ru preference restore 0",
+      "pass": true
+    },
+    {
+      "name": "ru reduce cleanup 1",
+      "pass": true
+    },
+    {
+      "name": "ru preference restore 1",
+      "pass": true
+    },
+    {
+      "name": "ru reduce cleanup 2",
+      "pass": true
+    },
+    {
+      "name": "ru preference restore 2",
+      "pass": true
+    },
+    {
+      "name": "ru tablet resize no overflow",
+      "pass": true
+    },
+    {
+      "name": "ru mobile reading stays native",
+      "pass": true
+    },
+    {
+      "name": "ru mobile zoom native asset",
+      "pass": true
+    },
+    {
+      "name": "ru direct anchor",
+      "pass": true,
+      "data": {
+        "anchor": 32.15625
+      }
+    },
+    {
+      "name": "ru Astro route cleanup",
+      "pass": true
+    },
+    {
+      "name": "ru browser back restores reading",
+      "pass": true,
+      "data": {
+        "readingY": 6287,
+        "backY": 6287
+      }
+    },
+    {
+      "name": "ru no duplicate scene",
+      "pass": true,
+      "data": {
+        "triggers": 1,
+        "reading": {
+          "observing": false,
+          "y": null
+        },
+        "focusScenes": [],
+        "pins": 0,
+        "marquees": [],
+        "duplicateScenes": 0
+      }
+    },
+    {
+      "name": "ru 1440 reduce complete",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "reading": false,
+        "hidden": 0,
+        "images": 0
+      }
+    },
+    {
+      "name": "ru 1440 no-js complete",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "reading": false,
+        "hidden": 0,
+        "images": 0
+      }
+    },
+    {
+      "name": "ru 1440 no-JS disclosure works",
+      "pass": true
+    },
+    {
+      "name": "ru 360 reduce complete",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "reading": false,
+        "hidden": 0,
+        "images": 0
+      }
+    },
+    {
+      "name": "ru 360 no-js complete",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "reading": false,
+        "hidden": 0,
+        "images": 0
+      }
+    },
+    {
+      "name": "ru 360 no-JS disclosure works",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "pass": true
+}

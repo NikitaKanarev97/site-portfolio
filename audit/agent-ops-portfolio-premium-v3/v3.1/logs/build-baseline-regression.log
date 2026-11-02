@@ -1,0 +1,126 @@
+
+> site-portfolio@0.1.0 build
+> astro build
+
+18:24:12 [content] Syncing content
+18:24:12 [content] Synced content
+18:24:12 [types] Generated 214ms
+18:24:12 [build] output: "static"
+18:24:12 [build] mode: "static"
+18:24:12 [build] directory: D:\Claude-projects\Site-portfolio-agent-premium-v3\.tmp\v31-baseline\dist\
+18:24:12 [build] Collecting build info...
+18:24:12 [build] ✓ Completed in 242ms.
+18:24:12 [build] Building static entrypoints...
+18:24:16 [vite] ✓ built in 4.14s
+18:24:16 [build] ✓ Completed in 4.18s.
+
+ building client (vite)
+18:24:16 [vite] transforming...
+18:24:17 [vite] ✓ 33 modules transformed.
+18:24:17 [vite] rendering chunks...
+18:24:17 [vite] computing gzip size...
+18:24:17 [vite] dist/_astro/page.IvKoM_B8.js                                                 0.05 kB │ gzip:  0.07 kB
+18:24:17 [vite] dist/_astro/index.BbWtjHji.js                                                2.30 kB │ gzip:  1.05 kB
+18:24:17 [vite] dist/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js   13.11 kB │ gzip:  4.54 kB
+18:24:17 [vite] dist/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CMYEAV7r.js    153.03 kB │ gzip: 59.16 kB
+18:24:17 [vite] ✓ built in 873ms
+
+ generating static routes
+18:24:17 ▶ src/pages/404.astro
+18:24:17   └─ /404.html (+19ms)
+18:24:17 ▶ src/pages/500.astro
+18:24:17   └─ /500.html (+7ms)
+18:24:17 ▶ src/pages/about.astro
+18:24:17   └─ /about/index.html (+11ms)
+18:24:17 ▶ src/pages/index.astro
+18:24:17   └─ /index.html (+46ms)
+18:24:17 ▶ src/pages/kit.astro
+18:24:17   └─ /kit/index.html (+176ms)
+18:24:18 λ src/pages/og/[card].png.ts
+18:24:18   ├─ /og/work-agent-ops-console-v2.png (+307ms)
+18:24:18   ├─ /og/work-agent-ops-console-v2-onest.png (+237ms)
+18:24:18   ├─ /og/work-agent-ops-console-v2-ru.png (+261ms)
+18:24:18   ├─ /og/work-agent-ops-console-v2-ru-onest.png (+227ms)
+18:24:19   ├─ /og/default.png (+219ms)
+18:24:19   ├─ /og/default-onest.png (+198ms)
+18:24:19   ├─ /og/about.png (+217ms)
+18:24:19   ├─ /og/about-onest.png (+200ms)
+18:24:19   ├─ /og/work-agent-ops-console.png (+210ms)
+18:24:20   ├─ /og/work-agent-ops-console-onest.png (+215ms)
+18:24:20   ├─ /og/work-partner-portal.png (+246ms)
+18:24:20   ├─ /og/work-partner-portal-onest.png (+258ms)
+18:24:20   ├─ /og/work-learn.png (+130ms)
+18:24:21   ├─ /og/work-learn-onest.png (+151ms)
+18:24:21   ├─ /og/work-vet-clinic.png (+136ms)
+18:24:21   ├─ /og/work-vet-clinic-onest.png (+186ms)
+18:24:21   ├─ /og/work-pawly.png (+166ms)
+18:24:21   ├─ /og/work-pawly-onest.png (+183ms)
+18:24:21   ├─ /og/default-ru.png (+166ms)
+18:24:22   ├─ /og/default-ru-onest.png (+146ms)
+18:24:22   ├─ /og/about-ru.png (+188ms)
+18:24:22   ├─ /og/about-ru-onest.png (+197ms)
+18:24:22   ├─ /og/work-agent-ops-console-ru.png (+188ms)
+18:24:22   ├─ /og/work-agent-ops-console-ru-onest.png (+181ms)
+18:24:22   ├─ /og/work-partner-portal-ru.png (+169ms)
+18:24:23   ├─ /og/work-partner-portal-ru-onest.png (+192ms)
+18:24:23   ├─ /og/work-learn-ru.png (+201ms)
+18:24:23   ├─ /og/work-learn-ru-onest.png (+164ms)
+18:24:23   ├─ /og/work-vet-clinic-ru.png (+207ms)
+18:24:23   ├─ /og/work-vet-clinic-ru-onest.png (+164ms)
+18:24:23   ├─ /og/work-pawly-ru.png (+137ms)
+18:24:24   └─ /og/work-pawly-ru-onest.png (+180ms)
+18:24:24 ▶ src/pages/preview/agent-ops-pilot.astro
+18:24:24   └─ /preview/agent-ops-pilot/index.html (+49ms)
+18:24:24 ▶ src/pages/preview/agent-ops-rebuild/[locale].astro
+18:24:24   ├─ /preview/agent-ops-rebuild/en/index.html (+9ms)
+18:24:24   └─ /preview/agent-ops-rebuild/ru/index.html (+28ms)
+18:24:24 ▶ src/pages/preview/common/[locale]/[case].astro
+18:24:24   ├─ /preview/common/en/agent-ops/index.html (+9ms)
+18:24:24   ├─ /preview/common/en/partner-portal/index.html (+17ms)
+18:24:24   ├─ /preview/common/ru/agent-ops/index.html (+7ms)
+18:24:24   └─ /preview/common/ru/partner-portal/index.html (+12ms)
+18:24:24 ▶ src/pages/preview/common/index.astro
+18:24:24   └─ /preview/common/index.html (+3ms)
+18:24:24 ▶ src/pages/preview/film-common/[locale].astro
+18:24:24   ├─ /preview/film-common/en/index.html (+18ms)
+18:24:24   └─ /preview/film-common/ru/index.html (+18ms)
+18:24:24 ▶ src/pages/preview/learn-rebuild/[locale].astro
+18:24:24   ├─ /preview/learn-rebuild/en/index.html (+33ms)
+18:24:24   └─ /preview/learn-rebuild/ru/index.html (+42ms)
+18:24:24 ▶ src/pages/preview/partner-portal-pilot.astro
+18:24:24   └─ /preview/partner-portal-pilot/index.html (+5ms)
+18:24:24 ▶ src/pages/preview/partner-portal-rebuild/[locale].astro
+18:24:24   ├─ /preview/partner-portal-rebuild/en/index.html (+31ms)
+18:24:24   └─ /preview/partner-portal-rebuild/ru/index.html (+30ms)
+18:24:24 ▶ src/pages/preview/pawly-rebuild/[locale].astro
+18:24:24   ├─ /preview/pawly-rebuild/en/index.html (+36ms)
+18:24:24   └─ /preview/pawly-rebuild/ru/index.html (+38ms)
+18:24:24 ▶ src/pages/preview/vet-clinic-rebuild/[locale].astro
+18:24:24   ├─ /preview/vet-clinic-rebuild/en/index.html (+24ms)
+18:24:24   └─ /preview/vet-clinic-rebuild/ru/index.html (+29ms)
+18:24:24 λ src/pages/robots.txt.ts
+18:24:24   └─ /robots.txt (+1ms)
+18:24:24 ▶ src/pages/ru/404.astro
+18:24:24   └─ /ru/404/index.html (+4ms)
+18:24:24 ▶ src/pages/ru/about.astro
+18:24:24   └─ /ru/about/index.html (+5ms)
+18:24:24 ▶ src/pages/ru/index.astro
+18:24:24   └─ /ru/index.html (+9ms)
+18:24:24 ▶ src/pages/ru/work/[slug].astro
+18:24:24   ├─ /ru/work/agent-ops-console/index.html (+9ms)
+18:24:24   ├─ /ru/work/partner-portal/index.html (+7ms)
+18:24:24   ├─ /ru/work/learn/index.html (+9ms)
+18:24:24   ├─ /ru/work/vet-clinic/index.html (+11ms)
+18:24:24   └─ /ru/work/pawly/index.html (+17ms)
+18:24:24 λ src/pages/sitemap.xml.ts
+18:24:24   └─ /sitemap.xml (+2ms)
+18:24:24 ▶ src/pages/work/[slug].astro
+18:24:24   ├─ /work/agent-ops-console/index.html (+9ms)
+18:24:24   ├─ /work/partner-portal/index.html (+5ms)
+18:24:24   ├─ /work/learn/index.html (+9ms)
+18:24:24   ├─ /work/vet-clinic/index.html (+9ms)
+18:24:24   └─ /work/pawly/index.html (+9ms)
+18:24:24 ✓ Completed in 7.52s.
+
+18:24:24 [build] 37 page(s) built in 12.93s
+18:24:24 [build] Complete!
