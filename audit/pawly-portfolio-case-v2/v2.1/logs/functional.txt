@@ -1,0 +1,67 @@
+PASS en: one h1, chapters as h2 ["H1:Pawly","H2:A match needs a reason, not a rating.","H2:One walk, two different first questions.","H2:When a step fails, nothing is assumed.","H3:Marina can’t make it","H3:The return photo fails to send","H2:A selecte
+PASS en: document language en
+PASS en: chapter index links resolve to sections [["#choosing",true],["#handoff",true],["#exceptions",true],["#return",true],["#settlement",true]]
+PASS en: every case image has alt text [250,113,128,162,145,191,150,189,61,118,98,125,146,246,95,127]
+PASS en: all case media load []
+PASS en: no page errors []
+PASS en: keyboard reaches index links and screen links ["pawly-shot__frame","pawly-clock__link","pawly-clock__link","pawly-clock__link","pawly-clock__link","pawly-clock__link","pawly-shot__frame","pawly-shot__frame","pawly-shot__frame","pawly-shot__frame","pawly-shot__frame"
+PASS en: focus ring visible on every case stop []
+PASS en: focused element scrolled into view (its top edge visible) []
+PASS en: touch targets >= 44 px (index, CTA) [50,50,50,50,50,64]
+PASS en: index link scrolls to its chapter #return top 0px
+PASS en: screen opens in MediaZoom {"open":true,"src":"proof-selected-en.webp","natural":780}
+PASS en: Escape closes and focus returns to the screen link {"open":false,"focus":"pawly-shot__frame"}
+PASS en: contrast .pawly-stage__caption >= 4.5 [{"text":"14:05. The owner already has t","ratio":6.04,"size":"14px"}]
+PASS en: contrast .pawly-band .pawly-body >= 4.5 [{"text":"Only a received photo records ","ratio":6.04,"size":"18px"}]
+PASS en: contrast .pawly-band .pawly-shot__caption >= 4.5 [{"text":"A local draft. Return and earn","ratio":6.04,"size":"14px"},{"text":"Sent after the failed attempt.","ratio":6.04,"size":"14px"},{"text":"Two dated handovers. The expec","ratio":6.04,"size":"14px"}]
+PASS en: contrast .pawly-shot__caption >= 4.5 [{"text":"One recorded match for this sl","ratio":5.14,"size":"14px"},{"text":"Each of Baikal’s needs sits be","ratio":5.14,"size":"14px"},{"text":"No insurance, the two-hour can","ratio":5.14,"size":"14px"},{"text":"A l
+PASS en: contrast .pawly-label >= 4.5 [{"text":"13:20 · Choosing","ratio":5.14,"size":"14px"},{"text":"14:05 · Handoff","ratio":5.14,"size":"14px"},{"text":"Exceptions","ratio":5.14,"size":"14px"},{"text":"14:52 · Return","ratio":6.04,"size":"14px"},{"text":
+PASS en: contrast .pawly-clock__index >= 4.5 [{"text":"01","ratio":6.04,"size":"12px"},{"text":"02","ratio":6.04,"size":"12px"},{"text":"03","ratio":6.04,"size":"12px"},{"text":"04","ratio":6.04,"size":"12px"},{"text":"05","ratio":6.04,"size":"12px"}]
+PASS en: contrast .pawly-vocab__text >= 4.5 [{"text":"A time to plan around: 14:50.","ratio":6.04,"size":"14px"},{"text":"A photo on the walker’s phone.","ratio":6.04,"size":"14px"},{"text":"The photo arrived: 14:52.","ratio":6.04,"size":"14px"},{"text":"The repor
+PASS en: prototype CTA {"href":"https://pawly-fawn.vercel.app/app","target":"_blank","rel":"noopener"}
+PASS en: no forbidden status labels in text or meta null
+PASS en: 1440: screens at >= 0.79 of native (column 1280px), never enlarged {"min":0.93,"max":1,"column":1280}
+PASS en: 1024: screens at >= 0.79 of native (column 864px), never enlarged {"min":0.95,"max":1,"column":864}
+PASS en: 768: screens at >= 0.79 of native (column 672px), never enlarged {"min":1,"max":1,"column":672}
+PASS en: 390: screens at >= 0.79 of native (column 342px), never enlarged {"min":0.92,"max":1,"column":342}
+PASS en: 390: product screen inside the first viewport {"top":322,"visible":522}
+PASS en: 360: screens at >= 0.79 of native (column 312px), never enlarged {"min":0.84,"max":0.96,"column":312}
+PASS en: 360: product screen inside the first viewport {"top":322,"visible":478}
+PASS en: 320: screens at >= 0.69 of native (column 272px), never enlarged {"min":0.76,"max":0.87,"column":272}
+PASS en: 320: product screen inside the first viewport {"top":284,"visible":356}
+PASS en: no-JS: no motion element left hidden 0 hidden
+PASS en: motion on: every animated element settles visible []
+PASS ru: one h1, chapters as h2 ["H1:Pawly","H2:У подбора должно быть основание, а не ре","H2:Одна прогулка — два разных первых вопрос","H2:Если шаг не удался, сервис ничего не дод","H3:Марина не сможет прийти","H3:Фото возвращения не отправилось","H2:
+PASS ru: document language ru
+PASS ru: chapter index links resolve to sections [["#choosing",true],["#handoff",true],["#exceptions",true],["#return",true],["#settlement",true]]
+PASS ru: every case image has alt text [232,99,150,133,151,219,172,194,69,124,114,134,132,269,88,118]
+PASS ru: all case media load []
+PASS ru: no page errors []
+PASS ru: keyboard reaches index links and screen links ["pawly-shot__frame","pawly-clock__link","pawly-clock__link","pawly-clock__link","pawly-clock__link","pawly-clock__link","pawly-shot__frame","pawly-shot__frame","pawly-shot__frame","pawly-shot__frame","pawly-shot__frame"
+PASS ru: focus ring visible on every case stop []
+PASS ru: focused element scrolled into view (its top edge visible) []
+PASS ru: touch targets >= 44 px (index, CTA) [50,50,50,50,50,64]
+PASS ru: index link scrolls to its chapter #return top 0px
+PASS ru: screen opens in MediaZoom {"open":true,"src":"proof-selected-ru.webp","natural":780}
+PASS ru: Escape closes and focus returns to the screen link {"open":false,"focus":"pawly-shot__frame"}
+PASS ru: contrast .pawly-stage__caption >= 4.5 [{"text":"14:05. Фото передачи у владель","ratio":6.04,"size":"14px"}]
+PASS ru: contrast .pawly-band .pawly-body >= 4.5 [{"text":"Возвращение фиксирует только п","ratio":6.04,"size":"18px"}]
+PASS ru: contrast .pawly-band .pawly-shot__caption >= 4.5 [{"text":"Локальный черновик. Возвращени","ratio":6.04,"size":"14px"},{"text":"Отправлено после неудачной поп","ratio":6.04,"size":"14px"},{"text":"Две передачи с временем. Ожида","ratio":6.04,"size":"14px"}]
+PASS ru: contrast .pawly-shot__caption >= 4.5 [{"text":"На это время подходит один исп","ratio":5.14,"size":"14px"},{"text":"Каждая потребность Байкала сто","ratio":5.14,"size":"14px"},{"text":"Страховки нет, условия отмены ","ratio":5.14,"size":"14px"},{"text":"Лок
+PASS ru: contrast .pawly-label >= 4.5 [{"text":"13:20 · Выбор","ratio":5.14,"size":"14px"},{"text":"14:05 · Передача","ratio":5.14,"size":"14px"},{"text":"Сбои","ratio":5.14,"size":"14px"},{"text":"14:52 · Возвращение","ratio":6.04,"size":"14px"},{"text":"Ра
+PASS ru: contrast .pawly-clock__index >= 4.5 [{"text":"01","ratio":6.04,"size":"12px"},{"text":"02","ratio":6.04,"size":"12px"},{"text":"03","ratio":6.04,"size":"12px"},{"text":"04","ratio":6.04,"size":"12px"},{"text":"05","ratio":6.04,"size":"12px"}]
+PASS ru: contrast .pawly-vocab__text >= 4.5 [{"text":"Время, на которое можно оперет","ratio":6.04,"size":"14px"},{"text":"Фото на телефоне выгульщика.","ratio":6.04,"size":"14px"},{"text":"Фото дошло: 14:52.","ratio":6.04,"size":"14px"},{"text":"Отчёт может сказа
+PASS ru: prototype CTA {"href":"https://pawly-fawn.vercel.app/ru/app","target":"_blank","rel":"noopener"}
+PASS ru: no forbidden status labels in text or meta null
+PASS ru: 1440: screens at >= 0.79 of native (column 1280px), never enlarged {"min":0.93,"max":1,"column":1280}
+PASS ru: 1024: screens at >= 0.79 of native (column 864px), never enlarged {"min":0.95,"max":1,"column":864}
+PASS ru: 768: screens at >= 0.79 of native (column 672px), never enlarged {"min":1,"max":1,"column":672}
+PASS ru: 390: screens at >= 0.79 of native (column 342px), never enlarged {"min":0.92,"max":1,"column":342}
+PASS ru: 390: product screen inside the first viewport {"top":322,"visible":522}
+PASS ru: 360: screens at >= 0.79 of native (column 312px), never enlarged {"min":0.84,"max":0.96,"column":312}
+PASS ru: 360: product screen inside the first viewport {"top":322,"visible":478}
+PASS ru: 320: screens at >= 0.69 of native (column 272px), never enlarged {"min":0.76,"max":0.87,"column":272}
+PASS ru: 320: product screen inside the first viewport {"top":284,"visible":356}
+PASS ru: no-JS: no motion element left hidden 0 hidden
+PASS ru: motion on: every animated element settles visible []
+66/66 pass

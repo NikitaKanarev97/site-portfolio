@@ -1,0 +1,4424 @@
+[
+ {
+  "name": "en-1440",
+  "route": "/work/pawly/",
+  "width": 1440,
+  "height": 900,
+  "errors": [],
+  "docHeight": 9238,
+  "overflowX": 0,
+  "brokenImages": [
+   "http://127.0.0.1:4393/work/pawly/"
+  ],
+  "sections": [
+   {
+    "id": "case-pawly",
+    "top": 80,
+    "height": 1286
+   },
+   {
+    "id": "choosing",
+    "top": 1597,
+    "height": 1159
+   },
+   {
+    "id": "handoff",
+    "top": 2885,
+    "height": 813
+   },
+   {
+    "id": "exceptions",
+    "top": 3826,
+    "height": 975
+   },
+   {
+    "id": "return",
+    "top": 4929,
+    "height": 1304
+   },
+   {
+    "id": "settlement",
+    "top": 6361,
+    "height": 677
+   },
+   {
+    "id": "outcome",
+    "top": 7166,
+    "height": 637
+   },
+   {
+    "id": "contact",
+    "top": 8660,
+    "height": 299
+   }
+  ],
+  "shots": [
+   {
+    "src": "/media/pawly-case-v2/hero-status-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/pickup-photo.webp",
+    "rendered": 520,
+    "natural": 900
+   },
+   {
+    "src": "/media/pawly-case-v2/match-list-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-profile-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-review-en.webp",
+    "rendered": 340,
+    "natural": 684
+   },
+   {
+    "src": "/media/pawly-case-v2/role-owner-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/role-walker-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-reserve-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-failed-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-selected-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-confirmed-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-report-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-payment-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-earnings-en.webp",
+    "rendered": 388,
+    "natural": 780
+   }
+  ],
+  "media": [
+   {
+    "src": "hero-status-en.webp",
+    "section": "hero",
+    "img": {
+     "x": 818,
+     "y": 436,
+     "w": 388,
+     "h": 750
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "pickup-photo.webp",
+    "section": "hero",
+    "img": {
+     "x": 233,
+     "y": 435,
+     "w": 520,
+     "h": 520
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "match-list-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 81,
+     "y": 1904,
+     "w": 388,
+     "h": 522
+    },
+    "label": {
+     "x": 80,
+     "y": 1869,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 80,
+     "y": 2439,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-profile-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 526,
+     "y": 1904,
+     "w": 388,
+     "h": 573
+    },
+    "label": {
+     "x": 525,
+     "y": 1869,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 525,
+     "y": 2490,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-review-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 971,
+     "y": 1904,
+     "w": 340,
+     "h": 655
+    },
+    "label": {
+     "x": 970,
+     "y": 1869,
+     "w": 342,
+     "h": 22
+    },
+    "caption": {
+     "x": 970,
+     "y": 2572,
+     "w": 335,
+     "h": 67
+    }
+   },
+   {
+    "src": "role-owner-en.webp",
+    "section": "handoff",
+    "img": {
+     "x": 81,
+     "y": 3128,
+     "w": 388,
+     "h": 568
+    },
+    "label": {
+     "x": 80,
+     "y": 3093,
+     "w": 390,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "role-walker-en.webp",
+    "section": "handoff",
+    "img": {
+     "x": 971,
+     "y": 3128,
+     "w": 388,
+     "h": 545
+    },
+    "label": {
+     "x": 970,
+     "y": 3093,
+     "w": 390,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "branch-reserve-en.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 81,
+     "y": 4214,
+     "w": 388,
+     "h": 515
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "branch-failed-en.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 733,
+     "y": 4189,
+     "w": 388,
+     "h": 462
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "proof-selected-en.webp",
+    "section": "return",
+    "img": {
+     "x": 81,
+     "y": 5396,
+     "w": 388,
+     "h": 436
+    },
+    "label": {
+     "x": 80,
+     "y": 5360,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 80,
+     "y": 5845,
+     "w": 335,
+     "h": 22
+    }
+   },
+   {
+    "src": "proof-confirmed-en.webp",
+    "section": "return",
+    "img": {
+     "x": 526,
+     "y": 5396,
+     "w": 388,
+     "h": 479
+    },
+    "label": {
+     "x": 525,
+     "y": 5360,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 525,
+     "y": 5887,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-report-en.webp",
+    "section": "return",
+    "img": {
+     "x": 971,
+     "y": 5396,
+     "w": 388,
+     "h": 715
+    },
+    "label": {
+     "x": 970,
+     "y": 5360,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 970,
+     "y": 6124,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "settle-payment-en.webp",
+    "section": "settlement",
+    "img": {
+     "x": 533,
+     "y": 6636,
+     "w": 388,
+     "h": 283
+    },
+    "label": {
+     "x": 532,
+     "y": 6601,
+     "w": 390,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "settle-earnings-en.webp",
+    "section": "settlement",
+    "img": {
+     "x": 971,
+     "y": 6636,
+     "w": 388,
+     "h": 401
+    },
+    "label": {
+     "x": 970,
+     "y": 6601,
+     "w": 390,
+     "h": 22
+    },
+    "caption": null
+   }
+  ],
+  "firstViewportImages": 2
+ },
+ {
+  "name": "en-1024",
+  "route": "/work/pawly/",
+  "width": 1024,
+  "height": 768,
+  "errors": [],
+  "docHeight": 10980,
+  "overflowX": 0,
+  "brokenImages": [
+   "http://127.0.0.1:4393/work/pawly/"
+  ],
+  "sections": [
+   {
+    "id": "case-pawly",
+    "top": 80,
+    "height": 1187
+   },
+   {
+    "id": "choosing",
+    "top": 1499,
+    "height": 1857
+   },
+   {
+    "id": "handoff",
+    "top": 3484,
+    "height": 1123
+   },
+   {
+    "id": "exceptions",
+    "top": 4734,
+    "height": 975
+   },
+   {
+    "id": "return",
+    "top": 5838,
+    "height": 1908
+   },
+   {
+    "id": "settlement",
+    "top": 7873,
+    "height": 847
+   },
+   {
+    "id": "outcome",
+    "top": 8849,
+    "height": 697
+   },
+   {
+    "id": "contact",
+    "top": 10402,
+    "height": 299
+   }
+  ],
+  "shots": [
+   {
+    "src": "/media/pawly-case-v2/hero-status-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/pickup-photo.webp",
+    "rendered": 314,
+    "natural": 900
+   },
+   {
+    "src": "/media/pawly-case-v2/match-list-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-profile-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-review-en.webp",
+    "rendered": 340,
+    "natural": 684
+   },
+   {
+    "src": "/media/pawly-case-v2/role-owner-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/role-walker-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-reserve-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-failed-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-selected-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-confirmed-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-report-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-payment-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-earnings-en.webp",
+    "rendered": 388,
+    "natural": 780
+   }
+  ],
+  "media": [
+   {
+    "src": "hero-status-en.webp",
+    "section": "hero",
+    "img": {
+     "x": 507,
+     "y": 436,
+     "w": 388,
+     "h": 750
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "pickup-photo.webp",
+    "section": "hero",
+    "img": {
+     "x": 128,
+     "y": 435,
+     "w": 314,
+     "h": 314
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "match-list-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 81,
+     "y": 1806,
+     "w": 388,
+     "h": 522
+    },
+    "label": {
+     "x": 80,
+     "y": 1770,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 80,
+     "y": 2341,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-profile-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 525,
+     "y": 1806,
+     "w": 388,
+     "h": 573
+    },
+    "label": {
+     "x": 524,
+     "y": 1770,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 524,
+     "y": 2391,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-review-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 81,
+     "y": 2503,
+     "w": 340,
+     "h": 655
+    },
+    "label": {
+     "x": 80,
+     "y": 2468,
+     "w": 342,
+     "h": 22
+    },
+    "caption": {
+     "x": 80,
+     "y": 3171,
+     "w": 335,
+     "h": 67
+    }
+   },
+   {
+    "src": "role-owner-en.webp",
+    "section": "handoff",
+    "img": {
+     "x": 81,
+     "y": 3728,
+     "w": 388,
+     "h": 568
+    },
+    "label": {
+     "x": 80,
+     "y": 3692,
+     "w": 390,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "role-walker-en.webp",
+    "section": "handoff",
+    "img": {
+     "x": 525,
+     "y": 3728,
+     "w": 388,
+     "h": 545
+    },
+    "label": {
+     "x": 524,
+     "y": 3692,
+     "w": 390,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "branch-reserve-en.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 81,
+     "y": 5123,
+     "w": 388,
+     "h": 515
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "branch-failed-en.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 525,
+     "y": 5123,
+     "w": 388,
+     "h": 462
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "proof-selected-en.webp",
+    "section": "return",
+    "img": {
+     "x": 81,
+     "y": 6305,
+     "w": 388,
+     "h": 436
+    },
+    "label": {
+     "x": 80,
+     "y": 6269,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 80,
+     "y": 6753,
+     "w": 335,
+     "h": 22
+    }
+   },
+   {
+    "src": "proof-confirmed-en.webp",
+    "section": "return",
+    "img": {
+     "x": 525,
+     "y": 6305,
+     "w": 388,
+     "h": 479
+    },
+    "label": {
+     "x": 524,
+     "y": 6269,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 524,
+     "y": 6796,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-report-en.webp",
+    "section": "return",
+    "img": {
+     "x": 81,
+     "y": 6908,
+     "w": 388,
+     "h": 715
+    },
+    "label": {
+     "x": 80,
+     "y": 6873,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 80,
+     "y": 7637,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "settle-payment-en.webp",
+    "section": "settlement",
+    "img": {
+     "x": 81,
+     "y": 8319,
+     "w": 388,
+     "h": 283
+    },
+    "label": {
+     "x": 80,
+     "y": 8283,
+     "w": 390,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "settle-earnings-en.webp",
+    "section": "settlement",
+    "img": {
+     "x": 525,
+     "y": 8319,
+     "w": 388,
+     "h": 401
+    },
+    "label": {
+     "x": 524,
+     "y": 8283,
+     "w": 390,
+     "h": 22
+    },
+    "caption": null
+   }
+  ],
+  "firstViewportImages": 2
+ },
+ {
+  "name": "en-768",
+  "route": "/work/pawly/",
+  "width": 768,
+  "height": 1024,
+  "errors": [],
+  "docHeight": 10308,
+  "overflowX": 0,
+  "brokenImages": [
+   "http://127.0.0.1:4393/work/pawly/"
+  ],
+  "sections": [
+   {
+    "id": "case-pawly",
+    "top": 80,
+    "height": 1200
+   },
+   {
+    "id": "choosing",
+    "top": 1552,
+    "height": 1771
+   },
+   {
+    "id": "handoff",
+    "top": 3420,
+    "height": 1124
+   },
+   {
+    "id": "exceptions",
+    "top": 4639,
+    "height": 960
+   },
+   {
+    "id": "return",
+    "top": 5695,
+    "height": 1751
+   },
+   {
+    "id": "settlement",
+    "top": 7542,
+    "height": 825
+   },
+   {
+    "id": "outcome",
+    "top": 8463,
+    "height": 749
+   },
+   {
+    "id": "contact",
+    "top": 9795,
+    "height": 297
+   }
+  ],
+  "shots": [
+   {
+    "src": "/media/pawly-case-v2/hero-status-en.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/pickup-photo.webp",
+    "rendered": 202,
+    "natural": 900
+   },
+   {
+    "src": "/media/pawly-case-v2/match-list-en.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-profile-en.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-review-en.webp",
+    "rendered": 322,
+    "natural": 684
+   },
+   {
+    "src": "/media/pawly-case-v2/role-owner-en.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/role-walker-en.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-reserve-en.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-failed-en.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-selected-en.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-confirmed-en.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-report-en.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-payment-en.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-earnings-en.webp",
+    "rendered": 322,
+    "natural": 780
+   }
+  ],
+  "media": [
+   {
+    "src": "hero-status-en.webp",
+    "section": "hero",
+    "img": {
+     "x": 307,
+     "y": 473,
+     "w": 388,
+     "h": 750
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "pickup-photo.webp",
+    "section": "hero",
+    "img": {
+     "x": 72,
+     "y": 472,
+     "w": 202,
+     "h": 202
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "match-list-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 49,
+     "y": 1906,
+     "w": 322,
+     "h": 433
+    },
+    "label": {
+     "x": 48,
+     "y": 1870,
+     "w": 324,
+     "h": 22
+    },
+    "caption": {
+     "x": 48,
+     "y": 2352,
+     "w": 324,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-profile-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 397,
+     "y": 1906,
+     "w": 322,
+     "h": 475
+    },
+    "label": {
+     "x": 396,
+     "y": 1870,
+     "w": 324,
+     "h": 22
+    },
+    "caption": {
+     "x": 396,
+     "y": 2394,
+     "w": 324,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-review-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 49,
+     "y": 2506,
+     "w": 322,
+     "h": 620
+    },
+    "label": {
+     "x": 48,
+     "y": 2471,
+     "w": 324,
+     "h": 22
+    },
+    "caption": {
+     "x": 48,
+     "y": 3139,
+     "w": 324,
+     "h": 67
+    }
+   },
+   {
+    "src": "role-owner-en.webp",
+    "section": "handoff",
+    "img": {
+     "x": 49,
+     "y": 3710,
+     "w": 322,
+     "h": 471
+    },
+    "label": {
+     "x": 48,
+     "y": 3675,
+     "w": 324,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "role-walker-en.webp",
+    "section": "handoff",
+    "img": {
+     "x": 397,
+     "y": 3710,
+     "w": 322,
+     "h": 452
+    },
+    "label": {
+     "x": 396,
+     "y": 3675,
+     "w": 324,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "branch-reserve-en.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 49,
+     "y": 5100,
+     "w": 322,
+     "h": 428
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "branch-failed-en.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 397,
+     "y": 5074,
+     "w": 322,
+     "h": 383
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "proof-selected-en.webp",
+    "section": "return",
+    "img": {
+     "x": 49,
+     "y": 6208,
+     "w": 322,
+     "h": 362
+    },
+    "label": {
+     "x": 48,
+     "y": 6173,
+     "w": 324,
+     "h": 22
+    },
+    "caption": {
+     "x": 48,
+     "y": 6583,
+     "w": 324,
+     "h": 22
+    }
+   },
+   {
+    "src": "proof-confirmed-en.webp",
+    "section": "return",
+    "img": {
+     "x": 397,
+     "y": 6208,
+     "w": 322,
+     "h": 397
+    },
+    "label": {
+     "x": 396,
+     "y": 6173,
+     "w": 324,
+     "h": 22
+    },
+    "caption": {
+     "x": 396,
+     "y": 6618,
+     "w": 324,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-report-en.webp",
+    "section": "return",
+    "img": {
+     "x": 49,
+     "y": 6731,
+     "w": 322,
+     "h": 594
+    },
+    "label": {
+     "x": 48,
+     "y": 6695,
+     "w": 324,
+     "h": 22
+    },
+    "caption": {
+     "x": 48,
+     "y": 7337,
+     "w": 324,
+     "h": 45
+    }
+   },
+   {
+    "src": "settle-payment-en.webp",
+    "section": "settlement",
+    "img": {
+     "x": 49,
+     "y": 8034,
+     "w": 322,
+     "h": 234
+    },
+    "label": {
+     "x": 48,
+     "y": 7998,
+     "w": 324,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "settle-earnings-en.webp",
+    "section": "settlement",
+    "img": {
+     "x": 397,
+     "y": 8034,
+     "w": 322,
+     "h": 333
+    },
+    "label": {
+     "x": 396,
+     "y": 7998,
+     "w": 324,
+     "h": 22
+    },
+    "caption": null
+   }
+  ],
+  "firstViewportImages": 2
+ },
+ {
+  "name": "en-390",
+  "route": "/work/pawly/",
+  "width": 390,
+  "height": 844,
+  "errors": [],
+  "docHeight": 14153,
+  "overflowX": 0,
+  "brokenImages": [
+   "http://127.0.0.1:4393/work/pawly/"
+  ],
+  "sections": [
+   {
+    "id": "case-pawly",
+    "top": 80,
+    "height": 1428
+   },
+   {
+    "id": "choosing",
+    "top": 1828,
+    "height": 2486
+   },
+   {
+    "id": "handoff",
+    "top": 4410,
+    "height": 1858
+   },
+   {
+    "id": "exceptions",
+    "top": 6365,
+    "height": 1652
+   },
+   {
+    "id": "return",
+    "top": 8113,
+    "height": 2439
+   },
+   {
+    "id": "settlement",
+    "top": 10648,
+    "height": 1323
+   },
+   {
+    "id": "outcome",
+    "top": 12067,
+    "height": 984
+   },
+   {
+    "id": "contact",
+    "top": 13618,
+    "height": 319
+   }
+  ],
+  "shots": [
+   {
+    "src": "/media/pawly-case-v2/hero-status-en.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-list-en.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-profile-en.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-review-en.webp",
+    "rendered": 340,
+    "natural": 684
+   },
+   {
+    "src": "/media/pawly-case-v2/role-owner-en.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/role-walker-en.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-reserve-en.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-failed-en.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-selected-en.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-confirmed-en.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-report-en.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-payment-en.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-earnings-en.webp",
+    "rendered": 340,
+    "natural": 780
+   }
+  ],
+  "media": [
+   {
+    "src": "hero-status-en.webp",
+    "section": "hero",
+    "img": {
+     "x": 25,
+     "y": 299,
+     "w": 340,
+     "h": 657
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "match-list-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 2226,
+     "w": 340,
+     "h": 458
+    },
+    "label": {
+     "x": 24,
+     "y": 2191,
+     "w": 342,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 2697,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-profile-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 2809,
+     "w": 340,
+     "h": 502
+    },
+    "label": {
+     "x": 24,
+     "y": 2774,
+     "w": 342,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 3324,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-review-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 3436,
+     "w": 340,
+     "h": 655
+    },
+    "label": {
+     "x": 24,
+     "y": 3401,
+     "w": 342,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 4104,
+     "w": 335,
+     "h": 67
+    }
+   },
+   {
+    "src": "role-owner-en.webp",
+    "section": "handoff",
+    "img": {
+     "x": 25,
+     "y": 4714,
+     "w": 340,
+     "h": 498
+    },
+    "label": {
+     "x": 24,
+     "y": 4678,
+     "w": 342,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "role-walker-en.webp",
+    "section": "handoff",
+    "img": {
+     "x": 25,
+     "y": 5790,
+     "w": 340,
+     "h": 478
+    },
+    "label": {
+     "x": 24,
+     "y": 5755,
+     "w": 342,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "branch-reserve-en.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 25,
+     "y": 6838,
+     "w": 340,
+     "h": 452
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "branch-failed-en.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 25,
+     "y": 7519,
+     "w": 340,
+     "h": 405
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "proof-selected-en.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 8775,
+     "w": 340,
+     "h": 382
+    },
+    "label": {
+     "x": 24,
+     "y": 8739,
+     "w": 342,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 9169,
+     "w": 335,
+     "h": 22
+    }
+   },
+   {
+    "src": "proof-confirmed-en.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 9259,
+     "w": 340,
+     "h": 419
+    },
+    "label": {
+     "x": 24,
+     "y": 9224,
+     "w": 342,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 9692,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-report-en.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 9804,
+     "w": 340,
+     "h": 627
+    },
+    "label": {
+     "x": 24,
+     "y": 9768,
+     "w": 342,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 10444,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "settle-payment-en.webp",
+    "section": "settlement",
+    "img": {
+     "x": 25,
+     "y": 11303,
+     "w": 340,
+     "h": 248
+    },
+    "label": {
+     "x": 24,
+     "y": 11267,
+     "w": 342,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "settle-earnings-en.webp",
+    "section": "settlement",
+    "img": {
+     "x": 25,
+     "y": 11619,
+     "w": 340,
+     "h": 351
+    },
+    "label": {
+     "x": 24,
+     "y": 11583,
+     "w": 342,
+     "h": 22
+    },
+    "caption": null
+   }
+  ],
+  "firstViewportImages": 1
+ },
+ {
+  "name": "en-360",
+  "route": "/work/pawly/",
+  "width": 360,
+  "height": 800,
+  "errors": [],
+  "docHeight": 13830,
+  "overflowX": 0,
+  "brokenImages": [
+   "http://127.0.0.1:4393/work/pawly/"
+  ],
+  "sections": [
+   {
+    "id": "case-pawly",
+    "top": 80,
+    "height": 1402
+   },
+   {
+    "id": "choosing",
+    "top": 1821,
+    "height": 2375
+   },
+   {
+    "id": "handoff",
+    "top": 4292,
+    "height": 1846
+   },
+   {
+    "id": "exceptions",
+    "top": 6234,
+    "height": 1577
+   },
+   {
+    "id": "return",
+    "top": 7907,
+    "height": 2345
+   },
+   {
+    "id": "settlement",
+    "top": 10347,
+    "height": 1301
+   },
+   {
+    "id": "outcome",
+    "top": 11745,
+    "height": 984
+   },
+   {
+    "id": "contact",
+    "top": 13296,
+    "height": 319
+   }
+  ],
+  "shots": [
+   {
+    "src": "/media/pawly-case-v2/hero-status-en.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-list-en.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-profile-en.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-review-en.webp",
+    "rendered": 310,
+    "natural": 684
+   },
+   {
+    "src": "/media/pawly-case-v2/role-owner-en.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/role-walker-en.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-reserve-en.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-failed-en.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-selected-en.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-confirmed-en.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-report-en.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-payment-en.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-earnings-en.webp",
+    "rendered": 310,
+    "natural": 780
+   }
+  ],
+  "media": [
+   {
+    "src": "hero-status-en.webp",
+    "section": "hero",
+    "img": {
+     "x": 25,
+     "y": 299,
+     "w": 310,
+     "h": 599
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "match-list-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 2250,
+     "w": 310,
+     "h": 417
+    },
+    "label": {
+     "x": 24,
+     "y": 2215,
+     "w": 312,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 2681,
+     "w": 312,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-profile-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 2793,
+     "w": 310,
+     "h": 457
+    },
+    "label": {
+     "x": 24,
+     "y": 2757,
+     "w": 312,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 3263,
+     "w": 312,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-review-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 3375,
+     "w": 310,
+     "h": 597
+    },
+    "label": {
+     "x": 24,
+     "y": 3340,
+     "w": 312,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 3986,
+     "w": 312,
+     "h": 67
+    }
+   },
+   {
+    "src": "role-owner-en.webp",
+    "section": "handoff",
+    "img": {
+     "x": 25,
+     "y": 4595,
+     "w": 310,
+     "h": 454
+    },
+    "label": {
+     "x": 24,
+     "y": 4560,
+     "w": 312,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "role-walker-en.webp",
+    "section": "handoff",
+    "img": {
+     "x": 25,
+     "y": 5701,
+     "w": 310,
+     "h": 436
+    },
+    "label": {
+     "x": 24,
+     "y": 5666,
+     "w": 312,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "branch-reserve-en.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 25,
+     "y": 6708,
+     "w": 310,
+     "h": 412
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "branch-failed-en.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 25,
+     "y": 7348,
+     "w": 310,
+     "h": 369
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "proof-selected-en.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 8600,
+     "w": 310,
+     "h": 348
+    },
+    "label": {
+     "x": 24,
+     "y": 8564,
+     "w": 312,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 8961,
+     "w": 312,
+     "h": 22
+    }
+   },
+   {
+    "src": "proof-confirmed-en.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 9051,
+     "w": 310,
+     "h": 382
+    },
+    "label": {
+     "x": 24,
+     "y": 9015,
+     "w": 312,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 9446,
+     "w": 312,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-report-en.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 9558,
+     "w": 310,
+     "h": 572
+    },
+    "label": {
+     "x": 24,
+     "y": 9523,
+     "w": 312,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 10143,
+     "w": 312,
+     "h": 45
+    }
+   },
+   {
+    "src": "settle-payment-en.webp",
+    "section": "settlement",
+    "img": {
+     "x": 25,
+     "y": 11033,
+     "w": 310,
+     "h": 226
+    },
+    "label": {
+     "x": 24,
+     "y": 10998,
+     "w": 312,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "settle-earnings-en.webp",
+    "section": "settlement",
+    "img": {
+     "x": 25,
+     "y": 11328,
+     "w": 310,
+     "h": 320
+    },
+    "label": {
+     "x": 24,
+     "y": 11292,
+     "w": 312,
+     "h": 22
+    },
+    "caption": null
+   }
+  ],
+  "firstViewportImages": 1
+ },
+ {
+  "name": "en-320",
+  "route": "/work/pawly/",
+  "width": 320,
+  "height": 640,
+  "errors": [],
+  "docHeight": 13527,
+  "overflowX": 0,
+  "brokenImages": [
+   "http://127.0.0.1:4393/work/pawly/"
+  ],
+  "sections": [
+   {
+    "id": "case-pawly",
+    "top": 80,
+    "height": 1342
+   },
+   {
+    "id": "choosing",
+    "top": 1784,
+    "height": 2239
+   },
+   {
+    "id": "handoff",
+    "top": 4119,
+    "height": 1839
+   },
+   {
+    "id": "exceptions",
+    "top": 6054,
+    "height": 1528
+   },
+   {
+    "id": "return",
+    "top": 7678,
+    "height": 2199
+   },
+   {
+    "id": "settlement",
+    "top": 9973,
+    "height": 1231
+   },
+   {
+    "id": "outcome",
+    "top": 11300,
+    "height": 1126
+   },
+   {
+    "id": "contact",
+    "top": 12993,
+    "height": 319
+   }
+  ],
+  "shots": [
+   {
+    "src": "/media/pawly-case-v2/hero-status-en.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-list-en.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-profile-en.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-review-en.webp",
+    "rendered": 270,
+    "natural": 684
+   },
+   {
+    "src": "/media/pawly-case-v2/role-owner-en.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/role-walker-en.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-reserve-en.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-failed-en.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-selected-en.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-confirmed-en.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-report-en.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-payment-en.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-earnings-en.webp",
+    "rendered": 270,
+    "natural": 780
+   }
+  ],
+  "media": [
+   {
+    "src": "hero-status-en.webp",
+    "section": "hero",
+    "img": {
+     "x": 25,
+     "y": 285,
+     "w": 270,
+     "h": 522
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "match-list-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 2245,
+     "w": 270,
+     "h": 363
+    },
+    "label": {
+     "x": 24,
+     "y": 2209,
+     "w": 272,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 2621,
+     "w": 272,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-profile-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 2733,
+     "w": 270,
+     "h": 398
+    },
+    "label": {
+     "x": 24,
+     "y": 2698,
+     "w": 272,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 3145,
+     "w": 272,
+     "h": 67
+    }
+   },
+   {
+    "src": "match-review-en.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 3279,
+     "w": 270,
+     "h": 520
+    },
+    "label": {
+     "x": 24,
+     "y": 3244,
+     "w": 272,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 3813,
+     "w": 272,
+     "h": 67
+    }
+   },
+   {
+    "src": "role-owner-en.webp",
+    "section": "handoff",
+    "img": {
+     "x": 25,
+     "y": 4454,
+     "w": 270,
+     "h": 395
+    },
+    "label": {
+     "x": 24,
+     "y": 4418,
+     "w": 272,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "role-walker-en.webp",
+    "section": "handoff",
+    "img": {
+     "x": 25,
+     "y": 5578,
+     "w": 270,
+     "h": 379
+    },
+    "label": {
+     "x": 24,
+     "y": 5542,
+     "w": 272,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "branch-reserve-en.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 25,
+     "y": 6528,
+     "w": 270,
+     "h": 359
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "branch-failed-en.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 25,
+     "y": 7167,
+     "w": 270,
+     "h": 321
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "proof-selected-en.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 8371,
+     "w": 270,
+     "h": 303
+    },
+    "label": {
+     "x": 24,
+     "y": 8335,
+     "w": 272,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 8687,
+     "w": 272,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-confirmed-en.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 8799,
+     "w": 270,
+     "h": 333
+    },
+    "label": {
+     "x": 24,
+     "y": 8764,
+     "w": 272,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 9145,
+     "w": 272,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-report-en.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 9257,
+     "w": 270,
+     "h": 498
+    },
+    "label": {
+     "x": 24,
+     "y": 9222,
+     "w": 272,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 9768,
+     "w": 272,
+     "h": 45
+    }
+   },
+   {
+    "src": "settle-payment-en.webp",
+    "section": "settlement",
+    "img": {
+     "x": 25,
+     "y": 10659,
+     "w": 270,
+     "h": 197
+    },
+    "label": {
+     "x": 24,
+     "y": 10624,
+     "w": 272,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "settle-earnings-en.webp",
+    "section": "settlement",
+    "img": {
+     "x": 25,
+     "y": 10924,
+     "w": 270,
+     "h": 279
+    },
+    "label": {
+     "x": 24,
+     "y": 10889,
+     "w": 272,
+     "h": 22
+    },
+    "caption": null
+   }
+  ],
+  "firstViewportImages": 1
+ },
+ {
+  "name": "ru-1440",
+  "route": "/ru/work/pawly/",
+  "width": 1440,
+  "height": 900,
+  "errors": [],
+  "docHeight": 9494,
+  "overflowX": 0,
+  "brokenImages": [
+   "http://127.0.0.1:4393/ru/work/pawly/"
+  ],
+  "sections": [
+   {
+    "id": "case-pawly",
+    "top": 80,
+    "height": 1286
+   },
+   {
+    "id": "choosing",
+    "top": 1597,
+    "height": 1237
+   },
+   {
+    "id": "handoff",
+    "top": 2962,
+    "height": 831
+   },
+   {
+    "id": "exceptions",
+    "top": 3921,
+    "height": 975
+   },
+   {
+    "id": "return",
+    "top": 5024,
+    "height": 1304
+   },
+   {
+    "id": "settlement",
+    "top": 6456,
+    "height": 714
+   },
+   {
+    "id": "outcome",
+    "top": 7298,
+    "height": 663
+   },
+   {
+    "id": "contact",
+    "top": 8916,
+    "height": 299
+   }
+  ],
+  "shots": [
+   {
+    "src": "/media/pawly-case-v2/hero-status-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/pickup-photo.webp",
+    "rendered": 520,
+    "natural": 900
+   },
+   {
+    "src": "/media/pawly-case-v2/match-list-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-profile-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-review-ru.webp",
+    "rendered": 340,
+    "natural": 684
+   },
+   {
+    "src": "/media/pawly-case-v2/role-owner-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/role-walker-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-reserve-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-failed-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-selected-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-confirmed-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-report-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-payment-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-earnings-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   }
+  ],
+  "media": [
+   {
+    "src": "hero-status-ru.webp",
+    "section": "hero",
+    "img": {
+     "x": 818,
+     "y": 436,
+     "w": 388,
+     "h": 750
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "pickup-photo.webp",
+    "section": "hero",
+    "img": {
+     "x": 233,
+     "y": 435,
+     "w": 520,
+     "h": 520
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "match-list-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 81,
+     "y": 1936,
+     "w": 388,
+     "h": 522
+    },
+    "label": {
+     "x": 80,
+     "y": 1900,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 80,
+     "y": 2471,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-profile-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 526,
+     "y": 1936,
+     "w": 388,
+     "h": 573
+    },
+    "label": {
+     "x": 525,
+     "y": 1900,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 525,
+     "y": 2521,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-review-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 971,
+     "y": 1936,
+     "w": 340,
+     "h": 675
+    },
+    "label": {
+     "x": 970,
+     "y": 1900,
+     "w": 342,
+     "h": 22
+    },
+    "caption": {
+     "x": 970,
+     "y": 2624,
+     "w": 335,
+     "h": 67
+    }
+   },
+   {
+    "src": "role-owner-ru.webp",
+    "section": "handoff",
+    "img": {
+     "x": 81,
+     "y": 3206,
+     "w": 388,
+     "h": 586
+    },
+    "label": {
+     "x": 80,
+     "y": 3170,
+     "w": 390,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "role-walker-ru.webp",
+    "section": "handoff",
+    "img": {
+     "x": 971,
+     "y": 3206,
+     "w": 388,
+     "h": 545
+    },
+    "label": {
+     "x": 970,
+     "y": 3170,
+     "w": 390,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "branch-reserve-ru.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 81,
+     "y": 4309,
+     "w": 388,
+     "h": 515
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "branch-failed-ru.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 733,
+     "y": 4284,
+     "w": 388,
+     "h": 462
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "proof-selected-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 81,
+     "y": 5491,
+     "w": 388,
+     "h": 459
+    },
+    "label": {
+     "x": 80,
+     "y": 5456,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 80,
+     "y": 5963,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-confirmed-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 526,
+     "y": 5491,
+     "w": 388,
+     "h": 479
+    },
+    "label": {
+     "x": 525,
+     "y": 5456,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 525,
+     "y": 5983,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-report-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 971,
+     "y": 5491,
+     "w": 388,
+     "h": 715
+    },
+    "label": {
+     "x": 970,
+     "y": 5456,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 970,
+     "y": 6219,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "settle-payment-ru.webp",
+    "section": "settlement",
+    "img": {
+     "x": 533,
+     "y": 6768,
+     "w": 388,
+     "h": 283
+    },
+    "label": {
+     "x": 532,
+     "y": 6733,
+     "w": 390,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "settle-earnings-ru.webp",
+    "section": "settlement",
+    "img": {
+     "x": 971,
+     "y": 6768,
+     "w": 388,
+     "h": 401
+    },
+    "label": {
+     "x": 970,
+     "y": 6733,
+     "w": 390,
+     "h": 22
+    },
+    "caption": null
+   }
+  ],
+  "firstViewportImages": 2
+ },
+ {
+  "name": "ru-1024",
+  "route": "/ru/work/pawly/",
+  "width": 1024,
+  "height": 768,
+  "errors": [],
+  "docHeight": 11393,
+  "overflowX": 0,
+  "brokenImages": [
+   "http://127.0.0.1:4393/ru/work/pawly/"
+  ],
+  "sections": [
+   {
+    "id": "case-pawly",
+    "top": 80,
+    "height": 1187
+   },
+   {
+    "id": "choosing",
+    "top": 1521,
+    "height": 1934
+   },
+   {
+    "id": "handoff",
+    "top": 3583,
+    "height": 1141
+   },
+   {
+    "id": "exceptions",
+    "top": 4852,
+    "height": 975
+   },
+   {
+    "id": "return",
+    "top": 5955,
+    "height": 1930
+   },
+   {
+    "id": "settlement",
+    "top": 8013,
+    "height": 884
+   },
+   {
+    "id": "outcome",
+    "top": 9025,
+    "height": 835
+   },
+   {
+    "id": "contact",
+    "top": 10815,
+    "height": 299
+   }
+  ],
+  "shots": [
+   {
+    "src": "/media/pawly-case-v2/hero-status-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/pickup-photo.webp",
+    "rendered": 314,
+    "natural": 900
+   },
+   {
+    "src": "/media/pawly-case-v2/match-list-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-profile-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-review-ru.webp",
+    "rendered": 340,
+    "natural": 684
+   },
+   {
+    "src": "/media/pawly-case-v2/role-owner-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/role-walker-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-reserve-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-failed-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-selected-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-confirmed-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-report-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-payment-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-earnings-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   }
+  ],
+  "media": [
+   {
+    "src": "hero-status-ru.webp",
+    "section": "hero",
+    "img": {
+     "x": 507,
+     "y": 436,
+     "w": 388,
+     "h": 750
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "pickup-photo.webp",
+    "section": "hero",
+    "img": {
+     "x": 128,
+     "y": 435,
+     "w": 314,
+     "h": 314
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "match-list-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 81,
+     "y": 1859,
+     "w": 388,
+     "h": 522
+    },
+    "label": {
+     "x": 80,
+     "y": 1824,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 80,
+     "y": 2395,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-profile-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 525,
+     "y": 1859,
+     "w": 388,
+     "h": 573
+    },
+    "label": {
+     "x": 524,
+     "y": 1824,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 524,
+     "y": 2445,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-review-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 81,
+     "y": 2557,
+     "w": 340,
+     "h": 675
+    },
+    "label": {
+     "x": 80,
+     "y": 2522,
+     "w": 342,
+     "h": 22
+    },
+    "caption": {
+     "x": 80,
+     "y": 3245,
+     "w": 335,
+     "h": 67
+    }
+   },
+   {
+    "src": "role-owner-ru.webp",
+    "section": "handoff",
+    "img": {
+     "x": 81,
+     "y": 3827,
+     "w": 388,
+     "h": 586
+    },
+    "label": {
+     "x": 80,
+     "y": 3792,
+     "w": 390,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "role-walker-ru.webp",
+    "section": "handoff",
+    "img": {
+     "x": 525,
+     "y": 3827,
+     "w": 388,
+     "h": 545
+    },
+    "label": {
+     "x": 524,
+     "y": 3792,
+     "w": 390,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "branch-reserve-ru.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 81,
+     "y": 5241,
+     "w": 388,
+     "h": 515
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "branch-failed-ru.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 525,
+     "y": 5241,
+     "w": 388,
+     "h": 462
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "proof-selected-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 81,
+     "y": 6445,
+     "w": 388,
+     "h": 459
+    },
+    "label": {
+     "x": 80,
+     "y": 6409,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 80,
+     "y": 6916,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-confirmed-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 525,
+     "y": 6445,
+     "w": 388,
+     "h": 479
+    },
+    "label": {
+     "x": 524,
+     "y": 6409,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 524,
+     "y": 6936,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-report-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 81,
+     "y": 7048,
+     "w": 388,
+     "h": 715
+    },
+    "label": {
+     "x": 80,
+     "y": 7013,
+     "w": 390,
+     "h": 22
+    },
+    "caption": {
+     "x": 80,
+     "y": 7777,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "settle-payment-ru.webp",
+    "section": "settlement",
+    "img": {
+     "x": 81,
+     "y": 8496,
+     "w": 388,
+     "h": 283
+    },
+    "label": {
+     "x": 80,
+     "y": 8460,
+     "w": 390,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "settle-earnings-ru.webp",
+    "section": "settlement",
+    "img": {
+     "x": 525,
+     "y": 8496,
+     "w": 388,
+     "h": 401
+    },
+    "label": {
+     "x": 524,
+     "y": 8460,
+     "w": 390,
+     "h": 22
+    },
+    "caption": null
+   }
+  ],
+  "firstViewportImages": 2
+ },
+ {
+  "name": "ru-768",
+  "route": "/ru/work/pawly/",
+  "width": 768,
+  "height": 1024,
+  "errors": [],
+  "docHeight": 10651,
+  "overflowX": 0,
+  "brokenImages": [
+   "http://127.0.0.1:4393/ru/work/pawly/"
+  ],
+  "sections": [
+   {
+    "id": "case-pawly",
+    "top": 80,
+    "height": 1200
+   },
+   {
+    "id": "choosing",
+    "top": 1597,
+    "height": 1870
+   },
+   {
+    "id": "handoff",
+    "top": 3563,
+    "height": 1139
+   },
+   {
+    "id": "exceptions",
+    "top": 4798,
+    "height": 985
+   },
+   {
+    "id": "return",
+    "top": 5879,
+    "height": 1773
+   },
+   {
+    "id": "settlement",
+    "top": 7748,
+    "height": 862
+   },
+   {
+    "id": "outcome",
+    "top": 8707,
+    "height": 800
+   },
+   {
+    "id": "contact",
+    "top": 10139,
+    "height": 297
+   }
+  ],
+  "shots": [
+   {
+    "src": "/media/pawly-case-v2/hero-status-ru.webp",
+    "rendered": 388,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/pickup-photo.webp",
+    "rendered": 202,
+    "natural": 900
+   },
+   {
+    "src": "/media/pawly-case-v2/match-list-ru.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-profile-ru.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-review-ru.webp",
+    "rendered": 322,
+    "natural": 684
+   },
+   {
+    "src": "/media/pawly-case-v2/role-owner-ru.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/role-walker-ru.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-reserve-ru.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-failed-ru.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-selected-ru.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-confirmed-ru.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-report-ru.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-payment-ru.webp",
+    "rendered": 322,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-earnings-ru.webp",
+    "rendered": 322,
+    "natural": 780
+   }
+  ],
+  "media": [
+   {
+    "src": "hero-status-ru.webp",
+    "section": "hero",
+    "img": {
+     "x": 307,
+     "y": 473,
+     "w": 388,
+     "h": 750
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "pickup-photo.webp",
+    "section": "hero",
+    "img": {
+     "x": 72,
+     "y": 472,
+     "w": 202,
+     "h": 202
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "match-list-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 49,
+     "y": 1982,
+     "w": 322,
+     "h": 433
+    },
+    "label": {
+     "x": 48,
+     "y": 1947,
+     "w": 324,
+     "h": 22
+    },
+    "caption": {
+     "x": 48,
+     "y": 2428,
+     "w": 324,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-profile-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 397,
+     "y": 1982,
+     "w": 322,
+     "h": 475
+    },
+    "label": {
+     "x": 396,
+     "y": 1947,
+     "w": 324,
+     "h": 22
+    },
+    "caption": {
+     "x": 396,
+     "y": 2470,
+     "w": 324,
+     "h": 67
+    }
+   },
+   {
+    "src": "match-review-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 49,
+     "y": 2605,
+     "w": 322,
+     "h": 639
+    },
+    "label": {
+     "x": 48,
+     "y": 2569,
+     "w": 324,
+     "h": 22
+    },
+    "caption": {
+     "x": 48,
+     "y": 3257,
+     "w": 324,
+     "h": 67
+    }
+   },
+   {
+    "src": "role-owner-ru.webp",
+    "section": "handoff",
+    "img": {
+     "x": 49,
+     "y": 3854,
+     "w": 322,
+     "h": 486
+    },
+    "label": {
+     "x": 48,
+     "y": 3818,
+     "w": 324,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "role-walker-ru.webp",
+    "section": "handoff",
+    "img": {
+     "x": 397,
+     "y": 3854,
+     "w": 322,
+     "h": 452
+    },
+    "label": {
+     "x": 396,
+     "y": 3818,
+     "w": 324,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "branch-reserve-ru.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 49,
+     "y": 5284,
+     "w": 322,
+     "h": 428
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "branch-failed-ru.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 397,
+     "y": 5284,
+     "w": 322,
+     "h": 383
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "proof-selected-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 49,
+     "y": 6415,
+     "w": 322,
+     "h": 381
+    },
+    "label": {
+     "x": 48,
+     "y": 6379,
+     "w": 324,
+     "h": 22
+    },
+    "caption": {
+     "x": 48,
+     "y": 6808,
+     "w": 324,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-confirmed-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 397,
+     "y": 6415,
+     "w": 322,
+     "h": 397
+    },
+    "label": {
+     "x": 396,
+     "y": 6379,
+     "w": 324,
+     "h": 22
+    },
+    "caption": {
+     "x": 396,
+     "y": 6825,
+     "w": 324,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-report-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 49,
+     "y": 6937,
+     "w": 322,
+     "h": 594
+    },
+    "label": {
+     "x": 48,
+     "y": 6902,
+     "w": 324,
+     "h": 22
+    },
+    "caption": {
+     "x": 48,
+     "y": 7544,
+     "w": 324,
+     "h": 45
+    }
+   },
+   {
+    "src": "settle-payment-ru.webp",
+    "section": "settlement",
+    "img": {
+     "x": 49,
+     "y": 8277,
+     "w": 322,
+     "h": 234
+    },
+    "label": {
+     "x": 48,
+     "y": 8241,
+     "w": 324,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "settle-earnings-ru.webp",
+    "section": "settlement",
+    "img": {
+     "x": 397,
+     "y": 8277,
+     "w": 322,
+     "h": 333
+    },
+    "label": {
+     "x": 396,
+     "y": 8241,
+     "w": 324,
+     "h": 22
+    },
+    "caption": null
+   }
+  ],
+  "firstViewportImages": 2
+ },
+ {
+  "name": "ru-390",
+  "route": "/ru/work/pawly/",
+  "width": 390,
+  "height": 844,
+  "errors": [],
+  "docHeight": 14783,
+  "overflowX": 0,
+  "brokenImages": [
+   "http://127.0.0.1:4393/ru/work/pawly/"
+  ],
+  "sections": [
+   {
+    "id": "case-pawly",
+    "top": 80,
+    "height": 1460
+   },
+   {
+    "id": "choosing",
+    "top": 1901,
+    "height": 2569
+   },
+   {
+    "id": "handoff",
+    "top": 4566,
+    "height": 1999
+   },
+   {
+    "id": "exceptions",
+    "top": 6661,
+    "height": 1678
+   },
+   {
+    "id": "return",
+    "top": 8436,
+    "height": 2535
+   },
+   {
+    "id": "settlement",
+    "top": 11067,
+    "height": 1382
+   },
+   {
+    "id": "outcome",
+    "top": 12545,
+    "height": 1104
+   },
+   {
+    "id": "contact",
+    "top": 14248,
+    "height": 319
+   }
+  ],
+  "shots": [
+   {
+    "src": "/media/pawly-case-v2/hero-status-ru.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-list-ru.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-profile-ru.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-review-ru.webp",
+    "rendered": 340,
+    "natural": 684
+   },
+   {
+    "src": "/media/pawly-case-v2/role-owner-ru.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/role-walker-ru.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-reserve-ru.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-failed-ru.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-selected-ru.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-confirmed-ru.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-report-ru.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-payment-ru.webp",
+    "rendered": 340,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-earnings-ru.webp",
+    "rendered": 340,
+    "natural": 780
+   }
+  ],
+  "media": [
+   {
+    "src": "hero-status-ru.webp",
+    "section": "hero",
+    "img": {
+     "x": 25,
+     "y": 299,
+     "w": 340,
+     "h": 657
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "match-list-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 2362,
+     "w": 340,
+     "h": 458
+    },
+    "label": {
+     "x": 24,
+     "y": 2327,
+     "w": 342,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 2833,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-profile-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 2945,
+     "w": 340,
+     "h": 502
+    },
+    "label": {
+     "x": 24,
+     "y": 2910,
+     "w": 342,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 3460,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-review-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 3572,
+     "w": 340,
+     "h": 675
+    },
+    "label": {
+     "x": 24,
+     "y": 3537,
+     "w": 342,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 4260,
+     "w": 335,
+     "h": 67
+    }
+   },
+   {
+    "src": "role-owner-ru.webp",
+    "section": "handoff",
+    "img": {
+     "x": 25,
+     "y": 4870,
+     "w": 340,
+     "h": 513
+    },
+    "label": {
+     "x": 24,
+     "y": 4834,
+     "w": 342,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "role-walker-ru.webp",
+    "section": "handoff",
+    "img": {
+     "x": 25,
+     "y": 6086,
+     "w": 340,
+     "h": 478
+    },
+    "label": {
+     "x": 24,
+     "y": 6051,
+     "w": 342,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "branch-reserve-ru.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 25,
+     "y": 7135,
+     "w": 340,
+     "h": 452
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "branch-failed-ru.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 25,
+     "y": 7841,
+     "w": 340,
+     "h": 405
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "proof-selected-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 9151,
+     "w": 340,
+     "h": 402
+    },
+    "label": {
+     "x": 24,
+     "y": 9115,
+     "w": 342,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 9566,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-confirmed-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 9678,
+     "w": 340,
+     "h": 419
+    },
+    "label": {
+     "x": 24,
+     "y": 9643,
+     "w": 342,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 10110,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-report-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 10222,
+     "w": 340,
+     "h": 627
+    },
+    "label": {
+     "x": 24,
+     "y": 10187,
+     "w": 342,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 10862,
+     "w": 335,
+     "h": 45
+    }
+   },
+   {
+    "src": "settle-payment-ru.webp",
+    "section": "settlement",
+    "img": {
+     "x": 25,
+     "y": 11781,
+     "w": 340,
+     "h": 248
+    },
+    "label": {
+     "x": 24,
+     "y": 11745,
+     "w": 342,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "settle-earnings-ru.webp",
+    "section": "settlement",
+    "img": {
+     "x": 25,
+     "y": 12097,
+     "w": 340,
+     "h": 351
+    },
+    "label": {
+     "x": 24,
+     "y": 12061,
+     "w": 342,
+     "h": 22
+    },
+    "caption": null
+   }
+  ],
+  "firstViewportImages": 1
+ },
+ {
+  "name": "ru-360",
+  "route": "/ru/work/pawly/",
+  "width": 360,
+  "height": 800,
+  "errors": [],
+  "docHeight": 14534,
+  "overflowX": 0,
+  "brokenImages": [
+   "http://127.0.0.1:4393/ru/work/pawly/"
+  ],
+  "sections": [
+   {
+    "id": "case-pawly",
+    "top": 80,
+    "height": 1402
+   },
+   {
+    "id": "choosing",
+    "top": 1866,
+    "height": 2479
+   },
+   {
+    "id": "handoff",
+    "top": 4440,
+    "height": 1937
+   },
+   {
+    "id": "exceptions",
+    "top": 6473,
+    "height": 1713
+   },
+   {
+    "id": "return",
+    "top": 8283,
+    "height": 2408
+   },
+   {
+    "id": "settlement",
+    "top": 10786,
+    "height": 1361
+   },
+   {
+    "id": "outcome",
+    "top": 12243,
+    "height": 1157
+   },
+   {
+    "id": "contact",
+    "top": 14000,
+    "height": 319
+   }
+  ],
+  "shots": [
+   {
+    "src": "/media/pawly-case-v2/hero-status-ru.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-list-ru.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-profile-ru.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-review-ru.webp",
+    "rendered": 310,
+    "natural": 684
+   },
+   {
+    "src": "/media/pawly-case-v2/role-owner-ru.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/role-walker-ru.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-reserve-ru.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-failed-ru.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-selected-ru.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-confirmed-ru.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-report-ru.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-payment-ru.webp",
+    "rendered": 310,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-earnings-ru.webp",
+    "rendered": 310,
+    "natural": 780
+   }
+  ],
+  "media": [
+   {
+    "src": "hero-status-ru.webp",
+    "section": "hero",
+    "img": {
+     "x": 25,
+     "y": 299,
+     "w": 310,
+     "h": 599
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "match-list-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 2358,
+     "w": 310,
+     "h": 417
+    },
+    "label": {
+     "x": 24,
+     "y": 2323,
+     "w": 312,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 2788,
+     "w": 312,
+     "h": 45
+    }
+   },
+   {
+    "src": "match-profile-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 2901,
+     "w": 310,
+     "h": 457
+    },
+    "label": {
+     "x": 24,
+     "y": 2865,
+     "w": 312,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 3371,
+     "w": 312,
+     "h": 67
+    }
+   },
+   {
+    "src": "match-review-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 3506,
+     "w": 310,
+     "h": 615
+    },
+    "label": {
+     "x": 24,
+     "y": 3470,
+     "w": 312,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 4134,
+     "w": 312,
+     "h": 67
+    }
+   },
+   {
+    "src": "role-owner-ru.webp",
+    "section": "handoff",
+    "img": {
+     "x": 25,
+     "y": 4744,
+     "w": 310,
+     "h": 468
+    },
+    "label": {
+     "x": 24,
+     "y": 4708,
+     "w": 312,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "role-walker-ru.webp",
+    "section": "handoff",
+    "img": {
+     "x": 25,
+     "y": 5941,
+     "w": 310,
+     "h": 436
+    },
+    "label": {
+     "x": 24,
+     "y": 5905,
+     "w": 312,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "branch-reserve-ru.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 25,
+     "y": 7032,
+     "w": 310,
+     "h": 412
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "branch-failed-ru.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 25,
+     "y": 7724,
+     "w": 310,
+     "h": 369
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "proof-selected-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 8998,
+     "w": 310,
+     "h": 366
+    },
+    "label": {
+     "x": 24,
+     "y": 8962,
+     "w": 312,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 9377,
+     "w": 312,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-confirmed-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 9489,
+     "w": 310,
+     "h": 382
+    },
+    "label": {
+     "x": 24,
+     "y": 9454,
+     "w": 312,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 9885,
+     "w": 312,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-report-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 9997,
+     "w": 310,
+     "h": 572
+    },
+    "label": {
+     "x": 24,
+     "y": 9962,
+     "w": 312,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 10581,
+     "w": 312,
+     "h": 45
+    }
+   },
+   {
+    "src": "settle-payment-ru.webp",
+    "section": "settlement",
+    "img": {
+     "x": 25,
+     "y": 11531,
+     "w": 310,
+     "h": 226
+    },
+    "label": {
+     "x": 24,
+     "y": 11496,
+     "w": 312,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "settle-earnings-ru.webp",
+    "section": "settlement",
+    "img": {
+     "x": 25,
+     "y": 11825,
+     "w": 310,
+     "h": 320
+    },
+    "label": {
+     "x": 24,
+     "y": 11790,
+     "w": 312,
+     "h": 22
+    },
+    "caption": null
+   }
+  ],
+  "firstViewportImages": 1
+ },
+ {
+  "name": "ru-320",
+  "route": "/ru/work/pawly/",
+  "width": 320,
+  "height": 640,
+  "errors": [],
+  "docHeight": 14366,
+  "overflowX": 0,
+  "brokenImages": [
+   "http://127.0.0.1:4393/ru/work/pawly/"
+  ],
+  "sections": [
+   {
+    "id": "case-pawly",
+    "top": 80,
+    "height": 1342
+   },
+   {
+    "id": "choosing",
+    "top": 1828,
+    "height": 2416
+   },
+   {
+    "id": "handoff",
+    "top": 4341,
+    "height": 1982
+   },
+   {
+    "id": "exceptions",
+    "top": 6419,
+    "height": 1638
+   },
+   {
+    "id": "return",
+    "top": 8153,
+    "height": 2319
+   },
+   {
+    "id": "settlement",
+    "top": 10567,
+    "height": 1322
+   },
+   {
+    "id": "outcome",
+    "top": 11985,
+    "height": 1183
+   },
+   {
+    "id": "contact",
+    "top": 13800,
+    "height": 351
+   }
+  ],
+  "shots": [
+   {
+    "src": "/media/pawly-case-v2/hero-status-ru.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-list-ru.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-profile-ru.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/match-review-ru.webp",
+    "rendered": 270,
+    "natural": 684
+   },
+   {
+    "src": "/media/pawly-case-v2/role-owner-ru.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/role-walker-ru.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-reserve-ru.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/branch-failed-ru.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-selected-ru.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-confirmed-ru.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/proof-report-ru.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-payment-ru.webp",
+    "rendered": 270,
+    "natural": 780
+   },
+   {
+    "src": "/media/pawly-case-v2/settle-earnings-ru.webp",
+    "rendered": 270,
+    "natural": 780
+   }
+  ],
+  "media": [
+   {
+    "src": "hero-status-ru.webp",
+    "section": "hero",
+    "img": {
+     "x": 25,
+     "y": 285,
+     "w": 270,
+     "h": 522
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "match-list-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 2380,
+     "w": 270,
+     "h": 363
+    },
+    "label": {
+     "x": 24,
+     "y": 2345,
+     "w": 272,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 2756,
+     "w": 272,
+     "h": 67
+    }
+   },
+   {
+    "src": "match-profile-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 2913,
+     "w": 270,
+     "h": 398
+    },
+    "label": {
+     "x": 24,
+     "y": 2856,
+     "w": 272,
+     "h": 45
+    },
+    "caption": {
+     "x": 24,
+     "y": 3325,
+     "w": 272,
+     "h": 67
+    }
+   },
+   {
+    "src": "match-review-ru.webp",
+    "section": "choosing",
+    "img": {
+     "x": 25,
+     "y": 3459,
+     "w": 270,
+     "h": 536
+    },
+    "label": {
+     "x": 24,
+     "y": 3424,
+     "w": 272,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 4008,
+     "w": 272,
+     "h": 67
+    }
+   },
+   {
+    "src": "role-owner-ru.webp",
+    "section": "handoff",
+    "img": {
+     "x": 25,
+     "y": 4703,
+     "w": 270,
+     "h": 408
+    },
+    "label": {
+     "x": 24,
+     "y": 4668,
+     "w": 272,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "role-walker-ru.webp",
+    "section": "handoff",
+    "img": {
+     "x": 25,
+     "y": 5942,
+     "w": 270,
+     "h": 379
+    },
+    "label": {
+     "x": 24,
+     "y": 5907,
+     "w": 272,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "branch-reserve-ru.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 25,
+     "y": 7002,
+     "w": 270,
+     "h": 359
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "branch-failed-ru.webp",
+    "section": "exceptions",
+    "img": {
+     "x": 25,
+     "y": 7642,
+     "w": 270,
+     "h": 321
+    },
+    "label": null,
+    "caption": null
+   },
+   {
+    "src": "proof-selected-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 8927,
+     "w": 270,
+     "h": 319
+    },
+    "label": {
+     "x": 24,
+     "y": 8892,
+     "w": 272,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 9259,
+     "w": 272,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-confirmed-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 9371,
+     "w": 270,
+     "h": 333
+    },
+    "label": {
+     "x": 24,
+     "y": 9336,
+     "w": 272,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 9717,
+     "w": 272,
+     "h": 45
+    }
+   },
+   {
+    "src": "proof-report-ru.webp",
+    "section": "return",
+    "img": {
+     "x": 25,
+     "y": 9830,
+     "w": 270,
+     "h": 498
+    },
+    "label": {
+     "x": 24,
+     "y": 9794,
+     "w": 272,
+     "h": 22
+    },
+    "caption": {
+     "x": 24,
+     "y": 10340,
+     "w": 272,
+     "h": 67
+    }
+   },
+   {
+    "src": "settle-payment-ru.webp",
+    "section": "settlement",
+    "img": {
+     "x": 25,
+     "y": 11344,
+     "w": 270,
+     "h": 197
+    },
+    "label": {
+     "x": 24,
+     "y": 11309,
+     "w": 272,
+     "h": 22
+    },
+    "caption": null
+   },
+   {
+    "src": "settle-earnings-ru.webp",
+    "section": "settlement",
+    "img": {
+     "x": 25,
+     "y": 11609,
+     "w": 270,
+     "h": 279
+    },
+    "label": {
+     "x": 24,
+     "y": 11574,
+     "w": 272,
+     "h": 22
+    },
+    "caption": null
+   }
+  ],
+  "firstViewportImages": 1
+ }
+]
