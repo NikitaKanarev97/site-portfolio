@@ -35,7 +35,7 @@ const fullLabel = locale === 'ru' ? 'Посмотреть полный экра�
 </figure>
 <style>
   .agent-shot { display: grid; gap: var(--flow-pair); inline-size: 100%; min-inline-size: 0; max-inline-size: var(--agent-native); margin: 0; }
-  .agent-shot__image { display: block; min-inline-size: 0; cursor: zoom-in; color: inherit; }
+  .agent-shot__image { display: block; min-inline-size: 0; border-radius: var(--radius-media); overflow: hidden; cursor: zoom-in; color: inherit; }
   .agent-shot__image--case { cursor: pointer; }
   .agent-shot__image picture, .agent-shot__image img { display: block; inline-size: 100%; block-size: auto; }
   .agent-shot__caption { display: grid; gap: var(--space-2); max-inline-size: var(--measure-text); color: var(--text-subtle); }

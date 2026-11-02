@@ -297,15 +297,24 @@ const titleId = `${id}-title`;
 </style>
 
 <script>
+  import { containDialogFocus } from '../scripts/dialog-focus';
   /**
-   * Открытие и закрытие. Ловушка фокуса, Escape и возврат фокуса на кнопку
-   * приходят от showModal() — здесь только запуск, подложка и блокировка
-   * прокрутки под окном.
+   * Native modal, Escape and focus return; shared keyboard boundary handling
+   * keeps Tab on the controls. Listeners belong to the current Astro page.
    *
    * Скрипт один на все окна маршрута: Astro поднимает и склеивает
    * одинаковые script компонента, сколько бы раз он ни встретился.
    */
+  let projectLifecycle: AbortController | undefined;
+  function teardownProjectDialogs() {
+    document.querySelectorAll<HTMLDialogElement>('dialog[data-project-dialog][open]').forEach(dialog => dialog.close());
+    projectLifecycle?.abort();
+    document.body.classList.remove('ds-scroll-locked');
+  }
   function initProjectDialogs() {
+    teardownProjectDialogs();
+    projectLifecycle = new AbortController();
+    const { signal } = projectLifecycle;
     document.querySelectorAll<HTMLElement>('[data-dialog-open]').forEach((trigger) => {
       const id = trigger.dataset.dialogOpen;
       if (!id) return;
@@ -317,27 +326,29 @@ const titleId = `${id}-title`;
         event.preventDefault();
         document.body.classList.add('ds-scroll-locked');
         dialog.showModal();
-      });
+      }, { signal });
     });
 
     document.querySelectorAll<HTMLDialogElement>('dialog[data-project-dialog]').forEach((dialog) => {
       const close = dialog.querySelector<HTMLButtonElement>('[data-project-dialog-close]');
-      close?.addEventListener('click', () => dialog.close());
+      containDialogFocus(dialog, signal);
+      close?.addEventListener('click', () => dialog.close(), { signal });
 
       /* Нажатие мимо панели закрывает. Целей две: сам диалог и обёртка —
          поле вокруг панели поделено между ними, и панель ловит своё. */
       const surface = dialog.querySelector('[data-project-dialog-surface]');
       dialog.addEventListener('click', (event) => {
         if (event.target === dialog || event.target === surface) dialog.close();
-      });
+      }, { signal });
 
       /* Событие close приходит и от Escape, и от кнопки — состояние
          снимается в одном месте. */
       dialog.addEventListener('close', () => {
         document.body.classList.remove('ds-scroll-locked');
-      });
+      }, { signal });
     });
   }
 
   document.addEventListener('astro:page-load', initProjectDialogs);
+  document.addEventListener('astro:before-swap', teardownProjectDialogs);
 </script>

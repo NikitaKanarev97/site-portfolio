@@ -1,0 +1,7 @@
+---
+/** Preserve real word boundaries before the build-time typographer runs.
+ * Explicit opportunities prevent an unbreakable phrase in a narrow column. */
+interface Props { text: string }
+const { text } = Astro.props;
+---
+{text.split(' ').map((word, i) => <>{i > 0 && <wbr />}{i > 0 ? ` ${word}` : word}</>)}

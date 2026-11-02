@@ -633,6 +633,33 @@ PortalShot uses intrinsic image height (width:100%, height:auto; picture:block),
 RU homepage correction: from bp-lg, the editorial column has a min-content minimum so Russian nonbreaking phrases preserve the existing space-12 gap to the screenshot. EN grid and typography stay unchanged.
 
 Case-scoped `agent/AgentCase`, `AgentHome`, `AgentShot`: dedicated composition over genuine accepted product captures. The global case renderer and other themes stay unchanged. `AgentShot` uses a responsive picture, real native dimensions from `src/data/agent-ops-v2-media.json`, an existing MediaZoom target, separate caption and optional full-screen inspection link. No image cropping, perspective, UI overlays or independent content animation. `AgentCase`: complete approval task beside the hero thesis, facts, seven numbered editorial sections, historical context metrics, a six-step editorial operating flow, seven product screen types and a tested/accepted outcome. `AgentHome` pairs a modest editorial statement with the actual consequence scene. Existing semantic surface/space/typographic/focus roles only. Media fields: 24 CSS px of captured-product canvas around all isolated native panel crops; no second mobile frame, space-6 neutral field from bp-md; image-to-caption flow-pair; head-to-image flow-node; modules space-24/space-32. Native source corners remain intact. Both locales share structure/media assertions. Capture-only RU string completion is documented in the image provenance; product source is unchanged.
+## Final quality · 03.11.2026
+
+Navbar language items retain native listitem semantics; their existing language
+label no longer overrides the li role with group. CaseNext light-surface metadata
+uses text-subtle, with existing hover/pressed colors retained: text-link alone
+failed contrast on the accepted Portal butter surface. PortalShot captions and
+Portal line indices also use text-subtle for AA on surface-plate. No token values
+or palette changes. Five Portal captions are shortened to the existing harmony
+budget while preserving the source dates, amounts and procurement consequences.
+
+`EditorialHeadingText` is the shared text-only version of AgentHeadingText's
+accepted word-boundary helper. Agent keeps the compatibility wrapper. Learn's
+completion-rule h3 and Vet's clinical h2 also use it: build-time nonbreaking-space
+chains otherwise overflow 312/333 px tablet columns. Existing words, type roles
+and sizes remain.
+
+AgentShot uses one radius-media (16 px) clipping boundary on the image link,
+around the existing captured canvas. No extra padding, border, image scaling or
+inner UI mask. Full-source MediaZoom stays native. Pawly V2.1.2 media fields and
+native product/device contours retain their documented exceptions.
+
+MediaZoom and ProjectDialog share `src/scripts/dialog-focus.ts`: Tab and
+Shift+Tab wrap between currently visible, enabled controls and scroll regions.
+Native modal inertness, Escape and focus return remain. Both registrations use
+AbortController and tear down before Astro swaps; closing a project dialog also
+releases its scroll lock. No new visual component or motion primitive.
+
 ## Learn V2 · 31.10.2026
 
 `LearnCase` is a case-scoped editorial composition of MetaList, CaseScreen,

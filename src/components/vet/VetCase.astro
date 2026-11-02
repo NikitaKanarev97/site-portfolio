@@ -2,6 +2,7 @@
 import TextLink from '../TextLink.astro';
 import CaseNext from '../CaseNext.astro';
 import VetShot from './VetShot.astro';
+import EditorialHeadingText from '../EditorialHeadingText.astro';
 import type { VetPremiumCopy } from '../../copy/cases/vet-v3';
 import type { CaseTheme } from '../../copy/cases/story';
 interface Props { copy: VetPremiumCopy; locale: 'en' | 'ru'; next: { href: string; title: string; theme: CaseTheme; label: string }; }
@@ -38,7 +39,7 @@ const externalLabel = locale === 'ru' ? 'Откроется в новой вкл
       <div class="vet-trace"><VetShot shot={c.trace.shot} locale={locale} /></div>
     </section>
     <section class="ds-container vet-module" id="clinical" aria-labelledby="clinical-title">
-      <div class="vet-split vet-split--clinical"><div class="vet-copy"><p class="ds-meta-sm vet-muted">{clinical.label}</p><h2 class="ds-heading-4xl" id="clinical-title">{clinical.title}</h2><p class="ds-body-lg vet-muted" data-h="lead">{clinical.body}</p><ol class="vet-calculation">{c.calculation.map(item => <li><h3 class="ds-heading-xl">{item.title}</h3><p class="ds-body-base vet-muted">{item.body}</p></li>)}</ol><p class="ds-body-sm vet-muted">{clinical.note}</p></div><VetShot shot={clinical.shot} locale={locale} /></div>
+      <div class="vet-split vet-split--clinical"><div class="vet-copy"><p class="ds-meta-sm vet-muted">{clinical.label}</p><h2 class="ds-heading-4xl" id="clinical-title"><EditorialHeadingText text={clinical.title} /></h2><p class="ds-body-lg vet-muted" data-h="lead">{clinical.body}</p><ol class="vet-calculation">{c.calculation.map(item => <li><h3 class="ds-heading-xl">{item.title}</h3><p class="ds-body-base vet-muted">{item.body}</p></li>)}</ol><p class="ds-body-sm vet-muted">{clinical.note}</p></div><VetShot shot={clinical.shot} locale={locale} /></div>
     </section>
     <section class="ds-container vet-module" id="invoice" aria-labelledby="invoice-title">
       <div class="vet-split vet-split--invoice"><div class="vet-copy"><p class="ds-meta-sm vet-muted">{handoff.invoice.label}</p><h2 class="ds-heading-3xl" id="invoice-title">{handoff.invoice.title}</h2><p class="ds-body-lg vet-muted" data-h="lead">{handoff.invoice.body}</p></div><VetShot shot={handoff.invoice.shot} locale={locale} /></div>

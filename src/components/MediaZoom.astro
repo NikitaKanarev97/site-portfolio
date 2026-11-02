@@ -47,6 +47,7 @@ const zoom = zoomCopy;
   .media-zoom__close:active { color: var(--text-link-pressed); transition-duration: var(--motion-press-duration); transition-timing-function: var(--motion-press-ease); }
 </style>
 <script>
+  import { containDialogFocus } from '../scripts/dialog-focus';
   let zoomLifecycle: AbortController | undefined;
   let zoomDialog: HTMLDialogElement | undefined;
   function teardownMediaZoom() {
@@ -67,6 +68,7 @@ const zoom = zoomCopy;
     zoomDialog = dialog;
     zoomLifecycle = new AbortController();
     const { signal } = zoomLifecycle;
+    containDialogFocus(dialog, signal);
     let source: HTMLElement | undefined;
     document.addEventListener('click', (event) => {
       const trigger = (event.target as Element).closest<HTMLElement>('[data-zoom-trigger]');

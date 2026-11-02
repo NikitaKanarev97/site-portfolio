@@ -835,7 +835,9 @@ async function initPage() {
     () => {
       // Прямой вход в восстановленную позицию или возврат из bfcache:
       // триггеры не создаются, страница сразу в конечном состоянии (§4.3).
-      if (window.scrollY > 0 || returning || focusReadingSnapshot?.y > 0) {
+      // The inline timeout may already have exposed the static page while a
+      // bundle was delayed. Never hide that readable content retroactively.
+      if (!document.documentElement.classList.contains('js') || window.scrollY > 0 || returning || focusReadingSnapshot?.y > 0) {
         settle(root);
         // Recreate structural geometry and visible loops on history traversal.
         // Entry reveals stay settled; a case without focus still owns CaseNext.

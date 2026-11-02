@@ -159,7 +159,7 @@ export const portalCaseEn: PortalCaseCopy = {
     after: {
       desktop: 'dashboard-1280', mobile: 'dashboard-390',
       alt: 'Procurement workspace: the current purchase office_north_v8.xlsx with 41 of 48 lines confirmed, a Resume review action, order updates and three ways to start a specification',
-      caption: 'Direction, built · the workspace opens on the purchase in progress and what blocks it',
+      caption: 'Built direction · the current purchase and its blockers, in one workspace',
     },
   },
   architecture: {
@@ -257,7 +257,7 @@ export const portalCaseEn: PortalCaseCopy = {
     bar: {
       desktop: 'cartbar-1280', mobile: 'cartbar-390',
       alt: 'Cart summary bar: Not ready for fulfillment, five unpriced lines and one open change explained, estimated total ₽1,362,600 for 43 of 48 lines, Choose fulfillment disabled',
-      caption: 'The total · it names what it counts, and what still blocks the next step',
+      caption: 'The total · scope counted and blockers before the next step',
     },
   },
   supply: {
@@ -268,7 +268,7 @@ export const portalCaseEn: PortalCaseCopy = {
     shot: {
       desktop: 'fulfillment-1280', mobile: 'fulfillment-390',
       alt: 'Choose a fulfillment plan: three plans for the same 48 lines compared by availability, completion date, shipments, warehouses and delivery cost; Fewest shipments selected',
-      caption: 'Fastest by 01 Nov for ₽7,400, or one consolidated handover three days later for ₽4,200',
+      caption: 'Fastest: ₽7,400 by 01 Nov. Consolidated: ₽4,200, three days later.',
     },
   },
   system: {

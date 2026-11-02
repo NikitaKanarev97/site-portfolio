@@ -1,3 +1,13 @@
+## Late bundle fallback · 03.11.2026
+
+Once the inline two-second fallback removes `.js`, readable content stays in its
+final state even if the motion bundle later arrives. `initPage` uses the existing
+settled/history branch inside `withMotionPreference`; no entrance/reveal is replayed
+over material already exposed. Structural reading guidance and existing visible
+loops retain their normal lifecycle. No token, duration, easing or dependency change.
+Evidence: `audit/portfolio-final-quality-2026-11-03/logs/late-bundle-*.json` and paired
+real browser recordings under `motion-before/late-*`, `motion-after/late-*`.
+
 ## Agent Ops Premium V3 · 02.11.2026
 
 Case-only checkpoint reading guide: existing Состояние changes the current outside-UI stage/marker while the whole approval stays native and intact. CSS sticky only on wide/tall viewports and only after JS opts in. ScrollTrigger uses native scroll with no pin, spacer, scrub or extra reading distance. Never hides text or disables screenshot zoom. Registered from existing buildCaseScenes inside withMotionPreference; responsive/page cleanup removes triggers, class and state. Reduce/no-JS/mobile retain all three explanations and complete screenshot. Existing intro/fade tokens remain; no new timing or scroll controller. Necessity and regression evidence: `audit/agent-ops-portfolio-premium-v3/MOTION.md`.

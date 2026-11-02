@@ -1,5 +1,6 @@
 ---
 import LearnShot from './LearnShot.astro';
+import EditorialHeadingText from '../EditorialHeadingText.astro';
 import CaseScreen from '../CaseScreen.astro';
 import Diagram from '../Diagram.astro';
 import CaseNext from '../CaseNext.astro';
@@ -46,7 +47,7 @@ const externalLabel = locale === 'ru' ? 'Откроется в новой вкл
       <div class="ds-container learn-section">
         <header class="learn-head"><p class="ds-meta-sm learn-muted">{shared.label}</p><div class="learn-copy"><h2 id="shared-title" class="ds-heading-4xl" data-motion="fade">{shared.title}</h2><p class="ds-body-lg learn-muted">{shared.body}</p></div></header>
         <div class="learn-model" data-story-document><p class="ds-body-sm learn-muted">{shared.diagram}</p><Diagram data={learnContentModel} lang={locale} /></div>
-        <div class="learn-system__rule"><h3 class="ds-heading-3xl">{shared.rule}</h3><p class="ds-body-base learn-muted">{shared.consequence}</p></div>
+        <div class="learn-system__rule"><h3 class="ds-heading-3xl"><EditorialHeadingText text={shared.rule} /></h3><p class="ds-body-base learn-muted">{shared.consequence}</p></div>
       </div>
     </section>
     <section class="ds-container learn-section" id="reference-path" aria-labelledby="reference-title">
