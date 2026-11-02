@@ -152,6 +152,8 @@ Reproduction tools: `tools/capture.mjs before|after` with `PORTFOLIO_ORIGIN`,
 `tools/verify.mjs` with the two origins above, `tools/crop.mjs`, and
 `tools/evidence.mjs`. They reuse the existing local Playwright install via
 `PLAYWRIGHT_REPO` (default `D:/Claude-projects/b2b-dssl`); no dependency was added.
+Stored console logs have trailing whitespace normalized for Git; screenshot
+evidence and recorded measurements are unchanged.
 
 ## Acceptance questions and remaining limits
 
