@@ -3,7 +3,7 @@
 Repository: https://github.com/NikitaKanarev97/site-portfolio
 Read-only product source: https://github.com/NikitaKanarev97/learn
 Research branch: `research/trassir-learn-portfolio-premium-v3-2026-11-02`
-Research starting SHA: `994ee999820ecb3edafac79387c130d5a979d38c` (verify remotely at task start)
+Research pack authored on top of portfolio main `561e6830392b6e9a25e61e30cafe394586df3ff4`; at execution, verify research branch HEAD and branch from that latest commit (not an older intermediate SHA).
 Product source main SHA at research: `e9ac4b075c4c5251dc10891ad201ecbf5405b727`
 Target implementation branch: `codex/trassir-learn-portfolio-premium-v3-2026-11-02` created FROM research branch HEAD.
 Routes: `/work/learn`, `/ru/work/learn`.
