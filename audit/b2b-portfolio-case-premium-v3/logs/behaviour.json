@@ -1,0 +1,104 @@
+{
+  "reducedMotion": {
+    "hiddenBeforeScroll": 0,
+    "errors": []
+  },
+  "noJs1440": {
+    "hidden": 0,
+    "sections": [
+      "diagnosis",
+      "architecture",
+      "decision",
+      "verification",
+      "commercial-review",
+      "fulfillment",
+      "design-system",
+      "process",
+      "outcome"
+    ],
+    "archiveLinks": [
+      "/media/case-dssl/legacy-dashboard.webp",
+      "/media/rebuild/partner-portal/v3/legacy-cart-alternative.webp"
+    ]
+  },
+  "noJs390": {
+    "hidden": 0,
+    "sections": [
+      "diagnosis",
+      "architecture",
+      "decision",
+      "verification",
+      "commercial-review",
+      "fulfillment",
+      "design-system",
+      "process",
+      "outcome"
+    ],
+    "archiveLinks": [
+      "/media/case-dssl/legacy-dashboard.webp",
+      "/media/rebuild/partner-portal/v3/legacy-cart-alternative.webp"
+    ]
+  },
+  "interaction": {
+    "anchorTop": 0,
+    "opened": {
+      "open": true,
+      "src": "http://127.0.0.1:4411/media/rebuild/partner-portal/v3/legacy-cart-alternative.webp",
+      "caption": "Original portal · cart, archival screenshot"
+    },
+    "afterClose": {
+      "open": false,
+      "focus": "portal-archive__link"
+    },
+    "links": {
+      "cta": [
+        {
+          "href": "https://b2b-partner-portal-five.vercel.app/",
+          "target": "_blank",
+          "rel": "noopener"
+        }
+      ],
+      "next": "/work/learn",
+      "locale": [],
+      "facts": [
+        "https://b2b-partner-portal-five.vercel.app/"
+      ]
+    },
+    "errors": []
+  },
+  "mobileScrollers": {
+    "scrollers": [
+      {
+        "label": "FileUpload",
+        "scrollable": true,
+        "overflowX": "auto"
+      },
+      {
+        "label": "FulfillmentPlan",
+        "scrollable": true,
+        "overflowX": "auto"
+      }
+    ],
+    "docOverflow": 0
+  },
+  "lifecycle": {
+    "nextHref": "/work/learn",
+    "first": {
+      "triggers": 24,
+      "pins": 0,
+      "duplicates": 0
+    },
+    "back": {
+      "triggers": 0,
+      "pins": 0,
+      "duplicates": 0
+    },
+    "backAgain": {
+      "triggers": 0,
+      "pins": 0,
+      "duplicates": 0
+    },
+    "hiddenAfterBack": 0,
+    "errors": []
+  }
+}

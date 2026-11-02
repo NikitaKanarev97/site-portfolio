@@ -1,5 +1,38 @@
 # Screen: CaseDSSL
 
+## V3.1 corrections · 02.11.2026 (amends V3 below; pending independent review)
+
+Eight review findings fixed inside the V3 composition; no module added, removed or reordered. Evidence: `audit/b2b-portfolio-case-premium-v3/v3.1/`.
+
+| # | Module | Change | Desktop / phone |
+|---|---|---|---|
+| 0 | Hero | phone: role and shipped/rebuild status merge into one `brief` under the rule (`role` and `note` hidden below bp-md), head gap `flow-pair`, top padding `flow-text`; the first actionable queue row now fits the first 390/360/320 screen. Detail inset labelled as a separate recording | desktop unchanged |
+| 01 | Diagnosis | archival cart re-cropped inside the original panel (x 99–2250, y 220–817), no grey gutter; 1076 × 299 CSS | unchanged layout |
+| 02 | Architecture | two routes, per sitemap, intake flows, routes and D007/D029: XLS + Quick order → bracket → Specification (resolved here) → Cart (approved here) → Fulfillment → Checkout; Catalog & search → own labelled line under Specification → Cart. Chevrons on every connector | 7-col grid, two rows; one left trunk, catalog joins as a branch, each intake names its destination |
+| 03 | Source line | frames re-shot at product 8cb6579; rounded cards clipped with 8 px of their own product surface (no corner fragments) | unchanged layout |
+| 06 | Fulfillment | product 8cb6579: selected row = surface + radio + label, no left stripe, no stacked top edge | unchanged layout |
+| 07 | Design system | FulfillmentPlan Selected from Storybook 8cb6579; phone scrollers get a localized state-count cue that also describes the scroller | cue below bp-md only |
+| 08 | Process | each step names its origin (DSSL · original portal / 2026 rebuild) and file + commit as text; the product repo is private, so no public links | unchanged layout |
+
+## V3 premium case · 02.11.2026 (supersedes V2.1 presentation below; pending independent review)
+
+Same routes, renderer `src/components/portal/PortalCase.astro` (case-scoped), copy `src/copy/cases/partner-portal-v2.ts` / `src/copy/ru/cases/partner-portal-v2.ts`, registry `src/data/partner-portal-v2-media.json`. Shared `PortalShot`, `PortalHome`, tokens and motion runtime unchanged. Evidence: `audit/b2b-portfolio-case-premium-v3/`.
+
+Thesis: **from spreadsheet to purchase — without losing control of the decisions.** Order follows one procurement object: hero → facts → 01 Diagnosis → 02 Architecture → 03 Source line → 04 Product and price → 05 Commercial review (cool band) → 06 Fulfillment → 07 Design system → 08 Process → Outcome → CaseNext.
+
+| # | Module | Evidence | Desktop / phone |
+|---|---|---|---|
+| 0 | Hero | workspace 6bbe1cd (collapsed queue, V1.1-faithful), DeltaRow c899933; sole-designer line and shipped-vs-rebuild note in the first view | title 7 col + note 6 col / lead 5 col; phone workspace-top-390 |
+| 01 | Diagnosis | archival `legacy-dashboard` and new `legacy-cart-alternative` crops (MediaZoom), Observed → Direction; built Dashboard | 8 / 4 col rows; stacked |
+| 02 | Architecture | editorial HTML diagram from sitemap + XLS-to-order flow, D007/D010/D029 | 4 stages + 3 certainty bands; vertical stack |
+| 03 | Source line | row 19 at 36be1d8, one session: imported → chosen → confirmed → cart line (source row 19) | 3 / 9 col rows on one plate; native 390 frames |
+| 04–06 | Product, commerce, fulfillment | V2.1 media unchanged; commerce gains a numbered chain, fulfillment the compared dimensions | as V2.1 |
+| 07 | Design system | 8 semantic colours + type scale from the 36be1d8 build; ResolutionRow from the real queue; FileUpload, Availability, FulfillmentPlan from Storybook 36be1d8 | name beside narrow families, wide families 3-across; phone scrollers |
+| 08 | Process | four steps with real artifact paths, labelled as 2026 rebuild artifacts | 4 col; stacked |
+| 09 | Outcome | Shipped / Shown / Owned, three costs, unchanged CTA | 5 / 6 col; stacked |
+
+Public wording follows CONTENT-RULES: "later rebuild … not the shipped release", never "independent reconstruction".
+
 ## V2.1 correction · 31.10.2026 (supersedes V2 presentation below)
 
 Seven-section structure, buyer comparison and fulfillment remain. Hero uses surface-portal-editorial; main workspace dominates, complete DeltaRow appears as a compact desktop inset. Mobile shows one complete workspace capture ending at row 19, with no next-row sliver. Commerce uses surface-portal-context and centred complete owning cart-line + decision bar; meaningful native status edge is retained with a uniform 20 px field. Product verification keeps its source with extra top breathing room. Archival Before stays a subordinate historical reference without enlargement. Home uses dedicated PortalHome, not the case hero. Public prototype links explicitly say that the public version predates these screens. QA: audit/b2b-case-v21/.

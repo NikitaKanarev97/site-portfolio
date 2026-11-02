@@ -1,0 +1,522 @@
+{
+  "protected": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 637.828125,
+      "afterHeight": 792.90625
+    },
+    {
+      "locale": "en",
+      "width": 1024,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 603.359375,
+      "afterHeight": 787.734375
+    },
+    {
+      "locale": "en",
+      "width": 768,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 831.390625,
+      "afterHeight": 741.953125
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 922.546875,
+      "afterHeight": 1153
+    },
+    {
+      "locale": "en",
+      "width": 360,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 952.125,
+      "afterHeight": 1119.71875
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 641.015625,
+      "afterHeight": 778.71875
+    },
+    {
+      "locale": "ru",
+      "width": 1024,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 595.34375,
+      "afterHeight": 762.140625
+    },
+    {
+      "locale": "ru",
+      "width": 768,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 831.390625,
+      "afterHeight": 741.953125
+    },
+    {
+      "locale": "ru",
+      "width": 390,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 955.4375,
+      "afterHeight": 1202.984375
+    },
+    {
+      "locale": "ru",
+      "width": 360,
+      "heroAndFourOtherCovers": "identical DOM SHA256",
+      "beforeHeight": 959.28125,
+      "afterHeight": 1142.109375
+    }
+  ],
+  "interactions": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "reducedMotion": "reduce",
+      "tabStops": [
+        {
+          "href": "/work/learn",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(27, 27, 24)",
+          "role": "title"
+        },
+        {
+          "href": "/work/learn/",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(255, 255, 255)",
+          "role": "screen"
+        },
+        {
+          "href": "/work/learn/",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(255, 255, 255)",
+          "role": "screen"
+        },
+        {
+          "href": "/work/learn",
+          "id": "cta-learn",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "cta"
+        }
+      ],
+      "enter": "case route opens",
+      "back": "home restored",
+      "motion": {
+        "transform": "none",
+        "hidden": false
+      }
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "reducedMotion": "no-preference",
+      "tabStops": [
+        {
+          "href": "/work/learn",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "title"
+        },
+        {
+          "href": "/work/learn/",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(255, 138, 117)",
+          "role": "screen"
+        },
+        {
+          "href": "/work/learn/",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(255, 138, 117)",
+          "role": "screen"
+        },
+        {
+          "href": "/work/learn",
+          "id": "cta-learn",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "cta"
+        }
+      ],
+      "enter": "case route opens",
+      "back": "home restored",
+      "motion": {
+        "transform": "matrix(1, 0, 0, 1, 0, -4)",
+        "hidden": false
+      }
+    },
+    {
+      "locale": "en",
+      "width": 360,
+      "reducedMotion": "reduce",
+      "tabStops": [
+        {
+          "href": "/work/learn",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(27, 27, 24)",
+          "role": "title"
+        },
+        {
+          "href": "/work/learn/",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(255, 255, 255)",
+          "role": "screen"
+        },
+        {
+          "href": "/work/learn/",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(255, 255, 255)",
+          "role": "screen"
+        },
+        {
+          "href": "/work/learn",
+          "id": "cta-learn",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "cta"
+        }
+      ],
+      "enter": "case route opens",
+      "back": "home restored",
+      "motion": {
+        "transform": "none",
+        "hidden": false
+      }
+    },
+    {
+      "locale": "en",
+      "width": 360,
+      "reducedMotion": "no-preference",
+      "tabStops": [
+        {
+          "href": "/work/learn",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "title"
+        },
+        {
+          "href": "/work/learn/",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(255, 138, 117)",
+          "role": "screen"
+        },
+        {
+          "href": "/work/learn/",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(255, 138, 117)",
+          "role": "screen"
+        },
+        {
+          "href": "/work/learn",
+          "id": "cta-learn",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "cta"
+        }
+      ],
+      "enter": "case route opens",
+      "back": "home restored",
+      "motion": {
+        "transform": "matrix(1, 0, 0, 1, 0, -4)",
+        "hidden": false
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "reducedMotion": "reduce",
+      "tabStops": [
+        {
+          "href": "/ru/work/learn",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(27, 27, 24)",
+          "role": "title"
+        },
+        {
+          "href": "/ru/work/learn/",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(255, 255, 255)",
+          "role": "screen"
+        },
+        {
+          "href": "/ru/work/learn/",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(255, 255, 255)",
+          "role": "screen"
+        },
+        {
+          "href": "/ru/work/learn",
+          "id": "cta-learn",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "cta"
+        }
+      ],
+      "enter": "case route opens",
+      "back": "home restored",
+      "motion": {
+        "transform": "none",
+        "hidden": false
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "reducedMotion": "no-preference",
+      "tabStops": [
+        {
+          "href": "/ru/work/learn",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "title"
+        },
+        {
+          "href": "/ru/work/learn/",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(255, 138, 117)",
+          "role": "screen"
+        },
+        {
+          "href": "/ru/work/learn/",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(255, 138, 117)",
+          "role": "screen"
+        },
+        {
+          "href": "/ru/work/learn",
+          "id": "cta-learn",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "cta"
+        }
+      ],
+      "enter": "case route opens",
+      "back": "home restored",
+      "motion": {
+        "transform": "matrix(1, 0, 0, 1, 0, -4)",
+        "hidden": false
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 360,
+      "reducedMotion": "reduce",
+      "tabStops": [
+        {
+          "href": "/ru/work/learn",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(27, 27, 24)",
+          "role": "title"
+        },
+        {
+          "href": "/ru/work/learn/",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(255, 255, 255)",
+          "role": "screen"
+        },
+        {
+          "href": "/ru/work/learn/",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "3px",
+          "outlineColor": "rgb(255, 255, 255)",
+          "role": "screen"
+        },
+        {
+          "href": "/ru/work/learn",
+          "id": "cta-learn",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "cta"
+        }
+      ],
+      "enter": "case route opens",
+      "back": "home restored",
+      "motion": {
+        "transform": "none",
+        "hidden": false
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 360,
+      "reducedMotion": "no-preference",
+      "tabStops": [
+        {
+          "href": "/ru/work/learn",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "title"
+        },
+        {
+          "href": "/ru/work/learn/",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(255, 138, 117)",
+          "role": "screen"
+        },
+        {
+          "href": "/ru/work/learn/",
+          "id": "",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(255, 138, 117)",
+          "role": "screen"
+        },
+        {
+          "href": "/ru/work/learn",
+          "id": "cta-learn",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(212, 50, 32)",
+          "role": "cta"
+        }
+      ],
+      "enter": "case route opens",
+      "back": "home restored",
+      "motion": {
+        "transform": "matrix(1, 0, 0, 1, 0, -4)",
+        "hidden": false
+      }
+    }
+  ],
+  "noJS": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "height": 641.71875,
+      "opacity": "1",
+      "images": [
+        2272,
+        732
+      ],
+      "href": "/work/learn/",
+      "overflow": 0,
+      "cta": "case opened"
+    },
+    {
+      "locale": "en",
+      "width": 360,
+      "height": 888.53125,
+      "opacity": "1",
+      "images": [
+        812,
+        732
+      ],
+      "href": "/work/learn/",
+      "overflow": 0,
+      "cta": "case opened"
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "height": 627.53125,
+      "opacity": "1",
+      "images": [
+        2272,
+        732
+      ],
+      "href": "/ru/work/learn/",
+      "overflow": 0,
+      "cta": "case opened"
+    },
+    {
+      "locale": "ru",
+      "width": 360,
+      "height": 888.53125,
+      "opacity": "1",
+      "images": [
+        812,
+        732
+      ],
+      "href": "/ru/work/learn/",
+      "overflow": 0,
+      "cta": "case opened"
+    }
+  ]
+}

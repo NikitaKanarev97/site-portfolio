@@ -617,6 +617,8 @@ Navbar использует Images/logo-portfolio-v4.svg. BaseLayout — favicon
 
 - PortalHome (`src/components/portal/PortalHome.astro`): dedicated FeaturedCase composition over accepted row-19 evidence; editorial progress 41/48, two-candidate comparison on desktop, real mobile review on phones. Semantic surface-portal-editorial, existing typography/spacing, parent stretched case link. No new interactions.
 - PortalCase: cool neutral hero and commercial band; desktop single dominant workspace plus complete native DeltaRow inset. Mobile prioritises one workspace. Commerce centres complete cart-line parent and summary at native widths, with uniform native canvas fields. Verification adds space-8/space-12 above the unchanged interface.
+- PortalCase V3 (02.11.2026): adds a diagnosis grid (archival frame │ Observed → Direction, MediaZoom links), an HTML architecture diagram (stages + `draw` connectors, three certainty bands; vertical on phones), the four-stage source-line plate, a specimen sheet (semantic swatches from `src/data/partner-portal-v3-tokens.json`, families as labelled rows, phone horizontal scrollers with `tabindex=0`) and a process list. Still only registered motion names (`rise`, `draw`, `fade`, `fade-image`, `lines`). `PortalShot` unchanged.
+- PortalCase V3.1 (02.11.2026): architecture becomes a two-row grid with a merge bracket, a labelled catalog bypass and token chevrons (`space-2` box, `border-width` strokes), one left trunk with a branch on phones; phone cover uses `cover.brief`; process steps carry an `origin` pill; phone scrollers carry `portal-family__cue`, referenced by `aria-describedby`. No new tokens, components or motion names.
 
 
 ## Portal screenshot geometry correction · 31.10.2026

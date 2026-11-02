@@ -1,0 +1,316 @@
+{
+  "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+  "transform": "None. Whole existing images, original proportions. Alpha details sit on portfolio white surface.",
+  "images": [
+    {
+      "key": "en/reference",
+      "src": "/media/case-learn-v2/current/en/reference.webp",
+      "width": 2272,
+      "height": 1224,
+      "cssWidth": 1136,
+      "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/reference.png",
+      "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+      "route": "http://127.0.0.1:4415/prototypes/learn/material/onvif-not-found/?lang=en",
+      "selectors": [
+        "main [class*=\"_main_\"] > header",
+        "main [class*=\"_brief_\"]",
+        "main aside"
+      ],
+      "clip": {
+        "x": 152,
+        "y": 88,
+        "width": 1136,
+        "height": 612
+      },
+      "canvasField": 16,
+      "bytes": 88530,
+      "note": "Whole header, brief and navigation with native page gutters.",
+      "sha256": "b1f014b4f22ca882de4e27c40ee1c86ef36855236834efc56773c4ed0cf321f2"
+    },
+    {
+      "key": "en/answer-detail",
+      "src": "/media/case-learn-v2/current/en/answer-detail.webp",
+      "width": 812,
+      "height": 838,
+      "cssWidth": 406,
+      "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/answer-detail.png",
+      "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+      "route": "http://127.0.0.1:4415/prototypes/learn/material/onvif-not-found/?lang=en",
+      "selector": "main [class*=\"_main_\"] > header",
+      "sourceBounds": {
+        "x": 16,
+        "y": 150,
+        "width": 358,
+        "height": 370.546875
+      },
+      "canvasField": 24,
+      "bytes": 28672,
+      "note": "Complete native mobile material header; no cut title, metadata or utilities.",
+      "sha256": "caac73e22c2fe444a1c8e353f0b70455afb74f0890eaf2fdd7f4b08638b948b7"
+    },
+    {
+      "key": "en/path-progress",
+      "src": "/media/case-learn-v2/current/en/path-progress.webp",
+      "width": 732,
+      "height": 730,
+      "cssWidth": 366,
+      "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/path-progress.png",
+      "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+      "route": "http://127.0.0.1:4415/prototypes/learn/trajectory/puskonaladka/?lang=en",
+      "selector": "aside [class*=\"_action_\"]",
+      "sourceBounds": {
+        "x": 993,
+        "y": 454,
+        "width": 318,
+        "height": 316.390625
+      },
+      "canvasField": 24,
+      "bytes": 21182,
+      "note": "Whole continuation action region: count, current step, complete CTA and reading note, with native padding.",
+      "sha256": "5c8f02097f14f8452fe4b8402495610c1d90960acde80845222b218bca19d808"
+    },
+    {
+      "key": "en/home-wide",
+      "src": "/media/case-learn-v2/composition/en/home-wide.webp",
+      "width": 2848,
+      "height": 966,
+      "cssWidth": 1424,
+      "source": "audit/trassir-learn-case-v2/composition-v23/product/en/home-wide.png",
+      "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+      "route": "http://127.0.0.1:4415/prototypes/learn/home/?lang=en",
+      "bytes": 69264,
+      "presentation": {
+        "extraCanvasPadding": 24,
+        "contentGeometryUnchanged": true,
+        "screenshotRadius": 16,
+        "originalWidth": 1376,
+        "expandedWidth": 1424,
+        "originalPadding": [
+          32,
+          48,
+          32,
+          48
+        ],
+        "expandedPadding": [
+          56,
+          72,
+          56,
+          72
+        ],
+        "titleBefore": {
+          "x": 80,
+          "y": 136,
+          "width": 752,
+          "height": 64.390625
+        },
+        "titleAfter": {
+          "x": 80,
+          "y": 136,
+          "width": 752,
+          "height": 64.390625
+        }
+      },
+      "note": "Owner-directed extension of the actual blue Home canvas; unchanged UI content and layout. No external white frame or transparent bleed.",
+      "sha256": "a8af6fc1ecec029f5829f7cb61e76806a380d425db9d20c68310e3d23baa8b95"
+    },
+    {
+      "key": "en/home-mobile",
+      "src": "/media/case-learn-v2/composition/en/home-mobile.webp",
+      "width": 780,
+      "height": 614,
+      "cssWidth": 390,
+      "source": "audit/trassir-learn-case-v2/composition-v23/product/en/home-mobile.png",
+      "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+      "route": "http://127.0.0.1:4415/prototypes/learn/home/?lang=en",
+      "bytes": 20914,
+      "presentation": {
+        "extraCanvasPadding": 16,
+        "contentGeometryUnchanged": true,
+        "screenshotRadius": 16,
+        "originalWidth": 358,
+        "expandedWidth": 390,
+        "originalPadding": [
+          16,
+          16,
+          16,
+          16
+        ],
+        "expandedPadding": [
+          32,
+          32,
+          32,
+          32
+        ],
+        "titleBefore": {
+          "x": 32,
+          "y": 158,
+          "width": 326,
+          "height": 27.59375
+        },
+        "titleAfter": {
+          "x": 32,
+          "y": 158,
+          "width": 326,
+          "height": 27.59375
+        }
+      },
+      "note": "Owner-directed extension of the actual blue Home canvas; unchanged UI content and layout. No external white frame or transparent bleed.",
+      "sha256": "413d5c7db7b85a56a3e33d7f87a6e4940f92c7009cd8526f2e2fc4b5b684f5ad"
+    },
+    {
+      "key": "ru/reference",
+      "src": "/media/case-learn-v2/current/ru/reference.webp",
+      "width": 2272,
+      "height": 1182,
+      "cssWidth": 1136,
+      "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/reference.png",
+      "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+      "route": "http://127.0.0.1:4415/prototypes/learn/material/onvif-not-found/?lang=ru",
+      "selectors": [
+        "main [class*=\"_main_\"] > header",
+        "main [class*=\"_brief_\"]",
+        "main aside"
+      ],
+      "clip": {
+        "x": 152,
+        "y": 88,
+        "width": 1136,
+        "height": 591
+      },
+      "canvasField": 16,
+      "bytes": 79924,
+      "note": "Whole header, brief and navigation with native page gutters.",
+      "sha256": "d1b01a880891cfbf4ec73d9ba2f7b281813472a6174e5f4d2bb5bfa20b0b7e63"
+    },
+    {
+      "key": "ru/answer-detail",
+      "src": "/media/case-learn-v2/current/ru/answer-detail.webp",
+      "width": 812,
+      "height": 838,
+      "cssWidth": 406,
+      "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/answer-detail.png",
+      "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+      "route": "http://127.0.0.1:4415/prototypes/learn/material/onvif-not-found/?lang=ru",
+      "selector": "main [class*=\"_main_\"] > header",
+      "sourceBounds": {
+        "x": 16,
+        "y": 150,
+        "width": 358,
+        "height": 370.84375
+      },
+      "canvasField": 24,
+      "bytes": 26820,
+      "note": "Complete native mobile material header; no cut title, metadata or utilities.",
+      "sha256": "29504571b094dbc362ba7b3464497cb669da97049f4244e172da95284d9646ed"
+    },
+    {
+      "key": "ru/path-progress",
+      "src": "/media/case-learn-v2/current/ru/path-progress.webp",
+      "width": 732,
+      "height": 730,
+      "cssWidth": 366,
+      "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/path-progress.png",
+      "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+      "route": "http://127.0.0.1:4415/prototypes/learn/trajectory/puskonaladka/?lang=ru",
+      "selector": "aside [class*=\"_action_\"]",
+      "sourceBounds": {
+        "x": 993,
+        "y": 478,
+        "width": 318,
+        "height": 316.390625
+      },
+      "canvasField": 24,
+      "bytes": 19818,
+      "note": "Whole continuation action region: count, current step, complete CTA and reading note, with native padding.",
+      "sha256": "80a8d6fab2144e4e90e96f8f73715bd0e38e08dc5befaa8fe56e6e25d38f2eef"
+    },
+    {
+      "key": "ru/home-wide",
+      "src": "/media/case-learn-v2/composition/ru/home-wide.webp",
+      "width": 2848,
+      "height": 966,
+      "cssWidth": 1424,
+      "source": "audit/trassir-learn-case-v2/composition-v23/product/ru/home-wide.png",
+      "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+      "route": "http://127.0.0.1:4415/prototypes/learn/home/?lang=ru",
+      "bytes": 64502,
+      "presentation": {
+        "extraCanvasPadding": 24,
+        "contentGeometryUnchanged": true,
+        "screenshotRadius": 16,
+        "originalWidth": 1376,
+        "expandedWidth": 1424,
+        "originalPadding": [
+          32,
+          48,
+          32,
+          48
+        ],
+        "expandedPadding": [
+          56,
+          72,
+          56,
+          72
+        ],
+        "titleBefore": {
+          "x": 80,
+          "y": 136,
+          "width": 752,
+          "height": 64.390625
+        },
+        "titleAfter": {
+          "x": 80,
+          "y": 136,
+          "width": 752,
+          "height": 64.390625
+        }
+      },
+      "note": "Owner-directed extension of the actual blue Home canvas; unchanged UI content and layout. No external white frame or transparent bleed.",
+      "sha256": "960b8fec8253f1d47be4ee4baa21cc700f69e857f84013c693cca73589442e7e"
+    },
+    {
+      "key": "ru/home-mobile",
+      "src": "/media/case-learn-v2/composition/ru/home-mobile.webp",
+      "width": 780,
+      "height": 576,
+      "cssWidth": 390,
+      "source": "audit/trassir-learn-case-v2/composition-v23/product/ru/home-mobile.png",
+      "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+      "route": "http://127.0.0.1:4415/prototypes/learn/home/?lang=ru",
+      "bytes": 18420,
+      "presentation": {
+        "extraCanvasPadding": 16,
+        "contentGeometryUnchanged": true,
+        "screenshotRadius": 16,
+        "originalWidth": 358,
+        "expandedWidth": 390,
+        "originalPadding": [
+          16,
+          16,
+          16,
+          16
+        ],
+        "expandedPadding": [
+          32,
+          32,
+          32,
+          32
+        ],
+        "titleBefore": {
+          "x": 32,
+          "y": 158,
+          "width": 326,
+          "height": 27.59375
+        },
+        "titleAfter": {
+          "x": 32,
+          "y": 158,
+          "width": 326,
+          "height": 27.59375
+        }
+      },
+      "note": "Owner-directed extension of the actual blue Home canvas; unchanged UI content and layout. No external white frame or transparent bleed.",
+      "sha256": "c8fdf7140c4d9c14c0d7c538abf4fe784dea7506857deb80a047bdefe878d9ed"
+    }
+  ]
+}
