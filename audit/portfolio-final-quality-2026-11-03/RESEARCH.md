@@ -50,3 +50,7 @@ Consulted the primary [Lenis repository](https://github.com/darkroomengineering/
 [gsap.matchMedia](https://gsap.com/docs/v3/GSAP/gsap.matchMedia/) documentation.
 The shipped portfolio keeps native scrolling: the observed reading interactions
 do not establish a benefit that would justify a second scroll controller.
+
+Third-party body prose is retained as length/fingerprint metadata rather than copied
+into the report dataset. Videos, source URLs, titles, frames and runtime observations
+remain intact. The short fingerprints describe the original observed text samples.

@@ -12,7 +12,7 @@ for(const [id,url] of sites){
    await sleep(ms===0?20:ms-(result.last??0));result.last=ms;
    const file=await shot(page,`${dir}/load-${ms}`);result.frames.push({file,t:Date.now()-start,phase:'entrance'});
   }
-  result.title=await page.title();result.firstText=(await page.locator('body').innerText()).slice(0,900);
+  result.title=await page.title();result.bodyTextLength=(await page.locator('body').innerText()).length;
   result.motion=await page.evaluate(()=>({animations:document.getAnimations().map(a=>({type:a.constructor.name,state:a.playState,timing:a.effect?.getTiming(),frames:a.effect?.getKeyframes().slice(0,3)})).slice(0,12),scrollBehavior:getComputedStyle(document.documentElement).scrollBehavior}));
   const links=await page.locator('a').evaluateAll(es=>es.map(e=>({text:e.innerText.slice(0,80),href:e.href,rect:e.getBoundingClientRect().toJSON()})).filter(e=>e.rect.width>80&&e.rect.height>30));result.links=links.slice(0,12);
   await page.mouse.wheel(0,660);await page.waitForTimeout(350);result.frames.push({file:await shot(page,`${dir}/scroll-350`),t:Date.now()-start,phase:'scroll'});await page.waitForTimeout(900);result.frames.push({file:await shot(page,`${dir}/scroll-1250`),t:Date.now()-start,phase:'scroll'});

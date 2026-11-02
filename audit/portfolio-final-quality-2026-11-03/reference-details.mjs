@@ -17,7 +17,7 @@ for(const [id,url,selector] of [
    r.styles=await el.evaluate(e=>({transition:getComputedStyle(e).transition,transform:getComputedStyle(e).transform,animations:document.getAnimations().map(a=>({timing:a.effect?.getTiming(),state:a.playState})).slice(0,10)}));
    await el.focus();r.frames.push(await shot(p,`${dir}/focus`));await el.click({noWaitAfter:true,timeout:8000});for(const ms of [100,500,1500]){await p.waitForTimeout(ms);r.frames.push(await shot(p,`${dir}/click-${ms}`));}
   }else r.missingTarget=selector;}
-  r.destination=p.url();r.text=(await p.locator('body').innerText()).slice(0,1800);for(let i=0;i<3;i++){await p.mouse.wheel(0,700);await p.waitForTimeout(650);r.frames.push(await shot(p,`${dir}/section-${i}`));}
+  r.destination=p.url();r.bodyTextLength=(await p.locator('body').innerText()).length;for(let i=0;i<3;i++){await p.mouse.wheel(0,700);await p.waitForTimeout(650);r.frames.push(await shot(p,`${dir}/section-${i}`));}
   await p.setViewportSize({width:390,height:844});await p.emulateMedia({reducedMotion:'reduce'});await p.reload({waitUntil:'domcontentloaded'});await p.waitForTimeout(1800);r.frames.push(await shot(p,`${dir}/mobile-reduce`));
  }catch(e){r.limitation=e.message;}
  const v=p.video();await ctx.close();await v.saveAs(`${dir}/browser.webm`);r.video=`${dir}/browser.webm`;results.push(r);await json(`${root}/references/details.json`,results);console.log(id,r.destination,r.limitation??r.missingTarget??'captured');
