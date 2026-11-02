@@ -1,0 +1,545 @@
+{
+  "newAssets": [
+    {
+      "key": "en/queue-full-desktop",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/en-queue-desktop-full.png",
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1233
+      },
+      "sha256": "e75d6ea595147b5fa4867403059bc09f4c02157ef456e686f8a84a12cc652692",
+      "sourceSha256": "919fe8b04148190ed6309a55701ffa41632799a199cf7826c5bc66047de2c329",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "en/queue-desktop",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/en-queue-desktop-full.png",
+      "clip": {
+        "x": 282,
+        "y": 161,
+        "width": 1117,
+        "height": 482
+      },
+      "sha256": "12096f18464c937ba8021598f437b6242bf06502f4fd05cb549cb521046485df",
+      "sourceSha256": "919fe8b04148190ed6309a55701ffa41632799a199cf7826c5bc66047de2c329",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "en/trace-full-desktop",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/en-trace-desktop-full.png",
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1516
+      },
+      "sha256": "c8c0426524568889edbd128b322e2480fc9463f83ce8c873ec7432e01aeb4425",
+      "sourceSha256": "e9feef8848c2652dd7e308b326805ada36591d940166d2e820b055222e01cfda",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "en/trace-desktop",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/en-trace-desktop-full.png",
+      "clip": {
+        "x": 41,
+        "y": 313,
+        "width": 830,
+        "height": 224
+      },
+      "sha256": "1f575533e8aad60e5af7843244e3dac857112866bc8a20898dba149e77cc628b",
+      "sourceSha256": "e9feef8848c2652dd7e308b326805ada36591d940166d2e820b055222e01cfda",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "en/publish-desktop",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/en-publish-desktop-full.png",
+      "clip": {
+        "x": 1008,
+        "y": 309,
+        "width": 320,
+        "height": 664
+      },
+      "sha256": "07db9aa27e4105fe9bf85ed544fab76b1e1b8cd3dac8bfdb9888450a34acd9ca",
+      "sourceSha256": "a99ed01e0b715e7644e6888fae9f999e62f3d81ccc0bcce95b3d867e119e57ca",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "en/queue-full-mobile",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/en-queue-mobile-full.png",
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 2293
+      },
+      "sha256": "697d200adae891b99c91c9d5ffc88d1c69e04bd4e3c25742a634a762e250186e",
+      "sourceSha256": "911d380a4d35d3097e0a3ac4b13d6bd621c7e3439daebfcd9323473503382644",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "en/queue-mobile",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/en-queue-mobile-full.png",
+      "clip": {
+        "x": 16,
+        "y": 170,
+        "width": 358,
+        "height": 1089
+      },
+      "sha256": "a3c5ccb1ca5130162aee26689a764724f16521cacca581533a3451ebf03db81f",
+      "sourceSha256": "911d380a4d35d3097e0a3ac4b13d6bd621c7e3439daebfcd9323473503382644",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "en/trace-full-mobile",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/en-trace-mobile-full.png",
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 2649
+      },
+      "sha256": "616434c235652160836272b280a7df90ff78223f5941871e52b02a48c08a0104",
+      "sourceSha256": "eb8853bf068cd7ea074b76bc8bb3aa1771f91fa93f7945751411676041428144",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "en/trace-mobile",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/en-trace-mobile-full.png",
+      "clip": {
+        "x": 16,
+        "y": 352,
+        "width": 358,
+        "height": 352
+      },
+      "sha256": "9c9bcd805a6b34c0a9837a10341c4bedb26048ff6297c84da346368eb91d424f",
+      "sourceSha256": "eb8853bf068cd7ea074b76bc8bb3aa1771f91fa93f7945751411676041428144",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "en/publish-mobile",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/en-publish-mobile-full.png",
+      "clip": {
+        "x": 16,
+        "y": 1633,
+        "width": 358,
+        "height": 533
+      },
+      "sha256": "3a5b95956fb36aa7e5986b70bfe3773f8f6f03d028a77c4cc6e6acc32424638a",
+      "sourceSha256": "860d4ba1eb177c67186d912fd325f2fbab4239045639bb491b99f56361610055",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "ru/queue-full-desktop",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/ru-queue-desktop-full.png",
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1233
+      },
+      "sha256": "764918f89517dce78b5fc93d948177914966b79361c760b3cc21bc7232411363",
+      "sourceSha256": "7fe9f729f0cc08b939dd92111d18e074d61430485386228e22d73cb99ae61c58",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "ru/queue-desktop",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/ru-queue-desktop-full.png",
+      "clip": {
+        "x": 282,
+        "y": 161,
+        "width": 1117,
+        "height": 482
+      },
+      "sha256": "06bb77dc561442fafcf2cae356440263c733854cb5bfa69402e45d6f4dc70ff2",
+      "sourceSha256": "7fe9f729f0cc08b939dd92111d18e074d61430485386228e22d73cb99ae61c58",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "ru/trace-full-desktop",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/ru-trace-desktop-full.png",
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1516
+      },
+      "sha256": "87f0169830efb548332f60df6c18077be4a0db80299a1c0ecc5b7c3843001417",
+      "sourceSha256": "493f8a6b25a0161abbc2d86c5ef9fe7774d027e3209a26990b01f752d01c45f9",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "ru/trace-desktop",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/ru-trace-desktop-full.png",
+      "clip": {
+        "x": 41,
+        "y": 313,
+        "width": 830,
+        "height": 224
+      },
+      "sha256": "54e2fb7a76ffc36eb9c11c6dfe9365f92fa45f62ad0871c9cc599317c7c34953",
+      "sourceSha256": "493f8a6b25a0161abbc2d86c5ef9fe7774d027e3209a26990b01f752d01c45f9",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "ru/publish-desktop",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/ru-publish-desktop-full.png",
+      "clip": {
+        "x": 1008,
+        "y": 309,
+        "width": 320,
+        "height": 705
+      },
+      "sha256": "eef89e063eea737a93d4f807493846880b0595eee86060cceaacef581e4a0bb7",
+      "sourceSha256": "4e93078ababcddcf36f6ae4e471cece4f7e49cc877b16dd1f5402788915a3af3",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "ru/queue-full-mobile",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/ru-queue-mobile-full.png",
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 2293
+      },
+      "sha256": "6f639ce8b61b0b197a235be1f9d31226a2b077c3d63588b107887157e4839a48",
+      "sourceSha256": "060a98cfa3a0b392df62e9936aab8a477d41ef61e98035cfefbaa44f4f36fb60",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "ru/queue-mobile",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/ru-queue-mobile-full.png",
+      "clip": {
+        "x": 16,
+        "y": 170,
+        "width": 358,
+        "height": 1089
+      },
+      "sha256": "6839f92fd973f426e01d5216f6f53bc231256edfd6eeddb66a088637930603e2",
+      "sourceSha256": "060a98cfa3a0b392df62e9936aab8a477d41ef61e98035cfefbaa44f4f36fb60",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "ru/trace-full-mobile",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/ru-trace-mobile-full.png",
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 2715
+      },
+      "sha256": "bed95abf720fb6cfa44aaef26979ad91e6d70282133fd414dc8cbeba8718f3fc",
+      "sourceSha256": "95383c66d1944e0ac87ef0953061156d4fb4dfc01f2610497d1ef2cc24e14d5d",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "ru/trace-mobile",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/ru-trace-mobile-full.png",
+      "clip": {
+        "x": 16,
+        "y": 373,
+        "width": 358,
+        "height": 352
+      },
+      "sha256": "5173767324bdc089bd845883ef3d60d6c5f702666cac92b8119d661d5b6b6e12",
+      "sourceSha256": "95383c66d1944e0ac87ef0953061156d4fb4dfc01f2610497d1ef2cc24e14d5d",
+      "exactPixels": true,
+      "fileHashMatches": true
+    },
+    {
+      "key": "ru/publish-mobile",
+      "source": "audit/vet-portfolio-premium-v3/product-captures/ru-publish-mobile-full.png",
+      "clip": {
+        "x": 16,
+        "y": 1682,
+        "width": 358,
+        "height": 533
+      },
+      "sha256": "06154e916ee9a5f960b3a1d0404e5cdee0b80508f6aaf60586eff1053ddecfa4",
+      "sourceSha256": "fc9cc475d7c5ce54f0d01556c26fbfd4de76a1e358bce6f321c53de06b418d2d",
+      "exactPixels": true,
+      "fileHashMatches": true
+    }
+  ],
+  "originalAssets": [
+    {
+      "key": "en/visit-full-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "en/private-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "en/dose-full-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "en/invoice-full-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "en/invoice-document-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "en/discharge-full-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "en/owner-full-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "en/owner-overview-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "en/blocked-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "en/blocked-full-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "en/visit-full-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "en/visit-context-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "en/private-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "en/dose-full-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "en/dose-review-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "en/invoice-full-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "en/invoice-document-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "en/discharge-full-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "en/discharge-document-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "en/owner-full-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "en/owner-overview-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "en/blocked-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "en/blocked-full-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "en/missing-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "en/missing-full-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "ru/visit-full-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "ru/private-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "ru/dose-full-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "ru/invoice-full-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "ru/invoice-document-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "ru/discharge-full-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "ru/owner-full-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "ru/owner-overview-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "ru/blocked-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "ru/blocked-full-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "ru/visit-full-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "ru/visit-context-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "ru/private-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "ru/dose-full-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "ru/dose-review-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "ru/invoice-full-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "ru/invoice-document-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "ru/discharge-full-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "ru/discharge-document-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "ru/owner-full-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "ru/owner-overview-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "ru/blocked-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "ru/blocked-full-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "ru/missing-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "ru/missing-full-mobile",
+      "unchanged": true
+    },
+    {
+      "key": "en/dose-review-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "ru/dose-review-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "en/visit-audience-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "ru/visit-audience-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "en/visit-workspace-desktop",
+      "unchanged": true
+    },
+    {
+      "key": "ru/visit-workspace-desktop",
+      "unchanged": true
+    }
+  ],
+  "preservedFiles": [
+    {
+      "file": "src/copy/cases/vet-v2.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/copy/ru/cases/vet-v2.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/vet-v2-media.json",
+      "unchanged": true
+    },
+    {
+      "file": "src/components/vet/VetHome.astro",
+      "unchanged": true
+    },
+    {
+      "file": "ds/tokens.css",
+      "unchanged": true
+    },
+    {
+      "file": "src/styles/tokens.css",
+      "unchanged": true
+    },
+    {
+      "file": "src/components/MediaZoom.astro",
+      "unchanged": true
+    },
+    {
+      "file": "src/components/CaseNext.astro",
+      "unchanged": true
+    }
+  ],
+  "tokenMirror": true
+}

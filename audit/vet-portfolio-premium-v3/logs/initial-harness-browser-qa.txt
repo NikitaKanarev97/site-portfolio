@@ -1,0 +1,13 @@
+FAIL en-1440 Canonical, description and locale are accurate
+FAIL en-1440 Inspection link has visible keyboard focus and 48px target
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+apiRequestContext.get: Invalid URL
+    at D:\Claude-projects\sp-vet-premium-v3\audit\vet-portfolio-premium-v3\qa.mjs:60:88 {
+  log: [],
+  name: 'TypeError'
+}
+
+Node.js v24.18.0

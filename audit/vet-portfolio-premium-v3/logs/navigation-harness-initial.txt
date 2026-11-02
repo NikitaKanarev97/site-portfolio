@@ -1,0 +1,47 @@
+en-1440 88/88
+en-1280 86/86
+en-1024 86/86
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[data-navbar-trigger]')
+    - locator resolved to <button type="button" aria-expanded="false" data-navbar-trigger="" data-label-open="Menu" data-astro-cid-5blmo7yk="" aria-controls="navbar-panel" data-label-close="Close menu" class="navbar__trigger ds-body-sm"> Menu </button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    56 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+
+    at D:\Claude-projects\sp-vet-premium-v3\audit\vet-portfolio-premium-v3\qa.mjs:72:61 {
+  log: [
+    "  - waiting for locator('[data-navbar-trigger]')",
+    '    - locator resolved to <button type="button" aria-expanded="false" data-navbar-trigger="" data-label-open="Menu" data-astro-cid-5blmo7yk="" aria-controls="navbar-panel" data-label-close="Close menu" class="navbar__trigger ds-body-sm"> Menu </button>',
+    '  - attempting click action',
+    '    2 × waiting for element to be visible, enabled and stable',
+    '      - element is not visible',
+    '    - retrying click action',
+    '    - waiting 20ms',
+    '    2 × waiting for element to be visible, enabled and stable',
+    '      - element is not visible',
+    '    - retrying click action',
+    '      - waiting 100ms',
+    '    56 × waiting for element to be visible, enabled and stable',
+    '       - element is not visible',
+    '     - retrying click action',
+    '       - waiting 500ms'
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v24.18.0
