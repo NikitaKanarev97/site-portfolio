@@ -2,7 +2,7 @@
 
 Authorised by CODEX-PROMPT.md and the owner's complete V3 implementation request, 2 November 2026. Builds on accepted V2.2 via research SHA 1edb887. No Figma or global token changes. Case-scoped VetCase/VetShot retain native CaseScreen/MediaZoom, TextLink, CaseNext and shared Onest roles.
 
-0. Sage hero: original contiguous Visit Record; short thesis beside title, compact role/scope/year/browser disclosure before image. Phone uses original native context. Compact metadata is intentional: preserve visible clinical proof.
+0. Sage hero: original contiguous Visit Record; short thesis beside title, compact role/scope/year/browser disclosure before image. Phone uses original native context. Compact metadata is intentional: preserve visible clinical proof. Owner correction, 2 November: `VetShot appearance=cover` clips the outer contour with radius-lg and adds space-6 of white presentation field below the source image, so the prescription card does not touch the lower edge. Source pixels, full-screen originals and all other shots remain unchanged.
 1. Constraint: 30 sec is an input, beside editorial diagnosis; actual current Queue below. Three short tensions replace speculative pain claims. Research source: one practitioner.
 2. Information model: connected trace → saved record → services invoice / reviewed published owner snapshot. Clinic-only rail explicitly excludes private fields. Small semantic HTML model, readable sequential phone order; real private-note specimen beneath. This replaces the archived 44-screen flow and V2's disconnected columns.
 3. Trace: native Quick Trace with its actual validation/save boundary. Wide stage vs narrow native source. No hero duplication.
