@@ -19,7 +19,7 @@ export interface PawlyCaseCopy {
     owner: { label: string; shot: PawlyShot }; walker: { label: string; shot: PawlyShot };
     rows: { term: string; owner: string; walker: string }[]; note: string;
   };
-  branches: PawlyChapter & { items: { kicker: string; title: string; refuses: string; shot: PawlyShot }[]; note: string };
+  branches: PawlyChapter & { items: { kicker: string; title: string; refuses: string; shot: PawlyShot; action: PawlyShot }[]; note: string };
   proof: PawlyChapter & {
     vocabulary: { term: string; text: string }[];
     steps: { label: string; caption: string; shot: PawlyShot }[];
@@ -82,8 +82,8 @@ export const pawlyCaseEn: PawlyCaseCopy = {
     thesis: 'When a step fails, nothing is assumed.',
     body: 'In both cases below, the product stops and says so instead of quietly filling the gap.',
     items: [
-      { kicker: 'Before pickup', title: 'Marina can’t make it', refuses: 'There is no compatible reserve, so nobody is assigned automatically. The owner picks another time or cancels with the refund shown.', shot: { key: 'branch-reserve', alt: 'Marina K. can’t make it. No compatible walker for this time; nobody will be assigned automatically. The booking for 14:00–14:45 and 950 ₽ is shown below.' } },
-      { kicker: 'At the door', title: 'The return photo fails to send', refuses: 'The photo is kept on the phone, but the walk, the report and the payout stay where they were until a retry succeeds.', shot: { key: 'branch-failed', alt: 'Sending failed, photo saved. Not confirmed yet: the selected photo is saved; the booking and payout have not advanced.' } },
+      { kicker: 'Before pickup', title: 'Marina can’t make it', refuses: 'There is no compatible reserve, so nobody is assigned automatically. The owner picks another time or cancels with the refund shown.', shot: { key: 'branch-reserve', alt: 'Marina K. can’t make it. No compatible walker for this time; nobody will be assigned automatically. The booking for 14:00–14:45 and 950 ₽, then Cancel booking: refund 475 ₽, retained 475 ₽.' }, action: { key: 'branch-reserve-action', alt: 'Bottom bar of the same screen: Choose another time or walker.' } },
+      { kicker: 'At the door', title: 'The return photo fails to send', refuses: 'The photo is kept on the phone, but the walk, the report and the payout stay where they were until a retry succeeds.', shot: { key: 'branch-failed', alt: 'Sending failed, photo saved. Not confirmed yet: the selected photo is saved; the booking and payout have not advanced.' }, action: { key: 'branch-failed-action', alt: 'Bottom bar of the same screen: Retry confirmation, Retake. Local demo only · no photo is uploaded.' } },
     ],
     note: 'Two alternative branches of the same 14:00 booking, captured separately.',
   },

@@ -27,8 +27,14 @@ SPEC = {
     'match-review':     ('booking-review', [('section', '_panel', 0)], '01 Booking review: before you confirm (card interior)', 'inner'),
     'role-owner':       ('active-service-walking', [('section', '_card', 1), ('section', '_card', 2)], '02 Owner: walk updates and a static route preview'),
     'role-walker':      ('walker-order-walking', [('section', '_card _hero', 0), ('section', 'j0wu', 0)], '02 Walker: deadline and handling notes'),
-    'branch-reserve':   ('replacement-no-reserve', [('section', '_decision', 0), ('section', '_panel', 0)], '03 Before pickup: no compatible reserve, nobody assigned'),
+    # V2.1: 'follow' carries the slice on through the next content block below the sections (here the Cancel booking
+    # row, which the decision text refers to as "the refund shown below"), up to the next empty run of page surface.
+    'branch-reserve':   ('replacement-no-reserve', [('section', '_decision', 0), ('section', '_panel', 0)], '03 Before pickup: no compatible reserve, nobody assigned, cancel with refund', 'follow'),
     'branch-failed':    ('return-failed', [('section', '_proofCard', 0)], '03 At return: sending failed, photo saved'),
+    # V2.1: the recovery actions live in each screen's fixed bottom bar, so they are cut as their own slice from the same
+    # capture: the footer box below its 1 px top hairline, to the end of the document. Shown under the main slice, apart.
+    'branch-reserve-action': ('replacement-no-reserve', [('footer', '_checkout', 0)], '03 Before pickup: the bar action, choose another time or walker', 'footer'),
+    'branch-failed-action':  ('return-failed', [('footer', '_screenFooter', 0)], '03 At return: the bar actions, retry confirmation or retake', 'footer'),
     'proof-selected':   ('return-selected', [('section', '_proofCard', 0)], '04 Selected, not sent'),
     'proof-confirmed':  ('return-confirmed', [('section', '_proofCard', 0)], '04 Return confirmed after retry'),
     'proof-report':     ('order-details', [('section', '_hero', 0), ('section', '_card', 0)], '04 Owner report: Baikal is home, how the walk went'),
@@ -89,8 +95,27 @@ for key, (shot, parts, purpose, *mode) in SPEC.items():
             b = boxes[0]
             rect = ((b['x'] + 8) * 2, (b['y'] + 8) * 2, (b['x'] + b['w'] - 8) * 2, (b['y'] + b['h'] - 8) * 2)
             ref = im.getpixel((rect[0] + 2, rect[1] + 2))
+        elif mode == ['footer']:
+            b = boxes[0]
+            y0 = b['y'] * 2
+            while not clean(im, y0, (255, 255, 255)): y0 += 1  # skip the bar's top hairline
+            assert y0 - b['y'] * 2 <= 4, (key, locale, y0)
+            y1 = min(b['y'] * 2 + b['h'] * 2, im.height)  # a fixed bar ends with the document (boxes round up a pixel)
+            assert clean(im, y1 - 1, (255, 255, 255)), (key, locale, 'footer bottom not clean')
+            ref, rect = (255, 255, 255), (0, y0, 780, y1)
         else:
             y0, y1 = edge(im, top - 1, -1, ref), edge(im, bottom, 1, ref) + 1
+            if mode == ['follow']:
+                y = y1
+                while y < y1 + 128 and clean(im, y, ref): y += 1  # next content within 64 CSS px
+                assert y < y1 + 128, (key, locale, 'nothing to follow')
+                while True:  # content ends at the first run of 16 CSS px of clean page surface
+                    run = 0
+                    while run < 32 and clean(im, y + run, ref): run += 1
+                    if run == 32: break
+                    y += run + 1
+                y1 = y + 24  # 12 CSS px of the page surface under the last line, as the product's own section gap
+                assert all(clean(im, r, ref) for r in range(y, y1)), (key, locale, 'follow tail not clean')
             rect = (0, y0, 780, y1)
         y0, y1 = rect[1], rect[3]
         out = dst / f'{key}-{locale}.webp'

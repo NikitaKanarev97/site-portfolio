@@ -6,6 +6,8 @@
  * The cover opens on the open question (pickup received, return expected); the sand Return band answers it.
  * Shares the site's grammar with the other V3 cases (label rail + thesis, hairline rules, 12 columns,
  * caption under media) but not their compositions: phone slices stay at native width, never miniatures.
+ * V2.1: every screen sits on a plate (PawlyShot); screens side by side share label, plate and caption tracks
+ * through subgrid, so plates in one row end on one line and the screen is centred in its own field.
  *
  * Motion only through registered data-motion names (lines, fade, fade-image, rise); reduced motion and
  * no-JS keep everything visible. The shared CaseStory and the Home cover are not touched.
@@ -42,7 +44,7 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
       <div class="pawly-stage" data-motion="fade-image">
         {/* Wide screens: the received pickup frame large, beside the owner's screen that cites it.
             Phones show only the screen, which already carries the same photo. */}
-        <PawlyShot class="pawly-stage__status" shot={cover.status} locale={locale} zoomLabel={zoom} loading="eager" />
+        <PawlyShot class="pawly-stage__status" shot={cover.status} locale={locale} zoomLabel={zoom} plate="none" loading="eager" />
         <div class="pawly-stage__story">
         <figure class="pawly-stage__photo">
           <img src={photo.src} width={photo.width} height={photo.height} alt={cover.photoAlt} loading="eager" decoding="async" />
@@ -134,7 +136,7 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
               <h3 class="ds-heading-xl pawly-branch__title">{item.title}</h3>
               <p class="ds-body-base pawly-branch__refuses">{item.refuses}</p>
             </div>
-            <PawlyShot shot={item.shot} locale={locale} zoomLabel={zoom} />
+            <PawlyShot class="pawly-branch__shot" shot={item.shot} action={item.action} locale={locale} zoomLabel={zoom} />
           </article>
         ))}
       </div>
@@ -163,7 +165,7 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
           <ol class="pawly-proof__grid" data-motion-group data-motion-stagger="base">
             {proof.steps.map(step => (
               <li class="pawly-proof__item" data-motion="rise">
-                <PawlyShot shot={step.shot} locale={locale} zoomLabel={zoom} label={step.label} caption={step.caption} />
+                <PawlyShot shot={step.shot} locale={locale} zoomLabel={zoom} label={step.label} caption={step.caption} plate="canvas" />
               </li>
             ))}
           </ol>
@@ -240,7 +242,7 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
 
   .pawly-stage {
     display: grid; gap: var(--space-4);
-    padding: var(--space-3);
+    padding: var(--space-8) var(--space-3);
     background: var(--surface-cover-pawly);
     border-radius: var(--radius-lg);
   }
@@ -267,7 +269,7 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
   }
 
   /* ---------- Sheet + shared module grammar (same family as Portal/Agent V3) ---------- */
-  .pawly-sheet { --pawly-step: var(--space-24); position: relative; z-index: 1; padding-block-end: var(--pawly-step); background: var(--surface-default); }
+  .pawly-sheet { --pawly-step: var(--space-24); --pawly-shot-col: calc(390px + 2 * var(--space-6)); position: relative; z-index: 1; padding-block-end: var(--pawly-step); background: var(--surface-default); }
   .pawly-sheet > * + * { margin-block-start: var(--pawly-step); }
   .pawly-facts { padding-block-start: var(--flow-node); }
   .pawly-label { margin: 0; color: var(--text-meta); }
@@ -279,12 +281,13 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
   .pawly-note { margin: 0; max-inline-size: var(--measure-case); color: var(--text-muted); }
 
   /* ---------- 13:20 Choosing: three decisions in reading order ---------- */
+  /* 26rem: one screen per row in the 672 px tablet column, two in the 864 px one at 1024. */
   .pawly-steps {
     display: grid; gap: var(--flow-node) var(--gutter);
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr));
     margin-block-end: 0; padding: 0; list-style: none;
   }
-  .pawly-steps__item { display: grid; justify-items: start; min-inline-size: 0; }
+  .pawly-steps__item { display: grid; min-inline-size: 0; }
   .pawly-rule {
     margin-block-end: 0; max-inline-size: 30ch;
     padding-block-start: var(--space-4);
@@ -293,7 +296,7 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
   }
 
   /* ---------- 14:05 Handoff: owner · what differs · walker ---------- */
-  .pawly-roles { display: grid; gap: var(--flow-node); align-items: start; }
+  .pawly-roles { display: grid; gap: var(--flow-node); }
   .pawly-roles__compare { display: grid; gap: var(--flow-text); align-content: start; }
   .pawly-compare { display: grid; gap: var(--flow-text); margin: 0; }
   .pawly-compare__row { display: grid; gap: var(--space-2); padding-block-start: var(--space-4); border-block-start: var(--border-width) solid var(--border-strong); }
@@ -305,6 +308,7 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
   .pawly-branches { display: grid; gap: var(--flow-group) var(--gutter); }
   .pawly-branch { display: grid; gap: var(--flow-text); align-content: start; min-inline-size: 0; padding-block-start: var(--space-4); border-block-start: var(--border-width) solid var(--border-strong); }
   .pawly-branch__text { display: grid; gap: var(--space-2); align-content: start; }
+  .pawly-branch > :global(.pawly-branch__shot) { align-self: stretch; }
   .pawly-branch__kicker, .pawly-branch__title, .pawly-branch__refuses { margin: 0; }
   .pawly-branch__kicker { color: var(--text-meta); }
   .pawly-branch__refuses { max-inline-size: 44ch; color: var(--text-subtle); }
@@ -320,13 +324,13 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
   .pawly-vocab__text { margin: 0; color: var(--text-subtle); }
   .pawly-proof__grid {
     display: grid; gap: var(--flow-node) var(--gutter);
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr));
     margin: 0; padding: 0; list-style: none;
   }
-  .pawly-proof__item { display: grid; justify-items: start; min-inline-size: 0; }
+  .pawly-proof__item { display: grid; min-inline-size: 0; }
 
   /* ---------- Settlement ---------- */
-  .pawly-settle { display: grid; gap: var(--flow-node) var(--gutter); align-items: start; }
+  .pawly-settle { display: grid; gap: var(--flow-node) var(--gutter); }
   .pawly-sum { display: grid; gap: var(--flow-text); align-content: start; }
   .pawly-sum__lines { display: grid; margin: 0; padding: 0; list-style: none; }
   .pawly-sum__line { display: grid; gap: var(--space-1); padding-block: var(--space-3); border-block-start: var(--border-width) solid var(--border-default); }
@@ -367,14 +371,25 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
     .pawly-cover__inner { display: flex; flex-direction: column; gap: var(--flow-pair); padding-block-start: var(--space-4); }
     .pawly-cover__head { display: contents; }
     /* Full-bleed sand on phones: the screen gets the whole column, like every other screen on the page. */
-    .pawly-stage { order: 1; margin-block-start: var(--space-3); margin-inline: calc(var(--margin-sm) * -1); padding: var(--space-4) var(--margin-sm); border-radius: 0; }
+    .pawly-stage { order: 1; row-gap: var(--space-6); margin-block-start: var(--space-3); margin-inline: calc(var(--margin-sm) * -1); border-radius: 0; }
     .pawly-cover__role { order: 2; margin-block-start: var(--space-3); }
+  }
+  /* 320: the stage keeps its 32 px field; the 16 px it adds come out of the space above it, so the screen still
+     starts in the upper 45% of a 640 px viewport. */
+  @media not (--bp-sm) {
+    .pawly-cover__inner { padding-block-start: var(--space-3); }
+    .pawly-stage { margin-block-start: 0; }
+  }
+
+  /* Same fields as a PawlyShot plate: 40 above and below, 16 at the sides from 360. */
+  @media (--bp-sm) {
+    .pawly-stage { padding: calc(var(--space-8) + var(--space-2)) var(--space-4); }
   }
 
   /* ---------- Tablet ---------- */
   @media (--bp-md) {
     .pawly-stage {
-      padding: var(--stage-inset);
+      padding: var(--space-12) var(--stage-inset);
       grid-template-columns: minmax(0, 520px) 390px;
       justify-content: center; column-gap: var(--space-8); align-items: start;
     }
@@ -383,14 +398,14 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
     .pawly-stage > :global(.pawly-stage__status) { grid-column: 2; grid-row: 1; justify-self: start; }
     .pawly-stage__caption { max-inline-size: 44ch; }
     .pawly-clock { max-inline-size: none; }
-    .pawly-roles { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--gutter); }
-    .pawly-roles__compare { grid-column: 1 / -1; grid-row: 2; }
     .pawly-compare { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--gutter); }
     .pawly-compare__pair { grid-template-columns: 1fr; }
-    .pawly-branches { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .pawly-vocab { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .pawly-settle { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--gutter); }
-    .pawly-sum { grid-column: 1 / -1; }
+    /* Rows of screens: each item spans label · plate · caption of the shared row, so plates end on one line. */
+    .pawly-steps, .pawly-proof__grid { row-gap: 0; }
+    .pawly-steps__item, .pawly-proof__item { grid-row: span 3; grid-template-rows: subgrid; padding-block-end: var(--flow-node); }
+    .pawly-steps__item > :global(.pawly-shot), .pawly-proof__item > :global(.pawly-shot) { grid-row: span 3; grid-template-rows: subgrid; }
+    .pawly-band { padding-block: var(--space-24); }
     .pawly-sum__lines { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--gutter); }
     .pawly-sum__line:last-child { border-block-end: 0; }
     .pawly-outcome { padding: var(--space-12); }
@@ -399,13 +414,21 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
 
   /* ---------- Desktop: 12 columns, label rail + thesis ---------- */
   @media (--bp-lg) {
+    /* Screens pair up only from here: at 768 two plates would hold each screen at 0.75 of native, so the tablet
+       keeps one screen per row at native width (V2.1). */
+    .pawly-roles { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--gutter); }
+    .pawly-roles__compare { grid-column: 1 / -1; grid-row: 2; }
+    .pawly-branches { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .pawly-branch { grid-row: span 2; grid-template-rows: subgrid; row-gap: var(--flow-text); }
+    .pawly-settle { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--gutter); }
+    .pawly-sum { grid-column: 1 / -1; }
     .pawly-sheet { --pawly-step: var(--space-32); }
     .pawly-cover__head, .pawly-head, .pawly-outcome { grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); }
     .pawly-cover__eyebrow { grid-column: 1 / -1; }
     .pawly-cover__title { grid-column: 1 / span 4; grid-row: 2 / span 2; }
     .pawly-cover__thesis { grid-column: 5 / -1; grid-row: 2; }
     .pawly-cover__role { grid-column: 5 / span 7; grid-row: 3; }
-    .pawly-stage { column-gap: var(--space-16); }
+    .pawly-stage { column-gap: var(--space-16); padding-block: var(--space-16); }
 
     .pawly-head > .pawly-label { grid-column: 1 / span 3; padding-block-start: var(--space-2); }
     .pawly-head__text { grid-column: 4 / -1; }
@@ -419,15 +442,30 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
 
   /* ---------- Wide desktop: the handoff becomes owner · difference · walker ---------- */
   @media (--bp-xl) {
-    .pawly-roles { grid-template-columns: minmax(0, 390px) minmax(0, 1fr) minmax(0, 390px); column-gap: var(--space-12); }
+    .pawly-roles { grid-template-columns: minmax(0, var(--pawly-shot-col)) minmax(0, 1fr) minmax(0, var(--pawly-shot-col)); column-gap: var(--space-8); }
     .pawly-roles__compare { grid-column: 2; grid-row: 1; }
     .pawly-compare { grid-template-columns: 1fr; }
     .pawly-compare__pair { grid-template-columns: max-content minmax(0, 1fr); }
     .pawly-roles > :global(.pawly-roles__walker) { grid-column: 3; }
-    .pawly-steps { grid-template-columns: repeat(3, minmax(0, 390px)); justify-content: space-between; }
+    .pawly-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .pawly-branches { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .pawly-proof__grid { grid-template-columns: repeat(3, minmax(0, 390px)); justify-content: space-between; }
-    .pawly-settle { grid-template-columns: minmax(0, 1fr) minmax(0, 390px) minmax(0, 390px); column-gap: var(--space-12); }
+    .pawly-proof__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    /* Three screens in one row share one stage (H1, ha-phones): one surface, screens top-aligned 64 below its edge,
+       48 between them and to its sides; labels and captions start where the screens start. */
+    .pawly-steps, .pawly-proof__grid { padding-inline: var(--space-12); column-gap: var(--space-12); }
+    .pawly-steps::before, .pawly-proof__grid::before {
+      content: ''; grid-column: 1 / -1; grid-row: 2;
+      margin-inline: calc(var(--space-12) * -1);
+      background: var(--surface-plate); border-radius: var(--radius-lg);
+    }
+    .pawly-proof__grid::before { background: var(--surface-subtle); }
+    /* Placed explicitly: auto-placed items would avoid the cells the stage occupies and spill into new columns. */
+    .pawly-steps__item, .pawly-proof__item { grid-row: 1 / span 3; }
+    .pawly-steps__item:nth-child(2), .pawly-proof__item:nth-child(2) { grid-column: 2; }
+    .pawly-steps__item:nth-child(3), .pawly-proof__item:nth-child(3) { grid-column: 3; }
+    .pawly-steps__item:first-child, .pawly-proof__item:first-child { grid-column: 1; }
+    .pawly-steps :global(.pawly-shot__plate), .pawly-proof__grid :global(.pawly-shot__plate) { align-content: start; padding-inline: 0; background: none; }
+    .pawly-settle { grid-template-columns: minmax(0, 1fr) repeat(2, minmax(0, var(--pawly-shot-col))); column-gap: var(--space-8); }
     .pawly-sum { grid-column: 1; }
     .pawly-sum__lines { grid-template-columns: 1fr; }
     .pawly-sum__line:last-child { border-block-end: var(--border-width) solid var(--border-strong); }
