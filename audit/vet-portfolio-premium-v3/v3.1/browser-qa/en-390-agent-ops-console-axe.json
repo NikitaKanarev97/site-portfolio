@@ -1,0 +1,15 @@
+[
+  {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": [
+      {
+        "target": [
+          ".case-next__label-text"
+        ],
+        "html": "<span class=\"case-next__label-text\" data-astro-cid-qnrozarn=\"\">Next case<span class=\"case-next__rule\" data-astro-cid-qnrozarn=\"\"></span></span>",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #d43220, background color: #f3e6ae, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      }
+    ]
+  }
+]

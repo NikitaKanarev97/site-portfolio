@@ -1,0 +1,5852 @@
+[
+  {
+    "name": "en-1440",
+    "tests": [
+      {
+        "label": "V3 rendered on the localized public route",
+        "pass": true
+      },
+      {
+        "label": "Single h1 and nine connected chapters",
+        "pass": true
+      },
+      {
+        "label": "No horizontal overflow",
+        "pass": true
+      },
+      {
+        "label": "All displayed product sources load with natural geometry and alt",
+        "pass": true,
+        "details": [
+          {
+            "src": "/media/case-vet-v2/en/visit-workspace-desktop.webp",
+            "alt": "Visit Record for Marsik: clinic and patient headers, draft and publication status, saved 4.8 kg Quick Trace, clinical notes and the complete Meloxicam prescription with calculation review.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/queue-desktop.webp",
+            "alt": "Current Day Queue detail: arrival priority and patient-specific next actions, with unfinished-record context above.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/private-desktop.webp",
+            "alt": "Complete private-note section with Veterinarians only and an explicit exclusion from discharge, invoice and owner view.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/trace-desktop.webp",
+            "alt": "Native Quick Trace weight entry: current 4.8 kg, change from the last clinic measurement, author, date and distinct clinic or owner sources. The complete trace is available for inspection.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/dose-review-desktop.webp",
+            "alt": "Dose Calculator review: Marsik, selected formulation, 0.95 ml example, weight and rate in dimensional arithmetic, rounding, limitation and record action. Full input workspace is available below.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/invoice-document-desktop.webp",
+            "alt": "Complete invoice services document: two selected services, 1,500 RUB total, Mark as paid and the manual-status limitation.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/publish-desktop.webp",
+            "alt": "Native publication panel: ready to publish, recipient, owner cabinet destination, clinic-only exclusions and explicit Publish discharge summary action.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/blocked-desktop.webp",
+            "alt": "Publication panel for an empty saved plan: publication disabled and the previous owner publication retained.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/owner-overview-desktop.webp",
+            "alt": "Published Owner Home: Marsik’s care plan, 0.95 ml illustrative prescription, visit provenance, discharge and clinic telephone action.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/owner-overview-mobile.webp",
+            "alt": "Native mobile Owner Home detail: patient context, published plan and complete illustrative prescription. The full screen includes discharge and clinic contact.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/missing-mobile.webp",
+            "alt": "Native owner prescription exception: Dose unavailable, confirmation required before giving medication, and the clinic telephone link.",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "No research/third-party screenshots on public page",
+        "pass": true
+      },
+      {
+        "label": "Real native hero selected for current breakpoint",
+        "pass": true
+      },
+      {
+        "label": "Real product visible in first viewport",
+        "pass": true
+      },
+      {
+        "label": "Canonical, description and locale are accurate",
+        "pass": true,
+        "details": {
+          "canonical": "https://kanarev.com/work/vet-clinic/"
+        }
+      },
+      {
+        "label": "OG image route loads",
+        "pass": true
+      },
+      {
+        "label": "Every chapter anchor resolves",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to roles",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to publication",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to process",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 0 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 1 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 2 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 3 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 4 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 5 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 6 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 7 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 8 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 9 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 10 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 11 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 12 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 13 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 14 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 15 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 16 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 17 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 18 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 19 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 20 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 20 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 20 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 21 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 21 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 21 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Pointer zoom opens dialog",
+        "pass": true
+      },
+      {
+        "label": "Inspection link has visible keyboard focus and 48px target",
+        "pass": true,
+        "details": {
+          "outline": "solid",
+          "height": 48,
+          "visible": true
+        }
+      },
+      {
+        "label": "Inspection pressed state has a visible underline",
+        "pass": true
+      },
+      {
+        "label": "Inspection target is an ordinary resolvable source href",
+        "pass": true
+      },
+      {
+        "label": "Product CTA has locale and safe new-tab behavior",
+        "pass": true
+      },
+      {
+        "label": "CaseNext retains Pawly destination",
+        "pass": true
+      },
+      {
+        "label": "Language toggle opens the paired Vet case",
+        "pass": true
+      },
+      {
+        "label": "No automated WCAG A/AA findings in the case",
+        "pass": true,
+        "details": []
+      },
+      {
+        "label": "No runtime errors or failed assets",
+        "pass": true,
+        "details": {
+          "errors": [],
+          "assets": []
+        }
+      }
+    ],
+    "errors": [],
+    "failedAssets": [],
+    "axe": []
+  },
+  {
+    "name": "en-1280",
+    "tests": [
+      {
+        "label": "V3 rendered on the localized public route",
+        "pass": true
+      },
+      {
+        "label": "Single h1 and nine connected chapters",
+        "pass": true
+      },
+      {
+        "label": "No horizontal overflow",
+        "pass": true
+      },
+      {
+        "label": "All displayed product sources load with natural geometry and alt",
+        "pass": true,
+        "details": [
+          {
+            "src": "/media/case-vet-v2/en/visit-workspace-desktop.webp",
+            "alt": "Visit Record for Marsik: clinic and patient headers, draft and publication status, saved 4.8 kg Quick Trace, clinical notes and the complete Meloxicam prescription with calculation review.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/queue-desktop.webp",
+            "alt": "Current Day Queue detail: arrival priority and patient-specific next actions, with unfinished-record context above.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/private-desktop.webp",
+            "alt": "Complete private-note section with Veterinarians only and an explicit exclusion from discharge, invoice and owner view.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/trace-desktop.webp",
+            "alt": "Native Quick Trace weight entry: current 4.8 kg, change from the last clinic measurement, author, date and distinct clinic or owner sources. The complete trace is available for inspection.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/dose-review-desktop.webp",
+            "alt": "Dose Calculator review: Marsik, selected formulation, 0.95 ml example, weight and rate in dimensional arithmetic, rounding, limitation and record action. Full input workspace is available below.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/invoice-document-desktop.webp",
+            "alt": "Complete invoice services document: two selected services, 1,500 RUB total, Mark as paid and the manual-status limitation.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/publish-desktop.webp",
+            "alt": "Native publication panel: ready to publish, recipient, owner cabinet destination, clinic-only exclusions and explicit Publish discharge summary action.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/blocked-desktop.webp",
+            "alt": "Publication panel for an empty saved plan: publication disabled and the previous owner publication retained.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/owner-overview-desktop.webp",
+            "alt": "Published Owner Home: Marsik’s care plan, 0.95 ml illustrative prescription, visit provenance, discharge and clinic telephone action.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/owner-overview-mobile.webp",
+            "alt": "Native mobile Owner Home detail: patient context, published plan and complete illustrative prescription. The full screen includes discharge and clinic contact.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/missing-mobile.webp",
+            "alt": "Native owner prescription exception: Dose unavailable, confirmation required before giving medication, and the clinic telephone link.",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "No research/third-party screenshots on public page",
+        "pass": true
+      },
+      {
+        "label": "Real native hero selected for current breakpoint",
+        "pass": true
+      },
+      {
+        "label": "Real product visible in first viewport",
+        "pass": true
+      },
+      {
+        "label": "Canonical, description and locale are accurate",
+        "pass": true,
+        "details": {
+          "canonical": "https://kanarev.com/work/vet-clinic/"
+        }
+      },
+      {
+        "label": "OG image route loads",
+        "pass": true
+      },
+      {
+        "label": "Every chapter anchor resolves",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to roles",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to publication",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to process",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 0 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 1 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 2 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 3 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 4 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 5 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 6 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 7 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 8 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 9 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 10 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 11 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 12 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 13 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 14 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 15 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 16 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 17 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 18 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 19 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 20 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 20 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 20 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 21 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 21 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 21 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Pointer zoom opens dialog",
+        "pass": true
+      },
+      {
+        "label": "Inspection link has visible keyboard focus and 48px target",
+        "pass": true,
+        "details": {
+          "outline": "solid",
+          "height": 48,
+          "visible": true
+        }
+      },
+      {
+        "label": "Product CTA has locale and safe new-tab behavior",
+        "pass": true
+      },
+      {
+        "label": "CaseNext retains Pawly destination",
+        "pass": true
+      },
+      {
+        "label": "Language toggle opens the paired Vet case",
+        "pass": true
+      },
+      {
+        "label": "No automated WCAG A/AA findings in the case",
+        "pass": true,
+        "details": []
+      },
+      {
+        "label": "No runtime errors or failed assets",
+        "pass": true,
+        "details": {
+          "errors": [],
+          "assets": []
+        }
+      }
+    ],
+    "errors": [],
+    "failedAssets": [],
+    "axe": []
+  },
+  {
+    "name": "en-1024",
+    "tests": [
+      {
+        "label": "V3 rendered on the localized public route",
+        "pass": true
+      },
+      {
+        "label": "Single h1 and nine connected chapters",
+        "pass": true
+      },
+      {
+        "label": "No horizontal overflow",
+        "pass": true
+      },
+      {
+        "label": "All displayed product sources load with natural geometry and alt",
+        "pass": true,
+        "details": [
+          {
+            "src": "/media/case-vet-v2/en/visit-workspace-desktop.webp",
+            "alt": "Visit Record for Marsik: clinic and patient headers, draft and publication status, saved 4.8 kg Quick Trace, clinical notes and the complete Meloxicam prescription with calculation review.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/queue-desktop.webp",
+            "alt": "Current Day Queue detail: arrival priority and patient-specific next actions, with unfinished-record context above.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/private-desktop.webp",
+            "alt": "Complete private-note section with Veterinarians only and an explicit exclusion from discharge, invoice and owner view.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/trace-desktop.webp",
+            "alt": "Native Quick Trace weight entry: current 4.8 kg, change from the last clinic measurement, author, date and distinct clinic or owner sources. The complete trace is available for inspection.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/dose-review-desktop.webp",
+            "alt": "Dose Calculator review: Marsik, selected formulation, 0.95 ml example, weight and rate in dimensional arithmetic, rounding, limitation and record action. Full input workspace is available below.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/invoice-document-desktop.webp",
+            "alt": "Complete invoice services document: two selected services, 1,500 RUB total, Mark as paid and the manual-status limitation.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/publish-desktop.webp",
+            "alt": "Native publication panel: ready to publish, recipient, owner cabinet destination, clinic-only exclusions and explicit Publish discharge summary action.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/blocked-desktop.webp",
+            "alt": "Publication panel for an empty saved plan: publication disabled and the previous owner publication retained.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/owner-overview-desktop.webp",
+            "alt": "Published Owner Home: Marsik’s care plan, 0.95 ml illustrative prescription, visit provenance, discharge and clinic telephone action.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/owner-overview-mobile.webp",
+            "alt": "Native mobile Owner Home detail: patient context, published plan and complete illustrative prescription. The full screen includes discharge and clinic contact.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/missing-mobile.webp",
+            "alt": "Native owner prescription exception: Dose unavailable, confirmation required before giving medication, and the clinic telephone link.",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "No research/third-party screenshots on public page",
+        "pass": true
+      },
+      {
+        "label": "Real native hero selected for current breakpoint",
+        "pass": true
+      },
+      {
+        "label": "Real product visible in first viewport",
+        "pass": true
+      },
+      {
+        "label": "Canonical, description and locale are accurate",
+        "pass": true,
+        "details": {
+          "canonical": "https://kanarev.com/work/vet-clinic/"
+        }
+      },
+      {
+        "label": "OG image route loads",
+        "pass": true
+      },
+      {
+        "label": "Every chapter anchor resolves",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to roles",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to publication",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to process",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 0 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 1 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 2 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 3 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 4 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 5 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 6 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 7 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 8 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 9 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 10 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 11 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 12 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 13 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 14 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 15 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 16 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 17 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 18 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 19 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 20 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 20 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 20 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 21 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 21 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 21 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Pointer zoom opens dialog",
+        "pass": true
+      },
+      {
+        "label": "Inspection link has visible keyboard focus and 48px target",
+        "pass": true,
+        "details": {
+          "outline": "solid",
+          "height": 48,
+          "visible": true
+        }
+      },
+      {
+        "label": "Product CTA has locale and safe new-tab behavior",
+        "pass": true
+      },
+      {
+        "label": "CaseNext retains Pawly destination",
+        "pass": true
+      },
+      {
+        "label": "Language toggle opens the paired Vet case",
+        "pass": true
+      },
+      {
+        "label": "No automated WCAG A/AA findings in the case",
+        "pass": true,
+        "details": []
+      },
+      {
+        "label": "No runtime errors or failed assets",
+        "pass": true,
+        "details": {
+          "errors": [],
+          "assets": []
+        }
+      }
+    ],
+    "errors": [],
+    "failedAssets": [],
+    "axe": []
+  },
+  {
+    "name": "en-768",
+    "tests": [
+      {
+        "label": "V3 rendered on the localized public route",
+        "pass": true
+      },
+      {
+        "label": "Single h1 and nine connected chapters",
+        "pass": true
+      },
+      {
+        "label": "No horizontal overflow",
+        "pass": true
+      },
+      {
+        "label": "All displayed product sources load with natural geometry and alt",
+        "pass": true,
+        "details": [
+          {
+            "src": "/media/case-vet-v2/en/visit-context-mobile.webp",
+            "alt": "Visit Record for Marsik: clinic and patient headers, draft and publication status, saved 4.8 kg Quick Trace, clinical notes and the complete Meloxicam prescription with calculation review.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/queue-mobile.webp",
+            "alt": "Current Day Queue detail: arrival priority and patient-specific next actions, with unfinished-record context above.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/private-mobile.webp",
+            "alt": "Complete private-note section with Veterinarians only and an explicit exclusion from discharge, invoice and owner view.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/trace-mobile.webp",
+            "alt": "Native Quick Trace weight entry: current 4.8 kg, change from the last clinic measurement, author, date and distinct clinic or owner sources. The complete trace is available for inspection.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/dose-review-mobile.webp",
+            "alt": "Dose Calculator review: Marsik, selected formulation, 0.95 ml example, weight and rate in dimensional arithmetic, rounding, limitation and record action. Full input workspace is available below.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/invoice-document-mobile.webp",
+            "alt": "Complete invoice services document: two selected services, 1,500 RUB total, Mark as paid and the manual-status limitation.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/publish-mobile.webp",
+            "alt": "Native publication panel: ready to publish, recipient, owner cabinet destination, clinic-only exclusions and explicit Publish discharge summary action.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/blocked-mobile.webp",
+            "alt": "Publication panel for an empty saved plan: publication disabled and the previous owner publication retained.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/owner-overview-mobile.webp",
+            "alt": "Native mobile Owner Home detail: patient context, published plan and complete illustrative prescription. The full screen includes discharge and clinic contact.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/missing-mobile.webp",
+            "alt": "Native owner prescription exception: Dose unavailable, confirmation required before giving medication, and the clinic telephone link.",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "No research/third-party screenshots on public page",
+        "pass": true
+      },
+      {
+        "label": "Real native hero selected for current breakpoint",
+        "pass": true
+      },
+      {
+        "label": "Real product visible in first viewport",
+        "pass": true
+      },
+      {
+        "label": "Canonical, description and locale are accurate",
+        "pass": true,
+        "details": {
+          "canonical": "https://kanarev.com/work/vet-clinic/"
+        }
+      },
+      {
+        "label": "OG image route loads",
+        "pass": true
+      },
+      {
+        "label": "Every chapter anchor resolves",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to roles",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to publication",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to process",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 0 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 1 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 2 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 3 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 4 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 5 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 6 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 7 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 8 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 9 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 10 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 11 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 12 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 13 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 14 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 15 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 16 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 17 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 18 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 19 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Pointer zoom opens dialog",
+        "pass": true
+      },
+      {
+        "label": "Inspection link has visible keyboard focus and 48px target",
+        "pass": true,
+        "details": {
+          "outline": "solid",
+          "height": 48,
+          "visible": true
+        }
+      },
+      {
+        "label": "Product CTA has locale and safe new-tab behavior",
+        "pass": true
+      },
+      {
+        "label": "CaseNext retains Pawly destination",
+        "pass": true
+      },
+      {
+        "label": "Language toggle opens the paired Vet case",
+        "pass": true
+      },
+      {
+        "label": "No automated WCAG A/AA findings in the case",
+        "pass": true,
+        "details": []
+      },
+      {
+        "label": "No runtime errors or failed assets",
+        "pass": true,
+        "details": {
+          "errors": [],
+          "assets": []
+        }
+      }
+    ],
+    "errors": [],
+    "failedAssets": [],
+    "axe": []
+  },
+  {
+    "name": "en-390",
+    "tests": [
+      {
+        "label": "V3 rendered on the localized public route",
+        "pass": true
+      },
+      {
+        "label": "Single h1 and nine connected chapters",
+        "pass": true
+      },
+      {
+        "label": "No horizontal overflow",
+        "pass": true
+      },
+      {
+        "label": "All displayed product sources load with natural geometry and alt",
+        "pass": true,
+        "details": [
+          {
+            "src": "/media/case-vet-v2/en/visit-context-mobile.webp",
+            "alt": "Visit Record for Marsik: clinic and patient headers, draft and publication status, saved 4.8 kg Quick Trace, clinical notes and the complete Meloxicam prescription with calculation review.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/queue-mobile.webp",
+            "alt": "Current Day Queue detail: arrival priority and patient-specific next actions, with unfinished-record context above.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/private-mobile.webp",
+            "alt": "Complete private-note section with Veterinarians only and an explicit exclusion from discharge, invoice and owner view.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/trace-mobile.webp",
+            "alt": "Native Quick Trace weight entry: current 4.8 kg, change from the last clinic measurement, author, date and distinct clinic or owner sources. The complete trace is available for inspection.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/dose-review-mobile.webp",
+            "alt": "Dose Calculator review: Marsik, selected formulation, 0.95 ml example, weight and rate in dimensional arithmetic, rounding, limitation and record action. Full input workspace is available below.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/invoice-document-mobile.webp",
+            "alt": "Complete invoice services document: two selected services, 1,500 RUB total, Mark as paid and the manual-status limitation.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/publish-mobile.webp",
+            "alt": "Native publication panel: ready to publish, recipient, owner cabinet destination, clinic-only exclusions and explicit Publish discharge summary action.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/blocked-mobile.webp",
+            "alt": "Publication panel for an empty saved plan: publication disabled and the previous owner publication retained.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/owner-overview-mobile.webp",
+            "alt": "Native mobile Owner Home detail: patient context, published plan and complete illustrative prescription. The full screen includes discharge and clinic contact.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/missing-mobile.webp",
+            "alt": "Native owner prescription exception: Dose unavailable, confirmation required before giving medication, and the clinic telephone link.",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "No research/third-party screenshots on public page",
+        "pass": true
+      },
+      {
+        "label": "Real native hero selected for current breakpoint",
+        "pass": true
+      },
+      {
+        "label": "Real product visible in first viewport",
+        "pass": true
+      },
+      {
+        "label": "Canonical, description and locale are accurate",
+        "pass": true,
+        "details": {
+          "canonical": "https://kanarev.com/work/vet-clinic/"
+        }
+      },
+      {
+        "label": "OG image route loads",
+        "pass": true
+      },
+      {
+        "label": "Every chapter anchor resolves",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to roles",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to publication",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to process",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 0 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 1 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 2 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 3 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 4 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 5 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 6 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 7 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 8 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 9 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 10 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 11 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 12 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 13 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 14 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 15 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 16 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 17 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 18 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 19 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Pointer zoom opens dialog",
+        "pass": true
+      },
+      {
+        "label": "Inspection link has visible keyboard focus and 48px target",
+        "pass": true,
+        "details": {
+          "outline": "solid",
+          "height": 48,
+          "visible": true
+        }
+      },
+      {
+        "label": "Product CTA has locale and safe new-tab behavior",
+        "pass": true
+      },
+      {
+        "label": "CaseNext retains Pawly destination",
+        "pass": true
+      },
+      {
+        "label": "Language toggle opens the paired Vet case",
+        "pass": true
+      },
+      {
+        "label": "No automated WCAG A/AA findings in the case",
+        "pass": true,
+        "details": []
+      },
+      {
+        "label": "No runtime errors or failed assets",
+        "pass": true,
+        "details": {
+          "errors": [],
+          "assets": []
+        }
+      }
+    ],
+    "errors": [],
+    "failedAssets": [],
+    "axe": []
+  },
+  {
+    "name": "en-360",
+    "tests": [
+      {
+        "label": "V3 rendered on the localized public route",
+        "pass": true
+      },
+      {
+        "label": "Single h1 and nine connected chapters",
+        "pass": true
+      },
+      {
+        "label": "No horizontal overflow",
+        "pass": true
+      },
+      {
+        "label": "All displayed product sources load with natural geometry and alt",
+        "pass": true,
+        "details": [
+          {
+            "src": "/media/case-vet-v2/en/visit-context-mobile.webp",
+            "alt": "Visit Record for Marsik: clinic and patient headers, draft and publication status, saved 4.8 kg Quick Trace, clinical notes and the complete Meloxicam prescription with calculation review.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/queue-mobile.webp",
+            "alt": "Current Day Queue detail: arrival priority and patient-specific next actions, with unfinished-record context above.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/private-mobile.webp",
+            "alt": "Complete private-note section with Veterinarians only and an explicit exclusion from discharge, invoice and owner view.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/trace-mobile.webp",
+            "alt": "Native Quick Trace weight entry: current 4.8 kg, change from the last clinic measurement, author, date and distinct clinic or owner sources. The complete trace is available for inspection.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/dose-review-mobile.webp",
+            "alt": "Dose Calculator review: Marsik, selected formulation, 0.95 ml example, weight and rate in dimensional arithmetic, rounding, limitation and record action. Full input workspace is available below.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/invoice-document-mobile.webp",
+            "alt": "Complete invoice services document: two selected services, 1,500 RUB total, Mark as paid and the manual-status limitation.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/publish-mobile.webp",
+            "alt": "Native publication panel: ready to publish, recipient, owner cabinet destination, clinic-only exclusions and explicit Publish discharge summary action.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/blocked-mobile.webp",
+            "alt": "Publication panel for an empty saved plan: publication disabled and the previous owner publication retained.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/owner-overview-mobile.webp",
+            "alt": "Native mobile Owner Home detail: patient context, published plan and complete illustrative prescription. The full screen includes discharge and clinic contact.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/missing-mobile.webp",
+            "alt": "Native owner prescription exception: Dose unavailable, confirmation required before giving medication, and the clinic telephone link.",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "No research/third-party screenshots on public page",
+        "pass": true
+      },
+      {
+        "label": "Real native hero selected for current breakpoint",
+        "pass": true
+      },
+      {
+        "label": "Real product visible in first viewport",
+        "pass": true
+      },
+      {
+        "label": "Canonical, description and locale are accurate",
+        "pass": true,
+        "details": {
+          "canonical": "https://kanarev.com/work/vet-clinic/"
+        }
+      },
+      {
+        "label": "OG image route loads",
+        "pass": true
+      },
+      {
+        "label": "Every chapter anchor resolves",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to roles",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to publication",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to process",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 0 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 1 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 2 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 3 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 4 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 5 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 6 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 7 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 8 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 9 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 10 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 11 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 12 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 13 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 14 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 15 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 16 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 17 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 18 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 19 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Pointer zoom opens dialog",
+        "pass": true
+      },
+      {
+        "label": "Inspection link has visible keyboard focus and 48px target",
+        "pass": true,
+        "details": {
+          "outline": "solid",
+          "height": 48,
+          "visible": true
+        }
+      },
+      {
+        "label": "Product CTA has locale and safe new-tab behavior",
+        "pass": true
+      },
+      {
+        "label": "CaseNext retains Pawly destination",
+        "pass": true
+      },
+      {
+        "label": "Language toggle opens the paired Vet case",
+        "pass": true
+      },
+      {
+        "label": "No automated WCAG A/AA findings in the case",
+        "pass": true,
+        "details": []
+      },
+      {
+        "label": "No runtime errors or failed assets",
+        "pass": true,
+        "details": {
+          "errors": [],
+          "assets": []
+        }
+      }
+    ],
+    "errors": [],
+    "failedAssets": [],
+    "axe": []
+  },
+  {
+    "name": "en-320",
+    "tests": [
+      {
+        "label": "V3 rendered on the localized public route",
+        "pass": true
+      },
+      {
+        "label": "Single h1 and nine connected chapters",
+        "pass": true
+      },
+      {
+        "label": "No horizontal overflow",
+        "pass": true
+      },
+      {
+        "label": "All displayed product sources load with natural geometry and alt",
+        "pass": true,
+        "details": [
+          {
+            "src": "/media/case-vet-v2/en/visit-context-mobile.webp",
+            "alt": "Visit Record for Marsik: clinic and patient headers, draft and publication status, saved 4.8 kg Quick Trace, clinical notes and the complete Meloxicam prescription with calculation review.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/queue-mobile.webp",
+            "alt": "Current Day Queue detail: arrival priority and patient-specific next actions, with unfinished-record context above.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/private-mobile.webp",
+            "alt": "Complete private-note section with Veterinarians only and an explicit exclusion from discharge, invoice and owner view.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/trace-mobile.webp",
+            "alt": "Native Quick Trace weight entry: current 4.8 kg, change from the last clinic measurement, author, date and distinct clinic or owner sources. The complete trace is available for inspection.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/dose-review-mobile.webp",
+            "alt": "Dose Calculator review: Marsik, selected formulation, 0.95 ml example, weight and rate in dimensional arithmetic, rounding, limitation and record action. Full input workspace is available below.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/invoice-document-mobile.webp",
+            "alt": "Complete invoice services document: two selected services, 1,500 RUB total, Mark as paid and the manual-status limitation.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/en/publish-mobile.webp",
+            "alt": "Native publication panel: ready to publish, recipient, owner cabinet destination, clinic-only exclusions and explicit Publish discharge summary action.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/blocked-mobile.webp",
+            "alt": "Publication panel for an empty saved plan: publication disabled and the previous owner publication retained.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/owner-overview-mobile.webp",
+            "alt": "Native mobile Owner Home detail: patient context, published plan and complete illustrative prescription. The full screen includes discharge and clinic contact.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/en/missing-mobile.webp",
+            "alt": "Native owner prescription exception: Dose unavailable, confirmation required before giving medication, and the clinic telephone link.",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "No research/third-party screenshots on public page",
+        "pass": true
+      },
+      {
+        "label": "Real native hero selected for current breakpoint",
+        "pass": true
+      },
+      {
+        "label": "Real product visible in first viewport",
+        "pass": true
+      },
+      {
+        "label": "Canonical, description and locale are accurate",
+        "pass": true,
+        "details": {
+          "canonical": "https://kanarev.com/work/vet-clinic/"
+        }
+      },
+      {
+        "label": "OG image route loads",
+        "pass": true
+      },
+      {
+        "label": "Every chapter anchor resolves",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to roles",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to publication",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to process",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 0 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 1 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 2 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 3 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 4 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 5 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 6 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 7 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 8 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 9 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 10 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 11 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 12 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 13 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 14 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 15 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 16 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 17 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 18 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 19 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Pointer zoom opens dialog",
+        "pass": true
+      },
+      {
+        "label": "Inspection link has visible keyboard focus and 48px target",
+        "pass": true,
+        "details": {
+          "outline": "solid",
+          "height": 48,
+          "visible": true
+        }
+      },
+      {
+        "label": "Product CTA has locale and safe new-tab behavior",
+        "pass": true
+      },
+      {
+        "label": "CaseNext retains Pawly destination",
+        "pass": true
+      },
+      {
+        "label": "Language toggle opens the paired Vet case",
+        "pass": true
+      },
+      {
+        "label": "No automated WCAG A/AA findings in the case",
+        "pass": true,
+        "details": []
+      },
+      {
+        "label": "No runtime errors or failed assets",
+        "pass": true,
+        "details": {
+          "errors": [],
+          "assets": []
+        }
+      }
+    ],
+    "errors": [],
+    "failedAssets": [],
+    "axe": []
+  },
+  {
+    "name": "ru-1440",
+    "tests": [
+      {
+        "label": "V3 rendered on the localized public route",
+        "pass": true
+      },
+      {
+        "label": "Single h1 and nine connected chapters",
+        "pass": true
+      },
+      {
+        "label": "No horizontal overflow",
+        "pass": true
+      },
+      {
+        "label": "All displayed product sources load with natural geometry and alt",
+        "pass": true,
+        "details": [
+          {
+            "src": "/media/case-vet-v2/ru/visit-workspace-desktop.webp",
+            "alt": "Карта визита Марсика: шапки клиники и пациента, статусы черновика и публикации, сохранённый короткий след с весом 4,8 кг, клиническая запись и целое назначение мелоксикама с проверкой расчёта.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/queue-desktop.webp",
+            "alt": "Фрагмент актуальной очереди дня: приоритет прибытия и действия по пациентам, выше — контекст незавершённых записей.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/private-desktop.webp",
+            "alt": "Целая приватная заметка: только ветеринарам; явно исключена из выписки, счёта и кабинета владельца.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/trace-desktop.webp",
+            "alt": "Настоящее поле веса короткого следа: 4,8 кг, изменение от прошлого измерения, автор, дата и отдельные источники клиники и владельца. Полный след доступен в увеличении.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/dose-review-desktop.webp",
+            "alt": "Проверка расчёта: Марсик, выбранная форма препарата, пример 0,95 мл, вес и доза в арифметике с единицами, округление, ограничение и запись в визит. Полный экран с исходными полями доступен ниже.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/invoice-document-desktop.webp",
+            "alt": "Целый документ услуг: две выбранные услуги, итог 1500 рублей, отметка оплаты и пояснение о ручном изменении статуса.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/publish-desktop.webp",
+            "alt": "Настоящая панель публикации: готовность, получатель, кабинет владельца, исключённые сведения и явная кнопка публикации выписки.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/blocked-desktop.webp",
+            "alt": "Панель публикации с пустым сохранённым планом: действие недоступно, прежняя публикация владельца сохранена.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/owner-overview-desktop.webp",
+            "alt": "Опубликованный кабинет владельца: план Марсика, пример назначения 0,95 мл, дата визита, выписка и звонок в клинику.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/owner-overview-mobile.webp",
+            "alt": "Настоящий мобильный фрагмент: пациент, опубликованный план и целое примерное назначение. Выписка и контакт клиники доступны в полном экране.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/missing-mobile.webp",
+            "alt": "Настоящее состояние назначения владельца: доза недоступна, перед применением нужно уточнение, рядом телефон клиники.",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "No research/third-party screenshots on public page",
+        "pass": true
+      },
+      {
+        "label": "Real native hero selected for current breakpoint",
+        "pass": true
+      },
+      {
+        "label": "Real product visible in first viewport",
+        "pass": true
+      },
+      {
+        "label": "Canonical, description and locale are accurate",
+        "pass": true,
+        "details": {
+          "canonical": "https://kanarev.com/ru/work/vet-clinic/"
+        }
+      },
+      {
+        "label": "OG image route loads",
+        "pass": true
+      },
+      {
+        "label": "Every chapter anchor resolves",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to roles",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to publication",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to process",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 0 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 1 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 2 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 3 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 4 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 5 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 6 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 7 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 8 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 9 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 10 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 11 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 12 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 13 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 14 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 15 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 16 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 17 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 18 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 19 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 20 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 20 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 20 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 21 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 21 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 21 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Pointer zoom opens dialog",
+        "pass": true
+      },
+      {
+        "label": "Inspection link has visible keyboard focus and 48px target",
+        "pass": true,
+        "details": {
+          "outline": "solid",
+          "height": 48,
+          "visible": true
+        }
+      },
+      {
+        "label": "Inspection pressed state has a visible underline",
+        "pass": true
+      },
+      {
+        "label": "Inspection target is an ordinary resolvable source href",
+        "pass": true
+      },
+      {
+        "label": "Product CTA has locale and safe new-tab behavior",
+        "pass": true
+      },
+      {
+        "label": "CaseNext retains Pawly destination",
+        "pass": true
+      },
+      {
+        "label": "Language toggle opens the paired Vet case",
+        "pass": true
+      },
+      {
+        "label": "No automated WCAG A/AA findings in the case",
+        "pass": true,
+        "details": []
+      },
+      {
+        "label": "No runtime errors or failed assets",
+        "pass": true,
+        "details": {
+          "errors": [],
+          "assets": []
+        }
+      }
+    ],
+    "errors": [],
+    "failedAssets": [],
+    "axe": []
+  },
+  {
+    "name": "ru-1280",
+    "tests": [
+      {
+        "label": "V3 rendered on the localized public route",
+        "pass": true
+      },
+      {
+        "label": "Single h1 and nine connected chapters",
+        "pass": true
+      },
+      {
+        "label": "No horizontal overflow",
+        "pass": true
+      },
+      {
+        "label": "All displayed product sources load with natural geometry and alt",
+        "pass": true,
+        "details": [
+          {
+            "src": "/media/case-vet-v2/ru/visit-workspace-desktop.webp",
+            "alt": "Карта визита Марсика: шапки клиники и пациента, статусы черновика и публикации, сохранённый короткий след с весом 4,8 кг, клиническая запись и целое назначение мелоксикама с проверкой расчёта.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/queue-desktop.webp",
+            "alt": "Фрагмент актуальной очереди дня: приоритет прибытия и действия по пациентам, выше — контекст незавершённых записей.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/private-desktop.webp",
+            "alt": "Целая приватная заметка: только ветеринарам; явно исключена из выписки, счёта и кабинета владельца.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/trace-desktop.webp",
+            "alt": "Настоящее поле веса короткого следа: 4,8 кг, изменение от прошлого измерения, автор, дата и отдельные источники клиники и владельца. Полный след доступен в увеличении.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/dose-review-desktop.webp",
+            "alt": "Проверка расчёта: Марсик, выбранная форма препарата, пример 0,95 мл, вес и доза в арифметике с единицами, округление, ограничение и запись в визит. Полный экран с исходными полями доступен ниже.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/invoice-document-desktop.webp",
+            "alt": "Целый документ услуг: две выбранные услуги, итог 1500 рублей, отметка оплаты и пояснение о ручном изменении статуса.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/publish-desktop.webp",
+            "alt": "Настоящая панель публикации: готовность, получатель, кабинет владельца, исключённые сведения и явная кнопка публикации выписки.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/blocked-desktop.webp",
+            "alt": "Панель публикации с пустым сохранённым планом: действие недоступно, прежняя публикация владельца сохранена.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/owner-overview-desktop.webp",
+            "alt": "Опубликованный кабинет владельца: план Марсика, пример назначения 0,95 мл, дата визита, выписка и звонок в клинику.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/owner-overview-mobile.webp",
+            "alt": "Настоящий мобильный фрагмент: пациент, опубликованный план и целое примерное назначение. Выписка и контакт клиники доступны в полном экране.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/missing-mobile.webp",
+            "alt": "Настоящее состояние назначения владельца: доза недоступна, перед применением нужно уточнение, рядом телефон клиники.",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "No research/third-party screenshots on public page",
+        "pass": true
+      },
+      {
+        "label": "Real native hero selected for current breakpoint",
+        "pass": true
+      },
+      {
+        "label": "Real product visible in first viewport",
+        "pass": true
+      },
+      {
+        "label": "Canonical, description and locale are accurate",
+        "pass": true,
+        "details": {
+          "canonical": "https://kanarev.com/ru/work/vet-clinic/"
+        }
+      },
+      {
+        "label": "OG image route loads",
+        "pass": true
+      },
+      {
+        "label": "Every chapter anchor resolves",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to roles",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to publication",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to process",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 0 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 1 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 2 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 3 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 4 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 5 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 6 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 7 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 8 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 9 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 10 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 11 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 12 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 13 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 14 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 15 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 16 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 17 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 18 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 19 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 20 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 20 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 20 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 21 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 21 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 21 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Pointer zoom opens dialog",
+        "pass": true
+      },
+      {
+        "label": "Inspection link has visible keyboard focus and 48px target",
+        "pass": true,
+        "details": {
+          "outline": "solid",
+          "height": 48,
+          "visible": true
+        }
+      },
+      {
+        "label": "Product CTA has locale and safe new-tab behavior",
+        "pass": true
+      },
+      {
+        "label": "CaseNext retains Pawly destination",
+        "pass": true
+      },
+      {
+        "label": "Language toggle opens the paired Vet case",
+        "pass": true
+      },
+      {
+        "label": "No automated WCAG A/AA findings in the case",
+        "pass": true,
+        "details": []
+      },
+      {
+        "label": "No runtime errors or failed assets",
+        "pass": true,
+        "details": {
+          "errors": [],
+          "assets": []
+        }
+      }
+    ],
+    "errors": [],
+    "failedAssets": [],
+    "axe": []
+  },
+  {
+    "name": "ru-1024",
+    "tests": [
+      {
+        "label": "V3 rendered on the localized public route",
+        "pass": true
+      },
+      {
+        "label": "Single h1 and nine connected chapters",
+        "pass": true
+      },
+      {
+        "label": "No horizontal overflow",
+        "pass": true
+      },
+      {
+        "label": "All displayed product sources load with natural geometry and alt",
+        "pass": true,
+        "details": [
+          {
+            "src": "/media/case-vet-v2/ru/visit-workspace-desktop.webp",
+            "alt": "Карта визита Марсика: шапки клиники и пациента, статусы черновика и публикации, сохранённый короткий след с весом 4,8 кг, клиническая запись и целое назначение мелоксикама с проверкой расчёта.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/queue-desktop.webp",
+            "alt": "Фрагмент актуальной очереди дня: приоритет прибытия и действия по пациентам, выше — контекст незавершённых записей.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/private-desktop.webp",
+            "alt": "Целая приватная заметка: только ветеринарам; явно исключена из выписки, счёта и кабинета владельца.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/trace-desktop.webp",
+            "alt": "Настоящее поле веса короткого следа: 4,8 кг, изменение от прошлого измерения, автор, дата и отдельные источники клиники и владельца. Полный след доступен в увеличении.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/dose-review-desktop.webp",
+            "alt": "Проверка расчёта: Марсик, выбранная форма препарата, пример 0,95 мл, вес и доза в арифметике с единицами, округление, ограничение и запись в визит. Полный экран с исходными полями доступен ниже.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/invoice-document-desktop.webp",
+            "alt": "Целый документ услуг: две выбранные услуги, итог 1500 рублей, отметка оплаты и пояснение о ручном изменении статуса.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/publish-desktop.webp",
+            "alt": "Настоящая панель публикации: готовность, получатель, кабинет владельца, исключённые сведения и явная кнопка публикации выписки.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/blocked-desktop.webp",
+            "alt": "Панель публикации с пустым сохранённым планом: действие недоступно, прежняя публикация владельца сохранена.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/owner-overview-desktop.webp",
+            "alt": "Опубликованный кабинет владельца: план Марсика, пример назначения 0,95 мл, дата визита, выписка и звонок в клинику.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/owner-overview-mobile.webp",
+            "alt": "Настоящий мобильный фрагмент: пациент, опубликованный план и целое примерное назначение. Выписка и контакт клиники доступны в полном экране.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/missing-mobile.webp",
+            "alt": "Настоящее состояние назначения владельца: доза недоступна, перед применением нужно уточнение, рядом телефон клиники.",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "No research/third-party screenshots on public page",
+        "pass": true
+      },
+      {
+        "label": "Real native hero selected for current breakpoint",
+        "pass": true
+      },
+      {
+        "label": "Real product visible in first viewport",
+        "pass": true
+      },
+      {
+        "label": "Canonical, description and locale are accurate",
+        "pass": true,
+        "details": {
+          "canonical": "https://kanarev.com/ru/work/vet-clinic/"
+        }
+      },
+      {
+        "label": "OG image route loads",
+        "pass": true
+      },
+      {
+        "label": "Every chapter anchor resolves",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to roles",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to publication",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to process",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 0 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 1 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 2 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 3 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 4 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 5 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 6 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 7 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 8 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 9 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 10 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 11 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 12 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 13 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 14 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 15 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 16 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 17 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 18 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 19 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 20 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 20 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 20 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 21 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 21 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 21 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Pointer zoom opens dialog",
+        "pass": true
+      },
+      {
+        "label": "Inspection link has visible keyboard focus and 48px target",
+        "pass": true,
+        "details": {
+          "outline": "solid",
+          "height": 48,
+          "visible": true
+        }
+      },
+      {
+        "label": "Product CTA has locale and safe new-tab behavior",
+        "pass": true
+      },
+      {
+        "label": "CaseNext retains Pawly destination",
+        "pass": true
+      },
+      {
+        "label": "Language toggle opens the paired Vet case",
+        "pass": true
+      },
+      {
+        "label": "No automated WCAG A/AA findings in the case",
+        "pass": true,
+        "details": []
+      },
+      {
+        "label": "No runtime errors or failed assets",
+        "pass": true,
+        "details": {
+          "errors": [],
+          "assets": []
+        }
+      }
+    ],
+    "errors": [],
+    "failedAssets": [],
+    "axe": []
+  },
+  {
+    "name": "ru-768",
+    "tests": [
+      {
+        "label": "V3 rendered on the localized public route",
+        "pass": true
+      },
+      {
+        "label": "Single h1 and nine connected chapters",
+        "pass": true
+      },
+      {
+        "label": "No horizontal overflow",
+        "pass": true
+      },
+      {
+        "label": "All displayed product sources load with natural geometry and alt",
+        "pass": true,
+        "details": [
+          {
+            "src": "/media/case-vet-v2/ru/visit-context-mobile.webp",
+            "alt": "Карта визита Марсика: шапки клиники и пациента, статусы черновика и публикации, сохранённый короткий след с весом 4,8 кг, клиническая запись и целое назначение мелоксикама с проверкой расчёта.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/queue-mobile.webp",
+            "alt": "Фрагмент актуальной очереди дня: приоритет прибытия и действия по пациентам, выше — контекст незавершённых записей.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/private-mobile.webp",
+            "alt": "Целая приватная заметка: только ветеринарам; явно исключена из выписки, счёта и кабинета владельца.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/trace-mobile.webp",
+            "alt": "Настоящее поле веса короткого следа: 4,8 кг, изменение от прошлого измерения, автор, дата и отдельные источники клиники и владельца. Полный след доступен в увеличении.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/dose-review-mobile.webp",
+            "alt": "Проверка расчёта: Марсик, выбранная форма препарата, пример 0,95 мл, вес и доза в арифметике с единицами, округление, ограничение и запись в визит. Полный экран с исходными полями доступен ниже.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/invoice-document-mobile.webp",
+            "alt": "Целый документ услуг: две выбранные услуги, итог 1500 рублей, отметка оплаты и пояснение о ручном изменении статуса.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/publish-mobile.webp",
+            "alt": "Настоящая панель публикации: готовность, получатель, кабинет владельца, исключённые сведения и явная кнопка публикации выписки.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/blocked-mobile.webp",
+            "alt": "Панель публикации с пустым сохранённым планом: действие недоступно, прежняя публикация владельца сохранена.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/owner-overview-mobile.webp",
+            "alt": "Настоящий мобильный фрагмент: пациент, опубликованный план и целое примерное назначение. Выписка и контакт клиники доступны в полном экране.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/missing-mobile.webp",
+            "alt": "Настоящее состояние назначения владельца: доза недоступна, перед применением нужно уточнение, рядом телефон клиники.",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "No research/third-party screenshots on public page",
+        "pass": true
+      },
+      {
+        "label": "Real native hero selected for current breakpoint",
+        "pass": true
+      },
+      {
+        "label": "Real product visible in first viewport",
+        "pass": true
+      },
+      {
+        "label": "Canonical, description and locale are accurate",
+        "pass": true,
+        "details": {
+          "canonical": "https://kanarev.com/ru/work/vet-clinic/"
+        }
+      },
+      {
+        "label": "OG image route loads",
+        "pass": true
+      },
+      {
+        "label": "Every chapter anchor resolves",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to roles",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to publication",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to process",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 0 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 1 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 2 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 3 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 4 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 5 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 6 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 7 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 8 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 9 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 10 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 11 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 12 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 13 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 14 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 15 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 16 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 17 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 18 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 19 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Pointer zoom opens dialog",
+        "pass": true
+      },
+      {
+        "label": "Inspection link has visible keyboard focus and 48px target",
+        "pass": true,
+        "details": {
+          "outline": "solid",
+          "height": 48,
+          "visible": true
+        }
+      },
+      {
+        "label": "Product CTA has locale and safe new-tab behavior",
+        "pass": true
+      },
+      {
+        "label": "CaseNext retains Pawly destination",
+        "pass": true
+      },
+      {
+        "label": "Language toggle opens the paired Vet case",
+        "pass": true
+      },
+      {
+        "label": "No automated WCAG A/AA findings in the case",
+        "pass": true,
+        "details": []
+      },
+      {
+        "label": "No runtime errors or failed assets",
+        "pass": true,
+        "details": {
+          "errors": [],
+          "assets": []
+        }
+      }
+    ],
+    "errors": [],
+    "failedAssets": [],
+    "axe": []
+  },
+  {
+    "name": "ru-390",
+    "tests": [
+      {
+        "label": "V3 rendered on the localized public route",
+        "pass": true
+      },
+      {
+        "label": "Single h1 and nine connected chapters",
+        "pass": true
+      },
+      {
+        "label": "No horizontal overflow",
+        "pass": true
+      },
+      {
+        "label": "All displayed product sources load with natural geometry and alt",
+        "pass": true,
+        "details": [
+          {
+            "src": "/media/case-vet-v2/ru/visit-context-mobile.webp",
+            "alt": "Карта визита Марсика: шапки клиники и пациента, статусы черновика и публикации, сохранённый короткий след с весом 4,8 кг, клиническая запись и целое назначение мелоксикама с проверкой расчёта.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/queue-mobile.webp",
+            "alt": "Фрагмент актуальной очереди дня: приоритет прибытия и действия по пациентам, выше — контекст незавершённых записей.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/private-mobile.webp",
+            "alt": "Целая приватная заметка: только ветеринарам; явно исключена из выписки, счёта и кабинета владельца.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/trace-mobile.webp",
+            "alt": "Настоящее поле веса короткого следа: 4,8 кг, изменение от прошлого измерения, автор, дата и отдельные источники клиники и владельца. Полный след доступен в увеличении.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/dose-review-mobile.webp",
+            "alt": "Проверка расчёта: Марсик, выбранная форма препарата, пример 0,95 мл, вес и доза в арифметике с единицами, округление, ограничение и запись в визит. Полный экран с исходными полями доступен ниже.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/invoice-document-mobile.webp",
+            "alt": "Целый документ услуг: две выбранные услуги, итог 1500 рублей, отметка оплаты и пояснение о ручном изменении статуса.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/publish-mobile.webp",
+            "alt": "Настоящая панель публикации: готовность, получатель, кабинет владельца, исключённые сведения и явная кнопка публикации выписки.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/blocked-mobile.webp",
+            "alt": "Панель публикации с пустым сохранённым планом: действие недоступно, прежняя публикация владельца сохранена.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/owner-overview-mobile.webp",
+            "alt": "Настоящий мобильный фрагмент: пациент, опубликованный план и целое примерное назначение. Выписка и контакт клиники доступны в полном экране.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/missing-mobile.webp",
+            "alt": "Настоящее состояние назначения владельца: доза недоступна, перед применением нужно уточнение, рядом телефон клиники.",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "No research/third-party screenshots on public page",
+        "pass": true
+      },
+      {
+        "label": "Real native hero selected for current breakpoint",
+        "pass": true
+      },
+      {
+        "label": "Real product visible in first viewport",
+        "pass": true
+      },
+      {
+        "label": "Canonical, description and locale are accurate",
+        "pass": true,
+        "details": {
+          "canonical": "https://kanarev.com/ru/work/vet-clinic/"
+        }
+      },
+      {
+        "label": "OG image route loads",
+        "pass": true
+      },
+      {
+        "label": "Every chapter anchor resolves",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to roles",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to publication",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to process",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 0 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 1 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 2 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 3 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 4 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 5 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 6 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 7 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 8 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 9 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 10 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 11 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 12 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 13 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 14 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 15 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 16 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 17 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 18 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 19 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Pointer zoom opens dialog",
+        "pass": true
+      },
+      {
+        "label": "Inspection link has visible keyboard focus and 48px target",
+        "pass": true,
+        "details": {
+          "outline": "solid",
+          "height": 48,
+          "visible": true
+        }
+      },
+      {
+        "label": "Product CTA has locale and safe new-tab behavior",
+        "pass": true
+      },
+      {
+        "label": "CaseNext retains Pawly destination",
+        "pass": true
+      },
+      {
+        "label": "Language toggle opens the paired Vet case",
+        "pass": true
+      },
+      {
+        "label": "No automated WCAG A/AA findings in the case",
+        "pass": true,
+        "details": []
+      },
+      {
+        "label": "No runtime errors or failed assets",
+        "pass": true,
+        "details": {
+          "errors": [],
+          "assets": []
+        }
+      }
+    ],
+    "errors": [],
+    "failedAssets": [],
+    "axe": []
+  },
+  {
+    "name": "ru-360",
+    "tests": [
+      {
+        "label": "V3 rendered on the localized public route",
+        "pass": true
+      },
+      {
+        "label": "Single h1 and nine connected chapters",
+        "pass": true
+      },
+      {
+        "label": "No horizontal overflow",
+        "pass": true
+      },
+      {
+        "label": "All displayed product sources load with natural geometry and alt",
+        "pass": true,
+        "details": [
+          {
+            "src": "/media/case-vet-v2/ru/visit-context-mobile.webp",
+            "alt": "Карта визита Марсика: шапки клиники и пациента, статусы черновика и публикации, сохранённый короткий след с весом 4,8 кг, клиническая запись и целое назначение мелоксикама с проверкой расчёта.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/queue-mobile.webp",
+            "alt": "Фрагмент актуальной очереди дня: приоритет прибытия и действия по пациентам, выше — контекст незавершённых записей.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/private-mobile.webp",
+            "alt": "Целая приватная заметка: только ветеринарам; явно исключена из выписки, счёта и кабинета владельца.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/trace-mobile.webp",
+            "alt": "Настоящее поле веса короткого следа: 4,8 кг, изменение от прошлого измерения, автор, дата и отдельные источники клиники и владельца. Полный след доступен в увеличении.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/dose-review-mobile.webp",
+            "alt": "Проверка расчёта: Марсик, выбранная форма препарата, пример 0,95 мл, вес и доза в арифметике с единицами, округление, ограничение и запись в визит. Полный экран с исходными полями доступен ниже.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/invoice-document-mobile.webp",
+            "alt": "Целый документ услуг: две выбранные услуги, итог 1500 рублей, отметка оплаты и пояснение о ручном изменении статуса.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/publish-mobile.webp",
+            "alt": "Настоящая панель публикации: готовность, получатель, кабинет владельца, исключённые сведения и явная кнопка публикации выписки.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/blocked-mobile.webp",
+            "alt": "Панель публикации с пустым сохранённым планом: действие недоступно, прежняя публикация владельца сохранена.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/owner-overview-mobile.webp",
+            "alt": "Настоящий мобильный фрагмент: пациент, опубликованный план и целое примерное назначение. Выписка и контакт клиники доступны в полном экране.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/missing-mobile.webp",
+            "alt": "Настоящее состояние назначения владельца: доза недоступна, перед применением нужно уточнение, рядом телефон клиники.",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "No research/third-party screenshots on public page",
+        "pass": true
+      },
+      {
+        "label": "Real native hero selected for current breakpoint",
+        "pass": true
+      },
+      {
+        "label": "Real product visible in first viewport",
+        "pass": true
+      },
+      {
+        "label": "Canonical, description and locale are accurate",
+        "pass": true,
+        "details": {
+          "canonical": "https://kanarev.com/ru/work/vet-clinic/"
+        }
+      },
+      {
+        "label": "OG image route loads",
+        "pass": true
+      },
+      {
+        "label": "Every chapter anchor resolves",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to roles",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to publication",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to process",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 0 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 1 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 2 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 3 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 4 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 5 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 6 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 7 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 8 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 9 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 10 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 11 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 12 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 13 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 14 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 15 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 16 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 17 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 18 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 19 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Pointer zoom opens dialog",
+        "pass": true
+      },
+      {
+        "label": "Inspection link has visible keyboard focus and 48px target",
+        "pass": true,
+        "details": {
+          "outline": "solid",
+          "height": 48,
+          "visible": true
+        }
+      },
+      {
+        "label": "Product CTA has locale and safe new-tab behavior",
+        "pass": true
+      },
+      {
+        "label": "CaseNext retains Pawly destination",
+        "pass": true
+      },
+      {
+        "label": "Language toggle opens the paired Vet case",
+        "pass": true
+      },
+      {
+        "label": "No automated WCAG A/AA findings in the case",
+        "pass": true,
+        "details": []
+      },
+      {
+        "label": "No runtime errors or failed assets",
+        "pass": true,
+        "details": {
+          "errors": [],
+          "assets": []
+        }
+      }
+    ],
+    "errors": [],
+    "failedAssets": [],
+    "axe": []
+  },
+  {
+    "name": "ru-320",
+    "tests": [
+      {
+        "label": "V3 rendered on the localized public route",
+        "pass": true
+      },
+      {
+        "label": "Single h1 and nine connected chapters",
+        "pass": true
+      },
+      {
+        "label": "No horizontal overflow",
+        "pass": true
+      },
+      {
+        "label": "All displayed product sources load with natural geometry and alt",
+        "pass": true,
+        "details": [
+          {
+            "src": "/media/case-vet-v2/ru/visit-context-mobile.webp",
+            "alt": "Карта визита Марсика: шапки клиники и пациента, статусы черновика и публикации, сохранённый короткий след с весом 4,8 кг, клиническая запись и целое назначение мелоксикама с проверкой расчёта.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/queue-mobile.webp",
+            "alt": "Фрагмент актуальной очереди дня: приоритет прибытия и действия по пациентам, выше — контекст незавершённых записей.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/private-mobile.webp",
+            "alt": "Целая приватная заметка: только ветеринарам; явно исключена из выписки, счёта и кабинета владельца.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/trace-mobile.webp",
+            "alt": "Настоящее поле веса короткого следа: 4,8 кг, изменение от прошлого измерения, автор, дата и отдельные источники клиники и владельца. Полный след доступен в увеличении.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/dose-review-mobile.webp",
+            "alt": "Проверка расчёта: Марсик, выбранная форма препарата, пример 0,95 мл, вес и доза в арифметике с единицами, округление, ограничение и запись в визит. Полный экран с исходными полями доступен ниже.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/invoice-document-mobile.webp",
+            "alt": "Целый документ услуг: две выбранные услуги, итог 1500 рублей, отметка оплаты и пояснение о ручном изменении статуса.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v3/ru/publish-mobile.webp",
+            "alt": "Настоящая панель публикации: готовность, получатель, кабинет владельца, исключённые сведения и явная кнопка публикации выписки.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/blocked-mobile.webp",
+            "alt": "Панель публикации с пустым сохранённым планом: действие недоступно, прежняя публикация владельца сохранена.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/owner-overview-mobile.webp",
+            "alt": "Настоящий мобильный фрагмент: пациент, опубликованный план и целое примерное назначение. Выписка и контакт клиники доступны в полном экране.",
+            "ok": true
+          },
+          {
+            "src": "/media/case-vet-v2/ru/missing-mobile.webp",
+            "alt": "Настоящее состояние назначения владельца: доза недоступна, перед применением нужно уточнение, рядом телефон клиники.",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "label": "No research/third-party screenshots on public page",
+        "pass": true
+      },
+      {
+        "label": "Real native hero selected for current breakpoint",
+        "pass": true
+      },
+      {
+        "label": "Real product visible in first viewport",
+        "pass": true
+      },
+      {
+        "label": "Canonical, description and locale are accurate",
+        "pass": true,
+        "details": {
+          "canonical": "https://kanarev.com/ru/work/vet-clinic/"
+        }
+      },
+      {
+        "label": "OG image route loads",
+        "pass": true
+      },
+      {
+        "label": "Every chapter anchor resolves",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to roles",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to publication",
+        "pass": true
+      },
+      {
+        "label": "Chapter link scrolls to process",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 0 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 0 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 1 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 1 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 2 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 2 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 3 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 3 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 4 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 4 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 5 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 5 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 6 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 6 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 7 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 7 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 8 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 8 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 9 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 9 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 10 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 10 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 11 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 11 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 12 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 12 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 13 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 13 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 14 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 14 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 15 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 15 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 16 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 16 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 17 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 17 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 18 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 18 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Keyboard zoom 19 opens actual source",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 contains keyboard focus",
+        "pass": true
+      },
+      {
+        "label": "Zoom 19 Escape restores focus",
+        "pass": true
+      },
+      {
+        "label": "Pointer zoom opens dialog",
+        "pass": true
+      },
+      {
+        "label": "Inspection link has visible keyboard focus and 48px target",
+        "pass": true,
+        "details": {
+          "outline": "solid",
+          "height": 48,
+          "visible": true
+        }
+      },
+      {
+        "label": "Product CTA has locale and safe new-tab behavior",
+        "pass": true
+      },
+      {
+        "label": "CaseNext retains Pawly destination",
+        "pass": true
+      },
+      {
+        "label": "Language toggle opens the paired Vet case",
+        "pass": true
+      },
+      {
+        "label": "No automated WCAG A/AA findings in the case",
+        "pass": true,
+        "details": []
+      },
+      {
+        "label": "No runtime errors or failed assets",
+        "pass": true,
+        "details": {
+          "errors": [],
+          "assets": []
+        }
+      }
+    ],
+    "errors": [],
+    "failedAssets": [],
+    "axe": []
+  },
+  {
+    "name": "en-no-js",
+    "tests": [
+      {
+        "label": "All chapters present and no overflow",
+        "pass": true
+      },
+      {
+        "label": "Content remains visible without JavaScript",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v2/en/visit-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v3/en/queue-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v2/en/visit-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v3/en/trace-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v2/en/dose-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v2/en/invoice-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v2/en/discharge-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v2/en/blocked-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v2/en/owner-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v2/en/missing-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Anchor works without JS",
+        "pass": true
+      }
+    ]
+  },
+  {
+    "name": "en-motion",
+    "tests": [
+      {
+        "label": "All chapters present and no overflow",
+        "pass": true
+      },
+      {
+        "label": "Registered hero motion completes visibly",
+        "pass": true
+      }
+    ]
+  },
+  {
+    "name": "en-zoom-200-equivalent",
+    "tests": [
+      {
+        "label": "All chapters present and no overflow",
+        "pass": true
+      }
+    ]
+  },
+  {
+    "name": "ru-no-js",
+    "tests": [
+      {
+        "label": "All chapters present and no overflow",
+        "pass": true
+      },
+      {
+        "label": "Content remains visible without JavaScript",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v2/ru/visit-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v3/ru/queue-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v2/ru/visit-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v3/ru/trace-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v2/ru/dose-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v2/ru/invoice-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v2/ru/discharge-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v2/ru/blocked-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v2/ru/owner-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Source fallback /media/case-vet-v2/ru/missing-full-mobile.webp",
+        "pass": true
+      },
+      {
+        "label": "Anchor works without JS",
+        "pass": true
+      }
+    ]
+  },
+  {
+    "name": "ru-motion",
+    "tests": [
+      {
+        "label": "All chapters present and no overflow",
+        "pass": true
+      },
+      {
+        "label": "Registered hero motion completes visibly",
+        "pass": true
+      }
+    ]
+  },
+  {
+    "name": "ru-zoom-200-equivalent",
+    "tests": [
+      {
+        "label": "All chapters present and no overflow",
+        "pass": true
+      }
+    ]
+  }
+]

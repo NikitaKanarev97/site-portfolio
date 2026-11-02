@@ -1,0 +1,39 @@
+{
+  "baseline": "3e82e8acad9b40e2c2bf6aafbb7ad0586d82f2b4",
+  "originalMediaEntriesAndFilesUnchanged": 54,
+  "newDocumentaryCrops": 2,
+  "exactCropPixelEquality": true,
+  "unchangedFiles": [
+    "src/components/vet/VetShot.astro",
+    "src/components/vet/VetHome.astro",
+    "ds/tokens.css",
+    "src/styles/tokens.css"
+  ],
+  "bodyCopyAndMobileHeroCopyUnchanged": true,
+  "home": [
+    {
+      "name": "en-1440-home",
+      "before": "eb8e66fbbf9549d46ffc19807af578687b1013b7f46d054467bc849c7249bc30",
+      "after": "eb8e66fbbf9549d46ffc19807af578687b1013b7f46d054467bc849c7249bc30",
+      "identicalPixels": true
+    },
+    {
+      "name": "en-390-home",
+      "before": "d9c6476c34991bd18ccaae114d390499dba644576f223331a1d297bea1918244",
+      "after": "d9c6476c34991bd18ccaae114d390499dba644576f223331a1d297bea1918244",
+      "identicalPixels": true
+    },
+    {
+      "name": "ru-1440-home",
+      "before": "b15697db34a5ef7ba77d1500e218356568014b3f9399eccbe465334666e896b9",
+      "after": "b15697db34a5ef7ba77d1500e218356568014b3f9399eccbe465334666e896b9",
+      "identicalPixels": true
+    },
+    {
+      "name": "ru-390-home",
+      "before": "c7f4782abf20d1672b34ea46907321757abdc940ecb7ba8ee60571f5ed0157a9",
+      "after": "c7f4782abf20d1672b34ea46907321757abdc940ecb7ba8ee60571f5ed0157a9",
+      "identicalPixels": true
+    }
+  ]
+}

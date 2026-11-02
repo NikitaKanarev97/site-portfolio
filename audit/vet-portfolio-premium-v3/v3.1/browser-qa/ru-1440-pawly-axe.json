@@ -1,0 +1,63 @@
+[
+  {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": [
+      {
+        "target": [
+          "h4"
+        ],
+        "html": "<h4 class=\"ds-meta-sm case-specimen__group-title\" data-astro-cid-j24g2lnu=\"\">Доказательства, события и&nbsp;пояснения</h4>",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "target": [
+          "li[data-specimen-state=\"photo-pending\"] > .case-specimen__state-label"
+        ],
+        "html": "<p class=\"ds-body-sm case-specimen__state-label\" data-astro-cid-j24g2lnu=\"\">Ожидание · подтверждения нет</p>",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "target": [
+          "li[data-specimen-state=\"photo-local\"] > .case-specimen__state-label"
+        ],
+        "html": "<p class=\"ds-body-sm case-specimen__state-label\" data-astro-cid-j24g2lnu=\"\">Локально · выбрано, не&nbsp;отправлено</p>",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "target": [
+          "li[data-specimen-state=\"photo-confirmed\"] > .case-specimen__state-label"
+        ],
+        "html": "<p class=\"ds-body-sm case-specimen__state-label\" data-astro-cid-j24g2lnu=\"\">Подтверждено · событие получено</p>",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "target": [
+          "li[data-specimen-state=\"timeline-done\"] > .case-specimen__state-label"
+        ],
+        "html": "<p class=\"ds-body-sm case-specimen__state-label\" data-astro-cid-j24g2lnu=\"\">Завершено</p>",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "target": [
+          "li[data-specimen-state=\"timeline-current\"] > .case-specimen__state-label"
+        ],
+        "html": "<p class=\"ds-body-sm case-specimen__state-label\" data-astro-cid-j24g2lnu=\"\">Текущее</p>",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      }
+    ]
+  },
+  {
+    "id": "list",
+    "impact": "serious",
+    "nodes": [
+      {
+        "target": [
+          ".navbar__list"
+        ],
+        "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+        "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+      }
+    ]
+  }
+]

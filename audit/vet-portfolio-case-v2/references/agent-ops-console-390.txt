@@ -1,0 +1,141 @@
+B2B SaaS · AI operations
+
+Agent Ops Console
+
+Human oversight for AI decisions with real consequences.
+
+Action Approvals · the commitment, its consequences and the human decision
+Inspect the complete screen
++
+My role
+Sole product designer
+Year / duration
+2026 · up to one month
+Platform
+Responsive web · React / Storybook
+Delivery
+User-tested prototype · accepted by the client
+
+Client under NDA. All names, accounts and figures inside the interface are synthetic.
+
+01 · The problem
+02 · The operating model
+03 · Detect and investigate
+04 · The human checkpoint
+05 · Fix the source
+06 · Earn autonomy
+07 · The outcome
+
+01 · The problem
+
+The agent resolved conversations. It also made promises nobody could see.
+
+The client handled subscription billing for around 40,000 business customers. The vendor’s dashboard showed successful resolutions and satisfied customers. Then fourteen refunds promised under an expired promotion surfaced, roughly nineteen days later. The company paid $23,000. The missing measure was the consequence of an apparently successful conversation.
+
+Client-provided history · before this project
+
+of contacts resolved by the AI agent
+61%
+CSAT reported by the vendor
+4.4
+paid after 14 outdated-promotion promises
+$23,000
+
+02 · The operating model
+
+Review the commitments, not every message.
+
+A team of 24, spread across three time zones, could not read every automated conversation. I made the commitment the unit of review: a refund, a credit, a plan change or a consequential promise. Repeated causes become clusters, so a reviewer can fix one source instead of repeating the same investigation fourteen times.
+
+01
+Conversations
+Find consequential promises
+02
+Exposure
+Group causes and rank risk
+03
+Human review
+Verify evidence and decide
+04
+Policy
+Correct and confirm the source
+05
+Quality
+Inspect operating evidence
+06
+Autonomy
+Grant or withdraw a boundary
+
+03 · Detect and investigate
+
+Find the costly pattern. Verify the individual decision.
+
+The queue ranks open financial exposure and separates common-cause clusters from individual runs. Opening a run brings the written promise, its sources, billing calls and missing checks into one workspace with the verdict. A polished answer is no longer enough: the reviewer can inspect what supports it and what fails.
+
+Review Queue · one repeated cause above the individual conversations it affects
+Run Detail · a single run, not a member of the promotion cluster; evidence stays next to the verdict
+Inspect the complete screen
++
+
+04 · The human checkpoint
+
+A financial action waits for an accountable person.
+
+The request exposes the amount, policy, billing method, history and time remaining before the decision. The credit and the customer-visible message sit together. Here, $120 becomes a credit on the next invoice; no cash leaves the account. The action opens a final check, and rejection requires a reason that can be routed to the source.
+
+Action Approvals · approve the actual billing consequence, not just the agent’s wording
+Inspect the complete screen
++
+
+Trade-off · human intervention deliberately reduces automation at the boundary of financial consequences.
+
+05 · Fix the source
+
+Correct the rule. Verify what the agent actually runs.
+
+The policy draft preserves the originating cluster, region, capability, limit and approval authority. The version comparison then separates approval, application and confirmation by the agent. In this fixture, v5 is approved and applied, but the agent still confirms v4. That mismatch stays visible; it cannot be presented as a successful rollout.
+
+Policy Editor · the source, boundary and authority travel with the change
+Inspect the complete screen
++
+Version Diff · approved and applied does not mean confirmed by the agent
+Inspect the complete screen
++
+
+06 · Earn autonomy
+
+More autonomy needs evidence. A serious defect takes it back.
+
+Quality makes policy-compliant autonomy the operating measure and opens the runs behind each signal. The ladder grants permissions by capability, with evidence thresholds and a visible next boundary. Readiness is not permission. A severity-1 defect automatically lowers the affected capability; clean evidence and an explicit human decision are needed before it can rise again.
+
+Quality · synthetic operating signals with an explicit date, scope and coverage
+Autonomy · promotion is earned per capability; the safety fuse can lower it automatically
+
+07 · The outcome
+
+Tested with users. Reworked. Accepted by the client.
+
+I delivered the interactive prototype after research with the client and current and future users, then tested and revised it. The client accepted the work and took implementation forward independently. The outcome evidenced here is the tested design and working prototype.
+
+What testing changed
+Reviewers needed to see a cluster’s members and exclude false matches before trusting a grouped correction. Testing also led to a short undo window for an incorrect verdict.
+The deliberate cost
+A person interrupts automation where money or policy is at stake. Missing evidence and unconfirmed changes remain visible until someone resolves them.
+My scope
+Research, requirements, information architecture, product UX/UI, design system, interactive React / Storybook prototype and testing.
+Public prototype — earlier version
+Opens in a new tab
+
+The public demo predates these accepted screens. Client under NDA · synthetic interface data.
+
+Next case
+Next case: B2B Partner Portal
+B2B Partner Portal
+Let's talk
+
+If the case above answered your question — or raised one.
+
+nikita.kanarev.dev@outlook.com
+CV (PDF)
+LinkedIn
+(external link, opens in a new tab)

@@ -1,0 +1,164 @@
+---
+import TextLink from '../TextLink.astro';
+import CaseNext from '../CaseNext.astro';
+import VetShot from './VetShot.astro';
+import type { VetPremiumCopy } from '../../copy/cases/vet-v3';
+import type { CaseTheme } from '../../copy/cases/story';
+interface Props { copy: VetPremiumCopy; locale: 'en' | 'ru'; next: { href: string; title: string; theme: CaseTheme; label: string }; }
+const { copy: c, locale, next } = Astro.props;
+const { problem, roles, clinical, handoff, process, outcome } = c;
+const [privateState, blockedState, missingState] = c.states.items;
+const externalLabel = locale === 'ru' ? 'Откроется в новой вкладке' : 'Opens in a new tab';
+---
+<article class="vet-case" id="case-vet-clinic" data-h="case" data-story-version="blocks-v1" data-vet-version="premium-v3" data-word-budget="1100">
+  <section class="vet-cover" aria-labelledby="vet-title" data-case-cover="case-vet" transition:name="case-vet" transition:animate="initial">
+    <div class="ds-container vet-cover__inner" data-motion-intro>
+      <header class="vet-cover__head">
+        <div class="vet-cover__name"><p class="ds-meta-sm vet-muted">{c.eyebrow}</p><h1 class="ds-display-5xl" id="vet-title" data-motion="lines">{c.title}</h1></div>
+        <p class="ds-heading-2xl vet-cover__promise" data-motion="fade">{c.promise}</p>
+        <div class="vet-cover__credits"><p class="ds-body-sm">{c.authorship}</p><p class="ds-body-sm vet-muted">{c.scope}</p><p class="ds-body-sm vet-muted">{c.delivery}</p></div>
+      </header>
+      <div class="vet-cover__media"><VetShot shot={c.hero} locale={locale} loading="eager" appearance="cover" /></div>
+    </div>
+  </section>
+  <div class="vet-sheet">
+    <div class="ds-container vet-orientation"><p class="ds-body-sm vet-muted">{c.disclosure}</p><nav class="vet-index" aria-label={c.navLabel} data-h-utility>{c.nav.map(item => <a class="ds-body-sm" href={`#${item.id}`}>{item.text}</a>)}</nav></div>
+    <section class="ds-container vet-module" id="problem" aria-labelledby="problem-title">
+      <div class="vet-head"><p class="ds-meta-sm vet-muted">{problem.label}</p><div class="vet-head__copy"><h2 class="ds-heading-4xl" id="problem-title">{problem.title}</h2><p class="ds-body-lg vet-muted" data-h="lead">{problem.body}</p></div></div>
+      <div class="vet-diagnosis"><aside class="vet-constraint"><p class="ds-display-5xl">{problem.constraint}</p><h3 class="ds-heading-xl">{problem.constraintLabel}</h3><p class="ds-body-sm vet-muted">{problem.constraintNote}</p></aside><ol class="vet-tensions">{c.diagnosis.map(item => <li><h3 class="ds-heading-xl">{item.title}</h3><p class="ds-body-base vet-muted">{item.body}</p></li>)}</ol></div>
+      <div class="vet-queue"><VetShot shot={c.queue} locale={locale} /></div>
+    </section>
+    <section class="ds-container vet-module" id="roles" aria-labelledby="roles-title">
+      <div class="vet-head"><p class="ds-meta-sm vet-muted">{roles.label}</p><div class="vet-head__copy"><h2 class="ds-heading-4xl" id="roles-title">{roles.title}</h2><p class="ds-body-lg vet-muted" data-h="lead">{roles.body}</p></div></div>
+      <div class="vet-model"><div class="vet-model__record"><p class="ds-body-base">{c.model.source}</p><span class="vet-model__down ds-heading-2xl" aria-hidden="true">↓</span><h3 class="ds-heading-2xl">{c.model.saved}</h3><p class="ds-body-sm vet-muted">{c.model.clinic}</p></div><svg class="vet-model__connections" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50H35V12H98M35 50V88H98M88 8L98 12L88 16M88 84L98 88L88 92" vector-effect="non-scaling-stroke" /></svg><ol class="vet-model__branches">{c.model.branches.map(branch => <li><p class="ds-meta-sm">{branch.gate}</p><h3 class="ds-heading-2xl">{branch.title}</h3><p class="ds-body-base vet-muted">{branch.body}</p></li>)}</ol><p class="ds-body-sm vet-muted vet-model__note">{c.model.note}</p></div>
+      <div class="vet-private"><div class="vet-copy"><h3 class="ds-heading-xl">{privateState.title}</h3><p class="ds-body-base vet-muted">{privateState.body}</p></div><VetShot shot={privateState.shot} locale={locale} /></div>
+    </section>
+    <section class="ds-container vet-module" id="trace" aria-labelledby="trace-title">
+      <div class="vet-head"><p class="ds-meta-sm vet-muted">{c.trace.label}</p><div class="vet-head__copy"><h2 class="ds-heading-4xl" id="trace-title">{c.trace.title}</h2><p class="ds-body-lg vet-muted" data-h="lead">{c.trace.body}</p><p class="ds-body-base">{c.trace.rule}</p></div></div>
+      <div class="vet-trace"><VetShot shot={c.trace.shot} locale={locale} /></div>
+    </section>
+    <section class="ds-container vet-module" id="clinical" aria-labelledby="clinical-title">
+      <div class="vet-split vet-split--clinical"><div class="vet-copy"><p class="ds-meta-sm vet-muted">{clinical.label}</p><h2 class="ds-heading-4xl" id="clinical-title">{clinical.title}</h2><p class="ds-body-lg vet-muted" data-h="lead">{clinical.body}</p><ol class="vet-calculation">{c.calculation.map(item => <li><h3 class="ds-heading-xl">{item.title}</h3><p class="ds-body-base vet-muted">{item.body}</p></li>)}</ol><p class="ds-body-sm vet-muted">{clinical.note}</p></div><VetShot shot={clinical.shot} locale={locale} /></div>
+    </section>
+    <section class="ds-container vet-module" id="invoice" aria-labelledby="invoice-title">
+      <div class="vet-split vet-split--invoice"><div class="vet-copy"><p class="ds-meta-sm vet-muted">{handoff.invoice.label}</p><h2 class="ds-heading-3xl" id="invoice-title">{handoff.invoice.title}</h2><p class="ds-body-lg vet-muted" data-h="lead">{handoff.invoice.body}</p></div><VetShot shot={handoff.invoice.shot} locale={locale} /></div>
+    </section>
+    <section class="ds-container vet-module" id="publication" aria-labelledby="publication-title">
+      <div class="vet-head"><p class="ds-meta-sm vet-muted">{handoff.publication.label}</p><div class="vet-head__copy"><h2 class="ds-heading-4xl" id="publication-title">{handoff.publication.title}</h2><p class="ds-body-lg vet-muted" data-h="lead">{handoff.publication.body}</p></div></div>
+      <div class="vet-publication"><div class="vet-publication__ready"><h3 class="ds-heading-xl vet-publication__state">{c.publicationReadyTitle}</h3><VetShot shot={handoff.publication.shot} locale={locale} /></div><div class="vet-publication__blocked"><h3 class="ds-heading-xl vet-publication__state">{blockedState.title}</h3><VetShot shot={{ ...blockedState.shot, caption: c.publicationBlockedCaption }} locale={locale} /></div></div>
+    </section>
+    <section class="vet-owner-band" id="owner" aria-labelledby="owner-title">
+      <div class="ds-container vet-module"><div class="vet-head"><p class="ds-meta-sm vet-muted">{handoff.owner.label}</p><div class="vet-head__copy"><h2 class="ds-heading-4xl" id="owner-title">{handoff.owner.title}</h2><p class="ds-body-lg vet-muted" data-h="lead">{handoff.owner.body}</p></div></div>
+        <div class="vet-responsive"><div class="vet-responsive__desktop"><p class="ds-meta-sm vet-muted">{handoff.owner.desktopLabel}</p><VetShot shot={{ ...handoff.owner.shot, caption: undefined, fullMobile: undefined }} mode="desktop" locale={locale} /></div><div class="vet-responsive__mobile"><p class="ds-meta-sm vet-muted">{handoff.owner.mobileLabel}</p><VetShot shot={{ ...handoff.owner.shot, caption: undefined, fullDesktop: handoff.owner.shot.fullMobile }} mode="mobile" locale={locale} /></div></div>
+        <p class="ds-body-sm vet-muted">{handoff.owner.shot.caption}</p>
+        <div class="vet-missing"><div class="vet-copy"><h3 class="ds-heading-2xl">{missingState.title}</h3><p class="ds-body-base vet-muted">{missingState.body}</p></div><VetShot shot={missingState.shot} locale={locale} /></div>
+      </div>
+    </section>
+    <section class="ds-container vet-module" id="process" aria-labelledby="process-title">
+      <div class="vet-head"><p class="ds-meta-sm vet-muted">{process.label}</p><div class="vet-head__copy"><h2 class="ds-heading-4xl" id="process-title">{process.title}</h2><p class="ds-body-lg vet-muted" data-h="lead">{process.body}</p></div></div>
+      <ol class="vet-process">{process.steps.map(step => <li><h3 class="ds-heading-2xl">{step.title}</h3><p class="ds-body-base vet-muted">{step.body}</p><TextLink type="arrow" href={step.href} external externalLabel={externalLabel}>{step.link}</TextLink></li>)}</ol>
+    </section>
+    <section class="ds-container vet-module" id="outcome" aria-labelledby="outcome-title">
+      <div class="vet-head"><p class="ds-meta-sm vet-muted">{outcome.label}</p><div class="vet-head__copy"><h2 class="ds-heading-4xl" id="outcome-title">{outcome.title}</h2><p class="ds-body-lg vet-muted" data-h="lead">{outcome.body}</p></div></div>
+      <dl class="vet-results">{c.results.map(result => <div><dt class="ds-heading-xl">{result.title}</dt><dd class="ds-body-base vet-muted">{result.body}</dd></div>)}</dl>
+      <div class="vet-outcome"><div class="vet-copy"><h3 class="ds-heading-xl">{outcome.tradeLabel}</h3><p class="ds-body-base vet-muted">{outcome.trade}</p></div><div class="vet-copy"><TextLink type="arrow" href={outcome.href} external externalLabel={externalLabel}>{outcome.cta}</TextLink><p class="ds-body-sm vet-muted">{outcome.note}</p></div></div>
+    </section>
+  </div>
+  <CaseNext {...next} transitionKey={`case-${next.theme}`} />
+</article>
+<style>
+  :global(main:has(> .vet-case)) { padding-block-start: 0; }
+  .vet-case { min-inline-size: 0; }
+  .vet-case h1, .vet-case h2, .vet-case h3, .vet-case p, .vet-case ol, .vet-case dl, .vet-case dd { margin: 0; }
+  .vet-muted { color: var(--text-subtle); }
+  .vet-cover { background: var(--surface-cover-vet); }
+  .vet-cover__inner { display: grid; gap: var(--flow-node); padding-block: var(--flow-node); }
+  .vet-cover__head, .vet-cover__name { display: grid; gap: var(--flow-pair); }
+  .vet-cover__promise { max-inline-size: 28ch; }
+  .vet-cover__credits { display: grid; gap: var(--space-1); }
+  .vet-cover__media { min-inline-size: 0; }
+  .vet-cover__media :global(.vet-shot) { margin-inline: auto; }
+  .vet-sheet { --vet-step: var(--space-24); padding-block-end: var(--vet-step); }
+  .vet-sheet > * + * { margin-block-start: var(--vet-step); }
+  .vet-orientation { padding-block-start: var(--flow-group); display: grid; gap: var(--flow-text); }
+  .vet-orientation > p { max-inline-size: var(--measure-text); }
+  .vet-index { display: flex; flex-wrap: wrap; column-gap: var(--flow-node); }
+  .vet-index a { display: inline-flex; align-items: center; min-block-size: var(--space-12); color: var(--text-default); text-underline-offset: var(--space-1); }
+  .vet-index a:active { color: var(--text-link-pressed); }
+  .vet-module, .vet-owner-band { scroll-margin-block-start: var(--flow-node); }
+  .vet-module > * + * { margin-block-start: var(--flow-group); }
+  .vet-head, .vet-head__copy, .vet-copy { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--flow-text); align-content: start; min-inline-size: 0; }
+  .vet-head__copy { max-inline-size: var(--measure-text); }
+  .vet-head h2 { max-inline-size: 27ch; }
+  .vet-diagnosis { display: grid; gap: var(--flow-node); }
+  .vet-constraint { display: grid; align-content: start; gap: var(--flow-pair); }
+  .vet-constraint > p:first-child { font-variant-numeric: tabular-nums; }
+  .vet-tensions, .vet-calculation, .vet-model__branches, .vet-process { padding: 0; list-style: none; }
+  .vet-tensions { display: grid; gap: var(--flow-text); }
+  .vet-tensions li, .vet-calculation li { display: grid; align-content: start; gap: var(--space-2); }
+  .vet-queue, .vet-trace { display: grid; justify-items: center; }
+  .vet-model { display: grid; gap: var(--flow-node); background: var(--surface-cover-vet); border-radius: var(--radius-media); padding: var(--space-6); }
+  .vet-model__record { display: grid; align-content: start; justify-items: start; gap: var(--flow-pair); }
+  .vet-model__connections { display: none; }
+  .vet-model__connections path { fill: none; stroke: var(--text-subtle); stroke-width: var(--border-width); }
+  .vet-model__branches { display: grid; gap: var(--flow-node); }
+  .vet-model__branches li { display: grid; gap: var(--flow-pair); }
+  .vet-model__branches li > p:first-child { color: var(--text-default); }
+  .vet-model__note { max-inline-size: var(--measure-text); }
+  .vet-private, .vet-missing { display: grid; gap: var(--flow-node); align-items: start; }
+  .vet-split { display: grid; gap: var(--flow-group); align-items: start; }
+  .vet-split > :global(.vet-shot) { justify-self: center; }
+  .vet-calculation { display: grid; gap: var(--flow-text); }
+  .vet-publication { display: grid; gap: var(--flow-block); justify-content: center; }
+  .vet-publication > div { min-inline-size: 0; display: grid; align-content: start; gap: var(--flow-text); }
+  .vet-owner-band { background: var(--surface-default); }
+  .vet-responsive { display: grid; gap: var(--flow-group); align-items: start; }
+  .vet-responsive__desktop { display: none; }
+  .vet-responsive__mobile { display: grid; gap: var(--flow-text); max-inline-size: calc(var(--space-48) * 2); }
+  .vet-responsive__mobile > p { display: none; }
+  .vet-process { display: grid; gap: var(--flow-group); }
+  .vet-process li { display: grid; gap: var(--flow-text); align-content: start; padding-block-start: var(--flow-text); border-block-start: var(--border-width) solid var(--border-strong); }
+  .vet-process li :global(.ds-link) { justify-self: start; min-block-size: var(--space-12); }
+  .vet-results { display: grid; gap: var(--flow-node); }
+  .vet-results > div { display: grid; align-content: start; gap: var(--flow-pair); }
+  .vet-outcome { display: grid; gap: var(--flow-group); padding-block-start: var(--flow-group); border-block-start: var(--border-width) solid var(--border-default); }
+  .vet-outcome :global(.ds-link) { justify-self: start; min-block-size: var(--space-12); }
+  .vet-case :global(.case-next__label-text) { color: var(--text-default); }
+  @media (--can-hover) { .vet-index a:hover { color: var(--text-link-hover); } }
+  @media (--bp-md) {
+    .vet-diagnosis { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: var(--space-16); }
+    .vet-model { padding: var(--space-12); }
+    .vet-model__branches { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .vet-publication { grid-template-columns: repeat(2, minmax(0, calc(var(--space-48) * 2))); gap: var(--space-16); }
+    .vet-process, .vet-results { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-8); }
+    .vet-missing { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-16); }
+  }
+  @media (--bp-lg) {
+    .vet-cover__head { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--flow-text) var(--space-12); align-items: end; }
+    .vet-cover__name { gap: var(--flow-pair); }
+    .vet-cover__promise { max-inline-size: 26ch; }
+    .vet-cover__credits { grid-column: 1 / -1; grid-template-columns: auto 1fr auto; gap: var(--space-6); }
+    .vet-cover__media { inline-size: 100%; max-inline-size: calc(var(--measure-lead) + var(--space-48)); justify-self: center; }
+    .vet-sheet { --vet-step: var(--space-32); }
+    .vet-head { grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: var(--gutter); }
+    .vet-head > p { padding-block-start: var(--space-2); }
+    .vet-diagnosis { grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: var(--gutter); }
+    .vet-tensions { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gutter); }
+    .vet-model { grid-template-columns: minmax(0, 5fr) var(--space-16) minmax(0, 7fr); gap: var(--flow-node); }
+    .vet-model__record { align-content: center; }
+    .vet-model__connections { display: block; align-self: stretch; inline-size: 100%; block-size: 100%; }
+    .vet-model__branches { grid-template-columns: 1fr; }
+    .vet-model__note { grid-column: 1 / -1; }
+    .vet-private { grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: var(--gutter); }
+    .vet-split--clinical { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-16); }
+    .vet-split--invoice { grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: var(--space-16); }
+    .vet-publication { grid-template-columns: repeat(2, minmax(0, calc(var(--space-48) * 2))); gap: var(--space-32); }
+    .vet-publication__state { display: none; }
+    .vet-responsive { grid-template-columns: minmax(0, 8fr) minmax(0, 3fr); gap: var(--space-12); }
+    .vet-responsive__desktop { display: grid; gap: var(--flow-text); }
+    .vet-responsive__mobile > p { display: block; }
+    .vet-process, .vet-results { gap: var(--space-16); }
+    .vet-missing { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-16); }
+    .vet-outcome { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--space-16); }
+  }
+</style>

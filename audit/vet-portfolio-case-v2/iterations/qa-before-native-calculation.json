@@ -1,0 +1,4596 @@
+{
+  "base": "http://127.0.0.1:5371",
+  "browser": "151.0.7922.34",
+  "capturedAt": "2026-11-01T16:55:43.087Z",
+  "viewportHeight": 900,
+  "dpr": 1,
+  "results": [
+    {
+      "name": "en-1440",
+      "locale": "en",
+      "width": 1440,
+      "tests": [
+        {
+          "label": "No document horizontal overflow",
+          "pass": true
+        },
+        {
+          "label": "No cropped or overflowing prose",
+          "pass": true
+        },
+        {
+          "label": "Hero image visible without waiting for a tall-image intersection",
+          "pass": true
+        },
+        {
+          "label": "One h1; correct locale and current metadata",
+          "pass": true
+        },
+        {
+          "label": "Canonical and alternate locales",
+          "pass": true
+        },
+        {
+          "label": "New cache-safe OG asset",
+          "pass": true
+        },
+        {
+          "label": "OG image loads",
+          "pass": true
+        },
+        {
+          "label": "Old screenshots not rendered",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/visit-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/visit-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/dose-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/dose-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/invoice-document-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/invoice-document-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/discharge-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/discharge-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/owner-overview-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/owner-overview-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/private-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/private-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/blocked-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/blocked-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Tablet / mobile hero uses a genuine mobile source",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 0",
+          "pass": true
+        },
+        {
+          "label": "Focus remains in dialog",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 0",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 1",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 1",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 2",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 2",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 3",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 3",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 4",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 4",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 5",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 5",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 6",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 6",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 7",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 7",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 8",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 8",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 9",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 9",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 10",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 10",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 11",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 11",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 12",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 12",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 13",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 13",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 14",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 14",
+          "pass": true
+        },
+        {
+          "label": "Correct product link / locale",
+          "pass": true
+        },
+        {
+          "label": "Keyboard focus ring",
+          "pass": true
+        },
+        {
+          "label": "No scoped axe WCAG A/AA findings",
+          "pass": true
+        },
+        {
+          "label": "Next case href retained",
+          "pass": true
+        },
+        {
+          "label": "Next-case navigation loads",
+          "pass": true
+        },
+        {
+          "label": "Back navigation restores Vet renderer",
+          "pass": true
+        },
+        {
+          "label": "No runtime errors or failed assets",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "failedRequests": [],
+      "metrics": {
+        "overflow": 0,
+        "height": 12122,
+        "images": [
+          {
+            "src": "/media/case-vet-v2/en/visit-full-desktop.webp",
+            "alt": "Visit Record: Marsik’s sourced 4.8 kg trace, clinical fields, private note, 0.95 ml calculation example, selected services and separate save actions.",
+            "width": 1280,
+            "height": 1275.4375,
+            "naturalWidth": 2812,
+            "naturalHeight": 2802,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/dose-full-desktop.webp",
+            "alt": "Dose Calculator: read-only 4.8 kg clinic weight, selected formulation, clinician-entered rate, 0.95 ml example, dimensional arithmetic, rounding and record action.",
+            "width": 1280,
+            "height": 811.140625,
+            "naturalWidth": 2812,
+            "naturalHeight": 1782,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/invoice-document-desktop.webp",
+            "alt": "Complete invoice services document: two selected services, 1,500 RUB total, Mark as paid and the manual-status limitation.",
+            "width": 825,
+            "height": 452,
+            "naturalWidth": 1650,
+            "naturalHeight": 904,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/discharge-full-desktop.webp",
+            "alt": "Discharge Preview: complete owner document beside publication state, recipient, clinic-only exclusions and Publish discharge summary.",
+            "width": 1280,
+            "height": 1122.5,
+            "naturalWidth": 2812,
+            "naturalHeight": 2466,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/owner-overview-desktop.webp",
+            "alt": "Published Owner Home: Marsik’s care plan, 0.95 ml illustrative prescription, visit provenance, discharge and clinic telephone action.",
+            "width": 896,
+            "height": 823.765625,
+            "naturalWidth": 2208,
+            "naturalHeight": 2030,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/owner-overview-mobile.webp",
+            "alt": "Native mobile Owner Home detail: patient context, published plan and complete illustrative prescription. The full screen includes discharge and clinic contact.",
+            "width": 336,
+            "height": 700.421875,
+            "naturalWidth": 780,
+            "naturalHeight": 1626,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/private-desktop.webp",
+            "alt": "Complete private-note section with Veterinarians only and an explicit exclusion from discharge, invoice and owner view.",
+            "width": 816,
+            "height": 190,
+            "naturalWidth": 1632,
+            "naturalHeight": 380,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/blocked-desktop.webp",
+            "alt": "Publication panel for an empty saved plan: publication disabled and the previous owner publication retained.",
+            "width": 320,
+            "height": 766,
+            "naturalWidth": 640,
+            "naturalHeight": 1532,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/missing-mobile.webp",
+            "alt": "Native owner prescription exception: Dose unavailable, confirmation required before giving medication, and the clinic telephone link.",
+            "width": 350,
+            "height": 255,
+            "naturalWidth": 700,
+            "naturalHeight": 510,
+            "complete": true,
+            "fit": "contain"
+          }
+        ],
+        "textOverflow": [],
+        "hiddenHero": false,
+        "mainProseWords": 344,
+        "totalVisibleWords": 676,
+        "h1": 1,
+        "title": "Vet Clinic OS — one visit, three connected roles",
+        "description": "Designing a connected veterinary workspace: clinical records, transparent dose calculations, reception workflows and explicitly published owner care plans.",
+        "lang": "en",
+        "canonical": "https://kanarev.com/work/vet-clinic/",
+        "alternates": [
+          {
+            "lang": "en",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          },
+          {
+            "lang": "ru",
+            "href": "https://kanarev.com/ru/work/vet-clinic/"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          }
+        ],
+        "og": "https://kanarev.com/og/work-vet-clinic-v2-onest.png",
+        "fullLinks": [
+          "/media/case-vet-v2/en/invoice-full-desktop.webp",
+          "/media/case-vet-v2/en/owner-full-desktop.webp",
+          "/media/case-vet-v2/en/owner-full-mobile.webp",
+          "/media/case-vet-v2/en/visit-full-desktop.webp",
+          "/media/case-vet-v2/en/blocked-full-desktop.webp",
+          "/media/case-vet-v2/en/missing-full-mobile.webp"
+        ],
+        "oldImages": 0
+      },
+      "zoom": [
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/visit-full-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/visit-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/dose-full-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/dose-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/invoice-document-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/invoice-document-desktop.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/invoice-full-desktop.webp",
+          "expected": "/media/case-vet-v2/en/invoice-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/discharge-full-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/discharge-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/owner-overview-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/owner-overview-desktop.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/owner-full-desktop.webp",
+          "expected": "/media/case-vet-v2/en/owner-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/owner-overview-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/owner-overview-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/owner-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/owner-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/private-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/private-desktop.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/visit-full-desktop.webp",
+          "expected": "/media/case-vet-v2/en/visit-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/blocked-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/blocked-desktop.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/blocked-full-desktop.webp",
+          "expected": "/media/case-vet-v2/en/blocked-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/missing-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/missing-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/missing-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/missing-full-mobile.webp"
+        }
+      ],
+      "axe": []
+    },
+    {
+      "name": "en-1280",
+      "locale": "en",
+      "width": 1280,
+      "tests": [
+        {
+          "label": "No document horizontal overflow",
+          "pass": true
+        },
+        {
+          "label": "No cropped or overflowing prose",
+          "pass": true
+        },
+        {
+          "label": "Hero image visible without waiting for a tall-image intersection",
+          "pass": true
+        },
+        {
+          "label": "One h1; correct locale and current metadata",
+          "pass": true
+        },
+        {
+          "label": "Canonical and alternate locales",
+          "pass": true
+        },
+        {
+          "label": "New cache-safe OG asset",
+          "pass": true
+        },
+        {
+          "label": "OG image loads",
+          "pass": true
+        },
+        {
+          "label": "Old screenshots not rendered",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/visit-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/visit-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/dose-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/dose-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/invoice-document-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/invoice-document-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/discharge-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/discharge-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/owner-overview-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/owner-overview-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/private-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/private-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/blocked-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/blocked-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Tablet / mobile hero uses a genuine mobile source",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 0",
+          "pass": true
+        },
+        {
+          "label": "Focus remains in dialog",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 0",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 1",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 1",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 2",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 2",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 3",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 3",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 4",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 4",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 5",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 5",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 6",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 6",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 7",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 7",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 8",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 8",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 9",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 9",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 10",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 10",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 11",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 11",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 12",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 12",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 13",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 13",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 14",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 14",
+          "pass": true
+        },
+        {
+          "label": "Correct product link / locale",
+          "pass": true
+        },
+        {
+          "label": "Keyboard focus ring",
+          "pass": true
+        },
+        {
+          "label": "No scoped axe WCAG A/AA findings",
+          "pass": true
+        },
+        {
+          "label": "Next case href retained",
+          "pass": true
+        },
+        {
+          "label": "Next-case navigation loads",
+          "pass": true
+        },
+        {
+          "label": "Back navigation restores Vet renderer",
+          "pass": true
+        },
+        {
+          "label": "No runtime errors or failed assets",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "failedRequests": [],
+      "metrics": {
+        "overflow": 0,
+        "height": 11591,
+        "images": [
+          {
+            "src": "/media/case-vet-v2/en/visit-full-desktop.webp",
+            "alt": "Visit Record: Marsik’s sourced 4.8 kg trace, clinical fields, private note, 0.95 ml calculation example, selected services and separate save actions.",
+            "width": 1120,
+            "height": 1116.015625,
+            "naturalWidth": 2812,
+            "naturalHeight": 2802,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/dose-full-desktop.webp",
+            "alt": "Dose Calculator: read-only 4.8 kg clinic weight, selected formulation, clinician-entered rate, 0.95 ml example, dimensional arithmetic, rounding and record action.",
+            "width": 1120,
+            "height": 709.75,
+            "naturalWidth": 2812,
+            "naturalHeight": 1782,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/invoice-document-desktop.webp",
+            "alt": "Complete invoice services document: two selected services, 1,500 RUB total, Mark as paid and the manual-status limitation.",
+            "width": 825,
+            "height": 452,
+            "naturalWidth": 1650,
+            "naturalHeight": 904,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/discharge-full-desktop.webp",
+            "alt": "Discharge Preview: complete owner document beside publication state, recipient, clinic-only exclusions and Publish discharge summary.",
+            "width": 1120,
+            "height": 982.1875,
+            "naturalWidth": 2812,
+            "naturalHeight": 2466,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/owner-overview-desktop.webp",
+            "alt": "Published Owner Home: Marsik’s care plan, 0.95 ml illustrative prescription, visit provenance, discharge and clinic telephone action.",
+            "width": 779.625,
+            "height": 716.765625,
+            "naturalWidth": 2208,
+            "naturalHeight": 2030,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/owner-overview-mobile.webp",
+            "alt": "Native mobile Owner Home detail: patient context, published plan and complete illustrative prescription. The full screen includes discharge and clinic contact.",
+            "width": 292.375,
+            "height": 609.484375,
+            "naturalWidth": 780,
+            "naturalHeight": 1626,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/private-desktop.webp",
+            "alt": "Complete private-note section with Veterinarians only and an explicit exclusion from discharge, invoice and owner view.",
+            "width": 714.671875,
+            "height": 166.40625,
+            "naturalWidth": 1632,
+            "naturalHeight": 380,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/blocked-desktop.webp",
+            "alt": "Publication panel for an empty saved plan: publication disabled and the previous owner publication retained.",
+            "width": 320,
+            "height": 766,
+            "naturalWidth": 640,
+            "naturalHeight": 1532,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/missing-mobile.webp",
+            "alt": "Native owner prescription exception: Dose unavailable, confirmation required before giving medication, and the clinic telephone link.",
+            "width": 350,
+            "height": 255,
+            "naturalWidth": 700,
+            "naturalHeight": 510,
+            "complete": true,
+            "fit": "contain"
+          }
+        ],
+        "textOverflow": [],
+        "hiddenHero": false,
+        "mainProseWords": 344,
+        "totalVisibleWords": 676,
+        "h1": 1,
+        "title": "Vet Clinic OS — one visit, three connected roles",
+        "description": "Designing a connected veterinary workspace: clinical records, transparent dose calculations, reception workflows and explicitly published owner care plans.",
+        "lang": "en",
+        "canonical": "https://kanarev.com/work/vet-clinic/",
+        "alternates": [
+          {
+            "lang": "en",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          },
+          {
+            "lang": "ru",
+            "href": "https://kanarev.com/ru/work/vet-clinic/"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          }
+        ],
+        "og": "https://kanarev.com/og/work-vet-clinic-v2-onest.png",
+        "fullLinks": [
+          "/media/case-vet-v2/en/invoice-full-desktop.webp",
+          "/media/case-vet-v2/en/owner-full-desktop.webp",
+          "/media/case-vet-v2/en/owner-full-mobile.webp",
+          "/media/case-vet-v2/en/visit-full-desktop.webp",
+          "/media/case-vet-v2/en/blocked-full-desktop.webp",
+          "/media/case-vet-v2/en/missing-full-mobile.webp"
+        ],
+        "oldImages": 0
+      },
+      "zoom": [
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/visit-full-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/visit-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/dose-full-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/dose-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/invoice-document-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/invoice-document-desktop.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/invoice-full-desktop.webp",
+          "expected": "/media/case-vet-v2/en/invoice-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/discharge-full-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/discharge-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/owner-overview-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/owner-overview-desktop.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/owner-full-desktop.webp",
+          "expected": "/media/case-vet-v2/en/owner-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/owner-overview-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/owner-overview-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/owner-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/owner-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/private-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/private-desktop.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/visit-full-desktop.webp",
+          "expected": "/media/case-vet-v2/en/visit-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/blocked-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/blocked-desktop.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/blocked-full-desktop.webp",
+          "expected": "/media/case-vet-v2/en/blocked-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/missing-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/missing-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/missing-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/missing-full-mobile.webp"
+        }
+      ],
+      "axe": []
+    },
+    {
+      "name": "en-768",
+      "locale": "en",
+      "width": 768,
+      "tests": [
+        {
+          "label": "No document horizontal overflow",
+          "pass": true
+        },
+        {
+          "label": "No cropped or overflowing prose",
+          "pass": true
+        },
+        {
+          "label": "Hero image visible without waiting for a tall-image intersection",
+          "pass": true
+        },
+        {
+          "label": "One h1; correct locale and current metadata",
+          "pass": true
+        },
+        {
+          "label": "Canonical and alternate locales",
+          "pass": true
+        },
+        {
+          "label": "New cache-safe OG asset",
+          "pass": true
+        },
+        {
+          "label": "OG image loads",
+          "pass": true
+        },
+        {
+          "label": "Old screenshots not rendered",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/visit-context-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/visit-context-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/dose-review-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/dose-review-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/invoice-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/invoice-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/discharge-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/discharge-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/private-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/private-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/blocked-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/blocked-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Tablet / mobile hero uses a genuine mobile source",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 0",
+          "pass": true
+        },
+        {
+          "label": "Focus remains in dialog",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 0",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 1",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 1",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 2",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 2",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 3",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 3",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 4",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 4",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 5",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 5",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 6",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 6",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 7",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 7",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 8",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 8",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 9",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 9",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 10",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 10",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 11",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 11",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 12",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 12",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 13",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 13",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 14",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 14",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 15",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 15",
+          "pass": true
+        },
+        {
+          "label": "Correct product link / locale",
+          "pass": true
+        },
+        {
+          "label": "Keyboard focus ring",
+          "pass": true
+        },
+        {
+          "label": "No scoped axe WCAG A/AA findings",
+          "pass": true
+        },
+        {
+          "label": "Next case href retained",
+          "pass": true
+        },
+        {
+          "label": "Next-case navigation loads",
+          "pass": true
+        },
+        {
+          "label": "Back navigation restores Vet renderer",
+          "pass": true
+        },
+        {
+          "label": "No runtime errors or failed assets",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "failedRequests": [],
+      "metrics": {
+        "overflow": 0,
+        "height": 11307,
+        "images": [
+          {
+            "src": "/media/case-vet-v2/en/visit-context-mobile.webp",
+            "alt": "Visit Record: Marsik’s sourced 4.8 kg trace, clinical fields, private note, 0.95 ml calculation example, selected services and separate save actions.",
+            "width": 390,
+            "height": 397,
+            "naturalWidth": 780,
+            "naturalHeight": 794,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/dose-review-mobile.webp",
+            "alt": "Dose Calculator: read-only 4.8 kg clinic weight, selected formulation, clinician-entered rate, 0.95 ml example, dimensional arithmetic, rounding and record action.",
+            "width": 358,
+            "height": 668,
+            "naturalWidth": 716,
+            "naturalHeight": 1336,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/invoice-document-mobile.webp",
+            "alt": "Complete invoice services document: two selected services, 1,500 RUB total, Mark as paid and the manual-status limitation.",
+            "width": 358,
+            "height": 440,
+            "naturalWidth": 716,
+            "naturalHeight": 880,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/discharge-document-mobile.webp",
+            "alt": "Discharge Preview: complete owner document beside publication state, recipient, clinic-only exclusions and Publish discharge summary.",
+            "width": 358,
+            "height": 1024,
+            "naturalWidth": 716,
+            "naturalHeight": 2048,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/owner-overview-mobile.webp",
+            "alt": "Native mobile Owner Home detail: patient context, published plan and complete illustrative prescription. The full screen includes discharge and clinic contact.",
+            "width": 384,
+            "height": 800.484375,
+            "naturalWidth": 780,
+            "naturalHeight": 1626,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/private-mobile.webp",
+            "alt": "Complete private-note section with Veterinarians only and an explicit exclusion from discharge, invoice and owner view.",
+            "width": 358,
+            "height": 233,
+            "naturalWidth": 716,
+            "naturalHeight": 466,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/blocked-mobile.webp",
+            "alt": "Publication panel for an empty saved plan: publication disabled and the previous owner publication retained.",
+            "width": 304,
+            "height": 516.28125,
+            "naturalWidth": 716,
+            "naturalHeight": 1216,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/missing-mobile.webp",
+            "alt": "Native owner prescription exception: Dose unavailable, confirmation required before giving medication, and the clinic telephone link.",
+            "width": 304,
+            "height": 221.484375,
+            "naturalWidth": 700,
+            "naturalHeight": 510,
+            "complete": true,
+            "fit": "contain"
+          }
+        ],
+        "textOverflow": [],
+        "hiddenHero": false,
+        "mainProseWords": 344,
+        "totalVisibleWords": 673,
+        "h1": 1,
+        "title": "Vet Clinic OS — one visit, three connected roles",
+        "description": "Designing a connected veterinary workspace: clinical records, transparent dose calculations, reception workflows and explicitly published owner care plans.",
+        "lang": "en",
+        "canonical": "https://kanarev.com/work/vet-clinic/",
+        "alternates": [
+          {
+            "lang": "en",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          },
+          {
+            "lang": "ru",
+            "href": "https://kanarev.com/ru/work/vet-clinic/"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          }
+        ],
+        "og": "https://kanarev.com/og/work-vet-clinic-v2-onest.png",
+        "fullLinks": [
+          "/media/case-vet-v2/en/visit-full-mobile.webp",
+          "/media/case-vet-v2/en/dose-full-mobile.webp",
+          "/media/case-vet-v2/en/invoice-full-mobile.webp",
+          "/media/case-vet-v2/en/discharge-full-mobile.webp",
+          "/media/case-vet-v2/en/owner-full-mobile.webp",
+          "/media/case-vet-v2/en/visit-full-mobile.webp",
+          "/media/case-vet-v2/en/blocked-full-mobile.webp",
+          "/media/case-vet-v2/en/missing-full-mobile.webp"
+        ],
+        "oldImages": 0
+      },
+      "zoom": [
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/visit-context-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/visit-context-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/visit-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/visit-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/dose-review-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/dose-review-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/dose-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/dose-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/invoice-document-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/invoice-document-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/invoice-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/invoice-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/discharge-document-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/discharge-document-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/discharge-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/discharge-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/owner-overview-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/owner-overview-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/owner-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/owner-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/private-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/private-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/visit-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/visit-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/blocked-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/blocked-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/blocked-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/blocked-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/missing-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/missing-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/missing-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/missing-full-mobile.webp"
+        }
+      ],
+      "axe": []
+    },
+    {
+      "name": "en-390",
+      "locale": "en",
+      "width": 390,
+      "tests": [
+        {
+          "label": "No document horizontal overflow",
+          "pass": true
+        },
+        {
+          "label": "No cropped or overflowing prose",
+          "pass": true
+        },
+        {
+          "label": "Hero image visible without waiting for a tall-image intersection",
+          "pass": true
+        },
+        {
+          "label": "One h1; correct locale and current metadata",
+          "pass": true
+        },
+        {
+          "label": "Canonical and alternate locales",
+          "pass": true
+        },
+        {
+          "label": "New cache-safe OG asset",
+          "pass": true
+        },
+        {
+          "label": "OG image loads",
+          "pass": true
+        },
+        {
+          "label": "Old screenshots not rendered",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/visit-context-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/visit-context-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/dose-review-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/dose-review-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/invoice-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/invoice-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/discharge-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/discharge-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/private-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/private-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/blocked-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/blocked-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Tablet / mobile hero uses a genuine mobile source",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 0",
+          "pass": true
+        },
+        {
+          "label": "Focus remains in dialog",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 0",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 1",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 1",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 2",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 2",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 3",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 3",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 4",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 4",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 5",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 5",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 6",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 6",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 7",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 7",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 8",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 8",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 9",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 9",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 10",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 10",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 11",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 11",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 12",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 12",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 13",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 13",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 14",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 14",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 15",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 15",
+          "pass": true
+        },
+        {
+          "label": "Correct product link / locale",
+          "pass": true
+        },
+        {
+          "label": "Keyboard focus ring",
+          "pass": true
+        },
+        {
+          "label": "No scoped axe WCAG A/AA findings",
+          "pass": true
+        },
+        {
+          "label": "Next case href retained",
+          "pass": true
+        },
+        {
+          "label": "Next-case navigation loads",
+          "pass": true
+        },
+        {
+          "label": "Back navigation restores Vet renderer",
+          "pass": true
+        },
+        {
+          "label": "No runtime errors or failed assets",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "failedRequests": [],
+      "metrics": {
+        "overflow": 0,
+        "height": 12854,
+        "images": [
+          {
+            "src": "/media/case-vet-v2/en/visit-context-mobile.webp",
+            "alt": "Visit Record: Marsik’s sourced 4.8 kg trace, clinical fields, private note, 0.95 ml calculation example, selected services and separate save actions.",
+            "width": 342,
+            "height": 348.125,
+            "naturalWidth": 780,
+            "naturalHeight": 794,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/dose-review-mobile.webp",
+            "alt": "Dose Calculator: read-only 4.8 kg clinic weight, selected formulation, clinician-entered rate, 0.95 ml example, dimensional arithmetic, rounding and record action.",
+            "width": 342,
+            "height": 638.140625,
+            "naturalWidth": 716,
+            "naturalHeight": 1336,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/invoice-document-mobile.webp",
+            "alt": "Complete invoice services document: two selected services, 1,500 RUB total, Mark as paid and the manual-status limitation.",
+            "width": 342,
+            "height": 420.328125,
+            "naturalWidth": 716,
+            "naturalHeight": 880,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/discharge-document-mobile.webp",
+            "alt": "Discharge Preview: complete owner document beside publication state, recipient, clinic-only exclusions and Publish discharge summary.",
+            "width": 342,
+            "height": 978.234375,
+            "naturalWidth": 716,
+            "naturalHeight": 2048,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/owner-overview-mobile.webp",
+            "alt": "Native mobile Owner Home detail: patient context, published plan and complete illustrative prescription. The full screen includes discharge and clinic contact.",
+            "width": 342,
+            "height": 712.9375,
+            "naturalWidth": 780,
+            "naturalHeight": 1626,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/private-mobile.webp",
+            "alt": "Complete private-note section with Veterinarians only and an explicit exclusion from discharge, invoice and owner view.",
+            "width": 342,
+            "height": 222.578125,
+            "naturalWidth": 716,
+            "naturalHeight": 466,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/blocked-mobile.webp",
+            "alt": "Publication panel for an empty saved plan: publication disabled and the previous owner publication retained.",
+            "width": 342,
+            "height": 580.8125,
+            "naturalWidth": 716,
+            "naturalHeight": 1216,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/missing-mobile.webp",
+            "alt": "Native owner prescription exception: Dose unavailable, confirmation required before giving medication, and the clinic telephone link.",
+            "width": 342,
+            "height": 249.15625,
+            "naturalWidth": 700,
+            "naturalHeight": 510,
+            "complete": true,
+            "fit": "contain"
+          }
+        ],
+        "textOverflow": [],
+        "hiddenHero": false,
+        "mainProseWords": 344,
+        "totalVisibleWords": 673,
+        "h1": 1,
+        "title": "Vet Clinic OS — one visit, three connected roles",
+        "description": "Designing a connected veterinary workspace: clinical records, transparent dose calculations, reception workflows and explicitly published owner care plans.",
+        "lang": "en",
+        "canonical": "https://kanarev.com/work/vet-clinic/",
+        "alternates": [
+          {
+            "lang": "en",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          },
+          {
+            "lang": "ru",
+            "href": "https://kanarev.com/ru/work/vet-clinic/"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          }
+        ],
+        "og": "https://kanarev.com/og/work-vet-clinic-v2-onest.png",
+        "fullLinks": [
+          "/media/case-vet-v2/en/visit-full-mobile.webp",
+          "/media/case-vet-v2/en/dose-full-mobile.webp",
+          "/media/case-vet-v2/en/invoice-full-mobile.webp",
+          "/media/case-vet-v2/en/discharge-full-mobile.webp",
+          "/media/case-vet-v2/en/owner-full-mobile.webp",
+          "/media/case-vet-v2/en/visit-full-mobile.webp",
+          "/media/case-vet-v2/en/blocked-full-mobile.webp",
+          "/media/case-vet-v2/en/missing-full-mobile.webp"
+        ],
+        "oldImages": 0
+      },
+      "zoom": [
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/visit-context-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/visit-context-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/visit-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/visit-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/dose-review-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/dose-review-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/dose-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/dose-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/invoice-document-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/invoice-document-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/invoice-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/invoice-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/discharge-document-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/discharge-document-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/discharge-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/discharge-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/owner-overview-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/owner-overview-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/owner-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/owner-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/private-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/private-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/visit-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/visit-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/blocked-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/blocked-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/blocked-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/blocked-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/missing-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/missing-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/missing-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/missing-full-mobile.webp"
+        }
+      ],
+      "axe": []
+    },
+    {
+      "name": "en-360",
+      "locale": "en",
+      "width": 360,
+      "tests": [
+        {
+          "label": "No document horizontal overflow",
+          "pass": true
+        },
+        {
+          "label": "No cropped or overflowing prose",
+          "pass": true
+        },
+        {
+          "label": "Hero image visible without waiting for a tall-image intersection",
+          "pass": true
+        },
+        {
+          "label": "One h1; correct locale and current metadata",
+          "pass": true
+        },
+        {
+          "label": "Canonical and alternate locales",
+          "pass": true
+        },
+        {
+          "label": "New cache-safe OG asset",
+          "pass": true
+        },
+        {
+          "label": "OG image loads",
+          "pass": true
+        },
+        {
+          "label": "Old screenshots not rendered",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/visit-context-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/visit-context-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/dose-review-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/dose-review-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/invoice-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/invoice-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/discharge-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/discharge-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/private-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/private-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/blocked-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/blocked-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/en/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/en/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Tablet / mobile hero uses a genuine mobile source",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 0",
+          "pass": true
+        },
+        {
+          "label": "Focus remains in dialog",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 0",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 1",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 1",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 2",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 2",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 3",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 3",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 4",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 4",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 5",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 5",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 6",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 6",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 7",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 7",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 8",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 8",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 9",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 9",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 10",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 10",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 11",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 11",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 12",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 12",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 13",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 13",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 14",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 14",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 15",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 15",
+          "pass": true
+        },
+        {
+          "label": "Correct product link / locale",
+          "pass": true
+        },
+        {
+          "label": "Keyboard focus ring",
+          "pass": true
+        },
+        {
+          "label": "No scoped axe WCAG A/AA findings",
+          "pass": true
+        },
+        {
+          "label": "Next case href retained",
+          "pass": true
+        },
+        {
+          "label": "Next-case navigation loads",
+          "pass": true
+        },
+        {
+          "label": "Back navigation restores Vet renderer",
+          "pass": true
+        },
+        {
+          "label": "No runtime errors or failed assets",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "failedRequests": [],
+      "metrics": {
+        "overflow": 0,
+        "height": 12794,
+        "images": [
+          {
+            "src": "/media/case-vet-v2/en/visit-context-mobile.webp",
+            "alt": "Visit Record: Marsik’s sourced 4.8 kg trace, clinical fields, private note, 0.95 ml calculation example, selected services and separate save actions.",
+            "width": 312,
+            "height": 317.59375,
+            "naturalWidth": 780,
+            "naturalHeight": 794,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/dose-review-mobile.webp",
+            "alt": "Dose Calculator: read-only 4.8 kg clinic weight, selected formulation, clinician-entered rate, 0.95 ml example, dimensional arithmetic, rounding and record action.",
+            "width": 312,
+            "height": 582.15625,
+            "naturalWidth": 716,
+            "naturalHeight": 1336,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/invoice-document-mobile.webp",
+            "alt": "Complete invoice services document: two selected services, 1,500 RUB total, Mark as paid and the manual-status limitation.",
+            "width": 312,
+            "height": 383.453125,
+            "naturalWidth": 716,
+            "naturalHeight": 880,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/discharge-document-mobile.webp",
+            "alt": "Discharge Preview: complete owner document beside publication state, recipient, clinic-only exclusions and Publish discharge summary.",
+            "width": 312,
+            "height": 892.421875,
+            "naturalWidth": 716,
+            "naturalHeight": 2048,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/owner-overview-mobile.webp",
+            "alt": "Native mobile Owner Home detail: patient context, published plan and complete illustrative prescription. The full screen includes discharge and clinic contact.",
+            "width": 312,
+            "height": 650.390625,
+            "naturalWidth": 780,
+            "naturalHeight": 1626,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/private-mobile.webp",
+            "alt": "Complete private-note section with Veterinarians only and an explicit exclusion from discharge, invoice and owner view.",
+            "width": 312,
+            "height": 203.046875,
+            "naturalWidth": 716,
+            "naturalHeight": 466,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/blocked-mobile.webp",
+            "alt": "Publication panel for an empty saved plan: publication disabled and the previous owner publication retained.",
+            "width": 312,
+            "height": 529.875,
+            "naturalWidth": 716,
+            "naturalHeight": 1216,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/en/missing-mobile.webp",
+            "alt": "Native owner prescription exception: Dose unavailable, confirmation required before giving medication, and the clinic telephone link.",
+            "width": 312,
+            "height": 227.3125,
+            "naturalWidth": 700,
+            "naturalHeight": 510,
+            "complete": true,
+            "fit": "contain"
+          }
+        ],
+        "textOverflow": [],
+        "hiddenHero": false,
+        "mainProseWords": 344,
+        "totalVisibleWords": 673,
+        "h1": 1,
+        "title": "Vet Clinic OS — one visit, three connected roles",
+        "description": "Designing a connected veterinary workspace: clinical records, transparent dose calculations, reception workflows and explicitly published owner care plans.",
+        "lang": "en",
+        "canonical": "https://kanarev.com/work/vet-clinic/",
+        "alternates": [
+          {
+            "lang": "en",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          },
+          {
+            "lang": "ru",
+            "href": "https://kanarev.com/ru/work/vet-clinic/"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          }
+        ],
+        "og": "https://kanarev.com/og/work-vet-clinic-v2-onest.png",
+        "fullLinks": [
+          "/media/case-vet-v2/en/visit-full-mobile.webp",
+          "/media/case-vet-v2/en/dose-full-mobile.webp",
+          "/media/case-vet-v2/en/invoice-full-mobile.webp",
+          "/media/case-vet-v2/en/discharge-full-mobile.webp",
+          "/media/case-vet-v2/en/owner-full-mobile.webp",
+          "/media/case-vet-v2/en/visit-full-mobile.webp",
+          "/media/case-vet-v2/en/blocked-full-mobile.webp",
+          "/media/case-vet-v2/en/missing-full-mobile.webp"
+        ],
+        "oldImages": 0
+      },
+      "zoom": [
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/visit-context-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/visit-context-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/visit-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/visit-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/dose-review-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/dose-review-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/dose-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/dose-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/invoice-document-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/invoice-document-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/invoice-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/invoice-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/discharge-document-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/discharge-document-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/discharge-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/discharge-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/owner-overview-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/owner-overview-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/owner-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/owner-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/private-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/private-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/visit-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/visit-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/blocked-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/blocked-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/blocked-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/blocked-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/en/missing-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/en/missing-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/en/missing-full-mobile.webp",
+          "expected": "/media/case-vet-v2/en/missing-full-mobile.webp"
+        }
+      ],
+      "axe": []
+    },
+    {
+      "name": "ru-1440",
+      "locale": "ru",
+      "width": 1440,
+      "tests": [
+        {
+          "label": "No document horizontal overflow",
+          "pass": true
+        },
+        {
+          "label": "No cropped or overflowing prose",
+          "pass": true
+        },
+        {
+          "label": "Hero image visible without waiting for a tall-image intersection",
+          "pass": true
+        },
+        {
+          "label": "One h1; correct locale and current metadata",
+          "pass": true
+        },
+        {
+          "label": "Canonical and alternate locales",
+          "pass": true
+        },
+        {
+          "label": "New cache-safe OG asset",
+          "pass": true
+        },
+        {
+          "label": "OG image loads",
+          "pass": true
+        },
+        {
+          "label": "Old screenshots not rendered",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/visit-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/visit-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/dose-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/dose-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/invoice-document-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/invoice-document-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/discharge-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/discharge-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/owner-overview-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/owner-overview-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/private-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/private-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/blocked-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/blocked-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Tablet / mobile hero uses a genuine mobile source",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 0",
+          "pass": true
+        },
+        {
+          "label": "Focus remains in dialog",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 0",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 1",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 1",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 2",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 2",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 3",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 3",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 4",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 4",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 5",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 5",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 6",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 6",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 7",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 7",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 8",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 8",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 9",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 9",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 10",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 10",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 11",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 11",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 12",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 12",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 13",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 13",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 14",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 14",
+          "pass": true
+        },
+        {
+          "label": "Correct product link / locale",
+          "pass": true
+        },
+        {
+          "label": "Keyboard focus ring",
+          "pass": true
+        },
+        {
+          "label": "No scoped axe WCAG A/AA findings",
+          "pass": true
+        },
+        {
+          "label": "Next case href retained",
+          "pass": true
+        },
+        {
+          "label": "Next-case navigation loads",
+          "pass": true
+        },
+        {
+          "label": "Back navigation restores Vet renderer",
+          "pass": true
+        },
+        {
+          "label": "No runtime errors or failed assets",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "failedRequests": [],
+      "metrics": {
+        "overflow": 0,
+        "height": 12301,
+        "images": [
+          {
+            "src": "/media/case-vet-v2/ru/visit-full-desktop.webp",
+            "alt": "Запись визита Марсика: след с источником веса 4,8 кг, клинические поля, приватная заметка, пример расчёта 0,95 мл, услуги и отдельные действия сохранения.",
+            "width": 1280,
+            "height": 1308.21875,
+            "naturalWidth": 2812,
+            "naturalHeight": 2874,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/dose-full-desktop.webp",
+            "alt": "Калькулятор дозы: вес из клиники 4,8 кг, выбранная форма препарата, доза от врача, пример 0,95 мл, арифметика с единицами, округление и запись в визит.",
+            "width": 1280,
+            "height": 811.140625,
+            "naturalWidth": 2812,
+            "naturalHeight": 1782,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/invoice-document-desktop.webp",
+            "alt": "Целый документ услуг: две выбранные услуги, итог 1500 рублей, отметка оплаты и пояснение о ручном изменении статуса.",
+            "width": 825,
+            "height": 452,
+            "naturalWidth": 1650,
+            "naturalHeight": 904,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/discharge-full-desktop.webp",
+            "alt": "Предпросмотр выписки: целый документ владельца, статус публикации, получатель, исключённые сведения и кнопка публикации.",
+            "width": 1280,
+            "height": 1122.5,
+            "naturalWidth": 2812,
+            "naturalHeight": 2466,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/owner-overview-desktop.webp",
+            "alt": "Опубликованный кабинет владельца: план Марсика, пример назначения 0,95 мл, дата визита, выписка и звонок в клинику.",
+            "width": 896,
+            "height": 823.765625,
+            "naturalWidth": 2208,
+            "naturalHeight": 2030,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/owner-overview-mobile.webp",
+            "alt": "Настоящий мобильный фрагмент: пациент, опубликованный план и целое примерное назначение. Выписка и контакт клиники доступны в полном экране.",
+            "width": 336,
+            "height": 681.46875,
+            "naturalWidth": 780,
+            "naturalHeight": 1582,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/private-desktop.webp",
+            "alt": "Целая приватная заметка: только ветеринарам; явно исключена из выписки, счёта и кабинета владельца.",
+            "width": 816,
+            "height": 190,
+            "naturalWidth": 1632,
+            "naturalHeight": 380,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/blocked-desktop.webp",
+            "alt": "Панель публикации с пустым сохранённым планом: действие недоступно, прежняя публикация владельца сохранена.",
+            "width": 320,
+            "height": 807,
+            "naturalWidth": 640,
+            "naturalHeight": 1614,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/missing-mobile.webp",
+            "alt": "Настоящее состояние назначения владельца: доза недоступна, перед применением нужно уточнение, рядом телефон клиники.",
+            "width": 350,
+            "height": 255,
+            "naturalWidth": 700,
+            "naturalHeight": 510,
+            "complete": true,
+            "fit": "contain"
+          }
+        ],
+        "textOverflow": [],
+        "hiddenHero": false,
+        "mainProseWords": 318,
+        "totalVisibleWords": 619,
+        "h1": 1,
+        "title": "Vet Clinic OS — один приём, три связанные роли",
+        "description": "Проектирование системы ветклиники: клиническая запись, прозрачный расчёт дозы, работа регистратуры и явная публикация плана лечения владельцу.",
+        "lang": "ru",
+        "canonical": "https://kanarev.com/ru/work/vet-clinic/",
+        "alternates": [
+          {
+            "lang": "en",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          },
+          {
+            "lang": "ru",
+            "href": "https://kanarev.com/ru/work/vet-clinic/"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          }
+        ],
+        "og": "https://kanarev.com/og/work-vet-clinic-v2-ru-onest.png",
+        "fullLinks": [
+          "/media/case-vet-v2/ru/invoice-full-desktop.webp",
+          "/media/case-vet-v2/ru/owner-full-desktop.webp",
+          "/media/case-vet-v2/ru/owner-full-mobile.webp",
+          "/media/case-vet-v2/ru/visit-full-desktop.webp",
+          "/media/case-vet-v2/ru/blocked-full-desktop.webp",
+          "/media/case-vet-v2/ru/missing-full-mobile.webp"
+        ],
+        "oldImages": 0
+      },
+      "zoom": [
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/visit-full-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/visit-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/dose-full-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/dose-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/invoice-document-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/invoice-document-desktop.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/invoice-full-desktop.webp",
+          "expected": "/media/case-vet-v2/ru/invoice-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/discharge-full-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/discharge-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/owner-overview-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/owner-overview-desktop.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/owner-full-desktop.webp",
+          "expected": "/media/case-vet-v2/ru/owner-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/owner-overview-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/owner-overview-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/owner-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/owner-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/private-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/private-desktop.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/visit-full-desktop.webp",
+          "expected": "/media/case-vet-v2/ru/visit-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/blocked-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/blocked-desktop.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/blocked-full-desktop.webp",
+          "expected": "/media/case-vet-v2/ru/blocked-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/missing-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/missing-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/missing-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/missing-full-mobile.webp"
+        }
+      ],
+      "axe": []
+    },
+    {
+      "name": "ru-1280",
+      "locale": "ru",
+      "width": 1280,
+      "tests": [
+        {
+          "label": "No document horizontal overflow",
+          "pass": true
+        },
+        {
+          "label": "No cropped or overflowing prose",
+          "pass": true
+        },
+        {
+          "label": "Hero image visible without waiting for a tall-image intersection",
+          "pass": true
+        },
+        {
+          "label": "One h1; correct locale and current metadata",
+          "pass": true
+        },
+        {
+          "label": "Canonical and alternate locales",
+          "pass": true
+        },
+        {
+          "label": "New cache-safe OG asset",
+          "pass": true
+        },
+        {
+          "label": "OG image loads",
+          "pass": true
+        },
+        {
+          "label": "Old screenshots not rendered",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/visit-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/visit-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/dose-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/dose-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/invoice-document-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/invoice-document-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/discharge-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/discharge-full-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/owner-overview-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/owner-overview-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/private-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/private-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/blocked-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/blocked-desktop.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Tablet / mobile hero uses a genuine mobile source",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 0",
+          "pass": true
+        },
+        {
+          "label": "Focus remains in dialog",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 0",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 1",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 1",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 2",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 2",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 3",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 3",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 4",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 4",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 5",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 5",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 6",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 6",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 7",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 7",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 8",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 8",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 9",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 9",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 10",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 10",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 11",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 11",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 12",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 12",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 13",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 13",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 14",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 14",
+          "pass": true
+        },
+        {
+          "label": "Correct product link / locale",
+          "pass": true
+        },
+        {
+          "label": "Keyboard focus ring",
+          "pass": true
+        },
+        {
+          "label": "No scoped axe WCAG A/AA findings",
+          "pass": true
+        },
+        {
+          "label": "Next case href retained",
+          "pass": true
+        },
+        {
+          "label": "Next-case navigation loads",
+          "pass": true
+        },
+        {
+          "label": "Back navigation restores Vet renderer",
+          "pass": true
+        },
+        {
+          "label": "No runtime errors or failed assets",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "failedRequests": [],
+      "metrics": {
+        "overflow": 0,
+        "height": 11835,
+        "images": [
+          {
+            "src": "/media/case-vet-v2/ru/visit-full-desktop.webp",
+            "alt": "Запись визита Марсика: след с источником веса 4,8 кг, клинические поля, приватная заметка, пример расчёта 0,95 мл, услуги и отдельные действия сохранения.",
+            "width": 1120,
+            "height": 1144.6875,
+            "naturalWidth": 2812,
+            "naturalHeight": 2874,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/dose-full-desktop.webp",
+            "alt": "Калькулятор дозы: вес из клиники 4,8 кг, выбранная форма препарата, доза от врача, пример 0,95 мл, арифметика с единицами, округление и запись в визит.",
+            "width": 1120,
+            "height": 709.75,
+            "naturalWidth": 2812,
+            "naturalHeight": 1782,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/invoice-document-desktop.webp",
+            "alt": "Целый документ услуг: две выбранные услуги, итог 1500 рублей, отметка оплаты и пояснение о ручном изменении статуса.",
+            "width": 825,
+            "height": 452,
+            "naturalWidth": 1650,
+            "naturalHeight": 904,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/discharge-full-desktop.webp",
+            "alt": "Предпросмотр выписки: целый документ владельца, статус публикации, получатель, исключённые сведения и кнопка публикации.",
+            "width": 1120,
+            "height": 982.1875,
+            "naturalWidth": 2812,
+            "naturalHeight": 2466,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/owner-overview-desktop.webp",
+            "alt": "Опубликованный кабинет владельца: план Марсика, пример назначения 0,95 мл, дата визита, выписка и звонок в клинику.",
+            "width": 779.625,
+            "height": 716.765625,
+            "naturalWidth": 2208,
+            "naturalHeight": 2030,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/owner-overview-mobile.webp",
+            "alt": "Настоящий мобильный фрагмент: пациент, опубликованный план и целое примерное назначение. Выписка и контакт клиники доступны в полном экране.",
+            "width": 292.375,
+            "height": 592.984375,
+            "naturalWidth": 780,
+            "naturalHeight": 1582,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/private-desktop.webp",
+            "alt": "Целая приватная заметка: только ветеринарам; явно исключена из выписки, счёта и кабинета владельца.",
+            "width": 714.671875,
+            "height": 166.40625,
+            "naturalWidth": 1632,
+            "naturalHeight": 380,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/blocked-desktop.webp",
+            "alt": "Панель публикации с пустым сохранённым планом: действие недоступно, прежняя публикация владельца сохранена.",
+            "width": 320,
+            "height": 807,
+            "naturalWidth": 640,
+            "naturalHeight": 1614,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/missing-mobile.webp",
+            "alt": "Настоящее состояние назначения владельца: доза недоступна, перед применением нужно уточнение, рядом телефон клиники.",
+            "width": 350,
+            "height": 255,
+            "naturalWidth": 700,
+            "naturalHeight": 510,
+            "complete": true,
+            "fit": "contain"
+          }
+        ],
+        "textOverflow": [],
+        "hiddenHero": false,
+        "mainProseWords": 318,
+        "totalVisibleWords": 619,
+        "h1": 1,
+        "title": "Vet Clinic OS — один приём, три связанные роли",
+        "description": "Проектирование системы ветклиники: клиническая запись, прозрачный расчёт дозы, работа регистратуры и явная публикация плана лечения владельцу.",
+        "lang": "ru",
+        "canonical": "https://kanarev.com/ru/work/vet-clinic/",
+        "alternates": [
+          {
+            "lang": "en",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          },
+          {
+            "lang": "ru",
+            "href": "https://kanarev.com/ru/work/vet-clinic/"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          }
+        ],
+        "og": "https://kanarev.com/og/work-vet-clinic-v2-ru-onest.png",
+        "fullLinks": [
+          "/media/case-vet-v2/ru/invoice-full-desktop.webp",
+          "/media/case-vet-v2/ru/owner-full-desktop.webp",
+          "/media/case-vet-v2/ru/owner-full-mobile.webp",
+          "/media/case-vet-v2/ru/visit-full-desktop.webp",
+          "/media/case-vet-v2/ru/blocked-full-desktop.webp",
+          "/media/case-vet-v2/ru/missing-full-mobile.webp"
+        ],
+        "oldImages": 0
+      },
+      "zoom": [
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/visit-full-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/visit-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/dose-full-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/dose-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/invoice-document-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/invoice-document-desktop.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/invoice-full-desktop.webp",
+          "expected": "/media/case-vet-v2/ru/invoice-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/discharge-full-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/discharge-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/owner-overview-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/owner-overview-desktop.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/owner-full-desktop.webp",
+          "expected": "/media/case-vet-v2/ru/owner-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/owner-overview-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/owner-overview-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/owner-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/owner-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/private-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/private-desktop.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/visit-full-desktop.webp",
+          "expected": "/media/case-vet-v2/ru/visit-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/blocked-desktop.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/blocked-desktop.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/blocked-full-desktop.webp",
+          "expected": "/media/case-vet-v2/ru/blocked-full-desktop.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/missing-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/missing-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/missing-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/missing-full-mobile.webp"
+        }
+      ],
+      "axe": []
+    },
+    {
+      "name": "ru-768",
+      "locale": "ru",
+      "width": 768,
+      "tests": [
+        {
+          "label": "No document horizontal overflow",
+          "pass": true
+        },
+        {
+          "label": "No cropped or overflowing prose",
+          "pass": true
+        },
+        {
+          "label": "Hero image visible without waiting for a tall-image intersection",
+          "pass": true
+        },
+        {
+          "label": "One h1; correct locale and current metadata",
+          "pass": true
+        },
+        {
+          "label": "Canonical and alternate locales",
+          "pass": true
+        },
+        {
+          "label": "New cache-safe OG asset",
+          "pass": true
+        },
+        {
+          "label": "OG image loads",
+          "pass": true
+        },
+        {
+          "label": "Old screenshots not rendered",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/visit-context-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/visit-context-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/dose-review-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/dose-review-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/invoice-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/invoice-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/discharge-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/discharge-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/private-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/private-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/blocked-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/blocked-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Tablet / mobile hero uses a genuine mobile source",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 0",
+          "pass": true
+        },
+        {
+          "label": "Focus remains in dialog",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 0",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 1",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 1",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 2",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 2",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 3",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 3",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 4",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 4",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 5",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 5",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 6",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 6",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 7",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 7",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 8",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 8",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 9",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 9",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 10",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 10",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 11",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 11",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 12",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 12",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 13",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 13",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 14",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 14",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 15",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 15",
+          "pass": true
+        },
+        {
+          "label": "Correct product link / locale",
+          "pass": true
+        },
+        {
+          "label": "Keyboard focus ring",
+          "pass": true
+        },
+        {
+          "label": "No scoped axe WCAG A/AA findings",
+          "pass": true
+        },
+        {
+          "label": "Next case href retained",
+          "pass": true
+        },
+        {
+          "label": "Next-case navigation loads",
+          "pass": true
+        },
+        {
+          "label": "Back navigation restores Vet renderer",
+          "pass": true
+        },
+        {
+          "label": "No runtime errors or failed assets",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "failedRequests": [],
+      "metrics": {
+        "overflow": 0,
+        "height": 11564,
+        "images": [
+          {
+            "src": "/media/case-vet-v2/ru/visit-context-mobile.webp",
+            "alt": "Запись визита Марсика: след с источником веса 4,8 кг, клинические поля, приватная заметка, пример расчёта 0,95 мл, услуги и отдельные действия сохранения.",
+            "width": 390,
+            "height": 397,
+            "naturalWidth": 780,
+            "naturalHeight": 794,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/dose-review-mobile.webp",
+            "alt": "Калькулятор дозы: вес из клиники 4,8 кг, выбранная форма препарата, доза от врача, пример 0,95 мл, арифметика с единицами, округление и запись в визит.",
+            "width": 358,
+            "height": 668,
+            "naturalWidth": 716,
+            "naturalHeight": 1336,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/invoice-document-mobile.webp",
+            "alt": "Целый документ услуг: две выбранные услуги, итог 1500 рублей, отметка оплаты и пояснение о ручном изменении статуса.",
+            "width": 358,
+            "height": 460,
+            "naturalWidth": 716,
+            "naturalHeight": 920,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/discharge-document-mobile.webp",
+            "alt": "Предпросмотр выписки: целый документ владельца, статус публикации, получатель, исключённые сведения и кнопка публикации.",
+            "width": 358,
+            "height": 1014,
+            "naturalWidth": 716,
+            "naturalHeight": 2028,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/owner-overview-mobile.webp",
+            "alt": "Настоящий мобильный фрагмент: пациент, опубликованный план и целое примерное назначение. Выписка и контакт клиники доступны в полном экране.",
+            "width": 384,
+            "height": 778.828125,
+            "naturalWidth": 780,
+            "naturalHeight": 1582,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/private-mobile.webp",
+            "alt": "Целая приватная заметка: только ветеринарам; явно исключена из выписки, счёта и кабинета владельца.",
+            "width": 358,
+            "height": 215,
+            "naturalWidth": 716,
+            "naturalHeight": 430,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/blocked-mobile.webp",
+            "alt": "Панель публикации с пустым сохранённым планом: действие недоступно, прежняя публикация владельца сохранена.",
+            "width": 304,
+            "height": 532.421875,
+            "naturalWidth": 716,
+            "naturalHeight": 1254,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/missing-mobile.webp",
+            "alt": "Настоящее состояние назначения владельца: доза недоступна, перед применением нужно уточнение, рядом телефон клиники.",
+            "width": 304,
+            "height": 221.484375,
+            "naturalWidth": 700,
+            "naturalHeight": 510,
+            "complete": true,
+            "fit": "contain"
+          }
+        ],
+        "textOverflow": [],
+        "hiddenHero": false,
+        "mainProseWords": 318,
+        "totalVisibleWords": 617,
+        "h1": 1,
+        "title": "Vet Clinic OS — один приём, три связанные роли",
+        "description": "Проектирование системы ветклиники: клиническая запись, прозрачный расчёт дозы, работа регистратуры и явная публикация плана лечения владельцу.",
+        "lang": "ru",
+        "canonical": "https://kanarev.com/ru/work/vet-clinic/",
+        "alternates": [
+          {
+            "lang": "en",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          },
+          {
+            "lang": "ru",
+            "href": "https://kanarev.com/ru/work/vet-clinic/"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          }
+        ],
+        "og": "https://kanarev.com/og/work-vet-clinic-v2-ru-onest.png",
+        "fullLinks": [
+          "/media/case-vet-v2/ru/visit-full-mobile.webp",
+          "/media/case-vet-v2/ru/dose-full-mobile.webp",
+          "/media/case-vet-v2/ru/invoice-full-mobile.webp",
+          "/media/case-vet-v2/ru/discharge-full-mobile.webp",
+          "/media/case-vet-v2/ru/owner-full-mobile.webp",
+          "/media/case-vet-v2/ru/visit-full-mobile.webp",
+          "/media/case-vet-v2/ru/blocked-full-mobile.webp",
+          "/media/case-vet-v2/ru/missing-full-mobile.webp"
+        ],
+        "oldImages": 0
+      },
+      "zoom": [
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/visit-context-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/visit-context-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/visit-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/visit-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/dose-review-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/dose-review-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/dose-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/dose-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/invoice-document-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/invoice-document-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/invoice-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/invoice-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/discharge-document-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/discharge-document-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/discharge-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/discharge-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/owner-overview-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/owner-overview-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/owner-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/owner-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/private-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/private-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/visit-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/visit-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/blocked-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/blocked-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/blocked-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/blocked-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/missing-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/missing-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/missing-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/missing-full-mobile.webp"
+        }
+      ],
+      "axe": []
+    },
+    {
+      "name": "ru-390",
+      "locale": "ru",
+      "width": 390,
+      "tests": [
+        {
+          "label": "No document horizontal overflow",
+          "pass": true
+        },
+        {
+          "label": "No cropped or overflowing prose",
+          "pass": true
+        },
+        {
+          "label": "Hero image visible without waiting for a tall-image intersection",
+          "pass": true
+        },
+        {
+          "label": "One h1; correct locale and current metadata",
+          "pass": true
+        },
+        {
+          "label": "Canonical and alternate locales",
+          "pass": true
+        },
+        {
+          "label": "New cache-safe OG asset",
+          "pass": true
+        },
+        {
+          "label": "OG image loads",
+          "pass": true
+        },
+        {
+          "label": "Old screenshots not rendered",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/visit-context-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/visit-context-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/dose-review-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/dose-review-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/invoice-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/invoice-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/discharge-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/discharge-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/private-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/private-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/blocked-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/blocked-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Tablet / mobile hero uses a genuine mobile source",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 0",
+          "pass": true
+        },
+        {
+          "label": "Focus remains in dialog",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 0",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 1",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 1",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 2",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 2",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 3",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 3",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 4",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 4",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 5",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 5",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 6",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 6",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 7",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 7",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 8",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 8",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 9",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 9",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 10",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 10",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 11",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 11",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 12",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 12",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 13",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 13",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 14",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 14",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 15",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 15",
+          "pass": true
+        },
+        {
+          "label": "Correct product link / locale",
+          "pass": true
+        },
+        {
+          "label": "Keyboard focus ring",
+          "pass": true
+        },
+        {
+          "label": "No scoped axe WCAG A/AA findings",
+          "pass": true
+        },
+        {
+          "label": "Next case href retained",
+          "pass": true
+        },
+        {
+          "label": "Next-case navigation loads",
+          "pass": true
+        },
+        {
+          "label": "Back navigation restores Vet renderer",
+          "pass": true
+        },
+        {
+          "label": "No runtime errors or failed assets",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "failedRequests": [],
+      "metrics": {
+        "overflow": 0,
+        "height": 13301,
+        "images": [
+          {
+            "src": "/media/case-vet-v2/ru/visit-context-mobile.webp",
+            "alt": "Запись визита Марсика: след с источником веса 4,8 кг, клинические поля, приватная заметка, пример расчёта 0,95 мл, услуги и отдельные действия сохранения.",
+            "width": 342,
+            "height": 348.125,
+            "naturalWidth": 780,
+            "naturalHeight": 794,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/dose-review-mobile.webp",
+            "alt": "Калькулятор дозы: вес из клиники 4,8 кг, выбранная форма препарата, доза от врача, пример 0,95 мл, арифметика с единицами, округление и запись в визит.",
+            "width": 342,
+            "height": 638.140625,
+            "naturalWidth": 716,
+            "naturalHeight": 1336,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/invoice-document-mobile.webp",
+            "alt": "Целый документ услуг: две выбранные услуги, итог 1500 рублей, отметка оплаты и пояснение о ручном изменении статуса.",
+            "width": 342,
+            "height": 439.4375,
+            "naturalWidth": 716,
+            "naturalHeight": 920,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/discharge-document-mobile.webp",
+            "alt": "Предпросмотр выписки: целый документ владельца, статус публикации, получатель, исключённые сведения и кнопка публикации.",
+            "width": 342,
+            "height": 968.671875,
+            "naturalWidth": 716,
+            "naturalHeight": 2028,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/owner-overview-mobile.webp",
+            "alt": "Настоящий мобильный фрагмент: пациент, опубликованный план и целое примерное назначение. Выписка и контакт клиники доступны в полном экране.",
+            "width": 342,
+            "height": 693.640625,
+            "naturalWidth": 780,
+            "naturalHeight": 1582,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/private-mobile.webp",
+            "alt": "Целая приватная заметка: только ветеринарам; явно исключена из выписки, счёта и кабинета владельца.",
+            "width": 342,
+            "height": 205.390625,
+            "naturalWidth": 716,
+            "naturalHeight": 430,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/blocked-mobile.webp",
+            "alt": "Панель публикации с пустым сохранённым планом: действие недоступно, прежняя публикация владельца сохранена.",
+            "width": 342,
+            "height": 598.96875,
+            "naturalWidth": 716,
+            "naturalHeight": 1254,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/missing-mobile.webp",
+            "alt": "Настоящее состояние назначения владельца: доза недоступна, перед применением нужно уточнение, рядом телефон клиники.",
+            "width": 342,
+            "height": 249.15625,
+            "naturalWidth": 700,
+            "naturalHeight": 510,
+            "complete": true,
+            "fit": "contain"
+          }
+        ],
+        "textOverflow": [],
+        "hiddenHero": false,
+        "mainProseWords": 318,
+        "totalVisibleWords": 617,
+        "h1": 1,
+        "title": "Vet Clinic OS — один приём, три связанные роли",
+        "description": "Проектирование системы ветклиники: клиническая запись, прозрачный расчёт дозы, работа регистратуры и явная публикация плана лечения владельцу.",
+        "lang": "ru",
+        "canonical": "https://kanarev.com/ru/work/vet-clinic/",
+        "alternates": [
+          {
+            "lang": "en",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          },
+          {
+            "lang": "ru",
+            "href": "https://kanarev.com/ru/work/vet-clinic/"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          }
+        ],
+        "og": "https://kanarev.com/og/work-vet-clinic-v2-ru-onest.png",
+        "fullLinks": [
+          "/media/case-vet-v2/ru/visit-full-mobile.webp",
+          "/media/case-vet-v2/ru/dose-full-mobile.webp",
+          "/media/case-vet-v2/ru/invoice-full-mobile.webp",
+          "/media/case-vet-v2/ru/discharge-full-mobile.webp",
+          "/media/case-vet-v2/ru/owner-full-mobile.webp",
+          "/media/case-vet-v2/ru/visit-full-mobile.webp",
+          "/media/case-vet-v2/ru/blocked-full-mobile.webp",
+          "/media/case-vet-v2/ru/missing-full-mobile.webp"
+        ],
+        "oldImages": 0
+      },
+      "zoom": [
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/visit-context-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/visit-context-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/visit-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/visit-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/dose-review-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/dose-review-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/dose-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/dose-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/invoice-document-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/invoice-document-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/invoice-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/invoice-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/discharge-document-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/discharge-document-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/discharge-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/discharge-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/owner-overview-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/owner-overview-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/owner-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/owner-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/private-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/private-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/visit-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/visit-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/blocked-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/blocked-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/blocked-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/blocked-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/missing-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/missing-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/missing-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/missing-full-mobile.webp"
+        }
+      ],
+      "axe": []
+    },
+    {
+      "name": "ru-360",
+      "locale": "ru",
+      "width": 360,
+      "tests": [
+        {
+          "label": "No document horizontal overflow",
+          "pass": true
+        },
+        {
+          "label": "No cropped or overflowing prose",
+          "pass": true
+        },
+        {
+          "label": "Hero image visible without waiting for a tall-image intersection",
+          "pass": true
+        },
+        {
+          "label": "One h1; correct locale and current metadata",
+          "pass": true
+        },
+        {
+          "label": "Canonical and alternate locales",
+          "pass": true
+        },
+        {
+          "label": "New cache-safe OG asset",
+          "pass": true
+        },
+        {
+          "label": "OG image loads",
+          "pass": true
+        },
+        {
+          "label": "Old screenshots not rendered",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/visit-context-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/visit-context-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/dose-review-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/dose-review-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/invoice-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/invoice-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/discharge-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/discharge-document-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/owner-overview-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/private-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/private-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/blocked-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/blocked-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Image loads and has alt: /media/case-vet-v2/ru/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Natural aspect ratio / native-width ceiling: /media/case-vet-v2/ru/missing-mobile.webp",
+          "pass": true
+        },
+        {
+          "label": "Tablet / mobile hero uses a genuine mobile source",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 0",
+          "pass": true
+        },
+        {
+          "label": "Focus remains in dialog",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 0",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 1",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 1",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 2",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 2",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 3",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 3",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 4",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 4",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 5",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 5",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 6",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 6",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 7",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 7",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 8",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 8",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 9",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 9",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 10",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 10",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 11",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 11",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 12",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 12",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 13",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 13",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 14",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 14",
+          "pass": true
+        },
+        {
+          "label": "Keyboard zoom source 15",
+          "pass": true
+        },
+        {
+          "label": "Escape closes and restores focus 15",
+          "pass": true
+        },
+        {
+          "label": "Correct product link / locale",
+          "pass": true
+        },
+        {
+          "label": "Keyboard focus ring",
+          "pass": true
+        },
+        {
+          "label": "No scoped axe WCAG A/AA findings",
+          "pass": true
+        },
+        {
+          "label": "Next case href retained",
+          "pass": true
+        },
+        {
+          "label": "Next-case navigation loads",
+          "pass": true
+        },
+        {
+          "label": "Back navigation restores Vet renderer",
+          "pass": true
+        },
+        {
+          "label": "No runtime errors or failed assets",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "failedRequests": [],
+      "metrics": {
+        "overflow": 0,
+        "height": 13286,
+        "images": [
+          {
+            "src": "/media/case-vet-v2/ru/visit-context-mobile.webp",
+            "alt": "Запись визита Марсика: след с источником веса 4,8 кг, клинические поля, приватная заметка, пример расчёта 0,95 мл, услуги и отдельные действия сохранения.",
+            "width": 312,
+            "height": 317.59375,
+            "naturalWidth": 780,
+            "naturalHeight": 794,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/dose-review-mobile.webp",
+            "alt": "Калькулятор дозы: вес из клиники 4,8 кг, выбранная форма препарата, доза от врача, пример 0,95 мл, арифметика с единицами, округление и запись в визит.",
+            "width": 312,
+            "height": 582.15625,
+            "naturalWidth": 716,
+            "naturalHeight": 1336,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/invoice-document-mobile.webp",
+            "alt": "Целый документ услуг: две выбранные услуги, итог 1500 рублей, отметка оплаты и пояснение о ручном изменении статуса.",
+            "width": 312,
+            "height": 400.890625,
+            "naturalWidth": 716,
+            "naturalHeight": 920,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/discharge-document-mobile.webp",
+            "alt": "Предпросмотр выписки: целый документ владельца, статус публикации, получатель, исключённые сведения и кнопка публикации.",
+            "width": 312,
+            "height": 883.703125,
+            "naturalWidth": 716,
+            "naturalHeight": 2028,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/owner-overview-mobile.webp",
+            "alt": "Настоящий мобильный фрагмент: пациент, опубликованный план и целое примерное назначение. Выписка и контакт клиники доступны в полном экране.",
+            "width": 312,
+            "height": 632.796875,
+            "naturalWidth": 780,
+            "naturalHeight": 1582,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/private-mobile.webp",
+            "alt": "Целая приватная заметка: только ветеринарам; явно исключена из выписки, счёта и кабинета владельца.",
+            "width": 312,
+            "height": 187.359375,
+            "naturalWidth": 716,
+            "naturalHeight": 430,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/blocked-mobile.webp",
+            "alt": "Панель публикации с пустым сохранённым планом: действие недоступно, прежняя публикация владельца сохранена.",
+            "width": 312,
+            "height": 546.421875,
+            "naturalWidth": 716,
+            "naturalHeight": 1254,
+            "complete": true,
+            "fit": "contain"
+          },
+          {
+            "src": "/media/case-vet-v2/ru/missing-mobile.webp",
+            "alt": "Настоящее состояние назначения владельца: доза недоступна, перед применением нужно уточнение, рядом телефон клиники.",
+            "width": 312,
+            "height": 227.3125,
+            "naturalWidth": 700,
+            "naturalHeight": 510,
+            "complete": true,
+            "fit": "contain"
+          }
+        ],
+        "textOverflow": [],
+        "hiddenHero": false,
+        "mainProseWords": 318,
+        "totalVisibleWords": 617,
+        "h1": 1,
+        "title": "Vet Clinic OS — один приём, три связанные роли",
+        "description": "Проектирование системы ветклиники: клиническая запись, прозрачный расчёт дозы, работа регистратуры и явная публикация плана лечения владельцу.",
+        "lang": "ru",
+        "canonical": "https://kanarev.com/ru/work/vet-clinic/",
+        "alternates": [
+          {
+            "lang": "en",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          },
+          {
+            "lang": "ru",
+            "href": "https://kanarev.com/ru/work/vet-clinic/"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://kanarev.com/work/vet-clinic/"
+          }
+        ],
+        "og": "https://kanarev.com/og/work-vet-clinic-v2-ru-onest.png",
+        "fullLinks": [
+          "/media/case-vet-v2/ru/visit-full-mobile.webp",
+          "/media/case-vet-v2/ru/dose-full-mobile.webp",
+          "/media/case-vet-v2/ru/invoice-full-mobile.webp",
+          "/media/case-vet-v2/ru/discharge-full-mobile.webp",
+          "/media/case-vet-v2/ru/owner-full-mobile.webp",
+          "/media/case-vet-v2/ru/visit-full-mobile.webp",
+          "/media/case-vet-v2/ru/blocked-full-mobile.webp",
+          "/media/case-vet-v2/ru/missing-full-mobile.webp"
+        ],
+        "oldImages": 0
+      },
+      "zoom": [
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/visit-context-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/visit-context-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/visit-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/visit-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/dose-review-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/dose-review-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/dose-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/dose-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/invoice-document-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/invoice-document-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/invoice-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/invoice-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/discharge-document-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/discharge-document-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/discharge-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/discharge-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/owner-overview-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/owner-overview-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/owner-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/owner-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/private-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/private-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/visit-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/visit-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/blocked-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/blocked-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/blocked-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/blocked-full-mobile.webp"
+        },
+        {
+          "source": "http://127.0.0.1:5371/media/case-vet-v2/ru/missing-mobile.webp",
+          "expected": "http://127.0.0.1:5371/media/case-vet-v2/ru/missing-mobile.webp"
+        },
+        {
+          "source": "/media/case-vet-v2/ru/missing-full-mobile.webp",
+          "expected": "/media/case-vet-v2/ru/missing-full-mobile.webp"
+        }
+      ],
+      "axe": []
+    }
+  ],
+  "failures": []
+}

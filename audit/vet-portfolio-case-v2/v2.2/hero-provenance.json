@@ -1,0 +1,76 @@
+[
+  {
+    "locale": "en",
+    "parentKey": "en/visit-full-desktop",
+    "src": "/media/case-vet-v2/en/visit-workspace-desktop.webp",
+    "width": 2812,
+    "height": 1600,
+    "cssWidth": 1406,
+    "cssHeight": 800,
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "sourcePath": "src/screens/visit-record/VisitRecord.tsx",
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "captureSource": "audit/vet-portfolio-case-v2/product-captures/en-visit-full-desktop.png",
+    "route": "/app/visit-record?patient=marsik",
+    "state": "Initial saved clinical record; clinic/patient context, unpublished visit, Quick Trace, three complete clinical fields and complete prescription card",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 2
+    },
+    "clip": {
+      "x": 17,
+      "y": 73,
+      "width": 1406,
+      "height": 800
+    },
+    "selector": "[data-visit-record] top through Examination and complete #record-prescription; before Diagnosis/Services",
+    "appearsIn": "V2.2 desktop hero only; original full record separately inspectable",
+    "sha256": "59ba59dc37c19e02a25efb96572c7054416b85a95976422187761e58a23c6d22",
+    "derivedFrom": "en/visit-full-desktop",
+    "sourcePixelCrop": {
+      "left": 0,
+      "top": 0,
+      "width": 2812,
+      "height": 1600
+    },
+    "exactSourcePixelEquality": true
+  },
+  {
+    "locale": "ru",
+    "parentKey": "ru/visit-full-desktop",
+    "src": "/media/case-vet-v2/ru/visit-workspace-desktop.webp",
+    "width": 2812,
+    "height": 1628,
+    "cssWidth": 1406,
+    "cssHeight": 814,
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "sourcePath": "src/screens/visit-record/VisitRecord.tsx",
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "captureSource": "audit/vet-portfolio-case-v2/product-captures/ru-visit-full-desktop.png",
+    "route": "/ru/app/visit-record?patient=marsik",
+    "state": "Initial saved clinical record; clinic/patient context, unpublished visit, Quick Trace, three complete clinical fields and complete prescription card",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 2
+    },
+    "clip": {
+      "x": 17,
+      "y": 73,
+      "width": 1406,
+      "height": 814
+    },
+    "selector": "[data-visit-record] top through Examination and complete #record-prescription; before Diagnosis/Services",
+    "appearsIn": "V2.2 desktop hero only; original full record separately inspectable",
+    "sha256": "7aada4d2cacfcfba09334f8b7031279edb34e5aef7d3235ee78448171e4c7a37",
+    "derivedFrom": "ru/visit-full-desktop",
+    "sourcePixelCrop": {
+      "left": 0,
+      "top": 0,
+      "width": 2812,
+      "height": 1628
+    },
+    "exactSourcePixelEquality": true
+  }
+]

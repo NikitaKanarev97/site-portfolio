@@ -18,7 +18,13 @@ export function featuredWork(entries: { slug: string; story: CaseStory; theme: C
   };
   return entries.map(({ slug, story, theme }) => {
     const [year, evidence, outcome] = facts[slug];
-    const media: CoverMedia = slug === 'partner-portal' ? {
+    const media: CoverMedia = slug === 'vet-clinic' ? {
+      variant: 'screen', layout: 'screen', items: [{
+        src: `/media/case-vet-v2/${locale}/visit-full-desktop.webp`,
+        srcNarrow: `/media/case-vet-v2/${locale}/visit-context-mobile.webp`,
+        alt: ru ? 'Актуальная запись визита: клинический контекст, назначение и услуги' : 'Current Visit Record: clinical context, prescription and services', device: 'desktop',
+      }],
+    } : slug === 'partner-portal' ? {
       variant: 'screen', layout: 'screen', items: [{
         src: `/media/rebuild/partner-portal/v2/${locale}/decision-1280.webp`,
         srcNarrow: `/media/rebuild/partner-portal/v2/${locale}/workspace-top-390.webp`,
@@ -35,7 +41,7 @@ export function featuredWork(entries: { slug: string; story: CaseStory; theme: C
     } : story.cover.media;
     const shots = media.variant === 'proof' ? media.panels ?? [media.shot] : media.variant === 'screen' ? media.items : [];
     return {
-      href: `${ru ? '/ru' : ''}/work/${slug}`, title: slug === 'agent-ops-console' ? 'Agent Ops Console' : story.cover.title, outcome,
+      href: `${ru ? '/ru' : ''}/work/${slug}`, title: slug === 'vet-clinic' ? 'Vet Clinic OS' : slug === 'agent-ops-console' ? 'Agent Ops Console' : story.cover.title, outcome,
       meta: [{ term: ru ? 'Проект' : 'Project', value: story.cover.title }, { term: ru ? 'Версия' : 'Version', value: year }, { term: ru ? 'Основание' : 'Evidence', value: evidence }],
       cta: ru ? 'Читать кейс' : 'Read the case', theme, media,
       cover: shots.map(shot => shot.src), coverAlt: shots.map(shot => shot.alt).join('; '),

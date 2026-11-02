@@ -1,0 +1,29 @@
+en-1440 21/22
+en-1280 21/22
+en-390 23/23
+en-360 23/23
+ru-1440 21/22
+ru-1280 21/22
+ru-390 23/23
+ru-360 23/23
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: en-1440: Body, outcome and Critical States remain pixel-identical
+en-1280: Body, outcome and Critical States remain pixel-identical
+ru-1440: Body, outcome and Critical States remain pixel-identical
+ru-1280: Body, outcome and Critical States remain pixel-identical
+
+4 !== 0
+
+    at file:///D:/Claude-projects/sp-vet-v2/audit/vet-portfolio-case-v2/v2.2/qa.mjs:116:8 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 4,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.18.0

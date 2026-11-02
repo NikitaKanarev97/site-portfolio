@@ -1,0 +1,125 @@
+DSSL · B2B procurement workspace
+
+B2B Partner Portal
+
+Turning ambiguous product requests into traceable procurement decisions.
+
+Real product screens · synthetic data
+
+Role
+Sole product designer · research, IA, UX/UI, design system
+Period
+2024–2026
+Status
+Redesign shipped at DSSL · rebuilt here on synthetic data
+Prototype
+Public version · predates these screens
+(external link, opens in a new tab)
+
+01 · Problem
+
+Buyers arrived with a specification. The portal greeted them like a shop.
+
+Integrators bring a ten-to-fifty-line spreadsheet for a dated project. The old dashboard led with a training banner and promotions, and every ambiguous line ended in a message to a manager.
+
+Before · the shipped original opened with a banner and a bonus offer
+After · the workspace opens on the purchase in progress and what blocks it
+
+02 · System
+
+Two ways in. One specification. Every line keeps its source.
+
+An XLS import and pasted SKUs produce the same document. File, row, original text and quantity travel with each line all the way to the order.
+
+01
+Import
+An XLS file or pasted SKU and quantity pairs
+02
+Specification
+48 lines, each tied to its source row
+03
+Resolve
+The buyer settles what ambiguous lines mean
+04
+Cart
+Price and stock, checked apart from identity
+05
+Fulfillment
+Timing, handovers and delivery cost
+06
+Order
+Placed, and still traceable to the file
+
+03 · The human decision
+
+The system narrows the options. The buyer makes the call.
+
+“nvr 8ch poe” matches two recorders that differ in one thing: object detection. The panel compares exactly that, keeps the file’s wording in view, and applies nothing until the buyer confirms.
+
+Compare · only the attribute that separates the candidates
+Confirmed · still marked as the buyer’s choice, and reversible
+
+Why not automate it
+
+Compatibility rules for this equipment were not formalised anywhere I could verify. An automatic match would move the risk to the installation site.
+
+04 · Verification
+
+Identity, price and stock answer different questions.
+
+Product Details puts the technical identity beside the buyer’s own price and warehouse stock, and says where each answer comes from.
+
+Product Details · reached from the catalog or from a specification line
+Identity
+SKU, manufacturer and the specs that separate near-identical cameras
+Price
+The contract price from ERP, marked Verified with the time it was checked
+Stock
+Units per warehouse and dispatch time; delivery is priced later
+
+05 · Commercial review
+
+Uncertainty must never look like a price.
+
+A price that moved after import waits on its own line for the buyer’s approval. A missing price stays “Not confirmed”, leaves the total and blocks fulfillment. It never becomes zero.
+
+An unpriced line says so, and offers a way forward
+The total names what it counts — and what still blocks the next step
+
+06 · Fulfillment
+
+Same goods, three plans. The buyer chooses the trade-off.
+
+Only after commercial review does the portal compare completion date, handovers and delivery cost. Speed versus fewer shipments becomes a visible choice, not a hidden default.
+
+Fastest by 01 Nov for ₽7,400, or one consolidated handover three days later for ₽4,200
+
+Outcome
+
+A traceable path from spreadsheet to order.
+
+The commercial redesign shipped at DSSL. What you see here is my later rebuild on synthetic data: it demonstrates the decisions, not measured post-launch results.
+
+What it cost
+
+Matching is not compatibility
+Ambiguous lines wait for a person. It is the slowest step in the flow, by design.
+Unknown is not zero
+Unpriced lines stay out of the total until a manager quotes them.
+Delivery is priced last
+Its cost appears only once a fulfillment plan is chosen.
+Open the public version
+
+The public version predates the screens shown here · synthetic data
+
+Next case
+Next case: TRASSIR Learn
+TRASSIR Learn
+Let's talk
+
+If the case above answered your question — or raised one.
+
+nikita.kanarev.dev@outlook.com
+CV (PDF)
+LinkedIn
+(external link, opens in a new tab)

@@ -216,6 +216,8 @@ FeaturedCase исполняет паттерн FeaturedCaseCover: одна сс�
 
 ## `TextLink`
 
+02.11.2026 · V3.1: корень центрирует общую группу текста и маркера внутри цели, включая `space-12`. Внутри — обычный строчный поток: SVG выровнен по `vertical-align: middle` относительно x-height шрифта, `space-2` отделяет его от текста. Группа с `nowrap` и word joiner запрещает перенос перед маркером, а подпись разрешает обычные переносы внутри текста (`text-wrap: wrap`, без унаследованного `pretty`): многострочная ссылка заканчивается текстом и стрелкой на одной строке, без отдельного flex-столбца. Произвольных сдвигов и локальных поправок нет. Постоянное подчёркивание inline и состояния Строки arrow/nav сохранены.
+
 | Вариант | Применение |
 |---|---|
 | `type=inline` | Ссылка внутри текста кейса |
@@ -666,3 +668,13 @@ only. AgentShot, global tokens, motion, other covers and case page are unchanged
 Evidence and trade-off: audit/agent-ops-home-cover-v1/v1/REPORT.md.
 
 Agent V3.1 typography: `agent/AgentHeadingText` is a text-only helper using native word-break opportunities (`wbr` plus spaces), preventing build-time widow binding from joining long section-title phrases. No extra visual component or motion. Agent headings use normal word wrapping; below bp-md section headings interpolate at 8vw between the existing size-2xl and size-3xl bounds. Editorial currency grouping uses nonbreaking spaces; the large payout also uses nowrap. Shared tokens, middleware and other cases remain unchanged.
+
+## Vet Clinic OS V2 · 1 November 2026
+
+**Cover spacing · 2 November 2026, owner correction.** VetShot `appearance=cover` gives only the case cover a `radius-lg` clipping boundary and an explicit `space-6` white presentation field below the unchanged source image. This separates the prescription card from the lower edge and removes exposed square source corners. Default `native` appearance and full-source zoom remain unchanged; captions stay outside the frame. This requested cover treatment supersedes the historical no-mask rule for this variant only.
+
+**V3 · 2 November 2026.** Case-only composition upgraded per `screens/case-vet-v3.md`: compact hero authorship; connected semantic HTML information model; actual Queue/Quick Trace; inspectable arithmetic; native ready/blocked publication family; owner desktop/phone and missing-dose state; source-linked process and bounded outcomes. VetShot reads V2 and additive V3 manifests, keeping native dimensions, full-source zoom and unaltered pixels. All existing semantic tokens, global motion, Home, CaseNext and neighbouring cases remain intact. New copy lives in vet-v3 EN/RU. No new shared component or token.
+
+V2.1 accepted refinements: VetShot supports an optional localized `captionDesktop`, switched at the same bp-lg as its native source. Inspection actions use text-subtle, a plus cue and underline on hover/focus/press; content-width links retain 48px hit height and global focus rings. Outcome uses heading-3xl and natural wrapping. V2.2 changes only the desktop hero: a contiguous lossless Visit Record crop retains clinic/patient context, status, navigation, three clinical fields and the complete prescription card, with a 992px desktop ceiling from existing tokens and an independent full-record target. No Private Note panel in the hero. No global token, CaseScreen, MediaZoom or Home change. See `screens/case-vet-v2.md` and `../audit/vet-portfolio-case-v2/v2.2/REPORT.md`.
+
+Case-scoped `vet/VetCase`, `VetShot`, `VetHome` compose MetaList, CaseScreen/MediaZoom, TextLink and CaseNext over source-manifest-backed native product captures. Map: `screens/case-vet-v2.md`. VetShot uses natural dimensions, a documentary CSS-width ceiling, genuine mobile sources and separate complete-screen links for details. No CSS cropping, additional image masks, fabricated UI or new global tokens. VetCase uses a single Visit Record cover, an editorial three-role flow, sourced calculation, invoice/publication/owner outputs, critical states and an honest implementation outcome. VetHome replaces only the Vet preview. Existing typography, semantic surfaces, focus and spacing; registered motion attributes only. Localized alt, section headings and structural/media parity assertion. All captions sit outside screenshots.

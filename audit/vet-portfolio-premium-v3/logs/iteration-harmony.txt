@@ -1,0 +1,20 @@
+
+> site-portfolio@0.1.0 check:harmony
+> node scripts/harmony-check.mjs /work/vet-clinic /ru/work/vet-clinic --base=http://127.0.0.1:5382 --widths=1440,1024,768,390,360,320
+
+/work/vet-clinic @1440: плашек 0, тезисов 0, подписей и абзацев 7 · case-vet-clinic 802 слов, 11 кадров
+/work/vet-clinic @1024: плашек 0, тезисов 0, подписей и абзацев 7 · case-vet-clinic 802 слов, 11 кадров
+/work/vet-clinic @768: плашек 0, тезисов 0, подписей и абзацев 7 · case-vet-clinic 791 слов, 10 кадров
+/work/vet-clinic @390: плашек 0, тезисов 0, подписей и абзацев 7 · case-vet-clinic 791 слов, 10 кадров
+/work/vet-clinic @360: плашек 0, тезисов 0, подписей и абзацев 7 · case-vet-clinic 791 слов, 10 кадров
+/work/vet-clinic @320: плашек 0, тезисов 0, подписей и абзацев 7 · case-vet-clinic 791 слов, 10 кадров
+/ru/work/vet-clinic @1440: плашек 0, тезисов 0, подписей и абзацев 7 · case-vet-clinic 712 слов, 11 кадров
+/ru/work/vet-clinic @1024: плашек 0, тезисов 0, подписей и абзацев 7 · case-vet-clinic 712 слов, 11 кадров
+/ru/work/vet-clinic @768: плашек 0, тезисов 0, подписей и абзацев 7 · case-vet-clinic 703 слов, 10 кадров
+/ru/work/vet-clinic @390: плашек 0, тезисов 0, подписей и абзацев 7 · case-vet-clinic 703 слов, 10 кадров
+/ru/work/vet-clinic @360: плашек 0, тезисов 0, подписей и абзацев 7 · case-vet-clinic 703 слов, 10 кадров
+/ru/work/vet-clinic @320: плашек 0, тезисов 0, подписей и абзацев 7 · case-vet-clinic 703 слов, 10 кадров
+
+✗ Нарушений: 2
+  [страница] /work/vet-clinic @320 — горизонтальная прокрутка 8 px
+  [страница] /ru/work/vet-clinic @320 — горизонтальная прокрутка 35 px

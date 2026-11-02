@@ -1,0 +1,56 @@
+[
+  {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": [
+      {
+        "target": [
+          ".portal-split__media > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+        ],
+        "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">After · the&nbsp;workspace opens on&nbsp;the&nbsp;purchase in&nbsp;progress and what blocks it</figcaption>",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "target": [
+          ".portal-plate--stack > .portal-shot--native.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+        ],
+        "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Compare · only the&nbsp;attribute that separates the&nbsp;candidates</figcaption>",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "target": [
+          ".portal-shot--strip > .portal-shot__caption[data-h=\"caption\"]"
+        ],
+        "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Confirmed · still marked as the&nbsp;buyer’s choice, and&nbsp;reversible</figcaption>",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "target": [
+          ".portal-pair > .portal-plate[data-motion=\"fade-image\"] > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+        ],
+        "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Product Details · reached from the&nbsp;catalog or from a&nbsp;specification line</figcaption>",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "target": [
+          ".portal-plate--wide > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+        ],
+        "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Fastest by&nbsp;01 Nov for ₽7,400, or one consolidated handover three days later for ₽4,200</figcaption>",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      }
+    ]
+  },
+  {
+    "id": "list",
+    "impact": "serious",
+    "nodes": [
+      {
+        "target": [
+          ".navbar__list"
+        ],
+        "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+        "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+      }
+    ]
+  }
+]

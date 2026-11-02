@@ -1,0 +1,54 @@
+# Vet V3 — source-backed media
+
+2 November 2026 · implementation evidence, not acceptance.
+
+## Product origin
+
+- Repository: NikitaKanarev97/veterinary-clinic. Clean local HEAD and remote main both **3835c4ffe224a1077d131d2882878d3d373d56e5**, verified before capture. [Remote result](logs/product-remote.txt). An initial DNS lookup failed; a subsequent lookup established the SHA. The source checkout remained read-only and clean.
+- Source modules: Day Queue: `src/screens/ProductScreens.tsx`, exported through `src/screens/vet-day-queue/VetDayQueue.tsx`; Quick Trace: same module, exported through `src/screens/visit-quick-trace/VisitQuickTrace.tsx`; publication: `DischargePreview` in `src/screens/ProductScreens.tsx`. Data contracts: `src/data/{clinicData.tsx,visitRecord.ts,discharge.ts,doseCalculation.ts,invoice.ts}`.
+- Browser: real Chromium, DPR 2, 1440×900 / 390×900, reduced motion, Europe/Moscow. Locale comes from actual /app and /ru/app routes. Fresh context at each locale/width; untouched synthetic seed. No injected labels, CSS, DOM suppression, recoloring, composited sessions, generated UI or changed medication defaults.
+- New public assets are lossless contiguous source crops. Complete raw full-page browser PNGs are committed in [product-captures](product-captures/). The complete Queue/Trace WebPs retain prototype chrome and the actual phone sticky save action; these are honest browser captures, not seamless scroll reconstructions.
+- Queue detail ends after the complete at-clinic group. Trace detail contains the complete sourced-weight step; the complete original remains independently inspectable. Desktop publication includes the contiguous status + control rail. Phone status lives above the document in the actual app; its crop shows the complete control section at its own position. Case headings identify the ready/blocked state without inserting a status into product pixels.
+- State: untouched Marsik seed, 4.8 kg, illustrative 0.95 ml, initial unpublished plan. Existing V2 blocked/missing fixtures retain their original provenance, not the new-capture state.
+- [Capture script](capture-product.mjs) · [capture geometry log](logs/product-capture.txt) · [machine manifest](../../src/data/vet-v3-media.json) · [exact decoded-pixel comparisons](media-integrity.json).
+
+## Additive assets
+
+Coordinates are CSS pixels in the raw full-page source; output dimensions are DPR-2 pixels. SHA-256 below hashes the exact public WebP file. Raw hashes and selectors are also in the JSON manifest.
+
+| Asset | Real route | Viewport / DPR | Crop x,y,w,h | Output pixels | Original | SHA-256 |
+|---|---|---|---|---|---|---|
+| [en/queue-full-desktop](../../public/media/case-vet-v3/en/queue-full-desktop.webp) | /app/vet-day-queue?patient=marsik | 1440×900 @2 | 0, 0, 1440, 1233 | 2880×2466 | [raw](product-captures/en-queue-desktop-full.png) | `e75d6ea595147b5fa4867403059bc09f4c02157ef456e686f8a84a12cc652692` |
+| [en/queue-desktop](../../public/media/case-vet-v3/en/queue-desktop.webp) | /app/vet-day-queue?patient=marsik | 1440×900 @2 | 282, 161, 1117, 482 | 2234×964 | [raw](product-captures/en-queue-desktop-full.png) | `12096f18464c937ba8021598f437b6242bf06502f4fd05cb549cb521046485df` |
+| [en/trace-full-desktop](../../public/media/case-vet-v3/en/trace-full-desktop.webp) | /app/visit-quick-trace?patient=marsik | 1440×900 @2 | 0, 0, 1440, 1516 | 2880×3032 | [raw](product-captures/en-trace-desktop-full.png) | `c8c0426524568889edbd128b322e2480fc9463f83ce8c873ec7432e01aeb4425` |
+| [en/trace-desktop](../../public/media/case-vet-v3/en/trace-desktop.webp) | /app/visit-quick-trace?patient=marsik | 1440×900 @2 | 41, 313, 830, 224 | 1660×448 | [raw](product-captures/en-trace-desktop-full.png) | `1f575533e8aad60e5af7843244e3dac857112866bc8a20898dba149e77cc628b` |
+| [en/publish-desktop](../../public/media/case-vet-v3/en/publish-desktop.webp) | /app/discharge-preview?patient=marsik | 1440×900 @2 | 1008, 309, 320, 664 | 640×1328 | [raw](product-captures/en-publish-desktop-full.png) | `07db9aa27e4105fe9bf85ed544fab76b1e1b8cd3dac8bfdb9888450a34acd9ca` |
+| [en/queue-full-mobile](../../public/media/case-vet-v3/en/queue-full-mobile.webp) | /app/vet-day-queue?patient=marsik | 390×900 @2 | 0, 0, 390, 2293 | 780×4586 | [raw](product-captures/en-queue-mobile-full.png) | `697d200adae891b99c91c9d5ffc88d1c69e04bd4e3c25742a634a762e250186e` |
+| [en/queue-mobile](../../public/media/case-vet-v3/en/queue-mobile.webp) | /app/vet-day-queue?patient=marsik | 390×900 @2 | 16, 170, 358, 1089 | 716×2178 | [raw](product-captures/en-queue-mobile-full.png) | `a3c5ccb1ca5130162aee26689a764724f16521cacca581533a3451ebf03db81f` |
+| [en/trace-full-mobile](../../public/media/case-vet-v3/en/trace-full-mobile.webp) | /app/visit-quick-trace?patient=marsik | 390×900 @2 | 0, 0, 390, 2649 | 780×5298 | [raw](product-captures/en-trace-mobile-full.png) | `616434c235652160836272b280a7df90ff78223f5941871e52b02a48c08a0104` |
+| [en/trace-mobile](../../public/media/case-vet-v3/en/trace-mobile.webp) | /app/visit-quick-trace?patient=marsik | 390×900 @2 | 16, 352, 358, 352 | 716×704 | [raw](product-captures/en-trace-mobile-full.png) | `9c9bcd805a6b34c0a9837a10341c4bedb26048ff6297c84da346368eb91d424f` |
+| [en/publish-mobile](../../public/media/case-vet-v3/en/publish-mobile.webp) | /app/discharge-preview?patient=marsik | 390×900 @2 | 16, 1633, 358, 533 | 716×1066 | [raw](product-captures/en-publish-mobile-full.png) | `3a5b95956fb36aa7e5986b70bfe3773f8f6f03d028a77c4cc6e6acc32424638a` |
+| [ru/queue-full-desktop](../../public/media/case-vet-v3/ru/queue-full-desktop.webp) | /ru/app/vet-day-queue?patient=marsik | 1440×900 @2 | 0, 0, 1440, 1233 | 2880×2466 | [raw](product-captures/ru-queue-desktop-full.png) | `764918f89517dce78b5fc93d948177914966b79361c760b3cc21bc7232411363` |
+| [ru/queue-desktop](../../public/media/case-vet-v3/ru/queue-desktop.webp) | /ru/app/vet-day-queue?patient=marsik | 1440×900 @2 | 282, 161, 1117, 482 | 2234×964 | [raw](product-captures/ru-queue-desktop-full.png) | `06bb77dc561442fafcf2cae356440263c733854cb5bfa69402e45d6f4dc70ff2` |
+| [ru/trace-full-desktop](../../public/media/case-vet-v3/ru/trace-full-desktop.webp) | /ru/app/visit-quick-trace?patient=marsik | 1440×900 @2 | 0, 0, 1440, 1516 | 2880×3032 | [raw](product-captures/ru-trace-desktop-full.png) | `87f0169830efb548332f60df6c18077be4a0db80299a1c0ecc5b7c3843001417` |
+| [ru/trace-desktop](../../public/media/case-vet-v3/ru/trace-desktop.webp) | /ru/app/visit-quick-trace?patient=marsik | 1440×900 @2 | 41, 313, 830, 224 | 1660×448 | [raw](product-captures/ru-trace-desktop-full.png) | `54e2fb7a76ffc36eb9c11c6dfe9365f92fa45f62ad0871c9cc599317c7c34953` |
+| [ru/publish-desktop](../../public/media/case-vet-v3/ru/publish-desktop.webp) | /ru/app/discharge-preview?patient=marsik | 1440×900 @2 | 1008, 309, 320, 705 | 640×1410 | [raw](product-captures/ru-publish-desktop-full.png) | `eef89e063eea737a93d4f807493846880b0595eee86060cceaacef581e4a0bb7` |
+| [ru/queue-full-mobile](../../public/media/case-vet-v3/ru/queue-full-mobile.webp) | /ru/app/vet-day-queue?patient=marsik | 390×900 @2 | 0, 0, 390, 2293 | 780×4586 | [raw](product-captures/ru-queue-mobile-full.png) | `6f639ce8b61b0b197a235be1f9d31226a2b077c3d63588b107887157e4839a48` |
+| [ru/queue-mobile](../../public/media/case-vet-v3/ru/queue-mobile.webp) | /ru/app/vet-day-queue?patient=marsik | 390×900 @2 | 16, 170, 358, 1089 | 716×2178 | [raw](product-captures/ru-queue-mobile-full.png) | `6839f92fd973f426e01d5216f6f53bc231256edfd6eeddb66a088637930603e2` |
+| [ru/trace-full-mobile](../../public/media/case-vet-v3/ru/trace-full-mobile.webp) | /ru/app/visit-quick-trace?patient=marsik | 390×900 @2 | 0, 0, 390, 2715 | 780×5430 | [raw](product-captures/ru-trace-mobile-full.png) | `bed95abf720fb6cfa44aaef26979ad91e6d70282133fd414dc8cbeba8718f3fc` |
+| [ru/trace-mobile](../../public/media/case-vet-v3/ru/trace-mobile.webp) | /ru/app/visit-quick-trace?patient=marsik | 390×900 @2 | 16, 373, 358, 352 | 716×704 | [raw](product-captures/ru-trace-mobile-full.png) | `5173767324bdc089bd845883ef3d60d6c5f702666cac92b8119d661d5b6b6e12` |
+| [ru/publish-mobile](../../public/media/case-vet-v3/ru/publish-mobile.webp) | /ru/app/discharge-preview?patient=marsik | 390×900 @2 | 16, 1682, 358, 533 | 716×1066 | [raw](product-captures/ru-publish-mobile-full.png) | `06154e916ee9a5f960b3a1d0404e5cdee0b80508f6aaf60586eff1053ddecfa4` |
+
+## Preserved V2 evidence
+
+All **56** entries in `src/data/vet-v2-media.json` and their exact file hashes remain unchanged. Hero, calculation, invoice, owner comparison, clinical-only note, blocked publication and missing-dose evidence are reused, not recaptured or redrawn. Full source: [V2 media manifest](../vet-portfolio-case-v2/MEDIA_MANIFEST.md), including V2.1/V2.2 exact crop history. [Integrity proof](media-integrity.json) checks every original asset and the unchanged Home/token/zoom/CaseNext files. The owner frames derive from the same V2 UI-published snapshot and preserve the conditional ten-day plan.
+
+## Case and comparison captures
+
+BEFORE is the unmodified production build at research HEAD 1edb887, whose src/ds/public match accepted V2.2 6463468 exactly. It was built **before edits** and copied to .tmp/v3-before, then served on 5381. AFTER is the final production build on 5382. Chromium, 900px viewport height, DPR 1, reduced motion, locale, timezone, image decoding and scroll/reveal lifecycle match. Both sets cover EN/RU × 1440/1280/1024/768/390/360/320. Capture metadata and runtime/geometry results: [before](before/capture-results.json), [after](after/capture-results.json). All first viewports, full pages and major section crops are actual browser captures.
+
+The reference files stay byte-for-byte as committed in research; [ASSET-PROVENANCE](ASSET-PROVENANCE.md) remains authoritative for their older origin. All R01–R07, B01–B07, S01–S03 and H01–H02 were opened as pixels before implementation. [Comparison boards](comparisons/index.html) are explicitly research boards, scaling complete reference/baseline/final images side-by-side. They never appear on public pages. For new Trace/Process chapters absent in V2, boards explicitly name the nearest existing clinical/state evidence; no fictional old chapter was created.
+
+## Live origin boundary
+
+[Live-product smoke](live-product/results.json) exercises the public EN/RU Visit Record, Quick Trace, Discharge Preview and Dose Calculator routes; [EN viewport](live-product/en-1440-visit-record.png), [RU viewport](live-product/ru-1440-visit-record.png). These confirm reachable public UI, not the deployment SHA. All new portfolio screenshots trace to the verified local commit instead. Anonymous GitHub source URLs returned HTTP 404, so public Process links point to working app screens. Exact source paths and contracts are documented here and in REPORT, not presented as anonymously accessible repository links.

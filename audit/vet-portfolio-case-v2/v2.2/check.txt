@@ -1,0 +1,674 @@
+
+> site-portfolio@0.1.0 check
+> astro check
+
+21:22:05 [vite] Re-optimizing dependencies because vite config has changed
+21:22:05 [content] Syncing content
+21:22:05 [content] Synced content
+21:22:05 [types] Generated 174ms
+21:22:05 [check] Getting diagnostics for Astro files in D:\Claude-projects\sp-vet-v2...
+[96msrc/components/CaseRoutes.astro[0m:[93m7[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'label' is declared but its value is never read.
+
+[7m7[0m const { label, items, idPrefix } = Astro.props;
+[7m [0m [93m        ~~~~~[0m
+
+[96msrc/components/CaseSteps.astro[0m:[93m17[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'label' is declared but its value is never read.
+
+[7m17[0m const { label, items, tone = 'light', variant, composition, gate, class: className } = Astro.props;
+[7m  [0m [93m        ~~~~~[0m
+
+[96msrc/components/NoteBlock.astro[0m:[93m29[0m:[93m11[0m - [93mwarning[0m[90m ts(6196): [0m'Props' is declared but never used.
+
+[7m29[0m interface Props {
+[7m  [0m [93m          ~~~~~[0m
+
+[96msrc/components/SectionHead.astro[0m:[93m16[0m:[93m11[0m - [93mwarning[0m[90m ts(6196): [0m'Props' is declared but never used.
+
+[7m16[0m interface Props {
+[7m  [0m [93m          ~~~~~[0m
+
+[96msrc/copy/ru/cases/partner-portal.ts[0m:[93m3[0m:[93m23[0m - [93mwarning[0m[90m ts(6133): [0m'assertStoryPair' is declared but its value is never read.
+
+[7m3[0m import { defineStory, assertStoryPair } from '../../cases/story';
+[7m [0m [93m                      ~~~~~~~~~~~~~~~[0m
+[96msrc/copy/ru/cases/partner-portal.ts[0m:[93m2[0m:[93m26[0m - [93mwarning[0m[90m ts(6133): [0m'partnerPortalStory' is declared but its value is never read.
+
+[7m2[0m import { portalLineShot, partnerPortalStory } from '../../cases/partner-portal.ts';
+[7m [0m [93m                         ~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/scripts/animations.js[0m:[93m731[0m:[93m10[0m - [93mwarning[0m[90m ts(80006): [0mThis may be converted to an async function.
+
+[7m731[0m function fontsSettled() {
+[7m   [0m [93m         ~~~~~~~~~~~~[0m
+
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m6772[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'roleElements' is declared but its value is never read.
+
+[7m6772[0m     var roleElements = exports.roleElements = _roleElementMap.default;
+[7m    [0m [93m        ~~~~~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m6771[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'elementRoles' is declared but its value is never read.
+
+[7m6771[0m     var elementRoles = exports.elementRoles = _elementRoleMap.default;
+[7m    [0m [93m        ~~~~~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m6770[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'roles' is declared but its value is never read.
+
+[7m6770[0m     var roles = exports.roles = _rolesMap.default;
+[7m    [0m [93m        ~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m6769[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'dom' is declared but its value is never read.
+
+[7m6769[0m     var dom = exports.dom = _domMap.default;
+[7m    [0m [93m        ~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m6768[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'aria' is declared but its value is never read.
+
+[7m6768[0m     var aria = exports.aria = _ariaPropsMap.default;
+[7m    [0m [93m        ~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m6749[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m6749[0m     var _default = exports.default = (0, _iterationDecorator.default)(roleElementMap, roleElementMap.entries());
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m6627[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m6627[0m     var _default = exports.default = (0, _iterationDecorator.default)(elementRoleMap, elementRoleMap.entries());
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m6430[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m6430[0m     var _default = exports.default = (0, _iterationDecorator.default)(rolesMap, rolesMap.entries());
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m6254[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m6254[0m     var _default = exports.default = ariaGraphicsRoles;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m6235[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m6235[0m     var _default = exports.default = graphicsSymbolRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m6202[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m6202[0m     var _default = exports.default = graphicsObjectRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m6150[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m6150[0m     var _default = exports.default = graphicsDocumentRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m6102[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m6102[0m     var _default = exports.default = ariaDpubRoles;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m6045[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m6045[0m     var _default = exports.default = docTocRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m6007[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m6007[0m     var _default = exports.default = docTipRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5969[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5969[0m     var _default = exports.default = docSubtitleRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5931[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5931[0m     var _default = exports.default = docQnaRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5893[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5893[0m     var _default = exports.default = docPullquoteRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5861[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5861[0m     var _default = exports.default = docPrologueRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5823[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5823[0m     var _default = exports.default = docPrefaceRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5785[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5785[0m     var _default = exports.default = docPartRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5747[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5747[0m     var _default = exports.default = docPagelistRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5709[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5709[0m     var _default = exports.default = docPageheaderRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5674[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5674[0m     var _default = exports.default = docPagefooterRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5639[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5639[0m     var _default = exports.default = docPagebreakRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5602[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5602[0m     var _default = exports.default = docNoticeRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5564[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5564[0m     var _default = exports.default = docNoterefRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5529[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5529[0m     var _default = exports.default = docIntroductionRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5491[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5491[0m     var _default = exports.default = docIndexRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5453[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5453[0m     var _default = exports.default = docGlossrefRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5418[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5418[0m     var _default = exports.default = docGlossaryRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5380[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5380[0m     var _default = exports.default = docForewordRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5342[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5342[0m     var _default = exports.default = docFootnoteRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5304[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5304[0m     var _default = exports.default = docExampleRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5271[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5271[0m     var _default = exports.default = docErrataRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5233[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5233[0m     var _default = exports.default = docEpilogueRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5195[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5195[0m     var _default = exports.default = docEpigraphRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5157[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5157[0m     var _default = exports.default = docEndnotesRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5119[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5119[0m     var _default = exports.default = docEndnoteRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5081[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5081[0m     var _default = exports.default = docDedicationRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5043[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5043[0m     var _default = exports.default = docCreditsRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m5005[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m5005[0m     var _default = exports.default = docCreditRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4967[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4967[0m     var _default = exports.default = docCoverRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4929[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4929[0m     var _default = exports.default = docConclusionRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4891[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4891[0m     var _default = exports.default = docColophonRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4853[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4853[0m     var _default = exports.default = docChapterRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4815[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4815[0m     var _default = exports.default = docBibliorefRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4780[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4780[0m     var _default = exports.default = docBibliographyRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4742[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4742[0m     var _default = exports.default = docBiblioentryRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4704[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4704[0m     var _default = exports.default = docBacklinkRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4669[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4669[0m     var _default = exports.default = docAppendixRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4631[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4631[0m     var _default = exports.default = docAfterwordRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4593[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4593[0m     var _default = exports.default = docAcknowledgmentsRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4555[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4555[0m     var _default = exports.default = docAbstractRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4517[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4517[0m     var _default = exports.default = ariaLiteralRoles;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4418[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4418[0m     var _default = exports.default = treeitemRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4386[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4386[0m     var _default = exports.default = treegridRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4359[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4359[0m     var _default = exports.default = treeRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4326[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4326[0m     var _default = exports.default = tooltipRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4299[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4299[0m     var _default = exports.default = toolbarRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4265[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4265[0m     var _default = exports.default = timerRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4238[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4238[0m     var _default = exports.default = timeRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4206[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4206[0m     var _default = exports.default = textboxRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4094[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4094[0m     var _default = exports.default = termRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4057[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4057[0m     var _default = exports.default = tabpanelRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m4030[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m4030[0m     var _default = exports.default = tablistRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3994[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3994[0m     var _default = exports.default = tableRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3959[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3959[0m     var _default = exports.default = tabRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3925[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3925[0m     var _default = exports.default = switchRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3891[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3891[0m     var _default = exports.default = superscriptRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3859[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3859[0m     var _default = exports.default = subscriptRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3827[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3827[0m     var _default = exports.default = strongRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3795[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3795[0m     var _default = exports.default = statusRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3760[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3760[0m     var _default = exports.default = spinbuttonRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3717[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3717[0m     var _default = exports.default = sliderRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3670[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3670[0m     var _default = exports.default = separatorRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3631[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3631[0m     var _default = exports.default = searchboxRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3591[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3591[0m     var _default = exports.default = searchRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3564[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3564[0m     var _default = exports.default = scrollbarRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3528[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3528[0m     var _default = exports.default = rowheaderRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3481[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3481[0m     var _default = exports.default = rowgroupRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3439[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3439[0m     var _default = exports.default = rowRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3399[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3399[0m     var _default = exports.default = regionRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3350[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3350[0m     var _default = exports.default = radiogroupRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3313[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3313[0m     var _default = exports.default = radioRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3271[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3271[0m     var _default = exports.default = progressbarRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3232[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3232[0m     var _default = exports.default = presentationRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3196[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3196[0m     var _default = exports.default = paragraphRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3164[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3164[0m     var _default = exports.default = optionRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3115[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3115[0m     var _default = exports.default = noteRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3088[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3088[0m     var _default = exports.default = noneRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3061[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3061[0m     var _default = exports.default = navigationRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m3029[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m3029[0m     var _default = exports.default = meterRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2991[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2991[0m     var _default = exports.default = menuitemradioRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2957[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2957[0m     var _default = exports.default = menuitemcheckboxRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2923[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2923[0m     var _default = exports.default = menuitemRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2875[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2875[0m     var _default = exports.default = menubarRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2841[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2841[0m     var _default = exports.default = menuRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2792[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2792[0m     var _default = exports.default = mathRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2760[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2760[0m     var _default = exports.default = marqueeRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2733[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2733[0m     var _default = exports.default = markRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2697[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2697[0m     var _default = exports.default = mainRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2665[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2665[0m     var _default = exports.default = logRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2636[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2636[0m     var _default = exports.default = listitemRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2594[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2594[0m     var _default = exports.default = listboxRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2526[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2526[0m     var _default = exports.default = listRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2484[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2484[0m     var _default = exports.default = linkRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2435[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2435[0m     var _default = exports.default = insertionRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2403[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2403[0m     var _default = exports.default = imgRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2353[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2353[0m     var _default = exports.default = headingRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2292[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2292[0m     var _default = exports.default = groupRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2242[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2242[0m     var _default = exports.default = gridcellRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2200[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2200[0m     var _default = exports.default = gridRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2170[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2170[0m     var _default = exports.default = genericRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m2046[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m2046[0m     var _default = exports.default = formRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1992[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1992[0m     var _default = exports.default = figureRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1960[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1960[0m     var _default = exports.default = feedRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1933[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1933[0m     var _default = exports.default = emphasisRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1901[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1901[0m     var _default = exports.default = documentRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1865[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1865[0m     var _default = exports.default = directoryRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1836[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1836[0m     var _default = exports.default = dialogRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1804[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1804[0m     var _default = exports.default = deletionRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1772[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1772[0m     var _default = exports.default = definitionRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1740[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1740[0m     var _default = exports.default = contentinfoRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1707[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1707[0m     var _default = exports.default = complementaryRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1654[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1654[0m     var _default = exports.default = comboboxRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1525[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1525[0m     var _default = exports.default = columnheaderRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1473[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1473[0m     var _default = exports.default = codeRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1441[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1441[0m     var _default = exports.default = checkboxRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1391[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1391[0m     var _default = exports.default = cellRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1353[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1353[0m     var _default = exports.default = captionRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1321[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1321[0m     var _default = exports.default = buttonRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1243[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1243[0m     var _default = exports.default = blockquoteRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1211[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1211[0m     var _default = exports.default = bannerRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1178[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1178[0m     var _default = exports.default = articleRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1143[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1143[0m     var _default = exports.default = applicationRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1105[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1105[0m     var _default = exports.default = alertdialogRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1073[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1073[0m     var _default = exports.default = alertRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1038[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1038[0m     var _default = exports.default = ariaAbstractRoles;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m1010[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m1010[0m     var _default = exports.default = windowRole;
+[7m    [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m981[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m981[0m     var _default = exports.default = widgetRole;
+[7m   [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m954[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m954[0m     var _default = exports.default = structureRole;
+[7m   [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m927[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m927[0m     var _default = exports.default = selectRole;
+[7m   [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m898[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m898[0m     var _default = exports.default = sectionheadRole;
+[7m   [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m871[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m871[0m     var _default = exports.default = sectionRole;
+[7m   [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m829[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m829[0m     var _default = exports.default = roletypeRole;
+[7m   [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m774[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m774[0m     var _default = exports.default = rangeRole;
+[7m   [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m743[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m743[0m     var _default = exports.default = landmarkRole;
+[7m   [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m716[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m716[0m     var _default = exports.default = inputRole;
+[7m   [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m682[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m682[0m     var _default = exports.default = compositeRole;
+[7m   [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m652[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m652[0m     var _default = exports.default = commandRole;
+[7m   [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m625[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m625[0m     var _default = exports.default = (0, _iterationDecorator.default)(domMap, domMap.entries());
+[7m   [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m275[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m275[0m     var _default = exports.default = (0, _iterationDecorator.default)(ariaPropsMap, ariaPropsMap.entries());
+[7m   [0m [93m        ~~~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___aria-query.js[0m:[93m37[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'_default' is declared but its value is never read.
+
+[7m37[0m     var _default = exports.default = iteratorProxy;
+[7m  [0m [93m        ~~~~~~~~[0m
+
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___cssesc.js[0m:[93m23[0m:[93m9[0m - [93mwarning[0m[90m ts(80002): [0mThis constructor function may be converted to a class declaration.
+
+[7m23[0m     var cssesc = function cssesc2(string, options) {
+[7m  [0m [93m        ~~~~~~[0m
+[96mtasks/robert-review-2026-10-07/claude-review/results/followup-cache/vite/deps/astro___cssesc.js[0m:[93m7[0m:[93m35[0m - [93mwarning[0m[90m ts(6133): [0m'exports' is declared but its value is never read.
+
+[7m7[0m   "node_modules/cssesc/cssesc.js"(exports, module) {
+[7m [0m [93m                                  ~~~~~~~[0m
+
+Result (146 files):
+- 0 errors
+- 0 warnings
+- 163 hints
+
