@@ -1,5 +1,6 @@
 ---
 import AgentShot from './AgentShot.astro';
+import AgentHeadingText from './AgentHeadingText.astro';
 import MetaList from '../MetaList.astro';
 import CaseNext from '../CaseNext.astro';
 import TextLink from '../TextLink.astro';
@@ -39,13 +40,13 @@ const policyShots = copy.sections.find(s => s.id === 'policy')!.shots!.map((s, i
       <div class="agent-section__head">
         <p class="ds-meta-sm agent-label">{s.label}</p>
         <div class="agent-section__copy">
-          <h2 id={`${s.id}-title`} class:list={[s.id === 'problem' ? 'ds-display-5xl' : 'ds-heading-4xl']} data-motion="fade">{s.title}</h2>
+          <h2 id={`${s.id}-title`} class:list={[s.id === 'problem' ? 'ds-display-5xl' : 'ds-heading-4xl']} data-motion="fade"><AgentHeadingText text={s.title} /></h2>
           {s.id !== 'checkpoint' && <p class="ds-body-lg agent-body">{s.body}</p>}
         </div>
       </div>
 
       {s.id === 'problem' && <div class="agent-problem">
-        <div class="agent-problem__cost"><p class="ds-meta-sm agent-label">{copy.contextLabel}</p><p class="ds-display-6xl">{copy.metrics[2].value}</p><p class="ds-body-lg agent-body">{p.problemCost}</p></div>
+        <div class="agent-problem__cost"><p class="ds-meta-sm agent-label">{copy.contextLabel}</p><p class="ds-display-6xl" data-editorial-money>{copy.metrics[2].value}</p><p class="ds-body-lg agent-body">{p.problemCost}</p></div>
         <div class="agent-problem__signals"><p class="ds-heading-2xl">{p.problemAside}</p><dl>{copy.metrics.slice(0,2).map(metric => <div><dt class="ds-body-sm agent-body">{metric.label}</dt><dd class="ds-heading-3xl">{metric.value}</dd></div>)}</dl></div>
       </div>}
 
@@ -53,7 +54,7 @@ const policyShots = copy.sections.find(s => s.id === 'policy')!.shots!.map((s, i
         <figcaption id="model-label" class="ds-meta-sm agent-label">{m.label}</figcaption>
         <div class="agent-model__sizing"><p class="ds-meta-sm agent-label">{m.estimate}</p><p class="ds-heading-2xl">~1,770 <span aria-hidden="true">→</span> ~71</p><p class="ds-body-sm agent-body">{m.sizingLabel}</p></div>
         <div class="agent-model__intake"><p class="ds-heading-2xl">{m.input}</p><span aria-hidden="true">↓</span><p class="ds-heading-xl agent-model__decision">{m.decision}</p></div>
-        <div class="agent-model__fork"><aside class="agent-model__sample"><p class="ds-meta-sm agent-label">{m.no}</p><p class="ds-body-base agent-body">{m.sample}</p></aside><div class="agent-model__commitment"><p class="ds-meta-sm agent-label">{m.yes}</p><p class="ds-heading-xl">{m.commitment}</p><p class="ds-body-base agent-body">{m.cluster}</p></div></div>
+        <div class="agent-model__fork"><aside class="agent-model__sample"><p class="ds-meta-sm agent-label">{m.no}</p><p class="ds-body-base agent-body">{m.sample}</p></aside><div class="agent-model__commitment"><p class="ds-meta-sm agent-label">{m.yes}</p><p class="ds-heading-xl"><AgentHeadingText text={m.commitment} /></p><p class="ds-body-base agent-body">{m.cluster}</p></div></div>
         <div class="agent-model__review"><span aria-hidden="true">↓</span><p class="ds-heading-xl">{m.review}</p></div>
         <div class="agent-model__branches">{m.branches.map(b => <div><p class="ds-meta-sm agent-label">{b.role}</p><h3 class="ds-heading-2xl">{b.title}</h3><p class="ds-body-base agent-body">{b.text}</p></div>)}</div>
         <div class="agent-model__feedback"><p class="ds-heading-2xl">{m.close}</p><p class="ds-body-base agent-body">{m.feedback}</p></div>
@@ -82,7 +83,7 @@ const policyShots = copy.sections.find(s => s.id === 'policy')!.shots!.map((s, i
     </section>)}
 
     <section class="ds-container agent-section" id="outcome" aria-labelledby="outcome-title">
-      <div class="agent-section__head"><p class="ds-meta-sm agent-label">{outcome.label}</p><div class="agent-section__copy"><h2 id="outcome-title" class="ds-heading-4xl" data-motion="fade">{p.process.title}</h2><p class="ds-body-lg agent-body">{outcome.body}</p></div></div>
+      <div class="agent-section__head"><p class="ds-meta-sm agent-label">{outcome.label}</p><div class="agent-section__copy"><h2 id="outcome-title" class="ds-heading-4xl" data-motion="fade"><AgentHeadingText text={p.process.title} /></h2></div></div>
       <div class="agent-process"><p class="ds-meta-sm agent-label">{p.process.label}</p><div class="agent-process__header" aria-hidden="true">{p.process.columns.map(label=><p class="ds-meta-sm">{label}</p>)}</div>{p.process.rows.map(row=><dl class="agent-process__row">{[row.observation,row.decision,row.validation].map((text,i)=><div><dt class="ds-meta-sm agent-label">{p.process.columns[i]}</dt><dd class="ds-body-base">{text}</dd></div>)}</dl>)}</div>
       <div class="agent-result">{p.process.result.map((item,i)=><div><p class="ds-meta-sm agent-label" aria-hidden="true">0{i+1}</p><h3 class="ds-heading-2xl">{item.label}</h3><p class="ds-body-base agent-body">{item.text}</p></div>)}</div>
       <p class="ds-body-sm agent-body agent-boundary">{p.process.boundary}</p>
@@ -93,7 +94,9 @@ const policyShots = copy.sections.find(s => s.id === 'policy')!.shots!.map((s, i
 </div>
 <style>
   :global(main:has(> .agent-case)) { padding-block-start: 0; }
-  .agent-case { overflow-wrap: anywhere; }
+  .agent-case { overflow-wrap: break-word; }
+  .agent-case :is(h1, h2, h3, [class*="ds-heading"], .ds-display-6xl) { overflow-wrap: normal; word-break: normal; }
+  [data-editorial-money] { white-space: nowrap; }
   .agent-cover { background: var(--surface-subtle); }
   .agent-cover__inner { display: grid; gap: var(--flow-node); padding-block: var(--flow-group); align-items: start; }
   .agent-cover__head { display: grid; gap: var(--flow-text); align-content: start; }
@@ -166,6 +169,10 @@ const policyShots = copy.sections.find(s => s.id === 'policy')!.shots!.map((s, i
   .agent-outcome { display: grid; gap: var(--flow-group); padding-block-start: var(--flow-group); border-block-start: var(--border-width) solid var(--border-strong); }
   .agent-outcome > div { display: grid; align-content: start; gap: var(--flow-text); min-inline-size: 0; overflow-wrap: anywhere; }
   @media (--can-hover) { .agent-index a:hover, .agent-autonomy__quality summary:hover { color: var(--text-link-hover); } }
+  @media (--below-bp-md) {
+    /* Stay within the existing section-heading scale, including 320px. */
+    .agent-section__head h2 { font-size: clamp(var(--size-2xl), 8vw, var(--size-3xl)); }
+  }
   @media (--bp-md) {
     .agent-cover__media { max-inline-size: var(--measure-lead); justify-self: center; }
     .agent-problem { grid-template-columns: minmax(0,7fr) minmax(0,5fr); gap: var(--space-16); }

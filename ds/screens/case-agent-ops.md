@@ -390,6 +390,8 @@ subtle / media`, `--border-default / strong`, роли типографики
 
 ## Premium V3 composition · 02.11.2026
 
+V3.1 targeted correction: preserve seven sections and documentary media. Case-local word wrapping bypasses long build-time widow bindings in section titles; mobile section type stays within the existing 24–32 scale (8vw). Monetary groups remain together. The Outcome introduction is omitted because Delivered / Validated / Confirmed and the scope boundary immediately below already preserve every claim. Desktop layout, motion and inspection are retained. Matched evidence and independent-acceptance handoff: `audit/agent-ops-portfolio-premium-v3/v3.1/REPORT.md`.
+
 The current owner brief authorizes the case-only map and implementation. `AgentCase` remains the renderer; extra EN/RU editorial copy is `src/copy/cases/agent-ops-premium.ts`. Shared chrome, homepage and other cases are protected.
 
 Hero proposition → role/year/platform/accepted prototype → scope → whole desktop approval / genuine mobile consequence panels with full-screen inspection. Index + NDA. Editorial problem with historical payout and secondary vendor signals. Connected commitment model with sampled-QA fork, Reviewer investigation, Shift Lead approval / Policy Owner correction branches, evidence and reversible autonomy. Offset queue/run walkthrough with separate fixture labels. Complete checkpoint with three outside-UI reading stages. Policy lifecycle ending at unresolved v5/v4 plus genuine boundary/rollout panels. Quality/capability native evidence. Research→decision→tested change rows and delivered/validated/confirmed outcome. Trade-off, earlier public prototype, shared CaseNext.
