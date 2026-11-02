@@ -1,0 +1,47 @@
+---
+/**
+ * PawlyShot — case-scoped (Pawly Case V2). One measured slice of a real 390 px product screen.
+ *
+ * Slices are full-width DOM-box crops of DPR 2 captures (audit/pawly-portfolio-case-v2/v2/tools/crops.py):
+ * cards keep their own rounded corners on the product's page surface, so this frame only rounds that surface.
+ * The slice never grows past its capture width (390 px, or the card interior), so phone type stays at native size or slightly below.
+ * The image is a real link to the file; the site script upgrades it to MediaZoom at its natural size.
+ */
+import media from '../../data/pawly-case-v2-media.json';
+import type { PawlyShot as Shot } from '../../copy/cases/pawly-v2';
+
+interface Props {
+  shot: Shot;
+  locale: 'en' | 'ru';
+  label?: string;
+  caption?: string;
+  zoomLabel: string;
+  loading?: 'eager' | 'lazy';
+  class?: string;
+}
+const { shot, locale, label, caption, zoomLabel, loading = 'lazy', class: className } = Astro.props;
+const entry = (media as Record<string, { src: string; width: number; height: number }>)[`${locale}/${shot.key}`];
+if (!entry) throw new Error(`PawlyShot: no media ${locale}/${shot.key}`);
+---
+<figure class:list={['pawly-shot', className]} style={`--shot-native: ${entry.width / 2}px`}>
+  {label && <p class="ds-meta-sm pawly-shot__label">{label}</p>}
+  <a class="pawly-shot__frame" href={entry.src} data-astro-reload data-zoom-trigger data-zoom-src={entry.src}
+    data-zoom-native="true" data-zoom-alt={shot.alt} aria-label={`${zoomLabel}: ${shot.alt}`}>
+    <img src={entry.src} width={entry.width} height={entry.height} alt={shot.alt}
+      loading={loading} decoding="async" fetchpriority={loading === 'eager' ? 'high' : undefined} />
+  </a>
+  {caption && <figcaption class="ds-body-sm pawly-shot__caption">{caption}</figcaption>}
+</figure>
+<style>
+  .pawly-shot { display: grid; gap: var(--flow-pair); align-content: start; min-inline-size: 0; inline-size: 100%; max-inline-size: var(--shot-native); margin: 0; }
+  .pawly-shot__label { margin: 0; color: var(--text-meta); }
+  .pawly-shot__frame {
+    display: block;
+    overflow: hidden;
+    border: var(--border-width) solid var(--border-default);
+    border-radius: var(--radius-md);
+  }
+  .pawly-shot__frame img { display: block; inline-size: 100%; block-size: auto; }
+  .pawly-shot__frame:focus-visible { outline: var(--focus-ring-width) solid var(--focus-ring-color); outline-offset: var(--focus-ring-width); }
+  .pawly-shot__caption { max-inline-size: 36ch; color: var(--text-muted); text-wrap: pretty; }
+</style>

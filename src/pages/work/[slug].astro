@@ -4,6 +4,9 @@ import CaseStory from '../../components/CaseStory.astro';
 import PortalCase from '../../components/portal/PortalCase.astro';
 import AgentCase from '../../components/agent/AgentCase.astro';
 import LearnCase from '../../components/learn/LearnCase.astro';
+import PawlyCase from '../../components/pawly/PawlyCase.astro';
+import { pawlyCaseEn } from '../../copy/cases/pawly-v2';
+import { pawlyCaseRu } from '../../copy/ru/cases/pawly-v2';
 import { learnCaseEn } from '../../copy/cases/learn-v2';
 import { learnCaseRu } from '../../copy/ru/cases/learn-v2';
 import { agentCaseEn } from '../../copy/cases/agent-ops-v2';
@@ -28,13 +31,15 @@ const site = locale === 'ru' ? siteRu : siteEn;
 const portal = entry.slug === 'partner-portal' ? (locale === 'ru' ? portalCaseRu : portalCaseEn) : undefined;
 const agent = entry.slug === 'agent-ops-console' ? (locale === 'ru' ? agentCaseRu : agentCaseEn) : undefined;
 const learn = entry.slug === 'learn' ? (locale === 'ru' ? learnCaseRu : learnCaseEn) : undefined;
+const pawly = entry.slug === 'pawly' ? (locale === 'ru' ? pawlyCaseRu : pawlyCaseEn) : undefined;
 const nextLink = { label: locale === 'ru' ? 'Следующий кейс' : 'Next case', title: next.story.cover.title, href: nextHref, theme: next.theme };
 ---
-<PageShell title={learn?.meta.title ?? agent?.meta.title ?? entry.meta.title} description={learn?.meta.description ?? agent?.meta.description ?? entry.meta.description} lang={locale}
+<PageShell title={pawly?.meta.title ?? learn?.meta.title ?? agent?.meta.title ?? entry.meta.title} description={pawly?.meta.description ?? learn?.meta.description ?? agent?.meta.description ?? entry.meta.description} lang={locale}
   current={(locale === 'ru' ? '/ru' : '') + '/work/' + entry.slug}
   ogCard={'work-' + entry.slug + (agent ? '-v2' : '') + (locale === 'ru' ? '-ru' : '')} siteCopy={site}>
   {agent ? <AgentCase copy={agent} locale={locale} next={nextLink} /> : portal
     ? <PortalCase copy={portal} locale={locale} next={nextLink} />
     : learn ? <LearnCase copy={learn} locale={locale} next={nextLink} />
+    : pawly ? <PawlyCase copy={pawly} locale={locale} next={nextLink} />
     : <CaseStory story={entry.story} id={'case-' + entry.slug} lang={locale} next={nextLink} />}
 </PageShell>
