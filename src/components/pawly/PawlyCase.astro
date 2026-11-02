@@ -6,8 +6,8 @@
  * The cover opens on the open question (pickup received, return expected); the sand Return band answers it.
  * Shares the site's grammar with the other V3 cases (label rail + thesis, hairline rules, 12 columns,
  * caption under media) but not their compositions: phone slices stay at native width, never miniatures.
- * V2.1: every screen sits on a plate (PawlyShot); screens side by side share label, plate and caption tracks
- * through subgrid, so plates in one row end on one line and the screen is centred in its own field.
+ * V2.1: every screen sits on a plate (PawlyShot). V2.1.2: in the three-step rows (Choosing, Return) each plate is as
+ * tall as its own screen and its caption follows it; rows align tops, never plates (see "Rows of screens" below).
  *
  * Motion only through registered data-motion names (lines, fade, fade-image, rise); reduced motion and
  * no-JS keep everything visible. The shared CaseStory and the Home cover are not touched.
@@ -281,10 +281,9 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
   .pawly-note { margin: 0; max-inline-size: var(--measure-case); color: var(--text-muted); }
 
   /* ---------- 13:20 Choosing: three decisions in reading order ---------- */
-  /* 26rem: one screen per row in the 672 px tablet column, two in the 864 px one at 1024. */
   .pawly-steps {
-    display: grid; gap: var(--flow-node) var(--gutter);
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr));
+    display: grid; gap: var(--flow-node) var(--gutter); align-items: start;
+    grid-template-columns: minmax(0, 1fr);
     margin-block-end: 0; padding: 0; list-style: none;
   }
   .pawly-steps__item { display: grid; min-inline-size: 0; }
@@ -323,8 +322,8 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
   .pawly-vocab__index { display: block; margin-block-end: var(--space-1); color: var(--text-subtle); }
   .pawly-vocab__text { margin: 0; color: var(--text-subtle); }
   .pawly-proof__grid {
-    display: grid; gap: var(--flow-node) var(--gutter);
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr));
+    display: grid; gap: var(--flow-node) var(--gutter); align-items: start;
+    grid-template-columns: minmax(0, 1fr);
     margin: 0; padding: 0; list-style: none;
   }
   .pawly-proof__item { display: grid; min-inline-size: 0; }
@@ -402,15 +401,49 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
     .pawly-compare { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--gutter); }
     .pawly-compare__pair { grid-template-columns: 1fr; }
     .pawly-vocab { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    /* Rows of screens: each item spans label · plate · caption of the shared row, so plates end on one line. */
-    .pawly-steps, .pawly-proof__grid { row-gap: 0; }
-    .pawly-steps__item, .pawly-proof__item { grid-row: span 3; grid-template-rows: subgrid; padding-block-end: var(--flow-node); }
-    .pawly-steps__item > :global(.pawly-shot), .pawly-proof__item > :global(.pawly-shot) { grid-row: span 3; grid-template-rows: subgrid; }
     .pawly-band { padding-block: var(--space-24); }
     .pawly-sum__lines { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--gutter); }
     .pawly-sum__line:last-child { border-block-end: 0; }
     .pawly-outcome { padding: var(--space-12); }
     .pawly-outcome__evidence { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--gutter); }
+  }
+
+  /* ---------- Rows of screens (Choosing, Return): a screen beside its words ----------
+     Tablet: every step; 1024-1439: the final step as a wide row under the first two, its plate under the first screen.
+     The plate column is the screen's own panel plus the plate's side fields, so the screen stays at native size; label
+     and caption take the other column as one block centred on the screen, a side caption (pinned to the top, the block
+     left most of a tall row empty: v2.1.2/comparisons/alternatives-*). On tablets even steps mirror. */
+  @media (--bp-md) and (--below-bp-lg) {
+    .pawly-steps__item > :global(.pawly-shot), .pawly-proof__item > :global(.pawly-shot) { grid-template-columns: minmax(0, calc(var(--shot-frame) + 2 * var(--plate-x))) minmax(0, 1fr); grid-template-rows: 1fr auto auto 1fr; column-gap: var(--gutter); }
+    .pawly-steps__item :global(.pawly-shot__plate), .pawly-proof__item :global(.pawly-shot__plate) { grid-column: 1; grid-row: 1 / -1; }
+    .pawly-steps__item :global(:is(.pawly-shot__label, .pawly-shot__caption)), .pawly-proof__item :global(:is(.pawly-shot__label, .pawly-shot__caption)) { grid-column: 2; }
+    .pawly-steps__item :global(.pawly-shot__label), .pawly-proof__item :global(.pawly-shot__label) { grid-row: 2; }
+    .pawly-steps__item :global(.pawly-shot__caption), .pawly-proof__item :global(.pawly-shot__caption) { grid-row: 3; margin-block-start: 0; }
+    .pawly-steps__item:nth-child(even) > :global(.pawly-shot), .pawly-proof__item:nth-child(even) > :global(.pawly-shot) { grid-template-columns: minmax(0, 1fr) minmax(0, calc(var(--shot-frame) + 2 * var(--plate-x))); }
+    .pawly-steps__item:nth-child(even) :global(.pawly-shot__plate), .pawly-proof__item:nth-child(even) :global(.pawly-shot__plate) { grid-column: 2; }
+    .pawly-steps__item:nth-child(even) :global(:is(.pawly-shot__label, .pawly-shot__caption)), .pawly-proof__item:nth-child(even) :global(:is(.pawly-shot__label, .pawly-shot__caption)) { grid-column: 1; }
+
+    /* Handoff: each role's screen with its words beside it. The comparison reads down one column, so every answer sits
+       under its own role name (the three-column table could not align them when answers wrapped differently). */
+    .pawly-roles { grid-template-columns: minmax(0, calc(390px + 2 * var(--space-4))) minmax(0, 1fr); column-gap: var(--gutter); align-items: start; }
+    .pawly-roles__compare { display: contents; }
+    .pawly-compare { grid-column: 2; grid-row: 1; grid-template-columns: 1fr; }
+    .pawly-roles > :global(.pawly-roles__walker) { grid-column: 1; grid-row: 2; }
+    .pawly-roles .pawly-note { grid-column: 2; grid-row: 2; }
+  }
+  /* The final step closes each row: it takes the full width, its plate under the first screen, its words beside it. */
+  @media (--bp-lg) and (not (--bp-xl)) {
+    .pawly-steps__item:last-child, .pawly-proof__item:last-child { grid-column: 1 / -1; grid-template-columns: subgrid; }
+    .pawly-steps__item:last-child > :global(.pawly-shot), .pawly-proof__item:last-child > :global(.pawly-shot) { grid-column: 1 / -1; grid-template-columns: subgrid; grid-template-rows: 1fr auto auto 1fr; }
+    .pawly-steps__item:last-child :global(.pawly-shot__plate), .pawly-proof__item:last-child :global(.pawly-shot__plate) { grid-column: 1; grid-row: 1 / -1; }
+    .pawly-steps__item:last-child :global(:is(.pawly-shot__label, .pawly-shot__caption)), .pawly-proof__item:last-child :global(:is(.pawly-shot__label, .pawly-shot__caption)) { grid-column: 2; }
+    .pawly-steps__item:last-child :global(.pawly-shot__label), .pawly-proof__item:last-child :global(.pawly-shot__label) { grid-row: 2; }
+    .pawly-steps__item:last-child :global(.pawly-shot__caption), .pawly-proof__item:last-child :global(.pawly-shot__caption) { grid-row: 3; margin-block-start: 0; font-size: var(--size-base); }
+
+    /* Handoff table under the two screens: term, role, answer, role, answer share five row tracks across the three
+       questions, so OWNER and WALKER stay on one line however the answers wrap. */
+    .pawly-compare__row { grid-row: span 5; grid-template-rows: subgrid; }
+    .pawly-compare__pair { grid-row: span 4; grid-template-rows: subgrid; }
   }
 
   /* ---------- Desktop: 12 columns, label rail + thesis ---------- */
@@ -419,6 +452,7 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
        keeps one screen per row at native width (V2.1). */
     .pawly-roles { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--gutter); }
     .pawly-roles__compare { grid-column: 1 / -1; grid-row: 2; }
+    .pawly-steps, .pawly-proof__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .pawly-branches { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .pawly-branch { grid-row: span 2; grid-template-rows: subgrid; row-gap: var(--flow-text); }
     .pawly-settle { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--gutter); }
@@ -448,24 +482,10 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
     .pawly-compare { grid-template-columns: 1fr; }
     .pawly-compare__pair { grid-template-columns: max-content minmax(0, 1fr); }
     .pawly-roles > :global(.pawly-roles__walker) { grid-column: 3; }
-    .pawly-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    /* Three screens, three plates, one top line (H1, ha-phones): the sequence reads from the shared top edge, the
+       numbering and one surface tone; each caption stays under its own screen. */
+    .pawly-steps, .pawly-proof__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .pawly-branches { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .pawly-proof__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    /* Three screens in one row share one stage (H1, ha-phones): one surface, screens top-aligned 64 below its edge,
-       48 between them and to its sides; labels and captions start where the screens start. */
-    .pawly-steps, .pawly-proof__grid { padding-inline: var(--space-12); column-gap: var(--space-12); }
-    .pawly-steps::before, .pawly-proof__grid::before {
-      content: ''; grid-column: 1 / -1; grid-row: 2;
-      margin-inline: calc(var(--space-12) * -1);
-      background: var(--surface-plate); border-radius: var(--radius-lg);
-    }
-    .pawly-proof__grid::before { background: var(--surface-subtle); }
-    /* Placed explicitly: auto-placed items would avoid the cells the stage occupies and spill into new columns. */
-    .pawly-steps__item, .pawly-proof__item { grid-row: 1 / span 3; }
-    .pawly-steps__item:nth-child(2), .pawly-proof__item:nth-child(2) { grid-column: 2; }
-    .pawly-steps__item:nth-child(3), .pawly-proof__item:nth-child(3) { grid-column: 3; }
-    .pawly-steps__item:first-child, .pawly-proof__item:first-child { grid-column: 1; }
-    .pawly-steps :global(.pawly-shot__plate), .pawly-proof__grid :global(.pawly-shot__plate) { align-content: start; padding-inline: 0; background: none; }
     .pawly-settle { grid-template-columns: minmax(0, 1fr) repeat(2, minmax(0, var(--pawly-shot-col))); column-gap: var(--space-8); }
     .pawly-sum { grid-column: 1; }
     .pawly-sum__lines { grid-template-columns: 1fr; }

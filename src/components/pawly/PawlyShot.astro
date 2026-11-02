@@ -10,12 +10,13 @@
  * V2.1 media spacing (audit/pawly-portfolio-case-v2/v2.1/REPORT.md §2): every screen sits on a plate whose vertical
  * field is larger than its side field, because width is what phones lack and air above and below is what the slices lacked.
  * - plate="neutral" (default): surface-plate on the white sheet, as CasePlate; the screen reads as a panel by tone alone.
- * - plate="canvas": on sand, the plate is the product's own page surface (gray-50 ≈ the slices' #FBF9F7, ≤ 4/255 apart),
- *   so the slice's crop edges disappear and the cards float in a wider canvas.
+ * - plate="canvas": on sand, the plate is the product's own page surface, the colour crops.py measured for the slice
+ *   (V2.1.2: exact, not gray-50, which sat 3/255 away and left a faint rectangle), so the crop edges disappear.
  * - plate="none": the parent is the plate (the cover's sand stage).
  * Phones: plates run full-bleed to the screen edge, so the field is gained without shrinking the screen.
- * In rows, a parent may set grid-row: span 3 + subgrid on the figure: label, plate and caption then share tracks
- * with their neighbours, and plates in one row end on one line.
+ * The plate track is 1fr: a figure stretched by its row (pairs) centres its screen in an equal plate; a figure that
+ * is not stretched (align-items: start) keeps a content-height plate with the caption right under it (V2.1.2).
+ * --shot-frame is the first slice's panel width, for parents that size a column to the plate.
  * V2.1.1: the frame continues each slice's own page surface to an even 16 px above and below its content.
  * `action` is the same screen's fixed bottom bar, cut as its own slice: shown under the main slice, apart from it.
  */
@@ -41,7 +42,7 @@ const slices = [shot, ...(action ? [action] : [])].map(s => {
   return { ...s, ...entry, padTop: entry.padTop ?? 0, padBottom: entry.padBottom ?? 0, padInline: entry.padInline ?? 0 };
 });
 ---
-<figure class:list={['pawly-shot', `pawly-shot--${plate}`, className]} style={`--shot-native: ${slices[0].width / 2}px`}>
+<figure class:list={['pawly-shot', `pawly-shot--${plate}`, className]} style={`--shot-native: ${slices[0].width / 2}px; --shot-frame: ${slices[0].width / 2 + 2 * slices[0].padInline}px; --shot-canvas: ${slices[0].surface}`}>
   {label && <p class="ds-meta-sm pawly-shot__label">{label}</p>}
   <div class="pawly-shot__plate" data-h="plate">
     {slices.map((s, i) => (
@@ -69,7 +70,7 @@ const slices = [shot, ...(action ? [action] : [])].map(s => {
     padding: var(--plate-y) var(--plate-x);
     background: var(--surface-plate);
   }
-  .pawly-shot--canvas .pawly-shot__plate { background: var(--surface-subtle); }
+  .pawly-shot--canvas .pawly-shot__plate { background: var(--shot-canvas); }
   .pawly-shot--none .pawly-shot__plate { padding: 0; background: none; }
   /* The visible screen panel is the slice's own page surface. Crops end 4-5 px above and below the content but 16 px
      to its sides, so the frame continues that surface (colour measured per slice by crops.py) up to 16 px above and below. */
