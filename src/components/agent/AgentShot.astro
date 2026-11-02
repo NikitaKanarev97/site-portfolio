@@ -1,12 +1,13 @@
 ---
 import media from '../../data/agent-ops-v2-media.json';
+import premiumMedia from '../../data/agent-ops-premium-media.json';
 import { px } from '../../lib/tokens';
 import type { AgentShotCopy } from '../../copy/cases/agent-ops-v2';
 interface Props { shot: AgentShotCopy; locale: 'en' | 'ru'; loading?: 'eager' | 'lazy'; class?: string; zoom?: boolean; href?: string }
 const { shot, locale, loading = 'lazy', class: className, zoom = true, href } = Astro.props;
 type Entry = { src: string; width: number; height: number; cssWidth: number };
 const pick = (key: string) => {
-  const result = (media as Record<string, Entry>)[`${locale}/${key}`];
+  const result = ({...media,...premiumMedia} as Record<string, Entry>)[`${locale}/${key}`];
   if (!result) throw new Error(`AgentShot: missing ${locale}/${key}`);
   return result;
 };

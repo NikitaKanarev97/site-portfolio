@@ -388,6 +388,14 @@ subtle / media`, `--border-default / strong`, роли типографики
   `CaseResult` и всех кадров.
 # Portfolio V2 composition · 31.10.2026
 
+## Premium V3 composition · 02.11.2026
+
+The current owner brief authorizes the case-only map and implementation. `AgentCase` remains the renderer; extra EN/RU editorial copy is `src/copy/cases/agent-ops-premium.ts`. Shared chrome, homepage and other cases are protected.
+
+Hero proposition → role/year/platform/accepted prototype → scope → whole desktop approval / genuine mobile consequence panels with full-screen inspection. Index + NDA. Editorial problem with historical payout and secondary vendor signals. Connected commitment model with sampled-QA fork, Reviewer investigation, Shift Lead approval / Policy Owner correction branches, evidence and reversible autonomy. Offset queue/run walkthrough with separate fixture labels. Complete checkpoint with three outside-UI reading stages. Policy lifecycle ending at unresolved v5/v4 plus genuine boundary/rollout panels. Quality/capability native evidence. Research→decision→tested change rows and delivered/validated/confirmed outcome. Trade-off, earlier public prototype, shared CaseNext.
+
+1440: asymmetric compositions. 1024: readable split. 768: collapse to native panels/stacked proof. 390/360: one column, genuine mobile screenshots, no sticky reading or fixed text heights. Existing intro/fades plus one optional wide/tall checkpoint guide through withMotionPreference/buildCaseScenes. Static content is complete without JS. Evidence: `audit/agent-ops-portfolio-premium-v3/`.
+
 Authorised by `audit/agent-ops-v2/AGENT_OPS_PORTFOLIO_CODEX_HANDOFF.md`. Renderer `src/components/agent/AgentCase.astro`; EN master and full RU parallel copy in `src/copy/{cases,ru/cases}/agent-ops-v2.ts`. Existing route and PageShell/MediaZoom/CaseNext are preserved. Home routes use `AgentHome` through the Agent-only WorkStage branch. B2B V2.1 and other case rendering remain untouched.
 
 Order: dominant complete approval-task hero → role/year/platform/accepted-prototype facts and NDA/synthetic disclosure → 01 historical client context (61%, CSAT 4.4, $23,000) → 02 editorial operating model → 03 complete queue + run evidence → 04 human checkpoint / complete approval → 05 policy draft + approved/live mismatch → 06 quality + autonomy → 07 tested/reworked/accepted outcome, test-driven cluster/undo changes, scope, trade-off and correctly dated public-prototype link → shared next case.

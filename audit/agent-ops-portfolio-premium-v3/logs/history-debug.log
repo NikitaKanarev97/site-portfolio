@@ -1,0 +1,123 @@
+initial {
+  y: 6101,
+  state: { index: 1, scrollX: 0, scrollY: 6101 },
+  events: [
+    {
+      name: 'astro:page-load',
+      y: 0,
+      href: 'http://127.0.0.1:4406/work/agent-ops-console/',
+      state: [Object],
+      type: undefined
+    }
+  ]
+}
+away {
+  y: 0,
+  state: { index: 2, scrollX: 0, scrollY: 0 },
+  events: [
+    {
+      name: 'astro:page-load',
+      y: 0,
+      href: 'http://127.0.0.1:4406/work/agent-ops-console/',
+      state: [Object],
+      type: undefined
+    },
+    {
+      name: 'astro:before-preparation',
+      y: 6101,
+      href: 'http://127.0.0.1:4406/work/agent-ops-console/#checkpoint',
+      state: [Object],
+      type: 'push'
+    },
+    {
+      name: 'astro:before-swap',
+      y: 6101,
+      href: 'http://127.0.0.1:4406/work/agent-ops-console/#checkpoint',
+      state: [Object],
+      type: 'push'
+    },
+    {
+      name: 'astro:after-swap',
+      y: 0,
+      href: 'http://127.0.0.1:4406/about',
+      state: [Object],
+      type: undefined
+    },
+    {
+      name: 'astro:page-load',
+      y: 0,
+      href: 'http://127.0.0.1:4406/about',
+      state: [Object],
+      type: undefined
+    }
+  ]
+}
+back {
+  y: 6101,
+  state: { index: 1, scrollX: 0, scrollY: 6101 },
+  events: [
+    {
+      name: 'astro:page-load',
+      y: 0,
+      href: 'http://127.0.0.1:4406/work/agent-ops-console/',
+      state: [Object],
+      type: undefined
+    },
+    {
+      name: 'astro:before-preparation',
+      y: 6101,
+      href: 'http://127.0.0.1:4406/work/agent-ops-console/#checkpoint',
+      state: [Object],
+      type: 'push'
+    },
+    {
+      name: 'astro:before-swap',
+      y: 6101,
+      href: 'http://127.0.0.1:4406/work/agent-ops-console/#checkpoint',
+      state: [Object],
+      type: 'push'
+    },
+    {
+      name: 'astro:after-swap',
+      y: 0,
+      href: 'http://127.0.0.1:4406/about',
+      state: [Object],
+      type: undefined
+    },
+    {
+      name: 'astro:page-load',
+      y: 0,
+      href: 'http://127.0.0.1:4406/about',
+      state: [Object],
+      type: undefined
+    },
+    {
+      name: 'astro:before-preparation',
+      y: 0,
+      href: 'http://127.0.0.1:4406/work/agent-ops-console/#checkpoint',
+      state: [Object],
+      type: 'traverse'
+    },
+    {
+      name: 'astro:before-swap',
+      y: 0,
+      href: 'http://127.0.0.1:4406/work/agent-ops-console/#checkpoint',
+      state: [Object],
+      type: 'traverse'
+    },
+    {
+      name: 'astro:after-swap',
+      y: 6101,
+      href: 'http://127.0.0.1:4406/work/agent-ops-console/#checkpoint',
+      state: [Object],
+      type: undefined
+    },
+    {
+      name: 'astro:page-load',
+      y: 6101,
+      href: 'http://127.0.0.1:4406/work/agent-ops-console/#checkpoint',
+      state: [Object],
+      type: undefined
+    }
+  ]
+}
