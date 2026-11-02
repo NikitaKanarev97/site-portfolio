@@ -4,6 +4,9 @@ export function learnHomeCopy(locale: 'en' | 'ru') {
   return {
     title: t('An answer now.\nA programme to go further.', 'Ответ сейчас.\nПодготовка ко всей работе.'),
     connection: t('The ONVIF answer is also a programme resource. Reading it does not complete a learning step.', 'Ответ про ONVIF входит и в программу. Чтение статьи не завершает учебный шаг.'),
+    connectionMobile: t('The ONVIF guide also belongs to the programme. Progress is tracked separately.', 'Статья про ONVIF входит и в программу. Прогресс программы считается отдельно.'),
+    referenceMobile: t('Answer now · ONVIF', 'Быстрый ответ · ONVIF'),
+    learningMobile: t('Programme · at your own pace', 'Программа · в своём темпе'),
     reference: t('Reference · ONVIF diagnostics', 'Справочник · диагностика ONVIF'),
     learning: t('Learning · commissioning programme', 'Обучение · программа пусконаладки'),
     referenceAlt: t('ONVIF reference article: technical version, diagnostic summary and links to programmes. On mobile: the complete article header.', 'Статья про ONVIF: версия, диагностическая сводка и ссылки на программы. На телефоне — целая шапка статьи.'),

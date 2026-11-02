@@ -19,3 +19,22 @@ and focus remain; inverse focus hook belongs to the navy stage. No-JS static.
 Alternative B: one existing task-led Home capture, same concise local story.
 Actual A/B evidence and final selection: audit/trassir-learn-home-cover-v1/v1/.
 Shared DS files and the case-page LearnShot/copy/media remain untouched.
+
+## V1.1 · 02.11.2026 · independent acceptance pending
+
+Keep the approved composition A from bp-md upwards. At 1440 both localized
+cover screenshots are pixel-identical to reviewed V1 (eeda0dd). Below bp-md,
+remove the repeated internal promise, use one body-base sentence about the shared
+guide and independent progress, and set the two journey captions in body-base.
+The copy-to-screens gap uses flow-pair; the reference-to-programme gap retains
+flow-text. Both original reference pictures and all desktop copy stay unchanged.
+
+Programme srcNarrow uses a Home-only, lossless rectangular crop of the accepted
+path-progress image: x48/y48/w636/h408 source pixels, in both locales. It removes
+the outer capture field and reading-history note, retaining the complete progress
+count, current-step title and Continue. No painted/rearranged source pixels.
+CaseScreen's existing md picture API selects it; all complete source images and
+case-page manifest entries remain intact. The programme is about 15% larger at
+the same mobile image width. Native proportions, 16px editorial labels, the case
+links, 48px footer CTA, focus tone and no-JS/reduced-motion behavior are preserved.
+Evidence and measured card heights: audit/trassir-learn-home-cover-v1/v1.1/REPORT.md.

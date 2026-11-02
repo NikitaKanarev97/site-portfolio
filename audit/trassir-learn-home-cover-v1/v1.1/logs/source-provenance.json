@@ -1,0 +1,38 @@
+{
+  "operation": "Single rectangular extraction, lossless WebP; no scaling, painting, compositing or UI rearrangement.",
+  "purpose": "Mobile Home only: complete 3/11 progress, current step 04 and Continue; omit reading history and outer canvas field.",
+  "entries": [
+    {
+      "locale": "en",
+      "source": "public/media/case-learn-v2/current/en/path-progress.webp",
+      "sourceSHA256": "5c8f02097f14f8452fe4b8402495610c1d90960acde80845222b218bca19d808",
+      "rectangle": {
+        "left": 48,
+        "top": 48,
+        "width": 636,
+        "height": 408
+      },
+      "output": "public/media/learn-home-cover-v11/en/programme-mobile.webp",
+      "outputSHA256": "5b78f57d7eb3aa709aecdc129c4a0279576b693b46e948a1a7821d5552ae147d",
+      "decodedRGBA_SHA256": "9be5f80f752125f157fb8ed6e168c1cae5f56f0e2400dc96e0899877f8b10561",
+      "exactPixelEquality": true,
+      "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727"
+    },
+    {
+      "locale": "ru",
+      "source": "public/media/case-learn-v2/current/ru/path-progress.webp",
+      "sourceSHA256": "80a8d6fab2144e4e90e96f8f73715bd0e38e08dc5befaa8fe56e6e25d38f2eef",
+      "rectangle": {
+        "left": 48,
+        "top": 48,
+        "width": 636,
+        "height": 408
+      },
+      "output": "public/media/learn-home-cover-v11/ru/programme-mobile.webp",
+      "outputSHA256": "7c67970567b3a7c3726bfe8f61de27f00b30c65a8dd21f3ef544395ae769b563",
+      "decodedRGBA_SHA256": "83faeba87008b1b800a2cd65d5031dca05430d543166ac95b895b72596fd62ab",
+      "exactPixelEquality": true,
+      "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727"
+    }
+  ]
+}
