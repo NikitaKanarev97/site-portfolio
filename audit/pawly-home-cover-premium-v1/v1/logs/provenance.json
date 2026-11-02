@@ -1,0 +1,148 @@
+{
+ "photos": [
+  {
+   "from": "audit/pawly-home-cover-premium-v1/v1/assets/source/proof-handover-dropoff.webp",
+   "to": "public/media/pawly-home-cover-v1/return-photo.webp",
+   "origin": "pawly@a327d73 public/assets/proof/handover-dropoff.webp",
+   "size": [
+    800,
+    597
+   ],
+   "sha256": "fa557a29457ec7e3d80076b83d3f3564ebe21582657d76024f012ebfa6e3f324",
+   "identicalToSource": true
+  },
+  {
+   "from": "audit/pawly-home-cover-premium-v1/v1/assets/source/proof-handover-pickup.webp",
+   "to": "audit/pawly-home-cover-premium-v1/v1/assets/candidates/pickup-photo.webp",
+   "origin": "pawly@a327d73 public/assets/proof/handover-pickup.webp",
+   "size": [
+    900,
+    900
+   ],
+   "sha256": "c7ec39e5a77679aabb2e1d5f454cbaa9868f1ba70c0e3a31dae6c2f1de110540",
+   "identicalToSource": true
+  }
+ ],
+ "crops": [
+  {
+   "name": "public/media/pawly-home-cover-v1/report",
+   "locale": "en",
+   "from": "audit/pawly-home-cover-premium-v1/v1/assets/source/order-details-completed-en-390@2x-full.png",
+   "fromSha256": "f2c510e2badfacde19975d0920d5c01388b04040a7d4615a77a314517b1734df",
+   "region": {
+    "left": 32,
+    "top": 248,
+    "width": 716,
+    "height": 854
+   },
+   "cssRegion": {
+    "left": 16,
+    "top": 124,
+    "right": 374,
+    "bottom": 551
+   },
+   "to": "public/media/pawly-home-cover-v1/report-en.webp",
+   "sha256": "8c4ecd0c7e189d5b2cd46598d75cfbe84db5286786454f252407a86002e70514"
+  },
+  {
+   "name": "public/media/pawly-home-cover-v1/report",
+   "locale": "ru",
+   "from": "audit/pawly-home-cover-premium-v1/v1/assets/source/order-details-completed-ru-390@2x-full.png",
+   "fromSha256": "e93352b2214e9ba5a1c74b8053706b1c1c23759ec81ba75273c53088e645fd63",
+   "region": {
+    "left": 32,
+    "top": 248,
+    "width": 716,
+    "height": 854
+   },
+   "cssRegion": {
+    "left": 16,
+    "top": 124,
+    "right": 374,
+    "bottom": 551
+   },
+   "to": "public/media/pawly-home-cover-v1/report-ru.webp",
+   "sha256": "580a3176e4875d4c64404e5e05f414456de30d7d3a283b600ca7a2c966b60831"
+  },
+  {
+   "name": "audit/pawly-home-cover-premium-v1/v1/assets/candidates/report-with-title",
+   "locale": "en",
+   "from": "audit/pawly-home-cover-premium-v1/v1/assets/source/order-details-completed-en-390@2x-full.png",
+   "fromSha256": "f2c510e2badfacde19975d0920d5c01388b04040a7d4615a77a314517b1734df",
+   "region": {
+    "left": 0,
+    "top": 112,
+    "width": 780,
+    "height": 1014
+   },
+   "cssRegion": {
+    "left": 0,
+    "top": 56,
+    "right": 390,
+    "bottom": 563
+   },
+   "to": "audit/pawly-home-cover-premium-v1/v1/assets/candidates/report-with-title-en.webp",
+   "sha256": "af82135e3de2b2693120a739573ab203ebf8cc430c43250b8541562915d5f606"
+  },
+  {
+   "name": "audit/pawly-home-cover-premium-v1/v1/assets/candidates/report-with-title",
+   "locale": "ru",
+   "from": "audit/pawly-home-cover-premium-v1/v1/assets/source/order-details-completed-ru-390@2x-full.png",
+   "fromSha256": "e93352b2214e9ba5a1c74b8053706b1c1c23759ec81ba75273c53088e645fd63",
+   "region": {
+    "left": 0,
+    "top": 112,
+    "width": 780,
+    "height": 1014
+   },
+   "cssRegion": {
+    "left": 0,
+    "top": 56,
+    "right": 390,
+    "bottom": 563
+   },
+   "to": "audit/pawly-home-cover-premium-v1/v1/assets/candidates/report-with-title-ru.webp",
+   "sha256": "496c38f64a4c61be0d76a00a87d57f821b0d7c15d304f8fe3671ee4ff9062f13"
+  },
+  {
+   "name": "audit/pawly-home-cover-premium-v1/v1/assets/candidates/walk",
+   "locale": "en",
+   "from": "audit/pawly-home-cover-premium-v1/v1/assets/source/active-service-walking-en-390@2x-full.png",
+   "fromSha256": "aa39c5f1e89517e4dcd44ebd896e47c6382a3a9b2cf9b3e97fb26906dafef931",
+   "region": {
+    "left": 0,
+    "top": 112,
+    "width": 780,
+    "height": 660
+   },
+   "cssRegion": {
+    "left": 0,
+    "top": 56,
+    "right": 390,
+    "bottom": 386
+   },
+   "to": "audit/pawly-home-cover-premium-v1/v1/assets/candidates/walk-en.webp",
+   "sha256": "9f6dcad219884bd5c1274c11bcf264180e0f7c696630f807a33e22ee569f2c0d"
+  },
+  {
+   "name": "audit/pawly-home-cover-premium-v1/v1/assets/candidates/walk",
+   "locale": "ru",
+   "from": "audit/pawly-home-cover-premium-v1/v1/assets/source/active-service-walking-ru-390@2x-full.png",
+   "fromSha256": "850e971c57dfa6a18be17ce7adc3fb3d71bffbab4e7589a02bfe8bc64eeae40d",
+   "region": {
+    "left": 0,
+    "top": 112,
+    "width": 780,
+    "height": 660
+   },
+   "cssRegion": {
+    "left": 0,
+    "top": 56,
+    "right": 390,
+    "bottom": 386
+   },
+   "to": "audit/pawly-home-cover-premium-v1/v1/assets/candidates/walk-ru.webp",
+   "sha256": "ce910c5538bb87cc9a911faa0d7f1d44ba8e3bda787ffe7b5a3e483eb7ac5dbb"
+  }
+ ]
+}
