@@ -1,0 +1,46 @@
+---
+import CaseScreen from '../CaseScreen.astro';
+import { pawlyHome } from '../../copy/pawly-home';
+interface Props { locale: 'en' | 'ru'; loading?: 'eager' | 'lazy'; href?: string; linkLabel?: string }
+const { locale, loading = 'lazy', href, linkLabel } = Astro.props;
+const copy = pawlyHome[locale];
+const media = '/media/pawly-home-cover-v1';
+---
+<figure class="pawly-home">
+  {/* The product's own drop-off proof frame: the same photo the record below cites at 14:52. */}
+  <div class="pawly-home__photo">
+    <img src={`${media}/return-photo.webp`} width="800" height="597" loading={loading} decoding="async" alt={copy.photoAlt} />
+  </div>
+  <div class="pawly-home__record">
+    <CaseScreen item={{ src: `${media}/report-${locale}.webp`, alt: copy.alt, device: 'phone' }} loading={loading} href={href} linkLabel={linkLabel} />
+  </div>
+  <figcaption class="ds-body-sm">{copy.caption}</figcaption>
+</figure>
+<style>
+  .pawly-home { display: grid; gap: var(--space-4); margin: 0; min-inline-size: 0; padding: var(--stage-inset); border-radius: var(--radius-lg); background: var(--surface-cover-pawly); color: var(--text-default); }
+  .pawly-home__photo { min-inline-size: 0; border-radius: var(--radius-media); overflow: hidden; }
+  .pawly-home__photo img { display: block; inline-size: 100%; block-size: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: 58% 38%; }
+  .pawly-home__record { min-inline-size: 0; }
+  .pawly-home figcaption { color: var(--text-subtle); text-wrap: pretty; }
+  @media (--below-bp-md) {
+    .pawly-home { padding: var(--space-3); gap: var(--space-3); }
+  }
+  @media (--below-bp-lg) {
+    .pawly-home figcaption { grid-row: 2; }
+    @media (--bp-md) {
+      .pawly-home__record { justify-self: center; inline-size: 100%; max-inline-size: calc(var(--space-48) * 2); }
+    }
+  }
+  /* The record sets the row height and never drops below ~0.85 of its native 358 px; the photo fills beside it,
+     so photo, caption and record share top and bottom edges. 3 : 2 at xl is where the photo keeps its own aspect. */
+  @media (--bp-lg) {
+    .pawly-home { grid-template-columns: minmax(0, 5fr) minmax(0, 4fr); grid-template-rows: minmax(0, 1fr) auto; column-gap: var(--space-8); row-gap: var(--space-4); align-items: start; }
+    .pawly-home__photo { position: relative; grid-column: 1; grid-row: 1; align-self: stretch; }
+    .pawly-home__photo img { position: absolute; inset: 0; block-size: 100%; aspect-ratio: auto; }
+    .pawly-home__record { grid-column: 2; grid-row: 1 / span 2; }
+    .pawly-home figcaption { grid-column: 1; grid-row: 2; }
+  }
+  @media (--bp-xl) {
+    .pawly-home { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); column-gap: var(--space-12); }
+  }
+</style>
