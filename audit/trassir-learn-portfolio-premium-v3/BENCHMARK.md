@@ -1,0 +1,44 @@
+# Learn V3 — section benchmark and evidence plan
+
+Prepared before page edits on 2 November 2026, from research HEAD `4b9744d`.
+All R1–R7 and B1–B9 originals in [REFERENCE-MAP](REFERENCE-MAP.md) were opened as image pixels, including both complete B8 pages. Fresh BEFORE uses Chromium, DPR 1, normal motion, EN/RU, 1440×900 and 390×844; identical script/settings will produce AFTER. Historical B captures remain historical.
+
+| Chapter | Opened reference and BEFORE diagnosis | Implementation decision / evidence to collect |
+|---|---|---|
+| Hero | R1: small label vs large thesis; R2: authentic separate formats. B1/B2: huge product name, modest thesis, role below media; mobile answer hidden | Make the two-job promise dominant; place current authorship and assignment origin above product proof. Whole blue Home + smaller complete answer; retain both on mobile. Matched first viewport, hero closeup and full page |
+| Original problem | R1 editorial argument, B9 original RU catalogue; B8 repeats neutral prose/cards | Large left-label/right-thesis argument; archive alongside two concrete work situations. Label RU archival source and later rework explicitly; no performance comparison. Problem closeup |
+| Content architecture | R3 connected branches + R4 hierarchy, R7 product/process transition. B3 graph hidden and two unrelated resources adjacent | Visible source-backed graph before interface detail; one material ID referenced by programme, independent reading/completion/attempt records. Sequential narrow graph and accessible transcript. Architecture closeup at desktop/mobile |
+| Reference journey | R2 coherent product proof; B3 readable ONVIF header but small relative to page | Wide native ONVIF answer with version/date, diagnostic summary and programme links, plus concise rationale. Answer chapter closeup |
+| Programme journey | R2 native scale + R7 changing artifact scale. B4 two competing panels | Wide programme contract, then a separate focused completion action with different proportions. Explain 11 units, current position vs completion, access conditions. Programme/action closeups |
+| Progress | R5 actual state family, B5 two equal miniatures | Dominant full learner specimen, smaller native narrow reader counterexample. Keep 9 / 3 of 11 and 3 / no programme separate. Wide and narrow closeups |
+| Assessment | R5 state grouping + R6 distinct outcomes, B6/B7 long equal fail/pass stack | Lead with failure and whole error/source review; independently labelled smaller passed outcome after recovery, same threshold. Truthful attempts/cooldown; no animated fake attempt transition. Result and review closeups |
+| Outcome | R6 quiet evidence blocks; B8 broad ending | Authored decision → implemented consequence → browser evidence; explicit completion tradeoff and limits. Locale-correct demo/landing; existing CaseNext. Outcome closeup |
+
+## Visual method and constraints
+
+Learn retains its own native navy/cobalt technical-learning identity, light editorial canvas and Onest portfolio type roles. No Agent carbon stage or financial narrative. No shared token/component, homepage, other case, product-source or Figma edit. Existing LearnShot/CaseScreen, Diagram, TextLink and CaseNext form the composition. Existing subtle reveals and Diagram draw only; graph has a complete static endpoint. All native images keep semantic edges, aspect ratio, existing fields/radius and zoom. Screenshots are documentary examples, diagram is an editorial selection from the current model.
+
+## Planned verification
+
+Capture before/after with the same method; section comparisons against exact R pixels and matched B view. Verify EN/RU at 320/360/390/768/1024/1440, keyboard/zoom/Escape/focus, locale/anchors/navigation, links, no-JS/reduced motion, images and overflow. Run Astro/content/CSS/harmony/build and neighboring-route smoke checks. Store complete logs. Implementation evaluation below will document stronger/weaker/justified differences without claiming independent acceptance.
+
+## Final visual assessment for the independent reviewer
+
+Implementation observations, not acceptance. Every linked board was produced from complete reference/AFTER captures; both R and B originals remain linked above. See [comparison manifest](comparisons/manifest.json) for exact input paths.
+
+| Chapter | Specific reference / BEFORE | Final evidence | Stronger / weaker / justified difference |
+|---|---|---|---|
+| Hero | R1 typography + R2 formats; B1/B2 | [R2 vs V3](comparisons/reference-hero.png), [1440 before/after](comparisons/before-after-hero-1440.png), [390](comparisons/before-after-hero-390.png) | Stronger thesis and early ownership; mobile keeps supporting answer. Own native navy canvas, no fake phone shell. Complete mobile Home fits in the first 844px view at 390; the second proof follows within the second screen. Some fine desktop UI still needs zoom |
+| Original problem | R1 thesis; B9 and B8 | [Reference](comparisons/reference-problem.png), [before/after](comparisons/before-after-problem-1440.png) | Stronger explicit contrast between diagnostic question and installation readiness. Archive is larger, labelled original RU; justified different from reference's team photography, unavailable here |
+| Architecture | R3 direction + R4 hierarchy, R7 process transition; B3 | [R3](comparisons/reference-architecture.png), [R4](comparisons/reference-architecture-hierarchy.png), [before/after](comparisons/before-after-architecture-1440.png), [mobile](after/en-390-shared-material.png) | Stronger visible six-entity model and five arrowed relationships; no disclosure required. Compact 272px graph fits 320px page. Deliberately smaller than HA's full application map; no invented nodes. Sequential tablet/mobile graph is longer than a miniature wide map |
+| Reference | R2 authentic readable product; B3 | [Reference](comparisons/reference-reference.png), [V3](after/en-1440-reference-path.png) | Stronger native scale: the standalone ONVIF example has its own chapter. BEFORE comparison uses B3's entire shared-material chapter because V2 had no separate reference chapter; this is not presented as identical chapter scope |
+| Programme | R2 scale + R7 artifact transition; B4 | [Reference](comparisons/reference-programme.png), [before/after](comparisons/before-after-programme-1440.png), [mobile](after/en-390-guided-path.png) | Stronger programme contract, separately focused completion detail and explicit position/completion distinction. Only first curriculum group is captured, not all 11 rows; passport states the whole composition. Existing mobile passport omits curriculum rows; full programme remains in the demo |
+| Progress | R5 native families; B5 | [Reference](comparisons/reference-progress.png), [before/after](comparisons/before-after-progress-1440.png), [RU mobile](after/ru-390-workspace.png) | Learner frame grows from roughly 625 to 1104 CSS px on desktop; counts and card labels become readable. Smaller counterexample uses a complete narrow native source rather than a second wide miniature. Mobile still needs both specimens to establish the rule and is therefore a long chapter |
+| Assessment | R5 states + R6 outcomes; B6/B7 | [Reference](comparisons/reference-assessment.png), [before/after](comparisons/before-after-assessment-1440.png), [mobile](after/en-390-assessment.png) | Stronger failure/review grouping: whole wrong-answer card uses its genuine native narrow layout at readable scale. Independent pass follows after recovery with the same threshold. Justified different from equally sized state inventory; no fabricated animation or claim of one continuous attempt |
+| Outcome | R6 quiet evidence blocks; B8 | [Reference](comparisons/reference-outcome.png), [before/after](comparisons/before-after-outcome-1440.png) | Designed / implemented / checked replaces an undifferentiated summary. Tradeoff and next expert/user validation remain explicit. Justified difference: no uplift figures, accreditation or deployment claim |
+
+## Measured presentation tradeoffs
+
+Final story has 741 EN / 638 RU editorial words (including labels, captions and outcome, excluding documentary diagram and next-case utility). Eleven native screenshot instances: seven main proofs plus answer/action/reader/review details. Titles and image scale provide the scan path; no timed recruiter study is claimed.
+
+Full EN page grows from 8,733 to 11,457px at 1440 and from 13,006 to 15,386px at 390. RU grows from 8,934 to 11,604px and 13,447 to 15,476px. The extra length buys the visible content model, larger programme/progress evidence and real recovery. It is a known cost, not hidden by cropped full-page evidence. See [EN desktop](comparisons/en-1440.md), [RU desktop](comparisons/ru-1440.md), [EN mobile](comparisons/en-390.md), [RU mobile](comparisons/ru-390.md).

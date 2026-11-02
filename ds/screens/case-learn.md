@@ -1,3 +1,22 @@
+## Premium V3 · 02.11.2026
+
+Owner-authorized composition: research `4b9744d`, `audit/trassir-learn-portfolio-premium-v3/BENCHMARK.md` prepared before implementation. Supersedes V2 case composition below; Home remains V2 unchanged.
+
+`LearnCase` composes existing LearnShot/CaseScreen, Diagram, TextLink and CaseNext. V3 copy is isolated in `src/copy/cases/learn-v3.ts`; Learn-only selection in work/[slug] keeps Home V2 copy untouched. No shared catalog/token/motion or product-source edit.
+
+| Chapter | Composition | Narrow layout |
+|---|---|---|
+| Hero | Small product identity, dominant two-job thesis; role, current ownership and real assignment origin before evidence; navy Home + secondary ONVIF proof | Both genuine sources remain visible, stacked; concise authorship precedes them |
+| Problem | Offset editorial argument, authentic RU archive + two work situations | Archive and jobs in reading order, full source inspectable |
+| Architecture | Source-backed six-node Diagram visible by default, reading/completion rule beneath | Existing sequential mobile geometry and accessible relation transcript |
+| Reference | Wide versioned ONVIF header/brief/navigation | Real localized mobile source |
+| Programme | Large programme contract, then separate explicit-completion action | Real mobile passport and whole completion panel; no fake completed counts |
+| Progress | Dominant learner specimen, separate smaller reader counterexample | Actual mobile learner and reader cards, full content |
+| Assessment | Failure + full wrong-answer/source record; independent passed example beneath | Failure → review → rules → alternate pass; no hidden essential state |
+| Outcome | Designed/implemented/checked rows, tradeoff, next validation and live links | Native stacked text and shared next-case link |
+
+Type roles: existing Onest heading/display/body/meta. Surfaces: surface-default/subtle, unmodified native product navy. Vertical cadence: flow tokens, section step space-24/32. Media frames: native canvas for Home/Reference/Programme, existing 16/24px frame fields and radius-media for details. Editorial word budget 1150 explicitly declared for the requested multi-chapter bilingual story; no text removed from counting. Motion stays in existing fade/fade-image lifecycle; graph is static and visible, no added motion. No-JS links open original captures. Final QA/provenance/limits are recorded in the V3 report; independent acceptance remains pending.
+
 ## Прозрачный контур native компонентов · 05.10.2026
 
 Паспорта программы, четыре Card, TrustHeader и ProgressMeter RU пересняты с прозрачным фоном окружающей страницы. Их собственные скругления, заливки, текст и поля сохраняются. Общий `scripts/lib/native-alpha-capture.mjs` ставит исходный компонент на целочисленный origin и убирает только фон предков; Card сохраняет 2 CSS px bleed. Оба RU capture entrypoints используют этот helper, чтобы прямоугольная подложка не возвращалась при пересъёмке. `node scripts/verify-learn-native-alpha.mjs` проверяет четыре угла всех 28 EN/RU файлов и отображаемых responsive источников на Home и Learn при 390/820/1440 px; `ALPHA_BROWSER=webkit` запускает ту же проверку в WebKit.

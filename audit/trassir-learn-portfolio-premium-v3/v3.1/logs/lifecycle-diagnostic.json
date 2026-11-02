@@ -1,0 +1,6282 @@
+[
+  {
+    "concurrent": false,
+    "locale": "en",
+    "legacy": {
+      "ms": 2826.2000000011176,
+      "last": {
+        "ms": 2715,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0.8888",
+            "transform": "none",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.3112",
+            "transform": "matrix(1, 0, 0, 1, 0, 16.5305)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.0355",
+            "transform": "matrix(1, 0, 0, 1, 0, 23.1476)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      "missing": [
+        {
+          "src": "/media/case-learn-v2/current/en/path.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/en/path.webp\" alt=\"Programme purpose and curriculum detail; on mobile, current progress and continue action\" width=\"2432\" height=\"1622\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/en/completion-mobile.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/en/completion-mobile.webp\" alt=\"Complete end-of-unit panel for archive depth, with the next material and explicit completion action\" width=\"812\" height=\"792\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/en/learner.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/en/learner.webp\" alt=\"Two complete progress cards: 9 resources read and 3 of 11 programme units completed\" width=\"2112\" height=\"1002\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/en/reader-history.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/en/reader-history.webp\" alt=\"Reader account: 3 resources read; no programme completion is awarded\" width=\"812\" height=\"1146\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/en/failed.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/en/failed.webp\" alt=\"Unsuccessful assessment: 14 of 20 answers against a threshold of 16, with remaining attempt and cooldown\" width=\"2112\" height=\"1088\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/en/review-detail.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/en/review-detail.webp\" alt=\"Read-only wrong-answer review preserves the submitted answer and links to its source material\" width=\"808\" height=\"560\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/en/passed-score.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/en/passed-score.webp\" alt=\"Complete passed assessment result: 20 of 20 against a threshold of 16, with the document action\" width=\"2112\" height=\"1130\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "",
+          "currentSrc": "",
+          "html": "<img class=\"media-zoom__media\" data-media-zoom-image=\"\" src=\"\" alt=\"\" decoding=\"async\" data-astro-cid-7q5azoho=\"\">",
+          "dialogOpen": false
+        }
+      ]
+    },
+    "samples": [
+      {
+        "ms": 121,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 222,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 331,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 439,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 546,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 654,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 763,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 871,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 980,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1089,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1197,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1305,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1414,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1522,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1631,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1740,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1848,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1957,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2066,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2175,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2284,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2392,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2500,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2609,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0.4271",
+            "transform": "none",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 24)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 24)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2715,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0.8888",
+            "transform": "none",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.3112",
+            "transform": "matrix(1, 0, 0, 1, 0, 16.5305)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.0355",
+            "transform": "matrix(1, 0, 0, 1, 0, 23.1476)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 2817,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0.9885",
+            "transform": "none",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.5674",
+            "transform": "matrix(1, 0, 0, 1, 0, 10.3823)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.3698",
+            "transform": "matrix(1, 0, 0, 1, 0, 15.1259)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 2919,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.7444",
+            "transform": "matrix(1, 0, 0, 1, 0, 6.1332)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.6085",
+            "transform": "matrix(1, 0, 0, 1, 0, 9.3954)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 3027,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.8606",
+            "transform": "matrix(1, 0, 0, 1, 0, 3.3448)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.772",
+            "transform": "matrix(1, 0, 0, 1, 0, 5.4717)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 3132,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9409",
+            "transform": "matrix(1, 0, 0, 1, 0, 1.4177)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.8922",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.5872)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 3244,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9759",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.5784)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9495",
+            "transform": "matrix(1, 0, 0, 1, 0, 1.2115)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 3348,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9941",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.1413)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9838",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.3898)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 3448,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.999",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0241)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9956",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.1063)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 3548,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0008)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9994",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0146)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 3660,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0003)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 3763,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3864,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3968,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4075,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4180,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4292,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4397,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4498,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4614,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4723,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4830,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4931,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5032,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5141,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5247,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5358,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5463,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5564,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5664,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5764,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5865,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5980,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6081,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6196,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6297,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6398,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6507,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "concurrent": false,
+    "locale": "ru",
+    "legacy": {
+      "ms": 2887.5,
+      "last": {
+        "ms": 2859,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      "missing": [
+        {
+          "src": "/media/case-learn-v2/current/ru/path.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/ru/path.webp\" alt=\"Цель программы и фрагмент состава; на телефоне — текущий прогресс и продолжение\" width=\"2432\" height=\"1670\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/ru/completion-mobile.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/ru/completion-mobile.webp\" alt=\"Целая панель завершения материала о глубине архива: следующий материал и явное действие завершения\" width=\"812\" height=\"834\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/ru/learner.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/ru/learner.webp\" alt=\"Две целые карточки прогресса: прочитано 9 материалов и завершено 3 из 11 единиц\" width=\"2112\" height=\"1002\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/ru/reader-history.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/ru/reader-history.webp\" alt=\"Аккаунт читателя: прочитано 3 материала, завершение программы не начисляется\" width=\"812\" height=\"1188\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/ru/failed.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/ru/failed.webp\" alt=\"Зачёт не пройден: 14 из 20 при пороге 16, оставшаяся попытка и пауза до повтора\" width=\"2112\" height=\"1088\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/ru/review-detail.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/ru/review-detail.webp\" alt=\"Разбор ошибки сохраняет отправленный ответ и ведёт к исходному материалу\" width=\"808\" height=\"512\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/ru/passed-score.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/ru/passed-score.webp\" alt=\"Целый успешный результат: 20 из 20 при пороге 16 и действие открытия документа\" width=\"2112\" height=\"1130\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "",
+          "currentSrc": "",
+          "html": "<img class=\"media-zoom__media\" data-media-zoom-image=\"\" src=\"\" alt=\"\" decoding=\"async\" data-astro-cid-7q5azoho=\"\">",
+          "dialogOpen": false
+        }
+      ]
+    },
+    "samples": [
+      {
+        "ms": 138,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 241,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0.6105",
+            "transform": "none",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.0159",
+            "transform": "matrix(1, 0, 0, 1, 0, 23.6183)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 24)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 351,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0.9134",
+            "transform": "none",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.3526",
+            "transform": "matrix(1, 0, 0, 1, 0, 15.5375)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.0889",
+            "transform": "matrix(1, 0, 0, 1, 0, 21.867)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 456,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0.9961",
+            "transform": "none",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.6298",
+            "transform": "matrix(1, 0, 0, 1, 0, 8.8836)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.453",
+            "transform": "matrix(1, 0, 0, 1, 0, 13.1282)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 557,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.7862",
+            "transform": "matrix(1, 0, 0, 1, 0, 5.1315)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.6664",
+            "transform": "matrix(1, 0, 0, 1, 0, 8.0069)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 661,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.8868",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.716)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.8103",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.5539)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 769,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9469",
+            "transform": "matrix(1, 0, 0, 1, 0, 1.274)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9017",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.3603)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 873,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9826",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.4167)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9615",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.9243)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 973,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9952",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.1148)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9862",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.3322)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 1078,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9993",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0174)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9965",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0851)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 1186,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0004)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9996",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.01)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 1290,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 1404,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1506,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1621,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1723,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1823,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1930,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2031,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2131,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2239,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2340,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2441,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2549,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2656,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2757,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2859,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2968,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3073,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3184,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3289,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3390,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3490,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3590,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3696,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3804,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3905,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4006,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4115,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4223,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4323,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4425,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4534,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4634,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4736,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4839,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4940,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5045,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5146,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5246,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5355,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5455,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5556,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5664,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5772,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5873,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5973,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6082,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6183,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6284,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6385,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6486,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6589,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "concurrent": true,
+    "locale": "en",
+    "legacy": {
+      "ms": 2870.699999999255,
+      "last": {
+        "ms": 2844,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      "missing": [
+        {
+          "src": "/media/case-learn-v2/current/en/path.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/en/path.webp\" alt=\"Programme purpose and curriculum detail; on mobile, current progress and continue action\" width=\"2432\" height=\"1622\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/en/completion-mobile.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/en/completion-mobile.webp\" alt=\"Complete end-of-unit panel for archive depth, with the next material and explicit completion action\" width=\"812\" height=\"792\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/en/learner.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/en/learner.webp\" alt=\"Two complete progress cards: 9 resources read and 3 of 11 programme units completed\" width=\"2112\" height=\"1002\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/en/reader-history.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/en/reader-history.webp\" alt=\"Reader account: 3 resources read; no programme completion is awarded\" width=\"812\" height=\"1146\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/en/failed.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/en/failed.webp\" alt=\"Unsuccessful assessment: 14 of 20 answers against a threshold of 16, with remaining attempt and cooldown\" width=\"2112\" height=\"1088\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/en/review-detail.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/en/review-detail.webp\" alt=\"Read-only wrong-answer review preserves the submitted answer and links to its source material\" width=\"808\" height=\"560\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/en/passed-score.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/en/passed-score.webp\" alt=\"Complete passed assessment result: 20 of 20 against a threshold of 16, with the document action\" width=\"2112\" height=\"1130\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "",
+          "currentSrc": "",
+          "html": "<img class=\"media-zoom__media\" data-media-zoom-image=\"\" src=\"\" alt=\"\" decoding=\"async\" data-astro-cid-7q5azoho=\"\">",
+          "dialogOpen": false
+        }
+      ]
+    },
+    "samples": [
+      {
+        "ms": 129,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 231,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0.6055",
+            "transform": "none",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.0119",
+            "transform": "matrix(1, 0, 0, 1, 0, 23.7133)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 24)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 340,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0.9134",
+            "transform": "none",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.3526",
+            "transform": "matrix(1, 0, 0, 1, 0, 15.5375)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.0889",
+            "transform": "matrix(1, 0, 0, 1, 0, 21.867)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 446,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0.9962",
+            "transform": "none",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.6317",
+            "transform": "matrix(1, 0, 0, 1, 0, 8.8381)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.4555",
+            "transform": "matrix(1, 0, 0, 1, 0, 13.0672)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 555,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.7862",
+            "transform": "matrix(1, 0, 0, 1, 0, 5.1315)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.6664",
+            "transform": "matrix(1, 0, 0, 1, 0, 8.0069)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 661,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.8988",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.4284)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.828",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.1281)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 773,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9536",
+            "transform": "matrix(1, 0, 0, 1, 0, 1.1125)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9124",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.1019)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 878,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9857",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.344)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9671",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.7904)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 990,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9963",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0893)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9886",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.2744)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 1094,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9997",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0069)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9981",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0467)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 1195,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9999",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0035)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 1297,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 1405,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1510,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1610,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1713,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1814,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1916,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2024,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2124,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2225,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2327,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2427,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2527,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2642,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2744,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2844,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2945,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3060,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3160,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3261,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3368,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3476,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3577,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3692,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3793,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3895,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4001,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4109,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4210,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4311,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4411,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4511,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4620,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4727,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4838,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4939,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5041,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5144,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5244,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5352,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5460,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5561,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5662,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5771,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5877,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5988,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6095,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6205,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6311,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6411,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6516,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "concurrent": true,
+    "locale": "ru",
+    "legacy": {
+      "ms": 2920.199999999255,
+      "last": {
+        "ms": 2851,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      "missing": [
+        {
+          "src": "/media/case-learn-v2/current/ru/path.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/ru/path.webp\" alt=\"Цель программы и фрагмент состава; на телефоне — текущий прогресс и продолжение\" width=\"2432\" height=\"1670\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/ru/completion-mobile.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/ru/completion-mobile.webp\" alt=\"Целая панель завершения материала о глубине архива: следующий материал и явное действие завершения\" width=\"812\" height=\"834\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/ru/learner.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/ru/learner.webp\" alt=\"Две целые карточки прогресса: прочитано 9 материалов и завершено 3 из 11 единиц\" width=\"2112\" height=\"1002\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/ru/reader-history.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/ru/reader-history.webp\" alt=\"Аккаунт читателя: прочитано 3 материала, завершение программы не начисляется\" width=\"812\" height=\"1188\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/ru/failed.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/ru/failed.webp\" alt=\"Зачёт не пройден: 14 из 20 при пороге 16, оставшаяся попытка и пауза до повтора\" width=\"2112\" height=\"1088\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/ru/review-detail.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/ru/review-detail.webp\" alt=\"Разбор ошибки сохраняет отправленный ответ и ведёт к исходному материалу\" width=\"808\" height=\"512\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "/media/case-learn-v2/current/ru/passed-score.webp",
+          "currentSrc": "",
+          "html": "<img src=\"/media/case-learn-v2/current/ru/passed-score.webp\" alt=\"Целый успешный результат: 20 из 20 при пороге 16 и действие открытия документа\" width=\"2112\" height=\"1130\" loading=\"lazy\" decoding=\"async\" data-astro-cid-zhx7jcau=\"\">"
+        },
+        {
+          "src": "",
+          "currentSrc": "",
+          "html": "<img class=\"media-zoom__media\" data-media-zoom-image=\"\" src=\"\" alt=\"\" decoding=\"async\" data-astro-cid-7q5azoho=\"\">",
+          "dialogOpen": false
+        }
+      ]
+    },
+    "samples": [
+      {
+        "ms": 140,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 242,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0.6055",
+            "transform": "none",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.0119",
+            "transform": "matrix(1, 0, 0, 1, 0, 23.7133)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 24)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 348,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0.9134",
+            "transform": "none",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.3526",
+            "transform": "matrix(1, 0, 0, 1, 0, 15.5375)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.0889",
+            "transform": "matrix(1, 0, 0, 1, 0, 21.867)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 456,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "0.9962",
+            "transform": "none",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.6317",
+            "transform": "matrix(1, 0, 0, 1, 0, 8.8381)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.4555",
+            "transform": "matrix(1, 0, 0, 1, 0, 13.0672)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 556,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.7874",
+            "transform": "matrix(1, 0, 0, 1, 0, 5.1014)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.6681",
+            "transform": "matrix(1, 0, 0, 1, 0, 7.9649)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 657,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.8876",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.6973)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.8114",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.5264)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 759,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9474",
+            "transform": "matrix(1, 0, 0, 1, 0, 1.2634)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9024",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.3435)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 859,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9794",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.4952)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9556",
+            "transform": "matrix(1, 0, 0, 1, 0, 1.0653)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 967,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9939",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.1475)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9832",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.4031)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 1072,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9993",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0169)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9965",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0837)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 1173,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0004)",
+            "willChange": "transform, opacity"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "0.9996",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.01)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 1274,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0001)",
+            "willChange": "transform, opacity"
+          }
+        ]
+      },
+      {
+        "ms": 1382,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1483,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1588,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1691,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1791,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 1891,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2002,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2106,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2217,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2322,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2434,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2538,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2638,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2739,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2851,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 2951,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3053,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3155,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3269,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3372,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3484,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3589,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3690,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3793,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 3901,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4001,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4105,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4210,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4318,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4420,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4520,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4621,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4721,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4831,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 4938,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5049,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5155,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5256,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5360,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5460,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5563,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5663,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5764,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5865,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 5966,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6067,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6172,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6275,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6385,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6486,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      },
+      {
+        "ms": 6586,
+        "visibility": "visible",
+        "elements": [
+          {
+            "motion": "fade",
+            "opacity": "1",
+            "transform": "none",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          },
+          {
+            "motion": "fade-image",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "willChange": "auto"
+          }
+        ]
+      }
+    ]
+  }
+]

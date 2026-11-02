@@ -1,0 +1,57 @@
+# Asset provenance — Learn V3
+
+No new product screenshot, raster translation, overlay, crop, counter, score or repainted control was created for V3. All 32 responsive source variants below are the existing localized browser captures from the pinned Learn repository.
+
+- Product: [NikitaKanarev97/learn](https://github.com/NikitaKanarev97/learn/tree/e9ac4b075c4c5251dc10891ad201ecbf5405b727), exact source SHA e9ac4b075c4c5251dc10891ad201ecbf5405b727. Read-only local checkout matched this SHA and stayed clean.
+- Original capture context: [V2 media review](../trassir-learn-case-v2/refresh-2026-10-31/MEDIA-REVIEW.md), [exact capture manifest](../trassir-learn-case-v2/refresh-2026-10-31/capture-manifest.json), [Home canvas record](../trassir-learn-case-v2/composition-v23/home-canvas.json).
+- Runtime [media manifest](../../src/data/learn-v2-media.json) is unchanged. [V3 selected-asset manifest](asset-manifest.json) copies every source route, selector/boundary, field, source SHA and adds the SHA256 of the published file. Localhost in capture routes identifies the capture server, not a claimed production product.
+- Historical Russian catalogue: [unaltered archive](../../public/media/case-learn/before-catalog.webp), original source supplied with the assignment. Its capture date/source commit was not established; V3 labels it as a Russian archive in both languages. No invented EN archival screen.
+
+| Locale / key | Published bytes | Original browser evidence | Native CSS width |
+|---|---|---|---|
+| en/home-wide | [WebP](../../public/media/case-learn-v2/composition/en/home-wide.webp) | [PNG](../../audit/trassir-learn-case-v2/composition-v23/product/en/home-wide.png) | 1424 |
+| en/home-mobile | [WebP](../../public/media/case-learn-v2/composition/en/home-mobile.webp) | [PNG](../../audit/trassir-learn-case-v2/composition-v23/product/en/home-mobile.png) | 390 |
+| en/answer-detail | [WebP](../../public/media/case-learn-v2/current/en/answer-detail.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/answer-detail.png) | 406 |
+| en/reference | [WebP](../../public/media/case-learn-v2/current/en/reference.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/reference.png) | 1136 |
+| en/reference-mobile | [WebP](../../public/media/case-learn-v2/current/en/reference-mobile.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/reference-mobile.png) | 390 |
+| en/path | [WebP](../../public/media/case-learn-v2/current/en/path.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/path.png) | 1216 |
+| en/path-mobile | [WebP](../../public/media/case-learn-v2/current/en/path-mobile.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/path-mobile.png) | 390 |
+| en/completion-mobile | [WebP](../../public/media/case-learn-v2/current/en/completion-mobile.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/completion-mobile.png) | 406 |
+| en/learner | [WebP](../../public/media/case-learn-v2/current/en/learner.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/learner.png) | 1056 |
+| en/learner-mobile | [WebP](../../public/media/case-learn-v2/current/en/learner-mobile.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/learner-mobile.png) | 406 |
+| en/reader-history | [WebP](../../public/media/case-learn-v2/current/en/reader-history.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/reader-history.png) | 406 |
+| en/failed | [WebP](../../public/media/case-learn-v2/current/en/failed.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/failed.png) | 1056 |
+| en/failed-mobile | [WebP](../../public/media/case-learn-v2/current/en/failed-mobile.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/failed-mobile.png) | 406 |
+| en/review-detail | [WebP](../../public/media/case-learn-v2/current/en/review-detail.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/review-detail.png) | 404 |
+| en/passed-score | [WebP](../../public/media/case-learn-v2/current/en/passed-score.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/passed-score.png) | 1056 |
+| en/passed-score-mobile | [WebP](../../public/media/case-learn-v2/current/en/passed-score-mobile.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/passed-score-mobile.png) | 406 |
+| ru/home-wide | [WebP](../../public/media/case-learn-v2/composition/ru/home-wide.webp) | [PNG](../../audit/trassir-learn-case-v2/composition-v23/product/ru/home-wide.png) | 1424 |
+| ru/home-mobile | [WebP](../../public/media/case-learn-v2/composition/ru/home-mobile.webp) | [PNG](../../audit/trassir-learn-case-v2/composition-v23/product/ru/home-mobile.png) | 390 |
+| ru/answer-detail | [WebP](../../public/media/case-learn-v2/current/ru/answer-detail.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/answer-detail.png) | 406 |
+| ru/reference | [WebP](../../public/media/case-learn-v2/current/ru/reference.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/reference.png) | 1136 |
+| ru/reference-mobile | [WebP](../../public/media/case-learn-v2/current/ru/reference-mobile.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/reference-mobile.png) | 390 |
+| ru/path | [WebP](../../public/media/case-learn-v2/current/ru/path.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/path.png) | 1216 |
+| ru/path-mobile | [WebP](../../public/media/case-learn-v2/current/ru/path-mobile.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/path-mobile.png) | 390 |
+| ru/completion-mobile | [WebP](../../public/media/case-learn-v2/current/ru/completion-mobile.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/completion-mobile.png) | 406 |
+| ru/learner | [WebP](../../public/media/case-learn-v2/current/ru/learner.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/learner.png) | 1056 |
+| ru/learner-mobile | [WebP](../../public/media/case-learn-v2/current/ru/learner-mobile.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/learner-mobile.png) | 406 |
+| ru/reader-history | [WebP](../../public/media/case-learn-v2/current/ru/reader-history.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/reader-history.png) | 406 |
+| ru/failed | [WebP](../../public/media/case-learn-v2/current/ru/failed.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/failed.png) | 1056 |
+| ru/failed-mobile | [WebP](../../public/media/case-learn-v2/current/ru/failed-mobile.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/failed-mobile.png) | 406 |
+| ru/review-detail | [WebP](../../public/media/case-learn-v2/current/ru/review-detail.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/review-detail.png) | 404 |
+| ru/passed-score | [WebP](../../public/media/case-learn-v2/current/ru/passed-score.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/passed-score.png) | 1056 |
+| ru/passed-score-mobile | [WebP](../../public/media/case-learn-v2/current/ru/passed-score-mobile.webp) | [PNG](../../audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/passed-score-mobile.png) | 406 |
+
+## States and semantic boundaries
+
+Home is the complete task canvas; V2.3 already extended its native surrounding navy canvas while preserving all UI geometry (recorded in the existing manifest). Answer-detail is the whole ONVIF header. Reference includes the whole header, diagnostic brief and navigation; the original capture excluded adjacent article body without repainting the selected content. Programme shows the complete overview/passport and first curriculum group, not all 11 unit rows. Completion-mobile is the entire end-of-unit action for archive retention, a different material from ONVIF.
+
+Learner is the whole two-card account region: nine resources read and three of eleven completed. Reader-history is the actual narrow two-card reader region: three read and no programme started; V3 also uses this narrow capture on desktop as a legible counterexample. No counters were extracted or rebuilt.
+
+Failure is a real 14/20 submitted example against 16/20, with four wrong and two skipped answers. Pass is an independent 20/20 state reached from a separate context seeded from the same pre-exam session. Review-detail is one whole native wrong-answer card with question, preserved submitted answer and source link, used at native scale on both layouts. These are not consecutive frames of one attempt or learner-impact data. The unchanged product text identifies the training document's limitations; it is not an official DSSL qualification.
+
+## Diagram and portfolio evidence
+
+The visible diagram is a newly edited editorial model from the existing Learn data diagram and verified product store/trajectory/material/result rules, not a historical workshop artifact. V3 changes geometry and directional notation only; its six entities and five relationships stay intact. At 320–768 it uses a compact sequential layout with a text transcript; 1024+ uses branching geometry. Existing shared draw/reveal motion has an identical static endpoint in reduced motion/no JS.
+
+Fresh BEFORE and AFTER are actual production-build Chromium captures, DPR 1, matching locale/viewport/settings and the same committed capture.mjs. BEFORE was initially captured before code edits; its final files were recaptured from a separate pinned 4b9744d worktree production build to exclude Astro dev tools. No source UI pixels were modified for the comparison boards: compare.mjs places complete original images side by side with proportional scaling and external labels. R1–R7 competitor pixels appear only in this internal audit, never on the public page.

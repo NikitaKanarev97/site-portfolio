@@ -1,0 +1,7 @@
+import { writeFile } from 'node:fs/promises';
+const { chromium }=await import('file:///D:/Claude-projects/b2b-dssl/node_modules/playwright-core/index.mjs');
+const b=await chromium.launch(),p=await b.newPage({viewport:{width:390,height:844}});await p.goto('http://127.0.0.1:4429/work/learn/');
+const values=await p.locator('.learn-model').evaluate(e=>{const svg=e.querySelector('[data-diagram-layout="mobile"] svg'),cs=getComputedStyle(svg);return {text:getComputedStyle(svg.querySelector('text')).fill,node:cs.getPropertyValue('--diagram-node').trim(),field:cs.getPropertyValue('--diagram-field').trim(),arrow:cs.getPropertyValue('--diagram-arrow').trim()}});
+const lum=s=>{const a=(s.startsWith('#')?s.slice(1).match(/../g).map(x=>parseInt(x,16)):s.match(/[\d.]+/g).slice(0,3).map(Number)).map(x=>{x/=255;return x<=.04045?x/12.92:((x+.055)/1.055)**2.4});return .2126*a[0]+.7152*a[1]+.0722*a[2]};const contrast=(a,b)=>(Math.max(lum(a),lum(b))+.05)/(Math.min(lum(a),lum(b))+.05);
+const report={values,textOnNode:contrast(values.text,values.node),textOnField:contrast(values.text,values.field),arrowOnField:contrast(values.arrow,values.field),method:'Computed SVG fill / semantic node and field colors, WCAG relative luminance. Resolves axe incomplete SVG text contrast separately.'};
+if(report.textOnNode<4.5||report.textOnField<4.5||report.arrowOnField<3)throw Error('Contrast');await writeFile('audit/trassir-learn-portfolio-premium-v3/logs/diagram-contrast.json',JSON.stringify(report,null,2));console.log(report);await b.close();
