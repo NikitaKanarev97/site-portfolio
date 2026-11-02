@@ -1,5 +1,10 @@
 ## Late bundle fallback · 03.11.2026
 
+SplitText keeps whole accessible labels on native/ARIA headings. Generic text
+spans use `aria=none`, retaining their readable descendant text instead of adding
+a prohibited aria-label and hiding their line text from the containing heading.
+This changes accessibility only; choreography and visual masks remain identical.
+
 Once the inline two-second fallback removes `.js`, readable content stays in its
 final state even if the motion bundle later arrives. `initPage` uses the existing
 settled/history branch inside `withMotionPreference`; no entrance/reveal is replayed

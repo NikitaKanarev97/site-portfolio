@@ -659,6 +659,8 @@ Shift+Tab wrap between currently visible, enabled controls and scroll regions.
 Native modal inertness, Escape and focus return remain. Both registrations use
 AbortController and tear down before Astro swaps; closing a project dialog also
 releases its scroll lock. No new visual component or motion primitive.
+Tab traversal explicitly chooses the next/previous control, because WebKit's
+platform policy may skip links and otherwise escape before the last DOM candidate.
 
 ## Learn V2 · 31.10.2026
 

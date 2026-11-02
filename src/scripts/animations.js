@@ -283,6 +283,9 @@ function scrollTargets(root) {
 /** Набор. Строка — смысловая единица; абзацы этим движением не набираются. */
 function revealText(el, tl, position, params = motion.revealText) {
   const split = SplitText.create(el, {
+    // Generic spans cannot carry an accessible name. Keep their line text
+    // exposed to the containing heading; actual headings use one whole label.
+    aria: el.matches('h1,h2,h3,h4,h5,h6,[role="heading"]') ? 'auto' : 'none',
     type: 'lines',
     mask: 'lines',
     linesClass: 'ds-split-line',

@@ -14,13 +14,12 @@ export function containDialogFocus(dialog: HTMLDialogElement, signal: AbortSigna
       dialog.focus();
       return;
     }
-    const active = document.activeElement;
-    if (event.shiftKey && (active === first || !dialog.contains(active))) {
-      event.preventDefault();
-      last.focus();
-    } else if (!event.shiftKey && (active === last || !dialog.contains(active))) {
-      event.preventDefault();
-      first.focus();
-    }
+    // WebKit's platform Tab policy can skip anchors. Own this modal sequence
+    // instead of relying on the browser to reach our last candidate first.
+    event.preventDefault();
+    const current = items.indexOf(document.activeElement as HTMLElement);
+    const next = current < 0 ? (event.shiftKey ? items.length - 1 : 0)
+      : (current + (event.shiftKey ? -1 : 1) + items.length) % items.length;
+    items[next].focus();
   }, { signal });
 }
