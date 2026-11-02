@@ -420,4 +420,6 @@ into the skim layer. Only Learn is dispatched to this renderer.
 
 ## Vet case V2 · 1 November 2026
 
+**V3:** `screens/case-vet-v3.md` supersedes the V2 body map only. Alternate editorial diagnosis, small connected sage information model, focused trace, native calculation split, service invoice split, ready/blocked state pair and native owner desktop/mobile stage on white. Actual state examples live beside the relevant decision; process links to working product screens, with immutable source provenance in the internal report. Shared DS roles and honest full-image inspection are preserved.
+
 Case-scoped composition: `screens/case-vet-v2.md`. Split editorial heads use 3:9 columns from bp-lg; the three-role ordered flow uses plain top rules and becomes a vertical list on phones. Product crops retain native padding; the owner comparison pairs actual desktop and mobile frames. No new generic card, colour system or motion. Shared CaseStory is unchanged.

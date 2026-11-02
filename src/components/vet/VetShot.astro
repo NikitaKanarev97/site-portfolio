@@ -1,11 +1,13 @@
 ---
 import CaseScreen from '../CaseScreen.astro';
 import media from '../../data/vet-v2-media.json';
+import addedMedia from '../../data/vet-v3-media.json';
 import type { VetShotCopy } from '../../copy/cases/vet-v2';
 interface Props { shot: VetShotCopy; locale: 'en' | 'ru'; loading?: 'eager' | 'lazy'; href?: string; linkLabel?: string; mode?: 'responsive' | 'desktop' | 'mobile'; }
 const { shot, locale, loading = 'lazy', href, linkLabel, mode = 'responsive' } = Astro.props;
+const allMedia = { ...media, ...addedMedia };
 const pick = (key: string) => {
-  const value = (media as Record<string, { src: string; width: number; height: number; cssWidth: number }>)[`${locale}/${key}`];
+  const value = (allMedia as Record<string, { src: string; width: number; height: number; cssWidth: number }>)[`${locale}/${key}`];
   if (!value) throw Error(`VetShot missing ${locale}/${key}`);
   return value;
 };
@@ -20,8 +22,8 @@ const fullLabel = locale === 'ru' ? 'Рассмотреть полный экр�
   {(shot.caption || (!href && (fullDesktop || fullMobile))) && <figcaption class="vet-shot__caption ds-body-sm">
     {shot.caption && <span class:list={[shot.captionDesktop && 'vet-shot__caption--mobile']} data-h="caption">{shot.caption}</span>}
     {shot.captionDesktop && <span class="vet-shot__caption--desktop" data-h="caption">{shot.captionDesktop}</span>}
-    {!href && fullDesktop && <a class="vet-shot__full vet-shot__full--desktop" href={fullDesktop.src} data-astro-reload data-zoom-trigger data-zoom-fixed="true" data-zoom-src={fullDesktop.src} data-zoom-native="true" data-zoom-alt={shot.altFull ?? shot.alt}>{fullLabel}<span aria-hidden="true"> +</span></a>}
-    {!href && fullMobile && <a class="vet-shot__full vet-shot__full--mobile" href={fullMobile.src} data-astro-reload data-zoom-trigger data-zoom-fixed="true" data-zoom-src={fullMobile.src} data-zoom-native="true" data-zoom-alt={shot.altMobile ?? shot.alt}>{fullLabel}<span aria-hidden="true"> +</span></a>}
+    {!href && fullDesktop && <a class="vet-shot__full vet-shot__full--desktop" href={fullDesktop.src} data-h-utility data-astro-reload data-zoom-trigger data-zoom-fixed="true" data-zoom-src={fullDesktop.src} data-zoom-native="true" data-zoom-alt={shot.altFull ?? shot.alt}>{fullLabel}<span aria-hidden="true"> +</span></a>}
+    {!href && fullMobile && <a class="vet-shot__full vet-shot__full--mobile" href={fullMobile.src} data-h-utility data-astro-reload data-zoom-trigger data-zoom-fixed="true" data-zoom-src={fullMobile.src} data-zoom-native="true" data-zoom-alt={shot.altMobile ?? shot.alt}>{fullLabel}<span aria-hidden="true"> +</span></a>}
   </figcaption>}
 </figure>
 <style>

@@ -5,8 +5,8 @@ import PortalCase from '../../components/portal/PortalCase.astro';
 import AgentCase from '../../components/agent/AgentCase.astro';
 import LearnCase from '../../components/learn/LearnCase.astro';
 import VetCase from '../../components/vet/VetCase.astro';
-import { vetCaseEn, assertVetPair } from '../../copy/cases/vet-v2';
-import { vetCaseRu } from '../../copy/ru/cases/vet-v2';
+import { vetPremiumEn, assertVetPremiumPair } from '../../copy/cases/vet-v3';
+import { vetPremiumRu } from '../../copy/ru/cases/vet-v3';
 import { learnCaseEn } from '../../copy/cases/learn-v2';
 import { learnCaseRu } from '../../copy/ru/cases/learn-v2';
 import { agentCaseEn } from '../../copy/cases/agent-ops-v2';
@@ -31,8 +31,8 @@ const site = locale === 'ru' ? siteRu : siteEn;
 const portal = entry.slug === 'partner-portal' ? (locale === 'ru' ? portalCaseRu : portalCaseEn) : undefined;
 const agent = entry.slug === 'agent-ops-console' ? (locale === 'ru' ? agentCaseRu : agentCaseEn) : undefined;
 const learn = entry.slug === 'learn' ? (locale === 'ru' ? learnCaseRu : learnCaseEn) : undefined;
-assertVetPair(vetCaseEn, vetCaseRu);
-const vet = entry.slug === 'vet-clinic' ? (locale === 'ru' ? vetCaseRu : vetCaseEn) : undefined;
+assertVetPremiumPair(vetPremiumEn, vetPremiumRu);
+const vet = entry.slug === 'vet-clinic' ? (locale === 'ru' ? vetPremiumRu : vetPremiumEn) : undefined;
 const nextLink = { label: locale === 'ru' ? 'Следующий кейс' : 'Next case', title: next.story.cover.title, href: nextHref, theme: next.theme };
 ---
 <PageShell title={vet?.meta.title ?? learn?.meta.title ?? agent?.meta.title ?? entry.meta.title} description={vet?.meta.description ?? learn?.meta.description ?? agent?.meta.description ?? entry.meta.description} lang={locale}

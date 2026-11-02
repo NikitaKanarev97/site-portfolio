@@ -1,0 +1,534 @@
+{
+  "en/queue-full-desktop": {
+    "src": "/media/case-vet-v3/en/queue-full-desktop.webp",
+    "width": 2880,
+    "height": 2466,
+    "cssWidth": 1440,
+    "cssHeight": 1233,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/app/vet-day-queue?patient=marsik",
+    "locale": "en",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; complete browser screen, including native prototype chrome and mobile sticky action",
+    "source": "audit/vet-portfolio-premium-v3/product-captures/en-queue-desktop-full.png",
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1233
+    },
+    "sha256": "e75d6ea595147b5fa4867403059bc09f4c02157ef456e686f8a84a12cc652692",
+    "rawSha256": "919fe8b04148190ed6309a55701ffa41632799a199cf7826c5bc66047de2c329"
+  },
+  "en/queue-desktop": {
+    "src": "/media/case-vet-v3/en/queue-desktop.webp",
+    "width": 2234,
+    "height": 964,
+    "cssWidth": 1117,
+    "cssHeight": 482,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/app/vet-day-queue?patient=marsik",
+    "locale": "en",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; unpublished clinical record",
+    "selector": "[data-day-queue]",
+    "clip": {
+      "x": 282,
+      "y": 161,
+      "width": 1117,
+      "height": 482
+    },
+    "source": "audit/vet-portfolio-premium-v3/product-captures/en-queue-desktop-full.png",
+    "sha256": "12096f18464c937ba8021598f437b6242bf06502f4fd05cb549cb521046485df",
+    "rawSha256": "919fe8b04148190ed6309a55701ffa41632799a199cf7826c5bc66047de2c329"
+  },
+  "en/trace-full-desktop": {
+    "src": "/media/case-vet-v3/en/trace-full-desktop.webp",
+    "width": 2880,
+    "height": 3032,
+    "cssWidth": 1440,
+    "cssHeight": 1516,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/app/visit-quick-trace?patient=marsik",
+    "locale": "en",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; complete browser screen, including native prototype chrome and mobile sticky action",
+    "source": "audit/vet-portfolio-premium-v3/product-captures/en-trace-desktop-full.png",
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1516
+    },
+    "sha256": "c8c0426524568889edbd128b322e2480fc9463f83ce8c873ec7432e01aeb4425",
+    "rawSha256": "e9feef8848c2652dd7e308b326805ada36591d940166d2e820b055222e01cfda"
+  },
+  "en/trace-desktop": {
+    "src": "/media/case-vet-v3/en/trace-desktop.webp",
+    "width": 1660,
+    "height": 448,
+    "cssWidth": 830,
+    "cssHeight": 224,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/app/visit-quick-trace?patient=marsik",
+    "locale": "en",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; unpublished clinical record",
+    "selector": "[data-screen-trace]",
+    "clip": {
+      "x": 41,
+      "y": 313,
+      "width": 830,
+      "height": 224
+    },
+    "source": "audit/vet-portfolio-premium-v3/product-captures/en-trace-desktop-full.png",
+    "sha256": "1f575533e8aad60e5af7843244e3dac857112866bc8a20898dba149e77cc628b",
+    "rawSha256": "e9feef8848c2652dd7e308b326805ada36591d940166d2e820b055222e01cfda"
+  },
+  "en/publish-desktop": {
+    "src": "/media/case-vet-v3/en/publish-desktop.webp",
+    "width": 640,
+    "height": 1328,
+    "cssWidth": 320,
+    "cssHeight": 664,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/app/discharge-preview?patient=marsik",
+    "locale": "en",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; unpublished clinical record",
+    "selector": "#discharge-publishing",
+    "clip": {
+      "x": 1008,
+      "y": 309,
+      "width": 320,
+      "height": 664
+    },
+    "source": "audit/vet-portfolio-premium-v3/product-captures/en-publish-desktop-full.png",
+    "sha256": "07db9aa27e4105fe9bf85ed544fab76b1e1b8cd3dac8bfdb9888450a34acd9ca",
+    "rawSha256": "a99ed01e0b715e7644e6888fae9f999e62f3d81ccc0bcce95b3d867e119e57ca"
+  },
+  "en/queue-full-mobile": {
+    "src": "/media/case-vet-v3/en/queue-full-mobile.webp",
+    "width": 780,
+    "height": 4586,
+    "cssWidth": 390,
+    "cssHeight": 2293,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/app/vet-day-queue?patient=marsik",
+    "locale": "en",
+    "viewport": {
+      "width": 390,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; complete browser screen, including native prototype chrome and mobile sticky action",
+    "source": "audit/vet-portfolio-premium-v3/product-captures/en-queue-mobile-full.png",
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 2293
+    },
+    "sha256": "697d200adae891b99c91c9d5ffc88d1c69e04bd4e3c25742a634a762e250186e",
+    "rawSha256": "911d380a4d35d3097e0a3ac4b13d6bd621c7e3439daebfcd9323473503382644"
+  },
+  "en/queue-mobile": {
+    "src": "/media/case-vet-v3/en/queue-mobile.webp",
+    "width": 716,
+    "height": 2178,
+    "cssWidth": 358,
+    "cssHeight": 1089,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/app/vet-day-queue?patient=marsik",
+    "locale": "en",
+    "viewport": {
+      "width": 390,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; unpublished clinical record",
+    "selector": "[data-day-queue]",
+    "clip": {
+      "x": 16,
+      "y": 170,
+      "width": 358,
+      "height": 1089
+    },
+    "source": "audit/vet-portfolio-premium-v3/product-captures/en-queue-mobile-full.png",
+    "sha256": "a3c5ccb1ca5130162aee26689a764724f16521cacca581533a3451ebf03db81f",
+    "rawSha256": "911d380a4d35d3097e0a3ac4b13d6bd621c7e3439daebfcd9323473503382644"
+  },
+  "en/trace-full-mobile": {
+    "src": "/media/case-vet-v3/en/trace-full-mobile.webp",
+    "width": 780,
+    "height": 5298,
+    "cssWidth": 390,
+    "cssHeight": 2649,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/app/visit-quick-trace?patient=marsik",
+    "locale": "en",
+    "viewport": {
+      "width": 390,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; complete browser screen, including native prototype chrome and mobile sticky action",
+    "source": "audit/vet-portfolio-premium-v3/product-captures/en-trace-mobile-full.png",
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 2649
+    },
+    "sha256": "616434c235652160836272b280a7df90ff78223f5941871e52b02a48c08a0104",
+    "rawSha256": "eb8853bf068cd7ea074b76bc8bb3aa1771f91fa93f7945751411676041428144"
+  },
+  "en/trace-mobile": {
+    "src": "/media/case-vet-v3/en/trace-mobile.webp",
+    "width": 716,
+    "height": 704,
+    "cssWidth": 358,
+    "cssHeight": 352,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/app/visit-quick-trace?patient=marsik",
+    "locale": "en",
+    "viewport": {
+      "width": 390,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; unpublished clinical record",
+    "selector": "[data-screen-trace]",
+    "clip": {
+      "x": 16,
+      "y": 352,
+      "width": 358,
+      "height": 352
+    },
+    "source": "audit/vet-portfolio-premium-v3/product-captures/en-trace-mobile-full.png",
+    "sha256": "9c9bcd805a6b34c0a9837a10341c4bedb26048ff6297c84da346368eb91d424f",
+    "rawSha256": "eb8853bf068cd7ea074b76bc8bb3aa1771f91fa93f7945751411676041428144"
+  },
+  "en/publish-mobile": {
+    "src": "/media/case-vet-v3/en/publish-mobile.webp",
+    "width": 716,
+    "height": 1066,
+    "cssWidth": 358,
+    "cssHeight": 533,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/app/discharge-preview?patient=marsik",
+    "locale": "en",
+    "viewport": {
+      "width": 390,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; unpublished clinical record",
+    "selector": "#discharge-publishing",
+    "clip": {
+      "x": 16,
+      "y": 1633,
+      "width": 358,
+      "height": 533
+    },
+    "source": "audit/vet-portfolio-premium-v3/product-captures/en-publish-mobile-full.png",
+    "sha256": "3a5b95956fb36aa7e5986b70bfe3773f8f6f03d028a77c4cc6e6acc32424638a",
+    "rawSha256": "860d4ba1eb177c67186d912fd325f2fbab4239045639bb491b99f56361610055"
+  },
+  "ru/queue-full-desktop": {
+    "src": "/media/case-vet-v3/ru/queue-full-desktop.webp",
+    "width": 2880,
+    "height": 2466,
+    "cssWidth": 1440,
+    "cssHeight": 1233,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/ru/app/vet-day-queue?patient=marsik",
+    "locale": "ru",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; complete browser screen, including native prototype chrome and mobile sticky action",
+    "source": "audit/vet-portfolio-premium-v3/product-captures/ru-queue-desktop-full.png",
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1233
+    },
+    "sha256": "764918f89517dce78b5fc93d948177914966b79361c760b3cc21bc7232411363",
+    "rawSha256": "7fe9f729f0cc08b939dd92111d18e074d61430485386228e22d73cb99ae61c58"
+  },
+  "ru/queue-desktop": {
+    "src": "/media/case-vet-v3/ru/queue-desktop.webp",
+    "width": 2234,
+    "height": 964,
+    "cssWidth": 1117,
+    "cssHeight": 482,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/ru/app/vet-day-queue?patient=marsik",
+    "locale": "ru",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; unpublished clinical record",
+    "selector": "[data-day-queue]",
+    "clip": {
+      "x": 282,
+      "y": 161,
+      "width": 1117,
+      "height": 482
+    },
+    "source": "audit/vet-portfolio-premium-v3/product-captures/ru-queue-desktop-full.png",
+    "sha256": "06bb77dc561442fafcf2cae356440263c733854cb5bfa69402e45d6f4dc70ff2",
+    "rawSha256": "7fe9f729f0cc08b939dd92111d18e074d61430485386228e22d73cb99ae61c58"
+  },
+  "ru/trace-full-desktop": {
+    "src": "/media/case-vet-v3/ru/trace-full-desktop.webp",
+    "width": 2880,
+    "height": 3032,
+    "cssWidth": 1440,
+    "cssHeight": 1516,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/ru/app/visit-quick-trace?patient=marsik",
+    "locale": "ru",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; complete browser screen, including native prototype chrome and mobile sticky action",
+    "source": "audit/vet-portfolio-premium-v3/product-captures/ru-trace-desktop-full.png",
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1516
+    },
+    "sha256": "87f0169830efb548332f60df6c18077be4a0db80299a1c0ecc5b7c3843001417",
+    "rawSha256": "493f8a6b25a0161abbc2d86c5ef9fe7774d027e3209a26990b01f752d01c45f9"
+  },
+  "ru/trace-desktop": {
+    "src": "/media/case-vet-v3/ru/trace-desktop.webp",
+    "width": 1660,
+    "height": 448,
+    "cssWidth": 830,
+    "cssHeight": 224,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/ru/app/visit-quick-trace?patient=marsik",
+    "locale": "ru",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; unpublished clinical record",
+    "selector": "[data-screen-trace]",
+    "clip": {
+      "x": 41,
+      "y": 313,
+      "width": 830,
+      "height": 224
+    },
+    "source": "audit/vet-portfolio-premium-v3/product-captures/ru-trace-desktop-full.png",
+    "sha256": "54e2fb7a76ffc36eb9c11c6dfe9365f92fa45f62ad0871c9cc599317c7c34953",
+    "rawSha256": "493f8a6b25a0161abbc2d86c5ef9fe7774d027e3209a26990b01f752d01c45f9"
+  },
+  "ru/publish-desktop": {
+    "src": "/media/case-vet-v3/ru/publish-desktop.webp",
+    "width": 640,
+    "height": 1410,
+    "cssWidth": 320,
+    "cssHeight": 705,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/ru/app/discharge-preview?patient=marsik",
+    "locale": "ru",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; unpublished clinical record",
+    "selector": "#discharge-publishing",
+    "clip": {
+      "x": 1008,
+      "y": 309,
+      "width": 320,
+      "height": 705
+    },
+    "source": "audit/vet-portfolio-premium-v3/product-captures/ru-publish-desktop-full.png",
+    "sha256": "eef89e063eea737a93d4f807493846880b0595eee86060cceaacef581e4a0bb7",
+    "rawSha256": "4e93078ababcddcf36f6ae4e471cece4f7e49cc877b16dd1f5402788915a3af3"
+  },
+  "ru/queue-full-mobile": {
+    "src": "/media/case-vet-v3/ru/queue-full-mobile.webp",
+    "width": 780,
+    "height": 4586,
+    "cssWidth": 390,
+    "cssHeight": 2293,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/ru/app/vet-day-queue?patient=marsik",
+    "locale": "ru",
+    "viewport": {
+      "width": 390,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; complete browser screen, including native prototype chrome and mobile sticky action",
+    "source": "audit/vet-portfolio-premium-v3/product-captures/ru-queue-mobile-full.png",
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 2293
+    },
+    "sha256": "6f639ce8b61b0b197a235be1f9d31226a2b077c3d63588b107887157e4839a48",
+    "rawSha256": "060a98cfa3a0b392df62e9936aab8a477d41ef61e98035cfefbaa44f4f36fb60"
+  },
+  "ru/queue-mobile": {
+    "src": "/media/case-vet-v3/ru/queue-mobile.webp",
+    "width": 716,
+    "height": 2178,
+    "cssWidth": 358,
+    "cssHeight": 1089,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/ru/app/vet-day-queue?patient=marsik",
+    "locale": "ru",
+    "viewport": {
+      "width": 390,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; unpublished clinical record",
+    "selector": "[data-day-queue]",
+    "clip": {
+      "x": 16,
+      "y": 170,
+      "width": 358,
+      "height": 1089
+    },
+    "source": "audit/vet-portfolio-premium-v3/product-captures/ru-queue-mobile-full.png",
+    "sha256": "6839f92fd973f426e01d5216f6f53bc231256edfd6eeddb66a088637930603e2",
+    "rawSha256": "060a98cfa3a0b392df62e9936aab8a477d41ef61e98035cfefbaa44f4f36fb60"
+  },
+  "ru/trace-full-mobile": {
+    "src": "/media/case-vet-v3/ru/trace-full-mobile.webp",
+    "width": 780,
+    "height": 5430,
+    "cssWidth": 390,
+    "cssHeight": 2715,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/ru/app/visit-quick-trace?patient=marsik",
+    "locale": "ru",
+    "viewport": {
+      "width": 390,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; complete browser screen, including native prototype chrome and mobile sticky action",
+    "source": "audit/vet-portfolio-premium-v3/product-captures/ru-trace-mobile-full.png",
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 2715
+    },
+    "sha256": "bed95abf720fb6cfa44aaef26979ad91e6d70282133fd414dc8cbeba8718f3fc",
+    "rawSha256": "95383c66d1944e0ac87ef0953061156d4fb4dfc01f2610497d1ef2cc24e14d5d"
+  },
+  "ru/trace-mobile": {
+    "src": "/media/case-vet-v3/ru/trace-mobile.webp",
+    "width": 716,
+    "height": 704,
+    "cssWidth": 358,
+    "cssHeight": 352,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/ru/app/visit-quick-trace?patient=marsik",
+    "locale": "ru",
+    "viewport": {
+      "width": 390,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; unpublished clinical record",
+    "selector": "[data-screen-trace]",
+    "clip": {
+      "x": 16,
+      "y": 373,
+      "width": 358,
+      "height": 352
+    },
+    "source": "audit/vet-portfolio-premium-v3/product-captures/ru-trace-mobile-full.png",
+    "sha256": "5173767324bdc089bd845883ef3d60d6c5f702666cac92b8119d661d5b6b6e12",
+    "rawSha256": "95383c66d1944e0ac87ef0953061156d4fb4dfc01f2610497d1ef2cc24e14d5d"
+  },
+  "ru/publish-mobile": {
+    "src": "/media/case-vet-v3/ru/publish-mobile.webp",
+    "width": 716,
+    "height": 1066,
+    "cssWidth": 358,
+    "cssHeight": 533,
+    "sourceCommit": "3835c4ffe224a1077d131d2882878d3d373d56e5",
+    "sourceRepository": "NikitaKanarev97/veterinary-clinic",
+    "route": "/ru/app/discharge-preview?patient=marsik",
+    "locale": "ru",
+    "viewport": {
+      "width": 390,
+      "height": 900,
+      "dpr": 2
+    },
+    "state": "Untouched locale-specific seed; unpublished clinical record",
+    "selector": "#discharge-publishing",
+    "clip": {
+      "x": 16,
+      "y": 1682,
+      "width": 358,
+      "height": 533
+    },
+    "source": "audit/vet-portfolio-premium-v3/product-captures/ru-publish-mobile-full.png",
+    "sha256": "06154e916ee9a5f960b3a1d0404e5cdee0b80508f6aaf60586eff1053ddecfa4",
+    "rawSha256": "fc9cc475d7c5ce54f0d01556c26fbfd4de76a1e358bce6f321c53de06b418d2d"
+  }
+}
