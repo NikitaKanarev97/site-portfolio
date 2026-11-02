@@ -1,5 +1,19 @@
 # Screen: CaseDSSL
 
+## V3.1 corrections · 02.11.2026 (amends V3 below; pending independent review)
+
+Eight review findings fixed inside the V3 composition; no module added, removed or reordered. Evidence: `audit/b2b-portfolio-case-premium-v3/v3.1/`.
+
+| # | Module | Change | Desktop / phone |
+|---|---|---|---|
+| 0 | Hero | phone: role and shipped/rebuild status merge into one `brief` under the rule (`role` and `note` hidden below bp-md), head gap `flow-pair`, top padding `flow-text`; the first actionable queue row now fits the first 390/360/320 screen. Detail inset labelled as a separate recording | desktop unchanged |
+| 01 | Diagnosis | archival cart re-cropped inside the original panel (x 99–2250, y 220–817), no grey gutter; 1076 × 299 CSS | unchanged layout |
+| 02 | Architecture | two routes, per sitemap, intake flows, routes and D007/D029: XLS + Quick order → bracket → Specification (resolved here) → Cart (approved here) → Fulfillment → Checkout; Catalog & search → own labelled line under Specification → Cart. Chevrons on every connector | 7-col grid, two rows; one left trunk, catalog joins as a branch, each intake names its destination |
+| 03 | Source line | frames re-shot at product 8cb6579; rounded cards clipped with 8 px of their own product surface (no corner fragments) | unchanged layout |
+| 06 | Fulfillment | product 8cb6579: selected row = surface + radio + label, no left stripe, no stacked top edge | unchanged layout |
+| 07 | Design system | FulfillmentPlan Selected from Storybook 8cb6579; phone scrollers get a localized state-count cue that also describes the scroller | cue below bp-md only |
+| 08 | Process | each step names its origin (DSSL · original portal / 2026 rebuild) and file + commit as text; the product repo is private, so no public links | unchanged layout |
+
 ## V3 premium case · 02.11.2026 (supersedes V2.1 presentation below; pending independent review)
 
 Same routes, renderer `src/components/portal/PortalCase.astro` (case-scoped), copy `src/copy/cases/partner-portal-v2.ts` / `src/copy/ru/cases/partner-portal-v2.ts`, registry `src/data/partner-portal-v2-media.json`. Shared `PortalShot`, `PortalHome`, tokens and motion runtime unchanged. Evidence: `audit/b2b-portfolio-case-premium-v3/`.

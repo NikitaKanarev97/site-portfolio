@@ -1,0 +1,682 @@
+{
+  "product": "8cb657922991e7b10556eec9a6ded8621c1ded71",
+  "browser": "151.0.7922.34",
+  "clock": "2026-10-30T09:00:00.000Z",
+  "seed": "audit/dashboard-v3/baseline-state.json; rows other than 19 pre-resolved",
+  "entries": [
+    {
+      "name": "en-1280-row-ambiguous",
+      "file": "captures/en-1280-row-ambiguous.png",
+      "sha256": "55f96c6d4e99716234368e0bf4175ded22413736b94c39c907ca95d53f08db90",
+      "box": {
+        "x": 241,
+        "y": 682,
+        "width": 1014,
+        "height": 63
+      },
+      "radius": 0,
+      "clip": "element",
+      "text": "Row 44 · hdd 4tb surveillance\n2 compatible catalog options\nQuantity\n4\npcs\nAmbiguous\nCapacity matches, series differs\nChoose",
+      "stage": "specimen-ambiguous",
+      "locale": "en",
+      "width": 1280,
+      "dpr": 2,
+      "route": "resolution-center",
+      "seed": "baseline fixture, untouched"
+    },
+    {
+      "name": "en-1280-row-missing",
+      "file": "captures/en-1280-row-missing.png",
+      "sha256": "56afdee411ca4c2a21ac71ed7a25ea1e60094c0c85ac5477759486142847339b",
+      "box": {
+        "x": 241,
+        "y": 430,
+        "width": 1014,
+        "height": 63
+      },
+      "radius": 0,
+      "clip": "element",
+      "text": "Row 27 · wall bracket KX-1273ZJ\nNo catalog product selected\nQuantity\n24\npcs\nMissing\nSearch the catalog to map this line\nSearch catalog",
+      "stage": "specimen-missing",
+      "locale": "en",
+      "width": 1280,
+      "dpr": 2,
+      "route": "resolution-center",
+      "seed": "baseline fixture, untouched"
+    },
+    {
+      "name": "en-1280-row-changed",
+      "file": "captures/en-1280-row-changed.png",
+      "sha256": "9a831a3fa99168336a3499388755fd1b4d500d95e5f7a7d1b466bbbc7109d361",
+      "box": {
+        "x": 241,
+        "y": 493,
+        "width": 1014,
+        "height": 63
+      },
+      "radius": 0,
+      "clip": "element",
+      "text": "Row 34 · switch poe 8p KX-3E4510P\nKX-3E4510P-E replaces KX-3E4510P\nQuantity\n6\npcs\nChanged\nManufacturer code superseded in catalog\nReview",
+      "stage": "specimen-changed",
+      "locale": "en",
+      "width": 1280,
+      "dpr": 2,
+      "route": "resolution-center",
+      "seed": "baseline fixture, untouched"
+    },
+    {
+      "name": "en-1280-line-source",
+      "file": "captures/en-1280-line-source.png",
+      "sha256": "af8022a02169d4afd3f86b755a90b211963f225c7b81af9f5ed51f621f4da79a",
+      "box": {
+        "x": 241,
+        "y": 367,
+        "width": 1014,
+        "height": 63
+      },
+      "radius": 0,
+      "clip": "element",
+      "text": "Row 19 · nvr 8ch poe\n2 compatible catalog options\nQuantity\n2\npcs\nAmbiguous\nBoth candidates are PoE, 8 channel\nChoose",
+      "stage": "source"
+    },
+    {
+      "name": "en-1280-line-open",
+      "file": "captures/en-1280-line-open.png",
+      "sha256": "435c88712d11fffa58aced807d6400cec9e1b7b6085b51c5b140391e8b1e4f43",
+      "box": {
+        "x": 253,
+        "y": 379,
+        "width": 990,
+        "height": 406
+      },
+      "radius": 8,
+      "clip": {
+        "x": 245,
+        "y": 371,
+        "width": 1006,
+        "height": 422
+      },
+      "text": "Row 19 · nvr 8ch poe\n2 compatible catalog options\nQuantity\n2\npcs\nAmbiguous\nBoth candidates are PoE, 8 channel\nChoose\nChoose a catalog product for line 19\nFrom the file: “nvr 8ch poe” · 2 pcs\n\nCompare the specifications, then confirm one product.\n\nProduct\nDetection\nStorage bays\nKX-7608NXI-K2\n8-channel NVR with object detection\nDetection\nObject detection on all channels\nStorage bays\n2 HDD bays\nKX-7608NI-K2\n8-channel NVR, base series\nDetection\nNo object detection\nStorage bays\n2 HDD bays\nApply to line 19\nCancel\nSelect a product to continue.",
+      "stage": "open",
+      "apply": {
+        "text": "Apply to line 19",
+        "disabled": true
+      }
+    },
+    {
+      "name": "en-1280-line-choose",
+      "file": "captures/en-1280-line-choose.png",
+      "sha256": "16f925c5338f62d7bbd371d6244375bc6d3cfacb65d535123759032aaf4ca480",
+      "box": {
+        "x": 253,
+        "y": 379,
+        "width": 990,
+        "height": 426
+      },
+      "radius": 8,
+      "clip": {
+        "x": 245,
+        "y": 371,
+        "width": 1006,
+        "height": 442
+      },
+      "text": "Row 19 · nvr 8ch poe\n2 compatible catalog options\nQuantity\n2\npcs\nAmbiguous\nBoth candidates are PoE, 8 channel\nChoose\nChoose a catalog product for line 19\nFrom the file: “nvr 8ch poe” · 2 pcs\n\nCompare the specifications, then confirm one product.\n\nProduct\nDetection\nStorage bays\nKX-7608NXI-K2\n8-channel NVR with object detection\nSelected\nDetection\nObject detection on all channels\nStorage bays\n2 HDD bays\nKX-7608NI-K2\n8-channel NVR, base series\nDetection\nNo object detection\nStorage bays\n2 HDD bays\nApply to line 19\nCancel",
+      "stage": "choose",
+      "apply": {
+        "text": "Apply to line 19",
+        "disabled": false
+      },
+      "firstRadioChecked": true
+    },
+    {
+      "name": "en-1280-line-confirmed",
+      "file": "captures/en-1280-line-confirmed.png",
+      "sha256": "f19895258bbb240218f784c7b5541f1e0c0ee3f147098085a0a0190241de2205",
+      "box": {
+        "x": 241,
+        "y": 461,
+        "width": 1014,
+        "height": 77
+      },
+      "radius": 0,
+      "clip": "element",
+      "text": "Row 19 · nvr 8ch poe\n↳ KX-7608NXI-K2 · 8-channel NVR with object detection\nQuantity\n2\npcs\nConfirmed\nwas Ambiguous\nCandidate chosen by the buyer\nUndo",
+      "stage": "confirmed",
+      "tab": "Resolved · 48"
+    },
+    {
+      "name": "en-1280-line-cart",
+      "file": "captures/en-1280-line-cart.png",
+      "sha256": "0f012e3185ced5090f15a662258478b1ca99bbe713457d7c2b957d8b338af92b",
+      "box": {
+        "x": 241,
+        "y": 451,
+        "width": 1014,
+        "height": 98
+      },
+      "radius": 0,
+      "clip": "element",
+      "text": "8-channel NVR with object detection\nSKU KX-7608NXI-K2 · source row 19\n₽34,900\n7 pcs · Moscow DC\nShips in 1–2 days\n₽69,800",
+      "stage": "cart",
+      "route": "/cart"
+    },
+    {
+      "name": "en-390-row-ambiguous",
+      "file": "captures/en-390-row-ambiguous.png",
+      "sha256": "5fd0dd760c7c97be1ec13d5130ec22139a294089c62c5e6c558e48e70cea42c4",
+      "box": {
+        "x": 16,
+        "y": 943,
+        "width": 358,
+        "height": 154
+      },
+      "radius": 8,
+      "clip": {
+        "x": 8,
+        "y": 935,
+        "width": 374,
+        "height": 170
+      },
+      "text": "Row 44 · hdd 4tb surveillance\n2 compatible catalog options\nQuantity\n4\npcs\nAmbiguous\nCapacity matches, series differs\nChoose",
+      "stage": "specimen-ambiguous",
+      "locale": "en",
+      "width": 390,
+      "dpr": 2,
+      "route": "resolution-center",
+      "seed": "baseline fixture, untouched"
+    },
+    {
+      "name": "en-390-row-missing",
+      "file": "captures/en-390-row-missing.png",
+      "sha256": "372398fadf00dfd9ded0faad3ff76035ac043f91dd5b195c39e5bda553f5963d",
+      "box": {
+        "x": 16,
+        "y": 537,
+        "width": 358,
+        "height": 154
+      },
+      "radius": 8,
+      "clip": {
+        "x": 8,
+        "y": 529,
+        "width": 374,
+        "height": 170
+      },
+      "text": "Row 27 · wall bracket KX-1273ZJ\nNo catalog product selected\nQuantity\n24\npcs\nMissing\nSearch the catalog to map this line\nSearch catalog",
+      "stage": "specimen-missing",
+      "locale": "en",
+      "width": 390,
+      "dpr": 2,
+      "route": "resolution-center",
+      "seed": "baseline fixture, untouched"
+    },
+    {
+      "name": "en-390-row-changed",
+      "file": "captures/en-390-row-changed.png",
+      "sha256": "87cb4004c112ed68f6c9b09ebc5465661217fde0cf7990d9b6e3fe8d9a0ee9ee",
+      "box": {
+        "x": 16,
+        "y": 623,
+        "width": 358,
+        "height": 154
+      },
+      "radius": 8,
+      "clip": {
+        "x": 8,
+        "y": 615,
+        "width": 374,
+        "height": 170
+      },
+      "text": "Row 34 · switch poe 8p KX-3E4510P\nKX-3E4510P-E replaces KX-3E4510P\nQuantity\n6\npcs\nChanged\nManufacturer code superseded in catalog\nReview",
+      "stage": "specimen-changed",
+      "locale": "en",
+      "width": 390,
+      "dpr": 2,
+      "route": "resolution-center",
+      "seed": "baseline fixture, untouched"
+    },
+    {
+      "name": "en-390-line-source",
+      "file": "captures/en-390-line-source.png",
+      "sha256": "065869974b280782f323b6d86f5c3a8eeec0bc72184efcf1142ebe2409df4387",
+      "box": {
+        "x": 16,
+        "y": 371,
+        "width": 358,
+        "height": 154
+      },
+      "radius": 8,
+      "clip": {
+        "x": 8,
+        "y": 363,
+        "width": 374,
+        "height": 170
+      },
+      "text": "Row 19 · nvr 8ch poe\n2 compatible catalog options\nQuantity\n2\npcs\nAmbiguous\nBoth candidates are PoE, 8 channel\nChoose",
+      "stage": "source"
+    },
+    {
+      "name": "en-390-line-open",
+      "file": "captures/en-390-line-open.png",
+      "sha256": "aeac6509d792f3e672795ce2730425533a53568c186992c4ca939b3861f3c4b3",
+      "box": {
+        "x": 16,
+        "y": 371,
+        "width": 358,
+        "height": 658
+      },
+      "radius": 8,
+      "clip": {
+        "x": 8,
+        "y": 363,
+        "width": 374,
+        "height": 674
+      },
+      "text": "Row 19 · nvr 8ch poe\n2 compatible catalog options\nQuantity\n2\npcs\nAmbiguous\nBoth candidates are PoE, 8 channel\nChoose\nChoose a catalog product for line 19\nFrom the file: “nvr 8ch poe” · 2 pcs\n\nCompare the specifications, then confirm one product.\n\nKX-7608NXI-K2\n8-channel NVR with object detection\nDetection\nObject detection on all channels\nStorage bays\n2 HDD bays\nKX-7608NI-K2\n8-channel NVR, base series\nDetection\nNo object detection\nStorage bays\n2 HDD bays\nApply to line 19\nCancel\nSelect a product to continue.",
+      "stage": "open",
+      "apply": {
+        "text": "Apply to line 19",
+        "disabled": true
+      }
+    },
+    {
+      "name": "en-390-line-choose",
+      "file": "captures/en-390-line-choose.png",
+      "sha256": "c67f85968620001df355076c306a205e498cbf9f1ad1e3c5715629bde5d33ccd",
+      "box": {
+        "x": 16,
+        "y": 371,
+        "width": 358,
+        "height": 652
+      },
+      "radius": 8,
+      "clip": {
+        "x": 8,
+        "y": 363,
+        "width": 374,
+        "height": 668
+      },
+      "text": "Row 19 · nvr 8ch poe\n2 compatible catalog options\nQuantity\n2\npcs\nAmbiguous\nBoth candidates are PoE, 8 channel\nChoose\nChoose a catalog product for line 19\nFrom the file: “nvr 8ch poe” · 2 pcs\n\nCompare the specifications, then confirm one product.\n\nKX-7608NXI-K2\n8-channel NVR with object detection\nSelected\nDetection\nObject detection on all channels\nStorage bays\n2 HDD bays\nKX-7608NI-K2\n8-channel NVR, base series\nDetection\nNo object detection\nStorage bays\n2 HDD bays\nApply to line 19\nCancel",
+      "stage": "choose",
+      "apply": {
+        "text": "Apply to line 19",
+        "disabled": false
+      },
+      "firstRadioChecked": true
+    },
+    {
+      "name": "en-390-line-confirmed",
+      "file": "captures/en-390-line-confirmed.png",
+      "sha256": "8cb17b29fa013b4d9d5f37202d6499bb80469ff6b204465b290dd02c04887e16",
+      "box": {
+        "x": 16,
+        "y": 615,
+        "width": 358,
+        "height": 170
+      },
+      "radius": 8,
+      "clip": {
+        "x": 8,
+        "y": 607,
+        "width": 374,
+        "height": 186
+      },
+      "text": "Row 19 · nvr 8ch poe\n↳ KX-7608NXI-K2 · 8-channel NVR with object detection\nQuantity\n2\npcs\nConfirmed\nwas Ambiguous\nCandidate chosen by the buyer\nUndo",
+      "stage": "confirmed",
+      "tab": "Resolved · 48"
+    },
+    {
+      "name": "en-390-line-cart",
+      "file": "captures/en-390-line-cart.png",
+      "sha256": "9d6cb5f9fd771ff7d35657f18ce52db7873fa72f4eab3d9d63e1cc6b8e9bb164",
+      "box": {
+        "x": 16,
+        "y": 580,
+        "width": 358,
+        "height": 240
+      },
+      "radius": 0,
+      "clip": "element",
+      "text": "8-channel NVR with object detection\nSKU KX-7608NXI-K2 · source row 19\nPRICE\n₽34,900\nper piece · net of VAT\nAVAILABILITY\n7 pcs · Moscow DC\nShips in 1–2 days\nLINE TOTAL\n₽69,800",
+      "stage": "cart",
+      "route": "/cart"
+    },
+    {
+      "name": "ru-1280-row-ambiguous",
+      "file": "captures/ru-1280-row-ambiguous.png",
+      "sha256": "020b82c2e45be9b95371d4353cbfb26ea83e2bd661c410a289b86d4a176f3597",
+      "box": {
+        "x": 241,
+        "y": 724,
+        "width": 1014,
+        "height": 63
+      },
+      "radius": 0,
+      "clip": "element",
+      "text": "Строка 44 · диск видеонаблюдения 4 ТБ\n2 совместимых варианта в каталоге\nКоличество\n4\nшт.\nНеоднозначно\nОбъём совпадает, серия отличается\nВыбрать",
+      "stage": "specimen-ambiguous",
+      "locale": "ru",
+      "width": 1280,
+      "dpr": 2,
+      "route": "ru/resolution-center",
+      "seed": "baseline fixture, untouched"
+    },
+    {
+      "name": "ru-1280-row-missing",
+      "file": "captures/ru-1280-row-missing.png",
+      "sha256": "d92c35628048184642eb017609be48f09e2f575c4c9c3682ff109a0f1ddd48c1",
+      "box": {
+        "x": 241,
+        "y": 448,
+        "width": 1014,
+        "height": 75
+      },
+      "radius": 0,
+      "clip": "element",
+      "text": "Строка 27 · wall bracket KX-1273ZJ\nТовар из каталога не выбран\nКоличество\n24\nшт.\nНет товара\nНайдите товар в каталоге для этой строки\nИскать в каталоге",
+      "stage": "specimen-missing",
+      "locale": "ru",
+      "width": 1280,
+      "dpr": 2,
+      "route": "ru/resolution-center",
+      "seed": "baseline fixture, untouched"
+    },
+    {
+      "name": "ru-1280-row-changed",
+      "file": "captures/ru-1280-row-changed.png",
+      "sha256": "055bebd3dfd8010cf301dd6a819c6e17c2b1cb9288e7e7c7fbc6b2e814798c60",
+      "box": {
+        "x": 241,
+        "y": 523,
+        "width": 1014,
+        "height": 63
+      },
+      "radius": 0,
+      "clip": "element",
+      "text": "Строка 34 · switch poe 8p KX-3E4510P\nKX-3E4510P-E заменяет KX-3E4510P\nКоличество\n6\nшт.\nИзменено\nКод производителя заменён в каталоге\nПроверить",
+      "stage": "specimen-changed",
+      "locale": "ru",
+      "width": 1280,
+      "dpr": 2,
+      "route": "ru/resolution-center",
+      "seed": "baseline fixture, untouched"
+    },
+    {
+      "name": "ru-1280-line-source",
+      "file": "captures/ru-1280-line-source.png",
+      "sha256": "3947d2f4a5642f908f9b0101b94dffeb85e4e6daa2973f24a6120ca8422ac559",
+      "box": {
+        "x": 241,
+        "y": 385,
+        "width": 1014,
+        "height": 63
+      },
+      "radius": 0,
+      "clip": "element",
+      "text": "Строка 19 · nvr 8ch poe\n2 совместимых варианта в каталоге\nКоличество\n2\nшт.\nНеоднозначно\nОба кандидата — PoE на 8 каналов\nВыбрать",
+      "stage": "source"
+    },
+    {
+      "name": "ru-1280-line-open",
+      "file": "captures/ru-1280-line-open.png",
+      "sha256": "d6252d9da09a7f8c5ef7bc2d0fb09089c7ea32cc39cc927596b6ca580bd8ef64",
+      "box": {
+        "x": 253,
+        "y": 397,
+        "width": 990,
+        "height": 406
+      },
+      "radius": 8,
+      "clip": {
+        "x": 245,
+        "y": 389,
+        "width": 1006,
+        "height": 422
+      },
+      "text": "Строка 19 · nvr 8ch poe\n2 совместимых варианта в каталоге\nКоличество\n2\nшт.\nНеоднозначно\nОба кандидата — PoE на 8 каналов\nВыбрать\nВыберите товар каталога для строки 19\nИз файла: «nvr 8ch poe» · 2 шт.\n\nСравните характеристики и подтвердите один товар.\n\nТовар\nРаспознавание\nОтсеки дисков\nKX-7608NXI-K2\n8-канальный NVR с распознаванием объектов\nРаспознавание\nРаспознавание на всех каналах\nОтсеки дисков\n2 отсека HDD\nKX-7608NI-K2\n8-канальный NVR базовой серии\nРаспознавание\nБез распознавания\nОтсеки дисков\n2 отсека HDD\nПрименить к строке 19\nОтмена\nВыберите товар, чтобы продолжить.",
+      "stage": "open",
+      "apply": {
+        "text": "Применить к строке 19",
+        "disabled": true
+      }
+    },
+    {
+      "name": "ru-1280-line-choose",
+      "file": "captures/ru-1280-line-choose.png",
+      "sha256": "3bcf237ae287f757d26ab9c7d115382f830b82ebc3054545d8d77cd03b968126",
+      "box": {
+        "x": 253,
+        "y": 397,
+        "width": 990,
+        "height": 426
+      },
+      "radius": 8,
+      "clip": {
+        "x": 245,
+        "y": 389,
+        "width": 1006,
+        "height": 442
+      },
+      "text": "Строка 19 · nvr 8ch poe\n2 совместимых варианта в каталоге\nКоличество\n2\nшт.\nНеоднозначно\nОба кандидата — PoE на 8 каналов\nВыбрать\nВыберите товар каталога для строки 19\nИз файла: «nvr 8ch poe» · 2 шт.\n\nСравните характеристики и подтвердите один товар.\n\nТовар\nРаспознавание\nОтсеки дисков\nKX-7608NXI-K2\n8-канальный NVR с распознаванием объектов\nВыбрано\nРаспознавание\nРаспознавание на всех каналах\nОтсеки дисков\n2 отсека HDD\nKX-7608NI-K2\n8-канальный NVR базовой серии\nРаспознавание\nБез распознавания\nОтсеки дисков\n2 отсека HDD\nПрименить к строке 19\nОтмена",
+      "stage": "choose",
+      "apply": {
+        "text": "Применить к строке 19",
+        "disabled": false
+      },
+      "firstRadioChecked": true
+    },
+    {
+      "name": "ru-1280-line-confirmed",
+      "file": "captures/ru-1280-line-confirmed.png",
+      "sha256": "b9bf58617ef5e4a05de39e185436d07ea4fd569e97c7f1aa6b852870ec09072d",
+      "box": {
+        "x": 241,
+        "y": 461,
+        "width": 1014,
+        "height": 77
+      },
+      "radius": 0,
+      "clip": "element",
+      "text": "Строка 19 · nvr 8ch poe\n↳ KX-7608NXI-K2 · 8-канальный NVR с распознаванием объектов\nКоличество\n2\nшт.\nПодтверждено\nбыло: неоднозначно\nКандидат выбран покупателем\nОтменить",
+      "stage": "confirmed",
+      "tab": "Разобрано · 48"
+    },
+    {
+      "name": "ru-1280-line-cart",
+      "file": "captures/ru-1280-line-cart.png",
+      "sha256": "e7a0e921f73fbaafda4a4e83b428c0c392a0e83fff8324591d4bdc1fb4d66b31",
+      "box": {
+        "x": 241,
+        "y": 451,
+        "width": 1014,
+        "height": 98
+      },
+      "radius": 0,
+      "clip": "element",
+      "text": "8-канальный NVR с распознаванием объектов\nSKU KX-7608NXI-K2 · исходная строка 19\n34 900 ₽\n7 шт. · РЦ Москва\nОтправка через 1–2 дня\n69 800 ₽",
+      "stage": "cart",
+      "route": "/ru/cart"
+    },
+    {
+      "name": "ru-390-row-ambiguous",
+      "file": "captures/ru-390-row-ambiguous.png",
+      "sha256": "a77a0b822465db3f1faf81ca28a2b62d171b0bb0337bc4f48a9c2bc3bf7bda57",
+      "box": {
+        "x": 16,
+        "y": 923,
+        "width": 358,
+        "height": 174
+      },
+      "radius": 8,
+      "clip": {
+        "x": 8,
+        "y": 915,
+        "width": 374,
+        "height": 190
+      },
+      "text": "Строка 44 · диск видеонаблюдения 4 ТБ\n2 совместимых варианта в каталоге\nКоличество\n4\nшт.\nНеоднозначно\nОбъём совпадает, серия отличается\nВыбрать",
+      "stage": "specimen-ambiguous",
+      "locale": "ru",
+      "width": 390,
+      "dpr": 2,
+      "route": "ru/resolution-center",
+      "seed": "baseline fixture, untouched"
+    },
+    {
+      "name": "ru-390-row-missing",
+      "file": "captures/ru-390-row-missing.png",
+      "sha256": "b63efa7885c436667dbf4f9fe4445e876dc10951bd68493fc1dafadb2ceef287",
+      "box": {
+        "x": 16,
+        "y": 573,
+        "width": 358,
+        "height": 154
+      },
+      "radius": 8,
+      "clip": {
+        "x": 8,
+        "y": 565,
+        "width": 374,
+        "height": 170
+      },
+      "text": "Строка 27 · wall bracket KX-1273ZJ\nТовар из каталога не выбран\nКоличество\n24\nшт.\nНет товара\nНайдите товар в каталоге для этой строки\nИскать в каталоге",
+      "stage": "specimen-missing",
+      "locale": "ru",
+      "width": 390,
+      "dpr": 2,
+      "route": "ru/resolution-center",
+      "seed": "baseline fixture, untouched"
+    },
+    {
+      "name": "ru-390-row-changed",
+      "file": "captures/ru-390-row-changed.png",
+      "sha256": "ca5f13bd12d07e47e2aede6fa205f7bab5545a083c9dab5aa0cf606b63b681c9",
+      "box": {
+        "x": 16,
+        "y": 623,
+        "width": 358,
+        "height": 154
+      },
+      "radius": 8,
+      "clip": {
+        "x": 8,
+        "y": 615,
+        "width": 374,
+        "height": 170
+      },
+      "text": "Строка 34 · switch poe 8p KX-3E4510P\nKX-3E4510P-E заменяет KX-3E4510P\nКоличество\n6\nшт.\nИзменено\nКод производителя заменён в каталоге\nПроверить",
+      "stage": "specimen-changed",
+      "locale": "ru",
+      "width": 390,
+      "dpr": 2,
+      "route": "ru/resolution-center",
+      "seed": "baseline fixture, untouched"
+    },
+    {
+      "name": "ru-390-line-source",
+      "file": "captures/ru-390-line-source.png",
+      "sha256": "8e1bf2734efa46245574ec97df6e96813392d7703eb868646f59d252300ee317",
+      "box": {
+        "x": 16,
+        "y": 407,
+        "width": 358,
+        "height": 154
+      },
+      "radius": 8,
+      "clip": {
+        "x": 8,
+        "y": 399,
+        "width": 374,
+        "height": 170
+      },
+      "text": "Строка 19 · nvr 8ch poe\n2 совместимых варианта в каталоге\nКоличество\n2\nшт.\nНеоднозначно\nОба кандидата — PoE на 8 каналов\nВыбрать",
+      "stage": "source"
+    },
+    {
+      "name": "ru-390-line-open",
+      "file": "captures/ru-390-line-open.png",
+      "sha256": "c373d9ece121dcd781657958ac333d020042107c559339826e0e97d1a53a08f3",
+      "box": {
+        "x": 16,
+        "y": 407,
+        "width": 358,
+        "height": 700
+      },
+      "radius": 8,
+      "clip": {
+        "x": 8,
+        "y": 399,
+        "width": 374,
+        "height": 716
+      },
+      "text": "Строка 19 · nvr 8ch poe\n2 совместимых варианта в каталоге\nКоличество\n2\nшт.\nНеоднозначно\nОба кандидата — PoE на 8 каналов\nВыбрать\nВыберите товар каталога для строки 19\nИз файла: «nvr 8ch poe» · 2 шт.\n\nСравните характеристики и подтвердите один товар.\n\nKX-7608NXI-K2\n8-канальный NVR с распознаванием объектов\nРаспознавание\nРаспознавание на всех каналах\nОтсеки дисков\n2 отсека HDD\nKX-7608NI-K2\n8-канальный NVR базовой серии\nРаспознавание\nБез распознавания\nОтсеки дисков\n2 отсека HDD\nПрименить к строке 19\nОтмена\nВыберите товар, чтобы продолжить.",
+      "stage": "open",
+      "apply": {
+        "text": "Применить к строке 19",
+        "disabled": true
+      }
+    },
+    {
+      "name": "ru-390-line-choose",
+      "file": "captures/ru-390-line-choose.png",
+      "sha256": "e60438693a73210dd23ee4965f05de0c611643527c27500968a99dc8cf964b42",
+      "box": {
+        "x": 16,
+        "y": 407,
+        "width": 358,
+        "height": 694
+      },
+      "radius": 8,
+      "clip": {
+        "x": 8,
+        "y": 399,
+        "width": 374,
+        "height": 710
+      },
+      "text": "Строка 19 · nvr 8ch poe\n2 совместимых варианта в каталоге\nКоличество\n2\nшт.\nНеоднозначно\nОба кандидата — PoE на 8 каналов\nВыбрать\nВыберите товар каталога для строки 19\nИз файла: «nvr 8ch poe» · 2 шт.\n\nСравните характеристики и подтвердите один товар.\n\nKX-7608NXI-K2\n8-канальный NVR с распознаванием объектов\nВыбрано\nРаспознавание\nРаспознавание на всех каналах\nОтсеки дисков\n2 отсека HDD\nKX-7608NI-K2\n8-канальный NVR базовой серии\nРаспознавание\nБез распознавания\nОтсеки дисков\n2 отсека HDD\nПрименить к строке 19\nОтмена",
+      "stage": "choose",
+      "apply": {
+        "text": "Применить к строке 19",
+        "disabled": false
+      },
+      "firstRadioChecked": true
+    },
+    {
+      "name": "ru-390-line-confirmed",
+      "file": "captures/ru-390-line-confirmed.png",
+      "sha256": "78343f726e19907a665c50808d7b9d203cfeaf543cfafae3e3e4fef844acfc4f",
+      "box": {
+        "x": 16,
+        "y": 606,
+        "width": 358,
+        "height": 188
+      },
+      "radius": 8,
+      "clip": {
+        "x": 8,
+        "y": 598,
+        "width": 374,
+        "height": 204
+      },
+      "text": "Строка 19 · nvr 8ch poe\n↳ KX-7608NXI-K2 · 8-канальный NVR с распознаванием объектов\nКоличество\n2\nшт.\nПодтверждено\nбыло: неоднозначно\nКандидат выбран покупателем\nОтменить",
+      "stage": "confirmed",
+      "tab": "Разобрано · 48"
+    },
+    {
+      "name": "ru-390-line-cart",
+      "file": "captures/ru-390-line-cart.png",
+      "sha256": "297eadf3a64e3fddbe1c97d190fbbec7bde84f69cf799e3821dd4f386f0ed5e6",
+      "box": {
+        "x": 16,
+        "y": 572,
+        "width": 358,
+        "height": 256
+      },
+      "radius": 0,
+      "clip": "element",
+      "text": "8-канальный NVR с распознаванием объектов\nSKU KX-7608NXI-K2 · исходная строка 19\nЦЕНА\n34 900 ₽\nза штуку · без НДС\nНАЛИЧИЕ\n7 шт. · РЦ Москва\nОтправка через 1–2 дня\nИТОГО ПО СТРОКЕ\n69 800 ₽",
+      "stage": "cart",
+      "route": "/ru/cart"
+    }
+  ]
+}

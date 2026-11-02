@@ -30,7 +30,7 @@ const removed = [...b].filter(f => !a.has(f));
 const unexpected = html.changed.filter(f => !portal(f)).concat(html.added);
 const report = { before, after, htmlSame: html.same.length, htmlChanged: html.changed, unexpectedHtml: unexpected, assetsAdded: assets.added, assetsChanged: assets.changed, removed };
 mkdirSync('audit/b2b-portfolio-case-premium-v3/logs', { recursive: true });
-writeFileSync('audit/b2b-portfolio-case-premium-v3/logs/build-scope.json', `${JSON.stringify(report, null, 2)}\n`);
+writeFileSync(`${process.env.OUT ?? 'audit/b2b-portfolio-case-premium-v3'}/logs/build-scope.json`, `${JSON.stringify(report, null, 2)}\n`);
 console.log({ htmlSame: html.same.length, htmlChanged: html.changed, unexpectedHtml: unexpected, assetsChanged: assets.changed, assetsAdded: assets.added.filter(f => !f.includes('partner-portal/v3/')), v3Media: assets.added.filter(f => f.includes('partner-portal/v3/')).length, removed });
 
 /* Case pages share the [slug] route, and Astro inlines every route component's
@@ -53,5 +53,5 @@ const shared = html.changed.filter(f => !portal(f)).map(f => {
   return { page: f, markupIdentical: strip(A) === strip(B), cssOnlyInAfterNonPortal: onlyA.filter(r => !portalRule(r)), cssOnlyInBeforeNonPortal: onlyB.filter(r => !portalRule(r)) };
 });
 report.sharedRouteCheck = { portalScopes: PORTAL_SCOPES, pages: shared };
-writeFileSync('audit/b2b-portfolio-case-premium-v3/logs/build-scope.json', `${JSON.stringify(report, null, 2)}\n`);
+writeFileSync(`${process.env.OUT ?? 'audit/b2b-portfolio-case-premium-v3'}/logs/build-scope.json`, `${JSON.stringify(report, null, 2)}\n`);
 console.log(JSON.stringify(report.sharedRouteCheck.pages.map(p => ({ page: p.page, markupIdentical: p.markupIdentical, nonPortalCssDiff: p.cssOnlyInAfterNonPortal.length + p.cssOnlyInBeforeNonPortal.length }))));

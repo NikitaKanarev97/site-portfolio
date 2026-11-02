@@ -17,20 +17,31 @@
  * Separately, rows 44 (Ambiguous), 27 (Missing) and 34 (Changed) of the untouched baseline queue
  * are shot as ResolutionRow specimens for the design-system section.
  *
- * Element screenshots only (no clip rectangles, no injected CSS, no DOM edits).
- * Raw PNGs + manifest go to audit/b2b-portfolio-case-premium-v3/captures/.
+ * No injected CSS, no DOM edits. Square elements are element screenshots. A
+ * rounded element (the expanded decision card; every card on phones) is clipped
+ * to its box plus FRAME px of the product surface around it: V3.1 found that an
+ * element screenshot of a rounded box keeps four corner fragments of whatever
+ * sits behind it, which read as white corners on the case plate. The product
+ * keeps 12 px of plain surface around every rounded card (margin of the
+ * expanded card at 1280, queue gap at 390); FRAME takes 8 of them, because at
+ * 1280 the queue's own rounded bottom corner sits on the 12 px line. Every edge
+ * pixel of the clip is asserted to be one uniform product background — no
+ * neighbouring UI, no corner fragments; a rejected frame is kept as *.rejected.png.
+ * Raw PNGs + manifest go to OUT (V3: audit/b2b-portfolio-case-premium-v3/captures/).
  */
 import { createHash } from 'node:crypto';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { createRequire } from 'node:module';
 
+import sharp from 'sharp';
 const require = createRequire('D:/Claude-projects/b2b-dssl/package.json');
 const { chromium } = require('playwright');
 
-export const PRODUCT_COMMIT = '36be1d80277c536b94424ac49aa5ff82662d8ee7';
+export const PRODUCT_COMMIT = process.env.PRODUCT_COMMIT ?? '36be1d80277c536b94424ac49aa5ff82662d8ee7';
 const PRODUCT_ROOT = process.env.PRODUCT_ROOT ?? 'D:/Claude-projects/sp-b2b-source-ui-v11';
 const ORIGIN = process.env.PRODUCT_ORIGIN ?? 'http://127.0.0.1:5210/b2b';
-const OUT = 'audit/b2b-portfolio-case-premium-v3/captures';
+const OUT = process.env.OUT ?? 'audit/b2b-portfolio-case-premium-v3/captures';
+const FRAME = 8;
 const KEY = 'b2b-dssl.state.v1';
 const CLOCK = '2026-10-30T09:00:00.000Z';
 const ROW = 19;
@@ -48,10 +59,34 @@ async function shoot(page, locator, name, meta) {
   await page.mouse.move(0, 0);
   // decode() of an off-screen lazy image never settles: only wait for the target.
   await locator.evaluate(async el => { for (const img of el.querySelectorAll('img')) { img.loading = 'eager'; await img.decode().catch(() => {}); } });
-  const buffer = await locator.screenshot({ animations: 'disabled' });
+  const radius = await locator.evaluate(el => parseFloat(getComputedStyle(el).borderTopLeftRadius) || 0);
   const box = await locator.boundingBox();
+  let buffer, clip;
+  if (radius) {
+    clip = { x: box.x - FRAME, y: box.y - FRAME, width: box.width + 2 * FRAME, height: box.height + 2 * FRAME };
+    buffer = await page.screenshot({ clip, animations: 'disabled' });
+    await assertPlainEdge(buffer, name).catch(async e => { await writeFile(`${OUT}/${name}.rejected.png`, buffer); throw e; });
+  } else {
+    buffer = await locator.screenshot({ animations: 'disabled' });
+  }
   await writeFile(`${OUT}/${name}.png`, buffer);
-  manifest.entries.push({ name, file: `captures/${name}.png`, sha256: sha(buffer), box, text: (await locator.innerText()).trim(), ...meta });
+  manifest.entries.push({ name, file: `captures/${name}.png`, sha256: sha(buffer), box, radius, clip: clip ?? 'element', text: (await locator.innerText()).trim(), ...meta });
+}
+
+/** Every pixel of the outer 2 device px ring must be the same product surface. */
+async function assertPlainEdge(buffer, name) {
+  const { data, info } = await sharp(buffer).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+  const { width: w, height: h } = info;
+  const at = (x, y) => { const i = (y * w + x) * 3; return [data[i], data[i + 1], data[i + 2]]; };
+  const ref = at(0, 0);
+  for (let ring = 0; ring < 2; ring++) {
+    for (let x = 0; x < w; x++) for (const y of [ring, h - 1 - ring]) check(x, y);
+    for (let y = 0; y < h; y++) for (const x of [ring, w - 1 - ring]) check(x, y);
+  }
+  function check(x, y) {
+    const p = at(x, y);
+    if (p.some((v, i) => Math.abs(v - ref[i]) > 2)) throw new Error(`${name}: edge pixel ${x},${y} ${p} differs from surface ${ref}`);
+  }
 }
 
 try {

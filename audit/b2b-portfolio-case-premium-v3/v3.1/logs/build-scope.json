@@ -1,0 +1,110 @@
+{
+  "before": ".tmp/v31-before-dist",
+  "after": "dist",
+  "htmlSame": 173,
+  "htmlChanged": [
+    "ru/work/agent-ops-console/index.html",
+    "ru/work/learn/index.html",
+    "ru/work/partner-portal/index.html",
+    "ru/work/pawly/index.html",
+    "ru/work/vet-clinic/index.html",
+    "work/agent-ops-console/index.html",
+    "work/learn/index.html",
+    "work/partner-portal/index.html",
+    "work/pawly/index.html",
+    "work/vet-clinic/index.html"
+  ],
+  "unexpectedHtml": [
+    "ru/work/agent-ops-console/index.html",
+    "ru/work/learn/index.html",
+    "ru/work/pawly/index.html",
+    "ru/work/vet-clinic/index.html",
+    "work/agent-ops-console/index.html",
+    "work/learn/index.html",
+    "work/pawly/index.html",
+    "work/vet-clinic/index.html"
+  ],
+  "assetsAdded": [],
+  "assetsChanged": [
+    "media/rebuild/partner-portal/v2/en/fulfillment-1280.webp",
+    "media/rebuild/partner-portal/v2/en/fulfillment-390.webp",
+    "media/rebuild/partner-portal/v2/ru/fulfillment-1280.webp",
+    "media/rebuild/partner-portal/v2/ru/fulfillment-390.webp",
+    "media/rebuild/partner-portal/v3/en/line-choose-1280.webp",
+    "media/rebuild/partner-portal/v3/en/line-choose-390.webp",
+    "media/rebuild/partner-portal/v3/en/line-confirmed-390.webp",
+    "media/rebuild/partner-portal/v3/en/line-open-1280.webp",
+    "media/rebuild/partner-portal/v3/en/line-open-390.webp",
+    "media/rebuild/partner-portal/v3/en/line-source-390.webp",
+    "media/rebuild/partner-portal/v3/en/row-ambiguous-390.webp",
+    "media/rebuild/partner-portal/v3/en/row-changed-390.webp",
+    "media/rebuild/partner-portal/v3/en/row-missing-390.webp",
+    "media/rebuild/partner-portal/v3/legacy-cart-alternative.webp",
+    "media/rebuild/partner-portal/v3/ru/line-choose-1280.webp",
+    "media/rebuild/partner-portal/v3/ru/line-choose-390.webp",
+    "media/rebuild/partner-portal/v3/ru/line-confirmed-390.webp",
+    "media/rebuild/partner-portal/v3/ru/line-open-1280.webp",
+    "media/rebuild/partner-portal/v3/ru/line-open-390.webp",
+    "media/rebuild/partner-portal/v3/ru/line-source-390.webp",
+    "media/rebuild/partner-portal/v3/ru/row-ambiguous-390.webp",
+    "media/rebuild/partner-portal/v3/ru/row-changed-390.webp",
+    "media/rebuild/partner-portal/v3/ru/row-missing-390.webp",
+    "media/rebuild/partner-portal/v3/spec/fulfillmentplan-selected.webp"
+  ],
+  "removed": [],
+  "sharedRouteCheck": {
+    "portalScopes": [
+      "2hvfotlj"
+    ],
+    "pages": [
+      {
+        "page": "ru/work/agent-ops-console/index.html",
+        "markupIdentical": true,
+        "cssOnlyInAfterNonPortal": [],
+        "cssOnlyInBeforeNonPortal": []
+      },
+      {
+        "page": "ru/work/learn/index.html",
+        "markupIdentical": true,
+        "cssOnlyInAfterNonPortal": [],
+        "cssOnlyInBeforeNonPortal": []
+      },
+      {
+        "page": "ru/work/pawly/index.html",
+        "markupIdentical": true,
+        "cssOnlyInAfterNonPortal": [],
+        "cssOnlyInBeforeNonPortal": []
+      },
+      {
+        "page": "ru/work/vet-clinic/index.html",
+        "markupIdentical": true,
+        "cssOnlyInAfterNonPortal": [],
+        "cssOnlyInBeforeNonPortal": []
+      },
+      {
+        "page": "work/agent-ops-console/index.html",
+        "markupIdentical": true,
+        "cssOnlyInAfterNonPortal": [],
+        "cssOnlyInBeforeNonPortal": []
+      },
+      {
+        "page": "work/learn/index.html",
+        "markupIdentical": true,
+        "cssOnlyInAfterNonPortal": [],
+        "cssOnlyInBeforeNonPortal": []
+      },
+      {
+        "page": "work/pawly/index.html",
+        "markupIdentical": true,
+        "cssOnlyInAfterNonPortal": [],
+        "cssOnlyInBeforeNonPortal": []
+      },
+      {
+        "page": "work/vet-clinic/index.html",
+        "markupIdentical": true,
+        "cssOnlyInAfterNonPortal": [],
+        "cssOnlyInBeforeNonPortal": []
+      }
+    ]
+  }
+}

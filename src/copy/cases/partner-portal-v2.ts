@@ -34,6 +34,8 @@ export type PortalCaseCopy = {
     main: PortalShot & { label: string };
     detail: PortalShot & { label: string };
     note: string;
+    /** Phones: role and shipped/rebuild status in one line, replacing `role` + `note`. */
+    brief: string;
   };
   facts: { term: string; value: string; href?: string }[];
   diagnosis: {
@@ -45,9 +47,12 @@ export type PortalCaseCopy = {
   architecture: {
     label: string; thesis: string; body: string;
     inputsLabel: string;
-    inputs: { name: string; text: string }[];
-    spec: { name: string; text: string; provenance: string[]; states: string[]; rule: string };
-    cart: { name: string; text: string; states: string[]; loop: string };
+    /** `to` names where the intake lands; on phones it is the visible route. */
+    inputs: { name: string; text: string; to: string }[];
+    /** Label on the catalog's direct line into the cart. */
+    bypass: string;
+    spec: { name: string; text: string; provenance: string[]; states: string[]; ruleLabel: string; rule: string };
+    cart: { name: string; text: string; states: string[]; ruleLabel: string; loop: string };
     supply: { name: string; text: string };
     order: { name: string; text: string };
     bands: string[];
@@ -76,11 +81,14 @@ export type PortalCaseCopy = {
     typeLabel: string; colorLabel: string;
     colors: { token: string; role: string }[];
     families: { name: string; argument: string; states: { key: string; label: string }[] }[];
+    /** Phones: names the count of a sideways-scrolling state row; `{n}` is replaced. */
+    scrollCue: string;
     note: string;
   };
   process: {
     label: string; thesis: string; body: string;
-    steps: { phase: string; title: string; text: string; source: string }[];
+    /** `origin` separates DSSL-era material from 2026 rebuild artifacts; `source` pins file and commit. */
+    steps: { phase: string; title: string; text: string; origin: string; source: string }[];
     note: string;
   };
   outcome: {
@@ -107,10 +115,11 @@ export const portalCaseEn: PortalCaseCopy = {
     },
     detail: {
       desktop: 'change-detail-390',
-      label: 'Cart · a changed price waits for approval on its source row',
-      alt: 'Native price-change detail for source row 19: ₽34,900 to ₽35,800, +2.6%, with its supplier-update reason',
+      label: 'Cart · separate recording · a moved price waits for approval on its line',
+      alt: 'Native price-change detail, recorded separately from the row 19 session: source row 19, ₽34,900 to ₽35,800, +2.6%, with its supplier-update reason',
     },
     note: 'The commercial redesign shipped at DSSL. The screens here are my later rebuild of its decisions on synthetic data, not the shipped release.',
+    brief: 'Sole product designer. The commercial redesign shipped at DSSL; these screens are my later rebuild on synthetic data, not the shipped release.',
   },
   facts: [
     { term: 'Role', value: 'Sole product designer' },
@@ -137,7 +146,7 @@ export const portalCaseEn: PortalCaseCopy = {
       },
       {
         shot: {
-          src: '/media/rebuild/partner-portal/v3/legacy-cart-alternative.webp', width: 1080, height: 302,
+          src: '/media/rebuild/partner-portal/v3/legacy-cart-alternative.webp', width: 1076, height: 299,
           alt: 'The original cart: a line with an empty price column and a red stock dot, its “best alternative” with a green dot, an AI-assistant hint that may contain mistakes, and a one-click Replace button',
           caption: 'Original portal · cart, archival screenshot',
         },
@@ -156,30 +165,33 @@ export const portalCaseEn: PortalCaseCopy = {
   architecture: {
     label: '02 · Architecture',
     thesis: 'Different ways in. One specification. One place to resolve it.',
-    body: 'A file, a pasted list and the catalog all feed the same procurement object. Each stage answers one kind of question, so identity, price and delivery never blur into a single “OK”.',
+    body: 'A file and a pasted list become one specification, resolved in one place. A product the buyer already knows goes from the catalog straight to the cart. Each stage answers one kind of question, so identity, price and delivery never blur into a single “OK”.',
     inputsLabel: 'Ways in',
     inputs: [
-      { name: 'XLS import', text: 'The buyer’s specification as it is' },
-      { name: 'Quick order', text: 'Pasted SKU and quantity pairs' },
-      { name: 'Catalog & search', text: 'Known products go straight to the cart' },
+      { name: 'XLS import', text: 'The buyer’s specification as it is', to: 'Into the specification' },
+      { name: 'Quick order', text: 'Pasted SKU and quantity pairs', to: 'Into the specification' },
+      { name: 'Catalog & search', text: 'A known product, from the list or its product page', to: 'Straight to the cart' },
     ],
+    bypass: 'Known product · picked in the catalog, nothing to resolve',
     spec: {
       name: 'Specification',
       text: 'Every line keeps where it came from',
       provenance: ['file', 'row', 'source text', 'quantity'],
       states: ['Exact', 'Ambiguous', 'Missing', 'Changed'],
-      rule: 'One resolver for every intake. Open lines wait for the buyer.',
+      ruleLabel: 'Resolved here',
+      rule: 'One resolver for the file and the pasted list. The buyer confirms every open line.',
     },
     cart: {
       name: 'Cart',
       text: 'Commercial review, line by line',
       states: ['Verified', 'Stale', 'Not confirmed'],
-      loop: 'A price or lead time that moved waits for approval on its own line',
+      ruleLabel: 'Approved here',
+      loop: 'A price or lead time that moved waits for the buyer’s approval on its own line',
     },
-    supply: { name: 'Fulfillment', text: 'Compare plans: date, shipments, delivery cost' },
+    supply: { name: 'Fulfillment', text: 'The buyer picks a plan: date, shipments, delivery cost' },
     order: { name: 'Checkout → Order', text: 'Terms confirmed, order created' },
     bands: ['Product identity', 'Commercial certainty', 'Fulfillment'],
-    note: 'Editorial diagram drawn for this case from the rebuild’s sitemap and XLS-to-order flow. Simplified: sign-in, counterparty choice and post-order screens are left out.',
+    note: 'Editorial diagram drawn for this case from the rebuild’s sitemap, intake flows, routes and decisions D007 and D029. Simplified: sign-in, counterparty choice and post-order screens are left out.',
   },
   decision: {
     label: '03 · The source line',
@@ -314,6 +326,7 @@ export const portalCaseEn: PortalCaseCopy = {
         ],
       },
     ],
+    scrollCue: '{n} states · scroll sideways',
     note: 'ResolutionRow states are rows of the real review queue. The other specimens are element screenshots from the product’s Storybook catalogue, in its English UI. Synthetic data; colour values read from the same build.',
   },
   process: {
@@ -321,12 +334,12 @@ export const portalCaseEn: PortalCaseCopy = {
     thesis: 'One designer, from the old screens to a working system.',
     body: 'I owned the structure and the reasoning, not just the screens. Each step left an artifact the next one had to respect.',
     steps: [
-      { phase: 'Observe', title: 'Audit of the original portal', text: 'Ten archived screens of the shipped portal, read against the buyer’s real job.', source: 'Archived screenshots · original portal' },
-      { phase: 'Structure', title: 'Sitemap and the XLS-to-order flow', text: 'Sixteen MVP screens, three ways in, one path to the order.', source: 'ia/sitemap.md · ia/flows/xls-to-order.mmd' },
-      { phase: 'Decide', title: 'Written design decisions', text: 'Matching is not confirmation; freshness is not a price change. Each rule is recorded with its reason and cost.', source: 'ds/DECISIONS.md · D007, D010, D026' },
-      { phase: 'Build', title: 'Components, states, real screens', text: 'Every state in a component catalogue, assembled into working screens and checked in the browser on desktop and phone.', source: 'Storybook · React rebuild' },
+      { phase: 'Observe', title: 'Audit of the original portal', text: 'Ten archived screens of the shipped portal, read against the buyer’s real job.', origin: 'DSSL · original portal', source: 'pages-default/ · 10 archived screenshots' },
+      { phase: 'Structure', title: 'Sitemap and intake flows', text: 'Sixteen MVP screens, three ways in, one path to the order.', origin: '2026 rebuild', source: 'ia/sitemap.md · ia/flows/xls-to-order.mmd · quick-order.mmd · main @ 5aad49a' },
+      { phase: 'Decide', title: 'Written design decisions', text: 'Matching is not confirmation; freshness is not a price change. Each rule is recorded with its reason and cost.', origin: '2026 rebuild', source: 'ds/DECISIONS.md · D007, D010, D026, D029 · main @ 5aad49a' },
+      { phase: 'Build', title: 'Components, states, real screens', text: 'Every state in a component catalogue, assembled into working screens and checked in the browser on desktop and phone.', origin: '2026 rebuild', source: 'src/components · Storybook · 8cb6579' },
     ],
-    note: 'Artifacts linked here come from the 2026 rebuild. The original DSSL working files are not public.',
+    note: 'References name the file and commit in the rebuild’s product repository, which is private. The original DSSL working files are not public; the archived screenshots are the only DSSL-era material shown.',
   },
   outcome: {
     label: 'Outcome',

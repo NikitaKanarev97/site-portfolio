@@ -1,0 +1,54 @@
+
+> b2b-dssl@0.0.0 build
+> tsc -b && vite build && node scripts/build-review.mjs
+
+[36mvite v8.2.2 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 3063 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                0.52 kB │ gzip:   0.34 kB
+dist/assets/dssl-mark-C_lkmLIp.svg                             5.04 kB │ gzip:   2.28 kB
+dist/assets/dssl-logo-BaFRLAtJ.svg                             6.27 kB │ gzip:   2.80 kB
+dist/assets/KX-2CB4046F2-I-BvZVkApO.jpg                        7.95 kB
+dist/assets/KX-KV8113-WME1-DgQIoZIT.jpg                        7.98 kB
+dist/assets/KX-2CD4143F2-IS-sDWpoMfv.jpg                       8.00 kB
+dist/assets/SV4000TX016-ByB94Fy7.jpg                           8.02 kB
+dist/assets/KX-2CB4T86F2-4I-c27yShXt.jpg                       8.32 kB
+dist/assets/KX-1273ZJ-140-CJkDLMkB.jpg                         8.52 kB
+dist/assets/KX-2CB4T47F2-L-C63oDAYj.jpg                        8.76 kB
+dist/assets/KX-3E4510P-E-Do3FH-Yp.jpg                          9.39 kB
+dist/assets/KX-7608NXI-K2-BWbbfMrO.jpg                         9.68 kB
+dist/assets/KX-2CB4647F2-LZS-CWW_tL89.jpg                      9.73 kB
+dist/assets/KX-2CB4621F0-IZS-BOFgeego.jpg                      9.97 kB
+dist/assets/inter-vietnamese-wght-normal-CBcvBZtf.woff2       10.25 kB
+dist/assets/KX-2CB4043F2-I-uDrPaolF.jpg                       10.28 kB
+dist/assets/KX-2CD4183F2-IS-CScGk6_t.jpg                      10.55 kB
+dist/assets/inter-greek-ext-wght-normal-DlzME5K_.woff2        11.23 kB
+dist/assets/inter-cyrillic-wght-normal-DqGufNeO.woff2         18.74 kB
+dist/assets/inter-greek-wght-normal-CkhJZR-_.woff2            18.99 kB
+dist/assets/inter-cyrillic-ext-wght-normal-BOeWTOD4.woff2     25.96 kB
+dist/assets/detail-mount-DhYo-5jh.jpg                         38.75 kB
+dist/assets/detail-connector-D3v2_KZI.jpg                     46.10 kB
+dist/assets/inter-latin-wght-normal-Dx4kXJAl.woff2            48.25 kB
+dist/assets/detail-lens-xFqQPcPg.jpg                          54.65 kB
+dist/assets/detail-chamfer-DgXi6cJb.jpg                       55.22 kB
+dist/assets/inter-latin-ext-wght-normal-DO1Apj_S.woff2        85.06 kB
+dist/assets/main-QJYis7WL.jpg                                213.00 kB
+dist/assets/index-BWvT2KqG.css                               168.41 kB │ gzip:  28.05 kB
+dist/assets/index-CPOr6OOn.js                              1,159.70 kB │ gzip: 338.33 kB
+
+[32m✓ built in 1.22s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Review published: 16 evidence/report files → dist/review/ (8cb6579)
+Dashboard V2 review: 85 files → dist/review/dashboard-v2/ (8cb6579)
+Dashboard V2.1 review: 273 files → dist/review/dashboard-v2.1/ (8cb6579)
+Dashboard V3 review: 317 files → dist/review/dashboard-v3/ (8cb6579)
+Resolution Center V2 review: 110 files → dist/review/resolution-center-v2/ (8cb6579)
+Resolution Center V2.1 review: 125 files → dist/review/resolution-center-v2.1/ (8cb6579)
+Fulfillment V2 review: 155 files; PARTIAL; third-party assets excluded (8cb6579)
+Catalog V2 review: 120 files → dist/review/catalog-v2/ (8cb6579)

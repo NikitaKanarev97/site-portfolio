@@ -1,0 +1,1439 @@
+{
+  "product": "8cb657922991e7b10556eec9a6ded8621c1ded71",
+  "captures": {
+    "en/fulfillment-1280": {
+      "file": "audit/b2b-portfolio-case-premium-v3/v3.1/captures/en/fulfillment-1280.png",
+      "route": "/fulfillment",
+      "commit": "8cb657922991e7b10556eec9a6ded8621c1ded71",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "dpr": 2,
+      "clip": {
+        "x": 68,
+        "y": 68,
+        "width": 1208,
+        "height": 577
+      },
+      "note": "page header + stepper + plan comparison",
+      "overflow": 0
+    },
+    "en/fulfillment-390": {
+      "file": "audit/b2b-portfolio-case-premium-v3/v3.1/captures/en/fulfillment-390.png",
+      "route": "/fulfillment",
+      "commit": "8cb657922991e7b10556eec9a6ded8621c1ded71",
+      "viewport": {
+        "width": 390,
+        "height": 2400
+      },
+      "dpr": 2,
+      "clip": {
+        "x": 0,
+        "y": 277,
+        "width": 390,
+        "height": 912
+      },
+      "note": "plan comparison stack",
+      "overflow": 0
+    },
+    "ru/fulfillment-1280": {
+      "file": "audit/b2b-portfolio-case-premium-v3/v3.1/captures/ru/fulfillment-1280.png",
+      "route": "/ru/fulfillment",
+      "commit": "8cb657922991e7b10556eec9a6ded8621c1ded71",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "dpr": 2,
+      "clip": {
+        "x": 68,
+        "y": 68,
+        "width": 1208,
+        "height": 613
+      },
+      "note": "page header + stepper + plan comparison",
+      "overflow": 0
+    },
+    "ru/fulfillment-390": {
+      "file": "audit/b2b-portfolio-case-premium-v3/v3.1/captures/ru/fulfillment-390.png",
+      "route": "/ru/fulfillment",
+      "commit": "8cb657922991e7b10556eec9a6ded8621c1ded71",
+      "viewport": {
+        "width": 390,
+        "height": 2400
+      },
+      "dpr": 2,
+      "clip": {
+        "x": 0,
+        "y": 277,
+        "width": 390,
+        "height": 956
+      },
+      "note": "plan comparison stack",
+      "overflow": 0
+    }
+  },
+  "probes": [
+    {
+      "key": "en-1440",
+      "locale": "en",
+      "width": 1440,
+      "dpr": 2,
+      "initial": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "afterPointer": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "keyboard": {
+        "state": "default",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "boxShadow": "none",
+        "outline": "solid 2px",
+        "background": "rgb(255, 255, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "key": "en-1440@4x",
+      "locale": "en",
+      "width": 1440,
+      "dpr": 4,
+      "initial": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "afterPointer": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "keyboard": {
+        "state": "default",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "boxShadow": "none",
+        "outline": "solid 2px",
+        "background": "rgb(255, 255, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "key": "en-1280",
+      "locale": "en",
+      "width": 1280,
+      "dpr": 2,
+      "initial": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "afterPointer": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "keyboard": {
+        "state": "default",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "boxShadow": "none",
+        "outline": "solid 2px",
+        "background": "rgb(255, 255, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "key": "en-1280@4x",
+      "locale": "en",
+      "width": 1280,
+      "dpr": 4,
+      "initial": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "afterPointer": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "keyboard": {
+        "state": "default",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "boxShadow": "none",
+        "outline": "solid 2px",
+        "background": "rgb(255, 255, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "key": "en-390",
+      "locale": "en",
+      "width": 390,
+      "dpr": 2,
+      "initial": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "afterPointer": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "keyboard": {
+        "state": "default",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "boxShadow": "none",
+        "outline": "solid 2px",
+        "background": "rgb(255, 255, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "key": "en-390@4x",
+      "locale": "en",
+      "width": 390,
+      "dpr": 4,
+      "initial": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "afterPointer": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "keyboard": {
+        "state": "default",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "boxShadow": "none",
+        "outline": "solid 2px",
+        "background": "rgb(255, 255, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "key": "en-360",
+      "locale": "en",
+      "width": 360,
+      "dpr": 2,
+      "initial": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "afterPointer": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "keyboard": {
+        "state": "default",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "boxShadow": "none",
+        "outline": "solid 2px",
+        "background": "rgb(255, 255, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "key": "en-360@4x",
+      "locale": "en",
+      "width": 360,
+      "dpr": 4,
+      "initial": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "afterPointer": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "keyboard": {
+        "state": "default",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "boxShadow": "none",
+        "outline": "solid 2px",
+        "background": "rgb(255, 255, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "key": "ru-1440",
+      "locale": "ru",
+      "width": 1440,
+      "dpr": 2,
+      "initial": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "afterPointer": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "keyboard": {
+        "state": "default",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "boxShadow": "none",
+        "outline": "solid 2px",
+        "background": "rgb(255, 255, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "key": "ru-1440@4x",
+      "locale": "ru",
+      "width": 1440,
+      "dpr": 4,
+      "initial": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "afterPointer": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "keyboard": {
+        "state": "default",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "boxShadow": "none",
+        "outline": "solid 2px",
+        "background": "rgb(255, 255, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "key": "ru-1280",
+      "locale": "ru",
+      "width": 1280,
+      "dpr": 2,
+      "initial": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "afterPointer": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "keyboard": {
+        "state": "default",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "boxShadow": "none",
+        "outline": "solid 2px",
+        "background": "rgb(255, 255, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "key": "ru-1280@4x",
+      "locale": "ru",
+      "width": 1280,
+      "dpr": 4,
+      "initial": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "afterPointer": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "keyboard": {
+        "state": "default",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "bottom": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "left": {
+          "width": "0px",
+          "color": "rgb(20, 28, 43)"
+        },
+        "boxShadow": "none",
+        "outline": "solid 2px",
+        "background": "rgb(255, 255, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "key": "ru-390",
+      "locale": "ru",
+      "width": 390,
+      "dpr": 2,
+      "initial": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "afterPointer": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "keyboard": {
+        "state": "default",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "boxShadow": "none",
+        "outline": "solid 2px",
+        "background": "rgb(255, 255, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "key": "ru-390@4x",
+      "locale": "ru",
+      "width": 390,
+      "dpr": 4,
+      "initial": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "afterPointer": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "keyboard": {
+        "state": "default",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "boxShadow": "none",
+        "outline": "solid 2px",
+        "background": "rgb(255, 255, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "key": "ru-360",
+      "locale": "ru",
+      "width": 360,
+      "dpr": 2,
+      "initial": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "afterPointer": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "keyboard": {
+        "state": "default",
+        "top": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(226, 231, 239)"
+        },
+        "boxShadow": "none",
+        "outline": "solid 2px",
+        "background": "rgb(255, 255, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "key": "ru-360@4x",
+      "locale": "ru",
+      "width": 360,
+      "dpr": 4,
+      "initial": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "afterPointer": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "none 3px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "keyboard": {
+        "state": "selected",
+        "top": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "right": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "bottom": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "left": {
+          "width": "1px",
+          "color": "rgb(53, 99, 233)"
+        },
+        "boxShadow": "none",
+        "outline": "solid 2px",
+        "background": "rgb(220, 232, 255)",
+        "pseudo": [
+          "none",
+          "none"
+        ]
+      },
+      "errors": []
+    }
+  ]
+}

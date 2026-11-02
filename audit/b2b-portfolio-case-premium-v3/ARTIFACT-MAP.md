@@ -78,3 +78,24 @@ details (route, commit, element box, SHA-256 of the raw PNG, visible text) are i
 
 No longer used on the route (files kept, registry untouched): `decision-*`, `confirmed-*`,
 `unpriced-*`, `change-390`.
+
+## V3.1 · 2 November 2026
+
+Product source for every recaptured frame: `b2b-partner-portal` @
+`8cb657922991e7b10556eec9a6ded8621c1ded71` (branch
+`review/fulfillment-plan-selection-v31-2026-11-02`), which is `36be1d8` plus one commit
+changing only `FulfillmentPlan.tsx`, `FulfillmentPlan.css` and `ds/components.md`.
+`c899933` is superseded for the selected rule and not merged. Production build and
+Storybook built from that commit; raw PNGs, manifests and SHA-256 in
+`v3.1/captures/`. Encoder settings unchanged (lossless WebP), files replaced in place.
+
+| Keys | Source | What changed |
+|---|---|---|
+| `fulfillment-1280`, `fulfillment-390` (EN/RU) | `v3.1/captures/fulfillment-manifest.json`, same session, seed and clip as V2 | product fix only; RU 1280 frame is 18 px taller because "Доставка без НДС" now wraps (source identical for this screen) |
+| `spec-fulfillmentplan-selected` | Storybook 8cb6579 | left stripe removed. The other eight specimens re-shot from the same build are pixel-identical to V3 and were left untouched |
+| `line-*`, `row-*` (EN/RU, 1280/390) | `v3.1/captures/line-manifest.json`, one session as in V3 | rounded cards (expanded card at 1280, every card at 390) clipped to the element box + 8 px of product surface; edge uniformity asserted. Square 1280 rows re-encode byte-identical |
+| `legacy-cart-alternative.webp` | `pages-default/Корзина.png` (SHA-256 `b9ef89db…308b0a`), `v3.1/archive-crop.json` | crop `99, 220, 2152 × 598` inside the original white panel, replacing `97, 214, 2160 × 604` that took 5 px of page gutter on the right and 1 px on the left and top |
+
+Untouched: every other registry entry (asserted by `scripts/b2b-v31/build-media.mjs`),
+`legacy-dashboard.webp`, the 6bbe1cd and c899933 frames of hero, dashboard, product and
+commerce.

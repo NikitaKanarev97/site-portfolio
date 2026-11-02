@@ -1,0 +1,64 @@
+Storybook coverage — expected matrix from ds/components.md
+
+  ok   Accordion/Accordion                12/12
+  ok   Alert/Alert                        8/8
+  ok   AppHeader/AppHeader                1/1
+  ok   Availability/Availability          6/6
+  ok   Badge/Badge                        10/10
+  ok   Breadcrumbs/Breadcrumbs            2/2
+  ok   Breadcrumbs/BreadcrumbItem         8/8
+  ok   Button/Button                      50/50
+  ok   CandidateComparison/CandidateComparison 8/8
+  ok   Card/Card                          3/3
+  ok   Checkbox/Checkbox                  18/18
+  ok   CheckoutProgress/CheckoutProgress  3/3
+  ok   Combobox/Combobox                  8/8
+  ok   CounterpartySwitcher/CounterpartySwitcher 2/2
+  ok   DataTable/DataTable                2/2
+  ok   DataTable/DataTableRow             10/10
+  ok   DatePicker/DatePicker              8/8
+  ok   DeltaRow/DeltaRow                  3/3
+  ok   Dialog/Dialog                      3/3
+  ok   DocumentRow/DocumentRow            3/3
+  ok   Drawer/Drawer                      2/2
+  ok   DropdownMenu/DropdownMenu          4/4
+  ok   EmptyState/EmptyState              3/3
+  ok   FileUpload/FileUpload              4/4
+  ok   FulfillmentPlan/FulfillmentPlan    3/3
+  ok   IconButton/IconButton              6/6
+  ok   Input/Input                        10/10
+  ok   OrderRow/OrderRow                  2/2
+  ok   OrderSummary/OrderSummary          4/4
+  ok   OrderTimeline/OrderTimeline        5/5
+  ok   PageHeader/PageHeader              3/3
+  ok   Pagination/Pagination              1/1
+  ok   Pagination/PaginationAction        8/8
+  ok   PriceBlock/PriceBlock              6/6
+  ok   ProcurementEntryCard/ProcurementEntryCard 8/8
+  ok   ProductRow/ProductRow              5/5
+  ok   Progress/Progress                  4/4
+  ok   QuantityStepper/QuantityStepper    2/2
+  ok   RadioGroup/RadioGroup              4/4
+  ok   RadioGroup/RadioItem               12/12
+  ok   ResolutionRow/ResolutionRow        10/10
+  ok   Select/Select                      8/8
+  ok   Separator/Separator                2/2
+  ok   ShipmentGroup/ShipmentGroup        4/4
+  ok   Sidebar/Sidebar                    2/2
+  ok   Sidebar/SidebarNavItem             10/10
+  ok   Skeleton/Skeleton                  3/3
+  ok   SystemMessage/SystemMessage        4/4
+  ok   Tabs/Tabs                          2/2
+  ok   Tabs/TabItem                       16/16
+  ok   Textarea/Textarea                  4/4
+  ok   Toast/Toast                        4/4
+  ok   Tooltip/Tooltip                    2/2
+
+  families with stories        47/47
+  cells covered               335/335
+  missing                     0
+  undeclared / duplicate      0
+  without autodocs            0
+  without argTypes            0
+
+PASS

@@ -14,7 +14,7 @@ import { createRequire } from 'node:module';
 const require = createRequire('D:/Claude-projects/b2b-dssl/package.json');
 const { chromium } = require('playwright');
 const [prod = 'http://127.0.0.1:4411', dev = 'http://127.0.0.1:4412'] = process.argv.slice(2);
-const OUT = 'audit/b2b-portfolio-case-premium-v3';
+const OUT = process.env.OUT ?? 'audit/b2b-portfolio-case-premium-v3';
 await mkdir(`${OUT}/logs`, { recursive: true });
 await mkdir(`${OUT}/after/motion`, { recursive: true });
 const browser = await chromium.launch();

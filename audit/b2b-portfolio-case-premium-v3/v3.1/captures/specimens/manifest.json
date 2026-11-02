@@ -1,0 +1,226 @@
+{
+  "product": "8cb657922991e7b10556eec9a6ded8621c1ded71",
+  "source": "storybook build of the product at this commit",
+  "tokens": {
+    "font": "\"Inter Variable\"",
+    "colors": [
+      {
+        "name": "surface-canvas",
+        "value": "#f7f9fc"
+      },
+      {
+        "name": "surface-default",
+        "value": "#fff"
+      },
+      {
+        "name": "surface-subtle",
+        "value": "#f1f4f8"
+      },
+      {
+        "name": "surface-action-primary",
+        "value": "#3563e9"
+      },
+      {
+        "name": "surface-selected",
+        "value": "#dce8ff"
+      },
+      {
+        "name": "text-default",
+        "value": "#141c2b"
+      },
+      {
+        "name": "text-muted",
+        "value": "#526071"
+      },
+      {
+        "name": "text-success",
+        "value": "#0f765a"
+      },
+      {
+        "name": "text-warning",
+        "value": "#946200"
+      },
+      {
+        "name": "text-error",
+        "value": "#b42318"
+      },
+      {
+        "name": "text-info",
+        "value": "#2c50b8"
+      },
+      {
+        "name": "border-default",
+        "value": "#e2e7ef"
+      }
+    ],
+    "type": [
+      {
+        "step": "4xl",
+        "size": "48px",
+        "lineHeight": "58px"
+      },
+      {
+        "step": "2xl",
+        "size": "28px",
+        "lineHeight": "36px"
+      },
+      {
+        "step": "xl",
+        "size": "20px",
+        "lineHeight": "30px"
+      },
+      {
+        "step": "base",
+        "size": "16px",
+        "lineHeight": "24px"
+      },
+      {
+        "step": "sm",
+        "size": "14px",
+        "lineHeight": "20px"
+      },
+      {
+        "step": "xs",
+        "size": "12px",
+        "lineHeight": "18px"
+      }
+    ]
+  },
+  "entries": [
+    {
+      "name": "availability-verified",
+      "story": "components-domain-availability--verified",
+      "viewport": 420,
+      "dpr": 2,
+      "box": {
+        "x": 132.265625,
+        "y": 426,
+        "width": 155.484375,
+        "height": 48
+      },
+      "sha256": "501f1d578f8024cea727b5f5e13f71bba60106d850adf5fc5b7548155dd58523",
+      "text": "24 pcs · Moscow DC\nShips in 2 business days",
+      "errors": []
+    },
+    {
+      "name": "availability-stale",
+      "story": "components-domain-availability--stale",
+      "viewport": 420,
+      "dpr": 2,
+      "box": {
+        "x": 122.53125,
+        "y": 415,
+        "width": 174.9375,
+        "height": 70
+      },
+      "sha256": "90391dd7acfd3f4bcac33dcda7a22ddfe84a723649de29bfb8fdc1d402b09f50",
+      "text": "24 pcs · Moscow DC\nWMS · 21 Aug 2026, 18:30\nSTALE",
+      "errors": []
+    },
+    {
+      "name": "availability-not-confirmed",
+      "story": "components-domain-availability--not-confirmed",
+      "viewport": 420,
+      "dpr": 2,
+      "box": {
+        "x": 145.8125,
+        "y": 425,
+        "width": 128.390625,
+        "height": 50
+      },
+      "sha256": "532cc3d5f3e365696b728a8bfdc436deb4520093cbef29c3ba69a48887bd170e",
+      "text": "Not confirmed\nWMS · no response",
+      "errors": []
+    },
+    {
+      "name": "fileupload-empty",
+      "story": "components-domain-fileupload--empty",
+      "viewport": 560,
+      "dpr": 2,
+      "box": {
+        "x": 16,
+        "y": 16,
+        "width": 480,
+        "height": 216
+      },
+      "sha256": "929f1a796a64b19b4daa55aeaf17d6eddea0c2ca288fcbb95e5bc30982d5a7c6",
+      "text": "Drop your specification here\n\nXLS or XLSX · up to 10 MB\n\nBrowse files",
+      "errors": []
+    },
+    {
+      "name": "fileupload-complete",
+      "story": "components-domain-fileupload--complete",
+      "viewport": 560,
+      "dpr": 2,
+      "box": {
+        "x": 16,
+        "y": 16,
+        "width": 480,
+        "height": 158
+      },
+      "sha256": "845dd53889a680149addc5776d88ee866a7cddf968a1911baf19637292c5ae4f",
+      "text": "office_north_v8.xlsx\n\n48 lines read · 41 matched exactly · 7 need a decision\n\nOpen resolution center",
+      "errors": []
+    },
+    {
+      "name": "fileupload-error",
+      "story": "components-domain-fileupload--error",
+      "viewport": 560,
+      "dpr": 2,
+      "box": {
+        "x": 16,
+        "y": 16,
+        "width": 480,
+        "height": 178
+      },
+      "sha256": "3f8b369b7219217300218c5d3b8e2e5c96d325a56f4b928746ba61c45368d43f",
+      "text": "office_north_v8.xlsx\n\nThe file could not be read: row 1 has no header. Fix the header row and upload again.\n\nUpload another file",
+      "errors": []
+    },
+    {
+      "name": "fulfillmentplan-default",
+      "story": "components-domain-fulfillmentplan--default",
+      "viewport": 360,
+      "dpr": 2,
+      "box": {
+        "x": 16,
+        "y": 16,
+        "width": 328,
+        "height": 356
+      },
+      "sha256": "f2f2ba43501d513b2988c21de3ab784cbc329842cef4eec51fa05fe61b9648cd",
+      "text": "Fewest shipments\nEverything from the Moscow DC in one shipment\nAVAILABLE NOW\n48 of 48\nCOMPLETE BY\n28 Aug 2026\nSHIPMENTS\n1\nWAREHOUSES\nMoscow DC\nDELIVERY\n4,200\nChoose this plan",
+      "errors": []
+    },
+    {
+      "name": "fulfillmentplan-selected",
+      "story": "components-domain-fulfillmentplan--selected",
+      "viewport": 360,
+      "dpr": 2,
+      "box": {
+        "x": 16,
+        "y": 16,
+        "width": 328,
+        "height": 360
+      },
+      "sha256": "6406e58eb2170a7aff7f6648a84856d183d8d9ea82c9678f6ee0182c0b85e3e5",
+      "text": "Fewest shipments\nSelected\nEverything from the Moscow DC in one shipment\nAVAILABLE NOW\n48 of 48\nCOMPLETE BY\n28 Aug 2026\nSHIPMENTS\n1\nWAREHOUSES\nMoscow DC\nDELIVERY\n4,200\nSelected plan",
+      "errors": []
+    },
+    {
+      "name": "fulfillmentplan-unavailable",
+      "story": "components-domain-fulfillmentplan--unavailable",
+      "viewport": 360,
+      "dpr": 2,
+      "box": {
+        "x": 16,
+        "y": 16,
+        "width": 328,
+        "height": 352
+      },
+      "sha256": "d85e5b585dab8742677b2fa7710826e882b60308dbe9a10c3d5d48f6c35b6eb8",
+      "text": "Fewest shipments\nUnavailable\nEverything from the Moscow DC in one shipment\nAVAILABLE NOW\n48 of 48\nCOMPLETE BY\n28 Aug 2026\nSHIPMENTS\n1\nWAREHOUSES\nMoscow DC\nDELIVERY\n4,200\n\nNot available: 7 lines have no stock at this warehouse",
+      "errors": []
+    }
+  ]
+}

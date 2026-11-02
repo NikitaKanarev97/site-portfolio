@@ -23,8 +23,8 @@ const require = createRequire('D:/Claude-projects/b2b-dssl/package.json');
 const { chromium } = require('playwright');
 
 const SB = process.env.SB_ORIGIN ?? 'http://127.0.0.1:5211';
-const OUT = 'audit/b2b-portfolio-case-premium-v3/captures/specimens';
-const PRODUCT_COMMIT = '36be1d80277c536b94424ac49aa5ff82662d8ee7';
+const OUT = process.env.OUT ?? 'audit/b2b-portfolio-case-premium-v3/captures/specimens';
+const PRODUCT_COMMIT = process.env.PRODUCT_COMMIT ?? '36be1d80277c536b94424ac49aa5ff82662d8ee7';
 
 /** family, story id suffix, capture viewport width, file suffix. */
 const STORIES = [
