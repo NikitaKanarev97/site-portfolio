@@ -1,5 +1,24 @@
 # Screen: CaseDSSL
 
+## V3 premium case · 02.11.2026 (supersedes V2.1 presentation below; pending independent review)
+
+Same routes, renderer `src/components/portal/PortalCase.astro` (case-scoped), copy `src/copy/cases/partner-portal-v2.ts` / `src/copy/ru/cases/partner-portal-v2.ts`, registry `src/data/partner-portal-v2-media.json`. Shared `PortalShot`, `PortalHome`, tokens and motion runtime unchanged. Evidence: `audit/b2b-portfolio-case-premium-v3/`.
+
+Thesis: **from spreadsheet to purchase — without losing control of the decisions.** Order follows one procurement object: hero → facts → 01 Diagnosis → 02 Architecture → 03 Source line → 04 Product and price → 05 Commercial review (cool band) → 06 Fulfillment → 07 Design system → 08 Process → Outcome → CaseNext.
+
+| # | Module | Evidence | Desktop / phone |
+|---|---|---|---|
+| 0 | Hero | workspace 6bbe1cd (collapsed queue, V1.1-faithful), DeltaRow c899933; sole-designer line and shipped-vs-rebuild note in the first view | title 7 col + note 6 col / lead 5 col; phone workspace-top-390 |
+| 01 | Diagnosis | archival `legacy-dashboard` and new `legacy-cart-alternative` crops (MediaZoom), Observed → Direction; built Dashboard | 8 / 4 col rows; stacked |
+| 02 | Architecture | editorial HTML diagram from sitemap + XLS-to-order flow, D007/D010/D029 | 4 stages + 3 certainty bands; vertical stack |
+| 03 | Source line | row 19 at 36be1d8, one session: imported → chosen → confirmed → cart line (source row 19) | 3 / 9 col rows on one plate; native 390 frames |
+| 04–06 | Product, commerce, fulfillment | V2.1 media unchanged; commerce gains a numbered chain, fulfillment the compared dimensions | as V2.1 |
+| 07 | Design system | 8 semantic colours + type scale from the 36be1d8 build; ResolutionRow from the real queue; FileUpload, Availability, FulfillmentPlan from Storybook 36be1d8 | name beside narrow families, wide families 3-across; phone scrollers |
+| 08 | Process | four steps with real artifact paths, labelled as 2026 rebuild artifacts | 4 col; stacked |
+| 09 | Outcome | Shipped / Shown / Owned, three costs, unchanged CTA | 5 / 6 col; stacked |
+
+Public wording follows CONTENT-RULES: "later rebuild … not the shipped release", never "independent reconstruction".
+
 ## V2.1 correction · 31.10.2026 (supersedes V2 presentation below)
 
 Seven-section structure, buyer comparison and fulfillment remain. Hero uses surface-portal-editorial; main workspace dominates, complete DeltaRow appears as a compact desktop inset. Mobile shows one complete workspace capture ending at row 19, with no next-row sliver. Commerce uses surface-portal-context and centred complete owning cart-line + decision bar; meaningful native status edge is retained with a uniform 20 px field. Product verification keeps its source with extra top breathing room. Archival Before stays a subordinate historical reference without enlargement. Home uses dedicated PortalHome, not the case hero. Public prototype links explicitly say that the public version predates these screens. QA: audit/b2b-case-v21/.

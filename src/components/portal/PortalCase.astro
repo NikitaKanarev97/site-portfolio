@@ -1,24 +1,27 @@
 ---
 /**
- * PortalCase — ds/components.md §PortalCase, map ds/screens/case-dssl.md §V2.
+ * PortalCase — ds/components.md §PortalCase, map ds/screens/case-dssl.md §V3.
  *
- * Case-scoped renderer for the B2B Partner Portal story V2. The shared
- * CaseStory stays frozen for the other cases; this page needed an authored
- * cover and mixed-scale plates the shared blocks cannot express.
+ * Case-scoped renderer for the B2B Partner Portal story V3. The shared
+ * CaseStory stays frozen for the other cases; this page needs an authored
+ * cover, a procurement diagram, one source line followed through four real
+ * states and a component specimen sheet, which the shared blocks cannot express.
  *
- * Rhythm: cool-neutral cover (title on clean colour, never on UI) → white sheet with
- * facts → six modules, each a split head (label | thesis + body) and one
- * piece of evidence → a dark band for the commercial-review module → outcome
- * with the prototype CTA → shared CaseNext.
+ * Reading order follows one procurement object: legacy diagnosis →
+ * architecture → the source line → product and price → commercial review
+ * (cool band) → fulfillment → design system → process and ownership → outcome.
  *
  * Motion only through registered data-motion names (lines, fade, fade-image,
- * rise); animations.js plays them, reduced motion keeps everything visible.
+ * rise, draw); animations.js plays them, reduced motion and no-JS keep every
+ * node visible. The diagram and the specimens are complete without motion.
  */
 import MetaList from '../MetaList.astro';
 import CaseNext from '../CaseNext.astro';
 import IconArrow from '../IconArrow.astro';
 import PortalShot from './PortalShot.astro';
-import type { PortalCaseCopy } from '../../copy/cases/partner-portal-v2.ts';
+import media from '../../data/partner-portal-v2-media.json';
+import tokens from '../../data/partner-portal-v3-tokens.json';
+import type { PortalCaseCopy, ArchiveShot } from '../../copy/cases/partner-portal-v2.ts';
 import type { CaseTheme } from '../../copy/cases/story';
 
 interface Props {
@@ -27,65 +30,150 @@ interface Props {
   next: { href: string; title: string; theme: CaseTheme; label: string };
 }
 const { copy, locale, next } = Astro.props;
-const { cover, problem, flow, decision, verify, commerce, supply, outcome } = copy;
+const { cover, diagnosis, architecture: arch, decision, verify, commerce, supply, system, process, outcome } = copy;
 const WIDE = '(min-width: 1024px) 66vw, 100vw';
+const STAGE = '(min-width: 1024px) 860px, 100vw';
+const index = (i: number) => String(i + 1).padStart(2, '0');
+/** A specimen key names a capture; width-suffixed pairs give phones their own frame. */
+const has = (key: string) => `${locale}/${key}` in media;
+const specimen = (key: string, alt: string) => ({
+  desktop: has(`${key}-1280`) ? `${key}-1280` : key,
+  mobile: has(`${key}-390`) ? `${key}-390` : undefined,
+  alt,
+});
+const color = (token: string) => tokens.colors.find(c => c.name === token)?.value ?? '';
+const zoomLabel = locale === 'ru' ? 'Открыть в полный размер' : 'Open full size';
+const [rows, availability, upload, plans] = system.families;
 ---
-<div class="portal-case" id="case-partner-portal" data-h="case" data-story-version="portal-v2">
+<div class="portal-case" id="case-partner-portal" data-h="case" data-story-version="portal-v3">
   <section class="portal-cover" aria-labelledby="portal-title" data-case-cover="case-portal"
     transition:name="case-portal" transition:animate="initial">
     <div class="ds-container portal-cover__inner" data-motion-intro>
       <header class="portal-cover__head">
         <p class="ds-meta-sm portal-cover__eyebrow">{cover.eyebrow}</p>
         <h1 id="portal-title" class="ds-display-5xl portal-cover__title" data-motion="lines">{cover.title}</h1>
-        <p class="ds-heading-xl portal-cover__promise" data-h="lead" data-motion="fade">{cover.promise}</p>
+        <div class="portal-cover__lead" data-motion="fade">
+          <p class="ds-heading-xl portal-cover__promise" data-h="lead">{cover.promise}</p>
+          <p class="ds-body-base portal-cover__role">{cover.role}</p>
+        </div>
+        <p class="ds-body-sm portal-cover__note" data-motion="fade">{cover.note}</p>
       </header>
       <div class="portal-cover__stage" data-motion="fade-image">
         <PortalShot shot={cover.main} label={cover.main.label} locale={locale} loading="eager" sizes={WIDE} />
         <div class="portal-cover__detail"><PortalShot variant="detail" shot={cover.detail} label={cover.detail.label} locale={locale} loading="eager" /></div>
       </div>
-      <p class="ds-meta-sm portal-cover__note">{cover.note}</p>
     </div>
   </section>
 
   <div class="portal-sheet">
     <div class="ds-container portal-facts"><MetaList layout="facts" items={copy.facts} /></div>
 
-    <section class="ds-container ds-section portal-module" id="problem" aria-labelledby="problem-title">
-      <div class="portal-split">
-        <div class="portal-split__text">
-          <p class="ds-meta-sm portal-label">{problem.label}</p>
-          <h2 id="problem-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{problem.thesis}</h2>
-          <p class="ds-body-lg portal-body">{problem.body}</p>
-          <figure class="portal-before" data-motion="fade-image">
-            <img src={problem.before.src} width="1426" height="440" alt={problem.before.alt} loading="lazy" decoding="async" />
-            <figcaption class="ds-body-sm portal-before__caption">{problem.before.caption}</figcaption>
-          </figure>
-        </div>
-        <div class="portal-plate portal-split__media" data-motion="fade-image">
-          <PortalShot shot={problem.after} caption={problem.after.caption} locale={locale} sizes={WIDE} />
-        </div>
-      </div>
-    </section>
-
-    <section class="ds-container ds-section portal-module" id="system" aria-labelledby="system-title">
+    {/* ---------- 01 Diagnosis ---------- */}
+    <section class="ds-container ds-section portal-module" id="diagnosis" aria-labelledby="diagnosis-title">
       <div class="portal-head">
-        <p class="ds-meta-sm portal-label">{flow.label}</p>
+        <p class="ds-meta-sm portal-label">{diagnosis.label}</p>
         <div class="portal-head__text">
-          <h2 id="system-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{flow.thesis}</h2>
-          <p class="ds-body-lg portal-body">{flow.body}</p>
+          <h2 id="diagnosis-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{diagnosis.thesis}</h2>
+          <p class="ds-body-lg portal-body">{diagnosis.body}</p>
         </div>
       </div>
-      <ol class="portal-flow" data-motion-group data-motion-stagger="tight">
-        {flow.steps.map((step, i) => (
-          <li class="portal-flow__step" data-motion="rise">
-            <span class="ds-meta-xs portal-flow__index" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
-            <span class="ds-heading-xl portal-flow__name">{step.name}</span>
-            <span class="ds-body-sm portal-flow__text">{step.text}</span>
-          </li>
+      <div class="portal-diagnosis">
+        {diagnosis.evidence.map(({ shot, findings }: { shot: ArchiveShot; findings: { symptom: string; direction: string }[] }) => (
+          <div class="portal-diagnosis__row">
+            {/* A real link to the archival file; the site script upgrades it to MediaZoom. */}
+            <figure class="portal-archive" data-motion="fade-image">
+              <a class="portal-archive__link" href={shot.src} data-astro-reload data-zoom-trigger data-zoom-src={shot.src}
+                data-zoom-native="true" data-zoom-alt={shot.alt} data-zoom-caption={shot.caption} aria-label={`${zoomLabel}: ${shot.alt}`}>
+                <img src={shot.src} width={shot.width} height={shot.height} alt={shot.alt} loading="lazy" decoding="async" />
+                <span class="ds-meta-xs portal-archive__zoom" aria-hidden="true">+</span>
+              </a>
+              <figcaption class="ds-body-sm portal-archive__caption">{shot.caption}</figcaption>
+            </figure>
+            <ol class="portal-findings" data-motion-group data-motion-stagger="tight">
+              {findings.map(finding => (
+                <li class="portal-findings__item" data-motion="rise">
+                  <p class="ds-meta-xs portal-findings__key">{diagnosis.observedLabel}</p>
+                  <p class="ds-body-base portal-findings__symptom">{finding.symptom}</p>
+                  <p class="ds-meta-xs portal-findings__key portal-findings__key--direction">{diagnosis.directionLabel}</p>
+                  <p class="ds-body-base portal-findings__direction">{finding.direction}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
         ))}
-      </ol>
+        <div class="portal-plate portal-diagnosis__after" data-motion="fade-image">
+          <PortalShot shot={diagnosis.after} caption={diagnosis.after.caption} locale={locale} sizes={WIDE} />
+        </div>
+      </div>
     </section>
 
+    {/* ---------- 02 Architecture ---------- */}
+    <section class="ds-container ds-section portal-module" id="architecture" aria-labelledby="architecture-title">
+      <div class="portal-head">
+        <p class="ds-meta-sm portal-label">{arch.label}</p>
+        <div class="portal-head__text">
+          <h2 id="architecture-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{arch.thesis}</h2>
+          <p class="ds-body-lg portal-body">{arch.body}</p>
+        </div>
+      </div>
+      <figure class="portal-arch">
+        <div class="portal-arch__map" data-motion-group data-motion-stagger="tight">
+          <div class="portal-arch__col portal-arch__col--in" data-motion="rise">
+            <p class="ds-meta-xs portal-arch__kicker">{arch.inputsLabel}</p>
+            <ul class="portal-arch__inputs">
+              {arch.inputs.map(input => (
+                <li class="portal-arch__node portal-arch__node--input">
+                  <span class="ds-heading-xl portal-arch__name">{input.name}</span>
+                  <span class="ds-body-sm portal-arch__text">{input.text}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <span class="portal-arch__link" data-motion="draw" aria-hidden="true"></span>
+          <div class="portal-arch__col" data-motion="rise">
+            <div class="portal-arch__node portal-arch__node--core">
+              <span class="ds-heading-xl portal-arch__name">{arch.spec.name}</span>
+              <span class="ds-body-sm portal-arch__text">{arch.spec.text}</span>
+              <ul class="portal-arch__chips" aria-label={arch.spec.text}>
+                {arch.spec.provenance.map(item => <li class="ds-meta-xs portal-arch__chip">{item}</li>)}
+              </ul>
+              <ul class="portal-arch__states">
+                {arch.spec.states.map(state => <li class="ds-body-sm portal-arch__state">{state}</li>)}
+              </ul>
+              <span class="ds-body-sm portal-arch__rule">{arch.spec.rule}</span>
+            </div>
+          </div>
+          <span class="portal-arch__link" data-motion="draw" aria-hidden="true"></span>
+          <div class="portal-arch__col" data-motion="rise">
+            <div class="portal-arch__node portal-arch__node--core">
+              <span class="ds-heading-xl portal-arch__name">{arch.cart.name}</span>
+              <span class="ds-body-sm portal-arch__text">{arch.cart.text}</span>
+              <ul class="portal-arch__states">
+                {arch.cart.states.map(state => <li class="ds-body-sm portal-arch__state">{state}</li>)}
+              </ul>
+              <span class="ds-body-sm portal-arch__rule">{arch.cart.loop}</span>
+            </div>
+          </div>
+          <span class="portal-arch__link" data-motion="draw" aria-hidden="true"></span>
+          <div class="portal-arch__col portal-arch__col--end" data-motion="rise">
+            <div class="portal-arch__node">
+              <span class="ds-heading-xl portal-arch__name">{arch.supply.name}</span>
+              <span class="ds-body-sm portal-arch__text">{arch.supply.text}</span>
+            </div>
+            <div class="portal-arch__node">
+              <span class="ds-heading-xl portal-arch__name">{arch.order.name}</span>
+              <span class="ds-body-sm portal-arch__text">{arch.order.text}</span>
+            </div>
+          </div>
+        </div>
+        <ol class="portal-arch__bands" aria-hidden="true">
+          {arch.bands.map(band => <li class="ds-meta-xs portal-arch__band">{band}</li>)}
+        </ol>
+        <figcaption class="ds-body-sm portal-arch__note">{arch.note}</figcaption>
+      </figure>
+    </section>
+
+    {/* ---------- 03 The source line ---------- */}
     <section class="ds-container ds-section portal-module" id="decision" aria-labelledby="decision-title">
       <div class="portal-head">
         <p class="ds-meta-sm portal-label">{decision.label}</p>
@@ -94,18 +182,30 @@ const WIDE = '(min-width: 1024px) 66vw, 100vw';
           <p class="ds-body-lg portal-body">{decision.body}</p>
         </div>
       </div>
-      <div class="portal-pair">
-        <div class="portal-plate portal-plate--stack" data-motion="fade-image">
-          <PortalShot variant="native" shot={decision.compare} caption={decision.compare.caption} locale={locale} sizes={WIDE} />
-          <PortalShot shot={decision.confirmed} caption={decision.confirmed.caption} locale={locale} variant="strip" sizes={WIDE} />
-        </div>
+      <ol class="portal-line" data-motion-group data-motion-stagger="base">
+        {decision.stages.map((stage, i) => (
+          <li class="portal-line__stage" data-motion="rise">
+            <div class="portal-line__text">
+              <span class="ds-meta-xs portal-line__index" aria-hidden="true">{index(i)}</span>
+              <h3 class="ds-heading-xl portal-line__name">{stage.name}</h3>
+              <p class="ds-body-sm portal-line__body">{stage.text}</p>
+            </div>
+            <div class="portal-line__media">
+              <PortalShot variant="native" shot={stage.shot} locale={locale} sizes={STAGE} />
+            </div>
+          </li>
+        ))}
+      </ol>
+      <div class="portal-line__after">
         <aside class="portal-note" aria-label={decision.why.label}>
           <p class="ds-meta-sm portal-note__label">{decision.why.label}</p>
           <p class="ds-body-base portal-note__text">{decision.why.text}</p>
         </aside>
+        <p class="ds-body-sm portal-line__note">{decision.note}</p>
       </div>
     </section>
 
+    {/* ---------- 04 Product and price ---------- */}
     <section class="ds-container ds-section portal-module" id="verification" aria-labelledby="verify-title">
       <div class="portal-head">
         <p class="ds-meta-sm portal-label">{verify.label}</p>
@@ -129,6 +229,7 @@ const WIDE = '(min-width: 1024px) 66vw, 100vw';
       </div>
     </section>
 
+    {/* ---------- 05 Commercial review ---------- */}
     <section class="portal-band ds-section" id="commercial-review" aria-labelledby="commerce-title">
       <div class="ds-container">
         <div class="portal-head">
@@ -138,6 +239,15 @@ const WIDE = '(min-width: 1024px) 66vw, 100vw';
             <p class="ds-body-lg portal-body">{commerce.body}</p>
           </div>
         </div>
+        <ol class="portal-chain" data-motion-group data-motion-stagger="tight">
+          {commerce.chain.map((step, i) => (
+            <li class="portal-chain__step" data-motion="rise">
+              <span class="ds-meta-xs portal-chain__index" aria-hidden="true">{index(i)}</span>
+              <span class="ds-heading-xl">{step.term}</span>
+              <span class="ds-body-sm portal-chain__text">{step.text}</span>
+            </li>
+          ))}
+        </ol>
         <div class="portal-commerce" data-motion="fade-image">
           <PortalShot variant="native" shot={commerce.line} caption={commerce.line.caption} locale={locale} />
           <PortalShot variant="panel" class="portal-commerce__bar" shot={commerce.bar} caption={commerce.bar.caption} locale={locale} />
@@ -145,12 +255,16 @@ const WIDE = '(min-width: 1024px) 66vw, 100vw';
       </div>
     </section>
 
+    {/* ---------- 06 Fulfillment ---------- */}
     <section class="ds-container ds-section portal-module" id="fulfillment" aria-labelledby="supply-title">
       <div class="portal-head">
         <p class="ds-meta-sm portal-label">{supply.label}</p>
         <div class="portal-head__text">
           <h2 id="supply-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{supply.thesis}</h2>
           <p class="ds-body-lg portal-body">{supply.body}</p>
+          <ul class="portal-dims">
+            {supply.dims.map(dim => <li class="ds-meta-xs portal-dims__item">{dim}</li>)}
+          </ul>
         </div>
       </div>
       <div class="portal-plate portal-plate--wide" data-motion="fade-image">
@@ -158,6 +272,100 @@ const WIDE = '(min-width: 1024px) 66vw, 100vw';
       </div>
     </section>
 
+    {/* ---------- 07 Design system ---------- */}
+    <section class="ds-container ds-section portal-module" id="design-system" aria-labelledby="system-title">
+      <div class="portal-head">
+        <p class="ds-meta-sm portal-label">{system.label}</p>
+        <div class="portal-head__text">
+          <h2 id="system-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{system.thesis}</h2>
+          <p class="ds-body-lg portal-body">{system.body}</p>
+        </div>
+      </div>
+      <div class="portal-system">
+        <div class="portal-system__foundation">
+          <div class="portal-system__colors">
+            <p class="ds-meta-xs portal-system__kicker">{system.colorLabel}</p>
+            <ul class="portal-swatches">
+              {system.colors.map(c => (
+                <li class="portal-swatch">
+                  <span class="portal-swatch__chip" style={`background:${color(c.token)}`}></span>
+                  <span class="ds-body-sm portal-swatch__role">{c.role}</span>
+                  <span class="ds-meta-xs portal-swatch__value">{color(c.token)}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div class="portal-system__type">
+            <p class="ds-meta-xs portal-system__kicker">{system.typeLabel}</p>
+            <ul class="portal-type">
+              {tokens.type.map(t => (
+                <li class="portal-type__step">
+                  <span class="ds-meta-xs portal-type__name">{t.step}</span>
+                  <span class="ds-body-sm">{t.size.replace('px', '')}/{t.lineHeight.replace('px', '')}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div class="portal-family portal-family--side">
+          <div class="portal-family__head">
+            <p class="ds-heading-xl portal-family__name">{rows.name}</p>
+            <p class="ds-body-sm portal-family__argument">{rows.argument}</p>
+          </div>
+          <ul class="portal-family__states">
+            {rows.states.map(s => (
+              <li class="portal-family__state">
+                <p class="ds-meta-xs portal-family__label">{s.label}</p>
+                <PortalShot variant="native" locale={locale} shot={specimen(s.key, `${rows.name} · ${s.label}`)} sizes="(min-width: 1024px) 1028px, 100vw" />
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {[upload, availability, plans].map(family => (
+          <div class:list={['portal-family', 'portal-family--across', family === availability && 'portal-family--compact portal-family--side']}>
+            <div class="portal-family__head">
+              <p class="ds-heading-xl portal-family__name">{family.name}</p>
+              <p class="ds-body-sm portal-family__argument">{family.argument}</p>
+            </div>
+            <ul class="portal-family__states" tabindex={family === availability ? undefined : 0} aria-label={family.name} data-overflow-ok>
+              {family.states.map(s => (
+                <li class="portal-family__state">
+                  <p class="ds-meta-xs portal-family__label">{s.label}</p>
+                  <PortalShot variant="native" locale={locale} shot={specimen(s.key, `${family.name} · ${s.label}`)} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+        <p class="ds-body-sm portal-system__note">{system.note}</p>
+      </div>
+    </section>
+
+    {/* ---------- 08 Process and ownership ---------- */}
+    <section class="ds-container ds-section portal-module" id="process" aria-labelledby="process-title">
+      <div class="portal-head">
+        <p class="ds-meta-sm portal-label">{process.label}</p>
+        <div class="portal-head__text">
+          <h2 id="process-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{process.thesis}</h2>
+          <p class="ds-body-lg portal-body">{process.body}</p>
+        </div>
+      </div>
+      <ol class="portal-process" data-motion-group data-motion-stagger="tight">
+        {process.steps.map((step, i) => (
+          <li class="portal-process__step" data-motion="rise">
+            <span class="ds-meta-xs portal-process__phase">{index(i)} · {step.phase}</span>
+            <h3 class="ds-heading-xl portal-process__title">{step.title}</h3>
+            <p class="ds-body-sm portal-process__text">{step.text}</p>
+            <p class="ds-body-sm portal-process__source">{step.source}</p>
+          </li>
+        ))}
+      </ol>
+      <p class="ds-body-sm portal-process__note">{process.note}</p>
+    </section>
+
+    {/* ---------- Outcome ---------- */}
     <section class="ds-container ds-section" id="outcome" aria-labelledby="outcome-title">
       <div class="portal-outcome">
         <div class="portal-outcome__lead">
@@ -165,11 +373,19 @@ const WIDE = '(min-width: 1024px) 66vw, 100vw';
           <h2 id="outcome-title" class="ds-heading-4xl portal-outcome__thesis" data-motion="fade">{outcome.thesis}</h2>
           <p class="ds-body-lg portal-outcome__body">{outcome.body}</p>
         </div>
+        <dl class="portal-costs portal-outcome__evidence" data-motion-group data-motion-stagger="tight">
+          {outcome.evidence.map(item => (
+            <div class="portal-costs__item" data-motion="rise">
+              <dt class="ds-heading-xl">{item.term}</dt>
+              <dd class="ds-body-base portal-costs__text">{item.text}</dd>
+            </div>
+          ))}
+        </dl>
         <div class="portal-outcome__costs">
           <p class="ds-meta-sm portal-label">{outcome.costLabel}</p>
-          <dl class="portal-costs" data-motion-group data-motion-stagger="tight">
+          <dl class="portal-costs portal-costs--row">
             {outcome.costs.map(cost => (
-              <div class="portal-costs__item" data-motion="rise">
+              <div class="portal-costs__item">
                 <dt class="ds-heading-xl">{cost.term}</dt>
                 <dd class="ds-body-base portal-costs__text">{cost.text}</dd>
               </div>
@@ -198,18 +414,20 @@ const WIDE = '(min-width: 1024px) 66vw, 100vw';
   .portal-cover__head { display: grid; gap: var(--flow-text); }
   .portal-cover__eyebrow { color: var(--text-subtle); }
   .portal-cover__title { margin: 0; }
-  .portal-cover__promise { margin: 0; max-inline-size: var(--measure-case); }
+  .portal-cover__lead { display: grid; gap: var(--flow-pair); max-inline-size: var(--measure-case); }
+  .portal-cover__promise, .portal-cover__role { margin: 0; }
+  .portal-cover__role { color: var(--text-subtle); }
   .portal-cover__stage { display: grid; gap: var(--flow-node); align-items: start; }
   .portal-cover__stage :global(.portal-shot__frame) { box-shadow: var(--shadow-md); }
   .portal-cover__detail { padding: var(--space-4); background: var(--surface-default); border-radius: var(--radius-md); }
   .portal-cover__detail :global(.portal-shot__frame) { border: 0; border-radius: 0; box-shadow: none; }
-  .portal-cover__note { color: var(--text-subtle); }
+  .portal-cover__note { margin: 0; max-inline-size: var(--measure-case); padding-block-start: var(--space-3); color: var(--text-subtle); border-block-start: var(--border-width) solid var(--border-strong); }
 
   /* ---------- Sheet + shared module grammar ---------- */
   /* The sheet owns the section step, as main does for direct children
      (global.css, `main > * + *`): the modules sit one level deeper here. */
   /* Module step is one notch tighter than the site's section gap (192 at xl):
-     eight modules at 192 read as an endless scroll, not a skim. */
+     nine modules at 192 read as an endless scroll, not a skim. */
   .portal-sheet { --portal-step: var(--space-24); position: relative; z-index: 1; padding-block-end: var(--portal-step); background: var(--surface-default); }
   .portal-sheet > * + * { margin-block-start: var(--portal-step); }
   .portal-facts { padding-block-start: var(--flow-group); }
@@ -229,35 +447,79 @@ const WIDE = '(min-width: 1024px) 66vw, 100vw';
     border-radius: var(--radius-media);
   }
 
-  /* ---------- 01 Problem ---------- */
-  .portal-split { display: grid; gap: var(--flow-group); }
-  .portal-split__text { display: grid; gap: var(--flow-text); align-content: start; }
-  .portal-before { display: grid; gap: var(--flow-pair); margin: var(--flow-pair) 0 0; }
-  .portal-before { max-inline-size: var(--measure-case); }
-  .portal-before img {
-    display: block; inline-size: 100%; block-size: auto;
+  /* ---------- 01 Diagnosis: archival evidence → observed → direction ---------- */
+  .portal-diagnosis { display: grid; gap: var(--flow-group); }
+  .portal-diagnosis__row { display: grid; gap: var(--flow-node); align-items: start; }
+  .portal-archive { display: grid; gap: var(--flow-pair); min-inline-size: 0; margin: 0; }
+  .portal-archive__link {
+    position: relative; display: block; overflow: hidden;
     border: var(--border-width) solid var(--border-default);
     border-radius: var(--radius-md);
+    background: var(--surface-default);
   }
-  .portal-before__caption { color: var(--text-muted); }
-
-  /* ---------- 02 System ---------- */
-  .portal-flow {
-    display: grid;
-    gap: var(--flow-text) var(--gutter);
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin: 0; padding: 0; list-style: none;
+  .portal-archive__link img { display: block; inline-size: 100%; block-size: auto; }
+  .portal-archive__link:focus-visible { outline: var(--focus-ring-width) solid var(--focus-ring-color); outline-offset: var(--focus-ring-width); }
+  .portal-archive__zoom {
+    position: absolute; inset-block-end: var(--space-2); inset-inline-end: var(--space-2);
+    display: grid; place-items: center;
+    inline-size: var(--space-8); block-size: var(--space-8);
+    background: var(--surface-default); color: var(--text-default);
+    border: var(--border-width) solid var(--border-default); border-radius: var(--radius-full);
   }
-  .portal-flow__step {
-    display: grid; gap: var(--flow-pair); align-content: start;
+  .portal-archive__caption { color: var(--text-muted); }
+  .portal-findings { display: grid; gap: var(--flow-text); margin: 0; padding: 0; list-style: none; }
+  .portal-findings__item {
+    display: grid; gap: var(--space-1);
     padding-block-start: var(--space-4);
     border-block-start: var(--border-width) solid var(--border-strong);
   }
-  .portal-flow__index { color: var(--text-meta); }
-  .portal-flow__text { color: var(--text-subtle); }
+  .portal-findings__key, .portal-findings__symptom, .portal-findings__direction { margin: 0; }
+  .portal-findings__key { color: var(--text-meta); }
+  .portal-findings__key--direction { margin-block-start: var(--space-3); }
+  .portal-findings__symptom { color: var(--text-subtle); }
+  .portal-findings__direction { color: var(--text-default); }
+  @media (--can-hover) {
+    .portal-archive__link:hover .portal-archive__zoom { background: var(--surface-subtle); }
+  }
 
-  /* ---------- 03 Decision / 04 Verification ---------- */
-  .portal-pair { display: grid; gap: var(--flow-group); align-items: start; }
+  /* ---------- 02 Architecture: one procurement object, three kinds of certainty ---------- */
+  .portal-arch { display: grid; gap: var(--flow-node); margin: 0; padding: var(--space-4); background: var(--surface-portal-native); border-radius: var(--radius-media); }
+  .portal-arch__map { display: grid; gap: 0; }
+  .portal-arch__col { display: grid; gap: var(--space-3); align-content: start; min-inline-size: 0; }
+  .portal-arch__kicker { margin: 0; color: var(--text-meta); }
+  .portal-arch__inputs { display: grid; gap: var(--space-2); margin: 0; padding: 0; list-style: none; }
+  .portal-arch__node {
+    display: grid; gap: var(--space-1); align-content: start;
+    padding: var(--space-4);
+    background: var(--surface-default);
+    border: var(--border-width) solid var(--border-default);
+    border-radius: var(--radius-md);
+  }
+  .portal-arch__node--input { padding-block: var(--space-3); }
+  .portal-arch__node--core { gap: var(--space-2); border-color: var(--border-strong); }
+  .portal-arch__name { display: block; }
+  .portal-arch__text { color: var(--text-subtle); }
+  .portal-arch__chips, .portal-arch__states { display: flex; flex-wrap: wrap; gap: var(--space-1); margin: 0; padding: 0; list-style: none; }
+  .portal-arch__chip { padding: var(--space-1) var(--space-2); color: var(--text-subtle); background: var(--surface-subtle); border-radius: var(--radius-sm); }
+  .portal-arch__state { padding: 0 var(--space-2); border: var(--border-width) solid var(--border-default); border-radius: var(--radius-full); }
+  .portal-arch__rule { padding-block-start: var(--space-2); border-block-start: var(--border-width) solid var(--border-default); }
+  /* Connector between stages: vertical on phones, horizontal from bp-lg. */
+  .portal-arch__link { justify-self: center; inline-size: var(--border-width); block-size: var(--space-6); background: var(--border-strong); }
+  .portal-arch__col--end { gap: var(--space-2); }
+  .portal-arch__bands { display: none; margin: 0; padding: 0; list-style: none; }
+  .portal-arch__note { max-inline-size: var(--measure-case); color: var(--text-muted); }
+
+  /* ---------- 03 Source line: one object through four real states ---------- */
+  .portal-line { display: grid; gap: var(--flow-node); margin: 0; padding: var(--space-4); list-style: none; background: var(--surface-plate); border-radius: var(--radius-media); }
+  .portal-line__stage { display: grid; gap: var(--space-4); min-inline-size: 0; }
+  .portal-line__stage + .portal-line__stage { padding-block-start: var(--flow-node); border-block-start: var(--border-width) solid var(--border-default); }
+  .portal-line__text { display: grid; gap: var(--flow-pair); align-content: start; }
+  .portal-line__index { color: var(--text-meta); }
+  .portal-line__name, .portal-line__body { margin: 0; }
+  .portal-line__body { max-inline-size: 40ch; color: var(--text-subtle); }
+  .portal-line__media { min-inline-size: 0; }
+  .portal-line__after { display: grid; gap: var(--flow-node); }
+  .portal-line__note { margin: 0; max-inline-size: var(--measure-case); color: var(--text-muted); }
   .portal-note {
     display: grid; gap: var(--flow-pair);
     padding-block-start: var(--space-4);
@@ -265,6 +527,9 @@ const WIDE = '(min-width: 1024px) 66vw, 100vw';
   }
   .portal-note__label, .portal-note__text { margin: 0; }
   .portal-note__label { color: var(--text-meta); }
+
+  /* ---------- 04 Verification ---------- */
+  .portal-pair { display: grid; gap: var(--flow-group); align-items: start; }
   .portal-proofs { display: grid; gap: var(--flow-text); margin: 0; }
   .portal-proofs__item {
     display: grid; gap: var(--flow-pair);
@@ -272,16 +537,63 @@ const WIDE = '(min-width: 1024px) 66vw, 100vw';
     border-block-start: var(--border-width) solid var(--border-strong);
   }
   .portal-proofs__text { margin: 0; color: var(--text-subtle); }
-
-  /* ---------- 05 Commercial review: calm context for native modules ---------- */
-  .portal-band { padding-block: var(--space-16); background: var(--surface-portal-context); color: var(--text-default); }
-  .portal-commerce { display: grid; gap: var(--flow-node); margin-block-start: var(--flow-group); justify-items: center; }
-  .portal-commerce :global(.portal-shot) { inline-size: 100%; }
   #verification .portal-plate { padding-block-start: var(--space-8); }
 
+  /* ---------- 05 Commercial review: decision chain over native modules ---------- */
+  .portal-band { padding-block: var(--space-16); background: var(--surface-portal-context); color: var(--text-default); }
+  .portal-chain {
+    display: grid; gap: var(--flow-text);
+    margin: var(--flow-group) 0 0; padding: 0; list-style: none;
+  }
+  .portal-chain__step {
+    display: grid; gap: var(--flow-pair); align-content: start;
+    padding-block-start: var(--space-4);
+    border-block-start: var(--border-width) solid var(--border-strong);
+  }
+  .portal-chain__index { color: var(--text-meta); }
+  .portal-chain__text { color: var(--text-subtle); }
+  .portal-commerce { display: grid; gap: var(--flow-node); margin-block-start: var(--flow-group); justify-items: center; }
+  .portal-commerce :global(.portal-shot) { inline-size: 100%; }
+
   /* ---------- 06 Fulfillment ---------- */
+  .portal-dims { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: 0; padding: 0; list-style: none; }
+  .portal-dims__item { padding: var(--space-1) var(--space-3); color: var(--text-subtle); border: var(--border-width) solid var(--border-default); border-radius: var(--radius-full); }
   .portal-plate--wide { justify-items: center; }
   .portal-plate--wide :global(.portal-shot) { inline-size: 100%; }
+
+  /* ---------- 07 Design system: foundation + four domain families ---------- */
+  .portal-system { display: grid; gap: var(--flow-group); }
+  .portal-system__foundation { display: grid; gap: var(--flow-node); padding: var(--space-4); background: var(--surface-portal-native); border-radius: var(--radius-media); }
+  .portal-system__kicker { margin: 0 0 var(--space-3); color: var(--text-meta); }
+  .portal-swatches { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); margin: 0; padding: 0; list-style: none; }
+  .portal-swatch { display: grid; grid-template-columns: var(--space-8) minmax(0, 1fr); column-gap: var(--space-2); align-items: center; }
+  .portal-swatch__chip { grid-row: span 2; inline-size: var(--space-8); block-size: var(--space-8); border: var(--border-width) solid var(--border-default); border-radius: var(--radius-sm); }
+  .portal-swatch__value { color: var(--text-muted); }
+  .portal-type { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); margin: 0; padding: 0; list-style: none; }
+  .portal-type__step { display: grid; }
+  .portal-type__name { color: var(--text-meta); }
+  .portal-family { display: grid; gap: var(--flow-text); align-content: start; min-inline-size: 0; }
+  .portal-family__head { display: grid; gap: var(--space-1); align-content: start; padding-block-start: var(--space-4); border-block-start: var(--border-width) solid var(--border-strong); }
+  .portal-family__name, .portal-family__argument, .portal-family__label { margin: 0; }
+  .portal-family__argument { max-inline-size: 52ch; color: var(--text-subtle); }
+  .portal-family__states { display: grid; gap: var(--space-4); margin: 0; padding: 0; list-style: none; }
+  .portal-family__state { display: grid; gap: var(--space-2); min-inline-size: 0; }
+  .portal-family__label { color: var(--text-meta); }
+  .portal-family--compact .portal-family__states { display: flex; flex-wrap: wrap; gap: var(--space-4) var(--space-8); }
+  .portal-system__note { margin: 0; max-inline-size: var(--measure-case); color: var(--text-muted); }
+
+  /* ---------- 08 Process ---------- */
+  .portal-process { display: grid; gap: var(--flow-text); margin: 0; padding: 0; list-style: none; }
+  .portal-process__step {
+    display: grid; gap: var(--flow-pair); align-content: start;
+    padding-block-start: var(--space-4);
+    border-block-start: var(--border-width) solid var(--border-strong);
+  }
+  .portal-process__phase { color: var(--text-meta); }
+  .portal-process__title, .portal-process__text, .portal-process__source { margin: 0; }
+  .portal-process__text { color: var(--text-subtle); }
+  .portal-process__source { color: var(--text-muted); overflow-wrap: anywhere; }
+  .portal-process__note { margin: 0; max-inline-size: var(--measure-case); color: var(--text-muted); }
 
   /* ---------- Outcome ---------- */
   .portal-outcome {
@@ -315,14 +627,27 @@ const WIDE = '(min-width: 1024px) 66vw, 100vw';
     .portal-cta:hover { background: var(--surface-action-primary-hover); }
   }
   @media (--below-bp-md) {
+    /* Wide component states scroll natively side by side instead of stacking three tall cards. */
+    .portal-family--across:not(.portal-family--compact) .portal-family__states {
+      grid-auto-flow: column; grid-auto-columns: min(85%, 20.5rem);
+      overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory;
+      padding-block-end: var(--space-2);
+    }
+    .portal-family--across:not(.portal-family--compact) .portal-family__state { scroll-snap-align: start; }
+    .portal-family__states:focus-visible { outline: var(--focus-ring-width) solid var(--focus-ring-color); outline-offset: var(--focus-ring-width); }
     .portal-cover__detail { display: none; }
     .portal-cover__stage :global(.portal-shot__label) { display: none; }
   }
 
   /* ---------- Tablet ---------- */
   @media (--bp-md) {
-    .portal-plate { padding: var(--space-8); }
-    .portal-flow { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .portal-plate, .portal-line, .portal-arch, .portal-system__foundation { padding: var(--space-8); }
+    .portal-chain { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .portal-process { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .portal-costs--row { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--gutter); }
+    .portal-swatches { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .portal-system__foundation { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); column-gap: var(--gutter); }
+    .portal-family--across:not(.portal-family--compact) .portal-family__states { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--space-4); }
     .portal-outcome { padding: var(--space-12); }
   }
 
@@ -333,34 +658,59 @@ const WIDE = '(min-width: 1024px) 66vw, 100vw';
     .portal-cover__head {
       grid-template-columns: repeat(12, minmax(0, 1fr));
       column-gap: var(--gutter);
-      align-items: end;
+      align-items: start;
     }
     .portal-cover__eyebrow { grid-column: 1 / -1; }
-    .portal-cover__title { grid-column: 1 / span 7; max-inline-size: 18ch; }
-    .portal-cover__promise { grid-column: 8 / -1; }
+    .portal-cover__title { grid-column: 1 / span 7; grid-row: 2; max-inline-size: 18ch; }
+    .portal-cover__lead { grid-column: 8 / -1; grid-row: 2 / span 2; }
+    .portal-cover__note { grid-column: 1 / span 6; grid-row: 3; }
     .portal-cover__stage { grid-template-columns: minmax(0, 5fr) minmax(0, 3fr); gap: var(--gutter); align-items: center; }
     .portal-cover__detail { inline-size: 100%; max-inline-size: calc(var(--space-48) * 2); justify-self: end; border-inline-start: var(--border-width) solid var(--border-default); }
     #verification .portal-plate { padding-block-start: var(--space-12); }
 
-    .portal-head, .portal-split, .portal-pair, .portal-outcome {
+    .portal-head, .portal-pair, .portal-outcome, .portal-diagnosis__row, .portal-line__stage, .portal-line__after {
       grid-template-columns: repeat(12, minmax(0, 1fr));
       column-gap: var(--gutter);
     }
     .portal-head > .portal-label { grid-column: 1 / span 3; padding-block-start: var(--space-2); }
     .portal-head__text { grid-column: 4 / -1; }
 
-    .portal-split__text { grid-column: 1 / span 4; }
-    .portal-split__media { grid-column: 5 / -1; }
+    .portal-diagnosis__row > .portal-archive { grid-column: 1 / span 8; }
+    .portal-diagnosis__row > .portal-findings { grid-column: 9 / -1; }
+    .portal-diagnosis__after { margin-inline-start: calc((100% + var(--gutter)) / 12 * 3); }
+
+    .portal-arch__map { grid-template-columns: minmax(0, 1fr) var(--space-8) minmax(0, 1.25fr) var(--space-8) minmax(0, 1.1fr) var(--space-8) minmax(0, 1fr); align-items: center; }
+    .portal-arch__link { inline-size: 100%; block-size: var(--border-width); }
+    .portal-arch__col--in, .portal-arch__col--end { align-self: stretch; align-content: center; }
+    .portal-arch__bands {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) var(--space-8) minmax(0, 1.25fr) var(--space-8) minmax(0, 1.1fr) var(--space-8) minmax(0, 1fr);
+    }
+    .portal-arch__band { padding-block-start: var(--space-2); color: var(--text-meta); border-block-start: var(--border-width) solid var(--border-strong); }
+    .portal-arch__band:nth-child(1) { grid-column: 3; }
+    .portal-arch__band:nth-child(2) { grid-column: 5; }
+    .portal-arch__band:nth-child(3) { grid-column: 7; }
+
+    .portal-line__text { grid-column: 1 / span 3; }
+    .portal-line__media { grid-column: 4 / -1; }
+    .portal-line__after > .portal-note { grid-column: 1 / span 5; }
+    .portal-line__after > .portal-line__note { grid-column: 7 / -1; padding-block-start: var(--space-4); }
 
     .portal-pair > :first-child { grid-column: 1 / span 8; }
     .portal-pair > :last-child { grid-column: 10 / -1; }
 
-    .portal-flow { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+    /* Narrow families keep their name beside the states; wide ones need the full row. */
+    .portal-family--side { grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); }
+    .portal-family--side > .portal-family__head { grid-column: 1 / span 3; }
+    .portal-family--side > .portal-family__states { grid-column: 4 / -1; }
+
+    .portal-process { grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--gutter); }
 
     .portal-band .portal-head { margin-block-end: 0; }
 
     .portal-outcome__lead { grid-column: 1 / span 5; }
-    .portal-outcome__costs { grid-column: 7 / -1; }
+    .portal-outcome__evidence { grid-column: 7 / -1; }
+    .portal-outcome__costs { grid-column: 1 / -1; }
     .portal-outcome__cta { grid-column: 1 / -1; }
   }
 </style>
