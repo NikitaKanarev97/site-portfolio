@@ -1,0 +1,116 @@
+"""Pawly Case V2 crops. Usage: python crops.py <captures-dir> <public-out-dir> <manifest.json>
+
+Every crop is a full-width horizontal slice (0..390 CSS px) of a full-document DPR 2 capture. Vertical bounds come
+from the measured DOM boxes in captures.json: the union of the named sections, extended by PAD CSS px into the
+genuine 12 px gap around them, so rounded card corners and shadows sit on the product's own page surface.
+No pixel is painted, masked or retouched; the output is the source crop re-encoded as WebP (quality 90).
+"""
+import hashlib, json, sys
+from pathlib import Path
+from PIL import Image
+
+src, dst, manifest_path = map(Path, sys.argv[1:4])
+dst.mkdir(parents=True, exist_ok=True)
+caps = {}
+for f in ('captures.json', 'captures-partial.json'):
+    p = src / f
+    if p.exists():
+        caps.update({c['name']: c for c in json.loads(p.read_text('utf8'))['captures']})
+
+SEARCH = 48  # CSS px: how far an edge may move outward to clear a card's drop shadow (product shadow 0 12 24)
+# key: (shot, [(tag, class-prefix, nth match)], purpose)
+SPEC = {
+    'hero-status':      ('active-service-walking', [('section', '_status', 0), ('section', '_card', 0)], 'Hero: return expected, pickup photo received'),
+    'match-list':       ('walker-list', [('section', '_request', 0), ('section', '_results', 0)], '01 Walker list: request and the one recorded match'),
+    'match-profile':    ('walker-profile', [('section', '_section', 0)], '01 Walker profile: why this walker fits'),
+    # Inner crop: neighbouring panels shadow into the 12 px gaps, so no full-width slice has clean edges here.
+    'match-review':     ('booking-review', [('section', '_panel', 0)], '01 Booking review: before you confirm (card interior)', 'inner'),
+    'role-owner':       ('active-service-walking', [('section', '_card', 1), ('section', '_card', 2)], '02 Owner: walk updates and a static route preview'),
+    'role-walker':      ('walker-order-walking', [('section', '_card _hero', 0), ('section', 'j0wu', 0)], '02 Walker: deadline and handling notes'),
+    'branch-reserve':   ('replacement-no-reserve', [('section', '_decision', 0), ('section', '_panel', 0)], '03 Before pickup: no compatible reserve, nobody assigned'),
+    'branch-failed':    ('return-failed', [('section', '_proofCard', 0)], '03 At return: sending failed, photo saved'),
+    'proof-selected':   ('return-selected', [('section', '_proofCard', 0)], '04 Selected, not sent'),
+    'proof-confirmed':  ('return-confirmed', [('section', '_proofCard', 0)], '04 Return confirmed after retry'),
+    'proof-report':     ('order-details', [('section', '_hero', 0), ('section', '_card', 0)], '04 Owner report: Baikal is home, how the walk went'),
+    'settle-earnings':  ('walker-earnings', [('section', '_care', 0), ('section', '_section', 0)], '05 Walker earnings after the confirmed return'),
+    'settle-payment':   ('order-details', [('section', '_card pq6v_153', 0)], '05 Owner payment'),
+}
+
+
+def clean(im, y, ref):
+    """A row is clean when every sampled pixel equals the page surface (±2 per channel): no card, border or shadow."""
+    return all(max(abs(a - b) for a, b in zip(im.getpixel((x, y)), ref)) <= 2 for x in range(0, 780, 3))
+
+
+def edge(im, start, step, ref):
+    """First clean device row moving outward from a section boundary (plus up to 8 more clean rows). Sections that
+    touch a neighbour with no gap fall back to the first clean row inside their own padding, at most 24 CSS px in."""
+    def scan(y, direction, limit):
+        for _ in range(limit):
+            if 0 <= y < im.height and clean(im, y, ref):
+                extra = 0
+                while extra < 8 and 0 <= y + direction < im.height and clean(im, y + direction, ref):
+                    y += direction; extra += 1
+                return y
+            y += direction
+    y = scan(start, step, SEARCH * 2)
+    if y is None:
+        y = scan(start - step, -step, 48)
+        if y is not None:  # inward: keep the clean row itself and stop there
+            while clean(im, y + step, ref): y += step
+    if y is None:
+        raise SystemExit(f'no clean edge within {SEARCH}px out or 24px in from device row {start}')
+    return y
+
+
+def find(cap, tag, prefix, nth):
+    seen, hits = set(), []
+    for b in cap['blocks']:
+        key = (b['y'], b['h'], b['x'])
+        if b['tag'] == tag and key not in seen and b['cls'].startswith(prefix):
+            seen.add(key)
+            hits.append(b)
+    return hits[nth]
+
+
+manifest = []
+for key, (shot, parts, purpose, *mode) in SPEC.items():
+    for locale in ('en', 'ru'):
+        cap = caps[f'{shot}-{locale}']
+        boxes = [find(cap, *p) for p in parts]
+        full = src / f'{shot}-{locale}-full.png'
+        im = Image.open(full).convert('RGB')
+        assert im.width == 780, (full, im.size)
+        top, bottom = min(b['y'] for b in boxes) * 2, max(b['y'] + b['h'] for b in boxes) * 2
+        ref = max((im.getpixel((2, y)) for y in range(top, bottom, 4)), key=sum)  # page surface: brightest margin pixel (shadows only darken)
+        if mode == ['inner']:
+            # 8 CSS px inside the card on every side: past its 1 px border and inside its 16 px corner arc
+            # (corner centre at 16,16; the point 8,8 is 11.3 px from it), so every pixel is card surface.
+            b = boxes[0]
+            rect = ((b['x'] + 8) * 2, (b['y'] + 8) * 2, (b['x'] + b['w'] - 8) * 2, (b['y'] + b['h'] - 8) * 2)
+            ref = im.getpixel((rect[0] + 2, rect[1] + 2))
+        else:
+            y0, y1 = edge(im, top - 1, -1, ref), edge(im, bottom, 1, ref) + 1
+            rect = (0, y0, 780, y1)
+        y0, y1 = rect[1], rect[3]
+        out = dst / f'{key}-{locale}.webp'
+        im.crop(rect).save(out, 'WEBP', quality=90, method=6)
+        manifest.append({
+            'key': key, 'locale': locale, 'purpose': purpose, 'file': out.as_posix(), 'width': rect[2] - rect[0], 'height': y1 - y0,
+            'cssWidth': (rect[2] - rect[0]) // 2, 'source': full.as_posix(), 'sourceSha256': hashlib.sha256(full.read_bytes()).hexdigest(),
+            'route': cap['url'], 'fixture': f"{cap['state']} / {cap['step']}", 'cropDevicePx': rect, 'pageSurface': ref,
+            'sections': [f"{b['tag']}.{b['cls'][:24]} y{b['y']} h{b['h']}" for b in boxes],
+            'sha256': hashlib.sha256(out.read_bytes()).hexdigest(),
+        })
+        print(f'{key}-{locale}: device y {y0}..{y1} ({(y1 - y0) / 2:.0f} css px), surface {ref}')
+manifest_path.write_text(json.dumps(manifest, indent=1, ensure_ascii=False) + '\n', 'utf8')
+
+# Site media index (src/data/pawly-case-v2-media.json): one entry per locale/key, plus the product's own pickup frame,
+# byte-copied from pawly/public/assets/proof/handover-pickup.webp at a327d73 (square, shown uncropped).
+import shutil
+photo_src = Path('D:/Claude-projects/PETS-walking/public/assets/proof/handover-pickup.webp')
+photo = dst / 'pickup-photo.webp'
+shutil.copyfile(photo_src, photo)
+index = {f"{m['locale']}/{m['key']}": {'src': '/' + Path(m['file']).as_posix().split('public/', 1)[1], 'width': m['width'], 'height': m['height']} for m in manifest}
+index['photo/pickup'] = {'src': '/media/pawly-case-v2/pickup-photo.webp', 'width': 900, 'height': 900, 'sha256': hashlib.sha256(photo.read_bytes()).hexdigest()}
+Path('src/data/pawly-case-v2-media.json').write_text(json.dumps(index, indent=1) + '\n', 'utf8')

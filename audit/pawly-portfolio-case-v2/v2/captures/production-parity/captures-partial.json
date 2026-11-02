@@ -1,0 +1,445 @@
+{
+ "product": "NikitaKanarev97/pawly",
+ "sha": "a327d73abb3e7872a6243301afc926de57dc868b",
+ "baseURL": "https://pawly-fawn.vercel.app",
+ "KEY": "pawly-wire-data-v4",
+ "clock": "2026-08-22T10:20:00.000Z",
+ "viewport": "390x844",
+ "dpr": 2,
+ "reducedMotion": "reduce",
+ "captures": [
+  {
+   "name": "active-service-walking-en",
+   "route": "/app/active-service",
+   "locale": "en",
+   "state": "walking",
+   "step": "none",
+   "docHeight": 1589,
+   "draft": "confirmed",
+   "pickupComplete": true,
+   "dropoffComplete": false,
+   "errors": [],
+   "url": "/app/active-service",
+   "h1": "Baikal is waiting for return confirmation",
+   "article": {
+    "x": 0,
+    "y": 56,
+    "w": 390,
+    "h": 1533
+   },
+   "blocks": [
+    {
+     "tag": "section",
+     "cls": "_status",
+     "text": "Today, 22 August · 45 min Baikal is waiting for return confirmation Re",
+     "x": 16,
+     "y": 116,
+     "w": 358,
+     "h": 313
+    },
+    {
+     "tag": "section",
+     "cls": "_card",
+     "text": "Handover photos Pickup photo · 14:05 View photo Waiting for return pho",
+     "x": 16,
+     "y": 441,
+     "w": 358,
+     "h": 418
+    },
+    {
+     "tag": "figure",
+     "cls": "_proof _leadProof",
+     "text": "Pickup photo · 14:05 View photo",
+     "x": 33,
+     "y": 491,
+     "w": 324,
+     "h": 295
+    },
+    {
+     "tag": "section",
+     "cls": "_card",
+     "text": "Walk updates Walker assigned Walker accepted the walk Pickup photo 14:",
+     "x": 16,
+     "y": 871,
+     "w": 358,
+     "h": 318
+    },
+    {
+     "tag": "section",
+     "cls": "_card",
+     "text": "Route preview A static preview, not the walker’s live location.",
+     "x": 16,
+     "y": 1201,
+     "w": 358,
+     "h": 232
+    }
+   ],
+   "text": "Baikal’s walk | Today, 22 August · 45 min | Baikal is waiting for return confirmation | Return is confirmed only by the drop-off photo. | Pickup | · Done | Walk | · Done | Return | · Now | Picked up | 14:05 | Estimated return | 14:50 | Marina K. | Accepted this walk | Handover photos | Pickup photo · 14:05 | View photo | Waiting for return photo | Walk updates | Walker assigned | Walker accepted the walk | Pickup photo | 14:05 | Walk in progress | Drop-off photo | Show next steps (1) | Route preview | A static preview, not the walker’s live location. | Cancel booking | Home | Bookings | Chats | Profile"
+  },
+  {
+   "name": "active-service-walking-ru",
+   "route": "/app/active-service",
+   "locale": "ru",
+   "state": "walking",
+   "step": "none",
+   "docHeight": 1607,
+   "draft": "confirmed",
+   "pickupComplete": true,
+   "dropoffComplete": false,
+   "errors": [],
+   "url": "/ru/app/active-service",
+   "h1": "Байкал ждёт подтверждения возврата",
+   "article": {
+    "x": 0,
+    "y": 56,
+    "w": 390,
+    "h": 1551
+   },
+   "blocks": [
+    {
+     "tag": "section",
+     "cls": "_status",
+     "text": "Сегодня, 22 августа · 45 мин Байкал ждёт подтверждения возврата Возвра",
+     "x": 16,
+     "y": 116,
+     "w": 358,
+     "h": 313
+    },
+    {
+     "tag": "section",
+     "cls": "_card",
+     "text": "Фотоотчёт Фото при передаче · 14:05 Смотреть фото Ожидаем фото возврат",
+     "x": 16,
+     "y": 441,
+     "w": 358,
+     "h": 418
+    },
+    {
+     "tag": "figure",
+     "cls": "_proof _leadProof",
+     "text": "Фото при передаче · 14:05 Смотреть фото",
+     "x": 33,
+     "y": 491,
+     "w": 324,
+     "h": 295
+    },
+    {
+     "tag": "section",
+     "cls": "_card",
+     "text": "События прогулки Выгульщик назначен Исполнитель принял заказ Фото при ",
+     "x": 16,
+     "y": 871,
+     "w": 358,
+     "h": 318
+    },
+    {
+     "tag": "section",
+     "cls": "_card",
+     "text": "Пример маршрута Статичная схема, а не текущее местоположение исполните",
+     "x": 16,
+     "y": 1201,
+     "w": 358,
+     "h": 250
+    }
+   ],
+   "text": "Байкал: прогулка | Сегодня, 22 августа · 45 мин | Байкал ждёт подтверждения возврата | Возврат подтвердит только фото при передаче. | Передача | · готово | Прогулка | · готово | Возврат | · сейчас | Забрали | 14:05 | Возврат, примерно | 14:50 | Марина К. | Заказ принят | Фотоотчёт | Фото при передаче · 14:05 | Смотреть фото | Ожидаем фото возврата | События прогулки | Выгульщик назначен | Исполнитель принял заказ | Фото при передаче | 14:05 | Прогулка идёт | Фото возвращения | Показать следующие шаги (1) | Пример маршрута | Статичная схема, а не текущее местоположение исполнителя. | Отменить заказ | Главная | Заказы | Чаты | Профиль"
+  },
+  {
+   "name": "return-failed-en",
+   "route": "/app/handover-photo",
+   "locale": "en",
+   "state": "walking",
+   "step": "failed",
+   "docHeight": 900,
+   "draft": "failed",
+   "pickupComplete": true,
+   "dropoffComplete": false,
+   "errors": [],
+   "url": "/app/handover-photo-review",
+   "h1": "Not confirmed yet",
+   "article": {
+    "x": 0,
+    "y": 56,
+    "w": 390,
+    "h": 844
+   },
+   "blocks": [
+    {
+     "tag": "section",
+     "cls": "_proofCard",
+     "text": "Demo photo · Baikal View photo Sending failed · Photo saved Not confir",
+     "x": 16,
+     "y": 156,
+     "w": 358,
+     "h": 448
+    },
+    {
+     "tag": "figure",
+     "cls": "_proof",
+     "text": "Demo photo · Baikal View photo",
+     "x": 28,
+     "y": 168,
+     "w": 334,
+     "h": 301
+    },
+    {
+     "tag": "div",
+     "cls": "_status",
+     "text": "Not confirmed yet Confirmation failed. Your selected photo is saved; t",
+     "x": 28,
+     "y": 481,
+     "w": 334,
+     "h": 110
+    },
+    {
+     "tag": "footer",
+     "cls": "_screenFooter",
+     "text": "Retry confirmation Retake Local demo only · no photo is uploaded.",
+     "x": 0,
+     "y": 740,
+     "w": 390,
+     "h": 160
+    }
+   ],
+   "text": "Handover photos | Photo 2 of 2 · Drop-off | Demo photo · Baikal | View photo | Sending failed · Photo saved | Not confirmed yet | Confirmation failed. Your selected photo is saved; the booking and payout have not advanced. | Retry confirmation | Retake | Local demo only · no photo is uploaded."
+  },
+  {
+   "name": "return-failed-ru",
+   "route": "/app/handover-photo",
+   "locale": "ru",
+   "state": "walking",
+   "step": "failed",
+   "docHeight": 900,
+   "draft": "failed",
+   "pickupComplete": true,
+   "dropoffComplete": false,
+   "errors": [],
+   "url": "/ru/app/handover-photo-review",
+   "h1": "Пока не подтверждено",
+   "article": {
+    "x": 0,
+    "y": 56,
+    "w": 390,
+    "h": 844
+   },
+   "blocks": [
+    {
+     "tag": "section",
+     "cls": "_proofCard",
+     "text": "Демофото · Байкал Смотреть фото Не отправлено · фото сохранено Пока не",
+     "x": 16,
+     "y": 156,
+     "w": 358,
+     "h": 448
+    },
+    {
+     "tag": "figure",
+     "cls": "_proof",
+     "text": "Демофото · Байкал Смотреть фото",
+     "x": 28,
+     "y": 168,
+     "w": 334,
+     "h": 301
+    },
+    {
+     "tag": "div",
+     "cls": "_status",
+     "text": "Пока не подтверждено Не удалось подтвердить. Выбранное фото сохранено;",
+     "x": 28,
+     "y": 481,
+     "w": 334,
+     "h": 110
+    },
+    {
+     "tag": "footer",
+     "cls": "_screenFooter",
+     "text": "Повторить подтверждение Переснять Локальное демо · фото никуда не загр",
+     "x": 0,
+     "y": 740,
+     "w": 390,
+     "h": 160
+    }
+   ],
+   "text": "Фотоотчёт | Фото 2 из 2 · Возвращение | Демофото · Байкал | Смотреть фото | Не отправлено · фото сохранено | Пока не подтверждено | Не удалось подтвердить. Выбранное фото сохранено; заказ и выплата остаются в прежнем состоянии. | Повторить подтверждение | Переснять | Локальное демо · фото никуда не загружается."
+  },
+  {
+   "name": "order-details-en",
+   "route": "/app/handover-photo",
+   "locale": "en",
+   "state": "walking",
+   "step": "report",
+   "docHeight": 1419,
+   "draft": "confirmed",
+   "pickupComplete": true,
+   "dropoffComplete": true,
+   "errors": [],
+   "url": "/app/order-details",
+   "h1": "Baikal is home",
+   "article": {
+    "x": 0,
+    "y": 56,
+    "w": 390,
+    "h": 1363
+   },
+   "blocks": [
+    {
+     "tag": "section",
+     "cls": "_hero",
+     "text": "Return confirmed 22 August · 45 min Baikal is home Back at 14:52, conf",
+     "x": 16,
+     "y": 124,
+     "w": 358,
+     "h": 427
+    },
+    {
+     "tag": "figure",
+     "cls": "_proof etmq_25",
+     "text": "Pickup 14:05 View photo",
+     "x": 32,
+     "y": 242,
+     "w": 157,
+     "h": 220
+    },
+    {
+     "tag": "figure",
+     "cls": "_proof etmq_25",
+     "text": "Return 14:52 View photo",
+     "x": 201,
+     "y": 242,
+     "w": 157,
+     "h": 220
+    },
+    {
+     "tag": "section",
+     "cls": "_card",
+     "text": "How the walk went Booked 22 August, 14:00 — 14:45 14:05 Picked up at h",
+     "x": 16,
+     "y": 563,
+     "w": 358,
+     "h": 269
+    },
+    {
+     "tag": "section",
+     "cls": "_card etmq_77",
+     "text": "Payment Walk, 45 min Marina K. · 22 August 950 ₽ Total 950 ₽ The price",
+     "x": 16,
+     "y": 922,
+     "w": 358,
+     "h": 275
+    },
+    {
+     "tag": "section",
+     "cls": "_card _review",
+     "text": "Your review Rate the walk or flag a safety concern. Your review is sav",
+     "x": 16,
+     "y": 1209,
+     "w": 358,
+     "h": 124
+    },
+    {
+     "tag": "footer",
+     "cls": "_dock",
+     "text": "Rate the walk",
+     "x": 0,
+     "y": 1345,
+     "w": 390,
+     "h": 74
+    }
+   ],
+   "text": "Walk report | Return confirmed | 22 August · 45 min | Baikal is home | Back at 14:52, confirmed by the return photo. | Pickup | 14:05 | View photo | Return | 14:52 | View photo | Marina K. | Your walker | How the walk went | Booked | 22 August, 14:00 — 14:45 | 14:05 | Picked up at home | Pickup photo received | 14:05 | Walk started | 14:52 | Back home | Return photo received | Route illustration | Not a GPS track | Payment | Walk, 45 min | Marina K. · 22 August | 950 ₽ | Total | 950 ₽ | The price already includes the 18% platform fee. Nothing is added on top. | Receipt | Not issued for this booking | Your review | Rate the walk or flag a safety concern. Your review is saved in this demo only. Nothing is published or sent. | Rate the walk"
+  },
+  {
+   "name": "order-details-ru",
+   "route": "/app/handover-photo",
+   "locale": "ru",
+   "state": "walking",
+   "step": "report",
+   "docHeight": 1419,
+   "draft": "confirmed",
+   "pickupComplete": true,
+   "dropoffComplete": true,
+   "errors": [],
+   "url": "/ru/app/order-details",
+   "h1": "Байкал дома",
+   "article": {
+    "x": 0,
+    "y": 56,
+    "w": 390,
+    "h": 1363
+   },
+   "blocks": [
+    {
+     "tag": "section",
+     "cls": "_hero",
+     "text": "Возврат подтверждён 22 августа · 45 мин Байкал дома Возвращение в 14:5",
+     "x": 16,
+     "y": 124,
+     "w": 358,
+     "h": 427
+    },
+    {
+     "tag": "figure",
+     "cls": "_proof etmq_25",
+     "text": "Передача 14:05 Смотреть фото",
+     "x": 32,
+     "y": 242,
+     "w": 157,
+     "h": 220
+    },
+    {
+     "tag": "figure",
+     "cls": "_proof etmq_25",
+     "text": "Возврат 14:52 Смотреть фото",
+     "x": 201,
+     "y": 242,
+     "w": 157,
+     "h": 220
+    },
+    {
+     "tag": "section",
+     "cls": "_card",
+     "text": "Как прошла прогулка Забронировано 22 августа, 14:00 — 14:45 14:05 Забр",
+     "x": 16,
+     "y": 563,
+     "w": 358,
+     "h": 269
+    },
+    {
+     "tag": "section",
+     "cls": "_card etmq_77",
+     "text": "Оплата Прогулка, 45 мин Марина К. · 22 августа 950 ₽ Итого 950 ₽ Комис",
+     "x": 16,
+     "y": 922,
+     "w": 358,
+     "h": 275
+    },
+    {
+     "tag": "section",
+     "cls": "_card _review",
+     "text": "Ваш отзыв Оцените прогулку или отметьте проблему с безопасностью. Отзы",
+     "x": 16,
+     "y": 1209,
+     "w": 358,
+     "h": 124
+    },
+    {
+     "tag": "footer",
+     "cls": "_dock",
+     "text": "Оценить прогулку",
+     "x": 0,
+     "y": 1345,
+     "w": 390,
+     "h": 74
+    }
+   ],
+   "text": "Отчёт о прогулке | Возврат подтверждён | 22 августа · 45 мин | Байкал дома | Возвращение в 14:52 подтверждено фото. | Передача | 14:05 | Смотреть фото | Возврат | 14:52 | Смотреть фото | Марина К. | Ваш исполнитель | Как прошла прогулка | Забронировано | 22 августа, 14:00 — 14:45 | 14:05 | Забрали из дома | Фото передачи получено | 14:05 | Прогулка началась | 14:52 | Снова дома | Фото возвращения получено | Иллюстрация маршрута | Не GPS-трек | Оплата | Прогулка, 45 мин | Марина К. · 22 августа | 950 ₽ | Итого | 950 ₽ | Комиссия платформы 18% уже входит в цену. Сверху ничего не добавляется. | Чек | По этому заказу не выдавался | Ваш отзыв | Оцените прогулку или отметьте проблему с безопасностью. Отзыв сохраняется только в демо — ничего не публикуется и не отправляется. | Оценить прогулку"
+  }
+ ],
+ "seed": {
+  "slot": "14:00 — 14:45",
+  "pickupAt": "14:05",
+  "backBy": "14:50",
+  "dropoffAt": "14:52",
+  "total": 950
+ }
+}

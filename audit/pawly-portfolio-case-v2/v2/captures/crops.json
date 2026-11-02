@@ -1,0 +1,744 @@
+[
+ {
+  "key": "hero-status",
+  "locale": "en",
+  "purpose": "Hero: return expected, pickup photo received",
+  "file": "public/media/pawly-case-v2/hero-status-en.webp",
+  "width": 780,
+  "height": 1508,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/active-service-walking-en-full.png",
+  "sourceSha256": "6d78edc093c386c182834df9c55ade6c296987cf8c5179b52f949c72358216b6",
+  "route": "/app/active-service",
+  "fixture": "walking / none",
+  "cropDevicePx": [
+   0,
+   219,
+   780,
+   1727
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._status y116 h313",
+   "section._card y441 h418"
+  ],
+  "sha256": "9837af6991b125730c598c7974ec39a0ab0f065728024ba0b5648106d0859091"
+ },
+ {
+  "key": "hero-status",
+  "locale": "ru",
+  "purpose": "Hero: return expected, pickup photo received",
+  "file": "public/media/pawly-case-v2/hero-status-ru.webp",
+  "width": 780,
+  "height": 1508,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/active-service-walking-ru-full.png",
+  "sourceSha256": "14d4432f3f3cec3ea8d56f22d1d8e9e316ec1c758ba24ae0d462acfaf8c3d020",
+  "route": "/ru/app/active-service",
+  "fixture": "walking / none",
+  "cropDevicePx": [
+   0,
+   219,
+   780,
+   1727
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._status y116 h313",
+   "section._card y441 h418"
+  ],
+  "sha256": "7994b8c723cf4a10ab3748ffd3d9ee77bb32a8380bb2d0efc46da8d8964a1f0f"
+ },
+ {
+  "key": "match-list",
+  "locale": "en",
+  "purpose": "01 Walker list: request and the one recorded match",
+  "file": "public/media/pawly-case-v2/match-list-en.webp",
+  "width": 780,
+  "height": 1050,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/walker-list-en-full.png",
+  "sourceSha256": "bba90a953042a7e5ec398eebc7b6fa7ce0673e0a2f33cd9afb14159cf8549a10",
+  "route": "/app/walker-list",
+  "fixture": "choosing / none",
+  "cropDevicePx": [
+   0,
+   415,
+   780,
+   1465
+  ],
+  "pageSurface": [
+   255,
+   255,
+   255
+  ],
+  "sections": [
+   "section._request y212 h155",
+   "section._results y367 h361"
+  ],
+  "sha256": "4db001e709244dcd478675484d9869a1862b2f9b1428c7da1cfb836c54e73db4"
+ },
+ {
+  "key": "match-list",
+  "locale": "ru",
+  "purpose": "01 Walker list: request and the one recorded match",
+  "file": "public/media/pawly-case-v2/match-list-ru.webp",
+  "width": 780,
+  "height": 1050,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/walker-list-ru-full.png",
+  "sourceSha256": "186bc56d172f6d881473c11f8566c67faf9b920069afb26363b29182a2b5b9f5",
+  "route": "/ru/app/walker-list",
+  "fixture": "choosing / none",
+  "cropDevicePx": [
+   0,
+   415,
+   780,
+   1465
+  ],
+  "pageSurface": [
+   255,
+   255,
+   255
+  ],
+  "sections": [
+   "section._request y212 h155",
+   "section._results y367 h361"
+  ],
+  "sha256": "d234f4079446000940ae064c7fa507e0196a73656ec3f1ac5d7dc18c5b93f4cc"
+ },
+ {
+  "key": "match-profile",
+  "locale": "en",
+  "purpose": "01 Walker profile: why this walker fits",
+  "file": "public/media/pawly-case-v2/match-profile-en.webp",
+  "width": 780,
+  "height": 1151,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/walker-profile-en-full.png",
+  "sourceSha256": "d9dc39ea3bee95096ea00ba25e107513e5ae365d4c50d3d8c7890fe753dd27ca",
+  "route": "/app/walker-profile",
+  "fixture": "choosing / none",
+  "cropDevicePx": [
+   0,
+   806,
+   780,
+   1957
+  ],
+  "pageSurface": [
+   255,
+   255,
+   255
+  ],
+  "sections": [
+   "section._section y403 h571"
+  ],
+  "sha256": "14c27cb5291f07e20773dcd060e9d0d26b440a0c6de86734a1f88950b32209c3"
+ },
+ {
+  "key": "match-profile",
+  "locale": "ru",
+  "purpose": "01 Walker profile: why this walker fits",
+  "file": "public/media/pawly-case-v2/match-profile-ru.webp",
+  "width": 780,
+  "height": 1151,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/walker-profile-ru-full.png",
+  "sourceSha256": "c80be8e1efb64beb5b9896ede2051f31c7f72fd48cf81e4db01f785c2eba67d2",
+  "route": "/ru/app/walker-profile",
+  "fixture": "choosing / none",
+  "cropDevicePx": [
+   0,
+   806,
+   780,
+   1957
+  ],
+  "pageSurface": [
+   255,
+   255,
+   255
+  ],
+  "sections": [
+   "section._section y403 h571"
+  ],
+  "sha256": "7f811629d47721eb8c5aa9471f6689e00afd4a829877bff34a640a549aeae066"
+ },
+ {
+  "key": "match-review",
+  "locale": "en",
+  "purpose": "01 Booking review: before you confirm (card interior)",
+  "file": "public/media/pawly-case-v2/match-review-en.webp",
+  "width": 684,
+  "height": 1318,
+  "cssWidth": 342,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/booking-review-en-full.png",
+  "sourceSha256": "e49b5cfd5f48caf946648f1ba91dc56e862220ad87b3df6ca9ba15e8f20f7ca2",
+  "route": "/app/booking-review",
+  "fixture": "choosing / none",
+  "cropDevicePx": [
+   48,
+   1022,
+   732,
+   2340
+  ],
+  "pageSurface": [
+   255,
+   255,
+   255
+  ],
+  "sections": [
+   "section._panel y503 h675"
+  ],
+  "sha256": "5d706c33ac968516c26117f41ef2695a75b4b31f94f806182e4aeed0008181f3"
+ },
+ {
+  "key": "match-review",
+  "locale": "ru",
+  "purpose": "01 Booking review: before you confirm (card interior)",
+  "file": "public/media/pawly-case-v2/match-review-ru.webp",
+  "width": 684,
+  "height": 1358,
+  "cssWidth": 342,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/booking-review-ru-full.png",
+  "sourceSha256": "38440d9973833bfee587ec1194d3ae0f611884cdc1903e09eb17fbae6d0fb62a",
+  "route": "/ru/app/booking-review",
+  "fixture": "choosing / none",
+  "cropDevicePx": [
+   48,
+   1022,
+   732,
+   2380
+  ],
+  "pageSurface": [
+   255,
+   255,
+   255
+  ],
+  "sections": [
+   "section._panel y503 h695"
+  ],
+  "sha256": "134909311b4dca2efa6638aa555c430199641edf94afcd0b12eb7e78386e47ff"
+ },
+ {
+  "key": "role-owner",
+  "locale": "en",
+  "purpose": "02 Owner: walk updates and a static route preview",
+  "file": "public/media/pawly-case-v2/role-owner-en.webp",
+  "width": 780,
+  "height": 1142,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/active-service-walking-en-full.png",
+  "sourceSha256": "6d78edc093c386c182834df9c55ade6c296987cf8c5179b52f949c72358216b6",
+  "route": "/app/active-service",
+  "fixture": "walking / none",
+  "cropDevicePx": [
+   0,
+   1733,
+   780,
+   2875
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._card y871 h318",
+   "section._card y1201 h232"
+  ],
+  "sha256": "6b75c286b439e1f9d8945fa1484f18c1e8d7a0455ee55a3cea57ef1cd281cca6"
+ },
+ {
+  "key": "role-owner",
+  "locale": "ru",
+  "purpose": "02 Owner: walk updates and a static route preview",
+  "file": "public/media/pawly-case-v2/role-owner-ru.webp",
+  "width": 780,
+  "height": 1178,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/active-service-walking-ru-full.png",
+  "sourceSha256": "14d4432f3f3cec3ea8d56f22d1d8e9e316ec1c758ba24ae0d462acfaf8c3d020",
+  "route": "/ru/app/active-service",
+  "fixture": "walking / none",
+  "cropDevicePx": [
+   0,
+   1733,
+   780,
+   2911
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._card y871 h318",
+   "section._card y1201 h250"
+  ],
+  "sha256": "b2694fd7b15d4828d0cfcb7b77ad574354458c0c83e66a6bff979460ff8419e4"
+ },
+ {
+  "key": "role-walker",
+  "locale": "en",
+  "purpose": "02 Walker: deadline and handling notes",
+  "file": "public/media/pawly-case-v2/role-walker-en.webp",
+  "width": 780,
+  "height": 1096,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/walker-order-walking-en-full.png",
+  "sourceSha256": "306334aa6b67b1f56fba83f93012e87473608369c9e991775f2b465cb6723b01",
+  "route": "/app/walker-active-order",
+  "fixture": "walking / none",
+  "cropDevicePx": [
+   0,
+   231,
+   780,
+   1327
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._card _hero y120 h254",
+   "section.j0wu_169 y390 h269"
+  ],
+  "sha256": "b39431dca8317e7ab7fa2bd644c64525d5d0a14f6d974ab0800cc668c4df8ede"
+ },
+ {
+  "key": "role-walker",
+  "locale": "ru",
+  "purpose": "02 Walker: deadline and handling notes",
+  "file": "public/media/pawly-case-v2/role-walker-ru.webp",
+  "width": 780,
+  "height": 1096,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/walker-order-walking-ru-full.png",
+  "sourceSha256": "a59965510ad8adb3ba5f2161b1c956cdd12d6ab75a233d775a94d608f58a6c08",
+  "route": "/ru/app/walker-active-order",
+  "fixture": "walking / none",
+  "cropDevicePx": [
+   0,
+   231,
+   780,
+   1327
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._card _hero y120 h254",
+   "section.j0wu_169 y390 h269"
+  ],
+  "sha256": "42bef1ee1a29165857b33db92e4539b679fd96ea00e68e9615665c06e0eb7f77"
+ },
+ {
+  "key": "branch-reserve",
+  "locale": "en",
+  "purpose": "03 Before pickup: no compatible reserve, nobody assigned",
+  "file": "public/media/pawly-case-v2/branch-reserve-en.webp",
+  "width": 780,
+  "height": 1036,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/replacement-no-reserve-en-full.png",
+  "sourceSha256": "c71be5563dc2efbeb38bacadd3c96f0a98f38bd672b500a2b9a53a0a67af6085",
+  "route": "/app/replacement-offer",
+  "fixture": "pickup / none",
+  "cropDevicePx": [
+   0,
+   235,
+   780,
+   1271
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._decision y124 h269",
+   "section._panel y405 h226"
+  ],
+  "sha256": "dca2c481d1d5db40037babff8f8c8667bd87ac8a9de59761639daf230f18a71f"
+ },
+ {
+  "key": "branch-reserve",
+  "locale": "ru",
+  "purpose": "03 Before pickup: no compatible reserve, nobody assigned",
+  "file": "public/media/pawly-case-v2/branch-reserve-ru.webp",
+  "width": 780,
+  "height": 1036,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/replacement-no-reserve-ru-full.png",
+  "sourceSha256": "e6b43554a1adef83c021da6c46abc3a0a44910bedb9d095c77fcdf91b4fb47be",
+  "route": "/ru/app/replacement-offer",
+  "fixture": "pickup / none",
+  "cropDevicePx": [
+   0,
+   235,
+   780,
+   1271
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._decision y124 h269",
+   "section._panel y405 h226"
+  ],
+  "sha256": "1447018ee4abab55c24ec7dfcd7bff13d090de87db2101bd9679c496bb085b48"
+ },
+ {
+  "key": "branch-failed",
+  "locale": "en",
+  "purpose": "03 At return: sending failed, photo saved",
+  "file": "public/media/pawly-case-v2/branch-failed-en.webp",
+  "width": 780,
+  "height": 928,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/return-failed-en-full.png",
+  "sourceSha256": "ae5be6373ac3bf63643d0edff5fd05388bd5d82cbdff22d07071075a8ce7b9f6",
+  "route": "/app/handover-photo-review",
+  "fixture": "walking / failed",
+  "cropDevicePx": [
+   0,
+   303,
+   780,
+   1231
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._proofCard y156 h448"
+  ],
+  "sha256": "c7c88673bccd2e8c0ff342191f91a1d76f02a61d0011d9ce0582a96fccae1a3e"
+ },
+ {
+  "key": "branch-failed",
+  "locale": "ru",
+  "purpose": "03 At return: sending failed, photo saved",
+  "file": "public/media/pawly-case-v2/branch-failed-ru.webp",
+  "width": 780,
+  "height": 928,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/return-failed-ru-full.png",
+  "sourceSha256": "073be8ed968b36fb03ad5413cb7ddfd03fcf08ef77deed9f966d0ed71872b224",
+  "route": "/ru/app/handover-photo-review",
+  "fixture": "walking / failed",
+  "cropDevicePx": [
+   0,
+   303,
+   780,
+   1231
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._proofCard y156 h448"
+  ],
+  "sha256": "d71179536e2c0fd7e7b44c218a2636f265d94dd281cfc107cb50dfb184090be7"
+ },
+ {
+  "key": "proof-selected",
+  "locale": "en",
+  "purpose": "04 Selected, not sent",
+  "file": "public/media/pawly-case-v2/proof-selected-en.webp",
+  "width": 780,
+  "height": 876,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/return-selected-en-full.png",
+  "sourceSha256": "75c3e2c13996c2a3da776260ce13a26112ea5fe9333228c4e68daef0bb49db08",
+  "route": "/app/handover-photo-review",
+  "fixture": "walking / review",
+  "cropDevicePx": [
+   0,
+   303,
+   780,
+   1179
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._proofCard y156 h421"
+  ],
+  "sha256": "ba647707d1ef47315a929575b68f8bbed7255700615d4563841b2ed845d9fa74"
+ },
+ {
+  "key": "proof-selected",
+  "locale": "ru",
+  "purpose": "04 Selected, not sent",
+  "file": "public/media/pawly-case-v2/proof-selected-ru.webp",
+  "width": 780,
+  "height": 922,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/return-selected-ru-full.png",
+  "sourceSha256": "042e2dac2c52f34d780c9e979d6b22e2d838ac30d7063b60d14cd20ea68d34bf",
+  "route": "/ru/app/handover-photo-review",
+  "fixture": "walking / review",
+  "cropDevicePx": [
+   0,
+   303,
+   780,
+   1225
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._proofCard y156 h445"
+  ],
+  "sha256": "4ac2ec3019db9d4cf0e7f9b645cc4e6dd0d5958f64022b37c3a2328d205fcdc3"
+ },
+ {
+  "key": "proof-confirmed",
+  "locale": "en",
+  "purpose": "04 Return confirmed after retry",
+  "file": "public/media/pawly-case-v2/proof-confirmed-en.webp",
+  "width": 780,
+  "height": 962,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/return-confirmed-en-full.png",
+  "sourceSha256": "6fe925e9ad7312aaf7a320f81d7505b53402c6da66f7f9ba251009ddb05fd671",
+  "route": "/app/handover-photo-review",
+  "fixture": "walking / retried",
+  "cropDevicePx": [
+   0,
+   303,
+   780,
+   1265
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._proofCard y156 h464"
+  ],
+  "sha256": "058d7f8731bba955589c31441447fdff33e3abae4637828bf0024be837dcf698"
+ },
+ {
+  "key": "proof-confirmed",
+  "locale": "ru",
+  "purpose": "04 Return confirmed after retry",
+  "file": "public/media/pawly-case-v2/proof-confirmed-ru.webp",
+  "width": 780,
+  "height": 962,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/return-confirmed-ru-full.png",
+  "sourceSha256": "9ab8f5adc97ace10d5ceb4fba41feec1c33463cbf839d1abe71f1bbf1a2365fe",
+  "route": "/ru/app/handover-photo-review",
+  "fixture": "walking / retried",
+  "cropDevicePx": [
+   0,
+   303,
+   780,
+   1265
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._proofCard y156 h464"
+  ],
+  "sha256": "90ef3afd1ca1360faeecc5bbfacf86feac6887832fe02479a33e49ad4b024086"
+ },
+ {
+  "key": "proof-report",
+  "locale": "en",
+  "purpose": "04 Owner report: Baikal is home, how the walk went",
+  "file": "public/media/pawly-case-v2/proof-report-en.webp",
+  "width": 780,
+  "height": 1438,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/order-details-en-full.png",
+  "sourceSha256": "f2c510e2badfacde19975d0920d5c01388b04040a7d4615a77a314517b1734df",
+  "route": "/app/order-details",
+  "fixture": "walking / report",
+  "cropDevicePx": [
+   0,
+   235,
+   780,
+   1673
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._hero y124 h427",
+   "section._card y563 h269"
+  ],
+  "sha256": "74a53f7635545248b235b69a01d4ddd1544786817b693141c36daac602cff1bf"
+ },
+ {
+  "key": "proof-report",
+  "locale": "ru",
+  "purpose": "04 Owner report: Baikal is home, how the walk went",
+  "file": "public/media/pawly-case-v2/proof-report-ru.webp",
+  "width": 780,
+  "height": 1438,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/order-details-ru-full.png",
+  "sourceSha256": "e93352b2214e9ba5a1c74b8053706b1c1c23759ec81ba75273c53088e645fd63",
+  "route": "/ru/app/order-details",
+  "fixture": "walking / report",
+  "cropDevicePx": [
+   0,
+   235,
+   780,
+   1673
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._hero y124 h427",
+   "section._card y563 h269"
+  ],
+  "sha256": "d2623d8c37f1190321574342b9d7980c854f21ec41f08baac13a16572b04cdaf"
+ },
+ {
+  "key": "settle-earnings",
+  "locale": "en",
+  "purpose": "05 Walker earnings after the confirmed return",
+  "file": "public/media/pawly-case-v2/settle-earnings-en.webp",
+  "width": 780,
+  "height": 806,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/walker-earnings-en-full.png",
+  "sourceSha256": "a64de8da20d2972557df86ccc21593d865b28337adb95be115718d428e65e9c7",
+  "route": "/app/walker-earnings",
+  "fixture": "walking / earnings",
+  "cropDevicePx": [
+   0,
+   477,
+   780,
+   1283
+  ],
+  "pageSurface": [
+   255,
+   255,
+   255
+  ],
+  "sections": [
+   "section._care y243 h187",
+   "section._section y438 h199"
+  ],
+  "sha256": "baf5fb2c6e661f05d29f319b4d84421f5d7d879d561297aa6f3520fb48a8304e"
+ },
+ {
+  "key": "settle-earnings",
+  "locale": "ru",
+  "purpose": "05 Walker earnings after the confirmed return",
+  "file": "public/media/pawly-case-v2/settle-earnings-ru.webp",
+  "width": 780,
+  "height": 806,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/walker-earnings-ru-full.png",
+  "sourceSha256": "516fd2fd00f7f02bb15d46430945816495b9b153e01993bb661f660e0c9ca6de",
+  "route": "/ru/app/walker-earnings",
+  "fixture": "walking / earnings",
+  "cropDevicePx": [
+   0,
+   477,
+   780,
+   1283
+  ],
+  "pageSurface": [
+   255,
+   255,
+   255
+  ],
+  "sections": [
+   "section._care y243 h187",
+   "section._section y438 h199"
+  ],
+  "sha256": "08992c76f295600a0d46a516ed7b46e003fe299fa31bf06649cb0527f740a8c4"
+ },
+ {
+  "key": "settle-payment",
+  "locale": "en",
+  "purpose": "05 Owner payment",
+  "file": "public/media/pawly-case-v2/settle-payment-en.webp",
+  "width": 780,
+  "height": 568,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/order-details-en-full.png",
+  "sourceSha256": "f2c510e2badfacde19975d0920d5c01388b04040a7d4615a77a314517b1734df",
+  "route": "/app/order-details",
+  "fixture": "walking / report",
+  "cropDevicePx": [
+   0,
+   1835,
+   780,
+   2403
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._card pq6v_153 y922 h275"
+  ],
+  "sha256": "c6f3dec859e9df4e73440afded20e8dd65672bd50cf694aed36a7815e06ffdab"
+ },
+ {
+  "key": "settle-payment",
+  "locale": "ru",
+  "purpose": "05 Owner payment",
+  "file": "public/media/pawly-case-v2/settle-payment-ru.webp",
+  "width": 780,
+  "height": 568,
+  "cssWidth": 390,
+  "source": "audit/pawly-portfolio-case-v2/v2/captures/product/order-details-ru-full.png",
+  "sourceSha256": "e93352b2214e9ba5a1c74b8053706b1c1c23759ec81ba75273c53088e645fd63",
+  "route": "/ru/app/order-details",
+  "fixture": "walking / report",
+  "cropDevicePx": [
+   0,
+   1835,
+   780,
+   2403
+  ],
+  "pageSurface": [
+   250,
+   249,
+   247
+  ],
+  "sections": [
+   "section._card pq6v_153 y922 h275"
+  ],
+  "sha256": "a7f040552e40bc4e1c1c92879a153e670489a6fe4f0b7f295541bba70ec7c510"
+ }
+]

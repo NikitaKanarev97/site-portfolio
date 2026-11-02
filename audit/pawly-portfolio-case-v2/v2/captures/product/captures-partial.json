@@ -1,0 +1,327 @@
+{
+ "product": "NikitaKanarev97/pawly",
+ "sha": "a327d73abb3e7872a6243301afc926de57dc868b",
+ "baseURL": "http://127.0.0.1:5281",
+ "KEY": "pawly-wire-data-v4",
+ "clock": "2026-08-22T10:20:00.000Z",
+ "viewport": "390x844",
+ "dpr": 2,
+ "reducedMotion": "reduce",
+ "captures": [
+  {
+   "name": "order-details-en",
+   "route": "/app/handover-photo",
+   "locale": "en",
+   "state": "walking",
+   "step": "report",
+   "docHeight": 1419,
+   "draft": "confirmed",
+   "pickupComplete": true,
+   "dropoffComplete": true,
+   "errors": [],
+   "url": "/app/order-details",
+   "h1": "Baikal is home",
+   "article": {
+    "x": 0,
+    "y": 56,
+    "w": 390,
+    "h": 1363
+   },
+   "blocks": [
+    {
+     "tag": "section",
+     "cls": "_hero",
+     "text": "Return confirmed 22 August · 45 min Baikal is home Back at 14:52, conf",
+     "x": 16,
+     "y": 124,
+     "w": 358,
+     "h": 427
+    },
+    {
+     "tag": "figure",
+     "cls": "_proof pq6v_49",
+     "text": "Pickup 14:05 View photo",
+     "x": 32,
+     "y": 242,
+     "w": 157,
+     "h": 220
+    },
+    {
+     "tag": "figure",
+     "cls": "_proof pq6v_49",
+     "text": "Return 14:52 View photo",
+     "x": 201,
+     "y": 242,
+     "w": 157,
+     "h": 220
+    },
+    {
+     "tag": "section",
+     "cls": "_card",
+     "text": "How the walk went Booked 22 August, 14:00 — 14:45 14:05 Picked up at h",
+     "x": 16,
+     "y": 563,
+     "w": 358,
+     "h": 269
+    },
+    {
+     "tag": "section",
+     "cls": "_card pq6v_153",
+     "text": "Payment Walk, 45 min Marina K. · 22 August 950 ₽ Total 950 ₽ The price",
+     "x": 16,
+     "y": 922,
+     "w": 358,
+     "h": 275
+    },
+    {
+     "tag": "section",
+     "cls": "_card _review",
+     "text": "Your review Rate the walk or flag a safety concern. Your review is sav",
+     "x": 16,
+     "y": 1209,
+     "w": 358,
+     "h": 124
+    },
+    {
+     "tag": "footer",
+     "cls": "_dock",
+     "text": "Rate the walk",
+     "x": 0,
+     "y": 1345,
+     "w": 390,
+     "h": 74
+    }
+   ],
+   "text": "Walk report | Return confirmed | 22 August · 45 min | Baikal is home | Back at 14:52, confirmed by the return photo. | Pickup | 14:05 | View photo | Return | 14:52 | View photo | Marina K. | Your walker | How the walk went | Booked | 22 August, 14:00 — 14:45 | 14:05 | Picked up at home | Pickup photo received | 14:05 | Walk started | 14:52 | Back home | Return photo received | Route illustration | Not a GPS track | Payment | Walk, 45 min | Marina K. · 22 August | 950 ₽ | Total | 950 ₽ | The price already includes the 18% platform fee. Nothing is added on top. | Receipt | Not issued for this booking | Your review | Rate the walk or flag a safety concern. Your review is saved in this demo only. Nothing is published or sent. | Rate the walk"
+  },
+  {
+   "name": "order-details-ru",
+   "route": "/app/handover-photo",
+   "locale": "ru",
+   "state": "walking",
+   "step": "report",
+   "docHeight": 1419,
+   "draft": "confirmed",
+   "pickupComplete": true,
+   "dropoffComplete": true,
+   "errors": [],
+   "url": "/ru/app/order-details",
+   "h1": "Байкал дома",
+   "article": {
+    "x": 0,
+    "y": 56,
+    "w": 390,
+    "h": 1363
+   },
+   "blocks": [
+    {
+     "tag": "section",
+     "cls": "_hero",
+     "text": "Возврат подтверждён 22 августа · 45 мин Байкал дома Возвращение в 14:5",
+     "x": 16,
+     "y": 124,
+     "w": 358,
+     "h": 427
+    },
+    {
+     "tag": "figure",
+     "cls": "_proof pq6v_49",
+     "text": "Передача 14:05 Смотреть фото",
+     "x": 32,
+     "y": 242,
+     "w": 157,
+     "h": 220
+    },
+    {
+     "tag": "figure",
+     "cls": "_proof pq6v_49",
+     "text": "Возврат 14:52 Смотреть фото",
+     "x": 201,
+     "y": 242,
+     "w": 157,
+     "h": 220
+    },
+    {
+     "tag": "section",
+     "cls": "_card",
+     "text": "Как прошла прогулка Забронировано 22 августа, 14:00 — 14:45 14:05 Забр",
+     "x": 16,
+     "y": 563,
+     "w": 358,
+     "h": 269
+    },
+    {
+     "tag": "section",
+     "cls": "_card pq6v_153",
+     "text": "Оплата Прогулка, 45 мин Марина К. · 22 августа 950 ₽ Итого 950 ₽ Комис",
+     "x": 16,
+     "y": 922,
+     "w": 358,
+     "h": 275
+    },
+    {
+     "tag": "section",
+     "cls": "_card _review",
+     "text": "Ваш отзыв Оцените прогулку или отметьте проблему с безопасностью. Отзы",
+     "x": 16,
+     "y": 1209,
+     "w": 358,
+     "h": 124
+    },
+    {
+     "tag": "footer",
+     "cls": "_dock",
+     "text": "Оценить прогулку",
+     "x": 0,
+     "y": 1345,
+     "w": 390,
+     "h": 74
+    }
+   ],
+   "text": "Отчёт о прогулке | Возврат подтверждён | 22 августа · 45 мин | Байкал дома | Возвращение в 14:52 подтверждено фото. | Передача | 14:05 | Смотреть фото | Возврат | 14:52 | Смотреть фото | Марина К. | Ваш исполнитель | Как прошла прогулка | Забронировано | 22 августа, 14:00 — 14:45 | 14:05 | Забрали из дома | Фото передачи получено | 14:05 | Прогулка началась | 14:52 | Снова дома | Фото возвращения получено | Иллюстрация маршрута | Не GPS-трек | Оплата | Прогулка, 45 мин | Марина К. · 22 августа | 950 ₽ | Итого | 950 ₽ | Комиссия платформы 18% уже входит в цену. Сверху ничего не добавляется. | Чек | По этому заказу не выдавался | Ваш отзыв | Оцените прогулку или отметьте проблему с безопасностью. Отзыв сохраняется только в демо — ничего не публикуется и не отправляется. | Оценить прогулку"
+  },
+  {
+   "name": "walker-earnings-en",
+   "route": "/app/handover-photo",
+   "locale": "en",
+   "state": "walking",
+   "step": "earnings",
+   "docHeight": 1256,
+   "draft": "confirmed",
+   "pickupComplete": true,
+   "dropoffComplete": true,
+   "errors": [],
+   "url": "/app/walker-earnings",
+   "h1": "Your work, accounted for",
+   "article": {
+    "x": 0,
+    "y": 56,
+    "w": 390,
+    "h": 1200
+   },
+   "blocks": [
+    {
+     "tag": "header",
+     "cls": "j0wu_13",
+     "text": "Ready when you are Your work, accounted for Available balance across a",
+     "x": 0,
+     "y": 116,
+     "w": 390,
+     "h": 119
+    },
+    {
+     "tag": "section",
+     "cls": "_care",
+     "text": "3,895 ₽ available for payout Withdraw to card",
+     "x": 16,
+     "y": 243,
+     "w": 358,
+     "h": 187
+    },
+    {
+     "tag": "section",
+     "cls": "_section",
+     "text": "Current booking Baikal Golden Retriever · 38 kg 22 August · 14:00 — 14",
+     "x": 0,
+     "y": 438,
+     "w": 390,
+     "h": 199
+    },
+    {
+     "tag": "section",
+     "cls": "_section",
+     "text": "Period August July June The balance stays current. The period changes ",
+     "x": 0,
+     "y": 636,
+     "w": 390,
+     "h": 271
+    },
+    {
+     "tag": "section",
+     "cls": "_section",
+     "text": "Payout history To card •• 4417 18 August · Demo payout 3,895 ₽ To card",
+     "x": 0,
+     "y": 908,
+     "w": 390,
+     "h": 269
+    }
+   ],
+   "text": "Earnings | Ready when you are | Your work, accounted for | Available balance across all periods | 3,895 ₽ | available for payout | Withdraw to card | Current booking | Baikal | Golden Retriever · 38 kg | 22 August · 14:00 — 14:45 | Recorded for this booking · 779 ₽ | Period | August | July | June | The balance stays current. The period changes only the summary and payout history. | 13 · Settled bookings | 12,350 ₽ | Platform fee 18% | −2,223 ₽ | Earned | 10,127 ₽ | Payout history | To card •• 4417 | 18 August · Demo payout | 3,895 ₽ | To card •• 4417 | 11 August · Demo payout | 1,558 ₽ | To card •• 4417 | 4 August · Demo payout | 779 ₽ | Bookings | Earnings | Verification"
+  },
+  {
+   "name": "walker-earnings-ru",
+   "route": "/app/handover-photo",
+   "locale": "ru",
+   "state": "walking",
+   "step": "earnings",
+   "docHeight": 1256,
+   "draft": "confirmed",
+   "pickupComplete": true,
+   "dropoffComplete": true,
+   "errors": [],
+   "url": "/ru/app/walker-earnings",
+   "h1": "Ваш труд — в цифрах",
+   "article": {
+    "x": 0,
+    "y": 56,
+    "w": 390,
+    "h": 1200
+   },
+   "blocks": [
+    {
+     "tag": "header",
+     "cls": "j0wu_13",
+     "text": "Всё готово к выплате Ваш труд — в цифрах Доступный баланс за все перио",
+     "x": 0,
+     "y": 116,
+     "w": 390,
+     "h": 119
+    },
+    {
+     "tag": "section",
+     "cls": "_care",
+     "text": "3,895 ₽ доступно к выводу Вывести на карту",
+     "x": 16,
+     "y": 243,
+     "w": 358,
+     "h": 187
+    },
+    {
+     "tag": "section",
+     "cls": "_section",
+     "text": "Текущий заказ Байкал Золотистый ретривер · 38 кг 22 августа · 14:00 — ",
+     "x": 0,
+     "y": 438,
+     "w": 390,
+     "h": 199
+    },
+    {
+     "tag": "section",
+     "cls": "_section",
+     "text": "Период Август Июль Июнь Баланс всегда актуален. Период меняет только с",
+     "x": 0,
+     "y": 636,
+     "w": 390,
+     "h": 271
+    },
+    {
+     "tag": "section",
+     "cls": "_section",
+     "text": "История выплат На карту •• 4417 18 августа · Демовыплата 3,895 ₽ На ка",
+     "x": 0,
+     "y": 908,
+     "w": 390,
+     "h": 269
+    }
+   ],
+   "text": "Доход | Всё готово к выплате | Ваш труд — в цифрах | Доступный баланс за все периоды | 3,895 ₽ | доступно к выводу | Вывести на карту | Текущий заказ | Байкал | Золотистый ретривер · 38 кг | 22 августа · 14:00 — 14:45 | Начислено за этот заказ · 779 ₽ | Период | Август | Июль | Июнь | Баланс всегда актуален. Период меняет только сводку и историю выплат. | 13 · Заказов с начислением | 12,350 ₽ | Комиссия платформы 18% | −2,223 ₽ | Заработано | 10,127 ₽ | История выплат | На карту •• 4417 | 18 августа · Демовыплата | 3,895 ₽ | На карту •• 4417 | 11 августа · Демовыплата | 1,558 ₽ | На карту •• 4417 | 4 августа · Демовыплата | 779 ₽ | Заказы | Доход | Проверка"
+  }
+ ],
+ "seed": {
+  "slot": "14:00 — 14:45",
+  "pickupAt": "14:05",
+  "backBy": "14:50",
+  "dropoffAt": "14:52",
+  "total": 950
+ }
+}

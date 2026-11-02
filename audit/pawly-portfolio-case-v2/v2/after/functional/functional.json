@@ -1,0 +1,848 @@
+[
+ {
+  "name": "en: one h1, chapters as h2",
+  "pass": true,
+  "evidence": [
+   "H1:Pawly",
+   "H2:A match needs a reason, not a rating.",
+   "H2:One walk, two different first questions.",
+   "H2:When a step fails, nothing is assumed.",
+   "H3:Marina can’t make it",
+   "H3:The return photo fails to send",
+   "H2:A selected photo is not proof yet.",
+   "H2:Both sides can explain the same 950 ₽.",
+   "H2:The whole chain is clickable.",
+   "H2:Let's talk"
+  ]
+ },
+ {
+  "name": "en: document language",
+  "pass": true,
+  "evidence": "en"
+ },
+ {
+  "name": "en: chapter index links resolve to sections",
+  "pass": true,
+  "evidence": [
+   [
+    "#choosing",
+    true
+   ],
+   [
+    "#handoff",
+    true
+   ],
+   [
+    "#exceptions",
+    true
+   ],
+   [
+    "#return",
+    true
+   ],
+   [
+    "#settlement",
+    true
+   ]
+  ]
+ },
+ {
+  "name": "en: every case image has alt text",
+  "pass": true,
+  "evidence": [
+   250,
+   113,
+   128,
+   162,
+   145,
+   191,
+   150,
+   153,
+   118,
+   125,
+   146,
+   246,
+   95,
+   127
+  ]
+ },
+ {
+  "name": "en: all case media load",
+  "pass": true,
+  "evidence": []
+ },
+ {
+  "name": "en: no page errors",
+  "pass": true,
+  "evidence": []
+ },
+ {
+  "name": "en: keyboard reaches index links and screen links",
+  "pass": true,
+  "evidence": [
+   "pawly-shot__frame",
+   "pawly-clock__link",
+   "pawly-clock__link",
+   "pawly-clock__link",
+   "pawly-clock__link",
+   "pawly-clock__link",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "ds-body-lg",
+   "case-next__link",
+   "pawly-shot__frame",
+   "pawly-clock__link"
+  ]
+ },
+ {
+  "name": "en: focus ring visible on every case stop",
+  "pass": true,
+  "evidence": []
+ },
+ {
+  "name": "en: focused element scrolled into view (its top edge visible)",
+  "pass": true,
+  "evidence": []
+ },
+ {
+  "name": "en: touch targets >= 44 px (index, CTA)",
+  "pass": true,
+  "evidence": [
+   50,
+   50,
+   50,
+   50,
+   50,
+   64
+  ]
+ },
+ {
+  "name": "en: index link scrolls to its chapter",
+  "pass": true,
+  "evidence": "#return top 0px"
+ },
+ {
+  "name": "en: screen opens in MediaZoom",
+  "pass": true,
+  "evidence": {
+   "open": true,
+   "src": "proof-selected-en.webp",
+   "natural": 780
+  }
+ },
+ {
+  "name": "en: Escape closes and focus returns to the screen link",
+  "pass": true,
+  "evidence": {
+   "open": false,
+   "focus": "pawly-shot__frame"
+  }
+ },
+ {
+  "name": "en: contrast .pawly-stage__caption >= 4.5",
+  "pass": true,
+  "evidence": [
+   {
+    "text": "14:05. The owner already has t",
+    "ratio": 6.04,
+    "size": "14px"
+   }
+  ]
+ },
+ {
+  "name": "en: contrast .pawly-band .pawly-body >= 4.5",
+  "pass": true,
+  "evidence": [
+   {
+    "text": "Only a received photo records ",
+    "ratio": 6.04,
+    "size": "18px"
+   }
+  ]
+ },
+ {
+  "name": "en: contrast .pawly-band .pawly-shot__caption >= 4.5",
+  "pass": true,
+  "evidence": [
+   {
+    "text": "A local draft. Return and earn",
+    "ratio": 6.04,
+    "size": "14px"
+   },
+   {
+    "text": "Sent after the failed attempt.",
+    "ratio": 6.04,
+    "size": "14px"
+   },
+   {
+    "text": "Two dated handovers. The expec",
+    "ratio": 6.04,
+    "size": "14px"
+   }
+  ]
+ },
+ {
+  "name": "en: contrast .pawly-shot__caption >= 4.5",
+  "pass": true,
+  "evidence": [
+   {
+    "text": "One recorded match for this sl",
+    "ratio": 5.14,
+    "size": "14px"
+   },
+   {
+    "text": "Each of Baikal’s needs sits be",
+    "ratio": 5.14,
+    "size": "14px"
+   },
+   {
+    "text": "No insurance, the two-hour can",
+    "ratio": 5.14,
+    "size": "14px"
+   },
+   {
+    "text": "A local draft. Return and earn",
+    "ratio": 6.04,
+    "size": "14px"
+   },
+   {
+    "text": "Sent after the failed attempt.",
+    "ratio": 6.04,
+    "size": "14px"
+   },
+   {
+    "text": "Two dated handovers. The expec",
+    "ratio": 6.04,
+    "size": "14px"
+   }
+  ]
+ },
+ {
+  "name": "en: contrast .pawly-label >= 4.5",
+  "pass": true,
+  "evidence": [
+   {
+    "text": "13:20 · Choosing",
+    "ratio": 5.14,
+    "size": "14px"
+   },
+   {
+    "text": "14:05 · Handoff",
+    "ratio": 5.14,
+    "size": "14px"
+   },
+   {
+    "text": "Exceptions",
+    "ratio": 5.14,
+    "size": "14px"
+   },
+   {
+    "text": "14:52 · Return",
+    "ratio": 6.04,
+    "size": "14px"
+   },
+   {
+    "text": "Settlement",
+    "ratio": 5.14,
+    "size": "14px"
+   },
+   {
+    "text": "Outcome",
+    "ratio": 4.79,
+    "size": "14px"
+   }
+  ]
+ },
+ {
+  "name": "en: contrast .pawly-clock__index >= 4.5",
+  "pass": true,
+  "evidence": [
+   {
+    "text": "01",
+    "ratio": 6.04,
+    "size": "12px"
+   },
+   {
+    "text": "02",
+    "ratio": 6.04,
+    "size": "12px"
+   },
+   {
+    "text": "03",
+    "ratio": 6.04,
+    "size": "12px"
+   },
+   {
+    "text": "04",
+    "ratio": 6.04,
+    "size": "12px"
+   },
+   {
+    "text": "05",
+    "ratio": 6.04,
+    "size": "12px"
+   }
+  ]
+ },
+ {
+  "name": "en: contrast .pawly-vocab__text >= 4.5",
+  "pass": true,
+  "evidence": [
+   {
+    "text": "A time to plan around: 14:50.",
+    "ratio": 6.04,
+    "size": "14px"
+   },
+   {
+    "text": "A photo on the walker’s phone.",
+    "ratio": 6.04,
+    "size": "14px"
+   },
+   {
+    "text": "The photo arrived: 14:52.",
+    "ratio": 6.04,
+    "size": "14px"
+   },
+   {
+    "text": "The report can say the dog is ",
+    "ratio": 6.04,
+    "size": "14px"
+   }
+  ]
+ },
+ {
+  "name": "en: prototype CTA",
+  "pass": true,
+  "evidence": {
+   "href": "https://pawly-fawn.vercel.app/app",
+   "target": "_blank",
+   "rel": "noopener"
+  }
+ },
+ {
+  "name": "en: no forbidden status labels in text or meta",
+  "pass": true,
+  "evidence": null
+ },
+ {
+  "name": "en: 1440: screens at >= 0.79 of native (column 1280px), never enlarged",
+  "pass": true,
+  "evidence": {
+   "min": 0.99,
+   "max": 0.99,
+   "column": 1280
+  }
+ },
+ {
+  "name": "en: 1024: screens at >= 0.79 of native (column 864px), never enlarged",
+  "pass": true,
+  "evidence": {
+   "min": 0.99,
+   "max": 0.99,
+   "column": 864
+  }
+ },
+ {
+  "name": "en: 768: screens at >= 0.79 of native (column 672px), never enlarged",
+  "pass": true,
+  "evidence": {
+   "min": 0.83,
+   "max": 0.99,
+   "column": 672
+  }
+ },
+ {
+  "name": "en: 390: screens at >= 0.79 of native (column 342px), never enlarged",
+  "pass": true,
+  "evidence": {
+   "min": 0.87,
+   "max": 0.99,
+   "column": 342
+  }
+ },
+ {
+  "name": "en: 390: product screen inside the first viewport",
+  "pass": true,
+  "evidence": {
+   "top": 299,
+   "visible": 545
+  }
+ },
+ {
+  "name": "en: 360: screens at >= 0.79 of native (column 312px), never enlarged",
+  "pass": true,
+  "evidence": {
+   "min": 0.79,
+   "max": 0.91,
+   "column": 312
+  }
+ },
+ {
+  "name": "en: 360: product screen inside the first viewport",
+  "pass": true,
+  "evidence": {
+   "top": 299,
+   "visible": 501
+  }
+ },
+ {
+  "name": "en: 320: screens at >= 0.69 of native (column 272px), never enlarged",
+  "pass": true,
+  "evidence": {
+   "min": 0.69,
+   "max": 0.79,
+   "column": 272
+  }
+ },
+ {
+  "name": "en: 320: product screen inside the first viewport",
+  "pass": true,
+  "evidence": {
+   "top": 285,
+   "visible": 355
+  }
+ },
+ {
+  "name": "en: no-JS: no motion element left hidden",
+  "pass": true,
+  "evidence": "0 hidden"
+ },
+ {
+  "name": "en: motion on: every animated element settles visible",
+  "pass": true,
+  "evidence": []
+ },
+ {
+  "name": "ru: one h1, chapters as h2",
+  "pass": true,
+  "evidence": [
+   "H1:Pawly",
+   "H2:У подбора должно быть основание, а не ре",
+   "H2:Одна прогулка — два разных первых вопрос",
+   "H2:Если шаг не удался, сервис ничего не дод",
+   "H3:Марина не сможет прийти",
+   "H3:Фото возвращения не отправилось",
+   "H2:Выбранное фото — ещё не доказательство.",
+   "H2:Обе стороны могут объяснить одни и те же",
+   "H2:Всю цепочку можно пройти руками.",
+   "H2:Поговорим"
+  ]
+ },
+ {
+  "name": "ru: document language",
+  "pass": true,
+  "evidence": "ru"
+ },
+ {
+  "name": "ru: chapter index links resolve to sections",
+  "pass": true,
+  "evidence": [
+   [
+    "#choosing",
+    true
+   ],
+   [
+    "#handoff",
+    true
+   ],
+   [
+    "#exceptions",
+    true
+   ],
+   [
+    "#return",
+    true
+   ],
+   [
+    "#settlement",
+    true
+   ]
+  ]
+ },
+ {
+  "name": "ru: every case image has alt text",
+  "pass": true,
+  "evidence": [
+   232,
+   99,
+   150,
+   133,
+   151,
+   219,
+   172,
+   146,
+   124,
+   134,
+   132,
+   269,
+   88,
+   118
+  ]
+ },
+ {
+  "name": "ru: all case media load",
+  "pass": true,
+  "evidence": []
+ },
+ {
+  "name": "ru: no page errors",
+  "pass": true,
+  "evidence": []
+ },
+ {
+  "name": "ru: keyboard reaches index links and screen links",
+  "pass": true,
+  "evidence": [
+   "pawly-shot__frame",
+   "pawly-clock__link",
+   "pawly-clock__link",
+   "pawly-clock__link",
+   "pawly-clock__link",
+   "pawly-clock__link",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "pawly-shot__frame",
+   "ds-body-lg",
+   "case-next__link",
+   "pawly-shot__frame",
+   "pawly-clock__link"
+  ]
+ },
+ {
+  "name": "ru: focus ring visible on every case stop",
+  "pass": true,
+  "evidence": []
+ },
+ {
+  "name": "ru: focused element scrolled into view (its top edge visible)",
+  "pass": true,
+  "evidence": []
+ },
+ {
+  "name": "ru: touch targets >= 44 px (index, CTA)",
+  "pass": true,
+  "evidence": [
+   50,
+   50,
+   50,
+   50,
+   50,
+   64
+  ]
+ },
+ {
+  "name": "ru: index link scrolls to its chapter",
+  "pass": true,
+  "evidence": "#return top 0px"
+ },
+ {
+  "name": "ru: screen opens in MediaZoom",
+  "pass": true,
+  "evidence": {
+   "open": true,
+   "src": "proof-selected-ru.webp",
+   "natural": 780
+  }
+ },
+ {
+  "name": "ru: Escape closes and focus returns to the screen link",
+  "pass": true,
+  "evidence": {
+   "open": false,
+   "focus": "pawly-shot__frame"
+  }
+ },
+ {
+  "name": "ru: contrast .pawly-stage__caption >= 4.5",
+  "pass": true,
+  "evidence": [
+   {
+    "text": "14:05. Фото передачи у владель",
+    "ratio": 6.04,
+    "size": "14px"
+   }
+  ]
+ },
+ {
+  "name": "ru: contrast .pawly-band .pawly-body >= 4.5",
+  "pass": true,
+  "evidence": [
+   {
+    "text": "Возвращение фиксирует только п",
+    "ratio": 6.04,
+    "size": "18px"
+   }
+  ]
+ },
+ {
+  "name": "ru: contrast .pawly-band .pawly-shot__caption >= 4.5",
+  "pass": true,
+  "evidence": [
+   {
+    "text": "Локальный черновик. Возвращени",
+    "ratio": 6.04,
+    "size": "14px"
+   },
+   {
+    "text": "Отправлено после неудачной поп",
+    "ratio": 6.04,
+    "size": "14px"
+   },
+   {
+    "text": "Две передачи с временем. Ожида",
+    "ratio": 6.04,
+    "size": "14px"
+   }
+  ]
+ },
+ {
+  "name": "ru: contrast .pawly-shot__caption >= 4.5",
+  "pass": true,
+  "evidence": [
+   {
+    "text": "На это время подходит один исп",
+    "ratio": 5.14,
+    "size": "14px"
+   },
+   {
+    "text": "Каждая потребность Байкала сто",
+    "ratio": 5.14,
+    "size": "14px"
+   },
+   {
+    "text": "Страховки нет, условия отмены ",
+    "ratio": 5.14,
+    "size": "14px"
+   },
+   {
+    "text": "Локальный черновик. Возвращени",
+    "ratio": 6.04,
+    "size": "14px"
+   },
+   {
+    "text": "Отправлено после неудачной поп",
+    "ratio": 6.04,
+    "size": "14px"
+   },
+   {
+    "text": "Две передачи с временем. Ожида",
+    "ratio": 6.04,
+    "size": "14px"
+   }
+  ]
+ },
+ {
+  "name": "ru: contrast .pawly-label >= 4.5",
+  "pass": true,
+  "evidence": [
+   {
+    "text": "13:20 · Выбор",
+    "ratio": 5.14,
+    "size": "14px"
+   },
+   {
+    "text": "14:05 · Передача",
+    "ratio": 5.14,
+    "size": "14px"
+   },
+   {
+    "text": "Сбои",
+    "ratio": 5.14,
+    "size": "14px"
+   },
+   {
+    "text": "14:52 · Возвращение",
+    "ratio": 6.04,
+    "size": "14px"
+   },
+   {
+    "text": "Расчёт",
+    "ratio": 5.14,
+    "size": "14px"
+   },
+   {
+    "text": "Итог",
+    "ratio": 4.79,
+    "size": "14px"
+   }
+  ]
+ },
+ {
+  "name": "ru: contrast .pawly-clock__index >= 4.5",
+  "pass": true,
+  "evidence": [
+   {
+    "text": "01",
+    "ratio": 6.04,
+    "size": "12px"
+   },
+   {
+    "text": "02",
+    "ratio": 6.04,
+    "size": "12px"
+   },
+   {
+    "text": "03",
+    "ratio": 6.04,
+    "size": "12px"
+   },
+   {
+    "text": "04",
+    "ratio": 6.04,
+    "size": "12px"
+   },
+   {
+    "text": "05",
+    "ratio": 6.04,
+    "size": "12px"
+   }
+  ]
+ },
+ {
+  "name": "ru: contrast .pawly-vocab__text >= 4.5",
+  "pass": true,
+  "evidence": [
+   {
+    "text": "Время, на которое можно оперет",
+    "ratio": 6.04,
+    "size": "14px"
+   },
+   {
+    "text": "Фото на телефоне выгульщика.",
+    "ratio": 6.04,
+    "size": "14px"
+   },
+   {
+    "text": "Фото дошло: 14:52.",
+    "ratio": 6.04,
+    "size": "14px"
+   },
+   {
+    "text": "Отчёт может сказать, что собак",
+    "ratio": 6.04,
+    "size": "14px"
+   }
+  ]
+ },
+ {
+  "name": "ru: prototype CTA",
+  "pass": true,
+  "evidence": {
+   "href": "https://pawly-fawn.vercel.app/ru/app",
+   "target": "_blank",
+   "rel": "noopener"
+  }
+ },
+ {
+  "name": "ru: no forbidden status labels in text or meta",
+  "pass": true,
+  "evidence": null
+ },
+ {
+  "name": "ru: 1440: screens at >= 0.79 of native (column 1280px), never enlarged",
+  "pass": true,
+  "evidence": {
+   "min": 0.99,
+   "max": 0.99,
+   "column": 1280
+  }
+ },
+ {
+  "name": "ru: 1024: screens at >= 0.79 of native (column 864px), never enlarged",
+  "pass": true,
+  "evidence": {
+   "min": 0.99,
+   "max": 0.99,
+   "column": 864
+  }
+ },
+ {
+  "name": "ru: 768: screens at >= 0.79 of native (column 672px), never enlarged",
+  "pass": true,
+  "evidence": {
+   "min": 0.83,
+   "max": 0.99,
+   "column": 672
+  }
+ },
+ {
+  "name": "ru: 390: screens at >= 0.79 of native (column 342px), never enlarged",
+  "pass": true,
+  "evidence": {
+   "min": 0.87,
+   "max": 0.99,
+   "column": 342
+  }
+ },
+ {
+  "name": "ru: 390: product screen inside the first viewport",
+  "pass": true,
+  "evidence": {
+   "top": 299,
+   "visible": 545
+  }
+ },
+ {
+  "name": "ru: 360: screens at >= 0.79 of native (column 312px), never enlarged",
+  "pass": true,
+  "evidence": {
+   "min": 0.79,
+   "max": 0.91,
+   "column": 312
+  }
+ },
+ {
+  "name": "ru: 360: product screen inside the first viewport",
+  "pass": true,
+  "evidence": {
+   "top": 299,
+   "visible": 501
+  }
+ },
+ {
+  "name": "ru: 320: screens at >= 0.69 of native (column 272px), never enlarged",
+  "pass": true,
+  "evidence": {
+   "min": 0.69,
+   "max": 0.79,
+   "column": 272
+  }
+ },
+ {
+  "name": "ru: 320: product screen inside the first viewport",
+  "pass": true,
+  "evidence": {
+   "top": 285,
+   "visible": 355
+  }
+ },
+ {
+  "name": "ru: no-JS: no motion element left hidden",
+  "pass": true,
+  "evidence": "0 hidden"
+ },
+ {
+  "name": "ru: motion on: every animated element settles visible",
+  "pass": true,
+  "evidence": []
+ }
+]
