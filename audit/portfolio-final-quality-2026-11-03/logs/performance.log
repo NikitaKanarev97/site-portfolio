@@ -1,0 +1,40 @@
+home {
+  LCP_ms: 2184,
+  CLS: 0.07722198513061253,
+  longTasks: 4,
+  longTaskTotal_ms: 802,
+  maxSyntheticEvent_ms: 0,
+  rafP95_ms: 16.59999999999991,
+  framesOver50ms: 6,
+  frameCount: 368
+}
+agent-ops-console {
+  LCP_ms: 1208,
+  CLS: 0,
+  longTasks: 4,
+  longTaskTotal_ms: 958,
+  maxSyntheticEvent_ms: 88,
+  rafP95_ms: 16.600000000000023,
+  framesOver50ms: 4,
+  frameCount: 390
+}
+learn {
+  LCP_ms: 1028,
+  CLS: 0,
+  longTasks: 4,
+  longTaskTotal_ms: 782,
+  maxSyntheticEvent_ms: 80,
+  rafP95_ms: 16.59999999999991,
+  framesOver50ms: 4,
+  frameCount: 415
+}
+pawly {
+  LCP_ms: 1636,
+  CLS: 0.07722198513061253,
+  longTasks: 4,
+  longTaskTotal_ms: 678,
+  maxSyntheticEvent_ms: 88,
+  rafP95_ms: 16.59999999999991,
+  framesOver50ms: 5,
+  frameCount: 463
+}

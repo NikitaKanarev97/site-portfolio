@@ -1,0 +1,5101 @@
+{
+  "checks": [
+    {
+      "name": "en-1440 / normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/ anchor #work",
+      "pass": true
+    },
+    {
+      "name": "/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "en-1440 /about/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/about/ anchor #approach",
+      "pass": true
+    },
+    {
+      "name": "/about/ anchor #authorization",
+      "pass": true
+    },
+    {
+      "name": "/about/ anchor #evidence",
+      "pass": true
+    },
+    {
+      "name": "/about/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "en-1440 /work/agent-ops-console/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/approval-task-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/approval-task-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 1 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/en/action-approvals-desktop.webp",
+        "expected": "/media/rebuild/agent-ops/v2/en/action-approvals-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 1 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 1 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 3 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/review-queue-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/review-queue-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 3 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 3 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 4 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/run-detail-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/run-detail-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 4 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 4 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 6 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/approval-task-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/approval-task-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 6 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 6 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 7 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/en/action-approvals-desktop.webp",
+        "expected": "/media/rebuild/agent-ops/v2/en/action-approvals-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 7 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 7 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 9 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/policy-boundary-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/policy-boundary-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 9 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 9 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 10 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/en/policy-editor-desktop.webp",
+        "expected": "/media/rebuild/agent-ops/v2/en/policy-editor-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 10 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 10 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 12 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/policy-rollout-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/policy-rollout-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 12 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 12 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 13 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/en/policy-version-diff-desktop.webp",
+        "expected": "/media/rebuild/agent-ops/v2/en/policy-version-diff-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 13 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 13 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 15 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/premium-v3/en/autonomy-states-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/premium-v3/en/autonomy-states-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 15 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 15 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 16 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/en/autonomy-desktop.webp",
+        "expected": "/media/rebuild/agent-ops/v2/en/autonomy-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 16 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 16 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ details 0 opens",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ details 0 closes",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ anchor #problem",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ anchor #operating-model",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ anchor #investigation",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "en-1440 /work/partner-portal/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/work/partner-portal/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-dssl/legacy-dashboard.webp",
+        "expected": "http://127.0.0.1:4414/media/case-dssl/legacy-dashboard.webp"
+      }
+    },
+    {
+      "name": "/work/partner-portal/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/partner-portal/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/partner-portal/ zoom 1 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/partner-portal/v3/legacy-cart-alternative.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/partner-portal/v3/legacy-cart-alternative.webp"
+      }
+    },
+    {
+      "name": "/work/partner-portal/ zoom 1 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/partner-portal/ zoom 1 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/partner-portal/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "en-1440 /work/learn/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/composition/en/home-wide.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/composition/en/home-wide.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 1 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/answer-detail.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/answer-detail.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 1 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 1 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 2 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn/before-catalog.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn/before-catalog.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 2 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 2 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 3 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/reference.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/reference.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 3 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 3 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 4 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/path.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/path.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 4 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 4 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 5 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/completion-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/completion-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 5 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 5 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 6 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/learner.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/learner.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 6 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 6 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 7 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/reader-history.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/reader-history.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 7 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 7 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 8 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/failed.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/failed.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 8 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 8 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 9 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/review-detail.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/review-detail.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 9 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 9 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 10 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/passed-score.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/passed-score.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 10 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 10 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ anchor #problem",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ anchor #shared-material",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ anchor #reference-path",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "en-1440 /work/vet-clinic/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/en/visit-workspace-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/en/visit-workspace-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 1 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/en/visit-full-desktop.webp",
+        "expected": "/media/case-vet-v2/en/visit-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 1 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 1 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 3 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v3/en/queue-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v3/en/queue-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 3 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 3 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 4 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v3/en/queue-full-desktop.webp",
+        "expected": "/media/case-vet-v3/en/queue-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 4 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 4 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 6 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/en/private-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/en/private-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 6 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 6 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 7 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/en/visit-full-desktop.webp",
+        "expected": "/media/case-vet-v2/en/visit-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 7 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 7 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 9 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v3/en/trace-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v3/en/trace-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 9 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 9 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 10 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v3/en/trace-full-desktop.webp",
+        "expected": "/media/case-vet-v3/en/trace-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 10 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 10 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 12 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/en/dose-review-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/en/dose-review-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 12 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 12 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 13 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/en/dose-full-desktop.webp",
+        "expected": "/media/case-vet-v2/en/dose-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 13 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 13 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 15 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/en/invoice-document-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/en/invoice-document-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 15 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 15 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 16 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/en/invoice-full-desktop.webp",
+        "expected": "/media/case-vet-v2/en/invoice-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 16 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 16 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 18 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v3/en/publish-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v3/en/publish-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 18 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 18 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 19 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/en/discharge-full-desktop.webp",
+        "expected": "/media/case-vet-v2/en/discharge-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 19 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 19 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 21 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/en/blocked-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/en/blocked-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 21 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 21 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 22 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/en/blocked-full-desktop.webp",
+        "expected": "/media/case-vet-v2/en/blocked-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 22 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 22 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 24 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/en/owner-overview-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/en/owner-overview-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 24 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 24 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 25 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/en/owner-full-desktop.webp",
+        "expected": "/media/case-vet-v2/en/owner-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 25 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 25 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 26 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/en/owner-overview-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/en/owner-overview-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 26 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 26 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 27 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/en/owner-full-mobile.webp",
+        "expected": "/media/case-vet-v2/en/owner-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 27 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 27 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 29 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/en/missing-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/en/missing-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 29 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 29 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 30 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/en/missing-full-mobile.webp",
+        "expected": "/media/case-vet-v2/en/missing-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 30 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 30 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ anchor #problem",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ anchor #roles",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ anchor #clinical",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "en-1440 /work/pawly/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/hero-status-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/hero-status-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 1 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/match-list-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/match-list-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 1 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 1 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 2 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/match-profile-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/match-profile-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 2 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 2 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 3 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/match-review-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/match-review-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 3 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 3 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 4 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/role-owner-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/role-owner-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 4 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 4 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 5 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/role-walker-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/role-walker-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 5 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 5 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 6 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/branch-reserve-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/branch-reserve-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 6 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 6 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 7 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/branch-reserve-action-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/branch-reserve-action-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 7 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 7 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 8 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/branch-failed-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/branch-failed-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 8 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 8 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 9 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/branch-failed-action-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/branch-failed-action-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 9 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 9 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 10 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/proof-selected-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/proof-selected-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 10 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 10 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 11 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/proof-confirmed-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/proof-confirmed-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 11 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 11 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 12 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/proof-report-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/proof-report-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 12 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 12 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 13 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/settle-payment-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/settle-payment-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 13 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 13 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 14 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/settle-earnings-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/settle-earnings-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 14 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 14 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ anchor #choosing",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ anchor #handoff",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ anchor #exceptions",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "en-1440 copy success",
+      "pass": true
+    },
+    {
+      "name": "en-1440 copy failure fallback",
+      "pass": true
+    },
+    {
+      "name": "en-1440 project dialog trap",
+      "pass": false
+    },
+    {
+      "name": "en-1440 project dialog returns focus",
+      "pass": true
+    },
+    {
+      "name": "en-1440 Home history restoration",
+      "pass": true,
+      "data": {
+        "before": 237,
+        "after": 237
+      }
+    },
+    {
+      "name": "en-1440 locale navigation exists",
+      "pass": false
+    },
+    {
+      "name": "en-1440 no runtime or HTTP errors",
+      "pass": true,
+      "data": {
+        "errors": [],
+        "failed": []
+      }
+    },
+    {
+      "name": "en-390 / normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/ mobile menu open",
+      "pass": true
+    },
+    {
+      "name": "/ menu focus contained",
+      "pass": false
+    },
+    {
+      "name": "/ menu close unlock",
+      "pass": true
+    },
+    {
+      "name": "/ menu focus return",
+      "pass": true
+    },
+    {
+      "name": "/ anchor #work",
+      "pass": true
+    },
+    {
+      "name": "/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "en-390 /about/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/about/ mobile menu open",
+      "pass": true
+    },
+    {
+      "name": "/about/ menu focus contained",
+      "pass": false
+    },
+    {
+      "name": "/about/ menu close unlock",
+      "pass": true
+    },
+    {
+      "name": "/about/ menu focus return",
+      "pass": true
+    },
+    {
+      "name": "/about/ anchor #approach",
+      "pass": true
+    },
+    {
+      "name": "/about/ anchor #authorization",
+      "pass": true
+    },
+    {
+      "name": "/about/ anchor #evidence",
+      "pass": true
+    },
+    {
+      "name": "/about/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "en-390 /work/agent-ops-console/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ mobile menu open",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ menu focus contained",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ menu close unlock",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ menu focus return",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/approval-consequences-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/approval-consequences-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 2 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/en/action-approvals-mobile.webp",
+        "expected": "/media/rebuild/agent-ops/v2/en/action-approvals-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 2 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 2 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 3 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/review-queue-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/review-queue-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 3 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 3 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 4 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/run-evidence-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/run-evidence-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 4 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 4 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 5 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/en/run-detail-mobile.webp",
+        "expected": "/media/rebuild/agent-ops/v2/en/run-detail-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 5 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 5 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 6 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/approval-task-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/approval-task-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 6 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 6 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 8 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/en/action-approvals-mobile.webp",
+        "expected": "/media/rebuild/agent-ops/v2/en/action-approvals-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 8 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 8 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 9 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/policy-boundary-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/policy-boundary-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 9 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 9 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 11 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/en/policy-editor-mobile.webp",
+        "expected": "/media/rebuild/agent-ops/v2/en/policy-editor-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 11 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 11 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 12 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/policy-rollout-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/en/policy-rollout-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 12 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 12 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 14 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/en/policy-version-diff-mobile.webp",
+        "expected": "/media/rebuild/agent-ops/v2/en/policy-version-diff-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 14 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 14 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 15 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/premium-v3/en/autonomy-states-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/premium-v3/en/autonomy-states-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 15 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 15 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 17 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/en/autonomy-mobile.webp",
+        "expected": "/media/rebuild/agent-ops/v2/en/autonomy-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 17 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/agent-ops-console/ zoom 17 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ details 0 opens",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ details 0 closes",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ anchor #problem",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ anchor #operating-model",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ anchor #investigation",
+      "pass": true
+    },
+    {
+      "name": "/work/agent-ops-console/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "en-390 /work/partner-portal/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/work/partner-portal/ mobile menu open",
+      "pass": true
+    },
+    {
+      "name": "/work/partner-portal/ menu focus contained",
+      "pass": false
+    },
+    {
+      "name": "/work/partner-portal/ menu close unlock",
+      "pass": true
+    },
+    {
+      "name": "/work/partner-portal/ menu focus return",
+      "pass": true
+    },
+    {
+      "name": "/work/partner-portal/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-dssl/legacy-dashboard.webp",
+        "expected": "http://127.0.0.1:4414/media/case-dssl/legacy-dashboard.webp"
+      }
+    },
+    {
+      "name": "/work/partner-portal/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/partner-portal/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/partner-portal/ zoom 1 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/partner-portal/v3/legacy-cart-alternative.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/partner-portal/v3/legacy-cart-alternative.webp"
+      }
+    },
+    {
+      "name": "/work/partner-portal/ zoom 1 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/partner-portal/ zoom 1 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/partner-portal/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "en-390 /work/learn/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ mobile menu open",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ menu focus contained",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ menu close unlock",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ menu focus return",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/composition/en/home-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/composition/en/home-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 1 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/answer-detail.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/answer-detail.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 1 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 1 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 2 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn/before-catalog.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn/before-catalog.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 2 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 2 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 3 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/reference-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/reference-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 3 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 3 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 4 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/path-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/path-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 4 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 4 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 5 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/completion-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/completion-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 5 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 5 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 6 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/learner-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/learner-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 6 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 6 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 7 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/reader-history.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/reader-history.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 7 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 7 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 8 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/failed-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/failed-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 8 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 8 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 9 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/review-detail.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/review-detail.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 9 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 9 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ zoom 10 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/en/passed-score-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/en/passed-score-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/learn/ zoom 10 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/learn/ zoom 10 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ anchor #problem",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ anchor #shared-material",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ anchor #reference-path",
+      "pass": true
+    },
+    {
+      "name": "/work/learn/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "en-390 /work/vet-clinic/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ mobile menu open",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ menu focus contained",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ menu close unlock",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ menu focus return",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/en/visit-context-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/en/visit-context-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 2 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/en/visit-full-mobile.webp",
+        "expected": "/media/case-vet-v2/en/visit-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 2 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 2 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 3 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v3/en/queue-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v3/en/queue-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 3 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 3 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 5 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v3/en/queue-full-mobile.webp",
+        "expected": "/media/case-vet-v3/en/queue-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 5 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 5 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 6 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/en/private-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/en/private-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 6 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 6 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 8 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/en/visit-full-mobile.webp",
+        "expected": "/media/case-vet-v2/en/visit-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 8 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 8 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 9 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v3/en/trace-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v3/en/trace-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 9 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 9 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 11 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v3/en/trace-full-mobile.webp",
+        "expected": "/media/case-vet-v3/en/trace-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 11 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 11 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 12 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/en/dose-review-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/en/dose-review-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 12 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 12 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 14 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/en/dose-full-mobile.webp",
+        "expected": "/media/case-vet-v2/en/dose-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 14 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 14 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 15 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/en/invoice-document-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/en/invoice-document-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 15 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 15 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 17 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/en/invoice-full-mobile.webp",
+        "expected": "/media/case-vet-v2/en/invoice-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 17 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 17 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 18 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v3/en/publish-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v3/en/publish-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 18 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 18 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 20 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/en/discharge-full-mobile.webp",
+        "expected": "/media/case-vet-v2/en/discharge-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 20 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 20 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 21 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/en/blocked-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/en/blocked-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 21 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 21 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 23 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/en/blocked-full-mobile.webp",
+        "expected": "/media/case-vet-v2/en/blocked-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 23 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 23 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 26 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/en/owner-overview-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/en/owner-overview-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 26 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 26 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 28 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/en/owner-full-mobile.webp",
+        "expected": "/media/case-vet-v2/en/owner-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 28 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 28 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 29 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/en/missing-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/en/missing-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 29 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 29 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 31 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/en/missing-full-mobile.webp",
+        "expected": "/media/case-vet-v2/en/missing-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 31 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/vet-clinic/ zoom 31 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ anchor #problem",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ anchor #roles",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ anchor #clinical",
+      "pass": true
+    },
+    {
+      "name": "/work/vet-clinic/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "en-390 /work/pawly/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ mobile menu open",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ menu focus contained",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ menu close unlock",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ menu focus return",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/hero-status-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/hero-status-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 1 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/match-list-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/match-list-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 1 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 1 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 2 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/match-profile-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/match-profile-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 2 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 2 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 3 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/match-review-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/match-review-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 3 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 3 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 4 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/role-owner-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/role-owner-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 4 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 4 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 5 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/role-walker-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/role-walker-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 5 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 5 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 6 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/branch-reserve-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/branch-reserve-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 6 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 6 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 7 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/branch-reserve-action-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/branch-reserve-action-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 7 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 7 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 8 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/branch-failed-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/branch-failed-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 8 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 8 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 9 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/branch-failed-action-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/branch-failed-action-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 9 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 9 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 10 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/proof-selected-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/proof-selected-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 10 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 10 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 11 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/proof-confirmed-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/proof-confirmed-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 11 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 11 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 12 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/proof-report-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/proof-report-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 12 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 12 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 13 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/settle-payment-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/settle-payment-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 13 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 13 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ zoom 14 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/settle-earnings-en.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/settle-earnings-en.webp"
+      }
+    },
+    {
+      "name": "/work/pawly/ zoom 14 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/work/pawly/ zoom 14 restore",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ anchor #choosing",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ anchor #handoff",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ anchor #exceptions",
+      "pass": true
+    },
+    {
+      "name": "/work/pawly/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "en-390 copy success",
+      "pass": true
+    },
+    {
+      "name": "en-390 copy failure fallback",
+      "pass": true
+    },
+    {
+      "name": "en-390 project dialog trap",
+      "pass": false
+    },
+    {
+      "name": "en-390 project dialog returns focus",
+      "pass": true
+    },
+    {
+      "name": "en-390 Home history restoration",
+      "pass": true,
+      "data": {
+        "before": 253,
+        "after": 253
+      }
+    },
+    {
+      "name": "en-390 locale navigation exists",
+      "pass": false
+    },
+    {
+      "name": "en-390 no runtime or HTTP errors",
+      "pass": true,
+      "data": {
+        "errors": [],
+        "failed": []
+      }
+    },
+    {
+      "name": "ru-1440 / normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/ru/ anchor #work",
+      "pass": true
+    },
+    {
+      "name": "/ru/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "ru-1440 /about/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/ru/about/ anchor #approach",
+      "pass": true
+    },
+    {
+      "name": "/ru/about/ anchor #evidence",
+      "pass": true
+    },
+    {
+      "name": "/ru/about/ anchor #ai",
+      "pass": true
+    },
+    {
+      "name": "/ru/about/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "ru-1440 /work/agent-ops-console/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/approval-task-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/approval-task-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 1 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/ru/action-approvals-desktop.webp",
+        "expected": "/media/rebuild/agent-ops/v2/ru/action-approvals-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 1 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 1 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 3 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/review-queue-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/review-queue-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 3 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 3 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 4 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/run-detail-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/run-detail-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 4 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 4 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 6 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/approval-task-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/approval-task-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 6 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 6 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 7 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/ru/action-approvals-desktop.webp",
+        "expected": "/media/rebuild/agent-ops/v2/ru/action-approvals-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 7 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 7 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 9 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/policy-boundary-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/policy-boundary-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 9 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 9 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 10 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/ru/policy-editor-desktop.webp",
+        "expected": "/media/rebuild/agent-ops/v2/ru/policy-editor-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 10 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 10 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 12 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/policy-rollout-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/policy-rollout-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 12 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 12 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 13 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/ru/policy-version-diff-desktop.webp",
+        "expected": "/media/rebuild/agent-ops/v2/ru/policy-version-diff-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 13 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 13 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 15 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/premium-v3/ru/autonomy-states-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/premium-v3/ru/autonomy-states-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 15 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 15 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 16 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/ru/autonomy-desktop.webp",
+        "expected": "/media/rebuild/agent-ops/v2/ru/autonomy-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 16 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 16 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ details 0 opens",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ details 0 closes",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ anchor #problem",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ anchor #operating-model",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ anchor #investigation",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "ru-1440 /work/partner-portal/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/partner-portal/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-dssl/legacy-dashboard.webp",
+        "expected": "http://127.0.0.1:4414/media/case-dssl/legacy-dashboard.webp"
+      }
+    },
+    {
+      "name": "/ru/work/partner-portal/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/partner-portal/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/partner-portal/ zoom 1 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/partner-portal/v3/legacy-cart-alternative.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/partner-portal/v3/legacy-cart-alternative.webp"
+      }
+    },
+    {
+      "name": "/ru/work/partner-portal/ zoom 1 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/partner-portal/ zoom 1 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/partner-portal/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "ru-1440 /work/learn/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/composition/ru/home-wide.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/composition/ru/home-wide.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 1 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/answer-detail.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/answer-detail.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 1 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 1 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 2 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn/before-catalog.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn/before-catalog.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 2 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 2 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 3 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/reference.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/reference.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 3 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 3 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 4 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/path.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/path.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 4 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 4 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 5 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/completion-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/completion-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 5 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 5 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 6 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/learner.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/learner.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 6 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 6 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 7 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/reader-history.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/reader-history.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 7 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 7 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 8 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/failed.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/failed.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 8 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 8 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 9 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/review-detail.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/review-detail.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 9 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 9 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 10 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/passed-score.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/passed-score.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 10 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 10 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ anchor #problem",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ anchor #shared-material",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ anchor #reference-path",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "ru-1440 /work/vet-clinic/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/ru/visit-workspace-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/ru/visit-workspace-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 1 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/ru/visit-full-desktop.webp",
+        "expected": "/media/case-vet-v2/ru/visit-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 1 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 1 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 3 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v3/ru/queue-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v3/ru/queue-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 3 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 3 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 4 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v3/ru/queue-full-desktop.webp",
+        "expected": "/media/case-vet-v3/ru/queue-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 4 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 4 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 6 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/ru/private-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/ru/private-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 6 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 6 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 7 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/ru/visit-full-desktop.webp",
+        "expected": "/media/case-vet-v2/ru/visit-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 7 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 7 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 9 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v3/ru/trace-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v3/ru/trace-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 9 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 9 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 10 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v3/ru/trace-full-desktop.webp",
+        "expected": "/media/case-vet-v3/ru/trace-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 10 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 10 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 12 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/ru/dose-review-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/ru/dose-review-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 12 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 12 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 13 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/ru/dose-full-desktop.webp",
+        "expected": "/media/case-vet-v2/ru/dose-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 13 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 13 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 15 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/ru/invoice-document-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/ru/invoice-document-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 15 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 15 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 16 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/ru/invoice-full-desktop.webp",
+        "expected": "/media/case-vet-v2/ru/invoice-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 16 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 16 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 18 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v3/ru/publish-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v3/ru/publish-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 18 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 18 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 19 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/ru/discharge-full-desktop.webp",
+        "expected": "/media/case-vet-v2/ru/discharge-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 19 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 19 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 21 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/ru/blocked-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/ru/blocked-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 21 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 21 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 22 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/ru/blocked-full-desktop.webp",
+        "expected": "/media/case-vet-v2/ru/blocked-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 22 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 22 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 24 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/ru/owner-overview-desktop.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/ru/owner-overview-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 24 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 24 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 25 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/ru/owner-full-desktop.webp",
+        "expected": "/media/case-vet-v2/ru/owner-full-desktop.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 25 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 25 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 26 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/ru/owner-overview-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/ru/owner-overview-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 26 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 26 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 27 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/ru/owner-full-mobile.webp",
+        "expected": "/media/case-vet-v2/ru/owner-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 27 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 27 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 29 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/ru/missing-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/ru/missing-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 29 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 29 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 30 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/ru/missing-full-mobile.webp",
+        "expected": "/media/case-vet-v2/ru/missing-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 30 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 30 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ anchor #problem",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ anchor #roles",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ anchor #clinical",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "ru-1440 /work/pawly/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/hero-status-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/hero-status-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 1 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/match-list-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/match-list-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 1 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 1 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 2 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/match-profile-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/match-profile-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 2 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 2 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 3 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/match-review-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/match-review-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 3 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 3 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 4 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/role-owner-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/role-owner-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 4 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 4 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 5 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/role-walker-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/role-walker-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 5 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 5 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 6 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/branch-reserve-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/branch-reserve-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 6 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 6 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 7 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/branch-reserve-action-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/branch-reserve-action-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 7 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 7 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 8 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/branch-failed-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/branch-failed-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 8 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 8 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 9 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/branch-failed-action-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/branch-failed-action-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 9 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 9 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 10 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/proof-selected-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/proof-selected-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 10 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 10 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 11 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/proof-confirmed-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/proof-confirmed-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 11 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 11 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 12 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/proof-report-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/proof-report-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 12 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 12 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 13 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/settle-payment-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/settle-payment-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 13 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 13 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 14 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/settle-earnings-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/settle-earnings-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 14 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 14 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ anchor #choosing",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ anchor #handoff",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ anchor #exceptions",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "ru-1440 copy success",
+      "pass": true
+    },
+    {
+      "name": "ru-1440 copy failure fallback",
+      "pass": true
+    },
+    {
+      "name": "ru-1440 project dialog trap",
+      "pass": false
+    },
+    {
+      "name": "ru-1440 project dialog returns focus",
+      "pass": true
+    },
+    {
+      "name": "ru-1440 Home history restoration",
+      "pass": true,
+      "data": {
+        "before": 237,
+        "after": 237
+      }
+    },
+    {
+      "name": "ru-1440 locale navigation exists",
+      "pass": false
+    },
+    {
+      "name": "ru-1440 no runtime or HTTP errors",
+      "pass": true,
+      "data": {
+        "errors": [],
+        "failed": []
+      }
+    },
+    {
+      "name": "ru-390 / normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/ru/ mobile menu open",
+      "pass": true
+    },
+    {
+      "name": "/ru/ menu focus contained",
+      "pass": false
+    },
+    {
+      "name": "/ru/ menu close unlock",
+      "pass": true
+    },
+    {
+      "name": "/ru/ menu focus return",
+      "pass": true
+    },
+    {
+      "name": "/ru/ anchor #work",
+      "pass": true
+    },
+    {
+      "name": "/ru/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "ru-390 /about/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/ru/about/ mobile menu open",
+      "pass": true
+    },
+    {
+      "name": "/ru/about/ menu focus contained",
+      "pass": false
+    },
+    {
+      "name": "/ru/about/ menu close unlock",
+      "pass": true
+    },
+    {
+      "name": "/ru/about/ menu focus return",
+      "pass": true
+    },
+    {
+      "name": "/ru/about/ anchor #approach",
+      "pass": true
+    },
+    {
+      "name": "/ru/about/ anchor #evidence",
+      "pass": true
+    },
+    {
+      "name": "/ru/about/ anchor #ai",
+      "pass": true
+    },
+    {
+      "name": "/ru/about/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "ru-390 /work/agent-ops-console/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ mobile menu open",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ menu focus contained",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ menu close unlock",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ menu focus return",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/approval-consequences-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/approval-consequences-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 2 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/ru/action-approvals-mobile.webp",
+        "expected": "/media/rebuild/agent-ops/v2/ru/action-approvals-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 2 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 2 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 3 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/review-queue-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/review-queue-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 3 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 3 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 4 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/run-evidence-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/run-evidence-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 4 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 4 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 5 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/ru/run-detail-mobile.webp",
+        "expected": "/media/rebuild/agent-ops/v2/ru/run-detail-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 5 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 5 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 6 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/approval-task-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/approval-task-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 6 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 6 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 8 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/ru/action-approvals-mobile.webp",
+        "expected": "/media/rebuild/agent-ops/v2/ru/action-approvals-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 8 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 8 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 9 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/policy-boundary-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/policy-boundary-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 9 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 9 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 11 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/ru/policy-editor-mobile.webp",
+        "expected": "/media/rebuild/agent-ops/v2/ru/policy-editor-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 11 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 11 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 12 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/policy-rollout-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/v2/ru/policy-rollout-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 12 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 12 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 14 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/ru/policy-version-diff-mobile.webp",
+        "expected": "/media/rebuild/agent-ops/v2/ru/policy-version-diff-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 14 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 14 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 15 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/agent-ops/premium-v3/ru/autonomy-states-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/agent-ops/premium-v3/ru/autonomy-states-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 15 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 15 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 17 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/rebuild/agent-ops/v2/ru/autonomy-mobile.webp",
+        "expected": "/media/rebuild/agent-ops/v2/ru/autonomy-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 17 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ zoom 17 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ details 0 opens",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ details 0 closes",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ anchor #problem",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ anchor #operating-model",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ anchor #investigation",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/agent-ops-console/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "ru-390 /work/partner-portal/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/partner-portal/ mobile menu open",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/partner-portal/ menu focus contained",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/partner-portal/ menu close unlock",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/partner-portal/ menu focus return",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/partner-portal/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-dssl/legacy-dashboard.webp",
+        "expected": "http://127.0.0.1:4414/media/case-dssl/legacy-dashboard.webp"
+      }
+    },
+    {
+      "name": "/ru/work/partner-portal/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/partner-portal/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/partner-portal/ zoom 1 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/rebuild/partner-portal/v3/legacy-cart-alternative.webp",
+        "expected": "http://127.0.0.1:4414/media/rebuild/partner-portal/v3/legacy-cart-alternative.webp"
+      }
+    },
+    {
+      "name": "/ru/work/partner-portal/ zoom 1 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/partner-portal/ zoom 1 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/partner-portal/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "ru-390 /work/learn/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ mobile menu open",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ menu focus contained",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ menu close unlock",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ menu focus return",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/composition/ru/home-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/composition/ru/home-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 1 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/answer-detail.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/answer-detail.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 1 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 1 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 2 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn/before-catalog.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn/before-catalog.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 2 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 2 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 3 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/reference-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/reference-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 3 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 3 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 4 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/path-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/path-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 4 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 4 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 5 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/completion-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/completion-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 5 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 5 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 6 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/learner-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/learner-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 6 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 6 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 7 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/reader-history.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/reader-history.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 7 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 7 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 8 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/failed-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/failed-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 8 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 8 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 9 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/review-detail.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/review-detail.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 9 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 9 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ zoom 10 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/passed-score-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-learn-v2/current/ru/passed-score-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/learn/ zoom 10 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/learn/ zoom 10 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ anchor #problem",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ anchor #shared-material",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ anchor #reference-path",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/learn/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "ru-390 /work/vet-clinic/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ mobile menu open",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ menu focus contained",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ menu close unlock",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ menu focus return",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/ru/visit-context-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/ru/visit-context-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 2 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/ru/visit-full-mobile.webp",
+        "expected": "/media/case-vet-v2/ru/visit-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 2 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 2 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 3 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v3/ru/queue-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v3/ru/queue-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 3 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 3 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 5 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v3/ru/queue-full-mobile.webp",
+        "expected": "/media/case-vet-v3/ru/queue-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 5 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 5 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 6 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/ru/private-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/ru/private-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 6 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 6 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 8 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/ru/visit-full-mobile.webp",
+        "expected": "/media/case-vet-v2/ru/visit-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 8 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 8 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 9 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v3/ru/trace-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v3/ru/trace-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 9 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 9 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 11 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v3/ru/trace-full-mobile.webp",
+        "expected": "/media/case-vet-v3/ru/trace-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 11 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 11 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 12 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/ru/dose-review-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/ru/dose-review-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 12 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 12 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 14 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/ru/dose-full-mobile.webp",
+        "expected": "/media/case-vet-v2/ru/dose-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 14 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 14 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 15 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/ru/invoice-document-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/ru/invoice-document-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 15 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 15 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 17 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/ru/invoice-full-mobile.webp",
+        "expected": "/media/case-vet-v2/ru/invoice-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 17 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 17 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 18 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v3/ru/publish-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v3/ru/publish-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 18 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 18 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 20 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/ru/discharge-full-mobile.webp",
+        "expected": "/media/case-vet-v2/ru/discharge-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 20 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 20 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 21 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/ru/blocked-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/ru/blocked-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 21 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 21 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 23 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/ru/blocked-full-mobile.webp",
+        "expected": "/media/case-vet-v2/ru/blocked-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 23 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 23 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 26 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/ru/owner-overview-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/ru/owner-overview-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 26 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 26 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 28 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/ru/owner-full-mobile.webp",
+        "expected": "/media/case-vet-v2/ru/owner-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 28 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 28 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 29 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/case-vet-v2/ru/missing-mobile.webp",
+        "expected": "http://127.0.0.1:4414/media/case-vet-v2/ru/missing-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 29 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 29 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 31 source",
+      "pass": true,
+      "data": {
+        "actual": "/media/case-vet-v2/ru/missing-full-mobile.webp",
+        "expected": "/media/case-vet-v2/ru/missing-full-mobile.webp"
+      }
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 31 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/vet-clinic/ zoom 31 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ anchor #problem",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ anchor #roles",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ anchor #clinical",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/vet-clinic/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "ru-390 /work/pawly/ normal entrance",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ mobile menu open",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ menu focus contained",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ menu close unlock",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ menu focus return",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 0 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/hero-status-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/hero-status-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 0 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 0 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 1 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/match-list-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/match-list-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 1 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 1 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 2 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/match-profile-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/match-profile-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 2 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 2 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 3 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/match-review-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/match-review-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 3 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 3 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 4 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/role-owner-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/role-owner-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 4 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 4 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 5 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/role-walker-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/role-walker-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 5 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 5 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 6 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/branch-reserve-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/branch-reserve-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 6 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 6 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 7 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/branch-reserve-action-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/branch-reserve-action-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 7 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 7 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 8 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/branch-failed-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/branch-failed-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 8 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 8 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 9 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/branch-failed-action-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/branch-failed-action-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 9 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 9 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 10 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/proof-selected-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/proof-selected-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 10 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 10 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 11 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/proof-confirmed-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/proof-confirmed-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 11 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 11 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 12 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/proof-report-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/proof-report-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 12 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 12 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 13 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/settle-payment-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/settle-payment-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 13 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 13 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 14 source",
+      "pass": true,
+      "data": {
+        "actual": "http://127.0.0.1:4414/media/pawly-case-v2/settle-earnings-ru.webp",
+        "expected": "http://127.0.0.1:4414/media/pawly-case-v2/settle-earnings-ru.webp"
+      }
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 14 keyboard trap",
+      "pass": false
+    },
+    {
+      "name": "/ru/work/pawly/ zoom 14 restore",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ anchor #choosing",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ anchor #handoff",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ anchor #exceptions",
+      "pass": true
+    },
+    {
+      "name": "/ru/work/pawly/ live reduce visible",
+      "pass": true
+    },
+    {
+      "name": "ru-390 copy success",
+      "pass": true
+    },
+    {
+      "name": "ru-390 copy failure fallback",
+      "pass": true
+    },
+    {
+      "name": "ru-390 project dialog trap",
+      "pass": false
+    },
+    {
+      "name": "ru-390 project dialog returns focus",
+      "pass": true
+    },
+    {
+      "name": "ru-390 Home history restoration",
+      "pass": true,
+      "data": {
+        "before": 196,
+        "after": 196
+      }
+    },
+    {
+      "name": "ru-390 locale navigation exists",
+      "pass": false
+    },
+    {
+      "name": "ru-390 no runtime or HTTP errors",
+      "pass": true,
+      "data": {
+        "errors": [],
+        "failed": []
+      }
+    },
+    {
+      "name": "en / no JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "en /about/ no JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "en /work/agent-ops-console/ no JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "en /work/partner-portal/ no JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "en /work/learn/ no JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "en /work/vet-clinic/ no JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "en /work/pawly/ no JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "ru / no JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "ru /about/ no JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "ru /work/agent-ops-console/ no JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "ru /work/partner-portal/ no JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "ru /work/learn/ no JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "ru /work/vet-clinic/ no JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "ru /work/pawly/ no JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "en / blocked JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "en /about/ blocked JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "en /work/agent-ops-console/ blocked JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "en /work/partner-portal/ blocked JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "en /work/learn/ blocked JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "en /work/vet-clinic/ blocked JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "en /work/pawly/ blocked JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "ru / blocked JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "ru /about/ blocked JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "ru /work/agent-ops-console/ blocked JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "ru /work/partner-portal/ blocked JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "ru /work/learn/ blocked JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "ru /work/vet-clinic/ blocked JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "ru /work/pawly/ blocked JS",
+      "pass": true,
+      "data": {
+        "hidden": 0,
+        "h1": 1,
+        "links": true,
+        "overflow": 0
+      }
+    }
+  ],
+  "issues": []
+}

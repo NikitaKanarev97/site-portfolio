@@ -1,0 +1,76 @@
+{
+  "baseline": "949255834395046e7681fefa5a97ed6e7ae50a04",
+  "implementation": "c4192c42728d4c937092cb0a7fc25b047af72624",
+  "unchanged": [
+    {
+      "path": "public",
+      "before": "0f65bcb216e6eddefb666f763f40476db2013858",
+      "after": "0f65bcb216e6eddefb666f763f40476db2013858"
+    },
+    {
+      "path": "src/data",
+      "before": "20e6f256a9676dbba5120b9fa8b17704960f630f",
+      "after": "20e6f256a9676dbba5120b9fa8b17704960f630f"
+    },
+    {
+      "path": "src/components/pawly",
+      "before": "d586c10bf11b5f1652457aec544098b66b69063c",
+      "after": "d586c10bf11b5f1652457aec544098b66b69063c"
+    },
+    {
+      "path": "src/copy/cases/pawly-v2.ts",
+      "before": "9795a660ad1960fb393b006f6d0f7787a5018f51",
+      "after": "9795a660ad1960fb393b006f6d0f7787a5018f51"
+    },
+    {
+      "path": "src/copy/ru/cases/pawly-v2.ts",
+      "before": "f06e4278ea6676404c5f1a72d915050dde22116b",
+      "after": "f06e4278ea6676404c5f1a72d915050dde22116b"
+    },
+    {
+      "path": "package.json",
+      "before": "6728ae475158faf56ba55ab2680d5c34de8b6de2",
+      "after": "6728ae475158faf56ba55ab2680d5c34de8b6de2"
+    },
+    {
+      "path": "package-lock.json",
+      "before": "4c8f7161c502895604f280b7af928e8b0c36b885",
+      "after": "4c8f7161c502895604f280b7af928e8b0c36b885"
+    },
+    {
+      "path": "ds/tokens.css",
+      "before": "c38a5286e0e80357a9b5090274cd835b7cdb9249",
+      "after": "c38a5286e0e80357a9b5090274cd835b7cdb9249"
+    },
+    {
+      "path": "ds/motion.js",
+      "before": "3d5d84a31ed29ea6f996df507b4b5868c24dc7c9",
+      "after": "3d5d84a31ed29ea6f996df507b4b5868c24dc7c9"
+    },
+    {
+      "path": "src/styles/global.css",
+      "before": "574d6bb379ac08b64bfd3b39e0ae0780b562bb19",
+      "after": "574d6bb379ac08b64bfd3b39e0ae0780b562bb19"
+    },
+    {
+      "path": "src/pages/index.astro",
+      "before": "b1f2574a5f8355c91f867b0f23c5044f605e8c07",
+      "after": "b1f2574a5f8355c91f867b0f23c5044f605e8c07"
+    }
+  ],
+  "mirrors": [
+    {
+      "source": "ds/tokens.css",
+      "mirror": "src/styles/tokens.css",
+      "sourceSha256": "0f13017b2889333f98c1ac80fde556ea7d2ba6e756e07935962a611831c5c1a6",
+      "mirrorSha256": "0f13017b2889333f98c1ac80fde556ea7d2ba6e756e07935962a611831c5c1a6"
+    },
+    {
+      "source": "ds/motion.js",
+      "mirror": "src/scripts/motion.js",
+      "sourceSha256": "adf5f2acf5c7bbd8f9e1278639885b5d3ab2107daaeb5fab29ad9843acc00f30",
+      "mirrorSha256": "adf5f2acf5c7bbd8f9e1278639885b5d3ab2107daaeb5fab29ad9843acc00f30"
+    }
+  ],
+  "pass": true
+}

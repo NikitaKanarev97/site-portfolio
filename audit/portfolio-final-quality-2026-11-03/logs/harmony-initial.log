@@ -1,0 +1,39 @@
+
+> site-portfolio@0.1.0 check:harmony
+> node scripts/harmony-check.mjs / /ru/ /about/ /ru/about/ /work/agent-ops-console/ /ru/work/agent-ops-console/ /work/partner-portal/ /ru/work/partner-portal/ /work/learn/ /ru/work/learn/ /work/vet-clinic/ /ru/work/vet-clinic/ /work/pawly/ /ru/work/pawly/ --base=http://127.0.0.1:4414 --widths=1440,390
+
+/ @1440: плашек 0, тезисов 0, подписей и абзацев 0
+/ @390: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/ @1440: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/ @390: плашек 0, тезисов 0, подписей и абзацев 0
+/about/ @1440: плашек 0, тезисов 0, подписей и абзацев 0
+/about/ @390: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/about/ @1440: плашек 0, тезисов 0, подписей и абзацев 0
+/ru/about/ @390: плашек 0, тезисов 0, подписей и абзацев 0
+/work/agent-ops-console/ @1440: плашек 0, тезисов 0, подписей и абзацев 0 · case-agent-ops-console 0 слов, 8 кадров
+/work/agent-ops-console/ @390: плашек 0, тезисов 0, подписей и абзацев 0 · case-agent-ops-console 0 слов, 8 кадров
+/ru/work/agent-ops-console/ @1440: плашек 0, тезисов 0, подписей и абзацев 0 · case-agent-ops-console 0 слов, 8 кадров
+/ru/work/agent-ops-console/ @390: плашек 0, тезисов 0, подписей и абзацев 0 · case-agent-ops-console 0 слов, 8 кадров
+/work/partner-portal/ @1440: плашек 0, тезисов 0, подписей и абзацев 5 · case-partner-portal 76 слов, 26 кадров
+/work/partner-portal/ @390: плашек 0, тезисов 0, подписей и абзацев 5 · case-partner-portal 76 слов, 25 кадров
+/ru/work/partner-portal/ @1440: плашек 0, тезисов 0, подписей и абзацев 5 · case-partner-portal 69 слов, 26 кадров
+/ru/work/partner-portal/ @390: плашек 0, тезисов 0, подписей и абзацев 5 · case-partner-portal 69 слов, 25 кадров
+/work/learn/ @1440: плашек 0, тезисов 0, подписей и абзацев 0 · case-learn 741 слов, 11 кадров
+/work/learn/ @390: плашек 0, тезисов 0, подписей и абзацев 0 · case-learn 741 слов, 11 кадров
+/ru/work/learn/ @1440: плашек 0, тезисов 0, подписей и абзацев 0 · case-learn 638 слов, 11 кадров
+/ru/work/learn/ @390: плашек 0, тезисов 0, подписей и абзацев 0 · case-learn 638 слов, 11 кадров
+/work/vet-clinic/ @1440: плашек 0, тезисов 0, подписей и абзацев 7 · case-vet-clinic 795 слов, 11 кадров
+/work/vet-clinic/ @390: плашек 0, тезисов 0, подписей и абзацев 7 · case-vet-clinic 789 слов, 10 кадров
+/ru/work/vet-clinic/ @1440: плашек 0, тезисов 0, подписей и абзацев 7 · case-vet-clinic 704 слов, 11 кадров
+/ru/work/vet-clinic/ @390: плашек 0, тезисов 0, подписей и абзацев 7 · case-vet-clinic 700 слов, 10 кадров
+/work/pawly/ @1440: плашек 13, тезисов 0, подписей и абзацев 0 · case-pawly 11 слов, 16 кадров
+/work/pawly/ @390: плашек 13, тезисов 0, подписей и абзацев 0 · case-pawly 11 слов, 15 кадров
+/ru/work/pawly/ @1440: плашек 13, тезисов 0, подписей и абзацев 0 · case-pawly 7 слов, 16 кадров
+/ru/work/pawly/ @390: плашек 13, тезисов 0, подписей и абзацев 0 · case-pawly 7 слов, 15 кадров
+
+✗ Нарушений: 5
+  [подпись] /work/partner-portal/ — 14 > 12: «Direction, built · the workspace opens on the purchase in progress and what blocks it»
+  [подпись] /work/partner-portal/ — 14 > 12: «The total · it names what it counts, and what still blocks the next step»
+  [подпись] /work/partner-portal/ — 15 > 12: «Fastest by 01 Nov for ₽7,400, or one consolidated handover three days later for ₽4,200»
+  [подпись] /ru/work/partner-portal/ — 13 > 12: «Решение в продукте · рабочее место открывается текущей закупкой и тем, что её держит»
+  [подпись] /ru/work/partner-portal/ — 16 > 12: «Быстрее всего — к 1 ноября за 7 400 ₽, или одна передача на три дня позже за 4 200 ₽»

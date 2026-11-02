@@ -1,0 +1,63 @@
+{
+  "implementation": "c4192c42728d4c937092cb0a7fc25b047af72624",
+  "status": "READY FOR INDEPENDENT REVIEW",
+  "checks": {
+    "after-chromium-interactions.json": {
+      "count": 1018,
+      "fail": 0,
+      "exceptions": 0
+    },
+    "chromium-smoke.json": {
+      "count": 138,
+      "fail": 0,
+      "exceptions": 0
+    },
+    "webkit-smoke.json": {
+      "count": 128,
+      "fail": 0,
+      "exceptions": 0
+    },
+    "lifecycle.json": {
+      "count": 44,
+      "fail": 0,
+      "exceptions": 0
+    },
+    "supplemental.json": {
+      "count": 218,
+      "fail": 0,
+      "exceptions": 0
+    },
+    "touch": {
+      "count": 32,
+      "fail": 0
+    },
+    "after-chromium-matrix.json": {
+      "count": 98,
+      "fail": 0
+    },
+    "final-chromium-matrix.json": {
+      "count": 28,
+      "fail": 0
+    },
+    "after-webkit-matrix.json": {
+      "count": 42,
+      "fail": 0
+    },
+    "final-webkit-matrix.json": {
+      "count": 12,
+      "fail": 0
+    },
+    "axe": {
+      "count": 28,
+      "violations": 0
+    }
+  },
+  "limitations": [
+    "Firefox binary unavailable",
+    "200% equivalent reflow only, not toolbar zoom",
+    "LinkedIn999 to automation",
+    "15 inherited npm advisories; no untrusted AVIF path found",
+    "Home mobile simulated LCP2.545/2.661s"
+  ],
+  "preservation": true
+}

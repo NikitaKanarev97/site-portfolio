@@ -1,0 +1,735 @@
+{
+  "axe": [
+    {
+      "path": "/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [],
+      "passes": 22
+    },
+    {
+      "path": "/about/",
+      "width": 1440,
+      "violations": [
+        {
+          "id": "list",
+          "impact": "serious",
+          "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+          "nodes": [
+            {
+              "target": [
+                ".navbar__list"
+              ],
+              "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+            }
+          ]
+        }
+      ],
+      "incomplete": [],
+      "passes": 24
+    },
+    {
+      "path": "/work/agent-ops-console/",
+      "width": 1440,
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".case-next__label-text"
+              ],
+              "html": "<span class=\"case-next__label-text\" data-astro-cid-qnrozarn=\"\">Next case<span class=\"case-next__rule\" data-astro-cid-qnrozarn=\"\"></span></span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #d43220, background color: #f3e6ae, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "list",
+          "impact": "serious",
+          "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+          "nodes": [
+            {
+              "target": [
+                ".navbar__list"
+              ],
+              "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ],
+      "passes": 27
+    },
+    {
+      "path": "/work/partner-portal/",
+      "width": 1440,
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-diagnosis__after > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+              ],
+              "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Direction, built · the&nbsp;workspace opens on&nbsp;the&nbsp;purchase in&nbsp;progress and what blocks it</figcaption>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-line__stage[data-motion=\"rise\"]:nth-child(1) > .portal-line__text > .portal-line__index.ds-meta-xs[aria-hidden=\"true\"]"
+              ],
+              "html": "<span class=\"ds-meta-xs portal-line__index\" aria-hidden=\"true\" data-astro-cid-2hvfotlj=\"\">01</span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-line__stage[data-motion=\"rise\"]:nth-child(2) > .portal-line__text > .portal-line__index.ds-meta-xs[aria-hidden=\"true\"]"
+              ],
+              "html": "<span class=\"ds-meta-xs portal-line__index\" aria-hidden=\"true\" data-astro-cid-2hvfotlj=\"\">02</span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-line__stage[data-motion=\"rise\"]:nth-child(3) > .portal-line__text > .portal-line__index.ds-meta-xs[aria-hidden=\"true\"]"
+              ],
+              "html": "<span class=\"ds-meta-xs portal-line__index\" aria-hidden=\"true\" data-astro-cid-2hvfotlj=\"\">03</span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-line__stage[data-motion=\"rise\"]:nth-child(4) > .portal-line__text > .portal-line__index.ds-meta-xs[aria-hidden=\"true\"]"
+              ],
+              "html": "<span class=\"ds-meta-xs portal-line__index\" aria-hidden=\"true\" data-astro-cid-2hvfotlj=\"\">04</span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-pair > .portal-plate[data-motion=\"fade-image\"] > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+              ],
+              "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Product Details · reached from the&nbsp;catalog or from a&nbsp;specification line</figcaption>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-plate--wide > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+              ],
+              "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Fastest by&nbsp;01 Nov for ₽7,400, or one consolidated handover three days later for ₽4,200</figcaption>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "list",
+          "impact": "serious",
+          "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+          "nodes": [
+            {
+              "target": [
+                ".navbar__list"
+              ],
+              "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+            }
+          ]
+        }
+      ],
+      "incomplete": [],
+      "passes": 26
+    },
+    {
+      "path": "/work/learn/",
+      "width": 1440,
+      "violations": [
+        {
+          "id": "list",
+          "impact": "serious",
+          "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+          "nodes": [
+            {
+              "target": [
+                ".navbar__list"
+              ],
+              "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 13
+        }
+      ],
+      "passes": 26
+    },
+    {
+      "path": "/work/vet-clinic/",
+      "width": 1440,
+      "violations": [
+        {
+          "id": "list",
+          "impact": "serious",
+          "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+          "nodes": [
+            {
+              "target": [
+                ".navbar__list"
+              ],
+              "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ],
+      "passes": 26
+    },
+    {
+      "path": "/work/pawly/",
+      "width": 1440,
+      "violations": [
+        {
+          "id": "list",
+          "impact": "serious",
+          "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+          "nodes": [
+            {
+              "target": [
+                ".navbar__list"
+              ],
+              "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+            }
+          ]
+        }
+      ],
+      "incomplete": [],
+      "passes": 26
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "violations": [],
+      "incomplete": [],
+      "passes": 22
+    },
+    {
+      "path": "/about/",
+      "width": 390,
+      "violations": [],
+      "incomplete": [],
+      "passes": 22
+    },
+    {
+      "path": "/work/agent-ops-console/",
+      "width": 390,
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".case-next__label-text"
+              ],
+              "html": "<span class=\"case-next__label-text\" data-astro-cid-qnrozarn=\"\">Next case<span class=\"case-next__rule\" data-astro-cid-qnrozarn=\"\"></span></span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #d43220, background color: #f3e6ae, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ],
+      "passes": 25
+    },
+    {
+      "path": "/work/partner-portal/",
+      "width": 390,
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-diagnosis__after > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+              ],
+              "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Direction, built · the&nbsp;workspace opens on&nbsp;the&nbsp;purchase in&nbsp;progress and what blocks it</figcaption>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-line__stage[data-motion=\"rise\"]:nth-child(1) > .portal-line__text > .portal-line__index.ds-meta-xs[aria-hidden=\"true\"]"
+              ],
+              "html": "<span class=\"ds-meta-xs portal-line__index\" aria-hidden=\"true\" data-astro-cid-2hvfotlj=\"\">01</span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-line__stage[data-motion=\"rise\"]:nth-child(2) > .portal-line__text > .portal-line__index.ds-meta-xs[aria-hidden=\"true\"]"
+              ],
+              "html": "<span class=\"ds-meta-xs portal-line__index\" aria-hidden=\"true\" data-astro-cid-2hvfotlj=\"\">02</span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-line__stage[data-motion=\"rise\"]:nth-child(3) > .portal-line__text > .portal-line__index.ds-meta-xs[aria-hidden=\"true\"]"
+              ],
+              "html": "<span class=\"ds-meta-xs portal-line__index\" aria-hidden=\"true\" data-astro-cid-2hvfotlj=\"\">03</span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-line__stage[data-motion=\"rise\"]:nth-child(4) > .portal-line__text > .portal-line__index.ds-meta-xs[aria-hidden=\"true\"]"
+              ],
+              "html": "<span class=\"ds-meta-xs portal-line__index\" aria-hidden=\"true\" data-astro-cid-2hvfotlj=\"\">04</span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-pair > .portal-plate[data-motion=\"fade-image\"] > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+              ],
+              "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Product Details · reached from the&nbsp;catalog or from a&nbsp;specification line</figcaption>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-plate--wide > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+              ],
+              "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Fastest by&nbsp;01 Nov for ₽7,400, or one consolidated handover three days later for ₽4,200</figcaption>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 8
+        }
+      ],
+      "passes": 25
+    },
+    {
+      "path": "/work/learn/",
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 13
+        }
+      ],
+      "passes": 27
+    },
+    {
+      "path": "/work/vet-clinic/",
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ],
+      "passes": 24
+    },
+    {
+      "path": "/work/pawly/",
+      "width": 390,
+      "violations": [],
+      "incomplete": [],
+      "passes": 24
+    },
+    {
+      "path": "/ru/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [],
+      "passes": 22
+    },
+    {
+      "path": "/ru/about/",
+      "width": 1440,
+      "violations": [
+        {
+          "id": "list",
+          "impact": "serious",
+          "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+          "nodes": [
+            {
+              "target": [
+                ".navbar__list"
+              ],
+              "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+            }
+          ]
+        }
+      ],
+      "incomplete": [],
+      "passes": 24
+    },
+    {
+      "path": "/ru/work/agent-ops-console/",
+      "width": 1440,
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".case-next__label-text"
+              ],
+              "html": "<span class=\"case-next__label-text\" data-astro-cid-qnrozarn=\"\">Следующий кейс<span class=\"case-next__rule\" data-astro-cid-qnrozarn=\"\"></span></span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #d43220, background color: #f3e6ae, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "list",
+          "impact": "serious",
+          "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+          "nodes": [
+            {
+              "target": [
+                ".navbar__list"
+              ],
+              "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ],
+      "passes": 27
+    },
+    {
+      "path": "/ru/work/partner-portal/",
+      "width": 1440,
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-diagnosis__after > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+              ],
+              "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Решение в&nbsp;продукте · рабочее место открывается текущей закупкой и&nbsp;тем, что&nbsp;её держит</figcaption>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-line__stage[data-motion=\"rise\"]:nth-child(1) > .portal-line__text > .portal-line__index.ds-meta-xs[aria-hidden=\"true\"]"
+              ],
+              "html": "<span class=\"ds-meta-xs portal-line__index\" aria-hidden=\"true\" data-astro-cid-2hvfotlj=\"\">01</span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-line__stage[data-motion=\"rise\"]:nth-child(2) > .portal-line__text > .portal-line__index.ds-meta-xs[aria-hidden=\"true\"]"
+              ],
+              "html": "<span class=\"ds-meta-xs portal-line__index\" aria-hidden=\"true\" data-astro-cid-2hvfotlj=\"\">02</span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-line__stage[data-motion=\"rise\"]:nth-child(3) > .portal-line__text > .portal-line__index.ds-meta-xs[aria-hidden=\"true\"]"
+              ],
+              "html": "<span class=\"ds-meta-xs portal-line__index\" aria-hidden=\"true\" data-astro-cid-2hvfotlj=\"\">03</span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-line__stage[data-motion=\"rise\"]:nth-child(4) > .portal-line__text > .portal-line__index.ds-meta-xs[aria-hidden=\"true\"]"
+              ],
+              "html": "<span class=\"ds-meta-xs portal-line__index\" aria-hidden=\"true\" data-astro-cid-2hvfotlj=\"\">04</span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-pair > .portal-plate[data-motion=\"fade-image\"] > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+              ],
+              "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Карточка товара · открывается из&nbsp;каталога или&nbsp;из&nbsp;строки&nbsp;спецификации</figcaption>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-plate--wide > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+              ],
+              "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Быстрее всего&nbsp;— к&nbsp;1 ноября за&nbsp;7 400 ₽, или&nbsp;одна передача на&nbsp;три дня позже за&nbsp;4 200 ₽</figcaption>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "list",
+          "impact": "serious",
+          "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+          "nodes": [
+            {
+              "target": [
+                ".navbar__list"
+              ],
+              "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+            }
+          ]
+        }
+      ],
+      "incomplete": [],
+      "passes": 26
+    },
+    {
+      "path": "/ru/work/learn/",
+      "width": 1440,
+      "violations": [
+        {
+          "id": "list",
+          "impact": "serious",
+          "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+          "nodes": [
+            {
+              "target": [
+                ".navbar__list"
+              ],
+              "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 13
+        }
+      ],
+      "passes": 26
+    },
+    {
+      "path": "/ru/work/vet-clinic/",
+      "width": 1440,
+      "violations": [
+        {
+          "id": "list",
+          "impact": "serious",
+          "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+          "nodes": [
+            {
+              "target": [
+                ".navbar__list"
+              ],
+              "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ],
+      "passes": 26
+    },
+    {
+      "path": "/ru/work/pawly/",
+      "width": 1440,
+      "violations": [
+        {
+          "id": "list",
+          "impact": "serious",
+          "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+          "nodes": [
+            {
+              "target": [
+                ".navbar__list"
+              ],
+              "html": "<ul class=\"navbar__list\" data-astro-cid-5blmo7yk=\"\">",
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+            }
+          ]
+        }
+      ],
+      "incomplete": [],
+      "passes": 26
+    },
+    {
+      "path": "/ru/",
+      "width": 390,
+      "violations": [],
+      "incomplete": [],
+      "passes": 22
+    },
+    {
+      "path": "/ru/about/",
+      "width": 390,
+      "violations": [],
+      "incomplete": [],
+      "passes": 22
+    },
+    {
+      "path": "/ru/work/agent-ops-console/",
+      "width": 390,
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".case-next__label-text"
+              ],
+              "html": "<span class=\"case-next__label-text\" data-astro-cid-qnrozarn=\"\">Следующий кейс<span class=\"case-next__rule\" data-astro-cid-qnrozarn=\"\"></span></span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #d43220, background color: #f3e6ae, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ],
+      "passes": 25
+    },
+    {
+      "path": "/ru/work/partner-portal/",
+      "width": 390,
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-diagnosis__after > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+              ],
+              "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Решение в&nbsp;продукте · рабочее место открывается текущей закупкой и&nbsp;тем, что&nbsp;её держит</figcaption>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-line__stage[data-motion=\"rise\"]:nth-child(1) > .portal-line__text > .portal-line__index.ds-meta-xs[aria-hidden=\"true\"]"
+              ],
+              "html": "<span class=\"ds-meta-xs portal-line__index\" aria-hidden=\"true\" data-astro-cid-2hvfotlj=\"\">01</span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-line__stage[data-motion=\"rise\"]:nth-child(2) > .portal-line__text > .portal-line__index.ds-meta-xs[aria-hidden=\"true\"]"
+              ],
+              "html": "<span class=\"ds-meta-xs portal-line__index\" aria-hidden=\"true\" data-astro-cid-2hvfotlj=\"\">02</span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-line__stage[data-motion=\"rise\"]:nth-child(3) > .portal-line__text > .portal-line__index.ds-meta-xs[aria-hidden=\"true\"]"
+              ],
+              "html": "<span class=\"ds-meta-xs portal-line__index\" aria-hidden=\"true\" data-astro-cid-2hvfotlj=\"\">03</span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-line__stage[data-motion=\"rise\"]:nth-child(4) > .portal-line__text > .portal-line__index.ds-meta-xs[aria-hidden=\"true\"]"
+              ],
+              "html": "<span class=\"ds-meta-xs portal-line__index\" aria-hidden=\"true\" data-astro-cid-2hvfotlj=\"\">04</span>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-pair > .portal-plate[data-motion=\"fade-image\"] > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+              ],
+              "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Карточка товара · открывается из&nbsp;каталога или&nbsp;из&nbsp;строки&nbsp;спецификации</figcaption>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-plate--wide > .portal-shot--frame.portal-shot > .portal-shot__caption[data-h=\"caption\"]"
+              ],
+              "html": "<figcaption class=\"ds-body-sm portal-shot__caption\" data-h=\"caption\" data-astro-cid-d242rgwr=\"\">Быстрее всего&nbsp;— к&nbsp;1 ноября за&nbsp;7 400 ₽, или&nbsp;одна передача на&nbsp;три дня позже за&nbsp;4 200 ₽</figcaption>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #6e6e67, background color: #efefec, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 8
+        }
+      ],
+      "passes": 25
+    },
+    {
+      "path": "/ru/work/learn/",
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 13
+        }
+      ],
+      "passes": 27
+    },
+    {
+      "path": "/ru/work/vet-clinic/",
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ],
+      "passes": 24
+    },
+    {
+      "path": "/ru/work/pawly/",
+      "width": 390,
+      "violations": [],
+      "incomplete": [],
+      "passes": 24
+    }
+  ],
+  "issues": []
+}
