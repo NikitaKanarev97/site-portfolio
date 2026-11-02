@@ -1,0 +1,832 @@
+[
+  {
+    "key": "en/home-wide",
+    "src": "/media/case-learn-v2/composition/en/home-wide.webp",
+    "width": 2848,
+    "height": 966,
+    "cssWidth": 1424,
+    "source": "audit/trassir-learn-case-v2/composition-v23/product/en/home-wide.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/home/?lang=en",
+    "bytes": 69264,
+    "presentation": {
+      "extraCanvasPadding": 24,
+      "contentGeometryUnchanged": true,
+      "screenshotRadius": 16,
+      "originalWidth": 1376,
+      "expandedWidth": 1424,
+      "originalPadding": [
+        32,
+        48,
+        32,
+        48
+      ],
+      "expandedPadding": [
+        56,
+        72,
+        56,
+        72
+      ],
+      "titleBefore": {
+        "x": 80,
+        "y": 136,
+        "width": 752,
+        "height": 64.390625
+      },
+      "titleAfter": {
+        "x": 80,
+        "y": 136,
+        "width": 752,
+        "height": 64.390625
+      }
+    },
+    "note": "Owner-directed extension of the actual blue Home canvas; unchanged UI content and layout. No external white frame or transparent bleed.",
+    "sha256": "a8af6fc1ecec029f5829f7cb61e76806a380d425db9d20c68310e3d23baa8b95",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "en/home-mobile",
+    "src": "/media/case-learn-v2/composition/en/home-mobile.webp",
+    "width": 780,
+    "height": 614,
+    "cssWidth": 390,
+    "source": "audit/trassir-learn-case-v2/composition-v23/product/en/home-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/home/?lang=en",
+    "bytes": 20914,
+    "presentation": {
+      "extraCanvasPadding": 16,
+      "contentGeometryUnchanged": true,
+      "screenshotRadius": 16,
+      "originalWidth": 358,
+      "expandedWidth": 390,
+      "originalPadding": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "expandedPadding": [
+        32,
+        32,
+        32,
+        32
+      ],
+      "titleBefore": {
+        "x": 32,
+        "y": 158,
+        "width": 326,
+        "height": 27.59375
+      },
+      "titleAfter": {
+        "x": 32,
+        "y": 158,
+        "width": 326,
+        "height": 27.59375
+      }
+    },
+    "note": "Owner-directed extension of the actual blue Home canvas; unchanged UI content and layout. No external white frame or transparent bleed.",
+    "sha256": "413d5c7db7b85a56a3e33d7f87a6e4940f92c7009cd8526f2e2fc4b5b684f5ad",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "en/answer-detail",
+    "src": "/media/case-learn-v2/current/en/answer-detail.webp",
+    "width": 812,
+    "height": 838,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/answer-detail.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/material/onvif-not-found/?lang=en",
+    "selector": "main [class*=\"_main_\"] > header",
+    "sourceBounds": {
+      "x": 16,
+      "y": 150,
+      "width": 358,
+      "height": 370.546875
+    },
+    "canvasField": 24,
+    "bytes": 28672,
+    "note": "Complete native mobile material header; no cut title, metadata or utilities.",
+    "sha256": "caac73e22c2fe444a1c8e353f0b70455afb74f0890eaf2fdd7f4b08638b948b7",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "en/reference",
+    "src": "/media/case-learn-v2/current/en/reference.webp",
+    "width": 2272,
+    "height": 1224,
+    "cssWidth": 1136,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/reference.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/material/onvif-not-found/?lang=en",
+    "selectors": [
+      "main [class*=\"_main_\"] > header",
+      "main [class*=\"_brief_\"]",
+      "main aside"
+    ],
+    "clip": {
+      "x": 152,
+      "y": 88,
+      "width": 1136,
+      "height": 612
+    },
+    "canvasField": 16,
+    "bytes": 88530,
+    "note": "Whole header, brief and navigation with native page gutters.",
+    "sha256": "b1f014b4f22ca882de4e27c40ee1c86ef36855236834efc56773c4ed0cf321f2",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "en/reference-mobile",
+    "src": "/media/case-learn-v2/current/en/reference-mobile.webp",
+    "width": 780,
+    "height": 1482,
+    "cssWidth": 390,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/reference-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/material/onvif-not-found/?lang=en",
+    "selectors": [
+      "main [class*=\"_main_\"] > header",
+      "main [class*=\"_tocMobile_\"]",
+      "main [class*=\"_brief_\"]"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 134,
+      "width": 390,
+      "height": 741
+    },
+    "canvasField": 16,
+    "bytes": 48686,
+    "note": "Whole header, brief and navigation with native page gutters.",
+    "sha256": "5c4381ea0a0f1e41c33679589b8f5c6f901af7f595fab13b0e58e8d375875ccd",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "en/path",
+    "src": "/media/case-learn-v2/current/en/path.webp",
+    "width": 2432,
+    "height": 1622,
+    "cssWidth": 1216,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/path.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/trajectory/puskonaladka/?lang=en",
+    "selectors": [
+      "main header",
+      "#outcomes-title",
+      "#composition-title",
+      "#curriculum > [role=\"group\"]",
+      "main aside"
+    ],
+    "clip": {
+      "x": 112,
+      "y": 88,
+      "width": 1216,
+      "height": 811
+    },
+    "canvasField": 16,
+    "bytes": 115566,
+    "note": "Programme promise, complete first curriculum group and whole passport.",
+    "sha256": "83309d134583de2c0380dafeee99947976a718ce5ed58ea852bbc7d3fad65701",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "en/path-mobile",
+    "src": "/media/case-learn-v2/current/en/path-mobile.webp",
+    "width": 780,
+    "height": 1862,
+    "cssWidth": 390,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/path-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/trajectory/puskonaladka/?lang=en",
+    "selectors": [
+      "main header",
+      "main aside"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 134,
+      "width": 390,
+      "height": 931
+    },
+    "canvasField": 16,
+    "bytes": 67640,
+    "note": "Whole mobile programme header and passport; no sliced next row.",
+    "sha256": "3f4efba9778eb1fe3fc434d8d8423b28dde0072e0b83cf96f6c3defe4a021fb6",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "en/completion-mobile",
+    "src": "/media/case-learn-v2/current/en/completion-mobile.webp",
+    "width": 812,
+    "height": 792,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/completion-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/player/puskonaladka/3/?lang=en",
+    "selector": "section[aria-labelledby=\"finish-title\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 2330.28125,
+      "width": 358,
+      "height": 348
+    },
+    "canvasField": 24,
+    "bytes": 21510,
+    "note": "Whole current end-of-unit panel, including next unit and explicit completion action.",
+    "sha256": "f5ee3aed9799c47203c7a3e29df529280e48173fc9df28bd35f9ecd8a4e73e53",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "en/learner",
+    "src": "/media/case-learn-v2/current/en/learner.webp",
+    "width": 2112,
+    "height": 1002,
+    "cssWidth": 1056,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/learner.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/my/?lang=en",
+    "selector": "section[aria-labelledby=\"scales-title\"]",
+    "sourceBounds": {
+      "x": 32,
+      "y": 537.78125,
+      "width": 1008,
+      "height": 452.59375
+    },
+    "canvasField": 24,
+    "bytes": 45052,
+    "note": "Two complete independent progress cards, including their explanatory footer.",
+    "sha256": "2dbc619096f230e6b4cc578a5579d50e01a3bdab4e368ed832de0c21dcf79d6c",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "en/learner-mobile",
+    "src": "/media/case-learn-v2/current/en/learner-mobile.webp",
+    "width": 812,
+    "height": 1692,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/learner-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/my/?lang=en",
+    "selector": "section[aria-labelledby=\"scales-title\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 638.578125,
+      "width": 358,
+      "height": 798
+    },
+    "canvasField": 24,
+    "bytes": 43082,
+    "note": "Two complete independent progress cards, including their explanatory footer.",
+    "sha256": "4af0ddd3348af604c39fea932d16710c218d39d7f40456409e2e2eb3541f069c",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "en/reader-history",
+    "src": "/media/case-learn-v2/current/en/reader-history.webp",
+    "width": 812,
+    "height": 1146,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/reader-history.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/my/?lang=en",
+    "selector": "section[aria-labelledby=\"scales-title\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 620.96875,
+      "width": 358,
+      "height": 525
+    },
+    "canvasField": 24,
+    "bytes": 35208,
+    "note": "Both complete reader progress cards; no programme completion invented.",
+    "sha256": "a0e2721407780e4b2743f3e148b1a227ee4015b355aac998d9eebfe9038f2aed",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "en/failed",
+    "src": "/media/case-learn-v2/current/en/failed.webp",
+    "width": 2112,
+    "height": 1088,
+    "cssWidth": 1056,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/failed.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=fc697efa-853c-4390-a5ce-c1efe7b876c4&lang=en",
+    "selector": "main [class*=\"_lead_\"]",
+    "sourceBounds": {
+      "x": 32,
+      "y": 189,
+      "width": 1008,
+      "height": 495.578125
+    },
+    "canvasField": 24,
+    "bytes": 47706,
+    "note": "Complete current verdict and result card, including permitted next action; no coloured status edge.",
+    "sha256": "463d61a2f9d46350976ed23d2311f773c31673e488ce7ba8600c61b5780fabb8",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "en/failed-mobile",
+    "src": "/media/case-learn-v2/current/en/failed-mobile.webp",
+    "width": 812,
+    "height": 1200,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/failed-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=fc697efa-853c-4390-a5ce-c1efe7b876c4&lang=en",
+    "selector": "main [class*=\"_lead_\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 203,
+      "width": 358,
+      "height": 551.984375
+    },
+    "canvasField": 24,
+    "bytes": 44854,
+    "note": "Complete current verdict and result card, including permitted next action; no coloured status edge.",
+    "sha256": "748f08234a9838bf6d4e1e4ff6ec32435b860a105eb6205c16c1a4954631b2d7",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "en/review-detail",
+    "src": "/media/case-learn-v2/current/en/review-detail.webp",
+    "width": 808,
+    "height": 560,
+    "cssWidth": 404,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/review-detail.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=fc697efa-853c-4390-a5ce-c1efe7b876c4&lang=en",
+    "selector": "first complete wrong-answer record",
+    "sourceBounds": {
+      "x": 17,
+      "y": 170.375,
+      "width": 356,
+      "height": 232
+    },
+    "canvasField": 24,
+    "bytes": 18980,
+    "note": "One whole wrong-answer record, with complete question, submitted answer and source link.",
+    "sha256": "b93c167c75eba1c705a928763733172a3d2c513faad674520a74ed463ca84c92",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "en/passed-score",
+    "src": "/media/case-learn-v2/current/en/passed-score.webp",
+    "width": 2112,
+    "height": 1130,
+    "cssWidth": 1056,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/passed-score.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=5d018c32-df19-4e83-bfc9-d6deebc36014&lang=en",
+    "selector": "main [class*=\"_lead_\"]",
+    "sourceBounds": {
+      "x": 32,
+      "y": 189,
+      "width": 1008,
+      "height": 516.578125
+    },
+    "canvasField": 24,
+    "bytes": 51180,
+    "note": "Complete current verdict and result card, including permitted next action; no coloured status edge.",
+    "sha256": "89ccbf63671bf7171fbf24ea44e48b8aa3c2986cee5d7307d2f1f74a2285bebd",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "en/passed-score-mobile",
+    "src": "/media/case-learn-v2/current/en/passed-score-mobile.webp",
+    "width": 812,
+    "height": 1266,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/en/passed-score-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=5d018c32-df19-4e83-bfc9-d6deebc36014&lang=en",
+    "selector": "main [class*=\"_lead_\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 203,
+      "width": 358,
+      "height": 584.1875
+    },
+    "canvasField": 24,
+    "bytes": 47666,
+    "note": "Complete current verdict and result card, including permitted next action; no coloured status edge.",
+    "sha256": "0f5b7a42d63949d0a596a8bcf9d6501f71685bcd06922b6a5391472bbe6bf5bc",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "ru/home-wide",
+    "src": "/media/case-learn-v2/composition/ru/home-wide.webp",
+    "width": 2848,
+    "height": 966,
+    "cssWidth": 1424,
+    "source": "audit/trassir-learn-case-v2/composition-v23/product/ru/home-wide.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/home/?lang=ru",
+    "bytes": 64502,
+    "presentation": {
+      "extraCanvasPadding": 24,
+      "contentGeometryUnchanged": true,
+      "screenshotRadius": 16,
+      "originalWidth": 1376,
+      "expandedWidth": 1424,
+      "originalPadding": [
+        32,
+        48,
+        32,
+        48
+      ],
+      "expandedPadding": [
+        56,
+        72,
+        56,
+        72
+      ],
+      "titleBefore": {
+        "x": 80,
+        "y": 136,
+        "width": 752,
+        "height": 64.390625
+      },
+      "titleAfter": {
+        "x": 80,
+        "y": 136,
+        "width": 752,
+        "height": 64.390625
+      }
+    },
+    "note": "Owner-directed extension of the actual blue Home canvas; unchanged UI content and layout. No external white frame or transparent bleed.",
+    "sha256": "960b8fec8253f1d47be4ee4baa21cc700f69e857f84013c693cca73589442e7e",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "ru/home-mobile",
+    "src": "/media/case-learn-v2/composition/ru/home-mobile.webp",
+    "width": 780,
+    "height": 576,
+    "cssWidth": 390,
+    "source": "audit/trassir-learn-case-v2/composition-v23/product/ru/home-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/home/?lang=ru",
+    "bytes": 18420,
+    "presentation": {
+      "extraCanvasPadding": 16,
+      "contentGeometryUnchanged": true,
+      "screenshotRadius": 16,
+      "originalWidth": 358,
+      "expandedWidth": 390,
+      "originalPadding": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "expandedPadding": [
+        32,
+        32,
+        32,
+        32
+      ],
+      "titleBefore": {
+        "x": 32,
+        "y": 158,
+        "width": 326,
+        "height": 27.59375
+      },
+      "titleAfter": {
+        "x": 32,
+        "y": 158,
+        "width": 326,
+        "height": 27.59375
+      }
+    },
+    "note": "Owner-directed extension of the actual blue Home canvas; unchanged UI content and layout. No external white frame or transparent bleed.",
+    "sha256": "c8fdf7140c4d9c14c0d7c538abf4fe784dea7506857deb80a047bdefe878d9ed",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "ru/answer-detail",
+    "src": "/media/case-learn-v2/current/ru/answer-detail.webp",
+    "width": 812,
+    "height": 838,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/answer-detail.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/material/onvif-not-found/?lang=ru",
+    "selector": "main [class*=\"_main_\"] > header",
+    "sourceBounds": {
+      "x": 16,
+      "y": 150,
+      "width": 358,
+      "height": 370.84375
+    },
+    "canvasField": 24,
+    "bytes": 26820,
+    "note": "Complete native mobile material header; no cut title, metadata or utilities.",
+    "sha256": "29504571b094dbc362ba7b3464497cb669da97049f4244e172da95284d9646ed",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "ru/reference",
+    "src": "/media/case-learn-v2/current/ru/reference.webp",
+    "width": 2272,
+    "height": 1182,
+    "cssWidth": 1136,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/reference.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/material/onvif-not-found/?lang=ru",
+    "selectors": [
+      "main [class*=\"_main_\"] > header",
+      "main [class*=\"_brief_\"]",
+      "main aside"
+    ],
+    "clip": {
+      "x": 152,
+      "y": 88,
+      "width": 1136,
+      "height": 591
+    },
+    "canvasField": 16,
+    "bytes": 79924,
+    "note": "Whole header, brief and navigation with native page gutters.",
+    "sha256": "d1b01a880891cfbf4ec73d9ba2f7b281813472a6174e5f4d2bb5bfa20b0b7e63",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "ru/reference-mobile",
+    "src": "/media/case-learn-v2/current/ru/reference-mobile.webp",
+    "width": 780,
+    "height": 1434,
+    "cssWidth": 390,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/reference-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/material/onvif-not-found/?lang=ru",
+    "selectors": [
+      "main [class*=\"_main_\"] > header",
+      "main [class*=\"_tocMobile_\"]",
+      "main [class*=\"_brief_\"]"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 134,
+      "width": 390,
+      "height": 717
+    },
+    "canvasField": 16,
+    "bytes": 44924,
+    "note": "Whole header, brief and navigation with native page gutters.",
+    "sha256": "a42f7d9e486843421b8ca62c9b46107c1a2769846ec8796f5933402ff2941efb",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "ru/path",
+    "src": "/media/case-learn-v2/current/ru/path.webp",
+    "width": 2432,
+    "height": 1670,
+    "cssWidth": 1216,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/path.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/trajectory/puskonaladka/?lang=ru",
+    "selectors": [
+      "main header",
+      "#outcomes-title",
+      "#composition-title",
+      "#curriculum > [role=\"group\"]",
+      "main aside"
+    ],
+    "clip": {
+      "x": 112,
+      "y": 88,
+      "width": 1216,
+      "height": 835
+    },
+    "canvasField": 16,
+    "bytes": 116496,
+    "note": "Programme promise, complete first curriculum group and whole passport.",
+    "sha256": "5ea4a3f2efe59de0745b2ff0714f9c347ee9c55a69a7dd1be06c19c4ccba70a7",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "ru/path-mobile",
+    "src": "/media/case-learn-v2/current/ru/path-mobile.webp",
+    "width": 780,
+    "height": 1910,
+    "cssWidth": 390,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/path-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/trajectory/puskonaladka/?lang=ru",
+    "selectors": [
+      "main header",
+      "main aside"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 134,
+      "width": 390,
+      "height": 955
+    },
+    "canvasField": 16,
+    "bytes": 66776,
+    "note": "Whole mobile programme header and passport; no sliced next row.",
+    "sha256": "e3ce7da8583929df8005ffa1824ccca90ef38ddf56f4d1e0fd349b24969f1bc8",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "ru/completion-mobile",
+    "src": "/media/case-learn-v2/current/ru/completion-mobile.webp",
+    "width": 812,
+    "height": 834,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/completion-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/player/puskonaladka/3/?lang=ru",
+    "selector": "section[aria-labelledby=\"finish-title\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 2392.65625,
+      "width": 358,
+      "height": 369
+    },
+    "canvasField": 24,
+    "bytes": 21644,
+    "note": "Whole current end-of-unit panel, including next unit and explicit completion action.",
+    "sha256": "734826d5f4692ab760ea780e954962c79f1894e0c6657fd886f456518da7d4ff",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "ru/learner",
+    "src": "/media/case-learn-v2/current/ru/learner.webp",
+    "width": 2112,
+    "height": 1002,
+    "cssWidth": 1056,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/learner.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/my/?lang=ru",
+    "selector": "section[aria-labelledby=\"scales-title\"]",
+    "sourceBounds": {
+      "x": 32,
+      "y": 537.78125,
+      "width": 1008,
+      "height": 452.59375
+    },
+    "canvasField": 24,
+    "bytes": 42520,
+    "note": "Two complete independent progress cards, including their explanatory footer.",
+    "sha256": "5d6e3c50fcece31b385ffeea599ce61b2e564e46b785c4085facdce4d31dbf9d",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "ru/learner-mobile",
+    "src": "/media/case-learn-v2/current/ru/learner-mobile.webp",
+    "width": 812,
+    "height": 1734,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/learner-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/my/?lang=ru",
+    "selector": "section[aria-labelledby=\"scales-title\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 659.578125,
+      "width": 358,
+      "height": 819
+    },
+    "canvasField": 24,
+    "bytes": 42270,
+    "note": "Two complete independent progress cards, including their explanatory footer.",
+    "sha256": "d84bcf495d0fa4ef18265111c63663307bd0a69f929d8165a48a89fc3f2c33da",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "ru/reader-history",
+    "src": "/media/case-learn-v2/current/ru/reader-history.webp",
+    "width": 812,
+    "height": 1188,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/reader-history.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/my/?lang=ru",
+    "selector": "section[aria-labelledby=\"scales-title\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 620.96875,
+      "width": 358,
+      "height": 546
+    },
+    "canvasField": 24,
+    "bytes": 34040,
+    "note": "Both complete reader progress cards; no programme completion invented.",
+    "sha256": "3493b975dfbbf5a792c10d221ec3ea890669855d1f7ed0799cb1bf30c08131d6",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "ru/failed",
+    "src": "/media/case-learn-v2/current/ru/failed.webp",
+    "width": 2112,
+    "height": 1088,
+    "cssWidth": 1056,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/failed.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=70b1f9c1-cd6d-4c9b-a828-f5fba45933f1&lang=ru",
+    "selector": "main [class*=\"_lead_\"]",
+    "sourceBounds": {
+      "x": 32,
+      "y": 189,
+      "width": 1008,
+      "height": 495.578125
+    },
+    "canvasField": 24,
+    "bytes": 46960,
+    "note": "Complete current verdict and result card, including permitted next action; no coloured status edge.",
+    "sha256": "9e8f95b8bf4d14a85817bcfbfd3f4b8e39d1a5e7080de2a14d535cd661f19e8d",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "ru/failed-mobile",
+    "src": "/media/case-learn-v2/current/ru/failed-mobile.webp",
+    "width": 812,
+    "height": 1266,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/failed-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=70b1f9c1-cd6d-4c9b-a828-f5fba45933f1&lang=ru",
+    "selector": "main [class*=\"_lead_\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 203,
+      "width": 358,
+      "height": 584.1875
+    },
+    "canvasField": 24,
+    "bytes": 44532,
+    "note": "Complete current verdict and result card, including permitted next action; no coloured status edge.",
+    "sha256": "f2474179ddf9aa40c02edb9153d4b9631c318909c644efd6e79c05150a2fb67f",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "ru/review-detail",
+    "src": "/media/case-learn-v2/current/ru/review-detail.webp",
+    "width": 808,
+    "height": 512,
+    "cssWidth": 404,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/review-detail.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=70b1f9c1-cd6d-4c9b-a828-f5fba45933f1&lang=ru",
+    "selector": "first complete wrong-answer record",
+    "sourceBounds": {
+      "x": 17,
+      "y": 169.578125,
+      "width": 356,
+      "height": 208
+    },
+    "canvasField": 24,
+    "bytes": 16532,
+    "note": "One whole wrong-answer record, with complete question, submitted answer and source link.",
+    "sha256": "6ffe0e15e83a06c3aafe777be01700bb452f2bf42b1ae83439d5c06a5b37ea4e",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "ru/passed-score",
+    "src": "/media/case-learn-v2/current/ru/passed-score.webp",
+    "width": 2112,
+    "height": 1130,
+    "cssWidth": 1056,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/passed-score.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=6d22aca1-48ad-44c2-8119-11a5f3346570&lang=ru",
+    "selector": "main [class*=\"_lead_\"]",
+    "sourceBounds": {
+      "x": 32,
+      "y": 189,
+      "width": 1008,
+      "height": 516.578125
+    },
+    "canvasField": 24,
+    "bytes": 48584,
+    "note": "Complete current verdict and result card, including permitted next action; no coloured status edge.",
+    "sha256": "83229530817f191510457b1970f508f581999c75951648de92d91ca3b506aec4",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  },
+  {
+    "key": "ru/passed-score-mobile",
+    "src": "/media/case-learn-v2/current/ru/passed-score-mobile.webp",
+    "width": 812,
+    "height": 1308,
+    "cssWidth": 406,
+    "source": "audit/trassir-learn-case-v2/refresh-2026-10-31/product/ru/passed-score-mobile.png",
+    "productCommit": "e9ac4b075c4c5251dc10891ad201ecbf5405b727",
+    "route": "http://127.0.0.1:4415/prototypes/learn/assessment/result/?attemptId=6d22aca1-48ad-44c2-8119-11a5f3346570&lang=ru",
+    "selector": "main [class*=\"_lead_\"]",
+    "sourceBounds": {
+      "x": 16,
+      "y": 203,
+      "width": 358,
+      "height": 605.1875
+    },
+    "canvasField": 24,
+    "bytes": 46038,
+    "note": "Complete current verdict and result card, including permitted next action; no coloured status edge.",
+    "sha256": "59f3b7391aa9b77b4d768ca8fdf0bdaebd7a0d923287dc9cc09735ff473db4ad",
+    "v3Transformation": "None. Reused complete original bytes; only external layout scale changes."
+  }
+]
