@@ -6,6 +6,7 @@ This report does not approve itself. Nothing was merged, deployed or pushed to `
 |---|---|
 | Branch | `redesign/pawly-portfolio-case-v2-2026-11-02` |
 | Base | `3b4f9b530b39dd2445779cf37af412e80b81be36` (research branch HEAD; lineage contains accepted Pawly Home Cover V1 `b3249e6`) |
+| Implementation | `753d220c` (renderer, copy, media); evidence and this report in the commits after it on this branch |
 | Product source | `NikitaKanarev97/pawly` `main` `a327d73abb3e7872a6243301afc926de57dc868b`, read-only; local `vite build`, verified pixel-identical to `pawly-fawn.vercel.app` for six EN/RU states |
 | Routes | `/work/pawly`, `/ru/work/pawly` |
 | Maps | [SECTION_MAP.md](SECTION_MAP.md) · [ARTIFACT_MAP.md](ARTIFACT_MAP.md) · [../REFERENCES.md](../REFERENCES.md) |
