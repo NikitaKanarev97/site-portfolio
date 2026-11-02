@@ -374,11 +374,12 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
     .pawly-stage { order: 1; row-gap: var(--space-6); margin-block-start: var(--space-3); margin-inline: calc(var(--margin-sm) * -1); border-radius: 0; }
     .pawly-cover__role { order: 2; margin-block-start: var(--space-3); }
   }
-  /* 320: the stage keeps its 32 px field; the 16 px it adds come out of the space above it, so the screen still
+  /* 320: the screen panel now carries its own 16 px above its content (V2.1.1), so the stage's top field is 24 here
+     (24 + 16 = 40 of sand and panel above the first card) and the space above the stage gives up 8 px; the screen still
      starts in the upper 45% of a 640 px viewport. */
   @media not (--bp-sm) {
-    .pawly-cover__inner { padding-block-start: var(--space-3); }
-    .pawly-stage { margin-block-start: 0; }
+    .pawly-cover__inner { padding-block-start: var(--space-2); }
+    .pawly-stage { margin-block-start: 0; padding-block-start: var(--space-6); }
   }
 
   /* Same fields as a PawlyShot plate: 40 above and below, 16 at the sides from 360. */

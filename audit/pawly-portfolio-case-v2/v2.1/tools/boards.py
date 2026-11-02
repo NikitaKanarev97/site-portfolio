@@ -65,17 +65,18 @@ key = lambda r: (r['page'], r['src'])
 before = {key(r): r for r in rows['before']}
 fmt = lambda f: f"{f['top']}/{f['bottom']}/{f['left']}/{f['right']}"
 lines = ['# Media fields, BEFORE → AFTER', '',
-         'Measured by `tools/measure.py` from the full-page DPR 1 captures (`before/`, `after/`): pixels of one surface between',
-         'each image edge and the next edge, at the middle of that side. `T/B/L/R` in CSS px. Scale = rendered width / native',
+         'Measured by `tools/measure.py` from the full-page DPR 1 captures (`before/`, `after/`), `T/B/L/R` in CSS px.',
+         '**Panel**: clean product surface between the screen content and the edge of the visible screen panel (card shadows count',
+         'as content, so sides read low where a shadow reaches the crop). **Plate**: one surface from the panel edge to the next edge. Scale = rendered width / native',
          '(DPR 2 capture ÷ 2). Hero photo has no native scale. On shared stages (Choosing and Return at 1440) the bottom field',
          'of a shorter screen runs to the stage edge, so it is larger than its top.', '']
 for loc in ('en', 'ru'):
-    lines += [f'## {loc.upper()}', '', '| width | chapter | image | field BEFORE | field AFTER | scale BEFORE → AFTER | label gap | caption gap |', '|---|---|---|---|---|---|---|---|']
+    lines += [f'## {loc.upper()}', '', '| width | chapter | image | panel BEFORE | panel AFTER | plate BEFORE | plate AFTER | scale BEFORE → AFTER | label gap | caption gap |', '|---|---|---|---|---|---|---|---|---|---|']
     for r in rows['after']:
         if not r['page'].startswith(loc):
             continue
         b = before.get(key(r))
-        lines.append(f"| {r['page'].split('-')[1]} | {r['section']} | `{r['src']}` | {fmt(b['field']) if b else 'new'} | {fmt(r['field'])} | "
+        lines.append(f"| {r['page'].split('-')[1]} | {r['section']} | `{r['src']}` | {fmt(b['panel']) if b else 'new'} | {fmt(r['panel'])} | {fmt(b['field']) if b else 'new'} | {fmt(r['field'])} | "
                      f"{(b['scale'] if b else '—')} → {r['scale']} | {(b['labelGap'] if b else '—')} → {r['labelGap']} | {(b['captionGap'] if b else '—')} → {r['captionGap']} |")
     lines.append('')
 (V / 'FIELDS.md').write_text('\n'.join(lines), 'utf8')

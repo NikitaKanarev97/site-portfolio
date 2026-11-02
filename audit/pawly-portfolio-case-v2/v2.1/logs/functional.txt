@@ -24,10 +24,10 @@ PASS en: 1440: screens at >= 0.79 of native (column 1280px), never enlarged {"mi
 PASS en: 1024: screens at >= 0.79 of native (column 864px), never enlarged {"min":0.95,"max":1,"column":864}
 PASS en: 768: screens at >= 0.79 of native (column 672px), never enlarged {"min":1,"max":1,"column":672}
 PASS en: 390: screens at >= 0.79 of native (column 342px), never enlarged {"min":0.92,"max":1,"column":342}
-PASS en: 390: product screen inside the first viewport {"top":322,"visible":522}
-PASS en: 360: screens at >= 0.79 of native (column 312px), never enlarged {"min":0.84,"max":0.96,"column":312}
-PASS en: 360: product screen inside the first viewport {"top":322,"visible":478}
-PASS en: 320: screens at >= 0.69 of native (column 272px), never enlarged {"min":0.76,"max":0.87,"column":272}
+PASS en: 390: product screen inside the first viewport {"top":334,"visible":510}
+PASS en: 360: screens at >= 0.79 of native (column 312px), never enlarged {"min":0.84,"max":0.91,"column":312}
+PASS en: 360: product screen inside the first viewport {"top":334,"visible":466}
+PASS en: 320: screens at >= 0.69 of native (column 272px), never enlarged {"min":0.76,"max":0.82,"column":272}
 PASS en: 320: product screen inside the first viewport {"top":284,"visible":356}
 PASS en: no-JS: no motion element left hidden 0 hidden
 PASS en: motion on: every animated element settles visible []
@@ -57,10 +57,10 @@ PASS ru: 1440: screens at >= 0.79 of native (column 1280px), never enlarged {"mi
 PASS ru: 1024: screens at >= 0.79 of native (column 864px), never enlarged {"min":0.95,"max":1,"column":864}
 PASS ru: 768: screens at >= 0.79 of native (column 672px), never enlarged {"min":1,"max":1,"column":672}
 PASS ru: 390: screens at >= 0.79 of native (column 342px), never enlarged {"min":0.92,"max":1,"column":342}
-PASS ru: 390: product screen inside the first viewport {"top":322,"visible":522}
-PASS ru: 360: screens at >= 0.79 of native (column 312px), never enlarged {"min":0.84,"max":0.96,"column":312}
-PASS ru: 360: product screen inside the first viewport {"top":322,"visible":478}
-PASS ru: 320: screens at >= 0.69 of native (column 272px), never enlarged {"min":0.76,"max":0.87,"column":272}
+PASS ru: 390: product screen inside the first viewport {"top":334,"visible":510}
+PASS ru: 360: screens at >= 0.79 of native (column 312px), never enlarged {"min":0.84,"max":0.91,"column":312}
+PASS ru: 360: product screen inside the first viewport {"top":334,"visible":466}
+PASS ru: 320: screens at >= 0.69 of native (column 272px), never enlarged {"min":0.76,"max":0.82,"column":272}
 PASS ru: 320: product screen inside the first viewport {"top":284,"visible":356}
 PASS ru: no-JS: no motion element left hidden 0 hidden
 PASS ru: motion on: every animated element settles visible []

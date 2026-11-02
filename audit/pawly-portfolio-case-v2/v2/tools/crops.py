@@ -136,6 +136,25 @@ import shutil
 photo_src = Path('D:/Claude-projects/PETS-walking/public/assets/proof/handover-pickup.webp')
 photo = dst / 'pickup-photo.webp'
 shutil.copyfile(photo_src, photo)
-index = {f"{m['locale']}/{m['key']}": {'src': '/' + Path(m['file']).as_posix().split('public/', 1)[1], 'width': m['width'], 'height': m['height']} for m in manifest}
+# V2.1.1: each slice's own page surface and how far it extends above and below the content (clean rows from the edge,
+# in CSS px). PawlyShot paints its frame in that surface and pads the short side up to INSET, so the visible screen panel
+# has the same field above and below as at its sides. The pixels are not touched; only the frame around them.
+INSET = 16
+def margins(m):
+    im, ref = Image.open(m['file']).convert('RGB'), tuple(m['pageSurface'])
+    row = lambda y: all(max(abs(a - b) for a, b in zip(im.getpixel((x, y)), ref)) <= 3 for x in range(0, im.width, 2))
+    t = 0
+    while t < im.height and row(t): t += 1
+    b = 0
+    while b < im.height and row(im.height - 1 - b): b += 1
+    return t / 2, b / 2
+for m in manifest:
+    m['surfaceTop'], m['surfaceBottom'] = margins(m)
+manifest_path.write_text(json.dumps(manifest, indent=1, ensure_ascii=False) + '\n', 'utf8')
+index = {f"{m['locale']}/{m['key']}": {'src': '/' + Path(m['file']).as_posix().split('public/', 1)[1], 'width': m['width'], 'height': m['height'],
+         'surface': '#%02x%02x%02x' % tuple(m['pageSurface']),
+         'padTop': max(0, round(INSET - m['surfaceTop'])), 'padBottom': max(0, round(INSET - m['surfaceBottom'])),
+         # Interior crops (card surface, no shadow at the sides) also sit 8 px from their text sideways: pad those too.
+         'padInline': 8 if 'card interior' in m['purpose'] else 0} for m in manifest}
 index['photo/pickup'] = {'src': '/media/pawly-case-v2/pickup-photo.webp', 'width': 900, 'height': 900, 'sha256': hashlib.sha256(photo.read_bytes()).hexdigest()}
 Path('src/data/pawly-case-v2-media.json').write_text(json.dumps(index, indent=1) + '\n', 'utf8')

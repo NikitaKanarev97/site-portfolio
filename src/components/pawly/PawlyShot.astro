@@ -16,6 +16,7 @@
  * Phones: plates run full-bleed to the screen edge, so the field is gained without shrinking the screen.
  * In rows, a parent may set grid-row: span 3 + subgrid on the figure: label, plate and caption then share tracks
  * with their neighbours, and plates in one row end on one line.
+ * V2.1.1: the frame continues each slice's own page surface to an even 16 px above and below its content.
  * `action` is the same screen's fixed bottom bar, cut as its own slice: shown under the main slice, apart from it.
  */
 import media from '../../data/pawly-case-v2-media.json';
@@ -33,18 +34,18 @@ interface Props {
   class?: string;
 }
 const { shot, action, locale, label, caption, zoomLabel, plate = 'neutral', loading = 'lazy', class: className } = Astro.props;
-const entries = media as Record<string, { src: string; width: number; height: number }>;
+const entries = media as Record<string, { src: string; width: number; height: number; surface?: string; padTop?: number; padBottom?: number; padInline?: number }>;
 const slices = [shot, ...(action ? [action] : [])].map(s => {
   const entry = entries[`${locale}/${s.key}`];
-  if (!entry) throw new Error(`PawlyShot: no media ${locale}/${s.key}`);
-  return { ...s, ...entry };
+  if (!entry?.surface) throw new Error(`PawlyShot: no measured slice ${locale}/${s.key}`);
+  return { ...s, ...entry, padTop: entry.padTop ?? 0, padBottom: entry.padBottom ?? 0, padInline: entry.padInline ?? 0 };
 });
 ---
 <figure class:list={['pawly-shot', `pawly-shot--${plate}`, className]} style={`--shot-native: ${slices[0].width / 2}px`}>
   {label && <p class="ds-meta-sm pawly-shot__label">{label}</p>}
   <div class="pawly-shot__plate" data-h="plate">
     {slices.map((s, i) => (
-      <a class="pawly-shot__frame" href={s.src} data-astro-reload data-zoom-trigger data-zoom-src={s.src}
+      <a class="pawly-shot__frame" style={`--shot-surface: ${s.surface}; --shot-pad-top: ${s.padTop}px; --shot-pad-bottom: ${s.padBottom}px; --shot-pad-inline: ${s.padInline}px`} href={s.src} data-astro-reload data-zoom-trigger data-zoom-src={s.src}
         data-zoom-native="true" data-zoom-alt={s.alt} aria-label={`${zoomLabel}: ${s.alt}`}>
         <img src={s.src} width={s.width} height={s.height} alt={s.alt}
           loading={loading} decoding="async" fetchpriority={loading === 'eager' && i === 0 ? 'high' : undefined} />
@@ -70,8 +71,12 @@ const slices = [shot, ...(action ? [action] : [])].map(s => {
   }
   .pawly-shot--canvas .pawly-shot__plate { background: var(--surface-subtle); }
   .pawly-shot--none .pawly-shot__plate { padding: 0; background: none; }
+  /* The visible screen panel is the slice's own page surface. Crops end 4-5 px above and below the content but 16 px
+     to its sides, so the frame continues that surface (colour measured per slice by crops.py) up to 16 px above and below. */
   .pawly-shot__frame {
-    display: block; inline-size: 100%; max-inline-size: var(--shot-native);
+    display: block; inline-size: 100%; max-inline-size: calc(var(--shot-native) + 2 * var(--shot-pad-inline));
+    padding-block: var(--shot-pad-top) var(--shot-pad-bottom); padding-inline: var(--shot-pad-inline);
+    background: var(--shot-surface);
     overflow: hidden;
     border-radius: var(--radius-md);
   }

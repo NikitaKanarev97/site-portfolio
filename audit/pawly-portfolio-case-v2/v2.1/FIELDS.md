@@ -1,202 +1,203 @@
 # Media fields, BEFORE → AFTER
 
-Measured by `tools/measure.py` from the full-page DPR 1 captures (`before/`, `after/`): pixels of one surface between
-each image edge and the next edge, at the middle of that side. `T/B/L/R` in CSS px. Scale = rendered width / native
+Measured by `tools/measure.py` from the full-page DPR 1 captures (`before/`, `after/`), `T/B/L/R` in CSS px.
+**Panel**: clean product surface between the screen content and the edge of the visible screen panel (card shadows count
+as content, so sides read low where a shadow reaches the crop). **Plate**: one surface from the panel edge to the next edge. Scale = rendered width / native
 (DPR 2 capture ÷ 2). Hero photo has no native scale. On shared stages (Choosing and Return at 1440) the bottom field
 of a shorter screen runs to the stage edge, so it is larger than its top.
 
 ## EN
 
-| width | chapter | image | field BEFORE | field AFTER | scale BEFORE → AFTER | label gap | caption gap |
-|---|---|---|---|---|---|---|---|
-| 1440 | hero | `hero-status-en.webp` | 0/0/0/0 | 64/161/64/153 | 0.99 → 1.0 | None → None | None → None |
-| 1440 | hero | `pickup-photo.webp` | 48/24/153/64 | 64/24/153/64 | None → None | None → None | None → None |
-| 1440 | choosing | `match-list-en.webp` | 0/0/0/0 | 64/235/48/48 | 0.99 → 0.93 | 13 → 80 | 13 → 251 |
-| 1440 | choosing | `match-profile-en.webp` | 0/0/0/0 | 64/188/48/58 | 0.99 → 0.93 | 13 → 80 | 13 → 204 |
-| 1440 | choosing | `match-review-en.webp` | 0/0/0/0 | 64/64/59/58 | 0.99 → 1.0 | 13 → 80 | 13 → 80 |
-| 1440 | handoff | `role-owner-en.webp` | 0/0/0/0 | 64/64/24/24 | 0.99 → 1.0 | 13 → 80 | None → None |
-| 1440 | handoff | `role-walker-en.webp` | 0/0/0/0 | 76/75/24/24 | 0.99 → 1.0 | 13 → 92 | None → None |
-| 1440 | exceptions | `branch-reserve-en.webp` | 0/0/0/0 | 64/16/119/119 | 0.99 → 1.0 | None → None | None → None |
-| 1440 | exceptions | `branch-reserve-action-en.webp` | new | 16/64/119/119 | — → 1.0 | — → None | — → None |
-| 1440 | exceptions | `branch-failed-en.webp` | 0/278/0/0 | 82/16/119/119 | 0.99 → 1.0 | None → None | None → None |
-| 1440 | exceptions | `branch-failed-action-en.webp` | new | 16/83/119/119 | — → 1.0 | — → None | — → None |
-| 1440 | return | `proof-selected-en.webp` | 0/0/0/0 | 64/326/48/61 | 0.99 → 0.93 | 14 → 80 | 13 → 342 |
-| 1440 | return | `proof-confirmed-en.webp` | 0/18/0/0 | 64/286/62/55 | 0.99 → 0.93 | 14 → 80 | 12 → 302 |
-| 1440 | return | `proof-report-en.webp` | 0/0/0/0 | 64/64/61/48 | 0.99 → 0.93 | 14 → 80 | 13 → 80 |
-| 1440 | settlement | `settle-payment-en.webp` | 0/0/0/0 | 124/123/24/24 | 0.99 → 1.0 | 13 → 140 | None → None |
-| 1440 | settlement | `settle-earnings-en.webp` | 0/0/0/0 | 64/64/24/24 | 0.99 → 1.0 | 13 → 80 | None → None |
-| 1024 | hero | `hero-status-en.webp` | 0/0/0/0 | 64/64/400/48 | 0.99 → 1.0 | None → None | None → None |
-| 1024 | hero | `pickup-photo.webp` | 48/24/48/64 | 64/24/48/64 | None → None | None → None | None → None |
-| 1024 | choosing | `match-list-en.webp` | 0/0/0/0 | 89/87/24/24 | 0.99 → 0.95 | 14 → 105 | 13 → 103 |
-| 1024 | choosing | `match-profile-en.webp` | 0/20/0/0 | 64/64/24/24 | 0.99 → 0.95 | 14 → 80 | 12 → 80 |
-| 1024 | choosing | `match-review-en.webp` | 0/0/0/0 | 64/64/39/39 | 0.99 → 1.0 | 13 → 81 | 13 → 80 |
-| 1024 | handoff | `role-owner-en.webp` | 0/0/0/0 | 64/63/24/24 | 0.99 → 0.95 | 14 → 81 | None → None |
-| 1024 | handoff | `role-walker-en.webp` | 0/0/0/0 | 75/74/24/24 | 0.99 → 0.95 | 14 → 92 | None → None |
-| 1024 | exceptions | `branch-reserve-en.webp` | 0/0/0/0 | 64/15/24/24 | 0.99 → 0.95 | None → None | None → None |
-| 1024 | exceptions | `branch-reserve-action-en.webp` | new | 16/64/24/24 | — → 0.95 | — → None | — → None |
-| 1024 | exceptions | `branch-failed-en.webp` | 0/0/0/0 | 81/16/24/24 | 0.99 → 0.95 | None → None | None → None |
-| 1024 | exceptions | `branch-failed-action-en.webp` | new | 16/81/24/24 | — → 0.95 | — → None | — → None |
-| 1024 | return | `proof-selected-en.webp` | 0/20/0/0 | 84/84/24/24 | 0.99 → 0.95 | 14 → 101 | 12 → 100 |
-| 1024 | return | `proof-confirmed-en.webp` | 0/18/0/0 | 64/63/24/24 | 0.99 → 0.95 | 14 → 81 | 12 → 79 |
-| 1024 | return | `proof-report-en.webp` | 0/0/0/0 | 64/64/24/24 | 0.99 → 0.95 | 13 → 80 | 14 → 80 |
-| 1024 | settlement | `settle-payment-en.webp` | 0/247/0/0 | 121/121/24/24 | 0.99 → 0.95 | 14 → 137 | None → None |
-| 1024 | settlement | `settle-earnings-en.webp` | 0/0/0/0 | 64/65/24/24 | 0.99 → 0.95 | 14 → 80 | None → None |
-| 768 | hero | `hero-status-en.webp` | 0/0/0/0 | 48/48/258/24 | 0.99 → 1.0 | None → None | None → None |
-| 768 | hero | `pickup-photo.webp` | 24/24/24/32 | 48/24/24/32 | None → None | None → None | None → None |
-| 768 | choosing | `match-list-en.webp` | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 65 | 13 → 64 |
-| 768 | choosing | `match-profile-en.webp` | 0/0/0/0 | 48/47/141/141 | 0.83 → 1.0 | 14 → 65 | 13 → 63 |
-| 768 | choosing | `match-review-en.webp` | 0/0/0/0 | 48/48/165/165 | 0.94 → 1.0 | 13 → 64 | 13 → 64 |
-| 768 | handoff | `role-owner-en.webp` | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 13 → 64 | None → None |
-| 768 | handoff | `role-walker-en.webp` | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 13 → 64 | None → None |
-| 768 | exceptions | `branch-reserve-en.webp` | 0/0/0/0 | 48/16/141/141 | 0.83 → 1.0 | None → None | None → None |
-| 768 | exceptions | `branch-reserve-action-en.webp` | new | 16/48/141/141 | — → 1.0 | — → None | — → None |
-| 768 | exceptions | `branch-failed-en.webp` | 0/0/0/0 | 48/16/141/141 | 0.83 → 1.0 | None → None | None → None |
-| 768 | exceptions | `branch-failed-action-en.webp` | new | 16/48/141/141 | — → 1.0 | — → None | — → None |
-| 768 | return | `proof-selected-en.webp` | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 13 → 64 | 13 → 64 |
-| 768 | return | `proof-confirmed-en.webp` | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 13 → 64 | 13 → 64 |
-| 768 | return | `proof-report-en.webp` | 0/20/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 64 | 12 → 64 |
-| 768 | settlement | `settle-payment-en.webp` | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 65 | None → None |
-| 768 | settlement | `settle-earnings-en.webp` | 0/96/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 64 | None → None |
-| 390 | hero | `hero-status-en.webp` | 0/0/0/0 | 40/32/16/16 | 0.87 → 0.92 | None → None | None → None |
-| 390 | choosing | `match-list-en.webp` | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 13 → 56 | 13 → 56 |
-| 390 | choosing | `match-profile-en.webp` | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 13 → 56 | 13 → 56 |
-| 390 | choosing | `match-review-en.webp` | 0/0/0/0 | 40/40/24/24 | 0.99 → 1.0 | 13 → 57 | 13 → 56 |
-| 390 | handoff | `role-owner-en.webp` | 0/32/0/0 | 40/40/16/16 | 0.87 → 0.92 | 14 → 56 | None → None |
-| 390 | handoff | `role-walker-en.webp` | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 13 → 57 | None → None |
-| 390 | exceptions | `branch-reserve-en.webp` | 0/0/0/0 | 40/16/16/16 | 0.87 → 0.92 | None → None | None → None |
-| 390 | exceptions | `branch-reserve-action-en.webp` | new | 16/40/16/16 | — → 0.92 | — → None | — → None |
-| 390 | exceptions | `branch-failed-en.webp` | 0/57/0/0 | 40/16/16/16 | 0.87 → 0.92 | None → None | None → None |
-| 390 | exceptions | `branch-failed-action-en.webp` | new | 16/40/16/16 | — → 0.92 | — → None | — → None |
-| 390 | return | `proof-selected-en.webp` | 0/21/0/0 | 40/40/16/16 | 0.87 → 0.92 | 14 → 56 | 12 → 56 |
-| 390 | return | `proof-confirmed-en.webp` | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 13 → 56 | 14 → 56 |
-| 390 | return | `proof-report-en.webp` | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 14 → 57 | 13 → 56 |
-| 390 | settlement | `settle-payment-en.webp` | 0/40/0/0 | 40/40/16/16 | 0.87 → 0.92 | 14 → 56 | None → None |
-| 390 | settlement | `settle-earnings-en.webp` | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 14 → 56 | None → None |
-| 360 | hero | `hero-status-en.webp` | 0/0/0/0 | 40/54/16/16 | 0.79 → 0.84 | None → None | None → None |
-| 360 | choosing | `match-list-en.webp` | 0/1/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 56 | 14 → 56 |
-| 360 | choosing | `match-profile-en.webp` | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 14 → 57 | 13 → 56 |
-| 360 | choosing | `match-review-en.webp` | 0/1/0/0 | 40/40/16/16 | 0.91 → 0.96 | 13 → 56 | 14 → 56 |
-| 360 | handoff | `role-owner-en.webp` | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 57 | None → None |
-| 360 | handoff | `role-walker-en.webp` | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 56 | None → None |
-| 360 | exceptions | `branch-reserve-en.webp` | 0/48/0/0 | 40/16/16/16 | 0.79 → 0.84 | None → None | None → None |
-| 360 | exceptions | `branch-reserve-action-en.webp` | new | 16/40/16/16 | — → 0.84 | — → None | — → None |
-| 360 | exceptions | `branch-failed-en.webp` | 0/0/0/0 | 40/16/16/16 | 0.79 → 0.84 | None → None | None → None |
-| 360 | exceptions | `branch-failed-action-en.webp` | new | 16/39/16/16 | — → 0.84 | — → None | — → None |
-| 360 | return | `proof-selected-en.webp` | 0/0/0/0 | 40/41/16/16 | 0.79 → 0.84 | 14 → 56 | 13 → 57 |
-| 360 | return | `proof-confirmed-en.webp` | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 14 → 56 | 13 → 56 |
-| 360 | return | `proof-report-en.webp` | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 56 | 13 → 56 |
-| 360 | settlement | `settle-payment-en.webp` | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 56 | None → None |
-| 360 | settlement | `settle-earnings-en.webp` | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 14 → 57 | None → None |
-| 320 | hero | `hero-status-en.webp` | 0/0/0/0 | 32/33/12/12 | 0.69 → 0.76 | None → None | None → None |
-| 320 | choosing | `match-list-en.webp` | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 14 → 48 | 13 → 48 |
-| 320 | choosing | `match-profile-en.webp` | 0/1/0/0 | 32/31/12/12 | 0.69 → 0.76 | 13 → 49 | 14 → 47 |
-| 320 | choosing | `match-review-en.webp` | 0/1/0/0 | 32/32/12/12 | 0.79 → 0.87 | 13 → 49 | 14 → 48 |
-| 320 | handoff | `role-owner-en.webp` | 0/0/0/0 | 32/33/12/12 | 0.69 → 0.76 | 14 → 48 | None → None |
-| 320 | handoff | `role-walker-en.webp` | 0/0/0/0 | 32/31/12/12 | 0.69 → 0.76 | 14 → 49 | None → None |
-| 320 | exceptions | `branch-reserve-en.webp` | 0/48/0/0 | 32/16/12/12 | 0.69 → 0.76 | None → None | None → None |
-| 320 | exceptions | `branch-reserve-action-en.webp` | new | 16/32/12/12 | — → 0.76 | — → None | — → None |
-| 320 | exceptions | `branch-failed-en.webp` | 0/0/0/0 | 32/16/12/12 | 0.69 → 0.76 | None → None | None → None |
-| 320 | exceptions | `branch-failed-action-en.webp` | new | 16/31/12/12 | — → 0.76 | — → None | — → None |
-| 320 | return | `proof-selected-en.webp` | 0/0/0/0 | 32/33/12/12 | 0.69 → 0.76 | 14 → 48 | 13 → 49 |
-| 320 | return | `proof-confirmed-en.webp` | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 49 | 13 → 48 |
-| 320 | return | `proof-report-en.webp` | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 48 | 13 → 48 |
-| 320 | settlement | `settle-payment-en.webp` | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 48 | None → None |
-| 320 | settlement | `settle-earnings-en.webp` | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 48 | None → None |
+| width | chapter | image | panel BEFORE | panel AFTER | plate BEFORE | plate AFTER | scale BEFORE → AFTER | label gap | caption gap |
+|---|---|---|---|---|---|---|---|---|---|
+| 1440 | hero | `hero-status-en.webp` | 4/4/2/0 | 16/16/2/2 | 0/0/0/0 | 64/137/64/153 | 0.99 → 1.0 | None → None | None → None |
+| 1440 | hero | `pickup-photo.webp` | 0/0/0/0 | 0/0/0/0 | 48/24/153/64 | 64/24/153/64 | None → None | None → None | None → None |
+| 1440 | choosing | `match-list-en.webp` | 4/6/16/15 | 16/15/15/14 | 0/0/0/0 | 64/219/48/48 | 0.99 → 0.93 | 13 → 92 | 13 → 245 |
+| 1440 | choosing | `match-profile-en.webp` | 32/5/23/23 | 30/14/22/23 | 0/0/0/0 | 64/184/48/50 | 0.99 → 0.93 | 13 → 80 | 13 → 210 |
+| 1440 | choosing | `match-review-en.webp` | 12/14/8/8 | 16/16/16/17 | 0/0/0/0 | 64/64/51/50 | 0.99 → 1.0 | 13 → 84 | 13 → 82 |
+| 1440 | handoff | `role-owner-en.webp` | 4/4/15/16 | 16/17/16/16 | 0/0/0/0 | 64/64/24/24 | 0.99 → 1.0 | 13 → 92 | None → None |
+| 1440 | handoff | `role-walker-en.webp` | 5/4/12/12 | 17/16/12/12 | 0/0/0/0 | 76/76/24/24 | 0.99 → 1.0 | 13 → 104 | None → None |
+| 1440 | exceptions | `branch-reserve-en.webp` | 4/4/2/0 | 16/16/2/2 | 0/0/0/0 | 64/16/119/119 | 0.99 → 1.0 | None → None | None → None |
+| 1440 | exceptions | `branch-reserve-action-en.webp` | new | 15/15/15/14 | new | 16/64/119/119 | — → 1.0 | — → None | — → None |
+| 1440 | exceptions | `branch-failed-en.webp` | 4/5/12/12 | 17/16/12/12 | 0/278/0/0 | 80/16/119/119 | 0.99 → 1.0 | None → None | None → None |
+| 1440 | exceptions | `branch-failed-action-en.webp` | new | 15/16/15/14 | new | 16/80/119/119 | — → 1.0 | — → None | — → None |
+| 1440 | return | `proof-selected-en.webp` | 4/4/12/12 | 16/15/11/11 | 0/0/0/0 | 64/326/48/61 | 0.99 → 0.93 | 14 → 92 | 13 → 354 |
+| 1440 | return | `proof-confirmed-en.webp` | 4/4/12/12 | 16/15/11/12 | 0/18/0/0 | 64/285/62/55 | 0.99 → 0.93 | 14 → 92 | 12 → 314 |
+| 1440 | return | `proof-report-en.webp` | 4/4/2/0 | 16/16/0/0 | 0/0/0/0 | 64/64/61/48 | 0.99 → 0.93 | 14 → 92 | 13 → 92 |
+| 1440 | settlement | `settle-payment-en.webp` | 4/4/16/16 | 16/16/16/16 | 0/0/0/0 | 118/117/24/24 | 0.99 → 1.0 | 13 → 146 | None → None |
+| 1440 | settlement | `settle-earnings-en.webp` | 4/18/15/15 | 16/19/15/16 | 0/0/0/0 | 64/64/24/24 | 0.99 → 1.0 | 13 → 92 | None → None |
+| 1024 | hero | `hero-status-en.webp` | 4/4/2/0 | 16/16/2/2 | 0/0/0/0 | 64/64/250/48 | 0.99 → 1.0 | None → None | None → None |
+| 1024 | hero | `pickup-photo.webp` | 0/0/0/0 | 0/0/0/0 | 48/24/48/64 | 64/24/48/64 | None → None | None → None | None → None |
+| 1024 | choosing | `match-list-en.webp` | 4/6/16/15 | 16/15/15/15 | 0/0/0/0 | 83/82/24/24 | 0.99 → 0.95 | 14 → 111 | 13 → 107 |
+| 1024 | choosing | `match-profile-en.webp` | 32/26/23/23 | 30/14/22/22 | 0/0/0/0 | 64/64/24/24 | 0.99 → 0.95 | 14 → 80 | 12 → 90 |
+| 1024 | choosing | `match-review-en.webp` | 12/14/8/8 | 16/16/16/17 | 0/0/0/0 | 64/64/31/31 | 0.99 → 1.0 | 13 → 85 | 13 → 82 |
+| 1024 | handoff | `role-owner-en.webp` | 4/4/15/16 | 16/16/15/15 | 0/0/0/0 | 64/64/24/24 | 0.99 → 0.95 | 14 → 93 | None → None |
+| 1024 | handoff | `role-walker-en.webp` | 5/4/12/12 | 17/16/11/12 | 0/0/0/0 | 75/75/24/24 | 0.99 → 0.95 | 14 → 104 | None → None |
+| 1024 | exceptions | `branch-reserve-en.webp` | 4/4/2/0 | 16/15/0/0 | 0/0/0/0 | 64/16/24/24 | 0.99 → 0.95 | None → None | None → None |
+| 1024 | exceptions | `branch-reserve-action-en.webp` | new | 14/14/14/13 | new | 16/64/24/24 | — → 0.95 | — → None | — → None |
+| 1024 | exceptions | `branch-failed-en.webp` | 4/4/12/12 | 17/16/11/12 | 0/0/0/0 | 79/16/24/24 | 0.99 → 0.95 | None → None | None → None |
+| 1024 | exceptions | `branch-failed-action-en.webp` | new | 14/18/14/14 | new | 16/79/24/24 | — → 0.95 | — → None | — → None |
+| 1024 | return | `proof-selected-en.webp` | 4/5/12/12 | 17/15/11/12 | 0/20/0/0 | 85/85/24/24 | 0.99 → 0.95 | 14 → 114 | 12 → 111 |
+| 1024 | return | `proof-confirmed-en.webp` | 4/4/12/12 | 16/15/11/12 | 0/18/0/0 | 64/64/24/24 | 0.99 → 0.95 | 14 → 93 | 12 → 91 |
+| 1024 | return | `proof-report-en.webp` | 4/4/2/0 | 16/16/0/0 | 0/0/0/0 | 64/64/24/24 | 0.99 → 0.95 | 13 → 92 | 14 → 92 |
+| 1024 | settlement | `settle-payment-en.webp` | 4/5/16/16 | 16/16/15/15 | 0/247/0/0 | 115/115/24/24 | 0.99 → 0.95 | 14 → 143 | None → None |
+| 1024 | settlement | `settle-earnings-en.webp` | 4/18/15/15 | 16/18/14/15 | 0/0/0/0 | 64/64/24/24 | 0.99 → 0.95 | 14 → 92 | None → None |
+| 768 | hero | `hero-status-en.webp` | 4/4/2/0 | 16/16/2/2 | 0/0/0/0 | 48/48/258/24 | 0.99 → 1.0 | None → None | None → None |
+| 768 | hero | `pickup-photo.webp` | 0/0/0/0 | 0/0/0/0 | 24/24/24/32 | 48/24/24/32 | None → None | None → None | None → None |
+| 768 | choosing | `match-list-en.webp` | 3/5/13/13 | 16/16/16/16 | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 77 | 13 → 74 |
+| 768 | choosing | `match-profile-en.webp` | 26/4/19/19 | 32/15/23/24 | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 65 | 13 → 73 |
+| 768 | choosing | `match-review-en.webp` | 11/13/8/8 | 16/16/16/17 | 0/0/0/0 | 48/48/157/157 | 0.94 → 1.0 | 13 → 68 | 13 → 66 |
+| 768 | handoff | `role-owner-en.webp` | 3/3/13/13 | 16/17/16/16 | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 13 → 76 | None → None |
+| 768 | handoff | `role-walker-en.webp` | 4/4/10/10 | 17/16/12/12 | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 13 → 76 | None → None |
+| 768 | exceptions | `branch-reserve-en.webp` | 3/3/0/0 | 16/16/2/2 | 0/0/0/0 | 48/16/141/141 | 0.83 → 1.0 | None → None | None → None |
+| 768 | exceptions | `branch-reserve-action-en.webp` | new | 15/15/15/14 | new | 16/48/141/141 | — → 1.0 | — → None | — → None |
+| 768 | exceptions | `branch-failed-en.webp` | 4/3/10/10 | 17/16/12/12 | 0/0/0/0 | 48/16/141/141 | 0.83 → 1.0 | None → None | None → None |
+| 768 | exceptions | `branch-failed-action-en.webp` | new | 15/16/15/14 | new | 16/48/141/141 | — → 1.0 | — → None | — → None |
+| 768 | return | `proof-selected-en.webp` | 4/4/10/10 | 17/16/12/12 | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 13 → 76 | 13 → 75 |
+| 768 | return | `proof-confirmed-en.webp` | 4/3/10/10 | 16/16/12/12 | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 13 → 76 | 13 → 76 |
+| 768 | return | `proof-report-en.webp` | 3/5/0/0 | 16/16/2/2 | 0/20/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 76 | 12 → 76 |
+| 768 | settlement | `settle-payment-en.webp` | 4/4/13/13 | 16/16/16/16 | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 77 | None → None |
+| 768 | settlement | `settle-earnings-en.webp` | 3/112/12/13 | 16/19/15/16 | 0/240/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 76 | None → None |
+| 390 | hero | `hero-status-en.webp` | 3/3/0/0 | 15/15/0/0 | 0/0/0/0 | 40/32/16/16 | 0.87 → 0.92 | None → None | None → None |
+| 390 | choosing | `match-list-en.webp` | 4/5/14/14 | 16/15/14/14 | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 13 → 68 | 13 → 66 |
+| 390 | choosing | `match-profile-en.webp` | 28/4/20/20 | 29/14/21/22 | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 13 → 56 | 13 → 66 |
+| 390 | choosing | `match-review-en.webp` | 12/14/8/8 | 16/16/16/17 | 0/0/0/0 | 40/40/16/16 | 0.99 → 1.0 | 13 → 61 | 13 → 58 |
+| 390 | handoff | `role-owner-en.webp` | 3/4/14/14 | 15/16/14/14 | 0/32/0/0 | 40/40/16/16 | 0.87 → 0.92 | 14 → 68 | None → None |
+| 390 | handoff | `role-walker-en.webp` | 4/4/10/11 | 16/16/11/11 | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 13 → 69 | None → None |
+| 390 | exceptions | `branch-reserve-en.webp` | 4/3/0/0 | 16/15/0/0 | 0/0/0/0 | 40/16/16/16 | 0.87 → 0.92 | None → None | None → None |
+| 390 | exceptions | `branch-reserve-action-en.webp` | new | 14/14/14/13 | new | 16/40/16/16 | — → 0.92 | — → None | — → None |
+| 390 | exceptions | `branch-failed-en.webp` | 4/5/10/11 | 16/16/11/11 | 0/57/0/0 | 40/16/16/16 | 0.87 → 0.92 | None → None | None → None |
+| 390 | exceptions | `branch-failed-action-en.webp` | new | 14/17/14/13 | new | 16/40/16/16 | — → 0.92 | — → None | — → None |
+| 390 | return | `proof-selected-en.webp` | 4/5/10/11 | 16/15/11/11 | 0/21/0/0 | 40/40/16/16 | 0.87 → 0.92 | 14 → 68 | 12 → 67 |
+| 390 | return | `proof-confirmed-en.webp` | 4/3/10/11 | 16/15/11/11 | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 13 → 68 | 14 → 68 |
+| 390 | return | `proof-report-en.webp` | 4/4/0/0 | 16/16/0/0 | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 14 → 69 | 13 → 68 |
+| 390 | settlement | `settle-payment-en.webp` | 4/5/14/14 | 16/16/15/15 | 0/40/0/0 | 40/40/16/16 | 0.87 → 0.92 | 14 → 68 | None → None |
+| 390 | settlement | `settle-earnings-en.webp` | 4/16/13/14 | 16/17/14/14 | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 14 → 68 | None → None |
+| 360 | hero | `hero-status-en.webp` | 3/3/0/0 | 15/15/0/0 | 0/0/0/0 | 40/54/16/16 | 0.79 → 0.84 | None → None | None → None |
+| 360 | choosing | `match-list-en.webp` | 3/5/12/12 | 15/15/13/13 | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 68 | 14 → 66 |
+| 360 | choosing | `match-profile-en.webp` | 25/4/19/19 | 27/14/20/20 | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 14 → 57 | 13 → 66 |
+| 360 | choosing | `match-review-en.webp` | 11/13/8/8 | 15/15/16/16 | 0/0/0/0 | 40/40/16/16 | 0.91 → 0.91 | 13 → 60 | 14 → 58 |
+| 360 | handoff | `role-owner-en.webp` | 3/3/12/12 | 15/16/13/13 | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 69 | None → None |
+| 360 | handoff | `role-walker-en.webp` | 4/4/9/10 | 16/16/10/10 | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 68 | None → None |
+| 360 | exceptions | `branch-reserve-en.webp` | 3/4/0/0 | 15/14/0/0 | 0/48/0/0 | 40/16/16/16 | 0.79 → 0.84 | None → None | None → None |
+| 360 | exceptions | `branch-reserve-action-en.webp` | new | 13/13/13/12 | new | 16/40/16/16 | — → 0.84 | — → None | — → None |
+| 360 | exceptions | `branch-failed-en.webp` | 4/3/9/10 | 16/15/10/10 | 0/0/0/0 | 40/16/16/16 | 0.79 → 0.84 | None → None | None → None |
+| 360 | exceptions | `branch-failed-action-en.webp` | new | 13/16/13/12 | new | 16/40/16/16 | — → 0.84 | — → None | — → None |
+| 360 | return | `proof-selected-en.webp` | 4/4/9/10 | 16/15/10/10 | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 14 → 68 | 13 → 68 |
+| 360 | return | `proof-confirmed-en.webp` | 4/3/9/10 | 16/15/10/10 | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 14 → 68 | 13 → 68 |
+| 360 | return | `proof-report-en.webp` | 3/4/0/0 | 15/16/0/0 | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 68 | 13 → 68 |
+| 360 | settlement | `settle-payment-en.webp` | 3/4/13/13 | 16/16/14/13 | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 69 | None → None |
+| 360 | settlement | `settle-earnings-en.webp` | 3/15/12/12 | 15/16/13/13 | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 14 → 68 | None → None |
+| 320 | hero | `hero-status-en.webp` | 2/2/0/0 | 15/15/0/0 | 0/0/0/0 | 24/33/12/12 | 0.69 → 0.76 | None → None | None → None |
+| 320 | choosing | `match-list-en.webp` | 3/4/11/11 | 15/14/12/12 | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 14 → 60 | 13 → 58 |
+| 320 | choosing | `match-profile-en.webp` | 22/3/16/16 | 24/14/18/18 | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 49 | 14 → 57 |
+| 320 | choosing | `match-review-en.webp` | 10/11/7/7 | 14/13/15/15 | 0/0/0/0 | 32/32/12/12 | 0.79 → 0.82 | 13 → 53 | 14 → 49 |
+| 320 | handoff | `role-owner-en.webp` | 3/2/11/11 | 15/16/12/12 | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 14 → 61 | None → None |
+| 320 | handoff | `role-walker-en.webp` | 3/3/8/8 | 16/15/9/9 | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 14 → 61 | None → None |
+| 320 | exceptions | `branch-reserve-en.webp` | 3/3/0/0 | 15/13/0/0 | 0/48/0/0 | 32/16/12/12 | 0.69 → 0.76 | None → None | None → None |
+| 320 | exceptions | `branch-reserve-action-en.webp` | new | 12/12/11/11 | new | 16/32/12/12 | — → 0.76 | — → None | — → None |
+| 320 | exceptions | `branch-failed-en.webp` | 3/3/8/8 | 15/15/9/9 | 0/0/0/0 | 32/16/12/12 | 0.69 → 0.76 | None → None | None → None |
+| 320 | exceptions | `branch-failed-action-en.webp` | new | 12/14/11/11 | new | 16/32/12/12 | — → 0.76 | — → None | — → None |
+| 320 | return | `proof-selected-en.webp` | 3/3/8/8 | 15/14/9/9 | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 14 → 60 | 13 → 60 |
+| 320 | return | `proof-confirmed-en.webp` | 3/2/8/8 | 15/15/9/9 | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 61 | 13 → 60 |
+| 320 | return | `proof-report-en.webp` | 3/3/0/0 | 15/15/0/0 | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 60 | 13 → 60 |
+| 320 | settlement | `settle-payment-en.webp` | 3/3/11/11 | 15/15/12/12 | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 61 | None → None |
+| 320 | settlement | `settle-earnings-en.webp` | 3/13/10/11 | 15/15/11/12 | 0/0/0/0 | 32/31/12/12 | 0.69 → 0.76 | 13 → 61 | None → None |
 
 ## RU
 
-| width | chapter | image | field BEFORE | field AFTER | scale BEFORE → AFTER | label gap | caption gap |
-|---|---|---|---|---|---|---|---|
-| 1440 | hero | `hero-status-ru.webp` | 0/0/0/0 | 64/161/64/153 | 0.99 → 1.0 | None → None | None → None |
-| 1440 | hero | `pickup-photo.webp` | 48/26/153/64 | 64/26/153/64 | None → None | None → None | None → None |
-| 1440 | choosing | `match-list-ru.webp` | 0/0/0/0 | 64/255/48/48 | 0.99 → 0.93 | 14 → 81 | 13 → 271 |
-| 1440 | choosing | `match-profile-ru.webp` | 0/20/0/0 | 64/208/48/58 | 0.99 → 0.93 | 14 → 81 | 12 → 224 |
-| 1440 | choosing | `match-review-ru.webp` | 0/0/0/0 | 64/64/59/58 | 0.99 → 1.0 | 14 → 81 | 13 → 80 |
-| 1440 | handoff | `role-owner-ru.webp` | 0/0/0/0 | 64/64/24/24 | 0.99 → 1.0 | 14 → 81 | None → None |
-| 1440 | handoff | `role-walker-ru.webp` | 0/0/0/0 | 84/85/24/24 | 0.99 → 1.0 | 14 → 101 | None → None |
-| 1440 | exceptions | `branch-reserve-ru.webp` | 0/0/0/0 | 64/16/119/119 | 0.99 → 1.0 | None → None | None → None |
-| 1440 | exceptions | `branch-reserve-action-ru.webp` | new | 16/64/119/119 | — → 1.0 | — → None | — → None |
-| 1440 | exceptions | `branch-failed-ru.webp` | 0/278/0/0 | 84/16/119/119 | 0.99 → 1.0 | None → None | None → None |
-| 1440 | exceptions | `branch-failed-action-ru.webp` | new | 16/84/119/119 | — → 1.0 | — → None | — → None |
-| 1440 | return | `proof-selected-ru.webp` | 0/0/0/0 | 64/304/48/61 | 0.99 → 0.93 | 13 → 80 | 13 → 320 |
-| 1440 | return | `proof-confirmed-ru.webp` | 0/0/0/0 | 64/286/62/55 | 0.99 → 0.93 | 13 → 80 | 13 → 302 |
-| 1440 | return | `proof-report-ru.webp` | 0/0/0/0 | 64/64/61/48 | 0.99 → 0.93 | 13 → 80 | 13 → 80 |
-| 1440 | settlement | `settle-payment-ru.webp` | 0/0/0/0 | 123/124/24/24 | 0.99 → 1.0 | 13 → 139 | None → None |
-| 1440 | settlement | `settle-earnings-ru.webp` | 0/0/0/0 | 64/64/24/24 | 0.99 → 1.0 | 13 → 80 | None → None |
-| 1024 | hero | `hero-status-ru.webp` | 0/0/0/0 | 64/64/400/48 | 0.99 → 1.0 | None → None | None → None |
-| 1024 | hero | `pickup-photo.webp` | 48/47/48/64 | 64/47/48/64 | None → None | None → None | None → None |
-| 1024 | choosing | `match-list-ru.webp` | 0/1/0/0 | 88/88/24/24 | 0.99 → 0.95 | 13 → 104 | 14 → 104 |
-| 1024 | choosing | `match-profile-ru.webp` | 0/0/0/0 | 64/64/24/24 | 0.99 → 0.95 | 13 → 80 | 13 → 80 |
-| 1024 | choosing | `match-review-ru.webp` | 0/0/0/0 | 64/64/39/39 | 0.99 → 1.0 | 13 → 80 | 13 → 80 |
-| 1024 | handoff | `role-owner-ru.webp` | 0/0/0/0 | 64/63/24/24 | 0.99 → 0.95 | 13 → 81 | None → None |
-| 1024 | handoff | `role-walker-ru.webp` | 0/0/0/0 | 83/83/24/24 | 0.99 → 0.95 | 13 → 100 | None → None |
-| 1024 | exceptions | `branch-reserve-ru.webp` | 0/0/0/0 | 64/16/24/24 | 0.99 → 0.95 | None → None | None → None |
-| 1024 | exceptions | `branch-reserve-action-ru.webp` | new | 16/64/24/24 | — → 0.95 | — → None | — → None |
-| 1024 | exceptions | `branch-failed-ru.webp` | 0/110/0/0 | 83/15/24/24 | 0.99 → 0.95 | None → None | None → None |
-| 1024 | exceptions | `branch-failed-action-ru.webp` | new | 16/83/24/24 | — → 0.95 | — → None | — → None |
-| 1024 | return | `proof-selected-ru.webp` | 0/21/0/0 | 74/73/24/24 | 0.99 → 0.95 | 14 → 90 | 12 → 89 |
-| 1024 | return | `proof-confirmed-ru.webp` | 0/17/0/0 | 64/64/24/24 | 0.99 → 0.95 | 14 → 80 | 12 → 80 |
-| 1024 | return | `proof-report-ru.webp` | 0/0/0/0 | 64/64/24/24 | 0.99 → 0.95 | 13 → 80 | 14 → 80 |
-| 1024 | settlement | `settle-payment-ru.webp` | 0/246/0/0 | 121/120/24/24 | 0.99 → 0.95 | 14 → 137 | None → None |
-| 1024 | settlement | `settle-earnings-ru.webp` | 0/128/0/0 | 64/64/24/24 | 0.99 → 0.95 | 14 → 80 | None → None |
-| 768 | hero | `hero-status-ru.webp` | 0/0/0/0 | 48/48/87/24 | 0.99 → 1.0 | None → None | None → None |
-| 768 | hero | `pickup-photo.webp` | 24/24/24/32 | 48/24/24/32 | None → None | None → None | None → None |
-| 768 | choosing | `match-list-ru.webp` | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 13 → 65 | 13 → 64 |
-| 768 | choosing | `match-profile-ru.webp` | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 13 → 64 | 13 → 64 |
-| 768 | choosing | `match-review-ru.webp` | 0/0/0/0 | 48/48/165/165 | 0.94 → 1.0 | 14 → 65 | 13 → 64 |
-| 768 | handoff | `role-owner-ru.webp` | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 64 | None → None |
-| 768 | handoff | `role-walker-ru.webp` | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 65 | None → None |
-| 768 | exceptions | `branch-reserve-ru.webp` | 0/0/0/0 | 48/16/141/141 | 0.83 → 1.0 | None → None | None → None |
-| 768 | exceptions | `branch-reserve-action-ru.webp` | new | 16/48/141/141 | — → 1.0 | — → None | — → None |
-| 768 | exceptions | `branch-failed-ru.webp` | 0/0/0/0 | 48/16/141/141 | 0.83 → 1.0 | None → None | None → None |
-| 768 | exceptions | `branch-failed-action-ru.webp` | new | 16/48/141/141 | — → 1.0 | — → None | — → None |
-| 768 | return | `proof-selected-ru.webp` | 0/20/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 64 | 12 → 64 |
-| 768 | return | `proof-confirmed-ru.webp` | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 65 | 13 → 64 |
-| 768 | return | `proof-report-ru.webp` | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 13 → 65 | 13 → 64 |
-| 768 | settlement | `settle-payment-ru.webp` | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 64 | None → None |
-| 768 | settlement | `settle-earnings-ru.webp` | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 64 | None → None |
-| 390 | hero | `hero-status-ru.webp` | 0/0/0/0 | 40/32/16/16 | 0.87 → 0.92 | None → None | None → None |
-| 390 | choosing | `match-list-ru.webp` | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 13 → 57 | 13 → 56 |
-| 390 | choosing | `match-profile-ru.webp` | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 13 → 57 | 13 → 56 |
-| 390 | choosing | `match-review-ru.webp` | 0/0/0/0 | 40/40/24/24 | 0.99 → 1.0 | 13 → 56 | 13 → 56 |
-| 390 | handoff | `role-owner-ru.webp` | 0/0/0/0 | 40/39/16/16 | 0.87 → 0.92 | 14 → 57 | None → None |
-| 390 | handoff | `role-walker-ru.webp` | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 13 → 57 | None → None |
-| 390 | exceptions | `branch-reserve-ru.webp` | 0/48/0/0 | 40/16/16/16 | 0.87 → 0.92 | None → None | None → None |
-| 390 | exceptions | `branch-reserve-action-ru.webp` | new | 16/41/16/16 | — → 0.92 | — → None | — → None |
-| 390 | exceptions | `branch-failed-ru.webp` | 0/0/0/0 | 40/15/16/16 | 0.87 → 0.92 | None → None | None → None |
-| 390 | exceptions | `branch-failed-action-ru.webp` | new | 16/40/16/16 | — → 0.92 | — → None | — → None |
-| 390 | return | `proof-selected-ru.webp` | 0/0/0/0 | 40/41/16/16 | 0.87 → 0.92 | 14 → 56 | 13 → 57 |
-| 390 | return | `proof-confirmed-ru.webp` | 0/0/0/0 | 40/39/16/16 | 0.87 → 0.92 | 13 → 57 | 13 → 55 |
-| 390 | return | `proof-report-ru.webp` | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 13 → 57 | 13 → 56 |
-| 390 | settlement | `settle-payment-ru.webp` | 0/67/0/0 | 40/40/16/16 | 0.87 → 0.92 | 14 → 56 | None → None |
-| 390 | settlement | `settle-earnings-ru.webp` | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 14 → 56 | None → None |
-| 360 | hero | `hero-status-ru.webp` | 0/0/0/0 | 40/32/16/16 | 0.79 → 0.84 | None → None | None → None |
-| 360 | choosing | `match-list-ru.webp` | 0/0/0/0 | 40/39/16/16 | 0.79 → 0.84 | 13 → 56 | 13 → 55 |
-| 360 | choosing | `match-profile-ru.webp` | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 14 → 57 | 13 → 56 |
-| 360 | choosing | `match-review-ru.webp` | 0/0/0/0 | 40/40/16/16 | 0.91 → 0.96 | 14 → 56 | 13 → 56 |
-| 360 | handoff | `role-owner-ru.webp` | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 14 → 56 | None → None |
-| 360 | handoff | `role-walker-ru.webp` | 0/151/0/0 | 40/40/16/16 | 0.79 → 0.84 | 14 → 56 | None → None |
-| 360 | exceptions | `branch-reserve-ru.webp` | 0/48/0/0 | 40/16/16/16 | 0.79 → 0.84 | None → None | None → None |
-| 360 | exceptions | `branch-reserve-action-ru.webp` | new | 16/40/16/16 | — → 0.84 | — → None | — → None |
-| 360 | exceptions | `branch-failed-ru.webp` | 0/0/0/0 | 40/16/16/16 | 0.79 → 0.84 | None → None | None → None |
-| 360 | exceptions | `branch-failed-action-ru.webp` | new | 16/40/16/16 | — → 0.84 | — → None | — → None |
-| 360 | return | `proof-selected-ru.webp` | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 14 → 56 | 13 → 56 |
-| 360 | return | `proof-confirmed-ru.webp` | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 56 | 14 → 56 |
-| 360 | return | `proof-report-ru.webp` | 0/20/0/0 | 40/39/16/16 | 0.79 → 0.84 | 13 → 57 | 12 → 55 |
-| 360 | settlement | `settle-payment-ru.webp` | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 56 | None → None |
-| 360 | settlement | `settle-earnings-ru.webp` | 0/1/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 57 | None → None |
-| 320 | hero | `hero-status-ru.webp` | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | None → None | None → None |
-| 320 | choosing | `match-list-ru.webp` | 0/0/0/0 | 32/33/12/12 | 0.69 → 0.76 | 13 → 48 | 13 → 49 |
-| 320 | choosing | `match-profile-ru.webp` | 0/1/0/0 | 32/31/12/12 | 0.69 → 0.76 | 12 → 48 | 14 → 47 |
-| 320 | choosing | `match-review-ru.webp` | 0/0/0/0 | 32/32/12/12 | 0.79 → 0.87 | 13 → 48 | 13 → 48 |
-| 320 | handoff | `role-owner-ru.webp` | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 48 | None → None |
-| 320 | handoff | `role-walker-ru.webp` | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 49 | None → None |
-| 320 | exceptions | `branch-reserve-ru.webp` | 0/0/0/0 | 32/16/12/12 | 0.69 → 0.76 | None → None | None → None |
-| 320 | exceptions | `branch-reserve-action-ru.webp` | new | 16/31/12/12 | — → 0.76 | — → None | — → None |
-| 320 | exceptions | `branch-failed-ru.webp` | 0/0/0/0 | 32/16/12/12 | 0.69 → 0.76 | None → None | None → None |
-| 320 | exceptions | `branch-failed-action-ru.webp` | new | 16/32/12/12 | — → 0.76 | — → None | — → None |
-| 320 | return | `proof-selected-ru.webp` | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 48 | 13 → 48 |
-| 320 | return | `proof-confirmed-ru.webp` | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 48 | 13 → 48 |
-| 320 | return | `proof-report-ru.webp` | 0/21/0/0 | 32/32/12/12 | 0.69 → 0.76 | 14 → 48 | 12 → 48 |
-| 320 | settlement | `settle-payment-ru.webp` | 0/0/0/0 | 32/31/12/12 | 0.69 → 0.76 | 13 → 49 | None → None |
-| 320 | settlement | `settle-earnings-ru.webp` | 0/0/0/0 | 32/31/12/12 | 0.69 → 0.76 | 13 → 49 | None → None |
+| width | chapter | image | panel BEFORE | panel AFTER | plate BEFORE | plate AFTER | scale BEFORE → AFTER | label gap | caption gap |
+|---|---|---|---|---|---|---|---|---|---|
+| 1440 | hero | `hero-status-ru.webp` | 4/4/2/0 | 16/16/2/2 | 0/0/0/0 | 64/137/64/153 | 0.99 → 1.0 | None → None | None → None |
+| 1440 | hero | `pickup-photo.webp` | 0/0/0/0 | 0/0/0/0 | 48/26/153/64 | 64/26/153/64 | None → None | None → None | None → None |
+| 1440 | choosing | `match-list-ru.webp` | 4/6/16/15 | 16/16/15/14 | 0/0/0/0 | 64/242/48/48 | 0.99 → 0.93 | 14 → 93 | 13 → 268 |
+| 1440 | choosing | `match-profile-ru.webp` | 32/26/23/23 | 30/14/22/23 | 0/0/0/0 | 64/207/48/50 | 0.99 → 0.93 | 14 → 81 | 12 → 233 |
+| 1440 | choosing | `match-review-ru.webp` | 12/11/9/8 | 16/16/17/17 | 0/0/0/0 | 64/64/51/50 | 0.99 → 1.0 | 14 → 85 | 13 → 85 |
+| 1440 | handoff | `role-owner-ru.webp` | 4/4/15/16 | 16/17/16/16 | 0/0/0/0 | 64/64/24/24 | 0.99 → 1.0 | 14 → 93 | None → None |
+| 1440 | handoff | `role-walker-ru.webp` | 5/4/12/12 | 17/16/12/12 | 0/0/0/0 | 85/85/24/24 | 0.99 → 1.0 | 14 → 114 | None → None |
+| 1440 | exceptions | `branch-reserve-ru.webp` | 4/4/2/0 | 16/17/2/2 | 0/0/0/0 | 64/16/119/119 | 0.99 → 1.0 | None → None | None → None |
+| 1440 | exceptions | `branch-reserve-action-ru.webp` | new | 15/15/15/14 | new | 16/64/119/119 | — → 1.0 | — → None | — → None |
+| 1440 | exceptions | `branch-failed-ru.webp` | 4/5/12/12 | 17/16/12/12 | 0/278/0/0 | 83/16/119/119 | 0.99 → 1.0 | None → None | None → None |
+| 1440 | exceptions | `branch-failed-action-ru.webp` | new | 15/18/15/14 | new | 16/83/119/119 | — → 1.0 | — → None | — → None |
+| 1440 | return | `proof-selected-ru.webp` | 4/3/12/12 | 16/15/11/11 | 0/0/0/0 | 64/304/48/61 | 0.99 → 0.93 | 13 → 92 | 13 → 332 |
+| 1440 | return | `proof-confirmed-ru.webp` | 4/3/12/12 | 16/15/11/13 | 0/0/0/0 | 64/285/62/55 | 0.99 → 0.93 | 13 → 92 | 13 → 314 |
+| 1440 | return | `proof-report-ru.webp` | 4/4/2/0 | 16/16/0/0 | 0/0/0/0 | 64/64/61/48 | 0.99 → 0.93 | 13 → 92 | 13 → 92 |
+| 1440 | settlement | `settle-payment-ru.webp` | 4/4/16/16 | 16/16/16/16 | 0/0/0/0 | 117/118/24/24 | 0.99 → 1.0 | 13 → 145 | None → None |
+| 1440 | settlement | `settle-earnings-ru.webp` | 4/19/15/15 | 16/19/15/16 | 0/0/0/0 | 64/64/24/24 | 0.99 → 1.0 | 13 → 92 | None → None |
+| 1024 | hero | `hero-status-ru.webp` | 4/4/2/0 | 16/16/2/2 | 0/0/0/0 | 64/64/239/48 | 0.99 → 1.0 | None → None | None → None |
+| 1024 | hero | `pickup-photo.webp` | 0/0/0/0 | 0/0/0/0 | 48/47/48/64 | 64/47/48/64 | None → None | None → None | None → None |
+| 1024 | choosing | `match-list-ru.webp` | 4/6/16/15 | 16/16/15/15 | 0/0/0/0 | 82/82/24/24 | 0.99 → 0.95 | 13 → 110 | 14 → 108 |
+| 1024 | choosing | `match-profile-ru.webp` | 32/5/23/23 | 30/14/22/22 | 0/0/0/0 | 64/64/24/24 | 0.99 → 0.95 | 13 → 80 | 13 → 90 |
+| 1024 | choosing | `match-review-ru.webp` | 12/11/9/8 | 16/16/17/17 | 0/0/0/0 | 64/64/31/31 | 0.99 → 1.0 | 13 → 84 | 13 → 85 |
+| 1024 | handoff | `role-owner-ru.webp` | 4/4/15/16 | 16/17/15/15 | 0/0/0/0 | 64/64/24/24 | 0.99 → 0.95 | 13 → 93 | None → None |
+| 1024 | handoff | `role-walker-ru.webp` | 5/4/12/12 | 17/16/11/12 | 0/0/0/0 | 84/84/24/24 | 0.99 → 0.95 | 13 → 113 | None → None |
+| 1024 | exceptions | `branch-reserve-ru.webp` | 4/4/2/0 | 16/17/0/0 | 0/0/0/0 | 64/16/24/24 | 0.99 → 0.95 | None → None | None → None |
+| 1024 | exceptions | `branch-reserve-action-ru.webp` | new | 14/14/14/13 | new | 16/64/24/24 | — → 0.95 | — → None | — → None |
+| 1024 | exceptions | `branch-failed-ru.webp` | 4/5/12/12 | 17/16/11/12 | 0/110/0/0 | 82/16/24/24 | 0.99 → 0.95 | None → None | None → None |
+| 1024 | exceptions | `branch-failed-action-ru.webp` | new | 14/17/14/13 | new | 16/82/24/24 | — → 0.95 | — → None | — → None |
+| 1024 | return | `proof-selected-ru.webp` | 4/4/12/12 | 16/15/11/12 | 0/21/0/0 | 74/73/24/24 | 0.99 → 0.95 | 14 → 102 | 12 → 101 |
+| 1024 | return | `proof-confirmed-ru.webp` | 4/4/12/12 | 17/15/11/12 | 0/17/0/0 | 64/64/24/24 | 0.99 → 0.95 | 14 → 92 | 12 → 92 |
+| 1024 | return | `proof-report-ru.webp` | 4/4/2/0 | 16/16/0/0 | 0/0/0/0 | 64/64/24/24 | 0.99 → 0.95 | 13 → 92 | 14 → 92 |
+| 1024 | settlement | `settle-payment-ru.webp` | 4/5/16/16 | 16/16/15/15 | 0/246/0/0 | 115/114/24/24 | 0.99 → 0.95 | 14 → 143 | None → None |
+| 1024 | settlement | `settle-earnings-ru.webp` | 4/148/15/15 | 16/18/14/15 | 0/400/0/0 | 64/64/24/24 | 0.99 → 0.95 | 14 → 92 | None → None |
+| 768 | hero | `hero-status-ru.webp` | 4/4/2/0 | 16/16/2/2 | 0/0/0/0 | 48/48/258/24 | 0.99 → 1.0 | None → None | None → None |
+| 768 | hero | `pickup-photo.webp` | 0/0/0/0 | 0/0/0/0 | 24/24/24/32 | 48/24/24/32 | None → None | None → None | None → None |
+| 768 | choosing | `match-list-ru.webp` | 3/5/13/13 | 16/16/16/16 | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 13 → 77 | 13 → 74 |
+| 768 | choosing | `match-profile-ru.webp` | 26/4/19/19 | 32/15/23/24 | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 13 → 64 | 13 → 74 |
+| 768 | choosing | `match-review-ru.webp` | 11/11/8/8 | 16/16/17/17 | 0/0/0/0 | 48/48/157/157 | 0.94 → 1.0 | 14 → 69 | 13 → 69 |
+| 768 | handoff | `role-owner-ru.webp` | 3/3/13/13 | 16/17/16/16 | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 76 | None → None |
+| 768 | handoff | `role-walker-ru.webp` | 4/4/10/10 | 17/16/12/12 | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 77 | None → None |
+| 768 | exceptions | `branch-reserve-ru.webp` | 3/3/0/0 | 16/17/2/2 | 0/0/0/0 | 48/16/141/141 | 0.83 → 1.0 | None → None | None → None |
+| 768 | exceptions | `branch-reserve-action-ru.webp` | new | 15/15/15/14 | new | 16/48/141/141 | — → 1.0 | — → None | — → None |
+| 768 | exceptions | `branch-failed-ru.webp` | 4/3/10/10 | 17/16/12/12 | 0/0/0/0 | 48/16/141/141 | 0.83 → 1.0 | None → None | None → None |
+| 768 | exceptions | `branch-failed-action-ru.webp` | new | 15/18/15/14 | new | 16/48/141/141 | — → 1.0 | — → None | — → None |
+| 768 | return | `proof-selected-ru.webp` | 4/4/10/10 | 16/16/12/12 | 0/20/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 76 | 12 → 76 |
+| 768 | return | `proof-confirmed-ru.webp` | 4/3/10/10 | 16/16/12/13 | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 77 | 13 → 76 |
+| 768 | return | `proof-report-ru.webp` | 3/3/0/0 | 16/16/2/2 | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 13 → 77 | 13 → 76 |
+| 768 | settlement | `settle-payment-ru.webp` | 4/4/13/13 | 16/16/16/16 | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 76 | None → None |
+| 768 | settlement | `settle-earnings-ru.webp` | 3/16/12/13 | 16/19/15/16 | 0/0/0/0 | 48/48/141/141 | 0.83 → 1.0 | 14 → 76 | None → None |
+| 390 | hero | `hero-status-ru.webp` | 3/3/0/0 | 15/15/0/0 | 0/0/0/0 | 40/32/16/16 | 0.87 → 0.92 | None → None | None → None |
+| 390 | choosing | `match-list-ru.webp` | 4/5/14/14 | 16/16/14/14 | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 13 → 69 | 13 → 66 |
+| 390 | choosing | `match-profile-ru.webp` | 28/4/20/20 | 29/14/21/22 | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 13 → 57 | 13 → 66 |
+| 390 | choosing | `match-review-ru.webp` | 12/11/9/8 | 16/16/17/17 | 0/0/0/0 | 40/40/16/16 | 0.99 → 1.0 | 13 → 60 | 13 → 61 |
+| 390 | handoff | `role-owner-ru.webp` | 3/3/14/14 | 15/16/14/14 | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 14 → 69 | None → None |
+| 390 | handoff | `role-walker-ru.webp` | 4/4/10/11 | 16/16/11/11 | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 13 → 69 | None → None |
+| 390 | exceptions | `branch-reserve-ru.webp` | 4/4/0/0 | 16/17/0/0 | 0/48/0/0 | 40/16/16/16 | 0.87 → 0.92 | None → None | None → None |
+| 390 | exceptions | `branch-reserve-action-ru.webp` | new | 14/14/14/13 | new | 16/40/16/16 | — → 0.92 | — → None | — → None |
+| 390 | exceptions | `branch-failed-ru.webp` | 4/4/10/11 | 16/16/11/11 | 0/0/0/0 | 40/16/16/16 | 0.87 → 0.92 | None → None | None → None |
+| 390 | exceptions | `branch-failed-action-ru.webp` | new | 14/16/14/13 | new | 16/40/16/16 | — → 0.92 | — → None | — → None |
+| 390 | return | `proof-selected-ru.webp` | 4/3/10/11 | 16/15/11/11 | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 14 → 68 | 13 → 69 |
+| 390 | return | `proof-confirmed-ru.webp` | 4/3/10/11 | 16/15/11/11 | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 13 → 69 | 13 → 67 |
+| 390 | return | `proof-report-ru.webp` | 4/4/0/0 | 16/16/0/0 | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 13 → 69 | 13 → 68 |
+| 390 | settlement | `settle-payment-ru.webp` | 4/5/14/14 | 16/16/15/15 | 0/67/0/0 | 40/40/16/16 | 0.87 → 0.92 | 14 → 68 | None → None |
+| 390 | settlement | `settle-earnings-ru.webp` | 4/16/13/14 | 16/18/14/14 | 0/0/0/0 | 40/40/16/16 | 0.87 → 0.92 | 14 → 68 | None → None |
+| 360 | hero | `hero-status-ru.webp` | 3/3/0/0 | 15/15/0/0 | 0/0/0/0 | 40/32/16/16 | 0.79 → 0.84 | None → None | None → None |
+| 360 | choosing | `match-list-ru.webp` | 3/5/12/12 | 15/15/13/13 | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 68 | 13 → 65 |
+| 360 | choosing | `match-profile-ru.webp` | 25/4/18/19 | 27/14/20/20 | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 14 → 57 | 13 → 66 |
+| 360 | choosing | `match-review-ru.webp` | 11/10/8/8 | 15/15/16/16 | 0/0/0/0 | 40/40/16/16 | 0.91 → 0.91 | 14 → 60 | 13 → 62 |
+| 360 | handoff | `role-owner-ru.webp` | 3/3/12/12 | 15/16/13/13 | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 14 → 68 | None → None |
+| 360 | handoff | `role-walker-ru.webp` | 4/5/9/10 | 16/16/10/10 | 0/151/0/0 | 40/40/16/16 | 0.79 → 0.84 | 14 → 68 | None → None |
+| 360 | exceptions | `branch-reserve-ru.webp` | 3/4/0/0 | 15/16/0/0 | 0/48/0/0 | 40/16/16/16 | 0.79 → 0.84 | None → None | None → None |
+| 360 | exceptions | `branch-reserve-action-ru.webp` | new | 13/13/13/12 | new | 16/40/16/16 | — → 0.84 | — → None | — → None |
+| 360 | exceptions | `branch-failed-ru.webp` | 4/3/9/10 | 16/15/10/10 | 0/0/0/0 | 40/16/16/16 | 0.79 → 0.84 | None → None | None → None |
+| 360 | exceptions | `branch-failed-action-ru.webp` | new | 13/16/13/12 | new | 16/39/16/16 | — → 0.84 | — → None | — → None |
+| 360 | return | `proof-selected-ru.webp` | 4/3/9/10 | 16/15/10/10 | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 14 → 68 | 13 → 68 |
+| 360 | return | `proof-confirmed-ru.webp` | 4/3/9/10 | 16/15/10/11 | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 68 | 14 → 68 |
+| 360 | return | `proof-report-ru.webp` | 3/4/0/0 | 15/15/0/0 | 0/20/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 68 | 12 → 68 |
+| 360 | settlement | `settle-payment-ru.webp` | 3/4/13/13 | 16/16/14/13 | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 69 | None → None |
+| 360 | settlement | `settle-earnings-ru.webp` | 3/15/12/12 | 15/16/13/13 | 0/0/0/0 | 40/40/16/16 | 0.79 → 0.84 | 13 → 69 | None → None |
+| 320 | hero | `hero-status-ru.webp` | 2/2/0/0 | 15/15/0/0 | 0/0/0/0 | 24/32/12/12 | 0.69 → 0.76 | None → None | None → None |
+| 320 | choosing | `match-list-ru.webp` | 3/4/11/11 | 15/15/12/12 | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 60 | 13 → 59 |
+| 320 | choosing | `match-profile-ru.webp` | 22/3/16/16 | 24/14/18/18 | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 12 → 48 | 14 → 57 |
+| 320 | choosing | `match-review-ru.webp` | 10/9/7/7 | 14/14/15/15 | 0/0/0/0 | 32/32/12/12 | 0.79 → 0.82 | 13 → 52 | 13 → 53 |
+| 320 | handoff | `role-owner-ru.webp` | 3/3/11/11 | 15/16/12/12 | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 61 | None → None |
+| 320 | handoff | `role-walker-ru.webp` | 3/3/8/8 | 16/15/9/9 | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 60 | None → None |
+| 320 | exceptions | `branch-reserve-ru.webp` | 3/3/0/0 | 15/15/0/0 | 0/0/0/0 | 32/16/12/12 | 0.69 → 0.76 | None → None | None → None |
+| 320 | exceptions | `branch-reserve-action-ru.webp` | new | 12/12/11/11 | new | 16/32/12/12 | — → 0.76 | — → None | — → None |
+| 320 | exceptions | `branch-failed-ru.webp` | 3/3/8/8 | 15/15/9/9 | 0/0/0/0 | 32/16/12/12 | 0.69 → 0.76 | None → None | None → None |
+| 320 | exceptions | `branch-failed-action-ru.webp` | new | 12/12/11/11 | new | 16/32/12/12 | — → 0.76 | — → None | — → None |
+| 320 | return | `proof-selected-ru.webp` | 3/2/8/8 | 15/15/9/9 | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 60 | 13 → 60 |
+| 320 | return | `proof-confirmed-ru.webp` | 3/2/8/9 | 15/15/9/9 | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 60 | 13 → 60 |
+| 320 | return | `proof-report-ru.webp` | 3/4/0/0 | 15/15/0/0 | 0/21/0/0 | 32/32/12/12 | 0.69 → 0.76 | 14 → 60 | 12 → 60 |
+| 320 | settlement | `settle-payment-ru.webp` | 3/3/11/11 | 15/15/12/12 | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 61 | None → None |
+| 320 | settlement | `settle-earnings-ru.webp` | 3/13/10/11 | 15/16/11/12 | 0/0/0/0 | 32/32/12/12 | 0.69 → 0.76 | 13 → 61 | None → None |

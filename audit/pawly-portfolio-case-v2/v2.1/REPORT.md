@@ -1,14 +1,33 @@
 # Pawly Portfolio Case V2.1 — media spacing: report for independent review
 
-This report does not approve itself. Nothing was merged or deployed. Figma, the Pawly product repository, the Home cover, the other cases and the shared DS components (`CasePlate`, `CaseShot`, `MediaZoom`, tokens) were not touched.
+This report does not approve itself (§0 records a correction made after the first V2.1 push). Nothing was merged or deployed. Figma, the Pawly product repository, the Home cover, the other cases and the shared DS components (`CasePlate`, `CaseShot`, `MediaZoom`, tokens) were not touched.
 
 | | |
 |---|---|
 | Branch | `redesign/pawly-portfolio-case-v2-2026-11-02` |
 | Reviewed HEAD (BEFORE) | `e943da1677eeef53e1c538ed7a36b5df40fae1a8` |
-| Implementation | `85b4f9b` (renderer, copy, media, crop tool) · evidence `5315b2c` · this report in the commit after it |
+| Implementation | V2.1 `85b4f9b` (renderer, copy, media, crop tool), evidence `5315b2c`, report `c130422`; V2.1.1 correction (§0) and refreshed evidence in the commit after `c130422` |
 | Routes | `/work/pawly`, `/ru/work/pawly` |
 | Files changed | `src/components/pawly/PawlyShot.astro`, `PawlyCase.astro`; `src/copy/cases/pawly-v2.ts`, `src/copy/ru/cases/pawly-v2.ts` (alt text + action slices only); `src/data/pawly-case-v2-media.json`; `public/media/pawly-case-v2/` (2 changed, 4 new); `audit/.../v2/tools/crops.py` |
+
+## 0. V2.1.1 — correction after owner review (read first)
+
+The first V2.1 push (`c130422`) measured the wrong thing. It measured the field **outside** each screenshot (plate, stage). It missed the field **inside the visible screen panel**: the light rectangle a slice shows is the product's own page surface. The crops ended **3–5 px** above and below the cards, but 10–16 px from them at the sides. On every plate the screen panel therefore still looked cramped vertically. The owner caught it on the RU hero at 390.
+
+**Fix.** No pixel changed, and the 30 slice files are byte-identical.
+
+- `crops.py` now records each slice's page-surface colour and how far that surface reaches above and below the content.
+- `PawlyShot` paints the frame in that exact colour and pads it to **16 px above and below**. The interior crop ("Before you confirm", text 8 px from its sides) also gets 8 px at the sides.
+- The panel now has the same field above and below as at its sides: **13–17 px** at every width, where BEFORE had 3–5 ([FIELDS.md](FIELDS.md), "panel" columns).
+- The plate field is now measured from the panel edge.
+- Side readings of 0–2 px remain on `hero-status`, `branch-reserve` and `proof-report`. There the cards' own drop shadow reaches the crop edge; the card itself sits about 16 px in.
+
+**Cost.**
+
+- At 320 the hero stage's top field became 24, so that 24 px of sand plus 16 px of panel sit above the first card, and the screen still starts in the upper 45% of the viewport.
+- Pages grew by 90–280 px.
+
+All checks, captures, measurements and boards below were rerun on this build.
 
 ## 1. What the review found, measured
 
@@ -53,7 +72,7 @@ All values are in CSS px: the screen's field top / bottom, then the rendered sca
 
 | Chapter | 1440 | 1024 | 768 | 390 | 360 | 320 | BEFORE (all widths) |
 |---|---|---|---|---|---|---|---|
-| Hero (owner screen on sand) | 64 / 161¹ · 1.00 | 64 / 64 · 1.00 | 48 / 48 · 1.00 | 40 / 32² · 0.92 | 40 / 32² · 0.84 | 32 / 32 · 0.76 | 0 / 0 (border) · 0.69–0.99 |
+| Hero (owner screen on sand) | 64 / 161¹ · 1.00 | 64 / 64 · 1.00 | 48 / 48 · 1.00 | 40 / 32² · 0.92 | 40 / 32² · 0.84 | 24 / 32 · 0.76 | 0 / 0 (border) · 0.69–0.99 |
 | Choosing (3) | 64 top, shared stage · 0.93 / 1.00 | 64–89 · 0.95 | 48 · 1.00 | 40 / 40 · 0.92 | 40 / 40 · 0.84 | 32 / 32 · 0.76 | 0 / 0 |
 | Handoff (2) | 64–76 · 1.00 | 64–75 · 0.95 | 48 · 1.00 | 40 / 40 · 0.92 | 40 / 40 · 0.84 | 32 / 32 · 0.76 | 0 / 0 |
 | Exceptions (2 + actions) | 64–82 outer, 16 to the action bar · 1.00 | 64–81 · 0.95 | 48 · 1.00 | 40 outer · 0.92 | 40 · 0.84 | 32 · 0.76 | 0 / 0 |
@@ -67,7 +86,7 @@ Every value, per image, width and locale: [FIELDS.md](FIELDS.md).
 
 - **Labels:** the label-to-screen distance went from 12–14 px to 48–140 px.
 - **Captions:** caption-to-screen went from 12–14 px to 47–342 px. The upper end is the shorter screens on the shared 1440 stages. Both distances now include the plate's field: the label and caption stay attached to their plate (16 px), not to the bare image.
-- **First mobile viewport:** the product screen starts at 322 px at 390 × 844 (522 px of it visible), 322 at 360 × 800 and 284 at 320 × 640. That is inside the upper 45% at every phone width (functional check).
+- **First mobile viewport:** the product screen starts at 334 px at 390 × 844 (510 px of it visible), 334 at 360 × 800 and 284 at 320 × 640. That is inside the upper 45% at every phone width (functional check).
 
 ## 4. Exceptions: real recovery actions
 
@@ -111,10 +130,10 @@ These are new slices from the **original V2 product captures**; nothing was re-s
 
    | Width | EN BEFORE | EN AFTER | Growth | RU AFTER | Growth |
    |---|---|---|---|---|---|
-   | 390 | 14,153 | 15,809 | **+11.7%** | 16,421 | +11.1% |
-   | 320 | 13,527 | 15,087 | +11.5% | — | — |
-   | 1440 | 9,238 | 10,175 | +10.1% | — | — |
-   | 768 | 10,308 | 15,420 | **+49.6%** | — | — |
+   | 390 | 14,153 | 16,080 | **+13.6%** | 16,697 | +12.9% |
+   | 320 | 13,527 | 15,315 | +13.2% | — | — |
+   | 1440 | 9,238 | 10,266 | +11.1% | — | — |
+   | 768 | 10,308 | 15,691 | **+52.2%** | — | — |
 
    The 768 jump is the one-screen-per-row choice from §2. The alternative is pairs at 0.75 of native. A reviewer may prefer that, or a narrower plate side field at 768.
 2. **1440 shared stages** render Choosing and Return screens at **0.93** of native (V2: 0.99). Product body text drops from about 14 to 13 px.

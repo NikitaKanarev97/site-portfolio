@@ -2,152 +2,272 @@
  "en/hero-status": {
   "src": "/media/pawly-case-v2/hero-status-en.webp",
   "width": 780,
-  "height": 1508
+  "height": 1508,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 12,
+  "padInline": 0
  },
  "ru/hero-status": {
   "src": "/media/pawly-case-v2/hero-status-ru.webp",
   "width": 780,
-  "height": 1508
+  "height": 1508,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 12,
+  "padInline": 0
  },
  "en/match-list": {
   "src": "/media/pawly-case-v2/match-list-en.webp",
   "width": 780,
-  "height": 1050
+  "height": 1050,
+  "surface": "#ffffff",
+  "padTop": 12,
+  "padBottom": 10,
+  "padInline": 0
  },
  "ru/match-list": {
   "src": "/media/pawly-case-v2/match-list-ru.webp",
   "width": 780,
-  "height": 1050
+  "height": 1050,
+  "surface": "#ffffff",
+  "padTop": 12,
+  "padBottom": 10,
+  "padInline": 0
  },
  "en/match-profile": {
   "src": "/media/pawly-case-v2/match-profile-en.webp",
   "width": 780,
-  "height": 1151
+  "height": 1151,
+  "surface": "#ffffff",
+  "padTop": 0,
+  "padBottom": 10,
+  "padInline": 0
  },
  "ru/match-profile": {
   "src": "/media/pawly-case-v2/match-profile-ru.webp",
   "width": 780,
-  "height": 1151
+  "height": 1151,
+  "surface": "#ffffff",
+  "padTop": 0,
+  "padBottom": 10,
+  "padInline": 0
  },
  "en/match-review": {
   "src": "/media/pawly-case-v2/match-review-en.webp",
   "width": 684,
-  "height": 1318
+  "height": 1318,
+  "surface": "#ffffff",
+  "padTop": 4,
+  "padBottom": 2,
+  "padInline": 8
  },
  "ru/match-review": {
   "src": "/media/pawly-case-v2/match-review-ru.webp",
   "width": 684,
-  "height": 1358
+  "height": 1358,
+  "surface": "#ffffff",
+  "padTop": 4,
+  "padBottom": 5,
+  "padInline": 8
  },
  "en/role-owner": {
   "src": "/media/pawly-case-v2/role-owner-en.webp",
   "width": 780,
-  "height": 1142
+  "height": 1142,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 13,
+  "padInline": 0
  },
  "ru/role-owner": {
   "src": "/media/pawly-case-v2/role-owner-ru.webp",
   "width": 780,
-  "height": 1178
+  "height": 1178,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 13,
+  "padInline": 0
  },
  "en/role-walker": {
   "src": "/media/pawly-case-v2/role-walker-en.webp",
   "width": 780,
-  "height": 1096
+  "height": 1096,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 12,
+  "padInline": 0
  },
  "ru/role-walker": {
   "src": "/media/pawly-case-v2/role-walker-ru.webp",
   "width": 780,
-  "height": 1096
+  "height": 1096,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 12,
+  "padInline": 0
  },
  "en/branch-reserve": {
   "src": "/media/pawly-case-v2/branch-reserve-en.webp",
   "width": 780,
-  "height": 1176
+  "height": 1176,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 4,
+  "padInline": 0
  },
  "ru/branch-reserve": {
   "src": "/media/pawly-case-v2/branch-reserve-ru.webp",
   "width": 780,
-  "height": 1181
+  "height": 1181,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 6,
+  "padInline": 0
  },
  "en/branch-failed": {
   "src": "/media/pawly-case-v2/branch-failed-en.webp",
   "width": 780,
-  "height": 928
+  "height": 928,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 12,
+  "padInline": 0
  },
  "ru/branch-failed": {
   "src": "/media/pawly-case-v2/branch-failed-ru.webp",
   "width": 780,
-  "height": 928
+  "height": 928,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 12,
+  "padInline": 0
  },
  "en/branch-reserve-action": {
   "src": "/media/pawly-case-v2/branch-reserve-action-en.webp",
   "width": 780,
-  "height": 144
+  "height": 144,
+  "surface": "#ffffff",
+  "padTop": 4,
+  "padBottom": 4,
+  "padInline": 0
  },
  "ru/branch-reserve-action": {
   "src": "/media/pawly-case-v2/branch-reserve-action-ru.webp",
   "width": 780,
-  "height": 144
+  "height": 144,
+  "surface": "#ffffff",
+  "padTop": 4,
+  "padBottom": 4,
+  "padInline": 0
  },
  "en/branch-failed-action": {
   "src": "/media/pawly-case-v2/branch-failed-action-en.webp",
   "width": 780,
-  "height": 318
+  "height": 318,
+  "surface": "#ffffff",
+  "padTop": 4,
+  "padBottom": 1,
+  "padInline": 0
  },
  "ru/branch-failed-action": {
   "src": "/media/pawly-case-v2/branch-failed-action-ru.webp",
   "width": 780,
-  "height": 318
+  "height": 318,
+  "surface": "#ffffff",
+  "padTop": 4,
+  "padBottom": 0,
+  "padInline": 0
  },
  "en/proof-selected": {
   "src": "/media/pawly-case-v2/proof-selected-en.webp",
   "width": 780,
-  "height": 876
+  "height": 876,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 11,
+  "padInline": 0
  },
  "ru/proof-selected": {
   "src": "/media/pawly-case-v2/proof-selected-ru.webp",
   "width": 780,
-  "height": 922
+  "height": 922,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 12,
+  "padInline": 0
  },
  "en/proof-confirmed": {
   "src": "/media/pawly-case-v2/proof-confirmed-en.webp",
   "width": 780,
-  "height": 962
+  "height": 962,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 12,
+  "padInline": 0
  },
  "ru/proof-confirmed": {
   "src": "/media/pawly-case-v2/proof-confirmed-ru.webp",
   "width": 780,
-  "height": 962
+  "height": 962,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 12,
+  "padInline": 0
  },
  "en/proof-report": {
   "src": "/media/pawly-case-v2/proof-report-en.webp",
   "width": 780,
-  "height": 1438
+  "height": 1438,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 12,
+  "padInline": 0
  },
  "ru/proof-report": {
   "src": "/media/pawly-case-v2/proof-report-ru.webp",
   "width": 780,
-  "height": 1438
+  "height": 1438,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 12,
+  "padInline": 0
  },
  "en/settle-earnings": {
   "src": "/media/pawly-case-v2/settle-earnings-en.webp",
   "width": 780,
-  "height": 806
+  "height": 806,
+  "surface": "#ffffff",
+  "padTop": 12,
+  "padBottom": 0,
+  "padInline": 0
  },
  "ru/settle-earnings": {
   "src": "/media/pawly-case-v2/settle-earnings-ru.webp",
   "width": 780,
-  "height": 806
+  "height": 806,
+  "surface": "#ffffff",
+  "padTop": 12,
+  "padBottom": 0,
+  "padInline": 0
  },
  "en/settle-payment": {
   "src": "/media/pawly-case-v2/settle-payment-en.webp",
   "width": 780,
-  "height": 568
+  "height": 568,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 12,
+  "padInline": 0
  },
  "ru/settle-payment": {
   "src": "/media/pawly-case-v2/settle-payment-ru.webp",
   "width": 780,
-  "height": 568
+  "height": 568,
+  "surface": "#faf9f7",
+  "padTop": 12,
+  "padBottom": 12,
+  "padInline": 0
  },
  "photo/pickup": {
   "src": "/media/pawly-case-v2/pickup-photo.webp",

@@ -1,7 +1,8 @@
 """Media field measurement, identical for BEFORE and AFTER. Usage: python measure.py <capture-dir> <out.json>
 
-For every product image recorded in facts.json (`media`), reads the full-page DPR 1 capture and walks outward from the
-middle of each image edge while the pixel stays the colour found 2 px outside that edge (±4 per channel). The walk length
+For every product image recorded in facts.json (`media`), reads the full-page DPR 1 capture.
+`panel` (V2.1.1): the visible screen panel's own field, clean surface between its content and its edge (see below).
+`field`: walks outward from the middle of each panel edge while the pixel stays the colour found 2 px outside that edge (±4 per channel). The walk length
 is the image's visual field on that side: the run of one surface before the next edge (a plate edge, a neighbouring
 screen, text, a border or the sheet). A 1 px border right outside the image counts as a field of 0-1.
 Also reports the gap from the label's bottom to the image's top, and from the image's bottom to its caption's top
@@ -42,21 +43,63 @@ def _walk(im, x, y, dx, dy):
     return n, ref
 
 
+# Slice surfaces by published file name (both locales), from the media index crops.py writes.
+SURFACE = {Path(v['src']).name: tuple(int(v['surface'][i:i + 2], 16) for i in (1, 3, 5))
+           for v in json.loads(Path('src/data/pawly-case-v2-media.json').read_text('utf8')).values() if 'surface' in v}
 rows = []
 for f in facts:
     im = Image.open(cap / f"{f['name']}-full.png").convert('RGB')
     for m in f.get('media', []):
         b = m['img']
         cx, cy = b['x'] + b['w'] // 2, b['y'] + b['h'] // 2
-        top, ref = walk(im, cx, b['y'] - 1, 0, -1)
-        bottom, _ = walk(im, cx, b['y'] + b['h'], 0, 1)
-        left, _ = walk(im, b['x'] - 1, cy, -1, 0)
-        right, _ = walk(im, b['x'] + b['w'], cy, 1, 0)
         lab, capb = m.get('label'), m.get('caption')
         natural = Image.open(Path('public/media/pawly-case-v2') / m['src']).width if (Path('public/media/pawly-case-v2') / m['src']).exists() else None
+        # V2.1.1 — the visible screen panel. A slice shows its own page surface around its content; whatever continues that
+        # exact surface outside the image (±2, so a plate 3/255 away does not count) is part of the same panel. `panel` is
+        # clean surface between the content and the panel edge: lines inside the image whose every pixel matches the edge
+        # colour, plus the run of that colour outside it. Card shadows are content here, so sides read low where a card's
+        # shadow reaches the crop edge.
+        def same(p, q, tol=2): return max(abs(x - y) for x, y in zip(p, q)) <= tol
+        # Reference = the slice's own page surface as measured by crops.py (src/data/pawly-case-v2-media.json), not the first
+        # pixel: the edge row of a scaled image blends with whatever borders it, so it is skipped and counted in.
+        surf = SURFACE.get(m['src'])
+        def inside(side):
+            if surf is None:
+                return 0, None
+            # Lines are checked 10 px in from each end: the frame's 8 px radius clips the image corners to the plate colour.
+            x0, y0, x1, y1 = b['x'] + 10, b['y'] + 1, b['x'] + b['w'] - 10, b['y'] + b['h'] - 2
+            yy0, yy1 = b['y'] + 10, b['y'] + b['h'] - 10
+            if side in ('top', 'bottom'):
+                start, step, end = (y0, 1, y1) if side == 'top' else (y1, -1, y0)
+                n, y = 0, start
+                while (y - end) * step < 0 and all(same(im.getpixel((x, y)), surf, 3) for x in range(x0, x1, 2)): n += 1; y += step
+            else:
+                start, step, end = (b['x'] + 1, 1, b['x'] + b['w'] - 2) if side == 'left' else (b['x'] + b['w'] - 2, -1, b['x'] + 1)
+                n, x = 0, start
+                while (x - end) * step < 0 and all(same(im.getpixel((x, y)), surf, 3) for y in range(yy0, yy1, 2)): n += 1; x += step
+            return (n + 1 if n else 0), surf
+        def outside(side, ref_):
+            if ref_ is None:
+                return 0
+            dx, dy = {'top': (0, -1), 'bottom': (0, 1), 'left': (-1, 0), 'right': (1, 0)}[side]
+            x, y = {'top': (cx, b['y'] - 1), 'bottom': (cx, b['y'] + b['h']), 'left': (b['x'] - 1, cy), 'right': (b['x'] + b['w'], cy)}[side]
+            n = 0
+            while 0 <= x < im.width and 0 <= y < im.height and same(im.getpixel((x, y)), ref_): n += 1; x += dx; y += dy
+            return n
+        panel, off = {}, {}
+        for side in ('top', 'bottom', 'left', 'right'):
+            n, ref_ = inside(side)
+            off[side] = outside(side, ref_)
+            panel[side] = n + off[side]
+        # The plate field is walked from the panel's edge (the image edge when nothing continues it, as in BEFORE).
+        top, ref = walk(im, cx, b['y'] - 1 - off['top'], 0, -1)
+        bottom, _ = walk(im, cx, b['y'] + b['h'] + off['bottom'], 0, 1)
+        left, _ = walk(im, b['x'] - 1 - off['left'], cy, -1, 0)
+        right, _ = walk(im, b['x'] + b['w'] + off['right'], cy, 1, 0)
         rows.append({
             'page': f['name'], 'section': m['section'], 'src': m['src'], 'w': b['w'], 'h': b['h'],
             'scale': round(b['w'] / (natural / 2), 2) if natural and 'photo' not in m['src'] else None,
+            'panel': panel,
             'field': {'top': top, 'bottom': bottom, 'left': left, 'right': right}, 'surface': '#%02X%02X%02X' % ref if ref else None,
             'labelGap': b['y'] - (lab['y'] + lab['h']) if lab else None,
             'captionGap': capb['y'] - (b['y'] + b['h']) if capb else None,
