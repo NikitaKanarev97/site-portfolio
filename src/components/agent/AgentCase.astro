@@ -135,8 +135,6 @@ const policyShots = copy.sections.find(s => s.id === 'policy')!.shots!.map((s, i
   .agent-model__feedback { position: relative; display: grid; gap: var(--flow-pair); padding-block-start: var(--flow-text); }
   .agent-model__return { position: absolute; inset-inline: 0; inset-block-start: 0; block-size: var(--border-width); background: var(--diagram-arrow); }
   .agent-model__bracket { display: none; }
-  .agent-model [data-model-node]:not([data-entering]) { transition: opacity var(--motion-hover-duration) var(--motion-hover-ease); }
-  .agent-model.is-tracing [data-model-node]:not([data-lit]) { opacity: var(--diagram-dim); }
   .agent-model__note { max-inline-size: var(--measure-text); }
   .agent-investigation { display: grid; gap: var(--flow-block); }
   .agent-investigation__stage, .agent-investigation__text { display: grid; gap: var(--flow-text); align-content: start; }
