@@ -1,0 +1,61 @@
+zod        high      GHSA-mrhx-c7xc-m3w5 | Zod can exhaust memory while validating oversized constrained collections
+vite       high      GHSA-587h-7wmj-h5pm | launch-editor: `fs.existsSync()` existence check can be bypassed on Windows
+svgo       high      GHSA-w27v-7q3p-w38r | SVGO: removeScripts allows executable links through namespace and control-character bypasses
+vite       low       GHSA-9jrq-w75r-8gcw | Vite: Cross origin script execution through Vite custom middleware
+svgo       moderate  GHSA-4vpr-x523-8j87 | SVGO: removeScripts incompletely sanitizes executable HTML in SVG foreignObject elements
+vite       moderate  GHSA-698v-4r3x-3vcv | launch-editor: escapeCmdArgs() omits % escaping on Windows
+vite       moderate  GHSA-r825-w8mm-5pxw | launch-editor: Editor CLI flag misinterpretation causing arbitrary command execution for some editors
+vite       moderate  GHSA-rq7h-c2jc-7f22 | Vite: Files outside `server.fs.allow` could be served when project paths match system paths on non-Windows mac
+astro      critical  GHSA-26w7-cxv4-gfx2 | Astro: Remote code execution through AVIF image optimization
+astro      high      GHSA-2pvr-wf23-7pc7 | Astro: Host header SSRF in prerendered error page fetch
+astro      high      GHSA-8hv8-536x-4wqp | Astro: Reflected XSS via unescaped slot name
+sharp      high      GHSA-f88m-g3jw-g9cj | sharp inherited vulnerabilities in libvips: CVE-2026-33327, CVE-2026-33328, CVE-2026-35590, CVE-2026-35591
+sharp      high      GHSA-rgj7-g3m4-5g8c | sharp: Vulnerabilities in libheif: GHSA-g89c-p67h-r497 and GHSA-2jg2-4ch7-h545
+sharp      high      GHSA-wq5f-xc86-pv6w | sharp : Vulnerability in librsvg dependency CVE-2026-96889
+astro      low       GHSA-7pw4-f3q4-r2p2 | Astro: Cross-site scripting via unescaped transition:* directive values on hydrated islands
+astro      low       GHSA-xr5h-phrj-8vxv | Astro: Server island encrypted parameters vulnerable to cross-component replay
+astro      moderate  GHSA-376h-93r7-7g6f | Astro: Authorization bypass from missing path-segment boundary check when stripping the configured base
+astro      moderate  GHSA-4g3v-8h47-v7g6 | Astro: Reflected XSS via unescaped View Transition animation properties
+astro      moderate  GHSA-98hj-9722-w3j8 | Astro: Reflected/Stored XSS via unescaped <script>/<style> tag content in JSX/MDX rendering
+astro      moderate  GHSA-f48w-9m4c-m7f5 | Astro: XSS via unescaped spread attribute names in renderHTMLElement (incomplete fix for CVE-2026-54298)
+astro      moderate  GHSA-j687-52p2-xcff | Astro: XSS in define:vars via incomplete </script> tag sanitization
+astro      moderate  GHSA-jrpj-wcv7-9fh9 | Astro: XSS via Unescaped Attribute Names in Spread Props
+undici     high      GHSA-2m5v-pch6-74hx | undici vulnerable to TLS certificate validation bypass via dropped tls options in Agent
+undici     high      GHSA-4w7w-5xrc-9h26 | undici vulnerable to cache poisoning and cross-user disclosure via cross-origin redirects
+undici     high      GHSA-qrxm-fqhp-jwvm | undici vulnerable to Denial of Service via TLS 1.2 certificate-changing renegotiation
+undici     high      GHSA-rfgv-xxqx-mfg5 | undici vulnerable to Denial of Service via unrequested WebSocket subprotocol
+undici     high      GHSA-vp8m-p9jh-q5pm | undici vulnerable to cross-origin cache poisoning via missing origin isolation in interceptors
+undici     high      GHSA-w293-vg96-wgc3 | undici vulnerable to TLS certificate validation bypass via dropped connect options in BalancedPool
+undici     high      GHSA-xjj6-f33q-929c | undici vulnerable to Denial of Service via unhandled error on excessive content-encodings
+undici     low       GHSA-2gqq-gqf2-x968 | undici vulnerable to response truncation via oversized chunked responses in the dump interceptor
+undici     low       GHSA-8436-99hf-9mmv | undici vulnerable to caching and replay of unsafe HTTP method responses
+undici     low       GHSA-r53p-7pc4-xj5r | undici vulnerable to downstream response splitting via retry interceptor
+undici     moderate  GHSA-2jfj-6hjv-fm6j | undici vulnerable to cross-user cookie disclosure via Set-Cookie caching in shared caches
+undici     moderate  GHSA-3wwx-pv8p-q78v | undici vulnerable to Denial of Service via unhandled error in WebSocket permessage-deflate decompression
+undici     moderate  GHSA-3xpg-4rpp-hhhm | undici vulnerable to Denial of Service via unbounded decompression of compressed responses
+undici     moderate  GHSA-4qv8-2p9j-2685 | undici vulnerable to Denial of Service via unbounded memory in the EventSource parser
+undici     moderate  GHSA-55wc-3pg8-jfw6 | undici vulnerable to Denial of Service via unhandled exception in the decompress interceptor
+undici     moderate  GHSA-9fm3-97px-rjf6 | undici WebSocket client vulnerable to Denial of Service via unbounded automatic PONG buffering
+undici     moderate  GHSA-f72v-6w45-q472 | undici vulnerable to Subresource Integrity bypass via non-lowercase algorithm tokens
+undici     moderate  GHSA-pmjh-fq2x-6v4x | undici vulnerable to Denial of Service via orphaned RetryHandler response body
+fflate     moderate  GHSA-px8p-9vwx-vf98 | fflate unzipSync can enter an infinite loop when parsing malformed ZIP64 archives
+undici     moderate  GHSA-rx4f-c7p8-82vq | undici vulnerable to Denial of Service via WebSocketStream unclean close
+satori     moderate  GHSA-wx4j-mvgx-mqwp | Satori-generated SVG has improper escaping
+js-yaml    high      GHSA-2883-xcg3-v3hh | js-yaml: maxTotalMergeKeys does not limit CPU use for empty merge sources
+devalue    high      GHSA-j22f-vq7h-c4qm | devalue: `stringify`/`uneval` serialize shared memory
+devalue    high      GHSA-mcm9-63f2-9j32 | devalue: Repeated primitive strings cause quadratic expansion in uneval
+devalue    high      GHSA-r9w8-h9r3-54w4 | devalue: Custom ArrayBuffer revivers can bypass typed-array allocation validation
+devalue    high      GHSA-x5rw-q4pp-hg5g | devalue: stringifyAsync can cause an unhandled rejection despite a caught returned promise
+esbuild    low       GHSA-g7r4-m6w7-qqqr | esbuild allows arbitrary file read when running the development server on Windows
+devalue    low       GHSA-wf3x-273g-mvxv | devalue: Sparse arrays emitted by uneval cause eager allocation when evaluated
+devalue    moderate  GHSA-4q55-j62x-fr9h | devalue: Malformed null-prototype object keys bypass __proto__ rejection via property-key coercion
+devalue    moderate  GHSA-hx4r-w6wj-j8fg | devalue: Residual sparse-array CPU amplification in uneval
+fast-uri   high      GHSA-58mr-gqgx-xq4g | fast-uri vulnerable to host confusion via an unclosed bracket in the URI authority
+fast-uri   high      GHSA-qw65-cvwx-89v3 | fast-uri vulnerable to authority injection via an unvalidated port in serialize
+fast-uri   low       GHSA-333x-w4r6-6crp | fast-uri vulnerable to scheme injection via an unescaped first-segment colon in suffix references
+fast-uri   low       GHSA-xhq7-xmqj-769h | fast-uri vulnerable to improper path equivalence in relative reference normalization
+fast-uri   moderate  GHSA-hrr3-gc8f-f4qj | fast-uri vulnerable to inconsistent host case normalization via percent-encoded octets
+fast-uri   moderate  GHSA-w74x-v6f9-j3xg | fast-uri vulnerable to URI scheme spoofing via percent-encoded scheme decoding
+fast-uri   moderate  GHSA-wjr9-j795-jxcr | fast-uri vulnerable to host confusion via unchecked WHATWG host canonicalization
+smol-toml  moderate  GHSA-r4xh-jqrq-34v2 | smol-toml: Quadratic-time parse() from parseKey rescanning to end of document on each key line
+source-map-js high      GHSA-68fv-2mgg-jv7q | source-map-js allows event-loop denial of service through indexed source-map section offsets

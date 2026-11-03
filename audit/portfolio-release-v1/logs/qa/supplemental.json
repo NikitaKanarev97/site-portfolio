@@ -1,0 +1,1845 @@
+{
+  "checks": [
+    {
+      "name": "short /",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "short /about/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "short /work/agent-ops-console/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "short /work/partner-portal/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "short /work/learn/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "short /work/vet-clinic/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "short /work/pawly/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "short /ru/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "short /ru/about/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "short /ru/work/agent-ops-console/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "short /ru/work/partner-portal/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "short /ru/work/learn/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "short /ru/work/vet-clinic/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "short /ru/work/pawly/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "200pct-reflow /",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "200pct-reflow /about/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "200pct-reflow /work/agent-ops-console/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "200pct-reflow /work/partner-portal/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "200pct-reflow /work/learn/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "200pct-reflow /work/vet-clinic/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "200pct-reflow /work/pawly/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "200pct-reflow /ru/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "200pct-reflow /ru/about/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "200pct-reflow /ru/work/agent-ops-console/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "200pct-reflow /ru/work/partner-portal/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "200pct-reflow /ru/work/learn/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "200pct-reflow /ru/work/vet-clinic/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": "200pct-reflow /ru/work/pawly/",
+      "pass": true,
+      "data": {
+        "overflow": 0,
+        "heading": []
+      }
+    },
+    {
+      "name": " preference rebuild no duplicate state",
+      "pass": true
+    },
+    {
+      "name": " resize 1280x900",
+      "pass": true
+    },
+    {
+      "name": " resize 768x1024",
+      "pass": true
+    },
+    {
+      "name": " resize 1024x600",
+      "pass": true
+    },
+    {
+      "name": " resize 1440x900",
+      "pass": true
+    },
+    {
+      "name": " rapid navigation endpoint",
+      "pass": true,
+      "data": {
+        "url": "http://127.0.0.1:4471/"
+      }
+    },
+    {
+      "name": " preference during navigation visible",
+      "pass": true
+    },
+    {
+      "name": " navigation from open zoom unlocks",
+      "pass": true
+    },
+    {
+      "name": "/ru preference rebuild no duplicate state",
+      "pass": true
+    },
+    {
+      "name": "/ru resize 1280x900",
+      "pass": true
+    },
+    {
+      "name": "/ru resize 768x1024",
+      "pass": true
+    },
+    {
+      "name": "/ru resize 1024x600",
+      "pass": true
+    },
+    {
+      "name": "/ru resize 1440x900",
+      "pass": true
+    },
+    {
+      "name": "/ru rapid navigation endpoint",
+      "pass": true,
+      "data": {
+        "url": "http://127.0.0.1:4471/ru/"
+      }
+    },
+    {
+      "name": "/ru preference during navigation visible",
+      "pass": true
+    },
+    {
+      "name": "/ru navigation from open zoom unlocks",
+      "pass": true
+    },
+    {
+      "name": "background tab return visible",
+      "pass": true
+    },
+    {
+      "name": "404 uses error status",
+      "pass": true,
+      "data": {
+        "status": 404,
+        "title": "Page not found — Nikita Kanarev"
+      }
+    },
+    {
+      "name": "internal /",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /about",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /ru/",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /cv.pdf",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "application/pdf"
+      }
+    },
+    {
+      "name": "CV PDF /cv.pdf",
+      "pass": true,
+      "data": {
+        "bytes": 391167
+      }
+    },
+    {
+      "name": "internal /work/agent-ops-console",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /work/partner-portal",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /work/learn",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /work/learn/",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /work/vet-clinic",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /work/pawly",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /about/",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /ru/about/",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /work/agent-ops-console/",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /ru/work/agent-ops-console/",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/en/approval-task-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/en/action-approvals-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/en/action-approvals-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/en/review-queue-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/en/run-detail-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/en/run-detail-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/en/policy-boundary-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/en/policy-editor-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/en/policy-editor-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/en/policy-rollout-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/en/policy-version-diff-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/en/policy-version-diff-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/premium-v3/en/autonomy-states-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/en/autonomy-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/en/autonomy-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/en/quality-dashboard-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /work/partner-portal/",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /ru/work/partner-portal/",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /media/case-dssl/legacy-dashboard.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/partner-portal/v3/legacy-cart-alternative.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /ru/work/learn/",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/composition/en/home-wide.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/en/answer-detail.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn/before-catalog.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/en/reference.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/en/path.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/en/completion-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/en/learner.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/en/reader-history.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/en/failed.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/en/review-detail.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/en/passed-score.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /work/vet-clinic/",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /ru/work/vet-clinic/",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/visit-workspace-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/visit-full-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/visit-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v3/en/queue-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v3/en/queue-full-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v3/en/queue-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/private-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v3/en/trace-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v3/en/trace-full-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v3/en/trace-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/dose-review-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/dose-full-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/dose-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/invoice-document-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/invoice-full-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/invoice-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v3/en/publish-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/discharge-full-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/discharge-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/blocked-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/blocked-full-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/blocked-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/owner-overview-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/owner-full-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/owner-overview-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/owner-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/missing-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/en/missing-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /work/pawly/",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /ru/work/pawly/",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/hero-status-en.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/match-list-en.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/match-profile-en.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/match-review-en.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/role-owner-en.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/role-walker-en.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/branch-reserve-en.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/branch-reserve-action-en.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/branch-failed-en.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/branch-failed-action-en.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/proof-selected-en.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/proof-confirmed-en.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/proof-report-en.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/settle-payment-en.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/settle-earnings-en.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /ru/about",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /cv-ru.pdf",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "application/pdf"
+      }
+    },
+    {
+      "name": "CV PDF /cv-ru.pdf",
+      "pass": true,
+      "data": {
+        "bytes": 482408
+      }
+    },
+    {
+      "name": "internal /ru/work/agent-ops-console",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /ru/work/partner-portal",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /ru/work/learn",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /ru/work/vet-clinic",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /ru/work/pawly",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "text/html"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/ru/approval-task-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/ru/action-approvals-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/ru/action-approvals-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/ru/review-queue-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/ru/run-detail-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/ru/run-detail-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/ru/policy-boundary-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/ru/policy-editor-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/ru/policy-editor-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/ru/policy-rollout-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/ru/policy-version-diff-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/ru/policy-version-diff-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/premium-v3/ru/autonomy-states-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/ru/autonomy-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/ru/autonomy-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/rebuild/agent-ops/v2/ru/quality-dashboard-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/composition/ru/home-wide.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/ru/answer-detail.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/ru/reference.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/ru/path.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/ru/completion-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/ru/learner.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/ru/reader-history.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/ru/failed.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/ru/review-detail.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-learn-v2/current/ru/passed-score.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/visit-workspace-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/visit-full-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/visit-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v3/ru/queue-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v3/ru/queue-full-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v3/ru/queue-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/private-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v3/ru/trace-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v3/ru/trace-full-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v3/ru/trace-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/dose-review-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/dose-full-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/dose-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/invoice-document-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/invoice-full-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/invoice-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v3/ru/publish-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/discharge-full-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/discharge-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/blocked-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/blocked-full-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/blocked-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/owner-overview-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/owner-full-desktop.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/owner-overview-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/owner-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/missing-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/case-vet-v2/ru/missing-full-mobile.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/hero-status-ru.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/match-list-ru.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/match-profile-ru.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/match-review-ru.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/role-owner-ru.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/role-walker-ru.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/branch-reserve-ru.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/branch-reserve-action-ru.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/branch-failed-ru.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/branch-failed-action-ru.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/proof-selected-ru.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/proof-confirmed-ru.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/proof-report-ru.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/settle-payment-ru.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "internal /media/pawly-case-v2/settle-earnings-ru.webp",
+      "pass": true,
+      "data": {
+        "status": 200,
+        "type": "image/webp"
+      }
+    },
+    {
+      "name": "core interactions runtime errors",
+      "pass": true,
+      "data": []
+    }
+  ],
+  "issues": [],
+  "external": [
+    {
+      "href": "https://common---digital-design-studio.webflow.io/",
+      "text": "MOTION DESIGN\nBRAND DESIGN\nPRODUCT DESIGN\nE-COMMERCE\nSTRATEGY\nTECHNOLOGY\nCREATIVE DIRECTION\nART DIRECTION\nNAMING\nA digital design studio driven by research & strategy\nWrite to us\nWHAT WE DO\nAGENCY\n\nOur studio combines strategy and creativity to ensur",
+      "status": 200,
+      "destination": "https://common---digital-design-studio.webflow.io/",
+      "title": "Common Studio — Digital Design Studio"
+    },
+    {
+      "href": "https://synk-battle-prod.webflow.io/",
+      "text": "Studio\nCollection\nContact\nSucu cactus lamp green – Postmodern Flötotto\nSUCU cactus lamps designed by Art Nowo,\nGermany 1990s.\nSUCU CACTUS LAMP GREEN\nSUCU CACTUS LAMP GREEN\nSUCU CACTUS LAMP GREEN\nSUCU CACTUS LAMP GREEN\nSUCU CACTUS LAMP GREEN\nSUCU CACT",
+      "status": 200,
+      "destination": "https://synk-battle-prod.webflow.io/",
+      "title": "Synk-battle"
+    },
+    {
+      "href": "https://scrib3-prod.webflow.io/",
+      "text": "SERVICES\nPRESS\nCASES\nTEAM\nCAREERS\n\n+ A CRYPTO MARKETING STUDIO\n\nWEB 3\nMARKETING\nFOR\nWEB 3\nBUILDERS\n\nWE'RE BUILDING AN\nON-CHAIN FUTURE\n\n( INTRODUCTION )\n\nWE'RE A CRYPTO NATIVE TEAM. OUR WORKGUIDES AND EMPOWERS THOSE PIONEERINGPERMISSIONLESS TECHNOLOGY",
+      "status": 200,
+      "destination": "https://scrib3-prod.webflow.io/",
+      "title": "Scrib3"
+    },
+    {
+      "href": "https://bloomblex-prod.webflow.io/",
+      "text": "About\nServices\nCases\nBlog\nContact\nStart for free\nLegal made\nsimple 5 minutes,\nno lawyers\n\nAuto-generated claims, complaints, and lawsuits tailored to your case. Ready-to-print PDFs and step-by-step instructions, 100%\nby the book.\n\n\nStart for free\nWho",
+      "status": 200,
+      "destination": "https://bloomblex-prod.webflow.io/",
+      "title": "Bloomblex"
+    },
+    {
+      "href": "https://www.linkedin.com/in/nikita-kanarev/",
+      "text": "LinkedIn серьезно относится к обеспечению конфиденциальности участников\n\nLinkedIn и третьи стороны используют обязательные и необязательные файлы cookie для предоставления, обеспечения безопасности, проведения анализа и улучшения услуг LinkedIn, а та",
+      "status": 999,
+      "destination": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFSoyL_fBCLQwAAAaGhxAqwBjug8hAeq0hn9Bejpfs8s_0cS0iKxNXRp_cmLBSw_817rEhTp8LJP8TlBSSwIfH4CVuPH4h2htN40FDbI3SWC5e1zL3gWUdFLLXP021BjjqdpUY=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fnikita-kanarev",
+      "title": "Зарегистрироваться | LinkedIn"
+    },
+    {
+      "href": "https://agent-ops-console.vercel.app/",
+      "text": "AGENT OPS CONSOLE · APPLICATION · 19 SCREENS\n\nProduct screens\n\nEvery screen runs on one mock data layer. Decisions taken on one screen show up on the others, and a reload starts a fresh shift.\n\nDesign system\nReset demo data\n19 screens\n44 DS component",
+      "status": 200,
+      "destination": "https://agent-ops-console.vercel.app/",
+      "title": "Agent Ops Console — Design System"
+    },
+    {
+      "href": "https://b2b-partner-portal-five.vercel.app/",
+      "text": "Partner Portal\nDashboard\nCatalog\nCart\nOrders\nWORKSPACE\nTax ID\n7705123456\nCart\nEmpty\nReservation\nNone held\nSign out\nAlex Kim\nProcurement manager\nVector Integration LLC\n3\nAK\nAlex Kim\nProcurement manager\nDashboard\nNew specification\nReview lines\nReview s",
+      "status": 200,
+      "destination": "https://b2b-partner-portal-five.vercel.app/resolution-center",
+      "title": "B2B DSSL — design system base"
+    },
+    {
+      "href": "https://kanarev.com/prototypes/learn/home?lang=en",
+      "text": "Sign in\nI’m commissioning a site\n\nA reference library for TRASSIR and DSSL equipment on site, plus learning programs with assessments.\n\nGo straight to the answer\nThe camera does not appear in TRASSIR\nThe archive does not reach the required retention ",
+      "status": 200,
+      "destination": "https://kanarev.com/prototypes/learn/home?lang=en",
+      "title": "TRASSIR Learn"
+    },
+    {
+      "href": "https://kanarev.com/prototypes/learn-landing/en/",
+      "text": "Skip to content\nProgram\nHow it works\nOutcome\nOpen the platform\n↗\nPRACTICAL KNOWLEDGE / TRASSIR\nKnow how.\nMake it work.\n\nFrom camera connection to site handover.\nLearning for engineers who want to\nunderstand and put it into practice.\n\nOpen the guide\n↗",
+      "status": 200,
+      "destination": "https://kanarev.com/prototypes/learn-landing/en/",
+      "title": "TRASSIR Learn — know how. Make it work."
+    },
+    {
+      "href": "https://veterinary-clinic-gules.vercel.app/app/visit-quick-trace?patient=marsik",
+      "text": "← All screens\nDemo data · Default\nMarsik\ncat · mixed breed · 6 years\nStarted 09:04\nSaved at 09:07\nToday's visits\nMarsik\nQuick trace\n\notitis follow-up · Owner Irina Sergeevna Kuznetsova\n\nCalculation demo only. The medication, dose and frequency are il",
+      "status": 200,
+      "destination": "https://veterinary-clinic-gules.vercel.app/app/visit-quick-trace?patient=marsik",
+      "title": "Vet Clinic OS · Design System"
+    },
+    {
+      "href": "https://veterinary-clinic-gules.vercel.app/app/discharge-preview?patient=marsik",
+      "text": "← All screens\nDemo data · Default\nLesnaya Clinic\nSaved\nA. I. Sokolova · veterinarian\nMarsik\ncat · mixed breed · 6 years\nStarted 09:04\nCurrent visit\nToday's visits\nVisit record\nDischarge preview\nAugust 13, 2026\nReview before publishing\n\nCheck the owne",
+      "status": 200,
+      "destination": "https://veterinary-clinic-gules.vercel.app/app/discharge-preview?patient=marsik",
+      "title": "Vet Clinic OS · Design System"
+    },
+    {
+      "href": "https://veterinary-clinic-gules.vercel.app/app/dose-calculator?patient=marsik",
+      "text": "← All screens\nDemo data · Default\nLesnaya Clinic\nVisit data saved\nA. I. Sokolova · veterinarian\nMarsik\ncat · mixed breed · 6 years\nStarted 09:04\nCurrent visit\nToday's visits\nMarsik\nBack to visit\nDose calculator\n\nCalculate a single dose from this visi",
+      "status": 200,
+      "destination": "https://veterinary-clinic-gules.vercel.app/app/dose-calculator?patient=marsik",
+      "title": "Vet Clinic OS · Design System"
+    },
+    {
+      "href": "https://veterinary-clinic-gules.vercel.app/",
+      "text": "VET CLINIC OS · APPLICATION · 13 SCREENS\n\nProduct screens\n\nOne clinic day on demo data: the veterinarian’s visit, the administrator’s schedule and invoice, and what the owner receives. Changes stay in this browser.\n\nStart with Today’s visits\n\nPatient",
+      "status": 200,
+      "destination": "https://veterinary-clinic-gules.vercel.app/",
+      "title": "Vet Clinic OS · Design System"
+    },
+    {
+      "href": "https://pawly-fawn.vercel.app/app",
+      "text": "PAWLY · APPLICATION · 17 SCREENS\n\nProduct screens\n\nInteractive demo screens built with the Pawly design system. Open a frame to follow the booking.\n\nDesign system\nReset demo data\nBaikal\n\n12 Malaya Bronnaya St\n\nWalk in progress\n22 August\nBaikal is out",
+      "status": 200,
+      "destination": "https://pawly-fawn.vercel.app/app",
+      "title": "Pawly — application screens"
+    },
+    {
+      "href": "https://agent-ops-console.vercel.app/ru",
+      "text": "AGENT OPS CONSOLE · ПРИЛОЖЕНИЕ · 19 ЭКРАНОВ\n\nЭкраны продукта\n\nВсе экраны работают на одном слое мок-данных. Решения на одном экране отражаются на остальных, а перезагрузка начинает новую смену.\n\nДизайн-система\nСбросить демо-данные\n19 экранов\n44 компо",
+      "status": 200,
+      "destination": "https://agent-ops-console.vercel.app/ru",
+      "title": "Agent Ops Console — Design System"
+    },
+    {
+      "href": "https://b2b-partner-portal-five.vercel.app/ru",
+      "text": "Partner Portal\nДашборд\nКаталог\nКорзина\nЗаказы\nРАБОЧЕЕ МЕСТО\nИНН\n7705123456\nКорзина\nПусто\nРезерв\nРезерв не создан\nВыйти\nАлексей Ким\nМенеджер по закупкам\nООО «Вектор Интеграция»\n3\nAK\nАлексей Ким\nМенеджер по закупкам\nДашборд\nНовая спецификация\nРазобрать",
+      "status": 200,
+      "destination": "https://b2b-partner-portal-five.vercel.app/ru/resolution-center",
+      "title": "B2B DSSL — design system base"
+    },
+    {
+      "href": "https://kanarev.com/prototypes/learn/home?lang=ru",
+      "text": "Войти\nНастраиваю объект\n\nСправочник по TRASSIR и оборудованию DSSL для работы на объекте и программы подготовки с зачётом.\n\nСразу к ответу\nКамера не появляется в TRASSIR\nАрхив не набирает глубину\nОператоры видят не то, что должны\nУчебная схема по мат",
+      "status": 200,
+      "destination": "https://kanarev.com/prototypes/learn/home?lang=ru",
+      "title": "TRASSIR Learn"
+    },
+    {
+      "href": "https://kanarev.com/prototypes/learn-landing/",
+      "text": "Перейти к содержимому\nПрограмма\nКак это работает\nРезультат\nОткрыть платформу\n↗\nПРАКТИЧЕСКИЕ ЗНАНИЯ / TRASSIR\nЗнать, как.\nУметь сделать.\n\nОт подключения камеры до сдачи объекта.\nОбучение для инженеров, которым важно\nразобраться и применить.\n\nОткрыть м",
+      "status": 200,
+      "destination": "https://kanarev.com/prototypes/learn-landing/",
+      "title": "TRASSIR Learn — знать, как. Уметь сделать."
+    },
+    {
+      "href": "https://veterinary-clinic-gules.vercel.app/ru/app/visit-quick-trace?patient=marsik",
+      "text": "← Все экраны\nДемо-данные · обычные\nМарсик\nкот · метис · 6 лет\nНачато 09:04\nСохранено в 09:07\nСегодняшние визиты\nМарсик\nКороткий след\n\nконтроль отита · Владелец Ирина Сергеевна Кузнецова\n\nТолько демонстрация расчёта. Препарат, доза и кратность условны",
+      "status": 200,
+      "destination": "https://veterinary-clinic-gules.vercel.app/ru/app/visit-quick-trace?patient=marsik",
+      "title": "Vet Clinic OS · Design System"
+    },
+    {
+      "href": "https://veterinary-clinic-gules.vercel.app/ru/app/discharge-preview?patient=marsik",
+      "text": "← Все экраны\nДемо-данные · обычные\nКлиника «Лесная»\nСохранено\nА. И. Соколова · ветеринарный врач\nМарсик\nкот · метис · 6 лет\nНачато 09:04\nТекущий визит\nСегодняшние визиты\nКарта визита\nПредпросмотр выписки\n13 августа, 2026\nПроверка перед публикацией\n\nП",
+      "status": 200,
+      "destination": "https://veterinary-clinic-gules.vercel.app/ru/app/discharge-preview?patient=marsik",
+      "title": "Vet Clinic OS · Design System"
+    },
+    {
+      "href": "https://veterinary-clinic-gules.vercel.app/ru/app/dose-calculator?patient=marsik",
+      "text": "← Все экраны\nДемо-данные · обычные\nКлиника «Лесная»\nДанные визита сохранены\nА. И. Соколова · ветеринарный врач\nМарсик\nкот · метис · 6 лет\nНачато 09:04\nТекущий визит\nСегодняшние визиты\nМарсик\nВернуться к визиту\nКалькулятор дозы\n\nРассчитайте разовую до",
+      "status": 200,
+      "destination": "https://veterinary-clinic-gules.vercel.app/ru/app/dose-calculator?patient=marsik",
+      "title": "Vet Clinic OS · Design System"
+    },
+    {
+      "href": "https://veterinary-clinic-gules.vercel.app/ru/",
+      "text": "ОПЕРАЦИОННАЯ СИСТЕМА ВЕТКЛИНИКИ · ПРИЛОЖЕНИЕ · 13 ЭКРАНОВ\n\nЭкраны продукта\n\nОдин день клиники на демо-данных: приём врача, расписание и счёт администратора и то, что получает владелец. Изменения хранятся в этом браузере.\n\nНачать с сегодняшних визитов",
+      "status": 200,
+      "destination": "https://veterinary-clinic-gules.vercel.app/ru/",
+      "title": "Vet Clinic OS · Design System"
+    },
+    {
+      "href": "https://pawly-fawn.vercel.app/ru/app",
+      "text": "PAWLY · ПРИЛОЖЕНИЕ · 17 ЭКРАНОВ\n\nЭкраны продукта\n\nИнтерактивные демоэкраны на дизайн-системе Pawly. Откройте экран, чтобы пройти сценарий заказа.\n\nДизайн-система\nСбросить демо-данные",
+      "status": 200,
+      "destination": "https://pawly-fawn.vercel.app/ru/app",
+      "title": "Pawly — application screens"
+    }
+  ]
+}

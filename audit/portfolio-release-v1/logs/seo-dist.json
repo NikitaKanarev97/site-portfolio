@@ -1,0 +1,1734 @@
+{
+  "dist": "dist",
+  "htmlFiles": 183,
+  "publicRoutes": 14,
+  "robots": "User-agent: *\nAllow: /\nDisallow: /kit\nDisallow: /preview/\n\nSitemap: https://kanarev.com/sitemap.xml\n",
+  "sitemapUrls": [
+    "https://kanarev.com/",
+    "https://kanarev.com/ru/",
+    "https://kanarev.com/about/",
+    "https://kanarev.com/ru/about/",
+    "https://kanarev.com/work/agent-ops-console/",
+    "https://kanarev.com/ru/work/agent-ops-console/",
+    "https://kanarev.com/work/partner-portal/",
+    "https://kanarev.com/ru/work/partner-portal/",
+    "https://kanarev.com/work/learn/",
+    "https://kanarev.com/ru/work/learn/",
+    "https://kanarev.com/work/vet-clinic/",
+    "https://kanarev.com/ru/work/vet-clinic/",
+    "https://kanarev.com/work/pawly/",
+    "https://kanarev.com/ru/work/pawly/"
+  ],
+  "problems": [
+    [
+      "/prototypes/learn/assessment/confirm/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/assessment/failed/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/assessment/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/assessment/intro/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/assessment/intro/not-verified/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/assessment/result/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/assessment/result-failed/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/catalog/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/catalog/zero/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/certificate/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/history/empty/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/history/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/home/explore/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/home/handover/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/home/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/home/project/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/home/symptom/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/login/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/login/known/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/abandoned-object/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/analytics-modules/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/archive-depth/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/archive-not-writing/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/bandwidth-check/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/camera-count/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/camera-ip-change/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/camera-lineup/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/camera-manual-add/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/disk-capacity/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/disk-layout/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/duostation-intro/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/export-fragment/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/firmware-update/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/first-boot/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/handover-access/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/handover-check/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/handover-docs/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/license-scheme/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/motion-detectors/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/onvif-compat/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/onvif-not-found/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/onvif-profiles/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/operator-briefing/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/operator-roles/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/partner-only/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/power-link-check/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/ptz-tracking/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/record-redundancy/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/rtsp-connect/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/server-choice/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/material/tender-spec/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/my/empty/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/my/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/already-viewed/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/analitika/0/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/analitika/1/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/analitika/2/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/analitika/3/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/analitika/4/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/analitika/5/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/arhiv/0/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/arhiv/1/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/arhiv/2/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/arhiv/3/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/arhiv/4/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/arhiv/5/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/linejka/0/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/linejka/1/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/linejka/2/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/linejka/3/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/linejka/4/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/linejka/5/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/linejka/6/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/otkazy/0/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/otkazy/1/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/otkazy/2/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/otkazy/3/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/otkazy/4/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/otkazy/5/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/proekt/0/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/proekt/1/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/proekt/2/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/proekt/3/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/proekt/4/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/proekt/5/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/proekt/6/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/proekt/7/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/proekt/8/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/puskonaladka/0/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/puskonaladka/1/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/puskonaladka/10/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/puskonaladka/2/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/puskonaladka/3/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/puskonaladka/4/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/puskonaladka/5/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/puskonaladka/6/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/puskonaladka/7/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/puskonaladka/8/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/puskonaladka/9/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/sdacha/0/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/sdacha/1/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/sdacha/2/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/sdacha/3/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/sdacha/4/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/sdacha/5/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/player/sdacha/6/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/practice/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/practice/wrong/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/search/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/search/zero/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/showcase/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/trajectory/analitika/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/trajectory/arhiv/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/trajectory/gate/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/trajectory/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/trajectory/linejka/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/trajectory/otkazy/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/trajectory/proekt/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/trajectory/puskonaladka/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/trajectory/sdacha/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/trajectory/started/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/verify/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/verify/inn-error/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/verify/rejected/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn/verify/submitted/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn-landing/certificate/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn-landing/en/certificate/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn-landing/en/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn-landing/en/materials/access/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn-landing/en/materials/archive/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn-landing/en/materials/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn-landing/en/materials/onvif/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn-landing/en/program/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn-landing/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn-landing/materials/access/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn-landing/materials/archive/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn-landing/materials/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn-landing/materials/onvif/",
+      "non-public route is indexable (no robots noindex)"
+    ],
+    [
+      "/prototypes/learn-landing/program/",
+      "non-public route is indexable (no robots noindex)"
+    ]
+  ],
+  "pages": [
+    {
+      "route": "/about/",
+      "lang": "en",
+      "title": "Nikita Kanarev — How I work",
+      "description": "How I work inside constraints I did not set, what I do with the parts that did not work, and where AI sits in the process. Work authorization in full.",
+      "robots": null,
+      "canonical": "https://kanarev.com/about/",
+      "hreflang": [
+        [
+          "en",
+          "https://kanarev.com/about/"
+        ],
+        [
+          "ru",
+          "https://kanarev.com/ru/about/"
+        ],
+        [
+          "x-default",
+          "https://kanarev.com/about/"
+        ]
+      ],
+      "og": {
+        "title": "Nikita Kanarev — How I work",
+        "description": "How I work inside constraints I did not set, what I do with the parts that did not work, and where AI sits in the process. Work authorization in full.",
+        "image": "https://kanarev.com/og/about-onest.png",
+        "url": "https://kanarev.com/about/",
+        "locale": "en_US",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image"
+      }
+    },
+    {
+      "route": "/",
+      "lang": "en",
+      "title": "Nikita Kanarev — Product Designer",
+      "description": "Product designer for B2B systems: AI oversight, procurement and shared workflows. Based in Armenia, available remotely.",
+      "robots": null,
+      "canonical": "https://kanarev.com/",
+      "hreflang": [
+        [
+          "en",
+          "https://kanarev.com/"
+        ],
+        [
+          "ru",
+          "https://kanarev.com/ru/"
+        ],
+        [
+          "x-default",
+          "https://kanarev.com/"
+        ]
+      ],
+      "og": {
+        "title": "Nikita Kanarev — Product Designer",
+        "description": "Product designer for B2B systems: AI oversight, procurement and shared workflows. Based in Armenia, available remotely.",
+        "image": "https://kanarev.com/og/default-onest.png",
+        "url": "https://kanarev.com/",
+        "locale": "en_US",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image"
+      }
+    },
+    {
+      "route": "/ru/about/",
+      "lang": "ru",
+      "title": "Никита Канарев — как я работаю",
+      "description": "Как я работаю внутри заданных ограничений, что делаю с неудачными решениями и где в процессе находится ИИ.",
+      "robots": null,
+      "canonical": "https://kanarev.com/ru/about/",
+      "hreflang": [
+        [
+          "en",
+          "https://kanarev.com/about/"
+        ],
+        [
+          "ru",
+          "https://kanarev.com/ru/about/"
+        ],
+        [
+          "x-default",
+          "https://kanarev.com/about/"
+        ]
+      ],
+      "og": {
+        "title": "Никита Канарев — как я работаю",
+        "description": "Как я работаю внутри заданных ограничений, что делаю с неудачными решениями и где в процессе находится ИИ.",
+        "image": "https://kanarev.com/og/about-ru-onest.png",
+        "url": "https://kanarev.com/ru/about/",
+        "locale": "ru_RU",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image"
+      }
+    },
+    {
+      "route": "/ru/",
+      "lang": "ru",
+      "title": "Никита Канарев — продуктовый дизайнер",
+      "description": "Продуктовый дизайнер B2B-систем: контроль ИИ, закупки и процессы нескольких ролей.",
+      "robots": null,
+      "canonical": "https://kanarev.com/ru/",
+      "hreflang": [
+        [
+          "en",
+          "https://kanarev.com/"
+        ],
+        [
+          "ru",
+          "https://kanarev.com/ru/"
+        ],
+        [
+          "x-default",
+          "https://kanarev.com/"
+        ]
+      ],
+      "og": {
+        "title": "Никита Канарев — продуктовый дизайнер",
+        "description": "Продуктовый дизайнер B2B-систем: контроль ИИ, закупки и процессы нескольких ролей.",
+        "image": "https://kanarev.com/og/default-ru-onest.png",
+        "url": "https://kanarev.com/ru/",
+        "locale": "ru_RU",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image"
+      }
+    },
+    {
+      "route": "/ru/work/agent-ops-console/",
+      "lang": "ru",
+      "title": "Agent Ops Console — контроль решений ИИ с реальными последствиями",
+      "description": "Продуктовый дизайн консоли контроля ИИ: очередь по риску, согласование финансовых действий, проверка версий политик и автономность по доказательствам. Прототип проверен с пользователями и принят заказчиком.",
+      "robots": null,
+      "canonical": "https://kanarev.com/ru/work/agent-ops-console/",
+      "hreflang": [
+        [
+          "en",
+          "https://kanarev.com/work/agent-ops-console/"
+        ],
+        [
+          "ru",
+          "https://kanarev.com/ru/work/agent-ops-console/"
+        ],
+        [
+          "x-default",
+          "https://kanarev.com/work/agent-ops-console/"
+        ]
+      ],
+      "og": {
+        "title": "Agent Ops Console — контроль решений ИИ с реальными последствиями",
+        "description": "Продуктовый дизайн консоли контроля ИИ: очередь по риску, согласование финансовых действий, проверка версий политик и автономность по доказательствам. Прототип проверен с пользователями и принят заказчиком.",
+        "image": "https://kanarev.com/og/work-agent-ops-console-v2-ru-onest.png",
+        "url": "https://kanarev.com/ru/work/agent-ops-console/",
+        "locale": "ru_RU",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image"
+      }
+    },
+    {
+      "route": "/ru/work/learn/",
+      "lang": "ru",
+      "title": "TRASSIR Learn — одна база знаний, два пути к результату",
+      "description": "Продуктовый дизайн справочника и последовательного обучения: общие материалы, явный прогресс и понятный итог зачёта. Новая работа над проектом после DSSL / TRASSIR.",
+      "robots": null,
+      "canonical": "https://kanarev.com/ru/work/learn/",
+      "hreflang": [
+        [
+          "en",
+          "https://kanarev.com/work/learn/"
+        ],
+        [
+          "ru",
+          "https://kanarev.com/ru/work/learn/"
+        ],
+        [
+          "x-default",
+          "https://kanarev.com/work/learn/"
+        ]
+      ],
+      "og": {
+        "title": "TRASSIR Learn — одна база знаний, два пути к результату",
+        "description": "Продуктовый дизайн справочника и последовательного обучения: общие материалы, явный прогресс и понятный итог зачёта. Новая работа над проектом после DSSL / TRASSIR.",
+        "image": "https://kanarev.com/og/work-learn-ru-onest.png",
+        "url": "https://kanarev.com/ru/work/learn/",
+        "locale": "ru_RU",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image"
+      }
+    },
+    {
+      "route": "/ru/work/partner-portal/",
+      "lang": "ru",
+      "title": "B2B-закупка DSSL",
+      "description": "Как неоднозначный запрос на товар превращается в закупочное решение с понятной историей.",
+      "robots": null,
+      "canonical": "https://kanarev.com/ru/work/partner-portal/",
+      "hreflang": [
+        [
+          "en",
+          "https://kanarev.com/work/partner-portal/"
+        ],
+        [
+          "ru",
+          "https://kanarev.com/ru/work/partner-portal/"
+        ],
+        [
+          "x-default",
+          "https://kanarev.com/work/partner-portal/"
+        ]
+      ],
+      "og": {
+        "title": "B2B-закупка DSSL",
+        "description": "Как неоднозначный запрос на товар превращается в закупочное решение с понятной историей.",
+        "image": "https://kanarev.com/og/work-partner-portal-ru-onest.png",
+        "url": "https://kanarev.com/ru/work/partner-portal/",
+        "locale": "ru_RU",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image"
+      }
+    },
+    {
+      "route": "/ru/work/pawly/",
+      "lang": "ru",
+      "title": "Pawly — прогулка с собакой, подтверждённая по шагам",
+      "description": "Продуктовый дизайн двустороннего сервиса выгула собак: совместимость до бронирования, разные экраны владельца и выгульщика, явные сбои и отчёт о возвращении с датами. Интерактивный прототип на русском и английском.",
+      "robots": null,
+      "canonical": "https://kanarev.com/ru/work/pawly/",
+      "hreflang": [
+        [
+          "en",
+          "https://kanarev.com/work/pawly/"
+        ],
+        [
+          "ru",
+          "https://kanarev.com/ru/work/pawly/"
+        ],
+        [
+          "x-default",
+          "https://kanarev.com/work/pawly/"
+        ]
+      ],
+      "og": {
+        "title": "Pawly — прогулка с собакой, подтверждённая по шагам",
+        "description": "Продуктовый дизайн двустороннего сервиса выгула собак: совместимость до бронирования, разные экраны владельца и выгульщика, явные сбои и отчёт о возвращении с датами. Интерактивный прототип на русском и английском.",
+        "image": "https://kanarev.com/og/work-pawly-ru-onest.png",
+        "url": "https://kanarev.com/ru/work/pawly/",
+        "locale": "ru_RU",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image"
+      }
+    },
+    {
+      "route": "/ru/work/vet-clinic/",
+      "lang": "ru",
+      "title": "Vet Clinic OS — один приём, три точки зрения",
+      "description": "Один приём. Три точки зрения. Единая достоверная запись. Архитектура продукта, проверяемая арифметика и явная публикация в адаптивной системе ветклиники.",
+      "robots": null,
+      "canonical": "https://kanarev.com/ru/work/vet-clinic/",
+      "hreflang": [
+        [
+          "en",
+          "https://kanarev.com/work/vet-clinic/"
+        ],
+        [
+          "ru",
+          "https://kanarev.com/ru/work/vet-clinic/"
+        ],
+        [
+          "x-default",
+          "https://kanarev.com/work/vet-clinic/"
+        ]
+      ],
+      "og": {
+        "title": "Vet Clinic OS — один приём, три точки зрения",
+        "description": "Один приём. Три точки зрения. Единая достоверная запись. Архитектура продукта, проверяемая арифметика и явная публикация в адаптивной системе ветклиники.",
+        "image": "https://kanarev.com/og/work-vet-clinic-v2-ru-onest.png",
+        "url": "https://kanarev.com/ru/work/vet-clinic/",
+        "locale": "ru_RU",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image"
+      }
+    },
+    {
+      "route": "/work/agent-ops-console/",
+      "lang": "en",
+      "title": "Agent Ops Console — human oversight for consequential AI decisions",
+      "description": "Designing traceable human oversight for an AI support agent: risk-based review, financial approvals, verified policies and evidence-led autonomy. A user-tested, client-accepted prototype.",
+      "robots": null,
+      "canonical": "https://kanarev.com/work/agent-ops-console/",
+      "hreflang": [
+        [
+          "en",
+          "https://kanarev.com/work/agent-ops-console/"
+        ],
+        [
+          "ru",
+          "https://kanarev.com/ru/work/agent-ops-console/"
+        ],
+        [
+          "x-default",
+          "https://kanarev.com/work/agent-ops-console/"
+        ]
+      ],
+      "og": {
+        "title": "Agent Ops Console — human oversight for consequential AI decisions",
+        "description": "Designing traceable human oversight for an AI support agent: risk-based review, financial approvals, verified policies and evidence-led autonomy. A user-tested, client-accepted prototype.",
+        "image": "https://kanarev.com/og/work-agent-ops-console-v2-onest.png",
+        "url": "https://kanarev.com/work/agent-ops-console/",
+        "locale": "en_US",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image"
+      }
+    },
+    {
+      "route": "/work/learn/",
+      "lang": "en",
+      "title": "TRASSIR Learn — one knowledge system, two ways to learn",
+      "description": "Product design for technical answers and structured preparation: shared resources, deliberate progress and clear assessment outcomes. A project revisited after my work at DSSL / TRASSIR.",
+      "robots": null,
+      "canonical": "https://kanarev.com/work/learn/",
+      "hreflang": [
+        [
+          "en",
+          "https://kanarev.com/work/learn/"
+        ],
+        [
+          "ru",
+          "https://kanarev.com/ru/work/learn/"
+        ],
+        [
+          "x-default",
+          "https://kanarev.com/work/learn/"
+        ]
+      ],
+      "og": {
+        "title": "TRASSIR Learn — one knowledge system, two ways to learn",
+        "description": "Product design for technical answers and structured preparation: shared resources, deliberate progress and clear assessment outcomes. A project revisited after my work at DSSL / TRASSIR.",
+        "image": "https://kanarev.com/og/work-learn-onest.png",
+        "url": "https://kanarev.com/work/learn/",
+        "locale": "en_US",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image"
+      }
+    },
+    {
+      "route": "/work/partner-portal/",
+      "lang": "en",
+      "title": "B2B Partner Portal — DSSL",
+      "description": "Turning ambiguous product requests into traceable procurement decisions.",
+      "robots": null,
+      "canonical": "https://kanarev.com/work/partner-portal/",
+      "hreflang": [
+        [
+          "en",
+          "https://kanarev.com/work/partner-portal/"
+        ],
+        [
+          "ru",
+          "https://kanarev.com/ru/work/partner-portal/"
+        ],
+        [
+          "x-default",
+          "https://kanarev.com/work/partner-portal/"
+        ]
+      ],
+      "og": {
+        "title": "B2B Partner Portal — DSSL",
+        "description": "Turning ambiguous product requests into traceable procurement decisions.",
+        "image": "https://kanarev.com/og/work-partner-portal-onest.png",
+        "url": "https://kanarev.com/work/partner-portal/",
+        "locale": "en_US",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image"
+      }
+    },
+    {
+      "route": "/work/pawly/",
+      "lang": "en",
+      "title": "Pawly — a dog walk, proved step by step",
+      "description": "Product design for a two-sided dog-walking app: compatibility before booking, separate owner and walker views, explicit failure states and a dated return report. Interactive EN/RU prototype.",
+      "robots": null,
+      "canonical": "https://kanarev.com/work/pawly/",
+      "hreflang": [
+        [
+          "en",
+          "https://kanarev.com/work/pawly/"
+        ],
+        [
+          "ru",
+          "https://kanarev.com/ru/work/pawly/"
+        ],
+        [
+          "x-default",
+          "https://kanarev.com/work/pawly/"
+        ]
+      ],
+      "og": {
+        "title": "Pawly — a dog walk, proved step by step",
+        "description": "Product design for a two-sided dog-walking app: compatibility before booking, separate owner and walker views, explicit failure states and a dated return report. Interactive EN/RU prototype.",
+        "image": "https://kanarev.com/og/work-pawly-onest.png",
+        "url": "https://kanarev.com/work/pawly/",
+        "locale": "en_US",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image"
+      }
+    },
+    {
+      "route": "/work/vet-clinic/",
+      "lang": "en",
+      "title": "Vet Clinic OS — one visit, three perspectives",
+      "description": "One visit. Three perspectives. One reliable record. Product architecture, clinical arithmetic and deliberate publication boundaries in a responsive veterinary workspace.",
+      "robots": null,
+      "canonical": "https://kanarev.com/work/vet-clinic/",
+      "hreflang": [
+        [
+          "en",
+          "https://kanarev.com/work/vet-clinic/"
+        ],
+        [
+          "ru",
+          "https://kanarev.com/ru/work/vet-clinic/"
+        ],
+        [
+          "x-default",
+          "https://kanarev.com/work/vet-clinic/"
+        ]
+      ],
+      "og": {
+        "title": "Vet Clinic OS — one visit, three perspectives",
+        "description": "One visit. Three perspectives. One reliable record. Product architecture, clinical arithmetic and deliberate publication boundaries in a responsive veterinary workspace.",
+        "image": "https://kanarev.com/og/work-vet-clinic-v2-onest.png",
+        "url": "https://kanarev.com/work/vet-clinic/",
+        "locale": "en_US",
+        "type": "website"
+      },
+      "twitter": {
+        "card": "summary_large_image"
+      }
+    }
+  ],
+  "nonPublic": [
+    {
+      "route": "/404",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/500",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/kit/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/agent-ops-pilot/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/agent-ops-rebuild/en/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/agent-ops-rebuild/ru/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/common/en/agent-ops/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/common/en/partner-portal/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/common/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/common/ru/agent-ops/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/common/ru/partner-portal/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/film-common/en/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/film-common/ru/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/learn-rebuild/en/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/learn-rebuild/ru/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/partner-portal-pilot/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/partner-portal-rebuild/en/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/partner-portal-rebuild/ru/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/pawly-rebuild/en/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/pawly-rebuild/ru/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/vet-clinic-rebuild/en/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/preview/vet-clinic-rebuild/ru/",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "route": "/prototypes/learn/assessment/confirm/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/assessment/failed/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/assessment/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/assessment/intro/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/assessment/intro/not-verified/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/assessment/result/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/assessment/result-failed/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/catalog/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/catalog/zero/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/certificate/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/history/empty/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/history/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/home/explore/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/home/handover/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/home/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/home/project/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/home/symptom/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/login/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/login/known/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/abandoned-object/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/analytics-modules/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/archive-depth/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/archive-not-writing/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/bandwidth-check/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/camera-count/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/camera-ip-change/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/camera-lineup/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/camera-manual-add/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/disk-capacity/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/disk-layout/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/duostation-intro/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/export-fragment/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/firmware-update/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/first-boot/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/handover-access/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/handover-check/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/handover-docs/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/license-scheme/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/motion-detectors/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/onvif-compat/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/onvif-not-found/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/onvif-profiles/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/operator-briefing/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/operator-roles/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/partner-only/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/power-link-check/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/ptz-tracking/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/record-redundancy/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/rtsp-connect/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/server-choice/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/material/tender-spec/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/my/empty/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/my/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/already-viewed/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/analitika/0/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/analitika/1/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/analitika/2/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/analitika/3/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/analitika/4/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/analitika/5/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/arhiv/0/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/arhiv/1/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/arhiv/2/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/arhiv/3/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/arhiv/4/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/arhiv/5/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/linejka/0/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/linejka/1/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/linejka/2/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/linejka/3/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/linejka/4/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/linejka/5/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/linejka/6/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/otkazy/0/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/otkazy/1/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/otkazy/2/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/otkazy/3/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/otkazy/4/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/otkazy/5/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/proekt/0/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/proekt/1/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/proekt/2/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/proekt/3/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/proekt/4/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/proekt/5/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/proekt/6/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/proekt/7/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/proekt/8/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/puskonaladka/0/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/puskonaladka/1/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/puskonaladka/10/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/puskonaladka/2/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/puskonaladka/3/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/puskonaladka/4/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/puskonaladka/5/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/puskonaladka/6/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/puskonaladka/7/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/puskonaladka/8/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/puskonaladka/9/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/sdacha/0/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/sdacha/1/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/sdacha/2/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/sdacha/3/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/sdacha/4/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/sdacha/5/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/player/sdacha/6/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/practice/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/practice/wrong/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/search/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/search/zero/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/showcase/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/trajectory/analitika/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/trajectory/arhiv/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/trajectory/gate/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/trajectory/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/trajectory/linejka/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/trajectory/otkazy/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/trajectory/proekt/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/trajectory/puskonaladka/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/trajectory/sdacha/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/trajectory/started/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/verify/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/verify/inn-error/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/verify/rejected/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn/verify/submitted/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn-landing/404/",
+      "robots": "noindex"
+    },
+    {
+      "route": "/prototypes/learn-landing/404",
+      "robots": "noindex"
+    },
+    {
+      "route": "/prototypes/learn-landing/certificate/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn-landing/en/404/",
+      "robots": "noindex"
+    },
+    {
+      "route": "/prototypes/learn-landing/en/404",
+      "robots": "noindex"
+    },
+    {
+      "route": "/prototypes/learn-landing/en/certificate/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn-landing/en/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn-landing/en/materials/access/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn-landing/en/materials/archive/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn-landing/en/materials/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn-landing/en/materials/onvif/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn-landing/en/program/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn-landing/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn-landing/materials/access/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn-landing/materials/archive/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn-landing/materials/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn-landing/materials/onvif/",
+      "robots": null
+    },
+    {
+      "route": "/prototypes/learn-landing/program/",
+      "robots": null
+    },
+    {
+      "route": "/ru/404/",
+      "robots": "noindex, nofollow"
+    }
+  ]
+}

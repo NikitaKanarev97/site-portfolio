@@ -1,0 +1,1273 @@
+{
+ "engine": "chromium",
+ "phase": "after",
+ "note": "checks of the final (rerun3 for webkit) run; frame data omitted",
+ "total": 316,
+ "failed": [],
+ "checks": [
+  {
+   "name": "en-1440 home-to-agent source surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 home-to-agent destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 home-to-agent actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-1440 home-to-agent group surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 home-to-agent old/new surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 home-to-agent body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-1440 home-to-agent geometry",
+   "pass": true
+  },
+  {
+   "name": "en-1440 home-to-agent preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-1440 home-to-portal source surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 home-to-portal destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 home-to-portal actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-1440 home-to-portal group surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 home-to-portal old/new surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 home-to-portal body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-1440 home-to-portal geometry",
+   "pass": true
+  },
+  {
+   "name": "en-1440 home-to-portal preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-1440 pawly-to-agent source surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 pawly-to-agent destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 pawly-to-agent actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-1440 pawly-to-agent group surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 pawly-to-agent old/new surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 pawly-to-agent body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-1440 pawly-to-agent geometry",
+   "pass": true
+  },
+  {
+   "name": "en-1440 pawly-to-agent preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-1440 agent-to-portal source surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 agent-to-portal destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 agent-to-portal actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-1440 agent-to-portal group surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 agent-to-portal old/new surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 agent-to-portal body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-1440 agent-to-portal geometry",
+   "pass": true
+  },
+  {
+   "name": "en-1440 agent-to-portal preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-1440 portal-to-learn source surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 portal-to-learn destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 portal-to-learn actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-1440 portal-to-learn group surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 portal-to-learn body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-1440 portal-to-learn geometry",
+   "pass": true
+  },
+  {
+   "name": "en-1440 portal-to-learn preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-1440 learn-to-vet source surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 learn-to-vet destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 learn-to-vet actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-1440 learn-to-vet group surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 learn-to-vet body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-1440 learn-to-vet geometry",
+   "pass": true
+  },
+  {
+   "name": "en-1440 learn-to-vet preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-1440 vet-to-pawly source surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 vet-to-pawly destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 vet-to-pawly actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-1440 vet-to-pawly group surface",
+   "pass": true
+  },
+  {
+   "name": "en-1440 vet-to-pawly body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-1440 vet-to-pawly geometry",
+   "pass": true
+  },
+  {
+   "name": "en-1440 vet-to-pawly preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-1440 runtime",
+   "pass": true
+  },
+  {
+   "name": "en-390 home-to-agent destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 home-to-agent actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-390 home-to-agent group surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 home-to-agent old/new surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 home-to-agent body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-390 home-to-agent geometry",
+   "pass": true
+  },
+  {
+   "name": "en-390 home-to-agent preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-390 home-to-portal destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 home-to-portal actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-390 home-to-portal group surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 home-to-portal old/new surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 home-to-portal body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-390 home-to-portal geometry",
+   "pass": true
+  },
+  {
+   "name": "en-390 home-to-portal preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-390 pawly-to-agent source surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 pawly-to-agent destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 pawly-to-agent actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-390 pawly-to-agent group surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 pawly-to-agent old/new surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 pawly-to-agent body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-390 pawly-to-agent geometry",
+   "pass": true
+  },
+  {
+   "name": "en-390 pawly-to-agent preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-390 agent-to-portal source surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 agent-to-portal destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 agent-to-portal actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-390 agent-to-portal group surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 agent-to-portal old/new surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 agent-to-portal body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-390 agent-to-portal geometry",
+   "pass": true
+  },
+  {
+   "name": "en-390 agent-to-portal preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-390 portal-to-learn source surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 portal-to-learn destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 portal-to-learn actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-390 portal-to-learn group surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 portal-to-learn body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-390 portal-to-learn geometry",
+   "pass": true
+  },
+  {
+   "name": "en-390 portal-to-learn preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-390 learn-to-vet source surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 learn-to-vet destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 learn-to-vet actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-390 learn-to-vet group surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 learn-to-vet body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-390 learn-to-vet geometry",
+   "pass": true
+  },
+  {
+   "name": "en-390 learn-to-vet preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-390 vet-to-pawly source surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 vet-to-pawly destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 vet-to-pawly actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-390 vet-to-pawly group surface",
+   "pass": true
+  },
+  {
+   "name": "en-390 vet-to-pawly body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-390 vet-to-pawly geometry",
+   "pass": true
+  },
+  {
+   "name": "en-390 vet-to-pawly preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-390 runtime",
+   "pass": true
+  },
+  {
+   "name": "en-360 home-to-agent destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 home-to-agent actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-360 home-to-agent group surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 home-to-agent old/new surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 home-to-agent body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-360 home-to-agent geometry",
+   "pass": true
+  },
+  {
+   "name": "en-360 home-to-agent preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-360 home-to-portal destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 home-to-portal actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-360 home-to-portal group surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 home-to-portal old/new surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 home-to-portal body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-360 home-to-portal geometry",
+   "pass": true
+  },
+  {
+   "name": "en-360 home-to-portal preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-360 pawly-to-agent source surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 pawly-to-agent destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 pawly-to-agent actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-360 pawly-to-agent group surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 pawly-to-agent old/new surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 pawly-to-agent body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-360 pawly-to-agent geometry",
+   "pass": true
+  },
+  {
+   "name": "en-360 pawly-to-agent preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-360 agent-to-portal source surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 agent-to-portal destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 agent-to-portal actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-360 agent-to-portal group surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 agent-to-portal old/new surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 agent-to-portal body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-360 agent-to-portal geometry",
+   "pass": true
+  },
+  {
+   "name": "en-360 agent-to-portal preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-360 portal-to-learn source surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 portal-to-learn destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 portal-to-learn actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-360 portal-to-learn group surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 portal-to-learn body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-360 portal-to-learn geometry",
+   "pass": true
+  },
+  {
+   "name": "en-360 portal-to-learn preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-360 learn-to-vet source surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 learn-to-vet destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 learn-to-vet actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-360 learn-to-vet group surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 learn-to-vet body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-360 learn-to-vet geometry",
+   "pass": true
+  },
+  {
+   "name": "en-360 learn-to-vet preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-360 vet-to-pawly source surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 vet-to-pawly destination surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 vet-to-pawly actual native transition",
+   "pass": true
+  },
+  {
+   "name": "en-360 vet-to-pawly group surface",
+   "pass": true
+  },
+  {
+   "name": "en-360 vet-to-pawly body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "en-360 vet-to-pawly geometry",
+   "pass": true
+  },
+  {
+   "name": "en-360 vet-to-pawly preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "en-360 runtime",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 home-to-agent source surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 home-to-agent destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 home-to-agent actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 home-to-agent group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 home-to-agent old/new surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 home-to-agent body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 home-to-agent geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 home-to-agent preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 home-to-portal source surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 home-to-portal destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 home-to-portal actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 home-to-portal group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 home-to-portal old/new surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 home-to-portal body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 home-to-portal geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 home-to-portal preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 pawly-to-agent source surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 pawly-to-agent destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 pawly-to-agent actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 pawly-to-agent group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 pawly-to-agent old/new surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 pawly-to-agent body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 pawly-to-agent geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 pawly-to-agent preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 agent-to-portal source surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 agent-to-portal destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 agent-to-portal actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 agent-to-portal group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 agent-to-portal old/new surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 agent-to-portal body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 agent-to-portal geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 agent-to-portal preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 portal-to-learn source surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 portal-to-learn destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 portal-to-learn actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 portal-to-learn group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 portal-to-learn body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 portal-to-learn geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 portal-to-learn preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 learn-to-vet source surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 learn-to-vet destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 learn-to-vet actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 learn-to-vet group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 learn-to-vet body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 learn-to-vet geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 learn-to-vet preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 vet-to-pawly source surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 vet-to-pawly destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 vet-to-pawly actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 vet-to-pawly group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 vet-to-pawly body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 vet-to-pawly geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 vet-to-pawly preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-1440 runtime",
+   "pass": true
+  },
+  {
+   "name": "ru-390 home-to-agent destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 home-to-agent actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-390 home-to-agent group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 home-to-agent old/new surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 home-to-agent body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-390 home-to-agent geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-390 home-to-agent preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-390 home-to-portal destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 home-to-portal actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-390 home-to-portal group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 home-to-portal old/new surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 home-to-portal body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-390 home-to-portal geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-390 home-to-portal preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-390 pawly-to-agent source surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 pawly-to-agent destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 pawly-to-agent actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-390 pawly-to-agent group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 pawly-to-agent old/new surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 pawly-to-agent body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-390 pawly-to-agent geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-390 pawly-to-agent preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-390 agent-to-portal source surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 agent-to-portal destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 agent-to-portal actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-390 agent-to-portal group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 agent-to-portal old/new surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 agent-to-portal body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-390 agent-to-portal geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-390 agent-to-portal preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-390 portal-to-learn source surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 portal-to-learn destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 portal-to-learn actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-390 portal-to-learn group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 portal-to-learn body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-390 portal-to-learn geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-390 portal-to-learn preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-390 learn-to-vet source surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 learn-to-vet destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 learn-to-vet actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-390 learn-to-vet group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 learn-to-vet body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-390 learn-to-vet geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-390 learn-to-vet preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-390 vet-to-pawly source surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 vet-to-pawly destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 vet-to-pawly actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-390 vet-to-pawly group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-390 vet-to-pawly body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-390 vet-to-pawly geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-390 vet-to-pawly preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-390 runtime",
+   "pass": true
+  },
+  {
+   "name": "ru-360 home-to-agent destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 home-to-agent actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-360 home-to-agent group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 home-to-agent old/new surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 home-to-agent body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-360 home-to-agent geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-360 home-to-agent preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-360 home-to-portal destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 home-to-portal actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-360 home-to-portal group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 home-to-portal old/new surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 home-to-portal body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-360 home-to-portal geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-360 home-to-portal preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-360 pawly-to-agent source surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 pawly-to-agent destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 pawly-to-agent actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-360 pawly-to-agent group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 pawly-to-agent old/new surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 pawly-to-agent body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-360 pawly-to-agent geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-360 pawly-to-agent preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-360 agent-to-portal source surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 agent-to-portal destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 agent-to-portal actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-360 agent-to-portal group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 agent-to-portal old/new surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 agent-to-portal body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-360 agent-to-portal geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-360 agent-to-portal preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-360 portal-to-learn source surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 portal-to-learn destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 portal-to-learn actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-360 portal-to-learn group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 portal-to-learn body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-360 portal-to-learn geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-360 portal-to-learn preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-360 learn-to-vet source surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 learn-to-vet destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 learn-to-vet actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-360 learn-to-vet group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 learn-to-vet body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-360 learn-to-vet geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-360 learn-to-vet preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-360 vet-to-pawly source surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 vet-to-pawly destination surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 vet-to-pawly actual native transition",
+   "pass": true
+  },
+  {
+   "name": "ru-360 vet-to-pawly group surface",
+   "pass": true
+  },
+  {
+   "name": "ru-360 vet-to-pawly body stays opaque",
+   "pass": true
+  },
+  {
+   "name": "ru-360 vet-to-pawly geometry",
+   "pass": true
+  },
+  {
+   "name": "ru-360 vet-to-pawly preserved 1s choreography",
+   "pass": true
+  },
+  {
+   "name": "ru-360 runtime",
+   "pass": true
+  }
+ ]
+}
