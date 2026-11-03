@@ -299,6 +299,7 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
   .pawly-roles__compare { display: grid; gap: var(--flow-text); align-content: start; }
   .pawly-compare { display: grid; gap: var(--flow-text); margin: 0; }
   .pawly-compare__row { display: grid; gap: var(--space-2); padding-block-start: var(--space-4); border-block-start: var(--border-width) solid var(--border-strong); }
+  .pawly-compare__row:first-child { padding-block-start: 0; border-block-start: 0; }
   .pawly-compare__term { color: var(--text-meta); }
   .pawly-compare__pair { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: var(--space-2) var(--space-4); align-items: baseline; margin: 0; }
   .pawly-compare__who { color: var(--text-meta); }

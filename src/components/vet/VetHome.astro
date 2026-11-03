@@ -16,8 +16,11 @@ const copy = vetHome[locale];
 <style>
   .vet-home { display: grid; gap: calc(var(--flow-pair) + var(--space-3)); margin: 0; min-inline-size: 0; padding: var(--stage-inset); background: var(--surface-cover-vet); color: var(--text-default); border-radius: var(--radius-lg); }
   .vet-home figcaption { color: var(--text-subtle); }
+  /* The excerpt is cropped tight to the content; the white field above and below lets it breathe in the panel. */
+  .vet-home :global(.screen-surface) { padding-block: var(--space-8); background: var(--surface-default); }
   @media (--below-bp-lg) {
     .vet-home { padding: var(--space-4); }
+    .vet-home :global(.screen-surface) { padding-block: var(--space-4); }
     .vet-home :global(.case-screen) { max-inline-size: calc(var(--space-48) * 2); justify-self: center; }
   }
 </style>

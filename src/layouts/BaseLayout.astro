@@ -176,6 +176,19 @@ const image = new URL(ogImageFor(ogCard), Astro.site);
         }, 2000);
       })();
     </script>
+    {/*
+      Ранний перехват увеличения кадра. Ссылка кадра ведёт на сам файл —
+      до загрузки бандла нажатие уводило на голую картинку без пути назад.
+      Пока MediaZoom не поднят, нажатие запоминается, лайтбокс откроет его сам.
+    */}
+    <script is:inline>
+      document.addEventListener('click', function (event) {
+        var trigger = event.target.closest && event.target.closest('[data-zoom-trigger]');
+        if (!trigger || window.__mediaZoomReady || event.button || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        window.__mediaZoomPending = trigger;
+      });
+    </script>
 
     <ClientRouter />
   </head>

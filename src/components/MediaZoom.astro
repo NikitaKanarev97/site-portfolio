@@ -48,13 +48,26 @@ const zoom = zoomCopy;
 </style>
 <script>
   import { containDialogFocus } from '../scripts/dialog-focus';
+  type ZoomWindow = Window & { __mediaZoomReady?: boolean; __mediaZoomPending?: HTMLElement };
+  const zoomWindow = window as ZoomWindow;
   let zoomLifecycle: AbortController | undefined;
   let zoomDialog: HTMLDialogElement | undefined;
+  let openZoom: ((trigger: HTMLElement) => void) | undefined;
+  // One listener for the whole session: between page swaps the press is queued, never followed to the file.
+  zoomWindow.__mediaZoomReady = true;
+  document.addEventListener('click', (event) => {
+    const trigger = (event.target as Element).closest?.<HTMLElement>('[data-zoom-trigger]');
+    if (!trigger || event.button || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    if (openZoom) openZoom(trigger);
+    else zoomWindow.__mediaZoomPending = trigger;
+  });
   function teardownMediaZoom() {
     if (zoomDialog?.open) zoomDialog.close();
     document.body.classList.remove('ds-scroll-locked');
     zoomLifecycle?.abort();
     zoomDialog = undefined;
+    openZoom = undefined;
   }
   function initMediaZoom() {
     teardownMediaZoom();
@@ -70,10 +83,8 @@ const zoom = zoomCopy;
     const { signal } = zoomLifecycle;
     containDialogFocus(dialog, signal);
     let source: HTMLElement | undefined;
-    document.addEventListener('click', (event) => {
-      const trigger = (event.target as Element).closest<HTMLElement>('[data-zoom-trigger]');
-      if (!trigger || !dialog.showModal || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
-      event.preventDefault();
+    openZoom = (trigger) => {
+      if (!trigger.isConnected) return;
       const preview = trigger.querySelector<HTMLImageElement>('img');
       source = trigger;
       image.src = trigger.dataset.zoomFixed ? trigger.dataset.zoomSrc! : preview?.currentSrc || trigger.dataset.zoomSrc || '';
@@ -85,7 +96,7 @@ const zoom = zoomCopy;
       dialog.showModal();
       viewport.scrollTop = 0;
       viewport.scrollLeft = 0;
-    }, { signal });
+    };
     close.addEventListener('click', () => dialog.close(), { signal });
     dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); }, { signal });
     dialog.addEventListener('close', () => {
@@ -96,6 +107,9 @@ const zoom = zoomCopy;
       if (source?.isConnected) source.focus({ preventScroll: true });
       source = undefined;
     }, { signal });
+    const pending = zoomWindow.__mediaZoomPending;
+    zoomWindow.__mediaZoomPending = undefined;
+    if (pending) openZoom(pending);
   }
   document.addEventListener('astro:page-load', initMediaZoom);
   document.addEventListener('astro:before-swap', teardownMediaZoom);
