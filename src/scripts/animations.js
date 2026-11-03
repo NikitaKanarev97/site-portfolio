@@ -31,6 +31,7 @@ import { SplitText } from 'gsap/SplitText';
 import { CustomEase } from 'gsap/CustomEase';
 import { motion, duration, stagger, withMotionPreference } from './motion.js';
 import { buildAgentReading } from './agent-reading.js';
+import { buildAgentModel } from './agent-model.js';
 
 gsap.registerPlugin(ScrollTrigger, SplitText, CustomEase);
 CustomEase.create(motion.lines.ease, motion.lines.curve);
@@ -257,7 +258,7 @@ function staggerFor(el) {
 }
 
 /** Structural scenes have their own timelines; never treat their root as a fade. */
-const STRUCTURAL_MODES = new Set(['cover-proof', 'cover-interlock', 'focus-stage', 'sheet', 'pin-swap', 'marquee']);
+const STRUCTURAL_MODES = new Set(['cover-proof', 'cover-interlock', 'focus-stage', 'sheet', 'pin-swap', 'marquee', 'agent-model']);
 
 /** Static blocks and the inactive responsive diagram do not create timelines. */
 const motionAllowed = el => !el.closest('[data-story-motion="static"]') && el.getClientRects().length > 0;
@@ -422,6 +423,7 @@ function draw(el, tl, position) {
 /** Case choreography improves the real DOM; there are no duplicate screen clones. */
 function buildCaseScenes(root, settled = false) {
   const cleanupAgentReading = buildAgentReading(root);
+  const cleanupAgentModel = buildAgentModel(root, settled ? null : TRIGGER_START, motionAllowed);
   const skipCovers = [];
   root.querySelectorAll('[data-motion="cover-interlock"]').forEach(cover => {
     if (settled) return;
@@ -630,7 +632,7 @@ function buildCaseScenes(root, settled = false) {
       document.removeEventListener('visibilitychange', sync);
     });
   });
-  return () => { cleanupAgentReading(); skipCovers.forEach(off => off()); responsive.revert(); };
+  return () => { cleanupAgentReading(); cleanupAgentModel(); skipCovers.forEach(off => off()); responsive.revert(); };
 }
 
 /** Covers share the page lifecycle, including restored pages and live motion preferences. */

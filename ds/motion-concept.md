@@ -1,3 +1,7 @@
+## Agent Ops · модель работы · 04.11.2026
+
+Решение владельца: вход «поток по смыслу» и подсветка пути при наведении. `data-motion="agent-model"` на схеме, хореография — `src/scripts/agent-model.js`, параметры — `motion.agentModel`. Один проход по ScrollTrigger `top 85%`, `once`: счётчик набегает до ~1,770 и сжимается до ~71 (`motion.count`), затем вход, стрелка прорисовывается маской сверху, ромб, ветка «Да» (на desktop сдвигом справа), тихая ветка «Нет» только opacity и дольше (`quiet`), Reviewer, вилка из центра, обе ветки вместе, линия возврата справа налево, подпись и примечание. Такт — `beat`, поток стартует с `flowAt`. Только transform, opacity и clip-path маски; после прохода инлайн-стилей нет, текст счётчиков восстановлен. Под `(hover: hover) and (pointer: fine)` наведение на узел подсвечивает маршрут от входа, остальное — `--diagram-dim` с `motion-hover`; переход включается только после прохода. Информация через hover не передаётся. Reduce, no-JS и восстановленная позиция — схема в конечном виде; в reduce подсветки нет.
+
 ## History scroll restoration · V1.1 · 03.11.2026
 
 Astro's saved history scrollY is captured on before-preparation for a traverse

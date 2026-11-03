@@ -50,15 +50,15 @@ const policyShots = copy.sections.find(s => s.id === 'policy')!.shots!.map((s, i
         <div class="agent-problem__signals"><p class="ds-heading-2xl">{p.problemAside}</p><dl>{copy.metrics.slice(0,2).map(metric => <div><dt class="ds-body-sm agent-body">{metric.label}</dt><dd class="ds-heading-3xl">{metric.value}</dd></div>)}</dl></div>
       </div>}
 
-      {s.id === 'operating-model' && <figure class="agent-model" aria-labelledby="model-label">
-        <figcaption id="model-label" class="ds-meta-sm agent-label">{m.label}</figcaption>
-        <div class="agent-model__sizing"><p class="ds-meta-sm agent-label">{m.estimate}</p><p class="ds-heading-2xl">~1,770 <span aria-hidden="true">→</span> ~71</p><p class="ds-body-sm agent-body">{m.sizingLabel}</p></div>
-        <div class="agent-model__intake"><p class="ds-heading-2xl">{m.input}</p><span aria-hidden="true">↓</span><p class="ds-heading-xl agent-model__decision">{m.decision}</p></div>
-        <div class="agent-model__fork"><aside class="agent-model__sample"><p class="ds-meta-sm agent-label">{m.no}</p><p class="ds-body-base agent-body">{m.sample}</p></aside><div class="agent-model__commitment"><p class="ds-meta-sm agent-label">{m.yes}</p><p class="ds-heading-xl"><AgentHeadingText text={m.commitment} /></p><p class="ds-body-base agent-body">{m.cluster}</p></div></div>
-        <div class="agent-model__review"><span aria-hidden="true">↓</span><p class="ds-heading-xl">{m.review}</p></div>
-        <div class="agent-model__branches">{m.branches.map(b => <div><p class="ds-meta-sm agent-label">{b.role}</p><h3 class="ds-heading-2xl">{b.title}</h3><p class="ds-body-base agent-body">{b.text}</p></div>)}</div>
-        <div class="agent-model__feedback"><p class="ds-heading-2xl">{m.close}</p><p class="ds-body-base agent-body">{m.feedback}</p></div>
-        <p class="ds-body-sm agent-body agent-model__note">{m.note}</p>
+      {s.id === 'operating-model' && <figure class="agent-model" aria-labelledby="model-label" data-motion="agent-model">
+        <figcaption id="model-label" class="ds-meta-sm agent-label" data-model-step>{m.label}</figcaption>
+        <div class="agent-model__sizing"><p class="ds-meta-sm agent-label" data-model-step>{m.estimate}</p><p class="ds-heading-2xl" data-model-step><span data-model-count="from">~1,770</span> <span aria-hidden="true" data-model-count-arrow>→</span> <span data-model-count="to">~71</span></p><p class="ds-body-sm agent-body" data-model-step>{m.sizingLabel}</p></div>
+        <div class="agent-model__intake"><p class="ds-heading-2xl" data-model-node="input">{m.input}</p><span aria-hidden="true" data-model-node="a1">↓</span><p class="ds-heading-xl agent-model__decision" data-model-node="decision">{m.decision}</p></div>
+        <div class="agent-model__fork"><aside class="agent-model__sample" data-model-node="no"><p class="ds-meta-sm agent-label">{m.no}</p><p class="ds-body-base agent-body">{m.sample}</p></aside><div class="agent-model__commitment" data-model-node="yes"><p class="ds-meta-sm agent-label">{m.yes}</p><p class="ds-heading-xl"><AgentHeadingText text={m.commitment} /></p><p class="ds-body-base agent-body">{m.cluster}</p></div></div>
+        <div class="agent-model__review"><span aria-hidden="true" data-model-node="a2">↓</span><p class="ds-heading-xl" data-model-node="review">{m.review}</p></div>
+        <div class="agent-model__branches"><span class="agent-model__bracket" aria-hidden="true" data-model-node="bracket"></span>{m.branches.map((b, i) => <div data-model-node={`b${i + 1}`}><p class="ds-meta-sm agent-label">{b.role}</p><h3 class="ds-heading-2xl">{b.title}</h3><p class="ds-body-base agent-body">{b.text}</p></div>)}</div>
+        <div class="agent-model__feedback" data-model-node="close"><span class="agent-model__return" aria-hidden="true"></span><p class="ds-heading-2xl">{m.close}</p><p class="ds-body-base agent-body">{m.feedback}</p></div>
+        <p class="ds-body-sm agent-body agent-model__note" data-model-step>{m.note}</p>
       </figure>}
 
       {s.id === 'investigation' && <div class="agent-investigation">{s.shots!.map((shot, i) => <div class:list={['agent-investigation__stage', i === 1 && 'agent-investigation__stage--detail']}>
@@ -132,7 +132,11 @@ const policyShots = copy.sections.find(s => s.id === 'policy')!.shots!.map((s, i
   /* One node grammar: every step someone acts on is a full box; the low-risk path is the same box, dashed and unfilled. */
   .agent-model__sample, .agent-model__commitment, .agent-model__branches > div { display: grid; gap: var(--flow-pair); align-content: start; padding: var(--space-6); border: var(--border-width) solid var(--diagram-stroke); border-radius: var(--diagram-node-radius); background: var(--diagram-node); }
   .agent-model__sample { border-style: dashed; border-color: var(--diagram-arrow); background: transparent; }
-  .agent-model__feedback { display: grid; gap: var(--flow-pair); padding-block-start: var(--flow-text); border-block-start: var(--border-width) solid var(--diagram-arrow); }
+  .agent-model__feedback { position: relative; display: grid; gap: var(--flow-pair); padding-block-start: var(--flow-text); }
+  .agent-model__return { position: absolute; inset-inline: 0; inset-block-start: 0; block-size: var(--border-width); background: var(--diagram-arrow); }
+  .agent-model__bracket { display: none; }
+  .agent-model:not(.is-entering) [data-model-node] { transition: opacity var(--motion-hover-duration) var(--motion-hover-ease); }
+  .agent-model.is-tracing [data-model-node]:not([data-lit]) { opacity: var(--diagram-dim); }
   .agent-model__note { max-inline-size: var(--measure-text); }
   .agent-investigation { display: grid; gap: var(--flow-block); }
   .agent-investigation__stage, .agent-investigation__text { display: grid; gap: var(--flow-text); align-content: start; }
@@ -179,7 +183,7 @@ const policyShots = copy.sections.find(s => s.id === 'policy')!.shots!.map((s, i
     .agent-model { padding: var(--space-12); }
     .agent-model__fork { grid-template-columns: minmax(0,4fr) minmax(0,8fr); align-items: center; }
     .agent-model__branches { grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-12); position: relative; padding-block-start: var(--space-6); }
-    .agent-model__branches::before { content: ''; position: absolute; inset-inline: calc((100% - var(--space-12)) / 4); inset-block-start: 0; block-size: var(--space-6); border: var(--border-width) solid var(--diagram-arrow); border-block-end: 0; }
+    .agent-model__bracket { display: block; position: absolute; inset-inline: calc((100% - var(--space-12)) / 4); inset-block-start: 0; block-size: var(--space-6); border: var(--border-width) solid var(--diagram-arrow); border-block-end: 0; }
     .agent-policy__lifecycle { grid-template-columns: repeat(4,minmax(0,1fr)); gap: var(--gutter); }
     .agent-policy__lifecycle li { border-inline-start: 0; padding-inline-start: 0; border-block-start: var(--border-width) solid var(--border-strong); padding-block-start: var(--space-4); }
     .agent-policy__panels { grid-template-columns: repeat(2,minmax(0,1fr)); }
