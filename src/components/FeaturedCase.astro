@@ -21,7 +21,7 @@ const proof = item.meta.at(-1)!;
     </div>
     {!proofFirst && <p class="ds-heading-xl featured-case__outcome">{item.outcome}</p>}
   </div>
-  <div class="featured-case__stage" data-focus-tone={item.theme === 'agent' ? 'inverse' : undefined}>
+  <div class="featured-case__stage">
     <WorkStage theme={item.theme} media={item.media} locale={locale} loading={index === 0 ? 'eager' : 'lazy'} href={item.href} linkLabel={`${item.cta}: ${item.title}`} />
   </div>{proofFirst && <p class="ds-heading-xl featured-case__outcome">{item.outcome}</p>}
   <div class="featured-case__foot">
@@ -42,7 +42,7 @@ const proof = item.meta.at(-1)!;
   .featured-case__stage { min-inline-size: 0; }
   .featured-case--editorial { gap:var(--flow-text); }
   .featured-case--editorial .featured-case__head { gap:var(--flow-pair); }
-  .featured-case--agent .featured-case__stage { padding: var(--stage-inset); border-radius: var(--radius-lg); background: var(--surface-cover-agent); color: var(--text-on-inverse); }
+  .featured-case--agent .featured-case__stage { padding: var(--stage-inset); border-radius: var(--radius-lg); background: var(--surface-nav-agent); color: var(--text-default); }
   .featured-case__head { display: grid; gap: var(--flow-text); align-items: end; }
   .featured-case__identity { min-inline-size: 0; }
   .featured-case__identity h2 { margin: 0; }

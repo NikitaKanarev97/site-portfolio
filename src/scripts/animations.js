@@ -214,6 +214,7 @@ let transitionsEnabled = false;
  * внутри клиентского роутера (navigationType === 'traverse').
  */
 let restoredView = false;
+let historyScrollY = null;
 
 // Native disclosure stays usable without this enhancement. Keep the open list
 // when returning from a case, and restore it before Astro restores the scroll.
@@ -826,6 +827,9 @@ function buildScrollScenes(root) {
 async function initPage() {
   teardownPage();
   const returning = restoredView;
+  // Keep the router's saved coordinate through font/layout cleanup. WebKit can
+  // adjust its viewport before the returning page's motion lifecycle starts.
+  const returningScrollY = returning ? historyScrollY : null;
   const epoch = ++pageEpoch;
   await fontsSettled();
   if (epoch !== pageEpoch) return;
@@ -844,7 +848,7 @@ async function initPage() {
         settle(root);
         // Recreate structural geometry and visible loops on history traversal.
         // Entry reveals stay settled; a case without focus still owns CaseNext.
-        const restoredScrollY = window.scrollY;
+        const restoredScrollY = returningScrollY ?? window.scrollY;
         const cleanupCases = buildCaseScenes(root, true);
         ScrollTrigger.refresh();
         window.scrollTo(0, restoredScrollY);
@@ -960,6 +964,7 @@ document.addEventListener('astro:before-preparation', (event) => {
   // Кнопка «назад» и «вперёд»: позицию восстанавливает сам роутер, а
   // вступительный такт на уже виденной странице не играет (§4.3).
   restoredView = event.navigationType === 'traverse';
+  historyScrollY = restoredView ? history.state?.scrollY ?? window.scrollY : null;
   // Источник общего перехода: полоса «следующий кейс» или карточка кейса
   // на главной — обе несут цвет кейса и перетекают в его обложку.
   const link = event.sourceElement?.closest('[data-case-next], [data-case-card]');

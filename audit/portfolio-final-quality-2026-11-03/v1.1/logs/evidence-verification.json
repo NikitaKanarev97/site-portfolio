@@ -1,0 +1,44 @@
+{
+  "chromium transitions": {
+    "checks": 316,
+    "failures": 0
+  },
+  "webkit transitions": {
+    "checks": 316,
+    "failures": 0
+  },
+  "chromium states": {
+    "checks": 290,
+    "failures": 0
+  },
+  "webkit states": {
+    "checks": 290,
+    "failures": 0
+  },
+  "chromium existing smoke": {
+    "checks": 138,
+    "failures": 0
+  },
+  "webkit existing smoke": {
+    "checks": 128,
+    "failures": 0
+  },
+  "captured raster colors": {
+    "checks": 48,
+    "failures": 0
+  },
+  "hashedMedia": 566,
+  "index.html": {
+    "links": 911,
+    "missing": 0
+  },
+  "REPORT.md": {
+    "links": 34,
+    "missing": 0
+  },
+  "TRANSITION-MATRIX.md": {
+    "links": 13,
+    "missing": 0
+  },
+  "tokenMirrors": "byte-identical"
+}

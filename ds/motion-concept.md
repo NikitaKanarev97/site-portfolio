@@ -1,3 +1,13 @@
+## History scroll restoration · V1.1 · 03.11.2026
+
+Astro's saved history scrollY is captured on before-preparation for a traverse
+and carried through initPage's font/layout cleanup. The returning branch restores
+that saved coordinate after structural ScrollTrigger refresh. Sampling the current
+viewport only after fonts/layout could preserve a WebKit-adjusted offset instead
+(observed 1064→992 on mobile Home). Normal push navigation, named snapshot timing,
+GSAP choreography, reduced-motion and the late-bundle policy retain their tokens
+and lifecycle. Regression: V1.1 states.mjs and history-webkit evidence.
+
 ## Late bundle fallback · 03.11.2026
 
 SplitText keeps whole accessible labels on native/ARIA headings. Generic text

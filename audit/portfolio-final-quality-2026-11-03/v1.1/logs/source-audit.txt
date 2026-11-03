@@ -1,0 +1,29 @@
+src\styles\tokens.css:220:  --surface-cover-agent:          var(--graphite-800);
+src\styles\tokens.css:226:  --surface-cover-portal:         var(--butter-100);
+src\styles\tokens.css:231:  --surface-nav-agent:            var(--surface-subtle);
+src\styles\tokens.css:232:  --surface-nav-portal:           var(--surface-portal-editorial);
+src\styles\global.css:212:  ::view-transition-new(case-agent) { background: var(--surface-nav-agent); }
+src\styles\global.css:215:  ::view-transition-new(case-portal) { background: var(--surface-nav-portal); }
+src\components\WorkStage.astro:63:  .work-stage--portal.work-stage--cover { padding: var(--stage-inset); border-radius: var(--radius-lg); background: var(--surface-cover-portal); color: var(--text-default); }
+src\components\CaseStory.astro:102:    background: var(--surface-cover-agent);
+src\components\CaseCover.astro:17: * Цвет кейса — surface-cover-*, тон текста из caseThemes (контраст —
+src\components\CaseCover.astro:40:import { caseThemes, type CaseTheme, type CoverMedia } from '../copy/cases/story';
+src\components\CaseCover.astro:69:const { surface, tone } = caseThemes[theme];
+src\components\CaseNext.astro:3:import { caseNavigationThemes, type CaseTheme } from '../copy/cases/story';
+src\components\CaseNext.astro:17:const { surface, tone } = caseNavigationThemes[theme];
+src\components\CaseArtwork.astro:66:  .case-artwork--agent-ops-console { --artwork-surface: var(--surface-cover-agent); }
+src\components\CaseArtwork.astro:69:  .case-artwork--partner-portal { --artwork-surface: var(--surface-cover-portal); }
+src\components\FeaturedCase.astro:45:  .featured-case--agent .featured-case__stage { padding: var(--stage-inset); border-radius: var(--radius-lg); background: var(--surface-nav-agent); color: var(--text-default); }
+src\components\portal\PortalHome.astro:19:  .portal-home { display: grid; gap: var(--flow-node); padding: var(--stage-inset); background: var(--surface-nav-portal); border-radius: var(--radius-lg); }
+src\components\agent\AgentHome.astro:20:  :global(#work-agent-ops-console .featured-case__stage) { padding: 0; background: var(--surface-nav-agent); color: var(--text-default); }
+src\components\agent\AgentHome.astro:33:    .agent-home { padding: var(--space-6); border-radius: var(--radius-media); background: var(--surface-nav-agent); }
+src\components\agent\AgentCase.astro:100:  .agent-cover { background: var(--surface-nav-agent); }
+src\components\portal\PortalCase.astro:434:  .portal-cover { background: var(--surface-nav-portal); color: var(--text-default); }
+src\copy\cases\story.ts:23:export const caseThemes: Record<CaseTheme, { surface: string; tone: PlateTone }> = {
+src\copy\cases\story.ts:24:  agent: { surface: 'var(--surface-cover-agent)', tone: 'dark' },
+src\copy\cases\story.ts:25:  portal: { surface: 'var(--surface-cover-portal)', tone: 'light' },
+src\copy\cases\story.ts:31:/** Current navigation surfaces. Legacy CaseCover/product plates keep caseThemes. */
+src\copy\cases\story.ts:32:export const caseNavigationThemes: typeof caseThemes = {
+src\copy\cases\story.ts:33:  ...caseThemes,
+src\copy\cases\story.ts:34:  agent: { surface: 'var(--surface-nav-agent)', tone: 'light' },
+src\copy\cases\story.ts:35:  portal: { surface: 'var(--surface-nav-portal)', tone: 'light' },

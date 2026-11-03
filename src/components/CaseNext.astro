@@ -1,6 +1,6 @@
 ---
 /** Next case: one wrapped title and one native link; the product action stays in facts. */
-import { caseThemes, type CaseTheme } from '../copy/cases/story';
+import { caseNavigationThemes, type CaseTheme } from '../copy/cases/story';
 import IconArrow from './IconArrow.astro';
 
 interface Props {
@@ -14,7 +14,7 @@ interface Props {
 }
 
 const { href, title, theme, label, class: className, transitionKey } = Astro.props;
-const { surface, tone } = caseThemes[theme];
+const { surface, tone } = caseNavigationThemes[theme];
 ---
 
 <section class:list={['case-next', className]}>

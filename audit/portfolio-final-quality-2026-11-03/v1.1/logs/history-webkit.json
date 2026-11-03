@@ -1,0 +1,614 @@
+[
+  {
+    "zoom": false,
+    "name": "before",
+    "y": 1064,
+    "state": {
+      "index": 0,
+      "scrollX": 0,
+      "scrollY": 1064
+    },
+    "height": 7596,
+    "body": "none",
+    "entryTop": 397.4375,
+    "entryHeight": 896.859375
+  },
+  {
+    "zoom": false,
+    "name": "case",
+    "y": 0,
+    "state": {
+      "index": 1,
+      "scrollX": 0,
+      "scrollY": 0
+    },
+    "height": 19845,
+    "body": "none"
+  },
+  {
+    "zoom": false,
+    "name": "after page-load",
+    "y": 1064,
+    "state": {
+      "index": 0,
+      "scrollX": 0,
+      "scrollY": 992
+    },
+    "height": 7595,
+    "body": "matrix(1, 0, 0, 1, 0, 4.1428)",
+    "entryTop": 396.189697265625,
+    "entryHeight": 896.859375
+  },
+  {
+    "zoom": false,
+    "name": "settled",
+    "y": 1064,
+    "state": {
+      "index": 0,
+      "scrollX": 0,
+      "scrollY": 1064
+    },
+    "height": 7591,
+    "body": "none",
+    "entryTop": 392.046875,
+    "entryHeight": 896.859375
+  },
+  {
+    "zoom": false,
+    "name": "later",
+    "y": 1064,
+    "state": {
+      "index": 0,
+      "scrollX": 0,
+      "scrollY": 1064
+    },
+    "height": 7591,
+    "body": "none",
+    "entryTop": 392.046875,
+    "entryHeight": 896.859375
+  },
+  {
+    "zoom": false,
+    "calls": [
+      {
+        "event": "astro:page-load",
+        "y": 0,
+        "state": {
+          "index": 0,
+          "scrollX": 0,
+          "scrollY": 0
+        }
+      },
+      {
+        "event": "astro:before-preparation",
+        "y": 1064,
+        "state": {
+          "index": 0,
+          "scrollX": 0,
+          "scrollY": 1064
+        }
+      },
+      {
+        "event": "astro:before-swap",
+        "y": 1064,
+        "state": {
+          "index": 0,
+          "scrollX": 0,
+          "scrollY": 1064
+        }
+      },
+      {
+        "args": [
+          {
+            "left": 0,
+            "top": 0,
+            "behavior": "instant"
+          }
+        ],
+        "before": 1059,
+        "after": 0,
+        "height": 19580,
+        "stack": "@web-inspector://bootstrap.js:19:223\nB@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:6445\nN@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:7829\n@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:9936"
+      },
+      {
+        "event": "astro:after-swap",
+        "y": 0,
+        "state": {
+          "index": 1,
+          "scrollX": 0,
+          "scrollY": 0
+        }
+      },
+      {
+        "event": "astro:page-load",
+        "y": 0,
+        "state": {
+          "index": 1,
+          "scrollX": 0,
+          "scrollY": 0
+        }
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "before": 0,
+        "after": 0,
+        "height": 19845,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6816\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6745\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24805\no@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:45256\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:47001\nAs@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:4727\nJf@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24653"
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "before": 0,
+        "after": 0,
+        "height": 19845,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6816\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6745\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24805\no@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:45256\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:47001\nAs@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:4727\nJf@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24653"
+      },
+      {
+        "args": [
+          0,
+          1059
+        ],
+        "before": 0,
+        "after": 1059,
+        "height": 19845,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:7463\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:7343\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24805\no@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:45256\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:47001\nAs@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:4727\nJf@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24653"
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "before": 1059,
+        "after": 0,
+        "height": 19845,
+        "stack": "@web-inspector://bootstrap.js:19:223\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24823\no@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:45256\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:47001\nAs@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:4727\nJf@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24653"
+      },
+      {
+        "event": "astro:before-preparation",
+        "y": 0,
+        "state": {
+          "index": 0,
+          "scrollX": 0,
+          "scrollY": 1064
+        }
+      },
+      {
+        "event": "astro:before-swap",
+        "y": 0,
+        "state": {
+          "index": 0,
+          "scrollX": 0,
+          "scrollY": 1064
+        }
+      },
+      {
+        "args": [
+          {
+            "left": 0,
+            "top": 0,
+            "behavior": "instant"
+          }
+        ],
+        "before": 0,
+        "after": 0,
+        "height": 7609,
+        "stack": "@web-inspector://bootstrap.js:19:223\nB@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:6445\nN@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:7829\n@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:9936"
+      },
+      {
+        "args": [
+          0,
+          1064
+        ],
+        "before": 0,
+        "after": 1064,
+        "height": 7609,
+        "stack": "@web-inspector://bootstrap.js:19:223\nB@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:6497\nN@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:7829\n@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:9936"
+      },
+      {
+        "event": "astro:after-swap",
+        "y": 1064,
+        "state": {
+          "index": 0,
+          "scrollX": 0,
+          "scrollY": 1064
+        }
+      },
+      {
+        "event": "astro:page-load",
+        "y": 1064,
+        "state": {
+          "index": 0,
+          "scrollX": 0,
+          "scrollY": 1064
+        }
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "before": 992,
+        "after": 0,
+        "height": 7595,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6816\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6745\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24805\no@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:45256\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:47001\nAs@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:4727\nJf@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24653"
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "before": 0,
+        "after": 0,
+        "height": 7595,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6816\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6745\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24805\no@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:45256\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:47001\nAs@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:4727\nJf@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24653"
+      },
+      {
+        "args": [
+          0,
+          992
+        ],
+        "before": 0,
+        "after": 992,
+        "height": 7595,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:7463\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:7343\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24805\no@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:45256\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:47001\nAs@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:4727\nJf@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24653"
+      },
+      {
+        "args": [
+          0,
+          1064
+        ],
+        "before": 992,
+        "after": 1064,
+        "height": 7595,
+        "stack": "@web-inspector://bootstrap.js:19:223\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24823\no@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:45256\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:47001\nAs@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:4727\nJf@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24653"
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "before": 1064,
+        "after": 0,
+        "height": 7591,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6816\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6745\nonComplete@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:25542\nPt@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:11723\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:40333\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:26998\ncl@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:2280\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:31782\np@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:15026"
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "before": 0,
+        "after": 0,
+        "height": 7591,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6816\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6745\nonComplete@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:25542\nPt@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:11723\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:40333\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:26998\ncl@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:2280\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:31782\np@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:15026"
+      },
+      {
+        "args": [
+          0,
+          1064
+        ],
+        "before": 0,
+        "after": 1064,
+        "height": 7591,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:7463\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:7343\nonComplete@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:25542\nPt@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:11723\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:40333\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:26998\ncl@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:2280\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:31782\np@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:15026"
+      }
+    ]
+  },
+  {
+    "zoom": true,
+    "name": "before",
+    "y": 1064,
+    "state": {
+      "index": 0,
+      "scrollX": 0,
+      "scrollY": 1064
+    },
+    "height": 7596,
+    "body": "none",
+    "entryTop": 397.4375,
+    "entryHeight": 896.859375
+  },
+  {
+    "zoom": true,
+    "name": "case",
+    "y": 0,
+    "state": {
+      "index": 1,
+      "scrollX": 0,
+      "scrollY": 0
+    },
+    "height": 19845,
+    "body": "none"
+  },
+  {
+    "zoom": true,
+    "name": "after zoom",
+    "y": 0,
+    "state": {
+      "index": 1,
+      "scrollX": 0,
+      "scrollY": 0
+    },
+    "height": 19845,
+    "body": "none"
+  },
+  {
+    "zoom": true,
+    "name": "after page-load",
+    "y": 1064,
+    "state": {
+      "index": 0,
+      "scrollX": 0,
+      "scrollY": 992
+    },
+    "height": 7596,
+    "body": "matrix(1, 0, 0, 1, 0, 4.5437)",
+    "entryTop": 396.590576171875,
+    "entryHeight": 896.859375
+  },
+  {
+    "zoom": true,
+    "name": "settled",
+    "y": 1064,
+    "state": {
+      "index": 0,
+      "scrollX": 0,
+      "scrollY": 1064
+    },
+    "height": 7591,
+    "body": "none",
+    "entryTop": 392.046875,
+    "entryHeight": 896.859375
+  },
+  {
+    "zoom": true,
+    "name": "later",
+    "y": 1064,
+    "state": {
+      "index": 0,
+      "scrollX": 0,
+      "scrollY": 1064
+    },
+    "height": 7591,
+    "body": "none",
+    "entryTop": 392.046875,
+    "entryHeight": 896.859375
+  },
+  {
+    "zoom": true,
+    "calls": [
+      {
+        "event": "astro:page-load",
+        "y": 0,
+        "state": {
+          "index": 0,
+          "scrollX": 0,
+          "scrollY": 0
+        }
+      },
+      {
+        "event": "astro:before-preparation",
+        "y": 1064,
+        "state": {
+          "index": 0,
+          "scrollX": 0,
+          "scrollY": 1064
+        }
+      },
+      {
+        "event": "astro:before-swap",
+        "y": 1064,
+        "state": {
+          "index": 0,
+          "scrollX": 0,
+          "scrollY": 1064
+        }
+      },
+      {
+        "args": [
+          {
+            "left": 0,
+            "top": 0,
+            "behavior": "instant"
+          }
+        ],
+        "before": 1059,
+        "after": 0,
+        "height": 19580,
+        "stack": "@web-inspector://bootstrap.js:19:223\nB@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:6445\nN@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:7829\n@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:9936"
+      },
+      {
+        "event": "astro:after-swap",
+        "y": 0,
+        "state": {
+          "index": 1,
+          "scrollX": 0,
+          "scrollY": 0
+        }
+      },
+      {
+        "event": "astro:page-load",
+        "y": 0,
+        "state": {
+          "index": 1,
+          "scrollX": 0,
+          "scrollY": 0
+        }
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "before": 0,
+        "after": 0,
+        "height": 19845,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6816\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6745\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24805\no@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:45256\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:47001\nAs@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:4727\nJf@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24653"
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "before": 0,
+        "after": 0,
+        "height": 19845,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6816\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6745\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24805\no@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:45256\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:47001\nAs@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:4727\nJf@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24653"
+      },
+      {
+        "args": [
+          0,
+          1059
+        ],
+        "before": 0,
+        "after": 1059,
+        "height": 19845,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:7463\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:7343\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24805\no@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:45256\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:47001\nAs@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:4727\nJf@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24653"
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "before": 1059,
+        "after": 0,
+        "height": 19845,
+        "stack": "@web-inspector://bootstrap.js:19:223\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24823\no@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:45256\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:47001\nAs@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:4727\nJf@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24653"
+      },
+      {
+        "event": "astro:before-preparation",
+        "y": 0,
+        "state": {
+          "index": 0,
+          "scrollX": 0,
+          "scrollY": 1064
+        }
+      },
+      {
+        "event": "astro:before-swap",
+        "y": 0,
+        "state": {
+          "index": 0,
+          "scrollX": 0,
+          "scrollY": 1064
+        }
+      },
+      {
+        "args": [
+          {
+            "left": 0,
+            "top": 0,
+            "behavior": "instant"
+          }
+        ],
+        "before": 0,
+        "after": 0,
+        "height": 7609,
+        "stack": "@web-inspector://bootstrap.js:19:223\nB@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:6445\nN@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:7829\n@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:9936"
+      },
+      {
+        "args": [
+          0,
+          1064
+        ],
+        "before": 0,
+        "after": 1064,
+        "height": 7609,
+        "stack": "@web-inspector://bootstrap.js:19:223\nB@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:6497\nN@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:7829\n@http://127.0.0.1:4415/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BFfqj1ee.js:1:9936"
+      },
+      {
+        "event": "astro:after-swap",
+        "y": 1064,
+        "state": {
+          "index": 0,
+          "scrollX": 0,
+          "scrollY": 1064
+        }
+      },
+      {
+        "event": "astro:page-load",
+        "y": 1064,
+        "state": {
+          "index": 0,
+          "scrollX": 0,
+          "scrollY": 1064
+        }
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "before": 992,
+        "after": 0,
+        "height": 7596,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6816\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6745\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24805\no@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:45256\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:47001\nAs@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:4727\nJf@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24653"
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "before": 0,
+        "after": 0,
+        "height": 7596,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6816\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6745\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24805\no@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:45256\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:47001\nAs@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:4727\nJf@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24653"
+      },
+      {
+        "args": [
+          0,
+          992
+        ],
+        "before": 0,
+        "after": 992,
+        "height": 7596,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:7463\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:7343\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24805\no@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:45256\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:47001\nAs@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:4727\nJf@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24653"
+      },
+      {
+        "args": [
+          0,
+          1064
+        ],
+        "before": 992,
+        "after": 1064,
+        "height": 7596,
+        "stack": "@web-inspector://bootstrap.js:19:223\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24823\no@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:45256\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:47001\nAs@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:4727\nJf@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:24653"
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "before": 1064,
+        "after": 0,
+        "height": 7591,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6816\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6745\nonComplete@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:25542\nPt@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:11723\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:40333\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:26998\ncl@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:2280\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:31782\np@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:15026"
+      },
+      {
+        "args": [
+          0,
+          0
+        ],
+        "before": 0,
+        "after": 0,
+        "height": 7591,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6816\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:6745\nonComplete@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:25542\nPt@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:11723\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:40333\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:26998\ncl@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:2280\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:31782\np@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:15026"
+      },
+      {
+        "args": [
+          0,
+          1064
+        ],
+        "before": 0,
+        "after": 1064,
+        "height": 7591,
+        "stack": "@web-inspector://bootstrap.js:19:223\ni@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:22:826\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:7463\nforEach@[native code]\nQr@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:29:7343\nonComplete@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:51:25542\nPt@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:11723\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:40333\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:26998\ncl@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:2280\n@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:31782\np@http://127.0.0.1:4415/_astro/BaseLayout.astro_astro_type_script_index_0_lang.D7KxID18.js:8:15026"
+      }
+    ]
+  }
+]

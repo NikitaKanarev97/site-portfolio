@@ -1,0 +1,2749 @@
+{
+  "checks": [
+    {
+      "name": "webkit en-1440 direct agent readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-1440 direct agent surface",
+      "pass": true
+    },
+    {
+      "name": "webkit en-1440 direct portal readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-1440 direct portal surface",
+      "pass": true
+    },
+    {
+      "name": "webkit en-1440 portal rest surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-1440 portal rest contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 6.885946987750594,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit en-1440 portal hover surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-1440 portal hover contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 5.609289946007159,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit en-1440 portal focus surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-1440 portal focus contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 5.609289946007159,
+        "focusRatio": 4.3627234356000475
+      }
+    },
+    {
+      "name": "webkit en-1440 portal focus visible",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-1440 portal pressed surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-1440 portal pressed contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 8.488993908960618,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit en-1440 agent rest surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-1440 agent rest contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 7.22565712513418,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit en-1440 agent hover surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-1440 agent hover contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 5.886017702054688,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit en-1440 agent focus surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-1440 agent focus contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 5.886017702054688,
+        "focusRatio": 4.577953291466019
+      }
+    },
+    {
+      "name": "webkit en-1440 agent focus visible",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-1440 agent pressed surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-1440 agent pressed contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 8.907788490474449,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit en-1440 Agent Home normal focus ancestry",
+      "pass": true
+    },
+    {
+      "name": "webkit en-1440 keyboard arrival top",
+      "pass": true
+    },
+    {
+      "name": "webkit en-1440 after navigation zoom trap",
+      "pass": true
+    },
+    {
+      "name": "webkit en-1440 after navigation zoom return",
+      "pass": true
+    },
+    {
+      "name": "webkit en-1440 history back scroll",
+      "pass": true,
+      "data": {
+        "expected": 752,
+        "actual": 752
+      }
+    },
+    {
+      "name": "webkit en-1440 forward readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-1440 forward surface",
+      "pass": true
+    },
+    {
+      "name": "webkit en-1440 interrupted back readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-1440 interrupted forward readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-1440 interrupted final route",
+      "pass": true
+    },
+    {
+      "name": "webkit en-1440 reduce readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-1440 reduce no active native motion",
+      "pass": true
+    },
+    {
+      "name": "webkit en-1440 project dialog after navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit en-1440 project dialog return",
+      "pass": true
+    },
+    {
+      "name": "webkit en-1440 runtime",
+      "pass": true,
+      "data": {
+        "errors": [],
+        "failed": []
+      }
+    },
+    {
+      "name": "webkit en-1440 no-js agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit en-1440 no-js portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit en-1440 no-js native navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit en-1440 no-view-transition agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit en-1440 no-view-transition portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit en-1440 unsupported VT navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit en-1440 delayed-js agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit en-1440 late bundle agent stays readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit en-1440 delayed-js portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit en-1440 late bundle portal stays readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit en-390 direct agent readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-390 direct agent surface",
+      "pass": true
+    },
+    {
+      "name": "webkit en-390 direct portal readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-390 direct portal surface",
+      "pass": true
+    },
+    {
+      "name": "webkit en-390 portal rest surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-390 portal rest contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 6.885946987750594,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit en-390 portal hover surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-390 portal hover contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 5.609289946007159,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit en-390 portal focus surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-390 portal focus contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 5.609289946007159,
+        "focusRatio": 4.3627234356000475
+      }
+    },
+    {
+      "name": "webkit en-390 portal focus visible",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-390 portal pressed surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-390 portal pressed contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 8.488993908960618,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit en-390 agent rest surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-390 agent rest contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 7.22565712513418,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit en-390 agent hover surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-390 agent hover contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 5.886017702054688,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit en-390 agent focus surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-390 agent focus contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 5.886017702054688,
+        "focusRatio": 4.577953291466019
+      }
+    },
+    {
+      "name": "webkit en-390 agent focus visible",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-390 agent pressed surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-390 agent pressed contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 8.907788490474449,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit en-390 Agent Home normal focus ancestry",
+      "pass": true
+    },
+    {
+      "name": "webkit en-390 keyboard arrival top",
+      "pass": true
+    },
+    {
+      "name": "webkit en-390 after navigation menu open",
+      "pass": true
+    },
+    {
+      "name": "webkit en-390 after navigation menu focus",
+      "pass": true
+    },
+    {
+      "name": "webkit en-390 after navigation zoom trap",
+      "pass": true
+    },
+    {
+      "name": "webkit en-390 after navigation zoom return",
+      "pass": true
+    },
+    {
+      "name": "webkit en-390 history back scroll",
+      "pass": true,
+      "data": {
+        "expected": 1064,
+        "actual": 1064
+      }
+    },
+    {
+      "name": "webkit en-390 forward readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-390 forward surface",
+      "pass": true
+    },
+    {
+      "name": "webkit en-390 interrupted back readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-390 interrupted forward readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-390 interrupted final route",
+      "pass": true
+    },
+    {
+      "name": "webkit en-390 reduce readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-390 reduce no active native motion",
+      "pass": true
+    },
+    {
+      "name": "webkit en-390 project dialog after navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit en-390 project dialog return",
+      "pass": true
+    },
+    {
+      "name": "webkit en-390 runtime",
+      "pass": true,
+      "data": {
+        "errors": [],
+        "failed": []
+      }
+    },
+    {
+      "name": "webkit en-390 no-js agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit en-390 no-js portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit en-390 no-js native navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit en-390 no-view-transition agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit en-390 no-view-transition portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit en-390 unsupported VT navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit en-390 delayed-js agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit en-390 late bundle agent stays readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit en-390 delayed-js portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit en-390 late bundle portal stays readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit en-360 direct agent readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-360 direct agent surface",
+      "pass": true
+    },
+    {
+      "name": "webkit en-360 direct portal readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-360 direct portal surface",
+      "pass": true
+    },
+    {
+      "name": "webkit en-360 portal rest surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-360 portal rest contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 6.885946987750594,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit en-360 portal hover surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-360 portal hover contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 5.609289946007159,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit en-360 portal focus surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-360 portal focus contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 5.609289946007159,
+        "focusRatio": 4.3627234356000475
+      }
+    },
+    {
+      "name": "webkit en-360 portal focus visible",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-360 portal pressed surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-360 portal pressed contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 8.488993908960618,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit en-360 agent rest surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-360 agent rest contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 7.22565712513418,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit en-360 agent hover surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-360 agent hover contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 5.886017702054688,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit en-360 agent focus surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-360 agent focus contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 5.886017702054688,
+        "focusRatio": 4.577953291466019
+      }
+    },
+    {
+      "name": "webkit en-360 agent focus visible",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-360 agent pressed surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit en-360 agent pressed contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 8.907788490474449,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit en-360 Agent Home normal focus ancestry",
+      "pass": true
+    },
+    {
+      "name": "webkit en-360 keyboard arrival top",
+      "pass": true
+    },
+    {
+      "name": "webkit en-360 after navigation menu open",
+      "pass": true
+    },
+    {
+      "name": "webkit en-360 after navigation menu focus",
+      "pass": true
+    },
+    {
+      "name": "webkit en-360 after navigation zoom trap",
+      "pass": true
+    },
+    {
+      "name": "webkit en-360 after navigation zoom return",
+      "pass": true
+    },
+    {
+      "name": "webkit en-360 history back scroll",
+      "pass": true,
+      "data": {
+        "expected": 1043,
+        "actual": 1043
+      }
+    },
+    {
+      "name": "webkit en-360 forward readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-360 forward surface",
+      "pass": true
+    },
+    {
+      "name": "webkit en-360 interrupted back readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-360 interrupted forward readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-360 interrupted final route",
+      "pass": true
+    },
+    {
+      "name": "webkit en-360 reduce readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit en-360 reduce no active native motion",
+      "pass": true
+    },
+    {
+      "name": "webkit en-360 project dialog after navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit en-360 project dialog return",
+      "pass": true
+    },
+    {
+      "name": "webkit en-360 runtime",
+      "pass": true,
+      "data": {
+        "errors": [],
+        "failed": []
+      }
+    },
+    {
+      "name": "webkit en-360 no-js agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit en-360 no-js portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit en-360 no-js native navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit en-360 no-view-transition agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit en-360 no-view-transition portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit en-360 unsupported VT navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit en-360 delayed-js agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit en-360 late bundle agent stays readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit en-360 delayed-js portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit en-360 late bundle portal stays readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit ru-1440 direct agent readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-1440 direct agent surface",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-1440 direct portal readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-1440 direct portal surface",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-1440 portal rest surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-1440 portal rest contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 6.885946987750594,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit ru-1440 portal hover surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-1440 portal hover contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 5.609289946007159,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit ru-1440 portal focus surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-1440 portal focus contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 5.609289946007159,
+        "focusRatio": 4.3627234356000475
+      }
+    },
+    {
+      "name": "webkit ru-1440 portal focus visible",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-1440 portal pressed surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-1440 portal pressed contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 8.488993908960618,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit ru-1440 agent rest surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-1440 agent rest contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 7.22565712513418,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit ru-1440 agent hover surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-1440 agent hover contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 5.886017702054688,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit ru-1440 agent focus surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-1440 agent focus contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 5.886017702054688,
+        "focusRatio": 4.577953291466019
+      }
+    },
+    {
+      "name": "webkit ru-1440 agent focus visible",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-1440 agent pressed surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-1440 agent pressed contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 8.907788490474449,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit ru-1440 Agent Home normal focus ancestry",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-1440 keyboard arrival top",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-1440 after navigation zoom trap",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-1440 after navigation zoom return",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-1440 history back scroll",
+      "pass": true,
+      "data": {
+        "expected": 772,
+        "actual": 772
+      }
+    },
+    {
+      "name": "webkit ru-1440 forward readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-1440 forward surface",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-1440 interrupted back readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-1440 interrupted forward readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-1440 interrupted final route",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-1440 reduce readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-1440 reduce no active native motion",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-1440 project dialog after navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-1440 project dialog return",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-1440 runtime",
+      "pass": true,
+      "data": {
+        "errors": [],
+        "failed": []
+      }
+    },
+    {
+      "name": "webkit ru-1440 no-js agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit ru-1440 no-js portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit ru-1440 no-js native navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-1440 no-view-transition agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit ru-1440 no-view-transition portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit ru-1440 unsupported VT navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-1440 delayed-js agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit ru-1440 late bundle agent stays readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit ru-1440 delayed-js portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit ru-1440 late bundle portal stays readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit ru-390 direct agent readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-390 direct agent surface",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-390 direct portal readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-390 direct portal surface",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-390 portal rest surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-390 portal rest contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 6.885946987750594,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit ru-390 portal hover surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-390 portal hover contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 5.609289946007159,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit ru-390 portal focus surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-390 portal focus contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 5.609289946007159,
+        "focusRatio": 4.3627234356000475
+      }
+    },
+    {
+      "name": "webkit ru-390 portal focus visible",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-390 portal pressed surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-390 portal pressed contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 8.488993908960618,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit ru-390 agent rest surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-390 agent rest contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 7.22565712513418,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit ru-390 agent hover surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-390 agent hover contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 5.886017702054688,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit ru-390 agent focus surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-390 agent focus contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 5.886017702054688,
+        "focusRatio": 4.577953291466019
+      }
+    },
+    {
+      "name": "webkit ru-390 agent focus visible",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-390 agent pressed surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-390 agent pressed contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 8.907788490474449,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit ru-390 Agent Home normal focus ancestry",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-390 keyboard arrival top",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-390 after navigation menu open",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-390 after navigation menu focus",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-390 after navigation zoom trap",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-390 after navigation zoom return",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-390 history back scroll",
+      "pass": true,
+      "data": {
+        "expected": 1064,
+        "actual": 1064
+      }
+    },
+    {
+      "name": "webkit ru-390 forward readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-390 forward surface",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-390 interrupted back readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-390 interrupted forward readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-390 interrupted final route",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-390 reduce readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-390 reduce no active native motion",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-390 project dialog after navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-390 project dialog return",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-390 runtime",
+      "pass": true,
+      "data": {
+        "errors": [],
+        "failed": []
+      }
+    },
+    {
+      "name": "webkit ru-390 no-js agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit ru-390 no-js portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit ru-390 no-js native navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-390 no-view-transition agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit ru-390 no-view-transition portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit ru-390 unsupported VT navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-390 delayed-js agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit ru-390 late bundle agent stays readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit ru-390 delayed-js portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit ru-390 late bundle portal stays readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit ru-360 direct agent readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-360 direct agent surface",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-360 direct portal readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-360 direct portal surface",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-360 portal rest surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-360 portal rest contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 6.885946987750594,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit ru-360 portal hover surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-360 portal hover contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 5.609289946007159,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit ru-360 portal focus surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-360 portal focus contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 5.609289946007159,
+        "focusRatio": 4.3627234356000475
+      }
+    },
+    {
+      "name": "webkit ru-360 portal focus visible",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-360 portal pressed surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-360 portal pressed contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(237, 242, 248)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 15.335981344680938,
+        "labelRatio": 8.488993908960618,
+        "focusRatio": 15.335981344680938
+      }
+    },
+    {
+      "name": "webkit ru-360 agent rest surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-360 agent rest contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(83, 83, 76)",
+        "arrow": "rgb(83, 83, 76)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 7.22565712513418,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit ru-360 agent hover surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-360 agent hover contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 5.886017702054688,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit ru-360 agent focus surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-360 agent focus contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 5.886017702054688,
+        "focusRatio": 4.577953291466019
+      }
+    },
+    {
+      "name": "webkit ru-360 agent focus visible",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(181, 43, 27)",
+        "arrow": "rgb(181, 43, 27)",
+        "focus": "rgb(212, 50, 32)",
+        "outline": "solid",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-360 agent pressed surface/tone",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light"
+      }
+    },
+    {
+      "name": "webkit ru-360 agent pressed contrast",
+      "pass": true,
+      "data": {
+        "surface": "rgb(247, 247, 245)",
+        "text": "rgb(27, 27, 24)",
+        "label": "rgb(132, 32, 20)",
+        "arrow": "rgb(132, 32, 20)",
+        "focus": "rgb(27, 27, 24)",
+        "outline": "none",
+        "tone": "light",
+        "textRatio": 16.092564039665575,
+        "labelRatio": 8.907788490474449,
+        "focusRatio": 16.092564039665575
+      }
+    },
+    {
+      "name": "webkit ru-360 Agent Home normal focus ancestry",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-360 keyboard arrival top",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-360 after navigation menu open",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-360 after navigation menu focus",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-360 after navigation zoom trap",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-360 after navigation zoom return",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-360 history back scroll",
+      "pass": true,
+      "data": {
+        "expected": 1057,
+        "actual": 1057
+      }
+    },
+    {
+      "name": "webkit ru-360 forward readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-360 forward surface",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-360 interrupted back readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-360 interrupted forward readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-360 interrupted final route",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-360 reduce readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "transform": "none",
+        "hidden": []
+      }
+    },
+    {
+      "name": "webkit ru-360 reduce no active native motion",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-360 project dialog after navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-360 project dialog return",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-360 runtime",
+      "pass": true,
+      "data": {
+        "errors": [],
+        "failed": []
+      }
+    },
+    {
+      "name": "webkit ru-360 no-js agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit ru-360 no-js portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit ru-360 no-js native navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-360 no-view-transition agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit ru-360 no-view-transition portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit ru-360 unsupported VT navigation",
+      "pass": true
+    },
+    {
+      "name": "webkit ru-360 delayed-js agent",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit ru-360 late bundle agent stays readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(247, 247, 245)"
+      }
+    },
+    {
+      "name": "webkit ru-360 delayed-js portal",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    },
+    {
+      "name": "webkit ru-360 late bundle portal stays readable",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "hidden": 0,
+        "surface": "rgb(237, 242, 248)"
+      }
+    }
+  ],
+  "issues": []
+}

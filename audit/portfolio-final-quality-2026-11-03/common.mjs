@@ -3,7 +3,7 @@ import {mkdir,writeFile} from 'node:fs/promises';
 import sharp from 'sharp';
 const require=createRequire('D:/Claude-projects/Agent-ops-console/package.json');
 export const pw=require('playwright');
-export const root='audit/portfolio-final-quality-2026-11-03';
+export const root=process.env.QA_ROOT??'audit/portfolio-final-quality-2026-11-03';
 export const base=process.env.QA_BASE??'http://127.0.0.1:4414';
 export const routes=['/','/about/','/work/agent-ops-console/','/work/partner-portal/','/work/learn/','/work/vet-clinic/','/work/pawly/'];
 export const launch=(engine='chromium')=>pw[engine].launch(engine==='chromium'?{executablePath:'C:/Users/kanar/AppData/Local/ms-playwright/chromium-1243/chrome-win64/chrome.exe'}:{});

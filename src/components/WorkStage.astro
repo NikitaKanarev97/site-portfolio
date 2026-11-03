@@ -22,7 +22,7 @@ const art = caseArt(theme, locale);
 const shots = media.variant === 'proof' ? media.panels ?? [media.shot] : media.variant === 'screen' ? media.items : [];
 const visibleShots: ShotItem[] = theme === 'pawly' ? shots.slice(-1) : shots;
 ---
-<div class:list={['work-stage', `work-stage--${theme}`, `work-stage--${usage}`]} data-focus-tone={theme === 'agent' || theme === 'learn' ? 'inverse' : undefined} data-motion={theme === 'agent' && usage === 'cover' ? 'cover-interlock' : undefined}>
+<div class:list={['work-stage', `work-stage--${theme}`, `work-stage--${usage}`]} data-focus-tone={theme === 'learn' || (theme === 'agent' && usage === 'cover') ? 'inverse' : undefined} data-motion={theme === 'agent' && usage === 'cover' ? 'cover-interlock' : undefined}>
   {theme === 'agent' && usage === 'home' ? <AgentHome locale={locale} loading={loading} /> : theme === 'portal' && usage === 'home' ? <PortalHome locale={locale} loading={loading} /> : theme === 'learn' && usage === 'home' ? <LearnHome locale={locale} loading={loading} /> : theme === 'pawly' && usage === 'home' ? <PawlyHome locale={locale} loading={loading} href={href} linkLabel={linkLabel} /> : theme === 'learn' ? <LearnStage locale={locale} loading={loading} href={href} linkLabel={linkLabel} /> : theme === 'vet' ? <VetStage locale={locale} loading={loading} href={href} linkLabel={linkLabel} /> : <>
   {theme === 'portal' && <div class="work-stage__annotation">
     <p class="ds-display-7xl work-stage__figure">38</p>

@@ -28,6 +28,13 @@ export const caseThemes: Record<CaseTheme, { surface: string; tone: PlateTone }>
   pawly: { surface: 'var(--surface-cover-pawly)', tone: 'light' },
 };
 
+/** Current navigation surfaces. Legacy CaseCover/product plates keep caseThemes. */
+export const caseNavigationThemes: typeof caseThemes = {
+  ...caseThemes,
+  agent: { surface: 'var(--surface-nav-agent)', tone: 'light' },
+  portal: { surface: 'var(--surface-nav-portal)', tone: 'light' },
+};
+
 /** Один экран кадра. Десктоп 1440×900 @2x, телефон 390×844 @3x (§6). */
 export interface ShotItem {
   src: string;

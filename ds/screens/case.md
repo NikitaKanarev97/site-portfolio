@@ -1,5 +1,11 @@
 # Screen: страница кейса — общие модули и история пилота
 
+**V1.1 · 03.11.2026.** Published Agent/Portal Home, hero and navigation share
+`surface-nav-agent` / `surface-nav-portal` (neutral / cool silver-grey). CaseNext
+reads `caseNavigationThemes`, both light tone; group/old/new native snapshots
+use the same roles and retain 1s choreography. Historical `caseThemes` still
+belongs to legacy covers and documentary surfaces. Learn/Vet/Pawly unchanged.
+
 **FIXES · 07.10.2026.** Общие обложки и шаги выровнены по ролям; сцене принадлежит один содержательный поясняющий слой. Mobile Learn/Vet — один кадр на обложке, остальные материалы в рассказе. Specimen — компактный выбор доменных состояний с native details; таблицы кеглей/цветов из презентации убраны. Кадры с выносками прямо на поле, пины/легенда без дополнительных линий. Итоги Result/Trade-off, намеренный крупный Agent-акцент сохранён. CaseNext — одна ссылка/одно название без marquee; продукт открывается из фактов текущего кейса. Полный список и приёмка — tasks/robert-review-2026-10-07/fixes-execution/.
 
 > **Common A · 04.10.2026:** [story-contract.md](../story-contract.md) и `src/components/CaseStory.astro` реализуют упорядоченные blocks поверх существующих модулей. Контрольные EN/RU preview: Agent Ops и фрагмент Portal; опубликованные страницы сохраняют прежний fallback. Исторические десять блоков ниже не задают состав новой истории. Артефакты выбираются по смыслу кейса, checkpoint не обязателен другим проектам, Agent Ops не закреплён первым. Последняя CaseNext внизу файла имеет приоритет над историческими правилами паузы S2/S3.

@@ -1,3 +1,11 @@
+## Navigation surface correction · 03.11.2026 · pending independent review
+
+CaseNext reads `caseNavigationThemes`: light Agent/Portal use `surface-nav-agent`
+and `surface-nav-portal`; legacy CaseCover keeps `caseThemes`. Current Home/hero
+and group/old/new snapshots use the same navigation roles. Agent Home wrappers
+no longer inherit inverse focus; Agent legacy cover and Learn retain it. Existing
+CaseNext light hover/pressed/arrow/keyboard styles apply without new choreography.
+
 ## Home cover polish · 01.11.2026 · pending independent review
 
 PortalHome selects Home-only `home-decision-*` entries through the existing native
@@ -187,7 +195,7 @@ FeaturedCase исполняет паттерн FeaturedCaseCover: одна сс�
 | `CaseCarousel` | лента с краем следующего слайда, блок 05 | `slides`, `captions`, подписи кнопок | `margin-*`, `border-strong`, `motion-state` |
 | `CaseSteps` | закреплённый экран со сменой шагов, блок 06 | `label`, `items` | `section-gap` (точка закрепления) |
 | `CaseImpact` | итоговые карточки, цитата, цена решения | `cards`, `quote?`, `cost?` | `border-default`, `radius-lg` |
-| `CaseNext` | следующий кейс на его цвете, бегущая строка | `href`, `title`, `theme`, `label`, `prototype?` | `surface-cover-*`, `.ds-pressable` |
+| `CaseNext` | следующий кейс на его цвете, одно переносимое название | `href`, `title`, `theme`, `label`, `prototype?` | `surface-nav-*` (Agent/Portal), `surface-cover-*` (Learn/Vet/Pawly), `.ds-pressable` |
 
 - **Доступность.** Обложка-видео: кнопка паузы видима всегда, подпись меняется с действием, при reduced-motion ролик не стартует. Карусель: лента — фокусируемая область с именем, кнопки появляются только с JS, у выключенной — `disabled`. `CaseNext`: одна ссылка с именем «метка: название», копии бегущей строки `aria-hidden`. Стрелки `CaseNumbers` и номера выносок на кадре скрыты от скринридера: порядок несёт список.
 - **Нажатие.** Кнопки карусели и паузы — `:active`; `CaseNext` — `.ds-pressable`.

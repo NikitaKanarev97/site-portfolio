@@ -1,5 +1,15 @@
 # Foundation — Site-portfolio
 
+**03.11.2026 · V1.1 navigation surfaces.** `surface-nav-agent` derives from
+`surface-subtle` (#F7F7F5); `surface-nav-portal` derives from
+`surface-portal-editorial` (#EDF2F8). Current Home scene, case hero, CaseNext and
+native group/old/new snapshots share these roles. Both use light text tone
+(text-default/text-subtle and normal tomato focus). Legacy `surface-cover-agent`
+and `surface-cover-portal`, product plates and accepted Learn/Vet/Pawly stay intact.
+On Agent/Portal respectively: text-default 16.09/15.34:1; text-subtle 7.23/6.89:1;
+focus #D43220 4.58/4.36:1 (focus needs 3:1). Small action labels use text-subtle
+at rest and darker hover/pressed colors. See V1.1 report for measured states.
+
 **31.10.2026 · Portal V2.1.** Case-scoped `surface-portal-editorial` → cool-100 #EDF2F8 and `surface-portal-context` → cool-50 #F3F6FA. Only PortalCase/PortalHome consume these roles; global surface-cover-portal and all other cases retain their values. Charcoal gray-900 on cool-100: 15.34:1; gray-700: 6.89:1; gray-500: 4.56:1 (WCAG). Tokens mirrored byte-for-byte. Compact native DeltaRow replaces the tall cover inset; the cart line retains its meaningful native status edge inside a 20 px canvas field.
 
 **07.10.2026 · завершение пакета 01.** Акцент — насыщенный томатный ряд: #D43220 на светлом, #FF8A75 на инверсном, #B52B1B hover, #842014 pressed. `surface-cover-portal` → butter-100 #F3E6AE (07.10.2026, вместо lavender-100 #DDD5FF — владелец отклонил розовый оттенок): тёплый фон чисто отделяет холодное окно документального UI без перекраски источников. `focus-ring-color-on-inverse` → accent-300; `[data-focus-tone="inverse"]` назначает его тёмному холсту, CaseCover/CaseNext с dark tone и dark diagrams получают его из общего слоя. Белые шапки проектов используют обычный focus. Это актуальная палитра поверх исторических записей ниже. Локальные Onest WOFF2 побайтово соответствуют @fontsource-variable/onest 5.3.1; OG использует статические Onest 400/500/800 TTF с кириллицей и OFL. Проверки и границы результата — tasks/robert-review-2026-10-07/reports/01-result.md.

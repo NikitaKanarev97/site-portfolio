@@ -1,0 +1,9 @@
+EXCEPTION chromium en-1440 page.waitForURL: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "http://127.0.0.1:4415/work/agent-ops-console/" until "load"
+  navigated to "http://127.0.0.1:4415/"
+  navigated to "http://127.0.0.1:4415/work/agent-ops-console"
+============================================================
+FAIL chromium en-1440 no-js native navigation undefined
+FAIL chromium en-1440 unsupported VT navigation undefined
+DONE chromium en-1440

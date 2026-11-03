@@ -206,8 +206,13 @@ body.ds-scroll-locked { overflow: hidden; }
     animation-duration: var(--case-transition-duration);
     animation-timing-function: var(--case-transition-ease);
   }
-  ::view-transition-group(case-agent) { background: var(--surface-cover-agent); }
-  ::view-transition-group(case-portal) { background: var(--surface-cover-portal); }
+  /* Paint transparent snapshot pixels too, including the gap between out/in. */
+  ::view-transition-group(case-agent),
+  ::view-transition-old(case-agent),
+  ::view-transition-new(case-agent) { background: var(--surface-nav-agent); }
+  ::view-transition-group(case-portal),
+  ::view-transition-old(case-portal),
+  ::view-transition-new(case-portal) { background: var(--surface-nav-portal); }
   ::view-transition-group(case-learn) { background: var(--surface-cover-learn); }
   ::view-transition-group(case-vet) { background: var(--surface-cover-vet); }
   ::view-transition-group(case-pawly) { background: var(--surface-cover-pawly); }

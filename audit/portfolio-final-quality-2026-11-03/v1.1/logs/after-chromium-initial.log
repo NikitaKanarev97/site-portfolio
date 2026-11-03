@@ -1,0 +1,55 @@
+CAPTURED chromium en-1440 home-to-agent finish=1020ms
+CAPTURED chromium en-1440 home-to-portal finish=1016ms
+CAPTURED chromium en-1440 pawly-to-agent finish=1023ms
+CAPTURED chromium en-1440 agent-to-portal finish=1014ms
+FAIL en-1440 portal-to-learn destination surface "rgb(247, 247, 245)"
+CAPTURED chromium en-1440 portal-to-learn finish=1035ms
+CAPTURED chromium en-1440 learn-to-vet finish=1026ms
+FAIL en-1440 vet-to-pawly destination surface "rgb(255, 255, 255)"
+CAPTURED chromium en-1440 vet-to-pawly finish=1021ms
+CAPTURED chromium en-390 home-to-agent finish=1012ms
+CAPTURED chromium en-390 home-to-portal finish=1024ms
+CAPTURED chromium en-390 pawly-to-agent finish=1013ms
+CAPTURED chromium en-390 agent-to-portal finish=1018ms
+FAIL en-390 portal-to-learn destination surface "rgb(247, 247, 245)"
+CAPTURED chromium en-390 portal-to-learn finish=1018ms
+CAPTURED chromium en-390 learn-to-vet finish=1026ms
+FAIL en-390 vet-to-pawly destination surface "rgb(255, 255, 255)"
+CAPTURED chromium en-390 vet-to-pawly finish=1017ms
+CAPTURED chromium en-360 home-to-agent finish=1019ms
+CAPTURED chromium en-360 home-to-portal finish=1027ms
+CAPTURED chromium en-360 pawly-to-agent finish=1018ms
+CAPTURED chromium en-360 agent-to-portal finish=1021ms
+FAIL en-360 portal-to-learn destination surface "rgb(247, 247, 245)"
+CAPTURED chromium en-360 portal-to-learn finish=1026ms
+CAPTURED chromium en-360 learn-to-vet finish=1025ms
+FAIL en-360 vet-to-pawly destination surface "rgb(255, 255, 255)"
+CAPTURED chromium en-360 vet-to-pawly finish=1014ms
+CAPTURED chromium ru-1440 home-to-agent finish=1019ms
+CAPTURED chromium ru-1440 home-to-portal finish=1018ms
+CAPTURED chromium ru-1440 pawly-to-agent finish=1025ms
+CAPTURED chromium ru-1440 agent-to-portal finish=1021ms
+FAIL ru-1440 portal-to-learn destination surface "rgb(247, 247, 245)"
+CAPTURED chromium ru-1440 portal-to-learn finish=1021ms
+CAPTURED chromium ru-1440 learn-to-vet finish=1019ms
+FAIL ru-1440 vet-to-pawly destination surface "rgb(255, 255, 255)"
+CAPTURED chromium ru-1440 vet-to-pawly finish=1016ms
+CAPTURED chromium ru-390 home-to-agent finish=1014ms
+CAPTURED chromium ru-390 home-to-portal finish=1026ms
+CAPTURED chromium ru-390 pawly-to-agent finish=1019ms
+CAPTURED chromium ru-390 agent-to-portal finish=1019ms
+FAIL ru-390 portal-to-learn destination surface "rgb(247, 247, 245)"
+CAPTURED chromium ru-390 portal-to-learn finish=1011ms
+CAPTURED chromium ru-390 learn-to-vet finish=1019ms
+FAIL ru-390 vet-to-pawly destination surface "rgb(255, 255, 255)"
+CAPTURED chromium ru-390 vet-to-pawly finish=1011ms
+CAPTURED chromium ru-360 home-to-agent finish=1013ms
+CAPTURED chromium ru-360 home-to-portal finish=1026ms
+CAPTURED chromium ru-360 pawly-to-agent finish=1023ms
+CAPTURED chromium ru-360 agent-to-portal finish=1011ms
+FAIL ru-360 portal-to-learn destination surface "rgb(247, 247, 245)"
+CAPTURED chromium ru-360 portal-to-learn finish=1020ms
+CAPTURED chromium ru-360 learn-to-vet finish=1019ms
+FAIL ru-360 vet-to-pawly destination surface "rgb(255, 255, 255)"
+CAPTURED chromium ru-360 vet-to-pawly finish=1017ms
+TOTAL 316 FAIL 12 EXCEPTIONS 0

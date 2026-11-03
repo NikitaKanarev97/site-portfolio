@@ -227,6 +227,9 @@
   --surface-portal-editorial:     var(--cool-100);
   --surface-portal-context:       var(--cool-50);
   --surface-portal-native:        var(--cool-25);
+  /* Current portfolio entry/hero/navigation surfaces; legacy covers stay intact. */
+  --surface-nav-agent:            var(--surface-subtle);
+  --surface-nav-portal:           var(--surface-portal-editorial);
   --surface-cover-learn:          var(--navy-800);
   --surface-cover-vet:            var(--sage-100);
   --surface-cover-pawly:          var(--sand-100);

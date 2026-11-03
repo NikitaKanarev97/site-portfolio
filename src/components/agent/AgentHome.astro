@@ -17,7 +17,7 @@ const copy = (locale === 'ru' ? agentCaseRu : agentCaseEn).home;
   </div>
 </div>
 <style>
-  :global(#work-agent-ops-console .featured-case__stage) { padding: 0; background: var(--surface-subtle); color: var(--text-default); }
+  :global(#work-agent-ops-console .featured-case__stage) { padding: 0; background: var(--surface-nav-agent); color: var(--text-default); }
   /* The local story supplies the mobile context once, before its native image. */
   :global(#work-agent-ops-console > .featured-case__outcome) { display: none; }
   .agent-home { --focus-ring-color: var(--border-focus); display: grid; gap: var(--flow-text); color: var(--text-default); }
@@ -30,7 +30,7 @@ const copy = (locale === 'ru' ? agentCaseRu : agentCaseEn).home;
     :global(#work-agent-ops-console .featured-case__stage) { background: transparent; }
   }
   @media (--bp-md) {
-    .agent-home { padding: var(--space-6); border-radius: var(--radius-media); background: var(--surface-subtle); }
+    .agent-home { padding: var(--space-6); border-radius: var(--radius-media); background: var(--surface-nav-agent); }
     .agent-home__story { max-inline-size: var(--measure-case); }
     :global(#work-agent-ops-console > .featured-case__outcome) { display: block; }
   }
