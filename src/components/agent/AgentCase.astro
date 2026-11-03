@@ -129,9 +129,9 @@ const policyShots = copy.sections.find(s => s.id === 'policy')!.shots!.map((s, i
   .agent-model__intake, .agent-model__review { display: grid; justify-items: center; gap: var(--flow-pair); text-align: center; }
   .agent-model__decision { padding: var(--space-4) var(--space-6); border: var(--border-width) solid var(--diagram-stroke); border-radius: var(--diagram-node-radius); background: var(--diagram-node); }
   .agent-model__fork, .agent-model__branches { display: grid; gap: var(--flow-text); }
-  .agent-model__sample, .agent-model__commitment { display: grid; gap: var(--flow-pair); padding-inline-start: var(--space-4); border-inline-start: var(--border-width) solid var(--diagram-arrow); }
-  .agent-model__commitment { background: var(--diagram-node); padding: var(--space-4); border: var(--border-width) solid var(--diagram-stroke); border-radius: var(--diagram-node-radius); }
-  .agent-model__branches > div { display: grid; gap: var(--flow-pair); padding: var(--space-6); background: var(--diagram-node); border-block-start: var(--border-width) solid var(--diagram-stroke); }
+  /* One node grammar: every step someone acts on is a full box; the low-risk path is the same box, dashed and unfilled. */
+  .agent-model__sample, .agent-model__commitment, .agent-model__branches > div { display: grid; gap: var(--flow-pair); align-content: start; padding: var(--space-6); border: var(--border-width) solid var(--diagram-stroke); border-radius: var(--diagram-node-radius); background: var(--diagram-node); }
+  .agent-model__sample { border-style: dashed; border-color: var(--diagram-arrow); background: transparent; }
   .agent-model__feedback { display: grid; gap: var(--flow-pair); padding-block-start: var(--flow-text); border-block-start: var(--border-width) solid var(--diagram-arrow); }
   .agent-model__note { max-inline-size: var(--measure-text); }
   .agent-investigation { display: grid; gap: var(--flow-block); }
@@ -177,11 +177,9 @@ const policyShots = copy.sections.find(s => s.id === 'policy')!.shots!.map((s, i
     .agent-cover__media { max-inline-size: var(--measure-lead); justify-self: center; }
     .agent-problem { grid-template-columns: minmax(0,7fr) minmax(0,5fr); gap: var(--space-16); }
     .agent-model { padding: var(--space-12); }
-    .agent-model__sizing { grid-template-columns: minmax(0,1fr) auto; align-items: baseline; }
-    .agent-model__sizing > .agent-body { grid-column: 2; }
     .agent-model__fork { grid-template-columns: minmax(0,4fr) minmax(0,8fr); align-items: center; }
     .agent-model__branches { grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-12); position: relative; padding-block-start: var(--space-6); }
-    .agent-model__branches::before { content: ''; position: absolute; inset-inline: 25%; inset-block-start: 0; block-size: var(--space-6); border: var(--border-width) solid var(--diagram-arrow); border-block-end: 0; }
+    .agent-model__branches::before { content: ''; position: absolute; inset-inline: calc((100% - var(--space-12)) / 4); inset-block-start: 0; block-size: var(--space-6); border: var(--border-width) solid var(--diagram-arrow); border-block-end: 0; }
     .agent-policy__lifecycle { grid-template-columns: repeat(4,minmax(0,1fr)); gap: var(--gutter); }
     .agent-policy__lifecycle li { border-inline-start: 0; padding-inline-start: 0; border-block-start: var(--border-width) solid var(--border-strong); padding-block-start: var(--space-4); }
     .agent-policy__panels { grid-template-columns: repeat(2,minmax(0,1fr)); }

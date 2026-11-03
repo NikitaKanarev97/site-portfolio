@@ -147,12 +147,11 @@ export const portalCaseEn: PortalCaseCopy = {
       {
         shot: {
           src: '/media/rebuild/partner-portal/v3/legacy-cart-alternative.webp', width: 1076, height: 299,
-          alt: 'The original cart: a line with an empty price column and a red stock dot, its “best alternative” with a green dot, an AI-assistant hint that may contain mistakes, and a one-click Replace button',
+          alt: 'The original cart: a line with a red stock dot, its “best alternative” with a green dot, an AI-assistant hint that may contain mistakes, and a one-click Replace button',
           caption: 'Original portal · cart, archival screenshot',
         },
         findings: [
           { symptom: 'An unavailable item got one “best alternative” and a one-click Replace, justified by an AI hint that “may make mistakes”.', direction: 'Show the real candidates and how they differ. The buyer confirms.' },
-          { symptom: 'The price column was blank, and stock was a red or green dot with no words.', direction: 'Name unknown prices and stock states in words, and keep them out of totals.' },
         ],
       },
     ],
