@@ -232,7 +232,9 @@ body.ds-scroll-locked { overflow: hidden; }
   }
   .js [data-motion='reveal-text'],
   .js [data-motion='fade'],
-  .js [data-motion='rise'] { opacity: 0; }
+  .js [data-motion='rise'],
+  .js [data-motion='count'],
+  .js [data-motion='cascade'] > :not([data-motion]) { opacity: 0; }
 
   .js [data-motion='reveal-media'] .ds-media-mask { clip-path: inset(100% 0 0 0); }
 }

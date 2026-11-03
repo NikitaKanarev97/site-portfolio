@@ -36,7 +36,7 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
     transition:name="case-pawly" transition:animate="initial">
     <div class="ds-container pawly-cover__inner" data-motion-intro>
       <header class="pawly-cover__head">
-        <p class="ds-meta-sm pawly-cover__eyebrow">{cover.eyebrow}</p>
+        <p class="ds-meta-sm pawly-cover__eyebrow" data-motion="rise">{cover.eyebrow}</p>
         <h1 id="pawly-title" class="ds-display-5xl pawly-cover__title" data-motion="lines">{cover.title}</h1>
         <p class="ds-heading-3xl pawly-cover__thesis" data-h="lead" data-motion="fade">{cover.thesis}</p>
         <p class="ds-body-lg pawly-cover__role" data-motion="fade">{cover.role}</p>
@@ -67,14 +67,14 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
   </section>
 
   <div class="pawly-sheet">
-    <div class="ds-container pawly-facts"><MetaList layout="facts" items={copy.facts} /></div>
+    <div class="ds-container pawly-facts" data-motion="rise"><MetaList layout="facts" items={copy.facts} /></div>
 
     {/* ---------- 13:20 Choosing ---------- */}
     <section class="ds-container pawly-module" id={match.id} aria-labelledby={`${match.id}-title`}>
-      <div class="pawly-head">
+      <div class="pawly-head" data-motion="cascade">
         <p class="ds-meta-sm pawly-label"><span class="pawly-label__time">{match.time}</span> · {match.label}</p>
-        <div class="pawly-head__text">
-          <h2 id={`${match.id}-title`} class="ds-heading-3xl pawly-thesis" data-motion="fade">{match.thesis}</h2>
+        <div class="pawly-head__text" data-motion="cascade">
+          <h2 id={`${match.id}-title`} class="ds-heading-3xl pawly-thesis">{match.thesis}</h2>
           <p class="ds-body-lg pawly-body">{match.body}</p>
         </div>
       </div>
@@ -85,20 +85,20 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
           </li>
         ))}
       </ol>
-      <p class="ds-heading-xl pawly-rule">{match.rule}</p>
+      <p class="ds-heading-xl pawly-rule" data-motion="rise">{match.rule}</p>
     </section>
 
     {/* ---------- 14:05 Handoff ---------- */}
     <section class="ds-container pawly-module" id={roles.id} aria-labelledby={`${roles.id}-title`}>
-      <div class="pawly-head">
+      <div class="pawly-head" data-motion="cascade">
         <p class="ds-meta-sm pawly-label"><span class="pawly-label__time">{roles.time}</span> · {roles.label}</p>
-        <div class="pawly-head__text">
-          <h2 id={`${roles.id}-title`} class="ds-heading-3xl pawly-thesis" data-motion="fade">{roles.thesis}</h2>
+        <div class="pawly-head__text" data-motion="cascade">
+          <h2 id={`${roles.id}-title`} class="ds-heading-3xl pawly-thesis">{roles.thesis}</h2>
           <p class="ds-body-lg pawly-body">{roles.body}</p>
         </div>
       </div>
       <div class="pawly-roles">
-        <PawlyShot class="pawly-roles__owner" shot={roles.owner.shot} locale={locale} zoomLabel={zoom} label={roles.owner.label} />
+        <PawlyShot class="pawly-roles__owner" shot={roles.owner.shot} locale={locale} zoomLabel={zoom} label={roles.owner.label} motion />
         <div class="pawly-roles__compare">
           <dl class="pawly-compare" data-motion-group data-motion-stagger="tight">
             {roles.rows.map(row => (
@@ -113,18 +113,18 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
               </div>
             ))}
           </dl>
-          <p class="ds-body-sm pawly-note">{roles.note}</p>
+          <p class="ds-body-sm pawly-note" data-motion="rise">{roles.note}</p>
         </div>
-        <PawlyShot class="pawly-roles__walker" shot={roles.walker.shot} locale={locale} zoomLabel={zoom} label={roles.walker.label} />
+        <PawlyShot class="pawly-roles__walker" shot={roles.walker.shot} locale={locale} zoomLabel={zoom} label={roles.walker.label} motion />
       </div>
     </section>
 
     {/* ---------- Exceptions ---------- */}
     <section class="ds-container pawly-module" id={branches.id} aria-labelledby={`${branches.id}-title`}>
-      <div class="pawly-head">
+      <div class="pawly-head" data-motion="cascade">
         <p class="ds-meta-sm pawly-label">{branches.label}</p>
-        <div class="pawly-head__text">
-          <h2 id={`${branches.id}-title`} class="ds-heading-3xl pawly-thesis" data-motion="fade">{branches.thesis}</h2>
+        <div class="pawly-head__text" data-motion="cascade">
+          <h2 id={`${branches.id}-title`} class="ds-heading-3xl pawly-thesis">{branches.thesis}</h2>
           <p class="ds-body-lg pawly-body">{branches.body}</p>
         </div>
       </div>
@@ -140,16 +140,16 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
           </article>
         ))}
       </div>
-      <p class="ds-body-sm pawly-note">{branches.note}</p>
+      <p class="ds-body-sm pawly-note" data-motion="rise">{branches.note}</p>
     </section>
 
     {/* ---------- 14:52 Return: the sand band answers the cover's open question ---------- */}
     <section class="pawly-band" id={proof.id} aria-labelledby={`${proof.id}-title`}>
       <div class="ds-container pawly-module">
-        <div class="pawly-head">
+        <div class="pawly-head" data-motion="cascade">
           <p class="ds-meta-sm pawly-label"><span class="pawly-label__time">{proof.time}</span> · {proof.label}</p>
-          <div class="pawly-head__text">
-            <h2 id={`${proof.id}-title`} class="ds-heading-3xl pawly-thesis" data-motion="fade">{proof.thesis}</h2>
+          <div class="pawly-head__text" data-motion="cascade">
+            <h2 id={`${proof.id}-title`} class="ds-heading-3xl pawly-thesis">{proof.thesis}</h2>
             <p class="ds-body-lg pawly-body">{proof.body}</p>
           </div>
         </div>
@@ -175,36 +175,36 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
 
     {/* ---------- Settlement ---------- */}
     <section class="ds-container pawly-module" id={settle.id} aria-labelledby={`${settle.id}-title`}>
-      <div class="pawly-head">
+      <div class="pawly-head" data-motion="cascade">
         <p class="ds-meta-sm pawly-label">{settle.label}</p>
-        <div class="pawly-head__text">
-          <h2 id={`${settle.id}-title`} class="ds-heading-3xl pawly-thesis" data-motion="fade">{settle.thesis}</h2>
+        <div class="pawly-head__text" data-motion="cascade">
+          <h2 id={`${settle.id}-title`} class="ds-heading-3xl pawly-thesis">{settle.thesis}</h2>
           <p class="ds-body-lg pawly-body">{settle.body}</p>
         </div>
       </div>
       <div class="pawly-settle">
-        <div class="pawly-sum" data-motion="fade">
-          <ol class="pawly-sum__lines">
+        <div class="pawly-sum" data-motion="cascade">
+          <ol class="pawly-sum__lines" data-motion="cascade">
             {settle.lines.map(line => (
               <li class="pawly-sum__line">
-                <span class="ds-heading-3xl pawly-sum__amount">{line.amount}</span>
+                <span class="ds-heading-3xl pawly-sum__amount" data-motion="count">{line.amount}</span>
                 <span class="ds-body-sm pawly-sum__text">{line.text}</span>
               </li>
             ))}
           </ol>
           <p class="ds-body-base pawly-sum__balance">{settle.balance}</p>
         </div>
-        <PawlyShot shot={settle.owner.shot} locale={locale} zoomLabel={zoom} label={settle.owner.label} />
-        <PawlyShot shot={settle.walker.shot} locale={locale} zoomLabel={zoom} label={settle.walker.label} />
+        <PawlyShot shot={settle.owner.shot} locale={locale} zoomLabel={zoom} label={settle.owner.label} motion />
+        <PawlyShot shot={settle.walker.shot} locale={locale} zoomLabel={zoom} label={settle.walker.label} motion />
       </div>
     </section>
 
     {/* ---------- Outcome ---------- */}
     <section class="ds-container" id="outcome" aria-labelledby="outcome-title">
       <div class="pawly-outcome">
-        <div class="pawly-outcome__lead">
+        <div class="pawly-outcome__lead" data-motion="cascade">
           <p class="ds-meta-sm pawly-label">{outcome.label}</p>
-          <h2 id="outcome-title" class="ds-heading-4xl pawly-outcome__thesis" data-motion="fade">{outcome.thesis}</h2>
+          <h2 id="outcome-title" class="ds-heading-4xl pawly-outcome__thesis">{outcome.thesis}</h2>
           <p class="ds-body-lg pawly-body">{outcome.body}</p>
         </div>
         <dl class="pawly-outcome__evidence" data-motion-group data-motion-stagger="tight">
@@ -215,7 +215,7 @@ const index = (i: number) => String(i + 1).padStart(2, '0');
             </div>
           ))}
         </dl>
-        <div class="pawly-outcome__cta">
+        <div class="pawly-outcome__cta" data-motion="cascade">
           <a class="ds-body-lg ds-pressable pawly-cta" href={outcome.cta.href} target="_blank" rel="noopener">
             {outcome.cta.label}<IconArrow direction="up-right" class="pawly-cta__icon" />
           </a>

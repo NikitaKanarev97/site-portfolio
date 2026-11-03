@@ -18,10 +18,10 @@ const externalLabel = locale === 'ru' ? 'Откроется в новой вкл
     <div class="ds-container learn-cover__inner" data-motion-intro>
       <header class="learn-cover__head">
         <div class="learn-cover__thesis">
-          <p class="ds-meta-sm learn-muted">{c.eyebrow}</p>
-          <h1 id="learn-title"><span class="ds-heading-2xl learn-cover__name">{c.title}</span><span class="ds-display-5xl learn-cover__promise" data-motion="fade">{c.promise}</span></h1>
+          <p class="ds-meta-sm learn-muted" data-motion="rise">{c.eyebrow}</p>
+          <h1 id="learn-title"><span class="ds-heading-2xl learn-cover__name" data-motion="fade">{c.title}</span><span class="ds-display-5xl learn-cover__promise" data-motion="fade">{c.promise}</span></h1>
         </div>
-        <div class="learn-cover__authorship">
+        <div class="learn-cover__authorship" data-motion="cascade" data-motion-stagger="tight">
           <p class="ds-heading-xl">{c.role}</p>
           <p class="ds-body-sm learn-muted">{c.origin}</p>
           <TextLink type="arrow" href={c.previewHref} external externalLabel={externalLabel}>{c.preview}</TextLink>
@@ -31,55 +31,55 @@ const externalLabel = locale === 'ru' ? 'Откроется в новой вкл
         <div class="learn-cover__home"><LearnShot shot={c.hero.home} loading="eager" presentation="canvas" /></div>
         <div class="learn-cover__answer"><LearnShot shot={c.hero.answer} loading="eager" /></div>
       </div>
-      <p class="ds-body-lg learn-muted learn-cover__lead">{c.lead}</p>
-      <nav class="learn-index" aria-label={c.navLabel}>{['problem', 'shared-material', 'reference-path', 'workspace', 'assessment'].map((id, i) => <a class="ds-body-sm" href={`#${id}`}><span aria-hidden="true">0{i + 1}</span>{c.nav[i]}</a>)}</nav>
+      <p class="ds-body-lg learn-muted learn-cover__lead" data-motion="rise">{c.lead}</p>
+      <nav class="learn-index" aria-label={c.navLabel} data-motion="cascade" data-motion-stagger="tight">{['problem', 'shared-material', 'reference-path', 'workspace', 'assessment'].map((id, i) => <a class="ds-body-sm" href={`#${id}`}><span aria-hidden="true">0{i + 1}</span>{c.nav[i]}</a>)}</nav>
     </div>
   </section>
   <div class="learn-sheet">
     <section class="ds-container learn-section" id="problem" aria-labelledby="problem-title">
-      <header class="learn-head"><p class="ds-meta-sm learn-muted">{problem.label}</p><div class="learn-copy"><h2 id="problem-title" class="ds-heading-4xl" data-motion="fade">{problem.title}</h2><p class="ds-body-lg learn-muted">{problem.body}</p></div></header>
+      <header class="learn-head" data-motion="cascade"><p class="ds-meta-sm learn-muted">{problem.label}</p><div class="learn-copy" data-motion="cascade"><h2 id="problem-title" class="ds-heading-4xl">{problem.title}</h2><p class="ds-body-lg learn-muted">{problem.body}</p></div></header>
       <div class="learn-problem">
-        <figure class="learn-archive"><p class="ds-body-sm learn-muted">{problem.archive}</p><CaseScreen item={{ src: '/media/case-learn/before-catalog.webp', alt: problem.archiveAlt, device: 'panel' }} appearance="frame" /><figcaption class="ds-body-sm learn-muted">{problem.caption}</figcaption></figure>
-        <div class="learn-jobs">{problem.jobs.map((job, i) => <div class="learn-job"><p class="ds-meta-sm learn-muted">0{i + 1} / {job.label}</p><h3 class="ds-heading-2xl">{job.title}</h3><p class="ds-body-base learn-muted">{job.text}</p></div>)}</div>
+        <figure class="learn-archive"><p class="ds-body-sm learn-muted" data-motion="rise">{problem.archive}</p><CaseScreen item={{ src: '/media/case-learn/before-catalog.webp', alt: problem.archiveAlt, device: 'panel' }} appearance="frame" /><figcaption class="ds-body-sm learn-muted">{problem.caption}</figcaption></figure>
+        <div class="learn-jobs" data-motion="cascade">{problem.jobs.map((job, i) => <div class="learn-job"><p class="ds-meta-sm learn-muted">0{i + 1} / {job.label}</p><h3 class="ds-heading-2xl">{job.title}</h3><p class="ds-body-base learn-muted">{job.text}</p></div>)}</div>
       </div>
     </section>
     <section class="learn-system" id="shared-material" aria-labelledby="shared-title">
       <div class="ds-container learn-section">
-        <header class="learn-head"><p class="ds-meta-sm learn-muted">{shared.label}</p><div class="learn-copy"><h2 id="shared-title" class="ds-heading-4xl" data-motion="fade">{shared.title}</h2><p class="ds-body-lg learn-muted">{shared.body}</p></div></header>
-        <div class="learn-model" data-story-document><p class="ds-body-sm learn-muted">{shared.diagram}</p><Diagram data={learnContentModel} lang={locale} /></div>
-        <div class="learn-system__rule"><h3 class="ds-heading-3xl"><EditorialHeadingText text={shared.rule} /></h3><p class="ds-body-base learn-muted">{shared.consequence}</p></div>
+        <header class="learn-head" data-motion="cascade"><p class="ds-meta-sm learn-muted">{shared.label}</p><div class="learn-copy" data-motion="cascade"><h2 id="shared-title" class="ds-heading-4xl">{shared.title}</h2><p class="ds-body-lg learn-muted">{shared.body}</p></div></header>
+        <div class="learn-model" data-story-document><p class="ds-body-sm learn-muted" data-motion="rise">{shared.diagram}</p><Diagram data={learnContentModel} lang={locale} /></div>
+        <div class="learn-system__rule" data-motion="cascade"><h3 class="ds-heading-3xl"><EditorialHeadingText text={shared.rule} /></h3><p class="ds-body-base learn-muted">{shared.consequence}</p></div>
       </div>
     </section>
     <section class="ds-container learn-section" id="reference-path" aria-labelledby="reference-title">
-      <header class="learn-head"><p class="ds-meta-sm learn-muted">{reference.label}</p><div class="learn-copy"><h2 id="reference-title" class="ds-heading-4xl" data-motion="fade">{reference.title}</h2><p class="ds-body-lg learn-muted">{reference.body}</p></div></header>
+      <header class="learn-head" data-motion="cascade"><p class="ds-meta-sm learn-muted">{reference.label}</p><div class="learn-copy" data-motion="cascade"><h2 id="reference-title" class="ds-heading-4xl">{reference.title}</h2><p class="ds-body-lg learn-muted">{reference.body}</p></div></header>
       <div class="learn-reference"><LearnShot shot={reference.shot} presentation="canvas" /></div>
     </section>
     <section class="ds-container learn-section" id="guided-path" aria-labelledby="guided-title">
-      <header class="learn-head"><p class="ds-meta-sm learn-muted">{guided.label}</p><div class="learn-copy"><h2 id="guided-title" class="ds-heading-4xl" data-motion="fade">{guided.title}</h2><p class="ds-body-lg learn-muted">{guided.body}</p></div></header>
+      <header class="learn-head" data-motion="cascade"><p class="ds-meta-sm learn-muted">{guided.label}</p><div class="learn-copy" data-motion="cascade"><h2 id="guided-title" class="ds-heading-4xl">{guided.title}</h2><p class="ds-body-lg learn-muted">{guided.body}</p></div></header>
       <div class="learn-programme"><LearnShot shot={{ ...guided.path, caption: guided.pathCaption }} presentation="canvas" /></div>
       <div class="learn-completion" id="completion">
-        <div class="learn-copy"><h3 class="ds-heading-3xl">{guided.actionTitle}</h3><p class="ds-body-lg learn-muted">{guided.actionBody}</p><p class="ds-body-sm learn-muted learn-access">{guided.access}</p></div>
+        <div class="learn-copy" data-motion="cascade"><h3 class="ds-heading-3xl">{guided.actionTitle}</h3><p class="ds-body-lg learn-muted">{guided.actionBody}</p><p class="ds-body-sm learn-muted learn-access">{guided.access}</p></div>
         <LearnShot shot={{ desktop: 'completion-mobile', alt: guided.actionAlt }} />
       </div>
     </section>
     <section class="learn-workspace" id="workspace" aria-labelledby="workspace-title">
       <div class="ds-container learn-section">
-        <header class="learn-head"><p class="ds-meta-sm learn-muted">{workspace.label}</p><div class="learn-copy"><h2 id="workspace-title" class="ds-heading-4xl" data-motion="fade">{workspace.title}</h2><p class="ds-body-lg learn-muted">{workspace.body}</p></div></header>
+        <header class="learn-head" data-motion="cascade"><p class="ds-meta-sm learn-muted">{workspace.label}</p><div class="learn-copy" data-motion="cascade"><h2 id="workspace-title" class="ds-heading-4xl">{workspace.title}</h2><p class="ds-body-lg learn-muted">{workspace.body}</p></div></header>
         <div class="learn-learner"><LearnShot shot={workspace.learner} /></div>
-        <div class="learn-counterexample"><div class="learn-copy"><h3 class="ds-heading-3xl">{workspace.counterTitle}</h3><p class="ds-body-lg learn-muted">{workspace.counterBody}</p></div><LearnShot shot={workspace.reader} /></div>
+        <div class="learn-counterexample"><div class="learn-copy" data-motion="cascade"><h3 class="ds-heading-3xl">{workspace.counterTitle}</h3><p class="ds-body-lg learn-muted">{workspace.counterBody}</p></div><LearnShot shot={workspace.reader} /></div>
       </div>
     </section>
     <section class="ds-container learn-section" id="assessment" aria-labelledby="assessment-title">
-      <header class="learn-head"><p class="ds-meta-sm learn-muted">{assessment.label}</p><div class="learn-copy"><h2 id="assessment-title" class="ds-heading-4xl" data-motion="fade">{assessment.title}</h2><p class="ds-body-lg learn-muted">{assessment.body}</p></div></header>
-      <div class="learn-assessment__evidence"><LearnShot shot={assessment.failed} /><div class="learn-recovery" id="recovery"><h3 class="ds-heading-2xl">{assessment.reviewTitle}</h3><p class="ds-body-base learn-muted">{assessment.reviewBody}</p><LearnShot shot={assessment.review} /></div></div>
-      <p class="ds-body-sm learn-muted learn-assessment__rules">{assessment.rules}</p>
-      <div class="learn-passed"><div class="learn-copy"><p class="ds-meta-sm learn-muted">{assessment.scoreNote}</p><h3 class="ds-heading-3xl">{assessment.passTitle}</h3><p class="ds-body-base learn-muted">{assessment.passBody}</p></div><LearnShot shot={assessment.passed} /></div>
+      <header class="learn-head" data-motion="cascade"><p class="ds-meta-sm learn-muted">{assessment.label}</p><div class="learn-copy" data-motion="cascade"><h2 id="assessment-title" class="ds-heading-4xl">{assessment.title}</h2><p class="ds-body-lg learn-muted">{assessment.body}</p></div></header>
+      <div class="learn-assessment__evidence"><LearnShot shot={assessment.failed} /><div class="learn-recovery" id="recovery"><h3 class="ds-heading-2xl" data-motion="rise">{assessment.reviewTitle}</h3><p class="ds-body-base learn-muted" data-motion="rise">{assessment.reviewBody}</p><LearnShot shot={assessment.review} /></div></div>
+      <p class="ds-body-sm learn-muted learn-assessment__rules" data-motion="rise">{assessment.rules}</p>
+      <div class="learn-passed"><div class="learn-copy" data-motion="cascade"><p class="ds-meta-sm learn-muted">{assessment.scoreNote}</p><h3 class="ds-heading-3xl">{assessment.passTitle}</h3><p class="ds-body-base learn-muted">{assessment.passBody}</p></div><LearnShot shot={assessment.passed} /></div>
     </section>
     <section class="ds-container learn-section learn-outcome" id="outcome" aria-labelledby="outcome-title">
-      <header class="learn-head"><p class="ds-meta-sm learn-muted">{outcome.label}</p><div class="learn-copy"><h2 id="outcome-title" class="ds-heading-4xl" data-motion="fade">{outcome.title}</h2><p class="ds-body-lg learn-muted">{outcome.body}</p></div></header>
-      <dl class="learn-delivery">{outcome.proof.map(item => <div><dt class="ds-heading-2xl">{item.label}</dt><dd class="ds-body-base learn-muted">{item.text}</dd></div>)}</dl>
-      <div class="learn-outcome__limits"><div class="learn-copy"><h3 class="ds-heading-xl">{outcome.tradeLabel}</h3><p class="ds-body-base learn-muted">{outcome.trade}</p></div><div class="learn-copy"><h3 class="ds-heading-xl">{outcome.nextLabel}</h3><p class="ds-body-base learn-muted">{outcome.next}</p></div></div>
-      <div class="learn-outcome__links"><TextLink type="arrow" href={c.previewHref} external externalLabel={externalLabel}>{outcome.cta}</TextLink><TextLink type="arrow" href={outcome.landingHref} external externalLabel={externalLabel}>{outcome.landing}</TextLink><p class="ds-body-sm learn-muted">{outcome.note}</p></div>
+      <header class="learn-head" data-motion="cascade"><p class="ds-meta-sm learn-muted">{outcome.label}</p><div class="learn-copy" data-motion="cascade"><h2 id="outcome-title" class="ds-heading-4xl">{outcome.title}</h2><p class="ds-body-lg learn-muted">{outcome.body}</p></div></header>
+      <dl class="learn-delivery" data-motion="cascade">{outcome.proof.map(item => <div><dt class="ds-heading-2xl">{item.label}</dt><dd class="ds-body-base learn-muted">{item.text}</dd></div>)}</dl>
+      <div class="learn-outcome__limits" data-motion="cascade"><div class="learn-copy" data-motion="cascade"><h3 class="ds-heading-xl">{outcome.tradeLabel}</h3><p class="ds-body-base learn-muted">{outcome.trade}</p></div><div class="learn-copy" data-motion="cascade"><h3 class="ds-heading-xl">{outcome.nextLabel}</h3><p class="ds-body-base learn-muted">{outcome.next}</p></div></div>
+      <div class="learn-outcome__links" data-motion="cascade" data-motion-stagger="tight"><TextLink type="arrow" href={c.previewHref} external externalLabel={externalLabel}>{outcome.cta}</TextLink><TextLink type="arrow" href={outcome.landingHref} external externalLabel={externalLabel}>{outcome.landing}</TextLink><p class="ds-body-sm learn-muted">{outcome.note}</p></div>
     </section>
   </div>
   <CaseNext {...next} transitionKey={`case-${next.theme}`} />

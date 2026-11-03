@@ -63,6 +63,8 @@ export const motion = {
   sheet:       { scrub: 0.3, scale: 0.98, opacity: 0.65, tolerance: 2 },
   pinSwap:     { scrub: 0.25, inset: 32, y: -24, start: 'top 90%', end: 'top 25%' },
   count:       { duration: duration.image, ease: ease.standard },
+  // Каскад: элементы блока поднимаются по мере входа в кадр; вместе вошедшие — с шагом.
+  cascade:     { duration: duration.base, ease: ease.entrance, y: 12, stagger: stagger.base },
   draw:        { duration: duration.slow, ease: ease.standard },
   // Схема Agent Ops: такт входа части потока; тихая ветка «Нет» проявляется дольше.
   agentModel:  { duration: duration.slow, ease: ease.entrance, quiet: duration.image, y: 12, x: 24, beat: 0.2, narrowAt: 0.6, handoff: 0.5 },

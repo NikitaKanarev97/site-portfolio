@@ -13,7 +13,7 @@ const pick = (key: string) => {
 const desktop = pick(shot.desktop), mobile = shot.mobile ? pick(shot.mobile) : undefined;
 ---
 <figure class:list={['learn-shot', `learn-shot--${presentation}`, className]} data-learn-shot={shot.desktop} data-learn-presentation={presentation}>
-  {shot.label && <p class="ds-body-sm learn-shot__label">{shot.label}</p>}
+  {shot.label && <p class="ds-body-sm learn-shot__label" data-motion="rise">{shot.label}</p>}
   <CaseScreen item={{ src: desktop.src, srcNarrow: mobile?.src, alt: shot.alt, device: 'panel', nativeWidth: desktop.cssWidth }} appearance={presentation === 'canvas' ? 'edge' : 'frame'}
     loading={loading} href={href} linkLabel={linkLabel} />
   {shot.caption && <figcaption class="ds-body-sm learn-shot__caption">{shot.caption}</figcaption>}

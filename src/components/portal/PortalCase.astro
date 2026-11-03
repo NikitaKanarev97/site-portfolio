@@ -50,7 +50,7 @@ const [rows, availability, upload, plans] = system.families;
     transition:name="case-portal" transition:animate="initial">
     <div class="ds-container portal-cover__inner" data-motion-intro>
       <header class="portal-cover__head">
-        <p class="ds-meta-sm portal-cover__eyebrow">{cover.eyebrow}</p>
+        <p class="ds-meta-sm portal-cover__eyebrow" data-motion="rise">{cover.eyebrow}</p>
         <h1 id="portal-title" class="ds-display-5xl portal-cover__title" data-motion="lines">{cover.title}</h1>
         <div class="portal-cover__lead" data-motion="fade">
           <p class="ds-heading-xl portal-cover__promise" data-h="lead">{cover.promise}</p>
@@ -67,14 +67,14 @@ const [rows, availability, upload, plans] = system.families;
   </section>
 
   <div class="portal-sheet">
-    <div class="ds-container portal-facts"><MetaList layout="facts" items={copy.facts} /></div>
+    <div class="ds-container portal-facts" data-motion="rise"><MetaList layout="facts" items={copy.facts} /></div>
 
     {/* ---------- 01 Diagnosis ---------- */}
     <section class="ds-container ds-section portal-module" id="diagnosis" aria-labelledby="diagnosis-title">
-      <div class="portal-head">
+      <div class="portal-head" data-motion="cascade">
         <p class="ds-meta-sm portal-label">{diagnosis.label}</p>
-        <div class="portal-head__text">
-          <h2 id="diagnosis-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{diagnosis.thesis}</h2>
+        <div class="portal-head__text" data-motion="cascade">
+          <h2 id="diagnosis-title" class="ds-heading-3xl portal-thesis">{diagnosis.thesis}</h2>
           <p class="ds-body-lg portal-body">{diagnosis.body}</p>
         </div>
       </div>
@@ -110,10 +110,10 @@ const [rows, availability, upload, plans] = system.families;
 
     {/* ---------- 02 Architecture ---------- */}
     <section class="ds-container ds-section portal-module" id="architecture" aria-labelledby="architecture-title">
-      <div class="portal-head">
+      <div class="portal-head" data-motion="cascade">
         <p class="ds-meta-sm portal-label">{arch.label}</p>
-        <div class="portal-head__text">
-          <h2 id="architecture-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{arch.thesis}</h2>
+        <div class="portal-head__text" data-motion="cascade">
+          <h2 id="architecture-title" class="ds-heading-3xl portal-thesis">{arch.thesis}</h2>
           <p class="ds-body-lg portal-body">{arch.body}</p>
         </div>
       </div>
@@ -182,19 +182,19 @@ const [rows, availability, upload, plans] = system.families;
             </div>
           </div>
         </div>
-        <ol class="portal-arch__bands" aria-hidden="true">
+        <ol class="portal-arch__bands" aria-hidden="true" data-motion="cascade" data-motion-stagger="tight">
           {arch.bands.map(band => <li class="ds-meta-xs portal-arch__band">{band}</li>)}
         </ol>
-        <figcaption class="ds-body-sm portal-arch__note">{arch.note}</figcaption>
+        <figcaption class="ds-body-sm portal-arch__note" data-motion="rise">{arch.note}</figcaption>
       </figure>
     </section>
 
     {/* ---------- 03 The source line ---------- */}
     <section class="ds-container ds-section portal-module" id="decision" aria-labelledby="decision-title">
-      <div class="portal-head">
+      <div class="portal-head" data-motion="cascade">
         <p class="ds-meta-sm portal-label">{decision.label}</p>
-        <div class="portal-head__text">
-          <h2 id="decision-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{decision.thesis}</h2>
+        <div class="portal-head__text" data-motion="cascade">
+          <h2 id="decision-title" class="ds-heading-3xl portal-thesis">{decision.thesis}</h2>
           <p class="ds-body-lg portal-body">{decision.body}</p>
         </div>
       </div>
@@ -212,7 +212,7 @@ const [rows, availability, upload, plans] = system.families;
           </li>
         ))}
       </ol>
-      <div class="portal-line__after">
+      <div class="portal-line__after" data-motion="cascade">
         <aside class="portal-note" aria-label={decision.why.label}>
           <p class="ds-meta-sm portal-note__label">{decision.why.label}</p>
           <p class="ds-body-base portal-note__text">{decision.why.text}</p>
@@ -223,10 +223,10 @@ const [rows, availability, upload, plans] = system.families;
 
     {/* ---------- 04 Product and price ---------- */}
     <section class="ds-container ds-section portal-module" id="verification" aria-labelledby="verify-title">
-      <div class="portal-head">
+      <div class="portal-head" data-motion="cascade">
         <p class="ds-meta-sm portal-label">{verify.label}</p>
-        <div class="portal-head__text">
-          <h2 id="verify-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{verify.thesis}</h2>
+        <div class="portal-head__text" data-motion="cascade">
+          <h2 id="verify-title" class="ds-heading-3xl portal-thesis">{verify.thesis}</h2>
           <p class="ds-body-lg portal-body">{verify.body}</p>
         </div>
       </div>
@@ -248,10 +248,10 @@ const [rows, availability, upload, plans] = system.families;
     {/* ---------- 05 Commercial review ---------- */}
     <section class="portal-band ds-section" id="commercial-review" aria-labelledby="commerce-title">
       <div class="ds-container">
-        <div class="portal-head">
+        <div class="portal-head" data-motion="cascade">
           <p class="ds-meta-sm portal-label">{commerce.label}</p>
-          <div class="portal-head__text">
-            <h2 id="commerce-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{commerce.thesis}</h2>
+          <div class="portal-head__text" data-motion="cascade">
+            <h2 id="commerce-title" class="ds-heading-3xl portal-thesis">{commerce.thesis}</h2>
             <p class="ds-body-lg portal-body">{commerce.body}</p>
           </div>
         </div>
@@ -273,10 +273,10 @@ const [rows, availability, upload, plans] = system.families;
 
     {/* ---------- 06 Fulfillment ---------- */}
     <section class="ds-container ds-section portal-module" id="fulfillment" aria-labelledby="supply-title">
-      <div class="portal-head">
+      <div class="portal-head" data-motion="cascade">
         <p class="ds-meta-sm portal-label">{supply.label}</p>
-        <div class="portal-head__text">
-          <h2 id="supply-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{supply.thesis}</h2>
+        <div class="portal-head__text" data-motion="cascade">
+          <h2 id="supply-title" class="ds-heading-3xl portal-thesis">{supply.thesis}</h2>
           <p class="ds-body-lg portal-body">{supply.body}</p>
           <ul class="portal-dims">
             {supply.dims.map(dim => <li class="ds-meta-xs portal-dims__item">{dim}</li>)}
@@ -290,18 +290,18 @@ const [rows, availability, upload, plans] = system.families;
 
     {/* ---------- 07 Design system ---------- */}
     <section class="ds-container ds-section portal-module" id="design-system" aria-labelledby="system-title">
-      <div class="portal-head">
+      <div class="portal-head" data-motion="cascade">
         <p class="ds-meta-sm portal-label">{system.label}</p>
-        <div class="portal-head__text">
-          <h2 id="system-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{system.thesis}</h2>
+        <div class="portal-head__text" data-motion="cascade">
+          <h2 id="system-title" class="ds-heading-3xl portal-thesis">{system.thesis}</h2>
           <p class="ds-body-lg portal-body">{system.body}</p>
         </div>
       </div>
       <div class="portal-system">
         <div class="portal-system__foundation">
-          <div class="portal-system__colors">
+          <div class="portal-system__colors" data-motion="cascade">
             <p class="ds-meta-xs portal-system__kicker">{system.colorLabel}</p>
-            <ul class="portal-swatches">
+            <ul class="portal-swatches" data-motion="cascade" data-motion-stagger="tight">
               {system.colors.map(c => (
                 <li class="portal-swatch">
                   <span class="portal-swatch__chip" style={`background:${color(c.token)}`}></span>
@@ -311,9 +311,9 @@ const [rows, availability, upload, plans] = system.families;
               ))}
             </ul>
           </div>
-          <div class="portal-system__type">
+          <div class="portal-system__type" data-motion="cascade">
             <p class="ds-meta-xs portal-system__kicker">{system.typeLabel}</p>
-            <ul class="portal-type">
+            <ul class="portal-type" data-motion="cascade" data-motion-stagger="tight">
               {tokens.type.map(t => (
                 <li class="portal-type__step">
                   <span class="ds-meta-xs portal-type__name">{t.step}</span>
@@ -325,11 +325,11 @@ const [rows, availability, upload, plans] = system.families;
         </div>
 
         <div class="portal-family portal-family--side">
-          <div class="portal-family__head">
+          <div class="portal-family__head" data-motion="cascade">
             <p class="ds-heading-xl portal-family__name">{rows.name}</p>
             <p class="ds-body-sm portal-family__argument">{rows.argument}</p>
           </div>
-          <ul class="portal-family__states">
+          <ul class="portal-family__states" data-motion="cascade" data-motion-stagger="tight">
             {rows.states.map(s => (
               <li class="portal-family__state">
                 <p class="ds-meta-xs portal-family__label">{s.label}</p>
@@ -344,13 +344,13 @@ const [rows, availability, upload, plans] = system.families;
           const cueId = `portal-cue-${family.name.toLowerCase()}`;
           return (
           <div class:list={['portal-family', 'portal-family--across', !scrolls && 'portal-family--compact portal-family--side']}>
-            <div class="portal-family__head">
+            <div class="portal-family__head" data-motion="cascade">
               <p class="ds-heading-xl portal-family__name">{family.name}</p>
               <p class="ds-body-sm portal-family__argument">{family.argument}</p>
             </div>
             {/* Phones scroll these states sideways; the cue says how many there are. */}
             {scrolls && <p id={cueId} class="ds-meta-xs portal-family__cue">{system.scrollCue.replace('{n}', String(family.states.length))}<span aria-hidden="true"> →</span></p>}
-            <ul class="portal-family__states" tabindex={scrolls ? 0 : undefined} aria-label={family.name} aria-describedby={scrolls ? cueId : undefined} data-overflow-ok>
+            <ul class="portal-family__states" tabindex={scrolls ? 0 : undefined} aria-label={family.name} aria-describedby={scrolls ? cueId : undefined} data-overflow-ok data-motion="cascade" data-motion-stagger="tight">
               {family.states.map(s => (
                 <li class="portal-family__state">
                   <p class="ds-meta-xs portal-family__label">{s.label}</p>
@@ -361,16 +361,16 @@ const [rows, availability, upload, plans] = system.families;
           </div>
           );
         })}
-        <p class="ds-body-sm portal-system__note">{system.note}</p>
+        <p class="ds-body-sm portal-system__note" data-motion="rise">{system.note}</p>
       </div>
     </section>
 
     {/* ---------- 08 Process and ownership ---------- */}
     <section class="ds-container ds-section portal-module" id="process" aria-labelledby="process-title">
-      <div class="portal-head">
+      <div class="portal-head" data-motion="cascade">
         <p class="ds-meta-sm portal-label">{process.label}</p>
-        <div class="portal-head__text">
-          <h2 id="process-title" class="ds-heading-3xl portal-thesis" data-motion="fade">{process.thesis}</h2>
+        <div class="portal-head__text" data-motion="cascade">
+          <h2 id="process-title" class="ds-heading-3xl portal-thesis">{process.thesis}</h2>
           <p class="ds-body-lg portal-body">{process.body}</p>
         </div>
       </div>
@@ -384,15 +384,15 @@ const [rows, availability, upload, plans] = system.families;
           </li>
         ))}
       </ol>
-      <p class="ds-body-sm portal-process__note">{process.note}</p>
+      <p class="ds-body-sm portal-process__note" data-motion="rise">{process.note}</p>
     </section>
 
     {/* ---------- Outcome ---------- */}
     <section class="ds-container ds-section" id="outcome" aria-labelledby="outcome-title">
       <div class="portal-outcome">
-        <div class="portal-outcome__lead">
+        <div class="portal-outcome__lead" data-motion="cascade">
           <p class="ds-meta-sm portal-label">{outcome.label}</p>
-          <h2 id="outcome-title" class="ds-heading-4xl portal-outcome__thesis" data-motion="fade">{outcome.thesis}</h2>
+          <h2 id="outcome-title" class="ds-heading-4xl portal-outcome__thesis">{outcome.thesis}</h2>
           <p class="ds-body-lg portal-outcome__body">{outcome.body}</p>
         </div>
         <dl class="portal-costs portal-outcome__evidence" data-motion-group data-motion-stagger="tight">
@@ -403,9 +403,9 @@ const [rows, availability, upload, plans] = system.families;
             </div>
           ))}
         </dl>
-        <div class="portal-outcome__costs">
+        <div class="portal-outcome__costs" data-motion="cascade">
           <p class="ds-meta-sm portal-label">{outcome.costLabel}</p>
-          <dl class="portal-costs portal-costs--row">
+          <dl class="portal-costs portal-costs--row" data-motion="cascade">
             {outcome.costs.map(cost => (
               <div class="portal-costs__item">
                 <dt class="ds-heading-xl">{cost.term}</dt>
@@ -414,7 +414,7 @@ const [rows, availability, upload, plans] = system.families;
             ))}
           </dl>
         </div>
-        <div class="portal-outcome__cta">
+        <div class="portal-outcome__cta" data-motion="rise">
           <a class="ds-body-lg ds-pressable portal-cta" href={outcome.cta.href} target="_blank" rel="noopener">
             {outcome.cta.label}<IconArrow direction="up-right" class="portal-cta__icon" />
           </a>

@@ -33,8 +33,10 @@ interface Props {
   plate?: 'neutral' | 'canvas' | 'none';
   loading?: 'eager' | 'lazy';
   class?: string;
+  /** Standalone plate fades in itself; inside an animated row it stays off. */
+  motion?: boolean;
 }
-const { shot, action, locale, label, caption, zoomLabel, plate = 'neutral', loading = 'lazy', class: className } = Astro.props;
+const { shot, action, locale, label, caption, zoomLabel, plate = 'neutral', loading = 'lazy', class: className, motion = false } = Astro.props;
 const entries = media as Record<string, { src: string; width: number; height: number; surface?: string; padTop?: number; padBottom?: number; padInline?: number }>;
 const slices = [shot, ...(action ? [action] : [])].map(s => {
   const entry = entries[`${locale}/${s.key}`];
@@ -42,7 +44,7 @@ const slices = [shot, ...(action ? [action] : [])].map(s => {
   return { ...s, ...entry, padTop: entry.padTop ?? 0, padBottom: entry.padBottom ?? 0, padInline: entry.padInline ?? 0 };
 });
 ---
-<figure class:list={['pawly-shot', `pawly-shot--${plate}`, className]} style={`--shot-native: ${slices[0].width / 2}px; --shot-frame: ${slices[0].width / 2 + 2 * slices[0].padInline}px; --shot-canvas: ${slices[0].surface}`}>
+<figure class:list={['pawly-shot', `pawly-shot--${plate}`, className]} data-motion={motion ? 'fade-image' : undefined} style={`--shot-native: ${slices[0].width / 2}px; --shot-frame: ${slices[0].width / 2 + 2 * slices[0].padInline}px; --shot-canvas: ${slices[0].surface}`}>
   {label && <p class="ds-meta-sm pawly-shot__label">{label}</p>}
   <div class="pawly-shot__plate" data-h="plate">
     {slices.map((s, i) => (

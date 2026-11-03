@@ -19,17 +19,17 @@ const policyShots = copy.sections.find(s => s.id === 'policy')!.shots!.map((s, i
   <section class="agent-cover" aria-labelledby="agent-title" data-case-cover="case-agent" transition:name="case-agent" transition:animate="initial">
     <div class="ds-container agent-cover__inner" data-motion-intro>
       <header class="agent-cover__head">
-        <p class="ds-meta-sm agent-label">{copy.eyebrow}</p>
+        <p class="ds-meta-sm agent-label" data-motion="rise">{copy.eyebrow}</p>
         <h1 id="agent-title" class="ds-display-5xl" data-motion="lines">{copy.title}</h1>
         <p class="ds-heading-2xl agent-cover__promise" data-motion="fade">{copy.promise}</p>
-        <div class="agent-cover__facts"><MetaList layout="facts" items={copy.facts} /></div>
-        <p class="ds-body-sm agent-body">{p.scope}</p>
+        <div class="agent-cover__facts" data-motion="rise"><MetaList layout="facts" items={copy.facts} /></div>
+        <p class="ds-body-sm agent-body" data-motion="rise">{p.scope}</p>
       </header>
       <div class="agent-cover__media" data-motion="fade-image"><AgentShot shot={hero} locale={locale} loading="eager" /></div>
     </div>
   </section>
   <div class="agent-sheet">
-    <div class="ds-container agent-orientation">
+    <div class="ds-container agent-orientation" data-motion="cascade">
       <p class="ds-body-sm agent-body">{copy.disclosure}</p>
       <nav class="agent-index" aria-label={copy.navLabel}>
         {copy.sections.map(s => <a class="ds-body-sm" href={`#${s.id}`}>{s.label}</a>)}
@@ -37,17 +37,17 @@ const policyShots = copy.sections.find(s => s.id === 'policy')!.shots!.map((s, i
       </nav>
     </div>
     {copy.sections.map(s => <section class:list={['ds-container agent-section', `agent-section--${s.id}`]} id={s.id} aria-labelledby={`${s.id}-title`}>
-      <div class="agent-section__head">
+      <div class="agent-section__head" data-motion="cascade">
         <p class="ds-meta-sm agent-label">{s.label}</p>
-        <div class="agent-section__copy">
-          <h2 id={`${s.id}-title`} class:list={[s.id === 'problem' ? 'ds-display-5xl' : 'ds-heading-4xl']} data-motion="fade"><AgentHeadingText text={s.title} /></h2>
+        <div class="agent-section__copy" data-motion="cascade">
+          <h2 id={`${s.id}-title`} class:list={[s.id === 'problem' ? 'ds-display-5xl' : 'ds-heading-4xl']}><AgentHeadingText text={s.title} /></h2>
           {s.id !== 'checkpoint' && <p class="ds-body-lg agent-body">{s.body}</p>}
         </div>
       </div>
 
       {s.id === 'problem' && <div class="agent-problem">
-        <div class="agent-problem__cost"><p class="ds-meta-sm agent-label">{copy.contextLabel}</p><p class="ds-display-6xl" data-editorial-money>{copy.metrics[2].value}</p><p class="ds-body-lg agent-body">{p.problemCost}</p></div>
-        <div class="agent-problem__signals"><p class="ds-heading-2xl">{p.problemAside}</p><dl>{copy.metrics.slice(0,2).map(metric => <div><dt class="ds-body-sm agent-body">{metric.label}</dt><dd class="ds-heading-3xl">{metric.value}</dd></div>)}</dl></div>
+        <div class="agent-problem__cost" data-motion="cascade"><p class="ds-meta-sm agent-label">{copy.contextLabel}</p><p class="ds-display-6xl" data-editorial-money data-motion="count">{copy.metrics[2].value}</p><p class="ds-body-lg agent-body">{p.problemCost}</p></div>
+        <div class="agent-problem__signals" data-motion="cascade"><p class="ds-heading-2xl">{p.problemAside}</p><dl data-motion="cascade">{copy.metrics.slice(0,2).map(metric => <div><dt class="ds-body-sm agent-body">{metric.label}</dt><dd class="ds-heading-3xl" data-motion="count">{metric.value}</dd></div>)}</dl></div>
       </div>}
 
       {s.id === 'operating-model' && <figure class="agent-model" aria-labelledby="model-label" data-motion="agent-model">
@@ -62,32 +62,32 @@ const policyShots = copy.sections.find(s => s.id === 'policy')!.shots!.map((s, i
       </figure>}
 
       {s.id === 'investigation' && <div class="agent-investigation">{s.shots!.map((shot, i) => <div class:list={['agent-investigation__stage', i === 1 && 'agent-investigation__stage--detail']}>
-        <div class="agent-investigation__text"><p class="ds-meta-sm agent-label" aria-hidden="true">0{i+1}</p><h3 class="ds-heading-2xl">{p.investigation[i].title}</h3><p class="ds-body-base agent-body">{p.investigation[i].body}</p><p class="ds-body-sm agent-cue">{p.investigation[i].cue}</p></div>
+        <div class="agent-investigation__text" data-motion="cascade"><p class="ds-meta-sm agent-label" aria-hidden="true">0{i+1}</p><h3 class="ds-heading-2xl">{p.investigation[i].title}</h3><p class="ds-body-base agent-body">{p.investigation[i].body}</p><p class="ds-body-sm agent-cue">{p.investigation[i].cue}</p></div>
         <div class="agent-plate" data-motion="fade-image" data-agent-evidence={`investigation-${i}`}><AgentShot shot={shot} locale={locale} /></div>
       </div>)}</div>}
 
       {s.id === 'checkpoint' && <div class="agent-reading" data-agent-reading>
-        <p class="ds-body-sm agent-label agent-reading__label">{p.checkpoint.label}</p>
-        <ol class="agent-reading__stages">{p.checkpoint.stages.map((stage,i) => <li data-agent-reading-step={i}><span class="ds-heading-3xl agent-reading__number" aria-hidden="true">0{i+1}</span><div><h3 class="ds-heading-2xl">{stage.title}</h3><p class="ds-body-base agent-body">{stage.body}</p></div></li>)}</ol>
+        <p class="ds-body-sm agent-label agent-reading__label" data-motion="rise">{p.checkpoint.label}</p>
+        <ol class="agent-reading__stages" data-motion="cascade">{p.checkpoint.stages.map((stage,i) => <li data-agent-reading-step={i}><span class="ds-heading-3xl agent-reading__number" aria-hidden="true">0{i+1}</span><div><h3 class="ds-heading-2xl">{stage.title}</h3><p class="ds-body-base agent-body">{stage.body}</p></div></li>)}</ol>
         <div class="agent-reading__proof"><div class="agent-reading__markers" aria-hidden="true">{p.checkpoint.stages.map((stage,i) => <span class="ds-meta-sm" data-agent-reading-marker={i}>0{i+1}<span>{stage.title}</span></span>)}</div><AgentShot shot={{...s.shots![0],caption:p.checkpoint.caption}} locale={locale} /></div>
       </div>}
 
-      {s.id === 'policy' && <div class="agent-policy"><ol class="agent-policy__lifecycle">{p.policy.stages.map((stage,i) => <li><span class="ds-meta-sm agent-label" aria-hidden="true">0{i+1}</span><h3 class="ds-heading-xl">{stage.title}</h3><p class="ds-body-sm agent-body">{stage.text}</p></li>)}</ol><p class="ds-heading-xl agent-policy__warning">{p.policy.warning}</p><div class="agent-policy__panels">{policyShots.map((shot,i)=><div class="agent-plate" data-agent-evidence={`policy-${i}`}><AgentShot shot={shot} locale={locale} /></div>)}</div></div>}
+      {s.id === 'policy' && <div class="agent-policy"><ol class="agent-policy__lifecycle" data-motion="cascade" data-motion-stagger="tight">{p.policy.stages.map((stage,i) => <li><span class="ds-meta-sm agent-label" aria-hidden="true">0{i+1}</span><h3 class="ds-heading-xl">{stage.title}</h3><p class="ds-body-sm agent-body">{stage.text}</p></li>)}</ol><p class="ds-heading-xl agent-policy__warning" data-motion="rise">{p.policy.warning}</p><div class="agent-policy__panels">{policyShots.map((shot,i)=><div class="agent-plate" data-motion="fade-image" data-agent-evidence={`policy-${i}`}><AgentShot shot={shot} locale={locale} /></div>)}</div></div>}
 
       {s.id === 'autonomy' && <div class="agent-autonomy">
-        <div class="agent-autonomy__system"><h3 class="ds-heading-2xl">{p.autonomy.intro}</h3><dl>{p.autonomy.states.map((state,i)=><div><dt class="ds-heading-xl"><span class="ds-meta-sm agent-label" aria-hidden="true">0{i+1}</span>{state.title}</dt><dd class="ds-body-base agent-body">{state.text}</dd></div>)}</dl></div>
-        <div class="agent-autonomy__proof"><p class="ds-meta-sm agent-label">{p.autonomy.proof}</p><div class="agent-plate" data-motion="fade-image" data-agent-evidence="autonomy-1"><AgentShot shot={{...s.shots![1],desktop:'autonomy-states-desktop',mobile:'autonomy-states-mobile',fullDesktop:'autonomy-desktop',fullMobile:'autonomy-mobile',alt:p.autonomy.specimenAlt,caption:p.autonomy.specimenCaption}} locale={locale} /></div></div>
+        <div class="agent-autonomy__system" data-motion="cascade"><h3 class="ds-heading-2xl">{p.autonomy.intro}</h3><dl data-motion="cascade">{p.autonomy.states.map((state,i)=><div><dt class="ds-heading-xl"><span class="ds-meta-sm agent-label" aria-hidden="true">0{i+1}</span>{state.title}</dt><dd class="ds-body-base agent-body">{state.text}</dd></div>)}</dl></div>
+        <div class="agent-autonomy__proof"><p class="ds-meta-sm agent-label" data-motion="rise">{p.autonomy.proof}</p><div class="agent-plate" data-motion="fade-image" data-agent-evidence="autonomy-1"><AgentShot shot={{...s.shots![1],desktop:'autonomy-states-desktop',mobile:'autonomy-states-mobile',fullDesktop:'autonomy-desktop',fullMobile:'autonomy-mobile',alt:p.autonomy.specimenAlt,caption:p.autonomy.specimenCaption}} locale={locale} /></div></div>
         <details class="agent-autonomy__quality"><summary class="ds-heading-xl">{p.autonomy.inspect}</summary><div class="agent-plate" data-agent-evidence="autonomy-0"><AgentShot shot={s.shots![0]} locale={locale} /></div></details>
       </div>}
-      {s.note && <p class="ds-body-base agent-cue">{s.note}</p>}
+      {s.note && <p class="ds-body-base agent-cue" data-motion="rise">{s.note}</p>}
     </section>)}
 
     <section class="ds-container agent-section" id="outcome" aria-labelledby="outcome-title">
-      <div class="agent-section__head"><p class="ds-meta-sm agent-label">{outcome.label}</p><div class="agent-section__copy"><h2 id="outcome-title" class="ds-heading-4xl" data-motion="fade"><AgentHeadingText text={p.process.title} /></h2></div></div>
-      <div class="agent-process"><p class="ds-meta-sm agent-label">{p.process.label}</p><div class="agent-process__header" aria-hidden="true">{p.process.columns.map(label=><p class="ds-meta-sm">{label}</p>)}</div>{p.process.rows.map(row=><dl class="agent-process__row">{[row.observation,row.decision,row.validation].map((text,i)=><div><dt class="ds-meta-sm agent-label">{p.process.columns[i]}</dt><dd class="ds-body-base">{text}</dd></div>)}</dl>)}</div>
-      <div class="agent-result">{p.process.result.map((item,i)=><div><p class="ds-meta-sm agent-label" aria-hidden="true">0{i+1}</p><h3 class="ds-heading-2xl">{item.label}</h3><p class="ds-body-base agent-body">{item.text}</p></div>)}</div>
-      <p class="ds-body-sm agent-body agent-boundary">{p.process.boundary}</p>
-      <div class="agent-outcome"><div><p class="ds-meta-sm agent-label">{outcome.tradeLabel}</p><p class="ds-heading-3xl">{outcome.trade}</p></div><div><TextLink type="arrow" href={outcome.href} external externalLabel={locale === 'ru' ? 'Откроется в новой вкладке' : 'Opens in a new tab'}>{outcome.cta}</TextLink><p class="ds-body-sm agent-body">{outcome.note}</p></div></div>
+      <div class="agent-section__head" data-motion="cascade"><p class="ds-meta-sm agent-label">{outcome.label}</p><div class="agent-section__copy" data-motion="cascade"><h2 id="outcome-title" class="ds-heading-4xl"><AgentHeadingText text={p.process.title} /></h2></div></div>
+      <div class="agent-process" data-motion="cascade"><p class="ds-meta-sm agent-label">{p.process.label}</p><div class="agent-process__header" aria-hidden="true">{p.process.columns.map(label=><p class="ds-meta-sm">{label}</p>)}</div>{p.process.rows.map(row=><dl class="agent-process__row">{[row.observation,row.decision,row.validation].map((text,i)=><div><dt class="ds-meta-sm agent-label">{p.process.columns[i]}</dt><dd class="ds-body-base">{text}</dd></div>)}</dl>)}</div>
+      <div class="agent-result" data-motion="cascade">{p.process.result.map((item,i)=><div><p class="ds-meta-sm agent-label" aria-hidden="true">0{i+1}</p><h3 class="ds-heading-2xl">{item.label}</h3><p class="ds-body-base agent-body">{item.text}</p></div>)}</div>
+      <p class="ds-body-sm agent-body agent-boundary" data-motion="rise">{p.process.boundary}</p>
+      <div class="agent-outcome" data-motion="cascade"><div><p class="ds-meta-sm agent-label">{outcome.tradeLabel}</p><p class="ds-heading-3xl">{outcome.trade}</p></div><div><TextLink type="arrow" href={outcome.href} external externalLabel={locale === 'ru' ? 'Откроется в новой вкладке' : 'Opens in a new tab'}>{outcome.cta}</TextLink><p class="ds-body-sm agent-body">{outcome.note}</p></div></div>
     </section>
   </div>
   <CaseNext {...next} transitionKey={`case-${next.theme}`} />

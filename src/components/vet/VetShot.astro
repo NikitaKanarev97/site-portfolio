@@ -17,7 +17,7 @@ const fullDesktop = shot.fullDesktop ? pick(shot.fullDesktop) : undefined;
 const fullMobile = shot.fullMobile ? pick(shot.fullMobile) : undefined;
 const fullLabel = locale === 'ru' ? 'Рассмотреть полный экран' : 'Inspect the complete screen';
 ---
-<figure class:list={['vet-shot', `vet-shot--${mode}`, { 'vet-shot--cover': appearance === 'cover' }]} style={`--vet-native: ${desktop.cssWidth}px; --vet-native-mobile: ${mobile.cssWidth}px`} data-vet-shot={mode === 'mobile' ? shot.mobile : shot.desktop}>
+<figure class:list={['vet-shot', `vet-shot--${mode}`, { 'vet-shot--cover': appearance === 'cover' }]} style={`--vet-native: ${desktop.cssWidth}px; --vet-native-mobile: ${mobile.cssWidth}px`} data-vet-shot={mode === 'mobile' ? shot.mobile : shot.desktop} data-motion={href ? undefined : 'fade-image'}>
   <CaseScreen item={{ src: desktop.src, srcNarrow: mode === 'responsive' ? mobile.src : undefined, alt: mode === 'mobile' ? shot.altMobile ?? shot.alt : shot.alt, altNarrow: shot.altMobile, device: 'panel' }} native narrowAt="lg" loading={loading} href={href} linkLabel={linkLabel} />
   {(shot.caption || (!href && (fullDesktop || fullMobile))) && <figcaption class="vet-shot__caption ds-body-sm">
     {shot.caption && <span class:list={[shot.captionDesktop && 'vet-shot__caption--mobile']} data-h="caption">{shot.caption}</span>}

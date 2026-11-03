@@ -13,6 +13,9 @@
  *   data-motion="reveal-media"   Раскрытие — маска снизу вверх + контр-масштаб
  *   data-motion="fade"           opacity целым блоком, duration-base
  *   data-motion="rise"           opacity + y 12 to 0 (строки WorksList)
+ *   data-motion="cascade"        rise для прямых детей, каждый по входу в кадр;
+ *                                вложенный cascade вливает своих детей в порядок
+ *   data-motion="count"          число набегает от нуля, префикс и разделители целы
  *
  *   data-motion-intro            контейнер над сгибом: играет по fonts.ready
  *   data-motion-at="0.4"         явная позиция элемента во вступительном такте
@@ -258,7 +261,14 @@ function staggerFor(el) {
 }
 
 /** Structural scenes have their own timelines; never treat their root as a fade. */
-const STRUCTURAL_MODES = new Set(['cover-proof', 'cover-interlock', 'focus-stage', 'sheet', 'pin-swap', 'marquee', 'agent-model']);
+const STRUCTURAL_MODES = new Set(['cover-proof', 'cover-interlock', 'focus-stage', 'sheet', 'pin-swap', 'marquee', 'agent-model', 'cascade']);
+
+/** Cascade items: direct children; a nested cascade contributes its own items in place. */
+function cascadeItems(el) {
+  return Array.from(el.children).flatMap(child => child.dataset.motion === 'cascade' ? cascadeItems(child)
+    : child.hasAttribute('data-motion') ? [] : [child]);
+}
+const cascadeStep = el => el.dataset.motionStagger ? staggerFor(el) : motion.cascade.stagger;
 
 /** Static blocks and the inactive responsive diagram do not create timelines. */
 const motionAllowed = el => !el.closest('[data-story-motion="static"]') && el.getClientRects().length > 0;
@@ -347,7 +357,10 @@ function fade(el, tl, position) {
   tl.to(el, { opacity: 1, duration: duration.base, ease: motion.revealText.ease, ...lift(el) }, position);
 }
 
-/** Строка перечня — opacity + короткий подъём. */
+/**
+ * Строка перечня — opacity + короткий подъём. Трансформ снимается по
+ * завершении: CSS-наведение того же узла (подъём превью) не перебивается.
+ */
 function rise(targets, tl, position, staggerValue) {
   tl.fromTo(
     targets,
@@ -358,10 +371,28 @@ function rise(targets, tl, position, staggerValue) {
       duration: duration.base,
       ease: motion.revealText.ease,
       stagger: staggerValue,
-      ...lift(targets),
+      onStart: () => gsap.set(targets, { willChange: 'transform, opacity' }),
+      onComplete: () => gsap.set(targets, { willChange: 'auto', clearProps: 'transform' }),
     },
     position,
   );
+}
+
+/** Каскад под сгибом: элемент поднимается, когда входит сам, а не когда вошёл блок. */
+function cascadeScene(el) {
+  const items = cascadeItems(el);
+  if (!items.length) return;
+  const { duration: time, ease, y } = motion.cascade;
+  const step = cascadeStep(el);
+  ScrollTrigger.batch(items, {
+    start: TRIGGER_START,
+    once: true,
+    onEnter: batch => gsap.fromTo(batch, { opacity: 0, y }, {
+      opacity: 1, y: 0, duration: time, ease, stagger: step,
+      onStart: () => gsap.set(batch, { willChange: 'transform, opacity' }),
+      onComplete: () => gsap.set(batch, { willChange: 'auto', clearProps: 'transform' }),
+    }),
+  });
 }
 
 /** Разводка по имени движения. */
@@ -381,33 +412,70 @@ function play(el, tl, position, staggerValue = 0) {
       return revealMedia(el, tl, position);
     case 'rise':
       return rise(el, tl, position, staggerValue);
+    case 'cascade':
+      return rise(cascadeItems(el), tl, position, cascadeStep(el));
     case 'fade':
     default:
       return fade(el, tl, position);
   }
 }
 
+/**
+ * «$23,000», «~1,770», «61%», «4.4», «$23 000»: префикс и хвост остаются
+ * как есть, разделитель групп и десятичный знак берутся из исходной строки.
+ * Три цифры после последнего разделителя — группа, иначе дробная часть.
+ */
+const NUMBER = /^(\D*?)(\d(?:[\d\s,.]*\d)?)(.*)$/s;
+function parseCount(text) {
+  const match = text.match(NUMBER);
+  if (!match) return null;
+  const [, prefix, digits, suffix] = match;
+  const tail = digits.match(/[,.](\d+)$/);
+  const mark = tail && tail[1].length !== 3 ? digits.at(-tail[1].length - 1) : '';
+  const whole = mark ? digits.slice(0, -tail[1].length - 1) : digits;
+  const decimals = mark ? tail[1].length : 0;
+  const group = whole.match(/\D/)?.[0] ?? '';
+  const value = Number(whole.replace(/\D/g, '') + (mark ? '.' + tail[1] : ''));
+  if (!Number.isFinite(value)) return null;
+  return { value, format: (v) => {
+    const [int, fraction] = v.toFixed(decimals).split('.');
+    return prefix + (group ? int.replace(/\B(?=(\d{3})+(?!\d))/g, group) : int) + (fraction ? mark + fraction : '') + suffix;
+  } };
+}
+
 function count(el, tl, position) {
   const original = el.textContent.trim();
-  const match = original.match(/^([\d\s,.]+)(.*)$/);
-  if (!match) return;
-  const decimalComma = match[1].includes(',') && !/[,]\d{3}$/.test(match[1]);
-  const numeric = match[1].replace(/\s/g, '').replace(decimalComma ? ',' : /,/g, decimalComma ? '.' : '');
-  const value = Number(numeric);
-  if (!Number.isFinite(value)) return;
-  const decimals = (numeric.split('.')[1] || '').length;
+  const parsed = parseCount(original);
+  if (!parsed) { gsap.set(el, { opacity: 1 }); return; }
+  // Inside a cascade item the number arrives with its row; alone it rises itself.
+  const carried = el.parentElement?.closest('[data-motion="cascade"] > :not([data-motion])');
   const counter = { value: 0 };
-  const formatter = new Intl.NumberFormat(decimalComma ? 'ru-RU' : 'en-US', {
-    minimumFractionDigits: decimals, maximumFractionDigits: decimals,
-  });
-  let painted = original;
+  let painted = parsed.format(0);
   el.setAttribute('aria-label', original);
-  tl.to(counter, { value, ...motion.count, onUpdate: () => {
-    const text = formatter.format(counter.value) + match[2];
-    if (text !== painted) { el.textContent = text; painted = text; }
-  }, onComplete: () => { el.textContent = original; } }, position);
+  el.textContent = painted;
+  const restore = () => {
+    el.textContent = original;
+    gsap.set(el, { clearProps: 'minInlineSize,display' });
+  };
+  tl.to(counter, { value: parsed.value, ...motion.count,
+    onStart: () => {
+      // Hold the final width: a growing number must not shift its neighbours.
+      el.textContent = original;
+      const width = el.getBoundingClientRect().width;
+      el.textContent = painted;
+      if (getComputedStyle(el).display === 'inline') el.style.display = 'inline-block';
+      el.style.minInlineSize = `${width}px`;
+    },
+    onUpdate: () => {
+      const text = parsed.format(counter.value);
+      if (text !== painted) { el.textContent = text; painted = text; }
+    },
+    onComplete: restore }, position);
+  if (carried) gsap.set(el, { opacity: 1 });
+  else tl.fromTo(el, { opacity: 0, y: motion.cascade.y }, { opacity: 1, y: 0, duration: motion.cascade.duration,
+    ease: motion.cascade.ease, clearProps: 'transform' }, position);
   // GSAP contexts do not revert textContent: explicitly restore for resize/reduce.
-  gsap.context(() => () => { el.textContent = original; });
+  gsap.context(() => restore);
 }
 
 function draw(el, tl, position) {
@@ -726,7 +794,7 @@ function setupCoverVideos(root) {
  * страницу, bfcache, reduce. Раскладка не меняется ни на пиксель (§8).
  */
 function settle(root) {
-  gsap.set(root.querySelectorAll('[data-motion]'), { clearProps: 'transform', opacity: 1 });
+  gsap.set(root.querySelectorAll('[data-motion], [data-motion="cascade"] > *'), { clearProps: 'transform', opacity: 1 });
   gsap.set(root.querySelectorAll('.ds-media-mask'), { clipPath: 'none' });
   gsap.set(root.querySelectorAll('.ds-media-inner'), { scale: 1 });
 }
@@ -768,6 +836,8 @@ function buildIntro(root) {
   let step = 0;
 
   toArray(intro.querySelectorAll('[data-motion]')).forEach((el) => {
+    // A nested cascade already plays inside its parent's order.
+    if (el.dataset.motion === 'cascade' && el.parentElement?.closest('[data-motion="cascade"]')) return;
     const explicit = el.dataset.motionAt;
     const position = explicit === undefined ? step * motion.revealText.stagger : Number(explicit);
     if (explicit === undefined) step += 1;
@@ -812,6 +882,11 @@ function buildScrollScenes(root) {
     });
   };
   scrollTargets(root).filter(el => !el.closest('[data-diagram-layout]')).forEach(build);
+  // No visibility filter: a layout-hidden cascade still needs its batch, or
+  // its items would stay at the CSS initial state once the layout shows them.
+  toArray(root.querySelectorAll('[data-motion="cascade"]')).filter(el => !el.closest('[data-story-motion="static"]')
+    && !el.closest('[data-motion-intro]') && !el.parentElement?.closest('[data-motion="cascade"], [data-motion-group]'))
+    .forEach(cascadeScene);
   const responsive = gsap.matchMedia();
   const breakpoint = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--bp-md'));
   for (const [layout, query] of [['desktop', `(min-width: ${breakpoint}px)`], ['mobile', `(max-width: ${breakpoint - 1}px)`]]) {
@@ -987,6 +1062,10 @@ document.addEventListener('astro:before-preparation', (event) => {
 });
 
 document.addEventListener('astro:before-swap', teardownPage);
+// The router copies <html> attributes from the fetched document, where the head
+// script never ran. This listener lives in the bundle, so motion is available:
+// carry .js over, or initPage takes the swap for a late bundle and settles.
+document.addEventListener('astro:before-swap', (event) => event.newDocument.documentElement.classList.add('js'));
 document.addEventListener('astro:before-swap', (event) => restoreMoreCases(event.newDocument));
 function selectSnapshot(doc) {
   doc.querySelectorAll('[data-case-cover], [data-case-next], [data-case-card]').forEach(el => {

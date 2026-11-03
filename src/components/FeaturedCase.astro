@@ -14,9 +14,9 @@ const { item, index, locale, editorial = false, proofFirst = false } = Astro.pro
 const slug = item.href.split('/').filter(Boolean).at(-1)!;
 const proof = item.meta.at(-1)!;
 ---
-<article class:list={['featured-case', `featured-case--${item.theme}`, editorial && 'featured-case--editorial', proofFirst && 'featured-case--proof-first']} id={`work-${slug}`} aria-labelledby={`title-${slug}`} data-case-card={`case-${item.theme}`}>
-  <div class="featured-case__head">
-    <div class="featured-case__identity">
+<article class:list={['featured-case', `featured-case--${item.theme}`, editorial && 'featured-case--editorial', proofFirst && 'featured-case--proof-first']} id={`work-${slug}`} aria-labelledby={`title-${slug}`} data-case-card={`case-${item.theme}`} data-motion="cascade">
+  <div class="featured-case__head" data-motion="cascade">
+    <div class="featured-case__identity" data-motion="cascade">
       <h2 class={editorial ? 'ds-heading-4xl' : 'ds-display-6xl'} id={`title-${slug}`}><a href={item.href}>{item.title}</a></h2>
     </div>
     {!proofFirst && <p class="ds-heading-xl featured-case__outcome">{item.outcome}</p>}
