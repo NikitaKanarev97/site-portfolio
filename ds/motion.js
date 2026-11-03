@@ -64,8 +64,8 @@ export const motion = {
   pinSwap:     { scrub: 0.25, inset: 32, y: -24, start: 'top 90%', end: 'top 25%' },
   count:       { duration: duration.image, ease: ease.standard },
   draw:        { duration: duration.slow, ease: ease.standard },
-  // Схема Agent Ops: такт входа по ходу потока; тихая ветка «Нет» проявляется дольше.
-  agentModel:  { duration: duration.slow, ease: ease.entrance, quiet: duration.image, y: 12, x: 24, beat: 0.2, flowAt: 0.8 },
+  // Схема Agent Ops: такт входа части потока; тихая ветка «Нет» проявляется дольше.
+  agentModel:  { duration: duration.slow, ease: ease.entrance, quiet: duration.image, y: 12, x: 24, beat: 0.2, narrowAt: 0.6, handoff: 0.5 },
   marquee:     { duration: duration.marquee, ease: 'none' },
   // Окно и меню: вход по центру из почти полного размера, выход вдвое короче входа.
   present:     { in: duration.page, out: duration.fast, ease: ease.expressive, outEase: ease.standard, scale: 0.97, y: 8, stagger: stagger.tight },
