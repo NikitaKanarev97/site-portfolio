@@ -26,8 +26,8 @@
  */
 interface Props {
   variant?: 'body' | 'lead';
-  /** Снять движение: блок идёт частью чужого каскада. */
-  motion?: boolean;
+  /** Снять движение: блок идёт частью чужого каскада. 'cascade' — абзацы поднимаются по одному. */
+  motion?: boolean | 'cascade';
   class?: string;
 }
 
@@ -45,7 +45,7 @@ const motionName = variant === 'lead' ? 'reveal-text' : 'fade';
     variant === 'lead' && 'ds-flow-lead',
     className,
   ]}
-  data-motion={motion ? motionName : undefined}
+  data-motion={motion === 'cascade' ? 'cascade' : motion ? motionName : undefined}
 >
   <slot />
 </div>

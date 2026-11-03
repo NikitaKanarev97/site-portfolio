@@ -26,14 +26,14 @@ const chapters = [
   ogCard={locale === 'ru' ? 'about-ru' : 'about'}
   current={locale === 'ru' ? '/ru/about' : '/about'}
   contactLead={about.contactLead} lang={locale} siteCopy={site}>
-  <section class="ds-container intro" data-motion-group data-motion-stagger="tight">
+  <section class="ds-container intro" data-motion-intro>
     <p class="ds-meta-sm intro__meta" data-motion="fade">
       <span>{site.brand}</span><span>{about.intro.heading}</span>
     </p>
     <h1 class="ds-display-6xl intro__heading">
       {about.intro.headline.map(line => <span data-motion="reveal-text">{line}</span>)}
     </h1>
-    <nav class="chapter-index" aria-label={about.contentsLabel} style={`--about-chapter-count: ${chapters.length}`}>
+    <nav class="chapter-index" data-motion="cascade" data-motion-stagger="tight" aria-label={about.contentsLabel} style={`--about-chapter-count: ${chapters.length}`}>
       {chapters.map((chapter, index) => <TextLink href={`#${chapter.id}`} type="arrow" direction="down" class="ds-body-sm">
         {about.chapterLabels[index]}
       </TextLink>)}
@@ -44,11 +44,11 @@ const chapters = [
     <ProseBlock variant="lead" class="intro__lead"><p>{about.intro.lead}</p></ProseBlock>
   </section>
 
-  {chapters.map(chapter => <section id={chapter.id} class="ds-container chapter" data-motion="fade">
+  {chapters.map(chapter => <section id={chapter.id} class="ds-container chapter" data-motion="cascade">
     <div class="chapter__head">
       <SectionHead size="lg" reveal={false}>{chapter.heading}</SectionHead>
     </div>
-    <ProseBlock motion={false} class="chapter__body">
+    <ProseBlock motion="cascade" class="chapter__body">
       {chapter.body.map(paragraph => <p>{paragraph}</p>)}
     </ProseBlock>
   </section>)}
