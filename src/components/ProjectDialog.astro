@@ -30,11 +30,10 @@
  * (запрет ds/patterns.md §FeaturedCaseCover). Разбор отвечает на «что это
  * было», ссылка на прод — следующий шаг внутри него.
  *
- * Движение: Состояние (motion-state, ds/motion-concept.md §3.4) — opacity
- * на окне и на подложке, ни перемещения, ни масштаба. Такт держится
- * @starting-style и transition-behavior: allow-discrete: без них [open]
- * включает display и конечное значение одним кадром, и переход не
- * запускается вовсе. Нового движения словарь не получает.
+ * Движение: Подача (motion.present, ds/motion-concept.md §3.4) — та же,
+ * что у MediaZoom и меню: окно встаёт по центру из scale 0.97 и
+ * прозрачности, подложка проявляется вместе с ним, выход короче входа,
+ * Escape — без движения. Хореография в src/scripts/presence.js.
  */
 import MediaFrame from './MediaFrame.astro';
 import MetaList from './MetaList.astro';
@@ -139,41 +138,16 @@ const titleId = `${id}-title`;
     color: var(--text-default);
     overflow-y: auto;
     overscroll-behavior: contain;
-
-    opacity: 0;
-    transition:
-      opacity var(--motion-state-duration) var(--motion-state-ease),
-      overlay var(--motion-state-duration) allow-discrete,
-      display var(--motion-state-duration) allow-discrete;
   }
 
-  .project-dialog[open] {
-    opacity: 1;
+  .project-dialog[data-dismissing] {
+    pointer-events: none;
   }
 
-  @starting-style {
-    .project-dialog[open] {
-      opacity: 0;
-    }
-  }
-
+  /* Подложка проявляется вместе с окном: --layer-presence ведёт presence.js. */
   .project-dialog::backdrop {
     background: var(--surface-inverse);
-    opacity: 0;
-    transition:
-      opacity var(--motion-state-duration) var(--motion-state-ease),
-      overlay var(--motion-state-duration) allow-discrete,
-      display var(--motion-state-duration) allow-discrete;
-  }
-
-  .project-dialog[open]::backdrop {
-    opacity: var(--scrim-opacity);
-  }
-
-  @starting-style {
-    .project-dialog[open]::backdrop {
-      opacity: 0;
-    }
+    opacity: calc(var(--scrim-opacity) * var(--layer-presence, 1));
   }
 
   /* Ширина разбора ограничена контейнером продукта: панель, растянутая на
@@ -298,6 +272,7 @@ const titleId = `${id}-title`;
 
 <script>
   import { containDialogFocus } from '../scripts/dialog-focus';
+  import { present, dismiss, settle } from '../scripts/presence.js';
   /**
    * Native modal, Escape and focus return; shared keyboard boundary handling
    * keeps Tab on the controls. Listeners belong to the current Astro page.
@@ -326,24 +301,27 @@ const titleId = `${id}-title`;
         event.preventDefault();
         document.body.classList.add('ds-scroll-locked');
         dialog.showModal();
+        present(dialog, { surface: dialog.querySelector<HTMLElement>('[data-project-dialog-surface]') });
       }, { signal });
     });
 
     document.querySelectorAll<HTMLDialogElement>('dialog[data-project-dialog]').forEach((dialog) => {
       const close = dialog.querySelector<HTMLButtonElement>('[data-project-dialog-close]');
+      const surface = dialog.querySelector<HTMLElement>('[data-project-dialog-surface]');
       containDialogFocus(dialog, signal);
-      close?.addEventListener('click', () => dialog.close(), { signal });
+      const requestClose = () => dismiss(dialog, { surface }, () => dialog.close());
+      close?.addEventListener('click', requestClose, { signal });
 
       /* Нажатие мимо панели закрывает. Целей две: сам диалог и обёртка —
          поле вокруг панели поделено между ними, и панель ловит своё. */
-      const surface = dialog.querySelector('[data-project-dialog-surface]');
       dialog.addEventListener('click', (event) => {
-        if (event.target === dialog || event.target === surface) dialog.close();
+        if (event.target === dialog || event.target === surface) requestClose();
       }, { signal });
 
       /* Событие close приходит и от Escape, и от кнопки — состояние
          снимается в одном месте. */
       dialog.addEventListener('close', () => {
+        settle(dialog, { surface });
         document.body.classList.remove('ds-scroll-locked');
       }, { signal });
     });

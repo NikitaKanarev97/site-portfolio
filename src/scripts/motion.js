@@ -65,6 +65,8 @@ export const motion = {
   count:       { duration: duration.image, ease: ease.standard },
   draw:        { duration: duration.slow, ease: ease.standard },
   marquee:     { duration: duration.marquee, ease: 'none' },
+  // Окно и меню: вход по центру из почти полного размера, выход вдвое короче входа.
+  present:     { in: duration.page, out: duration.fast, ease: ease.expressive, outEase: ease.standard, scale: 0.97, y: 8, stagger: stagger.tight },
 };
 
 /**

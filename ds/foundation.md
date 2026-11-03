@@ -391,6 +391,7 @@ at rest and darker hover/pressed colors. See V1.1 report for measured states.
 | `motion-reveal-media` | `duration-slow` + `ease-expressive` | только JS |
 | `motion-page-out` | `duration-page` + `ease-exit` | только JS |
 | `motion-page-in` | `duration-page` + `ease-entrance` | только JS |
+| `motion.present` | вход `duration-page` + `ease-expressive`, выход `duration-fast` + `ease-standard`, scale 0.97, y 8, `stagger-tight` | только JS (`src/scripts/presence.js`) |
 
 Разделение не декоративное: CSS-переход умеет отработать наведение, смену состояния и нажатие, но не умеет каскад и не умеет переход между страницами. Первые два продублированы в обоих носителях, `motion-press` не продублирован намеренно — JS его не исполняет, и мёртвого экспорта в `motion.js` под него нет. Остальные четыре существуют только в `ds/motion.js`.
 

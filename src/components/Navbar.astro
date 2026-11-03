@@ -261,6 +261,11 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
     display: none;
   }
 
+  /* Уходящая панель уже не принимает нажатий: решение принято. */
+  .navbar__panel[data-dismissing] {
+    pointer-events: none;
+  }
+
   /* Верхний отступ разведён с нижним: строка с триггером на время
      открытия прибита к верху окна: цель space-12 + поля space-4 с двух
      сторон. Список начинается
@@ -317,6 +322,7 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
 </style>
 
 <script>
+  import { present, dismiss, settle } from '../scripts/presence.js';
   const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
   let cleanupNavbar: (() => void) | undefined;
 
@@ -337,14 +343,25 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
     let lockedScrollY = 0;
 
     const focusables = () => [trigger, ...Array.from(panel.querySelectorAll<HTMLElement>(FOCUSABLE))];
+    const items = Array.from(panel.querySelectorAll<HTMLElement>('.navbar__panel-list > li'));
 
-    const setOpen = (next: boolean) => {
+    /** animate — только для открытия и закрытия кнопкой: Escape, переход по
+     *  пункту и смена раскладки снимают панель сразу. */
+    const setOpen = (next: boolean, animate = false) => {
       // overflow: hidden на body схлопывает область прокрутки, и позиция
       // обнуляется: открыл меню в середине страницы, закрыл — оказался
       // на самом верху. Запоминаем на открытии, возвращаем на закрытии.
       if (next) lockedScrollY = window.scrollY;
       open = next;
-      panel.hidden = !next;
+      if (next) {
+        panel.hidden = false;
+        present(panel, { items });
+      } else if (animate) {
+        dismiss(panel, { items }, () => { panel.hidden = true; });
+      } else {
+        settle(panel, { items });
+        panel.hidden = true;
+      }
       trigger.setAttribute('aria-expanded', String(next));
       trigger.textContent = next
         ? (trigger.dataset.labelClose ?? '')
@@ -361,7 +378,7 @@ const DESKTOP_MEDIA = `(min-width: ${token('bp-md')})`;
       }
     };
 
-    trigger.addEventListener('click', () => setOpen(!open), { signal });
+    trigger.addEventListener('click', () => setOpen(!open, true), { signal });
 
     // Фокус-ловушка, Escape и возврат фокуса на триггер.
     root.addEventListener('keydown', (event: KeyboardEvent) => {
