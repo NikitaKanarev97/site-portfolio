@@ -99,7 +99,7 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
   <section class="ds-container ds-section featured" id="work">
     <div class="featured__bridge" data-motion="cascade">
       <p class="ds-meta-xs featured__eyebrow">{home.featured.eyebrow}</p>
-      <span class="ds-meta-xs featured__count" aria-hidden="true">01 — 05</span>
+      <span class="ds-meta-xs featured__count" aria-hidden="true">01 — {String(home.featured.items.length).padStart(2, '0')}</span>
     </div>
 
     <ol class="featured__list">

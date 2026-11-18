@@ -1,6 +1,6 @@
 import { casesRu } from './cases/index.ts';
 import { featuredWork } from '../featured-work.ts';
-import { home } from '../home.ts';
+import { home, OFF_HOME } from '../home.ts';
 import { NAME_RU } from './site.ts';
 /**
  * Заголовки карточек берутся из реестра кейсов, а не пишутся здесь
@@ -20,9 +20,10 @@ export const homeRu = {
   hero: {
     name: NAME_RU,
     role: 'Продуктовый дизайнер',
-    headline: ['Сложные системы.', 'Ясные решения.'],
+    /** Перевод слогана 18.11.2026 тем же смыслом; согласуется владельцем при вёрстке. */
+    headline: ['Продуктовый дизайнер, который доводит решения', 'до работающего интерфейса.'],
     specialization:
-      "Проектирую сложные продукты: от контроля ИИ и закупок до обучения и клинических сценариев.",
+      'Изучаю реальные рабочие сценарии, выстраиваю дизайн-систему и собираю интерактивные прототипы, которые можно проверить в браузере.',
     authorization: null,
     portrait: {
       ...home.hero.portrait,
@@ -37,7 +38,7 @@ export const homeRu = {
     eyebrow: 'Избранные работы',
     expandLabel: 'Показать ещё {count}',
     collapseLabel: 'Свернуть',
-    items: featuredWork(casesRu, 'ru'),
+    items: featuredWork(casesRu.filter(({ slug }) => !OFF_HOME.includes(slug)), 'ru'),
   },
   development: {
     ...home.development,

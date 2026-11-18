@@ -33,6 +33,13 @@ const TODO_WEBFLOW = {
   bloomblex: 'https://bloomblex-prod.webflow.io/',
 };
 
+/**
+ * 18.11.2026, DIRECTION-2026-11.md §7: в основных кейсах главной три
+ * работы. Vet Clinic OS и Pawly сняты только с главной — их страницы,
+ * Next и sitemap остаются на реестре; судьба на сайте решается этапом 4.
+ */
+export const OFF_HOME = ['vet-clinic', 'pawly'];
+
 export const home = {
   meta: {
     title: `${NAME} — Product Designer`,
@@ -43,9 +50,10 @@ export const home = {
   hero: {
     name: NAME,
     role: 'Product Designer',
-    headline: ['Complex systems.', 'Clear decisions.'],
+    /** Слоган 18.11.2026 — выбор владельца, tasks/review-2026-11/positioning.md. */
+    headline: ['Product designer who turns design decisions', 'into working interfaces.'],
     specialization:
-      "I design decision-heavy products — from AI oversight and procurement to learning and clinical workflows.",
+      'I research real workflows, shape the design system, and build interactive prototypes that can be tested in the browser.',
     /**
      * Дословно из ia/authorization-copy.md. Не переписывать в отрыве от файла.
      *
@@ -99,7 +107,7 @@ export const home = {
     eyebrow: 'Selected work',
     expandLabel: 'Show {count} more cases',
     collapseLabel: 'Show fewer cases',
-    items: featuredWork(cases, 'en'),
+    items: featuredWork(cases.filter(({ slug }) => !OFF_HOME.includes(slug)), 'en'),
   },
 
   /*

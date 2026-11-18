@@ -34,7 +34,7 @@ export interface ServiceRoute {
  * остальное.
  */
 export const serviceRoutes: readonly ServiceRoute[] = [
-  { label: 'Home / selected work', href: '/#work', note: 'Five product design cases, project context and contact.' },
+  { label: 'Home / selected work', href: '/#work', note: 'Three product design cases, project context and contact.' },
   { label: 'About', href: '/about', note: 'How I work inside constraints I did not set. Work authorization in full.' },
   { label: 'CV (PDF)', href: '/cv.pdf', note: 'One file, direct link, no form in front of it.' },
 ];
