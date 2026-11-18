@@ -21,17 +21,7 @@ const settle = async (page, locale) => {
   if (locale === 'ru') { await page.evaluate(() => dispatchEvent(new Event('ru:localize'))); await page.waitForTimeout(400); }
 };
 
-// Agent Ops: роль ставится меню на индексе, маршрут — внутри SPA.
-const agent = (route, person) => async (page, locale) => {
-  const pre = locale === 'ru' ? '/ru' : '';
-  await page.goto(`https://agent-ops-console.vercel.app${pre}/`, { waitUntil: 'networkidle' });
-  await settle(page, locale);
-  await page.locator('[data-track="shell:role-switch"]').first().click();
-  await page.getByRole('menuitem', { name: new RegExp(person) }).first().click();
-  await page.waitForTimeout(200);
-  await page.evaluate((to) => { history.pushState(null, '', to); dispatchEvent(new PopStateEvent('popstate')); }, `${pre}${route}`);
-  await settle(page, locale);
-};
+// Agent Ops captures removed 18.11.2026 (stage 1: no publication permit).
 const dssl = (route) => async (page, locale) => {
   const pre = locale === 'ru' ? '/ru' : '';
   await page.goto(`https://b2b-partner-portal-five.vercel.app${pre}`, { waitUntil: 'domcontentloaded' });
@@ -47,8 +37,6 @@ const learn = (route) => async (page, locale) => {
 };
 
 const SOURCES = {
-  'agent-queue': { viewport: { width: 1920, height: 1200 }, dark: true, open: agent('/screens/review-queue', 'Martin K\\.') },
-  'agent-approvals': { viewport: { width: 1920, height: 1200 }, dark: true, open: agent('/screens/action-approvals', 'Priya S\\.') },
   'dssl-fulfillment': { viewport: { width: 1440, height: 1080 }, open: dssl('/fulfillment') },
   'dssl-resolution': { viewport: { width: 1440, height: 1080 }, open: dssl('/resolution-center') },
   'learn-home': { viewport: { width: 1440, height: 1000 }, open: learn('/home') },

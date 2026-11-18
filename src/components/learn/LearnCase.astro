@@ -39,7 +39,6 @@ const externalLabel = locale === 'ru' ? 'Откроется в новой вкл
     <section class="ds-container learn-section" id="problem" aria-labelledby="problem-title">
       <header class="learn-head" data-motion="cascade"><p class="ds-meta-sm learn-muted">{problem.label}</p><div class="learn-copy" data-motion="cascade"><h2 id="problem-title" class="ds-heading-4xl">{problem.title}</h2><p class="ds-body-lg learn-muted">{problem.body}</p></div></header>
       <div class="learn-problem">
-        <div class="learn-archive"><p class="ds-body-sm learn-muted" data-motion="rise">{problem.archive}</p></div>
         <div class="learn-jobs" data-motion="cascade">{problem.jobs.map((job, i) => <div class="learn-job"><p class="ds-meta-sm learn-muted">0{i + 1} / {job.label}</p><h3 class="ds-heading-2xl">{job.title}</h3><p class="ds-body-base learn-muted">{job.text}</p></div>)}</div>
       </div>
     </section>
@@ -113,7 +112,6 @@ const externalLabel = locale === 'ru' ? 'Откроется в новой вкл
   .learn-copy { min-inline-size: 0; max-inline-size: var(--measure-lead); }
   .learn-head h2 { max-inline-size: 24ch; text-wrap: balance; overflow-wrap: anywhere; }
   .learn-problem { display: grid; gap: var(--flow-node); align-items: start; }
-  .learn-archive { display: grid; gap: var(--flow-pair); min-inline-size: 0; }
   .learn-jobs { display: grid; gap: var(--flow-node); }
   .learn-job { display: grid; gap: var(--flow-pair); border-block-start: var(--border-width) solid var(--border-strong); padding-block-start: var(--flow-text); }
   .learn-system, .learn-workspace { background: var(--surface-subtle); padding-block: var(--flow-block); }
@@ -154,8 +152,9 @@ const externalLabel = locale === 'ru' ? 'Откроется в новой вкл
     .learn-sheet { --learn-step: var(--space-32); }
     .learn-head { grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: var(--gutter); }
     .learn-head > .learn-muted { padding-block-start: var(--space-2); }
-    .learn-problem { grid-template-columns: minmax(0, 8fr) minmax(0, 3fr); gap: var(--space-12); align-items: center; }
-    .learn-jobs { grid-template-columns: minmax(0, 1fr); }
+    /* Stage 1 (18.11.2026): archive frame withdrawn; the two jobs sit under the text column. */
+    .learn-problem { grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: var(--gutter); }
+    .learn-jobs { grid-column: 2; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-8); }
     .learn-reference { padding-inline-start: var(--space-24); }
     .learn-programme { padding-inline-end: var(--space-24); }
     .learn-completion, .learn-counterexample { grid-template-columns: minmax(0, 5fr) minmax(0, 4fr); margin-inline: var(--space-24); }

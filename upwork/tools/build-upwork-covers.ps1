@@ -142,7 +142,6 @@ function Backup-Cover {
 }
 
 $covers = @(
-    'projects/agent-ops-console/00-thumbnail-preview.png',
     'projects/b2b-partner-portal/00-thumbnail-preview.png',
     'projects/vet-clinic-os/00-thumbnail-preview.png',
     'projects/pawly/00-thumbnail-preview.png',
@@ -152,11 +151,6 @@ $covers = @(
     'projects/bloomlex/00-cover.png'
 )
 $covers | ForEach-Object { Backup-Cover $_ }
-
-# 01 — Agent Ops: dense dark enterprise UI, presented as one decisive product surface.
-$canvas = New-CoverCanvas '#101416' '#293135' 26 '' (New-Object System.Drawing.RectangleF(1460, -260, 780, 780))
-Draw-RoundedImage $canvas.Graphics (Join-Path $Root 'projects/agent-ops-console/01.png') (New-Object System.Drawing.RectangleF(110, 244, 1780, 1112)) 34 '#FF9A78' 72 2
-Save-Cover $canvas (Join-Path $Root 'projects/agent-ops-console/00-thumbnail-preview.png')
 
 # 02 — B2B Portal: one large fulfillment decision screen on a cool procurement-blue field.
 $canvas = New-CoverCanvas '#F3F7FC' '#C9DAF2' 32 '' (New-Object System.Drawing.RectangleF(-210, 940, 920, 920))
@@ -195,7 +189,6 @@ Draw-RoundedImage $canvas.Graphics (Join-Path $Root 'projects/bloomlex/01.png') 
 Save-Cover $canvas (Join-Path $Root 'projects/bloomlex/00-cover.png')
 
 $proofItems = @(
-    @{ Name = 'Agent Ops'; Path = 'projects/agent-ops-console/00-thumbnail-preview.png' },
     @{ Name = 'B2B Partner Portal'; Path = 'projects/b2b-partner-portal/00-thumbnail-preview.png' },
     @{ Name = 'Vet Clinic OS'; Path = 'projects/vet-clinic-os/00-thumbnail-preview.png' },
     @{ Name = 'Pawly'; Path = 'projects/pawly/00-thumbnail-preview.png' },

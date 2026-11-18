@@ -211,21 +211,9 @@ The distributor sells professional video-surveillance equipment to system integr
 
 ---
 
-### Блок 3 · Изображение
+### Блок 3 · Изображение — снято
 
-![Блок 3](01.png)
-
-Файл:
-
-```
-01.png
-```
-
-Description:
-
-```
-Before. The buyer's workspace opened with a training banner and a bonus promotion. Russian, as it shipped; the partner's name is masked.
-```
+**18.11.2026 (этап 1.1):** кадр старого кабинета DSSL (P2, статус «не решено» в `tasks/review-2026-11/evidence-inventory.md`) убран из пакета и из репозитория; в карточку Upwork не загружать. Оригинал — в закрытом локальном архиве.
 
 ---
 

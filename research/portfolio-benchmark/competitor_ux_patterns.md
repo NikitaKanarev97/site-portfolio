@@ -31,7 +31,7 @@
 
 **Кейс целиком:** шапка + 5–7 модулей + карточки итога + следующий кейс. Бюджет — **250–450 слов** на кейс, включая шапку и подписи.
 
-**Числа — типографикой.** Не «примерно 4% разговоров, около 71 карточки в день», а три крупных числа со стрелками: `1 770 → 71 → 2,4 ч`. Число, которое можно показать, не пишется в абзаце.
+**Числа — типографикой.** Не «примерно [доля A5] разговоров, около [оценка A5] карточки в день», а три крупных числа со стрелками: `[объём A3] → [оценка A5] → [оценка A5]`. Число, которое можно показать, не пишется в абзаце.
 
 **Чего нет в тексте:** пересказа того, что видно на экране; оговорок и уточнений в скобках; последовательности «сначала… затем… в итоге»; двух чисел в одном предложении.
 
@@ -39,14 +39,14 @@
 
 **Сейчас** — заголовок, три абзаца, **~200 слов** (`src/copy/cases/agent-ops-console.ts:128`):
 > Reading every message was arithmetically impossible. Reading every commitment was not.
-> Around [объём A3] closed automatically each day. Reading all of them would take roughly 177 hours a day — by my estimate 25.3 full-time reviewers, against a team of 24… (ещё два абзаца)
+> Around [объём A3] closed automatically each day. Reading all of them would take roughly [оценка A5] a day — by my estimate [оценка A5], against a [размер команды A3]… (ещё два абзаца)
 
 **По правилам** — **~40 слов**:
 > `SHIFT`
 > **Read the promises, not the chats.**
-> `1 770 chats a day → 71 promises → 2.4 h of review` — крупными числами со стрелками
-> A refund, a credit, a promised date — 4% of the traffic, one person's afternoon. Fourteen angry customers turned out to be one expired article, so the queue groups by cause.
-> Визуал: схема-воронка 1 770 → 71 и кадр очереди с кластером причин.
+> `[объём A3] chats a day → [оценка A5] promises → [оценка A5] of review` — крупными числами со стрелками
+> A refund, a credit, a promised date — [доля A5] of the traffic, one person's afternoon. [число A3] angry customers turned out to be one expired article, so the queue groups by cause.
+> Визуал: схема-воронка [объём A3] → [оценка A5] и кадр очереди с кластером причин.
 
 Смысл сохранён полностью. Ушли выкладки, которые нужны на интервью, а не на странице: их Никита расскажет голосом.
 

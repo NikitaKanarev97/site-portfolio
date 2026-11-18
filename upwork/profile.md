@@ -38,8 +38,8 @@
 | Skills | 20 тегов из списка §4, строго в том порядке. Все 14 текущих снести | §4 |
 | Портфолио | 4 продуктовые карточки первыми (§5.1–5.4), Webflow после (§5.5–5.8). Тексты §5.1–5.4 переписаны 31.08 по формуле, ссылка стоит в первом блоке | §5 |
 | Project Catalog | **четыре карточки, готовы к вставке — `upwork/project-catalog.md`.** Решение «одна карточка» расширено 01.09 | §10 → отдельный файл |
-| Медиа карточек | пакеты `upwork/projects/*` — готовые PNG и README на 25 блоков. Собраны: Agent Ops, B2B Partner Portal | §5 |
-| Highlighted | отметить Agent Ops Console и B2B Partner Portal | §5 |
+| Медиа карточек | пакеты `upwork/projects/*` — готовые PNG и README на 25 блоков. Собраны: B2B Partner Portal (пакет Agent Ops снят 18.11.2026) | §5 |
+| Highlighted | отметить B2B Partner Portal (Agent Ops снят 18.11.2026) | §5 |
 | Employment | переписать DSSL + добавить запись March 2026 – Present | §6 |
 | Категория | `Design & Creative` → Product Design, вторая — Web & Mobile Design | §7 |
 | Specialized Profiles | **не искать — Upwork отключил их 28.05.2026** | §7 |
@@ -63,7 +63,7 @@
 | 3 | Overview | §3 | 5 мин | Первые ~200 знаков индексируются тяжелее всего и показываются превью в выдаче |
 | 4 | Skills — снести 14, поставить 20 новых | §4 | 10 мин | Текущий набор тянет только Webflow-вакансии |
 | 5 | Портфолио: тексты 4 продуктовых карточек + переписать Webflow + отметить две как highlighted | §5 | 60–90 мин | Живые ссылки — главное отличие от конкурентов |
-| 5а | Залить два готовых пакета: `agent-ops-console`, `b2b-partner-portal` | §5 | 15 мин на карточку | Правая колонка занимает основную площадь и читается первой. PNG, тексты и подписи готовы — работа механическая |
+| 5а | Залить готовый пакет `b2b-partner-portal` (Agent Ops снят 18.11.2026) | §5 | 15 мин на карточку | Правая колонка занимает основную площадь и читается первой. PNG, тексты и подписи готовы — работа механическая |
 | 5б | Собрать пакеты Vet Clinic OS и Pawly | §5 | 2–3 ч на карточку | Материал снят, нужен отбор кадров и тексты блоков. Не блокирует старт откликов |
 | 6 | Employment history | §6 | 15 мин | Закрывает разрыв март–август 2026 |
 | 7 | Категория и saved searches | §7 | 20 мин | Без этого поток вакансий останется прежним |
@@ -270,7 +270,7 @@ Upwork подставляет термины из своего справочн�
 
 Webflow-карточки не удалять — переписать описания (§5.5–5.7). Это доказанный end-to-end навык и объёмный сегмент, который купит первые отзывы.
 
-**Две продуктовые карточки отметить `highlighted`** — Agent Ops Console и B2B Partner Portal. В замере 2026 года отмеченные работы были у 16 из 20 профилей в верху выдачи против 4 из 20 внизу **[оценка, один источник: [snipework](https://snipework.com/blog/upwork-profile-optimization-2026)]**. Стоит один клик.
+**Продуктовую карточку B2B Partner Portal отметить `highlighted`** (Agent Ops снят 18.11.2026, см. §5.1).. В замере 2026 года отмеченные работы были у 16 из 20 профилей в верху выдачи против 4 из 20 внизу **[оценка, один источник: [snipework](https://snipework.com/blog/upwork-profile-optimization-2026)]**. Стоит один клик.
 
 ### Формула описания — ревизия 7 от 2026-09-01: `Task / Solution / Result / Duration`
 
@@ -344,7 +344,7 @@ Duration: <NN working hours>
 
 | Карточка | Пакет | Состояние |
 |---|---|---|
-| §5.1 Agent Ops Console | `upwork/projects/agent-ops-console/` | ✅ 13 PNG + обложка, README на 25 блоков |
+| §5.1 Agent Ops Console | — | снят 18.11.2026, пакет удалён |
 | §5.2 B2B Partner Portal | `upwork/projects/b2b-partner-portal/` | ✅ 14 PNG + обложка, README на 25 блоков |
 | §5.3 Vet Clinic OS | `upwork/projects/vet-clinic-os/` | ✅ 14 PNG + обложка, README на 25 блоков |
 | §5.4 Pawly | `upwork/projects/pawly/` | ✅ 13 PNG + обложка, README на 25 блоков |
@@ -442,40 +442,9 @@ Portal — собственный ресёрч внутри DSSL **[факт]**.
 же работу лучше: он не показывает взаимодействие, а отдаёт его. Постеры клипов
 при этом идут в карточки обычными кадрами, где показывают состояние экрана.
 
-### 5.1 Agent Ops Console — карточка №1
+### 5.1 Agent Ops Console — снято
 
-**Title:**
-
-```
-B2B SaaS Dashboard Design + Live React Build - AI Oversight Console
-```
-
-**Project URL:** `https://agent-ops-console.vercel.app`
-
-**Description:**
-
-```
-An internal oversight console for a support team supervising an AI agent. 19 screens, 20 routes, 3 roles, a design system and a live interactive prototype - tested with users and accepted by the client.
-Open it yourself: https://agent-ops-console.vercel.app
-
-The problem was arithmetic. The agent closed [доля A3] of contacts on its own, [объём A3], and occasionally promised money nobody had authorised. Reading all of them would take roughly 25 full-time reviewers. The whole team was 24 people.
-
-So I stopped designing "review more" and changed the object under review: not conversations, but the commitments the agent made - a refund, a credit, a plan change, a promised date. About 4% of traffic, roughly 71 cards a day. An impossible requirement became a manageable one.
-
-Role: sole designer - research, requirements, IA, UX/UI, design system, prototype, user testing.
-
-Client under NDA. Every screen runs on fixture data; no real company, person or amount appears anywhere.
-```
-
-**Skills-теги:** Product Design · UX & UI Design · Dashboard · App Design · Figma · Prototyping · Responsive Design
-
-Первые пять — то, что стоит в форме **[факт, заполнено владельцем 2026-09-01]**.
-
-**Медиа и все 25 блоков — `upwork/projects/agent-ops-console/README.md`.**
-Там же 13 готовых PNG и обложка. Пакет собран 31.08, ревизия 3 от 01.09.
-В форме поле описания отдаёт 600 знаков вместо 1000–1200 формулы, поэтому в
-пакете лежит своя, укороченная редакция текста выше: ни одна цифра и ни одна
-оговорка при сокращении не потеряны.
+**Снято 18.11.2026 (этап 1, DIRECTION-2026-11 §7.1):** Agent Ops под запретом клиента до проверки прав (A1–A3 в `tasks/review-2026-11/evidence-inventory.md`). Карточку не публиковать, прототип не указывать; существующую карточку на Upwork владелец удаляет сам.
 
 ### 5.2 B2B Partner Portal — карточка №2
 
@@ -795,7 +764,7 @@ Hi [Name],
 
 [One sentence naming the actual constraint in their post - the legacy backend, the ops team that can't grow, the data model nobody will rewrite. Prove you read it.]
 
-I did something close on an oversight console for a support team whose AI agent was closing [доля A3] of contacts alone: 19 screens, 3 roles, a design system, and a live prototype the client tested and accepted - https://agent-ops-console.vercel.app. Before that, a distributor's partner portal redesign that shipped in full on a backend that could not change.
+I did something close on a distributor's partner portal redesign that shipped in full on a backend that could not change.
 
 What you would get: IA and flows agreed before any pixels, a design system so screen ten costs less than screen one, and - if useful - a deployed React front end instead of a Figma file to hand a developer.
 
@@ -813,7 +782,7 @@ Hi [Name],
 
 You are asking for someone who can design it and then actually build it. That is the whole thing I do.
 
-Live and clickable right now: https://pawly-fawn.vercel.app/app - 33 React components, a design system, 63 tokens, taken from brief to audited prototype in 16 days. And https://agent-ops-console.vercel.app - a B2B oversight console, paid client, tested and accepted.
+Live and clickable right now: https://pawly-fawn.vercel.app/app - 33 React components, a design system, 63 tokens, taken from brief to audited prototype in 16 days.
 
 Scope boundary so it is clear from the start: I do design, the design system, and the front end, including integration with an existing API. Backend, auth and payments are not mine - I work next to a backend developer rather than pretend otherwise.
 

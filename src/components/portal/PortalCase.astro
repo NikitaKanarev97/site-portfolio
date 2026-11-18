@@ -749,6 +749,8 @@ const [rows, availability, upload, plans] = system.families;
 
     .portal-diagnosis__row > .portal-archive { grid-column: 1 / span 8; }
     .portal-diagnosis__row > .portal-findings { grid-column: 9 / -1; }
+    /* Stage 1 (18.11.2026): archive frames withdrawn; findings take the text column. */
+    .portal-diagnosis__row:not(:has(> .portal-archive)) > .portal-findings { grid-column: 4 / -1; }
     .portal-diagnosis__after { margin-inline-start: calc((100% + var(--gutter)) / 12 * 3); }
 
     /* Two rows: the file intakes run through Specification; the catalog's own line

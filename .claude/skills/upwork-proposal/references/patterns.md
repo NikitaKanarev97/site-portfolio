@@ -1,5 +1,8 @@
 # Кассеты формулировок
 
+> **18.11.2026: ~~Agent Ops Console~~ (снят) снят** (DIRECTION-2026-11 §7.1, `tasks/review-2026-11/evidence-inventory.md`, A1–A3 под запретом клиента). Не называть в письмах и профилях, не давать ссылку на прототип, не приводить его цифры. Где ниже стоит Agent Ops — брать следующий кейс строки.
+
+
 Заготовки, из которых письмо **собирается**, а не сочиняется с нуля: на сборку есть минуты, не полчаса (`market-data.md` §1). Каждая кассета — рыба, в которую подставляются существительные клиента. Кассета, вставленная без подстановки, нарушает пункт 9 гейта и вычёркивается.
 
 Английский во всех формулировках — ASCII, тире обычные. Это та же дисциплина, что в `upwork/profile.md` §1: поля Upwork ругаются на спецсимволы, а разнобой тире в письме выдаёт копипаст из редактора.
@@ -46,7 +49,7 @@
 
 Ссылка выбирается по таблице «во что бить» в `.claude/skills/upwork-triage/references/evidence.md`. К ней — 5–12 слов, что она доказывает **применительно к их случаю**.
 
-- `https://agent-ops-console.vercel.app - an oversight console for a support team: 19 screens, 3 roles, live and clickable. Paid client, tested and accepted.`
+- `[ссылка снята 18.11.2026] - an oversight console for a support team: 19 screens, 3 roles, live and clickable. Paid client, tested and accepted.`
 - `https://b2b-partner-portal-five.vercel.app/ - a distributor portal redesign that shipped in full on a backend that could not change.`
 - `https://veterinary-clinic-gules.vercel.app/ - brief to a deployed prototype in two weeks: scheduling, records, invoices, down to tablet.`
 - `https://pawly-fawn.vercel.app/app - 33 React components on a token-based design system, brief to audited prototype in 16 days.`
