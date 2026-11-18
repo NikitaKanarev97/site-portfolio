@@ -13,7 +13,7 @@ export const notFoundRu = {
 };
 export const serviceContactLeadRu = 'По вопросам проекта или неработающей ссылки напишите мне на почту.';
 export const serviceRoutesRu: readonly ServiceRoute[] = [
-  { label: 'Главная / работы', href: '/ru/#work', note: 'Три продуктовых кейса, контекст проектов и контакты.' },
+  { label: 'Главная / работы', href: '/ru/#work', note: 'Избранные продуктовые кейсы, контекст проектов и контакты.' },
   { label: 'Обо мне', href: '/ru/about/', note: 'Как я работаю и на каких условиях можно нанять.' },
   { label: 'Резюме (PDF)', href: '/cv-ru.pdf', note: 'Прямая ссылка на существующее русское резюме.' },
 ];
