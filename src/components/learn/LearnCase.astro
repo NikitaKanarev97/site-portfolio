@@ -39,7 +39,7 @@ const externalLabel = locale === 'ru' ? 'Откроется в новой вкл
     <section class="ds-container learn-section" id="problem" aria-labelledby="problem-title">
       <header class="learn-head" data-motion="cascade"><p class="ds-meta-sm learn-muted">{problem.label}</p><div class="learn-copy" data-motion="cascade"><h2 id="problem-title" class="ds-heading-4xl">{problem.title}</h2><p class="ds-body-lg learn-muted">{problem.body}</p></div></header>
       <div class="learn-problem">
-        <figure class="learn-archive"><p class="ds-body-sm learn-muted" data-motion="rise">{problem.archive}</p><CaseScreen item={{ src: '/media/case-learn/before-catalog.webp', alt: problem.archiveAlt, device: 'panel' }} appearance="frame" /><figcaption class="ds-body-sm learn-muted">{problem.caption}</figcaption></figure>
+        <div class="learn-archive"><p class="ds-body-sm learn-muted" data-motion="rise">{problem.archive}</p></div>
         <div class="learn-jobs" data-motion="cascade">{problem.jobs.map((job, i) => <div class="learn-job"><p class="ds-meta-sm learn-muted">0{i + 1} / {job.label}</p><h3 class="ds-heading-2xl">{job.title}</h3><p class="ds-body-base learn-muted">{job.text}</p></div>)}</div>
       </div>
     </section>

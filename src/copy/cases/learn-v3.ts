@@ -16,7 +16,7 @@ export function makeLearnPremium(locale: 'en' | 'ru') {
       ...b.problem,
       title: t('A catalogue tells you what exists. Not what to do next.', 'Каталог показывает, что есть. Но не подсказывает следующий шаг.'),
       body: t('The original platform led with courses, filters and rewards. I made the working situation the entry point: a specific fault needs a different route from preparation for an entire installation.', 'Исходная платформа начиналась с курсов, фильтров и наград. Я сделал точкой входа рабочую ситуацию: неисправность и подготовка ко всему монтажу требуют разных маршрутов.'),
-      archive: t('Original platform · Russian-language archive', 'Исходная платформа · архив на русском'),
+      archive: t('The original platform opened with a course catalogue, ratings and points.', 'Исходная платформа открывалась каталогом курсов с рейтингами и баллами.'),
       caption: t('Original catalogue and my approach today: an architectural comparison, without measured performance claims.', 'Исходный каталог и мой подход сегодня: сравнение структуры, без измеренного эффекта.'),
       jobs: [
         { label: t('An answer now', 'Ответ сейчас'), title: t('The ONVIF camera is missing.', 'Камера не находится по ONVIF.'), text: t('Go straight to a diagnostic sequence.', 'Сразу перейти к последовательности проверок.') },

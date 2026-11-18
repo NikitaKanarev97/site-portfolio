@@ -26,32 +26,7 @@ export const partnerPortalStoryRu = russianFrames(defineStory({
     { term: 'Прототип', value: 'Изучить интерактивный продукт', href: 'https://b2b-partner-portal-five.vercel.app/ru' },
   ],
   blocks: [
-    {
-      id: 'audit-direction', type: 'comparison', motion: 'reveal',
-      evidenceId: 'portal-diagnosis', mediaId: 'portal-archive',
-      payload: {
-        thesis: {
-          label: 'Задача', thesis: 'Закупщику нужно рабочее место, а не витрина',
-          body: 'На старой главной промо мешало основной работе: разбору неполных заявок. Я сделал активную спецификацию, понятную навигацию и следующий шаг центром интерфейса.',
-        },
-        issue: {
-          src: '/media/case-dssl/legacy-dashboard.webp',
-          alt: 'Старая главная с промо и навигацией без подписей',
-          marks: [{ x: 55, y: 10, text: 'Промо вместо задачи' }, { x: 1.6, y: 32, text: 'Неясная навигация' }],
-          caption: 'До · рабочая задача конкурирует с промо',
-        },
-        after: {
-          layout: 'desktop',
-          items: [{
-            src: '/media/rebuild/partner-portal/2026/dashboard-wide.webp',
-            srcNarrow: '/media/rebuild/partner-portal/2026/dashboard-narrow.webp',
-            device: 'desktop',
-            alt: 'Новая главная: активная спецификация, прогресс и понятный переход к работе',
-          }],
-          caption: 'После · спецификация стала главным рабочим объектом',
-        },
-      },
-    },
+
     {
       id: 'shared-specification', type: 'artifact', motion: 'draw', evidenceId: 'portal-scope',
       payload: {
@@ -232,15 +207,9 @@ export const partnerPortalRu = {
       'По отдельности это не блокеры, но вместе любой нетривиальный шаг заканчивался сообщением персональному менеджеру. Условия партнёра жили у человека, а портал использовали перед тем, как ему написать.',
     ],
     comparison: [
+
       {
         ...base.context.comparison[0],
-        src: '/media/case-dssl-ru/legacy-dashboard.webp',
-        alt: 'Дашборд исходного портала: рельса иконок без подписей, баннер обучения во всю ширину, три плитки действий и промо-блок с бонусом',
-        caption:
-          'Было. Рабочее место закупщика открывалось баннером обучения и бонусной акцией. Название партнёра на кадре закрыто.',
-      },
-      {
-        ...base.context.comparison[1],
         src: '/media/case-dssl-ru/new-dashboard.webp',
         alt: 'Дашборд после редизайна: рабочее место закупок открывается текущей закупкой — сорок восемь строк, одно изменение ждёт решения закупщика — рядом с обновлениями заказов, по которым нужно действие',
         caption:

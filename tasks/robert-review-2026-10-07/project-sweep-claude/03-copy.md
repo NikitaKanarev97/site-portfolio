@@ -29,7 +29,7 @@
 | X3-6 | Подпись пересказывает заголовок: «Each role receives its own part» → «Each role gets only its part of the visit.»; «One material» → «An answer in the reference…» → «One material: a quick answer and a step in a path.» | vet, learn | Тройной пересказ одной мысли (заголовок, лид, подпись) | Убрать дублирующую подпись |
 | X3-7 | Блок итога одним шаблоном: Cost / Evidence / Next evidence (learn, vet), Price of the solution / Evidence / Next check (partner), The boundary / Implemented / Next question (pawly), The trade-off / Scope (agent-ops) | все кейсы | Одинаковая анкета в конце, разные подписи у одного и того же блока (это ещё и H3) | Унифицировать названия и сократить; см. X2-3 |
 | X3-8 | RU-кальки и канцелярит: «центр разрешения» (Resolution Center), «Нерешённое соответствие требует выбора или исправления и повторной проверки», «Полный ответ имеет свой адрес», «Вход определён курсами», «У статуса есть явный шаг», «Вызов биллинга содержит сумму», «Забота в трёх семействах компонентов» | partner-ru, learn-ru, agent-ops-ru, pawly-ru | Перевод с английского, а не русский текст | Вычитка RU носителем |
-| X3-9 | «$23,000» в RU-тексте | agent-ops-ru | Английский формат числа в русском тексте | «23 000 $» |
+| X3-9 | «[сумма A3]» в RU-тексте | agent-ops-ru | Английский формат числа в русском тексте | «[сумма A3]» |
 | X3-10 | Pawly, EN: ссылка «Explore the EN demo» | pawly-en | Указание языка на английской странице лишнее и звучит как служебная пометка | Убрать «EN» |
 
 ## X2 — статусы (CONTENT-RULES) с контекстом

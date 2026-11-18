@@ -2,7 +2,7 @@
 
 07.10.2026. Подготовлено до применения редакторских правок. Координатор передал согласие владельца: «Да, весь пакет»; M24 — «Описать реализованные маршруты»; оба вопроса без правок сохранить.
 
-- M01: kicker Learn — «Technical learning» / «Техническое обучение». M43: единая запись «$23 000» в RU.
+- M01: kicker Learn — «Technical learning» / «Техническое обучение». M43: единая запись «[сумма A3]» в RU.
 - M02–M04, M33: убрать статусные поля о демоданных и все Next evidence/question/check. Оставить по одному раскрытию внутри рассказа: Portal — «The screens use synthetic procurement data» / «На экранах — вымышленные данные закупки»; Vet — реальная клиника под NDA, имена и данные на экранах вымышлены; Agent — заказчик под NDA, данные на экранах вымышлены; Pawly — персонажи и данные сценария вымышлены. Технические ограничения итогов убрать, доменные компромиссы сохранить.
 - M05/M22: Agent — «An operator checks the agent’s promises before approving a payout» / «Оператор проверяет обещания агента перед выплатой»; Pawly — «An owner chooses a walker and receives confirmation that the dog is home» / «Владелец выбирает выгульщика и получает подтверждение возвращения собаки»; Vet — «The vet, receptionist and owner handle their parts of the visit» / «Врач, администратор и владелец ведут свои части приёма».
 - M14: все действия продукта — Open product / Открыть продукт; Learn landing — Open website / Открыть сайт.

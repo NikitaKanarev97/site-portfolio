@@ -60,11 +60,7 @@ export const learn = {
       'For the redesign, the useful distinction was between two situations. An engineer investigating a camera that cannot be discovered needs a sequence of checks. A designer asked to learn the product range needs a route, an estimate of the work and a clear finishing condition. Sending both into the same course list leaves them to reconstruct that route themselves.',
     ],
     comparison: [
-      {
-        src: `${media}/before-catalog.webp`,
-        alt: 'Archived original course catalogue with search, topic and brand filters, course cards, ratings and rewards',
-        caption: 'Original platform. The course-led entry point from the archive. The Russian screenshot is preserved unchanged; it is not a record of the redesign delivered during my employment.',
-      },
+
       {
         src: `${media}/home.webp`,
         alt: 'Redesigned TRASSIR Learn home offering technical search and entry points organised around the specialist’s task',
@@ -215,14 +211,7 @@ export function makeLearnStory(lang: 'en' | 'ru'): CaseStory {
       { term: t('Landing', 'Лендинг'), value: t('Open website', 'Открыть сайт'), href: `/prototypes/learn-landing/?lang=${lang}` },
     ],
     blocks: [
-      { id: 'audit-direction', type: 'comparison', evidenceId: 'learn-audit', mediaId: 'archive-catalog', motion: 'reveal',
-        payload: {
-          thesis: { label: t('Design direction', 'Решение после аудита'), thesis: t('Start with the specialist’s task', 'Сначала — задача специалиста'),
-            body: t('The archive leads with courses and rewards. Revisiting my DSSL / TRASSIR work, I made the question or programme the entry point, with answers open before sign-in. Account and document data are invented.', 'В архивном каталоге сначала идут курсы и награды. Я вернулся к своей работе в DSSL / TRASSIR: входом стал вопрос или программа, ответ доступен до авторизации. Данные аккаунтов и документов вымышлены.') },
-          issue: { src: '/media/rebuild/learn/archive-catalog.webp', alt: t('Archived Russian course catalogue with ratings and reward points', 'Архивный каталог курсов с рейтингом и баллами'),
-            marks: [{ x: 20, y: 17, text: t('Courses define the entry', 'Каталог начинается с курсов') }, { x: 25, y: 90, text: t('Points accompany the material', 'Баллы сопровождают материал') }],
-            caption: t('The archived catalogue: courses and points come first.', 'Архивный каталог: впереди курсы и баллы.') },
-        } },
+
       { id: 'shared-material', type: 'artifact', evidenceId: 'learn-model', mediaId: 'learn-content-model', motion: 'draw',
         payload: { thesis: { label: t('Content model', 'Модель контента'), thesis: t('A shared material connects reference and programme', 'Общий материал'),
           body: t('The material owns its content and version; programmes reference it. Reading history, explicit completion and assessment attempts remain separate records.', 'Материал хранит содержание и версию. Программа ссылается на него без копии. История чтения, явное завершение и попытка зачёта остаются отдельными записями.') },

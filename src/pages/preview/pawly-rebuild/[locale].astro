@@ -9,7 +9,7 @@ export function getStaticPaths() { return ['en','ru'].map(locale => ({params:{lo
 const lang = Astro.params.locale as 'en'|'ru';
 const ru = lang === 'ru';
 const story = ru ? pawlyStoryRu : pawlyStory;
-const next = {href:ru?'/ru/work/agent-ops-console/':'/work/agent-ops-console/',title:'Agent Ops',theme:'agent' as const,label:ru?'Следующий кейс':'Next case'};
+const next = {href:ru?'/ru/work/partner-portal/':'/work/partner-portal/',title:'B2B Partner Portal',theme:'portal' as const,label:ru?'Следующий кейс':'Next case'};
 ---
 <PageShell title={`Pawly — ${ru?'новая версия кейса':'case rebuild'}`} description={story.cover.outcome} lang={lang} siteCopy={ru?siteRu:site} localePaths={{en:'/preview/pawly-rebuild/en/',ru:'/preview/pawly-rebuild/ru/'}} noindex canonical={false} current={ru?'/ru/work':'/work'}>
   <CaseStory story={story} lang={lang} id="pawly-rebuild" next={next} />

@@ -39,7 +39,7 @@
 
 **Сейчас** — заголовок, три абзаца, **~200 слов** (`src/copy/cases/agent-ops-console.ts:128`):
 > Reading every message was arithmetically impossible. Reading every commitment was not.
-> Around 1,770 conversations closed automatically each day. Reading all of them would take roughly 177 hours a day — by my estimate 25.3 full-time reviewers, against a team of 24… (ещё два абзаца)
+> Around [объём A3] closed automatically each day. Reading all of them would take roughly 177 hours a day — by my estimate 25.3 full-time reviewers, against a team of 24… (ещё два абзаца)
 
 **По правилам** — **~40 слов**:
 > `SHIFT`

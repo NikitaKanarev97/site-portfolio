@@ -63,8 +63,6 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
   .case-artwork__frame--main { width: 86%; inset-inline-start: 7%; inset-block-start: 9%; }
   .case-artwork__frame--detail { width: 42%; inset-inline-end: 5%; inset-block-end: 7%; }
 
-  .case-artwork--agent-ops-console { --artwork-surface: var(--surface-cover-agent); }
-  .case-artwork--agent-ops-console .case-artwork__frame { border-color: var(--border-inverse); }
 
   .case-artwork--partner-portal { --artwork-surface: var(--surface-cover-portal); }
 
@@ -87,8 +85,6 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
   .case-artwork--moment.case-artwork--hero.case-artwork--pawly .case-artwork__frame--main { width: 70%; }
 
   /* The first image in a case is an independent, inspectable product moment. */
-  .case-artwork--hero.case-artwork--agent-ops-console .case-artwork__frame--main { width: 81%; inset-inline-start: 5%; inset-block-start: 6%; }
-  .case-artwork--hero.case-artwork--agent-ops-console .case-artwork__frame--detail { width: 58%; inset-inline-end: 4%; inset-block-end: 5%; }
   .case-artwork--hero.case-artwork--partner-portal .case-artwork__frame--main { width: 90%; inset-inline-start: 5%; inset-block-start: 7%; }
   .case-artwork--hero.case-artwork--vet-clinic .case-artwork__frame--main { width: 86%; inset-inline-start: 7%; inset-block-start: 7%; }
   .case-artwork--hero.case-artwork--learn .case-artwork__canvas { aspect-ratio: var(--ratio-screen); }
@@ -103,8 +99,6 @@ const MOBILE_MEDIA = `(max-width: ${px('bp-md') - 1}px)`;
     .case-artwork__canvas { aspect-ratio: var(--ratio-cover-mobile); }
     .case-artwork__frame { border-radius: var(--radius-sm); }
     .case-artwork--hero .case-artwork__canvas { aspect-ratio: var(--ratio-cover-mobile); }
-    .case-artwork--hero.case-artwork--agent-ops-console .case-artwork__frame--main { width: 126%; inset-inline-start: -16%; inset-block-start: 6%; }
-    .case-artwork--hero.case-artwork--agent-ops-console .case-artwork__frame--detail { width: 90%; inset-inline-end: 5%; inset-block-end: 5%; }
     /* Разбор: рельс развёрнут, 13,6 % ширины. 117 % / −16 % начинает окно на
        краю рельса и доводит до 99 % — колонка действий в кадре. */
     .case-artwork--hero.case-artwork--partner-portal .case-artwork__frame--main { width: 117%; inset-inline-start: -16%; inset-block-start: 7%; }

@@ -458,7 +458,7 @@ B2B SaaS Dashboard Design + Live React Build - AI Oversight Console
 An internal oversight console for a support team supervising an AI agent. 19 screens, 20 routes, 3 roles, a design system and a live interactive prototype - tested with users and accepted by the client.
 Open it yourself: https://agent-ops-console.vercel.app
 
-The problem was arithmetic. The agent closed 61% of contacts on its own, around 1,770 conversations a day, and occasionally promised money nobody had authorised. Reading all of them would take roughly 25 full-time reviewers. The whole team was 24 people.
+The problem was arithmetic. The agent closed [доля A3] of contacts on its own, [объём A3], and occasionally promised money nobody had authorised. Reading all of them would take roughly 25 full-time reviewers. The whole team was 24 people.
 
 So I stopped designing "review more" and changed the object under review: not conversations, but the commitments the agent made - a refund, a credit, a plan change, a promised date. About 4% of traffic, roughly 71 cards a day. An impossible requirement became a manageable one.
 
@@ -795,7 +795,7 @@ Hi [Name],
 
 [One sentence naming the actual constraint in their post - the legacy backend, the ops team that can't grow, the data model nobody will rewrite. Prove you read it.]
 
-I did something close on an oversight console for a support team whose AI agent was closing 61% of contacts alone: 19 screens, 3 roles, a design system, and a live prototype the client tested and accepted - https://agent-ops-console.vercel.app. Before that, a distributor's partner portal redesign that shipped in full on a backend that could not change.
+I did something close on an oversight console for a support team whose AI agent was closing [доля A3] of contacts alone: 19 screens, 3 roles, a design system, and a live prototype the client tested and accepted - https://agent-ops-console.vercel.app. Before that, a distributor's partner portal redesign that shipped in full on a backend that could not change.
 
 What you would get: IA and flows agreed before any pixels, a design system so screen ten costs less than screen one, and - if useful - a deployed React front end instead of a Figma file to hand a developer.
 

@@ -1,5 +1,5 @@
 /** Editorial artwork, separate from the full evidence frames in each case. */
-export type CaseSlug = 'agent-ops-console' | 'partner-portal' | 'learn' | 'vet-clinic' | 'pawly';
+export type CaseSlug = 'partner-portal' | 'learn' | 'vet-clinic' | 'pawly';
 type Locale = 'en' | 'ru';
 export interface Artwork {
   images: string[];
@@ -14,22 +14,6 @@ export interface Artwork {
 }
 
 const catalog = {
-  'agent-ops-console': {
-    folder: 'case-agent-ops',
-    cover: ['cover/home-desktop.webp'],
-    mobile: 'cover/home-mobile.webp',
-    hero: ['consequence-preview.webp', 'consequence-preview-crop.webp'],
-    en: {
-      cover: 'Agent Ops: a $340 refund awaiting approval, with the customer, agent reason, policy, billing and history beside Reject and Approve.',
-      hero: 'An action awaiting approval, with a close-up of the payment and exact message the customer will receive.',
-      caption: 'Before approval: the payment, its destination and the exact customer message are visible together. Demonstration data.',
-    },
-    ru: {
-      cover: 'Agent Ops: возврат $340 ждёт согласования; рядом клиент, обоснование агента, политика, биллинг и история, кнопки «Отклонить» и «Согласовать».',
-      hero: 'Действие перед согласованием; крупно — выплата и точный текст сообщения клиенту.',
-      caption: 'До согласования видны сумма выплаты, её получатель и точный текст сообщения клиенту. Данные вымышлены.',
-    },
-  },
   'partner-portal': {
     folder: 'case-dssl',
     cover: ['cover/home-desktop.webp'],

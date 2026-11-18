@@ -1,8 +1,0 @@
----
-/** Keep natural word boundaries in editorial headings. The build-time
- * typographer otherwise glues long final phrases before responsive layout. */
-import EditorialHeadingText from '../EditorialHeadingText.astro';
-interface Props { text: string }
-const { text } = Astro.props;
----
-<EditorialHeadingText text={text} />

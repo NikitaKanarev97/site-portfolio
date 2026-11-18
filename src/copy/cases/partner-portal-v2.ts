@@ -41,7 +41,7 @@ export type PortalCaseCopy = {
   diagnosis: {
     label: string; thesis: string; body: string;
     observedLabel: string; directionLabel: string;
-    evidence: { shot: ArchiveShot; findings: { symptom: string; direction: string }[] }[];
+    evidence: { shot?: ArchiveShot; findings: { symptom: string; direction: string }[] }[];
     after: PortalShot & { caption: string };
   };
   architecture: {
@@ -130,26 +130,16 @@ export const portalCaseEn: PortalCaseCopy = {
   diagnosis: {
     label: '01 · Diagnosis',
     thesis: 'Buyers arrived with a specification. The portal greeted them like a shop.',
-    body: 'Integrators bring a ten-to-fifty-line spreadsheet for a dated project. The original portal’s own screens show where its hierarchy worked against that job.',
+    body: 'Integrators bring a ten-to-fifty-line spreadsheet for a dated project. The original portal’s hierarchy worked against that job.',
     observedLabel: 'Observed',
     directionLabel: 'Direction',
     evidence: [
       {
-        shot: {
-          src: '/media/case-dssl/legacy-dashboard.webp', width: 713, height: 220,
-          alt: 'The original portal dashboard: an unlabelled icon rail, a training banner, three equal action tiles and a promotional bonus block',
-          caption: 'Original portal · dashboard, archival screenshot',
-        },
         findings: [
           { symptom: 'A training banner and a bonus offer came first. Uploading a file was one of three equal tiles.', direction: 'Open on the purchase in progress and on what still blocks it.' },
         ],
       },
       {
-        shot: {
-          src: '/media/rebuild/partner-portal/v3/legacy-cart-alternative.webp', width: 1076, height: 299,
-          alt: 'The original cart: a line with a red stock dot, its “best alternative” with a green dot, an AI-assistant hint that may contain mistakes, and a one-click Replace button',
-          caption: 'Original portal · cart, archival screenshot',
-        },
         findings: [
           { symptom: 'An unavailable item got one “best alternative” and a one-click Replace, justified by an AI hint that “may make mistakes”.', direction: 'Show the real candidates and how they differ. The buyer confirms.' },
         ],

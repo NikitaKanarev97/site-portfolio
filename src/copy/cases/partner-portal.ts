@@ -25,32 +25,7 @@ export const partnerPortalStory = defineStory({
     { term: 'Prototype', value: 'Explore the interactive product', href: 'https://b2b-partner-portal-five.vercel.app/' },
   ],
   blocks: [
-    {
-      id: 'audit-direction', type: 'comparison', motion: 'reveal',
-      evidenceId: 'portal-diagnosis', mediaId: 'portal-archive',
-      payload: {
-        thesis: {
-          label: 'The challenge', thesis: 'A buyer needed a workspace, not another storefront',
-          body: 'The old dashboard prioritized promotion while a buyer had to resolve incomplete product requests. I made the active specification, clear navigation and next action the starting point.',
-        },
-        issue: {
-          src: '/media/case-dssl/legacy-dashboard.webp',
-          alt: 'Archived dashboard with promotional content and icon-only navigation',
-          marks: [{ x: 55, y: 10, text: 'Promotion displaced the task' }, { x: 1.6, y: 32, text: 'Navigation lacked labels' }],
-          caption: 'Before · the purchase task competed with promotional content',
-        },
-        after: {
-          layout: 'desktop',
-          items: [{
-            src: '/media/rebuild/partner-portal/2026/dashboard-wide.webp',
-            srcNarrow: '/media/rebuild/partner-portal/2026/dashboard-narrow.webp',
-            device: 'desktop',
-            alt: 'Redesigned procurement dashboard with active specification, progress and a clear continue action',
-          }],
-          caption: 'After · the specification becomes the primary work surface',
-        },
-      },
-    },
+
     {
       id: 'shared-specification', type: 'artifact', motion: 'draw', evidenceId: 'portal-scope',
       payload: {
@@ -278,12 +253,7 @@ export const partnerPortal = {
      * больше нет. Вопрос пары тот же, ответ продукта — другой.
      */
     comparison: [
-      {
-        src: `${media}/legacy-dashboard.webp`,
-        alt: 'The original portal dashboard: an unlabelled icon rail, a training banner across the top, three action tiles and a promotional bonus block',
-        caption:
-          'Before. The buyer’s workspace opened with a training banner and a bonus promotion. Interface in Russian, as it shipped; the partner’s own name is masked.',
-      },
+
       {
         src: `${media}/new-dashboard.webp`,
         alt: 'The redesigned dashboard: a procurement workspace opening with the purchase in progress — forty-eight lines, one change waiting on the buyer’s decision — beside the order updates that need action',

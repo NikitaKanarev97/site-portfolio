@@ -25,20 +25,13 @@ const path = require('path');
 const pages = {
   '/': 'dist/index.html',
   '/about': 'dist/about/index.html',
-  '/work/agent-ops-console': 'dist/work/agent-ops-console/index.html',
   '/work/partner-portal': 'dist/work/partner-portal/index.html',
+  '/work/learn': 'dist/work/learn/index.html',
   '/work/vet-clinic': 'dist/work/vet-clinic/index.html',
   '/work/pawly': 'dist/work/pawly/index.html',
   '/ru/': 'dist/ru/index.html',
   '/404': 'dist/404.html',
   '/500': 'dist/500.html',
-  '/preview/agent-ops-pilot': 'dist/preview/agent-ops-pilot/index.html',
-  '/preview/partner-portal-pilot': 'dist/preview/partner-portal-pilot/index.html',
-  '/kit': 'dist/kit/index.html',
-  '/preview/common': 'dist/preview/common/index.html',
-  ...Object.fromEntries(['en','ru'].flatMap(locale => ['agent-ops','partner-portal'].map(slug => [
-    `/preview/common/${locale}/${slug}`, `dist/preview/common/${locale}/${slug}/index.html`,
-  ]))),
 };
 function collectPreviews(directory) {
   if (!fs.existsSync(directory)) return;

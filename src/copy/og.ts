@@ -24,8 +24,6 @@ import { NAME_RU } from './ru/site.ts';
 import { homeRu } from './ru/home.ts';
 import { aboutRu } from './ru/about.ts';
 import { casesRu } from './ru/cases/index.ts';
-import { agentCaseEn } from './cases/agent-ops-v2';
-import { agentCaseRu } from './ru/cases/agent-ops-v2';
 import { vetCaseEn } from './cases/vet-v2';
 import { vetCaseRu } from './ru/cases/vet-v2';
 
@@ -57,8 +55,6 @@ const BYLINE_RU = `${NAME_RU} — продуктовый дизайнер`;
 export const OG_CARDS: readonly OgCard[] = [
   { id: 'work-vet-clinic-v2', eyebrow: vetCaseEn.eyebrow, title: vetCaseEn.title, footnote: BYLINE },
   { id: 'work-vet-clinic-v2-ru', eyebrow: vetCaseRu.eyebrow, title: vetCaseRu.title, footnote: BYLINE_RU },
-  { id: 'work-agent-ops-console-v2', eyebrow: agentCaseEn.eyebrow, title: agentCaseEn.title, footnote: BYLINE },
-  { id: 'work-agent-ops-console-v2-ru', eyebrow: agentCaseRu.eyebrow, title: agentCaseRu.title, footnote: BYLINE_RU },
   {
     id: 'default',
     eyebrow: `${NAME} · ${home.hero.role}`,
@@ -116,13 +112,6 @@ export function ogCard(id: string): OgCard {
  * остаются исходниками изображения, метаданные на них больше не ссылаются.
  */
 export const OG_FEATURES: Record<string, { title: string; description: string; status?: string }> = {
-  'work-agent-ops-console-v2': { title: agentCaseEn.title, description: agentCaseEn.promise, status: 'User-tested · client-accepted prototype' },
-  'work-agent-ops-console-v2-ru': { title: agentCaseRu.title, description: agentCaseRu.promise, status: 'Прототип проверен и принят заказчиком' },
-  'work-agent-ops-console': {
-    title: 'Agent Ops Console',
-    description: 'Oversight for a team running an AI support agent',
-    status: 'Paid client · accepted',
-  },
   'work-partner-portal': {
     title: 'B2B Partner Portal',
     description: 'Ordering on a legacy backend at DSSL',

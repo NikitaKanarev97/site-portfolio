@@ -55,7 +55,7 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
     автоматическим шагом каскада, ряд действий — явной позицией 0.4.
   */}
   <section class="ds-container ds-section hero" data-motion-intro>
-    <p class="ds-body-base hero__name" data-motion="fade"><span>{home.hero.name}</span><span class="hero__profession">{home.hero.role}</span></p>
+    <p class="ds-body-base hero__name" data-motion="fade"><span>{home.hero.name}</span></p>
 
     <h1 class="ds-display-home hero__role ds-flow-heading">
       {home.hero.headline.map(line => <span data-motion="reveal-text">{line}</span>)}
@@ -227,7 +227,6 @@ const site: SiteCopy = locale === 'ru' ? siteRu : siteEn;
   .hero > *, .hero > .hero__role, .hero__copy > *, .hero__copy > :global(.hero__spec) { margin-block-start:0; }
   .hero__copy { display:grid; gap:var(--flow-pair); align-content:start; grid-column:1 / -1; }
   .hero__name { display:flex; flex-direction:column; gap:0; color:var(--text-default); }
-  .hero__profession { color:var(--text-subtle); }
   .hero__role { color:var(--text-default); grid-column:1 / -1; }
   .hero__role > span { display:block; }
   .hero__role > span:last-child { color:var(--text-link); }

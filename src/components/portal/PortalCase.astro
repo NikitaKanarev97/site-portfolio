@@ -79,8 +79,9 @@ const [rows, availability, upload, plans] = system.families;
         </div>
       </div>
       <div class="portal-diagnosis">
-        {diagnosis.evidence.map(({ shot, findings }: { shot: ArchiveShot; findings: { symptom: string; direction: string }[] }) => (
+        {diagnosis.evidence.map(({ shot, findings }: { shot?: ArchiveShot; findings: { symptom: string; direction: string }[] }) => (
           <div class="portal-diagnosis__row">
+            {shot && <>
             {/* A real link to the archival file; the site script upgrades it to MediaZoom. */}
             <figure class="portal-archive" data-motion="fade-image">
               <a class="portal-archive__link" href={shot.src} data-astro-reload data-zoom-trigger data-zoom-src={shot.src}
@@ -90,6 +91,7 @@ const [rows, availability, upload, plans] = system.families;
               </a>
               <figcaption class="ds-body-sm portal-archive__caption">{shot.caption}</figcaption>
             </figure>
+            </>}
             <ol class="portal-findings" data-motion-group data-motion-stagger="tight">
               {findings.map(finding => (
                 <li class="portal-findings__item" data-motion="rise">
