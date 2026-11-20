@@ -17,4 +17,8 @@
 
 [art-direction/partner-portal/01-PRODUCT-AUDIT.md](art-direction/partner-portal/01-PRODUCT-AUDIT.md). Ответы владельца — раздел 5, решение — раздел 10 там же: каталог IP cameras; склады одной ячейкой, колонки — гипотеза до Stage 3; РРЦ в данные 2.4 не добавляется, иерархия — в 03-DIRECTIONS.
 
+## 2.2 — Конкурентное исследование
+
+[02-RESEARCH.md](art-direction/partner-portal/02-RESEARCH.md), [REFERENCE-MAP.md](art-direction/partner-portal/REFERENCE-MAP.md), [references/README.md](art-direction/partner-portal/references/README.md). 10 референсов (7 desktop, 3 SCRN), все открыты как изображения 20.11.2026; недоступные источники перечислены. Кадры третьих лиц — только в приватном `b2b-dssl`. Статус: ждёт независимого ревью ChatGPT и решения владельца о достаточности.
+
 
