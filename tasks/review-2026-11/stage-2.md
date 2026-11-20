@@ -1,6 +1,6 @@
 # Этап 2 — отчёт
 
-**Ветка:** `stage-2-art-direction` в обоих репозиториях · **Статус:** 2.0 готово, 2.1 — ждёт решения владельца по ключевому экрану. Merge, push, деплой не выполнялись.
+**Ветка:** `stage-2-art-direction` в обоих репозиториях · **Статус:** 2.0 и 2.1 закрыты 20.11.2026; ключевой экран — каталог, IP cameras (решение Claude по поручению владельца). 2.2 не начат. Merge, push, деплой не выполнялись.
 
 ## 2.0 — Base SHA и изоляция
 
@@ -15,4 +15,4 @@
 
 ## 2.1 — Product audit
 
-[art-direction/partner-portal/01-PRODUCT-AUDIT.md](art-direction/partner-portal/01-PRODUCT-AUDIT.md). Решение владельца — в разделе 5 там же.
+[art-direction/partner-portal/01-PRODUCT-AUDIT.md](art-direction/partner-portal/01-PRODUCT-AUDIT.md). Ответы владельца — раздел 5, решение — раздел 10 там же: каталог IP cameras; склады одной ячейкой, колонки — гипотеза до Stage 3; РРЦ в данные 2.4 не добавляется, иерархия — в 03-DIRECTIONS.
