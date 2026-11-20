@@ -13,7 +13,7 @@
 | R7 | Промэлектроника | promelec.ru/search/?query=LM358 | живой сайт | 20.11.2026 | `raw/promelec-search-1440*.png` |
 | A1 | ТИНКО | tinko.ru/catalog/category/1/ | живой сайт | 20.11.2026 | `raw/tinko-cameras-1440*.png`, `raw/tinko-list-1440*.png` |
 | A2 | ЭТМ iPRO | etm.ru/catalog/9010_ohranno_pozharnaja_signalizacija_ops | живой сайт | 20.11.2026 | `raw/etm-security-1440*.png` |
-| M1 | Лемана ПРО | scrn.gallery/app/lemana-pro?screen=6a0cbbc53fb2b5f9bcf80d1a, …80d27, …80d28 | SCRN | каталог SCRN | `scrn/lemana-*.webp` |
+| M1 | Лемана ПРО | scrn.gallery/app/lemana-pro?screen=6a0cbbc53fb2b5f9bcf80d1a, …80d27, …80d28 | SCRN | каталог SCRN, открыт 20.11.2026 | `scrn/lemana-product-availability-…0d1a.webp`, `scrn/lemana-stores-list-…0d27.webp`, `scrn/lemana-stores-list-cont-…0d28.webp` (добавлен в 2.2.2) |
 | M2 | METRO | scrn.gallery/app/metro?screen=6a3d206b90f57f0cb4e8a493, …a4fc | SCRN | каталог SCRN | `scrn/metro-product-price-*.webp`, `scrn/metro-stores-sheet-*.webp` |
 | M3 | METRO | scrn.gallery/app/metro?screen=6a3d1caeb9c6417248ceebb0 | SCRN | каталог SCRN | `scrn/metro-category-grid-*.webp` |
 
@@ -23,9 +23,9 @@
 
 ## Git — фактическое состояние
 
-Проверено 20.11.2026 (`git ls-remote` и `git log`).
+Проверено 20.11.2026 (`git ls-remote` и `git log`), ревизия 2.2.2.
 
 | Репозиторий | Видимость | Ветка | На GitHub |
 |---|---|---|---|
-| `NikitaKanarev97/site-portfolio` | публичный | `stage-2-art-direction` | ревизия 2.2.1 запушена 20.11.2026; актуальный SHA — `git log -1` ветки, совпадает с `git ls-remote` |
-| `NikitaKanarev97/b2b-partner-portal` | приватный | `stage-2-art-direction` | `b707833` (кадры 2.2.1), запушен 20.11.2026 |
+| `NikitaKanarev97/site-portfolio` | публичный | `stage-2-art-direction` | проверено ревью 2.2.1: `9cfe6e56`; после 2.2.2 — коммит, в котором лежит эта строка (`git log -1` ветки), запушен и совпадает с `git ls-remote` |
+| `NikitaKanarev97/b2b-partner-portal` | приватный | `stage-2-art-direction` | проверено ревью 2.2.1: `b707833`; после 2.2.2 — `63586be` (третий кадр M1), запушен и совпадает с `git ls-remote` |
