@@ -1,6 +1,6 @@
 # Собранные письма
 
-> **18.11.2026: ~~Agent Ops Console~~ (снят) снят** (DIRECTION-2026-11 §7.1, `tasks/review-2026-11/evidence-inventory.md`, A1–A3 под запретом клиента). Не называть в письмах и профилях, не давать ссылку на прототип, не приводить его цифры. Где ниже стоит Agent Ops — брать следующий кейс строки.
+> **18.11.2026: Agent Ops Console снят** (DIRECTION-2026-11 §7.1, `tasks/review-2026-11/evidence-inventory.md`, A1–A3 под запретом клиента). Не называть в письмах и профилях, не давать ссылку на прототип, не приводить его цифры. Готовые тексты и таблицы ниже переписаны на разрешённые кейсы; где Agent Ops остался — это запись ограничения, не довод.
 
 
 Четыре примера: три по полосам и один разбор — как переписывается письмо, написанное по прежней инструкции. Вакансии в §1–§2 условные, в §3 — реальная из переписки июля 2026. Цифры кейсов настоящие, из `.claude/skills/upwork-triage/references/evidence.md`.
@@ -18,7 +18,7 @@ Hi Marta,
 
 Your dispatchers are reading six statuses off a table that was built for the database, not for them - that is the part I would fix first.
 
-Closest thing I have built: [ссылка снята 18.11.2026] - an oversight console for a support team, 19 screens, 3 roles, live and clickable. Paid client, tested and accepted.
+Closest thing I have built: https://b2b-partner-portal-five.vercel.app/ - a distributor portal redesign that shipped in full on a backend that could not change. Client under NDA, every screen runs on fixture data.
 
 For your board I would start with the states rather than the layout: what a dispatcher has to see in the first two seconds, what can wait behind a click, and what the API already returns so we do not design fields nobody can fill. Flows agreed with you before anything is drawn, then the design system, then the screens.
 
@@ -33,7 +33,7 @@ Nikita
 
 **Что где.** Зачин называет то, чего в посте нет дословно, но что из него следует — таблица собрана под базу. Ссылка во второй строке. Механика — порядок, а не список. Граница дословная. Один вопрос, и он неудобный: ответ на него меняет объём. Финал — $600 из $1500, это 40%, низ ступени «Базовый».
 
-**Форма.** Fixed $1500 · milestone 1: dispatch flow, 5 дней, $600 · milestone 2: остальные экраны и ДС, $900 · duration 1–2 недели · highlights: ~~Agent Ops Console~~ (снят), B2B Partner Portal, Pawly · вложений нет.
+**Форма.** Fixed $1500 · milestone 1: dispatch flow, 5 дней, $600 · milestone 2: остальные экраны и ДС, $900 · duration 1–2 недели · highlights: B2B Partner Portal, Vet Clinic OS, Pawly · вложений нет.
 
 ---
 
@@ -46,7 +46,7 @@ Hi Daniel,
 
 You want one person to design it and then actually build it, and most of the replies here will be from people who do one half and hand over a file.
 
-Live right now: https://pawly-fawn.vercel.app/app - 33 React components on a token-based design system, brief to audited prototype in 16 days. And [ссылка снята 18.11.2026] a B2B oversight console: paid client, 19 screens, three roles.
+Live right now: https://pawly-fawn.vercel.app/app - 33 React components on a token-based design system, brief to audited prototype in 16 days. And https://b2b-partner-portal-five.vercel.app/ - a distributor portal redesign that shipped on a backend that could not change.
 
 For a first version I would cut the scope to the one flow that proves the product works, build the design system before the screens so the tenth costs less than the first, and deploy it to a URL you can open on a phone and send around.
 
@@ -61,7 +61,7 @@ Nikita
 
 **Что где.** Зачин называет расклад в его почте, а не мой опыт: он получит сорок откликов от половинок. Две ссылки, обе в блоке доказательств, третьей нет. «Cut the scope» — профессиональное суждение, не услуга. Финал переводит hourly на fixed первый кусок: при нулевой истории клиенту так безопаснее, а мне не нужен трекер на неопределённый объём.
 
-**Форма.** Ставка $30.00/hr · в письме предложен fixed-пилот $900 / 7 дней (карточка 3 Starter) · highlights: Pawly, ~~Agent Ops Console~~ (снят), B2B Partner Portal · вложений нет.
+**Форма.** Ставка $30.00/hr · в письме предложен fixed-пилот $900 / 7 дней (карточка 3 Starter) · highlights: Pawly, B2B Partner Portal, Vet Clinic OS · вложений нет.
 
 ---
 
@@ -126,15 +126,15 @@ Nikita
 **`Describe your recent experience with similar projects`**
 
 ```
-Three recent ones. An oversight console for a support team - 19 screens, three roles, a design system underneath, taken from research to a prototype the client tested and accepted: [ссылка снята 18.11.2026] A distributor portal redesign that shipped on a backend that could not be changed. And a scheduling and records system for a veterinary clinic, brief to deployed prototype in two weeks. All three are live URLs you can click through rather than case study slides.
+Three recent ones. A distributor portal redesign that shipped on a backend that could not be changed: https://b2b-partner-portal-five.vercel.app/ A scheduling and records system for a veterinary clinic, brief to deployed prototype in two weeks: https://veterinary-clinic-gules.vercel.app/ And a dog-care marketplace on 33 React components, brief to audited prototype in 16 days: https://pawly-fawn.vercel.app/app All three are live URLs you can click through rather than case study slides.
 ```
 
 **`Include a link to your GitHub profile and/or website`**
 
 ```
-Site: https://kanarev.com - built by me in Astro, with the three product cases written up in full.
+Site: https://kanarev.com - built by me in Astro, with the product cases written up in full.
 
-The work itself is easier to judge running: [ссылка снята 18.11.2026] and https://pawly-fawn.vercel.app/app are deployed prototypes, every state built. The client projects are under NDA, so those two run on fixture data - the code and the design system are mine either way.
+The work itself is easier to judge running: https://b2b-partner-portal-five.vercel.app/ and https://pawly-fawn.vercel.app/app are deployed prototypes, every state built. The portal is a client project under NDA, so it runs on fixture data - the code and the design system are mine either way.
 ```
 
 Пустого ответа и `N/A` не бывает: вопрос — единственное место в форме, где клиент попросил что-то лично, и молчание там видно.

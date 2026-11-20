@@ -485,7 +485,7 @@ WHAT I DO NOT DO
 Backend, authentication and payments. I build the front end and integrate with an API you already have, working alongside your backend developer.
 
 WHY ME
-Every project in my portfolio below is a live build you can click, designed and coded by me: an AI oversight console, a distributor's partner portal, a clinic operations system.
+Every project in my portfolio below is a live build you can click, designed and coded by me: a distributor's partner portal, a clinic operations system, a dog-care marketplace.
 
 Tell me what the product does and what your API returns. I will come back with a scope and with what I would cut.
 ```
@@ -734,7 +734,7 @@ A: Four of them are in my portfolio below, all live in production, all designed 
 
 Каталог рекомендует **4:3** (1000×750), а собранные обложки пакетов портфолио —
 **5:4** (2000×1600), и это было осознанное решение: плитка в сетке Portfolio
-отдаёт 1.25 (`upwork/projects/agent-ops-console/README.md` §4). **Для каталога
+отдаёт 1.25 (`upwork/projects/b2b-partner-portal/README.md` §4). **Для каталога
 пропорция другая**, и обложка, нарисованная в 5:4, потеряет бока.
 
 Геометрия обложки живёт одной константой — `COVER = { w: 2000, h: 1600 }` в

@@ -610,7 +610,7 @@ node scripts/build-upwork-card.mjs vet-clinic --cover-only
 
 **Геометрия — в `scripts/lib/upwork-cover.mjs`**, общем модуле на все восемь
 карточек. Полная спецификация 5:4 и замеры плитки — в
-`upwork/projects/agent-ops-console/README.md` §4, здесь не дублируются.
+`upwork/projects/b2b-partner-portal/README.md` §4, здесь не дублируются.
 
 **Стопка снята 2026-09-01.** Обложка собиралась по геометрии `ScreenStack` —
 три кадра со сдвигом на шаг. На странице сайта это работает, в плитке биржи

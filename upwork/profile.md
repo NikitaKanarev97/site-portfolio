@@ -270,7 +270,7 @@ Upwork подставляет термины из своего справочн�
 
 Webflow-карточки не удалять — переписать описания (§5.5–5.7). Это доказанный end-to-end навык и объёмный сегмент, который купит первые отзывы.
 
-**Продуктовую карточку B2B Partner Portal отметить `highlighted`** (Agent Ops снят 18.11.2026, см. §5.1).. В замере 2026 года отмеченные работы были у 16 из 20 профилей в верху выдачи против 4 из 20 внизу **[оценка, один источник: [snipework](https://snipework.com/blog/upwork-profile-optimization-2026)]**. Стоит один клик.
+**Продуктовую карточку B2B Partner Portal отметить `highlighted`** (Agent Ops снят 18.11.2026, см. §5.1). В замере 2026 года отмеченные работы были у 16 из 20 профилей в верху выдачи против 4 из 20 внизу **[оценка, один источник: [snipework](https://snipework.com/blog/upwork-profile-optimization-2026)]**. Стоит один клик.
 
 ### Формула описания — ревизия 7 от 2026-09-01: `Task / Solution / Result / Duration`
 
@@ -426,7 +426,7 @@ Duration: <NN working hours>
 | 0→1 | **задача с цифрой**, следом экран, который её решает | §5.1, §5.3, §5.4 |
 
 **🔴 Ограничение честности.** Блок с болью пользователя допустим только там,
-где боль откуда-то взята. Agent Ops — живые интервью и юзер-тест **[факт]**.
+где боль откуда-то взята. Agent Ops — живые интервью и юзер-тест **[факт]**, карточка снята 18.11.2026.
 Vet Clinic OS — доменный вход практикующего врача **[факт]**. B2B Partner
 Portal — собственный ресёрч внутри DSSL **[факт]**. **Pawly — вторичный
 ресёрч**, интервью не было: прямая речь пользователя в его карточке не
@@ -704,7 +704,7 @@ Also worked on onboarding scenarios, admin interfaces and internal tools, mainta
 ```
 Independent product design practice with the build included: design system, React front end, deployed prototype, QA pass.
 
-Work in this period includes an oversight console for a support team supervising an AI agent (paid client, user-tested and accepted), a clinic operations SaaS, a dog-care marketplace taken from brief to audited prototype in 16 days, and Webflow marketing sites in production. Live links are in the portfolio above.
+Work in this period includes a clinic operations SaaS, a dog-care marketplace taken from brief to audited prototype in 16 days, and Webflow marketing sites in production. Live links are in the portfolio above.
 ```
 
 ### 6.3 Третья запись — по желанию
@@ -839,7 +839,7 @@ Nikita
 
 **Testimonials** — в профиле есть блок `Request a testimonial` для отзывов от клиентов вне Upwork **[факт]**, и он пустой. Это **самый недооценённый актив текущего профиля**: единственный способ показать отзыв до первого контракта. Запросить три:
 
-1. заказчик Agent Ops Console — платный клиент, приёмка состоялась;
+1. ~~заказчик Agent Ops Console~~ — снято 18.11.2026: кейс под запретом до проверки прав, отзыв не запрашивать;
 2. product manager или тимлид с DSSL;
 3. владелец одного из Webflow-сайтов.
 
@@ -897,7 +897,7 @@ Nikita
 
 ### Закрыто владельцем 2026-08-31
 
-- **Agent Ops Console — платный клиент, приёмка состоялась** **[факт]**. Формулировка `Paid client · user-tested · accepted` подтверждена и идёт в overview и в карточку §5.1 без оговорок. Память проекта от 25.08.2026, где кейс описан как собственный продукт с нуля, устарела и исправлена.
+- **Agent Ops Console — платный клиент, приёмка состоялась** **[факт]**. Формулировка `Paid client · user-tested · accepted` подтверждена 31.08.2026; с 18.11.2026 в overview и карточки не идёт — кейс снят до проверки прав. Память проекта от 25.08.2026, где кейс описан как собственный продукт с нуля, устарела и исправлена.
 - **Дизайн всех четырёх Webflow-сборок — его** **[факт]**. См. §5.8.
 
 ### Закрыто конкурентным анализом 2026-08-31

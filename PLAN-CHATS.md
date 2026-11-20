@@ -10,7 +10,7 @@
 | # | Чат | Где | Вход | Выход | Статус |
 |---|---|---|---|---|---|
 | 0 | Критерии и рамка | Site-portfolio | DIRECTION-2026-11.md | `tasks/review-2026-11/criteria.md`, `positioning.md`, `case-frames.md`, `evidence-inventory.md` (+ закрытая часть локально) | готово 18.11.2026, ветка `stage-0-criteria`, ждёт «мержим stage-0» |
-| 1 | Срочные правки живого сайта | Site-portfolio | этап 0 | ветка этапа; на kanarev.com — после «мержим stage-1» | — |
+| 1 | Срочные правки живого сайта | Site-portfolio | этап 0 | ветка этапа; на kanarev.com — после «мержим stage-1» | READY FOR INDEPENDENT REVIEW — 20.11.2026, ветка `stage-1-hotfix`, правки 1.1 и 1.2 (`tasks/review-2026-11/stage-1.2/REPORT.md`); не принят, ждёт внешней приёмки и «мержим stage-1» |
 | 2 | Арт-дирекция трёх продуктов | b2b-dssl, Agent-ops-console, learn | этап 0, ответ ревьюера (если пришёл) | `tasks/review-2026-11/art-direction/` + страница сравнения; **выбор владельца** | — |
 | 3 | Partner Portal: прототип (пилот) | b2b-dssl | этап 2 | ветка этапа с ДС продукта и экранами, preview-проверка; production — по согласованию | — |
 | 4 | Сайт: система оболочки и набор блоков истории | Site-portfolio | этапы 0, 3 | обновлённые `ds/`, гибкий набор блоков истории, решение по Vet/Pawly/Webflow | — |
