@@ -1,5 +1,39 @@
 # Partner Portal — Visual Research Reset (после отклонения A/B/C)
 
+## Ревизия V1.1 · 23.11.2026
+
+**Research-only; ожидает независимой приёмки ChatGPT и решения владельца.** Продолжен пакет Claude, четыре замечания ревью обработаны без создания вариантов и без изменения продукта. Исторический обзор V1.0 ниже сохранён; его численные цели и рекомендации об удалении controls/навигации заменены этим дополнением. Исходные baseline-замеры и кадры сохранены.
+
+### Что пересмотрено
+
+1. **Разнообразие B2B-референсов.** Добавлены Ramp Purchase orders и Sentry Issue Stream из официальных материалов: изучены изображения целиком и значимые crops, сохранены происхождение и прямые ссылки. Ramp дополняет пакет закупочной таблицей с идентификацией, независимыми статусами и денежными колонками; Sentry — длинным техническим содержимым с отдельными сравнимыми атрибутами. Это документированные продуктовые скриншоты: у Sentry release-кадр 2025 года, только таблица; они не выданы за проверенные live-сессии 2026. Retool public demo открылся с пустой таблицей; Sentry Sandbox — с email/terms gate. Ограничения зафиксированы. Mobbin не использовался.
+2. **Q1–Q13.** Критерии разделены на **A Hard requirements / B Visual benchmarks / C Design hypotheses**. Данные, действия, доступность, клавиатура и отсутствие overflow обязательны. Высоты строк, размеры desktop-controls, количество тонов/весов, доля акцента и координата первой строки — ориентиры для сравнения, без прежних жёстких численных целей. Координаты PP/Mercury/GitHub сохраняются как факты/оценки, но больше не доказывают равное UX-качество: блоки решают разные задачи.
+3. **Visual / UX / business.** Удаление disabled пересматривает действующее продуктовое решение; дерево категорий даёт переходы к родителям и соседям, strip — к детям. Это не функциональные дубли. Qty/Add/In cart/Undo, существующие loading/stale retry и сравнимые техпараметры проверены по коду; перестройка поведения требует решения. USD и `excl. tax` уже утверждены для синтетического EN-демо, но это не разрешение переименовать рублёвые значения в доллары или изменить реальные налоги. Перенос фикстуры за пределы изолированного demo — отдельный scope.
+4. **Идентичность.** Сопоставлены рабочие списки Partner Portal, Agent Ops и Learn на одной ширине и масштабе, включая neutral-диагностику. Закупочная строка, очередь разбора риска и каталог учебных материалов различаются задачей, композицией и взаимодействиями. **Необходимость менять Inter не доказана.** Самостоятельный характер можно развивать внутри нынешнего языка через продуктовую анатомию и иерархию. Это экспертный вывод по выбранным desktop-спискам, не объявление финального cross-product gate пройденным.
+
+### Основа следующего композиционного этапа
+
+- **Optimised Comparison Table:** сохранить отдельные колонки технических характеристик, проверить пропорции, числовую иерархию и вес действий.
+- **Product-first Table:** дать больше места распознаванию модели/SKU и рассмотреть группировку вторичных метаданных рядом с именем, сохранив доступность значимых характеристик для сравнения между строками.
+
+Это два способа организации одной информации в существующем языке Partner Portal, а не два новых стиля. Для обеих записаны задачи, подтверждающие кадры, сохраняемые данные, риски и наблюдаемые критерии сравнения. Победитель не назначен. Следующий этап не начат.
+
+### Артефакты V1.1 — приватный репозиторий, коммит `9556cc930412cb841397f036b7e242703ba32e6a`
+
+- [REPORT.md — четыре исправления, риски, ограничения, Evidence Index и Git diff summary](https://github.com/NikitaKanarev97/b2b-partner-portal/blob/9556cc930412cb841397f036b7e242703ba32e6a/audit/stage-2-art-direction/visual-research-reset/REPORT.md)
+- [RESEARCH.md — действующее дополнение §10](https://github.com/NikitaKanarev97/b2b-partner-portal/blob/9556cc930412cb841397f036b7e242703ba32e6a/audit/stage-2-art-direction/visual-research-reset/RESEARCH.md#10-ревизия-v11)
+- [REFERENCE-MAP.md](https://github.com/NikitaKanarev97/b2b-partner-portal/blob/9556cc930412cb841397f036b7e242703ba32e6a/audit/stage-2-art-direction/visual-research-reset/REFERENCE-MAP.md) · [BASELINE-AUDIT.md — уточнения без изменения замеров](https://github.com/NikitaKanarev97/b2b-partner-portal/blob/9556cc930412cb841397f036b7e242703ba32e6a/audit/stage-2-art-direction/visual-research-reset/BASELINE-AUDIT.md)
+- [Атрибуция и ограничения кадров](https://github.com/NikitaKanarev97/b2b-partner-portal/blob/9556cc930412cb841397f036b7e242703ba32e6a/audit/stage-2-art-direction/visual-research-reset/references/README.md)
+- [Ramp — выбранный экран](https://github.com/NikitaKanarev97/b2b-partner-portal/blob/9556cc930412cb841397f036b7e242703ba32e6a/audit/stage-2-art-direction/visual-research-reset/references/raw/v11-ramp-po-list.png) · [Sentry — выбранный экран](https://github.com/NikitaKanarev97/b2b-partner-portal/blob/9556cc930412cb841397f036b7e242703ba32e6a/audit/stage-2-art-direction/visual-research-reset/references/raw/v11-sentry-issue-stream.png)
+- [Три рабочих списка, одинаковый масштаб](https://github.com/NikitaKanarev97/b2b-partner-portal/blob/9556cc930412cb841397f036b7e242703ba32e6a/audit/stage-2-art-direction/visual-research-reset/references/compare/v11-working-lists.png) · [neutral](https://github.com/NikitaKanarev97/b2b-partner-portal/blob/9556cc930412cb841397f036b7e242703ba32e6a/audit/stage-2-art-direction/visual-research-reset/references/compare/v11-working-lists-neutral.png)
+- [Результат проверки целостности](https://github.com/NikitaKanarev97/b2b-partner-portal/blob/9556cc930412cb841397f036b7e242703ba32e6a/audit/stage-2-art-direction/visual-research-reset/references/v11-validation.json)
+
+Доступ к ссылкам требует прав на приватный репозиторий. Здесь обновлён только этот текстовый обзор: приватные изображения, код, бизнес-данные и сторонние скриншоты в публичный repo не добавлены. Исходники продукта, ДС, маршруты, Figma, `main`, `stage-2-art-direction` и production не менялись; merge и deploy не выполнялись. Полное браузерное QA не запускалось: проверены исследовательские артефакты, ссылки, новые свидетельства и scope diff.
+
+---
+
+## Исторический обзор V1.0 — выводы ниже уточнены V1.1
+
 Дата: 20–23.11.2026. Research-only. Владелец отклонил все три направления Stage 2.4 (A «Ведомость», B «Справочник», C «Пульт заказа»): A сухой и мелкий, B «много зелёного, старомодно», C — необоснованный красно-оранжевый и громоздкий мобильный; нынешний Partner Portal нравится владельцу больше всех трёх. Этот документ — публичный обзор нового исследования. **Кадры, референсы третьих лиц и замеры лежат только в приватном репозитории** (ссылки ниже, нужен доступ). Ничего из закрытых материалов DSSL здесь нет.
 
 ## Исходные точки
