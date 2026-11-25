@@ -1,6 +1,6 @@
 # Этап 2 — отчёт
 
-**Ветка:** `stage-2-art-direction` в обоих репозиториях · **Статус:** 2.0 и 2.1 закрыты 20.11.2026; ключевой экран — каталог, IP cameras (решение Claude по поручению владельца). 2.2 — ревизия 2.2.2; 20.11.2026 владелец дал переход к 2.3. 2.3 — набор из трёх гипотез согласован владельцем 20.11.2026. 2.4 — материалы первой итерации сохранены. Актуальный пакет 2.5 по Workspace V2.1 подготовлен, [решение владельца ожидается](art-direction/partner-portal/05-DECISION.md). Merge в main и production-деплой не выполнялись; ветки этапа на GitHub — см. «Git».
+**Статус Partner Portal:** Stage 2.5 и Gate PP закрыты 25.11.2026. Владелец утвердил **Procurement Workspace V2.1** как единственное направление. Независимое ревью — **ACCEPTED WITH BACKLOG**. Решение записано в ветке `codex/stage-2-5-partner-portal-direction-gate` обоих репозиториев. Следующий этап — **2.6 · Agent Ops**, по отдельному заданию. [Решение владельца](art-direction/partner-portal/05-DECISION.md)
 
 ## 2.0 — Base SHA и изоляция
 
@@ -33,15 +33,23 @@
 
 **Решения владельца 20.11.2026** (раздел 11 файла): реализовать A, B и C; пять UX-изменений — только в изолированных демо-вариантах; моно — только для SKU с проверкой различимости; одна USD-таблица $149–$289 для всех. Победитель на 2.3 не выбирается. Кадры и код не создавались; приватный `b2b-dssl` не менялся.
 
-## 2.4 — Варианты в работающем коде
+## 2.4 — Архив первой итерации в работающем коде
 
 [04-COMPARISON.md](art-direction/partner-portal/04-COMPARISON.md), [04-QA.md](art-direction/partner-portal/04-QA.md), 20.11.2026. A, B и C — изолированные demo-маршруты `/art-direction/a|b|c` и страница сравнения `/art-direction` в приватном `b2b-dssl`; production-маршруты не менялись. Один экран, одно состояние (одно реальное `Add to cart` на неизменённой фикстуре), одна USD-таблица.
 
 Замеры 1440: строка A 41–42 px, B 57 px, C 64–65 px (прототип сейчас 81–88, прод 66); все 8 строк в первом экране у всех трёх. 390 и 360 — без горизонтального переполнения, все действия доступны; мобильные строки выше ориентиров 2.3 (A 153, B 187–191, C 219–223 px). Поведение — smoke PASS по девяти сценариям у всех трёх. Найдено и не исправлено без решения владельца: в Fira Mono `0` и `O` различаются только шириной (04-QA, раздел 4).
 
-Запрос на независимое ревью первой итерации сохранён в [05-REVIEW-REQUEST.md](art-direction/partner-portal/05-REVIEW-REQUEST.md). Действующие варианты и рекомендация по результатам Stage 2.4 V2.1 зафиксированы в [05-DECISION.md](art-direction/partner-portal/05-DECISION.md).
+Запрос на независимое ревью первой итерации сохранён как исторический документ. [05-REVIEW-REQUEST.md](art-direction/partner-portal/05-REVIEW-REQUEST.md)
+
+## 2.5 — Решение владельца по Partner Portal
+
+**APPROVED BY OWNER** · 25.11.2026. Procurement Workspace V2.1 — единственное выбранное направление. Baseline сохраняется как исторический BEFORE. Workspace V2 заменён и архивирован, Technical Specification V2 отклонён и архивирован. Все ранние поиски архивированы вместе с доказательствами. Возобновить любое из архивированных направлений можно только по явному решению владельца. [Решение и приватный пакет](art-direction/partner-portal/05-DECISION.md)
+
+Для будущего Stage 3 обязательны [DIRECTION-SPEC.md](https://github.com/NikitaKanarev97/b2b-partner-portal/blob/35bec7f58ebf4ebd2fef9507d1444c36074e6282/audit/stage-2-art-direction/direction-gate/DIRECTION-SPEC.md) и [TRANSFER-MAP.md](https://github.com/NikitaKanarev97/b2b-partner-portal/blob/35bec7f58ebf4ebd2fef9507d1444c36074e6282/audit/stage-2-art-direction/direction-gate/TRANSFER-MAP.md). [Backlog](https://github.com/NikitaKanarev97/b2b-partner-portal/blob/35bec7f58ebf4ebd2fef9507d1444c36074e6282/audit/stage-2-art-direction/direction-gate/BACKLOG.md) включает блокер Order Details, доступность, адаптивные доработки и EN/USD-фикстуру.
 
 ## Git
+
+Ниже зафиксированы предыдущие итерации.
 
 | Репозиторий | Видимость | Проверено ревью 2.2.1 | HEAD после 2.2.2 (GitHub = локально) |
 |---|---|---|---|

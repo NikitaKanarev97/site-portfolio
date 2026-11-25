@@ -11,7 +11,7 @@
 |---|---|---|---|---|---|
 | 0 | Критерии и рамка | Site-portfolio | DIRECTION-2026-11.md | `tasks/review-2026-11/criteria.md`, `positioning.md`, `case-frames.md`, `evidence-inventory.md` (+ закрытая часть локально) | готово 18.11.2026, ветка `stage-0-criteria`, ждёт «мержим stage-0» |
 | 1 | Срочные правки живого сайта | Site-portfolio | этап 0 | ветка этапа; на kanarev.com — после «мержим stage-1» | — |
-| 2 | Арт-дирекция: Partner Portal → Agent Ops → TRASSIR Learn | b2b-dssl, Agent-ops-console, learn (последовательно) | этап 0, ответ ревьюера (если пришёл) | `tasks/review-2026-11/art-direction/` + реальные сравнения; **три решения владельца и итоговый cross-product review** | в работе: PP 2.0–2.1 закрыты 20.11.2026 (экран — каталог IP cameras); 2.2 — переход к 2.3 дан владельцем 20.11; 2.3 — набор A/B/C согласован 20.11; 2.4 — варианты в коде, `04-COMPARISON.md`, ждёт ревью 2.5; ветка `stage-2-art-direction` |
+| 2 | Арт-дирекция: Partner Portal → Agent Ops → TRASSIR Learn | b2b-dssl, Agent-ops-console, learn (последовательно) | этап 0, ответ ревьюера (если пришёл) | `tasks/review-2026-11/art-direction/` + реальные сравнения; **три решения владельца и итоговый cross-product review** | в работе: **PP 2.5 и Gate PP закрыты 25.11.2026**. Утверждён Procurement Workspace V2.1. Следующий этап — 2.6 · Agent Ops по отдельному заданию. [Решение владельца](tasks/review-2026-11/art-direction/partner-portal/05-DECISION.md) |
 | 3 | Partner Portal: прототип (пилот) | b2b-dssl | этап 2 | ветка этапа с ДС продукта и экранами, preview-проверка; production — по согласованию | — |
 | 4 | Сайт: система оболочки и набор блоков истории | Site-portfolio | этапы 0, 3 | обновлённые `ds/`, гибкий набор блоков истории, решение по Vet/Pawly/Webflow | — |
 | 5 | Partner Portal: кейс | Site-portfolio | этапы 3, 4, `D:\Design\Cases\Case\` | страница кейса EN + RU | — |
@@ -176,9 +176,11 @@ Git: ветка stage-1-hotfix от зафиксированного base SHA п
 - Claude формулирует отдельную рекомендацию, но **не утверждает** свой вариант. Владелец выбирает направление Partner Portal и может потребовать точечную доработку.
 - Записать решение и его основания в `art-direction/partner-portal/05-DECISION.md`, включая типографику, ориентиры плотности, композиционные принципы, фирменные приёмы, запрещённые решения и карту применения на других экранах. **Это не полная дизайн-система:** её делают на Stage 3.
 
-**Gate PP:** без принятого владельцем направления, независимого визуального ревью и доступного пакета доказательств **не начинать Agent Ops и Learn**.
+**Gate PP закрыт 25.11.2026.** Владелец утвердил Procurement Workspace V2.1 как единственное направление. Независимое ревью — **ACCEPTED WITH BACKLOG**. Альтернативы архивированы. Возврат к ним требует явного решения владельца. [Решение и доказательства](tasks/review-2026-11/art-direction/partner-portal/05-DECISION.md)
 
-### 2.6 — Agent Ops: отдельный цикл, только после Gate PP
+### 2.6 — Agent Ops: отдельный цикл после Gate PP
+
+**Следующий разрешённый этап. Запуск по отдельному заданию владельца.**
 
 - Повторить **2.1–2.5 для Agent Ops как самостоятельного продукта**: собственный audit, экран здорового сценария, реальные релевантные референсы, 2–3 отличающиеся гипотезы и работающие варианты, сравнение, независимое ревью, решение владельца.
 - Сохранить особенность продукта — наблюдаемость AI-процессов, контроль оператором, сигналы и ответственность. Не переносить визуальную систему Partner Portal и не создавать «такой же экран, но тёмный».
@@ -203,7 +205,7 @@ Git: ветка stage-1-hotfix от зафиксированного base SHA п
 
 **Stage 2 ACCEPTED:** есть отдельные брифы/исследования и подтверждённые референсы, 2–3 реальные кодовые альтернативы для каждого продукта, одобренное владельцем направление каждого, пройденное независимое ревью и cross-product test. Приёмка не означает merge, push, деплой, изменение Figma или разрешение на публикацию чужих материалов. Только после этого **Stage 3 — полномасштабный пилот Partner Portal**.
 
-### Implementation brief для Claude — запускать по частям, не одной генерацией
+### Архив · Implementation brief для Partner Portal 2.0–2.5
 
 ```text
 Репозитории: d:\Claude-projects\Site-portfolio (план, критерии, только безопасные публичные записи), d:\Claude-projects\b2b-dssl (Partner Portal, приватная реализация). Этап 2 из 9, СЕЙЧАС ТОЛЬКО PARTNER PORTAL, подпункты 2.0–2.1.
@@ -219,7 +221,10 @@ Git: отдельная ветка/worktree от записанного base SHA
 
 ## Этап 3 — Partner Portal: прототип (пилот)
 
-**Зачем:** развернуть выбранное направление в ДС и на ключевых экранах и проверить новый процесс на одном продукте.
+**Зачем:** развернуть Procurement Workspace V2.1 в ДС и на ключевых экранах и проверить новый процесс на одном продукте.
+
+Реализация начинается после закрытия всего Stage 2 и следует обязательным [DIRECTION-SPEC.md](https://github.com/NikitaKanarev97/b2b-partner-portal/blob/35bec7f58ebf4ebd2fef9507d1444c36074e6282/audit/stage-2-art-direction/direction-gate/DIRECTION-SPEC.md), [TRANSFER-MAP.md](https://github.com/NikitaKanarev97/b2b-partner-portal/blob/35bec7f58ebf4ebd2fef9507d1444c36074e6282/audit/stage-2-art-direction/direction-gate/TRANSFER-MAP.md) и условиям [BACKLOG.md](https://github.com/NikitaKanarev97/b2b-partner-portal/blob/35bec7f58ebf4ebd2fef9507d1444c36074e6282/audit/stage-2-art-direction/direction-gate/BACKLOG.md).
+
 **Навыки:** `product-polish`, `emil-design-eng`, `prototype-i18n` (если трогаем RU), `lead-review`
 **Definition of done:**
 - ДС продукта по выбранному направлению: типографика, плотность, токены, компоненты, фирменные приёмы — записана в репозитории b2b-dssl.
@@ -232,7 +237,7 @@ Git: отдельная ветка/worktree от записанного base SHA
 **Промпт:**
 ```
 Проект: d:\Claude-projects\b2b-dssl (записи плана — d:\Claude-projects\Site-portfolio). Это этап 3 из 9 плана PLAN-CHATS.md, пилот.
-Прочитай Site-portfolio/DIRECTION-2026-11.md, tasks/review-2026-11/criteria.md, case-frames.md (раздел Partner Portal), art-direction/decision.md и страницу выбранного направления. Посмотри D:\Design\Cases\Case\Исходники и Прод-2026-11\скрыто-NDA — это слои 1 и 2 кейса.
+Прочитай Site-portfolio/DIRECTION-2026-11.md, tasks/review-2026-11/criteria.md, case-frames.md (раздел Partner Portal), общий art-direction/decision.md и решение Partner Portal в art-direction/partner-portal/05-DECISION.md. Перейди к закреплённым там DIRECTION-SPEC.md, TRANSFER-MAP.md и BACKLOG.md. Посмотри D:\Design\Cases\Case\Исходники и Прод-2026-11\скрыто-NDA — это слои 1 и 2 кейса.
 Сделай: 1) ДС продукта по выбранному направлению; 2) переведи на неё заказы, каталог, корзину — здоровый сценарий первым, сложные случаи вторыми; 3) закрой замечания ревью: английский, плотность строк, единые даты, подписи у чисел, иерархия кнопок; 4) своя стартовая страница прототипа вместо шаблона «Product screens».
 Git: ветка stage-3-pilot в b2b-dssl от зафиксированного base SHA по разделу «Git и выкладка» PLAN-CHATS.md; push ветки, merge в main и production-деплой — только с моего отдельного слова.
 Ограничения: бизнес-логику и сценарии не меняй без обоснования; стоп-лист на каждом экране; не сглаживай отличия направления при переносе; кадры прода DSSL в репозиторий прототипа не класть.
