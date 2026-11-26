@@ -16,7 +16,7 @@ export function makeLearnCase(locale: 'en' | 'ru') {
     promise: t('One knowledge system.\nTwo ways to learn.', 'Одна база знаний.\nДва пути к результату.'),
     lead: t('Find a technical answer in the moment, or complete a structured learning path. The same resources support both — with different rules for progress.', 'Быстро найти технический ответ или пройти последовательную программу подготовки. Материалы общие, но правила прогресса — разные.'),
     preview: t('Explore the reference library', 'Открыть справочник'),
-    previewHref: `https://kanarev.com/prototypes/learn/home?lang=${locale}`,
+    previewHref: `/prototypes/learn/home?lang=${locale}`,
     previewNote: t('Live product entry · opens in English', 'Главная продукта · откроется на русском'),
     origin: t('I worked on the platform redesign at DSSL / TRASSIR. After leaving, I revisited the architecture, UX/UI, design system and responsive prototype. These screens show that later work; account data is illustrative.', 'Я работал над редизайном платформы в DSSL / TRASSIR. После ухода заново проработал архитектуру, UX/UI, дизайн-систему и адаптивный прототип. Здесь показана эта новая работа; данные аккаунтов — примеры.'),
     facts: [
@@ -91,7 +91,7 @@ export function makeLearnCase(locale: 'en' | 'ru') {
       next: t('Validate both journeys with real specialists and review the materials and question bank with a subject-matter expert. Browser QA establishes route and state behaviour; learning effectiveness remains to be measured.', 'Пройти оба маршрута с реальными специалистами и проверить материалы и банк вопросов с экспертом. Браузерная QA проверяет маршруты и состояния; эффективность обучения ещё предстоит измерить.'),
       cta: t('Explore the reference library', 'Открыть справочник'),
       landing: t('Visit the product landing', 'Посмотреть лендинг'),
-      landingHref: `https://kanarev.com/prototypes/learn-landing/${locale === 'en' ? 'en/' : ''}`,
+      landingHref: `/prototypes/learn-landing/${locale === 'en' ? 'en/' : ''}`,
       note: t('Live reference entry and product introduction. Screens show the current integrated interface.', 'Вход в действующий справочник и знакомство с продуктом. На экранах — актуальный объединённый интерфейс.'),
     },
   };
