@@ -29,7 +29,6 @@ Jan 2023 - Present - Remote
 
 Paid client engagements: full-time before DSSL, alongside it from Sep 2023. Most recent contract closed in spring 2026.
 
-- Scoped 35 Agent Ops artboards across three roles and delivered the tested clickable core within one month; the NDA client accepted the prototype after user testing and rework.
 - Designed a veterinary clinic operations system from domain research with a practising veterinarian through to a working prototype.
 
 ### Selected independent projects - Self-directed
@@ -43,12 +42,6 @@ Product design, design systems and interactive prototypes for my own projects.
 - Designed and built four live Webflow demo builds end to end, including visual design, responsive implementation, interactions and QA.
 
 ## Selected Work
-
-### [Agent Ops Console](https://kanarev.com/work/agent-ops-console)
-
-NDA B2B SaaS - 3 roles - 1 month
-
-Scoped 35 artboards and delivered a tested prototype that the client accepted after research-led rework.
 
 ### [B2B Partner Portal at DSSL](https://kanarev.com/work/partner-portal)
 

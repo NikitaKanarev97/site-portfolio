@@ -52,7 +52,7 @@ Basics, photo (Public), background, headline, websites, About, current and past 
 
 ### Featured (order verified after reload)
 
-1. **Agent Ops Console — Oversight for an AI Support Agent** — `https://kanarev.com/work/agent-ops-console/`
+1. **Agent Ops Console — Oversight for an AI Support Agent** — `[restricted destination]
    Paid NDA client, B2B SaaS · 3 roles, 35 scoped artboards, one month. User-tested and accepted by the client; implementation stayed with the client.
 2. **B2B Partner Portal (DSSL) — Ordering on a Legacy Backend** — `https://kanarev.com/work/partner-portal/`
    Commercial redesign, shipped in full at DSSL. The case revisits it as a 20-screen, 45-component rebuild on synthetic data — not the production interface.

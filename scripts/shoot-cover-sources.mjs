@@ -7,8 +7,10 @@
  */
 import { createRequire } from 'node:module';
 import { mkdir } from 'node:fs/promises';
+import path from 'node:path';
 
-const require = createRequire('d:/Claude-projects/Agent-ops-console/package.json');
+// Playwright берётся из репозитория снимаемого прототипа (b2b-dssl), как в shoot-learn-frames.mjs.
+const require = createRequire(path.resolve(process.env.PLAYWRIGHT_REPO ?? '../b2b-dssl', 'package.json'));
 const { chromium } = require('playwright');
 
 const OUT = 'tmp/cover-sources';

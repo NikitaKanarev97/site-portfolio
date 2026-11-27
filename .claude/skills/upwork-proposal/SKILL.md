@@ -3,7 +3,7 @@ name: upwork-proposal
 description: "Сборка отклика на Upwork целиком: cover letter, ответы на screening questions, ставка, milestone, highlights. Когда: вакансия прошла upwork-triage и решено тратить connects. Также — адаптация письма в холодное сообщение вне площадки."
 ---
 
-> **18.11.2026: ~~Agent Ops Console~~ (снят) снят** (DIRECTION-2026-11 §7.1, `tasks/review-2026-11/evidence-inventory.md`, A1–A3 под запретом клиента). Не называть в письмах и профилях, не давать ссылку на прототип, не приводить его цифры. Где ниже стоит Agent Ops — брать следующий кейс строки.
+> **18.11.2026: Agent Ops Console снят** (DIRECTION-2026-11 §7.1, `tasks/review-2026-11/evidence-inventory.md`, A1–A3 под запретом клиента). Не называть в письмах и профилях, не давать ссылку на прототип, не приводить его цифры. Готовые тексты и таблицы ниже переписаны на разрешённые кейсы; где Agent Ops остался — это запись ограничения, не довод.
 
 
 ## Задача
@@ -102,7 +102,7 @@ Screening questions клиент видит **раньше** письма (`mark
 
 **Duration** — по тиру карточки из `project-catalog.md`, не по ощущению. Расходится с текстом письма — правится письмо, а не форма.
 
-**Profile highlights** — три карточки под полосу: A и B → ~~Agent Ops Console~~ (снят), B2B Partner Portal, Pawly. C → SCRIB3, SYNK, Bloomlex. D → ~~Agent Ops Console~~ (снят), Pawly, плюс карточка каталога «UX audit».
+**Profile highlights** — три карточки под полосу: A и B → B2B Partner Portal, Vet Clinic OS, Pawly. C → SCRIB3, SYNK, Bloomlex. D → B2B Partner Portal, Pawly, плюс карточка каталога «UX audit».
 
 **Attachments** — по умолчанию не прикладывать: ссылки уже в письме, а вложение требует скачивания. Исключение — вакансия просит образец прямым текстом.
 

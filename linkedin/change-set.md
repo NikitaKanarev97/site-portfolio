@@ -87,7 +87,7 @@ Associated priority skills: Product Design, User Experience, Information Archite
 
 ### 1. Agent Ops Console — Designing Human Oversight for AI
 
-URL: `https://kanarev.com/work/agent-ops-console`
+URL: `[restricted destination]
 
 > NDA B2B SaaS case: three roles, 35 scoped artboards and a tested prototype accepted by the client. Prototype delivery; no shipped-product claim.
 

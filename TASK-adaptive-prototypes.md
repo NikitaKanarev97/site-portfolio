@@ -13,7 +13,7 @@
 
 | Прототип | Репозиторий | Прод | Экранов |
 |---|---|---|---|
-| Agent Ops Console | `d:\Claude-projects\Agent-ops-console` | agent-ops-console.vercel.app | 19 |
+| Agent Ops Console | `d:\Claude-projects\Agent-ops-console` | [restricted destination] | 19 |
 | B2B Partner Portal | `d:\Claude-projects\b2b-dssl` | b2b-partner-portal-five.vercel.app | ~17 + индекс |
 | Vet Clinic OS | `d:\Claude-projects\Veterinary-clinic` | veterinary-clinic-gules.vercel.app | ~14 + лендинг и индекс |
 
