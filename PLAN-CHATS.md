@@ -11,7 +11,7 @@
 |---|---|---|---|---|---|
 | 0 | Критерии и рамка | Site-portfolio | DIRECTION-2026-11.md | `tasks/review-2026-11/criteria.md`, `positioning.md`, `case-frames.md`, `evidence-inventory.md` (+ закрытая часть локально) | готово 18.11.2026, ветка `stage-0-criteria`, ждёт «мержим stage-0» |
 | 1 | Срочные правки живого сайта | Site-portfolio | этап 0 | ветка этапа; на kanarev.com — после «мержим stage-1» | — |
-| 2 | Арт-дирекция: Partner Portal → Agent Ops → TRASSIR Learn | b2b-dssl, Agent-ops-console, learn (последовательно) | этап 0, ответ ревьюера (если пришёл) | `tasks/review-2026-11/art-direction/` + реальные сравнения; **три решения владельца и итоговый cross-product review** | **Stage 2.8.2 — READY FOR INDEPENDENT REVIEW.** [Индекс](tasks/review-2026-11/art-direction/stage-2.8.2/README.md). |
+| 2 | Арт-дирекция: Partner Portal → Agent Ops → TRASSIR Learn | b2b-dssl, Agent-ops-console, learn (последовательно) | этап 0, ответ ревьюера (если пришёл) | `tasks/review-2026-11/art-direction/` + реальные сравнения; **три решения владельца и итоговый cross-product review** | **Stage 2.8.3 — READY FOR INDEPENDENT REVIEW.** [Индекс](tasks/review-2026-11/art-direction/stage-2.8.3/README.md). |
 | 3 | Partner Portal: прототип (пилот) | b2b-dssl | этап 2 | ветка этапа с ДС продукта и экранами, preview-проверка; production — по согласованию | — |
 | 4 | Сайт: система оболочки и набор блоков истории | Site-portfolio | этапы 0, 3 | обновлённые `ds/`, гибкий набор блоков истории, решение по Vet/Pawly/Webflow | — |
 | 5 | Partner Portal: кейс | Site-portfolio | этапы 3, 4, `D:\Design\Cases\Case\` | страница кейса EN + RU | — |
@@ -218,6 +218,10 @@ Git: ветка stage-1-hotfix от зафиксированного base SHA п
 ### 2.8.2 — Final Evidence Closure
 
 **27.11.2026 · READY FOR INDEPENDENT REVIEW.** Обновлены сравнения Q2, материалы проверки доступности и превью слепого теста. Решение о завершении Stage 2 принимает владелец после независимого ревью. [Индекс этапа](tasks/review-2026-11/art-direction/stage-2.8.2/README.md)
+
+### 2.8.3 — Final Gate Closure
+
+**27.11.2026 · READY FOR INDEPENDENT REVIEW.** Подготовлены сравнение Action Approvals, новые материалы desktop Board A и аудит P0 с планом закрытия. Этап 3 ожидает независимой приёмки. [Индекс этапа](tasks/review-2026-11/art-direction/stage-2.8.3/README.md)
 
 ### Implementation brief для Claude — запускать по частям, не одной генерацией
 
