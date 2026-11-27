@@ -5,7 +5,7 @@
 Убрано против полной ветки «Продукт с нуля»: ресёрч рынка, персоны, бенчмарк (есть, ревью их перекрывает); Figma и UI-кит (решение владельца — рисуем в коде); wireframes (экраны есть, меняются стиль и плотность, не структура); финальная приёмка только агентами (её место занимает этап 6 с живым лидом).
 Объединено: прототип и кейс Agent Ops — один чат; прототип и кейс Learn — один чат (подход отработан на пилоте).
 
-> **27.11.2026 · Portfolio-first.** PF-1 (стратегия, `69f8b578`) — ACCEPTED WITH BACKLOG. PF-2 (историческая реконструкция, интервью владельца, storyboard, scope) — **на независимом ревью**. Шаги Portfolio-first нумеруются PF и не занимают номера Stage 3.x: номер 3.5 у Codex — Cart. Codex продолжает свои этапы без изменений. [Отчёт](audit/portfolio-first-strategy/REPORT.md) · [Scope](audit/portfolio-first-strategy/SCOPE.md) · [Storyboards](audit/portfolio-first-strategy/STORYBOARDS.md) · [Оставшиеся работы](audit/portfolio-first-strategy/REMAINING-WORK.md)
+> **28.11.2026 · Portfolio-first.** PF-1 (`69f8b578`) и PF-2 (`e8cc8300`) — ACCEPTED WITH BACKLOG. **PF-3 — закрытие стратегии — на независимом ревью.** Конечный scope — 10 экранов; добавлен этап **7A · Agent Ops — Final Design Refinement**; этапы 7 и 8 делятся на продукт и кейс. Три потока работ — Claude, Codex, ChatGPT — по конечному перечню [REMAINING-WORK](audit/portfolio-first-strategy/REMAINING-WORK.md). Шаги Portfolio-first нумеруются PF и не занимают номера Stage 3.x. Решения — [DIRECTION §11.2](DIRECTION-2026-11.md). [Отчёт](audit/portfolio-first-strategy/REPORT.md) · [Scope](audit/portfolio-first-strategy/SCOPE.md) · [Storyboards](audit/portfolio-first-strategy/STORYBOARDS.md) · [План 7A](audit/portfolio-first-strategy/AGENT-OPS-REFINEMENT-PLAN.md)
 
 ## Карта этапов
 
@@ -14,15 +14,16 @@
 | 0 | Критерии и рамка | Site-portfolio | DIRECTION-2026-11.md | `tasks/review-2026-11/criteria.md`, `positioning.md`, `case-frames.md`, `evidence-inventory.md` (+ закрытая часть локально) | готово 18.11.2026, ветка `stage-0-criteria`, ждёт «мержим stage-0» |
 | 1 | Срочные правки живого сайта | Site-portfolio | этап 0 | ветка этапа; на kanarev.com — после «мержим stage-1» | — |
 | 2 | Арт-дирекция: Partner Portal → Agent Ops → TRASSIR Learn | b2b-dssl, Agent-ops-console, learn (последовательно) | этап 0, ответ ревьюера (если пришёл) | `tasks/review-2026-11/art-direction/` + реальные сравнения; **три решения владельца и итоговый cross-product review** | **Stage 2.8.3 — READY FOR INDEPENDENT REVIEW.** [Индекс](tasks/review-2026-11/art-direction/stage-2.8.3/README.md). |
-| 3 | Partner Portal: прототип (пилот) | b2b-dssl | этап 2 | ветка этапа с ДС продукта и экранами, preview-проверка; production — по согласованию | идёт у Codex: 3.1–3.3.1 закрыты ревью-ответами, 3.4 Product Details и 3.5 Cart — на независимом ревью; продолжен по поручению владельца 27.11.2026 (отчёт 3.1 `129e89d`), P0 отложен |
+| 3 | Partner Portal: прототип (пилот) | b2b-dssl | этап 2 | ветка этапа с ДС продукта и экранами, preview-проверка; production — по согласованию | идёт у Codex. Записанные вердикты ревью: 3.1 REQUEST CHANGES (Minor), 3.2 REVISION REQUIRED — закрыты ответами 3.1.1 и 3.2.1; у 3.1.1, 3.2.2, 3.3, 3.3.1 вердикт в репозитории не записан; 3.2.3, 3.4, 3.5 ждут ревью. Осталось: Resolution Center, одна интеграционная проверка, backlog, сценарии к съёмке ([B1–B7](audit/portfolio-first-strategy/REMAINING-WORK.md)). Продолжен по поручению владельца 27.11.2026 (отчёт 3.1 `129e89d`), P0 отложен |
 | PF-1 | Portfolio-first: стратегия и scope | Site-portfolio, ChatGPT | этап 2, Stage 3.x | `audit/portfolio-first-strategy/` | ACCEPTED WITH BACKLOG, `69f8b578` |
-| PF-2 | Историческая реконструкция, интервью, storyboard | Site-portfolio, `D:\Design\Cases\Case\portfolio-first-private\` | PF-1, интервью 27.11 | индекс источников, сравнение, реконструкция, storyboard, scope, оставшиеся работы | READY FOR INDEPENDENT REVIEW |
-| PF-3 | Утверждение storyboard и scope владельцем | — | ревью PF-2 | запись в DIRECTION §11 | нужен до этапов 4–5; продуктовую работу Codex не блокирует |
+| PF-2 | Историческая реконструкция, интервью, storyboard | Site-portfolio, `D:\Design\Cases\Case\portfolio-first-private\` | PF-1, интервью 27.11 | индекс источников, сравнение, реконструкция, storyboard, scope, оставшиеся работы | ACCEPTED WITH BACKLOG, `e8cc8300` |
+| PF-3 | Закрытие стратегии: конечный scope, storyboard, roadmap до релиза, план 7A | Site-portfolio | ревью PF-2, ответы владельца 28.11 | `audit/portfolio-first-strategy/`, DIRECTION §11.2 | **READY FOR INDEPENDENT REVIEW**; нужен до этапов 4–5; продуктовую работу Codex не блокирует |
 | 4 | Сайт: система оболочки и набор блоков истории | Site-portfolio | этапы 0, 3 | обновлённые `ds/`, гибкий набор блоков истории, решение по Vet/Pawly/Webflow | — |
 | 5 | Partner Portal: кейс | Site-portfolio | этапы 3, 4, `D:\Design\Cases\Case\` | страница кейса EN + RU | — |
 | 6 | Внешняя проверка (ворота) | — | этап 5 | `tasks/review-2026-11/pilot-feedback.md`; решение «тиражируем подход / правим его» | — |
-| 7 | Agent Ops: прототип и кейс | Agent-ops-console, Site-portfolio | этап 6 | ветки этапа: прототип + кейс | — |
-| 8 | TRASSIR Learn: прототип и кейс (параллельно с 7) | learn, Site-portfolio | этап 6 | ветки этапа: прототип + кейс | — |
+| 7A | Agent Ops: Final Design Refinement — Review Queue, Run Detail, Action Approvals | Agent-ops-console | бриф ChatGPT (G3) | ветка `claude/agent-ops-final-refinement`, BEFORE/AFTER, QA, приёмка ChatGPT | — · параллельно с этапом 3, не ждёт этапа 6 |
+| 7 (7B) | Agent Ops: кейс | Site-portfolio | этапы 6 и 7A | ветка кейса | — |
+| 8 | TRASSIR Learn: Program (Codex, B8) и кейс (8B, параллельно с 7B) | learn, Site-portfolio | Program — после этапа 3; кейс — этап 6 | ветки этапа: экран + кейс | — |
 | 9 | Интеграция, сборка и выкладка | Site-portfolio, `cv/`, `upwork/` | этапы 7, 8 | интеграционная ветка с тремя продуктами и проверкой; после «публикуем» — kanarev.com и профили | — |
 
 **Правило перехода:** следующий чат не начинаем, пока выходы предыдущего не лежат в проекте и статус в карте не обновлён. **Этап 6 — жёсткие ворота:** без внешней оценки пилота подход на остальные кейсы не тиражируем.
@@ -323,7 +324,25 @@ Git: ветка stage-5-portal-case от зафиксированного base S
 Покажи сводку правок и дождись моего решения «тиражируем / правим подход». Запиши решение, обнови статус этапа 6.
 ```
 
-## Этап 7 — Agent Ops: прототип и кейс
+## Этап 7A — Agent Ops: Final Design Refinement
+
+**Зачем:** довести три экрана Agent Ops до максимального профессионального уровня внутри утверждённой светлой арт-дирекции Shift Board. Не новая арт-дирекция, не смена структуры, не переработка всех маршрутов. Полный план — [AGENT-OPS-REFINEMENT-PLAN.md](audit/portfolio-first-strategy/AGENT-OPS-REFINEMENT-PLAN.md).
+**Исполнитель:** Claude. **Вход:** implementation brief и reference pack ChatGPT (G3). Без брифа не запускать.
+**Навыки:** `product-polish`, `emil-design-eng`, `lead-review`
+**Definition of done:** план §8 — посекционная оценка трёх экранов, Q1 PASS во всех показанных состояниях, Q2 не ниже принятого, responsive и доступность, стоп-лист, тест подмены и Cross-product PASS, первое состояние каждого экрана здоровое, сопоставимые BEFORE/AFTER, бизнес-правила сверены, приёмка ChatGPT и решение владельца.
+
+**Промпт:**
+```
+Проект: d:\Claude-projects\Agent-ops-console (статус этапа — d:\Claude-projects\Site-portfolio). Это этап 7A плана PLAN-CHATS.md — Agent Ops: Final Design Refinement.
+Прочитай Site-portfolio/DIRECTION-2026-11.md (§3–7.1, §11.2), audit/portfolio-first-strategy/AGENT-OPS-REFINEMENT-PLAN.md целиком, STORYBOARDS.md §3, tasks/review-2026-11/criteria.md. В Agent-ops-console — audit/stage-2-art-direction/agent-ops/ (direction-gate/DECISION.md, DIRECTION-SPEC.md, TRANSFER-MAP.md, BACKLOG.md, 02-RESEARCH.md, REFERENCE-MAP.md, VISUAL-BENCHMARK.md, 2.8.2 и 2.8.3 REVIEW). Бриф ChatGPT: <вставь бриф или путь>.
+Сделай по плану: R0 базовые кадры → R1 сверка брифа → R2 посекционная оценка и список правок (покажи и дождись подтверждения) → R3 реализация, после первого экрана покажи кадры и дождись «ок» → R4 проверки → R5 BEFORE/AFTER и отчёт.
+Git: ветка claude/agent-ops-final-refinement от головы codex/stage-2-8-4-approvals, base SHA записать; без merge, деплоя и публичного preview.
+Ограничения: арт-дирекция, светлая тема и структура не меняются; сильные принятые решения сохраняются; не менять ради изменения; бизнес-правила RULE-01; здоровый сценарий первым; ничего из переданного клиенту; кадры только в приватном репозитории. Свою работу не утверждаешь.
+```
+
+## Этап 7 (7B) — Agent Ops: кейс
+
+> **28.11.2026.** Продуктовая часть этапа перенесена в этап 7A. Здесь остаётся кейс по [STORYBOARDS §3](audit/portfolio-first-strategy/STORYBOARDS.md): без строки о происхождении, экраны из 7A, клипы 5–6. Пункты ниже о ДС и стартовой странице прототипа не выполняются (Portfolio-first, SCOPE).
 
 **Зачем:** второй кейс по отработанному шаблону, «как сделал бы сейчас».
 **Навыки:** `product-polish`, `emil-design-eng`, `case-refresh`, `prototype-i18n`
@@ -345,6 +364,8 @@ Git: ветки stage-7-agent-ops в обоих репозиториях от з
 ```
 
 ## Этап 8 — TRASSIR Learn: прототип и кейс
+
+> **28.11.2026.** Продуктовая часть сведена к экрану Program (Codex, B8 в [REMAINING-WORK](audit/portfolio-first-strategy/REMAINING-WORK.md)). Кейс — по [STORYBOARDS §2](audit/portfolio-first-strategy/STORYBOARDS.md), без строки о происхождении и без кадров DSSL. Пункты ниже о ДС и стартовой странице прототипа не выполняются (Portfolio-first, SCOPE).
 
 **Зачем:** третий кейс по отработанному шаблону, «как сделал бы сейчас».
 **Навыки:** `product-polish`, `emil-design-eng`, `case-refresh`, `prototype-i18n`
