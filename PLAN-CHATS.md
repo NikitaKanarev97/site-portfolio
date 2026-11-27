@@ -5,7 +5,7 @@
 Убрано против полной ветки «Продукт с нуля»: ресёрч рынка, персоны, бенчмарк (есть, ревью их перекрывает); Figma и UI-кит (решение владельца — рисуем в коде); wireframes (экраны есть, меняются стиль и плотность, не структура); финальная приёмка только агентами (её место занимает этап 6 с живым лидом).
 Объединено: прототип и кейс Agent Ops — один чат; прототип и кейс Learn — один чат (подход отработан на пилоте).
 
-> **27.11.2026 · Portfolio-first — ПРЕДЛОЖЕНИЕ НА НЕЗАВИСИМОМ РЕВЬЮ.** Владелец уточнил цель: три сильно рассказанные дизайнерские истории вместо полного редизайна приложений. Предложены сужение этапов 3, 7, 8 до 14 экранов, новый этап 3.5 (интервью и утверждение storyboard до следующей волны переносов) и клипы вместо обязательного публичного прототипа. До решения владельца карта ниже действует без изменений, Stage 3.4 у Codex не прерывается. [Отчёт и карта изменений](audit/portfolio-first-strategy/REPORT.md) · [Стратегия](audit/portfolio-first-strategy/STRATEGY.md) · [Scope](audit/portfolio-first-strategy/SCOPE.md) · [Storyboards](audit/portfolio-first-strategy/STORYBOARDS.md) · [Доказательства и вопросы](audit/portfolio-first-strategy/EVIDENCE-AND-QUESTIONS.md)
+> **27.11.2026 · Portfolio-first.** PF-1 (стратегия, `69f8b578`) — ACCEPTED WITH BACKLOG. PF-2 (историческая реконструкция, интервью владельца, storyboard, scope) — **на независимом ревью**. Шаги Portfolio-first нумеруются PF и не занимают номера Stage 3.x: номер 3.5 у Codex — Cart. Codex продолжает свои этапы без изменений. [Отчёт](audit/portfolio-first-strategy/REPORT.md) · [Scope](audit/portfolio-first-strategy/SCOPE.md) · [Storyboards](audit/portfolio-first-strategy/STORYBOARDS.md) · [Оставшиеся работы](audit/portfolio-first-strategy/REMAINING-WORK.md)
 
 ## Карта этапов
 
@@ -14,8 +14,10 @@
 | 0 | Критерии и рамка | Site-portfolio | DIRECTION-2026-11.md | `tasks/review-2026-11/criteria.md`, `positioning.md`, `case-frames.md`, `evidence-inventory.md` (+ закрытая часть локально) | готово 18.11.2026, ветка `stage-0-criteria`, ждёт «мержим stage-0» |
 | 1 | Срочные правки живого сайта | Site-portfolio | этап 0 | ветка этапа; на kanarev.com — после «мержим stage-1» | — |
 | 2 | Арт-дирекция: Partner Portal → Agent Ops → TRASSIR Learn | b2b-dssl, Agent-ops-console, learn (последовательно) | этап 0, ответ ревьюера (если пришёл) | `tasks/review-2026-11/art-direction/` + реальные сравнения; **три решения владельца и итоговый cross-product review** | **Stage 2.8.3 — READY FOR INDEPENDENT REVIEW.** [Индекс](tasks/review-2026-11/art-direction/stage-2.8.3/README.md). |
-| 3 | Partner Portal: прототип (пилот) | b2b-dssl | этап 2 | ветка этапа с ДС продукта и экранами, preview-проверка; production — по согласованию | — |
-| 3.5 | *Предложено 27.11:* интервью владельца и утверждение storyboard трёх кейсов | Site-portfolio, ChatGPT | ревью Portfolio-first, Stage 3.4 | ответы с классами утверждений; утверждённые storyboard и scope | на ревью, не запускать до решения владельца |
+| 3 | Partner Portal: прототип (пилот) | b2b-dssl | этап 2 | ветка этапа с ДС продукта и экранами, preview-проверка; production — по согласованию | идёт у Codex: 3.1–3.3.1 закрыты ревью-ответами, 3.4 Product Details и 3.5 Cart — на независимом ревью; продолжен по поручению владельца 27.11.2026 (отчёт 3.1 `129e89d`), P0 отложен |
+| PF-1 | Portfolio-first: стратегия и scope | Site-portfolio, ChatGPT | этап 2, Stage 3.x | `audit/portfolio-first-strategy/` | ACCEPTED WITH BACKLOG, `69f8b578` |
+| PF-2 | Историческая реконструкция, интервью, storyboard | Site-portfolio, `D:\Design\Cases\Case\portfolio-first-private\` | PF-1, интервью 27.11 | индекс источников, сравнение, реконструкция, storyboard, scope, оставшиеся работы | READY FOR INDEPENDENT REVIEW |
+| PF-3 | Утверждение storyboard и scope владельцем | — | ревью PF-2 | запись в DIRECTION §11 | нужен до этапов 4–5; продуктовую работу Codex не блокирует |
 | 4 | Сайт: система оболочки и набор блоков истории | Site-portfolio | этапы 0, 3 | обновлённые `ds/`, гибкий набор блоков истории, решение по Vet/Pawly/Webflow | — |
 | 5 | Partner Portal: кейс | Site-portfolio | этапы 3, 4, `D:\Design\Cases\Case\` | страница кейса EN + RU | — |
 | 6 | Внешняя проверка (ворота) | — | этап 5 | `tasks/review-2026-11/pilot-feedback.md`; решение «тиражируем подход / правим его» | — |
